@@ -23,6 +23,7 @@ from dk4tool.scan.utf16_scan import scan_utf16le
 from dk4tool.script.arm9_profiles import export_profile_rows, profile_names
 from dk4tool.script.export_csv import write_script_csv
 from dk4tool.script.import_csv import read_script_csv
+from dk4tool.script.mesfile import analyze_mesfile, export_mesfile_rows, rebuild_mesfile
 from dk4tool.script.validate import normalize_encoding, validate_rows
 
 
@@ -296,6 +297,21 @@ def command_extract_arm9_profile(args: argparse.Namespace) -> None:
     write_script_csv(args.out, rows)
 
 
+def command_extract_mesfile(args: argparse.Namespace) -> None:
+    image = NdsImage.open(args.rom)
+    data = image.read_file(args.file_path)
+    rows = export_mesfile_rows(data, args.file_path)
+    write_script_csv(args.out, rows)
+    write_json(
+        args.out.with_name("mesfile_meta.json"),
+        {
+            "file_path": args.file_path,
+            "source_sha256": hash_bytes(data)["sha256"],
+            **analyze_mesfile(data),
+        },
+    )
+
+
 def command_validate_script(args: argparse.Namespace) -> None:
     issues = validate_rows(read_script_csv(args.script))
     print(json.dumps([issue.to_dict() for issue in issues], ensure_ascii=False, indent=2))
@@ -315,6 +331,11 @@ def command_insert_script(args: argparse.Namespace) -> None:
     for row in rows:
         if row["english"]:
             by_path.setdefault(row["file_path"], []).append(row)
+    if args.mode == "ilnk":
+        for path, changes in by_path.items():
+            image.replace_file(path, rebuild_mesfile(image.read_file(path), changes))
+        image.save(args.out)
+        return
     for path, changes in by_path.items():
         data = image.read_file(path)
         occupied: list[tuple[int, int]] = []
@@ -441,6 +462,8 @@ def parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Populate English cells with the profile's draft translations",
     )
+    mesfile = output_command("extract-mesfile", command_extract_mesfile)
+    mesfile.add_argument("--file-path", default="/COMMON/MESFILE.DK4")
     validate = commands.add_parser("validate-script")
     validate.add_argument("script", type=Path)
     validate.set_defaults(function=command_validate_script)
@@ -448,7 +471,7 @@ def parser() -> argparse.ArgumentParser:
     insert.add_argument("rom", type=Path)
     insert.add_argument("script", type=Path)
     insert.add_argument("--out", type=Path, required=True)
-    insert.add_argument("--mode", choices=("fixed",), default="fixed")
+    insert.add_argument("--mode", choices=("fixed", "ilnk"), default="fixed")
     insert.set_defaults(function=command_insert_script)
     compare = commands.add_parser("compare")
     compare.add_argument("clean", type=Path)

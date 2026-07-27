@@ -49,3 +49,14 @@ mismatched source bytes fail rather than risking silent corruption.
 values. `apply-xdelta` enforces the manifest's exact clean-ROM hash before decoding and
 the expected modified-ROM hash afterward. This is stricter than relying on the xdelta
 stream alone.
+
+## MESFILE / ILNK status
+
+`/COMMON/MESFILE.DK4` is confirmed as an `ILNK` container with 41 blocks and an
+end-sentinel offset. The tool can export 2,807 Japanese null-delimited records with
+line feeds represented as `{LB}`, and a no-edit rebuild is byte-exact.
+
+Some records contain multiple adjacent user-facing messages, so references may target
+offsets inside a block or record. For safety, real MESFILE insertion currently requires
+exact encoded byte length. Expansion must be enabled explicitly and remains experimental
+until inner references are mapped.

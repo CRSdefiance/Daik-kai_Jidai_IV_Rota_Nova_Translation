@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass
 
 from dk4tool.formats.control_codes import missing_tokens
+from dk4tool.script.mesfile import encode_mesfile_text
 
 from .model import STATUSES
 
@@ -40,8 +41,11 @@ def validate_rows(rows: list[dict[str, str]]) -> list[ValidationIssue]:
                 ValidationIssue(row_id, "error", f"required control tokens missing: {missing}")
             )
         try:
-            encoded = english.encode(normalize_encoding(row.get("encoding", "cp932")))
-        except (LookupError, UnicodeEncodeError) as error:
+            if row.get("control_profile") == "mesfile":
+                encoded = encode_mesfile_text(english)
+            else:
+                encoded = english.encode(normalize_encoding(row.get("encoding", "cp932")))
+        except (LookupError, UnicodeEncodeError, ValueError) as error:
             issues.append(ValidationIssue(row_id, "error", f"encoding failed: {error}"))
             continue
         try:
@@ -64,4 +68,3 @@ def validate_rows(rows: list[dict[str, str]]) -> list[ValidationIssue]:
         if wrap_width and any(len(line) > wrap_width for line in english.splitlines()):
             issues.append(ValidationIssue(row_id, "warning", f"line exceeds {wrap_width} characters"))
     return issues
-

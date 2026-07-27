@@ -20,3 +20,8 @@ has booted successfully.
 - Five character-row labels appear to be graphics rather than live text.
 - Main message candidates remain `/COMMON/MESFILE.DK4` and `/data/SC0.DK4` through
   `/data/SC3.DK4`.
+- `MESFILE.DK4` is an `ILNK` container with 41 blocks, 42 offsets including an end
+  sentinel, and 2,807 Japanese null-delimited records.
+- The only control byte observed inside decoded MESFILE records is `0A` (line feed).
+- Some records concatenate multiple messages, so block-offset rebuilding alone does not
+  yet prove that expansion is safe; exact-length insertion remains the default.

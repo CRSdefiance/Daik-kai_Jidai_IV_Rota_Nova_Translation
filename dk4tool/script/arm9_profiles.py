@@ -103,6 +103,9 @@ CHARACTER_ENTRIES = (
     ),
     Arm9ProfileEntry("DK4_HODRAM_NAME", 1425716, "ホドラム", "Hodram", "Hodram character record"),
     Arm9ProfileEntry(
+        "DK4_HODRAM_MIDDLE", 1426388, "ヨアキム", "Joachim", "Hodram character record"
+    ),
+    Arm9ProfileEntry(
         "DK4_HODRAM_LAST", 1433556, "ベルグストロン", "Bergstrom", "Hodram character record"
     ),
     Arm9ProfileEntry(
@@ -211,4 +214,3 @@ def export_profile_rows(
             }
         )
     return rows
-
