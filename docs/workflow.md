@@ -31,11 +31,14 @@ They are scanned only when explicitly selected with `--include`.
 
 Use `extract-arm9-profile` for verified, repeatable extraction of the currently mapped
 tables. `startup` covers title-menu and shared controller text, `characters` covers all
-four playable-character records, and `all` combines both. `--with-drafts` populates the
-known fitting English translations.
+four playable-character records, `city` covers the mapped city-status labels and initial
+Lisbon commodities, and `all` combines them. `--with-drafts` populates the known fitting
+English translations.
 
 Each profile verifies the clean ARM9 bytes at every offset before exporting. A mismatch
-usually means the selected ROM is a different revision and is rejected.
+usually means the selected ROM is a different revision and is rejected. Profile entries
+may map a verified zero-padded fixed slot when its English text needs more bytes than the
+Japanese glyphs but still fits safely before the next table entry.
 
 ## Fixed insertion
 

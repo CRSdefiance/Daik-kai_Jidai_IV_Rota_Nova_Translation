@@ -11,10 +11,20 @@ class Arm9ProfileEntry:
     suggested_english: str
     context: str
     notes: str = ""
+    slot_size: int | None = None
 
     @property
     def source_bytes(self) -> bytes:
         return self.japanese.encode("cp932")
+
+    @property
+    def source_length(self) -> int:
+        return self.slot_size or len(self.source_bytes)
+
+    @property
+    def expected_bytes(self) -> bytes:
+        source = self.source_bytes
+        return source + b"\0" * (self.source_length - len(source))
 
 
 STARTUP_ENTRIES = (
@@ -167,10 +177,76 @@ CHARACTER_ENTRIES = (
 )
 
 
+CITY_SCREEN_ENTRIES = (
+    Arm9ProfileEntry(
+        "DK4_CITY_COMMON",
+        0x11B57C,
+        "共通",
+        "Common",
+        "City screen shared-information button",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CITY_STATUS_NORMAL",
+        0x1565D8,
+        "通常",
+        "Normal",
+        "City status value",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry("DK4_CITY_TYPE_CITY", 0x1565E4, "都市", "City", "City type value"),
+    Arm9ProfileEntry(
+        "DK4_CITY_HEADINGS",
+        0x15692C,
+        "種類状態発展度武装度",
+        "TypeStatGrowthArms  ",
+        "City information headings",
+        "Four fixed fields: Type, Stat, Growth, Arms.",
+    ),
+    Arm9ProfileEntry(
+        "DK4_CITY_PORT",
+        0x156AEC,
+        "出港所",
+        "Port",
+        "City location button",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_GOOD_SALT",
+        0x15B78C,
+        "塩",
+        "Salt",
+        "Commodity name",
+        slot_size=4,
+    ),
+    Arm9ProfileEntry("DK4_GOOD_GUNS", 0x15BAE8, "鉄砲", "Guns", "Commodity name"),
+    Arm9ProfileEntry(
+        "DK4_CITY_LISBON_A",
+        0x15C068,
+        "リスボン",
+        "Lisbon",
+        "Lisbon city-name slot",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CITY_LISBON_B",
+        0x15C11C,
+        "リスボン",
+        "Lisbon",
+        "Lisbon city-name slot",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry("DK4_GOOD_SAFFRON", 0x15C1AC, "サフラン", "Saffron", "Commodity name"),
+    Arm9ProfileEntry("DK4_GOOD_ALMOND", 0x15D550, "アーモンド", "Almond", "Commodity name"),
+    Arm9ProfileEntry("DK4_GOOD_OLIVE_OIL", 0x15D58C, "オリーブ油", "Olive Oil", "Commodity name"),
+)
+
+
 PROFILES = {
     "startup": STARTUP_ENTRIES,
     "characters": CHARACTER_ENTRIES,
-    "all": STARTUP_ENTRIES + CHARACTER_ENTRIES,
+    "city": CITY_SCREEN_ENTRIES,
+    "all": STARTUP_ENTRIES + CHARACTER_ENTRIES + CITY_SCREEN_ENTRIES,
 }
 
 
@@ -184,8 +260,8 @@ def export_profile_rows(
     entries = PROFILES[profile]
     rows: list[dict[str, object]] = []
     for entry in entries:
-        source = entry.source_bytes
-        actual = arm9[entry.offset : entry.offset + len(source)]
+        source = entry.expected_bytes
+        actual = arm9[entry.offset : entry.offset + entry.source_length]
         if actual != source:
             raise ValueError(
                 f"{entry.row_id}: ARM9 source mismatch at 0x{entry.offset:X}; "
@@ -198,7 +274,7 @@ def export_profile_rows(
                 "container_path": "",
                 "encoding": "shift_jis",
                 "source_offset": entry.offset,
-                "source_length": len(source),
+                "source_length": entry.source_length,
                 "source_hex": source.hex().upper(),
                 "japanese": entry.japanese,
                 "english": entry.suggested_english if include_drafts else "",
@@ -206,7 +282,7 @@ def export_profile_rows(
                 "context": entry.context,
                 "speaker": "",
                 "notes": entry.notes,
-                "max_bytes": len(source),
+                "max_bytes": entry.source_length,
                 "allow_expand": "false",
                 "pointer_group": "",
                 "control_profile": "default",

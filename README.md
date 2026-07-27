@@ -60,8 +60,10 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
   --out out/expanded_translation_test.nds --mode ilnk
 ```
 
-The current expanded build contains 64 Raphael prologue records through receipt of
-Julio's loan, plus 17 shared departure, docking, options, and save-data prompts.
+The current expanded build contains 66 Raphael-route records, including the post-prologue
+`Teach me` / `Skip tutorial` choice, plus 17 shared departure, docking, options, and
+save-data prompts. The `city` ARM9 profile adds the first translated Lisbon status-screen
+headings, controls, city name, and visible commodities.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
