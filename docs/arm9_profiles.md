@@ -27,7 +27,11 @@ for:
 - both Lisbon name slots;
 - Salt, Guns, Saffron, Almond, and Olive Oil.
 
-`all` combines all three sets.
+`menus` contains 51 reusable labels for common commands, deck rooms and policies,
+crew assignment, and the city navigation choices. It is the first large shared-menu
+pass, so its labels recur across several menus rather than only one screenshot.
+
+`all` combines all four sets.
 
 ```powershell
 dk4tool extract-arm9-profile clean.nds `
@@ -40,7 +44,8 @@ The current records are fixed-width. Biography drafts deliberately use trailing 
 spaces when needed so that replacements occupy the exact original byte length and leave
 the game's line-break delimiters untouched. Some city vocabulary entries use the
 verified zero padding at the end of their fixed table slot, allowing `Normal`, `Common`,
-`Lisbon`, and `Salt` to fit without moving pointers or neighboring records.
+and `Lisbon` to fit without moving pointers or neighboring records. The Salt slot must
+retain its terminator, so it uses the safe abbreviation `Sal`.
 
 The Japanese row labels visible beside name, surname, organization, and birthday do not
 respond to either mapped ARM9 text table. Emulator tests indicate those labels are

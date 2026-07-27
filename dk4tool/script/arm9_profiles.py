@@ -194,6 +194,14 @@ CITY_SCREEN_ENTRIES = (
         "City status value",
         slot_size=8,
     ),
+    Arm9ProfileEntry(
+        "DK4_CITY_STATUS_NORMAL_VISIBLE",
+        0x15633C,
+        "通常",
+        "Normal",
+        "City status value used by the Lisbon information screen",
+        slot_size=8,
+    ),
     Arm9ProfileEntry("DK4_CITY_TYPE_CITY", 0x1565E4, "都市", "City", "City type value"),
     Arm9ProfileEntry(
         "DK4_CITY_HEADINGS",
@@ -215,8 +223,8 @@ CITY_SCREEN_ENTRIES = (
         "DK4_GOOD_SALT",
         0x15B78C,
         "塩",
-        "Salt",
-        "Commodity name",
+        "Sal",
+        "Commodity-name abbreviation; the fixed slot needs one byte for its terminator.",
         slot_size=4,
     ),
     Arm9ProfileEntry("DK4_GOOD_GUNS", 0x15BAE8, "鉄砲", "Guns", "Commodity name"),
@@ -242,11 +250,71 @@ CITY_SCREEN_ENTRIES = (
 )
 
 
+MENU_ENTRIES = (
+    # Reusable command labels.
+    Arm9ProfileEntry("DK4_MENU_INDEX", 0x11B524, "目次", "Index", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_SEARCH", 0x11B52C, "探索", "Search", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_MIN", 0x11B534, "最小", "Min", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_NEXT", 0x11B53C, "次頁", "Next", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_ASSIGN", 0x11B54C, "配置", "Assign", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_DONE", 0x11B554, "完了", "Done", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_DELETE", 0x11B55C, "削除", "Delete", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_EQUIP", 0x11B564, "装備", "Equip", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_USE", 0x11B56C, "使う", "Use", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_PREV", 0x11B574, "前頁", "Prev", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_FACTION", 0x11B584, "勢力", "Faction", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_QUIT", 0x11B58C, "終了", "Quit", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_DECLARE", 0x11B594, "宣戦", "Declare", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_MAX", 0x11B59C, "最大", "Max", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_STAFF", 0x11B5A4, "人事", "Staff", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_WORLD", 0x11B5AC, "世界", "World", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_WITHDRAW", 0x11B5B4, "全搬出", "Withdraw", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_REMOVE", 0x11B5BC, "はずす", "Remove", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_SORT", 0x11B5C4, "ソート", "Sort", "Common menu command", slot_size=8),
+    # Deck screen rooms and policies.
+    Arm9ProfileEntry("DK4_DECK_ADD_ROOM", 0x12FFC0, "追加１", "Add 1", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_NURSERY", 0x12FFC8, "飼育室", "Nursery", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_LOUNGE", 0x12FFD0, "娯楽室", "Lounge", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_MATE", 0x12FFD8, "副官室", "Mate", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_CAPTAIN", 0x12FFE0, "艦長室", "Captain", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_LOOKOUT", 0x12FFE8, "見張台", "Lookout", "Deck room label", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_CARGO", 0x12FFF0, "積荷倉庫", "Cargo", "Deck room label", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_MARINES", 0x12FFFC, "海兵詰所", "Marines", "Deck room label", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_GUN_DECK", 0x130008, "武装砲台", "Gun Deck", "Deck room label", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_SUPPLIES", 0x130014, "物資倉庫", "Supplies", "Deck room label", slot_size=12),
+    Arm9ProfileEntry("DK4_POLICY_BATTLE", 0x130C84, "海戦", "Battle", "Deck policy", slot_size=8),
+    Arm9ProfileEntry("DK4_POLICY_TRADE", 0x130C8C, "交易", "Trade", "Deck policy", slot_size=8),
+    Arm9ProfileEntry("DK4_POLICY_EXPLORE", 0x130CA0, "探検航海", "Explore", "Deck policy", slot_size=12),
+    # Crew assignment screen labels.
+    Arm9ProfileEntry("DK4_DECK_CREW_SETUP", 0x131EDC, "人事配置", "Crew Setup", "Deck assignment heading", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_UNASSIGNED", 0x131EE8, "未配置", "None", "Deck assignment status", slot_size=8),
+    Arm9ProfileEntry("DK4_DECK_SKILL", 0x131EF8, "必要技能　%s", "Skill: %s", "Deck requirement label", slot_size=16),
+    Arm9ProfileEntry("DK4_DECK_NEED_NONE", 0x131F08, "必要値　　－－", "Need: --", "Deck requirement label", slot_size=16),
+    Arm9ProfileEntry("DK4_DECK_NEED_VALUE", 0x131F18, "必要値　　%4d", "Need: %4d", "Deck requirement label", slot_size=16),
+    Arm9ProfileEntry("DK4_DECK_VIEW_A", 0x131F30, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_VIEW_B", 0x131F3C, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
+    Arm9ProfileEntry("DK4_DECK_VIEW_C", 0x132044, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
+    # City navigation menu.
+    Arm9ProfileEntry("DK4_NAV_DEPART_A", 0x144644, "出港", "Depart", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_DEPART_B", 0x14464C, "出港", "Depart", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_SAIL_A", 0x144654, "洋上へ", "Sail", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_SAIL_B", 0x14465C, "洋上へ", "Sail", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_DOCK_A", 0x144664, "ドック", "Dock", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_DOCK_B", 0x144674, "ドック", "Dock", "City navigation menu", slot_size=8),
+    Arm9ProfileEntry("DK4_NAV_DECK_A", 0x144684, "甲板画面", "Deck View", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_AUTO_A", 0x144690, "自動移動", "Auto Move", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_DECK_B", 0x14469C, "甲板画面", "Deck View", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_AUTO_B", 0x1446A8, "自動移動", "Auto Move", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_CARGO_SETUP", 0x1446B4, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
+)
+
+
 PROFILES = {
     "startup": STARTUP_ENTRIES,
     "characters": CHARACTER_ENTRIES,
     "city": CITY_SCREEN_ENTRIES,
-    "all": STARTUP_ENTRIES + CHARACTER_ENTRIES + CITY_SCREEN_ENTRIES,
+    "menus": MENU_ENTRIES,
+    "all": STARTUP_ENTRIES + CHARACTER_ENTRIES + CITY_SCREEN_ENTRIES + MENU_ENTRIES,
 }
 
 

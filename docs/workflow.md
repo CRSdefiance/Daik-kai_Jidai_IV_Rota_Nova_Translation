@@ -32,8 +32,8 @@ They are scanned only when explicitly selected with `--include`.
 Use `extract-arm9-profile` for verified, repeatable extraction of the currently mapped
 tables. `startup` covers title-menu and shared controller text, `characters` covers all
 four playable-character records, `city` covers the mapped city-status labels and initial
-Lisbon commodities, and `all` combines them. `--with-drafts` populates the known fitting
-English translations.
+Lisbon commodities, `menus` covers the first large shared-menu batch, and `all` combines
+them. `--with-drafts` populates the known fitting English translations.
 
 Each profile verifies the clean ARM9 bytes at every offset before exporting. A mismatch
 usually means the selected ROM is a different revision and is rejected. Profile entries

@@ -63,7 +63,8 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
 The current expanded build contains 66 Raphael-route records, including the post-prologue
 `Teach me` / `Skip tutorial` choice, plus 17 shared departure, docking, options, and
 save-data prompts. The `city` ARM9 profile adds the first translated Lisbon status-screen
-headings, controls, city name, and visible commodities.
+headings, controls, city name, and visible commodities; `menus` adds 51 shared labels for
+navigation, deck management, policies, and crew assignment.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
