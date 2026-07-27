@@ -27,7 +27,17 @@ def test_mesfile_analysis_reports_structure_and_controls():
     assert report["block_count"] == 2
     assert report["offset_entry_count"] == 3
     assert report["control_byte_counts"] == {"0A": 1}
+    assert report["undecodable_record_count"] == 0
     assert report["insertion_policy"] == "exact-length-only"
+
+
+def test_mesfile_skips_undecodable_segments_without_modifying_them():
+    data = IlnkContainer([b"\x84\x00" + "港".encode("cp932")]).to_bytes()
+    rows = export_mesfile_rows(data, "/data/SC0.DK4")
+    report = analyze_mesfile(data)
+    assert len(rows) == 1
+    assert report["undecodable_record_count"] == 1
+    assert rebuild_mesfile(data, rows) == data
 
 
 def test_mesfile_export_preserves_linebreak_token_and_stable_groups():

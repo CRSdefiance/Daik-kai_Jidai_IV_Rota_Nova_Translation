@@ -26,6 +26,8 @@ dk4tool scan clean.nds --out work/scan_report.json
 dk4tool scan clean.nds --out work/messages/scan_report.json --include /COMMON/MESFILE.DK4 --include "/data/SC*.DK4"
 dk4tool extract-script clean.nds --out work/script.csv --mode conservative
 dk4tool extract-arm9-profile clean.nds --profile all --with-drafts --out work/arm9.csv
+dk4tool extract-mesfile clean.nds --out work/mesfile.csv
+dk4tool extract-mesfile clean.nds --file-path /data/SC0.DK4 --out work/sc0.csv
 dk4tool insert-script clean.nds work/arm9.csv --out out/character_selection_en.nds
 dk4tool make-xdelta clean.nds out/character_selection_en.nds --out out/character_selection_en.xdelta
 dk4tool apply-xdelta clean.nds out/character_selection_en.xdelta --out out/rebuilt.nds

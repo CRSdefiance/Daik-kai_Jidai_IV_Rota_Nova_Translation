@@ -61,7 +61,11 @@ def iter_mesfile_records(data: bytes) -> list[MesfileRecord]:
         cursor = 0
         for segment_index, raw in enumerate(block.split(b"\0")):
             if raw:
-                text = decode_mesfile_text(raw)
+                try:
+                    text = decode_mesfile_text(raw)
+                except UnicodeDecodeError:
+                    cursor += len(raw) + 1
+                    continue
                 if contains_japanese(text):
                     records.append(
                         MesfileRecord(
@@ -81,12 +85,19 @@ def analyze_mesfile(data: bytes) -> dict[str, object]:
     container = IlnkContainer.parse(data)
     all_records = [raw for block in container.blocks for raw in block.split(b"\0") if raw]
     controls = Counter(byte for raw in all_records for byte in raw if byte < 0x20)
+    decode_failures = 0
+    for raw in all_records:
+        try:
+            decode_mesfile_text(raw)
+        except UnicodeDecodeError:
+            decode_failures += 1
     return {
         "format": "ILNK",
         "block_count": len(container.blocks),
         "offset_entry_count": len(container.blocks) + 1,
         "nonempty_record_count": len(all_records),
         "japanese_record_count": len(iter_mesfile_records(data)),
+        "undecodable_record_count": decode_failures,
         "blocks_ending_with_null": sum(block.endswith(b"\0") for block in container.blocks),
         "records_with_linebreaks": sum(b"\n" in raw for raw in all_records),
         "control_byte_counts": {f"{byte:02X}": count for byte, count in sorted(controls.items())},

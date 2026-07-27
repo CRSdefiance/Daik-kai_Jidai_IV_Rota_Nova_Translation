@@ -60,3 +60,7 @@ Some records contain multiple adjacent user-facing messages, so references may t
 offsets inside a block or record. For safety, real MESFILE insertion currently requires
 exact encoded byte length. Expansion must be enabled explicitly and remains experimental
 until inner references are mapped.
+
+The four `/data/SC0.DK4` through `SC3.DK4` story files use the same ILNK container.
+Strictly decodable Japanese records are exported; undecodable mixed-binary segments are
+counted in metadata and retained byte-for-byte without replacement characters.

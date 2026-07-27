@@ -25,3 +25,9 @@ has booted successfully.
 - The only control byte observed inside decoded MESFILE records is `0A` (line feed).
 - Some records concatenate multiple messages, so block-offset rebuilding alone does not
   yet prove that expansion is safe; exact-length insertion remains the default.
+- `SC0.DK4` through `SC3.DK4` are also ILNK containers. Their block counts are 343,
+  325, 336, and 303, respectively.
+- Strict CP932 extraction currently yields 6,768, 5,166, 6,608, and 5,010 Japanese
+  records from SC0 through SC3. Undecodable segments are preserved and reported rather
+  than decoded with replacement characters.
+- Parse-and-rebuild roundtrips are byte-exact for MESFILE and all four SC containers.
