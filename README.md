@@ -40,5 +40,15 @@ Blank `english` cells are treated as unchanged during insertion. To replace text
 `english` and use an appropriate status such as `draft` or `approved`. Fixed mode rejects
 encoded text longer than the original byte range.
 
+The first Raphael-route dialogue batch is in
+`translations/raphael_opening.csv`. It covers 15 consecutive lines in `SC0.DK4`,
+starting with Claudio's “Come on, come on. You'll see.” and ending at the ship reveal.
+Build it on top of the character-selection ROM with:
+
+```powershell
+dk4tool validate-script translations/raphael_opening.csv
+dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv --out out/raphael_opening_en.nds --mode ilnk
+```
+
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).

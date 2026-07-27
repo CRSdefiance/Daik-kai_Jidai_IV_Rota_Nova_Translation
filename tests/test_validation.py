@@ -30,3 +30,18 @@ def test_overflow_fails():
 def test_valid_row_has_no_errors():
     assert not [issue for issue in validate_rows([row()]) if issue.severity == "error"]
 
+
+def test_mesfile_wrap_width_ignores_control_tokens():
+    issues = validate_rows(
+        [
+            row(
+                japanese="質問",
+                english="{HEX:05}A short line{LB}Another short line{PAD}",
+                control_profile="mesfile",
+                source_length="40",
+                max_bytes="40",
+                wrap_width="18",
+            )
+        ]
+    )
+    assert issues == []

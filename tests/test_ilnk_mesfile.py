@@ -76,3 +76,14 @@ def test_mesfile_rebuild_rejects_size_change_without_explicit_expansion():
         assert "exactly" in str(error)
     else:
         raise AssertionError("expected exact-length rejection")
+
+
+def test_mesfile_pad_token_safely_fills_exact_length():
+    data = synthetic_ilnk()
+    rows = export_mesfile_rows(data, "/COMMON/MESFILE.DK4")
+    rows[0]["english"] = "Go now!{PAD}"
+    rebuilt = rebuild_mesfile(data, rows)
+    original = IlnkContainer.parse(data).blocks[0].split(b"\0")[0]
+    replacement = IlnkContainer.parse(rebuilt).blocks[0].split(b"\0")[0]
+    assert replacement == b"Go now!".ljust(len(original), b" ")
+    assert len(replacement) == len(original)

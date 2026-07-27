@@ -32,7 +32,9 @@ def encode_mesfile_text(text: str) -> bytes:
     output = bytearray()
     cursor = 0
     while cursor < len(text):
-        if text.startswith("{LB}", cursor):
+        if text.startswith("{PAD}", cursor):
+            cursor += 5
+        elif text.startswith("{LB}", cursor):
             output.append(0x0A)
             cursor += 4
         elif text.startswith("{END}", cursor):
@@ -155,7 +157,16 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         expected = bytes.fromhex(row["source_hex"])
         if original != expected:
             raise ValueError(f"{row.get('id')}: ILNK source bytes do not match")
-        replacement = encode_mesfile_text(row["english"])
+        english = row["english"]
+        pad_to_length = english.endswith("{PAD}")
+        replacement = encode_mesfile_text(english)
+        if pad_to_length:
+            if len(replacement) > len(original):
+                raise ValueError(
+                    f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "
+                    f"cannot pad it to the shorter {len(original)}-byte source record"
+                )
+            replacement = replacement.ljust(len(original), b" ")
         allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
         if len(replacement) != len(original) and not allow_expand:
             raise ValueError(
