@@ -31,3 +31,14 @@ has booted successfully.
   records from SC0 through SC3. Undecodable segments are preserved and reported rather
   than decoded with replacement characters.
 - Parse-and-rebuild roundtrips are byte-exact for MESFILE and all four SC containers.
+- Emulator testing of the first Raphael scene confirms that story line-feed bytes must
+  remain at their original record-relative offsets. Moving a `0A` earlier causes the
+  next English character to appear on the preceding line. Translation rows therefore
+  use aligned tokens such as `{LB@31}`.
+- In the story renderer, uppercase ASCII `I` is interpreted as a Japanese first-person
+  macro rather than a literal Latin glyph. Prose must avoid standalone `I` and words
+  beginning with uppercase `I` until that command is fully mapped.
+- The photographed Lisbon status/port screen mixes dynamic values with Japanese labels
+  and trade-good names that do not appear in the current ARM9 or strict CP932 scans.
+  They likely use a separate packed table or tile graphics and need a resource-specific
+  extraction profile.

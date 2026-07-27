@@ -87,3 +87,17 @@ def test_mesfile_pad_token_safely_fills_exact_length():
     replacement = IlnkContainer.parse(rebuilt).blocks[0].split(b"\0")[0]
     assert replacement == b"Go now!".ljust(len(original), b" ")
     assert len(replacement) == len(original)
+
+
+def test_mesfile_aligned_linebreak_preserves_control_offset():
+    encoded = encode_mesfile_text("Short{LB@10}Next")
+    assert encoded == b"Short     \nNext"
+
+
+def test_mesfile_aligned_linebreak_rejects_overflow():
+    try:
+        encode_mesfile_text("Too long{LB@3}")
+    except ValueError as error:
+        assert "cannot align line break" in str(error)
+    else:
+        raise AssertionError("expected aligned line-break overflow")

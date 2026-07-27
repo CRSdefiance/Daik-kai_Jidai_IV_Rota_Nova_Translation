@@ -36,7 +36,7 @@ def test_mesfile_wrap_width_ignores_control_tokens():
         [
             row(
                 japanese="質問",
-                english="{HEX:05}A short line{LB}Another short line{PAD}",
+                english="{HEX:05}A short line{LB@20}Another short line{PAD}",
                 control_profile="mesfile",
                 source_length="40",
                 max_bytes="40",

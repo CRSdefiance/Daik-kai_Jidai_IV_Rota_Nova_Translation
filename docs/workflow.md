@@ -61,10 +61,12 @@ offsets inside a block or record. For safety, real MESFILE insertion currently r
 exact encoded byte length. Expansion must be enabled explicitly and remains experimental
 until inner references are mapped.
 
-Use `{HEX:NN}` to retain a leading speaker/control byte, `{LB}` for an in-game line
-break, and a final `{PAD}` to fill a shorter English translation with spaces to the
-record's exact original byte length. `{PAD}` keeps all later records at their original
-offsets while leaving the translation itself readable in CSV.
+Use `{HEX:NN}` to retain a leading speaker/control byte and a final `{PAD}` to fill a
+shorter English translation with spaces to the record's exact original byte length.
+Story text must also preserve the original position of every line-feed control:
+`{LB@31}` pads up to byte offset 31 before emitting the line feed. This keeps the
+renderer aligned while leaving the translation readable in CSV. Plain `{LB}` remains
+available for formats where the byte position is not significant.
 
 The four `/data/SC0.DK4` through `SC3.DK4` story files use the same ILNK container.
 Strictly decodable Japanese records are exported; undecodable mixed-binary segments are

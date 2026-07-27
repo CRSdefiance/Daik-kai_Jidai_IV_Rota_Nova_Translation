@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from collections import Counter
 from dataclasses import dataclass
 
@@ -32,7 +33,18 @@ def encode_mesfile_text(text: str) -> bytes:
     output = bytearray()
     cursor = 0
     while cursor < len(text):
-        if text.startswith("{PAD}", cursor):
+        aligned_linebreak = re.match(r"\{LB@([0-9]+)\}", text[cursor:])
+        if aligned_linebreak:
+            target_offset = int(aligned_linebreak.group(1))
+            if len(output) > target_offset:
+                raise ValueError(
+                    f"cannot align line break to byte {target_offset}; "
+                    f"translation already occupies {len(output)} bytes"
+                )
+            output.extend(b" " * (target_offset - len(output)))
+            output.append(0x0A)
+            cursor += len(aligned_linebreak.group(0))
+        elif text.startswith("{PAD}", cursor):
             cursor += 5
         elif text.startswith("{LB}", cursor):
             output.append(0x0A)

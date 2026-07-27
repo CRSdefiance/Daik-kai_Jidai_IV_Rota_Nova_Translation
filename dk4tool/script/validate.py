@@ -66,7 +66,8 @@ def validate_rows(rows: list[dict[str, str]]) -> list[ValidationIssue]:
         except ValueError:
             wrap_width = 0
             issues.append(ValidationIssue(row_id, "error", "wrap_width is not an integer"))
-        visible_text = english.replace("{LB}", "\n").replace("{END}", "").replace("{PAD}", "")
+        visible_text = re.sub(r"\{LB@[0-9]+\}", "\n", english)
+        visible_text = visible_text.replace("{LB}", "\n").replace("{END}", "").replace("{PAD}", "")
         visible_text = re.sub(r"\{HEX:[0-9A-Fa-f]{2}\}", "", visible_text)
         if wrap_width and any(len(line) > wrap_width for line in visible_text.splitlines()):
             issues.append(ValidationIssue(row_id, "warning", f"line exceeds {wrap_width} characters"))
