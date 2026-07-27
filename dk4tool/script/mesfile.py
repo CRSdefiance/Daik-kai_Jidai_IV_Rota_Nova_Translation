@@ -41,8 +41,16 @@ def encode_mesfile_text(text: str) -> bytes:
                     f"cannot align line break to byte {target_offset}; "
                     f"translation already occupies {len(output)} bytes"
                 )
-            output.extend(b" " * (target_offset - len(output)))
+            padding = target_offset - len(output)
+            # Move one available layout-space from before the control to after
+            # it, keeping the record length stable while protecting the next
+            # visible glyph.
+            output.extend(b" " * max(0, padding - 1))
             output.append(0x0A)
+            # The story renderer applies 0A after drawing the next single-byte
+            # glyph. Sacrifice a space so the intended first character starts
+            # on the new line.
+            output.append(0x20)
             cursor += len(aligned_linebreak.group(0))
         elif text.startswith("{PAD}", cursor):
             cursor += 5

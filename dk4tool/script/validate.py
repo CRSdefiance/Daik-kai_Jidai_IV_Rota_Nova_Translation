@@ -44,6 +44,24 @@ def validate_rows(rows: list[dict[str, str]]) -> list[ValidationIssue]:
         try:
             if row.get("control_profile") == "mesfile":
                 encoded = encode_mesfile_text(english)
+                macro_scan = re.sub(r"\{[^{}]+\}", "", english)
+                unsafe_f = any(
+                    character == "F"
+                    and (index + 1 == len(macro_scan) or macro_scan[index + 1] not in "IAO")
+                    for index, character in enumerate(macro_scan)
+                )
+                unsafe_i = any(
+                    character == "I" and (index == 0 or macro_scan[index - 1] != "F")
+                    for index, character in enumerate(macro_scan)
+                )
+                if unsafe_f or unsafe_i:
+                    issues.append(
+                        ValidationIssue(
+                            row_id,
+                            "error",
+                            "unsafe uppercase story macro letter; rewrite literal F/I text",
+                        )
+                    )
             else:
                 encoded = english.encode(normalize_encoding(row.get("encoding", "cp932")))
         except (LookupError, UnicodeEncodeError, ValueError) as error:

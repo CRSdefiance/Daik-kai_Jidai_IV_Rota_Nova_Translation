@@ -91,7 +91,7 @@ def test_mesfile_pad_token_safely_fills_exact_length():
 
 def test_mesfile_aligned_linebreak_preserves_control_offset():
     encoded = encode_mesfile_text("Short{LB@10}Next")
-    assert encoded == b"Short     \nNext"
+    assert encoded == b"Short    \n Next"
 
 
 def test_mesfile_aligned_linebreak_rejects_overflow():

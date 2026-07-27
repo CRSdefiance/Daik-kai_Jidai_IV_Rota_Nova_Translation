@@ -45,3 +45,29 @@ def test_mesfile_wrap_width_ignores_control_tokens():
         ]
     )
     assert issues == []
+
+
+def test_mesfile_rejects_literal_uppercase_story_macro_letters():
+    issues = validate_rows(
+        [
+            row(
+                japanese="質問",
+                english="Father said I should go{PAD}",
+                control_profile="mesfile",
+            )
+        ]
+    )
+    assert any("unsafe uppercase story macro" in issue.message for issue in issues)
+
+
+def test_mesfile_allows_intentional_name_macros():
+    issues = validate_rows(
+        [
+            row(
+                japanese="質問",
+                english="Ask FI and FA{PAD}",
+                control_profile="mesfile",
+            )
+        ]
+    )
+    assert not [issue for issue in issues if "unsafe uppercase story macro" in issue.message]

@@ -40,6 +40,12 @@ has booted successfully.
   and emulator review. Source `0A` controls should be retained, but a later control may
   be placed after the completed English sentence when copying the Japanese break would
   create an unnecessary extra English line.
+- Broader emulator testing shows that `0A` is applied after the next single-byte glyph.
+  Aligned English breaks therefore encode `0A 20`: the following space is consumed on
+  the preceding line and the intended first letter begins the new line.
+- Uppercase `F` is the runtime-substitution command prefix, not a safe literal story
+  glyph. `FI`, `FA`, and `FO` are intentional substitutions; ordinary English must
+  rewrite capitalized words such as “Father,” “Fine,” and “Forget.”
 - In the story renderer, uppercase ASCII `I` is interpreted as a Japanese first-person
   macro rather than a literal Latin glyph. Prose must avoid standalone `I` and words
   beginning with uppercase `I` until that command is fully mapped.

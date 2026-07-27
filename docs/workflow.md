@@ -64,9 +64,15 @@ until inner references are mapped.
 Use `{HEX:NN}` to retain a leading speaker/control byte and a final `{PAD}` to fill a
 shorter English translation with spaces to the record's exact original byte length.
 Story text must also preserve the original position of every line-feed control:
-`{LB@31}` pads up to byte offset 31 before emitting the line feed. This keeps the
-renderer aligned while leaving the translation readable in CSV. Plain `{LB}` remains
-available for formats where the byte position is not significant.
+`{LB@31}` pads toward byte offset 31, emits the line feed, and reserves a sacrificial
+space because the renderer otherwise leaves the next ASCII glyph on the preceding
+line. This keeps the intended first letter on the new line while leaving the
+translation readable in CSV. Plain `{LB}` remains available for formats where this
+story-renderer behavior does not apply.
+
+The same renderer treats uppercase `F` and `I` as macro syntax. Only the verified
+`FI`, `FA`, and `FO` name substitutions are allowed; validation rejects literal
+capitalized English that would trigger those commands.
 
 The four `/data/SC0.DK4` through `SC3.DK4` story files use the same ILNK container.
 Strictly decodable Japanese records are exported; undecodable mixed-binary segments are
