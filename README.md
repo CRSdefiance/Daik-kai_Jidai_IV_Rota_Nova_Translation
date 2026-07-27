@@ -1,0 +1,42 @@
+# DK4 Translation Tool
+
+A local, ROM-free Python toolchain for researching an English translation of
+**Daikoukai Jidai IV / Rota Nova** for Nintendo DS.
+
+The repository contains tooling and synthetic tests only. You must supply your own
+legally dumped ROM. The tool never downloads a ROM and never edits its input in place.
+
+## Install
+
+Requires Python 3.11+. Patch commands use the native `pyxdelta` dependency and
+automatically fall back to a system `xdelta3` executable when one is available.
+
+```powershell
+python -m pip install -e ".[dev]"
+dk4tool --help
+```
+
+## Safe first workflow
+
+```powershell
+dk4tool info clean.nds
+dk4tool manifest clean.nds --out work/manifest.json
+dk4tool extract-files clean.nds --out work/files
+dk4tool scan clean.nds --out work/scan_report.json
+dk4tool scan clean.nds --out work/messages/scan_report.json --include /COMMON/MESFILE.DK4 --include "/data/SC*.DK4"
+dk4tool extract-script clean.nds --out work/script.csv --mode conservative
+dk4tool extract-arm9-profile clean.nds --profile all --with-drafts --out work/arm9.csv
+dk4tool insert-script clean.nds work/arm9.csv --out out/character_selection_en.nds
+dk4tool make-xdelta clean.nds out/character_selection_en.nds --out out/character_selection_en.xdelta
+dk4tool apply-xdelta clean.nds out/character_selection_en.xdelta --out out/rebuilt.nds
+dk4tool validate-script work/script.csv
+dk4tool insert-script clean.nds work/script.csv --out out/noop.nds --mode fixed
+dk4tool compare clean.nds out/noop.nds --out out/noop_diff.json
+```
+
+Blank `english` cells are treated as unchanged during insertion. To replace text, set
+`english` and use an appropriate status such as `draft` or `approved`. Fixed mode rejects
+encoded text longer than the original byte range.
+
+See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
+[docs/testing_plan.md](docs/testing_plan.md).

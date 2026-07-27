@@ -1,0 +1,39 @@
+# ARM9 translation profiles
+
+The game stores several user-interface and character-selection tables directly in ARM9.
+These are not part of the Nintendo DS filename table, so they are represented by the
+special script path `/__arm9__.bin`.
+
+## Profiles
+
+`startup` contains:
+
+- title menu choices;
+- shared `Back`, `Done`, and `Edit` controller labels;
+- the character-selection heading and `Born` suffix.
+
+`characters` contains the given name, surname, organization, and three biography lines
+for:
+
+- Lil Argot;
+- Raphael Castor;
+- Hodram Bergstrom;
+- Maria Lee.
+
+`all` combines both sets.
+
+```powershell
+dk4tool extract-arm9-profile clean.nds `
+  --profile all `
+  --with-drafts `
+  --out work/arm9_all.csv
+```
+
+The current records are fixed-width. Biography drafts deliberately use trailing ASCII
+spaces when needed so that replacements occupy the exact original byte length and leave
+the game's line-break delimiters untouched.
+
+The Japanese row labels visible beside name, surname, organization, and birthday do not
+respond to either mapped ARM9 text table. Emulator tests indicate those labels are
+graphics and require a separate tile-resource workflow.
+
