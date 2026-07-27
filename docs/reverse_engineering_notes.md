@@ -35,6 +35,11 @@ has booted successfully.
   remain at their original record-relative offsets. Moving a `0A` earlier causes the
   next English character to appear on the preceding line. Translation rows therefore
   use aligned tokens such as `{LB@31}`.
+- Runtime placeholders complicate that rule: `FI` occupies two source bytes but expands
+  to the protagonist's full given name. Lines containing it require extra visual spacing
+  and emulator review. Source `0A` controls should be retained, but a later control may
+  be placed after the completed English sentence when copying the Japanese break would
+  create an unnecessary extra English line.
 - In the story renderer, uppercase ASCII `I` is interpreted as a Japanese first-person
   macro rather than a literal Latin glyph. Prose must avoid standalone `I` and words
   beginning with uppercase `I` until that command is fully mapped.
