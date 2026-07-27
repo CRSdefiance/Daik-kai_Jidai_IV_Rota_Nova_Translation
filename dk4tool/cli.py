@@ -24,6 +24,7 @@ from dk4tool.script.arm9_profiles import export_profile_rows, profile_names
 from dk4tool.script.export_csv import write_script_csv
 from dk4tool.script.import_csv import read_script_csv
 from dk4tool.script.mesfile import analyze_mesfile, export_mesfile_rows, rebuild_mesfile
+from dk4tool.script.translation_batch import read_translation_batch
 from dk4tool.script.validate import normalize_encoding, validate_rows
 
 
@@ -321,12 +322,19 @@ def command_validate_script(args: argparse.Namespace) -> None:
 
 def command_insert_script(args: argparse.Namespace) -> None:
     rows = read_script_csv(args.script)
+    image = NdsImage.open(args.rom)
+    for batch_path in args.batch:
+        with batch_path.open("r", encoding="utf-8") as stream:
+            batch_header = json.load(stream)
+        if not isinstance(batch_header, dict):
+            raise TypeError(f"{batch_path}: translation batch root must be an object")
+        file_path = str(batch_header.get("file_path", ""))
+        rows.extend(read_translation_batch(batch_path, image.read_file(file_path)))
     issues = validate_rows(rows)
     errors = [issue for issue in issues if issue.severity == "error"]
     if errors:
         print(json.dumps([issue.to_dict() for issue in errors], ensure_ascii=False, indent=2))
         raise SystemExit(1)
-    image = NdsImage.open(args.rom)
     by_path: dict[str, list[dict[str, str]]] = {}
     for row in rows:
         if row["english"]:
@@ -470,6 +478,13 @@ def parser() -> argparse.ArgumentParser:
     insert = commands.add_parser("insert-script")
     insert.add_argument("rom", type=Path)
     insert.add_argument("script", type=Path)
+    insert.add_argument(
+        "--batch",
+        action="append",
+        type=Path,
+        default=[],
+        help="Apply a compact ILNK translation batch; may be repeated",
+    )
     insert.add_argument("--out", type=Path, required=True)
     insert.add_argument("--mode", choices=("fixed", "ilnk"), default="fixed")
     insert.set_defaults(function=command_insert_script)
@@ -496,7 +511,7 @@ def main(argv: list[str] | None = None) -> int:
         args = parser().parse_args(argv)
         args.function(args)
         return 0
-    except (OSError, RuntimeError, ValueError, KeyError) as error:
+    except (OSError, RuntimeError, TypeError, ValueError, KeyError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 2
 

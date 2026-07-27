@@ -71,3 +71,9 @@ available for formats where the byte position is not significant.
 The four `/data/SC0.DK4` through `SC3.DK4` story files use the same ILNK container.
 Strictly decodable Japanese records are exported; undecodable mixed-binary segments are
 counted in metadata and retained byte-for-byte without replacement characters.
+
+For larger revisions, `insert-script --batch` accepts compact
+`dk4-ilnk-translation-batch-v1` JSON files. Each batch is locked to the clean internal
+file's SHA-256, resolves stable record IDs against that verified file, and materializes
+the full source-byte checks before rebuilding. Multiple batches can be combined with a
+CSV in one insertion pass.

@@ -50,5 +50,18 @@ dk4tool validate-script translations/raphael_opening.csv
 dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv --out out/raphael_opening_en.nds --mode ilnk
 ```
 
+Larger translation sets can be stored as compact, source-hash-locked JSON batches and
+combined in one rebuild:
+
+```powershell
+dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv `
+  --batch translations/raphael_prologue_part2.json `
+  --batch translations/common_early_prompts.json `
+  --out out/expanded_translation_test.nds --mode ilnk
+```
+
+The current expanded build contains 64 Raphael prologue records through receipt of
+Julio's loan, plus 17 shared departure, docking, options, and save-data prompts.
+
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
