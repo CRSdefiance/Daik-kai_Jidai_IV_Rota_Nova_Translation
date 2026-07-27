@@ -31,7 +31,10 @@ for:
 crew assignment, and the city navigation choices. It is the first large shared-menu
 pass, so its labels recur across several menus rather than only one screenshot.
 
-`all` combines all four sets.
+`world` contains 29 recurring port names, including Seville, Malacca, Algiers, London,
+Genoa, Valencia, Marseille, Calicut, Batavia, and other major locations.
+
+`all` combines all five sets.
 
 ```powershell
 dk4tool extract-arm9-profile clean.nds `

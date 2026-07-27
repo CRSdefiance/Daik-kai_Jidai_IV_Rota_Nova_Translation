@@ -308,13 +308,50 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_NAV_CARGO_SETUP", 0x1446B4, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
 )
 
+WORLD_CITY_ENTRIES = (
+    Arm9ProfileEntry("DK4_CITY_SEVILLE", 0x15C080, "セビリア", "Seville", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MALACCA_A", 0x15C128, "マラッカ", "Malacca", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_OVIEDO", 0x15C14C, "オビエド", "Oviedo", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_SOCOTRA", 0x15C170, "ソコトラ", "Socotra", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_ALGIERS", 0x15C23C, "アルジェ", "Algiers", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_SOFALA_A", 0x15C278, "ソファラ", "Sofala", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MALACCA_B", 0x15C2C0, "マラッカ", "Malacca", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_SURABAYA", 0x15C3E0, "スラバヤ", "Surabaya", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_LONDON", 0x15C62C, "ロンドン", "London", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_LUANDA", 0x15C6EC, "ルアンダ", "Luanda", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_SOFALA_B", 0x15C758, "ソファラ", "Sofala", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_TUNIS", 0x15C800, "チュニス", "Tunis", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MADEIRA", 0x15C818, "マディラ", "Madeira", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_TRIPOLI", 0x15C830, "トリポリ", "Tripoli", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_HAMBURG", 0x15CA34, "ハンブルク", "Hamburg", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_GENOA_A", 0x15CA64, "ジェノヴァ", "Genoa", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_VALENCIA", 0x15CC50, "バレンシア", "Valencia", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_GENOA_B", 0x15CC68, "ジェノヴァ", "Genoa", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MARSEILLE", 0x15CC80, "マルセイユ", "Marseille", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_BRISTOL", 0x15CCD4, "ブリストル", "Bristol", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_BEIRUT", 0x15CCE0, "ベイルート", "Beirut", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_CALICUT", 0x15CD88, "カリカット", "Calicut", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_CALCUTTA", 0x15CDAC, "カルカッタ", "Calcutta", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_BATAVIA", 0x15CDDC, "バタヴィア", "Batavia", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_TERNATE", 0x15CDF4, "テルナーテ", "Ternate", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_JAMAICA", 0x15CE84, "ジャマイカ", "Jamaica", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MARACAIBO", 0x15CEA8, "マラカイボ", "Maracaibo", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MAKASSAR", 0x15CF50, "マカッサル", "Makassar", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_ALBACETE", 0x15CF5C, "アルバセテ", "Albacete", "World city name", slot_size=12),
+)
+
 
 PROFILES = {
     "startup": STARTUP_ENTRIES,
     "characters": CHARACTER_ENTRIES,
     "city": CITY_SCREEN_ENTRIES,
     "menus": MENU_ENTRIES,
-    "all": STARTUP_ENTRIES + CHARACTER_ENTRIES + CITY_SCREEN_ENTRIES + MENU_ENTRIES,
+    "world": WORLD_CITY_ENTRIES,
+    "all": STARTUP_ENTRIES
+    + CHARACTER_ENTRIES
+    + CITY_SCREEN_ENTRIES
+    + MENU_ENTRIES
+    + WORLD_CITY_ENTRIES,
 }
 
 
