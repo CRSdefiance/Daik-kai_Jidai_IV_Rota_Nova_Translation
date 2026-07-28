@@ -67,3 +67,15 @@ has booted successfully.
 - Trading details use the format `%s\n%s%4d％`. As in dialogue windows, the renderer
   consumes the first single-byte glyph after LF. The English profile inserts a layout
   space after LF so `Flavor` begins intact on the second line.
+
+## Graphics resource findings
+
+- The visible character-selection labels are confirmed in `/_pxl/charselect.pxl`.
+  This is an 8-bpp, BGR555-paletted atlas measuring 256 by 314 pixels; the five label
+  masks occupy its final 78 rows.
+- The city-information plaque captions are confirmed in `/_pxl/towninfo.pxl`, an
+  8-bpp, BGR555-paletted 256-by-192 atlas. The graphics can be decoded and repacked
+  without changing the resource dimensions or palette table.
+- `FLS/M20.fls` through `FLS/M32.fls` use LZ10-compressed palettes and texture images,
+  but inspection shows that they contain cutscene/movie art rather than the menu-label
+  graphics.
