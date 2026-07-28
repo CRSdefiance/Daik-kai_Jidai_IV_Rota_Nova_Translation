@@ -373,6 +373,8 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_DECK_VIEW_A", 0x131F30, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
     Arm9ProfileEntry("DK4_DECK_VIEW_B", 0x131F3C, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
     Arm9ProfileEntry("DK4_DECK_VIEW_C", 0x132044, "甲板画面", "Deck View", "Deck screen heading", slot_size=12),
+    Arm9ProfileEntry("DK4_CREW_ASSIGN_BUTTON_A", 0x134E30, "水夫編成", "Assign", "Ship screen crew-assignment button", slot_size=12),
+    Arm9ProfileEntry("DK4_FLEET_ARRANGE_BUTTON", 0x143C18, "隊列変更", "Arrange", "Ship screen formation button", slot_size=12),
     # City navigation menu.
     Arm9ProfileEntry("DK4_NAV_DEPART_A", 0x144644, "出港", "Depart", "City navigation menu", slot_size=8),
     Arm9ProfileEntry("DK4_NAV_DEPART_B", 0x14464C, "出港", "Depart", "City navigation menu", slot_size=8),
@@ -386,6 +388,13 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_NAV_AUTO_B", 0x1446A8, "自動移動", "Auto Move", "City navigation menu", slot_size=12),
     Arm9ProfileEntry("DK4_NAV_CARGO_SETUP_A", 0x1446B4, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
     Arm9ProfileEntry("DK4_NAV_CARGO_SETUP_B", 0x1446C0, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
+    # Ship-list headers have unusually wide Japanese-space padding.
+    Arm9ProfileEntry("DK4_SHIP_LIST_FLEET_A", 0x151714, "隊列　　　　　　　　", "Fleet", "Ship-list column heading", slot_size=20),
+    Arm9ProfileEntry("DK4_SHIP_LIST_DOCK_A", 0x151728, "ドック", "Dock", "Ship-list column heading", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_LIST_FLEET_B", 0x151730, "隊列　　　　　　　　", "Fleet", "Ship-list column heading", slot_size=20),
+    Arm9ProfileEntry("DK4_SHIP_LIST_FLEET_C", 0x15174C, "隊列　　　　　　　　", "Fleet", "Ship-list column heading", slot_size=20),
+    Arm9ProfileEntry("DK4_SHIP_LIST_DOCK_B", 0x151760, "ドック", "Dock", "Ship-list column heading", slot_size=8),
+    Arm9ProfileEntry("DK4_CREW_ASSIGN_BUTTON_B", 0x151630, "水夫編成", "Assign", "Ship-list crew-assignment button", slot_size=12),
 )
 
 WORLD_CITY_ENTRIES = (
@@ -479,6 +488,12 @@ SHARED_STORY_ENTRIES = (
         "Shared character-name pool",
         slot_size=16,
     ),
+    Arm9ProfileEntry("DK4_NAME_JULIA", 0x15C9B0, "ジュリア", "Julia", "Shared character-name pool", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CARTEIRA", 0x15D118, "カルテイラ", "Carteira", "Raphael's starting ship", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_A", 0x15D2BC, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_B", 0x15D4D8, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_C", 0x15E0A8, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_GUN_CULVERIN", 0x13C1A7, "カルバリン", "Culverin", "Global cannon-type table", slot_size=17),
     # City icon hover labels. Every record is an eight-byte terminated slot.
     Arm9ProfileEntry("DK4_PLACE_TAVERN", 0x156A9C, "酒場", "Tavern", "City location button", slot_size=8),
     Arm9ProfileEntry("DK4_PLACE_RUINS", 0x156AA4, "遺跡", "Ruins", "City location button", slot_size=8),
@@ -491,6 +506,15 @@ SHARED_STORY_ENTRIES = (
     Arm9ProfileEntry("DK4_PLACE_GOVERNOR", 0x156ADC, "総督府", "Govt", "City location button", slot_size=8),
     Arm9ProfileEntry("DK4_PLACE_SHIPYARD", 0x156AE4, "造船所", "Yard", "City location button", slot_size=8),
     Arm9ProfileEntry("DK4_PLACE_MARKET", 0x156AF4, "交易所", "Market", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_A", 0x15C518, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_B", 0x15C53C, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_C", 0x15C548, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_D", 0x15C554, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_E", 0x15C560, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_F", 0x15C56C, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_G", 0x15C578, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_H", 0x15C5E4, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
+    Arm9ProfileEntry("DK4_ROLE_TAVERN_PATRON_I", 0x15C614, "酒場の客", "Patron", "Shared tavern speaker role", slot_size=12),
 )
 
 TOWN_UI_ENTRIES = (
@@ -660,7 +684,9 @@ MARKET_UI_ENTRIES = (
     # Trading-post command menu and its repeated copies.
     Arm9ProfileEntry("DK4_MARKET_TRADE_A", 0x156FFC, "交易", "Trade", "Trading-post command", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_TRADE_B", 0x157004, "交易", "Trade", "Trading-post command", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_SELL_ALL", 0x15700C, "全売", "Sell All", "Trading-post Y-button command", slot_size=8),
+    # This slot is followed by live data rather than padding. Keep one byte for
+    # the terminator or the renderer continues into the following structure.
+    Arm9ProfileEntry("DK4_MARKET_SELL_ALL", 0x15700C, "全売", "SellAll", "Trading-post Y-button command", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_INVEST_A", 0x157024, "商業投資", "Invest", "Trading-post command", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_INVEST_B", 0x157030, "商業投資", "Invest", "Trading-post command", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_INFO_A", 0x15703C, "相場情報", "Market Info", "Trading-post command", slot_size=12),
@@ -676,13 +702,15 @@ MARKET_UI_ENTRIES = (
     # Market report and trading summary screen.
     Arm9ProfileEntry("DK4_MARKET_INFO_HEADING", 0x159F6C, "相場情報", "Market Info", "Market-report heading", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_TOTAL_INCOME", 0x159FA4, "総収入", "Income", "Trading summary label", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_TOTAL_EXPENSE", 0x159FAC, "総支出", "Expense", "Trading summary label", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_TOTAL", 0x159FB4, "合計", "Total", "Trading summary label", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_TRADE_HEADING", 0x159FBC, "交易", "Trade", "Trading summary heading", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_BALANCE", 0x159FC4, "収支", "Balance", "Trading summary heading", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_SHIP_NAME", 0x159FCC, "選択船名", "Ship Name", "Trading summary heading", slot_size=12),
-    Arm9ProfileEntry("DK4_MARKET_CITY", 0x159FD8, "交易都市", "Trade City", "Trading summary heading", slot_size=12),
-    Arm9ProfileEntry("DK4_MARKET_GOOD_DETAILS", 0x159FE4, "交易品詳細", "Good Details", "Trading summary heading", slot_size=12),
+    # The trading-summary renderer clips single-byte text to the byte length of
+    # the original Japanese label. These intentionally fit those visual limits.
+    Arm9ProfileEntry("DK4_MARKET_TOTAL_EXPENSE", 0x159FAC, "総支出", "Spent", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TOTAL", 0x159FB4, "合計", "Sum", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TRADE_HEADING", 0x159FBC, "交易", "Deal", "Trading summary heading", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_BALANCE", 0x159FC4, "収支", "Net", "Trading summary heading", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_SHIP_NAME", 0x159FCC, "選択船名", "Ship", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_CITY", 0x159FD8, "交易都市", "City", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_GOOD_DETAILS", 0x159FE4, "交易品詳細", "Good Info", "Trading summary heading", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_SIZE", 0x159FF0, "規模", "Size", "Trading summary label", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_STATUS", 0x159FF8, "状態", "Status", "Trading summary label", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_ARRIVAL_MONTH", 0x15A000, "入荷月", "Arr. Mo.", "Trading summary label", slot_size=8),
