@@ -57,18 +57,20 @@ combined in one rebuild:
 dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv `
   --batch translations/raphael_prologue_part2.json `
   --batch translations/raphael_tutorial.json `
+  --batch translations/raphael_gap_and_tutorial.json `
   --batch translations/common_early_prompts.json `
   --batch translations/help_early_game.json `
   --out out/expanded_translation_test.nds --mode ilnk
 ```
 
-The current expanded build contains the Raphael prologue and the first continuous trade
-and sailing tutorial, plus shared departure, docking, options, save-data, battle-result,
-and item-shop bargaining prompts. A first pointer-safe `HELP.DK4` batch covers the game
-overview and several tavern plots. The `city`, `menus`, `world`, and `shared` ARM9
-profiles translate Lisbon data, navigation and deck commands, recurring port names,
+The current expanded build contains the Raphael prologue through the first continuous
+trade and sailing tutorial, plus shared departure, docking, options, save-data,
+battle-result, tavern recruitment, and item-shop bargaining prompts. A first
+pointer-safe `HELP.DK4` batch covers the game overview and several tavern plots. The
+`city`, `menus`, `world`, `shared`, and `town` ARM9 profiles translate Lisbon and
+Seville data, navigation and deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation
-buttons, and sailor-allocation text.
+buttons, sailor-allocation strategies, and the first global faction/commodity records.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).

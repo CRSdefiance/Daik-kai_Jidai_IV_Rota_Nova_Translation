@@ -305,7 +305,8 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_NAV_AUTO_A", 0x144690, "自動移動", "Auto Move", "City navigation menu", slot_size=12),
     Arm9ProfileEntry("DK4_NAV_DECK_B", 0x14469C, "甲板画面", "Deck View", "City navigation menu", slot_size=12),
     Arm9ProfileEntry("DK4_NAV_AUTO_B", 0x1446A8, "自動移動", "Auto Move", "City navigation menu", slot_size=12),
-    Arm9ProfileEntry("DK4_NAV_CARGO_SETUP", 0x1446B4, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_CARGO_SETUP_A", 0x1446B4, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
+    Arm9ProfileEntry("DK4_NAV_CARGO_SETUP_B", 0x1446C0, "積み荷編成", "Cargo Setup", "City navigation menu", slot_size=12),
 )
 
 WORLD_CITY_ENTRIES = (
@@ -472,9 +473,19 @@ TOWN_UI_ENTRIES = (
         "Shared speaker-role pool",
         slot_size=12,
     ),
+    # Repeated name-plate role used by port and resupply dialogue.
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_A", 0x15DB74, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_B", 0x15DB84, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_C", 0x15DB94, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_D", 0x15DBA4, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_E", 0x15DBB4, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_F", 0x15DBC4, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
+    Arm9ProfileEntry("DK4_ROLE_PORT_WORKER_G", 0x15DBD4, "出港所の兄貴", "Port Worker", "Shared speaker-role pool", slot_size=16),
     # Shared confirmation buttons.
     Arm9ProfileEntry("DK4_BUTTON_NO", 0x133170, "いいえ", "No", "Yes/No prompt", slot_size=8),
     Arm9ProfileEntry("DK4_BUTTON_YES", 0x13317C, "はい", "Yes", "Yes/No prompt", slot_size=4),
+    Arm9ProfileEntry("DK4_BUTTON_NO_ALT", 0x15AD10, "いいえ", "No", "Alternate Yes/No prompt", slot_size=8),
+    Arm9ProfileEntry("DK4_BUTTON_YES_ALT", 0x15AD1C, "は い ", "Yes", "Alternate Yes/No prompt", slot_size=8),
     # Sailor-allocation screen.
     Arm9ProfileEntry(
         "DK4_CREW_COLUMNS",
@@ -509,6 +520,22 @@ TOWN_UI_ENTRIES = (
         slot_size=8,
     ),
     Arm9ProfileEntry(
+        "DK4_CREW_FLAGSHIP",
+        0x133A10,
+        "旗艦重視",
+        "Flagship",
+        "Automatic sailor-allocation strategy",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CREW_MINIMUM",
+        0x133A1C,
+        "必要最小",
+        "Minimum",
+        "Automatic sailor-allocation strategy",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
         "DK4_CREW_CAPTAIN_SUFFIX",
         0x13400C,
         "%s艦長",
@@ -516,6 +543,12 @@ TOWN_UI_ENTRIES = (
         "Captain suffix on sailor allocation screen",
         slot_size=8,
     ),
+    # Shared faction and commodity records. These feed every city screen that
+    # references the same global data table, including Seville.
+    Arm9ProfileEntry("DK4_FACTION_VALDES", 0x15D214, "バルデス軍", "Valdes", "Global faction name", slot_size=12),
+    Arm9ProfileEntry("DK4_GOOD_SULTANA", 0x15C9D4, "サルタナ", "Sultana", "Global commodity name", slot_size=12),
+    Arm9ProfileEntry("DK4_GOOD_COTTON_CLOTH", 0x15BF90, "綿織物", "Cotton", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_ARMOR", 0x15B850, "甲冑", "Armor", "Global commodity name", slot_size=8),
 )
 
 
