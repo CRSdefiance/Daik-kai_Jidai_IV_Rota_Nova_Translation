@@ -57,6 +57,7 @@ combined in one rebuild:
 dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv `
   --batch translations/raphael_prologue_part2.json `
   --batch translations/raphael_tutorial.json `
+  --batch translations/raphael_tutorial_deck.json `
   --batch translations/raphael_gap_and_tutorial.json `
   --batch translations/raphael_story_part3.json `
   --batch translations/common_early_prompts.json `
@@ -68,7 +69,7 @@ The current expanded build contains the Raphael prologue through the first conti
 trade and sailing tutorial, plus shared departure, docking, options, save-data,
 battle-result, tavern recruitment, and item-shop bargaining prompts. A first
 pointer-safe `HELP.DK4` batch covers the game overview and several tavern plots. The
-`characters`, `character_ui`, `city`, `menus`, `world`, `shared`, and `town` ARM9
+`characters`, `character_ui`, `city`, `menus`, `world`, `shared`, `town`, and `market` ARM9
 profiles translate character data and labels, Lisbon and Seville data, navigation and
 deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation

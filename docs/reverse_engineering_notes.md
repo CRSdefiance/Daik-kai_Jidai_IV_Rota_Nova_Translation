@@ -59,3 +59,11 @@ has booted successfully.
 - Trading-post category labels are also ordinary ARM9 text. The category and the
   Japanese `%s店` suffix are stored separately, so complete visible phrases do not
   occur in the ROM.
+- The visible stone-panel character labels and city-information plaques remain
+  Japanese even when both known ARM9 label tables contain English. Several other
+  short captions (`シェア`, `特産品`, `売却品`) have no standard-encoded ROM string.
+  These elements belong to the graphics/custom-renderer investigation rather than the
+  fixed ARM9 text profiles.
+- Trading details use the format `%s\n%s%4d％`. As in dialogue windows, the renderer
+  consumes the first single-byte glyph after LF. The English profile inserts a layout
+  space after LF so `Flavor` begins intact on the second line.

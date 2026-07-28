@@ -656,6 +656,69 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_GOOD_ARMOR", 0x15B850, "甲冑", "Armor", "Global commodity name", slot_size=8),
 )
 
+MARKET_UI_ENTRIES = (
+    # Trading-post command menu and its repeated copies.
+    Arm9ProfileEntry("DK4_MARKET_TRADE_A", 0x156FFC, "交易", "Trade", "Trading-post command", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TRADE_B", 0x157004, "交易", "Trade", "Trading-post command", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_SELL_ALL", 0x15700C, "全売", "Sell All", "Trading-post Y-button command", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_INVEST_A", 0x157024, "商業投資", "Invest", "Trading-post command", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_INVEST_B", 0x157030, "商業投資", "Invest", "Trading-post command", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_INFO_A", 0x15703C, "相場情報", "Market Info", "Trading-post command", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_INFO_B", 0x157048, "相場情報", "Market Info", "Trading-post command", slot_size=12),
+    Arm9ProfileEntry(
+        "DK4_MARKET_INVEST_AMOUNT",
+        0x157074,
+        "商業投資額",
+        "Investment",
+        "Commercial-investment label",
+        slot_size=12,
+    ),
+    # Market report and trading summary screen.
+    Arm9ProfileEntry("DK4_MARKET_INFO_HEADING", 0x159F6C, "相場情報", "Market Info", "Market-report heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_TOTAL_INCOME", 0x159FA4, "総収入", "Income", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TOTAL_EXPENSE", 0x159FAC, "総支出", "Expense", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TOTAL", 0x159FB4, "合計", "Total", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_TRADE_HEADING", 0x159FBC, "交易", "Trade", "Trading summary heading", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_BALANCE", 0x159FC4, "収支", "Balance", "Trading summary heading", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_SHIP_NAME", 0x159FCC, "選択船名", "Ship Name", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_CITY", 0x159FD8, "交易都市", "Trade City", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_GOOD_DETAILS", 0x159FE4, "交易品詳細", "Good Details", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_SIZE", 0x159FF0, "規模", "Size", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_STATUS", 0x159FF8, "状態", "Status", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_ARRIVAL_MONTH", 0x15A000, "入荷月", "Arr. Mo.", "Trading summary label", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_FUNDS", 0x15A008, "所持金", "Funds", "Trading summary label", slot_size=8),
+    # The renderer consumes the first byte after LF. A sacrificial space keeps
+    # category names such as "Flavor" together on the second line.
+    Arm9ProfileEntry(
+        "DK4_MARKET_GOOD_SHARE_FORMAT_A",
+        0x15A058,
+        "%s\n%s%4d％",
+        "%s\n %s%4d%",
+        "Trade-good/category percentage format",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_MARKET_GOOD_SHARE_FORMAT_B",
+        0x15A074,
+        "%s\n%s%4d％",
+        "%s\n %s%4d%",
+        "Trade-good/category percentage format",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry("DK4_MARKET_REMAINING", 0x15A474, "残金", "Balance", "Investment balance label", slot_size=8),
+    # Market-report map screen.
+    Arm9ProfileEntry(
+        "DK4_MARKET_MAP_FEE",
+        0x14C04C,
+        "%s\n閲覧料 金貨%s枚",
+        "%s\n Fee: %s coins",
+        "Market-report map fee",
+        slot_size=20,
+    ),
+    Arm9ProfileEntry("DK4_MARKET_MAP_FACTION", 0x14C15C, "勢力", "Faction", "Market-report map button", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_MAP_WORLD", 0x14C17C, "世界", "World", "Market-report map button", slot_size=8),
+)
+
 
 PROFILES = {
     "startup": STARTUP_ENTRIES,
@@ -666,6 +729,7 @@ PROFILES = {
     "world": WORLD_CITY_ENTRIES,
     "shared": SHARED_STORY_ENTRIES,
     "town": TOWN_UI_ENTRIES,
+    "market": MARKET_UI_ENTRIES,
     "all": STARTUP_ENTRIES
     + CHARACTER_ENTRIES
     + CHARACTER_UI_ENTRIES
@@ -673,7 +737,8 @@ PROFILES = {
     + MENU_ENTRIES
     + WORLD_CITY_ENTRIES
     + SHARED_STORY_ENTRIES
-    + TOWN_UI_ENTRIES,
+    + TOWN_UI_ENTRIES
+    + MARKET_UI_ENTRIES,
 }
 
 
