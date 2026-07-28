@@ -58,6 +58,7 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
   --batch translations/raphael_prologue_part2.json `
   --batch translations/raphael_tutorial.json `
   --batch translations/raphael_gap_and_tutorial.json `
+  --batch translations/raphael_story_part3.json `
   --batch translations/common_early_prompts.json `
   --batch translations/help_early_game.json `
   --out out/expanded_translation_test.nds --mode ilnk
@@ -70,7 +71,8 @@ pointer-safe `HELP.DK4` batch covers the game overview and several tavern plots.
 `city`, `menus`, `world`, `shared`, and `town` ARM9 profiles translate Lisbon and
 Seville data, navigation and deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation
-buttons, sailor-allocation strategies, and the first global faction/commodity records.
+buttons, sailor-allocation strategies, the global trading-category menu, and the first
+global faction/commodity records.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
