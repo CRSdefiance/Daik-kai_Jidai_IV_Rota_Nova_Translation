@@ -57,3 +57,59 @@ def compress_lz10_literals(data: bytes) -> bytes:
         output.extend(data[offset : offset + 8])
     return bytes(output)
 
+
+def compress_lz10(data: bytes) -> bytes:
+    """Create a deterministic greedy LZ10 stream."""
+    if len(data) > 0xFFFFFF:
+        raise Lz10Error("LZ10 payload exceeds 24-bit size")
+    output = bytearray(b"\x10" + len(data).to_bytes(3, "little"))
+    candidates: dict[bytes, list[int]] = {}
+    position = 0
+    while position < len(data):
+        flag_position = len(output)
+        output.append(0)
+        flags = 0
+        for bit in range(7, -1, -1):
+            if position >= len(data):
+                break
+            best_length = 0
+            best_distance = 0
+            key = data[position : position + 3]
+            if len(key) == 3:
+                minimum = max(0, position - 4096)
+                for previous in reversed(candidates.get(key, [])):
+                    if previous < minimum:
+                        break
+                    length = 3
+                    maximum = min(18, len(data) - position)
+                    while (
+                        length < maximum
+                        and data[previous + length] == data[position + length]
+                    ):
+                        length += 1
+                    if length > best_length:
+                        best_length = length
+                        best_distance = position - previous
+                        if length == 18:
+                            break
+            if best_length >= 3:
+                flags |= 1 << bit
+                pair = ((best_length - 3) << 12) | (best_distance - 1)
+                output.extend(pair.to_bytes(2, "big"))
+                consumed = best_length
+            else:
+                output.append(data[position])
+                consumed = 1
+
+            for added in range(consumed):
+                added_position = position + added
+                added_key = data[added_position : added_position + 3]
+                if len(added_key) == 3:
+                    bucket = candidates.setdefault(added_key, [])
+                    bucket.append(added_position)
+                    minimum = added_position - 4096
+                    while bucket and bucket[0] < minimum:
+                        bucket.pop(0)
+            position += consumed
+        output[flag_position] = flags
+    return bytes(output)

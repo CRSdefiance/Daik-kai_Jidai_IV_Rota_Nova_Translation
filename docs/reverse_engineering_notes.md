@@ -79,3 +79,11 @@ has booted successfully.
 - `FLS/M20.fls` through `FLS/M32.fls` use LZ10-compressed palettes and texture images,
   but inspection shows that they contain cutscene/movie art rather than the menu-label
   graphics.
+- Cutscene subtitle cards were found as separate 4-bpp textures in `M22.fls` and
+  `M24.fls`. The Japanese Rekoeition production card is a separate texture in
+  `logo.fls`. These five textures can be recompressed into their existing slots without
+  altering any animation records or illustrated frames.
+- Additional shared 8-bpp interface atlases with baked captions include
+  `chihofleetinfo.pxl`, `dividecrewinfo.pxl`, `fleetinfo.pxl`, `forceinfo.pxl`,
+  `goldsearoutediscovery.pxl`, both Golden Route logs, `personinfo.pxl`,
+  `saveloadinfo.pxl`, and `shipinfo.pxl`.

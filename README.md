@@ -76,5 +76,16 @@ early-story speaker names, city icon hover labels, tavern commands, confirmation
 buttons, sailor-allocation strategies, the global trading-category menu, and the first
 global faction/commodity records.
 
+The shared graphics pass redraws character-selection, city, fleet, faction, sailor,
+person, save/load, ship, and Golden Route interface captions in English. It also
+replaces the Japanese Rekoeition production card and four Japanese cutscene subtitle
+cards:
+
+```powershell
+python scripts/build_graphics_translation.py out/market_and_deck_tutorial.nds `
+  --out out/graphics_ui_and_cutscenes.nds `
+  --preview-dir work/graphics_preview
+```
+
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
