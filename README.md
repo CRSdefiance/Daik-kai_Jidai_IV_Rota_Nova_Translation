@@ -70,9 +70,9 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
 The current expanded build contains the Raphael prologue through the first continuous
 trade and sailing tutorial, the following Mediterranean strategy scene, plus shared
 departure, docking, options, save-data, battle-result, tavern recruitment, and
-item-shop bargaining prompts. The pointer-safe `HELP.DK4` batch covers game goals,
-captain advantages, loss conditions, tavern use, recruitment, sailor assignment, and
-several tavern plots. The
+item-shop bargaining prompts. The pointer-safe `HELP.DK4` batch now covers game goals,
+captain advantages, taverns, trade, diplomacy, palaces, shipbuilding, dock and regional
+fleet management, ports, sailing controls, exploration, and naval combat. The
 `characters`, `character_ui`, `city`, `menus`, `world`, `shared`, `town`, and `market` ARM9
 profiles translate character data and labels, Lisbon and Seville data, navigation and
 deck commands, recurring port names and roles,
