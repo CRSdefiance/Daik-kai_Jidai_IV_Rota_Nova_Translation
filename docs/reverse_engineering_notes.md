@@ -52,7 +52,10 @@ has booted successfully.
 - In the story renderer, uppercase ASCII `I` is interpreted as a Japanese first-person
   macro rather than a literal Latin glyph. Prose must avoid standalone `I` and words
   beginning with uppercase `I` until that command is fully mapped.
-- The photographed Lisbon status/port screen mixes dynamic values with Japanese labels
-  and trade-good names that do not appear in the current ARM9 or strict CP932 scans.
-  They likely use a separate packed table or tile graphics and need a resource-specific
-  extraction profile.
+- The character-selection field labels and birth-date suffix are ordinary ARM9 text,
+  but live in a second table separate from the character records. The complete date
+  formatter is `%2d月%2d日　生まれ`; replacing the formatter removes the month/day
+  characters without a graphics edit.
+- Trading-post category labels are also ordinary ARM9 text. The category and the
+  Japanese `%s店` suffix are stored separately, so complete visible phrases do not
+  occur in the ROM.

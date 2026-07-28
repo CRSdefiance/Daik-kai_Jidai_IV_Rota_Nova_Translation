@@ -37,7 +37,6 @@ STARTUP_ENTRIES = (
     Arm9ProfileEntry("DK4_BUTTON_BACK", 1160460, "戻る", "Back", "Shared controller prompts"),
     Arm9ProfileEntry("DK4_BUTTON_DONE", 1160476, "決定", "Done", "Shared controller prompts"),
     Arm9ProfileEntry("DK4_BUTTON_EDIT", 1160516, "変更", "Edit", "Shared controller prompts"),
-    Arm9ProfileEntry("DK4_SELECT_BORN", 1376968, "生まれ", "Born", "Character selection"),
     Arm9ProfileEntry(
         "DK4_SELECT_HEADING",
         1376976,
@@ -173,6 +172,86 @@ CHARACTER_ENTRIES = (
         "A Ming admiral leading her own fleet  ",
         "Maria biography",
         "Trailing spaces preserve the original line delimiter.",
+    ),
+)
+
+CHARACTER_UI_ENTRIES = (
+    # Character display screen. These are a second table, separate from the
+    # character records and shared controller captions translated earlier.
+    Arm9ProfileEntry("DK4_SELECT_LABEL_NAME", 0x15029C, "名", "Name", "Character field label", slot_size=4),
+    Arm9ProfileEntry(
+        "DK4_SELECT_LABEL_MIDDLE",
+        0x1502A0,
+        "ミドルネーム",
+        "Middle Name",
+        "Character field label",
+        slot_size=16,
+    ),
+    Arm9ProfileEntry("DK4_SELECT_LABEL_LAST", 0x1502B0, "姓", "Last", "Character field label", slot_size=4),
+    Arm9ProfileEntry(
+        "DK4_SELECT_LABEL_FACTION",
+        0x1502B4,
+        "勢力名",
+        "Faction",
+        "Character field label",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_BIRTH_FORMAT",
+        0x1502BC,
+        "%2d月%2d日　生まれ",
+        "%2d/%2d Born",
+        "Character birth-date row",
+        slot_size=20,
+    ),
+    # Character-edit screen. Each row embeds its own copy of "変更".
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_BUTTON",
+        0x14FBE0,
+        "変更",
+        "Edit",
+        "Character-screen Y-button caption",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_NAME",
+        0x14FC28,
+        "名　変更　　　　　",
+        "Name: Edit",
+        "Character-edit row",
+        slot_size=20,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_MIDDLE",
+        0x14FC3C,
+        "ミドルネーム　変更",
+        "Middle: Edit",
+        "Character-edit row",
+        slot_size=20,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_LAST",
+        0x14FC50,
+        "姓　変更　　　　　",
+        "Last: Edit",
+        "Character-edit row",
+        slot_size=20,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_FACTION",
+        0x14FC64,
+        "勢力名　変更　　　",
+        "Faction: Edit",
+        "Character-edit row",
+        slot_size=20,
+    ),
+    Arm9ProfileEntry(
+        "DK4_SELECT_EDIT_BIRTHDAY",
+        0x14FC78,
+        "誕生日　変更　　　",
+        "Birthday: Edit",
+        "Character-edit row",
+        slot_size=20,
     ),
 )
 
@@ -581,6 +660,7 @@ TOWN_UI_ENTRIES = (
 PROFILES = {
     "startup": STARTUP_ENTRIES,
     "characters": CHARACTER_ENTRIES,
+    "character_ui": CHARACTER_UI_ENTRIES,
     "city": CITY_SCREEN_ENTRIES,
     "menus": MENU_ENTRIES,
     "world": WORLD_CITY_ENTRIES,
@@ -588,6 +668,7 @@ PROFILES = {
     "town": TOWN_UI_ENTRIES,
     "all": STARTUP_ENTRIES
     + CHARACTER_ENTRIES
+    + CHARACTER_UI_ENTRIES
     + CITY_SCREEN_ENTRIES
     + MENU_ENTRIES
     + WORLD_CITY_ENTRIES

@@ -68,8 +68,9 @@ The current expanded build contains the Raphael prologue through the first conti
 trade and sailing tutorial, plus shared departure, docking, options, save-data,
 battle-result, tavern recruitment, and item-shop bargaining prompts. A first
 pointer-safe `HELP.DK4` batch covers the game overview and several tavern plots. The
-`city`, `menus`, `world`, `shared`, and `town` ARM9 profiles translate Lisbon and
-Seville data, navigation and deck commands, recurring port names and roles,
+`characters`, `character_ui`, `city`, `menus`, `world`, `shared`, and `town` ARM9
+profiles translate character data and labels, Lisbon and Seville data, navigation and
+deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation
 buttons, sailor-allocation strategies, the global trading-category menu, and the first
 global faction/commodity records.

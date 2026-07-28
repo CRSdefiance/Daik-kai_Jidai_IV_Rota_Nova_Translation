@@ -56,6 +56,7 @@ verified zero padding at the end of their fixed table slot, allowing `Normal`, `
 and `Lisbon` to fit without moving pointers or neighboring records. The Salt slot must
 retain its terminator, so it uses the safe abbreviation `Sal`.
 
-The Japanese row labels visible beside name, surname, organization, and birthday do not
-respond to either mapped ARM9 text table. Emulator tests indicate those labels are
-graphics and require a separate tile-resource workflow.
+The Japanese row labels visible beside name, surname, organization, and birthday use a
+second ARM9 table rather than the character-record table. Export and apply the
+`character_ui` profile to translate those labels, the embedded edit-row captions, and
+the complete birth-date formatter.
