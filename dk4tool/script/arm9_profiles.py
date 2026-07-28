@@ -254,7 +254,7 @@ MENU_ENTRIES = (
     # Reusable command labels.
     Arm9ProfileEntry("DK4_MENU_INDEX", 0x11B524, "目次", "Index", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_SEARCH", 0x11B52C, "探索", "Search", "Common menu command", slot_size=8),
-    Arm9ProfileEntry("DK4_MENU_MIN", 0x11B534, "最小", "Min", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_MIN", 0x11B534, "最小", "Lo", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_NEXT", 0x11B53C, "次頁", "Next", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_ASSIGN", 0x11B54C, "配置", "Assign", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_DONE", 0x11B554, "完了", "Done", "Common menu command", slot_size=8),
@@ -265,7 +265,7 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_MENU_FACTION", 0x11B584, "勢力", "Faction", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_QUIT", 0x11B58C, "終了", "Quit", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_DECLARE", 0x11B594, "宣戦", "Declare", "Common menu command", slot_size=8),
-    Arm9ProfileEntry("DK4_MENU_MAX", 0x11B59C, "最大", "Max", "Common menu command", slot_size=8),
+    Arm9ProfileEntry("DK4_MENU_MAX", 0x11B59C, "最大", "Hi", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_STAFF", 0x11B5A4, "人事", "Staff", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_WORLD", 0x11B5AC, "世界", "World", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_WITHDRAW", 0x11B5B4, "全搬出", "Withdraw", "Common menu command", slot_size=8),
@@ -413,6 +413,111 @@ SHARED_STORY_ENTRIES = (
     Arm9ProfileEntry("DK4_PLACE_MARKET", 0x156AF4, "交易所", "Market", "City location button", slot_size=8),
 )
 
+TOWN_UI_ENTRIES = (
+    # Tavern commands.
+    Arm9ProfileEntry(
+        "DK4_TAVERN_RECRUIT",
+        0x143B90,
+        "水夫を集める",
+        "Recruit Crew",
+        "Tavern command",
+        slot_size=16,
+    ),
+    Arm9ProfileEntry(
+        "DK4_TAVERN_TREAT",
+        0x143BA0,
+        "みんなにおごる",
+        "Treat Everyone",
+        "Tavern command",
+        slot_size=16,
+    ),
+    Arm9ProfileEntry(
+        "DK4_TAVERN_DRINK",
+        0x143BB0,
+        "飲み物をたのむ",
+        "Order Drink",
+        "Tavern command",
+        slot_size=16,
+    ),
+    Arm9ProfileEntry(
+        "DK4_PLAZA_TRENDS",
+        0x143E98,
+        "流行情報",
+        "Trends",
+        "Plaza shop-category menu",
+        slot_size=12,
+    ),
+    # Repeated name-plate role used by tavern dialogue.
+    Arm9ProfileEntry(
+        "DK4_ROLE_BARKEEP_A",
+        0x15D154,
+        "酒場の親父",
+        "Barkeep",
+        "Shared speaker-role pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_ROLE_BARKEEP_B",
+        0x15D160,
+        "酒場の親父",
+        "Barkeep",
+        "Shared speaker-role pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_ROLE_BARKEEP_C",
+        0x15D2A4,
+        "酒場の親父",
+        "Barkeep",
+        "Shared speaker-role pool",
+        slot_size=12,
+    ),
+    # Shared confirmation buttons.
+    Arm9ProfileEntry("DK4_BUTTON_NO", 0x133170, "いいえ", "No", "Yes/No prompt", slot_size=8),
+    Arm9ProfileEntry("DK4_BUTTON_YES", 0x13317C, "はい", "Yes", "Yes/No prompt", slot_size=4),
+    # Sailor-allocation screen.
+    Arm9ProfileEntry(
+        "DK4_CREW_COLUMNS",
+        0x133FBC,
+        "必要数　現在数　最大数",
+        "Need   Now   Max",
+        "Sailor allocation column headings",
+        slot_size=24,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CREW_HEADING",
+        0x133FD4,
+        "水夫を編成して下さい",
+        "Assign Sailors",
+        "Sailor allocation heading",
+        slot_size=24,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CREW_AUTO",
+        0x1339F8,
+        "自動",
+        "Auto",
+        "Automatic sailor allocation button",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CREW_EVEN",
+        0x133A00,
+        "平均化",
+        "Even",
+        "Even sailor allocation button",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CREW_CAPTAIN_SUFFIX",
+        0x13400C,
+        "%s艦長",
+        "%s Cap",
+        "Captain suffix on sailor allocation screen",
+        slot_size=8,
+    ),
+)
+
 
 PROFILES = {
     "startup": STARTUP_ENTRIES,
@@ -421,12 +526,14 @@ PROFILES = {
     "menus": MENU_ENTRIES,
     "world": WORLD_CITY_ENTRIES,
     "shared": SHARED_STORY_ENTRIES,
+    "town": TOWN_UI_ENTRIES,
     "all": STARTUP_ENTRIES
     + CHARACTER_ENTRIES
     + CITY_SCREEN_ENTRIES
     + MENU_ENTRIES
     + WORLD_CITY_ENTRIES
-    + SHARED_STORY_ENTRIES,
+    + SHARED_STORY_ENTRIES
+    + TOWN_UI_ENTRIES,
 }
 
 

@@ -67,7 +67,8 @@ and sailing tutorial, plus shared departure, docking, options, save-data, battle
 and item-shop bargaining prompts. A first pointer-safe `HELP.DK4` batch covers the game
 overview and several tavern plots. The `city`, `menus`, `world`, and `shared` ARM9
 profiles translate Lisbon data, navigation and deck commands, recurring port names,
-early-story speaker names, and city icon hover labels.
+early-story speaker names, city icon hover labels, tavern commands, confirmation
+buttons, and sailor-allocation text.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).

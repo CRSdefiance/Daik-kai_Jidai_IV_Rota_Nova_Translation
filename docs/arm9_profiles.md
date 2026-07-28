@@ -37,7 +37,10 @@ Genoa, Valencia, Marseille, Calicut, Batavia, and other major locations.
 `shared` contains recurring early-story names and the city icon hover labels for the
 Tavern, Market, Palace, Square, Shipyard, and other locations.
 
-`all` combines all six sets.
+`town` contains tavern commands, Barkeep role names, Yes/No buttons, Trends, and the
+text-backed portions of the sailor-allocation screen.
+
+`all` combines all seven sets.
 
 ```powershell
 dk4tool extract-arm9-profile clean.nds `

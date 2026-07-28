@@ -71,8 +71,10 @@ Story text must also preserve the original position of every line-feed control:
 `{LB@31}` pads toward byte offset 31, emits the line feed, and reserves a sacrificial
 space because the renderer otherwise leaves the next ASCII glyph on the preceding
 line. This keeps the intended first letter on the new line while leaving the
-translation readable in CSV. Plain `{LB}` remains available for formats where this
-story-renderer behavior does not apply.
+translation readable in CSV. Plain `{LB}` now reserves the same sacrificial space
+without alignment. The rebuilder also preserves any leading ASCII spaces from the
+Japanese record because these are consumed as layout bytes before the first English
+glyph. Translators no longer need to add either protection manually.
 
 The same renderer treats uppercase `F` and `I` as macro syntax. Only the verified
 `FI`, `FA`, and `FO` name substitutions are allowed; validation rejects literal

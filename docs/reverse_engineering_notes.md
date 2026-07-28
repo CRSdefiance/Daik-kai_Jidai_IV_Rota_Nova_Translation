@@ -43,6 +43,9 @@ has booted successfully.
 - Broader emulator testing shows that `0A` is applied after the next single-byte glyph.
   Aligned English breaks therefore encode `0A 20`: the following space is consumed on
   the preceding line and the intended first letter begins the new line.
+- Tavern testing shows that leading ASCII spaces in common-message records are also
+  consumed layout bytes. The rebuilder now preserves the original leading-space count
+  automatically, and both aligned and plain English line breaks emit `0A 20`.
 - Uppercase `F` is the runtime-substitution command prefix, not a safe literal story
   glyph. `FI`, `FA`, and `FO` are intentional substitutions; ordinary English must
   rewrite capitalized words such as “Father,” “Fine,” and “Forget.”

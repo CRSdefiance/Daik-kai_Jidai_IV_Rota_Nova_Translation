@@ -44,6 +44,13 @@ def validate_rows(rows: list[dict[str, str]]) -> list[ValidationIssue]:
         try:
             if row.get("control_profile") == "mesfile":
                 encoded = encode_mesfile_text(english)
+                source_hex = row.get("source_hex", "")
+                if source_hex:
+                    source = bytes.fromhex(source_hex)
+                    source_indent = len(source) - len(source.lstrip(b" "))
+                    encoded_indent = len(encoded) - len(encoded.lstrip(b" "))
+                    if encoded_indent < source_indent:
+                        encoded = b" " * (source_indent - encoded_indent) + encoded
                 macro_scan = re.sub(r"\{[^{}]+\}", "", english)
                 unsafe_f = any(
                     character == "F"

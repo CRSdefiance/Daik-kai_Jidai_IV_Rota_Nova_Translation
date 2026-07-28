@@ -94,6 +94,19 @@ def test_mesfile_aligned_linebreak_preserves_control_offset():
     assert encoded == b"Short    \n Next"
 
 
+def test_mesfile_plain_linebreak_protects_first_english_glyph():
+    assert encode_mesfile_text("First{LB}Next") == b"First\n Next"
+
+
+def test_mesfile_rebuild_preserves_consumed_source_indent():
+    data = IlnkContainer([b" " + "いらっしゃい".encode("cp932")]).to_bytes()
+    rows = export_mesfile_rows(data, "/COMMON/MESFILE.DK4")
+    rows[0]["english"] = "Welcome!{PAD}"
+    rebuilt = rebuild_mesfile(data, rows)
+    replacement = IlnkContainer.parse(rebuilt).blocks[0]
+    assert replacement.startswith(b" Welcome!")
+
+
 def test_mesfile_aligned_linebreak_rejects_overflow():
     try:
         encode_mesfile_text("Too long{LB@3}")

@@ -55,7 +55,10 @@ def encode_mesfile_text(text: str) -> bytes:
         elif text.startswith("{PAD}", cursor):
             cursor += 5
         elif text.startswith("{LB}", cursor):
-            output.append(0x0A)
+            # The DS window renderer consumes the following single-byte glyph
+            # before applying 0A. Japanese text hides this quirk because the
+            # next glyph is multibyte; English loses its first character.
+            output.extend(b"\x0A\x20")
             cursor += 4
         elif text.startswith("{END}", cursor):
             output.append(0x00)
@@ -180,6 +183,12 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         english = row["english"]
         pad_to_length = english.endswith("{PAD}")
         replacement = encode_mesfile_text(english)
+        # Leading spaces in these records are layout bytes consumed before the
+        # first visible glyph. Preserve the original prefix automatically.
+        source_indent = len(original) - len(original.lstrip(b" "))
+        replacement_indent = len(replacement) - len(replacement.lstrip(b" "))
+        if replacement_indent < source_indent:
+            replacement = b" " * (source_indent - replacement_indent) + replacement
         if pad_to_length:
             if len(replacement) > len(original):
                 raise ValueError(
