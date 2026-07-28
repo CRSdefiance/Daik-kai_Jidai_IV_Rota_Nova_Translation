@@ -340,6 +340,79 @@ WORLD_CITY_ENTRIES = (
     Arm9ProfileEntry("DK4_CITY_ALBACETE", 0x15CF5C, "アルバセテ", "Albacete", "World city name", slot_size=12),
 )
 
+SHARED_STORY_ENTRIES = (
+    # Early Raphael-story speaker names. These live in the shared ARM9 name pool,
+    # so patching them also fixes name plates outside the opening scene.
+    Arm9ProfileEntry(
+        "DK4_NAME_JULIO",
+        0x15BF28,
+        "フリオ",
+        "Julio",
+        "Shared character-name pool",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_PASAR",
+        0x15C060,
+        "パサー",
+        "Pasar",
+        "Shared character surname pool",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_ERNECO_A",
+        0x15C20C,
+        "エルネコ",
+        "Erneco",
+        "Shared character surname pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_JANUS",
+        0x15C710,
+        "ジェナス",
+        "Janus",
+        "Shared character-name pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_MANAUS",
+        0x15C914,
+        "マナウス",
+        "Manaus",
+        "Shared character surname pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_ERNECO_B",
+        0x15C9BC,
+        "エルネコ",
+        "Erneco",
+        "Shared character surname pool",
+        slot_size=12,
+    ),
+    Arm9ProfileEntry(
+        "DK4_NAME_CLAUDIO",
+        0x15D784,
+        "クラウディオ",
+        "Claudio",
+        "Shared character-name pool",
+        slot_size=16,
+    ),
+    # City icon hover labels. Every record is an eight-byte terminated slot.
+    Arm9ProfileEntry("DK4_PLACE_TAVERN", 0x156A9C, "酒場", "Tavern", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_RUINS", 0x156AA4, "遺跡", "Ruins", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_PALACE", 0x156AAC, "王宮", "Palace", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_CHURCH", 0x156AB4, "教会", "Church", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_INN", 0x156ABC, "宿屋", "Inn", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_GATE", 0x156AC4, "城門", "Gate", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_SQUARE", 0x156ACC, "広場", "Square", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_GUILD", 0x156AD4, "ギルド", "Guild", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_GOVERNOR", 0x156ADC, "総督府", "Govt", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_SHIPYARD", 0x156AE4, "造船所", "Yard", "City location button", slot_size=8),
+    Arm9ProfileEntry("DK4_PLACE_MARKET", 0x156AF4, "交易所", "Market", "City location button", slot_size=8),
+)
+
 
 PROFILES = {
     "startup": STARTUP_ENTRIES,
@@ -347,11 +420,13 @@ PROFILES = {
     "city": CITY_SCREEN_ENTRIES,
     "menus": MENU_ENTRIES,
     "world": WORLD_CITY_ENTRIES,
+    "shared": SHARED_STORY_ENTRIES,
     "all": STARTUP_ENTRIES
     + CHARACTER_ENTRIES
     + CITY_SCREEN_ENTRIES
     + MENU_ENTRIES
-    + WORLD_CITY_ENTRIES,
+    + WORLD_CITY_ENTRIES
+    + SHARED_STORY_ENTRIES,
 }
 
 

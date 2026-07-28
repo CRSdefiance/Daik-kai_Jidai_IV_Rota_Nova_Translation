@@ -56,16 +56,18 @@ combined in one rebuild:
 ```powershell
 dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_opening.csv `
   --batch translations/raphael_prologue_part2.json `
+  --batch translations/raphael_tutorial.json `
   --batch translations/common_early_prompts.json `
+  --batch translations/help_early_game.json `
   --out out/expanded_translation_test.nds --mode ilnk
 ```
 
-The current expanded build contains 66 Raphael-route records, including the post-prologue
-`Teach me` / `Skip tutorial` choice, plus 17 shared departure, docking, options, and
-save-data prompts. The `city` ARM9 profile adds the first translated Lisbon status-screen
-headings, controls, city name, and visible commodities; `menus` adds 51 shared labels for
-navigation, deck management, policies, and crew assignment; `world` adds 29 recurring
-English port names.
+The current expanded build contains the Raphael prologue and the first continuous trade
+and sailing tutorial, plus shared departure, docking, options, save-data, battle-result,
+and item-shop bargaining prompts. A first pointer-safe `HELP.DK4` batch covers the game
+overview and several tavern plots. The `city`, `menus`, `world`, and `shared` ARM9
+profiles translate Lisbon data, navigation and deck commands, recurring port names,
+early-story speaker names, and city icon hover labels.
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).

@@ -34,7 +34,10 @@ pass, so its labels recur across several menus rather than only one screenshot.
 `world` contains 29 recurring port names, including Seville, Malacca, Algiers, London,
 Genoa, Valencia, Marseille, Calicut, Batavia, and other major locations.
 
-`all` combines all five sets.
+`shared` contains recurring early-story names and the city icon hover labels for the
+Tavern, Market, Palace, Square, Shipyard, and other locations.
+
+`all` combines all six sets.
 
 ```powershell
 dk4tool extract-arm9-profile clean.nds `
