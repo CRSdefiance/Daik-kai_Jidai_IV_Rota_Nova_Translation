@@ -64,6 +64,7 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
   --batch translations/common_early_prompts.json `
   --batch translations/tavern_and_recruitment.json `
   --batch translations/help_early_game.json `
+  --batch translations/palace_global.json `
   --out out/expanded_translation_test.nds --mode ilnk
 ```
 
@@ -78,7 +79,9 @@ profiles translate character data and labels, Lisbon and Seville data, navigatio
 deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation
 buttons, sailor-allocation strategies, the global trading-category menu, and the first
-global faction/commodity records.
+global faction/commodity records. The palace batch covers shared ruler dialogue for
+contracts, defense investment, letters, recommendations, and lending or reclaiming
+treasures in every city.
 
 The shared graphics pass redraws character-selection, city, fleet, faction, sailor,
 person, save/load, ship, and Golden Route interface captions in English. It also
@@ -101,8 +104,9 @@ character-input/calendar pass. It clears the full character-editor heading befor
 drawing each title, repacks the four popup labels so `Name`, `Middle Name`, `Last`, and
 `Faction` are safely terminated, and translates the popup Done button and birthday
 heading. The keyboard page identifiers must remain byte-for-byte Japanese because the
-manager uses them as control values. Editor headings therefore say `press 英`, safely
-identifying the working Latin-page key without modifying it.
+manager uses them as control values. Editor headings retain direct translations such
+as `Name: Edit`; the remaining default-page work is tracked in
+[docs/known_issues.md](docs/known_issues.md).
 
 The calendar audit covers the shared numeric month suffix used by all twelve birthday
 months, work and voyage duration formats, the 3/10/30-day inn choices, continued

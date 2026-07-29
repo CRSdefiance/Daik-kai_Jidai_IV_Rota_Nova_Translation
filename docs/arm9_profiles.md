@@ -54,7 +54,9 @@ spaces when needed so that replacements occupy the exact original byte length an
 the game's line-break delimiters untouched. Some city vocabulary entries use the
 verified zero padding at the end of their fixed table slot, allowing `Normal`, `Common`,
 and `Lisbon` to fit without moving pointers or neighboring records. The Salt slot must
-retain its terminator, so it uses the safe abbreviation `Sal`.
+retain its terminator. The fixed profile therefore keeps the harmless fallback `Sal`,
+while the verified post-build patch relocates the live pointer to a full `Salt`
+string stored in spare space after `Almond`.
 
 The Japanese row labels visible beside name, surname, organization, and birthday use a
 second ARM9 table rather than the character-record table. Export and apply the

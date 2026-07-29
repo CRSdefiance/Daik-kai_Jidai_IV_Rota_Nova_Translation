@@ -17,6 +17,8 @@ from dk4tool.rom.nds import NdsImage
 EXPECTED_RECORDS = {
     (0, 64): " Range: about %s days.",
     (0, 65): " %s/%s\n %s\n Departed %s.",
+    (14, 36): "  %s! You aid this city's defense\n without a contract?\n How generous\n of you.",
+    (14, 43): " Hmm. Admirable resolve.\n Well done.",
     (14, 59): " One coin per night.\n How many nights?",
     (14, 60): "  Stay %s nights?\n Rest.",
 }

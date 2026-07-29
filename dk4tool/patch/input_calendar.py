@@ -61,21 +61,21 @@ PATCHES = (
     ),
     _string_patch(
         0x14FC3C,
-        "Middle: press 英",
+        "Middle: Edit",
         20,
         "middle-name editor heading",
         "ミドルネーム　変更",
-        "Middle: Edit",
         "Middle: Edit  ",
+        "Middle: press 英",
     ),
     _string_patch(
         0x14FC64,
-        "Faction: press 英",
+        "Faction: Edit",
         20,
         "faction editor heading",
         "勢力名　変更　　　",
-        "Faction: Edit",
         "Faction: Edit ",
+        "Faction: press 英",
     ),
     _string_patch(
         0x14FC78,
@@ -103,7 +103,7 @@ PATCHES = (
     _string_patch(0x16AFB0, "Arr. Mo.", 8, "alternate arrival-month label", "入荷月"),
     Arm9Patch(
         0x14FC28,
-        _fixed("Name: press 英", 20),
+        _fixed("Name: Edit", 20),
         (
             _fixed("名　変更　　　　　", 20),
             _fixed("Name: Edit", 20),
@@ -111,11 +111,11 @@ PATCHES = (
             b"Name: Edit    \0Name\0",
             _fixed("Name: press 英", 20),
         ),
-        "name editor heading with Latin-key guidance",
+        "name editor heading",
     ),
     Arm9Patch(
         0x14FC50,
-        _fixed("Last: press 英", 20),
+        _fixed("Last: Edit", 20),
         (
             _fixed("姓　変更　　　　　", 20),
             _fixed("Last: Edit", 20),
@@ -123,7 +123,26 @@ PATCHES = (
             b"Last: Edit    \0Last\0",
             _fixed("Last: press 英", 20),
         ),
-        "surname editor heading with Latin-key guidance",
+        "surname editor heading",
+    ),
+    Arm9Patch(
+        0x15D550,
+        b"Almond\0Salt\0",
+        (
+            _fixed("アーモンド", 12),
+            _fixed("Almond", 12),
+            b"Almond\0Salt\0",
+        ),
+        "commodity pool relocation containing full Salt spelling",
+    ),
+    Arm9Patch(
+        0x15EFB4,
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15D557),
+        (
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B78C),
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15D557),
+        ),
+        "Salt commodity pointer relocation",
     ),
     Arm9Patch(
         0x9E058,
