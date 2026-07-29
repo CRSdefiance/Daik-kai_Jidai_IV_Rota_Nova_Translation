@@ -63,6 +63,7 @@ dk4tool insert-script out/character_selection_en_v2.nds translations/raphael_ope
   --batch translations/raphael_mediterranean_story.json `
   --batch translations/common_early_prompts.json `
   --batch translations/tavern_and_recruitment.json `
+  --batch translations/yard_and_dock.json `
   --batch translations/help_early_game.json `
   --batch translations/palace_global.json `
   --out out/expanded_translation_test.nds --mode ilnk
@@ -82,6 +83,18 @@ buttons, sailor-allocation strategies, the global trading-category menu, and the
 global faction/commodity records. The palace batch covers shared ruler dialogue for
 contracts, defense investment, letters, recommendations, and lending or reclaiming
 treasures in every city.
+
+The Yard pass translates purchase, sale, repair, remodeling, dock, equipment, rename,
+special-order, and standard-hull commands together with their common confirmations.
+The Common radial menu and its town-map callouts are covered by the shared ARM9 profile.
+
+Refresh the rough record-based coverage report after changing translation batches:
+
+```powershell
+python scripts/build_translation_progress.py
+```
+
+The generated report is [docs/translation_progress.md](docs/translation_progress.md).
 
 The palace/name build expands the shared character-name pool by 188 records and keeps
 the palace's internal secondary dialogue entry points at their original byte offsets.

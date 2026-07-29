@@ -31,10 +31,10 @@ PLAQUE_LABELS = {
         # These four plaques share their rows with live values.  Keep the
         # captions deliberately compact so they cannot spill into City,
         # Normal, 6000, and 4200 at runtime.
-        Label((7, 19, 67, 36), "Type", 9),
-        Label((135, 19, 199, 36), "Growth", 9),
-        Label((7, 39, 67, 56), "Status", 9),
-        Label((135, 39, 199, 56), "Arms", 9),
+        Label((7, 19, 51, 36), "Type", 8),
+        Label((135, 19, 175, 36), "Growth", 7),
+        Label((7, 39, 51, 56), "Status", 8),
+        Label((135, 39, 175, 56), "Arms", 8),
         Label((39, 59, 89, 77), "Share"),
         Label((163, 59, 235, 77), "Specialty", 11),
     ],
