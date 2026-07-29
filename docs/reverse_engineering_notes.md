@@ -94,3 +94,10 @@ has booted successfully.
 - Ship names, classes, and prices use separate live ARM9 formatters. Removing
   the `号` and `級` suffixes and replacing `金貨%10d枚` with `%10d coins`
   fixes all three verified ship-display paths without altering saved names.
+- Ship models are not held in one master array. The validated profile currently
+  covers 119 duplicate slots spread across event, catalog, shipyard, fleet, and
+  scenario pools, with fixed widths of 8, 12, 16, or 20 bytes.
+- The packaged-ROM audit confirms that `/_pxl/__marker.pxl` contains the English
+  Common captions after every build stage. A Japanese Common wheel from this ROM
+  therefore means the emulator retained the old atlas in memory; cold-booting the
+  ROM reloads the translated resource.

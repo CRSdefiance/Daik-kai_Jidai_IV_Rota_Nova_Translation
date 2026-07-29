@@ -1,6 +1,6 @@
 from itertools import pairwise
 
-from dk4tool.script.arm9_profiles import PROFILES
+from dk4tool.script.arm9_profiles import PROFILES, SHIP_MODEL_ENTRIES
 
 
 def test_profile_entries_are_unique_and_fixed_replacements_fit():
@@ -20,3 +20,15 @@ def test_profile_offsets_do_not_overlap():
     )
     for (_, previous_end, previous_id), (start, _, row_id) in pairwise(ranges):
         assert previous_end <= start, f"{previous_id} overlaps {row_id}"
+
+
+def test_ship_model_profile_covers_full_catalog_and_visible_galley_family():
+    assert len(SHIP_MODEL_ENTRIES) == 119
+    translations = {
+        (entry.offset, entry.japanese): entry.suggested_english
+        for entry in SHIP_MODEL_ENTRIES
+    }
+    assert translations[(0x15BE18, "ブリグ")] == "Brig"
+    assert translations[(0x15CA58, "小型ガレー")] == "Sm Galley"
+    assert translations[(0x15CA94, "大型ガレー")] == "Lg Galley"
+    assert translations[(0x15E994, "武装ブリガンティン")] == "Armed Brigantine"

@@ -75,12 +75,14 @@ departure, docking, options, save-data, battle-result, tavern recruitment, and
 item-shop bargaining prompts. The pointer-safe `HELP.DK4` batch now covers game goals,
 captain advantages, taverns, trade, diplomacy, palaces, shipbuilding, dock and regional
 fleet management, ports, sailing controls, exploration, and naval combat. The
-`characters`, `character_ui`, `city`, `menus`, `world`, `shared`, `town`, and `market` ARM9
+`characters`, `character_ui`, `city`, `menus`, `world`, `shared`, `ships`, `town`, and `market` ARM9
 profiles translate character data and labels, Lisbon and Seville data, navigation and
 deck commands, recurring port names and roles,
 early-story speaker names, city icon hover labels, tavern commands, confirmation
 buttons, sailor-allocation strategies, the global trading-category menu, and the first
-global faction/commodity records. The palace batch covers shared ruler dialogue for
+global faction/commodity records. The `ships` profile covers all 119 known ship-model
+slots across the event, catalog, shipyard, fleet, and scenario pools instead of only
+the models visible on the first shipyard page. The palace batch covers shared ruler dialogue for
 contracts, defense investment, letters, recommendations, and lending or reclaiming
 treasures in every city.
 

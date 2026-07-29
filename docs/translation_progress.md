@@ -1,6 +1,6 @@
 # Translation progress
 
-Generated: 2026-07-29 14:41 US Eastern Daylight Time
+Generated: 2026-07-29 15:08 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
@@ -25,7 +25,7 @@ This is a rough, record-based estimate. A translated record can be one short lab
 
 ## Other tracked work
 
-- ARM9/UI dictionary: 536 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
+- ARM9/UI dictionary: 662 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.
 
