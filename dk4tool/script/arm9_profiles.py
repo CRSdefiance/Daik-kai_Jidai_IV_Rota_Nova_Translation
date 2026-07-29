@@ -337,7 +337,7 @@ CITY_SCREEN_ENTRIES = (
         "DK4_CITY_COORDINATE_FORMAT",
         0x15691C,
         "（%s%d%s%d）",
-        "(%s%d%s%d)",
+        "(%s%d %s%d)",
         "Shared city latitude/longitude format",
         slot_size=16,
     ),
@@ -572,6 +572,33 @@ SHARED_STORY_ENTRIES = (
 )
 
 TOWN_UI_ENTRIES = (
+    # Faction archetypes substituted into tavern rumors.  These are separate
+    # from the dialogue record, which is why leaving them Japanese produced
+    # otherwise-English lines such as "Genoa's 商人".
+    Arm9ProfileEntry(
+        "DK4_FACTION_ROLE_PIRATE",
+        0x137144,
+        "海賊",
+        "Pirate",
+        "Faction archetype used by tavern rumors",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_FACTION_ROLE_MERCHANT",
+        0x13714C,
+        "商人",
+        "Trader",
+        "Faction archetype used by tavern rumors",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_FACTION_ROLE_SOLDIER",
+        0x137154,
+        "軍人",
+        "Soldier",
+        "Faction archetype used by tavern rumors",
+        slot_size=8,
+    ),
     # Tavern commands.
     Arm9ProfileEntry(
         "DK4_TAVERN_RECRUIT",
