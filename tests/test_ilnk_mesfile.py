@@ -114,3 +114,10 @@ def test_mesfile_aligned_linebreak_rejects_overflow():
         assert "cannot align line break" in str(error)
     else:
         raise AssertionError("expected aligned line-break overflow")
+
+
+def test_mesfile_internal_entry_point_alignment():
+    encoded = encode_mesfile_text("First{ALIGN@12}Second")
+    assert encoded[:5] == b"First"
+    assert encoded[5:12] == b" " * 7
+    assert encoded[12:] == b"Second"

@@ -33,6 +33,17 @@ def encode_mesfile_text(text: str) -> bytes:
     output = bytearray()
     cursor = 0
     while cursor < len(text):
+        aligned_position = re.match(r"\{ALIGN@([0-9]+)\}", text[cursor:])
+        if aligned_position:
+            target_offset = int(aligned_position.group(1))
+            if len(output) > target_offset:
+                raise ValueError(
+                    f"cannot align text to byte {target_offset}; "
+                    f"translation already occupies {len(output)} bytes"
+                )
+            output.extend(b" " * (target_offset - len(output)))
+            cursor += len(aligned_position.group(0))
+            continue
         aligned_linebreak = re.match(r"\{LB@([0-9]+)\}", text[cursor:])
         if aligned_linebreak:
             target_offset = int(aligned_linebreak.group(1))

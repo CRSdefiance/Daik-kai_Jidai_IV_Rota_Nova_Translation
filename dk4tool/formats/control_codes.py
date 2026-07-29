@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 
 TOKEN_RE = re.compile(
-    r"\{(?:END|LB(?:@[0-9]+)?|HEX:[0-9A-Fa-f]{2}|WAIT:[0-9A-Fa-f]{2}|VAR:[^{}]+)\}"
+    r"\{(?:END|LB(?:@[0-9]+)?|ALIGN@[0-9]+|HEX:[0-9A-Fa-f]{2}|WAIT:[0-9A-Fa-f]{2}|VAR:[^{}]+)\}"
 )
 
 

@@ -126,23 +126,32 @@ PATCHES = (
         "surname editor heading",
     ),
     Arm9Patch(
-        0x15D550,
-        b"Almond\0Salt\0",
+        0x15B78C,
+        b"Salt\0\0\0\0",
         (
-            _fixed("アーモンド", 12),
-            _fixed("Almond", 12),
-            b"Almond\0Salt\0",
+            _fixed("塩", 4) + _fixed("デ", 4),
+            _fixed("Sal", 4) + _fixed("デ", 4),
+            b"Salt\0\0\0\0",
         ),
-        "commodity pool relocation containing full Salt spelling",
+        "full Salt spelling using the following duplicate placeholder slot",
+    ),
+    Arm9Patch(
+        0x121008,
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B760),
+        (
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B790),
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B760),
+        ),
+        "relocated duplicate placeholder pointer after Salt",
     ),
     Arm9Patch(
         0x15EFB4,
-        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15D557),
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B78C),
         (
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15B78C),
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15D557),
         ),
-        "Salt commodity pointer relocation",
+        "Salt commodity pointer",
     ),
     Arm9Patch(
         0x9E058,

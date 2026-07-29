@@ -83,6 +83,12 @@ global faction/commodity records. The palace batch covers shared ruler dialogue 
 contracts, defense investment, letters, recommendations, and lending or reclaiming
 treasures in every city.
 
+The palace/name build expands the shared character-name pool by 188 records and keeps
+the palace's internal secondary dialogue entry points at their original byte offsets.
+When testing a ROM with ARM9 label or name changes, cold-boot the ROM: emulator save
+states retain the old executable in memory and can misleadingly show old Japanese UI
+beside newly streamed dialogue.
+
 The shared graphics pass redraws character-selection, city, fleet, faction, sailor,
 person, save/load, ship, and Golden Route interface captions in English. It also
 replaces the Japanese Rekoeition production card and four Japanese cutscene subtitle

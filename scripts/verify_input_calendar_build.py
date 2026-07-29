@@ -44,6 +44,17 @@ def main() -> int:
                 f"record {block_index}:{record_index} is {actual!r}; expected {expected!r}"
             )
 
+    # Record 38 has a second live entry point at byte 56.  The palace can jump
+    # directly here, so the translated first sentence must not move it.
+    palace_record = mesfile.blocks[14].split(b"\0")[38]
+    second_entry = palace_record[56:].rstrip(b" ").decode("cp932")
+    expected_second_entry = "%s! You will aid\n the city's defense?"
+    if second_entry != expected_second_entry:
+        raise SystemExit(
+            f"record 14:38 secondary entry is {second_entry!r}; "
+            f"expected {expected_second_entry!r}"
+        )
+
     print(
         f"Verified {len(changes)} ARM9 changes and "
         f"{len(EXPECTED_RECORDS)} shared date/inn records."
