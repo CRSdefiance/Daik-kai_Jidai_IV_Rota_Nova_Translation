@@ -100,7 +100,8 @@ See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 character-input/calendar pass. It clears the full character-editor heading before
 drawing each title, relocates the fixed-width `Name` and `Last` popup labels so they
 are safely terminated, translates the popup Done button and birthday heading, and
-labels the shared built-in Latin and symbol keyboard pages `ABC` and `#+`.
+labels the shared built-in Latin and symbol keyboard pages `AB` and `#+`. The two-byte
+`AB` label deliberately preserves the selector's original byte-width contract.
 
 The calendar audit covers the shared numeric month suffix used by all twelve birthday
 months, work and voyage duration formats, the 3/10/30-day inn choices, continued

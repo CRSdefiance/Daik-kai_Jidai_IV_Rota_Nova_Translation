@@ -71,7 +71,7 @@ PATCHES = (
     _string_patch(0x1502E4, "Done", 8, "character-editor X button", "完了"),
     _string_patch(0x150378, "M\n", 4, "month suffix used by all 12 months", "月\n"),
     _string_patch(0x15037C, "Birth", 8, "birthday popup fallback heading", "誕生日"),
-    _string_patch(0x15510C, "ABC", 4, "Latin keyboard-page selector", "英"),
+    _string_patch(0x15510C, "AB", 4, "Latin keyboard-page selector", "英", "ABC"),
     _string_patch(0x1550F4, "#+", 4, "symbol keyboard-page selector", "記"),
     _string_patch(0x1331A0, "Days: %6d", 12, "shared duration format", "日数  %6d日"),
     _string_patch(0x133FF4, "~%d d", 8, "approximate voyage duration", "約%d日"),

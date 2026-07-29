@@ -281,7 +281,7 @@ CHARACTER_UI_ENTRIES = (
         "DK4_KEYBOARD_LATIN_PAGE",
         0x15510C,
         "英",
-        "ABC",
+        "AB",
         "Shared naming-keyboard Latin-page selector",
         slot_size=4,
     ),
