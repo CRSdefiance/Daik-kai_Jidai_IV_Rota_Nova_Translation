@@ -93,3 +93,23 @@ python scripts/build_graphics_translation.py out/market_and_deck_tutorial.nds `
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 [docs/testing_plan.md](docs/testing_plan.md).
+
+## Dedicated input and calendar build
+
+`out/input_calendar_en.nds` rebuilds the complete current translation and adds the
+character-input/calendar pass. It clears the full character-editor heading before
+drawing each title, relocates the fixed-width `Name` and `Last` popup labels so they
+are safely terminated, translates the popup Done button and birthday heading, and
+labels the shared built-in Latin and symbol keyboard pages `ABC` and `#+`.
+
+The calendar audit covers the shared numeric month suffix used by all twelve birthday
+months, work and voyage duration formats, the 3/10/30-day inn choices, continued
+stays, current/previous/relative-month reports, both arrival-month labels, departure
+dates, and the related inn and sailing-range dialogue. The post-build binary changes
+are verified rather than applied to unknown bytes:
+
+```powershell
+python scripts/build_input_calendar_patch.py out/input_calendar_text_stage.nds `
+  --out out/input_calendar_en.nds
+python scripts/verify_input_calendar_build.py out/input_calendar_en.nds
+```
