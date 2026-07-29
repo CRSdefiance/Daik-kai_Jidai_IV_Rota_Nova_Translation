@@ -43,23 +43,39 @@ def _string_patch(
 
 
 PATCHES = (
-    _string_patch(0x15029C, "1st", 4, "first-name popup label", "名", "Name"),
-    _string_patch(0x1502B0, "Sur", 4, "surname popup label", "姓", "Last"),
+    Arm9Patch(
+        0x15029C,
+        b"Name\0Middle Name\0Last\0Faction\0\0\0",
+        (
+            _fixed("名", 4)
+            + _fixed("ミドルネーム", 16)
+            + _fixed("姓", 4)
+            + _fixed("勢力名", 8),
+            _fixed("1st", 4)
+            + _fixed("Middle Name", 16)
+            + _fixed("Sur", 4)
+            + _fixed("Faction", 8),
+            b"Name\0Middle Name\0Last\0Faction\0\0\0",
+        ),
+        "repacked character-editor popup labels",
+    ),
     _string_patch(
         0x14FC3C,
-        "Middle: Edit  ",
+        "Middle: press 英",
         20,
         "middle-name editor heading",
         "ミドルネーム　変更",
         "Middle: Edit",
+        "Middle: Edit  ",
     ),
     _string_patch(
         0x14FC64,
-        "Faction: Edit ",
+        "Faction: press 英",
         20,
         "faction editor heading",
         "勢力名　変更　　　",
         "Faction: Edit",
+        "Faction: Edit ",
     ),
     _string_patch(
         0x14FC78,
@@ -71,8 +87,8 @@ PATCHES = (
     _string_patch(0x1502E4, "Done", 8, "character-editor X button", "完了"),
     _string_patch(0x150378, "M\n", 4, "month suffix used by all 12 months", "月\n"),
     _string_patch(0x15037C, "Birth", 8, "birthday popup fallback heading", "誕生日"),
-    _string_patch(0x15510C, "AB", 4, "Latin keyboard-page selector", "英", "ABC"),
-    _string_patch(0x1550F4, "#+", 4, "symbol keyboard-page selector", "記"),
+    _string_patch(0x15510C, "英", 4, "restored Latin keyboard-page identifier", "AB", "ABC"),
+    _string_patch(0x1550F4, "記", 4, "restored symbol keyboard-page identifier", "#+"),
     _string_patch(0x1331A0, "Days: %6d", 12, "shared duration format", "日数  %6d日"),
     _string_patch(0x133FF4, "~%d d", 8, "approximate voyage duration", "約%d日"),
     _string_patch(0x143D78, "3 Days", 8, "inn 3-day option", "３日"),
@@ -87,29 +103,31 @@ PATCHES = (
     _string_patch(0x16AFB0, "Arr. Mo.", 8, "alternate arrival-month label", "入荷月"),
     Arm9Patch(
         0x14FC28,
-        b"Name: Edit    \0Name\0",
+        _fixed("Name: press 英", 20),
         (
             _fixed("名　変更　　　　　", 20),
             _fixed("Name: Edit", 20),
             _fixed("Name: Edit    ", 20),
             b"Name: Edit    \0Name\0",
+            _fixed("Name: press 英", 20),
         ),
-        "name editor heading and relocated popup label",
+        "name editor heading with Latin-key guidance",
     ),
     Arm9Patch(
         0x14FC50,
-        b"Last: Edit    \0Last\0",
+        _fixed("Last: press 英", 20),
         (
             _fixed("姓　変更　　　　　", 20),
             _fixed("Last: Edit", 20),
             _fixed("Last: Edit    ", 20),
             b"Last: Edit    \0Last\0",
+            _fixed("Last: press 英", 20),
         ),
-        "surname editor heading and relocated popup label",
+        "surname editor heading with Latin-key guidance",
     ),
     Arm9Patch(
         0x9E058,
-        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC37),
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15029C),
         (
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15029C),
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC37),
@@ -117,13 +135,32 @@ PATCHES = (
         "first-name popup pointer",
     ),
     Arm9Patch(
+        0x9E060,
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502A1),
+        (
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502A0),
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502A1),
+        ),
+        "middle-name popup pointer",
+    ),
+    Arm9Patch(
         0x9E064,
-        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC5F),
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502AD),
         (
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502B0),
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC5F),
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502AD),
         ),
         "surname popup pointer",
+    ),
+    Arm9Patch(
+        0x9E068,
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502B2),
+        (
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502B4),
+            struct.pack("<I", ARM9_LOAD_ADDRESS + 0x1502B2),
+        ),
+        "faction popup pointer",
     ),
     Arm9Patch(
         0x14FC22,

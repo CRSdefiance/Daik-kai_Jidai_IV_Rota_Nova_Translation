@@ -98,10 +98,11 @@ See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
 
 `out/input_calendar_en.nds` rebuilds the complete current translation and adds the
 character-input/calendar pass. It clears the full character-editor heading before
-drawing each title, relocates the fixed-width `Name` and `Last` popup labels so they
-are safely terminated, translates the popup Done button and birthday heading, and
-labels the shared built-in Latin and symbol keyboard pages `AB` and `#+`. The two-byte
-`AB` label deliberately preserves the selector's original byte-width contract.
+drawing each title, repacks the four popup labels so `Name`, `Middle Name`, `Last`, and
+`Faction` are safely terminated, and translates the popup Done button and birthday
+heading. The keyboard page identifiers must remain byte-for-byte Japanese because the
+manager uses them as control values. Editor headings therefore say `press 英`, safely
+identifying the working Latin-page key without modifying it.
 
 The calendar audit covers the shared numeric month suffix used by all twelve birthday
 months, work and voyage duration formats, the 3/10/30-day inn choices, continued
