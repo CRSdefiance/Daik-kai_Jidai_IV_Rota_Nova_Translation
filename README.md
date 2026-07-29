@@ -86,7 +86,8 @@ treasures in every city.
 
 The Yard pass translates purchase, sale, repair, remodeling, dock, equipment, rename,
 special-order, and standard-hull commands together with their common confirmations.
-The Common radial menu and its town-map callouts are covered by the shared ARM9 profile.
+The Common radial menu is redrawn from the shared marker atlas; its town-map
+callouts and related commands are covered by the shared ARM9 profile.
 
 Refresh the rough record-based coverage report after changing translation batches:
 

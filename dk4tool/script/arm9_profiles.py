@@ -522,6 +522,18 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_SHIP_LIST_FLEET_C", 0x15174C, "隊列　　　　　　　　", "Fleet", "Ship-list column heading", slot_size=20),
     Arm9ProfileEntry("DK4_SHIP_LIST_DOCK_B", 0x151760, "ドック", "Dock", "Ship-list column heading", slot_size=8),
     Arm9ProfileEntry("DK4_CREW_ASSIGN_BUTTON_B", 0x151630, "水夫編成", "Assign", "Ship-list crew-assignment button", slot_size=12),
+    # Shipyard list and ship-information formatters. These suffixes are drawn
+    # after already-translated ship names and otherwise leave mixed strings
+    # such as "Latina号" and "Latina級".
+    Arm9ProfileEntry("DK4_SHIP_NAME_FORMAT_A", 0x133FFC, "%s号", "%s", "Ship name formatter", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_FORMAT_A", 0x134004, "%14s級", "%14s", "Ship class formatter", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_PRICE_CLASS_FORMAT", 0x1514B0, "%14s級", "%14s", "Shipyard class heading", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_PRICE_FORMAT_A", 0x1514B8, "金貨%10d枚", "%10d coins", "Shipyard price", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_PRICE_FORMAT_B", 0x1514C4, "金貨%10d枚", "%10d coins", "Shipyard price", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_NAME_FORMAT_B", 0x1514E0, "%s号", "%s", "Shipyard ship name formatter", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_FORMAT_B", 0x1514E8, "%14s級", "%14s", "Shipyard ship class formatter", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_NAME_FORMAT_C", 0x152BC8, "%s号", "%s", "Ship purchase name formatter", slot_size=8),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_FORMAT_C", 0x152BD0, "%14s級", "%14s", "Ship purchase class formatter", slot_size=8),
 )
 
 WORLD_CITY_ENTRIES = (
@@ -620,6 +632,12 @@ SHARED_STORY_ENTRIES = (
     Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_A", 0x15D2BC, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
     Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_B", 0x15D4D8, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
     Arm9ProfileEntry("DK4_SHIP_CLASS_LATINA_C", 0x15E0A8, "ラティーナ", "Latina", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_RETONDA_A", 0x15C4F4, "レトンダ", "Retonda", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_RETONDA_B", 0x15C6D4, "レトンダ", "Retonda", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_RETONDA_C", 0x15D8E4, "武装レトンダ", "Armed Retonda", "Global armed ship-class name", slot_size=16),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_CARRACK_A", 0x15D2E0, "キャラック", "Carrack", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_CARRACK_B", 0x15D4F0, "キャラック", "Carrack", "Global ship-class name", slot_size=12),
+    Arm9ProfileEntry("DK4_SHIP_CLASS_CARRACK_C", 0x15E0B4, "武装キャラック", "Armed Carrack", "Global armed ship-class name", slot_size=16),
     Arm9ProfileEntry(
         "DK4_FACTION_ALBUQUERQUE",
         0x15E244,

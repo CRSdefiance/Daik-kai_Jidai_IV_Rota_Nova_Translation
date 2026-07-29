@@ -1,6 +1,6 @@
 # Translation progress
 
-Generated: 2026-07-29 13:55 US Eastern Daylight Time
+Generated: 2026-07-29 14:41 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
@@ -14,9 +14,18 @@ This is a rough, record-based estimate. A translated record can be one short lab
 | `/data/SC3.DK4` | 0 | 5010 | 0.0% |
 | **Tracked text total** | **604** | **26553** | **2.3%** |
 
+## Shared dialogue 50% target
+
+`/COMMON/MESFILE.DK4` needs **1155 more records** to reach 50% (1404 of 2807).
+
+- Complete blocks B00-B14: 932 records (33.2%).
+- Then complete B15-B18: 1359 cumulative records (48.4%).
+- Translate 45 records from B19 to reach the exact 1404-record halfway mark.
+- Each block still requires an internal-entry-point audit before insertion; record count alone cannot prevent missing first letters.
+
 ## Other tracked work
 
-- ARM9/UI dictionary: 521 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
+- ARM9/UI dictionary: 536 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.
 

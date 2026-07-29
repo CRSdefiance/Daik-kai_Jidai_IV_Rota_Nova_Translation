@@ -87,3 +87,10 @@ has booted successfully.
   `chihofleetinfo.pxl`, `dividecrewinfo.pxl`, `fleetinfo.pxl`, `forceinfo.pxl`,
   `goldsearoutediscovery.pxl`, both Golden Route logs, `personinfo.pxl`,
   `saveloadinfo.pxl`, and `shipinfo.pxl`.
+- The six Common radial-menu captions are baked white glyphs in
+  `/_pxl/__marker.pxl`. They are not the similarly named ARM9 strings. The
+  English graphics pass erases only palette index 15 inside the six caption
+  boxes, preserving the brown/gold button art beneath them.
+- Ship names, classes, and prices use separate live ARM9 formatters. Removing
+  the `号` and `級` suffixes and replacing `金貨%10d枚` with `%10d coins`
+  fixes all three verified ship-display paths without altering saved names.

@@ -6,7 +6,9 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import sys
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -51,12 +53,17 @@ def load_translated_records(translations: Path) -> set[tuple[str, str]]:
 def build_report(source_root: Path, translations: Path) -> str:
     translated = load_translated_records(translations)
     rows: list[tuple[str, int, int, float]] = []
+    common_block_counts: Counter[int] = Counter()
     total_records = 0
     total_translated = 0
 
     for internal_path in TRACKED_FILES:
         path = source_path(source_root, internal_path)
         exported = export_mesfile_rows(path.read_bytes(), internal_path)
+        if internal_path == "/COMMON/MESFILE.DK4":
+            for row in exported:
+                block = int(str(row["id"]).split("_B", 1)[1].split("_R", 1)[0])
+                common_block_counts[block] += 1
         ids = {str(row["id"]) for row in exported}
         done = sum((internal_path, row_id) in translated for row_id in ids)
         count = len(ids)
@@ -67,6 +74,16 @@ def build_report(source_root: Path, translations: Path) -> str:
 
     total_percent = total_translated * 100.0 / total_records if total_records else 0.0
     mapped_ui = len(PROFILES["all"])
+    common_done, common_count, _ = next(
+        (done, count, percent)
+        for path, done, count, percent in rows
+        if path == "/COMMON/MESFILE.DK4"
+    )
+    common_half = math.ceil(common_count / 2)
+    common_half_gap = max(0, common_half - common_done)
+    through_14 = sum(count for block, count in common_block_counts.items() if block <= 14)
+    through_18 = sum(count for block, count in common_block_counts.items() if block <= 18)
+    from_19 = max(0, common_half - through_18)
     generated = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
 
     lines = [
@@ -88,6 +105,30 @@ def build_report(source_root: Path, translations: Path) -> str:
     lines.extend(
         [
             f"| **Tracked text total** | **{total_translated}** | **{total_records}** | **{total_percent:.1f}%** |",
+            "",
+            "## Shared dialogue 50% target",
+            "",
+            (
+                f"`/COMMON/MESFILE.DK4` needs **{common_half_gap} more records** "
+                f"to reach 50% ({common_half} of {common_count})."
+            ),
+            "",
+            (
+                f"- Complete blocks B00-B14: {through_14} records "
+                f"({through_14 * 100.0 / common_count:.1f}%)."
+            ),
+            (
+                f"- Then complete B15-B18: {through_18} cumulative records "
+                f"({through_18 * 100.0 / common_count:.1f}%)."
+            ),
+            (
+                f"- Translate {from_19} records from B19 to reach the exact "
+                f"{common_half}-record halfway mark."
+            ),
+            (
+                "- Each block still requires an internal-entry-point audit before insertion; "
+                "record count alone cannot prevent missing first letters."
+            ),
             "",
             "## Other tracked work",
             "",

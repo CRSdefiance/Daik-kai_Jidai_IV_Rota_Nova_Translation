@@ -99,6 +99,24 @@ class PxlImage:
                     nearest = min(safe, key=lambda candidate: abs(candidate - x))
                     self.indices[position] = self.indices[row_start + nearest]
 
+    def erase_palette_indices(self, box: Box, erased: set[int]) -> None:
+        """Erase selected text colors while retaining the nearest row background."""
+        left, top, right, bottom = box
+        for y in range(top, bottom):
+            row_start = y * self.width
+            safe = [
+                x
+                for x in range(left, right)
+                if self.indices[row_start + x] not in erased
+            ]
+            if not safe:
+                continue
+            for x in range(left, right):
+                position = row_start + x
+                if self.indices[position] in erased:
+                    nearest = min(safe, key=lambda candidate: abs(candidate - x))
+                    self.indices[position] = self.indices[row_start + nearest]
+
     def draw_text(
         self,
         box: Box,

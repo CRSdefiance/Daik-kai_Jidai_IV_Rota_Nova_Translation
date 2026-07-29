@@ -25,3 +25,10 @@ def test_pxl_edit_preserves_dimensions_and_size():
     assert (decoded.width, decoded.height) == (4, 2)
     assert len(rebuilt) == len(source)
     assert decoded.indices == bytearray([255] * 8)
+
+
+def test_pxl_erases_selected_text_index_using_neighboring_background():
+    image = PxlImage.from_bytes(synthetic_pxl())
+    image.indices = bytearray([1, 255, 1, 1, 1, 255, 1, 1])
+    image.erase_palette_indices((0, 0, 4, 2), {255})
+    assert image.indices == bytearray([1] * 8)

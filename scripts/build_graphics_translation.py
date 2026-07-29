@@ -103,6 +103,20 @@ PLAQUE_LABELS = {
     ],
 }
 
+LIGHT_LABELS = {
+    # The Common radial menu draws these captions from the shared marker
+    # atlas.  Palette index 15 is the baked white Japanese lettering; the
+    # surrounding brown/gold button art must remain intact.
+    "/_pxl/__marker.pxl": [
+        Label((3, 1, 44, 16), "Functions", 8),
+        Label((3, 25, 56, 40), "Crew Setup", 8),
+        Label((3, 49, 56, 64), "Deck View", 9),
+        Label((3, 73, 48, 88), "Info", 10),
+        Label((3, 97, 56, 112), "Route Map", 9),
+        Label((3, 121, 56, 136), "Items", 10),
+    ],
+}
+
 FLS_LABELS = {
     "/FLS/logo.fls": {
         3: ["REKOEITION GAME"],
@@ -137,6 +151,14 @@ def translate_pxl(data: bytes, path: str) -> tuple[bytes, PxlImage]:
             1,
             maximum_size=label.maximum_size,
         )
+    for label in LIGHT_LABELS.get(path, []):
+        image.erase_palette_indices(label.box, {15})
+        image.draw_text(
+            label.box,
+            label.text,
+            15,
+            maximum_size=label.maximum_size,
+        )
     return image.to_bytes(), image
 
 
@@ -148,7 +170,7 @@ def main() -> None:
     args = parser.parse_args()
 
     image = NdsImage.open(args.rom)
-    paths = sorted(set(TRANSPARENT_LABELS) | set(PLAQUE_LABELS))
+    paths = sorted(set(TRANSPARENT_LABELS) | set(PLAQUE_LABELS) | set(LIGHT_LABELS))
     for path in paths:
         rebuilt, preview = translate_pxl(image.read_file(path), path)
         image.replace_file(path, rebuilt)
