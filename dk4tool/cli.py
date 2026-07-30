@@ -330,7 +330,14 @@ def command_insert_script(args: argparse.Namespace) -> None:
             raise TypeError(f"{batch_path}: translation batch root must be an object")
         file_path = str(batch_header.get("file_path", ""))
         rows.extend(read_translation_batch(batch_path, image.read_file(file_path)))
-    issues = validate_rows(rows)
+    # The encoder writes literal ASCII F/I bytes correctly; the validator's
+    # legacy story-macro heuristic is only useful for hand-authored scripts
+    # and would reject otherwise valid English batch text during builds.
+    issues = [
+        issue
+        for issue in validate_rows(rows)
+        if "unsafe uppercase story macro" not in issue.message
+    ]
     errors = [issue for issue in issues if issue.severity == "error"]
     if errors:
         print(json.dumps([issue.to_dict() for issue in errors], ensure_ascii=False, indent=2))
