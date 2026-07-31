@@ -157,6 +157,7 @@ def build_report(source_root: Path, translations: Path) -> str:
 
 
 def main() -> None:
+
     parser = argparse.ArgumentParser(description="Build a rough per-file translation coverage report")
     parser.add_argument("--source-root", type=Path, default=Path("work/extracted_clean"))
     parser.add_argument("--translations", type=Path, default=Path("translations"))

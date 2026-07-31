@@ -33,3 +33,4 @@ This is a rough, record-based estimate. A translated record can be one short lab
 ## How to refresh
 
 Run `python scripts/build_translation_progress.py` after adding or revising translation batches.
+
