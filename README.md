@@ -141,3 +141,5 @@ python scripts/build_input_calendar_patch.py out/input_calendar_text_stage.nds `
   --out out/input_calendar_en.nds
 python scripts/verify_input_calendar_build.py out/input_calendar_en.nds
 ```
+# Daik-kai_Jidai_IV_Rota_Nova_Translation
+AI directed translation effort for Daikōkai Jidai IV: Rota Nova.  A lot more work needs to go into this, but large segments of the game are now playable in English
