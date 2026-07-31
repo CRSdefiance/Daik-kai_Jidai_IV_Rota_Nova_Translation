@@ -26,7 +26,7 @@ This is a rough, record-based estimate. A translated record can be one short lab
 ## Other tracked work
 
 - ARM9/UI dictionary: 690 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
-- The name/faction/place audit covers 89 world-city, town, port, and settlement slots, recurring commodity slots, twelve additional faction slots, 188 shared character-name slots, and 119 ship-model slots. Shared offsets propagate these names across city, palace, market, tavern, route-map, and shipyard screens.
+- The name/faction/place audit covers 90 world-city, town, port, and settlement slots, 80 shared commodity slots, twelve additional faction slots, 188 shared character-name slots, and 119 ship-model slots. Shared offsets propagate these names across city, palace, market, tavern, route-map, and shipyard screens.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.
 
