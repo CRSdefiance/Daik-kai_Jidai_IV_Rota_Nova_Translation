@@ -1,6 +1,6 @@
 # Translation progress
 
-Generated: 2026-07-30 09:31 US Eastern Daylight Time
+Generated: 2026-07-31 08:41 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
@@ -25,9 +25,8 @@ This is a rough, record-based estimate. A translated record can be one short lab
 
 ## Other tracked work
 
-- ARM9/UI dictionary: 685 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
-- The ARM9 audit in this build covers 29 world-city slots, the recurring market commodity slots (including the primary goods table), seven additional global faction slots, 188 shared character-name slots, and 119 ship-model slots. Repeated values are translated at their shared offsets so they propagate to city, palace, market, tavern, and shipyard screens.
-- The HELP remainder is now complete, and the shared-message halfway batch is source-locked to the clean `/COMMON/MESFILE.DK4` hash. The new shared records use fixed-width concise English where the original record cannot expand; wording can be polished later without changing the extraction/build workflow.
+- ARM9/UI dictionary: 690 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
+- The name/faction audit covers 29 world-city slots, recurring commodity slots, twelve additional faction slots, 188 shared character-name slots, and 119 ship-model slots. Shared offsets propagate these names across city, palace, market, tavern, and shipyard screens.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.
 
