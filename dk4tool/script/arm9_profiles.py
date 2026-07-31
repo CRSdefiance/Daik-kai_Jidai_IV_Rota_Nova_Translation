@@ -627,6 +627,15 @@ WORLD_CITY_ENTRIES = (
     Arm9ProfileEntry("DK4_CITY_ISTANBUL", 0x15DEC4, "イスタンプール", "Istanbul", "World city name", slot_size=16),
     Arm9ProfileEntry("DK4_CITY_AMSTERDAM_B", 0x15DF94, "アムステルダム", "Amsterdam", "World city name", slot_size=16),
     Arm9ProfileEntry("DK4_CITY_COPENHAGEN", 0x15DFC4, "コペンハーゲン", "Copenhagen", "World city name", slot_size=16),
+    Arm9ProfileEntry("DK4_CITY_RIGA", 0x15BA08, "リガ", "Riga", "World settlement name", slot_size=8),
+    Arm9ProfileEntry("DK4_CITY_LINARES", 0x15C1A0, "リナレス", "Linares", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_KARIBIB", 0x15C44C, "カリビブ", "Karibib", "World settlement name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_BRUNEI", 0x15C4D0, "ブルネイ", "Brunei", "World settlement name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_NARVIK", 0x15C7E8, "ナルビク", "Narvik", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_CYPRUS", 0x15C908, "キプロス", "Cyprus", "World settlement name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_PENSACOLA", 0x15CF68, "ペンサコラ", "Pensacola", "World city name", slot_size=12),
+    Arm9ProfileEntry("DK4_CITY_MADAGASCAR", 0x15D944, "マダガスカル", "Madagascar", "World settlement name", slot_size=16),
+    Arm9ProfileEntry("DK4_CITY_MASULIPATAM", 0x15D964, "マスリパタム", "Masulipatam", "World city name", slot_size=16),
 )
 
 SHARED_STORY_ENTRIES = (
