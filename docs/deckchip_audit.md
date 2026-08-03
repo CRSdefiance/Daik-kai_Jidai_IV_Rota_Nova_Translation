@@ -10,6 +10,7 @@
 - Blocks are 456-736 bytes long and contain 11-17 variable-length binary fragments.
 - Those fragments do not decode as stand-alone Shift-JIS text records and do not have a shared text layout.
 - Decoding arbitrary asset bytes as CP932 produces accidental Japanese glyphs, which is why the generic MESFILE scanner reported 29 false-positive records.
+- The ROM manifest maps `deckchip00.pxl` through `deckchip15.pxl` one-to-one with the 16 DECKCHIP blocks. Rendering `deckchip00.pxl` confirms these are ship-deck layouts with no Japanese labels.
 
 | Block | Bytes | Binary fragments | Classification |
 |---:|---:|---:|---|
@@ -32,10 +33,9 @@
 
 ## Translation path
 
-1. Locate the deck/ship screen that consumes each block through runtime tracing or a resource-map search.
-2. Determine the asset format: tile graphics, tile map, palette, compressed sprite data, or a combination.
-3. Render each block to an image only after the format is known; do not insert CP932 text into it.
-4. Redraw any Japanese labels as English tiles, preserving dimensions and palette indices.
-5. Repack the edited assets and verify the deck screen in-game for corruption and alignment.
+1. The resource-map pass is complete: blocks 00-15 correspond to `deckchip00.pxl` through `deckchip15.pxl`.
+2. The companion PXL files are deck-layout graphics, not label sheets.
+3. Do not insert CP932 text or redraw these layouts; no Japanese label has been found in this asset family.
+4. If a deck screen still shows Japanese, trace the on-screen text to the shared UI/font resources instead of DECKCHIP.
 
-Until steps 1-3 are complete, DECKCHIP has **zero confirmed text records** to translate.
+DECKCHIP has **zero confirmed text records** to translate and is now classified as non-translatable layout data.
