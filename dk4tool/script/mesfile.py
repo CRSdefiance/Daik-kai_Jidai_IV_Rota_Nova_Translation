@@ -193,6 +193,7 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
             raise ValueError(f"{row.get('id')}: ILNK source bytes do not match")
         english = row["english"]
         pad_to_length = english.endswith("{PAD}")
+        allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
         replacement = encode_mesfile_text(english)
         # Leading spaces in these records are layout bytes consumed before the
         # first visible glyph. Preserve the original prefix automatically.
@@ -200,14 +201,13 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         replacement_indent = len(replacement) - len(replacement.lstrip(b" "))
         if replacement_indent < source_indent:
             replacement = b" " * (source_indent - replacement_indent) + replacement
-        if pad_to_length:
+        if pad_to_length and not allow_expand:
             if len(replacement) > len(original):
                 raise ValueError(
                     f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "
                     f"cannot pad it to the shorter {len(original)}-byte source record"
                 )
             replacement = replacement.ljust(len(original), b" ")
-        allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
         if len(replacement) != len(original) and not allow_expand:
             raise ValueError(
                 f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "

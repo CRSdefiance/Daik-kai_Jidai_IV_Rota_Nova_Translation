@@ -43,6 +43,12 @@ def materialize_translation_batch(
             raise ValueError(f"{row_id}: record not found in {file_path}") from error
         row["english"] = str(record.get("english", ""))
         row["status"] = str(record.get("status", "draft"))
+        # Long-form story batches may intentionally expand an ILNK record.  Keep
+        # this opt-in so compact UI labels remain size-checked by default.
+        if "allow_expand" in batch:
+            row["allow_expand"] = str(batch.get("allow_expand", "")).lower()
+        if "allow_expand" in record:
+            row["allow_expand"] = str(record.get("allow_expand", "")).lower()
         for field in ("speaker", "notes", "context"):
             if field in record:
                 row[field] = str(record[field])
