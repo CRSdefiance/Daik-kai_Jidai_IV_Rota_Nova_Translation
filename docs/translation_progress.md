@@ -1,18 +1,30 @@
 # Translation progress
 
-Generated: 2026-08-03 09:54 US Eastern Daylight Time
+Generated: 2026-08-03 11:30 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
-| File | Translated records | Detected records | Approx. complete |
-|---|---:|---:|---:|
-| `/COMMON/MESFILE.DK4` | 1404 | 2807 | 50.0% |
-| `/COMMON/HELP.DK4` | 194 | 194 | 100.0% |
-| `/data/SC0.DK4` | 330 | 6768 | 4.9% |
-| `/data/SC1.DK4` | 0 | 5166 | 0.0% |
-| `/data/SC2.DK4` | 0 | 6608 | 0.0% |
-| `/data/SC3.DK4` | 0 | 5010 | 0.0% |
-| **Tracked text total** | **1928** | **26553** | **7.3%** |
+| File / container | What it contains | Translated records | Total records | Approx. complete |
+|---|---|---:|---:|---:|
+| `/COMMON/MESFILE.DK4` | Shared menus, town dialogue, common prompts | 1404 | 2807 | 50.0% |
+| `/COMMON/HELP.DK4` | Help/tutorial records (194 unique records; raw table has duplicate/pointer rows) | 194 | 194 | 100.0% |
+| `/data/SC0.DK4` | Raphael route/story and related scene text | 330 | 6768 | 4.9% |
+| `/data/SC1.DK4` | Lil/Argot route and scene text | 113 | 5166 | 2.2% |
+| `/data/SC2.DK4` | Hodram/Bergstrom route and scene text | 156 | 6608 | 2.4% |
+| `/data/SC3.DK4` | Other route/event scene text | 0 | 5010 | 0.0% |
+| `/data/DECKCHIP.DK4` | Deck/ship-chip labels | 0 | 29 | 0.0% |
+| `/data/WORLDMAP.DK4` | World-map labels and map messages | 0 | 1279 | 0.0% |
+| `/__arm9__.bin` | ARM9 UI, names, city/faction/commodity tables (audited slots) | 685 | 685 | 100.0% |
+| **Indexed text total** | **All extractable containers above** | **2882** | **28546** | **10.1%** |
+
+### Containers requiring a separate binary extractor
+
+| File | What it likely contains | Translation status |
+|---|---|---|
+| `/data/EV0.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
+| `/data/EV1.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
+| `/data/EV2.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
+| `/data/EV3.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
 
 ## Shared dialogue 50% target
 
@@ -25,7 +37,9 @@ This is a rough, record-based estimate. A translated record can be one short lab
 
 ## Other tracked work
 
-- ARM9/UI dictionary: 804 mapped slots have English replacements. This is not shown as a percentage because the full set of text-bearing ARM9 slots has not yet been exhaustively classified.
+- ARM9/UI dictionary: 685 audited text-bearing slots currently have English replacements. This covers the extracted ARM9 audit table, not every arbitrary byte sequence in the binary.
+- Route-specific coverage currently includes all identified Lil/Argot records (95) and 156 Hodram/Bergstrom records; the Hodram route is not complete.
+- The percentages count records, not words. A long dialogue record has the same weight as a one-word label.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.
 
