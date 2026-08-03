@@ -12,7 +12,7 @@ This is a rough, record-based estimate. A translated record can be one short lab
 | `/data/SC1.DK4` | Lil/Argot route and scene text | 113 | 5166 | 2.2% |
 | `/data/SC2.DK4` | Hodram/Bergstrom route and scene text | 156 | 6608 | 2.4% |
 | `/data/SC3.DK4` | Other route/event scene text | 0 | 5010 | 0.0% |
-| `/data/DECKCHIP.DK4` | Deck/ship-chip labels | 0 | 29 | 0.0% |
+| `/data/DECKCHIP.DK4` | Deck/ship-chip binary asset; generic scanner produced 29 false positives | 0 | 0 confirmed text records | Not a text table |
 | `/data/WORLDMAP.DK4` | World-map labels and map messages | 0 | 1279 | 0.0% |
 | `/__arm9__.bin` | ARM9 UI, names, city/faction/commodity tables (audited slots) | 685 | 685 | 100.0% |
 | **Indexed text total** | **All extractable containers above** | **2882** | **28546** | **10.1%** |
