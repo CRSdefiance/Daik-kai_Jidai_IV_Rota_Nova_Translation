@@ -8,14 +8,14 @@ This is a rough, record-based estimate. A translated record can be one short lab
 |---|---|---:|---:|---:|
 | `/COMMON/MESFILE.DK4` | Shared menus, town dialogue, common prompts | 1404 | 2807 | 50.0% |
 | `/COMMON/HELP.DK4` | Help/tutorial records (194 unique records; raw table has duplicate/pointer rows) | 194 | 194 | 100.0% |
-| `/data/SC0.DK4` | Raphael route/story and related scene text | 330 | 6768 | 4.9% |
+| `/data/SC0.DK4` | Raphael route/story and related scene text (all 331 identified Raphael records covered) | 331 | 6768 | 4.9% |
 | `/data/SC1.DK4` | Lil/Argot route and scene text | 113 | 5166 | 2.2% |
 | `/data/SC2.DK4` | Hodram/Bergstrom route and scene text | 156 | 6608 | 2.4% |
 | `/data/SC3.DK4` | Other route/event scene text | 0 | 5010 | 0.0% |
 | `/data/DECKCHIP.DK4` | Deck/ship-chip binary asset; generic scanner produced 29 false positives | 0 | 0 confirmed text records | Not a text table |
-| `/data/WORLDMAP.DK4` | World-map labels and map messages | 0 | 1279 | 0.0% |
+| `/data/WORLDMAP.DK4` | Mixed world-map binary data; the generic scanner's 1,279 apparent Japanese records are false positives | 0 | 0 confirmed text records | Not a text table |
 | `/__arm9__.bin` | ARM9 UI, names, city/faction/commodity tables (audited slots) | 685 | 685 | 100.0% |
-| **Indexed text total** | **All extractable containers above** | **2882** | **28546** | **10.1%** |
+| **Indexed text total** | **All extractable text containers above** | **2882** | **27267** | **10.6%** |
 
 ### Containers requiring a separate binary extractor
 
@@ -25,6 +25,7 @@ This is a rough, record-based estimate. A translated record can be one short lab
 | `/data/EV1.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
 | `/data/EV2.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
 | `/data/EV3.DK4` | Event/cutscene resources | Not yet indexed; total cannot be reported reliably |
+| `/data/WORLDMAP.DK4` | World-map binary data | Not a generic text table; requires a format-specific map-data extractor before any text can be identified safely |
 
 ## Shared dialogue 50% target
 
