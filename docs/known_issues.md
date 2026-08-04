@@ -1,5 +1,36 @@
 # Known issues
 
+## Options report and sailing-help prompt encoding
+
+The Options confirmation prompts live in `__arm9__.bin`, but they are rendered by a
+fixed-width Shift-JIS dialog path rather than the normal ASCII-capable menu renderer.
+The original `options_menu_en.nds` inserted ASCII into those slots and is revoked: the
+resulting text was visibly mangled (`Income reports` and `Sailing help`).
+
+`out/options_menu_v2.nds` is the corrected research candidate. Its two prompts use
+CP932 full-width Latin characters, retain the original `%s` substitutions, and are
+built directly from `out/all_goods_roundtrip.nds`. Do not replace text in either
+prompt with ASCII. Any future revision must retain the exact source-byte lock and be
+cold-boot tested before promotion.
+
+The scrolling BGM/SFX labels are not the same ARM9 caption table. At least one visible
+BGM label (`陽気な仲間`) is packed into `/COMMON/MESFILE.DK4`, block 36, record 59,
+where several track names share one raw record and are reached by internal offsets.
+Do not translate that packed record as one ordinary dialogue row: first map its
+individual pointers/offsets, then test the complete selector.
+
+## Lil opening scene control preamble
+
+Lil's actual opening is `/data/SC2.DK4`, block 22. Its dialogue records begin
+with control sequences that affect the active portrait and name plate. Replacing
+the visible Japanese text while retaining only a guessed byte prefix produces an
+incorrect speaker and corrupts the first visible English glyph.
+
+`lil_sc2_opening_repair.nds` and `lil_sc2_opening_repair_v2.nds` are revoked
+research candidates and must not be distributed. The safe integration baseline
+is `out/all_goods_roundtrip.nds`. Map the full control preamble in
+a disposable live-tested probe before another SC2 block-22 translation build.
+
 ## Naming keyboard page selection
 
 The naming popup still opens on the Japanese kana page. The visible `英` and `記`
@@ -27,3 +58,9 @@ Do not replace the shared Japanese font glyphs as a workaround: those glyphs rem
 necessary for untranslated material and a global replacement would corrupt unrelated
 screens. The safe follow-up is to locate the town HUD's formatter or glyph-emission
 routine and change only that call site.
+# Release baseline warning
+
+- `out/all_goods_roundtrip.nds` is the user-designated safe integration baseline as of 2026-08-04.
+- Its SHA-256 is `8e61fd4e8c444b25566cc273dd676b3e5bea5d683ad167db2f92444c10df9764`.
+- All later integration, route, repair, and probe ROMs—including `lil_route_roundtrip.nds`, `raphael_complete_en.nds`, `raphael_complete_fixed.nds`, and the Lil repair probes—are deprecated historical artifacts. Do not distribute them or use them as a base.
+- Run `scripts/verify_release_baseline.py out/all_goods_roundtrip.nds <candidate.nds>` before handing off any subsequent candidate.

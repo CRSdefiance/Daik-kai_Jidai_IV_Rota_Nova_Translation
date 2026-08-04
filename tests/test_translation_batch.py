@@ -41,3 +41,17 @@ def test_translation_batch_rejects_wrong_source_hash():
         assert "SHA-256 mismatch" in str(error)
     else:
         raise AssertionError("expected source hash rejection")
+
+
+def test_translation_batch_can_replace_previously_english_record():
+    source = IlnkContainer([b"see below"]).to_bytes()
+    batch = {
+        "format": "dk4-ilnk-translation-batch-v1",
+        "file_path": "/COMMON/HELP.DK4",
+        "source_file_sha256": hashlib.sha256(source).hexdigest(),
+        "records": [{"id": "DK4_MES_B00_R0000", "english": "Useful help.{PAD}"}],
+    }
+
+    rows = materialize_translation_batch(batch, source)
+
+    assert rows[0]["english"] == "Useful help.{PAD}"

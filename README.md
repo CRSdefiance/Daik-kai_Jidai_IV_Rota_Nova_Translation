@@ -6,6 +6,14 @@ A local, ROM-free Python toolchain for researching an English translation of
 The repository contains tooling and synthetic tests only. You must supply your own
 legally dumped ROM. The tool never downloads a ROM and never edits its input in place.
 
+## Safe integrated builds
+
+Playable test ROMs must be built from the accepted integration baseline with
+`scripts/build_integrated_release.py`. Direct builds from `clean.nds` and intermediate
+stage ROMs are research probes, not playable candidates. See
+[docs/release_build.md](docs/release_build.md) for the mandatory source-hash,
+record-preservation, manifest, and promotion checks.
+
 ## Install
 
 Requires Python 3.11+. Patch commands use the native `pyxdelta` dependency and
@@ -116,8 +124,10 @@ python scripts/build_graphics_translation.py out/market_and_deck_tutorial.nds `
   --preview-dir work/graphics_preview
 ```
 
-See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
-[docs/testing_plan.md](docs/testing_plan.md).
+See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md),
+[docs/testing_plan.md](docs/testing_plan.md), and [docs/todo.md](docs/todo.md).
+The planned profile-driven dialogue formatter and later renderer support are specified
+in [docs/text_rendering_roadmap.md](docs/text_rendering_roadmap.md).
 
 ## Dedicated input and calendar build
 

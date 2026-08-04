@@ -88,7 +88,7 @@ def encode_mesfile_text(text: str) -> bytes:
     return bytes(output)
 
 
-def iter_mesfile_records(data: bytes) -> list[MesfileRecord]:
+def iter_mesfile_records(data: bytes, *, include_non_japanese: bool = False) -> list[MesfileRecord]:
     container = IlnkContainer.parse(data)
     header_size = 8 + (len(container.blocks) + 1) * 4
     records: list[MesfileRecord] = []
@@ -102,7 +102,7 @@ def iter_mesfile_records(data: bytes) -> list[MesfileRecord]:
                 except UnicodeDecodeError:
                     cursor += len(raw) + 1
                     continue
-                if contains_japanese(text):
+                if include_non_japanese or contains_japanese(text):
                     records.append(
                         MesfileRecord(
                             block_index,
@@ -141,9 +141,11 @@ def analyze_mesfile(data: bytes) -> dict[str, object]:
     }
 
 
-def export_mesfile_rows(data: bytes, file_path: str) -> list[dict[str, object]]:
+def export_mesfile_rows(
+    data: bytes, file_path: str, *, include_non_japanese: bool = False
+) -> list[dict[str, object]]:
     rows = []
-    for record in iter_mesfile_records(data):
+    for record in iter_mesfile_records(data, include_non_japanese=include_non_japanese):
         rows.append(
             {
                 "id": record.row_id,

@@ -4,6 +4,8 @@ Generated: 2026-08-03 11:30 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
+The detailed SC0 block inventory is in [`sc0_block_map.md`](sc0_block_map.md); it lists every internal block, record count, current coverage, and known route ownership.
+
 | File / container | What it contains | Translated records | Total records | Approx. complete |
 |---|---|---:|---:|---:|
 | `/COMMON/MESFILE.DK4` | Shared menus, town dialogue, common prompts | 1404 | 2807 | 50.0% |

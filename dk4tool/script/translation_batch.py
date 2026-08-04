@@ -23,7 +23,10 @@ def materialize_translation_batch(
             f"(expected {expected_hash}, got {actual_hash})"
         )
 
-    exported = export_mesfile_rows(source_data, file_path)
+    # A follow-up batch may replace an earlier English placeholder. Normal
+    # extraction remains Japanese-only, but batch resolution must see every
+    # decodable record so its source bytes can still be verified exactly.
+    exported = export_mesfile_rows(source_data, file_path, include_non_japanese=True)
     by_id = {str(row["id"]): row for row in exported}
     materialized: list[dict[str, object]] = []
     seen: set[str] = set()
