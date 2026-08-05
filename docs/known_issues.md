@@ -13,11 +13,16 @@ built directly from `out/all_goods_roundtrip.nds`. Do not replace text in either
 prompt with ASCII. Any future revision must retain the exact source-byte lock and be
 cold-boot tested before promotion.
 
-The scrolling BGM/SFX labels are not the same ARM9 caption table. At least one visible
-BGM label (`陽気な仲間`) is packed into `/COMMON/MESFILE.DK4`, block 36, record 59,
-where several track names share one raw record and are reached by internal offsets.
-Do not translate that packed record as one ordinary dialogue row: first map its
-individual pointers/offsets, then test the complete selector.
+The scrolling BGM/SFX labels are not the same ARM9 caption table. They are now
+mapped and translated in the corrected research candidate `out/sound_selector_en_v3.nds`:
+38 BGM titles are packed across `/COMMON/MESFILE.DK4` block 36 records 46-63,
+while 57 SFX titles occupy fixed or standalone ARM9 slots. The BGM panel uses a
+double-byte glyph renderer: narrow ASCII produces fragmented/reordered glyph tiles
+even when the packed offsets are correct. V1 and V2 are therefore superseded.
+V3 uses centered full-width Latin labels within the original Japanese cell counts;
+some titles are necessarily abbreviated until this panel is routed through the
+normal narrow-Latin renderer. The candidate passes byte-level and baseline checks but
+still requires a cold-boot test of every selector entry before promotion.
 
 ## Lil opening scene control preamble
 

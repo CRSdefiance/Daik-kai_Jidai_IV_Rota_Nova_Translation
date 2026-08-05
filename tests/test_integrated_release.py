@@ -4,7 +4,11 @@ import json
 import pytest
 
 from dk4tool.formats.ilnk import IlnkContainer
-from scripts.build_integrated_release import apply_arm9_fixed_batch, changed_segments
+from scripts.build_integrated_release import (
+    apply_arm9_fixed_batch,
+    apply_arm9_fixed_batches,
+    changed_segments,
+)
 
 
 def container(*blocks: bytes) -> bytes:
@@ -57,3 +61,66 @@ def test_arm9_fixed_batch_replaces_only_verified_slot(tmp_path):
 
     assert rebuilt == b"after\0\0next"
     assert record_ids == ["TEST_LABEL"]
+
+
+def test_arm9_fixed_batches_share_one_pristine_source_lock(tmp_path):
+    source = b"abcdefgh"
+    digest = hashlib.sha256(source).hexdigest()
+    paths = []
+    for name, offset, old, new in (
+        ("one", 0, b"ab", b"AB"),
+        ("two", 4, b"ef", b"EF"),
+    ):
+        path = tmp_path / f"{name}.json"
+        path.write_text(
+            json.dumps(
+                {
+                    "format": "dk4-arm9-fixed-text-batch-v1",
+                    "source_file_sha256": digest,
+                    "records": [
+                        {
+                            "id": name,
+                            "offset": offset,
+                            "source_hex": old.hex(),
+                            "replacement_hex": new.hex(),
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+        paths.append(path)
+
+    rebuilt, record_ids = apply_arm9_fixed_batches(paths, source)
+
+    assert rebuilt == b"ABcdEFgh"
+    assert record_ids == ["one", "two"]
+
+
+def test_arm9_fixed_batches_reject_cross_batch_overlap(tmp_path):
+    source = b"abcdefgh"
+    digest = hashlib.sha256(source).hexdigest()
+    paths = []
+    for name, offset in (("one", 1), ("two", 2)):
+        path = tmp_path / f"{name}.json"
+        path.write_text(
+            json.dumps(
+                {
+                    "format": "dk4-arm9-fixed-text-batch-v1",
+                    "source_file_sha256": digest,
+                    "records": [
+                        {
+                            "id": name,
+                            "offset": offset,
+                            "source_hex": source[offset : offset + 2].hex(),
+                            "replacement_hex": b"XX".hex(),
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+        paths.append(path)
+
+    with pytest.raises(ValueError, match="overlaps"):
+        apply_arm9_fixed_batches(paths, source)

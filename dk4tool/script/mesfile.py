@@ -194,16 +194,26 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         if original != expected:
             raise ValueError(f"{row.get('id')}: ILNK source bytes do not match")
         english = row["english"]
+        if "{SPEAKER:" in english or "{MACRO:" in english:
+            raise ValueError(
+                f"{row.get('id')}: Phase 2 dialogue markup is review-only until the "
+                "Phase 3 encoder is approved"
+            )
+        replacement_hex = str(row.get("replacement_hex", ""))
         pad_to_length = english.endswith("{PAD}")
         allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
-        replacement = encode_mesfile_text(english)
+        replacement = (
+            bytes.fromhex(replacement_hex)
+            if replacement_hex
+            else encode_mesfile_text(english)
+        )
         # Leading spaces in these records are layout bytes consumed before the
         # first visible glyph. Preserve the original prefix automatically.
         source_indent = len(original) - len(original.lstrip(b" "))
         replacement_indent = len(replacement) - len(replacement.lstrip(b" "))
-        if replacement_indent < source_indent:
+        if not replacement_hex and replacement_indent < source_indent:
             replacement = b" " * (source_indent - replacement_indent) + replacement
-        if pad_to_length and not allow_expand:
+        if pad_to_length and not replacement_hex and not allow_expand:
             if len(replacement) > len(original):
                 raise ValueError(
                     f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "

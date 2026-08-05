@@ -10,6 +10,17 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from dk4tool import __version__
+from dk4tool.dialogue import (
+    format_markup,
+    get_dialogue_profile,
+    inspect_ilnk_dialogue,
+    lint_dialogue,
+    tokenize_raw,
+    tokens_to_markup,
+)
+from dk4tool.dialogue.font_audit import audit_standard_font
+from dk4tool.dialogue.preview import render_dialogue_preview
+from dk4tool.dialogue.profiles import profile_names as dialogue_profile_names
 from dk4tool.insert.fixed_length import replace_fixed
 from dk4tool.patch.xdelta import apply_xdelta, make_xdelta
 from dk4tool.rom.hashing import hash_bytes, hash_file
@@ -20,7 +31,8 @@ from dk4tool.scan.compression_probe import decompress_lz10, is_lz10
 from dk4tool.scan.entropy import shannon_entropy
 from dk4tool.scan.sjis_scan import scan_sjis
 from dk4tool.scan.utf16_scan import scan_utf16le
-from dk4tool.script.arm9_profiles import export_profile_rows, profile_names
+from dk4tool.script.arm9_profiles import export_profile_rows
+from dk4tool.script.arm9_profiles import profile_names as arm9_profile_names
 from dk4tool.script.export_csv import write_script_csv
 from dk4tool.script.import_csv import read_script_csv
 from dk4tool.script.mesfile import analyze_mesfile, export_mesfile_rows, rebuild_mesfile
@@ -298,6 +310,98 @@ def command_extract_arm9_profile(args: argparse.Namespace) -> None:
     write_script_csv(args.out, rows)
 
 
+def command_inspect_dialogue(args: argparse.Namespace) -> None:
+    image = NdsImage.open(args.rom)
+    write_json(
+        args.out,
+        inspect_ilnk_dialogue(image.read_file(args.file_path), args.file_path),
+    )
+
+
+def _dialogue_row_diagnostics(
+    row: dict[str, str], profile_name: str, *, formatted: str | None = None
+) -> list[dict[str, object]]:
+    profile = get_dialogue_profile(profile_name)
+    allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
+    raw_limit = row.get("max_bytes") or row.get("source_length")
+    max_bytes = None if allow_expand or not raw_limit else int(raw_limit)
+    target = row.get("english", "") if formatted is None else formatted
+    return [
+        {"id": row["id"], **diagnostic.to_dict()}
+        for diagnostic in lint_dialogue(
+            bytes.fromhex(row["source_hex"]), target, profile, max_bytes=max_bytes
+        )
+    ]
+
+
+def command_lint_dialogue(args: argparse.Namespace) -> None:
+    rows = [row for row in read_script_csv(args.script) if row.get("english")]
+    diagnostics = [
+        issue
+        for row in rows
+        for issue in _dialogue_row_diagnostics(row, args.profile)
+    ]
+    report = {
+        "profile": args.profile,
+        "metrics_source": get_dialogue_profile(args.profile).metrics_source,
+        "translated_record_count": len(rows),
+        "error_count": sum(issue["severity"] == "error" for issue in diagnostics),
+        "warning_count": sum(issue["severity"] == "warning" for issue in diagnostics),
+        "diagnostics": diagnostics,
+    }
+    if args.out:
+        write_json(args.out, report)
+    else:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+    if report["error_count"]:
+        raise SystemExit(1)
+
+
+def command_format_dialogue(args: argparse.Namespace) -> None:
+    rows = read_script_csv(args.script)
+    profile = get_dialogue_profile(args.profile)
+    formatted_rows: list[dict[str, str]] = []
+    diagnostics: list[dict[str, object]] = []
+    for row in rows:
+        formatted_row = dict(row)
+        if row.get("english"):
+            formatted = format_markup(row["english"], profile)
+            diagnostics.extend(_dialogue_row_diagnostics(row, args.profile, formatted=formatted))
+            formatted_row["english"] = formatted
+        formatted_rows.append(formatted_row)
+    errors = [issue for issue in diagnostics if issue["severity"] == "error"]
+    if errors:
+        print(json.dumps(errors, ensure_ascii=False, indent=2))
+        raise SystemExit(1)
+    write_script_csv(args.out, formatted_rows)
+
+
+def command_preview_dialogue(args: argparse.Namespace) -> None:
+    rows = read_script_csv(args.script)
+    try:
+        row = next(row for row in rows if row["id"] == args.record)
+    except StopIteration as error:
+        raise ValueError(f"dialogue record not found: {args.record}") from error
+    text = row.get("english") or tokens_to_markup(tokenize_raw(bytes.fromhex(row["source_hex"])))
+    if args.format:
+        text = format_markup(text, get_dialogue_profile(args.profile))
+    arm9 = args.arm9.read_bytes() if args.arm9 else None
+    render_dialogue_preview(text, get_dialogue_profile(args.profile), args.out, arm9=arm9)
+
+
+def command_audit_dialogue_font(args: argparse.Namespace) -> None:
+    image = NdsImage.open(args.rom)
+    report = audit_standard_font(
+        image.read_file("/__arm9__.bin"), image.read_file("/GRP/KANJI.FNT")
+    )
+    if args.out:
+        write_json(args.out, report)
+    else:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+    if not report["all_renderer_signatures_match"]:
+        raise SystemExit(1)
+
+
 def command_extract_mesfile(args: argparse.Namespace) -> None:
     image = NdsImage.open(args.rom)
     data = image.read_file(args.file_path)
@@ -471,7 +575,7 @@ def parser() -> argparse.ArgumentParser:
     )
     extract.add_argument("--max-hits-per-file", type=int, default=20_000)
     arm9_profile = output_command("extract-arm9-profile", command_extract_arm9_profile)
-    arm9_profile.add_argument("--profile", choices=profile_names(), default="all")
+    arm9_profile.add_argument("--profile", choices=arm9_profile_names(), default="all")
     arm9_profile.add_argument(
         "--with-drafts",
         action="store_true",
@@ -479,6 +583,34 @@ def parser() -> argparse.ArgumentParser:
     )
     mesfile = output_command("extract-mesfile", command_extract_mesfile)
     mesfile.add_argument("--file-path", default="/COMMON/MESFILE.DK4")
+    inspect_dialogue = output_command("inspect-dialogue", command_inspect_dialogue)
+    inspect_dialogue.add_argument("--file-path", default="/COMMON/MESFILE.DK4")
+    lint = commands.add_parser("lint-dialogue")
+    lint.add_argument("script", type=Path)
+    lint.add_argument("--profile", choices=dialogue_profile_names(), default="story")
+    lint.add_argument("--out", type=Path)
+    lint.set_defaults(function=command_lint_dialogue)
+    format_dialogue = output_command(
+        "format-dialogue", command_format_dialogue, first="script"
+    )
+    format_dialogue.add_argument(
+        "--profile", choices=dialogue_profile_names(), default="story"
+    )
+    preview = output_command("preview-dialogue", command_preview_dialogue, first="script")
+    preview.add_argument("--record", required=True)
+    preview.add_argument("--profile", choices=dialogue_profile_names(), default="story")
+    preview.add_argument(
+        "--format", action="store_true", help="Apply profile wrapping before previewing"
+    )
+    font_audit = commands.add_parser("audit-dialogue-font")
+    font_audit.add_argument("rom", type=Path)
+    font_audit.add_argument("--out", type=Path)
+    font_audit.set_defaults(function=command_audit_dialogue_font)
+    preview.add_argument(
+        "--arm9",
+        type=Path,
+        help="Use the extracted clean ARM9 to draw the game's exact 6x11 ASCII glyphs",
+    )
     validate = commands.add_parser("validate-script")
     validate.add_argument("script", type=Path)
     validate.set_defaults(function=command_validate_script)

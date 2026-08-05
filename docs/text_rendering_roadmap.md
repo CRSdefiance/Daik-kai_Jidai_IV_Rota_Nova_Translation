@@ -1,5 +1,19 @@
 # English text rendering and formatting roadmap
 
+## Implementation status
+
+Phase 2 began on 2026-08-05. The repository now has a lossless standard-dialogue token
+model, ILNK control inventory, explicit macro markup, profile-driven pixel wrapping,
+deterministic lint reports, and diagnostic PNG previews. See
+[dialogue_tool.md](dialogue_tool.md).
+
+The implementation is deliberately offline and does not build or modify a ROM. Phase 2
+remains **in progress**. The base 6/12-pixel advances and 6-by-11 ASCII glyphs are
+verified from ARM9. Cold-boot probes established the story and shared-message boxes at
+216 pixels (36 ASCII cells), and confirmed that name/company macros use normal glyph
+advances. The help-window bound still needs its own probe. Phase 3 encoding and all
+playable-build integration remain disabled.
+
 ## Goal
 
 Build a profile-driven English text system that makes translations predictable without
@@ -118,7 +132,7 @@ a ROM is built.
 Proposed commands:
 
 ```text
-dk4tool inspect-controls <rom> --file-path <path> --out <report>
+dk4tool inspect-dialogue <rom> --file-path <path> --out <report>
 dk4tool format-dialogue <translation> --profile story --out <formatted>
 dk4tool preview-dialogue <formatted> --record <id> --out <image>
 dk4tool lint-dialogue <translation> --profile story

@@ -37,53 +37,69 @@ def load_batch_header(path: Path) -> dict[str, object]:
     return value
 
 
-def apply_arm9_fixed_batch(batch_path: Path, source: bytes) -> tuple[bytes, list[str]]:
+def apply_arm9_fixed_batches(
+    batch_paths: list[Path], source: bytes
+) -> tuple[bytes, list[str]]:
     """Apply a source-locked, fixed-width ARM9 text batch.
 
     ARM9 labels are not ILNK records, but they still need the same parent and
     byte-preservation guarantees as dialogue batches. Each entry verifies the
     exact source bytes at its declared offset and can only shrink in place.
     """
-    batch = load_batch_header(batch_path)
-    if batch.get("format") != "dk4-arm9-fixed-text-batch-v1":
-        raise ValueError(f"{batch_path}: unsupported ARM9 batch format")
-    expected_hash = str(batch.get("source_file_sha256", "")).lower()
-    actual_hash = sha256(source)
-    if expected_hash != actual_hash:
-        raise ValueError(
-            f"{batch_path}: ARM9 source SHA-256 mismatch "
-            f"(expected {expected_hash}, got {actual_hash})"
-        )
-    records = batch.get("records")
-    if not isinstance(records, list) or not records:
-        raise ValueError(f"{batch_path}: ARM9 batch has no records")
-
     rebuilt = bytearray(source)
     record_ids: list[str] = []
     claimed: set[int] = set()
-    for record in records:
-        if not isinstance(record, dict):
-            raise TypeError(f"{batch_path}: ARM9 record must be an object")
-        row_id = str(record.get("id", ""))
-        if not row_id or row_id in record_ids:
-            raise ValueError(f"{batch_path}: duplicate or missing ARM9 record id")
-        offset = int(record.get("offset", -1))
-        expected = bytes.fromhex(str(record.get("source_hex", "")))
-        if offset < 0 or not expected or source[offset : offset + len(expected)] != expected:
-            raise ValueError(f"{batch_path}: {row_id} source bytes do not match at {offset:#x}")
-        if any(position in claimed for position in range(offset, offset + len(expected))):
-            raise ValueError(f"{batch_path}: {row_id} overlaps another ARM9 record")
-        encoding = str(record.get("encoding", "ascii"))
-        replacement = str(record.get("english", "")).encode(encoding)
-        if len(replacement) > len(expected):
+    actual_hash = sha256(source)
+    for batch_path in batch_paths:
+        batch = load_batch_header(batch_path)
+        if batch.get("format") != "dk4-arm9-fixed-text-batch-v1":
+            raise ValueError(f"{batch_path}: unsupported ARM9 batch format")
+        expected_hash = str(batch.get("source_file_sha256", "")).lower()
+        if expected_hash != actual_hash:
             raise ValueError(
-                f"{batch_path}: {row_id} replacement is {len(replacement)} bytes; "
-                f"slot is {len(expected)} bytes"
+                f"{batch_path}: ARM9 source SHA-256 mismatch "
+                f"(expected {expected_hash}, got {actual_hash})"
             )
-        rebuilt[offset : offset + len(expected)] = replacement.ljust(len(expected), b"\0")
-        claimed.update(range(offset, offset + len(expected)))
-        record_ids.append(row_id)
+        records = batch.get("records")
+        if not isinstance(records, list) or not records:
+            raise ValueError(f"{batch_path}: ARM9 batch has no records")
+        for record in records:
+            if not isinstance(record, dict):
+                raise TypeError(f"{batch_path}: ARM9 record must be an object")
+            row_id = str(record.get("id", ""))
+            if not row_id or row_id in record_ids:
+                raise ValueError(f"{batch_path}: duplicate or missing ARM9 record id")
+            offset = int(record.get("offset", -1))
+            expected = bytes.fromhex(str(record.get("source_hex", "")))
+            if offset < 0 or not expected or source[offset : offset + len(expected)] != expected:
+                raise ValueError(f"{batch_path}: {row_id} source bytes do not match at {offset:#x}")
+            if any(position in claimed for position in range(offset, offset + len(expected))):
+                raise ValueError(f"{batch_path}: {row_id} overlaps another ARM9 record")
+            replacement_hex = str(record.get("replacement_hex", ""))
+            if replacement_hex:
+                replacement = bytes.fromhex(replacement_hex)
+                if len(replacement) != len(expected):
+                    raise ValueError(
+                        f"{batch_path}: {row_id} raw replacement is {len(replacement)} bytes; "
+                        f"exactly {len(expected)} bytes are required"
+                    )
+            else:
+                encoding = str(record.get("encoding", "ascii"))
+                replacement = str(record.get("english", "")).encode(encoding)
+                if len(replacement) > len(expected):
+                    raise ValueError(
+                        f"{batch_path}: {row_id} replacement is {len(replacement)} bytes; "
+                        f"slot is {len(expected)} bytes"
+                    )
+                replacement = replacement.ljust(len(expected), b"\0")
+            rebuilt[offset : offset + len(expected)] = replacement
+            claimed.update(range(offset, offset + len(expected)))
+            record_ids.append(row_id)
     return bytes(rebuilt), record_ids
+
+
+def apply_arm9_fixed_batch(batch_path: Path, source: bytes) -> tuple[bytes, list[str]]:
+    return apply_arm9_fixed_batches([batch_path], source)
 
 
 def changed_segments(before: bytes, after: bytes) -> set[tuple[int, int]]:
@@ -165,9 +181,7 @@ def main() -> None:
     for file_path, batch_paths in grouped.items():
         source = candidate.read_file(file_path)
         if file_path == "/__arm9__.bin":
-            if len(batch_paths) != 1:
-                raise SystemExit("ARM9 release builds accept exactly one fixed-text batch")
-            rebuilt, record_ids = apply_arm9_fixed_batch(batch_paths[0], source)
+            rebuilt, record_ids = apply_arm9_fixed_batches(batch_paths, source)
             if rebuilt == source:
                 raise SystemExit("ARM9 fixed-text batch made no changes")
             candidate.replace_file(file_path, rebuilt)

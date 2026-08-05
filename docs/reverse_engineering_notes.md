@@ -15,6 +15,19 @@ has booted successfully.
 - The title menu, controller prompts, character values, and biographies are CP932 text
   in ARM9.
 - Uppercase and lowercase ASCII render correctly in the existing font.
+- The standard font path is mapped in the clean ARM9. `ARM9+0xD169C` advances
+  single-byte glyphs by 6 pixels; `ARM9+0xD1674` advances Shift-JIS glyphs by 12.
+  The embedded ASCII table begins at `ARM9+0x125A60`, covers codes `0x21` through
+  `0x7F`, and stores 11 one-byte rows per glyph. The renderer reads six pixels from
+  each row. Space is blank but retains the same 6-pixel advance.
+- `/GRP/KANJI.FNT` is exactly 73,480 bytes: 3,340 records of 22 bytes. Each record is
+  a 16-by-11 one-bit glyph. The sorted 3,340-entry Shift-JIS-to-glyph map begins at
+  `ARM9+0x125EC4`. The loader at `ARM9+0xD1A50` reads the complete `0x11F08`-byte file.
+- Standard story dialogue uses a 16-pixel line pitch and a cold-boot calibrated
+  216-pixel content width: exactly 36 fixed-width ASCII cells. A 38-cell SC0 probe
+  wrapped two cells and a 39-cell probe wrapped three. A separate Market Info probe
+  established the same 216-pixel/36-cell width for shared messages. The help-window
+  bound still requires separate calibration.
 - ARM9 fixed-width replacements boot and display in emulator.
 - Biography lines use delimiters that should be preserved with exact-width replacements.
 - Five character-row labels appear to be graphics rather than live text.
@@ -40,6 +53,10 @@ has booted successfully.
   and emulator review. Source `0A` controls should be retained, but a later control may
   be placed after the completed English sentence when copying the Japanese break would
   create an unnecessary extra English line.
+- A live Raphael probe confirms `FI` = given name (`Raphael`), `FA` = family name
+  (`Castor`), and `FO` = company name (`Castor Co.`). Their widths follow the normal
+  per-glyph advances and therefore vary with edited values. Standalone `I` produces a
+  full-width Japanese first-person pronoun (`僕` for Raphael), not a literal English I.
 - Broader emulator testing shows that `0A` is applied after the next single-byte glyph.
   Aligned English breaks therefore encode `0A 20`: the following space is consumed on
   the preceding line and the intended first letter begins the new line.
@@ -67,6 +84,27 @@ has booted successfully.
 - Trading details use the format `%s\n%s%4d％`. As in dialogue windows, the renderer
   consumes the first single-byte glyph after LF. The English profile inserts a layout
   space after LF so `Flavor` begins intact on the second line.
+- The Sound Setup BGM selector contains 38 logical titles packed into
+  `/COMMON/MESFILE.DK4` block 36 records 46-63. Their 16-bit block-relative
+  interior-offset array begins at ARM9 offset `0x143276`; the translated records
+  and regenerated offsets are source-locked in `translations/sound_bgm_titles.json`
+  and `translations/sound_selector_arm9.json`.
+- The Sound Setup SFX selector is a separate ARM9 table beginning at `0x16ED80`.
+  It contains 4 four-byte compact labels, 44 eight-byte slots, and 8 twelve-byte
+  slots, plus a standalone `ゲームオーバー` caption at `0x16EFB4`, for 57 titles.
+  The compact labels are `帆`, `嵐`, `雨`, and `雷`; their
+  three-character English forms are required to retain a null terminator.
+  `scripts/verify_sound_selector_build.py` independently checks every translated
+  slot and all 38 reconstructed BGM slices.
+- Every packed BGM pointer must be even. Odd pointers reproduce the observed
+  leading/trailing-letter corruption (`rEndin`, `aBeyondHorizo`). Padding after
+  the final title is rendered as part of its field and causes left-shifted text,
+  so the packer places all spare bytes before the first pointer in each record.
+- Even-aligned narrow ASCII is still not sufficient for the BGM panel. A live v2
+  test rendered `Naval Battle` as fragmented/reordered glyph tiles because this
+  selector uses a double-byte Japanese glyph path. V3 keeps the original pointers
+  and exact title cell spans, replacing each Japanese glyph with a centered CP932
+  full-width Latin glyph. Complete narrow track names require a later renderer hook.
 
 ## Graphics resource findings
 

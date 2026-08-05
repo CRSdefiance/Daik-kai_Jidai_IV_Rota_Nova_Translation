@@ -45,6 +45,8 @@ def materialize_translation_batch(
         except KeyError as error:
             raise ValueError(f"{row_id}: record not found in {file_path}") from error
         row["english"] = str(record.get("english", ""))
+        if "replacement_hex" in record:
+            row["replacement_hex"] = str(record["replacement_hex"])
         row["status"] = str(record.get("status", "draft"))
         # Long-form story batches may intentionally expand an ILNK record.  Keep
         # this opt-in so compact UI labels remain size-checked by default.

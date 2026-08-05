@@ -14,6 +14,13 @@ stage ROMs are research probes, not playable candidates. See
 [docs/release_build.md](docs/release_build.md) for the mandatory source-hash,
 record-preservation, manifest, and promotion checks.
 
+## Standard-dialogue diagnostics
+
+Phase 2's offline dialogue formatter, linter, control inventory, and preview commands
+are documented in [docs/dialogue_tool.md](docs/dialogue_tool.md). These commands do not
+modify a ROM, and their provisional font metrics must not yet be treated as an emulator
+or release-build substitute.
+
 ## Install
 
 Requires Python 3.11+. Patch commands use the native `pyxdelta` dependency and
@@ -126,7 +133,8 @@ python scripts/build_graphics_translation.py out/market_and_deck_tutorial.nds `
 
 See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md),
 [docs/testing_plan.md](docs/testing_plan.md), and [docs/todo.md](docs/todo.md).
-The planned profile-driven dialogue formatter and later renderer support are specified
+The profile-driven dialogue formatter, extracted-font preview, read-only font audit,
+and later renderer support are specified
 in [docs/text_rendering_roadmap.md](docs/text_rendering_roadmap.md).
 
 ## Dedicated input and calendar build
