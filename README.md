@@ -6,6 +6,25 @@ A local, ROM-free Python toolchain for researching an English translation of
 The repository contains tooling and synthetic tests only. You must supply your own
 legally dumped ROM. The tool never downloads a ROM and never edits its input in place.
 
+## Safe integrated builds
+
+Playable test ROMs must be built from the accepted integration baseline with
+`scripts/build_integrated_release.py`. Direct builds from `clean.nds` and intermediate
+stage ROMs are research probes, not playable candidates. See
+[docs/release_build.md](docs/release_build.md) for the mandatory source-hash,
+record-preservation, manifest, and promotion checks.
+Every model must also follow the cumulative-layer procedure in
+[docs/build_continuity_protocol.md](docs/build_continuity_protocol.md). The accepted
+and experimental layer registry is `translations/release_stack.json`; do not assemble
+playable releases from remembered batch lists.
+
+## Standard-dialogue diagnostics
+
+Phase 2's offline dialogue formatter, linter, control inventory, and preview commands
+are documented in [docs/dialogue_tool.md](docs/dialogue_tool.md). These commands do not
+modify a ROM, and their provisional font metrics must not yet be treated as an emulator
+or release-build substitute.
+
 ## Install
 
 Requires Python 3.11+. Patch commands use the native `pyxdelta` dependency and
@@ -116,8 +135,11 @@ python scripts/build_graphics_translation.py out/market_and_deck_tutorial.nds `
   --preview-dir work/graphics_preview
 ```
 
-See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md), and
-[docs/testing_plan.md](docs/testing_plan.md).
+See [LEGAL.md](LEGAL.md), [docs/workflow.md](docs/workflow.md),
+[docs/testing_plan.md](docs/testing_plan.md), and [docs/todo.md](docs/todo.md).
+The profile-driven dialogue formatter, extracted-font preview, read-only font audit,
+and later renderer support are specified
+in [docs/text_rendering_roadmap.md](docs/text_rendering_roadmap.md).
 
 ## Dedicated input and calendar build
 

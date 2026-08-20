@@ -104,13 +104,9 @@ def fit(source: str, replacement: str, maximum: int) -> str:
     replacement += "{PAD}"
     if len(encode_mesfile_text(replacement)) <= maximum:
         return replacement
-    short = "ok{PAD}"
-    if "{LB}" in source:
-        short = "see below{LB}{PAD}"
-    short = preserve_formats(source, short) + "{PAD}"
-    if len(encode_mesfile_text(short)) <= maximum:
-        return short
-    return "{PAD}"
+    # A placeholder is not a translation. An empty result tells the caller to
+    # omit this record so the original text remains intact.
+    return ""
 
 
 def help_translation(source: str, maximum: int) -> str:
@@ -204,15 +200,17 @@ def write_batch(path: Path, file_path: str, source_path: Path, records: list[dic
 def main() -> None:
     help_rows = load_rows(WORK / "help_ilnk.csv")
     help_done = existing_ids(Path("/COMMON/HELP.DK4"))
-    help_records = [
-        {
-            "id": row["id"],
-            "english": help_translation(row["japanese"], int(row.get("max_bytes") or row["source_length"])),
-            "context": "Help manual",
-        }
-        for row in help_rows
-        if row["id"] not in help_done
-    ]
+    help_records = []
+    for row in help_rows:
+        if row["id"] in help_done:
+            continue
+        english = help_translation(
+            row["japanese"], int(row.get("max_bytes") or row["source_length"])
+        )
+        if english:
+            help_records.append(
+                {"id": row["id"], "english": english, "context": "Help manual"}
+            )
     write_batch(
         TRANSLATIONS / "help_remaining.json",
         "/COMMON/HELP.DK4",
@@ -230,19 +228,19 @@ def main() -> None:
             continue
         block = int(match.group(1))
         if block <= 18 or (block == 19 and b19_count < 45):
-            targets.append(
-                {
-                    "id": row["id"],
-                    "english": shared_translation(
-                        block, row["japanese"], int(row.get("max_bytes") or row["source_length"])
-                    ),
-                    "context": f"Shared gameplay message block {block:02d}",
-                }
+            english = shared_translation(
+                block, row["japanese"], int(row.get("max_bytes") or row["source_length"])
             )
+            if english:
+                targets.append(
+                    {
+                        "id": row["id"],
+                        "english": english,
+                        "context": f"Shared gameplay message block {block:02d}",
+                    }
+                )
             if block == 19:
                 b19_count += 1
-    if len(targets) != 1155:
-        raise RuntimeError(f"expected 1155 shared records, found {len(targets)}")
     write_batch(
         TRANSLATIONS / "common_shared_50pct.json",
         "/COMMON/MESFILE.DK4",

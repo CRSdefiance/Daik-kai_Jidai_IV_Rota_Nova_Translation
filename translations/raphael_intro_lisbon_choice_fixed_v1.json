@@ -1,0 +1,30 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "8568db05c98a4ac10e8b1846a9d35838b8a1a6d7be223c4a92dfc2af755c26e2",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "raphael-story-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+  "records": [
+    {
+      "id": "DK4_MES_B44_R0454",
+      "english": "Ask him.{PAD}",
+      "speaker": "Choice",
+      "context": "The player chooses Julio's guided preparation tutorial.",
+      "source_meaning": "Ask Julio to teach Raphael how to prepare for the voyage.",
+      "localization_note": "The choice parser requires this slot to remain exactly eight bytes; the preceding question names Julio, so Ask him is natural and unambiguous.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B44_R0456",
+      "english": "Prepare alone.{PAD}",
+      "speaker": "Choice",
+      "context": "The player declines Julio's tutorial and prepares independently.",
+      "source_meaning": "Prepare for the voyage without Julio's guidance.",
+      "localization_note": "The choice parser requires this slot to remain exactly fourteen bytes. Prepare alone fills the slot without invisible alignment padding and naturally completes the preceding question.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    }
+  ]
+}

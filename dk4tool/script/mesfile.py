@@ -4,6 +4,8 @@ import re
 from collections import Counter
 from dataclasses import dataclass
 
+from dk4tool.dialogue.encoder import encode_fixed_dialogue
+from dk4tool.dialogue.profiles import get_dialogue_profile
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.scan.sjis_scan import contains_japanese
 
@@ -88,7 +90,7 @@ def encode_mesfile_text(text: str) -> bytes:
     return bytes(output)
 
 
-def iter_mesfile_records(data: bytes) -> list[MesfileRecord]:
+def iter_mesfile_records(data: bytes, *, include_non_japanese: bool = False) -> list[MesfileRecord]:
     container = IlnkContainer.parse(data)
     header_size = 8 + (len(container.blocks) + 1) * 4
     records: list[MesfileRecord] = []
@@ -102,7 +104,7 @@ def iter_mesfile_records(data: bytes) -> list[MesfileRecord]:
                 except UnicodeDecodeError:
                     cursor += len(raw) + 1
                     continue
-                if contains_japanese(text):
+                if include_non_japanese or contains_japanese(text):
                     records.append(
                         MesfileRecord(
                             block_index,
@@ -141,9 +143,11 @@ def analyze_mesfile(data: bytes) -> dict[str, object]:
     }
 
 
-def export_mesfile_rows(data: bytes, file_path: str) -> list[dict[str, object]]:
+def export_mesfile_rows(
+    data: bytes, file_path: str, *, include_non_japanese: bool = False
+) -> list[dict[str, object]]:
     rows = []
-    for record in iter_mesfile_records(data):
+    for record in iter_mesfile_records(data, include_non_japanese=include_non_japanese):
         rows.append(
             {
                 "id": record.row_id,
@@ -192,22 +196,47 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         if original != expected:
             raise ValueError(f"{row.get('id')}: ILNK source bytes do not match")
         english = row["english"]
+        encoder = str(row.get("encoder", "legacy"))
+        if encoder not in {"legacy", "dialogue-fixed-v1"}:
+            raise ValueError(f"{row.get('id')}: unknown dialogue encoder {encoder!r}")
+        if encoder == "legacy" and ("{SPEAKER:" in english or "{MACRO:" in english):
+            raise ValueError(
+                f"{row.get('id')}: Phase 2 dialogue markup is review-only until the "
+                "Phase 3 encoder is approved"
+            )
+        replacement_hex = str(row.get("replacement_hex", ""))
         pad_to_length = english.endswith("{PAD}")
-        replacement = encode_mesfile_text(english)
+        allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
+        if encoder == "dialogue-fixed-v1":
+            if replacement_hex:
+                raise ValueError(
+                    f"{row.get('id')}: dialogue-fixed-v1 cannot be combined with replacement_hex"
+                )
+            if allow_expand:
+                raise ValueError(
+                    f"{row.get('id')}: dialogue-fixed-v1 never relocates records"
+                )
+            profile = get_dialogue_profile(str(row.get("dialogue_profile", "story")))
+            replacement = encode_fixed_dialogue(original, english, profile).encoded
+        else:
+            replacement = (
+                bytes.fromhex(replacement_hex)
+                if replacement_hex
+                else encode_mesfile_text(english)
+            )
         # Leading spaces in these records are layout bytes consumed before the
         # first visible glyph. Preserve the original prefix automatically.
         source_indent = len(original) - len(original.lstrip(b" "))
         replacement_indent = len(replacement) - len(replacement.lstrip(b" "))
-        if replacement_indent < source_indent:
+        if encoder == "legacy" and not replacement_hex and replacement_indent < source_indent:
             replacement = b" " * (source_indent - replacement_indent) + replacement
-        if pad_to_length:
+        if encoder == "legacy" and pad_to_length and not replacement_hex and not allow_expand:
             if len(replacement) > len(original):
                 raise ValueError(
                     f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "
                     f"cannot pad it to the shorter {len(original)}-byte source record"
                 )
             replacement = replacement.ljust(len(original), b" ")
-        allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
         if len(replacement) != len(original) and not allow_expand:
             raise ValueError(
                 f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "

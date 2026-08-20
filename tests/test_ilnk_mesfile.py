@@ -107,6 +107,28 @@ def test_mesfile_rebuild_preserves_consumed_source_indent():
     assert replacement.startswith(b" Welcome!")
 
 
+def test_mesfile_raw_replacement_can_intentionally_reuse_indent_bytes():
+    data = IlnkContainer([b" " + "波".encode("cp932")]).to_bytes()
+    rows = export_mesfile_rows(data, "/COMMON/MESFILE.DK4")
+    rows[0]["english"] = "Sea"
+    rows[0]["replacement_hex"] = b"Sea".hex()
+    rebuilt = rebuild_mesfile(data, rows)
+    assert IlnkContainer.parse(rebuilt).blocks[0] == b"Sea"
+
+
+def test_mesfile_raw_replacement_must_keep_record_size():
+    data = IlnkContainer(["波".encode("cp932")]).to_bytes()
+    rows = export_mesfile_rows(data, "/COMMON/MESFILE.DK4")
+    rows[0]["english"] = "Wave"
+    rows[0]["replacement_hex"] = b"Wave".hex()
+    try:
+        rebuild_mesfile(data, rows)
+    except ValueError as error:
+        assert "exactly" in str(error)
+    else:
+        raise AssertionError("expected exact-length raw replacement rejection")
+
+
 def test_mesfile_aligned_linebreak_rejects_overflow():
     try:
         encode_mesfile_text("Too long{LB@3}")
@@ -121,3 +143,47 @@ def test_mesfile_internal_entry_point_alignment():
     assert encoded[:5] == b"First"
     assert encoded[5:12] == b" " * 7
     assert encoded[12:] == b"Second"
+
+
+def test_mesfile_rebuilder_rejects_phase2_review_markup():
+    data = synthetic_ilnk()
+    rows = export_mesfile_rows(data, "/COMMON/MESFILE.DK4")
+    rows[0]["english"] = "{SPEAKER:05}Review only"
+    rows[0]["allow_expand"] = "true"
+    try:
+        rebuild_mesfile(data, rows)
+    except ValueError as error:
+        assert "Phase 2 dialogue markup is review-only" in str(error)
+    else:
+        raise AssertionError("expected Phase 2 markup rejection")
+
+
+def test_mesfile_rebuilder_uses_opt_in_fixed_dialogue_encoder():
+    original = b"\x05hello there       "
+    data = IlnkContainer([original]).to_bytes()
+    rows = export_mesfile_rows(data, "/data/SC0.DK4", include_non_japanese=True)
+    rows[0]["english"] = "{SPEAKER:05}hello{PAD}"
+    rows[0]["encoder"] = "dialogue-fixed-v1"
+    rows[0]["dialogue_profile"] = "story"
+
+    rebuilt = rebuild_mesfile(data, rows)
+
+    assert IlnkContainer.parse(rebuilt).blocks[0] == b"\x05hello".ljust(
+        len(original), b" "
+    )
+
+
+def test_fixed_dialogue_encoder_cannot_enable_record_expansion():
+    original = b"hello      "
+    data = IlnkContainer([original]).to_bytes()
+    rows = export_mesfile_rows(data, "/data/SC0.DK4", include_non_japanese=True)
+    rows[0]["english"] = "hello{PAD}"
+    rows[0]["encoder"] = "dialogue-fixed-v1"
+    rows[0]["allow_expand"] = "true"
+
+    try:
+        rebuild_mesfile(data, rows)
+    except ValueError as error:
+        assert "never relocates" in str(error)
+    else:
+        raise AssertionError("expected fixed encoder expansion rejection")

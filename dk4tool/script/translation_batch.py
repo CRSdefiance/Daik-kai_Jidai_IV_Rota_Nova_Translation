@@ -23,7 +23,10 @@ def materialize_translation_batch(
             f"(expected {expected_hash}, got {actual_hash})"
         )
 
-    exported = export_mesfile_rows(source_data, file_path)
+    # A follow-up batch may replace an earlier English placeholder. Normal
+    # extraction remains Japanese-only, but batch resolution must see every
+    # decodable record so its source bytes can still be verified exactly.
+    exported = export_mesfile_rows(source_data, file_path, include_non_japanese=True)
     by_id = {str(row["id"]): row for row in exported}
     materialized: list[dict[str, object]] = []
     seen: set[str] = set()
@@ -42,7 +45,23 @@ def materialize_translation_batch(
         except KeyError as error:
             raise ValueError(f"{row_id}: record not found in {file_path}") from error
         row["english"] = str(record.get("english", ""))
+        if "replacement_hex" in record:
+            row["replacement_hex"] = str(record["replacement_hex"])
+        if "encoder" in batch:
+            row["encoder"] = str(batch["encoder"])
+        if "encoder" in record:
+            row["encoder"] = str(record["encoder"])
+        if "dialogue_profile" in batch:
+            row["dialogue_profile"] = str(batch["dialogue_profile"])
+        if "dialogue_profile" in record:
+            row["dialogue_profile"] = str(record["dialogue_profile"])
         row["status"] = str(record.get("status", "draft"))
+        # Long-form story batches may intentionally expand an ILNK record.  Keep
+        # this opt-in so compact UI labels remain size-checked by default.
+        if "allow_expand" in batch:
+            row["allow_expand"] = str(batch.get("allow_expand", "")).lower()
+        if "allow_expand" in record:
+            row["allow_expand"] = str(record.get("allow_expand", "")).lower()
         for field in ("speaker", "notes", "context"):
             if field in record:
                 row[field] = str(record[field])

@@ -1,0 +1,35 @@
+{
+  "format": "dk4-cs-relocation-map-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "2daae625c81572e02b62b91f11ad1a6138eff05bceb66dd74231be9d0fb74c21",
+  "block_index": 44,
+  "source_block_sha256": "81e92294f7c6f9dcca659a1da0ebad1f3b0b813f93d6ccb85b08798eec43c7e8",
+  "source_block_offset": 30944,
+  "source_block_size": 6504,
+  "source_cs_body_size": 6494,
+  "cs_header": {
+    "magic_hex": "43530001",
+    "body_size_offset": 4,
+    "body_size_width": 2,
+    "body_size_endian": "little",
+    "body_start": 8,
+    "alignment": 4
+  },
+  "movable_segments": [13, 17, 21, 25, 29],
+  "required_segments": [13, 17, 21, 25, 29],
+  "external_references_complete": true,
+  "preserve_record_parity": true,
+  "parity_mismatch_policy": "append-single-space",
+  "proof_scope": "canonical SC0 block 44 five-record parity-preserving runtime probe",
+  "proof_basis": [
+    "The failed relocation trace reached the correct expanded end of record 13 at offset 0x66, but the next 00 40 FF FF command prefix had shifted to offset 0x67 and the scene exited.",
+    "The working baseline reached offset 0x54, where the next 00 40 FF FF command prefix remained on the VM's expected byte phase.",
+    "Every replacement in this probe preserves its source record's odd/even byte length so every following compiled command remains on its original 16-bit phase; the builder appends one structural trailing space only when the natural encoding has opposite parity.",
+    "All non-target CS segments, all other ILNK blocks, and the protected ARM9 runtime-owned range remain guarded byte-for-byte."
+  ],
+  "runtime_evidence": {
+    "failed_trace": "work/sc0_b44_control_flow_relocated_failed.log",
+    "baseline_trace": "work/sc0_b44_control_flow_trace.log"
+  },
+  "status": "experimental-runtime-parity-probe"
+}
