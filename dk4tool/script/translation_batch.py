@@ -47,6 +47,14 @@ def materialize_translation_batch(
         row["english"] = str(record.get("english", ""))
         if "replacement_hex" in record:
             row["replacement_hex"] = str(record["replacement_hex"])
+        if "encoder" in batch:
+            row["encoder"] = str(batch["encoder"])
+        if "encoder" in record:
+            row["encoder"] = str(record["encoder"])
+        if "dialogue_profile" in batch:
+            row["dialogue_profile"] = str(batch["dialogue_profile"])
+        if "dialogue_profile" in record:
+            row["dialogue_profile"] = str(record["dialogue_profile"])
         row["status"] = str(record.get("status", "draft"))
         # Long-form story batches may intentionally expand an ILNK record.  Keep
         # this opt-in so compact UI labels remain size-checked by default.

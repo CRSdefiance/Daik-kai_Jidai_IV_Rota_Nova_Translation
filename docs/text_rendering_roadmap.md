@@ -7,12 +7,17 @@ model, ILNK control inventory, explicit macro markup, profile-driven pixel wrapp
 deterministic lint reports, and diagnostic PNG previews. See
 [dialogue_tool.md](dialogue_tool.md).
 
-The implementation is deliberately offline and does not build or modify a ROM. Phase 2
-remains **in progress**. The base 6/12-pixel advances and 6-by-11 ASCII glyphs are
+Phase 3's conservative fixed-size encoder is now implemented as an explicit per-batch
+opt-in. The base 6/12-pixel advances and 6-by-11 ASCII glyphs are
 verified from ARM9. Cold-boot probes established the story and shared-message boxes at
 216 pixels (36 ASCII cells), and confirmed that name/company macros use normal glyph
-advances. The help-window bound still needs its own probe. Phase 3 encoding and all
-playable-build integration remain disabled.
+advances. The help-window bound still needs its own probe. Relocation remains disabled;
+one fixed-allocation Raphael record is registered as a live experimental profile.
+
+Phase 4 groundwork now includes a read-only block-layout inventory command and a
+fail-closed relocation planner. The planner calculates shifted record and entry-point
+offsets but rejects every size change while a block's external/interior reference map
+is incomplete. No playable build currently enables record expansion.
 
 ## Goal
 
@@ -27,8 +32,8 @@ This work has two layers:
 1. An **offline dialogue compiler** that understands the original bytecode, lays out
    English safely, validates it, and rebuilds only declared records.
 2. An optional **runtime renderer patch** that removes limitations which cannot be
-   solved cleanly offline, such as macro collisions, unusual newline behavior,
-   fixed-width Latin text, and constrained record storage.
+   solved cleanly offline, such as macro collisions, proportional Latin text, and
+   constrained record storage and safe zero-indent progressive-story newlines.
 
 The offline compiler is the first deliverable. A runtime patch must not become a
 prerequisite for continuing ordinary translation work.
@@ -91,7 +96,8 @@ should support:
 - punctuation and indentation rules;
 - worst-case widths for runtime names and numbers;
 - overflow diagnostics with the widest offending line; and
-- a compatibility mode for the current native newline quirk (`0A 20`).
+- renderer-family-specific newline modes. Progressive story dialogue requires guarded
+  `0A 20`; the bare-`0A` experiment is revoked after live glyph-loss failures.
 
 The formatter should produce a layout report before it produces replacement bytes.
 
@@ -195,7 +201,7 @@ release candidates:
 4. Tests for literal uppercase `F` and `I`, names, punctuation, and multibyte text.
 5. Pixel-width tests using short, exact-fit, and overflow examples.
 6. Pointer-preservation tests for fixed records and relocation tests for mapped blocks.
-7. Integrated-release verification against `out/all_goods_roundtrip.nds`.
+7. Integrated-release verification against `out/raphael_natural_v2_accepted_base.nds`.
 8. Cold-boot emulator checks for each modified renderer family and previously accepted
    screens.
 
@@ -211,7 +217,7 @@ golden screen and a documented rollback path.
 | 2 | Width-aware formatter and preview | Standard dialogue can be wrapped and previewed with deterministic diagnostics |
 | 3 | Fixed-size standard-dialogue encoder | New translations build without dropped glyphs, macro collisions, or undeclared changes |
 | 4 | ILNK entry-point mapper and safe relocation | Mapped blocks can expand while all interior pointers remain valid |
-| 5 | Optional shared runtime renderer hook | Normal Latin, clean newlines, and explicit macros pass cold-boot tests across standard dialogue |
+| 5 | Optional shared runtime renderer hook | Proportional Latin, explicit macros, and zero-indent protected newlines pass cold-boot tests across standard dialogue |
 | 6 | Menu, HUD, packed-table, and graphics adapters | Each remaining renderer family has its own profile, tests, and coverage registry |
 
 ## Initial implementation slice

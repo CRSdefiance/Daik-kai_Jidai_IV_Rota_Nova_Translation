@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 from dk4tool.script.mesfile import export_mesfile_rows
@@ -64,9 +64,11 @@ def main() -> None:
     lines = [
         "# SC0.DK4 block map",
         "",
-        "This inventory separates the identified Raphael blocks from the remaining SC0 scene groups. "
-        "A block is an internal message group, not necessarily a complete story chapter. "
-        "Unmapped groups require emulator/playthrough correlation before assigning them to a character or route.",
+        (
+            "This inventory separates the identified Raphael blocks from the remaining SC0 scene groups. "
+            "A block is an internal message group, not necessarily a complete story chapter. "
+            "Unmapped groups require emulator/playthrough correlation before assigning them to a character or route."
+        ),
         "",
         f"- Total SC0 records: **{total}**",
         f"- Records covered by current SC0 translation batches: **{translated_total}**",

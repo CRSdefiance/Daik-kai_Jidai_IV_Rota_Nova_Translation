@@ -12,9 +12,11 @@ from dk4tool.dialogue.codec import (
     tokens_to_bytes,
     tokens_to_markup,
 )
+from dk4tool.dialogue.encoder import DialogueEncodingError, encode_fixed_dialogue
 from dk4tool.dialogue.layout import format_markup, lint_dialogue
 from dk4tool.dialogue.preview import render_dialogue_preview
 from dk4tool.dialogue.profiles import DialogueProfile, get_dialogue_profile
+from dk4tool.dialogue.qa import audit_fixed_dialogue_record
 from dk4tool.dialogue.report import inspect_ilnk_dialogue
 from dk4tool.formats.ilnk import IlnkContainer
 
@@ -52,9 +54,36 @@ def test_leading_linebreak_is_not_misclassified_as_a_speaker_slot():
     assert tokens_to_markup(tokenize_raw(b"\x0A\x0Aship")) == "{LB}{LB}ship"
 
 
+def test_route_profile_can_map_printable_leading_speaker_state():
+    assert tokens_to_markup(tokenize_raw(b"KHans")) == "KHans"
+    assert (
+        tokens_to_markup(
+            tokenize_raw(b"KHans", leading_speaker_bytes=frozenset({0x4B}))
+        )
+        == "{SPEAKER:4B}Hans"
+    )
+
+
+def test_raphael_profile_preserves_hans_leading_state():
+    result = encode_fixed_dialogue(
+        b"KHans speaks",
+        "{SPEAKER:4B}Hans speaks{PAD}",
+        get_dialogue_profile("raphael-story-live"),
+    )
+
+    assert result.encoded == b"KHans speaks"
+
+
 def test_guarded_aligned_linebreak_matches_native_compatibility_rule():
     tokens = parse_markup("A{LB@5}B{END}{PAD}")
     assert tokens_to_bytes(tokens, guard_linebreaks=True) == b"A   \x0A B\x00"
+
+
+def test_consecutive_linebreaks_use_one_guard_before_visible_text():
+    tokens = parse_markup("{LB}{LB}A ship{PAD}")
+    wide = DialogueProfile(name="wide", window_width_px=216, max_lines=4)
+    assert format_markup("{LB}{LB}A ship{PAD}", wide) == "{LB}{LB}A ship{PAD}"
+    assert tokens_to_bytes(tokens, guard_linebreaks=True) == b"\x0A\x0A A ship"
 
 
 def test_unknown_markup_is_rejected():
@@ -78,6 +107,94 @@ def test_linter_requires_explicit_macro_and_flags_literal_macro_bytes():
     codes = {issue.code for issue in issues}
     assert "missing-macro" in codes
     assert "unsafe-literal-macro" in codes
+
+
+def test_linter_rejects_an_added_runtime_command():
+    issues = lint_dialogue(b"hello", "hello{MACRO:FA}", narrow_profile())
+    assert "unexpected-macro" in {issue.code for issue in issues}
+
+
+def test_fixed_encoder_preserves_commands_and_exact_allocation():
+    source = b"\x05hello there       "
+    result = encode_fixed_dialogue(
+        source,
+        "{SPEAKER:05}hello{PAD}",
+        DialogueProfile(name="wide", window_width_px=216, max_lines=4),
+    )
+
+    assert result.encoded == b"\x05hello".ljust(len(source), b" ")
+    assert len(result.encoded) == len(source)
+    assert result.padding_bytes == len(source) - len(b"\x05hello")
+
+
+def test_fixed_encoder_requires_padding_and_rejects_unsafe_literal_macro():
+    profile = DialogueProfile(name="wide", window_width_px=216, max_lines=4)
+    with pytest.raises(DialogueEncodingError, match=r"include \{PAD\}"):
+        encode_fixed_dialogue(b"hello", "hello", profile)
+    with pytest.raises(DialogueEncodingError, match="unsafe-literal-macro"):
+        encode_fixed_dialogue(b"abcdef", "Fine{PAD}", profile)
+
+
+def test_fixed_encoder_wraps_with_guarded_linebreaks():
+    source = b"one two    "
+    result = encode_fixed_dialogue(source, "one two{PAD}", narrow_profile())
+    assert result.formatted_markup == "one{LB}two{PAD}"
+    assert result.encoded.startswith(b"one\x0A two")
+
+
+def test_guarded_continuation_line_reserves_sacrificial_space():
+    profile = DialogueProfile(
+        name="guarded",
+        window_width_px=24,
+        max_lines=4,
+        default_ascii_width=6,
+        guard_linebreaks=True,
+    )
+
+    # The first line can use four cells. A continuation line has only three
+    # visible cells because the encoded guard space consumes the first cell.
+    assert format_markup("aaaa bbbb", profile) == "aaaa{LB}bbb{LB}b"
+
+
+def test_revoked_story_clean_profile_documents_failed_bare_newline_probe():
+    profile = get_dialogue_profile("story-clean-revoked")
+    result = encode_fixed_dialogue(
+        b"one two" + b" " * 9,
+        "one{LB}two{PAD}",
+        profile,
+    )
+
+    assert result.encoded.startswith(b"one\x0Atwo")
+    assert b"\x0A " not in result.encoded
+
+
+def test_raphael_live_profile_guards_every_visible_continuation():
+    profile = get_dialogue_profile("raphael-story-live")
+    result = encode_fixed_dialogue(
+        b"one two three" + b" " * 12,
+        "one{LB}two{LB}three{PAD}",
+        profile,
+    )
+
+    assert result.encoded.startswith(b"one\x0A two\x0A three")
+    for index, byte in enumerate(result.encoded[:-1]):
+        if byte == 0x0A:
+            assert result.encoded[index + 1] == 0x20
+
+
+def test_raphael_live_profile_uses_default_route_macro_widths():
+    profile = get_dialogue_profile("raphael-story-live")
+
+    assert profile.macro_width("FI") == 7 * 6
+    assert profile.macro_width("FA") == 6 * 6
+    assert profile.macro_width("FO") == 10 * 6
+
+
+def test_fixed_encoder_rejects_padding_that_creates_blank_page():
+    profile = DialogueProfile(name="tiny", window_width_px=12, max_lines=2)
+    source = b"a\nb" + b" " * 7
+    with pytest.raises(DialogueEncodingError, match="padding-page-overflow"):
+        encode_fixed_dialogue(source, "a{LB}b{PAD}", profile)
 
 
 def test_linter_reports_pixel_and_byte_overflow():
@@ -131,6 +248,27 @@ def test_shared_profile_uses_live_calibrated_36_cell_width():
     assert profile.window_width_px == 216
     assert format_markup("a" * 36, profile) == "a" * 36
     assert format_markup("a" * 37, profile) == "a" * 36 + "{LB}a"
+
+
+def test_formatter_reflows_the_reported_janus_choice_without_manual_breaks():
+    text = "Will Julio show you the ropes, or will you prepare on your own?{PAD}"
+    formatted = format_markup(text, get_dialogue_profile("story"))
+
+    assert formatted == (
+        "Will Julio show you the ropes, or{LB}will you prepare on your own?{PAD}"
+    )
+
+
+def test_dialogue_qa_flags_author_supplied_breaks_and_orphans():
+    report = audit_fixed_dialogue_record(
+        b"A" * 64,
+        "A natural sentence.{LB}End.{PAD}",
+        get_dialogue_profile("story"),
+    )
+    codes = {issue["code"] for issue in report["issues"]}
+
+    assert "manual-break" in codes
+    assert "orphan-final-line" in codes
 
 
 def test_dialogue_cli_commands_are_registered(tmp_path: Path):

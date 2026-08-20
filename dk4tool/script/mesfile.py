@@ -4,6 +4,8 @@ import re
 from collections import Counter
 from dataclasses import dataclass
 
+from dk4tool.dialogue.encoder import encode_fixed_dialogue
+from dk4tool.dialogue.profiles import get_dialogue_profile
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.scan.sjis_scan import contains_japanese
 
@@ -194,7 +196,10 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         if original != expected:
             raise ValueError(f"{row.get('id')}: ILNK source bytes do not match")
         english = row["english"]
-        if "{SPEAKER:" in english or "{MACRO:" in english:
+        encoder = str(row.get("encoder", "legacy"))
+        if encoder not in {"legacy", "dialogue-fixed-v1"}:
+            raise ValueError(f"{row.get('id')}: unknown dialogue encoder {encoder!r}")
+        if encoder == "legacy" and ("{SPEAKER:" in english or "{MACRO:" in english):
             raise ValueError(
                 f"{row.get('id')}: Phase 2 dialogue markup is review-only until the "
                 "Phase 3 encoder is approved"
@@ -202,18 +207,30 @@ def rebuild_mesfile(data: bytes, rows: list[dict[str, str]]) -> bytes:
         replacement_hex = str(row.get("replacement_hex", ""))
         pad_to_length = english.endswith("{PAD}")
         allow_expand = row.get("allow_expand", "").lower() in {"1", "true", "yes"}
-        replacement = (
-            bytes.fromhex(replacement_hex)
-            if replacement_hex
-            else encode_mesfile_text(english)
-        )
+        if encoder == "dialogue-fixed-v1":
+            if replacement_hex:
+                raise ValueError(
+                    f"{row.get('id')}: dialogue-fixed-v1 cannot be combined with replacement_hex"
+                )
+            if allow_expand:
+                raise ValueError(
+                    f"{row.get('id')}: dialogue-fixed-v1 never relocates records"
+                )
+            profile = get_dialogue_profile(str(row.get("dialogue_profile", "story")))
+            replacement = encode_fixed_dialogue(original, english, profile).encoded
+        else:
+            replacement = (
+                bytes.fromhex(replacement_hex)
+                if replacement_hex
+                else encode_mesfile_text(english)
+            )
         # Leading spaces in these records are layout bytes consumed before the
         # first visible glyph. Preserve the original prefix automatically.
         source_indent = len(original) - len(original.lstrip(b" "))
         replacement_indent = len(replacement) - len(replacement.lstrip(b" "))
-        if not replacement_hex and replacement_indent < source_indent:
+        if encoder == "legacy" and not replacement_hex and replacement_indent < source_indent:
             replacement = b" " * (source_indent - replacement_indent) + replacement
-        if pad_to_length and not replacement_hex and not allow_expand:
+        if encoder == "legacy" and pad_to_length and not replacement_hex and not allow_expand:
             if len(replacement) > len(original):
                 raise ValueError(
                     f"{row.get('id')}: ILNK replacement is {len(replacement)} bytes; "

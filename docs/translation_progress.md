@@ -1,10 +1,24 @@
 # Translation progress
 
-Generated: 2026-08-03 11:30 US Eastern Daylight Time
+Generated: 2026-08-18 US Eastern Daylight Time
 
 This is a rough, record-based estimate. A translated record can be one short label or several dialogue lines, so the percentage is a navigation aid rather than a word-count claim.
 
 The detailed SC0 block inventory is in [`sc0_block_map.md`](sc0_block_map.md); it lists every internal block, record count, current coverage, and known route ownership.
+
+## 2026-08-20 accepted Raphael baseline
+
+- Raphael: all 331 currently identified records have source-first
+  `natural-dialogue-v2` coverage. Of these, 304 build-safe records, including the five
+  parity-preserving expanded opening records, are baked into
+  `out/raphael_natural_v2_accepted_base.nds`. The accepted baseline now also contains
+  the parity-preserving 106-record Lisbon expansion, fixed-offset centered tutorial
+  choices, and repaired shared crew-join template. The remaining 27 translated records
+  are explicitly quarantined for unmapped controls or allocation limits.
+- Lil: all 162 currently identified records now have source-first English drafts
+  (113 in SC1 and the 49-record SC2 block-22 opening). They remain non-buildable
+  pending Lil-specific leading-state, macro parity, portrait/name-preamble, and
+  relocation work. Draft coverage must not be confused with playable coverage.
 
 | File / container | What it contains | Translated records | Total records | Approx. complete |
 |---|---|---:|---:|---:|
@@ -41,7 +55,9 @@ The detailed SC0 block inventory is in [`sc0_block_map.md`](sc0_block_map.md); i
 ## Other tracked work
 
 - ARM9/UI dictionary: 685 audited text-bearing slots currently have English replacements. This covers the extracted ARM9 audit table, not every arbitrary byte sequence in the binary.
-- Route-specific coverage currently includes all identified Lil/Argot records (95) and 156 Hodram/Bergstrom records; the Hodram route is not complete.
+- Route-specific coverage currently includes 162 identified Lil drafts and 156
+  Hodram/Bergstrom records. Neither figure proves a complete route because event
+  containers and many scene blocks remain unmapped.
 - The percentages count records, not words. A long dialogue record has the same weight as a one-word label.
 - Redrawn graphics are tracked by the resource lists in `scripts/build_graphics_translation.py`; graphical text is not included in the table above.
 - An in-game save can retain old names and labels. Coverage is measured against the clean ROM and translation sources, not save-state contents.

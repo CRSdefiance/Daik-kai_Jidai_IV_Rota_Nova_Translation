@@ -3,21 +3,38 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import struct
 from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
+from dk4tool.dialogue.profiles import get_dialogue_profile
+from dk4tool.dialogue.qa import (
+    audit_fixed_dialogue_record,
+    audit_relocatable_dialogue_record,
+)
+from dk4tool.dialogue.relocation import (
+    load_relocation_map,
+    rebuild_mapped_cs_dialogue,
+)
+from dk4tool.dialogue.review import validate_natural_dialogue_batch
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
 from dk4tool.script.mesfile import rebuild_mesfile
-from dk4tool.script.translation_batch import read_translation_batch
-
+from dk4tool.script.translation_batch import (
+    materialize_translation_batch,
+    read_translation_batch,
+)
 
 CANONICAL_BASELINE_SHA256 = (
-    "8e61fd4e8c444b25566cc273dd676b3e5bea5d683ad167db2f92444c10df9764"
+    "fb750eac00d3c91cf0cc00e5ee578ba8d2d6eebd7791338c61003d003e5b09d3"
 )
 REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Opts", b"Grand Race", b"Extras", b"Gallery")
 FORBIDDEN_PLACEHOLDERS = (b"see below",)
+RELEASE_STACK_PATH = Path("translations/release_stack.json")
+ARM9_LOAD_ADDRESS = 0x02000000
+PROHIBITED_RUNTIME_DATA_START = 0x02171E48
+PROHIBITED_RUNTIME_DATA_END = 0x02172464
 
 
 def sha256(data: bytes) -> str:
@@ -34,7 +51,185 @@ def load_batch_header(path: Path) -> dict[str, object]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, dict):
         raise TypeError(f"{path}: translation batch root must be an object")
+    validate_natural_dialogue_batch(value)
     return value
+
+
+def validate_playable_dialogue_header(path: Path, header: dict[str, object]) -> None:
+    """Reject research-only newline profiles from playable story builds."""
+
+    if header.get("encoder") not in {
+        "dialogue-fixed-v1",
+        "dialogue-relocatable-v1",
+    }:
+        return
+    file_path = str(header.get("file_path", ""))
+    if file_path not in {f"/data/SC{index}.DK4" for index in range(4)}:
+        return
+    profile_name = str(header.get("dialogue_profile", ""))
+    profile = get_dialogue_profile(profile_name)
+    if profile_name.endswith("-revoked") or not profile.guard_linebreaks:
+        raise ValueError(
+            f"{path}: playable progressive-story dialogue requires a live-safe "
+            "guarded profile; research profile is forbidden"
+        )
+
+
+def validate_natural_dialogue_qa(
+    path: Path, header: dict[str, object], source: bytes
+) -> None:
+    """Fail a playable build on every unwaived dialogue QA warning or error.
+
+    This deliberately runs inside the release builder. A standalone audit is
+    useful to translators, but it cannot protect a ROM when somebody forgets
+    to run it before building.
+    """
+
+    if header.get("translation_policy") not in {
+        "natural-dialogue-v1",
+        "natural-dialogue-v2",
+    }:
+        return
+    profile = get_dialogue_profile(str(header.get("dialogue_profile", "")))
+    authored = {
+        str(record.get("id", "")): record
+        for record in header.get("records", [])
+        if isinstance(record, dict)
+    }
+    failures: list[str] = []
+    for row in materialize_translation_batch(header, source):
+        row_id = str(row["id"])
+        record = authored[row_id]
+        waivers = (
+            {str(value) for value in record.get("qa_waivers", [])}
+            if isinstance(record.get("qa_waivers", []), list)
+            else set()
+        )
+        if waivers and not str(
+            record.get("qa_waiver_reason", record.get("localization_note", ""))
+        ).strip():
+            failures.append(f"{row_id}:error:undocumented-qa-waiver")
+        audit_function = (
+            audit_relocatable_dialogue_record
+            if header.get("encoder") == "dialogue-relocatable-v1"
+            else audit_fixed_dialogue_record
+        )
+        audit = audit_function(
+            bytes.fromhex(str(row["source_hex"])),
+            str(row["english"]),
+            profile,
+        )
+        for issue in audit["issues"]:
+            severity = str(issue["severity"])
+            code = str(issue["code"])
+            if severity == "error" or (severity == "warning" and code not in waivers):
+                failures.append(f"{row_id}:{severity}:{code}")
+    if failures:
+        raise ValueError(
+            f"{path}: natural-dialogue QA failed: " + ", ".join(failures)
+        )
+
+
+def load_release_stack(path: Path = RELEASE_STACK_PATH) -> dict[str, object]:
+    stack = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(stack, dict) or stack.get("format") != "dk4-release-stack-v1":
+        raise ValueError(f"{path}: unsupported release-stack format")
+    baseline = stack.get("canonical_baseline")
+    if not isinstance(baseline, dict):
+        raise ValueError(f"{path}: missing canonical_baseline")
+    if str(baseline.get("sha256", "")).lower() != CANONICAL_BASELINE_SHA256:
+        raise ValueError(f"{path}: canonical baseline hash disagrees with builder")
+    accepted = stack.get("accepted_layers")
+    profiles = stack.get("profiles")
+    if not isinstance(accepted, list) or not isinstance(profiles, dict):
+        raise ValueError(f"{path}: invalid accepted_layers or profiles")
+    for layer in accepted:
+        if (
+            not isinstance(layer, dict)
+            or layer.get("status") != "accepted"
+            or not isinstance(layer.get("batch"), str)
+            or not isinstance(layer.get("baked_into_baseline", False), bool)
+        ):
+            raise ValueError(f"{path}: invalid accepted layer")
+    for name, value in profiles.items():
+        if (
+            not isinstance(name, str)
+            or not isinstance(value, dict)
+            or not isinstance(value.get("batches"), list)
+            or not all(isinstance(item, str) for item in value["batches"])
+        ):
+            raise ValueError(f"{path}: invalid profile {name!r}")
+    return stack
+
+
+def accepted_batch_paths(stack: dict[str, object]) -> list[Path]:
+    layers = stack["accepted_layers"]
+    assert isinstance(layers, list)
+    return [
+        Path(str(layer["batch"]))
+        for layer in layers
+        if layer.get("baked_into_baseline") is not True
+    ]
+
+
+def profile_batch_paths(stack: dict[str, object], profile: str) -> list[Path]:
+    profiles = stack["profiles"]
+    assert isinstance(profiles, dict)
+    value = profiles.get(profile)
+    if not isinstance(value, dict):
+        raise ValueError(f"unknown release profile: {profile}")
+    if value.get("status") == "revoked":
+        raise ValueError(f"release profile is revoked and cannot be built: {profile}")
+    if value.get("status") != "experimental":
+        raise ValueError(
+            f"release profile is not buildable in status "
+            f"{value.get('status')!r}: {profile}"
+        )
+    batches = value["batches"]
+    assert isinstance(batches, list)
+    return [Path(str(path)) for path in batches]
+
+
+def resolve_release_batches(
+    profile: str | None, requested: list[Path], stack: dict[str, object] | None = None
+) -> list[Path]:
+    """Return the complete ordered layer set for a playable release.
+
+    Accepted layers are never optional. Named profiles add all mutually dependent
+    batches for a feature, preventing a partial command from silently reverting UI.
+    """
+    stack = stack or load_release_stack()
+    profiles = stack["profiles"]
+    assert isinstance(profiles, dict)
+    registered_owners: dict[str, set[str]] = defaultdict(set)
+    for profile_name, value in profiles.items():
+        assert isinstance(profile_name, str) and isinstance(value, dict)
+        for path in value["batches"]:
+            registered_owners[Path(str(path)).as_posix().casefold()].add(profile_name)
+    for path in requested:
+        owners = registered_owners.get(path.as_posix().casefold(), set())
+        if not owners:
+            raise ValueError(
+                f"{path} is not registered in a release profile; add the complete "
+                "feature layer to translations/release_stack.json first"
+            )
+        if profile not in owners:
+            raise ValueError(
+                f"{path} belongs to registered profile(s) {sorted(owners)}; "
+                "select the matching --profile instead of applying it manually"
+            )
+    paths = accepted_batch_paths(stack)
+    if profile is not None:
+        paths.extend(profile_batch_paths(stack, profile))
+    paths.extend(requested)
+    unique: list[Path] = []
+    seen: set[str] = set()
+    for path in paths:
+        key = path.as_posix().casefold()
+        if key not in seen:
+            seen.add(key)
+            unique.append(path)
+    return unique
 
 
 def apply_arm9_fixed_batches(
@@ -54,6 +249,7 @@ def apply_arm9_fixed_batches(
         batch = load_batch_header(batch_path)
         if batch.get("format") != "dk4-arm9-fixed-text-batch-v1":
             raise ValueError(f"{batch_path}: unsupported ARM9 batch format")
+        inline_code = batch.get("content_type") == "arm9-inline-code-v1"
         expected_hash = str(batch.get("source_file_sha256", "")).lower()
         if expected_hash != actual_hash:
             raise ValueError(
@@ -76,6 +272,27 @@ def apply_arm9_fixed_batches(
             if any(position in claimed for position in range(offset, offset + len(expected))):
                 raise ValueError(f"{batch_path}: {row_id} overlaps another ARM9 record")
             replacement_hex = str(record.get("replacement_hex", ""))
+            if inline_code:
+                runtime_address = int(record.get("runtime_address", -1))
+                expected_runtime_address = ARM9_LOAD_ADDRESS + offset
+                if runtime_address != expected_runtime_address:
+                    raise ValueError(
+                        f"{batch_path}: {row_id} runtime address does not match "
+                        f"component offset (expected {expected_runtime_address:#010x})"
+                    )
+                runtime_end = runtime_address + len(expected)
+                if (
+                    runtime_address < PROHIBITED_RUNTIME_DATA_END
+                    and runtime_end > PROHIBITED_RUNTIME_DATA_START
+                ):
+                    raise ValueError(
+                        f"{batch_path}: {row_id} overlaps the prohibited runtime-owned "
+                        "ARM9 data tail"
+                    )
+                if not replacement_hex:
+                    raise ValueError(
+                        f"{batch_path}: {row_id} inline code requires replacement_hex"
+                    )
             if replacement_hex:
                 replacement = bytes.fromhex(replacement_hex)
                 if len(replacement) != len(expected):
@@ -103,14 +320,22 @@ def apply_arm9_fixed_batch(batch_path: Path, source: bytes) -> tuple[bytes, list
 
 
 def changed_segments(before: bytes, after: bytes) -> set[tuple[int, int]]:
+    def logical_segments(block: bytes, block_index: int) -> list[bytes]:
+        if block[:4] != b"CS\0\x01":
+            return block.split(b"\0")
+        logical_end = 8 + struct.unpack_from("<H", block, 4)[0]
+        if logical_end > len(block) or any(block[logical_end:]):
+            raise ValueError(f"invalid CS length in block {block_index}")
+        return block[:logical_end].split(b"\0")
+
     old = IlnkContainer.parse(before)
     new = IlnkContainer.parse(after)
     if len(old.blocks) != len(new.blocks):
         raise ValueError("ILNK block count changed")
     changed: set[tuple[int, int]] = set()
     for block_index, (old_block, new_block) in enumerate(zip(old.blocks, new.blocks, strict=True)):
-        old_segments = old_block.split(b"\0")
-        new_segments = new_block.split(b"\0")
+        old_segments = logical_segments(old_block, block_index)
+        new_segments = logical_segments(new_block, block_index)
         if len(old_segments) != len(new_segments):
             raise ValueError(f"ILNK segment count changed in block {block_index}")
         changed.update(
@@ -121,6 +346,30 @@ def changed_segments(before: bytes, after: bytes) -> set[tuple[int, int]]:
             if old_segment != new_segment
         )
     return changed
+
+
+def validate_unchanged_segments(
+    file_path: str,
+    expected: set[tuple[int, int]],
+    actual: set[tuple[int, int]],
+    declared: set[tuple[int, int]],
+) -> set[tuple[int, int]]:
+    """Allow audited no-op records only when their exact segments are declared."""
+
+    unchanged = expected - actual
+    undeclared = unchanged - declared
+    if undeclared:
+        raise ValueError(
+            f"{file_path}: requested records did not change without an explicit "
+            f"declaration: {sorted(undeclared)}"
+        )
+    declared_but_changed = declared - unchanged
+    if declared_but_changed:
+        raise ValueError(
+            f"{file_path}: records declared unchanged actually changed: "
+            f"{sorted(declared_but_changed)}"
+        )
+    return unchanged
 
 
 def parse_pointer_group(row: dict[str, object]) -> tuple[int, int]:
@@ -148,10 +397,19 @@ def verify_golden_content(baseline: NdsImage, candidate: NdsImage) -> None:
 
 
 def main() -> None:
+    try:
+        release_stack = load_release_stack()
+    except (OSError, TypeError, ValueError, json.JSONDecodeError) as error:
+        raise SystemExit(f"invalid release stack: {error}") from None
+    profiles = release_stack["profiles"]
+    assert isinstance(profiles, dict)
     parser = argparse.ArgumentParser(
         description="Build a translation release only from the immutable accepted baseline."
     )
-    parser.add_argument("--base", type=Path, default=Path("out/all_goods_roundtrip.nds"))
+    parser.add_argument(
+        "--base", type=Path, default=Path("out/raphael_natural_v2_accepted_base.nds")
+    )
+    parser.add_argument("--profile", choices=sorted(profiles))
     parser.add_argument("--batch", action="append", type=Path, default=[])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--manifest", type=Path)
@@ -167,29 +425,171 @@ def main() -> None:
     if args.out.resolve() == args.base.resolve():
         raise SystemExit("refusing to overwrite the canonical baseline")
 
+    try:
+        release_batches = resolve_release_batches(args.profile, args.batch, release_stack)
+    except ValueError as error:
+        raise SystemExit(str(error)) from None
+
     baseline = NdsImage.open(args.base)
     candidate = NdsImage.open(args.base)
     grouped: dict[str, list[Path]] = defaultdict(list)
-    for batch_path in args.batch:
+    for batch_path in release_batches:
         header = load_batch_header(batch_path)
+        try:
+            validate_playable_dialogue_header(batch_path, header)
+        except ValueError as error:
+            raise SystemExit(str(error)) from None
         file_path = str(header.get("file_path", ""))
         if not file_path.startswith("/"):
             raise SystemExit(f"{batch_path}: invalid internal file path")
         grouped[file_path].append(batch_path)
 
     changed_records: dict[str, list[str]] = {}
-    for file_path, batch_paths in grouped.items():
+    relocation_checks: dict[str, object] = {}
+    for file_path, file_batch_paths in grouped.items():
         source = candidate.read_file(file_path)
         if file_path == "/__arm9__.bin":
-            rebuilt, record_ids = apply_arm9_fixed_batches(batch_paths, source)
+            rebuilt, record_ids = apply_arm9_fixed_batches(file_batch_paths, source)
             if rebuilt == source:
                 raise SystemExit("ARM9 fixed-text batch made no changes")
             candidate.replace_file(file_path, rebuilt)
             changed_records[file_path] = record_ids
             continue
+        relocation_paths = [
+            batch_path
+            for batch_path in file_batch_paths
+            if load_batch_header(batch_path).get("encoder")
+            == "dialogue-relocatable-v1"
+        ]
+        if relocation_paths:
+            if len(relocation_paths) != 1:
+                raise SystemExit(
+                    f"{file_path}: exactly one relocation batch may target a file"
+                )
+            batch_path = relocation_paths[0]
+            header = load_batch_header(batch_path)
+            try:
+                validate_natural_dialogue_qa(batch_path, header, source)
+                map_path_value = str(header.get("relocation_map", ""))
+                if not map_path_value:
+                    raise ValueError("relocatable dialogue requires relocation_map")
+                map_path = Path(map_path_value)
+                relocation_map = load_relocation_map(map_path)
+                rows = read_translation_batch(batch_path, source)
+                profile = get_dialogue_profile(
+                    str(header.get("dialogue_profile", ""))
+                )
+                result = rebuild_mapped_cs_dialogue(
+                    source, rows, profile, relocation_map
+                )
+            except ValueError as error:
+                raise SystemExit(f"{batch_path}: {error}") from None
+
+            relocated_segments = {parse_pointer_group(row) for row in rows}
+            fixed_rows: list[dict[str, object]] = []
+            fixed_ids: set[str] = set()
+            for fixed_path in file_batch_paths:
+                if fixed_path == batch_path:
+                    continue
+                fixed_header = load_batch_header(fixed_path)
+                if fixed_header.get("encoder") != "dialogue-fixed-v1":
+                    raise SystemExit(
+                        f"{file_path}: relocation may be combined only with "
+                        "dialogue-fixed-v1 batches"
+                    )
+                try:
+                    validate_natural_dialogue_qa(fixed_path, fixed_header, source)
+                except ValueError as error:
+                    raise SystemExit(str(error)) from None
+                for row in read_translation_batch(fixed_path, source):
+                    row_id = str(row["id"])
+                    if row_id in fixed_ids:
+                        raise SystemExit(
+                            f"{file_path}: duplicate fixed record across hybrid batches: "
+                            f"{row_id}"
+                        )
+                    fixed_ids.add(row_id)
+                    if parse_pointer_group(row) in relocated_segments:
+                        if header.get("override_fixed_records") is not True:
+                            raise SystemExit(
+                                f"{batch_path}: overlapping fixed record requires "
+                                "override_fixed_records"
+                            )
+                        continue
+                    fixed_rows.append(row)
+
+            rebuilt = (
+                rebuild_mesfile(result.rebuilt_file, fixed_rows)
+                if fixed_rows
+                else result.rebuilt_file
+            )
+            actual_segments = changed_segments(source, rebuilt)
+            expected_segments = relocated_segments | {
+                parse_pointer_group(row) for row in fixed_rows
+            }
+            block_index = int(relocation_map["block_index"])
+            unexpected = actual_segments - expected_segments - {(block_index, 1)}
+            if unexpected:
+                raise SystemExit(
+                    f"{file_path}: hybrid relocation changed undeclared segments: "
+                    f"{sorted(unexpected)}"
+                )
+            segment_to_id = {
+                parse_pointer_group(row): str(row["id"])
+                for row in [*fixed_rows, *rows]
+            }
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = [
+                segment_to_id[segment]
+                for segment in sorted(actual_segments - {(block_index, 1)})
+                if segment in segment_to_id
+            ]
+            final_block = IlnkContainer.parse(rebuilt).blocks[block_index]
+            relocation_checks[file_path] = {
+                "map": map_path.as_posix(),
+                "map_sha256": sha256(map_path.read_bytes()),
+                "block_index": block_index,
+                "source_block_sha256": sha256(result.old_block),
+                "rebuilt_block_sha256": sha256(final_block),
+                "changed_segments": list(result.changed_segments),
+                "parity_padded_segments": list(result.parity_padded_segments),
+                "block_size_delta": result.size_delta,
+                "external_references_complete": True,
+                "hybrid_fixed_record_count": len(fixed_rows),
+                "relocation_overrides_fixed_records": sorted(
+                    str(row["id"])
+                    for row in rows
+                    if str(row["id"]) in fixed_ids
+                ),
+            }
+            continue
         rows: list[dict[str, object]] = []
-        for batch_path in batch_paths:
-            rows.extend(read_translation_batch(batch_path, source))
+        declared_unchanged_ids: set[str] = set()
+        for batch_path in file_batch_paths:
+            header = load_batch_header(batch_path)
+            try:
+                validate_natural_dialogue_qa(batch_path, header, source)
+            except ValueError as error:
+                raise SystemExit(str(error)) from None
+            batch_rows = read_translation_batch(batch_path, source)
+            batch_ids = {str(row["id"]) for row in batch_rows}
+            unchanged_ids = {
+                str(value) for value in header.get("unchanged_records", [])
+            }
+            if unchanged_ids and not str(
+                header.get("unchanged_record_reason", "")
+            ).strip():
+                raise SystemExit(
+                    f"{batch_path}: unchanged_records requires unchanged_record_reason"
+                )
+            unknown_unchanged = unchanged_ids - batch_ids
+            if unknown_unchanged:
+                raise SystemExit(
+                    f"{batch_path}: unchanged_records contains IDs outside the batch: "
+                    f"{sorted(unknown_unchanged)}"
+                )
+            declared_unchanged_ids.update(unchanged_ids)
+            rows.extend(batch_rows)
         if file_path == "/data/SC2.DK4" and any(
             parse_pointer_group(row)[0] == 22 for row in rows
         ):
@@ -202,6 +602,12 @@ def main() -> None:
             raise SystemExit(f"{file_path}: duplicate record appears across translation batches")
 
         expected_segments = {parse_pointer_group(row) for row in rows}
+        segment_by_id = {
+            str(row["id"]): parse_pointer_group(row) for row in rows
+        }
+        declared_unchanged = {
+            segment_by_id[row_id] for row_id in declared_unchanged_ids
+        }
         rebuilt = rebuild_mesfile(source, rows)
         actual_segments = changed_segments(source, rebuilt)
         unexpected = actual_segments - expected_segments
@@ -209,13 +615,18 @@ def main() -> None:
             raise SystemExit(
                 f"{file_path}: unrequested ILNK segments changed: {sorted(unexpected)}"
             )
-        unchanged_requested = expected_segments - actual_segments
-        if unchanged_requested:
-            raise SystemExit(
-                f"{file_path}: requested records did not change: {sorted(unchanged_requested)}"
+        try:
+            validate_unchanged_segments(
+                file_path, expected_segments, actual_segments, declared_unchanged
             )
+        except ValueError as error:
+            raise SystemExit(str(error)) from None
         candidate.replace_file(file_path, rebuilt)
-        changed_records[file_path] = record_ids
+        changed_records[file_path] = [
+            row_id
+            for row_id in record_ids
+            if segment_by_id[row_id] in actual_segments
+        ]
 
     verify_golden_content(baseline, candidate)
     before_files = rom_files(baseline)
@@ -248,16 +659,28 @@ def main() -> None:
         "candidate_sha256": sha256(args.out.read_bytes()),
         "changed_paths": changed_paths,
         "changed_records": changed_records,
-        "batches": [str(path) for path in args.batch],
+        "profile": args.profile,
+        "release_stack": str(RELEASE_STACK_PATH),
+        "release_stack_sha256": sha256(RELEASE_STACK_PATH.read_bytes()),
+        "required_batches": [
+            str(path) for path in accepted_batch_paths(release_stack)
+        ],
+        "batches": [str(path) for path in release_batches],
         "checks": {
             "canonical_base": True,
+            "release_stack_enforced": True,
             "undeclared_files_unchanged": True,
             "untouched_ilnk_segments_unchanged": True,
             "main_menu_anchors_present": True,
             "unmapped_story_control_records_rejected": True,
+            "natural_dialogue_qa_enforced": True,
             "no_new_placeholder_fallbacks": True,
             "saved_rom_roundtrip": True,
+            "mapped_ilnk_relocation_enforced": bool(relocation_checks)
+            if relocation_checks
+            else True,
         },
+        "relocations": relocation_checks,
     }
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

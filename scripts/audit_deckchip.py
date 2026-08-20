@@ -18,16 +18,20 @@ def audit(path: Path) -> str:
         "",
         "## Classification",
         "",
-        "`/data/DECKCHIP.DK4` is an ILNK-wrapped binary deck/ship-chip asset. "
-        "It is not a normal dialogue or label string table.",
+        (
+            "`/data/DECKCHIP.DK4` is an ILNK-wrapped binary deck/ship-chip asset. "
+            "It is not a normal dialogue or label string table."
+        ),
         "",
         "## Evidence",
         "",
         f"- Container blocks: {len(container.blocks)}",
         "- Blocks are 456-736 bytes long and contain 11-17 variable-length binary fragments.",
         "- Those fragments do not decode as stand-alone Shift-JIS text records and do not have a shared text layout.",
-        "- Decoding arbitrary asset bytes as CP932 produces accidental Japanese glyphs, which is why "
-        "the generic MESFILE scanner reported 29 false-positive records.",
+        (
+            "- Decoding arbitrary asset bytes as CP932 produces accidental Japanese glyphs, which is why "
+            "the generic MESFILE scanner reported 29 false-positive records."
+        ),
         "",
         "| Block | Bytes | Binary fragments | Classification |",
         "|---:|---:|---:|---|",

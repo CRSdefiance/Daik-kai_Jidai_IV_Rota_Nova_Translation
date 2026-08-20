@@ -1,0 +1,38 @@
+{
+  "format": "dk4-cs-relocation-map-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "2daae625c81572e02b62b91f11ad1a6138eff05bceb66dd74231be9d0fb74c21",
+  "block_index": 44,
+  "source_block_sha256": "81e92294f7c6f9dcca659a1da0ebad1f3b0b813f93d6ccb85b08798eec43c7e8",
+  "source_block_offset": 30944,
+  "source_block_size": 6504,
+  "source_cs_body_size": 6494,
+  "cs_header": {
+    "magic_hex": "43530001",
+    "body_size_offset": 4,
+    "body_size_width": 2,
+    "body_size_endian": "little",
+    "body_start": 8,
+    "alignment": 4
+  },
+  "movable_segments": [13, 17, 21, 25, 29],
+  "required_segments": [13, 17, 21, 25, 29],
+  "external_references_complete": false,
+  "proof_scope": "canonical SC0 block 44 and the five-record opening proof only",
+  "proof_basis": [
+    "The CS v1 header owns the exact logical body length at bytes 4-5; bytes after logical_end are zero alignment padding.",
+    "The only aligned persistent 32-bit occurrence of block offset 0x000078E0 is the SC0 ILNK header entry at file offset 0xB8.",
+    "The ARM9 byte occurrence at component offset 0xCC577 is unaligned and crosses two decoded ARM instructions; it is not a data reference.",
+    "The established DeSmuME savestate contains one exact block prefix at 0x0218F2B0. Aligned live pointers target body offset 8 and dynamically selected script/string positions, rather than persistent file offsets.",
+    "Every non-target CS segment and every other ILNK block is required to remain byte-identical; only the CS length field, the five mapped strings, alignment padding, and mechanically shifted outer ILNK offsets may differ."
+  ],
+  "runtime_fixture": {
+    "state": "dialogue_live_save_v3.dst",
+    "block_base": "0x0218F2B0",
+    "body_pointer": "0x0218F2B8",
+    "observed_current_string_offset": 138,
+    "analysis_report": "work/analysis/sc0_b44_reference_analysis.json"
+  },
+  "status": "revoked-runtime-control-flow-failure",
+  "revoked_reason": "Cold-boot testing rendered the first expanded record, then advanced directly to town instead of the next scripted dialogue. Block 44 contains at least one unresolved interior VM continuation or event reference; NUL-segment preservation and outer ILNK offset repair are insufficient."
+}

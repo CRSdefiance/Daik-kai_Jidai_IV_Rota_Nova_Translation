@@ -13,6 +13,10 @@ Playable test ROMs must be built from the accepted integration baseline with
 stage ROMs are research probes, not playable candidates. See
 [docs/release_build.md](docs/release_build.md) for the mandatory source-hash,
 record-preservation, manifest, and promotion checks.
+Every model must also follow the cumulative-layer procedure in
+[docs/build_continuity_protocol.md](docs/build_continuity_protocol.md). The accepted
+and experimental layer registry is `translations/release_stack.json`; do not assemble
+playable releases from remembered batch lists.
 
 ## Standard-dialogue diagnostics
 

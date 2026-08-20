@@ -58,7 +58,12 @@ def render_dialogue_preview(
     for token in tokens:
         if token.kind == "line_break":
             line += 1
-            x = margin * scale
+            # Match the current native workaround: a sacrificial ASCII space
+            # protects the first real glyph after 0A, but advances the cursor.
+            # Showing that cell in previews prevents contributors from mistaking
+            # the engine indent for an authored space.
+            guard = profile.glyph_width(" ") if profile.guard_linebreaks else 0
+            x = (margin + guard) * scale
             y = (8 + line * profile.line_height_px) * scale
             continue
         if token.kind == "text":

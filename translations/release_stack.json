@@ -1,0 +1,149 @@
+{
+  "format": "dk4-release-stack-v1",
+  "canonical_baseline": {
+    "path": "out/raphael_natural_v2_accepted_base.nds",
+    "sha256": "fb750eac00d3c91cf0cc00e5ee578ba8d2d6eebd7791338c61003d003e5b09d3",
+    "accepted_on": "2026-08-20",
+    "previous_baseline": {
+      "path": "out/raphael_natural_v2_pre_lisbon_accepted_rollback.nds",
+      "sha256": "fe7cdcaf7cfa24f18c1c48608ddddf58dc9a7555cb93c8131163037e814c8586"
+    }
+  },
+  "accepted_layers": [
+    {
+      "name": "options-ui",
+      "batch": "translations/options_arm9.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Accepted menu and Options/Sound Setup captions; baked into the canonical baseline."
+    },
+    {
+      "name": "dialogue-pair-phase-renderer",
+      "batch": "translations/dialogue_pair_phase_arm9.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Cold-boot-accepted cave-free pair-phase repair; baked into the canonical baseline."
+    },
+    {
+      "name": "raphael-parity-opening",
+      "batch": "translations/raphael_b44_long_dialogue_parity_poc.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Five natural expanded opening records with runtime-proven CS record parity preservation."
+    },
+    {
+      "name": "raphael-v2-b43-b44",
+      "batch": "translations/raphael_natural_v2_b43_b44.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Reviewed build-safe Raphael blocks 43-44, baked into the accepted baseline."
+    },
+    {
+      "name": "raphael-v2-b45-b48",
+      "batch": "translations/raphael_natural_v2_b45_b48.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Reviewed build-safe Raphael blocks 45-48, baked into the accepted baseline."
+    },
+    {
+      "name": "raphael-v2-b137-b141",
+      "batch": "translations/raphael_natural_v2_b137_b141.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Reviewed build-safe Raphael blocks 137-141, baked into the accepted baseline."
+    },
+    {
+      "name": "raphael-intro-lisbon-relocation",
+      "batch": "translations/raphael_intro_lisbon_natural_relocatable_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Cold-boot-approved parity-preserving natural dialogue expansion through the Lisbon handoff."
+    },
+    {
+      "name": "raphael-intro-lisbon-fixed-choices",
+      "batch": "translations/raphael_intro_lisbon_choice_fixed_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Accepted exact-allocation tutorial choices: Ask him. (8 bytes) and Prepare alone. (14 bytes), with no invisible alignment padding."
+    },
+    {
+      "name": "shared-crew-join-pair-phase-repair",
+      "batch": "translations/common_crew_join_pair_phase_repair.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Accepted fixed-allocation shared crew-join template that avoids dropping the first glyph of joined."
+    }
+  ],
+  "profiles": {
+    "sound-setup": {
+      "status": "rebase-required",
+      "batches": [
+        "translations/sound_selector_arm9.json",
+        "translations/sound_bgm_titles.json"
+      ],
+      "note": "Unresolved user-reported bugs remain in v5, and its ARM9 source lock predates the accepted Raphael baseline. Rebase before another build."
+    },
+    "natural-dialogue-probe": {
+      "status": "superseded",
+      "batches": [
+        "translations/raphael_natural_dialogue_probe.json",
+        "translations/raphael_pre_tutorial_natural.json",
+        "translations/raphael_tutorial_choice_v2.json"
+      ],
+      "note": "A source-reviewed, naturally edited Raphael opening through the tutorial choice, using dialogue-fixed-v1 and the live-tested raphael-story-live profile without changing record sizes or ILNK offsets. Cold-boot testing disproved the bare-0A experiment: protected 0A 20 breaks are mandatory in this progressive renderer. Route-aware FI/FA/FO widths prevent the generic macro estimate from forcing premature wraps. The failed descender-font experiment is deliberately excluded."
+    },
+    "raphael-b44-long-dialogue-poc": {
+      "status": "revoked",
+      "batches": [
+        "translations/dialogue_pair_phase_arm9.json",
+        "translations/raphael_b44_long_dialogue_poc.json"
+      ],
+      "note": "REVOKED: cold-boot testing rendered the first expanded record, then skipped the remaining scene and entered town. The relocation map is deliberately marked incomplete so the builder hard-fails. Block 44 has unresolved interior VM continuation/event references; outer ILNK offsets and NUL-segment preservation are not sufficient."
+    },
+    "raphael-b44-parity-relocation-probe": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/dialogue_pair_phase_arm9.json",
+        "translations/raphael_b44_long_dialogue_parity_poc.json"
+      ],
+      "note": "Second five-record relocation probe. Runtime comparison proved that changing record parity moved the following 00 40 FF FF command prefix off the CS VM's expected 16-bit phase. This profile preserves every source record's odd/even byte length and remains experimental until cold-boot progression is confirmed."
+    },
+    "raphael-full-natural-v2-parity-opening": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/dialogue_pair_phase_arm9.json",
+        "translations/raphael_b44_long_dialogue_parity_poc.json",
+        "translations/raphael_natural_v2_b43_b44.json",
+        "translations/raphael_natural_v2_b45_b48.json",
+        "translations/raphael_natural_v2_b137_b141.json"
+      ],
+      "note": "Full reviewed Raphael v2 route plus the cold-boot-passed parity-preserving five-record opening expansion. The relocation batch explicitly overrides the same five compressed fixed records; all remaining build-safe route records retain exact allocation and pair-phase formatting. Still experimental pending a new cold-boot route test."
+    },
+    "raphael-full-natural-v2": {
+      "status": "superseded",
+      "batches": [
+        "translations/dialogue_pair_phase_arm9.json",
+        "translations/raphael_natural_v2_b43_b44.json",
+        "translations/raphael_natural_v2_b45_b48.json",
+        "translations/raphael_natural_v2_b137_b141.json"
+      ],
+      "note": "All 331 currently identified Raphael records are accounted for by source-first natural-dialogue-v2 work. Only records with mapped control state and fixed-size audit clearance enter the ROM; explicit blocked drafts remain non-buildable metadata. The profile includes the user's cold-boot-passed cave-free zero-cursor ARM9 rewrite, pair-phase-aware protected-break encoding, and a fail-closed check against exact-width first rows that would double-advance. It remains experimental until a new cold-boot route test passes."
+    },
+    "raphael-intro-lisbon-natural-relocation": {
+      "status": "revoked",
+      "batches": [
+        "translations/raphael_intro_lisbon_natural_relocatable_v1.json"
+      ],
+      "note": "REVOKED after cold-boot failure: expanding the two choice slots moved the second option into the first string and displaced the guided-tutorial branch entry, producing two blank prompts. The generated batch has since been narrowed and must be used only through the replacement choicefix profile."
+    },
+    "raphael-intro-lisbon-choicefix": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/raphael_intro_lisbon_natural_relocatable_v1.json",
+        "translations/raphael_intro_lisbon_choice_fixed_v1.json",
+        "translations/common_crew_join_pair_phase_repair.json"
+      ],
+      "note": "Accepted and baked into the 2026-08-20 canonical baseline after explicit user approval. Relocates 106 prose records, preserves the choice parser's proven 8-byte and 14-byte slots with centered wording, and removes the stored newline that dropped the first glyph in the shared crew-join notice."
+    }
+  }
+}

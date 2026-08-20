@@ -156,3 +156,34 @@ def test_mesfile_rebuilder_rejects_phase2_review_markup():
         assert "Phase 2 dialogue markup is review-only" in str(error)
     else:
         raise AssertionError("expected Phase 2 markup rejection")
+
+
+def test_mesfile_rebuilder_uses_opt_in_fixed_dialogue_encoder():
+    original = b"\x05hello there       "
+    data = IlnkContainer([original]).to_bytes()
+    rows = export_mesfile_rows(data, "/data/SC0.DK4", include_non_japanese=True)
+    rows[0]["english"] = "{SPEAKER:05}hello{PAD}"
+    rows[0]["encoder"] = "dialogue-fixed-v1"
+    rows[0]["dialogue_profile"] = "story"
+
+    rebuilt = rebuild_mesfile(data, rows)
+
+    assert IlnkContainer.parse(rebuilt).blocks[0] == b"\x05hello".ljust(
+        len(original), b" "
+    )
+
+
+def test_fixed_dialogue_encoder_cannot_enable_record_expansion():
+    original = b"hello      "
+    data = IlnkContainer([original]).to_bytes()
+    rows = export_mesfile_rows(data, "/data/SC0.DK4", include_non_japanese=True)
+    rows[0]["english"] = "hello{PAD}"
+    rows[0]["encoder"] = "dialogue-fixed-v1"
+    rows[0]["allow_expand"] = "true"
+
+    try:
+        rebuild_mesfile(data, rows)
+    except ValueError as error:
+        assert "never relocates" in str(error)
+    else:
+        raise AssertionError("expected fixed encoder expansion rejection")

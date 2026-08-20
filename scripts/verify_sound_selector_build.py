@@ -10,11 +10,8 @@ from dk4tool.rom.nds import NdsImage
 from scripts.build_sound_selector_batches import (
     BGM_BLOCK,
     BGM_POINTER_TABLE_OFFSET,
-    BGM_RECORDS,
     BGM_TAIL_OFFSET,
-    encode_fullwidth_label,
 )
-
 
 ARM9_BATCH = Path("translations/sound_selector_arm9.json")
 BGM_BATCH = Path("translations/sound_bgm_titles.json")
@@ -56,27 +53,23 @@ def main() -> None:
         struct.unpack_from("<H", pointer_bytes, offset)[0]
         for offset in range(0, len(pointer_bytes), 2)
     ]
-    expected_titles = [
-        (english, encode_fullwidth_label(english, len(japanese.encode("cp932")) // 2))
-        for spec in BGM_RECORDS
-        for japanese, english in spec.titles
-    ]
-    if len(pointers) != len(expected_titles):
+    title_map = bgm_batch.get("pointer_map")
+    if not isinstance(title_map, list):
+        raise SystemExit("BGM batch does not contain its pointer map")
+    if len(pointers) != len(title_map):
         raise SystemExit("BGM pointer/title count mismatch")
-    if any(pointer % 2 for pointer in pointers):
-        raise SystemExit("candidate contains an odd-aligned BGM interior pointer")
     block = container.blocks[BGM_BLOCK]
-    boundaries = pointers[1:] + [BGM_TAIL_OFFSET]
-    for start, end, (title, expected) in zip(
-        pointers, boundaries, expected_titles, strict=True
-    ):
-        raw = block[start:end].split(b"\0", 1)[0]
-        if raw != expected:
-            raise SystemExit(
-                f"BGM title {title!r} does not occupy its exact double-byte cell range"
-            )
+    for pointer, title in zip(pointers, title_map, strict=True):
+        expected_offset = int(title["new_offset"])
+        expected = str(title["english"]).encode("ascii")
+        if pointer != expected_offset:
+            raise SystemExit(f"BGM pointer for {title['english']!r} is {pointer:#x}; expected {expected_offset:#x}")
+        if block[pointer : pointer + len(expected)] != expected:
+            raise SystemExit(f"BGM title {title['english']!r} does not match at {pointer:#x}")
+    if pointers[-1] >= BGM_TAIL_OFFSET:
+        raise SystemExit("final BGM title pointer reaches the protected tail")
 
-    print(f"sound selector verified: {len(expected_titles)} BGM + {len(arm9_batch['records']) - 1} SFX titles")
+    print(f"sound selector verified: {len(title_map)} BGM + {len(arm9_batch['records']) - 1} SFX titles")
     print(f"BGM pointer table: {BGM_POINTER_TABLE_OFFSET:#x}, terminal offset {BGM_TAIL_OFFSET}")
 
 

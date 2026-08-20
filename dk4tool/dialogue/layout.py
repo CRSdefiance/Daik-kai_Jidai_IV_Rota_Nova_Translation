@@ -4,7 +4,7 @@ import re
 from collections import Counter
 from dataclasses import asdict, dataclass
 
-from .codec import parse_markup, tokenize_raw, tokens_to_bytes, tokens_to_markup
+from .codec import PairPhaseError, parse_markup, tokenize_raw, tokens_to_bytes, tokens_to_markup
 from .model import DialogueToken
 from .profiles import DialogueProfile
 
@@ -36,33 +36,21 @@ def _text_units(token: DialogueToken) -> list[DialogueToken]:
     ]
 
 
-def _split_long_text(token: DialogueToken, profile: DialogueProfile) -> list[DialogueToken]:
-    pieces: list[DialogueToken] = []
-    current = ""
-    current_width = 0
-    for character in token.value:
-        width = profile.glyph_width(character)
-        if current and current_width + width > profile.window_width_px:
-            pieces.append(DialogueToken("text", current, current.encode("cp932")))
-            current = ""
-            current_width = 0
-        current += character
-        current_width += width
-    if current:
-        pieces.append(DialogueToken("text", current, current.encode("cp932")))
-    return pieces
-
-
 def wrap_tokens(tokens: list[DialogueToken], profile: DialogueProfile) -> list[DialogueToken]:
     output: list[DialogueToken] = []
     line_width = 0
     pending_space: DialogueToken | None = None
 
-    def line_break() -> None:
+    def line_break(*, explicit: bool = False) -> None:
         nonlocal line_width, pending_space
-        if not output or output[-1].kind != "line_break":
+        if explicit or not output or output[-1].kind != "line_break":
             output.append(DialogueToken("line_break", "", b"\x0A"))
-        line_width = 0
+        # The native renderer consumes the first single-byte glyph after a
+        # newline.  The encoder protects that glyph by inserting a sacrificial
+        # space, but that space still advances the cursor by one cell.  Reserve
+        # its width here so a formatted continuation line never exceeds the
+        # real 35-cell capacity of the 36-cell story window.
+        line_width = profile.glyph_width(" ") if profile.guard_linebreaks else 0
         pending_space = None
 
     def append_visible(unit: DialogueToken) -> None:
@@ -75,12 +63,34 @@ def wrap_tokens(tokens: list[DialogueToken], profile: DialogueProfile) -> list[D
             output.append(pending_space)
             line_width += space_width
             pending_space = None
-        output.append(unit)
-        line_width += width
+        if unit.kind == "text" and line_width + width > profile.window_width_px:
+            current = ""
+            current_width = 0
+            for character in unit.value:
+                character_width = profile.glyph_width(character)
+                if current and (
+                    line_width + current_width + character_width
+                    > profile.window_width_px
+                ):
+                    output.append(
+                        DialogueToken("text", current, current.encode("cp932"))
+                    )
+                    line_width += current_width
+                    line_break()
+                    current = ""
+                    current_width = 0
+                current += character
+                current_width += character_width
+            if current:
+                output.append(DialogueToken("text", current, current.encode("cp932")))
+                line_width += current_width
+        else:
+            output.append(unit)
+            line_width += width
 
     for token in tokens:
         if token.kind == "line_break":
-            line_break()
+            line_break(explicit=True)
             if token.value:
                 output[-1] = token
             continue
@@ -99,15 +109,7 @@ def wrap_tokens(tokens: list[DialogueToken], profile: DialogueProfile) -> list[D
                     output.append(unit)
                     line_width += token_width(unit, profile)
                 continue
-            width = token_width(unit, profile)
-            if width > profile.window_width_px and unit.kind == "text":
-                parts = _split_long_text(unit, profile)
-            else:
-                parts = [unit]
-            for index, part in enumerate(parts):
-                append_visible(part)
-                if line_width >= profile.window_width_px and index < len(parts) - 1:
-                    line_break()
+            append_visible(unit)
     return output
 
 
@@ -127,7 +129,9 @@ def lint_dialogue(
     max_bytes: int | None = None,
 ) -> list[DialogueDiagnostic]:
     diagnostics: list[DialogueDiagnostic] = []
-    source = tokenize_raw(source_raw)
+    source = tokenize_raw(
+        source_raw, leading_speaker_bytes=profile.leading_speaker_bytes
+    )
     target = parse_markup(target_markup)
 
     unknown = [token for token in source if token.kind == "raw_control"]
@@ -145,7 +149,20 @@ def lint_dialogue(
         missing = _token_counts(source, kind) - _token_counts(target, kind)
         if missing:
             values = ", ".join(f"{name} x{count}" for name, count in sorted(missing.items()))
-            diagnostics.append(DialogueDiagnostic("error", code, f"required tokens missing: {values}"))
+            diagnostics.append(
+                DialogueDiagnostic("error", code, f"required tokens missing: {values}")
+            )
+
+        unexpected = _token_counts(target, kind) - _token_counts(source, kind)
+        if unexpected:
+            values = ", ".join(
+                f"{name} x{count}" for name, count in sorted(unexpected.items())
+            )
+            diagnostics.append(
+                DialogueDiagnostic(
+                    "error", f"unexpected-{kind}", f"target adds commands: {values}"
+                )
+            )
 
     source_commands = [
         (token.kind, token.value)
@@ -189,7 +206,7 @@ def lint_dialogue(
     lines: list[int] = [0]
     for token in target:
         if token.kind == "line_break":
-            lines.append(0)
+            lines.append(profile.glyph_width(" ") if profile.guard_linebreaks else 0)
         else:
             lines[-1] += token_width(token, profile)
     for index, width in enumerate(lines, start=1):
@@ -203,6 +220,22 @@ def lint_dialogue(
                     pixel_width=width,
                 )
             )
+    if (
+        profile.pair_phase_safe_breaks
+        and len(lines) > 1
+        and lines[0] == profile.window_width_px
+    ):
+        diagnostics.append(
+            DialogueDiagnostic(
+                "error",
+                "pair-phase-auto-wrap",
+                "the first line fills the native row before an explicit break; "
+                "the internal pair-phase byte would auto-wrap and the following "
+                "newline would skip a row",
+                line=1,
+                pixel_width=lines[0],
+            )
+        )
     if len(lines) > profile.max_lines:
         diagnostics.append(
             DialogueDiagnostic(
@@ -212,7 +245,18 @@ def lint_dialogue(
             )
         )
 
-    encoded = tokens_to_bytes(target, guard_linebreaks=profile.guard_linebreaks)
+    try:
+        encoded = tokens_to_bytes(
+            target,
+            guard_linebreaks=profile.guard_linebreaks,
+            pair_phase_safe_breaks=profile.pair_phase_safe_breaks,
+            macro_ascii_lengths=profile.macro_ascii_lengths,
+        )
+    except PairPhaseError as error:
+        diagnostics.append(
+            DialogueDiagnostic("error", "pair-phase-unsafe", str(error))
+        )
+        encoded = b""
     if max_bytes is not None and len(encoded) > max_bytes:
         diagnostics.append(
             DialogueDiagnostic(

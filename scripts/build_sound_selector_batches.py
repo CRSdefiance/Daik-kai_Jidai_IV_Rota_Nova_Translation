@@ -9,7 +9,6 @@ from pathlib import Path
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
 
-
 BASE_ROM = Path("out/all_goods_roundtrip.nds")
 ARM9_BATCH = Path("translations/sound_selector_arm9.json")
 BGM_BATCH = Path("translations/sound_bgm_titles.json")
@@ -29,54 +28,56 @@ class BgmRecord:
 
 
 BGM_RECORDS = (
-    BgmRecord(46, (("勇躍", "GO"), ("エンディング", "ENDING"), ("追い風に乗って", "TAILWND"))),
-    BgmRecord(47, (("旅立ちのテーマ", "SETSAIL"),)),
-    BgmRecord(48, (("南へ行こう", "SOUTH"),)),
-    BgmRecord(49, (("インディアの風", "INDIA"),)),
-    BgmRecord(50, (("南海の島々", "SEAS"),)),
+    BgmRecord(46, (("勇躍", "Heroic"), ("エンディング", "Ending"), ("追い風に乗って", "Tailwind"))),
+    BgmRecord(47, (("旅立ちのテーマ", "Set Sail"),)),
+    BgmRecord(48, (("南へ行こう", "Southbound"),)),
+    BgmRecord(49, (("インディアの風", "India Wind"),)),
+    BgmRecord(50, (("南海の島々", "South Seas"),)),
     BgmRecord(
         51,
         (
-            ("東アジアの海", "E.ASIA"),
-            ("水平線の向こうへ", "BEYOND"),
-            ("北欧の街", "N.EU"),
-            ("南欧の街", "S.EU"),
-            ("イスラムの町", "ISLAM"),
-            ("アフリカの町", "AFRICA"),
-            ("インドの町", "INDIA"),
+            ("東アジアの海", "E Asia Sea"),
+            ("水平線の向こうへ", "Beyond Horizon"),
+            ("北欧の街", "N Europe"),
+            ("南欧の街", "S Europe"),
+            ("イスラムの町", "Islam Town"),
+            ("アフリカの町", "Africa Town"),
+            ("インドの町", "India Town"),
         ),
     ),
     BgmRecord(
         52,
         (
-            ("東南アジアの集落", "SE.ASIA"),
-            ("中国の町", "CHNA"),
-            ("日本の町", "JAPN"),
-            ("新大陸の町", "N.WLD"),
+            ("東南アジアの集落", "SE Asia"),
+            ("中国の町", "China Town"),
+            ("日本の町", "Japan Town"),
+            ("新大陸の町", "New World"),
         ),
     ),
-    BgmRecord(53, (("洋上戦闘のテーマ", "N.BATTLE"), ("大海戦", "WAR"))),
-    BgmRecord(54, (("海へ続く道", "SEA"),)),
-    BgmRecord(55, (("本当の宝物", "JEWEL"),)),
-    BgmRecord(56, (("波", "W"),)),
-    BgmRecord(57, (("情熱の炎", "FIRE"), ("ラファエル", "RAPH"))),
+    BgmRecord(53, (("洋上戦闘のテーマ", "Naval Battle"), ("大海戦", "Sea War"))),
+    BgmRecord(54, (("海へ続く道", "Sea Road"),)),
+    BgmRecord(55, (("本当の宝物", "True Gem"),)),
+    # The original slot has only two one-byte cells. Keep this visible as an
+    # intentional abbreviation until this fixed title region can safely grow.
+    BgmRecord(56, (("波", "Wv"),)),
+    BgmRecord(57, (("情熱の炎", "Passion"), ("ラファエル", "Raphael"))),
     BgmRecord(
         58,
         (
-            ("ホドラム", "HODR"),
-            ("リルとカミル", "LIL+KM"),
-            ("探検！探検！", "QUEST"),
-            ("暗雲", "DK"),
-            ("麗しの乙女", "LADY"),
+            ("ホドラム", "Hodram"),
+            ("リルとカミル", "Lil & Kamil"),
+            ("探検！探検！", "Explore!"),
+            ("暗雲", "Darkness"),
+            ("麗しの乙女", "Fair Maiden"),
         ),
     ),
-    BgmRecord(59, (("想い", "HR"), ("陽気な仲間", "PALS"))),
-    BgmRecord(60, (("悲しみ", "SAD"),)),
-    BgmRecord(61, (("海賊王", "P.K"),)),
-    BgmRecord(62, (("征服者", "WIN"),)),
+    BgmRecord(59, (("想い", "Feel"), ("陽気な仲間", "Pals"))),
+    BgmRecord(60, (("悲しみ", "Sorrow"),)),
+    BgmRecord(61, (("海賊王", "Pirate"),)),
+    BgmRecord(62, (("征服者", "Victor"),)),
     BgmRecord(
         63,
-        (("強敵登場", "FOE!"), ("大勝利！", "WIN!"), ("オープニング", "INTRO")),
+        (("強敵登場", "Foe Appears"), ("大勝利！", "Victory!"), ("オープニング", "Opening")),
         preserve_after_offset=BGM_TAIL_OFFSET,
     ),
 )
@@ -162,21 +163,6 @@ def record_starts(records: list[bytes]) -> list[int]:
     return starts
 
 
-def encode_fullwidth_label(label: str, cells: int) -> bytes:
-    """Center an ASCII label in a fixed count of double-byte glyph cells."""
-    if len(label) > cells:
-        raise ValueError(f"BGM label {label!r} needs {len(label)} cells; only {cells} available")
-    spare = cells - len(label)
-    centered = " " * (spare // 2) + label + " " * (spare - spare // 2)
-    fullwidth = "".join(
-        "\u3000" if char == " " else chr(ord(char) + 0xFEE0) for char in centered
-    )
-    encoded = fullwidth.encode("cp932")
-    if len(encoded) != cells * 2:
-        raise ValueError(f"BGM label {label!r} did not encode to {cells} double-byte cells")
-    return encoded
-
-
 def repack_bgm_records(
     records: list[bytes], starts: list[int]
 ) -> tuple[list[dict[str, object]], list[int], list[int]]:
@@ -196,24 +182,31 @@ def repack_bgm_records(
             positions.append(position)
             cursor = position + len(title)
 
+        source_end = positions[-1] + len(encoded_japanese[-1])
+        capacity = source_end - positions[0]
+        packed_titles = b"".join(english.encode("ascii") for _, english in spec.titles)
+        if len(packed_titles) > capacity:
+            raise ValueError(
+                f"BGM record {spec.record_index}: English titles need {len(packed_titles)} bytes; "
+                f"only {capacity} are available"
+            )
+
         translated = bytearray(original)
-        for position, (japanese, english) in zip(positions, spec.titles, strict=True):
-            source_title = japanese.encode("cp932")
-            replacement = encode_fullwidth_label(english, len(source_title) // 2)
-            translated[position : position + len(source_title)] = replacement
+        translated[positions[0] : source_end] = packed_titles.ljust(capacity, b" ")
+        cursor = positions[0]
+        for position, (_, english) in zip(positions, spec.titles, strict=True):
             old_pointers.append(start + position)
-            new_pointers.append(start + position)
+            new_pointers.append(start + cursor)
+            cursor += len(english)
         batch_records.append(
             {
                 "id": f"DK4_MES_B36_R{spec.record_index:04d}",
                 "english": " | ".join(english for _, english in spec.titles),
                 "replacement_hex": bytes(translated).hex().upper(),
                 "status": "translated",
-                "context": "Packed BGM selector titles rendered with fixed-width CP932 Latin glyphs",
+                "context": "Packed BGM selector titles with explicit remapped interior offsets",
             }
         )
-    if any(pointer % 2 for pointer in new_pointers):
-        raise ValueError("every BGM interior pointer must be even-aligned")
     return batch_records, old_pointers, new_pointers
 
 
@@ -307,6 +300,19 @@ def main() -> None:
                 "file_path": MESFILE_PATH,
                 "source_file_sha256": sha256(mesfile),
                 "records": bgm_records,
+                "pointer_map": [
+                    {
+                        "english": english,
+                        "old_offset": old_pointer,
+                        "new_offset": new_pointer,
+                    }
+                    for old_pointer, new_pointer, english in zip(
+                        old_pointers,
+                        new_pointers,
+                        (english for spec in BGM_RECORDS for _, english in spec.titles),
+                        strict=True,
+                    )
+                ],
             },
             ensure_ascii=False,
             indent=2,

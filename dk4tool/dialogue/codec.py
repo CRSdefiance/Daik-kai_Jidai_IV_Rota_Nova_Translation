@@ -31,14 +31,19 @@ def _cp932_character(raw: bytes, cursor: int) -> tuple[str | None, bytes]:
         return None, raw[cursor : cursor + 1]
 
 
-def tokenize_raw(raw: bytes) -> list[DialogueToken]:
+def tokenize_raw(
+    raw: bytes, *, leading_speaker_bytes: frozenset[int] = frozenset()
+) -> list[DialogueToken]:
     """Tokenize a record without discarding or normalizing any source byte."""
 
     tokens: list[DialogueToken] = []
     cursor = 0
     while cursor < len(raw):
         byte = raw[cursor]
-        if cursor == 0 and 0x01 <= byte <= 0x0F and byte != 0x0A:
+        if cursor == 0 and (
+            (0x01 <= byte <= 0x0F and byte != 0x0A)
+            or byte in leading_speaker_bytes
+        ):
             tokens.append(DialogueToken("speaker", f"{byte:02X}", bytes([byte])))
             cursor += 1
             continue
@@ -137,12 +142,67 @@ def parse_markup(text: str) -> list[DialogueToken]:
     return tokens
 
 
-def tokens_to_bytes(tokens: list[DialogueToken], *, guard_linebreaks: bool = False) -> bytes:
+class PairPhaseError(ValueError):
+    """Raised when protected-break ASCII pair parity cannot be proven."""
+
+
+def tokens_to_bytes(
+    tokens: list[DialogueToken],
+    *,
+    guard_linebreaks: bool = False,
+    pair_phase_safe_breaks: bool = False,
+    macro_ascii_lengths: dict[str, int] | None = None,
+) -> bytes:
+    """Encode tokens, optionally repairing progressive ASCII pair phase.
+
+    The live-tested zero-cursor renderer batches printable single-byte glyphs
+    in pairs.  At the unsafe phase, a protected ``LF + guard`` causes the
+    guard and first continuation glyph to share a draw batch; the next batch
+    can overwrite that first glyph.  An internal pre-LF space flips the phase.
+    It is emitted here rather than represented in editable markup.
+    """
+
+    if pair_phase_safe_breaks and not guard_linebreaks:
+        raise PairPhaseError("pair-phase-safe breaks require protected line breaks")
+
     output = bytearray()
-    for token in tokens:
-        if token.kind in {"text", "macro", "speaker", "raw_control", "end"}:
-            output.extend(token.raw)
+    ascii_phase = 0
+    phase_known = True
+    known_macro_lengths = macro_ascii_lengths or {}
+
+    def append(raw: bytes, *, count_ascii: bool = False) -> None:
+        nonlocal ascii_phase
+        output.extend(raw)
+        if count_ascii:
+            ascii_phase ^= sum(0x20 <= byte < 0x80 for byte in raw) & 1
+
+    for index, token in enumerate(tokens):
+        if token.kind == "text":
+            append(token.raw)
+            ascii_phase ^= sum(ord(character) < 0x80 for character in token.value) & 1
+        elif token.kind == "macro":
+            append(token.raw)
+            if pair_phase_safe_breaks:
+                if token.value not in known_macro_lengths:
+                    phase_known = False
+                elif phase_known:
+                    ascii_phase ^= known_macro_lengths[token.value] & 1
+        elif token.kind in {"speaker", "raw_control", "end"}:
+            append(token.raw)
         elif token.kind == "line_break":
+            next_is_linebreak = (
+                index + 1 < len(tokens) and tokens[index + 1].kind == "line_break"
+            )
+            needs_guard = guard_linebreaks and not next_is_linebreak
+            if pair_phase_safe_breaks and needs_guard and token.value:
+                raise PairPhaseError(
+                    "pair-phase-safe breaks do not support positioned {LB@...}"
+                )
+            if pair_phase_safe_breaks and needs_guard and not phase_known:
+                raise PairPhaseError(
+                    "cannot prove ASCII pair phase after runtime macro with "
+                    "unknown expansion parity"
+                )
             if token.value:
                 target = int(token.value)
                 if len(output) > target:
@@ -151,8 +211,18 @@ def tokens_to_bytes(tokens: list[DialogueToken], *, guard_linebreaks: bool = Fal
                         f"dialogue already occupies {len(output)} bytes"
                     )
                 padding = target - len(output)
-                output.extend(b" " * max(0, padding - (1 if guard_linebreaks else 0)))
-            output.extend(b"\x0A\x20" if guard_linebreaks else b"\x0A")
+                append(
+                    b" " * max(0, padding - (1 if needs_guard else 0)),
+                    count_ascii=True,
+                )
+            # The cold-booted B44_R0071 fixture has 32 printable ASCII bytes
+            # before LF and loses its first continuation glyph without this
+            # repair.  Adding one byte flips that even phase to the safe one.
+            if pair_phase_safe_breaks and needs_guard and not ascii_phase:
+                append(b" ", count_ascii=True)
+            append(b"\x0A")
+            if needs_guard:
+                append(b" ", count_ascii=pair_phase_safe_breaks)
         elif token.kind == "align":
             target = int(token.value)
             if len(output) > target:
@@ -160,7 +230,7 @@ def tokens_to_bytes(tokens: list[DialogueToken], *, guard_linebreaks: bool = Fal
                     f"cannot align text to byte {target}; "
                     f"dialogue already occupies {len(output)} bytes"
                 )
-            output.extend(b" " * (target - len(output)))
+            append(b" " * (target - len(output)), count_ascii=True)
         elif token.kind == "pad":
             continue
         else:
