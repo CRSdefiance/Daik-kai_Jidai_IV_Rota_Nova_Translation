@@ -6,7 +6,7 @@ Every new playable ROM must descend directly from
 `out/raphael_natural_v2_accepted_base.nds`, whose
 SHA-256 is:
 
-`fb750eac00d3c91cf0cc00e5ee578ba8d2d6eebd7791338c61003d003e5b09d3`
+`c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`
 
 This ROM is immutable. `work/clean.nds` is research input only and must never be used as
 the parent of a playable candidate. Intermediate, probe, stage, and route-only ROMs are

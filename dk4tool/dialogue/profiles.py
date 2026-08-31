@@ -77,6 +77,26 @@ _PROFILES = {
             "macro widths are 7/6/10 fixed-width ASCII cells"
         ),
     ),
+    "hodram-story-probe": DialogueProfile(
+        name="hodram-story-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        # SC1's route-specific macro lengths remain deliberately absent. Any
+        # future FI/FA/FO record therefore fails closed during pair-phase repair.
+        macro_widths={},
+        macro_ascii_lengths={},
+        # Static source/context correlation identifies these as one-byte
+        # presentation states in Hodram's opening. The profile remains a probe
+        # until the user confirms their portrait/nameplate effects at runtime.
+        leading_speaker_bytes=frozenset({0x10, 0x12, 0x17, 0xFE}),
+        metrics_source=(
+            "SC1 Hodram opening source correlation plus the accepted shared "
+            "progressive-story protected-break and pair-phase behavior; "
+            "portrait/nameplate effects await cold-boot confirmation"
+        ),
+    ),
     "help": DialogueProfile(
         name="help",
         window_width_px=232,
@@ -95,6 +115,19 @@ _PROFILES = {
         metrics_source=(
             "ARM9 renderer trace: 6 px ASCII, 12 px Shift-JIS; "
             "216 px shared window from live Market Info 38-cell probe"
+        ),
+    ),
+    "shared-pair-live": DialogueProfile(
+        name="shared-pair-live",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_ascii_lengths={"FI": 7, "FA": 6, "FO": 10},
+        macro_widths={"FI": 42, "FA": 36, "FO": 60, "I": 12},
+        metrics_source=(
+            "Shared 216 px Market Info calibration plus the accepted progressive "
+            "ASCII pair-phase renderer; used by source-locked Trader prompts"
         ),
     ),
 }

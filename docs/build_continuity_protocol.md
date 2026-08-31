@@ -8,8 +8,10 @@ accepted menus, graphics, names, goods, or dialogue.
 
 1. `AGENTS.md` contains the non-negotiable repository rules.
 2. `translations/release_stack.json` is the machine-readable layer registry.
-3. `out/raphael_natural_v2_accepted_base.nds` is the immutable binary baseline. Its required hash is
-   stored in the registry and checked by the builder.
+3. `out/raphael_natural_v2_accepted_base.nds` is the immutable binary baseline. Its
+   current SHA-256 is
+   `c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`;
+   the registry and builder enforce it.
 4. `docs/known_issues.md` records failed experiments and renderer hazards.
 
 Never infer quality or ancestry from an output filename. A ROM is a valid candidate

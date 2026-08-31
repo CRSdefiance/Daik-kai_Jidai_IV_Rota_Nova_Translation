@@ -2,6 +2,27 @@
 
 ## High priority
 
+- [x] Correct route ownership: SC1 is Hodram's playable route; SC2 is Lil's. Revoke
+  the inaccessible wrong-route SC2 control probe and retain its ROM only as evidence.
+- [x] Translate 67 records from Hodram's actual SC1 opening through the first
+  Lil/Kamil encounter and pass exhaustive fixed-allocation QA.
+- [ ] Cold-boot `out/hodram_intro_english_probe_v1.nds` from New Game as Hodram;
+  verify portraits, nameplates, `FI`/`FA`, wrapping, the initial objective, and normal
+  progression through SC1 blocks 42-44.
+- [x] Replace Lil's legacy SC2 block-27 scene with a complete 49-record,
+  source-first natural-English editorial manuscript.
+- [x] Complete a source-first 72-record natural-English manuscript for Lil SC2
+  block 66, covering the Kamil/Antony Kuhn reunion and family-history sequence.
+- [ ] Map Lil SC2 block-66 states `01/02/09/0E/14`, determine whether leading
+  `28` is literal dialogue punctuation or presentation state, and measure the
+  cross-route `FI` expansion before building any of its records.
+- [x] Complete a source-first 35-record natural-English manuscript for Lil SC2
+  block 146 without reusing the legacy batch's manual layout or guessed controls.
+- [x] Replace all 156 records misidentified by the legacy Hodram route batch with
+  source-locked natural-English editorial drafts across blocks 27, 66, and 146.
+- [ ] Map Lil block-146 bare Kamil records, unexplained `97` lead, `FE` narration
+  lead, and `FI` expansion before moving any block-146 draft into a playable batch.
+
 - [ ] Develop the profile-driven English text system described in
   [text_rendering_roadmap.md](text_rendering_roadmap.md).
   - [ ] Phase 0: inventory renderer families and assemble a golden screenshot/record corpus.
@@ -48,7 +69,8 @@
       - [x] Reject bare `0A` after cold-boot proof that it exposes the following glyph.
       - [ ] Find and cold-boot-test either a zero-width guard or an isolated progressive
         renderer hook before removing the safe `0A 20` protection.
-  - [ ] Phase 6: add adapters for ARM9 menus, compact HUD fields, packed tables, and graphics.
+  - [x] Phase 6: add source-locked adapters for ARM9 menus, compact HUD fields,
+    packed tables, and PXL graphics.
 - [x] Map and translate the packed sound selector: 38 BGM titles and all 57
   fixed-slot or standalone SFX titles.
 - [ ] Cold-boot `out/sound_selector_en_v5.nds`, scroll through all BGM and SFX
@@ -70,6 +92,58 @@
   with mandatory accepted layers and a named feature profile where available.
 - [ ] Require a source-locked manifest, regression verification, and cold-boot emulator test
   before promoting any candidate.
+- [x] Translate and structurally guard all 21 mapped shared Trader tutorial records,
+  including eight records with fixed interior entry points.
+- [x] Replace the market-report fee bubble's unsafe stored newline while preserving
+  both runtime `%s` substitutions.
+- [x] Add 19 source-reviewed tavern and sailor-recruitment tutorial messages and
+  complete editorial drafts for the six remaining concatenated records while
+  quarantining them until their interior entry
+  offsets are independently proven.
+- [x] Complete Hodram's first Stockholm building pass: translate all mapped tavern,
+  dock, and market tutorial records in SC1 blocks 134-136; repair the packed tavern
+  price, hostess, rumor, and introduction entry points; and add Gerhard's omitted
+  `Ardelknatts` surname slot.
+- [ ] Cold-boot `out/hodram_stockholm_tavern_complete_candidate_v1.nds` from New
+  Game as Hodram. Revisit the first Stockholm tavern, dock, and market; exercise
+  both short tutorial choices; buy drinks, recruit sailors, and speak to Francisca;
+  then confirm every portrait, nameplate, menu, wrap, and return-to-town transition.
+- [ ] Cold-boot `out/raphael_tutorial_trader_complete_candidate.nds`, complete the
+  guided Lisbon trading lesson, and test the Trader greeting, confirmations,
+  investment prompts, market report, and return to town before promotion.
+- [x] Build and independently baseline-verify
+  `out/hodram_trading_complete_candidate_v1.nds` with the packed trader/tavern
+  repairs, fixed-width commodity termination, mapped Lubeck labels, compact
+  trading buttons, and readable town-info graphics.
+- [ ] Cold-boot `out/hodram_trading_complete_candidate_v1.nds` from a full
+  emulator restart and test: Stockholm trader Buy/Sell/Invest/Market Info;
+  Lubeck city and market panels; Forces/Map; five-coin and Francisca tavern
+  paths; Argot's rumor; and every return-to-town transition.
+- [x] Map the remaining compact Japanese cargo/category captions to the shared
+  marker atlas and standalone PXL strips, then translate them with source-locked
+  rectangles rather than guessed ARM9 or ILNK offsets.
+- [x] Audit all 810 mapped ARM9 interface/table slots and confirm that the
+  `interface-polish-v1` candidate has no Japanese slots or uncovered
+  high-confidence ARM9 scan hits.
+- [x] Translate the 18 remaining shared marker-atlas captions plus the standalone
+  Confirm, Distributed Goods, Spoils, and Temporary Storage graphics.
+- [x] Complete the safe COMMON gameplay campaign through block 40: replace the
+  legacy filler in blocks 15-19, translate every independently addressable
+  QA-clean record in blocks 20-40, and classify every remaining packed,
+  identifier, macro-ambiguous, renderer-constrained, or padding-only record.
+- [x] Build and independently baseline-verify
+  `out/common_gameplay_natural_v2_candidate.nds`; run exhaustive dialogue QA on
+  every included batch and pass the full 242-test regression suite.
+- [x] Promote `out/common_gameplay_natural_v2_candidate.nds` to the canonical
+  accepted baseline with a verified rollback copy and baked-layer metadata.
+- [ ] Post-promotion, cold-boot `out/raphael_natural_v2_accepted_base.nds` and
+  exercise naval battles, exploration, diplomacy, investment advice, treasure
+  clues, taverns, Stockholm/Lubeck trading, and all menu transitions.
+- [ ] Post-promotion, cold-boot `out/raphael_natural_v2_accepted_base.nds` from a full emulator
+  restart. Check the title/common radial menu; Buy/Sell/Invest and cargo panels;
+  confirm/storage/spoils strips; town, fleet, force, and Golden Route screens;
+  world-map city/faction labels; and entry/exit transitions. Also verify that
+  name entry still switches to the Latin keyboard through `英`.
 # Dialogue presentation follow-up
 
 - Keep protected `0A 20` breaks in playable story builds. The bare-`0A` probe failed in

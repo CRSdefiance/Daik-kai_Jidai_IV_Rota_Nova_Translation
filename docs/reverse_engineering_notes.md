@@ -134,6 +134,20 @@ has booted successfully.
   `/_pxl/__marker.pxl`. They are not the similarly named ARM9 strings. The
   English graphics pass erases only palette index 15 inside the six caption
   boxes, preserving the brown/gold button art beneath them.
+- A complete marker-atlas review found 18 additional baked captions covering
+  decisions, reports, ports/attacks, orders, trading prices, cargo, temporary
+  storage, distributed goods, and spoils. Their glyph faces use palette index
+  15 and their black shadows use index 0; both must be erased inside the exact
+  source-locked rectangles before redrawing, or Japanese shadow fragments
+  remain visible.
+- `haifuhin.pxl`, `senrihin.pxl`, `tempcargo.pxl`, and `kakutei.pxl` are
+  standalone baked label strips rather than ARM9 strings. They can be redrawn
+  in place without changing their dimensions or encoded resource size.
+- The interface audit now accounts for 810 fixed ARM9 slots. The packaged
+  `interface-polish-v1` candidate has 804 exact English values and six accepted
+  English variants, with no Japanese profile entries and no uncovered
+  high-confidence ARM9 scan hits. This is evidence for the mapped table corpus,
+  not proof that every arbitrary byte sequence in ARM9 is text.
 - Ship names, classes, and prices use separate live ARM9 formatters. Removing
   the `号` and `級` suffixes and replacing `金貨%10d枚` with `%10d coins`
   fixes all three verified ship-display paths without altering saved names.
@@ -292,3 +306,25 @@ offset `0x67`, while execution resumed at `0x66`. CS dialogue is therefore phase
 at the 16-bit level. The second probe requires every relocated record to preserve its
 source byte parity. If natural encoding has opposite parity, the builder appends one
 guarded structural trailing space and records that segment in the release manifest.
+
+# Trading and tavern fixed-entry findings (2026-08-28)
+
+The `Iron OreLiFam` corruption was a fixed-table termination bug, not a font or
+wrapping bug. `Iron Ore` occupied all eight bytes at ARM9 ROM offset `0x15BD58`,
+so the consumer continued into the adjacent Maria organization record beginning
+at `0x15BD60`. The trading runtime batch now uses NUL-terminated abbreviations
+for every exact-width commodity entry with the same latent risk.
+
+The shared trader and tavern archives also contain records whose runtime call
+sites enter one or more bytes inside the NUL-delimited record. Reformatting those
+records from byte zero caused the observed `ive coins`, `rancisca`, `re, have`,
+blank investment reply, and orphaned `mation.` tail. The repaired batches retain
+each proven interior offset and fill unused allocation bytes with spaces. Two
+tavern records are already byte-identical in the accepted baseline and are
+declared audited no-ops so generic formatting cannot regress them.
+
+The four compact top labels in `/_pxl/towninfo.pxl` were previously translated
+at an undersized font. Their source-locked redraw uses the existing boxes and a
+larger maximum font size; the builder verifies that no pixels outside those
+boxes change. Other Japanese cargo/category captions do not occur as ordinary
+encoded ROM strings and require separate renderer or tile mapping.

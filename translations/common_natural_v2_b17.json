@@ -1,0 +1,2519 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "shared-pair-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Complete clean-source audit and safe localization of shared shipboard ambient dialogue in COMMON block 17",
+  "inventory": {
+    "block": 17,
+    "total_segments": 133,
+    "japanese_bearing_segments": 132,
+    "safe_translated_records": 131,
+    "blocked_editorial_records": 2,
+    "padding_only_segments": 1
+  },
+  "blocked_records": [
+    {
+      "id": "DK4_MES_B17_R0058",
+      "source_hex": "20208A4F8CF08CF08FC282C882E70A494382C9944382B982C482E6",
+      "source_markup": "  外交交渉なら{LB}{MACRO:I}Cに任せてよ",
+      "editorial_english": "{MACRO:I}C can handle diplomacy.",
+      "speaker": "Crew member",
+      "context": "A crew member comments while serving as first officer and volunteering for foreign negotiations.",
+      "source_meaning": "The speaker says to leave foreign negotiations to the entity represented by the source's I/C sequence.",
+      "localization_note": "The clean source contains the ambiguous `{MACRO:I}C` sequence. Its runtime meaning and ASCII expansion parity are not declared by shared-pair-live, so the record remains editorial-only with the sequence preserved.",
+      "blocker": "Command/macro ambiguity: shared-pair-live has no proven ASCII expansion length for macro I, and the literal trailing C may be part of the same runtime construct.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B17_R0132",
+      "source_hex": "2020",
+      "source_markup": "  ",
+      "speaker": "None",
+      "context": "Two-byte padding-only tail segment after the final gunner line.",
+      "source_meaning": "No Japanese text or player-facing meaning; this segment contains only spaces.",
+      "localization_note": "Classified and retained byte-identically; no translation is fabricated for padding.",
+      "blocker": "Padding-only non-text segment.",
+      "editorial_review": true,
+      "formatting_review": false
+    }
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B17_R0000",
+      "english": "Heh. Made this as an apprentice.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while cooking.",
+      "source_meaning": "While cooking, the crew member says: Heh. Made this as an apprentice.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0001",
+      "english": "Why's cooking my job?!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while cooking.",
+      "source_meaning": "While cooking, the crew member says: Why's cooking my job?!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0002",
+      "english": "Maybe fried rice today.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while cooking.",
+      "source_meaning": "While cooking, the crew member says: Maybe fried rice today.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0003",
+      "english": "Everyone loves good food.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while cooking.",
+      "source_meaning": "While cooking, the crew member says: Everyone loves good food.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0004",
+      "english": "Grow big and strong now.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Grow big and strong now.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0005",
+      "english": "Let's clean you up.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Let's clean you up.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0006",
+      "english": "Ha ha, cute.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Ha ha, cute.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0007",
+      "english": "Grow big, little pig.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Grow big, little pig.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0008",
+      "english": "Hold still, will you?!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Hold still, will you?!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0009",
+      "english": "Getting fond of you.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Getting fond of you.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0010",
+      "english": "Whoa! Not one of you!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Whoa! Not one of you!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0011",
+      "english": "You'll grow into a fine pig.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: You'll grow into a fine pig.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0012",
+      "english": "Let me clean you up.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Let me clean you up.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0013",
+      "english": "You're cute up close.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: You're cute up close.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0014",
+      "english": "Hey! Don't rub against me!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Hey! Don't rub against me!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0015",
+      "english": "Eat plenty and grow big.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while caring for the ship's pig.",
+      "source_meaning": "While caring for the ship's pig, the crew member says: Eat plenty and grow big.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0016",
+      "english": "By the Holy Trinity...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: By the Holy Trinity...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0017",
+      "english": "Amen...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: Amen...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0018",
+      "english": "Time to pray...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: Time to pray...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0019",
+      "english": "God, please hear my prayer.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: God, please hear my prayer.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0020",
+      "english": "Might as well pray.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: Might as well pray.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0021",
+      "english": "Belief is everything.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: Belief is everything.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0022",
+      "english": "The Bible made me sleepy.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: The Bible made me sleepy.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0023",
+      "english": "Lord, forgive me...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: Lord, forgive me...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0024",
+      "english": "May Portugal recover soon.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: May Portugal recover soon.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0025",
+      "english": "God, can we build a mighty fleet?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: God, can we build a mighty fleet?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0026",
+      "english": "God, keep us safe.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: God, keep us safe.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0027",
+      "english": "May we all sail safely...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while praying.",
+      "source_meaning": "While praying, the crew member says: May we all sail safely...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0028",
+      "english": "My next scheme...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: My next scheme...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0029",
+      "english": "The plan is...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: The plan is...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0030",
+      "english": "Any bright ideas?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Any bright ideas?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0031",
+      "english": "Must study and plan better.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Must study and plan better.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0032",
+      "english": "Plan... Zzz... More like nap!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Plan... Zzz... More like nap!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0033",
+      "english": "Schemes take experience.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Schemes take experience.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0034",
+      "english": "Me, make plans? Let me try.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Me, make plans? Let me try.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0035",
+      "english": "You can count on my plan.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: You can count on my plan.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0036",
+      "english": "Time to study strategy!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Time to study strategy!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0037",
+      "english": "Direct tactics aren't enough.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Direct tactics aren't enough.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0038",
+      "english": "Leave the scheming to me!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Leave the scheming to me!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0039",
+      "english": "Strategy's my strength.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while planning strategy.",
+      "source_meaning": "While planning strategy, the crew member says: Strategy's my strength.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0040",
+      "english": "Let's check port prices.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Let's check port prices.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0041",
+      "english": "Prices are the key...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Prices are the key...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0042",
+      "english": "This month's profit?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: This month's profit?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0043",
+      "english": "Making money is hard!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Making money is hard!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0044",
+      "english": "Market prices? No clue.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Market prices? No clue.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0045",
+      "english": "What's selling well now?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: What's selling well now?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0046",
+      "english": "Where can we sell for a profit?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Where can we sell for a profit?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0047",
+      "english": "Let's total this month's profit.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Let's total this month's profit.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0048",
+      "english": "Let's review our finances.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Let's review our finances.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0049",
+      "english": "Profit... Hmm.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: Profit... Hmm.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0050",
+      "english": "All these numbers make my head spin.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: All these numbers make my head spin.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0051",
+      "english": "What goods could turn a profit now?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while reviewing markets and finances.",
+      "source_meaning": "While reviewing markets and finances, the crew member says: What goods could turn a profit now?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0052",
+      "english": "Captain... Doing my best!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as captain.",
+      "source_meaning": "While serving as captain, the crew member says: Captain... Doing my best!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0053",
+      "english": "A mighty fleet, all mine.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as captain.",
+      "source_meaning": "While serving as captain, the crew member says: A mighty fleet, all mine.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0054",
+      "english": "Hee hee! The captain!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as captain.",
+      "source_meaning": "While serving as captain, the crew member says: Hee hee! The captain!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0055",
+      "english": "All rests on my shoulders.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as captain.",
+      "source_meaning": "While serving as captain, the crew member says: All rests on my shoulders.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0056",
+      "english": "Leave the paperwork to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Leave the paperwork to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0057",
+      "english": "Serving as admiral's aide.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Serving as admiral's aide.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0059",
+      "english": "Admiral, writing something?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Admiral, writing something?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0060",
+      "english": "Let me be first officer.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Let me be first officer.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0061",
+      "english": "Leave diplomacy to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Leave diplomacy to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0062",
+      "english": "Heh... the new officer!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Heh... the new officer!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0063",
+      "english": "Leave negotiations to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Leave negotiations to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0064",
+      "english": "Your officer? Sure! Wait...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Your officer? Sure! Wait...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0065",
+      "english": "As first officer, who's captain?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: As first officer, who's captain?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0066",
+      "english": "All right, but who's captain?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: All right, but who's captain?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0067",
+      "english": "Leave the talks to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while serving as first officer.",
+      "source_meaning": "While serving as first officer, the crew member says: Leave the talks to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0068",
+      "english": "Leave the helm to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Leave the helm to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0069",
+      "english": "We'll sail safely.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: We'll sail safely.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0070",
+      "english": "The helm? Hard starboard!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: The helm? Hard starboard!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0071",
+      "english": "Steering? Easy, easy.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Steering? Easy, easy.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0072",
+      "english": "Round and round! One more turn!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Round and round! One more turn!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0073",
+      "english": "Every cannonball will miss me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Every cannonball will miss me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0074",
+      "english": "Always wanted to steer.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Always wanted to steer.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0075",
+      "english": "Watch me handle this wheel!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Watch me handle this wheel!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0076",
+      "english": "Ha... Spins nicely.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Ha... Spins nicely.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0077",
+      "english": "Helm and sails work together.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Helm and sails work together.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0078",
+      "english": "Steer the ship? Leave it to me!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Steer the ship? Leave it to me!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0079",
+      "english": "Shen taught me how to steer.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while steering the ship.",
+      "source_meaning": "While steering the ship, the crew member says: Shen taught me how to steer.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0080",
+      "english": "A sextant makes surveying easier.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: A sextant makes surveying easier.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0081",
+      "english": "Know our position.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Know our position.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0082",
+      "english": "Our position? Uh... Wait!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Our position? Uh... Wait!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0083",
+      "english": "The stars show our position.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: The stars show our position.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0084",
+      "english": "Just find where we are, right?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Just find where we are, right?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0085",
+      "english": "Surveying: basic seamanship.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Surveying: basic seamanship.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0086",
+      "english": "Your surveyor will do the job.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Your surveyor will do the job.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0087",
+      "english": "Surveyor? Easy enough.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Surveyor? Easy enough.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0088",
+      "english": "This is the right tool, yes?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: This is the right tool, yes?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0089",
+      "english": "The sun tells us our position.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: The sun tells us our position.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0090",
+      "english": "Surveying is basic seamanship!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Surveying is basic seamanship!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0091",
+      "english": "Sun and stars show our position.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while surveying the ship's position.",
+      "source_meaning": "While surveying the ship's position, the crew member says: Sun and stars show our position.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0092",
+      "english": "Keeping watch. Rest easy.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Keeping watch. Rest easy.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0093",
+      "english": "Keeping watch now.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Keeping watch now.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B17_R0094",
+      "english": "Any trouble gets reported.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Any trouble gets reported.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0095",
+      "english": "Such a view! The world is vast.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Such a view! The world is vast.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0096",
+      "english": "What a feeling up here!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: What a feeling up here!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0097",
+      "english": "Anything spotted gets reported.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Anything spotted gets reported.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0098",
+      "english": "Great view from up here!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Great view from up here!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0099",
+      "english": "Keeping watch! Eyes wide open.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Keeping watch! Eyes wide open.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0100",
+      "english": "Everyone will hear what appears.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Everyone will hear what appears.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0101",
+      "english": "My body senses danger.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: My body senses danger.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0102",
+      "english": "Wow! What a view!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Wow! What a view!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0103",
+      "english": "Sharp eyes. Leave it to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while keeping lookout.",
+      "source_meaning": "While keeping lookout, the crew member says: Sharp eyes. Leave it to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0104",
+      "english": "Any wind can be mastered.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Any wind can be mastered.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0105",
+      "english": "Match each sail to the wind.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Match each sail to the wind.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0106",
+      "english": "Might blow away!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Might blow away!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0107",
+      "english": "Well? Better with sails now?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Well? Better with sails now?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0108",
+      "english": "Use half sail when slowing down.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Use half sail when slowing down.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0109",
+      "english": "Square and lateen sails differ.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Square and lateen sails differ.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0110",
+      "english": "The wind obeys me too.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: The wind obeys me too.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0111",
+      "english": "A sailmaster must read the wind.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: A sailmaster must read the wind.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0112",
+      "english": "Now the wind makes sense.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Now the wind makes sense.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0113",
+      "english": "Sails and helm work together.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Sails and helm work together.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0114",
+      "english": "Whoa! Might blow away!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: Whoa! Might blow away!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0115",
+      "english": "No skill can overcome a dead calm.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while handling the sails.",
+      "source_meaning": "While handling the sails, the crew member says: No skill can overcome a dead calm.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0116",
+      "english": "Training like this every day.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Training like this every day.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0117",
+      "english": "Leave boarding to me.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Leave boarding to me.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0118",
+      "english": "Getting even stronger.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Getting even stronger.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0119",
+      "english": "How's this form?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: How's this form?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0120",
+      "english": "Count on me in a fight!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Count on me in a fight!",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0121",
+      "english": "Ow! My back just cracked...{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Ow! My back just cracked...",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0122",
+      "english": "Training this long makes me hungry.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Training this long makes me hungry.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0123",
+      "english": "Training is essential.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Training is essential.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0124",
+      "english": "My swordplay has improved, right?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: My swordplay has improved, right?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0125",
+      "english": "A swordplay lesson for the crew.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: A swordplay lesson for the crew.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0126",
+      "english": "How's this swordplay?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: How's this swordplay?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0127",
+      "english": "Leading every boarding charge.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training for boarding combat.",
+      "source_meaning": "While training for boarding combat, the crew member says: Leading every boarding charge.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0128",
+      "english": "Test-firing now.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training with the ship's guns.",
+      "source_meaning": "While training with the ship's guns, the crew member says: Test-firing now.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0129",
+      "english": "Test-firing. Talk later.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training with the ship's guns.",
+      "source_meaning": "While training with the ship's guns, the crew member says: Test-firing. Talk later.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0130",
+      "english": "Training for naval combat.{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training with the ship's guns.",
+      "source_meaning": "While training with the ship's guns, the crew member says: Training for naval combat.",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    },
+    {
+      "id": "DK4_MES_B17_R0131",
+      "english": "Does firing make you nervous?{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member's ambient line while training with the ship's guns.",
+      "source_meaning": "While training with the ship's guns, the crew member says: Does firing make you nervous?",
+      "localization_note": "Localized as concise, idiomatic shipboard speech while preserving the line's intent and activity. Ordinary wrapping is left to the pair-safe formatter.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "qa_waivers": [
+        "line-break-count"
+      ],
+      "qa_waiver_reason": "The clean-source line break is ordinary Japanese layout, not a dramatic pause; the localized line is one logical paragraph."
+    }
+  ]
+}

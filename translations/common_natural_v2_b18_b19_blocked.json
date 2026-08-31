@@ -1,0 +1,101 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "draft_status": "source-first-editorial-draft-blocked-accepted-source-lost-runtime-macro",
+  "inventory": {
+    "identified_records": 4,
+    "translated_drafts": 4,
+    "encodable_records": 0,
+    "blocked_records": 4,
+    "missing_records": 0,
+    "blocks": {
+      "18": 2,
+      "19": 2
+    }
+  },
+  "records": [],
+  "blocked_records": [
+    {
+      "id": "DK4_MES_B18_R0010",
+      "draft_english": "{MACRO:I}C's ship must stay clean!{PAD}",
+      "speaker": "Crew member",
+      "context": "A crew member comments while firing cannon or cleaning the ship.",
+      "source_meaning": "The crew member says: {MACRO:I}C's ship must stay clean!",
+      "localization_note": "Faithful clean-source translation retained as a draft until the missing runtime name substitution is restored safely.",
+      "clean_source_markup": "{MACRO:I}Cらの船だから{LB}きれいにしなくちゃ",
+      "source_length": 33,
+      "blocker": "The clean record contains {MACRO:I}C, while the accepted placeholder record erased it; inserting against the accepted bytes would not preserve source command order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B18_R0059",
+      "draft_english": "{MACRO:I}C is here. Don't worry!{PAD}",
+      "speaker": "Crew member",
+      "context": "A ship's doctor comments on treating injuries during battle.",
+      "source_meaning": "The crew member says: {MACRO:I}C is here. Don't worry!",
+      "localization_note": "Faithful clean-source translation retained as a draft until the missing runtime name substitution is restored safely.",
+      "clean_source_markup": "{MACRO:I}Cがいるんだ{LB}安心してよ！",
+      "source_length": 25,
+      "blocker": "The clean record contains {MACRO:I}C, while the accepted placeholder record erased it; inserting against the accepted bytes would not preserve source command order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B19_R0072",
+      "draft_english": "{MACRO:I}C will lead the boarding charge!{PAD}",
+      "speaker": "Crew member",
+      "context": "A deck officer prepares the crew for boarding combat.",
+      "source_meaning": "The crew member says: {MACRO:I}C will lead the boarding charge!",
+      "localization_note": "Faithful clean-source translation retained as a draft until the missing runtime name substitution is restored safely.",
+      "clean_source_markup": "白兵戦では{MACRO:I}Cが{LB}先頭に立つよ！",
+      "source_length": 29,
+      "blocker": "The clean record contains {MACRO:I}C, while the accepted placeholder record erased it; inserting against the accepted bytes would not preserve source command order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B19_R0108",
+      "draft_english": "{MACRO:I}C is exhausted... Let me rest...{PAD}",
+      "speaker": "Crew member",
+      "context": "A fatigued or wounded crew member reports their condition.",
+      "source_meaning": "The crew member says: {MACRO:I}C is exhausted... Let me rest...",
+      "localization_note": "Faithful clean-source translation retained as a draft until the missing runtime name substitution is restored safely.",
+      "clean_source_markup": "  {MACRO:I}C、くたくた…{LB}休ませてよ…",
+      "source_length": 29,
+      "blocker": "The clean record contains {MACRO:I}C, while the accepted placeholder record erased it; inserting against the accepted bytes would not preserve source command order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ]
+}
