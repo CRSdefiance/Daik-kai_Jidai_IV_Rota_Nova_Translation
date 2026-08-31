@@ -1,0 +1,78 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC1.DK4",
+  "source_file_sha256": "33981b27375cca1b9293752662d0dedb820dd310526c9dbe0612a397f38313ab",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "hodram-story-probe",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+  "scope": "Hodram's first Stockholm tavern sailor-recruitment tutorial (SC1 block 134)",
+  "profile_note": "Fixed-allocation companion layer to the existing Hodram opening probe. States 0x01, 0x10, and 0xFE are reused only within the same SC1 route profile; runtime confirmation remains required.",
+  "inventory": {"block": 134, "identified_records": 7, "translated_records": 7},
+  "records": [
+    {
+      "id": "DK4_MES_B134_R0005",
+      "english": "{SPEAKER:01}Hey, Gerhard.{PAD}",
+      "speaker": "Hodram Bergstrom",
+      "context": "Hodram greets Gerhard when the player enters Stockholm's tavern.",
+      "source_meaning": "Hodram gives Gerhard a casual greeting.",
+      "localization_note": "Uses Gerhard's established name and a brief, familiar greeting.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0009",
+      "english": "{SPEAKER:10}Perfect timing, Admiral. Some men were wounded, so we're recruiting sailors. Your orders?{PAD}",
+      "speaker": "Gerhard Ardelknatts",
+      "context": "Gerhard reports the crew shortage and asks Hodram how to proceed.",
+      "source_meaning": "Gerhard says the admiral arrived at a good time: casualties have led him to recruit sailors, and he asks for instructions.",
+      "localization_note": "Condenses the polite request into a crisp officer's report without losing the cause or request for orders.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0015",
+      "english": "All right.{PAD}",
+      "speaker": "Hodram Bergstrom",
+      "context": "Hodram approves taking direct control of sailor recruitment.",
+      "source_meaning": "Hodram agrees to proceed.",
+      "localization_note": "A natural affirmative that exactly fills the choice record's ten-byte allocation.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0017",
+      "english": "You handle it.{PAD}",
+      "speaker": "Hodram Bergstrom",
+      "context": "Hodram delegates sailor recruitment to Gerhard.",
+      "source_meaning": "Hodram tells Gerhard to take care of it.",
+      "localization_note": "A direct delegation that exactly fills the choice record's fourteen-byte allocation.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0025",
+      "english": "{SPEAKER:10}Buy the patrons a round and men looking for work will gather. Then you can recruit sailors quickly.{PAD}",
+      "speaker": "Gerhard Ardelknatts",
+      "context": "Gerhard explains the tavern's sailor-recruitment mechanic after Hodram chooses to handle it.",
+      "source_meaning": "Gerhard explains that buying drinks attracts people looking for work, after which sailors can be recruited efficiently.",
+      "localization_note": "Localizes the mechanic as buying the patrons a round and keeps the sequence of attracting workers before recruiting them.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0028",
+      "english": "{SPEAKER:FE}Hire extra sailors for boarding. More sailors shorten fleet range, so be careful.{PAD}",
+      "speaker": "Tutorial narration",
+      "context": "The tutorial explains the tradeoff between boarding strength and sailing range.",
+      "source_meaning": "The tutorial advises hiring more sailors for a boarding-focused strategy, but warns that doing so reduces fleet endurance.",
+      "localization_note": "Uses boarding actions and fleet range as concise, player-facing nautical terms.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    },
+    {
+      "id": "DK4_MES_B134_R0033",
+      "english": "{SPEAKER:10}Understood. Leave it to me.{PAD}",
+      "speaker": "Gerhard Ardelknatts",
+      "context": "Gerhard accepts the task after Hodram delegates recruitment.",
+      "source_meaning": "Gerhard acknowledges Hodram and asks him to leave the work in Gerhard's hands.",
+      "localization_note": "A confident, natural acknowledgement suitable for Hodram's dependable officer.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    }
+  ]
+}

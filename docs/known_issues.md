@@ -1,5 +1,75 @@
 # Known issues
 
+## Accepted COMMON gameplay baseline
+
+The user explicitly promoted `out/common_gameplay_natural_v2_candidate.nds` on
+2026-08-31. Its bytes are now the canonical
+`out/raphael_natural_v2_accepted_base.nds`; the SHA-256 is
+`c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`.
+It is built from the immutable accepted Raphael baseline under profile
+`common-gameplay-natural-v2`; its manifest and the independent verifier agree
+that only the expected 14 interface, COMMON, and Hodram-first-Stockholm paths
+changed. The full regression suite passes (242 tests).
+
+The profile adds 1,257 safe translated records across COMMON blocks 15-40,
+including 580 records in blocks 22-40. Every record in blocks 22-40 is
+classified as buildable English, an explicitly blocked packed/macro/identifier
+or renderer-constrained draft, or padding-only. No placeholder filler is used.
+
+Promotion does not make every packed entry playable in English. Records with
+unmapped interior entry points, the packed BGM/promotional tables, internal
+scene identifiers, ambiguous `{MACRO:I}C` sequences, and drafts that overflow
+or destabilize the progressive renderer remain byte-identical to Japanese.
+They are retained in the corresponding `*_blocked.json` inventories for the
+next translation phase.
+
+## Interface-polish layer (accepted and baked)
+
+`out/interface_polish_v1_candidate.nds` was the interface-first test candidate.
+Its historical SHA-256 is
+`469f4ac97354d36f96bb5d5a05a3deac1c246edcb2f24b7277e6b0296f7bdc36`.
+The `interface-polish-v1` profile is now accepted and baked into the canonical
+baseline promoted on 2026-08-31.
+
+The ARM9 interface audit covers all 810 mapped fixed slots: 804 contain their
+exact profile text and six contain an accepted English variant. No Japanese
+slot or uncovered high-confidence ARM9 scan hit remains. The covered tables
+include character names, ship models, commodities, cities, settlements,
+factions, trade categories, roles, buttons, and compact menu fields.
+
+This candidate also translates the 18 remaining captions in the shared marker
+atlas, the standalone Confirm, Distributed Goods, Spoils, and Temporary
+Storage strips, and polishes the regional-fleet, force, town-info, and Golden
+Route panels. These are graphical edits, so a warm-loaded emulator can continue
+showing cached Japanese tiles; test from a full emulator restart.
+
+Known interface limits remain: the naming keyboard opens on its Japanese page
+and its `英`/`記` identifiers are functional data rather than safe captions; the
+town HUD month/day suffixes use an unadapted low-level renderer; and a few
+strict fixed slots require readable abbreviations. The original Japanese title
+logo is retained as branding. A post-promotion cold-boot smoke pass remains useful.
+
+## Hodram trading-complete layer (accepted and baked)
+
+`out/hodram_trading_complete_candidate_v1.nds` was the integrated experimental
+candidate for the Stockholm/Lubeck trading and tavern pass. Its historical SHA-256 is
+`238151a3ae9f092da906640db0f47b1d0aaac78bbccb74520df860ee32699e9e`.
+The corresponding profile is now accepted and baked into the promoted baseline.
+The historical candidate changed only
+`/COMMON/MESFILE.DK4`, `/__arm9__.bin`, `/_pxl/towninfo.pxl`, and
+`/data/SC1.DK4`; the independent baseline verifier passes.
+
+The candidate repairs the packed trader and tavern entry points that caused
+dropped initial letters, empty boxes, and dialogue tails. It also terminates
+the fixed-width commodity strings that produced `Iron OreLiFam`, shortens
+clipped trading buttons, translates the mapped Lubeck port/region/faction
+fields, and redraws the four compact town-info captions at a readable size.
+
+The compact Japanese trading captions visible in the cargo/category panels were
+subsequently mapped to the shared marker atlas and standalone PXL strips. Their
+English redraws are included in the promoted baseline. A warm-loaded emulator can
+retain the old tiles, so verify them after a full restart.
+
 ## Runtime-owned ARM9 tail falsely identified as code caves
 
 Nothing in `0x02171E48` through `0x02172463` may be used for code, flags, or
@@ -374,6 +444,38 @@ invisible alignment padding. The user explicitly accepted and promoted this buil
 2026-08-20. Its bytes are now the canonical baseline. Do not use the revoked
 predecessor as a parent or release.
 
+## Experimental Lisbon Trader tutorial completion
+
+`out/raphael_tutorial_trader_complete_candidate.nds`, SHA-256
+`4c2c1ccc034b0b2c1955a81c157f08b585bc8ee9e602dbd625867a8aeac00af5`, is an
+experimental continuation of the accepted Lisbon baseline. It changes only
+`/COMMON/MESFILE.DK4` and `/__arm9__.bin`.
+
+The shared Trader archive contains eight records with multiple fixed interior entry
+points. Their original offsets are executable layout facts: translating one packed
+message as ordinary prose can overwrite an alternate prompt. The
+`raphael-tutorial-trader` profile therefore uses exact-width raw replacements for
+those records and tests every interior offset. Thirteen ordinary prompts use the
+pair-phase-aware shared dialogue profile so automatic English wrapping cannot drop
+the first continuation glyph.
+
+The profile also contains 19 source-reviewed tavern and sailor-recruitment records:
+hostess greetings and prices, insufficient-funds prompts, all seven independently
+addressed recruitment voice variants, and the independently addressable shortfall
+and spare-berth follow-ups. Six additional tavern/recruitment records contain two
+or more concatenated messages with unproven interior entry offsets; they are listed
+in `blocked_packed_records`, have complete editorial drafts, and deliberately remain
+unchanged until their entry offsets are proven.
+
+The market-report fee bubble originally stored `%s\n Fee: %s coins`. The accepted
+progressive renderer can lose the first glyph after that stored newline, which
+displayed `ee: 0 coins`. The experimental ARM9 batch keeps both `%s` substitutions
+in order but renders the caption on one line as `%s: %s coins`.
+
+Do not promote this candidate until a cold boot completes the guided Lisbon lesson,
+exercises Trader and sailor-recruitment choices where practical, and verifies that
+the market-report map displays its city and fee without missing characters.
+
 # Release baseline warning
 
 - `out/raphael_natural_v2_accepted_base.nds` is the user-designated safe integration
@@ -385,6 +487,104 @@ predecessor as a parent or release.
   playable work.
 - All later integration, route, repair, and probe ROMs—including `lil_route_roundtrip.nds`, `raphael_complete_en.nds`, `raphael_complete_fixed.nds`, and the Lil repair probes—are deprecated historical artifacts. Do not distribute them or use them as a base.
 - Run `scripts/verify_release_baseline.py out/raphael_natural_v2_accepted_base.nds <candidate.nds>` before handing off any subsequent candidate.
+
+## Misclassified SC2 Lil-route block-27 manuscript
+
+`translations/hodram_natural_v2_sc2_b27_blocked.json` replaces the old literal,
+manually wrapped draft with 49 source-first natural-English records. Despite the
+historical filename, this is a Lil-route scene, not Hodram's playable opening. It covers
+Lil and Kamil's harbor encounter with Hodram and Gerhard, including
+the confrontation, Kamil's private apology, and Hodram's reassurance.
+
+This is deliberately not a build batch. SC2 block 27 uses leading states `0x01`,
+`0x02`, `0x09`, `0x10`, and `0x14`, and its `FI` expansion refers to Lil inside
+Lil's route. Their portrait/name effects and runtime expansion behavior have not
+been independently mapped. The manuscript records the exact source prefix and source
+length for every line, preserves every `FI` occurrence as `{MACRO:FI}`, and leaves
+the formatting review gate false. Do not revive the guessed `{HEX:...}` controls or
+manual `{LB}` layout from `translations/hodram_route.json`.
+
+## Misclassified SC2 Lil-route block-66 manuscript
+
+`translations/hodram_natural_v2_sc2_b66_blocked.json` contains a complete
+72-record source-first natural-English draft of the Kamil/Antony Kuhn reunion and
+family-history sequence. Together with block 27, the Lil-route manuscript now
+covers 121 records without reusing the legacy batch's mojibake, manual `{LB}`
+wrapping, or guessed `{HEX:...}` controls.
+
+This remains editorial-only. The exact leading bytes `01`, `02`, `09`, `0E`,
+`14`, and `28` are source-locked, and every `FI` occurrence is preserved as a
+macro placeholder. The leading `0x28` on Antony's lines may be a literal thought
+marker rather than a presentation state, so it must not be promoted to a control
+token without runtime evidence. Lil-route portrait/name behavior and the
+cross-route `FI` expansion must be mapped before formatting or insertion.
+
+## Misclassified SC2 Lil-route block-146 manuscript
+
+`translations/hodram_natural_v2_sc2_b146_blocked.json` adds all 35 records from
+the scene where Kamil leaves Lil, meets Hodram, and accepts a temporary berth on
+his ship. The historical Hodram-named files cover all 156 Lil-route records identified
+in the legacy three-block batch: 49 in block 27, 72 in block 66, and 35 in
+block 146.
+
+Block 146 is not buildable yet. It mixes known-looking `01/02/09/14` leads with
+bare Kamil records, an unexplained `0x97` lead, an `0xFE` narration lead, and the
+cross-route `FI` macro. The draft records these facts explicitly and does not
+convert them into guessed control tokens. Runtime state mapping and formatter
+evidence are required before any record can move into a release batch.
+
+## Revoked wrong-route SC2 control-map probe
+
+`out/hodram_sc2_control_map_probe_v1.nds` is a research-only integrated probe,
+SHA-256 `e77b5668d18d320913510e783c08d8098f9437042267876a4998750d4896d9fe`.
+It was built from the accepted Raphael baseline through profile
+`hodram-sc2-control-map-probe`. Only six exact-allocation records in
+`/data/SC2.DK4` block 27 change. Each original lead byte is retained verbatim;
+no record offset, length, newline, or other ROM file changes.
+
+The user confirmed that the ROM loads, but the scene is not reachable by following
+Hodram's New Game path: SC2 block 27 belongs to Lil's route. The profile is revoked.
+Do not test, distribute, promote, or use this ROM as a parent.
+
+## Hodram SC1 opening English probe awaiting cold-boot test
+
+`out/hodram_intro_english_probe_v1.nds`, SHA-256
+`59af70e76736793cc4f1051ce8320e95f570159ef175df0d9a627fd323f17deb`,
+is the corrected experimental candidate. It changes only `/data/SC1.DK4` and contains
+67 QA-clean fixed-allocation records across blocks 42-44: the opening fleet exercise,
+Hodram's speech, strategic trade tutorial, initial objective, and first Lil/Kamil
+encounter. SC1's four-byte non-prose B42 R0032 fragment remains byte-identical.
+
+The candidate uses the accepted guarded pair-phase renderer behavior and preserves
+all source presentation states. The SC1 state effects and Hodram `FI`/`FA` macro
+lengths are not yet runtime-proven, so this ROM is experimental and must not become a
+parent. Cold-boot New Game as Hodram and verify every portrait/nameplate, wrapping,
+the `FA` address in the post-speech exchange, the `FI` address after Lil leaves, and
+normal progression through the first objective and Lil/Kamil encounter.
+
+## Experimental Hodram Stockholm and tavern repair candidate
+
+`out/hodram_stockholm_tavern_complete_candidate_v1.nds`, SHA-256
+`fb8600a7cd8318493b91c7eb9511c1dc36ad03622ad72044aad13ac6408673d5`, is an
+experimental continuation of the accepted Raphael baseline through profile
+`hodram-stockholm-tavern-complete`. It changes only `/data/SC1.DK4`,
+`/COMMON/MESFILE.DK4`, and `/__arm9__.bin`.
+
+The candidate retains the 67-record Hodram opening and adds every mapped Japanese
+dialogue record in the first Stockholm tavern, dock, and market tutorials (SC1
+blocks 134-136). It also fills Gerhard's previously omitted surname slot with
+`Ardelknatts`. An audit of the other 196 shared personal-name and surname slots found
+them already translated in the accepted baseline.
+
+The shared tavern repair preserves each proven packed interior entry point while
+fixing the reported bare price, lowercase diagnostic, empty Francisca response,
+broken Clifford introduction, and terse rumor/strength lines. All new fixed-dialogue
+records pass the natural-dialogue audit with no warnings or errors; packed records
+have exact-offset regression tests.
+
+Do not promote this ROM until a cold boot completes Hodram's opening and visits all
+three first-Stockholm buildings. Test both tutorial choices, tavern purchases,
+Francisca, sailor recruitment, nameplates, menus, wrapping, and every return to town.
 # Revoked protected-newline probe (2026-08-14)
 
 `out/dialogue_protected_newline_probe.nds` is revoked and must not be tested,

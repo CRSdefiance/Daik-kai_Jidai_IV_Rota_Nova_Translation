@@ -19,6 +19,7 @@ from dk4tool.dialogue.relocation import (
 )
 from dk4tool.dialogue.review import validate_natural_dialogue_batch
 from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.graphics.pxl import PxlImage
 from dk4tool.rom.nds import NdsImage
 from dk4tool.script.mesfile import rebuild_mesfile
 from dk4tool.script.translation_batch import (
@@ -27,7 +28,7 @@ from dk4tool.script.translation_batch import (
 )
 
 CANONICAL_BASELINE_SHA256 = (
-    "fb750eac00d3c91cf0cc00e5ee578ba8d2d6eebd7791338c61003d003e5b09d3"
+    "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf"
 )
 REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Opts", b"Grand Race", b"Extras", b"Gallery")
 FORBIDDEN_PLACEHOLDERS = (b"see below",)
@@ -136,13 +137,13 @@ def load_release_stack(path: Path = RELEASE_STACK_PATH) -> dict[str, object]:
         raise ValueError(f"{path}: unsupported release-stack format")
     baseline = stack.get("canonical_baseline")
     if not isinstance(baseline, dict):
-        raise ValueError(f"{path}: missing canonical_baseline")
+        raise TypeError(f"{path}: missing canonical_baseline")
     if str(baseline.get("sha256", "")).lower() != CANONICAL_BASELINE_SHA256:
         raise ValueError(f"{path}: canonical baseline hash disagrees with builder")
     accepted = stack.get("accepted_layers")
     profiles = stack.get("profiles")
     if not isinstance(accepted, list) or not isinstance(profiles, dict):
-        raise ValueError(f"{path}: invalid accepted_layers or profiles")
+        raise TypeError(f"{path}: invalid accepted_layers or profiles")
     for layer in accepted:
         if (
             not isinstance(layer, dict)
@@ -177,7 +178,7 @@ def profile_batch_paths(stack: dict[str, object], profile: str) -> list[Path]:
     assert isinstance(profiles, dict)
     value = profiles.get(profile)
     if not isinstance(value, dict):
-        raise ValueError(f"unknown release profile: {profile}")
+        raise TypeError(f"unknown release profile: {profile}")
     if value.get("status") == "revoked":
         raise ValueError(f"release profile is revoked and cannot be built: {profile}")
     if value.get("status") != "experimental":
@@ -319,6 +320,87 @@ def apply_arm9_fixed_batch(batch_path: Path, source: bytes) -> tuple[bytes, list
     return apply_arm9_fixed_batches([batch_path], source)
 
 
+def apply_pxl_label_batches(
+    batch_paths: list[Path], source: bytes
+) -> tuple[bytes, list[str]]:
+    """Redraw source-locked labels inside an existing fixed-size PXL atlas."""
+
+    actual_hash = sha256(source)
+    image = PxlImage.from_bytes(source)
+    record_ids: list[str] = []
+    claimed_boxes: list[tuple[int, int, int, int]] = []
+    for batch_path in batch_paths:
+        batch = load_batch_header(batch_path)
+        if batch.get("format") != "dk4-pxl-label-batch-v1":
+            raise ValueError(f"{batch_path}: unsupported PXL batch format")
+        if str(batch.get("source_file_sha256", "")).lower() != actual_hash:
+            raise ValueError(f"{batch_path}: PXL source SHA-256 mismatch")
+        records = batch.get("records")
+        if not isinstance(records, list) or not records:
+            raise ValueError(f"{batch_path}: PXL batch has no records")
+        for record in records:
+            if not isinstance(record, dict):
+                raise TypeError(f"{batch_path}: PXL record must be an object")
+            row_id = str(record.get("id", ""))
+            if not row_id or row_id in record_ids:
+                raise ValueError(f"{batch_path}: duplicate or missing PXL record id")
+            raw_box = record.get("box")
+            if not isinstance(raw_box, list) or len(raw_box) != 4:
+                raise ValueError(f"{batch_path}: {row_id} requires a four-value box")
+            box = tuple(int(value) for value in raw_box)
+            left, top, right, bottom = box
+            if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
+                raise ValueError(f"{batch_path}: {row_id} box is outside the PXL atlas")
+            if any(
+                left < old_right
+                and right > old_left
+                and top < old_bottom
+                and bottom > old_top
+                for old_left, old_top, old_right, old_bottom in claimed_boxes
+            ):
+                raise ValueError(f"{batch_path}: {row_id} overlaps another PXL label")
+            erase = str(record.get("erase", "dark-text"))
+            if erase == "dark-text":
+                image.erase_dark_text(box, threshold=int(record.get("threshold", 135)))
+            elif erase == "palette-indices":
+                raw_indices = record.get("palette_indices")
+                if not isinstance(raw_indices, list) or not raw_indices:
+                    raise ValueError(
+                        f"{batch_path}: {row_id} requires palette_indices"
+                    )
+                extra_indices = batch.get("additional_palette_indices", [])
+                if not isinstance(extra_indices, list):
+                    raise ValueError(
+                        f"{batch_path}: additional_palette_indices must be a list"
+                    )
+                image.erase_palette_indices(
+                    box,
+                    {
+                        int(value)
+                        for value in [*raw_indices, *extra_indices]
+                    },
+                )
+            else:
+                raise ValueError(f"{batch_path}: {row_id} has unsupported erase mode {erase!r}")
+            image.draw_text(
+                box,
+                str(record.get("text", "")),
+                int(record.get("color_index", 1)),
+                outline_index=(
+                    int(record["outline_index"])
+                    if record.get("outline_index") is not None
+                    else None
+                ),
+                maximum_size=int(record.get("maximum_size", 13)),
+            )
+            claimed_boxes.append(box)
+            record_ids.append(row_id)
+    rebuilt = image.to_bytes()
+    if len(rebuilt) != len(source):
+        raise ValueError("PXL label rebuild changed the resource allocation")
+    return rebuilt, record_ids
+
+
 def changed_segments(before: bytes, after: bytes) -> set[tuple[int, int]]:
     def logical_segments(block: bytes, block_index: int) -> list[bytes]:
         if block[:4] != b"CS\0\x01":
@@ -448,6 +530,14 @@ def main() -> None:
     relocation_checks: dict[str, object] = {}
     for file_path, file_batch_paths in grouped.items():
         source = candidate.read_file(file_path)
+        formats = {str(load_batch_header(path).get("format", "")) for path in file_batch_paths}
+        if formats == {"dk4-pxl-label-batch-v1"}:
+            rebuilt, record_ids = apply_pxl_label_batches(file_batch_paths, source)
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: PXL label batch made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
         if file_path == "/__arm9__.bin":
             rebuilt, record_ids = apply_arm9_fixed_batches(file_batch_paths, source)
             if rebuilt == source:

@@ -156,7 +156,14 @@ CHARACTER_ENTRIES = (
     ),
     Arm9ProfileEntry("DK4_MARIA_NAME", 1425456, "マリア", "Maria", "Maria character record"),
     Arm9ProfileEntry("DK4_MARIA_LAST", 1424056, "リー", "Lee", "Maria character record"),
-    Arm9ProfileEntry("DK4_MARIA_ORG", 1424736, "リー家", "LiFam", "Maria character record"),
+    Arm9ProfileEntry(
+        "DK4_MARIA_ORG",
+        1424736,
+        "リー家",
+        "Li Clan",
+        "Maria character record",
+        slot_size=8,
+    ),
     Arm9ProfileEntry(
         "DK4_MARIA_BIO_1",
         1375924,
@@ -319,6 +326,14 @@ CITY_SCREEN_ENTRIES = (
         "Normal",
         "City status value used by the Lisbon information screen",
         slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_CITY_TYPE_PORT",
+        0x1565E0,
+        "港",
+        "Prt",
+        "Port-city type value; three letters leave the required terminator before City",
+        slot_size=4,
     ),
     Arm9ProfileEntry("DK4_CITY_TYPE_CITY", 0x1565E4, "都市", "City", "City type value"),
     Arm9ProfileEntry(
@@ -589,7 +604,7 @@ WORLD_CITY_ENTRIES = (
     Arm9ProfileEntry("DK4_CITY_MERIDA", 0x15BCA8, "メリダ", "Merida", "World settlement name", slot_size=8),
     Arm9ProfileEntry("DK4_CITY_BASRA_A", 0x15BCD0, "バスラ", "Basra", "World settlement name", slot_size=8),
     Arm9ProfileEntry("DK4_CITY_GUAM", 0x15BD00, "グアム", "Guam", "World settlement name", slot_size=8),
-    Arm9ProfileEntry("DK4_CITY_BAHAMAS", 0x15BE08, "バハマ", "Bahama", "World settlement name", slot_size=8),
+    Arm9ProfileEntry("DK4_CITY_BAHAMAS", 0x15BE08, "バハマ", "Bahamas", "World settlement name", slot_size=8),
     Arm9ProfileEntry("DK4_CITY_ADEN", 0x15BE50, "アデン", "Aden", "World settlement name", slot_size=8),
     Arm9ProfileEntry("DK4_CITY_AVA", 0x15BE68, "アヴァ", "Ava", "World settlement name", slot_size=8),
     Arm9ProfileEntry("DK4_CITY_NOME", 0x15BE78, "ノーム", "Nome", "World settlement name", slot_size=8),
@@ -946,7 +961,7 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_CATEGORY_TEXTILES", 0x15A0D4, "繊維", "Textile", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_LUXURY", 0x15A0DC, "贅沢品", "Luxury", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_FOOD", 0x15A0E4, "食料品", "Food", "Global trade category", slot_size=8),
-    Arm9ProfileEntry("DK4_CATEGORY_SEASONING", 0x15A0EC, "調味料", "Flavor", "Global trade category", slot_size=8),
+    Arm9ProfileEntry("DK4_CATEGORY_SEASONING", 0x15A0EC, "調味料", "Condim.", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_TREATS", 0x15A0F4, "嗜好品", "Treats", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_JEWELRY", 0x15A0FC, "装飾品", "Jewelry", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_METALS", 0x15A104, "貴金属", "Metals", "Global trade category", slot_size=8),
@@ -1187,7 +1202,7 @@ TOWN_UI_ENTRIES = (
     # references the same global data table, including Seville.
     Arm9ProfileEntry("DK4_FACTION_VALDES", 0x15D214, "バルデス軍", "Valdes", "Global faction name", slot_size=12),
     Arm9ProfileEntry("DK4_GOOD_SULTANA", 0x15C9D4, "サルタナ", "Sultana", "Global commodity name", slot_size=12),
-    Arm9ProfileEntry("DK4_GOOD_COTTON_CLOTH", 0x15BF90, "綿織物", "Cotton", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_COTTON_CLOTH", 0x15BF90, "綿織物", "CotClth", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_ARMOR", 0x15B850, "甲冑", "Armor", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_FACTION_CLIFFORD", 0x15E234, "クリフォード軍", "Clifford", "Global faction name", slot_size=14),
     Arm9ProfileEntry("DK4_FACTION_ESPINOSA", 0x15E254, "エスピノサ商会", "Espinosa Co.", "Global faction name", slot_size=14),
@@ -1198,11 +1213,19 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_FACTION_KURUSHIMA", 0x15D280, "クルシマ家", "Kurushima", "Global faction name", slot_size=10),
     Arm9ProfileEntry("DK4_FACTION_PEREIRA", 0x15DC04, "ペレイラ商会", "Pereira", "Global faction name", slot_size=14),
     Arm9ProfileEntry("DK4_FACTION_ESCANTE", 0x15DC14, "エスカンテ軍", "Escante", "Global faction name", slot_size=14),
+    Arm9ProfileEntry(
+        "DK4_FACTION_SPEYER",
+        0x15E778,
+        "シュパイヤー商会",
+        "Speyer Co.",
+        "Global faction name used by Lubeck's market report",
+        slot_size=20,
+    ),
     Arm9ProfileEntry("DK4_GOOD_SAKE", 0x15B848, "清酒", "Sake", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_PLATINUM", 0x15B860, "白金", "Platinum", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_SOYBEANS", 0x15B880, "大豆", "Soybeans", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_PLATINUM", 0x15B860, "白金", "Plat.", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_SOYBEANS", 0x15B880, "大豆", "Soybean", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_BEEF", 0x15B8C0, "牛肉", "Beef", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_SILK", 0x15B930, "生糸", "Raw Silk", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_SILK", 0x15B930, "生糸", "Silk", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_WHEAT", 0x15B938, "小麦", "Wheat", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_IVORY", 0x15B980, "象牙", "Ivory", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_PEARLS", 0x15B988, "真珠", "Pearls", "Global commodity name", slot_size=8),
@@ -1224,7 +1247,7 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_GOOD_CANNON", 0x15BB00, "大砲", "Cannon", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_BLADES", 0x15BB60, "刀剣", "Blades", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_MEAD", 0x15BBC0, "蜂蜜酒", "Mead", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_GOLD_DUST", 0x15BBE0, "金の砂", "Gold", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_GOLD_DUST", 0x15BBE0, "金の砂", "G. Dust", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_CHERRY_BLOSSOMS", 0x15BBF0, "さくら", "Cherry", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_COCOA", 0x15BC40, "カカオ", "Cocoa", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_TOBACCO", 0x15BC50, "タバコ", "Tobacco", "Global commodity name", slot_size=8),
@@ -1233,34 +1256,34 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_GOOD_TIN_ORE", 0x15BCB0, "錫鉱石", "Tin Ore", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_GLASS", 0x15BCB8, "ガラス", "Glass", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_SULFUR", 0x15BCF0, "イオウ", "Sulfur", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_WOOLEN_CLOTH", 0x15BD10, "毛織物", "Wool", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_IRON_ORE", 0x15BD58, "鉄鉱石", "Iron Ore", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_WOOLEN_CLOTH", 0x15BD10, "毛織物", "WoolCl.", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_IRON_ORE", 0x15BD58, "鉄鉱石", "Iron", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_COPPER_ORE", 0x15BD80, "銅鉱石", "Copper", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_JADE", 0x15BE30, "ヒスイ", "Jade", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_PORCELAIN", 0x15BE60, "陶磁器", "China", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_BLACK_WOOL", 0x15BF30, "黒羊毛", "Black", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_BLACK_WOOL", 0x15BF30, "黒羊毛", "B. Wool", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_TOMATOES", 0x15BF70, "トマト", "Tomato", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_CHEESE", 0x15BF78, "チーズ", "Cheese", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_VANILLA", 0x15BFA8, "バニラ", "Vanilla", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_PALM_OIL", 0x15BFB0, "ヤシ油", "Palm Oil", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_TURMERIC", 0x15BFC0, "ウコン", "Turmeric", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_PALM_OIL", 0x15BFB0, "ヤシ油", "P. Oil", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_TURMERIC", 0x15BFC0, "ウコン", "Turmer.", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_JAM", 0x15BFF8, "ジャム", "Jam", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_HEMP_CLOTH", 0x15C058, "麻織物", "Hemp", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_SMOKED_SALMON", 0x15C110, "鮭の燻製", "Salmon", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_HEMP_CLOTH", 0x15C058, "麻織物", "HempCl.", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_SMOKED_SALMON", 0x15C110, "鮭の燻製", "Smoked", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_CLOVE", 0x15C140, "チョウジ", "Clove", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_NUTMEG", 0x15C158, "ナツメグ", "Nutmeg", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_BETEL_NUT", 0x15C17C, "ビンロウ", "Betel", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_PIMENTO", 0x15C194, "ピメント", "Pimento", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_COFFEE", 0x15C1C4, "コーヒー", "Coffee", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_CINNAMON", 0x15C35C, "シナモン", "Cinnamon", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_CINNAMON", 0x15C35C, "シナモン", "Cinnam.", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_OPAL", 0x15C404, "オパール", "Opal", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_WAX", 0x15C488, "ワックス", "Wax", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_MUSK", 0x15C59C, "ジャコウ", "Musk", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_PUMPKIN", 0x15C5A8, "カボチャ", "Pumpkin", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_TORTOISESHELL", 0x15C6A4, "ベッコウ", "Tortoise", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_TORTOISESHELL", 0x15C6A4, "ベッコウ", "T-Shell", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_PEPPER", 0x15C734, "コショウ", "Pepper", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_SALMON", 0x15C74C, "サーモン", "Salmon", "Global commodity name", slot_size=8),
-    Arm9ProfileEntry("DK4_GOOD_SHARK_FIN", 0x15C794, "フカヒレ", "Shark", "Global commodity name", slot_size=8),
+    Arm9ProfileEntry("DK4_GOOD_SHARK_FIN", 0x15C794, "フカヒレ", "Shk Fin", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_CAVIAR", 0x15C890, "キャビア", "Caviar", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_GINSENG", 0x15C920, "朝鮮人参", "Ginseng", "Global commodity name", slot_size=8),
     Arm9ProfileEntry("DK4_GOOD_HONEY", 0x15C974, "ハチミツ", "Honey", "Global commodity name", slot_size=8),
@@ -1271,7 +1294,7 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_GOOD_BRANDY", 0x15CD58, "ブランデー", "Brandy", "Global commodity name", slot_size=10),
     Arm9ProfileEntry("DK4_GOOD_MUSCAT", 0x15CD70, "マスカット", "Muscat", "Global commodity name", slot_size=10),
     Arm9ProfileEntry("DK4_GOOD_AMBOYNA", 0x15CE00, "アンボイナ", "Amboyna", "Global commodity name", slot_size=10),
-    Arm9ProfileEntry("DK4_GOOD_RED_PIGMENT", 0x15CE18, "紅色の顔料", "Red Pig", "Global commodity name", slot_size=10),
+    Arm9ProfileEntry("DK4_GOOD_RED_PIGMENT", 0x15CE18, "紅色の顔料", "Red Dye", "Global commodity name", slot_size=10),
 )
 
 MARKET_UI_ENTRIES = (
@@ -1280,7 +1303,7 @@ MARKET_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_MARKET_TRADE_B", 0x157004, "交易", "Trade", "Trading-post command", slot_size=8),
     # This slot is followed by live data rather than padding. Keep one byte for
     # the terminator or the renderer continues into the following structure.
-    Arm9ProfileEntry("DK4_MARKET_SELL_ALL", 0x15700C, "全売", "SellAll", "Trading-post Y-button command", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_SELL_ALL", 0x15700C, "全売", "Sell", "Trading-post Y-button command", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_INVEST_A", 0x157024, "商業投資", "Invest", "Trading-post command", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_INVEST_B", 0x157030, "商業投資", "Invest", "Trading-post command", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_INFO_A", 0x15703C, "相場情報", "Market Info", "Trading-post command", slot_size=12),
@@ -1295,6 +1318,14 @@ MARKET_UI_ENTRIES = (
     ),
     # Market report and trading summary screen.
     Arm9ProfileEntry("DK4_MARKET_INFO_HEADING", 0x159F6C, "相場情報", "Market Info", "Market-report heading", slot_size=12),
+    Arm9ProfileEntry(
+        "DK4_MARKET_CULTURE_FORMAT",
+        0x159F7C,
+        "%s文化圏",
+        "%s Region",
+        "City-information cultural-region format",
+        slot_size=12,
+    ),
     Arm9ProfileEntry("DK4_MARKET_TOTAL_INCOME", 0x159FA4, "総収入", "Income", "Trading summary label", slot_size=8),
     # The trading-summary renderer clips single-byte text to the byte length of
     # the original Japanese label. These intentionally fit those visual limits.
@@ -1328,6 +1359,22 @@ MARKET_UI_ENTRIES = (
         slot_size=12,
     ),
     Arm9ProfileEntry("DK4_MARKET_REMAINING", 0x15A474, "残金", "Funds", "Shared investment funds label", slot_size=8),
+    Arm9ProfileEntry(
+        "DK4_MARKET_GERMAN_REGION",
+        0x15BD50,
+        "ドイツ",
+        "German",
+        "Culture-region name used by Lubeck",
+        slot_size=8,
+    ),
+    Arm9ProfileEntry(
+        "DK4_MARKET_PORT_FILTER",
+        0x157080,
+        "停泊地",
+        "Port",
+        "Market-information Y-button port filter",
+        slot_size=8,
+    ),
     # Market-report map screen.
     Arm9ProfileEntry(
         "DK4_MARKET_MAP_FEE",
@@ -1337,8 +1384,8 @@ MARKET_UI_ENTRIES = (
         "Market-report map fee",
         slot_size=20,
     ),
-    Arm9ProfileEntry("DK4_MARKET_MAP_FACTION", 0x14C15C, "勢力", "Faction", "Market-report map button", slot_size=8),
-    Arm9ProfileEntry("DK4_MARKET_MAP_WORLD", 0x14C17C, "世界", "World", "Market-report map button", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_MAP_FACTION", 0x14C15C, "勢力", "Forces", "Market-report map button", slot_size=8),
+    Arm9ProfileEntry("DK4_MARKET_MAP_WORLD", 0x14C17C, "世界", "Map", "Market-report map button", slot_size=8),
 )
 
 
@@ -1537,6 +1584,10 @@ _GLOBAL_NAME_SPECS = (
     (0x15E054, "ヌレンナハール", "Nurennahar", 16),
     (0x15E084, "チェントリオネ", "Centurione", 16),
     (0x15E114, "アルナジュード", "Arnajud", 16),
+    # Twenty-byte record omitted by the original 8/12/16-byte name audit.
+    # This is Gerhard's surname half; the nameplate joins it to the already
+    # translated given-name slot at 0x15CD4C.
+    (0x15E674, "アーデルンカッツ", "Ardelknatts", 20),
 )
 
 GLOBAL_NAME_ENTRIES = tuple(

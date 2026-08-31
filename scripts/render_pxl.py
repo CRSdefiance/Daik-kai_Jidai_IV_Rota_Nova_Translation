@@ -53,8 +53,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Render a DK4 PXL image atlas.")
     parser.add_argument("pxl", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--scale", type=int, default=1)
     args = parser.parse_args()
     image = decode(args.pxl)
+    if args.scale < 1:
+        raise ValueError("scale must be at least one")
+    if args.scale != 1:
+        image = image.resize(
+            (image.width * args.scale, image.height * args.scale),
+            resample=Image.Resampling.NEAREST,
+        )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     image.save(args.output)
     print(f"{args.output} ({image.width}x{image.height})")

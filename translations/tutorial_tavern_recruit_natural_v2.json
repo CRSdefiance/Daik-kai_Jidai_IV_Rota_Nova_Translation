@@ -1,0 +1,290 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "shared-pair-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Shared tavern greetings and sailor-recruitment prompts used by Raphael's Lisbon tutorial",
+  "blocked_packed_records": [
+    "DK4_MES_B00_R0037",
+    "DK4_MES_B00_R0039",
+    "DK4_MES_B11_R0024",
+    "DK4_MES_B13_R0001",
+    "DK4_MES_B13_R0004",
+    "DK4_MES_B13_R0007"
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B11_R0025",
+      "english": "Not enough money, Admiral.{PAD}",
+      "speaker": "Companion",
+      "context": "A companion warns that the party cannot afford the recruitment action.",
+      "source_meaning": "The companion calls to the admiral and says there is not enough money.",
+      "localization_note": "Keeps the youthful warning direct and complete.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0026",
+      "english": "Recruit sailors for %s coins?{PAD}",
+      "speaker": "Companion",
+      "context": "A companion notes the shortage and asks whether to spend the displayed amount recruiting sailors.",
+      "source_meaning": "The companion says money is insufficient or tight, then proposes recruiting sailors for the shown number of coins.",
+      "localization_note": "Preserves the hesitation and runtime cost while remaining a clear choice prompt.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0027",
+      "english": "Recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion says they will gather sailors for the shown number of gold coins.",
+      "localization_note": "A compact natural action line fits this small fixed slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0028",
+      "english": "Let's recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion politely says they will spend the shown amount to gather sailors.",
+      "localization_note": "Retains the friendly feminine voice without changing the action.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0029",
+      "english": "We'll recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion says they will spend the shown amount recruiting sailors.",
+      "localization_note": "Uses a confident but natural officer voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0030",
+      "english": "Recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion firmly says they will spend the shown amount gathering sailors.",
+      "localization_note": "The concise command retains the firm voice and fixed-slot safety.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0031",
+      "english": "Recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion says they will gather sailors for the shown amount.",
+      "localization_note": "Fits the especially tight source allocation without becoming broken English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B11_R0032",
+      "english": "Let's recruit for %s coins.{PAD}",
+      "speaker": "Companion",
+      "context": "One officer voice proposes spending the displayed amount to gather sailors.",
+      "source_meaning": "The companion politely proposes spending the shown amount gathering sailors.",
+      "localization_note": "A courteous natural variant preserves the shared action.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B13_R0000",
+      "english": "Need %s more sailors. Keep recruiting?{PAD}",
+      "speaker": "Companion",
+      "context": "Recruitment did not meet the required crew count, so a companion asks whether to continue.",
+      "source_meaning": "The companion says the crew remains short by the displayed number and asks whether to gather more sailors.",
+      "localization_note": "Combines the numeric shortage and follow-up choice in a clear prompt.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B13_R0002",
+      "english": "Still need %s sailors. Recruit more?{PAD}",
+      "speaker": "Companion",
+      "context": "Recruitment did not meet the required crew count, so a companion asks whether to continue.",
+      "source_meaning": "The companion says the crew remains short by the displayed number and asks whether to gather more.",
+      "localization_note": "A blunt but grammatical voice variant fits the allocation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B13_R0003",
+      "english": "Need %s more sailors. Keep recruiting?{PAD}",
+      "speaker": "Companion",
+      "context": "Recruitment did not meet the required crew count, so a companion asks whether to continue.",
+      "source_meaning": "The older companion says the crew remains short by the displayed number and asks whether to gather more.",
+      "localization_note": "Preserves the practical meaning in natural English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B13_R0005",
+      "english": "%s berths remain. Recruit more?{PAD}",
+      "speaker": "Companion",
+      "context": "There is room for additional sailors, and a companion asks whether to continue recruiting.",
+      "source_meaning": "The companion says the ship still has room for the displayed number of sailors and asks whether to gather more.",
+      "localization_note": "Berths conveys available shipboard capacity concisely.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B13_R0006",
+      "english": "%s berths remain. Recruit more?{PAD}",
+      "speaker": "Companion",
+      "context": "There is room for additional sailors, and a companion asks whether to continue recruiting.",
+      "source_meaning": "The companion says the ship still has room for the displayed number of sailors and asks whether to gather more.",
+      "localization_note": "A polite voice variant uses the same clear nautical term.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "blocked_records": [
+    {
+      "id": "DK4_MES_B00_R0037",
+      "entries": [
+        "That'll be 10 coins.",
+        "Five coins."
+      ],
+      "blocker": "Two price strings share one record; the second runtime entry offset is not independently proven against the accepted parent.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B00_R0039",
+      "entries": [
+        "%s, we have a guest!",
+        "Coming!"
+      ],
+      "blocker": "The keeper's call and the employee's answer share one record with an unproven interior entry offset.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B11_R0024",
+      "entries": [
+        "Not enough money, Admiral.",
+        "Looks like we're short on money, Admiral.",
+        "Um... we don't have enough money, Admiral.",
+        "We're short on money, Admiral.",
+        "We do not have enough money, Admiral."
+      ],
+      "blocker": "Five officer-voice warnings are concatenated without independently proven runtime entry offsets.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B13_R0001",
+      "entries": [
+        "Still need %s sailors. Recruit more?",
+        "We're still %s sailors short. Recruit more?"
+      ],
+      "blocker": "Two officer-voice shortfall prompts share the allocation; their interior entry offset remains unproven.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B13_R0004",
+      "entries": [
+        "We came up %s sailors short. Recruit more?",
+        "Still need %s sailors. Recruit more?",
+        "%s berths remain. Recruit more?"
+      ],
+      "blocker": "Three recruitment follow-ups share the allocation; both interior entry offsets remain unproven.",
+      "editorial_review": true,
+      "formatting_review": false
+    },
+    {
+      "id": "DK4_MES_B13_R0007",
+      "entries": [
+        "%s berths remain. Recruit more?",
+        "There is room for %s more. Recruit more?",
+        "We can take %s more sailors. Recruit more?",
+        "%s berths remain. Shall we recruit more?"
+      ],
+      "blocker": "Four officer-voice spare-capacity prompts share the allocation; all three interior entry offsets remain unproven.",
+      "editorial_review": true,
+      "formatting_review": false
+    }
+  ]
+}

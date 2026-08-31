@@ -1,0 +1,317 @@
+{
+  "format": "dk4-blocked-editorial-inventory-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "block_index": 27,
+  "buildable": false,
+  "records": [
+    {
+      "id": "DK4_MES_B27_R0003",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "Admiral! We can't sail after dismissing every sailor! / Hold on! The ship won't move if you dismiss every sailor!",
+      "source_length": 95,
+      "japanese_markup": " 提督！{LB}水夫を全員解雇しちゃったら{LB}船を動かせないわ！おいおい{LB}水夫を全員解雇したら{LB}船は動かんぞ",
+      "draft_messages": [
+        "Admiral! We can't sail after dismissing every sailor!",
+        "Hold on! The ship won't move if you dismiss every sailor!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0006",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We can't work without this... / Wait! We can't work without this.",
+      "source_length": 76,
+      "japanese_markup": "  これなしでは、仕事にならんな…おっと{LB}これがないと{LB}仕事にならないんだったわ",
+      "draft_messages": [
+        "We can't work without this...",
+        "Wait! We can't work without this."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0009",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We found %s's fleet! Moving to attack! / We found %s's fleet! Attack! / We found %s's fleet! Let's attack! / %s's fleet is attacking us!",
+      "source_length": 156,
+      "japanese_markup": " %sの艦隊を{LB}発見しました！{LB}攻撃に移りますぜ！%sの艦隊を{LB}発見したぞ！{LB}攻撃するんじゃ！%sの艦隊を{LB}発見したよ！{LB}攻撃しよう！%sの艦隊が{LB}攻撃を仕掛けてきました！",
+      "draft_messages": [
+        "We found %s's fleet! Moving to attack!",
+        "We found %s's fleet! Attack!",
+        "We found %s's fleet! Let's attack!",
+        "%s's fleet is attacking us!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0015",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We defeated %s %s's fleet! {MACRO:I}C won!",
+      "source_length": 48,
+      "japanese_markup": " %s・%sの{LB}艦隊を撃破したよ！{LB}{MACRO:I}Cたちの{LB}勝ちだね！",
+      "draft_messages": [
+        "We defeated %s %s's fleet! {MACRO:I}C won!"
+      ],
+      "blocker": "The accepted allocation contains an ASCII command-like macro whose runtime semantics are not proven safe for replacement.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0017",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We defeated %s %s's fleet! We won! / We defeated %s %s's fleet! Victory! / We beat %s %s's fleet! We won! / %s %s's fleet has fled!",
+      "source_length": 172,
+      "japanese_markup": " %s・%sの{LB}艦隊を撃破！{LB}俺たちの勝利だぜ！%s・%sの{LB}艦隊を撃破したぞい！{LB}わしらの勝ちじゃ！%s・%sの{LB}艦隊をやっつけた！{LB}おいらたちが勝ったんだ！%s・%sの{LB}艦隊は逃げ出しました！",
+      "draft_messages": [
+        "We defeated %s %s's fleet! We won!",
+        "We defeated %s %s's fleet! Victory!",
+        "We beat %s %s's fleet! We won!",
+        "%s %s's fleet has fled!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0023",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "{MACRO:I}C was defeated by %s %s's fleet...",
+      "source_length": 43,
+      "japanese_markup": " {MACRO:I}Cらは{LB}%s・%sの{LB}艦隊に撃破されちゃったよ…",
+      "draft_messages": [
+        "{MACRO:I}C was defeated by %s %s's fleet..."
+      ],
+      "blocker": "The accepted allocation contains an ASCII command-like macro whose runtime semantics are not proven safe for replacement.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0024",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We were defeated by %s %s's fleet... / %s %s's fleet defeated us... / We lost to %s %s's fleet... / %s %s's fleet beat us...",
+      "source_length": 171,
+      "japanese_markup": " 私たちは{LB}%s・%sの{LB}艦隊に撃破されました…俺たちは{LB}%s・%sの{LB}艦隊に撃破されちまったぜ…わしらは{LB}%s・%sの{LB}艦隊に撃破されてしもうた…おいらたち{LB}%s・%sの{LB}艦隊にやられちゃった…",
+      "draft_messages": [
+        "We were defeated by %s %s's fleet...",
+        "%s %s's fleet defeated us...",
+        "We lost to %s %s's fleet...",
+        "%s %s's fleet beat us..."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0026",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "%s %s's fleet was tougher than expected, so {MACRO:I}C's fleet retreated...",
+      "source_length": 62,
+      "japanese_markup": " %s・%sの{LB}艦隊は思ったより手強く{LB}{MACRO:I}Cたちの艦隊は{LB}退却しました…",
+      "draft_messages": [
+        "%s %s's fleet was tougher than expected, so {MACRO:I}C's fleet retreated..."
+      ],
+      "blocker": "The accepted allocation contains an ASCII command-like macro whose runtime semantics are not proven safe for replacement.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0030",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "%s %s's fleet was tougher than expected, so we fled... / We apologize. We lost %s gold. / Sorry. We lost %s gold.",
+      "source_length": 163,
+      "japanese_markup": " %s・%sの{LB}艦隊は思ったより強くて{LB}おいらたちの艦隊、逃げちゃった…申し訳ありません{LB}金貨%s枚の{LB}損害を出してしまいましたごめんなさい{LB}金貨%s枚の{LB}損害を出しちゃいました",
+      "draft_messages": [
+        "%s %s's fleet was tougher than expected, so we fled...",
+        "We apologize. We lost %s gold.",
+        "Sorry. We lost %s gold."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0032",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "Sorry. We lost %s gold. / Forgive us. We lost %s gold.",
+      "source_length": 91,
+      "japanese_markup": " 申し訳ない{LB}金貨%s枚の{LB}損害を出しちまいましたすまんのう{LB}金貨%s枚の{LB}損害を出してしもうたわい",
+      "draft_messages": [
+        "Sorry. We lost %s gold.",
+        "Forgive us. We lost %s gold."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0033",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "Sorry. We lost %s gold. / We earned %s gold.",
+      "source_length": 80,
+      "japanese_markup": " ごめんなさい{LB}金貨%s枚も{LB}ソンさせちゃった金貨%s枚の{LB}収益を上げることができました",
+      "draft_messages": [
+        "Sorry. We lost %s gold.",
+        "We earned %s gold."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0036",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We made %s gold! / We lack the gold to cover the loss, so we'll add it to next month's expenses. / We can't cover the loss, so we'll add it to next month's expenses.",
+      "source_length": 165,
+      "japanese_markup": "金貨%s枚も{LB}儲かったよ！{LB}えへへ～損失を精算するには{LB}所持金が足りないので{LB}来月分の支出額に繰り越します損失を精算するにはお金が足りないので{LB}来月の支出額に繰り越しますよ",
+      "draft_messages": [
+        "We made %s gold!",
+        "We lack the gold to cover the loss, so we'll add it to next month's expenses.",
+        "We can't cover the loss, so we'll add it to next month's expenses."
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0074",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "Beginning the attack on %s. / We found pirate %s at %s! / We found pirate %s at %s! / We found pirate %s at %s!",
+      "source_length": 118,
+      "japanese_markup": "では{LB}%sの街への{LB}攻撃を開始します%sに{LB}海賊%sを{LB}発見しました！%sに{LB}海賊%sを{LB}見つけました！%sに{LB}海賊%sを{LB}発見しましたぜ！",
+      "draft_messages": [
+        "Beginning the attack on %s.",
+        "We found pirate %s at %s!",
+        "We found pirate %s at %s!",
+        "We found pirate %s at %s!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0075",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "We found pirate %s at %s! / Pirate %s is at %s! / We found pirate %s at %s!",
+      "source_length": 87,
+      "japanese_markup": " %sに{LB}海賊%sを{LB}発見したぞい！ねえ、%sに{LB}海賊%sが{LB}いるよ！%sに{LB}海賊%sを{LB}発見しましたぞ！",
+      "draft_messages": [
+        "We found pirate %s at %s!",
+        "Pirate %s is at %s!",
+        "We found pirate %s at %s!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B27_R0080",
+      "speaker": "Shared event or battle voice",
+      "context": "A shared naval report announces fleet, city, ship, loot, or pirate events.",
+      "source_meaning": "Ho ho ho! We obtained information on pirate %s. / We obtained information on pirate %s!",
+      "source_length": 77,
+      "japanese_markup": "  ふぉふぉふぉ{LB}海賊%sの{LB}情報を入手しましたわい海賊%sの{LB}情報を手に入れました！",
+      "draft_messages": [
+        "Ho ho ho! We obtained information on pirate %s.",
+        "We obtained information on pirate %s!"
+      ],
+      "blocker": "Multiple adjacent messages appear without NUL delimiters; their interior entry offsets are unproven.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ]
+}

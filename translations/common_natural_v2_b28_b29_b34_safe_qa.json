@@ -1,0 +1,958 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "shared-pair-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "QA-clean subset of COMMON blocks 28, 29, and 34; overflow, command-byte, pair-phase, and unstable-wrap drafts are quarantined.",
+  "blocked_records": [
+    "DK4_MES_B28_R0000",
+    "DK4_MES_B28_R0020",
+    "DK4_MES_B28_R0021",
+    "DK4_MES_B28_R0022",
+    "DK4_MES_B28_R0023",
+    "DK4_MES_B28_R0024",
+    "DK4_MES_B28_R0033",
+    "DK4_MES_B28_R0035",
+    "DK4_MES_B28_R0039",
+    "DK4_MES_B28_R0040",
+    "DK4_MES_B28_R0044",
+    "DK4_MES_B28_R0046",
+    "DK4_MES_B28_R0047",
+    "DK4_MES_B28_R0050",
+    "DK4_MES_B28_R0051",
+    "DK4_MES_B28_R0052",
+    "DK4_MES_B28_R0053",
+    "DK4_MES_B28_R0054",
+    "DK4_MES_B28_R0055",
+    "DK4_MES_B28_R0056",
+    "DK4_MES_B28_R0057",
+    "DK4_MES_B28_R0059",
+    "DK4_MES_B28_R0060",
+    "DK4_MES_B28_R0062",
+    "DK4_MES_B28_R0064",
+    "DK4_MES_B28_R0065",
+    "DK4_MES_B28_R0066",
+    "DK4_MES_B28_R0068",
+    "DK4_MES_B28_R0069",
+    "DK4_MES_B28_R0071",
+    "DK4_MES_B28_R0074",
+    "DK4_MES_B28_R0079",
+    "DK4_MES_B28_R0080",
+    "DK4_MES_B29_R0000",
+    "DK4_MES_B29_R0001",
+    "DK4_MES_B29_R0002",
+    "DK4_MES_B29_R0003",
+    "DK4_MES_B29_R0004",
+    "DK4_MES_B29_R0009",
+    "DK4_MES_B29_R0010",
+    "DK4_MES_B29_R0011",
+    "DK4_MES_B29_R0012",
+    "DK4_MES_B29_R0015",
+    "DK4_MES_B29_R0018",
+    "DK4_MES_B29_R0019",
+    "DK4_MES_B29_R0020",
+    "DK4_MES_B29_R0021",
+    "DK4_MES_B29_R0025",
+    "DK4_MES_B29_R0026",
+    "DK4_MES_B29_R0027",
+    "DK4_MES_B29_R0028",
+    "DK4_MES_B29_R0029",
+    "DK4_MES_B29_R0030",
+    "DK4_MES_B29_R0031",
+    "DK4_MES_B29_R0034",
+    "DK4_MES_B29_R0035",
+    "DK4_MES_B29_R0036",
+    "DK4_MES_B29_R0037",
+    "DK4_MES_B29_R0038",
+    "DK4_MES_B29_R0039",
+    "DK4_MES_B29_R0040",
+    "DK4_MES_B29_R0041",
+    "DK4_MES_B29_R0042",
+    "DK4_MES_B29_R0044",
+    "DK4_MES_B29_R0047",
+    "DK4_MES_B29_R0051",
+    "DK4_MES_B29_R0052",
+    "DK4_MES_B29_R0059",
+    "DK4_MES_B29_R0060",
+    "DK4_MES_B34_R0000",
+    "DK4_MES_B34_R0002",
+    "DK4_MES_B34_R0003",
+    "DK4_MES_B34_R0004",
+    "DK4_MES_B34_R0005",
+    "DK4_MES_B34_R0007",
+    "DK4_MES_B34_R0008",
+    "DK4_MES_B34_R0010",
+    "DK4_MES_B34_R0011",
+    "DK4_MES_B34_R0013",
+    "DK4_MES_B34_R0015",
+    "DK4_MES_B34_R0016",
+    "DK4_MES_B34_R0018",
+    "DK4_MES_B34_R0020",
+    "DK4_MES_B34_R0021",
+    "DK4_MES_B34_R0023",
+    "DK4_MES_B34_R0025",
+    "DK4_MES_B34_R0030",
+    "DK4_MES_B34_R0031",
+    "DK4_MES_B34_R0032",
+    "DK4_MES_B34_R0034",
+    "DK4_MES_B34_R0035",
+    "DK4_MES_B34_R0036",
+    "DK4_MES_B34_R0038",
+    "DK4_MES_B34_R0039",
+    "DK4_MES_B34_R0041",
+    "DK4_MES_B34_R0045",
+    "DK4_MES_B34_R0046",
+    "DK4_MES_B34_R0047",
+    "DK4_MES_B34_R0048",
+    "DK4_MES_B34_R0050",
+    "DK4_MES_B34_R0051",
+    "DK4_MES_B34_R0052",
+    "DK4_MES_B34_R0054",
+    "DK4_MES_B34_R0055",
+    "DK4_MES_B34_R0056",
+    "DK4_MES_B34_R0057",
+    "DK4_MES_B34_R0058",
+    "DK4_MES_B34_R0059",
+    "DK4_MES_B34_R0062",
+    "DK4_MES_B34_R0063",
+    "DK4_MES_B34_R0065",
+    "DK4_MES_B34_R0068"
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B28_R0006",
+      "english": "We won!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "We won!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0007",
+      "english": "We won!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "We won!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0008",
+      "english": "We did it! We won!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "We did it! We won!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0010",
+      "english": "Our fleet has been defeated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet has been defeated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0011",
+      "english": "They took out our fleet...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "They took out our fleet...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0012",
+      "english": "Our fleet has been defeated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet has been defeated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0013",
+      "english": "Our fleet got beaten...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet got beaten...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0014",
+      "english": "We have retreated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "We have retreated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0016",
+      "english": "Our fleet has retreated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet has retreated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0017",
+      "english": "Our fleet has retreated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet has retreated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0018",
+      "english": "Our fleet has retreated...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet has retreated...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0019",
+      "english": "Our fleet ran away...{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Our fleet ran away...",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0026",
+      "english": "%s sank!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s sank!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0027",
+      "english": "%s sank!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s sank!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0028",
+      "english": "%s sank!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s sank!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0029",
+      "english": "%s sank!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s sank!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0030",
+      "english": "%s went down!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s went down!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0031",
+      "english": "%s has sunk!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has sunk!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0032",
+      "english": "%s has no sailors left!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has no sailors left!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0034",
+      "english": "%s has no sailors left!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has no sailors left!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0036",
+      "english": "%s has no sailors left!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has no sailors left!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0037",
+      "english": "%s has no sailors left!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has no sailors left!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0038",
+      "english": "%s has no sailors left!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has no sailors left!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0048",
+      "english": "They got me... Just you wait!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "They got me... Just you wait!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0063",
+      "english": "%s sent us a personal letter?{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s sent us a personal letter?",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B28_R0076",
+      "english": "They ended the pact?! What is %s thinking?{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "They ended the pact?! What is %s thinking?",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0007",
+      "english": "What?! %s wants trouble? Prepare yourself!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "What?! %s wants trouble? Prepare yourself!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0016",
+      "english": "%s has a new product?{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "%s has a new product?",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0017",
+      "english": "There's a new product in %s?{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "There's a new product in %s?",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0023",
+      "english": "Send a fleet at once!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Send a fleet at once!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0024",
+      "english": "Let us send a fleet at once.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Let us send a fleet at once.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0032",
+      "english": "What a joke! Absolutely not!{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "What a joke! Absolutely not!",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0045",
+      "english": "You can't pay? Then the deal is off.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "You can't pay? Then the deal is off.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0053",
+      "english": "A New World crop whose fruit and seeds are a local staple.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "A New World crop whose fruit and seeds are a local staple.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0054",
+      "english": "A New World vegetable whose ripe fruit turns bright red.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "A New World vegetable whose ripe fruit turns bright red.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0055",
+      "english": "A sweet, fragrant Southeast Asian fruit that turns yellow when ripe.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "A sweet, fragrant Southeast Asian fruit that turns yellow when ripe.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B29_R0056",
+      "english": "A honeycomb packed with nutritious honey gathered by bees.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "A honeycomb packed with nutritious honey gathered by bees.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0012",
+      "english": "Southeast Asia has rare fruit whose peel yields dye.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Southeast Asia has rare fruit whose peel yields dye.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0014",
+      "english": "Every voyage should carry this against scurvy.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Every voyage should carry this against scurvy.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0017",
+      "english": "Give this to a deckhand.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to a deckhand.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0022",
+      "english": "Give this to a deckhand.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to a deckhand.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0024",
+      "english": "Give it to an officer, or wield it yourself.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give it to an officer, or wield it yourself.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0026",
+      "english": "Give this to your boarding chief.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to your boarding chief.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0027",
+      "english": "Give this to your boarding chief.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to your boarding chief.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0028",
+      "english": "Entrust this to a reliable champion.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Entrust this to a reliable champion.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0029",
+      "english": "Entrust this to a reliable champion.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Entrust this to a reliable champion.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0033",
+      "english": "Give this to your boarding chief.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to your boarding chief.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0037",
+      "english": "Give it to a companion, or wield it yourself.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give it to a companion, or wield it yourself.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0043",
+      "english": "Give this to a deckhand.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to a deckhand.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0044",
+      "english": "Light, easy-to-use armor.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Light, easy-to-use armor.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0060",
+      "english": "This armor is worthy of the admiral.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "This armor is worthy of the admiral.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0061",
+      "english": "Give this to the sail handler.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Give this to the sail handler.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0064",
+      "english": "The lookout must know the ship's exact heading.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "The lookout must know the ship's exact heading.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0066",
+      "english": "Deck work is dull. A story might be a good diversion.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Deck work is dull. A story might be a good diversion.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0067",
+      "english": "Deck work is dull. Pass the time with a funny tale.{PAD}",
+      "speaker": "Fleet officer, adviser, or item appraiser",
+      "context": "Shared naval, diplomacy, product, or appraisal message.",
+      "source_meaning": "Deck work is dull. Pass the time with a funny tale.",
+      "localization_note": "Natural American English faithful to the clean Japanese single-message segment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

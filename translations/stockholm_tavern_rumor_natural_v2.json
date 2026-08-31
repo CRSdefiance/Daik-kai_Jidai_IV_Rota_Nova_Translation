@@ -1,0 +1,47 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "ecb0806b6f36f9bf4164ae46084fbbc12d4122af66b6a8920814197463f19491",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "shared-pair-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+  "scope": "Ordinary shared Stockholm tavern rumors reported during Hodram's route",
+  "records": [
+    {
+      "id": "DK4_MES_B10_R0040",
+      "english": "%s serves %s as %s.{PAD}",
+      "speaker": "Barkeep",
+      "context": "In Stockholm's tavern, the barkeep identifies the named officer, their faction, and their role as an influential local figure.",
+      "source_meaning": "The barkeep says that the named person, a specified officer of the named faction, holds considerable influence around this area.",
+      "localization_note": "Uses a concise relationship that reads naturally with the runtime values (for example, Argot serves Amsterdam as Trader), retains all three substitutions in source order, and avoids splitting the role across an automatic line break.",
+      "qa_waivers": ["line-break-count"],
+      "qa_waiver_reason": "The three Japanese manual breaks are unsafe legacy layout, not dramatic pauses; one caused the screenshot's missing initial letter. The localized sentence fits as one logical paragraph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B10_R0042",
+      "english": "Nothing much to report right now.{PAD}",
+      "speaker": "Tavern Hostess",
+      "context": "The tavern hostess says she has no noteworthy information for the player at present.",
+      "source_meaning": "The hostess says that there is no particular information worth mentioning right now.",
+      "localization_note": "Uses a natural conversational response and removes the inherited manual break so the following word cannot lose its first glyph.",
+      "qa_waivers": ["line-break-count"],
+      "qa_waiver_reason": "The Japanese layout break is not a dramatic pause; the localized response is one short logical sentence and fits without it.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}
