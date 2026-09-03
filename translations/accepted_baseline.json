@@ -1,14 +1,14 @@
 {
   "format": "dk4-accepted-baseline-v1",
-  "accepted_on": "2026-08-31",
-  "user_acceptance": "First, promote your current build.",
+  "accepted_on": "2026-09-03",
+  "user_acceptance": "Perfect! Promote this and ship it to Github!",
   "rom": "out/raphael_natural_v2_accepted_base.nds",
-  "sha256": "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf",
-  "promoted_from": "out/common_gameplay_natural_v2_candidate.nds",
-  "promoted_from_manifest": "out/common_gameplay_natural_v2_candidate.manifest.json",
+  "sha256": "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf",
+  "promoted_from": "out/extras_options_sound_common_v6_candidate.nds",
+  "promoted_from_manifest": "out/extras_options_sound_common_v6_candidate.manifest.json",
   "previous_baseline": {
-    "rom": "out/raphael_natural_v2_pre_common_accepted_rollback.nds",
-    "sha256": "fb750eac00d3c91cf0cc00e5ee578ba8d2d6eebd7791338c61003d003e5b09d3",
+    "rom": "out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds",
+    "sha256": "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf",
     "status": "rollback-only"
   },
   "accepted_layers": [
@@ -62,13 +62,34 @@
     "common-promotion-common_natural_v2_b35_safe",
     "common-promotion-common_natural_v2_b36_safe",
     "common-promotion-common_natural_v2_b38_safe",
-    "common-promotion-common_natural_v2_b39_safe"
+    "common-promotion-common_natural_v2_b39_safe",
+    "extras-common-v6-extras-menu-arm9",
+    "extras-common-v6-online00-graphics",
+    "extras-common-v6-online-cards-50-62",
+    "extras-common-v6-online51",
+    "extras-common-v6-online52",
+    "extras-common-v6-online53",
+    "extras-common-v6-online54",
+    "extras-common-v6-online55",
+    "extras-common-v6-online56",
+    "extras-common-v6-online57",
+    "extras-common-v6-online58",
+    "extras-common-v6-online59",
+    "extras-common-v6-online60",
+    "extras-common-v6-online61",
+    "extras-common-v6-online62",
+    "extras-common-v6-sound-selector",
+    "extras-common-v6-bgm-titles",
+    "extras-common-v6-common-radial",
+    "extras-common-v6-common-submenus",
+    "extras-common-v6-assign-sailors",
+    "extras-common-v6-items-runtime"
   ],
   "runtime_evidence": {
     "explicit_promotion": true,
-    "automated_regression_tests": 242,
+    "automated_regression_tests": 255,
     "baseline_invariant_check": true,
     "candidate_manifest_verified": true,
-    "cold_boot_scope": "User promoted the current build; exact screens tested were not restated in the promotion message."
+    "cold_boot_scope": "User tested the evolving Extras and Common-menu candidate from full emulator restarts, confirmed the final V6 corrections, and explicitly approved promotion."
   }
 }

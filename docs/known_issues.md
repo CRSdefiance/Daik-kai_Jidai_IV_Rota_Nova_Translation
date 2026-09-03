@@ -2,14 +2,16 @@
 
 ## Accepted COMMON gameplay baseline
 
-The user explicitly promoted `out/common_gameplay_natural_v2_candidate.nds` on
-2026-08-31. Its bytes are now the canonical
+The user explicitly promoted `out/extras_options_sound_common_v6_candidate.nds`
+on 2026-09-03. Its bytes are now the canonical
 `out/raphael_natural_v2_accepted_base.nds`; the SHA-256 is
+`d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
+The former canonical baseline is retained as
+`out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds`, SHA-256
 `c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`.
-It is built from the immutable accepted Raphael baseline under profile
-`common-gameplay-natural-v2`; its manifest and the independent verifier agree
-that only the expected 14 interface, COMMON, and Hodram-first-Stockholm paths
-changed. The full regression suite passes (242 tests).
+The V6 manifest and independent Sound verifier cover the accepted Extras,
+Options, Sound Setup, and Common-menu layers. The full regression suite passes
+(255 tests).
 
 The profile adds 1,257 safe translated records across COMMON blocks 15-40,
 including 580 records in blocks 22-40. Every record in blocks 22-40 is
@@ -22,6 +24,67 @@ scene identifiers, ambiguous `{MACRO:I}C` sequences, and drafts that overflow
 or destabilize the progressive renderer remain byte-identical to Japanese.
 They are retained in the corresponding `*_blocked.json` inventories for the
 next translation phase.
+
+## Extras, Options, Sound, and Common-menu layer (accepted and baked)
+
+`out/extras_options_sound_common_v6_candidate.nds` is the corrected Extras,
+Options, Sound Setup, and Common-menu candidate. Its SHA-256 is
+`d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
+It is built from the promoted canonical baseline under profile
+`extras-options-sound-v1` and changes only ARM9, COMMON MESFILE blocks 4 and 36,
+`/GRP/DSOBJ.DK4`, `/_pxl/dividecrewinfo.pxl`, and the fourteen declared Online
+PXL resources.
+
+The live text pass covers both Extras root choices; Overview, Careers, First
+Steps, and Create a Story; all feature captions; the tie-in explanation, two
+instruction steps, village details, service notice, and closing page. The
+graphics pass redraws the Online banner and all thirteen baked Japanese text
+cards with an opaque dark outline for legibility over the transparent scenic
+background. Stored multiline pages use pair-phase-safe protected breaks so the
+first glyph of each line remains in place, and all Previous/Next variants are
+English. The title label now uses the complete `Options` spelling. The Sailing
+Help prompt owns its full source range instead of leaving `現在` behind; both
+Options prompts use coherent On/Off language while retaining the renderer-safe
+full-width Latin workaround.
+Promotional gameplay screenshots remain historical source images and
+are not altered merely because tiny Japanese UI is visible inside them.
+
+The Sound layer was rebased as a coordinated unit: all 38 packed BGM titles,
+their interior pointer table, and all 57 SFX titles. The independent Sound
+verifier passes, but playback behavior remains a cold-boot gate.
+
+V1 translated the standalone marker atlas but missed the live town sprites. V2
+then synchronized the matching copy in CMMNIMG block 5, but a full emulator
+restart proved that block is archival: the wheel still remained Japanese. V3
+identified the correct `/GRP/DSOBJ.DK4` sprites, but copying complete marker
+strips damaged the frames and retained poor source lettering. V4 instead keeps
+the original OBJ art, reconstructs only the Japanese glyph pixels from the six
+repeated button backgrounds, and draws crisp English with DK4's native bitmap
+font. Every padding row and unrelated tile is preserved. The earlier cache,
+CMMN runtime-source, and full-strip-copy approaches are revoked.
+
+V5 extends that repair through the Common-menu children. It translates the
+Info and Functions choices plus the related report and docked-ship entries,
+replaces the complete Japanese Deck View help paragraph, and shortens the
+screen heading to `Deck` so its final glyph cannot be clipped. The seven
+Assign Sailors plaques are redrawn with the same native 5-pixel-spaced game
+font; pixels outside their declared label boxes are byte-identical.
+
+V6 completes the Common Functions cleanup visible in the latest review. Save
+and Load now have English screen titles, `Unused`, `At Sea`/`Docked` status,
+level format, confirmations, progress notices, and read/write errors. Common
+Options uses `Reports`—the same term as the main-menu Options screen—instead
+of the contextually incorrect `Finances`, and `Sail Help` replaces the final
+Japanese child label. The empty-inventory Items route now says `You have no
+items.` without the erroneous `%s` formatter that previously consumed stray
+memory and displayed a Japanese glyph.
+
+Cold-boot the candidate and traverse every Extras and Options branch before promotion.
+Check menu selection, wrapping, page order, Next/Back behavior, banner quality,
+every Online text card, every BGM/SFX entry, playback, volume control, and all
+Common radial-menu entries in town. The user approved V6 on 2026-09-03; all of
+these layers are now baked into the canonical baseline and inherited by future
+playable builds.
 
 ## Interface-polish layer (accepted and baked)
 
@@ -268,19 +331,18 @@ prompt with ASCII. Any future revision must retain the exact source-byte lock an
 cold-boot tested before promotion.
 
 The scrolling BGM/SFX labels are not the same ARM9 caption table. They are now
-mapped and translated in the corrected research candidate `out/sound_selector_en_v5.nds`:
+mapped and translated in `out/extras_options_sound_v1_candidate.nds`:
 38 BGM titles are packed across `/COMMON/MESFILE.DK4` block 36 records 46-63,
 while 57 SFX titles occupy fixed or standalone ARM9 slots. The BGM panel uses a
 packed interior-pointer table; replacing labels without remapping those pointers
 produces fragmented and reordered words. V1 through V3 are therefore superseded.
 V4 correctly remapped the titles but is revoked because its build command omitted the
-accepted Options/UI batch, reverting the surrounding menu. V5 used the former
-`sound-setup` release profile to apply Options/UI, SFX, and BGM together. Some titles
-remain abbreviated to fit their original packed regions, and the user reported
-additional bugs in V5. Sound Setup is paused; its profile is now `rebase-required` and
-the integrated builder rejects it. Rebase all three dependent tables against the new
-accepted parent before another candidate, and do not include the old sound batches in
-unrelated builds.
+accepted Options/UI batch, reverting the surrounding menu. V5 is superseded. The
+current `sound-setup` batches are source-locked to the accepted Raphael baseline and
+must still be applied together. Some titles remain abbreviated to fit their original
+packed regions. The combined candidate passes structural and pointer verification;
+keep it experimental until every title, selection, playback, volume, and Back path is
+cold-boot tested.
 
 ## Lil opening scene control preamble
 

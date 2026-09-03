@@ -6,8 +6,9 @@ from pathlib import Path
 
 from dk4tool.rom.nds import NdsImage
 
-BASELINE_SHA256 = "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf"
-REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Opts", b"Grand Race", b"Extras", b"Gallery")
+BASELINE_SHA256 = "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf"
+REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Grand Race", b"Extras", b"Gallery")
+REQUIRED_OPTIONS_TEXT = (b"Opts", b"Options")
 
 
 def sha256(data: bytes) -> str:
@@ -48,6 +49,8 @@ def main() -> None:
     missing_menu = [item.decode("ascii") for item in REQUIRED_MENU_TEXT if item not in arm9]
     if missing_menu:
         raise SystemExit("required English menu text missing: " + ", ".join(missing_menu))
+    if not any(item in arm9 for item in REQUIRED_OPTIONS_TEXT):
+        raise SystemExit("required English menu text missing: Opts or Options")
 
     print("baseline invariant check passed")
     print("changed paths: " + ", ".join(sorted(changed)))

@@ -130,10 +130,12 @@ has booted successfully.
   `chihofleetinfo.pxl`, `dividecrewinfo.pxl`, `fleetinfo.pxl`, `forceinfo.pxl`,
   `goldsearoutediscovery.pxl`, both Golden Route logs, `personinfo.pxl`,
   `saveloadinfo.pxl`, and `shipinfo.pxl`.
-- The six Common radial-menu captions are baked white glyphs in
-  `/_pxl/__marker.pxl`. They are not the similarly named ARM9 strings. The
-  English graphics pass erases only palette index 15 inside the six caption
-  boxes, preserving the brown/gold button art beneath them.
+- The six Common radial-menu captions are baked white glyphs in the standalone
+  `/_pxl/__marker.pxl`, but the town menu draws precompiled copies from the raw
+  standard 4-bpp OBJ tile bank `/GRP/DSOBJ.DK4`. They are not the similarly
+  named ARM9 strings. The first three tile rows of each of the first six 64x32
+  banks correspond exactly to Functions, Crew Setup, Deck View, Info, Route
+  Map, and Items; the fourth row is padding and must be preserved.
 - A complete marker-atlas review found 18 additional baked captions covering
   decisions, reports, ports/attacks, orders, trading prices, cargo, temporary
   storage, distributed goods, and spoils. Their glyph faces use palette index
@@ -154,10 +156,29 @@ has booted successfully.
 - Ship models are not held in one master array. The validated profile currently
   covers 119 duplicate slots spread across event, catalog, shipyard, fleet, and
   scenario pools, with fixed widths of 8, 12, 16, or 20 bytes.
-- The packaged-ROM audit confirms that `/_pxl/__marker.pxl` contains the English
-  Common captions after every build stage. A Japanese Common wheel from this ROM
-  therefore means the emulator retained the old atlas in memory; cold-booting the
-  ROM reloads the translated resource.
+- A full DeSmuME 0.9.13 cold boot disproved the earlier cache diagnosis:
+  `/_pxl/__marker.pxl` was English while the wheel remained Japanese. A second
+  cold boot then disproved the CMMNIMG block-5 hypothesis even though its left
+  half exactly matched the Japanese marker. `/GRP/DSOBJ.DK4` contains the exact
+  six standard tiled sprites and has two ARM9 load-path references. The
+  `dk4-obj-tile-pxl-sync-v1` adapter changes only the 144 claimed tiles; 69 have
+  different packed bytes, while all padding and unrelated data remain intact.
+  Cold-boot review then showed that importing the complete marker strips also
+  imported damaged frame pixels and thin residual lettering. The replacement
+  `dk4-obj-label-batch-v1` path starts from the original DSOBJ art, removes only
+  index-15 Japanese glyph pixels in the proven text band, reconstructs their
+  background by consensus across the six sprites, and draws the English labels
+  with the ROM's native 6x11 ASCII font at a safe five-pixel advance.
+- The Info and Functions popup lists are live fixed-width ARM9 strings around
+  `0x1385D4-0x13868B`, not baked graphics. The narrow eight-byte ship slot uses
+  `Ships`, and the sixteen-byte Golden Route slot uses `Golden Log`; both retain
+  terminators. The Deck help consists of three independently terminated ARM9
+  strings at `0x131F48`, `0x131F74`, and `0x131FC4`.
+- `dividecrewinfo.pxl` contains the seven beige Assign Sailors plaques. Its
+  prior proportional-font translation can be repaired directly from the
+  accepted baseline because those glyphs use palette index 1. Erasing only
+  that index inside the source-locked boxes preserves the plaque gradients;
+  the native ROM font then restores consistent spacing and legibility.
 # DeSmuME live trace fixture
 
 The early-Raphael savestate `dialogue_live_save_v3.dst` is now the canonical
