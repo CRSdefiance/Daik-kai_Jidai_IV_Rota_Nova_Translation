@@ -73,11 +73,11 @@
     packed tables, and PXL graphics.
 - [x] Map and translate the packed sound selector: 38 BGM titles and all 57
   fixed-slot or standalone SFX titles.
-- [ ] Cold-boot `out/sound_selector_en_v5.nds`, scroll through all BGM and SFX
+- [x] Cold-boot the integrated Extras/Options/Sound candidate, scroll through all BGM and SFX
   entries, and confirm selection, playback, volume, and Back still work.
-- [ ] Return to Sound Setup after the current workstream. V5 has user-reported bugs;
-  collect exact screenshots/selected labels before revising the packed tables again.
-- [ ] Keep the `sound-setup` profile experimental until those bugs are fixed and the
+- [x] Rebase the coordinated Sound Setup packed-title and interior-pointer batches onto
+  the accepted Raphael baseline after collecting screenshots of the remaining faults.
+- [x] Keep the `sound-setup` profile experimental until those bugs are fixed and the
   user explicitly approves a complete cold-boot test.
 - [ ] Route the BGM selector through the normal narrow-Latin renderer so compact
   full-width labels can eventually be replaced by complete track names.
@@ -127,6 +127,10 @@
   high-confidence ARM9 scan hits.
 - [x] Translate the 18 remaining shared marker-atlas captions plus the standalone
   Confirm, Distributed Goods, Spoils, and Temporary Storage graphics.
+- [x] Reject the archival `/GRP/CMMNIMG.DK4` block-5 hypothesis after a V2
+  cold-boot failure, map the six live town Common-menu sprites in
+  `/GRP/DSOBJ.DK4`, and synchronize their exact 4-bpp tiles without changing
+  padding rows or unrelated data.
 - [x] Complete the safe COMMON gameplay campaign through block 40: replace the
   legacy filler in blocks 15-19, translate every independently addressable
   QA-clean record in blocks 20-40, and classify every remaining packed,
@@ -144,6 +148,19 @@
   confirm/storage/spoils strips; town, fleet, force, and Golden Route screens;
   world-map city/faction labels; and entry/exit transitions. Also verify that
   name entry still switches to the Latin keyboard through `英`.
+- [x] Map and translate the complete Extras menu: both root choices, all four
+  Online feature categories, explanatory/tie-in pages, live captions, the
+  Online banner, and the thirteen baked text cards.
+- [x] Cold-boot `out/extras_options_sound_common_v6_candidate.nds`; traverse every Extras and
+  Online branch and verify wrapping, page order, Next/Back behavior, banner
+  quality, all thirteen English text cards, the full Options label/prompts, and
+  Sound Setup before promotion. Enter a city, press X, and verify every Common
+  radial-menu caption and destination. Open Info and Functions and verify all
+  child choices; open Deck and Assign Sailors and check the translated help,
+  unclipped heading, and seven native-font plaques. Under Functions, test new
+  save, overwrite, load, and empty slots; under Options, verify `Reports` and
+  `Sail Help`; open Items with no inventory and verify `You have no items.`
+  appears without a stray glyph.
 # Dialogue presentation follow-up
 
 - Keep protected `0A 20` breaks in playable story builds. The bare-`0A` probe failed in

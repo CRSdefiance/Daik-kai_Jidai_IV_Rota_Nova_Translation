@@ -4,10 +4,11 @@ import argparse
 import hashlib
 import json
 import struct
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
+from dk4tool.dialogue.font_audit import GameAsciiFont
 from dk4tool.dialogue.profiles import get_dialogue_profile
 from dk4tool.dialogue.qa import (
     audit_fixed_dialogue_record,
@@ -28,9 +29,10 @@ from dk4tool.script.translation_batch import (
 )
 
 CANONICAL_BASELINE_SHA256 = (
-    "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf"
+    "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf"
 )
-REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Opts", b"Grand Race", b"Extras", b"Gallery")
+REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Grand Race", b"Extras", b"Gallery")
+REQUIRED_OPTIONS_TEXT = (b"Opts", b"Options")
 FORBIDDEN_PLACEHOLDERS = (b"see below",)
 RELEASE_STACK_PATH = Path("translations/release_stack.json")
 ARM9_LOAD_ADDRESS = 0x02000000
@@ -380,6 +382,8 @@ def apply_pxl_label_batches(
                         for value in [*raw_indices, *extra_indices]
                     },
                 )
+            elif erase == "solid":
+                image.clear(box, int(record.get("erase_color_index", 0)))
             else:
                 raise ValueError(f"{batch_path}: {row_id} has unsupported erase mode {erase!r}")
             image.draw_text(
@@ -398,6 +402,367 @@ def apply_pxl_label_batches(
     rebuilt = image.to_bytes()
     if len(rebuilt) != len(source):
         raise ValueError("PXL label rebuild changed the resource allocation")
+    return rebuilt, record_ids
+
+
+def apply_ilnk_pxl_sync_batch(
+    batch_path: Path, source: bytes, reference_pxl: bytes
+) -> tuple[bytes, list[str]]:
+    """Copy a translated PXL atlas into one fixed-size region of an ILNK block."""
+
+    batch = load_batch_header(batch_path)
+    if batch.get("format") != "dk4-ilnk-pxl-sync-v1":
+        raise ValueError(f"{batch_path}: unsupported ILNK/PXL sync format")
+    if str(batch.get("source_file_sha256", "")).lower() != sha256(source):
+        raise ValueError(f"{batch_path}: ILNK source SHA-256 mismatch")
+    if str(batch.get("source_image_sha256", "")).lower() != sha256(reference_pxl):
+        raise ValueError(f"{batch_path}: reference PXL SHA-256 mismatch")
+
+    block_index = int(batch.get("block_index", -1))
+    header_size = int(batch.get("block_header_size", -1))
+    target_width = int(batch.get("target_width", -1))
+    target_height = int(batch.get("target_height", -1))
+    target_x = int(batch.get("target_x", -1))
+    target_y = int(batch.get("target_y", -1))
+    record_id = str(batch.get("id", ""))
+    if not record_id:
+        raise ValueError(f"{batch_path}: missing record id")
+    if target_width <= 0 or target_width % 2 or target_height <= 0:
+        raise ValueError(f"{batch_path}: invalid packed 4bpp target dimensions")
+
+    container = IlnkContainer.parse(source)
+    if not 0 <= block_index < len(container.blocks):
+        raise ValueError(f"{batch_path}: ILNK block index is out of range")
+    block = bytearray(container.blocks[block_index])
+    if str(batch.get("source_block_sha256", "")).lower() != sha256(block):
+        raise ValueError(f"{batch_path}: ILNK block source SHA-256 mismatch")
+    expected_payload = target_width * target_height // 2
+    if header_size < 0 or len(block) - header_size != expected_payload:
+        raise ValueError(f"{batch_path}: ILNK packed-pixel dimensions do not match")
+
+    marker = PxlImage.from_bytes(reference_pxl)
+    if marker.bits_per_pixel != 4:
+        raise ValueError(f"{batch_path}: reference PXL must be 4bpp")
+    if target_x < 0 or target_y < 0:
+        raise ValueError(f"{batch_path}: negative atlas destination")
+    if target_x + marker.width > target_width or target_y + marker.height > target_height:
+        raise ValueError(f"{batch_path}: reference PXL does not fit target atlas")
+    if target_x % 2 or marker.width % 2:
+        raise ValueError(f"{batch_path}: 4bpp x coordinates and width must be even")
+
+    row_stride = target_width // 2
+    marker_stride = marker.width // 2
+    for y in range(marker.height):
+        destination = header_size + (target_y + y) * row_stride + target_x // 2
+        source_row = y * marker.width
+        packed = bytearray(marker_stride)
+        for x in range(0, marker.width, 2):
+            packed[x // 2] = (
+                marker.indices[source_row + x]
+                | marker.indices[source_row + x + 1] << 4
+            )
+        block[destination : destination + marker_stride] = packed
+
+    original_blocks = list(container.blocks)
+    container.blocks[block_index] = bytes(block)
+    rebuilt = container.to_bytes()
+    if len(rebuilt) != len(source):
+        raise ValueError(f"{batch_path}: ILNK sync changed file size")
+    rebuilt_blocks = IlnkContainer.parse(rebuilt).blocks
+    if any(
+        before != after
+        for index, (before, after) in enumerate(
+            zip(original_blocks, rebuilt_blocks, strict=True)
+        )
+        if index != block_index
+    ):
+        raise ValueError(f"{batch_path}: ILNK sync changed an unrelated block")
+    return rebuilt, [record_id]
+
+
+def apply_obj_tile_pxl_sync_batch(
+    batch_path: Path, source: bytes, reference_pxl: bytes
+) -> tuple[bytes, list[str]]:
+    """Copy rectangular PXL tile regions into a raw DS 4-bpp OBJ tile bank."""
+
+    batch = load_batch_header(batch_path)
+    if batch.get("format") != "dk4-obj-tile-pxl-sync-v1":
+        raise ValueError(f"{batch_path}: unsupported OBJ/PXL sync format")
+    if str(batch.get("source_file_sha256", "")).lower() != sha256(source):
+        raise ValueError(f"{batch_path}: OBJ source SHA-256 mismatch")
+    if str(batch.get("source_image_sha256", "")).lower() != sha256(reference_pxl):
+        raise ValueError(f"{batch_path}: reference PXL SHA-256 mismatch")
+    if len(source) % 32:
+        raise ValueError(f"{batch_path}: OBJ bank is not composed of 32-byte 4bpp tiles")
+
+    marker = PxlImage.from_bytes(reference_pxl)
+    if marker.bits_per_pixel != 4 or marker.width % 8 or marker.height % 8:
+        raise ValueError(f"{batch_path}: reference PXL must be an 8x8-aligned 4bpp atlas")
+    records = batch.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{batch_path}: OBJ/PXL sync batch has no records")
+
+    rebuilt = bytearray(source)
+    claimed_tiles: set[int] = set()
+    record_ids: list[str] = []
+    tile_count = len(source) // 32
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{batch_path}: OBJ/PXL record must be an object")
+        record_id = str(record.get("id", ""))
+        raw_box = record.get("source_tile_box")
+        if not record_id or record_id in record_ids:
+            raise ValueError(f"{batch_path}: duplicate or missing OBJ/PXL record id")
+        if not isinstance(raw_box, list) or len(raw_box) != 4:
+            raise ValueError(f"{batch_path}: {record_id} requires a source tile box")
+        left, top, right, bottom = (int(value) for value in raw_box)
+        target_tile = int(record.get("target_tile", -1))
+        target_row_tiles = int(record.get("target_row_tiles", -1))
+        if not (
+            0 <= left < right <= marker.width // 8
+            and 0 <= top < bottom <= marker.height // 8
+            and target_tile >= 0
+            and target_row_tiles >= right - left
+        ):
+            raise ValueError(f"{batch_path}: {record_id} has invalid tile geometry")
+
+        for row in range(bottom - top):
+            for column in range(right - left):
+                destination_tile = target_tile + row * target_row_tiles + column
+                if destination_tile >= tile_count or destination_tile in claimed_tiles:
+                    raise ValueError(f"{batch_path}: {record_id} has an invalid OBJ target")
+                source_x = (left + column) * 8
+                source_y = (top + row) * 8
+                packed = bytearray()
+                for y in range(8):
+                    row_start = (source_y + y) * marker.width + source_x
+                    for x in range(0, 8, 2):
+                        packed.append(
+                            marker.indices[row_start + x]
+                            | marker.indices[row_start + x + 1] << 4
+                        )
+                destination = destination_tile * 32
+                rebuilt[destination : destination + 32] = packed
+                claimed_tiles.add(destination_tile)
+        record_ids.append(record_id)
+
+    if len(rebuilt) != len(source):
+        raise ValueError(f"{batch_path}: OBJ/PXL sync changed file size")
+    return bytes(rebuilt), record_ids
+
+
+def apply_obj_label_batch(
+    batch_path: Path, source: bytes, arm9: bytes
+) -> tuple[bytes, list[str]]:
+    """Clean and redraw fixed OBJ labels with DK4's native ASCII bitmap font."""
+
+    batch = load_batch_header(batch_path)
+    if batch.get("format") != "dk4-obj-label-batch-v1":
+        raise ValueError(f"{batch_path}: unsupported OBJ label format")
+    if str(batch.get("source_file_sha256", "")).lower() != sha256(source):
+        raise ValueError(f"{batch_path}: OBJ source SHA-256 mismatch")
+    if len(source) % 32:
+        raise ValueError(f"{batch_path}: OBJ bank is not composed of 32-byte 4bpp tiles")
+
+    font = GameAsciiFont.from_arm9(arm9)
+    if str(batch.get("font_sha256", "")).lower() != sha256(font.glyphs):
+        raise ValueError(f"{batch_path}: ASCII font SHA-256 mismatch")
+    records = batch.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{batch_path}: OBJ label batch has no records")
+
+    bank_width = int(batch.get("bank_width", 64))
+    bank_height = int(batch.get("bank_height", 32))
+    if bank_width % 8 or bank_height % 8:
+        raise ValueError(f"{batch_path}: OBJ bank geometry must be 8x8-aligned")
+    tiles_per_row = bank_width // 8
+    tiles_per_bank = tiles_per_row * (bank_height // 8)
+    bank_count = len(source) // (tiles_per_bank * 32)
+
+    def decode_bank(bank: int) -> list[list[int]]:
+        pixels = [[0] * bank_width for _ in range(bank_height)]
+        for tile_y in range(bank_height // 8):
+            for tile_x in range(tiles_per_row):
+                tile = bank * tiles_per_bank + tile_y * tiles_per_row + tile_x
+                packed = source[tile * 32 : tile * 32 + 32]
+                for y in range(8):
+                    for pair, value in enumerate(packed[y * 4 : y * 4 + 4]):
+                        x = tile_x * 8 + pair * 2
+                        pixels[tile_y * 8 + y][x] = value & 0x0F
+                        pixels[tile_y * 8 + y][x + 1] = value >> 4
+        return pixels
+
+    parsed: list[tuple[str, int, str]] = []
+    seen_ids: set[str] = set()
+    seen_banks: set[int] = set()
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{batch_path}: OBJ label record must be an object")
+        record_id = str(record.get("id", ""))
+        bank = int(record.get("bank", -1))
+        text = str(record.get("text", ""))
+        if not record_id or record_id in seen_ids:
+            raise ValueError(f"{batch_path}: duplicate or missing OBJ label id")
+        if bank < 0 or bank >= bank_count or bank in seen_banks or not text:
+            raise ValueError(f"{batch_path}: {record_id} has an invalid target")
+        seen_ids.add(record_id)
+        seen_banks.add(bank)
+        parsed.append((record_id, bank, text))
+
+    raw_box = batch.get("erase_box")
+    if not isinstance(raw_box, list) or len(raw_box) != 4:
+        raise ValueError(f"{batch_path}: OBJ label batch requires an erase box")
+    left, top, right, bottom = (int(value) for value in raw_box)
+    if not (0 <= left < right <= bank_width and 0 <= top < bottom <= bank_height):
+        raise ValueError(f"{batch_path}: invalid OBJ label erase box")
+    erase_index = int(batch.get("erase_index", 15))
+    color_index = int(batch.get("color_index", 15))
+    fallback_index = int(batch.get("background_fallback_index", 0))
+    glyph_width = int(batch.get("glyph_width", 5))
+    advance = int(batch.get("advance", glyph_width))
+    text_y = int(batch.get("text_y", top))
+    if not all(0 <= value <= 15 for value in (erase_index, color_index, fallback_index)):
+        raise ValueError(f"{batch_path}: OBJ palette indices must be 0..15")
+    if not (1 <= glyph_width <= 6 and advance >= glyph_width and text_y >= 0):
+        raise ValueError(f"{batch_path}: invalid OBJ font geometry")
+
+    pixels_by_bank = {bank: decode_bank(bank) for _, bank, _ in parsed}
+    background: dict[tuple[int, int], int] = {}
+    for y in range(top, bottom):
+        for x in range(left, right):
+            candidates = [
+                pixels[y][x]
+                for pixels in pixels_by_bank.values()
+                if pixels[y][x] != erase_index
+            ]
+            background[x, y] = (
+                Counter(candidates).most_common(1)[0][0] if candidates else fallback_index
+            )
+
+    for _, bank, text in parsed:
+        pixels = pixels_by_bank[bank]
+        for (x, y), value in background.items():
+            if pixels[y][x] == erase_index:
+                pixels[y][x] = value
+
+        text_width = len(text) * advance
+        text_x = (bank_width - text_width) // 2
+        if text_x < left or text_x + text_width > right or text_y + 11 > bottom:
+            raise ValueError(f"{batch_path}: label does not fit bank {bank}: {text!r}")
+        for index, character in enumerate(text):
+            glyph = font.decode(character)
+            bounds = glyph.getbbox()
+            if bounds is not None and bounds[2] > glyph_width:
+                raise ValueError(f"{batch_path}: cropped glyph in label {text!r}")
+            glyph_pixels = glyph.load()
+            for y in range(11):
+                for x in range(glyph_width):
+                    if glyph_pixels[x, y]:
+                        pixels[text_y + y][text_x + index * advance + x] = color_index
+
+    rebuilt = bytearray(source)
+    for _, bank, _ in parsed:
+        pixels = pixels_by_bank[bank]
+        for tile_y in range(bank_height // 8):
+            for tile_x in range(tiles_per_row):
+                packed = bytearray()
+                for y in range(8):
+                    row = pixels[tile_y * 8 + y]
+                    for x in range(0, 8, 2):
+                        source_x = tile_x * 8 + x
+                        packed.append(row[source_x] | row[source_x + 1] << 4)
+                tile = bank * tiles_per_bank + tile_y * tiles_per_row + tile_x
+                rebuilt[tile * 32 : tile * 32 + 32] = packed
+
+    return bytes(rebuilt), [record_id for record_id, _, _ in parsed]
+
+
+def apply_pxl_native_label_batch(
+    batch_path: Path, source: bytes, arm9: bytes
+) -> tuple[bytes, list[str]]:
+    """Redraw fixed PXL labels using DK4's native ASCII bitmap font."""
+
+    batch = load_batch_header(batch_path)
+    if batch.get("format") != "dk4-pxl-native-label-batch-v1":
+        raise ValueError(f"{batch_path}: unsupported native PXL label format")
+    if str(batch.get("source_file_sha256", "")).lower() != sha256(source):
+        raise ValueError(f"{batch_path}: PXL source SHA-256 mismatch")
+    font = GameAsciiFont.from_arm9(arm9)
+    if str(batch.get("font_sha256", "")).lower() != sha256(font.glyphs):
+        raise ValueError(f"{batch_path}: ASCII font SHA-256 mismatch")
+
+    image = PxlImage.from_bytes(source)
+    records = batch.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{batch_path}: native PXL label batch has no records")
+    glyph_width = int(batch.get("glyph_width", 5))
+    advance = int(batch.get("advance", glyph_width))
+    color_index = int(batch.get("color_index", 1))
+    erased = {int(value) for value in batch.get("erase_palette_indices", [color_index])}
+    if not (1 <= glyph_width <= 6 and advance >= glyph_width):
+        raise ValueError(f"{batch_path}: invalid native PXL font geometry")
+    if not all(0 <= value < len(image.palette) for value in erased | {color_index}):
+        raise ValueError(f"{batch_path}: native PXL palette index is out of range")
+
+    parsed: list[tuple[str, tuple[int, int, int, int], str]] = []
+    record_ids: list[str] = []
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{batch_path}: native PXL label record must be an object")
+        record_id = str(record.get("id", ""))
+        raw_box = record.get("box")
+        text = str(record.get("text", ""))
+        if not record_id or record_id in record_ids or not text:
+            raise ValueError(f"{batch_path}: duplicate or incomplete native PXL label")
+        if not isinstance(raw_box, list) or len(raw_box) != 4:
+            raise ValueError(f"{batch_path}: {record_id} requires a label box")
+        left, top, right, bottom = (int(value) for value in raw_box)
+        if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
+            raise ValueError(f"{batch_path}: {record_id} has an invalid label box")
+        parsed.append((record_id, (left, top, right, bottom), text))
+        record_ids.append(record_id)
+
+    # Erase every old label before drawing any replacement. Some original
+    # plaque boxes overlap by a few background-only rows.
+    for _, box, _ in parsed:
+        image.erase_palette_indices(box, erased)
+
+    drawn: list[tuple[int, int, int, int]] = []
+    for record_id, (left, top, right, bottom), text in parsed:
+        text_width = len(text) * advance
+        text_x = left + (right - left - text_width) // 2
+        text_y = top + (bottom - top - 11) // 2
+        if text_x < left or text_x + text_width > right or text_y < top:
+            raise ValueError(f"{batch_path}: label does not fit: {text!r}")
+        text_box = (text_x, text_y, text_x + text_width, text_y + 11)
+        if any(
+            text_box[0] < old_right
+            and text_box[2] > old_left
+            and text_box[1] < old_bottom
+            and text_box[3] > old_top
+            for old_left, old_top, old_right, old_bottom in drawn
+        ):
+            raise ValueError(f"{batch_path}: {record_id} overlaps another rendered label")
+        for index, character in enumerate(text):
+            glyph = font.decode(character)
+            bounds = glyph.getbbox()
+            if bounds is not None and bounds[2] > glyph_width:
+                raise ValueError(f"{batch_path}: cropped glyph in label {text!r}")
+            glyph_pixels = glyph.load()
+            for y in range(11):
+                for x in range(glyph_width):
+                    if glyph_pixels[x, y]:
+                        image.indices[
+                            (text_y + y) * image.width
+                            + text_x
+                            + index * advance
+                            + x
+                        ] = color_index
+        drawn.append(text_box)
+
+    rebuilt = image.to_bytes()
+    if len(rebuilt) != len(source):
+        raise ValueError(f"{batch_path}: native PXL labels changed file size")
     return rebuilt, record_ids
 
 
@@ -466,6 +831,8 @@ def verify_golden_content(baseline: NdsImage, candidate: NdsImage) -> None:
     missing = [value.decode("ascii") for value in REQUIRED_MENU_TEXT if value not in arm9]
     if missing:
         raise ValueError("required main-menu text missing: " + ", ".join(missing))
+    if not any(value in arm9 for value in REQUIRED_OPTIONS_TEXT):
+        raise ValueError("required main-menu text missing: Opts or Options")
 
     baseline_files = rom_files(baseline)
     candidate_files = rom_files(candidate)
@@ -535,6 +902,70 @@ def main() -> None:
             rebuilt, record_ids = apply_pxl_label_batches(file_batch_paths, source)
             if rebuilt == source:
                 raise SystemExit(f"{file_path}: PXL label batch made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
+        if formats == {"dk4-ilnk-pxl-sync-v1"}:
+            if len(file_batch_paths) != 1:
+                raise SystemExit(f"{file_path}: exactly one ILNK/PXL sync batch is allowed")
+            batch_path = file_batch_paths[0]
+            header = load_batch_header(batch_path)
+            reference_path = str(header.get("source_image_path", ""))
+            if not reference_path.startswith("/"):
+                raise SystemExit(f"{batch_path}: invalid reference PXL path")
+            rebuilt, record_ids = apply_ilnk_pxl_sync_batch(
+                batch_path, source, candidate.read_file(reference_path)
+            )
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: ILNK/PXL sync made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
+        if formats == {"dk4-obj-tile-pxl-sync-v1"}:
+            if len(file_batch_paths) != 1:
+                raise SystemExit(f"{file_path}: exactly one OBJ/PXL sync batch is allowed")
+            batch_path = file_batch_paths[0]
+            header = load_batch_header(batch_path)
+            reference_path = str(header.get("source_image_path", ""))
+            if not reference_path.startswith("/"):
+                raise SystemExit(f"{batch_path}: invalid reference PXL path")
+            rebuilt, record_ids = apply_obj_tile_pxl_sync_batch(
+                batch_path, source, candidate.read_file(reference_path)
+            )
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: OBJ/PXL sync made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
+        if formats == {"dk4-obj-label-batch-v1"}:
+            if len(file_batch_paths) != 1:
+                raise SystemExit(f"{file_path}: exactly one OBJ label batch is allowed")
+            batch_path = file_batch_paths[0]
+            header = load_batch_header(batch_path)
+            font_path = str(header.get("font_file_path", ""))
+            if font_path != "/__arm9__.bin":
+                raise SystemExit(f"{batch_path}: invalid OBJ label font path")
+            rebuilt, record_ids = apply_obj_label_batch(
+                batch_path, source, candidate.read_file(font_path)
+            )
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: OBJ label batch made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
+        if formats == {"dk4-pxl-native-label-batch-v1"}:
+            if len(file_batch_paths) != 1:
+                raise SystemExit(f"{file_path}: exactly one native PXL batch is allowed")
+            batch_path = file_batch_paths[0]
+            header = load_batch_header(batch_path)
+            font_path = str(header.get("font_file_path", ""))
+            if font_path != "/__arm9__.bin":
+                raise SystemExit(f"{batch_path}: invalid native PXL font path")
+            rebuilt, record_ids = apply_pxl_native_label_batch(
+                batch_path, source, candidate.read_file(font_path)
+            )
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: native PXL batch made no changes")
             candidate.replace_file(file_path, rebuilt)
             changed_records[file_path] = record_ids
             continue

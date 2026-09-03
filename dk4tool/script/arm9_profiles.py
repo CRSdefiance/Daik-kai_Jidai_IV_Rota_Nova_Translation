@@ -28,7 +28,9 @@ class Arm9ProfileEntry:
 
 
 STARTUP_ENTRIES = (
-    Arm9ProfileEntry("DK4_TITLE_OPTIONS", 1276268, "設定", "Opts", "Title menu"),
+    Arm9ProfileEntry(
+        "DK4_TITLE_OPTIONS", 1276268, "設定", "Options", "Title menu", slot_size=8
+    ),
     Arm9ProfileEntry("DK4_TITLE_CONTINUE", 1276400, "つづきから", "Continue", "Title menu"),
     Arm9ProfileEntry(
         "DK4_TITLE_EXTRAS",

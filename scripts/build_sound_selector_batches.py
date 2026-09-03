@@ -9,10 +9,10 @@ from pathlib import Path
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
 
-BASE_ROM = Path("out/all_goods_roundtrip.nds")
+BASE_ROM = Path("out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds")
 ARM9_BATCH = Path("translations/sound_selector_arm9.json")
 BGM_BATCH = Path("translations/sound_bgm_titles.json")
-CANONICAL_BASE_SHA256 = "8e61fd4e8c444b25566cc273dd676b3e5bea5d683ad167db2f92444c10df9764"
+SOURCE_BASE_SHA256 = "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf"
 ARM9_PATH = "/__arm9__.bin"
 MESFILE_PATH = "/COMMON/MESFILE.DK4"
 BGM_BLOCK = 36
@@ -251,7 +251,7 @@ def build_sfx_records(arm9: bytes) -> list[dict[str, object]]:
 
 def main() -> None:
     base_data = BASE_ROM.read_bytes()
-    if sha256(base_data) != CANONICAL_BASE_SHA256:
+    if sha256(base_data) != SOURCE_BASE_SHA256:
         raise SystemExit("canonical base ROM hash mismatch")
     image = NdsImage.open(BASE_ROM)
     arm9 = image.read_file(ARM9_PATH)

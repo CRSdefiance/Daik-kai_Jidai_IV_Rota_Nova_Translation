@@ -131,9 +131,16 @@ class PxlImage:
         box_height = bottom - top
         font = None
         text_box = None
+        spacing = 2
+        probe = ImageDraw.Draw(Image.new("L", (1, 1)))
         for size in range(maximum_size, 5, -1):
             candidate = ImageFont.load_default(size=size)
-            bounds = candidate.getbbox(text)
+            if "\n" in text:
+                bounds = probe.multiline_textbbox(
+                    (0, 0), text, font=candidate, spacing=spacing, align="left"
+                )
+            else:
+                bounds = candidate.getbbox(text)
             if bounds[2] - bounds[0] <= box_width and bounds[3] - bounds[1] <= box_height:
                 font = candidate
                 text_box = bounds
@@ -147,7 +154,12 @@ class PxlImage:
         text_height = text_box[3] - text_box[1]
         x = (box_width - text_width) // 2 - text_box[0]
         y = (box_height - text_height) // 2 - text_box[1]
-        draw.text((x, y), text, font=font, fill=255)
+        if "\n" in text:
+            draw.multiline_text(
+                (x, y), text, font=font, fill=255, spacing=spacing, align="left"
+            )
+        else:
+            draw.text((x, y), text, font=font, fill=255)
 
         if outline_index is not None:
             outline = mask.filter(ImageFilter.MaxFilter(3))

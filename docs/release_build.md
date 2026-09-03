@@ -6,7 +6,7 @@ Every new playable ROM must descend directly from
 `out/raphael_natural_v2_accepted_base.nds`, whose
 SHA-256 is:
 
-`c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`
+`d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`
 
 This ROM is immutable. `work/clean.nds` is research input only and must never be used as
 the parent of a playable candidate. Intermediate, probe, stage, and route-only ROMs are
@@ -43,10 +43,30 @@ opening expansion are baked into the canonical baseline and therefore inherited
 without being reapplied. Feature work with mutually dependent tables must use a named
 profile.
 
-The old `sound-setup` profile is source-locked to the former baseline and is marked
-`rebase-required`. Do not run it: the integrated builder rejects it until the ARM9 SFX
-table and packed BGM title table have been rebased and revalidated against the accepted
-parent.
+The coordinated Sound Setup layer was accepted with V6 on 2026-09-03 and is baked
+into the canonical baseline. Its historical ARM9 SFX table, packed BGM records, and
+complete interior pointer map remain registered together as an accepted-baked
+profile and cannot be reapplied to the promoted parent.
+
+The town Common radial menu uses six precompiled sprites in `/GRP/DSOBJ.DK4`.
+The source-locked `dk4-obj-label-batch-v1` adapter reconstructs the background
+under the Japanese glyph pixels from the six repeated original sprites, then
+draws centered English using DK4's native ASCII bitmap font. It preserves every
+button frame, padding row, and unrelated tile. The full-strip
+`dk4-obj-tile-pxl-sync-v1` approach is revoked because it damaged frame art and
+carried low-quality atlas lettering into the live sprites. The older
+`dk4-ilnk-pxl-sync-v1` CMMNIMG experiment is retained only as revoked research;
+a full emulator restart proved that consolidated atlas is not the live wheel.
+
+Common submenu live strings and the Deck View help text are handled by
+`common_submenus_arm9_v1.json`. The `dk4-pxl-native-label-batch-v1` adapter
+repairs `dividecrewinfo.pxl` without repeating the earlier Pillow-font pass: it
+erases only the declared old text palette index, then draws the ROM's native
+ASCII glyphs while preserving every pixel outside the label boxes.
+The same ARM9 batch owns the complete fixed-width Save/Load interface and keeps
+Common Options terminology aligned with the main menu (`Reports`, `Sail Help`).
+`common_items_runtime_v1.json` separately repairs the accepted baseline's
+empty-inventory message by removing an invalid formatter parameter.
 
 The former `raphael-full-natural-v2` profile is superseded, and the accepted parity
 profile is marked `accepted-baked`. Both are deliberately rejected as new build

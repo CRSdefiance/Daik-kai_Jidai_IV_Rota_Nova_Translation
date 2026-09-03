@@ -10,7 +10,7 @@ accepted menus, graphics, names, goods, or dialogue.
 2. `translations/release_stack.json` is the machine-readable layer registry.
 3. `out/raphael_natural_v2_accepted_base.nds` is the immutable binary baseline. Its
    current SHA-256 is
-   `c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`;
+   `d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`;
    the registry and builder enforce it.
 4. `docs/known_issues.md` records failed experiments and renderer hazards.
 
@@ -78,7 +78,8 @@ If any item is unknown, the ROM is not ready to hand off.
 
 ## Current Sound Setup status
 
-`sound_selector_en_v5.nds` remains experimental and has user-reported bugs. It is not
-an accepted parent and its sound batches are not inherited by unrelated builds. Resume
-it only through the `sound-setup` profile after gathering screenshots of the remaining
-faults.
+The former `sound_selector_en_v5.nds` is superseded. The coordinated 38-title BGM
+table, interior pointer map, and 57-title SFX table were accepted with the Extras and
+Common V6 candidate on 2026-09-03 and are baked into the canonical parent. Their
+source-locked batches remain as reproducibility records and must not be reapplied to
+the promoted baseline.

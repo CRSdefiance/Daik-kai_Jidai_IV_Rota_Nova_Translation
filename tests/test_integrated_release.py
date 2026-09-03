@@ -213,8 +213,8 @@ def test_accepted_layers_are_baked_into_promoted_baseline():
     )
 
 
-def test_sound_profile_requires_rebase_onto_promoted_baseline():
-    with pytest.raises(ValueError, match="rebase-required"):
+def test_sound_profile_is_rebased_onto_promoted_baseline():
+    with pytest.raises(ValueError, match="accepted-baked"):
         resolve_release_batches("sound-setup", [])
 
 
