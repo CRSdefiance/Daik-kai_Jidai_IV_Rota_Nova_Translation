@@ -52,6 +52,11 @@ def load_translated_records(translations: Path) -> set[tuple[str, str]]:
 
 def build_report(source_root: Path, translations: Path) -> str:
     translated = load_translated_records(translations)
+    accepted = json.loads(
+        (translations / "accepted_baseline.json").read_text(encoding="utf-8")
+    )
+    accepted_rom = str(accepted["rom"])
+    accepted_sha256 = str(accepted["sha256"])
     rows: list[tuple[str, int, int, float]] = []
     common_block_counts: Counter[int] = Counter()
     total_records = 0
@@ -81,6 +86,7 @@ def build_report(source_root: Path, translations: Path) -> str:
     )
     common_half = math.ceil(common_count / 2)
     common_half_gap = max(0, common_half - common_done)
+    common_half_surplus = max(0, common_done - common_half)
     through_14 = sum(count for block, count in common_block_counts.items() if block <= 14)
     through_18 = sum(count for block, count in common_block_counts.items() if block <= 18)
     from_19 = max(0, common_half - through_18)
@@ -106,28 +112,53 @@ def build_report(source_root: Path, translations: Path) -> str:
         [
             f"| **Tracked text total** | **{total_translated}** | **{total_records}** | **{total_percent:.1f}%** |",
             "",
-            "## Shared dialogue 50% target",
+            "## Shared dialogue milestone",
             "",
             (
-                f"`/COMMON/MESFILE.DK4` needs **{common_half_gap} more records** "
+                f"`/COMMON/MESFILE.DK4` has passed the 50% milestone by "
+                f"**{common_half_surplus} records** ({common_done} translated; "
+                f"the threshold is {common_half} of {common_count})."
+                if common_half_gap == 0
+                else f"`/COMMON/MESFILE.DK4` needs **{common_half_gap} more records** "
                 f"to reach 50% ({common_half} of {common_count})."
             ),
             "",
             (
-                f"- Complete blocks B00-B14: {through_14} records "
+                f"- Milestone reference—blocks B00-B14: {through_14} records "
                 f"({through_14 * 100.0 / common_count:.1f}%)."
             ),
             (
-                f"- Then complete B15-B18: {through_18} cumulative records "
+                f"- Through B18: {through_18} cumulative records "
                 f"({through_18 * 100.0 / common_count:.1f}%)."
             ),
             (
-                f"- Translate {from_19} records from B19 to reach the exact "
+                f"- The first {from_19} records from B19 reached the exact "
                 f"{common_half}-record halfway mark."
             ),
             (
                 "- Each block still requires an internal-entry-point audit before insertion; "
                 "record count alone cannot prevent missing first letters."
+            ),
+            "",
+            "## Accepted interface progress",
+            "",
+            (
+                "- **Extras and Online:** complete accepted English pass for both Extras "
+                "choices, all feature and tie-in pages, the Online banner, and all 13 "
+                "baked text cards."
+            ),
+            (
+                "- **Options and Sound Setup:** the full `Options` label, prompts, all 38 "
+                "BGM titles, and all 57 SFX titles are accepted."
+            ),
+            (
+                "- **Town Common menu:** all six radial labels and the Info, Functions, "
+                "Options, Save/Load, Deck, Assign Sailors, and empty-Items paths covered "
+                "by V6 are accepted."
+            ),
+            (
+                "- **Canonical accepted baseline:** "
+                f"`{accepted_rom}`, SHA-256 `{accepted_sha256}`."
             ),
             "",
             "## Other tracked work",
@@ -138,9 +169,9 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "slots has not yet been exhaustively classified."
             ),
             (
-                "- Redrawn graphics are tracked by the resource lists in "
-                "`scripts/build_graphics_translation.py`; graphical text is not included in "
-                "the table above."
+                "- Redrawn graphics and fixed ARM9 labels are tracked by source-locked "
+                "translation batches and the accepted-layer registry; they are not included "
+                "in the table above."
             ),
             (
                 "- An in-game save can retain old names and labels. Coverage is measured "
