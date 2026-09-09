@@ -17,10 +17,10 @@ family relationships, ranks, or other story facts.
 ## Canonical integration baseline
 
 - The user-designated safe integrated ROM is `out/raphael_natural_v2_accepted_base.nds`.
-- Its SHA-256 is `d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
+- Its SHA-256 is `0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`.
 - The prior accepted baseline is preserved as
-  `out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds`, SHA-256
-  `c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`.
+  `out/raphael_natural_v2_pre_story_push_v10_accepted_rollback.nds`, SHA-256
+  `d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
 - This is an intentional re-baseline. Later ROMs, including `lil_route_roundtrip.nds` and all Lil repair/probe builds, are historical research artifacts only and must not be used as a parent or distributed as a release.
 - Never present a ROM built directly from `work/clean.nds`, an isolated route ROM, or an intermediate `*_stage.nds` as the next integrated release.
 - New work must be layered onto the canonical integration baseline, or the complete sequence of previously accepted UI, graphics, shared-text, and route layers must be rebuilt explicitly.

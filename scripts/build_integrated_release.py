@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import struct
+import zlib
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -20,6 +21,7 @@ from dk4tool.dialogue.relocation import (
 )
 from dk4tool.dialogue.review import validate_natural_dialogue_batch
 from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.graphics.fls import FlsArchive
 from dk4tool.graphics.pxl import PxlImage
 from dk4tool.rom.nds import NdsImage
 from dk4tool.script.mesfile import rebuild_mesfile
@@ -29,7 +31,7 @@ from dk4tool.script.translation_batch import (
 )
 
 CANONICAL_BASELINE_SHA256 = (
-    "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf"
+    "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2"
 )
 REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Grand Race", b"Extras", b"Gallery")
 REQUIRED_OPTIONS_TEXT = (b"Opts", b"Options")
@@ -59,22 +61,31 @@ def load_batch_header(path: Path) -> dict[str, object]:
 
 
 def validate_playable_dialogue_header(path: Path, header: dict[str, object]) -> None:
-    """Reject research-only newline profiles from playable story builds."""
+    """Require byte-modelled, pair-safe encoding for playable story dialogue."""
 
-    if header.get("encoder") not in {
-        "dialogue-fixed-v1",
-        "dialogue-relocatable-v1",
-    }:
+    if header.get("format") != "dk4-ilnk-translation-batch-v1":
         return
     file_path = str(header.get("file_path", ""))
     if file_path not in {f"/data/SC{index}.DK4" for index in range(4)}:
         return
+    if header.get("encoder") not in {
+        "dialogue-fixed-v1",
+        "dialogue-relocatable-v1",
+    }:
+        raise ValueError(
+            f"{path}: playable progressive-story dialogue requires the validated "
+            "fixed or relocatable encoder; legacy raw translation is forbidden"
+        )
     profile_name = str(header.get("dialogue_profile", ""))
     profile = get_dialogue_profile(profile_name)
-    if profile_name.endswith("-revoked") or not profile.guard_linebreaks:
+    if (
+        profile_name.endswith("-revoked")
+        or not profile.guard_linebreaks
+        or not profile.pair_phase_safe_breaks
+    ):
         raise ValueError(
             f"{path}: playable progressive-story dialogue requires a live-safe "
-            "guarded profile; research profile is forbidden"
+            "guarded, pair-phase-aware profile; research profile is forbidden"
         )
 
 
@@ -405,6 +416,64 @@ def apply_pxl_label_batches(
     return rebuilt, record_ids
 
 
+def apply_fls_label_batch(
+    batch_path: Path, source: bytes
+) -> tuple[bytes, list[str]]:
+    """Redraw source-locked subtitle cards inside one fixed-size FLS archive."""
+
+    batch = load_batch_header(batch_path)
+    if batch.get("format") != "dk4-fls-label-batch-v1":
+        raise ValueError(f"{batch_path}: unsupported FLS label format")
+    if str(batch.get("source_file_sha256", "")).lower() != sha256(source):
+        raise ValueError(f"{batch_path}: FLS source SHA-256 mismatch")
+    records = batch.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{batch_path}: FLS label batch has no records")
+
+    archive = FlsArchive(source)
+    record_ids: list[str] = []
+    claimed_assets: set[int] = set()
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{batch_path}: FLS label record must be an object")
+        row_id = str(record.get("id", ""))
+        asset_index = int(record.get("asset_index", -1))
+        lines = record.get("lines")
+        if not row_id or row_id in record_ids:
+            raise ValueError(f"{batch_path}: duplicate or missing FLS label id")
+        if asset_index < 0 or asset_index >= archive.count:
+            raise ValueError(f"{batch_path}: {row_id} asset index is out of range")
+        if asset_index in claimed_assets:
+            raise ValueError(f"{batch_path}: duplicate FLS asset {asset_index}")
+        if not isinstance(lines, list) or not lines or not all(
+            isinstance(line, str) and line for line in lines
+        ):
+            raise ValueError(f"{batch_path}: {row_id} requires nonempty text lines")
+        archive.texture(asset_index).replace_with_lines(
+            lines,
+            maximum_size=int(record.get("maximum_size", 12)),
+            background_index=int(record.get("background_index", 0)),
+            color_index=int(record.get("color_index", 1)),
+            outline_index=(
+                int(record["outline_index"])
+                if record.get("outline_index") is not None
+                else None
+            ),
+            layout_width=(
+                int(record["layout_width"])
+                if record.get("layout_width") is not None
+                else None
+            ),
+        )
+        claimed_assets.add(asset_index)
+        record_ids.append(row_id)
+
+    rebuilt = archive.to_bytes()
+    if len(rebuilt) != len(source):
+        raise ValueError("FLS label rebuild changed the resource allocation")
+    return rebuilt, record_ids
+
+
 def apply_ilnk_pxl_sync_batch(
     batch_path: Path, source: bytes, reference_pxl: bytes
 ) -> tuple[bytes, list[str]]:
@@ -577,13 +646,13 @@ def apply_obj_label_batch(
         raise ValueError(f"{batch_path}: OBJ bank geometry must be 8x8-aligned")
     tiles_per_row = bank_width // 8
     tiles_per_bank = tiles_per_row * (bank_height // 8)
-    bank_count = len(source) // (tiles_per_bank * 32)
+    tile_count = len(source) // 32
 
-    def decode_bank(bank: int) -> list[list[int]]:
+    def decode_region(start_tile: int) -> list[list[int]]:
         pixels = [[0] * bank_width for _ in range(bank_height)]
         for tile_y in range(bank_height // 8):
             for tile_x in range(tiles_per_row):
-                tile = bank * tiles_per_bank + tile_y * tiles_per_row + tile_x
+                tile = start_tile + tile_y * tiles_per_row + tile_x
                 packed = source[tile * 32 : tile * 32 + 32]
                 for y in range(8):
                     for pair, value in enumerate(packed[y * 4 : y * 4 + 4]):
@@ -594,20 +663,26 @@ def apply_obj_label_batch(
 
     parsed: list[tuple[str, int, str]] = []
     seen_ids: set[str] = set()
-    seen_banks: set[int] = set()
+    seen_regions: set[int] = set()
     for record in records:
         if not isinstance(record, dict):
             raise TypeError(f"{batch_path}: OBJ label record must be an object")
         record_id = str(record.get("id", ""))
         bank = int(record.get("bank", -1))
+        start_tile = int(record.get("target_tile", bank * tiles_per_bank))
         text = str(record.get("text", ""))
         if not record_id or record_id in seen_ids:
             raise ValueError(f"{batch_path}: duplicate or missing OBJ label id")
-        if bank < 0 or bank >= bank_count or bank in seen_banks or not text:
+        if (
+            start_tile < 0
+            or start_tile + tiles_per_bank > tile_count
+            or start_tile in seen_regions
+            or not text
+        ):
             raise ValueError(f"{batch_path}: {record_id} has an invalid target")
         seen_ids.add(record_id)
-        seen_banks.add(bank)
-        parsed.append((record_id, bank, text))
+        seen_regions.add(start_tile)
+        parsed.append((record_id, start_tile, text))
 
     raw_box = batch.get("erase_box")
     if not isinstance(raw_box, list) or len(raw_box) != 4:
@@ -616,39 +691,45 @@ def apply_obj_label_batch(
     if not (0 <= left < right <= bank_width and 0 <= top < bottom <= bank_height):
         raise ValueError(f"{batch_path}: invalid OBJ label erase box")
     erase_index = int(batch.get("erase_index", 15))
+    raw_erase_indices = batch.get("erase_indices", [erase_index])
+    if not isinstance(raw_erase_indices, list) or not raw_erase_indices:
+        raise ValueError(f"{batch_path}: OBJ erase_indices must be a nonempty list")
+    erase_indices = {int(value) for value in raw_erase_indices}
     color_index = int(batch.get("color_index", 15))
     fallback_index = int(batch.get("background_fallback_index", 0))
     glyph_width = int(batch.get("glyph_width", 5))
     advance = int(batch.get("advance", glyph_width))
     text_y = int(batch.get("text_y", top))
-    if not all(0 <= value <= 15 for value in (erase_index, color_index, fallback_index)):
+    if not all(
+        0 <= value <= 15 for value in erase_indices | {color_index, fallback_index}
+    ):
         raise ValueError(f"{batch_path}: OBJ palette indices must be 0..15")
     if not (1 <= glyph_width <= 6 and advance >= glyph_width and text_y >= 0):
         raise ValueError(f"{batch_path}: invalid OBJ font geometry")
 
-    pixels_by_bank = {bank: decode_bank(bank) for _, bank, _ in parsed}
+    pixels_by_bank = {start_tile: decode_region(start_tile) for _, start_tile, _ in parsed}
     background: dict[tuple[int, int], int] = {}
     for y in range(top, bottom):
         for x in range(left, right):
             candidates = [
                 pixels[y][x]
                 for pixels in pixels_by_bank.values()
-                if pixels[y][x] != erase_index
+                if pixels[y][x] not in erase_indices
             ]
             background[x, y] = (
                 Counter(candidates).most_common(1)[0][0] if candidates else fallback_index
             )
 
-    for _, bank, text in parsed:
-        pixels = pixels_by_bank[bank]
+    for _, start_tile, text in parsed:
+        pixels = pixels_by_bank[start_tile]
         for (x, y), value in background.items():
-            if pixels[y][x] == erase_index:
+            if pixels[y][x] in erase_indices:
                 pixels[y][x] = value
 
         text_width = len(text) * advance
         text_x = (bank_width - text_width) // 2
         if text_x < left or text_x + text_width > right or text_y + 11 > bottom:
-            raise ValueError(f"{batch_path}: label does not fit bank {bank}: {text!r}")
+            raise ValueError(f"{batch_path}: label does not fit tile region {start_tile}: {text!r}")
         for index, character in enumerate(text):
             glyph = font.decode(character)
             bounds = glyph.getbbox()
@@ -661,8 +742,8 @@ def apply_obj_label_batch(
                         pixels[text_y + y][text_x + index * advance + x] = color_index
 
     rebuilt = bytearray(source)
-    for _, bank, _ in parsed:
-        pixels = pixels_by_bank[bank]
+    for _, start_tile, _ in parsed:
+        pixels = pixels_by_bank[start_tile]
         for tile_y in range(bank_height // 8):
             for tile_x in range(tiles_per_row):
                 packed = bytearray()
@@ -671,7 +752,7 @@ def apply_obj_label_batch(
                     for x in range(0, 8, 2):
                         source_x = tile_x * 8 + x
                         packed.append(row[source_x] | row[source_x + 1] << 4)
-                tile = bank * tiles_per_bank + tile_y * tiles_per_row + tile_x
+                tile = start_tile + tile_y * tiles_per_row + tile_x
                 rebuilt[tile * 32 : tile * 32 + 32] = packed
 
     return bytes(rebuilt), [record_id for record_id, _, _ in parsed]
@@ -704,31 +785,82 @@ def apply_pxl_native_label_batch(
     if not all(0 <= value < len(image.palette) for value in erased | {color_index}):
         raise ValueError(f"{batch_path}: native PXL palette index is out of range")
 
-    parsed: list[tuple[str, tuple[int, int, int, int], str]] = []
+    parsed: list[
+        tuple[
+            str,
+            tuple[int, int, int, int],
+            tuple[int, int, int, int],
+            bytes | None,
+            str,
+        ]
+    ] = []
     record_ids: list[str] = []
     for record in records:
         if not isinstance(record, dict):
             raise TypeError(f"{batch_path}: native PXL label record must be an object")
         record_id = str(record.get("id", ""))
         raw_box = record.get("box")
+        raw_draw_box = record.get("draw_box", raw_box)
+        raw_background = record.get("background_indices_zlib_hex")
         text = str(record.get("text", ""))
         if not record_id or record_id in record_ids or not text:
             raise ValueError(f"{batch_path}: duplicate or incomplete native PXL label")
         if not isinstance(raw_box, list) or len(raw_box) != 4:
             raise ValueError(f"{batch_path}: {record_id} requires a label box")
+        if not isinstance(raw_draw_box, list) or len(raw_draw_box) != 4:
+            raise ValueError(f"{batch_path}: {record_id} has an invalid draw box")
         left, top, right, bottom = (int(value) for value in raw_box)
+        draw_left, draw_top, draw_right, draw_bottom = (
+            int(value) for value in raw_draw_box
+        )
+        background = (
+            zlib.decompress(bytes.fromhex(str(raw_background)))
+            if raw_background is not None
+            else None
+        )
         if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
             raise ValueError(f"{batch_path}: {record_id} has an invalid label box")
-        parsed.append((record_id, (left, top, right, bottom), text))
+        if not (
+            left <= draw_left < draw_right <= right
+            and top <= draw_top < draw_bottom <= bottom
+        ):
+            raise ValueError(f"{batch_path}: {record_id} draw box escapes its label box")
+        if background is not None:
+            expected_background_size = (right - left) * (bottom - top)
+            if len(background) != expected_background_size:
+                raise ValueError(
+                    f"{batch_path}: {record_id} background has {len(background)} "
+                    f"indices; expected {expected_background_size}"
+                )
+            if any(value >= len(image.palette) for value in background):
+                raise ValueError(f"{batch_path}: {record_id} background index is invalid")
+        parsed.append(
+            (
+                record_id,
+                (left, top, right, bottom),
+                (draw_left, draw_top, draw_right, draw_bottom),
+                background,
+                text,
+            )
+        )
         record_ids.append(record_id)
 
     # Erase every old label before drawing any replacement. Some original
     # plaque boxes overlap by a few background-only rows.
-    for _, box, _ in parsed:
-        image.erase_palette_indices(box, erased)
+    for _, (left, top, right, bottom), _, background, _ in parsed:
+        if background is not None:
+            width = right - left
+            for y in range(top, bottom):
+                source_start = (y - top) * width
+                destination_start = y * image.width + left
+                image.indices[destination_start : destination_start + width] = background[
+                    source_start : source_start + width
+                ]
+        else:
+            image.erase_palette_indices((left, top, right, bottom), erased)
 
     drawn: list[tuple[int, int, int, int]] = []
-    for record_id, (left, top, right, bottom), text in parsed:
+    for record_id, _, (left, top, right, bottom), _, text in parsed:
         text_width = len(text) * advance
         text_x = left + (right - left - text_width) // 2
         text_y = top + (bottom - top - 11) // 2
@@ -898,6 +1030,15 @@ def main() -> None:
     for file_path, file_batch_paths in grouped.items():
         source = candidate.read_file(file_path)
         formats = {str(load_batch_header(path).get("format", "")) for path in file_batch_paths}
+        if formats == {"dk4-fls-label-batch-v1"}:
+            if len(file_batch_paths) != 1:
+                raise SystemExit(f"{file_path}: exactly one FLS label batch is allowed")
+            rebuilt, record_ids = apply_fls_label_batch(file_batch_paths[0], source)
+            if rebuilt == source:
+                raise SystemExit(f"{file_path}: FLS label batch made no changes")
+            candidate.replace_file(file_path, rebuilt)
+            changed_records[file_path] = record_ids
+            continue
         if formats == {"dk4-pxl-label-batch-v1"}:
             rebuilt, record_ids = apply_pxl_label_batches(file_batch_paths, source)
             if rebuilt == source:
@@ -1195,6 +1336,7 @@ def main() -> None:
             "main_menu_anchors_present": True,
             "unmapped_story_control_records_rejected": True,
             "natural_dialogue_qa_enforced": True,
+            "playable_story_pair_phase_enforced": True,
             "no_new_placeholder_fallbacks": True,
             "saved_rom_roundtrip": True,
             "mapped_ilnk_relocation_enforced": bool(relocation_checks)

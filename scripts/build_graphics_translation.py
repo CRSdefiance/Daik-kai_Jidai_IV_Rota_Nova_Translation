@@ -121,6 +121,9 @@ FLS_LABELS = {
     "/FLS/logo.fls": {
         3: ["REKOEITION GAME"],
     },
+    "/FLS/M20.fls": {
+        27: ["What is it, Clau?", "What did you want to show?"],
+    },
     "/FLS/M22.fls": {
         1: ["Hey, don't!", "It's too dangerous!"],
         2: ["It's fine, it's fine.", "Leave it to me!"],
@@ -182,7 +185,14 @@ def main() -> None:
     for path, assets in FLS_LABELS.items():
         archive = FlsArchive(image.read_file(path))
         for index, lines in assets.items():
-            archive.texture(index).replace_with_lines(lines)
+            archive.texture(index).replace_with_lines(
+                lines,
+                maximum_size=10 if path == "/FLS/M20.fls" else 12,
+                background_index=0,
+                color_index=1,
+                outline_index=2 if path != "/FLS/logo.fls" else None,
+                layout_width=168 if path == "/FLS/M20.fls" else None,
+            )
             if args.preview_dir:
                 destination = args.preview_dir / f"{Path(path).stem}_{index:03d}.png"
                 archive.texture(index).render().save(destination)

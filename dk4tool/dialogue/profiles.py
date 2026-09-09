@@ -68,13 +68,30 @@ _PROFILES = {
         macro_widths={"FI": 42, "FA": 36, "FO": 60, "I": 12},
         macro_ascii_lengths={"FI": 7, "FA": 6, "FO": 10},
         # SC0 B48: 0x4B consistently prefixes Hans; 0x71 consistently
-        # prefixes the dock worker. Both precede CP932 prose and were already
-        # preserved by the legacy fixed-size batch.
-        leading_speaker_bytes=frozenset({0x4B, 0x71}),
+        # prefixes the dock worker. SC0 B51 uses 0x18 for Serah. Printable
+        # states used by later scenes live in a separate profile so accepted
+        # English beginning with those ASCII bytes cannot be misclassified.
+        leading_speaker_bytes=frozenset({0x18, 0x4B, 0x71}),
         metrics_source=(
             "cold-boot 2026-08-10: bare 0A exposes the following glyph before "
             "the line transition; 0A 20 protects it; default Raphael route "
             "macro widths are 7/6/10 fixed-width ASCII cells"
+        ),
+    ),
+    "raphael-story-late-live": DialogueProfile(
+        name="raphael-story-late-live",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 42, "FA": 36, "FO": 60, "I": 12},
+        macro_ascii_lengths={"FI": 7, "FA": 6, "FO": 10},
+        leading_speaker_bytes=frozenset(
+            {0x14, 0x18, 0x25, 0x27, 0x4B, 0x50, 0x54, 0x71, 0x72, 0x74}
+        ),
+        metrics_source=(
+            "Raphael live story metrics plus source-correlated late-story NPC "
+            "presentation states; isolated from accepted relocated English"
         ),
     ),
     "hodram-story-probe": DialogueProfile(

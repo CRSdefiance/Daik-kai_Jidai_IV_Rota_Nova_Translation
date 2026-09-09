@@ -157,6 +157,12 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "by V6 are accepted."
             ),
             (
+                "- **Current Deck review patch:** all compact room names, requirement and "
+                "restriction strings, ability names, the Y-button `Crew` label, all 71 "
+                "previously overlong activity responses, and the final inherited Deck "
+                "placeholder are included in the V10 candidate."
+            ),
+            (
                 "- **Canonical accepted baseline:** "
                 f"`{accepted_rom}`, SHA-256 `{accepted_sha256}`."
             ),

@@ -2,6 +2,29 @@
 
 ## High priority
 
+- [x] Cold-boot `out/ships_submenu_v1_candidate.nds`; confirm the native labels,
+  English `Cpt.`, `Culverin 24` spacing, values, and navigation, while rejecting
+  the remaining beige fields behind the cargo and cannon sprites.
+- [ ] Cold-boot `out/ships_submenu_v2_candidate.nds` and inspect Common > Info >
+  Ships with cargo and a Culverin. Confirm `Cargo` clearly owns the two native
+  item thumbnails, `Fore/Aft` and `Square` are readable, the cannon thumbnail
+  precedes `Culverin 24`, all values remain aligned, and Back works.
+- [ ] Cold-boot `out/ships_route_forces_v1_candidate.nds` from a full emulator
+  restart. On the route map, inspect Hamburg, Amsterdam, Hangzhou, Quanzhou,
+  Nagasaki, and Tsukushi plus cities in several regions; confirm all names are
+  English and each coordinate pair occupies a clean second line. Open Forces
+  and confirm the source-textured native-font plaques, English leader/region and
+  unknown-force text, English Hayreddin/Silveira/Uddin/Centurione groups, and
+  complete Area/Map/Back buttons. Open World Map and switch between Area and
+  Fleet/Town; confirm its title, instructions, and Switch/Area/Back/Done buttons
+  remain fully English. Repeat the Ships V2 checks before promotion.
+- [ ] Cold-boot `out/opening_movie_v1_candidate.nds` from a full emulator restart.
+  Let the complete opening movie run: verify both cyan title prompts, the newly
+  translated Clau subtitle, and the opaque black outline on all five English movie
+  cards over light and dark frames. Start each captain once and confirm the animated
+  English name captions and transitions are unchanged. Repeat the Ships, route-map,
+  Forces, and World Map checks inherited from the combined candidate.
+
 - [x] Correct route ownership: SC1 is Hodram's playable route; SC2 is Lil's. Revoke
   the inaccessible wrong-route SC2 control probe and retain its ROM only as evidence.
 - [x] Translate 67 records from Hodram's actual SC1 opening through the first

@@ -1,0 +1,58 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "content_type": "ilnk-interior-fixed-text-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "943ce540c99bca4cd5f2be16fba071e082b588619ac05f4c1fecd49528976ffc",
+  "target_locale": "en-US",
+  "scope": "Trader greeting phase repair and natural investment response",
+  "records": [
+    {
+      "id": "DK4_MES_B00_R0008",
+      "english": "Need help? | Thanks! Come again.",
+      "source_hex": "202043616E20492068656C703F205468616E6B732120436F6D6520616761696E2E20202020202020202020202020202020202020202020",
+      "replacement_hex": "20204E6565642068656C703F20205468616E6B732120436F6D6520616761696E2E20202020202020202020202020202020202020202020",
+      "interior_entries": [
+        {
+          "offset": 2,
+          "english": "Need help?"
+        },
+        {
+          "offset": 14,
+          "english": "Thanks! Come again."
+        }
+      ],
+      "context": "Trader greeting and farewell with two proven interior entry points.",
+      "source_meaning": "The trader asks what the player needs, or thanks the player and invites future business.",
+      "localization_note": "Preserves every proven interior entry offset. The greeting avoids standalone uppercase I, which this renderer interprets as the Japanese pronoun glyph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B09_R0042",
+      "english": "Excellent choice. How much will you invest?",
+      "source_hex": "2020536F20796F75276C6C20696E766573743F20596F752061726520646966666572656E742E20486F77206D7563683F202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "replacement_hex": "2020457863656C6C656E742063686F6963652E20486F77206D7563682077696C6C20796F7520696E766573743F202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "interior_entries": [
+        {
+          "offset": 2,
+          "english": "Excellent choice. How much will you invest?"
+        }
+      ],
+      "context": "Trader response when an existing shareholder chooses to invest.",
+      "source_meaning": "The trader welcomes the investment, compliments the player, and asks for an amount.",
+      "localization_note": "Natural American English replaces the earlier literal phrasing without moving the runtime entry point.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

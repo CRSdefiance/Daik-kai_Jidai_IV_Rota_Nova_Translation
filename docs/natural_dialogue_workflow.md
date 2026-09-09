@@ -74,6 +74,13 @@ cultural information, then express them the way an American localization would.
     `raphael-story-live` and must be authored as `{SPEAKER:4B}` and
     `{SPEAKER:71}`. Do not generalize printable ASCII into speaker controls;
     other leading values remain blocked until independently mapped.
+12. The integrated release builder rejects every playable SC0-SC3 translation
+    that uses the legacy raw encoder or a profile without pair-phase repair.
+    This makes dropped-first-glyph prevention a release invariant rather than a
+    line-by-line visual convention. A new route still needs one route-level
+    calibration for its presentation bytes and macro expansion lengths; after
+    that, wrapping, command preservation, pair parity, and allocation are
+    checked automatically for every translated record.
 
 ## Editorial gates
 

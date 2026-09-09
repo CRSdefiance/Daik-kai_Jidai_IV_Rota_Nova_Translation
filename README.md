@@ -126,7 +126,7 @@ beside newly streamed dialogue.
 
 The shared graphics pass redraws character-selection, city, fleet, faction, sailor,
 person, save/load, ship, and Golden Route interface captions in English. It also
-replaces the Japanese Rekoeition production card and four Japanese cutscene subtitle
+replaces the Japanese Rekoeition production card and five Japanese cutscene subtitle
 cards:
 
 ```powershell

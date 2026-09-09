@@ -2,11 +2,11 @@
   "format": "dk4-release-stack-v1",
   "canonical_baseline": {
     "path": "out/raphael_natural_v2_accepted_base.nds",
-    "sha256": "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf",
-    "accepted_on": "2026-09-03",
+    "sha256": "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2",
+    "accepted_on": "2026-09-09",
     "previous_baseline": {
-      "path": "out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds",
-      "sha256": "c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf"
+      "path": "out/raphael_natural_v2_pre_story_push_v10_accepted_rollback.nds",
+      "sha256": "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf"
     }
   },
   "accepted_layers": [
@@ -388,24 +388,300 @@
       "baked_into_baseline": true,
       "note": "First of the thirteen source-locked Online card batches explicitly accepted on 2026-09-03; the remaining card batches are registered individually below."
     },
-    {"name": "extras-common-v6-online51", "batch": "translations/extras_online51_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online52", "batch": "translations/extras_online52_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online53", "batch": "translations/extras_online53_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online54", "batch": "translations/extras_online54_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online55", "batch": "translations/extras_online55_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online56", "batch": "translations/extras_online56_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online57", "batch": "translations/extras_online57_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online58", "batch": "translations/extras_online58_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online59", "batch": "translations/extras_online59_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online60", "batch": "translations/extras_online60_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online61", "batch": "translations/extras_online61_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-online62", "batch": "translations/extras_online62_graphics_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."},
-    {"name": "extras-common-v6-sound-selector", "batch": "translations/sound_selector_arm9.json", "status": "accepted", "baked_into_baseline": true, "note": "All 57 SFX labels and their coordinated selector data were explicitly accepted on 2026-09-03."},
-    {"name": "extras-common-v6-bgm-titles", "batch": "translations/sound_bgm_titles.json", "status": "accepted", "baked_into_baseline": true, "note": "All 38 BGM labels and their coordinated interior-pointer layout were explicitly accepted on 2026-09-03."},
-    {"name": "extras-common-v6-common-radial", "batch": "translations/common_radial_obj_labels_v3.json", "status": "accepted", "baked_into_baseline": true, "note": "The native-font town Common radial labels were explicitly accepted on 2026-09-03."},
-    {"name": "extras-common-v6-common-submenus", "batch": "translations/common_submenus_arm9_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "Common submenus, Save/Load, Options terminology, and Deck help were explicitly accepted on 2026-09-03."},
-    {"name": "extras-common-v6-assign-sailors", "batch": "translations/dividecrewinfo_native_labels_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "The native-font Assign Sailors plaques were explicitly accepted on 2026-09-03."},
-    {"name": "extras-common-v6-items-runtime", "batch": "translations/common_items_runtime_v1.json", "status": "accepted", "baked_into_baseline": true, "note": "The empty-inventory Items runtime repair was explicitly accepted on 2026-09-03."}
+    {
+      "name": "extras-common-v6-online51",
+      "batch": "translations/extras_online51_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online52",
+      "batch": "translations/extras_online52_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online53",
+      "batch": "translations/extras_online53_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online54",
+      "batch": "translations/extras_online54_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online55",
+      "batch": "translations/extras_online55_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online56",
+      "batch": "translations/extras_online56_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online57",
+      "batch": "translations/extras_online57_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online58",
+      "batch": "translations/extras_online58_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online59",
+      "batch": "translations/extras_online59_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online60",
+      "batch": "translations/extras_online60_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online61",
+      "batch": "translations/extras_online61_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-online62",
+      "batch": "translations/extras_online62_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted and baked into the promoted Extras/Common V6 baseline."
+    },
+    {
+      "name": "extras-common-v6-sound-selector",
+      "batch": "translations/sound_selector_arm9.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "All 57 SFX labels and their coordinated selector data were explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "extras-common-v6-bgm-titles",
+      "batch": "translations/sound_bgm_titles.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "All 38 BGM labels and their coordinated interior-pointer layout were explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "extras-common-v6-common-radial",
+      "batch": "translations/common_radial_obj_labels_v3.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "The native-font town Common radial labels were explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "extras-common-v6-common-submenus",
+      "batch": "translations/common_submenus_arm9_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Common submenus, Save/Load, Options terminology, and Deck help were explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "extras-common-v6-assign-sailors",
+      "batch": "translations/dividecrewinfo_native_labels_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "The native-font Assign Sailors plaques were explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "extras-common-v6-items-runtime",
+      "batch": "translations/common_items_runtime_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "The empty-inventory Items runtime repair was explicitly accepted on 2026-09-03."
+    },
+    {
+      "name": "story-v10-promotion-ships_submenu_graphics_v2",
+      "batch": "translations/ships_submenu_graphics_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-ships_submenu_arm9_v1",
+      "batch": "translations/ships_submenu_arm9_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-trading_button_labels_v2",
+      "batch": "translations/trading_button_labels_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-trading_dialogue_polish_v2",
+      "batch": "translations/trading_dialogue_polish_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-trading_port_info_arm9_v2",
+      "batch": "translations/trading_port_info_arm9_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-trading_towninfo_graphics_v2",
+      "batch": "translations/trading_towninfo_graphics_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-port_market_header_obj_v1",
+      "batch": "translations/port_market_header_obj_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-assign_sailors_graphics_v2",
+      "batch": "translations/assign_sailors_graphics_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-assign_sailors_arm9_v2",
+      "batch": "translations/assign_sailors_arm9_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-deck_view_arm9_v2",
+      "batch": "translations/deck_view_arm9_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-deck_view_dialogue_v2",
+      "batch": "translations/deck_view_dialogue_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-route_forces_arm9_v1",
+      "batch": "translations/route_forces_arm9_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-force_info_graphics_v2",
+      "batch": "translations/force_info_graphics_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-opening_title02_graphics_v1",
+      "batch": "translations/opening_title02_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-opening_title06_graphics_v1",
+      "batch": "translations/opening_title06_graphics_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-opening_movie_m20_subtitle_v1",
+      "batch": "translations/opening_movie_m20_subtitle_v1.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-opening_movie_m22_subtitles_v2",
+      "batch": "translations/opening_movie_m22_subtitles_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-opening_movie_m24_subtitles_v2",
+      "batch": "translations/opening_movie_m24_subtitles_v2.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b49_b51",
+      "batch": "translations/raphael_story_natural_v2_b49_b51.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b54_b56",
+      "batch": "translations/raphael_story_natural_v2_b54_b56.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b57_b59",
+      "batch": "translations/raphael_story_natural_v2_b57_b59.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b60",
+      "batch": "translations/raphael_story_natural_v2_b60.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b61_b63",
+      "batch": "translations/raphael_story_natural_v2_b61_b63.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    },
+    {
+      "name": "story-v10-promotion-raphael_story_natural_v2_b64_b67",
+      "batch": "translations/raphael_story_natural_v2_b64_b67.json",
+      "status": "accepted",
+      "baked_into_baseline": true,
+      "note": "Explicitly accepted by the user on 2026-09-09 and baked into the Raphael Story V10 baseline."
+    }
   ],
   "profiles": {
     "sound-setup": {
@@ -642,6 +918,77 @@
         "translations/common_items_runtime_v1.json"
       ],
       "note": "Extends the accepted radial-menu mapping into the Functions and Info submenus, translates the Deck View help page, shortens its clipped heading, and redraws all seven Assign Sailors plaques with the native game font."
+    },
+    "ships-submenu-v1": {
+      "status": "experimental",
+      "batches": [
+        "translations/ships_submenu_graphics_v1.json",
+        "translations/ships_submenu_arm9_v1.json"
+      ],
+      "note": "Native-font Ships-screen captions with overlay-safe Goods and Cannon placement, corrected Holds/Lateen terminology, localized captain suffixes, and visible separation between Culverin and its runtime value. Experimental pending a full-restart Ships-screen review."
+    },
+    "ships-submenu-v2": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/ships_submenu_graphics_v2.json",
+        "translations/ships_submenu_arm9_v1.json"
+      ],
+      "note": "Refines V1 terminology to Cargo and the nautically accurate Fore/Aft while preserving the original plaque geometry, native runtime cargo/cannon thumbnails, and proven ARM9 text repairs."
+    },
+    "ships-route-forces-v1": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/ships_submenu_graphics_v2.json",
+        "translations/ships_submenu_arm9_v1.json",
+        "translations/route_forces_arm9_v1.json",
+        "translations/force_info_graphics_v2.json"
+      ],
+      "note": "Combined next-patch candidate: refined Ships labels, all 113 live route-map city records verified as terminated English, protected two-line map coordinates, translated World Map area-selection instructions and button variants, pair-safe Forces buttons, translated leader/region/unknown-force text and four missed force names, plus native-font Forces labels on restored source-textured plaques. All 189 profiled sailor names are verified ASCII. Experimental pending full-restart route-map and Forces review."
+    },
+    "opening-movie-v1": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/ships_submenu_graphics_v2.json",
+        "translations/ships_submenu_arm9_v1.json",
+        "translations/route_forces_arm9_v1.json",
+        "translations/force_info_graphics_v2.json",
+        "translations/opening_title02_graphics_v1.json",
+        "translations/opening_title06_graphics_v1.json",
+        "translations/opening_movie_m20_subtitle_v1.json",
+        "translations/opening_movie_m22_subtitles_v2.json",
+        "translations/opening_movie_m24_subtitles_v2.json"
+      ],
+      "note": "Extends the current Ships/route/Forces review candidate with both title-screen instruction overlays, the previously missed M20 opening subtitle, and rebuilt M20/M22/M24 movie captions using the original transparent-background, white-fill, opaque-black-outline palette structure. Experimental pending a complete emulator restart and review of the opening movie and title prompts."
+    },
+    "raphael-story-push-v1": {
+      "status": "accepted-baked",
+      "batches": [
+        "translations/ships_submenu_graphics_v2.json",
+        "translations/ships_submenu_arm9_v1.json",
+        "translations/trading_button_labels_v2.json",
+        "translations/trading_dialogue_polish_v2.json",
+        "translations/trading_port_info_arm9_v2.json",
+        "translations/trading_towninfo_graphics_v2.json",
+        "translations/port_market_header_obj_v1.json",
+        "translations/assign_sailors_graphics_v2.json",
+        "translations/assign_sailors_arm9_v2.json",
+        "translations/deck_view_arm9_v2.json",
+        "translations/deck_view_dialogue_v2.json",
+        "translations/route_forces_arm9_v1.json",
+        "translations/force_info_graphics_v2.json",
+        "translations/opening_title02_graphics_v1.json",
+        "translations/opening_title06_graphics_v1.json",
+        "translations/opening_movie_m20_subtitle_v1.json",
+        "translations/opening_movie_m22_subtitles_v2.json",
+        "translations/opening_movie_m24_subtitles_v2.json",
+        "translations/raphael_story_natural_v2_b49_b51.json",
+        "translations/raphael_story_natural_v2_b54_b56.json",
+        "translations/raphael_story_natural_v2_b57_b59.json",
+        "translations/raphael_story_natural_v2_b60.json",
+        "translations/raphael_story_natural_v2_b61_b63.json",
+        "translations/raphael_story_natural_v2_b64_b67.json"
+      ],
+      "note": "Large experimental Raphael continuation layered on the current opening-movie review candidate. It translates every safely addressable prose record in SC0 blocks 49-51 and 54-67, including the Duarte Pereira strategy branches, victory reward, New World Proof clue, Eirene/Claudio crew vignette, and Charlotte village development arc. The current review build also repairs the trade-button clipping, packed Trader greeting and investment prose, full Port/City wording, sailor nameplate, all 19 cultural regions, the live market header, six native-font port-information plaques, and all seven source-art Assign Sailors plaques. The Assign Sailors range value now uses an unambiguous `days` suffix. Deck View now has complete room, requirement, restriction, ability, and button text, plus concise complete activity responses fitted to its measured 24-glyph window. Malformed or presentation-ambiguous records remain explicitly quarantined."
     },
     "common-gameplay-natural-v2": {
       "status": "accepted-baked",

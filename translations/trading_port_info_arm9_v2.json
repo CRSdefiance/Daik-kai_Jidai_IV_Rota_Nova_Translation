@@ -1,0 +1,175 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "249860ab1d29ecfa8e149fd04b5cbff3c3414fb192f81459cfaf469d6c83fa52",
+  "target_locale": "en-US",
+  "scope": "Unabbreviated port type, sailor nameplate, and all 19 live cultural-region names",
+  "records": [
+    {
+      "id": "DK4_CITY_TYPE_PORT_AND_CITY_POOL_V2",
+      "offset": 1402336,
+      "source_hex": "50727400436974790000",
+      "replacement_hex": "506F7274004369747900",
+      "context": "Moves City one byte within its own padding so Port can be shown without abbreviation."
+    },
+    {
+      "id": "DK4_CITY_TYPE_CITY_POINTER_V2",
+      "offset": 741908,
+      "source_hex": "E4651502",
+      "replacement_hex": "E5651502",
+      "context": "Retargets the City value to its one-byte-shifted, terminated string."
+    },
+    {
+      "id": "DK4_TRADER_SAILOR_NAMEPLATE",
+      "offset": 1344724,
+      "source_hex": "9085957600000000",
+      "english": "Sailor",
+      "context": "Generic sailor portrait nameplate used during trade confirmation.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_NORDIC",
+      "offset": 1423512,
+      "source_hex": "966B89A200000000",
+      "english": "Nordic",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_PORTUGAL",
+      "offset": 1430060,
+      "source_hex": "837C838B8367834B838B0000",
+      "english": "Portugal",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_SPAIN",
+      "offset": 1427024,
+      "source_hex": "835883798343839300000000",
+      "english": "Spain",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_ITALY",
+      "offset": 1427048,
+      "source_hex": "8343835E838A834100000000",
+      "english": "Italy",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_GREECE",
+      "offset": 1427072,
+      "source_hex": "834D838A8356838300000000",
+      "english": "Greece",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_TURKEY",
+      "offset": 1425024,
+      "source_hex": "8367838B83520000",
+      "english": "Turkey",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_EGYPT",
+      "offset": 1427120,
+      "source_hex": "834783578376836700000000",
+      "english": "Egypt",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_WEST_AFRICA",
+      "offset": 1430216,
+      "source_hex": "90BC83418374838A834A0000",
+      "english": "West Africa",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_EAST_AFRICA",
+      "offset": 1430228,
+      "source_hex": "938C83418374838A834A0000",
+      "english": "East Africa",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_ARAB",
+      "offset": 1425072,
+      "source_hex": "8341838983750000",
+      "english": "Arab",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_INDIA",
+      "offset": 1425088,
+      "source_hex": "8343839383680000",
+      "english": "India",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_INDOCHINA",
+      "offset": 1430324,
+      "source_hex": "834383938368835683690000",
+      "english": "Indochina",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_INDONESIA",
+      "offset": 1432644,
+      "source_hex": "834383938368836C83568341",
+      "english": "Indonesia",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_CHINA",
+      "offset": 1423760,
+      "source_hex": "92868D9100000000",
+      "english": "China",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_KOREA",
+      "offset": 1423640,
+      "source_hex": "92A9914E00000000",
+      "english": "Korea",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_JAPAN",
+      "offset": 1423816,
+      "source_hex": "93FA967B00000000",
+      "english": "Japan",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_CARIBBEAN",
+      "offset": 1427324,
+      "source_hex": "834A838A83758A4300000000",
+      "english": "Caribbean",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    },
+    {
+      "id": "DK4_PORT_REGION_MEXICO",
+      "offset": 1427336,
+      "source_hex": "8381834C8356835200000000",
+      "english": "Mexico",
+      "context": "Cultural-region name selected by the live port-information table.",
+      "notes": "Source-locked, null-terminated port-information text."
+    }
+  ]
+}
