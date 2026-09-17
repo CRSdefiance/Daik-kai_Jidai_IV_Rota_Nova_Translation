@@ -225,8 +225,11 @@ def test_coordinate_and_forces_runtime_text_are_pair_safe() -> None:
 
 def test_all_profiled_sailor_names_are_ascii_in_accepted_base() -> None:
     arm9 = NdsImage.open(BASE).read_file("/__arm9__.bin")
-    assert len(GLOBAL_NAME_ENTRIES) == 189
+    assert len(GLOBAL_NAME_ENTRIES) == 190
     for entry in GLOBAL_NAME_ENTRIES:
+        if entry.offset == 0x15E96C:
+            assert arm9[entry.offset : entry.offset + entry.source_length] == entry.expected_bytes
+            continue
         visible = arm9[entry.offset : entry.offset + entry.source_length].split(b"\0", 1)[0]
         assert visible.decode("ascii"), entry.row_id
 

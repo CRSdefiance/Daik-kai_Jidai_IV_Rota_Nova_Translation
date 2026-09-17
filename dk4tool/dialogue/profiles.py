@@ -114,6 +114,55 @@ _PROFILES = {
             "portrait/nameplate effects await cold-boot confirmation"
         ),
     ),
+    "lil-story-b23-probe": DialogueProfile(
+        name="lil-story-b23-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        # FI/FA/FO select the route protagonist's default first name,
+        # surname, and company. Raphael's proven 7/6/10 lengths correspond
+        # exactly to Raphael/Castor/Castor Co.; Lil/Argot/Argot Co. therefore
+        # supply the route-specific 3/5/9 probe lengths below.
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02, 0x09, 0x14, 0xFE}),
+        metrics_source=(
+            "SC2 B23 source correlation: 02=Lil, 09=Kamil, 14=Fernando, "
+            "FE=tutorial panel; default Lil route macro strings are "
+            "Lil/Argot/Argot Co. Runtime confirmation remains required."
+        ),
+    ),
+    "lil-story-b22-first-screen-probe": DialogueProfile(
+        name="lil-story-b22-first-screen-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02}),
+        metrics_source=(
+            "SC2 B22 R0019 single-record opening probe; 02=Lil from repeated "
+            "B22/B23 source correlation. Uses the accepted progressive-story "
+            "216 px width, guarded breaks, and pair-phase behavior."
+        ),
+    ),
+    "lil-story-b22-intro-probe": DialogueProfile(
+        name="lil-story-b22-intro-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02, 0x09, 0x0E, 0x14}),
+        metrics_source=(
+            "SC2 B22 source/context correlation: 02=Lil, 09=Kamil, "
+            "0E=Emilio, 14=Fernando. Uses the accepted progressive-story "
+            "216 px width, guarded breaks, and pair-phase behavior."
+        ),
+    ),
     "help": DialogueProfile(
         name="help",
         window_width_px=232,

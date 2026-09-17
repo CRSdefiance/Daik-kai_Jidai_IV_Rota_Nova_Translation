@@ -1,5 +1,20 @@
 # Known issues
 
+## Accepted cumulative Lil/Guild/Hodram V1 baseline
+
+The user explicitly promoted `out/lil_hodram_unified_v1_candidate.nds` on
+2026-09-17. Its bytes are now the canonical
+`out/raphael_natural_v2_accepted_base.nds`; the SHA-256 is
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+The former canonical baseline is retained as
+`out/raphael_natural_v2_pre_lil_hodram_unified_v1_accepted_rollback.nds`,
+SHA-256 `0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`.
+The promotion bakes Lil's 49-record Amsterdam opening, shared name and fleet
+repairs, Guild and Inn UI, all 218 item names, the Amsterdam Guild item
+descriptions, and the cumulative Hodram, market, shipyard, cargo, Inn, and
+at-sea repairs. The manifest passed every release check and the full regression
+suite passes (346 tests).
+
 ## Accepted Raphael Story V10 baseline
 
 The user explicitly promoted `out/raphael_story_push_v10_candidate.nds` on
@@ -523,8 +538,49 @@ incorrect speaker and corrupts the first visible English glyph.
 
 `lil_sc2_opening_repair.nds` and `lil_sc2_opening_repair_v2.nds` are revoked
 research candidates and must not be distributed. The safe integration baseline
-is `out/raphael_natural_v2_accepted_base.nds`. Map the full control preamble in
-a disposable live-tested probe before another SC2 block-22 translation build.
+is `out/raphael_natural_v2_accepted_base.nds`.
+
+The replacement `out/lil_b22_first_screen_probe_v1.nds` changes only
+`DK4_MES_B22_R0019`, Lil's first visible Amsterdam line. It preserves the `02`
+selector, the record's exact 85-byte allocation, guarded line breaks, and ASCII
+pair phase. The integrated builder admits block 22 only through this named,
+research-only profile; every broader block-22 batch remains rejected. Cold-boot
+confirmation of Lil's portrait/nameplate, first glyph, three-line rendering, and
+transition to the following Kamil line is still required before expanding the
+probe.
+
+The expanded `out/lil_b22_intro_natural_v2_candidate.nds` now translates all
+49 spoken records through Lil's order to sail for Bruges. It preserves every
+inter-record scene command byte-for-byte and changes only the intended B22
+dialogue records. Selector correlation is `02` = Lil, `09` = Kamil, `0E` =
+Emilio, and `14` = Fernando; `FI` uses the three-byte default name `Lil`.
+Because the first-screen result has not yet been reported from a cold boot, this
+full build remains an experimental candidate rather than an accepted layer.
+
+## Lil Deck tutorial manuscript
+
+Lil's complete SC2 block-23 Deck-post tutorial now has a 35-record source-first
+natural-English manuscript in
+`translations/lil_natural_v2_sc2_b23_blocked.json`. It follows the actual route
+sequence from Kamil's opening explanation through the prompt to open Deck and
+change navigator assignments. Terminology matches the accepted interface,
+including captain, sail master, helmsman, surveyor, lookout, Observation, Auto
+Move, Half/Full sails, and the X Button.
+
+Static correlation has now mapped selectors `02` = Lil, `09` = Kamil, `14` =
+Fernando, and `FE` = the system tutorial panel. Records 18 and 20 are not
+continuations: they are the two bare labels inside a choice command sequence
+matching the proven Raphael tutorial grammar. `FI` is the default-route first-name
+macro and therefore expands to `Lil`; `FA` and `FO` map to `Argot` and `Argot Co.`.
+The evidence and record-by-record command map are in
+`docs/lil_sc2_b23_control_map.md`.
+
+This remains editorial progress rather than a release batch because the native
+emulator window is unavailable to the current automation surface. Portrait and
+nameplate presentation, choice placement, macro expansion, and final wrapping
+still need a manual cold-boot pass. Every source record has an exact hex guard,
+every English line remains in `blocked_records`, and the only buildable form is
+the explicitly experimental seven-record control probe.
 
 ## Naming keyboard page selection
 
@@ -805,8 +861,10 @@ experimental continuation of the accepted Raphael baseline through profile
 The candidate retains the 67-record Hodram opening and adds every mapped Japanese
 dialogue record in the first Stockholm tavern, dock, and market tutorials (SC1
 blocks 134-136). It also fills Gerhard's previously omitted surname slot with
-`Ardelknatts`. An audit of the other 196 shared personal-name and surname slots found
-them already translated in the accepted baseline.
+`Ardelknatts`. The original audit covered only 8-, 12-, and 16-byte name records and
+therefore missed Kamil's twenty-byte `Overijssel` slot. The complete profiled shared
+name catalogue now contains 190 records; the Lil shared-data V2 candidate verifies
+that all 190 resolve to terminated ASCII.
 
 The shared tavern repair preserves each proven packed interior entry point while
 fixing the reported bare price, lowercase diagnostic, empty Francisca response,
@@ -817,9 +875,61 @@ have exact-offset regression tests.
 Do not promote this ROM until a cold boot completes Hodram's opening and visits all
 three first-Stockholm buildings. Test both tutorial choices, tavern purchases,
 Francisca, sailor recruitment, nameplates, menus, wrapping, and every return to town.
+
+## Lil intro shared-data V2 candidate awaiting cold-boot test
+
+`out/lil_b22_intro_shared_data_v2_candidate.nds`, SHA-256
+`b6c51e7c0211ba65df37385f90f177d65dbd37974734282a494fc845c8022346`, layers
+the complete 49-record Lil Amsterdam intro on the canonical accepted baseline. It
+also translates Kamil's shared surname to `Overijssel`, redirects all four shared
+fleet-name formatters to a terminated `%s Fleet` string, translates Bruges' region
+to `Flanders`, redirects its single-slot hemp label to terminated `Hemp`, and changes
+the market-information location prompt to `Target`.
+
+The shared crew-join formatter now keeps its byte-20 runtime entry point but begins
+that second string with an ordinary sacrificial space. This establishes ASCII pair
+phase before the `%s` name expansion and prevents the first character of names such
+as `Fernando` from being consumed. The candidate changes only `/data/SC2.DK4`,
+`/__arm9__.bin`, and `/COMMON/MESFILE.DK4`; baseline and sound-selector verification
+pass, as do all 295 automated tests. It remains experimental until Kamil's nameplate,
+Lil Fleet, the Fernando recruitment notice, and the full Bruges port-information
+panel are reviewed from a cold boot.
+
+The current successor is `out/lil_b22_intro_guild_inn_v4_candidate.nds`, SHA-256
+`b12429f896e7d765c6979c0a1efa1d6648ccacaa83cb977ee1dc6e634f22105b`. It retains
+all V2 repairs and adds every shared Innkeeper and Guildmaster nameplate, Buy/Sell
+Items, the Ancient Map pitch, Gift/Price labels, and all three items offered by the
+Amsterdam Guild: `Rainbow Marbles`, `Huizong Art`, and `Snow-Silk Robe`. All three
+descriptions are English. The two packed description records preserve their neighboring
+items and every internal entry offset. Baseline and sound-selector verification pass,
+as do all 301 automated tests. Cold-boot review of all three selectable item panels is
+still required before promotion.
+
 # Revoked protected-newline probe (2026-08-14)
 
 `out/dialogue_protected_newline_probe.nds` is revoked and must not be tested,
 distributed, or used as a parent. Its helper overwrites live structured data at
 `0x02172300`. `dialogue_live_safe_v3.nds` remains the safe dialogue baseline,
 and protected `0A 20` breaks remain mandatory in translation data.
+
+## Shipyard-complete V1 candidate awaiting cold-boot review
+
+`out/shipyard_complete_v1_candidate.nds`, SHA-256
+`c9371c510dbc3c70c2aea6cc13bf5b4d752e65da2ce6c5708b687444a70163ad`,
+extends the complete placeholder-English candidate through the reported Shipyard
+flows. It localizes Repair, Remodel, equipment-room headings and descriptions,
+Reset and Back confirmations, Rename, dock status, ship-swap empty slots, purchase
+confirmation, and the complete six-name cannon table.
+
+The packed remodel and rename messages retain their original interior entry starts.
+Every ASCII entry begins with a two-byte guard, every explicit continuation is
+guarded, and every line is at most 31 bytes. The Repair record now uses the same
+two-byte guard for both its primary response and byte-26 helper response, fixing
+the dropped `N` in `No ships need repairs!`.
+
+The existing 119-entry ship-model catalog was re-audited and remains unchanged.
+`Fluyt` and `Pinnace` are the correct historical English terms; `Sm Galley` and
+`Lg Galley` are deliberate compact forms required by the fixed list slots. The
+accepted Ships-screen plaque geometry and runtime stat formatters also remain
+unchanged. All 326 automated tests pass, but the candidate is experimental until
+the complete Shipyard flow is reviewed from a cold boot.

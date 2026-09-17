@@ -24,6 +24,11 @@ def _synthetic_rom() -> bytes:
 def test_input_calendar_patch_applies_and_is_idempotent():
     patched, changes = patch_nds_bytes(_synthetic_rom())
     assert len(changes) == len(PATCHES)
+    arm9_offset = struct.unpack_from("<I", patched, 0x20)[0]
+    assert patched[arm9_offset + 0x15037C : arm9_offset + 0x150384] == b"Date\0\0\0\0"
+    assert struct.unpack_from("<I", patched, arm9_offset + 0xA0678)[0] == (
+        ARM9_LOAD_ADDRESS + 0x15037C
+    )
     patched_again, repeated_changes = patch_nds_bytes(patched)
     assert patched_again == patched
     assert repeated_changes == changes

@@ -1,0 +1,82 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "0e489dabc72c1eb70add0c336d92b4bf7f95aa155faedfc7185c3c580fd54f71",
+  "target_locale": "en-US",
+  "ascii_guard_policy": "two-byte-entry-and-line-v1",
+  "scope": "Packed Shipyard remodel, rename, and equipment tutorial messages",
+  "records": [
+    {
+      "id": "DK4_MES_B15_R0047",
+      "english": "  I'll help, Admiral. / I'll help refit, Admiral.",
+      "replacement_hex": "202049276c6c2068656c702c2041646d6972616c2e202049276c6c2068656c702072656669742c2041646d6972616c2e202020",
+      "entry_offsets": [0, 21],
+      "context": "Two independently addressed companion offers to assist with a refit.",
+      "notes": "Preserves the second entry at byte 21 and gives both ASCII entries a two-byte rendering guard."
+    },
+    {
+      "id": "DK4_MES_B15_R0048",
+      "english": "  Admiral, I'll help. / I can help, too... / With their help, I'll cut the refit cost by %s%. / Which ship gets renamed? / Give it any name you like.",
+      "replacement_hex": "202041646d6972616c2c2049276c6c2068656c702e20202020202020202020492063616e2068656c702c20746f6f2e2e2e2020576974682074686569722068656c702c2049276c6c206375740a202074686520726566697420636f737420627920257325252e20202020202020202020202020202020205768696368207368697020676574732072656e616d65643f202020204769766520697420616e79206e616d6520796f75206c696b652e2020",
+      "entry_offsets": [0, 29, 49, 117, 145],
+      "context": "Two companion refit offers, the helper discount, and both ship-renaming prompts.",
+      "notes": "Preserves entry starts at bytes 29, 49, 117, and 145. The literal percent is escaped as %% for the runtime formatter."
+    },
+    {
+      "id": "DK4_MES_B15_R0049",
+      "english": "  Which ship to refit? / It'll take %s days.",
+      "replacement_hex": "20205768696368207368697020746f2072656669743f20202020204974276c6c2074616b6520257320646179732e202020202020202020202020",
+      "entry_offsets": [0, 25],
+      "context": "Ship selection and refit-duration prompts.",
+      "notes": "Preserves the duration entry at byte 25."
+    },
+    {
+      "id": "DK4_MES_B15_R0050",
+      "english": "Split sails boost speed with the wind. / A spanker boosts speed against the wind. / Extra armor adds strength but slows the ship.",
+      "replacement_hex": "202053706c6974207361696c7320626f6f73742073706565640a202077697468207468652077696e642e20202020202020202020202020202020202020202020202020202020202041207370616e6b657220626f6f7374732073706565640a2020616761696e7374207468652077696e642e202020202020202020202020202020202020202020202020202045787472612061726d6f72206164647320737472656e6774680a202062757420736c6f77732074686520736869702e20202020202020202020202020",
+      "entry_offsets": [0, 70, 138],
+      "context": "Three equipment descriptions in the remodel room grid.",
+      "notes": "Preserves entry starts at bytes 70 and 138 and uses explicit guarded line breaks."
+    },
+    {
+      "id": "DK4_MES_B15_R0056",
+      "english": "Gunners speed up cannon fire. Up to four rooms. / Stores water and food.",
+      "replacement_hex": "202047756e6e6572732073706565642075702063616e6e6f6e20666972652e0a2020557020746f20666f757220726f6f6d732e202020202020202053746f72657320776174657220616e6420666f6f642e2020202020",
+      "entry_offsets": [0, 57],
+      "context": "Gunnery-officer and provisions-room descriptions.",
+      "notes": "Preserves the provisions-room entry at byte 57."
+    },
+    {
+      "id": "DK4_MES_B15_R0061",
+      "english": "Add a stern gun here. Big ships can add a spanker. / Mount a figurehead here.",
+      "replacement_hex": "2020416464206120737465726e2067756e20686572652e0a20204269672073686970732063616e206164642061207370616e6b65722e20202020202020202020202020204d6f756e742061206669677572656865616420686572652e202020202020202020202020202020",
+      "entry_offsets": [0, 66],
+      "context": "Stern-equipment and figurehead-slot descriptions.",
+      "notes": "Preserves the figurehead entry at byte 66."
+    },
+    {
+      "id": "DK4_MES_B15_R0062",
+      "english": "  Change cannon type here.",
+      "replacement_hex": "20204368616e67652063616e6e6f6e207479706520686572652e2020202020202020202020202020202020202020202020",
+      "entry_offsets": [0],
+      "context": "Cannon-type room description.",
+      "notes": "Shortened to avoid the automatic wrap that split 'type' and exposed a dropped first character."
+    },
+    {
+      "id": "DK4_MES_B15_R0063",
+      "english": "Lateen sails favor headwinds. No square sail behind.",
+      "replacement_hex": "20204c617465656e207361696c73206661766f72206865616477696e64732e0a20204e6f20737175617265207361696c20626568696e642e2020202020202020202020202020",
+      "entry_offsets": [0],
+      "context": "Lateen-sail handling and placement description.",
+      "notes": "Uses a deliberate guarded break instead of relying on the renderer's automatic wrapping."
+    },
+    {
+      "id": "DK4_MES_B15_R0064",
+      "english": "Topsails boost speed with the wind. / Square sails favor tailwinds; no lateen sail ahead. / Staysails boost speed against the wind. / Boosts both sail types.",
+      "replacement_hex": "2020546f707361696c7320626f6f73742073706565640a202077697468207468652077696e642e20202020202020202020202020202020202020202020202020202020537175617265207361696c73206661766f72207461696c77696e64732e0a20204e6f206c617465656e207361696c2061686561642e202020202020202020202020202020537461797361696c7320626f6f73742073706565640a2020616761696e7374207468652077696e642e2020202020202020202020202020202020202020202020426f6f73747320626f7468207361696c2074797065732e2020202020202020202020202020202020202020202020202020",
+      "entry_offsets": [0, 65, 133, 197],
+      "context": "Four sail descriptions in the remodel room grid.",
+      "notes": "Preserves entry starts at bytes 65, 133, and 197 with guarded explicit line breaks."
+    }
+  ]
+}

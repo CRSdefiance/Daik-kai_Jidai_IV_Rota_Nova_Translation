@@ -2,6 +2,14 @@
 
 ## High priority
 
+- [ ] Cold-boot `out/shipyard_complete_v1_candidate.nds` and exercise Repair,
+  Remodel, every equipment-room tile, Y Reset/Yes/No, Back/Yes/No, Rename, ship
+  swapping with empty slots, and ship purchasing. Confirm both Repair responses
+  retain their first letters; packed helper/discount/rename messages select the
+  correct English entry; all descriptions wrap cleanly; empty slots read `Ship 2`
+  through `Ship 5`; and Saker, Culverin, Pedrero, Cannon, Heavy Cannon, and
+  Carronade remain separated from their runtime gun counts.
+
 - [x] Cold-boot `out/ships_submenu_v1_candidate.nds`; confirm the native labels,
   English `Cpt.`, `Culverin 24` spacing, values, and navigation, while rejecting
   the remaining beige fields behind the cargo and cannon sprites.
@@ -34,6 +42,25 @@
   progression through SC1 blocks 42-44.
 - [x] Replace Lil's legacy SC2 block-27 scene with a complete 49-record,
   source-first natural-English editorial manuscript.
+- [x] Translate all 35 dialogue and system records in Lil SC2 block 23, covering
+  Kamil's Deck-post tutorial immediately after the opening voyage.
+- [x] Build a one-record, fixed-allocation probe for Lil's first visible Amsterdam
+  line (`SC2 B22 R0019`) without enabling the revoked full-opening batch.
+- [ ] Cold-boot `out/lil_b22_first_screen_probe_v1.nds` from New Game as Lil and
+  verify her portrait/nameplate, the first English glyph, all three lines, and the
+  transition to Kamil's following Japanese line.
+- [x] Encode all 49 source-reviewed lines in Lil's Amsterdam opening as a new
+  fixed-allocation B22 intro candidate, preserving the four speaker selectors and
+  route-name macro without reusing the revoked legacy batch.
+- [ ] Cold-boot `out/lil_b22_intro_natural_v2_candidate.nds` through the complete
+  Amsterdam departure and verify every portrait, nameplate, page break, scene
+  transition, and the handoff into the Deck-post tutorial.
+- [x] Statically map SC2 block-23 selectors `02/09/14/FE`, identify records 18
+  and 20 as bare choice labels, correlate the surrounding choice grammar, and
+  resolve Lil-route `FI/FA/FO` defaults.
+- [ ] Cold-boot the seven-record `lil-b23-control-probe` and verify portraits,
+  nameplates, both choice positions and branches, `FI` expansion, system-panel
+  rendering, and return to normal tutorial flow before making B23 playable.
 - [x] Complete a source-first 72-record natural-English manuscript for Lil SC2
   block 66, covering the Kamil/Antony Kuhn reunion and family-history sequence.
 - [ ] Map Lil SC2 block-66 states `01/02/09/0E/14`, determine whether leading

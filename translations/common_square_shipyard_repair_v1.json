@@ -1,0 +1,95 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "0e489dabc72c1eb70add0c336d92b4bf7f95aa155faedfc7185c3c580fd54f71",
+  "target_locale": "en-US",
+  "ascii_guard_policy": "two-byte-entry-and-line-v1",
+  "records": [
+    {
+      "id": "DK4_MES_B08_R0000",
+      "english": "Order from Captain's cabin.",
+      "replacement_hex": "20204F726465722066726F6D204361707461696E277320636162696E2E",
+      "entry_offsets": [0],
+      "context": "Captain-cabin restriction prompt, direct form.",
+      "notes": "Source-faithful replacement for the early-pass 'see below' placeholder."
+    },
+    {
+      "id": "DK4_MES_B08_R0001",
+      "english": "  Order from Captain's cabin.",
+      "replacement_hex": "20204F726465722066726F6D204361707461696E277320636162696E2E202020202020",
+      "entry_offsets": [0],
+      "context": "Captain-cabin restriction prompt, crew voice variant.",
+      "notes": "Preserves the source record's two-byte layout prefix."
+    },
+    {
+      "id": "DK4_MES_B08_R0002",
+      "english": "  Order from Captain's cabin.",
+      "replacement_hex": "20204F726465722066726F6D204361707461696E277320636162696E2E",
+      "entry_offsets": [0],
+      "context": "Captain-cabin restriction prompt, crew voice variant.",
+      "notes": "Preserves the source record's two-byte layout prefix."
+    },
+    {
+      "id": "DK4_MES_B08_R0003",
+      "english": "  Please use the\n  Captain's cabin.",
+      "replacement_hex": "2020506C6561736520757365207468650A20204361707461696E277320636162696E2E20202020",
+      "entry_offsets": [0],
+      "context": "Captain-cabin restriction prompt, polite form.",
+      "notes": "Source-faithful replacement for the early-pass 'see below' placeholder."
+    },
+    {
+      "id": "DK4_MES_B01_R0022",
+      "english": "  Choose a sign.\n  Hear market news.",
+      "replacement_hex": "202043686F6F73652061207369676E2E0A202048656172206D61726B6574206E6577732E202020202020202020",
+      "entry_offsets": [0],
+      "context": "Square sign-selection help prompt.",
+      "notes": "The space following LF is required by the renderer's byte-pair phase and prevents the H in Hear from disappearing."
+    },
+    {
+      "id": "DK4_MES_B08_R0004",
+      "english": "  %s is selling fast!",
+      "replacement_hex": "202025732069732073656C6C696E67206661737421202020202020",
+      "entry_offsets": [0],
+      "context": "Square merchant reports the currently popular commodity."
+    },
+    {
+      "id": "DK4_MES_B08_R0005",
+      "english": "  Got %s?\n  Sell it at the trade house\n  while demand is high.",
+      "replacement_hex": "2020476F742025733F0A202053656C6C2069742061742074686520747261646520686F7573650A20207768696C652064656D616E6420697320686967682E202020",
+      "entry_offsets": [0],
+      "context": "Square merchant advises selling a sought-after commodity at the trade house.",
+      "notes": "Replaces an unrelated captain's-cabin fallback followed by surplus line breaks, which produced an empty continuation window."
+    },
+    {
+      "id": "DK4_MES_B08_R0006",
+      "english": "  Let's sell %s\n  and make a fortune!",
+      "replacement_hex": "20204C657427732073656C6C2025730A2020616E64206D616B65206120666F7274756E65212020202020202020202020",
+      "entry_offsets": [0],
+      "context": "Square merchant encourages selling the popular commodity."
+    },
+    {
+      "id": "DK4_MES_B08_R0007",
+      "english": "  We only sell retail.",
+      "replacement_hex": "20205765206F6E6C792073656C6C2072657461696C2E20",
+      "entry_offsets": [0],
+      "context": "Square shopkeeper explains that the shop is retail-only.",
+      "notes": "Replaces the literal fallback text 'ok'."
+    },
+    {
+      "id": "DK4_MES_B08_R0024",
+      "english": "  Free? Then I'll try it!",
+      "replacement_hex": "2020467265653F205468656E2049276C6C20747279206974212020202020",
+      "entry_offsets": [0],
+      "context": "Square customer accepts a free sample.",
+      "notes": "Replaces the literal fallback text 'ok'."
+    },
+    {
+      "id": "DK4_MES_B10_R0020",
+      "english": "  No ships need repairs!  Admiral, I'll help!",
+      "replacement_hex": "20204e6f207368697073206e6565642072657061697273212020202041646d6972616c2c2049276c6c2068656c70212020202020",
+      "entry_offsets": [0, 26],
+      "context": "Shipyard Repair responses: no damaged ships, followed by the alternate crew-helper line.",
+      "notes": "Preserves the original packed second-entry boundary at byte 26. Both entries use the two-byte ASCII guard required to keep their first visible letters. Replaces the literal fallback text 'ok'."
+    }
+  ]
+}

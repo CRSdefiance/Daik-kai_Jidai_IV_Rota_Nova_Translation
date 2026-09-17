@@ -1,0 +1,30 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-b22-first-screen-probe",
+  "translation_policy": "source-locked-runtime-control-probe",
+  "target_locale": "en-US",
+  "research_only": true,
+  "scope": "Lil's first visible Amsterdam dialogue screen only.",
+  "records": [
+    {
+      "id": "DK4_MES_B22_R0019",
+      "english": "{SPEAKER:02}Hee hee! The trade permit is mine!{LB}Just watch me--time to make{LB}a fortune!{PAD}",
+      "source_hex_guard": "0282D382D382C1814282E682A482E282AD8EE882C993FC82EA82BD82ED0A92CA8FA48B9689C28FD881498CA982C482C882B382A282E6815B81490A91E582E0815B82AF82B582C482E282E982F182BE82A982E78149",
+      "context": "Lil celebrates receiving her trade permit on the first visible screen of her route.",
+      "qa_waivers": [
+        "manual-break"
+      ],
+      "qa_waiver_reason": "Three source-matching lines keep the boast readable in the fixed 85-byte opening record.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

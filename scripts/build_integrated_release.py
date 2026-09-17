@@ -31,11 +31,14 @@ from dk4tool.script.translation_batch import (
 )
 
 CANONICAL_BASELINE_SHA256 = (
-    "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2"
+    "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe"
 )
 REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Grand Race", b"Extras", b"Gallery")
 REQUIRED_OPTIONS_TEXT = (b"Opts", b"Options")
-FORBIDDEN_PLACEHOLDERS = (b"see below",)
+FORBIDDEN_PLACEHOLDERS = (
+    b"see below",
+    b"The crew needs a marine captain to enforce the order.",
+)
 RELEASE_STACK_PATH = Path("translations/release_stack.json")
 ARM9_LOAD_ADDRESS = 0x02000000
 PROHIBITED_RUNTIME_DATA_START = 0x02171E48
@@ -87,6 +90,90 @@ def validate_playable_dialogue_header(path: Path, header: dict[str, object]) -> 
             f"{path}: playable progressive-story dialogue requires a live-safe "
             "guarded, pair-phase-aware profile; research profile is forbidden"
         )
+
+
+def validate_ascii_guard_policy(path: Path, header: dict[str, object]) -> None:
+    """Reject raw fixed text that can lose its first printable ASCII glyph.
+
+    Packed COMMON records may have several independently addressed strings.
+    Their entry points cannot be inferred from the byte stream, so guarded
+    batches declare them explicitly. Every declared entry and every printable
+    continuation after LF must begin with two sacrificial spaces.
+    """
+
+    policy = header.get("ascii_guard_policy")
+    if policy is None:
+        records = header.get("records", [])
+        raw_english_ilnk = (
+            header.get("format") == "dk4-ilnk-translation-batch-v1"
+            and header.get("target_locale") == "en-US"
+            and isinstance(records, list)
+            and any(
+                isinstance(record, dict) and bool(record.get("replacement_hex"))
+                for record in records
+            )
+        )
+        exemption = str(header.get("ascii_guard_exemption", "")).strip()
+        if raw_english_ilnk and not exemption:
+            raise ValueError(
+                f"{path}: raw English ILNK text requires ascii_guard_policy or a "
+                "documented ascii_guard_exemption"
+            )
+        return
+    if policy != "two-byte-entry-and-line-v1":
+        raise ValueError(f"{path}: unsupported ascii_guard_policy {policy!r}")
+    if header.get("format") != "dk4-ilnk-translation-batch-v1":
+        raise ValueError(f"{path}: ASCII guard policy is valid only for ILNK text")
+
+    records = header.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{path}: guarded batch has no records")
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{path}: guarded record must be an object")
+        row_id = str(record.get("id", ""))
+        replacement_hex = record.get("replacement_hex")
+        if not isinstance(replacement_hex, str) or not replacement_hex:
+            raise ValueError(f"{path}: {row_id} guarded record requires replacement_hex")
+        replacement = bytes.fromhex(replacement_hex)
+        record_exemption = str(record.get("ascii_guard_exemption", "")).strip()
+        if record_exemption:
+            # Some renderers display rather than consume their source indent.
+            # A per-record exemption must be explicit so an observed layout can
+            # be preserved without weakening the rest of a guarded batch.
+            continue
+        offsets = record.get("entry_offsets")
+        if (
+            not isinstance(offsets, list)
+            or not offsets
+            or not all(isinstance(value, int) for value in offsets)
+            or offsets != sorted(set(offsets))
+        ):
+            raise ValueError(
+                f"{path}: {row_id} requires sorted, unique entry_offsets"
+            )
+        if offsets[0] < 0 or offsets[-1] >= len(replacement):
+            raise ValueError(f"{path}: {row_id} entry offset is outside the record")
+        for index, start in enumerate(offsets):
+            end = offsets[index + 1] if index + 1 < len(offsets) else len(replacement)
+            segment = replacement[start:end]
+            if not segment.startswith(b"  "):
+                raise ValueError(
+                    f"{path}: {row_id} entry at byte {start} lacks a two-byte guard"
+                )
+            for position, value in enumerate(segment[:-1]):
+                if value != 0x0A or segment[position + 1] == 0x0A:
+                    continue
+                if segment[position + 1 : position + 3] != b"  ":
+                    raise ValueError(
+                        f"{path}: {row_id} LF at byte {start + position} lacks a "
+                        "two-byte continuation guard"
+                    )
+            for line in segment.split(b"\n"):
+                if len(line.rstrip(b" \0")) > 31:
+                    raise ValueError(
+                        f"{path}: {row_id} guarded line exceeds 31 bytes"
+                    )
 
 
 def validate_natural_dialogue_qa(
@@ -1029,6 +1116,11 @@ def main() -> None:
     relocation_checks: dict[str, object] = {}
     for file_path, file_batch_paths in grouped.items():
         source = candidate.read_file(file_path)
+        for batch_path in file_batch_paths:
+            try:
+                validate_ascii_guard_policy(batch_path, load_batch_header(batch_path))
+            except (TypeError, ValueError) as error:
+                raise SystemExit(str(error)) from None
         formats = {str(load_batch_header(path).get("format", "")) for path in file_batch_paths}
         if formats == {"dk4-fls-label-batch-v1"}:
             if len(file_batch_paths) != 1:
@@ -1255,10 +1347,32 @@ def main() -> None:
         if file_path == "/data/SC2.DK4" and any(
             parse_pointer_group(row)[0] == 22 for row in rows
         ):
-            raise SystemExit(
-                "SC2 block 22 is blocked: its portrait/name control preamble is unmapped. "
-                "Use only a disposable live-tested research probe until that format is documented."
-            )
+            allowed_lil_b22_profiles = {
+                "lil-b22-first-screen-probe",
+                "lil-b22-intro-probe",
+                "lil-b22-intro-shared-data-v2",
+                "lil-b22-intro-guild-inn-v3",
+                "lil-b22-intro-guild-inn-v4",
+                "lil-b22-intro-all-items-v5",
+                "lil-hodram-unified-v1",
+                "main-menu-birthday-v1",
+                "main-menu-character-crew-wrap-v2",
+                "main-menu-character-square-repair-v3",
+                "main-menu-character-placeholder-cleanup-v4",
+                "main-menu-character-placeholder-english-v5",
+            }
+            if args.profile not in allowed_lil_b22_profiles:
+                raise SystemExit(
+                    "SC2 block 22 is blocked: its portrait/name control preamble is unmapped. "
+                    "Use only a named source-locked Lil B22 research probe until that "
+                    "format is documented."
+                )
+            if len(file_batch_paths) != 1 or not bool(
+                load_batch_header(file_batch_paths[0]).get("research_only")
+            ):
+                raise SystemExit(
+                    "Lil B22 probes require exactly one research-only batch"
+                )
         record_ids = [str(row["id"]) for row in rows]
         if len(record_ids) != len(set(record_ids)):
             raise SystemExit(f"{file_path}: duplicate record appears across translation batches")
@@ -1337,6 +1451,7 @@ def main() -> None:
             "unmapped_story_control_records_rejected": True,
             "natural_dialogue_qa_enforced": True,
             "playable_story_pair_phase_enforced": True,
+            "fixed_text_two_byte_guards_enforced": True,
             "no_new_placeholder_fallbacks": True,
             "saved_rom_roundtrip": True,
             "mapped_ilnk_relocation_enforced": bool(relocation_checks)

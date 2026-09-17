@@ -1,0 +1,69 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "2e64dbd6fa2ff05d5a4889f1131c1d22e47d039b6df42b6cbd13d452eacb33d9",
+  "target_locale": "en-US",
+  "scope": "Character editor heading, terminology, stale-glyph, and birthday-popup repairs",
+  "records": [
+    {
+      "id": "DK4_CHARACTER_EDIT_NAME_HEADING",
+      "offset": 1375272,
+      "source_hex": "4E616D653A204564697400000000000000000000",
+      "replacement_hex": "4E616D653A204564697420202020000000000000",
+      "english": "Name: Edit",
+      "context": "Selected first-name row heading.",
+      "notes": "Four trailing spaces clear glyphs left by longer headings before the terminator."
+    },
+    {
+      "id": "DK4_CHARACTER_EDIT_MIDDLE_HEADING",
+      "offset": 1375292,
+      "source_hex": "4D6964646C653A20456469740000000000000000",
+      "replacement_hex": "4D6964646C653A20456469742020000000000000",
+      "english": "Middle: Edit",
+      "context": "Selected middle-name row heading.",
+      "notes": "Two trailing spaces clear glyphs left by longer headings before the terminator."
+    },
+    {
+      "id": "DK4_CHARACTER_EDIT_LAST_HEADING",
+      "offset": 1375312,
+      "source_hex": "4C6173743A204564697400000000000000000000",
+      "replacement_hex": "4C6173743A204564697420202020000000000000",
+      "english": "Last: Edit",
+      "context": "Selected surname row heading.",
+      "notes": "Four trailing spaces clear glyphs left by longer headings before the terminator."
+    },
+    {
+      "id": "DK4_CHARACTER_EDIT_COMPANY_HEADING",
+      "offset": 1375332,
+      "source_hex": "46616374696F6E3A204564697400000000000000",
+      "replacement_hex": "436F6D70616E793A204564697420000000000000",
+      "english": "Company: Edit",
+      "context": "Selected company-name row heading.",
+      "notes": "Matches the Company row and uses one trailing clearing space."
+    },
+    {
+      "id": "DK4_CHARACTER_EDITOR_POPUP_LABELS",
+      "offset": 1376924,
+      "source_hex": "4E616D65004D6964646C65204E616D65004C6173740046616374696F6E000000",
+      "replacement_hex": "4E616D65004D6964646C65204E616D65004C61737400436F6D70616E79000000",
+      "context": "Shared naming-popup label pool.",
+      "notes": "Uses Company consistently while preserving every internal string boundary and the 32-byte allocation."
+    },
+    {
+      "id": "DK4_BIRTHDAY_POPUP_COMPACT_HEADING",
+      "offset": 1377148,
+      "source_hex": "4269727468000000",
+      "replacement_hex": "4461746500000000",
+      "english": "Date",
+      "context": "Compact heading inside the birthday calendar popup.",
+      "notes": "The popup exposes six character cells, so Date is complete while Birthday was clipped to Birthd."
+    },
+    {
+      "id": "DK4_BIRTHDAY_POPUP_HEADING_POINTER",
+      "offset": 657016,
+      "source_hex": "1DFC1402",
+      "replacement_hex": "7C031502",
+      "context": "Point the birthday calendar at its dedicated compact Date heading instead of the longer Birthday RTTI string."
+    }
+  ]
+}

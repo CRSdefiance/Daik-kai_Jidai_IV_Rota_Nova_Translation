@@ -1,0 +1,41 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "content_type": "common-fixed-dialogue-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "0e489dabc72c1eb70add0c336d92b4bf7f95aa155faedfc7185c3c580fd54f71",
+  "target_locale": "en-US",
+  "scope": "Natural, guarded Inn greeting, rate prompt, confirmation, and rest response",
+  "ascii_guard_exemption": "Runtime screenshots prove this Inn renderer displays its source indentation literally; replacements preserve the original layout instead of adding sacrificial spaces.",
+  "records": [
+    {
+      "id": "DK4_MES_B00_R0046",
+      "english": "Welcome! Come in.",
+      "replacement_hex": "2057656C636F6D652120436F6D6520696E2E20",
+      "status": "translated",
+      "context": "Innkeeper greeting.",
+      "notes": "Preserves the source record's one-byte visible indent.",
+      "structure": "single-entry",
+      "entry_offsets": [0]
+    },
+    {
+      "id": "DK4_MES_B14_R0059",
+      "english": "It's 1 coin a night. / How many nights?",
+      "replacement_hex": "2049742773203120636F696E2061206E696768742E0A20486F77206D616E79206E69676874733F202020",
+      "status": "translated",
+      "context": "Innkeeper rate and stay-duration prompt.",
+      "notes": "Both lines preserve the source renderer's one-byte visible indent.",
+      "structure": "single-entry",
+      "entry_offsets": [0]
+    },
+    {
+      "id": "DK4_MES_B14_R0060",
+      "english": "Stay %s nights? / Rest up.",
+      "replacement_hex": "202053746179202573206E69676874733F20526573742075702E2020",
+      "status": "translated",
+      "context": "Packed Inn stay confirmation and rest response.",
+      "notes": "The first entry keeps its original two-byte indent; the alternate entry remains unindented at byte 18.",
+      "structure": "packed-multiple-entry",
+      "entry_offsets": [0, 18]
+    }
+  ]
+}

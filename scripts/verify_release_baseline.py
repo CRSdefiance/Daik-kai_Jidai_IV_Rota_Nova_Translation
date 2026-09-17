@@ -6,7 +6,7 @@ from pathlib import Path
 
 from dk4tool.rom.nds import NdsImage
 
-BASELINE_SHA256 = "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2"
+BASELINE_SHA256 = "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe"
 REQUIRED_MENU_TEXT = (b"Continue", b"New Game", b"Grand Race", b"Extras", b"Gallery")
 REQUIRED_OPTIONS_TEXT = (b"Opts", b"Options")
 

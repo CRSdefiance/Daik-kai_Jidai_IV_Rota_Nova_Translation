@@ -22,7 +22,7 @@ TRANSPARENT_LABELS = {
         Label((0, 251, 48, 264), "Middle", 11),
         Label((0, 267, 48, 280), "Last"),
         Label((0, 283, 48, 296), "Company", 10),
-        Label((0, 299, 48, 312), "Born"),
+        Label((0, 299, 48, 312), "Birth"),
     ],
 }
 

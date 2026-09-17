@@ -208,7 +208,7 @@ CHARACTER_UI_ENTRIES = (
         "DK4_SELECT_LABEL_FACTION",
         0x1502B4,
         "勢力名",
-        "Faction",
+        "Company",
         "Character field label",
         slot_size=8,
     ),
@@ -257,7 +257,7 @@ CHARACTER_UI_ENTRIES = (
         "DK4_SELECT_EDIT_FACTION",
         0x14FC64,
         "勢力名　変更　　　",
-        "Faction: Edit",
+        "Company: Edit",
         "Character-edit row",
         slot_size=20,
     ),
@@ -289,8 +289,8 @@ CHARACTER_UI_ENTRIES = (
         "DK4_SELECT_BIRTH_HEADING",
         0x15037C,
         "誕生日",
-        "Birth",
-        "Birthday calendar heading; the dedicated input patch repoints this to Birthday",
+        "Date",
+        "Compact birthday-calendar heading; the popup exposes only six character cells",
         slot_size=8,
     ),
 )
@@ -309,7 +309,7 @@ CITY_SCREEN_ENTRIES = (
         "DK4_CITY_COMMON",
         0x11B57C,
         "共通",
-        "Common",
+        "Menu",
         "City screen shared-information button",
         slot_size=8,
     ),
@@ -449,7 +449,7 @@ MENU_ENTRIES = (
     Arm9ProfileEntry("DK4_MENU_MAX", 0x11B59C, "最大", "Hi", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_STAFF", 0x11B5A4, "人事", "Crew", "Deck automatic crew-policy command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_WORLD", 0x11B5AC, "世界", "World", "Common menu command", slot_size=8),
-    Arm9ProfileEntry("DK4_MENU_WITHDRAW", 0x11B5B4, "全搬出", "Withdraw", "Common menu command", slot_size=8),
+      Arm9ProfileEntry("DK4_MENU_WITHDRAW", 0x11B5B4, "全搬出", "Unload", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_REMOVE", 0x11B5BC, "はずす", "Remove", "Common menu command", slot_size=8),
     Arm9ProfileEntry("DK4_MENU_SORT", 0x11B5C4, "ソート", "Sort", "Common menu command", slot_size=8),
     Arm9ProfileEntry(
@@ -1002,12 +1002,14 @@ TOWN_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_CATEGORY_GEMS", 0x15A0BC, "宝石", "Gems", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_LIQUOR", 0x15A0C4, "酒類", "Liquor", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_ORE", 0x15A0CC, "鉱石", "Ore", "Global trade category", slot_size=8),
-    Arm9ProfileEntry("DK4_CATEGORY_TEXTILES", 0x15A0D4, "繊維", "Textile", "Global trade category", slot_size=8),
+    # The market-report category plaque silently rejects seven-character
+    # labels. Keep every shared category name at six characters or fewer.
+    Arm9ProfileEntry("DK4_CATEGORY_TEXTILES", 0x15A0D4, "繊維", "Fiber", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_LUXURY", 0x15A0DC, "贅沢品", "Luxury", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_FOOD", 0x15A0E4, "食料品", "Food", "Global trade category", slot_size=8),
-    Arm9ProfileEntry("DK4_CATEGORY_SEASONING", 0x15A0EC, "調味料", "Condim.", "Global trade category", slot_size=8),
+    Arm9ProfileEntry("DK4_CATEGORY_SEASONING", 0x15A0EC, "調味料", "Cond.", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_TREATS", 0x15A0F4, "嗜好品", "Treats", "Global trade category", slot_size=8),
-    Arm9ProfileEntry("DK4_CATEGORY_JEWELRY", 0x15A0FC, "装飾品", "Jewelry", "Global trade category", slot_size=8),
+    Arm9ProfileEntry("DK4_CATEGORY_JEWELRY", 0x15A0FC, "装飾品", "Jewels", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_METALS", 0x15A104, "貴金属", "Metals", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_CRAFTS", 0x15A10C, "工芸品", "Crafts", "Global trade category", slot_size=8),
     Arm9ProfileEntry("DK4_CATEGORY_SPICES", 0x15A114, "香辛料", "Spices", "Global trade category", slot_size=8),
@@ -1379,18 +1381,18 @@ MARKET_UI_ENTRIES = (
     Arm9ProfileEntry("DK4_MARKET_BALANCE", 0x159FC4, "収支", "Net", "Trading summary heading", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_SHIP_NAME", 0x159FCC, "選択船名", "Ship", "Trading summary heading", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_CITY", 0x159FD8, "交易都市", "City", "Trading summary heading", slot_size=12),
-    Arm9ProfileEntry("DK4_MARKET_GOOD_DETAILS", 0x159FE4, "交易品詳細", "Good Info", "Trading summary heading", slot_size=12),
+    Arm9ProfileEntry("DK4_MARKET_GOOD_DETAILS", 0x159FE4, "交易品詳細", "Goods Info", "Trading summary heading", slot_size=12),
     Arm9ProfileEntry("DK4_MARKET_SIZE", 0x159FF0, "規模", "Size", "Trading summary label", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_STATUS", 0x159FF8, "状態", "Status", "Trading summary label", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_ARRIVAL_MONTH", 0x15A000, "入荷月", "Arr. Mo.", "Trading summary label", slot_size=8),
     Arm9ProfileEntry("DK4_MARKET_FUNDS", 0x15A008, "所持金", "Funds", "Trading summary label", slot_size=8),
-    # The renderer consumes the first byte after LF. A sacrificial space keeps
-    # category names such as "Flavor" together on the second line.
+    # The renderer consumes one byte after LF and can phase-drop the next ASCII
+    # glyph. Two sacrificial spaces keep the category's first letter visible.
     Arm9ProfileEntry(
         "DK4_MARKET_GOOD_SHARE_FORMAT_A",
         0x15A058,
         "%s\n%s%4d％",
-        "%s\n %s%4d%",
+        "%s\n  %s %d%",
         "Trade-good/category percentage format",
         slot_size=12,
     ),
@@ -1398,7 +1400,7 @@ MARKET_UI_ENTRIES = (
         "DK4_MARKET_GOOD_SHARE_FORMAT_B",
         0x15A074,
         "%s\n%s%4d％",
-        "%s\n %s%4d%",
+        "%s\n  %s %d%",
         "Trade-good/category percentage format",
         slot_size=12,
     ),
@@ -1632,6 +1634,10 @@ _GLOBAL_NAME_SPECS = (
     # This is Gerhard's surname half; the nameplate joins it to the already
     # translated given-name slot at 0x15CD4C.
     (0x15E674, "アーデルンカッツ", "Ardelknatts", 20),
+    # Kamil's surname uses another twenty-byte record beyond the original
+    # 8/12/16-byte audit.  The integrated Lil catch-up batch translates it
+    # globally and reuses only its post-terminator padding.
+    (0x15E96C, "オーフェルアイセル", "Overijssel", 20),
 )
 
 GLOBAL_NAME_ENTRIES = tuple(

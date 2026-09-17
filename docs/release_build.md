@@ -6,7 +6,7 @@ Every new playable ROM must descend directly from
 `out/raphael_natural_v2_accepted_base.nds`, whose
 SHA-256 is:
 
-`0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`
 
 This ROM is immutable. `work/clean.nds` is research input only and must never be used as
 the parent of a playable candidate. Intermediate, probe, stage, and route-only ROMs are
@@ -109,6 +109,16 @@ The builder refuses any parent with the wrong ROM hash and refuses batches locke
 different version of their internal file. Multiple batches targeting the same file are
 combined against one verified source state.
 
+Raw fixed-source English ILNK batches must declare
+`ascii_guard_policy: two-byte-entry-and-line-v1`. Every record then supplies the
+byte offsets of all independently addressed strings in `entry_offsets`. The release
+builder requires two sacrificial ASCII spaces at each declared entry and after every
+printable line break, and rejects guarded lines longer than 31 stored bytes. This
+closes the older one-space failure mode for packed COMMON text; materializers must
+shorten tight translations rather than truncate or silently fall back to one space.
+Progressive story dialogue remains protected by its separate phase-aware encoder,
+which computes any required pre-LF parity byte from the actual encoded record.
+
 For executable UI labels, use a source-locked `dk4-arm9-fixed-text-batch-v1` batch.
 Every record declares an offset and the exact original bytes expected there; its English
 replacement may only fit within that original byte range. This is the only supported way
@@ -130,6 +140,7 @@ Before saving, the builder proves that:
   declared block size and dependent outer offsets);
 - the accepted English main menu remains present;
 - the baseline's accepted UI and graphics remain present;
+- every opted-in fixed-source ASCII entry and continuation has a two-byte guard;
 - no additional `see below` fallback was introduced; and
 - the saved ROM round-trips to the exact verified internal-file set.
 
@@ -148,7 +159,8 @@ not replace emulator testing. A candidate becomes the next accepted parent only 
    scene, town UI, and the specifically changed scene; and
 3. the user explicitly confirms that build as accepted.
 
-The user accepted the centered Lisbon tutorial-choice build on 2026-08-20 and promoted
+The user accepted the cumulative Lil/Guild/Hodram build on 2026-09-17 and promoted
 its exact bytes to `out/raphael_natural_v2_accepted_base.nds`. The immediately previous
-parent is retained as `out/raphael_natural_v2_pre_lisbon_accepted_rollback.nds` with
-SHA-256 `fe7cdcaf7cfa24f18c1c48608ddddf58dc9a7555cb93c8131163037e814c8586`.
+parent is retained as
+`out/raphael_natural_v2_pre_lil_hodram_unified_v1_accepted_rollback.nds` with SHA-256
+`0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`.

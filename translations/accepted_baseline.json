@@ -1,14 +1,14 @@
 {
   "format": "dk4-accepted-baseline-v1",
-  "accepted_on": "2026-09-09",
-  "user_acceptance": "Promote this and push to github",
+  "accepted_on": "2026-09-17",
+  "user_acceptance": "okay, promote this build and push to github",
   "rom": "out/raphael_natural_v2_accepted_base.nds",
-  "sha256": "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2",
-  "promoted_from": "out/raphael_story_push_v10_candidate.nds",
-  "promoted_from_manifest": "out/raphael_story_push_v10_candidate.manifest.json",
+  "sha256": "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe",
+  "promoted_from": "out/lil_hodram_unified_v1_candidate.nds",
+  "promoted_from_manifest": "out/lil_hodram_unified_v1_manifest.json",
   "previous_baseline": {
-    "rom": "out/raphael_natural_v2_pre_story_push_v10_accepted_rollback.nds",
-    "sha256": "d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf",
+    "rom": "out/raphael_natural_v2_pre_lil_hodram_unified_v1_accepted_rollback.nds",
+    "sha256": "0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2",
     "status": "rollback-only"
   },
   "accepted_layers": [
@@ -107,14 +107,31 @@
     "story-v10-promotion-raphael_story_natural_v2_b57_b59",
     "story-v10-promotion-raphael_story_natural_v2_b60",
     "story-v10-promotion-raphael_story_natural_v2_b61_b63",
-    "story-v10-promotion-raphael_story_natural_v2_b64_b67"
+    "story-v10-promotion-raphael_story_natural_v2_b64_b67",
+    "lil-hodram-v1-promotion-main_menu_birthday_popup_v1",
+    "lil-hodram-v1-promotion-main_menu_birth_label_graphics_v1",
+    "lil-hodram-v1-promotion-common_placeholder_english_v1",
+    "lil-hodram-v1-promotion-common_crew_join_wrap_v3",
+    "lil-hodram-v1-promotion-common_square_shipyard_repair_v1",
+    "lil-hodram-v1-promotion-common_port_departure_guard_v1",
+    "lil-hodram-v1-promotion-common_shipyard_complete_v1",
+    "lil-hodram-v1-promotion-shipyard_ui_arm9_v1",
+    "lil-hodram-v1-promotion-cargo_port_sea_ui_arm9_v1",
+    "lil-hodram-v1-promotion-hodram_sc1_b127_sailing_tutorial_v1",
+    "lil-hodram-v1-promotion-market_report_goods_info_arm9_v1",
+    "lil-hodram-v1-promotion-common_inn_dialogue_polish_v1",
+    "lil-hodram-v1-promotion-common_at_sea_fixed_v1",
+    "lil-hodram-v1-promotion-lil_sc2_b22_intro_natural_v2",
+    "lil-hodram-v1-promotion-lil_shared_names_port_fleet_arm9_v1",
+    "lil-hodram-v1-promotion-guild_inn_ui_arm9_v2",
+    "lil-hodram-v1-promotion-all_item_names_arm9_v1",
+    "lil-hodram-v1-promotion-guild_amsterdam_item_descriptions_v2"
   ],
   "runtime_evidence": {
     "explicit_promotion": true,
-    "automated_regression_tests": 282,
+    "automated_regression_tests": 346,
     "baseline_invariant_check": true,
     "candidate_manifest_verified": true,
-    "sound_selector_verified": "38 BGM and 57 SFX titles",
-    "cold_boot_scope": "The user reviewed the evolving integrated V1-V10 builds through supplied cold-boot screenshots, confirmed the latest Deck fixes, and explicitly approved V10 promotion."
+    "cold_boot_scope": "The user reviewed the cumulative translation work through supplied runtime screenshots and explicitly requested promotion of the unified Lil/Guild/Hodram build."
   }
 }
