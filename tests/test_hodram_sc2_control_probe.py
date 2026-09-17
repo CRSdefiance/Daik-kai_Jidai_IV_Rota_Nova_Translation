@@ -15,7 +15,7 @@ from scripts.materialize_hodram_sc2_control_probe import PROBES
 
 BATCH = Path("translations/hodram_sc2_control_map_probe_v1.json")
 CLEAN_ROM = Path("work/clean.nds")
-BASE_ROM = Path("out/raphael_natural_v2_accepted_base.nds")
+BASE_ROM = Path("out/raphael_natural_v2_pre_lil_hodram_unified_v1_accepted_rollback.nds")
 SC2_SHA256 = "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326"
 
 

@@ -1,0 +1,74 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "2e64dbd6fa2ff05d5a4889f1131c1d22e47d039b6df42b6cbd13d452eacb33d9",
+  "target_locale": "en-US",
+  "scope": "Kamil surname, shared fleet formats, Bruges port data, and market target label",
+  "records": [
+    {
+      "id": "DK4_NAME_KAMIL_OVERIJSSEL_AND_FLEET_FORMAT",
+      "offset": 1436012,
+      "source_hex": "8349815B83748346838B83418343835A838B0000",
+      "replacement_hex": "4F766572696A7373656C00257320466C65657400",
+      "context": "Kamil's shared surname slot; verified trailing capacity stores the terminated shared '%s Fleet' format.",
+      "notes": "The visible surname remains terminated at byte 10. The fleet format begins at 0x15E977 and is reached only through the four source-locked pointer redirects below."
+    },
+    {
+      "id": "DK4_FLEET_FORMAT_NUMBERED_POINTER",
+      "offset": 217736,
+      "source_hex": "3C521302",
+      "replacement_hex": "77E91502",
+      "context": "Redirect the numbered fleet formatter to the terminated English fleet format."
+    },
+    {
+      "id": "DK4_FLEET_FORMAT_SHARED_POINTER",
+      "offset": 224076,
+      "source_hex": "48521302",
+      "replacement_hex": "77E91502",
+      "context": "Redirect the shared fleet-name formatter used by force selection to English."
+    },
+    {
+      "id": "DK4_FLEET_FORMAT_PLAYER_POINTER",
+      "offset": 536176,
+      "source_hex": "688E1402",
+      "replacement_hex": "77E91502",
+      "context": "Redirect the player fleet-name formatter to English."
+    },
+    {
+      "id": "DK4_FLEET_FORMAT_SORT_POINTER",
+      "offset": 634500,
+      "source_hex": "28F31402",
+      "replacement_hex": "77E91502",
+      "context": "Redirect the fleet-list formatter to English."
+    },
+    {
+      "id": "DK4_NAME_ARDELKNATTS_AND_HEMP_POOL",
+      "offset": 1435252,
+      "source_hex": "417264656C6B6E61747473000000000000000000",
+      "replacement_hex": "417264656C6B6E617474730048656D7000000000",
+      "context": "Preserve Gerhard's terminated surname and use verified trailing capacity for terminated 'Hemp'.",
+      "notes": "Ardelknatts remains unchanged and terminated. Hemp begins at 0x15E680."
+    },
+    {
+      "id": "DK4_GOOD_HEMP_POINTER",
+      "offset": 1438040,
+      "source_hex": "80B71502",
+      "replacement_hex": "80E61502",
+      "context": "Redirect the sole live pointer for the four-byte Japanese hemp slot to the terminated English word."
+    },
+    {
+      "id": "DK4_PORT_REGION_FLANDERS",
+      "offset": 1430000,
+      "source_hex": "8374838983938368838B0000",
+      "english": "Flanders",
+      "context": "Cultural-region name shown in Bruges port information."
+    },
+    {
+      "id": "DK4_MARKET_SELECTED_LOCATION",
+      "offset": 1405064,
+      "source_hex": "914991F0926E0000",
+      "english": "Target",
+      "context": "Market-information X-button for the currently selected location."
+    }
+  ]
+}

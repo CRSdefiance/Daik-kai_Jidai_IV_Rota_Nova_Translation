@@ -27,6 +27,14 @@ TRACKED_FILES = (
     "/data/SC3.DK4",
 )
 
+LIL_ROUTE_DRAFT_FILES = (
+    "lil_natural_v2_sc2_b22_blocked.json",
+    "lil_natural_v2_sc2_b23_blocked.json",
+    "hodram_natural_v2_sc2_b27_blocked.json",
+    "hodram_natural_v2_sc2_b66_blocked.json",
+    "hodram_natural_v2_sc2_b146_blocked.json",
+)
+
 
 def source_path(root: Path, internal_path: str) -> Path:
     return root.joinpath(*internal_path.strip("/").split("/"))
@@ -90,6 +98,20 @@ def build_report(source_root: Path, translations: Path) -> str:
     through_14 = sum(count for block, count in common_block_counts.items() if block <= 14)
     through_18 = sum(count for block, count in common_block_counts.items() if block <= 18)
     from_19 = max(0, common_half - through_18)
+    lil_drafts: set[str] = set()
+    lil_blocks: Counter[int] = Counter()
+    for filename in LIL_ROUTE_DRAFT_FILES:
+        path = translations / filename
+        if not path.exists():
+            continue
+        batch = json.loads(path.read_text(encoding="utf-8"))
+        for record in batch.get("blocked_records", []):
+            if not str(record.get("draft_english", "")).strip():
+                continue
+            row_id = str(record["id"])
+            lil_drafts.add(row_id)
+            block = int(row_id.split("_B", 1)[1].split("_R", 1)[0])
+            lil_blocks[block] += 1
     generated = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
 
     lines = [
@@ -140,6 +162,27 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "record count alone cannot prevent missing first letters."
             ),
             "",
+            "## Lil route editorial progress",
+            "",
+            (
+                f"Lil's actual `/data/SC2.DK4` route has **{len(lil_drafts)}** "
+                "source-reviewed natural-English draft records across "
+                + ", ".join(
+                    f"B{block} ({count})" for block, count in sorted(lil_blocks.items())
+                )
+                + "."
+            ),
+            (
+                "- B22 now has a complete 49-record fixed-allocation runtime candidate with "
+                "Lil/Kamil/Emilio/Fernando selectors and Lil-route name macros mapped. It "
+                "remains excluded from the accepted translated-record total until cold-boot QA."
+            ),
+            (
+                "- B23 covers the immediate Deck-post tutorial and has a seven-record control "
+                "probe; B27, B66, and B146 are retained under historical Hodram filenames after "
+                "their route ownership was corrected."
+            ),
+            "",
             "## Accepted interface progress",
             "",
             (
@@ -155,6 +198,12 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "- **Town Common menu:** all six radial labels and the Info, Functions, "
                 "Options, Save/Load, Deck, Assign Sailors, and empty-Items paths covered "
                 "by V6 are accepted."
+            ),
+            (
+                "- **Accepted Deck patch:** all compact room names, requirement and "
+                "restriction strings, ability names, the Y-button `Crew` label, all 71 "
+                "previously overlong activity responses, and the final inherited Deck "
+                "placeholder are included in the accepted V10 baseline."
             ),
             (
                 "- **Canonical accepted baseline:** "

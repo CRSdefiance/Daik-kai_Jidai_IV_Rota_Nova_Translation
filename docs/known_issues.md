@@ -1,17 +1,31 @@
 # Known issues
 
-## Accepted COMMON gameplay baseline
+## Accepted cumulative Lil/Guild/Hodram V1 baseline
 
-The user explicitly promoted `out/extras_options_sound_common_v6_candidate.nds`
-on 2026-09-03. Its bytes are now the canonical
+The user explicitly promoted `out/lil_hodram_unified_v1_candidate.nds` on
+2026-09-17. Its bytes are now the canonical
 `out/raphael_natural_v2_accepted_base.nds`; the SHA-256 is
-`d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
 The former canonical baseline is retained as
-`out/raphael_natural_v2_pre_extras_common_v6_accepted_rollback.nds`, SHA-256
-`c94e1fd7221c5e929c851a39f1e722c8b127992bea743dd9992ca1ff027afcdf`.
-The V6 manifest and independent Sound verifier cover the accepted Extras,
-Options, Sound Setup, and Common-menu layers. The full regression suite passes
-(255 tests).
+`out/raphael_natural_v2_pre_lil_hodram_unified_v1_accepted_rollback.nds`,
+SHA-256 `0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`.
+The promotion bakes Lil's 49-record Amsterdam opening, shared name and fleet
+repairs, Guild and Inn UI, all 218 item names, the Amsterdam Guild item
+descriptions, and the cumulative Hodram, market, shipyard, cargo, Inn, and
+at-sea repairs. The manifest passed every release check and the full regression
+suite passes (346 tests).
+
+## Accepted Raphael Story V10 baseline
+
+The user explicitly promoted `out/raphael_story_push_v10_candidate.nds` on
+2026-09-09. Its bytes are now the canonical
+`out/raphael_natural_v2_accepted_base.nds`; the SHA-256 is
+`0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`.
+The former canonical baseline is retained as
+`out/raphael_natural_v2_pre_story_push_v10_accepted_rollback.nds`, SHA-256
+`d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`.
+The V10 manifest and independent baseline and Sound verifiers cover the
+accepted integrated layers. The full regression suite passes (282 tests).
 
 The profile adds 1,257 safe translated records across COMMON blocks 15-40,
 including 580 records in blocks 22-40. Every record in blocks 22-40 is
@@ -24,6 +38,177 @@ scene identifiers, ambiguous `{MACRO:I}C` sequences, and drafts that overflow
 or destabilize the progressive renderer remain byte-identical to Japanese.
 They are retained in the corresponding `*_blocked.json` inventories for the
 next translation phase.
+
+## Integrated trade, crew, and Deck View layer (accepted and baked)
+
+`out/raphael_story_push_v10_candidate.nds`, SHA-256
+`0c6e5a686b4fefb98a4d25ebb3c0e8c90ffa20e3f43240ca1629d8f6d40c85f2`,
+is the promoted source build. Its changes are baked into the canonical parent.
+It replaces the clipped trade-screen
+`Confirm` caption with the pair-safe `Select`, repairs the trader greeting and
+investment prompt, and translates the generic sailor nameplate.
+
+The city-information screen now uses source-derived textured plaques with
+native-font `Type`, `Status`, `Growth`, `Arms`, `Share`, and `Specialty`
+captions. The fixed `Prt` abbreviation is now `Port`; its adjacent `City`
+string was safely moved by one byte and its runtime pointer retargeted. All 19
+live cultural-region entries are verified English, covering German, Nordic,
+Portugal, Spain, Italy, Greece, Turkey, Egypt, West Africa, East Africa, Arab,
+India, Indochina, Indonesia, China, Korea, Japan, Caribbean, and Mexico. The
+port market's Japanese category header is redrawn as `Type` and `Market %`.
+
+Assign Sailors now restores each complete accepted plaque before drawing a
+centered native-font caption. Its terminology is consistent with Ships:
+`Fleet Crew`, `Unassigned`, `Range`, `Marines`, `Cannon`, `Lateen`, and
+`Square`. The former `~%d d` range formatter, whose tilde resembled a stray
+dash, is now the unambiguous `%d days`.
+
+Deck View now translates the full compact room table (`Cabin`, `Helm`,
+`Survey`, `Mast`, `Galley`, `Sickbay`, `Purser`, `Tactics`, `Chapel`, and the
+remaining room states), both requirement-label variants, all assignment
+eligibility/restriction messages, and the compact ability-name table. The
+captain-cabin warning is `Only %s can be Captain.` and the generic warning is
+`Cannot assign here.` The Y button is now `Crew`, matching the automatic
+Explore/Trade/Battle crew-policy menu it opens instead of the clipped
+`Staff`/`Stat` wording. The policy confirmation now reads `Confirm crew
+assignment?`; its adjacent empty-roster warning and captain requirement read
+`No unassigned crew.` and `Command`.
+
+The selected-character activity panel has a measured hard limit of 24
+single-byte glyphs and does not wrap. Seventy-one accepted COMMON B17 activity
+responses exceeded that limit; every one now uses a complete, renderer-safe
+sentence of at most 24 glyphs. This repairs the photographed wheel and captain
+lines and prevents equivalent truncation in cooking, prayer, strategy,
+accounting, surveying, lookout, sail-handling, marine, and gun-deck responses.
+The 59 activity lines that already fit remain from the accepted B17
+localization; for example, `Test-firing now.` is the complete translation of
+`只今／試し撃ちをしています`, not placeholder text. One player-facing B17
+record inherited the literal early-pass placeholder `see below`; V10 replaces
+it with the context-faithful `Leave diplomacy to me.` Thus all 132 Deck
+activity records are now English; padding-only record 132 is not dialogue.
+
+The release builder also rejects legacy SC0-SC3 translations and every story
+profile that cannot prove guarded line breaks and ASCII pair parity. This turns
+the known dropped-first-glyph failure into a build-time invariant. New routes
+still require one route-level mapping of presentation bytes and macro expansion
+lengths before their dialogue can pass the gate.
+
+The candidate passes all 282 automated tests, the accepted-baseline invariant
+check, and the independent Sound-selector verifier (38 BGM and 57 SFX titles).
+Cold-boot it and review the trader greeting, investment flow, trade bottom
+buttons, sailor confirmation, city Type/Status panel, port information in
+several regions, and every Assign Sailors label/value pair. In Deck View,
+cycle through every room, press Y on several navigators, attempt an invalid
+room assignment and the captain cabin, then assign several characters across
+different duties to sample the shortened activity responses. The user reviewed
+the evolving builds through supplied cold-boot screenshots and explicitly
+promoted V10 on 2026-09-09; the profile is now `accepted-baked`.
+
+## Route-map cities and Forces patch (accepted and baked)
+
+`out/ships_route_forces_v1_candidate.nds` is the historical component review build.
+Its SHA-256 is
+`f7edd035b4471da221f5701fae224c824065fe75fa86904a4982b9bfcb7a9c6b`.
+It is built from the canonical accepted baseline under profile
+`ships-route-forces-v1` and changes only `/__arm9__.bin`,
+`/_pxl/forceinfo.pxl`, and `/_pxl/shipinfo.pxl`.
+
+The route-map audit now follows the game's actual 113 city objects and their
+runtime name pointers. Every live target is ASCII, null-terminated, and checked
+against an ordered English inventory. This catches alternate copies such as the
+previously missed Hamburg string and exact-width names such as Hangzhou,
+Nagasaki, and Tsukushi. The map coordinate format now begins with a protected
+line break so Amsterdam renders its name on the first line and `N 52 E 5` on the
+second instead of producing `AmsterdamN`.
+
+The Forces screen restores clean source-derived backgrounds for the original
+textured `Level` plaque and four folded-ribbon `Funds`, `Power`, `Home`, and
+`Ties` labels before drawing native-font English. It does not replace their
+artwork with flat rectangles. Its leader role, unknown-force heading, all eight
+region names, and the previously missed Hayreddin, Silveira, Uddin, and
+Centurione force names are English. Both live copies of the bottom X-button are
+translated, yielding pair-safe `Area`, `Map`, and `Back` buttons. All 189
+profiled sailor-name records in the accepted base are verified ASCII. The
+candidate also includes the pending Ships V2 refinements described below.
+
+The linked World Map area-selection screen is translated across all of its
+runtime variants: `World Map`, `Area: select one.`, `Press X to change selection
+type.`, and the alternate `Fleet/Town` target. Its bottom captions are now
+`Switch`, `Area`, `Back`, and `Done`; duplicate Switch/Done slots are patched so
+the wording remains English as the selection mode changes.
+
+The component was accepted as part of the promoted V10 baseline. For regression
+testing, inspect route-map cities in Europe and several other
+regions, including Hamburg, Amsterdam, Hangzhou, Quanzhou, Nagasaki, and
+Tsukushi. Confirm the top title and map bubble are English, coordinates occupy a
+clean second line, and all three bottom buttons render fully. Open Forces and
+confirm the leader role, unknown-force heading, regional power name, five
+textured plaques, the four newly repaired force names, and Area/Map/Back
+buttons. Open the World Map and switch between Area and Fleet/Town, checking the
+title, all three instruction lines, and Switch/Area/Back/Done captions. Then
+repeat the Ships V2 checks. The profile is now `accepted-baked`.
+
+## Opening-movie patch (accepted and baked)
+
+`out/opening_movie_v1_candidate.nds`, SHA-256
+`88255d2b2280ff4e3956124106e7b866ba68bbc92bc838b2f0b5bf08be87d3b3`,
+extends the Ships/route/Forces review build under profile `opening-movie-v1`.
+It translates both cyan title overlays (`Press START or touch the screen` and
+`Press A or touch the screen to skip`) and the previously missed M20 subtitle
+(`What is it, Clau? / What did you want to show?`). The M20 card is
+laid out within its proven 168-pixel live viewport rather than its 256-pixel
+storage allocation, preventing the right edge from being cropped in-game.
+
+All five M20/M22/M24 movie subtitle cards are rebuilt with the source format's
+three distinct palette roles: transparent background, opaque black outline, and
+white fill. This corrects the thin outline-free English cards in the accepted
+baseline without changing animation data, illustrated frames, archive sizes, or
+any unrelated file. The candidate passes all 266 tests plus the independent
+baseline and complete Sound-selector verifiers.
+
+The component was accepted as part of the promoted V10 baseline. For regression
+testing, let the opening movie play without skipping and confirm
+the cyan Start/touch and A/touch prompts are centered and legible, the Clau line is
+English, and every English white subtitle has a solid black edge over both pale and
+dark artwork. Then start each available captain once and confirm the opening-name
+animations and route transitions remain intact. The profile is now
+`accepted-baked`.
+
+## Ships submenu patch (accepted and baked)
+
+The first cold-boot review confirmed the native captions, English `Cpt.`, and
+`Culverin 24` spacing. It also established that the two dark tiles beside the
+contents label are the game's native cargo-item thumbnails and that the slanted
+tile before `Culverin` is its native cannon thumbnail. V2 retains those runtime
+sprites and the complete source plaques, changes `Goods` to the clearer `Cargo`,
+and replaces the overly specific `Lateen` with the accurate `Fore/Aft`.
+
+`out/ships_submenu_v2_candidate.nds` is the historical component review build. Its SHA-256 is
+`ed980cc03a0aeae8823f04bac4bfd7f55aae4528140d8b7f96862b02ed81509a`.
+It is built from the canonical accepted baseline under profile
+`ships-submenu-v2`, changes only `/__arm9__.bin` and `/_pxl/shipinfo.pxl`, passes
+all 258 tests, and passes the independent baseline and Sound selector verifiers.
+
+`out/ships_submenu_v1_candidate.nds` rebuilds the Ships information panel from
+the accepted baseline under profile `ships-submenu-v1`. Its SHA-256 is
+`5a36502dcd7dcb7682c91b87f33618ba4d4f99f0568f12bcc1f515d137bfdc8c`.
+Only `/__arm9__.bin` and `/_pxl/shipinfo.pxl` change.
+
+The eleven beige panel captions now use DK4's native bitmap font. Terminology
+has been corrected from the ambiguous `Cargo`, `Load`, and `Sail` to `Holds`,
+`Goods`, and `Lateen`; the remaining labels are `Water`, `Food`, `Crew`,
+`Square`, `Marines`, `Guns`, `Cannon`, and `Hull`. `Goods` and `Cannon` are
+drawn only within the safe left portions of their source plaques, leaving the
+runtime cargo and cannon icon zones clean. Three `%s艦長` formats now render as
+`%s Cpt.`, and the fixed Culverin name carries a trailing separator before its
+runtime value.
+
+Cold-boot the candidate, open Common > Info > Ships, and inspect ships with
+filled goods slots, both sail types, marines, guns, and a Culverin. Confirm the
+two goods icons and cannon icon are unobstructed, `Culverin 24` is separated,
+the captain suffix is English, every numeric value remains aligned, ship
+selection still works, and Back returns normally. Keep this layer experimental
+until those runtime overlays are confirmed.
 
 ## Extras, Options, Sound, and Common-menu layer (accepted and baked)
 
@@ -353,8 +538,49 @@ incorrect speaker and corrupts the first visible English glyph.
 
 `lil_sc2_opening_repair.nds` and `lil_sc2_opening_repair_v2.nds` are revoked
 research candidates and must not be distributed. The safe integration baseline
-is `out/raphael_natural_v2_accepted_base.nds`. Map the full control preamble in
-a disposable live-tested probe before another SC2 block-22 translation build.
+is `out/raphael_natural_v2_accepted_base.nds`.
+
+The replacement `out/lil_b22_first_screen_probe_v1.nds` changes only
+`DK4_MES_B22_R0019`, Lil's first visible Amsterdam line. It preserves the `02`
+selector, the record's exact 85-byte allocation, guarded line breaks, and ASCII
+pair phase. The integrated builder admits block 22 only through this named,
+research-only profile; every broader block-22 batch remains rejected. Cold-boot
+confirmation of Lil's portrait/nameplate, first glyph, three-line rendering, and
+transition to the following Kamil line is still required before expanding the
+probe.
+
+The expanded `out/lil_b22_intro_natural_v2_candidate.nds` now translates all
+49 spoken records through Lil's order to sail for Bruges. It preserves every
+inter-record scene command byte-for-byte and changes only the intended B22
+dialogue records. Selector correlation is `02` = Lil, `09` = Kamil, `0E` =
+Emilio, and `14` = Fernando; `FI` uses the three-byte default name `Lil`.
+Because the first-screen result has not yet been reported from a cold boot, this
+full build remains an experimental candidate rather than an accepted layer.
+
+## Lil Deck tutorial manuscript
+
+Lil's complete SC2 block-23 Deck-post tutorial now has a 35-record source-first
+natural-English manuscript in
+`translations/lil_natural_v2_sc2_b23_blocked.json`. It follows the actual route
+sequence from Kamil's opening explanation through the prompt to open Deck and
+change navigator assignments. Terminology matches the accepted interface,
+including captain, sail master, helmsman, surveyor, lookout, Observation, Auto
+Move, Half/Full sails, and the X Button.
+
+Static correlation has now mapped selectors `02` = Lil, `09` = Kamil, `14` =
+Fernando, and `FE` = the system tutorial panel. Records 18 and 20 are not
+continuations: they are the two bare labels inside a choice command sequence
+matching the proven Raphael tutorial grammar. `FI` is the default-route first-name
+macro and therefore expands to `Lil`; `FA` and `FO` map to `Argot` and `Argot Co.`.
+The evidence and record-by-record command map are in
+`docs/lil_sc2_b23_control_map.md`.
+
+This remains editorial progress rather than a release batch because the native
+emulator window is unavailable to the current automation surface. Portrait and
+nameplate presentation, choice placement, macro expansion, and final wrapping
+still need a manual cold-boot pass. Every source record has an exact hex guard,
+every English line remains in `blocked_records`, and the only buildable form is
+the explicitly experimental seven-record control probe.
 
 ## Naming keyboard page selection
 
@@ -635,8 +861,10 @@ experimental continuation of the accepted Raphael baseline through profile
 The candidate retains the 67-record Hodram opening and adds every mapped Japanese
 dialogue record in the first Stockholm tavern, dock, and market tutorials (SC1
 blocks 134-136). It also fills Gerhard's previously omitted surname slot with
-`Ardelknatts`. An audit of the other 196 shared personal-name and surname slots found
-them already translated in the accepted baseline.
+`Ardelknatts`. The original audit covered only 8-, 12-, and 16-byte name records and
+therefore missed Kamil's twenty-byte `Overijssel` slot. The complete profiled shared
+name catalogue now contains 190 records; the Lil shared-data V2 candidate verifies
+that all 190 resolve to terminated ASCII.
 
 The shared tavern repair preserves each proven packed interior entry point while
 fixing the reported bare price, lowercase diagnostic, empty Francisca response,
@@ -647,9 +875,61 @@ have exact-offset regression tests.
 Do not promote this ROM until a cold boot completes Hodram's opening and visits all
 three first-Stockholm buildings. Test both tutorial choices, tavern purchases,
 Francisca, sailor recruitment, nameplates, menus, wrapping, and every return to town.
+
+## Lil intro shared-data V2 candidate awaiting cold-boot test
+
+`out/lil_b22_intro_shared_data_v2_candidate.nds`, SHA-256
+`b6c51e7c0211ba65df37385f90f177d65dbd37974734282a494fc845c8022346`, layers
+the complete 49-record Lil Amsterdam intro on the canonical accepted baseline. It
+also translates Kamil's shared surname to `Overijssel`, redirects all four shared
+fleet-name formatters to a terminated `%s Fleet` string, translates Bruges' region
+to `Flanders`, redirects its single-slot hemp label to terminated `Hemp`, and changes
+the market-information location prompt to `Target`.
+
+The shared crew-join formatter now keeps its byte-20 runtime entry point but begins
+that second string with an ordinary sacrificial space. This establishes ASCII pair
+phase before the `%s` name expansion and prevents the first character of names such
+as `Fernando` from being consumed. The candidate changes only `/data/SC2.DK4`,
+`/__arm9__.bin`, and `/COMMON/MESFILE.DK4`; baseline and sound-selector verification
+pass, as do all 295 automated tests. It remains experimental until Kamil's nameplate,
+Lil Fleet, the Fernando recruitment notice, and the full Bruges port-information
+panel are reviewed from a cold boot.
+
+The current successor is `out/lil_b22_intro_guild_inn_v4_candidate.nds`, SHA-256
+`b12429f896e7d765c6979c0a1efa1d6648ccacaa83cb977ee1dc6e634f22105b`. It retains
+all V2 repairs and adds every shared Innkeeper and Guildmaster nameplate, Buy/Sell
+Items, the Ancient Map pitch, Gift/Price labels, and all three items offered by the
+Amsterdam Guild: `Rainbow Marbles`, `Huizong Art`, and `Snow-Silk Robe`. All three
+descriptions are English. The two packed description records preserve their neighboring
+items and every internal entry offset. Baseline and sound-selector verification pass,
+as do all 301 automated tests. Cold-boot review of all three selectable item panels is
+still required before promotion.
+
 # Revoked protected-newline probe (2026-08-14)
 
 `out/dialogue_protected_newline_probe.nds` is revoked and must not be tested,
 distributed, or used as a parent. Its helper overwrites live structured data at
 `0x02172300`. `dialogue_live_safe_v3.nds` remains the safe dialogue baseline,
 and protected `0A 20` breaks remain mandatory in translation data.
+
+## Shipyard-complete V1 candidate awaiting cold-boot review
+
+`out/shipyard_complete_v1_candidate.nds`, SHA-256
+`c9371c510dbc3c70c2aea6cc13bf5b4d752e65da2ce6c5708b687444a70163ad`,
+extends the complete placeholder-English candidate through the reported Shipyard
+flows. It localizes Repair, Remodel, equipment-room headings and descriptions,
+Reset and Back confirmations, Rename, dock status, ship-swap empty slots, purchase
+confirmation, and the complete six-name cannon table.
+
+The packed remodel and rename messages retain their original interior entry starts.
+Every ASCII entry begins with a two-byte guard, every explicit continuation is
+guarded, and every line is at most 31 bytes. The Repair record now uses the same
+two-byte guard for both its primary response and byte-26 helper response, fixing
+the dropped `N` in `No ships need repairs!`.
+
+The existing 119-entry ship-model catalog was re-audited and remains unchanged.
+`Fluyt` and `Pinnace` are the correct historical English terms; `Sm Galley` and
+`Lg Galley` are deliberate compact forms required by the fixed list slots. The
+accepted Ships-screen plaque geometry and runtime stat formatters also remain
+unchanged. All 326 automated tests pass, but the candidate is experimental until
+the complete Shipyard flow is reviewed from a cold boot.

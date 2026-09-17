@@ -3,7 +3,7 @@ from __future__ import annotations
 import struct
 from dataclasses import dataclass
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from dk4tool.graphics.pxl import bgr555
 from dk4tool.scan.compression_probe import compress_lz10, decompress_lz10
@@ -27,13 +27,40 @@ class FlsTexture:
         image.putdata([self.palette[index] for index in self.indices])
         return image
 
-    def replace_with_lines(self, lines: list[str], maximum_size: int = 12) -> None:
+    def replace_with_lines(
+        self,
+        lines: list[str],
+        maximum_size: int = 12,
+        *,
+        background_index: int | None = None,
+        color_index: int | None = None,
+        outline_index: int | None = None,
+        layout_width: int | None = None,
+    ) -> None:
         luminance = [
             (red * 299 + green * 587 + blue * 114) // 1000
             for red, green, blue, _ in self.palette
         ]
-        background = min(range(len(self.palette)), key=luminance.__getitem__)
-        foreground = max(range(len(self.palette)), key=luminance.__getitem__)
+        background = (
+            min(range(len(self.palette)), key=luminance.__getitem__)
+            if background_index is None
+            else background_index
+        )
+        foreground = (
+            max(range(len(self.palette)), key=luminance.__getitem__)
+            if color_index is None
+            else color_index
+        )
+        for name, index in (
+            ("background", background),
+            ("foreground", foreground),
+            ("outline", outline_index),
+        ):
+            if index is not None and not 0 <= index < len(self.palette):
+                raise ValueError(f"FLS {name} palette index is out of range: {index}")
+        draw_width = self.width if layout_width is None else layout_width
+        if not 1 <= draw_width <= self.width:
+            raise ValueError(f"FLS layout width is out of range: {draw_width}")
         self.indices[:] = bytes([background]) * len(self.indices)
 
         mask = Image.new("L", (self.width, self.height))
@@ -50,7 +77,7 @@ class FlsTexture:
                 candidate = ImageFont.load_default(size=size)
                 candidate_bounds = candidate.getbbox(line)
                 if (
-                    candidate_bounds[2] - candidate_bounds[0] <= self.width - 8
+                    candidate_bounds[2] - candidate_bounds[0] <= draw_width - 8
                     and candidate_bounds[3] - candidate_bounds[1] <= box_bottom - box_top
                 ):
                     font = candidate
@@ -60,9 +87,16 @@ class FlsTexture:
                 raise ValueError(f"FLS subtitle does not fit: {line!r}")
             text_width = bounds[2] - bounds[0]
             text_height = bounds[3] - bounds[1]
-            x = (self.width - text_width) // 2 - bounds[0]
+            x = (draw_width - text_width) // 2 - bounds[0]
             y = box_top + (box_bottom - box_top - text_height) // 2 - bounds[1]
             draw.text((x, y), line, font=font, fill=255)
+
+        if outline_index is not None:
+            outline_data = mask.filter(ImageFilter.MaxFilter(3)).load()
+            for y in range(self.height):
+                for x in range(self.width):
+                    if outline_data[x, y] >= 128:
+                        self.indices[y * self.width + x] = outline_index
 
         mask_data = mask.load()
         for y in range(self.height):

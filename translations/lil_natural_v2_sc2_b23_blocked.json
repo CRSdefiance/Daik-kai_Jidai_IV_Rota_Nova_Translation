@@ -1,0 +1,1174 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "draft_status": "source-first-editorial-draft-blocked-runtime-unconfirmed-sc2-b23",
+  "profile_note": "Non-buildable draft. Lil SC2 block 23 is fully translated and its speaker selectors, choice records, command grammar, and default FI value are statically mapped. Portrait/nameplate effects, choice placement, FI expansion, and final layout require cold-boot confirmation.",
+  "control_map": {
+    "speaker_selectors": {
+      "02": "Lil Argot",
+      "09": "Kamil",
+      "14": "Fernando",
+      "FE": "system tutorial panel"
+    },
+    "choice_labels": [
+      "DK4_MES_B23_R0018",
+      "DK4_MES_B23_R0020"
+    ],
+    "choice_command_records": [
+      "DK4_MES_B23_R0015",
+      "DK4_MES_B23_R0017",
+      "DK4_MES_B23_R0023",
+      "DK4_MES_B23_R0025",
+      "DK4_MES_B23_R0027"
+    ],
+    "default_route_macros": {
+      "FI": "Lil",
+      "FA": "Argot",
+      "FO": "Argot Co."
+    },
+    "evidence": "docs/lil_sc2_b23_control_map.md"
+  },
+  "inventory": {
+    "identified_records": 35,
+    "translated_drafts": 35,
+    "encodable_records": 0,
+    "blocked_records": 35,
+    "missing_records": 0,
+    "blocks": {
+      "23": 35
+    }
+  },
+  "records": [],
+  "blocked_records": [
+    {
+      "id": "DK4_MES_B23_R0005",
+      "draft_english": "Next up...{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Next up...",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "098E9F82CD82C182C68163",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0001",
+          "hex": "01FA08"
+        },
+        {
+          "id": "DK4_MES_B23_R0003",
+          "hex": "FF61"
+        },
+        {
+          "id": "DK4_MES_B23_R0004",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0009",
+      "draft_english": "What? Aren't we finished already?{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "What? Aren't we finished already?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282A682C1814182E082A48F4982ED82C182BD82F182B682E182C882A282CC8148",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0004",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0005",
+          "hex": "098E9F82CD82C182C68163"
+        },
+        {
+          "id": "DK4_MES_B23_R0008",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0013",
+      "draft_english": "That was about handling the ship. Next, I'll explain how to assign the crew.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "That was about handling the ship. Next, I'll explain how to assign the crew.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982B382C182AB82CC82CD914482CC918082E895FB82CC98620A8E9F82CD81418FE688F582CC947A927582CC8E6495FB82BE82E6",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0008",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0009",
+          "hex": "0282A682C1814182E082A48F4982ED82C182BD82F182B682E182C882A282CC8148"
+        },
+        {
+          "id": "DK4_MES_B23_R0012",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0018",
+      "draft_english": "That's news to me...{PAD}",
+      "speaker": "Choice menu",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "That's news to me...",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "82BB82EA82C182C48F898EA88163",
+      "source_prefix_hex": null,
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0013",
+          "hex": "0982B382C182AB82CC82CD914482CC918082E895FB82CC98620A8E9F82CD81418FE688F582CC947A927582CC8E6495FB82BE82E6"
+        },
+        {
+          "id": "DK4_MES_B23_R0015",
+          "hex": "21"
+        },
+        {
+          "id": "DK4_MES_B23_R0017",
+          "hex": "10"
+        }
+      ],
+      "blocker": "This source record is statically mapped as a bare choice label in the B23 two-option command sequence; its final menu placement still needs cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0020",
+      "draft_english": "I can figure it out without being told.{PAD}",
+      "speaker": "Choice menu",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "I can figure it out without being told.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "95B782A982C882AD82BD82C182C4814195AA82A982C182C482E9",
+      "source_prefix_hex": null,
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0015",
+          "hex": "21"
+        },
+        {
+          "id": "DK4_MES_B23_R0017",
+          "hex": "10"
+        },
+        {
+          "id": "DK4_MES_B23_R0018",
+          "hex": "82BB82EA82C182C48F898EA88163"
+        }
+      ],
+      "blocker": "This source record is statically mapped as a bare choice label in the B23 two-option command sequence; its final menu placement still needs cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0030",
+      "draft_english": "Oh? Then I can leave it all to you, right?{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Oh? Then I can leave it all to you, right?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982BB82A481480A82B682E182A08141944382B982BF82E182C182C482E095BD8B4382BE82CB",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0025",
+          "hex": "0304"
+        },
+        {
+          "id": "DK4_MES_B23_R0027",
+          "hex": "0134"
+        },
+        {
+          "id": "DK4_MES_B23_R0029",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0040",
+      "draft_english": "Ugh... What a pain.{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Ugh... What a pain.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282E082A4816396CA937C82BE82C88160",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0030",
+          "hex": "0982BB82A481480A82B682E182A08141944382B982BF82E182C182C482E095BD8B4382BE82CB"
+        },
+        {
+          "id": "DK4_MES_B23_R0036",
+          "hex": "01"
+        },
+        {
+          "id": "DK4_MES_B23_R0039",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0044",
+      "draft_english": "Being an admiral is hard work. Or would you rather make me the admiral?{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Being an admiral is hard work. Or would you rather make me the admiral?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0992F193C282CD91E595CF82C882E082CC82C882F182BE82E60A82A0814182BB82EA82C682E0966C82F092F193C282C982B782E98148",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0039",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0040",
+          "hex": "0282E082A4816396CA937C82BE82C88160"
+        },
+        {
+          "id": "DK4_MES_B23_R0043",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0047",
+      "draft_english": "No way.{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "No way.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282BB82EA82CD82E282BE",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0043",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0044",
+          "hex": "0992F193C282CD91E595CF82C882E082CC82C882F182BE82E60A82A0814182BB82EA82C682E0966C82F092F193C282C982B782E98148"
+        },
+        {
+          "id": "DK4_MES_B23_R0046",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0051",
+      "draft_english": "Then you'd better study properly.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Then you'd better study properly.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "09816382B682E182A00A82BF82E182F182C695D78BAD82B582C882AB82E1",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0046",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0047",
+          "hex": "0282BB82EA82CD82E282BE"
+        },
+        {
+          "id": "DK4_MES_B23_R0050",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0054",
+      "draft_english": "Fiiine...{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Fiiine...",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282CD829F82A28163",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0050",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0051",
+          "hex": "09816382B682E182A00A82BF82E182F182C695D78BAD82B582C882AB82E1"
+        },
+        {
+          "id": "DK4_MES_B23_R0053",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0058",
+      "draft_english": "I'll explain how to assign officers and what each post does. Give every navigator a duty so your voyages run smoothly.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "I'll explain how to assign officers and what each post does. Give every navigator a duty so your voyages run smoothly.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "098DA182A982E790E096BE82B782E982CC82CD8141925393968ED282CC947A927582C60A96F08A8482BE82E681428D718A4382F089F5934B82C98D7382A482BD82DF82C90A82BB82EA82BC82EA8D718A438E6D82CC9253939682F08C8882DF82E982F182BE",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0053",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0054",
+          "hex": "0282CD829F82A28163"
+        },
+        {
+          "id": "DK4_MES_B23_R0057",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0062",
+      "draft_english": "First, the captain is {MACRO:FI}, of course. A ship won't run smoothly without its captain. Except in an emergency, stay in the captain's cabin.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "First, the captain is Lil, of course. A ship won't run smoothly without its captain. Except in an emergency, stay in the captain's cabin.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982DC82B881418ACD92B782CD82E082BF82EB82F10A464982BE82E681428ACD92B782AA82A282C882A282C60A914482CD83588380815B835982C993AE82A982C882A281428BD98B7D82CC82C682AB0A88C88A4F82CD81418ACD92B78EBA82F097A382EA82C882A282E682A482C982CB",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0057",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0058",
+          "hex": "098DA182A982E790E096BE82B782E982CC82CD8141925393968ED282CC947A927582C60A96F08A8482BE82E681428D718A4382F089F5934B82C98D7382A482BD82DF82C90A82BB82EA82BC82EA8D718A438E6D82CC9253939682F08C8882DF82E982F182BE"
+        },
+        {
+          "id": "DK4_MES_B23_R0061",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation. FI is statically mapped to the default-route first name (Lil, three ASCII bytes); runtime expansion and line layout remain to be confirmed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0065",
+      "draft_english": "Next is the sail master, who adjusts the sails to the wind. It's an important job, and every mast needs someone assigned to it.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Next is the sail master, who adjusts the sails to the wind. It's an important job, and every mast needs someone assigned to it.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "098E9F82CD8141918094BF8EE88142959782C991CE82B582C494BF82CC8CFC82AB82F00A92B290DF82B782E982F182BE81428F64977682C88E648E9682BE82E60A837D8358836782CC909482BE82AF925393968ED282E0954B9776",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0062",
+          "hex": "0982DC82B881418ACD92B782CD82E082BF82EB82F10A464982BE82E681428ACD92B782AA82A282C882A282C60A914482CD83588380815B835982C993AE82A982C882A281428BD98B7D82CC82C682AB0A88C88A4F82CD81418ACD92B78EBA82F097A382EA82C882A282E682A482C982CB"
+        },
+        {
+          "id": "DK4_MES_B23_R0063",
+          "hex": "1163"
+        },
+        {
+          "id": "DK4_MES_B23_R0064",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0069",
+      "draft_english": "When the sails are set to Half, the sail master adjusts them automatically.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "When the sails are set to Half, the sail master adjusts them automatically.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0994BF82F0817794BC8A4A817882C982B582C482A882AD82C60A918094BF8EE882AA8F9F8EE882C994BF82F091808DEC82B582C482AD82EA82E982E6",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0064",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0065",
+          "hex": "098E9F82CD8141918094BF8EE88142959782C991CE82B582C494BF82CC8CFC82AB82F00A92B290DF82B782E982F182BE81428F64977682C88E648E9682BE82E60A837D8358836782CC909482BE82AF925393968ED282E0954B9776"
+        },
+        {
+          "id": "DK4_MES_B23_R0068",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0072",
+      "draft_english": "Oh! So if I use Half, I don't have to give any orders? You should've said so sooner!{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Oh! So if I use Half, I don't have to give any orders? You should've said so sooner!",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282C882A082F182BE814282B682E18141817794BC8A4A817882C882E70A8E8482AA8E778EA682B582C882AD82C482E082A282A282CC82CB81480A82BB82EA82F0918182AD8CBE82C182C482E6",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0068",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0069",
+          "hex": "0994BF82F0817794BC8A4A817882C982B582C482A882AD82C60A918094BF8EE882AA8F9F8EE882C994BF82F091808DEC82B582C482AD82EA82E982E6"
+        },
+        {
+          "id": "DK4_MES_B23_R0071",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0076",
+      "draft_english": "Sometimes you'll need to sail at Full. Practice now so you don't panic when that happens.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Sometimes you'll need to sail at Full. Practice now so you don't panic when that happens.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "09914482CD817791538A4A817882C5906982DC82C882AB82E182A282AF82C882A20A8FEA8D8782BE82C182C482A082E982F182BE82A982E7814282BB82CC82C682AB82C90A82C882C182C482A082ED82C482C882A282E682A482C90A8DA182A982E797FB8F4B82B582C482A882AD82F182BE82E6",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0071",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0072",
+          "hex": "0282C882A082F182BE814282B682E18141817794BC8A4A817882C882E70A8E8482AA8E778EA682B582C882AD82C482E082A282A282CC82CB81480A82BB82EA82F0918182AD8CBE82C182C482E6"
+        },
+        {
+          "id": "DK4_MES_B23_R0075",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0079",
+      "draft_english": "Hmm...{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Hmm...",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282D382A482F18163",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0075",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0076",
+          "hex": "09914482CD817791538A4A817882C5906982DC82C882AB82E182A282AF82C882A20A8FEA8D8782BE82C182C482A082E982F182BE82A982E7814282BB82CC82C682AB82C90A82C882C182C482A082ED82C482C882A282E682A482C90A8DA182A982E797FB8F4B82B582C482A882AD82F182BE82E6"
+        },
+        {
+          "id": "DK4_MES_B23_R0078",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0091",
+      "draft_english": "Use the L and R Buttons to set the sails' direction. Properly trimmed sails increase the ship's speed.{PAD}",
+      "speaker": "System tutorial",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Use the L and R Buttons to set the sails' direction. Properly trimmed sails increase the ship's speed.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "FE94BF82CC8CFC82AB82CD8141826B81418271837B835E839382C50A8C8882DF82DC82B7814294BF82F092B290AE82B782E982C60A914482CC91AC937882AA8FE382AA82E882DC82B7",
+      "source_prefix_hex": "FE",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0087",
+          "hex": "03B4"
+        },
+        {
+          "id": "DK4_MES_B23_R0089",
+          "hex": "63"
+        },
+        {
+          "id": "DK4_MES_B23_R0090",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0xFE is statically mapped to System tutorial; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0095",
+      "draft_english": "With the stylus, the sails turn to the best angle automatically. Tap the flagship when you want to stop.{PAD}",
+      "speaker": "System tutorial",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "With the stylus, the sails turn to the best angle automatically. Tap the flagship when you want to stop.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "FE835E836283608379839382CC8FEA8D8782CD8EA993AE934982C994BF82AA0A8DC5934B82C895FB8CFC82C982C882E882DC82B70A92E28E7E82B582BD82A28FEA8D878AF88ACD82F0899F82B582C482AD82BE82B382A2",
+      "source_prefix_hex": "FE",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0090",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0091",
+          "hex": "FE94BF82CC8CFC82AB82CD8141826B81418271837B835E839382C50A8C8882DF82DC82B7814294BF82F092B290AE82B782E982C60A914482CC91AC937882AA8FE382AA82E882DC82B7"
+        },
+        {
+          "id": "DK4_MES_B23_R0094",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0xFE is statically mapped to System tutorial; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0104",
+      "draft_english": "The helmsman turns the ship. That's important too. Assign someone skilled if you want the ship to turn quickly.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "The helmsman turns the ship. That's important too. Assign someone skilled if you want the ship to turn quickly.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982BB82EA82A982E78141918091C78EE882CC8E648E9682CD0A914482F089F182B782B182C6814282B182EA82E08F6497768142914482F091AC82AD0A89F193AA82B382B982BD82A282C882E70A945C97CD82CC82A082E9906C82F0914982D482B182C682BE",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0100",
+          "hex": "01"
+        },
+        {
+          "id": "DK4_MES_B23_R0102",
+          "hex": "1263"
+        },
+        {
+          "id": "DK4_MES_B23_R0103",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0107",
+      "draft_english": "A good helmsman can also move the ship quickly into an advantageous position during battle.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "A good helmsman can also move the ship quickly into an advantageous position during battle.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "098A4390ED82C982C882C182C482E08141918091C78EE882AA97448F4782C882E70A974C979882C888CA927582C9914482F09166918182AD88DA93AE82C582AB82E9",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0103",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0104",
+          "hex": "0982BB82EA82A982E78141918091C78EE882CC8E648E9682CD0A914482F089F182B782B182C6814282B182EA82E08F6497768142914482F091AC82AD0A89F193AA82B382B982BD82A282C882E70A945C97CD82CC82A082E9906C82F0914982D482B182C682BE"
+        },
+        {
+          "id": "DK4_MES_B23_R0106",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0110",
+      "draft_english": "A surveyor enables Auto Move and shows the fleet's latitude and longitude. That's another important post.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "A surveyor enables Auto Move and shows the fleet's latitude and longitude. That's another important post.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982A082C6814191AA97CA8E6D82AA82A282EA82CE81778EA993AE88DA93AE817882AA0A82C582AB82BD82E881418ACD91E082CC88DC93788C6F937882AA0A95AA82A982E982E682A482C982C882E90A82B182EA82E0814182AF82C182B182A48F64977682C88E648E9682BE82CB",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0106",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0107",
+          "hex": "098A4390ED82C982C882C182C482E08141918091C78EE882AA97448F4782C882E70A974C979882C888CA927582C9914482F09166918182AD88DA93AE82C582AB82E9"
+        },
+        {
+          "id": "DK4_MES_B23_R0109",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0120",
+      "draft_english": "Oh, right! Let me be the lookout!{PAD}",
+      "speaker": "Fernando",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Oh, right! Let me be the lookout!",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "1482A882A88149814082BB82A482BE81490A89B482C982CD81418CA992A382E882F0944382B982C482AD82EA82E68149",
+      "source_prefix_hex": "14",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0116",
+          "hex": "0304"
+        },
+        {
+          "id": "DK4_MES_B23_R0118",
+          "hex": "01E601"
+        },
+        {
+          "id": "DK4_MES_B23_R0119",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x14 is statically mapped to Fernando; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0123",
+      "draft_english": "Good idea. With your powers of observation, Fernando, you're perfect for lookout duty.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Good idea. With your powers of observation, Fernando, you're perfect for lookout duty.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982BB82A482BE82CB0A83748346838B83698393836882AD82E782A281778ACF8E4097CD817882AA82A082EA82CE0A8CA992A382E896F082CD82D282C182BD82E882BE82CB",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0119",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0120",
+          "hex": "1482A882A88149814082BB82A482BE81490A89B482C982CD81418CA992A382E882F0944382B982C482AD82EA82E68149"
+        },
+        {
+          "id": "DK4_MES_B23_R0122",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0127",
+      "draft_english": "Lookout? What's that?{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Lookout? What's that?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "028CA992A382E88148814089BD82BB82EA8148",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0122",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0123",
+          "hex": "0982BB82A482BE82CB0A83748346838B83698393836882AD82E782A281778ACF8E4097CD817882AA82A082EA82CE0A8CA992A382E896F082CD82D282C182BD82E882BE82CB"
+        },
+        {
+          "id": "DK4_MES_B23_R0126",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0131",
+      "draft_english": "Oh, come on! You're going to sea without even knowing what a lookout does?{PAD}",
+      "speaker": "Fernando",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Oh, come on! You're going to sea without even knowing what a lookout does?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "1482A882A282A882A281418AA895D982B582C482AD82EA82E60A8CA992A382E882CC8E648E9682E0926D82E782CB82A682CC82C90A8A4382C98F6F82E982CC82A982E68149",
+      "source_prefix_hex": "14",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0126",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0127",
+          "hex": "028CA992A382E88148814089BD82BB82EA8148"
+        },
+        {
+          "id": "DK4_MES_B23_R0130",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x14 is statically mapped to Fernando; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0135",
+      "draft_english": "Oh, be quiet! I only forgot for a moment!{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Oh, be quiet! I only forgot for a moment!",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0282E082A4814182A482E982B382A282C8815B81490A82BF82E582C182C6965982EA82BD82BE82AF82BE82E082F18149",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0130",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0131",
+          "hex": "1482A882A282A882A281418AA895D982B582C482AD82EA82E60A8CA992A382E882CC8E648E9682E0926D82E782CB82A682CC82C90A8A4382C98F6F82E982CC82A982E68149"
+        },
+        {
+          "id": "DK4_MES_B23_R0134",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0138",
+      "draft_english": "Easy, both of you...{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Easy, both of you...",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982DC82A082DC82A081418251906C82C682E08163",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0134",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0135",
+          "hex": "0282E082A4814182A482E982B382A282C8815B81490A82BF82E582C182C6965982EA82BD82BE82AF82BE82E082F18149"
+        },
+        {
+          "id": "DK4_MES_B23_R0137",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0142",
+      "draft_english": "At sea, the lookout checks other ships' affiliations and the condition of nearby cities, then reports what they see.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "At sea, the lookout checks other ships' affiliations and the condition of nearby cities, then reports what they see.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "098CA992A382E882CD82CB81418A4382CC8FE382C50A91BC82CC914482CC8F8A91AE82E28A5882CC976C8E7182C882F182A982F00A836083468362834E82B582C495F18D9082B782E982CC82AA8E648E9682C882F182BE",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0137",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0138",
+          "hex": "0982DC82A082DC82A081418251906C82C682E08163"
+        },
+        {
+          "id": "DK4_MES_B23_R0141",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0146",
+      "draft_english": "The better their Observation, the farther away they can discover cities and rare items!{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "The better their Observation, the farther away they can discover cities and rare items!",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0981778ACF8E4097CD817882AA8D8282A282D982C70A82E682E88D4C82A294CD88CD82C982A082E98A5882E292BF956982F00A94AD8CA982C582AB82E982CC82B38149",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0141",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0142",
+          "hex": "098CA992A382E882CD82CB81418A4382CC8FE382C50A91BC82CC914482CC8F8A91AE82E28A5882CC976C8E7182C882F182A982F00A836083468362834E82B582C495F18D9082B782E982CC82AA8E648E9682C882F182BE"
+        },
+        {
+          "id": "DK4_MES_B23_R0145",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0153",
+      "draft_english": "In the end, though, {MACRO:FI} decides everyone's assignments.{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "In the end, though, Lil decides everyone's assignments.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "0982C582E081418DC58F49934982C90A82DD82F182C882CC9253939682F08C8882DF82E982CC82CD814182E282C182CF82E80A464982BE82A982E782CB",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0146",
+          "hex": "0981778ACF8E4097CD817882AA8D8282A282D982C70A82E682E88D4C82A294CD88CD82C982A082E98A5882E292BF956982F00A94AD8CA982C582AB82E982CC82B38149"
+        },
+        {
+          "id": "DK4_MES_B23_R0149",
+          "hex": "01"
+        },
+        {
+          "id": "DK4_MES_B23_R0152",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation. FI is statically mapped to the default-route first name (Lil, three ASCII bytes); runtime expansion and line layout remain to be confirmed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0157",
+      "draft_english": "That's enough for an ordinary voyage. Hmm... Did I explain too much at once?{PAD}",
+      "speaker": "Kamil",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "That's enough for an ordinary voyage. Hmm... Did I explain too much at once?",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "09958192CA82C9914482F08F6F82B782C882E7814182B182EA82C5826E826A82BE82E60A82A6815B82C6814182DC82C682DF82C490E096BE82B582B782AC82BF82E182C182BD0A82A982C88148",
+      "source_prefix_hex": "09",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0152",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0153",
+          "hex": "0982C582E081418DC58F49934982C90A82DD82F182C882CC9253939682F08C8882DF82E982CC82CD814182E282C182CF82E80A464982BE82A982E782CB"
+        },
+        {
+          "id": "DK4_MES_B23_R0156",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x09 is statically mapped to Kamil; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0161",
+      "draft_english": "I'll just try it and see.{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "I'll just try it and see.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "02816382C682C982A982AD814182E282C182C482DD82E9",
+      "source_prefix_hex": "02",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0156",
+          "hex": "40FFFF"
+        },
+        {
+          "id": "DK4_MES_B23_R0157",
+          "hex": "09958192CA82C9914482F08F6F82B782C882E7814182B182EA82C5826E826A82BE82E60A82A6815B82C6814182DC82C682DF82C490E096BE82B582B782AC82BF82E182C182BD0A82A982C88148"
+        },
+        {
+          "id": "DK4_MES_B23_R0160",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0x02 is statically mapped to Lil Argot; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_MES_B23_R0166",
+      "draft_english": "Press the X Button and choose Deck from the menu. On the Deck screen, you can change each navigator's assignment.{PAD}",
+      "speaker": "System tutorial",
+      "context": "Lil's opening voyage: Kamil teaches her how to assign navigators to Deck posts.",
+      "source_meaning": "Press the X Button and choose Deck from the menu. On the Deck screen, you can change each navigator's assignment.",
+      "localization_note": "Natural American English; terminology follows the accepted Deck and sailing interface.",
+      "source_hex_guard": "FE8277837B835E839382F0899F82B581418381836A8385815B82A982E70A81778D6294C289E696CA817882F0914982F182C582AD82BE82B382A20A8D6294C289E696CA82C582CD81418D718A438E6D82CC9253939682F00A95CF8D5882C582AB82DC82B7",
+      "source_prefix_hex": "FE",
+      "preceding_nonempty_records": [
+        {
+          "id": "DK4_MES_B23_R0161",
+          "hex": "02816382C682C982A982AD814182E282C182C482DD82E9"
+        },
+        {
+          "id": "DK4_MES_B23_R0164",
+          "hex": "63"
+        },
+        {
+          "id": "DK4_MES_B23_R0165",
+          "hex": "40FFFF"
+        }
+      ],
+      "blocker": "SC2 B23 selector 0xFE is statically mapped to System tutorial; its exact portrait/nameplate presentation and this draft's final wrapping still need cold-boot confirmation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ]
+}

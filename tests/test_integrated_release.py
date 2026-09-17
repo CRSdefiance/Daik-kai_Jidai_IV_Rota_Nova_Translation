@@ -269,13 +269,39 @@ def test_full_raphael_parity_profile_keeps_relocation_and_v2_batches_together():
 
 
 def test_playable_builder_rejects_bare_newline_story_profile():
-    with pytest.raises(ValueError, match="live-safe guarded profile"):
+    with pytest.raises(ValueError, match="live-safe guarded"):
         validate_playable_dialogue_header(
             Path("translations/bad.json"),
             {
+                "format": "dk4-ilnk-translation-batch-v1",
                 "encoder": "dialogue-fixed-v1",
                 "file_path": "/data/SC0.DK4",
                 "dialogue_profile": "story-clean-revoked",
+            },
+        )
+
+
+def test_playable_builder_rejects_legacy_story_translation():
+    with pytest.raises(ValueError, match="legacy raw translation is forbidden"):
+        validate_playable_dialogue_header(
+            Path("translations/legacy-lil.json"),
+            {
+                "format": "dk4-ilnk-translation-batch-v1",
+                "file_path": "/data/SC2.DK4",
+                "records": [{"id": "DK4_MES_B22_R0019", "english": "Legacy"}],
+            },
+        )
+
+
+def test_playable_builder_rejects_guarded_but_pair_unsafe_story_profile():
+    with pytest.raises(ValueError, match="pair-phase-aware profile"):
+        validate_playable_dialogue_header(
+            Path("translations/pair-unsafe.json"),
+            {
+                "format": "dk4-ilnk-translation-batch-v1",
+                "encoder": "dialogue-fixed-v1",
+                "file_path": "/data/SC2.DK4",
+                "dialogue_profile": "story",
             },
         )
 

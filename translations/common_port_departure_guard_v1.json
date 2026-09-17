@@ -1,0 +1,46 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "content_type": "ilnk-fixed-source-translation-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_file_sha256": "0e489dabc72c1eb70add0c336d92b4bf7f95aa155faedfc7185c3c580fd54f71",
+  "target_locale": "en-US",
+  "ascii_guard_policy": "two-byte-entry-and-line-v1",
+  "scope": "Port departure, range, sailor warning, and packed tribute messages",
+  "records": [
+    {
+      "id": "DK4_MES_B00_R0053",
+      "english": "  Dock at %s?\n  %s sailors are unassigned.\n  Continue?",
+      "replacement_hex": "2020446F636B2061742025733F0A20202573207361696C6F72732061726520756E61737369676E65642E0A2020436F6E74696E75653F2020202020202020",
+      "entry_offsets": [0],
+      "context": "Departure warning when sailors remain unassigned."
+    },
+    {
+      "id": "DK4_MES_B00_R0059",
+      "english": "  Tribute due: %s coins. Please pay. / Monthly tribute: %s.",
+      "replacement_hex": "202054726962757465206475653A0A2020257320636F696E732E20506C65617365207061792E2020202020202020204D6F6E74686C7920747269627574653A2025732E2020202020",
+      "entry_offsets": [0, 45],
+      "context": "Two independently addressed monthly-tribute notices."
+    },
+    {
+      "id": "DK4_MES_B00_R0062",
+      "english": "  Tribute due: %s coins. Please pay. / Tribute: %s coins. Please pay. / %s's trade city paid %s coins in tribute.",
+      "replacement_hex": "202054726962757465206475653A20257320636F696E732E0A2020506C65617365207061792E202020202020202020202020202020202020547269627574653A20257320636F696E732E0A2020506C65617365207061792E20202020202020202020202025732773207472616465206369747920706169640A2020257320636F696E7320696E20747269627574652E202020202020202020202020",
+      "entry_offsets": [0, 54, 98],
+      "context": "Three independently addressed tribute notices."
+    },
+    {
+      "id": "DK4_MES_B00_R0064",
+      "english": "  About %s days at sea.",
+      "replacement_hex": "202041626F75742025732064617973206174207365612E",
+      "entry_offsets": [0],
+      "context": "Estimated sailing endurance shown before leaving port."
+    },
+    {
+      "id": "DK4_MES_B00_R0065",
+      "english": "  %s/%s\n  %s\n  Departed %s.",
+      "replacement_hex": "202025732F25730A202025730A202044657061727465642025732E20202020",
+      "entry_offsets": [0],
+      "context": "Dated journal entry recorded when the fleet departs."
+    }
+  ]
+}

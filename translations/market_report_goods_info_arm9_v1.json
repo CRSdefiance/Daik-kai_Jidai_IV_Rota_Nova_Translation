@@ -1,0 +1,56 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "content_type": "arm9-fixed-text-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "2e64dbd6fa2ff05d5a4889f1131c1d22e47d039b6df42b6cbd13d452eacb33d9",
+  "target_locale": "en-US",
+  "scope": "Market-report category visibility and Goods Info first-glyph repair",
+  "records": [
+    {
+      "id": "DK4_MARKET_GOODS_INFO_HEADING",
+      "offset": 1417188,
+      "source_hex": "476F6F6420496E666F000000",
+      "english": "Goods Info",
+      "context": "Trading-summary Goods Info heading."
+    },
+    {
+      "id": "DK4_MARKET_GOOD_SHARE_FORMAT_A_GUARDED",
+      "offset": 1417304,
+      "source_hex": "25730A202573253464250000",
+      "replacement_hex": "25730A202025732025642500",
+      "english": "%s / %s %d%",
+      "context": "Goods Info name, category, and market percentage formatter.",
+      "notes": "Two spaces follow LF: one is consumed by the renderer and one preserves ASCII pair phase. The narrower %d field keeps the fixed 12-byte slot terminated."
+    },
+    {
+      "id": "DK4_MARKET_GOOD_SHARE_FORMAT_B_GUARDED",
+      "offset": 1417332,
+      "source_hex": "25730A202573253464250000",
+      "replacement_hex": "25730A202025732025642500",
+      "english": "%s / %s %d%",
+      "context": "Alternate Goods Info name, category, and market percentage formatter.",
+      "notes": "Mirrors the guarded primary formatter."
+    },
+    {
+      "id": "DK4_CATEGORY_TEXTILES_VISIBLE",
+      "offset": 1417428,
+      "source_hex": "54657874696C6500",
+      "english": "Fiber",
+      "context": "Six-character-safe market-report category label."
+    },
+    {
+      "id": "DK4_CATEGORY_SEASONING_VISIBLE",
+      "offset": 1417452,
+      "source_hex": "436F6E64696D2E00",
+      "english": "Cond.",
+      "context": "Six-character-safe market-report category label."
+    },
+    {
+      "id": "DK4_CATEGORY_JEWELRY_VISIBLE",
+      "offset": 1417468,
+      "source_hex": "4A6577656C727900",
+      "english": "Jewels",
+      "context": "Six-character-safe market-report category label."
+    }
+  ]
+}

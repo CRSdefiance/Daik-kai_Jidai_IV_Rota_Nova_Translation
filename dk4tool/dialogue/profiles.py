@@ -68,13 +68,30 @@ _PROFILES = {
         macro_widths={"FI": 42, "FA": 36, "FO": 60, "I": 12},
         macro_ascii_lengths={"FI": 7, "FA": 6, "FO": 10},
         # SC0 B48: 0x4B consistently prefixes Hans; 0x71 consistently
-        # prefixes the dock worker. Both precede CP932 prose and were already
-        # preserved by the legacy fixed-size batch.
-        leading_speaker_bytes=frozenset({0x4B, 0x71}),
+        # prefixes the dock worker. SC0 B51 uses 0x18 for Serah. Printable
+        # states used by later scenes live in a separate profile so accepted
+        # English beginning with those ASCII bytes cannot be misclassified.
+        leading_speaker_bytes=frozenset({0x18, 0x4B, 0x71}),
         metrics_source=(
             "cold-boot 2026-08-10: bare 0A exposes the following glyph before "
             "the line transition; 0A 20 protects it; default Raphael route "
             "macro widths are 7/6/10 fixed-width ASCII cells"
+        ),
+    ),
+    "raphael-story-late-live": DialogueProfile(
+        name="raphael-story-late-live",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 42, "FA": 36, "FO": 60, "I": 12},
+        macro_ascii_lengths={"FI": 7, "FA": 6, "FO": 10},
+        leading_speaker_bytes=frozenset(
+            {0x14, 0x18, 0x25, 0x27, 0x4B, 0x50, 0x54, 0x71, 0x72, 0x74}
+        ),
+        metrics_source=(
+            "Raphael live story metrics plus source-correlated late-story NPC "
+            "presentation states; isolated from accepted relocated English"
         ),
     ),
     "hodram-story-probe": DialogueProfile(
@@ -95,6 +112,55 @@ _PROFILES = {
             "SC1 Hodram opening source correlation plus the accepted shared "
             "progressive-story protected-break and pair-phase behavior; "
             "portrait/nameplate effects await cold-boot confirmation"
+        ),
+    ),
+    "lil-story-b23-probe": DialogueProfile(
+        name="lil-story-b23-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        # FI/FA/FO select the route protagonist's default first name,
+        # surname, and company. Raphael's proven 7/6/10 lengths correspond
+        # exactly to Raphael/Castor/Castor Co.; Lil/Argot/Argot Co. therefore
+        # supply the route-specific 3/5/9 probe lengths below.
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02, 0x09, 0x14, 0xFE}),
+        metrics_source=(
+            "SC2 B23 source correlation: 02=Lil, 09=Kamil, 14=Fernando, "
+            "FE=tutorial panel; default Lil route macro strings are "
+            "Lil/Argot/Argot Co. Runtime confirmation remains required."
+        ),
+    ),
+    "lil-story-b22-first-screen-probe": DialogueProfile(
+        name="lil-story-b22-first-screen-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02}),
+        metrics_source=(
+            "SC2 B22 R0019 single-record opening probe; 02=Lil from repeated "
+            "B22/B23 source correlation. Uses the accepted progressive-story "
+            "216 px width, guarded breaks, and pair-phase behavior."
+        ),
+    ),
+    "lil-story-b22-intro-probe": DialogueProfile(
+        name="lil-story-b22-intro-probe",
+        window_width_px=216,
+        max_lines=4,
+        guard_linebreaks=True,
+        pair_phase_safe_breaks=True,
+        macro_widths={"FI": 18, "FA": 30, "FO": 54, "I": 12},
+        macro_ascii_lengths={"FI": 3, "FA": 5, "FO": 9},
+        leading_speaker_bytes=frozenset({0x02, 0x09, 0x0E, 0x14}),
+        metrics_source=(
+            "SC2 B22 source/context correlation: 02=Lil, 09=Kamil, "
+            "0E=Emilio, 14=Fernando. Uses the accepted progressive-story "
+            "216 px width, guarded breaks, and pair-phase behavior."
         ),
     ),
     "help": DialogueProfile(

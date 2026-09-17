@@ -10,7 +10,7 @@ accepted menus, graphics, names, goods, or dialogue.
 2. `translations/release_stack.json` is the machine-readable layer registry.
 3. `out/raphael_natural_v2_accepted_base.nds` is the immutable binary baseline. Its
    current SHA-256 is
-   `d8cb15aa23e2496510eba8feb18e4536a7da195522b7f5959298b0c1cc0fd1cf`;
+   `3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`;
    the registry and builder enforce it.
 4. `docs/known_issues.md` records failed experiments and renderer hazards.
 

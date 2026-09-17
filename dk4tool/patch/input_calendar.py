@@ -45,7 +45,7 @@ def _string_patch(
 PATCHES = (
     Arm9Patch(
         0x15029C,
-        b"Name\0Middle Name\0Last\0Faction\0\0\0",
+        b"Name\0Middle Name\0Last\0Company\0\0\0",
         (
             _fixed("名", 4)
             + _fixed("ミドルネーム", 16)
@@ -56,12 +56,13 @@ PATCHES = (
             + _fixed("Sur", 4)
             + _fixed("Faction", 8),
             b"Name\0Middle Name\0Last\0Faction\0\0\0",
+            b"Name\0Middle Name\0Last\0Company\0\0\0",
         ),
         "repacked character-editor popup labels",
     ),
     _string_patch(
         0x14FC3C,
-        "Middle: Edit",
+        "Middle: Edit  ",
         20,
         "middle-name editor heading",
         "ミドルネーム　変更",
@@ -70,7 +71,7 @@ PATCHES = (
     ),
     _string_patch(
         0x14FC64,
-        "Faction: Edit",
+        "Company: Edit ",
         20,
         "faction editor heading",
         "勢力名　変更　　　",
@@ -86,11 +87,11 @@ PATCHES = (
     ),
     _string_patch(0x1502E4, "Done", 8, "character-editor X button", "完了"),
     _string_patch(0x150378, "M\n", 4, "month suffix used by all 12 months", "月\n"),
-    _string_patch(0x15037C, "Birth", 8, "birthday popup fallback heading", "誕生日"),
+    _string_patch(0x15037C, "Date", 8, "birthday popup heading", "誕生日", "Birth"),
     _string_patch(0x15510C, "英", 4, "restored Latin keyboard-page identifier", "AB", "ABC"),
     _string_patch(0x1550F4, "記", 4, "restored symbol keyboard-page identifier", "#+"),
     _string_patch(0x1331A0, "Days: %6d", 12, "shared duration format", "日数  %6d日"),
-    _string_patch(0x133FF4, "~%d d", 8, "approximate voyage duration", "約%d日"),
+    _string_patch(0x133FF4, "%d days", 8, "approximate voyage duration", "約%d日", "~%d d"),
     _string_patch(0x143D78, "3 Days", 8, "inn 3-day option", "３日"),
     _string_patch(0x143D88, "30 Days", 8, "inn 30-day option", "３０日"),
     _string_patch(0x143D90, "10 Days", 8, "inn 10-day option", "１０日"),
@@ -103,7 +104,7 @@ PATCHES = (
     _string_patch(0x16AFB0, "Arr. Mo.", 8, "alternate arrival-month label", "入荷月"),
     Arm9Patch(
         0x14FC28,
-        _fixed("Name: Edit", 20),
+        _fixed("Name: Edit    ", 20),
         (
             _fixed("名　変更　　　　　", 20),
             _fixed("Name: Edit", 20),
@@ -115,7 +116,7 @@ PATCHES = (
     ),
     Arm9Patch(
         0x14FC50,
-        _fixed("Last: Edit", 20),
+        _fixed("Last: Edit    ", 20),
         (
             _fixed("姓　変更　　　　　", 20),
             _fixed("Last: Edit", 20),
@@ -198,12 +199,12 @@ PATCHES = (
     ),
     Arm9Patch(
         0xA0678,
-        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC1D),
+        struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15037C),
         (
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x15037C),
             struct.pack("<I", ARM9_LOAD_ADDRESS + 0x14FC1D),
         ),
-        "birthday calendar heading pointer",
+        "birthday calendar compact-heading pointer",
     ),
 )
 
