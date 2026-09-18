@@ -50,9 +50,10 @@ def test_controls_and_multibyte_text_do_not_change_ascii_phase() -> None:
 
 
 def test_known_runtime_macro_expansion_parity_is_counted() -> None:
-    profile = phase_profile(macro_lengths={"FI": 7, "FA": 6})
+    profile = phase_profile(macro_lengths={"FI": 7, "FA": 6, "FU": 14})
     assert encode("{MACRO:FI}{LB}A", profile=profile) == b"FI\x0A A"
     assert encode("{MACRO:FA}{LB}A", profile=profile) == b"FA \x0A A"
+    assert encode("{MACRO:FU}{LB}A", profile=profile) == b"FU \x0A A"
 
 
 def test_unknown_runtime_macro_parity_fails_closed_at_break() -> None:

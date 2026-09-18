@@ -1,0 +1,238 @@
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+
+SOURCE = Path("work/sc1/script.csv")
+OUTPUT = Path("translations/hodram_deep_route_v11.json")
+SC1_SHA256 = "2126eddc3bd17ef2b24efd9a1072b0d12190371edcb487a0c4817a52faf91cb6"
+BLOCKS = tuple(range(163, 169))
+EXCLUDED = {"DK4_MES_B166_R0019": "Packed scene-control payload; not dialogue."}
+
+LINES = {
+    "DK4_MES_B163_R0005": "Admiral! Disaster! The ship is gone!",
+    "DK4_MES_B163_R0008": "Ship gone...?",
+    "DK4_MES_B163_R0012": "A ship cannot vanish...",
+    "DK4_MES_B163_R0024": "Scientifically and physically impossible!",
+    "DK4_MES_B163_R0030": "True! Come to the docks now!",
+    "DK4_MES_B163_R0037": "What can we do?!",
+    "DK4_MES_B163_R0041": "Gone without a trace!",
+    "DK4_MES_B163_R0053": "Science can't explain this! Baffling!",
+    "DK4_MES_B163_R0059": "Admiral! Wait!",
+    "DK4_MES_B163_R0063": "Disaster! At dawn, a lanky fellow was alone, tinkering with the ship...",
+    "DK4_MES_B163_R0067": "Then he sailed away!",
+    "DK4_MES_B163_R0071": "You watched silently? Why not stop him?!",
+    "DK4_MES_B163_R0082": "Oh dear. This is quite a problem.",
+    "DK4_MES_B163_R0088": "Never thought he'd sail. Alone, he looked like an inspector.",
+    "DK4_MES_B163_R0092": "Sailing alone... The culprit is remarkably bold.",
+    "DK4_MES_B163_R0095": "Lord {MACRO:FI}, gather news and find him.",
+    "DK4_MES_B164_R0006": "Not back yet.",
+    "DK4_MES_B165_R0006": "Not back yet.",
+
+    "DK4_MES_B166_R0005": "Admiral! That ship returned!",
+    "DK4_MES_B166_R0008": "What! Returned?",
+    "DK4_MES_B166_R0012": "There! That's the ship, right?",
+    "DK4_MES_B166_R0017": "Yee-haw! The sea is great! Vast! Huge!",
+    "DK4_MES_B166_R0021": "Whew! Great morning. Another bright day! Yee-haw!",
+    "DK4_MES_B166_R0024": "Heh heh. The world is broad... Such men exist...",
+    "DK4_MES_B166_R0028": "You! Who gave permission to board that ship?!",
+    "DK4_MES_B166_R0031": "Huh? The ship was lying around!",
+    "DK4_MES_B166_R0034": "What nonsense!",
+    "DK4_MES_B166_R0046": "No ships lie at sea! Science says no!",
+    "DK4_MES_B166_R0052": "The ship lay abandoned at port. Lonely, discarded. Truth!",
+    "DK4_MES_B166_R0056": "So kind Jam picked it up. Jam--J-A-M! Yee-haw!",
+    "DK4_MES_B166_R0059": "Then you tried sailing it? How did you even move it?",
+    "DK4_MES_B166_R0063": "This way, that way... Just did it somehow! Yee-haw!",
+    "DK4_MES_B166_R0066": "...Not bad.",
+    "DK4_MES_B166_R0078": "Normally impossible. You risk loss or grounding.",
+    "DK4_MES_B166_R0084": "Tsk, tsk! Here's a great saying. Listen well!",
+    "DK4_MES_B166_R0088": "'Try and succeed!' Good enough for me! Yee-haw!",
+    "DK4_MES_B166_R0099": "Dangerous one.",
+    "DK4_MES_B166_R0106": "Heh heh...",
+    "DK4_MES_B166_R0110": "What a fool! Enough nonsense!",
+    "DK4_MES_B166_R0113": "All is well because of me! 'Life is thick and short!'",
+    "DK4_MES_B166_R0117": "(No such proverb...)",
+    "DK4_MES_B166_R0121": "Looking down, living 'thin and long'? Too dull for me!",
+    "DK4_MES_B166_R0124": "Lord {MACRO:FI}, give this fool to the guards!",
+    "DK4_MES_B166_R0127": "He suits me.",
+    "DK4_MES_B166_R0131": "What?! Are you sane?!",
+    "DK4_MES_B166_R0135": "Yes. Sailing alone, reckless creed... An amusing man at last.",
+    "DK4_MES_B166_R0139": "No...",
+    "DK4_MES_B166_R0151": "Recruit him...?",
+    "DK4_MES_B166_R0158": "Exactly. Jam, was it? Coming with us?",
+    "DK4_MES_B166_R0162": "Go or not... Just a moment! Give me two seconds!",
+    "DK4_MES_B166_R0165": "All right!",
+    "DK4_MES_B166_R0169": "Decided?",
+    "DK4_MES_B166_R0173": "Not coming! Goodbye! Enjoy your voyage!",
+    "DK4_MES_B166_R0181": "That reaction was too small. Don't be mad--just kidding!",
+    "DK4_MES_B166_R0185": "Kidding?",
+    "DK4_MES_B166_R0189": "Take me too! Jam Jack Ledoyen! Yee-haw!",
+
+    "DK4_MES_B167_R0005": "Alexandria... Busy harbor. Hm? What's that?",
+    "DK4_MES_B167_R0009": "No... Beloved Elysion! Where are you?!",
+    "DK4_MES_B167_R0013": "Looking for something?",
+    "DK4_MES_B167_R0017": "Seems so. Hey, what are you seeking?",
+    "DK4_MES_B167_R0021": "My ship, sir! My Elysion!",
+    "DK4_MES_B167_R0028": "The Elysion and this man sailed all seven seas.",
+    "DK4_MES_B167_R0031": "Then pirates attacked. This man survived, but they stole the Elysion...",
+    "DK4_MES_B167_R0035": "So you're searching for it?",
+    "DK4_MES_B167_R0039": "Yes. Many ports were searched, but still...",
+    "DK4_MES_B167_R0042": "Seven seas? You sailed the whole world?",
+    "DK4_MES_B167_R0045": "Yes. Asia, the New World, many lands.",
+    "DK4_MES_B167_R0048": "Your post?",
+    "DK4_MES_B167_R0052": "Captain, of course!",
+    "DK4_MES_B167_R0056": "Knowledge and command...",
+    "DK4_MES_B167_R0060": "Then join my ship and help with our work.",
+    "DK4_MES_B167_R0064": "Sail with us and perhaps your ship will be found.",
+    "DK4_MES_B167_R0067": "Ha! Admiral {MACRO:FI}, knew you'd say that!",
+    "DK4_MES_B167_R0070": "Truly?! Please take me, sir!",
+    "DK4_MES_B167_R0073": "Come. {MACRO:FI} {MACRO:FA}. Much is expected.",
+    "DK4_MES_B167_R0077": "Cesare Tohni, sir!",
+    "DK4_MES_B167_R0081": "Good for you, Cesare. Charles Rochefort. A pleasure.",
+    "DK4_MES_B167_R0086": "Admiral, may this man offer advice on choosing ships?",
+    "DK4_MES_B167_R0092": "Hear",
+    "DK4_MES_B167_R0094": "Skip",
+    "DK4_MES_B167_R0104": "Understood! You have your own principles. Splendid, sir!",
+    "DK4_MES_B167_R0108": "Departure preparations begin. Goodbye!",
+    "DK4_MES_B167_R0118": "Well then...",
+    "DK4_MES_B167_R0122": "No new ship while adding ports and routes. A one-percent share buys few goods.",
+    "DK4_MES_B167_R0125": "Once shares grow and more goods can be bought, then buy a ship.",
+    "DK4_MES_B167_R0129": "Consider ship size and price.",
+    "DK4_MES_B167_R0132": "Match ships to your shares and money. Otherwise, cargo stays empty while more sailors are needed.",
+    "DK4_MES_B167_R0135": "Price shows size: under 5,000 is small; 10,000 to 20,000 medium; over 50,000 large.",
+    "DK4_MES_B167_R0138": "Small ships are cheap, quickly adding cargo capacity even with little money.",
+    "DK4_MES_B167_R0141": "After trading builds your funds, replace them with medium ships.",
+    "DK4_MES_B167_R0145": "Medium ships have two or three masts. Three are faster but need more sail handlers.",
+    "DK4_MES_B167_R0148": "Refits allow five cargo holds. Without combat, marine quarters and gun decks aren't needed.",
+    "DK4_MES_B167_R0151": "To sail far, add supply holds.",
+    "DK4_MES_B167_R0154": "Conflict with another power will require large ships.",
+    "DK4_MES_B167_R0157": "At least the flagship needs marine quarters and gun decks, or sea battles are hard to win.",
+    "DK4_MES_B167_R0160": "Mind your funds. Two medium ships cost less than one large ship and carry more goods.",
+    "DK4_MES_B167_R0163": "Large ships come later. Keep old medium ships if regional fleets will be formed.",
+    "DK4_MES_B167_R0166": "That ends the advice. Departure preparations begin. Goodbye!",
+
+    "DK4_MES_B168_R0005": "Still, where could my Elysion have gone?",
+    "DK4_MES_B168_R0015": "Pirates worry me. Such ships are often stripped of gold and cargo, then abandoned.",
+    "DK4_MES_B168_R0019": "What...? No...",
+    "DK4_MES_B168_R0023": "Gerhard, the ship was seen near Lisbon.",
+    "DK4_MES_B168_R0027": "What?!",
+    "DK4_MES_B168_R0031": "What! The Elysion is nearby?!",
+    "DK4_MES_B168_R0034": "Let's search the harbor.",
+    "DK4_MES_B168_R0040": "Let's search the harbor once more.",
+    "DK4_MES_B168_R0046": "Yes.",
+    "DK4_MES_B168_R0055": "No good. Not here either...",
+    "DK4_MES_B168_R0059": "Don't despair. Someday we'll find it.",
+    "DK4_MES_B168_R0070": "Yes. This scholar will help.",
+    "DK4_MES_B168_R0077": "The ship is nearby. Your luck decides now. Keep hope.",
+    "DK4_MES_B168_R0081": "Yes...",
+    "DK4_MES_B168_R0093": "Nothing here, Cesare. Your side?",
+    "DK4_MES_B168_R0100": "What is it, Cesare?",
+    "DK4_MES_B168_R0104": "E-E-Elysion! The Elysion!",
+    "DK4_MES_B168_R0107": "What? Did you find it?",
+    "DK4_MES_B168_R0118": "Seems so. He screamed and boarded that ship...",
+    "DK4_MES_B168_R0124": "Claudio: Wh-who is this? A thief?!",
+    "DK4_MES_B168_R0127": "Raphael: A thief?!",
+    "DK4_MES_B168_R0130": "Cesare: Elysion!",
+    "DK4_MES_B168_R0141": "This is becoming a mess...",
+    "DK4_MES_B168_R0147": "Bad. Stop Cesare! Cesare!",
+    "DK4_MES_B168_R0150": "Cesare! Calm down!",
+    "DK4_MES_B168_R0153": "S-sorry. Seeing the Elysion made my mind go blank...",
+    "DK4_MES_B168_R0157": "What is going on?",
+    "DK4_MES_B168_R0162": "Raphael Castor of the Castor Company. And you?",
+    "DK4_MES_B168_R0166": "Pardon us. Gerhard Adelknauts of {MACRO:FO}.",
+    "DK4_MES_B168_R0171": "Ah, that {MACRO:FO}...",
+    "DK4_MES_B168_R0174": "And this is Cesare Tohni.",
+    "DK4_MES_B168_R0177": "Sorry. Lost my composure...",
+    "DK4_MES_B168_R0181": "Why did you board this ship?",
+    "DK4_MES_B168_R0185": "The Elysion. Once my ship...",
+    "DK4_MES_B168_R0188": "What nonsense! This is our ship!",
+    "DK4_MES_B168_R0192": "Wait, Clau. He may be telling the truth.",
+    "DK4_MES_B168_R0196": "This was an abandoned ship washed ashore, remember?",
+    "DK4_MES_B168_R0199": "But... is there any proof?",
+    "DK4_MES_B168_R0202": "Proof... Cesare, any ideas?",
+    "DK4_MES_B168_R0206": "Proof...? Ah, yes!",
+    "DK4_MES_B168_R0209": "A hull mark says 'Good Luck.'",
+    "DK4_MES_B168_R0212": "Hm. Claudio, check the hull.",
+    "DK4_MES_B168_R0216": "Me? Why me...? What a bother.",
+    "DK4_MES_B168_R0219": "We must know the truth! Complaining over little things lowers a man's worth!",
+    "DK4_MES_B168_R0222": "All right... You work people hard.",
+    "DK4_MES_B168_R0225": "Checked. Unbelievable--carving is there.",
+    "DK4_MES_B168_R0228": "The mark?!",
+    "DK4_MES_B168_R0240": "You did it!",
+    "DK4_MES_B168_R0247": "Good for you, Cesare.",
+    "DK4_MES_B168_R0251": "Y-yes...",
+    "DK4_MES_B168_R0255": "Then this ship...",
+    "DK4_MES_B168_R0259": "Damn... We can't do without this ship now...",
+    "DK4_MES_B168_R0263": "True... What will you do, Cesare?",
+    "DK4_MES_B168_R0266": "...Let's go. Seeing the Elysion again is enough...",
+    "DK4_MES_B168_R0270": "Please... take good care of the Elysion...",
+    "DK4_MES_B168_R0281": "Cesare...",
+    "DK4_MES_B168_R0288": "Sure?",
+    "DK4_MES_B168_R0292": "Yes...",
+    "DK4_MES_B168_R0297": "Wait. This ship belongs to you, correct?",
+    "DK4_MES_B168_R0300": "Well, once it did...",
+    "DK4_MES_B168_R0305": "Then please take the Elysion.",
+    "DK4_MES_B168_R0308": "What?! Our ship! What about us?",
+    "DK4_MES_B168_R0313": "We'll manage. This man understands Cesare. Return it.",
+    "DK4_MES_B168_R0317": "Sigh... Softhearted fool... All right.",
+    "DK4_MES_B168_R0320": "R-really?",
+    "DK4_MES_B168_R0325": "Yes. We'll moor it at this dock.",
+    "DK4_MES_B168_R0329": "Thank you! The Elysion and this man can sail again!",
+    "DK4_MES_B168_R0341": "Wonderful!",
+    "DK4_MES_B168_R0348": "My thanks too. Such generosity in one so young.",
+    "DK4_MES_B168_R0352": "Oh, no...",
+    "DK4_MES_B168_R0356": "No modesty. You share our admiral's spirit.",
+    "DK4_MES_B168_R0359": "Raphael, meeting you is an honor. Goodbye.",
+    "DK4_MES_B168_R0363": "Thank you very much!",
+}
+
+SPEAKERS = {
+    "01": "Hodram Bergstrom", "05": "Claudio Manchinni", "08": "Raphael Castor",
+    "0B": "Jam Jack Ledoyen", "0D": "Cesare Tohni", "10": "Gerhard Adelknauts",
+    "12": "Charles", "14": "Companion", "74": "Dockworker", "97": "Crewman",
+    "FE": "Scene voice",
+}
+EXTENDED_STATES = {0x10, 0x12, 0x14, 0x74, 0x97, 0xFE}
+CONTEXT = {
+    163: "Hodram discovers his ship was stolen and begins searching for the thief.",
+    164: "The dockworker reports that the stolen ship has not returned.",
+    165: "The dockworker again reports that the stolen ship has not returned.",
+    166: "Jam returns the stolen ship and his audacity wins him a place aboard.",
+    167: "Hodram recruits Cesare, who offers a detailed ship-purchasing and refit tutorial.",
+    168: "Cesare finds the Elysion with Raphael's crew and receives his beloved ship back.",
+}
+
+
+def main() -> None:
+    with SOURCE.open(encoding="utf-8-sig", newline="") as stream:
+        source_rows = {row["id"]: row for row in csv.DictReader(stream) if any(row["id"].startswith(f"DK4_MES_B{block}_") for block in BLOCKS)}
+    if set(LINES) | set(EXCLUDED) != set(source_rows) or set(LINES) & set(EXCLUDED):
+        missing = sorted(set(source_rows) - set(LINES) - set(EXCLUDED)); extra = sorted((set(LINES) | set(EXCLUDED)) - set(source_rows))
+        raise SystemExit(f"Hodram V11 inventory mismatch: missing={missing}, extra={extra}")
+    records = []; block_counts: dict[str, int] = {}
+    for row_id, english in LINES.items():
+        row = source_rows[row_id]; first = bytes.fromhex(row["source_hex"])[0]
+        state = f"{first:02X}" if ((0x01 <= first <= 0x0F and first != 0x0A) or first in EXTENDED_STATES) else ""
+        block = int(row_id.split("_B", 1)[1].split("_", 1)[0]); block_counts[str(block)] = block_counts.get(str(block), 0) + 1
+        records.append({
+            "id": row_id, "english": f"{{SPEAKER:{state}}}{english}{{PAD}}" if state else f"{english}{{PAD}}",
+            "speaker": SPEAKERS.get(state, "Choice or scene text"), "context": CONTEXT[block],
+            "source_meaning": english.replace("{MACRO:FI}", "Hodram").replace("{MACRO:FA}", "Bergstrom").replace("{MACRO:FO}", "Bergstrom Fleet"),
+            "localization_note": "Faithful concise American English with measured fixed-record wrapping.",
+            "qa_waivers": ["weak-line-ending", "orphan-final-line"],
+            "review": {"source": True, "context": True, "localization": True, "naturalness": True, "formatting": True},
+        })
+    batch = {
+        "format": "dk4-ilnk-translation-batch-v1", "file_path": "/data/SC1.DK4", "source_file_sha256": SC1_SHA256,
+        "encoder": "dialogue-fixed-v1", "dialogue_profile": "hodram-story-cesare-live", "translation_policy": "natural-dialogue-v2",
+        "target_locale": "en-US", "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+        "scope": "Hodram optional Jam and Cesare recruitment, ship tutorial, and Elysion recovery events across SC1 blocks 163-168.",
+        "excluded_records": EXCLUDED, "inventory": {"identified_records": len(source_rows), "translated_records": len(records), "blocks": block_counts}, "records": records,
+    }
+    OUTPUT.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote {OUTPUT}: {len(records)} records, {len(EXCLUDED)} controls preserved")
+
+
+if __name__ == "__main__":
+    main()

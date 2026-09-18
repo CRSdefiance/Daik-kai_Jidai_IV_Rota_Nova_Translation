@@ -1,0 +1,48 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c2e0d1a2744a7da4a24f9693230b302a29f05bcaa036ebd5cc9726a6184731ff",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-deep-route-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Lil runtime hotfix for untranslated B120 dialogue. The B23 centered choice and B24 percent-format repair are folded into their source batches.",
+  "excluded_records": {},
+  "inventory": {
+    "identified_records": 1,
+    "translated_records": 1,
+    "blocks": {
+      "120": 1
+    }
+  },
+  "records": [
+    {
+      "id": "DK4_MES_B120_R0012",
+      "english": "{SPEAKER:02}No thanks.{LB}Not my thing.{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil declines a task she says she is not good at.",
+      "source_meaning": "No thanks. I'm not good at that sort of thing.",
+      "localization_note": "Runtime hotfix preserving the source meaning while correcting choice alignment, printf safety, or untranslated dialogue.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Keeps the short semantic rows stable in the native renderer.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

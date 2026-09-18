@@ -1,0 +1,253 @@
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+
+SOURCE = Path("work/sc1/script.csv")
+OUTPUT = Path("translations/hodram_deep_route_v4a.json")
+SC1_SHA256 = "2126eddc3bd17ef2b24efd9a1072b0d12190371edcb487a0c4817a52faf91cb6"
+BLOCKS = (84, 85, 86)
+
+EXCLUDED = {
+    "DK4_MES_B84_R0030": "Raw event-control payload; not dialogue.",
+    "DK4_MES_B86_R0080": "Raw event-control payload; not dialogue.",
+}
+
+LINES = {
+    "DK4_MES_B84_R0005": "What?",
+    "DK4_MES_B84_R0009": "What notice? Ah, bullfighting!",
+    "DK4_MES_B84_R0012": "A rare chance. Shall we go?",
+    "DK4_MES_B84_R0016": "Whew. What a crowd.",
+    "DK4_MES_B84_R0020": "Such energy.",
+    "DK4_MES_B84_R0024": "Spain rules much of the world now.",
+    "DK4_MES_B84_R0027": "The notice says today's top matador appears.",
+    "DK4_MES_B84_R0032": "Ha ha ha!",
+    "DK4_MES_B84_R0036": "Make us laugh again!",
+    "DK4_MES_B84_R0040": "That's the top matador?",
+    "DK4_MES_B84_R0044": "That's a picador.",
+    "DK4_MES_B84_R0048": "He tires the bull. Then the matador finishes it.",
+    "DK4_MES_B84_R0052": "Hyaaah!!",
+    "DK4_MES_B84_R0056": "Ha! The bull threw that fool!",
+    "DK4_MES_B84_R0060": "Raaah!!",
+    "DK4_MES_B84_R0064": "Ha ha ha!",
+    "DK4_MES_B84_R0068": "Get him out!",
+    "DK4_MES_B84_R0076": "The star finally appears!",
+    "DK4_MES_B84_R0080": "Roar!!",
+    "DK4_MES_B84_R0084": "At last!",
+    "DK4_MES_B84_R0088": "Woo-hoo!",
+    "DK4_MES_B84_R0092": "Hooray!",
+    "DK4_MES_B84_R0096": "Entertain us!",
+    "DK4_MES_B84_R0100": "Bravo!!",
+    "DK4_MES_B84_R0104": "Hooray!",
+    "DK4_MES_B84_R0109": "Murmur...",
+    "DK4_MES_B84_R0113": "Recruit him?",
+    "DK4_MES_B84_R0117": "Seriously?",
+    "DK4_MES_B84_R0121": "Rare talent.",
+    "DK4_MES_B84_R0125": "Can a matador help us?",
+    "DK4_MES_B84_R0129": "Yes.",
+    "DK4_MES_B84_R0133": "A word?",
+    "DK4_MES_B84_R0137": "Hm?",
+    "DK4_MES_B84_R0141": "What?! ...That one?",
+    "DK4_MES_B84_R0144": "Want to sail the open sea?",
+    "DK4_MES_B84_R0147": "Ship? Scary. Doesn't look tasty.",
+    "DK4_MES_B84_R0150": "Ships aren't tasty. But sailing finds delicacies worldwide.",
+    "DK4_MES_B84_R0154": "D-delicacies? Heh heh.",
+    "DK4_MES_B84_R0158": "Yes. The world has many foods.",
+    "DK4_MES_B84_R0161": "So many? Then off we go! Sea or anywhere!",
+    "DK4_MES_B84_R0165": "Settled. Your name? Mine is {MACRO:FI} {MACRO:FA}.",
+    "DK4_MES_B84_R0169": "Me? Emilio.",
+    "DK4_MES_B84_R0173": "Welcome, Emilio.",
+
+    "DK4_MES_B85_R0005": "You're so persistent!!",
+    "DK4_MES_B85_R0008": "My beloved Christina! Why so cold?",
+    "DK4_MES_B85_R0011": "Are you mad? She hates you.",
+    "DK4_MES_B85_R0014": "No need to be shy!",
+    "DK4_MES_B85_R0018": "Enough! Our parents arranged it. Marriage is not happening!",
+    "DK4_MES_B85_R0021": "Hearing your voice alone makes me happy!",
+    "DK4_MES_B85_R0024": "Moron!",
+    "DK4_MES_B85_R0028": "...That woman?",
+    "DK4_MES_B85_R0032": "That's so.",
+    "DK4_MES_B85_R0036": "Her situation seems complicated...",
+    "DK4_MES_B85_R0039": "No concern. Christina!",
+    "DK4_MES_B85_R0043": "Christina! Been well?",
+    "DK4_MES_B85_R0047": "Grandpa! When reach London?",
+    "DK4_MES_B85_R0051": "Just now. Sailing again.",
+    "DK4_MES_B85_R0054": "Again?! Mother and father will stop you.",
+    "DK4_MES_B85_R0057": "Only if you tell them. Ho ho.",
+    "DK4_MES_B85_R0060": "Honestly...",
+    "DK4_MES_B85_R0064": "Why not sail with me?",
+    "DK4_MES_B85_R0067": "What?! Absolutely not!",
+    "DK4_MES_B85_R0070": "Who is this?",
+    "DK4_MES_B85_R0073": "A friend's son. What was his name?",
+    "DK4_MES_B85_R0076": "My Christina! No need for shyness! Are you her grandfather?",
+    "DK4_MES_B85_R0080": "Miwoll Gentz, at your service!",
+    "DK4_MES_B85_R0083": "Yes, that. Our fathers made a promise without asking.",
+    "DK4_MES_B85_R0087": "Apparently this baffling man is my fiance.",
+    "DK4_MES_B85_R0090": "So?",
+    "DK4_MES_B85_R0094": "Don't just say 'so'!",
+    "DK4_MES_B85_R0098": "This pale weakling, eh...",
+    "DK4_MES_B85_R0101": "N-not just because our parents said so... Christina truly...",
+    "DK4_MES_B85_R0105": "Mother and father want me to stop swinging swords and settle down. Awful.",
+    "DK4_MES_B85_R0108": "Just like Harald. Bad parenting...",
+    "DK4_MES_B85_R0111": "Um...",
+    "DK4_MES_B85_R0115": "Be quiet! About that ship...",
+    "DK4_MES_B85_R0119": "Yes. Come with me.",
+    "DK4_MES_B85_R0123": "Grandpa says you're a fine swordswoman. Please join my ship.",
+    "DK4_MES_B85_R0126": "What? Grandpa, who are they?",
+    "DK4_MES_B85_R0129": "Well... This is Admiral {MACRO:FI} {MACRO:FA}.",
+    "DK4_MES_B85_R0132": "An admiral? So young.",
+    "DK4_MES_B85_R0136": "You wanted matches with other schools. Why not train around the world?",
+    "DK4_MES_B85_R0139": "No! Absolutely not!",
+    "DK4_MES_B85_R0143": "That sounds good. Coming.",
+    "DK4_MES_B85_R0146": "No, no, no!!",
+    "DK4_MES_B85_R0150": "...What about him?",
+    "DK4_MES_B85_R0154": "Leave him. No time to waste, Grandpa!",
+    "DK4_MES_B85_R0157": "That's my granddaughter. Exactly.",
+    "DK4_MES_B85_R0160": "Miwoll, coming?",
+    "DK4_MES_B85_R0164": "W-well...",
+    "DK4_MES_B85_R0168": "He can't swim and fears water. No chasing us.",
+    "DK4_MES_B85_R0171": "Then... a duel!",
+    "DK4_MES_B85_R0178": "You never understand! Hyaa!",
+    "DK4_MES_B85_R0182": "Waaah! Ouch!",
+    "DK4_MES_B85_R0186": "That stance couldn't beat a child.",
+    "DK4_MES_B85_R0189": "Good. Your skill remains.",
+    "DK4_MES_B85_R0192": "My father bought that rapier!",
+    "DK4_MES_B85_R0196": "Let's go! Matches and sailing are fun!",
+
+    "DK4_MES_B86_R0005": "Ah, London... Home air is best.",
+    "DK4_MES_B86_R0008": "Rest while home.",
+    "DK4_MES_B86_R0012": "Thanks. Taking a harbor walk.",
+    "DK4_MES_B86_R0016": "We'll rest at the inn.",
+    "DK4_MES_B86_R0019": "Nothing changed... Lovely.",
+    "DK4_MES_B86_R0022": "A miracle! True love! Christina!",
+    "DK4_MES_B86_R0026": "Oh no!",
+    "DK4_MES_B86_R0030": "Thank goodness! Love brought you back! My...",
+    "DK4_MES_B86_R0034": "D-don't cry. Everyone is watching.",
+    "DK4_MES_B86_R0037": "Not back for good! We only stopped in London. Leaving soon!",
+    "DK4_MES_B86_R0040": "Huh?",
+    "DK4_MES_B86_R0044": "You were not the reason for my return!",
+    "DK4_MES_B86_R0047": "Marriage to you? Never!",
+    "DK4_MES_B86_R0051": "Nooo! What do you dislike about me?",
+    "DK4_MES_B86_R0054": "Nothing. Marriage just isn't wanted yet. Give up.",
+    "DK4_MES_B86_R0058": "...Understood. Giving up... My love has ended...",
+    "DK4_MES_B86_R0062": "Whew... No more pursuit.",
+    "DK4_MES_B86_R0070": "Sigh... Hm?",
+    "DK4_MES_B86_R0074": "My boy!",
+    "DK4_MES_B86_R0078": "What is it?!",
+    "DK4_MES_B86_R0083": "My boy fell into the sea! Someone save him!",
+    "DK4_MES_B86_R0087": "Wait! Help is coming!",
+    "DK4_MES_B86_R0091": "Hold on! Almost there!",
+    "DK4_MES_B86_R0095": "Christina...!",
+    "DK4_MES_B86_R0100": "You're safe now. Don't worry!",
+    "DK4_MES_B86_R0103": "<Boy> So scary!",
+    "DK4_MES_B86_R0106": "You're safe now.",
+    "DK4_MES_B86_R0110": "Don't cling to my neck! C-can't breathe.",
+    "DK4_MES_B86_R0113": "<Boy> Scary!",
+    "DK4_MES_B86_R0116": "At this rate we'll both drown!",
+    "DK4_MES_B86_R0119": "<Boy> So scary!",
+    "DK4_MES_B86_R0122": "N-no... drowning...",
+    "DK4_MES_B86_R0126": "Help! Someone!",
+    "DK4_MES_B86_R0132": "No one else?",
+    "DK4_MES_B86_R0136": "Christina... But the sea... water...",
+    "DK4_MES_B86_R0139": "Sea scary... Christina... Which matters more?",
+    "DK4_MES_B86_R0142": "But... but... Raaah!",
+    "DK4_MES_B86_R0145": "Christina matters more than the sea!",
+    "DK4_MES_B86_R0148": "Christina! Christina!",
+    "DK4_MES_B86_R0151": "Christina!!",
+    "DK4_MES_B86_R0155": "Miwoll is coming!",
+    "DK4_MES_B86_R0159": "Christina! Coming now!",
+    "DK4_MES_B86_R0165": "Cough... Miwoll? What happened?",
+    "DK4_MES_B86_R0169": "My beloved Christina! You're awake!",
+    "DK4_MES_B86_R0172": "Nearly drowned...? What about the boy?",
+    "DK4_MES_B86_R0176": "Yes. The lady thanked us.",
+    "DK4_MES_B86_R0180": "Someone saved us. Where is our lifesaver?",
+    "DK4_MES_B86_R0184": "Well... right here...",
+    "DK4_MES_B86_R0187": "Hm?",
+    "DK4_MES_B86_R0191": "Well... it was me...",
+    "DK4_MES_B86_R0194": "But you fear water...",
+    "DK4_MES_B86_R0198": "Yes... But saving Christina cleared my mind...",
+    "DK4_MES_B86_R0202": "Somehow, swimming happened. Hard to believe.",
+    "DK4_MES_B86_R0205": "You? Hard to believe...",
+    "DK4_MES_B86_R0208": "Oh, the inn... must go.",
+    "DK4_MES_B86_R0212": "Are you all right?",
+    "DK4_MES_B86_R0216": "Yes. Can walk alone.",
+    "DK4_MES_B86_R0220": "Then, goodbye...",
+    "DK4_MES_B86_R0225": "The lady!",
+    "DK4_MES_B86_R0229": "You okay?",
+    "DK4_MES_B86_R0233": "Yes, thanks! Where's the man who saved us?",
+    "DK4_MES_B86_R0237": "Thank you so much. Where is the man with you?",
+    "DK4_MES_B86_R0240": "He truly jumped into the sea?",
+    "DK4_MES_B86_R0244": "Yes, shouting as he jumped.",
+    "DK4_MES_B86_R0247": "He must love you deeply.",
+    "DK4_MES_B86_R0250": "...So real...",
+    "DK4_MES_B86_R0254": "Please accept this reward.",
+    "DK4_MES_B86_R0259": "Oh... thank you.",
+    "DK4_MES_B86_R0263": "We'll go now. Thank you again.",
+    "DK4_MES_B86_R0266": "Bye, lady!",
+    "DK4_MES_B86_R0272": "That's it.",
+    "DK4_MES_B86_R0276": "That Miwoll did it? Not bad.",
+    "DK4_MES_B86_R0279": "Still hard to believe.",
+    "DK4_MES_B86_R0283": "Hm? Speak of him...",
+    "DK4_MES_B86_R0287": "Miwoll...",
+    "DK4_MES_B86_R0291": "Christina...",
+    "DK4_MES_B86_R0295": "Thank you. You were brave, Miwoll.",
+    "DK4_MES_B86_R0299": "Whaaat?!",
+    "DK4_MES_B86_R0303": "Truly?! Miwoll was brave?! So happy!",
+    "DK4_MES_B86_R0307": "You're misunderstanding!",
+    "DK4_MES_B86_R0311": "Anything is fine! So happy! Christina!",
+    "DK4_MES_B86_R0315": "Enough noise! Let's sail! He's annoying!",
+    "DK4_MES_B86_R0319": "Waiting forever!",
+    "DK4_MES_B86_R0322": "Heh. A good match.",
+}
+
+SPEAKERS = {
+    "01": "Hodram Bergstrom", "06": "Christina's grandfather", "07": "Christina",
+    "0E": "Emilio Ferrog", "10": "Gerhard Adelknauts", "12": "Charles",
+    "4F": "Miwoll Gentz", "52": "Bullfight spectator", "5F": "Bullfight spectator",
+    "68": "Bullfight spectator", "71": "Bullfight spectator", "93": "Bullfight spectator",
+    "A2": "Boy", "A7": "Boy's mother", "FE": "Scene voice",
+}
+EXTENDED_STATES = {0x10, 0x12, 0x4F, 0x52, 0x5F, 0x68, 0x71, 0x93, 0xA2, 0xA7, 0xFE}
+CONTEXT = {
+    84: "Hodram recruits the matador Emilio after a bullfight.",
+    85: "Christina joins Hodram after rejecting her arranged fiance Miwoll.",
+    86: "Miwoll overcomes his fear of water to rescue Christina and a child in London.",
+}
+
+
+def main() -> None:
+    with SOURCE.open(encoding="utf-8-sig", newline="") as stream:
+        source_rows = {row["id"]: row for row in csv.DictReader(stream) if any(row["id"].startswith(f"DK4_MES_B{block}_") for block in BLOCKS)}
+    if set(LINES) | set(EXCLUDED) != set(source_rows) or set(LINES) & set(EXCLUDED):
+        raise SystemExit("Hodram V4a inventory mismatch")
+    records = []
+    block_counts: dict[str, int] = {}
+    for row_id, english in LINES.items():
+        row = source_rows[row_id]
+        first = bytes.fromhex(row["source_hex"])[0]
+        state = f"{first:02X}" if ((0x01 <= first <= 0x0F and first != 0x0A) or first in EXTENDED_STATES) else ""
+        block = int(row_id.split("_B", 1)[1].split("_", 1)[0])
+        block_counts[str(block)] = block_counts.get(str(block), 0) + 1
+        records.append({
+            "id": row_id, "english": f"{{SPEAKER:{state}}}{english}{{PAD}}" if state else f"{english}{{PAD}}",
+            "speaker": SPEAKERS.get(state, "Choice or scene text"), "context": CONTEXT[block],
+            "source_meaning": english.replace("{MACRO:FI}", "Hodram").replace("{MACRO:FA}", "Bergstrom"),
+            "localization_note": "Faithful concise American English with measured fixed-record wrapping.",
+            "qa_waivers": ["weak-line-ending", "orphan-final-line"],
+            "review": {"source": True, "context": True, "localization": True, "naturalness": True, "formatting": True},
+        })
+    batch = {
+        "format": "dk4-ilnk-translation-batch-v1", "file_path": "/data/SC1.DK4", "source_file_sha256": SC1_SHA256,
+        "encoder": "dialogue-fixed-v1", "dialogue_profile": "hodram-story-live", "translation_policy": "natural-dialogue-v2",
+        "target_locale": "en-US", "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+        "scope": "Hodram recruitment and character events across SC1 blocks 84-86.",
+        "excluded_records": EXCLUDED,
+        "inventory": {"identified_records": len(source_rows), "translated_records": len(records), "blocks": block_counts}, "records": records,
+    }
+    OUTPUT.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote {OUTPUT}: {len(records)} records, {len(EXCLUDED)} controls preserved")
+
+
+if __name__ == "__main__":
+    main()

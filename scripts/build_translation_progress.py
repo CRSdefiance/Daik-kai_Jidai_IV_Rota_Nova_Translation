@@ -162,10 +162,21 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "record count alone cannot prevent missing first letters."
             ),
             "",
-            "## Lil route editorial progress",
+            "## Route translation progress",
             "",
             (
-                f"Lil's actual `/data/SC2.DK4` route has **{len(lil_drafts)}** "
+                "- **Raphael (`/data/SC0.DK4`):** the V93 route profile translates every "
+                "remaining visible Japanese record. Residual unmatched records in the table "
+                "include controls, nontext payloads, and records whose translated layers do "
+                "not use the ordinary one-record/one-ID accounting model."
+            ),
+            (
+                "- **Hodram (`/data/SC1.DK4`):** the V32 route profile covers the complete "
+                "story and all Japanese-bearing records identified by the route audit, while "
+                "preserving the one verified nontext event payload."
+            ),
+            (
+                f"- **Lil (`/data/SC2.DK4`):** V21 is integrated with **{len(lil_drafts)}** "
                 "source-reviewed natural-English draft records across "
                 + ", ".join(
                     f"B{block} ({count})" for block, count in sorted(lil_blocks.items())
@@ -173,17 +184,21 @@ def build_report(source_root: Path, translations: Path) -> str:
                 + "."
             ),
             (
-                "- B22 now has a complete 49-record fixed-allocation runtime candidate with "
-                "Lil/Kamil/Emilio/Fernando selectors and Lil-route name macros mapped. It "
-                "remains excluded from the accepted translated-record total until cold-boot QA."
+                "- Lil B22 has a complete 49-record source-locked runtime layer with the "
+                "Lil/Kamil/Emilio/Fernando selectors and route name macros mapped; it is "
+                "included in the unified route candidate."
             ),
             (
                 "- B23 covers the immediate Deck-post tutorial and has a seven-record control "
                 "probe; B27, B66, and B146 are retained under historical Hodram filenames after "
                 "their route ownership was corrected."
             ),
+            (
+                "- The unified profile combines Raphael V93, Hodram V32, Lil V21, the Amsterdam "
+                "opening, shared interface layers, and the global COMMON spacing repair."
+            ),
             "",
-            "## Accepted interface progress",
+            "## Integrated interface progress",
             "",
             (
                 "- **Extras and Online:** complete accepted English pass for both Extras "
@@ -204,6 +219,11 @@ def build_report(source_root: Path, translations: Path) -> str:
                 "restriction strings, ability names, the Y-button `Crew` label, all 71 "
                 "previously overlong activity responses, and the final inherited Deck "
                 "placeholder are included in the accepted V10 baseline."
+            ),
+            (
+                "- **Runtime text safety:** the unified candidate validates packed-entry "
+                "boundaries, renderer guards, literal-percent safety, dynamic F-initial crew "
+                "names, full-name separators, and COMMON automatic wrapping."
             ),
             (
                 "- **Canonical accepted baseline:** "
