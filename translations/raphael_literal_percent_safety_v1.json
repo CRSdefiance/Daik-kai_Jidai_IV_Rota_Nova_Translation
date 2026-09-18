@@ -1,0 +1,41 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "content_type": "fixed-text-format-safety-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "a774ff674b086a27be2344188de71e1c7a64e5d2ee5cf366f9d6b8bada48e85e",
+  "target_locale": "en-US",
+  "scope": "Remove unsafe literal percent tokens from translated fixed text",
+  "records": [
+    {
+      "id": "DK4_MES_B45_R0052",
+      "english": "Ceuta:{LB}{MACRO:FO} now owns a{LB}20 percent market share.{LB}Trade within that share.{PAD}",
+      "speaker": "Tutorial system",
+      "context": "Raphael's initial Ceuta market-share tutorial panel.",
+      "source_meaning": "The panel says Raphael's company owns a 20 percent share in Ceuta and can trade within that share.",
+      "localization_note": "Spells out percent so the runtime formatter cannot parse a bare percent token; preserves the two leading presentation bytes.",
+      "manual_break_reason": "This is a compact structured tutorial panel whose four source rows separate the city, company, share, and instruction.",
+      "qa_waivers": [
+        "manual-break",
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "raphael-story-live",
+  "translation_policy": "natural-dialogue-v2",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ]
+}

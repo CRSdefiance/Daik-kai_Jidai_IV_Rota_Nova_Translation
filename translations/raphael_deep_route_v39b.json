@@ -1,0 +1,48 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "a774ff674b086a27be2344188de71e1c7a64e5d2ee5cf366f9d6b8bada48e85e",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "raphael-story-deep-route-v39-plain-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Shift-JIS-safe final Raphael response from SC0 block 156.",
+  "excluded_records": {},
+  "inventory": {
+    "identified_records": 1,
+    "translated_records": 1,
+    "blocks": {
+      "156": 1
+    }
+  },
+  "records": [
+    {
+      "id": "DK4_MES_B156_R0080",
+      "english": "They come,{LB}we fight.{PAD}",
+      "speaker": "Raphael Castor",
+      "context": "Raphael accepts that if Maldonado and Escante target the company, the crew will have to fight.",
+      "source_meaning": "If they come, we will have no choice but to fight.",
+      "localization_note": "The source begins with Shift-JIS 97 88 for 来; 0x97 must not be consumed as the officer state used by other block-156 records.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Protects progressive ASCII pair phase.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

@@ -4,10 +4,10 @@ import re
 
 from .model import DialogueToken
 
-MACROS = (b"FI", b"FA", b"FO")
+MACROS = (b"FI", b"FA", b"FO", b"FU")
 MARKUP_RE = re.compile(
     r"\{(?:LB(?:@[0-9]+)?|ALIGN@[0-9]+|PAD|END|SPEAKER:[0-9A-Fa-f]{2}|"
-    r"MACRO:(?:FI|FA|FO|I)|HEX:[0-9A-Fa-f]{2})\}"
+    r"MACRO:(?:FI|FA|FO|FU|I)|HEX:[0-9A-Fa-f]{2})\}"
 )
 
 

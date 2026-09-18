@@ -1,0 +1,393 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5",
+  "target_locale": "en-US",
+  "scope": "Shipyard clipping, Guild wrapping, and all Mystery Hunt item names",
+  "fixed_text_policy": {
+    "require_c_string_termination": true,
+    "maximum_prose_line_characters": 31,
+    "forbid_visible_leading_space": true,
+    "linebreak_guard_bytes": 1
+  },
+  "records": [
+    {
+      "id": "DK4_YARD_RESET_BUTTON_V2",
+      "offset": 1160684,
+      "source_hex": "526573657400000000000000",
+      "english": "Undo",
+      "string_kind": "c-string",
+      "context": "Visible Y-button label in the remodel screen."
+    },
+    {
+      "id": "DK4_YARD_EQUIPMENT_TITLE_V2",
+      "offset": 1257812,
+      "source_hex": "45717569706D656E74000000",
+      "english": "Refit",
+      "string_kind": "c-string",
+      "context": "Narrow remodel-screen heading."
+    },
+    {
+      "id": "DK4_GUILD_TREASURE_PITCH_WRAP_V3",
+      "offset": 1326368,
+      "source_hex": "596F7527726520696E206C75636B210A20416E206F6C64206D6170206865726520706F696E747320746F2061206C6567656E646172792074726561737572652E000000000000000000000000000000000000000000000000",
+      "english": "You're in luck!\n This old map may lead\n to legendary treasure.",
+      "string_kind": "c-string",
+      "context": "Guild treasure pitch kept below the renderer's automatic-wrap boundary."
+    },
+    {
+      "id": "DK4_ASSIGN_FLAGSHIP_FIRST",
+      "offset": 1261352,
+      "source_hex": "8AF88ACD8F648E8B82C59085957682F08A8482E8939682C482DC82B582BD0000",
+      "english": "Assigned to flagship first.",
+      "string_kind": "c-string",
+      "context": "Fleet screen confirmation after flagship-priority sailor assignment."
+    },
+    {
+      "id": "DK4_ASSIGN_EVENLY",
+      "offset": 1261384,
+      "source_hex": "95BD8BCF934982C99085957682F08A8482E8939682C482DC82B582BD00000000",
+      "english": "Sailors assigned evenly.",
+      "string_kind": "c-string",
+      "context": "Fleet screen confirmation after even sailor assignment."
+    },
+    {
+      "id": "DK4_ASSIGN_MINIMUM",
+      "offset": 1261416,
+      "source_hex": "954B97768DC58FAC8CC082CC9085957682F08A8482E8939682C482DC82B582BD00000000",
+      "english": "Minimum sailors assigned.",
+      "string_kind": "c-string",
+      "context": "Fleet screen confirmation after minimum sailor assignment."
+    },
+    {
+      "id": "DK4_FULL_NAME_FORMAT_A",
+      "offset": 1344716,
+      "source_hex": "2573814525730000",
+      "english": "%s %s",
+      "string_kind": "c-string",
+      "context": "English full-name composition without the Shift-JIS interpunct."
+    },
+    {
+      "id": "DK4_FULL_NAME_FORMAT_B",
+      "offset": 1375164,
+      "source_hex": "2573814525730000",
+      "english": "%s %s",
+      "string_kind": "c-string",
+      "context": "Second live English full-name composition format."
+    },
+    {
+      "id": "DK4_FULL_NAME_SEPARATOR_A",
+      "offset": 1344732,
+      "source_hex": "81450000",
+      "english": " ",
+      "string_kind": "c-string",
+      "context": "ASCII separator used by the crew-recruitment full-name composer.",
+      "forbid_visible_leading_space": false
+    },
+    {
+      "id": "DK4_FULL_NAME_SEPARATOR_B",
+      "offset": 1344736,
+      "source_hex": "81450000",
+      "english": " ",
+      "string_kind": "c-string",
+      "context": "Second ASCII separator used by the crew-recruitment full-name composer.",
+      "forbid_visible_leading_space": false
+    },
+    {
+      "id": "DK4_ITEM_TYPE_WEAPON",
+      "offset": 1294960,
+      "source_hex": "95908AED00000000",
+      "english": "Weapon",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_ARMOR",
+      "offset": 1294968,
+      "source_hex": "96688BEF00000000",
+      "english": "Armor",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_MISC",
+      "offset": 1294976,
+      "source_hex": "82BB82CC91BC0000",
+      "english": "Misc",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_PRODUCT",
+      "offset": 1294984,
+      "source_hex": "8CB48E5995A80000",
+      "english": "Product",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_FIGURE",
+      "offset": 1294992,
+      "source_hex": "91448EF1919C0000",
+      "english": "Figure",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_GEAR",
+      "offset": 1295000,
+      "source_hex": "919594F595690000",
+      "english": "Gear",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_MYSTERY",
+      "offset": 1295024,
+      "source_hex": "93E482CC8FAC95A800000000",
+      "english": "Mystery",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_PROOF",
+      "offset": 1295036,
+      "source_hex": "94658ED282CC8FD800000000",
+      "english": "Proof",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_RUIN_MAP",
+      "offset": 1295048,
+      "source_hex": "88E290D5926E907D00000000",
+      "english": "Ruin Map",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_OLD_MAP",
+      "offset": 1295060,
+      "source_hex": "8CC382CC926E907D00000000",
+      "english": "Old Map",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_SEA_GEAR",
+      "offset": 1295072,
+      "source_hex": "8D718A439770956900000000",
+      "english": "Sea Gear",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_ITEM_TYPE_PROOF_MAP",
+      "offset": 1295084,
+      "source_hex": "8FD882CC926E907D00000000",
+      "english": "Proof Map",
+      "string_kind": "c-string",
+      "context": "Item-detail type label used by Guild and inventory screens."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_00",
+      "offset": 1490304,
+      "source_hex": "8EF488F38C950000",
+      "english": "Cursed",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_01",
+      "offset": 1490312,
+      "source_hex": "8CC382CC926E907D00000000",
+      "english": "Ancient Map",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_02",
+      "offset": 1490324,
+      "source_hex": "96828F9782CC919C00000000",
+      "english": "Witch Idol",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_03",
+      "offset": 1490336,
+      "source_hex": "97B382CC8363836D00000000",
+      "english": "Dragon Horn",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_04",
+      "offset": 1490348,
+      "source_hex": "8E828E7182CC93B500000000",
+      "english": "Lion's Eye",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_05",
+      "offset": 1490360,
+      "source_hex": "834B83578383838B834F0000",
+      "english": "Gajarg",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_06",
+      "offset": 1490372,
+      "source_hex": "257382CC926E907D82530000",
+      "english": "%s Map 4",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_07",
+      "offset": 1490384,
+      "source_hex": "8357834B836C837D838B0000",
+      "english": "Jiganemaru",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_08",
+      "offset": 1490396,
+      "source_hex": "257382CC926E907D82510000",
+      "english": "%s Map 2",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_09",
+      "offset": 1490408,
+      "source_hex": "8CC391E382CC925A8C950000",
+      "english": "Old Dagger",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_10",
+      "offset": 1490420,
+      "source_hex": "257382CC926E907D82520000",
+      "english": "%s Map 3",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_11",
+      "offset": 1490432,
+      "source_hex": "257382CC926E907D82500000",
+      "english": "%s Map 1",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_12",
+      "offset": 1490468,
+      "source_hex": "88CC91E582C889A482CC8F8200000000",
+      "english": "King's Shield",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_13",
+      "offset": 1490484,
+      "source_hex": "8376838A836783458346839300000000",
+      "english": "Prydwen",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_14",
+      "offset": 1490500,
+      "source_hex": "8B9091E582C890D482A2918400000000",
+      "english": "Giant Red Spear",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_15",
+      "offset": 1490516,
+      "source_hex": "8ED696E482CC90CE89BC96CA00000000",
+      "english": "Serpent Mask",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_16",
+      "offset": 1490532,
+      "source_hex": "898A82CC904682CC95F390CE00000000",
+      "english": "Flame Gem",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_17",
+      "offset": 1490548,
+      "source_hex": "904782EA82B882CC91BE938100000000",
+      "english": "Untouched Blade",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_18",
+      "offset": 1490564,
+      "source_hex": "82CB82B682EA82BD8363836D00000000",
+      "english": "Twisted Horn",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_19",
+      "offset": 1490596,
+      "source_hex": "95738B4396A182C890CE82CC96CA0000",
+      "english": "Eerie Mask",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_20",
+      "offset": 1490612,
+      "source_hex": "95F390CE82F0904882A495F390CE0000",
+      "english": "Gem-Eating Gem",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_21",
+      "offset": 1490628,
+      "source_hex": "96A3986682C6946A96C582CC919C0000",
+      "english": "Ruinous Siren",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_22",
+      "offset": 1490660,
+      "source_hex": "909F82F182BE8D67904682CC90858FBB00000000",
+      "english": "Clear Rose Quartz",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_23",
+      "offset": 1490740,
+      "source_hex": "8358835E815B838D815B8359834E8348815B836300000000",
+      "english": "Star Rose Quartz",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    },
+    {
+      "id": "DK4_MYSTERY_ITEM_24",
+      "offset": 1490764,
+      "source_hex": "838B8360838B834383938374834083938367838000000000",
+      "english": "Rutilated Phantom",
+      "string_kind": "c-string",
+      "context": "Mystery Hunt item, ancient-map type, or generated map-title component."
+    }
+  ]
+}

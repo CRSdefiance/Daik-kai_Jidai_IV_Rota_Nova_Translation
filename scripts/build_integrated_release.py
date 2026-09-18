@@ -170,9 +170,187 @@ def validate_ascii_guard_policy(path: Path, header: dict[str, object]) -> None:
                         "two-byte continuation guard"
                     )
             for line in segment.split(b"\n"):
-                if len(line.rstrip(b" \0")) > 31:
+                used = line.rstrip(b" \0")
+                visible_limit = record.get("text_box_max_chars")
+                if visible_limit is None:
+                    if len(used) > 31:
+                        raise ValueError(
+                            f"{path}: {row_id} guarded line exceeds 31 bytes"
+                        )
+                elif len(used[2:]) > int(visible_limit):
                     raise ValueError(
-                        f"{path}: {row_id} guarded line exceeds 31 bytes"
+                        f"{path}: {row_id} guarded line exceeds "
+                        f"{int(visible_limit)} visible bytes"
+                    )
+
+
+def validate_fixed_text_layout_policy(path: Path, header: dict[str, object]) -> None:
+    """Validate renderer-specific termination, indentation, and line limits.
+
+    Fixed allocations are not interchangeable: some renderers consume a guard
+    byte, while others display it. Records therefore declare the behavior that
+    was verified for their actual screen instead of relying on a global leading
+    space convention.
+    """
+
+    records = header.get("records")
+    if not isinstance(records, list):
+        return
+    policy = header.get("fixed_text_policy", {})
+    if policy is None:
+        policy = {}
+    if not isinstance(policy, dict):
+        raise TypeError(f"{path}: fixed_text_policy must be an object")
+    require_c_string = bool(policy.get("require_c_string_termination"))
+    default_max = policy.get("maximum_prose_line_characters")
+    default_no_indent = bool(policy.get("forbid_visible_leading_space"))
+    default_line_guard = int(policy.get("linebreak_guard_bytes", 0))
+
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        row_id = str(record.get("id", ""))
+        english = record.get("english")
+        entries = record.get("display_entries")
+        if entries is None:
+            display_entries = [english] if isinstance(english, str) else []
+        elif isinstance(entries, list) and all(isinstance(value, str) for value in entries):
+            display_entries = entries
+        else:
+            raise ValueError(f"{path}: {row_id} display_entries must be strings")
+
+        if require_c_string and record.get("string_kind") == "c-string":
+            if not isinstance(english, str):
+                raise ValueError(f"{path}: {row_id} C string requires English text")
+            allocation = len(bytes.fromhex(str(record.get("source_hex", ""))))
+            if len(english.encode(str(record.get("encoding", "ascii")))) >= allocation:
+                raise ValueError(
+                    f"{path}: {row_id} leaves no room for a C-string terminator"
+                )
+
+        max_chars = record.get("text_box_max_chars", default_max)
+        line_guard = int(record.get("linebreak_guard_bytes", default_line_guard))
+        if line_guard < 0:
+            raise ValueError(f"{path}: {row_id} has a negative line-break guard")
+        if max_chars is not None:
+            width = int(max_chars)
+            for entry in display_entries:
+                for index, line in enumerate(entry.split("\n")):
+                    visible = line[line_guard:] if index and line_guard else line
+                    if index and line_guard and not line.startswith(" " * line_guard):
+                        raise ValueError(
+                            f"{path}: {row_id} line {index + 1} lacks its "
+                            f"{line_guard}-byte renderer guard"
+                        )
+                    if len(visible) > width:
+                        raise ValueError(
+                            f"{path}: {row_id} line exceeds {width} characters: {visible!r}"
+                        )
+
+        no_indent = bool(record.get("forbid_visible_leading_space", default_no_indent))
+        if no_indent:
+            for entry in display_entries:
+                for index, line in enumerate(entry.split("\n")):
+                    visible = line[line_guard:] if index and line_guard else line
+                    if visible.startswith((" ", "\t")):
+                        raise ValueError(
+                            f"{path}: {row_id} contains a visible leading indent"
+                        )
+
+
+def validate_fixed_allocation_policy(path: Path, header: dict[str, object]) -> None:
+    """Validate screen-specific guards and translated byte ranges.
+
+    This policy is intentionally opt-in.  It gives new fixed-allocation work a
+    stronger contract without pretending that every historical COMMON batch
+    used the same renderer.  Each translated range must be English-only, every
+    independently addressed entry must retain its declared consumed guard, and
+    every manual line break must carry the renderer's continuation guard.
+    """
+
+    policy = header.get("fixed_allocation_policy")
+    if policy is None:
+        return
+    if policy != "screen-entry-layout-v1":
+        raise ValueError(f"{path}: unsupported fixed_allocation_policy {policy!r}")
+    records = header.get("records")
+    if not isinstance(records, list) or not records:
+        raise ValueError(f"{path}: fixed-allocation batch has no records")
+
+    for record in records:
+        if not isinstance(record, dict):
+            raise TypeError(f"{path}: fixed-allocation record must be an object")
+        row_id = str(record.get("id", ""))
+        raw_hex = record.get("replacement_hex")
+        if not isinstance(raw_hex, str) or not raw_hex:
+            raise ValueError(f"{path}: {row_id} requires replacement_hex")
+        replacement = bytes.fromhex(raw_hex)
+        ranges = record.get("translated_ranges")
+        if not (
+            isinstance(ranges, list)
+            and ranges
+            and all(
+                isinstance(pair, list)
+                and len(pair) == 2
+                and all(isinstance(value, int) for value in pair)
+                for pair in ranges
+            )
+        ):
+            raise ValueError(f"{path}: {row_id} requires translated_ranges")
+        for start, end in ranges:
+            if not 0 <= start < end <= len(replacement):
+                raise ValueError(f"{path}: {row_id} has an invalid translated range")
+            translated = replacement[start:end]
+            try:
+                text = translated.decode("ascii")
+            except UnicodeDecodeError as exc:
+                raise ValueError(
+                    f"{path}: {row_id} translated range contains non-ASCII text"
+                ) from exc
+            if any("\u3040" <= char <= "\u30ff" or "\u3400" <= char <= "\u9fff" for char in text):
+                raise ValueError(f"{path}: {row_id} translated range mixes Japanese text")
+
+        starts = record.get("entry_offsets")
+        if not (
+            isinstance(starts, list)
+            and starts
+            and all(isinstance(value, int) for value in starts)
+            and starts == sorted(set(starts))
+        ):
+            raise ValueError(f"{path}: {row_id} requires sorted entry_offsets")
+        declared_ends = record.get("entry_ends")
+        if declared_ends is not None and not (
+            isinstance(declared_ends, list)
+            and len(declared_ends) == len(starts)
+            and all(isinstance(value, int) for value in declared_ends)
+        ):
+            raise ValueError(f"{path}: {row_id} has invalid entry_ends")
+        entry_guard = int(record.get("entry_guard_bytes", 0))
+        line_guard = int(record.get("linebreak_guard_bytes", 0))
+        width = int(record.get("text_box_max_chars", 40))
+        for position, start in enumerate(starts):
+            end = (
+                declared_ends[position]
+                if isinstance(declared_ends, list)
+                else starts[position + 1]
+                if position + 1 < len(starts)
+                else len(replacement)
+            )
+            if not start < end <= len(replacement):
+                raise ValueError(f"{path}: {row_id} has an invalid entry end")
+            segment = replacement[start:end]
+            if not segment.startswith(b" " * entry_guard):
+                raise ValueError(f"{path}: {row_id} entry at {start} lacks its guard")
+            for line_index, line in enumerate(segment.rstrip(b" \0\n").split(b"\n")):
+                guard = entry_guard if line_index == 0 else line_guard
+                if not line.startswith(b" " * guard):
+                    raise ValueError(
+                        f"{path}: {row_id} line {line_index + 1} lacks its guard"
+                    )
+                visible = line[guard:]
+                if len(visible) > width:
+                    raise ValueError(
+                        f"{path}: {row_id} line exceeds {width} visible characters"
                     )
 
 
@@ -1097,6 +1275,11 @@ def main() -> None:
         release_batches = resolve_release_batches(args.profile, args.batch, release_stack)
     except ValueError as error:
         raise SystemExit(str(error)) from None
+    profile_config = profiles.get(args.profile, {}) if args.profile else {}
+    require_screen_layout = bool(
+        isinstance(profile_config, dict)
+        and profile_config.get("require_screen_entry_layout")
+    )
 
     baseline = NdsImage.open(args.base)
     candidate = NdsImage.open(args.base)
@@ -1107,6 +1290,17 @@ def main() -> None:
             validate_playable_dialogue_header(batch_path, header)
         except ValueError as error:
             raise SystemExit(str(error)) from None
+        if require_screen_layout and header.get("format") == "dk4-ilnk-translation-batch-v1":
+            records = header.get("records", [])
+            has_raw_fixed_text = isinstance(records, list) and any(
+                isinstance(record, dict) and bool(record.get("replacement_hex"))
+                for record in records
+            )
+            if has_raw_fixed_text and header.get("fixed_allocation_policy") != "screen-entry-layout-v1":
+                raise SystemExit(
+                    f"{batch_path}: profile requires screen-entry-layout-v1 for "
+                    "every raw fixed-allocation COMMON batch"
+                )
         file_path = str(header.get("file_path", ""))
         if not file_path.startswith("/"):
             raise SystemExit(f"{batch_path}: invalid internal file path")
@@ -1118,7 +1312,10 @@ def main() -> None:
         source = candidate.read_file(file_path)
         for batch_path in file_batch_paths:
             try:
-                validate_ascii_guard_policy(batch_path, load_batch_header(batch_path))
+                batch_header = load_batch_header(batch_path)
+                validate_ascii_guard_policy(batch_path, batch_header)
+                validate_fixed_text_layout_policy(batch_path, batch_header)
+                validate_fixed_allocation_policy(batch_path, batch_header)
             except (TypeError, ValueError) as error:
                 raise SystemExit(str(error)) from None
         formats = {str(load_batch_header(path).get("format", "")) for path in file_batch_paths}
@@ -1452,6 +1649,7 @@ def main() -> None:
             "natural_dialogue_qa_enforced": True,
             "playable_story_pair_phase_enforced": True,
             "fixed_text_two_byte_guards_enforced": True,
+            "screen_entry_layout_enforced": True,
             "no_new_placeholder_fallbacks": True,
             "saved_rom_roundtrip": True,
             "mapped_ilnk_relocation_enforced": bool(relocation_checks)
