@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v78"]["batches"]);b.append("translations/maria_deep_route_v79.json");p["profiles"]["maria-deep-route-v79"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V78 with all 30 records across SC3 blocks 81-86: Muramasa viewing, church and Proof leads, Santiago Cathedral, cross prayer, and temple-debate opening."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v79: {len(b)} batches")

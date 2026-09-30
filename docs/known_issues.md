@@ -1,5 +1,130 @@
 # Known issues
 
+## Packaged combined V89 candidate
+
+All routes are packaged in `releases/all_routes_unified_v89/translation.xdelta`.
+Four older Lil literal percentages in B128R0268/R0311/R0317 and B164R0140 were
+rewritten to avoid native printf commands. Their source meanings, controls,
+macros, automatic wrapping and leading characters were reviewed and audited.
+The package has its own current checksums and verification reports; the earlier
+Lil V123 checkpoint checksum describes the historical pre-repair candidate.
+Runtime cold-boot testing and release acceptance remain pending.
+
+## Complete Lil translation, experimental combined V123 candidate
+
+Lil translation coverage is complete: 6,539 translated, zero remaining and
+69 native controls preserved. Final 77 scene texts and B22 control classification
+pass eight-sheet review, zero-blocker audit, 77 Lil tests, Ruff, baseline and
+exact saved-ROM verification. All four routes are combined. Runtime gameplay
+and release acceptance remain pending; this does not claim emulator verification.
+See `docs/all_routes_unified_lil_v123_checkpoint.md`.
+
+## Experimental four-route Lil V121 candidate
+
+B324 adds 59 verified jungle records; three packed events unchanged.
+Six sheets, QA, 75 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 6,408/6,608; 137 remaining; 63 excluded. Continue B325. Runtime pending.
+See `docs/all_routes_unified_lil_v121_checkpoint.md`.
+
+## Experimental four-route Lil V120 candidate
+
+B323 adds 66 verified fog records; four packed events unchanged.
+Seven sheets, QA, 74 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 6,349/6,608; 199 remaining; 60 excluded. Continue B324. Runtime pending.
+See `docs/all_routes_unified_lil_v120_checkpoint.md`.
+
+## Experimental four-route Lil V119 candidate
+
+B317-B319 adds 35 verified fortune/trade texts after 94 scorpion texts in V118.
+Four sheets, QA, 73 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 6,283/6,608; 269 remaining; 56 excluded. Continue B323. Runtime pending.
+See `docs/all_routes_unified_lil_v119_checkpoint.md` and V118 checkpoint.
+
+## Experimental four-route Lil V117 candidate
+
+B314-B315 adds 38 verified forest/map records; two packed events unchanged.
+Four sheets, QA, 71 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 6,154/6,608; 398 remaining; 56 excluded. Continue B316. Runtime pending.
+See `docs/all_routes_unified_lil_v117_checkpoint.md`.
+
+## Experimental four-route Lil V116 candidate
+
+B312-B313 adds 84 verified wolf/gate records; two packed events unchanged.
+Nine sheets, QA, 70 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 6,116/6,608; 438 remaining; 54 excluded. Continue B314. Runtime pending.
+See `docs/all_routes_unified_lil_v116_checkpoint.md`.
+
+## Experimental four-route Lil V115 candidate
+
+B307-B311 plus B306R0081 adds 44 verified temple/Proof records. Five sheets,
+QA, 69 Lil tests, Ruff, baseline and saved-ROM checks pass. Coverage
+6,032/6,608; 524 remaining; 52 excluded. Continue B312. Runtime pending.
+See `docs/all_routes_unified_lil_v115_checkpoint.md`.
+
+## Experimental four-route Lil V114 candidate
+
+B306 adds 39 river records and two unchanged packed events. Four sheets,
+QA, 68 Lil tests, Ruff, baseline and saved-ROM checks pass. Bare Japanese
+97AC variant follows in V115. Coverage 5,988/6,608; 568 remaining; 52 excluded.
+See `docs/all_routes_unified_lil_v114_checkpoint.md`. Runtime pending.
+
+## Experimental four-route Lil V113 candidate
+
+B301-B305 adds 85 verified desert and Basra quest records. Nine sheets,
+QA, 67 Lil tests, Ruff, baseline and saved-ROM checks pass. Coverage
+5,949/6,608; 609 remaining; 50 excluded. Continue B306. Runtime pending.
+See `docs/all_routes_unified_lil_v113_checkpoint.md`.
+
+## Experimental four-route Lil V112 candidate
+
+B299-B300 adds 103 verified snake/bog records; one packed event unchanged.
+11 sheets, QA, 66 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 5,864/6,608; 694 remaining; 50 excluded. Continue B301. Runtime pending.
+See `docs/all_routes_unified_lil_v112_checkpoint.md`.
+
+## Experimental four-route Lil V111 candidate
+
+B295-B298 adds 23 verified wristband quest records. Three sheets, QA,
+65 Lil tests, Ruff, baseline and saved-ROM checks pass. Coverage 5,761/6,608;
+798 remaining; 49 excluded. Continue B299. Runtime pending.
+See `docs/all_routes_unified_lil_v111_checkpoint.md`.
+
+## Experimental four-route Lil V110 candidate
+
+B293-B294 adds 98 verified fog/cliff records; two packed events remain
+unchanged. Ten sheets, QA, 64 Lil tests, Ruff, baseline and saved-ROM checks
+pass. Coverage 5,738/6,608; 821 remaining; 49 excluded. Continue B295.
+Runtime pending. See `docs/all_routes_unified_lil_v110_checkpoint.md`.
+
+## Experimental four-route Lil V109 candidate
+
+B289-B292 adds 51 verified Angkor riddle records; two packed events remain
+unchanged. Six sheets, QA, 63 Lil tests, Ruff, baseline and saved-ROM checks
+pass. Coverage 5,640/6,608; 921 remaining; 47 excluded. Continue B293.
+Runtime pending. See `docs/all_routes_unified_lil_v109_checkpoint.md`.
+
+## Experimental four-route Lil V108 candidate
+
+B288 adds 82 verified cave encounter records. Nine sheets, QA, 62 Lil tests,
+Ruff, baseline and saved-ROM checks pass. Coverage 5,589/6,608;
+974 remaining; 45 excluded. Continue B289. Runtime pending.
+See `docs/all_routes_unified_lil_v108_checkpoint.md`.
+
+## Experimental four-route Lil V107 candidate
+
+B283-B287 adds 104 verified natural-English forest and wine-delivery records;
+one corroborated packed event remains unchanged. All 11 sheets, QA, 61 Lil
+tests, Ruff, baseline and saved-ROM checks pass. Coverage 5,507/6,608;
+1,056 remaining; 45 excluded. Continue B288. Runtime pending.
+See `docs/all_routes_unified_lil_v107_checkpoint.md`.
+
+## Experimental four-route Lil V106 candidate
+
+B255-B282 adds 154 verified natural-English guild quest records. All 16
+sheets, QA, 60 Lil tests, Ruff, baseline and saved-ROM checks pass.
+Coverage 5,403/6,608; 1,161 remaining; 44 excluded. Continue B283.
+See `docs/all_routes_unified_lil_v106_checkpoint.md`. Runtime pending.
+
 ## Accepted cumulative Lil/Guild/Hodram V1 baseline
 
 The user explicitly promoted `out/lil_hodram_unified_v1_candidate.nds` on
@@ -933,3 +1058,1305 @@ The existing 119-entry ship-model catalog was re-audited and remains unchanged.
 accepted Ships-screen plaque geometry and runtime stat formatters also remain
 unchanged. All 326 automated tests pass, but the candidate is experimental until
 the complete Shipyard flow is reviewed from a cold boot.
+
+## Experimental Lil Sphinx V26 candidate
+
+`out/lil_deep_route_v26_candidate.nds`, SHA-256
+`985824b0935da6baf51925dc522a993ccd8505665fb6fc8ee07bbf25925ee4f1`,
+extends Lil V25 with all 36 source-reviewed B105 Sphinx-riddle records. It was built
+through `lil-deep-route-v26` on the accepted integrated base (SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`).
+The exact 36 B105 and preceding 42 V25 encoded records were found in the saved
+candidate. The exhaustive V26 text audit has zero blockers, all integrated manifest
+checks passed, eight targeted Lil tests passed, and the baseline invariant check
+passed for the five declared internal paths.
+
+The `CF` party-reaction byte has source-identical cross-route evidence; `82`, `8E`,
+and `92` begin ordinary Japanese choice text. Static checks retain the `CF` state,
+retain the first English glyph of each choice, and use guarded, pair-phase-safe
+wrapping. The Sphinx's presentation,
+choice branches, first glyphs, and scene transition still need cold-boot review.
+This candidate remains experimental and is not the canonical parent.
+
+## Experimental Lil cult and lamp V27 candidate
+
+`out/lil_deep_route_v27_candidate.nds`, SHA-256
+`24e3499c164978a09e52646c89079c2b136493cbbd8ea632480a03afc68a5570`,
+extends Lil V26 with all 45 B106 cult-confrontation records and all 10 B108
+hidden-believer lamp records. It uses the accepted integrated base (SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`)
+and the registered `lil-deep-route-v27` profile. The exhaustive 55-record text
+audit has zero blockers. Ten targeted Lil tests, all integrated manifest checks,
+the baseline invariant check, and exact-byte checks of the 55 V27 and 36 V26
+records in the saved candidate passed.
+
+`B1` and `B2` mark the cult leader and cultists, supported by source-identical
+SC0/SC1 lines. `A0` marks the village speaker in B106 and the hidden believer
+in source-identical B108 lines. B106 records beginning `89 BD` begin the ordinary
+Japanese glyph 何; their English starts with its first character and has no
+speaker selector. Portraits, nameplates, first glyphs, and transitions await
+cold-boot review. V27 remains experimental and must not replace the canonical
+base without explicit user acceptance.
+
+## Experimental Lil temple-clue V28 candidate
+
+`out/lil_deep_route_v28_candidate.nds`, SHA-256
+`0ad8a8bb27792eef81157720039fec8fe60361b5bbdb451653fe0479bd21b242`,
+extends Lil V27 with the 16 spoken B107 temple-clue records. It was built from
+the accepted integrated base (SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`)
+through the registered `lil-deep-route-v28` profile. The 16-record dialogue
+audit has zero blockers, 12 targeted Lil tests pass, every manifest check passes,
+and the baseline invariant check passes. Exact-byte inspection of the saved ROM
+finds all 16 V28 and 55 V27 records.
+
+B107 R0003 is an unmapped four-byte fragment, `10 46 94 80`, rather than a
+coherent spoken sentence. V28 explicitly excludes it, and exact-byte inspection
+confirms the candidate leaves it unchanged. The scene's temple voice, clue
+repetition, first glyphs, and transition need cold-boot review. V28 remains
+experimental and must not replace the canonical base without user acceptance.
+
+## Experimental Lil Colosseum V29 candidate
+
+`out/lil_deep_route_v29_candidate.nds`, SHA-256
+`d91f33cac03cac6f4a25584ea6eeb53c2f798c0014fa37a4e8c8d66ff36ed94b`,
+extends Lil V28 with 55 B109 doubling-bean riddle records and 18 B110 urn-puzzle
+records. It was built through registered profile `lil-deep-route-v29` from the
+accepted base `out/raphael_natural_v2_accepted_base.nds` (SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`).
+All 73 new records have zero blocking dialogue-audit issues and were visually
+reviewed in ten preview sheets. Fourteen targeted Lil tests and Ruff pass. The
+manifest's thirteen checks, accepted-base invariant, and exact-byte inspection
+of all 73 new and 16 V28 records pass. The candidate changes only
+`/COMMON/MESFILE.DK4`, `/__arm9__.bin`, `/_pxl/dividecrewinfo.pxl`,
+`/_pxl/personinfo.pxl`, and `/data/SC2.DK4` from the accepted base.
+
+B109 R0281 is an unmapped six-byte fragment, `96 47 21 48 51 A8`. It is explicitly
+excluded and verified unchanged. The six mapped presentation states, ordinary
+Shift-JIS text starts, and Lil's `FI` name macro are documented in
+`docs/lil_sc2_b109_b110_control_note.md`. The riddle's three answers, urn choices,
+portrait behavior, first glyphs, and transitions still need cold-boot review.
+V29 remains experimental and must not replace the canonical base without user
+acceptance.
+
+## Experimental Lil gold-temple V30 candidate
+
+`out/lil_deep_route_v30_candidate.nds`, SHA-256
+`223970c3aa01d0940582d7904a24a6409963d6610edcb04bc5c0ea9928b46002`,
+extends V29 with 33 B111 monk-scene spoken records. It was built through the
+registered `lil-deep-route-v30` profile from the accepted base
+`out/raphael_natural_v2_accepted_base.nds` (SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`).
+All 33 dialogue records have zero blocking audit issues and were visually
+reviewed in five preview sheets. Sixteen Lil regression tests and targeted
+Ruff pass. The manifest's thirteen checks, accepted-base invariant, and
+exact-byte inspection of all 33 V30 and 73 V29 records pass. Only
+`/COMMON/MESFILE.DK4`, `/__arm9__.bin`, `/_pxl/dividecrewinfo.pxl`,
+`/_pxl/personinfo.pxl`, and `/data/SC2.DK4` differ from the accepted base.
+
+B111 R0062 and R0138 are identical three-byte monk-state ellipses,
+`89 81 63`. They remain unchanged as explicit exclusions. The B111 monk's
+leading `89` is a presentation state, while B109 `89` starts ordinary text;
+the per-batch profile mapping is documented in
+`docs/lil_sc2_b111_control_note.md`. The monk's portrait, nameplate, first
+glyphs, and transition need cold-boot review. V30 remains experimental and
+must not replace the canonical base without user acceptance.
+
+## Experimental Lil sandbar-rescue V31 candidate
+
+`out/lil_deep_route_v31_candidate.nds`, SHA-256
+`dee2ae42f9d262671326a85b1d8f71405bdf01033f2c203a7f5c6e0cc9001a25`,
+extends V30 with all 30 B112 spoken rescue records. It was built through the
+registered `lil-deep-route-v31` profile from the accepted base
+`out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+The dialogue audit has zero blockers; all 30 previews were reviewed. Eighteen
+targeted Lil tests and Ruff pass, as do all thirteen manifest checks, the
+accepted-base invariant, and saved-ROM exact-byte checks for the 30 V31 and
+33 V30 records. Only `/COMMON/MESFILE.DK4`, `/__arm9__.bin`,
+`/_pxl/dividecrewinfo.pxl`, `/_pxl/personinfo.pxl`, and `/data/SC2.DK4` differ
+from the accepted base.
+
+B112 R0010 is the seven-byte non-prose fragment `46 8F 80 80 43 1E 63` and is
+verified unchanged. The child, grandfather, lookout, rescuer states and ordinary
+`81/82/8E/94` text starts are documented in `docs/lil_sc2_b112_control_note.md`.
+The rescue, gift event, short companion variants, portraits, first glyphs, and
+scene transition still need a cold-boot sample. V31 remains experimental and
+must not replace the canonical base without explicit user acceptance.
+
+## Experimental Lil jade-and-cacao V32 candidate
+
+`out/lil_deep_route_v32_candidate.nds`, SHA-256
+`f8cb242cb0d5038b4a4e8a8fd016f06e2e1da540764fd0314b46002a2fa74449`,
+extends V31 with six B113 jade-discovery and thirteen B114 cacao-follow-up
+records. The registered `lil-deep-route-v32` profile builds from accepted base
+`out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+The 19-record audit has zero blockers, and every preview was reviewed. Twenty
+targeted Lil tests and Ruff pass, all thirteen manifest checks pass, and the
+accepted-base invariant and saved-ROM checks find the exact 19 V32 and 30 V31
+records. Only `/COMMON/MESFILE.DK4`, `/__arm9__.bin`,
+`/_pxl/dividecrewinfo.pxl`, `/_pxl/personinfo.pxl`, and `/data/SC2.DK4` differ
+from the accepted base.
+
+B113 R0004 (`60 30 46 93 80 3E 63`) and R0025 (`30 48 8B A8`) are verified
+unchanged. The townsman's printable `68` state and ordinary companion text
+starts are documented in `docs/lil_sc2_b113_b114_control_note.md`. The jade
+event, scholar portrait, cacao branch, town nameplate, first glyphs, gate unlock,
+and transitions still need a cold-boot sample. V32 remains experimental and
+must not replace the canonical base without user acceptance.
+
+## Experimental Lil tablet-and-recruitment V33 candidate
+
+`out/lil_deep_route_v33_candidate.nds`, SHA-256
+`c11b4df0f5b35de8f445d9a440b313e525760fd3efa7a957b7f8bd02659e15ff`,
+extends V32 with all 37 B115 records. The registered `lil-deep-route-v33`
+profile builds from `out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+All 114 accepted layers are baked into that base; the cumulative profile adds
+43 experimental batches. The audit has zero blockers, all 37 previews were
+reviewed, 22 targeted Lil tests and Ruff pass, and all 13 manifest checks pass.
+Saved-ROM checks verify 37 V33 and 19 V32 exact records and two unchanged B113
+exclusions. The baseline invariant passes with only the declared cumulative
+paths `/COMMON/MESFILE.DK4`, `/__arm9__.bin`, `/_pxl/dividecrewinfo.pxl`,
+`/_pxl/personinfo.pxl`, and `/data/SC2.DK4` changed.
+
+B115 includes a shared Maria branch: source-correlated `03` is Maria, not Lil;
+`04` is Janus and `B4` is the raider. R0089 starts with staging LF, not speaker
+state `0A`; English starts directly with `B`. R0078 preserves FO. See
+`docs/lil_sc2_b115_control_note.md` and `docs/lil_v33_checkpoint.md`.
+Runtime portraits, macro expansion, first/continuation glyphs, recruitment,
+reward and transitions still need cold-boot review. V33 remains experimental.
+Coverage is 2,492/6,608 translated, 4,092 remaining and 24 excluded.
+
+## Experimental Lil India-tip, figurehead, and tribal-reward V34 candidate
+
+`out/lil_deep_route_v34_candidate.nds`, SHA-256
+`a84f93aa47163fb7fc3840c7b23ef5007c0f76f2a11253be744e6976b0f33680`,
+extends V33 with 30 B116-B118 records. Registered profile `lil-deep-route-v34`
+builds from `out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+All 114 accepted layers are baked into the base; 44 experimental batches apply.
+Zero audit blockers remain, every preview was reviewed, 24 Lil regression tests
+and Ruff pass, all 13 manifest checks pass, and the baseline invariant passes.
+Saved-ROM checks verify 30 exact V34 and 37 exact V33 records plus both new
+unchanged exclusions. Only `/COMMON/MESFILE.DK4`, `/__arm9__.bin`,
+`/_pxl/dividecrewinfo.pxl`, `/_pxl/personinfo.pxl`, and `/data/SC2.DK4` change.
+
+C6/D1/DC/B3 are source-correlated presentation states; 82/91 start ordinary
+text. B117 R0004 `60344693803F63344872A8` and B118 R0004 `60944695803B63`
+remain non-prose exclusions. The India tip uses the subcontinent to avoid the
+unsafe literal uppercase I byte while preserving the location reference.
+See `docs/lil_sc2_b116_b118_control_note.md` and `docs/lil_v34_checkpoint.md`.
+Gift trigger, map gate, figurehead acquisition, knife ownership, 24,000-gold
+reward, portraits, first/continuation letters and transitions require cold-boot
+review. V34 remains experimental. Coverage: 2,522/6,608 translated; 4,060
+remaining; 26 excluded. Continue at B120, then B121.
+
+## Experimental Lil sailing-tutorial V35 candidate
+
+`out/lil_deep_route_v35_candidate.nds`, SHA-256
+`6ca22311b6f1f02d49431ceebe8cfa1fd9cd8cf33eb04dcf0104ae3f1f41971a`,
+completes B120 with 28 new records plus V21's inherited refusal. Registered
+profile `lil-deep-route-v35` builds from the accepted base
+`out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+All 114 accepted layers are baked into that base; 45 experimental batches apply.
+The audit has zero blockers, all previews were reviewed, 26 targeted tests and
+Ruff pass, and all 13 manifest checks pass. Exact saved-ROM checks cover all
+29 cumulative B120 records and 30 V34 records with both exclusions unchanged.
+The baseline invariant passes; only `/COMMON/MESFILE.DK4`, `/__arm9__.bin`,
+`/_pxl/dividecrewinfo.pxl`, `/_pxl/personinfo.pxl`, and `/data/SC2.DK4` change.
+
+Both FI macros and 02/09/FE states are preserved; 82/95 begin ordinary text.
+See `docs/lil_sc2_b120_control_note.md` and `docs/lil_v35_checkpoint.md`.
+Cold-boot all tutorial answers, controls, portraits, macro expansion, first
+letters and arrival before acceptance. V35 remains experimental.
+Coverage is 2,550/6,608 translated, 4,032 remaining and 26 excluded.
+
+## Experimental Lil ambush and reconciliation V36 candidate
+
+`out/lil_deep_route_v36_candidate.nds`, SHA-256
+`718745efda5341c3253512a94f5bb00bdc560b0b6a6cb57c948b0abe7807cb17`,
+completes all 109 B121 records. Registered profile `lil-deep-route-v36` builds
+from `out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+All 114 accepted layers are baked into that base; 46 experimental batches apply.
+The dialogue audit has zero blockers, all previews were reviewed, 28 targeted
+tests and Ruff pass, and all 13 manifest checks pass. Saved-ROM checks verify
+109 V36 records, 28 V35 records and the V21 tutorial refusal exactly. The baseline
+invariant passes with only the five declared cumulative paths:
+`/COMMON/MESFILE.DK4`, `/__arm9__.bin`, `/_pxl/dividecrewinfo.pxl`,
+`/_pxl/personinfo.pxl`, `/data/SC2.DK4`.
+
+No new control mapping is introduced. Fourteen presentation states and ten FI
+macros are preserved; 8C/91 choices begin directly with E/R. See
+`docs/lil_sc2_b121_control_note.md` and `docs/lil_v36_checkpoint.md`.
+Cold-boot both combat choices and rescue branches, Kamil's return, the farewell
+and Proof-map reward. Runtime portraits, nameplates, macros, first/continuation
+letters and transitions require review. V36 remains experimental.
+Coverage: 2,659/6,608 translated; 3,923 remaining; 26 excluded. Continue at B122.
+
+## Paused Lil goal and combined four-route candidate
+
+At the user's request, Lil is paused and the current work is compiled into
+`out/all_routes_unified_lil_v37_candidate.nds`, SHA-256
+`b5eecc91403fbdef91e955f04a8ec0251863c0ba701f6960ae19401c5b86757f`.
+Registered `all-routes-unified-v3` retains the 290-batch unified V2 stack
+(Raphael V93, Hodram V32, Maria V111 and shared repairs) and adds Lil V24–V37,
+for 304 experimental batches. All 114 accepted layers remain baked into the
+immutable base `out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+
+The current B122 scene is finished with 30 records and three FI macros. All
+previews were reviewed; zero audit blockers remain. Seven targeted tests and
+Ruff pass, all 13 build checks pass, hashes are verified, and the baseline
+invariant passes with exactly nine declared paths. Direct raw-block checks
+verify all 18,399 experimental route records and 195 unchanged exclusions.
+See `docs/all_routes_unified_lil_v37_checkpoint.md` for full identity,
+changed paths, reports and cold-boot test areas.
+
+This remains experimental; cold-boot acceptance and promotion are pending.
+Lil coverage is 2,689/6,608 translated, 3,893 remaining and 26 excluded.
+Resume at B123 only when requested. No additional scene work follows the pause.
+
+## Resumed Lil B123–B124 and combined V4 candidate
+
+The user resumed Lil translation with a natural-English requirement. All 22
+B123–B124 records are translated and every preview is reviewed. Audit has zero
+blockers. `out/all_routes_unified_lil_v38_candidate.nds`, SHA-256
+`8fba208bdd8844b5d9baf2dc8e9dcb54607835b0a41cf3cc46d47010679f0285`,
+uses `all-routes-unified-v4` (305 experimental batches) over the same immutable
+accepted base, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+It carries Raphael V93, Hodram V32, Maria V111 and Lil V38 plus the shared
+layers. All 114 accepted layers remain baked into the base. Thirty-five
+targeted tests and Ruff pass; all 13 manifest checks, hashes and baseline
+invariant pass. Exactly nine declared internal paths change. Direct saved-ROM
+verification confirms 18,421 experimental route records and 195 unchanged
+exclusions. See `docs/all_routes_unified_lil_v38_checkpoint.md` and
+`docs/lil_sc2_b123_b124_control_note.md`.
+
+Runtime review remains pending. Verify Christina's grandfather, Julian's
+portrait and natural dialogue, the Snowfall Robe clue, opening/continuation
+letters, and the earlier scenes in a cold boot. No baseline promotion.
+Lil coverage: 2,711/6,608 translated, 3,871 remaining, 26 excluded.
+
+## Experimental four-route Lil V40 candidate
+
+After resuming translation, B125 (44 records) and B126 (15 records) were
+localized into natural American English from clean Japanese. Their exhaustive
+audits have zero blockers and all previews were visually reviewed. Both
+choice paths, FI macros, the established Guiding Staff name, the spirit
+reward, and the Bruges trading mechanics are retained. See
+`docs/lil_sc2_b125_b126_control_note.md`.
+
+`out/all_routes_unified_lil_v40_candidate.nds`, SHA-256
+`66f38a04ccfdbdd1b1cef1fe47f798c40e61e71dcde5f600296ab326efcb1b47`,
+uses `all-routes-unified-v6`, with 307 experimental batches over the immutable
+base `out/raphael_natural_v2_accepted_base.nds`, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+All 114 accepted layers remain baked into the base. Raphael V93, Hodram V32,
+Maria V111 and Lil V40 are combined. Thirty-nine targeted tests and Ruff pass;
+all 13 manifest checks, hashes and the baseline invariant pass with the nine
+declared changed files. Saved-ROM checks verify 18,480 exact experimental
+route records and 195 unchanged exclusions. See
+`docs/all_routes_unified_lil_v40_checkpoint.md`.
+
+This remains experimental; cold-boot testing is pending. Lil coverage is
+2,770/6,608 translated, 3,812 remaining and 26 excluded. Continue B127.
+
+## Experimental four-route Lil V44 candidate
+
+The user asked to continue the goal through completion. B127–B132 add 145
+source-reviewed natural-English Lil records. The exact-font previews for
+every new line were reviewed for wraps and leading characters; exhaustive
+audits have zero blockers. B131 R0080 is an opaque four-byte `23 48 9B A8`
+event payload and remains unchanged as a new explicit exclusion. See
+`docs/lil_sc2_b127_b132_control_note.md`.
+
+`out/all_routes_unified_lil_v44_candidate.nds`, SHA-256
+`3cc2be4c1a5788cb43bdebd5520d33fb767ab253ccd16b68af9808c3b4325c87`,
+uses `all-routes-unified-v10` with 311 experimental batches over the
+unchanged accepted base, SHA-256
+`3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+The 114 accepted layers remain baked in. Forty-one targeted tests and
+Ruff pass; all 13 build checks, hashes and the accepted-base invariant
+pass with the nine registered changed paths. Saved-ROM verification finds
+18,625 exact experimental route records and 196 byte-identical exclusions.
+See `docs/all_routes_unified_lil_v44_checkpoint.md`.
+
+Runtime cold-boot review and explicit acceptance remain pending. Lil
+coverage is 2,915/6,608 translated, 3,666 remaining and 27 excluded.
+Continue at B133, the Raphael Castor crossover.
+
+## Experimental four-route Lil V47 candidate
+
+B133–B136 add 109 source-reviewed natural-English Lil dialogue records.
+Their exact-font preview sheets were visually checked, including individual
+inspection of two B133 first glyphs that looked cropped on contact sheets.
+B136 R0020 is an opaque four-byte `23 48 9D A8` event payload, excluded
+unchanged. See `docs/lil_sc2_b133_b136_control_note.md`.
+
+`out/all_routes_unified_lil_v47_candidate.nds`, SHA-256
+`1be6b03e0c44e05a9b7bf193281b19e8c7f543df5cbca0cd3907a1b89c9b75aa`,
+uses `all-routes-unified-v13` with 314 experimental batches over the
+unchanged accepted base. All 13 build checks, 28 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+18,734 exact experimental route records and 197 unchanged exclusions.
+See `docs/all_routes_unified_lil_v47_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,024/6,608 translated, 3,556 remaining and 28 excluded. Continue B137.
+
+## Experimental four-route Lil V48 candidate
+
+B137 adds 47 source-reviewed natural-English Lil dialogue records covering
+Nagalpur's tavern confrontation. Exact-font preview sheets were reviewed,
+including individual inspection of first glyphs that looked cropped on
+contact sheets. See `docs/lil_sc2_b137_control_note.md`.
+
+`out/all_routes_unified_lil_v48_candidate.nds`, SHA-256
+`9b18a2142f1860d857b2cfb0d6f3b6aead4c1af4a91b25322c9ba6dbac85240a`,
+uses `all-routes-unified-v14` with 315 experimental batches over the
+unchanged accepted base. All 13 build checks, 29 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+18,781 exact experimental route records and 197 unchanged exclusions.
+See `docs/all_routes_unified_lil_v48_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,071/6,608 translated, 3,509 remaining and 28 excluded. Continue B138.
+
+## Experimental four-route Lil V50 candidate
+
+B138–B139 add 55 source-reviewed natural-English Lil dialogue records
+following the B137 Nagalpur confrontation. Their exact-font previews
+were reviewed, including individual first-glyph inspection. B139 R0035
+is an opaque four-byte `23 48 9E A8` event payload and remains unchanged.
+See `docs/lil_sc2_b138_b139_control_note.md`.
+
+`out/all_routes_unified_lil_v50_candidate.nds`, SHA-256
+`bd4bc044969e5f0abb9bc60babd94a4c87e20628b4ed11e006f29955e4c014d4`,
+uses `all-routes-unified-v16` with 317 experimental batches over the
+unchanged accepted base. All 13 build checks, 30 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+18,836 exact experimental route records and 198 unchanged exclusions.
+See `docs/all_routes_unified_lil_v50_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,126/6,608 translated, 3,453 remaining and 29 excluded. Continue B140.
+
+## Experimental four-route Lil V54 candidate
+
+B140–B145 add 101 source-reviewed natural-English Lil dialogue records:
+the Lelystad polder pledge and funding branches, armor-upgrade research and
+completion, and the Mediterranean Proof map reveal. Exact-font previews were
+reviewed and ambiguous first glyphs checked individually. B145 R0021 is an
+opaque four-byte `23 48 9C A8` reveal event, excluded unchanged. See
+`docs/lil_sc2_b140_b145_control_note.md`.
+
+`out/all_routes_unified_lil_v54_candidate.nds`, SHA-256
+`d74e21082ad700d024f65aec14bb82db4a7c4b2053d46594313b6943c4b4d830`,
+uses `all-routes-unified-v20` with 321 experimental batches over the
+unchanged accepted base. All 13 build checks, 34 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+18,937 exact experimental route records and 199 unchanged exclusions.
+See `docs/all_routes_unified_lil_v54_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,227/6,608 translated, 3,351 remaining and 30 excluded. Continue B146.
+
+## Experimental four-route Lil V55 candidate
+
+B146 adds 35 source-reviewed natural-English records covering Kamil's
+separation from Lil and Hodram's sailing invitation. The `97` sailor voice,
+`FE` narration and both `FI` macros retain their source control behavior.
+All exact-font previews were reviewed. See `docs/lil_sc2_b146_control_note.md`.
+
+`out/all_routes_unified_lil_v55_candidate.nds`, SHA-256
+`cdec3ad9981f3586736ce5f8ae9d74e179bb95d99c4627f4863e46bd00699332`,
+uses `all-routes-unified-v21` with 322 experimental batches over the
+unchanged accepted base. All 13 build checks, 35 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+18,972 exact experimental route records and 199 unchanged exclusions.
+See `docs/all_routes_unified_lil_v55_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,262/6,608 translated, 3,316 remaining and 30 excluded. Continue B147.
+
+## Experimental four-route Lil V56 candidate
+
+B147 adds 68 source-reviewed natural-English records: Maria's identity
+reveal, warning that Kuhn is using Lil, the possible planted Li crest, and
+the Batavia lead. Both companion departure variants are translated. The
+`FI` and `FA` name macros, five guarded elder line-break openings, and the
+R0021 first-glyph layout exception were previewed. R0129 is an opaque
+four-byte `21 46 83 80` reveal event and remains unchanged. See
+`docs/lil_sc2_b147_control_note.md`.
+
+`out/all_routes_unified_lil_v56_candidate.nds`, SHA-256
+`26a0db5ae7e1f42194d2e0893dcfa9dd78eb7854c49dada058ff992020736b2a`,
+uses `all-routes-unified-v22` with 323 experimental batches over the
+unchanged accepted base. All 13 build checks, 36 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,040 exact experimental route records and 200 unchanged exclusions.
+See `docs/all_routes_unified_lil_v56_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,330/6,608 translated, 3,247 remaining and 31 excluded. Translation work
+is paused at this completed set until the user resumes it; B148 is next.
+
+## Experimental four-route Lil V57 candidate
+
+B148-B149 add 45 source-reviewed natural-English records. A Batavia witness
+reveals the name Kamil in Kuhn's family history; the Tang Bamboo Craft and
+Bamboo Assembly Plan then reveal the East Asia Proof map across both Kamil
+and Fernando branches. All exact-font previews were reviewed, and B149's
+`FI` name macro retains its source behavior. See
+`docs/lil_sc2_b148_b149_control_note.md`.
+
+`out/all_routes_unified_lil_v57_candidate.nds`, SHA-256
+`e31e356eed71036439b2d55eff70f5d0c75c51a93aed005d0b8a8712f3b4cf35`,
+uses `all-routes-unified-v23` with 324 experimental batches over the
+unchanged accepted base. All 13 build checks, 37 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,085 exact experimental route records and 200 unchanged exclusions.
+See `docs/all_routes_unified_lil_v57_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,375/6,608 translated, 3,202 remaining and 31 excluded. Continue B150.
+
+## Experimental four-route Lil V58 candidate
+
+B150 adds 22 source-reviewed natural-English records. Clifford explains
+Maldonado and Escante's alliance in the New World and asks Lil to strike
+Maldonado while they build strength for Escante. The `FO` faction macro
+retains its source behavior. All exact-font previews were reviewed. See
+`docs/lil_sc2_b150_control_note.md`.
+
+`out/all_routes_unified_lil_v58_candidate.nds`, SHA-256
+`16ec7b5a8db384752421e85850f637281e469f1667a72da87ea7b79d5221325c`,
+uses `all-routes-unified-v24` with 325 experimental batches over the
+unchanged accepted base. All 13 build checks, 38 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,107 exact experimental route records and 200 unchanged exclusions.
+See `docs/all_routes_unified_lil_v58_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,397/6,608 translated, 3,180 remaining and 31 excluded. Continue B151.
+
+## Experimental four-route Lil V60 candidate
+
+B151-B153 add 70 source-reviewed natural-English records. Maldonado's
+tavern confrontation includes alternate monologues, companion reactions,
+and aftermath branches. The Ancient Kingdom Coin and Lotion Jar reveal the
+Southeast Asian Proof map; opaque B153 R0024 (`23 48 9F A8`) stays unchanged.
+The `2A` Maldonado presentation state and all `FI`, `FA`, and `FO` macros
+are preserved. All exact-font previews were reviewed. See
+`docs/lil_sc2_b151_control_note.md` and
+`docs/lil_sc2_b152_b153_control_note.md`.
+
+`out/all_routes_unified_lil_v60_candidate.nds`, SHA-256
+`68d881c5f938f637157f9fa16c8d85b212f17689d1d9c6f0602afb7cc01958b9`,
+uses `all-routes-unified-v26` with 327 experimental batches over the
+unchanged accepted base. All 13 build checks, 40 targeted tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,177 exact experimental route records and 201 unchanged exclusions.
+See `docs/all_routes_unified_lil_v60_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,467/6,608 translated, 3,109 remaining and 32 excluded. Continue B154.
+
+## Experimental four-route Lil V61 candidate
+
+B154 adds 40 source-reviewed natural-English records for Al's dismissal and
+Lil's recruitment. Opaque scene event R0003 (`95 46 7D 80 29 63 05 05 2C 63`)
+stays unchanged. Employer and attendant presentation states `94` and `73`,
+both `FI` name macros, and the `FA` name macro are preserved. The exact-font
+previews show every first glyph; the narrow striped `W` was checked in
+individual previews. See `docs/lil_sc2_b154_control_note.md`.
+
+`out/all_routes_unified_lil_v61_candidate.nds`, SHA-256
+`edee2e49b136c0623e725b7c445a23c7e43a6012a143f537d01ac9dc5534dfe3`,
+uses `all-routes-unified-v27` with 328 experimental batches over the
+unchanged accepted base. All 13 build checks, 41 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,217 exact experimental route records and 202 unchanged exclusions.
+See `docs/all_routes_unified_lil_v61_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,507/6,608 translated, 3,068 remaining and 33 excluded. Continue B155.
+
+## Experimental four-route Lil V62 candidate
+
+B155 adds 48 source-reviewed natural-English records for Angelo Puccini's
+recruitment and his African trade lesson. Opaque scene event R0059
+(`20 31 46 EA 80`) stays unchanged. The five `FI` and one `FA` name macros
+and all dialogue presentation leads are preserved. All exact-font previews
+were reviewed. See `docs/lil_sc2_b155_control_note.md`.
+
+`out/all_routes_unified_lil_v62_candidate.nds`, SHA-256
+`ebb280764fe9f7c4ea252caf27c4e3de474b20ce756745994ad31e49f81be563`,
+uses `all-routes-unified-v28` with 329 experimental batches over the
+unchanged accepted base. All 13 build checks, 42 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,265 exact experimental route records and 203 unchanged exclusions.
+See `docs/all_routes_unified_lil_v62_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,555/6,608 translated, 3,019 remaining and 34 excluded. Continue B156.
+
+## Experimental four-route Lil V63 candidate
+
+B156 adds all 69 source-reviewed natural-English records for Ian Dukov's
+tavern dismissal, ambush, rescue, and recruitment. The tavern patron states
+`A4` and `A5` and both `FI` name macros are preserved. All exact-font
+previews were reviewed. See `docs/lil_sc2_b156_control_note.md`.
+
+`out/all_routes_unified_lil_v63_candidate.nds`, SHA-256
+`966ac21eec3d4e725763388f3bbfd22fa1eb2b53fb53df88a9551fc23a91403b`,
+uses `all-routes-unified-v29` with 330 experimental batches over the
+unchanged accepted base. All 13 build checks, 43 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,334 exact experimental route records and 203 unchanged exclusions.
+See `docs/all_routes_unified_lil_v63_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,624/6,608 translated, 2,950 remaining and 34 excluded. Continue B157.
+
+## Experimental four-route Lil V64 candidate
+
+B157 adds all 70 source-reviewed natural-English records for Carlo Sinato's
+market encounter, discovery of Adil's illness, family grief, and recruitment.
+The `69` merchant, `8E` wife, and `FE` narration presentation states and both
+`FI` name macros are preserved. All exact-font previews were reviewed. See
+`docs/lil_sc2_b157_control_note.md`.
+
+`out/all_routes_unified_lil_v64_candidate.nds`, SHA-256
+`4f6075f090e81dcefbfafa52c2517d52da760551602a8abdca69ef6eb0246665`,
+uses `all-routes-unified-v30` with 331 experimental batches over the
+unchanged accepted base. All 13 build checks, 44 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,404 exact experimental route records and 203 unchanged exclusions.
+See `docs/all_routes_unified_lil_v64_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,694/6,608 translated, 2,880 remaining and 34 excluded. Continue B158.
+
+## Experimental four-route Lil V65 candidate
+
+B158 adds all 19 source-reviewed natural-English records for Christina's
+tavern dance, audience cheers, and crew reactions. The `FE` audience
+presentation state and `FI` name macro are preserved. Both exact-font sheets
+were reviewed. See `docs/lil_sc2_b158_control_note.md`.
+
+`out/all_routes_unified_lil_v65_candidate.nds`, SHA-256
+`57f85d6620cb13ed611715541ea983cc9a3ce55e8c804fda2bcd64cc9edc617b`,
+uses `all-routes-unified-v31` with 332 experimental batches over the
+unchanged accepted base. All 13 build checks, 45 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,423 exact experimental route records and 203 unchanged exclusions.
+See `docs/all_routes_unified_lil_v65_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,713/6,608 translated, 2,861 remaining and 34 excluded. Continue B159.
+
+## Experimental four-route Lil V66 candidate
+
+B159 adds 41 source-reviewed natural-English records for Samwell's
+elephant-market encounter, cooking test, and recruitment. Opaque scene event
+R0045 (`21 51 46 EE 80`) stays unchanged. All four `FI` name macros and
+speaker presentation leads are preserved. All exact-font previews were
+reviewed. See `docs/lil_sc2_b159_control_note.md`.
+
+`out/all_routes_unified_lil_v66_candidate.nds`, SHA-256
+`0f20240c781e5b25bbbf6f99f85fe978738f24db6789c955f1303a41b3010829`,
+uses `all-routes-unified-v32` with 333 experimental batches over the
+unchanged accepted base. All 13 build checks, 46 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,464 exact experimental route records and 204 unchanged exclusions.
+See `docs/all_routes_unified_lil_v66_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,754/6,608 translated, 2,819 remaining and 35 excluded. Continue B160.
+
+## Experimental four-route Lil V67 candidate
+
+B160-B162 add 23 source-reviewed natural-English records for the stolen-ship
+discovery and two dockworker updates. All six source speaker presentation
+leads, including new dockworker lead `74`, and the `FI` name macro are
+preserved. All three exact-font previews were reviewed. See
+`docs/lil_sc2_b160_b162_control_note.md`.
+
+`out/all_routes_unified_lil_v67_candidate.nds`, SHA-256
+`f84bf5dbca401d6d34f28d5fd798a14882c506db9152e3e3e0aa091bdd75008e`,
+uses `all-routes-unified-v33` with 334 experimental batches over the
+unchanged accepted base. All 13 build checks, 47 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,487 exact experimental route records and 204 unchanged exclusions.
+See `docs/all_routes_unified_lil_v67_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,777/6,608 translated, 2,796 remaining and 35 excluded. Continue B163.
+
+## Experimental four-route Lil V68 candidate
+
+B163 adds 43 source-reviewed natural-English records for the ship's return
+and Jam Jack Ludwyan's recruitment. Opaque seven-byte ship-return event
+R0034 (`20 95 46 E2 80 2C 63`) stays unchanged. The `FI` name macro and
+all speaker presentation leads are preserved. All three exact-font previews
+were reviewed. See `docs/lil_sc2_b163_control_note.md`.
+
+`out/all_routes_unified_lil_v68_candidate.nds`, SHA-256
+`0bac7acc4b9dd8ac164043882f02e1a858d65126a5319a1076be4594e2b18229`,
+uses `all-routes-unified-v34` with 335 experimental batches over the
+unchanged accepted base. All 13 build checks, 48 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,530 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v68_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,820/6,608 translated, 2,752 remaining and 36 excluded. Continue B168.
+
+## Experimental four-route Lil V69 candidate
+
+B168 adds 52 source-reviewed natural-English records for Mikhail Lett's
+recruitment and the item-information tutorial. All seven `FI`, one `FA`,
+and one `FO` name macros and all nine speaker presentation leads are
+preserved. All three exact-font previews were reviewed. See
+`docs/lil_sc2_b168_control_note.md`.
+
+`out/all_routes_unified_lil_v69_candidate.nds`, SHA-256
+`8b3ce57b83b3276cca342b2026328301ec5dd6a446d3615c0958262ef3ea3a91`,
+uses `all-routes-unified-v35` with 336 experimental batches over the
+unchanged accepted base. All 13 build checks, 49 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,582 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v69_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,872/6,608 translated, 2,700 remaining and 36 excluded. Continue B169.
+
+## Experimental four-route Lil V70 candidate
+
+B169 adds 36 source-reviewed natural-English records for Mikhail's Proof
+of Conqueror explanation and search advice. Five `FI` and two `FO` name
+macros and all six speaker presentation leads are preserved. Both
+exact-font previews were reviewed. See `docs/lil_sc2_b169_control_note.md`.
+
+`out/all_routes_unified_lil_v70_candidate.nds`, SHA-256
+`61cf07962603ba16240375636afc0596dbae239f3274af8952aa12074cb12ec3`,
+uses `all-routes-unified-v36` with 337 experimental batches over the
+unchanged accepted base. All 13 build checks, 50 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,618 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v70_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,908/6,608 translated, 2,664 remaining and 36 excluded. Continue B170.
+
+## Experimental four-route Lil V71 candidate
+
+B170 adds 33 source-reviewed natural-English records for Yifa's first
+meeting with Lil and her recruitment. The `FI` and `FO` name macros and
+both speaker presentation leads are preserved. Both exact-font previews
+were reviewed. See `docs/lil_sc2_b170_control_note.md`.
+
+`out/all_routes_unified_lil_v71_candidate.nds`, SHA-256
+`e65b758e900ef87e8c09ef62c2669d71b3943673ec028a4187e058879e51a4a5`,
+uses `all-routes-unified-v37` with 338 experimental batches over the
+unchanged accepted base. All 13 build checks, 51 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,651 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v71_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,941/6,608 translated, 2,631 remaining and 36 excluded. Continue B171.
+
+## Experimental four-route Lil V72 candidate
+
+B171 adds 35 source-reviewed natural-English records for Sanghyeon's
+dream visit and Yifa's renewed training. The `FI` name macro and all
+speaker presentation leads, including new `51` Sanghyeon, are preserved.
+Both exact-font previews were reviewed. See
+`docs/lil_sc2_b171_control_note.md`.
+
+`out/all_routes_unified_lil_v72_candidate.nds`, SHA-256
+`4ada99bfa978d7f3bd34de53aaea180e787668f684ca39c633acbe483420ae3d`,
+uses `all-routes-unified-v38` with 339 experimental batches over the
+unchanged accepted base. All 13 build checks, 52 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,686 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v72_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+3,976/6,608 translated, 2,596 remaining and 36 excluded. Continue B172.
+
+## Experimental four-route Lil V73 candidate
+
+B172 adds 27 source-reviewed natural-English records for Julian and
+Mihwa's Golden Crown of Silla lead. All three speaker presentation leads,
+including new `C9` Mihwa, are preserved. Both exact-font previews were
+reviewed. See `docs/lil_sc2_b172_control_note.md`.
+
+`out/all_routes_unified_lil_v73_candidate.nds`, SHA-256
+`fb4b21406ca7524b13491f413d895fdfcee1ac8108ba253403ce3b7c54003308`,
+uses `all-routes-unified-v39` with 340 experimental batches over the
+unchanged accepted base. All 13 build checks, 53 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,713 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v73_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,003/6,608 translated, 2,569 remaining and 36 excluded. Continue B173.
+
+## Experimental four-route Lil V74 candidate
+
+B173-B174 add 44 source-reviewed natural-English records for the Golden
+Crown of Silla tomb lead, Mihwa's crown handoff, and Julian's recruitment.
+All five speaker presentation leads, including new `CA` Seoul tavernkeeper,
+are preserved. All three exact-font previews were reviewed. See
+`docs/lil_sc2_b173_b174_control_note.md`.
+
+`out/all_routes_unified_lil_v74_candidate.nds`, SHA-256
+`1d1088494e40021a7b517e7c2bb784c545a6a0fb931e137d74ee5e5895a4ff25`,
+uses `all-routes-unified-v40` with 341 experimental batches over the
+unchanged accepted base. All 13 build checks, 54 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,757 exact experimental route records and 205 unchanged exclusions.
+See `docs/all_routes_unified_lil_v74_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,047/6,608 translated, 2,525 remaining and 36 excluded. Continue B175.
+
+## Experimental four-route Lil V75 candidate
+
+B175 adds 32 source-reviewed natural-English dialogue records for Aziza's
+pirate confrontation and Lil's sword rivalry. The four-byte `96 46 CA 80`
+event payload is excluded unchanged. All six dialogue presentation leads
+and four `FI` plus one `FA` name-macro instances are preserved. Both
+exact-font previews were reviewed. See `docs/lil_sc2_b175_control_note.md`.
+
+`out/all_routes_unified_lil_v75_candidate.nds`, SHA-256
+`5471bfcb04fa891503a572dcc2d0797d520a76671cfb2e3f559384bf5c48b55b`,
+uses `all-routes-unified-v41` with 342 experimental batches over the
+unchanged accepted base. All 13 build checks, 55 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,789 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v75_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,079/6,608 translated, 2,492 remaining and 37 excluded. Continue B176.
+
+## Experimental four-route Lil V76 candidate
+
+B176 adds 10 source-reviewed natural-English records for the Seville
+banana boom. The newly observed `AE` patron and `AF` attendant presentation
+states are preserved. The exact-font preview was reviewed. See
+`docs/lil_sc2_b176_control_note.md`.
+
+`out/all_routes_unified_lil_v76_candidate.nds`, SHA-256
+`415861f10fab2cb4ea2da0a50f2d50dc506067a8b2091e763ef05ec4fcbfa582`,
+uses `all-routes-unified-v42` with 343 experimental batches over the
+unchanged accepted base. All 13 build checks, 56 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,799 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v76_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,089/6,608 translated, 2,482 remaining and 37 excluded. Continue B177.
+
+## Experimental four-route Lil V77 candidate
+
+B177 adds 10 source-reviewed natural-English records for the Genoa
+tomato boom. The `AE` patron, `AF` attendant, and `FE` market notice
+presentation states are preserved. The exact-font preview was reviewed.
+See `docs/lil_sc2_b177_control_note.md`.
+
+`out/all_routes_unified_lil_v77_candidate.nds`, SHA-256
+`1032a6defbcf0ff794f223e53751206737985936bb11a0844bbcdffab94c57a6`,
+uses `all-routes-unified-v43` with 344 experimental batches over the
+unchanged accepted base. All 13 build checks, 57 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,809 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v77_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,099/6,608 translated, 2,472 remaining and 37 excluded. Continue B178.
+
+## Experimental four-route Lil V78 candidate
+
+B178 adds 13 source-reviewed natural-English records for the Amsterdam
+wheat boom. The three neighbors' `A6`-`A8` and `FE` market notice
+presentation states are preserved. The exact-font preview was reviewed.
+See `docs/lil_sc2_b178_control_note.md`.
+
+`out/all_routes_unified_lil_v78_candidate.nds`, SHA-256
+`2a0e5326680d90089171def03699994bcea233769003d7c7eb972a9801475314`,
+uses `all-routes-unified-v44` with 345 experimental batches over the
+unchanged accepted base. All 13 build checks, 58 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,822 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v78_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,112/6,608 translated, 2,459 remaining and 37 excluded. Continue B179.
+
+## Experimental four-route Lil V79 candidate
+
+B179 adds eight source-reviewed natural-English records for the San Jorge
+wine boom. The `60` drinker, `5C` barkeep, and `FE` market notice
+presentation states are preserved. The exact-font preview was reviewed.
+See `docs/lil_sc2_b179_control_note.md`.
+
+`out/all_routes_unified_lil_v79_candidate.nds`, SHA-256
+`956b67826a86f38c1eb818506fb1c06a89745c0ae190ec92f1427275a4965e14`,
+uses `all-routes-unified-v45` with 346 experimental batches over the
+unchanged accepted base. All 13 build checks, 59 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,830 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v79_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,120/6,608 translated, 2,451 remaining and 37 excluded. Continue B180.
+
+## Experimental four-route Lil V80 candidate
+
+B180-B182 add 29 source-reviewed natural-English records for Lisbon spice,
+Athens ruby, and London gem market rumors. The `A6`-`A8` townspeople and
+`FE` market notice presentation states are preserved. Both exact-font
+previews were reviewed. See `docs/lil_sc2_b180_b182_control_note.md`.
+
+`out/all_routes_unified_lil_v80_candidate.nds`, SHA-256
+`f48e9c0b728d176aa54dfecf3f7d8369121ae9eabe85b73f297d453044f3f6eb`,
+uses `all-routes-unified-v46` with 347 experimental batches over the
+unchanged accepted base. All 13 build checks, 60 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,859 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v80_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,149/6,608 translated, 2,422 remaining and 37 excluded. Continue B183.
+
+## Experimental four-route Lil V81 candidate
+
+B183 adds 25 source-reviewed natural-English records for the Basra
+painting craze. The `99` short interjection, `94`, `6E`, and `84`
+collectors, `55` shopkeeper, and `FE` door cue and market notice retain
+their presentation states. Both exact-font previews were reviewed. See
+`docs/lil_sc2_b183_control_note.md`.
+
+`out/all_routes_unified_lil_v81_candidate.nds`, SHA-256
+`39591ee8647471d035bc0f6782b7bb261849b0f43fd69ccd1cb7b6d97e861bb2`,
+uses `all-routes-unified-v47` with 348 experimental batches over the
+unchanged accepted base. All 13 build checks, 61 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,884 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v81_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,174/6,608 translated, 2,397 remaining and 37 excluded. Continue B184.
+
+## Experimental four-route Lil V82 candidate
+
+B184-B186 add 29 source-reviewed natural-English records for the Sofala
+tea, Stockholm fur, and Alexandria sweets market scenes. The `A4`, `A5`,
+`AE`, `AF`, and `FE` presentation states are preserved. Both exact-font
+previews were reviewed. See `docs/lil_sc2_b184_b186_control_note.md`.
+
+`out/all_routes_unified_lil_v82_candidate.nds`, SHA-256
+`81997a3f6e70e5db51b80caff9f4e2754cac66329fca5f586c79a8e75cbcee24`,
+uses `all-routes-unified-v48` with 349 experimental batches over the
+unchanged accepted base. All 13 build checks, 62 focused tests, Ruff, the
+baseline invariant, and saved-ROM verification pass. The ROM contains
+19,913 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v82_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,203/6,608 translated, 2,368 remaining and 37 excluded. Continue B187.
+
+## Experimental four-route Lil V83 candidate
+
+B187 adds 16 source-reviewed natural-English records for the Malacca
+almond-medicine rumor. The `9B` coughing man, `57` friend, and `FE` notice
+preserve their presentation states. The exact-font contact sheet was
+reviewed. See `docs/lil_sc2_b187_control_note.md`.
+
+`out/all_routes_unified_lil_v83_candidate.nds`, SHA-256
+`bda5947b7e2418e6f2690bbb1bab565b65d49031ec9b4274f5ef9efaa7faca8e`,
+uses `all-routes-unified-v49` with 350 experimental batches over the
+unchanged accepted base. All 13 build checks, 37 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,929 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v83_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,219/6,608 translated, 2,352 remaining and 37 excluded. Continue B188.
+
+## Experimental four-route Lil V84 candidate
+
+B188 adds 11 source-reviewed natural-English records for the Osaka
+giyaman-glass market rumor. Source-leading `82` and `96` are Shift-JIS text
+leads, so English first letters remain visible; `FE` is the market notice.
+The exact-font contact sheet was reviewed. See
+`docs/lil_sc2_b188_control_note.md`.
+
+`out/all_routes_unified_lil_v84_candidate.nds`, SHA-256
+`5447d57ae45273393a4c3e99d61892b883a712c2f7f4a499ac80a65e9befac66`,
+uses `all-routes-unified-v50` with 351 experimental batches over the
+unchanged accepted base. All 13 build checks, 38 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,940 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v84_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,230/6,608 translated, 2,341 remaining and 37 excluded. Continue B189.
+
+## Experimental four-route Lil V85 candidate
+
+B189 adds 17 source-reviewed natural-English records for the Hamburg
+ceramics collectors and swindlers. Source-correlated `93`/`52` collectors,
+`68`/`71` swindlers, and `FE` market notice retain their presentation states.
+The exact-font contact sheet was reviewed. See
+`docs/lil_sc2_b189_control_note.md`.
+
+`out/all_routes_unified_lil_v85_candidate.nds`, SHA-256
+`3ba11db1411ea310290bd14238e84c13c8b2b4fb1f7f61b96efefd4006cbf1fc`,
+uses `all-routes-unified-v51` with 352 experimental batches over the
+unchanged accepted base. All 13 build checks, 39 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,957 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v85_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,247/6,608 translated, 2,324 remaining and 37 excluded. Continue B190.
+
+## Experimental four-route Lil V86 candidate
+
+B190 adds 17 source-reviewed natural-English records for the Havana
+medicine rumor. Source-correlated `9F`/`77` speakers and the `FE` notice
+retain their presentation states. The exact-font contact sheet was
+reviewed. See `docs/lil_sc2_b190_control_note.md`.
+
+`out/all_routes_unified_lil_v86_candidate.nds`, SHA-256
+`beeac8e92bc9ddb37d0d06463d586f5c37687d16f9cd26ca7f4918c75128cb68`,
+uses `all-routes-unified-v52` with 353 experimental batches over the
+unchanged accepted base. All 13 build checks, 40 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,974 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v86_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,264/6,608 translated, 2,307 remaining and 37 excluded. Continue B191.
+
+## Experimental four-route Lil V87 candidate
+
+B191 adds 13 source-reviewed natural-English records for the Calicut
+father-son dye-market conversation. Source-correlated `56`/`9A` speakers
+and the `FE` notice retain their presentation states. The exact-font
+contact sheet was reviewed. See `docs/lil_sc2_b191_control_note.md`.
+
+`out/all_routes_unified_lil_v87_candidate.nds`, SHA-256
+`fd74d912742508d952187bc9330ae6057ceb10e485c58773094bb7de3f6bdce9`,
+uses `all-routes-unified-v53` with 354 experimental batches over the
+unchanged accepted base. All 13 build checks, 41 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+19,987 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v87_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,277/6,608 translated, 2,294 remaining and 37 excluded. Continue B192.
+
+## Experimental four-route Lil V88 candidate
+
+B192-B194 add 33 source-reviewed natural-English records for Istanbul
+tobacco, Seoul chili peppers, and Hangzhou sake. The Hangzhou `9C`/`75`
+states and companion `FI` name macro are preserved. Exact-font review caught
+the boxed fullwidth `Ｉ` workaround in the Istanbul notice; Lil's text now
+uses `Constantinople` and renders cleanly. See
+`docs/lil_sc2_b192_b194_control_note.md`.
+
+`out/all_routes_unified_lil_v88_candidate.nds`, SHA-256
+`e71492a8b922fdd46e951bca382e492f89daf35679772f114e56b4e2ef8a6fc2`,
+uses `all-routes-unified-v54` with 355 experimental batches over the
+unchanged accepted base. All 13 build checks, 42 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,020 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v88_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,310/6,608 translated, 2,261 remaining and 37 excluded. Continue B195.
+
+## Experimental four-route Lil V89 candidate
+
+B195 adds 20 source-reviewed natural-English records for the Veracruz
+cheese-dish market scene. Source-correlated `77`/`67` patrons, `5C` barkeep,
+and `FE` market notice retain their presentation states. The exact-font
+contact sheet was reviewed. See `docs/lil_sc2_b195_control_note.md`.
+
+`out/all_routes_unified_lil_v89_candidate.nds`, SHA-256
+`ee2fcb4905b723d48b861272dff6872699badeb240f17250c2d335911b01c379`,
+uses `all-routes-unified-v55` with 356 experimental batches over the
+unchanged accepted base. All 13 build checks, 43 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,040 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v89_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,330/6,608 translated, 2,241 remaining and 37 excluded. Continue B196.
+
+## Experimental four-route Lil V90 candidate
+
+B196 adds 35 source-reviewed natural-English records for all six haggling
+stages, Buy/Pass choices, crew advice, sale outcomes, and the `FI` charm
+reward. Source-leading `94` is Shift-JIS choice text here and is removed
+from this batch's speaker-state profile, preserving every English choice
+initial. Both exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b196_control_note.md`.
+
+`out/all_routes_unified_lil_v90_candidate.nds`, SHA-256
+`dd2557ee21672476b698f5c5ef7e72bd26ff6d9d313c07e783c66a376c6abc21`,
+uses `all-routes-unified-v56` with 357 experimental batches over the
+unchanged accepted base. All 13 build checks, 44 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,075 exact experimental route records and 206 unchanged exclusions.
+See `docs/all_routes_unified_lil_v90_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,365/6,608 translated, 2,206 remaining and 37 excluded. Continue B197.
+
+## Experimental four-route Lil V91 candidate
+
+B197 adds 24 source-reviewed natural-English text records for Ian's
+celestial-maiden book offer, all Buy it/Pass/Trust choices, purchase and gift
+branches, and his charm reward. One four-byte packed portrait/scene payload
+is excluded unchanged. Source-leading `94` is Shift-JIS choice text, and the
+batch profile keeps it out of the speaker-state set so each English first
+letter survives. Both exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b197_control_note.md`.
+
+`out/all_routes_unified_lil_v91_candidate.nds`, SHA-256
+`8df467e1f92f5b6012033d98e8d763e18ca6b28418a9bd105a379ab24da5e9b3`,
+uses `all-routes-unified-v57` with 358 experimental batches over the
+unchanged accepted base. All 13 build checks, 45 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,099 exact experimental route records and 207 unchanged exclusions.
+See `docs/all_routes_unified_lil_v91_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,389/6,608 translated, 2,181 remaining and 38 excluded. Continue B198.
+
+## Experimental four-route Lil V92 candidate
+
+B198 adds all 15 source-reviewed natural-English namahage-dream records,
+including Yukihisa's discovery and his plan to hand the object to the
+admiral. `FE`, `0C`, and `0F` presentation states are retained. Both
+exact-font contact sheets were reviewed, with all first glyphs intact.
+See `docs/lil_sc2_b198_control_note.md`.
+
+`out/all_routes_unified_lil_v92_candidate.nds`, SHA-256
+`b6855ac0e500396de4403b68a53d198f1c1d8e5544a0783668f5616a3c86312f`,
+uses `all-routes-unified-v58` with 359 experimental batches over the
+unchanged accepted base. All 13 build checks, 46 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,114 exact experimental route records and 207 unchanged exclusions.
+See `docs/all_routes_unified_lil_v92_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,404/6,608 translated, 2,166 remaining and 38 excluded. Continue B199.
+
+## Experimental four-route Lil V93 candidate
+
+B199 adds 31 source-reviewed natural-English text records for Samwell and
+Kamil at Rocco Alemkel's portrait, Lil's chase, the old-book discovery, and
+the mistaken gift. One four-byte packed item/scene payload is excluded
+unchanged. `16`, `09`, `02`, and `FE` states and the live `FI` admiral-name
+macro are retained. Four exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b199_control_note.md`.
+
+`out/all_routes_unified_lil_v93_candidate.nds`, SHA-256
+`3cf1abde5319d6638df4385d5fb4ba1bb2cf605f03d0b78fc42fe773160c4568`,
+uses `all-routes-unified-v59` with 360 experimental batches over the
+unchanged accepted base. All 13 build checks, 47 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,145 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v93_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,435/6,608 translated, 2,134 remaining and 39 excluded. Continue B200.
+
+## Experimental four-route Lil V94 candidate
+
+B200 adds all 19 source-reviewed natural-English records for Carlo's rescue
+of a collapsed traveler, the inn conversation, gift, and charm reward. The
+traveler's `AC` presentation state is added; Carlo's `13` and `FE` notices
+are retained. Both exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b200_control_note.md`.
+
+`out/all_routes_unified_lil_v94_candidate.nds`, SHA-256
+`a14e61e108a3dbaeb4213c1fd96d68a158f8ae1c6fe1247dc5cdd929148f138a`,
+uses `all-routes-unified-v60` with 361 experimental batches over the
+unchanged accepted base. All 13 build checks, 48 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,164 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v94_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,454/6,608 translated, 2,115 remaining and 39 excluded. Continue B201.
+
+## Experimental four-route Lil V95 candidate
+
+B201 adds all 25 source-reviewed natural-English mast-rope bargaining
+records: every price and counteroffer, Buy/Pass choices, purchase and refusal,
+and the charm, wit, and spirit rewards. Choice-leading `94` remains Shift-JIS
+text, so the English initials are preserved; both `FI` admiral-name macros
+remain live. Three exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b201_control_note.md`.
+
+`out/all_routes_unified_lil_v95_candidate.nds`, SHA-256
+`aae7c7ba924d706b85106961f7d470797b5fcbbd327cdac0aec6863fb489ed12`,
+uses `all-routes-unified-v61` with 362 experimental batches over the
+unchanged accepted base. All 13 build checks, 49 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,189 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v95_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,479/6,608 translated, 2,090 remaining and 39 excluded. Continue B202.
+
+## Experimental four-route Lil V96 candidate
+
+B202 adds all 19 source-reviewed natural-English records for the fleeing
+stranger's Glassmaking Guide handoff, the pursuer, Lil's confusion, and
+Charles's book request. The stranger's `9D` presentation state is added;
+`93`, `02`, and `12` are retained. Both exact-font contact sheets were
+reviewed. See `docs/lil_sc2_b202_control_note.md`.
+
+`out/all_routes_unified_lil_v96_candidate.nds`, SHA-256
+`ecead7922f7c2123ec85ff0f5567311d398300747fe95f7402f094cd61e95356`,
+uses `all-routes-unified-v62` with 363 experimental batches over the
+unchanged accepted base. All 13 build checks, 50 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,208 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v96_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,498/6,608 translated, 2,071 remaining and 39 excluded. Continue B203.
+
+## Experimental four-route Lil V97 candidate
+
+B203 adds all 21 source-reviewed natural-English records for Mikhail and
+Lil's caterpillar-fungus discovery, the herbalist's medicine book, the
+1,000-to-100-coin exchange, and the `FI` charm reward. `4C`, `02`, `AA`,
+and `FE` presentation states remain intact. Three exact-font contact sheets
+were reviewed. See `docs/lil_sc2_b203_control_note.md`.
+
+`out/all_routes_unified_lil_v97_candidate.nds`, SHA-256
+`4699e527c9d3e17b84d7882dce7619ea90776a8b8b9b76bdff3f3e1144bce9d3`,
+uses `all-routes-unified-v63` with 364 experimental batches over the
+unchanged accepted base. All 13 build checks, 51 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,229 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v97_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,519/6,608 translated, 2,050 remaining and 39 excluded. Continue B204.
+
+## Experimental four-route Lil V98 candidate
+
+B204 adds all 20 source-reviewed natural-English records for Jam's Japanese
+castle visit, mistaken shachihoko figurehead, the retainer's report, the
+lord's search order, and Jam's signed letter. The `91`, `7C`, and `82`
+presentation states are added; `0B`, `02`, and `FE` remain intact. Both
+exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b204_control_note.md`.
+
+`out/all_routes_unified_lil_v98_candidate.nds`, SHA-256
+`cd9a95e3a113c39787dfec6a542fc786d5e402177d0d3366ccfb3ee2bbbb293a`,
+uses `all-routes-unified-v64` with 365 experimental batches over the
+unchanged accepted base. All 13 build checks, 52 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,249 exact experimental route records and 208 unchanged exclusions.
+See `docs/all_routes_unified_lil_v98_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,539/6,608 translated, 2,030 remaining and 39 excluded. Continue B205.
+
+## Experimental four-route Lil V99 candidate
+
+B205 adds 17 source-reviewed natural-English records for Angelo and Lil's
+talking-parrot encounter and preserves one packed event payload unchanged.
+The parrot repeats Angelo's words without unsafe uppercase renderer bytes.
+Both exact-font contact sheets were reviewed. See
+`docs/lil_sc2_b205_control_note.md`.
+
+`out/all_routes_unified_lil_v99_candidate.nds`, SHA-256
+`ef4be089c3f1b2200a3405e542d7b520bc4956a2438fc80d3d32200c55b6caa5`,
+uses `all-routes-unified-v65` with 366 experimental batches over the
+unchanged accepted base. All 13 build checks, 53 focused stack tests, Ruff,
+the baseline invariant, and saved-ROM verification pass. The ROM contains
+20,266 exact experimental route records and 209 unchanged exclusions.
+See `docs/all_routes_unified_lil_v99_checkpoint.md`.
+
+Runtime cold-boot and explicit acceptance remain pending. Lil coverage is
+4,556/6,608 translated, 2,012 remaining and 40 excluded. Continue B206.
+
+## Experimental four-route Lil V100 candidate
+
+B206 adds 28 natural-English ceramic-earrings text and choice records with
+one packed item payload excluded unchanged. The four bare choices keep their
+first glyphs. All three contact sheets were reviewed, dialogue QA has zero
+blockers, 54 focused tests and Ruff pass, and the build and saved-ROM checks
+pass. See `docs/all_routes_unified_lil_v100_checkpoint.md`.
+
+Candidate `out/all_routes_unified_lil_v100_candidate.nds`, SHA-256
+`43809c90b4a59ff33382f61d3b6d66455c12d70fe26c90362062118e1a79b96c`,
+contains 20,294 exact experimental route records and 210 unchanged exclusions.
+Lil coverage is 4,584/6,608 translated, 1,983 remaining and 41 excluded.
+Continue B207. Runtime cold-boot and explicit acceptance remain pending.
+
+## Experimental four-route Lil V101 candidate
+
+B207-B214 add 126 natural-English treasure-scene records, with all letter
+variants and five choices, and preserve one packed sword event unchanged.
+All 13 contact sheets, dialogue audit, 55 focused tests, Ruff, 13 build checks,
+baseline invariant and saved-ROM verification pass. See
+`docs/all_routes_unified_lil_v101_checkpoint.md`.
+
+Candidate `out/all_routes_unified_lil_v101_candidate.nds`, SHA-256
+`52f8926665e75694d5ad8d46c79c598f38fc4b05314eb21be87988de7b9eda97`,
+contains 20,420 exact experimental route records and 211 unchanged exclusions.
+Lil coverage is 4,710/6,608 translated, 1,856 remaining and 42 excluded.
+Continue B215. Runtime cold-boot and explicit acceptance remain pending.
+
+## Experimental four-route Lil V102 candidate
+
+B215-B226 add 155 natural-English legend and armor records. All 16 sheets,
+dialogue QA, 57 formatter tests, 56 Lil tests, Ruff, build checks, baseline
+and saved-ROM verification pass. See `docs/all_routes_unified_lil_v102_checkpoint.md`.
+Lil coverage is 4,865/6,608, with 1,701 remaining and 42 excluded. Continue B227.
+Runtime cold-boot and explicit acceptance remain pending.
+
+## Experimental four-route Lil V103 candidate
+
+B227-B238 adds 166 verified natural-English records and no exclusions.
+All 17 sheets, dialogue QA, 57 Lil tests, Ruff, build, baseline and saved-ROM
+checks pass. See `docs/all_routes_unified_lil_v103_checkpoint.md`.
+Coverage 5,031/6,608; 1,535 remaining; 42 excluded. Continue B239.
+Runtime cold-boot and explicit acceptance remain pending.
+
+## Experimental four-route Lil V104 candidate
+
+B239-B249 adds 135 verified natural-English records and one unchanged packed
+figurehead event. All 14 sheets, zero-blocker QA, 58 Lil tests, Ruff, build,
+baseline and saved-ROM checks pass. See `docs/all_routes_unified_lil_v104_checkpoint.md`.
+Coverage 5,166/6,608; 1,399 remaining; 43 excluded. Continue B250.
+Runtime cold-boot and explicit acceptance remain pending.
+
+## Experimental four-route Lil V105 candidate
+
+B250-B254 adds 83 verified natural-English figurehead and puzzle records,
+with one curse-control payload unchanged. All nine sheets, QA, 59 Lil tests,
+Ruff, build, baseline and saved-ROM checks pass. See `docs/all_routes_unified_lil_v105_checkpoint.md`.
+Coverage 5,249/6,608; 1,315 remaining; 44 excluded. Continue B255.
+Runtime cold-boot and explicit acceptance remain pending.

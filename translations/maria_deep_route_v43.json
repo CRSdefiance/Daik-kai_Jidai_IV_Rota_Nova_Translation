@@ -1,0 +1,649 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC3.DK4",
+  "source_file_sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "maria-story-shared-events-v43-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Maria SC3 outstanding tail records: bounty reminders/completion, northern-monk rumor, imperial-palace and ancient-map ruin leads, and verified nontext controls.",
+  "inventory": {
+    "identified_records": 43,
+    "translated_records": 27,
+    "excluded_records": 16,
+    "blocks": {
+      "242": 2,
+      "243": 4,
+      "244": 9,
+      "245": 2,
+      "248": 2,
+      "251": 2,
+      "252": 0,
+      "281": 0,
+      "282": 2,
+      "283": 0,
+      "284": 4,
+      "291": 0,
+      "292": 0,
+      "293": 0
+    }
+  },
+  "excluded": [
+    {
+      "id": "DK4_MES_B252_R0037",
+      "reason": "Eight-byte scene-transition payload 056040468A803E63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B281_R0037",
+      "reason": "Eight-byte scene-transition payload 0560414689803E63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B281_R0316",
+      "reason": "Five-byte scene-control payload 468A808143; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B283_R0035",
+      "reason": "Eight-byte scene-transition payload 056061469A803F63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B283_R0062",
+      "reason": "Four-byte scene-control payload 11469E80; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B283_R0090",
+      "reason": "Four-byte scene-control payload 40469C80; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B291_R0037",
+      "reason": "Eight-byte scene-transition payload 056041468A803E63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B291_R0065",
+      "reason": "Four-byte scene-control payload 21469180; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B291_R0105",
+      "reason": "Four-byte scene-control payload 20468E80; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B291_R0180",
+      "reason": "Four-byte scene-control payload 94468C80; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B292_R0036",
+      "reason": "Seven-byte scene-transition payload 60404699803F63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B292_R0141",
+      "reason": "Six-byte scene-control payload 2B6320469480; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B292_R0215",
+      "reason": "Six-byte scene-control payload 2B6310469480; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B293_R0022",
+      "reason": "Eight-byte scene-transition payload 0560404694803F63; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B293_R0069",
+      "reason": "Three-byte scene-control payload 469580; not independently rendered dialogue."
+    },
+    {
+      "id": "DK4_MES_B293_R0079",
+      "reason": "Six-byte scene-control payload 2B6322469380; not independently rendered dialogue."
+    }
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B242_R0011",
+      "english": "{SPEAKER:03}We must find Jacob's fleet.{PAD}",
+      "speaker": "Maria",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "We must find Jacob's fleet.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B242_R0023",
+      "english": "{SPEAKER:94}Still no sign of Jacob?{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Still no sign of Jacob?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B243_R0004",
+      "english": "{SPEAKER:93}You look capable.{LB}Will you take down a wanted man?{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "You look capable. Will you take down a wanted man?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B243_R0008",
+      "english": "{SPEAKER:93}Gabriel Carducci is an outlaw.{LB}He trades here against our pact{LB}and harms our business.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Gabriel Carducci is an outlaw. He trades here against our pact and harms our business.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B243_R0011",
+      "english": "{SPEAKER:93}He has a fleet too strong{LB}for the guards.{LB}Take this advance and prepare well.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "He has a fleet too strong for the guards. Take this advance and prepare well.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B243_R0021",
+      "english": "{SPEAKER:FE}Received 12,000 coins.{PAD}",
+      "speaker": "System",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Received 12,000 coins.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0004",
+      "english": "{SPEAKER:93}Gabriel!{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Gabriel!",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0008",
+      "english": "{SPEAKER:43}Sorry. Never again.{PAD}",
+      "speaker": "Gabriel Carducci",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Sorry. Never again.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0012",
+      "english": "{SPEAKER:93}Can we trust that...?{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Can we trust that...?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0016",
+      "english": "{SPEAKER:93}Anyway, thank you.{LB}Here is the rest of your reward.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Anyway, thank you. Here is the rest of your reward.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0020",
+      "english": "{SPEAKER:FE}Received 72,000 coins.{PAD}",
+      "speaker": "System",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Received 72,000 coins.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0046",
+      "english": "{SPEAKER:FE}Havana share rose slightly!{PAD}",
+      "speaker": "System",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Havana share rose slightly!",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0065",
+      "english": "{SPEAKER:93}Have you seen the village{LB}far north in the New World?{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Have you seen the village far north in the New World?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0069",
+      "english": "{SPEAKER:93}A monk from this city went north{LB}to spread his faith...{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "A monk from this city went north to spread his faith...",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B244_R0073",
+      "english": "{SPEAKER:93}He vanished after finding{LB}the village.{LB}Hope he is safe.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "He vanished after finding the village. Hope he is safe.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B245_R0011",
+      "english": "{SPEAKER:03}Gabriel's fleet is{LB}in the New World.{PAD}",
+      "speaker": "Maria",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Gabriel's fleet is in the New World.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B245_R0023",
+      "english": "{SPEAKER:93}Catch Gabriel, and hurry.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Catch Gabriel, and hurry.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B248_R0011",
+      "english": "{SPEAKER:03}We must defeat pirate William.{PAD}",
+      "speaker": "Maria",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "We must defeat pirate William.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B248_R0023",
+      "english": "{SPEAKER:93}William's fleet is{LB}in the New World.{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "William's fleet is in the New World.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B251_R0011",
+      "english": "{SPEAKER:03}Hernan, pirate of{LB}the Mediterranean.{PAD}",
+      "speaker": "Maria",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Hernan, pirate of the Mediterranean.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B251_R0023",
+      "english": "{SPEAKER:94}Hurry and crush Hernan!{PAD}",
+      "speaker": "Guildmaster",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Hurry and crush Hernan!",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B282_R0006",
+      "english": "{SPEAKER:C9}{MACRO:FI}, welcome!{PAD}",
+      "speaker": "Tavern patron",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "the protagonist's given name, welcome!",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B282_R0009",
+      "english": "{SPEAKER:C9}We saw the imperial palace.{LB}Such a vast place!{LB}You should see it too.{PAD}",
+      "speaker": "Tavern patron",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "We saw the imperial palace. Such a vast place! You should see it too.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B284_R0005",
+      "english": "{SPEAKER:CD}Ah, {MACRO:FI}.{LB}A message for you{LB}slipped my mind.{PAD}",
+      "speaker": "Tavern patron",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Ah, the protagonist's given name. A message for you slipped my mind.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B284_R0009",
+      "english": "{SPEAKER:CD}An ancient map was found.{LB}They say it marks ruins{LB}of an old kingdom near this city.{PAD}",
+      "speaker": "Tavern patron",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "An ancient map was found. They say it marks ruins of an old kingdom near this city.",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B284_R0012",
+      "english": "{SPEAKER:03}A map...{LB}Sounds intriguing.{LB}Know where it is?{PAD}",
+      "speaker": "Maria",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "A map... Sounds intriguing. Know where it is?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B284_R0016",
+      "english": "{SPEAKER:CD}Sorry, no.{LB}But if you are curious,{LB}why not search for it?{PAD}",
+      "speaker": "Tavern patron",
+      "context": "Outstanding bounty reminders and completion, northern-monk rumor, and late-route ruin leads.",
+      "source_meaning": "Sorry, no. But if you are curious, why not search for it?",
+      "localization_note": "Direct SC3 translation reviewed for natural English, reward and location parity, macro preservation, and state-byte safety.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source transition or semantic grouping.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

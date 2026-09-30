@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v101"]["batches"]);b.append("translations/maria_deep_route_v102.json");p["profiles"]["maria-deep-route-v102"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V101 with all 67 records in SC3 block 135: Cesare Tohni's rescue, recruitment, and ship-purchasing tutorial."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v102: {len(b)} batches")

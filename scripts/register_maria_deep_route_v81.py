@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v80"]["batches"]);b.append("translations/maria_deep_route_v81.json");p["profiles"]["maria-deep-route-v81"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V80 with all 46 records in SC3 block 88: the complete megalith-cult infiltration, companion variants, staged army assault, and treasure seizure."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v81: {len(b)} batches")

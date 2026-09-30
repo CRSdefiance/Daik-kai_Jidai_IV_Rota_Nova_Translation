@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 from dataclasses import asdict, dataclass
+from functools import cache
 
 from .codec import PairPhaseError, parse_markup, tokenize_raw, tokens_to_bytes, tokens_to_markup
 from .model import DialogueToken
@@ -37,6 +38,10 @@ def _text_units(token: DialogueToken) -> list[DialogueToken]:
 
 
 def wrap_tokens(tokens: list[DialogueToken], profile: DialogueProfile) -> list[DialogueToken]:
+    if profile.balanced_wrapping:
+        planned = _balanced_wrap(tokens, profile)
+        if planned is not None:
+            return planned
     output: list[DialogueToken] = []
     line_width = 0
     pending_space: DialogueToken | None = None
@@ -110,6 +115,107 @@ def wrap_tokens(tokens: list[DialogueToken], profile: DialogueProfile) -> list[D
                     line_width += token_width(unit, profile)
                 continue
             append_visible(unit)
+    return output
+
+
+def _balanced_wrap(
+    tokens: list[DialogueToken], profile: DialogueProfile,
+) -> list[DialogueToken] | None:
+    """Plan automatic word breaks without changing text or runtime commands.
+
+    Keep historical profiles on the greedy wrapper. This opt-in planner reserves
+    one cell before each newline for progressive pair-phase repair, balances
+    rows, and avoids leaving an article/preposition or tiny fragment by itself.
+    Explicit author layout continues through the established wrapper.
+    """
+    if any(t.kind in {"line_break", "align", "raw_control"} for t in tokens):
+        return None
+    prefix: list[DialogueToken] = []
+    suffix: list[DialogueToken] = []
+    words: list[list[DialogueToken]] = []
+    spaces: list[str] = []
+    pending = ""
+    for token in tokens:
+        if token.kind == "speaker":
+            if words:
+                return None
+            prefix.append(token)
+            continue
+        if token.kind in {"pad", "end"}:
+            suffix.append(token)
+            continue
+        if suffix:
+            return None
+        units = _text_units(token) if token.kind == "text" else [token]
+        for unit in units:
+            if unit.kind == "text" and unit.value.isspace():
+                pending += unit.value
+                continue
+            if not words or pending:
+                spaces.append(pending)
+                words.append([unit])
+            else:
+                words[-1].append(unit)
+            pending = ""
+    if not words or spaces[0]:
+        return None
+    widths = [sum(token_width(t, profile) for t in word) for word in words]
+    labels = ["".join(t.value for t in word if t.kind == "text") for word in words]
+    weak = {"a", "an", "as", "at", "for", "from", "in", "of", "the", "to", "with"}
+    cell = profile.glyph_width(" ")
+    count = len(words)
+
+    @cache
+    def solve(start: int, row: int):
+        if start == count:
+            return (0, 0, 0, 0), ()
+        if row >= profile.max_lines:
+            return None
+        width = cell if row and profile.guard_linebreaks else 0
+        best = None
+        for end in range(start, count):
+            if end > start:
+                width += sum(profile.glyph_width(c) for c in spaces[end])
+            width += widths[end]
+            final = end + 1 == count
+            reserve = cell if profile.pair_phase_safe_breaks and not final else 0
+            if width + reserve > profile.window_width_px:
+                continue
+            tail = solve(end + 1, row + 1)
+            if tail is None:
+                continue
+            tail_cost, breaks = tail
+            end_word = labels[end].strip(".,!?;:\"'").casefold()
+            orphan = final and start > 0 and len(" ".join(labels[start:end + 1])) <= 8
+            slack = (profile.window_width_px - width) // max(cell, 1)
+            cost = (
+                tail_cost[0] + 1,
+                tail_cost[1] + int(not final and end_word in weak),
+                tail_cost[2] + int(orphan),
+                # Fill preceding rows before the final row: fixed records
+                # append ordinary-space padding that also occupies that row.
+                tail_cost[3] + (0 if final else slack * slack),
+            )
+            proposal = cost, (end + 1, *breaks)
+            if best is None or cost < best[0]:
+                best = proposal
+        return best
+
+    plan = solve(0, 0)
+    if plan is None:
+        return None
+    output = list(prefix)
+    start = 0
+    for stop in plan[1]:
+        if start:
+            output.append(DialogueToken("line_break", "", b"\x0A"))
+        for index in range(start, stop):
+            if index > start:
+                gap = spaces[index]
+                output.append(DialogueToken("text", gap, gap.encode("cp932")))
+            output.extend(words[index])
+        start = stop
+    output.extend(suffix)
     return output
 
 

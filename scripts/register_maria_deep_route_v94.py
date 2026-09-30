@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v93"]["batches"]);b.append("translations/maria_deep_route_v94.json");p["profiles"]["maria-deep-route-v94"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V93 with 44 translations, two preserved controls, and one V29-inherited guard record in SC3 blocks 116-120: judgment anecdote and African/Mediterranean Proof-map reveals."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v94: {len(b)} batches")
