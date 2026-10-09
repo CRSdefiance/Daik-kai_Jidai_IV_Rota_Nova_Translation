@@ -8,10 +8,13 @@ legally dumped ROM. The tool never downloads a ROM and never edits its input in 
 
 ## Current combined patch
 
-All four routes are combined in [Unified V89](releases/all_routes_unified_v89/README.md).
-Lil's translation inventory has zero remaining records. See the
-[translation progress sheet](docs/translation_progress.md) for all route and shared-text coverage.
-This is an experimental candidate awaiting emulator gameplay verification.
+The latest experimental combined patch is [Unified V245](releases/all_routes_unified_v245/README.md).
+It preserves all four routes and the cumulative shared UI, text and graphics layers.
+Graphics localization and complete gameplay verification remain in progress; the
+four partially translated Online screenshot bodies and other open items are recorded
+in the [translation progress sheet](docs/translation_progress.md) and
+[graphics campaign](translations/graphics_completion_campaign_v1.json).
+The earlier [Unified V89 package](releases/all_routes_unified_v89/README.md) remains available.
 
 ## Safe integrated builds
 

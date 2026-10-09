@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import sys
@@ -47,6 +48,10 @@ def load_translated_records(translations: Path) -> set[tuple[str, str]]:
         batch = json.loads(path.read_text(encoding="utf-8"))
         if batch.get("format") != "dk4-ilnk-translation-batch-v1":
             continue
+        if batch.get('content_type') == 'common-native-layout-v1':
+            # Audit coordinates include untranslated Japanese and are not
+            # translation declarations in the original source coordinate space.
+            continue
         file_path = str(batch.get("file_path", ""))
         for record in batch.get("records", []):
             if str(record.get("english", "")).strip():
@@ -71,6 +76,43 @@ def build_report(source_root: Path, translations: Path) -> str:
         (name for name in stack["profiles"] if name.startswith("all-routes-unified-v")),
         key=lambda name: int(name.rsplit("v", 1)[1]),
     )
+    reblocking_config = stack['profiles'][unified_profile].get('common_native_reblocking')
+    if reblocking_config:
+        # Registered transforms enforce complete native-owner coverage. Count
+        # their reviewed manuscripts in clean source coordinates, never the
+        # relocated audit layout, which also contains untranslated Japanese.
+        config = json.loads(Path(reblocking_config).read_text(encoding='utf-8'))
+        for declaration in config['manuscripts'] + config.get('pre_repack_manuscripts', []):
+            raw = Path(declaration['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != declaration['sha256']:
+                raise ValueError('Registered native manuscript differs from its reviewed hash')
+            manuscript = json.loads(raw)
+            gates = ('source', 'context', 'localization', 'naturalness', 'formatting')
+            if not all(row.get('review', {}).get(gate) is True
+                       for row in manuscript['records'] for gate in gates):
+                continue
+            for row in manuscript['records']:
+                translated.add(('/COMMON/MESFILE.DK4',
+                                f"DK4_MES_B{row['block']:02d}_R{row['record']:04d}"))
+    for repair_key in ('common_blizzard_release', 'common_placeholder_release'):
+        repair_config = stack['profiles'][unified_profile].get(repair_key)
+        if not repair_config:
+            continue
+        repair = json.loads(Path(repair_config).read_text(encoding='utf-8'))
+        for name, expected_hash in repair['dependencies'].items():
+            raw = Path(name).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != expected_hash:
+                raise ValueError('Registered native repair manuscript/evidence changed')
+            manuscript = json.loads(raw)
+            if manuscript.get('format') != 'dk4-common-entry-manuscript-v1':
+                continue
+            gates = ('source', 'context', 'localization', 'naturalness', 'formatting')
+            if not all(row.get('review', {}).get(gate) is True
+                       for row in manuscript['records'] for gate in gates):
+                raise ValueError('Registered native repair has unreviewed entries')
+            for row in manuscript['records']:
+                translated.add(('/COMMON/MESFILE.DK4',
+                                f"DK4_MES_B{row['block']:02d}_R{row['record']:04d}"))
     accepted = json.loads(
         (translations / "accepted_baseline.json").read_text(encoding="utf-8")
     )

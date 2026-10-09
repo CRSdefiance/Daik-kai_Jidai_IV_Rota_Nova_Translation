@@ -39,6 +39,11 @@ family relationships, ranks, or other story facts.
 - Confirm the ARM9 still contains `Continue`, `New Game`, `Options`, `Grand Race`, `Extras`, and `Gallery`.
 - Preserve previously translated graphics. Do not rebuild from a source that predates them.
 - Treat every leading byte below `0x20` in a story record as executable speaker/layout state, not ordinary text. Do not translate a record carrying one until its complete preamble and its portrait/name effect have been mapped in a live probe. Keeping only the first byte is not sufficient: the following bytes may be part of the same command.
+- A leading raw `FE` is a system-panel selector. Preserve it as a control byte,
+  never as a decoded CP932 private-use character (`F8 F2` after re-encoding).
+  Its native modal consumer is distinct from progressive dialogue. Audit exact
+  glyphs and panel bounds for its formatting; guard counts alone do not prove
+  missing text. Every playable build rejects the known converted selector.
 - Treat ARM9 text renderers as format-specific. The Options report and sailing-help prompts use a fixed-width Shift-JIS renderer; plain ASCII replacement corrupts them even when the byte-level diff is otherwise valid. Use CP932 full-width Latin text there, preserve `%s` substitutions, and cold-boot test the result. The BGM/SFX selector names are a separate packed `MESFILE` table and must not be patched as ordinary independent rows until their internal offsets are mapped.
 - Do not copy established manual line breaks into newly localized prose. Legacy
   breaks are evidence to audit, not layout instructions. Migrate each record to one

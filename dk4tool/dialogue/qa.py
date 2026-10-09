@@ -10,7 +10,7 @@ from .encoder import (
 )
 from .layout import token_width
 from .preview import visible_lines
-from .profiles import DialogueProfile
+from .profiles import DialogueProfile, get_dialogue_profile
 
 WEAK_LINE_ENDINGS = {
     "a",
@@ -25,6 +25,37 @@ WEAK_LINE_ENDINGS = {
     "to",
     "with",
 }
+
+
+def audit_native_common_entry(source_raw: bytes, target_markup: str) -> dict[str, object]:
+    """Audit COMMON's native wrapper without storing the preview's line breaks.
+
+    Native entry bounds come from the ARM9 table. Visual wrapping, command
+    safety and prose heuristics share the existing dialogue QA, while byte
+    allocation is measured against the actual unbroken native paragraph.
+    This does not relocate the record or alter the native offset table.
+    """
+    text = target_markup.removesuffix("{PAD}")
+    profile = get_dialogue_profile("shared")
+    report = audit_relocatable_dialogue_record(source_raw, text, profile)
+    try:
+        if "{" in text or "\n" in text or "\r" in text:
+            raise ValueError("native COMMON prose requires one plain paragraph")
+        if any(ord(character) > 127 and character not in {"Ｆ", "Ｉ"} for character in text):
+            raise ValueError("native English permits only ASCII and safe full-width reserved Latin glyphs")
+        encoded = text.encode("cp932")
+        if len(encoded) > len(source_raw):
+            raise ValueError(f"native entry requires {len(encoded)} bytes in {len(source_raw)}")
+        report["native_padding_bytes"] = len(source_raw) - len(encoded)
+        report["native_encoded_hex"] = encoded.ljust(len(source_raw), b" ").hex().upper()
+        widths = report.get("line_widths_px", [])
+        if widths:
+            padding_rows = (widths[-1] + report["native_padding_bytes"] * profile.glyph_width(" ")) // profile.window_width_px
+            if len(widths) + padding_rows > profile.max_lines:
+                raise ValueError("native padding would advance into a blank dialogue page")
+    except (ValueError, UnicodeEncodeError) as error:
+        report["issues"].append(DialogueQaIssue("error", "native-entry-encoding", str(error)).to_dict())
+    return report
 
 
 @dataclass(frozen=True)

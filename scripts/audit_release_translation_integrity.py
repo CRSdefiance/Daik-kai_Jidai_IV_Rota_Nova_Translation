@@ -11,7 +11,7 @@ from pathlib import Path
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
 from dk4tool.scan.sjis_scan import contains_japanese
-
+from dk4tool.script.common_message_table import common_message_entries
 
 STACK = Path("translations/release_stack.json")
 TEXT_PATHS = {
@@ -52,6 +52,25 @@ def has_text(raw: bytes) -> bool:
         return False
     decoded = raw.decode("cp932", errors="replace")
     return any(character.isalnum() for character in decoded) or contains_japanese(decoded)
+
+
+def common_native_source_spans(clean_rom: NdsImage, candidate_rom: NdsImage) -> dict:
+    """Pair selected source/current spans by proven global message identity."""
+    source = common_message_entries(clean_rom.read_file('/COMMON/MESFILE.DK4'),
+                                    clean_rom.read_file('/__arm9__.bin'))
+    current = common_message_entries(candidate_rom.read_file('/COMMON/MESFILE.DK4'),
+                                     candidate_rom.read_file('/__arm9__.bin'), clean=False)
+    spans = {}
+    for before, after in zip(source, current, strict=True):
+        if before.message_id != after.message_id:
+            raise ValueError('COMMON native source/current identities differ')
+        spans[(after.block, after.record_index, after.start, after.end)] = before.text
+    return spans
+
+
+def native_entry_was_erased(current: bytes, source: bytes) -> bool:
+    """Nonverbal punctuation is visible content; whitespace is not."""
+    return bool(visible(source)) and not visible(current)
 
 
 def invalid_printf_offsets(raw: bytes) -> list[int]:
@@ -148,6 +167,18 @@ def build_report(candidate: Path, clean: Path, profile: str) -> dict[str, object
     clean_rom = NdsImage.open(clean)
     active = profile_paths(profile)
     declarations = list(iter_declarations(active))
+    historical_common_coordinates_not_compared = 0
+    config_name = load_json(STACK)['profiles'][profile].get('common_native_reblocking')
+    if config_name:
+        # Historical block/record coordinates no longer identify these messages.
+        # The complete native layout replaces them; keep other files' evidence.
+        layout_path = load_json(Path(config_name))['layout_batch']
+        layout_declarations = list(iter_declarations({Path(layout_path)}))
+        historical_common_coordinates_not_compared = sum(
+            d['file_path'] == '/COMMON/MESFILE.DK4' for d in declarations
+        )
+        declarations = [d for d in declarations if d['file_path'] != '/COMMON/MESFILE.DK4']
+        declarations.extend(d for d in layout_declarations if d['batch'] == layout_path)
     grouped: dict[tuple[str, int, int], list[dict[str, object]]] = defaultdict(list)
     for declaration in declarations:
         grouped[
@@ -170,6 +201,7 @@ def build_report(candidate: Path, clean: Path, profile: str) -> dict[str, object
     corpus_records = 0
     printf_records = 0
     runtime_name_count = 0
+    native_sources = common_native_source_spans(clean_rom, candidate_rom)
 
     for (file_path, block_index, record_index), rows in sorted(grouped.items()):
         candidate_blocks = candidate_files[file_path].blocks
@@ -178,10 +210,12 @@ def build_report(candidate: Path, clean: Path, profile: str) -> dict[str, object
             continue
         candidate_records = candidate_blocks[block_index].split(b"\0")
         clean_records = clean_blocks[block_index].split(b"\0")
-        if record_index >= len(candidate_records) or record_index >= len(clean_records):
+        if record_index >= len(candidate_records):
+            continue
+        if record_index >= len(clean_records) and not (config_name and file_path == '/COMMON/MESFILE.DK4'):
             continue
         raw = candidate_records[record_index]
-        source = clean_records[record_index]
+        source = clean_records[record_index] if record_index < len(clean_records) else b''
         active_rows = [row for row in rows if bool(row["active"])]
         active_records += int(bool(active_rows))
         corpus_records += 1
@@ -228,15 +262,22 @@ def build_report(candidate: Path, clean: Path, profile: str) -> dict[str, object
         for (start, end), batches in sorted(boundaries.items()):
             audited_entries += 1
             segment = raw[start:end]
-            if has_text(segment):
-                continue
-            source_segment = source[start : min(end, len(source))]
-            if has_text(source_segment):
-                active_boundary = any(
+            active_boundary = any(
                     row["active"]
                     and start in row["offsets"]
                     for row in rows
                 )
+            native_source = native_sources.get((block_index, record_index, start, end)) if (
+                file_path == '/COMMON/MESFILE.DK4' and active_boundary
+            ) else None
+            if native_source is not None:
+                # Repacked offsets cannot index the old clean record. Include
+                # intentional punctuation-only pauses in disappearance checks.
+                erased = native_entry_was_erased(segment, native_source)
+            else:
+                source_segment = source[start : min(end, len(source))]
+                erased = not has_text(segment) and has_text(source_segment)
+            if erased:
                 issues.append(
                     {
                         "severity": "error" if active_boundary else "warning",
@@ -392,6 +433,8 @@ def build_report(candidate: Path, clean: Path, profile: str) -> dict[str, object
         "clean_source": str(clean),
         "profile": profile,
         "declaration_count": len(declarations),
+        "historical_common_coordinate_declarations_not_compared": historical_common_coordinates_not_compared,
+        "common_native_relocation_layout_used": bool(config_name),
         "corpus_record_count": corpus_records,
         "active_declared_record_count": active_records,
         "audited_entry_count": audited_entries,

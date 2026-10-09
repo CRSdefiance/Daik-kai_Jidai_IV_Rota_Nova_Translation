@@ -108,6 +108,7 @@ class FlsTexture:
 class FlsArchive:
     def __init__(self, data: bytes):
         self.source = data
+        self.compressed_storage = bool(struct.unpack_from("<I", data)[0] & 0x80)
         self.table_offset, self.count, self.data_offset = struct.unpack_from("<III", data, 4)
         self.records = [
             list(struct.unpack_from("<6I", data, self.table_offset + index * 24))
@@ -118,9 +119,15 @@ class FlsArchive:
     def texture(self, index: int) -> FlsTexture:
         if index in self.textures:
             return self.textures[index]
-        flags, dimensions, palette_offset, _, pixels_offset, _ = self.records[index]
-        palette_data = decompress_lz10(self.source[self.data_offset + palette_offset :])
-        pixels = decompress_lz10(self.source[self.data_offset + pixels_offset :])
+        flags, dimensions, palette_offset, palette_size, pixels_offset, pixels_size = self.records[index]
+        if self.compressed_storage:
+            palette_data = decompress_lz10(self.source[self.data_offset + palette_offset :])
+            pixels = decompress_lz10(self.source[self.data_offset + pixels_offset :])
+        else:
+            palette_data = self.source[self.data_offset + palette_offset : self.data_offset + palette_offset + palette_size]
+            pixels = self.source[self.data_offset + pixels_offset : self.data_offset + pixels_offset + pixels_size]
+            if len(palette_data) != palette_size or len(pixels) != pixels_size:
+                raise ValueError("Uncompressed FLS slot extends beyond the source file")
         palette = [
             bgr555(value)
             for (value,) in struct.iter_unpack("<H", palette_data[: len(palette_data) & ~1])
@@ -136,7 +143,9 @@ class FlsArchive:
             raise ValueError(f"unsupported FLS palette size: {len(palette)}")
 
         visible_height = dimensions & 0xFFFF
-        height = min(256, _next_power_of_two(max(8, visible_height)))
+        height = _next_power_of_two(max(8, visible_height))
+        if self.compressed_storage:
+            height = min(256, height)
         if len(indices) % height:
             raise ValueError("FLS texture dimensions do not divide its pixels")
         width = len(indices) // height
@@ -155,7 +164,7 @@ class FlsArchive:
                     )
             else:
                 pixels = texture.indices
-            compressed = compress_lz10(bytes(pixels))
+            compressed = compress_lz10(bytes(pixels)) if self.compressed_storage else bytes(pixels)
             pixels_offset = self.records[index][4]
             slot_size = self.records[index][5]
             if len(compressed) > slot_size:
