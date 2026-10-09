@@ -1,0 +1,974 @@
+{
+  "format": "dk4-item-interface-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "source_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ITEMS_ACQUIRED",
+      "source_fields": [
+        {
+          "field": 283104,
+          "source_pointer": 34847192,
+          "source_hex": "93fc8ee883418343836583808140253364815e253364",
+          "japanese": "入手アイテム　%3d／%3d"
+        }
+      ],
+      "japanese": "入手アイテム　%3d／%3d",
+      "english": "Items Acquired %d/%d",
+      "compiled": "Items Acquired %3d/%3d",
+      "speaker": "Item interface",
+      "context": "Gallery item counter native 02044F6C-02044F9C in a 144x36 view; shared detail native 0204D594 in a 240x96 canvas, and standalone 0204E3F0. Existing Items title is centered around x120/y84. Advice is a separate conditional menu command selected by native constructors; its actual consumer remains pending. Item-only category and crew-role projections occupy x0 and x88, with Effect at x180 and its byte value at x218. Native detail contexts use tracking -1; initial color1 is retained. Owner heading and name share y24; the name moves to x88. Actual resource providers, longer real names and parent composition still need verification.",
+      "source_meaning": "The number of acquired items out of the complete collection.",
+      "localization_note": "Retain both counts. The compiler supplies the original three-character number fields; the native caller supplies total 198.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ADVICE",
+      "source_fields": [
+        {
+          "field": 284260,
+          "source_pointer": 34847228,
+          "source_hex": "8f958cbe",
+          "japanese": "助言"
+        },
+        {
+          "field": 315988,
+          "source_pointer": 34857720,
+          "source_hex": "8f958cbe",
+          "japanese": "助言"
+        }
+      ],
+      "japanese": "助言",
+      "english": "Advice",
+      "compiled": "Advice",
+      "speaker": "Item interface",
+      "context": "Conditional slot2 in native Gallery and regular item menu descriptors. Actual native setup executes option bit4 and preserves Select availability. CA890/CA780 transfer the generated descriptor and render the complete footer. The six-letter Advice label measures 36 pixels and fits alongside Back/Select/Prev/Next in every mapped state. Outer widget binding and physical controller composition remain pending.",
+      "source_meaning": "The Advice command in an item menu.",
+      "localization_note": "Retain the standalone command Advice. Both source owners feed the actual conditional descriptors; all first, interior and final glyphs are verified through their native footer consumers.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_evidence": {
+        "target_arm9_sha256": "edb1032dd92bfbe0c73f18ffdcae71f3b78108bab4ed7546f8b8d3fada739663",
+        "proof": "work/analysis/item_advice_menus_native_proof.json",
+        "native_state_format_cases": 12,
+        "scope": "Local actual descriptor and complete footer text; physical parent/input pending."
+      }
+    },
+    {
+      "id": "ITEM_EFFECT",
+      "source_fields": [
+        {
+          "field": 317540,
+          "source_pointer": 34857744,
+          "source_hex": "8cf889ca",
+          "japanese": "効果"
+        },
+        {
+          "field": 320816,
+          "source_pointer": 34857812,
+          "source_hex": "8cf889ca",
+          "japanese": "効果"
+        }
+      ],
+      "japanese": "効果",
+      "english": "Effect",
+      "compiled": "Effect",
+      "speaker": "Item interface",
+      "context": "Gallery item counter native 02044F6C-02044F9C in a 144x36 view; shared detail native 0204D594 in a 240x96 canvas, and standalone 0204E3F0. Existing Items title is centered around x120/y84. Advice is a separate conditional menu command selected by native constructors; its actual consumer remains pending. Item-only category and crew-role projections occupy x0 and x88, with Effect at x180 and its byte value at x218. Native detail contexts use tracking -1; initial color1 is retained. Owner heading and name share y24; the name moves to x88. Actual resource providers, longer real names and parent composition still need verification.",
+      "source_meaning": "The item effect magnitude.",
+      "localization_note": "Retain the effect subject. The formatter provides separate category, role, effect and value columns with narrow tracking.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_EQUIPPED_BY",
+      "source_fields": [
+        {
+          "field": 317548,
+          "source_pointer": 34857760,
+          "source_hex": "919594f58ed2",
+          "japanese": "装備者"
+        }
+      ],
+      "japanese": "装備者",
+      "english": "Equipped By",
+      "compiled": "Equipped By ",
+      "speaker": "Item interface",
+      "context": "Gallery item counter native 02044F6C-02044F9C in a 144x36 view; shared detail native 0204D594 in a 240x96 canvas, and standalone 0204E3F0. Existing Items title is centered around x120/y84. Advice is a separate conditional menu command selected by native constructors; its actual consumer remains pending. Item-only category and crew-role projections occupy x0 and x88, with Effect at x180 and its byte value at x218. Native detail contexts use tracking -1; initial color1 is retained. Owner heading and name share y24; the name moves to x88. Actual resource providers, longer real names and parent composition still need verification.",
+      "source_meaning": "The person currently equipped with the item.",
+      "localization_note": "Retain the equipped-person heading. The native name shares this row, so its column moves to x88; do not invent an ownership or family relationship.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_USE",
+      "source_fields": [
+        {
+          "field": 317556,
+          "source_pointer": 34857768,
+          "source_hex": "8e6782a4",
+          "japanese": "使う"
+        }
+      ],
+      "japanese": "使う",
+      "english": "Use",
+      "compiled": "Use ",
+      "speaker": "Item interface",
+      "context": "Gallery item counter native 02044F6C-02044F9C in a 144x36 view; shared detail native 0204D594 in a 240x96 canvas, and standalone 0204E3F0. Existing Items title is centered around x120/y84. Advice is a separate conditional menu command selected by native constructors; its actual consumer remains pending. Item-only category and crew-role projections occupy x0 and x88, with Effect at x180 and its byte value at x218. Native detail contexts use tracking -1; initial color1 is retained. Owner heading and name share y24; the name moves to x88. Actual resource providers, longer real names and parent composition still need verification.",
+      "source_meaning": "Use, the heading for an unassigned or usable item.",
+      "localization_note": "Retain the native branch meaning. This label is also distinct from the price branch.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "ITEM_EQUIPPED_SHIP",
+      "source_fields": [
+        {
+          "field": 317572,
+          "source_pointer": 34857788,
+          "source_hex": "919594f59144",
+          "japanese": "装備船"
+        }
+      ],
+      "japanese": "装備船",
+      "english": "Equipped Ship",
+      "compiled": "Equipped Ship ",
+      "speaker": "Item interface",
+      "context": "Gallery item counter native 02044F6C-02044F9C in a 144x36 view; shared detail native 0204D594 in a 240x96 canvas, and standalone 0204E3F0. Existing Items title is centered around x120/y84. Advice is a separate conditional menu command selected by native constructors; its actual consumer remains pending. Item-only category and crew-role projections occupy x0 and x88, with Effect at x180 and its byte value at x218. Native detail contexts use tracking -1; initial color1 is retained. Owner heading and name share y24; the name moves to x88. Actual resource providers, longer real names and parent composition still need verification.",
+      "source_meaning": "The ship currently equipped with the item.",
+      "localization_note": "Retain ship as the category. The native name shares this row, so its column moves to x88 with a four-pixel gap after the complete heading.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_00",
+      "kind": "CATEGORY",
+      "index": 0,
+      "source_fields": [
+        {
+          "field": 1295184,
+          "source_pointer": 34849416,
+          "source_hex": "8cb48e5995a8",
+          "japanese": "原産物"
+        }
+      ],
+      "japanese": "原産物",
+      "english": "Local Product",
+      "compiled": "Local Product ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A product native to a region.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_01",
+      "kind": "CATEGORY",
+      "index": 1,
+      "source_fields": [
+        {
+          "field": 1295188,
+          "source_pointer": 34849504,
+          "source_hex": "8d718a4397709569",
+          "japanese": "航海用品"
+        }
+      ],
+      "japanese": "航海用品",
+      "english": "Navigation Gear",
+      "compiled": "Navigation Gear ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "An item used for navigation or sailing.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_02",
+      "kind": "CATEGORY",
+      "index": 2,
+      "source_fields": [
+        {
+          "field": 1295192,
+          "source_pointer": 34849392,
+          "source_hex": "95908aed",
+          "japanese": "武器"
+        }
+      ],
+      "japanese": "武器",
+      "english": "Weapon",
+      "compiled": "Weapon",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A weapon.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_03",
+      "kind": "CATEGORY",
+      "index": 3,
+      "source_fields": [
+        {
+          "field": 1295196,
+          "source_pointer": 34849400,
+          "source_hex": "96688bef",
+          "japanese": "防具"
+        }
+      ],
+      "japanese": "防具",
+      "english": "Armor",
+      "compiled": "Armor ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "Protective armor.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_04",
+      "kind": "CATEGORY",
+      "index": 4,
+      "source_fields": [
+        {
+          "field": 1295200,
+          "source_pointer": 34849432,
+          "source_hex": "919594f59569",
+          "japanese": "装備品"
+        }
+      ],
+      "japanese": "装備品",
+      "english": "Equipment",
+      "compiled": "Equipment ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "An item of equipment.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_05",
+      "kind": "CATEGORY",
+      "index": 5,
+      "source_fields": [
+        {
+          "field": 1295204,
+          "source_pointer": 34849424,
+          "source_hex": "91448ef1919c",
+          "japanese": "船首像"
+        }
+      ],
+      "japanese": "船首像",
+      "english": "Figurehead",
+      "compiled": "Figurehead",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "An ornamental figure mounted at the bow of a ship.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_06",
+      "kind": "CATEGORY",
+      "index": 6,
+      "source_fields": [
+        {
+          "field": 1295208,
+          "source_pointer": 34849456,
+          "source_hex": "93e482cc8fac95a8",
+          "japanese": "謎の小物"
+        }
+      ],
+      "japanese": "謎の小物",
+      "english": "Mystery Item",
+      "compiled": "Mystery Item",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A mysterious small object.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_07",
+      "kind": "CATEGORY",
+      "index": 7,
+      "source_fields": [
+        {
+          "field": 1295212,
+          "source_pointer": 34849440,
+          "source_hex": "91a182e895a8",
+          "japanese": "贈り物"
+        }
+      ],
+      "japanese": "贈り物",
+      "english": "Gift",
+      "compiled": "Gift",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A gift.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_08",
+      "kind": "CATEGORY",
+      "index": 8,
+      "source_fields": [
+        {
+          "field": 1295216,
+          "source_pointer": 34849468,
+          "source_hex": "94658ed282cc8fd8",
+          "japanese": "覇者の証"
+        }
+      ],
+      "japanese": "覇者の証",
+      "english": "Proof",
+      "compiled": "Proof ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A regional proof of supremacy.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_09",
+      "kind": "CATEGORY",
+      "index": 9,
+      "source_fields": [
+        {
+          "field": 1295220,
+          "source_pointer": 34849516,
+          "source_hex": "8fd882cc926e907d",
+          "japanese": "証の地図"
+        }
+      ],
+      "japanese": "証の地図",
+      "english": "Proof Map",
+      "compiled": "Proof Map ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A map to a proof of supremacy.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_10",
+      "kind": "CATEGORY",
+      "index": 10,
+      "source_fields": [
+        {
+          "field": 1295224,
+          "source_pointer": 34849480,
+          "source_hex": "88e290d5926e907d",
+          "japanese": "遺跡地図"
+        }
+      ],
+      "japanese": "遺跡地図",
+      "english": "Ruin Map",
+      "compiled": "Ruin Map",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A map to a historic ruin.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_11",
+      "kind": "CATEGORY",
+      "index": 11,
+      "source_fields": [
+        {
+          "field": 1295228,
+          "source_pointer": 34849408,
+          "source_hex": "82bb82cc91bc",
+          "japanese": "その他"
+        }
+      ],
+      "japanese": "その他",
+      "english": "Other",
+      "compiled": "Other ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "An item in the remaining category.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_CATEGORY_12",
+      "kind": "CATEGORY",
+      "index": 12,
+      "source_fields": [
+        {
+          "field": 1295232,
+          "source_pointer": 34849492,
+          "source_hex": "8cc382cc926e907d",
+          "japanese": "古の地図"
+        }
+      ],
+      "japanese": "古の地図",
+      "english": "Ancient Map",
+      "compiled": "Ancient Map ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "An ancient map.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_00",
+      "kind": "ROLE",
+      "index": 0,
+      "source_fields": [
+        {
+          "field": 1152928,
+          "source_pointer": 34906256,
+          "source_hex": "8acd92b7",
+          "japanese": "艦長"
+        }
+      ],
+      "japanese": "艦長",
+      "english": "Captain",
+      "compiled": "Captain ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The commander of a ship.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_01",
+      "kind": "ROLE",
+      "index": 1,
+      "source_fields": [
+        {
+          "field": 1152932,
+          "source_pointer": 34906248,
+          "source_hex": "959b8aaf",
+          "japanese": "副官"
+        }
+      ],
+      "japanese": "副官",
+      "english": "First Mate",
+      "compiled": "First Mate",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The officer assisting the captain.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_02",
+      "kind": "ROLE",
+      "index": 2,
+      "source_fields": [
+        {
+          "field": 1152936,
+          "source_pointer": 34906264,
+          "source_hex": "8e519664",
+          "japanese": "参謀"
+        }
+      ],
+      "japanese": "参謀",
+      "english": "Strategist",
+      "compiled": "Strategist",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member responsible for strategy.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_03",
+      "kind": "ROLE",
+      "index": 3,
+      "source_fields": [
+        {
+          "field": 1152940,
+          "source_pointer": 34906344,
+          "source_hex": "8ee58c7692b7",
+          "japanese": "主計長"
+        }
+      ],
+      "japanese": "主計長",
+      "english": "Purser",
+      "compiled": "Purser",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member responsible for accounts and supplies.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_04",
+      "kind": "ROLE",
+      "index": 4,
+      "source_fields": [
+        {
+          "field": 1152944,
+          "source_pointer": 34906336,
+          "source_hex": "91aa97ca8e6d",
+          "japanese": "測量士"
+        }
+      ],
+      "japanese": "測量士",
+      "english": "Surveyor",
+      "compiled": "Surveyor",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member responsible for surveying.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_05",
+      "kind": "ROLE",
+      "index": 5,
+      "source_fields": [
+        {
+          "field": 1152948,
+          "source_pointer": 34906280,
+          "source_hex": "918094bf8ee8",
+          "japanese": "操帆手"
+        }
+      ],
+      "japanese": "操帆手",
+      "english": "Sail Handler",
+      "compiled": "Sail Handler",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member who handles the sails.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_06",
+      "kind": "ROLE",
+      "index": 6,
+      "source_fields": [
+        {
+          "field": 1152952,
+          "source_pointer": 34906320,
+          "source_hex": "918091c78ee8",
+          "japanese": "操舵手"
+        }
+      ],
+      "japanese": "操舵手",
+      "english": "Helmsman",
+      "compiled": "Helmsman",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member who steers the ship.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_07",
+      "kind": "ROLE",
+      "index": 7,
+      "source_fields": [
+        {
+          "field": 1152956,
+          "source_pointer": 34906304,
+          "source_hex": "8ca992a382e8",
+          "japanese": "見張り"
+        }
+      ],
+      "japanese": "見張り",
+      "english": "Lookout",
+      "compiled": "Lookout ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member who keeps watch.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_08",
+      "kind": "ROLE",
+      "index": 8,
+      "source_fields": [
+        {
+          "field": 1152960,
+          "source_pointer": 34906360,
+          "source_hex": "8e618d9e91e092b7",
+          "japanese": "斬込隊長"
+        }
+      ],
+      "japanese": "斬込隊長",
+      "english": "Boarding Leader",
+      "compiled": "Boarding Leader ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The leader of the boarding party.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_09",
+      "kind": "ROLE",
+      "index": 9,
+      "source_fields": [
+        {
+          "field": 1152964,
+          "source_pointer": 34906352,
+          "source_hex": "96438c828ee8",
+          "japanese": "砲撃手"
+        }
+      ],
+      "japanese": "砲撃手",
+      "english": "Gunner",
+      "compiled": "Gunner",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member responsible for cannon fire.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_10",
+      "kind": "ROLE",
+      "index": 10,
+      "source_fields": [
+        {
+          "field": 1152968,
+          "source_pointer": 34906288,
+          "source_hex": "90e98bb38e74",
+          "japanese": "宣教師"
+        }
+      ],
+      "japanese": "宣教師",
+      "english": "Missionary",
+      "compiled": "Missionary",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A person who spreads their faith.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_11",
+      "kind": "ROLE",
+      "index": 11,
+      "source_fields": [
+        {
+          "field": 1152972,
+          "source_pointer": 34906272,
+          "source_hex": "914488e3",
+          "japanese": "船医"
+        }
+      ],
+      "japanese": "船医",
+      "english": "Surgeon",
+      "compiled": "Surgeon ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The physician aboard the ship.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_12",
+      "kind": "ROLE",
+      "index": 12,
+      "source_fields": [
+        {
+          "field": 1152976,
+          "source_pointer": 34906312,
+          "source_hex": "97bf979d92b7",
+          "japanese": "料理長"
+        }
+      ],
+      "japanese": "料理長",
+      "english": "Chief Cook",
+      "compiled": "Chief Cook",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member responsible for cooking.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_13",
+      "kind": "ROLE",
+      "index": 13,
+      "source_fields": [
+        {
+          "field": 1152980,
+          "source_pointer": 34906328,
+          "source_hex": "914491e58d48",
+          "japanese": "船大工"
+        }
+      ],
+      "japanese": "船大工",
+      "english": "Shipwright",
+      "compiled": "Shipwright",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The worker who builds and repairs ships.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_14",
+      "kind": "ROLE",
+      "index": 14,
+      "source_fields": [
+        {
+          "field": 1152984,
+          "source_pointer": 34906296,
+          "source_hex": "8e9488e788f5",
+          "japanese": "飼育員"
+        }
+      ],
+      "japanese": "飼育員",
+      "english": "Animal Keeper",
+      "compiled": "Animal Keeper ",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "The crew member who cares for animals.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ITEM_ROLE_15",
+      "kind": "ROLE",
+      "index": 15,
+      "source_fields": [
+        {
+          "field": 1152988,
+          "source_pointer": 34906372,
+          "source_hex": "8d6294c2977688f5",
+          "japanese": "甲板要員"
+        }
+      ],
+      "japanese": "甲板要員",
+      "english": "Deckhand",
+      "compiled": "Deckhand",
+      "speaker": "Item interface",
+      "context": "Item-only presentation projection in native 0204D594/0204E3F0. Category x0, role x88, effect x180, byte value x218; tracking -1. Global category/role tables and every unrelated getter consumer remain unchanged.",
+      "source_meaning": "A crew member who performs general deck work.",
+      "localization_note": "Complete natural English from the clean source. Figurehead retains the bow ornament; Boarding Leader retains the team leader without inventing a captain rank. Original non-item displays are unchanged pending their own consumer audit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "status": "research-native-consumers-and-integration-pending",
+  "local_formatting_evidence": {
+    "path": "work/analysis/item_interface_native_proof.json",
+    "sha256": "ba3ae350761ae6d97cd43eed9ec3bd06b170d5aac090e830874edf0e9349c187",
+    "target_arm9_sha256": "c55a2530af7816a5f612494c42c16af5911e58791d571d92ad9297b7e87980ee",
+    "scope": "Local native labels and their exact owned columns; Advice command and skipped Use remain pending; no playable approval."
+  }
+}

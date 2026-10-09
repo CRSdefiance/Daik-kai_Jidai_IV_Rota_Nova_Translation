@@ -12,6 +12,7 @@ dependencies = ["ndspy>=4.2.0", "Pillow>=10.0", "pyxdelta>=0.2.3"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.6"]
+arm-analysis = ["capstone>=5.0", "unicorn==2.1.4"]
 
 [project.scripts]
 dk4tool = "dk4tool.cli:main"

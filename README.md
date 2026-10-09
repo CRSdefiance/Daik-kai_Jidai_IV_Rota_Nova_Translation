@@ -3,8 +3,18 @@
 A local, ROM-free Python toolchain for researching an English translation of
 **Daikoukai Jidai IV / Rota Nova** for Nintendo DS.
 
-The repository contains tooling and synthetic tests only. You must supply your own
+The repository contains tooling, reviewed translations, tests and an English patch. You must supply your own
 legally dumped ROM. The tool never downloads a ROM and never edits its input in place.
+
+## Current combined patch
+
+The latest experimental combined patch is [Unified V245](releases/all_routes_unified_v245/README.md).
+It preserves all four routes and the cumulative shared UI, text and graphics layers.
+Graphics localization and complete gameplay verification remain in progress; the
+four partially translated Online screenshot bodies and other open items are recorded
+in the [translation progress sheet](docs/translation_progress.md) and
+[graphics campaign](translations/graphics_completion_campaign_v1.json).
+The earlier [Unified V89 package](releases/all_routes_unified_v89/README.md) remains available.
 
 ## Safe integrated builds
 

@@ -1,0 +1,191 @@
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+
+from scripts.materialize_lil_deep_route_v101 import SC2_SHA256
+
+ROOT = Path(__file__).resolve().parents[1]
+LINES = {
+    (255, 5): "Hey, got time to help find someone? Hear me out, at least.",
+    (255, 9): "An Englishman named Jacks Bloom went to San Jorge in Africa. No one's heard from him in ages.",
+    (255, 12): "Bring him back if you find him. We'll wait as long as it takes. Please!",
+    (256, 5): "Welcome. What'll it be?",
+    (256, 9): "Sir, do you know a man called Jacks Bloom?",
+    (256, 13): "Jacks... what?",
+    (256, 17): "Jacks Bloom. An Englishman.",
+    (256, 20): "You're looking for Jacks?",
+    (256, 23): "You know him?!",
+    (256, 27): "Know him? Um...",
+    (256, 31): "Need something?",
+    (256, 35): "What?! You're him?",
+    (256, 39): "Yes. Jacks Bloom, that's me.",
+    (256, 43): "Lucky! Hamburg's guild is looking for you!",
+    (256, 47): "Oh, really? Sorry. Give me a lift, then.",
+    (257, 5): "Hey!",
+    (257, 9): "Jacks! We've been looking everywhere!",
+    (257, 12): "Sorry!",
+    (257, 16): "Thank you. A small reward, but please take it.",
+    (257, 20): "Received 10,000 gold coins.",
+    (257, 45): "Share in Hamburg rose a little!",
+    (257, 63): "Heard you're seeking ruins and churches in every town?",
+    (257, 67): "A church nearby has a famously learned priest.",
+    (258, 12): "We must go to San Jorge and find that Jacks fellow.",
+    (258, 17): "Jacks went to San Jorge in Africa. No one's heard from him in ages.",
+    (259, 6): "Got a favor to ask of you.",
+    (259, 9): "Please find a Portuguese adventurer called Julian Vermeer for us.",
+    (259, 13): "His last letter said Copenhagen. Then he vanished. Please find him.",
+    (260, 5): "Welcome. What'll it be?",
+    (260, 9): "Sir, do you know Julian Vermeer, an adventurer from Portugal?",
+    (260, 13): "Yes. He's over there.",
+    (260, 17): "Lovely town... hic! Good drink, good food... hic!",
+    (260, 21): "Him? He's just a drunk! Really an adventurer?",
+    (260, 25): "Hey, are you all right? Seville's guild is looking for you.",
+    (260, 29): "Hic! Seville? That crowded dump? Never going back! Hic! Tell them that! Hic!",
+    (260, 32): "What? That's a problem... Well, no choice. We'll pass that along.",
+    (261, 5): "Sir, we found that adventurer Julian, but...",
+    (261, 8): "Oh? Where is he?",
+    (261, 12): "Copenhagen's tavern. He says he won't return to Seville.",
+    (261, 16): "Oh, well.",
+    (261, 20): "Knowing where he is will do. Thanks for your trouble. Take this.",
+    (261, 25): "Are you sure we can take it?",
+    (261, 29): "Of course. Unpaid work would disgrace our guild.",
+    (261, 33): "Received 9,800 gold coins.",
+    (261, 61): "Share in Seville rose a little!",
+    (261, 92): "Share in Seville rose a little!",
+    (261, 113): "By the way, ever made a pilgrimage to Santiago Cathedral?",
+    (261, 117): "You ought to visit at least once while you're in Spain.",
+    (262, 12): "We must go to Copenhagen and find that Julian fellow.",
+    (262, 17): "Julian headed to Copenhagen in the North Sea.",
+    (263, 5): "A favor, since you're so lovely.",
+    (263, 9): "Eh? Me?",
+    (263, 13): "Please find the Spanish spy Peralonso Aguirre, active around Southeast Asia.",
+    (263, 16): "Hehe! A fine eye to notice my beauty! But what does that have to do with this man?",
+    (263, 20): "You'll see...",
+    (264, 5): "Tch! What a place! Not one pretty girl!",
+    (264, 12): "Hello! Could you tell me something?",
+    (264, 15): "Oh! A pretty girl! Why didn't you say so, old man?",
+    (264, 19): "Come here, sweetheart. Pour me a drink.",
+    (264, 22): "... Sir, do you know someone called Peralonso Aguirre?",
+    (264, 26): "Peralonso Aguirre? Hey, sweetheart! You're looking for me!",
+    (264, 30): "What?! You?!",
+    (264, 34): "Still got it, then! Such a sweet girl came all this way to see me!",
+    (264, 38): "Your name? Where from? Your type of man? What do you need?",
+    (264, 42): "(Ugh! So pushy! Would love to knock this shallow fool flat... But patience, now.)",
+    (264, 45): "(Smile.) Well, follow me to Basra, and you can hear every little thing about me.",
+    (264, 48): "Sure! Anywhere with you!",
+    (265, 5): "H-hey, girl! This is...",
+    (265, 9): "Welcome back, Peralonso Aguirre. Captured while chasing skirts! Some spy you are!",
+    (265, 13): "{MACRO:FI}, he followed you without a fuss, didn't he? Hahaha!",
+    (265, 17): "Your reward. Keep that beauty of yours polished!",
+    (265, 21): "T-tricked...",
+    (265, 25): "Received 21,000 gold coins.",
+    (265, 50): "Share in Basra rose a little!",
+    (265, 68): "A tip for you. There's a mosque far inland from town, with an amazing treasure hidden inside.",
+    (265, 71): "To get it, the king enshrined in the mosque must recognize your worth. You might find it worth a try!",
+    (266, 12): "That Peralonso spy is in Southeast Asia, right?",
+    (266, 24): "Peralonso works in Brunei, they say.",
+    (267, 5): "You look capable. Could you do a job for us?",
+    (267, 8): "Please find a Dutch nobleman named Ulis Huygen for us.",
+    (267, 12): "He plotted with foreigners. Exposed, he stole a ship and fled.",
+    (267, 16): "He hid near Manila. His trail ends there. Please find him.",
+    (268, 5): "Ulis the ship thief! Caught at last!",
+    (268, 8): "Hmph! Caught, yes. But 'ship thief'? How dare you address a nobleman so!",
+    (268, 13): "Still at it? Enough!",
+    (268, 17): "A pitiful catch, eh? Still, glad another country's guild didn't get him. They might exploit his noble rank.",
+    (268, 20): "Your reward. Take it.",
+    (268, 24): "Received 33,000 gold coins.",
+    (268, 48): "Share in Batavia rose a little!",
+    (268, 66): "By the way, heard rumors of a demon statue?",
+    (268, 70): "Demon?",
+    (268, 74): "Sealed in this town's ruins, they say. True or not? See for yourself.",
+    (269, 12): "Ulis's stolen fleet is in Southeast Asia, right?",
+    (269, 24): "Ulis hides in Southeast Asia, they say.",
+    (270, 6): "Hey, you've got a heart, haven't you?",
+    (270, 9): "An English outlaw killed a girl's father. She wants revenge. Help her, would you?",
+    (270, 13): "The outlaw's name is Prett Perrot. You'll do it, right?",
+    (271, 5): "Prett! You villain! How dare you show your face?!",
+    (271, 8): "S-sorry, all right?",
+    (271, 12): "Saying sorry won't undo murder.",
+    (271, 15): "Thank you. The girl who hired us will decide what to do with him.",
+    (271, 19): "Never thought you'd take him alive! Here's a generous reward. Take it.",
+    (271, 23): "Received 35,000 gold coins.",
+    (271, 49): "Share in Hangzhou rose a little!",
+    (271, 67): "Ever seen the forbidden palace? Well worth a visit, though it's a little far from here.",
+    (271, 70): "Don't tell the officials who tipped you off!",
+    (272, 12): "We must defeat outlaw Prett!",
+    (272, 25): "Hurry and capture that outlaw Prett!",
+    (273, 5): "{MACRO:FA}, we have a job for you.",
+    (273, 8): "Trusted me that fast? What is it?",
+    (273, 11): "Capture a wanted man: Jacob Portund, a Dutch smuggler.",
+    (273, 15): "A petty thug until recently. Seems he struck it rich in Africa. Now he fancies himself a proper pirate.",
+    (273, 18): "An advance for you. We can't handle him, but you can. Please do something!",
+    (273, 27): "Received 16,000 gold coins.",
+    (274, 5): "You're back!",
+    (274, 9): "My cargo...",
+    (274, 13): "What?! That cargo wasn't yours in the first place!",
+    (274, 16): "Thanks for catching him. A small sum, but take it.",
+    (274, 19): "Received 72,000 gold coins.",
+    (274, 44): "Share in Calicut rose a little!",
+    (274, 62): "Got an excellent tip for you.",
+    (274, 66): "Explore beyond the town gates. A building there is said to hold an amazing treasure.",
+    (274, 77): "Don't forget to get a map before you go.",
+    (275, 12): "We must hunt down Jacob's fleet.",
+    (275, 25): "Still haven't found that Jacob fellow?",
+    (276, 5): "Hey, if you can fight, we'd like you to deal with a wanted man.",
+    (276, 9): "Gabriel Cardocchi, from the Roman peninsula, trades here against our agreements. He's hurting our business.",
+    (276, 12): "His fleet is too strong for the guards. Here's an advance. Prepare carefully!",
+    (276, 22): "Received 12,000 gold coins.",
+    (277, 5): "Oh, Gabriel!",
+    (277, 9): "Sorry! Never again!",
+    (277, 13): "Can we believe that...?",
+    (277, 17): "Anyway, thank you. Here's the rest of your reward. Take it.",
+    (277, 21): "Received 72,000 gold coins.",
+    (277, 46): "Share in Havana rose a little!",
+    (277, 65): "Ever visited the village far to the north in the New World?",
+    (277, 69): "A great local friar sailed north to spread the faith...",
+    (277, 73): "He vanished after finding that village. Hope he's all right.",
+    (278, 12): "We're after Gabriel in the New World?",
+    (278, 24): "Hurry and bring that Gabriel fellow in!",
+    (279, 5): "A job only you can do.",
+    (279, 9): "Defeat a Turkish pirate named Zaganos Bey. We think he's prowling around Cyprus.",
+    (279, 13): "An advance for you. We're counting on you! He's vicious and strong.",
+    (279, 22): "Received 28,000 gold coins.",
+    (280, 5): "Zaganos! You really caught him!",
+    (280, 8): "Damn... Do whatever you like with me!",
+    (280, 11): "Amazing! A great feat! Maybe this isn't enough for you, but it's our thanks. Please take it.",
+    (280, 14): "Received 98,000 gold coins.",
+    (280, 39): "Share in Genoa rose a little!",
+    (280, 57): "Seeking ruins? There are Roman ruins on this peninsula too. Why not visit them?",
+    (280, 60): "Oh! Before that, don't forget to get a map.",
+    (281, 12): "We must defeat Zaganos in the Med!",
+    (281, 24): "Zaganos's fleet is here in the Med.",
+    (282, 6): "You're with {MACRO:FO}, right? Genoa's guild is looking for you.",
+}
+SPEAKERS = {0x02: "Lil", 0x3E: "Jacks Bloom", 0x3F: "Julian Vermeer", 0x40: "Ulis Huygen", 0x41: "Prett Perrot", 0x43: "Gabriel Cardocchi", 0x44: "Jacob Portund", 0x45: "Peralonso Aguirre", 0x46: "Zaganos Bey", 0x5C: "Tavern keeper", 0x60: "Tavern patron", 0x71: "Sailor", 0x93: "Guild master", 0x94: "Guild master", 0x95: "Guild master", 0xCF: "Companion", 0xFE: "System"}
+
+
+def main() -> None:
+    with (ROOT / "work/sc2/script.csv").open(encoding="utf-8-sig", newline="") as stream:
+        source = {row["id"]: row for row in csv.DictReader(stream)}
+    expected = {i for i in source if 255 <= int(i.split("_B")[1].split("_")[0]) <= 282}
+    assert expected == {f"DK4_MES_B{b}_R{n:04d}" for b, n in LINES}
+    records = []
+    for (b, n), text in LINES.items():
+        row_id = f"DK4_MES_B{b}_R{n:04d}"
+        raw = bytes.fromhex(source[row_id]["source_hex"])
+        assert raw[0] in SPEAKERS
+        prose = text
+        for macro in ("FI", "FA", "FO"):
+            assert raw.count(macro.encode()) == text.count(f"{{MACRO:{macro}}}")
+            prose = prose.replace(f"{{MACRO:{macro}}}", "")
+        assert "I" not in prose and "F" not in prose, row_id
+        records.append({"id": row_id, "english": f"{{SPEAKER:{raw[0]:02X}}}" + text + "{PAD}", "speaker": SPEAKERS[raw[0]], "context": "Complete Lil guild missing-person and bounty quests B255-B282, including reminders, rewards, share gains, ruin directions and city hints.", "source_meaning": text, "source_japanese": raw[1:].decode("shift_jis", errors="replace"), "localization_note": "Source-reviewed natural English preserves people, quest locations, all gold amounts and share changes, and exact macro order. Geographic descriptions avoid unsafe capital I/F renderer bytes.", "review": {g: True for g in ("source", "context", "localization", "naturalness", "formatting")}})
+    batch = {"format": "dk4-ilnk-translation-batch-v1", "file_path": "/data/SC2.DK4", "source_file_sha256": SC2_SHA256, "encoder": "dialogue-fixed-v1", "dialogue_profile": "lil-story-deep-route-v106-live", "translation_policy": "natural-dialogue-v2", "target_locale": "en-US", "review_gates": ["source", "context", "localization", "naturalness", "formatting"], "scope": "All B255-B282 missing-person, bounty and related discovery events.", "inventory": {"identified_records": len(expected), "translated_records": len(records), "blocks": {str(b): sum(bb == b for bb, _ in LINES) for b in range(255, 283)}}, "excluded_records": {}, "records": records}
+    (ROOT / "translations/lil_deep_route_v106.json").write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote Lil V106: {len(records)} records")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,11 +1,12 @@
 from __future__ import annotations
 
+import struct
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
 from .codec import parse_markup
-from .font_audit import GameAsciiFont
+from .font_audit import SJIS_GLYPH_COUNT, SJIS_MAP_OFFSET, GameAsciiFont, decode_glyph
 from .model import DialogueToken
 from .profiles import DialogueProfile
 
@@ -36,6 +37,7 @@ def render_dialogue_preview(
     destination: Path,
     *,
     arm9: bytes | None = None,
+    kanji_font: bytes | None = None,
 ) -> None:
     """Render a diagnostic preview using exact game glyphs when ARM9 is supplied."""
 
@@ -48,6 +50,9 @@ def render_dialogue_preview(
     draw.rectangle((3, 3, width - 4, height - 4), outline=(62, 51, 28), width=3)
     font = ImageFont.load_default(size=12 * scale)
     game_font = GameAsciiFont.from_arm9(arm9) if arm9 is not None else None
+    sjis_mapping = {
+        code: index for index, code in enumerate(struct.unpack_from(f"<{SJIS_GLYPH_COUNT}H", arm9, SJIS_MAP_OFFSET))
+    } if arm9 is not None and kanji_font is not None else {}
     tokens = parse_markup(text)
     x = margin * scale
     line = 0
@@ -75,6 +80,12 @@ def render_dialogue_preview(
                     )
                     ink = Image.new("RGB", glyph.size, color)
                     image.paste(ink, (x, y), glyph)
+                elif sjis_mapping and len(character.encode("cp932")) == 2:
+                    code = int.from_bytes(character.encode("cp932"), "big")
+                    if code not in sjis_mapping:
+                        raise ValueError(f"character has no native glyph: {character!r}")
+                    glyph = decode_glyph(kanji_font, sjis_mapping[code]).resize((16 * scale, 11 * scale), resample=Image.Resampling.NEAREST)
+                    image.paste(Image.new("RGB", glyph.size, color), (x, y), glyph)
                 else:
                     draw.text((x, y), character, fill=color, font=font)
                 x += profile.glyph_width(character) * scale

@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v102"]["batches"]);b.append("translations/maria_deep_route_v103.json");p["profiles"]["maria-deep-route-v103"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V102 with 71 records in SC3 blocks 141, 142, and 149: Yifa dream, Silla crown lead, and Seville banana boom."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v103: {len(b)} batches")

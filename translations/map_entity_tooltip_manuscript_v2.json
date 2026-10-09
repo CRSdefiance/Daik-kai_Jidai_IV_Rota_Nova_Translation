@@ -1,0 +1,117 @@
+{
+  "format": "dk4-map-entity-tooltip-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "status": "reviewed-native-tooltip-formatting-experimental-runtime-pending",
+  "source_arm9_sha256": "9a4b950d452631a6cc60721177e1f8e2b1ad778d854b6e42b11df04fdb2828a5",
+  "clean_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "records": [
+    {
+      "id": "MAP_ENTITY_TOOLTIP_PIRATES",
+      "source_offset": 1151212,
+      "source_capacity": 8,
+      "pointer_field": 460268,
+      "source_hex": "8a4391af",
+      "japanese": "海賊",
+      "english": "Pirates",
+      "speaker": "Map entity tooltip",
+      "source_meaning": "A pirate fleet, selected when the faction resolver returns no object.",
+      "context": "Native map selection 70424:70470; class format at 70488 and armament format at 7057C, through D7720.",
+      "localization_note": "Full natural UI wording. Retain name/class/percentage/armament substitutions. ASCII percent uses native printf escape %% instead of the Japanese full-width percent glyph. The source newline separates tooltip rows; it is not an authored dialogue wrap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MAP_ENTITY_TOOLTIP_MONSTER",
+      "source_offset": 1151220,
+      "source_capacity": 8,
+      "pointer_field": 460264,
+      "source_hex": "89f695a8",
+      "japanese": "怪物",
+      "english": "Monster",
+      "speaker": "Map entity tooltip",
+      "source_meaning": "A monster, selected by the special entity type 0xB5.",
+      "context": "Native map selection 70424:70470; class format at 70488 and armament format at 7057C, through D7720.",
+      "localization_note": "Full natural UI wording. Retain name/class/percentage/armament substitutions. ASCII percent uses native printf escape %% instead of the Japanese full-width percent glyph. The source newline separates tooltip rows; it is not an authored dialogue wrap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MAP_ENTITY_TOOLTIP_UNKNOWN",
+      "source_offset": 1151228,
+      "source_capacity": 8,
+      "pointer_field": 460256,
+      "source_hex": "814881488148",
+      "japanese": "？？？",
+      "english": "???",
+      "speaker": "Map entity tooltip",
+      "source_meaning": "An unidentified faction/entity; preserve the question-mark label.",
+      "context": "Native map selection 70424:70470; class format at 70488 and armament format at 7057C, through D7720.",
+      "localization_note": "Full natural UI wording. Retain name/class/percentage/armament substitutions. ASCII percent uses native printf escape %% instead of the Japanese full-width percent glyph. The source newline separates tooltip rows; it is not an authored dialogue wrap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MAP_ENTITY_TOOLTIP_CLASS",
+      "source_offset": 1341624,
+      "source_capacity": 8,
+      "pointer_field": 460272,
+      "source_hex": "25730a25738b89",
+      "japanese": "%s\n%s級",
+      "english": "%s\n%s class",
+      "speaker": "Map entity tooltip",
+      "source_meaning": "Entity/faction name followed by ship class. Preserve both substitutions.",
+      "context": "Native map selection 70424:70470; class format at 70488 and armament format at 7057C, through D7720.",
+      "localization_note": "Full natural UI wording. Retain name/class/percentage/armament substitutions. ASCII percent uses native printf escape %% instead of the Japanese full-width percent glyph. The source newline separates tooltip rows; it is not an authored dialogue wrap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MAP_ENTITY_TOOLTIP_ARMAMENT",
+      "source_offset": 1341632,
+      "source_capacity": 24,
+      "pointer_field": 460276,
+      "source_hex": "2573202025367381930a95909195937820253873",
+      "japanese": "%s  %6s％\n武装度 %8s",
+      "english": "%s  %6s%%\nArmament %8s",
+      "speaker": "Map entity tooltip",
+      "source_meaning": "Name, six-column percentage and eight-column armament rating. Preserve all three substitutions.",
+      "context": "Native map selection 70424:70470; class format at 70488 and armament format at 7057C, through D7720.",
+      "localization_note": "Full natural UI wording. Retain name/class/percentage/armament substitutions. ASCII percent uses native printf escape %% instead of the Japanese full-width percent glyph. The source newline separates tooltip rows; it is not an authored dialogue wrap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "native_formatting_limits": [
+    "Font disk loading and bitmap origin/clear/physical compositor remain contracts.",
+    "Keyboard UI and physical save I/O backend remain contracts.",
+    "Load preserves nineteen bytes; malformed saved-field NUL validation is absent.",
+    "Physical palette/routing and cold-boot gameplay remain pending.",
+    "Native formatting is approved for the experimental combined candidate; canonical acceptance is pending."
+  ]
+}

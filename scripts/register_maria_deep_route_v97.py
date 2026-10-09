@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v96"]["batches"]);b.append("translations/maria_deep_route_v97.json");p["profiles"]["maria-deep-route-v97"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V96 with 78 translations in SC3 blocks 130-131: Carlo recruitment and Cristina's flamenco performance."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v97: {len(b)} batches")

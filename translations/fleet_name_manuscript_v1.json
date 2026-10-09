@@ -1,0 +1,54 @@
+{
+  "format": "dk4-arm9-prompt-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "FLEET_NAME_135258",
+      "offset": 1266264,
+      "capacity": 8,
+      "source_hex": "8A4391AF25730000",
+      "japanese": "海賊%s",
+      "english": "Pirate %s{PAD}",
+      "speaker": "Fleet name getter",
+      "context": "Native 36A6C fleet-name getter: no ordinary affiliation and no captain returns unidentified label; captain branch formats pirate prefix with captain name.",
+      "source_meaning": "Pirate followed by the captain name.",
+      "localization_note": "Complete natural American English preserves affiliation uncertainty and pirate identity. Two mapped displays pass 456 native selector/getter/formatter/glyph cases and ten reviewed panels without clipped or dropped characters. Gameplay and other consumers pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "FLEET_NAME_135260",
+      "offset": 1266272,
+      "capacity": 16,
+      "source_hex": "8F8A91AE957396BE8ACD91E000000000",
+      "japanese": "所属不明艦隊",
+      "english": "Unidentified fleet{PAD}",
+      "speaker": "Fleet name getter",
+      "context": "Native 36A6C fleet-name getter: no ordinary affiliation and no captain returns unidentified label; captain branch formats pirate prefix with captain name.",
+      "source_meaning": "A fleet whose affiliation is unknown.",
+      "localization_note": "Complete natural American English preserves affiliation uncertainty and pirate identity. Two mapped displays pass 456 native selector/getter/formatter/glyph cases and ten reviewed panels without clipped or dropped characters. Gameplay and other consumers pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "review_evidence": "translations/fleet_name_native_review_v1.json"
+}

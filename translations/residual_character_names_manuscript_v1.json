@@ -1,0 +1,54 @@
+{
+  "format": "dk4-arm9-prompt-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ORDINARY_GIVEN_NAME_61",
+      "offset": 1425896,
+      "capacity": 12,
+      "source_hex": "83948346838b835800000000",
+      "japanese": "ヴェルス",
+      "english": "Vels{PAD}",
+      "speaker": "Ordinary character nameplate",
+      "context": "Native ordinary-name table index 61; immutable given-name getter selects the source-owned label.",
+      "source_meaning": "The character name ヴェルス.",
+      "localization_note": "Established Raphael story spelling Vels. Both native paired rows and two fleet displays preserve all characters; physical gameplay pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ORDINARY_GIVEN_NAME_77",
+      "offset": 1427408,
+      "capacity": 12,
+      "source_hex": "8341834a8375815b00000000",
+      "japanese": "アカブー",
+      "english": "Akaboo{PAD}",
+      "speaker": "Ordinary character nameplate",
+      "context": "Native ordinary-name table index 77; immutable given-name getter selects the source-owned label.",
+      "source_meaning": "The character name アカブー.",
+      "localization_note": "Phonetic project spelling Akaboo retains the source long final vowel; no official Latin spelling claimed. Both native paired rows and two fleet displays preserve all characters; physical gameplay pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "review_evidence": "translations/residual_character_names_native_review_v1.json"
+}
