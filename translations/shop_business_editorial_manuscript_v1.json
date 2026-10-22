@@ -1,0 +1,300 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "source-context-and-complete-native-font-reviewed-live-release-test-pending",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_pins": {
+    "japanese": {
+      "path": "work\\clean.nds",
+      "sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+      "MESFILE_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+      "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+    },
+    "current": {
+      "path": "out\\all_routes_combined_v712_candidate.nds",
+      "sha256": "6534e5619673ea6bdffa3a2342622b99ef393bef52ef58cac131ee94ae0f4030",
+      "MESFILE_sha256": "88fe9bd52a7bcc111f89d1b1ee28acb11581d1d7b9928e47d432242b7fdd0d1e",
+      "ARM9_sha256": "af4ce98637f6febb4e3e0dab7ce63f5984050deb267713b1c741f5005eb98e41"
+    }
+  },
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_657",
+      "message_id": 657,
+      "interaction_group": "retail-and-normal-business",
+      "source_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6",
+      "japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "source_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 304,
+        "start": 1,
+        "end": 65
+      },
+      "canonical_source_hex": "2042756c6b2074726164653f20547279207468652074726164650a2020686f7573652e2020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2042756c6b2074726164653f20547279207468652074726164650a2020686f7573652e2020202020202020202020202020202020202020202020202020202020",
+      "current_English": "Bulk trade? Try the trade house.",
+      "current_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 304,
+        "start": 1,
+        "end": 65
+      },
+      "english": "You're a sailor, aren't you? For bulk trade, try the trade house.{PAD}",
+      "source_meaning": "The merchant recognizes the player as a sailor and recommends the trading post for large-volume business.",
+      "localization_note": "Restore the omitted sailor observation and retain the established trade-house term. The source question is friendly recognition, not a new profession assignment. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_658",
+      "message_id": 658,
+      "interaction_group": "retail-and-normal-business",
+      "source_hex": "8c698b438148814082dc82a0814182da82bf82da82bf82c582b782cb0a89bd82a9814182a482dc82a2986282cd82c882a282e082f182a982cb82a6",
+      "japanese": "景気？　まあ、ぼちぼちですね\n何か、うまい話はないもんかねえ",
+      "source_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 368,
+        "start": 65,
+        "end": 124
+      },
+      "canonical_source_hex": "2020427573696e6573733f20466169722e20492077697368206120676f6f640a20206f70706f7274756e69747920776f756c642061726973652e20",
+      "current_text_hex": "2020427573696e6573733f20466169722e20492077697368206120676f6f640a20206f70706f7274756e69747920776f756c642061726973652e20",
+      "current_English": "Business? Fair. I wish a good opportunity would arise.",
+      "current_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 368,
+        "start": 65,
+        "end": 124
+      },
+      "english": "Business? Oh, it's been all right. I'm hoping a good deal comes along.{PAD}",
+      "source_meaning": "Business is going reasonably, and the shopkeeper wishes a profitable opportunity would turn up.",
+      "localization_note": "Render the casual qualification and hope conversationally. A good deal conveys a business opportunity without implying an illegal scheme or adding a quest. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_682",
+      "message_id": 682,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814082bb82ea82c782b182eb82b682e182a082e882dc82b982f182e60a918182ad95bd986182c982c882c182c482d982b582a282e082f182c582b7",
+      "japanese": "景気？　それどころじゃありませんよ\n早く平和になってほしいもんです",
+      "source_reference": {
+        "block": 8,
+        "record": 29,
+        "native_offset": 1788,
+        "start": 2,
+        "end": 67
+      },
+      "canonical_source_hex": "427573696e6573733f20466f7267657420746861742e0a202049206a75737420686f70652070656163652072657475726e730a2020736f6f6e2e20202020202020",
+      "current_text_hex": "427573696e6573733f20466f7267657420746861742e0a202049206a75737420686f70652070656163652072657475726e730a2020736f6f6e2e20202020202020",
+      "current_English": "Business? Forget that. I just hope peace returns soon.",
+      "current_reference": {
+        "block": 8,
+        "record": 29,
+        "native_offset": 1788,
+        "start": 2,
+        "end": 67
+      },
+      "english": "Business? That's the least of my worries. I just hope peace returns soon.{PAD}",
+      "source_meaning": "Business is not the speaker's immediate concern; the speaker hopes peace returns quickly.",
+      "localization_note": "Replace the brusque Forget that with a natural worried response, preserving the wish for peace. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_683",
+      "message_id": 683,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b43814881408975956182c5906c82aa836f835e836f835e937c82ea82c482e90a82c182c482a282a482cc82c9814182d382b482af82c482e982f182c582b782a98148",
+      "japanese": "景気？　疫病で人がバタバタ倒れてる\nっていうのに、ふざけてるんですか？",
+      "source_reference": {
+        "block": 8,
+        "record": 30,
+        "native_offset": 1856,
+        "start": 2,
+        "end": 71
+      },
+      "canonical_source_hex": "427573696e6573733f2050656f706c6520617265206479696e670a202066726f6d20646973656173652c20616e6420796f752061736b0a2020746861743f20202020202020",
+      "current_text_hex": "427573696e6573733f2050656f706c6520617265206479696e670a202066726f6d20646973656173652c20616e6420796f752061736b0a2020746861743f20202020202020",
+      "current_English": "Business? People are dying from disease, and you ask that?",
+      "current_reference": {
+        "block": 8,
+        "record": 30,
+        "native_offset": 1856,
+        "start": 2,
+        "end": 71
+      },
+      "english": "Business? People are collapsing from the epidemic! Are you kidding me?{PAD}",
+      "source_meaning": "The speaker angrily challenges the business question because people are collapsing in an epidemic.",
+      "localization_note": "The Japanese says collapsing, not confirmed deaths. Restore that distinction and preserve indignation without naming a specific disease. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_684",
+      "message_id": 684,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814082bb82ea82e682e882e082dc82b8904897bf82c582b782e60a906c8ad4904882ed82c882ab82e10a90b682ab82c482a282af82dc82b982f182a982e782cb",
+      "japanese": "景気？　それよりもまず食料ですよ\n人間食わなきゃ\n生きていけませんからね",
+      "source_reference": {
+        "block": 8,
+        "record": 31,
+        "native_offset": 1928,
+        "start": 2,
+        "end": 72
+      },
+      "canonical_source_hex": "427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c652063616e6e6f74206c69766520776974686f75740a2020656174696e672e20202020",
+      "current_text_hex": "427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c652063616e6e6f74206c69766520776974686f75740a2020656174696e672e20202020",
+      "current_English": "Business? Food comes first. People cannot live without eating.",
+      "current_reference": {
+        "block": 8,
+        "record": 31,
+        "native_offset": 1928,
+        "start": 2,
+        "end": 72
+      },
+      "english": "Business? Food comes first. People have to eat to survive.{PAD}",
+      "source_meaning": "Food is a more urgent concern than business because people cannot survive without eating.",
+      "localization_note": "Keep the plain, urgent explanation with a natural contraction-free final sentence. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_686",
+      "message_id": 686,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814095b782a982c882a282c582ad82be82b382a282e60a82b182ea82b682e18fa4948482c982c882e882dc82b982f182e6",
+      "japanese": "景気？　聞かないでくださいよ\nこれじゃ商売になりませんよ",
+      "source_reference": {
+        "block": 8,
+        "record": 33,
+        "native_offset": 2056,
+        "start": 0,
+        "end": 55
+      },
+      "canonical_source_hex": "2020427573696e6573733f20446f6e27742061736b2e0a20204e6f206f6e652063616e207472616465206c696b6520746869732e202020",
+      "current_text_hex": "2020427573696e6573733f20446f6e27742061736b2e0a20204e6f206f6e652063616e207472616465206c696b6520746869732e202020",
+      "current_English": "Business? Don't ask. No one can trade like this.",
+      "current_reference": {
+        "block": 8,
+        "record": 33,
+        "native_offset": 2056,
+        "start": 0,
+        "end": 55
+      },
+      "english": "Business? Don't ask. How's anyone supposed to do business like this?{PAD}",
+      "source_meaning": "The speaker asks not to be questioned and complains that business is impossible under the current circumstances.",
+      "localization_note": "Use a natural rhetorical complaint, without adding a particular disaster or financial outcome. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_687",
+      "message_id": 687,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814092e88afa914482aa92be82f182c582b582dc82c182c40a82dd82f182c88da282c182c482dc82b782e6",
+      "japanese": "景気？　定期船が沈んでしまって\nみんな困ってますよ",
+      "source_reference": {
+        "block": 8,
+        "record": 34,
+        "native_offset": 2112,
+        "start": 0,
+        "end": 49
+      },
+      "canonical_source_hex": "2020427573696e6573733f20546865206c696e65722073616e6b2e0a202045766572796f6e6520737566666572732e2020",
+      "current_text_hex": "2020427573696e6573733f20546865206c696e65722073616e6b2e0a202045766572796f6e6520737566666572732e2020",
+      "current_English": "Business? The liner sank. Everyone suffers.",
+      "current_reference": {
+        "block": 8,
+        "record": 34,
+        "native_offset": 2112,
+        "start": 0,
+        "end": 49
+      },
+      "english": "Business? The ship on the regular route sank, and everyone's in a bind.{PAD}",
+      "source_meaning": "A regularly scheduled service vessel has sunk, causing difficulty for everyone.",
+      "localization_note": "Express the scheduled vessel without suggesting a modern cruise liner or inventing a passenger/cargo purpose. All generated lines and the complete 228x64 native font plane reviewed; literal I/F expansion remains byte-exact. No authored layout; live parent test remains pending.",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-component-approved-experimental-live-test-pending"
+    }
+  ],
+  "layout_requirement": "Use the actual COMMON consumer contract, not a story profile with different literal-I/F macro rules. Paragraphs may require native repacking; no truncation or authored alignment/breaks."
+}

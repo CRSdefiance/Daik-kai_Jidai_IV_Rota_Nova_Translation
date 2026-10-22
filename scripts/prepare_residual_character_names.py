@@ -4,6 +4,7 @@ import json
 import struct
 from pathlib import Path
 
+from ndspy.code import MainCodeFile
 from unicorn import UC_HOOK_CODE
 from unicorn.arm_const import UC_ARM_REG_LR, UC_ARM_REG_PC, UC_ARM_REG_SP
 
@@ -56,9 +57,17 @@ def loaded(source):
             uc.reg_write(UC_ARM_REG_PC, address + 4)
 
     hook = machine.hook_add(UC_HOOK_CODE, cache)
-    machine.emu_start(BASE + 0x9E0, STOP, count=100000)
+    sections = MainCodeFile(source, BASE).sections[1:]
+    autoload_bytes = sum(len(section.data) + section.bssSize for section in sections)
+    machine.emu_start(BASE + 0x9E0, STOP, count=max(100000, autoload_bytes * 2 + 10000))
     machine.hook_del(hook)
+    if machine.reg_read(UC_ARM_REG_PC) != STOP:
+        raise ValueError('Native autoload did not complete within its size-based budget')
+    if any(bytes(machine.mem_read(section.ramAddress, len(section.data))) != bytes(section.data) for section in sections):
+        raise ValueError('Native autoload did not copy every complete section')
     machine.emu_start(BASE + 0x88C, BASE + 0x8AC, count=3000000)
+    if machine.reg_read(UC_ARM_REG_PC) != BASE + 0x8AC:
+        raise ValueError('Native BSS clearing did not complete')
     machine.reg_write(UC_ARM_REG_LR, STOP)
     machine.reg_write(UC_ARM_REG_SP, STACK)
     return machine

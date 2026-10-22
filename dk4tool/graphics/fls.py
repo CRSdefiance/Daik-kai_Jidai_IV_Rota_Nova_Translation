@@ -36,6 +36,7 @@ class FlsTexture:
         color_index: int | None = None,
         outline_index: int | None = None,
         layout_width: int | None = None,
+        layout_height: int | None = None,
     ) -> None:
         luminance = [
             (red * 299 + green * 587 + blue * 114) // 1000
@@ -59,17 +60,20 @@ class FlsTexture:
             if index is not None and not 0 <= index < len(self.palette):
                 raise ValueError(f"FLS {name} palette index is out of range: {index}")
         draw_width = self.width if layout_width is None else layout_width
+        draw_height = self.height if layout_height is None else layout_height
         if not 1 <= draw_width <= self.width:
             raise ValueError(f"FLS layout width is out of range: {draw_width}")
+        if not 1 <= draw_height <= self.height:
+            raise ValueError(f"FLS layout height is out of range: {draw_height}")
         self.indices[:] = bytes([background]) * len(self.indices)
 
         mask = Image.new("L", (self.width, self.height))
         draw = ImageDraw.Draw(mask)
-        line_height = max(1, self.height // max(1, len(lines)))
+        line_height = max(1, draw_height // max(1, len(lines)))
         for line_number, line in enumerate(lines):
             box_top = line_number * line_height
             box_bottom = (
-                self.height if line_number == len(lines) - 1 else (line_number + 1) * line_height
+                draw_height if line_number == len(lines) - 1 else (line_number + 1) * line_height
             )
             font = None
             bounds = None

@@ -42,7 +42,7 @@ def render_region_payload(row, source_region: bytes, batch, source_block=None):
         return render_maria_speech(row, source_region, batch, source_block)
     if rule not in {"neutral-ink-erasure-protect-connected-art-v1", "background-aware-connected-art-v2",
                     "source-white-caption-mask-local-scenery-v3", "source-chase-call-mask-background-v4",
-                    "source-chase-bubble-interior-v4"}:
+                    "source-chase-bubble-interior-v4", "source-chase-call-mask-background-v8"}:
         raise ValueError("Raw BGR555 background ownership rule differs")
     x0, y0, x1, y1 = row["box"]
     width, height = x1 - x0, y1 - y0
@@ -122,7 +122,7 @@ def render_region_payload(row, source_region: bytes, batch, source_block=None):
     if len(source_region) != width * height * 2:
         raise ValueError("Source text plane extent differs")
     source_words = [v for v, in struct.iter_unpack("<H", source_region)]
-    if rule == "source-chase-call-mask-background-v4":
+    if rule in ("source-chase-call-mask-background-v4", "source-chase-call-mask-background-v8"):
         if source_block is None or sha(source_block) != BLOCK_SHA:
             raise ValueError("Chase restoration requires exact original block")
         restored, restoration = restore_chase_call(row, source_region, source_block, FRAME_BYTES)

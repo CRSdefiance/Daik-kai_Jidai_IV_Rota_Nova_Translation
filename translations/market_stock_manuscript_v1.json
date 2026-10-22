@@ -1,0 +1,596 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_pins": {
+    "japanese": {
+      "path": "work/clean.nds",
+      "sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+    },
+    "current": {
+      "path": "out\\all_routes_combined_v754_candidate.nds",
+      "sha256": "a44acfb6431fd2ec48e1ae5b5899ddbf1744bcac8a68e1ca6c5ec1fbc14fd246"
+    },
+    "canonical": {
+      "path": "out/raphael_natural_v2_accepted_base.nds",
+      "sha256": "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe"
+    }
+  },
+  "context_evidence": "work\\analysis\\market_stock_v755\\native_context.json",
+  "status": "research-draft-not-integrated",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_767",
+      "message_id": 767,
+      "japanese": "%sと\n%sじゃないかい！\nこいつらは飛ぶように売れるんで\nよく売り切れちまうんだ",
+      "source_hex": "257382c60a257382b682e182c882a282a982a281490a82b182a282c282e782cd94f282d482e682a482c9948482ea82e982f182c50a82e682ad948482e890d882ea82bf82dc82a482f182be",
+      "source_reference": {
+        "block": 10,
+        "record": 0,
+        "offset": 0
+      },
+      "current_English": "Why, it's %s and %s! Those are such fast sellers that we're often completely out of stock!",
+      "current_text_hex": "5768792c206974277320257320616e64202573212054686f736520617265207375636820666173742073656c6c6572732074686174207765277265206f6674656e20636f6d706c6574656c79206f7574206f662073746f636b21",
+      "current_reference": {
+        "block": 10,
+        "record": 0,
+        "offset": 0
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a2020202020202020",
+      "english": "%s and %s! They're flying off the shelves, so we're often out of stock.{PAD}",
+      "source_meaning": "Recognizes two supplied products; they sell extremely quickly, so the merchant often runs out.",
+      "localization_note": "Keep both product names in source order; two named goods permit plural they. Preserve fast sales and frequent stockouts.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original four paired/single product branches select767/768 when the supplied stack flag is zero and769/770 otherwise. Two names retain r7 then r8 order; one name retains whichever original product is present. Native getter stubs prove argument order, not which real goods qualify.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_768",
+      "message_id": 768,
+      "japanese": "%sを\n売ってくれるのかい！\nもう飛ぶように売れるんで、よく\n品切れさせちまうんだよ。助かるね",
+      "source_hex": "257382f00a948482c182c482ad82ea82e982cc82a982a281490a82e082a494f282d482e682a482c9948482ea82e982f182c5814182e682ad0a956990d882ea82b382b982bf82dc82a482f182be82e681428f9582a982e982cb",
+      "source_reference": {
+        "block": 10,
+        "record": 1,
+        "offset": 76
+      },
+      "current_English": "That good is selling quickly. We can offer a service price. %s\n \n \n     ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a2020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 1,
+        "offset": 91
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a20202020202020202020202020202020202020202020",
+      "english": "You're selling us %s? Thanks! Demand's so high, we often run out.{PAD}",
+      "source_meaning": "Gratefully acknowledges the player selling the supplied product; fast sales cause frequent stockouts, so the delivery helps.",
+      "localization_note": "Avoid singular/plural pronouns for the substituted product. Restore gratitude and repeated stockouts; remove the invented service-price offer.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original four paired/single product branches select767/768 when the supplied stack flag is zero and769/770 otherwise. Two names retain r7 then r8 order; one name retains whichever original product is present. Native getter stubs prove argument order, not which real goods qualify.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_769",
+      "message_id": 769,
+      "japanese": "よーし、サービスしておくよ\n今、飛ぶように売れてる\n%sと%sを\n売ってくれるんだしな",
+      "source_hex": "82e6815b82b581418354815b8372835882b582c482a882ad82e60a8da1814194f282d482e682a482c9948482ea82c482e90a257382c6257382f00a948482c182c482ad82ea82e982f182be82b582c8",
+      "source_reference": {
+        "block": 10,
+        "record": 2,
+        "offset": 168
+      },
+      "current_English": "All right, Ｉ'll sweeten the deal. You're selling me %s and %s, and they're flying off the shelves!",
+      "current_text_hex": "416c6c2072696768742c208268276c6c207377656574656e20746865206465616c2e20596f752772652073656c6c696e67206d6520257320616e642025732c20616e64207468657927726520666c79696e67206f666620746865207368656c76657321",
+      "current_reference": {
+        "block": 10,
+        "record": 2,
+        "offset": 164
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a202020202020202020202020",
+      "english": "All right, I'll sweeten the deal. You're selling us %s and %s, and they're flying off the shelves!{PAD}",
+      "source_meaning": "Agrees enthusiastically to provide favorable treatment because the player is selling two products that are currently selling extremely quickly.",
+      "localization_note": "Preserve the enthusiastic favorable-treatment offer and both products. Sweeten the deal does not invent a precise discount.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original four paired/single product branches select767/768 when the supplied stack flag is zero and769/770 otherwise. Two names retain r7 then r8 order; one name retains whichever original product is present. Native getter stubs prove argument order, not which real goods qualify.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_770",
+      "message_id": 770,
+      "japanese": "うーん…じゃ、サービスしておくよ\n今、飛ぶように売れてる\n%sを\n売ってくれるんだからな",
+      "source_hex": "82a4815b82f1816382b682e181418354815b8372835882b582c482a882ad82e60a8da1814194f282d482e682a482c9948482ea82c482e90a257382f00a948482c182c482ad82ea82e982f182be82a982e782c8",
+      "source_reference": {
+        "block": 10,
+        "record": 3,
+        "offset": 248
+      },
+      "current_English": "That good is selling quickly. We can offer a service price. %s\n \n \n  ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a2020",
+      "current_reference": {
+        "block": 10,
+        "record": 3,
+        "offset": 264
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e2025730a200a200a20202020202020202020202020202020",
+      "english": "Hmm... I'll sweeten the deal, then. You're selling us %s, and demand's booming!{PAD}",
+      "source_meaning": "After a hesitation agrees to provide favorable treatment because the supplied product is currently selling extremely quickly.",
+      "localization_note": "Preserve hesitation and favorable treatment; use number-neutral demand language. No precise discount or stockout condition is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original four paired/single product branches select767/768 when the supplied stack flag is zero and769/770 otherwise. Two names retain r7 then r8 order; one name retains whichever original product is present. Native getter stubs prove argument order, not which real goods qualify.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_771",
+      "message_id": 771,
+      "japanese": "戦争なんぞ早く終わってくれねえと\n商売がやりにくくってねえ",
+      "source_hex": "90ed918882c882f182bc918182ad8f4982ed82c182c482ad82ea82cb82a682c60a8fa4948482aa82e282e882c982ad82ad82c182c482cb82a6",
+      "source_reference": {
+        "block": 10,
+        "record": 4,
+        "offset": 332
+      },
+      "current_English": "  I wish the war would end.\n  Trade is difficult.        ",
+      "current_text_hex": "2020492077697368207468652077617220776f756c6420656e642e0a2020547261646520697320646966666963756c742e2020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 4,
+        "offset": 334
+      },
+      "canonical_source_hex": "2020492077697368207468652077617220776f756c6420656e642e0a2020547261646520697320646966666963756c742e2020202020202020",
+      "english": "I wish this war would end soon. It's making business difficult.{PAD}",
+      "source_meaning": "Wishes the war would end soon because it makes doing business difficult.",
+      "localization_note": "Preserve recent economic direction, difficulty or improvement, and the desire for the war to end; no forecast or new event is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original economic-state result0/3/4 selects771/772/773; supplied other results select original8. Getter eligibility and actual economic events are not claimed.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_772",
+      "message_id": 772,
+      "japanese": "最近、景気が良くなってきて\n商売もやり易くなってきたね",
+      "source_hex": "8dc58bdf81418c698b4382aa97c782ad82c882c182c482ab82c40a8fa4948482e082e282e888d582ad82c882c182c482ab82bd82cb",
+      "source_reference": {
+        "block": 10,
+        "record": 5,
+        "offset": 392
+      },
+      "current_English": "Business has improved.\n  Trade is easier now.        ",
+      "current_text_hex": "427573696e6573732068617320696d70726f7665642e0a2020547261646520697320656173696572206e6f772e2020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 5,
+        "offset": 392
+      },
+      "canonical_source_hex": "427573696e6573732068617320696d70726f7665642e0a2020547261646520697320656173696572206e6f772e2020202020202020",
+      "english": "With the economy picking up lately, business has been easier.{PAD}",
+      "source_meaning": "The economy has improved recently, making it easier to do business.",
+      "localization_note": "Preserve recent economic direction, difficulty or improvement, and the desire for the war to end; no forecast or new event is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original economic-state result0/3/4 selects771/772/773; supplied other results select original8. Getter eligibility and actual economic events are not claimed.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_773",
+      "message_id": 773,
+      "japanese": "最近、景気が悪くなって\n商売がやりにくいったらないよ",
+      "source_hex": "8dc58bdf81418c698b4382aa88ab82ad82c882c182c40a8fa4948482aa82e282e882c982ad82a282c182bd82e782c882a282e6",
+      "source_reference": {
+        "block": 10,
+        "record": 6,
+        "offset": 448
+      },
+      "current_English": "Business has worsened.\n  Trade is difficult.       ",
+      "current_text_hex": "427573696e6573732068617320776f7273656e65642e0a2020547261646520697320646966666963756c742e20202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 6,
+        "offset": 446
+      },
+      "canonical_source_hex": "427573696e6573732068617320776f7273656e65642e0a2020547261646520697320646966666963756c742e20202020202020",
+      "english": "The economy's been so bad lately, doing business is a real struggle.{PAD}",
+      "source_meaning": "The economy has worsened recently, making doing business extremely difficult.",
+      "localization_note": "Preserve recent economic direction, difficulty or improvement, and the desire for the war to end; no forecast or new event is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original economic-state result0/3/4 selects771/772/773; supplied other results select original8. Getter eligibility and actual economic events are not claimed.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_774",
+      "message_id": 774,
+      "japanese": "そうだ！\n流行品を売ってくれたお礼に\n紹介状を書いとくよ",
+      "source_hex": "82bb82a482be81490a97ac8d73956982f0948482c182c482ad82ea82bd82a897e782c90a8fd089ee8ff382f08f9182a282c682ad82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 7,
+        "offset": 500
+      },
+      "current_English": "  Thanks for popular goods!\n  I'll write a referral.  ",
+      "current_text_hex": "20205468616e6b7320666f7220706f70756c617220676f6f6473210a202049276c6c207772697465206120726566657272616c2e2020",
+      "current_reference": {
+        "block": 10,
+        "record": 7,
+        "offset": 498
+      },
+      "canonical_source_hex": "20205468616e6b7320666f7220706f70756c617220676f6f6473210a202049276c6c207772697465206120726566657272616c2e2020",
+      "english": "Oh, I know! I'll write you a letter of introduction to thank you for selling us those popular goods.{PAD}",
+      "source_meaning": "Has an idea: write a letter of introduction in thanks for selling popular goods.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_775",
+      "message_id": 775,
+      "japanese": "それから\nこんなに大量に流行品を売ってくれた\nお礼に、推薦状を書いとくよ",
+      "source_hex": "82bb82ea82a982e70a82b182f182c882c991e597ca82c997ac8d73956982f0948482c182c482ad82ea82bd0a82a897e782c98141908491458ff382f08f9182a282c682ad82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 8,
+        "offset": 556
+      },
+      "current_English": "That good is selling quickly. We can offer a service price.\n \n        ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a2020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 8,
+        "offset": 553
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a2020202020202020",
+      "english": "And I'll write you a letter of recommendation to thank you for selling us so many popular goods.{PAD}",
+      "source_meaning": "As an additional offer, write a letter of recommendation in thanks for selling such a large quantity of popular goods.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_776",
+      "message_id": 776,
+      "japanese": "そうだ！\nこんなに大量に流行品を売ってくれた\nお礼に、紹介状を書いとくよ",
+      "source_hex": "82bb82a482be81490a82b182f182c882c991e597ca82c997ac8d73956982f0948482c182c482ad82ea82bd0a82a897e782c981418fd089ee8ff382f08f9182a282c682ad82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 9,
+        "offset": 628
+      },
+      "current_English": "That good is selling quickly. We can offer a service price.\n \n        ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a2020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 9,
+        "offset": 624
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a2020202020202020",
+      "english": "Oh, I know! I'll write you a letter of introduction to thank you for selling us so many popular goods.{PAD}",
+      "source_meaning": "Has an idea: write a letter of introduction in thanks for selling such a large quantity of popular goods.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_777",
+      "message_id": 777,
+      "japanese": "あれ、紹介状を持ってるんだね\nそれじゃ、それに一筆加えてあげよう\nこれで推薦状になるからね",
+      "source_hex": "82a082ea81418fd089ee8ff382f08e9d82c182c482e982f182be82cb0a82bb82ea82b682e1814182bb82ea82c988ea954d89c182a682c482a082b082e682a40a82b182ea82c5908491458ff382c982c882e982a982e782cb",
+      "source_reference": {
+        "block": 10,
+        "record": 10,
+        "offset": 700
+      },
+      "current_English": "You have a letter of introduction! With a few words of mine, it can become a letter of recommendation.",
+      "current_text_hex": "596f7520686176652061206c6574746572206f6620696e74726f64756374696f6e21205769746820612066657720776f726473206f66206d696e652c2069742063616e206265636f6d652061206c6574746572206f66207265636f6d6d656e646174696f6e2e",
+      "current_reference": {
+        "block": 10,
+        "record": 10,
+        "offset": 695
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a200a200a20202020202020202020202020202020202020202020",
+      "english": "Oh, you have a letter of introduction? Let me add a few words. That'll make it a letter of recommendation.{PAD}",
+      "source_meaning": "Notices the player already has a letter of introduction; adding a few words upgrades it to a letter of recommendation.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_778",
+      "message_id": 778,
+      "japanese": "そうだ！\nこんなに大量に流行品を売ってくれた\nお礼に、推薦状を書いとくよ",
+      "source_hex": "82bb82a482be81490a82b182f182c882c991e597ca82c997ac8d73956982f0948482c182c482ad82ea82bd0a82a897e782c98141908491458ff382f08f9182a282c682ad82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 10,
+        "offset": 788
+      },
+      "current_English": "Ｉ know! To thank you for selling us so many trendy goods, Ｉ'll write you a letter of recommendation.",
+      "current_text_hex": "8268206b6e6f772120546f207468616e6b20796f7520666f722073656c6c696e6720757320736f206d616e79207472656e647920676f6f64732c208268276c6c20777269746520796f752061206c6574746572206f66207265636f6d6d656e646174696f6e2e",
+      "current_reference": {
+        "block": 10,
+        "record": 11,
+        "offset": 798
+      },
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "english": "Oh, I know! I'll write you a letter of recommendation to thank you for selling us so many popular goods.{PAD}",
+      "source_meaning": "Has an idea: write a letter of recommendation in thanks for selling such a large quantity of popular goods.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_779",
+      "message_id": 779,
+      "japanese": "それを持って\n小さな街の王宮や総督府に行けば\nシェアを融通してくれるはずさ",
+      "source_hex": "82bb82ea82f08e9d82c182c40a8fac82b382c88a5882cc89a48b7b82e2918d93c2957b82c98d7382af82ce0a83568346834182f0975a92ca82b582c482ad82ea82e982cd82b882b3",
+      "source_reference": {
+        "block": 10,
+        "record": 11,
+        "offset": 860
+      },
+      "current_English": "Take it to a palace or governor's office in a small town. They should grant you some market share.",
+      "current_text_hex": "54616b6520697420746f20612070616c616365206f7220676f7665726e6f722773206f666669636520696e206120736d616c6c20746f776e2e20546865792073686f756c64206772616e7420796f7520736f6d65206d61726b65742073686172652e",
+      "current_reference": {
+        "block": 10,
+        "record": 12,
+        "offset": 901
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a200a200a202020202020",
+      "english": "Take it to a palace or governor's office in a small town. They should grant you some market share.{PAD}",
+      "source_meaning": "Taking the letter to a palace or governor office in a small town should secure preferential market share.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_780",
+      "message_id": 780,
+      "japanese": "それを王宮や総督府に持っていけば\nどんな街でもシェアを融通してくれる\nはずさ",
+      "source_hex": "82bb82ea82f089a48b7b82e2918d93c2957b82c98e9d82c182c482a282af82ce0a82c782f182c88a5882c582e083568346834182f0975a92ca82b582c482ad82ea82e90a82cd82b882b3",
+      "source_reference": {
+        "block": 10,
+        "record": 11,
+        "offset": 932
+      },
+      "current_English": "Take it to a palace or governor's office in any town. They should grant you some market share.",
+      "current_text_hex": "54616b6520697420746f20612070616c616365206f7220676f7665726e6f722773206f666669636520696e20616e7920746f776e2e20546865792073686f756c64206772616e7420796f7520736f6d65206d61726b65742073686172652e",
+      "current_reference": {
+        "block": 10,
+        "record": 13,
+        "offset": 1000
+      },
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "english": "Take it to a palace or governor's office in any town. They should grant you some market share.{PAD}",
+      "source_meaning": "Taking the letter to a palace or governor office in any town should secure preferential market share.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_781",
+      "message_id": 781,
+      "japanese": "紹介状は、小さな街しか使えないが\n推薦状なら、どんな街でも通用するのさ",
+      "source_hex": "8fd089ee8ff382cd81418fac82b382c88a5882b582a98e6782a682c882a282aa0a908491458ff382c882e7814182c782f182c88a5882c582e092ca977082b782e982cc82b3",
+      "source_reference": {
+        "block": 10,
+        "record": 12,
+        "offset": 1008
+      },
+      "current_English": "That good is selling quickly. We can offer a service price.\n         ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a202020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 14,
+        "offset": 1095
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a202020202020202020",
+      "english": "A letter of introduction only works in small towns. A letter of recommendation will do in any town.{PAD}",
+      "source_meaning": "A letter of introduction only works in small towns; a letter of recommendation works in any town.",
+      "localization_note": "Distinguish introduction from recommendation, large quantities where stated, and small towns from any town. Preserve item-upgrade wording rather than infer storage adjacency as spoken sequence. Generic service-price placeholders are removed.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_782",
+      "message_id": 782,
+      "japanese": "う～ん………。よしっ！\n流行品を売ってくれることだし\n特別におまけしておくよ",
+      "source_hex": "82a4816082f1816381638163814282e682b582c181490a97ac8d73956982f0948482c182c482ad82ea82e982b182c682be82b50a93c195ca82c982a882dc82af82b582c482a882ad82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 13,
+        "offset": 1080
+      },
+      "current_English": "That good is selling quickly. We can offer a service price.\n \n            ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a202020202020202020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 15,
+        "offset": 1165
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a202020202020202020202020",
+      "english": "Hmm... All right! Since you're selling us those popular goods, I'll throw in a little extra.{PAD}",
+      "source_meaning": "After deliberation agrees to add an extra favor because the player is selling popular goods.",
+      "localization_note": "Restore the actual extra favor or grateful request for continued supply; no numeric bonus is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_783",
+      "message_id": 783,
+      "japanese": "おっ！　流行品を売ってくれるのかい\nありがたいね。これからも頼むよ",
+      "source_hex": "82a882c18149814097ac8d73956982f0948482c182c482ad82ea82e982cc82a982a20a82a082e882aa82bd82a282cb814282b182ea82a982e782e0978a82de82e6",
+      "source_reference": {
+        "block": 10,
+        "record": 14,
+        "offset": 1156
+      },
+      "current_English": "That good is selling quickly. We can offer a service price.\n     ",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a2020202020",
+      "current_reference": {
+        "block": 10,
+        "record": 16,
+        "offset": 1240
+      },
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a2020202020",
+      "english": "Oh, you're selling us those popular goods? Thanks! Keep them coming!{PAD}",
+      "source_meaning": "Gratefully acknowledges the player selling popular goods and asks for continued business.",
+      "localization_note": "Restore the actual extra favor or grateful request for continued supply; no numeric bonus is invented.",
+      "speaker": "Market Trader, original town merchant",
+      "context": "Original Market reward fragments bind774 then779,775 or778 then780,and776 then777 then781; each ends with766.782/783 are original alternative closing favors/thanks. Each fragment is executed with supplied state; full reward eligibility, item effects and gameplay remain unverified.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-draft-formatting-integration-gameplay-pending"
+    }
+  ],
+  "full_goal_complete": false
+}

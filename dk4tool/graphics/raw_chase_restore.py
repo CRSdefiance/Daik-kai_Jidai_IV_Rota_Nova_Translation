@@ -42,6 +42,11 @@ def restore_chase_call(row, source_region, source_block, frame_bytes):
     for i, word in enumerate(old):
         if not red or not 8 <= max(channels(word)) <= 30 or max(channels(word)) - min(channels(word)) > 1:
             continue
+        r, g, b = channels(word)
+        if row.get('background_rule') == 'source-chase-call-mask-background-v8' and r > g and r > b:
+            # Near-white red antialiasing belongs to the source call's fringe.
+            # Only already source-connected mask pixels can be erased below.
+            continue
         x, y = x0 + i % width, y0 + i // width
         white_neighbors = sum(min(channels(target[(y + dy) * 320 + x + dx])) >= 30
                               for dx in (-1, 0, 1) for dy in (-1, 0, 1)

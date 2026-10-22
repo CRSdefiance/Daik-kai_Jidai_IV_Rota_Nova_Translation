@@ -1,5 +1,6 @@
 """Prepare the complete confirmed-name text migration with source and layout evidence."""
 
+import argparse
 import copy
 import json
 import re
@@ -58,7 +59,12 @@ def paragraph(text):
 
 
 def main():
-    ROOT.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--profile", default="all-routes-unified-v190")
+    parser.add_argument("--out", type=Path, default=ROOT)
+    args = parser.parse_args()
+    root = args.out
+    root.mkdir(parents=True, exist_ok=True)
     canonical = NdsImage.open("out/raphael_natural_v2_accepted_base.nds")
     clean = NdsImage.open("work/clean.nds")
     policy_path = Path("translations/character_name_localization_policy_v1.json")
@@ -67,12 +73,23 @@ def main():
     assert any(row.get("localized_first_name") == "Camille" for row in policy["confirmed_decisions"])
     registry_path = Path("translations/release_stack.json")
     registry = json.loads(registry_path.read_text(encoding="utf-8"))
-    registered = registry["profiles"]["all-routes-unified-v190"]["batches"]
+    registered = registry["profiles"][args.profile]["batches"]
     originals = {path: canonical.read_file(path) for path in PATHS}
     source_rows = {path: {r["id"]: r for r in export_mesfile_rows(raw, path, include_non_japanese=True)}
                    for path, raw in originals.items()}
     japanese_rows = {path: {r["id"]: r for r in export_mesfile_rows(clean.read_file(path), path, include_non_japanese=True)}
                      for path in PATHS}
+    presentation_path = Path("translations/charlotte_presentation_state_v279.json")
+    presentation = {}
+    if presentation_path.is_file():
+        document = json.loads(presentation_path.read_text(encoding="utf-8"))
+        for row in document["records"]:
+            key = row["file_path"], row["id"]
+            if source_rows[key[0]][key[1]]["source_hex"] != row["expected_source_hex"]:
+                raise ValueError("Scoped Charlotte presentation source differs")
+            if sha(Path(row["native_parser_proof"]).read_bytes()) != document["native_parser_proof_sha256"]:
+                raise ValueError("Scoped Charlotte native parser evidence differs")
+            presentation[key] = row
     effective, active_ids, calibrated_profiles = {}, set(), {path: [] for path in PATHS[:4]}
     for batch_path in registered:
         batch = json.loads(Path(batch_path).read_text(encoding="utf-8"))
@@ -114,6 +131,9 @@ def main():
                 continue
             raw = bytes.fromhex(row["source_hex"])
             record_profile = profile
+            if key in presentation:
+                record_profile = replace(record_profile,
+                    leading_speaker_bytes=record_profile.leading_speaker_bytes | {presentation[key]["presentation_byte"]})
             jp_record = japanese_rows[path].get(record_id)
             jp_raw = bytes.fromhex(jp_record["source_hex"]) if jp_record else b""
             if raw and jp_raw and raw[0] == jp_raw[0] and raw[0] >= 0x80 and raw[0] not in profile.leading_speaker_bytes:
@@ -157,7 +177,9 @@ def main():
                  json.loads(overrides_path.read_text(encoding="utf-8"))["records"]}
     additional_override_paths = [Path("translations/confirmed_name_route_editorial_v232.json"),
                                  Path("translations/confirmed_name_route_editorial_v234.json"),
-                                 Path("translations/confirmed_name_route_editorial_v236.json")]
+                                 Path("translations/confirmed_name_route_editorial_v236.json"),
+                                 Path("translations/confirmed_name_editorial_v278.json"),
+                                 Path("translations/confirmed_name_editorial_v280.json")]
     additional_override_sources = {}
     for additional_path in additional_override_paths:
         if not additional_path.is_file():
@@ -166,11 +188,16 @@ def main():
         for row in additional["records"]:
             key = row["file_path"], row["id"]
             if key in overrides:
-                raise ValueError("Duplicate separately reviewed editorial override")
+                prior_path = additional_override_sources.get(key, overrides_path.as_posix())
+                if (row.get("supersedes_editorial_override") != prior_path
+                        or row.get("expected_prior_english") != overrides[key]["english"]):
+                    raise ValueError("Duplicate editorial override lacks an exact reviewed predecessor lock")
             overrides[key] = row
             additional_override_sources[key] = additional_path.as_posix()
     checks, drafts, profiles = [], [], {}
     for (path, record_id), (batch_path, batch, old_row) in sorted(effective.items()):
+        if (path, record_id) in presentation and old_row["english"].startswith("P"):
+            old_row = {**old_row, "english": "{SPEAKER:50}" + old_row["english"][1:]}
         old_text = old_row["english"]
         if not OLD.search(old_text) and not macro_affected(path, old_text) and (path, record_id) not in overrides:
             continue
@@ -213,6 +240,9 @@ def main():
                  "default_macro_changed": bool(macro_affected(path, old_text))}
         if batch.get("encoder") == "dialogue-fixed-v1":
             profile = selected_profile(batch["dialogue_profile"], path)
+            if (path, record_id) in presentation:
+                profile = replace(profile, name=profile.name + "-Charlotte-50-v279",
+                                  leading_speaker_bytes=profile.leading_speaker_bytes | {0x50})
             audit = audit_fixed_dialogue_record(bytes.fromhex(old_source["source_hex"]), english, profile)
             recovered = False
             if any(i["severity"] == "error" and "pair-phase-auto-wrap" in i["message"] for i in audit["issues"]):
@@ -230,13 +260,14 @@ def main():
         drafts.append(authored)
         checks.append(check)
     output = {"format": "dk4-confirmed-name-migration-preparation-v1", "not_a_release_batch": True,
+              "source_profile": args.profile,
               "policy_sha256": sha(policy_path.read_bytes()), "registry_sha256": sha(registry_path.read_bytes()),
               "editorial_override_sha256": sha(overrides_path.read_bytes()),
               "additional_editorial_override_sources": [{"path": path.as_posix(), "sha256": sha(path.read_bytes())}
                                                          for path in additional_override_paths if path.is_file()],
               "proposed_profiles_not_registered": profiles, "records": drafts,
               "baked_control_review_not_safe_to_author_yet": baked_control_review}
-    (ROOT / "confirmed_source_locked_drafts.json").write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (root / "confirmed_source_locked_drafts.json").write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     failures = [r for r in checks if r.get("encoding_errors")]
     report = {"format": "dk4-confirmed-name-text-preparation-report-v1", "checks": checks,
               "records": len(checks), "literal_name_records": sum(r["literal_name_changed"] for r in checks),
@@ -248,7 +279,8 @@ def main():
               "baked_control_review": baked_control_review,
               "baked_controls_using_existing_route_calibration": recovered_baked_controls,
               "complete_editorial_and_native_checks_pending": True, "playable_ROM_modified": False}
-    (ROOT / "text_preparation_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report["source_profile"] = args.profile
+    (root / "text_preparation_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k: report[k] for k in ("records", "literal_name_records", "macro_dependent_records", "canonical_baked_records",
                                            "recovered_phase_auto_wrap_records", "native_common_help_records_pending")} |
                      {"encoding_failures": len(failures), "playable_ROM_modified": False}))

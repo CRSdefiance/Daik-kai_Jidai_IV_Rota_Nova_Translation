@@ -1,0 +1,49 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c2e0d1a2744a7da4a24f9693230b302a29f05bcaa036ebd5cc9726a6184731ff",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-deep-route-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Two source-checked Lil wedding chapter records only; original allocations and speaker09 retained.",
+  "records": [
+    {
+      "id": "DK4_MES_B70_R0397",
+      "english": "{SPEAKER:09}You'll always have me by your side to protect you.{PAD}",
+      "speaker": "Camille Marinus Overijssel",
+      "context": "Lil chapter70: Camille reassures Lil during his confession before the later wedding.",
+      "source_meaning": "Camille promises that he will always be at Lil's side and protect her, whatever happens.",
+      "localization_note": "Combines the two emphatic promises into one idiomatic sentence; always preserves the unrestricted commitment. The formatter owns the break, eliminating the orphan final word without a manual break or alignment space.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B70_R0615",
+      "english": "{SPEAKER:09}Better hurry! Dressing up like this took me forever!{PAD}",
+      "speaker": "Camille Marinus Overijssel",
+      "context": "Lil chapter70: Camille rushes to the wedding after struggling with unfamiliar formal clothes, immediately before his surprised apology and the original wedding movie.",
+      "source_meaning": "Camille realizes he must hurry. Unaccustomed to clothes like these, he has taken too long getting dressed.",
+      "localization_note": "Localizes the unfamiliar formal attire and resulting dressing delay as dressing up like this took me forever. Avoids the false garment-specific dress reading of 服. Better hurry is Camille's natural self-directed urgency.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

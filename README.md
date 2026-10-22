@@ -1,3 +1,5 @@
+> Latest promoted checkpoint: [Unified V1492](releases/all_routes_unified_v1492/README.md) (2026-10-22). Editorial and graphics audits remain open; see the release notes for the unfinished retreat-name repair.
+
 # DK4 Translation Tool
 
 A local, ROM-free Python toolchain for researching an English translation of

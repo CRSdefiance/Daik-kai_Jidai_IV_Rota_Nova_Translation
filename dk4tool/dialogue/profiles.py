@@ -3814,6 +3814,18 @@ _PROFILES["lil-story-deep-route-v123-live"] = replace(
 )
 
 
+for _route, _parent in (("raphael", "raphael-story-live"), ("maria", "maria-story-shared-events-live")):
+    _name = f"{_route}-story-percent-live"
+    _PROFILES[_name] = replace(
+        _PROFILES[_parent], name=_name, balanced_wrapping=True,
+        metrics_source=(
+            _PROFILES[_parent].metrics_source
+            + "; V685 literal-percent paragraphs opt into the existing automatic balanced planner; "
+            "same native widths, controls, guard and pair-phase contracts"
+        ),
+    )
+
+
 def profile_names() -> tuple[str, ...]:
     return tuple(sorted(_PROFILES))
 

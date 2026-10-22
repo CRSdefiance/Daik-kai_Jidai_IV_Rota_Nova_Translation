@@ -21,7 +21,8 @@ class NativeCommonRepack:
 def repack_native_records(common: bytes, arm9: bytes, authored: dict[int, bytes],
                           prefixes: dict[tuple[int, int], bytes], *,
                           preserved_packed_neighbors: dict[int, bytes] | None = None,
-                          spare_padding_before_first_entry: bool = False) -> NativeCommonRepack:
+                          spare_padding_before_first_entry: bool = False,
+                          generated_linebreaks: bool = False) -> NativeCommonRepack:
     """Fund full translations with terminal padding; preserve all global IDs.
 
     Every entry in an authored packed record must be supplied. Only terminal
@@ -29,6 +30,8 @@ def repack_native_records(common: bytes, arm9: bytes, authored: dict[int, bytes]
     sizes remain exact; all affected uint16 native offsets are recalculated.
     An explicitly reviewed consumer may keep spare bytes before an owner's first
     mapped entry, advancing every entry offset so the bytes are never selected.
+    A consumer-specific compiler can explicitly supply generated guarded lines;
+    authored newlines remain forbidden by the calling manuscript policy.
     """
     original = IlnkContainer.parse(common)
     before = common_message_entries(common, arm9, clean=False)
@@ -51,8 +54,10 @@ def repack_native_records(common: bytes, arm9: bytes, authored: dict[int, bytes]
         if owner not in prefixes or any(byte != 32 for byte in prefixes[owner]):
             raise ValueError("Authored record requires a verified alignment prefix")
     for raw in authored.values():
-        if not raw or b"\0" in raw or b"\n" in raw or b"\r" in raw:
+        if not raw or b"\0" in raw or b"\r" in raw or (b"\n" in raw and not generated_linebreaks):
             raise ValueError("Authored native entries require one nonempty paragraph")
+        if generated_linebreaks and any(not line.startswith(b"  ") for line in raw.split(b"\n")[1:]):
+            raise ValueError("Generated COMMON continuations require their two-byte guard")
         raw.decode("cp932")
     rebuilt_blocks = list(original.blocks)
     local_starts = {entry.message_id: entry.start for entry in before}

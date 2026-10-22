@@ -1,5 +1,14 @@
 # Release-build invariants
 
+## Generated ROM retention
+
+After completed build/test work, follow `docs/rom_retention.md`: keep all ROMs from
+today and the previous two Indianapolis calendar days, then one or two older daily
+checkpoints plus protected baselines/source copies and explicit research pins.
+Use `scripts/prune_generated_roms.ps1` to preview and apply an audited plan. Pin
+older ROM inputs needed by ongoing research before cleanup. Preserve all non-ROM
+records and never prune synced `sources/` or the original `work/clean.nds`.
+
 These rules apply to every future ROM build in this repository.
 
 Before changing or building a ROM, every model (including Luna, Terra, and Sol) must
@@ -52,6 +61,13 @@ family relationships, ranks, or other story facts.
 - Never use generic placeholders such as `see below` or `ok` as shipped dialogue. These are translation defects, not acceptable fallbacks.
 - Before claiming that a route layer is present, inspect the exact records in the candidate ROM. Lil's actual opening is `/data/SC2.DK4` block 22. Do not rely only on an output-ROM name, and do not ship English for that block until its portrait/name control preamble is proven intact by live testing.
 - Any build touching shared names or crew-acquisition messages must test that the first letter of an ASCII name survives rendering. Do not preserve unverified leading byte controls from Japanese name records.
+- Write literal story percentages as the word `percent`. A phrase such as `3% of`
+  is valid C formatting syntax (`% o`) and consumes an argument the Japanese
+  record never provided. Every playable build checks final English SC0-SC3
+  records against clean-source formatting commands, after all release stages.
+  Preserve real source placeholders and source-leading `25` presentation state;
+  lexical printf validity alone is insufficient. Do not globally double percent
+  bytes or reinterpret a story presentation state as text.
 
 ## Handoff
 

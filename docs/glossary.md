@@ -10,6 +10,27 @@
 
 Treat these as working terms until verified in game context.
 
+## Complete commodity labels — V636
+
+Use the full labels in `translations/commodity_fidelity_manuscript_v2.json` for
+the17 reviewed shared commodity entries. Iron Ore and Copper Ore preserve the
+source's 鉱石 distinction; Raw Silk and the three material-specific Cloth names
+preserve raw-material versus finished-product meanings. Use Frankincense,
+Lacquerware, Whale Meat and Smoked Salmon for the specific products named in source.
+Expand legacy display abbreviations to Shark Fins, Cinnamon, Platinum,
+Tortoiseshell, Turmeric and Black Wool.
+
+**ヤシ油 → Coconut Oil:** the proposed Palm Oil expansion from P. Oil was rejected
+before handoff. ヤシ油 and the separately indexed ココナッツ油 are source-equivalent
+coconut-oil terms;both use Coconut Oil without adding a quality,refining or botanical
+difference. Their original IDs and gameplay fields remain separate.
+References: [MEXT food-composition explanation](https://www.mext.go.jp/b_menu/shingi/gijyutu/gijyutu3/attach/1299201.htm),
+[Japan Oilseed Processors Association](https://www.oil.or.jp/kiso/seisan/seisan01_02.html).
+
+The complete table,reasons and scope are in
+[V636 commodity checkpoint](commodity_fidelity_v636_checkpoint.md). Other107 existing
+commodity labels are retained;this entry does not newly approve every legacy name.
+
 ## Character names
 
 ### Faithful, sensible English naming
@@ -38,6 +59,13 @@ The user has explicitly confirmed **Rafael**, **Hodram**, **Joakim**,
 **Camille** and **Maria Huamei Li**. **Lil Argot** retains its established spelling.
 The reviewed choices are settled. The Hodram-to-Hoodlum proposal is superseded;
 Kamil is a historical project spelling to migrate, not an open preference.
+
+Preserve deliberate source nicknames and vocal effects in dialogue. For example,
+Claudio calls Rafael **Rafi** (ラフィ) in clean SC2B133R0056. This is a specific
+familiar address, not a replacement for the locked Rafael name. Lil deliberately
+draws out Camille's name in SC2B159R0161 after he compares someone else's cooking
+with hers; the localization retains that vocal effect. Exact source bytes are in
+`translations/character_nickname_evidence_v292.json`.
 
 On 2026-10-07 the user reaffirmed **Camille** as final and requested a written
 rationale for all settled names. The explanations below are the decision record
@@ -82,6 +110,15 @@ confirmed Camille. A French-form name does not invalidate a fictional Dutch
 character or require us to invent a more stereotypically Dutch identity. Overijssel
 already agrees with the original card and remains unchanged. Sources: clean M28
 texture 71; [INSEE on names used by both sexes](https://www.insee.fr/fr/statistiques/9040114).
+
+The original story provides further direct support: clean `/data/SC2.DK4`,
+block121 record410, explains that the nickname began when someone teasingly used
+a girl's name because he looked like a girl as a child. Record403 distinguishes
+his true name, Marinus Kuhn, from Overijssel, his mother's surname. Camille thus
+preserves an intentional nickname with a feminine association in the source;
+this does not change his identity or claim that his nationality requires a French
+name. Exact clean bytes and source context are recorded in
+`translations/camille_nickname_source_evidence_v291.json`.
 
 **Maria Huamei Li:** preserve Maria, which is explicit in the Japanese publisher's
 full name, and use a consistent Mandarin romanization for 華梅 and 李, as supplied
@@ -142,3 +179,27 @@ The clean ROM is the primary source for both labels. Supplemental Japanese
 [town-event notes](https://w.atwiki.jp/offlinedaikoukai/pages/19.html) identify
 アカブー as a town-square character; they do not establish an English spelling.
 These choices retain the character names without adding titles or relationships.
+
+
+## Verified compact skills (V464)
+
+Use Vigor for生命力,Swords for剣闘術,Speech for説得力 and Guile for謀略術.
+These match complete actual native labels and their Japanese meanings. Physical
+Health is the separate condition label. Preserve original stat relationships and
+thresholds. V462 Sword/Talk visual readings were disproved by complete pixel masks.
+See [V464 source and display evidence](skill_terms_v464_checkpoint.md).
+
+
+## Minor-character surname correction V518
+
+**Yukihisa Genjo Shiraki** retains the full surname **Shiraki** from the clean
+シラキ entry. The former central Shira spelling omitted the final kana despite
+the complete seven-letter form fitting the original eight-byte slot with NUL.
+Runtime portrait captions use Yukihisa Shiraki,consistent with story naming.
+The historical source profile remains for reproduction;V518 applies a late
+central correction. All locked primary naming decisions remain unchanged.
+
+
+## V610 village place-name decisions
+
+Use the 24 spellings in [Village name decisions](village_names_v610_decisions.md). レバキュー is Leveque, correcting the former Lebaque spelling in three active Lil records. コルフ is Korf in the source Bering Sea context. Preserve Forel, Ezo and the game's Wanganui spelling as documented. Character-name locks remain unchanged.

@@ -1,0 +1,25 @@
+"""Rebind proven positive-health pre-duel prerequisites to V1206, no new fields."""
+import inspect
+from pathlib import Path
+from types import FunctionType
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts import native_duel_contact_v1169 as previous
+
+ROM=Path('out/all_routes_combined_v1206_candidate.nds')
+
+
+def water(arm,points):
+    return FunctionType(previous.previous.water.__code__,{**previous.previous.water.__globals__,'ROM':ROM})(arm,points)
+
+
+def apply_fixture(arm,raw,request):
+    source=inspect.getsource(previous.apply_fixture)
+    assert source.count('translations/duel_editorial_release_v1.json')==2
+    source=source.replace('translations/duel_editorial_release_v1.json','translations/duel_bark_editorial_release_v1.json')
+    old='from dk4tool.patch.duel_editorial import current_entries';assert source.count(old)==1
+    source=source.replace(old,'from dk4tool.patch.duel_bark_editorial import current_entries')
+    env={**previous.__dict__,'ROM':ROM,'water':water,'__file__':__file__}
+    exec(compile(source,__file__,'exec'),env);after,receipt=env['apply_fixture'](arm,raw,request)
+    receipt.update(bark_release_fixture_adapter_sha256=sha(Path(__file__).read_bytes()),
+        effective_adapter_sha256=sha(source.encode()),only_ROM_config_and_parser_binding_changed=True)
+    return after,receipt

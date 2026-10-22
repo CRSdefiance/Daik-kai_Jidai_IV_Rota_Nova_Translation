@@ -1,0 +1,140 @@
+{
+  "format": "dk4-palace-menu-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "native_format": "single-line-ui-Cstring;complete reviewed six-pointer relocation map",
+  "complete_source_ownership_map": "work\\analysis\\palace_label_boundaries_v799\\source_ownership.json",
+  "records": [
+    {
+      "id": "PALACE_MENU_0",
+      "english": "Contract",
+      "japanese": "契約",
+      "source_hex": "8c5f96f1",
+      "source_pointer": 34881012,
+      "menu_record": 34704676,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Obtain a contract to trade in this city.",
+      "localization_note": "Keep the complete word and relocate it with its NUL.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    },
+    {
+      "id": "PALACE_MENU_1",
+      "english": "Military Investment",
+      "japanese": "軍事投資",
+      "source_hex": "8c528e96938a8e91",
+      "source_pointer": 34881028,
+      "menu_record": 34704692,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Contribute money to the city's military defenses.",
+      "localization_note": "Spell out military investment without the inherited abbreviation.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    },
+    {
+      "id": "PALACE_MENU_2",
+      "english": "Recommendation",
+      "japanese": "推薦状を使う",
+      "source_hex": "908491458ff382f08e6782a4",
+      "source_pointer": 34881052,
+      "menu_record": 34704708,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Use a Market letter of recommendation.",
+      "localization_note": "The distinct letter type is a clear menu choice;replace the unnatural Use Recommend.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    },
+    {
+      "id": "PALACE_MENU_3",
+      "english": "Introduction",
+      "japanese": "紹介状を使う",
+      "source_hex": "8fd089ee8ff382f08e6782a4",
+      "source_pointer": 34881068,
+      "menu_record": 34704724,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Use a Market letter of introduction.",
+      "localization_note": "Name the introduction letter distinctly from a recommendation;the menu selection submits it.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    },
+    {
+      "id": "PALACE_MENU_4",
+      "english": "Lend Item",
+      "japanese": "アイテムを貸す",
+      "source_hex": "834183438365838082f091dd82b7",
+      "source_pointer": 34881084,
+      "menu_record": 34704740,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Lend one of the player's items to the ruler for display.",
+      "localization_note": "Retain the idiomatic existing action Lend Item.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    },
+    {
+      "id": "PALACE_MENU_5",
+      "english": "Reclaim",
+      "japanese": "アイテムを引き取る",
+      "source_hex": "834183438365838082f088f882ab8ee682e9",
+      "source_pointer": 34881116,
+      "menu_record": 34704756,
+      "speaker": "Native Palace menu action,not spoken dialogue",
+      "context": "Original5D4FC initializer copies the six records.5D518..5D60C applies trading-share,Market-letter,headquarters and item-ownership eligibility. Corresponding original Palace branch action and mapped31 paragraphs establish meaning.",
+      "source_meaning": "Take back an item the player lent to the ruler.",
+      "localization_note": "Reclaim precisely requests return of the player's own loaned property. The Palace Lend Item context supplies the noun;do not imply returning someone else's borrowed item.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-experimental-actual-menu-pending"
+    }
+  ],
+  "source_ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "canonical_ARM9_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5",
+  "current_ARM9_sha256": "e3074ecfb6196ddea857f92850720625d4c16da05d046a3899166d2bfa00a323"
+}

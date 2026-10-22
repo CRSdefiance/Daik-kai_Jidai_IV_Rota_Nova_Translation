@@ -1,0 +1,3 @@
+# V848: cooking-comment source review
+
+V848 source/prose-reviews13 Cook15 comments1410-1422:10 proposed revisions and3 justified retentions. All25 original role-helper selections prove eight NPC voice slots,four actual captain variants and the special Sera actor24 line1422. The draft restores cooking choices,salt/sugar reaction,tasting already gone,Joakim's frequent apprenticeship cooking,Lil's complaint,Maria's tentative fried rice and Sera's simple general observation. Formatting,integration and actual-display gates remain pending. V845 remains current;695 complete and711 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;graphics/all18 plaques and later older-record re-audit remain open;full goal active.

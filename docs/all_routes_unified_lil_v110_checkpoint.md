@@ -15,3 +15,8 @@ Saved-ROM verification: 21,448 exact experimental records, comprising
 Raphael 5,802, Hodram 5,004, Lil 5,689 and Maria 4,953; 218 effective
 exclusions unchanged. Another 49 Lil opening records are in the base.
 Coverage: 5,738/6,608 translated, 821 remaining, 49 excluded. Continue B295.
+
+
+## Coverage correction from V829 actual playback
+
+The historical complete-scope claim counted exported decodable rows. A real native speech record,SC2 B294 R73 with presentation94,was omitted by whole-record CP932 decoding and remained Japanese. V829 repairs it with exact source controls and actual display/transition verification. Further raw/native-object coverage is required before broader completeness claims. See [V829 evidence](editorial_v829_completion.md).

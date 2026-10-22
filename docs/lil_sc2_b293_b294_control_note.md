@@ -8,3 +8,8 @@ detection. Bare variants and both choices retain their first English glyph.
 Four FI macros retain count and order. Waiting costs one day; pressing on
 loses sailors. Map requirement, Proof clue, cliff risk and directions intact.
 Zero blockers, ten reviewed sheets and saved-ROM verification pass.
+
+
+## Coverage correction from V829 actual playback
+
+The historical complete-scope claim counted exported decodable rows. A real native speech record,SC2 B294 R73 with presentation94,was omitted by whole-record CP932 decoding and remained Japanese. V829 repairs it with exact source controls and actual display/transition verification. Further raw/native-object coverage is required before broader completeness claims. See [V829 evidence](editorial_v829_completion.md).

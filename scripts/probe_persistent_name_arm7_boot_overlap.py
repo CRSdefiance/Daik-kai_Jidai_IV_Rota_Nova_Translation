@@ -72,7 +72,11 @@ def execute(arm9, arm7, arm7_base, repair_entry=None, expected_pool=None):
             machine.reg_write(UC_ARM_REG_PC, address + 4)
 
     handle = uc.hook_add(UC_HOOK_CODE, cache)
-    uc.emu_start(BASE + 0x9E0, STOP, count=100000)
+    # The native copy and cache-line loops grow with the registered autoload
+    # sections. Keep a finite bound without truncating a larger valid payload.
+    autoload_bytes = sum(len(s.data) + s.bssSize for s in MainCodeFile(arm9, BASE).sections[1:])
+    autoload_budget = max(100000, autoload_bytes * 2 + 10000)
+    uc.emu_start(BASE + 0x9E0, STOP, count=autoload_budget)
     uc.hook_del(handle)
     if uc.reg_read(UC_ARM_REG_PC) != STOP:
         raise ValueError('ARM9 loader did not return')
@@ -86,7 +90,8 @@ def execute(arm9, arm7, arm7_base, repair_entry=None, expected_pool=None):
     rows = [{'address': s.ramAddress, 'length': len(s.data),
              'matches_original': bytes(uc.mem_read(s.ramAddress, len(s.data))) == bytes(s.data)}
             for s in sections]
-    result = {'arm7_source_changed_bytes_after_arm9_autoload': changed,
+    result = {'ARM9_autoload_instruction_budget': autoload_budget,
+              'arm7_source_changed_bytes_after_arm9_autoload': changed,
               'arm7_native_loaded_sections': rows,
               'order_contract': 'ARM9 autoload runs before ARM7 source relocation; actual scheduling not modeled',
               'cache_contract': 'ARM9 cache-maintenance instructions skipped'}

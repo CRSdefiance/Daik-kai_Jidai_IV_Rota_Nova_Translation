@@ -12,7 +12,7 @@ PROFILE = DialogueProfile(
 )
 
 
-def model_native_ascii(raw):
+def model_native_ascii(raw, *, buffered_cursor_guard=False):
     """Independent ASCII pair-buffer/cursor model of the accepted help context."""
     x, y = 0, 12
     pending = None
@@ -34,8 +34,10 @@ def model_native_ascii(raw):
             draws.extend(((first, px, py), (chr(byte), px + 6, py)))
             pending = None
         x += 6
-        # Exact inherited D5544-D555C repair, applied after each ASCII byte.
-        if index >= 1 and raw[index - 1:index + 1] == b'\n ' and x == 6:
+        # Preserve historical output by default. V272 only rewinds a blank
+        # guard or an empty pair buffer, avoiding overwritten visible cells.
+        if (index >= 1 and raw[index - 1:index + 1] == b'\n ' and x == 6
+                and (not buffered_cursor_guard or raw[index + 1:index + 2] == b' ' or pending is None)):
             x = 0
     # Native D4D84 calls D4EC4 with space to flush a pending final glyph.
     if pending is not None:

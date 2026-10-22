@@ -10,7 +10,7 @@ from scripts.compile_scene_caption_single_dispatch import compile_scoped_dispatc
 from scripts.execute_scene_caption_raster import execute
 
 
-def expected_pixels(source, text, x, y, mode, *, advance=5, style=1):
+def expected_pixels(source, text, x, y, mode, *, advance=5, style=1, initial=None):
     if advance not in (5, 6):
         raise ValueError('Unmapped reference glyph advance')
     font = GameAsciiFont.from_arm9(source)
@@ -20,6 +20,10 @@ def expected_pixels(source, text, x, y, mode, *, advance=5, style=1):
     color = struct.unpack_from('<H', source, palette + style * 2)[0]
     pitch = 256 if mode == 16 else 64
     output = bytearray((b'\x09\x00' if mode == 16 else b'\x99\x99') * (pitch * 192))
+    if initial is not None:
+        if len(initial) != len(output):
+            raise ValueError('Reference raster initial buffer dimensions differ')
+        output[:] = initial
     for index, character in enumerate(text):
         bitmap = font.decode(character)
         for row in range(11):

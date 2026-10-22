@@ -1,0 +1,16 @@
+# V1499 battle reaction integration checkpoint
+
+V1499 records registered V1492 integration of32 source/native-approved battle reactions:16 revised16 retained, without completion credit. Full471-batch/114-accepted-layer stack and exact clean-input patch reconstruction pass. Only COMMON23,original native ARM9 offset/directory metadata and the existing188-byte selector span change versus V1456;the172-byte gate,all3652 other/retained text-copy spans,40 other blocks,routes,graphics,fonts,opaque duel prefix,earlier helpers,sections/BSS/cache/arena/ITCM and123040 staged bytes are preserved. All8 ordinary startup controls match V1105 and are visually reviewed;repaired shop676/677 native wrapping/full glyph planes pass without a fresh shop activation claim. Original previous2082 capture has two complete native/independent/reference/RGB holds10750/10780 and normal dismissal,flagship,victory,rewards,cargo confirmation and return to sailing13200/mode000/cleared enemy parties;all10 later whole screens match V1456. The sole40-byte prebattle own-location fixture,all4MiB,input,RAM,PNG and unchanged source/disposable saves are audited. Actual capture10750 and sailing13200 are visually reviewed. No new32 reaction buffer lead appears in sampled holds;the control does not complete setup,surprise or injury families. Counts1323 complete(985 revised338 retained),1467 source/prose,144 reviewed-incomplete COMMON(32 reactions24 loss/surrender16 sinking34 aftermath38 older),plus broader shared/routes/raw prose. V1492 is latest registered experimental integration;V1430 remains completed-native relocation reference. Canonical,V997,separate graphics/all18 plaques and later older-record re-audit remain unchanged/open;goal active.
+
+## Experimental combined release
+
+- Candidate: `E:/Rota Nova translations/Generated/out/all_routes_combined_v1492_candidate.nds`;SHA-256 `96d0eda08db4f6da69a936a44db1f41abcc1cd6ce202370a9edc5517eb5400fd`.
+- Canonical base: `out\raphael_natural_v2_accepted_base.nds`;SHA-256 `3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+- Profile: `all-routes-unified-v1492`;all471 batches114 accepted layers preserved.
+- Changed internal files versus V1456: `/COMMON/MESFILE.DK4` and `/__arm9__.bin`,limited to COMMON23/native metadata/existing selector span.
+- Exact patch: `out\all_routes_combined_v1492_candidate.xdelta`;SHA-256 `417db2ada9bc4a5ebfd552e6e2f81a8d57ba75369b6c3488eca6284b086867d0`;clean input SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`.
+- Checks: runtime1485,fonts1486,copies1487,escape1488,visual1489,release1493,startup1494,shop1495,original prior capture1498.
+
+## Remaining gates
+
+Activate representative original battle-setup,surprise and injury reactions through original game logic,with complete visible text,normal dismissal and following scenes. Preserve original RNG, actor/role selection,HP/injury flags and combat outcomes. No numerical message injection or during-combat healing/equipment/location changes. The original24 loss/surrender,16 sinking,34 aftermath38 older reviewed entries and broader source inventory remain open. Experimental;no canonical promotion or full-goal completion.

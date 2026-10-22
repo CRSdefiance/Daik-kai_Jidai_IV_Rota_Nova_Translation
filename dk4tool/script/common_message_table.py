@@ -17,6 +17,42 @@ TABLE_HASH = "305f075a25a7476b0099895bbb21e6fdea6f56e7f0ae24ec5b80aead8bafc1c8"
 # Exact whole-record map verified against all 3,668 messages. Clean mode
 # continues to require the original directory. No arbitrary directory bypass.
 RELOCATED_DIRECTORY_HASHES = frozenset({
+    # V782: exact2661 selections1007-3667;50 complete shared paragraphs.
+    "c24544e754a2c1b381e64895f56fa646affd414dbcf555bb6fe938ee860a9e0b",
+    # V780: exact2336 selections933-3268;31 complete barmaid paragraphs.
+    "aae0dd8240e52e3de1ec94a6f3da5d6fef324714c15e6290a5fcf09ccc64439c",
+    # V778: exact2697 selections164-2860;25 follow-up paragraphs.
+    "e63495c202bc60958373a51d59df4036605b49fc485cf8a82f530ad3b90f292f",
+    # V776: exact2697 selections164-2860;56 complete scheme paragraphs.
+    "b4dff11ec2c855458be38255d11ff5b387be7431e6d609f78e25378861c0cf74",
+    # V773: exact2151 selections164-2314;25 recruitment/condition entries.
+    "504e4dfdd30fff39be5393bc43ad029092659d2ea4a43ff2f89962e7b63c6bb9",
+    # V770: exact2151 selections164-2314;32 Tavern continuation entries.
+    "ba196ea167c33feb8d2b7341024b2c8befa7bf7e640413505810efec24097b27",
+    # V767: exact1813 selections164-1976;two opaque copy spans preserved.
+    "df162ac3e064871eaaf2defdabbbbe81e39ff00f56547d028f5bdecf17015cc8",
+    # V762: exact1549 selections164-1712;18 reviewed Port/service replies.
+    "fe3af5a3a2b97e32d5980786b825e33686fffd3906f59fdb364bf7c4bf39f5a0",
+    # V760: exact1549 complete selections164-1712 in existing blocks2-18.
+    # Every unselected text byte and packed payload block remains preserved.
+    "7e2fc3325ac41442354ecb8547c6cf85a74bd14d05bd19ff39ec93d18c78cfd5",
+    # V758: exact1369 complete selections344-1712 in blocks5-18.
+    "daa82ab9ba0f0df082939785923c98279cc546dce2b5faa2edfc5825fe2c9a47",
+    # V756 Market stock/letters: exact946 complete selections in blocks10-18.
+    # Every unselected visible byte and every other block remains unchanged.
+    "9cde16387f9932ad0d566212537b6387f502c4dd6e6005308427f1708dfe825c",
+    # V753 Market reply whole-selection map across blocks7-10. No arbitrary
+    # directory bypass: exact310-message map and complete native copy checks.
+    "f57f08bd6869b3927d8e6be154f6d9eb90147f7b28e97c4afc3bebc32aa40e25",
+    # V708 adds Cabin recovery1247 to the complete31-help family. All7336
+    # warm/cold native copies pass; all3637 other message text bytes stay exact.
+    "3d4d4ef8d37f87916522193b53bd4027d3d53ea11a3d1b5400b882e797c77555",
+    # V707: exact three-block Refit help map. All3668 original native warm/cold
+    # copies pass; all3638 unselected text byte strings and allocator stay exact.
+    "99bbbb79a856466f52e89081c0bdf70189b3209bf7b041eae5b0f9f4d16a3d72",
+    # V276 six-message name migration: all3668 selections and18 native copies
+    # proved; V299 replays the identical COMMON bytes/directory on V298.
+    "65c9b7ebe64615e5ab83a3ba06b344954fb492b5fc03e8a95118664882fa0b2c",
     "b12f4aa9d84cdf9e3fbf40bf49ca175c2fe98ce2ec5f4fc9161622cb28e566a3",
     "e00046fc75fe92f69ec5f484efe5307e6275cca9276def974bb15aeddddd5ee5",
     "e44ff559788ea5e72feccc219aa74b4d764d880b8074d433d05c12077b691042",

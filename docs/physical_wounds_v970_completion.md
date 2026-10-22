@@ -1,0 +1,20 @@
+# V970: physical wound editorial completion
+
+V970 completes13 wound comments1794-1806 for original conditions2/3 in registered V969:11 revisions and2 retentions. All150 original direct/main battle/ordinary selections,25 healthy and25 prior-fatigue controls,52 full native font cases,7336 copies and178 cache sequences pass. Eight active-widget bitmap/RGB holds verify complete initial I1796,Julios35cell continuation1799,genuine captain retained1803 and Sera24 special1806. Four normal returns preserve scoped state through first Back;original battle time resumes on exit. Explicit room assignments follow observed native combat0/1,and a one-byte condition2/3 fixture is applied after Deck opens. Seven ordinary startup/New Game captures and title match V962. Exact clean-input patch preserves471 batches,114 layers,3655 unselected strings,all graphics/routes,native code,single8KiB cache,216x36 crop and123040 staged bytes.1092 entries complete (817 revised/275 retained),1095 source/prose reviewed. Other physical states,older750-752,mood1833,special1885-1888,raw abandon-caption0x134E54,remaining shared/routes/player prose/raw coverage,separate graphics/all18 plaques,Samwell header and later older-record re-audit remain open;canonical not promoted;full goal active.
+
+## Source and English
+
+Eleven revisions and two justified retentions cover13 independent wound responses. The clean Japanese restores personal reassurance,hesitant unfinished thoughts,Rafaels ongoing bleeding and But I,Lils pain and responsibility as admiral,and Seras natural brief reassurance. Conditions2/3 share the same dialogue alternatives,but their other effects are not asserted identical. The rough spit remedy remains character speech. All13 clean sources have no IC macro;literal Japanese first-person wording becomes natural English. Exact clean/canonical/current references and all five natural-dialogue-v2 gates are retained.
+
+## Formatting and actual scenes
+
+All13 complete native-font previews match independent words at x0 in52 ordinary/battle condition2/3 controls. Maria1805 now breaks after Dont worry,and the continuation keeps about a little wound like this intact. The two prior soft-hint attempts are preserved;no prose or manual line breaks were changed. Source fonts and native bounds cover Rafael1802s full35cell first-person fragment and Lils personal admiral line1804. The general story audit rejects this COMMON format;the dedicated original-consumer audit passes with zero errors and unwaived warnings. Four bad-format and11 glyph-deletion controls reject offline.
+
+Four separate V969 fresh cold boots:Camille9 condition2 wound1796,Julio6 condition3 wound1799,genuine captain1 condition2 retained1803,and Sera24 condition3 special1806. Two full native bitmap/actual RGB holds and normal return per case. Room assignment only after observed original combat0/1;one explicitly bounded actor condition byte6 is inserted after Deck opens,before selecting the officer. Two coordinate approaches. No savestate,actor/captain identity replacement,battle-mode/outcome/money/text/code injection or earned injury/recruitment/refit claim. Other nine entries,including Rafael1802 and Lil1804,have complete source/native-font proof rather than individual actual visits. No full-route,hardware,clinical grade or recovery-effect guarantee.
+
+## Registered candidate
+
+Experimental profile all-routes-unified-v969 rebuilds471 batches and114 accepted layers from canonical out/raphael_natural_v2_accepted_base.nds,SHA2563cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe. Only COMMON/MESFILE.DK4 and ARM9 selection metadata differ from V962. Native code,all other prose,graphics/routes/HELP/ARM7/overlays,sections/BSS,cache arenas and123040 staged bytes are exact. The xdelta reconstructs every candidate byte from clean Japanese SHA256f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d. Explicit user cold-boot acceptance is still required for canonical promotion.
+
+ROM SHA256 0ecf8209c13e742c74ce21fb7542c989850bf7d12ae551f5d8cc4ca26783dcda
+Patch SHA256 fd8d66bd688bfcec5e827783c79f8259d248ab09bf50af13b40eff322275c5a1

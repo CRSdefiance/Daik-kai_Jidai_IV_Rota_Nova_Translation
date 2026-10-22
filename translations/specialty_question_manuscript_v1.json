@@ -1,0 +1,54 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "current_ROM_sha256": "ebd9169326df44a367f7c12b30f00952d71ba91bf5ee888c35391f3f6d34b950",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_742",
+      "message_id": 742,
+      "source_hex": "82a082f182bd8149814082bb82ea82f08ff782c182c482ad82ea82c882a282a9814981480a82bb82cc257382aa82a082ea82ce0a257382aa814182b182cc8a5882cc0a93c18e59956982c982c882e982c68e7682a482f182be82aa81630a82c782a482be82a28148",
+      "japanese": "あんた！　それを譲ってくれないか！？\nその%sがあれば\n%sが、この街の\n特産品になると思うんだが…\nどうだい？",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a200a200a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4865792c20776f756c6420796f752067697665206d6520746861742025733f208268207468696e6b20697420636f756c64206d616b652025732061206c6f63616c207370656369616c747920686572652e205768617420646f20796f75207361793f",
+      "current_English": "Hey, would you give me that %s? Ｉ think it could make %s a local specialty here. What do you say?",
+      "english": "Hey! Could I have your %s? I think we could make %s a local specialty here.{PAD}",
+      "speaker": "Local specialty requester, original town actor getter B2CD8",
+      "context": "OriginalBAB64 first filters218 inventory objects against five town stock slots, comparing product+13 with the item index atBAC1C. BAD0C supplies the item name then product name to original Yes/No parent53FCC, message742; acceptance743 and refusal744 follow. Tests bind all25 prerequisite pairs but do not claim earned eligibility or actual inventory transfer.",
+      "source_meaning": "The local asks the player to hand over the first supplied item, believing it could make the second supplied product a local specialty, and asks for a decision.",
+      "localization_note": "Keep the attention call, request for the specific owned item, its role in creating the named local specialty, and the tentative prediction. I think we could preserves the speculation. The Japanese repeats its request with a final dou dai; natural English combines both appeals into Could I have your ...? rather than repeating the question. Your works with singular, plural and mass names; no it/them agreement is guessed. Here retains the town context. One logical paragraph; wrap only after both native substitutions.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2684
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2702
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-all25-prerequisite-pairs-native-font-reviewed-gameplay-and-integration-pending",
+      "native_context_evidence": "work\\analysis\\town_responses_v751\\native_context.json"
+    }
+  ],
+  "status": "research-not-a-playable-candidate"
+}
