@@ -1,0 +1,8 @@
+"""Bind the exact original role7 metric,not a bare fallback actor stat."""
+from pathlib import Path
+if __name__=='__main__':
+ source=Path('scripts/prepare_admiral_shot_context_v2656.py').read_text().replace('from scripts.verify_village_wrap_v608 import read,save','from scripts.verify_village_wrap_v608 import read,save\nfrom scripts.reconcile_contextual_mood_retentions_v2482 import historical_key').replace("(r.get('file_path','/COMMON/MESFILE.DK4'),r['id'])for f","historical_key(r)for f")
+ source=source.replace('(0x117300,0x117320)]','(0x117300,0x117320),(0x8235C,0x823D8)]')
+ needle="stat6=get(0x7E788,logical_actor,6);oldpath=";replacement="stat6=get(0x7E788,logical_actor,6);gate_metric=get(0x8235C,duty,7,6,0);assert physical==0 and gate_metric==0;oldpath=";assert source.count(needle)==1;source=source.replace(needle,replacement)
+ source=source.replace('logical_fallback_stat6=stat6,logical_fallback_is_not_proof','logical_fallback_bare_actor_stat6=stat6,actual_role7_metric_8235C_7_6_0=gate_metric,actual_metric_zero_from_unassigned_source_job=True,logical_fallback_is_not_proof').replace('current_logical_fallback_stat6=stat6,fresh_credit','current_logical_fallback_bare_actor_stat6=stat6,current_actual_role7_metric=gate_metric,fresh_credit')
+ source=source.replace('Original73B18 checks the physical role7/stat6 threshold','Original73B18 calls8235C(duty,7,6,0),which uses the physical job lookup8261C and7DD38 for the assigned actor;an empty job returns0. It checks that metric against150').replace('admiral_shot_context_v2656','admiral_shot_context_v2656c');exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})

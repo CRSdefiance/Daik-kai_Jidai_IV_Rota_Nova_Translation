@@ -1,0 +1,1222 @@
+{
+  "format": "dk4-natural-dialogue-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "Search-role1-role7-postmacro-and-original-loss-modal-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2284_candidate.nds",
+  "current_ROM_sha256": "7c6d025ef0d12c6dd7cc58095802a27bb49dafc830f33851e73e734b4f8bdfe1",
+  "current_ARM9_sha256": "dff9c14e929e3ba5b82b6bd35f1cef89903e05ab530033f02f8ac11580fdbfcc",
+  "current_COMMON_sha256": "96966b524ba51c51376c2eb379eac5c8000722e52e7092e914d6999a5725690d",
+  "source_context_packet": "work\\analysis\\search_reports_context_v2629\\all11_clean_current_context_catalog.json",
+  "source_context_packet_sha256": "d6af64731a393dd16ec805bab04d7332602847f8d8565c9d0f6eaddb021f50e0",
+  "native_context_proof": "work\\analysis\\search_reports_context_v2629\\source_context_packet.json",
+  "native_context_proof_sha256": "0982c3c23a6b21a95126dc8d91346b98e24632d1ed1fa933756e64360cfd339b",
+  "fresh_ordinary_supplement": "work\\analysis\\search_reports_editorial_v2630\\complete_Search_exchange_context.json",
+  "fresh_ordinary_supplement_sha256": "8dc26e37aef566edc9838df82ab2b87304493a38f9c7c6447a807eb9cbcc47fe",
+  "source_quantity_bounds": "work\\analysis\\search_reports_revision_v1665\\original_forage_quantity_bounds.json",
+  "source_quantity_bounds_sha256": "cf51bf349de2b2c240a8f9c1c9c80459bb2f2a4934b87fb894cbbb2fcdd47053",
+  "registered_prose_owner_bindings": [
+    {
+      "stage": "search_reports_editorial",
+      "selected_IDs": [
+        312,
+        2217,
+        2218,
+        2219,
+        2220,
+        2221,
+        2229,
+        2230,
+        2231,
+        2232,
+        2233
+      ],
+      "registered_config": "translations\\search_reports_editorial_release_v1.json",
+      "registered_config_sha256": "1add39e67268c6e52cb40aee4a7e0570952fa6d856d7965317c66336f7baff03",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_manuscript_sha256": "09191d8f5e8eefb6fc7c598e831dc01dfd8f6f56689b9894949a6ae0eacbd9c5",
+      "registered_stage_native_IDs": [
+        312,
+        2217,
+        2218,
+        2219,
+        2220,
+        2221,
+        2229,
+        2230,
+        2231,
+        2232,
+        2233
+      ],
+      "compiler": "scripts.search_reports_native_plan_v1661.compiled"
+    }
+  ],
+  "prior_manuscripts": [
+    {
+      "path": "translations\\search_reports_editorial_manuscript_v4.json",
+      "sha256": "09191d8f5e8eefb6fc7c598e831dc01dfd8f6f56689b9894949a6ae0eacbd9c5"
+    }
+  ],
+  "revised_IDs": [],
+  "retained_count": 11,
+  "speaker_metadata_corrections": [],
+  "formatting_review_pending": false,
+  "current_native_and_actual_family_reconciliation_pending": false,
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_312",
+      "message_id": 312,
+      "source_Japanese": "水夫が%s人\n減りました",
+      "source_hex": "9085957682aa2573906c0a8cb882e882dc82b582bd",
+      "source_reference": {
+        "block": 4,
+        "offset": 3060,
+        "copy_end": 3084,
+        "bytes": 21,
+        "record_index": 43,
+        "table_offset": 1317760,
+        "start_in_record": 2
+      },
+      "current_English": "%s sailors lost.\n    ",
+      "current_text_hex": "2573207361696c6f7273206c6f73742e0a20202020",
+      "current_reference": {
+        "block": 4,
+        "offset": 2923,
+        "copy_end": 2941,
+        "bytes": 17,
+        "record_index": 62,
+        "table_offset": 1317760,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "2573207361696c6f7273206c6f73742e0a20202020",
+      "english": "Sailors lost: %s.",
+      "source_meaning": "The number of sailors has decreased by the supplied count.",
+      "localization_note": "Sailors lost: %s. is a natural count-neutral status for 水夫が%s人減りました. The label works with one or several sailors and preserves the original numeric argument. Lost does not assert death, injury, desertion or a cause absent from the source. No death toll, rank, health effect or new crew total is invented;the original helper supplies the actual capped loss.",
+      "speaker": "Original speakerless system modal",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": null,
+      "source_table": null,
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5361696c6f7273206c6f73743a2025732e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-546B8-Search-loss-literal-x0",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5361696c6f7273206c6f73743a2025732e",
+      "current_stored_English": "Sailors lost: %s.",
+      "fresh_retained_wording_justification": "Sailors lost: %s. is a natural count-neutral status for 水夫が%s人減りました. The label works with one or several sailors and preserves the original numeric argument. Lost does not assert death, injury, desertion or a cause absent from the source. No death toll, rank, health effect or new crew total is invented;the original helper supplies the actual capped loss.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5361696c6f7273206c6f73743a2025732e",
+      "integrated_reference": {
+        "block": 4,
+        "offset": 2923,
+        "copy_end": 2941,
+        "bytes": 17
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [
+        {
+          "run": "loss",
+          "frame": 20542,
+          "message_id": 312,
+          "actual_actor_ID": null,
+          "source_amounts": [
+            10
+          ],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_020542_navigation.png",
+          "capture_sha256": "751f809cb5c925d3424b4de247b087fda7682fc77b87463b820c00cda3a52d0d",
+          "RAM_sha256": "33093613187b5f2a48aced5c4040d6c13c2a4a9edf4009b35fec1ee0eb63e9a0",
+          "current_resident_hex": "5361696c6f7273206c6f73743a2025732e",
+          "current_formatted_hex": "5361696c6f7273206c6f73743a208250824f2e",
+          "native_pipeline": {
+            "loaded_template_hex": "5361696c6f7273206c6f73743a2025732e",
+            "parent": 33900264,
+            "formatted_hex": "5361696c6f7273206c6f73743a208250824f2e",
+            "message_ID": 312,
+            "source_amounts": [
+              10
+            ],
+            "source_ABF50_argument_hex": [
+              "8250824f"
+            ],
+            "original_entry": 33900216,
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                16698,
+                36235020,
+                4087
+              ]
+            ],
+            "CPU_numeric_modal_only_no_original_sailor_loss_event_or_crew_edit": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "064e9185cc1268e8776ca4bb3e5b2034607edff482ebafb65024a0dea9f11e32",
+          "original_saved_call_and_argument_pointers_verified": true
+        },
+        {
+          "run": "loss",
+          "frame": 20572,
+          "message_id": 312,
+          "actual_actor_ID": null,
+          "source_amounts": [
+            10
+          ],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_020572_navigation.png",
+          "capture_sha256": "751f809cb5c925d3424b4de247b087fda7682fc77b87463b820c00cda3a52d0d",
+          "RAM_sha256": "6850bd0283d773a9cb45e9552171fdcced54e9ec8ac24870210a9f4a2c98cf30",
+          "current_resident_hex": "5361696c6f7273206c6f73743a2025732e",
+          "current_formatted_hex": "5361696c6f7273206c6f73743a208250824f2e",
+          "native_pipeline": {
+            "loaded_template_hex": "5361696c6f7273206c6f73743a2025732e",
+            "parent": 33900264,
+            "formatted_hex": "5361696c6f7273206c6f73743a208250824f2e",
+            "message_ID": 312,
+            "source_amounts": [
+              10
+            ],
+            "source_ABF50_argument_hex": [
+              "8250824f"
+            ],
+            "original_entry": 33900216,
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                16698,
+                36235020,
+                4087
+              ]
+            ],
+            "CPU_numeric_modal_only_no_original_sailor_loss_event_or_crew_edit": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "064e9185cc1268e8776ca4bb3e5b2034607edff482ebafb65024a0dea9f11e32",
+          "original_saved_call_and_argument_pointers_verified": true
+        }
+      ],
+      "display_contract": "Original546B8 speakerless literal modal,x0,228x64,35-cell one line;no authored indent/break;one original fullwidth %s sailor count"
+    },
+    {
+      "id": "COMMON_MESSAGE_2217",
+      "message_id": 2217,
+      "source_Japanese": "探検隊が戻ってきました\nあたりには何もないようです！",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82dc82b582bd0a82a082bd82e882c982cd89bd82e082c882a282e682a482c582b78149",
+      "source_reference": {
+        "block": 23,
+        "offset": 1864,
+        "copy_end": 1916,
+        "bytes": 51,
+        "record_index": 39,
+        "table_offset": 1321570,
+        "start_in_record": 2
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "block": 23,
+        "offset": 3573,
+        "copy_end": 3640,
+        "bytes": 66,
+        "record_index": 117,
+        "table_offset": 1321570,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e2020202020202020202020202020202020",
+      "english": "The expedition is back! It looks like there's nothing around here.",
+      "source_meaning": "The expedition has returned;there appears to be nothing nearby.",
+      "localization_note": "The expedition is back! It looks like there is nothing around here. retains the return, lively exclamation and tentative ようです in the existing contraction. Around here limits the report to the search area. It adds no global absence, disaster, new rank or relationship.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role1-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "current_stored_English": "The expedition is back! It looks like there's nothing around here.",
+      "fresh_retained_wording_justification": "The expedition is back! It looks like there is nothing around here. retains the return, lively exclamation and tentative ようです in the existing contraction. Around here limits the report to the search area. It adds no global absence, disaster, new rank or relationship.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 3573,
+        "copy_end": 3640,
+        "bytes": 66
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [
+        {
+          "run": "failure",
+          "frame": 7151,
+          "message_id": 2217,
+          "actual_actor_ID": 16,
+          "source_amounts": [],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_007151_navigation.png",
+          "capture_sha256": "d3293d81d0a632cfb89c768d54081cf7c45a4e4e1d4ce7a6c84727cd043e5ec7",
+          "RAM_sha256": "93357975e88b9b7eaca4556fd78f846600d5b946bf85575b941479147f05960d",
+          "current_resident_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+          "current_formatted_hex": "205468652065787065646974696f6e206973206261636b21204974206c6f6f6b730a20206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+          "native_pipeline": {
+            "parent": 33897912,
+            "selector": 34696896,
+            "input_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "output": 36234664,
+            "formatted_hex": "205468652065787065646974696f6e206973206261636b21204974206c6f6f6b730a20206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "loaded_template_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "role": 1,
+            "source_table": 34696896,
+            "original_entry": 33897796,
+            "source_amounts": [],
+            "source_ABF50_argument_hex": [],
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                103741,
+                36235020,
+                4847
+              ]
+            ],
+            "original_selection_loader_varargs_macro_and_post_expansion_formatter_execute": true,
+            "CPU_only_file_success_and_UI_constructor_boundaries_not_gameplay": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "5a6d9e1e98be44a293cbc63453f540996d2aec0c79895c12a8d1b45e42ad34f9",
+          "original_saved_call_and_argument_pointers_verified": true
+        },
+        {
+          "run": "failure",
+          "frame": 7181,
+          "message_id": 2217,
+          "actual_actor_ID": 16,
+          "source_amounts": [],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_007181_navigation.png",
+          "capture_sha256": "49c747d78c206474e03a95ec3561a805e355cd688c7746d2b61f13c1f453442d",
+          "RAM_sha256": "0ca08cb112c4f5a3568b531b467c2fc1353ffb3455d3edeb23c8bb88b556b584",
+          "current_resident_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+          "current_formatted_hex": "205468652065787065646974696f6e206973206261636b21204974206c6f6f6b730a20206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+          "native_pipeline": {
+            "parent": 33897912,
+            "selector": 34696896,
+            "input_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "output": 36234664,
+            "formatted_hex": "205468652065787065646974696f6e206973206261636b21204974206c6f6f6b730a20206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "loaded_template_hex": "5468652065787065646974696f6e206973206261636b21204974206c6f6f6b73206c696b652074686572652773206e6f7468696e672061726f756e6420686572652e",
+            "role": 1,
+            "source_table": 34696896,
+            "original_entry": 33897796,
+            "source_amounts": [],
+            "source_ABF50_argument_hex": [],
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                103741,
+                36235020,
+                4847
+              ]
+            ],
+            "original_selection_loader_varargs_macro_and_post_expansion_formatter_execute": true,
+            "CPU_only_file_success_and_UI_constructor_boundaries_not_gameplay": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "5a6d9e1e98be44a293cbc63453f540996d2aec0c79895c12a8d1b45e42ad34f9",
+          "original_saved_call_and_argument_pointers_verified": true
+        }
+      ],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2218",
+      "message_id": 2218,
+      "source_Japanese": "探検隊が戻ってきたよ\nめぼしい物はないみたいだね",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82e60a82df82da82b582a295a882cd82c882a282dd82bd82a282be82cb",
+      "source_reference": {
+        "block": 23,
+        "offset": 1916,
+        "copy_end": 1964,
+        "bytes": 47,
+        "record_index": 40,
+        "table_offset": 1321572,
+        "start_in_record": 0
+      },
+      "current_English": "The expedition is back. Nothing\n  worthwhile.  ",
+      "current_text_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a2020776f7274687768696c652e2020",
+      "current_reference": {
+        "block": 23,
+        "offset": 3640,
+        "copy_end": 3705,
+        "bytes": 64,
+        "record_index": 118,
+        "table_offset": 1321572,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a20776f7274687768696c652e202020",
+      "english": "The expedition's back. Looks like they found nothing worthwhile.",
+      "source_meaning": "The expedition is back;there seems to be nothing noteworthy.",
+      "localization_note": "The expedition is back. Looks like they found nothing worthwhile. in the existing contraction preserves 戻ってきたよ and the tentative めぼしい物はないみたいだね. Worthwhile retains the distinction from literally finding nothing at all. Looks like is natural familiar speech in this complete two-sentence report,with no invented cargo,location or relationship.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5468652065787065646974696f6e2773206261636b2e204c6f6f6b73206c696b65207468657920666f756e64206e6f7468696e6720776f7274687768696c652e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role1-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e2773206261636b2e204c6f6f6b73206c696b65207468657920666f756e64206e6f7468696e6720776f7274687768696c652e",
+      "current_stored_English": "The expedition's back. Looks like they found nothing worthwhile.",
+      "fresh_retained_wording_justification": "The expedition is back. Looks like they found nothing worthwhile. in the existing contraction preserves 戻ってきたよ and the tentative めぼしい物はないみたいだね. Worthwhile retains the distinction from literally finding nothing at all. Looks like is natural familiar speech in this complete two-sentence report,with no invented cargo,location or relationship.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e2773206261636b2e204c6f6f6b73206c696b65207468657920666f756e64206e6f7468696e6720776f7274687768696c652e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 3640,
+        "copy_end": 3705,
+        "bytes": 64
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2219",
+      "message_id": 2219,
+      "source_Japanese": "探検隊が戻ってきたが\nあたりには何もないようじゃな",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82aa0a82a082bd82e882c982cd89bd82e082c882a282e682a482b682e182c8",
+      "source_reference": {
+        "block": 23,
+        "offset": 1964,
+        "copy_end": 2016,
+        "bytes": 49,
+        "record_index": 41,
+        "table_offset": 1321574,
+        "start_in_record": 0
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "block": 23,
+        "offset": 3705,
+        "copy_end": 3774,
+        "bytes": 68,
+        "record_index": 119,
+        "table_offset": 1321574,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e20202020202020202020202020",
+      "english": "The expedition's back, but there doesn't seem to be anything nearby.",
+      "source_meaning": "The expedition returned,but there seems to be nothing nearby.",
+      "localization_note": "The existing contraction and but preserve the return and が contrast. There does not seem to be anything nearby retains the source uncertainty. The understated older-style observation sounds natural without invented age,kinship or forced archaic dialect.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5468652065787065646974696f6e2773206261636b2c2062757420746865726520646f65736e2774207365656d20746f20626520616e797468696e67206e65617262792e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role1-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e2773206261636b2c2062757420746865726520646f65736e2774207365656d20746f20626520616e797468696e67206e65617262792e",
+      "current_stored_English": "The expedition's back, but there doesn't seem to be anything nearby.",
+      "fresh_retained_wording_justification": "The existing contraction and but preserve the return and が contrast. There does not seem to be anything nearby retains the source uncertainty. The understated older-style observation sounds natural without invented age,kinship or forced archaic dialect.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e2773206261636b2c2062757420746865726520646f65736e2774207365656d20746f20626520616e797468696e67206e65617262792e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 3705,
+        "copy_end": 3774,
+        "bytes": 68
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2220",
+      "message_id": 2220,
+      "source_Japanese": "探検隊が戻ってきたよ\nこの辺には何もないんだって",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82e60a82b182cc95d382c982cd89bd82e082c882a282f182be82c182c4",
+      "source_reference": {
+        "block": 23,
+        "offset": 2016,
+        "copy_end": 2064,
+        "bytes": 47,
+        "record_index": 42,
+        "table_offset": 1321576,
+        "start_in_record": 2
+      },
+      "current_English": "The expedition is back. Nothing\n  around here. ",
+      "current_text_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a202061726f756e6420686572652e20",
+      "current_reference": {
+        "block": 23,
+        "offset": 3774,
+        "copy_end": 3835,
+        "bytes": 60,
+        "record_index": 120,
+        "table_offset": 1321576,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "652065787065646974696f6e206973206261636b2e204e6f7468696e670a2061726f756e6420686572652e20202020",
+      "english": "The expedition's back. They say there's nothing around here.",
+      "source_meaning": "The expedition is back;they say there is nothing around here.",
+      "localization_note": "The existing familiar contraction and They say preserve the return and explicit んだって hearsay. Around here keeps the source local scope. The unspecified reporting source stays unspecified;there is no invented messenger,rank or claim that nobody searched.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5468652065787065646974696f6e2773206261636b2e2054686579207361792074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role1-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e2773206261636b2e2054686579207361792074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "current_stored_English": "The expedition's back. They say there's nothing around here.",
+      "fresh_retained_wording_justification": "The existing familiar contraction and They say preserve the return and explicit んだって hearsay. Around here keeps the source local scope. The unspecified reporting source stays unspecified;there is no invented messenger,rank or claim that nobody searched.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e2773206261636b2e2054686579207361792074686572652773206e6f7468696e672061726f756e6420686572652e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 3774,
+        "copy_end": 3835,
+        "bytes": 60
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2221",
+      "message_id": 2221,
+      "source_Japanese": "探検隊が戻ってきました\nこの辺には何もないようですな",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82dc82b582bd0a82b182cc95d382c982cd89bd82e082c882a282e682a482c582b782c8",
+      "source_reference": {
+        "block": 23,
+        "offset": 2064,
+        "copy_end": 2116,
+        "bytes": 51,
+        "record_index": 43,
+        "table_offset": 1321578,
+        "start_in_record": 0
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "block": 23,
+        "offset": 3835,
+        "copy_end": 3911,
+        "bytes": 75,
+        "record_index": 121,
+        "table_offset": 1321578,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e202020202020202020202020202020",
+      "english": "The expedition has returned. There doesn't seem to be anything around here.",
+      "source_meaning": "The expedition has returned;there seems to be nothing around here.",
+      "localization_note": "The expedition has returned. There does not seem to be anything around here. in the existing contraction preserves the measured report and tentative ようですな. It adds no address or relationship and keeps both the return and local search result as one complete turn.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "compiled_hex": "5468652065787065646974696f6e206861732072657475726e65642e20546865726520646f65736e2774207365656d20746f20626520616e797468696e672061726f756e6420686572652e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role1-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e206861732072657475726e65642e20546865726520646f65736e2774207365656d20746f20626520616e797468696e672061726f756e6420686572652e",
+      "current_stored_English": "The expedition has returned. There doesn't seem to be anything around here.",
+      "fresh_retained_wording_justification": "The expedition has returned. There does not seem to be anything around here. in the existing contraction preserves the measured report and tentative ようですな. It adds no address or relationship and keeps both the return and local search result as one complete turn.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e206861732072657475726e65642e20546865726520646f65736e2774207365656d20746f20626520616e797468696e672061726f756e6420686572652e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 3835,
+        "copy_end": 3911,
+        "bytes": 75
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2229",
+      "message_id": 2229,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見しました",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca982b582dc82b582bd",
+      "source_reference": {
+        "block": 23,
+        "offset": 2452,
+        "copy_end": 2496,
+        "bytes": 41,
+        "record_index": 51,
+        "table_offset": 1321594,
+        "start_in_record": 1
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "block": 23,
+        "offset": 4163,
+        "copy_end": 4228,
+        "bytes": 64,
+        "record_index": 129,
+        "table_offset": 1321594,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "617465722025732062617272656c733b20666f6f642025732062617272656c732e2020202020202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food.",
+      "source_meaning": "The expedition discovered the supplied water and food quantities in barrels,water first.",
+      "localization_note": "The expedition found %s barrels of water and %s barrels of food. is a natural complete neutral report. Both quantities,water-before-food order,and both barrel units match the Japanese. It adds no extra supplies,storage capacity,amount or speaker title.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      },
+      "compiled_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role7-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+      "current_stored_English": "The expedition found %s barrels of water and %s barrels of food.",
+      "fresh_retained_wording_justification": "The expedition found %s barrels of water and %s barrels of food. is a natural complete neutral report. Both quantities,water-before-food order,and both barrel units match the Japanese. It adds no extra supplies,storage capacity,amount or speaker title.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 4163,
+        "copy_end": 4228,
+        "bytes": 64
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [
+        {
+          "run": "forage",
+          "frame": 10183,
+          "message_id": 2229,
+          "actual_actor_ID": 18,
+          "source_amounts": [
+            105,
+            105
+          ],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_010183_navigation.png",
+          "capture_sha256": "e09e4bf064a85b8c552e0c87daed50bbef9dad18d290b96db0fd973b5fd417d2",
+          "RAM_sha256": "53c1256df6d6b3be024158e5741cb54424555ee3e9c16c2f7233215c655342c8",
+          "current_resident_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+          "current_formatted_hex": "205468652065787065646974696f6e20666f756e64208250824f82542062617272656c730a20206f6620776174657220616e64208250824f82540a202062617272656c73206f6620666f6f642e",
+          "native_pipeline": {
+            "parent": 33897912,
+            "selector": 34696832,
+            "input_hex": "5468652065787065646974696f6e20666f756e64208250824f82542062617272656c73206f6620776174657220616e64208250824f82542062617272656c73206f6620666f6f642e",
+            "output": 36234664,
+            "formatted_hex": "205468652065787065646974696f6e20666f756e64208250824f82542062617272656c730a20206f6620776174657220616e64208250824f82540a202062617272656c73206f6620666f6f642e",
+            "loaded_template_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+            "role": 7,
+            "source_table": 34696832,
+            "original_entry": 33897796,
+            "source_amounts": [
+              105,
+              105
+            ],
+            "source_ABF50_argument_hex": [
+              "8250824f8254",
+              "8250824f8254"
+            ],
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                103741,
+                36235020,
+                4847
+              ]
+            ],
+            "original_selection_loader_varargs_macro_and_post_expansion_formatter_execute": true,
+            "CPU_only_file_success_and_UI_constructor_boundaries_not_gameplay": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "842675685dcd37219feb78adf1aeb069fd147e932f38307573634bebde72f0ef",
+          "original_saved_call_and_argument_pointers_verified": true
+        },
+        {
+          "run": "forage",
+          "frame": 10213,
+          "message_id": 2229,
+          "actual_actor_ID": 18,
+          "source_amounts": [
+            105,
+            105
+          ],
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\search_reports_live_v1680_1676\\frame_010213_navigation.png",
+          "capture_sha256": "e09e4bf064a85b8c552e0c87daed50bbef9dad18d290b96db0fd973b5fd417d2",
+          "RAM_sha256": "d160b32b76a42735bda20bdd3d7073fec67a650b2f0017243cfc2d1875c84073",
+          "current_resident_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+          "current_formatted_hex": "205468652065787065646974696f6e20666f756e64208250824f82542062617272656c730a20206f6620776174657220616e64208250824f82540a202062617272656c73206f6620666f6f642e",
+          "native_pipeline": {
+            "parent": 33897912,
+            "selector": 34696832,
+            "input_hex": "5468652065787065646974696f6e20666f756e64208250824f82542062617272656c73206f6620776174657220616e64208250824f82542062617272656c73206f6620666f6f642e",
+            "output": 36234664,
+            "formatted_hex": "205468652065787065646974696f6e20666f756e64208250824f82542062617272656c730a20206f6620776174657220616e64208250824f82540a202062617272656c73206f6620666f6f642e",
+            "loaded_template_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f642e",
+            "role": 7,
+            "source_table": 34696832,
+            "original_entry": 33897796,
+            "source_amounts": [
+              105,
+              105
+            ],
+            "source_ABF50_argument_hex": [
+              "8250824f8254",
+              "8250824f8254"
+            ],
+            "file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                103741,
+                36235020,
+                4847
+              ]
+            ],
+            "original_selection_loader_varargs_macro_and_post_expansion_formatter_execute": true,
+            "CPU_only_file_success_and_UI_constructor_boundaries_not_gameplay": true
+          },
+          "complete_native_ink_and_gray_shadow_RGB_masks_equal": true,
+          "full_native_plane_sha256": "842675685dcd37219feb78adf1aeb069fd147e932f38307573634bebde72f0ef",
+          "original_saved_call_and_argument_pointers_verified": true
+        }
+      ],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2230",
+      "message_id": 2230,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽を\n見つけたよ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d82f00a8ca982c282af82bd82e6",
+      "source_reference": {
+        "block": 23,
+        "offset": 2496,
+        "copy_end": 2540,
+        "bytes": 41,
+        "record_index": 52,
+        "table_offset": 1321596,
+        "start_in_record": 2
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "block": 23,
+        "offset": 4228,
+        "copy_end": 4293,
+        "bytes": 64,
+        "record_index": 130,
+        "table_offset": 1321596,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "7465722025732062617272656c733b20666f6f642025732062617272656c732e202020202020202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition found the supplied water and food barrel counts in a familiar report.",
+      "localization_note": "The complete English exclamation preserves 見つけたよ as cheerful familiar news. Both original substitutions stay in water-then-food order with barrels for each. English can share the neutral variant wording while punctuation conveys the livelier delivery;source voice and portrait remain distinct.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      },
+      "compiled_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role7-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "current_stored_English": "The expedition found %s barrels of water and %s barrels of food!",
+      "fresh_retained_wording_justification": "The complete English exclamation preserves 見つけたよ as cheerful familiar news. Both original substitutions stay in water-then-food order with barrels for each. English can share the neutral variant wording while punctuation conveys the livelier delivery;source voice and portrait remain distinct.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 4228,
+        "copy_end": 4293,
+        "bytes": 64
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2231",
+      "message_id": 2231,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見！",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca98149",
+      "source_reference": {
+        "block": 23,
+        "offset": 2540,
+        "copy_end": 2576,
+        "bytes": 35,
+        "record_index": 53,
+        "table_offset": 1321598,
+        "start_in_record": 2
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "block": 23,
+        "offset": 4293,
+        "copy_end": 4358,
+        "bytes": 64,
+        "record_index": 131,
+        "table_offset": 1321598,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "7465722025732062617272656c733b20666f6f642025732062617272656c732e202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition discovered the supplied water and food barrel counts;an excited announcement.",
+      "localization_note": "The natural complete exclamation carries the source short 発見！ announcement without copying its fragmented syntax. Both quantities and barrel units stay in order. Shared wording with2230 is justified by shared meaning;the original actor/voice mapping still distinguishes them.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      },
+      "compiled_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role7-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "current_stored_English": "The expedition found %s barrels of water and %s barrels of food!",
+      "fresh_retained_wording_justification": "The natural complete exclamation carries the source short 発見！ announcement without copying its fragmented syntax. Both quantities and barrel units stay in order. Shared wording with2230 is justified by shared meaning;the original actor/voice mapping still distinguishes them.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e20666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 4293,
+        "copy_end": 4358,
+        "bytes": 64
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2232",
+      "message_id": 2232,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見したぞ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca982b582bd82bc",
+      "source_reference": {
+        "block": 23,
+        "offset": 2576,
+        "copy_end": 2616,
+        "bytes": 39,
+        "record_index": 54,
+        "table_offset": 1321600,
+        "start_in_record": 0
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "block": 23,
+        "offset": 4358,
+        "copy_end": 4425,
+        "bytes": 66,
+        "record_index": 132,
+        "table_offset": 1321600,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e2020202020",
+      "english": "The expedition's found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition has found the supplied water and food barrel counts;an assertive informal report.",
+      "localization_note": "The expedition has found in the existing contraction gives 発見したぞ a brisk confident voice. The complete sentence preserves water then food and both original counts/barrel units. No amount,rank,relationship or additional reward is invented.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      },
+      "compiled_hex": "5468652065787065646974696f6e277320666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role7-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e277320666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "current_stored_English": "The expedition's found %s barrels of water and %s barrels of food!",
+      "fresh_retained_wording_justification": "The expedition has found in the existing contraction gives 発見したぞ a brisk confident voice. The complete sentence preserves water then food and both original counts/barrel units. No amount,rank,relationship or additional reward is invented.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e277320666f756e642025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 4358,
+        "copy_end": 4425,
+        "bytes": 66
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    },
+    {
+      "id": "COMMON_MESSAGE_2233",
+      "message_id": 2233,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽を\n見つけたよ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d82f00a8ca982c282af82bd82e6",
+      "source_reference": {
+        "block": 23,
+        "offset": 2616,
+        "copy_end": 2660,
+        "bytes": 41,
+        "record_index": 55,
+        "table_offset": 1321602,
+        "start_in_record": 0
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "block": 23,
+        "offset": 4425,
+        "copy_end": 4493,
+        "bytes": 67,
+        "record_index": 133,
+        "table_offset": 1321602,
+        "start_in_record": 0
+      },
+      "canonical_source_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e20202020202020",
+      "english": "The expedition found us %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition found the supplied water and food barrel counts in familiar news to our party.",
+      "localization_note": "The expedition found us is idiomatic English for the expedition reporting provisions for the player party;us supplies the ordinary contextual beneficiary without inventing kinship,ownership or a new faction. The familiar 見つけたよ delivery and upbeat exclamation remain. Both original quantities,water-then-food order and barrel units are preserved.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Failure role1 reports expedition return and an apparently empty search,then original fatigue+3. Forage role7 reports water then food in barrels from original source quantities,then original supply/effect writes.312 is a separate speakerless count-neutral sailor-loss notice from796A4,not a declaration of death. Original helper exits when no positive loss and caps loss below the available count. Two tables contain alternatives,not sequential replies. Original logical role1 Gerhard16/voice1 and role7 Charles18/voice0 can speak with empty physical stations. Native voices/number fixtures are CPU tests only. Historical actual failure2217,forage2229 with105/105,and312 with10 use the completed location-only V1676 Search run. No new RNG,event,actor,quantity,crew,supply or outcome edits. Impossible numeric stress remains distinct from source-reachable quantity layouts. Earlier hot-spring discovery/recovery/relaxation/Experience are neighboring original Search outcomes,not mandatory replies to these failure/forage alternatives. Failure2217 can be followed by fatigue308;the later separate loss312 is no invented explanation for an empty search. Voice-table alternatives must not be read as eleven consecutive lines.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "retain-wording",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-current-native-historical-family-and-registered-retention-reconciliation",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      },
+      "compiled_hex": "5468652065787065646974696f6e20666f756e642075732025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "consumer": "original-53D44-Search-role7-portrait",
+      "registered_prose_owner": "search_reports_editorial",
+      "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+      "registered_compiler": "scripts.search_reports_native_plan_v1661.compiled",
+      "current_hex": "5468652065787065646974696f6e20666f756e642075732025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "current_stored_English": "The expedition found us %s barrels of water and %s barrels of food!",
+      "fresh_retained_wording_justification": "The expedition found us is idiomatic English for the expedition reporting provisions for the player party;us supplies the ordinary contextual beneficiary without inventing kinship,ownership or a new faction. The familiar 見つけたよ delivery and upbeat exclamation remain. Both original quantities,water-then-food order and barrel units are preserved.",
+      "speaker_metadata_corrected": false,
+      "original_historical_family": "Shared-Search-reports11",
+      "integrated_hex": "5468652065787065646974696f6e20666f756e642075732025732062617272656c73206f6620776174657220616e642025732062617272656c73206f6620666f6f6421",
+      "integrated_reference": {
+        "block": 23,
+        "offset": 4425,
+        "copy_end": 4493,
+        "bytes": 67
+      },
+      "new_current_visit": false,
+      "current_V2284_actual_holds": [],
+      "historical_current_bound_holds": [],
+      "display_contract": "Original53D44 role1,parent02053DB8/table+27C,x6 inset,228x64,35 cells by4rows,16px stride;generated pair-safe postmacro wrap"
+    }
+  ],
+  "full_goal_complete": false,
+  "status": "complete-fresh-contextual-retentions-reconciled-registered-V2284",
+  "final_review": "translations\\search_reports_contextual_final_review_v1.json",
+  "current_native_fonts": "work/analysis/search_reports_fonts_v2631/native_font_research.json",
+  "historical_current_binding": "work\\analysis\\search_reports_history_v2632b\\historical_search_current_binding.json",
+  "new_current_ID_visits": [],
+  "registered_stage_binding": {
+    "stage": "search_reports_editorial",
+    "release_config": "translations\\search_reports_editorial_release_v1.json",
+    "release_config_sha256": "1add39e67268c6e52cb40aee4a7e0570952fa6d856d7965317c66336f7baff03",
+    "registered_manuscript": "translations\\search_reports_editorial_manuscript_v4.json",
+    "registered_manuscript_sha256": "09191d8f5e8eefb6fc7c598e831dc01dfd8f6f56689b9894949a6ae0eacbd9c5",
+    "native_IDs": [
+      312,
+      2217,
+      2218,
+      2219,
+      2220,
+      2221,
+      2229,
+      2230,
+      2231,
+      2232,
+      2233
+    ],
+    "new_revisions": 0
+  }
+}

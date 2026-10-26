@@ -1,0 +1,83 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-deep-route-v110-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "One fresh contextual retention;complete cliff exchange context only,no wider block completion.",
+  "records": [
+    {
+      "id": "DK4_MES_B294_R0073",
+      "english": "{SPEAKER:94}You're set on it, huh? Just for you, then.{PAD}",
+      "speaker": "Guildmaster acting as the cliff guide;original94 presentation state",
+      "context": "The guide warns that there is a risky route up the cliff and even locals rarely attempt it. Lil asks about the cliff,then defiantly says to watch her climb. In73 the guide recognizes her firm resolve and says this is for her. In76 he agrees to guide her to the cliff,asks her to meet here and bring a map. Lil asks about the map;84explains the hidden Christian village,the guides lack of the precise route after the climb,and a Mediterranean town as a likely map source. Read the gruff favor as a response to her determination,not kinship,romance,a new rank,a promise to climb for her or knowledge of the entire onward route. Adjacent dialogue is context only;the wider B293-B294 review remains open. Only the already-mapped94 presentation prefix is separated,never a guessed Shift-JIS lead. The original48-byte fixed allocation,header,commands,pair-safe protected break and4trailing spaces stay intact.",
+      "source_meaning": "The guide observes that Lil seems firmly resolved,then says he is doing this specifically for her.",
+      "localization_note": "You are set on it in the existing contraction and huh? naturally convey the gruff acknowledgment of 決意はかたいようだな. Just for you, then. is a natural conversational exception for 他でもねえ。あんたのためだ. The full reply responds to Lil taking up the challenge and leads naturally into the guides agreement and map request. Its elliptical second sentence is deliberate spoken favor,not omitted story information. No family relationship,rank,romance,new promise or battle/event result is invented. Existing wording works and is retained. Speaker94,original allocation and all layout bytes are compiled from one logical paragraph;formatting is separately verified.",
+      "source_japanese": "決意はかたいようだな\n他でもねえ。あんたのためだ",
+      "raw_source": {
+        "hex": "948c8888d382cd82a982bd82a282e682a482be82c80a91bc82c582e082cb82a6814282a082f182bd82cc82bd82df82be",
+        "presentation_prefix_hex": "94"
+      },
+      "source_control_evidence": "work/analysis/cliff_editorial_v829/94_source_control_and_old_batch_verification.json",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "file_path": "/data/SC2.DK4",
+      "source_hex": "948c8888d382cd82a982bd82a282e682a482be82c80a91bc82c582e082cb82a6814282a082f182bd82cc82bd82df82be",
+      "source_Japanese": "決意はかたいようだな\n他でもねえ。あんたのためだ",
+      "source_reference": {
+        "block": 294,
+        "record": 73,
+        "offset": 641,
+        "bytes": 48,
+        "archive_offset": 340129,
+        "preceding_header_hex": "0040ffff00"
+      },
+      "current_reference": {
+        "block": 294,
+        "record": 73,
+        "offset": 641,
+        "bytes": 48,
+        "archive_offset": 342489,
+        "preceding_header_hex": "0040ffff00"
+      },
+      "current_hex": "94596f7527726520736574206f6e2069742c206875683f204a7573740a20666f7220796f752c207468656e2e20202020",
+      "compiled_hex": "94596f7527726520736574206f6e2069742c206875683f204a7573740a20666f7220796f752c207468656e2e20202020",
+      "formatted_markup": "{SPEAKER:94}You're set on it, huh? Just{LB}for you, then.{PAD}",
+      "fresh_retained_wording_justification": "You are set on it in the existing contraction and huh? naturally convey the gruff acknowledgment of 決意はかたいようだな. Just for you, then. is a natural conversational exception for 他でもねえ。あんたのためだ. The full reply responds to Lil taking up the challenge and leads naturally into the guides agreement and map request. Its elliptical second sentence is deliberate spoken favor,not omitted story information. No family relationship,rank,romance,new promise or battle/event result is invented. Existing wording works and is retained. Speaker94,original allocation and all layout bytes are compiled from one logical paragraph;formatting is separately verified.",
+      "editorial_decision": "retain-wording",
+      "speaker_metadata_corrected": false
+    }
+  ],
+  "current_ROM": "out\\all_routes_combined_v2284_candidate.nds",
+  "current_ROM_sha256": "7c6d025ef0d12c6dd7cc58095802a27bb49dafc830f33851e73e734b4f8bdfe1",
+  "current_ARM9_sha256": "dff9c14e929e3ba5b82b6bd35f1cef89903e05ab530033f02f8ac11580fdbfcc",
+  "current_COMMON_sha256": "96966b524ba51c51376c2eb379eac5c8000722e52e7092e914d6999a5725690d",
+  "current_SC2_sha256": "c92e8c319b291cd34e1cf940ba1c7452bc36ccd86bd7d9871732f655bef16386",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "native_context_proof": "work\\analysis\\lil_cliff_context_v2650\\source_context_packet.json",
+  "native_context_proof_sha256": "0b0c03f43d16f8b825ca00b743c2332cf30c36ba4c8829fe03772635db394a5e",
+  "source_context_packet": "work\\analysis\\lil_cliff_context_v2650\\source_context_packet.json",
+  "source_context_packet_sha256": "0b0c03f43d16f8b825ca00b743c2332cf30c36ba4c8829fe03772635db394a5e",
+  "registered_batch": "translations/lil_cliff_editorial_v1.json",
+  "registered_batch_sha256": "7b25aad65a7b2e3e06a1f9303d3ebce01e723db52c38a86f47b5d23078ab70e5",
+  "revised_IDs": [],
+  "retained_count": 1,
+  "speaker_metadata_corrections": [],
+  "formatting_review_pending": true,
+  "current_native_and_actual_family_reconciliation_pending": true,
+  "full_goal_complete": false
+}

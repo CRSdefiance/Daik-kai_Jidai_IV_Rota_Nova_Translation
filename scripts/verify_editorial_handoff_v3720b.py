@@ -1,0 +1,6 @@
+"""Audit the declared complete preamble including its executable actor selector."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    p=Path('scripts/verify_editorial_handoff_v3720.py');t=p.read_text(encoding='utf-8');old="b[r['block']][ref['header_offset']:ref['offset']]==bytes.fromhex(r['source_complete_preamble_hex'])";assert t.count(old)==1;t=t.replace(old,"b[r['block']][ref['header_offset']:ref['offset']+1]==bytes.fromhex(r['source_complete_preamble_hex'])");exec(compile(t,str(p)+'::complete-prefix-inclusive','exec'),dict(__name__='__main__',__file__=__file__));root=Path('work/analysis/editorial_handoff_verification_v3720');save(root/'preserved_failed_verifier_prefix_bound_correction.json',dict(previous=str(p),previous_sha256=sha(p.read_bytes()),failure='The first verifier compared a five-byte header to the declared six-byte complete header-plus-selector preamble.',correction='Include the executable source actor selector in both clean/current comparisons;no source,manuscript,ledger or ROM mutation.',producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

@@ -1,0 +1,43 @@
+"""Eight named-vessel reports;original attacker officer and target virtual name."""
+from pathlib import Path
+import struct
+from unicorn import UC_HOOK_CODE
+from unicorn.arm_const import UC_ARM_REG_R0,UC_ARM_REG_R1,UC_ARM_REG_R2,UC_ARM_REG_PC,UC_ARM_REG_SP,UC_ARM_REG_LR
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.rom.nds import NdsImage
+from dk4tool.script.common_message_table import common_message_entries
+from scripts.enemy_capture_native_plan_v1423 import compiled
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.probe_button_prompt_native import STACK,STOP
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/enemy_capture_context_v2594');IDS=list(range(2082,2090));BASE=0x02000000;TABLE=0x02117B00
+if __name__=='__main__':
+ assert not ROOT.exists()
+ ledger=read('translations/editorial_review_current_v1.json');candidate=ledger['current_integrated_candidate'];rom=NdsImage.open(candidate['path']);clean=NdsImage.open('work/clean.nds');arm=rom.read_file('/__arm9__.bin');common=rom.read_file('/COMMON/MESFILE.DK4');source=clean.read_file('/__arm9__.bin');en=current_entries(common,arm);jp=common_message_entries(clean.read_file('/COMMON/MESFILE.DK4'),source)
+ assert sha(Path(candidate['path']).read_bytes())==candidate['sha256']
+ manifest=read(Path(candidate['path']).with_suffix('.manifest.json'));stage=manifest['relocations']['/COMMON/MESFILE.DK4']['enemy_capture_editorial'];cfgpath=Path(stage['release_config']);cfg=read(cfgpath);mp=Path(cfg['manuscript']);prior={r['message_id']:r for r in read(mp)['records']}
+ assert stage['proof']['native_IDs']==IDS and sorted(prior)==IDS and sha(cfgpath.read_bytes())==stage['release_config_sha256']and sha(mp.read_bytes())==cfg['dependencies'][str(mp)]
+ owner=dict(stage='enemy_capture_editorial',selected_IDs=IDS,registered_config=str(cfgpath),registered_config_sha256=sha(cfgpath.read_bytes()),registered_manuscript=str(mp),registered_manuscript_sha256=sha(mp.read_bytes()),registered_stage_native_IDs=IDS,compiler='scripts.enemy_capture_native_plan_v1423.compiled')
+ for n in IDS:assert prior[n]['source_hex']==jp[n].text.hex()and compiled(prior[n])==en[n].text and en[n].text.count(b'%s')==jp[n].text.count(b'%s')==1
+ fresh={(r['file_path'],r['id'])for r in ledger['contextual_story_natural_dialogue_pass_v1871']['record_keys']};assert not any(('/COMMON/MESFILE.DK4',f'COMMON_MESSAGE_{n}')in fresh for n in IDS)
+ def ref(r):return dict(block=r.block,offset=r.block_offset,copy_end=r.copy_end,bytes=len(r.text),record_index=r.record_index,table_offset=r.table_offset,start_in_record=r.start)
+ def record(n):return dict(message_ID=n,file_path='/COMMON/MESFILE.DK4',source_reference=ref(jp[n]),current_reference=ref(en[n]),source_hex=jp[n].text.hex(),current_hex=en[n].text.hex(),clean_Japanese=jp[n].text.decode('cp932'),current_stored_English=en[n].text.decode('cp932'),selected=n in IDS)
+ hpath=Path('work/analysis/enemy_capture_verified_v1435b/actual_capture_and_return_verification.json');h=read(hpath);reportpath=Path(h['report']);report=read(reportpath);assert sha(reportpath.read_bytes())==h['report_sha256']and report['ROM_sha256']==h['candidate_sha256'];snapshots={r['frame']:r for r in report['read_only_capture_RAM_snapshots']+report['read_only_pause_RAM_snapshots']};item=snapshots[10750];snapshot=Path(item['path']);raw=snapshot.read_bytes();assert sha(raw)==item['sha256']
+ spans=((0x73C00,0x74094),(0x55DC4,0x55E6C),(0x53F0C,0x53F9C),(0x36C70,0x36CB8),(TABLE-BASE,TABLE-BASE+32))
+ for a,b in spans:assert arm[a:b]==source[a:b]==raw[a:b]
+ assert list(struct.unpack_from('<8i',arm,TABLE-BASE))==IDS
+ cpu,get=get_machine(arm,raw);actors,fleets=get(0xCB184),get(0xCB1A8);objects=[actors+4+i*32 for i in range(207)]+[actors+0x19E4];choices=[]
+ for slot,obj in enumerate(objects):
+  voice=get(0x7E988,obj);n=get(0x53F4C,obj,TABLE);assert n==IDS[voice];choices.append(dict(actor_slot=slot,actor_object=obj,actor_ID=get(0x7EE08,obj),voice_class=voice,message_ID=n))
+ attacker=get(0x36C70,fleets+4+132+12);target=get(0x36C70,fleets+4+5*132+12);actor=get(0x55DC4,attacker,8);assert actor==actors+4+18*32 and get(0x7E988,actor)==0 and get(0x5543C,target)==30 and get(0x55444,target)==0
+ vt=struct.unpack('<I',cpu.mem_read(target,4))[0];getter=struct.unpack('<I',cpu.mem_read(vt+4,4))[0];pointer=get(getter-BASE,target);name=bytes(cpu.mem_read(pointer,64)).split(b'\0')[0];assert name==b'Hanse Cog'
+ beforemodels=bytes(cpu.mem_read(actors,0x1A04));cpu.mem_write(STACK+0x7C,struct.pack('<I',attacker));cpu.mem_write(STACK+0x8C,struct.pack('<I',target));calls=[]
+ def stop(u,pc,size,unused):
+  calls.append(dict(entry=pc,arguments=[u.reg_read(r)for r in(UC_ARM_REG_R0,UC_ARM_REG_R1,UC_ARM_REG_R2)]));u.emu_stop()
+ cpu.hook_add(UC_HOOK_CODE,stop,begin=BASE+0x74058,end=BASE+0x74058);cpu.reg_write(UC_ARM_REG_SP,STACK);cpu.reg_write(UC_ARM_REG_LR,STOP);cpu.emu_start(BASE+0x7402C,STOP,count=100000)
+ assert cpu.reg_read(UC_ARM_REG_PC)==BASE+0x74058 and len(calls)==1 and calls[0]['arguments']==[actor,TABLE,pointer]and bytes(cpu.mem_read(actors,0x1A04))==beforemodels
+ ROOT.mkdir(parents=True);packetpath=ROOT/'all8_clean_current_context_catalog.json';contextpath=ROOT/'source_context_packet.json'
+ save(packetpath,dict(source_ROM='work/clean.nds',source_ROM_sha256=sha(Path('work/clean.nds').read_bytes()),current_ROM=candidate['path'],current_ROM_sha256=candidate['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),selected_IDs=IDS,records=[record(n)for n in IDS],neighbors=[record(n)for n in(2081,2090)],registered_prose_owner_bindings=[owner],source_prose_or_fresh_pass_credit_added=0,catalog_order_not_assumed_dialogue_chronology=True,editorial_native_and_historical_reconciliation_pending=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ save(contextpath,dict(current_ROM=candidate['path'],current_ROM_sha256=candidate['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),actual_snapshot=str(snapshot),actual_snapshot_sha256=sha(raw),snapshot_historical_V1430_not_current_gameplay=True,original_signed_eight_members=IDS,all208_original_voice_selections=choices,original_entry=BASE+0x53F0C,original_parent=BASE+0x53F40,original_table_stack_offset=0x274,original_table=TABLE,current_original7402C_posteligibility_prefix=calls,CPU_prefix_stops_before_speech_or_outcomes=True,declared_CPU_scratch_arguments=dict(attacker_at_stack7C=attacker,target_at_stack8C=target),actual_attacker=attacker,actual_target=target,actual_actor_object=actor,actual_actor_ID=18,actual_source_voice=0,original_attacker_officer_selector=BASE+0x55DC4,original_attacker_officer_selector_argument=8,target_virtual_getter=getter,target_name_pointer=pointer,target_name=name.decode('ascii'),target_name_hex=name.hex(),target_Hull_Crew=[30,0],native_argument_count=1,registered_prose_owner_bindings=[owner],original_source_code=[dict(start=a,end=b,sha256=sha(arm[a:b]),current_clean_historical_snapshot_exact=True)for a,b in spans],no_actor_ID_roster_name_or_result_changes=True,context='Independent capture report about exactly one named enemy vessel after original boarding/duel crew-loss processing. Original55DC4(attacker,8) selects the announcing officer;the target virtual getter+4 supplies the only %s ship-name argument. Actual Charles18 voice0 reports2082 with Hanse Cog,Hull30/Crew0. This is distinct from later flagship-result2011 and battle victory2131. Defeat/capture does not invent killing,sinking,permanent active-fleet addition or automatic acquisition of all cargo. Native X Finish/touch Yes later discard untransferred spoils. Preserve every runtime-name byte,literal FA/IC/FI/FO/FU-like strings and the original name capacity;use exact direct-parent/table scoped literal-name protection and generated wrapping,not a legacy formatter projection.',full_goal_complete=False))
+ save(ROOT/'next8_preflight.json',dict(packet=str(packetpath),packet_sha256=sha(packetpath.read_bytes()),source_context=str(contextpath),source_context_sha256=sha(contextpath.read_bytes()),registered_prose_owner_bindings=[owner],all8_clean_current_registered_compiler_match=True,all208_voice_choices_and_original_attacker8_target_virtual_name_prefix_pass=True,historical_family_proof=str(hpath),historical_family_proof_sha256=sha(hpath.read_bytes()),historical_individual_IDs=[2082],fresh_credit=0,full_goal_complete=False));print('Next8 named enemy-ship capture reports:208 voices,original attacker8/target virtual-name prefix,Charles18 and Hanse Cog;zero fresh credit.')

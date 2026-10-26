@@ -1,0 +1,14 @@
+"""Verify20 complete retentions plus the zero-credit corrected13-notice source packet."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+OLD=Path('scripts/verify_editorial_handoff_v2507.py')
+PACKET=Path('work/analysis/escape_source_handoff_v2510/next13_direct_escape_source_packet.json')
+if __name__=='__main__':
+ p=read(PACKET);assert len(p['selected_native_IDs'])==13 and p['source_context_only_fresh_credit']==0 and p['all13_prose_current_native_fonts_historical_defeat_path_and_registered_reconciliation_pending'];assert p['correct_original_direct_return_parent']==0x02053F40 and p['correct_original_direct_table_stack_offset']==0x274 and p['incorrect_older_speech53DB8_plus27C_frame_must_not_be_used'];assert len(p['all416_current_original_voice_selections'])==416 and len(p['all208_original_actor_ID_predicates'])==len(p['all208_original_virtual20_compact_name_getters'])==208;assert p['zero_predicate_actor_IDs']==[0,1,2,3];assert sha(Path(p['registered_manuscript']).read_bytes())==p['registered_manuscript_sha256']and sha(Path(p['effective_formatter_config']).read_bytes())==p['effective_formatter_config_sha256'];assert sha(Path(p['corrected_direct_font_proof']).read_bytes())==p['corrected_direct_font_proof_sha256']and len(read(p['corrected_direct_font_proof'])['cases'])==1417;assert sha(Path(p['corrected_direct_pipeline']).read_bytes())==p['corrected_direct_pipeline_sha256']and len(read(p['corrected_direct_pipeline'])['all13_direct_pipeline_cases'])==13
+ wrapper=OLD.read_text();needle=" exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})";assert wrapper.count(needle)==1
+ injected=""" source=source.replace('editorial_handoff_verification_v2507','editorial_handoff_verification_v2511').replace('V2507-audit-of-V2506','V2511-audit-of-V2510').replace('work/analysis/static_duel_completion_v2506/completion_receipt.json','work/analysis/escape_source_handoff_v2510/handoff_receipt.json').replace(\"h['fresh_reconciliations']==20\",\"h['completed_this_goal_turn']==20 and h['next_packet_fresh_or_source_prose_credit']==0\").replace('no_new_packet_claim=True','next_packet13_prepared_zero_credit=True').replace('no_new_packet_credit=True,','no_new_packet_credit=True,next_corrected_direct_escape_packet=str(PACKET),next_packet_sha256=sha(PACKET.read_bytes()),next_source_records13_pending_all_editorial_native_historical_gates=True,')
+"""
+ wrapper=wrapper.replace(needle,injected+needle)
+ exec(compile(wrapper,__file__,'exec'),{'__name__':'__main__','__file__':__file__,'PACKET':PACKET})
+ save('work/analysis/editorial_handoff_verification_v2511/producer_binding.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_wrapper_sha256=sha(wrapper.encode()),next_packet=str(PACKET),next_packet_sha256=sha(PACKET.read_bytes()),next13_credit=0,full_goal_complete=False))

@@ -24,6 +24,9 @@ class DialogueProfile:
     # state. Keep these route-specific so ordinary ASCII never becomes a
     # control globally.
     leading_speaker_bytes: frozenset[int] = field(default_factory=frozenset)
+    # An opt-in release must bind the native V255 prefix guards. Historical
+    # profiles retain their unconditional F/I rejection and exact old output.
+    literal_prefix_policy: str = "forbid"
     metrics_source: str = "provisional screenshot-derived estimate"
 
     def glyph_width(self, character: str) -> int:
@@ -3824,6 +3827,21 @@ for _route, _parent in (("raphael", "raphael-story-live"), ("maria", "maria-stor
             "same native widths, controls, guard and pair-phase contracts"
         ),
     )
+
+
+_PROFILES["lil-opening-editorial-native-v1"] = replace(
+    _PROFILES["lil-story-b22-intro-probe"],
+    name="lil-opening-editorial-native-v1",
+    balanced_wrapping=True,
+    literal_prefix_policy="native-guard-v255",
+    metrics_source=(
+        "Lil B22 original49 speakers and90 native commands;V1698d actual Lil "
+        "New Game state verifies196 complete native catalog/macro outputs. "
+        "216px,protected/pair-safe breaks,default FI3. A post-layer release "
+        "must bind the proven native F/I guards;IC/FI collisions and I-LF "
+        "remain forbidden. Formatting/native glyph/gameplay approval pending."
+    ),
+)
 
 
 def profile_names() -> tuple[str, ...]:

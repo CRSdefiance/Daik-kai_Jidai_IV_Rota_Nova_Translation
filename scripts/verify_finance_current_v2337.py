@@ -1,0 +1,10 @@
+"""Current ordinary Finance20 comment with exact selector,pixels and scoped cancel."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+OLD=Path('scripts/verify_work_current_v2311.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'work_current_verification_v2311':'finance_current_verification_v2337','work_current_v2310_V2284':'finance_current_v2335_V2284','work_current_run_v2310':'finance_current_run_v2335','translations/work_contextual_editorial_manuscript_v1.json':'translations/planning_finance_contextual_editorial_manuscript_v1.json','scripts.work_comments_layout_v843 import compiled,layout':'scripts.planning_finance_layout_v860 import compiled,layout','1387':'1460','hold(rom,ram[frame],shots[frame],row,13)':'hold(rom,ram[frame],shots[frame],row,19)',"case['source_role_type']==13":"case['source_role_type']==20",'before[13]':'before[19]','occupants[13]':'occupants[19]','i not in(7,13)':'i not in(7,19)','ordinary_Gerhard_Shipwright_and_return':'ordinary_Gerhard_Finance_and_return','ordinary_current_Shipwright_actual':'ordinary_current_Finance_actual','ordinary Shipwright':'ordinary Finance','actual_source_role13_slot13_and_original_whole12104_selector_verified':'actual_source_role20_slot19_and_original_whole12104_selector_verified','ordinary_input_selection_moves_Gerhard_from_slot7_to13_only':'ordinary_input_selection_moves_Gerhard_from_slot7_to19_only','native_role13=True':'native_role20=True'}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ save('work/analysis/finance_current_verification_v2337/producer_binding.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_source_sha256=sha(source.encode()),all_original_whole_selector_bitmap_RGB_bounds_and_scoped_state_assertions_preserved=True,no_new_live_RAM_or_ROM_change=True,full_goal_complete=False))

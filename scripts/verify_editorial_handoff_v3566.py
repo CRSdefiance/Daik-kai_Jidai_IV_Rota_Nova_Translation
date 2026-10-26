@@ -1,0 +1,50 @@
+"""Independently reconcile14 completed funding reviews and the cumulative release."""
+from collections import Counter
+from pathlib import Path
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.reconcile_contextual_mood_retentions_v2482 import historical_key
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/editorial_handoff_verification_v3566')
+CHECKPOINT=Path('work/analysis/lil_B141_completion_v3565')
+if __name__=='__main__':
+    assert not ROOT.exists();receiptpath=CHECKPOINT/'completion_receipt.json';receipt=read(receiptpath)
+    for group in ['evidence','updated_files']:
+        for p,d in receipt[group].items():assert sha(Path(p).read_bytes())==d,(group,p)
+    lp=Path('translations/editorial_review_current_v1.json');ledger=read(lp);before=read(CHECKPOINT/'editorial_review_current_v1.json.before');prior=read(receipt['prior_verified_handoff']);assert sha((CHECKPOINT/'editorial_review_current_v1.json.before').read_bytes())==prior['ledger_sha256']
+    assert Path('docs/editorial_handoff_current.md').read_text(encoding='utf-8').startswith('# Current editorial handoff - V3565')
+    key=historical_key;fresh=ledger['contextual_story_natural_dialogue_pass_v1871'];allrows=[r for g in ledger['completed_editorial_families'] for r in g['records']];reviewed={key(r) for r in fresh['record_keys']};integrated={key(r) for r in fresh['integrated_record_keys']};completed={key(r) for r in allrows}
+    assert len(allrows)==len(reviewed)==len(integrated)==len(completed)==5031 and reviewed==integrated==completed and not fresh['pending_record_keys'] and not fresh['pending_contextual_families'] and (fresh['fresh_pass_records_explicitly_reread'],fresh['fresh_pass_records_integrated'],fresh['fresh_pass_records_pending_native_actual_release'])==(5031,5031,0)
+    assert (ledger['records_with_source_and_prose_pass'],ledger['records_with_source_prose_drafts'],ledger['records_editorially_completed'],ledger['records_revised_and_integrated'],ledger['retained_wordings_editorially_completed'])==(5034,5034,5031,3275,1756)
+    def decision(r):
+        v=r.get('historical_editorial_decision') or r.get('decision') or r.get('editorial_decision');assert isinstance(v,str) and v.startswith(('revis','retain'));return 'revise' if v.startswith('revis') else 'retain'
+    assert Counter(decision(r) for r in allrows)=={'revise':3275,'retain':1756} and dict(Counter(key(r)[0] for r in allrows))==ledger['completed_editorial_record_counts_by_file']
+    assert ledger['completed_editorial_families'][:-1]==before['completed_editorial_families'] and ledger['source_prose_reviewed_counts_by_file']==before['source_prose_reviewed_counts_by_file'] and ledger['source_prose_reviewed_counts_by_file']['/data/SC2.DK4']==3178 and ledger['source_prose_reviewed_counts_by_file']['/data/SC3.DK4']==64
+    family=ledger['completed_editorial_families'][-1];final=read(family['final_review']);assert family['id']=='Lil-B141-polder-funding14' and family['records']==final['records'] and Counter(r['editorial_decision'] for r in final['records'])=={'revise':7,'retain-wording':7}
+    releasepath=Path('work/analysis/lil_B141_release_v3562/registered_release_verification.json');release=read(releasepath);candidate=ledger['current_integrated_candidate'];rom=NdsImage.open(candidate['path']);blocks=IlnkContainer.parse(rom.read_file('/data/SC2.DK4')).blocks;block=blocks[141];jp=IlnkContainer.parse(NdsImage.open('work/clean.nds').read_file('/data/SC2.DK4')).blocks[141]
+    assert sha(Path(candidate['path']).read_bytes())==candidate['sha256']==release['candidate_sha256']==final['candidate_sha256'] and sha(Path(candidate['patch']).read_bytes())==candidate['patch_sha256']==release['patch_sha256'] and release['whole_ROM_reconstruction_byte_exact']
+    manifest=read(candidate['manifest']);registry=read('translations/release_stack.json');assert manifest['profile']==candidate['profile']=='all-routes-unified-v3561' and len(manifest['batches'])==527 and all(manifest['checks'].values()) and manifest['release_stack_sha256']==sha(Path('translations/release_stack.json').read_bytes()) and len(registry['accepted_layers'])==114 and registry['latest_promoted_build']['profile']=='all-routes-unified-v1492'
+    previous=NdsImage.open('out/all_routes_combined_v3526_candidate.nds');oldblocks=IlnkContainer.parse(previous.read_file('/data/SC2.DK4')).blocks;assert len(blocks)==len(oldblocks)==336 and [n for n,(x,y) in enumerate(zip(oldblocks,blocks,strict=True)) if x!=y]==[141] and (len(oldblocks[141]),len(block))==(976,900)
+    assert [p for _,p,v in previous.iter_files() if rom.read_file(p)!=v]==['/data/SC2.DK4'] and all(rom.read_file(p)==v for p,v in previous.iter_components())
+    doc=read(final['manuscript']);mapping=read(doc['reference_map']);stored=read(doc['final_padding_proof']);expanded={r['id']:r['current_final_target_macro_alignment_cases']['cases'][0]['output_hex'] for r in stored['final_target_parity_cases']}
+    for r in final['records']:
+        assert all(r['review'].values()) and r['fresh_source_gloss'] and r['whole_exchange_context'] and r['source_gloss_precedes_older_English_comparison']
+        at=r['source_reference']['offset'];v=bytes.fromhex(r['source_hex']);assert jp[at:at+len(v)]==v and jp[at+len(v)]==0
+        ref=r['integrated_reference'];at=ref['offset'];v=bytes.fromhex(r['integrated_hex']);assert block[at:at+len(v)]==v and block[at+len(v)]==0 and r['current_hex']==r['integrated_hex'] and block[ref['header_offset']:ref['header_offset']+6].hex()==r['source_complete_preamble_hex']
+        old=r['historical_source_prose_predecessor_fields'];a=old['current_reference']['offset'];v=bytes.fromhex(old['current_hex']);assert oldblocks[141][a:a+len(v)]==v and oldblocks[141][a+len(v)]==0
+        assert bytes.fromhex(expanded[r['id']]).decode('ascii')==r['current_effective_runtime_English']
+        for k in ['FI','FA','FO']:assert bytes.fromhex(r['source_hex']).count(k.encode())==r['english'].count('{MACRO:'+k+'}')
+        if r['editorial_decision']=='retain-wording':assert r['fresh_retained_wording_justification'] and r['english'].split('}',1)[1]==r['effective_predecessor_macro_paragraph']==r['effective_predecessor_paragraph']
+    fi=next(r for r in final['records'] if r['source_record_index']==66);assert fi['english']=='{SPEAKER:AB}{MACRO:FI}... Oh, this is...' and fi['current_effective_paragraph']=='Lil... Oh, this is...' and b'FI' in bytes.fromhex(fi['integrated_hex'])
+    assert stored['current_final_padded_macro_alignment_cases']==56 and mapping['original_source_threshold_gold']==1000000 and mapping['original_source_payment_gold']==900000 and mapping['no_zero_cache_tail_dependency']
+    controls=read(doc['relocated_control_proof']);assert len(controls['relocated_dispatch_cases'])==14 and len(controls['relocated_predicate_pairs'])==3 and len(controls['relocated_financial_boundary_cases'])==7 and controls['C200_nine_source_owned_writes_index0_and_all_unowned_RAM_preserved']
+    for c in controls['relocated_financial_boundary_cases']:
+        v=c['input_funds'];assert c['relocated_source_predicate']['native_result'][1]==(0 if v<1000000 else 1 if v==1000000 else 2) and c['relocated_payment']['after_funds']==max(0,v-900000)
+    tail=read(doc['termination_proof']);assert len(tail['cases'])==36 and tail['whole_loader_preserves_post_payload_canaries_instead_of_zeroing_them'] and tail['all36_original_parent_VM_tail_cases_return_before_unowned_cache_bytes'] and tail['original_VM_return_address']==0x02023F7C and (tail['source_insufficient_jump_target'],tail['target_insufficient_jump_target'])==(970,894)
+    assert all(c['in_block_terminator_offset']==c['logical_end']-4 and all(r['offset']+r['bytes']<=c['logical_end'] for r in c['payload_reads']) and c['whole_block_and_nonzero_tail_canaries_exact'] for c in tail['cases'])
+    startup=read('work/analysis/lil_B141_startup_v3564/cold_boot_Lil_startup_town_verification.json');view=read('work/analysis/lil_B141_startup_v3564/current_six_frame_visual_review.json');assert startup['paired_frame_count']==31 and startup['all_current_requested_and_final_framebuffers_equal_V3526'] and view['viewed'] and view['sha256']==sha(Path(view['sheet']).read_bytes())
+    reg=read('work/analysis/lil_B141_registration_v3560/registration_receipt.json');neg=read('work/analysis/lil_B141_registration_v3560/negative_cases.json');assert reg['negative_cases']==len(neg['cases'])==47 and all(c['rejected_before_mutation'] for c in neg['cases']) and reg['exact_hook_AST_import_verified']
+    for k in ['reviewed_but_incomplete_COMMON_IDs','unresolved_graphics_work','older_record_reaudit_after_full_editorial_goal','native_source_universe_inventory_v2701c','Proof_terminology_consistency_lead_v3286']:assert ledger[k]==before[k]
+    scope=ledger['unfinished_editorial_scope_v3565'];assert sha(Path(scope['path']).read_bytes())==scope['sha256'] and scope['B142_and_later_unreviewed'] and scope['canonical_Maria32_pending_uncredited'] and scope['Proof_terminology_consistency_open'] and ledger['goal_status']=='active' and not ledger['full_goal_complete']
+    ROOT.mkdir(parents=True);save(ROOT/'verified_handoff.json',dict(checkpoint='V3565',ledger_sha256=sha(lp.read_bytes()),handoff_receipt=str(receiptpath),handoff_receipt_sha256=sha(receiptpath.read_bytes()),fresh_reread=5031,integrated=5031,pending=0,source_prose=5034,revised=3275,retained=1756,candidate=candidate['path'],candidate_sha256=candidate['sha256'],patch=candidate['patch'],patch_sha256=candidate['patch_sha256'],manifest_batches=527,accepted_layers=114,all14_clean_predecessor_and_integrated_references_verified=True,FI_macro_template_and_default_Lil_expansion_distinguished=True,source_million_threshold900000_payment_and_in_block_termination_verified=True,no_B141_gameplay_or_earned_funding_claim=True,full_goal_active=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print('V3565 verified:5031 reread/integrated,5034 source-prose;V3561/527 batches/exact patch;all wider scope active.')

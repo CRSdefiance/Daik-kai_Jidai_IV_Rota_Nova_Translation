@@ -1,0 +1,21 @@
+"""Save next source context without changing verified completion counts."""
+from pathlib import Path
+from scripts.verify_village_wrap_v608 import read,save
+from dk4tool.patch.grand_race_menu_release import sha
+ROOT=Path('work/analysis/market_context_checkpoint_v2109')
+PACKET=Path('work/analysis/market_context_source_v2108/market656_764_clean_current_context_catalog.json')
+if __name__=='__main__':
+ assert not ROOT.exists();ROOT.mkdir(parents=True)
+ lp,hp=Path('translations/editorial_review_current_v1.json'),Path('docs/editorial_handoff_current.md');ledger,packet=read(lp),read(PACKET)
+ assert ledger['records_editorially_completed']==2143 and ledger['records_with_source_and_prose_pass']==2259 and len(ledger['reviewed_but_incomplete_COMMON_IDs'])==116
+ f=ledger['contextual_story_natural_dialogue_pass_v1871'];assert(f['fresh_pass_records_explicitly_reread'],f['fresh_pass_records_integrated'],f['fresh_pass_records_pending_native_actual_release'])==(740,740,0)
+ assert len(packet['records'])==109 and sum(r['historical_review']is not None for r in packet['records'])==106
+ (ROOT/'ledger_before.json').write_bytes(lp.read_bytes());(ROOT/'handoff_before.md').write_bytes(hp.read_bytes())
+ summary='V2109 next-source inventory only. Current verified completion remainsV2107b andregisteredV2097 ROM/patch. Market COMMON656-764 catalog has109 exact clean/current entries:106 historical completions needingfresh context reconciliation plus3 reviewed-incomplete IDs750/751/752. Map the merchant restart/annoyance conversation andoriginal caller/choice graph before authoring;catalog order isnot consecutive speakers orone conversation. Only750 hasan aligned constant lead at02120EAC;751 hasno rawword hit,andtwo752 hits areunaligned bytepatterns,not established callers. No source/prose/fresh/completion credit added. Keep thefull editorial objective active.'
+ ledger['next_market_context_packet_v2109']=dict(summary=summary,packet=str(PACKET),packet_sha256=sha(PACKET.read_bytes()),initial_incomplete_focus=[750,751,752],native_context_and_conversation_graph_required=True,credit_added=0)
+ ledger['latest_checkpoint']=summary;save(lp,ledger)
+ header=hp.read_text(encoding='utf-8');assert header.startswith('# Current editorial handoff - V2107b');header=header.replace('# Current editorial handoff - V2107b','# Current editorial handoff - V2109',1)
+ section='## Next market context packet - V2109\n\n'+summary+'\n\n- Packet: `'+str(PACKET)+'`;producer `scripts/prepare_market_context_source_v2108.py`. Clean/current offsets,copy ends,record owners,table fields,bytes andhistorical reviewreferences areexact. No newtranslation isauthored yet.\n- Use `dk4tool.patch.primary_town_services_reference_v2.current_entries` forV2097. Othergeneric parsers arepinned toearlier COMMON/ARM9 hashes. TranslatefromcleanJapanese,then comparecurrentwording;retainwhatworks with reasons. NativebasicCOMMON548A8 uses228x48 paper and16pixelrowadvance;donotgeneralize ittootherconsumers.\n- An exploratory85-125 catalog readalsofound rawbios/memory-card text thatcannot aloneprove activeplayer-facing defects:theactualcaptain UI alreadyshowscorrectEnglish. Bind actualconsumers beforechangingorcrediting thoselegacy-looking records.\n- Currentcounts2143historicalcomplete/2259source-prose,740freshreread-and-integrated,116COMMON incomplete,1403otherhistorical freshreconciliations remainunchanged. Allremainingstorylines/sharedtown/shop/random/playerprose,separategraphics/all18plaques andlaterolder-recordtechnical re-audit stayopen. No jobsremainlive.\n\n'
+ marker='## Primary town-services84 corrected native/runtime and repack checkpoint - V2094';assert marker in header;hp.write_text(header.replace(marker,section+marker,1),encoding='utf-8',newline='\n')
+ save(ROOT/'checkpoint_receipt.json',dict(summary=summary,packet=str(PACKET),packet_sha256=sha(PACKET.read_bytes()),ledger_sha256=sha(lp.read_bytes()),handoff_sha256=sha(hp.read_bytes()),all_counts_unchanged=True,current_verified_candidate=ledger['current_integrated_candidate'],goal_turn_classification='progress',producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ print(dict(checkpoint='V2109',completed=2143,fresh_integrated=740,credit_added=0,next_focus=[750,751,752],full_goal_complete=False))

@@ -178,6 +178,15 @@ def _balanced_wrap(
                 width += sum(profile.glyph_width(c) for c in spaces[end])
             width += widths[end]
             final = end + 1 == count
+            if (
+                profile.literal_prefix_policy == "native-guard-v255"
+                and not final
+                and words[end][-1].kind == "text"
+                and words[end][-1].value.endswith("I")
+            ):
+                # The original guard intentionally keeps legacy I+LF behavior.
+                # Choose another word boundary; never modify the prose or guard.
+                continue
             reserve = cell if profile.pair_phase_safe_breaks and not final else 0
             if width + reserve > profile.window_width_px:
                 continue
@@ -300,6 +309,33 @@ def lint_dialogue(
 
     literal = "".join(token.value for token in target if token.kind == "text")
     unsafe = sorted({character for character in literal if character in "FI"})
+    if profile.literal_prefix_policy == "native-guard-v255":
+        unsafe = []
+        for index, token in enumerate(target):
+            if token.kind != "text":
+                continue
+            following = target[index + 1] if index + 1 < len(target) else None
+            if following is None or following.kind == "pad":
+                suffix = "\0"
+            elif following.kind == "line_break":
+                suffix = "\n"
+            else:
+                suffix = following.raw[:1].decode("latin1") or "\0"
+            for offset, character in enumerate(token.value):
+                next_character = token.value[offset + 1:offset + 2] or suffix
+                if character == "F" and next_character in "AIOU":
+                    unsafe.append("F" + next_character)
+                if character == "I" and (
+                    next_character == "C"
+                    or (next_character != "\0" and ord(next_character) < 0x20)
+                    or ord(next_character) >= 0x80
+                ):
+                    unsafe.append("I+" + repr(next_character))
+        unsafe = sorted(set(unsafe))
+    elif profile.literal_prefix_policy != "forbid":
+        diagnostics.append(DialogueDiagnostic(
+            "error", "unknown-literal-prefix-policy", "unverified native literal-prefix policy"
+        ))
     if unsafe:
         diagnostics.append(
             DialogueDiagnostic(

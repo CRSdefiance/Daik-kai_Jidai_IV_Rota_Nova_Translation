@@ -1,0 +1,10 @@
+"""Current Gunnery8 preview replaces occupied Charles slot9;cancel restores both."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+OLD=Path('scripts/verify_work_current_v2311.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'work_current_verification_v2311':'gunnery_current_verification_v2376','work_current_v2310_V2284':'gunnery_current_v2375_V2284','work_current_run_v2310':'gunnery_current_run_v2375','translations/work_contextual_editorial_manuscript_v1.json':'translations/gunnery_deck_contextual_editorial_manuscript_v1.json','scripts.work_comments_layout_v843 import compiled,layout':'scripts.gunnery_deck_layout_v887 import compiled,layout','1387':'1548','hold(rom,ram[frame],shots[frame],row,13)':'hold(rom,ram[frame],shots[frame],row,9)',"case['source_role_type']==13":"case['source_role_type']==8",'before[13]':'before[9]','before[9]==208':'before[9]==18','occupants[13]':'occupants[9]','i not in(7,13)':'i not in(7,9)','ordinary_Gerhard_Shipwright_and_return':'ordinary_Gerhard_Gunnery_and_return','ordinary_current_Shipwright_actual':'ordinary_current_Gunnery_actual','ordinary Shipwright':'ordinary Gunnery','actual_source_role13_slot13_and_original_whole12104_selector_verified':'actual_source_role8_slot9_and_original_whole12104_selector_verified','ordinary_input_selection_moves_Gerhard_from_slot7_to13_only':'ordinary_input_selection_moves_Gerhard_from_slot7_to9_replacing_Charles18_temporarily','native_role13=True':'native_role8=True'}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ save('work/analysis/gunnery_current_verification_v2376/producer_binding.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_source_sha256=sha(source.encode()),native_preview_temporarily_replaces_Charles18_in_slot9_with_Gerhard16=True,original_Charles_and_Gerhard_assignments_restored_on_cancel=True,all_other_scoped_state_assertions_preserved=True,no_new_live_RAM_or_ROM_change=True,full_goal_complete=False))

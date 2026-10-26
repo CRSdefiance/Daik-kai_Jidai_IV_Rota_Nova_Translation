@@ -1,0 +1,79 @@
+{
+  "format": "dk4-native-common-editorial-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "hot-spring-experience-original-single-line-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": true,
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1622_candidate.nds",
+  "current_ROM_sha256": "cb049635c45b6bc75add4ada18db69ae2ece4aa05b9270a3553ed9ed74a228e4",
+  "current_COMMON_sha256": "3ac4a8a0309e02b601e633dab8e73491534c6d9498d9711756259fb2af166fd1",
+  "current_ARM9_sha256": "0f7ba503189785238e6c27fee43b572c3288e25d9149846ceab8a66a1618bf5f",
+  "source_context": "work\\analysis\\hot_spring_notice_source_v1627\\optional_hot_spring_Experience_notice310_source.json",
+  "source_context_sha256": "1644943d6d66e8ac95ea6d8767864f4edfd11e38cbd04e7d134d89f7d0b6388d",
+  "records": [
+    {
+      "message_id": 310,
+      "source_reference": {
+        "message_id": 310,
+        "block": 4,
+        "table_offset": 1317756,
+        "block_offset": 3004,
+        "copy_end": 3040,
+        "record_index": 41,
+        "start": 0,
+        "end": 35
+      },
+      "source_hex": "89b790f282cc8cf8945c82c581778c6f8cb1817882aa0a8fe382aa82e882dc82b582bd",
+      "source_Japanese": "温泉の効能で『経験』が\n上がりました",
+      "current_reference": {
+        "message_id": 310,
+        "block": 4,
+        "table_offset": 1317756,
+        "block_offset": 2870,
+        "copy_end": 2906,
+        "record_index": 60,
+        "start": 0,
+        "end": 35
+      },
+      "current_text_hex": "2020486f7420737072696e67207261697365640a2020457870657269656e63652e2020",
+      "current_English": "  Hot spring raised\n  Experience.  ",
+      "id": "COMMON_MESSAGE_310",
+      "source_family": "hot-spring-optional-Experience-system-notice",
+      "speaker": "Speakerless original546B8 system notice",
+      "context": "The original optional hot-spring skill/RNG branch speaks through role1/table2116D60,executes6624C(10,10),then calls546B8(310) with no printf argument. Japanese says the benefits of the hot spring increased the stat quoted as Experience. Do not invent an affected party,total,guaranteed full-fatigue recovery or numeric experience amount in this no-argument notice.",
+      "consumer": "original-no-argument-546B8-literal-modal",
+      "english": "The hot spring boosted Experience.",
+      "source_meaning": "The benefits of the hot spring increased the stat identified as Experience.",
+      "localization_note": "Use a complete natural system message and preserve the hot spring as the cause. Experience is the quoted source stat name. Do not invent a recipient,party-wide effect,numeric amount or full-fatigue reset. Remove legacy authored indent and line break;native formatting is still a separate gate.",
+      "editorial_decision": "revise",
+      "canonical_source_hex": "2020486f7420737072696e67207261697365640a2020457870657269656e63652e2020",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-release-original-optional-notice-pending"
+    }
+  ],
+  "revised": 1,
+  "retained": 0,
+  "no_authored_line_breaks_or_alignment": true,
+  "no_runtime_argument_or_source_macro_added": true,
+  "producer_sha256": "555d58d6a02584a35214792f4c8c3b13d874651e01f23041a5849720da3dacb3",
+  "full_goal_complete": false
+}

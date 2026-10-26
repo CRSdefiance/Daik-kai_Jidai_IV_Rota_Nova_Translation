@@ -1,0 +1,49 @@
+{
+  "format": "dk4-native-two-choice-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B177_R0150",
+      "english": "Yes{PAD}",
+      "japanese": "聞く",
+      "source_hex": "95b782ad",
+      "speaker": "Player choice menu",
+      "context": "Two-option reply to Cesare's offer of ship-selection advice in Alexandria. Original labels mean listen / do not listen.",
+      "source_meaning": "Accept the offer and listen to the advice.",
+      "localization_note": "Retain the established Yes/No labels. Author no alignment spaces. The typed menu compiler emits unpadded terminated strings through the original offset table, with the last terminator and next command unchanged.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B177_R0152",
+      "english": "No{PAD}",
+      "japanese": "聞かない",
+      "source_hex": "95b782a982c882a2",
+      "speaker": "Player choice menu",
+      "context": "Two-option reply to Cesare's offer of ship-selection advice in Alexandria. Original labels mean listen / do not listen.",
+      "source_meaning": "Decline the offer of advice.",
+      "localization_note": "Retain the established Yes/No labels. Author no alignment spaces. The typed menu compiler emits unpadded terminated strings through the original offset table, with the last terminator and next command unchanged.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

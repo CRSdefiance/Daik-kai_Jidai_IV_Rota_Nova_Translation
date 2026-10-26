@@ -1,0 +1,18 @@
+# V1686 Search and hot-spring editorial completion
+
+V1686 closes25 entries(24 revised1 retained):1375 complete(1033 revised342 retained),1519 source/prose reviewed,144 reviewed-incomplete COMMON plus broader shared/routes/player-facing prose. Original-donor cold boot with declared48-byte shore location fixtures only. No crew or provisions refill was used in this run;all other4MiB,original actors,skills,fatigue,RNG,event outcomes,inputs,captures and source/disposable saves are audited. Individually activated IDs are2217 failure,2229 forage,312 sailor loss,2276 hot-spring discovery,2283 relaxation and310 Experience notice. Other voice alternatives retain complete native font/selector/source and representative-family coverage,not individual gameplay activation. Failure7151/7181 returns7621;forage10183/10213 shows two original105-barrel arguments and returns10433;loss20542/20572 shows original10 and returns normal Sea View20792. Hot discovery8402/8432,-15 recovery8652/8682,relaxation8902/8932 and Experience9152/9182 return normally9402;both9402 and final20792 were viewed. Full actual/native/independent source-palette ink and shadows match.312 uses count-neutral grammar and original x0;spoken rows have uniform native6px origins. 294 native quantity/font cases,414 Search actor selections,17 compiler negatives,7336 copies180 cache,13 prior direct pipelines and529507 dispatch/ABI cases pass. Actual source forage quantities are multiples5 with conservative maxima4650 water/3875 food. Impossible numeric stress cases preserve every glyph and bounds;their awkward breaks are disclosed and excluded from claims about original-game layouts. Exact clean-input patch,all8 fixture-free startup controls and photographed676/677 preservation pass. No new shop visit,full route or hardware claim. V1676 remains experimental,V1492 promoted;broader editorial and separate graphics/all18 plaques remain open.
+
+## Registered candidate and patch
+
+out/all_routes_combined_v1676_candidate.nds;physical E:/Rota Nova translations/Generated/out/all_routes_combined_v1676_candidate.nds.
+ROM SHA256 337edf22ab6ee96536aadb15fb461652149b157e8d9bd1ef60db998f97608510.
+Patch SHA256 4609fc580635481203103b4be3eee4690c70bbef98e41121ab679c40484e802f.
+Profile all-routes-unified-v1676;all473 prior manifest batches and114 accepted layers preserved. All earlier route/UI/graphics/fonts,SC0 screenshot repairs andYes/No centering remain exact toV1637;only COMMON4/23 and owned native metadata/runtime banks differ.
+V1492 remains promoted;immutable construction baseline out/raphael_natural_v2_accepted_base.nds SHA2563cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe remains unchanged. HistoricalV997 preserved. V1676 is experimental,not user-promoted.
+
+
+Clean input work/clean.nds SHA256f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d. The .xdelta rebuild matches every byte. Registered layer search_reports_editorial is experimental after the fullV1637 stack;114 accepted layers remain unchanged.
+
+## Evidence and limits
+
+See the current handoff and completion receipt for exact source/final reviews,native proofs,actual input schedules and captures. Actual tests are targeted headless DeSmuME cold boots using an unchanged ordinary battery save and isolated shore positions,not saved states. Only six distinct IDs were individually activated;other alternatives have complete native and representative-family coverage. No full route orhardware claim. The prior shop screenshot676/677 corrections are preserved and rechecked without claiming a new shop visit. All25 entries are now closed;the broader goal and separate graphics/all18 plaques remain open.

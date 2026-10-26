@@ -1,0 +1,15 @@
+"""Resolve exact native leading-H loss with a faithful natural acceptance."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+if __name__=='__main__':
+    root=Path('work/analysis/lil_share_acceptance_refinement_v3321c');old=Path('translations/lil_B131_B133_choice_manuscript_v2.json');new=Path('translations/lil_B131_B133_choice_manuscript_v3.json');toolold=Path('scripts/prove_lil_B131_B133_choices_v3321.py');toolnew=Path('scripts/prove_lil_B131_B133_choices_v3321c.py');assert not any(p.exists() for p in [root,new,toolnew])
+    diagnostic=Path('work/analysis/lil_B131_B133_choices_diagnostic_v3321b/native_complete_plane_difference.json');d=read(diagnostic);assert d['label']=='Hmm... all right.' and d['logical_width']==102 and len(d['differences'])==20 and all(r['native']==0 and r['expected']==1 and 0<=r['x']<=3 for r in d['differences']) and d['input_and_header_and_canaries_preserved']
+    doc=deepcopy(read(old));row=next(r for r in doc['records'] if r['option_index']==0);previous=deepcopy(row);body='Hmm... fine, then.';assert len(body)==18 and body.strip()==body
+    note='The native102px menu plane for the17-cell acceptance loses20 leading-H pixels. Preserve that failed proof andworking-wording draft;this faithful18-cell reluctant acceptance expresses the same source hesitation/agreement in natural American English. It authors no padding,manual layout ornew terms. Require complete108px native planes andoriginal selection/cancel/geometry before approval.'
+    row.update(english=body,compiled_hex=body.encode('ascii').hex(),editorial_decision='revise',localization_note=row['localization_note']+' '+note);row.pop('fresh_retained_wording_justification',None)
+    doc.update(previous_manuscript=str(old),previous_manuscript_sha256=sha(old.read_bytes()),revised=sum(r['editorial_decision']=='revise' for r in doc['records']),retained=sum(r['editorial_decision']=='retain-wording' for r in doc['records']))
+    root.mkdir(parents=True);save(new,doc)
+    text=toolold.read_text(encoding='utf-8').replace('lil_B131_B133_choices_v3321','lil_B131_B133_choices_v3321c').replace('lil_B131_B133_choice_manuscript_v2.json','lil_B131_B133_choice_manuscript_v3.json');compile(text,str(toolnew),'exec');toolnew.write_text(text,encoding='utf-8')
+    save(root/'native_leading_glyph_finding_and_faithful_successor.json',dict(previous_manuscript=str(old),previous_manuscript_sha256=sha(old.read_bytes()),previous_record=previous,successor_manuscript=str(new),successor_manuscript_sha256=sha(new.read_bytes()),diagnostic=str(diagnostic),diagnostic_sha256=sha(diagnostic.read_bytes()),finding=note,successor_menu_producer=str(toolnew),successor_menu_producer_sha256=sha(toolnew.read_bytes()),no_earlier_prose_orproducer_modified=True,no_runtime_global_helper_or_ROM_change=True,source_prose_orcompletion_credit_added=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

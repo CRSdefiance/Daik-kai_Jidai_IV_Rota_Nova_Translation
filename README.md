@@ -1,4 +1,4 @@
-> Latest promoted checkpoint: [Unified V1492](releases/all_routes_unified_v1492/README.md) (2026-10-22). Editorial and graphics audits remain open; see the release notes for the unfinished retreat-name repair.
+> Main promoted build: [Unified V4046](releases/all_routes_unified_v4046/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 
 # DK4 Translation Tool
 
@@ -10,7 +10,8 @@ legally dumped ROM. The tool never downloads a ROM and never edits its input in 
 
 ## Current combined patch
 
-The latest experimental combined patch is [Unified V245](releases/all_routes_unified_v245/README.md).
+The current main combined patch is [Unified V4046](releases/all_routes_unified_v4046/README.md).
+Earlier [V1492](releases/all_routes_unified_v1492/README.md) and [V245](releases/all_routes_unified_v245/README.md) checkpoints remain available.
 It preserves all four routes and the cumulative shared UI, text and graphics layers.
 Graphics localization and complete gameplay verification remain in progress; the
 four partially translated Online screenshot bodies and other open items are recorded

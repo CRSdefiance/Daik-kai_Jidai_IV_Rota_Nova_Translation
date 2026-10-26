@@ -1,5 +1,14 @@
 # Integrated release-build policy
 
+## V4083: V4046 promoted as the main build; B166 native review preserved
+
+V4083 promotes verified V4046 as the user's new main cumulative build and preserves V1492 as an earlier checkpoint. The canonical construction baseline and all frozen source contracts remain unchanged. 539 manuscript batches/114 accepted layers; clean-input patch reconstructs the entire ROM byte for byte. Existing registered opening/town and representative B165 evidence are retained; promotion adds no gameplay claim. B166's 42 speeches and two labels have native approval V4082b, with 24 revisions and 20 justified retentions, but remain unintegrated and uncredited. The earlier phrase-flow and synthetic menu-backing findings are resolved by the final native proof and three focused menu-only boots. Actual B166 speech/choice return and relocation/release checks remain pending. Counters remain 5529 fresh rereads/integrated, zero credited route records pending; source/prose 5532, historical 3527 revised/2002 retained. The separate 44 B166 objects await pending-credit reconciliation. Remaining B167-B180:348 physical speeches and one choice-command lead; neither is a full project denominator. Full contextual editorial review remains active across remaining storylines, shared shop/town dialogue, random scenes and other player-facing prose. B166's 44 native-approved objects are unintegrated and uncredited. COMMON 750-752, canonical Maria SC3 B97, wider prose leads, the separate graphics/all 18 plaques work and later older-record technical re-audit remain open.
+
+ROM SHA-256: `6b991313e0f31e72b2548b7fd024ca406b710f61d56ddc35c06e147a443e4913`. Clean-input patch SHA-256: `56f13528927f23cd5c72f45fde79fbed58ab6d463d0ad2c916e149fc4b66c971`. Main build: [Unified V4046](../releases/all_routes_unified_v4046/README.md). The original build-time registry is packaged byte-exactly; the current registry differs only in its promotion pointer. Earlier sections are historical checkpoints.
+
+Next: B166 native approval V4082b is complete. Reconcile pending ledger credit, then complete relocation/stored references, representative source/English speech, accepted menu choices and transitions, a registered cumulative build, exact clean-input patch and startup checks. The three menu-only cold boots establish complete captions/highlights and backing ownership; they do not establish B166 speech, actual choice return, recruitment or natural eligibility. Continue B167-B180 and the complete wider editorial objective.
+
+
 ## Accepted parent
 
 Every new playable ROM must descend directly from

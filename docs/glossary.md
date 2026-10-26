@@ -203,3 +203,8 @@ central correction. All locked primary naming decisions remain unchanged.
 ## V610 village place-name decisions
 
 Use the 24 spellings in [Village name decisions](village_names_v610_decisions.md). レバキュー is Leveque, correcting the former Lebaque spelling in three active Lil records. コルフ is Korf in the source Bering Sea context. Preserve Forel, Ezo and the game's Wanganui spelling as documented. Character-name locks remain unchanged.
+
+
+## Refit bow sail (V2284)
+
+Use **Spritsail** for スプリットセイル in clean DS COMMON1268/1280 andthe matching component label. The clean bow-fitting context andfollowing-wind benefit identify the sail under the bowsprit. This is a contextual terminology inference,supported by the [publisher Japanese manual](https://www.gamecity.ne.jp/manual/dk4HeN38/jp/3400.html) and[National Historic Ships Manual of Maritime Curatorship,Fittings,p.97](https://www.nationalhistoricships.org.uk/sites/default/files/2023-02/c_fittings.compressed.pdf). The publisher reference is a later-version Japanese manual,not an official English localization. Earlier Split Sail manuscripts are preserved for reproduction. See [source anddisplay review](refit_context_v2294_checkpoint.md).
