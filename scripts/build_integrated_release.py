@@ -6489,6 +6489,22 @@ def main() -> None:
                 raise ValueError('B167 must run once after the complete V4110 stack')
             release_batches.append(more_batch)
 
+    lil_mikhail = profile_config.get('lil_B168_editorial')
+    if lil_mikhail:
+        from dk4tool.patch.lil_B168_editorial_v1 import apply_release as apply_lil_mikhail
+
+        lil_mikhail_report = apply_lil_mikhail(candidate, baseline, lil_mikhail)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_mikhail_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B168_editorial'] = {
+            'release_config': lil_mikhail,
+            'release_config_sha256': sha256(Path(lil_mikhail).read_bytes()),
+            'proof': lil_mikhail_report}
+        more_batch = Path(lil_mikhail_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B168 must run once after the complete V4160 stack')
+        release_batches.append(more_batch)
+
     # Lexically valid "% o" and "% s" in translated prose still consume native
     # arguments absent from the Japanese source. Check final files, including
     # all post-batch stages, instead of accepting syntax alone as safety proof.
