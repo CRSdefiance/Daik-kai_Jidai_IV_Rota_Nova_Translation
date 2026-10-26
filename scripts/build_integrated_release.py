@@ -6457,6 +6457,38 @@ def main() -> None:
             raise ValueError('B165 must run once after the complete V4002 stack')
         release_batches.append(more_batch)
 
+    lil_manuel_advice = profile_config.get('lil_B166_editorial')
+    if lil_manuel_advice:
+        from dk4tool.patch.lil_B166_editorial_v1 import apply_release as apply_lil_manuel_advice
+
+        lil_manuel_advice_report = apply_lil_manuel_advice(candidate, baseline, lil_manuel_advice)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_manuel_advice_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B166_editorial'] = {
+            'release_config': lil_manuel_advice,
+            'release_config_sha256': sha256(Path(lil_manuel_advice).read_bytes()),
+            'proof': lil_manuel_advice_report}
+        for more_batch in [Path(lil_manuel_advice_report['manuscript']), Path(lil_manuel_advice_report['choices'])]:
+            if more_batch in release_batches:
+                raise ValueError('B166 must run once after the complete V4046 stack')
+            release_batches.append(more_batch)
+
+    lil_sail_lesson = profile_config.get('lil_B167_editorial')
+    if lil_sail_lesson:
+        from dk4tool.patch.lil_B167_editorial_v2 import apply_release as apply_lil_sail_lesson
+
+        lil_sail_lesson_report = apply_lil_sail_lesson(candidate, baseline, lil_sail_lesson)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_sail_lesson_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B167_editorial'] = {
+            'release_config': lil_sail_lesson,
+            'release_config_sha256': sha256(Path(lil_sail_lesson).read_bytes()),
+            'proof': lil_sail_lesson_report}
+        for more_batch in [Path(lil_sail_lesson_report['manuscript']), Path(lil_sail_lesson_report['choices'])]:
+            if more_batch in release_batches:
+                raise ValueError('B167 must run once after the complete V4110 stack')
+            release_batches.append(more_batch)
+
     # Lexically valid "% o" and "% s" in translated prose still consume native
     # arguments absent from the Japanese source. Check final files, including
     # all post-batch stages, instead of accepting syntax alone as safety proof.
