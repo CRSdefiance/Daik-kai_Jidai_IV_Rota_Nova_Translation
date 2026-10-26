@@ -210,3 +210,8 @@ table, not its21-slot metadata count alone. Slots1/4 have null image pointers an
 placeholder descriptions. `prepare_supported_sites_v529.py` selects19 real
 images; declared supported fixtures are checked before emulator frames begin.
 Keep historical invalid fixtures as diagnostics without display credit.
+
+
+## Current editorial ledger storage after V4359
+
+Write `translations/editorial_review_current_v1.json` with `scripts.editorial_ledger_storage_v1.encode_ledger`: one-space JSON indentation, UTF-8 and CRLF. This preserves the complete JSON object and all prior translation/provenance values while staying below the existing promotion file-size gate. Keep historical producers and byte-locked receipts unchanged; retain exact prior-byte snapshots. New current-ledger checkpoints and completions must use this encoder instead of restoring two-space indentation. Stage and validate before/planned hashes for every target before writing, and independently verify that prior records and counters are preserved. Other JSON formats retain their existing serialization.
