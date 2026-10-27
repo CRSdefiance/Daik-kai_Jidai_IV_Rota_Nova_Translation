@@ -1,0 +1,3 @@
+# V924: next battle Bridge source contexts
+
+Next28 entries1681-1708 are activity0 battle Captain5,First Mate6 and Helm4 comments. Original battle and ordinary tables are source-verified. Captain5 has four genuine-protagonist alternatives and null NPC tables;no unsupported NPC Captain5 call is made. All162 direct battle/helper,main battle and ordinary controls pass for the supported cases. These are working comments,not the separate activity1 helper126A8. Exact clean Japanese,current V922,canonical references and storage neighbors are saved. No prose,font,actual Bridge scene or completion credit.966 complete,969 source/prose reviewed;full editorial goal and separate graphics audit remain open.

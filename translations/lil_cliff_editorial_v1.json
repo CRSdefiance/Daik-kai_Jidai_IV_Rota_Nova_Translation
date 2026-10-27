@@ -1,0 +1,40 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c2e0d1a2744a7da4a24f9693230b302a29f05bcaa036ebd5cc9726a6184731ff",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-deep-route-v110-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "One previously omitted undecodable source record:SC2 B294 R73. Wider B293-B294 editorial review remains open.",
+  "records": [
+    {
+      "id": "DK4_MES_B294_R0073",
+      "english": "{SPEAKER:94}You're set on it, huh? Just for you, then.{PAD}",
+      "speaker": "Guildmaster acting as the cliff guide;original94 presentation state",
+      "context": "Lil has just insisted she will climb the cliff despite the dangerous path. The guide recognizes her determination and agrees as a personal favor. The following original record says he will guide her to the cliff and asks her to bring a map. Current V820 actually displays the unchanged Japanese under the Guildmaster portrait/caption.",
+      "source_meaning": "The guide observes that Lil's resolve is firm, then says he is doing this specifically for her as a favor.",
+      "localization_note": "Use an informal, gruff acknowledgment and a conversational offer of a favor. Set on it conveys firm resolve; just for you preserves the personal motivation. No family relationship, rank or promise to perform Lil's climb is invented. One logical paragraph;the encoder owns the automatic break and protected continuation. Existing route profile94 and actual native prefix consumption are verified.",
+      "source_japanese": "決意はかたいようだな\n他でもねえ。あんたのためだ",
+      "raw_source": {
+        "hex": "948c8888d382cd82a982bd82a282e682a482be82c80a91bc82c582e082cb82a6814282a082f182bd82cc82bd82df82be",
+        "presentation_prefix_hex": "94"
+      },
+      "source_control_evidence": "work/analysis/cliff_editorial_v829/94_source_control_and_old_batch_verification.json",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

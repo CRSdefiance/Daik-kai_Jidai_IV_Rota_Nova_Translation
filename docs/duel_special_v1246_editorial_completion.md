@@ -1,0 +1,17 @@
+# V1246 special-move editorial completion
+
+V1246 completes15 original duel special calls,including Julio2146:9 revisions and6 retained. Counts1260 complete (934 revised,326 retained),1298 source/prose reviewed;38 reviewed COMMON entries remain incomplete plus broader shared/routes/raw-source inventory. V1224 retains all471 batches114 accepted layers and previous routes,graphics,fonts and unselected prose.131324 dispatch,51 full fonts49 exclusions,7336 copies180 cache sequences,13 escape pipelines,eight ordinary startup frames and photographed676/677 formatting pass;clean-input patch reconstructs exactly. Original1990 special has six complete native bitmap/RGB holds,31 pre-duel fixture audits and natural combat/victory/sea aftermath. Disclosed native-range ability/HP/equipment prerequisites only before combat;Luck100 uses original unforced10percent chance;RNG,actor IDs,eligibility flags and results unchanged. No allocation or123040-byte staged growth. V1224 experimental;canonical and V997 unchanged. All18 plaques and separate graphics audit open. Full editorial goal remains active.
+
+## Verification scope
+
+All15 special-call alternatives have clean Japanese,original actor/method/side/duration context, faithful natural-English review and complete original native fonts/crops. Nine original special methods map15 calls,including Julio2146 outside the prior14-entry group.131324 dispatch cases, 7336 warm/cold copies180 cache sequences,49 exclusions and13 original escape regressions pass. Original Hodram methodF114 naturally selects1990 in an actual cold-boot duel; six complete 208x36 bitmap and144x12 RGB crop holds pass. The14 other alternatives have representative family evidence,not individual actual activations. All31 fixtures occur before duel5772,last5770, with complete4MiB delta,208 actor identity,RNG/event-word and input audits. Disposable prerequisites set stamina/agility1,spirit/luck100 through original setters;native positive HP maximum;shield49 moves to inventory. Luck100 gives the original unforced10percent chance. No actor ID,numeric message,RNG seed,eligibility flag or result is injected. No healing,revival,relocation or ability change occurs during/after combat. The special returns to original combat,natural victory and ordinary sea aftermath;source/disposable saves remain exact. This is targeted headless testing, not earned progression,a whole route or hardware verification.
+
+## Candidate
+
+ROM SHA256: `cdc860e53267dbef64ac9d40a1832b00fda6a4da6adbde2b61be830345d55dbd`. Patch SHA256: `f76a2b5a3443e296afd9be68bddef562389f9a671f9d7249aec33e3f3896949e`.
+
+The candidate remains experimental. Canonical promotion requires explicit user acceptance. Only1990 has actual individual activation evidence;the other14 receive the documented representative family sample. Earlier failed/no-special runs remain preserved. V1245 correctly rejected its premature HP-zero expectation; V1245b binds victory to actual frame8622. Every other proof and source capture remains unchanged.
+
+Actual proof: `work\analysis\duel_long_terminal_v1245b\terminal_gameplay_verification.json`. Final review: `translations\duel_special_editorial_final_review_v1.json`. Guide captures: `E:/Rota Nova translations/Guide screenshots/V1224 Special move`. Those captures disclose isolated ability/health/equipment testing prerequisites.
+
+Remaining: older38 reviewed entries plus the complete unreviewed shared,route and raw-source inventory. Revisit older record-based checks after the full editorial goal;do not treat this batch as the whole goal.

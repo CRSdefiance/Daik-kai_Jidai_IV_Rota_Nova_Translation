@@ -1,0 +1,5 @@
+# V878: sail handling and boarding source context
+
+V878 maps24 next SailHandling0/Boarding7 comments1523-1546 from clean Japanese,current V876 and the canonical reference. All50 original helper selections cover21 NPCs across eight voices and four genuine captains per duty. Role7 source concerns boarding and sword training. Review leads include sail-type distinctions,wind-reading competence,the difficulty of a dead calm despite improved skill,the comic back crack,and leading/taking command in boarding combat. No new editorial/source-prose credit:808 completed,811 source/prose reviewed. V876 stays current. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;separate graphics/all18 plaques and later older-record re-audit stay open.
+
+Proof: `work/analysis/sails_boarding_v878/source_context_packet.json`. Numeric CPU assignments are source research only;no prose/font/actual-gameplay approval is claimed. The V872 inherited checkpoint-ID typo is corrected in the current ledger with a separate erratum;frozen sources and archive snapshots stay exact.

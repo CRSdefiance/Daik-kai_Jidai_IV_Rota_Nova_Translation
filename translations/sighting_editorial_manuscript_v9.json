@@ -1,0 +1,922 @@
+{
+  "format": "dk4-natural-dialogue-source-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "sighting-native-post-expansion-35x4-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": false,
+  "status": "15-faction-grammar-native-approved;new-registered-integration-and-actual-pending",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1086_candidate.nds",
+  "current_ROM_sha256": "df958b7289743e8eca79c9a6a216e134c9a2590321597f7bead15111ee8d748f",
+  "native_context_proof": "work\\analysis\\sighting_editorial_v1065\\source_context_packet.json",
+  "native_context_proof_sha256": "bf8555cf8bcd5c00049521401a2009d782cf38a1e7ee73f0141b67d146038fc6",
+  "source_context_supplement": "work\\analysis\\sighting_editorial_v1066\\attacked_family_and_provider_supplement.json",
+  "source_context_supplement_sha256": "ede2af1e9fcf0c34c634c436e598fc3141e363fc6021146f5d07042f45adf87f",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_614",
+      "message_id": 614,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 0",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        0
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見しました！\n戦闘態勢に入ります！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca982b582dc82b582bd81490a90ed93ac91d490a882c993fc82e882dc82b78149",
+      "source_reference": {
+        "message_id": 614,
+        "block": 7,
+        "table_offset": 1318364,
+        "block_offset": 2800,
+        "copy_end": 2852,
+        "record_index": 56,
+        "start": 2,
+        "end": 53
+      },
+      "canonical_source_hex": "41742025733a20257320666c6565742073706f74746564210a2020426174746c652073746174696f6e73212020202020202020",
+      "current_reference": {
+        "message_id": 614,
+        "block": 7,
+        "table_offset": 1318364,
+        "block_offset": 2443,
+        "copy_end": 2519,
+        "record_index": 65,
+        "start": 0,
+        "end": 75
+      },
+      "current_text_hex": "20466c6565742073706f7474656420696e20746865202573212049742062656c6f6e677320746f202573212057652772652067657474696e6720726561647920666f7220626174746c6521",
+      "current_English": " Fleet spotted in the %s! It belongs to %s! We're getting ready for battle!",
+      "source_meaning": "Politely reports spotting the named factions fleet at the relative bearing,then announces battle readiness.",
+      "english": "Fleet spotted in the %s! Those are %s ships! We're getting ready for battle!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Native complete-faction substitution caught a doubled period after labels ending in Co.;use the already appropriate exclamation instead,without altering the name bytes or the source meaning. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20466c6565742073706f7474656420696e20746865202573212054686f736520617265202573207368697073212057652772652067657474696e6720726561647920666f7220626174746c6521"
+    },
+    {
+      "id": "COMMON_MESSAGE_615",
+      "message_id": 615,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 1",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見！\n戦闘態勢に入ります！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca981490a90ed93ac91d490a882c993fc82e882dc82b78149",
+      "source_reference": {
+        "message_id": 615,
+        "block": 7,
+        "table_offset": 1318366,
+        "block_offset": 2852,
+        "copy_end": 2896,
+        "record_index": 57,
+        "start": 0,
+        "end": 43
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020426174746c652073746174696f6e7321202020202020",
+      "current_reference": {
+        "message_id": 615,
+        "block": 7,
+        "table_offset": 1318366,
+        "block_offset": 2519,
+        "copy_end": 2591,
+        "record_index": 66,
+        "start": 0,
+        "end": 71
+      },
+      "current_text_hex": "2053706f74746564206120666c65657420696e207468652025732120497427732066726f6d202573212057652772652067657474696e6720726561647920746f20666967687421",
+      "current_English": " Spotted a fleet in the %s! It's from %s! We're getting ready to fight!",
+      "source_meaning": "Directly reports spotting the named factions fleet at the relative bearing,then announces battle readiness.",
+      "english": "Spotted a fleet in the %s! Those are %s ships! We're getting ready to fight!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2053706f74746564206120666c65657420696e20746865202573212054686f736520617265202573207368697073212057652772652067657474696e6720726561647920746f20666967687421"
+    },
+    {
+      "id": "COMMON_MESSAGE_616",
+      "message_id": 616,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 2",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊がいる！\n戦闘態勢に入るよ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082aa82a282e981490a90ed93ac91d490a882c993fc82e982e68149",
+      "source_reference": {
+        "message_id": 616,
+        "block": 7,
+        "table_offset": 1318368,
+        "block_offset": 2896,
+        "copy_end": 2940,
+        "record_index": 58,
+        "start": 0,
+        "end": 41
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020426174746c652073746174696f6e732120202020",
+      "current_reference": {
+        "message_id": 616,
+        "block": 7,
+        "table_offset": 1318368,
+        "block_offset": 2591,
+        "copy_end": 2655,
+        "record_index": 67,
+        "start": 0,
+        "end": 63
+      },
+      "current_text_hex": "2054686572652773206120666c65657420696e207468652025732120497427732066726f6d202573212047657420726561647920666f7220626174746c6521",
+      "current_English": " There's a fleet in the %s! It's from %s! Get ready for battle!",
+      "source_meaning": "Casually says the named factions fleet is at the relative bearing,then announces getting ready for battle.",
+      "english": "There's a fleet in the %s! Those are %s ships! Get ready for battle!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2054686572652773206120666c65657420696e20746865202573212054686f736520617265202573207368697073212047657420726561647920666f7220626174746c6521"
+    },
+    {
+      "id": "COMMON_MESSAGE_617",
+      "message_id": 617,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 3",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊がいるわ！\n戦闘態勢に入ります！",
+      "source_hex": "257382c90a257382cc0a8acd91e082aa82a282e982ed81490a90ed93ac91d490a882c993fc82e882dc82b78149",
+      "source_reference": {
+        "message_id": 617,
+        "block": 7,
+        "table_offset": 1318370,
+        "block_offset": 2940,
+        "copy_end": 2988,
+        "record_index": 59,
+        "start": 2,
+        "end": 47
+      },
+      "canonical_source_hex": "41742025733a20257320666c656574210a2020426174746c652073746174696f6e732120202020202020202020",
+      "current_reference": {
+        "message_id": 617,
+        "block": 7,
+        "table_offset": 1318370,
+        "block_offset": 2655,
+        "copy_end": 2729,
+        "record_index": 68,
+        "start": 0,
+        "end": 73
+      },
+      "current_text_hex": "2054686572652773206120666c65657420696e207468652025732120497427732066726f6d202573212057652772652067657474696e6720726561647920666f7220626174746c6521",
+      "current_English": " There's a fleet in the %s! It's from %s! We're getting ready for battle!",
+      "source_meaning": "A feminine voice reports the named factions fleet at the relative bearing,then announces battle readiness.",
+      "english": "There's a fleet in the %s! Those are %s ships! We're getting ready for battle!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2054686572652773206120666c65657420696e20746865202573212054686f736520617265202573207368697073212057652772652067657474696e6720726561647920666f7220626174746c6521"
+    },
+    {
+      "id": "COMMON_MESSAGE_618",
+      "message_id": 618,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 4",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊がいやがる！\n戦闘態勢に入るぜ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082aa82a282e282aa82e981490a90ed93ac91d490a882c993fc82e982ba8149",
+      "source_reference": {
+        "message_id": 618,
+        "block": 7,
+        "table_offset": 1318372,
+        "block_offset": 2988,
+        "copy_end": 3036,
+        "record_index": 60,
+        "start": 2,
+        "end": 47
+      },
+      "canonical_source_hex": "41742025733a20257320666c656574210a2020426174746c652073746174696f6e732120202020202020202020",
+      "current_reference": {
+        "message_id": 618,
+        "block": 7,
+        "table_offset": 1318372,
+        "block_offset": 2729,
+        "copy_end": 2810,
+        "record_index": 69,
+        "start": 0,
+        "end": 80
+      },
+      "current_text_hex": "20576527766520676f7420636f6d70616e7920696e20746865202573212049742773206120666c6565742066726f6d20257321204c657427732067657420726561647920666f72206120666967687421",
+      "current_English": " We've got company in the %s! It's a fleet from %s! Let's get ready for a fight!",
+      "source_meaning": "Roughly and disparagingly says the named factions fleet is at the relative bearing,then announces battle readiness.",
+      "english": "We've got company in the %s! Those are %s ships! Let's get ready for a fight!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. We have got company conveys the rough unwelcome-fleet reaction without adding profanity. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Use the complete spoken sentence Its a fleet from the named faction rather than a detached noun fragment. The unwelcome-company reaction and call to readiness preserve the original rough voice. This lengthens the prose without adding facts. Native weak-word scanning was separately found to treat uppercase A differently;keep that general formatter issue in the open watchlist rather than claiming a global repair. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20576527766520676f7420636f6d70616e7920696e20746865202573212054686f73652061726520257320736869707321204c657427732067657420726561647920666f72206120666967687421"
+    },
+    {
+      "id": "COMMON_MESSAGE_619",
+      "message_id": 619,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 5",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見！\n戦闘態勢に入るぞい！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca981490a90ed93ac91d490a882c993fc82e982bc82a28149",
+      "source_reference": {
+        "message_id": 619,
+        "block": 7,
+        "table_offset": 1318374,
+        "block_offset": 3036,
+        "copy_end": 3080,
+        "record_index": 61,
+        "start": 2,
+        "end": 45
+      },
+      "canonical_source_hex": "41742025733a20257320666c656574210a2020426174746c652073746174696f6e73212020202020202020",
+      "current_reference": {
+        "message_id": 619,
+        "block": 7,
+        "table_offset": 1318374,
+        "block_offset": 2810,
+        "copy_end": 2872,
+        "record_index": 70,
+        "start": 0,
+        "end": 61
+      },
+      "current_text_hex": "2053706f74746564206120666c65657420696e207468652025732120497427732066726f6d20257321205072657061726520666f7220626174746c6521",
+      "current_English": " Spotted a fleet in the %s! It's from %s! Prepare for battle!",
+      "source_meaning": "An older voice reports spotting the named factions fleet at the relative bearing,then announces battle readiness.",
+      "english": "Spotted a fleet in the %s! Those are %s ships! Prepare for battle!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2053706f74746564206120666c65657420696e20746865202573212054686f73652061726520257320736869707321205072657061726520666f7220626174746c6521"
+    },
+    {
+      "id": "COMMON_MESSAGE_620",
+      "message_id": 620,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 6",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を見つけたよ！\n戦闘だあ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f08ca982c282af82bd82e681490a90ed93ac82be82a08149",
+      "source_reference": {
+        "message_id": 620,
+        "block": 7,
+        "table_offset": 1318376,
+        "block_offset": 3080,
+        "copy_end": 3120,
+        "record_index": 62,
+        "start": 0,
+        "end": 39
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020426174746c65212020202020202020202020",
+      "current_reference": {
+        "message_id": 620,
+        "block": 7,
+        "table_offset": 1318376,
+        "block_offset": 2872,
+        "copy_end": 2929,
+        "record_index": 71,
+        "start": 0,
+        "end": 56
+      },
+      "current_text_hex": "204920666f756e64206120666c65657420696e207468652025732120497427732066726f6d202573212054696d6520746f20666967687421",
+      "current_English": " I found a fleet in the %s! It's from %s! Time to fight!",
+      "source_meaning": "Excited youthful voice says they found the named factions fleet at the relative bearing,and calls out that it is battle time.",
+      "english": "I found a fleet in the %s! Those are %s ships! Time to fight!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Keep the youthful excitement/startle in full natural sentences. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204920666f756e64206120666c65657420696e20746865202573212054686f736520617265202573207368697073212054696d6520746f20666967687421"
+    },
+    {
+      "id": "COMMON_MESSAGE_621",
+      "message_id": 621,
+      "source_family": "fleet-sighting-battle-preparation",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 7",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見しました！\n戦闘態勢に入りますぞ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca982b582dc82b582bd81490a90ed93ac91d490a882c993fc82e882dc82b782bc8149",
+      "source_reference": {
+        "message_id": 621,
+        "block": 7,
+        "table_offset": 1318378,
+        "block_offset": 3120,
+        "copy_end": 3176,
+        "record_index": 63,
+        "start": 0,
+        "end": 53
+      },
+      "canonical_source_hex": "202041742025733a20257320666c6565742073706f74746564210a2020426174746c652073746174696f6e73212020202020202020",
+      "current_reference": {
+        "message_id": 621,
+        "block": 7,
+        "table_offset": 1318378,
+        "block_offset": 2929,
+        "copy_end": 3005,
+        "record_index": 72,
+        "start": 0,
+        "end": 75
+      },
+      "current_text_hex": "20466c6565742073706f7474656420696e20746865202573212049742062656c6f6e677320746f202573212057652772652067657474696e6720726561647920666f7220626174746c6521",
+      "current_English": " Fleet spotted in the %s! It belongs to %s! We're getting ready for battle!",
+      "source_meaning": "Politely emphatic older voice reports spotting the named factions fleet at the relative bearing,then announces battle readiness.",
+      "english": "Fleet spotted in the %s! Those are %s ships! We're getting ready for battle!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep preparation for combat;do not turn this report into a claim that the opponent has already attacked. Source readiness wording 戦闘態勢に入る is an announcement that the crew is entering battle readiness. Express that as a full statement or a natural readiness call,retaining the voice;do not reduce it to a lone Battle/Stations fragment or add a battle outcome. This supersedes the shorter generic Battle stations call;the English was not shortened to match storage. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20466c6565742073706f7474656420696e20746865202573212054686f736520617265202573207368697073212057652772652067657474696e6720726561647920666f7220626174746c6521"
+    },
+    {
+      "id": "COMMON_MESSAGE_622",
+      "message_id": 622,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 0,1",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        0,
+        1
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見！\n攻撃を仕掛けてきました！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca981490a8d558c8282f08e648a7c82af82c482ab82dc82b582bd8149",
+      "source_reference": {
+        "message_id": 622,
+        "block": 7,
+        "table_offset": 1318380,
+        "block_offset": 3176,
+        "copy_end": 3224,
+        "record_index": 64,
+        "start": 2,
+        "end": 49
+      },
+      "canonical_source_hex": "41742025733a20257320666c656574210a2020546865792772652061747461636b696e672120202020202020202020",
+      "current_reference": {
+        "message_id": 622,
+        "block": 7,
+        "table_offset": 1318380,
+        "block_offset": 3005,
+        "copy_end": 3071,
+        "record_index": 73,
+        "start": 0,
+        "end": 65
+      },
+      "current_text_hex": "20466c6565742073706f7474656420696e207468652025732120497427732066726f6d2025732c20616e6420746865792772652061747461636b696e6720757321",
+      "current_English": " Fleet spotted in the %s! It's from %s, and they're attacking us!",
+      "source_meaning": "Reports spotting the named factions fleet at the relative bearing,and that it has launched an attack.",
+      "english": "Fleet spotted in the %s! Those are %s ships, and they're attacking us!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20466c6565742073706f7474656420696e20746865202573212054686f7365206172652025732073686970732c20616e6420746865792772652061747461636b696e6720757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_623",
+      "message_id": 623,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 2",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見！\n攻撃してきたよ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca981490a8d558c8282b582c482ab82bd82e68149",
+      "source_reference": {
+        "message_id": 623,
+        "block": 7,
+        "table_offset": 1318382,
+        "block_offset": 3224,
+        "copy_end": 3264,
+        "record_index": 65,
+        "start": 0,
+        "end": 39
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020546865792772652061747461636b696e6721",
+      "current_reference": {
+        "message_id": 623,
+        "block": 7,
+        "table_offset": 1318382,
+        "block_offset": 3071,
+        "copy_end": 3139,
+        "record_index": 74,
+        "start": 0,
+        "end": 67
+      },
+      "current_text_hex": "2054686572652773206120666c65657420696e207468652025732120497427732066726f6d2025732c20616e6420746865792772652061747461636b696e6720757321",
+      "current_English": " There's a fleet in the %s! It's from %s, and they're attacking us!",
+      "source_meaning": "Casually reports spotting the named factions fleet at the relative bearing,and that it is attacking us.",
+      "english": "There's a fleet in the %s! Those are %s ships, and they're attacking us!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2054686572652773206120666c65657420696e20746865202573212054686f7365206172652025732073686970732c20616e6420746865792772652061747461636b696e6720757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_624",
+      "message_id": 624,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 3",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "あ！　%sに\n%sの\n艦隊がいます！\n攻撃してきたわよ！",
+      "source_hex": "82a081498140257382c90a257382cc0a8acd91e082aa82a282dc82b781490a8d558c8282b582c482ab82bd82ed82e68149",
+      "source_reference": {
+        "message_id": 624,
+        "block": 7,
+        "table_offset": 1318384,
+        "block_offset": 3264,
+        "copy_end": 3316,
+        "record_index": 66,
+        "start": 0,
+        "end": 49
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020546865792772652061747461636b696e672120202020202020202020",
+      "current_reference": {
+        "message_id": 624,
+        "block": 7,
+        "table_offset": 1318384,
+        "block_offset": 3139,
+        "copy_end": 3205,
+        "record_index": 75,
+        "start": 0,
+        "end": 65
+      },
+      "current_text_hex": "204c6f6f6b21204120666c65657420696e207468652025732120497427732066726f6d2025732c20616e6420746865792772652061747461636b696e6720757321",
+      "current_English": " Look! A fleet in the %s! It's from %s, and they're attacking us!",
+      "source_meaning": "Exclaims on seeing the named factions fleet at the relative bearing,and reports that it is attacking us.",
+      "english": "Look! A fleet in the %s! Those are %s ships, and they're attacking us!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204c6f6f6b21204120666c65657420696e20746865202573212054686f7365206172652025732073686970732c20616e6420746865792772652061747461636b696e6720757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_625",
+      "message_id": 625,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 4",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊を発見！\n攻撃してきやがった！",
+      "source_hex": "257382c90a257382cc0a8acd91e082f094ad8ca981490a8d558c8282b582c482ab82e282aa82c182bd8149",
+      "source_reference": {
+        "message_id": 625,
+        "block": 7,
+        "table_offset": 1318386,
+        "block_offset": 3316,
+        "copy_end": 3360,
+        "record_index": 67,
+        "start": 2,
+        "end": 45
+      },
+      "canonical_source_hex": "41742025733a20257320666c656574210a2020546865792772652061747461636b696e6721202020202020",
+      "current_reference": {
+        "message_id": 625,
+        "block": 7,
+        "table_offset": 1318386,
+        "block_offset": 3205,
+        "copy_end": 3273,
+        "record_index": 76,
+        "start": 0,
+        "end": 67
+      },
+      "current_text_hex": "20466c65657420696e207468652025732120497427732066726f6d2025732c20616e642074686579277665207069636b65642061206669676874207769746820757321",
+      "current_English": " Fleet in the %s! It's from %s, and they've picked a fight with us!",
+      "source_meaning": "Roughly reports spotting the named factions fleet at the relative bearing,and complains that it has attacked us.",
+      "english": "Fleet in the %s! Those are %s ships, and they've picked a fight with us!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Picked a fight conveys the disparaging complaint about the opponents initiated attack. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20466c65657420696e20746865202573212054686f7365206172652025732073686970732c20616e642074686579277665207069636b65642061206669676874207769746820757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_626",
+      "message_id": 626,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 5",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊じゃ！\n攻撃を仕掛けてきおった！",
+      "source_hex": "257382c90a257382cc0a8acd91e082b682e181490a8d558c8282f08e648a7c82af82c482ab82a882c182bd8149",
+      "source_reference": {
+        "message_id": 626,
+        "block": 7,
+        "table_offset": 1318388,
+        "block_offset": 3360,
+        "copy_end": 3408,
+        "record_index": 68,
+        "start": 0,
+        "end": 45
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020546865792772652061747461636b696e6721202020202020",
+      "current_reference": {
+        "message_id": 626,
+        "block": 7,
+        "table_offset": 1318388,
+        "block_offset": 3273,
+        "copy_end": 3339,
+        "record_index": 77,
+        "start": 0,
+        "end": 65
+      },
+      "current_text_hex": "204120666c65657420696e207468652025732120497427732066726f6d2025732c20616e642074686579277665206c61756e6368656420616e2061747461636b21",
+      "current_English": " A fleet in the %s! It's from %s, and they've launched an attack!",
+      "source_meaning": "An older voice identifies the named factions fleet at the relative bearing,and reports that it has launched an attack.",
+      "english": "A fleet in the %s! Those are %s ships, and they've launched an attack!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204120666c65657420696e20746865202573212054686f7365206172652025732073686970732c20616e642074686579277665206c61756e6368656420616e2061747461636b21"
+    },
+    {
+      "id": "COMMON_MESSAGE_627",
+      "message_id": 627,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 6",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "うわあ！\n%sから\n%sの\n艦隊が攻撃してきたよ！",
+      "source_hex": "82a482ed82a081490a257382a982e70a257382cc0a8acd91e082aa8d558c8282b582c482ab82bd82e68149",
+      "source_reference": {
+        "message_id": 627,
+        "block": 7,
+        "table_offset": 1318390,
+        "block_offset": 3408,
+        "copy_end": 3452,
+        "record_index": 69,
+        "start": 2,
+        "end": 45
+      },
+      "canonical_source_hex": "46726f6d2025733a20257320666c6565742061747461636b73212020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 627,
+        "block": 7,
+        "table_offset": 1318390,
+        "block_offset": 3339,
+        "copy_end": 3395,
+        "record_index": 78,
+        "start": 0,
+        "end": 55
+      },
+      "current_text_hex": "2057686f6121204120666c65657420696e207468652025732069732061747461636b696e672075732120497427732066726f6d20257321",
+      "current_English": " Whoa! A fleet in the %s is attacking us! It's from %s!",
+      "source_meaning": "A startled youthful voice reports that the named factions fleet is attacking from the relative bearing.",
+      "english": "Whoa! A fleet in the %s is attacking us! Those are %s ships!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Keep the youthful excitement/startle in full natural sentences. A full read-aloud pass found from the vicinity unnatural with the real close-range argument. Report the attacking fleet in the indicated area instead,keeping the startled voice,ongoing attack,bearing-then-faction argument order and original facts. This works naturally for both vicinity and N/NW/etc without authoring separate location-specific dialogue. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2057686f6121204120666c65657420696e207468652025732069732061747461636b696e67207573212054686f73652061726520257320736869707321"
+    },
+    {
+      "id": "COMMON_MESSAGE_628",
+      "message_id": 628,
+      "source_family": "fleet-sighting-under-attack",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback;voice classes 7",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "context": "Original first-sighting flow775E8/778D0/77DDC supplies relative bearing then complete faction label. These are independent voice alternatives,not consecutive dialogue. Preparation precedes reinforcement/battle entry;under-attack variants report the opponents actual initiative. Preserve original scan/seen flags/relations/captain identities. See exact original source fragments and adjacent message families.",
+      "source_Japanese": "%sに\n%sの\n艦隊じゃ！\n攻撃してきましたぞ！",
+      "source_hex": "257382c90a257382cc0a8acd91e082b682e181490a8d558c8282b582c482ab82dc82b582bd82bc8149",
+      "source_reference": {
+        "message_id": 628,
+        "block": 7,
+        "table_offset": 1318392,
+        "block_offset": 3452,
+        "copy_end": 3496,
+        "record_index": 70,
+        "start": 0,
+        "end": 41
+      },
+      "canonical_source_hex": "202041742025733a20257320666c656574210a2020546865792772652061747461636b696e67212020",
+      "current_reference": {
+        "message_id": 628,
+        "block": 7,
+        "table_offset": 1318392,
+        "block_offset": 3395,
+        "copy_end": 3461,
+        "record_index": 79,
+        "start": 0,
+        "end": 65
+      },
+      "current_text_hex": "204120666c65657420696e207468652025732120497427732066726f6d2025732c20616e642074686579277665206c61756e6368656420616e2061747461636b21",
+      "current_English": " A fleet in the %s! It's from %s, and they've launched an attack!",
+      "source_meaning": "A politely emphatic older voice identifies the named factions fleet at the relative bearing,and reports that it has launched an attack.",
+      "english": "A fleet in the %s! Those are %s ships, and they've launched an attack!",
+      "localization_note": "Express the sighting as a spoken report,retaining its two original argument positions:relative bearing first,complete faction label second. In the N/NW/etc uses ordinary nautical compass abbreviations;in the vicinity requires the separately tracked faithful close-range provider repair. Never add an admiral address,kinship,or new hostility fact. Keep the opponents initiated attack;do not replace it with a mere battle-readiness call. Faction grammar review:use the unchanged faction name attributively in Those are %s ships. This is natural with Li Clan,Hayreddin Clan,Bergstrom Fleet,company names and surname faction labels. The first clause still explicitly reports a fleet;the follow-up identifies its ships without adding flags,colors,ship class or battle outcomes. Preserve the voice-specific readiness or already-attacked claim and bearing-first/faction-second source order. Read aloud against clean Japanese and all20 established complete labels. Earlier V7 font/gameplay evidence does not approve the changed wording;new complete font and integrated scene checks are required. Current V8 wording now passes2700 current-ROM printf/wrap/full-font cases,all review sheets and15 invalid compiler controls. New registered insertion,exact patch and changed-wording gameplay are still required;V1086 actual captures contain the previous V7 wording.",
+      "editorial_decision": "revise",
+      "native_argument_count": 2,
+      "native_argument_kinds": [
+        "relative-bearing-label",
+        "complete-faction-label"
+      ],
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204120666c65657420696e20746865202573212054686f7365206172652025732073686970732c20616e642074686579277665206c61756e6368656420616e2061747461636b21"
+    }
+  ],
+  "supersedes_manuscript": "translations\\sighting_editorial_manuscript_v8.json",
+  "supersedes_manuscript_sha256": "ac373cd79267896ddc76822c2fd2e1217ac5118ab7f44e620a64228e6f717e88",
+  "native_provider_proof": "work\\analysis\\sighting_provider_v1068\\provider_native_proof.json",
+  "native_provider_proof_sha256": "85e2e2ae5da0c967a015c29ec1f9f2237a08df68e6884cf9792ab33eb1fceba2",
+  "reviewed_research_manuscript": "translations\\sighting_editorial_manuscript_v6.json",
+  "reviewed_research_manuscript_sha256": "670f4736657b992473f2eea7769c813b54c4f823e21ba86ada5db229693d7baf",
+  "current_COMMON_sha256": "82fc504746a28a5e95dafeabdc836c5986c90f252988cd320311e83998feb4ea",
+  "current_ARM9_sha256": "4b1d8e1fd7f7113415e43d3694bda0729e0ff67afbbae9531480c497b976db17",
+  "previous_wording_native_and_label_evidence": {
+    "native_font_proof": "work\\analysis\\sighting_fonts_v1080\\native_font_proof.json",
+    "native_font_proof_sha256": "717367b05de1e2840646d88145529bb5135a140b382109657aef5bf07e5533c3",
+    "native_runtime_proof": "work\\analysis\\sighting_runtime_v1076\\native_runtime_verification.json",
+    "native_runtime_proof_sha256": "a652d30fab486a84108d6901262abbc2a06176f881e7f3c08a4044accd5bf2e0",
+    "visual_review": "work\\analysis\\sighting_release_v1084\\visual_review.json",
+    "visual_review_sha256": "9559e65c7b618ca7241d85deefdbdccc32ed9e8facf7f2dae8f31ff302bd7af5",
+    "native_label_records": [
+      {
+        "id": "CLOSE_RANGE_BEARING_LABEL",
+        "file_path": "/__arm9__.bin",
+        "offset": 1331484,
+        "allocation_bytes": 9,
+        "source_hex": "8e8a8bdf8b9797a300",
+        "canonical_source_hex": "8e8a8bdf8b9797a300",
+        "current_text_hex": "8e8a8bdf8b9797a300",
+        "replacement_hex": "766963696e69747900",
+        "english": "vicinity",
+        "source_meaning": "At very close range;close by.",
+        "context": "Original6567C returns this first argument to the two mapped sighting callers;original companion compass labels remain unchanged.",
+        "localization_note": "The existing15-paragraph grammar uses in the vicinity and preserves the source location meaning without changing compass bearings.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "ARMED_LATINA_DEFAULT_SHIP_LABEL",
+        "file_path": "/__arm9__.bin",
+        "offset": 1433764,
+        "allocation_bytes": 16,
+        "source_hex": "95909195838983658342815b83690000",
+        "canonical_source_hex": "959091954c6174696e61000000000000",
+        "current_text_hex": "959091954c6174696e61000000000000",
+        "replacement_hex": "41726d6564204c6174696e6100000000",
+        "english": "Armed Latina",
+        "source_meaning": "Armed version of the established Latina ship class.",
+        "context": "OriginalCD27C initializes fixed NPC ship115 from metadata0211DB5C;the complete name is copied into the bounded19-byte model field. The label actually appeared in a native capture notice.",
+        "localization_note": "Retain established Latina and use Armed consistently with adjacent armed ship variants. Do not alter player-entered names or other ship metadata.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      }
+    ],
+    "native_label_proof": "work\\analysis\\sighting_labels_v1083b\\native_label_proof.json",
+    "native_label_proof_sha256": "1ba05d62482dd1f93c65ef6e9007205dabbfb22a56520745066450cbe92cf270"
+  },
+  "preserved_native_labels_not_to_reapply": [
+    "vicinity",
+    "Armed Latina"
+  ],
+  "native_font_proof": "work\\analysis\\sighting_fonts_v1099\\native_font_proof.json",
+  "native_font_proof_sha256": "fa84b0a062f059364049f904e111b9087079b682b7d379c4cb11763ab78d0b8d",
+  "visual_review": "work\\analysis\\sighting_grammar_review_v1100\\visual_and_compiler_review.json",
+  "visual_review_sha256": "99ceb8fa87b5169c39ec13d71d6046a68e2f738db1b23a84c7e12c49b1f626c6"
+}

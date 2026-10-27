@@ -1,0 +1,4 @@
+"""Preserve the approval draft;remove one obsolete row-count note after the final wrap."""
+from pathlib import Path
+if __name__=='__main__':
+    draft=Path('scripts/approve_lil_B166_native_v4082.py');t=draft.read_text(encoding='utf-8');old="        r['review']['formatting']=True;r.update(";new="        if not any(x.code=='line-break-count' for x in encoded.diagnostics):\n            if r.get('qa_waivers'):assert r['id']=='DK4_MES_B166_R0123' and r['qa_waivers']==['line-break-count'];r['obsolete_prior_row_count_note_removed_after_current_QA']=True\n            r.pop('qa_waivers',None);r.pop('qa_waiver_reason',None)\n"+old;assert t.count(old)==1;t=t.replace(old,new);assert t.count('evidencepaths=[*INPUTS,')==1;t=t.replace('evidencepaths=[*INPUTS,','evidencepaths=[DRAFT,*INPUTS,');exec(compile(t,__file__,'exec'),dict(__name__='__main__',__file__=__file__,DRAFT=draft))

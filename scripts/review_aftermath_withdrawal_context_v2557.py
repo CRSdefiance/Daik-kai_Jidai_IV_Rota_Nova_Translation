@@ -1,0 +1,41 @@
+"""Fresh complete-utterance and voice review of eight original withdrawal reports."""
+from pathlib import Path
+from copy import deepcopy
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.battle_aftermath_native_plan_v1255 import compiled
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/aftermath_withdrawal_editorial_v2557')
+DOC=Path('translations/aftermath_withdrawal_contextual_editorial_manuscript_v1.json')
+PACKET=Path('work/analysis/aftermath_withdrawal_context_v2554/all8_clean_current_context_catalog.json')
+CONTEXT=Path('work/analysis/aftermath_withdrawal_context_v2554/source_context_packet.json')
+NOTES={
+2114:('A formal speaker addresses the admiral and announces that our side is withdrawing from the fighting.',"Admiral, we're withdrawing! is a natural concise spoken announcement of 戦線を離脱します. Withdrawing carries the combat context without mechanically adding battle line. We're expresses the party implicit in this role1 report,not a newly introduced participant. The explicit admiral address remains. It announces the withdrawal rather than proving defeat,surrender or a safe completed escape."),
+2115:('A brisk formal speaker addresses the admiral and announces disengagement from the fighting.',"Admiral, we're disengaging! preserves the clipped professional phrasing of 戦線離脱します. Disengaging is idiomatic for breaking off combat and gives this alternative a brisker register. The contraction is natural speech without changing the collective subject supplied by the situation. It adds no maneuver,destination or guaranteed outcome."),
+2116:('A casual speaker tells the admiral that our side is pulling out of the fighting.',"Admiral, we're pulling out! preserves the informal announcement in 離脱するよ and the actual 提督 address. Pulling out naturally conveys the withdrawal in this battle context. It does not become an order to another fleet or an admission of defeat. Sharing this idiom with2118 is justified by the matching action;original voice and portrait retain the speaker identity."),
+2117:('A softer conversational speaker tells the admiral that our side is leaving the battle.',"Admiral, we're leaving the battle! keeps the conversational declaration of 離脱するわね in natural English. The Japanese ending does not require a literal tag question,a new relationship or an exaggerated gendered mannerism. The full battle reference remains. The line announces leaving rather than certifying a completed safe return."),
+2118:('A rough familiar speaker tells the admiral that our side is pulling out of combat.',"Admiral, we're pulling out! is a natural forceful combat announcement for 戦線離脱するぜ. The terse idiom suits this direct voice without inventing profanity or extra bravado. Its matching wording with2116 is deliberate because the core meaning matches;the original source voice/portrait still distinguishes the speakers. No surrender,victory or destruction is inferred."),
+2119:('An older-register speaker tells the admiral that our side is withdrawing from the fighting.',"Admiral, we're withdrawing! preserves the clear withdrawal announcement in 離脱するぞい. The older register does not justify invented kinship,a rank,an accent caricature or an extra command. These natural words also work for2114 because their action and addressee match,while the original voice and portrait remain distinct."),
+2120:('An informal speaker tells the admiral that our side is moving away from the fight.',"Admiral, we're leaving the fight! keeps the plain conversational はなれるよ and combat situation. Leaving the fight is more natural than a literal separating from the front and does not invent an arrival point or tactical maneuver. The party subject is implicit in the original situation. This is an announcement,not a guarantee that no one takes further damage."),
+2121:('A courteous emphatic speaker addresses the admiral and announces withdrawal from the battle.',"Admiral, we're withdrawing from the battle! preserves the fuller courteous announcement and emphatic しますぞ. From the battle makes 戦線 explicit in natural English without imposing a specific geographic front. It adds no new rank or relationship. Original717F8 mode2 has no appended flagship-loss report,so the line remains withdrawal alone rather than an invented defeat declaration."),
+}
+if __name__=='__main__':
+ assert not ROOT.exists() and not DOC.exists()
+ packet,context=read(PACKET),read(CONTEXT);preflight=read('work/analysis/aftermath_withdrawal_context_v2554/next8_preflight.json');priorpath=Path(preflight['registered_manuscript']);prior={r['message_id']:r for r in read(priorpath)['records']};rows=[]
+ assert len(context['original_mode2_withdrawal_prefix'])==1
+ for s in packet['records']:
+  n=s['message_ID'];r=deepcopy(prior[n]);meaning,reason=NOTES[n]
+  assert s['source_hex']==r['source_hex'] and bytes.fromhex(s['current_hex'])==compiled(r)
+  assert r['native_argument_count']==0 and not r['source_native_macros']
+  r.update(file_path='/COMMON/MESFILE.DK4',consumer='original-53D44-role1-withdrawal-portrait',
+   context='Complete independent withdrawal announcement. Original717F8 mode2 calls53D44(role1,02117D00) once,without the mode0/1 flagship-loss follow-up. Native voice class selects the alternative;role1 uses its assigned member or native fallback. All eight sources address the admiral. Historical town-distance withdrawal supplies situation and aftermath,not a new current visit. Storage neighbors2113 ram hit and2122 attack confirmation are separate reports,not preceding/following dialogue in this event. Read the announcement with the original normal-A return;no defeat,victory,surrender,ship destruction or safe escape is added.',
+   source_Japanese=s['clean_Japanese'],source_reference=s['source_reference'],current_reference=s['current_reference'],current_hex=s['current_hex'],current_stored_English=s['current_stored_English'],source_meaning=meaning,localization_note=reason,fresh_retained_wording_justification=reason,
+   editorial_decision='retain-wording',speaker_metadata_corrected=False,review=dict(source=True,context=True,localization=True,naturalness=True,formatting=False))
+  rows.append(r)
+ ROOT.mkdir(parents=True);supplement=ROOT/'complete_withdrawal_and_voice_review.json'
+ save(supplement,dict(records=[],all8_complete_clean_utterances_freshly_read_with_original_context=True,all8_explicit_Admiral_addresses_and_implicit_party_subject_preserved=True,
+  formal_brisk_casual_soft_rough_older_plain_courteous_registers_reviewed=True,shared_natural_wording_does_not_merge_source_voices_or_portraits=True,no_loss_followup_or_invented_safe_escape=True,completion_pending_native_historical_and_registered_reconciliation=True,full_goal_complete=False))
+ doc=dict(format='dk4-natural-dialogue-manuscript-v2',translation_policy='natural-dialogue-v2',target_locale='en-US',encoder='dialogue-relocatable-v1',consumer_layout_profile='battle-aftermath-portrait-postmacro-v1',review_gates=['source','context','localization','naturalness','formatting'],file_path='/COMMON/MESFILE.DK4',
+  source_ROM_sha256=packet['source_ROM_sha256'],current_ROM=packet['current_ROM'],current_ROM_sha256=packet['current_ROM_sha256'],current_ARM9_sha256=packet['current_ARM9_sha256'],current_COMMON_sha256=packet['current_COMMON_sha256'],source_context_packet=str(PACKET),source_context_packet_sha256=sha(PACKET.read_bytes()),native_context_proof=str(CONTEXT),native_context_proof_sha256=sha(CONTEXT.read_bytes()),fresh_ordinary_supplement=str(supplement),fresh_ordinary_supplement_sha256=sha(supplement.read_bytes()),prior_manuscript=str(priorpath),prior_manuscript_sha256=sha(priorpath.read_bytes()),
+  revised_IDs=[],retained_count=8,speaker_metadata_corrections=[],formatting_review_pending=True,current_native_and_actual_family_reconciliation_pending=True,records=rows,full_goal_complete=False)
+ save(DOC,doc);save(ROOT/'fresh_source_review.json',dict(manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),individual_new_glosses_and_retention_reasons=8,English_body_revisions=0,speaker_metadata_corrections=0,completion_pending_native_historical_registered_reconciliation=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ print('Eight fresh contextual retentions;all native/historical/registered reconciliation gates pending.')

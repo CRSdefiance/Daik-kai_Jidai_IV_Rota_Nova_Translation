@@ -1,0 +1,255 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "56460937a9a3569de0b76ff9de90e682bc07da256acb983b0d8d8012c027f203",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_653",
+      "message_id": 653,
+      "japanese": "今は%sが\nすごく売れてますよ",
+      "source_hex": "8da182cd257382aa0a82b782b282ad948482ea82c482dc82b782e6",
+      "current_hex": "202025732069732073656c6c696e67206661737421",
+      "current_English": "%s is selling fast!",
+      "english": "We're selling %s like hotcakes!{PAD}",
+      "source_meaning": "The supplied product is selling extremely well now.",
+      "speaker": "Original Square shopkeeper at5FB54",
+      "context": "Original trend-selector cases in native_context.json prove653/655 at values25..74 and654 at values135 or greater; all receive the product getter result. Numeric states are not inferred solely from source table adjacency.",
+      "localization_note": "Like hotcakes is natural American sales patter for selling extremely well now. The product is a grammatical object, so mass and plural names both work. No actual stock-out or quantity mechanic is asserted.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending",
+      "canonical_source_hex": "202025732069732073656c6c696e67206661737421202020202020",
+      "current_text_hex": "202025732069732073656c6c696e67206661737421",
+      "source_reference": {
+        "block": 8,
+        "record": 4,
+        "offset": 136
+      },
+      "current_reference": {
+        "block": 8,
+        "record": 4,
+        "offset": 130
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_654",
+      "message_id": 654,
+      "japanese": "%sを\n仕入れてきてくれたんなら\n早いとこ\n交易所でさばいてくださいね",
+      "source_hex": "257382f00a8e6493fc82ea82c482ab82c482ad82ea82bd82f182c882e70a918182a282c682b10a8cf088d58f8a82c582b382ce82a282c482ad82be82b382a282cb",
+      "current_hex": "2020476f742025733f0a202053656c6c2069742061742074686520747261646520686f7573650a20207768696c652064656d616e6420697320686967682e202020",
+      "current_English": "Got %s? Sell it at the trade house while demand is high.",
+      "english": "Brought %s? Sell your cargo at the trade house now!{PAD}",
+      "source_meaning": "If the listener brought the supplied product, they should promptly dispose of it by selling at the trade house.",
+      "speaker": "Original Square shopkeeper at5FB54",
+      "context": "Original trend-selector cases in native_context.json prove653/655 at values25..74 and654 at values135 or greater; all receive the product getter result. Numeric states are not inferred solely from source table adjacency.",
+      "localization_note": "Keep the conditional arrival with the product, the trade house and urgency. Cargo is a number-neutral object; now expresses early/prompt disposal without inventing a new demand fact.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending",
+      "canonical_source_hex": "2020476f742025733f0a202053656c6c2069742061742074686520747261646520686f7573650a20207768696c652064656d616e6420697320686967682e202020",
+      "current_text_hex": "2020476f742025733f0a202053656c6c2069742061742074686520747261646520686f7573650a20207768696c652064656d616e6420697320686967682e202020",
+      "source_reference": {
+        "block": 8,
+        "record": 5,
+        "offset": 164
+      },
+      "current_reference": {
+        "block": 8,
+        "record": 5,
+        "offset": 152
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_655",
+      "message_id": 655,
+      "japanese": "さあ\nこれから%sを売って\nじゃんじゃん儲けなきゃ",
+      "source_hex": "82b382a00a82b182ea82a982e7257382f0948482c182c40a82b682e182f182b682e182f196d782af82c882ab82e1",
+      "current_hex": "4c657427732073656c6c2025730a2020616e64206d616b65206120666f7274756e6521",
+      "current_English": "Let's sell %s and make a fortune!",
+      "english": "Let's sell %s and profit handsomely!{PAD}",
+      "source_meaning": "The speaker rallies to sell the supplied product and make lots of money.",
+      "speaker": "Original Square shopkeeper at5FB54",
+      "context": "Original trend-selector cases in native_context.json prove653/655 at values25..74 and654 at values135 or greater; all receive the product getter result. Numeric states are not inferred solely from source table adjacency.",
+      "localization_note": "Preserve the self-rally to sell the product and make a large profit. Profit handsomely is natural merchant language for janjan moukeru, and works with all product names without a tiny trailing row.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending",
+      "canonical_source_hex": "4c657427732073656c6c2025730a2020616e64206d616b65206120666f7274756e65212020202020202020202020",
+      "current_text_hex": "4c657427732073656c6c2025730a2020616e64206d616b65206120666f7274756e6521",
+      "source_reference": {
+        "block": 8,
+        "record": 6,
+        "offset": 232
+      },
+      "current_reference": {
+        "block": 8,
+        "record": 6,
+        "offset": 220
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_743",
+      "message_id": 743,
+      "source_hex": "967b939682a982a281490a82a082f182bd814182a282a2906c82be82cb81428dc58d8282be82e6",
+      "japanese": "本当かい！\nあんた、いい人だね。最高だよ",
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "5265616c6c793f20596f75277265206120676f6f6420706572736f6e2e20596f7527726520746865206265737421",
+      "current_English": "Really? You're a good person. You're the best!",
+      "english": "Really? You're so kind! You're the best!{PAD}",
+      "speaker": "Original Square local-specialty requester selected by town actor getter",
+      "context": "OriginalBAD0C-BADB4 fragment obtains item/product names, asks742 through Yes/No parent53FCC, and selects743 on acceptance or744 on refusal. Native supplied-result fragments verify this sequence and product-flag change; full inventory eligibility/transfer is separate.",
+      "source_meaning": "The local joyfully confirms acceptance and praises the player as a good person and the best.",
+      "localization_note": "Preserve the enthusiastic thanks and praise; so kind naturally conveys ii hito in response to accepting a gift, without adding a reward or relationship.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2788
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2929
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_744",
+      "message_id": 744,
+      "source_hex": "82bb82a482a982a20a82a082f182bd81418350836082c882f182be82cb",
+      "japanese": "そうかい\nあんた、ケチなんだね",
+      "canonical_source_hex": "202049207365652e20486f77207374696e67792e202020202020202020",
+      "current_text_hex": "202049207365652e20486f77207374696e67792e202020202020202020",
+      "current_English": "I see. How stingy.",
+      "english": "Oh, I see. You're a real miser.{PAD}",
+      "speaker": "Original Square local-specialty requester selected by town actor getter",
+      "context": "OriginalBAD0C-BADB4 fragment obtains item/product names, asks742 through Yes/No parent53FCC, and selects743 on acceptance or744 on refusal. Native supplied-result fragments verify this sequence and product-flag change; full inventory eligibility/transfer is separate.",
+      "source_meaning": "The local accepts the refusal and bluntly calls the player stingy.",
+      "localization_note": "Preserve the disappointed stinginess insult in natural spoken English without inventing a threat or penalty.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 28,
+        "offset": 2828
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 28,
+        "offset": 2976
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_745",
+      "message_id": 745,
+      "source_hex": "82dc82be91bc82c9977082aa82a082e982cc82a982a28148",
+      "japanese": "まだ他に用があるのかい？",
+      "canonical_source_hex": "416e797468696e6720656c73653f20202020202020202020",
+      "current_text_hex": "416e797468696e6720656c73653f20202020202020202020",
+      "current_English": "Anything else?",
+      "english": "Anything else?{PAD}",
+      "speaker": "Original Square shopkeeper",
+      "context": "Source BA3D4/BA428 forwards745 from the shop continuation loop; BC244/BC248 and BC970/BC978 bind746 to ordinary portrait replies in two original shop flows. Preserve both independent selections in their shared NUL owner.",
+      "source_meaning": "The shopkeeper asks if the player still needs anything else.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2860
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 3008
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_746",
+      "message_id": 746,
+      "source_hex": "816397e282e282a982b582a982a2",
+      "japanese": "…冷やかしかい",
+      "canonical_source_hex": "4a7573742062726f7773696e673f",
+      "current_text_hex": "4a7573742062726f7773696e673f",
+      "current_English": "Just browsing?",
+      "english": "Just browsing?{PAD}",
+      "speaker": "Original Square shopkeeper",
+      "context": "Source BA3D4/BA428 forwards745 from the shop continuation loop; BC244/BC248 and BC970/BC978 bind746 to ordinary portrait replies in two original shop flows. Preserve both independent selections in their shared NUL owner.",
+      "source_meaning": "The shopkeeper asks, with a slight pause, whether the player is merely browsing.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2884
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 3032
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-font-reviewed-gameplay-pending"
+    }
+  ],
+  "status": "experimental-native-reviewed-gameplay-pending"
+}

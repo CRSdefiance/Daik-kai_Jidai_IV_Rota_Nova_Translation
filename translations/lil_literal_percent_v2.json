@@ -1,0 +1,34 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC2.DK4",
+  "source_file_sha256": "c2e0d1a2744a7da4a24f9693230b302a29f05bcaa036ebd5cc9726a6184731ff",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "lil-story-deep-route-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Clean-source literal percentages rewritten as natural words; original allocations and controls retained.",
+  "records": [
+    {
+      "id": "DK4_MES_B133_R0136",
+      "english": "{SPEAKER:02}So we give you 2 percent of Nantes for 1 percent of Lisbon?{PAD}",
+      "speaker": "Lil Argot",
+      "context": "Lil checks the proposed exchange after the other trader rejects a one-for-one share exchange because Lisbon is larger and strategically placed.",
+      "source_meaning": "Lil asks whether giving up two percent in Nantes means receiving one percent in Lisbon in exchange.",
+      "localization_note": "Keeps both amounts, cities and exchange direction in a natural confirmation question. Writes percent as a word because ASCII percent-space-o becomes an octal conversion; no manual breaks.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

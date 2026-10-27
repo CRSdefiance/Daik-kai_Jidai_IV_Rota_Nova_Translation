@@ -1,4 +1,6 @@
 * text=auto
+# JSON manuscripts, evidence and release manifests have byte-hash dependencies.
+*.json -text whitespace=cr-at-eol
 .gitattributes text eol=lf
 .gitignore text eol=lf
 *.py text eol=lf
@@ -7,3 +9,11 @@
 *.txt text eol=lf
 *.ps1 text eol=crlf
 *.bat text eol=crlf
+# Frozen producers, manuscripts and evidence depend on exact file-byte hashes.
+# Preserve their existing line endings when committing and cloning checkpoints.
+scripts/** -text whitespace=cr-at-eol
+dk4tool/** -text whitespace=cr-at-eol
+docs/** -text whitespace=cr-at-eol
+translations/** -text whitespace=cr-at-eol
+tests/** -text whitespace=cr-at-eol
+guide/** -text whitespace=cr-at-eol

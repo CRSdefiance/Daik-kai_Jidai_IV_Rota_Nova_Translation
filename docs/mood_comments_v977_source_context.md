@@ -1,0 +1,3 @@
+# V977: mood source contexts
+
+Thirty-nine mood0/4/5 comments1833-1871 map through original helpers123C8/1242C/12380 and main12104. All225 direct/main ordinary/battle selections,75 physical1 priority and72 defined direct NPC/hero normal-mood controls pass. Only declared actor condition byte6,mood byte7 and CPU mode fields change;other30 actor bytes and identities remain exact. Sera direct normal-mood1/2/3 calls fall outside the original caller contract and are not executed. The old1855 ..Ug is an independent source-ellipsis formatting lead. No prose/font/new actual scene or completion credit.1118 complete,1121 source/prose reviewed;full goal and separate graphics audit remain open.

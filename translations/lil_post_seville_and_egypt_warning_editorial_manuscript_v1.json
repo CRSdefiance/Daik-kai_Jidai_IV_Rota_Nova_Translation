@@ -1,0 +1,2312 @@
+{
+  "format": "dk4-ilnk-editorial-source-prose-draft-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "file_path": "/data/SC2.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2724_candidate.nds",
+  "current_ROM_sha256": "48548eb7f185f3a8b4edd67951a860d74f90f0158f2407687e2eedb1cb75e950",
+  "required_runtime_ARM9_sha256": "d9415c1e0eb18c9eec9b76329f3dedb724a1a754a4829be103c6b958f927b9aa",
+  "source_context": "work\\analysis\\lil_post_Seville_source_v2732\\complete34_clean_current_native_context.json",
+  "source_context_sha256": "2c099dfddda9dee8da731d504bf7d13289caa8c6aecb91b9c17b457c9475c95f",
+  "control_contract": "work\\analysis\\lil_post_Seville_controls_v2734c\\source_bound_34_preambles_and_B132_warning_predicate.json",
+  "control_contract_sha256": "867a83e37988d206078e209accd0ee30bc781146782bd8a2242fcfdb1064526e",
+  "branch_proof": "work\\analysis\\lil_post_Seville_branches_v2733\\original_relative_skip_operand_proof.json",
+  "branch_proof_sha256": "ddf2eeb43958c97ad7387fb426d8527499c3f27b609df6516a8e00a40743626a",
+  "records": [
+    {
+      "id": "DK4_MES_B30_R0006",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 6,
+      "current_record_index": 6,
+      "source_reference": {
+        "offset": 17,
+        "bytes": 67,
+        "header_offset": 12
+      },
+      "current_reference": {
+        "offset": 17,
+        "bytes": 67,
+        "header_offset": 12
+      },
+      "source_hex": "1f89e482aa83588379834383938dc58bad8acd91e082aa81630a82c882f182c682a282a482b182c682be0a95c389ba82c98d8782ed82b982e98ae782aa82c882a28163",
+      "current_hex": "1f537061696e27732066696e65737420666c6565742e2e2e2062656174656e3f0a20486f772063616e20746865206b696e672062652066616365643f20202020202020",
+      "source_Japanese": "我がスペイン最強艦隊が…\nなんということだ\n陛下に合わせる顔がない…",
+      "current_English": "Spain's finest fleet... beaten?\n How can the king be faced?       ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 74,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 0,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "89e482aa83588379834383938dc58bad8acd91e082aa81630a82c882f182c682a282a482b182c682be0a95c389ba82c98d8782ed82b982e98ae782aa82c882a28163",
+          "output_hex": "89e482aa83588379834383938dc58bad8acd91e082aa81630a82c882f182c682a282a482b182c682be0a95c389ba82c98d8782ed82b982e98ae782aa82c882a28163",
+          "output_text": "我がスペイン最強艦隊が…\nなんということだ\n陛下に合わせる顔がない…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "537061696e27732066696e65737420666c6565742e2e2e2062656174656e3f0a20486f772063616e20746865206b696e672062652066616365643f20202020202020",
+          "output_hex": "537061696e27732066696e65737420666c6565742e2e2e2062656174656e3f0a20486f772063616e20746865206b696e672062652066616365643f20202020202020",
+          "output_text": "Spain's finest fleet... beaten?\n How can the king be faced?       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": null,
+      "next_storage_speech": "DK4_MES_B30_R0010",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Our fleet... the strongest in Spain... How could this happen? I can't face my sovereign...",
+      "source_meaning": "Valdes laments that their fleet,the strongest in Spain,has suffered this disaster,and says he cannot face the sovereign.",
+      "localization_note": "Restore the collective fleet,the explicit Spanish superlative,the shocked reaction,andthe personal shame. My sovereign preserves the original Majesty reference without inventing the monarchs gender. The source ellipses are hesitant speech,not authored line breaks;do not add a sinking orcasualty claim.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0010",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 10,
+      "current_record_index": 10,
+      "source_reference": {
+        "offset": 91,
+        "bytes": 29,
+        "header_offset": 86
+      },
+      "current_reference": {
+        "offset": 91,
+        "bytes": 29,
+        "header_offset": 86
+      },
+      "source_hex": "1f82dc82b382a9834e838a83748348815b836882cc8384836382aa8163",
+      "current_hex": "1f436f756c6420436c6966666f726420686176652e2e2e202020202020",
+      "source_Japanese": "まさかクリフォードのヤツが…",
+      "current_English": "Could Clifford have...      ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 36,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 1,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82dc82b382a9834e838a83748348815b836882cc8384836382aa8163",
+          "output_hex": "82dc82b382a9834e838a83748348815b836882cc8384836382aa8163",
+          "output_text": "まさかクリフォードのヤツが…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "436f756c6420436c6966666f726420686176652e2e2e202020202020",
+          "output_hex": "436f756c6420436c6966666f726420686176652e2e2e202020202020",
+          "output_text": "Could Clifford have...      ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0006",
+      "next_storage_speech": "DK4_MES_B30_R0020",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Don't tell me Clifford...",
+      "source_meaning": "Valdes incredulously begins to say that Clifford has done something;the following alternative speech supplies the alliance description.",
+      "localization_note": "Keep the deliberately unfinished disbelief so either native alternative can complete it. No act oroutcome is invented before the branch. Clifford is named without an invented new rank;the disparaging reference is carried by his incredulous tone.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0020",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 20,
+      "current_record_index": 20,
+      "source_reference": {
+        "offset": 143,
+        "bytes": 27,
+        "header_offset": 138
+      },
+      "current_reference": {
+        "offset": 143,
+        "bytes": 27,
+        "header_offset": 138
+      },
+      "source_hex": "1f82a082f182c88fac96ba82c68ee882f0916782de82c682cd8163",
+      "current_hex": "1f576974682074686174206c6974746c65206769726c2e2e2e2020",
+      "source_Japanese": "あんな小娘と手を組むとは…",
+      "current_English": "With that little girl...  ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 34,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 2,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a082f182c88fac96ba82c68ee882f0916782de82c682cd8163",
+          "output_hex": "82a082f182c88fac96ba82c68ee882f0916782de82c682cd8163",
+          "output_text": "あんな小娘と手を組むとは…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "576974682074686174206c6974746c65206769726c2e2e2e2020",
+          "output_hex": "576974682074686174206c6974746c65206769726c2e2e2e2020",
+          "output_text": "With that little girl...  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0010",
+      "next_storage_speech": "DK4_MES_B30_R0026",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}...joined forces with that little girl...",
+      "source_meaning": "Valdes says,in disbelief,that Clifford joined forces with that little girl.",
+      "localization_note": "Restore the actual act ofalliance,which the older With that little girl omitted. Keep the contemptuous little girl andthe incomplete continuation ofhis previous speech. This is one conditional alternative,not a reply to the Amsterdam alternative.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0026",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 26,
+      "current_record_index": 26,
+      "source_reference": {
+        "offset": 181,
+        "bytes": 33,
+        "header_offset": 176
+      },
+      "current_reference": {
+        "offset": 181,
+        "bytes": 33,
+        "header_offset": 176
+      },
+      "source_hex": "1f8341838083588365838b835f838082cc8fa4906c82c6916782de82c882c78163",
+      "current_hex": "1f5769746820616e20416d7374657264616d207472616465722e2e2e2020202020",
+      "source_Japanese": "アムステルダムの商人と組むなど…",
+      "current_English": "With an Amsterdam trader...     ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 40,
+      "ancestor_0100_offsets": [
+        172
+      ],
+      "spoken_sequence_index": 3,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8341838083588365838b835f838082cc8fa4906c82c6916782de82c882c78163",
+          "output_hex": "8341838083588365838b835f838082cc8fa4906c82c6916782de82c882c78163",
+          "output_text": "アムステルダムの商人と組むなど…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5769746820616e20416d7374657264616d207472616465722e2e2e2020202020",
+          "output_hex": "5769746820616e20416d7374657264616d207472616465722e2e2e2020202020",
+          "output_text": "With an Amsterdam trader...     ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0020",
+      "next_storage_speech": "DK4_MES_B30_R0033",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}...allied himself with a merchant from Amsterdam...",
+      "source_meaning": "Valdes disbelieves that Clifford allied himself with a merchant from Amsterdam.",
+      "localization_note": "Restore the explicit alliance andorigin rather than the old bare With an Amsterdam trader. This completes his preceding disbelief onthe other original branch;it is not additional proof that two separate alliances occurred.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0033",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 33,
+      "current_record_index": 33,
+      "source_reference": {
+        "offset": 233,
+        "bytes": 9,
+        "header_offset": 228
+      },
+      "current_reference": {
+        "offset": 233,
+        "bytes": 9,
+        "header_offset": 228
+      },
+      "source_hex": "1c82e682a882c18149",
+      "current_hex": "1c4865792120202020",
+      "source_Japanese": "よおっ！",
+      "current_English": "Hey!    ",
+      "source_complete_preamble_hex": "0040ffff001c",
+      "source_presentation_prefix_hex": "1c",
+      "speaker": "James Clifford",
+      "original_actor_ID": 28,
+      "kind": "progressive",
+      "native_command_extent": 16,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 4,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82e682a882c18149",
+          "output_hex": "82e682a882c18149",
+          "output_text": "よおっ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4865792120202020",
+          "output_hex": "4865792120202020",
+          "output_text": "Hey!    ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0026",
+      "next_storage_speech": "DK4_MES_B30_R0037",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1C}Hey!",
+      "source_meaning": "Clifford greets Lil with an energetic familiar Hey!",
+      "localization_note": "Retain the brief,natural current greeting. It carries his easy familiarity without adding an address,rank orrelationship.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the brief,natural current greeting. It carries his easy familiarity without adding an address,rank orrelationship."
+    },
+    {
+      "id": "DK4_MES_B30_R0037",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 37,
+      "current_record_index": 37,
+      "source_reference": {
+        "offset": 249,
+        "bytes": 19,
+        "header_offset": 244
+      },
+      "current_reference": {
+        "offset": 249,
+        "bytes": 19,
+        "header_offset": 244
+      },
+      "source_hex": "02834e838a83748348815b836882b382f18149",
+      "current_hex": "02436c6966666f726421202020202020202020",
+      "source_Japanese": "クリフォードさん！",
+      "current_English": "Clifford!         ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 26,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 5,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "834e838a83748348815b836882b382f18149",
+          "output_hex": "834e838a83748348815b836882b382f18149",
+          "output_text": "クリフォードさん！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "436c6966666f726421202020202020202020",
+          "output_hex": "436c6966666f726421202020202020202020",
+          "output_text": "Clifford!         ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0033",
+      "next_storage_speech": "DK4_MES_B30_R0041",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Clifford!",
+      "source_meaning": "Lil recognizes andcalls out to Clifford,using his name with san.",
+      "localization_note": "Retain the natural name exclamation. In this established acquaintance exchange,an English honorific is unnecessary andwould add stiffness;the recognition andtone remain clear.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural name exclamation. In this established acquaintance exchange,an English honorific is unnecessary andwould add stiffness;the recognition andtone remain clear."
+    },
+    {
+      "id": "DK4_MES_B30_R0041",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 41,
+      "current_record_index": 41,
+      "source_reference": {
+        "offset": 275,
+        "bytes": 65,
+        "header_offset": 270
+      },
+      "current_reference": {
+        "offset": 275,
+        "bytes": 65,
+        "header_offset": 270
+      },
+      "source_hex": "1c89b482bd82bf82cc93af96bf82c99d98979082b382ea0a90ed97cd95aa8e5582b582bd82cc82aa0a836f838b8366835882cc947388f682be82c182bd82c88163",
+      "current_hex": "1c4f757220616c6c69616e63652073706c69742068697320666f726365732e200a205468617420636f73742056616c6465732074686520626174746c652e2e2e20",
+      "source_Japanese": "俺たちの同盟に攪乱され\n戦力分散したのが\nバルデスの敗因だったな…",
+      "current_English": "Our alliance split his forces. \n That cost Valdes the battle... ",
+      "source_complete_preamble_hex": "0040ffff001c",
+      "source_presentation_prefix_hex": "1c",
+      "speaker": "James Clifford",
+      "original_actor_ID": 28,
+      "kind": "progressive",
+      "native_command_extent": 72,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 6,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "89b482bd82bf82cc93af96bf82c99d98979082b382ea0a90ed97cd95aa8e5582b582bd82cc82aa0a836f838b8366835882cc947388f682be82c182bd82c88163",
+          "output_hex": "89b482bd82bf82cc93af96bf82c99d98979082b382ea0a90ed97cd95aa8e5582b582bd82cc82aa0a836f838b8366835882cc947388f682be82c182bd82c88163",
+          "output_text": "俺たちの同盟に攪乱され\n戦力分散したのが\nバルデスの敗因だったな…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4f757220616c6c69616e63652073706c69742068697320666f726365732e200a205468617420636f73742056616c6465732074686520626174746c652e2e2e20",
+          "output_hex": "4f757220616c6c69616e63652073706c69742068697320666f726365732e200a205468617420636f73742056616c6465732074686520626174746c652e2e2e20",
+          "output_text": "Our alliance split his forces. \n That cost Valdes the battle... ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0037",
+      "next_storage_speech": "DK4_MES_B30_R0045",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1C}Our alliance threw Valdes off and made him divide his forces. That's why he lost...",
+      "source_meaning": "Clifford explains that their alliance confused Valdes into splitting his forces,and that this caused his defeat.",
+      "localization_note": "Restore both the disorientation andthe resulting divided strength in the causal explanation. Keep the assessment in Cliffords own voice;do not invent a tactical maneuver,casualty total orwho personally won the battle.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0045",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 45,
+      "current_record_index": 45,
+      "source_reference": {
+        "offset": 347,
+        "bytes": 56,
+        "header_offset": 342
+      },
+      "current_reference": {
+        "offset": 347,
+        "bytes": 56,
+        "header_offset": 342
+      },
+      "source_hex": "0282b182ea82c596da934982cd89ca82bd82b582bd82cc82e682cb0a82b182ea82a982e782cd814182c782a482b782e982c282e082e88148",
+      "current_hex": "024f757220676f616c206973206d65742e200a2057686174206e6f773f202020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "これで目的は果たしたのよね\nこれからは、どうするつもり？",
+      "current_English": "Our goal is met. \n What now?                           ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 62,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 7,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82b182ea82c596da934982cd89ca82bd82b582bd82cc82e682cb0a82b182ea82a982e782cd814182c782a482b782e982c282e082e88148",
+          "output_hex": "82b182ea82c596da934982cd89ca82bd82b582bd82cc82e682cb0a82b182ea82a982e782cd814182c782a482b782e982c282e082e88148",
+          "output_text": "これで目的は果たしたのよね\nこれからは、どうするつもり？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4f757220676f616c206973206d65742e200a2057686174206e6f773f202020202020202020202020202020202020202020202020202020",
+          "output_hex": "4f757220676f616c206973206d65742e200a2057686174206e6f773f202020202020202020202020202020202020202020202020202020",
+          "output_text": "Our goal is met. \n What now?                           ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0041",
+      "next_storage_speech": "DK4_MES_B30_R0048",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}We've done what we set out to do, then. What are you going to do now?",
+      "source_meaning": "Lil confirms that they have now achieved their objective and asks what Clifford intends to do next.",
+      "localization_note": "Use an easy spoken acknowledgment anddirect personal question. The older What now? omitted that she is specifically asking his plans;the full question sets up his dependence onroyal orders andher worry.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0048",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 48,
+      "current_record_index": 48,
+      "source_reference": {
+        "offset": 409,
+        "bytes": 48,
+        "header_offset": 404
+      },
+      "current_reference": {
+        "offset": 409,
+        "bytes": 48,
+        "header_offset": 404
+      },
+      "source_hex": "1c82bb82a482be82c88163814282dc82a00a95c389ba82cc8e778ea682f08bc282ae82b182c682c982c882e982aa8163",
+      "current_hex": "1c476f6f64207175657374696f6e2e2e2e200a20546865206b696e672773206f7264657273206465636964652e2e2e20",
+      "source_Japanese": "そうだな…。まあ\n陛下の指示を仰ぐことになるが…",
+      "current_English": "Good question... \n The king's orders decide... ",
+      "source_complete_preamble_hex": "0040ffff001c",
+      "source_presentation_prefix_hex": "1c",
+      "speaker": "James Clifford",
+      "original_actor_ID": 28,
+      "kind": "progressive",
+      "native_command_extent": 54,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 8,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82bb82a482be82c88163814282dc82a00a95c389ba82cc8e778ea682f08bc282ae82b182c682c982c882e982aa8163",
+          "output_hex": "82bb82a482be82c88163814282dc82a00a95c389ba82cc8e778ea682f08bc282ae82b182c682c982c882e982aa8163",
+          "output_text": "そうだな…。まあ\n陛下の指示を仰ぐことになるが…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "476f6f64207175657374696f6e2e2e2e200a20546865206b696e672773206f7264657273206465636964652e2e2e20",
+          "output_hex": "476f6f64207175657374696f6e2e2e2e200a20546865206b696e672773206f7264657273206465636964652e2e2e20",
+          "output_text": "Good question... \n The king's orders decide... ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0045",
+      "next_storage_speech": "DK4_MES_B30_R0051",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1C}Well... I'll have to see what orders I get from the Crown...",
+      "source_meaning": "Clifford considers the question andsays that he will have to seek orfollow the sovereigns instructions.",
+      "localization_note": "Keep the thoughtful pause,his first-person dependence onroyal direction,andthe unfinished qualification. The Crown is idiomatic institutional English for the source Majesty reference anddoes not invent a male king,which the old English did. No particular order orfuture war is asserted.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0051",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 51,
+      "current_record_index": 51,
+      "source_reference": {
+        "offset": 463,
+        "bytes": 19,
+        "header_offset": 458
+      },
+      "current_reference": {
+        "offset": 463,
+        "bytes": 19,
+        "header_offset": 458
+      },
+      "source_hex": "0282dc82b382a9814182a082bd82b582c68163",
+      "current_hex": "024e6f7420616761696e7374206d652e2e2e20",
+      "source_Japanese": "まさか、あたしと…",
+      "current_English": "Not against me... ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 26,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 9,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82dc82b382a9814182a082bd82b582c68163",
+          "output_hex": "82dc82b382a9814182a082bd82b582c68163",
+          "output_text": "まさか、あたしと…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4e6f7420616761696e7374206d652e2e2e20",
+          "output_hex": "4e6f7420616761696e7374206d652e2e2e20",
+          "output_text": "Not against me... ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0048",
+      "next_storage_speech": "DK4_MES_B30_R0055",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Not against me...",
+      "source_meaning": "Lil uneasily starts to ask whether that could mean opposing her.",
+      "localization_note": "Retain the natural frightened fragment andellipsis. With Cliffords royal-orders speech before it andhis hope afterward,the implication is clear. Completing it as a guaranteed future attack would overstate the source.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural frightened fragment andellipsis. With Cliffords royal-orders speech before it andhis hope afterward,the implication is clear. Completing it as a guaranteed future attack would overstate the source."
+    },
+    {
+      "id": "DK4_MES_B30_R0055",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 55,
+      "current_record_index": 55,
+      "source_reference": {
+        "offset": 489,
+        "bytes": 25,
+        "header_offset": 484
+      },
+      "current_reference": {
+        "offset": 489,
+        "bytes": 25,
+        "header_offset": 484
+      },
+      "source_hex": "1c82bb82a482c882e782c882a282b182c682f08ae882a482e6",
+      "current_hex": "1c4c6574277320686f7065206e6f742e202020202020202020",
+      "source_Japanese": "そうならないことを願うよ",
+      "current_English": "Let's hope not.         ",
+      "source_complete_preamble_hex": "0040ffff001c",
+      "source_presentation_prefix_hex": "1c",
+      "speaker": "James Clifford",
+      "original_actor_ID": 28,
+      "kind": "progressive",
+      "native_command_extent": 32,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 10,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82bb82a482c882e782c882a282b182c682f08ae882a482e6",
+          "output_hex": "82bb82a482c882e782c882a282b182c682f08ae882a482e6",
+          "output_text": "そうならないことを願うよ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4c6574277320686f7065206e6f742e202020202020202020",
+          "output_hex": "4c6574277320686f7065206e6f742e202020202020202020",
+          "output_text": "Let's hope not.         ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0051",
+      "next_storage_speech": "DK4_MES_B30_R0059",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1C}Let's hope not.",
+      "source_meaning": "Clifford says he hopes it will not come to that.",
+      "localization_note": "Retain the idiomatic response. It directly answers her fear,expresses hope rather than a promise,andpreserves uncertainty about what the Crown may order.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the idiomatic response. It directly answers her fear,expresses hope rather than a promise,andpreserves uncertainty about what the Crown may order."
+    },
+    {
+      "id": "DK4_MES_B30_R0059",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 59,
+      "current_record_index": 59,
+      "source_reference": {
+        "offset": 521,
+        "bytes": 7,
+        "header_offset": 516
+      },
+      "current_reference": {
+        "offset": 521,
+        "bytes": 7,
+        "header_offset": 516
+      },
+      "source_hex": "0282a482f18163",
+      "current_hex": "025965732e2e2e",
+      "source_Japanese": "うん…",
+      "current_English": "Yes...",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 14,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 11,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a482f18163",
+          "output_hex": "82a482f18163",
+          "output_text": "うん…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5965732e2e2e",
+          "output_hex": "5965732e2e2e",
+          "output_text": "Yes...",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0055",
+      "next_storage_speech": "DK4_MES_B30_R0063",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Yeah...",
+      "source_meaning": "Lil quietly agrees,with a hesitant trailing pause.",
+      "localization_note": "Use the familiar Yeah for un,consistent with her ordinary voice andthe subdued mood. The older Yes was stiffer than this uneasy personal exchange. Keep the uncertainty rather than turning it into enthusiasm.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B30_R0063",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 63,
+      "current_record_index": 63,
+      "source_reference": {
+        "offset": 535,
+        "bytes": 23,
+        "header_offset": 530
+      },
+      "current_reference": {
+        "offset": 535,
+        "bytes": 23,
+        "header_offset": 530
+      },
+      "source_hex": "1c82b682e182a082c881418cb38b4382c982e282ea82e6",
+      "current_hex": "1c54616b6520636172652c207468656e2e202020202020",
+      "source_Japanese": "じゃあな、元気にやれよ",
+      "current_English": "Take care, then.      ",
+      "source_complete_preamble_hex": "0040ffff001c",
+      "source_presentation_prefix_hex": "1c",
+      "speaker": "James Clifford",
+      "original_actor_ID": 28,
+      "kind": "progressive",
+      "native_command_extent": 30,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 12,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82b682e182a082c881418cb38b4382c982e282ea82e6",
+          "output_hex": "82b682e182a082c881418cb38b4382c982e282ea82e6",
+          "output_text": "じゃあな、元気にやれよ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "54616b6520636172652c207468656e2e202020202020",
+          "output_hex": "54616b6520636172652c207468656e2e202020202020",
+          "output_text": "Take care, then.      ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0059",
+      "next_storage_speech": "DK4_MES_B30_R0067",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1C}Take care, then.",
+      "source_meaning": "Clifford says farewell andtells Lil to do well orstay well.",
+      "localization_note": "Retain the natural current farewell. Take care carries the familiar goodwill andgenki wish without inventing a vow ornew relationship.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural current farewell. Take care carries the familiar goodwill andgenki wish without inventing a vow ornew relationship."
+    },
+    {
+      "id": "DK4_MES_B30_R0067",
+      "file_path": "/data/SC2.DK4",
+      "block": 30,
+      "source_record_index": 67,
+      "current_record_index": 67,
+      "source_reference": {
+        "offset": 565,
+        "bytes": 11,
+        "header_offset": 560
+      },
+      "current_reference": {
+        "offset": 565,
+        "bytes": 11,
+        "header_offset": 560
+      },
+      "source_hex": "0282bb82c182bf82e082cb",
+      "current_hex": "02596f7520746f6f2e2020",
+      "source_Japanese": "そっちもね",
+      "current_English": "You too.  ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 18,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 13,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82bb82c182bf82e082cb",
+          "output_hex": "82bb82c182bf82e082cb",
+          "output_text": "そっちもね",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f7520746f6f2e2020",
+          "output_hex": "596f7520746f6f2e2020",
+          "output_text": "You too.  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0063",
+      "next_storage_speech": "DK4_MES_B31_R0006",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}You too.",
+      "source_meaning": "Lil returns the same good wishes to Clifford.",
+      "localization_note": "Retain the concise,idiomatic reciprocal farewell. It works with the immediately preceding Take care,then,andadds no detail.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the concise,idiomatic reciprocal farewell. It works with the immediately preceding Take care,then,andadds no detail."
+    },
+    {
+      "id": "DK4_MES_B31_R0006",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 6,
+      "current_record_index": 6,
+      "source_reference": {
+        "offset": 17,
+        "bytes": 93,
+        "header_offset": 12
+      },
+      "current_reference": {
+        "offset": 17,
+        "bytes": 93,
+        "header_offset": 12
+      },
+      "source_hex": "7182a882a2814182a082f182bd82e793ec926e92868a4382c58fa4948482f00a82b782e982cc82a982a28148814082dc82b382a9814182b182b182e782cc895c82f00a926d82e782c882a282ed82af82b682e182cb82a682e682c88148",
+      "current_hex": "71596f7520706c616e20746f2074726164650a20696e2074686520736f75746865726e204d65646974657272616e65616e3f200a20537572656c7920796f75206b6e6f77207468652072756d6f72733f20202020202020202020202020",
+      "source_Japanese": "おい、あんたら南地中海で商売を\nするのかい？　まさか、ここらの噂を\n知らないわけじゃねえよな？",
+      "current_English": "You plan to trade\n in the southern Mediterranean? \n Surely you know the rumors?             ",
+      "source_complete_preamble_hex": "0040ffff0071",
+      "source_presentation_prefix_hex": "71",
+      "speaker": "Port Worker",
+      "original_actor_ID": 113,
+      "kind": "progressive",
+      "native_command_extent": 100,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 0,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a882a2814182a082f182bd82e793ec926e92868a4382c58fa4948482f00a82b782e982cc82a982a28148814082dc82b382a9814182b182b182e782cc895c82f00a926d82e782c882a282ed82af82b682e182cb82a682e682c88148",
+          "output_hex": "82a882a2814182a082f182bd82e793ec926e92868a4382c58fa4948482f00a82b782e982cc82a982a28148814082dc82b382a9814182b182b182e782cc895c82f00a926d82e782c882a282ed82af82b682e182cb82a682e682c88148",
+          "output_text": "おい、あんたら南地中海で商売を\nするのかい？　まさか、ここらの噂を\n知らないわけじゃねえよな？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f7520706c616e20746f2074726164650a20696e2074686520736f75746865726e204d65646974657272616e65616e3f200a20537572656c7920796f75206b6e6f77207468652072756d6f72733f20202020202020202020202020",
+          "output_hex": "596f7520706c616e20746f2074726164650a20696e2074686520736f75746865726e204d65646974657272616e65616e3f200a20537572656c7920796f75206b6e6f77207468652072756d6f72733f20202020202020202020202020",
+          "output_text": "You plan to trade\n in the southern Mediterranean? \n Surely you know the rumors?             ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B30_R0067",
+      "next_storage_speech": "DK4_MES_B31_R0010",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:71}Hey, you planning to trade in the southern Mediterranean? You've heard the rumors around here, haven't you?",
+      "source_meaning": "A port worker asks whether the group will trade in the southern Mediterranean,and rhetorically expects that they know the local rumors.",
+      "localization_note": "Restore his attention-getting Hey,the plural group address through English you,andthe specifically local rumors. Use a conversational tag question to carry the rough rhetorical ending without inventing a threat ornew rank.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0010",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 10,
+      "current_record_index": 10,
+      "source_reference": {
+        "offset": 117,
+        "bytes": 13,
+        "header_offset": 112
+      },
+      "current_reference": {
+        "offset": 117,
+        "bytes": 13,
+        "header_offset": 112
+      },
+      "source_hex": "02816382a682c18141895c8148",
+      "current_hex": "022e2e2e52756d6f72733f2020",
+      "source_Japanese": "…えっ、噂？",
+      "current_English": "...Rumors?  ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 20,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 1,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "816382a682c18141895c8148",
+          "output_hex": "816382a682c18141895c8148",
+          "output_text": "…えっ、噂？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "2e2e2e52756d6f72733f2020",
+          "output_hex": "2e2e2e52756d6f72733f2020",
+          "output_text": "...Rumors?  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0006",
+      "next_storage_speech": "DK4_MES_B31_R0027",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}...Huh? Rumors?",
+      "source_meaning": "Lil reacts with surprise andasks about the rumors.",
+      "localization_note": "Restore the audible eh reaction as Huh? while retaining the source pause andquestion. The old Rumors alone flattened her surprise. The ellipsis is spoken hesitation,not a blank leading row.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0027",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 27,
+      "current_record_index": 27,
+      "source_reference": {
+        "offset": 169,
+        "bytes": 23,
+        "header_offset": 164
+      },
+      "current_reference": {
+        "offset": 169,
+        "bytes": 23,
+        "header_offset": 164
+      },
+      "source_hex": "09895c8148814089bd82cc82b182c682c582b782a98148",
+      "current_hex": "0952756d6f72733f2041626f757420776861743f202020",
+      "source_Japanese": "噂？　何のことですか？",
+      "current_English": "Rumors? About what?   ",
+      "source_complete_preamble_hex": "0040ffff0009",
+      "source_presentation_prefix_hex": "09",
+      "speaker": "Camille",
+      "original_actor_ID": 9,
+      "kind": "progressive",
+      "native_command_extent": 30,
+      "ancestor_0100_offsets": [
+        160
+      ],
+      "spoken_sequence_index": 2,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "895c8148814089bd82cc82b182c682c582b782a98148",
+          "output_hex": "895c8148814089bd82cc82b182c682c582b782a98148",
+          "output_text": "噂？　何のことですか？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "52756d6f72733f2041626f757420776861743f202020",
+          "output_hex": "52756d6f72733f2041626f757420776861743f202020",
+          "output_text": "Rumors? About what?   ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0010",
+      "next_storage_speech": "DK4_MES_B31_R0034",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:09}Rumors? About what?",
+      "source_meaning": "Camille asks what rumors the port worker means.",
+      "localization_note": "Retain the natural two-question reply. It expresses the polite Japanese question in unforced spoken English andworks as the optional Camille response before the port workers explanation.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural two-question reply. It expresses the polite Japanese question in unforced spoken English andworks as the optional Camille response before the port workers explanation."
+    },
+    {
+      "id": "DK4_MES_B31_R0034",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 34,
+      "current_record_index": 34,
+      "source_reference": {
+        "offset": 203,
+        "bytes": 42,
+        "header_offset": 198
+      },
+      "current_reference": {
+        "offset": 203,
+        "bytes": 42,
+        "header_offset": 198
+      },
+      "source_hex": "71926d82e782c882a282cc82a981480a8177926e92868a4382cc8a4391af89a4817882cc986282f08148",
+      "current_hex": "71596f7520646f206e6f74206b6e6f770a2074686520506972617465204b696e673f2020202020202020",
+      "source_Japanese": "知らないのか？\n『地中海の海賊王』の話を？",
+      "current_English": "You do not know\n the Pirate King?        ",
+      "source_complete_preamble_hex": "0040ffff0071",
+      "source_presentation_prefix_hex": "71",
+      "speaker": "Port Worker",
+      "original_actor_ID": 113,
+      "kind": "progressive",
+      "native_command_extent": 48,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 3,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "926d82e782c882a282cc82a981480a8177926e92868a4382cc8a4391af89a4817882cc986282f08148",
+          "output_hex": "926d82e782c882a282cc82a981480a8177926e92868a4382cc8a4391af89a4817882cc986282f08148",
+          "output_text": "知らないのか？\n『地中海の海賊王』の話を？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f7520646f206e6f74206b6e6f770a2074686520506972617465204b696e673f2020202020202020",
+          "output_hex": "596f7520646f206e6f74206b6e6f770a2074686520506972617465204b696e673f2020202020202020",
+          "output_text": "You do not know\n the Pirate King?        ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0027",
+      "next_storage_speech": "DK4_MES_B31_R0037",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:71}You haven't heard of the Pirate King of the Mediterranean?",
+      "source_meaning": "The port worker asks whether they have not heard of the Pirate King of the Mediterranean.",
+      "localization_note": "Restore the complete regional title,which the old English reduced to Pirate King. The negative question carries his surprise naturally. The title remains a local appellation,not a newly asserted legal rank.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0037",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 37,
+      "current_record_index": 37,
+      "source_reference": {
+        "offset": 251,
+        "bytes": 30,
+        "header_offset": 246
+      },
+      "current_reference": {
+        "offset": 251,
+        "bytes": 30,
+        "header_offset": 246
+      },
+      "source_hex": "0282c882a082c981480a82bb82cc81778a4391af89a4817882c182c48148",
+      "current_hex": "025768617420697320746869732027506972617465204b696e67273f2020",
+      "source_Japanese": "なあに？\nその『海賊王』って？",
+      "current_English": "What is this 'Pirate King'?  ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 36,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 4,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c882a082c981480a82bb82cc81778a4391af89a4817882c182c48148",
+          "output_hex": "82c882a082c981480a82bb82cc81778a4391af89a4817882c182c48148",
+          "output_text": "なあに？\nその『海賊王』って？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5768617420697320746869732027506972617465204b696e67273f2020",
+          "output_hex": "5768617420697320746869732027506972617465204b696e67273f2020",
+          "output_text": "What is this 'Pirate King'?  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0034",
+      "next_storage_speech": "DK4_MES_B31_R0048",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Who's this Pirate King?",
+      "source_meaning": "Lil asks what this Pirate King is orwho is meant by that name.",
+      "localization_note": "Use the natural English Who question for a person identified bya title. The old What is this Pirate King sounded as ifshe were asking about an object. Do not identify the person before the source does.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0048",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 48,
+      "current_record_index": 48,
+      "source_reference": {
+        "offset": 307,
+        "bytes": 27,
+        "header_offset": 302
+      },
+      "current_reference": {
+        "offset": 307,
+        "bytes": 27,
+        "header_offset": 302
+      },
+      "source_hex": "108163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+      "current_hex": "102e2e2e28436f756c642069742062652074686174206d616e3f29",
+      "source_Japanese": "…（まさかあの男のことか）",
+      "current_English": "...(Could it be that man?)",
+      "source_complete_preamble_hex": "0040ffff0010",
+      "source_presentation_prefix_hex": "10",
+      "speaker": "Gerhard Ardelknatts",
+      "original_actor_ID": 16,
+      "kind": "progressive",
+      "native_command_extent": 34,
+      "ancestor_0100_offsets": [
+        298
+      ],
+      "spoken_sequence_index": 5,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+          "output_hex": "8163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+          "output_text": "…（まさかあの男のことか）",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "2e2e2e28436f756c642069742062652074686174206d616e3f29",
+          "output_hex": "2e2e2e28436f756c642069742062652074686174206d616e3f29",
+          "output_text": "...(Could it be that man?)",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0037",
+      "next_storage_speech": "DK4_MES_B31_R0055",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:10}...(Could it be that man?)",
+      "source_meaning": "Gerhard privately wonders,in disbelief,whether the speaker means a particular man.",
+      "localization_note": "Retain the cautious current inner thought andits parenthetical presentation. The man remains unnamed andthe possibility remains uncertain. This optional thought belongs to the no-earlier-warning branch,not a spoken reply that everyone hears.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the cautious current inner thought andits parenthetical presentation. The man remains unnamed andthe possibility remains uncertain. This optional thought belongs to the no-earlier-warning branch,not a spoken reply that everyone hears."
+    },
+    {
+      "id": "DK4_MES_B31_R0055",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 55,
+      "current_record_index": 55,
+      "source_reference": {
+        "offset": 345,
+        "bytes": 98,
+        "header_offset": 340
+      },
+      "current_reference": {
+        "offset": 345,
+        "bytes": 98,
+        "header_offset": 340
+      },
+      "source_hex": "7188ab82a282b182c682cd8cbe82ed82cb82a60a82b182cc8d6082f08f6f82bd82e782b782ae82c991bc82c98cfc82a982a482f182be81490a82a282a282c8814183478357837683678bdf95d382a982e70a8f6f82c48d7382ad82f182be82bc8149",
+      "current_hex": "7154616b65206d79206164766963652e0a204c65617665207468697320706f727420616e64207361696c20656c73657768657265210a2047657420617761792066726f6d204567797074212020202020202020202020202020202020202020202020",
+      "source_Japanese": "悪いことは言わねえ\nこの港を出たらすぐに他に向かうんだ！\nいいな、エジプト近辺から\n出て行くんだぞ！",
+      "current_English": "Take my advice.\n Leave this port and sail elsewhere!\n Get away from Egypt!                       ",
+      "source_complete_preamble_hex": "0040ffff0071",
+      "source_presentation_prefix_hex": "71",
+      "speaker": "Port Worker",
+      "original_actor_ID": 113,
+      "kind": "progressive",
+      "native_command_extent": 104,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 6,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "88ab82a282b182c682cd8cbe82ed82cb82a60a82b182cc8d6082f08f6f82bd82e782b782ae82c991bc82c98cfc82a982a482f182be81490a82a282a282c8814183478357837683678bdf95d382a982e70a8f6f82c48d7382ad82f182be82bc8149",
+          "output_hex": "88ab82a282b182c682cd8cbe82ed82cb82a60a82b182cc8d6082f08f6f82bd82e782b782ae82c991bc82c98cfc82a982a482f182be81490a82a282a282c8814183478357837683678bdf95d382a982e70a8f6f82c48d7382ad82f182be82bc8149",
+          "output_text": "悪いことは言わねえ\nこの港を出たらすぐに他に向かうんだ！\nいいな、エジプト近辺から\n出て行くんだぞ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "54616b65206d79206164766963652e0a204c65617665207468697320706f727420616e64207361696c20656c73657768657265210a2047657420617761792066726f6d204567797074212020202020202020202020202020202020202020202020",
+          "output_hex": "54616b65206d79206164766963652e0a204c65617665207468697320706f727420616e64207361696c20656c73657768657265210a2047657420617761792066726f6d204567797074212020202020202020202020202020202020202020202020",
+          "output_text": "Take my advice.\n Leave this port and sail elsewhere!\n Get away from Egypt!                       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0048",
+      "next_storage_speech": "DK4_MES_B31_R0059",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:71}Take my advice. Once you leave this port, head somewhere else! You hear me? Get away from Egypt!",
+      "source_meaning": "The port worker urges them to take his advice,leave this port for somewhere else,andget out ofthe area around Egypt.",
+      "localization_note": "Restore the once-you-leave sequence andthe forceful attention check. Keep the rough protective urgency andexplicit Egypt location without inventing an ambush,death threat orspecific destination. Get away from Egypt naturally includes its vicinity.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0059",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 59,
+      "current_record_index": 59,
+      "source_reference": {
+        "offset": 453,
+        "bytes": 31,
+        "header_offset": 448
+      },
+      "current_reference": {
+        "offset": 453,
+        "bytes": 31,
+        "header_offset": 448
+      },
+      "source_hex": "0282dc82b382a9814182b182ea82aa817792898d90817882cc88d396a18148",
+      "current_hex": "02576173207468617420436c6966666f7264277320277761726e696e67273f",
+      "source_Japanese": "まさか、これが『忠告』の意味？",
+      "current_English": "Was that Clifford's 'warning'?",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 38,
+      "ancestor_0100_offsets": [
+        444
+      ],
+      "spoken_sequence_index": 7,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82dc82b382a9814182b182ea82aa817792898d90817882cc88d396a18148",
+          "output_hex": "82dc82b382a9814182b182ea82aa817792898d90817882cc88d396a18148",
+          "output_text": "まさか、これが『忠告』の意味？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "576173207468617420436c6966666f7264277320277761726e696e67273f",
+          "output_hex": "576173207468617420436c6966666f7264277320277761726e696e67273f",
+          "output_text": "Was that Clifford's 'warning'?",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0055",
+      "next_storage_speech": "DK4_MES_B31_R0063",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Is this what that 'warning' was about...?",
+      "source_meaning": "Lil wonders whether this is what the earlier warning meant.",
+      "localization_note": "Remove the unsupported Clifford name. Native8100at132queries event132,andthe positive branch reaches this speech;complete B132is the barkeeps southern-Mediterranean warning. Keep the recalled warning anduneasy question without inventing who the Pirate King is.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0063",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 63,
+      "current_record_index": 63,
+      "source_reference": {
+        "offset": 491,
+        "bytes": 72,
+        "header_offset": 486
+      },
+      "current_reference": {
+        "offset": 491,
+        "bytes": 72,
+        "header_offset": 486
+      },
+      "source_hex": "7182c782a482e282e78fad82b582cd926d82c182c482a282e982e782b582a282c881630a82c882e782ce8141918182ad82b182cc93ec926e92868a4382f08f6f82e982f182be8149",
+      "current_hex": "71536f20796f75206b6e6f7720736f6d657468696e672e2e2e200a205468656e206c6561766520746865736520736f75746865726e20776174657273212020202020202020202020",
+      "source_Japanese": "どうやら少しは知っているらしいな…\nならば、早くこの南地中海を出るんだ！",
+      "current_English": "So you know something... \n Then leave these southern waters!           ",
+      "source_complete_preamble_hex": "0040ffff0071",
+      "source_presentation_prefix_hex": "71",
+      "speaker": "Port Worker",
+      "original_actor_ID": 113,
+      "kind": "progressive",
+      "native_command_extent": 78,
+      "ancestor_0100_offsets": [
+        444
+      ],
+      "spoken_sequence_index": 8,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c782a482e282e78fad82b582cd926d82c182c482a282e982e782b582a282c881630a82c882e782ce8141918182ad82b182cc93ec926e92868a4382f08f6f82e982f182be8149",
+          "output_hex": "82c782a482e282e78fad82b582cd926d82c182c482a282e982e782b582a282c881630a82c882e782ce8141918182ad82b182cc93ec926e92868a4382f08f6f82e982f182be8149",
+          "output_text": "どうやら少しは知っているらしいな…\nならば、早くこの南地中海を出るんだ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "536f20796f75206b6e6f7720736f6d657468696e672e2e2e200a205468656e206c6561766520746865736520736f75746865726e20776174657273212020202020202020202020",
+          "output_hex": "536f20796f75206b6e6f7720736f6d657468696e672e2e2e200a205468656e206c6561766520746865736520736f75746865726e20776174657273212020202020202020202020",
+          "output_text": "So you know something... \n Then leave these southern waters!           ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0059",
+      "next_storage_speech": "DK4_MES_B31_R0066",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:71}Sounds like you do know a little... Then get out of the southern Mediterranean, and fast!",
+      "source_meaning": "The port worker infers that Lil knows something,and urges her to leave the southern Mediterranean quickly.",
+      "localization_note": "Preserve the qualified inference,a little,andthe explicit region andurgency. Sounds like fits his rough conversation better than formal exposition. This follows Lil recognition onthe earlier-warning branch;it does not prove that she already knows the Pirate Kings identity.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0066",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 66,
+      "current_record_index": 66,
+      "source_reference": {
+        "offset": 569,
+        "bytes": 37,
+        "header_offset": 564
+      },
+      "current_reference": {
+        "offset": 569,
+        "bytes": 37,
+        "header_offset": 564
+      },
+      "source_hex": "7181778a4391af89a4817882c982cd8ee882f08f6f82b782f182b682e182c882a282bc8149",
+      "current_hex": "71446f206e6f74206368616c6c656e67652074686520506972617465204b696e6721202020",
+      "source_Japanese": "『海賊王』には手を出すんじゃないぞ！",
+      "current_English": "Do not challenge the Pirate King!   ",
+      "source_complete_preamble_hex": "0040ffff0071",
+      "source_presentation_prefix_hex": "71",
+      "speaker": "Port Worker",
+      "original_actor_ID": 113,
+      "kind": "progressive",
+      "native_command_extent": 44,
+      "ancestor_0100_offsets": [
+        444
+      ],
+      "spoken_sequence_index": 9,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "81778a4391af89a4817882c982cd8ee882f08f6f82b782f182b682e182c882a282bc8149",
+          "output_hex": "81778a4391af89a4817882c982cd8ee882f08f6f82b782f182b682e182c882a282bc8149",
+          "output_text": "『海賊王』には手を出すんじゃないぞ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "446f206e6f74206368616c6c656e67652074686520506972617465204b696e6721202020",
+          "output_hex": "446f206e6f74206368616c6c656e67652074686520506972617465204b696e6721202020",
+          "output_text": "Do not challenge the Pirate King!   ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0063",
+      "next_storage_speech": "DK4_MES_B31_R0078",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:71}Don't mess with the Pirate King!",
+      "source_meaning": "The port worker warns them not to interfere with orchallenge the Pirate King.",
+      "localization_note": "Use the natural American warning Dont mess with for te o dasu. It preserves the strong hands-off meaning andrough voice;the old Do not challenge was accurate butstiff for this speaker. No battle orattack is promised.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0078",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 78,
+      "current_record_index": 78,
+      "source_reference": {
+        "offset": 633,
+        "bytes": 75,
+        "header_offset": 628
+      },
+      "current_reference": {
+        "offset": 633,
+        "bytes": 75,
+        "header_offset": 628
+      },
+      "source_hex": "0481778a4391af89a4817881638148814082b18141957c82a282c582b782cb82a60a464982b382f10a82a882c682c882b582ad817792898d90817882c98f5d82a282dc82b582e582a482e6",
+      "current_hex": "0427506972617465204b696e67272e2e2e3f20532d73636172792e200a2046492c206c65742773206865656420746865207761726e696e672e202020202020202020202020202020202020",
+      "source_Japanese": "『海賊王』…？　こ、怖いですねえ\nFIさん\nおとなしく『忠告』に従いましょうよ",
+      "current_English": "'Pirate King'...? S-scary. \n FI, let's heed the warning.                  ",
+      "source_complete_preamble_hex": "0040ffff0004",
+      "source_presentation_prefix_hex": "04",
+      "speaker": "Janus Pasar",
+      "original_actor_ID": 4,
+      "kind": "progressive",
+      "native_command_extent": 82,
+      "ancestor_0100_offsets": [
+        444,
+        624
+      ],
+      "spoken_sequence_index": 10,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "81778a4391af89a4817881638148814082b18141957c82a282c582b782cb82a60a464982b382f10a82a882c682c882b582ad817792898d90817882c98f5d82a282dc82b582e582a482e6",
+          "output_hex": "81778a4391af89a4817881638148814082b18141957c82a282c582b782cb82a60a4c696c82b382f10a82a882c682c882b582ad817792898d90817882c98f5d82a282dc82b582e582a482e6",
+          "output_text": "『海賊王』…？　こ、怖いですねえ\nLilさん\nおとなしく『忠告』に従いましょうよ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "27506972617465204b696e67272e2e2e3f20532d73636172792e200a2046492c206c65742773206865656420746865207761726e696e672e202020202020202020202020202020202020",
+          "output_hex": "27506972617465204b696e67272e2e2e3f20532d73636172792e200a204c696c2c206c65742773206865656420746865207761726e696e672e202020202020202020202020202020202020",
+          "output_text": "'Pirate King'...? S-scary. \n Lil, let's heed the warning.                  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0066",
+      "next_storage_speech": "DK4_MES_B31_R0093",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:04}The Pirate King...? Th-that's scary, {MACRO:FI}. Let's just do as we were warned.",
+      "source_meaning": "Janus stammers fearfully about the Pirate King,addressing Lil politely,and suggests quietly following the warning.",
+      "localization_note": "Restore a complete naturally stammered reaction andthe cautious,compliant proposal. Keep the exact original FI runtime name andomit an invented English title for san. The warning remains the known advice;do not change his frightened suggestion into a selected player action.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B31_R0093",
+      "file_path": "/data/SC2.DK4",
+      "block": 31,
+      "source_record_index": 93,
+      "current_record_index": 93,
+      "source_reference": {
+        "offset": 739,
+        "bytes": 27,
+        "header_offset": 734
+      },
+      "current_reference": {
+        "offset": 739,
+        "bytes": 27,
+        "header_offset": 734
+      },
+      "source_hex": "108163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+      "current_hex": "102e2e2e28436f756c642069742062652074686174206d616e3f29",
+      "source_Japanese": "…（まさかあの男のことか）",
+      "current_English": "...(Could it be that man?)",
+      "source_complete_preamble_hex": "0040ffff0010",
+      "source_presentation_prefix_hex": "10",
+      "speaker": "Gerhard Ardelknatts",
+      "original_actor_ID": 16,
+      "kind": "progressive",
+      "native_command_extent": 34,
+      "ancestor_0100_offsets": [
+        444,
+        730
+      ],
+      "spoken_sequence_index": 11,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+          "output_hex": "8163816982dc82b382a982a082cc926a82cc82b182c682a9816a",
+          "output_text": "…（まさかあの男のことか）",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "2e2e2e28436f756c642069742062652074686174206d616e3f29",
+          "output_hex": "2e2e2e28436f756c642069742062652074686174206d616e3f29",
+          "output_text": "...(Could it be that man?)",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0078",
+      "next_storage_speech": "DK4_MES_B132_R0006",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:10}...(Could it be that man?)",
+      "source_meaning": "Gerhard privately wonders,in disbelief,whether the Pirate King is a certain man.",
+      "localization_note": "Retain the already natural,uncertain inner thought. Although the source wording matches R48,this is a separate conditional object onthe earlier-warning branch andreceives its own review. Do not name the man ormerge the two records.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the already natural,uncertain inner thought. Although the source wording matches R48,this is a separate conditional object onthe earlier-warning branch andreceives its own review. Do not name the man ormerge the two records."
+    },
+    {
+      "id": "DK4_MES_B132_R0006",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 6,
+      "current_record_index": 6,
+      "source_reference": {
+        "offset": 17,
+        "bytes": 79,
+        "header_offset": 12
+      },
+      "current_reference": {
+        "offset": 17,
+        "bytes": 79,
+        "header_offset": 12
+      },
+      "source_hex": "5c82a88fec82bf82e182f182bd82bf814182e082b582a982b582c40a93ec926e92868a4382c58fa4948482f082b582e682a482c182c40a8cbe82a482f182b682e182c882a282be82eb82a482c88148",
+      "current_hex": "5c596f75277265206e6f742068656164656420746f2074686520736f75746865726e0a204d65646974657272616e65616e20746f2074726164652c2061726520796f753f2020202020202020202020",
+      "source_Japanese": "お嬢ちゃんたち、もしかして\n南地中海で商売をしようって\n言うんじゃないだろうな？",
+      "current_English": "You're not headed to the southern\n Mediterranean to trade, are you?           ",
+      "source_complete_preamble_hex": "0040ffff005c",
+      "source_presentation_prefix_hex": "5c",
+      "speaker": "Barkeep",
+      "original_actor_ID": 92,
+      "kind": "progressive",
+      "native_command_extent": 86,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 0,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a88fec82bf82e182f182bd82bf814182e082b582a982b582c40a93ec926e92868a4382c58fa4948482f082b582e682a482c182c40a8cbe82a482f182b682e182c882a282be82eb82a482c88148",
+          "output_hex": "82a88fec82bf82e182f182bd82bf814182e082b582a982b582c40a93ec926e92868a4382c58fa4948482f082b582e682a482c182c40a8cbe82a482f182b682e182c882a282be82eb82a482c88148",
+          "output_text": "お嬢ちゃんたち、もしかして\n南地中海で商売をしようって\n言うんじゃないだろうな？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f75277265206e6f742068656164656420746f2074686520736f75746865726e0a204d65646974657272616e65616e20746f2074726164652c2061726520796f753f2020202020202020202020",
+          "output_hex": "596f75277265206e6f742068656164656420746f2074686520736f75746865726e0a204d65646974657272616e65616e20746f2074726164652c2061726520796f753f2020202020202020202020",
+          "output_text": "You're not headed to the southern\n Mediterranean to trade, are you?           ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B31_R0093",
+      "next_storage_speech": "DK4_MES_B132_R0010",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:5C}You're not headed to the southern Mediterranean to trade, are you?",
+      "source_meaning": "The barkeep asks the young woman andher companions whether they are planning to trade in the southern Mediterranean.",
+      "localization_note": "Retain the natural rhetorical negative question. Headed there to trade conveys their intended business travel. English you covers the group;there is no need to turn the familiar ojou-chan address into a new rank orclaim that every companion is female.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural rhetorical negative question. Headed there to trade conveys their intended business travel. English you covers the group;there is no need to turn the familiar ojou-chan address into a new rank orclaim that every companion is female."
+    },
+    {
+      "id": "DK4_MES_B132_R0010",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 10,
+      "current_record_index": 10,
+      "source_reference": {
+        "offset": 103,
+        "bytes": 34,
+        "header_offset": 98
+      },
+      "current_reference": {
+        "offset": 103,
+        "bytes": 34,
+        "header_offset": 98
+      },
+      "source_hex": "0282c782a482b582c481480a93ec926e92868a4382c989bd82a982a082e982cc8148",
+      "current_hex": "025768793f2057686174277320646f776e2074686572653f20202020202020202020",
+      "source_Japanese": "どうして？\n南地中海に何かあるの？",
+      "current_English": "Why? What's down there?          ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 40,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 1,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c782a482b582c481480a93ec926e92868a4382c989bd82a982a082e982cc8148",
+          "output_hex": "82c782a482b582c481480a93ec926e92868a4382c989bd82a982a082e982cc8148",
+          "output_text": "どうして？\n南地中海に何かあるの？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5768793f2057686174277320646f776e2074686572653f20202020202020202020",
+          "output_hex": "5768793f2057686174277320646f776e2074686572653f20202020202020202020",
+          "output_text": "Why? What's down there?          ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0006",
+      "next_storage_speech": "DK4_MES_B132_R0021",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Why? What's down there?",
+      "source_meaning": "Lil asks why,andwhether there is something in the southern Mediterranean.",
+      "localization_note": "Retain the idiomatic current questions. Down there clearly refers to the region just named bythe barkeep,andthe line asks for an explanation without assuming danger yet.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the idiomatic current questions. Down there clearly refers to the region just named bythe barkeep,andthe line asks for an explanation without assuming danger yet."
+    },
+    {
+      "id": "DK4_MES_B132_R0021",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 21,
+      "current_record_index": 21,
+      "source_reference": {
+        "offset": 163,
+        "bytes": 50,
+        "header_offset": 158
+      },
+      "current_reference": {
+        "offset": 163,
+        "bytes": 50,
+        "header_offset": 158
+      },
+      "source_hex": "1493ec926e92868a4382cd82a282a289d282ac82c982c882e982f182be0a8ca993a682b78ee882cd82cb82a682be82eb8149",
+      "current_hex": "14536f75746865726e20747261646520706179732077656c6c21204c6574277320676f212020202020202020202020202020",
+      "source_Japanese": "南地中海はいい稼ぎになるんだ\n見逃す手はねえだろ！",
+      "current_English": "Southern trade pays well! Let's go!              ",
+      "source_complete_preamble_hex": "0040ffff0014",
+      "source_presentation_prefix_hex": "14",
+      "speaker": "Fernando Dias",
+      "original_actor_ID": 20,
+      "kind": "progressive",
+      "native_command_extent": 56,
+      "ancestor_0100_offsets": [
+        154
+      ],
+      "spoken_sequence_index": 2,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "93ec926e92868a4382cd82a282a289d282ac82c982c882e982f182be0a8ca993a682b78ee882cd82cb82a682be82eb8149",
+          "output_hex": "93ec926e92868a4382cd82a282a289d282ac82c982c882e982f182be0a8ca993a682b78ee882cd82cb82a682be82eb8149",
+          "output_text": "南地中海はいい稼ぎになるんだ\n見逃す手はねえだろ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "536f75746865726e20747261646520706179732077656c6c21204c6574277320676f212020202020202020202020202020",
+          "output_hex": "536f75746865726e20747261646520706179732077656c6c21204c6574277320676f212020202020202020202020202020",
+          "output_text": "Southern trade pays well! Let's go!              ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0010",
+      "next_storage_speech": "DK4_MES_B132_R0027",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:14}There's good money to be made in the southern Mediterranean! We can't pass that up!",
+      "source_meaning": "Fernando says that the southern Mediterranean offers good earnings,andthat they cannot let this opportunity pass.",
+      "localization_note": "Restore the full region andthe forceful cannot-pass-up-opportunity reasoning. The older Lets go substituted a direct travel proposal. Keep his blunt commercial enthusiasm without guaranteeing an actual profit orforcing the players next action.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B132_R0027",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 27,
+      "current_record_index": 27,
+      "source_reference": {
+        "offset": 223,
+        "bytes": 48,
+        "header_offset": 218
+      },
+      "current_reference": {
+        "offset": 223,
+        "bytes": 48,
+        "header_offset": 218
+      },
+      "source_hex": "5c82e282df82c682ab82c881630a93ec926e92868a4382c582cd8fa4948482f082b782e982f182b682e182c882a282e6",
+      "current_hex": "5c446f6e277420747261646520696e2074686520736f75746865726e0a204d65646974657272616e65616e2e20202020",
+      "source_Japanese": "やめときな…\n南地中海では商売をするんじゃないよ",
+      "current_English": "Don't trade in the southern\n Mediterranean.    ",
+      "source_complete_preamble_hex": "0040ffff005c",
+      "source_presentation_prefix_hex": "5c",
+      "speaker": "Barkeep",
+      "original_actor_ID": 92,
+      "kind": "progressive",
+      "native_command_extent": 54,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 3,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82e282df82c682ab82c881630a93ec926e92868a4382c582cd8fa4948482f082b782e982f182b682e182c882a282e6",
+          "output_hex": "82e282df82c682ab82c881630a93ec926e92868a4382c582cd8fa4948482f082b782e982f182b682e182c882a282e6",
+          "output_text": "やめときな…\n南地中海では商売をするんじゃないよ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "446f6e277420747261646520696e2074686520736f75746865726e0a204d65646974657272616e65616e2e20202020",
+          "output_hex": "446f6e277420747261646520696e2074686520736f75746865726e0a204d65646974657272616e65616e2e20202020",
+          "output_text": "Don't trade in the southern\n Mediterranean.    ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0021",
+      "next_storage_speech": "DK4_MES_B132_R0030",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:5C}Don't do it... Don't trade in the southern Mediterranean.",
+      "source_meaning": "The barkeep tells them to abandon the idea,andnot to trade in the southern Mediterranean.",
+      "localization_note": "Restore the initial discouragement andominous spoken pause before the explicit repeated prohibition. Keep the clear region andthe advisory imperative;do not invent a reason before he gives one.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B132_R0030",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 30,
+      "current_record_index": 30,
+      "source_reference": {
+        "offset": 277,
+        "bytes": 29,
+        "header_offset": 272
+      },
+      "current_reference": {
+        "offset": 277,
+        "bytes": 29,
+        "header_offset": 272
+      },
+      "source_hex": "0282bf82e582c182c6814182c782a482a282a482b182c682e681498148",
+      "current_hex": "025768617420646f20796f75206d65616e3f2120202020202020202020",
+      "source_Japanese": "ちょっと、どういうことよ！？",
+      "current_English": "What do you mean?!          ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 36,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 4,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82bf82e582c182c6814182c782a482a282a482b182c682e681498148",
+          "output_hex": "82bf82e582c182c6814182c782a482a282a482b182c682e681498148",
+          "output_text": "ちょっと、どういうことよ！？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5768617420646f20796f75206d65616e3f2120202020202020202020",
+          "output_hex": "5768617420646f20796f75206d65616e3f2120202020202020202020",
+          "output_text": "What do you mean?!          ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0027",
+      "next_storage_speech": "DK4_MES_B132_R0034",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Wait, what do you mean?!",
+      "source_meaning": "Lil interrupts anddemands to know what he means.",
+      "localization_note": "Restore chotto as Wait to carry her abrupt challenge,then keep the natural current question andits force. No new accusation is added.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B132_R0034",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 34,
+      "current_record_index": 34,
+      "source_reference": {
+        "offset": 313,
+        "bytes": 48,
+        "header_offset": 308
+      },
+      "current_reference": {
+        "offset": 313,
+        "bytes": 48,
+        "header_offset": 308
+      },
+      "source_hex": "5c82a282a282c8814182a882b682b382f182cd92898d9082b582bd82bc0a965982ea82e982f182b682e182c882a282e6",
+      "current_hex": "5c546861742773206d79207761726e696e672e2052656d656d6265722069742120202020202020202020202020202020",
+      "source_Japanese": "いいな、おじさんは忠告したぞ\n忘れるんじゃないよ",
+      "current_English": "That's my warning. Remember it!                ",
+      "source_complete_preamble_hex": "0040ffff005c",
+      "source_presentation_prefix_hex": "5c",
+      "speaker": "Barkeep",
+      "original_actor_ID": 92,
+      "kind": "progressive",
+      "native_command_extent": 54,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 5,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a282a282c8814182a882b682b382f182cd92898d9082b582bd82bc0a965982ea82e982f182b682e182c882a282e6",
+          "output_hex": "82a282a282c8814182a882b682b382f182cd92898d9082b582bd82bc0a965982ea82e982f182b682e182c882a282e6",
+          "output_text": "いいな、おじさんは忠告したぞ\n忘れるんじゃないよ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "546861742773206d79207761726e696e672e2052656d656d6265722069742120202020202020202020202020202020",
+          "output_hex": "546861742773206d79207761726e696e672e2052656d656d6265722069742120202020202020202020202020202020",
+          "output_text": "That's my warning. Remember it!                ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0030",
+      "next_storage_speech": "DK4_MES_B132_R0045",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:5C}You hear me? I've warned you. Don't forget it.",
+      "source_meaning": "The barkeep insists that he has warned them andtells them not to forget it.",
+      "localization_note": "Restore the attention check andthe completed warning. Ojisan is the barkeeps familiar self-reference as an older man,not proof that he is anyones uncle;English I conveys it without invented kinship. Keep the emphatic concern rather than adding a specific danger.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    },
+    {
+      "id": "DK4_MES_B132_R0045",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 45,
+      "current_record_index": 45,
+      "source_reference": {
+        "offset": 387,
+        "bytes": 40,
+        "header_offset": 382
+      },
+      "current_reference": {
+        "offset": 387,
+        "bytes": 40,
+        "header_offset": 382
+      },
+      "source_hex": "0982c782a482a282a482b182c682c882f182be82eb82a481480a82c782a482b782e9814146498148",
+      "current_hex": "09576861742077617320746861742061626f75743f2057686174206e6f772c2046493f2020202020",
+      "source_Japanese": "どういうことなんだろう？\nどうする、FI？",
+      "current_English": "What was that about? What now, FI?     ",
+      "source_complete_preamble_hex": "0040ffff0009",
+      "source_presentation_prefix_hex": "09",
+      "speaker": "Camille",
+      "original_actor_ID": 9,
+      "kind": "progressive",
+      "native_command_extent": 46,
+      "ancestor_0100_offsets": [
+        378
+      ],
+      "spoken_sequence_index": 6,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c782a482a282a482b182c682c882f182be82eb82a481480a82c782a482b782e9814146498148",
+          "output_hex": "82c782a482a282a482b182c682c882f182be82eb82a481480a82c782a482b782e981414c696c8148",
+          "output_text": "どういうことなんだろう？\nどうする、Lil？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "576861742077617320746861742061626f75743f2057686174206e6f772c2046493f2020202020",
+          "output_hex": "576861742077617320746861742061626f75743f2057686174206e6f772c204c696c3f2020202020",
+          "output_text": "What was that about? What now, Lil?     ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0034",
+      "next_storage_speech": "DK4_MES_B132_R0051",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:09}What was that about? What now, {MACRO:FI}?",
+      "source_meaning": "Camille wonders what the warning means,andasks Lil what she will do.",
+      "localization_note": "Retain the natural compact questions. What now directly invites Lil next decision in this exchange,anddoes not select an action. Preserve the one original FI runtime name exactly;do not add a title orrelationship.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending",
+      "fresh_retained_wording_justification": "Retain the natural compact questions. What now directly invites Lil next decision in this exchange,anddoes not select an action. Preserve the one original FI runtime name exactly;do not add a title orrelationship."
+    },
+    {
+      "id": "DK4_MES_B132_R0051",
+      "file_path": "/data/SC2.DK4",
+      "block": 132,
+      "source_record_index": 51,
+      "current_record_index": 51,
+      "source_reference": {
+        "offset": 437,
+        "bytes": 40,
+        "header_offset": 432
+      },
+      "current_reference": {
+        "offset": 437,
+        "bytes": 40,
+        "header_offset": 432
+      },
+      "source_hex": "0293ec926e92868a4382c982cd8d7382ad82c881630a82c782a482a282a482b182c682e681638148",
+      "current_hex": "0253746179206f7574206f6620736f75746865726e207761746572732e2e2e205768793f20202020",
+      "source_Japanese": "南地中海には行くな…\nどういうことよ…？",
+      "current_English": "Stay out of southern waters... Why?    ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 46,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 7,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "93ec926e92868a4382c982cd8d7382ad82c881630a82c782a482a282a482b182c682e681638148",
+          "output_hex": "93ec926e92868a4382c982cd8d7382ad82c881630a82c782a482a282a482b182c682e681638148",
+          "output_text": "南地中海には行くな…\nどういうことよ…？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "53746179206f7574206f6620736f75746865726e207761746572732e2e2e205768793f20202020",
+          "output_hex": "53746179206f7574206f6620736f75746865726e207761746572732e2e2e205768793f20202020",
+          "output_text": "Stay out of southern waters... Why?    ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B132_R0045",
+      "next_storage_speech": null,
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}Don't go to the southern Mediterranean... What does he mean...?",
+      "source_meaning": "Lil repeats the injunction not to go to the southern Mediterranean,andwonders what the barkeep means.",
+      "localization_note": "Restore the exact region andher puzzled question about the warnings meaning. Keep the trailing uncertainty andspoken repetition;do not turn it into a known Pirate King threat before the later port-worker exchange.",
+      "editorial_decision": "revise",
+      "context": "Complete original B30Valdes-defeat/Clifford-farewell,B31Port-Worker/Pirate-King-warning and B132earlier Barkeep Egypt-warning exchanges,including every stored conditional reply and two separate Gerhard thoughts. All34objects are native4000speeches,not CSV guesses. Each complete0040ffff00plusprefix is preserved. Original ordinary selectors map2Lil,4Janus,9Camille,16Gerhard,20Fernando,28JamesClifford,31PedroValdes,92Barkeep and113PortWorker. Catalog names are historical native outputs,not actual observed nameplates. Source/current native command shapes andEV2match. Existing three reviewed-name catalog calls remain explicitly owned;all other selected source instruction spans are clean/current/historical exact. Sixty-eight original macro probes preserve whole4MiB/input guards andABI using historical copied LondonRAM;no current whole pipeline,pixel oractualB30/B31activation claim. Original event30/31/132dependency records are bound buttheir historical flags do not establish current eligibility. B30has two alternative alliance descriptions andthe later Lil/Clifford exchange;storage order is not unconditional play order. B31has optional Camille/Janus/Gerhard replies. Its native8100command at132calls the original event-completion getter with argument132;the positive result leads to Lil recognition ofthe prior warning. CompleteB132is the original Barkeep southern-Mediterranean warning,not a Clifford exchange. B132must-not-completed dependencies31/32also support the earlier/later relationship. Further native predicate/control proof is required before approving this attribution. The currentEnglish Clifford name at B31R59is unsupported;remove it. Barkeep self-reference ojisan is not kinship. The B26complete alliance conversation remains contextual reference only. Preserve military defeat versus alliance causation,Clifford dependence onroyal orders,Lil uneasy concern,qualified hope,rough PortWorker warning,Janus stammer andGerhard silent inference. Do not invent a male monarch,kinship,piracy byLil,a battle result beyondsource,or a guaranteed future war. Fresh prose,branch/control proofs,current native fonts,scoped113/28display rules,representative reconciliation andregistered release remain pending. This record is reviewed as part ofits complete native exchange andconditional path;the recorded storage neighbors do not imply consecutive reachability.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-approved;native-formatting-reference-representative-release-pending"
+    }
+  ],
+  "revised": 22,
+  "retained": 12,
+  "formatting_review_pending": true,
+  "source_prose_credit_added": 0,
+  "completion_credit_added": 0,
+  "no_authored_line_breaks_or_padding": true,
+  "actual_B30_B31_B132_IDs": [],
+  "new_emulator_runs": 0,
+  "full_goal_complete": false
+}

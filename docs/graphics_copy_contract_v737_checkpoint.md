@@ -1,0 +1,15 @@
+# V737: final registered graphics copy preservation
+
+The final builder now verifies all five registered embedded graphics copies after later stages: complete Marker/Frame halves, name-entry plaques, Press a button and the four-bank START/touch prompt. Source allocation/directories/headers, palettes, unowned blocks and OBJ prefix/suffix/padding are protected; raw19 stays explicitly delegated to the adjacent final raw-art gate. Twelve in-memory glyph/symbol/palette/header/Japanese-reversion/bank/padding/prefix and matching-both-copy corruptions pass the older final checks and fail the new gate. No damaged ROM saved. Legitimate later Marker/name-gradient changes follow registered source-to-target config chains. Full470-batch/114-layer registered reproduction is byte-exact V712; previous paths, records, relocations and checks remain exact. Original manifest/patch/registry/canonical and art unchanged; reproduction manifest records the added gate. No new gameplay or consumer/readability credit. Twenty-eight completed checks carry forward; five groups and original18/22 audit objects remain open/exact. E evidence archive verified; goal active, exclusions/marks/older-record follow-up retained. See [V737 checkpoint](graphics_copy_contract_v737_checkpoint.md).
+
+## Confirmed gap and correction
+
+The old final menu, plaque and raw-comic checks accepted a changed embedded Frame caption pixel. That was a missing final guard, not a discovered defect in the unchanged V712 ROM. The sync stages already checked their own outputs; a later stage could still overwrite those copies afterward. The new read-only guard runs after all release stages.
+
+`dk4tool/graphics/copy_contract.py` derives its families from the selected batches. It compares all packed pixels against final loose PXLs, reconstructs original unowned storage and metadata, and independently maps each banked destination byte back to the logical source pixels. The early sync reference hashes legitimately precede Marker price/header repairs and name gradients; selected source/target-locked configs provide the exact transition chains. No final hash is silently exempted.
+
+The rebuild uses the existing registered `all-routes-unified-v712` profile and all 470 batches/114 accepted layers. It is a reproduction artifact on E, not a new release or canonical promotion. Its ROM bytes equal the existing candidate, so the existing exact V712 patch and visual evidence remain applicable; no redundant emulator run is claimed. Only the reproduction manifest gains the new preservation result.
+
+## Scope still open
+
+Original comic playback/readability, ordinary small-control and village-card triggers, other legacy display relationships, and final user review remain unresolved. These checks establish preservation, not availability or native display behavior. Original 18 overall plaque/hint objects remain incomplete. Online body exclusions and approved brown marks are preserved; older record-based review remains due after goal completion.

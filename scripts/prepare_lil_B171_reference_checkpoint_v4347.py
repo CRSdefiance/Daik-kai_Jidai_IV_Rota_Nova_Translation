@@ -1,0 +1,50 @@
+"""Prepare B171 reference/gameplay checkpoint without adding completion credit."""
+from pathlib import Path
+from scripts.prepare_lil_B156_layout_v3705 import derive
+from scripts.verify_village_wrap_v608 import save
+
+ROOT=Path('work/analysis/lil_B171_reference_checkpoint_tools_v4347')
+NEXT=('Create the atomic B171 compiler with source-bound negative controls, register its profile after the complete V4303 stack, build only through build_integrated_release.py, verify the exact clean-input patch and fresh registered New Game/town startup, then integrate/complete the37 pending records. Contextual/native/relocation/reference/content proofs are sealed; do not repeat without a change. Continue B172-B180 and every wider storyline/shared town/shop/random/Help/player-facing prose family. Preserve promoted main V4303 and every ROM, translation, draft, executed producer/proof/failure. Graphics/all18 plaques and the later older-record technical re-audit remain separate and open.')
+SUMMARY='''V4347 seals37 whole-exchange Lil B171 Sanghyeon visitation and morning follow-up reviews for registered integration:24 revisions and13 individually justified retentions. Clean Japanese and individual fresh glosses preceded predecessor English comparison. Preserve the visitor's respectful/formal call and FI address,introduction,shared teacher and senior training relationship,self-blame for Yifa's unruliness,unauthorized mountain departure to escape training and foreign travel. Preserve this scene's newly supplied unnamed-country travel prohibition,Yifa's apparent ignorance,grave violation and expulsion,formal severed training bond,then childhood upbringing like brother and sister,protective worry,humble guidance request,conditional training/teacher message and farewell. Add no biological kinship,romance,teacher identity/gender,country name,feudal rank,school name,further punishment or lost powers. Preserve Lil's dream uncertainty,Yifa's exuberant interrupted greeting,sensed presence and familiar warmth,her own arts explanation,Lil relaying only training instructions,and the work-first/training-second comic reminder. Spoken Sanghyeon does not add catalogue-only Kan. B170 is not retroactively expanded with B171 facts. Every retained call,pause,reaction,question,closing and siblinglike simile has an individual exact-reference reason.
+
+All37 complete216x64 native planes,296 fresh logical/compiled and148 stored alignment cases pass complete leading/internal/trailing glyphs,unique cells,zero row origins,four-row bounds and single-page consumption. Stored proofs include88 fresh parity-tail cases/22 planes and60 exact reused cases/15 planes. All five native andseven actual sheets were viewed. Fifteen source-consumer,one missing-FI and14 formatter rejection controls pass;16 narrow row-count notes exempt no other check. No authored breaks,padding,wording waiver or shared guard/metric change.
+
+Only B171 changes from2120 to2312 stored bytes;logical2120 becomes2310. All45 commands,37 complete speech preambles,selectors02/19/51,eight nonrelative leaves,4500/6000/4621/61FF,resource6325,C200 and both source ends2112/2116 mapped to2302/2306 remain exact. There are no relative sites,predicates,FE,typed choices,2000 pause or source A000. Inverse restoration recovers every predecessor logical byte;all335 other SC2 blocks and every other file/component,ARM9,COMMON,font,graphic,cache/BSS and123040 staged bytes remain exact. Both images pass336 original whole loads/cache hits and672 parent modes;three entry censuses,four poisoned-guard end decodes and37 relocated dispatches pass. Original C200 request[1,0,13,0,0,0,1],owned queue writes and unowned4MiB are preserved. Ten resource boundary cases andfour presentation structural cases are reused only by exact command/runtime binding. Six original progressive/full-name consumers bind Lil Argot,Yifa Sol,Sanghyeon Kan and restore owned scratch/rings and all4MiB. Static selector51 is actor81,not literal Q. Source event171/action172 is bound without claiming earned eligibility.
+
+Two20001-frame Japanese/English cold boots retain all45 source commands plus nine original B22 init commands/four A000s. Both observe all37 speeches and53 fixture commands,without omission,flattening or forced conditions. Every complete English native ink/gray plane and paired Japanese portrait/name/upper region matches. FI1 actually displays. All seven actual sheets,six English full screens andfour Japanese counterparts were viewed. Original black upper presentation,bedroom fade,waking and morning exchange are observed. First end2112 returns11737/11735;whole RGB town11770 matches. Second end2116 has stored/native-decoder coverage only. Initialized Amsterdam is a content fixture,not a source-location claim. Natural event171 activation,earned flags,full route and hardware verification are not claimed.
+
+The same following B120 command shape ends16536/16533 without new editorial credit.59 later sampled sailing regions differ,including boat/sea animation and supplies. Two focused repeats reproduce each same-ROM command timing and requested framebuffer exactly. Persistent funds/models/actor/town/item/goods/tasks/calendar fingerprints agree at3130,7510,11770 and16450;whole1A04 actor models and captain2 match at11770. PRNG agrees at3130 and differs in later samples. Twenty-two cross-language command timestamp differences include16 speeches andsix presentation/resource/C200/end commands;order,results and source effects remain intact. Original wait/yield/discarded-RAND/generator/wrapper spans are clean-source exact and rebound to documented V824 scheduler entropy. The pattern is consistent with that mechanism;no new every-RAND causal trace,equal-world claim,seed/instruction/outcome override or RAM fixture is made. Later19990 model/persistent fingerprints differ and remain explicitly recorded.
+
+Coverage stays5762 fresh rereads:5725 completed/integrated and37 pending;source/prose5765,including3909 SC2 and64 SC3;route reviewed/completed4163/4126. Historical completed decisions remain3635 revised/2090 retained. New source/prose and completion credit are both0. Promoted main V4303 remains546 manuscript batches/114 accepted layers with its exact clean-input patch. Registry,profile,builder,main pointer,immutable construction input and every earlier package stay unchanged. Three new research/content ROMs are pinned;every generated ROM and translation is preserved. All four cold boots are terminal. Registered compiler,integration,patch and startup checks remain pending.
+
+Remaining B172-B180 has161 physical speeches and zero typed-choice leads,not a full-project denominator. Every wider editorial family stays open. Preserve COMMON750-752,canonical Maria32 SC3B97,SourceItems/LocalProduct,five named-target leads,exact-record Proof consistency,Samwell full-catalogue middle-field lead and B157 provenance amendment. Graphics/all18 plaques remain separate;retain the later older-record technical re-audit/queued0D gap. Full goal active.'''
+
+if __name__=='__main__':
+    assert not ROOT.exists()
+    old=Path('scripts/checkpoint_lil_B170_references_v4299.py').read_text(encoding='utf-8')
+    start=old.index('NEXT = ');stop=old.index('\n\n\ndef encoded',start)
+    tool=derive('scripts/checkpoint_lil_B170_references_v4299.py','scripts/checkpoint_lil_B171_references_v4347.py',{
+        old[start:stop]:'NEXT = '+repr(NEXT)+'\nSUMMARY = '+repr(SUMMARY),
+        'B170':'B171','lil_B170':'lil_B171','v4299':'v4347','V4299':'V4347',
+        'editorial_manuscript_v5':'editorial_manuscript_v4','editorial_manuscript_v6':'editorial_manuscript_v5',
+        'reference_approval_v4298':'reference_approval_v4346',
+        'Lil-B170-Yifa-collision-apology-Taoist-training-resolve-joining33':'Lil-B171-Sanghyeon-dream-visit-expulsion-siblinglike-bond-training-work37',
+        'promotion_v4289':'promotion_v4331',
+        "len(approval['actual_sampled_display_IDs']) == 33":"len(approval['actual_sampled_display_IDs']) == 37",
+        '(5725, 5692, 33)':'(5762, 5725, 37)',
+        "coverage_note='5725 rereads/5692 integrated/33 pending;B170 native/reference/representative approved. No additional review/completion credit;registered integration remains.'":"coverage_note='5762 rereads/5725 integrated/37 pending;B171 native/reference/representative approved. No additional review/completion credit;registered integration remains.'",
+        '3-reviewed-COMMON-incomplete;33-Lil-B170-reference-approved-pending-registered-release':'3-reviewed-COMMON-incomplete;37-Lil-B171-reference-approved-pending-registered-release',
+        'actual_complete_native_panels=33':'actual_complete_native_panels=37',
+        'unfinished_editorial_scope_v4279':'unfinished_editorial_scope_v4329',
+        'display_fixture_v4291':'display_fixture_v4340',
+        "for row in fixture['fixtures']:":"for row in fixture['fixtures'] + [read('work/analysis/lil_B171_research_v4335/research_image_receipt.json')]:",
+        'assert pinned == 2':'assert pinned == 3',
+        'fresh_reread=5725, integrated=5692, pending=33, source_prose=5728':'fresh_reread=5762, integrated=5725, pending=37, source_prose=5765',
+        'reviewed_sheets=6':'reviewed_sheets=7','ROMs_pinned=2':'ROMs_pinned=3',
+        '33 B170 reviews reference/gameplay approved':'37 B171 reviews reference/gameplay approved',
+        'V4299 checkpoint complete:33 reference-approved pending records;33 actual panels/four boots;2 ROMs pinned. MainV4251,registry,builder and all credit counts preserved.':'V4347 checkpoint complete:37 reference-approved pending records;37 actual panels/four boots;3 ROMs pinned. MainV4303,registry,builder and all credit counts preserved.',
+    })
+    ROOT.mkdir(parents=True)
+    save(ROOT/'source_derivation.json',dict(tool=tool,new_source_prose_reviews=0,new_completed_records=0,
+        fresh_reread=5762,integrated=5725,pending=37,promoted_main='V4303',full_goal_complete=False))
+    print('Prepared B171 reference-approved checkpoint; all counters and promoted V4303 preserved.')

@@ -1,0 +1,3 @@
+# V858: planning and finance source review
+
+V858 source/prose-reviews24 planning19/finance20 comments1447-1470:17 proposed revisions and7 retentions. Fifty original role selections cover all eight NPC voices and four real captains per duty. Drafts restore the planning/sleeping pun through dream up versus dreaming,the need for more study,schemes alongside direct tactics,each port,monthly profit,selling goods and current tentative profitability. Native formatting,registered integration and actual scenes remain pending. V855 stays current;732 complete and759 source/prose reviewed. Older750-752 and all unreviewed shared/route/player prose/raw coverage remain;graphics/all18 plaques and later older-record re-audit stay open;full goal active.

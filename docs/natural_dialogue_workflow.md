@@ -81,6 +81,13 @@ cultural information, then express them the way an American localization would.
     calibration for its presentation bytes and macro expansion lengths; after
     that, wrapping, command preservation, pair parity, and allocation are
     checked automatically for every translated record.
+13. Write literal story percentages as `percent`, rather than ASCII `%`.
+    `3% of sales` contains the valid native conversion `% o`; `1% share`
+    contains `% s`. Valid syntax does not mean the caller supplies an argument.
+    The final build checks changed English story records against clean-source
+    commands, preserving real source placeholders and source-leading `25`
+    presentation state. Do not repair this by globally escaping percent bytes;
+    review the record's consumer and express literal amounts naturally.
 
 ## Editorial gates
 
@@ -110,3 +117,30 @@ Before handoff, validate the batch, build through its registered release profile
 cold-boot the title, New Game, the complete changed scene, and the transition into the
 next scene. Never use a save state. Capture any unexpected portrait, blank box, lost
 first letter, extra page, or unnatural wrap as a release blocker.
+
+
+## Decoder-rejected native speech and late editorial layers
+
+Decoded CSV counts alone do not prove source coverage. V829 actual playback found
+SC2 B294 R73,whose mapped94 presentation byte makes whole-record CP932 decoding
+fail. Inventory raw native objects and rejected segments;classify text versus
+technical data from original consumers. Never globally strip a Shift-JIS lead.
+For a proven otherwise-missing fixed native message,a v2 record may declare
+`raw_source` with its complete exact `hex` and one `presentation_prefix_hex`.
+The route profile and actual preamble effect must already be mapped. Ordinary
+decodable records stay on the normal resolver;do not reinterpret genuine Japanese
+leading glyphs as state. The resolver fails on unmatched bytes,unknown prefixes
+and embedded unmapped controls. Speaker markup remains explicit and preserved.
+
+Frozen complete-route transforms retain their original inputs. A registered
+`late_story_editorial_release` can apply source-reviewed fixed native messages
+after those transforms,with normal natural-dialogue QA,complete current/target
+hash locks,original message headers/actors and all other bytes/command addresses
+preserved. Its batch is listed in the final manifest. Do not weaken an old source
+guard to force a new dialogue batch into an earlier stage. See V829 for the exact
+source/control,negative-case and actual rendering evidence.
+
+
+## COMMON speech macro expansion before word wrapping
+
+Before original COMMON speech macro expansion,compile new prose as one logical paragraph. A literal I immediately followed by LF can be a native pronoun command;do not prewrap before that consumer. Preserve real clean-source IC/control commands and use the mapped post-expansion formatter. Keep other consumers and historical batches on their independently verified contracts. Source-bound proof:V996 battle/declaration1889-1910. The live-glyph test catches a real ordering defect:prewrapped literal I plus LF became native pronoun bytes966C. Do not change the global I/IC guard to conceal this error;it preserves original executable controls. Compile one paragraph for this mapped speech consumer and verify the output of original expansion followed by wrapping. Embedded Deck comments,raw selectors and story profiles retain their own proven contracts. See [V996 native proof](battle_declaration_v996_native_checkpoint.md).

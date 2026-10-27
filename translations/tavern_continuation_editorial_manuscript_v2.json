@@ -1,0 +1,1692 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "research-draft-formatting-runtime-and-gameplay-pending",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_pins": [
+    {
+      "path": "work/clean.nds",
+      "ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+      "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+      "COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc"
+    },
+    {
+      "path": "out/raphael_natural_v2_accepted_base.nds",
+      "ROM_sha256": "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe",
+      "ARM9_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5",
+      "COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c"
+    },
+    {
+      "path": "out/all_routes_combined_v767_candidate.nds",
+      "ROM_sha256": "38088ce5d31506c6e5e263321f9b5457506a9377b120fc1aece4586fc3069814",
+      "ARM9_sha256": "d45104c66e5e6b4d53ef7867dac5deb9f793dd87971babf68baf7c10fd2d6f6b",
+      "COMMON_sha256": "c01129d8c31ed87a91f1975cbb1c8643b3eecdc7789856aabf35314820750d1b"
+    }
+  ],
+  "native_context_proof": "work\\analysis\\tavern_continuation_v768\\native_context_complete.json",
+  "native_context_proof_sha256": "9ee080c32c8aca520e618ea03ddbe6a499dcda0958f8c96d135dbf16c474ff2e",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_851",
+      "message_id": 851,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "257382cc8acd91e082aa0a257382c992e2949182b582c482a282e982ed",
+      "japanese": "%sの艦隊が\n%sに停泊しているわ",
+      "source_reference": {
+        "message_id": 851,
+        "block": 10,
+        "table_offset": 1318838,
+        "block_offset": 3944,
+        "copy_end": 3976,
+        "record_index": 62,
+        "start": 0,
+        "end": 29,
+        "text": null
+      },
+      "canonical_source_hex": "2573277320666c6565742069730a20646f636b65642061742025732e20",
+      "current_text_hex": "2573277320666c6565742069730a2020646f636b65642061742025732e",
+      "current_English": "%s's fleet is\n  docked at %s.",
+      "current_reference": {
+        "message_id": 851,
+        "block": 11,
+        "table_offset": 1318838,
+        "block_offset": 242,
+        "copy_end": 272,
+        "record_index": 4,
+        "start": 0,
+        "end": 29,
+        "text": null
+      },
+      "english": "%s has a fleet docked at %s.{PAD}",
+      "source_meaning": "A company fleet is anchored at the named town; relaxed feminine ending.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "town_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_852",
+      "message_id": 852,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be089dd257382cd0a82a982a982e882bb82a482c582b782aa814182e682eb82b582a282c582b782a98148",
+      "japanese": "金貨%sは\nかかりそうですが、よろしいですか？",
+      "source_reference": {
+        "message_id": 852,
+        "block": 10,
+        "table_offset": 1318840,
+        "block_offset": 3976,
+        "copy_end": 4020,
+        "record_index": 63,
+        "start": 2,
+        "end": 45,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a20257320636f696e732e0a2050726f636565643f202020202020202020202020202020202020",
+      "current_text_hex": "436f73743a20257320636f696e732e0a202050726f636565643f",
+      "current_English": "Cost: %s coins.\n  Proceed?",
+      "current_reference": {
+        "message_id": 852,
+        "block": 11,
+        "table_offset": 1318840,
+        "block_offset": 272,
+        "copy_end": 299,
+        "record_index": 5,
+        "start": 0,
+        "end": 26,
+        "text": null
+      },
+      "english": "It looks like it'll cost %s gold. Is that all right?{PAD}",
+      "source_meaning": "Polite estimate of the gold cost, asking whether it is acceptable.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_853",
+      "message_id": 853,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be089dd257382cd0a82a982a982e882bb82a482be82af82c7814182a282a28148",
+      "japanese": "金貨%sは\nかかりそうだけど、いい？",
+      "source_reference": {
+        "message_id": 853,
+        "block": 10,
+        "table_offset": 1318842,
+        "block_offset": 4020,
+        "copy_end": 4056,
+        "record_index": 64,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a20257320636f696e732e0a2050726f636565643f2020202020202020",
+      "current_text_hex": "436f73743a20257320636f696e732e0a202050726f636565643f20202020202020",
+      "current_English": "Cost: %s coins.\n  Proceed?       ",
+      "current_reference": {
+        "message_id": 853,
+        "block": 11,
+        "table_offset": 1318842,
+        "block_offset": 299,
+        "copy_end": 333,
+        "record_index": 6,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "Looks like it'll cost %s gold. Is that okay?{PAD}",
+      "source_meaning": "Casual estimate of the gold cost, asking whether it is okay.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_854",
+      "message_id": 854,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be089dd257382cd0a82a982a982e982ed82cb814182a282a282c582b782a98148",
+      "japanese": "金貨%sは\nかかるわね、いいですか？",
+      "source_reference": {
+        "message_id": 854,
+        "block": 10,
+        "table_offset": 1318844,
+        "block_offset": 4056,
+        "copy_end": 4092,
+        "record_index": 65,
+        "start": 2,
+        "end": 35,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a20257320636f696e732e0a2050726f636565643f2020202020202020",
+      "current_text_hex": "436f73743a20257320636f696e732e0a202050726f636565643f20202020202020",
+      "current_English": "Cost: %s coins.\n  Proceed?       ",
+      "current_reference": {
+        "message_id": 854,
+        "block": 11,
+        "table_offset": 1318844,
+        "block_offset": 333,
+        "copy_end": 367,
+        "record_index": 7,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "That'll cost %s gold. Is that all right?{PAD}",
+      "source_meaning": "Feminine cost statement, followed by a polite request for approval.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_855",
+      "message_id": 855,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be089dd257382cd0a82a982a982e882bb82a482be82aa814182a282a282e682c88148",
+      "japanese": "金貨%sは\nかかりそうだが、いいよな？",
+      "source_reference": {
+        "message_id": 855,
+        "block": 11,
+        "table_offset": 1318846,
+        "block_offset": 0,
+        "copy_end": 36,
+        "record_index": 0,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "canonical_source_hex": "257320636f696e732e0a2050726f636565643f20202020202020202020202020202020",
+      "current_text_hex": "257320636f696e732e0a202050726f636565643f",
+      "current_English": "%s coins.\n  Proceed?",
+      "current_reference": {
+        "message_id": 855,
+        "block": 11,
+        "table_offset": 1318846,
+        "block_offset": 367,
+        "copy_end": 388,
+        "record_index": 8,
+        "start": 0,
+        "end": 20,
+        "text": null
+      },
+      "english": "Looks like it'll cost %s gold. Okay with you?{PAD}",
+      "source_meaning": "Casual masculine estimate of the gold cost, seeking agreement.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_856",
+      "message_id": 856,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be089dd257382cd0a82a982a982e882bb82a482b682e182aa814182e682eb82b582a282a98148",
+      "japanese": "金貨%sは\nかかりそうじゃが、よろしいか？",
+      "source_reference": {
+        "message_id": 856,
+        "block": 11,
+        "table_offset": 1318848,
+        "block_offset": 36,
+        "copy_end": 76,
+        "record_index": 1,
+        "start": 0,
+        "end": 39,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a2025732e0a2050726f636565643f2020202020202020202020202020202020202020",
+      "current_text_hex": "436f73743a2025732e0a202050726f636565643f2020",
+      "current_English": "Cost: %s.\n  Proceed?  ",
+      "current_reference": {
+        "message_id": 856,
+        "block": 11,
+        "table_offset": 1318848,
+        "block_offset": 388,
+        "copy_end": 411,
+        "record_index": 9,
+        "start": 0,
+        "end": 22,
+        "text": null
+      },
+      "english": "It looks as though it'll cost %s gold. Is that all right?{PAD}",
+      "source_meaning": "Older speaker estimates the gold cost and asks for approval.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_857",
+      "message_id": 857,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82a88be0257382cd0a82a982a982e882bb82a482be82e6814182a282a282cc82a982c88148",
+      "japanese": "お金%sは\nかかりそうだよ、いいのかな？",
+      "source_reference": {
+        "message_id": 857,
+        "block": 11,
+        "table_offset": 1318850,
+        "block_offset": 76,
+        "copy_end": 116,
+        "record_index": 2,
+        "start": 0,
+        "end": 37,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a2025732e0a204f6b61793f202020202020202020202020202020202020202020",
+      "current_text_hex": "436f73743a2025732e0a20204f6b61793f2020202020202020",
+      "current_English": "Cost: %s.\n  Okay?        ",
+      "current_reference": {
+        "message_id": 857,
+        "block": 11,
+        "table_offset": 1318850,
+        "block_offset": 411,
+        "copy_end": 437,
+        "record_index": 10,
+        "start": 0,
+        "end": 25,
+        "text": null
+      },
+      "english": "Looks like it'll cost %s gold. Is that okay?{PAD}",
+      "source_meaning": "Young speaker estimates the money needed and gently asks if it is okay.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_858",
+      "message_id": 858,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8be0257382cd0a82a982a982e882bb82a482c582b782aa81418d5c82a282dc82b982f182a98148",
+      "japanese": "金%sは\nかかりそうですが、構いませんか？",
+      "source_reference": {
+        "message_id": 858,
+        "block": 11,
+        "table_offset": 1318852,
+        "block_offset": 116,
+        "copy_end": 156,
+        "record_index": 3,
+        "start": 2,
+        "end": 41,
+        "text": null
+      },
+      "canonical_source_hex": "436f73743a2025732e0a2050726f636565643f2020202020202020202020202020202020202020",
+      "current_text_hex": "436f73743a2025732e0a202050726f636565643f",
+      "current_English": "Cost: %s.\n  Proceed?",
+      "current_reference": {
+        "message_id": 858,
+        "block": 11,
+        "table_offset": 1318852,
+        "block_offset": 437,
+        "copy_end": 458,
+        "record_index": 11,
+        "start": 0,
+        "end": 20,
+        "text": null
+      },
+      "english": "It looks like it'll cost %s gold. Would that be all right?{PAD}",
+      "source_meaning": "Formal estimate of the cost, asking whether the player minds.",
+      "speaker": "Assigned role3 officer; original eight-voice selector, including -1 fallback for voice1",
+      "context": "Original58350 computes cost and ABF50 expands fullwidth digits. Original53CB0 resolves role3 officer, selects table02118400, and supplies exactly one amount through the original va_list to YesNo core54058/parent53D24.",
+      "localization_note": "Restore an ordinary spoken estimate/approval question with the source voice; gold is a mass noun for every numeric value. Preserve the original fullwidth amount; do not insert singular/plural coin logic or mock a new amount.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "native_fullwidth_cost"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_859",
+      "message_id": 859,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "9065958382b382f10a82b182b182cc82dd82f182c882c993af82b682e082cc82f0",
+      "japanese": "親父さん\nここのみんなに同じものを",
+      "source_reference": {
+        "message_id": 859,
+        "block": 11,
+        "table_offset": 1318854,
+        "block_offset": 156,
+        "copy_end": 192,
+        "record_index": 4,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a207468652073616d6520666f722065766572796f6e652e20",
+      "current_text_hex": "4261726b6565702c0a20207468652073616d6520666f722065766572796f6e652e",
+      "current_English": "Barkeep,\n  the same for everyone.",
+      "current_reference": {
+        "message_id": 859,
+        "block": 11,
+        "table_offset": 1318854,
+        "block_offset": 458,
+        "copy_end": 492,
+        "record_index": 12,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "Barkeep, a round of the same for everyone, please.{PAD}",
+      "source_meaning": "Rafael asks the barkeep to give everyone the same thing.",
+      "speaker": "Rafael",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_860",
+      "message_id": 860,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "906595830a82b182b182cc82dd82f182c882c993af82b682e082cc82f0978a82de",
+      "japanese": "親父\nここのみんなに同じものを頼む",
+      "source_reference": {
+        "message_id": 860,
+        "block": 11,
+        "table_offset": 1318856,
+        "block_offset": 192,
+        "copy_end": 228,
+        "record_index": 5,
+        "start": 2,
+        "end": 35,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a207468652073616d6520666f722065766572796f6e652e20",
+      "current_text_hex": "4261726b6565702c0a20207468652073616d6520666f722065766572796f6e652e",
+      "current_English": "Barkeep,\n  the same for everyone.",
+      "current_reference": {
+        "message_id": 860,
+        "block": 11,
+        "table_offset": 1318856,
+        "block_offset": 492,
+        "copy_end": 526,
+        "record_index": 13,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "Barkeep, a round of the same for everyone.{PAD}",
+      "source_meaning": "Hodram asks the barkeep to give everyone the same thing.",
+      "speaker": "Hodram",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_861",
+      "message_id": 861,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82a882b682b382f10a82b182b182cc82dd82f182c882c993af82b682e082cc82f082a88ae882a282cb",
+      "japanese": "おじさん\nここのみんなに同じものをお願いね",
+      "source_reference": {
+        "message_id": 861,
+        "block": 11,
+        "table_offset": 1318858,
+        "block_offset": 228,
+        "copy_end": 272,
+        "record_index": 6,
+        "start": 2,
+        "end": 43,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a207468652073616d6520666f722065766572796f6e652e202020202020202020",
+      "current_text_hex": "4261726b6565702c0a20207468652073616d6520666f722065766572796f6e652e2020202020202020",
+      "current_English": "Barkeep,\n  the same for everyone.        ",
+      "current_reference": {
+        "message_id": 861,
+        "block": 11,
+        "table_offset": 1318858,
+        "block_offset": 526,
+        "copy_end": 568,
+        "record_index": 14,
+        "start": 0,
+        "end": 41,
+        "text": null
+      },
+      "english": "Barkeep, could everyone have the same, please?{PAD}",
+      "source_meaning": "Lil warmly asks the barkeep to give everyone the same thing.",
+      "speaker": "Lil",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_862",
+      "message_id": 862,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "9065958382b382f10a82dd82c882b382f182c993af82b682e082cc82f082a88ae882a2",
+      "japanese": "親父さん\nみなさんに同じものをお願い",
+      "source_reference": {
+        "message_id": 862,
+        "block": 11,
+        "table_offset": 1318860,
+        "block_offset": 272,
+        "copy_end": 308,
+        "record_index": 7,
+        "start": 2,
+        "end": 37,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a207468652073616d6520666f722065766572796f6e652e202020",
+      "current_text_hex": "4261726b6565702c0a20207468652073616d6520666f722065766572796f6e652e2020",
+      "current_English": "Barkeep,\n  the same for everyone.  ",
+      "current_reference": {
+        "message_id": 862,
+        "block": 11,
+        "table_offset": 1318860,
+        "block_offset": 568,
+        "copy_end": 604,
+        "record_index": 15,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "english": "Barkeep, please give everyone the same.{PAD}",
+      "source_meaning": "Maria politely asks the barkeep to give everyone the same thing.",
+      "speaker": "Maria",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_863",
+      "message_id": 863,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82bb82a48cbe82a682ce814182b291b682b682c582b782a981480a257382c682a982a282a492bf956982f00a257382c58ca982bd8ed282aa0a82a282e982c682a982a282c882a282c682a98163",
+      "japanese": "そう言えば、ご存じですか？\n%sとかいう珍品を\n%sで見た者が\nいるとかいないとか…",
+      "source_reference": {
+        "message_id": 863,
+        "block": 11,
+        "table_offset": 1318862,
+        "block_offset": 308,
+        "copy_end": 388,
+        "record_index": 8,
+        "start": 0,
+        "end": 77,
+        "text": null
+      },
+      "canonical_source_hex": "4861766520796f752068656172643f0a204120726172652025730a20776173207265706f727465646c79207365656e0a20696e2025732e2e2e2020202020202020202020202020202020202020",
+      "current_text_hex": "4861766520796f752068656172643f0a20204120726172652025730a2020776173207265706f727465646c79207365656e0a2020696e2025732e2e2e",
+      "current_English": "Have you heard?\n  A rare %s\n  was reportedly seen\n  in %s...",
+      "current_reference": {
+        "message_id": 863,
+        "block": 11,
+        "table_offset": 1318862,
+        "block_offset": 604,
+        "copy_end": 665,
+        "record_index": 16,
+        "start": 0,
+        "end": 60,
+        "text": null
+      },
+      "english": "Have you heard? Someone may have spotted a rare item called %s in %s...{PAD}",
+      "source_meaning": "Asks if the listener has heard the uncertain report of someone seeing a rare item with the supplied name in a supplied region.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Region is a native item region index, not a town. Use private full region phrases verified from 北海/地中海/アフリカ/インド洋/東南アジア/東アジア/新大陸; preserve global short UI names. Named item phrasing works for plural, mass and singular names.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "item_name",
+        "private_full_region_phrase"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_864",
+      "message_id": 864,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "9065958382b382f10a82b182b182cc82dd82f182c882c98ef082f0",
+      "japanese": "親父さん\nここのみんなに酒を",
+      "source_reference": {
+        "message_id": 864,
+        "block": 11,
+        "table_offset": 1318864,
+        "block_offset": 388,
+        "copy_end": 416,
+        "record_index": 9,
+        "start": 2,
+        "end": 29,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a206472696e6b732061726f756e642e202020",
+      "current_text_hex": "4261726b6565702c0a20206472696e6b732061726f756e642e2020",
+      "current_English": "Barkeep,\n  drinks around.  ",
+      "current_reference": {
+        "message_id": 864,
+        "block": 11,
+        "table_offset": 1318864,
+        "block_offset": 665,
+        "copy_end": 693,
+        "record_index": 17,
+        "start": 0,
+        "end": 27,
+        "text": null
+      },
+      "english": "Barkeep, a round of drinks for everyone, please.{PAD}",
+      "source_meaning": "Rafael asks the barkeep for drinks for everyone.",
+      "speaker": "Rafael",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_865",
+      "message_id": 865,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "906595830a82b182b182cc82dd82f182c882c98ef082be",
+      "japanese": "親父\nここのみんなに酒だ",
+      "source_reference": {
+        "message_id": 865,
+        "block": 11,
+        "table_offset": 1318866,
+        "block_offset": 416,
+        "copy_end": 440,
+        "record_index": 10,
+        "start": 0,
+        "end": 23,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a206472696e6b7320616c6c212020",
+      "current_text_hex": "4472696e6b7320666f722065766572796f6e6521202020",
+      "current_English": "Drinks for everyone!   ",
+      "current_reference": {
+        "message_id": 865,
+        "block": 11,
+        "table_offset": 1318866,
+        "block_offset": 693,
+        "copy_end": 717,
+        "record_index": 18,
+        "start": 0,
+        "end": 23,
+        "text": null
+      },
+      "english": "Drinks for everyone!{PAD}",
+      "source_meaning": "Hodram calls for drinks for everyone.",
+      "speaker": "Hodram",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "retain",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_866",
+      "message_id": 866,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82a882b682b382f10a82dd82c882b382f182c982a88ef082f082a88ae882a282cb",
+      "japanese": "おじさん\nみなさんにお酒をお願いね",
+      "source_reference": {
+        "message_id": 866,
+        "block": 11,
+        "table_offset": 1318868,
+        "block_offset": 440,
+        "copy_end": 476,
+        "record_index": 11,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a206472696e6b7320666f722065766572796f6e652e202020",
+      "current_text_hex": "4261726b6565702c0a20206472696e6b7320666f722065766572796f6e652e2020",
+      "current_English": "Barkeep,\n  drinks for everyone.  ",
+      "current_reference": {
+        "message_id": 866,
+        "block": 11,
+        "table_offset": 1318868,
+        "block_offset": 717,
+        "copy_end": 751,
+        "record_index": 19,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "Barkeep, drinks for everyone, please.{PAD}",
+      "source_meaning": "Lil asks the barkeep to give everyone drinks.",
+      "speaker": "Lil",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_867",
+      "message_id": 867,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "9065958382b382f10a82dd82c882b382f182c982a88ef082f08db782b58fe382b082c4",
+      "japanese": "親父さん\nみなさんにお酒を差し上げて",
+      "source_reference": {
+        "message_id": 867,
+        "block": 11,
+        "table_offset": 1318870,
+        "block_offset": 476,
+        "copy_end": 512,
+        "record_index": 12,
+        "start": 2,
+        "end": 37,
+        "text": null
+      },
+      "canonical_source_hex": "4261726b6565702c0a2073657276652065766572796f6e652061206472696e6b2e2020",
+      "current_text_hex": "4261726b6565702c0a202073657276652065766572796f6e652061206472696e6b2e20",
+      "current_English": "Barkeep,\n  serve everyone a drink. ",
+      "current_reference": {
+        "message_id": 867,
+        "block": 11,
+        "table_offset": 1318870,
+        "block_offset": 751,
+        "copy_end": 787,
+        "record_index": 20,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "english": "Barkeep, serve everyone a drink, please.{PAD}",
+      "source_meaning": "Maria asks the barkeep to serve everyone a drink.",
+      "speaker": "Maria",
+      "context": "Original four-captain selector53C6C, table021166F0 for859-862 or02116810 for864-867, through parent53C14. These are route alternatives, not four successive speakers.",
+      "localization_note": "Use natural requests with appropriate courtesy. The familiar address to the barkeep does not establish a father/uncle relationship; do not translate it literally.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_868",
+      "message_id": 868,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82dc82a08141908c82c182cf82e782a282cc8cbe82a482b182c60a82c582b782a982e78141904d977082cd82c582ab82dc82b982f182aa82cb0a82a082c882bd82d982c782cc95fb82c882e70a89bd82a995aa82a982e982a982e082b582ea82dc82b982f1",
+      "japanese": "まあ、酔っぱらいの言うこと\nですから、信用はできませんがね\nあなたほどの方なら\n何か分かるかもしれません",
+      "source_reference": {
+        "message_id": 868,
+        "block": 11,
+        "table_offset": 1318872,
+        "block_offset": 512,
+        "copy_end": 616,
+        "record_index": 13,
+        "start": 0,
+        "end": 101,
+        "text": null
+      },
+      "canonical_source_hex": "41206472756e6b20736169642069742c0a20736f2077686f2063616e207361793f0a20536f6d656f6e65206c696b6520796f750a206d6179206c6561726e207468652074727574682e20202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "41206472756e6b20736169642069742c0a2020736f2077686f2063616e207361793f0a2020536f6d656f6e65206c696b6520796f750a20206d6179206c6561726e207468652074727574682e",
+      "current_English": "A drunk said it,\n  so who can say?\n  Someone like you\n  may learn the truth.",
+      "current_reference": {
+        "message_id": 868,
+        "block": 11,
+        "table_offset": 1318872,
+        "block_offset": 787,
+        "copy_end": 864,
+        "record_index": 21,
+        "start": 0,
+        "end": 76,
+        "text": null
+      },
+      "english": "It came from a drunk, so I wouldn't trust it. Still, someone like you might make sense of it.{PAD}",
+      "source_meaning": "The report came from a drunk and cannot be trusted, but someone of the player's ability might understand something from it.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph.",
+      "decision": "revise",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_869",
+      "message_id": 869,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82a982b582b182dc82e882dc82b582bd0a257382cc8ce491e5906c82a982e70a8a46976c82c98db782b593fc82ea82c582b282b482a282dc82b7",
+      "japanese": "かしこまりました\n%sの御大人から\n皆様に差し入れでございます",
+      "source_reference": {
+        "message_id": 869,
+        "block": 11,
+        "table_offset": 1318874,
+        "block_offset": 616,
+        "copy_end": 676,
+        "record_index": 14,
+        "start": 2,
+        "end": 60,
+        "text": null
+      },
+      "canonical_source_hex": "4365727461696e6c792e0a2045766572796f6e652c207468697320726f756e640a2069732066726f6d2025732120202020202020202020202020",
+      "current_text_hex": "4365727461696e6c792e0a202045766572796f6e652c207468697320726f756e640a202069732066726f6d20257321",
+      "current_English": "Certainly.\n  Everyone, this round\n  is from %s!",
+      "current_reference": {
+        "message_id": 869,
+        "block": 11,
+        "table_offset": 1318874,
+        "block_offset": 864,
+        "copy_end": 912,
+        "record_index": 22,
+        "start": 0,
+        "end": 47,
+        "text": null
+      },
+      "english": "Certainly. Everyone, this round's on %s!{PAD}",
+      "source_meaning": "The barkeep formally acknowledges the request and announces that the named admiral is providing everyone a round.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "admiral_surname"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_870",
+      "message_id": 870,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "25730a82bf82e582a282c68ea88af182e882c8986282aa82a082e982f182c582b782aa82cb0a257382c182c482a282a492bf82b582a295f395a882aa0a257382c90a894282b382ea82c482e982c182c4895c82c582b382a0",
+      "japanese": "%s\nちょいと耳寄りな話があるんですがね\n%sっていう珍しい宝物が\n%sに\n隠されてるって噂でさあ",
+      "source_reference": {
+        "message_id": 870,
+        "block": 11,
+        "table_offset": 1318876,
+        "block_offset": 676,
+        "copy_end": 764,
+        "record_index": 15,
+        "start": 1,
+        "end": 89,
+        "text": null
+      },
+      "canonical_source_hex": "5468652063686172676520697320257320636f696e732e20497320746861742061636365707461626c653f0a200a200a200a200a200a200a2020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "25732c206865726527732061207469703a207468652072617265207472656173757265202573206973207361696420746f2062652068696464656e20696e2025732e",
+      "current_English": "%s, here's a tip: the rare treasure %s is said to be hidden in %s.",
+      "current_reference": {
+        "message_id": 870,
+        "block": 11,
+        "table_offset": 1318876,
+        "block_offset": 912,
+        "copy_end": 979,
+        "record_index": 23,
+        "start": 0,
+        "end": 66,
+        "text": null
+      },
+      "english": "%s, here's a tip. They say a rare treasure called %s is hidden in %s.{PAD}",
+      "source_meaning": "Addresses the player and offers a useful rumor: a rare treasure with the supplied item name is hidden in a supplied region.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Region is a native item region index, not a town. Use private full region phrases verified from 北海/地中海/アフリカ/インド洋/東南アジア/東アジア/新大陸; preserve global short UI names. Named item phrasing works for plural, mass and singular names. Sir/Ma'am addresses the player and is not a person being sought. Put this capitalized native vocative at sentence start.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "player_vocative",
+        "item_name",
+        "private_full_region_phrase"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1,
+        2
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_871",
+      "message_id": 871,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8349815b836281490a8370836083708360837083608370836081490a82b382b782aa82cd8141257382cc0a91e5257382be8149",
+      "japanese": "オーッ！\nパチパチパチパチ！\nさすがは、%sの\n大%sだ！",
+      "source_reference": {
+        "message_id": 871,
+        "block": 11,
+        "table_offset": 1318878,
+        "block_offset": 764,
+        "copy_end": 816,
+        "record_index": 15,
+        "start": 89,
+        "end": 140,
+        "text": null
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "427261766f21204120726f756e64206f66206170706c6175736520666f72202573212020202020202020202020202020202020202020",
+      "current_English": "Bravo! A round of applause for %s!                    ",
+      "current_reference": {
+        "message_id": 871,
+        "block": 11,
+        "table_offset": 1318878,
+        "block_offset": 979,
+        "copy_end": 1034,
+        "record_index": 24,
+        "start": 0,
+        "end": 54,
+        "text": null
+      },
+      "english": "Bravo! A round of applause for %s!{PAD}",
+      "source_meaning": "Cheers and applause, praising the named admiral with a gendered familiar form of address.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Retain the established natural omission of the second source gendered address. The native caller still passes both surname and vocative; the English intentionally prints only the surname. No dropped fact, new rank or removed native argument is implied.",
+      "decision": "retain",
+      "source_native_arguments": [
+        "admiral_surname",
+        "source_gendered_address_unused_in_English"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_872",
+      "message_id": 872,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82cd82a282e60a8da193fa82cd257382cc0a257382cc82a882b282e882be81490a8370815b836282c682e282c182c482ad82f182c88149",
+      "japanese": "はいよ\n今日は%sの\n%sのおごりだ！\nパーッとやってくんな！",
+      "source_reference": {
+        "message_id": 872,
+        "block": 11,
+        "table_offset": 1318880,
+        "block_offset": 816,
+        "copy_end": 872,
+        "record_index": 16,
+        "start": 0,
+        "end": 55,
+        "text": null
+      },
+      "canonical_source_hex": "4c697374656e210a20546f64617920257327730a20257320697320627579696e672e0a20456e6a6f792120202020202020202020202020",
+      "current_text_hex": "5468697320726f756e642773206f6e2025732e20456e6a6f7921",
+      "current_English": "This round's on %s. Enjoy!",
+      "current_reference": {
+        "message_id": 872,
+        "block": 11,
+        "table_offset": 1318880,
+        "block_offset": 1034,
+        "copy_end": 1061,
+        "record_index": 25,
+        "start": 0,
+        "end": 26,
+        "text": null
+      },
+      "english": "This round's on %s. Enjoy!{PAD}",
+      "source_meaning": "The barkeep announces that today's drinks are on the named admiral and invites everyone to enjoy themselves.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Retain the established natural omission of the second source gendered address. The native caller still passes both surname and vocative; the English intentionally prints only the surname. No dropped fact, new rank or removed native argument is implied.",
+      "decision": "retain",
+      "source_native_arguments": [
+        "admiral_surname",
+        "source_gendered_address_unused_in_English"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_873",
+      "message_id": 873,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "257382d982c782cc0a9872979882ab82c882e7814182ab82c182c68ca982c282af82c882b382e982c60a8e7682a282dc82b782ba",
+      "japanese": "%sほどの\n腕利きなら、きっと見つけなさると\n思いますぜ",
+      "source_reference": {
+        "message_id": 873,
+        "block": 11,
+        "table_offset": 1318882,
+        "block_offset": 872,
+        "copy_end": 924,
+        "record_index": 17,
+        "start": 0,
+        "end": 52,
+        "text": null
+      },
+      "canonical_source_hex": "5468652063686172676520697320257320636f696e732e20497320746861742061636365707461626c653f0a200a200a200a200a",
+      "current_text_hex": "5769746820796f757220736b696c6c732c2025732c20796f75276c6c2066696e6420697420666f7220737572652e20",
+      "current_English": "With your skills, %s, you'll find it for sure. ",
+      "current_reference": {
+        "message_id": 873,
+        "block": 11,
+        "table_offset": 1318882,
+        "block_offset": 1061,
+        "copy_end": 1109,
+        "record_index": 26,
+        "start": 0,
+        "end": 47,
+        "text": null
+      },
+      "english": "%s, with your skills, I'm sure you'll find it.{PAD}",
+      "source_meaning": "Addresses the player and expresses confidence that a person of their skill will find it.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Sir/Ma'am addresses the player and is not a person being sought. Put this capitalized native vocative at sentence start.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "player_vocative"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_874",
+      "message_id": 874,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "83718385815b836281498140967b939682c582b782a982a2814981480a82b182a282c2829f814182a082e882aa82c482a682e281490a8343834c82be82cb82a68149814082a282e682c1814191be82c195a08149",
+      "japanese": "ヒューッ！　本当ですかい！？\nこいつぁ、ありがてえや！\nイキだねえ！　いよっ、太っ腹！",
+      "source_reference": {
+        "message_id": 874,
+        "block": 11,
+        "table_offset": 1318884,
+        "block_offset": 924,
+        "copy_end": 1008,
+        "record_index": 17,
+        "start": 52,
+        "end": 136,
+        "text": null
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "57686f6f21205265616c6c793f21205468616e6b7320736f206d7563682120596f75277265206120636c617373206163742120486f772067656e65726f757321",
+      "current_English": "Whoo! Really?! Thanks so much! You're a class act! How generous!",
+      "current_reference": {
+        "message_id": 874,
+        "block": 11,
+        "table_offset": 1318884,
+        "block_offset": 1109,
+        "copy_end": 1174,
+        "record_index": 27,
+        "start": 0,
+        "end": 64,
+        "text": null
+      },
+      "english": "Whoo! Really?! Thanks so much! You're a class act! How generous!{PAD}",
+      "source_meaning": "A surprised, enthusiastic thanks, praising the player's style and generosity.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph.",
+      "decision": "retain",
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_875",
+      "message_id": 875,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "2573976c0a82bf82e582c182c6814182a88ea882c993fc82ea82bd82a282b182c682aa8163",
+      "japanese": "%s様\nちょっと、お耳に入れたいことが…",
+      "source_reference": {
+        "message_id": 875,
+        "block": 11,
+        "table_offset": 1318886,
+        "block_offset": 1008,
+        "copy_end": 1048,
+        "record_index": 17,
+        "start": 136,
+        "end": 173,
+        "text": null
+      },
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "25732c208268206861766520736f6d657468696e6720746f2074656c6c20796f752e2e2e",
+      "current_English": "%s, Ｉ have something to tell you...",
+      "current_reference": {
+        "message_id": 875,
+        "block": 11,
+        "table_offset": 1318886,
+        "block_offset": 1174,
+        "copy_end": 1211,
+        "record_index": 28,
+        "start": 0,
+        "end": 36,
+        "text": null
+      },
+      "english": "%s, there's something I'd like you to hear...{PAD}",
+      "source_meaning": "Formally addresses the admiral by surname and introduces something the speaker wants them to hear.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "admiral_surname"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_876",
+      "message_id": 876,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "257382cc8acd91e082aa0a82a082c882bd82cc8d7395fb82f092c782c182c482a282e982bb82a482c582b70a8b4382f082c282af82bd82d982a482aa82a282a282c582b782e6",
+      "japanese": "%sの艦隊が\nあなたの行方を追っているそうです\n気をつけたほうがいいですよ",
+      "source_reference": {
+        "message_id": 876,
+        "block": 11,
+        "table_offset": 1318888,
+        "block_offset": 1048,
+        "copy_end": 1120,
+        "record_index": 18,
+        "start": 2,
+        "end": 72,
+        "text": null
+      },
+      "canonical_source_hex": "2573277320666c6565740a2069732068756e74696e6720796f752e0a204265206361726566756c2e202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2573277320666c6565740a202069732068756e74696e6720796f752e0a20204265206361726566756c2e",
+      "current_English": "%s's fleet\n  is hunting you.\n  Be careful.",
+      "current_reference": {
+        "message_id": 876,
+        "block": 11,
+        "table_offset": 1318888,
+        "block_offset": 1211,
+        "copy_end": 1254,
+        "record_index": 29,
+        "start": 0,
+        "end": 42,
+        "text": null
+      },
+      "english": "I hear %s has a fleet looking for you. You'd better be careful.{PAD}",
+      "source_meaning": "Reports that a company fleet is following the player's whereabouts and advises caution.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_877",
+      "message_id": 877,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82bb82a482a282e282a00a2573814182b291b682b682c582b782a982a28148",
+      "japanese": "そういやあ\n%s、ご存じですかい？",
+      "source_reference": {
+        "message_id": 877,
+        "block": 11,
+        "table_offset": 1318890,
+        "block_offset": 1120,
+        "copy_end": 1152,
+        "record_index": 19,
+        "start": 1,
+        "end": 32,
+        "text": null
+      },
+      "canonical_source_hex": "427920746865207761792c0a206b6e6f772025733f20202020202020202020",
+      "current_text_hex": "427920746865207761792c0a20206b6e6f772025733f",
+      "current_English": "By the way,\n  know %s?",
+      "current_reference": {
+        "message_id": 877,
+        "block": 11,
+        "table_offset": 1318890,
+        "block_offset": 1254,
+        "copy_end": 1277,
+        "record_index": 30,
+        "start": 0,
+        "end": 22,
+        "text": null
+      },
+      "english": "%s, have you heard the news?{PAD}",
+      "source_meaning": "Casually addresses the player and asks whether they have heard.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Sir/Ma'am addresses the player and is not a person being sought. Put this capitalized native vocative at sentence start.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "player_vocative"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_878",
+      "message_id": 878,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "257382cc8acd91e082aa0a257382f00a82c282af915f82c182c482dc82b782ba",
+      "japanese": "%sの艦隊が\n%sを\nつけ狙ってますぜ",
+      "source_reference": {
+        "message_id": 878,
+        "block": 11,
+        "table_offset": 1318892,
+        "block_offset": 1152,
+        "copy_end": 1184,
+        "record_index": 20,
+        "start": 0,
+        "end": 32,
+        "text": null
+      },
+      "canonical_source_hex": "5468652063686172676520697320257320636f696e732e204973207468617420",
+      "current_text_hex": "2573277320666c6565742069732068756e74696e672025732e20202020202020",
+      "current_English": "%s's fleet is hunting %s.       ",
+      "current_reference": {
+        "message_id": 878,
+        "block": 11,
+        "table_offset": 1318892,
+        "block_offset": 1277,
+        "copy_end": 1310,
+        "record_index": 31,
+        "start": 0,
+        "end": 32,
+        "text": null
+      },
+      "english": "%s, a fleet from %s is after you.{PAD}",
+      "source_meaning": "A company fleet is pursuing the player; the second source argument is a vocative addressing the player, not a third person.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Sir/Ma'am addresses the player and is not a person being sought. Put this capitalized native vocative at sentence start. Requires a narrowly scoped native argument permutation [1,0] at58070/58078; both original field values must remain exact and all other callers unchanged before integration. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "player_vocative"
+      ],
+      "English_argument_source_indices": [
+        1,
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_879",
+      "message_id": 879,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82bb82a482a282a682ce816395b782a282bd986282c582b782aa0a257382cc8acd91e082cd0a257382c90a8cfc82a982c182c482a282e982bb82a482c582b782e6",
+      "japanese": "そういえば…聞いた話ですが\n%sの艦隊は\n%sに\n向かっているそうですよ",
+      "source_reference": {
+        "message_id": 879,
+        "block": 11,
+        "table_offset": 1318894,
+        "block_offset": 1184,
+        "copy_end": 1252,
+        "record_index": 20,
+        "start": 32,
+        "end": 97,
+        "text": null
+      },
+      "canonical_source_hex": "61636365707461626c653f0a200a200a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "202020202020202020202020576f72642069732c202573277320666c6565742069732068656164696e6720746f2025732e20202020202020202020202020202020",
+      "current_English": "            Word is, %s's fleet is heading to %s.                ",
+      "current_reference": {
+        "message_id": 879,
+        "block": 11,
+        "table_offset": 1318894,
+        "block_offset": 1310,
+        "copy_end": 1376,
+        "record_index": 32,
+        "start": 0,
+        "end": 65,
+        "text": null
+      },
+      "english": "By the way, I hear %s has a fleet heading to %s.{PAD}",
+      "source_meaning": "A polite aside reports hearsay that a company fleet is heading for a town.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.7200 source fragment cases distinguish destination byte3F from docked getter34674/byte3C and formal/casual context+8. Do not conflate heading toward a town with being anchored there.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "town_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_880",
+      "message_id": 880,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "82bf82e582a282c68fac8ea882c98bb282f182be82f182c582b782aa0a257382cc8acd91e082cd0a257382c90a8cfc82a982c182c482e282b782ba",
+      "japanese": "ちょいと小耳に挟んだんですが\n%sの艦隊は\n%sに\n向かってやすぜ",
+      "source_reference": {
+        "message_id": 880,
+        "block": 11,
+        "table_offset": 1318896,
+        "block_offset": 1252,
+        "copy_end": 1312,
+        "record_index": 21,
+        "start": 2,
+        "end": 61,
+        "text": null
+      },
+      "canonical_source_hex": "576f72642069732c0a202573277320666c6565740a2069732068656164696e670a20746f2025732e20202020202020202020202020202020202020",
+      "current_text_hex": "576f72642069732c0a20202573277320666c6565740a202069732068656164696e670a2020746f2025732e",
+      "current_English": "Word is,\n  %s's fleet\n  is heading\n  to %s.",
+      "current_reference": {
+        "message_id": 880,
+        "block": 11,
+        "table_offset": 1318896,
+        "block_offset": 1376,
+        "copy_end": 1420,
+        "record_index": 33,
+        "start": 0,
+        "end": 43,
+        "text": null
+      },
+      "english": "Word is, %s has a fleet heading to %s.{PAD}",
+      "source_meaning": "A casual aside reports overheard news that a company fleet is heading for a town.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.7200 source fragment cases distinguish destination byte3F from docked getter34674/byte3C and formal/casual context+8. Do not conflate heading toward a town with being anchored there.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "town_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_881",
+      "message_id": 881,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "8e8482aa95b782a282bd986282c582cd0a257382cc8acd91e082cd0a257382c90a92e2949182b582c482a282e982bb82a482c582b782e6",
+      "japanese": "私が聞いた話では\n%sの艦隊は\n%sに\n停泊しているそうですよ",
+      "source_reference": {
+        "message_id": 881,
+        "block": 11,
+        "table_offset": 1318898,
+        "block_offset": 1312,
+        "copy_end": 1368,
+        "record_index": 22,
+        "start": 0,
+        "end": 55,
+        "text": null
+      },
+      "canonical_source_hex": "576f72642069732c0a202573277320666c6565740a20697320646f636b65640a2061742025732e20202020202020202020202020202020",
+      "current_text_hex": "576f72642069732c0a20202573277320666c6565740a2020697320646f636b65640a202061742025732e",
+      "current_English": "Word is,\n  %s's fleet\n  is docked\n  at %s.",
+      "current_reference": {
+        "message_id": 881,
+        "block": 11,
+        "table_offset": 1318898,
+        "block_offset": 1420,
+        "copy_end": 1463,
+        "record_index": 34,
+        "start": 0,
+        "end": 42,
+        "text": null
+      },
+      "english": "From what I've heard, %s has a fleet docked at %s.{PAD}",
+      "source_meaning": "Politely reports that, from what the speaker has heard, a company fleet is anchored at a town.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.7200 source fragment cases distinguish destination byte3F from docked getter34674/byte3C and formal/casual context+8. Do not conflate heading toward a town with being anchored there.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "town_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_882",
+      "message_id": 882,
+      "interaction_group": "Tavern-cost-rounds-treasure-and-fleet-rumor-alternatives",
+      "source_hex": "92878ad482a982e795b782a282bd986282c882f182c582b782aa0a257382cc8acd91e082cd0a257382c90a92e2949182b582c482e282b782ba",
+      "japanese": "仲間から聞いた話なんですが\n%sの艦隊は\n%sに\n停泊してやすぜ",
+      "source_reference": {
+        "message_id": 882,
+        "block": 11,
+        "table_offset": 1318900,
+        "block_offset": 1368,
+        "copy_end": 1428,
+        "record_index": 23,
+        "start": 0,
+        "end": 57,
+        "text": null
+      },
+      "canonical_source_hex": "4120667269656e6420736179730a202573277320666c6565740a20697320646f636b65640a2061742025732e20202020202020202020202020",
+      "current_text_hex": "4120667269656e6420736179730a20202573277320666c6565740a2020697320646f636b65640a202061742025732e",
+      "current_English": "A friend says\n  %s's fleet\n  is docked\n  at %s.",
+      "current_reference": {
+        "message_id": 882,
+        "block": 11,
+        "table_offset": 1318900,
+        "block_offset": 1463,
+        "copy_end": 1511,
+        "record_index": 35,
+        "start": 0,
+        "end": 47,
+        "text": null
+      },
+      "english": "A friend says %s has a fleet docked at %s.{PAD}",
+      "source_meaning": "Reports news from a companion that a company fleet is anchored at a town.",
+      "speaker": "Original Tavern rumor/round NPC selected by the native scene",
+      "context": "Direct portrait consumer53FE4/parent54014. Source and independently supplied native caller fragments determine arguments and selectable alternatives; adjacent storage does not establish a sequential conversation.",
+      "localization_note": "Preserve the source information, hearsay and conversational tone as one ordinary American English paragraph. Organization names are obtained from actual company virtual+8 getters, not surnames or country guesses. Preserve their complete supplied name. Use has a fleet or a fleet from to avoid the unnatural Bergstrom Fleet's fleet; this does not assert that there is more than one fleet.7200 source fragment cases distinguish destination byte3F from docked getter34674/byte3C and formal/casual context+8. Do not conflate heading toward a town with being anchored there.",
+      "decision": "revise",
+      "source_native_arguments": [
+        "organization_name",
+        "town_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-runtime-gameplay-integration-pending"
+    }
+  ],
+  "remaining_gates": [
+    "Native printf/wrapping/complete-font preview matrix",
+    "Owned no-growth runtime selector and private region providers",
+    "Registered integration and exact clean patch",
+    "Targeted cold-boot scene/transition/state verification"
+  ],
+  "full_goal_complete": false
+}

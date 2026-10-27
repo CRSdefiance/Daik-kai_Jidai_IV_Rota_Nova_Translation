@@ -1,0 +1,43 @@
+"""Six preserved V1166 duel holds bound to current words/fonts;historical terminal proof retained."""
+from pathlib import Path
+import inspect,struct,textwrap
+from PIL import Image,ImageDraw
+from dk4tool.dialogue.font_audit import GameAsciiFont
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.patch.duel_editorial import current_entries as old_entries
+from dk4tool.rom.nds import NdsImage
+from scripts import verify_duel_actual_holds_v1172 as original
+from scripts.duel_editorial_layout_v1155 import compiled
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/static_duel_history_v2505');ROM=Path('out/all_routes_combined_v2284_candidate.nds');OLDROM=Path('out/all_routes_combined_v1166_candidate.nds')
+if __name__=='__main__':
+ assert not ROOT.exists();rom,oldrom=map(NdsImage.open,(ROM,OLDROM));arm,oldarm=rom.read_file('/__arm9__.bin'),oldrom.read_file('/__arm9__.bin');hpath=Path('work/analysis/duel_terminal_v1173/terminal_gameplay_verification.json');historical=read(hpath);reportpath=Path(historical['terminal_report']);report=read(reportpath);digest=sha(ROM.read_bytes());old_digest=sha(OLDROM.read_bytes());assert historical['candidate_sha256']==report['ROM_sha256']==old_digest and sha(reportpath.read_bytes())==historical['terminal_report_sha256'];assert report['frames']==9622 and report['cold_boot']and not report['savestate_loaded']and not report['callback_errors'];assert historical['source_and_disposable_saves_unchanged']and historical['last_fixture_frame']==5770 and historical['no_health_location_actor_RNG_message_or_outcome_injection_during_or_after_duel']and len(historical['all31_fixture_replays'])==31
+ doc=read('translations/static_duel_contextual_editorial_manuscript_v1.json');records={r['message_id']:r for r in doc['records']};entries=current_entries(rom.read_file('/COMMON/MESFILE.DK4'),arm);prior=old_entries(oldrom.read_file('/COMMON/MESFILE.DK4'),oldarm);assert all(entries[n].text==prior[n].text==compiled(r)for n,r in records.items());kanji=rom.read_file('/GRP/KANJI.FNT');assert kanji==oldrom.read_file('/GRP/KANJI.FNT');font=GameAsciiFont.from_arm9(arm);spans=((0xD458,0xD538),(0xD5404,0xD56E0),(0xD16B4,0xD19C0),(0x737C8,0x74010),(0xE8CC,0xED74),(0x7E154,0x7E1A4),(0x519D4,0x51A28),(0xD9824,0xD9868));assert all(arm[a:b]==oldarm[a:b]for a,b in spans)
+ source=inspect.getsource(original.main);a=source.index('            raw_path, image_path =');b=source.index('    ROOT.mkdir',a);body=textwrap.dedent(source[a:b]);body=body.replace('raw = raw_path.read_bytes()','raw = raw_path.read_bytes()if raw_override is None else raw_override').replace("image = Image.open(image_path).convert('RGB')","image = Image.open(image_path).convert('RGB')if image_override is None else image_override.convert('RGB')");function='def verify(number,side,table,frame,raw_override=None,image_override=None):\n    cases=[]\n    ink_color=None\n'+textwrap.indent(body,'    ')+'\n    return cases[0]\n';env={**original.__dict__,'rom':rom,'arm':arm,'font':font,'kanji':kanji,'records':records};exec(compile(function,__file__,'exec'),env);verify=env['verify']
+ snapshots={r['frame']:r for r in report['read_only_capture_RAM_snapshots']+report['read_only_pause_RAM_snapshots']};screens={r['frame']:r for r in report['frames_captured']};holds=[]
+ for n,side,table,frames in((1932,0,0x02117340,(5782,5792)),(1939,1,0x02117360,(5902,5912)),(1945,1,0x021174E0,(6912,6922))):
+  for frame in frames:
+   h=verify(n,side,table,frame);assert h['RAM_sha256']==snapshots[frame]['sha256']and h['capture_sha256']==screens[frame]['PNG_sha256'];h.update(message_id=n,historical_capture_candidate_sha256=old_digest,current_payload_font_binding_only_no_current_emulator_visit=True);holds.append(h)
+ controls=[]
+ def rejects(action):
+  try:action()
+  except AssertionError:return True
+  raise AssertionError('Corrupted duel hold accepted')
+ for h in holds[::2]:
+  n,side,table,frame=h['message_ID'],h['side'],h['original_table'],h['frame'];raw=Path(h['RAM_path']).read_bytes();image=Image.open(h['capture']).convert('RGB');header=h['source_bitmap_header'];at=header-0x02000000;bad=bytearray(raw);struct.pack_into('<I',bad,at,5);controls.append(dict(message_ID=n,negative='wrong-native-format-header',rejected=rejects(lambda:verify(n,side,table,frame,raw_override=bytes(bad)))))
+  lines=h['lines'];cells=[(0,0,'delete-initial-glyph'),(len(lines)-1,len(lines[-1])-1,'delete-final-glyph')]
+  if n==1939:
+   matches=[(i,line.index(' I ')+1)for i,line in enumerate(lines)if' I 'in line]+[(i,0)for i,line in enumerate(lines)if line.startswith('I ')];assert len(matches)==1;cells.append((*matches[0],'delete-complete-personal-I'))
+  for line,column,label in cells:
+   bad=bytearray(raw);y0=(12 if len(lines)==1 else0)+line*12
+   for y in range(y0,y0+12):pos=at+40+y*104+column*3;bad[pos:pos+3]=bytes(3)
+   controls.append(dict(message_ID=n,negative=label,rejected=rejects(lambda:verify(n,side,table,frame,raw_override=bytes(bad)))))
+  badimage=image.copy();point=next((56+x,212+r*20+y)for r in range(3)for y in range(12)for x in range(144)if image.getpixel((56+x,212+r*20+y))==(255,255,255));badimage.putpixel(point,(0,0,0));controls.append(dict(message_ID=n,negative='stray-ink-in-native-crop-blank-plane',rejected=rejects(lambda:verify(n,side,table,frame,image_override=badimage))))
+ assert len(controls)==13 and all(c['rejected']for c in controls)
+ after=Path(snapshots[6902]['path']).read_bytes();assert sha(after)==snapshots[6902]['sha256'];cpu,get=get_machine(arm,after);actors=get(0xCB184);assert[get(0x7E19C,obj)for obj in(actors+0x19E4,actors+4+32*32)]==[109,0];terminal=Path(snapshots[9622]['path']).read_bytes();assert sha(terminal)==snapshots[9622]['sha256'];terminalpng=Path(screens[9622]['path']);assert sha(terminalpng.read_bytes())==screens[9622]['PNG_sha256']
+ ROOT.mkdir(parents=True);sheet=Image.new('RGB',(3*256,2*410),'#263238');draw=ImageDraw.Draw(sheet)
+ for i,h in enumerate(holds):x,y=i//2*256,i%2*410;draw.text((x+4,y+3),'ID'+str(h['message_ID'])+' historical V1166',fill='white');sheet.paste(Image.open(h['capture']),(x,y+24))
+ p=ROOT/'six_historical_complete_duel_holds.png';sheet.save(p);q=ROOT/'historical_normal_sea_return.png';Image.open(terminalpng).save(q)
+ save(ROOT/'historical_static_duel_current_binding.json',dict(candidate=str(ROM),candidate_sha256=digest,ARM9_sha256=sha(arm),COMMON_sha256=sha(rom.read_file('/COMMON/MESFILE.DK4')),historical_candidate=str(OLDROM),historical_candidate_sha256=old_digest,historical_proof=str(hpath),historical_proof_sha256=sha(hpath.read_bytes()),historical_report=str(reportpath),historical_report_sha256=sha(reportpath.read_bytes()),historical_holds=holds,historical_IDs=[1932,1939,1945],scoped_historical_cancellation_and_battle_transitions_freshly_rechecked=[dict(original_challenge_acceptance_combat_threat_capture_loot_cargo_and_normal_sea_return=True,natural_post_duel_HP=[109,0],terminal_frame=9622,terminal_RAM_sha256=sha(terminal),terminal_capture=str(terminalpng),terminal_capture_sha256=sha(terminalpng.read_bytes()),historical31_pre_duel_fixture_audits_hash_bound_not_unnecessarily_repeated=True,no_duel_time_or_post_duel_fixture_or_outcome_override=True)],thirteen_negative_controls_current_binding_on_offline_clones=controls,no_new_current_battle_emulator_runs_or_family_visits=True,all20_current_historical_compiled_templates_equal=True,all6_current_full208x36_native_and_three144x12_historical_RGB_ink_and_blank_planes_equal=True,original_actor_IDs_1_32_and_conditional_Clifford_name_unchanged=True,original_selector_font_and_outcome_code_current_old_exact=[dict(start=a,end=b,sha256=sha(arm[a:b]))for a,b in spans],current_extended_front_is_checked_by_current53_CPU_controls_not_claimed_byte_identical_to_old_three_table_front=True,review_sheets=[dict(path=str(t),sha256=sha(t.read_bytes()))for t in(p,q)],native_hold_helper=str(Path(original.__file__)),native_hold_helper_sha256=sha(Path(original.__file__).read_bytes()),effective_hold_helper_sha256=sha(function.encode()),scope='Historical V1166 isolated positive-health/contact/diplomatic setup before original duel.31 existing fixture audits remain hash-bound;none during or after combat. Natural historical result and return,not earned progression or current gameplay. Native ink palette is calibrated from observed ink;shape and blank masks are independently checked.',producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print('Six historical duel holds,current native font/RGB masks,13 corruption controls and original normal sea return bind;zero new emulator runs.')

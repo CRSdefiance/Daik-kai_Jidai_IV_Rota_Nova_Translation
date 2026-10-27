@@ -1,0 +1,91 @@
+{
+  "format": "dk4-arm9-prompt-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DECK_EXPLANATION_LOOKOUT",
+      "offset": 1257508,
+      "capacity": 56,
+      "source_hex": "8CA992A382E882AA82A282E982C681410A976D8FE382C58A5882C882C782F00A94AD8CA982B582E282B782AD82C882E882DC82B700000000",
+      "japanese": "見張りがいると、\n洋上で街などを\n発見しやすくなります",
+      "english": "A lookout makes it easier to discover towns and other locations at sea.{PAD}",
+      "speaker": "Deck information panel",
+      "context": "Native selector 16868 returns original pointer for room 0; caller 19E78 passes it through macro copy 53914 into a 1024-byte buffer before the D5160/D5404 panel path.",
+      "source_meaning": "Having a lookout makes towns and other locations easier to discover while at sea.",
+      "localization_note": "Full source-faithful natural English written independently of original line fragments. No abbreviations or authored wrapping. Layout and relocation remain pending. Complete generated word layout, all four native ink panels, aligned source-owned allocation and connected native caller/bitmap output are reviewed. Physical gameplay remains pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DECK_EXPLANATION_CAPTAIN",
+      "offset": 1257564,
+      "capacity": 52,
+      "source_hex": "8ACD92B782AA82A282E982C681410A9085957682CC94E6984A937882AA0A8FE382AA82E882C982AD82AD82C882E882DC82B70000",
+      "japanese": "艦長がいると、\n水夫の疲労度が\n上がりにくくなります",
+      "english": "A captain slows the rise in sailor fatigue.{PAD}",
+      "speaker": "Deck information panel",
+      "context": "Native selector 16868 returns original pointer for room 4; caller 19E78 passes it through macro copy 53914 into a 1024-byte buffer before the D5160/D5404 panel path.",
+      "source_meaning": "Having a captain makes sailor fatigue increase more slowly.",
+      "localization_note": "Full source-faithful natural English written independently of original line fragments. No abbreviations or authored wrapping. Layout and relocation remain pending. Complete generated word layout, all four native ink panels, aligned source-owned allocation and connected native caller/bitmap output are reviewed. Physical gameplay remains pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DECK_EXPLANATION_ADJUTANT",
+      "offset": 1257616,
+      "capacity": 56,
+      "source_hex": "959B8AAF82AA82A282E982C681410A834D838B836882C58CF08FC295B68F9182CC94AD919782F00A8EC08D7382C582AB82DC82B700000000",
+      "japanese": "副官がいると、\nギルドで交渉文書の発送を\n実行できます",
+      "english": "An adjutant lets you send negotiation documents from the guild.{PAD}",
+      "speaker": "Deck information panel",
+      "context": "Native selector 16868 returns original pointer for room 5; caller 19E78 passes it through macro copy 53914 into a 1024-byte buffer before the D5160/D5404 panel path.",
+      "source_meaning": "Having an adjutant enables sending negotiation documents at the guild.",
+      "localization_note": "Full source-faithful natural English written independently of original line fragments. No abbreviations or authored wrapping. Layout and relocation remain pending. Complete generated word layout, all four native ink panels, aligned source-owned allocation and connected native caller/bitmap output are reviewed. Physical gameplay remains pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DECK_EXPLANATION_OARS",
+      "offset": 1257672,
+      "capacity": 52,
+      "source_hex": "9085957682AA8349815B838B82F0918682AE959489AE82C582B70A8D718A438E6D82CD947A927582C582AB82DC82B982F1000000",
+      "japanese": "水夫がオールを漕ぐ部屋です\n航海士は配置できません",
+      "english": "This is where sailors row the oars. Navigators cannot be assigned here.{PAD}",
+      "speaker": "Deck information panel",
+      "context": "Native selector 16868 returns original pointer for room 10; caller 19E78 passes it through macro copy 53914 into a 1024-byte buffer before the D5160/D5404 panel path.",
+      "source_meaning": "This room is where sailors row the oars; navigators cannot be assigned to it.",
+      "localization_note": "Full source-faithful natural English written independently of original line fragments. No abbreviations or authored wrapping. Layout and relocation remain pending. Complete generated word layout, all four native ink panels, aligned source-owned allocation and connected native caller/bitmap output are reviewed. Physical gameplay remains pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

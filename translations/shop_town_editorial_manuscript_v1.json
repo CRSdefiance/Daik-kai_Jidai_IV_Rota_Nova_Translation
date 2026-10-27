@@ -1,0 +1,1250 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "draft-not-build-approved",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_pins": {
+    "japanese": {
+      "path": "work\\clean.nds",
+      "sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+      "MESFILE_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+      "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+    },
+    "current": {
+      "path": "out\\all_routes_combined_v712_candidate.nds",
+      "sha256": "6534e5619673ea6bdffa3a2342622b99ef393bef52ef58cac131ee94ae0f4030",
+      "MESFILE_sha256": "88fe9bd52a7bcc111f89d1b1ee28acb11581d1d7b9928e47d432242b7fdd0d1e",
+      "ARM9_sha256": "af4ce98637f6febb4e3e0dab7ce63f5984050deb267713b1c741f5005eb98e41"
+    }
+  },
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_656",
+      "message_id": 656,
+      "interaction_group": "retail-and-normal-business",
+      "source_hex": "82a482bf82cd8fac948482e890ea96e582c582b782e6",
+      "japanese": "うちは小売り専門ですよ",
+      "source_reference": {
+        "block": 8,
+        "record": 7,
+        "native_offset": 280,
+        "start": 1,
+        "end": 23
+      },
+      "canonical_source_hex": "205765206f6e6c792073656c6c2072657461696c2e20",
+      "current_text_hex": "205765206f6e6c792073656c6c2072657461696c2e20",
+      "current_English": "We only sell retail.",
+      "current_reference": {
+        "block": 8,
+        "record": 7,
+        "native_offset": 280,
+        "start": 1,
+        "end": 23
+      },
+      "english": "We only sell retail.{PAD}",
+      "source_meaning": "The shop specializes in retail sales.",
+      "localization_note": "The existing short explanation is idiomatic and preserves the retail distinction.",
+      "speaker": "Square shopkeeper",
+      "context": "retail-and-normal-business; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_657",
+      "message_id": 657,
+      "interaction_group": "retail-and-normal-business",
+      "source_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6",
+      "japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "source_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 304,
+        "start": 1,
+        "end": 65
+      },
+      "canonical_source_hex": "2042756c6b2074726164653f20547279207468652074726164650a2020686f7573652e2020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2042756c6b2074726164653f20547279207468652074726164650a2020686f7573652e2020202020202020202020202020202020202020202020202020202020",
+      "current_English": "Bulk trade? Try the trade house.",
+      "current_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 304,
+        "start": 1,
+        "end": 65
+      },
+      "english": "You're a sailor, aren't you? For bulk trade, try the trade house.{PAD}",
+      "source_meaning": "The merchant recognizes the player as a sailor and recommends the trading post for large-volume business.",
+      "localization_note": "Restore the omitted sailor observation and retain the established trade-house term. The source question is friendly recognition, not a new profession assignment.",
+      "speaker": "Square shopkeeper",
+      "context": "retail-and-normal-business; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_658",
+      "message_id": 658,
+      "interaction_group": "retail-and-normal-business",
+      "source_hex": "8c698b438148814082dc82a0814182da82bf82da82bf82c582b782cb0a89bd82a9814182a482dc82a2986282cd82c882a282e082f182a982cb82a6",
+      "japanese": "景気？　まあ、ぼちぼちですね\n何か、うまい話はないもんかねえ",
+      "source_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 368,
+        "start": 65,
+        "end": 124
+      },
+      "canonical_source_hex": "2020427573696e6573733f20466169722e20492077697368206120676f6f640a20206f70706f7274756e69747920776f756c642061726973652e20",
+      "current_text_hex": "2020427573696e6573733f20466169722e20492077697368206120676f6f640a20206f70706f7274756e69747920776f756c642061726973652e20",
+      "current_English": "Business? Fair. I wish a good opportunity would arise.",
+      "current_reference": {
+        "block": 8,
+        "record": 8,
+        "native_offset": 368,
+        "start": 65,
+        "end": 124
+      },
+      "english": "Business? Oh, it's been all right. I'm hoping a good deal comes along.{PAD}",
+      "source_meaning": "Business is going reasonably, and the shopkeeper wishes a profitable opportunity would turn up.",
+      "localization_note": "Render the casual qualification and hope conversationally. A good deal conveys a business opportunity without implying an illegal scheme or adding a quest.",
+      "speaker": "Square shopkeeper",
+      "context": "retail-and-normal-business; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_659",
+      "message_id": 659,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8cf088d5956982f00a96b397bf82c5947a957a82b782e982f182c582b782cb8148",
+      "japanese": "交易品を\n無料で配布するんですね？",
+      "source_reference": {
+        "block": 8,
+        "record": 9,
+        "native_offset": 428,
+        "start": 0,
+        "end": 33
+      },
+      "canonical_source_hex": "2020476976652074686520676f6f64730a20206177617920667265653f20202020",
+      "current_text_hex": "2020476976652074686520676f6f64730a20206177617920667265653f20202020",
+      "current_English": "Give the goods away free?",
+      "current_reference": {
+        "block": 8,
+        "record": 9,
+        "native_offset": 428,
+        "start": 0,
+        "end": 33
+      },
+      "english": "Give the goods away free?{PAD}",
+      "source_meaning": "Confirm that the trade goods are to be distributed free of charge.",
+      "localization_note": "The concise existing confirmation is natural American English; for is optional in give away free.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_660",
+      "message_id": 660,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8cf088d5956982f00a96b397bf82c5947a957a82b782ea82ce82e682a282cc82c582b782cb8148",
+      "japanese": "交易品を\n無料で配布すればよいのですね？",
+      "source_reference": {
+        "block": 8,
+        "record": 10,
+        "native_offset": 464,
+        "start": 2,
+        "end": 41
+      },
+      "canonical_source_hex": "48616e642074686520676f6f64730a20206f757420667265653f20202020202020202020202020",
+      "current_text_hex": "48616e642074686520676f6f64730a20206f757420667265653f20202020202020202020202020",
+      "current_English": "Hand the goods out free?",
+      "current_reference": {
+        "block": 8,
+        "record": 10,
+        "native_offset": 464,
+        "start": 2,
+        "end": 41
+      },
+      "english": "You'd like the goods handed out for free, correct?{PAD}",
+      "source_meaning": "The speaker politely checks that distributing the trade goods without charge is the requested action.",
+      "localization_note": "Keep the courteous confirmation while replacing the clipped Hand the goods out free wording.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_661",
+      "message_id": 661,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8ca9967b82c682b582c40a8cf088d5956982f0947a82e982f182be82cb8148",
+      "japanese": "見本として\n交易品を配るんだね？",
+      "source_reference": {
+        "block": 8,
+        "record": 11,
+        "native_offset": 504,
+        "start": 0,
+        "end": 31
+      },
+      "canonical_source_hex": "2020476976652074686520676f6f64730a202061732073616d706c65733f20",
+      "current_text_hex": "2020476976652074686520676f6f64730a202061732073616d706c65733f20",
+      "current_English": "Give the goods as samples?",
+      "current_reference": {
+        "block": 8,
+        "record": 11,
+        "native_offset": 504,
+        "start": 0,
+        "end": 31
+      },
+      "english": "Give the goods as samples?{PAD}",
+      "source_meaning": "Confirm that the trade goods will be distributed as samples.",
+      "localization_note": "The existing brief confirmation is clear, natural and source-faithful.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_662",
+      "message_id": 662,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8cf088d5956982f00a835e835f82c582ad82ea82c482e282e982f182be82c88148",
+      "japanese": "交易品を\nタダでくれてやるんだな？",
+      "source_reference": {
+        "block": 8,
+        "record": 12,
+        "native_offset": 536,
+        "start": 0,
+        "end": 33
+      },
+      "canonical_source_hex": "2020476976652074686520676f6f64730a20206177617920667265653f20202020",
+      "current_text_hex": "2020476976652074686520676f6f64730a20206177617920667265653f20202020",
+      "current_English": "Give the goods away free?",
+      "current_reference": {
+        "block": 8,
+        "record": 12,
+        "native_offset": 536,
+        "start": 0,
+        "end": 33
+      },
+      "english": "You're giving these goods away for nothing, then?{PAD}",
+      "source_meaning": "The speaker bluntly confirms that the goods are being given away without payment.",
+      "localization_note": "The colloquial for nothing retains the rougher source register without inventing hostility.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_663",
+      "message_id": 663,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8cf088d5956982f00a8f5a96af82c9835e835f82c5947a82e982f182b682e182c88148",
+      "japanese": "交易品を\n住民にタダで配るんじゃな？",
+      "source_reference": {
+        "block": 8,
+        "record": 13,
+        "native_offset": 572,
+        "start": 2,
+        "end": 37
+      },
+      "canonical_source_hex": "4769766520746f776e7370656f706c650a202074686520676f6f647320667265653f20",
+      "current_text_hex": "4769766520746f776e7370656f706c650a202074686520676f6f647320667265653f20",
+      "current_English": "Give townspeople the goods free?",
+      "current_reference": {
+        "block": 8,
+        "record": 13,
+        "native_offset": 572,
+        "start": 2,
+        "end": 37
+      },
+      "english": "Give the goods to the townspeople for free, then?{PAD}",
+      "source_meaning": "Confirm that the goods are to be distributed to local residents for free, in a measured older-style register.",
+      "localization_note": "Keep local residents and the confirming then; avoid a caricatured elderly accent or an invented family relationship.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_664",
+      "message_id": 664,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8cf088d595690a8f5a96af82c9835e835f82c582a082b082e982f182be82cb8148",
+      "japanese": "交易品\n住民にタダであげるんだね？",
+      "source_reference": {
+        "block": 8,
+        "record": 14,
+        "native_offset": 608,
+        "start": 0,
+        "end": 33
+      },
+      "canonical_source_hex": "2020476976652065766572796f6e650a202074686520676f6f647320667265653f",
+      "current_text_hex": "2020476976652065766572796f6e650a202074686520676f6f647320667265653f",
+      "current_English": "Give everyone the goods free?",
+      "current_reference": {
+        "block": 8,
+        "record": 14,
+        "native_offset": 608,
+        "start": 0,
+        "end": 33
+      },
+      "english": "You're giving the goods to the townspeople for free, right?{PAD}",
+      "source_meaning": "The speaker casually confirms that local residents will receive the goods without charge.",
+      "localization_note": "Restore the specific townspeople rather than the less precise everyone and retain the friendly confirmation.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_665",
+      "message_id": 665,
+      "interaction_group": "free-distribution-confirmation-variants",
+      "source_hex": "8ca9967b82c682b582c40a8cf088d5956982f096b397bf82c5947a957a82b782e982cc82c582b782c88148",
+      "japanese": "見本として\n交易品を無料で配布するのですな？",
+      "source_reference": {
+        "block": 8,
+        "record": 15,
+        "native_offset": 644,
+        "start": 2,
+        "end": 45
+      },
+      "canonical_source_hex": "47697665206f75742074686520676f6f64730a2020617320667265652073616d706c65733f202020202020",
+      "current_text_hex": "47697665206f75742074686520676f6f64730a2020617320667265652073616d706c65733f202020202020",
+      "current_English": "Give out the goods as free samples?",
+      "current_reference": {
+        "block": 8,
+        "record": 15,
+        "native_offset": 644,
+        "start": 2,
+        "end": 45
+      },
+      "english": "You'll be handing out the goods as free samples, then?{PAD}",
+      "source_meaning": "The speaker formally confirms distribution of the goods without charge as samples.",
+      "localization_note": "Use a complete conversational confirmation while retaining both the sample purpose and absence of payment.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-distribution-confirmation-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_666",
+      "message_id": 666,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a081418ca9967b82f082b28ea9975282c982a88e9d82bf82ad82be82b382a20a8da193fa82cd96b397bf82c582b782e68149",
+      "japanese": "さあ、見本をご自由にお持ちください\n今日は無料ですよ！",
+      "source_reference": {
+        "block": 8,
+        "record": 16,
+        "native_offset": 688,
+        "start": 0,
+        "end": 53
+      },
+      "canonical_source_hex": "2020506c656173652074616b65206120667265652073616d706c65210a20204e6f2063686172676520746f64617921202020202020",
+      "current_text_hex": "2020506c656173652074616b65206120667265652073616d706c65210a20204e6f2063686172676520746f64617921202020202020",
+      "current_English": "Please take a free sample! No charge today!",
+      "current_reference": {
+        "block": 8,
+        "record": 16,
+        "native_offset": 688,
+        "start": 0,
+        "end": 53
+      },
+      "english": "Please take a free sample! No charge today!{PAD}",
+      "source_meaning": "Invite people to take samples freely and say they are free today.",
+      "localization_note": "The existing invitation and No charge today are natural; preserve the source emphasis instead of rewriting merely for variation.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_667",
+      "message_id": 667,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a0814182dd82c882b382f181428ea9975282c982a88e9d82bf82c882b382a20a96b397bf82e482a68141899397b682cd82a282e882dc82b982f1",
+      "japanese": "さあ、みなさん。自由にお持ちなさい\n無料ゆえ、遠慮はいりません",
+      "source_reference": {
+        "block": 8,
+        "record": 17,
+        "native_offset": 744,
+        "start": 2,
+        "end": 63
+      },
+      "canonical_source_hex": "45766572796f6e652c20706c656173652074616b65206f6e652e0a20205468657927726520667265652c20736f20646f6e27742062650a20207368792e",
+      "current_text_hex": "45766572796f6e652c20706c656173652074616b65206f6e652e0a20205468657927726520667265652c20736f20646f6e27742062650a20207368792e",
+      "current_English": "Everyone, please take one. They're free, so don't be shy.",
+      "current_reference": {
+        "block": 8,
+        "record": 17,
+        "native_offset": 744,
+        "start": 2,
+        "end": 63
+      },
+      "english": "Everyone, please take one. They're free, so don't be shy.{PAD}",
+      "source_meaning": "Invite everyone to help themselves without hesitation because there is no charge.",
+      "localization_note": "The existing polite invitation and do not be shy preserve the welcome and reassurance naturally.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_668",
+      "message_id": 668,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a082b382a081418ca982c482c182c481418e9d82c182c482c182c481490a8da182c882e791e58354815b8372835882c58ca9967b82f08376838c835b839383678149",
+      "japanese": "さあさあ、見てって、持ってって！\n今なら大サービスで見本をプレゼント！",
+      "source_reference": {
+        "block": 8,
+        "record": 18,
+        "native_offset": 808,
+        "start": 2,
+        "end": 71
+      },
+      "canonical_source_hex": "436f6d65206c6f6f6b20616e642074616b65206f6e65210a2020467265652073616d706c657320666f722065766572796f6e65212020202020202020202020202020202020",
+      "current_text_hex": "436f6d65206c6f6f6b20616e642074616b65206f6e65210a2020467265652073616d706c657320666f722065766572796f6e65212020202020202020202020202020202020",
+      "current_English": "Come look and take one! Free samples for everyone!",
+      "current_reference": {
+        "block": 8,
+        "record": 18,
+        "native_offset": 808,
+        "start": 2,
+        "end": 71
+      },
+      "english": "Come take a look! Free samples, just for you!{PAD}",
+      "source_meaning": "A lively hawker urges people to look and take a sample, presenting the gift as a generous current offer.",
+      "localization_note": "Replace the stiff Come look and take one with an energetic sales call. Just for you is promotional address, not a claim of restricted availability.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_669",
+      "message_id": 669,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a0814182b28ea9975282c98e8e82b582c482ad82be82b382a282cb81490a82b182ea82cd8ca9967b82c582b782a982e782cb8149",
+      "japanese": "さあ、ご自由に試してくださいね！\nこれは見本ですからね！",
+      "source_reference": {
+        "block": 8,
+        "record": 19,
+        "native_offset": 880,
+        "start": 2,
+        "end": 57
+      },
+      "canonical_source_hex": "506c6561736520747279206f6e65210a202049742773206120667265652073616d706c6521202020202020202020202020202020202020",
+      "current_text_hex": "506c6561736520747279206f6e65210a202049742773206120667265652073616d706c6521202020202020202020202020202020202020",
+      "current_English": "Please try one! It's a free sample!",
+      "current_reference": {
+        "block": 8,
+        "record": 19,
+        "native_offset": 880,
+        "start": 2,
+        "end": 57
+      },
+      "english": "Please try one! It's a free sample!{PAD}",
+      "source_meaning": "Invite the listener to try the product freely because it is a sample.",
+      "localization_note": "The existing short invitation is fluent and conveys the sample purpose in this free-distribution interaction.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_670",
+      "message_id": 670,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a0814182b182a282c282f08e8e82b582c482dd82c482ad82ea81490a8da182c882e7835e835f82be82e6814981408e9d82c182c482a282ab82c88149",
+      "japanese": "さあ、こいつを試してみてくれ！\n今ならタダだよ！　持っていきな！",
+      "source_reference": {
+        "block": 8,
+        "record": 20,
+        "native_offset": 936,
+        "start": 0,
+        "end": 63
+      },
+      "canonical_source_hex": "20205472792074686973210a20204974277320667265652c20736f2074616b65206f6e65212020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "20205472792074686973210a20204974277320667265652c20736f2074616b65206f6e65212020202020202020202020202020202020202020202020202020",
+      "current_English": "Try this! It's free, so take one!",
+      "current_reference": {
+        "block": 8,
+        "record": 20,
+        "native_offset": 936,
+        "start": 0,
+        "end": 63
+      },
+      "english": "Try this! It's free, so take one!{PAD}",
+      "source_meaning": "Urge people to try and take the product because it is free at present.",
+      "localization_note": "The existing brisk Try this and take one preserve the informal sales pitch.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_671",
+      "message_id": 671,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a0814182b182a282c282f08e8e82b582c482a882ad82ea81490a8ca9967b82be82e6814981408da182c882e7835e835f82b682e182e68149",
+      "japanese": "さあ、こいつを試しておくれ！\n見本だよ！　今ならタダじゃよ！",
+      "source_reference": {
+        "block": 8,
+        "record": 21,
+        "native_offset": 1000,
+        "start": 0,
+        "end": 59
+      },
+      "canonical_source_hex": "2020547279207468697321204120667265652073616d706c65210a2020497420636f737473206e6f7468696e6720746f6461792120202020202020",
+      "current_text_hex": "2020547279207468697321204120667265652073616d706c65210a2020497420636f737473206e6f7468696e6720746f6461792120202020202020",
+      "current_English": "Try this! A free sample! It costs nothing today!",
+      "current_reference": {
+        "block": 8,
+        "record": 21,
+        "native_offset": 1000,
+        "start": 0,
+        "end": 59
+      },
+      "english": "Here, give this a try! It's a sample, and it's free right now!{PAD}",
+      "source_meaning": "Warmly urge people to try the product, explaining that it is a sample and currently free.",
+      "localization_note": "Replace It costs nothing today with a conversational invitation. Right now preserves the source current offer without inventing a whole-day limit.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_672",
+      "message_id": 672,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a082b382a0814182b182ea82cd8ca9967b82be82e6816081490a8da182b182bb82a88e8e82b582cc836083838393835882be82e681608149",
+      "japanese": "さあさあ、これは見本だよ～！\n今こそお試しのチャンスだよ～！",
+      "source_reference": {
+        "block": 8,
+        "record": 22,
+        "native_offset": 1060,
+        "start": 0,
+        "end": 59
+      },
+      "canonical_source_hex": "2020467265652073616d706c65732068657265210a20204e6f7720697320796f7572206368616e636520746f207472790a20206f6e652120202020",
+      "current_text_hex": "2020467265652073616d706c65732068657265210a20204e6f7720697320796f7572206368616e636520746f207472790a20206f6e652120202020",
+      "current_English": "Free samples here! Now is your chance to try one!",
+      "current_reference": {
+        "block": 8,
+        "record": 22,
+        "native_offset": 1060,
+        "start": 0,
+        "end": 59
+      },
+      "english": "Free samples here! Now is your chance to try one!{PAD}",
+      "source_meaning": "Call attention to samples and tell people that now is their opportunity to try them.",
+      "localization_note": "The existing sales call is natural and complete within the free-sample context.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_673",
+      "message_id": 673,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82b382a0814182b28ea9975282c982a88e9d82bf82ad82be82b382a20a8da182c882e796b397bf82c582a88e8e82b582a282bd82be82af82dc82b782bc8149",
+      "japanese": "さあ、ご自由にお持ちください\n今なら無料でお試しいただけますぞ！",
+      "source_reference": {
+        "block": 8,
+        "record": 23,
+        "native_offset": 1120,
+        "start": 0,
+        "end": 63
+      },
+      "canonical_source_hex": "2020506c656173652074616b65206f6e652e0a2020467265652073616d706c657320617661696c61626c65206e6f7721202020202020202020202020202020",
+      "current_text_hex": "2020506c656173652074616b65206f6e652e0a2020467265652073616d706c657320617661696c61626c65206e6f7721202020202020202020202020202020",
+      "current_English": "Please take one. Free samples available now!",
+      "current_reference": {
+        "block": 8,
+        "record": 23,
+        "native_offset": 1120,
+        "start": 0,
+        "end": 63
+      },
+      "english": "Please take one. Free samples available now!{PAD}",
+      "source_meaning": "Politely invite listeners to take a sample and try it free of charge now.",
+      "localization_note": "The current polite invitation and free-samples announcement are adequate natural localization.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_674",
+      "message_id": 674,
+      "interaction_group": "free-sample-announcement-variants",
+      "source_hex": "82d682a681498140835e835f82c882e78e8e82b582c482dd82e682a48149",
+      "japanese": "へえ！　タダなら試してみよう！",
+      "source_reference": {
+        "block": 8,
+        "record": 24,
+        "native_offset": 1184,
+        "start": 0,
+        "end": 30
+      },
+      "canonical_source_hex": "2020467265653f205468656e2049276c6c20747279206974212020202020",
+      "current_text_hex": "2020467265653f205468656e2049276c6c20747279206974212020202020",
+      "current_English": "Free? Then I'll try it!",
+      "current_reference": {
+        "block": 8,
+        "record": 24,
+        "native_offset": 1184,
+        "start": 0,
+        "end": 30
+      },
+      "english": "Free? Then I'll try it!{PAD}",
+      "source_meaning": "A listener reacts with interest and agrees to try the product if it is free.",
+      "localization_note": "The current Free? Then I will try it reaction preserves the casual enthusiasm.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "free-sample-announcement-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_675",
+      "message_id": 675,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82bf82e582c182c68ca982c482b282e782f182e60a82b182cc25730a82b182ea82cd8ad488e182a282c882ad8dc58d8282cc956982be82e6",
+      "japanese": "ちょっと見てごらんよ\nこの%s\nこれは間違いなく最高の品だよ",
+      "source_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1216,
+        "start": 1,
+        "end": 57
+      },
+      "canonical_source_hex": "204c6f6f6b20617420746869732025732e204974277320737572656c790a20207468652066696e657374207175616c6974792e2020202020",
+      "current_text_hex": "204c6f6f6b20617420746869732025732e204974277320737572656c790a20207468652066696e657374207175616c6974792e2020202020",
+      "current_English": "Look at this %s. It's surely the finest quality.",
+      "current_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1216,
+        "start": 1,
+        "end": 57
+      },
+      "english": "Take a look at this %s. It's top quality, without a doubt!{PAD}",
+      "source_meaning": "Draw attention to the substituted product and emphatically claim it is of the highest quality.",
+      "localization_note": "Replace surely the finest quality with a fluent sales claim, preserving the one source product substitution.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_676",
+      "message_id": 676,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82b382a0814182b182a282c282f08e6782c182c48dec82e90a8dc58d8282cc96a182cc82b28fd089ee82be0a82b382a082b382a0814182bb82b182cc899c95fb81428ca982c482a282ab82c8",
+      "japanese": "さあ、こいつを使って作る\n最高の味のご紹介だ\nさあさあ、そこの奥方。見ていきな",
+      "source_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1272,
+        "start": 57,
+        "end": 133
+      },
+      "canonical_source_hex": "202053656520776861742074686973206d616b65733a207375706572620a2020666c61766f7221202020202020204c61646965732c2074616b652061206c6f6f6b2120446973636f7665720a",
+      "current_text_hex": "202053656520776861742074686973206d616b65733a207375706572620a2020666c61766f7221202020202020204c61646965732c2074616b652061206c6f6f6b2120446973636f7665720a",
+      "current_English": "See what this makes: superb flavor! Ladies, take a look! Discover",
+      "current_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1272,
+        "start": 57,
+        "end": 133
+      },
+      "english": "Let me show you just how delicious this can be! Come take a look, ma'am!{PAD}",
+      "source_meaning": "Introduce the excellent flavors made using the product and call to a nearby woman to come watch.",
+      "localization_note": "Restore the complete cooking demonstration as its own selection. The current final word Discover belongs to the next independent fashion pitch and must not remain here.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_677",
+      "message_id": 677,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82b182ea82a982e782cc8ed08cf08a4582c588ea96f4928d96da82f0978182d182e90a83748340836283568387839382e2834383938365838a834182f00a8fd089ee82b782e982e60a90618e6d8f698f9782f08ea9944682b782e982c882e781418af182c182c682a282c5",
+      "japanese": "これからの社交界で一躍注目を浴びる\nファッションやインテリアを\n紹介するよ\n紳士淑女を自認するなら、寄っといで",
+      "source_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1348,
+        "start": 133,
+        "end": 240
+      },
+      "canonical_source_hex": "20207468652066617368696f6e7320616e64206465636f7220736f6f6e0a2020746f2063617074697661746520736f63696574792e202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "20207468652066617368696f6e7320616e64206465636f7220736f6f6e0a2020746f2063617074697661746520736f63696574792e202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_English": "the fashions and decor soon to captivate society.",
+      "current_reference": {
+        "block": 8,
+        "record": 25,
+        "native_offset": 1348,
+        "start": 133,
+        "end": 240
+      },
+      "english": "Come see the fashions and furnishings that'll soon be the talk of society! If you fancy yourself a lady or gentleman, step right up!{PAD}",
+      "source_meaning": "Introduce fashions and interior furnishings expected to attract high-society attention; invite anyone considering themselves a lady or gentleman to come over.",
+      "localization_note": "Restore the independent introduction and the omitted invitation to ladies and gentlemen. Do not start this native selection with the fashions as a continuation of message 676.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_678",
+      "message_id": 678,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82a4815b82f1814182b182cc8d8182e8814182b182cc96a1814282c782a482be82a281480a93fa8da082cc94e682ea82e0908182ab94f282ce82b782e60a82b382a082b382a081418e8e82b582c48e8e82b582c48149",
+      "japanese": "うーん、この香り、この味。どうだい？\n日頃の疲れも吹き飛ばすよ\nさあさあ、試して試して！",
+      "source_reference": {
+        "block": 8,
+        "record": 26,
+        "native_offset": 1456,
+        "start": 0,
+        "end": 86
+      },
+      "canonical_source_hex": "20204d6d6d2c20746861742061726f6d6120616e6420666c61766f72210a20204974206d656c7473206177617920666174696775652e205472790a202069742120202020202020202020202020202020202020202020",
+      "current_text_hex": "20204d6d6d2c20746861742061726f6d6120616e6420666c61766f72210a20204974206d656c7473206177617920666174696775652e205472790a202069742120202020202020202020202020202020202020202020",
+      "current_English": "Mmm, that aroma and flavor! It melts away fatigue. Try it!",
+      "current_reference": {
+        "block": 8,
+        "record": 26,
+        "native_offset": 1456,
+        "start": 0,
+        "end": 86
+      },
+      "english": "Mmm, that aroma and flavor! It melts away fatigue. Try it!{PAD}",
+      "source_meaning": "Praise the aroma and flavor, promise relief from daily fatigue, and urge people to try the product.",
+      "localization_note": "The current sales patter is natural enough and preserves fatigue rather than substituting unrelated worries.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_679",
+      "message_id": 679,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "905682b582a294ad96be82e28e598bc682aa814196da9492899f82b582cc0a82b182cc8e9e91e381418e8482cc8d75898982f095b782a282c40a91b982cd82c882a282cb81428382835e8382835e82b582c482e982c60a8be096d782af82a982e78ee682e88e6382b382ea82e982e6",
+      "japanese": "新しい発明や産業が、目白押しの\nこの時代、私の講演を聞いて\n損はないね。モタモタしてると\n金儲けから取り残されるよ",
+      "source_reference": {
+        "block": 8,
+        "record": 27,
+        "native_offset": 1544,
+        "start": 1,
+        "end": 112
+      },
+      "canonical_source_hex": "205468697320616765206f766572666c6f777320776974680a2020696e76656e74696f6e7320616e6420696e6475737472792e20486561720a20206d79206c656374757265206f72206d69737320796f75720a20206368616e636520746f2070726f66697421202020202020202020",
+      "current_text_hex": "205468697320616765206f766572666c6f777320776974680a2020696e76656e74696f6e7320616e6420696e6475737472792e20486561720a20206d79206c656374757265206f72206d69737320796f75720a20206368616e636520746f2070726f66697421202020202020202020",
+      "current_English": "This age overflows with inventions and industry. Hear my lecture or miss your chance to profit!",
+      "current_reference": {
+        "block": 8,
+        "record": 27,
+        "native_offset": 1544,
+        "start": 1,
+        "end": 112
+      },
+      "english": "New inventions and industries are springing up everywhere. My lecture is well worth your time. Wait too long, and you'll miss out on the profits!{PAD}",
+      "source_meaning": "In an age full of new inventions and industries, the speaker boasts that the lecture is worth hearing and warns slow listeners that money-making opportunities will pass them by.",
+      "localization_note": "Restore the full boast and warning in fluent sentences. Keep the speaker selling a lecture, not a newly invented product effect.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_680",
+      "message_id": 680,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82b182ea82b382a682a082ea82ce8141969c956182aa8ea182e90a82be82dc82b382ea82bd82c68e7682c182c40a8e8e82b582c482b282e782f182c882b382a2",
+      "japanese": "これさえあれば、万病が治る\nだまされたと思って\n試してごらんなさい",
+      "source_reference": {
+        "block": 8,
+        "record": 28,
+        "native_offset": 1656,
+        "start": 0,
+        "end": 64
+      },
+      "canonical_source_hex": "20205468697320637572657320657665727920696c6c6e6573732e205472790a2020697420616e64207365652120202020202020202020202020202020202020",
+      "current_text_hex": "20205468697320637572657320657665727920696c6c6e6573732e205472790a2020697420616e64207365652120202020202020202020202020202020202020",
+      "current_English": "This cures every illness. Try it and see!",
+      "current_reference": {
+        "block": 8,
+        "record": 28,
+        "native_offset": 1656,
+        "start": 0,
+        "end": 64
+      },
+      "english": "This cures every illness! Humor me and give it a try.{PAD}",
+      "source_meaning": "The promoter claims a cure for every illness and asks a skeptical listener to give it a try anyway.",
+      "localization_note": "Humor me expresses the idiom asking someone to try despite doubts. This remains the promoter's boast; it is not confirmation of a game-item effect.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_681",
+      "message_id": 681,
+      "interaction_group": "product-demonstration-and-reaction-variants",
+      "source_hex": "82d682a681630a257382a90a82a4815b82f1814182b182a282c282cd9776836083468362834e82be82cb0a257382a082bd82e882c5948482c182c482dd82e682a4",
+      "japanese": "へえ…\n%sか\nうーん、こいつは要チェックだね\n%sあたりで売ってみよう",
+      "source_reference": {
+        "block": 8,
+        "record": 28,
+        "native_offset": 1720,
+        "start": 64,
+        "end": 129
+      },
+      "canonical_source_hex": "2020486d6d2e2e2e2025733f20576f727468207761746368696e672e0a20204c65742773207472792073656c6c696e672069742061726f756e640a202025732e20",
+      "current_text_hex": "2020486d6d2e2e2e2025733f20576f727468207761746368696e672e0a20204c65742773207472792073656c6c696e672069742061726f756e640a202025732e20",
+      "current_English": "Hmm... %s? Worth watching. Let's try selling it around %s.",
+      "current_reference": {
+        "block": 8,
+        "record": 28,
+        "native_offset": 1720,
+        "start": 64,
+        "end": 129
+      },
+      "english": "Hmm... %s? Worth watching. Let's try selling it around %s.{PAD}",
+      "source_meaning": "Take note of the substituted product as worth watching and suggest trying to sell it in the substituted area.",
+      "localization_note": "The thoughtful fragments are natural spoken reactions. Both product and location substitutions remain in order.",
+      "speaker": "Source-register confirmation or promotion speaker; exact actor assignment pending",
+      "context": "product-demonstration-and-reaction-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_682",
+      "message_id": 682,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814082bb82ea82c782b182eb82b682e182a082e882dc82b982f182e60a918182ad95bd986182c982c882c182c482d982b582a282e082f182c582b7",
+      "japanese": "景気？　それどころじゃありませんよ\n早く平和になってほしいもんです",
+      "source_reference": {
+        "block": 8,
+        "record": 29,
+        "native_offset": 1788,
+        "start": 2,
+        "end": 67
+      },
+      "canonical_source_hex": "427573696e6573733f20466f7267657420746861742e0a202049206a75737420686f70652070656163652072657475726e730a2020736f6f6e2e20202020202020",
+      "current_text_hex": "427573696e6573733f20466f7267657420746861742e0a202049206a75737420686f70652070656163652072657475726e730a2020736f6f6e2e20202020202020",
+      "current_English": "Business? Forget that. I just hope peace returns soon.",
+      "current_reference": {
+        "block": 8,
+        "record": 29,
+        "native_offset": 1788,
+        "start": 2,
+        "end": 67
+      },
+      "english": "Business? That's the least of my worries. I just hope peace returns soon.{PAD}",
+      "source_meaning": "Business is not the speaker's immediate concern; the speaker hopes peace returns quickly.",
+      "localization_note": "Replace the brusque Forget that with a natural worried response, preserving the wish for peace.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_683",
+      "message_id": 683,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b43814881408975956182c5906c82aa836f835e836f835e937c82ea82c482e90a82c182c482a282a482cc82c9814182d382b482af82c482e982f182c582b782a98148",
+      "japanese": "景気？　疫病で人がバタバタ倒れてる\nっていうのに、ふざけてるんですか？",
+      "source_reference": {
+        "block": 8,
+        "record": 30,
+        "native_offset": 1856,
+        "start": 2,
+        "end": 71
+      },
+      "canonical_source_hex": "427573696e6573733f2050656f706c6520617265206479696e670a202066726f6d20646973656173652c20616e6420796f752061736b0a2020746861743f20202020202020",
+      "current_text_hex": "427573696e6573733f2050656f706c6520617265206479696e670a202066726f6d20646973656173652c20616e6420796f752061736b0a2020746861743f20202020202020",
+      "current_English": "Business? People are dying from disease, and you ask that?",
+      "current_reference": {
+        "block": 8,
+        "record": 30,
+        "native_offset": 1856,
+        "start": 2,
+        "end": 71
+      },
+      "english": "Business? People are collapsing from the epidemic! Are you kidding me?{PAD}",
+      "source_meaning": "The speaker angrily challenges the business question because people are collapsing in an epidemic.",
+      "localization_note": "The Japanese says collapsing, not confirmed deaths. Restore that distinction and preserve indignation without naming a specific disease.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_684",
+      "message_id": 684,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814082bb82ea82e682e882e082dc82b8904897bf82c582b782e60a906c8ad4904882ed82c882ab82e10a90b682ab82c482a282af82dc82b982f182a982e782cb",
+      "japanese": "景気？　それよりもまず食料ですよ\n人間食わなきゃ\n生きていけませんからね",
+      "source_reference": {
+        "block": 8,
+        "record": 31,
+        "native_offset": 1928,
+        "start": 2,
+        "end": 72
+      },
+      "canonical_source_hex": "427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c652063616e6e6f74206c69766520776974686f75740a2020656174696e672e20202020",
+      "current_text_hex": "427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c652063616e6e6f74206c69766520776974686f75740a2020656174696e672e20202020",
+      "current_English": "Business? Food comes first. People cannot live without eating.",
+      "current_reference": {
+        "block": 8,
+        "record": 31,
+        "native_offset": 1928,
+        "start": 2,
+        "end": 72
+      },
+      "english": "Business? Food comes first. People have to eat to survive.{PAD}",
+      "source_meaning": "Food is a more urgent concern than business because people cannot survive without eating.",
+      "localization_note": "Keep the plain, urgent explanation with a natural contraction-free final sentence.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_685",
+      "message_id": 685,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814082a282e282a081418ca982c482cc92ca82e882c582b782e60a8fce82a282aa8e7e82dc82e882dc82b982f182cb82a6",
+      "japanese": "景気？　いやあ、見ての通りですよ\n笑いが止まりませんねえ",
+      "source_reference": {
+        "block": 8,
+        "record": 32,
+        "native_offset": 2000,
+        "start": 1,
+        "end": 56
+      },
+      "canonical_source_hex": "20427573696e6573733f204a757374206c6f6f6b2061726f756e64210a2020492063616e27742073746f7020736d696c696e672e202020",
+      "current_text_hex": "20427573696e6573733f204a757374206c6f6f6b2061726f756e64210a2020492063616e27742073746f7020736d696c696e672e202020",
+      "current_English": "Business? Just look around! I can't stop smiling.",
+      "current_reference": {
+        "block": 8,
+        "record": 32,
+        "native_offset": 2000,
+        "start": 1,
+        "end": 56
+      },
+      "english": "Business? Just look around! I can't stop smiling.{PAD}",
+      "source_meaning": "Business is visibly excellent and the speaker cannot stop smiling or laughing.",
+      "localization_note": "The current upbeat look around and cannot stop smiling response is already natural.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_686",
+      "message_id": 686,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814095b782a982c882a282c582ad82be82b382a282e60a82b182ea82b682e18fa4948482c982c882e882dc82b982f182e6",
+      "japanese": "景気？　聞かないでくださいよ\nこれじゃ商売になりませんよ",
+      "source_reference": {
+        "block": 8,
+        "record": 33,
+        "native_offset": 2056,
+        "start": 0,
+        "end": 55
+      },
+      "canonical_source_hex": "2020427573696e6573733f20446f6e27742061736b2e0a20204e6f206f6e652063616e207472616465206c696b6520746869732e202020",
+      "current_text_hex": "2020427573696e6573733f20446f6e27742061736b2e0a20204e6f206f6e652063616e207472616465206c696b6520746869732e202020",
+      "current_English": "Business? Don't ask. No one can trade like this.",
+      "current_reference": {
+        "block": 8,
+        "record": 33,
+        "native_offset": 2056,
+        "start": 0,
+        "end": 55
+      },
+      "english": "Business? Don't ask. How's anyone supposed to do business like this?{PAD}",
+      "source_meaning": "The speaker asks not to be questioned and complains that business is impossible under the current circumstances.",
+      "localization_note": "Use a natural rhetorical complaint, without adding a particular disaster or financial outcome.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_687",
+      "message_id": 687,
+      "interaction_group": "business-response-event-variants",
+      "source_hex": "8c698b438148814092e88afa914482aa92be82f182c582b582dc82c182c40a82dd82f182c88da282c182c482dc82b782e6",
+      "japanese": "景気？　定期船が沈んでしまって\nみんな困ってますよ",
+      "source_reference": {
+        "block": 8,
+        "record": 34,
+        "native_offset": 2112,
+        "start": 0,
+        "end": 49
+      },
+      "canonical_source_hex": "2020427573696e6573733f20546865206c696e65722073616e6b2e0a202045766572796f6e6520737566666572732e2020",
+      "current_text_hex": "2020427573696e6573733f20546865206c696e65722073616e6b2e0a202045766572796f6e6520737566666572732e2020",
+      "current_English": "Business? The liner sank. Everyone suffers.",
+      "current_reference": {
+        "block": 8,
+        "record": 34,
+        "native_offset": 2112,
+        "start": 0,
+        "end": 49
+      },
+      "english": "Business? The ship on the regular route sank, and everyone's in a bind.{PAD}",
+      "source_meaning": "A regularly scheduled service vessel has sunk, causing difficulty for everyone.",
+      "localization_note": "Express the scheduled vessel without suggesting a modern cruise liner or inventing a passenger/cargo purpose.",
+      "speaker": "Square shopkeeper",
+      "context": "business-response-event-variants; alternate native selections, not assumed to form one sequential conversation.",
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "editorial-draft-native-context-and-formatting-pending"
+    }
+  ],
+  "layout_requirement": "Use the actual COMMON consumer contract, not a story profile with different literal-I/F macro rules. Paragraphs may require native repacking; no truncation or authored alignment/breaks."
+}

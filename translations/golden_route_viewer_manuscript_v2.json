@@ -1,0 +1,159 @@
+{
+  "format": "dk4-golden-route-viewer-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "status": "reviewed-native-viewer-formatting-experimental-runtime-pending",
+  "clean_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "source_arm9_sha256": "004aef018e9731fc5ab202ac40cfffe70e2cdc2060e44e7d7ea64946128c7b83",
+  "records": [
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_PREVIOUS",
+      "source_offset": 1483168,
+      "source_capacity": 8,
+      "pointer_field": 1240104,
+      "source_hex": "914f82d6",
+      "japanese": "前へ",
+      "english": "Previous",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "Previous Golden Route record/page",
+      "context": "Native footer descriptor selects this label through CA890/CA780.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_NEXT",
+      "source_offset": 1483176,
+      "source_capacity": 8,
+      "pointer_field": 1240108,
+      "source_hex": "8e9f82d6",
+      "japanese": "次へ",
+      "english": "Next",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "Next Golden Route record/page",
+      "context": "Native footer descriptor selects this label through CA890/CA780.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_SWITCH",
+      "source_offset": 1483192,
+      "source_capacity": 12,
+      "pointer_field": 1240140,
+      "source_hex": "90d882e891d682a6",
+      "japanese": "切り替え",
+      "english": "Switch",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "Switch the viewer display",
+      "context": "Native footer descriptor selects this label through CA890/CA780.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_FOUND",
+      "source_offset": 1483204,
+      "source_capacity": 16,
+      "pointer_field": 1483184,
+      "source_hex": "89a98be08d71984894ad8ca98149",
+      "japanese": "黄金航路発見！",
+      "english": "Golden Route Found!",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "A Golden Route has been discovered",
+      "context": "Native title array 16A1B0, selected by F2BFC:F2C40.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_RECORDS",
+      "source_offset": 1483220,
+      "source_capacity": 16,
+      "pointer_field": 1483188,
+      "source_hex": "89a98be08d71984882cc8b4c985e",
+      "japanese": "黄金航路の記録",
+      "english": "Golden Route Records",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "Records of Golden Routes",
+      "context": "Native title array 16A1B0, selected by F2BFC:F2C40.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "GOLDEN_ROUTE_VIEWER_EMPTY",
+      "source_offset": 1486716,
+      "source_capacity": 28,
+      "pointer_field": 988376,
+      "source_hex": "89a98be08d71984882cc8b4c985e82cd974c82e882dc82b982f1",
+      "japanese": "黄金航路の記録は有りません",
+      "english": "No Golden Route records.",
+      "speaker": "Golden Route viewer",
+      "source_meaning": "There are no Golden Route records",
+      "context": "Zero-record guard F0B70:F0B90 invokes formatted message dialog 5473C.",
+      "localization_note": "Natural complete UI wording; retain discovery, records, navigation and zero-record meaning.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "limitations": [
+    "Native formatted title/footer/modal consumers require complete execution and layout gates.",
+    "Literal pointer coverage does not establish computed/Thumb/overlay ownership.",
+    "No separate COMMON translations or ROM integration credit."
+  ],
+  "native_formatting_limits": {
+    "headings": [
+      "Native selector/strlen/printf execute; renderer consumes the actual copied text in a separate invocation.",
+      "Initialized font metrics, bitmap origin and glyph copy are contracts.",
+      "Y0/Y12 are parameterized geometry cases; actual parent physical routing remains pending.",
+      "Footer control transfer/placement and zero-record formatted dialog still require full native proofs."
+    ],
+    "footer": [
+      "The 256-by-12 surface view constructor/destructor and origin/glyph copy are bounded contracts.",
+      "Native label transfer, width/gaps/placement, font init/cleanup and complete pixels execute.",
+      "Physical HUD composition/controller input and zero-record modal rendering remain pending."
+    ],
+    "empty": [
+      "Saved record count is a contract; source mode-zero 256-by-96 parent bitmap/text bounds are initialized contracts.",
+      "Native dispatch/printf/macro expansion and actual modal renderer/font setters/pixels/cleanup execute in connected separate invocations.",
+      "Bitmap origin and eleven-byte glyph copy are bounded contracts; parent border/physical routing and input dismissal remain pending."
+    ]
+  },
+  "source_reviewed_manuscript_sha256": "38bcb2b3aaae049bb3d188df130048e9880edf3a2768341ed6d9bf8816529b2c",
+  "native_evidence_sha256": {
+    "headings": "9dabb207a30ced455f3045458c141da9a534aecab8ad3b9ee092f769e2c47a68",
+    "footer": "61b8a2950498377c731f73648b394fd3aa099bb30901d7956505dc6db6ea82ca",
+    "empty": "372f16f21b1cd5e505d4455b3635f6323fdf326b773fe0209a47f7707dfc2f58"
+  }
+}

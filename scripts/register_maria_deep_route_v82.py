@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v81"]["batches"]);b.append("translations/maria_deep_route_v82.json");p["profiles"]["maria-deep-route-v82"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V81 with all 13 records across SC3 blocks 89-90: the hidden-believer lamp handoff and Ottoman-capital deadline outcomes."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v82: {len(b)} batches")

@@ -1,0 +1,24 @@
+{
+  "format": "dk4-arm9-fixed-text-batch-v1",
+  "content_type": "arm9-inline-code-v1",
+  "file_path": "/__arm9__.bin",
+  "source_file_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5",
+  "status": "prepared-experimental-unregistered-runtime-pending",
+  "scope": "Whole-character end insertion; preserves configured name capacity and NUL.",
+  "verification": {
+    "proof_path": "work\\analysis\\grand_race_name_append_v136_proof.json",
+    "proof_sha256": "cea45d074cc44966648f769b23b1a93da810dd8f1b8f577fec61d5447ccf93c4",
+    "cases": 34,
+    "full_native_frame_and_return": true,
+    "external_helpers": "Cursor/drawing contracts, caller-register poisoning; not gameplay."
+  },
+  "records": [
+    {
+      "id": "NAME_EDITOR_ATOMIC_END_APPEND",
+      "offset": 723228,
+      "runtime_address": 34277660,
+      "source_hex": "020000ead100d7e0015085e20100c6e4a00098e5000055e1020000aad000d7e1000050e3f6ffff1a",
+      "replacement_hex": "0700a0e1007900eba01098e5000085e0010050e13400008ad100d7e0000050e30100c614fbffff1a"
+    }
+  ]
+}

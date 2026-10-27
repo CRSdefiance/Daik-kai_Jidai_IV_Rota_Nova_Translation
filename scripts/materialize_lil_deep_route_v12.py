@@ -4,7 +4,6 @@ import csv
 import json
 from pathlib import Path
 
-
 SOURCE = Path("work/sc2/script.csv")
 OUTPUT = Path("translations/lil_deep_route_v12.json")
 SC2_SHA256 = "c2e0d1a2744a7da4a24f9693230b302a29f05bcaa036ebd5cc9726a6184731ff"
@@ -87,7 +86,7 @@ LINES = {
 }
 
 EXCLUDED = {
-    "DK4_MES_B61_R0226": "Two-byte branch control fragment (94 82), not dialogue.",
+    "DK4_MES_B61_R0226": "Two-byte branch control fragment (94 40), not dialogue.",
     "DK4_MES_B61_R0258": "Two-byte branch control fragment (96 82), not dialogue.",
     "DK4_MES_B61_R0290": "Two-byte branch control fragment (97 82), not dialogue.",
     "DK4_MES_B61_R0322": "Two-byte branch control fragment (95 82), not dialogue.",

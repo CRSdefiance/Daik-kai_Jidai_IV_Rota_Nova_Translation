@@ -1,0 +1,10 @@
+"""Current ordinary Boarding7 comment:original selector,pixels and scoped cancel."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+OLD=Path('scripts/verify_work_current_v2311.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'work_current_verification_v2311':'boarding_current_verification_v2365','work_current_v2310_V2284':'boarding_current_v2364_V2284','work_current_run_v2310':'boarding_current_run_v2364','translations/work_contextual_editorial_manuscript_v1.json':'translations/sails_boarding_contextual_editorial_manuscript_v1.json','scripts.work_comments_layout_v843 import compiled,layout':'scripts.sails_boarding_layout_v881 import compiled,layout','1387':'1536','hold(rom,ram[frame],shots[frame],row,13)':'hold(rom,ram[frame],shots[frame],row,10)',"case['source_role_type']==13":"case['source_role_type']==7",'before[13]':'before[10]','occupants[13]':'occupants[10]','i not in(7,13)':'i not in(7,10)','ordinary_Gerhard_Shipwright_and_return':'ordinary_Gerhard_Boarding_and_return','ordinary_current_Shipwright_actual':'ordinary_current_Boarding_actual','ordinary Shipwright':'ordinary Boarding','actual_source_role13_slot13_and_original_whole12104_selector_verified':'actual_source_role7_slot10_and_original_whole12104_selector_verified','ordinary_input_selection_moves_Gerhard_from_slot7_to13_only':'ordinary_input_selection_moves_Gerhard_from_slot7_to10_only','native_role13=True':'native_role7=True'}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ save('work/analysis/boarding_current_verification_v2365/producer_binding.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_source_sha256=sha(source.encode()),all_original_selector_bitmap_RGB_bounds_and_scoped_state_assertions_preserved=True,no_new_live_RAM_or_ROM_change=True,full_goal_complete=False))

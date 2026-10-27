@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v86"]["batches"]);b.append("translations/maria_deep_route_v87.json");p["profiles"]["maria-deep-route-v87"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V86 across all 39 SC3 records in blocks 98-101: the Hindustan ruin lead, figurehead discovery, dagger reward, and Christina lead, preserving two raw controls."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v87: {len(b)} batches")

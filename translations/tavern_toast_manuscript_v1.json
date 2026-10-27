@@ -1,0 +1,23 @@
+{
+  "format": "dk4-native-common-natural-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": ["source", "context", "localization", "naturalness", "formatting"],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_827",
+      "message_id": 827,
+      "block": 10,
+      "record": 43,
+      "source_hex": "82d3815b82f18141257382b382f182cb81480a82b682e1814182a88bdf82c382ab82cc82b582e982b582c98aa394748149",
+      "japanese": "ふーん、%sさんね？\nじゃ、お近づきのしるしに乾杯！",
+      "english": "Hmm... %s, right? Here's to our new friendship!{PAD}",
+      "speaker": "Tavern hostess",
+      "source_meaning": "The hostess considers and confirms the patron's name, then proposes a toast to their new acquaintance.",
+      "context": "Shared paid-drink dialogue, observed from Myrine in Athens. Source825 is a questioning reaction,826 comments on the patron's weakness,827 confirms their name and toasts. Neighbor828 asks about a beautiful object,829 notices an item. No rank or romantic relationship is asserted.",
+      "localization_note": "Natural American English keeps the pondering reaction, confirmation, named patron and friendly toast. Replace awkward Right... with Hmm... and the idiomatic Here's to. A normal punctuation space follows the ellipsis. One logical paragraph; runtime wrapping after the name substitution owns line breaks. Wording is chosen for meaning and voice, not to hide the observed dropped-r defect.",
+      "review": {"source": true, "context": true, "localization": true, "naturalness": true, "formatting": true}
+    }
+  ]
+}

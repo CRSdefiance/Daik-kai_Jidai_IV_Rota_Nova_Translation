@@ -1,0 +1,49 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC3.DK4",
+  "source_file_sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "maria-story-percent-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Clean-source literal percentages rewritten as natural words; original allocations and controls retained.",
+  "records": [
+    {
+      "id": "DK4_MES_B33_R0137",
+      "english": "{SPEAKER:15}They agreed to 3 percent of sales. Officials will look the other way if we pose as foreign ships.{PAD}",
+      "speaker": "Ian Dukov",
+      "context": "Maria asks for a report on coastal port contracts. Ian reports successful bribery and explains the agreed sales cut and foreign-ship disguise.",
+      "source_meaning": "They reached an agreement to pay three percent of sales; officials will pretend not to see them if their ships are disguised as foreign vessels.",
+      "localization_note": "Preserves the sales cut and the disguise condition. Pose as foreign ships is an idiomatic collective reference to their fleet. Percent is written out to avoid the observed native octal read.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B135_R0325",
+      "english": "{SPEAKER:0D}There's no need for new ships as we add ports to our routes. A 1 percent share lets us buy one to five units of each good.{PAD}",
+      "speaker": "Manuel Almeida",
+      "context": "Maria route trade tutorial, before the advice to buy a ship once increased market share allows buying larger quantities. Source presentation byte0D is retained.",
+      "source_meaning": "While adding contracted ports and expanding routes there is no need to buy ships; a one-percent contract limits purchases of each trade good to one through five units.",
+      "localization_note": "Adding ports to our routes conveys contract-driven expansion. Keeps the temporary advice, one-percent share and one-to-five-unit limit. Percent avoids a native string conversion from percent-space-s.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

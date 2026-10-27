@@ -1,0 +1,1242 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "file_path": "/data/SC2.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2674_candidate.nds",
+  "current_ROM_sha256": "f72574b9d640f2677742ff6ad94c319b581aaa18dee541da6707f1825efa2cd2",
+  "required_runtime_ARM9_sha256": "d9415c1e0eb18c9eec9b76329f3dedb724a1a754a4829be103c6b958f927b9aa",
+  "source_context": "work\\analysis\\lil_Seville_source_v2704b\\complete20_clean_current_native_context.json",
+  "source_context_sha256": "2612d0ce11dd800dafaabf2d6f586dac9724b2c10bf7cda92b5a466c9fcf4246",
+  "control_contract": "work\\analysis\\lil_Seville_controls_v2706b\\source_bound_B28_B29_presenter_and_control_contract.json",
+  "control_contract_sha256": "db72e0b16edfe0981118910faf21e6511d07d8178bd3f939e0b8c95cb532cf08",
+  "branch_proof": "work\\analysis\\lil_Seville_branches_v2705\\original_relative_skip_operand_proof.json",
+  "branch_proof_sha256": "f9733991f1214ead2b73dc11229b23a8ccbb6cd9816d1ad775adba67bdc1d658",
+  "formatting_review_pending": true,
+  "completion_credit_added": 0,
+  "source_prose_credit_added": 0,
+  "full_goal_complete": false,
+  "format": "dk4-natural-dialogue-manuscript-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "dialogue_profile": "lil-opening-editorial-native-v1",
+  "scoped_B28_B29_profile_still_required": true,
+  "records": [
+    {
+      "id": "DK4_MES_B28_R0006",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 6,
+      "current_record_index": 6,
+      "source_reference": {
+        "offset": 17,
+        "bytes": 66,
+        "header_offset": 12
+      },
+      "current_reference": {
+        "offset": 17,
+        "bytes": 66,
+        "header_offset": 12
+      },
+      "source_hex": "1f8b4d976c82be82c881418dc58bdf835883798343839382cc93ea92a382e882f00a8d7282e782b582c482a282e993638ec98fa4906c82cc8fac96ba82cd81488148",
+      "current_hex": "1f596f75212054686520636f756e747279206d65726368616e74206769726c200a2072616964696e6720537061696e277320776174657273206c6174656c79212020",
+      "source_Japanese": "貴様だな、最近スペインの縄張りを\n荒らしている田舎商人の小娘は？？",
+      "current_English": "You! The country merchant girl \n raiding Spain's waters lately!  ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 72,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 0,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8b4d976c82be82c881418dc58bdf835883798343839382cc93ea92a382e882f00a8d7282e782b582c482a282e993638ec98fa4906c82cc8fac96ba82cd81488148",
+          "output_hex": "8b4d976c82be82c881418dc58bdf835883798343839382cc93ea92a382e882f00a8d7282e782b582c482a282e993638ec98fa4906c82cc8fac96ba82cd81488148",
+          "output_text": "貴様だな、最近スペインの縄張りを\n荒らしている田舎商人の小娘は？？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f75212054686520636f756e747279206d65726368616e74206769726c200a2072616964696e6720537061696e277320776174657273206c6174656c79212020",
+          "output_hex": "596f75212054686520636f756e747279206d65726368616e74206769726c200a2072616964696e6720537061696e277320776174657273206c6174656c79212020",
+          "output_text": "You! The country merchant girl \n raiding Spain's waters lately!  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": null,
+      "next_storage_speech": "DK4_MES_B28_R0017",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}So you're that little merchant girl from the sticks who's been making trouble in Spanish territory lately?",
+      "source_meaning": "Valdes identifies Lil contemptuously as the little country merchant girl who has recently been encroaching on Spanish territory.",
+      "localization_note": "Restore his full contemptuous identification andaccusatory question. From the sticks naturally carries the rural put-down;making trouble preserves his allegation without the older unsupported implication that she has been raiding orcommitting piracy. This is Valdes opinion,not narrator fact.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0017",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 17,
+      "current_record_index": 17,
+      "source_reference": {
+        "offset": 111,
+        "bytes": 23,
+        "header_offset": 106
+      },
+      "current_reference": {
+        "offset": 111,
+        "bytes": 23,
+        "header_offset": 106
+      },
+      "source_hex": "1082de82a3814182b182cc926a814182dc82b382a98163",
+      "current_hex": "10436f756c6420746861742062652e2e2e3f2020202020",
+      "source_Japanese": "むぅ、この男、まさか…",
+      "current_English": "Could that be...?     ",
+      "source_complete_preamble_hex": "0040ffff0010",
+      "source_presentation_prefix_hex": "10",
+      "speaker": "Gerhard Ardelknatts",
+      "original_actor_ID": 16,
+      "kind": "progressive",
+      "native_command_extent": 30,
+      "ancestor_0100_offsets": [
+        102
+      ],
+      "spoken_sequence_index": 1,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82de82a3814182b182cc926a814182dc82b382a98163",
+          "output_hex": "82de82a3814182b182cc926a814182dc82b382a98163",
+          "output_text": "むぅ、この男、まさか…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "436f756c6420746861742062652e2e2e3f2020202020",
+          "output_hex": "436f756c6420746861742062652e2e2e3f2020202020",
+          "output_text": "Could that be...?     ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0006",
+      "next_storage_speech": "DK4_MES_B28_R0024",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:10}Could that be...?",
+      "source_meaning": "Gerhard hesitantly suspects that he recognizes the man.",
+      "localization_note": "Retain the natural restrained recognition question anddeliberate trailing uncertainty. The man is the visible interlocutor in this exchange;repeating this man oradding a name would not improve the English. The identity is confirmed only in the later beat.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending",
+      "fresh_retained_wording_justification": "Retain the natural restrained recognition question anddeliberate trailing uncertainty. The man is the visible interlocutor in this exchange;repeating this man oradding a name would not improve the English. The identity is confirmed only in the later beat."
+    },
+    {
+      "id": "DK4_MES_B28_R0024",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 24,
+      "current_record_index": 24,
+      "source_reference": {
+        "offset": 145,
+        "bytes": 54,
+        "header_offset": 140
+      },
+      "current_reference": {
+        "offset": 145,
+        "bytes": 54,
+        "header_offset": 140
+      },
+      "source_hex": "0282a082f182bd82b182bb89bd82e681480a838c8366834282c991ce82b782e997e78b5682e0926d82e782c882a282cc82cb81498148",
+      "current_hex": "02416e642077686f2061726520796f753f200a204e6f206d616e6e657273206265666f72652061206c6164793f212020202020202020",
+      "source_Japanese": "あんたこそ何よ？\nレディに対する礼儀も知らないのね！？",
+      "current_English": "And who are you? \n No manners before a lady?!        ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 60,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 2,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82a082f182bd82b182bb89bd82e681480a838c8366834282c991ce82b782e997e78b5682e0926d82e782c882a282cc82cb81498148",
+          "output_hex": "82a082f182bd82b182bb89bd82e681480a838c8366834282c991ce82b782e997e78b5682e0926d82e782c882a282cc82cb81498148",
+          "output_text": "あんたこそ何よ？\nレディに対する礼儀も知らないのね！？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "416e642077686f2061726520796f753f200a204e6f206d616e6e657273206265666f72652061206c6164793f212020202020202020",
+          "output_hex": "416e642077686f2061726520796f753f200a204e6f206d616e6e657273206265666f72652061206c6164793f212020202020202020",
+          "output_text": "And who are you? \n No manners before a lady?!        ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0017",
+      "next_storage_speech": "DK4_MES_B28_R0035",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}And who do you think you are? Is that any way to speak to a lady?!",
+      "source_meaning": "Lil demands to know who Valdes is andobjects that he does not know how to treat a lady respectfully.",
+      "localization_note": "Preserve both the indignant challenge andthe complaint about manners. The rhetorical English carries her offended dignity naturally without inventing an actual noble title or a relationship.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0035",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 35,
+      "current_record_index": 35,
+      "source_reference": {
+        "offset": 225,
+        "bytes": 57,
+        "header_offset": 220
+      },
+      "current_reference": {
+        "offset": 225,
+        "bytes": 57,
+        "header_offset": 220
+      },
+      "source_hex": "1446490a82d982c182c682af82c182c48163814282df82f182c782a482c90a8aaa82ab8d9e82dc82ea82e982cc82cd82b282df82f182be82ba",
+      "current_hex": "1446492c2069676e6f72652068696d2e200a204e6f206e65656420666f72206d6f72652074726f75626c652e20202020202020202020202020",
+      "source_Japanese": "FI\nほっとけって…。めんどうに\n巻き込まれるのはごめんだぜ",
+      "current_English": "FI, ignore him. \n No need for more trouble.             ",
+      "source_complete_preamble_hex": "0040ffff0014",
+      "source_presentation_prefix_hex": "14",
+      "speaker": "Fernando Dias",
+      "original_actor_ID": 20,
+      "kind": "progressive",
+      "native_command_extent": 64,
+      "ancestor_0100_offsets": [
+        216
+      ],
+      "spoken_sequence_index": 3,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "46490a82d982c182c682af82c182c48163814282df82f182c782a482c90a8aaa82ab8d9e82dc82ea82e982cc82cd82b282df82f182be82ba",
+          "output_hex": "4c696c0a82d982c182c682af82c182c48163814282df82f182c782a482c90a8aaa82ab8d9e82dc82ea82e982cc82cd82b282df82f182be82ba",
+          "output_text": "Lil\nほっとけって…。めんどうに\n巻き込まれるのはごめんだぜ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "46492c2069676e6f72652068696d2e200a204e6f206e65656420666f72206d6f72652074726f75626c652e20202020202020202020202020",
+          "output_hex": "4c696c2c2069676e6f72652068696d2e200a204e6f206e65656420666f72206d6f72652074726f75626c652e20202020202020202020202020",
+          "output_text": "Lil, ignore him. \n No need for more trouble.             ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0024",
+      "next_storage_speech": "DK4_MES_B28_R0042",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:14}{MACRO:FI}, just ignore him... I don't want to get dragged into trouble.",
+      "source_meaning": "Fernando addresses Lil andasks her to ignore him,because Fernando does not want to become involved in trouble.",
+      "localization_note": "Restore the personal reluctance andrisk of becoming involved instead of the older clipped generic No need for more trouble. Preserve the genuine captain-name macro andthe trailing hesitation without authoring a line break or inventing earlier trouble.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0042",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 42,
+      "current_record_index": 42,
+      "source_reference": {
+        "offset": 293,
+        "bytes": 89,
+        "header_offset": 288
+      },
+      "current_reference": {
+        "offset": 293,
+        "bytes": 89,
+        "header_offset": 288
+      },
+      "source_hex": "1f82d382f1814193638ec996ba82c997e782c882c796b3977081490a89b482cd82b182cc88ea91d182f08e6490d882e983588379834383938a438c5292f193c20a83798368838d814583668145836f838b8366835882be8149",
+      "current_hex": "1f436f756e747279206769726c732064657365727665206e6f20636f75727465737921200a20506564726f2064652056616c6465732c2061646d6972616c200a206f6620537061696e277320666c6565742120202020202020",
+      "source_Japanese": "ふん、田舎娘に礼など無用！\n俺はこの一帯を仕切るスペイン海軍提督\nペドロ・デ・バルデスだ！",
+      "current_English": "Country girls deserve no courtesy! \n Pedro de Valdes, admiral \n of Spain's fleet!       ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 96,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 4,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82d382f1814193638ec996ba82c997e782c882c796b3977081490a89b482cd82b182cc88ea91d182f08e6490d882e983588379834383938a438c5292f193c20a83798368838d814583668145836f838b8366835882be8149",
+          "output_hex": "82d382f1814193638ec996ba82c997e782c882c796b3977081490a89b482cd82b182cc88ea91d182f08e6490d882e983588379834383938a438c5292f193c20a83798368838d814583668145836f838b8366835882be8149",
+          "output_text": "ふん、田舎娘に礼など無用！\n俺はこの一帯を仕切るスペイン海軍提督\nペドロ・デ・バルデスだ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "436f756e747279206769726c732064657365727665206e6f20636f75727465737921200a20506564726f2064652056616c6465732c2061646d6972616c200a206f6620537061696e277320666c6565742120202020202020",
+          "output_hex": "436f756e747279206769726c732064657365727665206e6f20636f75727465737921200a20506564726f2064652056616c6465732c2061646d6972616c200a206f6620537061696e277320666c6565742120202020202020",
+          "output_text": "Country girls deserve no courtesy! \n Pedro de Valdes, admiral \n of Spain's fleet!       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0035",
+      "next_storage_speech": "DK4_MES_B28_R0054",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Hmph! Country girls don't deserve courtesy! I'm Admiral Pedro de Valdes of the Spanish navy. I command this region!",
+      "source_meaning": "Valdes scoffs that a country girl needs no courtesy,introduces himself as Pedro de Valdes,a Spanish naval admiral,andasserts that he controls this region.",
+      "localization_note": "Restore the contemptuous grunt,complete self-introduction,explicit source admiral rank,navy andregional authority claim. The established Pedro de Valdes spelling agrees withthe Japanese name andprior approved prose. His claim ofcommand is speech,not a new proof ofpolitical ownership. No invented Lord,kinship orhigher rank is added.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0054",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 54,
+      "current_record_index": 54,
+      "source_reference": {
+        "offset": 409,
+        "bytes": 19,
+        "header_offset": 404
+      },
+      "current_reference": {
+        "offset": 409,
+        "bytes": 19,
+        "header_offset": 404
+      },
+      "source_hex": "1082e282cd82e8836f838b8366835882a98163",
+      "current_hex": "10536f2069742069732056616c6465732e2e2e",
+      "source_Japanese": "やはりバルデスか…",
+      "current_English": "So it is Valdes...",
+      "source_complete_preamble_hex": "0040ffff0010",
+      "source_presentation_prefix_hex": "10",
+      "speaker": "Gerhard Ardelknatts",
+      "original_actor_ID": 16,
+      "kind": "progressive",
+      "native_command_extent": 26,
+      "ancestor_0100_offsets": [
+        400
+      ],
+      "spoken_sequence_index": 5,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82e282cd82e8836f838b8366835882a98163",
+          "output_hex": "82e282cd82e8836f838b8366835882a98163",
+          "output_text": "やはりバルデスか…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "536f2069742069732056616c6465732e2e2e",
+          "output_hex": "536f2069742069732056616c6465732e2e2e",
+          "output_text": "So it is Valdes...",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0042",
+      "next_storage_speech": "DK4_MES_B28_R0061",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:10}So it is Valdes...",
+      "source_meaning": "Gerhard confirms his earlier suspicion that the man is Valdes.",
+      "localization_note": "Retain the complete natural confirmation andtrailing reserve. It follows the earlier uncertain recognition andValdes self-introduction without adding surprise,a relationship or a new title.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending",
+      "fresh_retained_wording_justification": "Retain the complete natural confirmation andtrailing reserve. It follows the earlier uncertain recognition andValdes self-introduction without adding surprise,a relationship or a new title."
+    },
+    {
+      "id": "DK4_MES_B28_R0061",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 61,
+      "current_record_index": 61,
+      "source_reference": {
+        "offset": 439,
+        "bytes": 71,
+        "header_offset": 434
+      },
+      "current_reference": {
+        "offset": 439,
+        "bytes": 71,
+        "header_offset": 434
+      },
+      "source_hex": "1f95aa82a982c182c482a282e982cc82be82eb82a482c8814981480a89e482e7835883798343839396b393478acd91e082f0934782c982dc82ed82b70a88d396a182aa81498148",
+      "current_hex": "1f596f75206b6e6f772077686174206974206d65616e73200a20746f206f70706f736520537061696e27732041726d6164613f2120202020202020202020202020202020202020",
+      "source_Japanese": "分かっているのだろうな！？\n我らスペイン無敵艦隊を敵にまわす\n意味が！？",
+      "current_English": "You know what it means \n to oppose Spain's Armada?!                   ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 78,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 6,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "95aa82a982c182c482a282e982cc82be82eb82a482c8814981480a89e482e7835883798343839396b393478acd91e082f0934782c982dc82ed82b70a88d396a182aa81498148",
+          "output_hex": "95aa82a982c182c482a282e982cc82be82eb82a482c8814981480a89e482e7835883798343839396b393478acd91e082f0934782c982dc82ed82b70a88d396a182aa81498148",
+          "output_text": "分かっているのだろうな！？\n我らスペイン無敵艦隊を敵にまわす\n意味が！？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "596f75206b6e6f772077686174206974206d65616e73200a20746f206f70706f736520537061696e27732041726d6164613f2120202020202020202020202020202020202020",
+          "output_hex": "596f75206b6e6f772077686174206974206d65616e73200a20746f206f70706f736520537061696e27732041726d6164613f2120202020202020202020202020202020202020",
+          "output_text": "You know what it means \n to oppose Spain's Armada?!                   ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0054",
+      "next_storage_speech": "DK4_MES_B28_R0065",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}You know what it means to make an enemy of Spain's Invincible Armada, don't you?!",
+      "source_meaning": "Valdes demands confirmation that Lil understands what it means to make an enemy oftheir Spanish Invincible Armada.",
+      "localization_note": "Restore the complete intimidating rhetorical question andthe source conventional Invincible Armada designation. The term preserves cultural/story context andValdes boast;it is not a narrator guarantee ofinvincibility orvictory. No new enemy,weapon orwar result is invented.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0065",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 65,
+      "current_record_index": 65,
+      "source_reference": {
+        "offset": 517,
+        "bytes": 7,
+        "header_offset": 512
+      },
+      "current_reference": {
+        "offset": 517,
+        "bytes": 7,
+        "header_offset": 512
+      },
+      "source_hex": "02816381498149",
+      "current_hex": "02816381498149",
+      "source_Japanese": "…！！",
+      "current_English": "…！！",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 14,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 7,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "816381498149",
+          "output_hex": "816381498149",
+          "output_text": "…！！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "816381498149",
+          "output_hex": "816381498149",
+          "output_text": "…！！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0061",
+      "next_storage_speech": "DK4_MES_B28_R0069",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}...!!",
+      "source_meaning": "Lil reacts silently withanellipsis andemphatic exclamation.",
+      "localization_note": "Preserve the native punctuation-only response that the Japanese-only CSV filter omitted. Localize punctuation to the English ellipsis/exclamation convention without inventing spoken words,an attack or an emotional diagnosis. The typed4000speech command and02speaker state establish that this is a real dialogue beat.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0069",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 69,
+      "current_record_index": 69,
+      "source_reference": {
+        "offset": 531,
+        "bytes": 97,
+        "header_offset": 526
+      },
+      "current_reference": {
+        "offset": 531,
+        "bytes": 97,
+        "header_offset": 526
+      },
+      "source_hex": "1f8da182c882e782dc82be927882ad82cd82c882a2814282a882c682c882b582ad0a82b182cc926e82a982e78ee882f088f882ad82c882e782e682b5814282b382ea82c70a8b9182de82cc82c582a082ea82ce924082ab92d782b782dc82c58149",
+      "current_hex": "1f4e6f7420746f6f206c6174652e204c6561766520746865736520776174657273200a2071756965746c7920616e64206c6976652e0a205265667573652c20616e6420626520637275736865642120202020202020202020202020202020202020",
+      "source_Japanese": "今ならまだ遅くはない。おとなしく\nこの地から手を引くならよし。されど\n拒むのであれば叩き潰すまで！",
+      "current_English": "Not too late. Leave these waters \n quietly and live.\n Refuse, and be crushed!                   ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 104,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 8,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8da182c882e782dc82be927882ad82cd82c882a2814282a882c682c882b582ad0a82b182cc926e82a982e78ee882f088f882ad82c882e782e682b5814282b382ea82c70a8b9182de82cc82c582a082ea82ce924082ab92d782b782dc82c58149",
+          "output_hex": "8da182c882e782dc82be927882ad82cd82c882a2814282a882c682c882b582ad0a82b182cc926e82a982e78ee882f088f882ad82c882e782e682b5814282b382ea82c70a8b9182de82cc82c582a082ea82ce924082ab92d782b782dc82c58149",
+          "output_text": "今ならまだ遅くはない。おとなしく\nこの地から手を引くならよし。されど\n拒むのであれば叩き潰すまで！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4e6f7420746f6f206c6174652e204c6561766520746865736520776174657273200a2071756965746c7920616e64206c6976652e0a205265667573652c20616e6420626520637275736865642120202020202020202020202020202020202020",
+          "output_hex": "4e6f7420746f6f206c6174652e204c6561766520746865736520776174657273200a2071756965746c7920616e64206c6976652e0a205265667573652c20616e6420626520637275736865642120202020202020202020202020202020202020",
+          "output_text": "Not too late. Leave these waters \n quietly and live.\n Refuse, and be crushed!                   ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0065",
+      "next_storage_speech": "DK4_MES_B28_R0081",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}It's not too late. Withdraw from this region quietly, and I'll leave it at that. Refuse, and I'll crush you!",
+      "source_meaning": "Valdes says it is not too late:quietly withdrawing fromthis region is acceptable,butrefusal will lead him to crush Lil.",
+      "localization_note": "Keep the opportunity to back down,the region,acceptance condition andthreat. Remove the older and live:the source makes no explicit survival guarantee ordeath threat. I will leave it at that naturally expresses the conditional よし;his threat remains speech intent,not a guaranteed outcome.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0081",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 81,
+      "current_record_index": 81,
+      "source_reference": {
+        "offset": 655,
+        "bytes": 34,
+        "header_offset": 650
+      },
+      "current_reference": {
+        "offset": 655,
+        "bytes": 34,
+        "header_offset": 650
+      },
+      "source_hex": "0482ed82ed82ed82c1814981490a8ee882f088f882ab82dc82b582e582a482e68163",
+      "current_hex": "04572d77616974210a204c657427732077697468647261772e2e2e20202020202020",
+      "source_Japanese": "わわわっ！！\n手を引きましょうよ…",
+      "current_English": "W-wait!\n Let's withdraw...       ",
+      "source_complete_preamble_hex": "0040ffff0004",
+      "source_presentation_prefix_hex": "04",
+      "speaker": "Janus Pasar",
+      "original_actor_ID": 4,
+      "kind": "progressive",
+      "native_command_extent": 40,
+      "ancestor_0100_offsets": [
+        646
+      ],
+      "spoken_sequence_index": 9,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82ed82ed82ed82c1814981490a8ee882f088f882ab82dc82b582e582a482e68163",
+          "output_hex": "82ed82ed82ed82c1814981490a8ee882f088f882ab82dc82b582e582a482e68163",
+          "output_text": "わわわっ！！\n手を引きましょうよ…",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "572d77616974210a204c657427732077697468647261772e2e2e20202020202020",
+          "output_hex": "572d77616974210a204c657427732077697468647261772e2e2e20202020202020",
+          "output_text": "W-wait!\n Let's withdraw...       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0069",
+      "next_storage_speech": "DK4_MES_B28_R0099",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:04}W-whoa! Let's back down...",
+      "source_meaning": "Janus gives a flustered cry andurges that they withdraw.",
+      "localization_note": "Preserve the stammered alarm andinclusive appeal. Back down is natural in this intimidation exchange;the source does not order sailing to a new port orinvent a casualty. Do not add a title,age orrelationship to Janus.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0099",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 99,
+      "current_record_index": 99,
+      "source_reference": {
+        "offset": 753,
+        "bytes": 69,
+        "header_offset": 748
+      },
+      "current_reference": {
+        "offset": 753,
+        "bytes": 69,
+        "header_offset": 748
+      },
+      "source_hex": "1f82d982a4814188d38a4f82c695a895aa82a982e882aa82a282a282c8814981480a93f1937882c68ee882f08f6f82b782c80a8e9f82cd97658ecd82cd82b982f182bc8149",
+      "current_hex": "1f412073656e7369626c652073757270726973652e200a204e6576657220696e7465726665726520616761696e2e200a204e6578742074696d652c206e6f206d6572637921",
+      "source_Japanese": "ほう、意外と物分かりがいいな！？\n二度と手を出すな\n次は容赦はせんぞ！",
+      "current_English": "A sensible surprise. \n Never interfere again. \n Next time, no mercy!",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 76,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 10,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82d982a4814188d38a4f82c695a895aa82a982e882aa82a282a282c8814981480a93f1937882c68ee882f08f6f82b782c80a8e9f82cd97658ecd82cd82b982f182bc8149",
+          "output_hex": "82d982a4814188d38a4f82c695a895aa82a982e882aa82a282a282c8814981480a93f1937882c68ee882f08f6f82b782c80a8e9f82cd97658ecd82cd82b982f182bc8149",
+          "output_text": "ほう、意外と物分かりがいいな！？\n二度と手を出すな\n次は容赦はせんぞ！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "412073656e7369626c652073757270726973652e200a204e6576657220696e7465726665726520616761696e2e200a204e6578742074696d652c206e6f206d6572637921",
+          "output_hex": "412073656e7369626c652073757270726973652e200a204e6576657220696e7465726665726520616761696e2e200a204e6578742074696d652c206e6f206d6572637921",
+          "output_text": "A sensible surprise. \n Never interfere again. \n Next time, no mercy!",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0081",
+      "next_storage_speech": "DK4_MES_B28_R0103",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Oh? You're more reasonable than I expected! Don't interfere again. Next time, there'll be no mercy!",
+      "source_meaning": "After Lil agrees to withdraw,Valdes expresses surprise that she is reasonable,warns her never to interfere again,andsays he will show no mercy next time.",
+      "localization_note": "Restore the surprised condescension andcomplete warning rather than the unnatural A sensible surprise. Preserve again andnext time;do not change the threat into a present attack or a promised death.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0103",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 103,
+      "current_record_index": 103,
+      "source_reference": {
+        "offset": 831,
+        "bytes": 40,
+        "header_offset": 826
+      },
+      "current_reference": {
+        "offset": 831,
+        "bytes": 40,
+        "header_offset": 826
+      },
+      "source_hex": "fe835a8372838a834182cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd",
+      "current_hex": "fe4f757220736861726520696e20536576696c6c65206861732066616c6c656e2e20202020202020",
+      "source_Japanese": "セビリアのシェアが\n下がってしまいました",
+      "current_English": "Our share in Seville has fallen.       ",
+      "source_complete_preamble_hex": "0040ffff00fe",
+      "source_presentation_prefix_hex": "fe",
+      "speaker": "System notice",
+      "original_actor_ID": null,
+      "kind": "system-FE",
+      "native_command_extent": 46,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 11,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "835a8372838a834182cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd",
+          "output_hex": "835a8372838a834182cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd",
+          "output_text": "セビリアのシェアが\n下がってしまいました",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": true
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4f757220736861726520696e20536576696c6c65206861732066616c6c656e2e20202020202020",
+          "output_hex": "4f757220736861726520696e20536576696c6c65206861732066616c6c656e2e20202020202020",
+          "output_text": "Our share in Seville has fallen.       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": true
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0099",
+      "next_storage_speech": "DK4_MES_B28_R0115",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:FE}Our share in Seville has fallen.",
+      "source_meaning": "The system reports that the player market share in Seville has decreased.",
+      "localization_note": "Retain the clear existing system report. The trading context supplies market share;the source does not give a percentage,total loss,permanent ownership change or a different town. Preserve the raw FEselector andits separate anonymous paper consumer.",
+      "editorial_decision": "retain-wording",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending",
+      "fresh_retained_wording_justification": "Retain the clear existing system report. The trading context supplies market share;the source does not give a percentage,total loss,permanent ownership change or a different town. Preserve the raw FEselector andits separate anonymous paper consumer."
+    },
+    {
+      "id": "DK4_MES_B28_R0115",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 115,
+      "current_record_index": 115,
+      "source_reference": {
+        "offset": 905,
+        "bytes": 64,
+        "header_offset": 900
+      },
+      "current_reference": {
+        "offset": 905,
+        "bytes": 64,
+        "header_offset": 900
+      },
+      "source_hex": "1089f782b582a282aa8384836382cc82d982a482aa97cd82aa8fe382cc82e682a482c582b70a8da182cd97cd82f0927e82a682e982d782ab82c582b582e582a4",
+      "current_hex": "104269747465722c20627574206865206973207374726f6e6765722e0a204275696c64206f757220737472656e67746820666f72206e6f772e20202020202020",
+      "source_Japanese": "悔しいがヤツのほうが力が上のようです\n今は力を蓄えるべきでしょう",
+      "current_English": "Bitter, but he is stronger.\n Build our strength for now.       ",
+      "source_complete_preamble_hex": "0040ffff0010",
+      "source_presentation_prefix_hex": "10",
+      "speaker": "Gerhard Ardelknatts",
+      "original_actor_ID": 16,
+      "kind": "progressive",
+      "native_command_extent": 70,
+      "ancestor_0100_offsets": [
+        896
+      ],
+      "spoken_sequence_index": 12,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "89f782b582a282aa8384836382cc82d982a482aa97cd82aa8fe382cc82e682a482c582b70a8da182cd97cd82f0927e82a682e982d782ab82c582b582e582a4",
+          "output_hex": "89f782b582a282aa8384836382cc82d982a482aa97cd82aa8fe382cc82e682a482c582b70a8da182cd97cd82f0927e82a682e982d782ab82c582b582e582a4",
+          "output_text": "悔しいがヤツのほうが力が上のようです\n今は力を蓄えるべきでしょう",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4269747465722c20627574206865206973207374726f6e6765722e0a204275696c64206f757220737472656e67746820666f72206e6f772e20202020202020",
+          "output_hex": "4269747465722c20627574206865206973207374726f6e6765722e0a204275696c64206f757220737472656e67746820666f72206e6f772e20202020202020",
+          "output_text": "Bitter, but he is stronger.\n Build our strength for now.       ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0103",
+      "next_storage_speech": "DK4_MES_B28_R0134",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:10}It pains me to admit it, but he seems stronger than we are. We should build up our strength for now.",
+      "source_meaning": "Gerhard reluctantly acknowledges that Valdes appears stronger,andcounsels building their strength for now.",
+      "localization_note": "Restore the reluctant personal acknowledgment,appearance qualification in ようです,andcomplete measured advice. Stronger remains general as in the source;do not invent a comparison ofspecific weapons orpersonal muscles. The advice is temporary anddoes not guarantee a future victory.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0134",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 134,
+      "current_record_index": 134,
+      "source_reference": {
+        "offset": 1011,
+        "bytes": 34,
+        "header_offset": 1006
+      },
+      "current_reference": {
+        "offset": 1011,
+        "bytes": 34,
+        "header_offset": 1006
+      },
+      "source_hex": "04464982b382f10a82d98141967b939682c990ed82a482f182c582b782a981498148",
+      "current_hex": "0446492e2e2e200a20417265207765207472756c79206669676874696e673f212020",
+      "source_Japanese": "FIさん\nほ、本当に戦うんですか！？",
+      "current_English": "FI... \n Are we truly fighting?!  ",
+      "source_complete_preamble_hex": "0040ffff0004",
+      "source_presentation_prefix_hex": "04",
+      "speaker": "Janus Pasar",
+      "original_actor_ID": 4,
+      "kind": "progressive",
+      "native_command_extent": 40,
+      "ancestor_0100_offsets": [
+        982,
+        1002
+      ],
+      "spoken_sequence_index": 13,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "464982b382f10a82d98141967b939682c990ed82a482f182c582b782a981498148",
+          "output_hex": "4c696c82b382f10a82d98141967b939682c990ed82a482f182c582b782a981498148",
+          "output_text": "Lilさん\nほ、本当に戦うんですか！？",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "46492e2e2e200a20417265207765207472756c79206669676874696e673f212020",
+          "output_hex": "4c696c2e2e2e200a20417265207765207472756c79206669676874696e673f212020",
+          "output_text": "Lil... \n Are we truly fighting?!  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0115",
+      "next_storage_speech": "DK4_MES_B28_R0140",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:04}{MACRO:FI}... A-are we really going to fight?!",
+      "source_meaning": "Janus addresses Lil respectfully andstammers to ask whether they are really going to fight.",
+      "localization_note": "Restore the fearful stammer andcomplete question. Use the genuine captain-name macro for the polite address instead of inventing Lady,Miss,a rank orkinship. The question does not assert that combat has already begun.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B28_R0140",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "source_record_index": 140,
+      "current_record_index": 140,
+      "source_reference": {
+        "offset": 1055,
+        "bytes": 64,
+        "header_offset": 1050
+      },
+      "current_reference": {
+        "offset": 1055,
+        "bytes": 64,
+        "header_offset": 1050
+      },
+      "source_hex": "1f82c782a482e282e7814192c982a296da82f08ca982bd82a282c682dd82a682e981630a82e682a982eb82a4814188ea90b689f782a282e982aa82a282a28149",
+      "current_hex": "1f536f20796f752077616e74207061696e2e2e2e0a20476f6f642e20526567726574207468697320666f72657665722120202020202020202020202020202020",
+      "source_Japanese": "どうやら、痛い目を見たいとみえる…\nよかろう、一生悔いるがいい！",
+      "current_English": "So you want pain...\n Good. Regret this forever!                ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 70,
+      "ancestor_0100_offsets": [
+        982
+      ],
+      "spoken_sequence_index": 14,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c782a482e282e7814192c982a296da82f08ca982bd82a282c682dd82a682e981630a82e682a982eb82a4814188ea90b689f782a282e982aa82a282a28149",
+          "output_hex": "82c782a482e282e7814192c982a296da82f08ca982bd82a282c682dd82a682e981630a82e682a982eb82a4814188ea90b689f782a282e982aa82a282a28149",
+          "output_text": "どうやら、痛い目を見たいとみえる…\nよかろう、一生悔いるがいい！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "536f20796f752077616e74207061696e2e2e2e0a20476f6f642e20526567726574207468697320666f72657665722120202020202020202020202020202020",
+          "output_hex": "536f20796f752077616e74207061696e2e2e2e0a20476f6f642e20526567726574207468697320666f72657665722120202020202020202020202020202020",
+          "output_text": "So you want pain...\n Good. Regret this forever!                ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0134",
+      "next_storage_speech": "DK4_MES_B29_R0006",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}So you want to learn the hard way... Very well. You'll regret this for the rest of your life!",
+      "source_meaning": "Valdes infers that Lil wants a painful lesson,accepts the challenge andthreatens lifelong regret.",
+      "localization_note": "Localize 痛い目 by its threatening effect as learn the hard way. Preserve the escalating inference,acceptance andlifelong-regret threat as a complete exchange beat. No death,prisoner treatment,weapon or actual result is added.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B29_R0006",
+      "file_path": "/data/SC2.DK4",
+      "block": 29,
+      "source_record_index": 6,
+      "current_record_index": 6,
+      "source_reference": {
+        "offset": 15,
+        "bytes": 46,
+        "header_offset": 10
+      },
+      "current_reference": {
+        "offset": 15,
+        "bytes": 46,
+        "header_offset": 10
+      },
+      "source_hex": "1f82c782a482e282e7814188ea937892c982a296da82f00a8ca982ca82c695aa82a982e782ca82e682a482be82c8",
+      "current_hex": "1f5061696e20697320746865206f6e6c79206c6573736f6e0a20796f7520756e6465727374616e642e2020202020",
+      "source_Japanese": "どうやら、一度痛い目を\n見ぬと分からぬようだな",
+      "current_English": "Pain is the only lesson\n you understand.     ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 52,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 0,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82c782a482e282e7814188ea937892c982a296da82f00a8ca982ca82c695aa82a982e782ca82e682a482be82c8",
+          "output_hex": "82c782a482e282e7814188ea937892c982a296da82f00a8ca982ca82c695aa82a982e782ca82e682a482be82c8",
+          "output_text": "どうやら、一度痛い目を\n見ぬと分からぬようだな",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "5061696e20697320746865206f6e6c79206c6573736f6e0a20796f7520756e6465727374616e642e2020202020",
+          "output_hex": "5061696e20697320746865206f6e6c79206c6573736f6e0a20796f7520756e6465727374616e642e2020202020",
+          "output_text": "Pain is the only lesson\n you understand.     ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B28_R0140",
+      "next_storage_speech": "DK4_MES_B29_R0009",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Looks like you'll have to learn the hard way.",
+      "source_meaning": "In the follow-up Valdes infers that Lil will not understand until she has had a painful lesson.",
+      "localization_note": "Restore the source inference andconditional need for a painful lesson. The older Pain is the only lesson you understand asserted a lasting psychological trait. The natural idiom conveys the threat without inventing a particular punishment or an actual injury.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B29_R0009",
+      "file_path": "/data/SC2.DK4",
+      "block": 29,
+      "source_record_index": 9,
+      "current_record_index": 9,
+      "source_reference": {
+        "offset": 69,
+        "bytes": 81,
+        "header_offset": 64
+      },
+      "current_reference": {
+        "offset": 69,
+        "bytes": 81,
+        "header_offset": 64
+      },
+      "source_hex": "028b4382aa95cf82ed82c182bd82cc82e681490a82a082bd82b582c982e088d3926e82c182c482e082cc82aa82a082e982ed0a959097cd82c882f182a982c98bfc82b582c882a282f182be82a982e78149",
+      "current_hex": "024368616e676564206d79206d696e6421200a2050726964652077696c6c206e6f74206c6574206d650a20626f7720746f20666f7263652120202020202020202020202020202020202020202020202020",
+      "source_Japanese": "気が変わったのよ！\nあたしにも意地ってものがあるわ\n武力なんかに屈しないんだから！",
+      "current_English": "Changed my mind! \n Pride will not let me\n bow to force!                         ",
+      "source_complete_preamble_hex": "0040ffff0002",
+      "source_presentation_prefix_hex": "02",
+      "speaker": "Lil Argot",
+      "original_actor_ID": 2,
+      "kind": "progressive",
+      "native_command_extent": 88,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 1,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "8b4382aa95cf82ed82c182bd82cc82e681490a82a082bd82b582c982e088d3926e82c182c482e082cc82aa82a082e982ed0a959097cd82c882f182a982c98bfc82b582c882a282f182be82a982e78149",
+          "output_hex": "8b4382aa95cf82ed82c182bd82cc82e681490a82a082bd82b582c982e088d3926e82c182c482e082cc82aa82a082e982ed0a959097cd82c882f182a982c98bfc82b582c882a282f182be82a982e78149",
+          "output_text": "気が変わったのよ！\nあたしにも意地ってものがあるわ\n武力なんかに屈しないんだから！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "4368616e676564206d79206d696e6421200a2050726964652077696c6c206e6f74206c6574206d650a20626f7720746f20666f7263652120202020202020202020202020202020202020202020202020",
+          "output_hex": "4368616e676564206d79206d696e6421200a2050726964652077696c6c206e6f74206c6574206d650a20626f7720746f20666f7263652120202020202020202020202020202020202020202020202020",
+          "output_text": "Changed my mind! \n Pride will not let me\n bow to force!                         ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B29_R0006",
+      "next_storage_speech": "DK4_MES_B29_R0013",
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:02}I've changed my mind! I've got my pride, too! I'm not giving in to force!",
+      "source_meaning": "Lil says she has changed her mind,she too has pride,andwill not give in to military force.",
+      "localization_note": "Restore her explicit personal change ofmind andpride as well as the refusal. Force refers to Valdes military intimidation already established in the conversation;the English does not invent a new army,weapon or battle result. Her defiance remains distinct from Gerhard caution andJanus alarm.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    },
+    {
+      "id": "DK4_MES_B29_R0013",
+      "file_path": "/data/SC2.DK4",
+      "block": 29,
+      "source_record_index": 13,
+      "current_record_index": 13,
+      "source_reference": {
+        "offset": 157,
+        "bytes": 46,
+        "header_offset": 152
+      },
+      "current_reference": {
+        "offset": 157,
+        "bytes": 46,
+        "header_offset": 152
+      },
+      "source_hex": "1f82d382f181418d4482ab82c982b782e982aa82a282a20a915397cd82c592d782b582c482ad82ea82e682a48149",
+      "current_hex": "1f486d70682e20417320796f7520776973682e200a205072657061726520746f2062652063727573686564212020",
+      "source_Japanese": "ふん、好きにするがいい\n全力で潰してくれよう！",
+      "current_English": "Hmph. As you wish. \n Prepare to be crushed!  ",
+      "source_complete_preamble_hex": "0040ffff001f",
+      "source_presentation_prefix_hex": "1f",
+      "speaker": "Pedro de Valdes",
+      "original_actor_ID": 31,
+      "kind": "progressive",
+      "native_command_extent": 52,
+      "ancestor_0100_offsets": [],
+      "spoken_sequence_index": 2,
+      "original_macro_probes": [
+        {
+          "version": "clean-Japanese",
+          "input_hex": "82d382f181418d4482ab82c982b782e982aa82a282a20a915397cd82c592d782b582c482ad82ea82e682a48149",
+          "output_hex": "82d382f181418d4482ab82c982b782e982aa82a282a20a915397cd82c592d782b582c482ad82ea82e682a48149",
+          "output_text": "ふん、好きにするがいい\n全力で潰してくれよう！",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        },
+        {
+          "version": "current-English",
+          "input_hex": "486d70682e20417320796f7520776973682e200a205072657061726520746f2062652063727573686564212020",
+          "output_hex": "486d70682e20417320796f7520776973682e200a205072657061726520746f2062652063727573686564212020",
+          "output_text": "Hmph. As you wish. \n Prepare to be crushed!  ",
+          "original_macro_ABI_entire4MiB_input_output_guards_exact": true,
+          "historical_original_macro_probe_not_current_whole_pipeline_or_display": true,
+          "FE_uses_captain_for_macro_probe_not_a_FE_presenter_claim": false
+        }
+      ],
+      "source_prose_or_completion_credit_added": 0,
+      "previous_storage_speech": "DK4_MES_B29_R0009",
+      "next_storage_speech": null,
+      "storage_order_not_branch_reachability": true,
+      "english": "{SPEAKER:1F}Hmph. Suit yourself. I'll crush you with everything I've got!",
+      "source_meaning": "Valdes scoffs,allows Lil to do as she pleases,andthreatens to crush her withhis full strength.",
+      "localization_note": "Keep the contemptuous dismissal andrestore the full-strength promise in 全力で,which the older Prepare to be crushed omitted. Everything I have got is idiomatic threat language,not a new guarantee that every ship orcrew member will be used orlost.",
+      "editorial_decision": "revise",
+      "context": "Complete original B28Seville confrontation andB29follow-up,including both stored choice outcomes,17progressive speeches,one FEshare-loss system panel,two typed reply labels andpunctuation-only Lil reaction missed by Japanese-only CSV filtering. Source header0040ffff00pluspresentation byte is classified by native4000commands;choice labels come from native2100count/pointer accessors,not guessed text boundaries. Original actor selectors nameLil,Janus,Gerhard,Fernando andValdes;the native catalog legacy glyph forms are recorded without editing names. Three preexisting story macro-copy calls are the registered reviewed-name catalog wrapper,not unmodified clean calls;allthree current call words match historicalROM/RAM andall other selected source spans are clean exact. The preserved2704producer stopped onits overly broad clean-code assertion before any source packet orcredit. All macro/getter probes use historical copied London RAM andremain offline/source evidence,not current Seville activation or display. Source andcurrent native structural command shapes match,EV2is untouched,andnative macro probes preserve whole4MiB/input/output guards/ABI. Event28/29records are bound buthistorical eligibility flags are not current eligibility. Full branch/outcome decoding,source-bound progressive/FE/choice rules,current native fonts andnew registered relocation/release checks remain required. Preserve Valdes insults andmilitary intimidation,Lil offended dignity,Gerhard cautious recognition/counsel,Fernando avoidance andJanus alarm. Do not invent piracy,a survival guarantee,death,kinship,rank beyond explicit Spanish admiral,or a whole-region outcome from the Seville-share change. This record belongs to the complete original scene/branch indicated by its native command andancestor offsets;storage order alone is not a consecutive exchange.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "fresh-source-context-prose-reviewed;current-native-formatting-reference-map-and-registered-integration-pending"
+    }
+  ],
+  "revised": 15,
+  "retained": 3,
+  "no_authored_line_breaks_or_padding": true,
+  "no_ROM_registered_release_or_actual_Seville_approval": true
+}

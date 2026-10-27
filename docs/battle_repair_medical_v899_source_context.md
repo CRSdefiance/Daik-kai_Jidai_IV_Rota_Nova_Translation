@@ -1,0 +1,3 @@
+# V899: next battle repair and medical source contexts
+
+Next24 entries1596-1619 map to original Shipwright13 and medical14 duties. All150 direct battle helper,main battle selector and ordinary-context controls pass for21 NPCs and four genuine captains. NPC and captain1 states come from real current battle captures;other heroes retain their genuine source models with declared CPU mode controls. Exact Japanese,current V893 and canonical references and storage neighbors are saved. No prose,formatting,actual repair/medical display or completion credit.881 complete,884 source/prose reviewed;full goal and separate graphics audit remain open.

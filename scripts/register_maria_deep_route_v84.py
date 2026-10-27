@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v83"]["batches"]);b.append("translations/maria_deep_route_v84.json");p["profiles"]["maria-deep-route-v84"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V83 with all 23 records in SC3 block 94: the palace sage's Proof motive test, moral warning, and northeastern map-clan clue."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v84: {len(b)} batches")

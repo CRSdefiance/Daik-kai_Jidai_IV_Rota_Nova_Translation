@@ -1,0 +1,3 @@
+# V978: mood and panic source review
+
+V978 source/prose-reviews39 mood0/4/5 comments1833-1871:25 revisions and14 retentions. All225 original direct/main battle/ordinary selections,75 physical-priority and72 defined normal-mood controls pass. Drafts restore personal mood,motivation,work assessment,independent1843/1844 and1855/1856,complete ASCII I,self-talk and personal self-calming. Silent1855 and comic1871 remain nonverbal. Native layout,registered integration and actual scenes remain pending. V975 stays current;1118 complete,1160 source/prose reviewed. Remaining shared/routes/player prose/raw coverage,older750-752,special1885-1888,raw abandon-caption0x134E54,separate graphics/all18 plaques,Samwell header and later older-record re-audit remain open;full goal active.

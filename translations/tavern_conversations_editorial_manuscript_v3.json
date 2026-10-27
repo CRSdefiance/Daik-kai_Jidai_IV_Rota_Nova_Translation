@@ -1,0 +1,1284 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "03056eb9210cfcdc8462af496abade520ccb8d871a611fe29691d7b56c0ec22a",
+  "context_evidence": "work\\analysis\\tavern_conversations_v763\\native_context.json",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_820",
+      "message_id": 820,
+      "source_hex": "82b182cc82a082bd82e882c582cd0a257382c682a282a40a257382cc257382aa0a96bc82f0927982b982c482a282dc82b782e6",
+      "japanese": "このあたりでは\n%sという\n%sの%sが\n名を馳せていますよ",
+      "canonical_source_hex": "2573207365727665732025732061732025732e2020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2573206f6620257320697320612077656c6c2d6b6e6f776e206c6f63616c2025732e2020202020202020202020202020202020",
+      "current_English": "%s of %s is a well-known local %s.                 ",
+      "source_reference": {
+        "block": 10,
+        "record": 39,
+        "offset": 2672
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 51,
+        "offset": 3117
+      },
+      "english": "%s of %s is a famous %s around here.{PAD}",
+      "source_meaning": "The named person,a profession associated with the named town,is becoming renowned in this area.",
+      "localization_note": "Keep person,town and profession in original argument order. Around here avoids incorrectly describing the person as local. Profession values need lowercase English only in this prose provider. Original virtual+24 supplies the native person name: the ordinary implementation reads the surname table member+4. Preserve the actual class getter and current-admiral special-object resolution; do not synthesize a full name.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json",
+        "person_name_provider_evidence": "work\\analysis\\tavern_storage_v764\\actual_native_person_arguments.json"
+      },
+      "runtime_argument_contract": [
+        "native_person_name",
+        "town_name",
+        "localized_force_profession"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_821",
+      "message_id": 821,
+      "source_hex": "82b182cc95d382b682e10a257382c182c482a282a40a257382cc257382aa0a959d82f0979882a982b982c482e982ba",
+      "japanese": "この辺じゃ\n%sっていう\n%sの%sが\n幅を利かせてるぜ",
+      "canonical_source_hex": "2573207365727665732025732061732025732e20202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2573206f6620257320697320616e20696e666c75656e7469616c206c6f63616c2025732e202020",
+      "current_English": "%s of %s is an influential local %s.   ",
+      "source_reference": {
+        "block": 10,
+        "record": 40,
+        "offset": 2724
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 52,
+        "offset": 3169
+      },
+      "english": "%s of %s is an influential %s around here.{PAD}",
+      "source_meaning": "The named person,a profession associated with the named town,wields influence around this area.",
+      "localization_note": "Preserve influence rather than changing it into simple fame; keep all three source arguments and their roles. No gender,rank or kinship is invented. Original virtual+24 supplies the native person name: the ordinary implementation reads the surname table member+4. Preserve the actual class getter and current-admiral special-object resolution; do not synthesize a full name.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json",
+        "person_name_provider_evidence": "work\\analysis\\tavern_storage_v764\\actual_native_person_arguments.json"
+      },
+      "runtime_argument_contract": [
+        "native_person_name",
+        "town_name",
+        "localized_force_profession"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_822",
+      "message_id": 822,
+      "source_hex": "82b182cc8bdf82ad82c982a082e90a257382c682a282a48a5882c982cd0a8d7382c182c482dd82dc82b582bd82a98148",
+      "japanese": "この近くにある\n%sという街には\n行ってみましたか？",
+      "canonical_source_hex": "4861766520796f75207669736974656420746865206e656172627920746f776e206f662025733f202020202020202020",
+      "current_text_hex": "4861766520796f75207669736974656420746865206e656172627920746f776e206f662025733f202020202020202020",
+      "current_English": "Have you visited the nearby town of %s?         ",
+      "source_reference": {
+        "block": 10,
+        "record": 41,
+        "offset": 2772
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 53,
+        "offset": 3209
+      },
+      "english": "Have you visited the nearby town of %s?{PAD}",
+      "source_meaning": "Politely asks whether the player has visited the nearby named town.",
+      "localization_note": "Retain the already natural complete question; native town-name bounds and macro-like data still require final formatting checks.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "town_name"
+      ],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_823",
+      "message_id": 823,
+      "source_hex": "82a082f182bd0a257382c182c48a5882f00a926d82c182c482e982a982a281480a82b182cc8bdf82ad82c982a082e982f182be82e6",
+      "japanese": "あんた\n%sって街を\n知ってるかい？\nこの近くにあるんだよ",
+      "canonical_source_hex": "4b6e6f772025733f2049742773206e65617262792e2020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4b6e6f772025733f2049742773206e65617262792e202020202020202020202020",
+      "current_English": "Know %s? It's nearby.            ",
+      "source_reference": {
+        "block": 10,
+        "record": 41,
+        "offset": 2820
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 54,
+        "offset": 3258
+      },
+      "english": "Have you heard of %s? It's a town near here.{PAD}",
+      "source_meaning": "Casually asks whether the player knows the named town and explains that it is nearby.",
+      "localization_note": "Replace the clipped Know question with a complete natural introduction; explicitly retain that the place is a nearby town.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "town_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_824",
+      "message_id": 824,
+      "source_hex": "8da182cd814193c182c90a82b182ea82c682a282c182bd8fee95f182cd82c882a282ed",
+      "japanese": "今は、特に\nこれといった情報はないわ",
+      "canonical_source_hex": "7468696e67206d75636820746f207265706f7274207269676874206e6f772e20202020",
+      "current_text_hex": "4e6f7468696e67206d75636820746f207265706f7274207269676874206e6f772e2020",
+      "current_English": "Nothing much to report right now.  ",
+      "source_reference": {
+        "block": 10,
+        "record": 42,
+        "offset": 2876
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 55,
+        "offset": 3292
+      },
+      "english": "Nothing much to report right now.{PAD}",
+      "source_meaning": "There is no particular noteworthy information at present.",
+      "localization_note": "Retain the natural colloquial no-news reply. No source fact or omitted useful rumor is inferred.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_825",
+      "message_id": 825,
+      "source_hex": "82f18148",
+      "japanese": "ん？",
+      "canonical_source_hex": "486d3f20",
+      "current_text_hex": "486d3f20",
+      "current_English": "Hm? ",
+      "source_reference": {
+        "block": 10,
+        "record": 43,
+        "offset": 2912
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 56,
+        "offset": 3328
+      },
+      "english": "Hm?{PAD}",
+      "source_meaning": "The player reacts with a brief questioning hm to a Tavern tip.",
+      "localization_note": "Retain the natural questioning interjection. Its original player-only53C24 wrapper differs from both the direct NPC and four-captain table wrappers.",
+      "speaker": "Player admiral",
+      "context": "Original player-only53C24 wrapper at58004/5805C with direct825,return53C5C. Reaction to a Tavern tip,not a bare-NPC dialogue ID.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_826",
+      "message_id": 826,
+      "source_hex": "82a082e7814188d38a4f82c68ee382a282cc82cb",
+      "japanese": "あら、意外と弱いのね",
+      "canonical_source_hex": "596f7527726520707265747479207765616b2e20",
+      "current_text_hex": "596f7527726520707265747479207765616b2e20",
+      "current_English": "You're pretty weak. ",
+      "source_reference": {
+        "block": 10,
+        "record": 43,
+        "offset": 2916
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 57,
+        "offset": 3333
+      },
+      "english": "Oh, I thought you could handle another drink.{PAD}",
+      "source_meaning": "Surprised teasing that the player has less drinking tolerance than expected,after they decline another cup.",
+      "localization_note": "The preceding59 asks the player to have another cup; declining selects826. Localize the teasing drinking remark,not combat strength. Drink stays neutral about liquor versus a regional alternative.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_827",
+      "message_id": 827,
+      "source_hex": "82d3815b82f18141257382b382f182cb81480a82b682e1814182a88bdf82c382ab82cc82b582e982b582c98aa394748149",
+      "japanese": "ふーん、%sさんね？\nじゃ、お近づきのしるしに乾杯！",
+      "canonical_source_hex": "52696768742e2e2e25732c2072696768743f204120746f61737420746f206f7572206e657720667269656e647368697021",
+      "current_text_hex": "486d6d2e2e2e2025732c2072696768743f2048657265277320746f206f7572206e657720667269656e6473686970212020",
+      "current_English": "Hmm... %s, right? Here's to our new friendship!  ",
+      "source_reference": {
+        "block": 10,
+        "record": 43,
+        "offset": 2936
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 58,
+        "offset": 3354
+      },
+      "english": "Hmm... %s, right? Here's to our new friendship!{PAD}",
+      "source_meaning": "Checks the player's name and proposes a toast to becoming acquainted.",
+      "localization_note": "Retain the existing idiomatic toast and supplied admiral short name; the Japanese honorific creates no English title or family relationship.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "admiral_short_name"
+      ],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_828",
+      "message_id": 828,
+      "source_hex": "82cb82a6814181772573817882c182c40a926d82c182c482e981480a90a28a4582cc82c782b182a982c982a082e982f182be82af82c70a82c682c182c482e082ab82ea82a282c882f182c582b782c182c4",
+      "japanese": "ねえ、『%s』って\n知ってる？\n世界のどこかにあるんだけど\nとってもきれいなんですって",
+      "canonical_source_hex": "4b6e6f77206f6620222573223f0a2054686579207361792069742069730a2062656175746966756c2c20736f6d6577686572650a20696e2074686520776f726c642e202020202020202020202020202020",
+      "current_text_hex": "4b6e6f77206f6620222573223f0a202054686579207361792069742069730a202062656175746966756c2c20736f6d6577686572650a2020696e2074686520776f726c642e202020",
+      "current_English": "Know of \"%s\"?\n  They say it is\n  beautiful, somewhere\n  in the world.   ",
+      "source_reference": {
+        "block": 10,
+        "record": 44,
+        "offset": 2988
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 59,
+        "offset": 3404
+      },
+      "english": "Have you heard of %s? It's out there somewhere, and they say it's beautiful.{PAD}",
+      "source_meaning": "Asks whether the player knows the named item,which exists somewhere in the world and is reportedly beautiful.",
+      "localization_note": "Out there somewhere conveys the original world-wide vagueness without inventing a known location or definite ownership. Preserve hearsay about beauty.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_829",
+      "message_id": 829,
+      "source_hex": "82a082e7814182bb82ea82cd8148814089bd82a982b582e78148",
+      "japanese": "あら、それは？　何かしら？",
+      "canonical_source_hex": "4f682c207768617420697320746861743f202020202020202020",
+      "current_text_hex": "4f682c207768617420697320746861743f202020202020202020",
+      "current_English": "Oh, what is that?         ",
+      "source_reference": {
+        "block": 10,
+        "record": 45,
+        "offset": 3072
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 60,
+        "offset": 3477
+      },
+      "english": "Oh, what's that?{PAD}",
+      "source_meaning": "Curiously asks what the object is.",
+      "localization_note": "Use the natural contraction in a direct curious question.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_830",
+      "message_id": 830,
+      "source_hex": "82f1814182b182ea82a982a281480a82b182ea82cd8177257381780a82be82e6",
+      "japanese": "ん、これかい？\nこれは『%s』\nだよ",
+      "canonical_source_hex": "546869733f0a20546865206974656d2069730a20222573222e20202020202020",
+      "current_text_hex": "546869733f0a2020546865206974656d2069730a2020222573222e2020202020",
+      "current_English": "This?\n  The item is\n  \"%s\".     ",
+      "source_reference": {
+        "block": 10,
+        "record": 46,
+        "offset": 3100
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 61,
+        "offset": 3504
+      },
+      "english": "This? It's called %s.{PAD}",
+      "source_meaning": "The Rafael voice identifies the object by its supplied item name.",
+      "localization_note": "A common idiomatic identification handles singular/plural descriptive item labels without an invented a/the article. Japanese sentence particles do not require forced English gender differences; the following request variants keep their register.",
+      "speaker": "Rafael",
+      "context": "Independent captain voice0,original table0x21166e0; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694880,
+        "supplied_route_index": 0,
+        "selected_ID": 830
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_831",
+      "message_id": 831,
+      "source_hex": "82b182ea82a981480a82b182ea82cd81772573817882be",
+      "japanese": "これか？\nこれは『%s』だ",
+      "canonical_source_hex": "546861743f0a204e616d65640a20222573222e20202020",
+      "current_text_hex": "546861743f0a20204e616d65640a2020222573222e2020",
+      "current_English": "That?\n  Named\n  \"%s\".  ",
+      "source_reference": {
+        "block": 10,
+        "record": 46,
+        "offset": 3132
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 62,
+        "offset": 3537
+      },
+      "english": "This? It's called %s.{PAD}",
+      "source_meaning": "The Hodram voice identifies the object by its supplied item name.",
+      "localization_note": "The same natural identification is faithful to the terse Japanese naming statement. Preserve the independent Hodram table slot and real item argument; do not join it to neighboring entries.",
+      "speaker": "Hodram",
+      "context": "Independent captain voice1,original table0x21166e0; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694880,
+        "supplied_route_index": 1,
+        "selected_ID": 831
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_832",
+      "message_id": 832,
+      "source_hex": "82b182ea81480a82b182ea82cd81772573817882c182c40a82a282a482cc82e6",
+      "japanese": "これ？\nこれは『%s』って\nいうのよ",
+      "canonical_source_hex": "546869733f0a20546865792063616c6c2069740a20222573222e202020202020",
+      "current_text_hex": "546869733f0a2020546865792063616c6c2069740a2020222573222e20202020",
+      "current_English": "This?\n  They call it\n  \"%s\".    ",
+      "source_reference": {
+        "block": 10,
+        "record": 47,
+        "offset": 3156
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 63,
+        "offset": 3561
+      },
+      "english": "This? It's called %s.{PAD}",
+      "source_meaning": "The Lil voice identifies the object by its supplied item name.",
+      "localization_note": "Preserve the independent Lil table slot. The natural name construction avoids a plural-label article or verb disagreement.",
+      "speaker": "Lil",
+      "context": "Independent captain voice2,original table0x21166e0; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694880,
+        "supplied_route_index": 2,
+        "selected_ID": 832
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_833",
+      "message_id": 833,
+      "source_hex": "82b182ea81480a82b182ea82cd81772573817882e6",
+      "japanese": "これ？\nこれは『%s』よ",
+      "canonical_source_hex": "546869733f0a204e616d65640a20222573222e2020",
+      "current_text_hex": "546869733f0a20204e616d65640a2020222573222e",
+      "current_English": "This?\n  Named\n  \"%s\".",
+      "source_reference": {
+        "block": 10,
+        "record": 47,
+        "offset": 3188
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 64,
+        "offset": 3594
+      },
+      "english": "This? It's called %s.{PAD}",
+      "source_meaning": "The Maria voice identifies the object by its supplied item name.",
+      "localization_note": "Preserve the independent Maria table slot and feminine Japanese identification without inventing an English relationship or title.",
+      "speaker": "Maria",
+      "context": "Independent captain voice3,original table0x21166e0; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694880,
+        "supplied_route_index": 3,
+        "selected_ID": 833
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_834",
+      "message_id": 834,
+      "source_hex": "82dc82a0814183588365834c8149",
+      "japanese": "まあ、ステキ！",
+      "canonical_source_hex": "486f77206c6f76656c7921202020",
+      "current_text_hex": "486f77206c6f76656c7921202020",
+      "current_English": "How lovely!   ",
+      "source_reference": {
+        "block": 10,
+        "record": 48,
+        "offset": 3212
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 65,
+        "offset": 3616
+      },
+      "english": "How lovely!{PAD}",
+      "source_meaning": "The recipient admires the lovely object.",
+      "localization_note": "Retain the short natural expression of admiration.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_835",
+      "message_id": 835,
+      "source_hex": "977e82b582a282a982a28148",
+      "japanese": "欲しいかい？",
+      "canonical_source_hex": "57616e742069743f20202020",
+      "current_text_hex": "57616e742069743f20202020",
+      "current_English": "Want it?    ",
+      "source_reference": {
+        "block": 10,
+        "record": 49,
+        "offset": 3228
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 66,
+        "offset": 3631
+      },
+      "english": "Would you like it?{PAD}",
+      "source_meaning": "The Rafael voice asks whether the recipient wants the item.",
+      "localization_note": "Would you like it is an idiomatic gentle offer,keeping the source want rather than merely asking for an opinion.",
+      "speaker": "Rafael",
+      "context": "Independent captain voice0,original table0x2116610; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694672,
+        "supplied_route_index": 0,
+        "selected_ID": 835
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_836",
+      "message_id": 836,
+      "source_hex": "8b4382c993fc82c182bd82a98148",
+      "japanese": "気に入ったか？",
+      "canonical_source_hex": "4c696b652069743f202020202020",
+      "current_text_hex": "4c696b652069743f202020202020",
+      "current_English": "Like it?      ",
+      "source_reference": {
+        "block": 10,
+        "record": 49,
+        "offset": 3240
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 67,
+        "offset": 3644
+      },
+      "english": "Do you like it?{PAD}",
+      "source_meaning": "The Hodram voice asks whether the recipient likes the item.",
+      "localization_note": "Keep the direct question about liking the object rather than changing it into the Rafael want/offer wording.",
+      "speaker": "Hodram",
+      "context": "Independent captain voice1,original table0x2116610; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694672,
+        "supplied_route_index": 1,
+        "selected_ID": 836
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_837",
+      "message_id": 837,
+      "source_hex": "82a082e781418b4382c993fc82c182bd8148",
+      "japanese": "あら、気に入った？",
+      "canonical_source_hex": "4c696b652069743f20202020202020202020",
+      "current_text_hex": "4c696b652069743f20202020202020202020",
+      "current_English": "Like it?          ",
+      "source_reference": {
+        "block": 10,
+        "record": 50,
+        "offset": 3256
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 68,
+        "offset": 3659
+      },
+      "english": "Oh, do you like it?{PAD}",
+      "source_meaning": "The Lil voice asks with a light interjection whether the recipient likes it.",
+      "localization_note": "Preserve the light interjection and the separate question about liking the item.",
+      "speaker": "Lil",
+      "context": "Independent captain voice2,original table0x2116610; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694672,
+        "supplied_route_index": 2,
+        "selected_ID": 837
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_838",
+      "message_id": 838,
+      "source_hex": "82a082e781418bbb96a182aa82a082e982cc8148",
+      "japanese": "あら、興味があるの？",
+      "canonical_source_hex": "437572696f75733f202020202020202020202020",
+      "current_text_hex": "437572696f75733f202020202020202020202020",
+      "current_English": "Curious?            ",
+      "source_reference": {
+        "block": 10,
+        "record": 51,
+        "offset": 3276
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 69,
+        "offset": 3678
+      },
+      "english": "Oh, are you interested?{PAD}",
+      "source_meaning": "The Maria voice asks with a light interjection whether the recipient is interested.",
+      "localization_note": "Restore interest as the source question,not a different offer or a terse UI fragment.",
+      "speaker": "Maria",
+      "context": "Independent captain voice3,original table0x2116610; parent53C14,table at formatter SP+270. Source selection is proven for all four indices; alternate complete route activation is not claimed.",
+      "native_binding": {
+        "original_table": 34694672,
+        "supplied_route_index": 3,
+        "selected_ID": 838
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_839",
+      "message_id": 839,
+      "source_hex": "82d082e582c182c682b582c481630a8e8482c982ad82be82b382e982cc8148",
+      "japanese": "ひょっとして…\n私にくださるの？",
+      "canonical_source_hex": "436f756c6420746869732062650a20666f72206d653f202020202020202020",
+      "current_text_hex": "436f756c6420746869732062650a2020666f72206d653f2020202020202020",
+      "current_English": "Could this be\n  for me?        ",
+      "source_reference": {
+        "block": 10,
+        "record": 51,
+        "offset": 3296
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 70,
+        "offset": 3699
+      },
+      "english": "Could this be for me?{PAD}",
+      "source_meaning": "The recipient tentatively asks whether the player is giving the item to her.",
+      "localization_note": "Retain the natural tentative gift question. It remains a player Yes/No confirmation; no item is promised without that choice.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898444,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_840",
+      "message_id": 840,
+      "source_hex": "82dc82a0837a8393836781498148814082a482ea82b582a281490a82a082e882aa82c682a4814191e590d882c982b782e982ed8149",
+      "japanese": "まあホント！？　うれしい！\nありがとう、大切にするわ！",
+      "canonical_source_hex": "5265616c6c793f20576f6e64657266756c210a205468616e6b20796f752e2041207472656173757265212020202020202020202020",
+      "current_text_hex": "5265616c6c793f20576f6e64657266756c210a20205468616e6b20796f752e20412074726561737572652120202020202020202020",
+      "current_English": "Really? Wonderful!\n  Thank you. A treasure!          ",
+      "source_reference": {
+        "block": 10,
+        "record": 52,
+        "offset": 3328
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 71,
+        "offset": 3731
+      },
+      "english": "Really? I'm so happy! Thank you. I'll treasure it!{PAD}",
+      "source_meaning": "Delighted acceptance,thanks and a promise to cherish the gift.",
+      "localization_note": "Restore the explicit happiness and promise to cherish the gift. The old A treasure fragment omitted that promise.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_841",
+      "message_id": 841,
+      "source_hex": "82bb82a48163814282b282df82f182c882b382a20a8ea995aa8f9f8ee882be82c182bd82ed82cb",
+      "japanese": "そう…。ごめんなさい\n自分勝手だったわね",
+      "canonical_source_hex": "536f7272792e2e2e0a2054686174207761732073656c666973682e202020202020202020202020",
+      "current_text_hex": "536f7272792e2e2e0a202054686174207761732073656c666973682e2020202020202020202020",
+      "current_English": "Sorry...\n  That was selfish.           ",
+      "source_reference": {
+        "block": 10,
+        "record": 53,
+        "offset": 3384
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 72,
+        "offset": 3785
+      },
+      "english": "I see... I'm sorry. That was selfish of me.{PAD}",
+      "source_meaning": "Disappointed acknowledgement,apology and admission that the request was selfish.",
+      "localization_note": "Keep the disappointed acknowledgement and complete apology. Selfish of me is natural English ownership of the request.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original Tavern gift/rumor/drink conversation. Previous and following source selections remain independent; refusal and gift transfer have separate Yes/No paths.826 follows declining the original another-cup prompt59.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_842",
+      "message_id": 842,
+      "source_hex": "8fda82b582a288ca927582cd816382bb82a482cb82a60a257382cc82a082bd82e882a982b582e7",
+      "japanese": "詳しい位置は…そうねえ\n%sのあたりかしら",
+      "canonical_source_hex": "54686520657861637420706c6163653f0a20536f6d657768657265206e6561722025732e202020",
+      "current_text_hex": "54686520657861637420706c6163653f0a2020536f6d657768657265206e6561722025732e2020",
+      "current_English": "The exact place?\n  Somewhere near %s.  ",
+      "source_reference": {
+        "block": 10,
+        "record": 54,
+        "offset": 3424
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 73,
+        "offset": 3825
+      },
+      "english": "Where exactly? Hmm... Around %s, I think.{PAD}",
+      "source_meaning": "Considers the detailed location and tentatively gives the area around the supplied coordinates.",
+      "localization_note": "The original51580 returns latitude/longitude text beginning with LF and containing alignment spaces,not a region name. Keep the tentative around wording and normalize provider whitespace through the proven formatter; no translator-authored break. V3 uses the idiomatic rhetorical Where exactly and tentative Around/I think for the source detailed-position hesitation. This preserves all meaning while avoiding redundant Somewhere around. The visual review found compass-letter/number separation in the older draft;each original coordinate pair must now remain on one rendered line.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original two-axis/single-axis item-location provider;398 total fragment cases bind actual item names and ordered qualitative directions.842 instead calls the original coordinate formatter after a position getter.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "native_coordinate_text"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_843",
+      "message_id": 843,
+      "source_hex": "81772573817881480a926d82c182c482e982ed82e60a82b182b182a982e7257382c625730a257382c6257382c98d7382ad82c60a8ca982c282a982e982a982e082b582ea82c882a282ed",
+      "japanese": "『%s』？\n知ってるわよ\nここから%sと%s\n%sと%sに行くと\n見つかるかもしれないわ",
+      "canonical_source_hex": "222573223f0a205965732e20476f20257320616e642025732c0a207468656e20257320616e642025732e0a20596f75206d61790a2066696e642069742e20202020202020202020202020",
+      "current_text_hex": "222573223f0a20205965732e20476f20257320616e642025732c0a20207468656e20257320616e642025732e0a2020596f75206d61790a202066696e642069742e202020202020202020",
+      "current_English": "\"%s\"?\n  Yes. Go %s and %s,\n  then %s and %s.\n  You may\n  find it.         ",
+      "source_reference": {
+        "block": 10,
+        "record": 55,
+        "offset": 3464
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 74,
+        "offset": 3865
+      },
+      "english": "I know of %s. You might find it %s %s and %s %s of here.{PAD}",
+      "source_meaning": "Knows of the named item and says it may be found the stated qualitative distance in each of two cardinal directions from here.",
+      "localization_note": "The five source arguments are item,NS distance qualifier,NS direction,EW distance qualifier,EW direction. The qualifiers mean a little/far/very far. There are no numerical coordinates or sequential travel legs here. Private English tables must replace Japanese morphemes without altering shared N/S/E/W UI labels.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original two-axis/single-axis item-location provider;398 total fragment cases bind actual item names and ordered qualitative directions.842 instead calls the original coordinate formatter after a position getter.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "item_name",
+        "NS_distance_qualifier",
+        "NS_direction",
+        "EW_distance_qualifier",
+        "EW_direction"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_844",
+      "message_id": 844,
+      "source_hex": "81772573817882cc82b182c682f00a926d82e882bd82a282cc81480a82b182cc8a5882cc257382c6257382cc95fb8cfc82c90a82a082e982c182c495b782a282bd82ed82e6",
+      "japanese": "『%s』のことを\n知りたいの？\nこの街の%sと%sの方向に\nあるって聞いたわよ",
+      "canonical_source_hex": "4c6f6f6b696e6720666f7220222573223f0a204865616420257320616e642025730a2066726f6d20746869730a20636974792e202020202020202020202020202020202020",
+      "current_text_hex": "4c6f6f6b696e6720666f7220222573223f0a20204865616420257320616e642025730a202066726f6d20746869730a2020636974792e",
+      "current_English": "Looking for \"%s\"?\n  Head %s and %s\n  from this\n  city.",
+      "source_reference": {
+        "block": 10,
+        "record": 56,
+        "offset": 3540
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 75,
+        "offset": 3940
+      },
+      "english": "%s? I hear it's %s %s of this town.{PAD}",
+      "source_meaning": "Responds to interest in the item with hearsay about its qualitative distance and direction from this town.",
+      "localization_note": "Preserve hearsay and the single-axis qualitative distance/direction pair. Do not turn the two source arguments into two sequential turns.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original two-axis/single-axis item-location provider;398 total fragment cases bind actual item names and ordered qualitative directions.842 instead calls the original coordinate formatter after a position getter.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "item_name",
+        "distance_qualifier",
+        "direction"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_845",
+      "message_id": 845,
+      "source_hex": "81772573817882cb82a681630a82bb82a482a282a682ce8141257382c6257382c50a8ca982a982af82bd82c182c495b782a282bd82e682a482c80a8b4382aa82b782e982ed8163",
+      "japanese": "『%s』ねえ…\nそういえば、%sと%sで\n見かけたって聞いたような\n気がするわ…",
+      "canonical_source_hex": "222573222e2e2e0a20536f6d656f6e65207361772069740a206e6561722025730a20616e642025732e202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "222573222e2e2e0a2020536f6d656f6e65207361772069740a20206e6561722025730a2020616e642025732e",
+      "current_English": "\"%s\"...\n  Someone saw it\n  near %s\n  and %s.",
+      "source_reference": {
+        "block": 10,
+        "record": 57,
+        "offset": 3612
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 76,
+        "offset": 3995
+      },
+      "english": "%s? I think I heard it was seen %s %s of here...{PAD}",
+      "source_meaning": "Vaguely recalls hearing that the item was seen the stated qualitative distance and direction from here.",
+      "localization_note": "Keep the uncertain recollection of a sighting and the same single-axis pair. No exact numeric travel duration or destination is invented.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original two-axis/single-axis item-location provider;398 total fragment cases bind actual item names and ordered qualitative directions.842 instead calls the original coordinate formatter after a position getter.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "item_name",
+        "distance_qualifier",
+        "direction"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_846",
+      "message_id": 846,
+      "source_hex": "82a082a0814181772573817881480a82bb82ea82c882e7814182b182cc8a5882cc82b782ae82bb82ce82c90a82a082e982dd82bd82a282e6",
+      "japanese": "ああ、『%s』？\nそれなら、この街のすぐそばに\nあるみたいよ",
+      "canonical_source_hex": "222573223f0a204170706172656e746c792069742069730a206e656172207468697320636974792e202020202020202020202573206d6179",
+      "current_text_hex": "41682c20272573273f204170706172656e746c792c2069742773207665727920636c6f736520746f207468697320746f776e2e",
+      "current_English": "Ah, '%s'? Apparently, it's very close to this town.",
+      "source_reference": {
+        "block": 10,
+        "record": 58,
+        "offset": 3684
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 77,
+        "offset": 4040
+      },
+      "english": "Ah, '%s'? Apparently, it's very close to this town.{PAD}",
+      "source_meaning": "The named item apparently lies very close to this town.",
+      "localization_note": "Retain the already natural nearby-item rumor and uncertainty. Keep the source item argument and current readable quotation style.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original two-axis/single-axis item-location provider;398 total fragment cases bind actual item names and ordered qualitative directions.842 instead calls the original coordinate formatter after a position getter.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "item_name"
+      ],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_847",
+      "message_id": 847,
+      "source_hex": "82b182cc8a5882c5257382aa0a97ac8d7382e882bb82a482e60a91e596d782af82cc836083838393835882a982e082cb8148",
+      "japanese": "この街で%sが\n流行りそうよ\n大儲けのチャンスかもね？",
+      "canonical_source_hex": "207472656e640a20686572652e0a20436f756c642062652070726f66697461626c6521202020202020202020202020202020",
+      "current_text_hex": "2573206d6179206361746368206f6e20686572652e20596f7520636f756c64206d616b65206120666f7274756e6520696620697420646f657321",
+      "current_English": "%s may catch on here. You could make a fortune if it does!",
+      "source_reference": {
+        "block": 10,
+        "record": 58,
+        "offset": 3740
+      },
+      "current_reference": {
+        "block": 11,
+        "record": 0,
+        "offset": 0
+      },
+      "english": "%s may catch on here. You could make a fortune if it does!{PAD}",
+      "source_meaning": "The commodity may become fashionable in the current town,which could be a chance for large profits.",
+      "localization_note": "Retain the natural prospective trend/profit statement. May and could preserve both source uncertainties.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original commodity rumor/trend provider; native threshold49/50 and actual object getters preserve town/commodity order and distinguish prospective/current reports.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "commodity_name"
+      ],
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_848",
+      "message_id": 848,
+      "source_hex": "8da182cd82cb0a82b182cc8a5882b682e1257382aa0a82b782c182b282ad948482ea82c482e982cc8149",
+      "japanese": "今はね\nこの街じゃ%sが\nすっごく売れてるの！",
+      "canonical_source_hex": "25732069732073656c6c696e670a20766572792077656c6c0a2068657265212020202020202020202020",
+      "current_text_hex": "25732069732073656c6c696e670a2020766572792077656c6c0a20206865726521202020202020202020",
+      "current_English": "%s is selling\n  very well\n  here!         ",
+      "source_reference": {
+        "block": 10,
+        "record": 59,
+        "offset": 3792
+      },
+      "current_reference": {
+        "block": 11,
+        "record": 1,
+        "offset": 59
+      },
+      "english": "Sales of %s are really strong in this town right now!{PAD}",
+      "source_meaning": "The commodity is selling extremely well in the current town right now.",
+      "localization_note": "Sales of makes the sentence grammatical for both mass names and plural commodity names such as Firearms. Preserve actual current sales rather than substituting an unproven future demand claim.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original commodity rumor/trend provider; native threshold49/50 and actual object getters preserve town/commodity order and distinguish prospective/current reports.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "commodity_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_849",
+      "message_id": 849,
+      "source_hex": "82cb82a6814195b782a282c4814291e5836a8385815b835881490a257382c5257382aa0a97ac8d7382e882bb82a482c882f182c582b782c182c4",
+      "japanese": "ねえ、聞いて。大ニュース！\n%sで%sが\n流行りそうなんですって",
+      "canonical_source_hex": "426967206e657773210a202573206d617920736565206120626f6f6d0a20696e2025732e20202020202020202020202020202020202020202020",
+      "current_text_hex": "426967206e657773210a20202573206d617920736565206120626f6f6d0a2020696e2025732e",
+      "current_English": "Big news!\n  %s may see a boom\n  in %s.",
+      "source_reference": {
+        "block": 10,
+        "record": 60,
+        "offset": 3836
+      },
+      "current_reference": {
+        "block": 11,
+        "record": 2,
+        "offset": 102
+      },
+      "english": "Listen, big news! They say %s may see a boom in %s.{PAD}",
+      "source_meaning": "Excited reported news that the named town may soon see a fashion boom in the named commodity.",
+      "localization_note": "Keep the attention-getter,reported nature and prospective boom. Original native order is town then commodity; do not exchange them.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original commodity rumor/trend provider; native threshold49/50 and actual object getters preserve town/commodity order and distinguish prospective/current reports.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "town_name",
+        "commodity_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_850",
+      "message_id": 850,
+      "source_hex": "257382b682e10a257382aa0a91e597ac8d7382b582c482e982f182c582b782c182c40a82b782b282a2955d94bb82e6",
+      "japanese": "%sじゃ\n%sが\n大流行してるんですって\nすごい評判よ",
+      "canonical_source_hex": "25732069730a20626f6f6d696e670a2077697468202573210a20202020202020202020202020202020202020202020",
+      "current_text_hex": "25732069730a2020626f6f6d696e670a202077697468202573210a2020202020",
+      "current_English": "%s is\n  booming\n  with %s!\n     ",
+      "source_reference": {
+        "block": 10,
+        "record": 61,
+        "offset": 3896
+      },
+      "current_reference": {
+        "block": 11,
+        "record": 3,
+        "offset": 141
+      },
+      "english": "They say there's a huge craze in %s for %s. Everyone's talking about it!{PAD}",
+      "source_meaning": "Reports a major current fashion boom in the named town for the named commodity and emphasizes its popularity.",
+      "localization_note": "Restore reported popularity and the omitted reputation sentence. A craze for works with both plural and mass commodity labels while keeping town/product argument order.",
+      "speaker": "Original contextual Tavern keeper or barmaid",
+      "context": "Original commodity rumor/trend provider; native threshold49/50 and actual object getters preserve town/commodity order and distinguish prospective/current reports.",
+      "native_binding": {
+        "parent": 33898516,
+        "provider_context_report": "work\\analysis\\tavern_conversations_v763\\native_context.json"
+      },
+      "runtime_argument_contract": [
+        "town_name",
+        "commodity_name"
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-provider-localization-formatting-and-integration-pending"
+    }
+  ],
+  "required_provider_work": [
+    "Private full English cardinal/distance tables for843-845; preserve shared UI labels.",
+    "Lowercase profession labels only in820/821 prose.",
+    "Protect all substituted name bytes in direct and table-selected speech.",
+    "Normalize actual coordinate-provider LF/spaces in842 and prove complete glyphs/bounds."
+  ],
+  "status": "research-drafts-not-integrated-not-completed",
+  "provider_role_correction": {
+    "prior_manuscript": "translations\\tavern_conversations_editorial_manuscript_v1.json",
+    "sha256": "80af3cf69366beab96dc27a1d14abcbe60c7326832f1dd9147b7f76eaf62d9f7",
+    "evidence": "work\\analysis\\tavern_storage_v764\\actual_native_person_arguments.json",
+    "evidence_sha256": "edcb46ab84cea6dfedc6d6aad486237199aa4b63566daae1f57e0afc3894c843",
+    "all31_English_paragraphs_unchanged": true,
+    "note": "Correct the V763 full-name metadata assumption. Actual current20 company leader names are surnames. Unclassified ordinary/generic table slots do not establish rumor eligibility."
+  },
+  "unpublished_visual_refinement": {
+    "prior_manuscript": "translations\\tavern_conversations_editorial_manuscript_v2.json",
+    "sha256": "b1ad6212a4169760e5dd598419aee5307407325366fdc39a5b9576ba795ac918",
+    "only_English_change": 842,
+    "late_visual_finding": "Compass letter and number split across rows despite complete bytes and no basic width/weak-ending failures.",
+    "prior_provider_role_correction_applies_to_V1_to_V2_only": true,
+    "source_meaning_and_every_coordinate_letter_digit_preserved": true
+  }
+}
