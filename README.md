@@ -1,4 +1,4 @@
-> Main promoted build: [Unified V4595](releases/all_routes_unified_v4595/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
+> Main promoted build: [Unified V4701](releases/all_routes_unified_v4701/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 
 # DK4 Translation Tool
 
@@ -10,8 +10,8 @@ legally dumped ROM. The tool never downloads a ROM and never edits its input in 
 
 ## Current combined patch
 
-The current main combined patch is [Unified V4595](releases/all_routes_unified_v4595/README.md).
-Earlier [V4541](releases/all_routes_unified_v4541/README.md), [V4496](releases/all_routes_unified_v4496/README.md), [V4445](releases/all_routes_unified_v4445/README.md), [V4353](releases/all_routes_unified_v4353/README.md), [V4303](releases/all_routes_unified_v4303/README.md), [V4251](releases/all_routes_unified_v4251/README.md), [V4204](releases/all_routes_unified_v4204/README.md), [V4160](releases/all_routes_unified_v4160/README.md), [V4046](releases/all_routes_unified_v4046/README.md), [V1492](releases/all_routes_unified_v1492/README.md) and [V245](releases/all_routes_unified_v245/README.md) checkpoints remain available.
+The current main combined patch is [Unified V4701](releases/all_routes_unified_v4701/README.md).
+Earlier [V4595](releases/all_routes_unified_v4595/README.md), [V4541](releases/all_routes_unified_v4541/README.md), [V4496](releases/all_routes_unified_v4496/README.md), [V4445](releases/all_routes_unified_v4445/README.md), [V4353](releases/all_routes_unified_v4353/README.md), [V4303](releases/all_routes_unified_v4303/README.md), [V4251](releases/all_routes_unified_v4251/README.md), [V4204](releases/all_routes_unified_v4204/README.md), [V4160](releases/all_routes_unified_v4160/README.md), [V4046](releases/all_routes_unified_v4046/README.md), [V1492](releases/all_routes_unified_v1492/README.md) and [V245](releases/all_routes_unified_v245/README.md) checkpoints remain available.
 It preserves all four routes and the cumulative shared UI, text and graphics layers.
 Graphics localization and complete gameplay verification remain in progress; the
 four partially translated Online screenshot bodies and other open items are recorded
