@@ -1,0 +1,35 @@
+"""Challenge the exact reviewed source/prose/native contract without changing release inputs."""
+from dataclasses import replace
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.dialogue.lil_B226_profile_v1 import contract,profile_for
+from dk4tool.dialogue.lil_B226_layout_v1 import encode_relocatable_dialogue,audit_relocatable_dialogue_record
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B226_policy_validation_v7256');DOC=Path('translations/lil_B226_editorial_manuscript_v2.json')
+if __name__=='__main__':
+    assert not ROOT.exists();doc=read(DOC);c=contract();image=NdsImage.open(doc['current_ROM']);arm=image.read_file('/__arm9__.bin');block=IlnkContainer.parse(image.read_file('/data/SC2.DK4')).blocks[226]
+    deps=[DOC,Path('translations/lil_B226_native_contract_v1.json'),Path('dk4tool/dialogue/lil_B226_profile_v1.py'),Path('dk4tool/dialogue/lil_B226_layout_v1.py'),Path('translations/release_stack.json'),Path('translations/editorial_review_current_v1.json'),Path(doc['current_ROM'])];before={str(p):sha(p.read_bytes()) for p in deps};positive=[];negative=[];rows={r['source_record_index']:r for r in doc['records']}
+    for r in doc['records']:
+        p=profile_for(arm,block,r['id']);raw=bytes.fromhex(r['source_hex']);v=encode_relocatable_dialogue(raw,r['english'],p);q=audit_relocatable_dialogue_record(raw,r['english'],p)
+        assert v.encoded.hex()==c['record_bindings'][r['id']]['compiled_hex'] and q['native_page_count']==r['native_page_count']==1 and q['base_QA_issues']==r['all_original_base_QA_issues'] and q['all_original_base_QA_issues_preserved'] and not any(i['severity'] in ['error','warning'] for i in q['issues']);positive.append(dict(id=r['id'],compiled_hex=v.encoded.hex(),qa=q))
+    def reject(label,fn):
+        try:fn()
+        except (ValueError,AssertionError) as e:negative.append(dict(case=label,rejected=True,error=str(e)))
+        else:raise AssertionError('Unsafe input accepted:'+label)
+    for r in doc['records']:
+        raw=bytes.fromhex(r['source_hex']);bad=raw[:-1]+bytes([raw[-1]^1]);p=profile_for(arm,block,r['id']);assert bad!=raw
+        reject('changed-complete-source-'+r['id'],lambda r=r,bad=bad,p=p:encode_relocatable_dialogue(bad,r['english'],p));reject('changed-prose-'+r['id'],lambda r=r,raw=raw,p=p:encode_relocatable_dialogue(raw,r['english']+'!',p))
+    r=rows[37];raw=bytes.fromhex(r['source_hex']);p=profile_for(arm,block,r['id'])
+    for label,bad in [('ASCII-width',replace(p,default_ascii_width=5)),('viewport',replace(p,window_width_px=228)),('row-pitch',replace(p,line_height_px=12)),('invented-page-capacity',replace(p,max_lines=8)),('lost-original-capacity',replace(p,max_lines=2)),('pair-phase',replace(p,pair_phase_safe_breaks=False)),('guard',replace(p,guard_linebreaks=False)),('selector-scope',replace(p,leading_speaker_bytes=p.leading_speaker_bytes|{208}))]:
+        assert bad!=p;reject(label,lambda bad=bad:encode_relocatable_dialogue(raw,r['english'],bad))
+    for label,text in [('manual-wrap',r['english']+'{LB}'),('positioned-wrap',r['english']+'{LB@3}'),('manual-padding',r['english']+'{PAD}'),('alignment',r['english']+'{ALIGN@3}'),('invented-FI',r['english']+'{MACRO:FI}'),('authored-newline',r['english']+'\n'),('leading-space',r['english'].replace('}', '} ',1)),('wrong-speaker',r['english'].replace('{SPEAKER:17}','{SPEAKER:02}'))]:
+        assert text!=r['english'];reject(label,lambda text=text:encode_relocatable_dialogue(raw,text,p))
+    semantic=[('invented-royalty',5,'Admiral','Your Majesty'),('invented-uncle',8,'Manuel','Uncle Manuel'),('invented-inspection',12,'latest fashions','warships'),('lost-leisure',15,'taking a breather','on a secret mission'),('invented-kinship-address',23,'What about you?','What about you, Uncle?'),('lost-news-gathering',26,'hear some news','recruit soldiers'),('invented-historical-title',29,'king of the Huns','emperor of Rome'),('changed-source-people',37,'Huns','Mongols'),('reported-history-as-authorial-fact',37,'They say','Historical fact:'),('lost-initial-confusion',41,"Hmm. I don't really get it.",'I know all about this.'),('reversed-supremacy-lesson',45,'No empire rules forever.','You will rule forever.'),('guaranteed-victory',51,'It all depends on how hard you work.','You are guaranteed to win every war.'),('lost-explicit-rumor',57,'Only a rumor, of course.','It has been proven.'),('invented-heir-and-theft',65,'someone took','his son stole'),('guaranteed-exact-location',72,'somewhere in northern Europe, perhaps','in Copenhagen for certain')]
+    for label,index,old,new in semantic:
+        row=rows[index];assert old in row['english'];bad=row['english'].replace(old,new);assert bad!=row['english'];reject(label,lambda row=row,bad=bad:encode_relocatable_dialogue(bytes.fromhex(row['source_hex']),bad,profile_for(arm,block,row['id'])))
+    reject('changed-runtime',lambda:profile_for(bytes([arm[0]^1])+arm[1:],block,r['id']));reject('changed-complete-source-tail',lambda:profile_for(arm,block[:-1]+bytes([block[-1]^1]),r['id']));reject('unreviewed-record-ID',lambda:profile_for(arm,block,'DK4_MES_B226_R9999'))
+    assert len(positive)==20 and len(negative)==len({r['case'] for r in negative})==74 and sum(r['qa']['native_page_count'] for r in positive)==20
+    assert sum(len(r['qa']['exact_reviewed_base_warnings']) for r in positive)==0 and sum(i['code']=='line-break-count' for r in positive for i in r['qa']['issues'])==8
+    assert before=={str(p):sha(p.read_bytes()) for p in deps};ROOT.mkdir(parents=True);save(ROOT/'twenty_positives74_rejections_eight_row_reasons_zero_waivers.json',dict(manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),positive_paragraph_cases=positive,positive_paragraph_count=20,negative_cases=negative,negative_count=74,complete_native_pages=20,row_count_reasons={r['id']:r['row_count_reason'] for r in doc['records'] if r['row_count_reason']},all_base_QA_diagnostics_preserved_zero_warning_waivers=True,all20_original_single_four_row_pages=True,source_personal_names_andfamiliar_address_not_kinship=True,all_rejections_before_ROM_archive_registry_orledger_mutation=True,all_input_policy_registry_ledger_andcurrent_ROM_hashes_unchanged=True,exact_reviewed_paragraph_guards_not_automatic_semantic_approval_ofunseen_text=True,stored_English_actual_reference_andrelease_pending=True,new_ROMs=0,new_emulator_runs=0,new_review_credit=0,evidence=before,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print('B226:20 positives/74 actual-changing rejects,20 original pages,eight row reasons,zero warning waivers. All inputs/ROM/ledger unchanged;stored/actual/release pending;zero credit.')

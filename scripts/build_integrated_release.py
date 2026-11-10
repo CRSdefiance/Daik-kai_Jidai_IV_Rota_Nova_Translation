@@ -6665,6 +6665,1459 @@ def main() -> None:
             raise ValueError('B178 must run once after the complete V4655 stack')
         release_batches.append(more_batch)
 
+    lil_proof = profile_config.get('lil_B179_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B179_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B179_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B179 must run once after the complete V4701 stack')
+        release_batches.append(more_batch)
+
+    experimental_artwork_font = None
+    experimental_font = profile_config.get('experimental_ascii_font_v2')
+    if experimental_font:
+        from dk4tool.patch.experimental_ascii_font_v2 import apply_release as apply_experimental_font
+
+        font_path = '/__arm9__.bin'
+        font_source_arm = candidate.read_file(font_path)
+        font_arm, font_report = apply_experimental_font(font_source_arm, experimental_font)
+        # Pre-rendered signs retain their authored pixels. Their final ink check
+        # must use the source-locked artwork font, not the new runtime alphabet.
+        experimental_artwork_font = GameAsciiFont.from_arm9(font_source_arm)
+        candidate.replace_file(font_path, font_arm)
+        grouped.setdefault(font_path, [])
+        changed_records.setdefault(font_path, []).extend(font_report['changed_records'])
+        relocation_checks.setdefault(font_path, {})['experimental_ascii_font_v2'] = {
+            'release_config': experimental_font,
+            'release_config_sha256': sha256(Path(experimental_font).read_bytes()),
+            'proof': font_report,
+        }
+        release_batches.append(Path(experimental_font))
+
+    drawing_offset = profile_config.get('ascii_draw_offset_20261027')
+    if drawing_offset:
+        from dk4tool.patch.ascii_draw_offset_20261027 import apply_release as apply_drawing_offset
+
+        offset_path = '/__arm9__.bin'
+        offset_arm, offset_report = apply_drawing_offset(candidate.read_file(offset_path), drawing_offset)
+        candidate.replace_file(offset_path, offset_arm)
+        grouped.setdefault(offset_path, [])
+        changed_records.setdefault(offset_path, []).extend(offset_report['changed_records'])
+        relocation_checks.setdefault(offset_path, {})['ascii_draw_offset_20261027'] = {
+            'release_config': drawing_offset,
+            'release_config_sha256': sha256(Path(drawing_offset).read_bytes()),
+            'proof': offset_report,
+        }
+        release_batches.append(Path(drawing_offset))
+
+    lazy_drawing_offset = profile_config.get('ascii_draw_offset_20261027_v2')
+    if lazy_drawing_offset:
+        from dk4tool.patch.ascii_draw_offset_20261027_v2 import apply_release as apply_lazy_drawing_offset
+
+        offset_path = '/__arm9__.bin'
+        offset_arm, offset_report = apply_lazy_drawing_offset(candidate.read_file(offset_path), lazy_drawing_offset)
+        candidate.replace_file(offset_path, offset_arm)
+        grouped.setdefault(offset_path, [])
+        changed_records.setdefault(offset_path, []).extend(offset_report['changed_records'])
+        relocation_checks.setdefault(offset_path, {})['ascii_draw_offset_20261027_v2'] = {
+            'release_config': lazy_drawing_offset,
+            'release_config_sha256': sha256(Path(lazy_drawing_offset).read_bytes()),
+            'proof': offset_report,
+        }
+        release_batches.append(Path(lazy_drawing_offset))
+
+    one_pixel_offset = profile_config.get('ascii_draw_offset_one_20261027')
+    if one_pixel_offset:
+        from dk4tool.patch.ascii_draw_offset_one_20261027 import apply_release as apply_one_pixel_offset
+
+        offset_path = '/__arm9__.bin'
+        offset_arm, offset_report = apply_one_pixel_offset(candidate.read_file(offset_path), one_pixel_offset)
+        candidate.replace_file(offset_path, offset_arm)
+        grouped.setdefault(offset_path, [])
+        changed_records.setdefault(offset_path, []).extend(offset_report['changed_records'])
+        relocation_checks.setdefault(offset_path, {})['ascii_draw_offset_one_20261027'] = {
+            'release_config': one_pixel_offset,
+            'release_config_sha256': sha256(Path(one_pixel_offset).read_bytes()),
+            'proof': offset_report,
+        }
+        release_batches.append(Path(one_pixel_offset))
+
+    punctuation = profile_config.get('ascii_punctuation_20261027')
+    if punctuation:
+        from dk4tool.patch.ascii_punctuation_20261027 import apply_release as apply_punctuation
+
+        punctuation_path = '/__arm9__.bin'
+        punctuation_arm, punctuation_report = apply_punctuation(candidate.read_file(punctuation_path), punctuation)
+        candidate.replace_file(punctuation_path, punctuation_arm)
+        grouped.setdefault(punctuation_path, [])
+        changed_records.setdefault(punctuation_path, []).extend(punctuation_report['changed_records'])
+        relocation_checks.setdefault(punctuation_path, {})['ascii_punctuation_20261027'] = {
+            'release_config': punctuation,
+            'release_config_sha256': sha256(Path(punctuation).read_bytes()),
+            'proof': punctuation_report,
+        }
+        release_batches.append(Path(punctuation))
+
+    all_punctuation = profile_config.get('ascii_punctuation_all_20261027')
+    if all_punctuation:
+        from dk4tool.patch.ascii_punctuation_all_20261027 import apply_release as apply_all_punctuation
+
+        punctuation_path = '/__arm9__.bin'
+        punctuation_arm, punctuation_report = apply_all_punctuation(candidate.read_file(punctuation_path), all_punctuation)
+        candidate.replace_file(punctuation_path, punctuation_arm)
+        grouped.setdefault(punctuation_path, [])
+        changed_records.setdefault(punctuation_path, []).extend(punctuation_report['changed_records'])
+        relocation_checks.setdefault(punctuation_path, {})['ascii_punctuation_all_20261027'] = {
+            'release_config': all_punctuation,
+            'release_config_sha256': sha256(Path(all_punctuation).read_bytes()),
+            'proof': punctuation_report,
+        }
+        release_batches.append(Path(all_punctuation))
+
+    square_font_scratch = profile_config.get('square_font_scratch_20261027')
+    if square_font_scratch:
+        from dk4tool.patch.square_font_scratch_20261027 import apply_release as apply_square_font_scratch
+
+        scratch_path = '/__arm9__.bin'
+        scratch_arm, scratch_report = apply_square_font_scratch(candidate.read_file(scratch_path), square_font_scratch)
+        candidate.replace_file(scratch_path, scratch_arm)
+        grouped.setdefault(scratch_path, [])
+        changed_records.setdefault(scratch_path, []).extend(scratch_report['changed_records'])
+        relocation_checks.setdefault(scratch_path, {})['square_font_scratch_20261027'] = {
+            'release_config': square_font_scratch,
+            'release_config_sha256': sha256(Path(square_font_scratch).read_bytes()),
+            'proof': scratch_report,
+        }
+        release_batches.append(Path(square_font_scratch))
+
+    from dk4tool.patch.square_font_scratch_20261027 import validate_storage as validate_square_font_storage
+
+    final_square_font_scratch_contract = validate_square_font_storage(candidate.read_file('/__arm9__.bin'))
+
+    shop657_reflow = profile_config.get('shop657_full_width_reflow')
+    if shop657_reflow:
+        from dk4tool.patch.shop_657_reflow import apply_release as apply_shop657_reflow
+
+        shop657_report = apply_shop657_reflow(candidate, baseline, shop657_reflow)
+        shop657_path = '/COMMON/MESFILE.DK4'
+        grouped.setdefault(shop657_path, [])
+        changed_records.setdefault(shop657_path, []).append('COMMON_MESSAGE_657')
+        relocation_checks.setdefault(shop657_path, {})['shop657_full_width_reflow'] = {
+            'release_config': shop657_reflow,
+            'release_config_sha256': sha256(Path(shop657_reflow).read_bytes()),
+            'proof': shop657_report}
+        release_batches.append(Path(shop657_report['manuscript']))
+
+    lil_proof = profile_config.get('lil_B180_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B180_editorial_v4 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B180_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B180 must run once after the complete V4766 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B181_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B181_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B181_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B181 must run once after the complete V4821 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B182_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B182_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B182_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B182 must run once after the complete V4867 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B183_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B183_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B183_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B183 must run once after the complete V4914 stack')
+        release_batches.append(more_batch)
+
+    earlier775 = profile_config.get('earlier775_reflow')
+    if earlier775:
+        from dk4tool.patch.earlier775_reflow_v1 import apply_release as apply_earlier775
+
+        earlier775_report = apply_earlier775(candidate, baseline, earlier775)
+        grouped.setdefault('/COMMON/MESFILE.DK4', [])
+        changed_records.setdefault('/COMMON/MESFILE.DK4', []).append('COMMON_MESSAGE_775')
+        relocation_checks.setdefault('/COMMON/MESFILE.DK4', {})['earlier775_reflow'] = {
+            'release_config': earlier775,
+            'release_config_sha256': sha256(Path(earlier775).read_bytes()),
+            'proof': earlier775_report}
+        more_batch = Path(earlier775_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Earlier775 reflow must run once after the full V4966 stack')
+        release_batches.append(more_batch)
+
+    maria_b97 = profile_config.get('maria_B97_editorial')
+    if maria_b97:
+        from dk4tool.patch.maria_B97_editorial_v2 import apply_release as apply_maria_b97
+
+        maria_b97_report = apply_maria_b97(candidate, baseline, maria_b97)
+        grouped.setdefault('/data/SC3.DK4', [])
+        changed_records.setdefault('/data/SC3.DK4', []).extend(row['id'] for row in maria_b97_report['changed_records'])
+        relocation_checks.setdefault('/data/SC3.DK4', {})['maria_B97_editorial'] = {
+            'release_config': maria_b97,
+            'release_config_sha256': sha256(Path(maria_b97).read_bytes()),
+            'proof': maria_b97_report}
+        more_batch = Path(maria_b97_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Maria B97 must run once after the complete V4987 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B184_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B184_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B184_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B184 must run once after the complete V5030 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B185_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B185_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B185_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B185 must run once after the complete V5076 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B186_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B186_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B186_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B186 must run once after the complete V5122 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B187_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B187_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B187_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B187 must run once after the complete V5177 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B188_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B188_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B188_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B188 must run once after the complete V5219 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B189_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B189_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B189_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B189 must run once after the complete V5263 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B190_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B190_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B190_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B190 must run once after the complete V5304 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B191_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B191_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B191_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B191 must run once after the complete V5346 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B192_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B192_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B192_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B192 must run once after the complete V5396 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B193_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B193_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B193_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B193 must run once after the complete V5437 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B194_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B194_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B194_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B194 must run once after the complete V5478 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B195_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B195_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B195_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B195 must run once after the complete V5531 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B196_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B196_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B196_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        for key in ['manuscript', 'choices']:
+            more_batch = Path(lil_proof_report[key])
+            if more_batch in release_batches:
+                raise ValueError('B196 companions must run once after the complete V5580 stack')
+            release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B197_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B197_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B197_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        for key in ['manuscript', 'choices']:
+            more_batch = Path(lil_proof_report[key])
+            if more_batch in release_batches:
+                raise ValueError('B197 companions must run once after the complete V5637 stack')
+            release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B198_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B198_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B198_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B198 must run once after the complete V5692 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B199_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B199_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B199_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B199 must run once after the complete V5756 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B200_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B200_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B200_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B200 must run once after the complete V5816 stack')
+        release_batches.append(more_batch)
+
+    label_config = profile_config.get('generic_speaker_labels')
+    if label_config:
+        from dk4tool.patch.generic_speaker_labels_release_v1 import apply_release as apply_labels
+
+        label_report = apply_labels(candidate, baseline, label_config)
+        grouped.setdefault('/__arm9__.bin', [])
+        changed_records.setdefault('/__arm9__.bin', []).extend(row['id'] for row in label_report['changed_records'])
+        relocation_checks.setdefault('/__arm9__.bin', {})['generic_speaker_labels'] = {
+            'release_config': label_config,
+            'release_config_sha256': sha256(Path(label_config).read_bytes()),
+            'proof': label_report}
+        more_batch = Path(label_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Generic speaker labels must run once after the complete V5872 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B201_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B201_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B201_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        for key in ['manuscript', 'choice_manuscript']:
+            more_batch = Path(lil_proof_report[key])
+            if more_batch in release_batches:
+                raise ValueError('B201 companions must run once after the complete V5891 stack')
+            release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B202_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B202_editorial_v4 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B202_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B202 must run once after the complete V5947 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B203_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B203_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B203_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B203 must run once after the complete V5998 stack')
+        release_batches.append(more_batch)
+
+    item_config = profile_config.get('shachihoko_item116_editorial')
+    if item_config:
+        from dk4tool.patch.shachihoko_item116_editorial_v2 import apply_release as apply_item116
+
+        item_report = apply_item116(candidate, baseline, item_config)
+        for item_path in ['/__arm9__.bin', '/COMMON/MESFILE.DK4']:
+            grouped.setdefault(item_path, [])
+            changed_records.setdefault(item_path, []).extend(row['id'] for row in item_report['changed_records'] if row['file_path'] == item_path)
+            relocation_checks.setdefault(item_path, {})['shachihoko_item116_editorial'] = {
+                'release_config': item_config,
+                'release_config_sha256': sha256(Path(item_config).read_bytes()),
+                'proof': item_report}
+        more_batch = Path(item_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Item116 correction must run once after the complete V6050 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B204_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B204_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B204_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B204 must run once after the complete V6110 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B205_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B205_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B205_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B205 must run once after the complete V6160 stack')
+        release_batches.append(more_batch)
+
+    label_config = profile_config.get('shady_man_label')
+    if label_config:
+        from dk4tool.patch.shady_man_label_release_v1 import apply_release as apply_shady_man
+
+        label_report = apply_shady_man(candidate, baseline, label_config)
+        grouped.setdefault('/__arm9__.bin', [])
+        changed_records.setdefault('/__arm9__.bin', []).extend(row['id'] for row in label_report['changed_records'])
+        relocation_checks.setdefault('/__arm9__.bin', {})['shady_man_label'] = {
+            'release_config': label_config,
+            'release_config_sha256': sha256(Path(label_config).read_bytes()),
+            'proof': label_report}
+        more_batch = Path(label_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Shady Man must run once after the complete V6220 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B206_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B206_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B206_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        for key in ['manuscript', 'choice_manuscript']:
+            more_batch = Path(lil_proof_report[key])
+            if more_batch in release_batches:
+                raise ValueError('B206 companions must run once after the complete V6270 stack')
+            release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B207_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B207_editorial_v4 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B207_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B207 must run once after the complete V6327 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B208_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B208_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B208_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B208 must run once after the complete V6380 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B209_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B209_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B209_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B209 must run once after the complete V6439 stack')
+        release_batches.append(more_batch)
+
+    added_config = profile_config.get('lil_B210_editorial')
+    if added_config:
+        from dk4tool.patch.lil_B210_editorial_v1 import apply_release as apply_added
+
+        added_report = apply_added(candidate, baseline, added_config)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in added_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B210_editorial'] = {
+            'release_config': added_config,
+            'release_config_sha256': sha256(Path(added_config).read_bytes()),
+            'proof': added_report}
+        added_batch = Path(added_report['manuscript'])
+        if added_batch in release_batches:
+            raise ValueError('lil_B210_editorial must run once after the complete V6488 stack')
+        release_batches.append(added_batch)
+
+    added_config = profile_config.get('Al_Ferid_name')
+    if added_config:
+        from dk4tool.patch.Al_Ferid_name_release_v1 import apply_release as apply_added
+
+        added_report = apply_added(candidate, baseline, added_config)
+        grouped.setdefault('/__arm9__.bin', [])
+        changed_records.setdefault('/__arm9__.bin', []).extend(row['id'] for row in added_report['changed_records'])
+        relocation_checks.setdefault('/__arm9__.bin', {})['Al_Ferid_name'] = {
+            'release_config': added_config,
+            'release_config_sha256': sha256(Path(added_config).read_bytes()),
+            'proof': added_report}
+        added_batch = Path(added_report['manuscript'])
+        if added_batch in release_batches:
+            raise ValueError('Al_Ferid_name must run once after the complete V6488 stack')
+        release_batches.append(added_batch)
+
+    lil_proof = profile_config.get('lil_B211_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B211_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B211_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B211 must run once after the complete V6541 stack and Al Ferid name asset')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B212_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B212_editorial_v2 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B212_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B212 must run once after the complete V6584 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B213_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B213_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B213_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B213 must run once after the complete V6641 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B214_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B214_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B214_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B214 must run once after the complete V6686 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B215_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B215_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B215_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B215 must run once after the complete V6733 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B216_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B216_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B216_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B216 must run once after the complete V6775 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B217_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B217_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B217_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B217 must run once after the complete V6821 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B218_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B218_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B218_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B218 must run once after the complete V6865 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B220_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B220_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B220_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B220 must run once after the complete V6910 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B221_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B221_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B221_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        for key in ['manuscript', 'choice_manuscript']:
+            more_batch = Path(lil_proof_report[key])
+            if more_batch in release_batches:
+                raise ValueError('B221 companions must run once after the complete V6956 stack')
+            release_batches.append(more_batch)
+
+    label_config = profile_config.get('square_shopkeeper_labels')
+    if label_config:
+        from dk4tool.patch.square_shopkeeper_label_release_v2 import apply_release as apply_labels
+
+        label_report = apply_labels(candidate, baseline, label_config)
+        grouped.setdefault('/__arm9__.bin', [])
+        changed_records.setdefault('/__arm9__.bin', []).extend(row['id'] for row in label_report['changed_records'])
+        relocation_checks.setdefault('/__arm9__.bin', {})['square_shopkeeper_labels'] = {
+            'release_config': label_config,
+            'release_config_sha256': sha256(Path(label_config).read_bytes()),
+            'proof': label_report}
+        more_batch = Path(label_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('Ten Shopkeeper labels must run once after the complete V7011 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B222_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B222_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B222_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B222 must run once after the complete V7029 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B223_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B223_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B223_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B223 must run once after the complete V7067 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B224_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B224_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B224_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B224 must run once after the complete V7118 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B225_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B225_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B225_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B225 must run once after the complete V7168 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B226_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B226_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B226_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B226 must run once after the complete V7230 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B227_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B227_editorial_v3 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B227_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B227 must run once after the complete V7277 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B228_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B228_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B228_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B228 must run once after the complete V7324 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B229_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B229_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B229_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B229 must run once after the complete V7371 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B230_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B230_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B230_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B230 must run once after the complete V7418 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B231_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B231_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B231_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B231 must run once after the complete V7466 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B233_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B233_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B233_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B233 must run once after the complete V7514 stack')
+        release_batches.append(more_batch)
+
+    lil_proof = profile_config.get('lil_B234_editorial')
+    if lil_proof:
+        from dk4tool.patch.lil_B234_editorial_v1 import apply_release as apply_lil_proof
+
+        lil_proof_report = apply_lil_proof(candidate, baseline, lil_proof)
+        grouped.setdefault('/data/SC2.DK4', [])
+        changed_records.setdefault('/data/SC2.DK4', []).extend(row['id'] for row in lil_proof_report['changed_records'])
+        relocation_checks.setdefault('/data/SC2.DK4', {})['lil_B234_editorial'] = {
+            'release_config': lil_proof,
+            'release_config_sha256': sha256(Path(lil_proof).read_bytes()),
+            'proof': lil_proof_report}
+        more_batch = Path(lil_proof_report['manuscript'])
+        if more_batch in release_batches:
+            raise ValueError('B234 must run once after the complete V7563 stack')
+        release_batches.append(more_batch)
+
+    papal_config = profile_config.get('papal_trade_editorial')
+    if papal_config:
+        from dk4tool.patch.papal_trade_editorial_v1 import apply_release as apply_papal_trade
+
+        papal_report = apply_papal_trade(candidate, baseline, papal_config)
+        for papal_file in papal_report['files']:
+            papal_path = papal_file['file_path']
+            grouped.setdefault(papal_path, [])
+            changed_records.setdefault(papal_path, []).extend(row['id'] for row in papal_file['changed_records'])
+            relocation_checks.setdefault(papal_path, {})['papal_trade_editorial'] = {
+                'release_config': papal_config,
+                'release_config_sha256': sha256(Path(papal_config).read_bytes()),
+                'proof': papal_report}
+        for papal_manuscript in papal_report['manuscripts']:
+            more_batch = Path(papal_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Papal trade must run once after the complete V7611 stack')
+            release_batches.append(more_batch)
+
+    maria_B207_config = profile_config.get('maria_B207_editorial')
+    if maria_B207_config:
+        from dk4tool.patch.maria_B207_editorial_v2 import apply_release as apply_maria_B207
+
+        maria_B207_report = apply_maria_B207(candidate, baseline, maria_B207_config)
+        for maria_B207_file in maria_B207_report['files']:
+            maria_B207_path = maria_B207_file['file_path']
+            grouped.setdefault(maria_B207_path, [])
+            changed_records.setdefault(maria_B207_path, []).extend(row['id'] for row in maria_B207_file['changed_records'])
+            relocation_checks.setdefault(maria_B207_path, {})['maria_B207_editorial'] = {
+                'release_config': maria_B207_config,
+                'release_config_sha256': sha256(Path(maria_B207_config).read_bytes()),
+                'proof': maria_B207_report}
+        for maria_B207_manuscript in maria_B207_report['manuscripts']:
+            more_batch = Path(maria_B207_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Maria B207 must run once after the complete V7660 stack')
+            release_batches.append(more_batch)
+
+    maria_story_config = profile_config.get('maria_story_editorial')
+    if maria_story_config:
+        from dk4tool.patch.maria_story_editorial_v3 import apply_release as apply_maria_story
+
+        maria_story_report = apply_maria_story(candidate, baseline, maria_story_config)
+        for maria_story_file in maria_story_report['files']:
+            maria_story_path = maria_story_file['file_path']
+            grouped.setdefault(maria_story_path, [])
+            changed_records.setdefault(maria_story_path, []).extend(row['id'] for row in maria_story_file['changed_records'])
+            relocation_checks.setdefault(maria_story_path, {})['maria_story_editorial'] = {
+                'release_config': maria_story_config,
+                'release_config_sha256': sha256(Path(maria_story_config).read_bytes()),
+                'proof': maria_story_report}
+        for maria_story_manuscript in maria_story_report['manuscripts']:
+            more_batch = Path(maria_story_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Maria67 must run once after the complete V7717 stack')
+            release_batches.append(more_batch)
+
+    maria_B36_config = profile_config.get('maria_B36_editorial')
+    if maria_B36_config:
+        from dk4tool.patch.maria_B36_editorial_v1 import apply_release as apply_maria_B36
+
+        maria_B36_report = apply_maria_B36(candidate, baseline, maria_B36_config)
+        for maria_B36_file in maria_B36_report['files']:
+            maria_B36_path = maria_B36_file['file_path']
+            grouped.setdefault(maria_B36_path, [])
+            changed_records.setdefault(maria_B36_path, []).extend(row['id'] for row in maria_B36_file['changed_records'])
+            relocation_checks.setdefault(maria_B36_path, {})['maria_B36_editorial'] = {
+                'release_config': maria_B36_config,
+                'release_config_sha256': sha256(Path(maria_B36_config).read_bytes()),
+                'proof': maria_B36_report}
+        for maria_B36_manuscript in maria_B36_report['manuscripts']:
+            more_batch = Path(maria_B36_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Maria B36 must run once after the complete V7779 stack')
+            release_batches.append(more_batch)
+
+    lil_B218_retrospective_config = profile_config.get('lil_B218_retrospective')
+    if lil_B218_retrospective_config:
+        from dk4tool.patch.lil_B218_retrospective_v2 import apply_release as apply_lil_B218_retrospective
+
+        lil_B218_retrospective_report = apply_lil_B218_retrospective(candidate, baseline, lil_B218_retrospective_config)
+        for lil_B218_retrospective_file in lil_B218_retrospective_report['files']:
+            lil_B218_retrospective_path = lil_B218_retrospective_file['file_path']
+            grouped.setdefault(lil_B218_retrospective_path, [])
+            changed_records.setdefault(lil_B218_retrospective_path, []).extend(row['id'] for row in lil_B218_retrospective_file['changed_records'])
+            relocation_checks.setdefault(lil_B218_retrospective_path, {})['lil_B218_retrospective'] = {
+                'release_config': lil_B218_retrospective_config,
+                'release_config_sha256': sha256(Path(lil_B218_retrospective_config).read_bytes()),
+                'proof': lil_B218_retrospective_report}
+        for lil_B218_retrospective_manuscript in lil_B218_retrospective_report['manuscripts']:
+            more_batch = Path(lil_B218_retrospective_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('B218 retrospective must run once after the complete V7821 stack')
+            release_batches.append(more_batch)
+
+    rafael_B45_editorial_config = profile_config.get('rafael_B45_editorial')
+    if rafael_B45_editorial_config:
+        from dk4tool.patch.rafael_B45_editorial_v2 import apply_release as apply_rafael_B45_editorial
+
+        rafael_B45_editorial_report = apply_rafael_B45_editorial(candidate, baseline, rafael_B45_editorial_config)
+        for rafael_B45_editorial_file in rafael_B45_editorial_report['files']:
+            rafael_B45_editorial_path = rafael_B45_editorial_file['file_path']
+            grouped.setdefault(rafael_B45_editorial_path, [])
+            changed_records.setdefault(rafael_B45_editorial_path, []).extend(row['id'] for row in rafael_B45_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B45_editorial_path, {})['rafael_B45_editorial'] = {
+                'release_config': rafael_B45_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B45_editorial_config).read_bytes()),
+                'proof': rafael_B45_editorial_report}
+        for rafael_B45_editorial_manuscript in rafael_B45_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B45_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B45 must run once after the complete V7857 stack')
+            release_batches.append(more_batch)
+
+    rafael_B46_editorial_config = profile_config.get('rafael_B46_editorial')
+    if rafael_B46_editorial_config:
+        from dk4tool.patch.rafael_B46_editorial_v2 import apply_release as apply_rafael_B46_editorial
+
+        rafael_B46_editorial_report = apply_rafael_B46_editorial(candidate, baseline, rafael_B46_editorial_config)
+        for rafael_B46_editorial_file in rafael_B46_editorial_report['files']:
+            rafael_B46_editorial_path = rafael_B46_editorial_file['file_path']
+            grouped.setdefault(rafael_B46_editorial_path, [])
+            changed_records.setdefault(rafael_B46_editorial_path, []).extend(row['id'] for row in rafael_B46_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B46_editorial_path, {})['rafael_B46_editorial'] = {
+                'release_config': rafael_B46_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B46_editorial_config).read_bytes()),
+                'proof': rafael_B46_editorial_report}
+        for rafael_B46_editorial_manuscript in rafael_B46_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B46_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B46 must run once after the complete V7911 stack')
+            release_batches.append(more_batch)
+
+    rafael_B47_editorial_config = profile_config.get('rafael_B47_editorial')
+    if rafael_B47_editorial_config:
+        from dk4tool.patch.rafael_B47_editorial_v1 import apply_release as apply_rafael_B47_editorial
+
+        rafael_B47_editorial_report = apply_rafael_B47_editorial(candidate, baseline, rafael_B47_editorial_config)
+        for rafael_B47_editorial_file in rafael_B47_editorial_report['files']:
+            rafael_B47_editorial_path = rafael_B47_editorial_file['file_path']
+            grouped.setdefault(rafael_B47_editorial_path, [])
+            changed_records.setdefault(rafael_B47_editorial_path, []).extend(row['id'] for row in rafael_B47_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B47_editorial_path, {})['rafael_B47_editorial'] = {
+                'release_config': rafael_B47_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B47_editorial_config).read_bytes()),
+                'proof': rafael_B47_editorial_report}
+        for rafael_B47_editorial_manuscript in rafael_B47_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B47_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B47 must run once after the complete V7964 stack')
+            release_batches.append(more_batch)
+
+    rafael_B48_editorial_config = profile_config.get('rafael_B48_editorial')
+    if rafael_B48_editorial_config:
+        from dk4tool.patch.rafael_B48_editorial_v1 import apply_release as apply_rafael_B48_editorial
+
+        rafael_B48_editorial_report = apply_rafael_B48_editorial(candidate, baseline, rafael_B48_editorial_config)
+        for rafael_B48_editorial_file in rafael_B48_editorial_report['files']:
+            rafael_B48_editorial_path = rafael_B48_editorial_file['file_path']
+            grouped.setdefault(rafael_B48_editorial_path, [])
+            changed_records.setdefault(rafael_B48_editorial_path, []).extend(row['id'] for row in rafael_B48_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B48_editorial_path, {})['rafael_B48_editorial'] = {
+                'release_config': rafael_B48_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B48_editorial_config).read_bytes()),
+                'proof': rafael_B48_editorial_report}
+        for rafael_B48_editorial_manuscript in rafael_B48_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B48_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B48 must run once after the complete V8013 stack')
+            release_batches.append(more_batch)
+
+    rafael_B49_editorial_config = profile_config.get('rafael_B49_editorial')
+    if rafael_B49_editorial_config:
+        from dk4tool.patch.rafael_B49_editorial_v1 import apply_release as apply_rafael_B49_editorial
+
+        rafael_B49_editorial_report = apply_rafael_B49_editorial(candidate, baseline, rafael_B49_editorial_config)
+        for rafael_B49_editorial_file in rafael_B49_editorial_report['files']:
+            rafael_B49_editorial_path = rafael_B49_editorial_file['file_path']
+            grouped.setdefault(rafael_B49_editorial_path, [])
+            changed_records.setdefault(rafael_B49_editorial_path, []).extend(row['id'] for row in rafael_B49_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B49_editorial_path, {})['rafael_B49_editorial'] = {
+                'release_config': rafael_B49_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B49_editorial_config).read_bytes()),
+                'proof': rafael_B49_editorial_report}
+        for rafael_B49_editorial_manuscript in rafael_B49_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B49_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B49 must run once after the complete V8066 stack')
+            release_batches.append(more_batch)
+
+    rafael_B50_editorial_config = profile_config.get('rafael_B50_editorial')
+    if rafael_B50_editorial_config:
+        from dk4tool.patch.rafael_B50_editorial_v1 import apply_release as apply_rafael_B50_editorial
+
+        rafael_B50_editorial_report = apply_rafael_B50_editorial(candidate, baseline, rafael_B50_editorial_config)
+        for rafael_B50_editorial_file in rafael_B50_editorial_report['files']:
+            rafael_B50_editorial_path = rafael_B50_editorial_file['file_path']
+            grouped.setdefault(rafael_B50_editorial_path, [])
+            changed_records.setdefault(rafael_B50_editorial_path, []).extend(row['id'] for row in rafael_B50_editorial_file['changed_records'])
+            relocation_checks.setdefault(rafael_B50_editorial_path, {})['rafael_B50_editorial'] = {
+                'release_config': rafael_B50_editorial_config,
+                'release_config_sha256': sha256(Path(rafael_B50_editorial_config).read_bytes()),
+                'proof': rafael_B50_editorial_report}
+        for rafael_B50_editorial_manuscript in rafael_B50_editorial_report['manuscripts']:
+            more_batch = Path(rafael_B50_editorial_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Rafael B50 must run once after the complete V8122 stack')
+            release_batches.append(more_batch)
+
+    gerhard_surname_editorial_config = profile_config.get('gerhard_surname_editorial')
+    if gerhard_surname_editorial_config:
+        from dk4tool.patch.gerhard_surname_editorial_v2 import apply_release as apply_gerhard_surname_editorial
+
+        gerhard_surname_editorial_report = apply_gerhard_surname_editorial(candidate, baseline, gerhard_surname_editorial_config)
+        for gerhard_surname_file in gerhard_surname_editorial_report['files']:
+            gerhard_surname_path = gerhard_surname_file['file_path']
+            grouped.setdefault(gerhard_surname_path, [])
+            changed_records.setdefault(gerhard_surname_path, []).extend(row['id'] for row in gerhard_surname_file['changed_records'])
+            relocation_checks.setdefault(gerhard_surname_path, {})['gerhard_surname_editorial'] = {
+                'release_config': gerhard_surname_editorial_config,
+                'release_config_sha256': sha256(Path(gerhard_surname_editorial_config).read_bytes()),
+                'proof': gerhard_surname_editorial_report}
+        for gerhard_surname_manuscript in gerhard_surname_editorial_report['manuscripts']:
+            more_batch = Path(gerhard_surname_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Gerhard surname stage must run once after the complete V8172 stack')
+            release_batches.append(more_batch)
+
+    hodram_three_blocks_editorial_config = profile_config.get('hodram_three_blocks_editorial')
+    if hodram_three_blocks_editorial_config:
+        from dk4tool.patch.hodram_three_blocks_editorial_v2 import apply_release as apply_hodram_three_blocks_editorial
+
+        hodram_three_blocks_editorial_report = apply_hodram_three_blocks_editorial(candidate, baseline, hodram_three_blocks_editorial_config)
+        for hodram_three_blocks_file in hodram_three_blocks_editorial_report['files']:
+            hodram_three_blocks_path = hodram_three_blocks_file['file_path']
+            grouped.setdefault(hodram_three_blocks_path, [])
+            changed_records.setdefault(hodram_three_blocks_path, []).extend(row['id'] for row in hodram_three_blocks_file['changed_records'])
+            relocation_checks.setdefault(hodram_three_blocks_path, {})['hodram_three_blocks_editorial'] = {
+                'release_config': hodram_three_blocks_editorial_config,
+                'release_config_sha256': sha256(Path(hodram_three_blocks_editorial_config).read_bytes()),
+                'proof': hodram_three_blocks_editorial_report}
+        for hodram_three_blocks_manuscript in hodram_three_blocks_editorial_report['manuscripts']:
+            more_batch = Path(hodram_three_blocks_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Hodram B137/B45/B46 stage must run once after the complete V8259 stack')
+            release_batches.append(more_batch)
+
+    hodram_outcomes_editorial_config = profile_config.get('hodram_outcomes_editorial')
+    if hodram_outcomes_editorial_config:
+        from dk4tool.patch.hodram_outcomes_editorial_v8 import apply_release as apply_hodram_outcomes_editorial
+
+        hodram_outcomes_editorial_report = apply_hodram_outcomes_editorial(candidate, baseline, hodram_outcomes_editorial_config)
+        for hodram_outcomes_file in hodram_outcomes_editorial_report['files']:
+            hodram_outcomes_path = hodram_outcomes_file['file_path']
+            grouped.setdefault(hodram_outcomes_path, [])
+            changed_records.setdefault(hodram_outcomes_path, []).extend(row['id'] for row in hodram_outcomes_file['changed_records'])
+            relocation_checks.setdefault(hodram_outcomes_path, {})['hodram_outcomes_editorial'] = {
+                'release_config': hodram_outcomes_editorial_config,
+                'release_config_sha256': sha256(Path(hodram_outcomes_editorial_config).read_bytes()),
+                'proof': hodram_outcomes_editorial_report}
+        for hodram_outcomes_manuscript in hodram_outcomes_editorial_report['manuscripts']:
+            more_batch = Path(hodram_outcomes_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Hodram B47/B48 stage must run once after the complete V8300 stack')
+            release_batches.append(more_batch)
+
+    hodram_B49_editorial_config = profile_config.get('hodram_B49_editorial')
+    if hodram_B49_editorial_config:
+        from dk4tool.patch.hodram_B49_editorial_v5 import apply_release as apply_hodram_B49_editorial
+
+        hodram_B49_editorial_report = apply_hodram_B49_editorial(candidate, baseline, hodram_B49_editorial_config)
+        for hodram_B49_file in hodram_B49_editorial_report['files']:
+            hodram_B49_path = hodram_B49_file['file_path']
+            grouped.setdefault(hodram_B49_path, [])
+            changed_records.setdefault(hodram_B49_path, []).extend(row['id'] for row in hodram_B49_file['changed_records'])
+            relocation_checks.setdefault(hodram_B49_path, {})['hodram_B49_editorial'] = {
+                'release_config': hodram_B49_editorial_config,
+                'release_config_sha256': sha256(Path(hodram_B49_editorial_config).read_bytes()),
+                'proof': hodram_B49_editorial_report}
+        for hodram_B49_manuscript in hodram_B49_editorial_report['manuscripts']:
+            more_batch = Path(hodram_B49_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Hodram B49 stage must run once after the complete V8377 stack')
+            release_batches.append(more_batch)
+
+    hodram_B50_editorial_config = profile_config.get('hodram_B50_editorial')
+    if hodram_B50_editorial_config:
+        from dk4tool.patch.hodram_B50_editorial_v3 import apply_release as apply_hodram_B50_editorial
+
+        hodram_B50_editorial_report = apply_hodram_B50_editorial(candidate, baseline, hodram_B50_editorial_config)
+        for hodram_B50_file in hodram_B50_editorial_report['files']:
+            hodram_B50_path = hodram_B50_file['file_path']
+            grouped.setdefault(hodram_B50_path, [])
+            changed_records.setdefault(hodram_B50_path, []).extend(row['id'] for row in hodram_B50_file['changed_records'])
+            relocation_checks.setdefault(hodram_B50_path, {})['hodram_B50_editorial'] = {
+                'release_config': hodram_B50_editorial_config,
+                'release_config_sha256': sha256(Path(hodram_B50_editorial_config).read_bytes()),
+                'proof': hodram_B50_editorial_report}
+        for hodram_B50_manuscript in hodram_B50_editorial_report['manuscripts']:
+            more_batch = Path(hodram_B50_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Hodram B50 stage must run once after the complete V8475 stack')
+            release_batches.append(more_batch)
+
+    hodram_B51_editorial_config = profile_config.get('hodram_B51_editorial')
+    if hodram_B51_editorial_config:
+        from dk4tool.patch.hodram_B51_editorial_v2 import apply_release as apply_hodram_B51_editorial
+
+        hodram_B51_editorial_report = apply_hodram_B51_editorial(candidate, baseline, hodram_B51_editorial_config)
+        for hodram_B51_file in hodram_B51_editorial_report['files']:
+            hodram_B51_path = hodram_B51_file['file_path']
+            grouped.setdefault(hodram_B51_path, [])
+            changed_records.setdefault(hodram_B51_path, []).extend(row['id'] for row in hodram_B51_file['changed_records'])
+            relocation_checks.setdefault(hodram_B51_path, {})['hodram_B51_editorial'] = {
+                'release_config': hodram_B51_editorial_config,
+                'release_config_sha256': sha256(Path(hodram_B51_editorial_config).read_bytes()),
+                'proof': hodram_B51_editorial_report}
+        for hodram_B51_manuscript in hodram_B51_editorial_report['manuscripts']:
+            more_batch = Path(hodram_B51_manuscript)
+            if more_batch in release_batches:
+                raise ValueError('Hodram B51 stage must run once after the complete V8543 stack')
+            release_batches.append(more_batch)
+
+    late_editorial_specs = profile_config.get('late_editorial_extensions', [])
+    if late_editorial_specs:
+        from dk4tool.patch.late_editorial_extensions_v1 import apply_extensions
+
+        late_editorial_reports = apply_extensions(candidate, baseline, late_editorial_specs, release_batches)
+        for late_editorial_report in late_editorial_reports:
+            for late_editorial_file in late_editorial_report['files']:
+                late_editorial_path = late_editorial_file['file_path']
+                grouped.setdefault(late_editorial_path, [])
+                changed_records.setdefault(late_editorial_path, []).extend(row['id'] for row in late_editorial_file['changed_records'])
+                relocation_checks.setdefault(late_editorial_path, {})['late_editorial:' + late_editorial_report['extension_id']] = late_editorial_report
+            release_batches.extend(Path(path) for path in late_editorial_report['manuscripts'])
+
     # Lexically valid "% o" and "% s" in translated prose still consume native
     # arguments absent from the Japanese source. Check final files, including
     # all post-batch stages, instead of accepting syntax alone as safety proof.
@@ -6683,7 +8136,8 @@ def main() -> None:
     # its own repair-stage checks have passed. This final check changes no bytes.
     from dk4tool.graphics.plaque_contract import verify_final_plaque_material
 
-    final_plaque_contract = verify_final_plaque_material(candidate, percent_clean, profile_config)
+    final_plaque_contract = verify_final_plaque_material(
+        candidate, percent_clean, profile_config, artwork_font=experimental_artwork_font)
 
     # Raw captions are merged early alongside archive sync layers. Recheck the
     # complete reviewed block after later stages, including preserved source art.
@@ -6769,6 +8223,7 @@ def main() -> None:
         "final_raw_art_contract": final_raw_art_contract,
         "final_graphics_copy_contract": final_graphics_copy_contract,
         "final_palace_menu_contract": palace_label_contract,
+        "final_square_font_scratch_contract": final_square_font_scratch_contract,
     }
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

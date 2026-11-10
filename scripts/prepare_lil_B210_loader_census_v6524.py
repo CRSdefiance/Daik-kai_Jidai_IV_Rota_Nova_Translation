@@ -1,0 +1,10 @@
+"""Prepare current/reference whole archive and shipped entry checks for the resized B210 block."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B210_loader_census_tools_v6524')
+if __name__=='__main__':
+    assert not ROOT.exists();rows=[]
+    rows.append(derive('scripts/verify_lil_B209_loader_v6472.py','scripts/verify_lil_B210_loader_v6524.py',{'B209':'B210','loader_v6472':'loader_v6524','create_lil_B209_reference_v6468':'create_lil_B210_reference_v6515','reference_v6468':'reference_v6515','V6439':'V6488'}))
+    rows.append(derive('scripts/verify_lil_B209_references_v6473.py','scripts/verify_lil_B210_references_v6525.py',{'B209':'B210','reference_census_v6473':'reference_census_v6525','loader_v6472':'loader_v6524','create_lil_B209_reference_v6468':'create_lil_B210_reference_v6515','if n not in [209]':'if n not in [210]','==18':'==12','native_commands_each=18':'native_commands_each=12',"sum(r['typed_relative_span_count']for r in result)==4":"sum(r['typed_relative_span_count']for r in result)==0","sum(r['target_native_skip_cases']for r in result)==20":"sum(r['target_native_skip_cases']for r in result)==0",'all18_commands_four_relative_sites_and_shipped_entry_census':'all12_commands_no_relative_sites_and_shipped_entry_census','all18_clean_current_target_commands_and_four_relative_sites_reexecuted':'all12_clean_current_target_commands_and_no_relative_sites_reexecuted','relative_sites=4,target_native_skip_cases=20':'relative_sites=0,target_native_skip_cases=0','18-command/four-relative-site':'12-command/no-relative-site'}))
+    ROOT.mkdir(parents=True);save(ROOT/'prepared_tools.json',dict(tools=rows,source12_commands10_static_speeches_one_A000_and_end=True,no_relative_typed_choice_or_voice_objects_inherited=True,whole_current_reference336_blocks_two_parent_modes_and_three_entry_censuses_required=True,all_native_instruction_constants_preserved=True,full_goal_complete=False));print('B210 resized-reference whole loaders andthree shipped entry censuses prepared;all12 source commands/no relative sites bound.')

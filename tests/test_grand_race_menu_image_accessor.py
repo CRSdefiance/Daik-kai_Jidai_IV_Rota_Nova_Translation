@@ -3,12 +3,14 @@ import struct
 import pytest
 
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from scripts.execute_grand_race_menu_image_accessor import OWNER, execute, execute_raster_dispatch
 
 
 @pytest.fixture
 def arm9():
-    return NdsImage.open('out/all_routes_combined_v134_candidate.nds').read_file('/__arm9__.bin')
+    return NdsImage.open(historical_rom('all_routes_combined_v134_candidate')).read_file('/__arm9__.bin')
 
 
 @pytest.mark.parametrize(('state', 'normal', 'selected', 'expected'), [

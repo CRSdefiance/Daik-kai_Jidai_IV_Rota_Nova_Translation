@@ -1,0 +1,10 @@
+"""Measure every complete page and expose every original base-QA diagnostic."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive,checked_text
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B231_native_tools_v7490')
+if __name__=='__main__':
+    assert not ROOT.exists();common={'B230':'B231','layout_v7441c/seventeen_whole_paragraph_plans':'layout_v7489b/sixteen_whole_paragraph_plans','native_pages_v7442b':'native_pages_v7490','base_QA_v7443b':'base_QA_v7491','source_pages_v7437/all17':'source_pages_v7485/all16','current_V7418_native_v7423':'current_V7466_native_v7471','[2,22]':'[2,19]','all17':'all16','all17_paragraphs17_complete_native_pages136_alignments':'all16_paragraphs16_complete_native_pages128_alignments','only_original_static_selectors2_22':'only_original_static_selectors2_19'};jobs=[]
+    for a,b,extra in [('verify_lil_B230_native_pages_v7442b','verify_lil_B231_native_pages_v7490',{"len(plan['records'])==17":"len(plan['records'])==16",'len(cases)==17 and len(pictures)==17 and alignments==136':'len(cases)==16 and len(pictures)==16 and alignments==128','complete_native_pages=17,logical_compiled_input_alignment_cases=136':'complete_native_pages=16,logical_compiled_input_alignment_cases=128','17 paragraphs/17 complete native pages/136 alignments':'16 paragraphs/16 complete native pages/128 alignments'}),('probe_lil_B230_base_QA_v7443b','probe_lil_B231_base_QA_v7491',{'seventeen':'sixteen'})]:
+        src=Path('scripts/'+a+'.py').read_text('utf8');changes={k:v for k,v in common.items() if k in src};changes.update(extra);checked_text(src,changes);assert not Path('scripts/'+b+'.py').exists();jobs.append(('scripts/'+a+'.py','scripts/'+b+'.py',changes))
+    rows=[derive(*j) for j in jobs];ROOT.mkdir(parents=True);save(ROOT/'source_locked_native_andunmodified_QA.json',dict(tools=rows,all16_complete_original_pages128_logical_compiled_alignments_required=True,original_width_font_bounds_guards_pairphase_literal_I_andbase_QA_preserved=True,all_diagnostics_pending_individual_review=True,new_credit=0,full_goal_complete=False))

@@ -6,6 +6,8 @@ import pytest
 
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from dk4tool.script.common_message_table import (
     DIRECTORY_OFFSET,
     TABLE_OFFSET,
@@ -17,7 +19,7 @@ from dk4tool.script.common_reblocking_release import read_preserved_neighbors
 
 @pytest.fixture(scope='module')
 def mixed_owner():
-    parent = NdsImage.open('out/all_routes_combined_v119_candidate.nds')
+    parent = NdsImage.open(historical_rom('all_routes_combined_v119_candidate'))
     common, arm9 = parent.read_file('/COMMON/MESFILE.DK4'), parent.read_file('/__arm9__.bin')
     before = common_message_entries(common, arm9, clean=False)
     manuscript = json.loads(Path('translations/common_bgm_complete_titles_v2.json').read_text(encoding='utf-8'))

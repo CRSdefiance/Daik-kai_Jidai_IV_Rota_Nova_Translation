@@ -6,6 +6,8 @@ from pathlib import Path
 import pytest
 
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from dk4tool.script.common_message_table import DIRECTORY_OFFSET, common_message_entries
 from dk4tool.script.common_reblocking_release import apply_common_reblocking
 from scripts.audit_release_translation_integrity import build_report
@@ -15,7 +17,7 @@ from scripts.verify_common_native_items import verify as verify_items
 
 @pytest.fixture(scope='module')
 def release():
-    rom = NdsImage.open('out/all_routes_combined_v119_candidate.nds')
+    rom = NdsImage.open(historical_rom('all_routes_combined_v119_candidate'))
     return rom.read_file('/COMMON/MESFILE.DK4'), rom.read_file('/__arm9__.bin')
 
 
@@ -73,12 +75,12 @@ def test_release_transform_rejects_incorrect_native_layout_even_with_updated_has
 
 
 def test_saved_relocation_checks_every_item_and_all_visible_source_messages():
-    candidate = Path('out/all_routes_combined_v120_candidate.nds')
+    candidate = historical_rom('all_routes_combined_v120_candidate')
     items = verify_items(candidate, 'all-routes-unified-v120', [29, 30, 31, 32])
     assert items['native_entry_count'] == 151
     assert items['relocated_complete_owners_verified']
     assert items['japanese_records_in_mapped_items'] == 0
-    old = inventory(Path('out/all_routes_combined_v119_candidate.nds'), Path('work/clean.nds'))
+    old = inventory(historical_rom('all_routes_combined_v119_candidate'), Path('work/clean.nds'))
     assert [e['message_id'] for e in old['blank_native_messages']] == [469]
     new = inventory(candidate, Path('work/clean.nds'))
     assert new['blank_native_message_count'] == 0

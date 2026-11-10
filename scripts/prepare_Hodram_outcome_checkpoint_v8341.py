@@ -1,0 +1,93 @@
+"""Source-lock a reversible zero-credit native/stored/actual checkpoint; full objective remains open."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+
+PROOFS={
+ 'manuscript':'translations/hodram_B47_B48_editorial_manuscript_v3.json',
+ 'names':'translations/hodram_B47_B48_speaker_name_review_v2.json',
+ 'source_controls':'work/analysis/Hodram_B47_B48_source_controls_v8314/two_EV1_entries15_commands6_preambles7_opaque_effect_pairs50_complete_seeded_ends.json',
+ 'source_display':'work/analysis/Hodram_B47_B48_source_display_v8316b/six_source_dispatches24_macro_alignments_five_progressive_one_FE_pages_Lil_identity_reuse.json',
+ 'current':'work/analysis/Hodram_B47_B48_current_v8317c/six_exact_source_current_effective_refs_after_whole_clean_gloss_andnative_source_view.json',
+ 'layout':'work/analysis/Hodram_B47_B48_layout_v8323/six_automatic_plans_original_usable_width_distinct_FE_all_QA_preserved.json',
+ 'pages':'work/analysis/Hodram_B47_B48_pages_v8324/six_complete_native_pages24_compiled_alignments_distinct_FE.json',
+ 'native_view':'work/analysis/Hodram_B47_B48_native_review_v8325/six_native_pages_directly_viewed_no_warning_waivers.json',
+ 'relocation':'work/analysis/Hodram_outcome_relocation_v8326/two_blocks6_speeches15_commands_full_source_parent_inverses.json',
+ 'stored':'work/analysis/Hodram_outcome_stored_v8327/six_stored_bodies8_fresh16_reused_alignments_six_exact_native_pages.json',
+ 'controls':'work/analysis/Hodram_outcome_final_dispatch_v8328/six_final_dispatches9_exact_nontext_commands_FE_FI_andcomplete_ends.json',
+ 'reference':'work/analysis/Hodram_outcome_reference_v8329/research_image_receipt.json',
+ 'loaders':'work/analysis/Hodram_outcome_loaders_v8330/325_whole_native_loads_cache_hits650_initial_parent_modes.json',
+ 'callers':'work/analysis/Hodram_outcome_reference_census_v8331/all15_commands_zero_relative_sites6_records_two_EV1_entries_shipped_callers.json',
+ 'fixtures':'work/analysis/Hodram_outcome_fixtures_v8332/four_complete_clean_revised_SC1_scripts_original_Hodram_prelude_fixtures.json',
+ 'models':'work/analysis/Hodram_outcome_actual_models_v8334/six_clean_six_stored_native_bodies_one_Lil_header_distinct_FE.json',
+ 'actual47':'work/analysis/Hodram_outcome_actual_v8335/B47/paired_actual_dialogue_headers_FE_flow_returns.json',
+ 'actual48':'work/analysis/Hodram_outcome_actual_v8335b/B48/paired_actual_dialogue_headers_FE_flow_returns.json',
+ 'comparison':'work/analysis/Hodram_outcome_actual_comparison_v8337/two_paired_whole_outcomes_controls_scenes_returns_bounded_later_state.json',
+ 'FE_geometry':'work/analysis/Hodram_outcome_FE_geometry_v8338b/two_original_FE_paint_snapshots_four_exact_bitmap_palette_RGB_holds.json',
+ 'later':'work/analysis/Hodram_outcome_later_differences_v8339/observed_later_RGB_andPRNG_differences_not_everyframe_causality.json',
+ 'display':'work/analysis/Hodram_outcome_display_review_v8340/display_review_receipt.json',
+ 'own_input':'work/analysis/current_V8300_Hodram_native_v8303/current_native_input.json',
+ 'release':'work/analysis/Hodram_three_blocks_release_v8301/registered_release_verification.json',
+}
+SUMMARY="""Registered cumulative V8300 remains current, with7199 completed/7202 source-prose-and-drafts/4471 integrated revisions/2728 justified retentions. SC0 368,SC1 119,SC2 4915,SC3 197,COMMON1600 complete/1603 source-prose;route subset5599 is not a full-goal denominator. Its641 manifest batches/114 accepted layers/18 checks/110 regressions/exact clean-input patch andown Hodram startup remain verified. MainV4701 andcanonical baseline are unchanged. Preserve every ROM,translation,draft,executed producer,proof andfailure. No separate user package,promotion,pruning,commit orpush.
+
+The six whole-outcome records in SC1B47/B48 now pass allfive individual review gates in manuscriptv3;scoped Lil Argot namesv2 passes allfive gates. Three revisions/three individual retentions remain unchanged from the clean-first contextual review:remove invented unfairness,restore Lil's best-in-the-world insistence,andpreserve the addressee's instruction towait inAmsterdam. Retain the rueful concession,the qualified Lil Argot/Ullr's Bow discovery notice,andplayful chuckle/taunt withone real FI. The source musical note's playful function is expressed in the retained laugh/taunt;raw source ispreserved. No invented rank,relationship,conquest,present supremacy,player acquisition orhandover. These six remain uncredited until frozen-policy/atomic/registered integration gates pass.
+
+Automatic full-usable-width planner8323 preserves allwords andoneFI without shortening,manual prose breaks,font/viewport/globalguard changes. Progressive usable216px;FE bitmap228px butusable216px fromsource-bound original32 terminal/break-pair measurements,rebuilt throughfull12byte name inverse andprotectedBlades8. Allsix one-page native bodies/24compiled alignments pass andwere directly viewed;zero warnings/waivers,six original line-count infos. The four-row Lil insistence retains a reviewed complete-word You/have boundary tokeep best in the world andthe final sentence coherent;forcing subject/infinitive pairs causes a weak the/world boundary. Allthree earlier comparison attempts are preserved,including the harmless shell-quoting failure.
+
+Independent commandwise reconstruction8326 preserves all15 commands,six complete preambles,oneFE,oneFI,seven original opaque effects,two fourbyte ends andseparate tails. Original current B47 216to212 bytes;B48 200to156. All323 other SC1 blocks remain exact. Fullclean/predecessor block andarchive inverses pass;50target endcases retain initial value. Two stored parity tails get8fresh alignments;four exact bodies reuse16. Allsix stored native pages equal viewed planes withno extra ink/page. Final6dispatches/9nontext commands,325whole native loads/cache hits/650parent modes/two originalEV1 block-index entries andone fresh shipped-code caller census pass. This is native/offline evidence,not outereligibility,natural optional activation orall attainable effect semantics.
+
+Pinned researchreference8329 changes onlySC1B47/B48 afterV8300;allother files/components/names/123264payload andfullparentROM inverse remain exact. Four pinned whole-script fixtures8332 preserve eight original opening initializers34bytes andevery selected source speech/control/effect/end,withconstant34byte shift. The producer's console line retaining six/60/28/eight isstale;manifest/assertions/models8334 correctly bind four fixtures/30original commands/12speeches/zero relatives acrossbothlanguages. No artifact was rewritten. These fixtures are initialized Hodram opening contexts,not original optional-event locations/eligibility/earned progress.
+
+Four cold-boot source/revised whole-scene runs8333/8333b total40004frames withidentical ordinary inputs andreadonly original-command traces. Bothcomplete outcomes show6Japanese+6English single pages and100 complete body/Lil-name orFE-absent-header holds. All15original exchange commands areobserved ineach language,plus original initializers. OriginalFE notice transitions cleanly intoLil's two lines;normalreturns B47frame4495[0,0] bothversions,B48source4495/English4494[0,0]. Allsix sameframe upper/portrait/header pairs match. Allsix dialogue/return sheets were directly viewed;Stockholm return/port menus/departure andsailing areactual fixture-following coverage,not new editorial credit orfullroute coverage.
+
+Two focused FE-boundary runs8336 total8002additionalframes,using the identical existing input prefix andno repeated whole-flow test. Originalpaint CPU/WRAM/DTCM/ITCM snapshots andfourheld bitmaps bind actual228x48/288stride/6x12/16physicalpitch descriptors,currentvtables,palette15black/palette14CP932shadow andeveryRGB ink pixel. PNGs equal completed whole-run holds. The paint context istemporary stack storage;the view/header/palette persist. Originalheader4 points into CPUVRAM0601A000,not the synthetic painter's20byte allocation. Source-bound DeSmuME MMU.cpp/MMU.h andcaptured bankD enabledMST1/OFS0 map to LCDM;actualheld VRAM glyphs equal independent native planes. No geometry inferred fromincidentalr1. Earlier8338 failed RAM-offset assumption ispreserved;8338b corrects onlyliveVRAM binding. Earlier8335B48 audit assumed normalizedASCII ink1;currentCP932-capable painter preservesnative15. Preserved8335b bindsactual15;no pixelguard suppressed orcapture repeated.
+
+Allmeasured later limits remain explicit. B47 has3command-field differences/0duration/0UI,93of93laterRGB equal andmatching finalPRNG3110383956. B48 has7command-field differences/1duration/0UI,80of93laterRGB equal and13differences:frame4870A-prompt blink,5410/7030menu highlights,and9550through10001lower-screen sailingclouds. Alloriginal-script entry/return PRNG pairs match;finalB48 source3450714279 versusEnglish3110383956 differs later. Bothversions inbothoutcomes haveequal five checked final native components,wholeactors andcaptain1;rawcalendar ticks0/[0,0,0] isuninterpreted. Allfour comparison/difference sheets were directly viewed. No everyframe causal proof,future random-outcome orbroadsimulation equivalence claim;no RNG/input retiming orforcing. Retain this evidence forlater older-record technical re-audit.
+
+Allsix jobs areterminal/reaped;total48006actualframes. Manuscriptv3/namesv2 anddisplay8340 bind all source/current/compiled/stored/native/actual refs andindividual reasons. Newcompletion/source-prose countercredit remainszero. Fullobjective staysallfour stories,earlier translatedstory dialogue,sharedshops/towns/randomscenes,Help/remainingprose,all207names/roles/aliases andretrospectivepremature wraps. All prior families/leads/limits remain in the copied scope inventory. Graphics/all18plaques andlater older-record technical re-audit stay separate. Roughly20000lexicalcandidates isnot anexact player-facing remainingcount orpercentage."""
+NEXT="""Continue from verifiedV8342/currentregisteredV8300. Reuse six-outcome manuscriptv3/namesv2 andallcompleted source/context/native/stored/actual/FEgeometry/loader/caller checks;do not replay without changedinput orconcrete risk. Freeze natural-dialogue-v2 policy forsource-qualified sixrecords,individual reasons/five gates/source02 andFE/oneFI/defaults6/9/15/nativecompiler/parity/two whole ends/sixinfo diagnostics/no waivers. Bind exact current/source/final refs andfullclean/current inverses. Independent production validators must recompute complete native/stored/body/name/FE palette/typedVRAM/actual flow/hold masks andevery measured timing/UI/PRNG/component/actor/captain/rawcalendar/RGB scope,including B48's nonzero later differences andtemporary-context/liveVRAM distinctions. The atomic stage must validate everything in memory andcommit one wholeNDS object;meaningful actual-changing semantic corruptions must reject before any commit,even withdependencydigest checks deliberately bypassed. Do not assume B137's noFE/zeroFI orold normalizedASCII FE plane formats.
+
+Then register afterthe complete V8300stack andexplicit Adernkatz dependency,build through the sole integratedbuilder,verify exacttested researchreference/clean-input patch/manifest/appropriate18checks110regressions andownregistered startup. Credit6once onlyafter necessary gates;projected7205completed/7208source-prose/4474revised/2731retained,SC1125 androute subset5605. Preserve currentexperimentalV8300/main4701 andallprevious artifacts untilnewcandidate isverified;no separate package,promotion,pruning,commit orpush.
+
+Keep the fullgoal andallcopied prior leads:12contraction/questiontags,unscanned beyond558plans,weak-before-row/page-before-readability,COMMON750-752/preLF6435,allitem/counterpart/nameconsistency andall207labels/customnames;normalendcarry/B35R65/B48R129nineteenthcells/correctedoldB47receipt andB48/B50labels;allGerhard/Rafael/Hodram actualtiming/RNG/components/calendars/RGB/fixture-entry limits. Owncaptain1 input8303 iscurrent;otherroute snapshots needproper rebind/recapture. Usebroadpractical town/random captures andrepresentative focusedtests;exhaustive naturalplaythroughs/individualconditional visits areunnecessary. Keepgraphics andlater older-record technical re-audit separate."""
+
+GATES='''def gates():
+    prior=read(PRIOR);data={k:read(p) for k,p in PROOFS.items()};doc=data['manuscript'];display=data['display'];geometry=data['FE_geometry'];compare=data['comparison'];later=data['later']
+    assert len(doc['records'])==6 and doc['revised']==3 and doc['retained']==3 and all(all(r['review'].values()) for r in doc['records'])
+    assert display['manuscript_sha256']==sha(Path(PROOFS['manuscript']).read_bytes()) and display['name_review_sha256']==sha(Path(PROOFS['names']).read_bytes()) and display['all_six_five_perrecord_review_gates_true'] and display['actual_complete_body_header_orFE_absent_header_holds']==100
+    before=read(doc['predecessor_manuscript']);assert sha(Path(doc['predecessor_manuscript']).read_bytes())==doc['predecessor_manuscript_sha256']==data['stored']['manuscript_sha256']
+    for a,b in zip(before['records'],doc['records'],strict=True):assert all(a[k]==b[k] for k in ['id','english','compiled_hex','planned_English_markup','source_hex','current_hex','source_reference','current_reference','qa_waivers','qa_waiver_scope'])
+    assert geometry['all_actual_FE_typed_descriptors_palette_complete_bitmap_andphysical_RGB_match_independent_model'] and geometry['focused_actual_frames']==8002
+    assert compare['total_actual_frames']==40004 and [g['later_RGB_difference_count'] for g in compare['groups']]==[0,13] and all(g['all_observed_script_entry_andreturn_PRNG_pairs_equal'] for g in later['groups']) and [g['final_PRNG_equal'] for g in later['groups']]==[True,False]
+    for key in ['actual47','actual48']:assert not data[key]['unresolved'] and data[key]['all_observed_complete_body_name_orFE_absent_header_holds_andnative_flow_pass']
+    for sheet in display['all10_actual_comparison_andlater_difference_sheets_directly_viewed']:assert sha(Path(sheet['path']).read_bytes())==sheet['sha256']
+    assert data['loaders']['fresh_native_whole_loads_andcache_hits']==325 and data['loaders']['fresh_initial_parent_modes']==650 and data['callers']['external_references_complete']
+    assert data['reference']['parent_sha256']==prior['candidate_sha256']==data['own_input']['current_ROM_sha256']==data['release']['candidate_sha256'] and sha(Path(prior['candidate']).read_bytes())==prior['candidate_sha256']
+    assert sha(Path(data['reference']['research_ROM']).read_bytes())==data['reference']['research_ROM_sha256']
+    for p in [display,geometry,compare,later,data['stored'],data['controls'],data['callers']]:
+        for path,digest in p.get('evidence',{}).items():assert sha(Path(path).read_bytes())==digest
+    return prior,data
+
+'''
+
+if __name__=='__main__':
+    root=Path('work/analysis/Hodram_outcome_checkpoint_tools_v8341');assert not root.exists()
+    source=Path('scripts/checkpoint_Hodram_outcomes_v8321.py').read_text('utf8');a=source.index('PROOFS=');b=source.index('\ndef restore');c=source.index('def gates():');d=source.index("if __name__=='__main__':",c)
+    pending_start=source.index('        pending=dict(');pending_end=source.index('        oldpending=',pending_start)
+    pending="""        pending=dict(status='six-whole-outcomes-all-five-gates-native-stored-actual-FE-geometry-approved-policy-atomic-registered-integration-pending',file_path='/data/SC1.DK4',blocks=[47,48],records=6,proposed_revisions=3,justified_retentions=3,manuscript=PROOFS['manuscript'],names=PROOFS['names'],proofs=PROOFS,
+            all_five_perrecord_review_gates_true=True,current_English_bodies_compared=True,actual_complete_holds=100,whole_scene_frames=40004,focused_FE_frames=8002,total_actual_frames=48006,source_FE_one_FI_andmusical_note_function_reviewed=True,B48_later_timing_PRNG_and13RGB_differences_preserved=True,new_credit=0,full_goal_complete=False)
+"""
+    result=derive('scripts/checkpoint_Hodram_outcomes_v8321.py','scripts/checkpoint_Hodram_outcomes_v8341.py',{
+        source[a:b]:'PROOFS='+repr(PROOFS)+'\nSUMMARY='+repr(SUMMARY)+'\nNEXT='+repr(NEXT)+'\n',source[c:d]:GATES,source[pending_start:pending_end]:pending,
+        'Hodram_outcomes_checkpoint_v8321':'Hodram_outcomes_checkpoint_v8341','editorial_handoff_verification_v8322':'editorial_handoff_verification_v8342',
+        'editorial_handoff_verification_v8306':'editorial_handoff_verification_v8322',
+        'Hodram_SC1B47_B48_six_prose_source_display_logical24_pending_compiled_actual_andrelease_v8321':'Hodram_SC1B47_B48_six_all_five_gates_actual_FE_geometry_pending_policy_atomic_registered_v8341',
+        'unfinished_editorial_scope_v8321':'unfinished_editorial_scope_v8341',
+        'superseded_by_source_prose_checkpoint':'superseded_by_display_checkpoint',
+        'six Hodram outcome prose decisions;compiled display andactual tests next':'six Hodram outcome displays reviewed;policy andregistered integration next',
+        'V8321':'V8341','V8322':'V8342',
+        'new_credit=0,new_emulator_runs=0,new_actual_frames=0,new_research_ROMs=0,':'new_credit=0,new_emulator_runs=6,new_actual_frames=48006,new_research_ROMs=5,',
+        'six contextual outcomes drafted/source native/logical24pass;compiled/actual/release pending.':'six outcomes allfivegates/100actualholds/48006frames;policy/atomic/registeredrelease pending.',
+    })
+    root.mkdir(parents=True);save(root/'full_scope_reversible_actual_checkpoint_derivation.json',dict(derivation=result,all_prior_native_high_integer_constants_andmultiplicity_preserved=True,no_ROM_registry_counter_promotion_orcredit_change=True,full_goal_complete=False))

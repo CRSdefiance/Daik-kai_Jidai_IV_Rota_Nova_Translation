@@ -1,0 +1,51 @@
+"""Preserve the whole objective and exact uncredited cheese-specialty next steps."""
+from scripts.lil_B194_checkpoint_text_v5527 import WIDER
+
+NEXT=(
+    'Continue Lil SC2B195 from manuscriptv3 and native approval5557. Twenty complete source/context/localization/naturalness/native-format reviews are approved but uncredited:3 revisions/17 individual retentions. '
+    'Do not repeat clean inventory/gloss5539/5540,source mapping5541,names/voices/dispatch/entry/controls5542-5546,terms5547,comparison5548,prose5549/5550,native160 alignments/20 consumer/28 formatter negatives or the R17 guarded-row proof5558 without a concrete risk. '
+    'Use frozen lil_B195_layout_v1 and profile;the explored layout_v2 and planner5555 are stopped/unapproved and must not be registered or used to build. '
+    'The R17 plenty/of two-row proposal needed36 first-row cells and hit the validated pair-phase-auto-wrap error. All11 complete-word two-row splits fail unchanged native lint. '
+    'Retain three original rows and all68 ASCII paragraph characters with the written reason in manuscriptv3/source_bound_wrap_retention_proof. No words,compiled bytes,planes,metrics,width,guard,phase or ordinary-boundary rule changed after the original viewed native pass. '
+    'The initial visible-row estimate omitted the native internal-break guard;the failed exact-boundary experiment and rejection proof are preserved. No ordinary-boundary exception was adopted. '
+    'Preserve Barkeep92,Patron103,Port Worker119 original voice0 and six readonly progressive/full-catalogue name consumers. Source酒場の親父/酒場の客/出港所の兄貴 do not establish fatherhood,brotherhood,new rank or employment. '
+    'Keep the whole appealing-smell/sniff/food question,cheese-rich unnamed specialty,skeptical question/confident retort,one shared order,prompt service,playful coaxing,two separate chewing beats,taste payoff,satisfaction,personal tell-everyone intention and dish-popularity prediction. '
+    'R17 explicitly says plenty of cheese;R43 keeps Go on/Give it a try and restores humor me;R69 restores I have got to tell everyone as the Port Worker’s future personal intention. '
+    'All17 retentions have individual complete-exchange reasons. Do not invent a dish name,pizza,recipe,cuisine,origin,price,health effect,actual deception,fraud,danger,completed advertising,demand,profit or reward. '
+    'Both sourceヴェラクルス aliases and individual Cheese8 are bound;metadata b00400db58020100 stays exact. The FE Cheese may catch on in Veracruz is prospective and does not establish earlier location or earned fashion. '
+    'Cheese8 older compact-UI fidelity remains open separately,alongside Sake37/Chili29/China42. No new widget credit is claimed. '
+    'Produce the reversible23-command relocation and final stored native proofs. Source712 stored/710 logical bytes has2 tailzeros. Preserve all20 full preambles,19 progressive/one FE254,selectors5C/67/77(decimal92/103/119),A0008 raw00a0ffff010841a1,C200704 and one four-byte end706. '
+    'No FI/FA/FO,predicate,relative branch,pause,typed choice or dynamic speaker object is present. A000 packed-effect semantics remain unbound;do not infer them from the commodity notice or reuse B194 conditional assumptions. '
+    'The source EV2 event195/action196 has no explicit dependency prefix;outer conditions/eligibility remain unexecuted. Source C200 uses independently fleet-bound descriptor2 with exact owned UI writes/unowned state;descriptor is not captain/company identity. '
+    'Build a one-block reference on complete registered V5531,verify full loaders,entry census,guarded end,all20 relocated dispatches and exact leaves/control ownership. '
+    'Use paired complete-content fixtures with all23 commands plus nine original B22 initializers,ordinary inputs,cold boots and no state/result/RNG forcing. Observe all actual selection,portraits/names,chewing beats,full R17 first/final glyphs,FE clear,UI/end and normal return. '
+    'No exhaustive natural route or every conditional visit is required;this source is linear. Distinguish source/offline proofs from actual scene coverage. '
+    'Then run the atomic compiler/meaningful negatives,registered cumulative builder after all578 V5531 batches/114 accepted layers,exact clean-input patch and fresh current startup. Credit20 once only when necessary gates pass. '
+    'V5531 remains registered cumulative;main V4701 remains promoted. Preserve every ROM,translation,manuscript,failed/stopped producer,proof and historical ledger value. No promotion or pruning. '
+    +WIDER
+)
+
+SUMMARY=(
+    'V5559 records20 Lil SC2B195 clean-Japanese whole-exchange source/prose/current-native approvals as uncredited work:3 revisions/17 individually justified retentions. '
+    'The Port Worker notices a good smell,the Patron sniffs and agrees,and the Barkeep identifies an unnamed cheese-rich house specialty. Skepticism meets a confident retort,a single shared order is promptly served,and playful coaxing leads to two distinct chewing beats and enthusiastic praise. '
+    'The Barkeep responds with satisfaction;the Port Worker intends to tell everyone and the Patron predicts the dish will be a hit. A separate prospective Cheese/Veracruz FE follows. '
+    'Revisions make plenty of cheese explicit,restore the coaxing idiom as humor me while keeping Give it a try,and restore personal tell-everyone intention. '
+    'Retain the casual smell/food questions,sniff,short skepticism,confident retort,one shared order,prompt service/arrival/speed reaction,agreement,two chewing sounds,taste praise,Told you,popularity prediction and prospective notice with individual contextual reasons. '
+    'Barkeep92/Patron103/Port Worker119 have original voice0;all six native name consumers are readonly. Familiar親父/兄貴 wording adds no fatherhood,brotherhood,new rank or employment. '
+    'No pizza,named dish,recipe,cuisine,origin,price,health effect,actual deception,danger,completed advertising,demand,profit or reward is invented. Both Veracruz aliases and individual Cheese8 bind;metadata b00400db58020100 stays exact and older UI fidelity remains open. '
+    '\n\nThe source has23 linear commands/20 full speech preambles,19 progressive/one FE,selectors5C/67/77 and FE254,A0008 raw00a0ffff010841a1,C200704 and one end706. '
+    'Source712 stored/710 logical bytes has2 alignment tailzeros. No source macro,predicate,relative branch,pause,typed choice or dynamic speaker object is present. '
+    'All40 source/current dispatches,six names/three voices,source event195/action196 with no explicit dependencies and paired source C200 ownership/opaque A000 structural decodes pass. '
+    'These are native/offline checks;packed A000 semantics,outer eligibility and actual B195 gameplay remain unexecuted. '
+    '\n\nAll20 complete current-font panels on3 returned sheets were viewed as one exchange. One hundred sixty logical/compiled processor-alignment cases,20 consumer negatives,28 formatter negatives,all first/internal/final glyphs,bounds and single-page checks pass. '
+    'There are no source FI/FA/FO occurrences;the160 cases do not represent actual runtime-name substitutions. Eight Japanese/English row-count notes are narrowly scoped. '
+    'R17 initially appeared capable of two fuller rows. The attempted exact plenty/of boundary refinement stopped before approval:its two-row split needs36 first-row ASCII cells,which the unchanged pair-phase-auto-wrap guard rejects. '
+    'All11 complete-word two-row splits were tested against the unchanged native lint and rejected. Three rows are retained for the whole68-character paragraph with a written source-bound reason. '
+    'The original v1 formatter,all words,compiled bytes and native planes remain selected/unchanged. The stopped v2 code/failed planner and corrective proof are preserved. '
+    'No prose shortening,authored break,viewport/font/metric/guard/pair-phase change or ordinary-boundary exception was adopted. '
+    '\n\nNo new ROM or emulator run is produced. Reversible relocation,final stored alignments,one-block reference/load/relocated-control checks,paired actual content/transition coverage,atomic compiler,registered cumulative integration and clean-input patch/startup remain pending. '
+    'Coverage stays6135 completed contextual rereads,6138 source/prose,3871 integrated revisions/2264 retentions,SC24250/SC396 and routes4536/4536,zero pending credited route drafts. These20 approvals remain uncredited. '
+    'Registered cumulative V5531 remains578 batches/114 accepted layers/18 verified release checks,ROM9976c9c95c22df405ab03ab17c804b2d1d4cc54b22b2cf2cf2c4005ac3fa8a0e,patchff9224d6396af05f282d772eb116e89d83280ae27d3e1ac22094d5f7bae08995. '
+    'All four storylines,earlier translations,shared town/shop/random exchanges,Help and remaining prose,including retrospective early wrapping,remain in scope. '
+    'Graphics/all18 plaques and the later older-record technical re-audit remain separate/open. Main V4701 and every earlier artifact/history remain preserved. Full goal active.'
+)

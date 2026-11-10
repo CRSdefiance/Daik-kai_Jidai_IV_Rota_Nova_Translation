@@ -1,4 +1,51 @@
+## Current execution policy
+
+Apply [the dialogue-and-wrapping efficiency workflow](editorial_efficiency_workflow.md)
+for the remaining editorial work. It retains all five v2 gates and automated checks,
+reuses compatible technical evidence and uses representative gameplay. Its testing
+scope supersedes older wording below requiring the complete changed scene live.
+
+## Current speaker-name finding - V6275
+
+Actor173 is now Shady Man in experimental cumulative V6270,following eight complete clean seller exchanges,all native name/field/macro/font checks,ten actual headers,registered exact clean-input patch and startup tests. Earlier Man/Woman/Stranger remain. Exact references and rationale:translations/shady_man_label_manuscript_v2.json. Keep every historical pending proposal below as evidence,superseded for173 only. The full207 proper-name/role/alias review,individual Cristina/Christina consumers and wider editorial goal remain open. Preserve approved names and all source-fidelity rules.
+
+## Current initial speaker-label findings - V5897
+
+The initial164/165 label lead below is now closed in experimental cumulative V5891 as Man/Woman;172 is Stranger. Exact whole-source contexts,five per-record gates,native names/macros/complete glyphs,bounds and representative scenes,registered release and startup checks are recorded in translations/generic_speaker_labels_manuscript_v2.json and work/analysis/editorial_handoff_verification_v5898/verified_handoff.json. Preserve the earlier pending wording below as historical context. The retrospective207-entry proper-name/role/alias review remains open,including earlier translations and Samwell middle-field consumers. Technical preservation of204 other actors does not supply new editorial approval. Full objective and all source-fidelity rules below remain active.
+
 # Natural-dialogue workflow
+
+## Speaker names and role labels: retrospective localization review
+
+Include proper names and generic speaker-role labels in the full editorial pass,
+including labels in earlier reviewed translations. Use natural American English
+that preserves the clean Japanese identity and the label's function in the complete
+exchange. Review a recurring pair or group together. Preserve the approved names
+Rafael, Hodram, Joakim, Maria and Camille; record any other naming decision with its
+exact source and current references, context, revision or justified retention.
+
+Check consistency across progressive nameplates, full-name catalogs, dialogue,
+runtime substitutions, menus and other relevant consumers. A runtime rendering
+proof alone does not establish a natural localization. Keep literal labels and
+unused name-table metadata as evidence, without inventing age, marriage, family,
+rank, nationality or biography. Do not mechanically expand an internal identifier
+into a player-facing label or replace all labels through a global substitution.
+
+The screenshot's “Woman in a Couple” and paired “Man in a Couple” are source-bound
+leads (actors165/164: カップル女/カップル男). Their relationship qualifier is supported;
+their English phrasing needs review in the complete shared exchange. Neither
+“Wife/Husband” nor “Young Woman/Young Man” follows from these labels alone.
+Final replacement wording and integration remain pending; preserve the earlier
+approved manuscript and rationale as historical evidence.
+
+For each proposed change, bind all relevant native consumers and verify complete
+leading/trailing characters, width, bounds, truncation, substitutions and any
+pagination. Use representative gameplay and focused tests for distinct behavior
+or concrete risks. Keep actual observations separate from offline checks. Integrate
+validated revisions through the registered cumulative release and clean-input patch
+workflow. Retain good labels with individual reasons; do not add duplicate dialogue
+credit or relabel an old technical proof as a new editorial review.
+
 
 This is the required process for every story or shared-dialogue translation, whether
 it is written by Luna, Terra, Sol, or a human contributor.
@@ -6,6 +53,11 @@ it is written by Luna, Terra, Sol, or a human contributor.
 New work uses `natural-dialogue-v2` and the exhaustive process in
 `dialogue_delegation_protocol.md`. `natural-dialogue-v1` remains valid only while
 existing reviewed batches are migrated.
+
+Apply [whole-exchange localization and readable wrapping](editorial_localization_and_layout_standard.md)
+to new work and earlier reviewed or retained wording. Grammatical correctness and
+passing technical checks alone do not establish editorial quality. A formatting
+revisit must preserve historical evidence and add no duplicate review credit.
 
 ## Source and context
 

@@ -6,6 +6,8 @@ import pytest
 
 from dk4tool.patch.bgm_title_tracking import apply_probe
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from dk4tool.script.common_message_table import TABLE_OFFSET, common_message_entries
 from scripts.verify_native_sound_selector import BGM_IDS, verify_components
 
@@ -13,7 +15,7 @@ from scripts.verify_native_sound_selector import BGM_IDS, verify_components
 @pytest.fixture(scope='module')
 def sound():
     base = NdsImage.open('out/raphael_natural_v2_accepted_base.nds')
-    current = NdsImage.open('out/all_routes_combined_v128_candidate.nds')
+    current = NdsImage.open(historical_rom('all_routes_combined_v128_candidate'))
     baseline_arm9 = base.read_file('/__arm9__.bin')
     entries = common_message_entries(base.read_file('/COMMON/MESFILE.DK4'),
                                      baseline_arm9, clean=False)

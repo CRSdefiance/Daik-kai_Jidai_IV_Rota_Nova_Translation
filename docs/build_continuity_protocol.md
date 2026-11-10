@@ -1,4 +1,210 @@
+Maria363 B216–B252 is registered over Maria321:722 entries,114 accepted layers and57 checks. Use `scripts/build_registered_maria363_v1.py` and `--register`;pure transaction:`dk4tool/patch/maria363_release_v1.py`. All363 source objects,353 body pages,clean-input patch,own startup and24 protected getters pass. Preserve the721-entry prefix,Market format/pointers,six-section ARM9,ASCII right bounds,source25v2 andB164R99 correction. Main requires acceptance. Continue from [the registered checkpoint](editorial_Maria363_B216_B252_registered_20261110.md);older entries arehistory.
+
+Maria321 B196–B215 is registered over Maria305 B176–B195:721 entries,114 accepted layers and56 checks. Use `scripts/build_registered_maria321_v1.py` and `--register`;pure transaction:`dk4tool/patch/maria321_release_v1.py`. Preserve allsource/current/compound/command/relative/inverse guards for321 source objects in18 complete SC3 groups:296 ordinary bodies,21 physical4100 alternatives andfour captions. All325 pages,exact clean-input patch,own startup and24 protected getters pass. No new FE control orpadding amendment. Preserve the720-entry prefix,Market allocation/pointers,six-section ARM9,ASCII right bounds,source25v2 andinherited B164R99 correction. Main requires acceptance. Continue from [the registered checkpoint](editorial_Maria321_B196_B215_registered_20261110.md);older entries arehistory.
+
+Maria305 B176–B195 is registered over Maria390 B152–B175: 720 entries, 114 accepted layers and 55 checks. Use `scripts/build_registered_maria305_v1.py` and `--register`; the pure transaction is `dk4tool/patch/maria305_release_v2.py`. It preserves all source/current/compound/command/relative/inverse guards for 305 source objects in 19 complete SC3 groups: 272 ordinary bodies, 22 physical4100 alternatives and 11 captions. All302 pages pass; no new FE controls or padding amendment. Exact clean-input patch, own startup and24 protected getters pass. Preserve the719-entry prefix, Market allocation/pointers, six-section ARM9, ASCII right bounds, source25 v2 and inherited B164R99 correction. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria305_B176_B195_registered_20261110.md); earlier entries are history.
+
+Maria390 B152–B175 is registered over Maria335 B137–B151:719 entries,114 accepted layers and54 checks. Use `scripts/build_registered_maria390_v1.py` and `--register`;pure transaction is `dk4tool/patch/maria390_release_v1.py`. Own only SC3 B152–B175:390 source objects,373 bodies/pages and17 captions inboth qualified menu arities. Preserve the exact B164R99 odd-length FE padding correction through `reviewed_FE_storage_padding_v2.py`:block byte660,20→00,unchanged44-byte command. Do not apply the older even-length two-byte removal helper. Complete inverses/four owner negatives,source-bound reconstruction,current planes andrepresentative gameplay remain required. No styles ornew FE controls. Exact clean-input patch,own startup and24 protected getters pass. Preserve all718 prefix entries,Market pointers/allocation,six-section ARM9,ASCII bounds andsource25 v2 guard. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria390_B152_B175_registered_20261110.md);older entries arehistory.
+
+Maria335 B137–B151 is registered over Maria337: 718 entries, 114 accepted layers and 53 passing checks. Use `scripts/build_registered_maria335_B137_B151_v1.py` and `--register`; pure transaction is `dk4tool/patch/maria335_B137_B151_release_v1.py`. Own only SC3 blocks 137–151: 335 source objects, 333 speech bodies/pages and two captions. Preserve the exact B139R177 inherited NUL alignment binding through `scripts/rebuild_maria335_B137_B151_reviewed_v2.py`; all complete inverses and five negative controls remain required. No styles or new FE controls. Exact clean-input patch, own startup and 24 protected getters pass. Preserve the 717-entry prefix, Market pointers/allocation, six-section ARM9, ASCII right bounds and source25 v2 guard. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria335_B137_B151_registered_20261109.md); earlier entries are history.
+
+Maria337 is registered over Maria330:717 entries,114 accepted layers and52 passing checks. Use `scripts/build_registered_maria337_v1.py` and `--register`; pure transaction is `dk4tool/patch/maria337_release_v1.py`. Own only SC3 blocks125–136:337 source objects,335 speech bodies/339 pages andtwo captions. No style objects or new FE continuations. Complete inverses,exact clean-input patch,own startup and24 protected getters pass. Preserve the716-entry prefix,Market allocation/pointers, six-section ARM9,ASCII right bounds andv2 source25 guard. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria337_registered_20261109.md);older entries below are history.
+
+Maria330 is the registered successor to Maria328:716 entries,114 accepted layers and51 passing checks. Use `scripts/build_registered_maria330_v1.py` for staging andwith `--register` for registration;pure transaction is `dk4tool/patch/maria330_release_v1.py`. Own only the26 reviewed SC3 B96–B124 blocks;insert both B116R41/R51 FE continuations together andcompose every relocation. 330 source objects bind332 stored references:330 physical bodies/338 pages plus two captions,without duplicated credit. Clean-input reconstruction,complete inverses,own startup and24 protected getters pass. Preserve the715-entry predecessor,market allocation/pointers, six-section ARM9,ASCII right-bound correction andv2 source25 guard. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria330_registered_20261109.md);older entries below are history.
+
+Maria328 is the registered successor to Maria303: 715 entries, 114 accepted layers and 50 checks. Use `scripts/build_registered_maria328_v2.py` for staging and `scripts/register_maria328_v1.py` for registration. The pure transaction `dk4tool/patch/maria328_release_v1.py` owns 328 source objects in SC3 B73–B95's 21 reviewed blocks. Apply the existing FE continuation helper once under B87R139, retain both child references and compose both relocation stages. Keep the source paragraph intact; 314 physical bodies / 321 pages and 15 captions are not additional source credits. All stored/native/visual/representative checks, exact clean-input reconstruction, own startup and 24 protected getters pass. Preserve the entire 714-entry predecessor, market allocation/pointers, six-section ARM9, ASCII right-bound correction and v2 source25 guard. Earlier B54/B62 amendments are already in the predecessor. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria328_registered_20261109.md); older entries below are history.
+
+Maria303 is the registered successor to Maria310:714 entries/49 checks,114 accepted layers. Use `scripts/build_registered_maria303_v1.py` andthe exact pure303-record transaction. OnlySC3 B58/59/60/61/62/64/65/66/68/70 change; retain the B62R53 qualified source inverse alignment span. No new FE continuation orB54 amendment is applied. Whole source/current/block/archive/NDS inverses, all299 stored/effective bodies,120 native relative cases,303 loads/606 handoffs,all299 page/four-caption approvals andrepresentative116-page/two-menu QA pass. Preserve the713-entry parent,114 accepted layers, market pointers/read-only allocation,six-section ARM9,ASCII right-bound correction andv2 source25 guard. Exact clean-input patch,own startup and24 protected getters pass before registration/credit. Main promotion requires acceptance. Continue from [the registered checkpoint](editorial_Maria303_registered_20261109.md); preceding workflow entries below are preserved history.
+
+Maria310 uses `scripts/build_registered_maria310_v1.py` over the exact registered
+Maria B50 output. Its pure transaction owns SC3 blocks 51–57: 310 source utterances,
+310 native commands and 318 approved pages. Run the ordinary complete-block rebuild,
+then the exact source-bound B54 R507 amendment in
+`dk4tool/script/reviewed_FE_storage_padding_v1.py`. It removes an unconsumed text
+parity space and one redundant NUL alignment byte, preserves the terminator and
+compiled paragraph, and recomputes every following command/catalogue index and branch.
+Do not regenerate the failed trailing-space version or add another FE page.
+Require fresh complete command maps, clean/current/block/archive/serialized-ROM
+inverses, all 310 effective bodies, 660 native branch cases, 303 loads/606 handoffs,
+all 318 visual approvals and representative pagination/glyph/FE transitions, including
+the R507 A return without an extra blank panel. Preserve the entire 712-entry parent,
+114 accepted layers, market allocation/pointers, six-section ARM9, ASCII right-bound
+correction and v2 multi-archive source25 guard. Require the exact clean-input patch,
+candidate-owned Maria/Hangzhou startup and 24 protected getters before registration
+or credit. The successor has 713 entries/48 checks. Main promotion requires acceptance.
+
+Maria B50 uses `scripts/build_registered_maria_B50_v1.py` over the exact registered
+Maria270 output. Its reviewed FE stage reuses the qualified source-owned native
+continuation helper: 16 source reviews become 17 native panels, with exactly one
+additional six-byte FE preamble under B50 R43. Preserve all 139 paragraph characters;
+the ordinary paragraph space becomes a native page boundary. B50 has no relative
+branch sites. Require complete source/current blocks, archive and serialized NDS
+inverses, all 17 stored/effective bodies and native bounds, guarded alignment cases,
+303 loads/606 handoffs, actual A/page/next-source transition and all generated-page
+visual approvals. No renderer, viewport, font or prose shortening is authorized by
+this scope. Retain the exact 711-entry predecessor, 114 accepted layers, market
+autoload literal/pointers, six-section ARM9, ASCII right-bound correction and v2
+multi-archive source25 guard. Require the byte-exact clean-input patch, candidate's
+own Maria/Hangzhou startup and both getters for all 12 protected names before
+registration/credit. The registered successor has 712 entries and 47 release checks.
+Count 16 source reviews once, never 17 for the child panel. Main requires acceptance.
+The preceding B50-held statements below are preserved history, now resolved.
+
+Maria270 uses `scripts/build_registered_maria270_v2.py` over the exact registered
+710-entry market-corrected predecessor. Require all 114 accepted layers, the
+ASCII right-bound correction, unchanged six-section ARM9, 16-byte literal at
+01FFD000 and both market pointers. Only the 13 reviewed SC3 blocks may change.
+The profile's `source25_multiarchive_guard` requires
+`dk4tool/script/format_safety_relocated_v2.py`: it retains all five previously
+qualified SC0 controls and adds exactly SC3 B38 source records44/52 at their
+new indices43/51. Both full preambles, clean/final blocks, offsets, complete
+record bytes and four malformed/nonleading rejection cases are source-bound.
+The original four-archive printf detector remains unchanged. Do not use the
+SC0-only guard for this or a later derived profile. The manifest records both
+receipts, the detector and handler hashes, and the exact retained prefix.
+Require the complete source/current transaction and inverses, clean-input patch,
+candidate-owned Maria/Hangzhou startup and both getters for all 12 protected
+actors before registration or credit. The minimal coldboot worker is qualified;
+no new conditional story activation is implied. B50's 16 records remain held for
+their separate long-FE display issue. Main promotion requires user acceptance.
+
+Market Goods Info terminator correction uses `scripts/build_registered_market_goods_info_fix_v4.py`
+over the exact registered Maria301 predecessor. Profiles carrying
+`market_goods_info_terminator` must preserve its registered16-byte read-only
+autoload section at01FFD000 and the two Local/Cargo format pointers. The original
+town capture instruction at01FFC6AC must remain code; restoring a zero there would
+break the town-label routine. Require the full710-entry prefix,114 accepted layers,
+ASCII right-bound stage, exact clean-input patch and verified own startup/market
+proofs. Later editorial successors must extend this registered output and reconcile
+their parent config; do not silently rebuild from Maria301 and lose the correction.
+The Maria270 offline/source prose remains valid: SC3/COMMON/fonts and its relevant
+renderer/macro/name instructions are unchanged. Reuse exact matching dependencies;
+do not replay its completed266 bodies. B50’s16-record FE issue remains separate.
+Main promotion still requires user acceptance.
+
 # Build continuity protocol
+
+Maria301 uses `scripts/build_registered_maria301_v1.py` over the exact registered
+708-entry Hodram residual candidate, manifest and registry snapshot. Its profile
+adds `verified_hodram_residual_predecessor` and `maria301_late_dialogue`.
+The driver freshly executes the complete source/current SC3 transaction and
+four-archive story-format guard while preserving every earlier stage, 114
+accepted layers and the ASCII right-bound correction. Only the 32 reviewed SC3
+blocks may differ; ARM9, other files and components remain exact, and the whole
+parent inverse must pass. Require the exact clean-input patch, candidate-owned
+31,000-frame Maria opening/Hangzhou coldboot and both original getters for all
+12 protected actors before registration or credit. The minimal headless worker
+is qualified; preserve the first pre-frame native-load failure as diagnostic
+evidence. The registered manifest discloses verified prefix reuse. Main remains
+unchanged and promotion still requires acceptance.
+
+Rafael5186 uses `scripts/build_registered_rafael5186_v1.py` over the exact
+registered Rafael4903 output, manifest and registry snapshot. Its experimental
+profile adds `verified_rafael4903_predecessor`, `rafael_B0_B34_late_dialogue`
+and `owned_Rafael_residual_middle_fields`. The driver reruns the source-bound
+SC0 transaction and four-archive format guard, then applies only the separately
+qualified three exclusive middle fields. Only SC0 blocks 0–34 and nine ARM9 data
+bytes may differ; both components must restore the whole predecessor exactly.
+All 698 prior manifest entries, 114 accepted layers and the ASCII right-bound
+stage remain required. Require the exact clean-input patch, candidate-owned
+startup and both original getters for all nine protected actors before
+registration or credit. Full catalogue UI and hardware remain unvisited; main
+promotion still requires user acceptance.
+
+Rafael4903 uses `scripts/build_registered_rafael4903_v1.py` over the exact
+registered Rafael4347 candidate, manifest and registry snapshot. Its profile
+adds `verified_rafael4347_predecessor` and `rafael_B321_B342_late_dialogue`.
+The driver preserves every earlier entry and the ASCII right-bound stage,
+reruns the source-bound SC0 transaction and four-archive format guard, and
+proves that only the 22 reviewed SC0 blocks changed. Grouped three-choice
+receipts bind by original block, command offset and caption IDs; observed
+source and relocated stored menu offsets are checked separately. Require the
+exact clean-input patch, candidate-owned startup and original name getters
+before registration or integration credit. This is an experimental candidate;
+the promoted main is unchanged.
+
+Rafael4347 uses `scripts/build_registered_rafael4347_v1.py` over the exact
+registered Rafael3894 candidate, manifest and registry snapshot. Its profile
+adds `verified_rafael3894_predecessor` and `rafael_B301_B320_late_dialogue`.
+The driver preserves every earlier manifest entry and the ASCII right-bound
+stage, reruns the source-bound SC0 transaction and four-archive format guard,
+and proves that only the 20 reviewed SC0 blocks changed. Require the exact
+clean-input patch, candidate-owned Rafael startup and original name getters
+before registration or integration credit.
+
+Rafael3894 uses `scripts/build_registered_rafael3894_v1.py` over the exact
+registered Rafael3649 candidate, manifest and registry snapshot. Its experimental
+profile carries `verified_rafael3649_predecessor`, `rafael_B281_B300_late_dialogue`
+and `owned_Zaganos_surname`. The driver reruns the source-bound SC0 transaction
+and the four-archive format check, then verifies the complete parent inverse.
+The surname stage owns one byte in actor 70's existing field. Require the exact
+clean-input patch, candidate-owned Rafael startup and original name getters
+before registering or assigning credit.
+
+Rafael3649 uses the registered post-nine-stage successor driver
+`scripts/build_registered_rafael3649_v1.py`. Its profile carries
+`verified_post_nine_stage_predecessor`, `rafael_B261_B280_late_dialogue` and
+`owned_Plett_Jacob_surnames`. The driver binds Rafael3514's exact ROM,
+manifest, registry snapshot and nine final-stage proofs. It freshly runs
+the reviewed SC0 transaction and final four-archive format check. The
+surname edit changes only the approved data and pointer fields and keeps
+the existing cache and startup copy geometry. Registration requires a
+byte-exact clean-input patch, the candidate's own startup and both name
+getters. The manifest records prefix reuse and both appended contracts.
+
+Rafael3514 carries `owned_Francisca_name_field` as a separate ninth stage.
+`scripts/build_registered_rafael3514_Francisca_v1.py` consumes the exact
+eight-stage registered dialogue predecessor and preserves its manifest and
+registry snapshot. Its exclusive-field plan owns only actor 186's given-name
+span. Require the named field, complete parent inverse, clean-input patch and
+candidate-own startup and getters before credit. Later successors must carry
+the field through an exact source-qualified stage, preserving all eight prior
+contracts and the ASCII right-bound repair.
+
+For a configuration carrying `percent_relocation_guard`, use
+`scripts/resume_extended_release_with_Fernan_field_v6.py` and
+`scripts/registered_canonical_extension_resume_v6.py`. The verified 557-record
+append relocated five original 0x25 speaker controls in SC0 B146. The original
+percent detector's same-index lookup saw them as possible printf commands.
+The source-qualified adapter changes only those exact record lookups; it checks
+the clean block, final block, preamble, offsets, complete bytes and both indices.
+The original four-archive comparison and rejection rules still execute. The
+manifest records both final-contract source hashes and the exact receipt.
+
+Reuse that receipt in a later cumulative build only if its clean and target block
+dependencies still match. If the owned block changes, qualify its source-to-target
+mapping again. Do not waive a new percent in speech or suppress the four-archive
+check. Retain the pre-ROM entrypoint and percent failures as evidence.
+
+The current extended-prefix implementation is the versioned v3 chain:
+`resume_extended_release_with_Fernan_field_v3.py` and
+`registered_canonical_extension_resume_v3.py`. Its configurations include
+`prepared_profile`. V3 retains every v2 guard while compiling the original indented
+extension in function context and preserving the prepared registry snapshot across
+failed experimental registrations. Keep v2's pre-ROM compiler failure; do not
+restart that failed wrapper or edit its frozen registered dependencies.
+
+For a qualified late editorial successor, the registered v2 extended-checkpoint
+chain may reuse a verified canonical prefix and append one exact source-bound
+transaction. Require the original manifest/ROM, predecessor release and startup,
+unchanged accepted layers/prior profiles, registered transaction/preparation,
+semantic rejection proof and eight stage contracts. The original canonical
+extension and entire final safety-contract source execute on the new target;
+then all original eight final-stage bodies and guards execute. Disclose prefix
+reuse, source hashes and extension provenance in the final manifest. Do not
+reuse a changed record's formatting proof or claim a fresh full-prefix build.
+
+An explicitly registered `canonical_checkpoint_resume` profile may reuse a
+completed, exact canonical-builder checkpoint through the versioned
+`resume_integrated_release_with_Fernan_field_v1.py` chain. The checkpoint qualifier
+requires the original terminal receipt, manifest, complete ROM hash, dependencies,
+all accepted layers and unchanged previous profiles. Only an explicit new profile,
+its resume registration and a qualified expected-contract path may differ. All
+eight original final-stage bodies, parent/target identities, native guards and
+serialized inverses still execute. The manifest retains original profile/registry
+provenance and labels this as checkpoint reuse. A standard fresh build continues
+to use the existing immutable registered pipeline. Neither route authorizes main
+promotion or integration credit before the required release/startup checks.
 
 This is the mandatory procedure for every model and every playable ROM candidate.
 Its purpose is to let translation work accumulate without reverting previously
@@ -33,6 +239,29 @@ batches into `accepted_layers`. A model must never promote a layer merely becaus
 automated checks pass.
 
 ## Procedure for any requested change
+
+Profiles with `owned_Fernan_name_field` use
+`scripts/build_integrated_release_with_Fernan_field.py` after the unchanged seven
+earlier final-stage drivers. Require the separate field configuration and
+`registered_Fernan_name_field_and_complete_parent_target_inverse` in the final
+manifest. This eighth stage owns only actor35's exclusive given-name width
+correction; it cannot carry scene, code, font, pointer or allocation changes.
+The seven-stage output remains an intermediate for that profile.
+
+Profiles with `owned_reviewed_text_data` use
+`scripts/build_integrated_release_with_reviewed_text_data_v3.py` after all six
+unchanged prior final stages. Require the registered data configuration and
+`registered_reviewed_text_data_and_complete_parent_target_inverse` in the final
+manifest. Only six disjoint, source-qualified ARM9 text spans may change; this
+stage cannot carry code, font, graphics, allocation or pointer edits.
+
+Profiles with `owned_static_text` use the registered
+`scripts/build_integrated_release_with_static_text.py` successor. It calls the
+existing grouped-fields pipeline unchanged, then applies only the qualified
+fixed-slot static-data stage. Require its manifest configuration and
+`registered_owned_static_text_and_complete_parent_target_inverse` check before
+handoff. Preserve all earlier runtime/name stages, including ASCII right bounds.
+An intermediate grouped-fields output is not the final candidate for this profile.
 
 1. **Read before editing:** read `AGENTS.md`, this protocol,
    `translations/release_stack.json`, and the relevant section of
@@ -81,6 +310,14 @@ behavior for exact earlier-release reproduction. V303 source-locked batches
 exercise the policy and four negative storage-width cases.
 
 ## Required handoff statement
+
+Profiles carrying `owned_name_fields_grouped` use
+`scripts/build_integrated_release_with_grouped_fields.py` after the unchanged
+next-fields pipeline. Require its registered complete-parent/target inverse check
+and manifest stage. Every shared name owner must have its own clean component,
+editorial decision and native full-name proof. Source-qualified structural headings
+and dramatic waits in B131–B150 remain narrow exceptions; ordinary wraps still
+belong to the formatter. This does not authorize promotion of an experimental build.
 
 ### Observed V609 late-pool expansion regression
 

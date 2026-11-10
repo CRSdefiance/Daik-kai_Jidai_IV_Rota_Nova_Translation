@@ -1,0 +1,129 @@
+{
+  "format": "dk4-ascii-glyph-right-bounds-v1",
+  "module_sha256": "09bb137ebda3e66949710c0deac5765810c61bfa523eb9e08784a11c01574f09",
+  "source_ARM9_sha256": "12ebaf3f3ce558e731c4c972ae90696392a351426cf147fbf3bd830dd1d82d1b",
+  "target_ARM9_sha256": "be6c9ff56915146a8ddb49a365dd48ec2851cf2d813660aa5f110d0653285d21",
+  "proof": {
+    "source_ARM9_sha256": "12ebaf3f3ce558e731c4c972ae90696392a351426cf147fbf3bd830dd1d82d1b",
+    "target_ARM9_sha256": "be6c9ff56915146a8ddb49a365dd48ec2851cf2d813660aa5f110d0653285d21",
+    "patches": [
+      {
+        "offset": 1641816,
+        "before_hex": "1eff2fe1",
+        "after_hex": "370000ea"
+      },
+      {
+        "offset": 1641852,
+        "before_hex": "18c09de50c0051e11eff2fe1",
+        "after_hex": "18c0dde50c0051e11eff2fe1"
+      },
+      {
+        "offset": 1641868,
+        "before_hex": "18c09de50c005ae11eff2fe1",
+        "after_hex": "18c0dde50c005ae11eff2fe1"
+      },
+      {
+        "offset": 1641884,
+        "before_hex": "000000000000000000000000",
+        "after_hex": "19c0dde50c0055e11eff2fe1"
+      },
+      {
+        "offset": 1641900,
+        "before_hex": "000000000000000000000000",
+        "after_hex": "19c0dde50c0056e11eff2fe1"
+      },
+      {
+        "offset": 857912,
+        "before_hex": "060055e3",
+        "after_hex": "c8aafceb"
+      },
+      {
+        "offset": 858100,
+        "before_hex": "060056e3",
+        "after_hex": "9daafceb"
+      },
+      {
+        "offset": 1642044,
+        "before_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "after_hex": "00c096e510005ce304c096e50cc1a01105c04ce000005ce3030000da06005ce306c0a0c319c0cde51eff2fe104f01fe514180d02"
+      }
+    ],
+    "helper_address": 33538816,
+    "helper_bytes": 52,
+    "retired_Square_scratch_tail": [
+      33538816,
+      33538912
+    ],
+    "original_Y_plus_one_font_layout_and_text_preserved": true,
+    "no_section_pool_heap_or_stack_growth": true,
+    "changed_records": [
+      "ASCII_GLYPH_RIGHT_EDGE_BOUND",
+      "ASCII_COLUMN_COUNT_STACK_BYTE",
+      "ASCII_BOUNDED_DIRECT_AND_PALETTED_COLUMNS"
+    ]
+  },
+  "builder_predecessor_sha256": "0741456d1c68baf4669817c30ca9c24954e18dbecf2f7885c5e58c393f217205",
+  "builder_dependencies": {
+    "dk4tool/patch/ascii_right_bounds_builder_guard.py": "37225bec7091419604b1d9eec51a9e3a56fbe30da9aba95326202298f1cf92c1",
+    "scripts/build_integrated_release_with_runtime_bounds.py": "006499487bcc7e560cdc0dcb19f88ae0eefcde9d3ad0f409a6de17a038c31cd7",
+    "dk4tool\\patch\\reviewed_scene_batch_v2.py": "863a950645dfd7f27327316ee3a8d8eef32dffe63d8084b15fc7e99712ecc746",
+    "dk4tool\\patch\\reviewed_scene_batch_v3.py": "aa422b35af6da16941376651a927c61baff9058e876bc568b027428629b00670",
+    "dk4tool\\patch\\reviewed_scene_batch_v4.py": "0879ca6fd280a4d5b21f94c21bd23ea79d913db411d605e076e42cb3cb63411b",
+    "dk4tool\\patch\\reviewed_scene_batch_v5.py": "7c33160ff24fd48f30d025ea73c64d35a28160de0d6b47d2458fc530cb990afe",
+    "dk4tool\\patch\\reviewed_scene_batch_v6.py": "dffcb07c66f2f7387858b9a68765852be48dc5cc5bce255a9fc2a0f9fa094c05",
+    "dk4tool\\patch\\reviewed_scene_batch_v7.py": "9d785b684a1f01c39790e6edb7d284f9969bc49e78981f32df0b9a322138fcaa",
+    "dk4tool\\patch\\reviewed_scene_batch_v8.py": "41acfe8619b7bcdf6f5a85c0f85b44545661aba0a038db68283aa11c7d9f3cd5",
+    "dk4tool\\patch\\reviewed_scene_batch_v9.py": "6014be7cf329e0bbabbe6878848b341ab43055ca24a2394385e0dd8fd402f4b3",
+    "dk4tool\\patch\\rafael_early_tutorial_release_v1.py": "8e853375a6630e33c509ebacaebd0aecedf0812963da04e5920f64916cda576c",
+    "dk4tool/script/rafael_early_tutorial_rebuild_v1.py": "8205a4261eaa3999f1d9c6e8892942c3104fb8731f868025c102cc821e151384",
+    "dk4tool\\patch\\rafael_B36_B41_release_v1.py": "fe270d0d704956e4f9a527f447adcc140bc6f7090dd6771607c2de6bf3a8b28e",
+    "dk4tool/script/rafael_story_rebuild_with_fu_v1.py": "13f8314118fc6b6d9673b4849eee7cc7c28d9a155c5f118eb0fb407b64905f65",
+    "dk4tool\\patch\\rafael_B51_B60_release_v1.py": "99a19eac17cefd081720042da14b3616df1986d17b56b4cc46c4a1284c22ffb5",
+    "dk4tool\\script\\reviewed_scene_rebuild_v3.py": "cc1214f77f8d34645dba2c7a8c9415814a3990d235b633b5cad22e908b336afb",
+    "dk4tool\\patch\\rafael_story_b51_b60_release_v1.py": "78dbd58a3b968704a86c64fe7495bd9ffc0ee808f74d20df73b068f279be9433",
+    "dk4tool\\patch\\rafael_story_b61_b80_release_v1.py": "008dfc7b4725bba25676bb0b0a6a68f847aea71823a7e3f9f36c77cc73fdbe46",
+    "dk4tool\\patch\\early_help23_release_v1.py": "f01f1b8af9218212196096a86353729dc4693f662cedff3a423655c2902e11c5",
+    "dk4tool\\dialogue\\reviewed_help_pages_v1.py": "a64d8098cef7c8f5e0ee45bf0678fbb26e5e70dbfdfba09da076bc1943d9b0ae",
+    "dk4tool\\patch\\town_help23_release_v1.py": "14d036b67558ad5f2636448c79bae705ca8be15310d04304da0a24736583a470",
+    "dk4tool\\dialogue\\reviewed_help_pages_v3.py": "2c7d46d7d4e477c0ebea40d3355042a598bc89f717b1d970c649bdefeba14957",
+    "dk4tool\\patch\\shipyard_help37_release_v1.py": "b51308bd4e3321699c35307aa203f401ccdc8c7ce851b0f8cf6b4b099a74f666",
+    "dk4tool\\dialogue\\reviewed_help_pages_v5.py": "597725b47c49c6fb71b10dedcd7165d82a52c9d3085375f227b48d36d219045c",
+    "dk4tool\\patch\\sea_help22_release_v1.py": "f51dd623ddf4d218477a04226f9c2e8d616fea5517aacf1b8564a10f5d3d7443",
+    "dk4tool\\patch\\fleet_help66_amendment_release_v1.py": "0516bab66612751c2c21081f33b7e7fd0a2399a94db8b479bbac3b13a5958876",
+    "dk4tool\\dialogue\\reviewed_help_pages_v7.py": "6a39d2bbbdfd27e63e9b66382352ed3e45fcd04ee69b2d591d5a30f6d5377321",
+    "dk4tool\\dialogue\\reviewed_help_fleet66_amendment_v1.py": "1967f62b4574661dcb5aaaad56280c1777bae7f17639886256657c53af7ca8db",
+    "dk4tool\\patch\\rafael_story_b81_b84_release_v1.py": "2607a7ba663e0cf2ca8dd1da5f6638d50cfd870c7d6e4d730d178e2e6a82f1fa",
+    "dk4tool\\patch\\reviewed_remaining_help_release_v1.py": "6db428400ec4e8196e1062c7bd7a90191532da71ee84f12465914d61c7218968",
+    "dk4tool\\script\\reviewed_FE_pagination_v1.py": "8afa146e5d53c1a8ce1e77ef6be3ade6336f774ac6b185f869c3d391331ca1ed",
+    "dk4tool\\patch\\deck_help31_release_v1.py": "c858d6c4709f64e8cc73639dbed8fcb599b6bcf949e7e9e65cb5e4ed3efbc195",
+    "dk4tool\\patch\\remaining_help67_release_v1.py": "77876b3c1ce1170c8710f12b4b0550e183ce4d7ec8a57504efb8549005eadfea",
+    "dk4tool\\patch\\rafael_story_b81_b84_release_v2.py": "4b4eeaaf11d270f375c63b66650c5428699a84dd1fc497abec87e09f360ad60e",
+    "dk4tool\\dialogue\\reviewed_two_choice_object_v1.py": "62c366fdf2aad456adcc936c296311095edb644116393813d503fc72d52f7bcc",
+    "scripts\\prepare_rafael516_registered_successor_v1.py": "093a350e1e4a5a720856b0209a2dc0cd64399b9cb1416bfb1e6a6795e95e47ae",
+    "scripts\\finalize_rafael255_research_v1.py": "570b6dd2ab3ff0e11bda50907a8bbfd86ff2f32c20014e5d6831d43b94f1b9f5",
+    "dk4tool\\patch\\reviewed_rafael_plain_scene_release_v1.py": "38ef98ba8c74bca7b590a6ed56ae154275b426fb26c184fb32ec2f99e3f05d2d",
+    "dk4tool\\dialogue\\reviewed_actor_style_object_v1.py": "846466e9d98443833197845f21bdf28b5dceab325744880bb290f06f4f7cb1e0",
+    "scripts\\finalize_rafael261_research_v1.py": "01cbc634bff3d9e41fe8e23605ff2f27b8c5884b91a0eb2819d25aa6c3d0bc6d",
+    "scripts\\source_locked_derivation_v5118.py": "58394bf1d6b3a0d195771b949d7a17ccb240626e30d6a093d038a5d7458513ac",
+    "dk4tool\\dialogue\\reviewed_choice_object_v2.py": "1b217f80f853ee274512bb4e580a38fc9aba5142f266aa2b4906340b9d3ab81a",
+    "scripts\\rebase_rafael255_over261_v1.py": "8b34ff187e2d9f2d669003566a147457698b0370b7437d4f6d215a600f2c3f58",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\write_rafael516_successor_spec_v1.py": "dcb5e97ec3323fb159dc940ac06ca4cf8944abb19802c66feca66130f13770af",
+    "dk4tool\\script\\reviewed_scene_rebuild_v2.py": "73b4c971db7e90e5aa0e040b74264f5539e9e99d4fb7c96ef6bca0d754a166ed",
+    "dk4tool\\patch\\rafael_story_b101_b120_release_v1.py": "a06431d1b4919dacfca35ca213d56f8a6f685a33ab7fb927c31b88bff2e70021",
+    "dk4tool\\script\\reviewed_scene_rebuild.py": "ee45c51958b02975f1a66c93c639f84c2c0ab5b37b782b66b8899832dea57475",
+    "scripts\\finalize_rafael255_research_v2.py": "6929d07c59152a445e2cc644cc5d948955ffc7890868e6829a49a81e01db7024",
+    "dk4tool\\patch\\rafael_story_b85_b100_release_v1.py": "ff23b021faca71c56db2ef685fa9358629737781aff3123b96c5497890deae03",
+    "scripts\\prepare_plain_SC0_registered_successor_v1.py": "7717e1967f902d4d815bbd4adb7dd2d575ef892736c42a0b9674c076dcd9abb2",
+    "scripts\\rebuild_rafael_B121_B140_reviewed_v2.py": "543058a3e77930b40d57f7a8e0c317958e6dc0ad7b875a4d847d40f9438ece93",
+    "dk4tool\\patch\\rafael_story_b121_b140_release_v2.py": "d5c2cf4294f622d0705f1d27865686b73f18504da76349b59a1bd9855e103b75",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\write_rafael351_successor_spec_v3.py": "576875da92814c062515fcf66c20b7a38818052f8929723f5d6e8dff61d95607",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\write_rafael351_successor_spec_v2.py": "ea6d162b06dcb3af96620809d3b8ca1461f3c5d58564fdd4fd6d91a19c9bdd59",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\write_rafael351_successor_spec_v1.py": "74af569e52716af8d6ef618bef18b1426020d43c6c1768ce8e14828fa0c8f51f",
+    "dk4tool\\patch\\rafael_story_b121_b140_release_v1.py": "881a07918f9392e79777fb9c539e8ec1a6ac81dae0edcfb28cedb7834dbcea54",
+    "dk4tool\\patch\\rafael_story_b121_b140_release_v3.py": "da35693592591a19dc844a7a926bf232c427d7bc977154b26dfb59356115a14b",
+    "scripts\\prepare_rafael351_registered_successor_v1.py": "8acf8f356660ac4194603567be805719b678dc1ce0cd1312d596069926826f8d"
+  },
+  "parent_ROM_sha256": "260f16646f29a1d8de555211ab0b0bb51a7669322d33613e9afece65da33ba9e",
+  "parent_manifest": "work\\analysis\\Rafael351_registered_preparation_v3_20261105\\expected_canonical_manifest_contract.json",
+  "target_ROM_sha256": "3829a0e602903c5847415bbee098cb4afa6bfb6083cb5b01d7c418e47c36ddb0"
+}

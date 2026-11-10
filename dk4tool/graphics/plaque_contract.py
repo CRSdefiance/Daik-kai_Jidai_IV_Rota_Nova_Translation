@@ -64,7 +64,7 @@ def source_hint_tile(donor):
     return bytes(result)
 
 
-def verify_final_plaque_material(candidate, clean, profile):
+def verify_final_plaque_material(candidate, clean, profile, *, artwork_font=None):
     """Read only; check final bytes after every registered stage has finished."""
     local_path = profile.get('local_plaque_texture')
     join_path = profile.get('equipment_grain_join')
@@ -77,6 +77,15 @@ def verify_final_plaque_material(candidate, clean, profile):
             raise ValueError('Final plaque contract needs a reviewed local material config')
         source_rows = {g['file_path']: g['records'] for g in grain['files']}
         font = GameAsciiFont.from_arm9(candidate.read_file('/__arm9__.bin'))
+        if artwork_font is not None:
+            # A registered runtime-font experiment does not redraw baked artwork.
+            # Retain the original source-font identity and every existing exact
+            # material, complete-ink, palette, geometry and ownership check.
+            original_font = GameAsciiFont.from_arm9(clean.read_file('/__arm9__.bin'))
+            if artwork_font.glyphs != original_font.glyphs:
+                raise ValueError('Baked plaque artwork requires its exact original source font')
+            font = artwork_font
+            result['baked_artwork_original_font_sha256'] = digest(font.glyphs)
         for group in local['files']:
             path = group['file_path']
             raw, original = candidate.read_file(path), clean.read_file(path)

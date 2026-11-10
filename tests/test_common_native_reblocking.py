@@ -7,6 +7,8 @@ import pytest
 
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from dk4tool.script.common_entry_tables import ITEM_TABLES
 from dk4tool.script.common_message_table import (
     DIRECTORY_OFFSET,
@@ -18,7 +20,7 @@ from scripts.plan_common_native_reblocking import plan
 
 @pytest.fixture(scope='module')
 def inputs():
-    rom = NdsImage.open('out/all_routes_combined_v119_candidate.nds')
+    rom = NdsImage.open(historical_rom('all_routes_combined_v119_candidate'))
     common, arm9 = rom.read_file('/COMMON/MESFILE.DK4'), rom.read_file('/__arm9__.bin')
     rows = json.loads(Path('translations/common_b12_complete_manuscript_v1.json').read_text(encoding='utf-8'))['records']
     authored = {r['message_id']: r['english'].removesuffix('{PAD}').encode('cp932') for r in rows}
@@ -88,7 +90,7 @@ def test_reblocking_rejects_a_changed_loader(inputs):
 
 
 def test_padding_compaction_preserves_all_visible_text_and_unselected_bytes():
-    rom = NdsImage.open('out/all_routes_combined_v122_candidate.nds')
+    rom = NdsImage.open(historical_rom('all_routes_combined_v122_candidate'))
     common, arm9 = rom.read_file('/COMMON/MESFILE.DK4'), rom.read_file('/__arm9__.bin')
     rows = json.loads(Path('translations/common_japanese_b26_manuscript_v1.json').read_text(encoding='utf-8'))['records']
     authored = {r['message_id']: r['english'].removesuffix('{PAD}').encode('cp932') for r in rows}

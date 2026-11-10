@@ -1,0 +1,22 @@
+"""Bind all final dispatched bodies, the moved A000 and normal terminal without forced state."""
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.square_shopkeeper_exact_native_context_v7020 import CurrentContext
+from scripts import prove_lil_shrines_temples_controls_v3168c as inherited
+from scripts.prove_lil_B196_6003_ends_v5597 import end_case
+from scripts.research_wedding_command_v676 import walk
+from scripts.create_lil_B222_reference_v7054 import ROM,PARENT,PLAN
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B222_relocated_controls_v7057');SOURCE=Path('work/analysis/lil_B222_source_v7037/sixteen_clean_current_sunset_Noritsune_exchange_source_references.json');CURRENT=Path('work/analysis/lil_B222_consumers_v7038/sixteen_effective_bodies32_dispatches_two_actors_four_name_consumers.json');CONTROL=Path('work/analysis/lil_B222_controls_v7040/two_A000_structural_cases50_normal_seeded_ends_no_choices_or_relatives.json')
+if __name__=='__main__':
+    assert not ROOT.exists();source,current,control,plan=map(read,[SOURCE,CURRENT,CONTROL,PLAN]);image=NdsImage.open(ROM);block=IlnkContainer.parse(image.read_file('/data/SC2.DK4')).blocks[222];spec=plan['blocks'][0];assert sha(PARENT.read_bytes())==source['current_ROM_sha256']==plan['candidate_sha256'] and sha(block)==spec['research_block_sha256'] and len(block)==1336
+    ns={**inherited.__dict__,'SOURCE':SOURCE,'CATALOG_LOOKUP':{}}
+    for name,text in current['source_owned_dispatch_adapters'].items():exec(compile(text,__file__+'::'+name,'exec'),ns)
+    ns['CATALOG_LOOKUP'],binding=ns['bind_current_catalog'](image);ROOT.mkdir(parents=True);ctx=CurrentContext(source['current_strict_native_input'],'unused-no-historical-ROM',ROOT/'current_context');rows={r['id']:r for r in source['records']};cases=[]
+    for ref in spec['text_records']:
+        row=rows[ref['id']];at=ref['new_offset'];value=bytes.fromhex(ref['target_hex']);prefix=row['source_selector'];assert block[at:at+len(value)+1]==value+b'\0' and value[0]==prefix and block[at-5:at+1].hex()==row['source_complete_preamble_hex'];body=value[1:];result=ctx.execute(ns['dispatch'],prefix,body);ctx.machines.pop();assert result['resolved_actor_ID']==prefix and result['source_voice_class']=={2:3,16:1}[prefix] and result['registered_catalog_match'] is None;boundary=next(b for b in result['boundaries'] if b['kind']=='unexecuted-progressive-body');assert boundary['text_hex']==body.hex();cases.append(dict(id=row['id'],new_offset=at,target_hex=value.hex(),**result))
+    prior=next(r for r in control['source_A000_structural_cases'] if r['version']=='current');effect=spec['original_A000_map'][0];at=effect['target_offset'];raw=block[at:at+8];assert at==1324 and raw.hex()==prior['source_command_hex'];isolated=b'CS\0\1'+len(raw).to_bytes(2,'little')+bytes(2)+raw;structural=walk(ctx.arm,isolated);assert structural['error'] is None and structural['rows']==prior['rows'] and structural['opaque_effect_bridges']==prior['opaque_effect_bridges']
+    env=dict(end_case.__globals__);exec(compile(control['source_owned_seeded_end_adapter'],__file__+'::seeded-normal-end','exec'),env);end=spec['complete_end_map'][0]['target_offset'];assert end==1332 and block[end:]==bytes(4);ends=[env['end_case'](ctx.arm,block,end,previous,seed) for previous in [0,1,2,3,0xFFFFFFFF] for seed in [0,1,2,3,0xFFFFFFFF]];assert all(r['native_result'][0]==0 and r['native_result'][1]==r['initial_value_word'] for r in ends) and not ctx.machines
+    save(ROOT/'all16_final_dispatches_A00025_normal_seeded_ends.json',dict(candidate=str(ROM),candidate_sha256=sha(ROM.read_bytes()),target_block_sha256=sha(block),relocation_plan=str(PLAN),relocation_plan_sha256=sha(PLAN.read_bytes()),dispatch_cases=cases,all16_complete_preambles_voices_and_zero_macro_bodies_bound=True,zero_original_or_invented_FI_FA_FO=True,source_A000=prior,relocated_A000=structural,normal_terminal_seed_cases=ends,normal_state0_retains_existing_value_word_in_all25_cases=True,all18_commands_no_predicate_relative_typed_style_or_picture_assumptions=True,opaque_A000_effects_bridged_not_fully_explained=True,native_context_plan=str(ctx.proof_path),native_context_plan_sha256=sha(ctx.proof_path.read_bytes()),new_emulator_runs=0,new_credit=0,full_goal_complete=False));print('16 final dispatches preserve two actors/voices and zero macros; moved A000 and25 normal residual ends pass. Actual English remains pending.')

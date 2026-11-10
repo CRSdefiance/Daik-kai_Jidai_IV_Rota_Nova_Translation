@@ -1,0 +1,9 @@
+# Rafael2165 registered checkpoint and weekend package
+
+The [Rafael2165 weekend ZIP](../out/Translation_DS_Weekend_Test_2026-11-05_Rafael2165.zip) contains the registered four-route ROM `e31b85a8`, its clean-input patch, manifest and Rafael-first test notes. It adds 305 reviewed Rafael records since Rafael1860. All 687 stack entries, 114 accepted layers, eight final stages and 26 release checks passed, along with exact clean-input reconstruction and a fresh Rafael startup. Integrated total is 14,010. Continue the B181–B200 intake from 138 clean drafts. The designated main and earlier packages are preserved.
+
+The ZIP was re-read and every member hash verified. The packaged patch rebuilt the ROM byte for byte from the clean Japanese input. Exact-ROM emulator cold boot reached Rafael's opening. Physical hardware and a full playthrough remain open. [Package verification](../work/analysis/Weekend_testing_package_Rafael2165_20261105/package_verification.json). [Registered release verification](../work/analysis/Rafael2165_extended_release_verified_v1_20261105/registered_release_verification.json).
+
+The new B170–B176 batch credits 152 revisions and 38 justified retentions once. All 190 stored pages and 13 scoped nameplates passed offline and direct visual checks. The initialized emulator sequence showed 72 speeches and pages, six modal pages, all 13 nameplates and both FI substitutions. The other 118 speeches passed offline checks. Original conditional activation remains open. [Review and emulator scope](../work/analysis/Rafael_B170_B176_research_final_v1_20261105/research_completion.json).
+
+All 741 B161–B180 records are integrated. The next intake has 384 clean records. B181–B185 have 138 independent drafts, leaving 246 clean drafts and 384 current-English comparisons. Maintain Rafael and tutorial priority. Artwork and the later technical re-audit remain separate.

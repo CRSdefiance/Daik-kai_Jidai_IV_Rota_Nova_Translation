@@ -1,5 +1,19 @@
 # Integrated release-build policy
 
+## 2026-11-01 registered experimental B91-B110/names successor
+
+The current experimental candidate is
+`out/all_routes_combined_hodram_b91_b110_names_20261101_candidate.nds`, SHA-256
+`e713ab5083223feac61ba89330a1ebf6d5faea7be0f7720efc848e02d563b280`.
+Profile `all-routes-hodram-b91-b110-names-20261101` requires
+`scripts/build_integrated_release_with_owned_fields.py`;all prior canonical,
+runtime-bounds andEmilio drivers remain immutable. All656 entries/114 accepted
+layers/21 checks,exact clean-input patch andown startup pass. Main andcanonical
+construction base remain unchanged;hardware acceptance is stillrequired for
+promotion. See [the complete release contract](editorial_hodram_B91_B110_release_20261101.md).
+Counts8204 completed;next323 source-first objects remain outside this release.
+Earlier promotion sections below retain their historical meaning.
+
 ## V4725: V4701 promoted as main; B179 draft preserved
 
 V4725 promotes verified cumulative V4701 as the user-designated main build, with completed B177 and B178 following the entire V4595 stack. The registered manifest contains554 manuscript batches and114 accepted layers. A fresh clean-input patch reconstruction is byte exact;78 release/dialogue regressions pass in3.84s. Promotion changes no ROM bytes, construction baseline or accepted-layer status and adds no editorial credit, emulator run or user cold-boot claim. Coverage stays5898 completed contextual rereads,5901 source/prose reviews,3740 historical revisions/2158 retentions, route4299/4299 and zero pending credited route drafts. B179 manuscript v2 remains outside the ROM and uncredited:14 whole-exchange decisions,8 revisions/6 justified retentions, terms/current comparison complete and offline paragraph layout passing. Native planes, actual gameplay and release gates remain pending. Six Sailor lines were still Japanese in the predecessor; their technical cause is not established. Approved Sao Jorge/Wine bindings are recorded, along with separate untranslated city alias15E5D4/pointer122504 as an unresolved shared-text lead. All earlier packages, ROMs, translations, drafts, proofs, failures and complete ledger history are preserved. Graphics and the later older-record technical re-audit remain separate and open. The full editorial objective remains active.

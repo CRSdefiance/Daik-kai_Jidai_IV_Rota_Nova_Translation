@@ -1,0 +1,13 @@
+"""Reuse exact current-ROM entry proofs and freshly check resized B224 references."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import checked_text,derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B224_reference_tools_v7151')
+if __name__=='__main__':
+    assert not ROOT.exists()
+    loader={'B223':'B224','reference_v7102':'reference_v7150','loader_v7103':'loader_v7151','lil_B222_loader_v7055/whole_SC2_and_B222_initial_entry_proof':'lil_B223_loader_v7103/whole_SC2_and_B223_initial_entry_proof','V7067':'V7118','B2231384_bytes':'B2241040_bytes'}
+    census={'B223':'B224','reference_v7102':'reference_v7150','reference_census_v7104':'reference_census_v7152','loader_v7103':'loader_v7151','lil_B222_reference_census_v7056/all18_commands_no_relative_or_typed_sites_and_shipped_census':'lil_B223_reference_census_v7104/all22_commands4_relative_sites_typed_alias_predicate_staging_and_shipped_census','[223]':'[224]','block=223':'block=224','len(w)==22':'len(w)==18',
+      "len(spec['relative_skip_fixups'])==4":"len(spec['relative_skip_fixups'])==0","len(spec['target_native_skip_cases'])==20":"len(spec['target_native_skip_cases'])==0","len(spec['text_records'])==10":"len(spec['text_records'])==15","len(spec['actor_style_commands'])==1":"len(spec['actor_style_commands'])==0",'typed_actor_style_count=1,typed_relative_span_count=4,target_native_skip_cases=20':'typed_actor_style_count=0,typed_relative_span_count=0,target_native_skip_cases=0','all22_commands4_relative_sites_typed_alias_predicate_staging_and_shipped_census':'all18_commands_no_relative_or_typed_sites_and_shipped_census','all22_clean_current_target_commands_bound':'all18_clean_current_target_commands_bound','Bind all22 mapped commands':'Bind all18 mapped commands','All22 commands/four relative sites/typed aliases/one predicate/staging/normal end':'All18 commands/no relatives or typed controls/A000/C200/normal end'}
+    jobs=[('scripts/verify_lil_B223_loader_v7103.py','scripts/verify_lil_B224_loader_v7151.py',loader),('scripts/verify_lil_B223_references_v7104.py','scripts/verify_lil_B224_references_v7152.py',census)]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    rows=[derive(a,b,c) for a,b,c in jobs];ROOT.mkdir(parents=True);save(ROOT/'source_locked_loaders_and_census.json',dict(tools=rows,current_V7118_proofs_reused_only_by_exact_whole_ROM_hash=True,source18_commands_and_all_complete_preambles_opaque_C200_and_end_checked=True,all_native_high_integer_constants_and_multiplicity_preserved=True,new_credit=0,full_goal_complete=False))

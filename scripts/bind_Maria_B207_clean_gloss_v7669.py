@@ -1,0 +1,20 @@
+"""Bind every exact Japanese body/gloss while preserving the distinct CS0101 header."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/maria_B207_clean_gloss_v7669')
+SOURCE=Path('work/analysis/maria_B207_clean_v7668b/complete_clean_SC3B207_andadjacent_source_blocks_before_current_English.json')
+PRIOR=Path('work/analysis/lil_B234_clean_context_v7572/all18_clean_familiar_banter_greatgrandfather_papal_trade_andconditional_discovery_glosses_before_old_English.json')
+if __name__=='__main__':
+    assert not ROOT.exists();source,prior=map(read,[SOURCE,PRIOR]);g=next(g for g in source['groups'] if g['block']==207);block=bytes.fromhex(g['clean_block_hex']);old=bytes.fromhex(prior['clean_block_hex'])
+    diffs=[dict(offset=i,Maria=a,Lil=b) for i,(a,b) in enumerate(zip(block,old,strict=True)) if a!=b]
+    assert len(block)==len(old)==1468 and diffs==[dict(offset=2,Maria=1,Lil=0)] and block[:4]==b'CS\1\1' and old[:4]==b'CS\0\1'
+    assert source['source_only_no_current_English_compared'] and source['all_selected_source_keys_uncredited'] and len(g['records'])==len(prior['records'])==18
+    assert g['commands']==prior['commands'] and prior['all18_clean_glosses_precede_old_English'];rows=[]
+    for r,p in zip(g['records'],prior['records'],strict=True):
+        assert r['source_reference']['header_offset']==p['source_reference']['header_offset'] and r['source_hex']==p['source_hex'] and r['source_Japanese']==p['source_Japanese'] and r['source_complete_preamble_hex']==p['complete_preamble_hex']
+        assert r['source_record_index']+1==p['source_record_index']
+        row=deepcopy(r);row.update(source_gloss=p['fresh_source_gloss'],gloss_reuse_mode='exact-complete-Japanese-body-andall-native-command-bytes;distinct-script-header-preserved',prior_clean_gloss_reference=dict(path=str(PRIOR),sha256=sha(PRIOR.read_bytes()),id=p['id'],source_reference=p['source_reference']),full_exchange_context=prior['whole_exchange_context'],review=dict(source=True,context=False,localization=False,naturalness=False,formatting=False),Maria_header_semantics_current_native_voice_getter_macro_entry_anddisplay_pending=True,new_source_prose_orcompletion_credit=0);rows.append(row)
+    ROOT.mkdir(parents=True);save(ROOT/'all18_exact_Japanese_gloss_bindings_distinct_CS0101_before_current_English.json',dict(source_inventory=str(SOURCE),source_inventory_sha256=sha(SOURCE.read_bytes()),source_ROM=source['source_ROM'],source_ROM_sha256=source['source_ROM_sha256'],clean_ARM9_sha256=source['clean_ARM9_sha256'],file_path='/data/SC3.DK4',block=207,clean_block_hex=block.hex(),clean_block_sha256=sha(block),clean_stored_bytes=1468,clean_logical_end=1468,clean_tail_bytes=0,complete_original_header_hex=block[:8].hex(),exact_difference_from_prior_clean_B234=diffs,all20_source_commands=deepcopy(g['commands']),records=rows,whole_exchange_context=prior['whole_exchange_context'],all18_source_gloss_bindings_precede_current_English=True,all18_glosses_exact_Japanese_reuse_not_fresh_authoring_orEnglish_derived=True,entire_clean_exchange_reread_inorder_withneighbors_before_reuse=True,complete_CS0101_header_not_normalized_to_CS0001=True,header_native_effect_andcaller_eligibility_not_inferred_from_body_equality=True,opening_silence_required_even_though_legacy_metadata_omitted_it=True,SC3_record_IDs_shift_byone_due_only_to_preserved_header_null_count=True,names_roles_Filippo_alias_anditem106_scope_require_own_consumers=True,no_automatic_other_route_current_English_orlayout_orrelease_approval=True,original_A0001456_raw00a0ffff6a000110_andnormal_four_byte_end1464_preserved=True,current_English_body_unread=True,new_credit=0,evidence={str(p):sha(p.read_bytes()) for p in [SOURCE,PRIOR,Path(__file__)]},full_goal_complete=False))
+    print('All18 complete Maria Japanese speeches bound to exact prior glosses before current English. Onlyclean byte2 differs:CS0101 preserved,IDs one lower. Header/route/runtime/display need own proofs;zero credit.')

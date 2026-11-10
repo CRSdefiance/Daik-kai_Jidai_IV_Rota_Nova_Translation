@@ -1,0 +1,26 @@
+"""Seal viewed actual pages and honest later scope; keep formal formatter and release gates pending."""
+from pathlib import Path
+from PIL import Image
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B209_actual_view_v6477')
+ACTUAL=Path('work/analysis/lil_B209_actual_v6474/six_English_objects_eight_native_pages24_commands_and_source_differences.json')
+LATER=Path('work/analysis/lil_B209_later_v6475/all187_later_differences_original_final_getters_and_honest_scope.json')
+if __name__=='__main__':
+    assert not ROOT.exists();d,l=read(ACTUAL),read(LATER);source=read(d['source_actual_proof']);assert l['actual_proof_sha256']==sha(ACTUAL.read_bytes())
+    sheets=d['review_sheets']+d['transition_sheets']+[l['review_sheet']];assert len(sheets)==4
+    for s in sheets:assert sha(Path(s['path']).read_bytes())==s['sha256']
+    assert d['actual_unique_objects']==6 and d['actual_complete_native_pages']==8 and d['complete_native_body_holds']==d['complete_native_name_holds']==25 and not d['failures'] and not d['command_result_differences'] and not d['command_UI_word_differences']
+    assert [len(d[k]) for k in ['command_timing_differences','command_RNG_differences','command_duration_changes','later_same_frame_RGB_differences']]==[12,12,2,187]
+    assert len(l['broader_later_differences'])==187 and not l['prompt_bounded_differences'] and [d['source_exit_frame'],d['English_exit_frame']]==[4294,4774]
+    pairs=[];differences=[]
+    for panel in d['actual_panels']:
+        jp=next(p for p in source['actual_panel_observations'] if p['interval']['source_offset']==panel['source_offset']);photo=jp['selected_capture'];sp=Path(photo['path']);assert sha(sp.read_bytes())==photo['PNG_sha256'];source_image=Image.open(sp).convert('RGB')
+        for page,holds in enumerate(panel['actual_complete_page_holds'],start=1):
+            for h in holds:
+                ep=Path(h['capture']);assert sha(ep.read_bytes())==h['sha256'];english=Image.open(ep).convert('RGB');a,b=source_image.crop((0,0,256,272)),english.crop((0,0,256,272));equal=a.tobytes()==b.tobytes();entry=dict(id=panel['id'],page=page,source_frame=photo['frame'],English_frame=h['frame'],source_capture=str(sp),source_sha256=photo['PNG_sha256'],English_capture=str(ep),English_sha256=h['sha256'],region=[0,0,256,272],upper_scene_portrait_and_surroundings_equal=equal,semantic_command_pair_not_same_frame_or_retimed_capture=True)
+                pairs.append(entry)
+                if not equal:differences.append(entry)
+    assert len(pairs)==25
+    ROOT.mkdir(parents=True);save(ROOT/'eight_actual_pages25_complete_holds_names_returns_and_later_scope_viewed.json',dict(actual_proof=str(ACTUAL),actual_proof_sha256=sha(ACTUAL.read_bytes()),later_proof=str(LATER),later_proof_sha256=sha(LATER.read_bytes()),viewed_sheets=sheets,visual_review_pending=False,all_eight_actual_pages_and_complete_native_names_viewed=True,both_long_letter_original_A_continuations_full_first_final_glyphs_and6px_continuation_guard_indent_preserved=True,signature_separate_three_row_footer_readable_without_blank_page=True,source_Japanese_coastal_sender_scene_and_English_letter_portrait_retained=True,upper_scene_and_portrait_semantic_pairs=pairs,upper_scene_and_portrait_differences=differences,no_same_frame_or_whole_RGB_equivalence_claim_from_semantic_pairs=True,all25_complete_body_and_style11_name_holds_match_independent_native_models=True,no_clipped_missing_duplicate_or_extra_blank_native_page_observed=True,source4_speeches2_style_objects_and_English_same6_objects8_pages_not_all20=True,Jam_R65_and13_other_stored_alternatives_native_only_not_actual_gameplay=True,all24_visited_commands_original_paths_results_and_UI_words_agree=True,source_predicate_type2_Boolean0_and20_relocated_relative_cases_preserved=True,source_exit4294_English_exit4774_normal_English_port4870_viewed=True,following_B120_ends_source9096_English9576=True,final_source_Arnhem_notice_English_unobstructed_sailing_difference_viewed=True,all12timing12RNG_two_duration187_broader_RGB_differences_retained=True,later_first_middle_final_pairs_show_different_menu_progression_calendar_weather_and_notice_state=True,final_state_tasks_cash34900_agree_other_groups_actor_and_PRNG_differ=True,final_PRNG_seeds=l['final_PRNG_seeds'],final_calendar_ticks=[v['components']['calendar']['ticks'] for v in l['native_values']],both_original_D0_fallbacks_remain151=True,no_broad_final_RAM_future_simulation_or_complete_causal_equivalence_claim=True,later_older_record_technical_reaudit_retains_all_measured_differences=True,natural_event209_dependency85_location_earned_progress_full_effects_routes_hardware_unclaimed=True,English_session95798_and_source40304_terminal_reaped=True,no_new_boot_pixel_mask_edit_retiming_or_editorial_credit=True,formal_source_bound_profile_QA_negative_controls_manuscript_gate_and_registered_release_still_pending=True,new_review_credit=0,evidence={str(p):sha(p.read_bytes()) for p in [ACTUAL,LATER,Path(__file__)]},full_goal_complete=False))
+    print(dict(viewed_actual_sheets=4,complete_pages=8,complete_holds=25,upper_portrait_semantic_pairs=25,upper_portrait_differences=len(differences),timing=12,RNG=12,durations=2,later_broader_RGB=187,profile_atomic_release_pending=True))
