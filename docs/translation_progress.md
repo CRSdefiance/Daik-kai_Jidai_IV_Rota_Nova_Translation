@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B299–B311 has 278 source-first drafts and exact contextual comparisons across 13 exchanges. There are 170 proposed revisions and 108 justified retentions. The registered Lil361 text is bound using byte-identical runtime and block evidence. Final names and terminology, review gates, formatting, gameplay and integration are pending. The ledger has 25,105 completed reviews and 793 remaining native Lil records.
+
+Continue from [editorial_Lil278_contextual_20261110](editorial_Lil278_contextual_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B283–B298 is registered and credited once:361 contextual reviews,178 revisions,183 justified retentions and15 scoped names. All353 body pages,nine captions and19 name strings pass; nine layouts improve,including one FE extra blank row,without changing prose. Three primary emulator samples observe199 bodies/200 unique pages,one page turn,15 FE returns andfour menus;153 personality alternatives remain offline-only. One focused longer-tail replay verifies the unchanged host exit; four runs total86,324 frames/242 page occurrences/22 viewed sheets. The728-entry/114-layer candidate passes63 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 fresh tests. Integrated25,105;native Lil remainder793. Testing ROM/patch ready;main awaits acceptance;full goal active;no worker live.
 
 Continue from [editorial_Lil361_registered_20261110](editorial_Lil361_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
