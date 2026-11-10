@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B299–B311 is registered and credited once. The cumulative Lil278 candidate adds 278 reviews, including 170 revisions and 108 retentions. The clean-input patch reconstructs it exactly. Own startup, 24 protected getters, 64 release checks and 27 repository tests passed. The ledger credits 25,383 reviews, with 515 native Lil positions remaining.
+
+Continue from [editorial_Lil278_registered_20261110](editorial_Lil278_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B299–B311 passed all five review gates for 278 records and ten scoped names. Stored checks covered all 280 pages, 272 native lookups and 670 relocated branch cases. A focused cold-boot sample displayed 52 bodies and all six captions. The batch is ready for registered integration and the ledger still credits 25,105 reviews.
 
 Continue from [editorial_Lil278_stored_gameplay_20261110](editorial_Lil278_stored_gameplay_20261110.md). Reuse the completed checks; earlier entries below are historical.
