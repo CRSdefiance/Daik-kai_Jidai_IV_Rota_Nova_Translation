@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B312–B319 has 254 clean-source drafts and individual contextual comparisons across eight exchanges. The comparison ledger records 151 proposed revisions and 103 justified retentions. Native name and control references are bound. Final terminology, prose gates and display checks remain pending. The ledger still credits 25,383 reviews.
+
+Continue from [editorial_Lil254_contextual_20261110](editorial_Lil254_contextual_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B299–B311 is registered and credited once. The cumulative Lil278 candidate adds 278 reviews, including 170 revisions and 108 retentions. The clean-input patch reconstructs it exactly. Own startup, 24 protected getters, 64 release checks and 27 repository tests passed. The ledger credits 25,383 reviews, with 515 native Lil positions remaining.
 
 Continue from [editorial_Lil278_registered_20261110](editorial_Lil278_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
