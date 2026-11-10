@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil361 offline display review passes: 352 bodies/353 pages, 1,408 selected native alignments, 177 personality alternatives, nine captions and 19 name strings. Every final page and menu/name sheet is directly viewed. Nine layouts improve without changing prose, including an observed FE extra blank row; all 178 revisions/183 retentions remain. Storage, representative gameplay, fifth gates and registered integration remain pending; zero new credit. Integrated reviews remain 24,744; testing ROM/main unchanged; full goal active; no worker live.
+
+Continue from [editorial_Lil361_offline_display_20261110](editorial_Lil361_offline_display_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil361 B283–B298 has complete contextual prose decisions:178 proposed revisions,183 justified retentions and15 scoped name reviews. All first four individual gates pass;fifth gates remain false. Source/current bindings,roles,terms and20 native macro preflights pass. The provisional352-body/353-page plan has zero errors orwarnings;one page boundary improves without changing prose;nine captions remain separate. Native/visual/storage/representative gameplay andregistered integration remain. No new ROM orcredit;24,744 integrated. The pushed v4 testing candidate andmain are unchanged;full goal active,no worker live.
 
 Continue from [editorial_Lil361_prose_plan_20261110](editorial_Lil361_prose_plan_20261110.md). Reuse the completed checks; earlier entries below are historical.
