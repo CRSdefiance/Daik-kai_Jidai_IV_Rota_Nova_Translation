@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil269 offline display review passes: 262 bodies/264 pages, 1,048 selected alignments, 16 style alternatives, seven captions and 24 name strings. Every final page and menu/name sheet is directly viewed. The B251 riddle truncation is fixed with the qualified source-scoped FE reserve; 16 final layouts change and one page is reclaimed. All 269 contextual prose decisions remain 104 revisions/165 retentions. Storage, representative gameplay, fifth gates and registered integration remain pending; zero new credit. Integrated24,475; testing ROM/main unchanged; full goal active; no worker live.
+
+Continue from [editorial_Lil269_offline_display_20261110](editorial_Lil269_offline_display_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Fresh cumulative promotion candidate prepared from the exact clean-input patch: 726 entries, 114 accepted layers, 61 release checks and 27 fresh repository tests pass. ROM remains byte-identical to registered Lil382; 24,475 integrated. Pending Lil269 now has a zero-warning 262-body/264-page plan, 56 completed native body receipts, passing style/menu/name checks and directly viewed menu/name sheets. The B251 FE complete-consumption failure remains unresolved; body visual/storage/gameplay/release gates stay pending. Pending work is preserved and excluded from the ROM. No new credit, main promotion or new gameplay claim; full goal active.
 
 Continue from [editorial_promotion_candidate_20261110_v2](editorial_promotion_candidate_20261110_v2.md). Reuse the completed checks; earlier entries below are historical.
