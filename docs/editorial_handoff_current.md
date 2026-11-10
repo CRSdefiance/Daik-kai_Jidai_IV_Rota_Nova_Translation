@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Fresh cumulative promotion/testing copy prepared from the exact clean-input patch: 727 entries, 114 accepted layers, 62 registered release checks and 27 fresh repository tests pass. ROM is byte-identical to registered Lil269; integrated reviews remain 24,744. Lil361 B283–B298 source intake and reading checkpoint are archived separately with zero new credit; all five gates remain pending. Main awaits cold-boot acceptance. Full goal remains active; no worker is live.
+
+Continue from [editorial_promotion_candidate_20261110_v4](editorial_promotion_candidate_20261110_v4.md). Reuse completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B243–B282 is registered and credited once:269 contextual reviews,104 revisions,165 justified retentions and25 scoped names. All264 body pages,seven captions and24 name strings pass. Sixteen layouts change,one page is reclaimed and the riddle truncation is fixed. Three initialized emulator samples observe139 bodies/141 pages,two page turns,21 FE returns and allthree menus;123 bodies remain offline-only. The cumulative727-entry/114-layer candidate passes62 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 repository tests. Integrated24,744;native Lil remainder1,154. Testing ROM/patch ready;main awaits acceptance;full goal active;no worker live.
 
 Continue from [editorial_Lil269_registered_20261110](editorial_Lil269_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
