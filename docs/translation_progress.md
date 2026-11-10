@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil residual A has all 382 contextual prose decisions: 257 proposed revisions, 125 justified retentions and 34 scoped name reviews. All first four individual gates pass; fifth gates remain false. Fresh plans cover 378 bodies/386 pages plus four captions, with zero errors, warnings or failures; 14 layouts change and five pages are reclaimed offline. Native rendering, every-page visual review, storage, representative gameplay and registered integration remain pending. No new ROM or completion credit; 24,093 integrated. The registered Maria315 promotion candidate and main remain unchanged; the full goal stays active.
+
+Continue from [editorial_Lil382_prose_layout_20261110](editorial_Lil382_prose_layout_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Promotion-ready Maria315 testing ROM reconstructed exactly from the clean-input patch; 725 entries, 114 accepted layers and 60 release checks preserved; 27 fresh repository tests pass. The integrated total remains 24,093. Lil residual A has 382 sealed meanings/drafts in 30 complete source groups, 364 current speech bindings and 34 scoped actors/68 getters; contextual comparisons and all five gates remain pending. No Lil382 text is shipped or credited. Main awaits user acceptance; the full goal remains active.
 
 Continue from [editorial_promotion_Maria315_Lil382_checkpoint_20261110](editorial_promotion_Maria315_Lil382_checkpoint_20261110.md). Reuse the completed checks; earlier entries below are historical.
