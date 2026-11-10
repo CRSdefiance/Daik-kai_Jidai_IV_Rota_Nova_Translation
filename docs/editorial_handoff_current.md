@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B299–B311 passed all five review gates for 278 records and ten scoped names. Stored checks covered all 280 pages, 272 native lookups and 670 relocated branch cases. A focused cold-boot sample displayed 52 bodies and all six captions. The batch is ready for registered integration and the ledger still credits 25,105 reviews.
+
+Continue from [editorial_Lil278_stored_gameplay_20261110](editorial_Lil278_stored_gameplay_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B299–B311 passed offline display review for 272 bodies, 280 pages, six menu captions and 11 name strings. The final plan improves 25 layouts from the first pass and preserves all prose. Stored reconstruction, representative gameplay and registration remain pending. The integrated total remains 25,105 and Lil361 is still the promotion candidate.
 
 Continue from [editorial_Lil278_offline_display_20261110](editorial_Lil278_offline_display_20261110.md). Reuse the completed checks; earlier entries below are historical.
