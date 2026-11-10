@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Promotion-ready Maria315 testing ROM reconstructed exactly from the clean-input patch; 725 entries, 114 accepted layers and 60 release checks preserved; 27 fresh repository tests pass. The integrated total remains 24,093. Lil residual A has 382 sealed meanings/drafts in 30 complete source groups, 364 current speech bindings and 34 scoped actors/68 getters; contextual comparisons and all five gates remain pending. No Lil382 text is shipped or credited. Main awaits user acceptance; the full goal remains active.
+
+Continue from [editorial_promotion_Maria315_Lil382_checkpoint_20261110](editorial_promotion_Maria315_Lil382_checkpoint_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Maria B286–B302 isregistered andcredited once:315 contextual reviews,162 revisions,153 justified retentions and14 scoped names. All309 body pages,six captions and18 name strings pass. Seven layouts improve andone page isreclaimed. Four initialized emulator samples observe213 bodies/pages,allthree menus,13 FE returns andfour sailing returns;96 body variants areoffline-only. The cumulative725-entry/114-layer candidate passes60 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 repository tests. Integrated24,093. Native Maria census5129/5129;Lil1,805 andseparate shared/player-facing scope remain. Main awaits acceptance;fullgoalactive,no worker live.
 
 Continue from [editorial_Maria315_B286_B302_registered_20261110](editorial_Maria315_B286_B302_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
