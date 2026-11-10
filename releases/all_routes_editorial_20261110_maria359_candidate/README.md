@@ -1,0 +1,13 @@
+# Combined editorial candidate — November 10, 2026
+
+Ready for testing and promotion acceptance. This cumulative candidate includes every accepted layer through Maria B253–B274, earlier Rafael/tutorial work, the Market Trade-screen fix, speaker-name work andthe registered ASCII right-bound correction. Main remains V4701 pending acceptance. No ROM is distributed in this GitHub package.
+
+Apply `translation.xdelta` to the clean Japanese ROM with SHA256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected output SHA256: `138381bddbe8b393f0912189aad0b0698e468bec28333230e16bed24cfeb2d25`. Patch SHA256: `44bd04ad6b0bbf3b5a2b53268d8b75f7bfb43a65d5bee51f6522636e7fa265fd`. Reconstruction is verified byte for byte. The local test ROM and adjacent manifest areat `work\maria359_B253_B274_release_v1\all_routes_maria359_B253_B274_candidate.nds`.
+
+The manifest contains723 entries,114 accepted layers and58 passing release checks. This batch adds359 contextual reviews:219 revisions and140 justified retentions,with18 scoped name reviews. All350 final body pages,ten captions and21 name strings were visually reviewed;34 final layouts improve,one page is reclaimed andthree mixed-width text glyphs are corrected. Three disclosed initialized emulator samples verify164 bodies/165 pages,allfive menus/ten captions,one page turn,eleven FE returns andthree sailing returns. The185 remaining bodies have offline native/stored checks only. The candidate's own31,000-frame startup reaches Hangzhou;both original getters pass for12 protected actors. Hardware andexhaustive natural progression are untested.
+
+The ledger credits23,429 contextual reviews. Native story remainder:2,469 objects (Maria664;Lil1,805),plus separate shared/player-facing scope. The full editorial goal remains active. No guide photos are collected. Deferred artwork andthe later older-record technical re-audit remain separate. See [the current checkpoint](../../docs/editorial_Maria359_B253_B274_registered_20261110.md) for exact scope andevidence.
+
+The two gzip files preserve exact build-time manifest andregistry bytes. `verification/` contains release,startup,getter,gameplay,offline-display andtally-correction proofs. All27 selected repository tests pass after rerunning two temporary-directory setup errors. Eight production scope mutations are rejected. Earlier ROMs,drafts,translations,evidence andfailed historical producers are preserved. A historical informational35-layout tally is corrected to34 by `final_layout_delta_v1.json`;no text orROM change is involved.
+
+The coverage ledger uses Git LFS. Run `git lfs pull` after cloning to obtain its exact hydrated bytes. The clean-input patch reconstructs the ROM without historical work-folder artifacts.
