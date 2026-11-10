@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil residual A is registered and credited once: 382 contextual reviews, 257 revisions, 125 justified retentions and 34 scoped names. All 386 body pages, four captions and 42 name strings pass. Thirty layouts improve and five pages are reclaimed. Three initialized emulator samples observe 211 bodies/217 pages, six page turns, two FE returns and both default menu returns; 167 bodies remain offline-only. The cumulative 726-entry/114-layer candidate passes 61 release checks, exact clean-input reconstruction, own startup, 24 protected getters and 27 repository tests. Integrated 24,475; native Lil remainder 1,423. The test ROM and patch package are ready. Main awaits acceptance; full editorial goal remains active; no worker is live.
+
+Continue from [editorial_Lil382_registered_20261110](editorial_Lil382_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil residual A has all 382 contextual prose decisions: 257 proposed revisions, 125 justified retentions and 34 scoped name reviews. All first four individual gates pass; fifth gates remain false. Fresh plans cover 378 bodies/386 pages plus four captions, with zero errors, warnings or failures; 14 layouts change and five pages are reclaimed offline. Native rendering, every-page visual review, storage, representative gameplay and registered integration remain pending. No new ROM or completion credit; 24,093 integrated. The registered Maria315 promotion candidate and main remain unchanged; the full goal stays active.
 
 Continue from [editorial_Lil382_prose_layout_20261110](editorial_Lil382_prose_layout_20261110.md). Reuse the completed checks; earlier entries below are historical.
