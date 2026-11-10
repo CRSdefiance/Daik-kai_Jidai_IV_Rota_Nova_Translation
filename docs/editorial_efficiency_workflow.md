@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+The Lil361 promotion candidate was reconstructed from the clean Japanese ROM and matched the registered image byte for byte. It includes the Market Trade-screen fix and 25,105 integrated reviews. Lil B299–B311 has 278 contextual prose decisions and a provisional layout plan. Native display, visual, stored and gameplay checks remain before registration. Main V4701 awaits cold-boot acceptance.
+
+Continue from [editorial_Lil361_promotion_Lil278_prose_20261110](editorial_Lil361_promotion_Lil278_prose_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B299–B311 has 278 source-first drafts and exact contextual comparisons across 13 exchanges. There are 170 proposed revisions and 108 justified retentions. The registered Lil361 text is bound using byte-identical runtime and block evidence. Final names and terminology, review gates, formatting, gameplay and integration are pending. The ledger has 25,105 completed reviews and 793 remaining native Lil records.
 
 Continue from [editorial_Lil278_contextual_20261110](editorial_Lil278_contextual_20261110.md). Reuse the completed checks; earlier entries below are historical.
