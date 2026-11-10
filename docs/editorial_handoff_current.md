@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Fresh cumulative promotion candidate prepared from the exact clean-input patch: 726 entries, 114 accepted layers, 61 release checks and 27 fresh repository tests pass. ROM remains byte-identical to registered Lil382; 24,475 integrated. Pending Lil269 now has a zero-warning 262-body/264-page plan, 56 completed native body receipts, passing style/menu/name checks and directly viewed menu/name sheets. The B251 FE complete-consumption failure remains unresolved; body visual/storage/gameplay/release gates stay pending. Pending work is preserved and excluded from the ROM. No new credit, main promotion or new gameplay claim; full goal active.
+
+Continue from [editorial_promotion_candidate_20261110_v2](editorial_promotion_candidate_20261110_v2.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 The next269 Lil B243–B282 records have complete contextual prose decisions:104 proposed revisions,165 justified retentions and25 scoped name reviews. All first four individual gates pass; fifth gates remain false. Exact current bindings,roles,terms and20 native macro preflights pass. The provisional262-body/265-page plan has two unresolved weak-ending warnings andthree multipage boundaries to inspect;seven captions are separate. Native/visual/storage/representative gameplay andintegration remain. No new ROM orcredit;24,475 integrated. The pushed Lil382 testing candidate andmain are unchanged;full goal active,no worker live.
 
 Continue from [editorial_Lil269_prose_plan_20261110](editorial_Lil269_prose_plan_20261110.md). Reuse the completed checks; earlier entries below are historical.
