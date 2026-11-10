@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B312–B319 passed all five review gates for 254 records and ten scoped names. Stored verification covers 251 pages, and the initialized Lil emulator sample displayed 53 bodies, 58 pages and all eight captions. The batch is ready for cumulative registration. The ledger still credits 25,383 reviews.
+
+Continue from [editorial_Lil254_gameplay_20261110](editorial_Lil254_gameplay_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
+Lil B312–B319 passed offline review of all 251 dialogue pages, eight captions and 13 name strings. The eight groups passed stored reconstruction and the original SC2 loaders. The FE alert blank row and double period after the company substitution are fixed. Representative gameplay approval and registration remain. The ledger credits 25,383 reviews.
+
+Continue from [editorial_Lil254_stored_20261110](editorial_Lil254_stored_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Reconstructed the Lil278 promotion candidate from the clean-input patch and matched the registered ROM byte for byte. The next 254 Lil records pass the four prose gates. Three menus and 13 name strings passed offline display checks. The native body run passed 161 records before the B316R205 row check failed. The integrated total remains 25,383.
 
 Continue from [editorial_Lil278_promotion_Lil254_checkpoint_20261110](editorial_Lil278_promotion_Lil254_checkpoint_20261110.md). Reuse the completed checks; earlier entries below are historical.
