@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-10
 
+Maria315 B286–B302 has315 contextual comparisons:162 proposed revisions,153 justified retentions and14 scoped names;allfirst four prose gates pass. Fresh native checks pass309 bodies/309 pages/1236 alignments,17 styles/136 slots,6 captions and18 name strings. Direct visual,stored/gameplay,fifth gates andintegration remain pending. A fresh clean-input reconstruction ofthe fully registered Maria349 candidate isready for user testing;724 entries/114 layers/59 checks and27 fresh repository tests pass. Main awaits acceptance;23778 integrated,full goal active,no worker live.
+
+Continue from [editorial_Maria315_native_and_promotion_candidate_20261110](editorial_Maria315_native_and_promotion_candidate_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
+The final315 unreviewed native Maria story objects are selected across17 complete groups B286–B302: 196 ordinary bodies,113 physical personality alternatives and6 captions. All315 clean meanings and independent English drafts were sealed before current-English extraction. Current ordinary/style/menu text,13 scoped actors/26 getters,default macros and119 dynamic-role references are bound. Contextual comparisons,names/terms review andallfive individual gates remain pending. No new ROM orcredit;23,778 integrated,the registered fd825d4d candidate andmain areunchanged. No worker islive.
+
+Continue from [editorial_Maria315_B286_B302_clean_bindings_20261110](editorial_Maria315_B286_B302_clean_bindings_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Maria B275–B285 is registered and credited once:349 contextual reviews,184 revisions,165 justified retentions and19 scoped names. All347 body pages,eight captions and21 name strings pass. Three initialized emulator samples observe191 bodies/193 pages,allthree menus,two page turns,seven FE returns andthree sailing returns. Ten final layouts improve andthree pages are reclaimed. The cumulative724-entry/114-layer candidate passes59 release checks,exact clean-input reconstruction,own startup and24 protected getters. Integrated23,778;2,120 native story objects remain (Maria315;Lil1,805). Main awaits acceptance;full editorial scope remains active.
 
 Continue from [editorial_Maria349_B275_B285_registered_20261110](editorial_Maria349_B275_B285_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
