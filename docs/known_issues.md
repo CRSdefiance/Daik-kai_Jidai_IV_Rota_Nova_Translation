@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B243–B282 is registered and credited once:269 contextual reviews,104 revisions,165 justified retentions and25 scoped names. All264 body pages,seven captions and24 name strings pass. Sixteen layouts change,one page is reclaimed and the riddle truncation is fixed. Three initialized emulator samples observe139 bodies/141 pages,two page turns,21 FE returns and allthree menus;123 bodies remain offline-only. The cumulative727-entry/114-layer candidate passes62 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 repository tests. Integrated24,744;native Lil remainder1,154. Testing ROM/patch ready;main awaits acceptance;full goal active;no worker live.
+
+Continue from [editorial_Lil269_registered_20261110](editorial_Lil269_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil269 offline display review passes: 262 bodies/264 pages, 1,048 selected alignments, 16 style alternatives, seven captions and 24 name strings. Every final page and menu/name sheet is directly viewed. The B251 riddle truncation is fixed with the qualified source-scoped FE reserve; 16 final layouts change and one page is reclaimed. All 269 contextual prose decisions remain 104 revisions/165 retentions. Storage, representative gameplay, fifth gates and registered integration remain pending; zero new credit. Integrated24,475; testing ROM/main unchanged; full goal active; no worker live.
 
 Continue from [editorial_Lil269_offline_display_20261110](editorial_Lil269_offline_display_20261110.md). Reuse the completed checks; earlier entries below are historical.
