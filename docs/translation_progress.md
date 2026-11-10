@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil361 B283–B298 has complete contextual prose decisions:178 proposed revisions,183 justified retentions and15 scoped name reviews. All first four individual gates pass;fifth gates remain false. Source/current bindings,roles,terms and20 native macro preflights pass. The provisional352-body/353-page plan has zero errors orwarnings;one page boundary improves without changing prose;nine captions remain separate. Native/visual/storage/representative gameplay andregistered integration remain. No new ROM orcredit;24,744 integrated. The pushed v4 testing candidate andmain are unchanged;full goal active,no worker live.
+
+Continue from [editorial_Lil361_prose_plan_20261110](editorial_Lil361_prose_plan_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B243–B282 is registered and credited once:269 contextual reviews,104 revisions,165 justified retentions and25 scoped names. All264 body pages,seven captions and24 name strings pass. Sixteen layouts change,one page is reclaimed and the riddle truncation is fixed. Three initialized emulator samples observe139 bodies/141 pages,two page turns,21 FE returns and allthree menus;123 bodies remain offline-only. The cumulative727-entry/114-layer candidate passes62 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 repository tests. Integrated24,744;native Lil remainder1,154. Testing ROM/patch ready;main awaits acceptance;full goal active;no worker live.
 
 Continue from [editorial_Lil269_registered_20261110](editorial_Lil269_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
