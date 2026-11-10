@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Maria B286–B302 isregistered andcredited once:315 contextual reviews,162 revisions,153 justified retentions and14 scoped names. All309 body pages,six captions and18 name strings pass. Seven layouts improve andone page isreclaimed. Four initialized emulator samples observe213 bodies/pages,allthree menus,13 FE returns andfour sailing returns;96 body variants areoffline-only. The cumulative725-entry/114-layer candidate passes60 release checks,exact clean-input reconstruction,own startup,24 protected getters and27 repository tests. Integrated24,093. Native Maria census5129/5129;Lil1,805 andseparate shared/player-facing scope remain. Main awaits acceptance;fullgoalactive,no worker live.
+
+Continue from [editorial_Maria315_B286_B302_registered_20261110](editorial_Maria315_B286_B302_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Maria315 B286–B302 has315 contextual comparisons:162 proposed revisions,153 justified retentions and14 scoped names;allfirst four prose gates pass. Fresh native checks pass309 bodies/309 pages/1236 alignments,17 styles/136 slots,6 captions and18 name strings. Direct visual,stored/gameplay,fifth gates andintegration remain pending. A fresh clean-input reconstruction ofthe fully registered Maria349 candidate isready for user testing;724 entries/114 layers/59 checks and27 fresh repository tests pass. Main awaits acceptance;23778 integrated,full goal active,no worker live.
 
 Continue from [editorial_Maria315_native_and_promotion_candidate_20261110](editorial_Maria315_native_and_promotion_candidate_20261110.md). Reuse the completed checks; earlier entries below are historical.

@@ -1,0 +1,63 @@
+{
+  "config": "translations\\maria315_editorial_release_v1.json",
+  "config_sha256": "d481e6b7124fc013c69b57bf3824988e81482a37731075c1ddd67374f492e320",
+  "cases": [
+    {
+      "case": "wrong-predecessor",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: complete ordered predecessor",
+      "input_sha256": "e018ac7c427c6a33d7da08264c072a5ffb3ce856b6f67c3a0c725e575ca3db7c"
+    },
+    {
+      "case": "missing-record",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: complete unique membership",
+      "input_sha256": "e57ddb5e37fa32c8ce4832c0722eaeea5743b174f06465e74dbda2921d1ecd20"
+    },
+    {
+      "case": "wrong-speech-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "c336131d37d0b30a3ed83b0930b168f1e4c5bb73730eb728552e3d986ce1edc6"
+    },
+    {
+      "case": "wrong-caption-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "c5eb4f5f3e87b76d3e2f6c51ebbf0b2152a208918cbd2dff14b38ab17132ecc1"
+    },
+    {
+      "case": "wrong-style-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "c0fe03acdc5f7f522b71974f7f6f9795cb90489900c069ba46cd29946cc760c8"
+    },
+    {
+      "case": "unowned-block",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: changed versus control-only blocks",
+      "input_sha256": "1d801f14f0c14a358d22ee1207a629d058f6acf1e45652994a9194fde14f356e"
+    },
+    {
+      "case": "missing-scoped-name",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed source/native scope",
+      "input_sha256": "c4fe64e420efe8ba0296ba4adeb766f5771cdc2f14d70263ff0e513d94a3e566"
+    },
+    {
+      "case": "wrong-captain",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: route and no new continuation controls",
+      "input_sha256": "0f719692737488eabf49a6c247735e964b58949fb09dfef4248feeb1c2b47b20"
+    }
+  ],
+  "all8_production_scope_mutations_rejected": true,
+  "complete_parent_andbaseline_callers_unchanged": true,
+  "original_menu_anddisplay_rejections_bound_to_exact_proofs": true,
+  "new_credit": 0,
+  "evidence": {
+    "translations\\maria315_editorial_release_v1.json": "d481e6b7124fc013c69b57bf3824988e81482a37731075c1ddd67374f492e320",
+    "work\\Maria_B286_B302_clean_20261110\\registered_preparation_v1\\qualification.json": "53d8caf82e9d0fbd29c320e870490fd6a8746d13c0c66ca0a79230e4dc9a8b8f",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\qualify_maria315_registered_v1.py": "82c617a546c00e40bcdc3f8af35ab1190373fdd43446749a2ade4eff01f8697a"
+  }
+}
