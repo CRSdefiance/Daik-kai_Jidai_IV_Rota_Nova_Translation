@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Prepared v5 cumulative testing candidate from the exact registered clean-input patch: 727 entries, 114 accepted layers, 62 release checks and 27 fresh tests pass; byte-identical to registered Lil269/v4. Lil361 stored reconstruction passes all353 pages,352 native lookups,875 branch cases,336 loads and672 handoffs. Three initialized emulator runs bind199 bodies/200 pages to complete body/header pixels; direct gameplay visual, menu/transition approval, fifth gates and registration remain pending. Pending361 is preserved and excluded; 24,744 integrated,zero new credit. Main awaits cold-boot acceptance; full goal active,no worker live.
+
+Continue from [editorial_promotion_candidate_20261110_v5](editorial_promotion_candidate_20261110_v5.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil361 offline display review passes: 352 bodies/353 pages, 1,408 selected native alignments, 177 personality alternatives, nine captions and 19 name strings. Every final page and menu/name sheet is directly viewed. Nine layouts improve without changing prose, including an observed FE extra blank row; all 178 revisions/183 retentions remain. Storage, representative gameplay, fifth gates and registered integration remain pending; zero new credit. Integrated reviews remain 24,744; testing ROM/main unchanged; full goal active; no worker live.
 
 Continue from [editorial_Lil361_offline_display_20261110](editorial_Lil361_offline_display_20261110.md). Reuse the completed checks; earlier entries below are historical.
