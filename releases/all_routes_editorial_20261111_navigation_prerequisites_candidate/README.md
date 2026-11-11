@@ -1,0 +1,7 @@
+# All Routes Auto Move candidate
+
+Use `out/navigation_prerequisites_registered_20261111_v1/Translation_DS_All_Routes_Navigation_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `c2dcf13e2a035d697a15828277223a918845bfbe115e85ce2a4e764b956a6eaa` byte for byte. Patch SHA-256 is `e1ab59063ce37335d2a4a9a55fc67f728b11fc67187c37a5d10ea87f895afc7f`.
+
+The 24 Auto Move warnings are registered. The ledger now credits 26,244 reviews. This batch includes 23 revisions and one justified retention. The missing Surveyor and missing route now appear as complete independent warnings. The Captain's Cabin requests preserve the address and use two readable lines. All 24 native pages, 75 cumulative release checks, and 30 targeted tests passed. Promotion awaits acceptance.
+
+The normal Ceuta replay displayed the missing Surveyor warning. The focused Stockholm replay used a temporary instruction to select the Captain's Cabin warning. Both matched the complete native lettering and returned to the original confirmation. Route failure and the other voice alternatives passed offline. The candidate passed its own 31,000-frame startup and 24 protected name getters. [Gameplay verification](verification/navigation_gameplay_verification.json) · [Registered review](verification/registered_review.json)

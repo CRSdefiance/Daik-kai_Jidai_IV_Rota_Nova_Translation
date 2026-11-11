@@ -1,5 +1,31 @@
 # Current editorial checkpoint - 2026-11-11
 
+Sera’s four room-assignment reactions are registered. The ledger now credits 26,315 reviews.
+
+The [Sera Assignment promotion candidate](../out/promotion_ready_20261111_sera_assignment/Translation_DS_All_Routes_Sera_Assignment_20261111_candidate.nds) is ready for cold-boot testing. The [registered package and clean-input patch](../releases/all_routes_editorial_20261111_sera_assignment_candidate/README.md) reconstruct it byte for byte. V4701 remains main pending acceptance.
+
+The [four New Game biographies](../translations/editorial_checkpoints/SharedText_20261110_v1/captain_biographies_source_current_inventory.json) have clean-first drafts and 12 exact ARM9 source/current line references. The chooser reads table `0x0214FC04` at `0x0209E750` and paints through `0x020D5404`. The active entries are separate from legacy COMMON 104–107. The stored COMMON discrepancies remain open pending consumer classification. The numerically matching Gallery image IDs do not bind those messages. Finish comparing the chooser biographies and measure their three-line display before integrating.
+
+Continue from [the registered Sera assignment checkpoint](editorial_sera_assignment_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 67 sea approach, battle and village records are registered. The ledger now credits 26,311 reviews.
+
+The next four uncredited records are 1357–1360. In the clean ARM9, `0x0201351C` selects 1357 or 1358 before the portrait consumer `0x02053FE4`. The second call at `0x02013668` selects 1359 or 1360, with 1360 encoded as immediate `0x550`. Continue by binding the actor, room and preceding response. Records 1357 and 1360 still contain legacy full-width I. The next run of shared records, 1361–1650, already has coverage credit.
+
+Continue from [the registered sea and village checkpoint](editorial_sea_approach_village_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 24 Auto Move warnings are registered. The ledger now credits 26,244 reviews.
+
+The next 67 sea approach, fleet encounter and village records, 1290–1356, have [clean-source drafts](../translations/editorial_checkpoints/SharedText_20261110_v1/sea_approach_village_source_drafts.tsv) and [exact clean and current references](../translations/editorial_checkpoints/SharedText_20261110_v1/sea_approach_village_source_current_inventory.json). Ten call sites bind nine native voice tables. Continue with contextual decisions and display checks. The current text has full-width I in the port and village sightings and seven gold gifts, terse battle-assistance questions, and villager counts that need to read naturally at one. The two battle-assistance callers use the native choice display. The name getter and number substitutions need focused checks before integration.
+
+Continue from [the registered Auto Move checkpoint](editorial_navigation_prerequisites_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 41 leak, fire, and supply reports are registered. The ledger now credits 26,220 reviews.
 
 The [promotion candidate](../out/promotion_ready_20261111_ship_emergency/Translation_DS_All_Routes_Ship_Emergency_20261111_candidate.nds) was freshly reconstructed from the [clean-input patch and registered release](../releases/all_routes_editorial_20261111_ship_emergency_candidate/README.md). V4701 remains the main build pending cold-boot acceptance.

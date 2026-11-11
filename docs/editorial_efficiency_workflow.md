@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-11
 
+Sera’s four room-assignment reactions are registered. The ledger now credits 26,315 reviews.
+
+Continue from [the registered Sera assignment checkpoint](editorial_sera_assignment_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 67 sea approach, battle and village records are registered. The ledger now credits 26,311 reviews.
+
+Continue from [the registered sea and village checkpoint](editorial_sea_approach_village_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 24 Auto Move warnings are registered. The ledger now credits 26,244 reviews.
+
+Continue from [the registered Auto Move checkpoint](editorial_navigation_prerequisites_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 41 leak, fire, and supply reports are registered. The ledger now credits 26,220 reviews.
 
 Continue from [the registered emergency checkpoint](editorial_ship_emergency_registered_20261111.md).
