@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-11
 
+Gallery captions and the COMMON 336 stat increase review are registered. [Checkpoint](editorial_visible_gallery_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The 13 visible Online captions are registered. [Checkpoint](editorial_visible_online_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The Ancient Map Hint label is registered. [Checkpoint](editorial_ancient_map_hint_label_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+All 38 Sound Setup music titles are registered. The ledger now credits 27,696 reviews.
+
+Continue from [the registered Sound Setup titles](editorial_sound_bgm_titles_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 61 Ancient Map records are registered. The ledger now credits 27,658 reviews.
+
+Continue from [the registered Ancient Map text](editorial_ancient_map_text_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)
 
 # Current editorial checkpoint - 2026-11-11

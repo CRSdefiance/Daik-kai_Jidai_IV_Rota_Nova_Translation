@@ -1,3 +1,33 @@
+# All Routes Gallery and Map promotion candidate - 2026-11-11
+
+The [local ROM](../out/promotion_ready_20261111_gallery_and_map/Translation_DS_All_Routes_Gallery_and_Map_20261111_candidate.nds) and [clean-input patch](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/README.md) are ready for cold-boot testing. The reconstructed ROM matches the registered candidate byte for byte. It includes the Market Goods Info and ASCII right-bound fixes, Ancient Map text, Sound Setup titles and the Online and Gallery captions. V4701 remains main pending user acceptance.
+
+The ledger credits 27,697 reviews across 24,092 story records, 3,389 shared COMMON keys, 202 Help topics and 14 ARM9 prose records. All four story inventories are fully credited. Another 279 shared keys need review or classification: 31 Online records, 214 scene or asset labels and 34 earlier keys. The 164 Gallery captions and 13 Online captions are tracked separately. [Coverage audit](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/verification/editorial_remaining_scope.json)
+
+# Current editorial checkpoint - 2026-11-11
+
+Gallery captions and the COMMON 336 stat increase review are registered. [Checkpoint](editorial_visible_gallery_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The 13 visible Online captions are registered. [Checkpoint](editorial_visible_online_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The Ancient Map Hint label is registered. [Checkpoint](editorial_ancient_map_hint_label_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+All 38 Sound Setup music titles are registered. The ledger now credits 27,696 reviews.
+
+Continue from [the registered Sound Setup titles](editorial_sound_bgm_titles_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 61 Ancient Map records are registered. The ledger now credits 27,658 reviews.
+
+Continue from [the registered Ancient Map text](editorial_ancient_map_text_registered_20261111.md).
+
 # Current editorial checkpoint - 2026-11-11
 
 The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)

@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-11
 
+Gallery captions and the COMMON 336 stat increase review are registered. [Checkpoint](editorial_visible_gallery_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The 13 visible Online captions are registered. [Checkpoint](editorial_visible_online_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The Ancient Map Hint label is registered. [Checkpoint](editorial_ancient_map_hint_label_registered_20261111.md)
+
+Sound Setup music titles are registered with 777 entries, 114 accepted layers and 112 checks. Use scripts/register_sound_bgm_titles_v1.py with --register and --publish-prepared. Exact patch, native title masks, ordinary Sound Setup and startup pass. [Checkpoint](editorial_sound_bgm_titles_registered_20261111.md)
+
+Ancient Map text is registered with 776 entries, 114 accepted layers and 111 checks. Use scripts/register_ancient_map_text_v2.py with --register, then scripts/publish_ancient_map_text_v2.py to bind the verified mutation plan. Exact patch, native masks, Old Dagger and startup pass. [Checkpoint](editorial_ancient_map_text_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
 The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)
 
 The 73 Golden Route records are registered with 774 entries, 114 accepted layers and 109 checks. Use scripts/register_golden_route_exchanges_v1.py with --register and --publish-prepared. Exact reconstruction, focused Lisbon replay and cold startup pass. [Checkpoint](editorial_golden_route_exchanges_registered_20261111.md)

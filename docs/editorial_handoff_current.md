@@ -1,3 +1,41 @@
+# All Routes Gallery and Map promotion candidate - 2026-11-11
+
+The [local ROM](../out/promotion_ready_20261111_gallery_and_map/Translation_DS_All_Routes_Gallery_and_Map_20261111_candidate.nds) and [clean-input patch](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/README.md) are ready for cold-boot testing. The reconstructed ROM matches the registered candidate byte for byte. It includes the Market Goods Info and ASCII right-bound fixes, Ancient Map text, Sound Setup titles and the Online and Gallery captions. V4701 remains main pending user acceptance.
+
+The ledger credits 27,697 reviews across 24,092 story records, 3,389 shared COMMON keys, 202 Help topics and 14 ARM9 prose records. All four story inventories are fully credited. Another 279 shared keys need review or classification: 31 Online records, 214 scene or asset labels and 34 earlier keys. The 164 Gallery captions and 13 Online captions are tracked separately. [Coverage audit](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/verification/editorial_remaining_scope.json)
+
+Continue the [shared key consumer review](editorial_remaining_shared_ranges_20261111.md), remaining player-facing UI prose, speaker names and roles, and focused wrap and glyph follow-up. Town and random-scene gameplay coverage remains representative. Keep the deferred artwork and older-record technical re-audit separate.
+
+# Current editorial checkpoint - 2026-11-11
+
+Gallery captions and the COMMON 336 stat increase review are registered. [Checkpoint](editorial_visible_gallery_captions_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The 13 visible Online captions are registered. [Checkpoint](editorial_visible_online_captions_registered_20261111.md)
+
+The [native consumer trace](../translations/editorial_checkpoints/SharedText_20261110_v1/online_and_gallery_observed_consumers_v1.json) binds all 13 Online pages and 12 representative Gallery scenes across all four routes to their separate caption owners. The Sound Setup positive control reached both COMMON accessors. The Online and Gallery runs made zero COMMON requests. Keep the 245 stored Online and scene keys open for other callers. The [35-key legacy comparison](../translations/editorial_checkpoints/SharedText_20261110_v1/legacy_common_35_checkpoint_v1.json) records the other pending keys and identifies the aligned 750 value as actor-table data. Continue tracing the remaining shared keys while reviewing the visible Gallery captions, speaker labels, and other player-facing text.
+
+# Current editorial checkpoint - 2026-11-11
+
+The Ancient Map Hint label is registered. [Checkpoint](editorial_ancient_map_hint_label_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+All 38 Sound Setup music titles are registered. The ledger now credits 27,696 reviews.
+
+Continue from [the registered Sound Setup titles](editorial_sound_bgm_titles_registered_20261111.md).
+
+The [Ancient Map Hint label checkpoint](editorial_ancient_map_hint_label_checkpoint_20261111.md) records the complete English label and exact Back and Select glyph masks in the original navigation. Its startup and registered release remain pending.
+
+The registered ROM has 280 shared keys left to review or classify. The [current source comparison](../translations/editorial_checkpoints/SharedText_20261110_v1/online_and_scene_consumer_comparison_v1.json) binds 245 of those keys to exact clean/current text and the earlier Online and scene-label drafts. All 245 match clean Japanese in COMMON storage. There are 123 exact source matches to independently stored Gallery captions. The existing 164 Gallery titles are within their arrow-safe bounds. Establish the separate COMMON consumers before assigning editorial credit. The other 35 pending keys are listed in the [remaining shared ranges](editorial_remaining_shared_ranges_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 61 Ancient Map records are registered. The ledger now credits 27,658 reviews.
+
+Continue from [the registered Ancient Map text](editorial_ancient_map_text_registered_20261111.md).
+
 # Current editorial checkpoint - 2026-11-11
 
 The [All Routes cumulative promotion candidate](../out/promotion_ready_20261111_arrival_month_labels/Translation_DS_All_Routes_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_arrival_month_labels_candidate/README.md) reconstruct it byte for byte. The ledger has 27,597 credited reviews and 379 native shared keys still to review or classify. V4701 remains main pending acceptance.
