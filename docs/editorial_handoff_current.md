@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-10
 
+The 98 shared sea-event messages are registered. The ledger now credits 26,083 reviews.
+
+Continue from [the registered sea-event checkpoint](editorial_sea_events_registered_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
+Sea-event messages 383–480 have 98 contextual decisions and verified stored layouts. Twenty-six phrase refinements preserve the wording. The focused bubbles replay matched all five complete live pages and the return to sailing. Candidate-owned startup and registration remain pending, with 25,985 reviews integrated.
+
+Continue from [the staged sea-event checkpoint](editorial_sea_events_stored_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
 The 34 diplomacy and scheme notices are registered. The ledger now credits 25,985 reviews.
 
 Continue from [the registered diplomacy checkpoint](editorial_diplomatic_outcomes_registered_20261110.md).
