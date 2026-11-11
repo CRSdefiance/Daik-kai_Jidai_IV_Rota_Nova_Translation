@@ -1,6 +1,6 @@
 > Main promoted build: [Unified V4701](releases/all_routes_unified_v4701/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 >
-> Latest testing candidate: [Lil382 cumulative editorial build](releases/all_routes_editorial_20261110_lil382_candidate/README.md) (2026-11-10), including earlier Rafael/tutorial work and the Market fix. Exact clean-input patch verified; main promotion awaits acceptance.
+> Latest testing candidate: [All Routes v7](releases/all_routes_editorial_20261110_crew_notices_candidate/README.md) (2026-11-10). Includes Rafael’s tutorials, the Market Trade-screen fix and the shared and crew notices. The clean-input patch reconstructs the candidate byte for byte. Main promotion awaits acceptance.
 
 # DK4 Translation Tool
 

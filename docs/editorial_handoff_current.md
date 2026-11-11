@@ -2,6 +2,8 @@
 
 The 22 crew-loss and abandonment messages are registered. The ledger now credits 25,951 reviews.
 
+The [v7 promotion candidate](../out/promotion_ready_20261110_all_routes_v7/Translation_DS_All_Routes_20261110_v7_candidate.nds) was freshly reconstructed from the [clean-input patch and verified release package](../releases/all_routes_editorial_20261110_crew_notices_candidate/README.md). V4701 remains the main build pending acceptance of v7.
+
 Continue from [the registered crew-notice checkpoint](editorial_shared_crew_notices_registered_20261110.md).
 
 # Current editorial checkpoint - 2026-11-10
