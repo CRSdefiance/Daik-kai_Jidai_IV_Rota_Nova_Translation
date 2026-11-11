@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Thirty shared notices are registered and credited once. The ledger now credits 25,929 reviews.
+
+Continue from [the registered shared-notice checkpoint](editorial_shared_notices_registered_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
 Thirty shared notices now pass stored lookup and native formatting checks. The Copenhagen replay verified the revised sailing estimate and the three-row departure notice with its dismissal. Representative gameplay for the scoped wrap selector and registration remain pending. The ledger credits 25,899 reviews.
 
 Continue from [the stored shared-notice checkpoint](editorial_shared_notices_storage_20261110.md).

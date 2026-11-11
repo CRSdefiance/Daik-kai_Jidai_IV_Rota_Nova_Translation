@@ -1,0 +1,1902 @@
+{
+  "research_ROM": "work\\SharedText_20261110_v1\\literal_notice_storage_v1\\shared_notices_RESEARCH_ONLY.nds",
+  "research_ROM_sha256": "b7baa15de6be52edd96a18129a934d25485d1d718857d2492128dea95187569a",
+  "counts": {
+    "revision": 11,
+    "retention": 19
+  },
+  "records": [
+    {
+      "message_ID": 85,
+      "source": {
+        "block": 0,
+        "offset": 3052,
+        "copy_end": 3076,
+        "bytes": 22,
+        "record_index": 64,
+        "table_offset": 1317306,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3480,
+        "copy_end": 3504,
+        "bytes": 22,
+        "record_index": 83,
+        "table_offset": 1317306,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 0,
+        "offset": 3480,
+        "copy_end": 3510,
+        "bytes": 28,
+        "record_index": 83,
+        "table_offset": 1317306,
+        "start_in_record": 0
+      },
+      "target_hex": "5361696c696e672064617973206c6566743a2061626f75742025732e",
+      "id": "COMMON_MESSAGE_85",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7",
+      "previous_hex": "2041626f75742025732064617973206174207365612e",
+      "source_Japanese": "約%s日の航海が可能です",
+      "english": "Sailing days left: about %s.",
+      "decision": "revision",
+      "rationale": "Use a count label so the singular value 1 reads naturally. Keep the approximation and the remaining sailing range.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": true,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 86,
+      "source": {
+        "block": 0,
+        "offset": 3076,
+        "copy_end": 3108,
+        "bytes": 30,
+        "record_index": 65,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3504,
+        "copy_end": 3532,
+        "bytes": 26,
+        "record_index": 84,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3510,
+        "copy_end": 3538,
+        "bytes": 26,
+        "record_index": 85,
+        "table_offset": 1317308,
+        "start_in_record": 0
+      },
+      "target_hex": "2025732f25730a202025730a202044657061727465642025732e",
+      "id": "COMMON_MESSAGE_86",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd",
+      "previous_hex": "2025732f25730a202025730a202044657061727465642025732e",
+      "source_Japanese": "%s月　%s日\n%s\n%sを出港しました",
+      "english": "%s/%s{LB}%s{LB}Departed %s.",
+      "decision": "retention",
+      "rationale": "Keep the established month/day, separate status row and departure message. The original fourth port argument is passed on the stack and stays last.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "The original date, status and departure details are separate display fields.",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": true,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 87,
+      "source": {
+        "block": 0,
+        "offset": 3108,
+        "copy_end": 3124,
+        "bytes": 14,
+        "record_index": 66,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3532,
+        "copy_end": 3548,
+        "bytes": 14,
+        "record_index": 85,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3538,
+        "copy_end": 3560,
+        "bytes": 20,
+        "record_index": 86,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "target_hex": "257320736b696c6c20697320746f6f206c6f772e",
+      "id": "COMMON_MESSAGE_87",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382aa91ab82e882dc82b982f1",
+      "previous_hex": "2573206973206d697373696e672e",
+      "source_Japanese": "%sが足りません",
+      "english": "%s skill is too low.",
+      "decision": "revision",
+      "rationale": "Both original calls supply a named skill, including the Command fallback. Naming the skill explicitly gives Swords a singular subject and avoids implying missing equipment.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 88,
+      "source": {
+        "block": 0,
+        "offset": 3124,
+        "copy_end": 3148,
+        "bytes": 22,
+        "record_index": 67,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3548,
+        "copy_end": 3572,
+        "bytes": 22,
+        "record_index": 86,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3560,
+        "copy_end": 3584,
+        "bytes": 22,
+        "record_index": 88,
+        "table_offset": 1317312,
+        "start_in_record": 0
+      },
+      "target_hex": "456e656d7920666c6565742064657374726f79656421",
+      "id": "COMMON_MESSAGE_88",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "93478acd91e082cd89f396c582b582dc82b582bd8149",
+      "previous_hex": "456e656d7920666c6565742064657374726f79656421",
+      "source_Japanese": "敵艦隊は壊滅しました！",
+      "english": "Enemy fleet destroyed!",
+      "decision": "retention",
+      "rationale": "The concise status keeps the destruction of the whole enemy fleet and the source's emphatic tone.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 89,
+      "source": {
+        "block": 0,
+        "offset": 3148,
+        "copy_end": 3168,
+        "bytes": 20,
+        "record_index": 68,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3572,
+        "copy_end": 3591,
+        "bytes": 19,
+        "record_index": 87,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3584,
+        "copy_end": 3603,
+        "bytes": 19,
+        "record_index": 89,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "target_hex": "54686520656e656d792068617320666c656421",
+      "id": "COMMON_MESSAGE_89",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "934782cd93a682b08f6f82b582dc82b582bd8149",
+      "previous_hex": "54686520656e656d792068617320666c656421",
+      "source_Japanese": "敵は逃げ出しました！",
+      "english": "The enemy has fled!",
+      "decision": "retention",
+      "rationale": "The current line accurately conveys enemy retreat and distinguishes it from fleet destruction.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 90,
+      "source": {
+        "block": 0,
+        "offset": 3168,
+        "copy_end": 3196,
+        "bytes": 25,
+        "record_index": 68,
+        "table_offset": 1317316,
+        "start_in_record": 21
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3591,
+        "copy_end": 3629,
+        "bytes": 35,
+        "record_index": 87,
+        "table_offset": 1317316,
+        "start_in_record": 20
+      },
+      "target": {
+        "block": 0,
+        "offset": 3603,
+        "copy_end": 3623,
+        "bytes": 18,
+        "record_index": 89,
+        "table_offset": 1317316,
+        "start_in_record": 20
+      },
+      "target_hex": "2573207761732064656665617465642e2e2e",
+      "id": "COMMON_MESSAGE_90",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382cc8a5882cd0a8c82946a82b382ea82dc82b582bd8163",
+      "previous_hex": "54686520746f776e206f6620257320686173206265656e2064656665617465642e2e2e",
+      "source_Japanese": "%sの街は\n撃破されました…",
+      "english": "%s was defeated...",
+      "decision": "revision",
+      "rationale": "The displayed place already identifies the town. Keep the military defeat and subdued ellipsis distinct from surrender, and keep the full short report together.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 91,
+      "source": {
+        "block": 0,
+        "offset": 3196,
+        "copy_end": 3220,
+        "bytes": 23,
+        "record_index": 69,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3629,
+        "copy_end": 3653,
+        "bytes": 23,
+        "record_index": 88,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "target": {
+        "block": 0,
+        "offset": 3623,
+        "copy_end": 3641,
+        "bytes": 17,
+        "record_index": 91,
+        "table_offset": 1317318,
+        "start_in_record": 0
+      },
+      "target_hex": "25732073757272656e64657265642e2e2e",
+      "id": "COMMON_MESSAGE_91",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382cc8a5882cd0a8d7e959a82b582dc82b582bd8163",
+      "previous_hex": "25732073757272656e64657265642e2e2e0a2020202020",
+      "source_Japanese": "%sの街は\n降伏しました…",
+      "english": "%s surrendered...",
+      "decision": "retention",
+      "rationale": "The short surrender notice keeps the different outcome and subdued tone. Its trailing blank line belongs to display review.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 92,
+      "source": {
+        "block": 0,
+        "offset": 3220,
+        "copy_end": 3280,
+        "bytes": 60,
+        "record_index": 70,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3653,
+        "copy_end": 3749,
+        "bytes": 96,
+        "record_index": 89,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 0,
+        "offset": 3641,
+        "copy_end": 3741,
+        "bytes": 98,
+        "record_index": 92,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "target_hex": "54686520666c6565747320756e646572206f757220636f6d6d616e6420686176650a2073656e7420696e636f6d6520616e6420657870656e7365207265706f7274732e200a20576f756c6420796f75206c696b6520746f2068656172207468656d3f",
+      "id": "COMMON_MESSAGE_92",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e5089ba82cc8acd91e082e682e80a8efb8e7895f18d9082aa93cd82a282c482a882e882dc82b70a82a895b782ab82c982c882e882dc82b782a98148",
+      "previous_hex": "54686520666c6565747320756e646572206f757220636f6d6d616e6420686176652073656e7420696e636f6d6520616e6420657870656e7365207265706f7274732e20576f756c6420796f75206c696b6520746f2068656172207468656d3f20",
+      "source_Japanese": "傘下の艦隊より\n収支報告が届いております\nお聞きになりますか？",
+      "english": "The fleets under our command have sent income and expense reports. Would you like to hear them?",
+      "decision": "retention",
+      "rationale": "The speakerless yes/no offer is polite and fluent. The native flow searches affiliated fleets before asking and can handle more than one report. Keep the plural phrasing.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "Keep income and expense reports intact and give the confirmation question its own row.",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 93,
+      "source": {
+        "block": 0,
+        "offset": 3280,
+        "copy_end": 3316,
+        "bytes": 34,
+        "record_index": 70,
+        "table_offset": 1317322,
+        "start_in_record": 60
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3749,
+        "copy_end": 3797,
+        "bytes": 46,
+        "record_index": 89,
+        "table_offset": 1317322,
+        "start_in_record": 96
+      },
+      "target": {
+        "block": 0,
+        "offset": 3741,
+        "copy_end": 3777,
+        "bytes": 34,
+        "record_index": 94,
+        "table_offset": 1317322,
+        "start_in_record": 0
+      },
+      "target_hex": "257320686173206120666c6565742066726f6d20257320756e64657220666972652e",
+      "id": "COMMON_MESSAGE_93",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082f00a96438c8282b582c482a282dc82b7",
+      "previous_hex": "5468652063697479206f6620257320686173206f70656e65642066697265206f6e202573277320666c6565742e20",
+      "source_Japanese": "%sの街が\n%sの艦隊を\n砲撃しています",
+      "english": "%s has a fleet from %s under fire.",
+      "decision": "revision",
+      "rationale": "Keep the named town as attacker and the named company as the fleet affiliation. Placing the company inside the sentence handles names ending in Co.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 94,
+      "source": {
+        "block": 0,
+        "offset": 3316,
+        "copy_end": 3356,
+        "bytes": 38,
+        "record_index": 71,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3797,
+        "copy_end": 3827,
+        "bytes": 28,
+        "record_index": 90,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3777,
+        "copy_end": 3815,
+        "bytes": 36,
+        "record_index": 96,
+        "table_offset": 1317324,
+        "start_in_record": 0
+      },
+      "target_hex": "257320697320756e6465722061747461636b206279207468652070697261746520257321",
+      "id": "COMMON_MESSAGE_94",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382cc8a5882aa0a8a4391af257382cc8f508c8282f00a8ef382af82c482a282dc82b78149",
+      "previous_hex": "25732061747461636b65642e0a2020506972617465202573210a2020",
+      "source_Japanese": "%sの街が\n海賊%sの襲撃を\n受けています！",
+      "english": "%s is under attack by the pirate %s!",
+      "decision": "revision",
+      "rationale": "The original call passes the city first and the pirate second. Replace the disconnected fragments with one clear sentence in the same order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 95,
+      "source": {
+        "block": 0,
+        "offset": 3356,
+        "copy_end": 3408,
+        "bytes": 52,
+        "record_index": 72,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3827,
+        "copy_end": 3896,
+        "bytes": 69,
+        "record_index": 91,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 0,
+        "offset": 3815,
+        "copy_end": 3870,
+        "bytes": 53,
+        "record_index": 98,
+        "table_offset": 1317326,
+        "start_in_record": 0
+      },
+      "target_hex": "496e2025732c202573206761696e6564206d61726b65742073686172652062792073656c6c696e672061206c6f74206f6620257321",
+      "id": "COMMON_MESSAGE_95",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382c5257382aa0a257382f091e597ca82c9948482e882b382ce82ab0a83568346834182f08a6791e582b582dc82b582bd8149",
+      "previous_hex": "82686e2025732c20257320736f6c64206c6172676520616d6f756e7473206f6620257320616e6420657870616e646564207468656972206d61726b65742073686172652120",
+      "source_Japanese": "%sで%sが\n%sを大量に売りさばき\nシェアを拡大しました！",
+      "english": "In %s, %s gained market share by selling a lot of %s!",
+      "decision": "revision",
+      "rationale": "The seller gained market share through large sales. Keep the argument order and plain ASCII In. Place the result before its cause to avoid the fourth row found with long catalog names.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 96,
+      "source": {
+        "block": 0,
+        "offset": 3408,
+        "copy_end": 3444,
+        "bytes": 35,
+        "record_index": 72,
+        "table_offset": 1317328,
+        "start_in_record": 53
+      },
+      "previous": {
+        "block": 0,
+        "offset": 3896,
+        "copy_end": 3927,
+        "bytes": 30,
+        "record_index": 91,
+        "table_offset": 1317328,
+        "start_in_record": 70
+      },
+      "target": {
+        "block": 0,
+        "offset": 3870,
+        "copy_end": 3901,
+        "bytes": 29,
+        "record_index": 100,
+        "table_offset": 1317328,
+        "start_in_record": 0
+      },
+      "target_hex": "25732773206d61726b6574207368617265206861732066616c6c656e21",
+      "id": "COMMON_MESSAGE_96",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "257382cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd8149",
+      "previous_hex": "25732773206d61726b6574207368617265206861732066616c6c656e2120",
+      "source_Japanese": "%sのシェアが\n下がってしまいました！",
+      "english": "%s's market share has fallen!",
+      "decision": "retention",
+      "rationale": "The original call reads the player company object and passes its name. The possessive correctly names whose share fell. Do not reinterpret it as a city argument.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 112,
+      "source": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 439,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 431,
+        "bytes": 22,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "target_hex": "53797374656d2064617461206e6f7420666f756e642e",
+      "id": "COMMON_MESSAGE_112",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "previous_hex": "53797374656d2064617461206e6f7420666f756e642e0a202020202020",
+      "source_Japanese": "システムデータがありません。\n",
+      "english": "System data not found.",
+      "decision": "retention",
+      "rationale": "The existing notice accurately reports missing system data. Its extra newline and padding are separate from the wording. Two direct native routes are present, including a lookup and a modal.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 118,
+      "source": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "previous": {
+        "block": 1,
+        "offset": 786,
+        "copy_end": 818,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "target": {
+        "block": 1,
+        "offset": 778,
+        "copy_end": 804,
+        "bytes": 25,
+        "record_index": 9,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "target_hex": "53797374656d206461746120697320636f727275707465642e",
+      "id": "COMMON_MESSAGE_118",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "previous_hex": "53797374656d206461746120697320636f727275707465642e2020202020",
+      "source_Japanese": "システムデータが壊れています。",
+      "english": "System data is corrupted.",
+      "decision": "retention",
+      "rationale": "The current wording accurately identifies corrupted system data. The original failure branch also invokes the separate fallback explanation in 122.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 120,
+      "source": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "previous": {
+        "block": 1,
+        "offset": 874,
+        "copy_end": 898,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "target": {
+        "block": 1,
+        "offset": 860,
+        "copy_end": 880,
+        "bytes": 19,
+        "record_index": 11,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "target_hex": "45766572797468696e6720636f72726563743f",
+      "id": "COMMON_MESSAGE_120",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "previous_hex": "45766572797468696e6720636f72726563743f202020",
+      "source_Japanese": "すべてよろしいですか？",
+      "english": "Everything correct?",
+      "decision": "retention",
+      "rationale": "Everything correct? is a natural short confirmation. The original setup branch invokes a yes/no modal and preserves the prior selection state on the negative route.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 121,
+      "source": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 898,
+        "copy_end": 918,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 880,
+        "copy_end": 896,
+        "bytes": 15,
+        "record_index": 12,
+        "table_offset": 1317378,
+        "start_in_record": 0
+      },
+      "target_hex": "5374617274207468652067616d653f",
+      "id": "COMMON_MESSAGE_121",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "previous_hex": "5468652067616d652063616e6e6f742073617665",
+      "source_Japanese": "ゲームを始めますか？",
+      "english": "Start the game?",
+      "decision": "revision",
+      "rationale": "The source asks whether to start. The current native copy returns a fragment from the unrelated save warning. Restore the confirmation at the original yes/no call.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 122,
+      "source": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "previous": {
+        "block": 1,
+        "offset": 918,
+        "copy_end": 1006,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "target": {
+        "block": 1,
+        "offset": 896,
+        "copy_end": 976,
+        "bytes": 79,
+        "record_index": 13,
+        "table_offset": 1317380,
+        "start_in_record": 0
+      },
+      "target_hex": "436f756c646e2774206c6f6164207468652073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974680a2064656661756c742073797374656d20646174612e",
+      "id": "COMMON_MESSAGE_122",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "previous_hex": "20686572652e20537461727420616e797761793f0a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "english": "Couldn't load the system data. The game will start with default system data.",
+      "decision": "revision",
+      "rationale": "The current native copy starts in the middle of the same save warning. Restore the source's load failure and subsequent initialization. The caller continues startup after the notice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "Keep default system data intact and separate the failure from what happens next.",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 123,
+      "source": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1006,
+        "copy_end": 1046,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 27,
+        "record_index": 14,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "target_hex": "53797374656d2064617461206661696c656420746f206c6f61642e",
+      "id": "COMMON_MESSAGE_123",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "previous_hex": "53797374656d2064617461206661696c656420746f206c6f61642e202020202020202020200a20",
+      "source_Japanese": "システムデータのロードに失敗しました。\n",
+      "english": "System data failed to load.",
+      "decision": "retention",
+      "rationale": "The current standalone load failure preserves the source. Keep it distinct from missing or corrupted data and from the notice that also says startup will continue.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 125,
+      "source": {
+        "block": 1,
+        "offset": 1224,
+        "copy_end": 1272,
+        "bytes": 48,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 76
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1107,
+        "copy_end": 1179,
+        "bytes": 72,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 61
+      },
+      "target": {
+        "block": 1,
+        "offset": 1065,
+        "copy_end": 1137,
+        "bytes": 72,
+        "record_index": 15,
+        "table_offset": 1317386,
+        "start_in_record": 61
+      },
+      "target_hex": "5468616e6b7320746f207375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e742c20257327732065636f6e6f6d7920686173207265636f76657265642e",
+      "id": "COMMON_MESSAGE_125",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382cc8c698b4382aa0a89f1959c82b582dc82b582bd",
+      "previous_hex": "5468616e6b7320746f207375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e742c20257327732065636f6e6f6d7920686173207265636f76657265642e",
+      "source_Japanese": "巨額の商業投資のおかげで\n%sの景気が\n回復しました",
+      "english": "Thanks to substantial commercial investment, %s's economy has recovered.",
+      "decision": "retention",
+      "rationale": "The sentence preserves both the substantial investment and the resulting economic recovery.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 126,
+      "source": {
+        "block": 1,
+        "offset": 1272,
+        "copy_end": 1324,
+        "bytes": 50,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 124
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1179,
+        "copy_end": 1250,
+        "bytes": 69,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 133
+      },
+      "target": {
+        "block": 1,
+        "offset": 1137,
+        "copy_end": 1208,
+        "bytes": 69,
+        "record_index": 15,
+        "table_offset": 1317388,
+        "start_in_record": 133
+      },
+      "target_hex": "5375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e74206861732062726f7567687420616e2065636f6e6f6d696320626f6f6d20746f2025732e",
+      "id": "COMMON_MESSAGE_126",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382aa8d448c698b4382c90a82ed82a282c482a282dc82b7",
+      "previous_hex": "5375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e74206861732062726f7567687420616e2065636f6e6f6d696320626f6f6d20746f2025732e",
+      "source_Japanese": "巨額の商業投資のおかげで\n%sが好景気に\nわいています",
+      "english": "Substantial commercial investment has brought an economic boom to %s.",
+      "decision": "retention",
+      "rationale": "The existing economic boom notice naturally conveys the stronger outcome and retains its investment cause.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 127,
+      "source": {
+        "block": 1,
+        "offset": 1324,
+        "copy_end": 1352,
+        "bytes": 28,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1250,
+        "copy_end": 1269,
+        "bytes": 19,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 1208,
+        "copy_end": 1227,
+        "bytes": 19,
+        "record_index": 16,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "target_hex": "43686f6f73652061206261736520636974792e",
+      "id": "COMMON_MESSAGE_127",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8b92935f82c682b782e98a5882f0914982f182c582ad82be82b382a2",
+      "previous_hex": "43686f6f73652061206261736520636974792e",
+      "source_Japanese": "拠点とする街を選んでください",
+      "english": "Choose a base city.",
+      "decision": "retention",
+      "rationale": "The existing command clearly asks the player to choose a base city. The native selection route keeps this distinct from patrol and docking.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 128,
+      "source": {
+        "block": 1,
+        "offset": 1352,
+        "copy_end": 1380,
+        "bytes": 26,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 29
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1269,
+        "copy_end": 1307,
+        "bytes": 36,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 20
+      },
+      "target": {
+        "block": 1,
+        "offset": 1227,
+        "copy_end": 1265,
+        "bytes": 36,
+        "record_index": 16,
+        "table_offset": 1317392,
+        "start_in_record": 20
+      },
+      "target_hex": "596f752068617665206e6f20636f6e74726163742077697468207468617420636974792e",
+      "id": "COMMON_MESSAGE_128",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f182b582c482a282dc82b982f1",
+      "previous_hex": "596f752068617665206e6f20636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街とは契約していません",
+      "english": "You have no contract with that city.",
+      "decision": "retention",
+      "rationale": "The refusal clearly identifies the missing contract with the selected city. Its negative predicate is distinct from the already-contracted refusal.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 129,
+      "source": {
+        "block": 1,
+        "offset": 1380,
+        "copy_end": 1424,
+        "bytes": 43,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1307,
+        "copy_end": 1365,
+        "bytes": 57,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 1265,
+        "copy_end": 1323,
+        "bytes": 57,
+        "record_index": 17,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "target_hex": "43686f6f73652061206369747920666f7220706174726f6c2e20596f75206d7573742068617665206120636f6e74726163742074686572652e",
+      "id": "COMMON_MESSAGE_129",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8fa389fa82f08d7382a282dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "previous_hex": "43686f6f73652061206369747920666f7220706174726f6c2e20596f75206d7573742068617665206120636f6e74726163742074686572652e",
+      "source_Japanese": "哨戒を行います\n契約のある街を選んでください",
+      "english": "Choose a city for patrol. You must have a contract there.",
+      "decision": "retention",
+      "rationale": "The two natural sentences give the patrol target and the requirement for a contract. Keep the city terminology shared by the fleet orders.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 130,
+      "source": {
+        "block": 1,
+        "offset": 1424,
+        "copy_end": 1472,
+        "bytes": 47,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1365,
+        "copy_end": 1414,
+        "bytes": 48,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 1,
+        "offset": 1323,
+        "copy_end": 1384,
+        "bytes": 59,
+        "record_index": 18,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "target_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920776865726520796f752068617665206120636f6e74726163742e",
+      "id": "COMMON_MESSAGE_130",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8acd91e082f08af18d6082b382b982dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "previous_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920756e64657220636f6e74726163742e",
+      "source_Japanese": "艦隊を寄港させます\n契約のある街を選んでください",
+      "english": "To dock the fleet, choose a city where you have a contract.",
+      "decision": "revision",
+      "rationale": "State clearly that the contract is with the city and the fleet will dock there. The native branch is the port-call order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "Put the docking action first and attach the contract to the city. The wording avoids a second sentence that repeats the selected city.",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 131,
+      "source": {
+        "block": 1,
+        "offset": 1472,
+        "copy_end": 1504,
+        "bytes": 30,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1414,
+        "copy_end": 1440,
+        "bytes": 24,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 1,
+        "offset": 1384,
+        "copy_end": 1410,
+        "bytes": 24,
+        "record_index": 20,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "target_hex": "43686f6f73652061206369747920746f2061747461636b2e",
+      "id": "COMMON_MESSAGE_131",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8a588d558c8282f08d7382a48a5882f0914982f182c582ad82be82b382a2",
+      "previous_hex": "43686f6f73652061206369747920746f2061747461636b2e",
+      "source_Japanese": "街攻撃を行う街を選んでください",
+      "english": "Choose a city to attack.",
+      "decision": "retention",
+      "rationale": "The short command names the city as the attack target and fits the related selection prompts.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 132,
+      "source": {
+        "block": 1,
+        "offset": 1504,
+        "copy_end": 1528,
+        "bytes": 22,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1440,
+        "copy_end": 1492,
+        "bytes": 50,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 1410,
+        "copy_end": 1462,
+        "bytes": 50,
+        "record_index": 21,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "target_hex": "596f75206861766520616c7265616479207369676e6564206120636f6e74726163742077697468207468617420636974792e",
+      "id": "COMMON_MESSAGE_132",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f18dcf82dd82c582b7",
+      "previous_hex": "596f75206861766520616c7265616479207369676e6564206120636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街とは契約済みです",
+      "english": "You have already signed a contract with that city.",
+      "decision": "retention",
+      "rationale": "The existing sentence accurately distinguishes an already signed contract from the absence of a contract.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 133,
+      "source": {
+        "block": 1,
+        "offset": 1528,
+        "copy_end": 1572,
+        "bytes": 43,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1492,
+        "copy_end": 1555,
+        "bytes": 62,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "target": {
+        "block": 1,
+        "offset": 1462,
+        "copy_end": 1525,
+        "bytes": 62,
+        "record_index": 22,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "target_hex": "412066616374696f6e206e6f7420617420776172207769746820796f7520686f6c6473206120636f6e74726163742077697468207468617420636974792e",
+      "id": "COMMON_MESSAGE_133",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd88c88a4f82c60a8c5f96f182b582c482a282dc82b7",
+      "previous_hex": "412066616374696f6e206e6f7420617420776172207769746820796f7520686f6c6473206120636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街は、交戦中の勢力以外と\n契約しています",
+      "english": "A faction not at war with you holds a contract with that city.",
+      "decision": "retention",
+      "rationale": "The existing line correctly attributes the city's contract to a faction the player is not at war with. Keep that distinction.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 134,
+      "source": {
+        "block": 1,
+        "offset": 1572,
+        "copy_end": 1616,
+        "bytes": 41,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1555,
+        "copy_end": 1626,
+        "bytes": 68,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 1,
+        "offset": 1525,
+        "copy_end": 1596,
+        "bytes": 68,
+        "record_index": 23,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "target_hex": "54686174206369747920646f65736e27742068617665206120636f6e7472616374207769746820612066616374696f6e20796f752772652061742077617220776974682e",
+      "id": "COMMON_MESSAGE_134",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd82c60a8c5f96f182b582c482a282dc82b982f1",
+      "previous_hex": "54686174206369747920646f65736e27742068617665206120636f6e7472616374207769746820612066616374696f6e20796f752772652061742077617220776974682e",
+      "source_Japanese": "その街は、交戦中の勢力と\n契約していません",
+      "english": "That city doesn't have a contract with a faction you're at war with.",
+      "decision": "retention",
+      "rationale": "The current wording clearly describes a city with no contract with a faction at war with the player.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 135,
+      "source": {
+        "block": 1,
+        "offset": 1616,
+        "copy_end": 1684,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1626,
+        "copy_end": 1694,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "target": {
+        "block": 1,
+        "offset": 1596,
+        "copy_end": 1664,
+        "bytes": 66,
+        "record_index": 24,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "target_hex": "5468652070656f706c6520686572652061726520667572696f75732e200a2054686572652773206e6f2077617920696e206f72206f7574207269676874206e6f772e",
+      "id": "COMMON_MESSAGE_135",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8a5882cc906c815882cc937b82e882cd918a939682c882e082cc82c582b70a82c682c482e08f6f93fc82e882c582ab82e98ff38bb582c582cd82a082e882dc82b982f1",
+      "previous_hex": "43697479207265736964656e74732061726520667572696f75732e0a2020456e74727920697320756e736166652e202020202020202020202020202020202020202020",
+      "source_Japanese": "街の人々の怒りは相当なものです\nとても出入りできる状況ではありません",
+      "english": "The people here are furious. There's no way in or out right now.",
+      "decision": "revision",
+      "rationale": "The source says public anger makes entering or leaving impossible. The current warning softens the restriction and drops the exit sense. Keep the temporal situation implicit in right now.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "Use the sentence boundary and keep the full access warning together.",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    },
+    {
+      "message_ID": 136,
+      "source": {
+        "block": 1,
+        "offset": 1684,
+        "copy_end": 1732,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "previous": {
+        "block": 1,
+        "offset": 1694,
+        "copy_end": 1742,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "target": {
+        "block": 1,
+        "offset": 1664,
+        "copy_end": 1726,
+        "bytes": 61,
+        "record_index": 26,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "target_hex": "43686f6f736520612073686f70207369676e20746f2061736b2061626f75740a207472656e647320616e64206f74686572206c6f63616c206e6577732e",
+      "id": "COMMON_MESSAGE_136",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8fac9484935882cc8ac594c282f0914982d482c60a97ac8d7382c882c782cc8fee95f182f095b782af82dc82b7",
+      "previous_hex": "202043686f6f73652061207369676e2e0a202048656172206d61726b6574206e6577732e202020202020202020",
+      "source_Japanese": "小売店の看板を選ぶと\n流行などの情報を聞けます",
+      "english": "Choose a shop sign to ask about trends and other local news.",
+      "decision": "revision",
+      "rationale": "Restore the shop-sign instruction and the source's broader information about trends. Use the native formatter for ordinary line breaks.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "layout_reason": "",
+      "native_storage_and_display_checks_passed": true,
+      "observed_in_gameplay": false,
+      "new_credit": 0
+    }
+  ],
+  "startup": {
+    "frames": 31000,
+    "exact_matching_Maria_frames": [
+      {
+        "frame": 1600,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_001600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0bba6f51ed19ab586d977e18d4d3415379b6e9675c403a877f370803f7ef20d2",
+        "framebuffer_sha256": "2c0f957ec9a3ce9be7172f9d12d90911fa867c82a2124fe4d4a8911c6c0b0f45"
+      },
+      {
+        "frame": 2200,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_002200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f59adaa1ab60e6e705a95f8565ce65e5f87b4af793e36ee63d0c1306e5715475",
+        "framebuffer_sha256": "34f3c2e8aa711d214a3af8a180318c96636d8e88d07afaa36358c7833004bb66"
+      },
+      {
+        "frame": 3340,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_003340_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ad8adadc8e7a28529818440bf1d14c71ec42ed41eb2db7cb35f2144bc0e25587",
+        "framebuffer_sha256": "83e3d6af6e8841ed4b427353eee96e766da5ff1eab2c6922bad4a1e53bac232a"
+      },
+      {
+        "frame": 4000,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_004000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e7e6ec29482b08c1e7cfef9e8213416da8548b8d1b6f0ea8e584a9c301729b51",
+        "framebuffer_sha256": "199ea4f047e15f8381d2e0068a36e28d973aecf47917b2306a604193d4c6f926"
+      },
+      {
+        "frame": 16000,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_016000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f2126984adf3b7eba8ae75c00c343d376860e918c39ee6eca84d8af28efb03f5",
+        "framebuffer_sha256": "34b91b00d4892a40486b7dd477a5a3b392c78b661f1171b7f3fcef7346fd74a3"
+      },
+      {
+        "frame": 31000,
+        "path": "out\\shared_notice_research_startup_20261110_v2\\capture\\frame_031000_final.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "64663cdcb417e8bfcaa9ed8e38ca3aa9e6b62414028a53185c59ce05a5ad9824",
+        "framebuffer_sha256": "2a281eb44a8b9025ccd0b2b27f5f6617710011bc039d99f38b452208ee6d4fd9"
+      }
+    ],
+    "relocated_catalogue_exact_in_own_startup_WRAM": true,
+    "original_protected_name_getters": [
+      {
+        "actor_ID": 30,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Dinis Albuquerque",
+        "text_hex": "44696e697320416c627571756572717565"
+      },
+      {
+        "actor_ID": 30,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Dinis de Albuquerque",
+        "text_hex": "44696e697320646520416c627571756572717565"
+      },
+      {
+        "actor_ID": 35,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Fernan Silveira",
+        "text_hex": "4665726e616e2053696c7665697261"
+      },
+      {
+        "actor_ID": 35,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Fernan Silveira",
+        "text_hex": "4665726e616e2053696c7665697261"
+      },
+      {
+        "actor_ID": 40,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Antony Kuhn",
+        "text_hex": "416e746f6e79204b75686e"
+      },
+      {
+        "actor_ID": 40,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Antony von Kuhn",
+        "text_hex": "416e746f6e7920766f6e204b75686e"
+      },
+      {
+        "actor_ID": 55,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "David Flahven",
+        "text_hex": "446176696420466c616876656e"
+      },
+      {
+        "actor_ID": 55,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "David Flahven",
+        "text_hex": "446176696420466c616876656e"
+      },
+      {
+        "actor_ID": 56,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Georg Salzgitter",
+        "text_hex": "47656f72672053616c7a676974746572"
+      },
+      {
+        "actor_ID": 56,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Georg Salzgitter",
+        "text_hex": "47656f72672053616c7a676974746572"
+      },
+      {
+        "actor_ID": 57,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Nagayoshi Kamuro",
+        "text_hex": "4e616761796f736869204b616d75726f"
+      },
+      {
+        "actor_ID": 57,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Nagayoshi Kamuro",
+        "text_hex": "4e616761796f736869204b616d75726f"
+      },
+      {
+        "actor_ID": 59,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Garcia Oviedo",
+        "text_hex": "476172636961204f766965646f"
+      },
+      {
+        "actor_ID": 59,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Garcia de Oviedo",
+        "text_hex": "476172636961206465204f766965646f"
+      },
+      {
+        "actor_ID": 65,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Plett Perrault",
+        "text_hex": "506c657474205065727261756c74"
+      },
+      {
+        "actor_ID": 65,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Plett Perrault",
+        "text_hex": "506c657474205065727261756c74"
+      },
+      {
+        "actor_ID": 68,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Jacob Portunto",
+        "text_hex": "4a61636f6220506f7274756e746f"
+      },
+      {
+        "actor_ID": 68,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Jacob Portunto",
+        "text_hex": "4a61636f6220506f7274756e746f"
+      },
+      {
+        "actor_ID": 70,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Zaganos Bey",
+        "text_hex": "5a6167616e6f7320426579"
+      },
+      {
+        "actor_ID": 70,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Zaganos Bey",
+        "text_hex": "5a6167616e6f7320426579"
+      },
+      {
+        "actor_ID": 186,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Francisca",
+        "text_hex": "4672616e6369736361"
+      },
+      {
+        "actor_ID": 186,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Francisca",
+        "text_hex": "4672616e6369736361"
+      },
+      {
+        "actor_ID": 203,
+        "consumer": "progressive-nameplate",
+        "getter": 34073992,
+        "text": "Sakura",
+        "text_hex": "53616b757261"
+      },
+      {
+        "actor_ID": 203,
+        "consumer": "full-catalogue",
+        "getter": 34074068,
+        "text": "Sakura",
+        "text_hex": "53616b757261"
+      }
+    ],
+    "existing_system_unlock_fixture": [
+      {
+        "preloaded_save_manifest": "out\\shared_notice_research_startup_20261110_v2\\existing_system_unlock_manifest.json",
+        "manifest_sha256": "9810b2145ba8e780dda195077b8c7b3435864611d05c04d31e3347a56e159a28",
+        "synthetic_gallery_fixture": true,
+        "earned_unlock_verified": false,
+        "validated_selected_supported_site_ids": null
+      }
+    ],
+    "evidence": {
+      "out\\shared_notice_research_startup_20261110_v2\\capture\\capture_report.json": "30174ff73b1f697de2279b8b21258cf25dd96d895cd503600ef34042ea4a6c09",
+      "work\\ship_command_label_release_v1\\own_startup_run_v1\\capture\\capture_report.json": "cea7957e635b6057ea026d2afa0898a7747eaa59289047bc38de46b570f6ffff",
+      "work\\ship_command_label_release_v1\\own_registered_name_getters_v1.json": "afbf61333e984db59d642ca02595b548b00ef304d795af51edeb08f929d186fc"
+    }
+  },
+  "observed_gameplay": {
+    "observed": [
+      {
+        "message_ID": 85,
+        "capture": {
+          "frame": 4000,
+          "path": "out\\shared_notice_departure_research_20261110_v2\\capture\\frame_004000_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "1f5b3c7bfb8ef150543a208c1bb15b3359cf48f3dd6a99ee73f2a5b940fab2a5",
+          "framebuffer_sha256": "9fe2ef776d043ec296f6773f8d9efba4e9dc686a59c2acf7af7308ab8689c583"
+        },
+        "crop": [
+          16,
+          296,
+          244,
+          344
+        ],
+        "expanded_hex": "5361696c696e672064617973206c6566743a2061626f757420825182572e",
+        "complete_foreground_and_blank_margin_match": true,
+        "foreground_pixels": 297
+      },
+      {
+        "message_ID": 86,
+        "capture": {
+          "frame": 4800,
+          "path": "out\\shared_notice_departure_research_20261110_v2\\capture\\frame_004800_final.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "99c2547f9151679a7feac515e4db43a4c0533e5dc7f9b453a2eb5598f14ddb80",
+          "framebuffer_sha256": "43f3f366ac777eaa88dbc77710102a7d74942ce460a44c8f3cc8b841d6e81ddd"
+        },
+        "crop": [
+          16,
+          296,
+          244,
+          344
+        ],
+        "expanded_hex": "2082542f825182530a2020536b793a2053756e6e790a2020446570617274656420436f70656e686167656e2e",
+        "complete_foreground_and_blank_margin_match": true,
+        "foreground_pixels": 438
+      }
+    ],
+    "dated_notice_exact_in_both_live_text_buffers": true,
+    "docked_depart_command": {
+      "frame": 3600,
+      "path": "out\\shared_notice_departure_research_20261110_v2\\capture\\frame_003600_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "8b0343358da52c116a368af9193eb3ef50c63bc116d198cc1cf2b859c446bd70",
+      "framebuffer_sha256": "499dc1b3bfd17c168e7a35f4a232b73743ad334afe3870834ac5ed7f49371488"
+    },
+    "depart_submenu": {
+      "frame": 4400,
+      "path": "out\\shared_notice_departure_research_20261110_v2\\capture\\frame_004400_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "a9ba98e2c5bbd360b9c3b5c2ea2e24b9d356d9408eb43328a03ebda6d72f8a2f",
+      "framebuffer_sha256": "93f7a7164c79861b48895b318af238152e812f9ba34a0ad7faef12f08bf2bce8"
+    },
+    "A_dismissed_to_sailing": {
+      "frame": 5300,
+      "path": "out\\shared_notice_departure_research_20261110_v1\\capture\\frame_005300_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "948b346fa939bc7c6a4d23885e452a1aece4643a1c6a47e0c8543c3fe2bc2428",
+      "framebuffer_sha256": "10ac5eb47fb1ffb59964cd54d9a1aafcfc3171ed439063eda3c51813d4fb94a5"
+    },
+    "donor_isolated": true,
+    "controller_only": true,
+    "no_scene_or_world_state_override": true,
+    "evidence": {
+      "out\\shared_notice_departure_research_20261110_v2\\capture\\capture_report.json": "6a8846d684aa174813811b21111b921f5f620339945eebaf57951f2d4e3ea3bb",
+      "out\\shared_notice_departure_research_20261110_v1\\capture\\capture_report.json": "8e86e25acaa02480e0601f9d8c2c4fd99f5ff2045de4d044f0a817e06c169f82"
+    }
+  },
+  "native_dynamic_visual_review": [
+    {
+      "path": "work\\SharedText_20261110_v1\\dynamic_notice_layout_v3\\sheet_01.png",
+      "sha256": "c89631a29c91ffd893c36a4f131aa6220052fbd2f19f552e791e210de9b14f30",
+      "pages": 12,
+      "directly_viewed": true,
+      "exact_prior_sheet_reused": false
+    },
+    {
+      "path": "work\\SharedText_20261110_v1\\dynamic_notice_layout_v3\\sheet_02.png",
+      "sha256": "13bddeb093ca5fbabe58b10a0c352fe92a9218b263261e6846e399e0755204f3",
+      "pages": 12,
+      "directly_viewed": true,
+      "exact_prior_sheet_reused": true
+    },
+    {
+      "path": "work\\SharedText_20261110_v1\\dynamic_notice_layout_v3\\sheet_03.png",
+      "sha256": "cdde972ae2162ee0acc5e2d0f740bac1c8a06b57a9ececd9880ac7c5a684ece6",
+      "pages": 12,
+      "directly_viewed": true,
+      "exact_prior_sheet_reused": true
+    },
+    {
+      "path": "work\\SharedText_20261110_v1\\dynamic_notice_layout_v3\\sheet_04.png",
+      "sha256": "57de039c19b8b8d8a120b5c7d4da42464c09fdf8d4aa1fb6972d1cff574ae7a0",
+      "pages": 6,
+      "directly_viewed": true,
+      "exact_prior_sheet_reused": true
+    }
+  ],
+  "exact_proof_archives": {
+    "stored_verification.json.gz": {
+      "original": "work\\SharedText_20261110_v1\\literal_notice_storage_v1\\stored_verification.json",
+      "original_sha256": "2db49e9f8280ff05901411b92f7b118b4daea50d0ec6d2226d6c4b5fa536982f",
+      "archive_sha256": "5ba62646915f57628bd8477ce64479f42f16ecb6b695361ff511e6fb04fc7e16"
+    },
+    "native_preflight.json.gz": {
+      "original": "work\\SharedText_20261110_v1\\dynamic_notice_layout_v3\\native_preflight.json",
+      "original_sha256": "766210291ce4f976c47ca34591a8d528e32ac2e9db4d3c0a75ead923e0a10aac",
+      "archive_sha256": "7253ffca8b8cbe6a46e9c05ccdcdd61ea977351523c557b5e2c7abd338b2bc4f"
+    }
+  },
+  "pending_live_new_selector_and_pagination": true,
+  "research_only_and_zero_new_credit": true,
+  "full_goal_complete": false
+}
