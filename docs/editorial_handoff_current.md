@@ -1,3 +1,23 @@
+# All Routes Wrap Review promotion candidate - 2026-11-11
+
+The [candidate and remaining-work audit](editorial_promotion_candidate_20261111_wrap_review.md) are ready for cold-boot testing. The exact clean-input patch reconstructs the cumulative ROM with all 27 recent dialogue display corrections and the existing Market and ASCII right-bound fixes. V4701 remains main pending acceptance.
+
+# Current editorial checkpoint - 2026-11-11
+
+The ten story question wraps are registered. [Checkpoint](editorial_story_question_wraps_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The twelve historical story wraps are registered. [Checkpoint](editorial_historical_story_wraps_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The Hamburg ceramics exchange is registered. [Checkpoint](editorial_lil_ceramics_wrap_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The current 207-actor name inventory is bound. Twenty-four shared progressive nameplates were retained after contextual and native display review. The original New Game chooser uses four independent, registered English biographies. The legacy COMMON copies remain open for other callers. [Checkpoint](editorial_shared_nameplates_chooser_checkpoint_20261111.md)
+
 # All Routes Gallery and Map promotion candidate - 2026-11-11
 
 The [local ROM](../out/promotion_ready_20261111_gallery_and_map/Translation_DS_All_Routes_Gallery_and_Map_20261111_candidate.nds) and [clean-input patch](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/README.md) are ready for cold-boot testing. The reconstructed ROM matches the registered candidate byte for byte. It includes the Market Goods Info and ASCII right-bound fixes, Ancient Map text, Sound Setup titles and the Online and Gallery captions. V4701 remains main pending user acceptance.

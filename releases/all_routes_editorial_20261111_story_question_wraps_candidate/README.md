@@ -1,0 +1,3 @@
+# Question wraps candidate
+
+The [local ROM](../../out/story_question_wraps_registered_20261111_v1/Translation_DS_All_Routes_Question_Wraps_20261111_candidate.nds) contains ten question-wrap corrections across the four story routes. The [clean-input patch](translation.xdelta) reconstructs SHA-256 `9a3f2d193c476b36be0e92101c7a44bf5adc5ced0581e86d1687ac0b88fdc16b` byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Original speaker selectors, terminators and control flow are preserved. Two emulator excerpts, a separate cold boot and 56 targeted tests passed.

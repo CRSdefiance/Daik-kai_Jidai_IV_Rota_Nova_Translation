@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-11
 
+The ten story question wraps are registered. [Checkpoint](editorial_story_question_wraps_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The twelve historical story wraps are registered. [Checkpoint](editorial_historical_story_wraps_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+The Hamburg ceramics exchange is registered. [Checkpoint](editorial_lil_ceramics_wrap_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
 Gallery captions and the COMMON 336 stat increase review are registered. [Checkpoint](editorial_visible_gallery_captions_registered_20261111.md)
 
 # Current editorial checkpoint - 2026-11-11

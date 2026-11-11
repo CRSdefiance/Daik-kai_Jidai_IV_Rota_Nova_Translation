@@ -1,0 +1,9 @@
+# Twelve historical story wraps registered
+
+The [registered review](../releases/all_routes_editorial_20261111_story_wraps_candidate/verification/registered_review.json) covers twelve remaining leads from the earlier thirteen-record wrap inventory. Nine keep the existing English and change the line breaks. Three also revise wording, including Fernando’s permit explanation, Yifa’s martial-arts rumor and the injured sailor’s appeal to Maria. Lil’s earlier B218 correction remains present. The review records each complete surrounding exchange and the exact source, previous and registered positions. Every original terminator, actor selector, command offset and branch remains intact.
+
+All 24 before-and-after native pages and 96 processor alignments passed, and all revised pages were visually checked. Paired ordinary Lil New Game runs displayed the three opening changes. A separate staged Lil-entry replay displayed Carlo’s revised line. Eight sampled surrounding frames matched exactly. Eight changes were checked offline in this pass. The original Carlo event trigger and hardware remain unvisited. A separate cumulative cold boot and 56 targeted tests passed.
+
+The [local candidate and clean-input patch](../releases/all_routes_editorial_20261111_story_wraps_candidate/README.md) include the previous registered layers. The dialogue ledger still credits 27,697 reviews. The 279 shared-text keys, remaining UI and name review, other wrap and glyph leads, and representative town and random-scene coverage remain open. The deferred artwork and later older-record technical re-audit remain separate.
+
+The [broader wrap scan](../translations/editorial_checkpoints/SharedText_20261110_v1/current_progressive_wrap_triage_v1.json) flags 843 candidate bodies in the four current archives, including ten possible question-tag splits. These are storage heuristics. Confirm their typed owners and complete exchanges before assigning findings or changing text.
