@@ -1,0 +1,7 @@
+# All Routes Faction Aftermath Portraits candidate
+
+Use the local ROM `out/faction_aftermath_portraits_registered_20261111_v1/Translation_DS_All_Routes_Faction_Aftermath_Portraits_20261111_candidate.nds` with its adjacent build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `9fa2ef9657aa4c700393b78577d767cdbb44cc6fdd76831caab143029a8cbe1e` byte for byte. Patch SHA-256 is `927b0bdfb22709b1b13a5f3273cc8c1e880a88e1c206ac4292864989aed823c8`.
+
+The 21 faction aftermath portraits are registered. The ledger now credits 26,533 reviews. Twelve revisions and nine justified retentions cover the faction leader’s defeat, the other fleet commanders’ vows, and the displaced commanders weighing their next move. Six refinements improve phrase continuity. Twenty-five full-width capital I glyphs across 18 templates now use the dialogue font.
+
+The sailing replay called the original dissolution handler for the Hayreddin Clan in an isolated save. It displayed the disband notice, Barbarossa Hayreddin’s reaction and Salid Ajar’s vow, then returned to sailing. The other 19 portraits were checked offline. All 21 native portrait layouts, 86 release checks, 30 targeted tests, cold startup and 24 protected name getters passed. Hardware acceptance is pending. [Gameplay proof](verification/faction_aftermath_portraits_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

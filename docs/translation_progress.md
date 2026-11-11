@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-11
 
+The coin response and 20 Source Item descriptions are registered. The ledger now credits 26,554 reviews.
+
+The [All Routes Source Item Cards and Coin promotion candidate](../out/promotion_ready_20261111_source_item_cards_and_coin/Translation_DS_All_Routes_Source_Item_Cards_and_Coin_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_source_item_cards_and_coin_candidate/README.md) reconstruct it byte for byte. It adds 101 reviews since Rumor and Cooperation. All 30 fresh repository tests passed. V4701 remains main pending acceptance.
+
+Continue from [the registered Source Item cards and coin response](editorial_source_item_cards_and_coin_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 21 faction aftermath portraits are registered. The ledger now credits 26,533 reviews.
+
+Continue from [the registered faction aftermath portraits](editorial_faction_aftermath_portraits_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 59 diplomatic letter portraits are registered. The ledger now credits 26,512 reviews.
+
+Continue from [the registered diplomatic letter portraits](editorial_diplomatic_letter_portraits_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews.
 
 Continue from [the registered rumor and cooperation exchanges](editorial_rumor_and_cooperation_registered_20261111.md).

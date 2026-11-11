@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-11
 
+The coin response and 20 Source Item descriptions are registered. The ledger now credits 26,554 reviews.
+
+Continue from [the registered Source Item cards and coin response](editorial_source_item_cards_and_coin_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 21 faction aftermath portraits are registered. The ledger now credits 26,533 reviews.
+
+Continue from [the registered faction aftermath portraits](editorial_faction_aftermath_portraits_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 59 diplomatic letter portraits are registered. The ledger now credits 26,512 reviews.
+
+Continue from [the registered diplomatic letter portraits](editorial_diplomatic_letter_portraits_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews.
 
 Continue from [the registered rumor and cooperation exchanges](editorial_rumor_and_cooperation_registered_20261111.md).
