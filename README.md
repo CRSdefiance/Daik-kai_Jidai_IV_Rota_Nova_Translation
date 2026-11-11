@@ -1,6 +1,6 @@
 > Main promoted build: [Unified V4701](releases/all_routes_unified_v4701/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 >
-> Latest testing candidate: [All Routes v7](releases/all_routes_editorial_20261110_crew_notices_candidate/README.md) (2026-11-10). Includes Rafael’s tutorials, the Market Trade-screen fix and the shared and crew notices. The clean-input patch reconstructs the candidate byte for byte. Main promotion awaits acceptance.
+> Latest testing candidate: [All Routes with diplomacy and scheme notices](releases/all_routes_editorial_20261110_diplomatic_outcomes_candidate/README.md) (2026-11-10). Includes the [v7](releases/all_routes_editorial_20261110_crew_notices_candidate/README.md) changes, plus clearer diplomacy outcomes and phrase wrapping. The clean-input patch reconstructs the candidate byte for byte. Main promotion awaits acceptance.
 
 # DK4 Translation Tool
 

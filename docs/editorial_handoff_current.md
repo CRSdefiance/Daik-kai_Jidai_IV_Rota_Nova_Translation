@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-10
 
+The 34 diplomacy and scheme notices are registered. The ledger now credits 25,985 reviews.
+
+Continue from [the registered diplomacy checkpoint](editorial_diplomatic_outcomes_registered_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
+Diplomacy and scheme outcomes 349–382 have 34 contextual decisions and 166 verified stored expansions. All seven contact sheets were viewed. Phrase continuity and representative original modal transitions remain pending. V7 is the registered candidate with 25,951 integrated reviews.
+
+Continue from [the staged diplomacy checkpoint](editorial_diplomatic_outcomes_stored_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
 The 22 crew-loss and abandonment messages are registered. The ledger now credits 25,951 reviews.
 
 The [v7 promotion candidate](../out/promotion_ready_20261110_all_routes_v7/Translation_DS_All_Routes_20261110_v7_candidate.nds) was freshly reconstructed from the [clean-input patch and verified release package](../releases/all_routes_editorial_20261110_crew_notices_candidate/README.md). V4701 remains the main build pending acceptance of v7.

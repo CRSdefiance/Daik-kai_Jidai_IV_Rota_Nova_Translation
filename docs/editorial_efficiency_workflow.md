@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+The 34 diplomacy and scheme notices are registered. The ledger now credits 25,985 reviews.
+
+Continue from [the registered diplomacy checkpoint](editorial_diplomatic_outcomes_registered_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
 The 22 crew-loss and abandonment messages are registered. The ledger now credits 25,951 reviews.
 
 Continue from [the registered crew-notice checkpoint](editorial_shared_crew_notices_registered_20261110.md).
