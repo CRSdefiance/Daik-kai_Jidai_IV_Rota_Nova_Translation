@@ -2,6 +2,8 @@
 
 Abandon Ship is registered and credited once. The native menu passed exact live caption and Back/No checks. The cumulative patch reconstructs byte for byte. The ledger credits 25,899 reviews.
 
+The [v6 promotion candidate](../out/promotion_ready_20261110_all_routes_v6/Translation_DS_All_Routes_20261110_v6_candidate.nds) was freshly reconstructed and matches the registered ROM byte for byte. The [patch and verification](../releases/all_routes_editorial_20261110_ship_command_candidate/README.md) are ready for testing. Continue the pending shared notices from the existing checkpoint. Main V4701 awaits acceptance.
+
 Continue from [editorial_ship_command_registered_20261110](editorial_ship_command_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
 
 # Current editorial checkpoint - 2026-11-10
