@@ -1,0 +1,7 @@
+# Relic and map item cards registered
+
+The 40 proof, map and map-material descriptions are registered. The ledger now credits 26,721 reviews. COMMON 2963–3002 now matches the active private paragraphs in both item views. This completes the regular 188-entry item run, including the earlier Shachihoko credit. It adds 28 prose revisions and 12 justified retentions. [Registered review](../releases/all_routes_editorial_20261111_relic_map_item_cards_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_relic_map_item_cards_candidate/README.md)
+
+All 160 native cases, 80 visual previews and 218 description getters passed. The original Items replay showed Rigveda, Thales Paper Map, Stone Circle Map and Old Parchment and returned to Lisbon. Those four items were supplied by an isolated inventory transfer. The 178 other private projections remained byte-identical. The main copied allocation stays at 123,264 bytes. Fourteen paragraphs occupy 972 bytes appended to the resident catalogue.
+
+Continue at COMMON 3003–3032. Those 30 promotional records require the native owner and title paths. COMMON 3013–3032 shares one active private map-fragment paragraph across five four-piece sets. Confirm the distinction between the stored COMMON records and the promotional title, category and fragment behavior before applying a description change. Continue all remaining player-facing prose and earlier speaker names and role labels. Graphics artwork and the older-record technical re-audit remain separate.

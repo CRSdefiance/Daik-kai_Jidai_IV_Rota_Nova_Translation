@@ -1,5 +1,41 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 30 promotional item descriptions are registered. The ledger now credits 26,751 reviews.
+
+Continue from [the registered promotional item cards](editorial_promotional_item_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 40 proof, map and map-material descriptions are registered. The ledger now credits 26,721 reviews.
+
+Continue from [the registered relic and map item cards](editorial_relic_map_item_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The figurehead, navigation and gift batch is registered. The ledger now credits 26,681 reviews.
+
+Continue from [the registered figurehead, navigation and gift cards](editorial_figurehead_navigation_gift_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 40 crew-role equipment descriptions are registered. The ledger now credits 26,648 reviews.
+
+Continue from [the registered crew-role equipment cards](editorial_crew_equipment_item_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 25 main armor catalogue descriptions are registered. The ledger now credits 26,608 reviews.
+
+Continue from [the registered armor item cards](editorial_armor_item_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The four utility item and 25 weapon descriptions are registered. The ledger now credits 26,583 reviews.
+
+Continue from [the registered utility and weapon item cards](editorial_utility_weapon_item_cards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The coin response and 20 Source Item descriptions are registered. The ledger now credits 26,554 reviews.
 
 The [All Routes Source Item Cards and Coin promotion candidate](../out/promotion_ready_20261111_source_item_cards_and_coin/Translation_DS_All_Routes_Source_Item_Cards_and_Coin_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_source_item_cards_and_coin_candidate/README.md) reconstruct it byte for byte. It adds 101 reviews since Rumor and Cooperation. All 30 fresh repository tests passed. V4701 remains main pending acceptance.

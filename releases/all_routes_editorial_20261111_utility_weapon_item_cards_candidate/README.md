@@ -1,0 +1,7 @@
+# All Routes Utility and Weapon Item Cards candidate
+
+Use the local ROM `out/utility_weapon_item_cards_registered_20261111_v1/Translation_DS_All_Routes_Utility_Weapon_Item_Cards_20261111_candidate.nds` with its build manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `1fb4e61478336f2dd68ea9c80b7ab050e1cd339110429feaa1835ac2c5b8e6b7`. Patch SHA-256 is `a64a2c2e6083df351f51035be87d3787b05fe29365456b0b20594866612babb9`.
+
+The four utility item and 25 weapon descriptions are registered. The ledger now credits 26,583 reviews. The 21 prose revisions restore details including Hermes and Ares among the Twelve and Hua Tuo's role in devising the tonic's recipe. Eight wordings were retained with individual reasons. Azure Talwar now uses the ordinary capital I in both stored descriptions. The final visual pass kept phrases such as “no known reason,” “Aztec water god” and “this superb greatsword” together.
+
+All 116 native render cases and 218 description getters passed. The original Items menu showed the complete Black Rapier card and returned to Lisbon after an isolated inventory transfer. The other 28 new cards were checked offline. All 88 release checks, 34 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/utility_weapon_items_gameplay_verification.json) · [Exact record review](verification/registered_review.json)
