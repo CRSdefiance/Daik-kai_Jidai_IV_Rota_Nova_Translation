@@ -1,0 +1,7 @@
+# All Routes Shark Encounter candidate
+
+Use `out/shark_encounter_registered_20261111_v1/Translation_DS_All_Routes_Shark_Encounter_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs candidate SHA-256 `dca7915254ad45a195d2732507dfb868850a9f28aa197f81bb5de7c2542af840` byte for byte. Patch SHA-256 is `f87ab31bf7eef49be82a289326fac78cfc30562a346ee0db8b3d45261287f541`.
+
+The shark encounter is registered across 29 dialogue records and two choices. The ledger now credits 26,409 reviews. The exchange restores Maria’s standalone “Yes.” and Al’s separate warning. Samwell’s proposal retains his two guesses about eating shark and a possible new trade good. Raise It and Kill It preserve the original choices. Seven wordings earned retention, and the dialogue uses standard ASCII I.
+
+All 29 stored dialogue pages, four menu caption planes, 83 cumulative release checks and 30 targeted tests passed. The two focused Hodram emulator runs exercised both choices and the original item and return-to-sea results. The fixture temporarily selected the original encounter and made its two crew members eligible. The alternate captains passed offline checks. [Gameplay verification](verification/shark_encounter_gameplay_verification.json) · [Exact registered review](verification/registered_review.json)

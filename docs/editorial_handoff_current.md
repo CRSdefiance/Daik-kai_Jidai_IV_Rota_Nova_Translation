@@ -1,5 +1,31 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews.
+
+The [All Routes Rumor and Cooperation promotion candidate](../out/promotion_ready_20261111_rumor_and_cooperation/Translation_DS_All_Routes_Rumor_and_Cooperation_20261111_candidate.nds) is ready for cold-boot testing. The [registered package and clean-input patch](../releases/all_routes_editorial_20261111_rumor_and_cooperation_candidate/README.md) reconstruct it byte for byte. This cumulative candidate includes 96 additional reviews since Shipyard and Fleet Setup. V4701 is main pending acceptance.
+
+Continue from [the registered rumor and cooperation exchanges](editorial_rumor_and_cooperation_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The shark encounter is registered across 29 dialogue records and two choices. The ledger now credits 26,409 reviews.
+
+Continue from [the registered shark encounter](editorial_shark_encounter_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The seven faction and epilogue notices are registered. The ledger now credits 26,378 reviews.
+
+Continue from [the registered faction and epilogue notices](editorial_faction_and_epilogue_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 14 discovery and reward notices are registered. The ledger now credits 26,371 reviews.
+
+Continue from [the registered discovery and reward notices](editorial_discovery_rewards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 24 shipyard and fleet setup notices are registered. The ledger now credits 26,357 reviews.
 
 The [Shipyard and Fleet Setup promotion candidate](../out/promotion_ready_20261111_shipyard_fleet_setup/Translation_DS_All_Routes_Shipyard_Fleet_Setup_20261111_candidate.nds) is ready for cold-boot testing. The [registered package and clean-input patch](../releases/all_routes_editorial_20261111_shipyard_fleet_setup_candidate/README.md) reconstruct it byte for byte. V4701 remains main pending acceptance.

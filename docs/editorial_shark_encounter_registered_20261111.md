@@ -1,0 +1,7 @@
+# Shark encounter registered
+
+The shark encounter is registered across 29 dialogue records and two choices. The ledger now credits 26,409 reviews. The native sequence assigns Samwell the proposal and Al the objection. Maria’s assent and Al’s grumble are complete on their own panels. The four captain tables and two original result indices are preserved. [Release package](../releases/all_routes_editorial_20261111_shark_encounter_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_shark_encounter_candidate/verification/registered_review.json)
+
+Both original choices passed in isolated Hodram emulator replays with temporary encounter and crew eligibility initialization. Seventeen dialogue records were observed. The other twelve captain variants passed stored and visual checks. The initialized fixture scope excludes natural battle activation and hardware coverage. The previous first replay reached the ordinary supply warnings before the target encounter and remains preserved.
+
+Continue with the source-bound rumor and cooperation exchanges around COMMON 2793–2813. Keep the preceding false-document branch and the outcome responses together. The original item card exposed a separate prose lead in COMMON B29 R0057, item 004. Compare “A fierce fish may attack people” with the clean Japanese in the item-description pass. Keep the remaining Options and Market callers, artwork, and older-record technical re-audit open.

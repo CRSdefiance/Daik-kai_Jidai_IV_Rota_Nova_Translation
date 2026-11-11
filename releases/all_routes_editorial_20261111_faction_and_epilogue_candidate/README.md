@@ -1,0 +1,7 @@
+# All Routes Faction and Epilogue candidate
+
+Use the local ROM `out/faction_and_epilogue_registered_20261111_v1/Translation_DS_All_Routes_Faction_and_Epilogue_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `0cf5ba411da717e1eead2ed9c8d2b7d4002a3a8006bf4e68b4486497b8b77bfb` byte for byte. Patch SHA-256 is `79d0dddbfdcd6a4108f2e1dd3e710f87df3a68d53cf32a8eecbe7b3950a60cd6`.
+
+The seven faction and epilogue notices are registered. The ledger now credits 26,378 reviews. The naval attack alert reads naturally with the sampled faction names. The modal level-up matches the floating notice’s wording, and the faction dissolution result keeps its original name getter. The epilogue preserves the four native panels, fixes mid-word wraps, and replaces the mismatched capital I.
+
+An isolated Hodram emulator fixture set two state bytes to select the original epilogue. Its four complete panels, four A dismissals and Game Over screen passed. All 16 stored variants were visually reviewed, including the four stock captain and faction pairs. The naval attack, modal level-up and faction dissolution were checked offline. All 82 release checks, 30 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/faction_and_epilogue_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

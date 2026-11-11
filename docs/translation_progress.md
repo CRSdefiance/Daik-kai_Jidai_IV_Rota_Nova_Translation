@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews.
+
+Continue from [the registered rumor and cooperation exchanges](editorial_rumor_and_cooperation_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The shark encounter is registered across 29 dialogue records and two choices. The ledger now credits 26,409 reviews.
+
+Continue from [the registered shark encounter](editorial_shark_encounter_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The seven faction and epilogue notices are registered. The ledger now credits 26,378 reviews.
+
+Continue from [the registered faction and epilogue notices](editorial_faction_and_epilogue_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 14 discovery and reward notices are registered. The ledger now credits 26,371 reviews.
+
+Continue from [the registered discovery and reward notices](editorial_discovery_rewards_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 24 shipyard and fleet setup notices are registered. The ledger now credits 26,357 reviews.
 
 Continue from [the registered Shipyard and fleet setup notices](editorial_shipyard_fleet_setup_registered_20261111.md).
