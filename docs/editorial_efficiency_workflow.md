@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-11
 
+The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)
+
+# Current editorial checkpoint - 2026-11-11
+
+All 73 Golden Route records are registered. The ledger now credits 27,597 reviews.
+
+Continue from [the registered Golden Route exchanges](editorial_golden_route_exchanges_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 59 dolphin and sailing hazard records are registered. The ledger now credits 27,524 reviews.
+
+Continue from [the registered sailing hazards and dolphins](editorial_sailing_hazards_and_dolphins_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 All 71 oasis, discovery, shark and white-whale reports are registered. The ledger now credits 27,465 reviews.
 
 Continue from [the registered oasis and whale reports](editorial_oasis_and_whale_reports_registered_20261111.md).

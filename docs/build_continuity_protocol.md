@@ -1,3 +1,11 @@
+# Current editorial checkpoint - 2026-11-11
+
+The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)
+
+The 73 Golden Route records are registered with 774 entries, 114 accepted layers and 109 checks. Use scripts/register_golden_route_exchanges_v1.py with --register and --publish-prepared. Exact reconstruction, focused Lisbon replay and cold startup pass. [Checkpoint](editorial_golden_route_exchanges_registered_20261111.md)
+
+The 59 dolphin and sailing hazard records are registered with 773 entries, 114 accepted layers and 108 checks. Use scripts/register_sailing_hazards_and_dolphins_v1.py with --register and --publish-prepared. Exact reconstruction, the dolphin log exchange and cold startup pass. [Checkpoint](editorial_sailing_hazards_and_dolphins_registered_20261111.md)
+
 The 71 oasis and whale reports are registered with 772 entries, 114 accepted layers and 107 checks. Use scripts/register_oasis_and_whale_reports_v1.py with --register and --publish-prepared. Exact reconstruction, the whale replays and cold startup pass. [Checkpoint](editorial_oasis_and_whale_reports_registered_20261111.md)
 
 The 56 crew and shore reports are registered with 771 entries, 114 accepted layers and 106 checks. Use scripts/register_crew_and_shore_reports_v1.py with --register and --publish-prepared. Exact reconstruction, the Search attack and cold startup pass. [Checkpoint](editorial_crew_and_shore_reports_registered_20261111.md)

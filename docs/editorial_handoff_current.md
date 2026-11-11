@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-11
 
+The [All Routes cumulative promotion candidate](../out/promotion_ready_20261111_arrival_month_labels/Translation_DS_All_Routes_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_arrival_month_labels_candidate/README.md) reconstruct it byte for byte. The ledger has 27,597 credited reviews and 379 native shared keys still to review or classify. V4701 remains main pending acceptance.
+
+The two arrival-month labels are registered. [Checkpoint](editorial_arrival_month_labels_registered_20261111.md)
+
+Continue from the [Ancient Map display checkpoint](editorial_ancient_map_display_checkpoint_20261111.md). The 61 contextual drafts remain in the 379 pending shared keys while the native Hint renderer’s word split is investigated.
+
+# Current editorial checkpoint - 2026-11-11
+
+All 73 Golden Route records are registered. The ledger now credits 27,597 reviews.
+
+Continue from [the registered Golden Route exchanges](editorial_golden_route_exchanges_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 59 dolphin and sailing hazard records are registered. The ledger now credits 27,524 reviews.
+
+Continue from [the registered sailing hazards and dolphins](editorial_sailing_hazards_and_dolphins_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 All 71 oasis, discovery, shark and white-whale reports are registered. The ledger now credits 27,465 reviews.
 
 The [All Routes Voyage Reports promotion candidate](../out/promotion_ready_20261111_voyage_reports/Translation_DS_All_Routes_Voyage_Reports_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_oasis_and_whale_reports_candidate/README.md) reconstruct it byte for byte. The ledger has 27,465 credited reviews and 511 native shared keys still to review or classify. V4701 remains main pending acceptance.

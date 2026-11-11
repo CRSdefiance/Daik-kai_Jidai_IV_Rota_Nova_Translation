@@ -1,0 +1,7 @@
+# All Routes cumulative promotion candidate
+
+Cold-boot the [local candidate ROM](../../out/promotion_ready_20261111_arrival_month_labels/Translation_DS_All_Routes_20261111_candidate.nds) with its [build manifest](../../out/promotion_ready_20261111_arrival_month_labels/Translation_DS_All_Routes_20261111_candidate.manifest.json). The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 `c1bbb3cbfc328c560e0584f0ba54088163c4db473105cfac001bbde8dc8e0f62`. Patch SHA-256 `6890b9a6c2f6e2393a7bb28e5659f528227056162ae62353c596f553d1cbc3f0`.
+
+This build adds 132 reviews since Voyage Reports across sailing hazards, dolphins and Golden Route exchanges. It includes Rafael’s tutorials, both arrival-month label fixes, the Market Goods Info fix and the ASCII right-bound correction. V4701 remains main pending cold-boot acceptance. [Reconstruction](verification/promotion_reconstruction.json) · [Remaining work](verification/editorial_remaining_scope.json)
+
+Trade shows “Arr.” and Golden Route Found shows “Arrival.” Both labels terminate before the following string in ARM9. The 40-frame Lisbon comparison found 12 label-only differences and 28 exact frames. Both complete glyph masks, the month grids, the Guild return, cold boot, 24 protected getters, 34 targeted tests and 110 release checks passed. [Review](verification/registered_label_review.json) · [Gameplay](verification/arrival_month_gameplay_verification.json)
