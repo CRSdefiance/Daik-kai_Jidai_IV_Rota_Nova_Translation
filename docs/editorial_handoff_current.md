@@ -1,3 +1,23 @@
+# Current editorial checkpoint - 2026-11-11
+
+The 41 leak, fire, and supply reports are registered. The ledger now credits 26,220 reviews.
+
+The [promotion candidate](../out/promotion_ready_20261111_ship_emergency/Translation_DS_All_Routes_Ship_Emergency_20261111_candidate.nds) was freshly reconstructed from the [clean-input patch and registered release](../releases/all_routes_editorial_20261111_ship_emergency_candidate/README.md). V4701 remains the main build pending cold-boot acceptance.
+
+Fleet-sighting records 614–628 are already credited. Continue at navigation prerequisites 629–652. The source drafts and proposed decisions are in the shared-text checkpoint. They still need native display checks and integration.
+
+# Current editorial checkpoint - 2026-11-11
+
+The unrest and mutiny exchange is registered across 65 dialogue records and three choices. The ledger now credits 26,179 reviews.
+
+Continue from [the registered mutiny checkpoint](editorial_mutiny_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The sailing alerts and floating level-up notice are registered across 28 records. The ledger now credits 26,111 reviews.
+
+Continue from [the registered sailing-alert checkpoint](editorial_sailing_alerts_registered_20261111.md).
+
 # Current editorial checkpoint - 2026-11-10
 
 The 98 shared sea-event messages are registered. The ledger now credits 26,083 reviews.

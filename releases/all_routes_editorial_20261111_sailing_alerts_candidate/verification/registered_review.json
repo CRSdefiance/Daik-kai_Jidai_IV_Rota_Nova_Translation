@@ -1,0 +1,2829 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_97",
+      "message_ID": 97,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3444,
+        "copy_end": 3460,
+        "bytes": 14,
+        "record_index": 73,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3901,
+        "copy_end": 3917,
+        "bytes": 14,
+        "record_index": 102,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "source_hex": "25738141826b82968274826f8149",
+      "current_hex": "25738141826b82968274826f8149",
+      "source_Japanese": "%s、ＬｖＵＰ！",
+      "current_English": "%s、ＬｖＵＰ！",
+      "english": "%s leveled up!",
+      "independent_English": "%s leveled up!",
+      "source_meaning": "The named character has gone up a level. The Japanese uses a short exclamatory game abbreviation.",
+      "localization_note": "Translate the Japanese abbreviation as a short, familiar game notification. The original getter still provides the character name. The separately formatted modal at 335 remains outside this batch.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named actor"
+      ],
+      "speaker": "Floating system notice",
+      "context": "The named crewmember gains a level. The original name getter feeds a short floating Sea View notification. Two actors can gain levels and display notices at the same time.",
+      "original_selector_slots": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "25738141826b82968274826f8149",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            176,
+            36235020,
+            4273
+          ]
+        ],
+        "exact_instruction_count": 175,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 3901,
+        "copy_end": 3917,
+        "bytes": 14,
+        "record_index": 102,
+        "table_offset": 1317330,
+        "start_in_record": 0,
+        "exact_stored_hex": "2573206c6576656c656420757021",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [],
+      "native_floating_name_cases": 207,
+      "gameplay_observed": true,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_481",
+      "message_ID": 481,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 756,
+        "copy_end": 772,
+        "bytes": 16,
+        "record_index": 15,
+        "table_offset": 1318098,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 790,
+        "copy_end": 807,
+        "bytes": 16,
+        "record_index": 23,
+        "table_offset": 1318098,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382c582b78149",
+      "current_hex": "202041646d6972616c21202573212020",
+      "source_Japanese": "提督！　%sです！",
+      "current_English": "  Admiral! %s!  ",
+      "english": "Admiral! %s!",
+      "independent_English": "Admiral! %s!",
+      "source_meaning": "A crew member formally addresses the admiral and identifies the current condition by name.",
+      "localization_note": "The clipped address and named hazard work as an immediate formal report for singular, plural and mass-noun conditions. Retain the wording and let the formatter replace old alignment padding.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 790,
+        "copy_end": 803,
+        "bytes": 12,
+        "record_index": 23,
+        "table_offset": 1318098,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2120257321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "2041646d6972616c2120546f726e61646f21",
+          "protected_phrases": [],
+          "ink_sha256": "2cb6f917e3a22f99786b0b56dd9e633318e26beda01d42329d46d2570d2fa6de"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "2041646d6972616c2120576869726c706f6f6c21",
+          "protected_phrases": [],
+          "ink_sha256": "711e2f8312c691b123924ed1732c14a6b811d1377191beadf74036f43f6d8e66"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "2041646d6972616c2120526565667321",
+          "protected_phrases": [],
+          "ink_sha256": "c0bea2e381b1e835d1efecc0bc6b6b62f2672a23edae0a823ab6ce34eeb0a121"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "2041646d6972616c212044726966742049636521",
+          "protected_phrases": [],
+          "ink_sha256": "cc3de19f93cc1d0e601ddf0936ed9f78bd5bba2ea5017190631ae17adddbe333"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_482",
+      "message_ID": 482,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 772,
+        "copy_end": 792,
+        "bytes": 18,
+        "record_index": 15,
+        "table_offset": 1318100,
+        "start_in_record": 16
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 807,
+        "copy_end": 826,
+        "bytes": 18,
+        "record_index": 24,
+        "table_offset": 1318100,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382be82e682c18149",
+      "current_hex": "202041646d6972616c212025732120202020",
+      "source_Japanese": "提督！　%sだよっ！",
+      "current_English": "  Admiral! %s!    ",
+      "english": "Hey, Admiral! %s!",
+      "independent_English": "Hey, Admiral! %s!",
+      "source_meaning": "An informal, animated voice calls to the admiral and points out the condition.",
+      "localization_note": "The quick informal call gives this variant the energy of the Japanese ending. The named condition remains a standalone alarm.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c212025732120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 803,
+        "copy_end": 822,
+        "bytes": 17,
+        "record_index": 24,
+        "table_offset": 1318100,
+        "start_in_record": 0,
+        "exact_stored_hex": "4865792c2041646d6972616c2120257321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "204865792c2041646d6972616c2120546f726e61646f21",
+          "protected_phrases": [],
+          "ink_sha256": "006502679f6fd26631547f9e850b9c9d73d6404da84979bc5b301117d4b88b3a"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "204865792c2041646d6972616c2120576869726c706f6f6c21",
+          "protected_phrases": [],
+          "ink_sha256": "86597af1104d83885f2242c480112882f7cd087d332bd83f02404e533ac1e01f"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "204865792c2041646d6972616c2120526565667321",
+          "protected_phrases": [],
+          "ink_sha256": "ef377f25af42a4c80d56d00d805dd85d003876aaadfa50326757e3b0bf3440d6"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "204865792c2041646d6972616c212044726966742049636521",
+          "protected_phrases": [],
+          "ink_sha256": "0fcb7470eb13ff7ddf5dda3491769e50db4959f4837cd49d07d9cd2da5363bff"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_483",
+      "message_ID": 483,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 792,
+        "copy_end": 808,
+        "bytes": 14,
+        "record_index": 16,
+        "table_offset": 1318102,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 826,
+        "copy_end": 841,
+        "bytes": 14,
+        "record_index": 25,
+        "table_offset": 1318102,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382be8149",
+      "current_hex": "2041646d6972616c212025732120",
+      "source_Japanese": "提督！　%sだ！",
+      "current_English": " Admiral! %s! ",
+      "english": "%s, Admiral!",
+      "independent_English": "%s, Admiral!",
+      "source_meaning": "A blunt voice urgently tells the admiral what the condition is.",
+      "localization_note": "Putting the danger first carries the original blunt emphasis without modifying or inflecting the runtime name.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c212025732120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 822,
+        "copy_end": 835,
+        "bytes": 12,
+        "record_index": 26,
+        "table_offset": 1318102,
+        "start_in_record": 0,
+        "exact_stored_hex": "25732c2041646d6972616c21",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "20546f726e61646f2c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "cd5f5000ab5328baf17b2aa28e67b9f17024b4ebdabffec14a435e4673e7f791"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "20576869726c706f6f6c2c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "9db699185de560b4c0a2946fd6daec7a9f9f913e018595686370071c300c4d20"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "2052656566732c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "b8600723c9ef69c967bce1e9a685832a5872e746fb605ac173576bace4c71ce0"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "204472696674204963652c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "eb707b6863faa16bcbd88501c7bc58e0c25d20e755cda1e5cebecb0b0358ed97"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_484",
+      "message_ID": 484,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 808,
+        "copy_end": 824,
+        "bytes": 16,
+        "record_index": 17,
+        "table_offset": 1318104,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 841,
+        "copy_end": 858,
+        "bytes": 16,
+        "record_index": 26,
+        "table_offset": 1318104,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382b682e18149",
+      "current_hex": "2041646d6972616c2120257321202020",
+      "source_Japanese": "提督！　%sじゃ！",
+      "current_English": " Admiral! %s!   ",
+      "english": "Ah, Admiral! %s!",
+      "independent_English": "Ah, Admiral! %s!",
+      "source_meaning": "An older-sounding voice addresses the admiral and identifies the condition with emphatic certainty.",
+      "localization_note": "The initial exclamation differentiates the older voice without a dialect spelling or an added claim about the condition.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2120257321202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 835,
+        "copy_end": 852,
+        "bytes": 16,
+        "record_index": 27,
+        "table_offset": 1318104,
+        "start_in_record": 0,
+        "exact_stored_hex": "41682c2041646d6972616c2120257321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "2041682c2041646d6972616c2120546f726e61646f21",
+          "protected_phrases": [],
+          "ink_sha256": "6611796cd6fde27e6028ad7befdd8b847e80d69539086f6620d04660c17ec300"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "2041682c2041646d6972616c2120576869726c706f6f6c21",
+          "protected_phrases": [],
+          "ink_sha256": "90cab1373f4d91cf3447dbb54e69915c2655f00665dd792c02143d36dae60b0f"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "2041682c2041646d6972616c2120526565667321",
+          "protected_phrases": [],
+          "ink_sha256": "2b8b553aebc0210c8b6e9faef91a0ecffa424279a2642b5a8ff1a0ebe07167b7"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "2041682c2041646d6972616c212044726966742049636521",
+          "protected_phrases": [],
+          "ink_sha256": "0b68326bc2f5a01cea0be1ef8a3d7120ef5f5c3ffb2275590ff82efce24db66d"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_485",
+      "message_ID": 485,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 824,
+        "copy_end": 848,
+        "bytes": 22,
+        "record_index": 17,
+        "table_offset": 1318106,
+        "start_in_record": 17
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 858,
+        "copy_end": 881,
+        "bytes": 22,
+        "record_index": 27,
+        "table_offset": 1318106,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b81498140257382be82a08149",
+      "current_hex": "202041646d6972616c21202573212020202020202020",
+      "source_Japanese": "ていとくー！　%sだあ！",
+      "current_English": "  Admiral! %s!        ",
+      "english": "Admiral! Admiral! %s!",
+      "independent_English": "Admiral! Admiral! %s!",
+      "source_meaning": "A youthful voice draws out the call to the admiral and blurts out the condition.",
+      "localization_note": "A repeated summons carries the younger voice's drawn-out call. The unchanged condition name lands as its own burst.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 852,
+        "copy_end": 875,
+        "bytes": 21,
+        "record_index": 28,
+        "table_offset": 1318106,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c212041646d6972616c2120257321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "2041646d6972616c212041646d6972616c2120546f726e61646f21",
+          "protected_phrases": [],
+          "ink_sha256": "bbaf9007417628e1f608d140d2b529f014a628a6840e8ecfac98198f2b34ee85"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "2041646d6972616c212041646d6972616c2120576869726c706f6f6c21",
+          "protected_phrases": [],
+          "ink_sha256": "1ec242aec7dcc247d3ec8b2b9995a3d1509d1fc8cc2eee21e0c990f09e4d3d94"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "2041646d6972616c212041646d6972616c2120526565667321",
+          "protected_phrases": [],
+          "ink_sha256": "506f5dd1ba7ec9ef0c67bfaaf87cbd831ee06c40387c098b54d1a1529b79d365"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "2041646d6972616c212041646d6972616c212044726966742049636521",
+          "protected_phrases": [],
+          "ink_sha256": "a025a359beb838be01c23ecb7bdf85ed846b407fed2d11147e65e53ba8dbc451"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_486",
+      "message_ID": 486,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 848,
+        "copy_end": 868,
+        "bytes": 18,
+        "record_index": 18,
+        "table_offset": 1318108,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 881,
+        "copy_end": 900,
+        "bytes": 18,
+        "record_index": 28,
+        "table_offset": 1318108,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382c582b782bc8149",
+      "current_hex": "2041646d6972616c21204974277320257321",
+      "source_Japanese": "提督！　%sですぞ！",
+      "current_English": " Admiral! It's %s!",
+      "english": "Oh! Admiral! %s!",
+      "independent_English": "Oh! Admiral! %s!",
+      "source_meaning": "A polite voice identifies the condition to the admiral with an emphatic ending.",
+      "localization_note": "The exclamation preserves the emphatic delivery and the speaker still uses the formal address. The old It's construction reads incorrectly with Reefs and other plural labels.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21204974277320257321",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 875,
+        "copy_end": 892,
+        "bytes": 16,
+        "record_index": 30,
+        "table_offset": 1318108,
+        "start_in_record": 0,
+        "exact_stored_hex": "4f68212041646d6972616c2120257321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Tornado"
+          ],
+          "display_hex": "204f68212041646d6972616c2120546f726e61646f21",
+          "protected_phrases": [],
+          "ink_sha256": "2fb1a939f0cf8b19dd54f2fd5a1a8bdc752c6fa1fe8c758da200ef0a7e9a9600"
+        },
+        {
+          "arguments": [
+            "Whirlpool"
+          ],
+          "display_hex": "204f68212041646d6972616c2120576869726c706f6f6c21",
+          "protected_phrases": [],
+          "ink_sha256": "ee3b51104e707f6f9db803364a86693f3a62dec2fd9dd799fc14bd005c9f7c81"
+        },
+        {
+          "arguments": [
+            "Reefs"
+          ],
+          "display_hex": "204f68212041646d6972616c2120526565667321",
+          "protected_phrases": [],
+          "ink_sha256": "d70512be2183c147d2879f92821f904ebecaffc4dce4e43be4953e2636cc928e"
+        },
+        {
+          "arguments": [
+            "Drift Ice"
+          ],
+          "display_hex": "204f68212041646d6972616c212044726966742049636521",
+          "protected_phrases": [],
+          "ink_sha256": "36700a5101034362d3309ddcbd97044874c1866a56c19d817c2b5a66abfc0369"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_487",
+      "message_ID": 487,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 868,
+        "copy_end": 892,
+        "bytes": 22,
+        "record_index": 19,
+        "table_offset": 1318110,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 900,
+        "copy_end": 923,
+        "bytes": 22,
+        "record_index": 29,
+        "table_offset": 1318110,
+        "start_in_record": 0
+      },
+      "source_hex": "936090f5956182aa94ad90b682b582dc82b582bd8149",
+      "current_hex": "20416e2065706964656d696321202020202020202020",
+      "source_Japanese": "伝染病が発生しました！",
+      "current_English": " An epidemic!         ",
+      "english": "An epidemic!",
+      "independent_English": "An epidemic has broken out!",
+      "source_meaning": "A direct report that an epidemic has broken out.",
+      "localization_note": "The terse alarm is a natural immediate report of the outbreak. It suits the direct speaker and allows the following alternatives to carry their own emotion.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20416e2065706964656d696321202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 892,
+        "copy_end": 905,
+        "bytes": 12,
+        "record_index": 31,
+        "table_offset": 1318110,
+        "start_in_record": 0,
+        "exact_stored_hex": "416e2065706964656d696321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20416e2065706964656d696321",
+          "protected_phrases": [],
+          "ink_sha256": "568f5ef9270fb65db4f34f1380138575fc2d559431b7006c5d1484f01615bdff"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_488",
+      "message_ID": 488,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 892,
+        "copy_end": 928,
+        "bytes": 35,
+        "record_index": 20,
+        "table_offset": 1318112,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 923,
+        "copy_end": 959,
+        "bytes": 35,
+        "record_index": 30,
+        "table_offset": 1318112,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814191e595cf82be81490a936090f5956182aa94ad90b682b582c482e98149",
+      "current_hex": "2041646d6972616c2c206469736173746572210a2020416e2065706964656d69632120",
+      "source_Japanese": "提督、大変だ！\n伝染病が発生してる！",
+      "current_English": " Admiral, disaster!\n  An epidemic! ",
+      "english": "Admiral, we've got trouble! There's an epidemic!",
+      "independent_English": "Admiral, we've got trouble! There's an epidemic!",
+      "source_meaning": "The speaker tells the admiral there's trouble: an epidemic is already underway.",
+      "localization_note": "Restores the speaker's natural warning that there is trouble and keeps the epidemic as the specific cause. The Japanese already presents it as underway.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2c206469736173746572210a2020416e2065706964656d69632120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 905,
+        "copy_end": 957,
+        "bytes": 51,
+        "record_index": 32,
+        "table_offset": 1318112,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c20776527766520676f742074726f75626c65210a20205468657265277320616e2065706964656d696321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c20776527766520676f742074726f75626c65210a20205468657265277320616e2065706964656d696321",
+          "protected_phrases": [
+            "Admiral, we've got trouble!",
+            "There's an epidemic!"
+          ],
+          "ink_sha256": "94560ab11d156e200ea4c0bd3e1e67983485c41d369c40119f1e1b3af146e3ec"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_489",
+      "message_ID": 489,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 928,
+        "copy_end": 964,
+        "bytes": 34,
+        "record_index": 21,
+        "table_offset": 1318114,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 959,
+        "copy_end": 994,
+        "bytes": 34,
+        "record_index": 31,
+        "table_offset": 1318114,
+        "start_in_record": 0
+      },
+      "source_hex": "91e595cf82e681498140936090f5956182aa94ad90b682b582c482a282dc82b78149",
+      "current_hex": "202044697361737465722120416e2065706964656d69632120202020202020202020",
+      "source_Japanese": "大変よ！　伝染病が発生しています！",
+      "current_English": "  Disaster! An epidemic!          ",
+      "english": "Oh no! There's an epidemic!",
+      "independent_English": "Oh no! There's an epidemic!",
+      "source_meaning": "A dismayed voice calls attention to an epidemic in progress.",
+      "localization_note": "The startled interjection suits the speaker's alarm and reads like speech. The original diagnosis stays explicit.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202044697361737465722120416e2065706964656d69632120202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 957,
+        "copy_end": 986,
+        "bytes": 27,
+        "record_index": 33,
+        "table_offset": 1318114,
+        "start_in_record": 0,
+        "exact_stored_hex": "4f68206e6f21205468657265277320616e2065706964656d696321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204f68206e6f21205468657265277320616e2065706964656d696321",
+          "protected_phrases": [],
+          "ink_sha256": "f78e0aae56a385a932a3a6b7bcedac69c5d9c25329b0468567a4b8259aa1a25d"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_490",
+      "message_ID": 490,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 964,
+        "copy_end": 996,
+        "bytes": 31,
+        "record_index": 22,
+        "table_offset": 1318116,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 994,
+        "copy_end": 1026,
+        "bytes": 31,
+        "record_index": 32,
+        "table_offset": 1318116,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a936090f5956182aa94ad90b682b582e282aa82c182bd8149",
+      "current_hex": "2041646d6972616c210a2020416e2065706964656d69632120202020202020",
+      "source_Japanese": "提督！\n伝染病が発生しやがった！",
+      "current_English": " Admiral!\n  An epidemic!       ",
+      "english": "Admiral! We've got a damn epidemic!",
+      "independent_English": "Admiral! Damn it, we've got an epidemic!",
+      "source_meaning": "The speaker calls to the admiral and breaks the news of the epidemic with a coarse edge.",
+      "localization_note": "The mild profanity conveys the contempt and frustration in the speaker's rough ending. The speaker addresses the admiral before identifying the illness.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c210a2020416e2065706964656d69632120202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 986,
+        "copy_end": 1022,
+        "bytes": 35,
+        "record_index": 35,
+        "table_offset": 1318116,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2120576527766520676f7420612064616d6e2065706964656d696321",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2120576527766520676f7420612064616d6e2065706964656d696321",
+          "protected_phrases": [],
+          "ink_sha256": "1d3c2fb475dbd3bf18eb3061b33c3c26bc5a66c442e2ae8e7191e2305c2c4cc3"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_491",
+      "message_ID": 491,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 996,
+        "copy_end": 1040,
+        "bytes": 43,
+        "record_index": 23,
+        "table_offset": 1318118,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1026,
+        "copy_end": 1070,
+        "bytes": 43,
+        "record_index": 33,
+        "table_offset": 1318118,
+        "start_in_record": 0
+      },
+      "source_hex": "936090f5956182aa94ad90b682b582bd82bc81490a82b182e882e1814182e282c182a982a282b682e182c8",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "伝染病が発生したぞ！\nこりゃ、やっかいじゃな",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "An epidemic's broken out! This'll be trouble.",
+      "independent_English": "An epidemic's broken out! This'll be trouble.",
+      "source_meaning": "An emphatic report of an outbreak followed by a measured warning that it will be troublesome.",
+      "localization_note": "Replaces the unrelated mystery at sea. The first sentence raises the alarm and the second keeps the older speaker's measured reaction.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1022,
+        "copy_end": 1072,
+        "bytes": 48,
+        "record_index": 36,
+        "table_offset": 1318118,
+        "start_in_record": 0,
+        "exact_stored_hex": "20416e2065706964656d696327732062726f6b656e206f7574210a202054686973276c6c2062652074726f75626c652e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20416e2065706964656d696327732062726f6b656e206f7574210a202054686973276c6c2062652074726f75626c652e",
+          "protected_phrases": [
+            "An epidemic's broken out!",
+            "This'll be trouble."
+          ],
+          "ink_sha256": "b7a8cb85e06b1814ee9df248f4a0074edca773b533c52a9e3b6759bb27777d18"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_492",
+      "message_ID": 492,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1040,
+        "copy_end": 1084,
+        "bytes": 43,
+        "record_index": 24,
+        "table_offset": 1318120,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1070,
+        "copy_end": 1114,
+        "bytes": 43,
+        "record_index": 34,
+        "table_offset": 1318120,
+        "start_in_record": 0
+      },
+      "source_hex": "82bd82a282d682f182be815b81490a82b182ed82a2936090f5956182aa82cd82e282c182c482e982e68149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "たいへんだー！\nこわい伝染病がはやってるよ！",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "Oh no! There's a scary disease going around!",
+      "independent_English": "Oh no! There's a scary disease going around!",
+      "source_meaning": "A frightened younger voice raises the alarm about a scary infectious disease going around.",
+      "localization_note": "Replaces the unrelated mystery at sea. The younger speaker describes how frightening the disease is and that it is spreading.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1072,
+        "copy_end": 1118,
+        "bytes": 44,
+        "record_index": 38,
+        "table_offset": 1318120,
+        "start_in_record": 0,
+        "exact_stored_hex": "4f68206e6f2120546865726527732061207363617279206469736561736520676f696e672061726f756e6421",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204f68206e6f212054686572652773206120736361727920646973656173650a2020676f696e672061726f756e6421",
+          "protected_phrases": [],
+          "ink_sha256": "ab08211cfb1d6320b195172964ff69213e5a5176d8c6c5e7c3c38f4f4f9a48a6"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_493",
+      "message_ID": 493,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1084,
+        "copy_end": 1132,
+        "bytes": 45,
+        "record_index": 25,
+        "table_offset": 1318122,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1114,
+        "copy_end": 1160,
+        "bytes": 45,
+        "record_index": 35,
+        "table_offset": 1318122,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c28141959782aa82e282f182c582b582dc82a282dc82b582bd0a89bd82e082c582ab82dc82b982f18163",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a202020202020",
+      "source_Japanese": "提督、風がやんでしまいました\n何もできません…",
+      "current_English": "Something strange has appeared at sea.\n      ",
+      "english": "Admiral, the wind's died. There's nothing we can do.",
+      "independent_English": "Admiral, the wind's died. There's nothing we can do.",
+      "source_meaning": "The speaker reports to the admiral that the wind has died and there is nothing they can do.",
+      "localization_note": "Restores the report to the admiral and the speaker's resignation. The calm has stopped the ship's progress.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1118,
+        "copy_end": 1174,
+        "bytes": 55,
+        "record_index": 40,
+        "table_offset": 1318122,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c207468652077696e64277320646965642e0a202054686572652773206e6f7468696e672077652063616e20646f2e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c207468652077696e64277320646965642e0a202054686572652773206e6f7468696e672077652063616e20646f2e",
+          "protected_phrases": [
+            "Admiral, the wind's died.",
+            "There's nothing we can do."
+          ],
+          "ink_sha256": "d56eceda1cedf479346ed09b98524b6a61d13871f2b1f208a3560aeeb6137f0c"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": true,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_494",
+      "message_ID": 494,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1132,
+        "copy_end": 1152,
+        "bytes": 20,
+        "record_index": 26,
+        "table_offset": 1318124,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1160,
+        "copy_end": 1181,
+        "bytes": 20,
+        "record_index": 36,
+        "table_offset": 1318124,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82e282f182c582b582dc82c182bd8163",
+      "current_hex": "536f6d657468696e6720737472616e6765206861",
+      "source_Japanese": "風がやんでしまった…",
+      "current_English": "Something strange ha",
+      "english": "The wind's died...",
+      "independent_English": "The wind's died...",
+      "source_meaning": "The speaker observes that the wind has died and trails off.",
+      "localization_note": "Restores the original brief observation and trailing pause. The current bytes stop in the middle of an unrelated sentence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        1
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e6765206861",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1174,
+        "copy_end": 1193,
+        "bytes": 18,
+        "record_index": 41,
+        "table_offset": 1318124,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468652077696e64277320646965642e2e2e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205468652077696e64277320646965642e2e2e",
+          "protected_phrases": [],
+          "ink_sha256": "5198ccc030df619f991b6258123407ece2d1ac8a3e338d20ba0142d799c43861"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_495",
+      "message_ID": 495,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1152,
+        "copy_end": 1200,
+        "bytes": 47,
+        "record_index": 26,
+        "table_offset": 1318126,
+        "start_in_record": 22
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1181,
+        "copy_end": 1229,
+        "bytes": 47,
+        "record_index": 37,
+        "table_offset": 1318126,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082c18141959782aa82e282f182b682e182c182bd81630a82b582ce82e782ad91d282c282b582a982c882a282cb",
+      "current_hex": "73206170706561726564206174207365612e0a20202020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "あっ、風がやんじゃった…\nしばらく待つしかないね",
+      "current_English": "s appeared at sea.\n                            ",
+      "english": "Oh, the wind's died... I guess we'll have to wait a while.",
+      "independent_English": "Oh, the wind's died... I guess we'll have to wait a while.",
+      "source_meaning": "The speaker notices the wind dying and resigns themself to waiting a while.",
+      "localization_note": "Restores the casual realization and reluctant conclusion. The current bytes begin with the broken tail of an unrelated sentence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "73206170706561726564206174207365612e0a20202020202020202020202020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1193,
+        "copy_end": 1255,
+        "bytes": 61,
+        "record_index": 42,
+        "table_offset": 1318126,
+        "start_in_record": 0,
+        "exact_stored_hex": "204f682c207468652077696e64277320646965642e2e2e0a202049206775657373207765276c6c206861766520746f20776169742061207768696c652e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204f682c207468652077696e64277320646965642e2e2e0a202049206775657373207765276c6c206861766520746f20776169742061207768696c652e",
+          "protected_phrases": [
+            "Oh, the wind's died...",
+            "I guess we'll have to wait a while."
+          ],
+          "ink_sha256": "8075baa329af202262aebdc4dc4d90f23f008a8b1485e512132c51f2169d7b40"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_496",
+      "message_ID": 496,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1200,
+        "copy_end": 1260,
+        "bytes": 57,
+        "record_index": 27,
+        "table_offset": 1318128,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1229,
+        "copy_end": 1286,
+        "bytes": 56,
+        "record_index": 38,
+        "table_offset": 1318128,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82bb82e682c682e0908182a982c882a282ed8163814293e282c582b782cb0a82a882c682c882b582ad91d282bf82dc82b582e582a4",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020202020202020202020",
+      "source_Japanese": "風がそよとも吹かないわ…。凪ですね\nおとなしく待ちましょう",
+      "current_English": "Something strange has appeared at sea.\n                 ",
+      "english": "There's not a breath of wind. We're becalmed. Let's sit tight.",
+      "independent_English": "There's not a breath of wind. We're becalmed. Let's sit tight.",
+      "source_meaning": "There isn't even a breath of wind. The speaker calls it a calm and suggests waiting quietly.",
+      "localization_note": "Restores the complete calm, the sailing term, and the practical suggestion to wait. The short sentences suit the composed response.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1255,
+        "copy_end": 1322,
+        "bytes": 65,
+        "record_index": 43,
+        "table_offset": 1318128,
+        "start_in_record": 0,
+        "exact_stored_hex": "2054686572652773206e6f74206120627265617468206f662077696e642e0a2020576527726520626563616c6d65642e204c65742773207369742074696768742e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2054686572652773206e6f74206120627265617468206f662077696e642e0a2020576527726520626563616c6d65642e204c65742773207369742074696768742e",
+          "protected_phrases": [
+            "There's not a breath of wind.",
+            "We're becalmed.",
+            "Let's sit tight."
+          ],
+          "ink_sha256": "5588292f557b5d3695f166575e5704165df392d992371dee60d21c83a21206a7"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_497",
+      "message_ID": 497,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1260,
+        "copy_end": 1312,
+        "bytes": 49,
+        "record_index": 28,
+        "table_offset": 1318130,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1286,
+        "copy_end": 1336,
+        "bytes": 49,
+        "record_index": 39,
+        "table_offset": 1318130,
+        "start_in_record": 0
+      },
+      "source_hex": "82bf82c18141959782aa8aae915382c98e7e82dc82c182bf82dc82c182bd82ba0a91d282c282b582a982cb82a682c88163",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020",
+      "source_Japanese": "ちっ、風が完全に止まっちまったぜ\n待つしかねえな…",
+      "current_English": "Something strange has appeared at sea.\n          ",
+      "english": "Tch. The wind's gone dead. Guess we'll have to wait.",
+      "independent_English": "Tch. The wind's gone dead. Guess we'll have to wait.",
+      "source_meaning": "The speaker clicks their tongue at the wind stopping completely and reluctantly admits they have to wait.",
+      "localization_note": "Restores the tongue-click and rough resignation. The wind has stopped entirely and there is no immediate alternative.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1322,
+        "copy_end": 1378,
+        "bytes": 55,
+        "record_index": 45,
+        "table_offset": 1318130,
+        "start_in_record": 0,
+        "exact_stored_hex": "205463682e205468652077696e64277320676f6e6520646561642e0a20204775657373207765276c6c206861766520746f20776169742e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205463682e205468652077696e64277320676f6e6520646561642e0a20204775657373207765276c6c206861766520746f20776169742e",
+          "protected_phrases": [
+            "Tch. The wind's gone dead.",
+            "Guess we'll have to wait."
+          ],
+          "ink_sha256": "9da9e8b8de2f2b221a22b8475ba1060a62a98b4bbecdeefab7901a41718db5b1"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_498",
+      "message_ID": 498,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1312,
+        "copy_end": 1360,
+        "bytes": 47,
+        "record_index": 29,
+        "table_offset": 1318132,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1336,
+        "copy_end": 1384,
+        "bytes": 47,
+        "record_index": 40,
+        "table_offset": 1318132,
+        "start_in_record": 0
+      },
+      "source_hex": "816393e282be82c8814192f193c20a959782c98e7e82dc82e782ea82c482cd82c782a482b582e682a482e082c882a2",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+      "source_Japanese": "…凪だな、提督\n風に止まられてはどうしようもない",
+      "current_English": "Something strange has appeared at sea.\n        ",
+      "english": "...We're becalmed, Admiral. Nothing we can do without wind.",
+      "independent_English": "...We're becalmed, Admiral. Nothing we can do without wind.",
+      "source_meaning": "The speaker pauses, tells the admiral they're becalmed, and says there's nothing to be done if the wind won't blow.",
+      "localization_note": "Preserves the opening hesitation and restrained address. It restores both the calm and the speaker's conclusion.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1378,
+        "copy_end": 1442,
+        "bytes": 62,
+        "record_index": 46,
+        "table_offset": 1318132,
+        "start_in_record": 0,
+        "exact_stored_hex": "202e2e2e576527726520626563616c6d65642c2041646d6972616c2e0a20204e6f7468696e672077652063616e20646f20776974686f75742077696e642e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "202e2e2e576527726520626563616c6d65642c2041646d6972616c2e0a20204e6f7468696e672077652063616e20646f20776974686f75742077696e642e",
+          "protected_phrases": [
+            "...We're becalmed, Admiral.",
+            "Nothing we can do without wind."
+          ],
+          "ink_sha256": "d0bdfe38faa974c02790f24f3ee95aab6b91b5218bc80f3b680c8c4d1981d156"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_499",
+      "message_ID": 499,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1360,
+        "copy_end": 1416,
+        "bytes": 55,
+        "record_index": 30,
+        "table_offset": 1318134,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1384,
+        "copy_end": 1440,
+        "bytes": 55,
+        "record_index": 41,
+        "table_offset": 1318134,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82c882ad82c882c182bf82e182c182bd81630a82b582e582a482aa82c882a282b5814182cc82f182d182e891d282c682a482e6",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020202020202020",
+      "source_Japanese": "風がなくなっちゃった…\nしょうがないし、のんびり待とうよ",
+      "current_English": "Something strange has appeared at sea.\n                ",
+      "english": "The wind's gone... Nothing we can do. Let's just take it easy while we wait.",
+      "independent_English": "The wind's gone... Nothing we can do. Let's just take it easy while we wait.",
+      "source_meaning": "A youthful voice notices the wind is gone and suggests taking it easy while they wait.",
+      "localization_note": "Restores the upbeat young speaker's suggestion to make the best of waiting. The wind still leaves them no choice.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1442,
+        "copy_end": 1524,
+        "bytes": 81,
+        "record_index": 48,
+        "table_offset": 1318134,
+        "start_in_record": 0,
+        "exact_stored_hex": "205468652077696e64277320676f6e652e2e2e0a20204e6f7468696e672077652063616e20646f2e204c65742773206a7573740a202074616b652069742065617379207768696c6520776520776169742e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205468652077696e64277320676f6e652e2e2e0a20204e6f7468696e672077652063616e20646f2e204c65742773206a7573740a202074616b652069742065617379207768696c6520776520776169742e",
+          "protected_phrases": [
+            "The wind's gone...",
+            "Nothing we can do.",
+            "Let's just",
+            "take it easy while we wait."
+          ],
+          "ink_sha256": "1d191e4d950ef820faa6f42a1ee53a7183506248be88e8584947e8e9d27d2594"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_500",
+      "message_ID": 500,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1416,
+        "copy_end": 1464,
+        "bytes": 47,
+        "record_index": 31,
+        "table_offset": 1318136,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1440,
+        "copy_end": 1488,
+        "bytes": 47,
+        "record_index": 42,
+        "table_offset": 1318136,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82e282f182c582b582dc82c182bd81630a8e9f82cc959782f091d282c282b582a982c882a282c582b782c8",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+      "source_Japanese": "風がやんでしまった…\n次の風を待つしかないですな",
+      "current_English": "Something strange has appeared at sea.\n        ",
+      "english": "The wind's died... All we can do is wait for it to pick up again.",
+      "independent_English": "The wind's died... All we can do is wait for it to pick up again.",
+      "source_meaning": "The wind has died, and the speaker concludes they have to wait for the next breeze.",
+      "localization_note": "Restores the observation and makes the next breeze the condition for moving again. The sentence keeps the patient tone.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1524,
+        "copy_end": 1594,
+        "bytes": 68,
+        "record_index": 49,
+        "table_offset": 1318136,
+        "start_in_record": 0,
+        "exact_stored_hex": "205468652077696e64277320646965642e2e2e20416c6c2077652063616e20646f0a20206973207761697420666f7220697420746f207069636b20757020616761696e2e",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205468652077696e64277320646965642e2e2e20416c6c2077652063616e20646f0a20206973207761697420666f7220697420746f207069636b20757020616761696e2e",
+          "protected_phrases": [
+            "is wait for it to pick up again."
+          ],
+          "ink_sha256": "d737340ead7a2d0d7cb21a76dab0717e58c7b10ab5b3320eb0e56315926855d4"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_501",
+      "message_ID": 501,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1464,
+        "copy_end": 1504,
+        "bytes": 37,
+        "record_index": 32,
+        "table_offset": 1318138,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1488,
+        "copy_end": 1526,
+        "bytes": 37,
+        "record_index": 43,
+        "table_offset": 1318138,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182c582b781490a8b4382f082c282af82c482ad82be82b382a28149",
+      "current_hex": "202041646d6972616c2c20736861726b73210a20204265206361726566756c212020202020",
+      "source_Japanese": "提督、サメです！\n気をつけてください！",
+      "current_English": "  Admiral, sharks!\n  Be careful!     ",
+      "english": "Admiral, sharks! Be careful!",
+      "independent_English": "Admiral, sharks! Please be careful!",
+      "source_meaning": "A formal warning to the admiral that there are sharks, followed by a request to be careful.",
+      "localization_note": "The direct report and caution preserve the formal address, the hazard and the original request. The urgent phrasing is natural as spoken.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c2c20736861726b73210a20204265206361726566756c212020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1594,
+        "copy_end": 1624,
+        "bytes": 28,
+        "record_index": 51,
+        "table_offset": 1318138,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c20736861726b7321204265206361726566756c21",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c20736861726b7321204265206361726566756c21",
+          "protected_phrases": [],
+          "ink_sha256": "93b4a52be1b25da0729152d936c5af7cf3da2efb121a21af175ea84723c4472d"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_502",
+      "message_ID": 502,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1504,
+        "copy_end": 1540,
+        "bytes": 33,
+        "record_index": 33,
+        "table_offset": 1318140,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1526,
+        "copy_end": 1560,
+        "bytes": 33,
+        "record_index": 44,
+        "table_offset": 1318140,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182aa82a282e982e681490a8b4382f082c282af82c48149",
+      "current_hex": "41646d6972616c2c20736861726b73210a20204265206361726566756c21202020",
+      "source_Japanese": "提督、サメがいるよ！\n気をつけて！",
+      "current_English": "Admiral, sharks!\n  Be careful!   ",
+      "english": "Admiral, there are sharks! Watch out!",
+      "independent_English": "Admiral, there are sharks! Watch out!",
+      "source_meaning": "An informal shark sighting and quick warning to the admiral.",
+      "localization_note": "Keeps the informal speaker's quick warning. The conversational delivery distinguishes it from the direct formal version.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c2c20736861726b73210a20204265206361726566756c21202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1624,
+        "copy_end": 1666,
+        "bytes": 40,
+        "record_index": 53,
+        "table_offset": 1318140,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c2074686572652061726520736861726b73210a20205761746368206f757421",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c2074686572652061726520736861726b73210a20205761746368206f757421",
+          "protected_phrases": [
+            "Watch out!"
+          ],
+          "ink_sha256": "1dd1f2b49f7ae2711859e9f7eb52b8ed90d621f9d0a47d0ebcc2adcfc7d84b25"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_503",
+      "message_ID": 503,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1540,
+        "copy_end": 1584,
+        "bytes": 41,
+        "record_index": 34,
+        "table_offset": 1318142,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1560,
+        "copy_end": 1602,
+        "bytes": 41,
+        "record_index": 45,
+        "table_offset": 1318142,
+        "start_in_record": 0
+      },
+      "source_hex": "82ab82e182a082a082c181418354838182e682c181490a92f193c282e08b4382f082c282af82c48149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020",
+      "source_Japanese": "きゃああっ、サメよっ！\n提督も気をつけて！",
+      "current_English": "Something strange has appeared at sea.\n  ",
+      "english": "Aah! Sharks! Look out, Admiral!",
+      "independent_English": "Aah! Sharks! Watch out, Admiral!",
+      "source_meaning": "A startled cry on spotting sharks, followed by a warning for the admiral to watch out too.",
+      "localization_note": "Replaces the unrelated mystery report with the startled cry and the original concern for the admiral.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1666,
+        "copy_end": 1698,
+        "bytes": 31,
+        "record_index": 55,
+        "table_offset": 1318142,
+        "start_in_record": 0,
+        "exact_stored_hex": "4161682120536861726b7321204c6f6f6b206f75742c2041646d6972616c21",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204161682120536861726b7321204c6f6f6b206f75742c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "44e0782e745ee8362dbd567a076ac6e2b7df1eea11b3fa9e90d6c7827990e952"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_504",
+      "message_ID": 504,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1584,
+        "copy_end": 1624,
+        "bytes": 39,
+        "record_index": 35,
+        "table_offset": 1318144,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1602,
+        "copy_end": 1642,
+        "bytes": 39,
+        "record_index": 46,
+        "table_offset": 1318144,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182aa82a282e982ba81490a8b4382f082c282af82c482ad82ea82e68149",
+      "current_hex": "536861726b732c2041646d6972616c210a20204265206361726566756c21202020202020202020",
+      "source_Japanese": "提督、サメがいるぜ！\n気をつけてくれよ！",
+      "current_English": "Sharks, Admiral!\n  Be careful!         ",
+      "english": "Sharks, Admiral! Watch yourself!",
+      "independent_English": "Sharks, Admiral! Watch yourself!",
+      "source_meaning": "A blunt, rough-voiced warning to the admiral about sharks.",
+      "localization_note": "Preserves the hazard-first order that already works and gives the warning the source speaker's rough, direct cadence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536861726b732c2041646d6972616c210a20204265206361726566756c21202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1698,
+        "copy_end": 1732,
+        "bytes": 32,
+        "record_index": 56,
+        "table_offset": 1318144,
+        "start_in_record": 0,
+        "exact_stored_hex": "536861726b732c2041646d6972616c2120576174636820796f757273656c6621",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20536861726b732c2041646d6972616c2120576174636820796f757273656c6621",
+          "protected_phrases": [],
+          "ink_sha256": "c9695a7cbfaf000df2bb09653374506c49784b8295f9c921c64345e7f0e06ff3"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_505",
+      "message_ID": 505,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1624,
+        "copy_end": 1664,
+        "bytes": 37,
+        "record_index": 36,
+        "table_offset": 1318146,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1642,
+        "copy_end": 1680,
+        "bytes": 37,
+        "record_index": 47,
+        "table_offset": 1318146,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182b682e181490a8b4382f082c282af82e982f182b682e182e68149",
+      "current_hex": "202041646d6972616c2c20736861726b73210a202054616b65206361726521202020202020",
+      "source_Japanese": "提督、サメじゃ！\n気をつけるんじゃよ！",
+      "current_English": "  Admiral, sharks!\n  Take care!      ",
+      "english": "Admiral, sharks! Take care!",
+      "independent_English": "Admiral, those are sharks! Mind yourself now!",
+      "source_meaning": "An older-sounding voice identifies the sharks and urges the admiral to take care.",
+      "localization_note": "The warning identifies the sharks and the older speaker's short Take care still sounds natural in context. Retain the wording and remove obsolete spacing through formatting.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c2c20736861726b73210a202054616b65206361726521202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1732,
+        "copy_end": 1760,
+        "bytes": 27,
+        "record_index": 58,
+        "table_offset": 1318146,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c20736861726b73212054616b65206361726521",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c20736861726b73212054616b65206361726521",
+          "protected_phrases": [],
+          "ink_sha256": "821cb9f6394d744d0e4326f32a7b07738ba96d908bd031f26cfe9c3f66728c8c"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_506",
+      "message_ID": 506,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1664,
+        "copy_end": 1704,
+        "bytes": 39,
+        "record_index": 37,
+        "table_offset": 1318148,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1680,
+        "copy_end": 1720,
+        "bytes": 39,
+        "record_index": 48,
+        "table_offset": 1318148,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482ed82a082f181418354838182be82a081490a92f193c282e08b4382f082c282af82c48149",
+      "current_hex": "57616161682c20736861726b73210a20204265206361726566756c2c2041646d6972616c212020",
+      "source_Japanese": "うわあん、サメだあ！\n提督も気をつけて！",
+      "current_English": "Waaah, sharks!\n  Be careful, Admiral!  ",
+      "english": "Eek! Sharks! Be careful, Admiral!",
+      "independent_English": "Eek! Sharks! Watch out, Admiral!",
+      "source_meaning": "A frightened youthful cry about sharks, with concern for the admiral too.",
+      "localization_note": "Keeps the frightened younger voice and its concern for the admiral. The existing caution is sound; the new interjection makes the cry readable.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57616161682c20736861726b73210a20204265206361726566756c2c2041646d6972616c212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1760,
+        "copy_end": 1794,
+        "bytes": 33,
+        "record_index": 59,
+        "table_offset": 1318148,
+        "start_in_record": 0,
+        "exact_stored_hex": "45656b2120536861726b7321204265206361726566756c2c2041646d6972616c21",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2045656b2120536861726b7321204265206361726566756c2c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "c51c8f761f51a97720cd56ccb74f7a78868ff4deafcf8edcd1aadef94ea794ab"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_507",
+      "message_ID": 507,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1704,
+        "copy_end": 1748,
+        "bytes": 43,
+        "record_index": 38,
+        "table_offset": 1318150,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1720,
+        "copy_end": 1764,
+        "bytes": 43,
+        "record_index": 49,
+        "table_offset": 1318150,
+        "start_in_record": 0
+      },
+      "source_hex": "82a882a882c181418354838182c582b782bc81490a8b4382f082c282af82c482ad82be82b382a282e68149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "おおっ、サメですぞ！\n気をつけてくださいよ！",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "Whoa! Sharks! Be careful, Admiral!",
+      "independent_English": "Whoa, sharks! Please be careful, Admiral!",
+      "source_meaning": "A startled exclamation, then an emphatic but polite shark warning to the admiral.",
+      "localization_note": "Restores the source's startled opening, the specific danger, and the polite warning to the admiral.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 6,
+        "offset": 1794,
+        "copy_end": 1830,
+        "bytes": 34,
+        "record_index": 60,
+        "table_offset": 1318150,
+        "start_in_record": 0,
+        "exact_stored_hex": "57686f612120536861726b7321204265206361726566756c2c2041646d6972616c21",
+        "ROM_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2057686f612120536861726b7321204265206361726566756c2c2041646d6972616c21",
+          "protected_phrases": [],
+          "ink_sha256": "741d7f420d1a13fd97df743aea4ae165559105ad52472204b0b84f0d1314a882"
+        }
+      ],
+      "native_floating_name_cases": null,
+      "gameplay_observed": false,
+      "new_credit": 1
+    }
+  ],
+  "actual_verification_scope": {
+    "observed_notice_IDs": [
+      97,
+      493
+    ],
+    "stored_templates": 28,
+    "portrait_pages": 45,
+    "fresh_viewed_pages": 10,
+    "reused_exact_viewed_pages": 35,
+    "native_selector_cases": 1512,
+    "crew_voice_choices": 828,
+    "floating_name_expansions": 207,
+    "fixture_scope": "Two isolated voyages each use one temporary condition-selector instruction",
+    "floating_notices_with_original_earned_levels": 2,
+    "original_becalmed_warning_and_dismissal": true,
+    "ordinary_reef_warning_observed": false,
+    "hardware": false
+  },
+  "full_goal_complete": false
+}

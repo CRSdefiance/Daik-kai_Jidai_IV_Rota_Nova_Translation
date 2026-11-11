@@ -1,3 +1,21 @@
+# Current editorial checkpoint - 2026-11-11
+
+The 41 leak, fire, and supply reports are registered. The ledger now credits 26,220 reviews.
+
+Continue from [the registered emergency checkpoint](editorial_ship_emergency_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The unrest and mutiny exchange is registered across 65 dialogue records and three choices. The ledger now credits 26,179 reviews.
+
+Continue from [the registered mutiny checkpoint](editorial_mutiny_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The sailing alerts and floating level-up notice are registered across 28 records. The ledger now credits 26,111 reviews.
+
+Continue from [the registered sailing-alert checkpoint](editorial_sailing_alerts_registered_20261111.md).
+
 # Current editorial checkpoint - 2026-11-10
 
 The 98 shared sea-event messages are registered. The ledger now credits 26,083 reviews.

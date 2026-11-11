@@ -1,0 +1,6733 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "registered_input": {
+    "candidate": "out\\sea_events_registered_20261110_v2\\Translation_DS_All_Routes_Sea_Events_20261110_candidate.nds",
+    "candidate_sha256": "97882455ccb4c7f66aa4dcb4d78ccffd0842bbd0e853887058434cf515fc4e63",
+    "ARM9_sha256": "dca374a6982027e523e3f2e4733c1c02aab4796f6321583a408a95b9ca6cb7ee",
+    "COMMON_sha256": "2f67d95621e0d5d94625592fdcf3faf0ebdfd42f1258a6624f099b4767e86669",
+    "release_proof": "releases\\all_routes_editorial_20261110_sea_events_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "30ac47d63c2e4e5622dd9b017c91c48a9959c6ed98e5cabc7965dbacb07a6fe4",
+    "startup_proof": "releases\\all_routes_editorial_20261110_sea_events_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "18e2b9d97d87f0f80daa298fd6c0fcf05c30f780b1875c1c2b444e137b1ed982",
+    "snapshot": {
+      "path": "out\\sea_events_20261110_v2\\own_startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "03fb3a4f8e5b8b7e437587805a16be9e50fb0a493e1a75b7617d9a86d88f9f4c",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "source_ROM": "work\\clean.nds",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_97",
+      "message_ID": 97,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3444,
+        "copy_end": 3460,
+        "bytes": 14,
+        "record_index": 73,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3901,
+        "copy_end": 3917,
+        "bytes": 14,
+        "record_index": 102,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "source_hex": "25738141826b82968274826f8149",
+      "current_hex": "25738141826b82968274826f8149",
+      "source_Japanese": "%s、ＬｖＵＰ！",
+      "current_English": "%s、ＬｖＵＰ！",
+      "english": "%s leveled up!",
+      "independent_English": "%s leveled up!",
+      "source_meaning": "The named character has gone up a level. The Japanese uses a short exclamatory game abbreviation.",
+      "localization_note": "Translate the Japanese abbreviation as a short, familiar game notification. The original getter still provides the character name. The separately formatted modal at 335 remains outside this batch.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named actor"
+      ],
+      "speaker": "Floating system notice",
+      "context": "The named crewmember gains a level. The original name getter feeds a short floating Sea View notification. Two actors can gain levels and display notices at the same time.",
+      "original_selector_slots": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "25738141826b82968274826f8149",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            176,
+            36235020,
+            4273
+          ]
+        ],
+        "exact_instruction_count": 175,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_481",
+      "message_ID": 481,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 756,
+        "copy_end": 772,
+        "bytes": 16,
+        "record_index": 15,
+        "table_offset": 1318098,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 790,
+        "copy_end": 807,
+        "bytes": 16,
+        "record_index": 23,
+        "table_offset": 1318098,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382c582b78149",
+      "current_hex": "202041646d6972616c21202573212020",
+      "source_Japanese": "提督！　%sです！",
+      "current_English": "  Admiral! %s!  ",
+      "english": "Admiral! %s!",
+      "independent_English": "Admiral! %s!",
+      "source_meaning": "A crew member formally addresses the admiral and identifies the current condition by name.",
+      "localization_note": "The clipped address and named hazard work as an immediate formal report for singular, plural and mass-noun conditions. Retain the wording and let the formatter replace old alignment padding.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_482",
+      "message_ID": 482,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 772,
+        "copy_end": 792,
+        "bytes": 18,
+        "record_index": 15,
+        "table_offset": 1318100,
+        "start_in_record": 16
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 807,
+        "copy_end": 826,
+        "bytes": 18,
+        "record_index": 24,
+        "table_offset": 1318100,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382be82e682c18149",
+      "current_hex": "202041646d6972616c212025732120202020",
+      "source_Japanese": "提督！　%sだよっ！",
+      "current_English": "  Admiral! %s!    ",
+      "english": "Hey, Admiral! %s!",
+      "independent_English": "Hey, Admiral! %s!",
+      "source_meaning": "An informal, animated voice calls to the admiral and points out the condition.",
+      "localization_note": "The quick informal call gives this variant the energy of the Japanese ending. The named condition remains a standalone alarm.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c212025732120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_483",
+      "message_ID": 483,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 792,
+        "copy_end": 808,
+        "bytes": 14,
+        "record_index": 16,
+        "table_offset": 1318102,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 826,
+        "copy_end": 841,
+        "bytes": 14,
+        "record_index": 25,
+        "table_offset": 1318102,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382be8149",
+      "current_hex": "2041646d6972616c212025732120",
+      "source_Japanese": "提督！　%sだ！",
+      "current_English": " Admiral! %s! ",
+      "english": "%s, Admiral!",
+      "independent_English": "%s, Admiral!",
+      "source_meaning": "A blunt voice urgently tells the admiral what the condition is.",
+      "localization_note": "Putting the danger first carries the original blunt emphasis without modifying or inflecting the runtime name.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c212025732120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_484",
+      "message_ID": 484,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 808,
+        "copy_end": 824,
+        "bytes": 16,
+        "record_index": 17,
+        "table_offset": 1318104,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 841,
+        "copy_end": 858,
+        "bytes": 16,
+        "record_index": 26,
+        "table_offset": 1318104,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382b682e18149",
+      "current_hex": "2041646d6972616c2120257321202020",
+      "source_Japanese": "提督！　%sじゃ！",
+      "current_English": " Admiral! %s!   ",
+      "english": "Ah, Admiral! %s!",
+      "independent_English": "Ah, Admiral! %s!",
+      "source_meaning": "An older-sounding voice addresses the admiral and identifies the condition with emphatic certainty.",
+      "localization_note": "The initial exclamation differentiates the older voice without a dialect spelling or an added claim about the condition.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2120257321202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_485",
+      "message_ID": 485,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 824,
+        "copy_end": 848,
+        "bytes": 22,
+        "record_index": 17,
+        "table_offset": 1318106,
+        "start_in_record": 17
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 858,
+        "copy_end": 881,
+        "bytes": 22,
+        "record_index": 27,
+        "table_offset": 1318106,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b81498140257382be82a08149",
+      "current_hex": "202041646d6972616c21202573212020202020202020",
+      "source_Japanese": "ていとくー！　%sだあ！",
+      "current_English": "  Admiral! %s!        ",
+      "english": "Admiral! Admiral! %s!",
+      "independent_English": "Admiral! Admiral! %s!",
+      "source_meaning": "A youthful voice draws out the call to the admiral and blurts out the condition.",
+      "localization_note": "A repeated summons carries the younger voice's drawn-out call. The unchanged condition name lands as its own burst.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_486",
+      "message_ID": 486,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 848,
+        "copy_end": 868,
+        "bytes": 18,
+        "record_index": 18,
+        "table_offset": 1318108,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 881,
+        "copy_end": 900,
+        "bytes": 18,
+        "record_index": 28,
+        "table_offset": 1318108,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140257382c582b782bc8149",
+      "current_hex": "2041646d6972616c21204974277320257321",
+      "source_Japanese": "提督！　%sですぞ！",
+      "current_English": " Admiral! It's %s!",
+      "english": "Oh! Admiral! %s!",
+      "independent_English": "Oh! Admiral! %s!",
+      "source_meaning": "A polite voice identifies the condition to the admiral with an emphatic ending.",
+      "localization_note": "The exclamation preserves the emphatic delivery and the speaker still uses the formal address. The old It's construction reads incorrectly with Reefs and other plural labels.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "sailing condition name"
+      ],
+      "speaker": "Crew member selected by original voice class",
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21204974277320257321",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_487",
+      "message_ID": 487,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 868,
+        "copy_end": 892,
+        "bytes": 22,
+        "record_index": 19,
+        "table_offset": 1318110,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 900,
+        "copy_end": 923,
+        "bytes": 22,
+        "record_index": 29,
+        "table_offset": 1318110,
+        "start_in_record": 0
+      },
+      "source_hex": "936090f5956182aa94ad90b682b582dc82b582bd8149",
+      "current_hex": "20416e2065706964656d696321202020202020202020",
+      "source_Japanese": "伝染病が発生しました！",
+      "current_English": " An epidemic!         ",
+      "english": "An epidemic!",
+      "independent_English": "An epidemic has broken out!",
+      "source_meaning": "A direct report that an epidemic has broken out.",
+      "localization_note": "The terse alarm is a natural immediate report of the outbreak. It suits the direct speaker and allows the following alternatives to carry their own emotion.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20416e2065706964656d696321202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_488",
+      "message_ID": 488,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 892,
+        "copy_end": 928,
+        "bytes": 35,
+        "record_index": 20,
+        "table_offset": 1318112,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 923,
+        "copy_end": 959,
+        "bytes": 35,
+        "record_index": 30,
+        "table_offset": 1318112,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814191e595cf82be81490a936090f5956182aa94ad90b682b582c482e98149",
+      "current_hex": "2041646d6972616c2c206469736173746572210a2020416e2065706964656d69632120",
+      "source_Japanese": "提督、大変だ！\n伝染病が発生してる！",
+      "current_English": " Admiral, disaster!\n  An epidemic! ",
+      "english": "Admiral, we've got trouble! There's an epidemic!",
+      "independent_English": "Admiral, we've got trouble! There's an epidemic!",
+      "source_meaning": "The speaker tells the admiral there's trouble: an epidemic is already underway.",
+      "localization_note": "Restores the speaker's natural warning that there is trouble and keeps the epidemic as the specific cause. The Japanese already presents it as underway.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2c206469736173746572210a2020416e2065706964656d69632120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_489",
+      "message_ID": 489,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 928,
+        "copy_end": 964,
+        "bytes": 34,
+        "record_index": 21,
+        "table_offset": 1318114,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 959,
+        "copy_end": 994,
+        "bytes": 34,
+        "record_index": 31,
+        "table_offset": 1318114,
+        "start_in_record": 0
+      },
+      "source_hex": "91e595cf82e681498140936090f5956182aa94ad90b682b582c482a282dc82b78149",
+      "current_hex": "202044697361737465722120416e2065706964656d69632120202020202020202020",
+      "source_Japanese": "大変よ！　伝染病が発生しています！",
+      "current_English": "  Disaster! An epidemic!          ",
+      "english": "Oh no! There's an epidemic!",
+      "independent_English": "Oh no! There's an epidemic!",
+      "source_meaning": "A dismayed voice calls attention to an epidemic in progress.",
+      "localization_note": "The startled interjection suits the speaker's alarm and reads like speech. The original diagnosis stays explicit.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202044697361737465722120416e2065706964656d69632120202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_490",
+      "message_ID": 490,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 964,
+        "copy_end": 996,
+        "bytes": 31,
+        "record_index": 22,
+        "table_offset": 1318116,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 994,
+        "copy_end": 1026,
+        "bytes": 31,
+        "record_index": 32,
+        "table_offset": 1318116,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a936090f5956182aa94ad90b682b582e282aa82c182bd8149",
+      "current_hex": "2041646d6972616c210a2020416e2065706964656d69632120202020202020",
+      "source_Japanese": "提督！\n伝染病が発生しやがった！",
+      "current_English": " Admiral!\n  An epidemic!       ",
+      "english": "Admiral! We've got a damn epidemic!",
+      "independent_English": "Admiral! Damn it, we've got an epidemic!",
+      "source_meaning": "The speaker calls to the admiral and breaks the news of the epidemic with a coarse edge.",
+      "localization_note": "The mild profanity conveys the contempt and frustration in the speaker's rough ending. The speaker addresses the admiral before identifying the illness.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c210a2020416e2065706964656d69632120202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_491",
+      "message_ID": 491,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 996,
+        "copy_end": 1040,
+        "bytes": 43,
+        "record_index": 23,
+        "table_offset": 1318118,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1026,
+        "copy_end": 1070,
+        "bytes": 43,
+        "record_index": 33,
+        "table_offset": 1318118,
+        "start_in_record": 0
+      },
+      "source_hex": "936090f5956182aa94ad90b682b582bd82bc81490a82b182e882e1814182e282c182a982a282b682e182c8",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "伝染病が発生したぞ！\nこりゃ、やっかいじゃな",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "An epidemic's broken out! This'll be trouble.",
+      "independent_English": "An epidemic's broken out! This'll be trouble.",
+      "source_meaning": "An emphatic report of an outbreak followed by a measured warning that it will be troublesome.",
+      "localization_note": "Replaces the unrelated mystery at sea. The first sentence raises the alarm and the second keeps the older speaker's measured reaction.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_492",
+      "message_ID": 492,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1040,
+        "copy_end": 1084,
+        "bytes": 43,
+        "record_index": 24,
+        "table_offset": 1318120,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1070,
+        "copy_end": 1114,
+        "bytes": 43,
+        "record_index": 34,
+        "table_offset": 1318120,
+        "start_in_record": 0
+      },
+      "source_hex": "82bd82a282d682f182be815b81490a82b182ed82a2936090f5956182aa82cd82e282c182c482e982e68149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "たいへんだー！\nこわい伝染病がはやってるよ！",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "Oh no! There's a scary disease going around!",
+      "independent_English": "Oh no! There's a scary disease going around!",
+      "source_meaning": "A frightened younger voice raises the alarm about a scary infectious disease going around.",
+      "localization_note": "Replaces the unrelated mystery at sea. The younger speaker describes how frightening the disease is and that it is spreading.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_493",
+      "message_ID": 493,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1084,
+        "copy_end": 1132,
+        "bytes": 45,
+        "record_index": 25,
+        "table_offset": 1318122,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1114,
+        "copy_end": 1160,
+        "bytes": 45,
+        "record_index": 35,
+        "table_offset": 1318122,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c28141959782aa82e282f182c582b582dc82a282dc82b582bd0a89bd82e082c582ab82dc82b982f18163",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a202020202020",
+      "source_Japanese": "提督、風がやんでしまいました\n何もできません…",
+      "current_English": "Something strange has appeared at sea.\n      ",
+      "english": "Admiral, the wind's died. There's nothing we can do.",
+      "independent_English": "Admiral, the wind's died. There's nothing we can do.",
+      "source_meaning": "The speaker reports to the admiral that the wind has died and there is nothing they can do.",
+      "localization_note": "Restores the report to the admiral and the speaker's resignation. The calm has stopped the ship's progress.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_494",
+      "message_ID": 494,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1132,
+        "copy_end": 1152,
+        "bytes": 20,
+        "record_index": 26,
+        "table_offset": 1318124,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1160,
+        "copy_end": 1181,
+        "bytes": 20,
+        "record_index": 36,
+        "table_offset": 1318124,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82e282f182c582b582dc82c182bd8163",
+      "current_hex": "536f6d657468696e6720737472616e6765206861",
+      "source_Japanese": "風がやんでしまった…",
+      "current_English": "Something strange ha",
+      "english": "The wind's died...",
+      "independent_English": "The wind's died...",
+      "source_meaning": "The speaker observes that the wind has died and trails off.",
+      "localization_note": "Restores the original brief observation and trailing pause. The current bytes stop in the middle of an unrelated sentence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        1
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e6765206861",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_495",
+      "message_ID": 495,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1152,
+        "copy_end": 1200,
+        "bytes": 47,
+        "record_index": 26,
+        "table_offset": 1318126,
+        "start_in_record": 22
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1181,
+        "copy_end": 1229,
+        "bytes": 47,
+        "record_index": 37,
+        "table_offset": 1318126,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082c18141959782aa82e282f182b682e182c182bd81630a82b582ce82e782ad91d282c282b582a982c882a282cb",
+      "current_hex": "73206170706561726564206174207365612e0a20202020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "あっ、風がやんじゃった…\nしばらく待つしかないね",
+      "current_English": "s appeared at sea.\n                            ",
+      "english": "Oh, the wind's died... I guess we'll have to wait a while.",
+      "independent_English": "Oh, the wind's died... I guess we'll have to wait a while.",
+      "source_meaning": "The speaker notices the wind dying and resigns themself to waiting a while.",
+      "localization_note": "Restores the casual realization and reluctant conclusion. The current bytes begin with the broken tail of an unrelated sentence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "73206170706561726564206174207365612e0a20202020202020202020202020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_496",
+      "message_ID": 496,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1200,
+        "copy_end": 1260,
+        "bytes": 57,
+        "record_index": 27,
+        "table_offset": 1318128,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1229,
+        "copy_end": 1286,
+        "bytes": 56,
+        "record_index": 38,
+        "table_offset": 1318128,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82bb82e682c682e0908182a982c882a282ed8163814293e282c582b782cb0a82a882c682c882b582ad91d282bf82dc82b582e582a4",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020202020202020202020",
+      "source_Japanese": "風がそよとも吹かないわ…。凪ですね\nおとなしく待ちましょう",
+      "current_English": "Something strange has appeared at sea.\n                 ",
+      "english": "There's not a breath of wind. We're becalmed. Let's sit tight.",
+      "independent_English": "There's not a breath of wind. We're becalmed. Let's sit tight.",
+      "source_meaning": "There isn't even a breath of wind. The speaker calls it a calm and suggests waiting quietly.",
+      "localization_note": "Restores the complete calm, the sailing term, and the practical suggestion to wait. The short sentences suit the composed response.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_497",
+      "message_ID": 497,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1260,
+        "copy_end": 1312,
+        "bytes": 49,
+        "record_index": 28,
+        "table_offset": 1318130,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1286,
+        "copy_end": 1336,
+        "bytes": 49,
+        "record_index": 39,
+        "table_offset": 1318130,
+        "start_in_record": 0
+      },
+      "source_hex": "82bf82c18141959782aa8aae915382c98e7e82dc82c182bf82dc82c182bd82ba0a91d282c282b582a982cb82a682c88163",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020",
+      "source_Japanese": "ちっ、風が完全に止まっちまったぜ\n待つしかねえな…",
+      "current_English": "Something strange has appeared at sea.\n          ",
+      "english": "Tch. The wind's gone dead. Guess we'll have to wait.",
+      "independent_English": "Tch. The wind's gone dead. Guess we'll have to wait.",
+      "source_meaning": "The speaker clicks their tongue at the wind stopping completely and reluctantly admits they have to wait.",
+      "localization_note": "Restores the tongue-click and rough resignation. The wind has stopped entirely and there is no immediate alternative.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_498",
+      "message_ID": 498,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1312,
+        "copy_end": 1360,
+        "bytes": 47,
+        "record_index": 29,
+        "table_offset": 1318132,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1336,
+        "copy_end": 1384,
+        "bytes": 47,
+        "record_index": 40,
+        "table_offset": 1318132,
+        "start_in_record": 0
+      },
+      "source_hex": "816393e282be82c8814192f193c20a959782c98e7e82dc82e782ea82c482cd82c782a482b582e682a482e082c882a2",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+      "source_Japanese": "…凪だな、提督\n風に止まられてはどうしようもない",
+      "current_English": "Something strange has appeared at sea.\n        ",
+      "english": "...We're becalmed, Admiral. Nothing we can do without wind.",
+      "independent_English": "...We're becalmed, Admiral. Nothing we can do without wind.",
+      "source_meaning": "The speaker pauses, tells the admiral they're becalmed, and says there's nothing to be done if the wind won't blow.",
+      "localization_note": "Preserves the opening hesitation and restrained address. It restores both the calm and the speaker's conclusion.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_499",
+      "message_ID": 499,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1360,
+        "copy_end": 1416,
+        "bytes": 55,
+        "record_index": 30,
+        "table_offset": 1318134,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1384,
+        "copy_end": 1440,
+        "bytes": 55,
+        "record_index": 41,
+        "table_offset": 1318134,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82c882ad82c882c182bf82e182c182bd81630a82b582e582a482aa82c882a282b5814182cc82f182d182e891d282c682a482e6",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020202020202020",
+      "source_Japanese": "風がなくなっちゃった…\nしょうがないし、のんびり待とうよ",
+      "current_English": "Something strange has appeared at sea.\n                ",
+      "english": "The wind's gone... Nothing we can do. Let's just take it easy while we wait.",
+      "independent_English": "The wind's gone... Nothing we can do. Let's just take it easy while we wait.",
+      "source_meaning": "A youthful voice notices the wind is gone and suggests taking it easy while they wait.",
+      "localization_note": "Restores the upbeat young speaker's suggestion to make the best of waiting. The wind still leaves them no choice.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_500",
+      "message_ID": 500,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1416,
+        "copy_end": 1464,
+        "bytes": 47,
+        "record_index": 31,
+        "table_offset": 1318136,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1440,
+        "copy_end": 1488,
+        "bytes": 47,
+        "record_index": 42,
+        "table_offset": 1318136,
+        "start_in_record": 0
+      },
+      "source_hex": "959782aa82e282f182c582b582dc82c182bd81630a8e9f82cc959782f091d282c282b582a982c882a282c582b782c8",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+      "source_Japanese": "風がやんでしまった…\n次の風を待つしかないですな",
+      "current_English": "Something strange has appeared at sea.\n        ",
+      "english": "The wind's died... All we can do is wait for it to pick up again.",
+      "independent_English": "The wind's died... All we can do is wait for it to pick up again.",
+      "source_meaning": "The wind has died, and the speaker concludes they have to wait for the next breeze.",
+      "localization_note": "Restores the observation and makes the next breeze the condition for moving again. The sentence keeps the patient tone.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_501",
+      "message_ID": 501,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1464,
+        "copy_end": 1504,
+        "bytes": 37,
+        "record_index": 32,
+        "table_offset": 1318138,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1488,
+        "copy_end": 1526,
+        "bytes": 37,
+        "record_index": 43,
+        "table_offset": 1318138,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182c582b781490a8b4382f082c282af82c482ad82be82b382a28149",
+      "current_hex": "202041646d6972616c2c20736861726b73210a20204265206361726566756c212020202020",
+      "source_Japanese": "提督、サメです！\n気をつけてください！",
+      "current_English": "  Admiral, sharks!\n  Be careful!     ",
+      "english": "Admiral, sharks! Be careful!",
+      "independent_English": "Admiral, sharks! Please be careful!",
+      "source_meaning": "A formal warning to the admiral that there are sharks, followed by a request to be careful.",
+      "localization_note": "The direct report and caution preserve the formal address, the hazard and the original request. The urgent phrasing is natural as spoken.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        0
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c2c20736861726b73210a20204265206361726566756c212020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_502",
+      "message_ID": 502,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1504,
+        "copy_end": 1540,
+        "bytes": 33,
+        "record_index": 33,
+        "table_offset": 1318140,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1526,
+        "copy_end": 1560,
+        "bytes": 33,
+        "record_index": 44,
+        "table_offset": 1318140,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182aa82a282e982e681490a8b4382f082c282af82c48149",
+      "current_hex": "41646d6972616c2c20736861726b73210a20204265206361726566756c21202020",
+      "source_Japanese": "提督、サメがいるよ！\n気をつけて！",
+      "current_English": "Admiral, sharks!\n  Be careful!   ",
+      "english": "Admiral, there are sharks! Watch out!",
+      "independent_English": "Admiral, there are sharks! Watch out!",
+      "source_meaning": "An informal shark sighting and quick warning to the admiral.",
+      "localization_note": "Keeps the informal speaker's quick warning. The conversational delivery distinguishes it from the direct formal version.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        2
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c2c20736861726b73210a20204265206361726566756c21202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_503",
+      "message_ID": 503,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1540,
+        "copy_end": 1584,
+        "bytes": 41,
+        "record_index": 34,
+        "table_offset": 1318142,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1560,
+        "copy_end": 1602,
+        "bytes": 41,
+        "record_index": 45,
+        "table_offset": 1318142,
+        "start_in_record": 0
+      },
+      "source_hex": "82ab82e182a082a082c181418354838182e682c181490a92f193c282e08b4382f082c282af82c48149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020",
+      "source_Japanese": "きゃああっ、サメよっ！\n提督も気をつけて！",
+      "current_English": "Something strange has appeared at sea.\n  ",
+      "english": "Aah! Sharks! Look out, Admiral!",
+      "independent_English": "Aah! Sharks! Watch out, Admiral!",
+      "source_meaning": "A startled cry on spotting sharks, followed by a warning for the admiral to watch out too.",
+      "localization_note": "Replaces the unrelated mystery report with the startled cry and the original concern for the admiral.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        3
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_504",
+      "message_ID": 504,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1584,
+        "copy_end": 1624,
+        "bytes": 39,
+        "record_index": 35,
+        "table_offset": 1318144,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1602,
+        "copy_end": 1642,
+        "bytes": 39,
+        "record_index": 46,
+        "table_offset": 1318144,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182aa82a282e982ba81490a8b4382f082c282af82c482ad82ea82e68149",
+      "current_hex": "536861726b732c2041646d6972616c210a20204265206361726566756c21202020202020202020",
+      "source_Japanese": "提督、サメがいるぜ！\n気をつけてくれよ！",
+      "current_English": "Sharks, Admiral!\n  Be careful!         ",
+      "english": "Sharks, Admiral! Watch yourself!",
+      "independent_English": "Sharks, Admiral! Watch yourself!",
+      "source_meaning": "A blunt, rough-voiced warning to the admiral about sharks.",
+      "localization_note": "Preserves the hazard-first order that already works and gives the warning the source speaker's rough, direct cadence.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        4
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536861726b732c2041646d6972616c210a20204265206361726566756c21202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_505",
+      "message_ID": 505,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1624,
+        "copy_end": 1664,
+        "bytes": 37,
+        "record_index": 36,
+        "table_offset": 1318146,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1642,
+        "copy_end": 1680,
+        "bytes": 37,
+        "record_index": 47,
+        "table_offset": 1318146,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281418354838182b682e181490a8b4382f082c282af82e982f182b682e182e68149",
+      "current_hex": "202041646d6972616c2c20736861726b73210a202054616b65206361726521202020202020",
+      "source_Japanese": "提督、サメじゃ！\n気をつけるんじゃよ！",
+      "current_English": "  Admiral, sharks!\n  Take care!      ",
+      "english": "Admiral, sharks! Take care!",
+      "independent_English": "Admiral, those are sharks! Mind yourself now!",
+      "source_meaning": "An older-sounding voice identifies the sharks and urges the admiral to take care.",
+      "localization_note": "The warning identifies the sharks and the older speaker's short Take care still sounds natural in context. Retain the wording and remove obsolete spacing through formatting.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        5
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c2c20736861726b73210a202054616b65206361726521202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_506",
+      "message_ID": 506,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1664,
+        "copy_end": 1704,
+        "bytes": 39,
+        "record_index": 37,
+        "table_offset": 1318148,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1680,
+        "copy_end": 1720,
+        "bytes": 39,
+        "record_index": 48,
+        "table_offset": 1318148,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482ed82a082f181418354838182be82a081490a92f193c282e08b4382f082c282af82c48149",
+      "current_hex": "57616161682c20736861726b73210a20204265206361726566756c2c2041646d6972616c212020",
+      "source_Japanese": "うわあん、サメだあ！\n提督も気をつけて！",
+      "current_English": "Waaah, sharks!\n  Be careful, Admiral!  ",
+      "english": "Eek! Sharks! Be careful, Admiral!",
+      "independent_English": "Eek! Sharks! Watch out, Admiral!",
+      "source_meaning": "A frightened youthful cry about sharks, with concern for the admiral too.",
+      "localization_note": "Keeps the frightened younger voice and its concern for the admiral. The existing caution is sound; the new interjection makes the cry readable.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        6
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57616161682c20736861726b73210a20204265206361726566756c2c2041646d6972616c212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_507",
+      "message_ID": 507,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 6,
+        "offset": 1704,
+        "copy_end": 1748,
+        "bytes": 43,
+        "record_index": 38,
+        "table_offset": 1318150,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1720,
+        "copy_end": 1764,
+        "bytes": 43,
+        "record_index": 49,
+        "table_offset": 1318150,
+        "start_in_record": 0
+      },
+      "source_hex": "82a882a882c181418354838182c582b782bc81490a8b4382f082c282af82c482ad82be82b382a282e68149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+      "source_Japanese": "おおっ、サメですぞ！\n気をつけてくださいよ！",
+      "current_English": "Something strange has appeared at sea.\n    ",
+      "english": "Whoa! Sharks! Be careful, Admiral!",
+      "independent_English": "Whoa, sharks! Please be careful, Admiral!",
+      "source_meaning": "A startled exclamation, then an emphatic but polite shark warning to the admiral.",
+      "localization_note": "Restores the source's startled opening, the specific danger, and the polite warning to the admiral.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "speaker": "Crew member selected by original voice class",
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_selector_slots": [
+        7
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            25236,
+            36235020,
+            4119
+          ]
+        ],
+        "exact_instruction_count": 177,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    }
+  ],
+  "counts": {
+    "revision": 24,
+    "retention": 4
+  },
+  "exact_native_crew_groups": [
+    {
+      "first_ID": 481,
+      "last_ID": 486,
+      "table": 34703296,
+      "table_slots": [
+        481,
+        -1,
+        482,
+        -1,
+        483,
+        484,
+        485,
+        486
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33760176,
+          "call_PC": 33760184,
+          "literal_address": 33760720,
+          "literal_value": 34703296,
+          "consumer": 33897796,
+          "clean_and_current_hex": "18129fe50700a0e3618600eb"
+        },
+        {
+          "load_PC": 33760328,
+          "call_PC": 33760336,
+          "literal_address": 33760720,
+          "literal_value": 34703296,
+          "consumer": 33897796,
+          "clean_and_current_hex": "80119fe50700a0e33b8600eb"
+        }
+      ],
+      "original_role_argument": 7,
+      "context": "Four possible hazard names follow the crew call. The two native branches report tornado or whirlpool, or reefs or drift ice, before the separate captain evasive order reviewed with sea events.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          482
+        ],
+        [
+          1,
+          1,
+          481
+        ],
+        [
+          2,
+          3,
+          481
+        ],
+        [
+          3,
+          3,
+          481
+        ],
+        [
+          4,
+          0,
+          481
+        ],
+        [
+          5,
+          4,
+          483
+        ],
+        [
+          6,
+          5,
+          484
+        ],
+        [
+          7,
+          3,
+          481
+        ],
+        [
+          8,
+          0,
+          481
+        ],
+        [
+          9,
+          2,
+          482
+        ],
+        [
+          10,
+          5,
+          484
+        ],
+        [
+          11,
+          4,
+          483
+        ],
+        [
+          12,
+          1,
+          481
+        ],
+        [
+          13,
+          0,
+          481
+        ],
+        [
+          14,
+          6,
+          485
+        ],
+        [
+          15,
+          4,
+          483
+        ],
+        [
+          16,
+          1,
+          481
+        ],
+        [
+          17,
+          4,
+          483
+        ],
+        [
+          18,
+          0,
+          481
+        ],
+        [
+          19,
+          7,
+          486
+        ],
+        [
+          20,
+          4,
+          483
+        ],
+        [
+          21,
+          1,
+          481
+        ],
+        [
+          22,
+          2,
+          482
+        ],
+        [
+          23,
+          7,
+          486
+        ],
+        [
+          24,
+          3,
+          481
+        ],
+        [
+          25,
+          3,
+          481
+        ],
+        [
+          26,
+          2,
+          482
+        ],
+        [
+          27,
+          2,
+          482
+        ],
+        [
+          28,
+          4,
+          483
+        ],
+        [
+          29,
+          7,
+          486
+        ],
+        [
+          30,
+          7,
+          486
+        ],
+        [
+          31,
+          7,
+          486
+        ],
+        [
+          32,
+          0,
+          481
+        ],
+        [
+          33,
+          7,
+          486
+        ],
+        [
+          34,
+          1,
+          481
+        ],
+        [
+          35,
+          7,
+          486
+        ],
+        [
+          36,
+          7,
+          486
+        ],
+        [
+          37,
+          0,
+          481
+        ],
+        [
+          38,
+          7,
+          486
+        ],
+        [
+          39,
+          4,
+          483
+        ],
+        [
+          40,
+          7,
+          486
+        ],
+        [
+          41,
+          5,
+          484
+        ],
+        [
+          42,
+          7,
+          486
+        ],
+        [
+          43,
+          1,
+          481
+        ],
+        [
+          44,
+          4,
+          483
+        ],
+        [
+          45,
+          0,
+          481
+        ],
+        [
+          46,
+          5,
+          484
+        ],
+        [
+          47,
+          7,
+          486
+        ],
+        [
+          48,
+          4,
+          483
+        ],
+        [
+          49,
+          4,
+          483
+        ],
+        [
+          50,
+          0,
+          481
+        ],
+        [
+          51,
+          7,
+          486
+        ],
+        [
+          52,
+          7,
+          486
+        ],
+        [
+          53,
+          2,
+          482
+        ],
+        [
+          54,
+          0,
+          481
+        ],
+        [
+          55,
+          4,
+          483
+        ],
+        [
+          56,
+          0,
+          481
+        ],
+        [
+          57,
+          7,
+          486
+        ],
+        [
+          58,
+          4,
+          483
+        ],
+        [
+          59,
+          0,
+          481
+        ],
+        [
+          60,
+          1,
+          481
+        ],
+        [
+          61,
+          4,
+          483
+        ],
+        [
+          62,
+          4,
+          483
+        ],
+        [
+          63,
+          0,
+          481
+        ],
+        [
+          64,
+          0,
+          481
+        ],
+        [
+          65,
+          4,
+          483
+        ],
+        [
+          66,
+          2,
+          482
+        ],
+        [
+          67,
+          4,
+          483
+        ],
+        [
+          68,
+          0,
+          481
+        ],
+        [
+          69,
+          1,
+          481
+        ],
+        [
+          70,
+          4,
+          483
+        ],
+        [
+          71,
+          4,
+          483
+        ],
+        [
+          72,
+          4,
+          483
+        ],
+        [
+          73,
+          7,
+          486
+        ],
+        [
+          74,
+          0,
+          481
+        ],
+        [
+          75,
+          5,
+          484
+        ],
+        [
+          76,
+          5,
+          484
+        ],
+        [
+          77,
+          7,
+          486
+        ],
+        [
+          78,
+          7,
+          486
+        ],
+        [
+          79,
+          0,
+          481
+        ],
+        [
+          80,
+          3,
+          481
+        ],
+        [
+          81,
+          1,
+          481
+        ],
+        [
+          82,
+          0,
+          481
+        ],
+        [
+          83,
+          0,
+          481
+        ],
+        [
+          84,
+          0,
+          481
+        ],
+        [
+          85,
+          0,
+          481
+        ],
+        [
+          86,
+          0,
+          481
+        ],
+        [
+          87,
+          0,
+          481
+        ],
+        [
+          88,
+          0,
+          481
+        ],
+        [
+          89,
+          0,
+          481
+        ],
+        [
+          90,
+          0,
+          481
+        ],
+        [
+          91,
+          0,
+          481
+        ],
+        [
+          92,
+          0,
+          481
+        ],
+        [
+          93,
+          0,
+          481
+        ],
+        [
+          94,
+          0,
+          481
+        ],
+        [
+          95,
+          0,
+          481
+        ],
+        [
+          96,
+          0,
+          481
+        ],
+        [
+          97,
+          0,
+          481
+        ],
+        [
+          98,
+          0,
+          481
+        ],
+        [
+          99,
+          0,
+          481
+        ],
+        [
+          100,
+          0,
+          481
+        ],
+        [
+          101,
+          0,
+          481
+        ],
+        [
+          102,
+          0,
+          481
+        ],
+        [
+          103,
+          0,
+          481
+        ],
+        [
+          104,
+          0,
+          481
+        ],
+        [
+          105,
+          0,
+          481
+        ],
+        [
+          106,
+          0,
+          481
+        ],
+        [
+          107,
+          0,
+          481
+        ],
+        [
+          108,
+          0,
+          481
+        ],
+        [
+          109,
+          0,
+          481
+        ],
+        [
+          110,
+          0,
+          481
+        ],
+        [
+          111,
+          0,
+          481
+        ],
+        [
+          112,
+          0,
+          481
+        ],
+        [
+          113,
+          0,
+          481
+        ],
+        [
+          114,
+          0,
+          481
+        ],
+        [
+          115,
+          0,
+          481
+        ],
+        [
+          116,
+          0,
+          481
+        ],
+        [
+          117,
+          0,
+          481
+        ],
+        [
+          118,
+          0,
+          481
+        ],
+        [
+          119,
+          0,
+          481
+        ],
+        [
+          120,
+          0,
+          481
+        ],
+        [
+          121,
+          0,
+          481
+        ],
+        [
+          122,
+          0,
+          481
+        ],
+        [
+          123,
+          0,
+          481
+        ],
+        [
+          124,
+          0,
+          481
+        ],
+        [
+          125,
+          0,
+          481
+        ],
+        [
+          126,
+          0,
+          481
+        ],
+        [
+          127,
+          0,
+          481
+        ],
+        [
+          128,
+          0,
+          481
+        ],
+        [
+          129,
+          0,
+          481
+        ],
+        [
+          130,
+          0,
+          481
+        ],
+        [
+          131,
+          0,
+          481
+        ],
+        [
+          132,
+          0,
+          481
+        ],
+        [
+          133,
+          0,
+          481
+        ],
+        [
+          134,
+          0,
+          481
+        ],
+        [
+          135,
+          0,
+          481
+        ],
+        [
+          136,
+          0,
+          481
+        ],
+        [
+          137,
+          0,
+          481
+        ],
+        [
+          138,
+          0,
+          481
+        ],
+        [
+          139,
+          0,
+          481
+        ],
+        [
+          140,
+          0,
+          481
+        ],
+        [
+          141,
+          0,
+          481
+        ],
+        [
+          142,
+          0,
+          481
+        ],
+        [
+          143,
+          0,
+          481
+        ],
+        [
+          144,
+          0,
+          481
+        ],
+        [
+          145,
+          0,
+          481
+        ],
+        [
+          146,
+          0,
+          481
+        ],
+        [
+          147,
+          0,
+          481
+        ],
+        [
+          148,
+          0,
+          481
+        ],
+        [
+          149,
+          0,
+          481
+        ],
+        [
+          150,
+          0,
+          481
+        ],
+        [
+          151,
+          4,
+          483
+        ],
+        [
+          152,
+          4,
+          483
+        ],
+        [
+          153,
+          4,
+          483
+        ],
+        [
+          154,
+          4,
+          483
+        ],
+        [
+          155,
+          4,
+          483
+        ],
+        [
+          156,
+          4,
+          483
+        ],
+        [
+          157,
+          4,
+          483
+        ],
+        [
+          158,
+          4,
+          483
+        ],
+        [
+          159,
+          4,
+          483
+        ],
+        [
+          160,
+          4,
+          483
+        ],
+        [
+          161,
+          4,
+          483
+        ],
+        [
+          162,
+          0,
+          481
+        ],
+        [
+          163,
+          0,
+          481
+        ],
+        [
+          164,
+          0,
+          481
+        ],
+        [
+          165,
+          0,
+          481
+        ],
+        [
+          166,
+          0,
+          481
+        ],
+        [
+          167,
+          0,
+          481
+        ],
+        [
+          168,
+          0,
+          481
+        ],
+        [
+          169,
+          0,
+          481
+        ],
+        [
+          170,
+          0,
+          481
+        ],
+        [
+          171,
+          0,
+          481
+        ],
+        [
+          172,
+          0,
+          481
+        ],
+        [
+          173,
+          0,
+          481
+        ],
+        [
+          174,
+          0,
+          481
+        ],
+        [
+          175,
+          0,
+          481
+        ],
+        [
+          176,
+          4,
+          483
+        ],
+        [
+          177,
+          0,
+          481
+        ],
+        [
+          178,
+          0,
+          481
+        ],
+        [
+          179,
+          0,
+          481
+        ],
+        [
+          180,
+          0,
+          481
+        ],
+        [
+          181,
+          4,
+          483
+        ],
+        [
+          182,
+          0,
+          481
+        ],
+        [
+          183,
+          4,
+          483
+        ],
+        [
+          184,
+          4,
+          483
+        ],
+        [
+          185,
+          0,
+          481
+        ],
+        [
+          186,
+          0,
+          481
+        ],
+        [
+          187,
+          0,
+          481
+        ],
+        [
+          188,
+          0,
+          481
+        ],
+        [
+          189,
+          0,
+          481
+        ],
+        [
+          190,
+          0,
+          481
+        ],
+        [
+          191,
+          0,
+          481
+        ],
+        [
+          192,
+          0,
+          481
+        ],
+        [
+          193,
+          0,
+          481
+        ],
+        [
+          194,
+          0,
+          481
+        ],
+        [
+          195,
+          0,
+          481
+        ],
+        [
+          196,
+          0,
+          481
+        ],
+        [
+          197,
+          0,
+          481
+        ],
+        [
+          198,
+          0,
+          481
+        ],
+        [
+          199,
+          0,
+          481
+        ],
+        [
+          200,
+          0,
+          481
+        ],
+        [
+          201,
+          0,
+          481
+        ],
+        [
+          202,
+          0,
+          481
+        ],
+        [
+          203,
+          0,
+          481
+        ],
+        [
+          204,
+          0,
+          481
+        ],
+        [
+          205,
+          0,
+          481
+        ],
+        [
+          206,
+          0,
+          481
+        ]
+      ]
+    },
+    {
+      "first_ID": 487,
+      "last_ID": 492,
+      "table": 34703264,
+      "table_slots": [
+        487,
+        -1,
+        488,
+        489,
+        490,
+        491,
+        492,
+        -1
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33759224,
+          "call_PC": 33759232,
+          "literal_address": 33760652,
+          "literal_value": 34703264,
+          "consumer": 33897796,
+          "clean_and_current_hex": "8c159fe50b00a0e34f8700eb"
+        }
+      ],
+      "original_role_argument": 11,
+      "context": "One crew voice reports the epidemic when that branch fires. The six lines are alternative reports.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          488
+        ],
+        [
+          1,
+          1,
+          487
+        ],
+        [
+          2,
+          3,
+          489
+        ],
+        [
+          3,
+          3,
+          489
+        ],
+        [
+          4,
+          0,
+          487
+        ],
+        [
+          5,
+          4,
+          490
+        ],
+        [
+          6,
+          5,
+          491
+        ],
+        [
+          7,
+          3,
+          489
+        ],
+        [
+          8,
+          0,
+          487
+        ],
+        [
+          9,
+          2,
+          488
+        ],
+        [
+          10,
+          5,
+          491
+        ],
+        [
+          11,
+          4,
+          490
+        ],
+        [
+          12,
+          1,
+          487
+        ],
+        [
+          13,
+          0,
+          487
+        ],
+        [
+          14,
+          6,
+          492
+        ],
+        [
+          15,
+          4,
+          490
+        ],
+        [
+          16,
+          1,
+          487
+        ],
+        [
+          17,
+          4,
+          490
+        ],
+        [
+          18,
+          0,
+          487
+        ],
+        [
+          19,
+          7,
+          487
+        ],
+        [
+          20,
+          4,
+          490
+        ],
+        [
+          21,
+          1,
+          487
+        ],
+        [
+          22,
+          2,
+          488
+        ],
+        [
+          23,
+          7,
+          487
+        ],
+        [
+          24,
+          3,
+          489
+        ],
+        [
+          25,
+          3,
+          489
+        ],
+        [
+          26,
+          2,
+          488
+        ],
+        [
+          27,
+          2,
+          488
+        ],
+        [
+          28,
+          4,
+          490
+        ],
+        [
+          29,
+          7,
+          487
+        ],
+        [
+          30,
+          7,
+          487
+        ],
+        [
+          31,
+          7,
+          487
+        ],
+        [
+          32,
+          0,
+          487
+        ],
+        [
+          33,
+          7,
+          487
+        ],
+        [
+          34,
+          1,
+          487
+        ],
+        [
+          35,
+          7,
+          487
+        ],
+        [
+          36,
+          7,
+          487
+        ],
+        [
+          37,
+          0,
+          487
+        ],
+        [
+          38,
+          7,
+          487
+        ],
+        [
+          39,
+          4,
+          490
+        ],
+        [
+          40,
+          7,
+          487
+        ],
+        [
+          41,
+          5,
+          491
+        ],
+        [
+          42,
+          7,
+          487
+        ],
+        [
+          43,
+          1,
+          487
+        ],
+        [
+          44,
+          4,
+          490
+        ],
+        [
+          45,
+          0,
+          487
+        ],
+        [
+          46,
+          5,
+          491
+        ],
+        [
+          47,
+          7,
+          487
+        ],
+        [
+          48,
+          4,
+          490
+        ],
+        [
+          49,
+          4,
+          490
+        ],
+        [
+          50,
+          0,
+          487
+        ],
+        [
+          51,
+          7,
+          487
+        ],
+        [
+          52,
+          7,
+          487
+        ],
+        [
+          53,
+          2,
+          488
+        ],
+        [
+          54,
+          0,
+          487
+        ],
+        [
+          55,
+          4,
+          490
+        ],
+        [
+          56,
+          0,
+          487
+        ],
+        [
+          57,
+          7,
+          487
+        ],
+        [
+          58,
+          4,
+          490
+        ],
+        [
+          59,
+          0,
+          487
+        ],
+        [
+          60,
+          1,
+          487
+        ],
+        [
+          61,
+          4,
+          490
+        ],
+        [
+          62,
+          4,
+          490
+        ],
+        [
+          63,
+          0,
+          487
+        ],
+        [
+          64,
+          0,
+          487
+        ],
+        [
+          65,
+          4,
+          490
+        ],
+        [
+          66,
+          2,
+          488
+        ],
+        [
+          67,
+          4,
+          490
+        ],
+        [
+          68,
+          0,
+          487
+        ],
+        [
+          69,
+          1,
+          487
+        ],
+        [
+          70,
+          4,
+          490
+        ],
+        [
+          71,
+          4,
+          490
+        ],
+        [
+          72,
+          4,
+          490
+        ],
+        [
+          73,
+          7,
+          487
+        ],
+        [
+          74,
+          0,
+          487
+        ],
+        [
+          75,
+          5,
+          491
+        ],
+        [
+          76,
+          5,
+          491
+        ],
+        [
+          77,
+          7,
+          487
+        ],
+        [
+          78,
+          7,
+          487
+        ],
+        [
+          79,
+          0,
+          487
+        ],
+        [
+          80,
+          3,
+          489
+        ],
+        [
+          81,
+          1,
+          487
+        ],
+        [
+          82,
+          0,
+          487
+        ],
+        [
+          83,
+          0,
+          487
+        ],
+        [
+          84,
+          0,
+          487
+        ],
+        [
+          85,
+          0,
+          487
+        ],
+        [
+          86,
+          0,
+          487
+        ],
+        [
+          87,
+          0,
+          487
+        ],
+        [
+          88,
+          0,
+          487
+        ],
+        [
+          89,
+          0,
+          487
+        ],
+        [
+          90,
+          0,
+          487
+        ],
+        [
+          91,
+          0,
+          487
+        ],
+        [
+          92,
+          0,
+          487
+        ],
+        [
+          93,
+          0,
+          487
+        ],
+        [
+          94,
+          0,
+          487
+        ],
+        [
+          95,
+          0,
+          487
+        ],
+        [
+          96,
+          0,
+          487
+        ],
+        [
+          97,
+          0,
+          487
+        ],
+        [
+          98,
+          0,
+          487
+        ],
+        [
+          99,
+          0,
+          487
+        ],
+        [
+          100,
+          0,
+          487
+        ],
+        [
+          101,
+          0,
+          487
+        ],
+        [
+          102,
+          0,
+          487
+        ],
+        [
+          103,
+          0,
+          487
+        ],
+        [
+          104,
+          0,
+          487
+        ],
+        [
+          105,
+          0,
+          487
+        ],
+        [
+          106,
+          0,
+          487
+        ],
+        [
+          107,
+          0,
+          487
+        ],
+        [
+          108,
+          0,
+          487
+        ],
+        [
+          109,
+          0,
+          487
+        ],
+        [
+          110,
+          0,
+          487
+        ],
+        [
+          111,
+          0,
+          487
+        ],
+        [
+          112,
+          0,
+          487
+        ],
+        [
+          113,
+          0,
+          487
+        ],
+        [
+          114,
+          0,
+          487
+        ],
+        [
+          115,
+          0,
+          487
+        ],
+        [
+          116,
+          0,
+          487
+        ],
+        [
+          117,
+          0,
+          487
+        ],
+        [
+          118,
+          0,
+          487
+        ],
+        [
+          119,
+          0,
+          487
+        ],
+        [
+          120,
+          0,
+          487
+        ],
+        [
+          121,
+          0,
+          487
+        ],
+        [
+          122,
+          0,
+          487
+        ],
+        [
+          123,
+          0,
+          487
+        ],
+        [
+          124,
+          0,
+          487
+        ],
+        [
+          125,
+          0,
+          487
+        ],
+        [
+          126,
+          0,
+          487
+        ],
+        [
+          127,
+          0,
+          487
+        ],
+        [
+          128,
+          0,
+          487
+        ],
+        [
+          129,
+          0,
+          487
+        ],
+        [
+          130,
+          0,
+          487
+        ],
+        [
+          131,
+          0,
+          487
+        ],
+        [
+          132,
+          0,
+          487
+        ],
+        [
+          133,
+          0,
+          487
+        ],
+        [
+          134,
+          0,
+          487
+        ],
+        [
+          135,
+          0,
+          487
+        ],
+        [
+          136,
+          0,
+          487
+        ],
+        [
+          137,
+          0,
+          487
+        ],
+        [
+          138,
+          0,
+          487
+        ],
+        [
+          139,
+          0,
+          487
+        ],
+        [
+          140,
+          0,
+          487
+        ],
+        [
+          141,
+          0,
+          487
+        ],
+        [
+          142,
+          0,
+          487
+        ],
+        [
+          143,
+          0,
+          487
+        ],
+        [
+          144,
+          0,
+          487
+        ],
+        [
+          145,
+          0,
+          487
+        ],
+        [
+          146,
+          0,
+          487
+        ],
+        [
+          147,
+          0,
+          487
+        ],
+        [
+          148,
+          0,
+          487
+        ],
+        [
+          149,
+          0,
+          487
+        ],
+        [
+          150,
+          0,
+          487
+        ],
+        [
+          151,
+          4,
+          490
+        ],
+        [
+          152,
+          4,
+          490
+        ],
+        [
+          153,
+          4,
+          490
+        ],
+        [
+          154,
+          4,
+          490
+        ],
+        [
+          155,
+          4,
+          490
+        ],
+        [
+          156,
+          4,
+          490
+        ],
+        [
+          157,
+          4,
+          490
+        ],
+        [
+          158,
+          4,
+          490
+        ],
+        [
+          159,
+          4,
+          490
+        ],
+        [
+          160,
+          4,
+          490
+        ],
+        [
+          161,
+          4,
+          490
+        ],
+        [
+          162,
+          0,
+          487
+        ],
+        [
+          163,
+          0,
+          487
+        ],
+        [
+          164,
+          0,
+          487
+        ],
+        [
+          165,
+          0,
+          487
+        ],
+        [
+          166,
+          0,
+          487
+        ],
+        [
+          167,
+          0,
+          487
+        ],
+        [
+          168,
+          0,
+          487
+        ],
+        [
+          169,
+          0,
+          487
+        ],
+        [
+          170,
+          0,
+          487
+        ],
+        [
+          171,
+          0,
+          487
+        ],
+        [
+          172,
+          0,
+          487
+        ],
+        [
+          173,
+          0,
+          487
+        ],
+        [
+          174,
+          0,
+          487
+        ],
+        [
+          175,
+          0,
+          487
+        ],
+        [
+          176,
+          4,
+          490
+        ],
+        [
+          177,
+          0,
+          487
+        ],
+        [
+          178,
+          0,
+          487
+        ],
+        [
+          179,
+          0,
+          487
+        ],
+        [
+          180,
+          0,
+          487
+        ],
+        [
+          181,
+          4,
+          490
+        ],
+        [
+          182,
+          0,
+          487
+        ],
+        [
+          183,
+          4,
+          490
+        ],
+        [
+          184,
+          4,
+          490
+        ],
+        [
+          185,
+          0,
+          487
+        ],
+        [
+          186,
+          0,
+          487
+        ],
+        [
+          187,
+          0,
+          487
+        ],
+        [
+          188,
+          0,
+          487
+        ],
+        [
+          189,
+          0,
+          487
+        ],
+        [
+          190,
+          0,
+          487
+        ],
+        [
+          191,
+          0,
+          487
+        ],
+        [
+          192,
+          0,
+          487
+        ],
+        [
+          193,
+          0,
+          487
+        ],
+        [
+          194,
+          0,
+          487
+        ],
+        [
+          195,
+          0,
+          487
+        ],
+        [
+          196,
+          0,
+          487
+        ],
+        [
+          197,
+          0,
+          487
+        ],
+        [
+          198,
+          0,
+          487
+        ],
+        [
+          199,
+          0,
+          487
+        ],
+        [
+          200,
+          0,
+          487
+        ],
+        [
+          201,
+          0,
+          487
+        ],
+        [
+          202,
+          0,
+          487
+        ],
+        [
+          203,
+          0,
+          487
+        ],
+        [
+          204,
+          0,
+          487
+        ],
+        [
+          205,
+          0,
+          487
+        ],
+        [
+          206,
+          0,
+          487
+        ]
+      ]
+    },
+    {
+      "first_ID": 493,
+      "last_ID": 500,
+      "table": 34703232,
+      "table_slots": [
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33760520,
+          "call_PC": 33760536,
+          "literal_address": 33760728,
+          "literal_value": 34703232,
+          "consumer": 33897796,
+          "clean_and_current_hex": "c8109fe51820a0e30500a0e3002085e5098600eb"
+        }
+      ],
+      "original_role_argument": 5,
+      "context": "One crew voice reports that the wind has stopped. Most variants say there is nothing to do but wait. No character causes the wind to return in this exchange.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          495
+        ],
+        [
+          1,
+          1,
+          494
+        ],
+        [
+          2,
+          3,
+          496
+        ],
+        [
+          3,
+          3,
+          496
+        ],
+        [
+          4,
+          0,
+          493
+        ],
+        [
+          5,
+          4,
+          497
+        ],
+        [
+          6,
+          5,
+          498
+        ],
+        [
+          7,
+          3,
+          496
+        ],
+        [
+          8,
+          0,
+          493
+        ],
+        [
+          9,
+          2,
+          495
+        ],
+        [
+          10,
+          5,
+          498
+        ],
+        [
+          11,
+          4,
+          497
+        ],
+        [
+          12,
+          1,
+          494
+        ],
+        [
+          13,
+          0,
+          493
+        ],
+        [
+          14,
+          6,
+          499
+        ],
+        [
+          15,
+          4,
+          497
+        ],
+        [
+          16,
+          1,
+          494
+        ],
+        [
+          17,
+          4,
+          497
+        ],
+        [
+          18,
+          0,
+          493
+        ],
+        [
+          19,
+          7,
+          500
+        ],
+        [
+          20,
+          4,
+          497
+        ],
+        [
+          21,
+          1,
+          494
+        ],
+        [
+          22,
+          2,
+          495
+        ],
+        [
+          23,
+          7,
+          500
+        ],
+        [
+          24,
+          3,
+          496
+        ],
+        [
+          25,
+          3,
+          496
+        ],
+        [
+          26,
+          2,
+          495
+        ],
+        [
+          27,
+          2,
+          495
+        ],
+        [
+          28,
+          4,
+          497
+        ],
+        [
+          29,
+          7,
+          500
+        ],
+        [
+          30,
+          7,
+          500
+        ],
+        [
+          31,
+          7,
+          500
+        ],
+        [
+          32,
+          0,
+          493
+        ],
+        [
+          33,
+          7,
+          500
+        ],
+        [
+          34,
+          1,
+          494
+        ],
+        [
+          35,
+          7,
+          500
+        ],
+        [
+          36,
+          7,
+          500
+        ],
+        [
+          37,
+          0,
+          493
+        ],
+        [
+          38,
+          7,
+          500
+        ],
+        [
+          39,
+          4,
+          497
+        ],
+        [
+          40,
+          7,
+          500
+        ],
+        [
+          41,
+          5,
+          498
+        ],
+        [
+          42,
+          7,
+          500
+        ],
+        [
+          43,
+          1,
+          494
+        ],
+        [
+          44,
+          4,
+          497
+        ],
+        [
+          45,
+          0,
+          493
+        ],
+        [
+          46,
+          5,
+          498
+        ],
+        [
+          47,
+          7,
+          500
+        ],
+        [
+          48,
+          4,
+          497
+        ],
+        [
+          49,
+          4,
+          497
+        ],
+        [
+          50,
+          0,
+          493
+        ],
+        [
+          51,
+          7,
+          500
+        ],
+        [
+          52,
+          7,
+          500
+        ],
+        [
+          53,
+          2,
+          495
+        ],
+        [
+          54,
+          0,
+          493
+        ],
+        [
+          55,
+          4,
+          497
+        ],
+        [
+          56,
+          0,
+          493
+        ],
+        [
+          57,
+          7,
+          500
+        ],
+        [
+          58,
+          4,
+          497
+        ],
+        [
+          59,
+          0,
+          493
+        ],
+        [
+          60,
+          1,
+          494
+        ],
+        [
+          61,
+          4,
+          497
+        ],
+        [
+          62,
+          4,
+          497
+        ],
+        [
+          63,
+          0,
+          493
+        ],
+        [
+          64,
+          0,
+          493
+        ],
+        [
+          65,
+          4,
+          497
+        ],
+        [
+          66,
+          2,
+          495
+        ],
+        [
+          67,
+          4,
+          497
+        ],
+        [
+          68,
+          0,
+          493
+        ],
+        [
+          69,
+          1,
+          494
+        ],
+        [
+          70,
+          4,
+          497
+        ],
+        [
+          71,
+          4,
+          497
+        ],
+        [
+          72,
+          4,
+          497
+        ],
+        [
+          73,
+          7,
+          500
+        ],
+        [
+          74,
+          0,
+          493
+        ],
+        [
+          75,
+          5,
+          498
+        ],
+        [
+          76,
+          5,
+          498
+        ],
+        [
+          77,
+          7,
+          500
+        ],
+        [
+          78,
+          7,
+          500
+        ],
+        [
+          79,
+          0,
+          493
+        ],
+        [
+          80,
+          3,
+          496
+        ],
+        [
+          81,
+          1,
+          494
+        ],
+        [
+          82,
+          0,
+          493
+        ],
+        [
+          83,
+          0,
+          493
+        ],
+        [
+          84,
+          0,
+          493
+        ],
+        [
+          85,
+          0,
+          493
+        ],
+        [
+          86,
+          0,
+          493
+        ],
+        [
+          87,
+          0,
+          493
+        ],
+        [
+          88,
+          0,
+          493
+        ],
+        [
+          89,
+          0,
+          493
+        ],
+        [
+          90,
+          0,
+          493
+        ],
+        [
+          91,
+          0,
+          493
+        ],
+        [
+          92,
+          0,
+          493
+        ],
+        [
+          93,
+          0,
+          493
+        ],
+        [
+          94,
+          0,
+          493
+        ],
+        [
+          95,
+          0,
+          493
+        ],
+        [
+          96,
+          0,
+          493
+        ],
+        [
+          97,
+          0,
+          493
+        ],
+        [
+          98,
+          0,
+          493
+        ],
+        [
+          99,
+          0,
+          493
+        ],
+        [
+          100,
+          0,
+          493
+        ],
+        [
+          101,
+          0,
+          493
+        ],
+        [
+          102,
+          0,
+          493
+        ],
+        [
+          103,
+          0,
+          493
+        ],
+        [
+          104,
+          0,
+          493
+        ],
+        [
+          105,
+          0,
+          493
+        ],
+        [
+          106,
+          0,
+          493
+        ],
+        [
+          107,
+          0,
+          493
+        ],
+        [
+          108,
+          0,
+          493
+        ],
+        [
+          109,
+          0,
+          493
+        ],
+        [
+          110,
+          0,
+          493
+        ],
+        [
+          111,
+          0,
+          493
+        ],
+        [
+          112,
+          0,
+          493
+        ],
+        [
+          113,
+          0,
+          493
+        ],
+        [
+          114,
+          0,
+          493
+        ],
+        [
+          115,
+          0,
+          493
+        ],
+        [
+          116,
+          0,
+          493
+        ],
+        [
+          117,
+          0,
+          493
+        ],
+        [
+          118,
+          0,
+          493
+        ],
+        [
+          119,
+          0,
+          493
+        ],
+        [
+          120,
+          0,
+          493
+        ],
+        [
+          121,
+          0,
+          493
+        ],
+        [
+          122,
+          0,
+          493
+        ],
+        [
+          123,
+          0,
+          493
+        ],
+        [
+          124,
+          0,
+          493
+        ],
+        [
+          125,
+          0,
+          493
+        ],
+        [
+          126,
+          0,
+          493
+        ],
+        [
+          127,
+          0,
+          493
+        ],
+        [
+          128,
+          0,
+          493
+        ],
+        [
+          129,
+          0,
+          493
+        ],
+        [
+          130,
+          0,
+          493
+        ],
+        [
+          131,
+          0,
+          493
+        ],
+        [
+          132,
+          0,
+          493
+        ],
+        [
+          133,
+          0,
+          493
+        ],
+        [
+          134,
+          0,
+          493
+        ],
+        [
+          135,
+          0,
+          493
+        ],
+        [
+          136,
+          0,
+          493
+        ],
+        [
+          137,
+          0,
+          493
+        ],
+        [
+          138,
+          0,
+          493
+        ],
+        [
+          139,
+          0,
+          493
+        ],
+        [
+          140,
+          0,
+          493
+        ],
+        [
+          141,
+          0,
+          493
+        ],
+        [
+          142,
+          0,
+          493
+        ],
+        [
+          143,
+          0,
+          493
+        ],
+        [
+          144,
+          0,
+          493
+        ],
+        [
+          145,
+          0,
+          493
+        ],
+        [
+          146,
+          0,
+          493
+        ],
+        [
+          147,
+          0,
+          493
+        ],
+        [
+          148,
+          0,
+          493
+        ],
+        [
+          149,
+          0,
+          493
+        ],
+        [
+          150,
+          0,
+          493
+        ],
+        [
+          151,
+          4,
+          497
+        ],
+        [
+          152,
+          4,
+          497
+        ],
+        [
+          153,
+          4,
+          497
+        ],
+        [
+          154,
+          4,
+          497
+        ],
+        [
+          155,
+          4,
+          497
+        ],
+        [
+          156,
+          4,
+          497
+        ],
+        [
+          157,
+          4,
+          497
+        ],
+        [
+          158,
+          4,
+          497
+        ],
+        [
+          159,
+          4,
+          497
+        ],
+        [
+          160,
+          4,
+          497
+        ],
+        [
+          161,
+          4,
+          497
+        ],
+        [
+          162,
+          0,
+          493
+        ],
+        [
+          163,
+          0,
+          493
+        ],
+        [
+          164,
+          0,
+          493
+        ],
+        [
+          165,
+          0,
+          493
+        ],
+        [
+          166,
+          0,
+          493
+        ],
+        [
+          167,
+          0,
+          493
+        ],
+        [
+          168,
+          0,
+          493
+        ],
+        [
+          169,
+          0,
+          493
+        ],
+        [
+          170,
+          0,
+          493
+        ],
+        [
+          171,
+          0,
+          493
+        ],
+        [
+          172,
+          0,
+          493
+        ],
+        [
+          173,
+          0,
+          493
+        ],
+        [
+          174,
+          0,
+          493
+        ],
+        [
+          175,
+          0,
+          493
+        ],
+        [
+          176,
+          4,
+          497
+        ],
+        [
+          177,
+          0,
+          493
+        ],
+        [
+          178,
+          0,
+          493
+        ],
+        [
+          179,
+          0,
+          493
+        ],
+        [
+          180,
+          0,
+          493
+        ],
+        [
+          181,
+          4,
+          497
+        ],
+        [
+          182,
+          0,
+          493
+        ],
+        [
+          183,
+          4,
+          497
+        ],
+        [
+          184,
+          4,
+          497
+        ],
+        [
+          185,
+          0,
+          493
+        ],
+        [
+          186,
+          0,
+          493
+        ],
+        [
+          187,
+          0,
+          493
+        ],
+        [
+          188,
+          0,
+          493
+        ],
+        [
+          189,
+          0,
+          493
+        ],
+        [
+          190,
+          0,
+          493
+        ],
+        [
+          191,
+          0,
+          493
+        ],
+        [
+          192,
+          0,
+          493
+        ],
+        [
+          193,
+          0,
+          493
+        ],
+        [
+          194,
+          0,
+          493
+        ],
+        [
+          195,
+          0,
+          493
+        ],
+        [
+          196,
+          0,
+          493
+        ],
+        [
+          197,
+          0,
+          493
+        ],
+        [
+          198,
+          0,
+          493
+        ],
+        [
+          199,
+          0,
+          493
+        ],
+        [
+          200,
+          0,
+          493
+        ],
+        [
+          201,
+          0,
+          493
+        ],
+        [
+          202,
+          0,
+          493
+        ],
+        [
+          203,
+          0,
+          493
+        ],
+        [
+          204,
+          0,
+          493
+        ],
+        [
+          205,
+          0,
+          493
+        ],
+        [
+          206,
+          0,
+          493
+        ]
+      ]
+    },
+    {
+      "first_ID": 501,
+      "last_ID": 507,
+      "table": 34703200,
+      "table_slots": [
+        501,
+        -1,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33760580,
+          "call_PC": 33760588,
+          "literal_address": 33760732,
+          "literal_value": 34703200,
+          "consumer": 33897796,
+          "clean_and_current_hex": "90109fe50700a0e3fc8500eb"
+        }
+      ],
+      "original_role_argument": 7,
+      "context": "One crew voice spots sharks and warns the admiral. The encounter does not establish the number of sharks. The unrest exchange beginning at 508 is a different event.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          502
+        ],
+        [
+          1,
+          1,
+          501
+        ],
+        [
+          2,
+          3,
+          503
+        ],
+        [
+          3,
+          3,
+          503
+        ],
+        [
+          4,
+          0,
+          501
+        ],
+        [
+          5,
+          4,
+          504
+        ],
+        [
+          6,
+          5,
+          505
+        ],
+        [
+          7,
+          3,
+          503
+        ],
+        [
+          8,
+          0,
+          501
+        ],
+        [
+          9,
+          2,
+          502
+        ],
+        [
+          10,
+          5,
+          505
+        ],
+        [
+          11,
+          4,
+          504
+        ],
+        [
+          12,
+          1,
+          501
+        ],
+        [
+          13,
+          0,
+          501
+        ],
+        [
+          14,
+          6,
+          506
+        ],
+        [
+          15,
+          4,
+          504
+        ],
+        [
+          16,
+          1,
+          501
+        ],
+        [
+          17,
+          4,
+          504
+        ],
+        [
+          18,
+          0,
+          501
+        ],
+        [
+          19,
+          7,
+          507
+        ],
+        [
+          20,
+          4,
+          504
+        ],
+        [
+          21,
+          1,
+          501
+        ],
+        [
+          22,
+          2,
+          502
+        ],
+        [
+          23,
+          7,
+          507
+        ],
+        [
+          24,
+          3,
+          503
+        ],
+        [
+          25,
+          3,
+          503
+        ],
+        [
+          26,
+          2,
+          502
+        ],
+        [
+          27,
+          2,
+          502
+        ],
+        [
+          28,
+          4,
+          504
+        ],
+        [
+          29,
+          7,
+          507
+        ],
+        [
+          30,
+          7,
+          507
+        ],
+        [
+          31,
+          7,
+          507
+        ],
+        [
+          32,
+          0,
+          501
+        ],
+        [
+          33,
+          7,
+          507
+        ],
+        [
+          34,
+          1,
+          501
+        ],
+        [
+          35,
+          7,
+          507
+        ],
+        [
+          36,
+          7,
+          507
+        ],
+        [
+          37,
+          0,
+          501
+        ],
+        [
+          38,
+          7,
+          507
+        ],
+        [
+          39,
+          4,
+          504
+        ],
+        [
+          40,
+          7,
+          507
+        ],
+        [
+          41,
+          5,
+          505
+        ],
+        [
+          42,
+          7,
+          507
+        ],
+        [
+          43,
+          1,
+          501
+        ],
+        [
+          44,
+          4,
+          504
+        ],
+        [
+          45,
+          0,
+          501
+        ],
+        [
+          46,
+          5,
+          505
+        ],
+        [
+          47,
+          7,
+          507
+        ],
+        [
+          48,
+          4,
+          504
+        ],
+        [
+          49,
+          4,
+          504
+        ],
+        [
+          50,
+          0,
+          501
+        ],
+        [
+          51,
+          7,
+          507
+        ],
+        [
+          52,
+          7,
+          507
+        ],
+        [
+          53,
+          2,
+          502
+        ],
+        [
+          54,
+          0,
+          501
+        ],
+        [
+          55,
+          4,
+          504
+        ],
+        [
+          56,
+          0,
+          501
+        ],
+        [
+          57,
+          7,
+          507
+        ],
+        [
+          58,
+          4,
+          504
+        ],
+        [
+          59,
+          0,
+          501
+        ],
+        [
+          60,
+          1,
+          501
+        ],
+        [
+          61,
+          4,
+          504
+        ],
+        [
+          62,
+          4,
+          504
+        ],
+        [
+          63,
+          0,
+          501
+        ],
+        [
+          64,
+          0,
+          501
+        ],
+        [
+          65,
+          4,
+          504
+        ],
+        [
+          66,
+          2,
+          502
+        ],
+        [
+          67,
+          4,
+          504
+        ],
+        [
+          68,
+          0,
+          501
+        ],
+        [
+          69,
+          1,
+          501
+        ],
+        [
+          70,
+          4,
+          504
+        ],
+        [
+          71,
+          4,
+          504
+        ],
+        [
+          72,
+          4,
+          504
+        ],
+        [
+          73,
+          7,
+          507
+        ],
+        [
+          74,
+          0,
+          501
+        ],
+        [
+          75,
+          5,
+          505
+        ],
+        [
+          76,
+          5,
+          505
+        ],
+        [
+          77,
+          7,
+          507
+        ],
+        [
+          78,
+          7,
+          507
+        ],
+        [
+          79,
+          0,
+          501
+        ],
+        [
+          80,
+          3,
+          503
+        ],
+        [
+          81,
+          1,
+          501
+        ],
+        [
+          82,
+          0,
+          501
+        ],
+        [
+          83,
+          0,
+          501
+        ],
+        [
+          84,
+          0,
+          501
+        ],
+        [
+          85,
+          0,
+          501
+        ],
+        [
+          86,
+          0,
+          501
+        ],
+        [
+          87,
+          0,
+          501
+        ],
+        [
+          88,
+          0,
+          501
+        ],
+        [
+          89,
+          0,
+          501
+        ],
+        [
+          90,
+          0,
+          501
+        ],
+        [
+          91,
+          0,
+          501
+        ],
+        [
+          92,
+          0,
+          501
+        ],
+        [
+          93,
+          0,
+          501
+        ],
+        [
+          94,
+          0,
+          501
+        ],
+        [
+          95,
+          0,
+          501
+        ],
+        [
+          96,
+          0,
+          501
+        ],
+        [
+          97,
+          0,
+          501
+        ],
+        [
+          98,
+          0,
+          501
+        ],
+        [
+          99,
+          0,
+          501
+        ],
+        [
+          100,
+          0,
+          501
+        ],
+        [
+          101,
+          0,
+          501
+        ],
+        [
+          102,
+          0,
+          501
+        ],
+        [
+          103,
+          0,
+          501
+        ],
+        [
+          104,
+          0,
+          501
+        ],
+        [
+          105,
+          0,
+          501
+        ],
+        [
+          106,
+          0,
+          501
+        ],
+        [
+          107,
+          0,
+          501
+        ],
+        [
+          108,
+          0,
+          501
+        ],
+        [
+          109,
+          0,
+          501
+        ],
+        [
+          110,
+          0,
+          501
+        ],
+        [
+          111,
+          0,
+          501
+        ],
+        [
+          112,
+          0,
+          501
+        ],
+        [
+          113,
+          0,
+          501
+        ],
+        [
+          114,
+          0,
+          501
+        ],
+        [
+          115,
+          0,
+          501
+        ],
+        [
+          116,
+          0,
+          501
+        ],
+        [
+          117,
+          0,
+          501
+        ],
+        [
+          118,
+          0,
+          501
+        ],
+        [
+          119,
+          0,
+          501
+        ],
+        [
+          120,
+          0,
+          501
+        ],
+        [
+          121,
+          0,
+          501
+        ],
+        [
+          122,
+          0,
+          501
+        ],
+        [
+          123,
+          0,
+          501
+        ],
+        [
+          124,
+          0,
+          501
+        ],
+        [
+          125,
+          0,
+          501
+        ],
+        [
+          126,
+          0,
+          501
+        ],
+        [
+          127,
+          0,
+          501
+        ],
+        [
+          128,
+          0,
+          501
+        ],
+        [
+          129,
+          0,
+          501
+        ],
+        [
+          130,
+          0,
+          501
+        ],
+        [
+          131,
+          0,
+          501
+        ],
+        [
+          132,
+          0,
+          501
+        ],
+        [
+          133,
+          0,
+          501
+        ],
+        [
+          134,
+          0,
+          501
+        ],
+        [
+          135,
+          0,
+          501
+        ],
+        [
+          136,
+          0,
+          501
+        ],
+        [
+          137,
+          0,
+          501
+        ],
+        [
+          138,
+          0,
+          501
+        ],
+        [
+          139,
+          0,
+          501
+        ],
+        [
+          140,
+          0,
+          501
+        ],
+        [
+          141,
+          0,
+          501
+        ],
+        [
+          142,
+          0,
+          501
+        ],
+        [
+          143,
+          0,
+          501
+        ],
+        [
+          144,
+          0,
+          501
+        ],
+        [
+          145,
+          0,
+          501
+        ],
+        [
+          146,
+          0,
+          501
+        ],
+        [
+          147,
+          0,
+          501
+        ],
+        [
+          148,
+          0,
+          501
+        ],
+        [
+          149,
+          0,
+          501
+        ],
+        [
+          150,
+          0,
+          501
+        ],
+        [
+          151,
+          4,
+          504
+        ],
+        [
+          152,
+          4,
+          504
+        ],
+        [
+          153,
+          4,
+          504
+        ],
+        [
+          154,
+          4,
+          504
+        ],
+        [
+          155,
+          4,
+          504
+        ],
+        [
+          156,
+          4,
+          504
+        ],
+        [
+          157,
+          4,
+          504
+        ],
+        [
+          158,
+          4,
+          504
+        ],
+        [
+          159,
+          4,
+          504
+        ],
+        [
+          160,
+          4,
+          504
+        ],
+        [
+          161,
+          4,
+          504
+        ],
+        [
+          162,
+          0,
+          501
+        ],
+        [
+          163,
+          0,
+          501
+        ],
+        [
+          164,
+          0,
+          501
+        ],
+        [
+          165,
+          0,
+          501
+        ],
+        [
+          166,
+          0,
+          501
+        ],
+        [
+          167,
+          0,
+          501
+        ],
+        [
+          168,
+          0,
+          501
+        ],
+        [
+          169,
+          0,
+          501
+        ],
+        [
+          170,
+          0,
+          501
+        ],
+        [
+          171,
+          0,
+          501
+        ],
+        [
+          172,
+          0,
+          501
+        ],
+        [
+          173,
+          0,
+          501
+        ],
+        [
+          174,
+          0,
+          501
+        ],
+        [
+          175,
+          0,
+          501
+        ],
+        [
+          176,
+          4,
+          504
+        ],
+        [
+          177,
+          0,
+          501
+        ],
+        [
+          178,
+          0,
+          501
+        ],
+        [
+          179,
+          0,
+          501
+        ],
+        [
+          180,
+          0,
+          501
+        ],
+        [
+          181,
+          4,
+          504
+        ],
+        [
+          182,
+          0,
+          501
+        ],
+        [
+          183,
+          4,
+          504
+        ],
+        [
+          184,
+          4,
+          504
+        ],
+        [
+          185,
+          0,
+          501
+        ],
+        [
+          186,
+          0,
+          501
+        ],
+        [
+          187,
+          0,
+          501
+        ],
+        [
+          188,
+          0,
+          501
+        ],
+        [
+          189,
+          0,
+          501
+        ],
+        [
+          190,
+          0,
+          501
+        ],
+        [
+          191,
+          0,
+          501
+        ],
+        [
+          192,
+          0,
+          501
+        ],
+        [
+          193,
+          0,
+          501
+        ],
+        [
+          194,
+          0,
+          501
+        ],
+        [
+          195,
+          0,
+          501
+        ],
+        [
+          196,
+          0,
+          501
+        ],
+        [
+          197,
+          0,
+          501
+        ],
+        [
+          198,
+          0,
+          501
+        ],
+        [
+          199,
+          0,
+          501
+        ],
+        [
+          200,
+          0,
+          501
+        ],
+        [
+          201,
+          0,
+          501
+        ],
+        [
+          202,
+          0,
+          501
+        ],
+        [
+          203,
+          0,
+          501
+        ],
+        [
+          204,
+          0,
+          501
+        ],
+        [
+          205,
+          0,
+          501
+        ],
+        [
+          206,
+          0,
+          501
+        ]
+      ]
+    }
+  ],
+  "exact_floating_notice_consumer": {
+    "context": "The named crewmember gains a level. The original name getter feeds a short floating Sea View notification. Two actors can gain levels and display notices at the same time.",
+    "callers": {
+      "clean_hex": "6100a0e324108de51c108de50c1041e21c108de5a05bffeb0040a0e10600a0e1001090e5201091e531ff2fe10020a0e18c019fe50410a0e1e7b600eb84219fe50010a0e100208de57c019fe518208de25a30a0e3801efeeb",
+      "clean_start_PC": 34071536,
+      "current_thumb_entry_PC": 34071468,
+      "current_thumb_lookup_PC": 34071518,
+      "current_thumb_name_call_PC": 34071530,
+      "current_thumb_formatter_PC": 34071538,
+      "clean_lookup_PC": 34071556,
+      "lookup_target": 33903244,
+      "name_getter_virtual_slot": 32,
+      "clean_formatter_PC": 34071592,
+      "formatter_target": 34258892,
+      "floating_widget_PC": 34071620,
+      "floating_widget_target": 33578572,
+      "registered_stat_formatter_inverse_exact": true,
+      "other_modal_ID": 335,
+      "other_modal_call_PC": 34071456,
+      "other_modal_consumer": 33900216
+    },
+    "inherited_gameplay": {
+      "frame": 10627,
+      "screenshot": "out\\sea_events_20261110_v2\\focused_bubbles\\capture\\frame_010627_navigation.png",
+      "screenshot_sha256": "2f45cc86b6ce020ede81785bed38ef1ce495613b350c12eb923f89112290a7ab",
+      "RAM": "out\\sea_events_20261110_v2\\focused_bubbles\\capture\\frame_010627_arm9_ram.bin",
+      "RAM_sha256": "d3398052e54ffda5f45b03238ccae6c3df1b48b8add3e3a291d307f0f483859e",
+      "visible_notices": [
+        {
+          "address": 36303940,
+          "actor_name": "Gerhard",
+          "exact_CP932_hex": "476572686172648141826b82968274826f8149"
+        },
+        {
+          "address": 36303992,
+          "actor_name": "Manuel",
+          "exact_CP932_hex": "4d616e75656c8141826b82968274826f8149"
+        }
+      ],
+      "fixture_scope": "Earlier focused bubbles voyage after restoration of its one temporary selector instruction",
+      "observed_before_translation": true,
+      "hardware": false
+    }
+  },
+  "condition_labels": [
+    {
+      "index": 0,
+      "field": 34901504,
+      "clean_pointer": 34901384,
+      "current_pointer": 37375712,
+      "Japanese": "壊血病",
+      "English": "Scurvy"
+    },
+    {
+      "index": 1,
+      "field": 34901508,
+      "clean_pointer": 34901392,
+      "current_pointer": 37375719,
+      "Japanese": "鼠発生",
+      "English": "Rat Infestation"
+    },
+    {
+      "index": 2,
+      "field": 34901512,
+      "clean_pointer": 34901248,
+      "current_pointer": 37375735,
+      "Japanese": "嵐",
+      "English": "Storm"
+    },
+    {
+      "index": 3,
+      "field": 34901516,
+      "clean_pointer": 34901312,
+      "current_pointer": 37375741,
+      "Japanese": "吹雪",
+      "English": "Blizzard"
+    },
+    {
+      "index": 4,
+      "field": 34901520,
+      "clean_pointer": 34901240,
+      "current_pointer": 37375750,
+      "Japanese": "雨",
+      "English": "Rain"
+    },
+    {
+      "index": 5,
+      "field": 34901524,
+      "clean_pointer": 34901256,
+      "current_pointer": 37375755,
+      "Japanese": "雪",
+      "English": "Snow"
+    },
+    {
+      "index": 6,
+      "field": 34901528,
+      "clean_pointer": 34901232,
+      "current_pointer": 37375760,
+      "Japanese": "雷",
+      "English": "Lightning"
+    },
+    {
+      "index": 7,
+      "field": 34901532,
+      "clean_pointer": 34901236,
+      "current_pointer": 37375770,
+      "Japanese": "霧",
+      "English": "Fog"
+    },
+    {
+      "index": 8,
+      "field": 34901536,
+      "clean_pointer": 34901408,
+      "current_pointer": 37375774,
+      "Japanese": "オーロラ",
+      "English": "Aurora"
+    },
+    {
+      "index": 9,
+      "field": 34901540,
+      "clean_pointer": 34901344,
+      "current_pointer": 37375781,
+      "Japanese": "大イカ",
+      "English": "Giant Squid"
+    },
+    {
+      "index": 10,
+      "field": 34901544,
+      "clean_pointer": 34901352,
+      "current_pointer": 37375793,
+      "Japanese": "化け魚",
+      "English": "Monster Fish"
+    },
+    {
+      "index": 11,
+      "field": 34901548,
+      "clean_pointer": 34901244,
+      "current_pointer": 37375806,
+      "Japanese": "鯨",
+      "English": "Whales"
+    },
+    {
+      "index": 12,
+      "field": 34901552,
+      "clean_pointer": 34901360,
+      "current_pointer": 37375813,
+      "Japanese": "イルカ",
+      "English": "Dolphins"
+    },
+    {
+      "index": 13,
+      "field": 34901556,
+      "clean_pointer": 34901420,
+      "current_pointer": 37375822,
+      "Japanese": "セイレーン",
+      "English": "Sirens"
+    },
+    {
+      "index": 14,
+      "field": 34901560,
+      "clean_pointer": 34901280,
+      "current_pointer": 37375829,
+      "Japanese": "人魚",
+      "English": "Mermaids"
+    },
+    {
+      "index": 15,
+      "field": 34901564,
+      "clean_pointer": 34901368,
+      "current_pointer": 37375838,
+      "Japanese": "謎の泡",
+      "English": "Strange Bubbles"
+    },
+    {
+      "index": 16,
+      "field": 34901568,
+      "clean_pointer": 34901296,
+      "current_pointer": 37375854,
+      "Japanese": "竜巻",
+      "English": "Tornado"
+    },
+    {
+      "index": 17,
+      "field": 34901572,
+      "clean_pointer": 34901376,
+      "current_pointer": 37375862,
+      "Japanese": "大渦潮",
+      "English": "Whirlpool"
+    },
+    {
+      "index": 18,
+      "field": 34901576,
+      "clean_pointer": 34901288,
+      "current_pointer": 37375872,
+      "Japanese": "暗礁",
+      "English": "Reefs"
+    },
+    {
+      "index": 19,
+      "field": 34901580,
+      "clean_pointer": 34901304,
+      "current_pointer": 37375878,
+      "Japanese": "流氷",
+      "English": "Drift Ice"
+    },
+    {
+      "index": 20,
+      "field": 34901584,
+      "clean_pointer": 34901320,
+      "current_pointer": 37375888,
+      "Japanese": "反乱",
+      "English": "Mutiny"
+    },
+    {
+      "index": 21,
+      "field": 34901588,
+      "clean_pointer": 34901328,
+      "current_pointer": 37375895,
+      "Japanese": "混乱",
+      "English": "Confusion"
+    },
+    {
+      "index": 22,
+      "field": 34901592,
+      "clean_pointer": 34901400,
+      "current_pointer": 37375905,
+      "Japanese": "水漏れ",
+      "English": "Leaks"
+    },
+    {
+      "index": 23,
+      "field": 34901596,
+      "clean_pointer": 34901336,
+      "current_pointer": 37375911,
+      "Japanese": "伝染病",
+      "English": "Epidemic"
+    },
+    {
+      "index": 24,
+      "field": 34901600,
+      "clean_pointer": 34901252,
+      "current_pointer": 37375920,
+      "Japanese": "凪",
+      "English": "Calm"
+    },
+    {
+      "index": 25,
+      "field": 34901604,
+      "clean_pointer": 34901272,
+      "current_pointer": 37375925,
+      "Japanese": "サメ",
+      "English": "Sharks"
+    }
+  ],
+  "neighboring_context": [
+    {
+      "message_ID": 335,
+      "source_reference": {
+        "block": 4,
+        "offset": 3824,
+        "copy_end": 3844,
+        "bytes": 20,
+        "record_index": 56,
+        "table_offset": 1317806,
+        "start_in_record": 129
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 3668,
+        "copy_end": 3684,
+        "bytes": 15,
+        "record_index": 85,
+        "table_offset": 1317806,
+        "start_in_record": 0
+      },
+      "source_hex": "25738141838c8378838b83418362837681498149",
+      "current_hex": "2573206c6576656c65642075702121",
+      "Japanese": "%s、レベルアップ！！",
+      "current": "%s leveled up!!",
+      "has_existing_credit": false
+    },
+    {
+      "message_ID": 477,
+      "source_reference": {
+        "block": 6,
+        "offset": 588,
+        "copy_end": 624,
+        "bytes": 34,
+        "record_index": 12,
+        "table_offset": 1318090,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 516,
+        "copy_end": 577,
+        "bytes": 60,
+        "record_index": 17,
+        "table_offset": 1318090,
+        "start_in_record": 0
+      },
+      "source_hex": "91e595cf82be8149814089f194f082b582e682a481498140918d88f5947a92758149",
+      "current_hex": "5468697320697320626164212054616b65206576617369766520616374696f6e212045766572796f6e6520746f20796f75722073746174696f6e7321",
+      "Japanese": "大変だ！　回避しよう！　総員配置！",
+      "current": "This is bad! Take evasive action! Everyone to your stations!",
+      "has_existing_credit": true
+    },
+    {
+      "message_ID": 478,
+      "source_reference": {
+        "block": 6,
+        "offset": 624,
+        "copy_end": 652,
+        "bytes": 28,
+        "record_index": 13,
+        "table_offset": 1318092,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 577,
+        "copy_end": 634,
+        "bytes": 55,
+        "record_index": 18,
+        "table_offset": 1318092,
+        "start_in_record": 0
+      },
+      "source_hex": "82c582cd89f194f082b782e982bc81498140918d88f5947a92758149",
+      "current_hex": "204c6574277320737465657220636c656172206f66206974210a2020416c6c2068616e647320746f20796f75722073746174696f6e7321",
+      "Japanese": "では回避するぞ！　総員配置！",
+      "current": " Let's steer clear of it!\n  All hands to your stations!",
+      "has_existing_credit": true
+    },
+    {
+      "message_ID": 479,
+      "source_reference": {
+        "block": 6,
+        "offset": 652,
+        "copy_end": 712,
+        "bytes": 59,
+        "record_index": 13,
+        "table_offset": 1318094,
+        "start_in_record": 29
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 634,
+        "copy_end": 726,
+        "bytes": 91,
+        "record_index": 20,
+        "table_offset": 1318094,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482c182bb815b8149814093a682b082c882ab82e181490a82dd82f182c8814189f194f082b782e982ed82e681498140918d88f5947a92758149",
+      "current_hex": "4e6f207761792120576527766520676f7420746f20676574206177617921204576657279626f64792c207765277265207374656572696e6720636c6561722120416c6c2068616e647320746f20796f75722073746174696f6e7321",
+      "Japanese": "うっそー！　逃げなきゃ！\nみんな、回避するわよ！　総員配置！",
+      "current": "No way! We've got to get away! Everybody, we're steering clear! All hands to your stations!",
+      "has_existing_credit": true
+    },
+    {
+      "message_ID": 480,
+      "source_reference": {
+        "block": 6,
+        "offset": 712,
+        "copy_end": 756,
+        "bytes": 43,
+        "record_index": 14,
+        "table_offset": 1318096,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 726,
+        "copy_end": 790,
+        "bytes": 62,
+        "record_index": 21,
+        "table_offset": 1318096,
+        "start_in_record": 0
+      },
+      "source_hex": "82dd82f182c88141978e82bf928582a282c40a918d88f5947a92758149814089f194f082b782e982ed8149",
+      "current_hex": "20537461792063616c6d2c2065766572796f6e65210a2020546f20796f75722073746174696f6e73210a20205765276c6c20737465657220636c65617221",
+      "Japanese": "みんな、落ち着いて\n総員配置！　回避するわ！",
+      "current": " Stay calm, everyone!\n  To your stations!\n  We'll steer clear!",
+      "has_existing_credit": true
+    },
+    {
+      "message_ID": 508,
+      "source_reference": {
+        "block": 6,
+        "offset": 1748,
+        "copy_end": 1828,
+        "bytes": 78,
+        "record_index": 39,
+        "table_offset": 1318152,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 6,
+        "offset": 1764,
+        "copy_end": 1817,
+        "bytes": 52,
+        "record_index": 50,
+        "table_offset": 1318152,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482a882a882a88149814082e082a482b882c182c68a4382ce82a982e882c50a82c782a482c982a982c882e882bb82a482be81490a918182ad8349834a82c996df82e882c482a682e682a88149",
+      "current_hex": "536f6d657468696e6720737472616e676520686173206170706561726564206174207365612e0a200a2020202020202020202020",
+      "Japanese": "うおおお！　もうずっと海ばかりで\nどうにかなりそうだ！\n早くオカに戻りてえよお！",
+      "current": "Something strange has appeared at sea.\n \n           ",
+      "has_existing_credit": false
+    }
+  ],
+  "current_native_lookups": 28,
+  "native_crew_voice_cases": 828,
+  "new_gameplay": false,
+  "formatting_pending": true,
+  "registered_release_pending": true,
+  "new_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\sailing_alert_source_drafts.tsv": "78760b71f74361baaaeeb7447a7e69f685bee8761310c05778e40738adb5db5d",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\sailing_alert_decisions.tsv": "84788d76931a33959cd0bec3b1e1b9a22f105e29ca63463c5729414039253714",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\sea_event_focused_bubbles_verification.json": "724a6dadfac48959aa048fc2bfabc813ae24f78d36749db42ce08225bef2de74",
+    "translations\\levelup_stat_format_release_v1.json": "474fd1cb16493f8fe1bda867cafab5a8af3dca8b7309aa4fd4ac2eef6e6a3b06",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_sailing_alert_review_v1.py": "0e890527057cd15c227de716e8d69b52add7b429ea3a51434d574659bbfe6deb"
+  }
+}

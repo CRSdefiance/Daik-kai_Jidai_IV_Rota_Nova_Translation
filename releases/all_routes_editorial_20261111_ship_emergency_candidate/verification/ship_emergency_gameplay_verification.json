@@ -1,0 +1,251 @@
+{
+  "candidate_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277",
+  "observed_notice_IDs": [
+    573,
+    601
+  ],
+  "actual_emulator_gameplay": true,
+  "hardware": false,
+  "flagship_leak": {
+    "mode": "leak",
+    "fixture": [
+      {
+        "mode": "select-leak",
+        "instruction": 33754896,
+        "before": "0400a0e1",
+        "after": "1000a0e3",
+        "changes": [
+          {
+            "address": 33754896,
+            "before": 4,
+            "after": 16
+          },
+          {
+            "address": 33754899,
+            "before": 225,
+            "after": 227
+          }
+        ],
+        "original_dispatcher": 33758912,
+        "only_original_event_argument_forced": true,
+        "original_leak_selection_and_effects": true,
+        "frame": 8327
+      },
+      {
+        "mode": "restore-leak-selection",
+        "instruction": 33754896,
+        "before": "1000a0e3",
+        "after": "0400a0e1",
+        "changes": [
+          {
+            "address": 33754896,
+            "before": 16,
+            "after": 4
+          },
+          {
+            "address": 33754899,
+            "before": 227,
+            "after": 225
+          }
+        ],
+        "original_dispatcher": 33758912,
+        "only_original_event_argument_forced": true,
+        "original_leak_selection_and_effects": true,
+        "frame": 9627
+      }
+    ],
+    "observed": [
+      {
+        "frame": 9627,
+        "message_ID": 573,
+        "arguments": [],
+        "lines": [
+          "Admiral, we're taking on water!",
+          "It looks like the bottom",
+          "of the flagship's hull is damaged."
+        ],
+        "capture": {
+          "frame": 9627,
+          "path": "out\\ship_emergency_20261111_v2\\leak\\capture\\frame_009627_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "ae9409f07f4462915c00b9f10fd56185eeb8fdd14856dd290dc526b734dbdd74",
+          "framebuffer_sha256": "8dddec901076cbf2f1f594c067b7552f7603514fbe174541a8805ce949bb0f18"
+        },
+        "RAM": {
+          "frame": 9627,
+          "path": "out\\ship_emergency_20261111_v2\\leak\\capture\\frame_009627_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "1c1c9863d531592faab1c15e29e9cd8e157ef8d782b721922b5e3bdf5cc77617",
+          "read_only_export": true
+        },
+        "complete_glyphs": 76,
+        "exact_native_foreground_and_margins": true
+      }
+    ],
+    "evidence": {
+      "out\\ship_emergency_20261111_v2\\leak\\terminal.json": "496b02f9b216a2e1743b278d6969c752fb1dcf46fc8ac01990848ab5560e00e5",
+      "out\\ship_emergency_20261111_v2\\leak\\capture\\navigation_command_journal.json": "b8fef6bac42bdfd0c6f5f4d241fd3b28b2d80992bc630679b406e9a97b2c1b92",
+      "out\\ship_emergency_20261111_v2\\leak\\capture\\capture_report.json": "9d9959b6148e5b2dcc8ae80bee5eedc910b10fae6842808a39a71f9eb732a7fa"
+    },
+    "warning_dismissed_with_A": true,
+    "returned_to_sailing": {
+      "frame": 9827,
+      "path": "out\\ship_emergency_20261111_v2\\leak\\capture\\frame_009827_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "48288de35f1a8cf7ec74e58be0066bba9dca409af5ad66a9e341f2d0219b59c6",
+      "framebuffer_sha256": "c359a9ee89545f0736258994c2ee5b04be08da91da0672995b88e67371153572"
+    }
+  },
+  "supply_reports": {
+    "mode": "supplies",
+    "fixture": [
+      {
+        "mode": "select-mutiny",
+        "instruction": 33754892,
+        "before": "30108de2",
+        "after": "0f0000ea",
+        "changes": [
+          {
+            "address": 33754892,
+            "before": 48,
+            "after": 15
+          },
+          {
+            "address": 33754893,
+            "before": 16,
+            "after": 0
+          },
+          {
+            "address": 33754894,
+            "before": 141,
+            "after": 0
+          },
+          {
+            "address": 33754895,
+            "before": 226,
+            "after": 234
+          }
+        ],
+        "original_mutiny_caller": 33754960,
+        "only_native_encounter_selection_forced": true,
+        "natural_mutiny_prerequisite_not_exercised": true,
+        "frame": 8327
+      },
+      {
+        "mode": "restore-mutiny-selection",
+        "instruction": 33754892,
+        "before": "0f0000ea",
+        "after": "30108de2",
+        "changes": [
+          {
+            "address": 33754892,
+            "before": 15,
+            "after": 48
+          },
+          {
+            "address": 33754893,
+            "before": 0,
+            "after": 16
+          },
+          {
+            "address": 33754894,
+            "before": 0,
+            "after": 141
+          },
+          {
+            "address": 33754895,
+            "before": 234,
+            "after": 226
+          }
+        ],
+        "original_mutiny_caller": 33754960,
+        "only_native_encounter_selection_forced": true,
+        "natural_mutiny_prerequisite_not_exercised": true,
+        "frame": 9627
+      }
+    ],
+    "observed": [
+      {
+        "frame": 11127,
+        "message_ID": 601,
+        "arguments": [
+          "Food"
+        ],
+        "lines": [
+          "No Food left!"
+        ],
+        "capture": {
+          "frame": 11127,
+          "path": "out\\ship_emergency_20261111_v2\\supplies\\capture\\frame_011127_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "dcddd0e9719569bda21f8f3e8a1e54dfc1f49df747aa461ee4d1f056f3fb0265",
+          "framebuffer_sha256": "96a8f305baa44fedb4a332e53f00f33578d0445952d6d0ff9ff2959f98462941"
+        },
+        "RAM": {
+          "frame": 11127,
+          "path": "out\\ship_emergency_20261111_v2\\supplies\\capture\\frame_011127_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "6a8ee9cc6221226c63559c434d29733c71cabdb8257f603ade223c551c33d024",
+          "read_only_export": true
+        },
+        "complete_glyphs": 11,
+        "exact_native_foreground_and_margins": true
+      },
+      {
+        "frame": 11327,
+        "message_ID": 601,
+        "arguments": [
+          "Water"
+        ],
+        "lines": [
+          "No Water left!"
+        ],
+        "capture": {
+          "frame": 11327,
+          "path": "out\\ship_emergency_20261111_v2\\supplies\\capture\\frame_011327_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "35d9292a0c2b9df10cd88d275cd04e5d394d461dd8caeed23ac24365694d2ca2",
+          "framebuffer_sha256": "58ac8636026b4a6d5633f41a8ef3fd0e5b09437b488e676f2abded6b13b903a3"
+        },
+        "RAM": {
+          "frame": 11327,
+          "path": "out\\ship_emergency_20261111_v2\\supplies\\capture\\frame_011327_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "fecd45262e987747b6d47a9c9df7d1625cf403983a8f5fc8d1ce0efaadfc4a09",
+          "read_only_export": true
+        },
+        "complete_glyphs": 12,
+        "exact_native_foreground_and_margins": true
+      }
+    ],
+    "evidence": {
+      "out\\ship_emergency_20261111_v2\\supplies\\terminal.json": "46d4ced56613277995052fdd96fecf6eb7b6759e2d888e62be84043bb760d612",
+      "out\\ship_emergency_20261111_v2\\supplies\\capture\\navigation_command_journal.json": "3d5a77b15e29dcd554592033dd347f687a0fbf9b38f446ed74f4b3e6407f3e93",
+      "out\\ship_emergency_20261111_v2\\supplies\\capture\\capture_report.json": "95ad1f1847fa1c6142a255208f21fa8e6cbaa0d910ce5041946815e97b57a2b2"
+    },
+    "original_supply_depletion_after_meal": true,
+    "no_supply_values_injected": true,
+    "preceding_mutiny_and_return_frames_exact": 8
+  },
+  "evidence": {
+    "out\\ship_emergency_20261111_v2\\stored_ship_emergency_balanced_verification.json": "365f9652021dd3fb7f8519294584eb61ff7c52f8070674fabd76cc7125582243",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ship_emergency_contextual_review_v2.json": "1bfac47b3fdba2e2d11254d5df9030d4065b669138a1c8ba4a3239fdf35295d8",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\verify_ship_emergency_release_inputs_v1.py": "2fbe3405edb40392dc49864545c5cbb121fd49f61e89692210fe0d147b4069f1"
+  }
+}

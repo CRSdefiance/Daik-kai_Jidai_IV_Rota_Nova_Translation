@@ -1,6 +1,6 @@
 > Main promoted build: [Unified V4701](releases/all_routes_unified_v4701/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 >
-> Latest testing candidate: [All Routes with reviewed sea events](releases/all_routes_editorial_20261110_sea_events_candidate/README.md) (2026-11-10). It includes the [diplomacy candidate](releases/all_routes_editorial_20261110_diplomatic_outcomes_candidate/README.md) and adds 98 contextual sea-event reviews, with improvements to dialogue, line wrapping and glyphs. The clean-input patch reconstructs the candidate byte for byte. Main promotion awaits acceptance.
+> Latest promotion candidate: [All Routes Ship Emergency](releases/all_routes_editorial_20261111_ship_emergency_candidate/README.md) (2026-11-11). This cumulative build includes Rafael’s tutorials, the Market Trade-screen fix, and 137 additional reviews since the Sea Events candidate. The clean-input patch reconstructs the testing ROM byte for byte. Main promotion awaits acceptance.
 
 # DK4 Translation Tool
 

@@ -1,0 +1,9372 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "registered_input": {
+    "candidate": "out\\mutiny_registered_20261111_v1\\Translation_DS_All_Routes_Mutiny_20261111_candidate.nds",
+    "candidate_sha256": "f275fb369b1ec564fde76ba18d8b89e9cd4ed3186588ce8faffab4930245eb01",
+    "ARM9_sha256": "8dfa942f2f5e8ddd5888c0578c4bae9081d19557ee1d33e3ac288feb35618382",
+    "COMMON_sha256": "1ac88cc1f5dc4e2c6f78908f065e9fb6b42f37980982aea43a93ddd1cc0f7bdd",
+    "release_proof": "releases\\all_routes_editorial_20261111_mutiny_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "7841f9aa4d4c1e16a7799c9d31f366fa09ee85ce58a6922d0fad836019e0aa86",
+    "startup_proof": "releases\\all_routes_editorial_20261111_mutiny_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "e6d31f7661cb623858f2a2484fa0cf58f91fc47a58481c8464d054cbf39920df",
+    "snapshot": {
+      "path": "out\\mutiny_20261111_v1\\own_startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "05c1053a01798fb0c32635daf120a77c18bd5c0cf117659d0f0fd673e325b805",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "source_ROM": "work\\clean.nds",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_573",
+      "message_ID": 573,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1336,
+        "copy_end": 1396,
+        "bytes": 57,
+        "record_index": 19,
+        "table_offset": 1318282,
+        "start_in_record": 66
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1110,
+        "copy_end": 1168,
+        "bytes": 57,
+        "record_index": 35,
+        "table_offset": 1318282,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140908582aa985282ea82c482a282dc82b781490a8af88acd82cc914492ea82aa8f9d82f182c582a282e982e682a482c582b7",
+      "current_hex": "41646d6972616c212041206c65616b210a202054686520666c61677368697027732068756c6c2069732064616d616765642e20202020202020",
+      "source_Japanese": "提督！　水が漏れています！\n旗艦の船底が傷んでいるようです",
+      "current_English": "Admiral! A leak!\n  The flagship's hull is damaged.       ",
+      "english": "Admiral, we're taking on water! It looks like the bottom of the flagship's hull is damaged.",
+      "independent_English": "Admiral, we're taking on water! It looks like the bottom of the flagship's hull is damaged.",
+      "source_meaning": "A formal report to the admiral that the flagship is leaking, apparently from damage to the bottom of its hull.",
+      "localization_note": "Restore the likely damage at the bottom of the flagship's hull and the speaker's uncertainty.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212041206c65616b210a202054686520666c61677368697027732068756c6c2069732064616d616765642e20202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_574",
+      "message_ID": 574,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1396,
+        "copy_end": 1444,
+        "bytes": 45,
+        "record_index": 20,
+        "table_offset": 1318284,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1168,
+        "copy_end": 1214,
+        "bytes": 45,
+        "record_index": 36,
+        "table_offset": 1318284,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281419085985282ea82c582b781490a8af88acd82cc914492ea82aa8f9d82f182c582a282dc82b78149",
+      "current_hex": "41646d6972616c2c2061206c65616b210a2020466c6167736869702068756c6c2064616d616765642120202020",
+      "source_Japanese": "提督、水漏れです！\n旗艦の船底が傷んでいます！",
+      "current_English": "Admiral, a leak!\n  Flagship hull damaged!    ",
+      "english": "Admiral, we've sprung a leak! The bottom of the flagship's hull is damaged.",
+      "independent_English": "Admiral, we've sprung a leak! The bottom of the flagship's hull is damaged.",
+      "source_meaning": "The speaker reports a leak to the admiral and states that the flagship's hull is damaged at the bottom.",
+      "localization_note": "Restore the bottom of the hull as the damaged part. This speaker is sure.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c2c2061206c65616b210a2020466c6167736869702068756c6c2064616d616765642120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_575",
+      "message_ID": 575,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1444,
+        "copy_end": 1496,
+        "bytes": 49,
+        "record_index": 21,
+        "table_offset": 1318286,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1214,
+        "copy_end": 1264,
+        "bytes": 49,
+        "record_index": 37,
+        "table_offset": 1318286,
+        "start_in_record": 0
+      },
+      "source_hex": "82b182cc914481419085985282ea82b582c482e982e681490a914492ea82aa8f9d82f182c582e982cc82a982c882a08163",
+      "current_hex": "546869732073686970206973206c65616b696e67210a20204973207468652068756c6c2064616d616765642e2e2e3f2020",
+      "source_Japanese": "この船、水漏れしてるよ！\n船底が傷んでるのかなあ…",
+      "current_English": "This ship is leaking!\n  Is the hull damaged...?  ",
+      "english": "We're taking on water! Think there's damage to the bottom of the hull?",
+      "independent_English": "We're taking on water! Think there's damage to the bottom of the hull?",
+      "source_meaning": "The speaker notices this ship leaking and wonders whether the bottom of the hull is damaged.",
+      "localization_note": "Keep the leak on this ship and restore the tentative question about the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "546869732073686970206973206c65616b696e67210a20204973207468652068756c6c2064616d616765642e2e2e3f2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_576",
+      "message_ID": 576,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1496,
+        "copy_end": 1560,
+        "bytes": 61,
+        "record_index": 22,
+        "table_offset": 1318288,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1264,
+        "copy_end": 1326,
+        "bytes": 61,
+        "record_index": 38,
+        "table_offset": 1318288,
+        "start_in_record": 0
+      },
+      "source_hex": "91e595cf82be8149814082b182cc914481419085985282ea82b582c482e282aa82e981490a914492ea82aa8f9d82f182c582e982dd82c482a682be82c8",
+      "current_hex": "41206c65616b210a20205468652068756c6c206d7573742062652064616d616765642e2020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "大変だ！　この船、水漏れしてやがる！\n船底が傷んでるみてえだな",
+      "current_English": "A leak!\n  The hull must be damaged.                          ",
+      "english": "We're in trouble! This ship's taking on water! Looks like the bottom of the hull's damaged.",
+      "independent_English": "We're in trouble! This ship's taking on water! Looks like the bottom of the hull's damaged.",
+      "source_meaning": "A rough voice sounds the alarm about this ship leaking and suspects damage to the bottom of its hull.",
+      "localization_note": "Restore the rough alarm and the speaker's qualified diagnosis.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41206c65616b210a20205468652068756c6c206d7573742062652064616d616765642e2020202020202020202020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_577",
+      "message_ID": 577,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1560,
+        "copy_end": 1612,
+        "bytes": 51,
+        "record_index": 23,
+        "table_offset": 1318290,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1326,
+        "copy_end": 1378,
+        "bytes": 51,
+        "record_index": 39,
+        "table_offset": 1318290,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814191e595cf82b682e181490a8af88acd82cc914492ea82aa8f9d82f182c5908582aa985282ea82c682e982bc8149",
+      "current_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c206973206c65616b696e6721202020202020202020",
+      "source_Japanese": "提督、大変じゃ！\n旗艦の船底が傷んで水が漏れとるぞ！",
+      "current_English": "Admiral! The flagship's\n  hull is leaking!         ",
+      "english": "Admiral, trouble! The flagship's taking on water. The bottom of the hull's damaged!",
+      "independent_English": "Admiral, trouble! The flagship's taking on water. The bottom of the hull's damaged!",
+      "source_meaning": "The older voice urgently tells the admiral the flagship is leaking because the bottom of its hull is damaged.",
+      "localization_note": "Restore the damaged underside of the flagship and the older speaker's urgent delivery.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c206973206c65616b696e6721202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_578",
+      "message_ID": 578,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1612,
+        "copy_end": 1672,
+        "bytes": 57,
+        "record_index": 24,
+        "table_offset": 1318292,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1378,
+        "copy_end": 1436,
+        "bytes": 57,
+        "record_index": 40,
+        "table_offset": 1318292,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b814182bd82a282d682f182be815b81490a82b182cc9144814192ea82a982e7908582aa82e082ea82c482e9815b8149",
+      "current_hex": "41646d6972616c21205765277265206c65616b696e67210a20205761746572277320636f6d696e67207468726f756768212020202020202020",
+      "source_Japanese": "ていとくー、たいへんだー！\nこの船、底から水がもれてるー！",
+      "current_English": "Admiral! We're leaking!\n  Water's coming through!        ",
+      "english": "Admiral! Water's coming in through the bottom of the ship!",
+      "independent_English": "Admiral! Water's coming in through the bottom of the ship!",
+      "source_meaning": "A frightened younger speaker calls the admiral and reports that water is coming in through the bottom of this ship.",
+      "localization_note": "Restore where the water is coming in and keep the young speaker's panicked cry.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c21205765277265206c65616b696e67210a20205761746572277320636f6d696e67207468726f756768212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_579",
+      "message_ID": 579,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1672,
+        "copy_end": 1728,
+        "bytes": 53,
+        "record_index": 25,
+        "table_offset": 1318294,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1436,
+        "copy_end": 1490,
+        "bytes": 53,
+        "record_index": 41,
+        "table_offset": 1318294,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281419085985282ea82c582b782bc81490a8af88acd82cc914492ea82aa8f9d82f182c582a282e982e682a482c582b782c8",
+      "current_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c2069732064616d616765642e2020202020202020202020",
+      "source_Japanese": "提督、水漏れですぞ！\n旗艦の船底が傷んでいるようですな",
+      "current_English": "Admiral! The flagship's\n  hull is damaged.           ",
+      "english": "Admiral, we've got a leak! The bottom of the flagship's hull appears to be damaged.",
+      "independent_English": "Admiral, we've got a leak! The bottom of the flagship's hull appears to be damaged.",
+      "source_meaning": "A polite but emphatic report of a leak, with apparent damage to the bottom of the flagship's hull.",
+      "localization_note": "Restore both the reported leak and the apparent damage at the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c2069732064616d616765642e2020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_580",
+      "message_ID": 580,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1728,
+        "copy_end": 1776,
+        "bytes": 46,
+        "record_index": 26,
+        "table_offset": 1318296,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1490,
+        "copy_end": 1537,
+        "bytes": 46,
+        "record_index": 42,
+        "table_offset": 1318296,
+        "start_in_record": 0
+      },
+      "source_hex": "257382c50a9085985282ea82aa94ad90b681490a914492ea82aa8f9d82f182c582a282e982e682a482c582b78149",
+      "current_hex": "41206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642120",
+      "source_Japanese": "%sで\n水漏れが発生！\n船底が傷んでいるようです！",
+      "current_English": "A leak aboard %s!\n  The hull appears damaged! ",
+      "english": "There's a leak aboard %s! The bottom of its hull looks damaged.",
+      "independent_English": "There's a leak aboard %s! It looks like the bottom of its hull is damaged.",
+      "source_meaning": "A leak is reported aboard the named ship, with apparent damage to the bottom of its hull.",
+      "localization_note": "Use the ship's name in the alarm and keep the likely damage as a separate, direct observation.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "There's a leak aboard %s! It looks like the bottom of its hull is damaged."
+    },
+    {
+      "id": "COMMON_MESSAGE_581",
+      "message_ID": 581,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1776,
+        "copy_end": 1828,
+        "bytes": 51,
+        "record_index": 27,
+        "table_offset": 1318298,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1537,
+        "copy_end": 1589,
+        "bytes": 51,
+        "record_index": 43,
+        "table_offset": 1318298,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a9085985282ea82be82c182c481490a914492ea82aa8f9d82f182c582a282e982cc82a982c882a0",
+      "current_hex": "2041646d6972616c21202573206973206c65616b696e67210a20204973207468652068756c6c2064616d616765643f20202020",
+      "source_Japanese": "提督！\n%sで\n水漏れだって！\n船底が傷んでいるのかなあ",
+      "current_English": " Admiral! %s is leaking!\n  Is the hull damaged?    ",
+      "english": "Admiral, they say %s has a leak! Think the hull's damaged underneath?",
+      "independent_English": "Admiral, they say %s is taking on water! Think the bottom of its hull is damaged?",
+      "source_meaning": "The speaker tells the admiral they've heard that the named ship is leaking and wonders about damage to its hull.",
+      "localization_note": "Keep the secondhand report and the speaker's question about damage at the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21202573206973206c65616b696e67210a20204973207468652068756c6c2064616d616765643f20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "Admiral, they say %s is taking on water! Think the bottom of its hull is damaged?"
+    },
+    {
+      "id": "COMMON_MESSAGE_582",
+      "message_ID": 582,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1828,
+        "copy_end": 1880,
+        "bytes": 49,
+        "record_index": 28,
+        "table_offset": 1318300,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1589,
+        "copy_end": 1639,
+        "bytes": 49,
+        "record_index": 44,
+        "table_offset": 1318300,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382aa0a9085985282ea82be82c182c482e681490a914492ea82aa8f9d82f182c582e982f182be82c8",
+      "current_hex": "202041646d6972616c21202573206973206c65616b696e67210a202048756c6c2064616d616765642e2020202020202020",
+      "source_Japanese": "提督！\n%sが\n水漏れだってよ！\n船底が傷んでるんだな",
+      "current_English": "  Admiral! %s is leaking!\n  Hull damaged.        ",
+      "english": "Admiral, word is %s has sprung a leak! Must be damage to the bottom of its hull.",
+      "independent_English": "Admiral, word is %s is taking on water! Must be damage to the bottom of its hull.",
+      "source_meaning": "A rough voice reports word of a leak on the named ship and concludes the hull is damaged at the bottom.",
+      "localization_note": "Keep the rough speaker's hearsay and the inference that the bottom of the hull is damaged.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573206973206c65616b696e67210a202048756c6c2064616d616765642e2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "Admiral, word is %s is taking on water! Must be damage to the bottom of its hull."
+    },
+    {
+      "id": "COMMON_MESSAGE_583",
+      "message_ID": 583,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1880,
+        "copy_end": 1936,
+        "bytes": 55,
+        "record_index": 29,
+        "table_offset": 1318302,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1639,
+        "copy_end": 1695,
+        "bytes": 55,
+        "record_index": 45,
+        "table_offset": 1318302,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a9085985282ea94ad90b682b682e181490a914492ea82aa8f9d82f182c582a882e982e682a482b682e182c8",
+      "current_hex": "41646d6972616c212041206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642e20",
+      "source_Japanese": "提督！\n%sで\n水漏れ発生じゃ！\n船底が傷んでおるようじゃな",
+      "current_English": "Admiral! A leak aboard %s!\n  The hull appears damaged. ",
+      "english": "Admiral, there's a leak aboard %s! Looks like damage to the bottom of its hull.",
+      "independent_English": "Admiral, there's a leak aboard %s! Looks like damage to the bottom of its hull.",
+      "source_meaning": "An older voice urgently reports the leak aboard the named ship and suspects damage at the bottom of its hull.",
+      "localization_note": "Keep the older voice's direct alarm and the distinction between the leak and its likely cause.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212041206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642e20",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_584",
+      "message_ID": 584,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1936,
+        "copy_end": 1996,
+        "bytes": 57,
+        "record_index": 30,
+        "table_offset": 1318304,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1695,
+        "copy_end": 1753,
+        "bytes": 57,
+        "record_index": 46,
+        "table_offset": 1318304,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a908582aa82e082ea82c482e982c182c481490a914492ea82aa82a282bd82f182c582e982dd82bd82a282be82cb",
+      "current_hex": "202041646d6972616c21202573206973206c65616b696e67210a20204974732068756c6c207365656d732064616d616765642e202020202020",
+      "source_Japanese": "提督！\n%sで\n水がもれてるって！\n船底がいたんでるみたいだね",
+      "current_English": "  Admiral! %s is leaking!\n  Its hull seems damaged.      ",
+      "english": "Admiral, they say %s is leaking! I think the bottom of its hull is damaged.",
+      "independent_English": "Admiral, they say %s is leaking! I think the bottom of its hull is damaged.",
+      "source_meaning": "The young speaker reports hearing the named ship is taking on water and suspects damage to the hull at the bottom.",
+      "localization_note": "Restore the young speaker's secondhand information and tentative conclusion.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573206973206c65616b696e67210a20204974732068756c6c207365656d732064616d616765642e202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_585",
+      "message_ID": 585,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1996,
+        "copy_end": 2016,
+        "bytes": 20,
+        "record_index": 31,
+        "table_offset": 1318306,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1753,
+        "copy_end": 1774,
+        "bytes": 20,
+        "record_index": 47,
+        "table_offset": 1318306,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "4669726520657874696e67756973686564212020",
+      "source_Japanese": "火災は鎮火しました！",
+      "current_English": "Fire extinguished!  ",
+      "english": "Fire extinguished!",
+      "independent_English": "The fire is out!",
+      "source_meaning": "A formal announcement that the fire is out.",
+      "localization_note": "Retain the short formal announcement. The source directly reports that the fire is out.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4669726520657874696e67756973686564212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_586",
+      "message_ID": 586,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2016,
+        "copy_end": 2036,
+        "bytes": 20,
+        "record_index": 31,
+        "table_offset": 1318308,
+        "start_in_record": 22
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1774,
+        "copy_end": 1795,
+        "bytes": 20,
+        "record_index": 48,
+        "table_offset": 1318308,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "4669726520657874696e67756973686564212020",
+      "source_Japanese": "火災は鎮火しました！",
+      "current_English": "Fire extinguished!  ",
+      "english": "Fire extinguished!",
+      "independent_English": "The fire is out!",
+      "source_meaning": "A second matter-of-fact announcement that the fire is out.",
+      "localization_note": "Retain the identical wording because the two formal Japanese alternatives are identical.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4669726520657874696e67756973686564212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_587",
+      "message_ID": 587,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2036,
+        "copy_end": 2060,
+        "bytes": 22,
+        "record_index": 31,
+        "table_offset": 1318310,
+        "start_in_record": 42
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1795,
+        "copy_end": 1818,
+        "bytes": 22,
+        "record_index": 49,
+        "table_offset": 1318310,
+        "start_in_record": 0
+      },
+      "source_hex": "91e58fe49576814189ce82cd8fc182b582bd82e68149",
+      "current_hex": "49742773206f6b61792e20466972652773206f757421",
+      "source_Japanese": "大丈夫、火は消したよ！",
+      "current_English": "It's okay. Fire's out!",
+      "english": "It's all right. We put the fire out!",
+      "independent_English": "It's all right. We put the fire out!",
+      "source_meaning": "The speaker reassures the listener and says the fire has been put out.",
+      "localization_note": "Keep the reassurance, then report the successful response in conversational English.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "49742773206f6b61792e20466972652773206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_588",
+      "message_ID": 588,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2060,
+        "copy_end": 2080,
+        "bytes": 20,
+        "record_index": 32,
+        "table_offset": 1318312,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1818,
+        "copy_end": 1839,
+        "bytes": 20,
+        "record_index": 50,
+        "table_offset": 1318312,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582bd82ed82e68149",
+      "current_hex": "205468652066697265206973206f757421202020",
+      "source_Japanese": "火災は鎮火したわよ！",
+      "current_English": " The fire is out!   ",
+      "english": "The fire is out!",
+      "independent_English": "The fire's out now!",
+      "source_meaning": "The speaker announces that the fire is out, with a confident, familiar cadence.",
+      "localization_note": "Retain the natural, confident report that the fire is out.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "205468652066697265206973206f757421202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_589",
+      "message_ID": 589,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2080,
+        "copy_end": 2100,
+        "bytes": 18,
+        "record_index": 32,
+        "table_offset": 1318314,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1839,
+        "copy_end": 1858,
+        "bytes": 18,
+        "record_index": 51,
+        "table_offset": 1318314,
+        "start_in_record": 0
+      },
+      "source_hex": "82e082a489ce82cd8fc182a682bd82ba8149",
+      "current_hex": "2020466c616d657320617265206f75742120",
+      "source_Japanese": "もう火は消えたぜ！",
+      "current_English": "  Flames are out! ",
+      "english": "Fire's out now!",
+      "independent_English": "The fire's out!",
+      "source_meaning": "A rough, relieved voice says the fire is out already.",
+      "localization_note": "Use the rough voice's quick relief and preserve that the fire has already been extinguished.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2020466c616d657320617265206f75742120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_590",
+      "message_ID": 590,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2100,
+        "copy_end": 2128,
+        "bytes": 26,
+        "record_index": 33,
+        "table_offset": 1318316,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1858,
+        "copy_end": 1885,
+        "bytes": 26,
+        "record_index": 52,
+        "table_offset": 1318316,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814189ce8dd082cd92c189ce82b582bd82bc82a28149",
+      "current_hex": "2041646d6972616c2c207468652066697265206973206f757421",
+      "source_Japanese": "提督、火災は鎮火したぞい！",
+      "current_English": " Admiral, the fire is out!",
+      "english": "Admiral, the fire is out!",
+      "independent_English": "Admiral, the fire's out!",
+      "source_meaning": "The older speaker tells the admiral the fire is out.",
+      "localization_note": "Retain the older speaker's short report and direct address to the admiral.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2c207468652066697265206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_591",
+      "message_ID": 591,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2128,
+        "copy_end": 2160,
+        "bytes": 30,
+        "record_index": 34,
+        "table_offset": 1318318,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1885,
+        "copy_end": 1916,
+        "bytes": 30,
+        "record_index": 53,
+        "table_offset": 1318318,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b8149814089ce82cd8fc182b582bd82e6815b8149",
+      "current_hex": "2041646d6972616c21204920707574206f75742074686520666972652120",
+      "source_Japanese": "ていとくー！　火は消したよー！",
+      "current_English": " Admiral! I put out the fire! ",
+      "english": "Admiral! We put the fire out!",
+      "independent_English": "Admiral! We put the fire out!",
+      "source_meaning": "The youthful speaker calls out to the admiral and proudly reports that they put the fire out.",
+      "localization_note": "Keep the young speaker's proud call and report the completed effort without claiming they worked alone.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21204920707574206f75742074686520666972652120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_592",
+      "message_ID": 592,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2160,
+        "copy_end": 2184,
+        "bytes": 22,
+        "record_index": 35,
+        "table_offset": 1318320,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1916,
+        "copy_end": 1939,
+        "bytes": 22,
+        "record_index": 54,
+        "table_offset": 1318320,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce82f08fc182b58e7e82df82dc82b582bd82bc8149",
+      "current_hex": "204669726520657874696e6775697368656421202020",
+      "source_Japanese": "火を消し止めましたぞ！",
+      "current_English": " Fire extinguished!   ",
+      "english": "We've put out the fire!",
+      "independent_English": "We've put out the fire!",
+      "source_meaning": "A polite voice reports that the fire was extinguished.",
+      "localization_note": "The polite report sounds spoken and preserves the successful response.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "204669726520657874696e6775697368656421202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_593",
+      "message_ID": 593,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2184,
+        "copy_end": 2212,
+        "bytes": 27,
+        "record_index": 36,
+        "table_offset": 1318322,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1939,
+        "copy_end": 1967,
+        "bytes": 27,
+        "record_index": 55,
+        "table_offset": 1318322,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082f08fc182b58e7e82df82dc82b582bd8149",
+      "current_hex": "202573277320666972650a20206973206f75742120202020202020",
+      "source_Japanese": "%sの\n火災を消し止めました！",
+      "current_English": " %s's fire\n  is out!       ",
+      "english": "We've put out the fire aboard %s!",
+      "independent_English": "We've put out the fire aboard %s!",
+      "source_meaning": "The speaker reports putting out the fire aboard the named ship.",
+      "localization_note": "Restore the action and keep the fire aboard the named ship without attaching a possessive to its name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202573277320666972650a20206973206f75742120202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_594",
+      "message_ID": 594,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2212,
+        "copy_end": 2240,
+        "bytes": 25,
+        "record_index": 37,
+        "table_offset": 1318324,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1967,
+        "copy_end": 1993,
+        "bytes": 25,
+        "record_index": 56,
+        "table_offset": 1318324,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "20202573277320666972650a20206973206f75742120202020",
+      "source_Japanese": "%sの\n火災は鎮火しました！",
+      "current_English": "  %s's fire\n  is out!    ",
+      "english": "The fire aboard %s is out!",
+      "independent_English": "The fire aboard %s is out!",
+      "source_meaning": "A measured report that the fire aboard the named ship is out.",
+      "localization_note": "Keep this speaker's matter-of-fact status update and original ship argument.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f75742120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_595",
+      "message_ID": 595,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2240,
+        "copy_end": 2260,
+        "bytes": 19,
+        "record_index": 38,
+        "table_offset": 1318326,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1993,
+        "copy_end": 2013,
+        "bytes": 19,
+        "record_index": 57,
+        "table_offset": 1318326,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82cd8fc182a682bd82e68149",
+      "current_hex": "2573277320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火は消えたよ！",
+      "current_English": "%s's fire\n  is out!",
+      "english": "The fire on %s is out!",
+      "independent_English": "The fire on %s is out!",
+      "source_meaning": "A familiar voice announces that the fire on the named ship is out.",
+      "localization_note": "Use a familiar, direct report and keep the named ship as the location.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2573277320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_596",
+      "message_ID": 596,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2260,
+        "copy_end": 2280,
+        "bytes": 19,
+        "record_index": 39,
+        "table_offset": 1318328,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2013,
+        "copy_end": 2033,
+        "bytes": 19,
+        "record_index": 58,
+        "table_offset": 1318328,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82cd8fc182a682bd82ed8149",
+      "current_hex": "2020257320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火は消えたわ！",
+      "current_English": "  %s fire\n  is out!",
+      "english": "The fire's out aboard %s!",
+      "independent_English": "The fire's out aboard %s!",
+      "source_meaning": "A confident voice reports that the fire aboard the named ship is out.",
+      "localization_note": "Use the original confident declaration and restore a natural connection to the ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2020257320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_597",
+      "message_ID": 597,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2280,
+        "copy_end": 2304,
+        "bytes": 23,
+        "record_index": 40,
+        "table_offset": 1318330,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2033,
+        "copy_end": 2057,
+        "bytes": 23,
+        "record_index": 59,
+        "table_offset": 1318330,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b582dc82b582bd82ba8149",
+      "current_hex": "20202573277320666972650a20206973206f7574212020",
+      "source_Japanese": "%sの\n火を消しましたぜ！",
+      "current_English": "  %s's fire\n  is out!  ",
+      "english": "We put out the fire on %s!",
+      "independent_English": "We put out the fire on %s!",
+      "source_meaning": "The rough speaker reports that they put out the fire on the named ship.",
+      "localization_note": "Restore the rough speaker's report that the fire was actively extinguished.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f7574212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_598",
+      "message_ID": 598,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2304,
+        "copy_end": 2332,
+        "bytes": 25,
+        "record_index": 41,
+        "table_offset": 1318332,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2057,
+        "copy_end": 2083,
+        "bytes": 25,
+        "record_index": 60,
+        "table_offset": 1318332,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b58e7e82df82bd82ed82a28149",
+      "current_hex": "20202573277320666972650a20206973206f75742120202020",
+      "source_Japanese": "%sの\n火を消し止めたわい！",
+      "current_English": "  %s's fire\n  is out!    ",
+      "english": "We've put out the fire aboard %s!",
+      "independent_English": "We've put out the fire aboard %s!",
+      "source_meaning": "An older speaker reports extinguishing the fire aboard the named ship.",
+      "localization_note": "Keep the older voice's confident report and the original ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f75742120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_599",
+      "message_ID": 599,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2332,
+        "copy_end": 2352,
+        "bytes": 19,
+        "record_index": 42,
+        "table_offset": 1318334,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2083,
+        "copy_end": 2103,
+        "bytes": 19,
+        "record_index": 61,
+        "table_offset": 1318334,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b582bd82e68149",
+      "current_hex": "2573277320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火を消したよ！",
+      "current_English": "%s's fire\n  is out!",
+      "english": "We put the fire out on %s!",
+      "independent_English": "We put the fire out on %s!",
+      "source_meaning": "A younger voice proudly reports putting out the fire on the named ship.",
+      "localization_note": "Use a simple, proud statement for the younger voice and keep the fire aboard the named ship.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2573277320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_600",
+      "message_ID": 600,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2352,
+        "copy_end": 2384,
+        "bytes": 29,
+        "record_index": 43,
+        "table_offset": 1318336,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2103,
+        "copy_end": 2133,
+        "bytes": 29,
+        "record_index": 62,
+        "table_offset": 1318336,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082cd8fc182b58e7e82df82dc82b582bd82bc8149",
+      "current_hex": "20202573277320666972650a20206973206f7574212020202020202020",
+      "source_Japanese": "%sの\n火災は消し止めましたぞ！",
+      "current_English": "  %s's fire\n  is out!        ",
+      "english": "The fire aboard %s has been put out!",
+      "independent_English": "The fire aboard %s has been put out!",
+      "source_meaning": "A polite and emphatic report that the fire aboard the named ship has been extinguished.",
+      "localization_note": "Keep the polite announcement and restore the complete phrase around the ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f7574212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_601",
+      "message_ID": 601,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2384,
+        "copy_end": 2408,
+        "bytes": 21,
+        "record_index": 44,
+        "table_offset": 1318338,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2133,
+        "copy_end": 2155,
+        "bytes": 21,
+        "record_index": 63,
+        "table_offset": 1318338,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "4e6f202573206c6566742120202020202020202020",
+      "source_Japanese": "%sが\n底を突きました！",
+      "current_English": "No %s left!          ",
+      "english": "No %s left!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A formal warning that the named supply has run out.",
+      "localization_note": "Retain the urgent short warning. It works with both original supply labels, Water and Food.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f202573206c6566742120202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_602",
+      "message_ID": 602,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2408,
+        "copy_end": 2436,
+        "bytes": 27,
+        "record_index": 45,
+        "table_offset": 1318340,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2155,
+        "copy_end": 2183,
+        "bytes": 27,
+        "record_index": 64,
+        "table_offset": 1318340,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882e882dc82b582bd8149",
+      "current_hex": "4e6f2025730a202072656d61696e73212020202020202020202020",
+      "source_Japanese": "%sの\n残りがなくなりました！",
+      "current_English": "No %s\n  remains!           ",
+      "english": "There's no %s left!",
+      "independent_English": "There's no %s left!",
+      "source_meaning": "The speaker reports there is none of the named supply left.",
+      "localization_note": "Use a complete natural sentence that still works with either supply label.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f2025730a202072656d61696e73212020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_603",
+      "message_ID": 603,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2436,
+        "copy_end": 2464,
+        "bytes": 25,
+        "record_index": 46,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2183,
+        "copy_end": 2209,
+        "bytes": 25,
+        "record_index": 65,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882c182bd82e68149",
+      "current_hex": "202057652776652072756e206f75740a20206f662025732120",
+      "source_Japanese": "%sの\n残りがなくなったよ！",
+      "current_English": "  We've run out\n  of %s! ",
+      "english": "We've run out of %s!",
+      "independent_English": "We're out of %s!",
+      "source_meaning": "An informal speaker says there is none of the named supply left.",
+      "localization_note": "Retain the informal announcement that the supply has run out. Reflow the old split after run out.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202057652776652072756e206f75740a20206f662025732120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_604",
+      "message_ID": 604,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2464,
+        "copy_end": 2488,
+        "bytes": 23,
+        "record_index": 47,
+        "table_offset": 1318344,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2209,
+        "copy_end": 2233,
+        "bytes": 23,
+        "record_index": 66,
+        "table_offset": 1318344,
+        "start_in_record": 0
+      },
+      "source_hex": "82e082a4257382cc0a8e6382e882aa82c882a282ed8149",
+      "current_hex": "5468657265206973206e6f2025730a20206c6566742120",
+      "source_Japanese": "もう%sの\n残りがないわ！",
+      "current_English": "There is no %s\n  left! ",
+      "english": "We don't have any %s left!",
+      "independent_English": "We don't have any %s left!",
+      "source_meaning": "The speaker says they have no more of the named supply.",
+      "localization_note": "Keep the speaker's direct statement that the supply is gone.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f2025730a20206c6566742120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_605",
+      "message_ID": 605,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2488,
+        "copy_end": 2512,
+        "bytes": 21,
+        "record_index": 48,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2233,
+        "copy_end": 2255,
+        "bytes": 21,
+        "record_index": 67,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "20202573206861730a202072756e206f7574212020",
+      "source_Japanese": "%sが\n底を突きました！",
+      "current_English": "  %s has\n  run out!  ",
+      "english": "We're out of %s!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A direct warning that the named supply has run out.",
+      "localization_note": "Keep the blunt warning and give the crew a natural subject for the shortage.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573206861730a202072756e206f7574212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_606",
+      "message_ID": 606,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2512,
+        "copy_end": 2540,
+        "bytes": 27,
+        "record_index": 49,
+        "table_offset": 1318348,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2255,
+        "copy_end": 2283,
+        "bytes": 27,
+        "record_index": 68,
+        "table_offset": 1318348,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282c482b582e082a482bd82bc8149",
+      "current_hex": "57652776652072756e206f75740a20206f66202573212020202020",
+      "source_Japanese": "%sが\n底を突いてしもうたぞ！",
+      "current_English": "We've run out\n  of %s!     ",
+      "english": "We've gone and run out of %s!",
+      "independent_English": "We've gone and run out of %s!",
+      "source_meaning": "The older voice announces with dismay that the named supply is exhausted.",
+      "localization_note": "Keep the older speaker's dismay in the phrasing while preserving the exact supply argument.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57652776652072756e206f75740a20206f66202573212020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_607",
+      "message_ID": 607,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2540,
+        "copy_end": 2584,
+        "bytes": 42,
+        "record_index": 50,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2283,
+        "copy_end": 2326,
+        "bytes": 42,
+        "record_index": 69,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "source_hex": "82bd814191e595cf82be82e681490a257382aa0a82c882ad82c882c182bf82e182c182bd829f81498149",
+      "current_hex": "20204f68206e6f210a202057652776652072756e206f7574206f66202573212020202020202020202020",
+      "source_Japanese": "た、大変だよ！\n%sが\nなくなっちゃったぁ！！",
+      "current_English": "  Oh no!\n  We've run out of %s!           ",
+      "english": "Oh no! We're all out of %s!",
+      "independent_English": "Oh no! We're all out of %s!",
+      "source_meaning": "A frightened speaker stammers and says they have completely run out of the named supply.",
+      "localization_note": "Keep the younger speaker's startled alarm and emphasis on complete depletion.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f68206e6f210a202057652776652072756e206f7574206f66202573212020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_608",
+      "message_ID": 608,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2584,
+        "copy_end": 2608,
+        "bytes": 23,
+        "record_index": 51,
+        "table_offset": 1318352,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2326,
+        "copy_end": 2350,
+        "bytes": 23,
+        "record_index": 70,
+        "table_offset": 1318352,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd82bc8149",
+      "current_hex": "2057652776652072756e206f75740a20206f6620257321",
+      "source_Japanese": "%sが\n底を突きましたぞ！",
+      "current_English": " We've run out\n  of %s!",
+      "english": "We've run out of %s!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A polite but emphatic speaker says they've run out of the named supply.",
+      "localization_note": "Retain the emphatic report that the supply is exhausted and reflow the interrupted phrase.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2057652776652072756e206f75740a20206f6620257321",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_609",
+      "message_ID": 609,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2608,
+        "copy_end": 2652,
+        "bytes": 44,
+        "record_index": 52,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2350,
+        "copy_end": 2395,
+        "bytes": 44,
+        "record_index": 71,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482a4816396da82aa89f182e981630a95a082aa8cb882c182bd81630a82e082a48163835f838182be8163",
+      "current_hex": "44697a7a792e2e2e0a202049276d207374617276696e672e2e2e0a2020492063616e277420676f206f6e2e20",
+      "source_Japanese": "うう…目が回る…\n腹が減った…\nもう…ダメだ…",
+      "current_English": "Dizzy...\n  I'm starving...\n  I can't go on. ",
+      "english": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "independent_English": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "source_meaning": "The sailor moans, feels dizzy and hungry, and fears they can't go on.",
+      "localization_note": "Restore the moan, dizziness, hunger, and faltering last thought. The line leaves the outcome open.",
+      "decision": "revision",
+      "speaker": "Sailor selected by the original fleet",
+      "context": "A hungry sailor speaks about dizziness and feeling unable to go on. The source does not describe a collapse.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "44697a7a792e2e2e0a202049276d207374617276696e672e2e2e0a2020492063616e277420676f206f6e2e20",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_610",
+      "message_ID": 610,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2652,
+        "copy_end": 2688,
+        "bytes": 35,
+        "record_index": 52,
+        "table_offset": 1318356,
+        "start_in_record": 44
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2395,
+        "copy_end": 2435,
+        "bytes": 39,
+        "record_index": 72,
+        "table_offset": 1318356,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd0a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "57652776652072756e206f7574206f662025732e2057652772652073746f7070696e672025732e",
+      "source_Japanese": "%sが\n底を突きました\n%sを\n中止します",
+      "current_English": "We've run out of %s. We're stopping %s.",
+      "english": "We've run out of %s. We're stopping %s.",
+      "independent_English": "We've run out of %s. Canceling %s.",
+      "source_meaning": "The formal speaker reports exhausting the named supply and says the named activity is being canceled.",
+      "localization_note": "Retain the clear announcement that the shortage has forced a stop. Preserve the supply first and activity second.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57652776652072756e206f7574206f662025732e2057652772652073746f7070696e672025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_611",
+      "message_ID": 611,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2688,
+        "copy_end": 2724,
+        "bytes": 35,
+        "record_index": 53,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2435,
+        "copy_end": 2462,
+        "bytes": 26,
+        "record_index": 73,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82a981630a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "4e6f202573206c6566742e2e2e2053746f7070696e672025732e",
+      "source_Japanese": "%sが\n底を突いたか…\n%sを\n中止します",
+      "current_English": "No %s left... Stopping %s.",
+      "english": "So we're out of %s... Stopping %s.",
+      "independent_English": "So we're out of %s... Canceling %s.",
+      "source_meaning": "After acknowledging the named shortage with a pause, the speaker says they are canceling the named activity.",
+      "localization_note": "Restore the speaker's acknowledgment and pause before stopping the named activity.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f202573206c6566742e2e2e2053746f7070696e672025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_612",
+      "message_ID": 612,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2724,
+        "copy_end": 2760,
+        "bytes": 35,
+        "record_index": 54,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2462,
+        "copy_end": 2494,
+        "bytes": 31,
+        "record_index": 74,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82cc82a40a257382f00a92868e7e82b782e982bc",
+      "current_hex": "5765277265206f7574206f662025732e205765276c6c2073746f702025732e",
+      "source_Japanese": "%sが\n底を突いたのう\n%sを\n中止するぞ",
+      "current_English": "We're out of %s. We'll stop %s.",
+      "english": "We're out of %s. We'll stop %s.",
+      "independent_English": "We've run out of %s. We'll have to stop %s.",
+      "source_meaning": "The older speaker notes the named supply has run out and announces they will stop the named activity.",
+      "localization_note": "Retain the older speaker's direct decision to stop the named activity because the supply is gone.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5765277265206f7574206f662025732e205765276c6c2073746f702025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_613",
+      "message_ID": 613,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2760,
+        "copy_end": 2800,
+        "bytes": 37,
+        "record_index": 55,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2494,
+        "copy_end": 2525,
+        "bytes": 30,
+        "record_index": 75,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a82c882ad82c882c182bf82e182c182bd82cb0a257382f00a82e282df82e982e6",
+      "current_hex": "5765277265206f7574206f662025732e2049276c6c2073746f702025732e",
+      "source_Japanese": "%sが\nなくなっちゃったね\n%sを\nやめるよ",
+      "current_English": "We're out of %s. I'll stop %s.",
+      "english": "We're out of %s, huh? I'll stop %s.",
+      "independent_English": "We're out of %s, huh? We'll have to stop %s.",
+      "source_meaning": "The youthful speaker acknowledges that none of the named supply is left and says they will stop the named activity.",
+      "localization_note": "Restore the younger speaker's reaction and keep the direct statement that the activity will stop.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5765277265206f7574206f662025732e2049276c6c2073746f702025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    }
+  ],
+  "counts": {
+    "revision": 32,
+    "retention": 9
+  },
+  "exact_native_groups": [
+    {
+      "first_ID": 573,
+      "last_ID": 579,
+      "table": 34702880,
+      "table_slots": [
+        573,
+        574,
+        575,
+        -1,
+        576,
+        577,
+        578,
+        579
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33756496,
+          "call_PC": 33756504,
+          "literal_address": 33756676,
+          "literal_value": 34702880,
+          "consumer": 33897796,
+          "clean_and_current_hex": "ac109fe50d00a0e3f98900eb"
+        }
+      ],
+      "consumer": 33897796,
+      "original_role_argument": 13,
+      "arguments": [],
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "speaker": "Shipwright",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          575
+        ],
+        [
+          1,
+          1,
+          574
+        ],
+        [
+          2,
+          3,
+          573
+        ],
+        [
+          3,
+          3,
+          573
+        ],
+        [
+          4,
+          0,
+          573
+        ],
+        [
+          5,
+          4,
+          576
+        ],
+        [
+          6,
+          5,
+          577
+        ],
+        [
+          7,
+          3,
+          573
+        ],
+        [
+          8,
+          0,
+          573
+        ],
+        [
+          9,
+          2,
+          575
+        ],
+        [
+          10,
+          5,
+          577
+        ],
+        [
+          11,
+          4,
+          576
+        ],
+        [
+          12,
+          1,
+          574
+        ],
+        [
+          13,
+          0,
+          573
+        ],
+        [
+          14,
+          6,
+          578
+        ],
+        [
+          15,
+          4,
+          576
+        ],
+        [
+          16,
+          1,
+          574
+        ],
+        [
+          17,
+          4,
+          576
+        ],
+        [
+          18,
+          0,
+          573
+        ],
+        [
+          19,
+          7,
+          579
+        ],
+        [
+          20,
+          4,
+          576
+        ],
+        [
+          21,
+          1,
+          574
+        ],
+        [
+          22,
+          2,
+          575
+        ],
+        [
+          23,
+          7,
+          579
+        ],
+        [
+          24,
+          3,
+          573
+        ],
+        [
+          25,
+          3,
+          573
+        ],
+        [
+          26,
+          2,
+          575
+        ],
+        [
+          27,
+          2,
+          575
+        ],
+        [
+          28,
+          4,
+          576
+        ],
+        [
+          29,
+          7,
+          579
+        ],
+        [
+          30,
+          7,
+          579
+        ],
+        [
+          31,
+          7,
+          579
+        ],
+        [
+          32,
+          0,
+          573
+        ],
+        [
+          33,
+          7,
+          579
+        ],
+        [
+          34,
+          1,
+          574
+        ],
+        [
+          35,
+          7,
+          579
+        ],
+        [
+          36,
+          7,
+          579
+        ],
+        [
+          37,
+          0,
+          573
+        ],
+        [
+          38,
+          7,
+          579
+        ],
+        [
+          39,
+          4,
+          576
+        ],
+        [
+          40,
+          7,
+          579
+        ],
+        [
+          41,
+          5,
+          577
+        ],
+        [
+          42,
+          7,
+          579
+        ],
+        [
+          43,
+          1,
+          574
+        ],
+        [
+          44,
+          4,
+          576
+        ],
+        [
+          45,
+          0,
+          573
+        ],
+        [
+          46,
+          5,
+          577
+        ],
+        [
+          47,
+          7,
+          579
+        ],
+        [
+          48,
+          4,
+          576
+        ],
+        [
+          49,
+          4,
+          576
+        ],
+        [
+          50,
+          0,
+          573
+        ],
+        [
+          51,
+          7,
+          579
+        ],
+        [
+          52,
+          7,
+          579
+        ],
+        [
+          53,
+          2,
+          575
+        ],
+        [
+          54,
+          0,
+          573
+        ],
+        [
+          55,
+          4,
+          576
+        ],
+        [
+          56,
+          0,
+          573
+        ],
+        [
+          57,
+          7,
+          579
+        ],
+        [
+          58,
+          4,
+          576
+        ],
+        [
+          59,
+          0,
+          573
+        ],
+        [
+          60,
+          1,
+          574
+        ],
+        [
+          61,
+          4,
+          576
+        ],
+        [
+          62,
+          4,
+          576
+        ],
+        [
+          63,
+          0,
+          573
+        ],
+        [
+          64,
+          0,
+          573
+        ],
+        [
+          65,
+          4,
+          576
+        ],
+        [
+          66,
+          2,
+          575
+        ],
+        [
+          67,
+          4,
+          576
+        ],
+        [
+          68,
+          0,
+          573
+        ],
+        [
+          69,
+          1,
+          574
+        ],
+        [
+          70,
+          4,
+          576
+        ],
+        [
+          71,
+          4,
+          576
+        ],
+        [
+          72,
+          4,
+          576
+        ],
+        [
+          73,
+          7,
+          579
+        ],
+        [
+          74,
+          0,
+          573
+        ],
+        [
+          75,
+          5,
+          577
+        ],
+        [
+          76,
+          5,
+          577
+        ],
+        [
+          77,
+          7,
+          579
+        ],
+        [
+          78,
+          7,
+          579
+        ],
+        [
+          79,
+          0,
+          573
+        ],
+        [
+          80,
+          3,
+          573
+        ],
+        [
+          81,
+          1,
+          574
+        ],
+        [
+          82,
+          0,
+          573
+        ],
+        [
+          83,
+          0,
+          573
+        ],
+        [
+          84,
+          0,
+          573
+        ],
+        [
+          85,
+          0,
+          573
+        ],
+        [
+          86,
+          0,
+          573
+        ],
+        [
+          87,
+          0,
+          573
+        ],
+        [
+          88,
+          0,
+          573
+        ],
+        [
+          89,
+          0,
+          573
+        ],
+        [
+          90,
+          0,
+          573
+        ],
+        [
+          91,
+          0,
+          573
+        ],
+        [
+          92,
+          0,
+          573
+        ],
+        [
+          93,
+          0,
+          573
+        ],
+        [
+          94,
+          0,
+          573
+        ],
+        [
+          95,
+          0,
+          573
+        ],
+        [
+          96,
+          0,
+          573
+        ],
+        [
+          97,
+          0,
+          573
+        ],
+        [
+          98,
+          0,
+          573
+        ],
+        [
+          99,
+          0,
+          573
+        ],
+        [
+          100,
+          0,
+          573
+        ],
+        [
+          101,
+          0,
+          573
+        ],
+        [
+          102,
+          0,
+          573
+        ],
+        [
+          103,
+          0,
+          573
+        ],
+        [
+          104,
+          0,
+          573
+        ],
+        [
+          105,
+          0,
+          573
+        ],
+        [
+          106,
+          0,
+          573
+        ],
+        [
+          107,
+          0,
+          573
+        ],
+        [
+          108,
+          0,
+          573
+        ],
+        [
+          109,
+          0,
+          573
+        ],
+        [
+          110,
+          0,
+          573
+        ],
+        [
+          111,
+          0,
+          573
+        ],
+        [
+          112,
+          0,
+          573
+        ],
+        [
+          113,
+          0,
+          573
+        ],
+        [
+          114,
+          0,
+          573
+        ],
+        [
+          115,
+          0,
+          573
+        ],
+        [
+          116,
+          0,
+          573
+        ],
+        [
+          117,
+          0,
+          573
+        ],
+        [
+          118,
+          0,
+          573
+        ],
+        [
+          119,
+          0,
+          573
+        ],
+        [
+          120,
+          0,
+          573
+        ],
+        [
+          121,
+          0,
+          573
+        ],
+        [
+          122,
+          0,
+          573
+        ],
+        [
+          123,
+          0,
+          573
+        ],
+        [
+          124,
+          0,
+          573
+        ],
+        [
+          125,
+          0,
+          573
+        ],
+        [
+          126,
+          0,
+          573
+        ],
+        [
+          127,
+          0,
+          573
+        ],
+        [
+          128,
+          0,
+          573
+        ],
+        [
+          129,
+          0,
+          573
+        ],
+        [
+          130,
+          0,
+          573
+        ],
+        [
+          131,
+          0,
+          573
+        ],
+        [
+          132,
+          0,
+          573
+        ],
+        [
+          133,
+          0,
+          573
+        ],
+        [
+          134,
+          0,
+          573
+        ],
+        [
+          135,
+          0,
+          573
+        ],
+        [
+          136,
+          0,
+          573
+        ],
+        [
+          137,
+          0,
+          573
+        ],
+        [
+          138,
+          0,
+          573
+        ],
+        [
+          139,
+          0,
+          573
+        ],
+        [
+          140,
+          0,
+          573
+        ],
+        [
+          141,
+          0,
+          573
+        ],
+        [
+          142,
+          0,
+          573
+        ],
+        [
+          143,
+          0,
+          573
+        ],
+        [
+          144,
+          0,
+          573
+        ],
+        [
+          145,
+          0,
+          573
+        ],
+        [
+          146,
+          0,
+          573
+        ],
+        [
+          147,
+          0,
+          573
+        ],
+        [
+          148,
+          0,
+          573
+        ],
+        [
+          149,
+          0,
+          573
+        ],
+        [
+          150,
+          0,
+          573
+        ],
+        [
+          151,
+          4,
+          576
+        ],
+        [
+          152,
+          4,
+          576
+        ],
+        [
+          153,
+          4,
+          576
+        ],
+        [
+          154,
+          4,
+          576
+        ],
+        [
+          155,
+          4,
+          576
+        ],
+        [
+          156,
+          4,
+          576
+        ],
+        [
+          157,
+          4,
+          576
+        ],
+        [
+          158,
+          4,
+          576
+        ],
+        [
+          159,
+          4,
+          576
+        ],
+        [
+          160,
+          4,
+          576
+        ],
+        [
+          161,
+          4,
+          576
+        ],
+        [
+          162,
+          0,
+          573
+        ],
+        [
+          163,
+          0,
+          573
+        ],
+        [
+          164,
+          0,
+          573
+        ],
+        [
+          165,
+          0,
+          573
+        ],
+        [
+          166,
+          0,
+          573
+        ],
+        [
+          167,
+          0,
+          573
+        ],
+        [
+          168,
+          0,
+          573
+        ],
+        [
+          169,
+          0,
+          573
+        ],
+        [
+          170,
+          0,
+          573
+        ],
+        [
+          171,
+          0,
+          573
+        ],
+        [
+          172,
+          0,
+          573
+        ],
+        [
+          173,
+          0,
+          573
+        ],
+        [
+          174,
+          0,
+          573
+        ],
+        [
+          175,
+          0,
+          573
+        ],
+        [
+          176,
+          4,
+          576
+        ],
+        [
+          177,
+          0,
+          573
+        ],
+        [
+          178,
+          0,
+          573
+        ],
+        [
+          179,
+          0,
+          573
+        ],
+        [
+          180,
+          0,
+          573
+        ],
+        [
+          181,
+          4,
+          576
+        ],
+        [
+          182,
+          0,
+          573
+        ],
+        [
+          183,
+          4,
+          576
+        ],
+        [
+          184,
+          4,
+          576
+        ],
+        [
+          185,
+          0,
+          573
+        ],
+        [
+          186,
+          0,
+          573
+        ],
+        [
+          187,
+          0,
+          573
+        ],
+        [
+          188,
+          0,
+          573
+        ],
+        [
+          189,
+          0,
+          573
+        ],
+        [
+          190,
+          0,
+          573
+        ],
+        [
+          191,
+          0,
+          573
+        ],
+        [
+          192,
+          0,
+          573
+        ],
+        [
+          193,
+          0,
+          573
+        ],
+        [
+          194,
+          0,
+          573
+        ],
+        [
+          195,
+          0,
+          573
+        ],
+        [
+          196,
+          0,
+          573
+        ],
+        [
+          197,
+          0,
+          573
+        ],
+        [
+          198,
+          0,
+          573
+        ],
+        [
+          199,
+          0,
+          573
+        ],
+        [
+          200,
+          0,
+          573
+        ],
+        [
+          201,
+          0,
+          573
+        ],
+        [
+          202,
+          0,
+          573
+        ],
+        [
+          203,
+          0,
+          573
+        ],
+        [
+          204,
+          0,
+          573
+        ],
+        [
+          205,
+          0,
+          573
+        ],
+        [
+          206,
+          0,
+          573
+        ]
+      ]
+    },
+    {
+      "first_ID": 580,
+      "last_ID": 584,
+      "table": 34702848,
+      "table_slots": [
+        580,
+        -1,
+        581,
+        -1,
+        582,
+        583,
+        584,
+        -1
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33756576,
+          "call_PC": 33756584,
+          "literal_address": 33756680,
+          "literal_value": 34702848,
+          "consumer": 33898252,
+          "clean_and_current_hex": "60109fe50400a0e1578a00eb"
+        }
+      ],
+      "consumer": 33898252,
+      "original_role_argument": null,
+      "arguments": [
+        "named ship"
+      ],
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "speaker": "Crew member selected by the original ship response",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          581
+        ],
+        [
+          1,
+          1,
+          580
+        ],
+        [
+          2,
+          3,
+          580
+        ],
+        [
+          3,
+          3,
+          580
+        ],
+        [
+          4,
+          0,
+          580
+        ],
+        [
+          5,
+          4,
+          582
+        ],
+        [
+          6,
+          5,
+          583
+        ],
+        [
+          7,
+          3,
+          580
+        ],
+        [
+          8,
+          0,
+          580
+        ],
+        [
+          9,
+          2,
+          581
+        ],
+        [
+          10,
+          5,
+          583
+        ],
+        [
+          11,
+          4,
+          582
+        ],
+        [
+          12,
+          1,
+          580
+        ],
+        [
+          13,
+          0,
+          580
+        ],
+        [
+          14,
+          6,
+          584
+        ],
+        [
+          15,
+          4,
+          582
+        ],
+        [
+          16,
+          1,
+          580
+        ],
+        [
+          17,
+          4,
+          582
+        ],
+        [
+          18,
+          0,
+          580
+        ],
+        [
+          19,
+          7,
+          580
+        ],
+        [
+          20,
+          4,
+          582
+        ],
+        [
+          21,
+          1,
+          580
+        ],
+        [
+          22,
+          2,
+          581
+        ],
+        [
+          23,
+          7,
+          580
+        ],
+        [
+          24,
+          3,
+          580
+        ],
+        [
+          25,
+          3,
+          580
+        ],
+        [
+          26,
+          2,
+          581
+        ],
+        [
+          27,
+          2,
+          581
+        ],
+        [
+          28,
+          4,
+          582
+        ],
+        [
+          29,
+          7,
+          580
+        ],
+        [
+          30,
+          7,
+          580
+        ],
+        [
+          31,
+          7,
+          580
+        ],
+        [
+          32,
+          0,
+          580
+        ],
+        [
+          33,
+          7,
+          580
+        ],
+        [
+          34,
+          1,
+          580
+        ],
+        [
+          35,
+          7,
+          580
+        ],
+        [
+          36,
+          7,
+          580
+        ],
+        [
+          37,
+          0,
+          580
+        ],
+        [
+          38,
+          7,
+          580
+        ],
+        [
+          39,
+          4,
+          582
+        ],
+        [
+          40,
+          7,
+          580
+        ],
+        [
+          41,
+          5,
+          583
+        ],
+        [
+          42,
+          7,
+          580
+        ],
+        [
+          43,
+          1,
+          580
+        ],
+        [
+          44,
+          4,
+          582
+        ],
+        [
+          45,
+          0,
+          580
+        ],
+        [
+          46,
+          5,
+          583
+        ],
+        [
+          47,
+          7,
+          580
+        ],
+        [
+          48,
+          4,
+          582
+        ],
+        [
+          49,
+          4,
+          582
+        ],
+        [
+          50,
+          0,
+          580
+        ],
+        [
+          51,
+          7,
+          580
+        ],
+        [
+          52,
+          7,
+          580
+        ],
+        [
+          53,
+          2,
+          581
+        ],
+        [
+          54,
+          0,
+          580
+        ],
+        [
+          55,
+          4,
+          582
+        ],
+        [
+          56,
+          0,
+          580
+        ],
+        [
+          57,
+          7,
+          580
+        ],
+        [
+          58,
+          4,
+          582
+        ],
+        [
+          59,
+          0,
+          580
+        ],
+        [
+          60,
+          1,
+          580
+        ],
+        [
+          61,
+          4,
+          582
+        ],
+        [
+          62,
+          4,
+          582
+        ],
+        [
+          63,
+          0,
+          580
+        ],
+        [
+          64,
+          0,
+          580
+        ],
+        [
+          65,
+          4,
+          582
+        ],
+        [
+          66,
+          2,
+          581
+        ],
+        [
+          67,
+          4,
+          582
+        ],
+        [
+          68,
+          0,
+          580
+        ],
+        [
+          69,
+          1,
+          580
+        ],
+        [
+          70,
+          4,
+          582
+        ],
+        [
+          71,
+          4,
+          582
+        ],
+        [
+          72,
+          4,
+          582
+        ],
+        [
+          73,
+          7,
+          580
+        ],
+        [
+          74,
+          0,
+          580
+        ],
+        [
+          75,
+          5,
+          583
+        ],
+        [
+          76,
+          5,
+          583
+        ],
+        [
+          77,
+          7,
+          580
+        ],
+        [
+          78,
+          7,
+          580
+        ],
+        [
+          79,
+          0,
+          580
+        ],
+        [
+          80,
+          3,
+          580
+        ],
+        [
+          81,
+          1,
+          580
+        ],
+        [
+          82,
+          0,
+          580
+        ],
+        [
+          83,
+          0,
+          580
+        ],
+        [
+          84,
+          0,
+          580
+        ],
+        [
+          85,
+          0,
+          580
+        ],
+        [
+          86,
+          0,
+          580
+        ],
+        [
+          87,
+          0,
+          580
+        ],
+        [
+          88,
+          0,
+          580
+        ],
+        [
+          89,
+          0,
+          580
+        ],
+        [
+          90,
+          0,
+          580
+        ],
+        [
+          91,
+          0,
+          580
+        ],
+        [
+          92,
+          0,
+          580
+        ],
+        [
+          93,
+          0,
+          580
+        ],
+        [
+          94,
+          0,
+          580
+        ],
+        [
+          95,
+          0,
+          580
+        ],
+        [
+          96,
+          0,
+          580
+        ],
+        [
+          97,
+          0,
+          580
+        ],
+        [
+          98,
+          0,
+          580
+        ],
+        [
+          99,
+          0,
+          580
+        ],
+        [
+          100,
+          0,
+          580
+        ],
+        [
+          101,
+          0,
+          580
+        ],
+        [
+          102,
+          0,
+          580
+        ],
+        [
+          103,
+          0,
+          580
+        ],
+        [
+          104,
+          0,
+          580
+        ],
+        [
+          105,
+          0,
+          580
+        ],
+        [
+          106,
+          0,
+          580
+        ],
+        [
+          107,
+          0,
+          580
+        ],
+        [
+          108,
+          0,
+          580
+        ],
+        [
+          109,
+          0,
+          580
+        ],
+        [
+          110,
+          0,
+          580
+        ],
+        [
+          111,
+          0,
+          580
+        ],
+        [
+          112,
+          0,
+          580
+        ],
+        [
+          113,
+          0,
+          580
+        ],
+        [
+          114,
+          0,
+          580
+        ],
+        [
+          115,
+          0,
+          580
+        ],
+        [
+          116,
+          0,
+          580
+        ],
+        [
+          117,
+          0,
+          580
+        ],
+        [
+          118,
+          0,
+          580
+        ],
+        [
+          119,
+          0,
+          580
+        ],
+        [
+          120,
+          0,
+          580
+        ],
+        [
+          121,
+          0,
+          580
+        ],
+        [
+          122,
+          0,
+          580
+        ],
+        [
+          123,
+          0,
+          580
+        ],
+        [
+          124,
+          0,
+          580
+        ],
+        [
+          125,
+          0,
+          580
+        ],
+        [
+          126,
+          0,
+          580
+        ],
+        [
+          127,
+          0,
+          580
+        ],
+        [
+          128,
+          0,
+          580
+        ],
+        [
+          129,
+          0,
+          580
+        ],
+        [
+          130,
+          0,
+          580
+        ],
+        [
+          131,
+          0,
+          580
+        ],
+        [
+          132,
+          0,
+          580
+        ],
+        [
+          133,
+          0,
+          580
+        ],
+        [
+          134,
+          0,
+          580
+        ],
+        [
+          135,
+          0,
+          580
+        ],
+        [
+          136,
+          0,
+          580
+        ],
+        [
+          137,
+          0,
+          580
+        ],
+        [
+          138,
+          0,
+          580
+        ],
+        [
+          139,
+          0,
+          580
+        ],
+        [
+          140,
+          0,
+          580
+        ],
+        [
+          141,
+          0,
+          580
+        ],
+        [
+          142,
+          0,
+          580
+        ],
+        [
+          143,
+          0,
+          580
+        ],
+        [
+          144,
+          0,
+          580
+        ],
+        [
+          145,
+          0,
+          580
+        ],
+        [
+          146,
+          0,
+          580
+        ],
+        [
+          147,
+          0,
+          580
+        ],
+        [
+          148,
+          0,
+          580
+        ],
+        [
+          149,
+          0,
+          580
+        ],
+        [
+          150,
+          0,
+          580
+        ],
+        [
+          151,
+          4,
+          582
+        ],
+        [
+          152,
+          4,
+          582
+        ],
+        [
+          153,
+          4,
+          582
+        ],
+        [
+          154,
+          4,
+          582
+        ],
+        [
+          155,
+          4,
+          582
+        ],
+        [
+          156,
+          4,
+          582
+        ],
+        [
+          157,
+          4,
+          582
+        ],
+        [
+          158,
+          4,
+          582
+        ],
+        [
+          159,
+          4,
+          582
+        ],
+        [
+          160,
+          4,
+          582
+        ],
+        [
+          161,
+          4,
+          582
+        ],
+        [
+          162,
+          0,
+          580
+        ],
+        [
+          163,
+          0,
+          580
+        ],
+        [
+          164,
+          0,
+          580
+        ],
+        [
+          165,
+          0,
+          580
+        ],
+        [
+          166,
+          0,
+          580
+        ],
+        [
+          167,
+          0,
+          580
+        ],
+        [
+          168,
+          0,
+          580
+        ],
+        [
+          169,
+          0,
+          580
+        ],
+        [
+          170,
+          0,
+          580
+        ],
+        [
+          171,
+          0,
+          580
+        ],
+        [
+          172,
+          0,
+          580
+        ],
+        [
+          173,
+          0,
+          580
+        ],
+        [
+          174,
+          0,
+          580
+        ],
+        [
+          175,
+          0,
+          580
+        ],
+        [
+          176,
+          4,
+          582
+        ],
+        [
+          177,
+          0,
+          580
+        ],
+        [
+          178,
+          0,
+          580
+        ],
+        [
+          179,
+          0,
+          580
+        ],
+        [
+          180,
+          0,
+          580
+        ],
+        [
+          181,
+          4,
+          582
+        ],
+        [
+          182,
+          0,
+          580
+        ],
+        [
+          183,
+          4,
+          582
+        ],
+        [
+          184,
+          4,
+          582
+        ],
+        [
+          185,
+          0,
+          580
+        ],
+        [
+          186,
+          0,
+          580
+        ],
+        [
+          187,
+          0,
+          580
+        ],
+        [
+          188,
+          0,
+          580
+        ],
+        [
+          189,
+          0,
+          580
+        ],
+        [
+          190,
+          0,
+          580
+        ],
+        [
+          191,
+          0,
+          580
+        ],
+        [
+          192,
+          0,
+          580
+        ],
+        [
+          193,
+          0,
+          580
+        ],
+        [
+          194,
+          0,
+          580
+        ],
+        [
+          195,
+          0,
+          580
+        ],
+        [
+          196,
+          0,
+          580
+        ],
+        [
+          197,
+          0,
+          580
+        ],
+        [
+          198,
+          0,
+          580
+        ],
+        [
+          199,
+          0,
+          580
+        ],
+        [
+          200,
+          0,
+          580
+        ],
+        [
+          201,
+          0,
+          580
+        ],
+        [
+          202,
+          0,
+          580
+        ],
+        [
+          203,
+          0,
+          580
+        ],
+        [
+          204,
+          0,
+          580
+        ],
+        [
+          205,
+          0,
+          580
+        ],
+        [
+          206,
+          0,
+          580
+        ]
+      ]
+    },
+    {
+      "first_ID": 585,
+      "last_ID": 592,
+      "table": 34702816,
+      "table_slots": [
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33740684,
+          "call_PC": 33740688,
+          "literal_address": 33742524,
+          "literal_value": 34702816,
+          "consumer": 33897796,
+          "clean_and_current_hex": "28179fe56b9900eb"
+        }
+      ],
+      "consumer": 33897796,
+      "original_role_argument": 15,
+      "arguments": [],
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "speaker": "Deckhand",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          587
+        ],
+        [
+          1,
+          1,
+          586
+        ],
+        [
+          2,
+          3,
+          588
+        ],
+        [
+          3,
+          3,
+          588
+        ],
+        [
+          4,
+          0,
+          585
+        ],
+        [
+          5,
+          4,
+          589
+        ],
+        [
+          6,
+          5,
+          590
+        ],
+        [
+          7,
+          3,
+          588
+        ],
+        [
+          8,
+          0,
+          585
+        ],
+        [
+          9,
+          2,
+          587
+        ],
+        [
+          10,
+          5,
+          590
+        ],
+        [
+          11,
+          4,
+          589
+        ],
+        [
+          12,
+          1,
+          586
+        ],
+        [
+          13,
+          0,
+          585
+        ],
+        [
+          14,
+          6,
+          591
+        ],
+        [
+          15,
+          4,
+          589
+        ],
+        [
+          16,
+          1,
+          586
+        ],
+        [
+          17,
+          4,
+          589
+        ],
+        [
+          18,
+          0,
+          585
+        ],
+        [
+          19,
+          7,
+          592
+        ],
+        [
+          20,
+          4,
+          589
+        ],
+        [
+          21,
+          1,
+          586
+        ],
+        [
+          22,
+          2,
+          587
+        ],
+        [
+          23,
+          7,
+          592
+        ],
+        [
+          24,
+          3,
+          588
+        ],
+        [
+          25,
+          3,
+          588
+        ],
+        [
+          26,
+          2,
+          587
+        ],
+        [
+          27,
+          2,
+          587
+        ],
+        [
+          28,
+          4,
+          589
+        ],
+        [
+          29,
+          7,
+          592
+        ],
+        [
+          30,
+          7,
+          592
+        ],
+        [
+          31,
+          7,
+          592
+        ],
+        [
+          32,
+          0,
+          585
+        ],
+        [
+          33,
+          7,
+          592
+        ],
+        [
+          34,
+          1,
+          586
+        ],
+        [
+          35,
+          7,
+          592
+        ],
+        [
+          36,
+          7,
+          592
+        ],
+        [
+          37,
+          0,
+          585
+        ],
+        [
+          38,
+          7,
+          592
+        ],
+        [
+          39,
+          4,
+          589
+        ],
+        [
+          40,
+          7,
+          592
+        ],
+        [
+          41,
+          5,
+          590
+        ],
+        [
+          42,
+          7,
+          592
+        ],
+        [
+          43,
+          1,
+          586
+        ],
+        [
+          44,
+          4,
+          589
+        ],
+        [
+          45,
+          0,
+          585
+        ],
+        [
+          46,
+          5,
+          590
+        ],
+        [
+          47,
+          7,
+          592
+        ],
+        [
+          48,
+          4,
+          589
+        ],
+        [
+          49,
+          4,
+          589
+        ],
+        [
+          50,
+          0,
+          585
+        ],
+        [
+          51,
+          7,
+          592
+        ],
+        [
+          52,
+          7,
+          592
+        ],
+        [
+          53,
+          2,
+          587
+        ],
+        [
+          54,
+          0,
+          585
+        ],
+        [
+          55,
+          4,
+          589
+        ],
+        [
+          56,
+          0,
+          585
+        ],
+        [
+          57,
+          7,
+          592
+        ],
+        [
+          58,
+          4,
+          589
+        ],
+        [
+          59,
+          0,
+          585
+        ],
+        [
+          60,
+          1,
+          586
+        ],
+        [
+          61,
+          4,
+          589
+        ],
+        [
+          62,
+          4,
+          589
+        ],
+        [
+          63,
+          0,
+          585
+        ],
+        [
+          64,
+          0,
+          585
+        ],
+        [
+          65,
+          4,
+          589
+        ],
+        [
+          66,
+          2,
+          587
+        ],
+        [
+          67,
+          4,
+          589
+        ],
+        [
+          68,
+          0,
+          585
+        ],
+        [
+          69,
+          1,
+          586
+        ],
+        [
+          70,
+          4,
+          589
+        ],
+        [
+          71,
+          4,
+          589
+        ],
+        [
+          72,
+          4,
+          589
+        ],
+        [
+          73,
+          7,
+          592
+        ],
+        [
+          74,
+          0,
+          585
+        ],
+        [
+          75,
+          5,
+          590
+        ],
+        [
+          76,
+          5,
+          590
+        ],
+        [
+          77,
+          7,
+          592
+        ],
+        [
+          78,
+          7,
+          592
+        ],
+        [
+          79,
+          0,
+          585
+        ],
+        [
+          80,
+          3,
+          588
+        ],
+        [
+          81,
+          1,
+          586
+        ],
+        [
+          82,
+          0,
+          585
+        ],
+        [
+          83,
+          0,
+          585
+        ],
+        [
+          84,
+          0,
+          585
+        ],
+        [
+          85,
+          0,
+          585
+        ],
+        [
+          86,
+          0,
+          585
+        ],
+        [
+          87,
+          0,
+          585
+        ],
+        [
+          88,
+          0,
+          585
+        ],
+        [
+          89,
+          0,
+          585
+        ],
+        [
+          90,
+          0,
+          585
+        ],
+        [
+          91,
+          0,
+          585
+        ],
+        [
+          92,
+          0,
+          585
+        ],
+        [
+          93,
+          0,
+          585
+        ],
+        [
+          94,
+          0,
+          585
+        ],
+        [
+          95,
+          0,
+          585
+        ],
+        [
+          96,
+          0,
+          585
+        ],
+        [
+          97,
+          0,
+          585
+        ],
+        [
+          98,
+          0,
+          585
+        ],
+        [
+          99,
+          0,
+          585
+        ],
+        [
+          100,
+          0,
+          585
+        ],
+        [
+          101,
+          0,
+          585
+        ],
+        [
+          102,
+          0,
+          585
+        ],
+        [
+          103,
+          0,
+          585
+        ],
+        [
+          104,
+          0,
+          585
+        ],
+        [
+          105,
+          0,
+          585
+        ],
+        [
+          106,
+          0,
+          585
+        ],
+        [
+          107,
+          0,
+          585
+        ],
+        [
+          108,
+          0,
+          585
+        ],
+        [
+          109,
+          0,
+          585
+        ],
+        [
+          110,
+          0,
+          585
+        ],
+        [
+          111,
+          0,
+          585
+        ],
+        [
+          112,
+          0,
+          585
+        ],
+        [
+          113,
+          0,
+          585
+        ],
+        [
+          114,
+          0,
+          585
+        ],
+        [
+          115,
+          0,
+          585
+        ],
+        [
+          116,
+          0,
+          585
+        ],
+        [
+          117,
+          0,
+          585
+        ],
+        [
+          118,
+          0,
+          585
+        ],
+        [
+          119,
+          0,
+          585
+        ],
+        [
+          120,
+          0,
+          585
+        ],
+        [
+          121,
+          0,
+          585
+        ],
+        [
+          122,
+          0,
+          585
+        ],
+        [
+          123,
+          0,
+          585
+        ],
+        [
+          124,
+          0,
+          585
+        ],
+        [
+          125,
+          0,
+          585
+        ],
+        [
+          126,
+          0,
+          585
+        ],
+        [
+          127,
+          0,
+          585
+        ],
+        [
+          128,
+          0,
+          585
+        ],
+        [
+          129,
+          0,
+          585
+        ],
+        [
+          130,
+          0,
+          585
+        ],
+        [
+          131,
+          0,
+          585
+        ],
+        [
+          132,
+          0,
+          585
+        ],
+        [
+          133,
+          0,
+          585
+        ],
+        [
+          134,
+          0,
+          585
+        ],
+        [
+          135,
+          0,
+          585
+        ],
+        [
+          136,
+          0,
+          585
+        ],
+        [
+          137,
+          0,
+          585
+        ],
+        [
+          138,
+          0,
+          585
+        ],
+        [
+          139,
+          0,
+          585
+        ],
+        [
+          140,
+          0,
+          585
+        ],
+        [
+          141,
+          0,
+          585
+        ],
+        [
+          142,
+          0,
+          585
+        ],
+        [
+          143,
+          0,
+          585
+        ],
+        [
+          144,
+          0,
+          585
+        ],
+        [
+          145,
+          0,
+          585
+        ],
+        [
+          146,
+          0,
+          585
+        ],
+        [
+          147,
+          0,
+          585
+        ],
+        [
+          148,
+          0,
+          585
+        ],
+        [
+          149,
+          0,
+          585
+        ],
+        [
+          150,
+          0,
+          585
+        ],
+        [
+          151,
+          4,
+          589
+        ],
+        [
+          152,
+          4,
+          589
+        ],
+        [
+          153,
+          4,
+          589
+        ],
+        [
+          154,
+          4,
+          589
+        ],
+        [
+          155,
+          4,
+          589
+        ],
+        [
+          156,
+          4,
+          589
+        ],
+        [
+          157,
+          4,
+          589
+        ],
+        [
+          158,
+          4,
+          589
+        ],
+        [
+          159,
+          4,
+          589
+        ],
+        [
+          160,
+          4,
+          589
+        ],
+        [
+          161,
+          4,
+          589
+        ],
+        [
+          162,
+          0,
+          585
+        ],
+        [
+          163,
+          0,
+          585
+        ],
+        [
+          164,
+          0,
+          585
+        ],
+        [
+          165,
+          0,
+          585
+        ],
+        [
+          166,
+          0,
+          585
+        ],
+        [
+          167,
+          0,
+          585
+        ],
+        [
+          168,
+          0,
+          585
+        ],
+        [
+          169,
+          0,
+          585
+        ],
+        [
+          170,
+          0,
+          585
+        ],
+        [
+          171,
+          0,
+          585
+        ],
+        [
+          172,
+          0,
+          585
+        ],
+        [
+          173,
+          0,
+          585
+        ],
+        [
+          174,
+          0,
+          585
+        ],
+        [
+          175,
+          0,
+          585
+        ],
+        [
+          176,
+          4,
+          589
+        ],
+        [
+          177,
+          0,
+          585
+        ],
+        [
+          178,
+          0,
+          585
+        ],
+        [
+          179,
+          0,
+          585
+        ],
+        [
+          180,
+          0,
+          585
+        ],
+        [
+          181,
+          4,
+          589
+        ],
+        [
+          182,
+          0,
+          585
+        ],
+        [
+          183,
+          4,
+          589
+        ],
+        [
+          184,
+          4,
+          589
+        ],
+        [
+          185,
+          0,
+          585
+        ],
+        [
+          186,
+          0,
+          585
+        ],
+        [
+          187,
+          0,
+          585
+        ],
+        [
+          188,
+          0,
+          585
+        ],
+        [
+          189,
+          0,
+          585
+        ],
+        [
+          190,
+          0,
+          585
+        ],
+        [
+          191,
+          0,
+          585
+        ],
+        [
+          192,
+          0,
+          585
+        ],
+        [
+          193,
+          0,
+          585
+        ],
+        [
+          194,
+          0,
+          585
+        ],
+        [
+          195,
+          0,
+          585
+        ],
+        [
+          196,
+          0,
+          585
+        ],
+        [
+          197,
+          0,
+          585
+        ],
+        [
+          198,
+          0,
+          585
+        ],
+        [
+          199,
+          0,
+          585
+        ],
+        [
+          200,
+          0,
+          585
+        ],
+        [
+          201,
+          0,
+          585
+        ],
+        [
+          202,
+          0,
+          585
+        ],
+        [
+          203,
+          0,
+          585
+        ],
+        [
+          204,
+          0,
+          585
+        ],
+        [
+          205,
+          0,
+          585
+        ],
+        [
+          206,
+          0,
+          585
+        ]
+      ]
+    },
+    {
+      "first_ID": 593,
+      "last_ID": 600,
+      "table": 34702784,
+      "table_slots": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600
+      ],
+      "native_callers": [
+        {
+          "load_PC": 33740760,
+          "call_PC": 33740768,
+          "literal_address": 33742528,
+          "literal_value": 34702784,
+          "consumer": 33898252,
+          "clean_and_current_hex": "e0169fe50800a0e1c99900eb"
+        }
+      ],
+      "consumer": 33898252,
+      "original_role_argument": null,
+      "arguments": [
+        "named ship"
+      ],
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "speaker": "Crew member selected by the original ship response",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          595
+        ],
+        [
+          1,
+          1,
+          594
+        ],
+        [
+          2,
+          3,
+          596
+        ],
+        [
+          3,
+          3,
+          596
+        ],
+        [
+          4,
+          0,
+          593
+        ],
+        [
+          5,
+          4,
+          597
+        ],
+        [
+          6,
+          5,
+          598
+        ],
+        [
+          7,
+          3,
+          596
+        ],
+        [
+          8,
+          0,
+          593
+        ],
+        [
+          9,
+          2,
+          595
+        ],
+        [
+          10,
+          5,
+          598
+        ],
+        [
+          11,
+          4,
+          597
+        ],
+        [
+          12,
+          1,
+          594
+        ],
+        [
+          13,
+          0,
+          593
+        ],
+        [
+          14,
+          6,
+          599
+        ],
+        [
+          15,
+          4,
+          597
+        ],
+        [
+          16,
+          1,
+          594
+        ],
+        [
+          17,
+          4,
+          597
+        ],
+        [
+          18,
+          0,
+          593
+        ],
+        [
+          19,
+          7,
+          600
+        ],
+        [
+          20,
+          4,
+          597
+        ],
+        [
+          21,
+          1,
+          594
+        ],
+        [
+          22,
+          2,
+          595
+        ],
+        [
+          23,
+          7,
+          600
+        ],
+        [
+          24,
+          3,
+          596
+        ],
+        [
+          25,
+          3,
+          596
+        ],
+        [
+          26,
+          2,
+          595
+        ],
+        [
+          27,
+          2,
+          595
+        ],
+        [
+          28,
+          4,
+          597
+        ],
+        [
+          29,
+          7,
+          600
+        ],
+        [
+          30,
+          7,
+          600
+        ],
+        [
+          31,
+          7,
+          600
+        ],
+        [
+          32,
+          0,
+          593
+        ],
+        [
+          33,
+          7,
+          600
+        ],
+        [
+          34,
+          1,
+          594
+        ],
+        [
+          35,
+          7,
+          600
+        ],
+        [
+          36,
+          7,
+          600
+        ],
+        [
+          37,
+          0,
+          593
+        ],
+        [
+          38,
+          7,
+          600
+        ],
+        [
+          39,
+          4,
+          597
+        ],
+        [
+          40,
+          7,
+          600
+        ],
+        [
+          41,
+          5,
+          598
+        ],
+        [
+          42,
+          7,
+          600
+        ],
+        [
+          43,
+          1,
+          594
+        ],
+        [
+          44,
+          4,
+          597
+        ],
+        [
+          45,
+          0,
+          593
+        ],
+        [
+          46,
+          5,
+          598
+        ],
+        [
+          47,
+          7,
+          600
+        ],
+        [
+          48,
+          4,
+          597
+        ],
+        [
+          49,
+          4,
+          597
+        ],
+        [
+          50,
+          0,
+          593
+        ],
+        [
+          51,
+          7,
+          600
+        ],
+        [
+          52,
+          7,
+          600
+        ],
+        [
+          53,
+          2,
+          595
+        ],
+        [
+          54,
+          0,
+          593
+        ],
+        [
+          55,
+          4,
+          597
+        ],
+        [
+          56,
+          0,
+          593
+        ],
+        [
+          57,
+          7,
+          600
+        ],
+        [
+          58,
+          4,
+          597
+        ],
+        [
+          59,
+          0,
+          593
+        ],
+        [
+          60,
+          1,
+          594
+        ],
+        [
+          61,
+          4,
+          597
+        ],
+        [
+          62,
+          4,
+          597
+        ],
+        [
+          63,
+          0,
+          593
+        ],
+        [
+          64,
+          0,
+          593
+        ],
+        [
+          65,
+          4,
+          597
+        ],
+        [
+          66,
+          2,
+          595
+        ],
+        [
+          67,
+          4,
+          597
+        ],
+        [
+          68,
+          0,
+          593
+        ],
+        [
+          69,
+          1,
+          594
+        ],
+        [
+          70,
+          4,
+          597
+        ],
+        [
+          71,
+          4,
+          597
+        ],
+        [
+          72,
+          4,
+          597
+        ],
+        [
+          73,
+          7,
+          600
+        ],
+        [
+          74,
+          0,
+          593
+        ],
+        [
+          75,
+          5,
+          598
+        ],
+        [
+          76,
+          5,
+          598
+        ],
+        [
+          77,
+          7,
+          600
+        ],
+        [
+          78,
+          7,
+          600
+        ],
+        [
+          79,
+          0,
+          593
+        ],
+        [
+          80,
+          3,
+          596
+        ],
+        [
+          81,
+          1,
+          594
+        ],
+        [
+          82,
+          0,
+          593
+        ],
+        [
+          83,
+          0,
+          593
+        ],
+        [
+          84,
+          0,
+          593
+        ],
+        [
+          85,
+          0,
+          593
+        ],
+        [
+          86,
+          0,
+          593
+        ],
+        [
+          87,
+          0,
+          593
+        ],
+        [
+          88,
+          0,
+          593
+        ],
+        [
+          89,
+          0,
+          593
+        ],
+        [
+          90,
+          0,
+          593
+        ],
+        [
+          91,
+          0,
+          593
+        ],
+        [
+          92,
+          0,
+          593
+        ],
+        [
+          93,
+          0,
+          593
+        ],
+        [
+          94,
+          0,
+          593
+        ],
+        [
+          95,
+          0,
+          593
+        ],
+        [
+          96,
+          0,
+          593
+        ],
+        [
+          97,
+          0,
+          593
+        ],
+        [
+          98,
+          0,
+          593
+        ],
+        [
+          99,
+          0,
+          593
+        ],
+        [
+          100,
+          0,
+          593
+        ],
+        [
+          101,
+          0,
+          593
+        ],
+        [
+          102,
+          0,
+          593
+        ],
+        [
+          103,
+          0,
+          593
+        ],
+        [
+          104,
+          0,
+          593
+        ],
+        [
+          105,
+          0,
+          593
+        ],
+        [
+          106,
+          0,
+          593
+        ],
+        [
+          107,
+          0,
+          593
+        ],
+        [
+          108,
+          0,
+          593
+        ],
+        [
+          109,
+          0,
+          593
+        ],
+        [
+          110,
+          0,
+          593
+        ],
+        [
+          111,
+          0,
+          593
+        ],
+        [
+          112,
+          0,
+          593
+        ],
+        [
+          113,
+          0,
+          593
+        ],
+        [
+          114,
+          0,
+          593
+        ],
+        [
+          115,
+          0,
+          593
+        ],
+        [
+          116,
+          0,
+          593
+        ],
+        [
+          117,
+          0,
+          593
+        ],
+        [
+          118,
+          0,
+          593
+        ],
+        [
+          119,
+          0,
+          593
+        ],
+        [
+          120,
+          0,
+          593
+        ],
+        [
+          121,
+          0,
+          593
+        ],
+        [
+          122,
+          0,
+          593
+        ],
+        [
+          123,
+          0,
+          593
+        ],
+        [
+          124,
+          0,
+          593
+        ],
+        [
+          125,
+          0,
+          593
+        ],
+        [
+          126,
+          0,
+          593
+        ],
+        [
+          127,
+          0,
+          593
+        ],
+        [
+          128,
+          0,
+          593
+        ],
+        [
+          129,
+          0,
+          593
+        ],
+        [
+          130,
+          0,
+          593
+        ],
+        [
+          131,
+          0,
+          593
+        ],
+        [
+          132,
+          0,
+          593
+        ],
+        [
+          133,
+          0,
+          593
+        ],
+        [
+          134,
+          0,
+          593
+        ],
+        [
+          135,
+          0,
+          593
+        ],
+        [
+          136,
+          0,
+          593
+        ],
+        [
+          137,
+          0,
+          593
+        ],
+        [
+          138,
+          0,
+          593
+        ],
+        [
+          139,
+          0,
+          593
+        ],
+        [
+          140,
+          0,
+          593
+        ],
+        [
+          141,
+          0,
+          593
+        ],
+        [
+          142,
+          0,
+          593
+        ],
+        [
+          143,
+          0,
+          593
+        ],
+        [
+          144,
+          0,
+          593
+        ],
+        [
+          145,
+          0,
+          593
+        ],
+        [
+          146,
+          0,
+          593
+        ],
+        [
+          147,
+          0,
+          593
+        ],
+        [
+          148,
+          0,
+          593
+        ],
+        [
+          149,
+          0,
+          593
+        ],
+        [
+          150,
+          0,
+          593
+        ],
+        [
+          151,
+          4,
+          597
+        ],
+        [
+          152,
+          4,
+          597
+        ],
+        [
+          153,
+          4,
+          597
+        ],
+        [
+          154,
+          4,
+          597
+        ],
+        [
+          155,
+          4,
+          597
+        ],
+        [
+          156,
+          4,
+          597
+        ],
+        [
+          157,
+          4,
+          597
+        ],
+        [
+          158,
+          4,
+          597
+        ],
+        [
+          159,
+          4,
+          597
+        ],
+        [
+          160,
+          4,
+          597
+        ],
+        [
+          161,
+          4,
+          597
+        ],
+        [
+          162,
+          0,
+          593
+        ],
+        [
+          163,
+          0,
+          593
+        ],
+        [
+          164,
+          0,
+          593
+        ],
+        [
+          165,
+          0,
+          593
+        ],
+        [
+          166,
+          0,
+          593
+        ],
+        [
+          167,
+          0,
+          593
+        ],
+        [
+          168,
+          0,
+          593
+        ],
+        [
+          169,
+          0,
+          593
+        ],
+        [
+          170,
+          0,
+          593
+        ],
+        [
+          171,
+          0,
+          593
+        ],
+        [
+          172,
+          0,
+          593
+        ],
+        [
+          173,
+          0,
+          593
+        ],
+        [
+          174,
+          0,
+          593
+        ],
+        [
+          175,
+          0,
+          593
+        ],
+        [
+          176,
+          4,
+          597
+        ],
+        [
+          177,
+          0,
+          593
+        ],
+        [
+          178,
+          0,
+          593
+        ],
+        [
+          179,
+          0,
+          593
+        ],
+        [
+          180,
+          0,
+          593
+        ],
+        [
+          181,
+          4,
+          597
+        ],
+        [
+          182,
+          0,
+          593
+        ],
+        [
+          183,
+          4,
+          597
+        ],
+        [
+          184,
+          4,
+          597
+        ],
+        [
+          185,
+          0,
+          593
+        ],
+        [
+          186,
+          0,
+          593
+        ],
+        [
+          187,
+          0,
+          593
+        ],
+        [
+          188,
+          0,
+          593
+        ],
+        [
+          189,
+          0,
+          593
+        ],
+        [
+          190,
+          0,
+          593
+        ],
+        [
+          191,
+          0,
+          593
+        ],
+        [
+          192,
+          0,
+          593
+        ],
+        [
+          193,
+          0,
+          593
+        ],
+        [
+          194,
+          0,
+          593
+        ],
+        [
+          195,
+          0,
+          593
+        ],
+        [
+          196,
+          0,
+          593
+        ],
+        [
+          197,
+          0,
+          593
+        ],
+        [
+          198,
+          0,
+          593
+        ],
+        [
+          199,
+          0,
+          593
+        ],
+        [
+          200,
+          0,
+          593
+        ],
+        [
+          201,
+          0,
+          593
+        ],
+        [
+          202,
+          0,
+          593
+        ],
+        [
+          203,
+          0,
+          593
+        ],
+        [
+          204,
+          0,
+          593
+        ],
+        [
+          205,
+          0,
+          593
+        ],
+        [
+          206,
+          0,
+          593
+        ]
+      ]
+    },
+    {
+      "first_ID": 601,
+      "last_ID": 608,
+      "table": 34702752,
+      "table_slots": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608
+      ],
+      "native_callers": [
+        {
+          "load_PC": 34086508,
+          "call_PC": 34086572,
+          "literal_address": 34086608,
+          "literal_value": 34702752,
+          "consumer": 33897796,
+          "clean_and_current_hex": "5c509fe53c708de234808de20160a0e3040198e70411a0e1000050e30800000a010097e7000050e3050000ca0400a0e1608b00eb0020a0e10600a0e10510a0e1a447ffeb"
+        }
+      ],
+      "consumer": 33897796,
+      "original_role_argument": 1,
+      "arguments": [
+        "Water or Food"
+      ],
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "speaker": "First Mate",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          603
+        ],
+        [
+          1,
+          1,
+          602
+        ],
+        [
+          2,
+          3,
+          604
+        ],
+        [
+          3,
+          3,
+          604
+        ],
+        [
+          4,
+          0,
+          601
+        ],
+        [
+          5,
+          4,
+          605
+        ],
+        [
+          6,
+          5,
+          606
+        ],
+        [
+          7,
+          3,
+          604
+        ],
+        [
+          8,
+          0,
+          601
+        ],
+        [
+          9,
+          2,
+          603
+        ],
+        [
+          10,
+          5,
+          606
+        ],
+        [
+          11,
+          4,
+          605
+        ],
+        [
+          12,
+          1,
+          602
+        ],
+        [
+          13,
+          0,
+          601
+        ],
+        [
+          14,
+          6,
+          607
+        ],
+        [
+          15,
+          4,
+          605
+        ],
+        [
+          16,
+          1,
+          602
+        ],
+        [
+          17,
+          4,
+          605
+        ],
+        [
+          18,
+          0,
+          601
+        ],
+        [
+          19,
+          7,
+          608
+        ],
+        [
+          20,
+          4,
+          605
+        ],
+        [
+          21,
+          1,
+          602
+        ],
+        [
+          22,
+          2,
+          603
+        ],
+        [
+          23,
+          7,
+          608
+        ],
+        [
+          24,
+          3,
+          604
+        ],
+        [
+          25,
+          3,
+          604
+        ],
+        [
+          26,
+          2,
+          603
+        ],
+        [
+          27,
+          2,
+          603
+        ],
+        [
+          28,
+          4,
+          605
+        ],
+        [
+          29,
+          7,
+          608
+        ],
+        [
+          30,
+          7,
+          608
+        ],
+        [
+          31,
+          7,
+          608
+        ],
+        [
+          32,
+          0,
+          601
+        ],
+        [
+          33,
+          7,
+          608
+        ],
+        [
+          34,
+          1,
+          602
+        ],
+        [
+          35,
+          7,
+          608
+        ],
+        [
+          36,
+          7,
+          608
+        ],
+        [
+          37,
+          0,
+          601
+        ],
+        [
+          38,
+          7,
+          608
+        ],
+        [
+          39,
+          4,
+          605
+        ],
+        [
+          40,
+          7,
+          608
+        ],
+        [
+          41,
+          5,
+          606
+        ],
+        [
+          42,
+          7,
+          608
+        ],
+        [
+          43,
+          1,
+          602
+        ],
+        [
+          44,
+          4,
+          605
+        ],
+        [
+          45,
+          0,
+          601
+        ],
+        [
+          46,
+          5,
+          606
+        ],
+        [
+          47,
+          7,
+          608
+        ],
+        [
+          48,
+          4,
+          605
+        ],
+        [
+          49,
+          4,
+          605
+        ],
+        [
+          50,
+          0,
+          601
+        ],
+        [
+          51,
+          7,
+          608
+        ],
+        [
+          52,
+          7,
+          608
+        ],
+        [
+          53,
+          2,
+          603
+        ],
+        [
+          54,
+          0,
+          601
+        ],
+        [
+          55,
+          4,
+          605
+        ],
+        [
+          56,
+          0,
+          601
+        ],
+        [
+          57,
+          7,
+          608
+        ],
+        [
+          58,
+          4,
+          605
+        ],
+        [
+          59,
+          0,
+          601
+        ],
+        [
+          60,
+          1,
+          602
+        ],
+        [
+          61,
+          4,
+          605
+        ],
+        [
+          62,
+          4,
+          605
+        ],
+        [
+          63,
+          0,
+          601
+        ],
+        [
+          64,
+          0,
+          601
+        ],
+        [
+          65,
+          4,
+          605
+        ],
+        [
+          66,
+          2,
+          603
+        ],
+        [
+          67,
+          4,
+          605
+        ],
+        [
+          68,
+          0,
+          601
+        ],
+        [
+          69,
+          1,
+          602
+        ],
+        [
+          70,
+          4,
+          605
+        ],
+        [
+          71,
+          4,
+          605
+        ],
+        [
+          72,
+          4,
+          605
+        ],
+        [
+          73,
+          7,
+          608
+        ],
+        [
+          74,
+          0,
+          601
+        ],
+        [
+          75,
+          5,
+          606
+        ],
+        [
+          76,
+          5,
+          606
+        ],
+        [
+          77,
+          7,
+          608
+        ],
+        [
+          78,
+          7,
+          608
+        ],
+        [
+          79,
+          0,
+          601
+        ],
+        [
+          80,
+          3,
+          604
+        ],
+        [
+          81,
+          1,
+          602
+        ],
+        [
+          82,
+          0,
+          601
+        ],
+        [
+          83,
+          0,
+          601
+        ],
+        [
+          84,
+          0,
+          601
+        ],
+        [
+          85,
+          0,
+          601
+        ],
+        [
+          86,
+          0,
+          601
+        ],
+        [
+          87,
+          0,
+          601
+        ],
+        [
+          88,
+          0,
+          601
+        ],
+        [
+          89,
+          0,
+          601
+        ],
+        [
+          90,
+          0,
+          601
+        ],
+        [
+          91,
+          0,
+          601
+        ],
+        [
+          92,
+          0,
+          601
+        ],
+        [
+          93,
+          0,
+          601
+        ],
+        [
+          94,
+          0,
+          601
+        ],
+        [
+          95,
+          0,
+          601
+        ],
+        [
+          96,
+          0,
+          601
+        ],
+        [
+          97,
+          0,
+          601
+        ],
+        [
+          98,
+          0,
+          601
+        ],
+        [
+          99,
+          0,
+          601
+        ],
+        [
+          100,
+          0,
+          601
+        ],
+        [
+          101,
+          0,
+          601
+        ],
+        [
+          102,
+          0,
+          601
+        ],
+        [
+          103,
+          0,
+          601
+        ],
+        [
+          104,
+          0,
+          601
+        ],
+        [
+          105,
+          0,
+          601
+        ],
+        [
+          106,
+          0,
+          601
+        ],
+        [
+          107,
+          0,
+          601
+        ],
+        [
+          108,
+          0,
+          601
+        ],
+        [
+          109,
+          0,
+          601
+        ],
+        [
+          110,
+          0,
+          601
+        ],
+        [
+          111,
+          0,
+          601
+        ],
+        [
+          112,
+          0,
+          601
+        ],
+        [
+          113,
+          0,
+          601
+        ],
+        [
+          114,
+          0,
+          601
+        ],
+        [
+          115,
+          0,
+          601
+        ],
+        [
+          116,
+          0,
+          601
+        ],
+        [
+          117,
+          0,
+          601
+        ],
+        [
+          118,
+          0,
+          601
+        ],
+        [
+          119,
+          0,
+          601
+        ],
+        [
+          120,
+          0,
+          601
+        ],
+        [
+          121,
+          0,
+          601
+        ],
+        [
+          122,
+          0,
+          601
+        ],
+        [
+          123,
+          0,
+          601
+        ],
+        [
+          124,
+          0,
+          601
+        ],
+        [
+          125,
+          0,
+          601
+        ],
+        [
+          126,
+          0,
+          601
+        ],
+        [
+          127,
+          0,
+          601
+        ],
+        [
+          128,
+          0,
+          601
+        ],
+        [
+          129,
+          0,
+          601
+        ],
+        [
+          130,
+          0,
+          601
+        ],
+        [
+          131,
+          0,
+          601
+        ],
+        [
+          132,
+          0,
+          601
+        ],
+        [
+          133,
+          0,
+          601
+        ],
+        [
+          134,
+          0,
+          601
+        ],
+        [
+          135,
+          0,
+          601
+        ],
+        [
+          136,
+          0,
+          601
+        ],
+        [
+          137,
+          0,
+          601
+        ],
+        [
+          138,
+          0,
+          601
+        ],
+        [
+          139,
+          0,
+          601
+        ],
+        [
+          140,
+          0,
+          601
+        ],
+        [
+          141,
+          0,
+          601
+        ],
+        [
+          142,
+          0,
+          601
+        ],
+        [
+          143,
+          0,
+          601
+        ],
+        [
+          144,
+          0,
+          601
+        ],
+        [
+          145,
+          0,
+          601
+        ],
+        [
+          146,
+          0,
+          601
+        ],
+        [
+          147,
+          0,
+          601
+        ],
+        [
+          148,
+          0,
+          601
+        ],
+        [
+          149,
+          0,
+          601
+        ],
+        [
+          150,
+          0,
+          601
+        ],
+        [
+          151,
+          4,
+          605
+        ],
+        [
+          152,
+          4,
+          605
+        ],
+        [
+          153,
+          4,
+          605
+        ],
+        [
+          154,
+          4,
+          605
+        ],
+        [
+          155,
+          4,
+          605
+        ],
+        [
+          156,
+          4,
+          605
+        ],
+        [
+          157,
+          4,
+          605
+        ],
+        [
+          158,
+          4,
+          605
+        ],
+        [
+          159,
+          4,
+          605
+        ],
+        [
+          160,
+          4,
+          605
+        ],
+        [
+          161,
+          4,
+          605
+        ],
+        [
+          162,
+          0,
+          601
+        ],
+        [
+          163,
+          0,
+          601
+        ],
+        [
+          164,
+          0,
+          601
+        ],
+        [
+          165,
+          0,
+          601
+        ],
+        [
+          166,
+          0,
+          601
+        ],
+        [
+          167,
+          0,
+          601
+        ],
+        [
+          168,
+          0,
+          601
+        ],
+        [
+          169,
+          0,
+          601
+        ],
+        [
+          170,
+          0,
+          601
+        ],
+        [
+          171,
+          0,
+          601
+        ],
+        [
+          172,
+          0,
+          601
+        ],
+        [
+          173,
+          0,
+          601
+        ],
+        [
+          174,
+          0,
+          601
+        ],
+        [
+          175,
+          0,
+          601
+        ],
+        [
+          176,
+          4,
+          605
+        ],
+        [
+          177,
+          0,
+          601
+        ],
+        [
+          178,
+          0,
+          601
+        ],
+        [
+          179,
+          0,
+          601
+        ],
+        [
+          180,
+          0,
+          601
+        ],
+        [
+          181,
+          4,
+          605
+        ],
+        [
+          182,
+          0,
+          601
+        ],
+        [
+          183,
+          4,
+          605
+        ],
+        [
+          184,
+          4,
+          605
+        ],
+        [
+          185,
+          0,
+          601
+        ],
+        [
+          186,
+          0,
+          601
+        ],
+        [
+          187,
+          0,
+          601
+        ],
+        [
+          188,
+          0,
+          601
+        ],
+        [
+          189,
+          0,
+          601
+        ],
+        [
+          190,
+          0,
+          601
+        ],
+        [
+          191,
+          0,
+          601
+        ],
+        [
+          192,
+          0,
+          601
+        ],
+        [
+          193,
+          0,
+          601
+        ],
+        [
+          194,
+          0,
+          601
+        ],
+        [
+          195,
+          0,
+          601
+        ],
+        [
+          196,
+          0,
+          601
+        ],
+        [
+          197,
+          0,
+          601
+        ],
+        [
+          198,
+          0,
+          601
+        ],
+        [
+          199,
+          0,
+          601
+        ],
+        [
+          200,
+          0,
+          601
+        ],
+        [
+          201,
+          0,
+          601
+        ],
+        [
+          202,
+          0,
+          601
+        ],
+        [
+          203,
+          0,
+          601
+        ],
+        [
+          204,
+          0,
+          601
+        ],
+        [
+          205,
+          0,
+          601
+        ],
+        [
+          206,
+          0,
+          601
+        ]
+      ]
+    },
+    {
+      "first_ID": 610,
+      "last_ID": 613,
+      "table": 34702720,
+      "table_slots": [
+        610,
+        -1,
+        -1,
+        -1,
+        611,
+        612,
+        613,
+        -1
+      ],
+      "native_callers": [
+        {
+          "load_PC": 34046560,
+          "call_PC": 34046576,
+          "literal_address": 34046664,
+          "literal_value": 34702720,
+          "consumer": 33897796,
+          "clean_and_current_hex": "60109fe560209fe560309fe50100a0e3b36effeb"
+        },
+        {
+          "load_PC": 34046592,
+          "call_PC": 34046604,
+          "literal_address": 34046664,
+          "literal_value": 34702720,
+          "consumer": 33897796,
+          "clean_and_current_hex": "40109fe544309fe50100a0e3ac6effeb"
+        }
+      ],
+      "consumer": 33897796,
+      "original_role_argument": 1,
+      "arguments": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "speaker": "First Mate",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          610
+        ],
+        [
+          1,
+          1,
+          610
+        ],
+        [
+          2,
+          3,
+          610
+        ],
+        [
+          3,
+          3,
+          610
+        ],
+        [
+          4,
+          0,
+          610
+        ],
+        [
+          5,
+          4,
+          611
+        ],
+        [
+          6,
+          5,
+          612
+        ],
+        [
+          7,
+          3,
+          610
+        ],
+        [
+          8,
+          0,
+          610
+        ],
+        [
+          9,
+          2,
+          610
+        ],
+        [
+          10,
+          5,
+          612
+        ],
+        [
+          11,
+          4,
+          611
+        ],
+        [
+          12,
+          1,
+          610
+        ],
+        [
+          13,
+          0,
+          610
+        ],
+        [
+          14,
+          6,
+          613
+        ],
+        [
+          15,
+          4,
+          611
+        ],
+        [
+          16,
+          1,
+          610
+        ],
+        [
+          17,
+          4,
+          611
+        ],
+        [
+          18,
+          0,
+          610
+        ],
+        [
+          19,
+          7,
+          610
+        ],
+        [
+          20,
+          4,
+          611
+        ],
+        [
+          21,
+          1,
+          610
+        ],
+        [
+          22,
+          2,
+          610
+        ],
+        [
+          23,
+          7,
+          610
+        ],
+        [
+          24,
+          3,
+          610
+        ],
+        [
+          25,
+          3,
+          610
+        ],
+        [
+          26,
+          2,
+          610
+        ],
+        [
+          27,
+          2,
+          610
+        ],
+        [
+          28,
+          4,
+          611
+        ],
+        [
+          29,
+          7,
+          610
+        ],
+        [
+          30,
+          7,
+          610
+        ],
+        [
+          31,
+          7,
+          610
+        ],
+        [
+          32,
+          0,
+          610
+        ],
+        [
+          33,
+          7,
+          610
+        ],
+        [
+          34,
+          1,
+          610
+        ],
+        [
+          35,
+          7,
+          610
+        ],
+        [
+          36,
+          7,
+          610
+        ],
+        [
+          37,
+          0,
+          610
+        ],
+        [
+          38,
+          7,
+          610
+        ],
+        [
+          39,
+          4,
+          611
+        ],
+        [
+          40,
+          7,
+          610
+        ],
+        [
+          41,
+          5,
+          612
+        ],
+        [
+          42,
+          7,
+          610
+        ],
+        [
+          43,
+          1,
+          610
+        ],
+        [
+          44,
+          4,
+          611
+        ],
+        [
+          45,
+          0,
+          610
+        ],
+        [
+          46,
+          5,
+          612
+        ],
+        [
+          47,
+          7,
+          610
+        ],
+        [
+          48,
+          4,
+          611
+        ],
+        [
+          49,
+          4,
+          611
+        ],
+        [
+          50,
+          0,
+          610
+        ],
+        [
+          51,
+          7,
+          610
+        ],
+        [
+          52,
+          7,
+          610
+        ],
+        [
+          53,
+          2,
+          610
+        ],
+        [
+          54,
+          0,
+          610
+        ],
+        [
+          55,
+          4,
+          611
+        ],
+        [
+          56,
+          0,
+          610
+        ],
+        [
+          57,
+          7,
+          610
+        ],
+        [
+          58,
+          4,
+          611
+        ],
+        [
+          59,
+          0,
+          610
+        ],
+        [
+          60,
+          1,
+          610
+        ],
+        [
+          61,
+          4,
+          611
+        ],
+        [
+          62,
+          4,
+          611
+        ],
+        [
+          63,
+          0,
+          610
+        ],
+        [
+          64,
+          0,
+          610
+        ],
+        [
+          65,
+          4,
+          611
+        ],
+        [
+          66,
+          2,
+          610
+        ],
+        [
+          67,
+          4,
+          611
+        ],
+        [
+          68,
+          0,
+          610
+        ],
+        [
+          69,
+          1,
+          610
+        ],
+        [
+          70,
+          4,
+          611
+        ],
+        [
+          71,
+          4,
+          611
+        ],
+        [
+          72,
+          4,
+          611
+        ],
+        [
+          73,
+          7,
+          610
+        ],
+        [
+          74,
+          0,
+          610
+        ],
+        [
+          75,
+          5,
+          612
+        ],
+        [
+          76,
+          5,
+          612
+        ],
+        [
+          77,
+          7,
+          610
+        ],
+        [
+          78,
+          7,
+          610
+        ],
+        [
+          79,
+          0,
+          610
+        ],
+        [
+          80,
+          3,
+          610
+        ],
+        [
+          81,
+          1,
+          610
+        ],
+        [
+          82,
+          0,
+          610
+        ],
+        [
+          83,
+          0,
+          610
+        ],
+        [
+          84,
+          0,
+          610
+        ],
+        [
+          85,
+          0,
+          610
+        ],
+        [
+          86,
+          0,
+          610
+        ],
+        [
+          87,
+          0,
+          610
+        ],
+        [
+          88,
+          0,
+          610
+        ],
+        [
+          89,
+          0,
+          610
+        ],
+        [
+          90,
+          0,
+          610
+        ],
+        [
+          91,
+          0,
+          610
+        ],
+        [
+          92,
+          0,
+          610
+        ],
+        [
+          93,
+          0,
+          610
+        ],
+        [
+          94,
+          0,
+          610
+        ],
+        [
+          95,
+          0,
+          610
+        ],
+        [
+          96,
+          0,
+          610
+        ],
+        [
+          97,
+          0,
+          610
+        ],
+        [
+          98,
+          0,
+          610
+        ],
+        [
+          99,
+          0,
+          610
+        ],
+        [
+          100,
+          0,
+          610
+        ],
+        [
+          101,
+          0,
+          610
+        ],
+        [
+          102,
+          0,
+          610
+        ],
+        [
+          103,
+          0,
+          610
+        ],
+        [
+          104,
+          0,
+          610
+        ],
+        [
+          105,
+          0,
+          610
+        ],
+        [
+          106,
+          0,
+          610
+        ],
+        [
+          107,
+          0,
+          610
+        ],
+        [
+          108,
+          0,
+          610
+        ],
+        [
+          109,
+          0,
+          610
+        ],
+        [
+          110,
+          0,
+          610
+        ],
+        [
+          111,
+          0,
+          610
+        ],
+        [
+          112,
+          0,
+          610
+        ],
+        [
+          113,
+          0,
+          610
+        ],
+        [
+          114,
+          0,
+          610
+        ],
+        [
+          115,
+          0,
+          610
+        ],
+        [
+          116,
+          0,
+          610
+        ],
+        [
+          117,
+          0,
+          610
+        ],
+        [
+          118,
+          0,
+          610
+        ],
+        [
+          119,
+          0,
+          610
+        ],
+        [
+          120,
+          0,
+          610
+        ],
+        [
+          121,
+          0,
+          610
+        ],
+        [
+          122,
+          0,
+          610
+        ],
+        [
+          123,
+          0,
+          610
+        ],
+        [
+          124,
+          0,
+          610
+        ],
+        [
+          125,
+          0,
+          610
+        ],
+        [
+          126,
+          0,
+          610
+        ],
+        [
+          127,
+          0,
+          610
+        ],
+        [
+          128,
+          0,
+          610
+        ],
+        [
+          129,
+          0,
+          610
+        ],
+        [
+          130,
+          0,
+          610
+        ],
+        [
+          131,
+          0,
+          610
+        ],
+        [
+          132,
+          0,
+          610
+        ],
+        [
+          133,
+          0,
+          610
+        ],
+        [
+          134,
+          0,
+          610
+        ],
+        [
+          135,
+          0,
+          610
+        ],
+        [
+          136,
+          0,
+          610
+        ],
+        [
+          137,
+          0,
+          610
+        ],
+        [
+          138,
+          0,
+          610
+        ],
+        [
+          139,
+          0,
+          610
+        ],
+        [
+          140,
+          0,
+          610
+        ],
+        [
+          141,
+          0,
+          610
+        ],
+        [
+          142,
+          0,
+          610
+        ],
+        [
+          143,
+          0,
+          610
+        ],
+        [
+          144,
+          0,
+          610
+        ],
+        [
+          145,
+          0,
+          610
+        ],
+        [
+          146,
+          0,
+          610
+        ],
+        [
+          147,
+          0,
+          610
+        ],
+        [
+          148,
+          0,
+          610
+        ],
+        [
+          149,
+          0,
+          610
+        ],
+        [
+          150,
+          0,
+          610
+        ],
+        [
+          151,
+          4,
+          611
+        ],
+        [
+          152,
+          4,
+          611
+        ],
+        [
+          153,
+          4,
+          611
+        ],
+        [
+          154,
+          4,
+          611
+        ],
+        [
+          155,
+          4,
+          611
+        ],
+        [
+          156,
+          4,
+          611
+        ],
+        [
+          157,
+          4,
+          611
+        ],
+        [
+          158,
+          4,
+          611
+        ],
+        [
+          159,
+          4,
+          611
+        ],
+        [
+          160,
+          4,
+          611
+        ],
+        [
+          161,
+          4,
+          611
+        ],
+        [
+          162,
+          0,
+          610
+        ],
+        [
+          163,
+          0,
+          610
+        ],
+        [
+          164,
+          0,
+          610
+        ],
+        [
+          165,
+          0,
+          610
+        ],
+        [
+          166,
+          0,
+          610
+        ],
+        [
+          167,
+          0,
+          610
+        ],
+        [
+          168,
+          0,
+          610
+        ],
+        [
+          169,
+          0,
+          610
+        ],
+        [
+          170,
+          0,
+          610
+        ],
+        [
+          171,
+          0,
+          610
+        ],
+        [
+          172,
+          0,
+          610
+        ],
+        [
+          173,
+          0,
+          610
+        ],
+        [
+          174,
+          0,
+          610
+        ],
+        [
+          175,
+          0,
+          610
+        ],
+        [
+          176,
+          4,
+          611
+        ],
+        [
+          177,
+          0,
+          610
+        ],
+        [
+          178,
+          0,
+          610
+        ],
+        [
+          179,
+          0,
+          610
+        ],
+        [
+          180,
+          0,
+          610
+        ],
+        [
+          181,
+          4,
+          611
+        ],
+        [
+          182,
+          0,
+          610
+        ],
+        [
+          183,
+          4,
+          611
+        ],
+        [
+          184,
+          4,
+          611
+        ],
+        [
+          185,
+          0,
+          610
+        ],
+        [
+          186,
+          0,
+          610
+        ],
+        [
+          187,
+          0,
+          610
+        ],
+        [
+          188,
+          0,
+          610
+        ],
+        [
+          189,
+          0,
+          610
+        ],
+        [
+          190,
+          0,
+          610
+        ],
+        [
+          191,
+          0,
+          610
+        ],
+        [
+          192,
+          0,
+          610
+        ],
+        [
+          193,
+          0,
+          610
+        ],
+        [
+          194,
+          0,
+          610
+        ],
+        [
+          195,
+          0,
+          610
+        ],
+        [
+          196,
+          0,
+          610
+        ],
+        [
+          197,
+          0,
+          610
+        ],
+        [
+          198,
+          0,
+          610
+        ],
+        [
+          199,
+          0,
+          610
+        ],
+        [
+          200,
+          0,
+          610
+        ],
+        [
+          201,
+          0,
+          610
+        ],
+        [
+          202,
+          0,
+          610
+        ],
+        [
+          203,
+          0,
+          610
+        ],
+        [
+          204,
+          0,
+          610
+        ],
+        [
+          205,
+          0,
+          610
+        ],
+        [
+          206,
+          0,
+          610
+        ]
+      ]
+    }
+  ],
+  "single_sailor_consumer": {
+    "context": "A hungry sailor speaks about dizziness and feeling unable to go on. The source does not describe a collapse.",
+    "speaker": "Sailor selected by the original fleet",
+    "arguments": [],
+    "native_callers": [
+      {
+        "load_PC": 33753096,
+        "call_PC": 33753100,
+        "literal_address": 33755076,
+        "literal_value": 609,
+        "consumer": 33898468,
+        "clean_and_current_hex": "b4179fe5f48d00eb"
+      }
+    ]
+  },
+  "arguments": {
+    "supplies": [
+      {
+        "index": 0,
+        "pointer": 37256364,
+        "English": "Water"
+      },
+      {
+        "index": 1,
+        "pointer": 37256372,
+        "English": "Food"
+      }
+    ],
+    "automatic_travel_literals": [
+      {
+        "literal": 34046668,
+        "source_pointer": 34705704,
+        "current_pointer": 37258720,
+        "Japanese": "水と食料",
+        "English": "water and food"
+      },
+      {
+        "literal": 34046672,
+        "source_pointer": 34705692,
+        "current_pointer": 37258736,
+        "Japanese": "自動移動",
+        "English": "automatic travel"
+      }
+    ],
+    "ship_name_virtual_slot": 4,
+    "ship_name_getter_call_sites": [
+      33756568,
+      33740752
+    ]
+  },
+  "current_native_lookups": 41,
+  "voice_cases": 1242,
+  "new_gameplay": false,
+  "formatting_pending": true,
+  "registered_release_pending": true,
+  "new_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ship_emergency_source_drafts.tsv": "5b4e1b8e28b48fe73c603f4045a4b9375ba9c16ed05f2346c7426deb866b4b71",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ship_emergency_decisions.tsv": "aae03478860054d9ac4b9fa872aeb558c0460dae5a4b3e991ec7616b2303dbfb",
+    "releases\\all_routes_editorial_20261111_mutiny_candidate\\verification\\registered_release_verification.json": "7841f9aa4d4c1e16a7799c9d31f366fa09ee85ce58a6922d0fad836019e0aa86",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_ship_emergency_review_v1.py": "668ccaa0473c87bc408e582ee5fe9b39187c05587217a149a10d973a430e1666",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ship_emergency_contextual_review.json": "6daf07327bbaf67ce94ffdd7833a8ab9936850cba93d22b3578bd2158367533b",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\stage_ship_emergency_balanced_v2.py": "47d8e4e5930c71efac689699cd2b7481698b3b4b0bca551454b9d89a50f52cb0"
+  }
+}
