@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-10
 
+Lil B323–B335 is registered and credited once. Lil261 adds 261 contextual reviews, including 198 revisions and 63 retentions. The clean-input patch reconstructs it exactly. The exact native Lil census covers 6,720 of 6,720 positions. The ledger credits 25,898 reviews.
+
+Continue from [editorial_Lil261_registered_20261110](editorial_Lil261_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
+Lil B323–B335 passed offline visual review of all 258 dialogue pages, six captions and 12 name strings. All 13 exchanges passed stored reconstruction, native catalogue lookups and the original SC2 loaders. The final plan improves 30 layouts. Focused gameplay and cumulative registration remain. The ledger credits 25,637 reviews.
+
+Continue from [editorial_Lil261_stored_20261110](editorial_Lil261_stored_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
+Lil B323–B335 has 261 contextual decisions, including 198 revisions and 63 justified retentions. The four prose gates pass. All six captions and 12 scoped name strings passed native and visual checks. The final body display and stored checks, focused gameplay, and cumulative registration remain. The ledger credits 25,637 reviews.
+
+Continue from [editorial_Lil261_prose_layout_20261110](editorial_Lil261_prose_layout_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 The remaining 261 native Lil positions are bound to the clean Japanese in 13 complete groups. B323 has 68 source-first meanings and independent drafts. Lil254 remains the registered candidate with 25,637 credited reviews.
 
 Continue from [editorial_Lil261_source_intake_20261110](editorial_Lil261_source_intake_20261110.md). Reuse the completed checks; earlier entries below are historical.
