@@ -1,3 +1,9 @@
+The 35 city and combat notices are registered with 768 entries, 114 accepted layers and 103 checks. Use scripts/register_city_combat_notices_v1.py with --register and --publish-prepared. Exact reconstruction, original regional attack replay and cold startup pass. [Checkpoint](editorial_city_combat_notices_registered_20261111.md)
+
+The 47 fleet reports are registered with 767 entries, 114 accepted layers and 102 checks. Use scripts/register_fleet_reports_v1.py with --register and --publish-prepared. Exact reconstruction, original month-end transitions and cold startup pass. [Checkpoint](editorial_fleet_reports_registered_20261111.md)
+
+The 33 crew item-action replies are registered with 766 entries, 114 accepted layers and 101 checks. Use scripts/register_crew_item_actions_v1.py with --register and --publish-prepared. Exact reconstruction, original Items transitions and cold startup pass. [Checkpoint](editorial_crew_item_actions_registered_20261111.md)
+
 The 53 sailing reactions are registered with 765 entries, 114 accepted layers and 100 checks. Use scripts/register_sailing_reactions_v1.py with --register and --publish-prepared. Exact reconstruction, focused sailing replay and cold startup pass. [Checkpoint](editorial_sailing_reactions_registered_20261111.md)
 
 The 124 Price Info descriptions are registered with 764 entries, 114 accepted layers and 99 checks. Use scripts/register_trade_good_descriptions_v1.py with --register and --publish-prepared. Exact reconstruction, ordinary Price Info replay and cold startup pass. [Checkpoint](editorial_trade_good_descriptions_registered_20261111.md)

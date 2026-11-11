@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-11
 
+All 35 city and combat notices are registered. The ledger now credits 27,261 reviews.
+
+Continue from [the registered city and combat notices](editorial_city_combat_notices_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 47 fleet reports are registered. The ledger now credits 27,226 reviews.
+
+Continue from [the registered fleet reports](editorial_fleet_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 33 crew item-action replies are registered. The ledger now credits 27,179 reviews.
+
+Continue from [the registered crew item actions](editorial_crew_item_actions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 Fifty-three sailing reactions are registered. The ledger now credits 27,146 reviews.
 
 Continue from [the registered sailing reactions](editorial_sailing_reactions_registered_20261111.md).

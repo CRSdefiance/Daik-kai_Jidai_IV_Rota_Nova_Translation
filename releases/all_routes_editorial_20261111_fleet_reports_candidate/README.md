@@ -1,0 +1,7 @@
+# All Routes Fleet Reports candidate
+
+Use [Translation_DS_All_Routes_Fleet_Reports_20261111_candidate.nds](../../out/fleet_reports_registered_20261111_v1/Translation_DS_All_Routes_Fleet_Reports_20261111_candidate.nds) with its adjacent manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `948f46ca565020b35657dd53214b9dd19bf6bf3047e827aadc517f43604a91f3`. Patch SHA-256 `d3d2fe34e71dbc5335ee00e68e6607947d5b69a394856904f1d15a45e72b86b1`.
+
+All 47 fleet reports are registered. The ledger now credits 27,226 reviews. The batch includes 41 revisions and six justified retentions across fleet encounters, combat outcomes and monthly finance. The native wrappers keep the company and captain names intact in the tested variants. The two amount paths display matching ASCII digits while preserving the exact values supplied by the game.
+
+The original month-end sequence displayed a loss of 691 gold. A second replay supplied 100 in company funds and verified that the original settlement carried the unpaid 591 forward. Both replays returned to sailing through the original controls. Fleet encounter and combat outcome variants received offline checks. All 89 portrait pages received visual review. Cold startup, 24 protected name getters, 34 targeted tests and 102 release checks passed. [Gameplay](verification/fleet_reports_gameplay_verification.json) · [Exact records](verification/registered_review.json)

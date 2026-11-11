@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-11
 
+All 35 city and combat notices are registered. The ledger now credits 27,261 reviews.
+
+The [All Routes Combat and Fleet promotion candidate](../out/promotion_ready_20261111_combat_and_fleet/Translation_DS_All_Routes_Combat_and_Fleet_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_city_combat_notices_candidate/README.md) reconstruct it byte for byte. The ledger has 27,261 credited reviews and 715 native shared keys still to review or classify. V4701 remains main pending acceptance.
+
+The next [pirate and retreat manuscript](../translations/editorial_checkpoints/SharedText_20261110_v1/pirate_and_retreat_reports_context_v1.json) covers COMMON 2615–2662 with 30 proposed revisions and 18 justified retentions. At `02077C80`, the first argument is a relative bearing and the second is the pirate’s given name. The [staged verification](../out/pirate_and_retreat_reports_staged_20261111_v1/stored_verification.json) records 71 native portraits, 22 bearing controls and an exact parent inverse. Resume with visual review, the Hamburg retreat replay and focused bearing verification. These 48 records remain among the 715 pending keys and have no release credit yet.
+
+# Current editorial checkpoint - 2026-11-11
+
+All 47 fleet reports are registered. The ledger now credits 27,226 reviews.
+
+Continue from [the registered fleet reports](editorial_fleet_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 33 crew item-action replies are registered. The ledger now credits 27,179 reviews.
+
+Continue from [the registered crew item actions](editorial_crew_item_actions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 Fifty-three sailing reactions are registered. The ledger now credits 27,146 reviews.
 
 The [All Routes Trade and Sailing promotion candidate](../out/promotion_ready_20261111_trade_and_sailing/Translation_DS_All_Routes_Trade_and_Sailing_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_sailing_reactions_candidate/README.md) reconstruct it byte for byte. The ledger has 27,146 credited reviews and 830 native shared keys still to review or classify. V4701 remains main pending acceptance.
