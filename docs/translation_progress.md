@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Thirty shared notices have contextual decisions and native caller bindings. All 19 static pages passed offline rendering and visual review. The Abandon Ship successor has an exact clean-input patch and passes its own startup and name checks. The localized menu and Back transition still need a focused emulator test. Lil261 remains registered.
+
+Continue from [editorial_shared_static_ship_20261110](editorial_shared_static_ship_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 The four native story censuses cover all 24,092 dialogue, choice and personality positions. The next shared-text packet has 57 clean-source drafts, 54 current comparisons and one raw ship command. Thirty comparisons are retention candidates, 16 propose revisions and eight identify source mismatches. Consumer, display and release approval remain. Lil261 stays the registered candidate with 25,898 credited reviews.
 
 Continue from [editorial_shared_text_source_20261110](editorial_shared_text_source_20261110.md). Reuse the completed checks; earlier entries below are historical.
