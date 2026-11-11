@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 34 figurehead, navigation and gift advice replies are registered. The ledger now credits 26,899 reviews.
+
+Continue from [the registered figurehead, navigation and gift advice](editorial_figurehead_navigation_gift_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 40 crew-equipment advice replies are registered. The ledger now credits 26,865 reviews.
+
+Continue from [the registered crew-equipment advice](editorial_crew_equipment_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 50 weapon and armor advice replies are registered. The ledger now credits 26,825 reviews.
+
+Continue from [the registered weapon and armor advice](editorial_weapon_armor_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 24 item production and voyage-supply replies are registered. The ledger now credits 26,775 reviews.
+
+Continue from [the registered item production advice](editorial_item_production_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 30 promotional item descriptions are registered. The ledger now credits 26,751 reviews.
 
 Continue from [the registered promotional item cards](editorial_promotional_item_cards_registered_20261111.md).

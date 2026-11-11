@@ -1,5 +1,37 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 34 figurehead, navigation and gift advice replies are registered. The ledger now credits 26,899 reviews.
+
+The [All Routes Item Advice promotion candidate](../out/promotion_ready_20261111_item_advice/Translation_DS_All_Routes_Item_Advice_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_figurehead_navigation_gift_advice_candidate/README.md) reconstruct it byte for byte. It adds 148 advice reviews since Item Catalogue and includes all 218 reviewed item descriptions. All 34 fresh targeted repository tests passed. V4701 remains main pending acceptance.
+
+Continue from [the registered figurehead, navigation and gift advice](editorial_figurehead_navigation_gift_advice_registered_20261111.md).
+
+The [promotion coverage audit](../releases/all_routes_editorial_20261111_figurehead_navigation_gift_advice_candidate/verification/editorial_remaining_scope.json) matches all 24,092 tracked story positions and 202 Help topics to the current ledger. It identifies 1,077 of 3,668 native shared keys still needing review or classification, including 70 item-advice replies beginning at COMMON 3181. Other player-facing UI, name and role consistency, earlier wrap and glyph issues, and practical town and random-scene testing remain in scope.
+
+# Current editorial checkpoint - 2026-11-11
+
+The 40 crew-equipment advice replies are registered. The ledger now credits 26,865 reviews.
+
+Continue from [the registered crew-equipment advice](editorial_crew_equipment_advice_registered_20261111.md).
+
+The next [figurehead, navigation and gift advice manuscript](../translations/editorial_checkpoints/SharedText_20261110_v1/figurehead_navigation_gift_advice_context_v1.json) covers COMMON 3147–3180, with 23 proposed revisions and 11 justified retentions. Its [staged verification](../out/figurehead_navigation_gift_advice_staged_20261111_v1/stored_verification.json) records 68 native portraits, 34 original loader copies and an exact parent inverse. The source packet binds 204 original caller fragments. Review both staged sheets and refine the early starts and pronoun breaks in Shachihoko, Maiden Figurehead, Madonna Figurehead, Venus de Milo and Snow-Silk Robe. Final visual approval and registration are pending. The ledger still credits 26,865 reviews.
+
+# Current editorial checkpoint - 2026-11-11
+
+The 50 weapon and armor advice replies are registered. The ledger now credits 26,825 reviews.
+
+Continue from [the registered weapon and armor advice](editorial_weapon_armor_advice_registered_20261111.md).
+
+The next [crew-equipment advice manuscript](../translations/editorial_checkpoints/SharedText_20261110_v1/crew_equipment_advice_context_v1.json) covers COMMON 3107–3146, with 29 proposed revisions and 11 justified retentions. Its [staged verification](../out/crew_equipment_advice_staged_20261111_v1/stored_verification.json) records 80 native portraits and 40 original loader copies. The source packet also binds 240 caller fragments. Visually review the staged sheets and refine the short final row in the Illustrated Bible reply, the pronoun break in the Stylish Boots reply, and the short question setup in the Gupta Spirit Beast reply. Gameplay scope and registration are pending. The ledger still credits 26,825 reviews.
+
+# Current editorial checkpoint - 2026-11-11
+
+The 24 item production and voyage-supply replies are registered. The ledger now credits 26,775 reviews.
+
+Continue from [the registered item production advice](editorial_item_production_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 30 promotional item descriptions are registered. The ledger now credits 26,751 reviews.
 
 The [All Routes Item Catalogue promotion candidate](../out/promotion_ready_20261111_item_catalogue/Translation_DS_All_Routes_Item_Catalogue_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_promotional_item_cards_candidate/README.md) reconstruct it byte for byte. It adds 197 reviews since Source Item Cards and Coin and includes all 218 item descriptions. All 34 fresh targeted repository tests passed. V4701 remains main pending acceptance.
