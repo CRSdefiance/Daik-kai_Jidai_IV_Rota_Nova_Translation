@@ -1,3 +1,11 @@
+The 71 oasis and whale reports are registered with 772 entries, 114 accepted layers and 107 checks. Use scripts/register_oasis_and_whale_reports_v1.py with --register and --publish-prepared. Exact reconstruction, the whale replays and cold startup pass. [Checkpoint](editorial_oasis_and_whale_reports_registered_20261111.md)
+
+The 56 crew and shore reports are registered with 771 entries, 114 accepted layers and 106 checks. Use scripts/register_crew_and_shore_reports_v1.py with --register and --publish-prepared. Exact reconstruction, the Search attack and cold startup pass. [Checkpoint](editorial_crew_and_shore_reports_registered_20261111.md)
+
+The 29 battle commands and outcomes are registered with 770 entries, 114 accepted layers and 105 checks. Use scripts/register_battle_commands_and_outcomes_v1.py with --register and --publish-prepared. Exact reconstruction, both town confirmation branches and cold startup pass. [Checkpoint](editorial_battle_commands_and_outcomes_registered_20261111.md)
+
+The 48 pirate and retreat reports are registered with 769 entries, 114 accepted layers and 104 checks. Use scripts/register_pirate_and_retreat_reports_v1.py with --register and --publish-prepared. Exact reconstruction, Hamburg retreat and cold startup pass. [Checkpoint](editorial_pirate_and_retreat_reports_registered_20261111.md)
+
 The 35 city and combat notices are registered with 768 entries, 114 accepted layers and 103 checks. Use scripts/register_city_combat_notices_v1.py with --register and --publish-prepared. Exact reconstruction, original regional attack replay and cold startup pass. [Checkpoint](editorial_city_combat_notices_registered_20261111.md)
 
 The 47 fleet reports are registered with 767 entries, 114 accepted layers and 102 checks. Use scripts/register_fleet_reports_v1.py with --register and --publish-prepared. Exact reconstruction, original month-end transitions and cold startup pass. [Checkpoint](editorial_fleet_reports_registered_20261111.md)

@@ -1,0 +1,7 @@
+# All Routes Crew and Shore Reports candidate
+
+Use [Translation_DS_All_Routes_Crew_and_Shore_Reports_20261111_candidate.nds](../../out/crew_and_shore_reports_registered_20261111_v1/Translation_DS_All_Routes_Crew_and_Shore_Reports_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `5f630cb1f36dcc0876dea16f2dc55384e52f2201b41f5bee9bb9b9c807418d76`. Patch SHA-256 `c6223e4ace551711af57b98d02c46c341020a49009959f8c2c1dd234c095accf`.
+
+All 56 crew and shore reports are registered. The ledger now credits 27,394 reviews. The batch includes 37 revisions and 19 justified retentions. It preserves the four captains’ reprimands and the different voices reporting shore discoveries, welcome or attack, desertion, illness and quicksand. It also removes mixed-width English letters and keeps phrases such as “food and water” and “caught in quicksand” together.
+
+The focused Search replay displayed the attack report and the loss of 11 sailors, then returned to sailing. The original event selection ran with the disclosed location setup. The friendly welcome and food-and-water follow-up received offline display checks. All 56 pages, cold boot, 24 protected name getters, 34 targeted tests and 106 release checks passed. [Gameplay](verification/crew_and_shore_reports_gameplay_verification.json) · [Exact records](verification/registered_review.json)

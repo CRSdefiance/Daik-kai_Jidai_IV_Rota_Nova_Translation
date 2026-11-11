@@ -1,5 +1,31 @@
 # Current editorial checkpoint - 2026-11-11
 
+All 71 oasis, discovery, shark and white-whale reports are registered. The ledger now credits 27,465 reviews.
+
+The [All Routes Voyage Reports promotion candidate](../out/promotion_ready_20261111_voyage_reports/Translation_DS_All_Routes_Voyage_Reports_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_oasis_and_whale_reports_candidate/README.md) reconstruct it byte for byte. The ledger has 27,465 credited reviews and 511 native shared keys still to review or classify. V4701 remains main pending acceptance.
+
+Continue from [the registered oasis and whale reports](editorial_oasis_and_whale_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 56 crew and shore reports are registered. The ledger now credits 27,394 reviews.
+
+Continue from [the registered crew and shore reports](editorial_crew_and_shore_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 29 battle commands and outcomes are registered. The ledger now credits 27,338 reviews.
+
+Continue from [the registered battle commands and outcomes](editorial_battle_commands_and_outcomes_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 48 pirate and retreat reports are registered. The ledger now credits 27,309 reviews.
+
+Continue from [the registered pirate and retreat reports](editorial_pirate_and_retreat_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 All 35 city and combat notices are registered. The ledger now credits 27,261 reviews.
 
 The [All Routes Combat and Fleet promotion candidate](../out/promotion_ready_20261111_combat_and_fleet/Translation_DS_All_Routes_Combat_and_Fleet_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_city_combat_notices_candidate/README.md) reconstruct it byte for byte. The ledger has 27,261 credited reviews and 715 native shared keys still to review or classify. V4701 remains main pending acceptance.

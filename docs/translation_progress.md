@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-11
 
+All 71 oasis, discovery, shark and white-whale reports are registered. The ledger now credits 27,465 reviews.
+
+Continue from [the registered oasis and whale reports](editorial_oasis_and_whale_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 56 crew and shore reports are registered. The ledger now credits 27,394 reviews.
+
+Continue from [the registered crew and shore reports](editorial_crew_and_shore_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 29 battle commands and outcomes are registered. The ledger now credits 27,338 reviews.
+
+Continue from [the registered battle commands and outcomes](editorial_battle_commands_and_outcomes_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 48 pirate and retreat reports are registered. The ledger now credits 27,309 reviews.
+
+Continue from [the registered pirate and retreat reports](editorial_pirate_and_retreat_reports_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 All 35 city and combat notices are registered. The ledger now credits 27,261 reviews.
 
 Continue from [the registered city and combat notices](editorial_city_combat_notices_registered_20261111.md).
