@@ -1,0 +1,55 @@
+message_id	independent_English	context_note
+85	We can sail for about %s days.	An estimate of sailing days. Keep the approximation and the number substitution.
+86	%s/%s\n%s\nDeparted %s.	The source presents a date, a standalone status substitution, and the port of departure. Preserve their sequence and separate display roles. Confirm the consumer and date formatting.
+87	Not enough %s.	A shortage notice. The object is supplied by the caller.
+88	The enemy fleet has been wiped out!	An outcome for the fleet as a whole.
+89	The enemy has fled!	Keep the separate retreat outcome.
+90	The city of %s has been defeated...	The city is overcome. The ellipsis and subdued tone distinguish this from a victory announcement.
+91	The city of %s has surrendered...	Surrender is distinct from defeat. Keep the subdued tone.
+92	One of our fleets has sent a financial report. Would you like to hear it?	A polite offer to hear a subordinate fleet's income and expenditure report. No result is reported yet.
+93	The city of %s is firing on %s's fleet.	The city is the attacker and the named fleet is the target. Preserve argument order.
+94	%s is under attack by the pirate %s!	The town is the target, and the named pirate is the attacker. The final English must keep the native argument order unless positional substitution is proved.
+95	In %s, %s sold a large shipment of %s and increased their market share!	The three values are the port, seller and commodity in that order. The sales increased market share.
+96	Our market share in %s has fallen!	The share fell. Check that the caller supplies a place and whose share is implied.
+98	You haven't acquired any items yet.	An empty acquired-item list. This need not describe carried inventory.
+99	You haven't discovered any ruins yet.	An empty discovery list.
+100	Choose three skills to specialize in.	Select exactly three strengths.
+101	Are you happy with %s, %s, and %s?	Confirmation of the three chosen skills in order.
+102	Adjust the volume of the music and sound effects.	An options description covering both audio channels.
+103	Enter your birthday.	A short setup prompt. The field owner depends on the screen.
+104	A Portuguese boy who dreams of life at sea. A friend talks him into setting sail. Recommended for first-time players.	His wish is initially vague, and a friend encourages him. The recommendation addresses the player.
+105	An admiral from newly independent Sweden. He leads a privateer fleet that's a navy in name only. He aims to make Sweden's fleet the strongest in the world.	Sweden has regained its independence. Preserve the distinction between a navy in name and a privateer fleet in practice.
+106	A Dutch girl with a head for business. She sets sail to make her mark with her childhood friend and partner, Camille.	Camille is her childhood friend and partner. The goal is to make a name for herself, with no invented romance or rank.
+107	A Ming admiral who defies her country's isolation policy and leads a private fleet to protect people from wokou pirates.	Preserve the Ming setting, the policy's force of law, her deliberate decision, the private fleet and the people she defends.
+108	Saving game data requires four free blocks. You won't be able to save as things stand. Start the game anyway?	Legacy storage wording in the clean source. Four blocks apply to game data. Check platform reachability before changing a DS screen.
+109	Saving system data requires one free block. You won't be able to save as things stand. Start the game anyway?	One block applies to system data. Same decision, distinct data.
+110	Saving your data requires five free blocks. You won't be able to save as things stand. Start the game anyway?	Five blocks apply to the combined data condition. Do not collapse these three source branches.
+111	There's no game data to load.	Absent game data prevents loading.
+112	No system data found.	System data absence is distinct from missing game data. Source has a trailing line separator to classify.
+113	Not enough free space. Saving game data requires four free blocks.	Four-block save failure without a start prompt.
+114	Not enough free space. Saving system data requires one free block.	One-block save failure without a start prompt.
+115	Not enough free space. Saving requires five free blocks.	Five-block save failure without a start prompt.
+116	Checking the memory card. Please don't plug in or remove the memory card or controller.	The clean string explicitly names the memory card and controller. Their presence is a platform-specific source clue.
+117	The game data is corrupted.	Corruption is distinct from absent data or general load failure.
+118	The system data is corrupted.	System data is the affected data.
+119	Save the ending data to the memory card?	The data concerns the ending. Preserve the specific destination until the consumer is classified.
+120	Is everything correct?	A confirmation of the full selection. No specific object named.
+121	Start the game?	A simple start confirmation.
+122	Couldn't load the system data. The game will start with the default system data.	Failed load followed by starting with initialized system data. Confirm whether the data extends beyond settings.
+123	Couldn't load the system data.	Failure only. Source has a trailing separator to classify.
+124	The memory card can be initialized when you save. Start the game?	Initialization can be deferred to saving. This is a choice, with no claim that data has already been erased.
+125	A major commercial investment has helped %s's economy recover.	Recovery follows a large investment. The second notice reports prosperity.
+126	A major commercial investment has brought a boom to %s.	A boom is stronger than recovery. Preserve the same cause.
+127	Choose a port to use as your base.	The player is selecting a base, not issuing a docking command.
+128	You don't have a contract with that port.	A selection refusal due to missing contract.
+129	We'll go on patrol. Choose a port where you have a contract.	The fleet will patrol. The contract is with the port, not a contract to patrol.
+130	We'll send the fleet into port. Choose one where you have a contract.	The fleet will call at the selected contracted port. Break the wording into a short command and a constraint if needed for clarity.
+131	Choose a port to attack.	The target is the port itself.
+132	You already have a contract with that port.	A contract already exists, as distinct from the missing-contract refusal.
+133	That port has a contract with a faction you're not at war with.	The contracted faction is outside the set of enemies. Confirm which selection rule and actor the caller implies.
+134	That port has no contract with any faction you're at war with.	The port lacks a contract with a faction at war with the player. Keep the distinct negative condition.
+135	The people here are furious. There's no way in or out right now.	Town anger makes entering or leaving infeasible. No claim about formal closure or permanent lockout.
+136	Select a shop sign to hear about trends and other local news.	A retail-square tutorial. Selecting signs lets the player ask about trends and related information.
+750	Are you sure you want to start over?	The speaker asks for confirmation about doing something over. The caller must establish whether to say start over, try again or redo a specific step.
+751	What a bother.	A drawn-out, mildly put-upon reaction. The source does not explicitly name the task.
+752	I'm busy. Spare me the jokes, will you?	A busy speaker brusquely asks to be spared the jokes. Keep the register. The preceding decision branch remains unverified.
