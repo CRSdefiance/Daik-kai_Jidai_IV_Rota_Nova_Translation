@@ -4,6 +4,8 @@ The 24 shipyard and fleet setup notices are registered. The ledger now credits 2
 
 The [Shipyard and Fleet Setup promotion candidate](../out/promotion_ready_20261111_shipyard_fleet_setup/Translation_DS_All_Routes_Shipyard_Fleet_Setup_20261111_candidate.nds) is ready for cold-boot testing. The [registered package and clean-input patch](../releases/all_routes_editorial_20261111_shipyard_fleet_setup_candidate/README.md) reconstruct it byte for byte. V4701 remains main pending acceptance.
 
+The next [discovery and reward batch](../translations/editorial_checkpoints/SharedText_20261110_v1/discovery_rewards_context_v1.json) has 14 contextual decisions and 31 offline native display cases. Continue from the [stored verification](../out/discovery_rewards_staged_20261111_v1/stored_verification.json) and the captured Auto Move, Inuvik, and startup runs. Visual approval, gameplay verification, and registration are pending. The batch is outside the promotion candidate.
+
 Continue from [the registered Shipyard and fleet setup notices](editorial_shipyard_fleet_setup_registered_20261111.md).
 
 # Current editorial checkpoint - 2026-11-11
