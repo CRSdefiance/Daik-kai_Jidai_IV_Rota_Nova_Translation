@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-10
 
+The remaining 261 native Lil positions are bound to the clean Japanese in 13 complete groups. B323 has 68 source-first meanings and independent drafts. Lil254 remains the registered candidate with 25,637 credited reviews.
+
+Continue from [editorial_Lil261_source_intake_20261110](editorial_Lil261_source_intake_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
+Lil B312–B319 is registered and credited once. The cumulative Lil254 candidate adds 254 reviews, including 151 revisions and 103 retentions. The clean-input patch reconstructs it exactly. Own startup, 24 protected getters, 65 release checks and 27 repository tests passed. The ledger credits 25,637 reviews, with 261 native Lil positions remaining.
+
+Continue from [editorial_Lil254_registered_20261110](editorial_Lil254_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Lil B312–B319 passed all five review gates for 254 records and ten scoped names. Stored verification covers 251 pages, and the initialized Lil emulator sample displayed 53 bodies, 58 pages and all eight captions. The batch is ready for cumulative registration. The ledger still credits 25,383 reviews.
 
 Continue from [editorial_Lil254_gameplay_20261110](editorial_Lil254_gameplay_20261110.md). Reuse the completed checks; earlier entries below are historical.
