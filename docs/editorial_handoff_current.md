@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Thirty shared notices now pass stored lookup and native formatting checks. The Copenhagen replay verified the revised sailing estimate and the three-row departure notice with its dismissal. Representative gameplay for the scoped wrap selector and registration remain pending. The ledger credits 25,899 reviews.
+
+Continue from [the stored shared-notice checkpoint](editorial_shared_notices_storage_20261110.md).
+
+# Current editorial checkpoint - 2026-11-10
+
 Abandon Ship is registered and credited once. The native menu passed exact live caption and Back/No checks. The cumulative patch reconstructs byte for byte. The ledger credits 25,899 reviews.
 
 The [v6 promotion candidate](../out/promotion_ready_20261110_all_routes_v6/Translation_DS_All_Routes_20261110_v6_candidate.nds) was freshly reconstructed and matches the registered ROM byte for byte. The [patch and verification](../releases/all_routes_editorial_20261110_ship_command_candidate/README.md) are ready for testing. Continue the pending shared notices from the existing checkpoint. Main V4701 awaits acceptance.
