@@ -1,0 +1,7 @@
+# All Routes Captain Biographies candidate
+
+Use the local ROM `out/captain_biographies_registered_20261111_v1/Translation_DS_All_Routes_Captain_Biographies_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `2f8733f260376f8cdb533e00d495b04bc59f9368e1eed97d173a1bcf3923477e` byte for byte. Patch SHA-256 is `f1b515673dc8aee3973dfa6e78328ecd9b656a04b9ce456c1d0e243053d5895b`.
+
+The four New Game biographies are registered. The ledger now credits 26,319 reviews. The revisions preserve Rafael's first-time recommendation, Hodram's privateer fleet and renewed Swedish independence, Lil's partnership with Camille, and Maria's defense against wokou raids. The original chooser still uses three rows. The compiler places a blank before an LF when needed to keep the next row's first letter in place.
+
+All four biographies passed complete native glyph and bounds checks. Seven emulator selections covered forward and reverse switching and the original Back transition with the existing system unlock fixture. The candidate passed its own cold boot through Maria's startup, 24 protected name getters, 78 release checks and 30 targeted repository tests. The release carries forward the Market fix and ASCII right bounds. [Gameplay verification](verification/captain_chooser_gameplay_verification.json) · [Registered review](verification/registered_review.json)

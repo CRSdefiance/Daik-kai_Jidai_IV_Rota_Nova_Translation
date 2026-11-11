@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-11
 
+The 24 shipyard and fleet setup notices are registered. The ledger now credits 26,357 reviews.
+
+Continue from [the registered Shipyard and fleet setup notices](editorial_shipyard_fleet_setup_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The 14 system and equipment notices are registered. The ledger now credits 26,333 reviews.
+
+Continue from [the registered system and equipment notices](editorial_equipment_system_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The four New Game biographies are registered. The ledger now credits 26,319 reviews.
+
+Continue from [the registered New Game biographies](editorial_captain_biographies_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 Sera’s four room-assignment reactions are registered. The ledger now credits 26,315 reviews.
 
 Continue from [the registered Sera assignment checkpoint](editorial_sera_assignment_registered_20261111.md).

@@ -1,0 +1,2086 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_315",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 315,
+      "source_reference": {
+        "block": 4,
+        "offset": 3128,
+        "copy_end": 3156,
+        "bytes": 28,
+        "record_index": 45,
+        "table_offset": 1317766,
+        "start_in_record": 29
+      },
+      "source_hex": "90ed93ac928682cd9085957695d290ac82c582ab82dc82b982f18149",
+      "clean_Japanese": "戦闘中は水夫編成できません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 2984,
+        "copy_end": 3035,
+        "bytes": 50,
+        "record_index": 65,
+        "table_offset": 1317766,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752063616e2774206368616e6765207361696c6f722061737369676e6d656e747320647572696e6720626174746c6521",
+      "current_English": "You can't change sailor assignments during battle!",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 34113288,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34113272,
+          "exact_hex": "0c0090e5010050e30200001ae8019fe5ea2fffeb090000ea0000a0e3",
+          "instructions": [
+            "020886F8 ldr r0, [r0, #0xc]",
+            "020886FC cmp r0, #1",
+            "02088700 bne #0x2088710",
+            "02088704 ldr r0, [pc, #0x1e8]",
+            "02088708 bl #0x20546b8",
+            "0208870C b #0x2088738",
+            "02088710 mov r0, #0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You can't change sailor assignments during battle!",
+      "source_meaning": "The player cannot reorganize the sailor assignments while in battle.",
+      "context": "Combat blocks crew assignment changes before applying any selection.",
+      "localization_note": "The current refusal names the blocked action and gives its cause. The short, emphatic wording suits the system notice.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_316",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 316,
+      "source_reference": {
+        "block": 4,
+        "offset": 3156,
+        "copy_end": 3192,
+        "bytes": 36,
+        "record_index": 45,
+        "table_offset": 1317768,
+        "start_in_record": 57
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f0835a815b837582b582dc82b782a98148",
+      "clean_Japanese": "エンディングデータをセーブしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3035,
+        "copy_end": 3057,
+        "bytes": 21,
+        "record_index": 66,
+        "table_offset": 1317768,
+        "start_in_record": 0
+      },
+      "current_hex": "536176652074686520656e64696e6720646174613f",
+      "current_English": "Save the ending data?",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33809144,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33809128,
+          "exact_hex": "50009fe500108de2ff4402eb4f0fa0e3db5800eb000050e30200000a",
+          "instructions": [
+            "0203E2E8 ldr r0, [pc, #0x50]",
+            "0203E2EC add r1, sp, #0",
+            "0203E2F0 bl #0x20cf6f4",
+            "0203E2F4 mov r0, #0x13c",
+            "0203E2F8 bl #0x205466c",
+            "0203E2FC cmp r0, #0",
+            "0203E300 beq #0x203e310"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Save the ending data?",
+      "source_meaning": "The game asks whether to save the ending data.",
+      "context": "The original ending routine asks this after displaying the ending. Yes invokes the ending-data save; No skips it.",
+      "localization_note": "Keep the direct Yes/No question and the distinction between ending data and ordinary saved progress. The DS prompt has no memory-card destination.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_317",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 317,
+      "source_reference": {
+        "block": 4,
+        "offset": 3192,
+        "copy_end": 3224,
+        "bytes": 32,
+        "record_index": 45,
+        "table_offset": 1317770,
+        "start_in_record": 93
+      },
+      "source_hex": "976d8fe382c582cd91448ef1919c82cc95cf8d5882cd82c582ab82dc82b982f1",
+      "clean_Japanese": "洋上では船首像の変更はできません",
+      "current_reference": {
+        "block": 4,
+        "offset": 3057,
+        "copy_end": 3095,
+        "bytes": 37,
+        "record_index": 67,
+        "table_offset": 1317770,
+        "start_in_record": 0
+      },
+      "current_hex": "4174207365612c20796f752063616e2774206368616e67652066696775726568656164732e",
+      "current_English": "At sea, you can't change figureheads.",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33862220,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33862204,
+          "exact_hex": "04d08d120100a0130080bd180c009fe5192500eb0000a0e304d08de2",
+          "instructions": [
+            "0204B23C addne sp, sp, #4",
+            "0204B240 movne r0, #1",
+            "0204B244 ldmne sp!, {pc}",
+            "0204B248 ldr r0, [pc, #0xc]",
+            "0204B24C bl #0x20546b8",
+            "0204B250 mov r0, #0",
+            "0204B254 add sp, sp, #4"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You can't change figureheads at sea.",
+      "source_meaning": "A ship's figurehead cannot be changed while at sea.",
+      "context": "The equipment command is refused at sea before any figurehead swap.",
+      "localization_note": "Put the condition after the action so the warning reads naturally. Figureheads stays consistent with the equipment interface.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_318",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 318,
+      "source_reference": {
+        "block": 4,
+        "offset": 3224,
+        "copy_end": 3312,
+        "bytes": 85,
+        "record_index": 45,
+        "table_offset": 1317772,
+        "start_in_record": 125
+      },
+      "source_hex": "82b182cc8366815b835e82cd8374834683418366815b835e82c582b70a8351815b838082f09286926682b782e982c60a8366815b835e82cd8eb882ed82ea82dc82b782aa0a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "このデータはフェアデータです\nゲームを中断すると\nデータは失われますが\nよろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3095,
+        "copy_end": 3175,
+        "bytes": 79,
+        "record_index": 68,
+        "table_offset": 1317772,
+        "start_in_record": 0
+      },
+      "current_hex": "546869732069732065786869626974696f6e20646174612e2082686620796f752071756974207468652067616d652c2074686520646174612077696c6c206265206c6f73742e2050726f636565643f",
+      "current_English": "This is exhibition data. Ｉf you quit the game, the data will be lost. Proceed?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "This is exhibition data. If you quit, you'll lose it. Quit anyway?",
+      "source_meaning": "This is fair or exhibition data. Suspending the game will lose it, and the player must confirm.",
+      "context": "The source describes a special data type and data-loss confirmation. Its relationship to the active DS Quit prompt remains unproven.",
+      "localization_note": "Make the consequence and choice explicit and replace the full-width I. Keep exhibition data as the provisional source term until its mode is bound.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_319",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 319,
+      "source_reference": {
+        "block": 4,
+        "offset": 3312,
+        "copy_end": 3348,
+        "bytes": 35,
+        "record_index": 46,
+        "table_offset": 1317774,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b838082f09286926682b582dc82b70a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "ゲームを中断します\nよろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3175,
+        "copy_end": 3211,
+        "bytes": 35,
+        "record_index": 69,
+        "table_offset": 1317774,
+        "start_in_record": 0
+      },
+      "current_hex": "517569742067616d653f0a202020202020202020202020202020202020202020202020",
+      "current_English": "Quit game?\n                        ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33815596,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33815580,
+          "exact_hex": "010051e304d08d120080bd180c009fe58e5200eb04d08de20080bde8",
+          "instructions": [
+            "0203FC1C cmp r1, #1",
+            "0203FC20 addne sp, sp, #4",
+            "0203FC24 ldmne sp!, {pc}",
+            "0203FC28 ldr r0, [pc, #0xc]",
+            "0203FC2C bl #0x205466c",
+            "0203FC30 add sp, sp, #4",
+            "0203FC34 ldm sp!, {pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Quit the game?",
+      "source_meaning": "The game asks the player to confirm interrupting the current game.",
+      "context": "The in-game quit helper asks for confirmation when the original active-game flag is set. Its result belongs to the original caller.",
+      "localization_note": "Use the normal American English article. The ordinary quit prompt carries no claim about saving or special exhibition data.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_320",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 320,
+      "source_reference": {
+        "block": 4,
+        "offset": 3348,
+        "copy_end": 3368,
+        "bytes": 20,
+        "record_index": 47,
+        "table_offset": 1317776,
+        "start_in_record": 0
+      },
+      "source_hex": "924e82c9919594f582b382b982dc82b782a98148",
+      "clean_Japanese": "誰に装備させますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3211,
+        "copy_end": 3232,
+        "bytes": 20,
+        "record_index": 70,
+        "table_offset": 1317776,
+        "start_in_record": 0
+      },
+      "current_hex": "202057686f2077696c6c2065717569702069743f",
+      "current_English": "  Who will equip it?",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33866660,
+          "target": 33903244,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33866644,
+          "exact_hex": "0080a0e1000058e3090000da050da0e3b82300eb0520a0e100208de5",
+          "instructions": [
+            "0204C394 mov r8, r0",
+            "0204C398 cmp r8, #0",
+            "0204C39C ble #0x204c3c8",
+            "0204C3A0 mov r0, #0x140",
+            "0204C3A4 bl #0x205528c",
+            "0204C3A8 mov r2, r5",
+            "0204C3AC str r2, [sp]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Who should equip it?",
+      "source_meaning": "The game asks which crew member should equip the selected item.",
+      "context": "The original chooser obtains the prompt with the direct COMMON getter and passes it to the crew selection list when a recipient has yet to be selected.",
+      "localization_note": "Use an open question directed at the player. The two old leading spaces are handled by the chooser layout review.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_321",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 321,
+      "source_reference": {
+        "block": 4,
+        "offset": 3368,
+        "copy_end": 3392,
+        "bytes": 21,
+        "record_index": 47,
+        "table_offset": 1317778,
+        "start_in_record": 20
+      },
+      "source_hex": "257382aa0a257382f0919594f582b582dc82b582bd",
+      "clean_Japanese": "%sが\n%sを装備しました",
+      "current_reference": {
+        "block": 4,
+        "offset": 3232,
+        "copy_end": 3254,
+        "bytes": 21,
+        "record_index": 71,
+        "table_offset": 1317778,
+        "start_in_record": 0
+      },
+      "current_hex": "202025732065717569707065642025732e20202020",
+      "current_English": "  %s equipped %s.    ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33732452,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33732436,
+          "exact_hex": "31ff2fe10510a0e10020a0e1d0019fe5d3a300eb0cd08de20100a0e3",
+          "instructions": [
+            "0202B754 blx r1",
+            "0202B758 mov r1, r5",
+            "0202B75C mov r2, r0",
+            "0202B760 ldr r0, [pc, #0x1d0]",
+            "0202B764 bl #0x20546b8",
+            "0202B768 add sp, sp, #0xc",
+            "0202B76C mov r0, #1"
+          ]
+        },
+        {
+          "call": 33866884,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33866868,
+          "exact_hex": "31ff2fe10020a0e104019fe50510a0e18b2000eb0150a0e3380000ea",
+          "instructions": [
+            "0204C474 blx r1",
+            "0204C478 mov r2, r0",
+            "0204C47C ldr r0, [pc, #0x104]",
+            "0204C480 mov r1, r5",
+            "0204C484 bl #0x20546b8",
+            "0204C488 mov r5, #1",
+            "0204C48C b #0x204c574"
+          ]
+        },
+        {
+          "call": 33867116,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33867100,
+          "exact_hex": "31ff2fe10020a0e11c009fe50510a0e1512000eb0150a0e30500a0e1",
+          "instructions": [
+            "0204C55C blx r1",
+            "0204C560 mov r2, r0",
+            "0204C564 ldr r0, [pc, #0x1c]",
+            "0204C568 mov r1, r5",
+            "0204C56C bl #0x20546b8",
+            "0204C570 mov r5, #1",
+            "0204C574 mov r0, r5"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "%s equipped %s.",
+      "source_meaning": "The first named person equipped the second named item.",
+      "context": "A result notice after an equipment operation. Three original callers pass the actor name followed by the equipment name.",
+      "localization_note": "The current actor-then-item wording is clear and matches the other success notices. Its current padding and the registered equipment wrapper belong to display review.",
+      "native_substitution_count": 2,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_322",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 322,
+      "source_reference": {
+        "block": 4,
+        "offset": 3392,
+        "copy_end": 3408,
+        "bytes": 16,
+        "record_index": 48,
+        "table_offset": 1317780,
+        "start_in_record": 2
+      },
+      "source_hex": "257382f082cd82b882b582dc82b582bd",
+      "clean_Japanese": "%sをはずしました",
+      "current_reference": {
+        "block": 4,
+        "offset": 3254,
+        "copy_end": 3271,
+        "bytes": 16,
+        "record_index": 72,
+        "table_offset": 1317780,
+        "start_in_record": 0
+      },
+      "current_hex": "25732072656d6f7665642e2020202020",
+      "current_English": "%s removed.     ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33817700,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33817684,
+          "exact_hex": "081091e531ff2fe10010a0e1a0009fe5935000eb510fa0e3915000eb",
+          "instructions": [
+            "02040454 ldr r1, [r1, #8]",
+            "02040458 blx r1",
+            "0204045C mov r1, r0",
+            "02040460 ldr r0, [pc, #0xa0]",
+            "02040464 bl #0x20546b8",
+            "02040468 mov r0, #0x144",
+            "0204046C bl #0x20546b8"
+          ]
+        },
+        {
+          "call": 33817788,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33817772,
+          "exact_hex": "081091e531ff2fe10010a0e148009fe57d5000eb0c008de20510a0e1",
+          "instructions": [
+            "020404AC ldr r1, [r1, #8]",
+            "020404B0 blx r1",
+            "020404B4 mov r1, r0",
+            "020404B8 ldr r0, [pc, #0x48]",
+            "020404BC bl #0x20546b8",
+            "020404C0 add r0, sp, #0xc",
+            "020404C4 mov r1, r5"
+          ]
+        },
+        {
+          "call": 33818084,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33818068,
+          "exact_hex": "081091e531ff2fe10010a0e118009fe5335000eb00008de2ee2700eb",
+          "instructions": [
+            "020405D4 ldr r1, [r1, #8]",
+            "020405D8 blx r1",
+            "020405DC mov r1, r0",
+            "020405E0 ldr r0, [pc, #0x18]",
+            "020405E4 bl #0x20546b8",
+            "020405E8 add r0, sp, #0",
+            "020405EC bl #0x204a5ac"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Removed %s.",
+      "source_meaning": "The named item was removed.",
+      "context": "The removal path supplies the figurehead name. For the Demon Figurehead, this notice precedes a separate breakage notice after the player confirms.",
+      "localization_note": "Use a concise system result in the same voice as the other equipment messages. The one source argument remains the removed item.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_323",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 323,
+      "source_reference": {
+        "block": 4,
+        "offset": 3408,
+        "copy_end": 3432,
+        "bytes": 22,
+        "record_index": 48,
+        "table_offset": 1317782,
+        "start_in_record": 18
+      },
+      "source_hex": "82c782cc914482c9919594f582b582dc82b782a98148",
+      "clean_Japanese": "どの船に装備しますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3271,
+        "copy_end": 3294,
+        "bytes": 22,
+        "record_index": 73,
+        "table_offset": 1317782,
+        "start_in_record": 0
+      },
+      "current_hex": "2020457175697020776869636820736869703f202020",
+      "current_English": "  Equip which ship?   ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33866352,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33866336,
+          "exact_hex": "12f9ffeb0b0050e33300000ad4009fe5102100eb0500a0e30710a0e1",
+          "instructions": [
+            "0204C260 bl #0x204a6b0",
+            "0204C264 cmp r0, #0xb",
+            "0204C268 beq #0x204c33c",
+            "0204C26C ldr r0, [pc, #0xd4]",
+            "0204C270 bl #0x20546b8",
+            "0204C274 mov r0, #5",
+            "0204C278 mov r1, r7"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Which ship should it go on?",
+      "source_meaning": "The game asks which ship should receive the selected equipment.",
+      "context": "The player is choosing a ship for the selected figurehead. The ship selection precedes the named equipment result.",
+      "localization_note": "Replace the inverted menu shorthand with the natural follow-up question. The selected object is already in context.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_324",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 324,
+      "source_reference": {
+        "block": 4,
+        "offset": 3432,
+        "copy_end": 3464,
+        "bytes": 30,
+        "record_index": 49,
+        "table_offset": 1317784,
+        "start_in_record": 1
+      },
+      "source_hex": "88ab968282cc919c82cd89f382ea82c482b582dc82a282dc82b582bd8149",
+      "clean_Japanese": "悪魔の像は壊れてしまいました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3294,
+        "copy_end": 3325,
+        "bytes": 30,
+        "record_index": 74,
+        "table_offset": 1317784,
+        "start_in_record": 0
+      },
+      "current_hex": "2054686520446576696c205374617475652062726f6b6521202020202020",
+      "current_English": " The Devil Statue broke!      ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33817708,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33817692,
+          "exact_hex": "0010a0e1a0009fe5935000eb510fa0e3915000eb00008de20610a0e3",
+          "instructions": [
+            "0204045C mov r1, r0",
+            "02040460 ldr r0, [pc, #0xa0]",
+            "02040464 bl #0x20546b8",
+            "02040468 mov r0, #0x144",
+            "0204046C bl #0x20546b8",
+            "02040470 add r0, sp, #0",
+            "02040474 mov r1, #6"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "The Demon Figurehead broke!",
+      "source_meaning": "The figurehead called Akuma no Zō broke as a result of the removal.",
+      "context": "This result follows the removal notice only on the original item 121 branch when the player chooses to force it off.",
+      "localization_note": "Use Demon Figurehead, the current native item 121 name, in the same short, emphatic result.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_325",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 325,
+      "source_reference": {
+        "block": 4,
+        "offset": 3464,
+        "copy_end": 3520,
+        "bytes": 55,
+        "record_index": 50,
+        "table_offset": 1317786,
+        "start_in_record": 1
+      },
+      "source_hex": "88ab968282cc919c82aa82c882a982c882a982cd82b882ea82dc82b982f10a816396b3979d96ee979d82cd82b882b582dc82b782a98148",
+      "clean_Japanese": "悪魔の像がなかなかはずれません\n…無理矢理はずしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3325,
+        "copy_end": 3381,
+        "bytes": 55,
+        "record_index": 75,
+        "table_offset": 1317786,
+        "start_in_record": 0
+      },
+      "current_hex": "2054686520446576696c205374617475652077696c6c206e6f740a2020636f6d65206f66662e0a2020466f726365206974206f66663f20",
+      "current_English": " The Devil Statue will not\n  come off.\n  Force it off? ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33817664,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33817648,
+          "exact_hex": "790055e30050a0e31900001ac0009fe5895000eb000050e32700000a",
+          "instructions": [
+            "02040430 cmp r5, #0x79",
+            "02040434 mov r5, #0",
+            "02040438 bne #0x20404a4",
+            "0204043C ldr r0, [pc, #0xc0]",
+            "02040440 bl #0x205466c",
+            "02040444 cmp r0, #0",
+            "02040448 beq #0x20404ec"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "The Demon Figurehead won't come off. Force it off?",
+      "source_meaning": "The figurehead called Akuma no Zō is difficult to remove. The game asks whether to force it off.",
+      "context": "The player has selected item 121 for removal. No cancels before removal. Yes continues into the separate removal and breakage messages.",
+      "localization_note": "Use the catalog name Demon Figurehead and a natural contraction. Leave the later consequence to the follow-up notices.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_326",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 326,
+      "source_reference": {
+        "block": 4,
+        "offset": 3520,
+        "copy_end": 3544,
+        "bytes": 24,
+        "record_index": 51,
+        "table_offset": 1317788,
+        "start_in_record": 0
+      },
+      "source_hex": "834183438365838082f08e9d82c182c482a282dc82b982f1",
+      "clean_Japanese": "アイテムを持っていません",
+      "current_reference": {
+        "block": 4,
+        "offset": 3381,
+        "copy_end": 3407,
+        "bytes": 25,
+        "record_index": 76,
+        "table_offset": 1317788,
+        "start_in_record": 0
+      },
+      "current_hex": "596f7520646f6e2774206861766520616e79206974656d732e",
+      "current_English": "You don't have any items.",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33816372,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33816356,
+          "exact_hex": "0040a0e1000054e3020000ca2c009fe5df5100eb050000ea10008de2",
+          "instructions": [
+            "0203FF24 mov r4, r0",
+            "0203FF28 cmp r4, #0",
+            "0203FF2C bgt #0x203ff3c",
+            "0203FF30 ldr r0, [pc, #0x2c]",
+            "0203FF34 bl #0x20546b8",
+            "0203FF38 b #0x203ff54",
+            "0203FF3C add r0, sp, #0x10"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You don't have any items.",
+      "source_meaning": "The player has no items in the relevant inventory.",
+      "context": "The item-list command receives a zero count before opening the ordinary inventory list.",
+      "localization_note": "Keep this clear statement of an empty inventory. It is distinct from having no eligible equipment.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_327",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 327,
+      "source_reference": {
+        "block": 4,
+        "offset": 3544,
+        "copy_end": 3568,
+        "bytes": 21,
+        "record_index": 51,
+        "table_offset": 1317790,
+        "start_in_record": 24
+      },
+      "source_hex": "257382aa0a257382f0919594f582b582dc82b582bd",
+      "clean_Japanese": "%sが\n%sを装備しました",
+      "current_reference": {
+        "block": 4,
+        "offset": 3407,
+        "copy_end": 3423,
+        "bytes": 15,
+        "record_index": 77,
+        "table_offset": 1317790,
+        "start_in_record": 0
+      },
+      "current_hex": "25732065717569707065642025732e",
+      "current_English": "%s equipped %s.",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33866508,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33866492,
+          "exact_hex": "31ff2fe10020a0e140009fe50410a0e1e92000eb0610a0e100008de2",
+          "instructions": [
+            "0204C2FC blx r1",
+            "0204C300 mov r2, r0",
+            "0204C304 ldr r0, [pc, #0x40]",
+            "0204C308 mov r1, r4",
+            "0204C30C bl #0x20546b8",
+            "0204C310 mov r1, r6",
+            "0204C314 add r0, sp, #0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "%s equipped %s.",
+      "source_meaning": "The first named recipient equipped the second named item.",
+      "context": "This success notice follows the ship-target equipment path. The original caller supplies the recipient first and the equipment item second.",
+      "localization_note": "The current wording preserves the argument order and matches the analogous crew result. Keep its separate selector and wrapping path.",
+      "native_substitution_count": 2,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_328",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 328,
+      "source_reference": {
+        "block": 4,
+        "offset": 3568,
+        "copy_end": 3600,
+        "bytes": 30,
+        "record_index": 52,
+        "table_offset": 1317792,
+        "start_in_record": 2
+      },
+      "source_hex": "919594f582c582ab82e9834183438365838082aa82a082e882dc82b982f1",
+      "clean_Japanese": "装備できるアイテムがありません",
+      "current_reference": {
+        "block": 4,
+        "offset": 3423,
+        "copy_end": 3454,
+        "bytes": 30,
+        "record_index": 78,
+        "table_offset": 1317792,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752068617665206e6f2065717569707061626c65206974656d732e20",
+      "current_English": "You have no equippable items. ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 34076528,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34076512,
+          "exact_hex": "010050e3b1ffff0a010000ea520fa0e3d053ffeb00005be3e7df8d02",
+          "instructions": [
+            "0207F760 cmp r0, #1",
+            "0207F764 beq #0x207f630",
+            "0207F768 b #0x207f774",
+            "0207F76C mov r0, #0x148",
+            "0207F770 bl #0x20546b8",
+            "0207F774 cmp fp, #0",
+            "0207F778 addeq sp, sp, #0x39c"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You have nothing you can equip.",
+      "source_meaning": "The player has no items that can be equipped.",
+      "context": "The equipment list is empty after filtering for eligible items. This is a different branch from the ordinary inventory count.",
+      "localization_note": "Use a natural phrase in place of equippable and keep the eligibility distinction.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_329",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 329,
+      "source_reference": {
+        "block": 4,
+        "offset": 3600,
+        "copy_end": 3624,
+        "bytes": 21,
+        "record_index": 53,
+        "table_offset": 1317794,
+        "start_in_record": 1
+      },
+      "source_hex": "257382aa0a257382f082cd82b882b582dc82b582bd",
+      "clean_Japanese": "%sが\n%sをはずしました",
+      "current_reference": {
+        "block": 4,
+        "offset": 3454,
+        "copy_end": 3476,
+        "bytes": 21,
+        "record_index": 79,
+        "table_offset": 1317794,
+        "start_in_record": 0
+      },
+      "current_hex": "2025732072656d6f7665640a202025732e20202020",
+      "current_English": " %s removed\n  %s.    ",
+      "already_credited": false,
+      "native_callers": [
+        {
+          "call": 33818052,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33818036,
+          "exact_hex": "31ff2fe10020a0e138009fe50510a0e13b5000eb060000ea0400a0e1",
+          "instructions": [
+            "020405B4 blx r1",
+            "020405B8 mov r2, r0",
+            "020405BC ldr r0, [pc, #0x38]",
+            "020405C0 mov r1, r5",
+            "020405C4 bl #0x20546b8",
+            "020405C8 b #0x20405e8",
+            "020405CC mov r0, r4"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "%s removed %s.",
+      "source_meaning": "The first named recipient removed the second named item.",
+      "context": "The ordinary removal result follows the player choosing an equipped item. The native call supplies the owner name, then the item name.",
+      "localization_note": "Keep the actor-then-item construction and the result tense. The current break needs to be generated after seeing the actual name lengths.",
+      "native_substitution_count": 2,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "legacy_setup_and_save_records": [
+    {
+      "id": "COMMON_MESSAGE_98",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 98,
+      "source_reference": {
+        "block": 0,
+        "offset": 3460,
+        "copy_end": 3492,
+        "bytes": 32,
+        "record_index": 74,
+        "table_offset": 1317332,
+        "start_in_record": 1
+      },
+      "source_hex": "93fc8ee88dcf82dd82cc834183438365838082aa82a082e882dc82b982f18142",
+      "clean_Japanese": "入手済みのアイテムがありません。",
+      "current_reference": {
+        "block": 0,
+        "offset": 3917,
+        "copy_end": 3949,
+        "bytes": 32,
+        "record_index": 104,
+        "table_offset": 1317332,
+        "start_in_record": 0
+      },
+      "current_hex": "596f7520686176656e277420616371756972656420616e79206974656d732e20",
+      "current_English": "You haven't acquired any items. ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The clean catalogue distinguishes no acquired items from no discovered ruins. DS notices 326 and 328 are separate inventory and equipment conditions.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "You haven't acquired any items yet."
+    },
+    {
+      "id": "COMMON_MESSAGE_99",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 99,
+      "source_reference": {
+        "block": 0,
+        "offset": 3492,
+        "copy_end": 3520,
+        "bytes": 28,
+        "record_index": 74,
+        "table_offset": 1317334,
+        "start_in_record": 33
+      },
+      "source_hex": "94ad8ca98dcf82dd82cc88e290d582aa82a082e882dc82b982f18142",
+      "clean_Japanese": "発見済みの遺跡がありません。",
+      "current_reference": {
+        "block": 0,
+        "offset": 3949,
+        "copy_end": 3983,
+        "bytes": 34,
+        "record_index": 104,
+        "table_offset": 1317334,
+        "start_in_record": 32
+      },
+      "current_hex": "596f7520686176656e277420646973636f766572656420616e79207275696e732e20",
+      "current_English": "You haven't discovered any ruins. ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source concerns discovered ruins. A caller for this particular message ID is still needed.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "You haven't discovered any ruins yet."
+    },
+    {
+      "id": "COMMON_MESSAGE_100",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 100,
+      "source_reference": {
+        "block": 0,
+        "offset": 3520,
+        "copy_end": 3556,
+        "bytes": 34,
+        "record_index": 74,
+        "table_offset": 1317336,
+        "start_in_record": 61
+      },
+      "source_hex": "93be88d382c88b5a945c82f0825282c2914991f082b582c482ad82be82b382a28142",
+      "clean_Japanese": "得意な技能を３つ選択してください。",
+      "current_reference": {
+        "block": 0,
+        "offset": 3983,
+        "copy_end": 4019,
+        "bytes": 34,
+        "record_index": 104,
+        "table_offset": 1317336,
+        "start_in_record": 66
+      },
+      "current_hex": "43686f6f736520746872656520736b696c6c7320796f7520657863656c2061742e20",
+      "current_English": "Choose three skills you excel at. ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source instructs the player to select exactly three strengths. The actual DS chooser must be checked before assigning this prompt to it.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Choose three skills to specialize in."
+    },
+    {
+      "id": "COMMON_MESSAGE_101",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 101,
+      "source_reference": {
+        "block": 0,
+        "offset": 3556,
+        "copy_end": 3588,
+        "bytes": 29,
+        "record_index": 75,
+        "table_offset": 1317338,
+        "start_in_record": 1
+      },
+      "source_hex": "2573814125738141257382c50a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "%s、%s、%sで\nよろしいですか？",
+      "current_reference": {
+        "block": 0,
+        "offset": 4019,
+        "copy_end": 4041,
+        "bytes": 19,
+        "record_index": 105,
+        "table_offset": 1317338,
+        "start_in_record": 1
+      },
+      "current_hex": "25732c2025732c2025732e0a20204f6b61793f",
+      "current_English": "%s, %s, %s.\n  Okay?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source confirms three selected skills in order. Any future change must preserve all three string substitutions.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Are you happy with %s, %s, and %s?"
+    },
+    {
+      "id": "COMMON_MESSAGE_102",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 102,
+      "source_reference": {
+        "block": 0,
+        "offset": 3588,
+        "copy_end": 3628,
+        "bytes": 37,
+        "record_index": 76,
+        "table_offset": 1317340,
+        "start_in_record": 2
+      },
+      "source_hex": "82618266826c82c68cf889ca89b982cc89b997ca0a82f090dd92e882c582ab82dc82b78142",
+      "clean_Japanese": "ＢＧＭと効果音の音量\nを設定できます。",
+      "current_reference": {
+        "block": 0,
+        "offset": 4041,
+        "copy_end": 4081,
+        "bytes": 37,
+        "record_index": 106,
+        "table_offset": 1317340,
+        "start_in_record": 2
+      },
+      "current_hex": "5365742042474d20616e6420736f756e640a202065666665637420766f6c756d652e202020",
+      "current_English": "Set BGM and sound\n  effect volume.   ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source describes music and sound-effects volume. This is distinct from the DS Sailing Help and Reports prompts with independent ARM9 literals.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Adjust the volume of the music and sound effects."
+    },
+    {
+      "id": "COMMON_MESSAGE_103",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 103,
+      "source_reference": {
+        "block": 0,
+        "offset": 3628,
+        "copy_end": 3656,
+        "bytes": 26,
+        "record_index": 77,
+        "table_offset": 1317342,
+        "start_in_record": 2
+      },
+      "source_hex": "926190b693fa82f093fc97cd82b582c482ad82be82b382a28142",
+      "clean_Japanese": "誕生日を入力してください。",
+      "current_reference": {
+        "block": 0,
+        "offset": 4081,
+        "copy_end": 4103,
+        "bytes": 20,
+        "record_index": 107,
+        "table_offset": 1317342,
+        "start_in_record": 2
+      },
+      "current_hex": "456e74657220796f75722062697274686461792e",
+      "current_English": "Enter your birthday.",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source asks for a birthday. A birthday field on screen alone does not establish that it consumes this COMMON message.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Enter your birthday."
+    },
+    {
+      "id": "COMMON_MESSAGE_104",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 104,
+      "source_reference": {
+        "block": 0,
+        "offset": 3656,
+        "copy_end": 3772,
+        "bytes": 113,
+        "record_index": 78,
+        "table_offset": 1317344,
+        "start_in_record": 1
+      },
+      "source_hex": "91448fe682e882c99499915282c693b282ea82e90a837c838b8367834b838b82cc8fad944e81420a9746906c82c982bb82bb82cc82a982b382ea82c40a8a4382c98f6f82e982b182c682c982c882e981420a8f8982df82c48376838c834382b782e995fb82c90a82a882b782b782df8142",
+      "clean_Japanese": "船乗りに漠然と憧れる\nポルトガルの少年。\n友人にそそのかされて\n海に出ることになる。\n初めてプレイする方に\nおすすめ。",
+      "current_reference": {
+        "block": 0,
+        "offset": 4103,
+        "copy_end": 4161,
+        "bytes": 55,
+        "record_index": 108,
+        "table_offset": 1317344,
+        "start_in_record": 1
+      },
+      "current_hex": "41646d6972616c2c2070656f706c652061726520676174686572696e6720696e20746865207371756172652e0a200a200a200a200a2020",
+      "current_English": "Admiral, people are gathering in the square.\n \n \n \n \n  ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The separate ARM9 chooser description for Rafael has been localized. This legacy COMMON copy currently displays unrelated square text if read.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "A Portuguese boy who dreams of life at sea. A friend talks him into setting sail. Recommended for first-time players."
+    },
+    {
+      "id": "COMMON_MESSAGE_105",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 105,
+      "source_reference": {
+        "block": 0,
+        "offset": 3772,
+        "copy_end": 3888,
+        "bytes": 115,
+        "record_index": 79,
+        "table_offset": 1317346,
+        "start_in_record": 2
+      },
+      "source_hex": "8dc493c697a782f089ca82bd82b582bd0a835883458346815b8366839382cc92f193c281420a8a438c5282c682cd96bc82ce82a982e882cc0a8e8497a98acd91e082f097a682a282e981420a8ea98d9182cc8acd91e082f090a28a458dc58bad0a82c982b782d782ad8a8893ae82b782e98142",
+      "clean_Japanese": "再独立を果たした\nスウェーデンの提督。\n海軍とは名ばかりの\n私掠艦隊を率いる。\n自国の艦隊を世界最強\nにすべく活動する。",
+      "current_reference": {
+        "block": 0,
+        "offset": 4161,
+        "copy_end": 4217,
+        "bytes": 55,
+        "record_index": 109,
+        "table_offset": 1317346,
+        "start_in_record": 2
+      },
+      "current_hex": "41646d6972616c2c2070656f706c652061726520676174686572696e6720696e20746865207371756172652e0a200a200a200a200a2020",
+      "current_English": "Admiral, people are gathering in the square.\n \n \n \n \n  ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The separate ARM9 chooser description for Hodram has been localized. This legacy COMMON copy currently contains unrelated square text.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "An admiral from newly independent Sweden. He leads a privateer fleet that's a navy in name only. He aims to make Sweden's fleet the strongest in the world."
+    },
+    {
+      "id": "COMMON_MESSAGE_106",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 106,
+      "source_reference": {
+        "block": 0,
+        "offset": 3888,
+        "copy_end": 3988,
+        "bytes": 99,
+        "record_index": 80,
+        "table_offset": 1317348,
+        "start_in_record": 0
+      },
+      "source_hex": "8fa48db082bd82ad82dc82b582a20a834983898393835f82cc8fad8f9781420a976382c882b682dd82cc918a965f834a837e838b0a82c682c682e082c981410a88ea8af8976782b082e682a482c60a90a28a4582cc8a4382c994f282d18f6f82b78142",
+      "clean_Japanese": "商魂たくましい\nオランダの少女。\n幼なじみの相棒カミル\nとともに、\n一旗揚げようと\n世界の海に飛び出す。",
+      "current_reference": {
+        "block": 0,
+        "offset": 4217,
+        "copy_end": 4273,
+        "bytes": 55,
+        "record_index": 110,
+        "table_offset": 1317348,
+        "start_in_record": 0
+      },
+      "current_hex": "41646d6972616c2c2070656f706c652061726520676174686572696e6720696e20746865207371756172652e0a200a200a200a200a2020",
+      "current_English": "Admiral, people are gathering in the square.\n \n \n \n \n  ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The separate ARM9 chooser description for Lil has been localized. This legacy COMMON copy currently contains unrelated square text.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "A Dutch girl with a head for business. She sets sail to make her mark with her childhood friend and partner, Camille."
+    },
+    {
+      "id": "COMMON_MESSAGE_107",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 107,
+      "source_reference": {
+        "block": 1,
+        "offset": 0,
+        "copy_end": 116,
+        "bytes": 113,
+        "record_index": 0,
+        "table_offset": 1317350,
+        "start_in_record": 0
+      },
+      "source_hex": "98609b8482c98bea82b582df82e782ea82e90a906c815882f08ee782e982bd82df82c90a8d91964082c582a082e98dbd8d9190ad8df482f00a82a082a682c496b38e8b82b581410a8e8490dd8acd91e082f097a682a282c490ed82a40a96be816982dd82f1816a82cc8f9792f193c28142",
+      "clean_Japanese": "倭寇に苦しめられる\n人々を守るために\n国法である鎖国政策を\nあえて無視し、\n私設艦隊を率いて戦う\n明（みん）の女提督。",
+      "current_reference": {
+        "block": 1,
+        "offset": 0,
+        "copy_end": 116,
+        "bytes": 113,
+        "record_index": 0,
+        "table_offset": 1317350,
+        "start_in_record": 0
+      },
+      "current_hex": "5468652067616d652063616e6e6f74207361766520686572652e20537461727420616e797761793f0a200a200a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_English": "The game cannot save here. Start anyway?\n \n \n \n \n                                                                ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The separate ARM9 chooser description for Maria has been localized. This legacy COMMON copy currently contains unrelated save text.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "A Ming admiral who defies her country's isolation policy and leads a private fleet to protect people from wokou pirates."
+    },
+    {
+      "id": "COMMON_MESSAGE_108",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 108,
+      "source_reference": {
+        "block": 1,
+        "offset": 116,
+        "copy_end": 220,
+        "bytes": 104,
+        "record_index": 1,
+        "table_offset": 1317352,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームデータをセーブする空きブロックが\n４つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 116,
+        "copy_end": 197,
+        "bytes": 81,
+        "record_index": 1,
+        "table_offset": 1317352,
+        "start_in_record": 2
+      },
+      "current_hex": "47616d65207361766573206e65656420666f7572206672656520626c6f636b732e20596f752063616e27742073617665207269676874206e6f772e20537461727420706c6179696e6720616e797761793f",
+      "current_English": "Game saves need four free blocks. You can't save right now. Start playing anyway?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "This start-anyway prompt specifies four free blocks for game data. Keep its source branch distinct from system data and combined data.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Saving game data requires four free blocks. You won't be able to save as things stand. Start the game anyway?"
+    },
+    {
+      "id": "COMMON_MESSAGE_109",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 109,
+      "source_reference": {
+        "block": 1,
+        "offset": 220,
+        "copy_end": 328,
+        "bytes": 106,
+        "record_index": 1,
+        "table_offset": 1317354,
+        "start_in_record": 106
+      },
+      "source_hex": "83568358836583808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825082c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "システムデータをセーブする空きブロックが\n１つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 197,
+        "copy_end": 295,
+        "bytes": 96,
+        "record_index": 1,
+        "table_offset": 1317354,
+        "start_in_record": 83
+      },
+      "current_hex": "4f6e65206672656520626c6f636b20697320726571756972656420746f20736176652073797374656d20646174612e20596f752063616e27742073617665207269676874206e6f772e205374617274207468652067616d6520616e797761793f",
+      "current_English": "One free block is required to save system data. You can't save right now. Start the game anyway?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "This start-anyway prompt specifies one free block for system data.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Saving system data requires one free block. You won't be able to save as things stand. Start the game anyway?"
+    },
+    {
+      "id": "COMMON_MESSAGE_110",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 110,
+      "source_reference": {
+        "block": 1,
+        "offset": 328,
+        "copy_end": 432,
+        "bytes": 104,
+        "record_index": 2,
+        "table_offset": 1317356,
+        "start_in_record": 1
+      },
+      "source_hex": "8366815b835e82f0835a815b837582b782e982c982cd825482c282cc8bf382ab8375838d8362834e82aa0a954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "データをセーブするには５つの空きブロックが\n必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 295,
+        "copy_end": 376,
+        "bytes": 81,
+        "record_index": 2,
+        "table_offset": 1317356,
+        "start_in_record": 1
+      },
+      "current_hex": "536176696e672072657175697265732066697665206672656520626c6f636b732e20596f752063616e27742073617665207269676874206e6f772e20537461727420706c6179696e6720616e797761793f",
+      "current_English": "Saving requires five free blocks. You can't save right now. Start playing anyway?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "This start-anyway prompt specifies five free blocks for the data to be saved.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Saving your data requires five free blocks. You won't be able to save as things stand. Start the game anyway?"
+    },
+    {
+      "id": "COMMON_MESSAGE_111",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 111,
+      "source_reference": {
+        "block": 1,
+        "offset": 432,
+        "copy_end": 480,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 105
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a82a082e882dc82b982f181420a838d815b836882c582ab82dc82b982f18142",
+      "clean_Japanese": "ゲームデータが\nありません。\nロードできません。",
+      "current_reference": {
+        "block": 1,
+        "offset": 376,
+        "copy_end": 407,
+        "bytes": 29,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 82
+      },
+      "current_hex": "54686572652773206e6f2067616d65206461746120746f206c6f61642e",
+      "current_English": "There's no game data to load.",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source distinguishes absent game data from corruption. The text reads naturally if this consumer is confirmed.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "There's no game data to load."
+    },
+    {
+      "id": "COMMON_MESSAGE_112",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 112,
+      "source_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "clean_Japanese": "システムデータがありません。\n",
+      "current_reference": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 431,
+        "bytes": 22,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "current_hex": "53797374656d2064617461206e6f7420666f756e642e",
+      "current_English": "System data not found.",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34528836,
+          "target": 33903244,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34528820,
+          "exact_hex": "0700000a020014e2a000000a7000a0e3109dfdeb860400eb0100a0e3",
+          "instructions": [
+            "020EDE34 beq #0x20ede58",
+            "020EDE38 ands r0, r4, #2",
+            "020EDE3C beq #0x20ee0c4",
+            "020EDE40 mov r0, #0x70",
+            "020EDE44 bl #0x205528c",
+            "020EDE48 bl #0x20ef068",
+            "020EDE4C mov r0, #1"
+          ]
+        },
+        {
+          "call": 34531256,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531240,
+          "exact_hex": "2c009f153fa0c015030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb",
+          "instructions": [
+            "020EE7A8 ldrne r0, [pc, #0x2c]",
+            "020EE7AC strbne sl, [r0, #0x3f]",
+            "020EE7B0 b #0x20ee7c4",
+            "020EE7B4 mov r0, #0x70",
+            "020EE7B8 bl #0x20546b8",
+            "020EE7BC mov r0, #0x7b",
+            "020EE7C0 bl #0x20546b8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active system-data absence notice. Two direct callers remain bound.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "No system data found."
+    },
+    {
+      "id": "COMMON_MESSAGE_113",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 113,
+      "source_reference": {
+        "block": 1,
+        "offset": 512,
+        "copy_end": 596,
+        "bytes": 82,
+        "record_index": 4,
+        "table_offset": 1317362,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a8351815b83808366815b835e82f0835a815b83750a82b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nゲームデータをセーブ\nする空きブロックが\n４つ必要です。",
+      "current_reference": {
+        "block": 1,
+        "offset": 431,
+        "copy_end": 515,
+        "bytes": 82,
+        "record_index": 5,
+        "table_offset": 1317362,
+        "start_in_record": 0
+      },
+      "current_hex": "5468652067616d652063616e6e6f74207361766520686572652e20537461727420616e797761793f0a200a200a200a2020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_English": "The game cannot save here. Start anyway?\n \n \n \n                                   ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The stored start question replaces a four-block game-save failure in error. The source has no decision about starting.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Not enough free space. Saving game data requires four free blocks."
+    },
+    {
+      "id": "COMMON_MESSAGE_114",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 114,
+      "source_reference": {
+        "block": 1,
+        "offset": 596,
+        "copy_end": 684,
+        "bytes": 85,
+        "record_index": 5,
+        "table_offset": 1317364,
+        "start_in_record": 1
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a83568358836583808366815b835e82f00a835a815b837582b782e90a8bf382ab8375838d8362834e82aa0a825082c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nシステムデータを\nセーブする\n空きブロックが\n１つ必要です。",
+      "current_reference": {
+        "block": 1,
+        "offset": 515,
+        "copy_end": 603,
+        "bytes": 85,
+        "record_index": 6,
+        "table_offset": 1317364,
+        "start_in_record": 1
+      },
+      "current_hex": "5468652067616d652063616e6e6f74207361766520686572652e20537461727420616e797761793f0a200a200a200a200a202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_English": "The game cannot save here. Start anyway?\n \n \n \n \n                                    ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The stored start question replaces a one-block system-save failure in error. The source has no decision about starting.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Not enough free space. Saving system data requires one free block."
+    },
+    {
+      "id": "COMMON_MESSAGE_115",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 115,
+      "source_reference": {
+        "block": 1,
+        "offset": 684,
+        "copy_end": 756,
+        "bytes": 72,
+        "record_index": 6,
+        "table_offset": 1317366,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a835a815b837582b782e982c982cd0a8bf382ab8375838d8362834e82aa0a825482c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nセーブするには\n空きブロックが\n５つ必要です。",
+      "current_reference": {
+        "block": 1,
+        "offset": 603,
+        "copy_end": 657,
+        "bytes": 54,
+        "record_index": 7,
+        "table_offset": 1317366,
+        "start_in_record": 2
+      },
+      "current_hex": "5468657265206172656e277420656e6f756768206672656520626c6f636b732e20536176696e6720726571756972657320666976652e",
+      "current_English": "There aren't enough free blocks. Saving requires five.",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "This source branch specifies five free blocks and gives no start prompt.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Not enough free space. Saving requires five free blocks."
+    },
+    {
+      "id": "COMMON_MESSAGE_116",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 116,
+      "source_reference": {
+        "block": 1,
+        "offset": 756,
+        "copy_end": 856,
+        "bytes": 97,
+        "record_index": 6,
+        "table_offset": 1317368,
+        "start_in_record": 74
+      },
+      "source_hex": "83818382838a815b834a815b836882f00a836083468362834e82b582c482a282dc82b781420a83818382838a815b834a815b836882e20a835283938367838d815b838982f00a94b282ab8db782b582b582c882a282c50a82ad82be82b382a28142",
+      "clean_Japanese": "メモリーカードを\nチェックしています。\nメモリーカードや\nコントローラを\n抜き差ししないで\nください。",
+      "current_reference": {
+        "block": 1,
+        "offset": 657,
+        "copy_end": 746,
+        "bytes": 86,
+        "record_index": 7,
+        "table_offset": 1317368,
+        "start_in_record": 56
+      },
+      "current_hex": "436865636b696e6720746865206d656d6f727920636172642e20506c6561736520646f6e277420696e73657274206f722072656d6f766520746865206d656d6f72792063617264206f7220636f6e74726f6c6c65722e",
+      "current_English": "Checking the memory card. Please don't insert or remove the memory card or controller.",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source names a memory card and controller. Keep these terms with the legacy branch pending DS reachability evidence.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Checking the memory card. Please don't plug in or remove the memory card or controller."
+    },
+    {
+      "id": "COMMON_MESSAGE_117",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 117,
+      "source_reference": {
+        "block": 1,
+        "offset": 856,
+        "copy_end": 888,
+        "bytes": 29,
+        "record_index": 7,
+        "table_offset": 1317370,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "ゲームデータが\n壊れています。",
+      "current_reference": {
+        "block": 1,
+        "offset": 746,
+        "copy_end": 778,
+        "bytes": 29,
+        "record_index": 8,
+        "table_offset": 1317370,
+        "start_in_record": 2
+      },
+      "current_hex": "47616d6520646174610a2020636f72727570742e202020202020202020",
+      "current_English": "Game data\n  corrupt.         ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The catalogue entry reports game-data corruption. The qualified DS slot-specific error uses a separate ARM9 suffix and retains the slot number.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "The game data is corrupted."
+    },
+    {
+      "id": "COMMON_MESSAGE_118",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 118,
+      "source_reference": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "システムデータが壊れています。",
+      "current_reference": {
+        "block": 1,
+        "offset": 778,
+        "copy_end": 804,
+        "bytes": 25,
+        "record_index": 9,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "current_hex": "53797374656d206461746120697320636f727275707465642e",
+      "current_English": "System data is corrupted.",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34531784,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531768,
+          "exact_hex": "97df8de20100a0e3f08fbde87600a0e33a97fdeb7a00a0e33897fdeb",
+          "instructions": [
+            "020EE9B8 add sp, sp, #0x25c",
+            "020EE9BC mov r0, #1",
+            "020EE9C0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9C4 mov r0, #0x76",
+            "020EE9C8 bl #0x20546b8",
+            "020EE9CC mov r0, #0x7a",
+            "020EE9D0 bl #0x20546b8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active corruption notice. The original branch displays 122 immediately afterward.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "The system data is corrupted."
+    },
+    {
+      "id": "COMMON_MESSAGE_119",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 119,
+      "source_reference": {
+        "block": 1,
+        "offset": 920,
+        "copy_end": 976,
+        "bytes": 53,
+        "record_index": 9,
+        "table_offset": 1317374,
+        "start_in_record": 1
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f083818382838a815b834a815b836882c90a835a815b837582b582dc82b782a98148",
+      "clean_Japanese": "エンディングデータをメモリーカードに\nセーブしますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 804,
+        "copy_end": 860,
+        "bytes": 53,
+        "record_index": 10,
+        "table_offset": 1317374,
+        "start_in_record": 0
+      },
+      "current_hex": "5361766520656e64696e673f0a2020546f206d656d6f727920636172643f2020202020202020202020202020202020202020202020",
+      "current_English": "Save ending?\n  To memory card?                       ",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source explicitly names the memory card. The independent DS ending-save call at 0203E2F8 selects 316 with no memory-card destination.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Save the ending data to the memory card?"
+    },
+    {
+      "id": "COMMON_MESSAGE_120",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 120,
+      "source_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "すべてよろしいですか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 860,
+        "copy_end": 880,
+        "bytes": 19,
+        "record_index": 11,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "current_hex": "45766572797468696e6720636f72726563743f",
+      "current_English": "Everything correct?",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34201588,
+          "target": 33900068,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34201572,
+          "exact_hex": "0220a0e37800a0e30110a0e31c2884e58ad9feeb000050e324608415",
+          "instructions": [
+            "0209DFE4 mov r2, #2",
+            "0209DFE8 mov r0, #0x78",
+            "0209DFEC mov r1, #1",
+            "0209DFF0 str r2, [r4, #0x81c]",
+            "0209DFF4 bl #0x2054624",
+            "0209DFF8 cmp r0, #0",
+            "0209DFFC strne r6, [r4, #0x24]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active setup confirmation selected at 0209DFF4.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Is everything correct?"
+    },
+    {
+      "id": "COMMON_MESSAGE_121",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 121,
+      "source_reference": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームを始めますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 880,
+        "copy_end": 896,
+        "bytes": 15,
+        "record_index": 12,
+        "table_offset": 1317378,
+        "start_in_record": 0
+      },
+      "current_hex": "5374617274207468652067616d653f",
+      "current_English": "Start the game?",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34529612,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34529596,
+          "exact_hex": "0000a0e308008de5020000ea7900a0e34699fdeb08008de51c059fe5",
+          "instructions": [
+            "020EE13C mov r0, #0",
+            "020EE140 str r0, [sp, #8]",
+            "020EE144 b #0x20ee154",
+            "020EE148 mov r0, #0x79",
+            "020EE14C bl #0x205466c",
+            "020EE150 str r0, [sp, #8]",
+            "020EE154 ldr r0, [pc, #0x51c]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active start confirmation. The current bytes already restore the standalone question.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Start the game?"
+    },
+    {
+      "id": "COMMON_MESSAGE_122",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 122,
+      "source_reference": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "clean_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "current_reference": {
+        "block": 1,
+        "offset": 896,
+        "copy_end": 976,
+        "bytes": 79,
+        "record_index": 13,
+        "table_offset": 1317380,
+        "start_in_record": 0
+      },
+      "current_hex": "436f756c646e2774206c6f6164207468652073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974680a2064656661756c742073797374656d20646174612e",
+      "current_English": "Couldn't load the system data.\n  The game will start with\n default system data.",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34531792,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531776,
+          "exact_hex": "f08fbde87600a0e33a97fdeb7a00a0e33897fdeb30009fe51461fdeb",
+          "instructions": [
+            "020EE9C0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9C4 mov r0, #0x76",
+            "020EE9C8 bl #0x20546b8",
+            "020EE9CC mov r0, #0x7a",
+            "020EE9D0 bl #0x20546b8",
+            "020EE9D4 ldr r0, [pc, #0x30]",
+            "020EE9D8 bl #0x2046e30"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active system-data load failure with default startup. The current bytes already restore the complete explanation.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Couldn't load the system data. The game will start with the default system data."
+    },
+    {
+      "id": "COMMON_MESSAGE_123",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 123,
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "clean_Japanese": "システムデータのロードに失敗しました。\n",
+      "current_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 27,
+        "record_index": 14,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_hex": "53797374656d2064617461206661696c656420746f206c6f61642e",
+      "current_English": "System data failed to load.",
+      "already_credited": true,
+      "native_callers": [
+        {
+          "call": 34529592,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34529576,
+          "exact_hex": "2c009de5000050e30400000a7b00a0e35e99fdeb0000a0e308008de5",
+          "instructions": [
+            "020EE128 ldr r0, [sp, #0x2c]",
+            "020EE12C cmp r0, #0",
+            "020EE130 beq #0x20ee148",
+            "020EE134 mov r0, #0x7b",
+            "020EE138 bl #0x20546b8",
+            "020EE13C mov r0, #0",
+            "020EE140 str r0, [sp, #8]"
+          ]
+        },
+        {
+          "call": 34531264,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531248,
+          "exact_hex": "030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb0500a0e174d08de2",
+          "instructions": [
+            "020EE7B0 b #0x20ee7c4",
+            "020EE7B4 mov r0, #0x70",
+            "020EE7B8 bl #0x20546b8",
+            "020EE7BC mov r0, #0x7b",
+            "020EE7C0 bl #0x20546b8",
+            "020EE7C4 mov r0, r5",
+            "020EE7C8 add sp, sp, #0x74"
+          ]
+        },
+        {
+          "call": 34531820,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531804,
+          "exact_hex": "97df8de20000a0e3f08fbde87b00a0e33197fdeb0000a0e397df8de2",
+          "instructions": [
+            "020EE9DC add sp, sp, #0x25c",
+            "020EE9E0 mov r0, #0",
+            "020EE9E4 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9E8 mov r0, #0x7b",
+            "020EE9EC bl #0x20546b8",
+            "020EE9F0 mov r0, #0",
+            "020EE9F4 add sp, sp, #0x25c"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "context": "Previously reviewed active system-data failure without a default-start explanation.",
+      "direct_consumer_found": true,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "Couldn't load the system data."
+    },
+    {
+      "id": "COMMON_MESSAGE_124",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 124,
+      "source_reference": {
+        "block": 1,
+        "offset": 1148,
+        "copy_end": 1224,
+        "bytes": 76,
+        "record_index": 13,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "source_hex": "83818382838a815b834a815b836882cc8f898afa89bb82cd0a835a815b83758e9e82c98d7382a482b182c682aa82c582ab82dc82b781420a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "メモリーカードの初期化は\nセーブ時に行うことができます。\nゲームを始めますか？",
+      "current_reference": {
+        "block": 1,
+        "offset": 1004,
+        "copy_end": 1065,
+        "bytes": 61,
+        "record_index": 15,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752063616e20666f726d617420746865206d656d6f72792063617264207768656e20796f7520736176652e205374617274207468652067616d653f",
+      "current_English": "You can format the memory card when you save. Start the game?",
+      "already_credited": false,
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "The source allows memory-card initialization to be deferred until saving and asks whether to start. DS call ownership remains pending.",
+      "direct_consumer_found": false,
+      "no_proof_of_global_unreachability": true,
+      "independent_English": "The memory card can be initialized when you save. Start the game?"
+    }
+  ],
+  "registered_predecessor": "out\\captain_biographies_registered_20261111_v1\\Translation_DS_All_Routes_Captain_Biographies_20261111_candidate.nds",
+  "registered_predecessor_sha256": "2f8733f260376f8cdb533e00d495b04bc59f9368e1eed97d173a1bcf3923477e",
+  "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "exact_source_current_ARM9_direct_call_windows_verified": 27,
+  "stored_mismatches_are_not_observed_gameplay": true,
+  "new_completion_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "releases\\all_routes_editorial_20261111_captain_biographies_candidate\\verification\\registered_release_verification.json": "94f9ed18a5f1be2f1215c3c5ff8af68d43e9b926bcb5717578fb860171625446",
+    "work\\analysis\\native_common_arm_calls_wrappers_clean.json": "b93f7a8a15ebaf2126d60521a1e61c75867687ecca72384a121eacbbca756bab",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\contextual_comparison_pending_consumers.json": "471bb1cd9ace6f220e5d1c8760bd8f51eedab5fa43e2f8f27e3c61a817de7817",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\review_setup_save_equipment_v1.py": "49c9a6ad5a375f11796d35b371fa36c187f9522a01652c90bc40f0fc32d7f81a"
+  }
+}

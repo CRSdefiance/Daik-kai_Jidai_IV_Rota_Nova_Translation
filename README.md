@@ -1,6 +1,6 @@
 > Main promoted build: [Unified V4701](releases/all_routes_unified_v4701/README.md) (2026-10-26). Full editorial and graphics reviews remain active.
 >
-> Latest promotion candidate: [All Routes Sera Assignment](releases/all_routes_editorial_20261111_sera_assignment_candidate/README.md) (2026-11-11). This cumulative build adds 95 editorial reviews since Ship Emergency and preserves Rafael's tutorials and the Market Trade-screen fix. The clean-input patch reconstructs the testing ROM byte for byte. Main promotion awaits acceptance.
+> Latest promotion candidate: [All Routes Shipyard and Fleet Setup](releases/all_routes_editorial_20261111_shipyard_fleet_setup_candidate/README.md) (2026-11-11). This cumulative build adds 42 editorial reviews since Sera Assignment and includes Rafael's tutorials, the Market Trade-screen correction, and the ASCII right-bound fix. The clean-input patch reconstructs the testing ROM byte for byte. Main promotion awaits acceptance.
 
 # DK4 Translation Tool
 
