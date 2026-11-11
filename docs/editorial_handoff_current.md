@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-11
 
+Fifty-three sailing reactions are registered. The ledger now credits 27,146 reviews.
+
+The [All Routes Trade and Sailing promotion candidate](../out/promotion_ready_20261111_trade_and_sailing/Translation_DS_All_Routes_Trade_and_Sailing_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_sailing_reactions_candidate/README.md) reconstruct it byte for byte. The ledger has 27,146 credited reviews and 830 native shared keys still to review or classify. V4701 remains main pending acceptance.
+
+Continue from [the registered sailing reactions](editorial_sailing_reactions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 124 Price Info trade-good descriptions are registered. The ledger now credits 27,093 reviews.
+
+Continue from [the registered Price Info descriptions](editorial_trade_good_descriptions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The last 70 item-advice replies are registered. The ledger now credits 26,969 reviews.
+
+Continue from [the registered Proof and relic advice](editorial_proof_and_relic_advice_registered_20261111.md). All 218 item-advice records now have contextual coverage. The candidate retains the 114 accepted layers and passes 98 release checks. There are 1,007 other native shared keys still needing review or classification.
+
+Next, review the trade-good descriptions at COMMON 137–260. The [source comparison packet](../translations/editorial_checkpoints/SharedText_20261110_v1/trade_good_descriptions_source_comparison_v1.json) binds all 124 records to the clean Japanese and this candidate. It identifies 55 generic placeholders and 21 unrelated save prompts or fragments in storage. The first 30 editorial decisions are drafted. The original guarded selector is unchanged at `020BE51C–020BE53B` and `020BF328–020BF337`. Verify the display consumer and use representative gameplay before assigning credit. These findings are separate from the registered Market Goods Info formatting fix.
+
+# Current editorial checkpoint - 2026-11-11
+
 The 34 figurehead, navigation and gift advice replies are registered. The ledger now credits 26,899 reviews.
 
 The [All Routes Item Advice promotion candidate](../out/promotion_ready_20261111_item_advice/Translation_DS_All_Routes_Item_Advice_20261111_candidate.nds) is ready for cold-boot testing. The [release package and clean-input patch](../releases/all_routes_editorial_20261111_figurehead_navigation_gift_advice_candidate/README.md) reconstruct it byte for byte. It adds 148 advice reviews since Item Catalogue and includes all 218 reviewed item descriptions. All 34 fresh targeted repository tests passed. V4701 remains main pending acceptance.

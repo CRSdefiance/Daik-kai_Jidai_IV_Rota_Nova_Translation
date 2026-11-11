@@ -1,3 +1,9 @@
+The 53 sailing reactions are registered with 765 entries, 114 accepted layers and 100 checks. Use scripts/register_sailing_reactions_v1.py with --register and --publish-prepared. Exact reconstruction, focused sailing replay and cold startup pass. [Checkpoint](editorial_sailing_reactions_registered_20261111.md)
+
+The 124 Price Info descriptions are registered with 764 entries, 114 accepted layers and 99 checks. Use scripts/register_trade_good_descriptions_v1.py with --register and --publish-prepared. Exact reconstruction, ordinary Price Info replay and cold startup pass. [Checkpoint](editorial_trade_good_descriptions_registered_20261111.md)
+
+The 70 Proof and relic advice replies are registered with 763 entries, 114 accepted layers and 98 checks. Use scripts/register_proof_and_relic_advice_v1.py with --register and --publish-prepared. Exact reconstruction, four Lisbon Advice portraits and cold startup pass. [Checkpoint](editorial_proof_and_relic_advice_registered_20261111.md)
+
 The 34 figurehead, navigation and gift replies are registered over Crew Equipment Advice with 762 entries, 114 accepted layers and 97 checks. Use scripts/register_figurehead_navigation_gift_advice_v1.py with --register and --publish-prepared. Exact reconstruction, three Lisbon Advice portraits and cold startup pass. [Registered checkpoint](editorial_figurehead_navigation_gift_advice_registered_20261111.md)
 
 The 40 crew-equipment replies are registered over Weapon and Armor Advice with 761 entries, 114 accepted layers and 96 checks. Use scripts/register_crew_equipment_advice_v1.py with --register and --publish-prepared. Exact reconstruction, Mikhail’s Nagasaki Advice replay and cold startup pass. [Registered checkpoint](editorial_crew_equipment_advice_registered_20261111.md)

@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-11
 
+Fifty-three sailing reactions are registered. The ledger now credits 27,146 reviews.
+
+Continue from [the registered sailing reactions](editorial_sailing_reactions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+All 124 Price Info trade-good descriptions are registered. The ledger now credits 27,093 reviews.
+
+Continue from [the registered Price Info descriptions](editorial_trade_good_descriptions_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
+The last 70 item-advice replies are registered. The ledger now credits 26,969 reviews.
+
+Continue from [the registered Proof and relic advice](editorial_proof_and_relic_advice_registered_20261111.md).
+
+# Current editorial checkpoint - 2026-11-11
+
 The 34 figurehead, navigation and gift advice replies are registered. The ledger now credits 26,899 reviews.
 
 Continue from [the registered figurehead, navigation and gift advice](editorial_figurehead_navigation_gift_advice_registered_20261111.md).
