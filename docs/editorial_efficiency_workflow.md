@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-10
 
+Abandon Ship is registered and credited once. The native menu passed exact live caption and Back/No checks. The cumulative patch reconstructs byte for byte. The ledger credits 25,899 reviews.
+
+Continue from [editorial_ship_command_registered_20261110](editorial_ship_command_registered_20261110.md). Reuse the completed checks; earlier entries below are historical.
+
+# Current editorial checkpoint - 2026-11-10
+
 Thirty shared notices have contextual decisions and native caller bindings. All 19 static pages passed offline rendering and visual review. The Abandon Ship successor has an exact clean-input patch and passes its own startup and name checks. The localized menu and Back transition still need a focused emulator test. Lil261 remains registered.
 
 Continue from [editorial_shared_static_ship_20261110](editorial_shared_static_ship_20261110.md). Reuse the completed checks; earlier entries below are historical.
