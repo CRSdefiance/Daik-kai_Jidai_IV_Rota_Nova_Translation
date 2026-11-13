@@ -1,5 +1,9 @@
 # Integrated release-build policy
 
+## All Routes Wrap Review promoted as main — 2026-11-13
+
+The user confirmed cold-boot testing and accepted the exact [Wrap Review release](../releases/all_routes_editorial_20261111_story_question_wraps_candidate/README.md). ROM SHA-256: `9a3f2d193c476b36be0e92101c7a44bf5adc5ced0581e86d1687ac0b88fdc16b`. The clean-input patch was reconstructed again and matched byte for byte. [Acceptance record](../releases/all_routes_editorial_20261111_story_question_wraps_candidate/promotion.json). [V4701](../releases/all_routes_unified_v4701/README.md) remains the rollback. The construction baseline, accepted layers, and existing editorial coverage are unchanged. The later Rafael research checkpoint and unfinished editorial and graphics work remain separate.
+
 ## 2026-11-01 registered experimental B91-B110/names successor
 
 The current experimental candidate is
