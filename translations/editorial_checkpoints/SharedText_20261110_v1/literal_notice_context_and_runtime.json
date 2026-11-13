@@ -1,0 +1,3257 @@
+{
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_85",
+      "message_ID": 85,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3052,
+        "copy_end": 3076,
+        "bytes": 22,
+        "record_index": 64,
+        "table_offset": 1317306,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3480,
+        "copy_end": 3504,
+        "bytes": 22,
+        "record_index": 83,
+        "table_offset": 1317306,
+        "start_in_record": 0
+      },
+      "source_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7",
+      "current_hex": "2041626f75742025732064617973206174207365612e",
+      "source_Japanese": "約%s日の航海が可能です",
+      "current_English": " About %s days at sea.",
+      "english": "We can sail for about %s days.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "An estimate of sailing days. Keep the approximation and the number substitution.",
+      "context": "The current fragment can read as time already spent at sea. The native call formats a computed estimate. Use a clear future-tense range notice.",
+      "localization_note": "The current fragment can read as time already spent at sea. The native call formats a computed estimate. Use a clear future-tense range notice.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33950712,
+          "target": 33900216,
+          "reference_start": 33950688,
+          "source_andcurrent_hex": "0b10a0e1c688feeb0040a0e1d72c01eb0010a0e15500a0e3aeceffeb",
+          "source_context": [
+            "0x02060bb8 ldrb r0, [r8, #0x3d]",
+            "0x02060bbc cmp r0, #0x1e",
+            "0x02060bc0 blt #0x2060bd0",
+            "0x02060bc4 ldr r1, [pc, #0x14c]",
+            "0x02060bc8 ldr r0, [sp, #4]",
+            "0x02060bcc bl #0x2053fe4",
+            "0x02060bd0 cmp sb, sl",
+            "0x02060bd4 movge sb, sl",
+            "0x02060bd8 mov r0, #0xa",
+            "0x02060bdc mul r0, sb, r0",
+            "0x02060be0 mov r1, fp",
+            "0x02060be4 bl #0x2002f04",
+            "0x02060be8 mov r4, r0",
+            "0x02060bec bl #0x20abf50",
+            "0x02060bf0 mov r1, r0",
+            "0x02060bf4 mov r0, #0x55"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "2041626f75742025732064617973206174207365612e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 186,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_86",
+      "message_ID": 86,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3076,
+        "copy_end": 3108,
+        "bytes": 30,
+        "record_index": 65,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3504,
+        "copy_end": 3532,
+        "bytes": 26,
+        "record_index": 84,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "source_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd",
+      "current_hex": "2025732f25730a202025730a202044657061727465642025732e",
+      "source_Japanese": "%s月　%s日\n%s\n%sを出港しました",
+      "current_English": " %s/%s\n  %s\n  Departed %s.",
+      "english": "%s/%s{LB}%s{LB}Departed %s.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The source presents a date, a standalone status substitution, and the port of departure. Preserve their sequence and separate display roles. Confirm the consumer and date formatting.",
+      "context": "Keep the established month/day, separate status row and departure message. The original fourth port argument is passed on the stack and stays last.",
+      "localization_note": "Keep the established month/day, separate status row and departure message. The original fourth port argument is passed on the stack and stays last.",
+      "manual_break_reason": "The original date, status and departure details are separate display fields.",
+      "native_callers": [
+        {
+          "call_PC": 34054960,
+          "target": 33900216,
+          "reference_start": 34054936,
+          "source_andcurrent_hex": "31ff2fe100008de50410a0e10720a0e10630a0e15600a0e3e068ffeb",
+          "source_context": [
+            "0x0207a2f0 add r0, r0, #1",
+            "0x0207a2f4 bl #0x20abf50",
+            "0x0207a2f8 mov r7, r0",
+            "0x0207a2fc bl #0x207a000",
+            "0x0207a300 add r1, r6, #4",
+            "0x0207a304 mov r6, r0",
+            "0x0207a308 mov r0, #0x6c",
+            "0x0207a30c mla r0, r5, r0, r1",
+            "0x0207a310 ldr r1, [r0]",
+            "0x0207a314 ldr r1, [r1, #8]",
+            "0x0207a318 blx r1",
+            "0x0207a31c str r0, [sp]",
+            "0x0207a320 mov r1, r4",
+            "0x0207a324 mov r2, r7",
+            "0x0207a328 mov r3, r6",
+            "0x0207a32c mov r0, #0x56"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "2025732f25730a202025730a202044657061727465642025732e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 186,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 4,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_87",
+      "message_ID": 87,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3108,
+        "copy_end": 3124,
+        "bytes": 14,
+        "record_index": 66,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3532,
+        "copy_end": 3548,
+        "bytes": 14,
+        "record_index": 85,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "source_hex": "257382aa91ab82e882dc82b982f1",
+      "current_hex": "2573206973206d697373696e672e",
+      "source_Japanese": "%sが足りません",
+      "current_English": "%s is missing.",
+      "english": "Not enough %s.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "A shortage notice. The object is supplied by the caller.",
+      "context": "The caller supplies the named requirement. The Japanese reports insufficient quantity. Missing incorrectly suggests it is entirely absent.",
+      "localization_note": "The caller supplies the named requirement. The Japanese reports insufficient quantity. Missing incorrectly suggests it is entirely absent.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33633716,
+          "target": 33900216,
+          "reference_start": 33633692,
+          "source_andcurrent_hex": "0400a0e165d1ffeb0400d0e540ae01eb0010a0e15700a0e33f0401eb",
+          "source_context": [
+            "0x02013574 mov r4, r0",
+            "0x02013578 bl #0x20cb1a8",
+            "0x0201357c ldr r1, [pc, #0x16c]",
+            "0x02013580 ldr r2, [r6, #0x40]",
+            "0x02013584 add r0, r0, r1",
+            "0x02013588 mov r1, r5",
+            "0x0201358c bl #0x2082bb8",
+            "0x02013590 str r4, [r6, #0x40]",
+            "0x02013594 str r5, [r6, #0x44]",
+            "0x02013598 b #0x20136e0",
+            "0x0201359c mov r0, r4",
+            "0x020135a0 bl #0x2007b3c",
+            "0x020135a4 ldrb r0, [r0, #4]",
+            "0x020135a8 bl #0x207eeb0",
+            "0x020135ac mov r1, r0",
+            "0x020135b0 mov r0, #0x57"
+          ],
+          "presentation": "notice"
+        },
+        {
+          "call_PC": 33633756,
+          "target": 33900216,
+          "reference_start": 33633732,
+          "source_andcurrent_hex": "400096e556ae01eb000050e30300001a20119fe55700a0e3350401eb",
+          "source_context": [
+            "0x0201359c mov r0, r4",
+            "0x020135a0 bl #0x2007b3c",
+            "0x020135a4 ldrb r0, [r0, #4]",
+            "0x020135a8 bl #0x207eeb0",
+            "0x020135ac mov r1, r0",
+            "0x020135b0 mov r0, #0x57",
+            "0x020135b4 bl #0x20546b8",
+            "0x020135b8 b #0x20136e0",
+            "0x020135bc cmp r4, #5",
+            "0x020135c0 bne #0x2013608",
+            "0x020135c4 ldr r0, [r6, #0x40]",
+            "0x020135c8 bl #0x207ef28",
+            "0x020135cc cmp r0, #0",
+            "0x020135d0 bne #0x20135e4",
+            "0x020135d4 ldr r1, [pc, #0x120]",
+            "0x020135d8 mov r0, #0x57"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "2573206973206d697373696e672e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 186,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_88",
+      "message_ID": 88,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3124,
+        "copy_end": 3148,
+        "bytes": 22,
+        "record_index": 67,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3548,
+        "copy_end": 3572,
+        "bytes": 22,
+        "record_index": 86,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "source_hex": "93478acd91e082cd89f396c582b582dc82b582bd8149",
+      "current_hex": "456e656d7920666c6565742064657374726f79656421",
+      "source_Japanese": "敵艦隊は壊滅しました！",
+      "current_English": "Enemy fleet destroyed!",
+      "english": "Enemy fleet destroyed!",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "An outcome for the fleet as a whole.",
+      "context": "The concise status keeps the destruction of the whole enemy fleet and the source's emphatic tone.",
+      "localization_note": "The concise status keeps the destruction of the whole enemy fleet and the source's emphatic tone.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33851416,
+          "target": 33900216,
+          "reference_start": 33851392,
+          "source_andcurrent_hex": "010059e30800001a20009de5000050e30200001a5800a0e3a62f00eb",
+          "source_context": [
+            "0x020487d8 ldr r0, [sp, #0x60]",
+            "0x020487dc bl #0x20519d4",
+            "0x020487e0 cmp r0, r6",
+            "0x020487e4 ldrlt sb, [sp, #0x64]",
+            "0x020487e8 strlt r5, [sp, #0x20]",
+            "0x020487ec cmp sb, #2",
+            "0x020487f0 beq #0x2048550",
+            "0x020487f4 ldr r0, [sp, #0xc]",
+            "0x020487f8 cmp r0, #0",
+            "0x020487fc beq #0x2048878",
+            "0x02048800 cmp sb, #1",
+            "0x02048804 bne #0x204882c",
+            "0x02048808 ldr r0, [sp, #0x20]",
+            "0x0204880c cmp r0, #0",
+            "0x02048810 bne #0x2048820",
+            "0x02048814 mov r0, #0x58"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "456e656d7920666c6565742064657374726f79656421",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 186,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_89",
+      "message_ID": 89,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3148,
+        "copy_end": 3168,
+        "bytes": 20,
+        "record_index": 68,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3572,
+        "copy_end": 3591,
+        "bytes": 19,
+        "record_index": 87,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "source_hex": "934782cd93a682b08f6f82b582dc82b582bd8149",
+      "current_hex": "54686520656e656d792068617320666c656421",
+      "source_Japanese": "敵は逃げ出しました！",
+      "current_English": "The enemy has fled!",
+      "english": "The enemy has fled!",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "Keep the separate retreat outcome.",
+      "context": "The current line accurately conveys enemy retreat and distinguishes it from fleet destruction.",
+      "localization_note": "The current line accurately conveys enemy retreat and distinguishes it from fleet destruction.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33851428,
+          "target": 33900216,
+          "reference_start": 33851404,
+          "source_andcurrent_hex": "000050e30200001a5800a0e3a62f00eb5a0000ea5900a0e3a32f00eb",
+          "source_context": [
+            "0x020487e4 ldrlt sb, [sp, #0x64]",
+            "0x020487e8 strlt r5, [sp, #0x20]",
+            "0x020487ec cmp sb, #2",
+            "0x020487f0 beq #0x2048550",
+            "0x020487f4 ldr r0, [sp, #0xc]",
+            "0x020487f8 cmp r0, #0",
+            "0x020487fc beq #0x2048878",
+            "0x02048800 cmp sb, #1",
+            "0x02048804 bne #0x204882c",
+            "0x02048808 ldr r0, [sp, #0x20]",
+            "0x0204880c cmp r0, #0",
+            "0x02048810 bne #0x2048820",
+            "0x02048814 mov r0, #0x58",
+            "0x02048818 bl #0x20546b8",
+            "0x0204881c b #0x204898c",
+            "0x02048820 mov r0, #0x59"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "54686520656e656d792068617320666c656421",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_90",
+      "message_ID": 90,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3168,
+        "copy_end": 3196,
+        "bytes": 25,
+        "record_index": 68,
+        "table_offset": 1317316,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3591,
+        "copy_end": 3629,
+        "bytes": 35,
+        "record_index": 87,
+        "table_offset": 1317316,
+        "start_in_record": 20
+      },
+      "source_hex": "257382cc8a5882cd0a8c82946a82b382ea82dc82b582bd8163",
+      "current_hex": "54686520746f776e206f6620257320686173206265656e2064656665617465642e2e2e",
+      "source_Japanese": "%sの街は\n撃破されました…",
+      "current_English": "The town of %s has been defeated...",
+      "english": "The town of %s has been defeated...",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The city is overcome. The ellipsis and subdued tone distinguish this from a victory announcement.",
+      "context": "Keep the source's subdued ellipsis and the named town as the target of defeat. The current status reads naturally.",
+      "localization_note": "Keep the source's subdued ellipsis and the named town as the target of defeat. The current status reads naturally.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33851472,
+          "target": 33900216,
+          "reference_start": 33851448,
+          "source_andcurrent_hex": "0400a0e1001090e5081091e531ff2fe10010a0e15a00a0e3982f00eb",
+          "source_context": [
+            "0x02048810 bne #0x2048820",
+            "0x02048814 mov r0, #0x58",
+            "0x02048818 bl #0x20546b8",
+            "0x0204881c b #0x204898c",
+            "0x02048820 mov r0, #0x59",
+            "0x02048824 bl #0x20546b8",
+            "0x02048828 b #0x204898c",
+            "0x0204882c ldr r0, [sp, #0x20]",
+            "0x02048830 cmp r0, #0",
+            "0x02048834 bne #0x2048858",
+            "0x02048838 mov r0, r4",
+            "0x0204883c ldr r1, [r0]",
+            "0x02048840 ldr r1, [r1, #8]",
+            "0x02048844 blx r1",
+            "0x02048848 mov r1, r0",
+            "0x0204884c mov r0, #0x5a"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "54686520746f776e206f6620257320686173206265656e2064656665617465642e2e2e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_91",
+      "message_ID": 91,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3196,
+        "copy_end": 3220,
+        "bytes": 23,
+        "record_index": 69,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3629,
+        "copy_end": 3653,
+        "bytes": 23,
+        "record_index": 88,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "source_hex": "257382cc8a5882cd0a8d7e959a82b582dc82b582bd8163",
+      "current_hex": "25732073757272656e64657265642e2e2e0a2020202020",
+      "source_Japanese": "%sの街は\n降伏しました…",
+      "current_English": "%s surrendered...\n     ",
+      "english": "%s surrendered...",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "Surrender is distinct from defeat. Keep the subdued tone.",
+      "context": "The short surrender notice keeps the different outcome and subdued tone. Its trailing blank line belongs to display review.",
+      "localization_note": "The short surrender notice keeps the different outcome and subdued tone. Its trailing blank line belongs to display review.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33851504,
+          "target": 33900216,
+          "reference_start": 33851480,
+          "source_andcurrent_hex": "0400a0e1001090e5081091e531ff2fe10010a0e15b00a0e3902f00eb",
+          "source_context": [
+            "0x02048830 cmp r0, #0",
+            "0x02048834 bne #0x2048858",
+            "0x02048838 mov r0, r4",
+            "0x0204883c ldr r1, [r0]",
+            "0x02048840 ldr r1, [r1, #8]",
+            "0x02048844 blx r1",
+            "0x02048848 mov r1, r0",
+            "0x0204884c mov r0, #0x5a",
+            "0x02048850 bl #0x20546b8",
+            "0x02048854 b #0x204898c",
+            "0x02048858 mov r0, r4",
+            "0x0204885c ldr r1, [r0]",
+            "0x02048860 ldr r1, [r1, #8]",
+            "0x02048864 blx r1",
+            "0x02048868 mov r1, r0",
+            "0x0204886c mov r0, #0x5b"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "25732073757272656e64657265642e2e2e0a2020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_92",
+      "message_ID": 92,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3220,
+        "copy_end": 3280,
+        "bytes": 60,
+        "record_index": 70,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3653,
+        "copy_end": 3749,
+        "bytes": 96,
+        "record_index": 89,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "source_hex": "8e5089ba82cc8acd91e082e682e80a8efb8e7895f18d9082aa93cd82a282c482a882e882dc82b70a82a895b782ab82c982c882e882dc82b782a98148",
+      "current_hex": "54686520666c6565747320756e646572206f757220636f6d6d616e6420686176652073656e7420696e636f6d6520616e6420657870656e7365207265706f7274732e20576f756c6420796f75206c696b6520746f2068656172207468656d3f20",
+      "source_Japanese": "傘下の艦隊より\n収支報告が届いております\nお聞きになりますか？",
+      "current_English": "The fleets under our command have sent income and expense reports. Would you like to hear them? ",
+      "english": "The fleets under our command have sent income and expense reports. Would you like to hear them?",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "A polite offer to hear a subordinate fleet's income and expenditure report. No result is reported yet.",
+      "context": "The speakerless yes/no offer is polite and fluent. The native flow searches affiliated fleets before asking and can handle more than one report. Keep the plural phrasing.",
+      "localization_note": "The speakerless yes/no offer is polite and fluent. The native flow searches affiliated fleets before asking and can handle more than one report. Keep the plural phrasing.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33741824,
+          "target": 33900140,
+          "reference_start": 33741800,
+          "source_andcurrent_hex": "001090e5101091e531ff2fe1000050e30400000a5c00a0e3999a00eb",
+          "source_context": [
+            "0x0202dbc0 mov r8, r4",
+            "0x0202dbc4 and r0, r0, #1",
+            "0x0202dbc8 cmp r0, #0",
+            "0x0202dbcc ble #0x202dc68",
+            "0x0202dbd0 mov r7, #0x39",
+            "0x0202dbd4 cmp r7, #0x3f",
+            "0x0202dbd8 bge #0x202dc1c",
+            "0x0202dbdc add r6, sl, #4",
+            "0x0202dbe0 mov r5, #0x84",
+            "0x0202dbe4 mla r0, r7, r5, r6",
+            "0x0202dbe8 ldr r1, [r0]",
+            "0x0202dbec ldr r1, [r1, #0x10]",
+            "0x0202dbf0 blx r1",
+            "0x0202dbf4 cmp r0, #0",
+            "0x0202dbf8 beq #0x202dc10",
+            "0x0202dbfc mov r0, #0x5c"
+          ],
+          "presentation": "yes-no"
+        },
+        {
+          "call_PC": 33741904,
+          "target": 33900140,
+          "reference_start": 33741880,
+          "source_andcurrent_hex": "040080e2950420e0b70000eb000050e30300000a5c00a0e3859a00eb",
+          "source_context": [
+            "0x0202dc10 add r7, r7, #1",
+            "0x0202dc14 cmp r7, #0x3f",
+            "0x0202dc18 blt #0x202dbe4",
+            "0x0202dc1c cmp r4, #0",
+            "0x0202dc20 bne #0x202dc68",
+            "0x0202dc24 mov r5, #0",
+            "0x0202dc28 cmp r5, #0x14",
+            "0x0202dc2c bge #0x202dc68",
+            "0x0202dc30 mov r4, #0x4c",
+            "0x0202dc34 bl #0x20cb160",
+            "0x0202dc38 add r0, r0, #4",
+            "0x0202dc3c mla r0, r5, r4, r0",
+            "0x0202dc40 bl #0x202df24",
+            "0x0202dc44 cmp r0, #0",
+            "0x0202dc48 beq #0x202dc5c",
+            "0x0202dc4c mov r0, #0x5c"
+          ],
+          "presentation": "yes-no"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900140,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "54686520666c6565747320756e646572206f757220636f6d6d616e6420686176652073656e7420696e636f6d6520616e6420657870656e7365207265706f7274732e20576f756c6420796f75206c696b6520746f2068656172207468656d3f20",
+          "mode": 1,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_93",
+      "message_ID": 93,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3280,
+        "copy_end": 3316,
+        "bytes": 34,
+        "record_index": 70,
+        "table_offset": 1317322,
+        "start_in_record": 60
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3749,
+        "copy_end": 3797,
+        "bytes": 46,
+        "record_index": 89,
+        "table_offset": 1317322,
+        "start_in_record": 96
+      },
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082f00a96438c8282b582c482a282dc82b7",
+      "current_hex": "5468652063697479206f6620257320686173206f70656e65642066697265206f6e202573277320666c6565742e20",
+      "source_Japanese": "%sの街が\n%sの艦隊を\n砲撃しています",
+      "current_English": "The city of %s has opened fire on %s's fleet. ",
+      "english": "The city of %s is firing on %s's fleet.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "The city is the attacker and the named fleet is the target. Preserve argument order.",
+      "context": "The city is the attacker, and the second value is the fleet's owner. The source describes ongoing fire, with no claim it has just begun.",
+      "localization_note": "The city is the attacker, and the second value is the fleet's owner. The source describes ongoing fire, with no claim it has just begun.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33850088,
+          "target": 33900216,
+          "reference_start": 33850064,
+          "source_andcurrent_hex": "001090e5081091e531ff2fe10020a0e10510a0e15d00a0e3f23000eb",
+          "source_context": [
+            "0x020482a8 mov r5, r0",
+            "0x020482ac mov r0, r4",
+            "0x020482b0 ldr r1, [r0]",
+            "0x020482b4 ldr r1, [r1, #8]",
+            "0x020482b8 blx r1",
+            "0x020482bc add r3, r5, #4",
+            "0x020482c0 ldr r1, [sp, #0x10]",
+            "0x020482c4 mov r2, #0x4c",
+            "0x020482c8 mov r5, r0",
+            "0x020482cc mla r0, r1, r2, r3",
+            "0x020482d0 ldr r1, [r0]",
+            "0x020482d4 ldr r1, [r1, #8]",
+            "0x020482d8 blx r1",
+            "0x020482dc mov r2, r0",
+            "0x020482e0 mov r1, r5",
+            "0x020482e4 mov r0, #0x5d"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "5468652063697479206f6620257320686173206f70656e65642066697265206f6e202573277320666c6565742e20",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 2,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_94",
+      "message_ID": 94,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3316,
+        "copy_end": 3356,
+        "bytes": 38,
+        "record_index": 71,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3797,
+        "copy_end": 3827,
+        "bytes": 28,
+        "record_index": 90,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "source_hex": "257382cc8a5882aa0a8a4391af257382cc8f508c8282f00a8ef382af82c482a282dc82b78149",
+      "current_hex": "25732061747461636b65642e0a2020506972617465202573210a2020",
+      "source_Japanese": "%sの街が\n海賊%sの襲撃を\n受けています！",
+      "current_English": "%s attacked.\n  Pirate %s!\n  ",
+      "english": "%s is under attack by the pirate %s!",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "The town is the target, and the named pirate is the attacker. The final English must keep the native argument order unless positional substitution is proved.",
+      "context": "The original call passes the city first and the pirate second. Replace the disconnected fragments with one clear sentence in the same order.",
+      "localization_note": "The original call passes the city first and the pirate second. Replace the disconnected fragments with one clear sentence in the same order.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33850340,
+          "target": 33900216,
+          "reference_start": 33850316,
+          "source_andcurrent_hex": "001090e5201091e531ff2fe10020a0e10510a0e15e00a0e3b33000eb",
+          "source_context": [
+            "0x020483a4 ldr r0, [sp, #4]",
+            "0x020483a8 bl #0x203697c",
+            "0x020483ac movs r6, r0",
+            "0x020483b0 beq #0x20483e8",
+            "0x020483b4 mov r0, r4",
+            "0x020483b8 ldr r1, [r0]",
+            "0x020483bc ldr r1, [r1, #8]",
+            "0x020483c0 blx r1",
+            "0x020483c4 mov r5, r0",
+            "0x020483c8 mov r0, r6",
+            "0x020483cc ldr r1, [r0]",
+            "0x020483d0 ldr r1, [r1, #0x20]",
+            "0x020483d4 blx r1",
+            "0x020483d8 mov r2, r0",
+            "0x020483dc mov r1, r5",
+            "0x020483e0 mov r0, #0x5e"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "25732061747461636b65642e0a2020506972617465202573210a2020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 2,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_95",
+      "message_ID": 95,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3356,
+        "copy_end": 3408,
+        "bytes": 52,
+        "record_index": 72,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3827,
+        "copy_end": 3896,
+        "bytes": 69,
+        "record_index": 91,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "source_hex": "257382c5257382aa0a257382f091e597ca82c9948482e882b382ce82ab0a83568346834182f08a6791e582b582dc82b582bd8149",
+      "current_hex": "82686e2025732c20257320736f6c64206c6172676520616d6f756e7473206f6620257320616e6420657870616e646564207468656972206d61726b65742073686172652120",
+      "source_Japanese": "%sで%sが\n%sを大量に売りさばき\nシェアを拡大しました！",
+      "current_English": "Ｉn %s, %s sold large amounts of %s and expanded their market share! ",
+      "english": "In %s, %s sold large amounts of %s and expanded their market share!",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "The three values are the port, seller and commodity in that order. The sales increased market share.",
+      "context": "Preserve the established trade wording and order of place, seller and commodity. Normalize the initial full-width I.",
+      "localization_note": "Preserve the established trade wording and order of place, seller and commodity. Normalize the initial full-width I.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34292292,
+          "target": 33900216,
+          "reference_start": 34292268,
+          "source_andcurrent_hex": "081091e531ff2fe10610a0e10720a0e10030a0e15f00a0e31b81feeb",
+          "source_context": [
+            "0x020b4204 add r1, r6, #4",
+            "0x020b4208 mov r6, r0",
+            "0x020b420c add r0, r1, sb",
+            "0x020b4210 ldr r1, [r0]",
+            "0x020b4214 ldr r1, [r1, #8]",
+            "0x020b4218 blx r1",
+            "0x020b421c add r1, r7, #4",
+            "0x020b4220 mov r7, r0",
+            "0x020b4224 add r0, r1, r4, lsl #4",
+            "0x020b4228 ldr r1, [r0]",
+            "0x020b422c ldr r1, [r1, #8]",
+            "0x020b4230 blx r1",
+            "0x020b4234 mov r1, r6",
+            "0x020b4238 mov r2, r7",
+            "0x020b423c mov r3, r0",
+            "0x020b4240 mov r0, #0x5f"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "82686e2025732c20257320736f6c64206c6172676520616d6f756e7473206f6620257320616e6420657870616e646564207468656972206d61726b65742073686172652120",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 3,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_96",
+      "message_ID": 96,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 0,
+        "offset": 3408,
+        "copy_end": 3444,
+        "bytes": 35,
+        "record_index": 72,
+        "table_offset": 1317328,
+        "start_in_record": 53
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3896,
+        "copy_end": 3927,
+        "bytes": 30,
+        "record_index": 91,
+        "table_offset": 1317328,
+        "start_in_record": 70
+      },
+      "source_hex": "257382cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd8149",
+      "current_hex": "25732773206d61726b6574207368617265206861732066616c6c656e2120",
+      "source_Japanese": "%sのシェアが\n下がってしまいました！",
+      "current_English": "%s's market share has fallen! ",
+      "english": "%s's market share has fallen!",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The share fell. Check that the caller supplies a place and whose share is implied.",
+      "context": "The original call reads the player company object and passes its name. The possessive correctly names whose share fell. Do not reinterpret it as a city argument.",
+      "localization_note": "The original call reads the player company object and passes its name. The possessive correctly names whose share fell. Do not reinterpret it as a city argument.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34292384,
+          "target": 33900216,
+          "reference_start": 34292360,
+          "source_andcurrent_hex": "912020e0001090e5081091e531ff2fe10010a0e16000a0e30481feeb",
+          "source_context": [
+            "0x020b4260 mov r1, #2",
+            "0x020b4264 ldr r0, [pc, #0x50]",
+            "0x020b4268 mov r2, r1",
+            "0x020b426c mov r3, #1",
+            "0x020b4270 bl #0x21096f8",
+            "0x020b4274 bl #0x20cb160",
+            "0x020b4278 mov r4, r0",
+            "0x020b427c bl #0x20397d8",
+            "0x020b4280 add r2, r4, #4",
+            "0x020b4284 mov r1, #0x4c",
+            "0x020b4288 mla r0, r1, r0, r2",
+            "0x020b428c ldr r1, [r0]",
+            "0x020b4290 ldr r1, [r1, #8]",
+            "0x020b4294 blx r1",
+            "0x020b4298 mov r1, r0",
+            "0x020b429c mov r0, #0x60"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "25732773206d61726b6574207368617265206861732066616c6c656e2120",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              176,
+              36235020,
+              4299
+            ]
+          ],
+          "exact_instruction_count": 187,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_112",
+      "message_ID": 112,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 439,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "current_hex": "53797374656d2064617461206e6f7420666f756e642e0a202020202020",
+      "source_Japanese": "システムデータがありません。\n",
+      "current_English": "System data not found.\n      ",
+      "english": "System data not found.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "System data absence is distinct from missing game data. Source has a trailing line separator to classify.",
+      "context": "The existing notice accurately reports missing system data. Its extra newline and padding are separate from the wording. Two direct native routes are present, including a lookup and a modal.",
+      "localization_note": "The existing notice accurately reports missing system data. Its extra newline and padding are separate from the wording. Two direct native routes are present, including a lookup and a modal.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34528836,
+          "target": 33903244,
+          "reference_start": 34528812,
+          "source_andcurrent_hex": "20608de5000050e30700000a020014e2a000000a7000a0e3109dfdeb",
+          "source_context": [
+            "0x020ede04 ldr r0, [sp, #0x28]",
+            "0x020ede08 add r2, sp, #0x6500",
+            "0x020ede0c str r0, [sp]",
+            "0x020ede10 mov r0, fp",
+            "0x020ede14 mov r1, r7",
+            "0x020ede18 add r2, r2, #0x84",
+            "0x020ede1c add r3, sp, #0x45",
+            "0x020ede20 bl #0x20eeca0",
+            "0x020ede24 mov r4, r0",
+            "0x020ede28 ldr r0, [sp, #0x2c]",
+            "0x020ede2c str r6, [sp, #0x20]",
+            "0x020ede30 cmp r0, #0",
+            "0x020ede34 beq #0x20ede58",
+            "0x020ede38 ands r0, r4, #2",
+            "0x020ede3c beq #0x20ee0c4",
+            "0x020ede40 mov r0, #0x70"
+          ],
+          "presentation": "direct-original-COMMON-lookup"
+        },
+        {
+          "call_PC": 34531256,
+          "target": 33900216,
+          "reference_start": 34531232,
+          "source_andcurrent_hex": "0e0000eb000050e32c009f153fa0c015030000ea7000a0e3be97fdeb",
+          "source_context": [
+            "0x020ee778 bl #0x20d9af4",
+            "0x020ee77c add r0, sp, #0",
+            "0x020ee780 bl #0x205473c",
+            "0x020ee784 mov r0, #0",
+            "0x020ee788 str r0, [r4]",
+            "0x020ee78c b #0x20ee7c4",
+            "0x020ee790 cmp r7, #0",
+            "0x020ee794 beq #0x20ee7b4",
+            "0x020ee798 mov r0, #0",
+            "0x020ee79c mov r1, r0",
+            "0x020ee7a0 bl #0x20ee7e0",
+            "0x020ee7a4 cmp r0, #0",
+            "0x020ee7a8 ldrne r0, [pc, #0x2c]",
+            "0x020ee7ac strbne sl, [r0, #0x3f]",
+            "0x020ee7b0 b #0x20ee7c4",
+            "0x020ee7b4 mov r0, #0x70"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "53797374656d2064617461206e6f7420666f756e642e0a202020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        },
+        {
+          "wrapper": 33903244,
+          "terminal_PC": 41811968,
+          "buffer_pointer": 36243212,
+          "copied_hex": "53797374656d2064617461206e6f7420666f756e642e0a202020202020",
+          "mode": null,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 178,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_118",
+      "message_ID": 118,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 786,
+        "copy_end": 818,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "current_hex": "53797374656d206461746120697320636f727275707465642e2020202020",
+      "source_Japanese": "システムデータが壊れています。",
+      "current_English": "System data is corrupted.     ",
+      "english": "System data is corrupted.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "System data is the affected data.",
+      "context": "The current wording accurately identifies corrupted system data. The original failure branch also invokes the separate fallback explanation in 122.",
+      "localization_note": "The current wording accurately identifies corrupted system data. The original failure branch also invokes the separate fallback explanation in 122.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34531784,
+          "target": 33900216,
+          "reference_start": 34531760,
+          "source_andcurrent_hex": "0010a0e3641080e597df8de20100a0e3f08fbde87600a0e33a97fdeb",
+          "source_context": [
+            "0x020ee988 strbne r1, [r0, #0x3e]",
+            "0x020ee98c ldr r0, [pc, #0x78]",
+            "0x020ee990 cmp sl, #0",
+            "0x020ee994 ldrb r1, [r0, #0x3e]",
+            "0x020ee998 bic r1, r1, #2",
+            "0x020ee99c strb r1, [r0, #0x3e]",
+            "0x020ee9a0 ldrbne r1, [r0, #0x3e]",
+            "0x020ee9a4 orrne r1, r1, #2",
+            "0x020ee9a8 strbne r1, [r0, #0x3e]",
+            "0x020ee9ac ldr r0, [pc, #0x50]",
+            "0x020ee9b0 mov r1, #0",
+            "0x020ee9b4 str r1, [r0, #0x64]",
+            "0x020ee9b8 add sp, sp, #0x25c",
+            "0x020ee9bc mov r0, #1",
+            "0x020ee9c0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x020ee9c4 mov r0, #0x76"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "53797374656d206461746120697320636f727275707465642e2020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_120",
+      "message_ID": 120,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 874,
+        "copy_end": 898,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "current_hex": "45766572797468696e6720636f72726563743f202020",
+      "source_Japanese": "すべてよろしいですか？",
+      "current_English": "Everything correct?   ",
+      "english": "Everything correct?",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "A confirmation of the full selection. No specific object named.",
+      "context": "Everything correct? is a natural short confirmation. The original setup branch invokes a yes/no modal and preserves the prior selection state on the negative route.",
+      "localization_note": "Everything correct? is a natural short confirmation. The original setup branch invokes a yes/no modal and preserves the prior selection state on the negative route.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34201588,
+          "target": 33900068,
+          "reference_start": 34201564,
+          "source_andcurrent_hex": "7080bde81c5894e50220a0e37800a0e30110a0e31c2884e58ad9feeb",
+          "source_context": [
+            "0x0209dfb4 bl #0x209e770",
+            "0x0209dfb8 add sp, sp, #0x108",
+            "0x0209dfbc pop {r4, r5, r6, pc}",
+            "0x0209dfc0 ldr r1, [r4, #0x54]",
+            "0x0209dfc4 add r0, r1, #0x50",
+            "0x0209dfc8 add r1, r1, #0x54",
+            "0x0209dfcc bl #0x209f980",
+            "0x0209dfd0 mov r0, r4",
+            "0x0209dfd4 bl #0x209e608",
+            "0x0209dfd8 add sp, sp, #0x108",
+            "0x0209dfdc pop {r4, r5, r6, pc}",
+            "0x0209dfe0 ldr r5, [r4, #0x81c]",
+            "0x0209dfe4 mov r2, #2",
+            "0x0209dfe8 mov r0, #0x78",
+            "0x0209dfec mov r1, #1",
+            "0x0209dff0 str r2, [r4, #0x81c]"
+          ],
+          "presentation": "yes-no-with-extra-control"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900068,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "45766572797468696e6720636f72726563743f202020",
+          "mode": 1,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_121",
+      "message_ID": 121,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 898,
+        "copy_end": 918,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "current_hex": "5468652067616d652063616e6e6f742073617665",
+      "source_Japanese": "ゲームを始めますか？",
+      "current_English": "The game cannot save",
+      "english": "Start the game?",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "A simple start confirmation.",
+      "context": "The source asks whether to start. The current native copy returns a fragment from the unrelated save warning. Restore the confirmation at the original yes/no call.",
+      "localization_note": "The source asks whether to start. The current native copy returns a fragment from the unrelated save warning. Restore the confirmation at the original yes/no call.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34529612,
+          "target": 33900140,
+          "reference_start": 34529588,
+          "source_andcurrent_hex": "7b00a0e35e99fdeb0000a0e308008de5020000ea7900a0e34699fdeb",
+          "source_context": [
+            "0x020ee10c ldr r0, [sp, #0x2c]",
+            "0x020ee110 cmp r0, #0",
+            "0x020ee114 moveq r0, #1",
+            "0x020ee118 streq r0, [sp, #8]",
+            "0x020ee11c b #0x20ee154",
+            "0x020ee120 cmp r0, #1",
+            "0x020ee124 bne #0x20ee154",
+            "0x020ee128 ldr r0, [sp, #0x2c]",
+            "0x020ee12c cmp r0, #0",
+            "0x020ee130 beq #0x20ee148",
+            "0x020ee134 mov r0, #0x7b",
+            "0x020ee138 bl #0x20546b8",
+            "0x020ee13c mov r0, #0",
+            "0x020ee140 str r0, [sp, #8]",
+            "0x020ee144 b #0x20ee154",
+            "0x020ee148 mov r0, #0x79"
+          ],
+          "presentation": "yes-no"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900140,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "5468652067616d652063616e6e6f742073617665",
+          "mode": 1,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_122",
+      "message_ID": 122,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 918,
+        "copy_end": 1006,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "current_hex": "20686572652e20537461727420616e797761793f0a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "current_English": " here. Start anyway?\n                                                                  ",
+      "english": "Couldn't load the system data. The game will start with default system data.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "Failed load followed by starting with initialized system data. Confirm whether the data extends beyond settings.",
+      "context": "The current native copy starts in the middle of the same save warning. Restore the source's load failure and subsequent initialization. The caller continues startup after the notice.",
+      "localization_note": "The current native copy starts in the middle of the same save warning. Restore the source's load failure and subsequent initialization. The caller continues startup after the notice.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34531792,
+          "target": 33900216,
+          "reference_start": 34531768,
+          "source_andcurrent_hex": "97df8de20100a0e3f08fbde87600a0e33a97fdeb7a00a0e33897fdeb",
+          "source_context": [
+            "0x020ee990 cmp sl, #0",
+            "0x020ee994 ldrb r1, [r0, #0x3e]",
+            "0x020ee998 bic r1, r1, #2",
+            "0x020ee99c strb r1, [r0, #0x3e]",
+            "0x020ee9a0 ldrbne r1, [r0, #0x3e]",
+            "0x020ee9a4 orrne r1, r1, #2",
+            "0x020ee9a8 strbne r1, [r0, #0x3e]",
+            "0x020ee9ac ldr r0, [pc, #0x50]",
+            "0x020ee9b0 mov r1, #0",
+            "0x020ee9b4 str r1, [r0, #0x64]",
+            "0x020ee9b8 add sp, sp, #0x25c",
+            "0x020ee9bc mov r0, #1",
+            "0x020ee9c0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x020ee9c4 mov r0, #0x76",
+            "0x020ee9c8 bl #0x20546b8",
+            "0x020ee9cc mov r0, #0x7a"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "20686572652e20537461727420616e797761793f0a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_123",
+      "message_ID": 123,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1006,
+        "copy_end": 1046,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "current_hex": "53797374656d2064617461206661696c656420746f206c6f61642e202020202020202020200a20",
+      "source_Japanese": "システムデータのロードに失敗しました。\n",
+      "current_English": "System data failed to load.          \n ",
+      "english": "System data failed to load.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "Failure only. Source has a trailing separator to classify.",
+      "context": "The current standalone load failure preserves the source. Keep it distinct from missing or corrupted data and from the notice that also says startup will continue.",
+      "localization_note": "The current standalone load failure preserves the source. Keep it distinct from missing or corrupted data and from the notice that also says startup will continue.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34529592,
+          "target": 33900216,
+          "reference_start": 34529568,
+          "source_andcurrent_hex": "010050e30a00001a2c009de5000050e30400000a7b00a0e35e99fdeb",
+          "source_context": [
+            "0x020ee0f8 bne #0x20ee120",
+            "0x020ee0fc ldr r1, [sp, #0x2c]",
+            "0x020ee100 mov r0, #1",
+            "0x020ee104 bl #0x20ee7e0",
+            "0x020ee108 str r0, [sp, #8]",
+            "0x020ee10c ldr r0, [sp, #0x2c]",
+            "0x020ee110 cmp r0, #0",
+            "0x020ee114 moveq r0, #1",
+            "0x020ee118 streq r0, [sp, #8]",
+            "0x020ee11c b #0x20ee154",
+            "0x020ee120 cmp r0, #1",
+            "0x020ee124 bne #0x20ee154",
+            "0x020ee128 ldr r0, [sp, #0x2c]",
+            "0x020ee12c cmp r0, #0",
+            "0x020ee130 beq #0x20ee148",
+            "0x020ee134 mov r0, #0x7b"
+          ],
+          "presentation": "notice"
+        },
+        {
+          "call_PC": 34531264,
+          "target": 33900216,
+          "reference_start": 34531240,
+          "source_andcurrent_hex": "2c009f153fa0c015030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb",
+          "source_context": [
+            "0x020ee780 bl #0x205473c",
+            "0x020ee784 mov r0, #0",
+            "0x020ee788 str r0, [r4]",
+            "0x020ee78c b #0x20ee7c4",
+            "0x020ee790 cmp r7, #0",
+            "0x020ee794 beq #0x20ee7b4",
+            "0x020ee798 mov r0, #0",
+            "0x020ee79c mov r1, r0",
+            "0x020ee7a0 bl #0x20ee7e0",
+            "0x020ee7a4 cmp r0, #0",
+            "0x020ee7a8 ldrne r0, [pc, #0x2c]",
+            "0x020ee7ac strbne sl, [r0, #0x3f]",
+            "0x020ee7b0 b #0x20ee7c4",
+            "0x020ee7b4 mov r0, #0x70",
+            "0x020ee7b8 bl #0x20546b8",
+            "0x020ee7bc mov r0, #0x7b"
+          ],
+          "presentation": "notice"
+        },
+        {
+          "call_PC": 34531820,
+          "target": 33900216,
+          "reference_start": 34531796,
+          "source_andcurrent_hex": "30009fe51461fdeb97df8de20000a0e3f08fbde87b00a0e33197fdeb",
+          "source_context": [
+            "0x020ee9ac ldr r0, [pc, #0x50]",
+            "0x020ee9b0 mov r1, #0",
+            "0x020ee9b4 str r1, [r0, #0x64]",
+            "0x020ee9b8 add sp, sp, #0x25c",
+            "0x020ee9bc mov r0, #1",
+            "0x020ee9c0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x020ee9c4 mov r0, #0x76",
+            "0x020ee9c8 bl #0x20546b8",
+            "0x020ee9cc mov r0, #0x7a",
+            "0x020ee9d0 bl #0x20546b8",
+            "0x020ee9d4 ldr r0, [pc, #0x30]",
+            "0x020ee9d8 bl #0x2046e30",
+            "0x020ee9dc add sp, sp, #0x25c",
+            "0x020ee9e0 mov r0, #0",
+            "0x020ee9e4 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x020ee9e8 mov r0, #0x7b"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "53797374656d2064617461206661696c656420746f206c6f61642e202020202020202020200a20",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_125",
+      "message_ID": 125,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1224,
+        "copy_end": 1272,
+        "bytes": 48,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 76
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1107,
+        "copy_end": 1179,
+        "bytes": 72,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 61
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382cc8c698b4382aa0a89f1959c82b582dc82b582bd",
+      "current_hex": "5468616e6b7320746f207375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e742c20257327732065636f6e6f6d7920686173207265636f76657265642e",
+      "source_Japanese": "巨額の商業投資のおかげで\n%sの景気が\n回復しました",
+      "current_English": "Thanks to substantial commercial investment, %s's economy has recovered.",
+      "english": "Thanks to substantial commercial investment, %s's economy has recovered.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "Recovery follows a large investment. The second notice reports prosperity.",
+      "context": "The sentence preserves both the substantial investment and the resulting economic recovery.",
+      "localization_note": "The sentence preserves both the substantial investment and the resulting economic recovery.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34291124,
+          "target": 33900216,
+          "reference_start": 34291100,
+          "source_andcurrent_hex": "0a00a0e1001090e5081091e531ff2fe10010a0e17d00a0e33f82feeb",
+          "source_context": [
+            "0x020b3d74 mov r4, r0",
+            "0x020b3d78 asr r0, r1, #1",
+            "0x020b3d7c cmp r0, r4",
+            "0x020b3d80 bgt #0x20b3e08",
+            "0x020b3d84 mov r0, sl",
+            "0x020b3d88 bl #0x20b2e04",
+            "0x020b3d8c cmp r0, #4",
+            "0x020b3d90 bne #0x20b3dbc",
+            "0x020b3d94 mov r0, sl",
+            "0x020b3d98 bl #0x20b2dc0",
+            "0x020b3d9c mov r0, sl",
+            "0x020b3da0 ldr r1, [r0]",
+            "0x020b3da4 ldr r1, [r1, #8]",
+            "0x020b3da8 blx r1",
+            "0x020b3dac mov r1, r0",
+            "0x020b3db0 mov r0, #0x7d"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "5468616e6b7320746f207375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e742c20257327732065636f6e6f6d7920686173207265636f76657265642e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_126",
+      "message_ID": 126,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1272,
+        "copy_end": 1324,
+        "bytes": 50,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 124
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1179,
+        "copy_end": 1250,
+        "bytes": 69,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 133
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382aa8d448c698b4382c90a82ed82a282c482a282dc82b7",
+      "current_hex": "5375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e74206861732062726f7567687420616e2065636f6e6f6d696320626f6f6d20746f2025732e",
+      "source_Japanese": "巨額の商業投資のおかげで\n%sが好景気に\nわいています",
+      "current_English": "Substantial commercial investment has brought an economic boom to %s.",
+      "english": "Substantial commercial investment has brought an economic boom to %s.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "A boom is stronger than recovery. Preserve the same cause.",
+      "context": "The existing economic boom notice naturally conveys the stronger outcome and retains its investment cause.",
+      "localization_note": "The existing economic boom notice naturally conveys the stronger outcome and retains its investment cause.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34291204,
+          "target": 33900216,
+          "reference_start": 34291180,
+          "source_andcurrent_hex": "0a00a0e1001090e5081091e531ff2fe10010a0e17e00a0e32b82feeb",
+          "source_context": [
+            "0x020b3dc4 cmp r0, #0xc",
+            "0x020b3dc8 bne #0x20b3e08",
+            "0x020b3dcc ldr r0, [sp]",
+            "0x020b3dd0 lsl r0, r0, #1",
+            "0x020b3dd4 cmp r0, r4",
+            "0x020b3dd8 bgt #0x20b3e08",
+            "0x020b3ddc mov r0, sl",
+            "0x020b3de0 mov r1, #3",
+            "0x020b3de4 mov r2, #1",
+            "0x020b3de8 bl #0x20b2dd4",
+            "0x020b3dec mov r0, sl",
+            "0x020b3df0 ldr r1, [r0]",
+            "0x020b3df4 ldr r1, [r1, #8]",
+            "0x020b3df8 blx r1",
+            "0x020b3dfc mov r1, r0",
+            "0x020b3e00 mov r0, #0x7e"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "5375627374616e7469616c20636f6d6d65726369616c20696e766573746d656e74206861732062726f7567687420616e2065636f6e6f6d696320626f6f6d20746f2025732e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_127",
+      "message_ID": 127,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1324,
+        "copy_end": 1352,
+        "bytes": 28,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1250,
+        "copy_end": 1269,
+        "bytes": 19,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "source_hex": "8b92935f82c682b782e98a5882f0914982f182c582ad82be82b382a2",
+      "current_hex": "43686f6f73652061206261736520636974792e",
+      "source_Japanese": "拠点とする街を選んでください",
+      "current_English": "Choose a base city.",
+      "english": "Choose a base city.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The player is selecting a base, not issuing a docking command.",
+      "context": "The existing command clearly asks the player to choose a base city. The native selection route keeps this distinct from patrol and docking.",
+      "localization_note": "The existing command clearly asks the player to choose a base city. The native selection route keeps this distinct from patrol and docking.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123840,
+          "target": 33900216,
+          "reference_start": 34123816,
+          "source_andcurrent_hex": "030000ea100000ea090000ea040000ea0b0000ea7f00a0e39c25ffeb",
+          "source_context": [
+            "0x0208b000 bl #0x2035a24",
+            "0x0208b004 mov r0, #1",
+            "0x0208b008 add sp, sp, #0xc",
+            "0x0208b00c pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x0208b010 stmdb sp!, {lr}",
+            "0x0208b014 sub sp, sp, #4",
+            "0x0208b018 cmp r0, #5",
+            "0x0208b01c addls pc, pc, r0, lsl #2",
+            "0x0208b020 b #0x208b074",
+            "0x0208b024 b #0x208b074",
+            "0x0208b028 b #0x208b03c",
+            "0x0208b02c b #0x208b074",
+            "0x0208b030 b #0x208b05c",
+            "0x0208b034 b #0x208b04c",
+            "0x0208b038 b #0x208b06c",
+            "0x0208b03c mov r0, #0x7f"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "43686f6f73652061206261736520636974792e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_128",
+      "message_ID": 128,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1352,
+        "copy_end": 1380,
+        "bytes": 26,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 29
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1269,
+        "copy_end": 1307,
+        "bytes": 36,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 20
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f182b582c482a282dc82b982f1",
+      "current_hex": "596f752068617665206e6f20636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街とは契約していません",
+      "current_English": "You have no contract with that city.",
+      "english": "You have no contract with that city.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "A selection refusal due to missing contract.",
+      "context": "The refusal clearly identifies the missing contract with the selected city. Its negative predicate is distinct from the already-contracted refusal.",
+      "localization_note": "The refusal clearly identifies the missing contract with the selected city. Its negative predicate is distinct from the already-contracted refusal.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123536,
+          "target": 33900216,
+          "reference_start": 34123512,
+          "source_andcurrent_hex": "010000ea000000ea060000ea000055e33700001a8000a0e3e825ffeb",
+          "source_context": [
+            "0x0208aed0 movgt r0, #1",
+            "0x0208aed4 strgt r0, [sp, #4]",
+            "0x0208aed8 movle r0, #0",
+            "0x0208aedc strle r0, [sp, #4]",
+            "0x0208aee0 cmp r4, #5",
+            "0x0208aee4 addls pc, pc, r4, lsl #2",
+            "0x0208aee8 b #0x208afec",
+            "0x0208aeec b #0x208afec",
+            "0x0208aef0 b #0x208af04",
+            "0x0208aef4 b #0x208afec",
+            "0x0208aef8 b #0x208af04",
+            "0x0208aefc b #0x208af04",
+            "0x0208af00 b #0x208af20",
+            "0x0208af04 cmp r5, #0",
+            "0x0208af08 bne #0x208afec",
+            "0x0208af0c mov r0, #0x80"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "596f752068617665206e6f20636f6e74726163742077697468207468617420636974792e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_129",
+      "message_ID": 129,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1380,
+        "copy_end": 1424,
+        "bytes": 43,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1307,
+        "copy_end": 1365,
+        "bytes": 57,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "source_hex": "8fa389fa82f08d7382a282dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "current_hex": "43686f6f73652061206369747920666f7220706174726f6c2e20596f75206d7573742068617665206120636f6e74726163742074686572652e",
+      "source_Japanese": "哨戒を行います\n契約のある街を選んでください",
+      "current_English": "Choose a city for patrol. You must have a contract there.",
+      "english": "Choose a city for patrol. You must have a contract there.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The fleet will patrol. The contract is with the port, not a contract to patrol.",
+      "context": "The two natural sentences give the patrol target and the requirement for a contract. Keep the city terminology shared by the fleet orders.",
+      "localization_note": "The two natural sentences give the patrol target and the requirement for a contract. Keep the city terminology shared by the fleet orders.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123856,
+          "target": 33900216,
+          "reference_start": 34123832,
+          "source_andcurrent_hex": "0b0000ea7f00a0e39c25ffeb04d08de20080bde88100a0e39825ffeb",
+          "source_context": [
+            "0x0208b010 stmdb sp!, {lr}",
+            "0x0208b014 sub sp, sp, #4",
+            "0x0208b018 cmp r0, #5",
+            "0x0208b01c addls pc, pc, r0, lsl #2",
+            "0x0208b020 b #0x208b074",
+            "0x0208b024 b #0x208b074",
+            "0x0208b028 b #0x208b03c",
+            "0x0208b02c b #0x208b074",
+            "0x0208b030 b #0x208b05c",
+            "0x0208b034 b #0x208b04c",
+            "0x0208b038 b #0x208b06c",
+            "0x0208b03c mov r0, #0x7f",
+            "0x0208b040 bl #0x20546b8",
+            "0x0208b044 add sp, sp, #4",
+            "0x0208b048 ldm sp!, {pc}",
+            "0x0208b04c mov r0, #0x81"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "43686f6f73652061206369747920666f7220706174726f6c2e20596f75206d7573742068617665206120636f6e74726163742074686572652e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_130",
+      "message_ID": 130,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1424,
+        "copy_end": 1472,
+        "bytes": 47,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1365,
+        "copy_end": 1414,
+        "bytes": 48,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd91e082f08af18d6082b382b982dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "current_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920756e64657220636f6e74726163742e",
+      "source_Japanese": "艦隊を寄港させます\n契約のある街を選んでください",
+      "current_English": "To dock the fleet, choose a city under contract.",
+      "english": "Choose a city where you have a contract. The fleet will dock there.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "The fleet will call at the selected contracted port. Break the wording into a short command and a constraint if needed for clarity.",
+      "context": "State clearly that the contract is with the city and the fleet will dock there. The native branch is the port-call order.",
+      "localization_note": "State clearly that the contract is with the city and the fleet will dock there. The native branch is the port-call order.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123872,
+          "target": 33900216,
+          "reference_start": 34123848,
+          "source_andcurrent_hex": "0080bde88100a0e39825ffeb04d08de20080bde88200a0e39425ffeb",
+          "source_context": [
+            "0x0208b020 b #0x208b074",
+            "0x0208b024 b #0x208b074",
+            "0x0208b028 b #0x208b03c",
+            "0x0208b02c b #0x208b074",
+            "0x0208b030 b #0x208b05c",
+            "0x0208b034 b #0x208b04c",
+            "0x0208b038 b #0x208b06c",
+            "0x0208b03c mov r0, #0x7f",
+            "0x0208b040 bl #0x20546b8",
+            "0x0208b044 add sp, sp, #4",
+            "0x0208b048 ldm sp!, {pc}",
+            "0x0208b04c mov r0, #0x81",
+            "0x0208b050 bl #0x20546b8",
+            "0x0208b054 add sp, sp, #4",
+            "0x0208b058 ldm sp!, {pc}",
+            "0x0208b05c mov r0, #0x82"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920756e64657220636f6e74726163742e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_131",
+      "message_ID": 131,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1472,
+        "copy_end": 1504,
+        "bytes": 30,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1414,
+        "copy_end": 1440,
+        "bytes": 24,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "source_hex": "8a588d558c8282f08d7382a48a5882f0914982f182c582ad82be82b382a2",
+      "current_hex": "43686f6f73652061206369747920746f2061747461636b2e",
+      "source_Japanese": "街攻撃を行う街を選んでください",
+      "current_English": "Choose a city to attack.",
+      "english": "Choose a city to attack.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The target is the port itself.",
+      "context": "The short command names the city as the attack target and fits the related selection prompts.",
+      "localization_note": "The short command names the city as the attack target and fits the related selection prompts.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123888,
+          "target": 33900216,
+          "reference_start": 34123864,
+          "source_andcurrent_hex": "0080bde88200a0e39425ffeb04d08de20080bde88300a0e39025ffeb",
+          "source_context": [
+            "0x0208b030 b #0x208b05c",
+            "0x0208b034 b #0x208b04c",
+            "0x0208b038 b #0x208b06c",
+            "0x0208b03c mov r0, #0x7f",
+            "0x0208b040 bl #0x20546b8",
+            "0x0208b044 add sp, sp, #4",
+            "0x0208b048 ldm sp!, {pc}",
+            "0x0208b04c mov r0, #0x81",
+            "0x0208b050 bl #0x20546b8",
+            "0x0208b054 add sp, sp, #4",
+            "0x0208b058 ldm sp!, {pc}",
+            "0x0208b05c mov r0, #0x82",
+            "0x0208b060 bl #0x20546b8",
+            "0x0208b064 add sp, sp, #4",
+            "0x0208b068 ldm sp!, {pc}",
+            "0x0208b06c mov r0, #0x83"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "43686f6f73652061206369747920746f2061747461636b2e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_132",
+      "message_ID": 132,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1504,
+        "copy_end": 1528,
+        "bytes": 22,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1440,
+        "copy_end": 1492,
+        "bytes": 50,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f18dcf82dd82c582b7",
+      "current_hex": "596f75206861766520616c7265616479207369676e6564206120636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街とは契約済みです",
+      "current_English": "You have already signed a contract with that city.",
+      "english": "You have already signed a contract with that city.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "A contract already exists, as distinct from the missing-contract refusal.",
+      "context": "The existing sentence accurately distinguishes an already signed contract from the absence of a contract.",
+      "localization_note": "The existing sentence accurately distinguishes an already signed contract from the absence of a contract.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123564,
+          "target": 33900216,
+          "reference_start": 34123540,
+          "source_andcurrent_hex": "0cd08de20000a0e3f08fbde8000055e30400000a8400a0e3e125ffeb",
+          "source_context": [
+            "0x0208aeec b #0x208afec",
+            "0x0208aef0 b #0x208af04",
+            "0x0208aef4 b #0x208afec",
+            "0x0208aef8 b #0x208af04",
+            "0x0208aefc b #0x208af04",
+            "0x0208af00 b #0x208af20",
+            "0x0208af04 cmp r5, #0",
+            "0x0208af08 bne #0x208afec",
+            "0x0208af0c mov r0, #0x80",
+            "0x0208af10 bl #0x20546b8",
+            "0x0208af14 add sp, sp, #0xc",
+            "0x0208af18 mov r0, #0",
+            "0x0208af1c pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x0208af20 cmp r5, #0",
+            "0x0208af24 beq #0x208af3c",
+            "0x0208af28 mov r0, #0x84"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "596f75206861766520616c7265616479207369676e6564206120636f6e74726163742077697468207468617420636974792e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 189,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_133",
+      "message_ID": 133,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1528,
+        "copy_end": 1572,
+        "bytes": 43,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1492,
+        "copy_end": 1555,
+        "bytes": 62,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd88c88a4f82c60a8c5f96f182b582c482a282dc82b7",
+      "current_hex": "412066616374696f6e206e6f7420617420776172207769746820796f7520686f6c6473206120636f6e74726163742077697468207468617420636974792e",
+      "source_Japanese": "その街は、交戦中の勢力以外と\n契約しています",
+      "current_English": "A faction not at war with you holds a contract with that city.",
+      "english": "A faction not at war with you holds a contract with that city.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The contracted faction is outside the set of enemies. Confirm which selection rule and actor the caller implies.",
+      "context": "The existing line correctly attributes the city's contract to a faction the player is not at war with. Keep that distinction.",
+      "localization_note": "The existing line correctly attributes the city's contract to a faction the player is not at war with. Keep that distinction.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123712,
+          "target": 33900216,
+          "reference_start": 34123688,
+          "source_andcurrent_hex": "000050e30200001a08009de5000050e30400000a8500a0e3bc25ffeb",
+          "source_context": [
+            "0x0208af80 mov r1, r7",
+            "0x0208af84 bl #0x203cb30",
+            "0x0208af88 cmp r0, #2",
+            "0x0208af8c movne r0, #1",
+            "0x0208af90 strne r0, [sp, #8]",
+            "0x0208af94 bne #0x208afa4",
+            "0x0208af98 add sb, sb, #1",
+            "0x0208af9c cmp sb, #3",
+            "0x0208afa0 blt #0x208af54",
+            "0x0208afa4 ldr r0, [sp, #4]",
+            "0x0208afa8 cmp r0, #0",
+            "0x0208afac bne #0x208afbc",
+            "0x0208afb0 ldr r0, [sp, #8]",
+            "0x0208afb4 cmp r0, #0",
+            "0x0208afb8 beq #0x208afd0",
+            "0x0208afbc mov r0, #0x85"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "412066616374696f6e206e6f7420617420776172207769746820796f7520686f6c6473206120636f6e74726163742077697468207468617420636974792e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_134",
+      "message_ID": 134,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1572,
+        "copy_end": 1616,
+        "bytes": 41,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1555,
+        "copy_end": 1626,
+        "bytes": 68,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd82c60a8c5f96f182b582c482a282dc82b982f1",
+      "current_hex": "54686174206369747920646f65736e27742068617665206120636f6e7472616374207769746820612066616374696f6e20796f752772652061742077617220776974682e",
+      "source_Japanese": "その街は、交戦中の勢力と\n契約していません",
+      "current_English": "That city doesn't have a contract with a faction you're at war with.",
+      "english": "That city doesn't have a contract with a faction you're at war with.",
+      "speaker": "Speakerless system notice",
+      "decision": "retention",
+      "source_meaning": "The port lacks a contract with a faction at war with the player. Keep the distinct negative condition.",
+      "context": "The current wording clearly describes a city with no contract with a faction at war with the player.",
+      "localization_note": "The current wording clearly describes a city with no contract with a faction at war with the player.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34123740,
+          "target": 33900216,
+          "reference_start": 34123716,
+          "source_andcurrent_hex": "0cd08de20000a0e3f08fbde800005ae30400001a8600a0e3b525ffeb",
+          "source_context": [
+            "0x0208af9c cmp sb, #3",
+            "0x0208afa0 blt #0x208af54",
+            "0x0208afa4 ldr r0, [sp, #4]",
+            "0x0208afa8 cmp r0, #0",
+            "0x0208afac bne #0x208afbc",
+            "0x0208afb0 ldr r0, [sp, #8]",
+            "0x0208afb4 cmp r0, #0",
+            "0x0208afb8 beq #0x208afd0",
+            "0x0208afbc mov r0, #0x85",
+            "0x0208afc0 bl #0x20546b8",
+            "0x0208afc4 add sp, sp, #0xc",
+            "0x0208afc8 mov r0, #0",
+            "0x0208afcc pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0x0208afd0 cmp sl, #0",
+            "0x0208afd4 bne #0x208afec",
+            "0x0208afd8 mov r0, #0x86"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "54686174206369747920646f65736e27742068617665206120636f6e7472616374207769746820612066616374696f6e20796f752772652061742077617220776974682e",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_135",
+      "message_ID": 135,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1616,
+        "copy_end": 1684,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1626,
+        "copy_end": 1694,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "source_hex": "8a5882cc906c815882cc937b82e882cd918a939682c882e082cc82c582b70a82c682c482e08f6f93fc82e882c582ab82e98ff38bb582c582cd82a082e882dc82b982f1",
+      "current_hex": "43697479207265736964656e74732061726520667572696f75732e0a2020456e74727920697320756e736166652e202020202020202020202020202020202020202020",
+      "source_Japanese": "街の人々の怒りは相当なものです\nとても出入りできる状況ではありません",
+      "current_English": "City residents are furious.\n  Entry is unsafe.                     ",
+      "english": "The people here are furious. There's no way in or out right now.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "Town anger makes entering or leaving infeasible. No claim about formal closure or permanent lockout.",
+      "context": "The source says public anger makes entering or leaving impossible. The current warning softens the restriction and drops the exit sense. Keep the temporal situation implicit in right now.",
+      "localization_note": "The source says public anger makes entering or leaving impossible. The current warning softens the restriction and drops the exit sense. Keep the temporal situation implicit in right now.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 34303396,
+          "target": 33900216,
+          "reference_start": 34303372,
+          "source_andcurrent_hex": "c6f8ffeb000050e304d08d020000a0030080bd088700a0e34376feeb",
+          "source_context": [
+            "0x020b6d64 mov r2, r4",
+            "0x020b6d68 add r0, r5, #0xeb0",
+            "0x020b6d6c bl #0x20b57bc",
+            "0x020b6d70 add r0, r5, #4",
+            "0x020b6d74 bl #0x20b9200",
+            "0x020b6d78 add sp, sp, #4",
+            "0x020b6d7c pop {r4, r5, pc}",
+            "0x020b6d80 stmdb sp!, {lr}",
+            "0x020b6d84 sub sp, sp, #4",
+            "0x020b6d88 bl #0x20b6618",
+            "0x020b6d8c bl #0x20b50ac",
+            "0x020b6d90 cmp r0, #0",
+            "0x020b6d94 addeq sp, sp, #4",
+            "0x020b6d98 moveq r0, #0",
+            "0x020b6d9c ldmeq sp!, {pc}",
+            "0x020b6da0 mov r0, #0x87"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "43697479207265736964656e74732061726520667572696f75732e0a2020456e74727920697320756e736166652e202020202020202020202020202020202020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_136",
+      "message_ID": 136,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1684,
+        "copy_end": 1732,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1694,
+        "copy_end": 1742,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "source_hex": "8fac9484935882cc8ac594c282f0914982d482c60a97ac8d7382c882c782cc8fee95f182f095b782af82dc82b7",
+      "current_hex": "202043686f6f73652061207369676e2e0a202048656172206d61726b6574206e6577732e202020202020202020",
+      "source_Japanese": "小売店の看板を選ぶと\n流行などの情報を聞けます",
+      "current_English": "  Choose a sign.\n  Hear market news.         ",
+      "english": "Choose a shop sign to ask about trends and other local news.",
+      "speaker": "Speakerless system notice",
+      "decision": "revision",
+      "source_meaning": "A retail-square tutorial. Selecting signs lets the player ask about trends and related information.",
+      "context": "Restore the shop-sign instruction and the source's broader information about trends. Use the native formatter for ordinary line breaks.",
+      "localization_note": "Restore the shop-sign instruction and the source's broader information about trends. Use the native formatter for ordinary line breaks.",
+      "manual_break_reason": "",
+      "native_callers": [
+        {
+          "call_PC": 33940224,
+          "target": 33900216,
+          "reference_start": 33940200,
+          "source_andcurrent_hex": "b0009fe50010a0e35a16ffeb000050e30100001a8800a0e3ecd8ffeb",
+          "source_context": [
+            "0x0205e2c0 add r1, sp, #0",
+            "0x0205e2c4 ldr r0, [r0, #-0x14]",
+            "0x0205e2c8 add r0, r1, r0",
+            "0x0205e2cc bl #0x20c8f60",
+            "0x0205e2d0 add r0, sp, #0",
+            "0x0205e2d4 bl #0x205f044",
+            "0x0205e2d8 add r0, sp, #0",
+            "0x0205e2dc bl #0x205f6cc",
+            "0x0205e2e0 add sp, sp, #0xbb0",
+            "0x0205e2e4 pop {r4, r5, r6, r7, r8, pc}",
+            "0x0205e2e8 ldr r0, [pc, #0xb0]",
+            "0x0205e2ec mov r1, #0",
+            "0x0205e2f0 bl #0x2023c60",
+            "0x0205e2f4 cmp r0, #0",
+            "0x0205e2f8 bne #0x205e304",
+            "0x0205e2fc mov r0, #0x88"
+          ],
+          "presentation": "notice"
+        }
+      ],
+      "current_copies": [
+        {
+          "wrapper": 33900216,
+          "terminal_PC": 33900404,
+          "buffer_pointer": 36243212,
+          "copied_hex": "202043686f6f73652061207369676e2e0a202048656172206d61726b6574206e6577732e202020202020202020",
+          "mode": 0,
+          "file_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              4475,
+              36235020,
+              4064
+            ]
+          ],
+          "exact_instruction_count": 190,
+          "original_loader_and_wrapper_to_native_format_entry": true
+        }
+      ],
+      "native_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "formatting_and_representative_display_pending": true,
+      "source_activation_or_actual_gameplay_not_claimed": true,
+      "new_credit": 0
+    }
+  ],
+  "counts": {
+    "revision": 10,
+    "retention": 20
+  },
+  "original_native_copy_cases": 31,
+  "remaining_compared_message_IDs": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    124,
+    750,
+    751,
+    752
+  ],
+  "not_yet_classified_as_unused": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    124,
+    750,
+    751,
+    752
+  ],
+  "separate_levelup_andpunctuation_3_source_leads_still_pending": true,
+  "source_and_registered_source_callers_bound": true,
+  "runtime": {
+    "candidate": "work\\lil261_B323_B335_release_v1\\all_routes_lil261_B323_B335_candidate.nds",
+    "candidate_sha256": "7c2553642e40b6eb56560d95a489b8015b7b1d7d42ea8efb479be1f2817e9642",
+    "ARM9_sha256": "dae19a97e1496d4a698c0b06161006dec7f4fe0123192a3129da795e6682d797",
+    "COMMON_sha256": "94cfaf8debed48b1b76af82f850ac26d44c16b8d50704791e3587c49fadf5903",
+    "release_proof": "work\\lil261_B323_B335_release_v1\\registered_release_verification.json",
+    "release_proof_sha256": "d78714ef1647c89facf35b412a322fba816e4177b6afab3a3d7bb0344765389d",
+    "startup_proof": "work\\lil261_B323_B335_release_v1\\own_registered_startup_verification.json",
+    "startup_proof_sha256": "c9cb28c272c32c9338a676f48d25993967122afcece049cf178375fe7afc064a",
+    "snapshot": {
+      "path": "work\\lil261_B323_B335_release_v1\\own_startup_run_v1\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "52313dfdb0f427231315137d3a99dfdd0ca5c45a999f721eab559342a628ffc0",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "current_source_andcomparison": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\contextual_comparison_pending_consumers.json",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "review_status": "four gates passed, native formatting, representative display and release pending",
+  "native_calls_stop_before_modal_layout_and_use_test_arguments": true,
+  "no_new_gameplay_or_review_credit": true,
+  "evidence": {
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\contextual_comparison_pending_consumers.json": "471bb1cd9ace6f220e5d1c8760bd8f51eedab5fa43e2f8f27e3c61a817de7817",
+    "work\\analysis\\native_common_arm_calls_wrappers_clean.json": "b93f7a8a15ebaf2126d60521a1e61c75867687ecca72384a121eacbbca756bab",
+    "work\\lil261_B323_B335_release_v1\\registered_release_verification.json": "d78714ef1647c89facf35b412a322fba816e4177b6afab3a3d7bb0344765389d",
+    "work\\lil261_B323_B335_release_v1\\own_registered_startup_verification.json": "c9cb28c272c32c9338a676f48d25993967122afcece049cf178375fe7afc064a",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\review_literal_notice_callers_v1.py": "35b5d93538cb6143a10c692e935410407cc9953e0acefa006d748a16d48a9555"
+  },
+  "full_goal_complete": false
+}

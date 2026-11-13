@@ -1,0 +1,53 @@
+push {r4-r8,lr}
+mov r4,r0
+mov r5,r1
+ldr r7,source_address
+cmp r5,r7
+bne fallback
+ldr r7,slot_address
+ldr r6,[r7]
+cmp r6,#0
+bne ready
+mov r0,#0x3b00
+bl 0x02005154
+cmp r0,#0
+beq fallback
+mov r6,r0
+mov r1,#0
+mov r2,#0x3b00
+bl 0x020d763c
+ldr r0,[r5]
+str r0,[r6]
+ldr r0,[r5,#4]
+str r0,[r6,#4]
+mov r0,#132
+str r0,[r6,#8]
+ldr r0,[r5,#12]
+add r0,r5,r0
+sub r0,r0,r6
+str r0,[r6,#12]
+mov r0,#20
+str r0,[r6,#16]
+ldr r1,[r5,#16]
+add r1,r5,r1
+add r0,r6,#20
+mov r2,#0x2000
+add r2,r2,#16
+bl 0x020cec74
+str r6,[r7]
+ready:
+mov r0,r4
+mov r1,r6
+mov r2,#0
+mov r3,#0
+pop {r4-r8,lr}
+b 0x020d3e44
+fallback:
+mov r0,r4
+mov r1,r5
+mov r2,#0
+mov r3,#0
+pop {r4-r8,lr}
+b 0x020d3e44
+source_address: .word 0x022bd774
+slot_address: .word 33539580

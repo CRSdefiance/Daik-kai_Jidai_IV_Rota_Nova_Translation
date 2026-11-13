@@ -1,0 +1,263 @@
+{
+  "format": "dk4-gallery-description-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "source_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "EVENT_SCENES_TITLE",
+      "source_fields": [
+        {
+          "field": 275144,
+          "source_pointer": 34847064,
+          "source_hex": "83438378839383678356815b8393",
+          "japanese": "イベントシーン"
+        }
+      ],
+      "japanese": "イベントシーン",
+      "english": "Event Scenes",
+      "compiled_rows": [
+        "Event Scenes"
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 42,
+      "speaker": "Gallery interface",
+      "source_meaning": "The Gallery section showing memorable scenes for each protagonist.",
+      "localization_note": "Natural complete heading for the event-scene collection; retain Scenes as the section subject.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "EVENT_SCENES_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 275148,
+          "source_pointer": 34847080,
+          "source_hex": "82bb82ea82bc82ea82cc8ee5906c8cf682cc96bc8fea96ca82f0",
+          "japanese": "それぞれの主人公の名場面を"
+        },
+        {
+          "field": 275152,
+          "source_pointer": 34847108,
+          "source_hex": "82e082a488ea9378814182c782a482bc8142",
+          "japanese": "もう一度、どうぞ。"
+        }
+      ],
+      "japanese": "それぞれの主人公の名場面をもう一度、どうぞ。",
+      "english": "Relive memorable scenes from each captain's story.",
+      "compiled_rows": [
+        "Relive memorable scenes ",
+        "from each captain's story."
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 34,
+      "speaker": "Gallery interface",
+      "source_meaning": "An invitation to see each protagonist's memorable scenes again.",
+      "localization_note": "Relive expresses seeing the scenes again. Captain follows the established game terminology. The formatter divides the complete paragraph across the two native rows.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "HISTORIC_SITES_TITLE",
+      "source_fields": [
+        {
+          "field": 279100,
+          "source_pointer": 34847128,
+          "source_hex": "8e6a90d5",
+          "japanese": "史跡"
+        }
+      ],
+      "japanese": "史跡",
+      "english": "Historic Sites",
+      "compiled_rows": [
+        "Historic Sites"
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 42,
+      "speaker": "Gallery interface",
+      "source_meaning": "The Gallery section for historical sites.",
+      "localization_note": "Natural complete English heading; the following description identifies the ruins and churches.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "HISTORIC_SITES_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 279104,
+          "source_pointer": 34847136,
+          "source_hex": "82a082c882bd82aa82b182ea82dc82c582c994ad8ca982b582bd88e290d582e2",
+          "japanese": "あなたがこれまでに発見した遺跡や"
+        },
+        {
+          "field": 279108,
+          "source_pointer": 34847172,
+          "source_hex": "8bb389ef82f08a6d944682c582ab82dc82b7",
+          "japanese": "教会を確認できます"
+        }
+      ],
+      "japanese": "あなたがこれまでに発見した遺跡や教会を確認できます",
+      "english": "View the ruins and churches you've discovered.",
+      "compiled_rows": [
+        "View the ruins and churches ",
+        "you've discovered."
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 40,
+      "speaker": "Gallery interface",
+      "source_meaning": "You can review the ruins and churches you have discovered so far.",
+      "localization_note": "Retain both categories and the already-discovered condition. The formatter divides this one logical paragraph across the two native rows.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "EVENT_SCENES_RAPHAEL_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 1136248,
+          "source_pointer": 34838964,
+          "source_hex": "8389837483408347838b82cc83588367815b838a815b82cc96bc8fea96ca",
+          "japanese": "ラファエルのストーリーの名場面"
+        }
+      ],
+      "japanese": "ラファエルのストーリーの名場面",
+      "english": "Memorable scenes from Raphael's story.",
+      "compiled_rows": [
+        "Memorable scenes from Raphael's story."
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 40,
+      "speaker": "Gallery interface",
+      "source_meaning": "Memorable scenes from the story of Raphael.",
+      "localization_note": "Retain the selected captain and memorable-scene subject in a complete natural-English label. Native array lookup selects this description at x8/y20.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "EVENT_SCENES_HODRAM_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 1136252,
+          "source_pointer": 34838836,
+          "source_hex": "837a83688389838082cc83588367815b838a815b82cc96bc8fea96ca",
+          "japanese": "ホドラムのストーリーの名場面"
+        }
+      ],
+      "japanese": "ホドラムのストーリーの名場面",
+      "english": "Memorable scenes from Hodram's story.",
+      "compiled_rows": [
+        "Memorable scenes from Hodram's story. "
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 40,
+      "speaker": "Gallery interface",
+      "source_meaning": "Memorable scenes from the story of Hodram.",
+      "localization_note": "Retain the selected captain and memorable-scene subject in a complete natural-English label. Native array lookup selects this description at x8/y20.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "EVENT_SCENES_LIL_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 1136256,
+          "source_pointer": 34838552,
+          "source_hex": "838a838b82cc83588367815b838a815b82cc96bc8fea96ca",
+          "japanese": "リルのストーリーの名場面"
+        }
+      ],
+      "japanese": "リルのストーリーの名場面",
+      "english": "Memorable scenes from Lil's story.",
+      "compiled_rows": [
+        "Memorable scenes from Lil's story."
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 40,
+      "speaker": "Gallery interface",
+      "source_meaning": "Memorable scenes from the story of Lil.",
+      "localization_note": "Retain the selected captain and memorable-scene subject in a complete natural-English label. Native array lookup selects this description at x8/y20.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "EVENT_SCENES_MARIA_DESCRIPTION",
+      "source_fields": [
+        {
+          "field": 1136260,
+          "source_pointer": 34838692,
+          "source_hex": "837d838a834182cc83588367815b838a815b82cc96bc8fea96ca",
+          "japanese": "マリアのストーリーの名場面"
+        }
+      ],
+      "japanese": "マリアのストーリーの名場面",
+      "english": "Memorable scenes from Maria's story.",
+      "compiled_rows": [
+        "Memorable scenes from Maria's story."
+      ],
+      "formatter": "gallery-native-balanced-rows-pair-safe-v1",
+      "capacity_ascii_characters": 40,
+      "speaker": "Gallery interface",
+      "source_meaning": "Memorable scenes from the story of Maria.",
+      "localization_note": "Retain the selected captain and memorable-scene subject in a complete natural-English label. Native array lookup selects this description at x8/y20.",
+      "context": "Event initial rows: title centered at y2, description x48 at y80/96; selected-event redraw reuses the title and indexes the four-captain table 02115678 through literal 02043304, drawing at x8/y20. Historic Sites native 02044158: title centered at y2, description x8 at y20/32, optional selected site centered at y70. All use 020456A0 and a 256x192 primary bitmap.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "status": "reviewed-natural-prose-and-native-parent-crops-physical-gameplay-pending"
+}

@@ -1,0 +1,35 @@
+{
+  "format": "dk4-native-common-natural-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_872",
+      "message_id": 872,
+      "block": 11,
+      "record": 16,
+      "source_hex": "82cd82a282e60a8da193fa82cd257382cc0a257382cc82a882b282e882be81490a8370815b836282c682e282c182c482ad82f182c88149",
+      "japanese": "はいよ\n今日は%sの\n%sのおごりだ！\nパーッとやってくんな！",
+      "english": "This round's on %s. Enjoy!{PAD}",
+      "speaker": "Barkeep",
+      "context": "Treat Everyone acceptance announcement, followed by a patron tip. Original caller passes faction/surname-style label as the first printf argument and a gender-dependent Japanese form of address as the second. Actual older Hodram save displays Bergstrom and the unlocalized male address.",
+      "source_meaning": "All right: today the addressed patron of the named group is treating everyone. Enjoy yourselves.",
+      "localization_note": "This round's on preserves the current paid round and informal invitation. The present round conveys the source's today in context. Omit the gendered form of address rather than inventing a title or relationship. Retain the first dynamic label. Native printf continues to receive both original arguments; the second is unused, proven by both original-address cases. One paragraph, with native wrapping. The first draft left an orphan exclamation mark in actual gameplay and was rejected.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Regular item acquisition index
+
+October 12, 2026. All188 native catalog indices resolve to a DS coordinate/purchase, qualified event lead, or captain-specific story chain. This is reference-navigation completeness, not proof of every runtime acquisition gate. Priority DS discovered/purchase rows retained before mixed event leads. Story objects/maps/proofs link to regional chains and handoff table; Shakuntala explicitly points to the Ian/book lead. Vezas Scales adds the only missing duty-equipment lead: Kurogane equipment table Alexandria square/share20/cash210000, five bargains, sixth failure/Istanbul recovery, explicitly different PSP branch. DS behavior remains qualified.
+
+Broad gift/story refs point to Rafael where the guide has DS event coverage and cannot be treated as universal other-captain acquisition. No unknown price, coordinate, or source gate invented. Final factual audit must examine these navigation entries alongside the underlying route; mere188-count pass is insufficient.

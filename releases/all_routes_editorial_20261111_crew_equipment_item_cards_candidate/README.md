@@ -1,0 +1,7 @@
+# All Routes Crew Equipment Item Cards candidate
+
+Use the local ROM `out/crew_equipment_item_cards_registered_20261111_v1/Translation_DS_All_Routes_Crew_Equipment_Item_Cards_20261111_candidate.nds` with its build manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `f0ce0352f1381e111d25362004ba9f004a5235d7292d4ce0a8e282f7cf2682c2`. Patch SHA-256 is `187daade64f72d3cc9463c91e364d39451a0b8937c44608aa7ed6b58e01df9f3`.
+
+The 40 crew-role equipment descriptions are registered. The ledger now credits 26,648 reviews. Thirty-two revisions restore source details, use the established Livestock Room label and fix the full-width capital I on Da Vinci Anatomy. Eight wordings were retained with individual reasons. Both item views passed 160 native render cases, including all 16 crew-role labels. All 218 description getters passed.
+
+The original Lisbon save already held Travels of Marco Polo. The emulator replay showed the complete revised description and First Mate label, then returned to Lisbon. The other 39 cards were checked offline. All 90 release checks, 34 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/crew_equipment_items_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

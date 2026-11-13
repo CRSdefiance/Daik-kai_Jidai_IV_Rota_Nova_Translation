@@ -1,0 +1,31 @@
+"""All13 current Cook selectors/expanders/fonts,including the Sera override."""
+from pathlib import Path
+from types import FunctionType
+from PIL import Image,ImageDraw
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.rom.nds import NdsImage
+from scripts import probe_cooking_fonts_v849 as previous
+from scripts.work_comments_layout_v843 import compiled,layout
+from scripts.verify_personal_gameplay_v841 import actual_view,projected
+from scripts.probe_common_single_cache_v862 import Loader
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/cooking_fonts_v2318');DOC=Path('translations/cooking_contextual_editorial_manuscript_v1.json');REPORT=Path('E:/Rota Nova translations/Generated/work/emulation_v193/cooking_current_v2320_V2284/capture_report.json')
+if __name__=='__main__':
+ assert not ROOT.exists();ROOT.mkdir(parents=True);doc=read(DOC);rompath=Path(doc['current_ROM']);rom=NdsImage.open(rompath);arm=rom.read_file('/__arm9__.bin');common=rom.read_file('/COMMON/MESFILE.DK4');entries=current_entries(common,arm);rpt=read(REPORT);assert rpt['ROM_sha256']==sha(rompath.read_bytes());ui_receipt=next(r for r in rpt['read_only_capture_RAM_snapshots']if r['frame']==4600);ui=Path(ui_receipt['path']).read_bytes();assert sha(ui)==ui_receipt['sha256']and ui_receipt['read_only_export'];view,parent,resource,header=actual_view(ui);projection=projected(rom,ui,view);assert projection[-1]['source_origin']==[0,60]and projection[-1]['destination']==[16,112]and projection[-1]['size']==[216,36]
+ context=read(doc['native_context_proof']);assert context['ARM9_sha256']==sha(arm);selections=context['all25_current_native_role_helper_selections'];npc_receipt=context['current_NPC_snapshot'];npc=Path(npc_receipt['path']).read_bytes();assert sha(npc)==npc_receipt['sha256'];heroes={r['actor_ID']:r['source_snapshot']for r in selections if r['actor_ID']<4};representatives={voice:next(r['actor_ID']for r in selections if r.get('native_voice_class')==voice and r['actor_ID']!=24)for voice in range(8)};prepare=FunctionType(previous.prepare_model.__code__,{**previous.prepare_model.__globals__,'VIEW':view},'current_Cook_prepare_model');execute=FunctionType(previous.execute.__code__,{**previous.execute.__globals__,'VIEW':view},'current_Cook_execute');cases=[];panels=[]
+ for row in doc['records']:
+  n=row['message_id'];text=compiled(row);lines=layout(row['english']);assert text==entries[n].text==bytes.fromhex(row['current_hex'])
+  if row['fixed_actor_ID']is not None:actor=row['fixed_actor_ID'];raw,receipt=npc,npc_receipt
+  elif row['protagonist_ID']is not None:actor=row['protagonist_ID'];receipt=heroes[actor];raw=Path(receipt['path']).read_bytes();assert sha(raw)==receipt['sha256']
+  else:actor=representatives[row['voice_class']];raw,receipt=npc,npc_receipt
+  prepared,fixture=prepare(arm,raw,actor,15,ui);case,plane=execute(rom,prepared,actor,15,n,text,lines);assert case['complete_native_copy_macro_draw_and_ABI']and case['native_text_bytes_consumed']==len(text)and case['generated_native_lines']==lines;assert all(not plane[y*252+x]for y in range(60,96)for x in range(216,252));path=ROOT/f'ID{n}_full252x96_native.png';Image.frombytes('L',(252,96),bytes(0 if v else 255 for v in plane)).save(path);panel=Image.new('RGB',(456,112),'#263238');ImageDraw.Draw(panel).text((8,5),f'{n} Cook15 actor{actor} / native216x36',fill='white');panel.paste(Image.open(path).crop((0,60,216,96)).convert('RGB').resize((432,72),Image.Resampling.NEAREST),(8,30));panels.append(panel);cases.append(dict(message_ID=n,actual_source_actor_ID=actor,English=row['english'],compiled_hex=text.hex(),generated_lines=lines,source_snapshot=receipt,isolated_CPU_fixture=fixture,current_initialized_parent_projection_binding=projection[-1],native_font=case,whole_body_inside216x36_crop=True,full_canvas_sha256=sha(plane),preview=str(path),preview_sha256=sha(path.read_bytes()),Sera_special_branch=n==1422));print(dict(ID=n,actor=actor,complete=True,Sera_override=n==1422),flush=True)
+ sheets=[]
+ for start in range(0,len(panels),12):
+  chosen=panels[start:start+12];sheet=Image.new('RGB',(1368,112*((len(chosen)+2)//3)),'#172126')
+  for i,panel in enumerate(chosen):sheet.paste(panel,(i%3*456,i//3*112))
+  p=ROOT/f'font_sheet_{start//12:02d}.png';sheet.save(p);sheets.append(dict(path=str(p),sha256=sha(p.read_bytes())))
+ loader=Loader(arm,common);copies=[]
+ for mode in('cold','warm'):
+  for n in range(1410,1423):copies.append(loader.copy(n,entries[n].text,mode))
+ assert len(cases)==13 and len(copies)==26;save(ROOT/'all13_current_native_fonts.json',dict(candidate=str(rompath),candidate_sha256=sha(rompath.read_bytes()),ARM9_sha256=sha(arm),COMMON_sha256=sha(common),manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),current_initialized_UI_source=ui_receipt,current_actual_view=view,current_actual_parent=parent,current_parent_draw_commands=projection,current_parent_projection_controls=1,all13_complete_native_cases=cases,all26_native_cold_warm_copies=copies,native_file_IO_explicit_host_contract=True,CPU_role_assignment_slot18_and_genuine_initialized_widget_clone_are_declared_controls=True,actor_health_mood_and_real_captain_records_not_replaced=True,four_previously_captured_captain_states_no_fresh_captain_ID_substitution=True,all_original_numeric_selections_macro_expanders_clears_fonts_glyphs_guards_and_ABI_pass=True,COMMON_copy_intercepted_after_original_numeric_selection=True,Sera_actor24_original1422_override_executed=True,source_canvas=[252,96],body_origin=[0,60],visible_crop=[216,36],screen_origin=[16,112],pair_safe_compiler='scripts/work_comments_layout_v843.py',pair_safe_compiler_sha256=sha(Path('scripts/work_comments_layout_v843.py').read_bytes()),all_complete_first_final_letters_and_authored_words_equal_independent_pixels=True,odd19_character1416_and1419_first_rows_and_full_continuations_pass=True,all13_parent_bindings_share_one_current_source_projection_not13_reinitializations=True,review_sheets=sheets,visual_review_pending=True,no13_actual_visits_or_new_current_four_hero_or_Sera_visit_claim=True,no_ROM_runtime_or_geometry_change=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(fonts=13,native_copies=26,parent_controls=1,sheets=len(sheets),visual_pending=True))

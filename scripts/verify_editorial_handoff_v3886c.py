@@ -1,0 +1,4 @@
+"""Audit successor: preserve failed drafts and correct the overlapping leaf count."""
+from pathlib import Path
+if __name__=='__main__':
+    drafts=[Path('scripts/verify_editorial_handoff_v3886.py'),Path('scripts/verify_editorial_handoff_v3886b.py')];source=drafts[0].read_text(encoding='utf-8');prefix,tail=source.rsplit(';exec(compile(t',1);assert tail;ns=dict(__name__='__main__',__file__=__file__);exec(compile(prefix,'preserved-audit-transform-only','exec'),ns);t=ns['t'];old="len(effects['all12_nonrelative_source_current_control_leaves'])==23";assert t.count(old)==1;t=t.replace(old,old.replace('==23','==12'));needle='producer_sha256=sha(PRODUCER.read_bytes())';assert t.count(needle)==1;extra=',preserved_audit_drafts=['+','.join("dict(path="+repr(str(p))+",sha256=sha(Path("+repr(str(p))+").read_bytes()))" for p in drafts)+']';t=t.replace(needle,needle+extra);exec(compile(t,__file__,'exec'),ns)

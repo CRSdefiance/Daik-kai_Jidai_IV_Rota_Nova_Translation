@@ -1,0 +1,9 @@
+"""Prepare nine paragraph plans with this exchange's phrases and no inherited exemptions."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B212_layout_tools_v6605')
+if __name__=='__main__':
+    assert not ROOT.exists();source=Path('scripts/plan_lil_B210_layout_v6507c.py').read_text();pairs=next(l for l in source.splitlines() if l.startswith('PAIRS='));ordinary=next(l for l in source.splitlines() if 'ordinary=(row[' in l).split(';weak=')[0].strip();newpairs="PAIRS={('three','kingdoms'),('zhao','yun'),('guan','yu'),('zhuge','liang'),('changban','bridge'),('cao','cao'),('to','tears'),('his','chest'),('get','along'),('favorite','general'),('give','it'),('a','read'),('a','lot'),('around','here'),('i','think'),('have','better'),('better','luck'),('magnificent','beard'),('memorial','before'),('before','the'),('the','expedition')}"
+    proof=derive('scripts/plan_lil_B210_layout_v6507c.py','scripts/plan_lil_B212_layout_v6605.py',{'lil_B210_editorial_manuscript_v1':'lil_B212_editorial_manuscript_v2','lil_B210_layout_v6507c':'lil_B212_layout_v6605','B210':'B212','ten_whole_paragraph_research_plans':'nine_whole_paragraph_research_plans',pairs:newpairs,ordinary:'ordinary=False','[2,17]':'[149]','for row in doc[\'records\']:\n        try:':"for row in doc['records']:\n        if row['kind']!='progressive':continue\n        try:",'all10_formatting_gates_remain_false':'all14_formatting_gates_remain_false'})
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_nine_paragraph_planner.json',dict(proof=proof,complete_words_all_prose_no_authored_wraps=True,original216x64_four_row_viewport_6px_font_pair_phase_and_guards_unchanged=True,no_B210_record_specific_boundary_exception_inherited=True,distinct_typed_menus_excluded_from_progressive_codec=True,no_native_or_editorial_credit=True,full_goal_complete=False))

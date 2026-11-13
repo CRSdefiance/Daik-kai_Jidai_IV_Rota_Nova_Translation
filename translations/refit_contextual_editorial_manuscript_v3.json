@@ -1,0 +1,3183 @@
+{
+  "format": "dk4-refit-contextual-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2171_candidate.nds",
+  "current_candidate_sha256": "4df01b870562dc04d623fb5c0011d38100bc4062371d32ad2be12f352292260a",
+  "current_ARM9_sha256": "ab7475ec929bd271c54f8b88cdb2fb10fd71ceb5f54b988507d073f0e3466bde",
+  "current_COMMON_sha256": "7d9227f1498f34bf42a8340be6107df51c5c6353a4583817ee6553f265e3600b",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_context_packet": "work\\analysis\\refit_context_source_v2272\\all43_clean_current_context_catalog.json",
+  "source_context_packet_sha256": "0500fcf7d24bffd39eb222d1321c13ce83da3b0294e8e4bbd7bd7a6bd0a145b8",
+  "native_context_proof": "work/analysis/refit_context_v2274/native_context.json",
+  "native_context_proof_sha256": "fef7788529eb46c8595de2a117374a45c4911ca929c22ba0184b97b4bbc0c462",
+  "conversation_groups": [
+    {
+      "kind": "room roles and effects",
+      "IDs": [
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252,
+        1253,
+        1254,
+        1255
+      ]
+    },
+    {
+      "kind": "assigned Shipwright offer then local merchant discount then separate1246price",
+      "IDs": [
+        1256,
+        1257,
+        1258,
+        1259,
+        1260,
+        1261,
+        1262,
+        1263
+      ],
+      "context_only_already_fresh_IDs": [
+        1246
+      ]
+    },
+    {
+      "kind": "rename selection encouragement and constrained keyboard",
+      "IDs": [
+        1264,
+        1265
+      ]
+    },
+    {
+      "kind": "refit selection and native day-unit duration",
+      "IDs": [
+        1266,
+        1267
+      ]
+    },
+    {
+      "kind": "equipment performance and selected-slot restrictions",
+      "IDs": [
+        1268,
+        1269,
+        1270,
+        1271,
+        1272,
+        1273,
+        1274,
+        1275,
+        1276,
+        1277,
+        1278,
+        1279,
+        1280,
+        1281,
+        1282,
+        1283,
+        1284,
+        1285,
+        1286,
+        1287,
+        1288,
+        1289
+      ]
+    }
+  ],
+  "revised_IDs": [
+    1268,
+    1280
+  ],
+  "retained_count": 41,
+  "formatting_review_pending": false,
+  "auxiliary_terminology_decision": "work\\analysis\\refit_editorial_context_v2277\\spritsail_source_decision.json",
+  "prior_manuscripts_preserved": {
+    "translations/refit_help_editorial_manuscript_v3.json": "285302068fd9884552ce01af49af4e3d09700bea73faef22c4acd70d2cd5f02f",
+    "translations/refit_dialogue_editorial_manuscript_v2.json": "426a89b405b55aa1cf3f657965a4a313fd9041378c32c97ca92639bdc9263ff8"
+  },
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1247",
+      "message_id": 1247,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c982a282e98d718a438e6d82cd0a91cc92b282e28b4395aa82aa89f1959c82b582dc82b7",
+      "source_Japanese": "ここにいる航海士は\n体調や気分が回復します",
+      "source_reference": {
+        "block": 15,
+        "offset": 1804,
+        "copy_end": 1848,
+        "bytes": 41,
+        "record_index": 39,
+        "table_offset": 1319630,
+        "start_in_record": 2
+      },
+      "current_hex": "4f666669636572732068657265207265636f766572207468656972200a6865616c746820616e64206d6f72616c652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1408,
+        "copy_end": 1456,
+        "bytes": 47,
+        "record_index": 46,
+        "table_offset": 1319630,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Officers here recover their \nhealth and morale.",
+      "english": "Officers here recover their health and morale.",
+      "source_meaning": "Officers present recover physical condition and mood.",
+      "localization_note": "Here clearly identifies the selected room; health and morale retain both benefits and officers remains distinct from sailors.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Here clearly identifies the selected room; health and morale retain both benefits and officers remains distinct from sailors.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "437265772068657265207265636f766572206865616c746820616e64206d6f72616c652e2020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4f666669636572732068657265207265636f766572207468656972200a6865616c746820616e64206d6f72616c652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1408,
+        "copy_end": 1456,
+        "bytes": 47
+      },
+      "integrated_stored_English": "Officers here recover their \nhealth and morale.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 14900,
+          "message_ID": 1247,
+          "lines": [
+            "Officers here recover their",
+            "health and morale."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 18200,
+          "message_ID": 1247,
+          "lines": [
+            "Officers here recover their",
+            "health and morale."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1248",
+      "message_id": 1248,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "914491e58d4882aa82a282ea82ce0a914482aa8f9d82f182be82c682ab82c90a8f43979d82aa82c582ab82dc82b7",
+      "source_Japanese": "船大工がいれば\n船が傷んだときに\n修理ができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 1848,
+        "copy_end": 1896,
+        "bytes": 46,
+        "record_index": 40,
+        "table_offset": 1319632,
+        "start_in_record": 2
+      },
+      "current_hex": "412063617270656e7465722063616e207265706169720a64616d616765642073686970732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1456,
+        "copy_end": 1494,
+        "bytes": 37,
+        "record_index": 47,
+        "table_offset": 1319632,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A carpenter can repair\ndamaged ships.",
+      "english": "A carpenter can repair damaged ships.",
+      "source_meaning": "A ship carpenter enables repairs when a ship is damaged.",
+      "localization_note": "The short complete sentence states the conditional repair capability without promising a rate, prevention, or free repairs.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The short complete sentence states the conditional repair capability without promising a rate, prevention, or free repairs.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "412063617270656e7465722063616e207265706169722064616d61676564200a2073686970732e20202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412063617270656e7465722063616e207265706169720a64616d616765642073686970732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1456,
+        "copy_end": 1494,
+        "bytes": 37
+      },
+      "integrated_stored_English": "A carpenter can repair\ndamaged ships.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 14600,
+          "message_ID": 1248,
+          "lines": [
+            "A carpenter can repair",
+            "damaged ships."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 18500,
+          "message_ID": 1248,
+          "lines": [
+            "A carpenter can repair",
+            "damaged ships."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1249",
+      "message_id": 1249,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "914488e382aa82a282ea82ce0a8d718a438e6d82e29085957682cc91cc92b288d98fed82f00a8ea182b782b182c682aa82c582ab82dc82b7",
+      "source_Japanese": "船医がいれば\n航海士や水夫の体調異常を\n治すことができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 1896,
+        "copy_end": 1952,
+        "bytes": 56,
+        "record_index": 41,
+        "table_offset": 1319634,
+        "start_in_record": 1
+      },
+      "current_hex": "412073686970277320646f63746f722063616e20637572650a61696c6d656e747320616666656374696e67206f66666963657273200a616e64207361696c6f72732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1494,
+        "copy_end": 1561,
+        "bytes": 66,
+        "record_index": 48,
+        "table_offset": 1319634,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A ship's doctor can cure\nailments affecting officers \nand sailors.",
+      "english": "A ship's doctor can cure ailments affecting officers and sailors.",
+      "source_meaning": "A ship doctor can cure abnormal conditions affecting officers and sailors.",
+      "localization_note": "Ailments is natural help prose and preserves both affected groups and the cure rather than mere prevention.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Ailments is natural help prose and preserves both affected groups and the cure rather than mere prevention.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "41646d6972616c2c204920696e766573746967617465642025732e0a200a200a200a200a200a200a20202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412073686970277320646f63746f722063616e20637572650a61696c6d656e747320616666656374696e67206f66666963657273200a616e64207361696c6f72732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1494,
+        "copy_end": 1561,
+        "bytes": 66
+      },
+      "integrated_stored_English": "A ship's doctor can cure\nailments affecting officers \nand sailors.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 16100,
+          "message_ID": 1249,
+          "lines": [
+            "A ship's doctor can cure",
+            "ailments affecting officers",
+            "and sailors."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1250",
+      "message_id": 1250,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "97bf979d92b782aa82a282ea82ce0a908582e2904897bf82cc90df96f182aa82c582ab0a9085957682e094e682ea82c982ad82ad82c882e882dc82b7",
+      "source_Japanese": "料理長がいれば\n水や食料の節約ができ\n水夫も疲れにくくなります",
+      "source_reference": {
+        "block": 15,
+        "offset": 1952,
+        "copy_end": 2012,
+        "bytes": 60,
+        "record_index": 41,
+        "table_offset": 1319636,
+        "start_in_record": 57
+      },
+      "current_hex": "4120636869656620636f6f6b20636f6e73657276657320666f6f64200a616e6420776174657220616e64206d616b6573207361696c6f7273200a74697265206d6f726520736c6f776c792e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1561,
+        "copy_end": 1637,
+        "bytes": 75,
+        "record_index": 49,
+        "table_offset": 1319636,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A chief cook conserves food \nand water and makes sailors \ntire more slowly.",
+      "english": "A chief cook conserves food and water and makes sailors tire more slowly.",
+      "source_meaning": "A chief cook reduces food and water consumption and slows sailor fatigue.",
+      "localization_note": "Conserves and tire more slowly express the two effects accurately. The sentence does not turn reduced fatigue accumulation into recovery.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Conserves and tire more slowly express the two effects accurately. The sentence does not turn reduced fatigue accumulation into recovery.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120636869656620636f6f6b20636f6e73657276657320666f6f64200a616e6420776174657220616e64206d616b6573207361696c6f7273200a74697265206d6f726520736c6f776c792e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1561,
+        "copy_end": 1637,
+        "bytes": 75
+      },
+      "integrated_stored_English": "A chief cook conserves food \nand water and makes sailors \ntire more slowly.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 16400,
+          "message_ID": 1250,
+          "lines": [
+            "A chief cook conserves food",
+            "and water and makes sailors",
+            "tire more slowly."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1251",
+      "message_id": 1251,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c982a282e98d718a438e6d82cd0a8b4395aa82aa838a8374838c83628356838582b5814182dc82bd0a9085957682f094e682ea82c982ad82ad82b582dc82b7",
+      "source_Japanese": "ここにいる航海士は\n気分がリフレッシュし、また\n水夫を疲れにくくします",
+      "source_reference": {
+        "block": 15,
+        "offset": 2012,
+        "copy_end": 2080,
+        "bytes": 68,
+        "record_index": 41,
+        "table_offset": 1319638,
+        "start_in_record": 117
+      },
+      "current_hex": "4f666669636572732068657265207265636f766572207468656972200a6d6f72616c6520616e64206d616b65207361696c6f7273200a74697265206d6f726520736c6f776c792e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1637,
+        "copy_end": 1709,
+        "bytes": 71,
+        "record_index": 50,
+        "table_offset": 1319638,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Officers here recover their \nmorale and make sailors \ntire more slowly.",
+      "english": "Officers here recover their morale and make sailors tire more slowly.",
+      "source_meaning": "Officers here recover mood and make sailors fatigue more slowly.",
+      "localization_note": "The two clauses keep officers as the room occupants and sailors as the beneficiaries of slower fatigue. Morale matches1247.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The two clauses keep officers as the room occupants and sailors as the beneficiaries of slower fatigue. Morale matches1247.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4f666669636572732068657265207265636f766572207468656972200a6d6f72616c6520616e64206d616b65207361696c6f7273200a74697265206d6f726520736c6f776c792e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1637,
+        "copy_end": 1709,
+        "bytes": 71
+      },
+      "integrated_stored_English": "Officers here recover their \nmorale and make sailors \ntire more slowly.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1252",
+      "message_id": 1252,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e9488e788f582aa82a282ea82ce0a904897bf82aa8cb882e882c982ad82ad82c882e882dc82b7",
+      "source_Japanese": "飼育員がいれば\n食料が減りにくくなります",
+      "source_reference": {
+        "block": 15,
+        "offset": 2080,
+        "copy_end": 2120,
+        "bytes": 39,
+        "record_index": 41,
+        "table_offset": 1319640,
+        "start_in_record": 185
+      },
+      "current_hex": "416e20616e696d616c206b65657065722068656c707320796f7572200a666f6f6420737570706c696573206c617374206c6f6e6765722e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1709,
+        "copy_end": 1765,
+        "bytes": 55,
+        "record_index": 51,
+        "table_offset": 1319640,
+        "start_in_record": 0
+      },
+      "current_stored_English": "An animal keeper helps your \nfood supplies last longer.",
+      "english": "An animal keeper helps your food supplies last longer.",
+      "source_meaning": "An animal keeper reduces food consumption.",
+      "localization_note": "Food supplies last longer preserves the effect naturally; water is deliberately absent because the source names food alone.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Food supplies last longer preserves the effect naturally; water is deliberately absent because the source names food alone.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "416e20616e696d616c206b65657065722068656c707320796f7572200a666f6f6420737570706c696573206c617374206c6f6e6765722e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1709,
+        "copy_end": 1765,
+        "bytes": 55
+      },
+      "integrated_stored_English": "An animal keeper helps your \nfood supplies last longer.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1253",
+      "message_id": 1253,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "90e98bb38e7482aa82a282ea82ce81419085957682cc9573969e82aa0a89f08fc182b382ea82dc82b7814282dc82bd81418d4c8fea82c582cd0a8cf088d5956982cc947a957a82aa82c582ab82dc82b7",
+      "source_Japanese": "宣教師がいれば、水夫の不満が\n解消されます。また、広場では\n交易品の配布ができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 2120,
+        "copy_end": 2200,
+        "bytes": 80,
+        "record_index": 42,
+        "table_offset": 1319642,
+        "start_in_record": 0
+      },
+      "current_hex": "41206d697373696f6e6172792072656c6965766573200a7361696c6f72732720646973636f6e74656e7420616e64200a6c65747320796f752064697374726962757465207472616465200a676f6f647320696e20746865207371756172652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1765,
+        "copy_end": 1861,
+        "bytes": 95,
+        "record_index": 52,
+        "table_offset": 1319642,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A missionary relieves \nsailors' discontent and \nlets you distribute trade \ngoods in the square.",
+      "english": "A missionary relieves sailors' discontent and lets you distribute trade goods in the square.",
+      "source_meaning": "A missionary relieves sailor discontent and enables distribution of trade goods in the square.",
+      "localization_note": "The coordinated sentence preserves both the onboard benefit and separate Square action without inventing conversions or religious rewards.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The coordinated sentence preserves both the onboard benefit and separate Square action without inventing conversions or religious rewards.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "41646d6972616c2c204920696e766573746967617465642025732e0a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "41206d697373696f6e6172792072656c6965766573200a7361696c6f72732720646973636f6e74656e7420616e64200a6c65747320796f752064697374726962757465207472616465200a676f6f647320696e20746865207371756172652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1765,
+        "copy_end": 1861,
+        "bytes": 95
+      },
+      "integrated_stored_English": "A missionary relieves \nsailors' discontent and \nlets you distribute trade \ngoods in the square.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1254",
+      "message_id": 1254,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e51966482aa82a282ea82ce0a8ef08fea82c58df4966482cc97a788c482aa82c582ab82dc82b7",
+      "source_Japanese": "参謀がいれば\n酒場で策謀の立案ができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 2200,
+        "copy_end": 2240,
+        "bytes": 39,
+        "record_index": 42,
+        "table_offset": 1319644,
+        "start_in_record": 80
+      },
+      "current_hex": "412073747261746567697374206c65747320796f7520706c616e0a736368656d6573206174207468652074617665726e2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1861,
+        "copy_end": 1911,
+        "bytes": 49,
+        "record_index": 53,
+        "table_offset": 1319644,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A strategist lets you plan\nschemes at the tavern.",
+      "english": "A strategist lets you plan schemes at the tavern.",
+      "source_meaning": "A strategist enables schemes in the tavern.",
+      "localization_note": "Plan schemes at the tavern is idiomatic and names the actual facility and capability without guaranteeing success.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Plan schemes at the tavern is idiomatic and names the actual facility and capability without guaranteeing success.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412073747261746567697374206c65747320796f7520706c616e0a736368656d6573206174207468652074617665726e2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1861,
+        "copy_end": 1911,
+        "bytes": 49
+      },
+      "integrated_stored_English": "A strategist lets you plan\nschemes at the tavern.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1255",
+      "message_id": 1255,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8ee58c7692b782aa82a282ea82ce8141926c90d882e882e20a948382a290e882df82aa82c582ab82dc82b7",
+      "source_Japanese": "主計長がいれば、値切りや\n買い占めができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 2240,
+        "copy_end": 2284,
+        "bytes": 43,
+        "record_index": 43,
+        "table_offset": 1319646,
+        "start_in_record": 0
+      },
+      "current_hex": "4120707572736572206c65747320796f75206261726761696e200a616e6420636f726e6572206d61726b6574732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1911,
+        "copy_end": 1958,
+        "bytes": 46,
+        "record_index": 54,
+        "table_offset": 1319646,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A purser lets you bargain \nand corner markets.",
+      "english": "A purser lets you bargain and corner markets.",
+      "source_meaning": "A purser enables price bargaining and buying up goods.",
+      "localization_note": "Corner markets retains the established action wording for buying up stock. The paired capabilities do not promise profits or permanent market control.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Corner markets retains the established action wording for buying up stock. The paired capabilities do not promise profits or permanent market control.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "412070757273657220656e61626c6573206465616c7320616e64206275796f7574732e2020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120707572736572206c65747320796f75206261726761696e200a616e6420636f726e6572206d61726b6574732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1911,
+        "copy_end": 1958,
+        "bytes": 46
+      },
+      "integrated_stored_English": "A purser lets you bargain \nand corner markets.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 15800,
+          "message_ID": 1255,
+          "lines": [
+            "A purser lets you bargain",
+            "and corner markets."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1256",
+      "message_id": 1256,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c281418e8482e089fc91a282f08ee8936082a282dc82b7",
+      "source_Japanese": "提督、私も改造を手伝います",
+      "source_reference": {
+        "block": 15,
+        "offset": 2284,
+        "copy_end": 2312,
+        "bytes": 26,
+        "record_index": 44,
+        "table_offset": 1319648,
+        "start_in_record": 0
+      },
+      "current_hex": "2041646d6972616c2c2049276c6c2068656c7020776974682074686520726566697420746f6f2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 1958,
+        "copy_end": 1998,
+        "bytes": 39,
+        "record_index": 55,
+        "table_offset": 1319648,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, I'll help with the refit too.",
+      "english": "Admiral, I'll help with the refit too.",
+      "source_meaning": "A polite helper addresses the Admiral and offers to help with the refit too.",
+      "localization_note": "The polite direct offer and too work as the opening of the helper then merchant exchange; Admiral is explicit in the source.",
+      "speaker": "Assigned Shipwright companion,original voice class[0, 1]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The polite direct offer and too work as the opening of the helper then merchant exchange; Admiral is explicit in the source.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        0,
+        1
+      ],
+      "canonical_source_hex": "4c6574206d652068656c70207265666974206865722e20202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c2049276c6c2068656c7020776974682074686520726566697420746f6f2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1958,
+        "copy_end": 1998,
+        "bytes": 39
+      },
+      "integrated_stored_English": " Admiral, I'll help with the refit too.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "helper_after",
+          "frame": 14200,
+          "message_ID": 1256,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "7ff52894073883da1a17ff3557d012c1518d1e8c592282957a957372632d3641"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1257",
+      "message_id": 1257,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c28141494382e089fc91a282f00a8ee8936082a482e6",
+      "source_Japanese": "提督、ICも改造を\n手伝うよ",
+      "source_reference": {
+        "block": 15,
+        "offset": 2312,
+        "copy_end": 2340,
+        "bytes": 25,
+        "record_index": 45,
+        "table_offset": 1319650,
+        "start_in_record": 1
+      },
+      "current_hex": "2041646d6972616c2c20492063616e2068656c7020776974682074686520726566697420746f6f21",
+      "current_reference": {
+        "block": 16,
+        "offset": 1998,
+        "copy_end": 2039,
+        "bytes": 40,
+        "record_index": 56,
+        "table_offset": 1319650,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, I can help with the refit too!",
+      "english": "Admiral, I can help with the refit too!",
+      "source_meaning": "A familiar confident helper addresses the Admiral and offers their own help with the refit.",
+      "localization_note": "I is the source first-person pronoun IC, not a substituted character name. The contraction-free can help and exclamation preserve the confident voice.",
+      "speaker": "Assigned Shipwright companion,original voice class[2]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "I is the source first-person pronoun IC, not a substituted character name. The contraction-free can help and exclamation preserve the confident voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        2
+      ],
+      "canonical_source_hex": "2049432077696c6c2068656c700a2020726566697421202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c20492063616e2068656c7020776974682074686520726566697420746f6f21",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 1998,
+        "copy_end": 2039,
+        "bytes": 40
+      },
+      "integrated_stored_English": " Admiral, I can help with the refit too!",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1258",
+      "message_id": 1258,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c2814189fc91a282c882e78e8482c982e08ee8936082ed82b982c4",
+      "source_Japanese": "提督、改造なら私にも手伝わせて",
+      "source_reference": {
+        "block": 15,
+        "offset": 2340,
+        "copy_end": 2372,
+        "bytes": 30,
+        "record_index": 46,
+        "table_offset": 1319652,
+        "start_in_record": 2
+      },
+      "current_hex": "2041646d6972616c2c206c6574206d652068656c702077697468207468652072656669742e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2039,
+        "copy_end": 2077,
+        "bytes": 37,
+        "record_index": 57,
+        "table_offset": 1319652,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, let me help with the refit.",
+      "english": "Admiral, let me help with the refit.",
+      "source_meaning": "A helper addresses the Admiral and asks to be allowed to assist with the refit.",
+      "localization_note": "Let me help retains the request to participate instead of changing it into an order or a completed action.",
+      "speaker": "Assigned Shipwright companion,original voice class[3]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Let me help retains the request to participate instead of changing it into an order or a completed action.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        3
+      ],
+      "canonical_source_hex": "4c6574206d652068656c702077697468207468652072656669742e202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c206c6574206d652068656c702077697468207468652072656669742e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2039,
+        "copy_end": 2077,
+        "bytes": 37
+      },
+      "integrated_stored_English": " Admiral, let me help with the refit.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1259",
+      "message_id": 1259,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c2814189b482e08ee882f091dd82b782ba",
+      "source_Japanese": "提督、俺も手を貸すぜ",
+      "source_reference": {
+        "block": 15,
+        "offset": 2372,
+        "copy_end": 2392,
+        "bytes": 20,
+        "record_index": 47,
+        "table_offset": 1319654,
+        "start_in_record": 1
+      },
+      "current_hex": "2049276c6c206c656e6420612068616e6420746f6f2c2041646d6972616c2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2077,
+        "copy_end": 2109,
+        "bytes": 31,
+        "record_index": 58,
+        "table_offset": 1319654,
+        "start_in_record": 0
+      },
+      "current_stored_English": " I'll lend a hand too, Admiral.",
+      "english": "I'll lend a hand too, Admiral.",
+      "source_meaning": "A rough, assured helper says they will lend a hand too, addressing the Admiral.",
+      "localization_note": "Lend a hand and the final address give the brief source offer an informal assured voice without an invented rank or relationship.",
+      "speaker": "Assigned Shipwright companion,original voice class[4]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Lend a hand and the final address give the brief source offer an informal assured voice without an invented rank or relationship.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        4
+      ],
+      "canonical_source_hex": "2049276c6c2068656c702c2041646d6972616c2e",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2049276c6c206c656e6420612068616e6420746f6f2c2041646d6972616c2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2077,
+        "copy_end": 2109,
+        "bytes": 31
+      },
+      "integrated_stored_English": " I'll lend a hand too, Admiral.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1260",
+      "message_id": 1260,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c2814189fc91a282c882e782ed82b582e08ee882f091dd82bb82a4",
+      "source_Japanese": "提督、改造ならわしも手を貸そう",
+      "source_reference": {
+        "block": 15,
+        "offset": 2392,
+        "copy_end": 2424,
+        "bytes": 30,
+        "record_index": 47,
+        "table_offset": 1319656,
+        "start_in_record": 21
+      },
+      "current_hex": "2041646d6972616c2c2049276c6c206c656e6420612068616e6420776974682074686520726566697420746f6f2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2109,
+        "copy_end": 2156,
+        "bytes": 46,
+        "record_index": 59,
+        "table_offset": 1319656,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, I'll lend a hand with the refit too.",
+      "english": "Admiral, I'll lend a hand with the refit too.",
+      "source_meaning": "A measured older-sounding helper addresses the Admiral and offers assistance with the refit too.",
+      "localization_note": "The full with the refit clause gives this measured offer its own cadence. No literal old-man address or family relationship is introduced.",
+      "speaker": "Assigned Shipwright companion,original voice class[5]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The full with the refit clause gives this measured offer its own cadence. No literal old-man address or family relationship is introduced.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        5
+      ],
+      "canonical_source_hex": "202049276c6c2068656c702072656669742c2041646d6972616c2e202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c2049276c6c206c656e6420612068616e6420776974682074686520726566697420746f6f2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2109,
+        "copy_end": 2156,
+        "bytes": 46
+      },
+      "integrated_stored_English": " Admiral, I'll lend a hand with the refit too.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1261",
+      "message_id": 1261,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c2814182a882a282e782e089fc91a282f08ee8936082a482e6",
+      "source_Japanese": "提督、おいらも改造を手伝うよ",
+      "source_reference": {
+        "block": 15,
+        "offset": 2424,
+        "copy_end": 2452,
+        "bytes": 28,
+        "record_index": 48,
+        "table_offset": 1319658,
+        "start_in_record": 1
+      },
+      "current_hex": "2041646d6972616c2c2049276c6c2068656c702072656669742068657220746f6f21",
+      "current_reference": {
+        "block": 16,
+        "offset": 2156,
+        "copy_end": 2191,
+        "bytes": 34,
+        "record_index": 60,
+        "table_offset": 1319658,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, I'll help refit her too!",
+      "english": "Admiral, I'll help refit her too!",
+      "source_meaning": "An eager helper addresses the Admiral and offers to help refit the ship too.",
+      "localization_note": "The lively exclamation preserves eagerness. Her conventionally refers to the ship, not the helper, and invents no character gender.",
+      "speaker": "Assigned Shipwright companion,original voice class[6]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The lively exclamation preserves eagerness. Her conventionally refers to the ship, not the helper, and invents no character gender.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        6
+      ],
+      "canonical_source_hex": "2041646d6972616c2c2049276c6c2068656c702e2020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c2049276c6c2068656c702072656669742068657220746f6f21",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2156,
+        "copy_end": 2191,
+        "bytes": 34
+      },
+      "integrated_stored_English": " Admiral, I'll help refit her too!",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1262",
+      "message_id": 1262,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92f193c2814189fc91a282c882e78e8482e08163",
+      "source_Japanese": "提督、改造なら私も…",
+      "source_reference": {
+        "block": 15,
+        "offset": 2452,
+        "copy_end": 2472,
+        "bytes": 20,
+        "record_index": 48,
+        "table_offset": 1319660,
+        "start_in_record": 29
+      },
+      "current_hex": "2041646d6972616c2c204920636f756c642068656c7020776974682074686520726566697420746f6f2e2e2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2191,
+        "copy_end": 2236,
+        "bytes": 44,
+        "record_index": 61,
+        "table_offset": 1319660,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Admiral, I could help with the refit too...",
+      "english": "Admiral, I could help with the refit too...",
+      "source_meaning": "A hesitant helper addresses the Admiral and suggests they could also assist with the refit.",
+      "localization_note": "Could and the trailing ellipsis preserve the hesitation within the surrounding offer sequence.",
+      "speaker": "Assigned Shipwright companion,original voice class[7]",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Could and the trailing ellipsis preserve the hesitation within the surrounding offer sequence.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [
+        7
+      ],
+      "canonical_source_hex": "2020492063616e2068656c702c20746f6f2e2e2e",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "2041646d6972616c2c204920636f756c642068656c7020776974682074686520726566697420746f6f2e2e2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2191,
+        "copy_end": 2236,
+        "bytes": 44
+      },
+      "integrated_stored_English": " Admiral, I could help with the refit too...",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1263",
+      "message_id": 1263,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82bb82cc906c82aa8ee8936082c182c482ad82ea82e982c882e70a89fc91a291e38be082f0257381930a82dc82af82c482e282eb82a4814282bb82a482b782e982c68163",
+      "source_Japanese": "その人が手伝ってくれるなら\n改造代金を%s％\nまけてやろう。そうすると…",
+      "source_reference": {
+        "block": 15,
+        "offset": 2472,
+        "copy_end": 2540,
+        "bytes": 68,
+        "record_index": 48,
+        "table_offset": 1319662,
+        "start_in_record": 49
+      },
+      "current_hex": "20576974682074686569722068656c702c2049276c6c206b6e6f636b2025732525206f66662074686520726566697420636f73742e204c65742773207365652e2e2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2236,
+        "copy_end": 2303,
+        "bytes": 66,
+        "record_index": 62,
+        "table_offset": 1319662,
+        "start_in_record": 0
+      },
+      "current_stored_English": " With their help, I'll knock %s%% off the refit cost. Let's see...",
+      "english": "With their help, I'll knock %s%% off the refit cost. Let's see...",
+      "source_meaning": "The local shipwright offers a supplied percentage reduction thanks to the helper, then considers the price.",
+      "localization_note": "With their help links the companion offer to the merchant discount naturally. The single numeric string and escaped literal percent remain intact; the separate final-price confirmation1246 is not folded into this line.",
+      "speaker": "Local town Shipwright",
+      "context": "Original role13 refit assistance:assigned Shipwright,ability at least25,positive refit cost. Native helper voice offer precedes the local shipwright percentage discount and a separate final-price confirmation.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "With their help links the companion offer to the merchant discount naturally. The single numeric string and escaped literal percent remain intact; the separate final-price confirmation1246 is not folded into this line.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 1,
+      "argument_contract": "Original full-width percentage number followed by the literal percent emitted by %%.",
+      "source_voice_classes": [],
+      "canonical_source_hex": "2020576974682074686569722068656c702c2049276c6c206375740a202074686520726566697420636f737420627920257325252e202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "20576974682074686569722068656c702c2049276c6c206b6e6f636b2025732525206f66662074686520726566697420636f73742e204c65742773207365652e2e2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2236,
+        "copy_end": 2303,
+        "bytes": 66
+      },
+      "integrated_stored_English": " With their help, I'll knock %s%% off the refit cost. Let's see...",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "helper_after",
+          "frame": 14700,
+          "message_ID": 1263,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "c450a479958189ac85de62591a8c3b346569449d2a5955fcc5b85cdd02f1d716"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1264",
+      "message_id": 1264,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82c782cc914482cc96bc914f82f095cf82a682e982f182be82a28148",
+      "source_Japanese": "どの船の名前を変えるんだい？",
+      "source_reference": {
+        "block": 15,
+        "offset": 2540,
+        "copy_end": 2568,
+        "bytes": 28,
+        "record_index": 48,
+        "table_offset": 1319664,
+        "start_in_record": 117
+      },
+      "current_hex": "205768696368207368697020776f756c6420796f75206c696b6520746f2072656e616d653f",
+      "current_reference": {
+        "block": 16,
+        "offset": 2303,
+        "copy_end": 2341,
+        "bytes": 37,
+        "record_index": 63,
+        "table_offset": 1319664,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Which ship would you like to rename?",
+      "english": "Which ship would you like to rename?",
+      "source_meaning": "The local shipwright asks which ship is to be renamed.",
+      "localization_note": "The courteous complete question naturally introduces ship selection; it does not presume a selection or successful rename.",
+      "speaker": "Local town Shipwright",
+      "context": "Original Shipwright rename/refit interaction;renaming selection and name entry are distinct,while1267 reports the refit completion delay.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The courteous complete question naturally introduces ship selection; it does not presume a selection or successful rename.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [],
+      "canonical_source_hex": "20205768696368207368697020676574732072656e616d65643f2020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "205768696368207368697020776f756c6420796f75206c696b6520746f2072656e616d653f",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2303,
+        "copy_end": 2341,
+        "bytes": 37
+      },
+      "integrated_stored_English": " Which ship would you like to rename?",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "rename_after",
+          "frame": 12800,
+          "message_ID": 1264,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_rename_after\\capture_report.json",
+          "source_report_sha256": "613bee7cf2de2cc9e6a1c7b54505ca291277fdc95092957fb7f54b452546fe23",
+          "source_RAM_sha256": "e294ecf28d6099e606ad0953b378d211539daadfec56420a3fd9fb02b08236f2"
+        },
+        {
+          "case": "rename_after",
+          "frame": 14000,
+          "message_ID": 1264,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_rename_after\\capture_report.json",
+          "source_report_sha256": "613bee7cf2de2cc9e6a1c7b54505ca291277fdc95092957fb7f54b452546fe23",
+          "source_RAM_sha256": "37da68bd753f7ac305fa51e5508c6e24e8e7b17cb3926a77c27b21e2f14b9168"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1265",
+      "message_id": 1265,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b682e182a081418d4482ab82c896bc914f82f0957482af82c482ad82ea",
+      "source_Japanese": "じゃあ、好きな名前を付けてくれ",
+      "source_reference": {
+        "block": 15,
+        "offset": 2568,
+        "copy_end": 2600,
+        "bytes": 30,
+        "record_index": 48,
+        "table_offset": 1319666,
+        "start_in_record": 145
+      },
+      "current_hex": "204769766520697420616e79206e616d6520796f75206c696b652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2341,
+        "copy_end": 2369,
+        "bytes": 27,
+        "record_index": 64,
+        "table_offset": 1319666,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Give it any name you like.",
+      "english": "Give it any name you like.",
+      "source_meaning": "The local shipwright invites the player to choose a preferred ship name.",
+      "localization_note": "Any name you like is ordinary conversational encouragement before the existing constrained keyboard. It makes no technical promise of unlimited input length.",
+      "speaker": "Local town Shipwright",
+      "context": "Original Shipwright rename/refit interaction;renaming selection and name entry are distinct,while1267 reports the refit completion delay.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Any name you like is ordinary conversational encouragement before the existing constrained keyboard. It makes no technical promise of unlimited input length.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [],
+      "canonical_source_hex": "20204769766520697420616e79206e616d6520796f75206c696b652e2020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "204769766520697420616e79206e616d6520796f75206c696b652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2341,
+        "copy_end": 2369,
+        "bytes": 27
+      },
+      "integrated_stored_English": " Give it any name you like.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "rename_after",
+          "frame": 13400,
+          "message_ID": 1265,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_rename_after\\capture_report.json",
+          "source_report_sha256": "613bee7cf2de2cc9e6a1c7b54505ca291277fdc95092957fb7f54b452546fe23",
+          "source_RAM_sha256": "c1b1764341d5f0378d9cabdd2f54a6570d11170ad1ccb3842d7de20576335c29"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1266",
+      "message_id": 1266,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82c782cc914482f089fc91a282b782e982f182be82a28148",
+      "source_Japanese": "どの船を改造するんだい？",
+      "source_reference": {
+        "block": 15,
+        "offset": 2600,
+        "copy_end": 2624,
+        "bytes": 24,
+        "record_index": 49,
+        "table_offset": 1319668,
+        "start_in_record": 1
+      },
+      "current_hex": "205768696368207368697020776f756c6420796f75206c696b6520746f2072656669743f",
+      "current_reference": {
+        "block": 16,
+        "offset": 2369,
+        "copy_end": 2406,
+        "bytes": 36,
+        "record_index": 65,
+        "table_offset": 1319668,
+        "start_in_record": 0
+      },
+      "current_stored_English": " Which ship would you like to refit?",
+      "english": "Which ship would you like to refit?",
+      "source_meaning": "The local shipwright asks which ship is to be refitted.",
+      "localization_note": "The parallel courteous question matches the rename interaction while distinguishing refit from rename.",
+      "speaker": "Local town Shipwright",
+      "context": "Original Shipwright rename/refit interaction;renaming selection and name entry are distinct,while1267 reports the refit completion delay.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The parallel courteous question matches the rename interaction while distinguishing refit from rename.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 0,
+      "argument_contract": "No runtime substitutions.",
+      "source_voice_classes": [],
+      "canonical_source_hex": "205768696368207368697020746f2072656669743f202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "205768696368207368697020776f756c6420796f75206c696b6520746f2072656669743f",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2369,
+        "copy_end": 2406,
+        "bytes": 36
+      },
+      "integrated_stored_English": " Which ship would you like to refit?",
+      "actual_current_V2284_approved_holds": [
+        {
+          "frame": 17300,
+          "lines": [
+            "Which ship would you like to refit?"
+          ],
+          "resident_template_printed_and_wrapped_bytes_exact": true,
+          "all_current_independent_foreground_and_blank_ink_equal": true
+        }
+      ],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "helper_after",
+          "frame": 12500,
+          "message_ID": 1266,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "fda1fb594b88dbdbbc433112a0a6cb2e80f53c9825d8e00cd58519d460a0fedb"
+        },
+        {
+          "case": "helper_after",
+          "frame": 15900,
+          "message_ID": 1266,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "58149c2330565bd796043768b4f5b9c153ee6b9e89dd307f248362e3d73800aa"
+        },
+        {
+          "case": "helper_after",
+          "frame": 16300,
+          "message_ID": 1266,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "e9dd0e01d6eea5bb9efbeab2c0f8b5c4178be78a927d2779e7958017356864a9"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1267",
+      "message_id": 1267,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "89fc91a282aa8f4982ed82e982dc82c50a257393fa91d282c182c482ad82f182c8",
+      "source_Japanese": "改造が終わるまで\n%s日待ってくんな",
+      "source_reference": {
+        "block": 15,
+        "offset": 2624,
+        "copy_end": 2660,
+        "bytes": 33,
+        "record_index": 49,
+        "table_offset": 1319670,
+        "start_in_record": 25
+      },
+      "current_hex": "205468652072656669742077696c6c2074616b652025732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2406,
+        "copy_end": 2431,
+        "bytes": 24,
+        "record_index": 66,
+        "table_offset": 1319670,
+        "start_in_record": 0
+      },
+      "current_stored_English": " The refit will take %s.",
+      "english": "The refit will take %s.",
+      "source_meaning": "The local shipwright states the supplied refit duration in days.",
+      "localization_note": "The original argument now includes the native number and singular or plural day unit. The sentence takes exactly one string, adds no second unit, and remains natural for all duration bytes.",
+      "speaker": "Local town Shipwright",
+      "context": "Original Shipwright rename/refit interaction;renaming selection and name entry are distinct,while1267 reports the refit completion delay.",
+      "consumer": "refit-queued-or-direct-common228x48",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The original argument now includes the native number and singular or plural day unit. The sentence takes exactly one string, adds no second unit, and remains natural for all duration bytes.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_count": 1,
+      "argument_contract": "Original full-width duration number plus grammatically singular/plural day unit,through only source return02017B90;all256 native byte values verified.",
+      "source_voice_classes": [],
+      "canonical_source_hex": "20204974276c6c2074616b6520257320646179732e202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-helper-discount-Rename-duration1256-1267",
+      "integrated_hex": "205468652072656669742077696c6c2074616b652025732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2406,
+        "copy_end": 2431,
+        "bytes": 24
+      },
+      "integrated_stored_English": " The refit will take %s.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [
+        {
+          "case": "helper_after",
+          "frame": 15500,
+          "message_ID": 1267,
+          "current_complete_template_and_formatted_bytes_equal_historical_resident_buffers": true,
+          "current525_matrix_output_equal": true,
+          "already_fresh_context_only": false,
+          "independent_current_font_complete_foreground_and_blank_ink_equal": true,
+          "source_report": "work\\emulation_v193\\refit_dialogue_v834_helper_after\\capture_report.json",
+          "source_report_sha256": "f8b8aa01fabc3f94eb564c08a3fbf4edb27ed0fb81e603dcf8768830c772a2f4",
+          "source_RAM_sha256": "9e98dd00267ce33b2ecffe4c39c63c60c77531ff27e67a782a7abf18beeb0107"
+        }
+      ],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1268",
+      "message_id": 1268,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "83588376838a83628367835a8343838b82f0957482af82e982c60a89a194bf90ab945c82aa8fe382aa82c182c40a8f87959782c582cc91ac937882aa919d82b582dc82b7",
+      "source_Japanese": "スプリットセイルを付けると\n横帆性能が上がって\n順風での速度が増します",
+      "source_reference": {
+        "block": 15,
+        "offset": 2660,
+        "copy_end": 2728,
+        "bytes": 68,
+        "record_index": 50,
+        "table_offset": 1319672,
+        "start_in_record": 2
+      },
+      "current_hex": "412073706c6974207361696c20696d70726f766573200a737175617265207361696c20706572666f726d616e63652c0a696e6372656173696e6720737065656420776974682061200a666f6c6c6f77696e672077696e642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2431,
+        "copy_end": 2520,
+        "bytes": 88,
+        "record_index": 67,
+        "table_offset": 1319672,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A split sail improves \nsquare sail performance,\nincreasing speed with a \nfollowing wind.",
+      "english": "A spritsail improves square sail performance, increasing speed with a following wind.",
+      "source_meaning": "Installing the named bow sail improves square-sail performance and speed with a following wind.",
+      "localization_note": "Revise split sail to spritsail: the clean bow-fitting context1280 and primary maritime terminology identify the period square sail under the bowsprit. Preserve both performance and following-wind effect; this is a contextual English terminology inference, not a claim of official English localization.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "revise",
+      "fresh_retained_wording_justification": null,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "53706c6974207361696c7320626f6f73742073706565640a202077697468207468652077696e642e20202020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412073707269747361696c20696d70726f76657320737175617265200a7361696c20706572666f726d616e63652c200a696e6372656173696e6720737065656420776974682061200a666f6c6c6f77696e672077696e642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2431,
+        "copy_end": 2520,
+        "bytes": 88
+      },
+      "integrated_stored_English": "A spritsail improves square \nsail performance, \nincreasing speed with a \nfollowing wind.",
+      "actual_current_V2284_approved_holds": [
+        {
+          "frame": 14300,
+          "message_ID": 1268,
+          "lines": [
+            "A spritsail improves square",
+            "sail performance,",
+            "increasing speed with a",
+            "following wind."
+          ],
+          "all_complete_foreground_first_final_glyphs_and_blank_background_equal": true,
+          "all_body_rows_start_x64_without_clipping": true
+        }
+      ],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1269",
+      "message_id": 1269,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8357834b815b835883708393834a815b82f0957482af82e982c60a8f6394bf90ab945c82aa8fe382aa82c182c40a8b74959782c582cc91ac937882aa919d82b582dc82b7",
+      "source_Japanese": "ジガースパンカーを付けると\n縦帆性能が上がって\n逆風での速度が増します",
+      "source_reference": {
+        "block": 15,
+        "offset": 2728,
+        "copy_end": 2796,
+        "bytes": 68,
+        "record_index": 50,
+        "table_offset": 1319674,
+        "start_in_record": 70
+      },
+      "current_hex": "41206a6967676572207370616e6b657220696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2520,
+        "copy_end": 2609,
+        "bytes": 88,
+        "record_index": 68,
+        "table_offset": 1319674,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A jigger spanker improves \nfore-and-aft performance, \nincreasing speed against\nthe wind.",
+      "english": "A jigger spanker improves fore-and-aft performance, increasing speed against the wind.",
+      "source_meaning": "A jigger spanker improves fore-and-aft performance and speed in an adverse wind.",
+      "localization_note": "The retained term matches the component label; against the wind contrasts clearly with the following-wind square-sail effects without promising direct upwind sailing.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The retained term matches the component label; against the wind contrasts clearly with the following-wind square-sail effects without promising direct upwind sailing.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202041207370616e6b657220626f6f7374732073706565640a2020616761696e7374207468652077696e642e202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "41206a6967676572207370616e6b657220696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2520,
+        "copy_end": 2609,
+        "bytes": 88
+      },
+      "integrated_stored_English": "A jigger spanker improves \nfore-and-aft performance, \nincreasing speed against\nthe wind.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1270",
+      "message_id": 1270,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92c789c191958d6282f082c282af82e982c60a91cf8b7697cd82aa8fe382aa82e882dc82b70a82bd82be814191ac937882aa8fad82b5978e82bf82dc82b7",
+      "source_Japanese": "追加装甲をつけると\n耐久力が上がります\nただ、速度が少し落ちます",
+      "source_reference": {
+        "block": 15,
+        "offset": 2796,
+        "copy_end": 2860,
+        "bytes": 62,
+        "record_index": 50,
+        "table_offset": 1319676,
+        "start_in_record": 138
+      },
+      "current_hex": "45787472612061726d6f7220696e63726561736573200a6475726162696c6974792062757420736c696768746c79200a726564756365732073706565642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2609,
+        "copy_end": 2672,
+        "bytes": 62,
+        "record_index": 69,
+        "table_offset": 1319676,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Extra armor increases \ndurability but slightly \nreduces speed.",
+      "english": "Extra armor increases durability but slightly reduces speed.",
+      "source_meaning": "Additional armor improves durability but slightly reduces speed.",
+      "localization_note": "The complete contrast preserves the benefit and the slight speed penalty without inventing an amount.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The complete contrast preserves the benefit and the slight speed penalty without inventing an amount.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202045787472612061726d6f72206164647320737472656e6774680a202062757420736c6f77732074686520736869702e20202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "45787472612061726d6f7220696e63726561736573200a6475726162696c6974792062757420736c696768746c79200a726564756365732073706565642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2609,
+        "copy_end": 2672,
+        "bytes": 62
+      },
+      "integrated_stored_English": "Extra armor increases \ndurability but slightly \nreduces speed.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1271",
+      "message_id": 1271,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "92c789c191958d62825182f082c282af82e982c60a91cf8b7697cd82aa82b382e782c98fe382aa82e882dc82b70a82bd82be814191ac937882aa8fad82b5978e82bf82dc82b7",
+      "source_Japanese": "追加装甲２をつけると\n耐久力がさらに上がります\nただ、速度が少し落ちます",
+      "source_reference": {
+        "block": 15,
+        "offset": 2860,
+        "copy_end": 2932,
+        "bytes": 70,
+        "record_index": 51,
+        "table_offset": 1319678,
+        "start_in_record": 1
+      },
+      "current_hex": "45787472612041726d6f7220322066757274686572200a696e63726561736573206475726162696c697479206275740a736c696768746c7920726564756365732073706565642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2672,
+        "copy_end": 2744,
+        "bytes": 71,
+        "record_index": 70,
+        "table_offset": 1319678,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Extra Armor 2 further \nincreases durability but\nslightly reduces speed.",
+      "english": "Extra Armor 2 further increases durability but slightly reduces speed.",
+      "source_meaning": "Additional armor2 further improves durability but slightly reduces speed.",
+      "localization_note": "Further and Extra Armor2 distinguish the second option while preserving the same stated speed drawback.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Further and Extra Armor2 distinguish the second option while preserving the same stated speed drawback.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "4d6f72652061726d6f722061646473206475726162696c69747920627574200a20736c696768746c79206c6f776572732073706565642e202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "45787472612041726d6f7220322066757274686572200a696e63726561736573206475726162696c697479206275740a736c696768746c7920726564756365732073706565642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2672,
+        "copy_end": 2744,
+        "bytes": 71
+      },
+      "integrated_stored_English": "Extra Armor 2 further \nincreases durability but\nslightly reduces speed.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1272",
+      "message_id": 1272,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "91448ef1964382aa82a082ea82ce0a914f95fb82c982e096438c8282aa82c582ab82dc82b70a82bd82be82b5814188d097cd82cd8fac82b382a282c582b7",
+      "source_Japanese": "船首砲があれば\n前方にも砲撃ができます\nただし、威力は小さいです",
+      "source_reference": {
+        "block": 15,
+        "offset": 2932,
+        "copy_end": 2996,
+        "bytes": 62,
+        "record_index": 52,
+        "table_offset": 1319680,
+        "start_in_record": 1
+      },
+      "current_hex": "4120626f772067756e206c65747320796f752066697265200a6168656164206f662074686520736869702c20627574206974730a73686f747320617265207765616b2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2744,
+        "copy_end": 2812,
+        "bytes": 67,
+        "record_index": 71,
+        "table_offset": 1319680,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A bow gun lets you fire \nahead of the ship, but its\nshots are weak.",
+      "english": "A bow gun lets you fire ahead of the ship, but its shots are weak.",
+      "source_meaning": "A bow gun enables forward fire but has weak attack power.",
+      "localization_note": "Ahead and weak shots preserve direction and low power, keeping this drawback distinct from the stern gun accuracy drawback.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Ahead and weak shots preserve direction and low power, keeping this drawback distinct from the stern gun accuracy drawback.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "4120626f772067756e2066697265732061686561642c2062757420686173206c6f77200a20706f7765722e20202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120626f772067756e206c65747320796f752066697265200a6168656164206f662074686520736869702c20627574206974730a73686f747320617265207765616b2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2744,
+        "copy_end": 2812,
+        "bytes": 67
+      },
+      "integrated_stored_English": "A bow gun lets you fire \nahead of the ship, but its\nshots are weak.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1273",
+      "message_id": 1273,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "914494f6964382aa82a082ea82ce0a8ce395fb82c982e096438c8282aa82c582ab82dc82b70a82bd82be82b5814196bd928697a682cd92e182a282c582b7",
+      "source_Japanese": "船尾砲があれば\n後方にも砲撃ができます\nただし、命中率は低いです",
+      "source_reference": {
+        "block": 15,
+        "offset": 2996,
+        "copy_end": 3060,
+        "bytes": 62,
+        "record_index": 53,
+        "table_offset": 1319682,
+        "start_in_record": 1
+      },
+      "current_hex": "4120737465726e2067756e206c65747320796f752066697265200a626568696e642074686520736869702c20627574206974730a73686f74732061726520696e61636375726174652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2812,
+        "copy_end": 2886,
+        "bytes": 73,
+        "record_index": 72,
+        "table_offset": 1319682,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A stern gun lets you fire \nbehind the ship, but its\nshots are inaccurate.",
+      "english": "A stern gun lets you fire behind the ship, but its shots are inaccurate.",
+      "source_meaning": "A stern gun enables rearward fire but has poor accuracy.",
+      "localization_note": "Behind and inaccurate shots retain the correct direction and accuracy limitation; this is not changed to weak damage.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Behind and inaccurate shots retain the correct direction and accuracy limitation; this is not changed to weak damage.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "4120737465726e2067756e206669726573206166742c20627574206973206c657373200a2061636375726174652e20202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120737465726e2067756e206c65747320796f752066697265200a626568696e642074686520736869702c20627574206974730a73686f74732061726520696e61636375726174652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2812,
+        "copy_end": 2886,
+        "bytes": 73
+      },
+      "integrated_stored_English": "A stern gun lets you fire \nbehind the ship, but its\nshots are inaccurate.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1274",
+      "message_id": 1274,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8389838082aa82a082ea82ce814193478acd82cc91a496ca82c90a91ce82b582c48fd593cb8d558c8282aa82c582ab82dc82b7",
+      "source_Japanese": "ラムがあれば、敵艦の側面に\n対して衝突攻撃ができます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3060,
+        "copy_end": 3112,
+        "bytes": 51,
+        "record_index": 54,
+        "table_offset": 1319684,
+        "start_in_record": 1
+      },
+      "current_hex": "412072616d206c65747320796f752061747461636b2062790a72616d6d696e67207468652073696465206f6620616e0a656e656d7920736869702e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2886,
+        "copy_end": 2946,
+        "bytes": 59,
+        "record_index": 73,
+        "table_offset": 1319684,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A ram lets you attack by\nramming the side of an\nenemy ship.",
+      "english": "A ram lets you attack by ramming the side of an enemy ship.",
+      "source_meaning": "With a ram, the ship can attack by striking an enemy ship in the side.",
+      "localization_note": "The sentence explicitly requires a ram and keeps the side-impact condition rather than broadening the attack to any collision.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The sentence explicitly requires a ram and keeps the side-impact condition rather than broadening the attack to any collision.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "412072616d206c65747320796f7520737472696b6520616e20656e656d79200a2073686970277320736964652e202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412072616d206c65747320796f752061747461636b2062790a72616d6d696e67207468652073696465206f6620616e0a656e656d7920736869702e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2886,
+        "copy_end": 2946,
+        "bytes": 59
+      },
+      "integrated_stored_English": "A ram lets you attack by\nramming the side of an\nenemy ship.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1275",
+      "message_id": 1275,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e618d9e91e092b782aa82a282ea82ce0a949295ba90ed82cc8d558c8297cd82aa8fe382aa82e882dc82b70a8dc591e58253959489ae82dc82c5927582af82dc82b7",
+      "source_Japanese": "斬込隊長がいれば\n白兵戦の攻撃力が上がります\n最大４部屋まで置けます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3112,
+        "copy_end": 3180,
+        "bytes": 66,
+        "record_index": 55,
+        "table_offset": 1319686,
+        "start_in_record": 0
+      },
+      "current_hex": "41206d6172696e65206361707461696e20626f6f737473200a626f617264696e672061747461636b20706f7765722e20596f750a63616e2061646420757020746f20666f757220726f6f6d73206f66200a7468697320747970652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 2946,
+        "copy_end": 3038,
+        "bytes": 91,
+        "record_index": 74,
+        "table_offset": 1319686,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A marine captain boosts \nboarding attack power. You\ncan add up to four rooms of \nthis type.",
+      "english": "A marine captain boosts boarding attack power. You can add up to four rooms of this type.",
+      "source_meaning": "A marine captain improves boarding attack power; up to four of this room can be added.",
+      "localization_note": "The two sentences separate the assigned-officer benefit from the limit on rooms of this type. Four is not generalized to all rooms.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The two sentences separate the assigned-officer benefit from the limit on rooms of this type. Four is not generalized to all rooms.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "41206d6172696e65206361707461696e20626f6f73747320626f617264696e67200a2061747461636b732e20557020746f20666f757220726f6f6d732e2020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "41206d6172696e65206361707461696e20626f6f737473200a626f617264696e672061747461636b20706f7765722e20596f750a63616e2061646420757020746f20666f757220726f6f6d73206f66200a7468697320747970652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 2946,
+        "copy_end": 3038,
+        "bytes": 91
+      },
+      "integrated_stored_English": "A marine captain boosts \nboarding attack power. You\ncan add up to four rooms of \nthis type.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1276",
+      "message_id": 1276,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "96438c828ee882aa82a282ea82ce0a96438c8282aa91ac82ad82c882e882dc82b70a8dc591e58253959489ae82dc82c5927582af82dc82b7",
+      "source_Japanese": "砲撃手がいれば\n砲撃が速くなります\n最大４部屋まで置けます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3180,
+        "copy_end": 3236,
+        "bytes": 56,
+        "record_index": 56,
+        "table_offset": 1319688,
+        "start_in_record": 1
+      },
+      "current_hex": "412067756e6e6572207370656564732075702063616e6e6f6e200a666972652e20596f752063616e2061646420757020746f200a666f7572206f6620746865736520726f6f6d732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3038,
+        "copy_end": 3111,
+        "bytes": 72,
+        "record_index": 75,
+        "table_offset": 1319688,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A gunner speeds up cannon \nfire. You can add up to \nfour of these rooms.",
+      "english": "A gunner speeds up cannon fire. You can add up to four of these rooms.",
+      "source_meaning": "A gunner enables faster cannon fire; up to four of this room can be added.",
+      "localization_note": "Speeds up cannon fire preserves firing rate rather than damage. These rooms correctly scopes the four-room limit.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Speeds up cannon fire preserves firing rate rather than damage. These rooms correctly scopes the four-room limit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "2047756e6e6572732073706565642075702063616e6e6f6e20666972652e0a2020557020746f20666f757220726f6f6d732e202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "412067756e6e6572207370656564732075702063616e6e6f6e200a666972652e20596f752063616e2061646420757020746f200a666f7572206f6620746865736520726f6f6d732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3038,
+        "copy_end": 3111,
+        "bytes": 72
+      },
+      "integrated_stored_English": "A gunner speeds up cannon \nfire. You can add up to \nfour of these rooms.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1277",
+      "message_id": 1277,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "908582e2904897bf82f00a90cf82f182c582a882ad959489ae82c582b7",
+      "source_Japanese": "水や食料を\n積んでおく部屋です",
+      "source_reference": {
+        "block": 15,
+        "offset": 3236,
+        "copy_end": 3268,
+        "bytes": 29,
+        "record_index": 56,
+        "table_offset": 1319690,
+        "start_in_record": 57
+      },
+      "current_hex": "5468697320726f6f6d20686f6c647320746865207368697027730a666f6f6420616e642077617465722e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3111,
+        "copy_end": 3154,
+        "bytes": 42,
+        "record_index": 76,
+        "table_offset": 1319690,
+        "start_in_record": 0
+      },
+      "current_stored_English": "This room holds the ship's\nfood and water.",
+      "english": "This room holds the ship's food and water.",
+      "source_meaning": "This room stores the ship food and water.",
+      "localization_note": "Holds is a natural storage verb and retains both supplies without inventing a consumption benefit.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Holds is a natural storage verb and retains both supplies without inventing a consumption benefit.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "202053746f72657320776174657220616e6420666f6f642e2020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "5468697320726f6f6d20686f6c647320746865207368697027730a666f6f6420616e642077617465722e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3111,
+        "copy_end": 3154,
+        "bytes": 42
+      },
+      "integrated_stored_English": "This room holds the ship's\nfood and water.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 15200,
+          "message_ID": 1277,
+          "lines": [
+            "This room holds the ship's",
+            "food and water."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 17900,
+          "message_ID": 1277,
+          "lines": [
+            "This room holds the ship's",
+            "food and water."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1278",
+      "message_id": 1278,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8cf088d5956982f090cf82de959489ae82c582b70a8dc591e58254959489ae82dc82c5927582af82dc82b7",
+      "source_Japanese": "交易品を積む部屋です\n最大５部屋まで置けます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3268,
+        "copy_end": 3312,
+        "bytes": 43,
+        "record_index": 57,
+        "table_offset": 1319692,
+        "start_in_record": 2
+      },
+      "current_hex": "436172676f20686f6c6473206361727279207472616465200a676f6f64732e20596f752063616e2061646420757020746f0a6669766520686f6c64732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3154,
+        "copy_end": 3216,
+        "bytes": 61,
+        "record_index": 77,
+        "table_offset": 1319692,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Cargo holds carry trade \ngoods. You can add up to\nfive holds.",
+      "english": "Cargo holds carry trade goods. You can add up to five holds.",
+      "source_meaning": "Cargo holds store trade goods and up to five holds may be added.",
+      "localization_note": "The two short complete sentences preserve the distinct cargo type and five-hold capacity, separate from four combat rooms.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The two short complete sentences preserve the distinct cargo type and five-hold capacity, separate from four combat rooms.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "436172676f20686f6c647320636172727920676f6f64732e20557020746f20666976652e20202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "436172676f20686f6c6473206361727279207472616465200a676f6f64732e20596f752063616e2061646420757020746f0a6669766520686f6c64732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3154,
+        "copy_end": 3216,
+        "bytes": 61
+      },
+      "integrated_stored_English": "Cargo holds carry trade \ngoods. You can add up to\nfive holds.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 15500,
+          "message_ID": 1278,
+          "lines": [
+            "Cargo holds carry trade",
+            "goods. You can add up to",
+            "five holds."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 18800,
+          "message_ID": 1278,
+          "lines": [
+            "Cargo holds carry trade",
+            "goods. You can add up to",
+            "five holds."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 19100,
+          "message_ID": 1278,
+          "lines": [
+            "Cargo holds carry trade",
+            "goods. You can add up to",
+            "five holds."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 19400,
+          "message_ID": 1278,
+          "lines": [
+            "Cargo holds carry trade",
+            "goods. You can add up to",
+            "five holds."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 19700,
+          "message_ID": 1278,
+          "lines": [
+            "Cargo holds carry trade",
+            "goods. You can add up to",
+            "five holds."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1279",
+      "message_id": 1279,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c99144917182f092c789c182c582ab82dc82b70a82bd82be82b5814192c789c182b782e982c60a91ac937882aa8fad82b5978e82bf82dc82b7",
+      "source_Japanese": "ここに船倉を追加できます\nただし、追加すると\n速度が少し落ちます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3312,
+        "copy_end": 3376,
+        "bytes": 62,
+        "record_index": 58,
+        "table_offset": 1319694,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752063616e20616464206120636172676f20686f6c640a686572652c2062757420697420736c696768746c79200a726564756365732073706565642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3216,
+        "copy_end": 3279,
+        "bytes": 62,
+        "record_index": 78,
+        "table_offset": 1319694,
+        "start_in_record": 0
+      },
+      "current_stored_English": "You can add a cargo hold\nhere, but it slightly \nreduces speed.",
+      "english": "You can add a cargo hold here, but it slightly reduces speed.",
+      "source_meaning": "A cargo hold can be installed here but slightly lowers speed.",
+      "localization_note": "The location refers to the selected slot. The slight speed cost remains explicit and is not applied to every room.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The location refers to the selected slot. The slight speed cost remains explicit and is not applied to every room.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "416464206120686f6c6420686572653b2073706565642064726f7073200a20736c696768746c792e20202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "596f752063616e20616464206120636172676f20686f6c640a686572652c2062757420697420736c696768746c79200a726564756365732073706565642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3216,
+        "copy_end": 3279,
+        "bytes": 62
+      },
+      "integrated_stored_English": "You can add a cargo hold\nhere, but it slightly \nreduces speed.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1280",
+      "message_id": 1280,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c983898380814191448ef19643814182dc82bd0a92868c5e914488c88fe382c982cd83588376838a836283670a835a8343838b82f092c789c182c582ab82dc82b7",
+      "source_Japanese": "ここにラム、船首砲、また\n中型船以上にはスプリット\nセイルを追加できます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3376,
+        "copy_end": 3448,
+        "bytes": 70,
+        "record_index": 59,
+        "table_offset": 1319696,
+        "start_in_record": 1
+      },
+      "current_hex": "46697420612072616d206f7220626f772067756e20686572652e0a4d656469756d20616e64206c61726765722073686970732063616e200a616c736f20636172727920612073706c6974207361696c2e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3279,
+        "copy_end": 3360,
+        "bytes": 80,
+        "record_index": 79,
+        "table_offset": 1319696,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Fit a ram or bow gun here.\nMedium and larger ships can \nalso carry a split sail.",
+      "english": "Fit a ram or bow gun here. Medium and larger ships can also carry a spritsail.",
+      "source_meaning": "A ram or bow gun can be fitted here, and medium or larger ships can additionally fit the named bow sail.",
+      "localization_note": "Revise split sail to spritsail consistently with1268 and the component label. Medium and larger retains the lower size threshold; or preserves alternative fittings instead of promising simultaneous installation.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "revise",
+      "fresh_retained_wording_justification": null,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "41646420612072616d2c20626f772067756e2c206f722073706c6974207361696c0a2068657265206f6e206c61726765722073686970732e2020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "46697420612072616d206f7220626f772067756e20686572652e0a4d656469756d20616e64206c61726765722073686970732063616e200a616c736f20636172727920612073707269747361696c2e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3279,
+        "copy_end": 3360,
+        "bytes": 79
+      },
+      "integrated_stored_English": "Fit a ram or bow gun here.\nMedium and larger ships can \nalso carry a spritsail.",
+      "actual_current_V2284_approved_holds": [
+        {
+          "frame": 14000,
+          "message_ID": 1280,
+          "lines": [
+            "Fit a ram or bow gun here.",
+            "Medium and larger ships can",
+            "also carry a spritsail."
+          ],
+          "all_complete_foreground_first_final_glyphs_and_blank_background_equal": true,
+          "all_body_rows_start_x64_without_clipping": true
+        }
+      ],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 14000,
+          "message_ID": 1280,
+          "lines": [
+            "Fit a ram or bow gun here.",
+            "Medium and larger ships can",
+            "also carry a split sail."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 17300,
+          "message_ID": 1280,
+          "lines": [
+            "Fit a ram or bow gun here.",
+            "Medium and larger ships can",
+            "also carry a split sail."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": true,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1281",
+      "message_id": 1281,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c992c789c191958d6282f00a919594f582c582ab82dc82b7",
+      "source_Japanese": "ここに追加装甲を\n装備できます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3448,
+        "copy_end": 3480,
+        "bytes": 29,
+        "record_index": 60,
+        "table_offset": 1319698,
+        "start_in_record": 1
+      },
+      "current_hex": "4669742065787472612061726d6f7220686572652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3360,
+        "copy_end": 3382,
+        "bytes": 21,
+        "record_index": 80,
+        "table_offset": 1319698,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Fit extra armor here.",
+      "english": "Fit extra armor here.",
+      "source_meaning": "Additional armor can be fitted here.",
+      "localization_note": "The brief complete instruction is appropriate for a selected fitting slot; no extra benefit or size requirement is invented.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The brief complete instruction is appropriate for a selected fitting slot; no extra benefit or size requirement is invented.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "4d6f756e742065787472612061726d6f7220686572652e202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4669742065787472612061726d6f7220686572652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3360,
+        "copy_end": 3382,
+        "bytes": 21
+      },
+      "integrated_stored_English": "Fit extra armor here.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 14300,
+          "message_ID": 1281,
+          "lines": [
+            "Fit extra armor here."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 17000,
+          "message_ID": 1281,
+          "lines": [
+            "Fit extra armor here."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1282",
+      "message_id": 1282,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "82b182b182c9914494f69643814182dc82bd82cd91e58c5e91440a82c882e782ce8357834b815b835883708393834a815b82f00a92c789c182c582ab82dc82b7",
+      "source_Japanese": "ここに船尾砲、または大型船\nならばジガースパンカーを\n追加できます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3480,
+        "copy_end": 3544,
+        "bytes": 64,
+        "record_index": 61,
+        "table_offset": 1319700,
+        "start_in_record": 2
+      },
+      "current_hex": "596f752063616e20666974206120737465726e2067756e200a686572652c206f722061206a6967676572207370616e6b6572200a6f6e206c617267652073686970732e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3382,
+        "copy_end": 3450,
+        "bytes": 67,
+        "record_index": 81,
+        "table_offset": 1319700,
+        "start_in_record": 0
+      },
+      "current_stored_English": "You can fit a stern gun \nhere, or a jigger spanker \non large ships.",
+      "english": "You can fit a stern gun here, or a jigger spanker on large ships.",
+      "source_meaning": "A stern gun can be fitted here, or a jigger spanker on a large ship.",
+      "localization_note": "Or preserves the alternatives; on large ships qualifies the jigger spanker and is not widened to medium ships like1280.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Or preserves the alternatives; on large ships qualifies the jigger spanker and is not widened to medium ships like1280.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "416464206120737465726e2067756e20686572652e0a20204269672073686970732063616e206164642061207370616e6b65722e202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "596f752063616e20666974206120737465726e2067756e200a686572652c206f722061206a6967676572207370616e6b6572200a6f6e206c617267652073686970732e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3382,
+        "copy_end": 3450,
+        "bytes": 67
+      },
+      "integrated_stored_English": "You can fit a stern gun \nhere, or a jigger spanker \non large ships.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1283",
+      "message_id": 1283,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e9d82c182c482a282e991448ef1919c82f00a82b182b182c98ee682e8957482af82e782ea82dc82b7",
+      "source_Japanese": "持っている船首像を\nここに取り付けられます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3544,
+        "copy_end": 3588,
+        "bytes": 41,
+        "record_index": 61,
+        "table_offset": 1319702,
+        "start_in_record": 66
+      },
+      "current_hex": "596f752063616e206d6f756e74206120666967757265686561640a796f75206f776e20686572652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3450,
+        "copy_end": 3491,
+        "bytes": 40,
+        "record_index": 82,
+        "table_offset": 1319702,
+        "start_in_record": 0
+      },
+      "current_stored_English": "You can mount a figurehead\nyou own here.",
+      "english": "You can mount a figurehead you own here.",
+      "source_meaning": "An owned figurehead can be mounted here.",
+      "localization_note": "You own retains the possession requirement. Mount is natural nautical fitting language.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "You own retains the possession requirement. Mount is natural nautical fitting language.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "20204d6f756e742061206669677572656865616420686572652e202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "596f752063616e206d6f756e74206120666967757265686561640a796f75206f776e20686572652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3450,
+        "copy_end": 3491,
+        "bytes": 40
+      },
+      "integrated_stored_English": "You can mount a figurehead\nyou own here.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 13700,
+          "message_ID": 1283,
+          "lines": [
+            "You can mount a figurehead",
+            "you own here."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        },
+        {
+          "frame": 17600,
+          "message_ID": 1283,
+          "lines": [
+            "You can mount a figurehead",
+            "you own here."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1284",
+      "message_id": 1284,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "914482c98ee682e8957482af82e782ea82c482a282e90a91e5964382cc8eed97de82f095cf8d5882c582ab82dc82b7",
+      "source_Japanese": "船に取り付けられている\n大砲の種類を変更できます",
+      "source_reference": {
+        "block": 15,
+        "offset": 3588,
+        "copy_end": 3636,
+        "bytes": 47,
+        "record_index": 62,
+        "table_offset": 1319704,
+        "start_in_record": 2
+      },
+      "current_hex": "596f752063616e206368616e67652074686520736869702773200a63616e6e6f6e207479706520686572652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3491,
+        "copy_end": 3536,
+        "bytes": 44,
+        "record_index": 83,
+        "table_offset": 1319704,
+        "start_in_record": 0
+      },
+      "current_stored_English": "You can change the ship's \ncannon type here.",
+      "english": "You can change the ship's cannon type here.",
+      "source_meaning": "The type of cannon aboard the ship can be changed here.",
+      "localization_note": "Change the cannon type preserves replacement choice rather than adding cannons or guaranteeing an upgrade.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "Change the cannon type preserves replacement choice rather than adding cannons or guaranteeing an upgrade.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "4368616e67652063616e6e6f6e207479706520686572652e2020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "596f752063616e206368616e67652074686520736869702773200a63616e6e6f6e207479706520686572652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3491,
+        "copy_end": 3536,
+        "bytes": 44
+      },
+      "integrated_stored_English": "You can change the ship's \ncannon type here.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 16700,
+          "message_ID": 1284,
+          "lines": [
+            "You can change the ship's",
+            "cannon type here."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1285",
+      "message_id": 1285,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e4f8a7094bf82cd8b74959782c98bad82a294bf82c582b70a82bd82be82b581418e4f8a7094bf82cc8ce382eb82c90a8e6c8a7094bf82cd82c282af82e782ea82dc82b982f1",
+      "source_Japanese": "三角帆は逆風に強い帆です\nただし、三角帆の後ろに\n四角帆はつけられません",
+      "source_reference": {
+        "block": 15,
+        "offset": 3636,
+        "copy_end": 3708,
+        "bytes": 70,
+        "record_index": 63,
+        "table_offset": 1319706,
+        "start_in_record": 0
+      },
+      "current_hex": "4c617465656e207361696c7320776f726b2077656c6c0a616761696e7374207468652077696e642e20596f75200a63616e6e6f7420707574206120737175617265207361696c0a626568696e64206f6e652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3536,
+        "copy_end": 3619,
+        "bytes": 82,
+        "record_index": 84,
+        "table_offset": 1319706,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Lateen sails work well\nagainst the wind. You \ncannot put a square sail\nbehind one.",
+      "english": "Lateen sails work well against the wind. You cannot put a square sail behind one.",
+      "source_meaning": "Lateen sails perform well in adverse winds, and square sails cannot be placed behind them.",
+      "localization_note": "The two complete sentences preserve the wind advantage and direction-specific incompatibility. Read with1287, behind and ahead are reciprocal rather than reversed.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The two complete sentences preserve the wind advantage and direction-specific incompatibility. Read with1287, behind and ahead are reciprocal rather than reversed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "20204c617465656e207361696c73206661766f72206865616477696e64732e0a20204e6f20737175617265207361696c20626568696e642e2020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4c617465656e207361696c7320776f726b2077656c6c0a616761696e7374207468652077696e642e20596f75200a63616e6e6f7420707574206120737175617265207361696c0a626568696e64206f6e652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3536,
+        "copy_end": 3619,
+        "bytes": 82
+      },
+      "integrated_stored_English": "Lateen sails work well\nagainst the wind. You \ncannot put a square sail\nbehind one.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1286",
+      "message_id": 1286,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "836783628376835a8343838b82f0957482af82e982c60a89a194bf90ab945c82aa8fe382aa82c182c40a8f87959782c582cc91ac937882aa919d82b582dc82b7",
+      "source_Japanese": "トップセイルを付けると\n横帆性能が上がって\n順風での速度が増します",
+      "source_reference": {
+        "block": 15,
+        "offset": 3708,
+        "copy_end": 3772,
+        "bytes": 64,
+        "record_index": 64,
+        "table_offset": 1319708,
+        "start_in_record": 1
+      },
+      "current_hex": "4120746f707361696c20696d70726f76657320737175617265200a7361696c20706572666f726d616e63652c200a696e6372656173696e6720737065656420776974682061200a666f6c6c6f77696e672077696e642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3619,
+        "copy_end": 3706,
+        "bytes": 86,
+        "record_index": 85,
+        "table_offset": 1319708,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A topsail improves square \nsail performance, \nincreasing speed with a \nfollowing wind.",
+      "english": "A topsail improves square sail performance, increasing speed with a following wind.",
+      "source_meaning": "A topsail improves square-sail performance and following-wind speed.",
+      "localization_note": "The same performance wording as1268 makes the shared effect clear while retaining the distinct sail type.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The same performance wording as1268 makes the shared effect clear while retaining the distinct sail type.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "20546f707361696c7320626f6f73742073706565640a202077697468207468652077696e642e2020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120746f707361696c20696d70726f76657320737175617265200a7361696c20706572666f726d616e63652c200a696e6372656173696e6720737065656420776974682061200a666f6c6c6f77696e672077696e642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3619,
+        "copy_end": 3706,
+        "bytes": 86
+      },
+      "integrated_stored_English": "A topsail improves square \nsail performance, \nincreasing speed with a \nfollowing wind.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 13100,
+          "message_ID": 1286,
+          "lines": [
+            "A topsail improves square",
+            "sail performance,",
+            "increasing speed with a",
+            "following wind."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1287",
+      "message_id": 1287,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e6c8a7094bf82cd8f87959782c98bad82a294bf82c582b70a82bd82be82b581418e6c8a7094bf82cc914f82c90a8e4f8a7094bf82cd82c282af82e782ea82dc82b982f1",
+      "source_Japanese": "四角帆は順風に強い帆です\nただし、四角帆の前に\n三角帆はつけられません",
+      "source_reference": {
+        "block": 15,
+        "offset": 3772,
+        "copy_end": 3840,
+        "bytes": 68,
+        "record_index": 64,
+        "table_offset": 1319710,
+        "start_in_record": 65
+      },
+      "current_hex": "537175617265207361696c7320776f726b2077656c6c2077697468200a6120666f6c6c6f77696e672077696e642e20596f75200a63616e6e6f74207075742061206c617465656e207361696c0a6168656164206f66206f6e652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3706,
+        "copy_end": 3797,
+        "bytes": 90,
+        "record_index": 86,
+        "table_offset": 1319710,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Square sails work well with \na following wind. You \ncannot put a lateen sail\nahead of one.",
+      "english": "Square sails work well with a following wind. You cannot put a lateen sail ahead of one.",
+      "source_meaning": "Square sails perform well with a following wind, and a lateen sail cannot be placed ahead of one.",
+      "localization_note": "The reciprocal restriction agrees with1285. Following wind remains distinct from the fore-and-aft sail advantages.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The reciprocal restriction agrees with1285. Following wind remains distinct from the fore-and-aft sail advantages.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "2020537175617265207361696c73206661766f72207461696c77696e64732e0a20204e6f206c617465656e207361696c2061686561642e20202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "537175617265207361696c7320776f726b2077656c6c2077697468200a6120666f6c6c6f77696e672077696e642e20596f75200a63616e6e6f74207075742061206c617465656e207361696c0a6168656164206f66206f6e652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3706,
+        "copy_end": 3797,
+        "bytes": 90
+      },
+      "integrated_stored_English": "Square sails work well with \na following wind. You \ncannot put a lateen sail\nahead of one.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [
+        {
+          "frame": 13400,
+          "message_ID": 1287,
+          "lines": [
+            "Square sails work well with",
+            "a following wind. You",
+            "cannot put a lateen sail",
+            "ahead of one."
+          ],
+          "complete_foreground_blank_paper_and_first_final_glyphs_equal": true,
+          "visible168x84_not_internal108_height": true,
+          "historical_help_panel_equal": true
+        }
+      ],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1288",
+      "message_id": 1288,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "835883658343835a8343838b82f0957482af82e982c60a8f6394bf90ab945c82aa8fe382aa82c182c40a8b74959782c582cc91ac937882aa919d82b582dc82b7",
+      "source_Japanese": "ステイセイルを付けると\n縦帆性能が上がって\n逆風での速度が増します",
+      "source_reference": {
+        "block": 15,
+        "offset": 3840,
+        "copy_end": 3904,
+        "bytes": 64,
+        "record_index": 64,
+        "table_offset": 1319712,
+        "start_in_record": 133
+      },
+      "current_hex": "4120737461797361696c20696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3797,
+        "copy_end": 3880,
+        "bytes": 82,
+        "record_index": 87,
+        "table_offset": 1319712,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A staysail improves \nfore-and-aft performance, \nincreasing speed against\nthe wind.",
+      "english": "A staysail improves fore-and-aft performance, increasing speed against the wind.",
+      "source_meaning": "A staysail improves fore-and-aft performance and speed in adverse winds.",
+      "localization_note": "The parallel wording to1269 preserves the same kind of performance benefit without confusing the two different fittings.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The parallel wording to1269 preserves the same kind of performance benefit without confusing the two different fittings.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "2020537461797361696c7320626f6f73742073706565640a2020616761696e7374207468652077696e642e202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "4120737461797361696c20696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3797,
+        "copy_end": 3880,
+        "bytes": 82
+      },
+      "integrated_stored_English": "A staysail improves \nfore-and-aft performance, \nincreasing speed against\nthe wind.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_1289",
+      "message_id": 1289,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_hex": "8e6c8a7094bf82c98f6394bf90ab945c82c689a194bf90ab945c0a97bc95fb82cc90ab945c82f08d8282df82bd94bf82c582b7",
+      "source_Japanese": "四角帆に縦帆性能と横帆性能\n両方の性能を高めた帆です",
+      "source_reference": {
+        "block": 15,
+        "offset": 3904,
+        "copy_end": 3956,
+        "bytes": 51,
+        "record_index": 64,
+        "table_offset": 1319714,
+        "start_in_record": 197
+      },
+      "current_hex": "54686973206973206120737175617265207361696c20776974680a696d70726f76656420666f72652d616e642d61667420616e64200a737175617265207361696c20706572666f726d616e63652e",
+      "current_reference": {
+        "block": 16,
+        "offset": 3880,
+        "copy_end": 3959,
+        "bytes": 78,
+        "record_index": 88,
+        "table_offset": 1319714,
+        "start_in_record": 0
+      },
+      "current_stored_English": "This is a square sail with\nimproved fore-and-aft and \nsquare sail performance.",
+      "english": "This is a square sail with improved fore-and-aft and square sail performance.",
+      "source_meaning": "This square sail improves both fore-and-aft and square-sail performance.",
+      "localization_note": "The explicit both retains the unusual dual performance benefit while still identifying the fitting as a square sail.",
+      "speaker": "Ship component or crew-room help",
+      "context": "Selected Refit help slot; own168x84 visible help painter,168x108 allocation,generated27-column pair-safe lines and no authored layout.",
+      "consumer": "refit-help27-pair-safe-v1",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The explicit both retains the unusual dual performance benefit while still identifying the fitting as a square sail.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "canonical_source_hex": "2020426f6f73747320626f7468207361696c2074797065732e2020202020202020202020202020202020202020202020202020",
+      "status": "complete-fresh-contextual-revision-or-justified-retention-native-display-actual-family-registered-reconciliation",
+      "original_historical_family": "Shared-Refit-room-and-equipment-help1247-1255-1268-1289",
+      "integrated_hex": "54686973206973206120737175617265207361696c20776974680a696d70726f76656420666f72652d616e642d61667420616e64200a737175617265207361696c20706572666f726d616e63652e",
+      "integrated_reference": {
+        "block": 16,
+        "offset": 3880,
+        "copy_end": 3959,
+        "bytes": 78
+      },
+      "integrated_stored_English": "This is a square sail with\nimproved fore-and-aft and \nsquare sail performance.",
+      "actual_current_V2284_approved_holds": [],
+      "actual_V2171_before_revision_help_holds": [],
+      "baseline1280_is_before_spritsail_revision_not_current_wording": false,
+      "historical_V834_actual_holds": [],
+      "all_other_actual_conditional_visits_not_claimed": true
+    }
+  ],
+  "completion_credit_pending": false,
+  "full_goal_complete": false,
+  "status": "complete-fresh-contextual-reconciled-registered-V2284",
+  "formatting_evidence": "work\\analysis\\refit_offline_approval_v2282b\\offline_approval.json",
+  "predecessor_manuscript": "translations\\refit_contextual_editorial_manuscript_v1.json",
+  "predecessor_manuscript_sha256": "85588dbc4cfc2f05ef8a5a1949b93db43f4c612deed32f8826060e79ee197997",
+  "final_review": "translations\\refit_contextual_final_review_v1.json",
+  "integrated_ROM": "out\\all_routes_combined_v2284_candidate.nds",
+  "integrated_ROM_sha256": "7c6d025ef0d12c6dd7cc58095802a27bb49dafc830f33851e73e734b4f8bdfe1",
+  "integrated_ARM9_sha256": "dff9c14e929e3ba5b82b6bd35f1cef89903e05ab530033f02f8ac11580fdbfcc",
+  "integrated_COMMON_sha256": "96966b524ba51c51376c2eb379eac5c8000722e52e7092e914d6999a5725690d",
+  "registered_stage_bindings": [
+    {
+      "stage": "refit_help_repack",
+      "release_config": "translations\\refit_help_repack_v2.json",
+      "release_config_sha256": "2a29bc6b1d460404d7a5170a85c0fd1b8494b228f5e0a5e62110eacb62ff008e",
+      "native_IDs": [
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252,
+        1253,
+        1254,
+        1255,
+        1268,
+        1269,
+        1270,
+        1271,
+        1272,
+        1273,
+        1274,
+        1275,
+        1276,
+        1277,
+        1278,
+        1279,
+        1280,
+        1281,
+        1282,
+        1283,
+        1284,
+        1285,
+        1286,
+        1287,
+        1288,
+        1289
+      ]
+    },
+    {
+      "stage": "refit_help_editorial",
+      "release_config": "translations\\refit_help_editorial_release_v1.json",
+      "release_config_sha256": "796b910b870910be6680da8d18801515a7c33dd3b6fb42cd9b44317dd834bb7c",
+      "native_IDs": [
+        1247,
+        1249,
+        1250,
+        1251,
+        1253,
+        1268,
+        1272,
+        1273,
+        1275,
+        1276,
+        1277,
+        1278,
+        1280,
+        1281,
+        1282,
+        1286,
+        1287,
+        1289
+      ]
+    },
+    {
+      "stage": "refit_dialogue_editorial",
+      "release_config": "translations\\refit_dialogue_editorial_release_v1.json",
+      "release_config_sha256": "d17602070b32c1a31e6af18f8cddba6b13cdda5a569afddb3921e0f7114bb110",
+      "native_IDs": [
+        1256,
+        1257,
+        1258,
+        1259,
+        1260,
+        1261,
+        1262,
+        1263,
+        1264,
+        1265,
+        1266,
+        1267
+      ]
+    },
+    {
+      "stage": "refit_contextual_spritsail",
+      "release_config": "translations\\refit_contextual_spritsail_release_v1.json",
+      "release_config_sha256": "72eaff64e251b4bf71ad8a11f2afe1ae9637ec274d43dbc471fb1be1c5c1de56",
+      "native_IDs": [
+        1268,
+        1280
+      ]
+    }
+  ]
+}

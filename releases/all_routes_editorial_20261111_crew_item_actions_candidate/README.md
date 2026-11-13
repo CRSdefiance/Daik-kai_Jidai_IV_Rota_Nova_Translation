@@ -1,0 +1,7 @@
+# All Routes Crew Item Actions candidate
+
+Use [Translation_DS_All_Routes_Crew_Item_Actions_20261111_candidate.nds](../../out/crew_item_actions_registered_20261111_v1/Translation_DS_All_Routes_Crew_Item_Actions_20261111_candidate.nds) with its adjacent manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `f47d869aeb48e7de585dec544b0ce3bd0efd22f1b5de1a6bf3e9488ee9799213`. Patch SHA-256 `b002b319ba804938a297b13ade4aee3388a07de80ee098d6416a79a0c2ab092d`.
+
+All 33 crew item-action replies are registered. The ledger now credits 27,179 reviews. The batch includes 24 revisions and nine justified retentions. It covers remedy use, required equipment, crew dismissals, Hermes’ Prayer and the Golden Cat. The native word wrapper keeps both substituted item names intact.
+
+All 40 distinct native portrait pages received visual review. Two Items-menu replays on a copied save confirmed both refusal branches, successful use with the full Hua Tuo’s Tonic name, and the original returns. The replays supplied the item and condition, and moved one existing crew member for the successful use. Other variants received offline checks. Cold startup, 24 protected name getters, 34 targeted tests and 101 release checks passed. [Gameplay](verification/crew_item_actions_gameplay_verification.json) · [Exact records](verification/registered_review.json)

@@ -1,0 +1,7 @@
+# Faction and epilogue notices registered
+
+The seven faction and epilogue notices are registered. The ledger now credits 26,378 reviews. Six revisions improve the attack alert, level-up, dissolution and epilogue. One retention preserves “passed away after a full and eventful life.” The predecessor split “eventful” and “passed” between rows. The revised runtime wraps complete words and retains the original narrator pause after the first panel. [Release and patch](../releases/all_routes_editorial_20261111_faction_and_epilogue_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_faction_and_epilogue_candidate/verification/registered_review.json)
+
+A two-byte fixture entered the original four-panel epilogue after an ordinary Hodram battery-save replay. All four live framebuffer and formatter-buffer checks passed, followed by the original Game Over screen. All 16 stored variants were reviewed visually. The three other notices and the alternate captains’ displays were checked offline. No earned ending or hardware verification is recorded.
+
+The [source review](../translations/editorial_checkpoints/SharedText_20261110_v1/faction_and_epilogue_context_v1.json) preserves the original callers and unbound Options records 330–333 and stat notice 336. Continue with the full shark exchange around COMMON 2425–2453 and bind its conditional groups and speakers. Keep the other unresolved notices, Market replies, later technical re-audit and artwork in their existing queues.

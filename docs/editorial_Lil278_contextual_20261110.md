@@ -1,0 +1,15 @@
+# Lil B299–B311 contextual review checkpoint
+
+Lil B299–B311 has 278 source-first drafts and exact contextual comparisons across 13 exchanges. There are 170 proposed revisions and 108 justified retentions. The registered Lil361 text is bound using byte-identical runtime and block evidence. Final names and terminology, review gates, formatting, gameplay and integration are pending. The ledger has 25,105 completed reviews and 793 remaining native Lil records.
+
+The clean Japanese glosses and independent English drafts were sealed before the current text was extracted. The archive binds each decision to its clean bytes, registered current bytes, source position and current position. The 278 records include 133 ordinary speech records, 139 physical personality alternatives and six menu captions. Exact byte comparisons establish that the previous Lil startup capture applies to these thirteen blocks and their runtime dependencies. The capture comes from Lil269 and the current text references point to registered Lil361. Native checks cover 144 personality slots and both name getters for ten scoped actors.
+
+The snake exchange now distinguishes driving the animal away from killing it and keeps the injuries uncertain. The oasis branch restores the sandstorm, water rationing and recovery from fatigue. The river exchange keeps flood damage speculative and distinguishes looking for a bridge from trying to cross on foot. The ferry discovery and 100-gold fare remain in that second branch.
+
+The Basra commission specifies the Indian Ocean coast, nine spices, a cargo hold of each, and one combined delivery. It keeps the 40,000-gold payment and reward, the slight market-share increase and the guildmaster's unnamed gift. The two temple errands restore six Japanese speech records across B309 and B310. A separate full-width exclamation becomes ASCII. The revised replies keep Lil's shift into forced politeness and her eventual self-correction. The directions preserve the icy sea, the peninsula and its east-coast peak, and the clan guarding the map to the Proof.
+
+Native dispatch identifies CF as Lil in the opening context. D0, D3 and D6 resolve to the existing Sailor fallback there. Later assignments can differ. The scoped name review should preserve Matilda, Safia and Sakura as established names, Camille's given and full forms, and the distinction between Senior Monk and a specific title such as abbot. Regional name-table fields are identity metadata. The full catalogue labels remain part of the wider name review.
+
+Continue with the exact commodity, place and Proof terminology, name decisions, and the final read-aloud pass. Then plan and verify the native layouts, stored bytes and representative gameplay before registration. Preserve the source-first seals and keep earlier builds available. The remaining storyline, shared dialogue, random scenes, player-facing prose and name review continue from the coverage ledger.
+
+[Archived source, comparisons and verification](../translations/editorial_checkpoints/Lil278_clean_20261110_v1/archive_manifest.json)

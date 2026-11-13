@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "command": "python -m pytest -q tests/test_dialogue_tool.py tests/test_dialogue_balanced_wrap.py tests/test_dialogue_review.py tests/test_dialogue_pair_phase.py tests/test_dialogue_relocation.py tests/test_integrated_release.py tests/test_release_translation_integrity.py",
+  "passed": 91,
+  "failed": 3,
+  "failed_file": "tests/test_release_translation_integrity.py",
+  "failure": "All three historical tests require out/all_routes_unified_v5_candidate.nds, which is absent. Each stops with FileNotFoundError before its audit/assertions execute.",
+  "historical_tests_not_retargeted_or_waived": true,
+  "current_V4046_registered_release_and_scoped_native_gameplay_verification": "registered_release_verification.json; cold_boot_Lil_startup_town_verification.json; B165_completion_receipt.json",
+  "current_promotion_independent_package_audit": "promotion_final_audit.json",
+  "promotion_exact_clean_input_reconstruction": "promotion_reconstruction.json",
+  "new_emulator_runs_at_promotion": 0
+}

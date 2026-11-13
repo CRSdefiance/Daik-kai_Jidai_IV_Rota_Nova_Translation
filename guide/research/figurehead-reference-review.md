@@ -1,0 +1,5 @@
+# Figurehead effects and acquisition review
+
+October 12, 2026: Kurogane item/sensyuzou.php and wiki81. Ten native regular Figurehead names preserved. Reported effects from wiki remain mixed-version and untested, while DS blog independently gives search locations for Dolphin/Dragon/Maiden and Rafael story branches for several others. Kurogane confirms Orca Osaka inn/Jam; Piglet London/Christina/Indian proof; King Stockholm/Julio/North proof; Sofala/Cesare and possible recovery; Demon Fernando/riddle/removal risk; White Whale victory or nonattack branch. Wiki explicitly adds waiting until whale withdraws. No exact encounter coordinates, protection percentages, recovery shops, or invincibility test inferred.
+
+Kurogane's item HTML omits some closing tr tags. The new HTMLParser extractor closes a row on the next tr, rather than losing alternating names. It matches155 identities to clean DS Japanese labels. Numerical unmatched rows are retained for manual alias/version review; PK-only Scipio armor is not added. No source, game data, or screenshots changed.

@@ -1,0 +1,42 @@
+"""Next eight victory reports;legacy formatter leading cell and genuine IC plural."""
+from pathlib import Path
+import struct
+from capstone import Cs,CS_ARCH_ARM,CS_MODE_ARM
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.rom.nds import NdsImage
+from dk4tool.script.common_message_table import common_message_entries
+from scripts.battle_victory_native_plan_v1396 import compiled
+from scripts.research_battle_aftermath_context_v1248 import source_prefix
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/battle_victory_context_v2586');IDS=list(range(2130,2138));BASE=0x02000000;TABLE=0x02117EE0
+if __name__=='__main__':
+ assert not ROOT.exists()
+ ledger=read('translations/editorial_review_current_v1.json');candidate=ledger['current_integrated_candidate'];rom=NdsImage.open(candidate['path']);clean=NdsImage.open('work/clean.nds');arm=rom.read_file('/__arm9__.bin');common=rom.read_file('/COMMON/MESFILE.DK4');source=clean.read_file('/__arm9__.bin');en=current_entries(common,arm);jp=common_message_entries(clean.read_file('/COMMON/MESFILE.DK4'),source)
+ assert sha(Path(candidate['path']).read_bytes())==candidate['sha256']
+ manifest=read(Path(candidate['path']).with_suffix('.manifest.json'));stage=manifest['relocations']['/COMMON/MESFILE.DK4']['battle_victory_editorial'];cfgpath=Path(stage['release_config']);cfg=read(cfgpath);mp=Path(cfg['manuscript']);doc=read(mp);prior={r['message_id']:r for r in doc['records']}
+ assert stage['proof']['native_IDs']==IDS and sorted(prior)==IDS and sha(cfgpath.read_bytes())==stage['release_config_sha256']and sha(mp.read_bytes())==cfg['dependencies'][str(mp)]
+ owner=dict(stage='battle_victory_editorial',selected_IDs=IDS,registered_config=str(cfgpath),registered_config_sha256=sha(cfgpath.read_bytes()),registered_manuscript=str(mp),registered_manuscript_sha256=sha(mp.read_bytes()),registered_stage_native_IDs=IDS,compiler=compiled.__module__+'.compiled')
+ for n in IDS:assert prior[n]['source_hex']==jp[n].text.hex()and compiled(prior[n])==en[n].text and not en[n].text.startswith(b' ')
+ fresh={(r['file_path'],r['id'])for r in ledger['contextual_story_natural_dialogue_pass_v1871']['record_keys']};assert not any(('/COMMON/MESFILE.DK4',f'COMMON_MESSAGE_{n}')in fresh for n in IDS)
+ def ref(r):return dict(block=r.block,offset=r.block_offset,copy_end=r.copy_end,bytes=len(r.text),record_index=r.record_index,table_offset=r.table_offset,start_in_record=r.start)
+ def record(n):return dict(message_ID=n,file_path='/COMMON/MESFILE.DK4',source_reference=ref(jp[n]),current_reference=ref(en[n]),source_hex=jp[n].text.hex(),current_hex=en[n].text.hex(),clean_Japanese=jp[n].text.decode('cp932'),current_stored_English=en[n].text.decode('cp932'),registered_prose_owner='battle_victory_editorial'if n in IDS else None,selected=n in IDS)
+ hpath=Path('work/analysis/battle_victory_verified_v1410/actual_victory_and_return_verification.json');h=read(hpath);reportpath=Path(h['report']);report=read(reportpath);assert sha(reportpath.read_bytes())==h['report_sha256']and report['ROM_sha256']==h['candidate_sha256']
+ snapshots={r['frame']:r for r in report['read_only_capture_RAM_snapshots']+report['read_only_pause_RAM_snapshots']};item=snapshots[10950];snapshot=Path(item['path']);raw=snapshot.read_bytes();assert sha(raw)==item['sha256']
+ spans=((0x72000,0x72368),(0x53D44,0x53DCC),(0x53F4C,0x53F9C),(0x82428,0x82570),(0x7E988,0x7E99C),(TABLE-BASE,TABLE-BASE+32))
+ for a,b in spans:assert arm[a:b]==source[a:b]==raw[a:b]
+ assert list(struct.unpack_from('<8i',arm,TABLE-BASE))==IDS
+ md=Cs(CS_ARCH_ARM,CS_MODE_ARM);prefix=list(md.disasm(arm[0x72168:0x72174],BASE+0x72168));assert len(prefix)==3 and prefix[1].op_str=='r0, #1'and prefix[2].op_str=='#0x2053d44'
+ calls,_,_=source_prefix(arm,raw,0x72168,(),BASE+0x72174);assert len(calls)==1 and calls[0]['entry']==BASE+0x53D44 and calls[0]['arguments'][:2]==[1,TABLE]
+ cpu,get=get_machine(arm,raw);root,fleets=get(0xCB184),get(0xCB1A8);objects=[root+4+i*32 for i in range(207)]+[root+0x19E4];choices=[]
+ for slot,obj in enumerate(objects):
+  voice=get(0x7E988,obj);n=get(0x53F4C,obj,TABLE);assert n==IDS[voice];choices.append(dict(actor_slot=slot,actor_object=obj,actor_ID=get(0x7EE08,obj),voice_class=voice,message_ID=n))
+ assert len(choices)==208 and get(0x82478,fleets+0x2090,1)==16 and get(0x82428,fleets+0x2090,1)==0 and get(0x53F4C,root+4+16*32,TABLE)==2131
+ ownerptr,wrapped=[struct.unpack_from('<I',arm,p)[0]for p in(0x552A0,0x54450)];assert raw[ownerptr-BASE+0x2030:ownerptr-BASE+0x2230].split(b'\0')[0]==en[2131].text and raw[wrapped-BASE:wrapped-BASE+512].split(b'\0')[0]==b' '+en[2131].text
+ assert jp[2132].text.count(b'IC')==1 and 'ICたち' in jp[2132].text.decode('cp932')and prior[2132]['source_native_macros']==['IC first-person plus plural tachi localized grammatically as we']
+ ROOT.mkdir(parents=True);packetpath=ROOT/'all8_clean_current_context_catalog.json';contextpath=ROOT/'source_context_packet.json'
+ save(packetpath,dict(source_ROM='work/clean.nds',source_ROM_sha256=sha(Path('work/clean.nds').read_bytes()),current_ROM=candidate['path'],current_ROM_sha256=candidate['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),selected_IDs=IDS,records=[record(n)for n in IDS],neighbors=[record(n)for n in(2129,2138)],registered_prose_owner_bindings=[owner],catalog_order_not_assumed_dialogue_chronology=True,source_prose_or_fresh_pass_credit_added=0,editorial_native_and_historical_reconciliation_pending=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ save(contextpath,dict(current_ROM=candidate['path'],current_ROM_sha256=candidate['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),actual_snapshot=str(snapshot),actual_snapshot_sha256=sha(raw),snapshot_historical_V1404_not_current_gameplay=True,original_signed_eight_members=IDS,all208_original_voice_selections=choices,original_role_selector=1,original_entry=BASE+0x53D44,original_parent=BASE+0x53DB8,original_table_stack_offset=0x27C,original_table=TABLE,one_current_original72168_victory_prefix=calls,original72168_instructions=[dict(address=i.address,bytes=i.bytes.hex(),mnemonic=i.mnemonic,operands=i.op_str)for i in prefix],actual_logical_member_ID=16,actual_physical_FirstMate_object=0,actual_voice1_selects2131=True,original_source_code=[dict(start=a,end=b,sha256=sha(arm[a:b]),current_clean_historical_snapshot_exact=True)for a,b in spans],registered_prose_owner_bindings=[owner],compiler_emits_no_leading_cell_native_legacy_formatter_adds_one=True,source2132_genuine_IC_plural_localized_as_we=True,no_actor_ID_roster_or_result_changes=True,context='Independent victory announcements after original battle outcome processing. All eight address the admiral;2132 genuine IC plus tachi is collective we,not a substituted personal name. Preserve jubilation,formal/familiar voices and any anticipation of the end of battle without inventing casualties,total destruction or additional spoils. Adjacent2129 withdrawal and2138 own flagship defeat belong to other source tables. The original legacy formatter adds one leading cell;compiler emits ASCII without an authored guard. This selector is not enrolled in the new scoped wrapping members. Test original cell,odd-pair trailing blank and whole native font,not the prior capture formatter assumption. Historical Gerhard16 voice1 selects2131 via logical82478 while physical First Mate82428 is empty. Later rewards and cargo are context,not extra prose credit or retained spoils. No fresh credit yet.',full_goal_complete=False))
+ save(ROOT/'next8_preflight.json',dict(packet=str(packetpath),packet_sha256=sha(packetpath.read_bytes()),source_context=str(contextpath),source_context_sha256=sha(contextpath.read_bytes()),registered_prose_owner_bindings=[owner],all8_clean_current_registered_compiler_match=True,all208_voice_choices_and_original72168_prefix_and_logical16_physical0_pass=True,original_legacy_formatter_cell_and_source2132_IC_plural_distinct=True,historical_family_proof=str(hpath),historical_family_proof_sha256=sha(hpath.read_bytes()),historical_individual_IDs=[2131],fresh_credit=0,full_goal_complete=False))
+ print('Next8 victory reports:208 voice selections,original role1 call,actual logical16/physical0,legacy leading cell and genuine IC plural;zero fresh credit.')

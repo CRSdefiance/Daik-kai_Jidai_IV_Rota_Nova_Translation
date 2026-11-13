@@ -1,0 +1,15 @@
+"""Null Captain NPC tables and a genuine fatigue branch remain discriminating controls."""
+from pathlib import Path
+import struct
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.prepare_battle_repair_medical_context_v899 import select
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/battle_bridge_controls_v2426');BASE=0x02000000
+if __name__=='__main__':
+ assert not ROOT.exists();rompath=Path('out/all_routes_combined_v2284_candidate.nds');arm=NdsImage.open(rompath).read_file('/__arm9__.bin');clean=NdsImage.open('work/clean.nds').read_file('/__arm9__.bin');contextpath=Path('work/analysis/battle_bridge_context_v2422/native_context.json');context=read(contextpath);cases=context['all162_battle_direct_main_and_ordinary_control_cases'];assert len(cases)==162 and all(r['actor_ID']<4 for r in cases if r['role_ID']==5);nulls=[]
+ for literal in(0x126A4,0x12834):
+  table=struct.unpack_from('<I',arm,literal)[0];at=table-BASE+5*4;assert arm[at:at+4]==clean[at:at+4]==b'\0'*4;nulls.append(dict(table_pointer_literal=literal,role_ID=5,NPC_pointer=0,never_called_as_supported_NPC_alternative=True))
+ reportpath=Path('E:/Rota Nova translations/Generated/work/emulation_v193/battle_bridge_v930_928_ManuelHelm/capture_report.json');report=read(reportpath);assert report['cold_boot']and not report['savestate_loaded'];receipt=next(r for r in report.get('read_only_capture_RAM_snapshots',[])+report.get('read_only_pause_RAM_snapshots',[])if r['frame']==16300);raw=Path(receipt['path']).read_bytes();assert sha(raw)==receipt['sha256']and receipt['read_only_export'];cpu,get=get_machine(arm,raw);actor=get(0xCB184)+4+23*32;condition,mood,voice=get(0x7E100,actor),get(0x7E0B4,actor),get(0x7E988,actor);assert condition==1 and voice==7 and get(0x7F244)==1;case=select(arm,raw,23,4,(0,1),0x12104,1788);assert case['selected_message_ID']not in range(1681,1709)
+ ROOT.mkdir(parents=True);save(ROOT/'null_tables_and_genuine_fatigue_control.json',dict(candidate=str(rompath),candidate_sha256=sha(rompath.read_bytes()),native_context_proof=str(contextpath),native_context_proof_sha256=sha(contextpath.read_bytes()),Captain5_null_NPC_table_controls=nulls,genuine_Manuel_condition1_mood_preserved_control=dict(source_report=str(reportpath),source_report_sha256=sha(reportpath.read_bytes()),source_RAM=receipt,source_condition=condition,source_mood=mood,native_voice_class=voice,main_selector=case),original_uncredited_Manuel_working_sample_remains_uncredited=True,healthy_voice7_actor19_is_the_explicit_separate_historical_working_sample=True,condition_health_mood_and_actor_identity_not_replaced=True,no_editorial_or_Bridge_body_credit_for1788=True,no_new_current_emulator_run_or_family_visit=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(Captain_NPC_tables_null=True,genuine_Manuel_condition=condition,selected_fatigue_ID=1788,new_credit=0))

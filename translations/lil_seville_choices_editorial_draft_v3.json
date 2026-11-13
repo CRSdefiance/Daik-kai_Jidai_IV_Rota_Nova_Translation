@@ -1,0 +1,128 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "file_path": "/data/SC2.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2674_candidate.nds",
+  "current_ROM_sha256": "f72574b9d640f2677742ff6ad94c319b581aaa18dee541da6707f1825efa2cd2",
+  "required_runtime_ARM9_sha256": "d9415c1e0eb18c9eec9b76329f3dedb724a1a754a4829be103c6b958f927b9aa",
+  "source_context": "work\\analysis\\lil_Seville_source_v2704b\\complete20_clean_current_native_context.json",
+  "source_context_sha256": "2612d0ce11dd800dafaabf2d6f586dac9724b2c10bf7cda92b5a466c9fcf4246",
+  "control_contract": "work\\analysis\\lil_Seville_controls_v2706b\\source_bound_B28_B29_presenter_and_control_contract.json",
+  "control_contract_sha256": "db72e0b16edfe0981118910faf21e6511d07d8178bd3f939e0b8c95cb532cf08",
+  "branch_proof": "work\\analysis\\lil_Seville_branches_v2705\\original_relative_skip_operand_proof.json",
+  "branch_proof_sha256": "f9733991f1214ead2b73dc11229b23a8ccbb6cd9816d1ad775adba67bdc1d658",
+  "formatting_review_pending": false,
+  "completion_credit_added": 0,
+  "source_prose_credit_added": 0,
+  "full_goal_complete": false,
+  "format": "dk4-native-two-choice-editorial-manuscript-v1",
+  "records": [
+    {
+      "id": "DK4_CHOICE_B28_C694_O0",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "command_offset": 694,
+      "option_index": 0,
+      "source_reference": {
+        "offset": 700,
+        "bytes": 22
+      },
+      "current_reference": {
+        "offset": 700,
+        "bytes": 22
+      },
+      "source_hex": "95aa82a982c182bd814282b182b182cd88f882ad82ed",
+      "current_hex": "57697468647261772e20202020202020202020202020",
+      "source_Japanese": "分かった。ここは引くわ",
+      "current_English": "Withdraw.             ",
+      "source_legacy_NUL_ID": "DK4_MES_B28_R0089",
+      "kind": "typed-choice-label",
+      "speaker": "Lil Argot;player-selected reply",
+      "source_prose_or_completion_credit_added": 0,
+      "english": "All right. I'll back down.",
+      "source_meaning": "Lil accepts the demand andsays she will back down in this situation.",
+      "localization_note": "Restore the complete acknowledgment andpersonal withdrawal reply instead of the clipped Withdraw. The situation supplies here;the English makes no promise to withdraw forever anddoes not invent a future plan. Preserve stored option0andits original outcome branch.",
+      "editorial_decision": "revise",
+      "context": "Original B28typed2100reply choice follows Valdes conditional threat. Stored0accepts withdrawal;stored1refuses. Preserve source branch order,pointer table andnormal modal-result handling. B29is a separate original follow-up action,not an automatic second reply.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-prose-native-references-representative-approved;registered-release-startup-pending",
+      "native_choice_proof": "work\\analysis\\lil_Seville_choice_v2714\\original_choice_decoder_VM_geometry_and_native_pixels.json",
+      "native_choice_proof_sha256": "27ac6036703a2d0f132381e7840e098e1f699edfc85574d76c856faa279a93e2",
+      "actual_Seville_selection_not_claimed": true,
+      "current_text_hex": "57697468647261772e20202020202020202020202020"
+    },
+    {
+      "id": "DK4_CHOICE_B28_C694_O1",
+      "file_path": "/data/SC2.DK4",
+      "block": 28,
+      "command_offset": 694,
+      "option_index": 1,
+      "source_reference": {
+        "offset": 724,
+        "bytes": 14
+      },
+      "current_reference": {
+        "offset": 724,
+        "bytes": 14
+      },
+      "source_hex": "88f882ad82e082f182c582b782a9",
+      "current_hex": "4e657665722e2020202020202020",
+      "source_Japanese": "引くもんですか",
+      "current_English": "Never.        ",
+      "source_legacy_NUL_ID": "DK4_MES_B28_R0091",
+      "kind": "typed-choice-label",
+      "speaker": "Lil Argot;player-selected reply",
+      "source_prose_or_completion_credit_added": 0,
+      "english": "I'm not backing down!",
+      "source_meaning": "Lil emphatically refuses to back down.",
+      "localization_note": "Restore the complete emphatic refusal instead of the isolated Never. It naturally carries her defiant voice andcontrasts withoption0without a new insult or military claim. Preserve stored option1andthe original branch order.",
+      "editorial_decision": "revise",
+      "context": "Original B28typed2100reply choice follows Valdes conditional threat. Stored0accepts withdrawal;stored1refuses. Preserve source branch order,pointer table andnormal modal-result handling. B29is a separate original follow-up action,not an automatic second reply.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-prose-native-references-representative-approved;registered-release-startup-pending",
+      "native_choice_proof": "work\\analysis\\lil_Seville_choice_v2714\\original_choice_decoder_VM_geometry_and_native_pixels.json",
+      "native_choice_proof_sha256": "27ac6036703a2d0f132381e7840e098e1f699edfc85574d76c856faa279a93e2",
+      "actual_Seville_selection_not_claimed": true,
+      "current_text_hex": "4e657665722e2020202020202020"
+    }
+  ],
+  "revised": 2,
+  "retained": 0,
+  "typed_command": 8448,
+  "stored_order": [
+    0,
+    1
+  ],
+  "no_ROM_or_actual_selection_claim": true,
+  "status": "source-prose-native-references-representative-approved;registered-release-startup-pending",
+  "native_choice_proof": "work\\analysis\\lil_Seville_choice_v2714\\original_choice_decoder_VM_geometry_and_native_pixels.json",
+  "native_choice_proof_sha256": "27ac6036703a2d0f132381e7840e098e1f699edfc85574d76c856faa279a93e2",
+  "previous_manuscript": "translations\\lil_seville_choices_editorial_draft_v2.json",
+  "previous_manuscript_sha256": "d293e2392c4f4a532c26bf66e54084c1af968cc47e6dc0c98d9270f3d16072cd",
+  "reference_map": "translations\\lil_seville_editorial_relocation_map_v1.json",
+  "reference_map_sha256": "c974bb61cc2d11da594c3d2e1ef0cfca514f8f9a2876f3ca1794dbfeb5d38b23",
+  "representative_proof": "work\\analysis\\lil_Seville_sampling_v2721b\\representative_rule_reconciliation.json",
+  "representative_sheet_review": "work\\analysis\\lil_Seville_reference_approval_v2722\\representative_sheet_review.json",
+  "reference_map_pending": false,
+  "registered_integration_pending": true
+}

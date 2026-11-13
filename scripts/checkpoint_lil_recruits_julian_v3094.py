@@ -1,0 +1,80 @@
+"""Checkpoint199 whole-exchange reviews without premature integration credit."""
+from pathlib import Path
+from copy import deepcopy
+from shutil import copy2
+from collections import Counter
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.reconcile_contextual_mood_retentions_v2482 import historical_key
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_Recruits_Julian_checkpoint_v3094')
+DOC=Path('translations/lil_recruits_julian_editorial_manuscript_v4.json')
+CHOICES=Path('translations/lil_recruits_julian_choice_manuscript_v3.json')
+APPROVAL=Path('work/analysis/lil_Recruits_Julian_font_approval_v3093/approval_receipt.json')
+PRIOR=Path('work/analysis/editorial_handoff_verification_v3078/verified_handoff.json')
+BLOCKS=[75,76,77,78,79]
+FAMILY='Lil-Recruits-Julian-199'
+SUMMARY=' '.join([
+'V3094 freshly reviews199 objects in five complete LilSC2B75-B79 exchanges: Janus hiring/ship delivery, Charles recruitment, Yukihisa intervention/recruitment, and Julian crown/family conversations. There are197speeches(196ordinary/one unlabeledFE) andtwo typed choices,with158revisions/41individually justified retentions. Every object has exact clean/current references,a fresh gloss,whole-exchange context,localization note andallfive review gates.',
+'Janus Pasar preserves study without practical voyaging,the1000gold advance,one-day wait,tomorrow Port,repairs/debts andhis test-of-character explanation followed bytoo-excited self-correction. Lil is admiral. The unlabeled guide uses verified Dock/Remodel terminology,not the separate Refit header or aninvented Rename button. Actor109 is reconciled to native Shipwright while preserving the source packet annotation and bytes. Charles retains the Academy letter,conditional experiment,bomb-to-science correction,explicit slaps/countdown,three-years-on-display explanation andmisread threat. Yukihisa retains personal right/wrong judgment,the back ofhisblade/no cuts,conditional absent food companions andpersonal resolve tosee/test himself intheworld. Source hostile foreigner taunts,extortion allegations andgendered personal resolve are contextual character speech without newslurs,ranks,killing oruniversal narrator claims. Julian retains Silla Gold Crown,Hangzhou tavern,Mihwa,Luo Yuli,delicate-air girl ofthen-unknown identity,grandparents/black-haired parents andparental scholar/official wishes,without invented romance,illness,amnesia orrank.',
+'Source mapping binds372commands,68relative sites/680clean-current cases,197complete preambles/394historical dispatch cases and16current predicates;noeventqueries. All197complete current native planes and1576logical/compiled macro-alignment cases preserve everyglyph,first/final characters,blankpaper,origins,bounds,fourrows andsinglepage. OneFE uses original24310nullactor and228x48logical/228x64physical mode1paper;variadic5473Cr1isnotgeometry. Two speech drafts were tightened for actual pair-phase/five-row failures,withfirstdraft/failedplan preserved. The nineteen-cell unpadded refusal exposed11missing leading-Ypixels in a114px tightly fitted nativepainter. A faithful twenty-cell You must be kidding! successor passes a120pxcanvas;failed3090/diagnostic3090b andall drafts remain. No runtime change orolder-record audit isclaimed. Nativechoice decoding/count/order/pointers and0/1/cancel returns pass three decode objects/sixVMcases/eightcurrent-reviewedstyleplanes;inputloop isbridged,not actual selectedgameplay. All25ordinary/oneFE/onemenu sheets viewed. Thirty-one source/consumer and28formatter negatives pass;only74source/Englishrow-count notes,withno orphan,weak-ending,control,glyph,bounds orpagination waiver. Globalhelpers unchanged.',
+'Fresh coverage3990reread/3791integrated/199pending;source/prose3993including2163SC2. Completion stays3791,2642historicallyrevised/1149retained. Routes2391reviewed/2192completed. Relocation372commands/68spans/340relocatedcases/16predicates/one typedmenu,197finalparityplanes/788macrocases,336wholeloaders/twoparents/threeentrycensuses,representative reconciliation andguardedregisteredrelease remainpending. FullV3066 remains508manifestbatches/114acceptedlayers withits exactclean-inputpatch/current31-frame startup proof. No newemulator run,selectedrecruitment,earnedpayment,itemtransfer,nameplate,fullroute orhardware claim.',
+'Allwider untouchedstorylines/sharedshop-town/random/help/playerprose,COMMON750-752callers,SourceItems/LocalProduct,five named-targetleads,raw rejected-objectclassification includingB141,SC3B109,separategraphics/all18plaques andlater older-record technical re-audit remainopen. Queued0Dvalidation-gap lead staysforlater without asserting anolder runtime defect. B66/B121 andallcompletedfamilies remaincomplete. Preserve allROMs,translations,executedproducers/proofs/failures andclean/canonicalinputs. V1492remainspromoted. Fullgoalactive;alljobsterminal.'
+])
+if __name__=='__main__':
+    assert not ROOT.exists();lp=Path('translations/editorial_review_current_v1.json');ledger=read(lp);before=deepcopy(ledger)
+    assert sha(lp.read_bytes())==read(PRIOR)['ledger_sha256']
+    doc,choice,approval=map(read,[DOC,CHOICES,APPROVAL]);rows=doc['records']+choice['records'];ids=[r['id'] for r in rows]
+    source,control,branch=map(read,[doc['source_context'],doc['control_contract'],doc['branch_proof']])
+    assert len(rows)==len(set(ids))==199 and Counter(r['editorial_decision'] for r in rows)=={'revise':158,'retain-wording':41}
+    assert all(all(r['review'].values()) and r['source_meaning'] and r['context'] and r['localization_note'] for r in rows)
+    assert (source['total_editorial_objects'],source['progressive_speeches'],source['system_FE_panels'],source['typed_choice_labels'])==(199,196,1,2)
+    assert sum(len(b['all_clean_native_commands']) for b in source['blocks'])==372 and [b['block'] for b in source['blocks']]==BLOCKS
+    assert len(branch['cases'])==680 and len(branch['operands_requiring_adjustment_when_resizing'])==68
+    assert len(control['dispatch_cases'])==394 and len(control['current_original_predicate_cases'])==16 and control['original_event_queries']==[]
+    assert approval['manuscript_sha256']==sha(DOC.read_bytes()) and approval['choices_sha256']==sha(CHOICES.read_bytes()) and approval['all199_five_review_gates_true']
+    fresh=ledger['contextual_story_natural_dialogue_pass_v1871']
+    assert (fresh['fresh_pass_records_explicitly_reread'],fresh['fresh_pass_records_integrated'],fresh['fresh_pass_records_pending_native_actual_release'])==(3791,3791,0)
+    selected=[dict(file_path='/data/SC2.DK4',id=n) for n in ids];keys={historical_key(r) for r in fresh['record_keys']}
+    assert not {historical_key(r) for r in selected}&keys and {historical_key(r) for g in ledger['completed_editorial_families'] for r in g['records']}==keys
+    assert ledger['records_with_source_and_prose_pass']==ledger['records_with_source_prose_drafts']==3794
+    assert not any(ledger['reviewed_but_incomplete_route_record_IDs'].values())
+    docs=[Path('docs')/n for n in ['editorial_handoff_current.md','translation_progress.md','editorial_review_goal.md','todo.md','known_issues.md']]
+    assert docs[0].read_text(encoding='utf8').startswith('# Current editorial handoff - V3077')
+    ROOT.mkdir(parents=True)
+    for p in [lp,*docs]:copy2(p,ROOT/(p.name+'.before'))
+    ledger['records_with_source_and_prose_pass']=ledger['records_with_source_prose_drafts']=3993
+    ledger['source_prose_reviewed_counts_by_file']['/data/SC2.DK4']=2163
+    ledger['reviewed_but_incomplete_route_record_IDs']['/data/SC2.DK4']=ids
+    active=ledger['active_source_prose_drafts']
+    for p,rs in [(DOC,doc['records']),(CHOICES,choice['records'])]:
+        active['manuscripts'].append(str(p));active['route_record_subsets_pending'][str(p)]=[r['id'] for r in rs]
+    active.update(status='3-reviewed-COMMON-incomplete;199-Recruits-Julian-native-reviewed-pending-release',note='3990 fresh rereads:3791 integrated/reconciled and199 pending reference,representative andregistered-release gates. Source/prose3993;COMMON750-752andallwider untouched prose remain open.')
+    fresh['record_keys'].extend(selected);fresh['record_IDs'].extend(ids)
+    pending=dict(id=FAMILY,file_path='/data/SC2.DK4',blocks=BLOCKS,records=199,record_keys=selected,manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),choices=str(CHOICES),choices_sha256=sha(CHOICES.read_bytes()),proposed_revisions=158,retentions=41,source_prose_reviews_added=199,completion_credit_added=0,native_font_proof=doc['native_font_proof'],pending='372commands/68spans/340relocatedcases/16predicates/noqueries/one menu;197finalparityplanes/788macro cases;336wholeloaders/twoparents/threeentrycensuses;representative reconciliation;guarded cumulative release afterfullV3066,exactcleanpatch/currentstartup.',new_emulator_runs=0)
+    fresh.update(fresh_pass_records_explicitly_reread=3990,fresh_pass_records_integrated=3791,fresh_pass_records_pending_native_actual_release=199,pending_record_keys=selected,pending_contextual_families=[pending],latest_pending_contextual_family=FAMILY,latest_contextual_manuscript=str(DOC),latest_contextual_choice_draft=str(CHOICES),coverage_note=active['note'])
+    for unit in ledger['coverage_units']:
+        if unit['id']=='all-route-scenes':unit.update(reviewed_route_records=2391,completed_route_records=2192,next='Integrate199 reviewed recruitment/Julian objects;continue every untouched storyline/shared shop-town/random/help/playerprose family.')
+    ledger['coverage_units'].append(dict(**pending,status='source-prose-current-native-format-approved;reference-representative-release-pending',full_goal_complete=False))
+    ledger['formatting_watchlist']['lil_Recruits_Julian_v3094']=dict(status='197nativepanels/1576macro cases,8menuplanes/6VMreturns pass;reference/finalpadding/release pending',source_context=doc['source_context'],control_contract=doc['control_contract'],branch_proof=doc['branch_proof'],native_font_proof=doc['native_font_proof'],approval=str(APPROVAL),narrow_line_count_notes=74,all27_final_sheets_viewed=True,source_bound_formatter_global_helpers_unchanged=True,no_open_final_target_native_font_finding=True,no_orphan_predicate_or_missing_glyph_waivers=True,actual_selected_Recruits_Julian_IDs=[],new_emulator_runs=0)
+    requirements=ROOT/'next_registered_integration_requirements.json'
+    save(requirements,dict(parent_profile='all-routes-unified-v3066',parent_ROM=doc['current_ROM'],parent_ROM_sha256=doc['current_ROM_sha256'],manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),choices=str(CHOICES),choices_sha256=sha(CHOICES.read_bytes()),source_context=doc['source_context'],control_contract=doc['control_contract'],branch_proof=doc['branch_proof'],native_fonts=doc['native_font_proof'],native_formatter_module=doc['native_formatter_module'],native_formatter_module_sha256=doc['native_formatter_module_sha256'],blocks=BLOCKS,progressive=196,FE_panels=1,choice_labels=2,typed_menu_objects=1,commands=372,relative_sites=68,original_predicates=16,event_queries=0,
+        next='Compile197 through exact localv1encoder/QA plus separate typedmenu. Preserve372commands/68relative spans/340relocatedcases/16predicates/noqueries andone2100menu byinverse restoration;all331otherSC2blocks exact. Prove336wholeloaders/twoparents/threeentrycensuses. Check197finalparityplanes/788macroalignments includingone unlabeledFEguide andchoiceobject. Reconcile sharedprogressive/FE/menuactualrules byexactruntime/font/ownerhashes;focusedindividualvisits onlyfor concreteunresolvedrisks. Registerone guardedoptionalstage afterfullV3066;expected510manifestbatches/114acceptedlayers. BuildcumulativeROM/exactcleanpatch/freshcurrentstartup before199completion.',preserve_every_ROM_translation_profile_accepted114_and_V1492_promotion=True,current_COMMON_parser='dk4tool.patch.surrender_advice_contextual_v1.current_entries',current_context='scripts/current_common_native_context_v2677.py',full_goal_complete=False))
+    inventory=deepcopy(read(ledger['unfinished_editorial_scope_v3077']['path']))
+    inventory.update(incomplete_route_source_prose_groups=[dict(family=FAMILY,file_path='/data/SC2.DK4',blocks=BLOCKS,count=199,record_IDs=ids)],incomplete_route_source_prose_count=199,next_focus='Integrate199 recruitment/Julian reviews;then continue all untouched storylines/sharedshop-town/random/help/playerprose. Preserve all inherited unfinished scope,graphics separation andlater technical re-audit.')
+    inventory['lil_B75_B79_fresh_context_review_checkpoint']=dict(checkpoint='V3094',status='source-prose-native-reviewed;integration-pending',manuscript=str(DOC),choices=str(CHOICES),historical_source_only_lead_v3077_now_reviewed=True,no_whole_goal_completion_credit=True)
+    for unit in inventory['broader_coverage_units']:
+        if unit['id']=='all-route-scenes':unit.update(reviewed_route_records=2391,completed_route_records=2192,source_prose_pending_records=199,source_prose_pending_family=FAMILY,next=inventory['next_focus'])
+    inv=ROOT/'unfinished_editorial_scope_inventory.json';save(inv,inventory)
+    ledger['unfinished_editorial_scope_v3094']=dict(path=str(inv),sha256=sha(inv.read_bytes()),incomplete_COMMON=3,incomplete_route_source_prose=199,full_goal_complete=False)
+    evidence={str(p):sha(p.read_bytes()) for p in [DOC,CHOICES,APPROVAL,PRIOR,requirements,inv,Path(doc['source_context']),Path(doc['control_contract']),Path(doc['branch_proof']),Path(doc['whole_exchange_context_notes']),Path(doc['item_terminology_reconciliation']),Path(doc['native_font_proof']),Path(doc['native_formatter_module']),Path(doc['scoped_profile_module']),Path(__file__),*[Path(s['path']) for s in approval['all27_review_sheets']]]}
+    ledger['lil_Recruits_Julian_source_prose_native_v3094']=dict(summary=SUMMARY,**pending,evidence=evidence,goal_turn_classification='progress',full_goal_complete=False);ledger['latest_checkpoint']=SUMMARY
+    for key in ['completed_editorial_families','records_editorially_completed','records_revised_and_integrated','retained_wordings_editorially_completed','completed_editorial_record_counts_by_file','current_integrated_candidate','reviewed_but_incomplete_COMMON_IDs','unresolved_graphics_work','older_record_reaudit_after_full_editorial_goal','native_source_universe_inventory_v2701c']:
+        assert ledger[key]==before[key],key
+    assert len(fresh['record_keys'])==len({historical_key(r) for r in fresh['record_keys']})==3990 and len(fresh['integrated_record_keys'])==3791
+    assert ledger['goal_status']=='active' and not ledger['full_goal_complete'];save(lp,ledger)
+    section='## V3094:199 recruitment/Julian reviews; release pending\n\n'+SUMMARY+'\n\nManuscript: '+DOC.as_posix()+'. Choices: '+CHOICES.as_posix()+'. Approval: '+APPROVAL.as_posix()+'. Next integration: '+requirements.as_posix()+'. Unfinished scope: '+inv.as_posix()+'.\n\n'
+    for i,p in enumerate(docs):
+        first,rest=p.read_text(encoding='utf8').split('\n',1);p.write_text(('# Current editorial handoff - V3094' if i==0 else first)+'\n\n'+section+rest,encoding='utf8',newline='\n')
+    candidate=ledger['current_integrated_candidate']
+    save(ROOT/'checkpoint_receipt.json',dict(checkpoint='V3094',summary=SUMMARY,evidence=evidence,updated_files={str(p):sha(p.read_bytes()) for p in [lp,*docs]},new_completed_records=0,new_source_prose_reviews=199,proposed_revisions=158,justified_retentions=41,fresh_reread=3990,fresh_integrated=3791,fresh_pending=199,source_prose=3993,completed=3791,historical_revised=2642,historical_retained=1149,incomplete_COMMON=3,incomplete_route=199,candidate=candidate['path'],candidate_sha256=candidate['sha256'],patch=candidate['patch'],patch_sha256=candidate['patch_sha256'],next_requirements=str(requirements),actual_selected_Recruits_Julian_IDs=[],new_emulator_runs=0,goal_turn_classification='progress',all_jobs_terminal=True,full_goal_complete=False))
+    print('V3094:199newreviews,158revisions/41retentions;3990reread/3791integrated/199pending;source-prose3993. V3066preserved;fullgoalactive.')

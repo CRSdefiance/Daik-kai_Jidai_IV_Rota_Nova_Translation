@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v94"]["batches"]);b.append("translations/maria_deep_route_v95.json");p["profiles"]["maria-deep-route-v95"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V94 with 67 translations and one preserved control in SC3 blocks 121-126: Bergstrom, Clifford's legacy, and North Sea/New World Proof-map reveals."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v95: {len(b)} batches")

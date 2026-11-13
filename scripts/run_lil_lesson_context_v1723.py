@@ -1,0 +1,69 @@
+"""Replay ordinary buttons to current B120,then observe unchanged lesson UI live."""
+import ctypes as ct
+import struct
+import sys
+from pathlib import Path
+from types import FunctionType
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts import headless_desmume_v193 as harness
+from scripts import observe_script_sources_v733 as original
+from scripts.run_activity_special_live_v988 import GrowingCommands
+from scripts.verify_village_wrap_v608 import read,save
+
+ROOT=Path('work/analysis/lil_lesson_context_v1723')
+CAP=Path('E:/Rota Nova translations/Generated/work/emulation_v193/lil_lesson_context_v1723_1711')
+ROM=Path('out/all_routes_combined_v1711_candidate.nds')
+
+
+if __name__=='__main__':
+    assert not ROOT.exists() and not CAP.exists()
+    digest=sha(ROM.read_bytes());assert digest==read(ROM.with_suffix('.manifest.json'))['candidate_sha256']
+    report=Path('E:/Rota Nova translations/Generated/work/emulation_v193/lil_opening_trace_v1706_RESEARCH_ONLY/capture_report.json')
+    prior=read(report);assert prior['ROM_sha256']==digest and prior['frames']==22930
+    arm=NdsImage.open(ROM).read_file('/__arm9__.bin');source=NdsImage.open('work/clean.nds').read_file('/__arm9__.bin')
+    assert arm[0x24048:0x24118]==source[0x24048:0x24118]
+    contract=Path('work/analysis/script_sources_v733/source_contract.json')
+    for target in read(contract)['targets']:assert struct.unpack_from('<I',arm,target['PC']-0x02000000)[0]==target['word']
+    ROOT.mkdir(parents=True);(ROOT/'source_contract.json').write_bytes(contract.read_bytes())
+    inputs=ROOT/'ordinary_replay_inputs.json';save(inputs,prior['scripted_input_schedule'])
+    journal=ROOT/'navigation.jsonl';journal.write_text('',encoding='utf-8')
+    env={**original.__dict__,'ROM':ROM,'ROOT':ROOT}
+    class Observer(original.Observer):
+        __init__=FunctionType(original.Observer.__init__.__code__,env,argdefs=original.Observer.__init__.__defaults__)
+        save=FunctionType(original.Observer.save.__code__,env,argdefs=original.Observer.save.__defaults__)
+    observers=[]
+    class Commands(GrowingCommands):
+        def readline(self,*args):
+            for observer in observers:
+                save(ROOT/'live_observer_progress.json',{'rows':observer.rows,'errors':observer.errors,
+                    'callbacks':observer.header[2],'mismatches':observer.header[3],
+                    'pending':{str(k):v for k,v in observer.pending.items()},'live_not_terminal_proof':True})
+            return super().readline(*args)
+    class Proxy:
+        def __getattr__(self,name):return getattr(ct,name)
+        def CDLL(self,path,*args,**kwargs):
+            core=ct.CDLL(path,*args,**kwargs)
+            if str(path).lower().endswith('desmume_libretro.dll'):
+                observer=Observer(core,CAP/'observer');observer.install();observers.append(observer)
+                old_run=core.retro_run;old_run.restype=None
+                def run():observer.next_frame();old_run()
+                core.retro_run=run
+            return core
+    save(ROOT/'run_plan.json',{'candidate':str(ROM),'candidate_sha256':digest,
+        'reference_complete_opening_capture_report':str(report),'reference_report_sha256':sha(report.read_bytes()),
+        'input':str(inputs),'input_sha256':sha(inputs.read_bytes()),'no_preloaded_save_savestate_or_gameplay_fixtures':True,
+        'read_only_observer':str(Path(original.__file__)),'observer_sha256':sha(Path(original.__file__).read_bytes()),
+        'harness_sha256':sha(Path(harness.__file__).read_bytes()),'runner_sha256':sha(Path(__file__).read_bytes()),
+        'full_goal_complete':False})
+    stream=Commands(journal);old_stdin=sys.stdin;sys.stdin=stream;old_ct=harness.ct;harness.ct=Proxy()
+    sys.argv=['headless_desmume_v193.py','--rom',str(ROM),'--out',str(CAP),'--frames','100000',
+        '--inputs-json',str(inputs),'--capture-every','999999','--capture-at','22900','22930','--pause-at','22930',
+        '--dump-capture-ram','--dump-pause-ram','--dump-ram']
+    try:harness.main()
+    finally:
+        sys.stdin=old_stdin;harness.ct=old_ct;stream.close()
+        for observer in observers:observer.close()
+    for observer in observers:observer.save()
+    save(ROOT/'terminal.json',{'terminal':True,'candidate_sha256':digest,'observer_instances':len(observers),
+        'observer_host_slots_restored':True,'no_gameplay_fixture_save_or_ROM_runtime_edit':True})

@@ -1,0 +1,952 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC3.DK4",
+  "source_file_sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "maria-story-shared-events-v50-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Maria SC3 blocks 33-34: wako debrief, strategy reflection, coastal contracts, and colonial warning.",
+  "inventory": {
+    "identified_records": 48,
+    "translated_records": 43,
+    "excluded_records": 5,
+    "blocks": {
+      "33": 36,
+      "34": 7
+    }
+  },
+  "excluded": [
+    {
+      "id": "DK4_MES_B33_R0058",
+      "reason": "Opaque nine-byte event-control payload between debrief phases."
+    },
+    {
+      "id": "DK4_MES_B33_R0088",
+      "reason": "Opaque four-byte event-control payload."
+    },
+    {
+      "id": "DK4_MES_B33_R0097",
+      "reason": "Opaque four-byte event-control payload."
+    },
+    {
+      "id": "DK4_MES_B33_R0101",
+      "reason": "Opaque four-byte event-control payload."
+    },
+    {
+      "id": "DK4_MES_B33_R0112",
+      "reason": "Opaque six-byte event-control payload ending the strategy scene."
+    }
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B33_R0013",
+      "english": "{SPEAKER:0B}Admiral, we are back!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Admiral, we are back!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0017",
+      "english": "{SPEAKER:0C}Wako destroyed.{LB}Mission complete.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Wako destroyed. Mission complete.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0022",
+      "english": "{SPEAKER:03}Our losses?{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Our losses?",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0026",
+      "english": "{SPEAKER:0B}Heh heh!{LB}We used that plan.{LB}Losses? Not a scratch!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Heh heh! We used that plan. Losses? Not a scratch!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0030",
+      "english": "{SPEAKER:0C}We trapped their swift ships{LB}with our formation,{LB}then sank them by sheer firepower.{LB}No losses were suffered.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "We trapped their swift ships with our formation, then sank them by sheer firepower. No losses were suffered.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0033",
+      "english": "{SPEAKER:4A}Hmm. Good work.{PAD}",
+      "speaker": "Xien",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Hmm. Good work.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0045",
+      "english": "{SPEAKER:03}Both did well.{LB}Good work.{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Both did well. Good work.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0048",
+      "english": "{SPEAKER:0B}Yahoo!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Yahoo!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0052",
+      "english": "{SPEAKER:0C}Yes!{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Yes!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0060",
+      "english": "{SPEAKER:0B}Hey, old man Xien!{LB}We are back!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Hey, old man Xien! We are back!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0063",
+      "english": "{LB}A great victory.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " A great victory.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0067",
+      "english": "{SPEAKER:0C}We followed {MACRO:FI}'s plan.{LB}Taking the windward side{LB}assured victory.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "We followed the protagonist's given name's plan. Taking the windward side assured victory.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0070",
+      "english": "{SPEAKER:0B}The enemy appeared exactly{LB}where {MACRO:FI} predicted.{LB}Even we were amazed!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "The enemy appeared exactly where the protagonist's given name predicted. Even we were amazed!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0073",
+      "english": "{SPEAKER:0C}A masterstroke.{LB}Brilliant.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "A masterstroke. Brilliant.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0077",
+      "english": "{LB}Hmm. {MACRO:FI}{LB}has done well.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Hmm. the protagonist's given name has done well.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0080",
+      "english": "{SPEAKER:0B}Terrifying,{LB}but amazing too.{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Terrifying, but amazing too.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0083",
+      "english": "{SPEAKER:0C}Our lives depend{LB}on that commander.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Our lives depend on that commander.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0086",
+      "english": "{LB}Richard is truly insufferable.{LB}At sea he is completely useless.{LB}Yet he acts as adviser to {MACRO:FI}.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Richard is truly insufferable. At sea he is completely useless. Yet he acts as adviser to the protagonist's given name.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0090",
+      "english": "{SPEAKER:0B}His English connections{LB}let us defy Ming's isolation{LB}and operate openly.{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "His English connections let us defy Ming's isolation and operate openly.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0093",
+      "english": "{LB}Yet you have no such ties{LB}to your homeland.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Yet you have no such ties to your homeland.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0096",
+      "english": "{SPEAKER:0B}Heh. Some unknown scoundrel{LB}framed me, so home is barred.{LB}Once found, he gets a beating!{PAD}",
+      "speaker": "Jam",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Heh. Some unknown scoundrel framed me, so home is barred. Once found, he gets a beating!",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0099",
+      "english": "{LB}Yukihisa's fate is ironic too.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Yukihisa's fate is ironic too.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0103",
+      "english": "{LB}Seeking a legendary sword,{LB}he boarded wako, then hunted them.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Seeking a legendary sword, he boarded wako, then hunted them.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0107",
+      "english": "{SPEAKER:0C}No concern is needed.{LB}Abroad exposed their wrongdoing.{LB}Such shame cannot stand.{PAD}",
+      "speaker": "Yuki",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "No concern is needed. Abroad exposed their wrongdoing. Such shame cannot stand.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0110",
+      "english": "{LB}Reassuring words.{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " Reassuring words.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0121",
+      "english": "{SPEAKER:03}Where is the envoy?{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Where is the envoy?",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0125",
+      "english": "{SPEAKER:15}You called?{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "You called?",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0129",
+      "english": "{SPEAKER:03}Report on the coastal contracts.{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Report on the coastal contracts.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0133",
+      "english": "{SPEAKER:15}Going well. Bribes work wonders.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Going well. Bribes work wonders.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0137",
+      "english": "{SPEAKER:15}They settled for 3% of sales.{LB}Disguise us as foreign ships,{LB}and officials will look away.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "They settled for 3% of sales. Disguise us as foreign ships, and officials will look away.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0140",
+      "english": "{SPEAKER:03}As expected.{LB}Utterly corrupt...{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "As expected. Utterly corrupt...",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0143",
+      "english": "{SPEAKER:15}Harsh words, Admiral...{LB}But the magistrate saw more gain{LB}in allowing our trade.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Harsh words, Admiral... But the magistrate saw more gain in allowing our trade.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0147",
+      "english": "{SPEAKER:15}Merchants always seek profit.{LB}Winning their support early{LB}was worth the effort.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Merchants always seek profit. Winning their support early was worth the effort.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0151",
+      "english": "{SPEAKER:15}At any rate, the way is open.{LB}Trade can begin immediately.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "At any rate, the way is open. Trade can begin immediately.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0154",
+      "english": "{SPEAKER:03}Good. Maintain every ship{LB}for Kurushima's retaliation.{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Good. Maintain every ship for Kurushima's retaliation.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B33_R0158",
+      "english": "{SPEAKER:15}Understood.{PAD}",
+      "speaker": "Ian",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Understood.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0005",
+      "english": "{SPEAKER:74}So you are {MACRO:FA}?{LB}Leave before Kuen and Pereira{LB}drag you into their feud.{PAD}",
+      "speaker": "Local sailor",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "So you are the protagonist's surname? Leave before Kuen and Pereira drag you into their feud.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0010",
+      "english": "{SPEAKER:74}Whoever wins, we gain nothing.{LB}What a nuisance...{PAD}",
+      "speaker": "Local sailor",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Whoever wins, we gain nothing. What a nuisance...",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0013",
+      "english": "{SPEAKER:03}Why?{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Why?",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0017",
+      "english": "{SPEAKER:74}They came to expand their lands.{LB}Either victor will exploit us.{LB}Locals gain nothing.{PAD}",
+      "speaker": "Local sailor",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "They came to expand their lands. Either victor will exploit us. Locals gain nothing.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "line-break-count"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0020",
+      "english": "{LB}So neither side cares{LB}about the local people...{PAD}",
+      "speaker": "Companion",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": " So neither side cares about the local people...",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break",
+        "source-leading-linebreak"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0034",
+      "english": "{SPEAKER:4A}Portugal and Holland...{LB}Both seek control of East Asia.{PAD}",
+      "speaker": "Xien",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "Portugal and Holland... Both seek control of East Asia.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B34_R0042",
+      "english": "{SPEAKER:03}We must act before harm{LB}reaches our homeland.{PAD}",
+      "speaker": "Maria",
+      "context": "Maria route: wako battle debrief, command-strategy reflection, coastal trade contracts, and local warning about Kuen and Pereira.",
+      "source_meaning": "We must act before harm reaches our homeland.",
+      "localization_note": "Direct SC3 translation preserving route macros, political context, presentation states, and fixed allocation.",
+      "qa_waivers": [
+        "weak-line-ending",
+        "orphan-final-line",
+        "manual-break"
+      ],
+      "manual_break_reason": "Preserves source staging or groups the thought within four display lines.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

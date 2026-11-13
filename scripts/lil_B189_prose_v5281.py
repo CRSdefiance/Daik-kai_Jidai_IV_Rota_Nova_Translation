@@ -1,0 +1,32 @@
+"""Whole-scene decisions preserving the two pairs and their contrasting viewpoints."""
+REVISIONS={
+    6:('I finally got hold of it the other day.',
+        'Restore the natural first-person opening and recent completed acquisition in この間、やっと. At last,got hold of it is an awkward clipped fragment for this Guildmaster’s conversationally polished register. The following question identifies the referent;do not invent an object shape,seller or price.'),
+    13:('Yes. A superb piece, just as I expected.',
+        'Preserve the confident expectation in 思ったとおり rather than changing it to a hope. Keep the subjective superb-piece judgment that the later Trader boast undercuts;this is not narrator-certified quality,authenticity or provenance.'),
+    16:("Splendid! I'd very much like to see it.",
+        'Replace the unnatural American self-reference May one with a polite first-person wish. Very much like to see it carries 拝見させていただきたい and the eager response without inventing rank,kinship,a completed visit or a purchase offer.'),
+    22:('Still, the recent craze for collecting ceramics has made fine pieces hard to find.',
+        'Keep the transition,recentness,collecting craze,causal link and source-explicit difficulty obtaining good pieces. Everyone overstates the source as universal participation. This remains the Shopkeeper’s complaint;do not erase the scarcity detail or extend it to narrator-confirmed market state,price rises,all goods or guaranteed profit.'),
+    26:("I hear people who don't appreciate their value are buying them up just to follow the fashion.",
+        'Restore both らしい hearsay and 買いあさってる buying-up behavior omitted by They chase the fad. The value judgment and dismissive attitude belong to the self-satisfied Guildmaster,whose own acquisition is about to be mocked. Preserve the snobbery without certifying the goods’ value or identifying the buyers as a new faction.'),
+    42:('Those two? What about them?',
+        'Use a natural casual follow-up to the Trader’s pointing. What about them? makes the question’s referent clear and suits the Port Worker’s rougher private register. Two men together does not establish kinship,a romantic couple or a shared rank.'),
+    46:("They bought some worthless ceramics from me the other day. You wouldn't believe the price!",
+        'Restore the recent completed purchase,the ceramic goods and the Trader’s benefactive first-person sale context. Our junk invents joint ownership and loses the commodity;paid a fortune drops the timing and recasts the source boast. You would not believe the price naturally performs 嘘みたいな値 without inventing a number. Worthless is this seller’s private claim,contrasting with the collector’s superb piece;do not certify valuation,forgery,Chinese origin or a second sale.'),
+    49:("Now those are good customers! We're short on cash, so how about we go talk to them?",
+        'Carry the pleased お得意さん response,the speaking pair’s short funds and the proposal to approach the customers. Do not put the empty pockets on the collectors or infer repeated past transactions. Go talk to them preserves 声掛けて;Try them again is ambiguous and adds again. The rough casual voice and opportunistic intent remain without inventing threats,robbery or a completed second transaction.'),
+    53:('Sounds good.',
+        'Render いいねえ as natural appreciative assent to the proposed approach. Good alone sounds like a detached evaluation and flattens the conversational response. No further plan or outcome is added.'),
+    61:('Excuse me, sir!',
+        'Use a natural American attention-getting sales approach for the ingratiating drawn-out だんなぁ. The conventional Excuse me carries the solicitation better than an abrupt Sir! without inventing husband,employer,master,kinship or additional rank. No manual pause or typography gimmick is required.'),
+}
+RETAIN_NOTES={
+    9:'Retain Oh,the ceramics? (with its existing natural spacing). It is a brief recognition question that identifies the Guildmaster’s it immediately. The source 陶磁器 is broadly ceramics;no particular vessel,Chinese origin or purchase is added. The legacy UI China42 label remains separately documented.',
+    19:'Retain Please do! Come by my house. It naturally conveys the warm repeated invitation and requested home visit. American English does not need the literal humble-home formula to preserve courtesy. House does not invent a mansion,estate,address or an actual completed visit.',
+    30:'Retain What a bother. It is a natural concise expression of annoyance within the collectors’ shared complaint. Its mild phrasing suits the polite first pair and does not certify the complaint as an objective market fact.',
+    34:'Retain Quite right. It is a fluent firm agreement with 全くその通り and closes the first pair’s self-satisfied exchange before the point of view shifts. No additional explanation is needed.',
+    38:'Retain Look at those men over there. The direct imperative naturally draws the Port Worker’s attention and clearly marks the shift to the second pair. Men is explicit in 男たち. The following casual replies establish the rougher voice without needing an added insult or invented relationship.',
+    57:"Retain Right. Let's go. Right confirms 決まりだ and the invitation to move carries 行こうぜ. It is a natural brisk decision before the Trader calls to a customer;it does not imply a completed additional sale.",
+    65:'Retain Ceramics may catch on in Hamburg. Ceramics preserves the broad 陶磁器 meaning used throughout the scene;the exact underlying commodity42 legacy UI label China is bound and unchanged. May preserves the tentative FE forecast. It neither proves the earlier location nor converts the collectors’ and sellers’ claims into an earned boom,verified shortage,price rise or profit.',
+}

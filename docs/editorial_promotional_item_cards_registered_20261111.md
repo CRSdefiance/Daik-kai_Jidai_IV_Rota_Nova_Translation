@@ -1,0 +1,7 @@
+# Promotional item cards registered
+
+The 30 promotional item descriptions are registered. The ledger now credits 26,751 reviews. COMMON 3003–3032 agrees with both active item views. The descriptions restore details such as the siren’s role in the Witch Idol design and the story that the King’s Shield served as a ship. The twenty map slots use one description that identifies a piece of an ancient map and the four-piece set. [Registered review](../releases/all_routes_editorial_20261111_promotional_item_cards_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_promotional_item_cards_candidate/README.md)
+
+The original copied allocation stays at 123,264 bytes. Four separate relic paragraphs and the shared map paragraph use 424 bytes of appended resident storage. The other 188 description projections stayed byte-identical. The offline check covered all 30 slots and all 40 generated title variants across the two item views. The emulator replay covered the original Items view and return, using an isolated inventory transfer for Witch Idol and Twisted Horn Map 1.
+
+Continue with item advice at COMMON 3033. These lines are voiced remarks, including older-speaker phrasing and regional production suggestions. Bind the actual speaker and advice consumer, then review each related sequence in context. Continue all remaining player-facing prose and earlier speaker names and role labels. Graphics artwork and the older-record technical re-audit remain separate.

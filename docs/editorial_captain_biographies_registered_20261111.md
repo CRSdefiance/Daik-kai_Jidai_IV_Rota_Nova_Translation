@@ -1,0 +1,7 @@
+# New Game biographies registered
+
+The four New Game biographies are registered. The ledger now credits 26,319 reviews. The original chooser's four ARM9 pointers and 424-byte allocation bind the reviewed English. The compiler keeps complete words and restores left alignment with an invisible blank before LF on odd-length ASCII rows. The font, chooser code, name fields, button prompts and every archive remain byte-exact. All four complete live text bands passed, including Lil's 39-character row. [Release package](../releases/all_routes_editorial_20261111_captain_biographies_candidate/README.md) · [Exact source, previous and registered references](../releases/all_routes_editorial_20261111_captain_biographies_candidate/verification/registered_review.json)
+
+The original menu was observed on both registered predecessor and candidate with the same existing system unlock. Seven selections verified all four biographies, repeated selections in reverse order, and Back to the prior menu. The cloned selector separately resolved all four pointers. The 31,000-frame Maria startup matched the five unaffected frames and the complete revised biography at the chooser. All 24 protected name getters passed. Hardware coverage remains pending.
+
+Continue with the unmapped Market replies, the legacy COMMON 104–107 consumer classification and remaining shared player-facing text. The separate graphics work and older-record technical re-audit remain open. Sera Assignment remains the build prepared for user promotion testing.

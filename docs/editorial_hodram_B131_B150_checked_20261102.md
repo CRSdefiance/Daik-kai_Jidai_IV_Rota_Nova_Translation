@@ -1,0 +1,23 @@
+# Hodram B131–B150: all five research gates pass
+
+B131–B150 now has all329 individual five-gate research reviews:180 revisions/149 justified retentions. All23 layout findings are resolved;328 final speech pages andten captions are visually approved.20 scoped name decisions add three source-supported de corrections/17 retentions. The two physical fields have three reviewed owners (Geronimo36 also shares with Alonso49;Vasquez42 is exclusive),four bytes total.32 native name calls/32 directly viewed name planes and13 semantic rejection cases per name test pass. No biography orrank was added;all earlier name repairs remain.
+
+All617 commands andthree label-free2000 controls are preserved across19 rebuilt blocks;640 original native relative cases,325 whole archive loads and38 fresh/612 exact reused handoff cases pass. Five declared initialized English cold boots/59005frames and19 directly viewed QA sheets cover the role7/personality4 panel,cargo instructions,both two-choice highlights/decline branch,Sera’s embedded headings/FI/naming/acquisition,Rafael0’s portrait/name/smile,three-line pause,pagination andport returns.83 complete captured body planes,two headers andtwo highlights match native pixels. Other conditional content remains offline-only;all three changed full-catalogue UIs remain unvisited.
+
+The B133 fixture reaches an invalid instruction after the unchanged C600 monster-battle command. A separate5001-frame clean-Japanese control reaches the identical fault/address andfinal framebuffer. This is a source-controlled fixture-context limitation;do not claim a natural monster encounter orverified battle transition. Preserve both runs;do not replay orpatch around this control. The source line itself is observed andmatches the native plane.
+
+Continue with registered cumulative integration:qualify the13 documented structural/dramatic layouts in a source-locked release successor (the prior v5 release module forbids all LB);append the four-byte complete-owner-group name stage after the unchanged existing runtime/Emilio/Fernando/Samwell/Follower/Diogo stages. Preserve ASCII right-bound correction. Build/qualify the registered candidate,make the exactly reconstructable clean-input patch,andrun candidate-own startup before once-only329 completion credit. Final manuscript explicitly records the narrow grammatical weak-ending waiver for B142R159. All current jobs are terminal;do not rerun completed source/prose/native/stored/visual/gameplay checks without a changed dependency orconcrete new risk.
+
+Use work/analysis/Hodram_B131_B150_checked_20261102/formatting_checkpoint.json and translations/hodram_B131_B150_contextual_final_review_v1.json. Complete research reference7fb6f6d78441a705c137003d8bfc92d4f5b43fd56b85178a59224f3b4570bc04 is research-only,not a registered testing handoff. Registered candidate f2f0bf2f,main,accepted layers and8527 completed credits are unchanged. Full editorial scope remains active. No guide photos;preserve all ROMs/translations/evidence;graphics artwork andthe later older-record technical re-audit remain separate.
+
+Exact artifacts:
+
+- Final dialogue: `translations/hodram_B131_B150_contextual_final_review_v1.json`.
+- Names: `translations/hodram_B131_B150_speaker_name_review_v1.json`;grouped fields: `translations/geronimo_vasquez_alonso_owned_name_review_v1.json`.
+- Proposal: `work/analysis/Hodram_B131_B150_name_fields_20261102/owned_fields_proposal_v2.json`;new source-qualified grouped planner: `dk4tool/patch/owned_name_fields_v3.py`. Keep the older exclusive planner unchanged.
+- Research reconstruction: `work/analysis/Hodram_B131_B150_rebuilt_20261102/reconstruction.json`;with names: `work/analysis/Hodram_B131_B150_name_research_20261102/research_reference.json`.
+- Stored: `work/analysis/Hodram_B131_B150_stored_20261102/stored_native_verification.json`;loaders: `work/analysis/Hodram_B131_B150_loaders_20261102/verification.json`.
+- Actual review: `work/analysis/Hodram_B131_B150_checked_20261102/actual_review.json`;pixels: `work/analysis/Hodram_B131_B150_actual_pixels_20261102/focused_actual_pixels.json`.
+- Source control: `work/analysis/Hodram_B133_source_control_20261102/source_control_result.json`.
+
+Current speech plan/native/visual proofs remain `Hodram_B131_B150_editorial_20261102/plans_v3`, `native_v3`,and`visual_review_progress_v7.json`. They are bound to manuscriptv2;the final review changes approval/reference metadata andadds the individual R159 waiver without changing words orcompiled layout. Preserve the exact binding chain rather than rerendering unchanged pages. Reuse the documented initialized-scene limitation;future necessary capture reruns can stop when the target returns instead of replaying the following port/sailing tutorial.

@@ -1,0 +1,286 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "d87d66f81ed3a5034ba4a6d758b70ae973461ae3733c6bd195e5a81139a6e057",
+  "context_evidence": "work\\analysis\\market_contract_v758\\native_context.json",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_754",
+      "message_id": 754,
+      "source_hex": "8da189f18141947b82cc8be08a7a82f08f6f82b982ce0a91bd82df82c9948482c182c482e082e782a682e98fa4956982aa0a82a082e882bb82a482c582b782e6",
+      "japanese": "今回、倍の金額を出せば\n多めに売ってもらえる商品が\nありそうですよ",
+      "canonical_source_hex": "506179696e6720646f75626c65206d6179206c6574207573206275792065787472612073746f636b20746869732074696d652e20202020202020202020202020",
+      "current_text_hex": "506179696e6720646f75626c65206d6179206c6574207573206275792065787472612073746f636b20746869732074696d652e20202020202020202020202020",
+      "current_English": "Paying double may let us buy extra stock this time.             ",
+      "english": "This time, we may be able to get larger quantities of certain goods by paying double.{PAD}",
+      "source_meaning": "Polite adviser: there seem to be certain goods this time that the merchant will sell in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 36,
+        "offset": 3180
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 45,
+        "offset": 3182
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_755",
+      "message_id": 755,
+      "source_hex": "8da189f18141947b82cc8be08a7a82f08f6f82b982ce0a91bd82df82c9948482c182c482ad82ea82e98fa4956982aa0a82a082e982dd82bd82a282be82cb",
+      "japanese": "今回、倍の金額を出せば\n多めに売ってくれる商品が\nあるみたいだね",
+      "canonical_source_hex": "49662077652070617920646f75626c652c2074686579206d61792073656c6c2075732065787472612073746f636b2e202020202020202020202020202020",
+      "current_text_hex": "49662077652070617920646f75626c652c2074686579206d61792073656c6c2075732065787472612073746f636b2e202020202020202020202020202020",
+      "current_English": "If we pay double, they may sell us extra stock.               ",
+      "english": "Looks like they'll sell us larger quantities of some goods this time if we pay double.{PAD}",
+      "source_meaning": "Conversational adviser: there seem to be certain goods this time that the merchant will sell in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 36,
+        "offset": 3244
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 46,
+        "offset": 3247
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_756",
+      "message_id": 756,
+      "source_hex": "8da189f182cd8141947b82cc82a88be082f08f6f82b582bd82e70a91bd82df82c9948382a682e98fa4956982aa82a082e882bb82a482e6",
+      "japanese": "今回は、倍のお金を出したら\n多めに買える商品がありそうよ",
+      "canonical_source_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b2e202020202020202020202020202020202020",
+      "current_text_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b2e",
+      "current_English": "Paying double may get us extra stock.",
+      "english": "I think we can buy larger quantities of some goods this time by paying double.{PAD}",
+      "source_meaning": "Conversational feminine-register adviser: there seem to be certain goods this time that can be bought in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 37,
+        "offset": 3308
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 47,
+        "offset": 3310
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_757",
+      "message_id": 757,
+      "source_hex": "8da182c882e7947b82cc8be082f095a582a682ce0a91bd82df82c9948382a682e98fa4956982aa82a082e882bb82a482be82ba",
+      "japanese": "今なら倍の金を払えば\n多めに買える商品がありそうだぜ",
+      "canonical_source_hex": "5765206d6967687420676574206d6f72652069662077652070617920646f75626c652e20202020202020202020202020202020",
+      "current_text_hex": "5765206d6967687420676574206d6f72652069662077652070617920646f75626c652e",
+      "current_English": "We might get more if we pay double.",
+      "english": "Looks like we can get bigger quantities of some goods right now by paying double.{PAD}",
+      "source_meaning": "Rough informal adviser: right now there seem to be certain goods that can be bought in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 38,
+        "offset": 3364
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 48,
+        "offset": 3348
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_758",
+      "message_id": 758,
+      "source_hex": "8da189f18141947b82cc8be08a7a82f08f6f82b982ce0a91bd82df82c9948482c182c482e082e782a682e98fa4956982aa0a82a082e882bb82a482b682e182c8",
+      "japanese": "今回、倍の金額を出せば\n多めに売ってもらえる商品が\nありそうじゃな",
+      "canonical_source_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b20746869732074696d652e2020202020202020202020202020202020",
+      "current_text_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b20746869732074696d652e2020202020202020202020202020202020",
+      "current_English": "Paying double may get us extra stock this time.                 ",
+      "english": "It seems they'll sell us larger quantities of some goods this time if we pay double.{PAD}",
+      "source_meaning": "Older measured-register adviser: there seem to be certain goods this time that the merchant will sell in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 39,
+        "offset": 3416
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 49,
+        "offset": 3384
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_759",
+      "message_id": 759,
+      "source_hex": "8da189f1814182a88be082f0947b8f6f82b582bd82e70a82bd82ad82b382f1948482c182c482ad82e98fa4956982aa0a82a082e982c68e7682a482e68149",
+      "japanese": "今回、お金を倍出したら\nたくさん売ってくる商品が\nあると思うよ！",
+      "canonical_source_hex": "50617920646f75626c6520616e64207765206d6179206765742065787472612073746f636b21202020202020202020202020202020202020202020202020",
+      "current_text_hex": "50617920646f75626c6520616e64207765206d6179206765742065787472612073746f636b21202020202020202020202020202020202020202020202020",
+      "current_English": "Pay double and we may get extra stock!                        ",
+      "english": "If we pay double, I bet they'll sell us lots more of some goods this time!{PAD}",
+      "source_meaning": "Upbeat youthful-register adviser: thinks there are certain goods this time that the merchant will sell in large quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 39,
+        "offset": 3480
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 50,
+        "offset": 3449
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_760",
+      "message_id": 760,
+      "source_hex": "8da189f18141947b82cc82a88be082f08f6f82b582bd82e70a91bd82df82c9948482c182c482ad82ea82e98fa4956982aa0a82a082e982e682a482c582b782c8",
+      "japanese": "今回、倍のお金を出したら\n多めに売ってくれる商品が\nあるようですな",
+      "canonical_source_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b20746869732074696d652e2020202020202020202020202020202020",
+      "current_text_hex": "506179696e6720646f75626c65206d6179206765742075732065787472612073746f636b20746869732074696d652e2020202020202020202020202020202020",
+      "current_English": "Paying double may get us extra stock this time.                 ",
+      "english": "It appears we can buy larger quantities of certain goods this time by paying double.{PAD}",
+      "source_meaning": "Older polite-register adviser: there seem to be certain goods this time that the merchant will sell in larger quantities if double the money is paid.",
+      "decision": "revise",
+      "localization_note": "Preserve uncertainty, larger quantities of only certain goods, double payment and current occasion. Use the source register without assigning an unverified character identity.",
+      "speaker": "Original fleet adviser selected by native voice chooser",
+      "context": "Original BB238 uses predicate BAA74 and dispatches voice table2118480 with role3 through53D44. Original53F4C maps eight voice results onto seven advice texts, including the missing-index fallback. Not all actual advice prerequisites are claimed.",
+      "source_reference": {
+        "block": 9,
+        "record": 40,
+        "offset": 3544
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 51,
+        "offset": 3512
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_761",
+      "message_id": 761,
+      "source_hex": "88ab82a282cb8141257382c50a8c5f96f182b582c482a982e78f6f92bc82b582c682ad82ea",
+      "japanese": "悪いね、%sで\n契約してから出直しとくれ",
+      "canonical_source_hex": "536f7272792e205369676e206120636f6e747261637420696e2025732066697273742e2020",
+      "current_text_hex": "536f7272792e205369676e206120636f6e747261637420696e2025732066697273742e2020",
+      "current_English": "Sorry. Sign a contract in %s first.  ",
+      "english": "Sorry. Please sign a contract at the %s, then come back.{PAD}",
+      "source_meaning": "Merchant apologetically refuses and asks the player to make a contract at the supplied governor office or palace before returning.",
+      "decision": "revise",
+      "localization_note": "Restore the return instruction and natural at the location. The native argument is Palace or governor office, not a town. Expand Govt only in this bound dialogue provider; retain other UI text. Generated wrapping budgets both full names.",
+      "speaker": "Original contextual Market Trader",
+      "context": "Original BA2C8 selects governor office/Palace through town flag6. Trade menu choice0 with no local market share reaches BA41C, passing761 and the building pointer to53FE4; actual old Palace refusal appears in the V754 baseline probe. Source says contract there and return.",
+      "source_reference": {
+        "block": 9,
+        "record": 40,
+        "offset": 3608
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 52,
+        "offset": 3577
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-formatting-integration-gameplay-pending"
+    }
+  ],
+  "status": "draft-not-integrated"
+}

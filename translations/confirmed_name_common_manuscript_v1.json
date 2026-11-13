@@ -1,0 +1,369 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "source-editorial-preview-allocation-reviewed-integration-pending",
+  "parent_ROM": "out/all_routes_combined_v218_candidate.nds",
+  "parent_ROM_sha256": "be05e432cda1b32c18f6b1fbca8c57d6069a442ea87c2c158388fe38f3d5220f",
+  "parent_common_sha256": "ea978f466496f8593f13fb97f17b9bac174beea5665c57f1f5e358b2808776c9",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1360",
+      "message_id": 1360,
+      "source_hex": "81638142816983528367836F814182E682AD82ED82A982E782C882A28142816A",
+      "japanese": "…。（コトバ、よくわからない。）",
+      "english": "... (Ｉ don't understand the words.){PAD}",
+      "readable_english": "... (I don't understand the words.)",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "An aside admits not understanding the words.",
+      "localization_note": "The source does not qualify this as partial language proficiency. Preserve the quiet aside without inventing a language or cause. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1360,
+        "block": 16,
+        "table_offset": 1319856,
+        "block_offset": 2272,
+        "copy_end": 2304,
+        "record_index": 51,
+        "start": 2,
+        "end": 34,
+        "text_hex": "81638142816983528367836F814182E682AD82ED82A982E782C882A28142816A",
+        "text_sha256": "59cf13d58f77e84b63ed5c82093e66935eb243e491a15f5ef3bb0b3797f81725"
+      },
+      "current_native_lock": {
+        "message_id": 1360,
+        "block": 16,
+        "table_offset": 1319856,
+        "block_offset": 2656,
+        "copy_end": 2700,
+        "record_index": 55,
+        "start": 2,
+        "end": 46,
+        "text_hex": "2E2E2E2028826820646F6E2774206B6E6F772074686973206C616E677561676520766572792077656C6C2E29",
+        "text_sha256": "733dd9d486d7d5011b55c12ff62a156681b2e64570a78d78a19a5df9fb90df4b"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1359,
+          "japanese": "私、それムリ…\nごめんなさい…"
+        },
+        {
+          "message_id": 1360,
+          "japanese": "…。（コトバ、よくわからない。）"
+        },
+        {
+          "message_id": 1361,
+          "japanese": "うん、いい音色だね♪"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    },
+    {
+      "id": "COMMON_MESSAGE_1361",
+      "message_id": 1361,
+      "source_hex": "82A482F1814182A282A289B9904682BE82CB81F4",
+      "japanese": "うん、いい音色だね♪",
+      "english": "Yes, that's a lovely sound.{PAD}",
+      "readable_english": "Yes, that's a lovely sound.",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "A warm, affirmative response praises the sound or timbre.",
+      "localization_note": "Retain the musical approval without inventing the tune, performer or listener. The source note symbol conveys tone rather than an instruction. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1361,
+        "block": 16,
+        "table_offset": 1319858,
+        "block_offset": 2304,
+        "copy_end": 2324,
+        "record_index": 51,
+        "start": 34,
+        "end": 54,
+        "text_hex": "82A482F1814182A282A289B9904682BE82CB81F4",
+        "text_sha256": "4cca1fe7a770d809a07bb42472ca648fd08388281cef968067dbeeb0e42732bf"
+      },
+      "current_native_lock": {
+        "message_id": 1361,
+        "block": 16,
+        "table_offset": 1319858,
+        "block_offset": 2700,
+        "copy_end": 2727,
+        "record_index": 55,
+        "start": 46,
+        "end": 73,
+        "text_hex": "5965732C207468617427732061206C6F76656C7920736F756E642E",
+        "text_sha256": "b4094c9591b54c28da594494ca224b95c6ab6c27f516d1aba7fcea6f95b85948"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1360,
+          "japanese": "…。（コトバ、よくわからない。）"
+        },
+        {
+          "message_id": 1361,
+          "japanese": "うん、いい音色だね♪"
+        },
+        {
+          "message_id": 1362,
+          "japanese": "…なかなかの出来だ…"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    },
+    {
+      "id": "COMMON_MESSAGE_1362",
+      "message_id": 1362,
+      "source_hex": "816382C882A982C882A982CC8F6F978882BE8163",
+      "japanese": "…なかなかの出来だ…",
+      "english": "...That's quite well done...{PAD}",
+      "readable_english": "...That's quite well done...",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "A reserved comment approves of the quality of the work or performance.",
+      "localization_note": "Keep the restrained approval and surrounding hesitation. Do not infer a specific activity from the packed record's neighboring messages. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1362,
+        "block": 16,
+        "table_offset": 1319860,
+        "block_offset": 2324,
+        "copy_end": 2344,
+        "record_index": 51,
+        "start": 54,
+        "end": 74,
+        "text_hex": "816382C882A982C882A982CC8F6F978882BE8163",
+        "text_sha256": "e458c557d57b5b9e0409cd8f001884112b7c936e66fa78f2447183c0c42702a3"
+      },
+      "current_native_lock": {
+        "message_id": 1362,
+        "block": 16,
+        "table_offset": 1319860,
+        "block_offset": 2727,
+        "copy_end": 2756,
+        "record_index": 55,
+        "start": 73,
+        "end": 102,
+        "text_hex": "2E2E2E546861742773207261746865722077656C6C20646F6E652E2E2E",
+        "text_sha256": "96054ddbed8751ceb13a610b307a7f84c5456a24356013185c9422bbf3c6a5d9"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1361,
+          "japanese": "うん、いい音色だね♪"
+        },
+        {
+          "message_id": 1362,
+          "japanese": "…なかなかの出来だ…"
+        },
+        {
+          "message_id": 1363,
+          "japanese": "ＺＺＺ…\nんもう、カミル…ＺＺＺ"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    },
+    {
+      "id": "COMMON_MESSAGE_1363",
+      "message_id": 1363,
+      "source_hex": "82798279827981630A82F182E082A48141834A837E838B8163827982798279",
+      "japanese": "ＺＺＺ…\nんもう、カミル…ＺＺＺ",
+      "english": "Zzz... Honestly, Camille... Zzz...{PAD}",
+      "readable_english": "Zzz... Honestly, Camille... Zzz...",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "A sleeping voice mutters a mildly exasperated address to Camille between snores.",
+      "localization_note": "Honestly conveys the mild exasperation of んもう naturally. Keep the snores and settled Camille spelling without inventing a relationship or dream event. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1363,
+        "block": 16,
+        "table_offset": 1319862,
+        "block_offset": 2344,
+        "copy_end": 2376,
+        "record_index": 51,
+        "start": 74,
+        "end": 105,
+        "text_hex": "82798279827981630A82F182E082A48141834A837E838B8163827982798279",
+        "text_sha256": "b97d13ba2631802b3a5a9396618c7a6d77ad3fe8b54628265654903a16c95279"
+      },
+      "current_native_lock": {
+        "message_id": 1363,
+        "block": 16,
+        "table_offset": 1319862,
+        "block_offset": 2756,
+        "copy_end": 2792,
+        "record_index": 55,
+        "start": 102,
+        "end": 137,
+        "text_hex": "5A7A7A2E2E2E204F682C20636F6D65206F6E2C204B616D696C2E2E2E205A7A7A2E2E2E",
+        "text_sha256": "d8663face26d8fe28ce34cd14ae96bc540292eb50e30269f4e7c29dea565b7ea"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1362,
+          "japanese": "…なかなかの出来だ…"
+        },
+        {
+          "message_id": 1363,
+          "japanese": "ＺＺＺ…\nんもう、カミル…ＺＺＺ"
+        },
+        {
+          "message_id": 1364,
+          "japanese": "いいお茶ね"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    },
+    {
+      "id": "COMMON_MESSAGE_1683",
+      "message_id": 1683,
+      "source_hex": "82A282C282DC82C582E0834A837E838B978A82DD0A82B682E1835F838182BE82E682CB8163",
+      "japanese": "いつまでもカミル頼み\nじゃダメだよね…",
+      "english": "Ｉ can't keep relying on Camille forever...{PAD}",
+      "readable_english": "I can't keep relying on Camille forever...",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "The speaker reflects that continuing to rely on Camille indefinitely is not good.",
+      "localization_note": "Restore the self-reflection as a complete natural sentence. The trailing hesitation remains; no new outcome or responsibility is invented. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1683,
+        "block": 19,
+        "table_offset": 1320502,
+        "block_offset": 272,
+        "copy_end": 312,
+        "record_index": 8,
+        "start": 2,
+        "end": 39,
+        "text_hex": "82A282C282DC82C582E0834A837E838B978A82DD0A82B682E1835F838182BE82E682CB8163",
+        "text_sha256": "608a5e8563e2e3b9b81ff4ac01c93f689b2f959e5eb0cd7df0ba542688f23a02"
+      },
+      "current_native_lock": {
+        "message_id": 1683,
+        "block": 18,
+        "table_offset": 1320502,
+        "block_offset": 3097,
+        "copy_end": 3129,
+        "record_index": 104,
+        "start": 2,
+        "end": 31,
+        "text_hex": "43616E277420616C776179732072656C79206F6E204B616D696C2E2E2E",
+        "text_sha256": "6360e5dc7ddbc0b9ceac7e450d3736a6c5edcd07de6e5569614ae821e4fddf16"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1682,
+          "japanese": "砲撃手、弾幕を張れ！\n甲板要員、白兵用意！"
+        },
+        {
+          "message_id": 1683,
+          "japanese": "いつまでもカミル頼み\nじゃダメだよね…"
+        },
+        {
+          "message_id": 1684,
+          "japanese": "シエン、戦闘状況を\n知らせて！"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    },
+    {
+      "id": "COMMON_MESSAGE_1830",
+      "message_id": 1830,
+      "source_hex": "8E8082F182B682E182A482CC82A982C881630A834A837E838B8163",
+      "japanese": "死んじゃうのかな…\nカミル…",
+      "english": "Am Ｉ going to die...? Camille...{PAD}",
+      "readable_english": "Am I going to die...? Camille...",
+      "speaker": "Context-dependent companion voice; fixed actor not established by the message table",
+      "context": "Native messages 1360-1363 are four separate ambient responses in one clean owner, not one dialogue paragraph. 1683 is a shared battle reflection; 1830 is a shared critical-health reaction. Neighboring entries are response variants and do not establish a continuous conversation. Preserve each global message identity and do not infer kinship or actor identity from adjacency.",
+      "source_meaning": "The speaker wonders whether they are going to die and addresses Camille.",
+      "localization_note": "Restore the uncertainty expressed by かな. The previous Dying fragment made this sound like a definite report. Preserve the hesitant address, not an invented farewell. Reserved uppercase I/F use the existing safe full-width glyph encoding; translators add no layout spaces or line breaks.",
+      "clean_native_lock": {
+        "message_id": 1830,
+        "block": 20,
+        "table_offset": 1320796,
+        "block_offset": 960,
+        "copy_end": 988,
+        "record_index": 30,
+        "start": 2,
+        "end": 29,
+        "text_hex": "8E8082F182B682E182A482CC82A982C881630A834A837E838B8163",
+        "text_sha256": "3ffa8f5cec603144f582cbf53b1f556657b019e9541348e905f8bdf86418c6b4"
+      },
+      "current_native_lock": {
+        "message_id": 1830,
+        "block": 19,
+        "table_offset": 1320796,
+        "block_offset": 3361,
+        "copy_end": 3379,
+        "record_index": 113,
+        "start": 2,
+        "end": 19,
+        "text_hex": "4479696E672E2E2E204B616D696C2E2E2E",
+        "text_sha256": "9189b9072f8f34fb00f7de3c442b34c998c83bdb6a078a6837d6023441a60e5a"
+      },
+      "clean_native_neighbors": [
+        {
+          "message_id": 1829,
+          "japanese": "最強艦隊を\n見るまでは…死ねん"
+        },
+        {
+          "message_id": 1830,
+          "japanese": "死んじゃうのかな…\nカミル…"
+        },
+        {
+          "message_id": 1831,
+          "japanese": "ここで終わるわけには\nいかないのよ…"
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "formatting_scope": "Six exact-font previews individually reviewed, zero QA blockers, complete native warm/cold copies and allocation bounds; final physical display/scene verification remains separate."
+    }
+  ],
+  "preview_review": "work/qa/confirmed_name_common_v228/report.json",
+  "native_allocation_review": "work/analysis/confirmed_name_common_v228/native_proof.json"
+}

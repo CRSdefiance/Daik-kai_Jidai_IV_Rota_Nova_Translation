@@ -1,0 +1,28 @@
+"""Derive an atomic source-locked19-object stage with two real pauses and one end."""
+from pathlib import Path
+import re
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+if __name__=='__main__':
+    p=Path('dk4tool/patch/lil_B157_editorial_v1.py');q=Path('dk4tool/patch/lil_B158_editorial_v1.py');assert not q.exists();t=p.read_text(encoding='utf-8');a=t.index("        require(len(spec['original2000_pause_and_resume_maps'])");b=t.index('        restored=bytearray(logical)',a)
+    t=t[:a]+'''        require([(p['old_offset'],p['source_resume']) for p in spec['original2000_pause_and_resume_maps']]==[(402,404),(506,508)],'both original two-byte pause/resume pairs required')
+        for pause in spec['original2000_pause_and_resume_maps']:
+            at,resume=pause['old_offset'],pause['source_resume'];require(pause['new_offset']==mapped(at) and pause['target_resume']==mapped(resume)==pause['new_offset']+2 and pause['target_resume'] in boundaries and block[at:resume]==target[pause['new_offset']:pause['new_offset']+2]==bytes.fromhex('0020'),'original two-byte pause/resumption differs')
+'''+t[b:]
+    d=read('translations/lil_B158_editorial_manuscript_v5.json');indices=[r['source_record_index'] for r in d['records']];a=t.index('INDICES=');b=t.index('\nSHAPES=',a);t=t[:a]+'INDICES='+repr({158:indices})+t[b:]
+    changes={
+        'B157':'B158','SHAPES={157:(110,8)}':'SHAPES={158:(65,24)}','SELECTORS={2,9,14,19,20,105,142}':'SELECTORS={2,7,9,14}',
+        'all110_commands8_relative_sites40_target_skips_verified':'all65_commands24_relative_sites120_target_skips_verified','all75_active_speech_targets_preserved':'all19_active_speech_targets_preserved','all27_opaque_leaves_two_effects_three_resources_two_C200_C281_4885_pause_exact':'all22_opaque_leaves_four_resources_two_pauses_picture_music_exact','source_pause_and_resume_preserved':'source_two_pause_and_resume_pairs_preserved','B157_both_declared_endwords_preserved':'B158_single_declared_endword_preserved',
+        "len(native['cases'])==75":"len(native['cases'])==19","native['current_original_macro_alignment_calls']==600":"native['current_original_macro_alignment_calls']==152","len(native['source_consumer_negative_controls'])==24":"len(native['source_consumer_negative_controls'])==18",
+        "len(padding['final_target_parity_cases'])==75":"len(padding['final_target_parity_cases'])==19","padding['current_final_stored_macro_alignment_cases']==300":"padding['current_final_stored_macro_alignment_cases']==76",
+        "len(controls['relocated_dispatch_cases'])==75":"len(controls['relocated_dispatch_cases'])==19","len(controls['relocated_predicate_pairs'])==2":"len(controls['relocated_predicate_pairs'])==6",'all27_source_current_target_nonrelative_nonspeech_leaves':'all22_source_current_target_nonrelative_nonspeech_leaves',"==27 and controls":"==22 and controls",'all75_typed_consumers_seven_static_actors_two_FE_nullactors_FI2_exact':'all19_typed_consumers_four_static_actors_four_FE_nullactors_FI1_exact',
+        "native['progressive_planes']==73 and native['FE_planes']==2":"native['progressive_planes']==15 and native['FE_planes']==4","len(controls['relocated_C200_pairs'])==2":"len(controls['relocated_C200_pairs'])==0",'two source C200 pairs required':'source contains no C200 pairs',
+        'all4_declared_end_decodes':'all2_declared_end_decodes','B157_first_end_precedes_second_end_and_declared_logical_end':'B158_single_end_at_declared_logical_tail',"len(ends['cases'])==4":"len(ends['cases'])==2",
+        "len(sample['viewed_actual_sheets'])==13 and len(sample['actual_sampled_display_IDs'])==75":"len(sample['viewed_actual_sheets'])==4 and len(sample['actual_sampled_display_IDs'])==19",'actual75_panels106_commands_seven_actors_two_FE_pause_C281_4885_resources_pass':'actual19_panels44_commands_four_actors_four_FE_two_pauses_picture_music_resources_pass','actual75-panel':'actual19-panel',
+        "len(rows)==75":"len(rows)==19","{'revise':31,'retain-wording':44}":"{'revise':14,'retain-wording':5}","len(stops)==(2 if n==157 else 1)":"n==158 and len(stops)==1",
+        "for r in rows)==2 and sum":"for r in rows)==1 and sum",
+        'all75_speeches8_spans_two_predicates_two_C200_C281_4885_pause_two_FE_two_effects_and_source_controls_preserved':'all19_speeches24_spans_six_predicates_four_FE_two_pauses_music_picture_four_resources_and_source_controls_preserved','B157_two_endwords_preserved':'B158_single_endword_preserved','Atomic source-locked75-speech cumulative stage;8 spans andbothdeclared ends preserved.':'Atomic source-locked19-object cumulative stage;24 spans, two pauses andone declared end preserved.',
+        'all75_current_native_speech_planes_pass':'all19_current_native_speech_planes_pass','all75_final_targets_complete_native_planes_equal_reviewed_planes':'all19_final_targets_complete_native_planes_equal_reviewed_planes','all75_five_review_gates_true':'all19_five_review_gates_true'
+    }
+    for a in changes:assert a in t,a
+    t=re.sub('|'.join(re.escape(a) for a in sorted(changes,key=len,reverse=True)),lambda m:changes[m.group()],t);compile(t,str(q),'exec');q.write_text(t,encoding='utf-8',newline='\n');root=Path('work/analysis/lil_B158_compiler_derivation_v3817');assert not root.exists();root.mkdir(parents=True);save(root/'source_derivation.json',dict(source=str(p),source_sha256=sha(p.read_bytes()),successor=str(q),successor_sha256=sha(q.read_bytes()),source_scope=dict(objects=19,commands=65,spans=24,predicates=6,FE=4,pauses=2,ends=1,FI=1,C200=0,A000=0),no_registration_or_completion_yet=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

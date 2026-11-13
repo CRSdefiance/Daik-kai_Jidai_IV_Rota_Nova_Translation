@@ -5,6 +5,7 @@ from pathlib import Path
 
 from dk4tool.rom.hashing import hash_bytes
 from dk4tool.script.mesfile import export_mesfile_rows
+from dk4tool.script.raw_dialogue_source import resolve_raw_dialogue_source
 
 
 def materialize_translation_batch(
@@ -40,10 +41,15 @@ def materialize_translation_batch(
         if row_id in seen:
             raise ValueError(f"{row_id}: duplicate translation batch record")
         seen.add(row_id)
-        try:
-            row = dict(by_id[row_id])
-        except KeyError as error:
-            raise ValueError(f"{row_id}: record not found in {file_path}") from error
+        if "raw_source" in record:
+            if row_id in by_id:
+                raise ValueError(f"{row_id}: raw source cannot override normal source resolution")
+            row = resolve_raw_dialogue_source(batch, record, source_data)
+        else:
+            try:
+                row = dict(by_id[row_id])
+            except KeyError as error:
+                raise ValueError(f"{row_id}: record not found in {file_path}") from error
         row["english"] = str(record.get("english", ""))
         if "replacement_hex" in record:
             row["replacement_hex"] = str(record["replacement_hex"])

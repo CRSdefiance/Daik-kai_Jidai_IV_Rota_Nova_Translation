@@ -1,0 +1,58 @@
+{
+  "format": "dk4-editorial-final-review-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "file_path": "/data/SC0.DK4",
+  "records": [
+    {
+      "id": "DK4_MES_B43_R0017",
+      "file_path": "/data/SC0.DK4",
+      "speaker": "Julio",
+      "source_meaning": "Rafael is captain. The ship cannot move without a captain or choose its destination on its own.",
+      "context": "Julio explains crew duties in the complete Deck personnel tutorial, from the captain through the lookout and Deck-screen instruction.",
+      "localization_note": "Retain the established explanatory English. Replace unintended wide F/I glyphs with normal native ASCII through the validated literal-prefix policy; preserve speaker06 and FI. No new relationship, rank, rule or fit-driven shortening.",
+      "decision": "retain prose; revise glyph encoding and regenerate automatic wrapping",
+      "english": "{SPEAKER:06}First, you're the captain, {MACRO:FI}. A ship can't sail without a captain. It can't choose where to go on its own.",
+      "block": 43,
+      "source_hex": "0682DC82B881418ACD92B782CD464982B682E10A8ACD92B782AA82A282C882A282C6914482CD82A482B282A982F10A8F9F8EE882C982C782B182A982D68D7382AD82ED82AF82C982CD82A282A982F10A82A982E782CC82A4",
+      "current_hex": "064649206973206361707461696E2E204120736869702063616E6E6F740A207361696C206F7220726F616D20616C6F6E6520776974686F7574206F6E65212020202020202020202020202020202020202020202020202020",
+      "compiled_hex": "0646697273742c20796f7527726520746865206361707461696e2c200a2046492e204120736869702063616e2774207361696c20776974686f75740a2061206361707461696e2e2049742063616e27742063686f6f7365207768657265200a20746f20676f206f6e20697473206f776e2e",
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      },
+      "retention_reason": "Clear, patient crew instruction retains the ship as subject and adds no restriction on Rafael leaving it; only glyph encoding and generated breaks change.",
+      "source_reference": {
+        "id": "DK4_MES_B43_R0017",
+        "file_path": "/data/SC0.DK4",
+        "container_path": "/data/SC0.DK4#block=43",
+        "source_offset": 30055,
+        "source_length": 88,
+        "source_hex": "0682DC82B881418ACD92B782CD464982B682E10A8ACD92B782AA82A282C882A282C6914482CD82A482B282A982F10A8F9F8EE882C982C782B182A982D68D7382AD82ED82AF82C982CD82A282A982F10A82A982E782CC82A4"
+      },
+      "current_reference": {
+        "id": "DK4_MES_B43_R0017",
+        "file_path": "/data/SC0.DK4",
+        "container_path": "/data/SC0.DK4#block=43",
+        "source_offset": 30055,
+        "source_length": 88,
+        "source_hex": "064649206973206361707461696E2E204120736869702063616E6E6F740A207361696C206F7220726F616D20616C6F6E6520776974686F7574206F6E65212020202020202020202020202020202020202020202020202020"
+      }
+    }
+  ],
+  "new_completion_credit": 0,
+  "formatting_only_revisit": true,
+  "actual": "work\\analysis\\Julio_script_correction_20261101\\actual_review.json",
+  "actual_sha256": "3f5783cbcfaf0e33dac561a8fb5d9007c6d94e6b736addc30a90977cfa71eb9d"
+}

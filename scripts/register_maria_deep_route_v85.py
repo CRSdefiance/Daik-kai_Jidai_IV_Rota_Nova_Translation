@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v84"]["batches"]);b.append("translations/maria_deep_route_v85.json");p["profiles"]["maria-deep-route-v85"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V84 across all 39 SC3 records in blocks 95-96: the sandbar rescue and jade-ruin examination, preserving three raw controls."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v85: {len(b)} batches")

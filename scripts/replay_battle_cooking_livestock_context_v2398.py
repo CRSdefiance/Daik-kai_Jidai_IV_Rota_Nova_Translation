@@ -1,0 +1,15 @@
+"""150 current battle/ordinary selectors including Sera and a genuine mood control."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.rom.nds import NdsImage
+from scripts.prepare_battle_repair_medical_context_v899 import select
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.verify_village_wrap_v608 import read,save
+OLD=Path('scripts/replay_battle_repair_medical_context_v2390.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'battle_repair_medical_context_v2390':'battle_cooking_livestock_context_v2398',"GROUPS=((13,1596,1386,'Shipwright'),(14,1608,1398,'Doctor'))":"GROUPS=((15,1620,1410,'Galley'),(17,1633,1423,'Livestock'))",'range(1596,1620)':'range(1620,1645)',"case=select(arm,raw,actor,role,mode,entry,expected);":"expected=(1422 if label=='ordinary_working_control'else 1632)if role==15 and actor==24 else expected;case=select(arm,raw,actor,role,mode,entry,expected);","case=label,role_ID=role,native_voice_class=voice":"case=label,role_ID=role,Sera_Galley_override=role==15 and actor==24,native_voice_class=voice",'all24_battle_IDs_and_ordinary_controls_pass':'all25_battle_IDs_and_ordinary_controls_pass'}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ root=Path('work/analysis/battle_cooking_livestock_context_v2398');contextpath=root/'native_context.json';context=read(contextpath);cases=context['all150_battle_direct_main_and_ordinary_control_cases'];sera=[c for c in cases if c['Sera_Galley_override']];assert len(sera)==3 and {c['selected_message_ID']for c in sera}=={1422,1632};assert all(c['selected_message_ID']in(1423+c['native_voice_class'],1633+c['native_voice_class'])for c in cases if c['actor_ID']==24 and c['role_ID']==17)
+ report=read('E:/Rota Nova translations/Generated/work/emulation_v193/battle_repair_medical_v905_904_CamilleMedical/capture_report.json');receipt=next(r for r in report['read_only_capture_RAM_snapshots']if r['frame']==16100);raw=Path(receipt['path']).read_bytes();assert sha(raw)==receipt['sha256'];arm=NdsImage.open('out/all_routes_combined_v2284_candidate.nds').read_file('/__arm9__.bin');u,g=get_machine(arm,raw);obj=g(0xCB184)+4+18*32;assert g(0x7E100,obj)==0 and g(0x7E0B4,obj)==0;control=select(arm,raw,18,15,(0,1),0x12104,1833)
+ save(root/'Sera_and_mood_controls.json',dict(context=str(contextpath),context_sha256=sha(contextpath.read_bytes()),Sera_role15_battle1632_and_ordinary1422_controls=sera,Sera_role17_uses_its_NPC_voice_class=True,genuine_Charles_condition0_mood0_control=control,source_RAM=receipt,mood0_not_replaced_to_force_working_comment=True,ID1833_outside_family_no_editorial_or_actual_body_credit=True,source1833_is_feeling_on_a_roll_not_a_fear_label=True,source_conditions_and_captain_records_preserved=True,producer_sha256=sha(Path(__file__).read_bytes()),effective_source_sha256=sha(source.encode()),full_goal_complete=False));print(dict(Sera_override_controls=3,genuine_mood0_selects1833=True,extra_editorial_credit=0))

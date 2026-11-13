@@ -1,5 +1,10 @@
 # Delegated dialogue translation protocol
 
+Apply [the dialogue-and-wrapping efficiency workflow](editorial_efficiency_workflow.md)
+when organizing batches and reusing evidence. Every new page still receives visual
+review; readable contact sheets may cover multiple previews in one inspection.
+Representative gameplay and concrete-risk tests remain required.
+
 This protocol makes large dialogue batches safe to delegate to Terra or another
 translator without asking that translator to understand ROM layout. It does not make
 unreviewed prose correct by itself. The tools prove structure and presentation; a

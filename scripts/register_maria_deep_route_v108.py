@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v107"]["batches"]);b.append("translations/maria_deep_route_v108.json");p["profiles"]["maria-deep-route-v108"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V107 with 29 translations and one preserved control in SC3 block 145: Aziza's tavern confrontation."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v108: {len(b)} batches")

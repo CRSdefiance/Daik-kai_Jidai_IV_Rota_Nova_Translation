@@ -1,0 +1,11 @@
+"""Keep viewed clauses together without changing reviewed words or original display rules."""
+from pathlib import Path
+from scripts.prepare_lil_B156_layout_v3705 import derive
+from scripts.verify_village_wrap_v608 import read,save
+from dk4tool.patch.grand_race_menu_release import sha
+if __name__=='__main__':
+    ROOT=Path('work/analysis/lil_B161_B163_viewed_flow_v3929');assert not ROOT.exists();font=Path('work/analysis/lil_B161_B163_fonts_v3928/current_macro_QA_and_progressive_font_proof.json');v=read(font);assert len(v['cases'])==45 and len(v['review_sheets'])==6;pairs=[derive('dk4tool/dialogue/lil_B161_B163_layout_v2.py','dk4tool/dialogue/lil_B161_B163_layout_v3.py',{'def _word(value):':'''PROTECTED_BOUNDARIES = PROTECTED_BOUNDARIES | frozenset({("how'd",'you'),('going','to'),('to','do'),('come','travel'),('me','introduce')})
+
+def _word(value):'''})]
+    pairs.append(derive('scripts/plan_lil_B161_B163_layout_v3927.py','scripts/plan_lil_B161_B163_layout_v3930.py',{'lil_B161_B163_layout_v2':'lil_B161_B163_layout_v3','lil_B161_B163_layout_v3927':'lil_B161_B163_layout_v3930',"INPUT=Path('translations/lil_B161_B163_editorial_manuscript_v1.json')":"INPUT=Path('translations/lil_B161_B163_editorial_manuscript_v2.json')","OUTPUT=Path('translations/lil_B161_B163_editorial_manuscript_v2.json')":"OUTPUT=Path('translations/lil_B161_B163_editorial_manuscript_v3.json')"}))
+    ROOT.mkdir(parents=True);save(ROOT/'six_viewed_sheets_and_four_clause_flow_refinements.json',dict(previous_font_proof=str(font),previous_font_proof_sha256=sha(font.read_bytes()),viewed_sheets=v['review_sheets'],all6_sheets_viewed=True,findings=[dict(id='DK4_MES_B163_R0091',finding='How did contraction stranded before its subject;keep How did you together.'),dict(id='DK4_MES_B163_R0106',finding='Keep going to do as a connected phrase.'),dict(id='DK4_MES_B163_R0217',finding='Keep Come travel together in the invitation.'),dict(id='DK4_MES_B163_R0246',finding='Keep Let me introduce together in the full-name reintroduction.')],all_authored_words_punctuation_source_controls_and_decisions_unchanged=True,no_waiver_or_global_profile_change=True,tools=pairs,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

@@ -1,0 +1,20 @@
+"""Bind both personal names and the source-named shield without changing global name assets."""
+import struct
+from pathlib import Path
+from ndspy.code import MainCodeFile
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.generic_speaker_label_data_v1 import BASE,POOL,cstring
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B224_name_item_v7138');SOURCE=Path('work/analysis/lil_B224_source_v7130/fifteen_clean_current_Medusa_flirtation_exchange_source_references.json');CURRENT=Path('work/analysis/lil_B224_consumers_v7131/fifteen_effective_bodies30_dispatches_two_actors_four_name_consumers.json');CATALOG=Path('translations/all_item_names_arm9_v1.json')
+if __name__=='__main__':
+    assert not ROOT.exists();packet,consumer,cat=map(read,[SOURCE,CURRENT,CATALOG]);assert consumer['source_context_sha256']==sha(SOURCE.read_bytes());forms={(r['actor_ID'],r['consumer']):r['text'] for r in consumer['native_four_distinct_name_consumers']['rows']};assert forms=={(26,'progressive-nameplate'):'Julian Lopes',(26,'full-catalogue'):'Julian Lopes',(197,'progressive-nameplate'):'Safia',(197,'full-catalogue'):'Safia'};clean,current=[NdsImage.open(p) for p in ['work/clean.nds',packet['current_ROM']]];jp,arm=[im.read_file('/__arm9__.bin') for im in [clean,current]];payload=bytes(MainCodeFile(arm,BASE).sections[3].data[:-48]);assert len(payload)==123264;found=[]
+    for row in cat['records']:
+        if not str(row.get('id','')).startswith('DK4_ITEM_POINTER_'):continue
+        at=row['offset'];sp=struct.unpack_from('<I',jp,at)[0];assert jp[at:at+4].hex()==row['source_hex'].lower();raw=cstring(jp,sp-BASE)
+        if raw[:-1].decode('cp932')!='メデューサの盾':continue
+        cp=struct.unpack_from('<I',arm,at)[0]
+        if POOL<=cp<POOL+len(payload):value=cstring(payload,cp-POOL);storage='verified-current-staged-payload';offset=cp-POOL
+        else:value=cstring(arm,cp-BASE);storage='static-current-ARM9';offset=cp-BASE
+        found.append(dict(record_ID=row['id'],pointer_field=at,source_pointer=sp,source_storage_offset=sp-BASE,source_terminated_hex=raw.hex(),Japanese=raw[:-1].decode('cp932'),current_pointer=cp,current_storage_kind=storage,current_storage_offset=offset,current_terminated_hex=value.hex(),English=value[:-1].decode('cp932'),legacy_registered_English=row['english'],legacy_registered_pointer_hex=row.get('replacement_hex'),current_native_item_getter_card_bounds_and_all_other_consumers_not_reviewed_here=True))
+    assert len(found)==1;ROOT.mkdir(parents=True);save(ROOT/'two_personal_names_and_exact_clean_current_Medusa_shield_pointer.json',dict(source_context=str(SOURCE),source_context_sha256=sha(SOURCE.read_bytes()),consumer_proof=str(CURRENT),consumer_proof_sha256=sha(CURRENT.read_bytes()),actors=[dict(actor_ID=i,source_fields=next(r['fields'] for r in consumer['source_name_fields'] if r['actor_ID']==i),progressive=forms[i,'progressive-nameplate'],catalogue=forms[i,'full-catalogue']) for i in [26,197]],source_named_item=found[0],registered_item_batch=str(CATALOG),registered_item_batch_sha256=sha(CATALOG.read_bytes()),current_ROM=packet['current_ROM'],current_ROM_sha256=packet['current_ROM_sha256'],current_ARM9_sha256=sha(arm),source_named_shield_is_not_a_runtime_FI_substitution_in_this_exchange=True,no_inventory_gift_card_display_or_complete_item_consumer_approval_claim=True,no_global_actor_or_item_name_asset_change_or_duplicate_credit=True,all207_actor_names_and_other_item_consumers_remain_separate=True,evidence={str(p):sha(p.read_bytes()) for p in [SOURCE,CURRENT,CATALOG,Path(__file__)]},new_emulator_runs=0,new_credit=0,full_goal_complete=False));print(found)

@@ -1,0 +1,10 @@
+"""All28 current native bridge comment fonts and56 cold/warm copies."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+OLD=Path('scripts/verify_work_fonts_v2309.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'work_fonts_v2309':'bridge_fonts_v2347','translations/work_contextual_editorial_manuscript_v1.json':'translations/bridge_duties_contextual_editorial_manuscript_v1.json','work_current_v2310_V2284':'bridge_current_v2346_V2284','scripts.work_comments_layout_v843 import compiled,layout':'scripts.bridge_duties_layout_v869 import compiled,layout','all8_real_protagonist_helper_selections':'all12_real_protagonist_helper_selections','range(1386,1410)':'range(1471,1499)','len(cases)==24':'len(cases)==28','len(copies)==48':'len(copies)==56','all24':'all28','all48':'all56','scripts/work_comments_layout_v843.py':'scripts/bridge_duties_layout_v869.py','full36_cell1405_trailing_period_consumed_and_inside_visible_crop':'capital_I1477_and_odd25_first_row1489_complete_starboard_continuation_inside_crop','not24_parent_reinitializations':'not28_parent_reinitializations','no24_actual_visits':'no28_actual_visits','fonts=24,native_copies=48':'fonts=28,native_copies=56','assert len(cases)==28 and len(copies)==56;save(':'assert next(c for c in cases if c["message_ID"]==1477)["generated_lines"]==["I\u0027ll handle the diplomatic talks!"];assert len(next(c for c in cases if c["message_ID"]==1489)["generated_lines"][0])==25;assert len(cases)==28 and len(copies)==56;save('}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ save('work/analysis/bridge_fonts_v2347/producer_binding.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_source_sha256=sha(source.encode()),registered_compiler='scripts/bridge_duties_layout_v869.py',all28_independent_words_first_final_letters_and_bounds_checked=True,full_goal_complete=False))

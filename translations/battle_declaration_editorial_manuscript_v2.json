@@ -1,0 +1,1254 @@
+{
+  "format": "dk4-natural-dialogue-source-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "battle-declaration-original-speech-modal-pending",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness"
+  ],
+  "formatting_review_pending": true,
+  "status": "22-source-prose-reviewed-native-font-dynamic-wrap-release-actual-pending",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v987_candidate.nds",
+  "current_ROM_sha256": "bac5998ad942868c85d51d2a3f589e43ffced4dbc93659de7cc659a066c17078",
+  "current_COMMON_sha256": "90f820567e44652747be013de275f9dc4fcc3df4e1e8f1be783cfb0d048b87af",
+  "current_ARM9_sha256": "2ec349ded94dd9ad3394aea9211c0006dac78a30bc7dd7880ad648c1bf73338c",
+  "native_context_proof": "work\\analysis\\battle_declaration_v991c\\source_context_packet.json",
+  "native_context_proof_sha256": "42832016cfca65f3e0e67011da11e13fbd26b5d5bcf982daf459f41047d7c913",
+  "source_context_supplement": "work\\analysis\\battle_declaration_v992\\source_context_and_faithfulness_review.json",
+  "source_context_supplement_sha256": "64d67a8266cb4e1383c33da5ecf28f203bf294383726ead7d74da9b3822aebc1",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1889",
+      "message_id": 1889,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 0",
+      "source_voice_classes_including_native_fallback": [
+        0
+      ],
+      "representative_actor_IDs": [
+        4
+      ],
+      "representative_speakers": [
+        "Janus"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入ります！",
+      "source_hex": "90ed93ac91d490a882c993fc82e882dc82b78149",
+      "source_reference": {
+        "message_id": 1889,
+        "block": 20,
+        "table_offset": 1320914,
+        "block_offset": 2632,
+        "copy_end": 2652,
+        "record_index": 83,
+        "start": 0,
+        "end": 20
+      },
+      "canonical_source_hex": "90ed93ac91d490a882c993fc82e882dc82b78149",
+      "current_reference": {
+        "message_id": 1889,
+        "block": 20,
+        "table_offset": 1320914,
+        "block_offset": 4753,
+        "copy_end": 4781,
+        "record_index": 133,
+        "start": 0,
+        "end": 27
+      },
+      "current_text_hex": "576527726520707265706172696e6720666f7220626174746c6521",
+      "current_English": "We're preparing for battle!",
+      "source_meaning": "The speaker announces that preparations for battle are beginning,with a polite tone.",
+      "english": "We're preparing for battle!",
+      "localization_note": "Retain the complete natural announcement and its immediate timing. This is preparation for battle,not a report that battle has ended or victory is certain.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1890",
+      "message_id": 1890,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 1",
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "representative_actor_IDs": [
+        16
+      ],
+      "representative_speakers": [
+        "Gerhard"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "総員戦闘態勢…、行くぞ！",
+      "source_hex": "918d88f590ed93ac91d490a8816381418d7382ad82bc8149",
+      "source_reference": {
+        "message_id": 1890,
+        "block": 20,
+        "table_offset": 1320916,
+        "block_offset": 2652,
+        "copy_end": 2676,
+        "record_index": 83,
+        "start": 20,
+        "end": 44
+      },
+      "canonical_source_hex": "918d88f590ed93ac91d490a8816381418d7382ad82bc8149",
+      "current_reference": {
+        "message_id": 1890,
+        "block": 20,
+        "table_offset": 1320916,
+        "block_offset": 4781,
+        "copy_end": 4823,
+        "record_index": 134,
+        "start": 0,
+        "end": 41
+      },
+      "current_text_hex": "416c6c2068616e647320746f20626174746c652073746174696f6e732e2e2e204c6574277320676f21",
+      "current_English": "All hands to battle stations... Let's go!",
+      "source_meaning": "The speaker orders all hands to battle stations,then urges them onward.",
+      "english": "All hands to battle stations... Let's go!",
+      "localization_note": "Retain the idiomatic naval order,all-hands scope and determined follow-up. The rhetorical pause is punctuation within a paragraph,not an authored display break.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1891",
+      "message_id": 1891,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 2",
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "representative_speakers": [
+        "Camille"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入るよっ！",
+      "source_hex": "90ed93ac91d490a882c993fc82e982e682c18149",
+      "source_reference": {
+        "message_id": 1891,
+        "block": 20,
+        "table_offset": 1320918,
+        "block_offset": 2676,
+        "copy_end": 2696,
+        "record_index": 83,
+        "start": 44,
+        "end": 64
+      },
+      "canonical_source_hex": "90ed93ac91d490a882c993fc82e982e682c18149",
+      "current_reference": {
+        "message_id": 1891,
+        "block": 20,
+        "table_offset": 1320918,
+        "block_offset": 4823,
+        "copy_end": 4855,
+        "record_index": 135,
+        "start": 0,
+        "end": 31
+      },
+      "current_text_hex": "57652772652067657474696e6720726561647920666f7220626174746c6521",
+      "current_English": "We're getting ready for battle!",
+      "source_meaning": "The speaker energetically announces that they are getting ready for battle.",
+      "english": "We're getting ready for battle!",
+      "localization_note": "Retain the fluent cheerful announcement. The informal getting ready matches the energetic yo ending without inventing a new event or opponent.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1892",
+      "message_id": 1892,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 3",
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "representative_actor_IDs": [
+        7
+      ],
+      "representative_speakers": [
+        "Cristina"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入るわよ！\nやっちゃいましょ！",
+      "source_hex": "90ed93ac91d490a882c993fc82e982ed82e681490a82e282c182bf82e182a282dc82b582e58149",
+      "source_reference": {
+        "message_id": 1892,
+        "block": 20,
+        "table_offset": 1320920,
+        "block_offset": 2696,
+        "copy_end": 2736,
+        "record_index": 83,
+        "start": 64,
+        "end": 103
+      },
+      "canonical_source_hex": "90ed93ac91d490a882c993fc82e982ed82e681490a82e282c182bf82e182a282dc82b582e58149",
+      "current_reference": {
+        "message_id": 1892,
+        "block": 20,
+        "table_offset": 1320920,
+        "block_offset": 4855,
+        "copy_end": 4899,
+        "record_index": 136,
+        "start": 0,
+        "end": 43
+      },
+      "current_text_hex": "576527726520707265706172696e6720666f7220626174746c6521204c6574277320676574207468656d21",
+      "current_English": "We're preparing for battle! Let's get them!",
+      "source_meaning": "The speaker announces battle preparations and urges everyone to get the enemy,with a lively feminine voice.",
+      "english": "We're preparing for battle! Let's get them!",
+      "localization_note": "Retain natural energetic spoken English and both source intentions. Do not impose a gendered English job title or add a specific tactic.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1893",
+      "message_id": 1893,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 4",
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5,
+        151
+      ],
+      "representative_speakers": [
+        "Claudio",
+        "Retainer"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入るぜ！\nやっちまおう！",
+      "source_hex": "90ed93ac91d490a882c993fc82e982ba81490a82e282c182bf82dc82a882a48149",
+      "source_reference": {
+        "message_id": 1893,
+        "block": 20,
+        "table_offset": 1320922,
+        "block_offset": 2736,
+        "copy_end": 2772,
+        "record_index": 84,
+        "start": 0,
+        "end": 33
+      },
+      "canonical_source_hex": "426174746c652073746174696f6e7321204c6574277320676574207468656d2120",
+      "current_reference": {
+        "message_id": 1893,
+        "block": 20,
+        "table_offset": 1320922,
+        "block_offset": 4899,
+        "copy_end": 4932,
+        "record_index": 137,
+        "start": 0,
+        "end": 32
+      },
+      "current_text_hex": "426174746c652073746174696f6e7321204c6574277320676574207468656d21",
+      "current_English": "Battle stations! Let's get them!",
+      "source_meaning": "The speaker roughly announces battle stations and urges everyone to get the enemy.",
+      "english": "Battle stations! Let's get them!",
+      "localization_note": "Retain the clipped idiomatic order and rough confident encouragement. It preserves the emphatic source without adding profanity or a promised victory.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1894",
+      "message_id": 1894,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 5",
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "representative_speakers": [
+        "Julio"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入るぞ！\nやってやるかの！",
+      "source_hex": "90ed93ac91d490a882c993fc82e982bc81490a82e282c182c482e282e982a982cc8149",
+      "source_reference": {
+        "message_id": 1894,
+        "block": 20,
+        "table_offset": 1320924,
+        "block_offset": 2772,
+        "copy_end": 2808,
+        "record_index": 85,
+        "start": 2,
+        "end": 37
+      },
+      "canonical_source_hex": "74746c652073746174696f6e7321204c6574277320646f207468697321202020202020",
+      "current_reference": {
+        "message_id": 1894,
+        "block": 20,
+        "table_offset": 1320924,
+        "block_offset": 4932,
+        "copy_end": 4964,
+        "record_index": 138,
+        "start": 0,
+        "end": 31
+      },
+      "current_text_hex": "426174746c652073746174696f6e7321204c6574277320646f207468697321",
+      "current_English": "Battle stations! Let's do this!",
+      "source_meaning": "The speaker announces battle stations and says they should get to it,with an older conversational voice.",
+      "english": "Battle stations! Let's do this!",
+      "localization_note": "Retain the natural firm order and inclusive resolve. Do not force Japanese age-marked particles into unnatural English or invent a title or kinship.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1895",
+      "message_id": 1895,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 6",
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "representative_speakers": [
+        "Emilio"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "これから戦闘だよ！\nがんばろう！",
+      "source_hex": "82b182ea82a982e790ed93ac82be82e681490a82aa82f182ce82eb82a48149",
+      "source_reference": {
+        "message_id": 1895,
+        "block": 20,
+        "table_offset": 1320926,
+        "block_offset": 2808,
+        "copy_end": 2840,
+        "record_index": 86,
+        "start": 0,
+        "end": 31
+      },
+      "canonical_source_hex": "426174746c6520616865616421204c657427732077696e2120202020202020",
+      "current_reference": {
+        "message_id": 1895,
+        "block": 20,
+        "table_offset": 1320926,
+        "block_offset": 4964,
+        "copy_end": 4989,
+        "record_index": 139,
+        "start": 0,
+        "end": 24
+      },
+      "current_text_hex": "426174746c6520616865616421204c657427732077696e21",
+      "current_English": "Battle ahead! Let's win!",
+      "source_meaning": "The speaker says battle is about to begin and encourages everyone to do their best.",
+      "english": "We're going into battle! Let's do our best!",
+      "localization_note": "Restore the source encouragement to make an effort. The older Let's win replaces that with a different objective;the revision keeps the upbeat youthful voice and immediate battle timing.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1896",
+      "message_id": 1896,
+      "source_family": "ready",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 7",
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "representative_speakers": [
+        "Carlo"
+      ],
+      "context": "Independent player-side First Mate battle-readiness announcement. Original6EE90 selects ready table117440 through role1 wrapper53D44 only for already-hostile or pirate targets with zero input flag. This is not the opposing leader response to a new declaration. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "戦闘態勢に入ります！\n蹴散らしましょう！",
+      "source_hex": "90ed93ac91d490a882c993fc82e882dc82b781490a8f528e5582e782b582dc82b582e582a48149",
+      "source_reference": {
+        "message_id": 1896,
+        "block": 20,
+        "table_offset": 1320928,
+        "block_offset": 2840,
+        "copy_end": 2880,
+        "record_index": 87,
+        "start": 0,
+        "end": 39
+      },
+      "canonical_source_hex": "426174746c652073746174696f6e7321204c65742773206372757368207468656d212020202020",
+      "current_reference": {
+        "message_id": 1896,
+        "block": 20,
+        "table_offset": 1320928,
+        "block_offset": 4989,
+        "copy_end": 5024,
+        "record_index": 140,
+        "start": 0,
+        "end": 34
+      },
+      "current_text_hex": "426174746c652073746174696f6e7321204c65742773206372757368207468656d21",
+      "current_English": "Battle stations! Let's crush them!",
+      "source_meaning": "The speaker politely announces battle stations and urges everyone to scatter or sweep away the enemy.",
+      "english": "Battle stations! Let's crush them!",
+      "localization_note": "Retain the natural confident martial exhortation and both source intentions. Crush them is an idiomatic forceful localization of kechirashimasho,not an actual battle-result claim.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1897",
+      "message_id": 1897,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 0,1",
+      "source_voice_classes_including_native_fallback": [
+        0,
+        1
+      ],
+      "representative_actor_IDs": [
+        4,
+        16
+      ],
+      "representative_speakers": [
+        "Gerhard",
+        "Janus"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦を布告します\nよろしいですね？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782cb8148",
+      "source_reference": {
+        "message_id": 1897,
+        "block": 20,
+        "table_offset": 1320930,
+        "block_offset": 2880,
+        "copy_end": 2924,
+        "record_index": 88,
+        "start": 0,
+        "end": 44
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782cb8148",
+      "current_reference": {
+        "message_id": 1897,
+        "block": 20,
+        "table_offset": 1320930,
+        "block_offset": 5024,
+        "copy_end": 5077,
+        "record_index": 141,
+        "start": 0,
+        "end": 52
+      },
+      "current_text_hex": "5765276c6c206465636c61726520776172206f6e20257327732066616374696f6e2e20826873207468617420636f72726563743f",
+      "current_English": "We'll declare war on %s's faction. Ｉs that correct?",
+      "source_meaning": "The speaker politely proposes declaring war on the named faction and asks whether that is acceptable.",
+      "english": "Is it all right to declare war on %s?",
+      "localization_note": "Keep the complete polite declaration confirmation in one natural question. A company abbreviation may already end in a period;putting the question after the faction label avoids an added second period.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1898",
+      "message_id": 1898,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 2",
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "representative_speakers": [
+        "Camille"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦を布告するよ！\n提督、いいね？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b782e982e681490a92f193c2814182a282a282cb8148",
+      "source_reference": {
+        "message_id": 1898,
+        "block": 20,
+        "table_offset": 1320932,
+        "block_offset": 2924,
+        "copy_end": 2968,
+        "record_index": 88,
+        "start": 44,
+        "end": 88
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b782e982e681490a92f193c2814182a282a282cb8148",
+      "current_reference": {
+        "message_id": 1898,
+        "block": 20,
+        "table_offset": 1320932,
+        "block_offset": 5077,
+        "copy_end": 5137,
+        "record_index": 142,
+        "start": 0,
+        "end": 59
+      },
+      "current_text_hex": "5765277265206465636c6172696e6720776172206f6e20257327732066616374696f6e212041646d6972616c2c2069732074686174206f6b61793f",
+      "current_English": "We're declaring war on %s's faction! Admiral, is that okay?",
+      "source_meaning": "The speaker energetically announces a declaration of war on the named faction and asks the admiral whether that is okay.",
+      "english": "We're declaring war on %s! Is that okay, Admiral?",
+      "localization_note": "Use the source complete faction label directly and retain the explicit Admiral address and lively confirmation. Do not confuse this planned declaration with a completed war or an enemy leader speaking.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1899",
+      "message_id": 1899,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 3",
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "representative_actor_IDs": [
+        7
+      ],
+      "representative_speakers": [
+        "Cristina"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦を布告します\n提督、いいわよね？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a92f193c2814182a282a282ed82e682cb8148",
+      "source_reference": {
+        "message_id": 1899,
+        "block": 20,
+        "table_offset": 1320934,
+        "block_offset": 2968,
+        "copy_end": 3016,
+        "record_index": 88,
+        "start": 88,
+        "end": 134
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a92f193c2814182a282a282ed82e682cb8148",
+      "current_reference": {
+        "message_id": 1899,
+        "block": 20,
+        "table_offset": 1320934,
+        "block_offset": 5137,
+        "copy_end": 5201,
+        "record_index": 143,
+        "start": 0,
+        "end": 63
+      },
+      "current_text_hex": "5765276c6c206465636c61726520776172206f6e20257327732066616374696f6e2e2041646d6972616c2c20746861742773206f6b61792c2072696768743f",
+      "current_English": "We'll declare war on %s's faction. Admiral, that's okay, right?",
+      "source_meaning": "The speaker says they will declare war on the named faction and asks the admiral for reassuring confirmation,with a feminine polite voice.",
+      "english": "Admiral, you're all right with us declaring war on %s?",
+      "localization_note": "Keep the explicit Admiral address and reassurance-seeking confirmation as conversational English. Place the complete faction label at the end of the question so a name ending Co. does not acquire a second period.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1900",
+      "message_id": 1900,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 4",
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5,
+        151
+      ],
+      "representative_speakers": [
+        "Claudio",
+        "Retainer"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦布告するぜ！\nいいんだな？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed957a8d9082b782e982ba81490a82a282a282f182be82c88148",
+      "source_reference": {
+        "message_id": 1900,
+        "block": 20,
+        "table_offset": 1320936,
+        "block_offset": 3016,
+        "copy_end": 3056,
+        "record_index": 89,
+        "start": 1,
+        "end": 41
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed957a8d9082b782e982ba81490a82a282a282f182be82c88148",
+      "current_reference": {
+        "message_id": 1900,
+        "block": 20,
+        "table_offset": 1320936,
+        "block_offset": 5201,
+        "copy_end": 5258,
+        "record_index": 144,
+        "start": 0,
+        "end": 56
+      },
+      "current_text_hex": "5765277265206465636c6172696e6720776172206f6e20257327732066616374696f6e2120596f7527726520737572652c2072696768743f",
+      "current_English": "We're declaring war on %s's faction! You're sure, right?",
+      "source_meaning": "The speaker roughly announces a declaration of war on the named faction and checks that the listener is sure.",
+      "english": "We're declaring war on %s! You're sure about this?",
+      "localization_note": "Use the complete faction label directly and retain the rough confident announcement followed by a firm check. The question is deliberate conversational English rather than an unsupported promise or completed action.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1901",
+      "message_id": 1901,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 5",
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "representative_speakers": [
+        "Julio"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦を布告するぞ\nよろしいか？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b782e982bc0a82e682eb82b582a282a98148",
+      "source_reference": {
+        "message_id": 1901,
+        "block": 20,
+        "table_offset": 1320938,
+        "block_offset": 3056,
+        "copy_end": 3096,
+        "record_index": 89,
+        "start": 41,
+        "end": 81
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b782e982bc0a82e682eb82b582a282a98148",
+      "current_reference": {
+        "message_id": 1901,
+        "block": 20,
+        "table_offset": 1320938,
+        "block_offset": 5258,
+        "copy_end": 5310,
+        "record_index": 145,
+        "start": 0,
+        "end": 51
+      },
+      "current_text_hex": "5765207368616c6c206465636c61726520776172206f6e20257327732066616374696f6e2e20446f20796f752061677265653f",
+      "current_English": "We shall declare war on %s's faction. Do you agree?",
+      "source_meaning": "The speaker formally announces a declaration of war on the named faction and asks for agreement.",
+      "english": "Shall we declare war on %s?",
+      "localization_note": "Keep the older formal shall and the complete declaration confirmation as a natural question. No extra sentence period is appended to a faction label that may already end in Co.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1902",
+      "message_id": 1902,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 6",
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "representative_speakers": [
+        "Emilio"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\nおまえらやっつけるって言うよ\nこれでいいんだね？",
+      "source_hex": "257382cc90a897cd82c90a82a882dc82a682e782e282c182c282af82e982c182c48cbe82a482e60a82b182ea82c582a282a282f182be82cb8148",
+      "source_reference": {
+        "message_id": 1902,
+        "block": 20,
+        "table_offset": 1320940,
+        "block_offset": 3096,
+        "copy_end": 3156,
+        "record_index": 89,
+        "start": 81,
+        "end": 139
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a82a882dc82a682e782e282c182c282af82e982c182c48cbe82a482e60a82b182ea82c582a282a282f182be82cb8148",
+      "current_reference": {
+        "message_id": 1902,
+        "block": 20,
+        "table_offset": 1320940,
+        "block_offset": 5310,
+        "copy_end": 5380,
+        "record_index": 146,
+        "start": 0,
+        "end": 69
+      },
+      "current_text_hex": "8268276c6c2074656c6c20257327732066616374696f6e20776527726520676f696e6720746f2062656174207468656d2120546861742773206f6b61792c2072696768743f",
+      "current_English": "Ｉ'll tell %s's faction we're going to beat them! That's okay, right?",
+      "source_meaning": "The speaker asks whether it is okay to tell the named faction that they are going to beat them.",
+      "english": "I'll tell %s we're going to beat them! Is that okay?",
+      "localization_note": "Preserve the childlike indirect threat and the act of telling the other side. Do not flatten it into a generic diplomatic formula or an immediate attack command. Use the complete faction label and ordinary ASCII I.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1903",
+      "message_id": 1903,
+      "source_family": "named",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 7",
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "representative_speakers": [
+        "Carlo"
+      ],
+      "context": "Independent player-side First Mate declaration confirmation. Original6EE90 uses named table117420 through role1 wrapper53CB0 when the target is not already at war,leader byte26 is nonzero,and the menu-derived input flag is zero. The single percent-s argument is original company virtual getter+8 supplying the COMPLETE faction display label. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "%sの勢力に\n宣戦を布告します\nよろしいですな？",
+      "source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782c88148",
+      "source_reference": {
+        "message_id": 1903,
+        "block": 20,
+        "table_offset": 1320942,
+        "block_offset": 3156,
+        "copy_end": 3200,
+        "record_index": 90,
+        "start": 1,
+        "end": 45
+      },
+      "canonical_source_hex": "257382cc90a897cd82c90a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782c88148",
+      "current_reference": {
+        "message_id": 1903,
+        "block": 20,
+        "table_offset": 1320942,
+        "block_offset": 5380,
+        "copy_end": 5433,
+        "record_index": 147,
+        "start": 0,
+        "end": 52
+      },
+      "current_text_hex": "5765276c6c206465636c61726520776172206f6e20257327732066616374696f6e2e20596f7520617070726f76652c207965733f",
+      "current_English": "We'll declare war on %s's faction. You approve, yes?",
+      "source_meaning": "The speaker formally announces a declaration of war on the named faction and asks for the listener's approval.",
+      "english": "Do I have your approval to declare war on %s?",
+      "localization_note": "Preserve formal approval-seeking and the declaration of war as a complete idiomatic question. Avoid both inverted You approve,yes and an extra period after a complete abbreviated company name.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1904",
+      "message_id": 1904,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 0,3",
+      "source_voice_classes_including_native_fallback": [
+        0,
+        3
+      ],
+      "representative_actor_IDs": [
+        4,
+        7
+      ],
+      "representative_speakers": [
+        "Cristina",
+        "Janus"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か分かりませんが\n宣戦を布告します\nよろしいのですね？",
+      "source_hex": "82c782b182cc90a897cd82a995aa82a982e882dc82b982f182aa0a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282cc82c582b782cb8148",
+      "source_reference": {
+        "message_id": 1904,
+        "block": 20,
+        "table_offset": 1320944,
+        "block_offset": 3200,
+        "copy_end": 3264,
+        "record_index": 90,
+        "start": 45,
+        "end": 107
+      },
+      "canonical_source_hex": "82c782b182cc90a897cd82a995aa82a982e882dc82b982f182aa0a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282cc82c582b782cb8148",
+      "current_reference": {
+        "message_id": 1904,
+        "block": 20,
+        "table_offset": 1320944,
+        "block_offset": 5433,
+        "copy_end": 5506,
+        "record_index": 148,
+        "start": 0,
+        "end": 72
+      },
+      "current_text_hex": "576520646f6e2774206b6e6f772077686963682066616374696f6e20746869732069732c20627574207765276c6c206465636c617265207761722e20596f7527726520737572653f",
+      "current_English": "We don't know which faction this is, but we'll declare war. You're sure?",
+      "source_meaning": "The speaker says the faction is unidentified but proposes declaring war and asks whether that really is acceptable.",
+      "english": "We don't know which faction this is, but we'll declare war. Is that all right?",
+      "localization_note": "Keep the explicit uncertainty,the declaration and the polite request for confirmation in complete natural sentences. Source dispatch can select this from a menu flag override;do not infer a specific disguise or hidden-story condition.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1905",
+      "message_id": 1905,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 1",
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "representative_actor_IDs": [
+        16
+      ],
+      "representative_speakers": [
+        "Gerhard"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か把握していませんが\n宣戦を布告します\nよろしいですね？",
+      "source_hex": "82c782b182cc90a897cd82a9946388ac82b582c482a282dc82b982f182aa0a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782cb8148",
+      "source_reference": {
+        "message_id": 1905,
+        "block": 20,
+        "table_offset": 1320946,
+        "block_offset": 3264,
+        "copy_end": 3328,
+        "record_index": 91,
+        "start": 1,
+        "end": 65
+      },
+      "canonical_source_hex": "82c782b182cc90a897cd82a9946388ac82b582c482a282dc82b982f182aa0a90e990ed82f0957a8d9082b582dc82b70a82e682eb82b582a282c582b782cb8148",
+      "current_reference": {
+        "message_id": 1905,
+        "block": 20,
+        "table_offset": 1320946,
+        "block_offset": 5506,
+        "copy_end": 5571,
+        "record_index": 149,
+        "start": 0,
+        "end": 64
+      },
+      "current_text_hex": "576520686176656e2774206964656e74696669656420746869732066616374696f6e2e205368616c6c207765206465636c6172652077617220616e797761793f",
+      "current_English": "We haven't identified this faction. Shall we declare war anyway?",
+      "source_meaning": "The speaker says they have not identified the faction and asks whether to declare war despite that.",
+      "english": "We haven't identified this faction. Shall we declare war anyway?",
+      "localization_note": "Retain the fluent complete uncertainty and confirmation. Anyway expresses the source concession without inventing a lack of scouting ability or a new game rule.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1906",
+      "message_id": 1906,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 2",
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "representative_speakers": [
+        "Camille"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か分からないけど\n宣戦布告するよ。いいんだね？",
+      "source_hex": "82c782b182cc90a897cd82a995aa82a982e782c882a282af82c70a90e990ed957a8d9082b782e982e6814282a282a282f182be82cb8148",
+      "source_reference": {
+        "message_id": 1906,
+        "block": 20,
+        "table_offset": 1320948,
+        "block_offset": 3328,
+        "copy_end": 3384,
+        "record_index": 91,
+        "start": 65,
+        "end": 120
+      },
+      "canonical_source_hex": "82c782b182cc90a897cd82a995aa82a982e782c882a282af82c70a90e990ed957a8d9082b782e982e6814282a282a282f182be82cb8148",
+      "current_reference": {
+        "message_id": 1906,
+        "block": 20,
+        "table_offset": 1320948,
+        "block_offset": 5571,
+        "copy_end": 5643,
+        "record_index": 150,
+        "start": 0,
+        "end": 71
+      },
+      "current_text_hex": "826820646f6e2774206b6e6f772077686963682066616374696f6e20746869732069732e205765277265206465636c6172696e672077617220616e797761792c2072696768743f",
+      "current_English": "Ｉ don't know which faction this is. We're declaring war anyway, right?",
+      "source_meaning": "The speaker casually says they do not know which faction this is and asks confirmation before declaring war anyway.",
+      "english": "I don't know which faction this is. We're declaring war anyway, right?",
+      "localization_note": "Retain the natural conversational wording and uncertainty while replacing obsolete full-width I with ordinary ASCII. Complete native leading-letter and wrapping verification is still required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1907",
+      "message_id": 1907,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 4",
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5,
+        151
+      ],
+      "representative_speakers": [
+        "Claudio",
+        "Retainer"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か分からねえが\n宣戦布告するぜ。いいんだな？",
+      "source_hex": "82c782b182cc90a897cd82a995aa82a982e782cb82a682aa0a90e990ed957a8d9082b782e982ba814282a282a282f182be82c88148",
+      "source_reference": {
+        "message_id": 1907,
+        "block": 20,
+        "table_offset": 1320950,
+        "block_offset": 3384,
+        "copy_end": 3440,
+        "record_index": 92,
+        "start": 0,
+        "end": 53
+      },
+      "canonical_source_hex": "556e6b6e6f776e2066616374696f6e2c20627574207368616c6c2077650a206465636c617265207761723f20202020202020202020",
+      "current_reference": {
+        "message_id": 1907,
+        "block": 20,
+        "table_offset": 1320950,
+        "block_offset": 5643,
+        "copy_end": 5697,
+        "record_index": 151,
+        "start": 0,
+        "end": 53
+      },
+      "current_text_hex": "556e6b6e6f776e2066616374696f6e2c20627574207368616c6c2077650a20206465636c617265207761723f202020202020202020",
+      "current_English": "Unknown faction, but shall we\n  declare war?         ",
+      "source_meaning": "The speaker roughly says they do not know the faction but will declare war and checks that the listener is sure.",
+      "english": "No idea which faction this is, but we're declaring war. You're sure about this?",
+      "localization_note": "Restore the full rough spoken meaning and explicit certainty check. Remove the old translator-authored line break and alignment padding;the formatter must place every visible line and preserve whole words.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1908",
+      "message_id": 1908,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 5",
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "representative_speakers": [
+        "Julio"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か知らぬが\n宣戦を布告するぞ。よろしいな？",
+      "source_hex": "82c782b182cc90a897cd82a9926d82e782ca82aa0a90e990ed82f0957a8d9082b782e982bc814282e682eb82b582a282c88148",
+      "source_reference": {
+        "message_id": 1908,
+        "block": 20,
+        "table_offset": 1320952,
+        "block_offset": 3440,
+        "copy_end": 3492,
+        "record_index": 93,
+        "start": 2,
+        "end": 53
+      },
+      "canonical_source_hex": "6b6e6f776e2067726f75702e204465636c617265207761723f2020202020202020202020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1908,
+        "block": 20,
+        "table_offset": 1320952,
+        "block_offset": 5697,
+        "copy_end": 5725,
+        "record_index": 152,
+        "start": 0,
+        "end": 27
+      },
+      "current_text_hex": "556e6b6e6f776e2067726f75702e204465636c617265207761723f",
+      "current_English": "Unknown group. Declare war?",
+      "source_meaning": "The older speaker says they do not know which faction this is but proposes declaring war and asks for confirmation.",
+      "english": "I don't know which faction this is. Shall we declare war anyway?",
+      "localization_note": "Restore the omitted uncertainty and complete declaration confirmation from the old telegraphic Unknown group. Declare war. Shall preserves measured older formality without artificial archaic syntax.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1909",
+      "message_id": 1909,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 6",
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "representative_speakers": [
+        "Emilio"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの人たちだか分からないけど\n攻撃するよって言えばいいんだね？",
+      "source_hex": "82c782b182cc906c82bd82bf82be82a995aa82a982e782c882a282af82c70a8d558c8282b782e982e682c182c48cbe82a682ce82a282a282f182be82cb8148",
+      "source_reference": {
+        "message_id": 1909,
+        "block": 20,
+        "table_offset": 1320954,
+        "block_offset": 3492,
+        "copy_end": 3556,
+        "record_index": 94,
+        "start": 0,
+        "end": 63
+      },
+      "canonical_source_hex": "556e6b6e6f776e2067726f75702e2041747461636b3f2020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1909,
+        "block": 20,
+        "table_offset": 1320954,
+        "block_offset": 5725,
+        "copy_end": 5748,
+        "record_index": 153,
+        "start": 0,
+        "end": 22
+      },
+      "current_text_hex": "556e6b6e6f776e2067726f75702e2041747461636b3f",
+      "current_English": "Unknown group. Attack?",
+      "source_meaning": "The speaker does not know who the others are and asks whether they should tell them they are going to attack.",
+      "english": "I don't know who they are. Should I tell them we're going to attack?",
+      "localization_note": "Restore both uncertainty and the act of communicating an attack threat. The old Unknown group. Attack omits most of the meaning and can misrepresent this as a direct attack command. Do not invent the group's identity.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1910",
+      "message_id": 1910,
+      "source_family": "unknown",
+      "consumer": "native-speech-confirmation",
+      "speaker": "Player First Mate or original native fallback; voice classes 7",
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "representative_speakers": [
+        "Carlo"
+      ],
+      "context": "Independent player-side First Mate unidentified-faction declaration confirmation. Original6EE90 selects unknown table117400 through role1 wrapper53CB0 for its original input-flag/leader-state branches,including already-hostile and pirate confirmation paths. Do not interpret the wording as proof of a particular faction-discovery story state. Original82478 selects an actual role officer or its native fallback;the voice table chooses among independent alternatives. Named voice1 falls back to1897;unknown voice3 falls back to1904. UI0 means acceptance and UI1 cancellation through original53CB0 inversion. Accepted new hostilities separately invoke target leader table1184E0 IDs2201-2208,then original relation setters;those messages are controls outside this review. Storage neighbors are not consecutive speech. No identity,kinship,rank,earned event,battle outcome or unknown flag meaning is invented.",
+      "source_Japanese": "どこの勢力か不明ですが\n宣戦を布告しますぞ\nよろしいのですね？",
+      "source_hex": "82c782b182cc90a897cd82a9957396be82c582b782aa0a90e990ed82f0957a8d9082b582dc82b782bc0a82e682eb82b582a282cc82c582b782cb8148",
+      "source_reference": {
+        "message_id": 1910,
+        "block": 20,
+        "table_offset": 1320956,
+        "block_offset": 3556,
+        "copy_end": 3616,
+        "record_index": 95,
+        "start": 0,
+        "end": 60
+      },
+      "canonical_source_hex": "82c782b182cc90a897cd82a9957396be82c582b782aa0a90e990ed82f0957a8d9082b582dc82b782bc0a82e682eb82b582a282cc82c582b782cb8148",
+      "current_reference": {
+        "message_id": 1910,
+        "block": 20,
+        "table_offset": 1320956,
+        "block_offset": 5748,
+        "copy_end": 5812,
+        "record_index": 154,
+        "start": 0,
+        "end": 63
+      },
+      "current_text_hex": "546869732066616374696f6e20697320756e6964656e7469666965642e205368616c6c207765206465636c61726520776172206e6f6e657468656c6573733f",
+      "current_English": "This faction is unidentified. Shall we declare war nonetheless?",
+      "source_meaning": "The speaker formally says the faction is unidentified and asks whether to declare war nonetheless.",
+      "english": "This faction is unidentified. Shall we declare war nonetheless?",
+      "localization_note": "Retain the complete natural formal confirmation. Nonetheless suits this formal voice and preserves the source concession;do not replace it merely to standardize every voice.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "full_goal_complete": false,
+  "reviewed_research_manuscript": "translations\\battle_declaration_editorial_manuscript_v1.json",
+  "reviewed_research_manuscript_sha256": "ec95f7cc789263f7b83a06e595c9f64d2633d3816d69c95af561bca79ff3ebb3",
+  "native_name_preview_followup": "work\\analysis\\battle_declaration_v994\\native_name_preview_followup.json",
+  "native_name_preview_followup_sha256": "31d8c8f0ae5009e2f6b67c8db962492888584d67cc33570fb6b94f0a526b93b5"
+}

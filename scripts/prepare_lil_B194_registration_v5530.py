@@ -1,0 +1,120 @@
+"""Prepare cumulative registration and conditional/FI/source-metadata atomic negatives."""
+import re
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+
+ROOT=Path('work/analysis/lil_B194_registration_tools_v5530')
+MUTATIONS='''    mutations=[
+        ('missing-source-gate',str(DOC),lambda v:v['records'][0]['review'].update(source=False)),
+        ('missing-speech',str(DOC),lambda v:v['records'].pop()),
+        ('wrong-source-offset',str(DOC),lambda v:v['records'][0]['source_reference'].update(offset=1)),
+        ('wrong-current-offset',str(DOC),lambda v:v['records'][0]['current_reference'].update(offset=1)),
+        ('wrong-source-header',str(DOC),lambda v:v['records'][0]['source_reference'].update(header_offset=1)),
+        ('wrong-current-header',str(DOC),lambda v:v['records'][0]['current_reference'].update(header_offset=1)),
+        ('wrong-source-length',str(DOC),lambda v:v['records'][0]['source_reference'].update(bytes=1)),
+        ('wrong-current-length',str(DOC),lambda v:v['records'][0]['current_reference'].update(bytes=1)),
+        ('wrong-source-record-index',str(DOC),lambda v:v['records'][0]['source_reference'].update(record_index=1)),
+        ('wrong-current-record-index',str(DOC),lambda v:v['records'][0].update(current_record_index=1)),
+        ('wrong-source-block',str(DOC),lambda v:v['records'][0]['source_reference'].update(block=193)),
+        ('changed-English',str(DOC),lambda v:v['records'][0].update(english='{SPEAKER:9C}Hello.')),
+        ('manual-break',str(DOC),lambda v:v['records'][0].update(english=v['records'][0]['english']+'{LB}')),
+        ('manual-padding',str(DOC),lambda v:v['records'][0].update(english=v['records'][0]['english']+'{PAD}')),
+        ('FE-progressive',str(DOC),lambda v:next(r for r in v['records'] if r['source_selector']==254).update(kind='progressive')),
+        ('lost-retention-reason',str(DOC),lambda v:next(r for r in v['records'] if r['editorial_decision']=='retain-wording').update(fresh_retained_wording_justification='')),
+        ('lost-actual-scope',str(DOC),lambda v:v['records'][0].update(actual_B22_display_fixture_observed=False)),
+        ('lost-FI',str(DOC),lambda v:next(r for r in v['records'] if '{MACRO:FI}' in r['english']).update(english='{SPEAKER:06}Admiral, did you hear that?')),
+        ('FI-replaced-by-literal-Lil',str(DOC),lambda v:next(r for r in v['records'] if '{MACRO:FI}' in r['english']).update(english='{SPEAKER:06}Admiral Lil, did you hear that?')),
+        ('FI-changed-to-FO',str(DOC),lambda v:next(r for r in v['records'] if '{MACRO:FI}' in r['english']).update(english='{SPEAKER:06}Admiral {MACRO:FO}, did you hear that?')),
+        ('missing-end-map',str(MAP),lambda v:v['blocks'][0]['original_declared_end_word_maps'].pop()),
+        ('wrong-end-map',str(MAP),lambda v:v['blocks'][0]['original_declared_end_word_maps'][0].update(target_offset=540)),
+        ('invented-pause',str(MAP),lambda v:v['blocks'][0]['original2000_pause_and_resume_maps'].append({})),
+        ('invented-choice',str(MAP),lambda v:v['blocks'][0]['choice_commands'].append({})),
+        ('wrong-stored-offset',str(MAP),lambda v:v['blocks'][0]['text_records'][0].update(new_offset=1)),
+        ('wrong-parity',str(MAP),lambda v:v['blocks'][0]['text_records'][0].update(parity_space_added=not v['blocks'][0]['text_records'][0]['parity_space_added'])),
+        ('wrong-target-hash',str(MAP),lambda v:v['blocks'][0].update(target_block_sha256='0'*64)),
+        ('missing-command',str(MAP),lambda v:v['blocks'][0]['mapped_native_commands'].pop()),
+        ('inconsistent-command-map',str(MAP),lambda v:v['blocks'][0]['command_map'][0].update(new_extent=2)),
+        ('wrong-source-extent',str(MAP),lambda v:v['blocks'][0].update(source_bytes=1)),
+        ('wrong-source-logical-end',str(MAP),lambda v:v['blocks'][0].update(source_logical_end=1)),
+        ('wrong-target-extent',str(MAP),lambda v:v['blocks'][0].update(research_bytes=1)),
+        ('wrong-target-logical-end',str(MAP),lambda v:v['blocks'][0].update(research_logical_end=1)),
+        ('missing-relative',str(MAP),lambda v:v['blocks'][0]['relative_skip_fixups'].pop()),
+        ('changed-relative-span',str(MAP),lambda v:v['blocks'][0]['relative_skip_fixups'][2].update(target_span=0)),
+        ('changed-zero-relative-span',str(MAP),lambda v:v['blocks'][0]['relative_skip_fixups'][3].update(source_span=4)),
+        ('wrong-relative-operand-field',str(MAP),lambda v:v['blocks'][0]['relative_skip_fixups'][0].update(span_field_offset=1)),
+        ('missing-skip-case',str(MAP),lambda v:v['blocks'][0]['target_native_skip_cases'].pop()),
+        ('wrong-skip-extent',str(MAP),lambda v:v['blocks'][0]['target_native_skip_cases'][0].update(native_extent=100)),
+        ('wrong-relative-ancestry',str(MAP),lambda v:next(c for c in v['blocks'][0]['mapped_native_commands'] if c['target_0100_ancestors']).update(target_0100_ancestors=[])),
+        ('missing-predicate-scratch-proof',doc['relocated_control_proof'],lambda v:v.update(changed_unaligned_operand_scratch_owned_and_restored=False)),
+        ('forced-predicate-result',doc['relocated_control_proof'],lambda v:v['unforced_relocated_predicate_cases'][0]['case'].update(native_result=[2,1,0,0,0,0])),
+        ('missing-owned-predicate-write',doc['relocated_control_proof'],lambda v:v['unforced_relocated_predicate_cases'][0]['case']['original_unaligned_operand_read_scratch_writes'].pop()),
+        ('wrong-C200-descriptor',doc['relocated_control_proof'],lambda v:v['relocated_C200_prior_result_cases'][0]['case'].update(source_owned_UI_request_words=[1,0,13,0,0,0,1])),
+        ('missing-second-C200-prior',doc['relocated_control_proof'],lambda v:v['relocated_C200_prior_result_cases'].pop()),
+        ('lost-resource-prior',doc['relocated_control_proof'],lambda v:v['relocated_resource42_prior_result_cases'].pop()),
+        ('wrong-resource-result',doc['relocated_control_proof'],lambda v:v['relocated_resource42_prior_result_cases'][0]['case'].update(native_result=[3,9,0,0,0,0])),
+        ('lost-end-prior',doc['relocated_control_proof'],lambda v:v['relocated_end_prior_result_cases'].pop()),
+        ('lost-first-glyph',doc['native_font_proof'],lambda v:v['cases'][0].update(all_first_final_internal_glyphs_in_order_and_unique_cells=False)),
+        ('wrong-bounds',doc['native_font_proof'],lambda v:v['cases'][0].update(all_visible_origins_zero_and_within_four_rows=False)),
+        ('lost-page',doc['native_font_proof'],lambda v:v['cases'][0].update(one_native_page_consumes_complete_target=False)),
+        ('missing-alignment',doc['native_font_proof'],lambda v:v['cases'][0]['current_native_macro_pipelines'][0]['cases'].pop()),
+        ('false-consumer-negative',doc['native_font_proof'],lambda v:v['negative_controls'][0].update(rejected=False)),
+        ('lost-FE-plane',doc['native_font_proof'],lambda v:v.update(complete_FE_logical_and_physical_planes=0)),
+        ('wrong-name',doc['source_nameplate_consumer_proof'],lambda v:v['native_six_consumer_cases']['rows'][0].update(text='Grandpa')),
+        ('wrong-progressive-role',doc['source_nameplate_consumer_proof'],lambda v:v['progressive_nameplate_values'].update({'156':'Retainer'})),
+        ('wrong-full-catalogue-role',doc['source_nameplate_consumer_proof'],lambda v:v['full_catalogue_values'].update({'156':'Sailor'})),
+        ('lost-Julio-owned-scratch',doc['source_nameplate_consumer_proof'],lambda v:v['native_six_consumer_cases']['rows'][0].update(original_scratch_rings=[])),
+        ('wrong-original-voice',doc['actor_voice_contract'],lambda v:next(r for r in v['fresh3_actor_names']['rows'] if r['actor_ID']==6).update(original_voice_class=0)),
+        ('missing-stored-case',doc['final_padding_proof'],lambda v:v['final_target_parity_cases'].pop()),
+        ('false-guarded-end',doc['termination_decode_proof'],lambda v:v.update(all2_declared_end_decodes_return_type0_extent4_without_post_payload_read=False)),
+        ('wrong-commodity',doc['actor_terminology_reconciliation'],lambda v:v.update(commodity='Rice')),
+        ('wrong-city',doc['actor_terminology_reconciliation'],lambda v:v['one_source_current_city_alias'].update(text='Amsterdam')),
+        ('wrong-FI-length',doc['actor_terminology_reconciliation'],lambda v:v.update(FI_default_ASCII_bytes=4)),
+        ('invented-title',doc['actor_terminology_reconciliation'],lambda v:v.update(source_supported_English_title='King')),
+        ('unresolved-layout',doc['layout_QA_proof'],lambda v:v['failures'].append({'unresolved':True})),
+        ('unviewed-native-sheet',native_approval,lambda v:v['reviewed_sheets'][0].update(viewed_in_full_current_turn=False)),
+        ('lost-actual-unique-object',actual_proof,lambda v:v.update(unique_actual_display_objects=10)),
+        ('missing-actual-setup',actual_proof,lambda v:v['versions'].pop()),
+        ('wrong-actual-return',actual_proof,lambda v:v['versions'][0].update(return_frames=[9001,9001])),
+        ('wrong-actual-predicate',actual_proof,lambda v:v['versions'][1].update(predicate_result=0)),
+        ('invented-PRNG-inequality',actual_proof,lambda v:v['versions'][0].update(final_PRNG_seeds=[1,2])),
+        ('wrong-timing-disclosure',actual_proof,lambda v:v['versions'][0]['timing_differences'].update(total=1)),
+        ('concealed-state-difference',actual_proof,lambda v:v['versions'][0].update(all_five_native_groups_and_whole1A04_actor_and_captain2_equal=False)),
+        ('unviewed-full-screen',actual_proof,lambda v:v['versions'][1]['viewed_sheets'][-1].update(viewed_after_image_return=False)),
+        ('concealed-setup',doc['representative_proof'],lambda v:v.update(extra_original_B165_recruitment_initializer_is_disclosed_test_setup_not_earned_progress=False)),
+        ('lost-conditional-UI-resource-actual-scope',doc['representative_proof'],lambda v:v.update(source_resource42_and_two_C200_paths_observed_in_conditional_setup=False)),
+    ]
+    for flag in ['rice_ingredient_remains_reported_not_recipe_technical_process_origin_or_narrator_fact',
+        'legendary_liquor_is_Julios_excited_inference_not_certified_identity_award_or_earned_item',
+        'source_now_drink_invitation_and_later_urgent_purchase_are_intentions_not_completed_actions',
+        'no_invented_brotherhood_player_employment_shared_drinking_history_or_new_personal_name',
+        'no_price_amount_measured_serving_venue_recipe_origin_health_effect_intoxication_or_reward_invented',
+        'Sake37_older_UI_fidelity_review_remains_open_separate_from_dialogue',
+        'tentative_Sake_Hangzhou_FE_not_earlier_location_or_earned_fashion']:
+        mutations.append(('lost-source-context-'+flag,doc['actor_terminology_reconciliation'],lambda v,k=flag:v.update({k:False})))
+'''
+
+if __name__=='__main__':
+    assert not ROOT.exists();source=Path('scripts/register_lil_B193_v5477.py');text=source.read_text(encoding='utf-8')
+    a=text.index('    mutations=[');b=text.index('    for label,path,edit in mutations:',a)
+    c=text.index("        description='Complete V5437");e=text.index('        note=',c)
+    changes={text[a:b]:MUTATIONS,text[c:e]:
+        "        description='Complete V5478 plus11 B194 contextual sake-exchange reviews:4 revisions/7 justified retentions. Preserve rice hearsay,causal immediate invitation,Julio stammer/fabled-drink belief,source Admiral FI address,personal urgent purchase intention and prospective Sake/Hangzhou notice. All21 commands,four relative spans,one predicate,resource42,two C200 and end remain. Source540/540 becomes516/514 with exact inverse. Both unforced paths pass in four disclosed content cold boots,including one original recruitment setup;79 holds,230 nontext pairs and24 full screens pass. Registered cumulative build and current startup pending.',\n",
+        'B193':'B194','registration_v5477':'registration_v5530','all-routes-unified-v5478':'all-routes-unified-v5531',
+        'combined_v5437':'combined_v5478','all-routes-unified-v5437':'all-routes-unified-v5478','V5437':'V5478','verification_v5443':'verification_v5528',
+        'reference_approval_v5475':'reference_approval_v5526','loader_v5465':'loader_v5510',
+        "'layout_retention_review_proof'":"'layout_QA_proof'",
+        'native_approval_v5460/all15':'native_approval_v5503/all11',
+        "actual_proof='work/analysis/lil_B193_actual_v5472/actual_all15_progressive_FE_A000_C200_and_single_end.json'":
+        "actual_proof=doc['postscene_native_state_proof']",
+        "deps.update(r['preview'] for r in native['cases']);deps.update(r['path'] for r in visual['paired_full_screen_views'])":
+        "deps.update(r['preview'] for r in native['cases']);deps.update(s['path'] for v in visual['versions'] for s in v['viewed_sheets'])",
+        "len(proof['changed_records'])==15":"len(proof['changed_records'])==11",
+        'build_integrated_release_v5477.tmp':'build_integrated_release_v5530.tmp',
+        'expected_manifest_batches=577':'expected_manifest_batches=578','positive_records=15':'positive_records=11','expected_batches=577':'expected_batches=578',
+    }
+    row=derive(source,'scripts/register_lil_B194_v5530.py',changes)
+    ROOT.mkdir(parents=True);save(ROOT/'prepared_atomic_registration.json',dict(derivation=row,
+        parent_profile='all-routes-unified-v5478',profile='all-routes-unified-v5531',
+        one_FI_four_spans_changed_predicate_alignment_two_UI_resource_mixed_names_two_actual_setups_and_source_negatives=True,
+        no_ROM_registry_or_credit_change=True,full_goal_complete=False))

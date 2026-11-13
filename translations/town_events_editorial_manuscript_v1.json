@@ -1,0 +1,600 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "all17-records-reviewed-and-integrated-across-V750-V754-see-individual-proofs",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "50d143d717689f523478c8dce8909b50ee4c1f7e003efb5ca2a2fc920ea60952",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_730",
+      "message_id": 730,
+      "source_hex": "82b182ea82a982e782cd814182ab82c182c60a257382cc0a82c782ea82a982aa97ac8d7382e882dc82b782e6",
+      "japanese": "これからは、きっと\n%sの\nどれかが流行りますよ",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a200a200a2020202020",
+      "current_text_hex": "4f6e65206f662074686520676f6f647320696e2025732077696c6c20737572656c79206265636f6d6520706f70756c617220736f6f6e2e",
+      "current_English": "One of the goods in %s will surely become popular soon.",
+      "english": "Something in the %s market is sure to catch on soon.{PAD}",
+      "speaker": "Square shopkeeper, original contextual town actor",
+      "context": "Original5FB54 future-trend branch with value below25 and its random choice0 selects730. Original5FC40 reads the selected product category byte, calls C5BA0 and supplies its result to direct portrait730. The exact returnPC205FC48 now selects full names; all five other direct callers and Square caption callers retain compact strings.",
+      "source_meaning": "One unspecified individual good within the supplied category is certain to become popular in the future; the prediction does not apply to all goods in that category.",
+      "localization_note": "Something in the category market is natural merchant advice for an unspecified future hit. Retain certainty and the near-future sense without inventing a product identity. Expand abbreviated category arguments Seasonings, Delicacy, Precious Metals, Jewelry, Medicine and Sundries. Other already complete English category words remain unchanged. The actual menu words and all source substitutions remain exact.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2056
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2107
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V754-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\category_dialogue_v754\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_731",
+      "message_id": 731,
+      "source_hex": "8e8482cd257382aa0a948482ea82e982c68e7682a482f182c582b782af82c782cb82a6",
+      "japanese": "私は%sが\n売れると思うんですけどねえ",
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "8268207468696e6b2025732077696c6c2073656c6c2077656c6c2e",
+      "current_English": "Ｉ think %s will sell well.",
+      "english": "I think %s will sell well.{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Independent trend advice from original5FB54, selected by source trend state and random branch; 730 receives a category name,731/733 a product name;732/734 have no substitutions.",
+      "source_meaning": "The speaker thinks the supplied specific product will sell well.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2100
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2162
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_732",
+      "message_id": 732,
+      "source_hex": "82b182cc97ac8d7382cd82dc82be82dc82be91b182ab82bb82a482c582b782cb82a6",
+      "japanese": "この流行はまだまだ続きそうですねえ",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e202020",
+      "current_English": "Here is some local information.",
+      "english": "This trend looks like it'll last a while yet.{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Independent trend advice from original5FB54, selected by source trend state and random branch; 730 receives a category name,731/733 a product name;732/734 have no substitutions.",
+      "source_meaning": "The current trend appears likely to continue for quite some time yet.",
+      "localization_note": "Restore the continuing-trend observation rather than a generic information placeholder; a while yet retains the ongoing duration.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 18,
+        "offset": 2136
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 18,
+        "offset": 2190
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_733",
+      "message_id": 733,
+      "source_hex": "257382cc0a97ac8d7382e082bb82eb82bb82eb8f4982ed82e982f182c582b582e582a482a982cb82a6",
+      "japanese": "%sの\n流行もそろそろ終わるんでしょうかねえ",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a202020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a202020202020",
+      "current_English": "Here is some local information. %s",
+      "english": "I wonder if the craze for %s is about to die down.{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Independent trend advice from original5FB54, selected by source trend state and random branch; 730 receives a category name,731/733 a product name;732/734 have no substitutions.",
+      "source_meaning": "The speaker wonders if the vogue for the supplied specific product is approaching its end.",
+      "localization_note": "Keep both uncertainty and the approaching end of a trend. Craze for takes either plural or mass product names naturally; preserve the source %s.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 19,
+        "offset": 2172
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 19,
+        "offset": 2226
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_734",
+      "message_id": 734,
+      "source_hex": "97ac8d7382aa82b782bd82ea82e9914f82c90a82b582c182a982e896d782af82c482a882a982c882a282c60a82a082a08141965a82b582a2",
+      "japanese": "流行がすたれる前に\nしっかり儲けておかないと\nああ、忙しい",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a200a2020202020202020202020202020202020202020",
+      "current_text_hex": "8268276420626574746572206d616b6520706c656e7479206f66206d6f6e6579206265666f72652074686973206661642066616465732e204f682c207468657265277320736f206d75636820746f20646f21",
+      "current_English": "Ｉ'd better make plenty of money before this fad fades. Oh, there's so much to do!",
+      "english": "I'd better make plenty of money before this fad fades. Oh, there's so much to do!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Independent trend advice from original5FB54, selected by source trend state and random branch; 730 receives a category name,731/733 a product name;732/734 have no substitutions.",
+      "source_meaning": "The speaker must make a good profit before the trend dies out and exclaims how busy they are.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 20,
+        "offset": 2216
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 20,
+        "offset": 2270
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_735",
+      "message_id": 735,
+      "source_hex": "82a082c882bd82cc82a882a982b082c50a82dd82f182c882cc95618b4382aa8ea182e882dc82b78149",
+      "japanese": "あなたのおかげで\nみんなの病気が治ります！",
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "5468616e6b7320746f20796f752c2065766572796f6e652077696c6c207265636f7665722066726f6d20746865697220696c6c6e65737321",
+      "current_English": "Thanks to you, everyone will recover from their illness!",
+      "english": "Thanks to you, everyone will recover from their illness!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Original5EBC4 relief routine selects735 for medicine,736 for food,737 for other requested shortage categories after a sufficient handover.",
+      "source_meaning": "The recipient thanks the player: because of the player, everyone will recover from illness.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 20,
+        "offset": 2272
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 20,
+        "offset": 2352
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_736",
+      "message_id": 736,
+      "source_hex": "82b182ea82c50a82dd82f182c889ec82a68e8082c982b982b882c982b782dd82dc82b78149",
+      "japanese": "これで\nみんな餓え死にせずにすみます！",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a2020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a2020202020",
+      "current_English": "Here is some local information.",
+      "english": "With this, no one will have to starve to death!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Original5EBC4 relief routine selects735 for medicine,736 for food,737 for other requested shortage categories after a sufficient handover.",
+      "source_meaning": "Because of this aid, everyone will avoid starving to death.",
+      "localization_note": "Restore explicit prevention of death from starvation, not merely a vague improvement in food supply.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 21,
+        "offset": 2316
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 21,
+        "offset": 2411
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_737",
+      "message_id": 737,
+      "source_hex": "82b182ea82c582e082a48141956990d882ea82c9945982dc82b382ea82e982b182c682cd0a82c882a282c582b582e582a48149",
+      "japanese": "これでもう、品切れに悩まされることは\nないでしょう！",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a20202020202020202020202020202020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a20202020202020202020202020202020202020",
+      "current_English": "Here is some local information.",
+      "english": "We shouldn't have to worry about running out of stock anymore!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Original5EBC4 relief routine selects735 for medicine,736 for food,737 for other requested shortage categories after a sufficient handover.",
+      "source_meaning": "The speaker expects no further trouble from running out of stock.",
+      "localization_note": "Restore expected freedom from stock shortages; should preserves the source expectation rather than an unconditional mechanical guarantee.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 22,
+        "offset": 2356
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 22,
+        "offset": 2451
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_738",
+      "message_id": 738,
+      "source_hex": "82c782a482e082a082e882aa82c682e681490a82b382c4814182b382c182bb82ad8e648e9682c90a82a982a982e982c682b582e682a482a98149",
+      "japanese": "どうもありがとよ！\nさて、さっそく仕事に\nかかるとしようか！",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a202020202020202020202020202020202020202020202020",
+      "current_English": "Here is some local information.",
+      "english": "Thanks a lot! Time to get straight to work!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Traveling promoter:738 arrival acknowledgment at5E4B8;739 Yes/No request at5E620; 740 acceptance at5E634 sets the travel flag;741 refusal at5E658.",
+      "source_meaning": "The speaker thanks the player, then proposes getting straight to work. Source5E4B8 selects this on arrival in a different town with the traveling-promoter flag set.",
+      "localization_note": "Keep grateful, brisk speech. Time to get straight to work avoids inventing additional workers. This is an arrival acknowledgment, not a random shop reply.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 23,
+        "offset": 2408
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 23,
+        "offset": 2503
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_739",
+      "message_id": 739,
+      "source_hex": "82bf82e582c182c6814282bb82b182cc91448fe682e882cc82a082f182bd82c90a978a82dd82aa82a082e9814282c782b182c582e082a282a282a982e70a82d982a982cc8a5882cc8d4c8fea82dc82c50a8e8482f0984182ea82c482a282c182c482e082e782a282bd82a282f182be82aa8163",
+      "japanese": "ちょっと。そこの船乗りのあんたに\n頼みがある。どこでもいいから\nほかの街の広場まで\n私を連れていってもらいたいんだが…",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a200a2020",
+      "current_English": "Here is some local information.",
+      "english": "Hey, sailor! Could you do me a favor and take me to the square in another town? Any town will do...{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Traveling promoter:738 arrival acknowledgment at5E4B8;739 Yes/No request at5E620; 740 acceptance at5E634 sets the travel flag;741 refusal at5E658.",
+      "source_meaning": "The promoter addresses the passing sailor and asks for transport to the square of any other town; the destination is unrestricted except that it is another town.",
+      "localization_note": "Preserve direct address, the favor, the square and any other town. Do not invent a specified destination. This is a Yes/No question and requires its own actual consumer formatting check.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 24,
+        "offset": 2468
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 24,
+        "offset": 2563
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_740",
+      "message_id": 740,
+      "source_hex": "967b939682a982a28148814089b682c9928582e982e681490a82a282b48141905682b582a297ac8d7382cc91a7908182f00a90a28a4582cc8a5882d68149",
+      "japanese": "本当かい？　恩に着るよ！\nいざ、新しい流行の息吹を\n世界の街へ！",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a20202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a200a20202020202020202020202020202020202020202020202020202020",
+      "current_English": "Here is some local information.",
+      "english": "Really? I owe you one! Let's bring a fresh wave of fashion to towns all over the world!{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Traveling promoter:738 arrival acknowledgment at5E4B8;739 Yes/No request at5E620; 740 acceptance at5E634 sets the travel flag;741 refusal at5E658.",
+      "source_meaning": "The promoter is delighted at acceptance, says they owe the player, and rallies to bring a breath of new fashion to towns around the world.",
+      "localization_note": "A fresh wave of fashion localizes the breath-of-new-trends metaphor while keeping the enthusiastic worldwide ambition; do not invent a proven economic effect.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 25,
+        "offset": 2584
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 25,
+        "offset": 2602
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_741",
+      "message_id": 741,
+      "source_hex": "82bb82a482a982a20a96b3979d82f08cbe82c182c482b782dc82c882a982c182bd82cb",
+      "japanese": "そうかい\n無理を言ってすまなかったね",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a202020",
+      "current_text_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e0a202020",
+      "current_English": "Here is some local information.",
+      "english": "I see. I'm sorry to impose on you.{PAD}",
+      "speaker": "Original contextual Square shopkeeper, traveling promoter or local-specialty requester; exact actor getter/caller evidence pending",
+      "context": "Traveling promoter:738 arrival acknowledgment at5E4B8;739 Yes/No request at5E620; 740 acceptance at5E634 sets the travel flag;741 refusal at5E658.",
+      "source_meaning": "The promoter accepts the refusal and apologizes for making an unreasonable request.",
+      "localization_note": "Keep a complete natural apology for the unreasonable favor; impose on you preserves the sense and avoids a short isolated final word.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 26,
+        "offset": 2648
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 26,
+        "offset": 2666
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "reviewed-and-integrated-V750-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_events_v750\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_742",
+      "message_id": 742,
+      "source_hex": "82a082f182bd8149814082bb82ea82f08ff782c182c482ad82ea82c882a282a9814981480a82bb82cc257382aa82a082ea82ce0a257382aa814182b182cc8a5882cc0a93c18e59956982c982c882e982c68e7682a482f182be82aa81630a82c782a482be82a28148",
+      "japanese": "あんた！　それを譲ってくれないか！？\nその%sがあれば\n%sが、この街の\n特産品になると思うんだが…\nどうだい？",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a200a200a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4865792c20776f756c6420796f752067697665206d6520746861742025733f208268207468696e6b20697420636f756c64206d616b652025732061206c6f63616c207370656369616c747920686572652e205768617420646f20796f75207361793f",
+      "current_English": "Hey, would you give me that %s? Ｉ think it could make %s a local specialty here. What do you say?",
+      "english": "Hey! Could I have your %s? I think we could make %s a local specialty here.{PAD}",
+      "speaker": "Local specialty requester, original town actor getter B2CD8",
+      "context": "OriginalBAB64 first filters218 inventory objects against five town stock slots, comparing product+13 with the item index atBAC1C. BAD0C supplies the item name then product name to original Yes/No parent53FCC, message742; acceptance743 and refusal744 follow. Tests bind all25 prerequisite pairs but do not claim earned eligibility or actual inventory transfer.",
+      "source_meaning": "The local asks the player to hand over the first supplied item, believing it could make the second supplied product a local specialty, and asks for a decision.",
+      "localization_note": "Keep the attention call, request for the specific owned item, its role in creating the named local specialty, and the tentative prediction. I think we could preserves the speculation. The Japanese repeats its request with a final dou dai; natural English combines both appeals into Could I have your ...? rather than repeating the question. Your works with singular, plural and mass names; no it/them agreement is guessed. Here retains the town context. One logical paragraph; wrap only after both native substitutions.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2684
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2702
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V752-see-release-manuscript-and-proof",
+      "native_context_evidence": "work\\analysis\\town_responses_v751\\native_context.json",
+      "integrated_evidence": "work\\analysis\\specialty_question_v752\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_743",
+      "message_id": 743,
+      "source_hex": "967b939682a982a281490a82a082f182bd814182a282a2906c82be82cb81428dc58d8282be82e6",
+      "japanese": "本当かい！\nあんた、いい人だね。最高だよ",
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "5265616c6c793f20596f75277265206120676f6f6420706572736f6e2e20596f7527726520746865206265737421",
+      "current_English": "Really? You're a good person. You're the best!",
+      "english": "Really? You're so kind! You're the best!{PAD}",
+      "speaker": "Original Square local-specialty requester selected by town actor getter",
+      "context": "OriginalBAD0C-BADB4 fragment obtains item/product names, asks742 through Yes/No parent53FCC, and selects743 on acceptance or744 on refusal. Native supplied-result fragments verify this sequence and product-flag change; full inventory eligibility/transfer is separate.",
+      "source_meaning": "The local joyfully confirms acceptance and praises the player as a good person and the best.",
+      "localization_note": "Preserve the enthusiastic thanks and praise; so kind naturally conveys ii hito in response to accepting a gift, without adding a reward or relationship.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2788
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 27,
+        "offset": 2800
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V751-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_responses_v751\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_744",
+      "message_id": 744,
+      "source_hex": "82bb82a482a982a20a82a082f182bd81418350836082c882f182be82cb",
+      "japanese": "そうかい\nあんた、ケチなんだね",
+      "canonical_source_hex": "202049207365652e20486f77207374696e67792e202020202020202020",
+      "current_text_hex": "202049207365652e20486f77207374696e67792e202020202020202020",
+      "current_English": "I see. How stingy.",
+      "english": "Oh, I see. You're a real miser.{PAD}",
+      "speaker": "Original Square local-specialty requester selected by town actor getter",
+      "context": "OriginalBAD0C-BADB4 fragment obtains item/product names, asks742 through Yes/No parent53FCC, and selects743 on acceptance or744 on refusal. Native supplied-result fragments verify this sequence and product-flag change; full inventory eligibility/transfer is separate.",
+      "source_meaning": "The local accepts the refusal and bluntly calls the player stingy.",
+      "localization_note": "Preserve the disappointed stinginess insult in natural spoken English without inventing a threat or penalty.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 28,
+        "offset": 2828
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 28,
+        "offset": 2847
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V751-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_responses_v751\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_745",
+      "message_id": 745,
+      "source_hex": "82dc82be91bc82c9977082aa82a082e982cc82a982a28148",
+      "japanese": "まだ他に用があるのかい？",
+      "canonical_source_hex": "416e797468696e6720656c73653f20202020202020202020",
+      "current_text_hex": "416e797468696e6720656c73653f20202020202020202020",
+      "current_English": "Anything else?",
+      "english": "Anything else?{PAD}",
+      "speaker": "Original Square shopkeeper",
+      "context": "Source BA3D4/BA428 forwards745 from the shop continuation loop; BC244/BC248 and BC970/BC978 bind746 to ordinary portrait replies in two original shop flows. Preserve both independent selections in their shared NUL owner.",
+      "source_meaning": "The shopkeeper asks if the player still needs anything else.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2860
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2879
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V751-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_responses_v751\\proof.json"
+    },
+    {
+      "id": "COMMON_MESSAGE_746",
+      "message_id": 746,
+      "source_hex": "816397e282e282a982b582a982a2",
+      "japanese": "…冷やかしかい",
+      "canonical_source_hex": "4a7573742062726f7773696e673f",
+      "current_text_hex": "4a7573742062726f7773696e673f",
+      "current_English": "Just browsing?",
+      "english": "Just browsing?{PAD}",
+      "speaker": "Original Square shopkeeper",
+      "context": "Source BA3D4/BA428 forwards745 from the shop continuation loop; BC244/BC248 and BC970/BC978 bind746 to ordinary portrait replies in two original shop flows. Preserve both independent selections in their shared NUL owner.",
+      "source_meaning": "The shopkeeper asks, with a slight pause, whether the player is merely browsing.",
+      "localization_note": "Retain the already natural wording and its complete source meaning; normalize legacy full-width Latin I through the consumer-specific safe literal path where present.",
+      "decision": "retain-wording",
+      "source_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2884
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 29,
+        "offset": 2903
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "reviewed-and-integrated-V751-see-release-manuscript-and-proof",
+      "integrated_evidence": "work\\analysis\\town_responses_v751\\proof.json"
+    }
+  ]
+}

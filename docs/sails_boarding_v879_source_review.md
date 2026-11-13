@@ -1,0 +1,3 @@
+# V879: sail handling and boarding source review
+
+V879 source/prose-reviews24 SailHandling0/Boarding7 comments1523-1546:22 proposed revisions and2 retentions. All50 original selections cover eight NPC voices and four genuine captains per duty. Drafts restore fair/head winds,both sail types,Half Open setting,wind-reading competence,the difficulty of a dead calm despite skill,regular training,personal reactions and command from the front in boarding combat. Native layout,registered integration and actual scenes remain pending. V876 remains current;808 complete,835 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;separate graphics/all18 plaques and later older-record re-audit stay open;full goal active.

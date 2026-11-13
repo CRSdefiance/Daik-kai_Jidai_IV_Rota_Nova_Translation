@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v95"]["batches"]);b.append("translations/maria_deep_route_v96.json");p["profiles"]["maria-deep-route-v96"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V95 with 69 translations and three preserved controls in SC3 blocks 127-129: Al and Angelo recruitment and Angelo's Bianca resolution."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v96: {len(b)} batches")

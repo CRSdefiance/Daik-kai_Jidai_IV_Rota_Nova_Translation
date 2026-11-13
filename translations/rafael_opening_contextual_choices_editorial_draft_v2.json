@@ -1,0 +1,157 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "ae03032450eef18b880e05ae4c0d740eeb1d878d0cee48cc180c52714a9860e8",
+  "editorial_clean_source_file_sha256": "61dc09cd5ac29002b7c497bc17dfeb7cc92d2a5dcbcba7b80791a8fb580b9f7f",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "raphael-story-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM": "work/clean.nds",
+  "current_ROM": "out/all_routes_combined_v1986_candidate.nds",
+  "clean_block_sha256": "3f5546ba9dfc9d5c1aa6f44f26e1c250fe73ed6fc8f8a018b64e80d2ad2f5d7a",
+  "current_block_sha256": "da3b1abf8e644c355fa1653534fc90c0728aca3f3ec49958c21d11d3ac6047cb",
+  "raw_source_packet": "work\\analysis\\editorial_source_census_v1992\\SC0_block044_raw_source.json",
+  "raw_source_packet_sha256": "d7d25d1751d0fa89f8606c28ed896fb0dcb1d25023f31277d61d1dfdcbe984b8",
+  "draft_only_not_registered_or_formatting_approved": false,
+  "full_goal_complete": false,
+  "no_new_gameplay_display_or_editorial_completion_credit": true,
+  "required_next_gates": [
+    "Resolve exact current B44 span at6604 and target mapping from native commands.",
+    "Compile without prose layout hacks; relocate only with independently reviewed typed references.",
+    "Validate controls, substitutions, complete native glyph planes, wrapping, bounds and pagination.",
+    "Representative story/choice transition tests for distinct risks, then registered cumulative release and exact clean-input patch."
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B44_R0454",
+      "file_path": "/data/SC0.DK4",
+      "block": 44,
+      "source_reference": {
+        "offset": 6172,
+        "bytes": 8,
+        "segment_index": 454
+      },
+      "current_reference": {
+        "offset": 6416,
+        "bytes": 8,
+        "segment_index": 454
+      },
+      "source_hex": "8bb382ed82eb82a4",
+      "current_text_hex": "41736b2068696d2e",
+      "source_Japanese": "教わろう",
+      "current_stored_English": "Ask him.",
+      "record_index": 454,
+      "source_record_index": 454,
+      "speaker": "Choice",
+      "english": "Ask him.{PAD}",
+      "source_meaning": "Choose to learn voyage preparations from Julio.",
+      "context": "Complete Lisbon opening reviewed, including the question and both preparation outcomes.",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The preceding question names Julio; Ask him is unambiguous, natural and preserves the original eight-byte slot without invisible padding.",
+      "localization_note": "The preceding question names Julio; Ask him is unambiguous, natural and preserves the original eight-byte slot without invisible padding.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B44_R0456",
+      "file_path": "/data/SC0.DK4",
+      "block": 44,
+      "source_reference": {
+        "offset": 6182,
+        "bytes": 14,
+        "segment_index": 456
+      },
+      "current_reference": {
+        "offset": 6426,
+        "bytes": 14,
+        "segment_index": 456
+      },
+      "source_hex": "8ea995aa82c582c582ab82e982e6",
+      "current_text_hex": "5072657061726520616c6f6e652e",
+      "source_Japanese": "自分でできるよ",
+      "current_stored_English": "Prepare alone.",
+      "record_index": 456,
+      "source_record_index": 456,
+      "speaker": "Choice",
+      "english": "Prepare alone.{PAD}",
+      "source_meaning": "Choose to prepare for departure independently.",
+      "context": "Complete Lisbon opening reviewed, including the question and both preparation outcomes.",
+      "editorial_decision": "retain-wording",
+      "fresh_retained_wording_justification": "The phrase directly answers the preceding question and preserves the fourteen-byte slot; alone means without tutorial guidance, not without the crew.",
+      "localization_note": "The phrase directly answers the preceding question and preserves the fourteen-byte slot; alone means without tutorial guidance, not without the crew.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "source_and_current_native_choice_getters": {
+    "clean": {
+      "command_offset": 6166,
+      "native_label_count": 2,
+      "labels": [
+        {
+          "option_index": 0,
+          "relative_offset": 6,
+          "offset": 6172,
+          "bytes": 8,
+          "hex": "8bb382ed82eb82a4",
+          "CP932": "教わろう"
+        },
+        {
+          "option_index": 1,
+          "relative_offset": 16,
+          "offset": 6182,
+          "bytes": 14,
+          "hex": "8ea995aa82c582c582ab82e982e6",
+          "CP932": "自分でできるよ"
+        }
+      ],
+      "native_getters_ABI_4MiB_owner_input_and_guard_checks_pass": true
+    },
+    "current": {
+      "command_offset": 6410,
+      "native_label_count": 2,
+      "labels": [
+        {
+          "option_index": 0,
+          "relative_offset": 6,
+          "offset": 6416,
+          "bytes": 8,
+          "hex": "41736b2068696d2e",
+          "CP932": "Ask him."
+        },
+        {
+          "option_index": 1,
+          "relative_offset": 16,
+          "offset": 6426,
+          "bytes": 14,
+          "hex": "5072657061726520616c6f6e652e",
+          "CP932": "Prepare alone."
+        }
+      ],
+      "native_getters_ABI_4MiB_owner_input_and_guard_checks_pass": true
+    }
+  },
+  "formatting_review_pending": false,
+  "native_choice_proof": "work\\analysis\\rafael_opening_choices_v2004\\typed_choice_VM_geometry_and_complete_native_pixels.json",
+  "actual_complete_choice_labels_proof": "work\\analysis\\rafael_independent_actual_v2007e\\independent_preparation_and_normal_Lisbon_return.json",
+  "supersedes": "translations\\rafael_opening_contextual_choices_editorial_draft_v1.json",
+  "superseded_manuscript_sha256": "c532b88ac1f40dbbea63157da0d27602f84c54e06df54ab8c2d27261fcd101c3"
+}

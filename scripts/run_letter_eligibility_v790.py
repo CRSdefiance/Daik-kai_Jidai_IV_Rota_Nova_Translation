@@ -1,0 +1,28 @@
+"""Single source-qualified fixture adapter to the unmodified capture harness."""
+
+import sys
+from pathlib import Path
+
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+
+
+def main():
+    harness=Path('scripts/headless_desmume_v193.py')
+    assert sha(harness.read_bytes())=='d5bcc9a11b5602bfb44d54e75b02a7a7a0165c9ee819a07cd0cbdac2130b8c6e'
+    source=harness.read_text(encoding='utf-8')
+    marker='from scripts.native_condition_fixture_v520 import set_condition'
+    assert source.count(marker)==1
+    effective=source.replace(marker,'from scripts.native_letter_eligibility_v790 import set_condition')
+    exec(compile(effective,str(harness),'exec'),{'__name__':'__main__','__file__':str(harness.resolve())})
+    assert harness.read_text(encoding='utf-8')==source
+    path=Path(sys.argv[sys.argv.index('--out')+1])/'capture_report.json'
+    report=read(path)
+    report['letter_eligibility_adapter']={'single_import_replacement':True,'original_harness_sha256':sha(harness.read_bytes()),
+        'adapter_sha256':sha(Path(__file__).read_bytes()),'effective_program_sha256':sha(effective.encode()),
+        'fixture_sha256':sha(Path('scripts/native_letter_eligibility_v790.py').read_bytes()),
+        'no_dialogue_menu_or_outcome_logic_replacement':True}
+    save(path,report)
+
+
+if __name__=='__main__':main()

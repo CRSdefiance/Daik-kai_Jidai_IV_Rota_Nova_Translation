@@ -1,0 +1,10 @@
+"""Preflight source-locked next-exchange bindings; execution requires verified V6910."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import checked_text,derive
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    root=Path('work/analysis/lil_B220_source_tools_v6920');assert not root.exists()
+    jobs=[('scripts/bind_current_V6865_native_v6874.py','scripts/bind_current_V6910_native_v6920.py',{'V6865':'V6910','v6874':'v6920','verification_v6871':'verification_v6916','lil_B217_release_v6866':'lil_B218_release_v6911','lil_B217_runs_v6868':'lil_B218_runs_v6913','current_V6821_native_v6830':'current_V6865_native_v6874','B218':'B220'}),
+    ('scripts/map_lil_B218_source_v6875.py','scripts/map_lil_B220_source_v6921.py',{'B218':'B220','v6875':'v6921','verification_v6871':'verification_v6916','v6873':'v6919','all13_clean_Ares_spear_legend_practical_questions_glosses_before_old_English':'all17_clean_empress_gown_flirtation_and_jewelry_glosses_before_old_English','current_V6865_native_v6874':'current_V6910_native_v6920','thirteen_clean_current_Ares_legend_exchange_source_references':'seventeen_clean_current_empress_gown_exchange_source_references','all13':'all17','all thirteen':'all seventeen','==6573':'==6586','blocks[218]':'blocks[220]','block=218':'block=220','len(old)==15':'len(old)==20','len(spoken)==len(translated)==13':'len(spoken)==len(translated)==17','len(regions)==13':'len(regions)==17','1088':'1280','physical_speeches=13':'physical_speeches=17','total_editorial_objects=13':'total_editorial_objects=17','ordinary_source_speeches=13':'ordinary_source_speeches=17','source_static_actor_selectors=[2,21]':'source_static_actor_selectors=[26,199]','objects=13,commands=15':'objects=17,commands=20'})]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    root.mkdir(parents=True);save(root/'source_locked_derivations.json',[derive(a,b,c) for a,b,c in jobs]);print('Prepared strict V6910 binding and B220 source/current mapping. Requires completed release/startup/handoff;zero credit.')

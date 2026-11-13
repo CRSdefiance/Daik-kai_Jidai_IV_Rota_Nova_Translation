@@ -1,0 +1,39 @@
+{
+  "format": "dk4-swordsmanship-status-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "source_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "SWORDSMANSHIP_HP_STATUS",
+      "field": 58128,
+      "source_pointer": 34801852,
+      "source_hex": "8c9593ac8f702534648267826f81402534642573",
+      "japanese": "剣闘術%4dＨＰ　%4d%s",
+      "english": "Fencing %d HP %d %s",
+      "target_pointer": 37258976,
+      "speaker": "Duel statistics interface",
+      "compiled_template_hex": "46656e63696e672025336420485020253564202020202573",
+      "formatter": "duel-stat-bitmap-columns-v1",
+      "source_meaning": "Sword fighting skill, current hit points, and the selected crew member's health state.",
+      "context": "Actual two-actor duel UI: 0200D54C selects parent+3C+index*A4 and actor parent+34+index*4, then calls 0200E290. The bitmap is cropped into three parent regions by 0200E1B0/020D470C/020CFC14. Effective skill caps at 500; HP is an unsigned halfword.",
+      "localization_note": "Fencing is a natural complete English term for sword fighting skill. Both numeric values and complete health-state suffix are retained. The formatter generates two twelve-cell columns with three/five digit widths, then a complete state. Extend only the native text view and third crop, placing the complete suffix inside the existing 104-pixel parent slot. A tail-call helper preserves the variadic stack argument.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "status": "reviewed-natural-prose-and-native-parent-crops-physical-gameplay-pending"
+}

@@ -1,0 +1,4 @@
+"""Bind the actual no-pause B160 proof schema, preserving every earlier audit attempt."""
+from pathlib import Path
+if __name__=='__main__':
+    draft=Path('scripts/verify_editorial_handoff_v3886c.py');source=draft.read_text(encoding='utf-8');prefix,tail=source.rsplit(';exec(compile(t',1);assert tail;ns=dict(__name__='__main__',__file__=__file__);exec(compile(prefix,'preserved-audit-schema-transform-only','exec'),ns);t=ns['t'];old="effects['source_pause_resume_pairs']==[]";assert t.count(old)==1;t=t.replace(old,"effects['no_source2000_pause_object'] and not any(c['word']==0x2000 for b in read(doc['source_context'])['blocks'] for c in b['all_current_native_commands'])");needle='producer_sha256=sha(PRODUCER.read_bytes())';t=t.replace(needle,needle+',preserved_schema_audit_draft='+repr(str(draft))+',preserved_schema_audit_draft_sha256=sha(Path('+repr(str(draft))+').read_bytes())');exec(compile(t,__file__,'exec'),ns)

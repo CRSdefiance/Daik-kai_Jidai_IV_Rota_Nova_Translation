@@ -1,0 +1,7 @@
+"""Repair a synthetic-code provenance path; preserve failed planes and the frozen runner."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B212_font_receipt_tools_v6606c')
+if __name__=='__main__':
+    assert not ROOT.exists();proof=derive('scripts/verify_lil_B212_research_fonts_v6606b.py','scripts/verify_lil_B212_research_fonts_v6606c.py',{'lil_B212_research_fonts_v6606b':'lil_B212_research_fonts_v6606c','Path(pages.__code__.co_filename)':'Path(old_pages.__code__.co_filename)','    assert len(cases)==9 and len(pictures)==9 and alignments==72 and not ctx.machines':"        save(ROOT/(record['id']+'_individual_native_proof.json'),cases[-1])\n    assert len(cases)==9 and len(pictures)==9 and alignments==72 and not ctx.machines"});ROOT.mkdir(parents=True);save(ROOT/'real_source_provenance_and_durable_individual_proofs.json',dict(proof=proof,failed_runner_preserved='scripts/verify_lil_B212_research_fonts_v6606b.py',reason='All nine native loops completed but final receipt attempted to read the dynamic compiler label as a filesystem path. Bind the real old_pages source plus the saved adapter, and persist each individual result before the final receipt.',earlier_planes_sheets_and_failed_producer_preserved=True,no_font_native_guard_geometry_or_prose_change=True,repeat_needed_for_complete_durable72_case_evidence=True,new_ROMs=0,new_review_credit=0,full_goal_complete=False))

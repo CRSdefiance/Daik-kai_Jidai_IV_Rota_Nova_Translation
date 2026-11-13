@@ -2,12 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from historical_fixture_support import historical_rom
+
 from scripts.audit_hodram_route_completion import audit
 
 
 def test_hodram_v32_completion_audit_proves_route_scope() -> None:
     report = audit(
-        Path("out/hodram_deep_route_v32_candidate.nds"),
+        historical_rom("hodram_deep_route_v32_candidate"),
         Path("out/raphael_natural_v2_accepted_base.nds"),
         Path("out/hodram_deep_route_v32_candidate.manifest.json"),
         Path("out/hodram_deep_route_v32_layout_audit.json"),

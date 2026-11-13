@@ -1,0 +1,7 @@
+# Figurehead, navigation and gift advice registered
+
+The 34 figurehead, navigation and gift advice replies are registered. The ledger now credits 26,899 reviews. COMMON 3147–3180 covers all ten figureheads, three navigation tools and 21 regional gifts. The original Gallery, compact item screen and regular Items continue selecting both advisers and the correct message by item index. [Registered review](../releases/all_routes_editorial_20261111_figurehead_navigation_gift_advice_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_figurehead_navigation_gift_advice_candidate/README.md)
+
+Only COMMON block 35 and the guarded portrait selector changed. All other selected COMMON spans and the 123,264-byte copied allocation remain exact. The replay verified the full Hans nameplate and complete one-, two- and three-row replies. The equipped Sextant retained the Remove control when Advice closed. Both other item screens and the original Lisbon view returned exactly.
+
+Continue at COMMON 3181 with Proof and map advice. Compare regional Proofs, their completed maps, ruin maps and unfinished map components in related groups. The reviewed Help topic 4 uses Proof of Conquest. Older story variants and remaining player-facing text and speaker labels stay in scope. Graphics artwork and the later older-record technical re-audit remain separate.

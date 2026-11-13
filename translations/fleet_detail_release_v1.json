@@ -1,0 +1,205 @@
+{
+  "format": "dk4-fleet-detail-release-v1",
+  "source_arm9_sha256": "29250bbc5727fc6a594b9d9ef5fb40f09cf2b911cad29154cc21faf4b8da6d2c",
+  "target_arm9_sha256": "32b624e10bd5c026ea985ee30a86a863039eb1c5d07e832ac3c7b0eac0bc93f7",
+  "source_records": [
+    {
+      "field": 229000,
+      "offset": 1274124,
+      "Japanese": "レベル%4d",
+      "English": "Level %4d",
+      "source_hex": "838c8378838b25346400",
+      "replacement_hex": "4c6576656c2025346400",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 252172,
+      "offset": 1276164,
+      "Japanese": "レベル %4d",
+      "English": "Level %4d",
+      "source_hex": "838c8378838b2025346400",
+      "replacement_hex": "4c6576656c202534640000",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 640016,
+      "offset": 1375144,
+      "Japanese": "レベル%4d",
+      "English": "Level %4d",
+      "source_hex": "838c8378838b25346400",
+      "replacement_hex": "4c6576656c2025346400",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 645120,
+      "offset": 1375180,
+      "Japanese": "レベル",
+      "English": "Level",
+      "source_hex": "838c8378838b00",
+      "replacement_hex": "4c6576656c0000",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 645116,
+      "offset": 1375172,
+      "Japanese": "担　当",
+      "English": "Role",
+      "source_hex": "92538140939600",
+      "replacement_hex": "526f6c65000000",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 645124,
+      "offset": 1375188,
+      "Japanese": "キャンセル",
+      "English": "Cancel",
+      "source_hex": "834c83838393835a838b00",
+      "replacement_hex": "43616e63656c0000000000",
+      "native_arguments_preserved": true
+    },
+    {
+      "field": 252168,
+      "offset": 1276148,
+      "Japanese": "%s総帥（%s）",
+      "English": "Leader (%s)",
+      "pointer": 33540892,
+      "source_hex": "2573918d908381692573816a00",
+      "faction_name_preserved_in_existing_title_bar": true,
+      "profession_getter_preserved": true,
+      "localization_note": "Faction title already displays the organization name. Leader (profession) beneath it retains both fields once and avoids clipping a duplicated name; individual fleet Admiral remains distinct."
+    },
+    {
+      "field": 1135196,
+      "offset": 1274204,
+      "Japanese": "征服者",
+      "English": "Conqueror",
+      "pointer": 33540904,
+      "source_hex": "90aa959e8ed200",
+      "profession_type_metadata_and_getter_unchanged": true
+    }
+  ],
+  "owned_main_ranges": [
+    [
+      1274124,
+      1274134
+    ],
+    [
+      1276164,
+      1276175
+    ],
+    [
+      1375144,
+      1375154
+    ],
+    [
+      1375180,
+      1375187
+    ],
+    [
+      1375172,
+      1375179
+    ],
+    [
+      1375188,
+      1375199
+    ],
+    [
+      252168,
+      252172
+    ],
+    [
+      1135196,
+      1135200
+    ],
+    [
+      251128,
+      251132
+    ],
+    [
+      644960,
+      644964
+    ],
+    [
+      1347260,
+      1347264
+    ]
+  ],
+  "main_patches": [
+    {
+      "offset": 1274124,
+      "expected_hex": "838c8378838b25346400",
+      "replacement_hex": "4c6576656c2025346400"
+    },
+    {
+      "offset": 1276164,
+      "expected_hex": "838c8378838b2025346400",
+      "replacement_hex": "4c6576656c202534640000"
+    },
+    {
+      "offset": 1375144,
+      "expected_hex": "838c8378838b25346400",
+      "replacement_hex": "4c6576656c2025346400"
+    },
+    {
+      "offset": 1375180,
+      "expected_hex": "838c8378838b00",
+      "replacement_hex": "4c6576656c0000"
+    },
+    {
+      "offset": 1375172,
+      "expected_hex": "92538140939600",
+      "replacement_hex": "526f6c65000000"
+    },
+    {
+      "offset": 1375188,
+      "expected_hex": "834c83838393835a838b00",
+      "replacement_hex": "43616e63656c0000000000"
+    },
+    {
+      "offset": 252168,
+      "expected_hex": "f4781302",
+      "replacement_hex": "1ccbff01"
+    },
+    {
+      "offset": 1135196,
+      "expected_hex": "5c711302",
+      "replacement_hex": "28cbff01"
+    },
+    {
+      "offset": 251128,
+      "expected_hex": "0420a0e1",
+      "replacement_hex": "0320a0e1"
+    },
+    {
+      "offset": 644960,
+      "expected_hex": "a7cf00eb",
+      "replacement_hex": "267dfdeb"
+    },
+    {
+      "offset": 1347260,
+      "expected_hex": "2cf00302",
+      "replacement_hex": "00cdff01"
+    }
+  ],
+  "original_autoload_length": 2844,
+  "autoload_suffix_hex": "4c6561646572202825732900436f6e717565726f72000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f0412de910d04de20040a0e10150a0e10260a0e10370a0e128809de503c0a0e100005ce32100000a0020a0e30100dce4000050e30700000a200050e31b00003a7e0050e31900008a012082e2070052e31600008af4ffffea030096e804008de508108de50100d7e4000050e30c00000a0c00cde50000a0e30d00cde500808de50400a0e10510a0e104208de20c308de25b5203eb04009de5050080e204008de5efffffea0000a0e310d08de2f081bde80400a0e10510a0e10620a0e10730a0e110d08de2f041bde84d5203ea000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007e402de904d04de200600fe10040a0e1420084e26c109fe5110000eb000050e30b00000a200084e25c109fe50c0000eb000050e30600000a310084e24c109fe5070000eb000050e30100000a40009fe5000000ea420084e206f028e104d08de27e80bde80120d0e40130d1e4030052e10000a0131eff2f11000053e3f8ffff1a0100a0e31eff2fe100ceff0108ceff010fceff01d4c3150200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004a6f616368696d00486f6472616d00426572677374726f6d00000000",
+  "dependencies_sha256": {
+    "work/analysis/fleet_detail_v370/native_proof.json": "7d0ed3ac12be9c916953798c190007f326eb0e1233ca404493ca61d26cabe447",
+    "work/analysis/fleet_detail_v374/shim_proof.json": "7bcdc1cbb47dc1ed8852b6646c409fc001b1b2dfcab15e43f16673b2bc895f67",
+    "work/analysis/fleet_detail_v374/live_proof.json": "4c3e6d63539d014ba8c030902f2eac57357388dcd50a8005a37d05ee4c84a1e3",
+    "work/analysis/fleet_detail_v374/profession_callers.json": "b3889bd61b6292911f865d8de37125072d191ee56a12d351387e9d1c287dbcc8"
+  },
+  "changed_records": [
+    "FLEET_LEVEL_FMT",
+    "FACTION_LEVEL_FMT",
+    "CREW_LEVEL_FMT",
+    "ROSTER_SORT_LEVEL",
+    "ROSTER_SORT_ROLE",
+    "ROSTER_SORT_CANCEL",
+    "FACTION_LEADER_PROFESSION",
+    "FACTION_CONQUEROR_PROFESSION",
+    "ROSTER_SORT_COMPLETE_GLYPHS",
+    "OLD_DEFAULT_HODRAM_MIDDLE_JOAKIM"
+  ],
+  "all18_plaques_fully_completed": false
+}

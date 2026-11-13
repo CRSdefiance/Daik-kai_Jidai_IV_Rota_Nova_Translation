@@ -1,0 +1,119 @@
+"""Seal B173 complete dialogue and unforced conditional-suffix reference approval."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.dialogue.review import validate_natural_dialogue_batch
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.prepare_lil_B173_research_v4430 import ROM,PARENT,PLAN
+from scripts.verify_village_wrap_v608 import read,save
+
+ROOT=Path('work/analysis/lil_B173_reference_approval_v4440')
+INPUT=Path('translations/lil_B173_editorial_manuscript_v3.json')
+OUTPUT=Path('translations/lil_B173_editorial_manuscript_v4.json')
+MAP=Path('translations/lil_B173_editorial_relocation_map_v1.json')
+CENSUS=Path('work/analysis/lil_B173_reference_census_v4433/all23_commands_four_relative_sites_and_shipped_entry_census.json')
+CONTROL=Path('work/analysis/lil_B173_relocated_controls_v4435/all11_dispatches_predicate_pair_four_relative_sites_two_A000s_and8_leaves.json')
+STORED=Path('work/analysis/lil_B173_stored_v4429/all11_final_stored_targets44_macro_cases_and_complete_planes.json')
+ENDS=Path('work/analysis/lil_B173_ends_v4434/two_declared_end_decodes_and_four_relative_sites.json')
+ACTUAL=Path('work/analysis/lil_B173_actual_v4438b/actual_all11_unforced_predicate_paths_effects_and_end.json')
+FIXTURE=Path('work/analysis/lil_B173_display_fixture_v4436/complete_effect_preserving_B22_fixtures.json')
+VISUAL=Path('work/analysis/lil_B173_actual_review_v4439/all2_actual_sheets_unforced_suffix_paired_return_and_final_state.json')
+
+if __name__=='__main__':
+    assert not any(p.exists() for p in [ROOT,OUTPUT,MAP])
+    doc=deepcopy(read(INPUT))
+    plan,census,control,stored,ends,actual,fixture,visual=map(read,[PLAN,CENSUS,CONTROL,STORED,ENDS,ACTUAL,FIXTURE,VISUAL])
+    parent=NdsImage.open(PARENT)
+    assert sha(PARENT.read_bytes())==doc['current_ROM_sha256']==plan['candidate_sha256']
+    assert sha(ROM.read_bytes())==census['research_ROM_sha256']==control['research_ROM_sha256']==ends['research_ROM_sha256']
+    assert sha(INPUT.read_bytes())==plan['manuscript_sha256']==stored['manuscript_sha256']==control['manuscript_sha256']
+    assert census['all23_clean_current_target_commands_and_four_relative_sites_reexecuted']
+    assert census['original_block_index_loader_and_parent_contract_verified_for336_blocks_two_modes']
+    assert len(control['relocated_dispatch_cases'])==11 and len(control['relocated_predicate_pairs'])==1
+    assert len(control['all8_source_current_target_nonrelative_nonspeech_leaves'])==8 and not control['relocated_C200_pairs']
+    assert control['original_predicate_owned_operand_scratch_and_all_unowned4MiB_preserved_at_relocated_cursor']
+    assert len(control['source_four_relative_sites20_relocated_operand_cases_and_both_boolean_suffix_paths'])==2
+    assert len(stored['final_target_parity_cases'])==11 and stored['current_final_stored_macro_alignment_cases']==44
+    assert (stored['new_parity_macro_alignment_cases'],stored['exact_byte_identical_reused_macro_alignment_cases'])==(24,20)
+    assert stored['all11_final_targets_complete_native_planes_equal_reviewed_planes']
+    assert len(ends['cases'])==2 and ends['all2_declared_end_decodes_return_type0_extent4_without_post_payload_read']
+    assert ends['B173_single_end_finishes_declared_logical_end']
+    assert actual['fresh_actual_unique_speech_panels']==actual['complete_matching_observations']==11
+    assert not actual['failures'] and not actual['paired_region_differences'] and not actual['offline_only_display_IDs']
+    assert actual['frames_per_boot']==9001 and actual['actual_new_cold_boot_runs']==2
+    assert [v['fixture_exit_frame'] for v in actual['versions']]==[5496,5493]
+    assert all(v['unforced_predicate_result']==1 and len(v['selected_B22_command_pairs'])==31 for v in actual['versions'])
+    assert visual['representative_actual_coverage_sufficient_for_this_distinct_display_scope'] and visual['no_open_translation_specific_display_or_control_finding']
+    assert len(visual['all2_actual_sheets_viewed'])==2 and len(visual['paired_full_screen_views'])==6
+    assert len(visual['all115_sampled_nontext_region_checks'])==115 and visual['all115_sampled_nontext_regions_equal']
+    assert visual['whole_RGB_town5530_and_final9001_equal'] and all(visual['postscene9001_native_component_equality'].values())
+    assert visual['postscene9001_whole1A04_actor_models_and_captain2_equal']
+    assert visual['both_source_A000720_and748_actually_executed'] and visual['original_VM_last_result1_preserved_through_type3_commands_and_end']
+    assert visual['source_relative_sites736740756_actual_744_offline_native_only'] and visual['PRNG_equality_or_future_world_equivalence_not_claimed']
+    assert fixture['source_B173_two_presentations_two_resources_two_A000s_predicate_four_spans_and_tail_end_retained']
+    assert all(not f['explicitly_excluded_original_commands'] and len(f['all32_stored_fixture_commands'])==32 for f in fixture['fixtures'])
+    ids=[r['id'] for r in actual['actual_panels']];assert set(ids)=={r['id'] for r in doc['records']}
+    native=read(doc['native_font_proof']);assert native['all11_current_native_speech_planes_pass'] and native['current_original_macro_alignment_calls']==88
+    ROOT.mkdir(parents=True)
+    paths=[INPUT,PLAN,CENSUS,CONTROL,STORED,ENDS,ACTUAL,FIXTURE,VISUAL,Path(__file__)]
+    evidence={str(p):sha(p.read_bytes()) for p in paths}
+    sample=ROOT/'representative_display_control_and_transition_reconciliation.json'
+    save(sample,dict(candidate=str(PARENT),candidate_sha256=sha(PARENT.read_bytes()),research_ROM=str(ROM),research_ROM_sha256=sha(ROM.read_bytes()),
+        evidence=evidence,viewed_actual_sheets=visual['all2_actual_sheets_viewed'],actual_two_disclosed_content_cold_boots_pass=True,
+        content_frames_each=9001,new_emulator_runs=2,no_additional_focus_run_without_concrete_unresolved_risk=True,
+        actual_selected_B173_source_events=[],actual_sampled_display_IDs=ids,offline_only_display_IDs=[],represented_reviewed_display_IDs=ids,
+        all11_progressive_panels_unforced_predicate_both_effects_single_end_and_normal_town_return_pass=True,
+        original23_structural_commands_and_single_declared_endword_preserved=True,no_B173_source_command_omitted=True,
+        original_B22_four_A000_initialization_commands_retained=True,source_A000720_then_predicate1_then_A0007486240_and_end_executed=True,
+        source_relative_sites736740756_actual_744_offline_native_only=True,
+        actual_VM_descriptor_last_result1_preserved_through_type3_and_end=True,
+        single_end762_actual=True,no_source_pause_or_C200_invented=True,
+        all115_sampled_nontext_regions_and_whole_RGB_town5530_and_final9001_equal=True,
+        postscene9001_five_native_components_whole_actor_model_and_captain2_equal=True,
+        source_packed_predicate_and_A000_semantics_not_inferred=True,PRNG_and_future_world_equality_not_claimed=True,
+        no_open_translation_specific_display_or_control_finding=True,
+        no_natural_event_eligibility_earned_flags_full_route_or_hardware_claim=True,
+        registered_release_and_current_startup_pending=True,full_goal_complete=False))
+    block=deepcopy(plan['blocks'][0]);checked=census['blocks'][0]
+    assert block['block']==checked['block']==173
+    block['target_block_sha256']=block.pop('research_block_sha256')
+    block.update(external_references_complete=True,entry_point_offset=8,mapped_native_commands=checked['mapped_commands'],
+        external_entry_and_actual_revised_paths_approval_pending=False,individual_naturally_selected_source_scene_unobserved=True)
+    assert len(block['command_map'])==23 and len(block['relative_skip_fixups'])==4 and len(block['target_native_skip_cases'])==20
+    assert len(block['text_records'])==11 and not block['choice_commands'] and not block['actor_style_commands'] and not block['original2000_pause_and_resume_maps']
+    assert block['original_declared_end_word_maps']==[dict(source_offset=762,target_offset=794,extent=4,source_four_zero_bytes_exact=True)]
+    mapping=dict(format='dk4-lil-B173-source-relocation-map-v1',required_runtime_ARM9_sha256=sha(parent.read_file('/__arm9__.bin')),
+        source_SC2_sha256=plan['source_SC2_sha256'],target_SC2_sha256=plan['target_SC2_sha256'],
+        clean_SC2_sha256=sha(NdsImage.open('work/clean.nds').read_file('/data/SC2.DK4')),
+        canonical_SC2_sha256=sha(NdsImage.open('out/raphael_natural_v2_accepted_base.nds').read_file('/data/SC2.DK4')),
+        entry_point_offset=8,preserve_record_parity=True,external_references_complete=True,blocks=[block],
+        all23_structural_commands_four_relative_sites_one_predicate_verified=True,all11_active_speech_targets_preserved=True,
+        all8_leaves_two_presentations_two_resources_predicate_two_A000s_and_single_end_exact=True,
+        single_tail_endword_preserved=True,no_FE_consumers_and_FI0_FA0_FO0_preserved=True,
+        no_source2100_4100_or_dynamic_objects=True,no_source2000_pause_or_C200=True,
+        all_four_relative_sites20_target_cases_and_both_suffix_paths_preserved=True,
+        source_A000720_predicate728_conditional_A000748_then6240_and_end_preserved=True,representative_shared_rules_approved=True,
+        representative_proof=str(sample),source_plan=str(PLAN),source_census=str(CENSUS),final_padding_proof=str(STORED),
+        relocated_control_proof=str(CONTROL),termination_decode_proof=str(ENDS),postscene_native_state_proof=str(VISUAL),
+        evidence={**evidence,str(sample):sha(sample.read_bytes())},actual_selected_B173_source_events=[],full_goal_complete=False)
+    save(MAP,mapping)
+    doc.update(previous_manuscript=str(INPUT),previous_manuscript_sha256=sha(INPUT.read_bytes()),reference_map_pending=False,
+        registered_integration_pending=True,status='source-prose-native-references-representative-approved;registered-release-startup-pending')
+    for key,path in [('reference_map',MAP),('representative_proof',sample),('final_padding_proof',STORED),
+        ('relocated_control_proof',CONTROL),('termination_decode_proof',ENDS),('postscene_native_state_proof',VISUAL)]:
+        doc[key],doc[key+'_sha256']=str(path),sha(path.read_bytes())
+    for row in doc['records']:
+        assert row['kind']=='progressive'
+        row['historical_pre_actual_display_scope']={k:row[k] for k in ['current_complete_native_display_pending','current_native_UI_body_explicit_unexecuted_boundary'] if k in row}
+        row.update(status=doc['status'],current_text_hex=row['current_hex'],native_display_consumer='original_progressive_54020',
+            actual_B22_display_fixture_observed=True,offline_only_native_display_checked=False,
+            current_complete_native_display_pending=False,current_native_UI_body_explicit_unexecuted_boundary=False,
+            individual_actual_source_event_activation_not_claimed=True)
+    assert [r['english'] for r in doc['records']]==[r['english'] for r in read(INPUT)['records']]
+    validate_natural_dialogue_batch(doc);save(OUTPUT,doc)
+    save(ROOT/'approval_receipt.json',dict(manuscripts={str(OUTPUT):sha(OUTPUT.read_bytes())},reference_map=str(MAP),reference_map_sha256=sha(MAP.read_bytes()),
+        evidence={**evidence,str(MAP):sha(MAP.read_bytes()),str(sample):sha(sample.read_bytes())},
+        all11_source_native_reference_and_representative_rules_approved=True,source_prose_English_unchanged=True,
+        actual_sampled_display_IDs=ids,offline_only_display_IDs=[],new_emulator_runs=2,
+        registered_release_and_current_startup_pending=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+    print('All11 B173 approvals sealed:23 structural commands,four relative sites,eight leaves,predicate/both effects/single end and town return. Two focused content boots;registered integration pending.')

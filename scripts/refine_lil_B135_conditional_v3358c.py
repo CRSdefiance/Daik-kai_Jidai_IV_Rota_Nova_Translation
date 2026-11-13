@@ -1,0 +1,13 @@
+"""Resolve the concrete conditional wrap finding withfaithful natural phrasing."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+if __name__=='__main__':
+    old=Path('translations/lil_B135_B136_editorial_manuscript_v2.json');new=Path('translations/lil_B135_B136_editorial_manuscript_v3.json');assert not new.exists();doc=deepcopy(read(old));r=next(r for r in doc['records'] if r['id']=='DK4_MES_B135_R0073');before=r['english']
+    r['english']="{SPEAKER:02}Don't play innocent! I know what you're doing! If that's your attitude, I've got a plan of my own!"
+    r['localization_note']+=' The visual phrase pass exposed a weak conditional split;the faithful natural phrase If that\'s your attitude preserves the source condition andLil\'s pointed response without weakening QA orchanging the threatened action.'
+    doc.update(previous_manuscript=str(old),previous_manuscript_sha256=sha(old.read_bytes()),source_bound_conditional_refinement_producer=__file__,source_bound_conditional_refinement_producer_sha256=sha(Path(__file__).read_bytes()));save(new,doc)
+    oldplan=Path('scripts/plan_lil_B135_B136_layout_v3358b.py');plan=Path('scripts/plan_lil_B135_B136_layout_v3358d.py');assert not plan.exists();t=oldplan.read_text(encoding='utf-8');t=t.replace("INPUTS=[Path('translations/lil_B135_B136_editorial_manuscript_v2.json')]","INPUTS=[Path('translations/lil_B135_B136_editorial_manuscript_v3.json')]").replace("OUTPUTS=[Path('translations/lil_B135_B136_editorial_manuscript_v3.json')]","OUTPUTS=[Path('translations/lil_B135_B136_editorial_manuscript_v4.json')]").replace('lil_B135_B136_layout_v3358b','lil_B135_B136_layout_v3358d');compile(t,str(plan),'exec');plan.write_text(t,encoding='utf-8')
+    oldfont=Path('scripts/verify_lil_B135_B136_fonts_v3359.py');font=Path('scripts/verify_lil_B135_B136_fonts_v3359b.py');assert not font.exists();t=oldfont.read_text(encoding='utf-8').replace('lil_B135_B136_editorial_manuscript_v3','lil_B135_B136_editorial_manuscript_v4');compile(t,str(font),'exec');font.write_text(t,encoding='utf-8')
+    root=Path('work/analysis/lil_B135_conditional_refinement_v3358c');root.mkdir(parents=True);save(root/'finding_and_successors.json',dict(id=r['id'],source_Japanese=r['source_Japanese'],previous=before,successor=r['english'],retained_source_condition_tone_and_action=True,failed_plan='work/analysis/lil_B135_B136_layout_v3358b/all35_paragraph_layout_QA.json',manuscript=str(new),manuscript_sha256=sha(new.read_bytes()),planner=str(plan),font_producer=str(font),producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

@@ -1,0 +1,3 @@
+# V873: surveying and lookout source review
+
+V873 source/prose-reviews24 Survey3/Lookout1 comments1499-1522:22 proposed revisions and2 retentions. All50 original selections cover eight NPC voices and four genuine captains per duty. Drafts restore always/current position,surveyor effort,sun/star location determination,distant views,conditional immediate reports and natural whole-body vigilance. Native layout,registered integration and actual scenes remain pending. V870 remains current;784 complete,811 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;separate graphics/all18 plaques and later older-record re-audit stay open;full goal active.

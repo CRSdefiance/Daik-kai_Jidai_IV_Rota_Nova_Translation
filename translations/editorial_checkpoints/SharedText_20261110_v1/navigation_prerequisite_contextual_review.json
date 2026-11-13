@@ -1,0 +1,5361 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "registered_input": {
+    "candidate": "out\\ship_emergency_registered_20261111_v1\\Translation_DS_All_Routes_Ship_Emergency_20261111_candidate.nds",
+    "candidate_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277",
+    "ARM9_sha256": "c6cc19277ccd3e692b155dfc22a2279ce852382b464c76d27fa5e4a14a7599cb",
+    "COMMON_sha256": "e5f2cecc1f01f9fa2be5ba8bca099b6b0c292ff0f32d7ca297c934d38b036971",
+    "release_proof": "releases\\all_routes_editorial_20261111_ship_emergency_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "5f6a99d9b04c5b2cdec92419c3d35c97809489f4c5df63e5a5412d605d1b093f",
+    "startup_proof": "releases\\all_routes_editorial_20261111_ship_emergency_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "d4541da733d52e8c6fc025729a1286c99513051f24873664b6a1ef7dfd010868",
+    "snapshot": {
+      "path": "out\\ship_emergency_20261111_v2\\own_startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "25ef69923c4c384398c9b5e272b26e566dcda591ab541b3cfc50ac5bc72e8a9d",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "source_ROM": "work\\clean.nds",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_629",
+      "message_ID": 629,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3496,
+        "copy_end": 3512,
+        "bytes": 16,
+        "record_index": 71,
+        "table_offset": 1318394,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4015,
+        "copy_end": 4032,
+        "bytes": 16,
+        "record_index": 117,
+        "table_offset": 1318394,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a282dc82b982f1",
+      "current_hex": "4e6f207375727665796f722e20202020",
+      "source_Japanese": "測量士がいません",
+      "current_English": "No surveyor.    ",
+      "english": "We don't have a Surveyor.",
+      "independent_English": "We don't have a Surveyor.",
+      "source_meaning": "A formal notice that there is no Surveyor for the order.",
+      "localization_note": "Use the established role label and a natural direct report.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f207375727665796f722e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_630",
+      "message_ID": 630,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3512,
+        "copy_end": 3532,
+        "bytes": 18,
+        "record_index": 71,
+        "table_offset": 1318396,
+        "start_in_record": 18
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4032,
+        "copy_end": 4051,
+        "bytes": 18,
+        "record_index": 118,
+        "table_offset": 1318396,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a882e882dc82b982f1",
+      "current_hex": "20204e6f207375727665796f722e20202020",
+      "source_Japanese": "測量士がおりません",
+      "current_English": "  No surveyor.    ",
+      "english": "We have no Surveyor.",
+      "independent_English": "There's no Surveyor on duty.",
+      "source_meaning": "A second formal voice reports the absence of a Surveyor.",
+      "localization_note": "Keep the formal report direct. The source gives no shift or duty schedule.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204e6f207375727665796f722e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_631",
+      "message_ID": 631,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3532,
+        "copy_end": 3548,
+        "bytes": 16,
+        "record_index": 72,
+        "table_offset": 1318398,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4051,
+        "copy_end": 4068,
+        "bytes": 16,
+        "record_index": 119,
+        "table_offset": 1318398,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a282c882a282e6",
+      "current_hex": "204e6f207375727665796f722e202020",
+      "source_Japanese": "測量士がいないよ",
+      "current_English": " No surveyor.   ",
+      "english": "We've got no Surveyor.",
+      "independent_English": "We don't have a Surveyor.",
+      "source_meaning": "A familiar voice tells the player there is no Surveyor.",
+      "localization_note": "Keep the familiar speaker's everyday phrasing and the established role name.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "204e6f207375727665796f722e202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_632",
+      "message_ID": 632,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3548,
+        "copy_end": 3568,
+        "bytes": 18,
+        "record_index": 72,
+        "table_offset": 1318400,
+        "start_in_record": 17
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4068,
+        "copy_end": 4087,
+        "bytes": 18,
+        "record_index": 120,
+        "table_offset": 1318400,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a282dc82b982f182ed",
+      "current_hex": "20204e6f207375727665796f722e20202020",
+      "source_Japanese": "測量士がいませんわ",
+      "current_English": "  No surveyor.    ",
+      "english": "We don't have a Surveyor assigned.",
+      "independent_English": "We don't have a Surveyor assigned.",
+      "source_meaning": "A polite but familiar speaker reports that no Surveyor is available.",
+      "localization_note": "Use the polite conversational report and refer to the missing assignment.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204e6f207375727665796f722e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_633",
+      "message_ID": 633,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3568,
+        "copy_end": 3592,
+        "bytes": 22,
+        "record_index": 73,
+        "table_offset": 1318402,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4087,
+        "copy_end": 4110,
+        "bytes": 22,
+        "record_index": 121,
+        "table_offset": 1318402,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a282cb82a682f182be82e682c8",
+      "current_hex": "204e6f207375727665796f722061626f6172642e2020",
+      "source_Japanese": "測量士がいねえんだよな",
+      "current_English": " No surveyor aboard.  ",
+      "english": "Trouble is, we've got no Surveyor.",
+      "independent_English": "Trouble is, we've got no Surveyor.",
+      "source_meaning": "A rough voice points out that they have no Surveyor.",
+      "localization_note": "Restore the rough speaker's conversational cadence. The source does not say there is no such person aboard.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "204e6f207375727665796f722061626f6172642e2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_634",
+      "message_ID": 634,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3592,
+        "copy_end": 3608,
+        "bytes": 16,
+        "record_index": 74,
+        "table_offset": 1318404,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4110,
+        "copy_end": 4127,
+        "bytes": 16,
+        "record_index": 122,
+        "table_offset": 1318404,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a882e782f182bc",
+      "current_hex": "4e6f207375727665796f722e20202020",
+      "source_Japanese": "測量士がおらんぞ",
+      "current_English": "No surveyor.    ",
+      "english": "We've got no Surveyor, you see.",
+      "independent_English": "We've got no Surveyor, you see.",
+      "source_meaning": "An older-sounding voice points out there is no Surveyor.",
+      "localization_note": "Keep the older speaker's matter-of-fact explanation.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f207375727665796f722e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_635",
+      "message_ID": 635,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3608,
+        "copy_end": 3624,
+        "bytes": 16,
+        "record_index": 74,
+        "table_offset": 1318406,
+        "start_in_record": 17
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4127,
+        "copy_end": 4144,
+        "bytes": 16,
+        "record_index": 123,
+        "table_offset": 1318406,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a282c882a282e6",
+      "current_hex": "4e6f207375727665796f722e20202020",
+      "source_Japanese": "測量士がいないよ",
+      "current_English": "No surveyor.    ",
+      "english": "But we don't have a Surveyor!",
+      "independent_English": "But we don't have a Surveyor!",
+      "source_meaning": "A younger voice says there is no Surveyor.",
+      "localization_note": "Keep the younger speaker's quick objection and the established role name.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f207375727665796f722e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_636",
+      "message_ID": 636,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3624,
+        "copy_end": 3644,
+        "bytes": 20,
+        "record_index": 74,
+        "table_offset": 1318408,
+        "start_in_record": 33
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4144,
+        "copy_end": 4165,
+        "bytes": 20,
+        "record_index": 124,
+        "table_offset": 1318408,
+        "start_in_record": 0
+      },
+      "source_hex": "91aa97ca8e6d82aa82a882e882dc82b982f182aa",
+      "current_hex": "4e6f207375727665796f72206973206173736967",
+      "source_Japanese": "測量士がおりませんが",
+      "current_English": "No surveyor is assig",
+      "english": "We don't have a Surveyor, though.",
+      "independent_English": "We don't have a Surveyor, though.",
+      "source_meaning": "A polite speaker points out there is no Surveyor, with an unfinished qualification.",
+      "localization_note": "Restore the polite qualification and the complete warning. The current line ends mid-word.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f207375727665796f72206973206173736967",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_637",
+      "message_ID": 637,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3644,
+        "copy_end": 3680,
+        "bytes": 35,
+        "record_index": 74,
+        "table_offset": 1318410,
+        "start_in_record": 53
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4165,
+        "copy_end": 4201,
+        "bytes": 35,
+        "record_index": 125,
+        "table_offset": 1318410,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482a282dc82b982f1",
+      "current_hex": "6e65642c0a2020736f2074686174206369747920686173206e6f20726f7574652e2020",
+      "source_Japanese": "その街とは\n航路がつながっていません",
+      "current_English": "ned,\n  so that city has no route.  ",
+      "english": "There's no route to that port.",
+      "independent_English": "There's no route to that port.",
+      "source_meaning": "A formal notice that the selected port is not connected by a sailing route.",
+      "localization_note": "Restore the independent route failure. The current line starts with the previous warning's broken tail and invents a causal connection.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "6e65642c0a2020736f2074686174206369747920686173206e6f20726f7574652e2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_638",
+      "message_ID": 638,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3680,
+        "copy_end": 3720,
+        "bytes": 37,
+        "record_index": 75,
+        "table_offset": 1318412,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4201,
+        "copy_end": 4239,
+        "bytes": 37,
+        "record_index": 126,
+        "table_offset": 1318412,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482a882e882dc82b982f1",
+      "current_hex": "20205468657265206973206e6f20726f7574650a2020746f207468617420636974792e2020",
+      "source_Japanese": "その街とは\n航路がつながっておりません",
+      "current_English": "  There is no route\n  to that city.  ",
+      "english": "There is no route to that city.",
+      "independent_English": "We don't have a route to that port.",
+      "source_meaning": "A second measured voice explains that the route does not connect to the selected port.",
+      "localization_note": "Retain the measured statement that there is no route to the selected city. It faithfully expresses the source's distinction from the Surveyor check.",
+      "decision": "retention",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20205468657265206973206e6f20726f7574650a2020746f207468617420636974792e2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_639",
+      "message_ID": 639,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3720,
+        "copy_end": 3756,
+        "bytes": 33,
+        "record_index": 76,
+        "table_offset": 1318414,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4239,
+        "copy_end": 4273,
+        "bytes": 33,
+        "record_index": 127,
+        "table_offset": 1318414,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482c882a282e6",
+      "current_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e",
+      "source_Japanese": "その街とは\n航路がつながってないよ",
+      "current_English": "There is no route\n  to that city.",
+      "english": "We don't have a route to that port.",
+      "independent_English": "There's no route to that port.",
+      "source_meaning": "A familiar voice says that no route leads to the selected port.",
+      "localization_note": "Use familiar spoken English and preserve that this is about the selected port.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_640",
+      "message_ID": 640,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3756,
+        "copy_end": 3796,
+        "bytes": 37,
+        "record_index": 77,
+        "table_offset": 1318416,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4273,
+        "copy_end": 4311,
+        "bytes": 37,
+        "record_index": 128,
+        "table_offset": 1318416,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482a282dc82b982f182ed",
+      "current_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e20202020",
+      "source_Japanese": "その街とは\n航路がつながっていませんわ",
+      "current_English": "There is no route\n  to that city.    ",
+      "english": "I'm afraid we don't have a route to that port.",
+      "independent_English": "I'm afraid we don't have a route to that port.",
+      "source_meaning": "A polite but familiar speaker points out there is no route to the selected port.",
+      "localization_note": "Keep the softening in the polite speaker's report.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_641",
+      "message_ID": 641,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3796,
+        "copy_end": 3832,
+        "bytes": 33,
+        "record_index": 78,
+        "table_offset": 1318418,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4311,
+        "copy_end": 4345,
+        "bytes": 33,
+        "record_index": 129,
+        "table_offset": 1318418,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482cb82a682c8",
+      "current_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e",
+      "source_Japanese": "その街とは\n航路がつながってねえな",
+      "current_English": "There is no route\n  to that city.",
+      "english": "No route to that port.",
+      "independent_English": "No route to that port.",
+      "source_meaning": "A rough voice says no sailing route leads to the selected port.",
+      "localization_note": "Use a rough, compact warning without implying the port is impossible to reach by other means.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_642",
+      "message_ID": 642,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3832,
+        "copy_end": 3868,
+        "bytes": 35,
+        "record_index": 79,
+        "table_offset": 1318420,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4345,
+        "copy_end": 4381,
+        "bytes": 35,
+        "record_index": 130,
+        "table_offset": 1318420,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c682e782f182cc82a4",
+      "current_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e2020",
+      "source_Japanese": "その街とは\n航路がつながっとらんのう",
+      "current_English": "There is no route\n  to that city.  ",
+      "english": "Our routes don't reach that port.",
+      "independent_English": "Our routes don't reach that port.",
+      "source_meaning": "An older voice observes that the route does not reach the selected port.",
+      "localization_note": "Keep the older speaker's observation that the route network does not connect to the port.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_643",
+      "message_ID": 643,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3868,
+        "copy_end": 3904,
+        "bytes": 33,
+        "record_index": 80,
+        "table_offset": 1318422,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4381,
+        "copy_end": 4415,
+        "bytes": 33,
+        "record_index": 131,
+        "table_offset": 1318422,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482c882a282e6",
+      "current_hex": "20204e6f20726f757465206c656164730a2020746f207468617420636974792e20",
+      "source_Japanese": "その街とは\n航路がつながってないよ",
+      "current_English": "  No route leads\n  to that city. ",
+      "english": "There's no route to that port!",
+      "independent_English": "We don't have a route to that port!",
+      "source_meaning": "A younger voice says that no route connects to the selected port.",
+      "localization_note": "Keep the younger voice's direct warning and give the selected port its own clear reference.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204e6f20726f757465206c656164730a2020746f207468617420636974792e20",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_644",
+      "message_ID": 644,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3904,
+        "copy_end": 3944,
+        "bytes": 39,
+        "record_index": 81,
+        "table_offset": 1318424,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4415,
+        "copy_end": 4455,
+        "bytes": 39,
+        "record_index": 132,
+        "table_offset": 1318424,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482a882e882dc82b982f182c8",
+      "current_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e202020202020",
+      "source_Japanese": "その街とは\n航路がつながっておりませんな",
+      "current_English": "There is no route\n  to that city.      ",
+      "english": "There isn't a route to that port.",
+      "independent_English": "It seems we have no route to that port.",
+      "source_meaning": "A polite voice points out the lack of a route to the selected port.",
+      "localization_note": "Keep the measured explanation and selected destination. The source states the route failure with certainty.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f20726f7574650a2020746f207468617420636974792e202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_645",
+      "message_ID": 645,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3944,
+        "copy_end": 3976,
+        "bytes": 31,
+        "record_index": 82,
+        "table_offset": 1318426,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4455,
+        "copy_end": 4487,
+        "bytes": 31,
+        "record_index": 133,
+        "table_offset": 1318426,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e796bd97df82b582c482ad82be82b382a2",
+      "current_hex": "20204f726465722066726f6d0a20204361707461696e277320636162696e2e",
+      "source_Japanese": "提督\n艦長室から命令してください",
+      "current_English": "  Order from\n  Captain's cabin.",
+      "english": "Admiral, please give the order from the Captain's Cabin.",
+      "independent_English": "Admiral, please give the order from the Captain's Cabin.",
+      "source_meaning": "The speaker asks the admiral to issue the order from the Captain's Cabin.",
+      "localization_note": "Restore the direct address and use the established room label.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f726465722066726f6d0a20204361707461696e277320636162696e2e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_646",
+      "message_ID": 646,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 3976,
+        "copy_end": 4008,
+        "bytes": 29,
+        "record_index": 83,
+        "table_offset": 1318428,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4487,
+        "copy_end": 4517,
+        "bytes": 29,
+        "record_index": 134,
+        "table_offset": 1318428,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e78e778ea682f0978a82dd82dc82b7",
+      "current_hex": "20204f7264657220696e0a20204361707461696e277320636162696e2e",
+      "source_Japanese": "提督\n艦長室から指示を頼みます",
+      "current_English": "  Order in\n  Captain's cabin.",
+      "english": "Admiral, we need your orders from the Captain's Cabin.",
+      "independent_English": "Admiral, we'll need your orders from the Captain's Cabin.",
+      "source_meaning": "A measured voice requests instructions from the Captain's Cabin.",
+      "localization_note": "Restore the address and the request for instructions from the correct room.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f7264657220696e0a20204361707461696e277320636162696e2e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_647",
+      "message_ID": 647,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 4008,
+        "copy_end": 4044,
+        "bytes": 35,
+        "record_index": 84,
+        "table_offset": 1318430,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4517,
+        "copy_end": 4553,
+        "bytes": 35,
+        "record_index": 135,
+        "table_offset": 1318430,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e796bd97df82b582c482ad82ea82c882ad82bf82e1",
+      "current_hex": "4f726465722066726f6d207468650a20204361707461696e277320636162696e2e2020",
+      "source_Japanese": "提督\n艦長室から命令してくれなくちゃ",
+      "current_English": "Order from the\n  Captain's cabin.  ",
+      "english": "Admiral, you've got to give the order from the Captain's Cabin.",
+      "independent_English": "Admiral, you've got to give the order from the Captain's Cabin.",
+      "source_meaning": "A familiar voice explains that the admiral has to give the order from the Captain's Cabin.",
+      "localization_note": "Keep the familiar voice's explanation of what the admiral has to do.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4f726465722066726f6d207468650a20204361707461696e277320636162696e2e2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_648",
+      "message_ID": 648,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 4044,
+        "copy_end": 4080,
+        "bytes": 33,
+        "record_index": 85,
+        "table_offset": 1318432,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4553,
+        "copy_end": 4587,
+        "bytes": 33,
+        "record_index": 136,
+        "table_offset": 1318432,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e78e778ea682b582c482ad82be82b382a282cb",
+      "current_hex": "20204f7264657220696e0a20204361707461696e277320636162696e2e20202020",
+      "source_Japanese": "提督\n艦長室から指示してくださいね",
+      "current_English": "  Order in\n  Captain's cabin.    ",
+      "english": "Admiral, please give us the order from the Captain's Cabin, okay?",
+      "independent_English": "Admiral, please give us the order from the Captain's Cabin, okay?",
+      "source_meaning": "A polite familiar voice reminds the admiral to give instructions from the Captain's Cabin.",
+      "localization_note": "Restore the request and gentle reminder. Keep the question tag with the room name through formatting.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f7264657220696e0a20204361707461696e277320636162696e2e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_649",
+      "message_ID": 649,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 8,
+        "offset": 0,
+        "copy_end": 32,
+        "bytes": 29,
+        "record_index": 0,
+        "table_offset": 1318434,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4587,
+        "copy_end": 4617,
+        "bytes": 29,
+        "record_index": 137,
+        "table_offset": 1318434,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e796bd97df82b582c482ad82ea82e6",
+      "current_hex": "20204f726465722066726f6d204361707461696e277320636162696e2e",
+      "source_Japanese": "提督\n艦長室から命令してくれよ",
+      "current_English": "  Order from Captain's cabin.",
+      "english": "Admiral, give the order from the Captain's Cabin, will you?",
+      "independent_English": "Admiral, give the order from the Captain's Cabin, will you?",
+      "source_meaning": "A rough voice asks the admiral to give the command from the Captain's Cabin.",
+      "localization_note": "Restore the rough speaker's blunt request and keep the question tag with the room name.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f726465722066726f6d204361707461696e277320636162696e2e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_650",
+      "message_ID": 650,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 8,
+        "offset": 32,
+        "copy_end": 68,
+        "bytes": 33,
+        "record_index": 1,
+        "table_offset": 1318436,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4617,
+        "copy_end": 4645,
+        "bytes": 27,
+        "record_index": 138,
+        "table_offset": 1318436,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e78e778ea682b582c482ad82ea82f182a982cb",
+      "current_hex": "4f726465722066726f6d204361707461696e277320636162696e2e",
+      "source_Japanese": "提督\n艦長室から指示してくれんかね",
+      "current_English": "Order from Captain's cabin.",
+      "english": "Admiral, could you give the order from the Captain's Cabin?",
+      "independent_English": "Admiral, could you give the order from the Captain's Cabin?",
+      "source_meaning": "An older voice asks whether the admiral can give the order from the Captain's Cabin.",
+      "localization_note": "Restore the older speaker's phrasing as a request and use the exact room label.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4f726465722066726f6d204361707461696e277320636162696e2e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_651",
+      "message_ID": 651,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 8,
+        "offset": 68,
+        "copy_end": 96,
+        "bytes": 27,
+        "record_index": 2,
+        "table_offset": 1318438,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4645,
+        "copy_end": 4673,
+        "bytes": 27,
+        "record_index": 139,
+        "table_offset": 1318438,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e78e778ea682b582c482e682a4",
+      "current_hex": "4f726465722066726f6d204361707461696e277320636162696e2e",
+      "source_Japanese": "提督\n艦長室から指示してよう",
+      "current_English": "Order from Captain's cabin.",
+      "english": "Admiral, give us the order from the Captain's Cabin, please!",
+      "independent_English": "Admiral, give us the order from the Captain's Cabin, please!",
+      "source_meaning": "A younger voice asks the admiral to give instructions from the Captain's Cabin.",
+      "localization_note": "Restore the younger speaker's insistent request and the direct address.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4f726465722066726f6d204361707461696e277320636162696e2e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_652",
+      "message_ID": 652,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 8,
+        "offset": 96,
+        "copy_end": 136,
+        "bytes": 39,
+        "record_index": 3,
+        "table_offset": 1318440,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4673,
+        "copy_end": 4713,
+        "bytes": 39,
+        "record_index": 140,
+        "table_offset": 1318440,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8acd92b78eba82a982e78e778ea682f08f6f82b582c482d982b582a282c582b782c8",
+      "current_hex": "2020506c6561736520757365207468650a20204361707461696e277320636162696e2e20202020",
+      "source_Japanese": "提督\n艦長室から指示を出してほしいですな",
+      "current_English": "  Please use the\n  Captain's cabin.    ",
+      "english": "Admiral, we'd like you to give the order from the Captain's Cabin.",
+      "independent_English": "Admiral, we'd like you to give the order from the Captain's Cabin.",
+      "source_meaning": "A polite voice requests that the admiral give the order from the Captain's Cabin.",
+      "localization_note": "Restore the polite request to issue the order, rather than merely use the room.",
+      "decision": "revision",
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2020506c6561736520757365207468650a20204361707461696e277320636162696e2e20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4952
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      }
+    }
+  ],
+  "counts": {
+    "revision": 23,
+    "retention": 1
+  },
+  "exact_native_groups": [
+    {
+      "first_ID": 629,
+      "last_ID": 636,
+      "predicate_result": 3,
+      "table": 34702624,
+      "table_slots": [
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636
+      ],
+      "consumer": 33897796,
+      "native_callers": [
+        {
+          "load_PC": 34182552,
+          "call_PC": 34182560,
+          "literal_address": 34182700,
+          "literal_value": 34702624,
+          "consumer": 33897796,
+          "clean_and_current_hex": "8c109fe50600a0e1e7e9feeb"
+        }
+      ],
+      "original_role_argument": 1,
+      "speaker": "First Mate",
+      "context": "The admiral confirms an Auto Move destination. The game checks both ports, then finds no eligible Surveyor in the required crew assignment. The First Mate voice reports the missing Surveyor. Acknowledging the warning returns to the confirmation.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          631
+        ],
+        [
+          1,
+          1,
+          630
+        ],
+        [
+          2,
+          3,
+          632
+        ],
+        [
+          3,
+          3,
+          632
+        ],
+        [
+          4,
+          0,
+          629
+        ],
+        [
+          5,
+          4,
+          633
+        ],
+        [
+          6,
+          5,
+          634
+        ],
+        [
+          7,
+          3,
+          632
+        ],
+        [
+          8,
+          0,
+          629
+        ],
+        [
+          9,
+          2,
+          631
+        ],
+        [
+          10,
+          5,
+          634
+        ],
+        [
+          11,
+          4,
+          633
+        ],
+        [
+          12,
+          1,
+          630
+        ],
+        [
+          13,
+          0,
+          629
+        ],
+        [
+          14,
+          6,
+          635
+        ],
+        [
+          15,
+          4,
+          633
+        ],
+        [
+          16,
+          1,
+          630
+        ],
+        [
+          17,
+          4,
+          633
+        ],
+        [
+          18,
+          0,
+          629
+        ],
+        [
+          19,
+          7,
+          636
+        ],
+        [
+          20,
+          4,
+          633
+        ],
+        [
+          21,
+          1,
+          630
+        ],
+        [
+          22,
+          2,
+          631
+        ],
+        [
+          23,
+          7,
+          636
+        ],
+        [
+          24,
+          3,
+          632
+        ],
+        [
+          25,
+          3,
+          632
+        ],
+        [
+          26,
+          2,
+          631
+        ],
+        [
+          27,
+          2,
+          631
+        ],
+        [
+          28,
+          4,
+          633
+        ],
+        [
+          29,
+          7,
+          636
+        ],
+        [
+          30,
+          7,
+          636
+        ],
+        [
+          31,
+          7,
+          636
+        ],
+        [
+          32,
+          0,
+          629
+        ],
+        [
+          33,
+          7,
+          636
+        ],
+        [
+          34,
+          1,
+          630
+        ],
+        [
+          35,
+          7,
+          636
+        ],
+        [
+          36,
+          7,
+          636
+        ],
+        [
+          37,
+          0,
+          629
+        ],
+        [
+          38,
+          7,
+          636
+        ],
+        [
+          39,
+          4,
+          633
+        ],
+        [
+          40,
+          7,
+          636
+        ],
+        [
+          41,
+          5,
+          634
+        ],
+        [
+          42,
+          7,
+          636
+        ],
+        [
+          43,
+          1,
+          630
+        ],
+        [
+          44,
+          4,
+          633
+        ],
+        [
+          45,
+          0,
+          629
+        ],
+        [
+          46,
+          5,
+          634
+        ],
+        [
+          47,
+          7,
+          636
+        ],
+        [
+          48,
+          4,
+          633
+        ],
+        [
+          49,
+          4,
+          633
+        ],
+        [
+          50,
+          0,
+          629
+        ],
+        [
+          51,
+          7,
+          636
+        ],
+        [
+          52,
+          7,
+          636
+        ],
+        [
+          53,
+          2,
+          631
+        ],
+        [
+          54,
+          0,
+          629
+        ],
+        [
+          55,
+          4,
+          633
+        ],
+        [
+          56,
+          0,
+          629
+        ],
+        [
+          57,
+          7,
+          636
+        ],
+        [
+          58,
+          4,
+          633
+        ],
+        [
+          59,
+          0,
+          629
+        ],
+        [
+          60,
+          1,
+          630
+        ],
+        [
+          61,
+          4,
+          633
+        ],
+        [
+          62,
+          4,
+          633
+        ],
+        [
+          63,
+          0,
+          629
+        ],
+        [
+          64,
+          0,
+          629
+        ],
+        [
+          65,
+          4,
+          633
+        ],
+        [
+          66,
+          2,
+          631
+        ],
+        [
+          67,
+          4,
+          633
+        ],
+        [
+          68,
+          0,
+          629
+        ],
+        [
+          69,
+          1,
+          630
+        ],
+        [
+          70,
+          4,
+          633
+        ],
+        [
+          71,
+          4,
+          633
+        ],
+        [
+          72,
+          4,
+          633
+        ],
+        [
+          73,
+          7,
+          636
+        ],
+        [
+          74,
+          0,
+          629
+        ],
+        [
+          75,
+          5,
+          634
+        ],
+        [
+          76,
+          5,
+          634
+        ],
+        [
+          77,
+          7,
+          636
+        ],
+        [
+          78,
+          7,
+          636
+        ],
+        [
+          79,
+          0,
+          629
+        ],
+        [
+          80,
+          3,
+          632
+        ],
+        [
+          81,
+          1,
+          630
+        ],
+        [
+          82,
+          0,
+          629
+        ],
+        [
+          83,
+          0,
+          629
+        ],
+        [
+          84,
+          0,
+          629
+        ],
+        [
+          85,
+          0,
+          629
+        ],
+        [
+          86,
+          0,
+          629
+        ],
+        [
+          87,
+          0,
+          629
+        ],
+        [
+          88,
+          0,
+          629
+        ],
+        [
+          89,
+          0,
+          629
+        ],
+        [
+          90,
+          0,
+          629
+        ],
+        [
+          91,
+          0,
+          629
+        ],
+        [
+          92,
+          0,
+          629
+        ],
+        [
+          93,
+          0,
+          629
+        ],
+        [
+          94,
+          0,
+          629
+        ],
+        [
+          95,
+          0,
+          629
+        ],
+        [
+          96,
+          0,
+          629
+        ],
+        [
+          97,
+          0,
+          629
+        ],
+        [
+          98,
+          0,
+          629
+        ],
+        [
+          99,
+          0,
+          629
+        ],
+        [
+          100,
+          0,
+          629
+        ],
+        [
+          101,
+          0,
+          629
+        ],
+        [
+          102,
+          0,
+          629
+        ],
+        [
+          103,
+          0,
+          629
+        ],
+        [
+          104,
+          0,
+          629
+        ],
+        [
+          105,
+          0,
+          629
+        ],
+        [
+          106,
+          0,
+          629
+        ],
+        [
+          107,
+          0,
+          629
+        ],
+        [
+          108,
+          0,
+          629
+        ],
+        [
+          109,
+          0,
+          629
+        ],
+        [
+          110,
+          0,
+          629
+        ],
+        [
+          111,
+          0,
+          629
+        ],
+        [
+          112,
+          0,
+          629
+        ],
+        [
+          113,
+          0,
+          629
+        ],
+        [
+          114,
+          0,
+          629
+        ],
+        [
+          115,
+          0,
+          629
+        ],
+        [
+          116,
+          0,
+          629
+        ],
+        [
+          117,
+          0,
+          629
+        ],
+        [
+          118,
+          0,
+          629
+        ],
+        [
+          119,
+          0,
+          629
+        ],
+        [
+          120,
+          0,
+          629
+        ],
+        [
+          121,
+          0,
+          629
+        ],
+        [
+          122,
+          0,
+          629
+        ],
+        [
+          123,
+          0,
+          629
+        ],
+        [
+          124,
+          0,
+          629
+        ],
+        [
+          125,
+          0,
+          629
+        ],
+        [
+          126,
+          0,
+          629
+        ],
+        [
+          127,
+          0,
+          629
+        ],
+        [
+          128,
+          0,
+          629
+        ],
+        [
+          129,
+          0,
+          629
+        ],
+        [
+          130,
+          0,
+          629
+        ],
+        [
+          131,
+          0,
+          629
+        ],
+        [
+          132,
+          0,
+          629
+        ],
+        [
+          133,
+          0,
+          629
+        ],
+        [
+          134,
+          0,
+          629
+        ],
+        [
+          135,
+          0,
+          629
+        ],
+        [
+          136,
+          0,
+          629
+        ],
+        [
+          137,
+          0,
+          629
+        ],
+        [
+          138,
+          0,
+          629
+        ],
+        [
+          139,
+          0,
+          629
+        ],
+        [
+          140,
+          0,
+          629
+        ],
+        [
+          141,
+          0,
+          629
+        ],
+        [
+          142,
+          0,
+          629
+        ],
+        [
+          143,
+          0,
+          629
+        ],
+        [
+          144,
+          0,
+          629
+        ],
+        [
+          145,
+          0,
+          629
+        ],
+        [
+          146,
+          0,
+          629
+        ],
+        [
+          147,
+          0,
+          629
+        ],
+        [
+          148,
+          0,
+          629
+        ],
+        [
+          149,
+          0,
+          629
+        ],
+        [
+          150,
+          0,
+          629
+        ],
+        [
+          151,
+          4,
+          633
+        ],
+        [
+          152,
+          4,
+          633
+        ],
+        [
+          153,
+          4,
+          633
+        ],
+        [
+          154,
+          4,
+          633
+        ],
+        [
+          155,
+          4,
+          633
+        ],
+        [
+          156,
+          4,
+          633
+        ],
+        [
+          157,
+          4,
+          633
+        ],
+        [
+          158,
+          4,
+          633
+        ],
+        [
+          159,
+          4,
+          633
+        ],
+        [
+          160,
+          4,
+          633
+        ],
+        [
+          161,
+          4,
+          633
+        ],
+        [
+          162,
+          0,
+          629
+        ],
+        [
+          163,
+          0,
+          629
+        ],
+        [
+          164,
+          0,
+          629
+        ],
+        [
+          165,
+          0,
+          629
+        ],
+        [
+          166,
+          0,
+          629
+        ],
+        [
+          167,
+          0,
+          629
+        ],
+        [
+          168,
+          0,
+          629
+        ],
+        [
+          169,
+          0,
+          629
+        ],
+        [
+          170,
+          0,
+          629
+        ],
+        [
+          171,
+          0,
+          629
+        ],
+        [
+          172,
+          0,
+          629
+        ],
+        [
+          173,
+          0,
+          629
+        ],
+        [
+          174,
+          0,
+          629
+        ],
+        [
+          175,
+          0,
+          629
+        ],
+        [
+          176,
+          4,
+          633
+        ],
+        [
+          177,
+          0,
+          629
+        ],
+        [
+          178,
+          0,
+          629
+        ],
+        [
+          179,
+          0,
+          629
+        ],
+        [
+          180,
+          0,
+          629
+        ],
+        [
+          181,
+          4,
+          633
+        ],
+        [
+          182,
+          0,
+          629
+        ],
+        [
+          183,
+          4,
+          633
+        ],
+        [
+          184,
+          4,
+          633
+        ],
+        [
+          185,
+          0,
+          629
+        ],
+        [
+          186,
+          0,
+          629
+        ],
+        [
+          187,
+          0,
+          629
+        ],
+        [
+          188,
+          0,
+          629
+        ],
+        [
+          189,
+          0,
+          629
+        ],
+        [
+          190,
+          0,
+          629
+        ],
+        [
+          191,
+          0,
+          629
+        ],
+        [
+          192,
+          0,
+          629
+        ],
+        [
+          193,
+          0,
+          629
+        ],
+        [
+          194,
+          0,
+          629
+        ],
+        [
+          195,
+          0,
+          629
+        ],
+        [
+          196,
+          0,
+          629
+        ],
+        [
+          197,
+          0,
+          629
+        ],
+        [
+          198,
+          0,
+          629
+        ],
+        [
+          199,
+          0,
+          629
+        ],
+        [
+          200,
+          0,
+          629
+        ],
+        [
+          201,
+          0,
+          629
+        ],
+        [
+          202,
+          0,
+          629
+        ],
+        [
+          203,
+          0,
+          629
+        ],
+        [
+          204,
+          0,
+          629
+        ],
+        [
+          205,
+          0,
+          629
+        ],
+        [
+          206,
+          0,
+          629
+        ]
+      ]
+    },
+    {
+      "first_ID": 637,
+      "last_ID": 644,
+      "predicate_result": 1,
+      "table": 34702592,
+      "table_slots": [
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644
+      ],
+      "consumer": 33897796,
+      "native_callers": [
+        {
+          "load_PC": 34182568,
+          "call_PC": 34182576,
+          "literal_address": 34182704,
+          "literal_value": 34702592,
+          "consumer": 33897796,
+          "clean_and_current_hex": "80109fe50400a0e1e3e9feeb"
+        }
+      ],
+      "original_role_argument": 4,
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. An endpoint or the planned connection fails its route check. The Surveyor voice reports the route failure. Acknowledging the warning returns to the confirmation.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          639
+        ],
+        [
+          1,
+          1,
+          638
+        ],
+        [
+          2,
+          3,
+          640
+        ],
+        [
+          3,
+          3,
+          640
+        ],
+        [
+          4,
+          0,
+          637
+        ],
+        [
+          5,
+          4,
+          641
+        ],
+        [
+          6,
+          5,
+          642
+        ],
+        [
+          7,
+          3,
+          640
+        ],
+        [
+          8,
+          0,
+          637
+        ],
+        [
+          9,
+          2,
+          639
+        ],
+        [
+          10,
+          5,
+          642
+        ],
+        [
+          11,
+          4,
+          641
+        ],
+        [
+          12,
+          1,
+          638
+        ],
+        [
+          13,
+          0,
+          637
+        ],
+        [
+          14,
+          6,
+          643
+        ],
+        [
+          15,
+          4,
+          641
+        ],
+        [
+          16,
+          1,
+          638
+        ],
+        [
+          17,
+          4,
+          641
+        ],
+        [
+          18,
+          0,
+          637
+        ],
+        [
+          19,
+          7,
+          644
+        ],
+        [
+          20,
+          4,
+          641
+        ],
+        [
+          21,
+          1,
+          638
+        ],
+        [
+          22,
+          2,
+          639
+        ],
+        [
+          23,
+          7,
+          644
+        ],
+        [
+          24,
+          3,
+          640
+        ],
+        [
+          25,
+          3,
+          640
+        ],
+        [
+          26,
+          2,
+          639
+        ],
+        [
+          27,
+          2,
+          639
+        ],
+        [
+          28,
+          4,
+          641
+        ],
+        [
+          29,
+          7,
+          644
+        ],
+        [
+          30,
+          7,
+          644
+        ],
+        [
+          31,
+          7,
+          644
+        ],
+        [
+          32,
+          0,
+          637
+        ],
+        [
+          33,
+          7,
+          644
+        ],
+        [
+          34,
+          1,
+          638
+        ],
+        [
+          35,
+          7,
+          644
+        ],
+        [
+          36,
+          7,
+          644
+        ],
+        [
+          37,
+          0,
+          637
+        ],
+        [
+          38,
+          7,
+          644
+        ],
+        [
+          39,
+          4,
+          641
+        ],
+        [
+          40,
+          7,
+          644
+        ],
+        [
+          41,
+          5,
+          642
+        ],
+        [
+          42,
+          7,
+          644
+        ],
+        [
+          43,
+          1,
+          638
+        ],
+        [
+          44,
+          4,
+          641
+        ],
+        [
+          45,
+          0,
+          637
+        ],
+        [
+          46,
+          5,
+          642
+        ],
+        [
+          47,
+          7,
+          644
+        ],
+        [
+          48,
+          4,
+          641
+        ],
+        [
+          49,
+          4,
+          641
+        ],
+        [
+          50,
+          0,
+          637
+        ],
+        [
+          51,
+          7,
+          644
+        ],
+        [
+          52,
+          7,
+          644
+        ],
+        [
+          53,
+          2,
+          639
+        ],
+        [
+          54,
+          0,
+          637
+        ],
+        [
+          55,
+          4,
+          641
+        ],
+        [
+          56,
+          0,
+          637
+        ],
+        [
+          57,
+          7,
+          644
+        ],
+        [
+          58,
+          4,
+          641
+        ],
+        [
+          59,
+          0,
+          637
+        ],
+        [
+          60,
+          1,
+          638
+        ],
+        [
+          61,
+          4,
+          641
+        ],
+        [
+          62,
+          4,
+          641
+        ],
+        [
+          63,
+          0,
+          637
+        ],
+        [
+          64,
+          0,
+          637
+        ],
+        [
+          65,
+          4,
+          641
+        ],
+        [
+          66,
+          2,
+          639
+        ],
+        [
+          67,
+          4,
+          641
+        ],
+        [
+          68,
+          0,
+          637
+        ],
+        [
+          69,
+          1,
+          638
+        ],
+        [
+          70,
+          4,
+          641
+        ],
+        [
+          71,
+          4,
+          641
+        ],
+        [
+          72,
+          4,
+          641
+        ],
+        [
+          73,
+          7,
+          644
+        ],
+        [
+          74,
+          0,
+          637
+        ],
+        [
+          75,
+          5,
+          642
+        ],
+        [
+          76,
+          5,
+          642
+        ],
+        [
+          77,
+          7,
+          644
+        ],
+        [
+          78,
+          7,
+          644
+        ],
+        [
+          79,
+          0,
+          637
+        ],
+        [
+          80,
+          3,
+          640
+        ],
+        [
+          81,
+          1,
+          638
+        ],
+        [
+          82,
+          0,
+          637
+        ],
+        [
+          83,
+          0,
+          637
+        ],
+        [
+          84,
+          0,
+          637
+        ],
+        [
+          85,
+          0,
+          637
+        ],
+        [
+          86,
+          0,
+          637
+        ],
+        [
+          87,
+          0,
+          637
+        ],
+        [
+          88,
+          0,
+          637
+        ],
+        [
+          89,
+          0,
+          637
+        ],
+        [
+          90,
+          0,
+          637
+        ],
+        [
+          91,
+          0,
+          637
+        ],
+        [
+          92,
+          0,
+          637
+        ],
+        [
+          93,
+          0,
+          637
+        ],
+        [
+          94,
+          0,
+          637
+        ],
+        [
+          95,
+          0,
+          637
+        ],
+        [
+          96,
+          0,
+          637
+        ],
+        [
+          97,
+          0,
+          637
+        ],
+        [
+          98,
+          0,
+          637
+        ],
+        [
+          99,
+          0,
+          637
+        ],
+        [
+          100,
+          0,
+          637
+        ],
+        [
+          101,
+          0,
+          637
+        ],
+        [
+          102,
+          0,
+          637
+        ],
+        [
+          103,
+          0,
+          637
+        ],
+        [
+          104,
+          0,
+          637
+        ],
+        [
+          105,
+          0,
+          637
+        ],
+        [
+          106,
+          0,
+          637
+        ],
+        [
+          107,
+          0,
+          637
+        ],
+        [
+          108,
+          0,
+          637
+        ],
+        [
+          109,
+          0,
+          637
+        ],
+        [
+          110,
+          0,
+          637
+        ],
+        [
+          111,
+          0,
+          637
+        ],
+        [
+          112,
+          0,
+          637
+        ],
+        [
+          113,
+          0,
+          637
+        ],
+        [
+          114,
+          0,
+          637
+        ],
+        [
+          115,
+          0,
+          637
+        ],
+        [
+          116,
+          0,
+          637
+        ],
+        [
+          117,
+          0,
+          637
+        ],
+        [
+          118,
+          0,
+          637
+        ],
+        [
+          119,
+          0,
+          637
+        ],
+        [
+          120,
+          0,
+          637
+        ],
+        [
+          121,
+          0,
+          637
+        ],
+        [
+          122,
+          0,
+          637
+        ],
+        [
+          123,
+          0,
+          637
+        ],
+        [
+          124,
+          0,
+          637
+        ],
+        [
+          125,
+          0,
+          637
+        ],
+        [
+          126,
+          0,
+          637
+        ],
+        [
+          127,
+          0,
+          637
+        ],
+        [
+          128,
+          0,
+          637
+        ],
+        [
+          129,
+          0,
+          637
+        ],
+        [
+          130,
+          0,
+          637
+        ],
+        [
+          131,
+          0,
+          637
+        ],
+        [
+          132,
+          0,
+          637
+        ],
+        [
+          133,
+          0,
+          637
+        ],
+        [
+          134,
+          0,
+          637
+        ],
+        [
+          135,
+          0,
+          637
+        ],
+        [
+          136,
+          0,
+          637
+        ],
+        [
+          137,
+          0,
+          637
+        ],
+        [
+          138,
+          0,
+          637
+        ],
+        [
+          139,
+          0,
+          637
+        ],
+        [
+          140,
+          0,
+          637
+        ],
+        [
+          141,
+          0,
+          637
+        ],
+        [
+          142,
+          0,
+          637
+        ],
+        [
+          143,
+          0,
+          637
+        ],
+        [
+          144,
+          0,
+          637
+        ],
+        [
+          145,
+          0,
+          637
+        ],
+        [
+          146,
+          0,
+          637
+        ],
+        [
+          147,
+          0,
+          637
+        ],
+        [
+          148,
+          0,
+          637
+        ],
+        [
+          149,
+          0,
+          637
+        ],
+        [
+          150,
+          0,
+          637
+        ],
+        [
+          151,
+          4,
+          641
+        ],
+        [
+          152,
+          4,
+          641
+        ],
+        [
+          153,
+          4,
+          641
+        ],
+        [
+          154,
+          4,
+          641
+        ],
+        [
+          155,
+          4,
+          641
+        ],
+        [
+          156,
+          4,
+          641
+        ],
+        [
+          157,
+          4,
+          641
+        ],
+        [
+          158,
+          4,
+          641
+        ],
+        [
+          159,
+          4,
+          641
+        ],
+        [
+          160,
+          4,
+          641
+        ],
+        [
+          161,
+          4,
+          641
+        ],
+        [
+          162,
+          0,
+          637
+        ],
+        [
+          163,
+          0,
+          637
+        ],
+        [
+          164,
+          0,
+          637
+        ],
+        [
+          165,
+          0,
+          637
+        ],
+        [
+          166,
+          0,
+          637
+        ],
+        [
+          167,
+          0,
+          637
+        ],
+        [
+          168,
+          0,
+          637
+        ],
+        [
+          169,
+          0,
+          637
+        ],
+        [
+          170,
+          0,
+          637
+        ],
+        [
+          171,
+          0,
+          637
+        ],
+        [
+          172,
+          0,
+          637
+        ],
+        [
+          173,
+          0,
+          637
+        ],
+        [
+          174,
+          0,
+          637
+        ],
+        [
+          175,
+          0,
+          637
+        ],
+        [
+          176,
+          4,
+          641
+        ],
+        [
+          177,
+          0,
+          637
+        ],
+        [
+          178,
+          0,
+          637
+        ],
+        [
+          179,
+          0,
+          637
+        ],
+        [
+          180,
+          0,
+          637
+        ],
+        [
+          181,
+          4,
+          641
+        ],
+        [
+          182,
+          0,
+          637
+        ],
+        [
+          183,
+          4,
+          641
+        ],
+        [
+          184,
+          4,
+          641
+        ],
+        [
+          185,
+          0,
+          637
+        ],
+        [
+          186,
+          0,
+          637
+        ],
+        [
+          187,
+          0,
+          637
+        ],
+        [
+          188,
+          0,
+          637
+        ],
+        [
+          189,
+          0,
+          637
+        ],
+        [
+          190,
+          0,
+          637
+        ],
+        [
+          191,
+          0,
+          637
+        ],
+        [
+          192,
+          0,
+          637
+        ],
+        [
+          193,
+          0,
+          637
+        ],
+        [
+          194,
+          0,
+          637
+        ],
+        [
+          195,
+          0,
+          637
+        ],
+        [
+          196,
+          0,
+          637
+        ],
+        [
+          197,
+          0,
+          637
+        ],
+        [
+          198,
+          0,
+          637
+        ],
+        [
+          199,
+          0,
+          637
+        ],
+        [
+          200,
+          0,
+          637
+        ],
+        [
+          201,
+          0,
+          637
+        ],
+        [
+          202,
+          0,
+          637
+        ],
+        [
+          203,
+          0,
+          637
+        ],
+        [
+          204,
+          0,
+          637
+        ],
+        [
+          205,
+          0,
+          637
+        ],
+        [
+          206,
+          0,
+          637
+        ]
+      ]
+    },
+    {
+      "first_ID": 645,
+      "last_ID": 652,
+      "predicate_result": 2,
+      "table": 34699296,
+      "table_slots": [
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652
+      ],
+      "consumer": 33897796,
+      "native_callers": [
+        {
+          "load_PC": 34182584,
+          "call_PC": 34182592,
+          "literal_address": 34182708,
+          "literal_value": 34699296,
+          "consumer": 33897796,
+          "clean_and_current_hex": "74109fe50400a0e1dfe9feeb"
+        }
+      ],
+      "original_role_argument": 4,
+      "speaker": "Surveyor",
+      "context": "The admiral confirms an Auto Move destination. The Surveyor requirement passes, then the second assignment check fails. The Surveyor voice asks the admiral to give the order from the Captain's Cabin. Acknowledging the warning returns to the confirmation.",
+      "original_voice_choices": [
+        [
+          0,
+          2,
+          647
+        ],
+        [
+          1,
+          1,
+          646
+        ],
+        [
+          2,
+          3,
+          648
+        ],
+        [
+          3,
+          3,
+          648
+        ],
+        [
+          4,
+          0,
+          645
+        ],
+        [
+          5,
+          4,
+          649
+        ],
+        [
+          6,
+          5,
+          650
+        ],
+        [
+          7,
+          3,
+          648
+        ],
+        [
+          8,
+          0,
+          645
+        ],
+        [
+          9,
+          2,
+          647
+        ],
+        [
+          10,
+          5,
+          650
+        ],
+        [
+          11,
+          4,
+          649
+        ],
+        [
+          12,
+          1,
+          646
+        ],
+        [
+          13,
+          0,
+          645
+        ],
+        [
+          14,
+          6,
+          651
+        ],
+        [
+          15,
+          4,
+          649
+        ],
+        [
+          16,
+          1,
+          646
+        ],
+        [
+          17,
+          4,
+          649
+        ],
+        [
+          18,
+          0,
+          645
+        ],
+        [
+          19,
+          7,
+          652
+        ],
+        [
+          20,
+          4,
+          649
+        ],
+        [
+          21,
+          1,
+          646
+        ],
+        [
+          22,
+          2,
+          647
+        ],
+        [
+          23,
+          7,
+          652
+        ],
+        [
+          24,
+          3,
+          648
+        ],
+        [
+          25,
+          3,
+          648
+        ],
+        [
+          26,
+          2,
+          647
+        ],
+        [
+          27,
+          2,
+          647
+        ],
+        [
+          28,
+          4,
+          649
+        ],
+        [
+          29,
+          7,
+          652
+        ],
+        [
+          30,
+          7,
+          652
+        ],
+        [
+          31,
+          7,
+          652
+        ],
+        [
+          32,
+          0,
+          645
+        ],
+        [
+          33,
+          7,
+          652
+        ],
+        [
+          34,
+          1,
+          646
+        ],
+        [
+          35,
+          7,
+          652
+        ],
+        [
+          36,
+          7,
+          652
+        ],
+        [
+          37,
+          0,
+          645
+        ],
+        [
+          38,
+          7,
+          652
+        ],
+        [
+          39,
+          4,
+          649
+        ],
+        [
+          40,
+          7,
+          652
+        ],
+        [
+          41,
+          5,
+          650
+        ],
+        [
+          42,
+          7,
+          652
+        ],
+        [
+          43,
+          1,
+          646
+        ],
+        [
+          44,
+          4,
+          649
+        ],
+        [
+          45,
+          0,
+          645
+        ],
+        [
+          46,
+          5,
+          650
+        ],
+        [
+          47,
+          7,
+          652
+        ],
+        [
+          48,
+          4,
+          649
+        ],
+        [
+          49,
+          4,
+          649
+        ],
+        [
+          50,
+          0,
+          645
+        ],
+        [
+          51,
+          7,
+          652
+        ],
+        [
+          52,
+          7,
+          652
+        ],
+        [
+          53,
+          2,
+          647
+        ],
+        [
+          54,
+          0,
+          645
+        ],
+        [
+          55,
+          4,
+          649
+        ],
+        [
+          56,
+          0,
+          645
+        ],
+        [
+          57,
+          7,
+          652
+        ],
+        [
+          58,
+          4,
+          649
+        ],
+        [
+          59,
+          0,
+          645
+        ],
+        [
+          60,
+          1,
+          646
+        ],
+        [
+          61,
+          4,
+          649
+        ],
+        [
+          62,
+          4,
+          649
+        ],
+        [
+          63,
+          0,
+          645
+        ],
+        [
+          64,
+          0,
+          645
+        ],
+        [
+          65,
+          4,
+          649
+        ],
+        [
+          66,
+          2,
+          647
+        ],
+        [
+          67,
+          4,
+          649
+        ],
+        [
+          68,
+          0,
+          645
+        ],
+        [
+          69,
+          1,
+          646
+        ],
+        [
+          70,
+          4,
+          649
+        ],
+        [
+          71,
+          4,
+          649
+        ],
+        [
+          72,
+          4,
+          649
+        ],
+        [
+          73,
+          7,
+          652
+        ],
+        [
+          74,
+          0,
+          645
+        ],
+        [
+          75,
+          5,
+          650
+        ],
+        [
+          76,
+          5,
+          650
+        ],
+        [
+          77,
+          7,
+          652
+        ],
+        [
+          78,
+          7,
+          652
+        ],
+        [
+          79,
+          0,
+          645
+        ],
+        [
+          80,
+          3,
+          648
+        ],
+        [
+          81,
+          1,
+          646
+        ],
+        [
+          82,
+          0,
+          645
+        ],
+        [
+          83,
+          0,
+          645
+        ],
+        [
+          84,
+          0,
+          645
+        ],
+        [
+          85,
+          0,
+          645
+        ],
+        [
+          86,
+          0,
+          645
+        ],
+        [
+          87,
+          0,
+          645
+        ],
+        [
+          88,
+          0,
+          645
+        ],
+        [
+          89,
+          0,
+          645
+        ],
+        [
+          90,
+          0,
+          645
+        ],
+        [
+          91,
+          0,
+          645
+        ],
+        [
+          92,
+          0,
+          645
+        ],
+        [
+          93,
+          0,
+          645
+        ],
+        [
+          94,
+          0,
+          645
+        ],
+        [
+          95,
+          0,
+          645
+        ],
+        [
+          96,
+          0,
+          645
+        ],
+        [
+          97,
+          0,
+          645
+        ],
+        [
+          98,
+          0,
+          645
+        ],
+        [
+          99,
+          0,
+          645
+        ],
+        [
+          100,
+          0,
+          645
+        ],
+        [
+          101,
+          0,
+          645
+        ],
+        [
+          102,
+          0,
+          645
+        ],
+        [
+          103,
+          0,
+          645
+        ],
+        [
+          104,
+          0,
+          645
+        ],
+        [
+          105,
+          0,
+          645
+        ],
+        [
+          106,
+          0,
+          645
+        ],
+        [
+          107,
+          0,
+          645
+        ],
+        [
+          108,
+          0,
+          645
+        ],
+        [
+          109,
+          0,
+          645
+        ],
+        [
+          110,
+          0,
+          645
+        ],
+        [
+          111,
+          0,
+          645
+        ],
+        [
+          112,
+          0,
+          645
+        ],
+        [
+          113,
+          0,
+          645
+        ],
+        [
+          114,
+          0,
+          645
+        ],
+        [
+          115,
+          0,
+          645
+        ],
+        [
+          116,
+          0,
+          645
+        ],
+        [
+          117,
+          0,
+          645
+        ],
+        [
+          118,
+          0,
+          645
+        ],
+        [
+          119,
+          0,
+          645
+        ],
+        [
+          120,
+          0,
+          645
+        ],
+        [
+          121,
+          0,
+          645
+        ],
+        [
+          122,
+          0,
+          645
+        ],
+        [
+          123,
+          0,
+          645
+        ],
+        [
+          124,
+          0,
+          645
+        ],
+        [
+          125,
+          0,
+          645
+        ],
+        [
+          126,
+          0,
+          645
+        ],
+        [
+          127,
+          0,
+          645
+        ],
+        [
+          128,
+          0,
+          645
+        ],
+        [
+          129,
+          0,
+          645
+        ],
+        [
+          130,
+          0,
+          645
+        ],
+        [
+          131,
+          0,
+          645
+        ],
+        [
+          132,
+          0,
+          645
+        ],
+        [
+          133,
+          0,
+          645
+        ],
+        [
+          134,
+          0,
+          645
+        ],
+        [
+          135,
+          0,
+          645
+        ],
+        [
+          136,
+          0,
+          645
+        ],
+        [
+          137,
+          0,
+          645
+        ],
+        [
+          138,
+          0,
+          645
+        ],
+        [
+          139,
+          0,
+          645
+        ],
+        [
+          140,
+          0,
+          645
+        ],
+        [
+          141,
+          0,
+          645
+        ],
+        [
+          142,
+          0,
+          645
+        ],
+        [
+          143,
+          0,
+          645
+        ],
+        [
+          144,
+          0,
+          645
+        ],
+        [
+          145,
+          0,
+          645
+        ],
+        [
+          146,
+          0,
+          645
+        ],
+        [
+          147,
+          0,
+          645
+        ],
+        [
+          148,
+          0,
+          645
+        ],
+        [
+          149,
+          0,
+          645
+        ],
+        [
+          150,
+          0,
+          645
+        ],
+        [
+          151,
+          4,
+          649
+        ],
+        [
+          152,
+          4,
+          649
+        ],
+        [
+          153,
+          4,
+          649
+        ],
+        [
+          154,
+          4,
+          649
+        ],
+        [
+          155,
+          4,
+          649
+        ],
+        [
+          156,
+          4,
+          649
+        ],
+        [
+          157,
+          4,
+          649
+        ],
+        [
+          158,
+          4,
+          649
+        ],
+        [
+          159,
+          4,
+          649
+        ],
+        [
+          160,
+          4,
+          649
+        ],
+        [
+          161,
+          4,
+          649
+        ],
+        [
+          162,
+          0,
+          645
+        ],
+        [
+          163,
+          0,
+          645
+        ],
+        [
+          164,
+          0,
+          645
+        ],
+        [
+          165,
+          0,
+          645
+        ],
+        [
+          166,
+          0,
+          645
+        ],
+        [
+          167,
+          0,
+          645
+        ],
+        [
+          168,
+          0,
+          645
+        ],
+        [
+          169,
+          0,
+          645
+        ],
+        [
+          170,
+          0,
+          645
+        ],
+        [
+          171,
+          0,
+          645
+        ],
+        [
+          172,
+          0,
+          645
+        ],
+        [
+          173,
+          0,
+          645
+        ],
+        [
+          174,
+          0,
+          645
+        ],
+        [
+          175,
+          0,
+          645
+        ],
+        [
+          176,
+          4,
+          649
+        ],
+        [
+          177,
+          0,
+          645
+        ],
+        [
+          178,
+          0,
+          645
+        ],
+        [
+          179,
+          0,
+          645
+        ],
+        [
+          180,
+          0,
+          645
+        ],
+        [
+          181,
+          4,
+          649
+        ],
+        [
+          182,
+          0,
+          645
+        ],
+        [
+          183,
+          4,
+          649
+        ],
+        [
+          184,
+          4,
+          649
+        ],
+        [
+          185,
+          0,
+          645
+        ],
+        [
+          186,
+          0,
+          645
+        ],
+        [
+          187,
+          0,
+          645
+        ],
+        [
+          188,
+          0,
+          645
+        ],
+        [
+          189,
+          0,
+          645
+        ],
+        [
+          190,
+          0,
+          645
+        ],
+        [
+          191,
+          0,
+          645
+        ],
+        [
+          192,
+          0,
+          645
+        ],
+        [
+          193,
+          0,
+          645
+        ],
+        [
+          194,
+          0,
+          645
+        ],
+        [
+          195,
+          0,
+          645
+        ],
+        [
+          196,
+          0,
+          645
+        ],
+        [
+          197,
+          0,
+          645
+        ],
+        [
+          198,
+          0,
+          645
+        ],
+        [
+          199,
+          0,
+          645
+        ],
+        [
+          200,
+          0,
+          645
+        ],
+        [
+          201,
+          0,
+          645
+        ],
+        [
+          202,
+          0,
+          645
+        ],
+        [
+          203,
+          0,
+          645
+        ],
+        [
+          204,
+          0,
+          645
+        ],
+        [
+          205,
+          0,
+          645
+        ],
+        [
+          206,
+          0,
+          645
+        ]
+      ]
+    }
+  ],
+  "native_navigation_predicate": {
+    "entry": 34182716,
+    "confirm": 33890124,
+    "successful_dispatch": 33765472,
+    "conditions": [
+      "origin eligible",
+      "destination eligible",
+      "purpose 3",
+      "purpose 5",
+      "route found"
+    ],
+    "exact_dispatch_and_predicate_spans": [
+      {
+        "start": 34182332,
+        "stop": 34182712,
+        "sha256": "b3cef01feea7774411cfa36096b766659c7a20302210950c310fafc9f430cb09"
+      },
+      {
+        "start": 34182716,
+        "stop": 34182976,
+        "sha256": "ec2a3961b31a7af8c58b62b296e4334ef528cfcd701b152f767b46eaf221e911"
+      }
+    ],
+    "focused_dependency_results": [
+      {
+        "condition_inputs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "visited": [
+          34182748
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808
+        ],
+        "result": 3
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808
+        ],
+        "result": 3
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808
+        ],
+        "result": 3
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808
+        ],
+        "result": 3
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808,
+          34182840
+        ],
+        "result": 2
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808,
+          34182840
+        ],
+        "result": 2
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808,
+          34182840,
+          34182884
+        ],
+        "result": 1
+      },
+      {
+        "condition_inputs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "visited": [
+          34182748,
+          34182776,
+          34182808,
+          34182840,
+          34182884
+        ],
+        "result": 0
+      }
+    ]
+  },
+  "current_native_lookups": 24,
+  "voice_cases": 621,
+  "new_gameplay": false,
+  "formatting_pending": true,
+  "registered_release_pending": true,
+  "new_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\navigation_prerequisite_source_drafts.tsv": "6fad6bea57bdf6d9f47d0949e91d537a163de9f75025a8a6c4f5f5f615016eae",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\navigation_prerequisite_decisions.tsv": "4b6c21732c7c390850095f8c31eda356c9c10019c52d9a312c7479585df82580",
+    "releases\\all_routes_editorial_20261111_ship_emergency_candidate\\verification\\registered_release_verification.json": "5f6a99d9b04c5b2cdec92419c3d35c97809489f4c5df63e5a5412d605d1b093f",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_navigation_prerequisite_review_v1.py": "27d4fbd593ffe679130a25ab5ec381fe1b3edcdba76b307521a422888f7adc3c"
+  }
+}

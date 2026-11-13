@@ -1,0 +1,7 @@
+# Proof and relic advice registered
+
+The last 70 item-advice replies are registered. The ledger now credits 26,969 reviews. COMMON 3181–3250 finishes contextual review of the 218 item-advice messages. Fifty revisions and twenty justified retentions preserve the regional Proof of Conquest term, the map and assembly clues, crew-role advice and each adviser's degree of certainty. [Registered review](../releases/all_routes_editorial_20261111_proof_and_relic_advice_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_proof_and_relic_advice_candidate/README.md)
+
+Only COMMON blocks 35–36 and the guarded portrait selector changed. The offline checks cover both advisers in Gallery and both Items consumers. The focused Lisbon replay covers one-, two- and four-row Hans replies with exact glyph and return-state checks. Other advice records and Mikhail's branch were checked offline.
+
+The earlier coverage census leaves 1,007 other native shared keys for review or classification. Continue with shared exchanges and other player-facing text. Check older Proof of Conquest variants with their clean source and context, including earlier story uses of Supremacy. Retrospective names, roles, wraps and glyphs and representative town and random-scene testing remain in scope. Deferred artwork and the later older-record technical re-audit remain separate.

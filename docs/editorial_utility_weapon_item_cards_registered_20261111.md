@@ -1,0 +1,7 @@
+# Utility and weapon item cards registered
+
+The four utility item and 25 weapon descriptions are registered. The ledger now credits 26,583 reviews. COMMON 2835–2863 matches the private descriptions in the main Items menu and standalone card. Eight wordings were retained. The Azure Talwar's full-width I was corrected. The second visual pass refined seven cards, including the Hua Tuo recipe and the “no known reason” and “Aztec water god” phrase breaks. [Registered review](../releases/all_routes_editorial_20261111_utility_weapon_item_cards_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_utility_weapon_item_cards_candidate/README.md)
+
+The main copied allocation remains 123,264 bytes. Three descriptions use a 300-byte extension in the existing resident section. The final build passed all 116 native renders, all 218 native lookups and the original Lisbon Items return after a one-item inventory transfer. The 189 other item projections remained byte-identical. Cold boot and 24 name getters passed. The clean-input patch reconstructs the ROM byte for byte.
+
+Continue with the armor descriptions beginning at COMMON 2864. Rebind the item paragraph and free spans to the current pointers. Options, Market, remaining player-facing prose, and earlier names and role labels remain in the editorial scope. Graphics artwork and the older-record technical re-audit remain separate.

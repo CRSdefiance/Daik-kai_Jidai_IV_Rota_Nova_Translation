@@ -1,0 +1,4376 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_573",
+      "message_ID": 573,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1336,
+        "copy_end": 1396,
+        "bytes": 57,
+        "record_index": 19,
+        "table_offset": 1318282,
+        "start_in_record": 66
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1110,
+        "copy_end": 1168,
+        "bytes": 57,
+        "record_index": 35,
+        "table_offset": 1318282,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281498140908582aa985282ea82c482a282dc82b781490a8af88acd82cc914492ea82aa8f9d82f182c582a282e982e682a482c582b7",
+      "current_hex": "41646d6972616c212041206c65616b210a202054686520666c61677368697027732068756c6c2069732064616d616765642e20202020202020",
+      "source_Japanese": "提督！　水が漏れています！\n旗艦の船底が傷んでいるようです",
+      "current_English": "Admiral! A leak!\n  The flagship's hull is damaged.       ",
+      "english": "Admiral, we're taking on water! It looks like the bottom of the flagship's hull is damaged.",
+      "independent_English": "Admiral, we're taking on water! It looks like the bottom of the flagship's hull is damaged.",
+      "source_meaning": "A formal report to the admiral that the flagship is leaking, apparently from damage to the bottom of its hull.",
+      "localization_note": "Restore the likely damage at the bottom of the flagship's hull and the speaker's uncertainty.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212041206c65616b210a202054686520666c61677368697027732068756c6c2069732064616d616765642e20202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1110,
+        "copy_end": 1208,
+        "bytes": 96,
+        "record_index": 35,
+        "table_offset": 1318282,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c2077652772652074616b696e67206f6e207761746572210a20204974206c6f6f6b73206c696b652074686520626f74746f6d0a20206f662074686520666c61677368697027732068756c6c2069732064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c2077652772652074616b696e67206f6e207761746572210a20204974206c6f6f6b73206c696b652074686520626f74746f6d0a20206f662074686520666c61677368697027732068756c6c2069732064616d616765642e",
+          "protected_phrases": [
+            "Admiral, we're taking on water!",
+            "It looks like the bottom",
+            "of the flagship's hull is damaged."
+          ],
+          "ink_sha256": "c89a35f8eb45de561a3973f9e9b0f92c8327f57ac667c6564df3ba056478c413"
+        }
+      ],
+      "gameplay_observed": true,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_574",
+      "message_ID": 574,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1396,
+        "copy_end": 1444,
+        "bytes": 45,
+        "record_index": 20,
+        "table_offset": 1318284,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1168,
+        "copy_end": 1214,
+        "bytes": 45,
+        "record_index": 36,
+        "table_offset": 1318284,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281419085985282ea82c582b781490a8af88acd82cc914492ea82aa8f9d82f182c582a282dc82b78149",
+      "current_hex": "41646d6972616c2c2061206c65616b210a2020466c6167736869702068756c6c2064616d616765642120202020",
+      "source_Japanese": "提督、水漏れです！\n旗艦の船底が傷んでいます！",
+      "current_English": "Admiral, a leak!\n  Flagship hull damaged!    ",
+      "english": "Admiral, we've sprung a leak! The bottom of the flagship's hull is damaged.",
+      "independent_English": "Admiral, we've sprung a leak! The bottom of the flagship's hull is damaged.",
+      "source_meaning": "The speaker reports a leak to the admiral and states that the flagship's hull is damaged at the bottom.",
+      "localization_note": "Restore the bottom of the hull as the damaged part. This speaker is sure.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c2c2061206c65616b210a2020466c6167736869702068756c6c2064616d616765642120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1208,
+        "copy_end": 1290,
+        "bytes": 80,
+        "record_index": 37,
+        "table_offset": 1318284,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c20776527766520737072756e672061206c65616b210a202054686520626f74746f6d206f662074686520666c61677368697027732068756c6c0a202069732064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c20776527766520737072756e672061206c65616b210a202054686520626f74746f6d206f662074686520666c61677368697027732068756c6c0a202069732064616d616765642e",
+          "protected_phrases": [
+            "Admiral, we've sprung a leak!",
+            "The bottom of the flagship's hull",
+            "is damaged."
+          ],
+          "ink_sha256": "be8ff7f7c0dd11ea17694b88df14c8f453b5b9a725185dcc8ce70d1a342a1ea2"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_575",
+      "message_ID": 575,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1444,
+        "copy_end": 1496,
+        "bytes": 49,
+        "record_index": 21,
+        "table_offset": 1318286,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1214,
+        "copy_end": 1264,
+        "bytes": 49,
+        "record_index": 37,
+        "table_offset": 1318286,
+        "start_in_record": 0
+      },
+      "source_hex": "82b182cc914481419085985282ea82b582c482e982e681490a914492ea82aa8f9d82f182c582e982cc82a982c882a08163",
+      "current_hex": "546869732073686970206973206c65616b696e67210a20204973207468652068756c6c2064616d616765642e2e2e3f2020",
+      "source_Japanese": "この船、水漏れしてるよ！\n船底が傷んでるのかなあ…",
+      "current_English": "This ship is leaking!\n  Is the hull damaged...?  ",
+      "english": "We're taking on water! Think there's damage to the bottom of the hull?",
+      "independent_English": "We're taking on water! Think there's damage to the bottom of the hull?",
+      "source_meaning": "The speaker notices this ship leaking and wonders whether the bottom of the hull is damaged.",
+      "localization_note": "Keep the leak on this ship and restore the tentative question about the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "546869732073686970206973206c65616b696e67210a20204973207468652068756c6c2064616d616765642e2e2e3f2020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1290,
+        "copy_end": 1366,
+        "bytes": 75,
+        "record_index": 39,
+        "table_offset": 1318286,
+        "start_in_record": 0,
+        "exact_stored_hex": "2057652772652074616b696e67206f6e207761746572210a20205468696e6b20746865726527732064616d6167650a2020746f2074686520626f74746f6d206f66207468652068756c6c3f",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2057652772652074616b696e67206f6e207761746572210a20205468696e6b20746865726527732064616d6167650a2020746f2074686520626f74746f6d206f66207468652068756c6c3f",
+          "protected_phrases": [
+            "We're taking on water!",
+            "Think there's damage",
+            "to the bottom of the hull?"
+          ],
+          "ink_sha256": "7b27f30eb7c4acd36188e1919099af31da9cef3ae636a87d1e9ed3c8e5ac1c9c"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_576",
+      "message_ID": 576,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1496,
+        "copy_end": 1560,
+        "bytes": 61,
+        "record_index": 22,
+        "table_offset": 1318288,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1264,
+        "copy_end": 1326,
+        "bytes": 61,
+        "record_index": 38,
+        "table_offset": 1318288,
+        "start_in_record": 0
+      },
+      "source_hex": "91e595cf82be8149814082b182cc914481419085985282ea82b582c482e282aa82e981490a914492ea82aa8f9d82f182c582e982dd82c482a682be82c8",
+      "current_hex": "41206c65616b210a20205468652068756c6c206d7573742062652064616d616765642e2020202020202020202020202020202020202020202020202020",
+      "source_Japanese": "大変だ！　この船、水漏れしてやがる！\n船底が傷んでるみてえだな",
+      "current_English": "A leak!\n  The hull must be damaged.                          ",
+      "english": "We're in trouble! This ship's taking on water! Looks like the bottom of the hull's damaged.",
+      "independent_English": "We're in trouble! This ship's taking on water! Looks like the bottom of the hull's damaged.",
+      "source_meaning": "A rough voice sounds the alarm about this ship leaking and suspects damage to the bottom of its hull.",
+      "localization_note": "Restore the rough alarm and the speaker's qualified diagnosis.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41206c65616b210a20205468652068756c6c206d7573742062652064616d616765642e2020202020202020202020202020202020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1366,
+        "copy_end": 1466,
+        "bytes": 98,
+        "record_index": 40,
+        "table_offset": 1318288,
+        "start_in_record": 0,
+        "exact_stored_hex": "20576527726520696e2074726f75626c65210a202054686973207368697027732074616b696e67206f6e207761746572210a20204c6f6f6b73206c696b652074686520626f74746f6d0a20206f66207468652068756c6c27732064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20576527726520696e2074726f75626c65210a202054686973207368697027732074616b696e67206f6e207761746572210a20204c6f6f6b73206c696b652074686520626f74746f6d0a20206f66207468652068756c6c27732064616d616765642e",
+          "protected_phrases": [
+            "We're in trouble!",
+            "This ship's taking on water!",
+            "Looks like the bottom",
+            "of the hull's damaged."
+          ],
+          "ink_sha256": "8a680dd6dd0679dbffd3337b401d51f4d49c8ffb292e328ed1ea173536318c34"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_577",
+      "message_ID": 577,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1560,
+        "copy_end": 1612,
+        "bytes": 51,
+        "record_index": 23,
+        "table_offset": 1318290,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1326,
+        "copy_end": 1378,
+        "bytes": 51,
+        "record_index": 39,
+        "table_offset": 1318290,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814191e595cf82b682e181490a8af88acd82cc914492ea82aa8f9d82f182c5908582aa985282ea82c682e982bc8149",
+      "current_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c206973206c65616b696e6721202020202020202020",
+      "source_Japanese": "提督、大変じゃ！\n旗艦の船底が傷んで水が漏れとるぞ！",
+      "current_English": "Admiral! The flagship's\n  hull is leaking!         ",
+      "english": "Admiral, trouble! The flagship's taking on water. The bottom of the hull's damaged!",
+      "independent_English": "Admiral, trouble! The flagship's taking on water. The bottom of the hull's damaged!",
+      "source_meaning": "The older voice urgently tells the admiral the flagship is leaking because the bottom of its hull is damaged.",
+      "localization_note": "Restore the damaged underside of the flagship and the older speaker's urgent delivery.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c206973206c65616b696e6721202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1466,
+        "copy_end": 1556,
+        "bytes": 88,
+        "record_index": 42,
+        "table_offset": 1318290,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c2074726f75626c65210a202054686520666c61677368697027732074616b696e67206f6e2077617465722e0a202054686520626f74746f6d206f66207468652068756c6c27732064616d6167656421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c2074726f75626c65210a202054686520666c61677368697027732074616b696e67206f6e2077617465722e0a202054686520626f74746f6d206f66207468652068756c6c27732064616d6167656421",
+          "protected_phrases": [
+            "Admiral, trouble!",
+            "The flagship's taking on water.",
+            "The bottom of the hull's damaged!"
+          ],
+          "ink_sha256": "f0e3cd821d892353855bf232d6befa015c9952251ed93ce9a33534184fcce243"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_578",
+      "message_ID": 578,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1612,
+        "copy_end": 1672,
+        "bytes": 57,
+        "record_index": 24,
+        "table_offset": 1318292,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1378,
+        "copy_end": 1436,
+        "bytes": 57,
+        "record_index": 40,
+        "table_offset": 1318292,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b814182bd82a282d682f182be815b81490a82b182cc9144814192ea82a982e7908582aa82e082ea82c482e9815b8149",
+      "current_hex": "41646d6972616c21205765277265206c65616b696e67210a20205761746572277320636f6d696e67207468726f756768212020202020202020",
+      "source_Japanese": "ていとくー、たいへんだー！\nこの船、底から水がもれてるー！",
+      "current_English": "Admiral! We're leaking!\n  Water's coming through!        ",
+      "english": "Admiral! Water's coming in through the bottom of the ship!",
+      "independent_English": "Admiral! Water's coming in through the bottom of the ship!",
+      "source_meaning": "A frightened younger speaker calls the admiral and reports that water is coming in through the bottom of this ship.",
+      "localization_note": "Restore where the water is coming in and keep the young speaker's panicked cry.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c21205765277265206c65616b696e67210a20205761746572277320636f6d696e67207468726f756768212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1556,
+        "copy_end": 1618,
+        "bytes": 61,
+        "record_index": 44,
+        "table_offset": 1318292,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c21205761746572277320636f6d696e6720696e0a20207468726f7567682074686520626f74746f6d206f6620746865207368697021",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c21205761746572277320636f6d696e6720696e0a20207468726f7567682074686520626f74746f6d206f6620746865207368697021",
+          "protected_phrases": [
+            "Water's coming in",
+            "through the bottom of the ship!"
+          ],
+          "ink_sha256": "4af7c7db84e3855ea7cd0c012b8c83a3b75bf084ee016c6caa423ebf51e8a4a8"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_579",
+      "message_ID": 579,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1672,
+        "copy_end": 1728,
+        "bytes": 53,
+        "record_index": 25,
+        "table_offset": 1318294,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1436,
+        "copy_end": 1490,
+        "bytes": 53,
+        "record_index": 41,
+        "table_offset": 1318294,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281419085985282ea82c582b782bc81490a8af88acd82cc914492ea82aa8f9d82f182c582a282e982e682a482c582b782c8",
+      "current_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c2069732064616d616765642e2020202020202020202020",
+      "source_Japanese": "提督、水漏れですぞ！\n旗艦の船底が傷んでいるようですな",
+      "current_English": "Admiral! The flagship's\n  hull is damaged.           ",
+      "english": "Admiral, we've got a leak! The bottom of the flagship's hull appears to be damaged.",
+      "independent_English": "Admiral, we've got a leak! The bottom of the flagship's hull appears to be damaged.",
+      "source_meaning": "A polite but emphatic report of a leak, with apparent damage to the bottom of the flagship's hull.",
+      "localization_note": "Restore both the reported leak and the apparent damage at the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Shipwright",
+      "context": "The flagship is taking on water. The original Shipwright role reports a leak or damage to the bottom of its hull.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212054686520666c61677368697027730a202068756c6c2069732064616d616765642e2020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1618,
+        "copy_end": 1708,
+        "bytes": 88,
+        "record_index": 45,
+        "table_offset": 1318294,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041646d6972616c2c20776527766520676f742061206c65616b210a202054686520626f74746f6d206f662074686520666c61677368697027732068756c6c0a20206170706561727320746f2062652064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c20776527766520676f742061206c65616b210a202054686520626f74746f6d206f662074686520666c61677368697027732068756c6c0a20206170706561727320746f2062652064616d616765642e",
+          "protected_phrases": [
+            "Admiral, we've got a leak!",
+            "The bottom of the flagship's hull",
+            "appears to be damaged."
+          ],
+          "ink_sha256": "2edd87ac16380d518e35aed518647d0c0d5651288254d7d0ce100c6c40026d91"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_580",
+      "message_ID": 580,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1728,
+        "copy_end": 1776,
+        "bytes": 46,
+        "record_index": 26,
+        "table_offset": 1318296,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1490,
+        "copy_end": 1537,
+        "bytes": 46,
+        "record_index": 42,
+        "table_offset": 1318296,
+        "start_in_record": 0
+      },
+      "source_hex": "257382c50a9085985282ea82aa94ad90b681490a914492ea82aa8f9d82f182c582a282e982e682a482c582b78149",
+      "current_hex": "41206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642120",
+      "source_Japanese": "%sで\n水漏れが発生！\n船底が傷んでいるようです！",
+      "current_English": "A leak aboard %s!\n  The hull appears damaged! ",
+      "english": "There's a leak aboard %s! The bottom of its hull looks damaged.",
+      "independent_English": "There's a leak aboard %s! It looks like the bottom of its hull is damaged.",
+      "source_meaning": "A leak is reported aboard the named ship, with apparent damage to the bottom of its hull.",
+      "localization_note": "Use the ship's name in the alarm and keep the likely damage as a separate, direct observation.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "There's a leak aboard %s! It looks like the bottom of its hull is damaged.",
+      "registered_reference": {
+        "block": 7,
+        "offset": 1708,
+        "copy_end": 1773,
+        "bytes": 63,
+        "record_index": 47,
+        "table_offset": 1318296,
+        "start_in_record": 0,
+        "exact_stored_hex": "546865726527732061206c65616b2061626f617264202573212054686520626f74746f6d206f66206974732068756c6c206c6f6f6b732064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "20546865726527732061206c65616b2061626f617264204c6174696e6121205468650a2020626f74746f6d206f66206974732068756c6c206c6f6f6b732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "f775aed5045e4a0fb6d97858e31d4c4e2995c60849926279206f28996bd7b938"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "20546865726527732061206c65616b2061626f6172642053616e7461204d61726961210a202054686520626f74746f6d206f66206974732068756c6c0a20206c6f6f6b732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "8d101f9fe4a67521330429cf9cef844d7fb710dfe4c13d224a458a92f6c25c6d"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "20546865726527732061206c65616b2061626f6172640a20204142434445464748494a4b4c4d4e4f505152212054686520626f74746f6d0a20206f66206974732068756c6c206c6f6f6b732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "92db7070a3be47e5cc29c5cd469514d67be4b39b8761ca899ca6c8bb518e207e"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "20546865726527732061206c65616b2061626f617264204649464f464f465521205468650a2020626f74746f6d206f66206974732068756c6c206c6f6f6b732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "cd9cbf39cb92abd9a714a7daa016c8a7e724b29c42ff8203701a84c61bb02170"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "20546865726527732061206c65616b2061626f6172640a202092b78de88adb92b78de88adb92b78de88adb212054686520626f74746f6d0a20206f66206974732068756c6c206c6f6f6b732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "9a88f06f00a23538bf136f144507c7d4e6b62e5bfb293179617e736258518539"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_581",
+      "message_ID": 581,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1776,
+        "copy_end": 1828,
+        "bytes": 51,
+        "record_index": 27,
+        "table_offset": 1318298,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1537,
+        "copy_end": 1589,
+        "bytes": 51,
+        "record_index": 43,
+        "table_offset": 1318298,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a9085985282ea82be82c182c481490a914492ea82aa8f9d82f182c582a282e982cc82a982c882a0",
+      "current_hex": "2041646d6972616c21202573206973206c65616b696e67210a20204973207468652068756c6c2064616d616765643f20202020",
+      "source_Japanese": "提督！\n%sで\n水漏れだって！\n船底が傷んでいるのかなあ",
+      "current_English": " Admiral! %s is leaking!\n  Is the hull damaged?    ",
+      "english": "Admiral, they say %s has a leak! Think the hull's damaged underneath?",
+      "independent_English": "Admiral, they say %s is taking on water! Think the bottom of its hull is damaged?",
+      "source_meaning": "The speaker tells the admiral they've heard that the named ship is leaking and wonders about damage to its hull.",
+      "localization_note": "Keep the secondhand report and the speaker's question about damage at the bottom of the hull.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21202573206973206c65616b696e67210a20204973207468652068756c6c2064616d616765643f20202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "Admiral, they say %s is taking on water! Think the bottom of its hull is damaged?",
+      "registered_reference": {
+        "block": 7,
+        "offset": 1773,
+        "copy_end": 1843,
+        "bytes": 69,
+        "record_index": 49,
+        "table_offset": 1318298,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c207468657920736179202573206861732061206c65616b21205468696e6b207468652068756c6c27732064616d6167656420756e6465726e656174683f",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2041646d6972616c2c207468657920736179204c6174696e61206861730a202061206c65616b21205468696e6b207468652068756c6c27732064616d616765640a2020756e6465726e656174683f",
+          "protected_phrases": [],
+          "ink_sha256": "49fe9319cdae532c98a4a3ffd6d2c826215762bfd84dd0a7688e1a9d89385caa"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361792053616e7461204d61726961206861730a202061206c65616b21205468696e6b207468652068756c6c27732064616d616765640a2020756e6465726e656174683f",
+          "protected_phrases": [],
+          "ink_sha256": "4f44ba0899b2d92016a4ced7aa4579c2c36b42c1d9d9b765fd51ee69d7e42919"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361790a20204142434445464748494a4b4c4d4e4f505152206861732061206c65616b210a20205468696e6b207468652068756c6c27732064616d616765640a2020756e6465726e656174683f",
+          "protected_phrases": [],
+          "ink_sha256": "aea2d2192129f84566a2cf52b57653958cd5b93a6400743bef916e10065bbbbe"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2041646d6972616c2c207468657920736179204649464f464f4655206861730a202061206c65616b21205468696e6b207468652068756c6c27732064616d616765640a2020756e6465726e656174683f",
+          "protected_phrases": [],
+          "ink_sha256": "6872b05df4421b608d1d359b86f057079f0d52e1794b3eba75abbeedcf42b955"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361790a202092b78de88adb92b78de88adb92b78de88adb206861732061206c65616b210a20205468696e6b207468652068756c6c27732064616d616765640a2020756e6465726e656174683f",
+          "protected_phrases": [],
+          "ink_sha256": "c856b6866700f42113034c07a1c8e30ccdc1b3566d5a37667a10b5f63ade01ab"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_582",
+      "message_ID": 582,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1828,
+        "copy_end": 1880,
+        "bytes": 49,
+        "record_index": 28,
+        "table_offset": 1318300,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1589,
+        "copy_end": 1639,
+        "bytes": 49,
+        "record_index": 44,
+        "table_offset": 1318300,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382aa0a9085985282ea82be82c182c482e681490a914492ea82aa8f9d82f182c582e982f182be82c8",
+      "current_hex": "202041646d6972616c21202573206973206c65616b696e67210a202048756c6c2064616d616765642e2020202020202020",
+      "source_Japanese": "提督！\n%sが\n水漏れだってよ！\n船底が傷んでるんだな",
+      "current_English": "  Admiral! %s is leaking!\n  Hull damaged.        ",
+      "english": "Admiral, word is %s has sprung a leak! Must be damage to the bottom of its hull.",
+      "independent_English": "Admiral, word is %s is taking on water! Must be damage to the bottom of its hull.",
+      "source_meaning": "A rough voice reports word of a leak on the named ship and concludes the hull is damaged at the bottom.",
+      "localization_note": "Keep the rough speaker's hearsay and the inference that the bottom of the hull is damaged.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573206973206c65616b696e67210a202048756c6c2064616d616765642e2020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "first_pass_English": "Admiral, word is %s is taking on water! Must be damage to the bottom of its hull.",
+      "registered_reference": {
+        "block": 7,
+        "offset": 1843,
+        "copy_end": 1925,
+        "bytes": 80,
+        "record_index": 50,
+        "table_offset": 1318300,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c20776f72642069732025732068617320737072756e672061206c65616b21204d7573742062652064616d61676520746f2074686520626f74746f6d206f66206974732068756c6c2e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2041646d6972616c2c20776f7264206973204c6174696e612068617320737072756e670a202061206c65616b21204d7573742062650a202064616d61676520746f2074686520626f74746f6d0a20206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "9f50c0fe83d925cb29aa01e0f78e7d9454d001e7337d26e6512e129114259ded"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2041646d6972616c2c20776f72642069732053616e7461204d61726961206861730a2020737072756e672061206c65616b21204d7573742062652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "0f361afbaf4ae5c69d93aa407db15c8ab65c073fb1e4188b21733210b399850f"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2041646d6972616c2c20776f7264206973204142434445464748494a4b4c4d4e4f5051520a202068617320737072756e672061206c65616b21204d7573742062652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "4ebc1794ed2e0775ac73b8a8c0ccd734995f02c2b7befc7ebae75b77441e958b"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2041646d6972616c2c20776f7264206973204649464f464f4655206861730a2020737072756e672061206c65616b21204d7573742062652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "8e658c15baaee1ea794a9927545ed520c38c08697eeac966663247b205796a5d"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2041646d6972616c2c20776f72642069732092b78de88adb92b78de88adb92b78de88adb0a202068617320737072756e672061206c65616b21204d7573742062652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "457e507d1ac57e24eb967e4bc99b49575cf13cc0e962a1ecf1d5d1509579b70a"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_583",
+      "message_ID": 583,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1880,
+        "copy_end": 1936,
+        "bytes": 55,
+        "record_index": 29,
+        "table_offset": 1318302,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1639,
+        "copy_end": 1695,
+        "bytes": 55,
+        "record_index": 45,
+        "table_offset": 1318302,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a9085985282ea94ad90b682b682e181490a914492ea82aa8f9d82f182c582a882e982e682a482b682e182c8",
+      "current_hex": "41646d6972616c212041206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642e20",
+      "source_Japanese": "提督！\n%sで\n水漏れ発生じゃ！\n船底が傷んでおるようじゃな",
+      "current_English": "Admiral! A leak aboard %s!\n  The hull appears damaged. ",
+      "english": "Admiral, there's a leak aboard %s! Looks like damage to the bottom of its hull.",
+      "independent_English": "Admiral, there's a leak aboard %s! Looks like damage to the bottom of its hull.",
+      "source_meaning": "An older voice urgently reports the leak aboard the named ship and suspects damage at the bottom of its hull.",
+      "localization_note": "Keep the older voice's direct alarm and the distinction between the leak and its likely cause.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "41646d6972616c212041206c65616b2061626f617264202573210a20205468652068756c6c20617070656172732064616d616765642e20",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 1925,
+        "copy_end": 2005,
+        "bytes": 79,
+        "record_index": 52,
+        "table_offset": 1318302,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c20746865726527732061206c65616b2061626f61726420257321204c6f6f6b73206c696b652064616d61676520746f2074686520626f74746f6d206f66206974732068756c6c2e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2041646d6972616c2c20746865726527732061206c65616b2061626f6172640a20204c6174696e6121204c6f6f6b73206c696b652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "95896ceaa1b35dcac2f688d24ccf07292b966b6b4c8ce9a8a96bebc4aaf18e75"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2041646d6972616c2c20746865726527732061206c65616b2061626f6172640a202053616e7461204d6172696121204c6f6f6b73206c696b652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "f4d9e594c801416c16e99082dee6b103dc1d59362dd4f01b886382d7841360ed"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2041646d6972616c2c20746865726527732061206c65616b2061626f6172640a20204142434445464748494a4b4c4d4e4f50515221204c6f6f6b73206c696b650a202064616d61676520746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "f4b66c2592664a9d0df140c203c35b744bc66efe53ad0c3dfa148bab96b04200"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2041646d6972616c2c20746865726527732061206c65616b2061626f6172640a20204649464f464f465521204c6f6f6b73206c696b652064616d6167650a2020746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "3e301e8bf1947b83ec393f501eb6e4c811a510f6ada2fb9b750964d7b94f7a67"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2041646d6972616c2c20746865726527732061206c65616b2061626f6172640a202092b78de88adb92b78de88adb92b78de88adb21204c6f6f6b73206c696b650a202064616d61676520746f2074686520626f74746f6d206f66206974732068756c6c2e",
+          "protected_phrases": [],
+          "ink_sha256": "3b06791fe978739b4717d0038f56008c1b9100c33f3ea064da78debf5011b47a"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_584",
+      "message_ID": 584,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1936,
+        "copy_end": 1996,
+        "bytes": 57,
+        "record_index": 30,
+        "table_offset": 1318304,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1695,
+        "copy_end": 1753,
+        "bytes": 57,
+        "record_index": 46,
+        "table_offset": 1318304,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c281490a257382c50a908582aa82e082ea82c482e982c182c481490a914492ea82aa82a282bd82f182c582e982dd82bd82a282be82cb",
+      "current_hex": "202041646d6972616c21202573206973206c65616b696e67210a20204974732068756c6c207365656d732064616d616765642e202020202020",
+      "source_Japanese": "提督！\n%sで\n水がもれてるって！\n船底がいたんでるみたいだね",
+      "current_English": "  Admiral! %s is leaking!\n  Its hull seems damaged.      ",
+      "english": "Admiral, they say %s is leaking! I think the bottom of its hull is damaged.",
+      "independent_English": "Admiral, they say %s is leaking! I think the bottom of its hull is damaged.",
+      "source_meaning": "The young speaker reports hearing the named ship is taking on water and suspects damage to the hull at the bottom.",
+      "localization_note": "Restore the young speaker's secondhand information and tentative conclusion.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "A different ship has sprung a leak. Its original name getter supplies the ship in the alarm.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202041646d6972616c21202573206973206c65616b696e67210a20204974732068756c6c207365656d732064616d616765642e202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2005,
+        "copy_end": 2081,
+        "bytes": 75,
+        "record_index": 53,
+        "table_offset": 1318304,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c207468657920736179202573206973206c65616b696e67212049207468696e6b2074686520626f74746f6d206f66206974732068756c6c2069732064616d616765642e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2041646d6972616c2c207468657920736179204c6174696e612069730a20206c65616b696e67212049207468696e6b2074686520626f74746f6d206f66206974730a202068756c6c2069732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "1990ac9f90501aa963805533544bbb61f70920fd44748bbbd8e78c852ebb3359"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361792053616e7461204d617269612069730a20206c65616b696e67212049207468696e6b2074686520626f74746f6d206f66206974730a202068756c6c2069732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "cc6c67a565f7bfb9bbca492cbf8259e19dce0a12d58997af5ca08c50e3b15314"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361790a20204142434445464748494a4b4c4d4e4f505152206973206c65616b696e67210a202049207468696e6b2074686520626f74746f6d206f66206974732068756c6c0a202069732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "18c982b8bba25284ca6d32057163d37bc1da35a4568fe4e992f1df2cf4fbd103"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2041646d6972616c2c207468657920736179204649464f464f46552069730a20206c65616b696e67212049207468696e6b2074686520626f74746f6d206f66206974730a202068756c6c2069732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "c42f484e98b9f97d078aaf90ea104a3153815545788144bbe53031854d0732ea"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2041646d6972616c2c2074686579207361790a202092b78de88adb92b78de88adb92b78de88adb206973206c65616b696e67210a202049207468696e6b2074686520626f74746f6d206f66206974732068756c6c0a202069732064616d616765642e",
+          "protected_phrases": [],
+          "ink_sha256": "887660d40194312c15b2dec270485c1aea6d9bb37e9ac5fdd201daa8ee13da62"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_585",
+      "message_ID": 585,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 1996,
+        "copy_end": 2016,
+        "bytes": 20,
+        "record_index": 31,
+        "table_offset": 1318306,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1753,
+        "copy_end": 1774,
+        "bytes": 20,
+        "record_index": 47,
+        "table_offset": 1318306,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "4669726520657874696e67756973686564212020",
+      "source_Japanese": "火災は鎮火しました！",
+      "current_English": "Fire extinguished!  ",
+      "english": "Fire extinguished!",
+      "independent_English": "The fire is out!",
+      "source_meaning": "A formal announcement that the fire is out.",
+      "localization_note": "Retain the short formal announcement. The source directly reports that the fire is out.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4669726520657874696e67756973686564212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2081,
+        "copy_end": 2100,
+        "bytes": 18,
+        "record_index": 54,
+        "table_offset": 1318306,
+        "start_in_record": 0,
+        "exact_stored_hex": "4669726520657874696e6775697368656421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204669726520657874696e6775697368656421",
+          "protected_phrases": [],
+          "ink_sha256": "9e1f9d5d06eddda5bd4251eeb9aa47d0ca6888e8515a0006b36c5d5a219095dc"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_586",
+      "message_ID": 586,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2016,
+        "copy_end": 2036,
+        "bytes": 20,
+        "record_index": 31,
+        "table_offset": 1318308,
+        "start_in_record": 22
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1774,
+        "copy_end": 1795,
+        "bytes": 20,
+        "record_index": 48,
+        "table_offset": 1318308,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "4669726520657874696e67756973686564212020",
+      "source_Japanese": "火災は鎮火しました！",
+      "current_English": "Fire extinguished!  ",
+      "english": "Fire extinguished!",
+      "independent_English": "The fire is out!",
+      "source_meaning": "A second matter-of-fact announcement that the fire is out.",
+      "localization_note": "Retain the identical wording because the two formal Japanese alternatives are identical.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4669726520657874696e67756973686564212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2100,
+        "copy_end": 2119,
+        "bytes": 18,
+        "record_index": 55,
+        "table_offset": 1318308,
+        "start_in_record": 0,
+        "exact_stored_hex": "4669726520657874696e6775697368656421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204669726520657874696e6775697368656421",
+          "protected_phrases": [],
+          "ink_sha256": "9e1f9d5d06eddda5bd4251eeb9aa47d0ca6888e8515a0006b36c5d5a219095dc"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_587",
+      "message_ID": 587,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2036,
+        "copy_end": 2060,
+        "bytes": 22,
+        "record_index": 31,
+        "table_offset": 1318310,
+        "start_in_record": 42
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1795,
+        "copy_end": 1818,
+        "bytes": 22,
+        "record_index": 49,
+        "table_offset": 1318310,
+        "start_in_record": 0
+      },
+      "source_hex": "91e58fe49576814189ce82cd8fc182b582bd82e68149",
+      "current_hex": "49742773206f6b61792e20466972652773206f757421",
+      "source_Japanese": "大丈夫、火は消したよ！",
+      "current_English": "It's okay. Fire's out!",
+      "english": "It's all right. We put the fire out!",
+      "independent_English": "It's all right. We put the fire out!",
+      "source_meaning": "The speaker reassures the listener and says the fire has been put out.",
+      "localization_note": "Keep the reassurance, then report the successful response in conversational English.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "49742773206f6b61792e20466972652773206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2119,
+        "copy_end": 2160,
+        "bytes": 39,
+        "record_index": 56,
+        "table_offset": 1318310,
+        "start_in_record": 0,
+        "exact_stored_hex": "204974277320616c6c2072696768742e0a2020576520707574207468652066697265206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "204974277320616c6c2072696768742e0a2020576520707574207468652066697265206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "0314d870f958c48d0fe255f52341da24a30a290c3d40057e27215e44628ba7d1"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_588",
+      "message_ID": 588,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2060,
+        "copy_end": 2080,
+        "bytes": 20,
+        "record_index": 32,
+        "table_offset": 1318312,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1818,
+        "copy_end": 1839,
+        "bytes": 20,
+        "record_index": 50,
+        "table_offset": 1318312,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce8dd082cd92c189ce82b582bd82ed82e68149",
+      "current_hex": "205468652066697265206973206f757421202020",
+      "source_Japanese": "火災は鎮火したわよ！",
+      "current_English": " The fire is out!   ",
+      "english": "The fire is out!",
+      "independent_English": "The fire's out now!",
+      "source_meaning": "The speaker announces that the fire is out, with a confident, familiar cadence.",
+      "localization_note": "Retain the natural, confident report that the fire is out.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "205468652066697265206973206f757421202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2160,
+        "copy_end": 2177,
+        "bytes": 16,
+        "record_index": 58,
+        "table_offset": 1318312,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468652066697265206973206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205468652066697265206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "16d7ecb298ac22e7c0e8e8ff15b0d251e97b6c4f1289b0bf32f2e2cae5e60224"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_589",
+      "message_ID": 589,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2080,
+        "copy_end": 2100,
+        "bytes": 18,
+        "record_index": 32,
+        "table_offset": 1318314,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1839,
+        "copy_end": 1858,
+        "bytes": 18,
+        "record_index": 51,
+        "table_offset": 1318314,
+        "start_in_record": 0
+      },
+      "source_hex": "82e082a489ce82cd8fc182a682bd82ba8149",
+      "current_hex": "2020466c616d657320617265206f75742120",
+      "source_Japanese": "もう火は消えたぜ！",
+      "current_English": "  Flames are out! ",
+      "english": "Fire's out now!",
+      "independent_English": "The fire's out!",
+      "source_meaning": "A rough, relieved voice says the fire is out already.",
+      "localization_note": "Use the rough voice's quick relief and preserve that the fire has already been extinguished.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2020466c616d657320617265206f75742120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2177,
+        "copy_end": 2194,
+        "bytes": 15,
+        "record_index": 59,
+        "table_offset": 1318314,
+        "start_in_record": 0,
+        "exact_stored_hex": "466972652773206f7574206e6f7721",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20466972652773206f7574206e6f7721",
+          "protected_phrases": [],
+          "ink_sha256": "9ed2efbacece15514b8910d9d483f096325993c70410703674908a5bbc492a4a"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_590",
+      "message_ID": 590,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2100,
+        "copy_end": 2128,
+        "bytes": 26,
+        "record_index": 33,
+        "table_offset": 1318316,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1858,
+        "copy_end": 1885,
+        "bytes": 26,
+        "record_index": 52,
+        "table_offset": 1318316,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c2814189ce8dd082cd92c189ce82b582bd82bc82a28149",
+      "current_hex": "2041646d6972616c2c207468652066697265206973206f757421",
+      "source_Japanese": "提督、火災は鎮火したぞい！",
+      "current_English": " Admiral, the fire is out!",
+      "english": "Admiral, the fire is out!",
+      "independent_English": "Admiral, the fire's out!",
+      "source_meaning": "The older speaker tells the admiral the fire is out.",
+      "localization_note": "Retain the older speaker's short report and direct address to the admiral.",
+      "decision": "retention",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c2c207468652066697265206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2194,
+        "copy_end": 2221,
+        "bytes": 25,
+        "record_index": 61,
+        "table_offset": 1318316,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2c207468652066697265206973206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2c207468652066697265206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "ff30bc9b4fe43c86a98e7e9a896c7a3ec7e6ace4807f8a8bd57ee420a38ca252"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_591",
+      "message_ID": 591,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2128,
+        "copy_end": 2160,
+        "bytes": 30,
+        "record_index": 34,
+        "table_offset": 1318318,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1885,
+        "copy_end": 1916,
+        "bytes": 30,
+        "record_index": 53,
+        "table_offset": 1318318,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b8149814089ce82cd8fc182b582bd82e6815b8149",
+      "current_hex": "2041646d6972616c21204920707574206f75742074686520666972652120",
+      "source_Japanese": "ていとくー！　火は消したよー！",
+      "current_English": " Admiral! I put out the fire! ",
+      "english": "Admiral! We put the fire out!",
+      "independent_English": "Admiral! We put the fire out!",
+      "source_meaning": "The youthful speaker calls out to the admiral and proudly reports that they put the fire out.",
+      "localization_note": "Keep the young speaker's proud call and report the completed effort without claiming they worked alone.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2041646d6972616c21204920707574206f75742074686520666972652120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2221,
+        "copy_end": 2252,
+        "bytes": 29,
+        "record_index": 63,
+        "table_offset": 1318318,
+        "start_in_record": 0,
+        "exact_stored_hex": "41646d6972616c2120576520707574207468652066697265206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "2041646d6972616c2120576520707574207468652066697265206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "787389f5dfe85b71f85dd255d5c6f91b2bcfd782ad5dfa02139874f9ed2da35a"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_592",
+      "message_ID": 592,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2160,
+        "copy_end": 2184,
+        "bytes": 22,
+        "record_index": 35,
+        "table_offset": 1318320,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1916,
+        "copy_end": 1939,
+        "bytes": 22,
+        "record_index": 54,
+        "table_offset": 1318320,
+        "start_in_record": 0
+      },
+      "source_hex": "89ce82f08fc182b58e7e82df82dc82b582bd82bc8149",
+      "current_hex": "204669726520657874696e6775697368656421202020",
+      "source_Japanese": "火を消し止めましたぞ！",
+      "current_English": " Fire extinguished!   ",
+      "english": "We've put out the fire!",
+      "independent_English": "We've put out the fire!",
+      "source_meaning": "A polite voice reports that the fire was extinguished.",
+      "localization_note": "The polite report sounds spoken and preserves the successful response.",
+      "decision": "revision",
+      "speaker": "Deckhand",
+      "context": "The fire on the flagship has been extinguished. The original Deckhand role supplies the voice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "204669726520657874696e6775697368656421202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2252,
+        "copy_end": 2277,
+        "bytes": 23,
+        "record_index": 65,
+        "table_offset": 1318320,
+        "start_in_record": 0,
+        "exact_stored_hex": "576527766520707574206f757420746865206669726521",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "20576527766520707574206f757420746865206669726521",
+          "protected_phrases": [],
+          "ink_sha256": "a3cae2212183bb162c876641cdec8423aeeca917b5246461f3ca3441bb57debf"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_593",
+      "message_ID": 593,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2184,
+        "copy_end": 2212,
+        "bytes": 27,
+        "record_index": 36,
+        "table_offset": 1318322,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1939,
+        "copy_end": 1967,
+        "bytes": 27,
+        "record_index": 55,
+        "table_offset": 1318322,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082f08fc182b58e7e82df82dc82b582bd8149",
+      "current_hex": "202573277320666972650a20206973206f75742120202020202020",
+      "source_Japanese": "%sの\n火災を消し止めました！",
+      "current_English": " %s's fire\n  is out!       ",
+      "english": "We've put out the fire aboard %s!",
+      "independent_English": "We've put out the fire aboard %s!",
+      "source_meaning": "The speaker reports putting out the fire aboard the named ship.",
+      "localization_note": "Restore the action and keep the fire aboard the named ship without attaching a possessive to its name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202573277320666972650a20206973206f75742120202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2277,
+        "copy_end": 2311,
+        "bytes": 33,
+        "record_index": 67,
+        "table_offset": 1318322,
+        "start_in_record": 0,
+        "exact_stored_hex": "576527766520707574206f75742074686520666972652061626f61726420257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972650a202061626f617264204c6174696e6121",
+          "protected_phrases": [],
+          "ink_sha256": "4094931c053c28e13610485a040a2420d5de2040f35a8d559b472a299039c6c8"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a202053616e7461204d6172696121",
+          "protected_phrases": [],
+          "ink_sha256": "16eb63e74679a18919f6deb9a397b4bd1fcc93fc66a4f3bdac37c6ec39fa1378"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a20204142434445464748494a4b4c4d4e4f50515221",
+          "protected_phrases": [],
+          "ink_sha256": "7c407e7af886fe2cc248a8e7dfdb2154af71c5fe2647e22e4e659668b018e708"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a20204649464f464f465521",
+          "protected_phrases": [],
+          "ink_sha256": "1654b7a84ec221bce4a2e78f616f43bd04a0b5b23dc9c58723333901850959c5"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a202092b78de88adb92b78de88adb92b78de88adb21",
+          "protected_phrases": [],
+          "ink_sha256": "606f6b698306f2193aa9aa8654dffbbe0e19198813b4766b82ad05d54c6e324b"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_594",
+      "message_ID": 594,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2212,
+        "copy_end": 2240,
+        "bytes": 25,
+        "record_index": 37,
+        "table_offset": 1318324,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1967,
+        "copy_end": 1993,
+        "bytes": 25,
+        "record_index": 56,
+        "table_offset": 1318324,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082cd92c189ce82b582dc82b582bd8149",
+      "current_hex": "20202573277320666972650a20206973206f75742120202020",
+      "source_Japanese": "%sの\n火災は鎮火しました！",
+      "current_English": "  %s's fire\n  is out!    ",
+      "english": "The fire aboard %s is out!",
+      "independent_English": "The fire aboard %s is out!",
+      "source_meaning": "A measured report that the fire aboard the named ship is out.",
+      "localization_note": "Keep this speaker's matter-of-fact status update and original ship argument.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f75742120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2311,
+        "copy_end": 2339,
+        "bytes": 26,
+        "record_index": 68,
+        "table_offset": 1318324,
+        "start_in_record": 0,
+        "exact_stored_hex": "54686520666972652061626f617264202573206973206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2054686520666972652061626f617264204c6174696e61206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "bb45df6d09febebb0282316a90cd133bc9bc5f3d849f99474630a8015b63796b"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2054686520666972652061626f6172642053616e7461204d61726961206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "30dd23b07e3fe6b955d8dd3836d2c4fd6213a67876f0f9fa877dcd484676fe5c"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2054686520666972652061626f6172640a20204142434445464748494a4b4c4d4e4f505152206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "7f64447b817a3cb3e88c717597ededc0f5a83c4159412be4a55cda8e30849b58"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2054686520666972652061626f617264204649464f464f4655206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "4b1b32181684e61758bbcb0bee7409db7e7baf1c3dc4c59a7cf54d145a9b8267"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2054686520666972652061626f6172640a202092b78de88adb92b78de88adb92b78de88adb206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "292306f963fcf06beec253ae87663f5be7647c4c296129b66dd8674dfea68033"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_595",
+      "message_ID": 595,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2240,
+        "copy_end": 2260,
+        "bytes": 19,
+        "record_index": 38,
+        "table_offset": 1318326,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 1993,
+        "copy_end": 2013,
+        "bytes": 19,
+        "record_index": 57,
+        "table_offset": 1318326,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82cd8fc182a682bd82e68149",
+      "current_hex": "2573277320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火は消えたよ！",
+      "current_English": "%s's fire\n  is out!",
+      "english": "The fire on %s is out!",
+      "independent_English": "The fire on %s is out!",
+      "source_meaning": "A familiar voice announces that the fire on the named ship is out.",
+      "localization_note": "Use a familiar, direct report and keep the named ship as the location.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2573277320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2339,
+        "copy_end": 2363,
+        "bytes": 22,
+        "record_index": 70,
+        "table_offset": 1318326,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468652066697265206f6e202573206973206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "205468652066697265206f6e204c6174696e61206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "4171e435efbc08c7ab218c9f494b64977616084afd10b386a02922a62f6a8fd5"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "205468652066697265206f6e2053616e7461204d61726961206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "6064b3ecae117fbc2fb0fd008747a7e39ef1b079eb0205f953c79e0e4959f96d"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "205468652066697265206f6e0a20204142434445464748494a4b4c4d4e4f505152206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "bf6cf64b1ea5a7c995024371c6f75003123910658eae9accdf088698051165db"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "205468652066697265206f6e204649464f464f4655206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "56487b1ba466d47f4525de1588ab29784f7719e97ebfd059e09be313f377c17d"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "205468652066697265206f6e0a202092b78de88adb92b78de88adb92b78de88adb206973206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "01d853b20133d7a1e70c0042db73b3ea32031424875e2e6ff9dc5dcf53c2269f"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_596",
+      "message_ID": 596,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2260,
+        "copy_end": 2280,
+        "bytes": 19,
+        "record_index": 39,
+        "table_offset": 1318328,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2013,
+        "copy_end": 2033,
+        "bytes": 19,
+        "record_index": 58,
+        "table_offset": 1318328,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82cd8fc182a682bd82ed8149",
+      "current_hex": "2020257320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火は消えたわ！",
+      "current_English": "  %s fire\n  is out!",
+      "english": "The fire's out aboard %s!",
+      "independent_English": "The fire's out aboard %s!",
+      "source_meaning": "A confident voice reports that the fire aboard the named ship is out.",
+      "localization_note": "Use the original confident declaration and restore a natural connection to the ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2020257320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2363,
+        "copy_end": 2389,
+        "bytes": 25,
+        "record_index": 72,
+        "table_offset": 1318328,
+        "start_in_record": 0,
+        "exact_stored_hex": "54686520666972652773206f75742061626f61726420257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2054686520666972652773206f75742061626f617264204c6174696e6121",
+          "protected_phrases": [],
+          "ink_sha256": "c99bb17a2ee6124c1d954ea002bb9923a2dd0c40b692cf9e89146a3bcb91f684"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2054686520666972652773206f75742061626f6172642053616e7461204d6172696121",
+          "protected_phrases": [],
+          "ink_sha256": "93c8f81f5acc8886e551eb14b59a965cd993ee01efc03f9f4e1f71b9399ed8e7"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2054686520666972652773206f75742061626f6172640a20204142434445464748494a4b4c4d4e4f50515221",
+          "protected_phrases": [],
+          "ink_sha256": "736b9fca13f9fb66fff08f7e0cee48d4392c5a7ddac26334e08db1d295eb1b2d"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2054686520666972652773206f75742061626f617264204649464f464f465521",
+          "protected_phrases": [],
+          "ink_sha256": "1955782872a86fc5cf7efa1c4803f1be6bb619ffab46e7688d1103f639ed06bd"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2054686520666972652773206f75742061626f6172640a202092b78de88adb92b78de88adb92b78de88adb21",
+          "protected_phrases": [],
+          "ink_sha256": "275483a763b620bf15978f98b188e24ff035cfadbebec2d0349d92b2fb32196b"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_597",
+      "message_ID": 597,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2280,
+        "copy_end": 2304,
+        "bytes": 23,
+        "record_index": 40,
+        "table_offset": 1318330,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2033,
+        "copy_end": 2057,
+        "bytes": 23,
+        "record_index": 59,
+        "table_offset": 1318330,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b582dc82b582bd82ba8149",
+      "current_hex": "20202573277320666972650a20206973206f7574212020",
+      "source_Japanese": "%sの\n火を消しましたぜ！",
+      "current_English": "  %s's fire\n  is out!  ",
+      "english": "We put out the fire on %s!",
+      "independent_English": "We put out the fire on %s!",
+      "source_meaning": "The rough speaker reports that they put out the fire on the named ship.",
+      "localization_note": "Restore the rough speaker's report that the fire was actively extinguished.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f7574212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2389,
+        "copy_end": 2417,
+        "bytes": 26,
+        "record_index": 73,
+        "table_offset": 1318330,
+        "start_in_record": 0,
+        "exact_stored_hex": "576520707574206f7574207468652066697265206f6e20257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "20576520707574206f7574207468652066697265206f6e204c6174696e6121",
+          "protected_phrases": [],
+          "ink_sha256": "5bf08861a854ed3c44893df0b42ca8c2e3fcfa0f321b5f2d4fae6619a8ba7de4"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "20576520707574206f7574207468652066697265206f6e2053616e7461204d6172696121",
+          "protected_phrases": [],
+          "ink_sha256": "c7a3a40eba9e773bfffc70f60ca140722929d7fc86100673d3c3c2af285d0bc8"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "20576520707574206f7574207468652066697265206f6e0a20204142434445464748494a4b4c4d4e4f50515221",
+          "protected_phrases": [],
+          "ink_sha256": "6267d4b200265f54c3e7c07f8addf34857c432a07beec59e4108323e5e08195a"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "20576520707574206f7574207468652066697265206f6e204649464f464f465521",
+          "protected_phrases": [],
+          "ink_sha256": "f8e570e41b039ea4c5ed1986190a8bfac7a22b770f76b7bfec0ead417ec0079d"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "20576520707574206f7574207468652066697265206f6e0a202092b78de88adb92b78de88adb92b78de88adb21",
+          "protected_phrases": [],
+          "ink_sha256": "fc50a067f860c1a0f37ce78080b8a15a0bb11aab19808c033ad464c0a97f109b"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_598",
+      "message_ID": 598,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2304,
+        "copy_end": 2332,
+        "bytes": 25,
+        "record_index": 41,
+        "table_offset": 1318332,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2057,
+        "copy_end": 2083,
+        "bytes": 25,
+        "record_index": 60,
+        "table_offset": 1318332,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b58e7e82df82bd82ed82a28149",
+      "current_hex": "20202573277320666972650a20206973206f75742120202020",
+      "source_Japanese": "%sの\n火を消し止めたわい！",
+      "current_English": "  %s's fire\n  is out!    ",
+      "english": "We've put out the fire aboard %s!",
+      "independent_English": "We've put out the fire aboard %s!",
+      "source_meaning": "An older speaker reports extinguishing the fire aboard the named ship.",
+      "localization_note": "Keep the older voice's confident report and the original ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f75742120202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2417,
+        "copy_end": 2451,
+        "bytes": 33,
+        "record_index": 75,
+        "table_offset": 1318332,
+        "start_in_record": 0,
+        "exact_stored_hex": "576527766520707574206f75742074686520666972652061626f61726420257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972650a202061626f617264204c6174696e6121",
+          "protected_phrases": [],
+          "ink_sha256": "4094931c053c28e13610485a040a2420d5de2040f35a8d559b472a299039c6c8"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a202053616e7461204d6172696121",
+          "protected_phrases": [],
+          "ink_sha256": "16eb63e74679a18919f6deb9a397b4bd1fcc93fc66a4f3bdac37c6ec39fa1378"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a20204142434445464748494a4b4c4d4e4f50515221",
+          "protected_phrases": [],
+          "ink_sha256": "7c407e7af886fe2cc248a8e7dfdb2154af71c5fe2647e22e4e659668b018e708"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a20204649464f464f465521",
+          "protected_phrases": [],
+          "ink_sha256": "1654b7a84ec221bce4a2e78f616f43bd04a0b5b23dc9c58723333901850959c5"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "20576527766520707574206f75742074686520666972652061626f6172640a202092b78de88adb92b78de88adb92b78de88adb21",
+          "protected_phrases": [],
+          "ink_sha256": "606f6b698306f2193aa9aa8654dffbbe0e19198813b4766b82ad05d54c6e324b"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_599",
+      "message_ID": 599,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2332,
+        "copy_end": 2352,
+        "bytes": 19,
+        "record_index": 42,
+        "table_offset": 1318334,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2083,
+        "copy_end": 2103,
+        "bytes": 19,
+        "record_index": 61,
+        "table_offset": 1318334,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce82f08fc182b582bd82e68149",
+      "current_hex": "2573277320666972650a20206973206f757421",
+      "source_Japanese": "%sの\n火を消したよ！",
+      "current_English": "%s's fire\n  is out!",
+      "english": "We put the fire out on %s!",
+      "independent_English": "We put the fire out on %s!",
+      "source_meaning": "A younger voice proudly reports putting out the fire on the named ship.",
+      "localization_note": "Use a simple, proud statement for the younger voice and keep the fire aboard the named ship.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2573277320666972650a20206973206f757421",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2451,
+        "copy_end": 2479,
+        "bytes": 26,
+        "record_index": 76,
+        "table_offset": 1318334,
+        "start_in_record": 0,
+        "exact_stored_hex": "576520707574207468652066697265206f7574206f6e20257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "20576520707574207468652066697265206f7574206f6e204c6174696e6121",
+          "protected_phrases": [],
+          "ink_sha256": "bbbb397fc84b4a7e0f84e5322ea0f7566ebcc35b6f4de9a588050906d8c28475"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "20576520707574207468652066697265206f7574206f6e2053616e7461204d6172696121",
+          "protected_phrases": [],
+          "ink_sha256": "30bc60a5237ef5bbf5504b2ae034a97271564e4515a26c532041ae0efb2916a9"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "20576520707574207468652066697265206f7574206f6e0a20204142434445464748494a4b4c4d4e4f50515221",
+          "protected_phrases": [],
+          "ink_sha256": "6717ec1982b86f46462ac502f66d5af6a4144fa08d127cd742b0420618dee26c"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "20576520707574207468652066697265206f7574206f6e204649464f464f465521",
+          "protected_phrases": [],
+          "ink_sha256": "9077ba4a3511ce0899ac7ccc0bfc26bd351b86653051ff5470a372d9021bb75d"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "20576520707574207468652066697265206f7574206f6e0a202092b78de88adb92b78de88adb92b78de88adb21",
+          "protected_phrases": [],
+          "ink_sha256": "4ef38e4a380d0aa1754b55e9ab3c29e9d1399bca16a554e9e9d0e948e004b151"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_600",
+      "message_ID": 600,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2352,
+        "copy_end": 2384,
+        "bytes": 29,
+        "record_index": 43,
+        "table_offset": 1318336,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2103,
+        "copy_end": 2133,
+        "bytes": 29,
+        "record_index": 62,
+        "table_offset": 1318336,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a89ce8dd082cd8fc182b58e7e82df82dc82b582bd82bc8149",
+      "current_hex": "20202573277320666972650a20206973206f7574212020202020202020",
+      "source_Japanese": "%sの\n火災は消し止めましたぞ！",
+      "current_English": "  %s's fire\n  is out!        ",
+      "english": "The fire aboard %s has been put out!",
+      "independent_English": "The fire aboard %s has been put out!",
+      "source_meaning": "A polite and emphatic report that the fire aboard the named ship has been extinguished.",
+      "localization_note": "Keep the polite announcement and restore the complete phrase around the ship name.",
+      "decision": "revision",
+      "speaker": "Crew member selected by the original ship response",
+      "context": "The fire on a different ship has been extinguished. Keep the ship in the report and the original agency where expressed.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "named ship"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573277320666972650a20206973206f7574212020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2479,
+        "copy_end": 2517,
+        "bytes": 36,
+        "record_index": 78,
+        "table_offset": 1318336,
+        "start_in_record": 0,
+        "exact_stored_hex": "54686520666972652061626f61726420257320686173206265656e20707574206f757421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Latina"
+          ],
+          "display_hex": "2054686520666972652061626f617264204c6174696e61206861730a20206265656e20707574206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "044aac02e06dd46d51900a759acd018bbe26afbbe58b475a34c590c16a9e92a8"
+        },
+        {
+          "arguments": [
+            "Santa Maria"
+          ],
+          "display_hex": "2054686520666972652061626f6172642053616e7461204d61726961206861730a20206265656e20707574206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "70402e33d073e2846eda531da2cc9d92f81f28f90754f21d1400ad19228d3a27"
+        },
+        {
+          "arguments": [
+            "ABCDEFGHIJKLMNOPQR"
+          ],
+          "display_hex": "2054686520666972652061626f617264204142434445464748494a4b4c4d4e4f5051520a2020686173206265656e20707574206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "5df6043ab434f7f40510d40a7d3c06a91bd1992a00f7074018beb52e57bb3768"
+        },
+        {
+          "arguments": [
+            "FIFOFOFU"
+          ],
+          "display_hex": "2054686520666972652061626f617264204649464f464f4655206861730a20206265656e20707574206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "c5810cafa21c69d2aeac0bb659f6ed72dc55ab1323cd6d3b028c22ca4494e1d2"
+        },
+        {
+          "arguments": [
+            "長崎丸長崎丸長崎丸"
+          ],
+          "display_hex": "2054686520666972652061626f6172642092b78de88adb92b78de88adb92b78de88adb0a2020686173206265656e20707574206f757421",
+          "protected_phrases": [],
+          "ink_sha256": "c68e7822d1be005b2bfdab8891357b7e0c08eeb1d33864c5f5ddb0c66167a1dd"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_601",
+      "message_ID": 601,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2384,
+        "copy_end": 2408,
+        "bytes": 21,
+        "record_index": 44,
+        "table_offset": 1318338,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2133,
+        "copy_end": 2155,
+        "bytes": 21,
+        "record_index": 63,
+        "table_offset": 1318338,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "4e6f202573206c6566742120202020202020202020",
+      "source_Japanese": "%sが\n底を突きました！",
+      "current_English": "No %s left!          ",
+      "english": "No %s left!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A formal warning that the named supply has run out.",
+      "localization_note": "Retain the urgent short warning. It works with both original supply labels, Water and Food.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f202573206c6566742120202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2517,
+        "copy_end": 2529,
+        "bytes": 11,
+        "record_index": 80,
+        "table_offset": 1318338,
+        "start_in_record": 0,
+        "exact_stored_hex": "4e6f202573206c65667421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "204e6f205761746572206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "641936e9c871d311aea369076eedacb359b65cda7eb67b7670602d744a8e1e90"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "204e6f20466f6f64206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "179e2ea77b1097e9e7cd24b00066788e49f5abeb84764573bae6b7475d8b3e43"
+        }
+      ],
+      "gameplay_observed": true,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_602",
+      "message_ID": 602,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2408,
+        "copy_end": 2436,
+        "bytes": 27,
+        "record_index": 45,
+        "table_offset": 1318340,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2155,
+        "copy_end": 2183,
+        "bytes": 27,
+        "record_index": 64,
+        "table_offset": 1318340,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882e882dc82b582bd8149",
+      "current_hex": "4e6f2025730a202072656d61696e73212020202020202020202020",
+      "source_Japanese": "%sの\n残りがなくなりました！",
+      "current_English": "No %s\n  remains!           ",
+      "english": "There's no %s left!",
+      "independent_English": "There's no %s left!",
+      "source_meaning": "The speaker reports there is none of the named supply left.",
+      "localization_note": "Use a complete natural sentence that still works with either supply label.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f2025730a202072656d61696e73212020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2529,
+        "copy_end": 2549,
+        "bytes": 19,
+        "record_index": 81,
+        "table_offset": 1318340,
+        "start_in_record": 0,
+        "exact_stored_hex": "54686572652773206e6f202573206c65667421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "2054686572652773206e6f205761746572206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "d05246d07e09e1ba8efd1bef41f9a1622b46733e52ca282221acb910da8dd9e3"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "2054686572652773206e6f20466f6f64206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "fb73373cfa352adc473d20638618ed7a58365f8d8647e970b7782f43ceaba673"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_603",
+      "message_ID": 603,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2436,
+        "copy_end": 2464,
+        "bytes": 25,
+        "record_index": 46,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2183,
+        "copy_end": 2209,
+        "bytes": 25,
+        "record_index": 65,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882c182bd82e68149",
+      "current_hex": "202057652776652072756e206f75740a20206f662025732120",
+      "source_Japanese": "%sの\n残りがなくなったよ！",
+      "current_English": "  We've run out\n  of %s! ",
+      "english": "We've run out of %s!",
+      "independent_English": "We're out of %s!",
+      "source_meaning": "An informal speaker says there is none of the named supply left.",
+      "localization_note": "Retain the informal announcement that the supply has run out. Reflow the old split after run out.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "202057652776652072756e206f75740a20206f662025732120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2549,
+        "copy_end": 2571,
+        "bytes": 20,
+        "record_index": 82,
+        "table_offset": 1318342,
+        "start_in_record": 0,
+        "exact_stored_hex": "57652776652072756e206f7574206f6620257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620576174657221",
+          "protected_phrases": [],
+          "ink_sha256": "2d536f03326a53ce2820e634b162fd55909c4b4b78b37189b5b8ebf47bd6aed1"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620466f6f6421",
+          "protected_phrases": [],
+          "ink_sha256": "8907ff4ccf104692b1b8a535867eb84ee025ec885e6b8c26148d65a0fac4ce79"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_604",
+      "message_ID": 604,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2464,
+        "copy_end": 2488,
+        "bytes": 23,
+        "record_index": 47,
+        "table_offset": 1318344,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2209,
+        "copy_end": 2233,
+        "bytes": 23,
+        "record_index": 66,
+        "table_offset": 1318344,
+        "start_in_record": 0
+      },
+      "source_hex": "82e082a4257382cc0a8e6382e882aa82c882a282ed8149",
+      "current_hex": "5468657265206973206e6f2025730a20206c6566742120",
+      "source_Japanese": "もう%sの\n残りがないわ！",
+      "current_English": "There is no %s\n  left! ",
+      "english": "We don't have any %s left!",
+      "independent_English": "We don't have any %s left!",
+      "source_meaning": "The speaker says they have no more of the named supply.",
+      "localization_note": "Keep the speaker's direct statement that the supply is gone.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5468657265206973206e6f2025730a20206c6566742120",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2571,
+        "copy_end": 2599,
+        "bytes": 26,
+        "record_index": 84,
+        "table_offset": 1318344,
+        "start_in_record": 0,
+        "exact_stored_hex": "576520646f6e2774206861766520616e79202573206c65667421",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "20576520646f6e2774206861766520616e79205761746572206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "177e92c0438d694887274271aa85feea25399842f99a5b6bed926b2c1e091835"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "20576520646f6e2774206861766520616e7920466f6f64206c65667421",
+          "protected_phrases": [],
+          "ink_sha256": "f198ecc1db253020b66c58197853d27f37f15ce8ff0732c204160c4478673a0c"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_605",
+      "message_ID": 605,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2488,
+        "copy_end": 2512,
+        "bytes": 21,
+        "record_index": 48,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2233,
+        "copy_end": 2255,
+        "bytes": 21,
+        "record_index": 67,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "20202573206861730a202072756e206f7574212020",
+      "source_Japanese": "%sが\n底を突きました！",
+      "current_English": "  %s has\n  run out!  ",
+      "english": "We're out of %s!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A direct warning that the named supply has run out.",
+      "localization_note": "Keep the blunt warning and give the crew a natural subject for the shortage.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20202573206861730a202072756e206f7574212020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2599,
+        "copy_end": 2617,
+        "bytes": 16,
+        "record_index": 86,
+        "table_offset": 1318346,
+        "start_in_record": 0,
+        "exact_stored_hex": "5765277265206f7574206f6620257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "205765277265206f7574206f6620576174657221",
+          "protected_phrases": [],
+          "ink_sha256": "f1a33c6e29565a40f8eaf74e0d48348b80543af21d0b136098e662a7dc3bd14f"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "205765277265206f7574206f6620466f6f6421",
+          "protected_phrases": [],
+          "ink_sha256": "63016ab5fc1e4de8e0eab817d8a07eaf2be1401b1deea1c83ad37d5080baef26"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_606",
+      "message_ID": 606,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2512,
+        "copy_end": 2540,
+        "bytes": 27,
+        "record_index": 49,
+        "table_offset": 1318348,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2255,
+        "copy_end": 2283,
+        "bytes": 27,
+        "record_index": 68,
+        "table_offset": 1318348,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282c482b582e082a482bd82bc8149",
+      "current_hex": "57652776652072756e206f75740a20206f66202573212020202020",
+      "source_Japanese": "%sが\n底を突いてしもうたぞ！",
+      "current_English": "We've run out\n  of %s!     ",
+      "english": "We've gone and run out of %s!",
+      "independent_English": "We've gone and run out of %s!",
+      "source_meaning": "The older voice announces with dismay that the named supply is exhausted.",
+      "localization_note": "Keep the older speaker's dismay in the phrasing while preserving the exact supply argument.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57652776652072756e206f75740a20206f66202573212020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2617,
+        "copy_end": 2647,
+        "bytes": 29,
+        "record_index": 88,
+        "table_offset": 1318348,
+        "start_in_record": 0,
+        "exact_stored_hex": "576527766520676f6e6520616e642072756e206f7574206f6620257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "20576527766520676f6e6520616e642072756e206f7574206f6620576174657221",
+          "protected_phrases": [],
+          "ink_sha256": "3c5a1a740093a48138dcd2398fcd47a3934922a5f3a4f012bcddc811a3de4795"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "20576527766520676f6e6520616e642072756e206f7574206f6620466f6f6421",
+          "protected_phrases": [],
+          "ink_sha256": "2afc89b9c8b08481d43068c6ad48ae054d6b35f1f3cb67990c9e9663aad7ee17"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_607",
+      "message_ID": 607,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2540,
+        "copy_end": 2584,
+        "bytes": 42,
+        "record_index": 50,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2283,
+        "copy_end": 2326,
+        "bytes": 42,
+        "record_index": 69,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "source_hex": "82bd814191e595cf82be82e681490a257382aa0a82c882ad82c882c182bf82e182c182bd829f81498149",
+      "current_hex": "20204f68206e6f210a202057652776652072756e206f7574206f66202573212020202020202020202020",
+      "source_Japanese": "た、大変だよ！\n%sが\nなくなっちゃったぁ！！",
+      "current_English": "  Oh no!\n  We've run out of %s!           ",
+      "english": "Oh no! We're all out of %s!",
+      "independent_English": "Oh no! We're all out of %s!",
+      "source_meaning": "A frightened speaker stammers and says they have completely run out of the named supply.",
+      "localization_note": "Keep the younger speaker's startled alarm and emphasis on complete depletion.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "20204f68206e6f210a202057652776652072756e206f7574206f66202573212020202020202020202020",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2647,
+        "copy_end": 2676,
+        "bytes": 27,
+        "record_index": 89,
+        "table_offset": 1318350,
+        "start_in_record": 0,
+        "exact_stored_hex": "4f68206e6f2120576527726520616c6c206f7574206f6620257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "204f68206e6f2120576527726520616c6c206f7574206f6620576174657221",
+          "protected_phrases": [],
+          "ink_sha256": "a160b5ac46d85e2d5dc7b6a0f6ac2d3953ce94f6a8f1cc70ce8c15be81edfefd"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "204f68206e6f2120576527726520616c6c206f7574206f6620466f6f6421",
+          "protected_phrases": [],
+          "ink_sha256": "02301704ac33dadb680bcd0b455b5e2badef0048ca545744007dd7d1061f953c"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_608",
+      "message_ID": 608,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2584,
+        "copy_end": 2608,
+        "bytes": 23,
+        "record_index": 51,
+        "table_offset": 1318352,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2326,
+        "copy_end": 2350,
+        "bytes": 23,
+        "record_index": 70,
+        "table_offset": 1318352,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd82bc8149",
+      "current_hex": "2057652776652072756e206f75740a20206f6620257321",
+      "source_Japanese": "%sが\n底を突きましたぞ！",
+      "current_English": " We've run out\n  of %s!",
+      "english": "We've run out of %s!",
+      "independent_English": "We've run out of %s!",
+      "source_meaning": "A polite but emphatic speaker says they've run out of the named supply.",
+      "localization_note": "Retain the emphatic report that the supply is exhausted and reflow the interrupted phrase.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "2057652776652072756e206f75740a20206f6620257321",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2676,
+        "copy_end": 2698,
+        "bytes": 20,
+        "record_index": 91,
+        "table_offset": 1318352,
+        "start_in_record": 0,
+        "exact_stored_hex": "57652776652072756e206f7574206f6620257321",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620576174657221",
+          "protected_phrases": [],
+          "ink_sha256": "2d536f03326a53ce2820e634b162fd55909c4b4b78b37189b5b8ebf47bd6aed1"
+        },
+        {
+          "arguments": [
+            "Food"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620466f6f6421",
+          "protected_phrases": [],
+          "ink_sha256": "8907ff4ccf104692b1b8a535867eb84ee025ec885e6b8c26148d65a0fac4ce79"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_609",
+      "message_ID": 609,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2608,
+        "copy_end": 2652,
+        "bytes": 44,
+        "record_index": 52,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2350,
+        "copy_end": 2395,
+        "bytes": 44,
+        "record_index": 71,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482a4816396da82aa89f182e981630a95a082aa8cb882c182bd81630a82e082a48163835f838182be8163",
+      "current_hex": "44697a7a792e2e2e0a202049276d207374617276696e672e2e2e0a2020492063616e277420676f206f6e2e20",
+      "source_Japanese": "うう…目が回る…\n腹が減った…\nもう…ダメだ…",
+      "current_English": "Dizzy...\n  I'm starving...\n  I can't go on. ",
+      "english": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "independent_English": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "source_meaning": "The sailor moans, feels dizzy and hungry, and fears they can't go on.",
+      "localization_note": "Restore the moan, dizziness, hunger, and faltering last thought. The line leaves the outcome open.",
+      "decision": "revision",
+      "speaker": "Sailor selected by the original fleet",
+      "context": "A hungry sailor speaks about dizziness and feeling unable to go on. The source does not describe a collapse.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "44697a7a792e2e2e0a202049276d207374617276696e672e2e2e0a2020492063616e277420676f206f6e2e20",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2698,
+        "copy_end": 2765,
+        "bytes": 65,
+        "record_index": 93,
+        "table_offset": 1318354,
+        "start_in_record": 0,
+        "exact_stored_hex": "205567682e2e2e204d7920686561642773207370696e6e696e672e2e2e0a202049276d20736f2068756e6772792e2e2e20492063616e277420676f206f6e2e2e2e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [],
+          "display_hex": "205567682e2e2e204d7920686561642773207370696e6e696e672e2e2e0a202049276d20736f2068756e6772792e2e2e20492063616e277420676f206f6e2e2e2e",
+          "protected_phrases": [
+            "Ugh... My head's spinning...",
+            "I'm so hungry...",
+            "I can't go on..."
+          ],
+          "ink_sha256": "b7ed39b4e008a4126e2fddf2e698002100b0f9669736e318f486bb8610e2a46c"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_610",
+      "message_ID": 610,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2652,
+        "copy_end": 2688,
+        "bytes": 35,
+        "record_index": 52,
+        "table_offset": 1318356,
+        "start_in_record": 44
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2395,
+        "copy_end": 2435,
+        "bytes": 39,
+        "record_index": 72,
+        "table_offset": 1318356,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd0a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "57652776652072756e206f7574206f662025732e2057652772652073746f7070696e672025732e",
+      "source_Japanese": "%sが\n底を突きました\n%sを\n中止します",
+      "current_English": "We've run out of %s. We're stopping %s.",
+      "english": "We've run out of %s. We're stopping %s.",
+      "independent_English": "We've run out of %s. Canceling %s.",
+      "source_meaning": "The formal speaker reports exhausting the named supply and says the named activity is being canceled.",
+      "localization_note": "Retain the clear announcement that the shortage has forced a stop. Preserve the supply first and activity second.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "57652776652072756e206f7574206f662025732e2057652772652073746f7070696e672025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2765,
+        "copy_end": 2809,
+        "bytes": 42,
+        "record_index": 95,
+        "table_offset": 1318356,
+        "start_in_record": 0,
+        "exact_stored_hex": "2057652776652072756e206f7574206f662025732e0a202057652772652073746f7070696e672025732e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water",
+            "automatic travel"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f662057617465722e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "e6c44d785cccdc3ca2875ed861adc3111ef785c4f97872eebe153a35154ef6ea"
+        },
+        {
+          "arguments": [
+            "Food",
+            "automatic travel"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620466f6f642e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "04ef73052632d6703abcdffb29bc6c15ad851ff5b6aee2338ce9ac9488bedb9c"
+        },
+        {
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "display_hex": "2057652776652072756e206f7574206f6620776174657220616e6420666f6f642e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "5f45cadffabe67854c88ea486176464f4fc5d327a47051bbfaddbecc12d655fa"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_611",
+      "message_ID": 611,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2688,
+        "copy_end": 2724,
+        "bytes": 35,
+        "record_index": 53,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2435,
+        "copy_end": 2462,
+        "bytes": 26,
+        "record_index": 73,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82a981630a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "4e6f202573206c6566742e2e2e2053746f7070696e672025732e",
+      "source_Japanese": "%sが\n底を突いたか…\n%sを\n中止します",
+      "current_English": "No %s left... Stopping %s.",
+      "english": "So we're out of %s... Stopping %s.",
+      "independent_English": "So we're out of %s... Canceling %s.",
+      "source_meaning": "After acknowledging the named shortage with a pause, the speaker says they are canceling the named activity.",
+      "localization_note": "Restore the speaker's acknowledgment and pause before stopping the named activity.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "4e6f202573206c6566742e2e2e2053746f7070696e672025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2809,
+        "copy_end": 2848,
+        "bytes": 37,
+        "record_index": 97,
+        "table_offset": 1318358,
+        "start_in_record": 0,
+        "exact_stored_hex": "20536f207765277265206f7574206f662025732e2e2e0a202053746f7070696e672025732e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water",
+            "automatic travel"
+          ],
+          "display_hex": "20536f207765277265206f7574206f662057617465722e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "094fde0db95b9305c1cdabacbea424036bd98d99b04dd967ecaa93500bc0375f"
+        },
+        {
+          "arguments": [
+            "Food",
+            "automatic travel"
+          ],
+          "display_hex": "20536f207765277265206f7574206f6620466f6f642e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "f7853546add4b42fd5b25acc7b85cfc895f561e49ec3509e4c47e84a3cfe8552"
+        },
+        {
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "display_hex": "20536f207765277265206f7574206f6620776174657220616e6420666f6f642e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "3683e30ce160397b9f875c8ec9bee847b648ee6bfc2f15b954c6cf07019b7124"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_612",
+      "message_ID": 612,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2724,
+        "copy_end": 2760,
+        "bytes": 35,
+        "record_index": 54,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2462,
+        "copy_end": 2494,
+        "bytes": 31,
+        "record_index": 74,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82cc82a40a257382f00a92868e7e82b782e982bc",
+      "current_hex": "5765277265206f7574206f662025732e205765276c6c2073746f702025732e",
+      "source_Japanese": "%sが\n底を突いたのう\n%sを\n中止するぞ",
+      "current_English": "We're out of %s. We'll stop %s.",
+      "english": "We're out of %s. We'll stop %s.",
+      "independent_English": "We've run out of %s. We'll have to stop %s.",
+      "source_meaning": "The older speaker notes the named supply has run out and announces they will stop the named activity.",
+      "localization_note": "Retain the older speaker's direct decision to stop the named activity because the supply is gone.",
+      "decision": "retention",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5765277265206f7574206f662025732e205765276c6c2073746f702025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2848,
+        "copy_end": 2884,
+        "bytes": 34,
+        "record_index": 99,
+        "table_offset": 1318360,
+        "start_in_record": 0,
+        "exact_stored_hex": "205765277265206f7574206f662025732e0a20205765276c6c2073746f702025732e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f662057617465722e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "9f1b1c4f0af7de42fbd794f3731aa8d4f534836bf90448b4a5ba3decf6d614b6"
+        },
+        {
+          "arguments": [
+            "Food",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f6620466f6f642e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "0e4ecda3983a3a008219c680e6bbb1083132df9e0da8bd83d5a3eae63f44067e"
+        },
+        {
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f6620776174657220616e6420666f6f642e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "527d68f0a8f1ac4829b93f6b728a5d8bc9a2231430c3bcbe8eb169041646c574"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_613",
+      "message_ID": 613,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 7,
+        "offset": 2760,
+        "copy_end": 2800,
+        "bytes": 37,
+        "record_index": 55,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2494,
+        "copy_end": 2525,
+        "bytes": 30,
+        "record_index": 75,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "source_hex": "257382aa0a82c882ad82c882c182bf82e182c182bd82cb0a257382f00a82e282df82e982e6",
+      "current_hex": "5765277265206f7574206f662025732e2049276c6c2073746f702025732e",
+      "source_Japanese": "%sが\nなくなっちゃったね\n%sを\nやめるよ",
+      "current_English": "We're out of %s. I'll stop %s.",
+      "english": "We're out of %s, huh? I'll stop %s.",
+      "independent_English": "We're out of %s, huh? We'll have to stop %s.",
+      "source_meaning": "The youthful speaker acknowledges that none of the named supply is left and says they will stop the named activity.",
+      "localization_note": "Restore the younger speaker's reaction and keep the direct statement that the activity will stop.",
+      "decision": "revision",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "original_current_native_lookup": {
+        "wrapper": 33903244,
+        "terminal_PC": 41811968,
+        "buffer_pointer": 36243212,
+        "copied_hex": "5765277265206f7574206f662025732e2049276c6c2073746f702025732e",
+        "mode": null,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            30293,
+            36235020,
+            4554
+          ]
+        ],
+        "exact_instruction_count": 178,
+        "original_loader_and_wrapper_to_native_format_entry": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2884,
+        "copy_end": 2923,
+        "bytes": 38,
+        "record_index": 101,
+        "table_offset": 1318362,
+        "start_in_record": 0,
+        "exact_stored_hex": "205765277265206f7574206f662025732c206875683f0a202049276c6c2073746f702025732e",
+        "ROM_sha256": "8e72b07522cea5ee2e9d805d77208a88a84cdd1cde1fe4fff1a6c285ea5bb277"
+      },
+      "displayed_variants": [
+        {
+          "arguments": [
+            "Water",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f662057617465722c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "ef7b24ec30fd195756d1dcbc1286a9937d532c027fbef9ec8ede7ab882ada506"
+        },
+        {
+          "arguments": [
+            "Food",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f6620466f6f642c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "22056f469fc6109092918c4d138e297bc28234b3138c0b9471303f1404338240"
+        },
+        {
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "display_hex": "205765277265206f7574206f6620776174657220616e6420666f6f642c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "protected_phrases": [],
+          "ink_sha256": "185886847fb871153772ba2c86791dfdeaca1a0904076e513d1d9a0d465cbb2a"
+        }
+      ],
+      "gameplay_observed": false,
+      "new_credit": 1
+    }
+  ],
+  "actual_verification_scope": {
+    "observed_notice_IDs": [
+      573,
+      601
+    ],
+    "stored_templates": 41,
+    "native_expansions": 109,
+    "fresh_viewed_pages": 26,
+    "reused_exact_viewed_pages": 75,
+    "native_selector_cases": 1700,
+    "crew_voice_choices": 1242,
+    "fixture_scope": "One temporary native condition selection per isolated voyage",
+    "original_flagship_warning_and_dismissal": true,
+    "original_food_and_water_depletion": true,
+    "named_ship_fire_and_automatic_travel_variants_offline_only": true,
+    "hardware": false
+  },
+  "full_goal_complete": false
+}

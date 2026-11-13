@@ -1,0 +1,9 @@
+"""Source-lock native pages, name planes, QA and a fuller-opening wrap successor."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import checked_text,derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B215_native_tools_v6750')
+if __name__=='__main__':
+    assert not ROOT.exists();jobs=[('scripts/plan_lil_B215_layout_v6747b.py','scripts/plan_lil_B215_layout_v6747c.py',{'layout_v6747b':'layout_v6747c',"(36-length)**2":"(36-length)**2*(2 if line==0 else 1)"}),('scripts/prove_lil_B213_name_planes_v6660b.py','scripts/prove_lil_B215_name_planes_v6751.py',{'B213':'B215','name_planes_v6660b':'name_planes_v6751','current_V6641_native_v6650':'current_V6733_native_v6742','[2,9,170]':'[2,23,120]','==170':'==120',"len(strings)==9 and 'Mysterious Old Man' in strings and 'Camille Marinus Overijssel' in strings":"len(strings)==7 and {'Lil Argot','Manuel Almeida','Guard','Argot'}<=strings.keys()",'all9_complete':'all7_complete','nine_name_component_planes36':'seven_name_component_planes28','name_literal_alignment_count=36':'name_literal_alignment_count=28','complete_name_component_plane_count=9':'complete_name_component_plane_count=7','full_Lil_Argot_Camille_Overijssel_Camille_Marinus_Overijssel_and_Mysterious_Old_Man_preserved':'full_Lil_Argot_Manuel_Almeida_and_Guard_preserved','source_unknown_nationality_secondary_not_displayed_as_name':'source_Europe_secondary_not_displayed_as_name','9 complete name/component planes,36 literal alignments':'7 complete name/component planes,28 literal alignments'})]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    proofs=[derive(a,b,c) for a,b,c in jobs];ROOT.mkdir(parents=True);save(ROOT/'source_locked_native_tools.json',dict(derivations=proofs,all_executed_predecessors_preserved=True,no_prose_or_ROM_change=True,full_goal_complete=False))

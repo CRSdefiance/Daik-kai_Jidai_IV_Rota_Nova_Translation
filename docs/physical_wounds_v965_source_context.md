@@ -1,0 +1,3 @@
+# V965: next physical wound source contexts
+
+Thirteen wound comments1794-1806 map to both original conditions2/3 through1250C/12584/12494 and main12104. All150 direct/main ordinary/battle selections,25 healthy no-message and25 condition1 prior-fatigue controls pass. Both conditions share these dialogue alternatives;their other gameplay effects are not claimed identical. Genuine four protagonists and21 NPCs,including Sera24 special1806,retain identity. Only the declared source condition byte and CPU mode fields change. No prose/font/new actual-wound or completion credit.1079 complete,1082 source/prose reviewed;full goal and separate graphics audit remain open.

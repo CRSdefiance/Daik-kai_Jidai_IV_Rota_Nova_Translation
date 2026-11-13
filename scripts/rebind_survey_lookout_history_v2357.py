@@ -1,0 +1,14 @@
+"""Current full text/bitmap/RGB binding of eight historical Survey/Lookout holds."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+OLD=Path('scripts/rebind_work_history_v2312.py')
+if __name__=='__main__':
+ source=OLD.read_text();changes={'dk4tool.patch.work_comments_editorial':'dk4tool.patch.survey_lookout_editorial','work_history_v2312':'survey_lookout_history_v2357','work/analysis/work_comments_v846/actual_gameplay_verification.json':'work/analysis/survey_lookout_v877/actual_gameplay_verification.json','translations/work_contextual_editorial_manuscript_v1.json':'translations/survey_lookout_contextual_editorial_manuscript_v1.json','scripts.work_comments_layout_v843 import compiled,layout':'scripts.survey_lookout_layout_v875 import compiled,layout','synthetic_work_room_occupant_fixtures':'synthetic_survey_lookout_assignment_fixtures','not_new_current_fixture_or_earned_refit_assignment':'not_new_current_fixture_or_earned_family_assignment','V845':'V876','{1387,1395,1398,1405}':'{1506,1508,1513,1518}','[1387,1395,1398,1405]':'[1506,1508,1513,1518]','historical_work8_sheet.png':'historical_survey_lookout8_sheet.png','Janus_foreign_faction21_preserved_not_a_recruitment_claim':'Camille_foreign_faction1_preserved_not_a_recruitment_claim','full36_cell1405_period_and_odd19_character1398_continuation_bound':'complete_sun_position_and_conditional_report_and_lookout_continuations_bound','no_new_current_Doctor_Hodram_or_Janus_visit_claim':'no_new_current_Lookout_Hodram_Camille_or_Manuel_visit_claim','work/analysis/work_current_verification_v2311/ordinary_current_Shipwright_actual.json':'work/analysis/survey_current_verification_v2356/ordinary_current_Survey_actual.json','work/analysis/work_fonts_v2309/all24_current_native_fonts.json':'work/analysis/survey_lookout_fonts_v2355/all24_current_native_fonts.json'}
+ for old,new in changes.items():assert old in source,old;source=source.replace(old,new)
+ exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+ p=Path('work/analysis/survey_lookout_history_v2357/historical8_current_binding.json');proof=read(p)
+ for scope in proof['historical_reports_and_fixture_scopes']:
+  fix=scope['historical_room_occupant_fixture'];assert fix['role_type']in(3,1)
+  if fix['actor_ID']==9:assert fix['original_actor_faction']==1 and fix['foreign_actor_not_claimed_as_normally_recruited']
+ save(p.parent/'historical_scope_and_labels.json',dict(binding=str(p),binding_sha256=sha(p.read_bytes()),historical_case_label_preserved='JoakimSurvey',current_actor1_given_name='Hodram',approved_full_name='Hodram Joakim Bergstrom',all4_historical_normal_return_controls_remain_historical=True,all_original_historical_fixtures_remain_disclosed=True,no_new_current_Lookout_Hodram_Camille_or_Manuel_visits_or_earned_recruitment_claim=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

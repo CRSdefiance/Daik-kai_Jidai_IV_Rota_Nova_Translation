@@ -1,0 +1,198 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_pins": [
+    {
+      "path": "work/clean.nds",
+      "ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+      "COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+      "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+    },
+    {
+      "path": "out/raphael_natural_v2_accepted_base.nds",
+      "ROM_sha256": "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe",
+      "COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+      "ARM9_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5"
+    },
+    {
+      "path": "out/all_routes_combined_v788_candidate.nds",
+      "ROM_sha256": "12a5d245dd0dee433f1c21bd97680805a54bfe4770df99d54380d39548283820",
+      "COMMON_sha256": "5fbacd4b1c6041e280c72aee4f8caf1ccf201911892150d8b09ffde1a24ebca5",
+      "ARM9_sha256": "4c2e19d9834bfa79a5e90897afe7c3332f4c850077f2db4c5eb57949f57217bd"
+    }
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_346",
+      "message_id": 346,
+      "interaction_group": "Diplomatic-arrival-and-relationship-notices",
+      "source_hex": "257382cd0a90658f9182cc8ef382af8ee682e882f08b9194db82b582dc82b582bd",
+      "japanese": "%sは\n親書の受け取りを拒否しました",
+      "source_reference": {
+        "message_id": 346,
+        "block": 5,
+        "table_offset": 1317828,
+        "block_offset": 136,
+        "copy_end": 172,
+        "record_index": 1,
+        "start": 69,
+        "end": 102
+      },
+      "canonical_source_hex": "202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "2573207265667573656420746f2061636365707420746865206c65747465722e",
+      "current_English": "%s refused to accept the letter.",
+      "current_reference": {
+        "message_id": 346,
+        "block": 4,
+        "table_offset": 1317828,
+        "block_offset": 4043,
+        "copy_end": 4076,
+        "record_index": 96,
+        "start": 0,
+        "end": 32
+      },
+      "source_meaning": "The named recipient refused to accept the diplomatic letter.",
+      "english": "%s refused the letter.{PAD}",
+      "speaker": "Original system courier-status narrator",
+      "context": "Original CScheme goodwill handler02093900: recipient refusal notice346 at02093B48; outgoing delivery notice347 at02093984; relationship increase348 at02093B04. 346/347 receive the recipient faction virtual name;348 receives original numeric amount from020ABF50. Actual V788 17200/18000 display347 independently of348 at19200. Recipient dialogue and original native score changes occur between them. Native incoming/outgoing status presentation and automatic paragraph formatter must be verified before integration. V792 original modal consumer and printf are bound to native faction/number getters. Complete native layouts/fonts/copies pass;actual revised GPU playback remains required.",
+      "localization_note": "Retain the existing complete natural sentence; do not imply refusal of a pact or truce after reading. This is refusal to receive the letter. V792 full real-faction and length-stress review: use an independent natural sentence,with the faction first to retain complete organization names without terminal double punctuation or isolated name suffixes. Refusing the letter means refusing its receipt in the original arrival sequence;it does not rename a rejected diplomatic proposal. The score notice retains its numeric unit and increase meaning.",
+      "source_native_arguments": [
+        "recipient_faction_name"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-registered-experimental-actual-revised-GPU-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_347",
+      "message_id": 347,
+      "interaction_group": "Diplomatic-arrival-and-relationship-notices",
+      "source_hex": "257382c990658f9182aa93cd82ab82dc82b582bd",
+      "japanese": "%sに親書が届きました",
+      "source_reference": {
+        "message_id": 347,
+        "block": 5,
+        "table_offset": 1317830,
+        "block_offset": 172,
+        "copy_end": 192,
+        "record_index": 2,
+        "start": 2,
+        "end": 22
+      },
+      "canonical_source_hex": "257320676f742061206c65747465722e0a202052",
+      "current_text_hex": "257320676f742061206c65747465722e0a202052",
+      "current_English": "%s got a letter.\n  R",
+      "current_reference": {
+        "message_id": 347,
+        "block": 5,
+        "table_offset": 1317830,
+        "block_offset": 0,
+        "copy_end": 21,
+        "record_index": 0,
+        "start": 0,
+        "end": 20
+      },
+      "source_meaning": "The diplomatic letter reached the named recipient.",
+      "english": "%s received the letter.{PAD}",
+      "speaker": "Original system courier-status narrator",
+      "context": "Original CScheme goodwill handler02093900: recipient refusal notice346 at02093B48; outgoing delivery notice347 at02093984; relationship increase348 at02093B04. 346/347 receive the recipient faction virtual name;348 receives original numeric amount from020ABF50. Actual V788 17200/18000 display347 independently of348 at19200. Recipient dialogue and original native score changes occur between them. Native incoming/outgoing status presentation and automatic paragraph formatter must be verified before integration. V792 original modal consumer and printf are bound to native faction/number getters. Complete native layouts/fonts/copies pass;actual revised GPU playback remains required.",
+      "localization_note": "State successful delivery without inventing acceptance of its proposal. Remove the stray R, which belongs to the independent next English notice rather than this clean Japanese message. V792 full real-faction and length-stress review: use an independent natural sentence,with the faction first to retain complete organization names without terminal double punctuation or isolated name suffixes. Refusing the letter means refusing its receipt in the original arrival sequence;it does not rename a rejected diplomatic proposal. The score notice retains its numeric unit and increase meaning.",
+      "source_native_arguments": [
+        "recipient_faction_name"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-registered-experimental-actual-revised-GPU-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_348",
+      "message_id": 348,
+      "interaction_group": "Diplomatic-arrival-and-relationship-notices",
+      "source_hex": "97468d44937882aa25730a8fe382aa82e882dc82b582bd",
+      "japanese": "友好度が%s\n上がりました",
+      "source_reference": {
+        "message_id": 348,
+        "block": 5,
+        "table_offset": 1317832,
+        "block_offset": 192,
+        "copy_end": 216,
+        "record_index": 2,
+        "start": 22,
+        "end": 45
+      },
+      "canonical_source_hex": "656c6174696f6e7320726f73652025732e202020202020",
+      "current_text_hex": "656c6174696f6e7320726f73652025732e202020202020",
+      "current_English": "elations rose %s.      ",
+      "current_reference": {
+        "message_id": 348,
+        "block": 5,
+        "table_offset": 1317832,
+        "block_offset": 21,
+        "copy_end": 45,
+        "record_index": 1,
+        "start": 0,
+        "end": 23
+      },
+      "source_meaning": "The friendship/relations score increased by the supplied amount.",
+      "english": "Relations rose by %s points.{PAD}",
+      "speaker": "Original system courier-status narrator",
+      "context": "Original CScheme goodwill handler02093900: recipient refusal notice346 at02093B48; outgoing delivery notice347 at02093984; relationship increase348 at02093B04. 346/347 receive the recipient faction virtual name;348 receives original numeric amount from020ABF50. Actual V788 17200/18000 display347 independently of348 at19200. Recipient dialogue and original native score changes occur between them. Native incoming/outgoing status presentation and automatic paragraph formatter must be verified before integration. V792 original modal consumer and printf are bound to native faction/number getters. Complete native layouts/fonts/copies pass;actual revised GPU playback remains required.",
+      "localization_note": "Use a complete standalone sentence and restore the missing leading R. Points makes the numeric score clear in natural English; retain the native amount unchanged. No manual wrapping or spacing. V792 full real-faction and length-stress review: use an independent natural sentence,with the faction first to retain complete organization names without terminal double punctuation or isolated name suffixes. Refusing the letter means refusing its receipt in the original arrival sequence;it does not rename a rejected diplomatic proposal. The score notice retains its numeric unit and increase meaning.",
+      "source_native_arguments": [
+        "native_relationship_score_increase_without_unit"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-native-reviewed-registered-experimental-actual-revised-GPU-pending"
+    }
+  ],
+  "actual_defect_proof": "work\\analysis\\letter_delivery_v791\\delivery_verification.json",
+  "status": "registered-experimental-actual-gameplay-pending",
+  "whole_batch_completion_credit": false,
+  "remaining_gates": [
+    "Original native modal formatting,full fonts and real argument matrix",
+    "Registered integration and exact clean-input patch",
+    "Actual corrected arrival sequence"
+  ],
+  "producer_sha256": "7cf01e952b89f28fad914727b5dd120ef4a62aba2d6eb64fc72cb9066825a5dc",
+  "supersedes_draft": "translations/arrival_notices_editorial_manuscript_v1.json",
+  "reviewed_research_manuscript": "translations\\arrival_notices_editorial_manuscript_v2.json",
+  "reviewed_research_manuscript_sha256": "7d444f44d81cb10c5066198a209ceb24a2c2b954e4e0a7bd056dfd3fff108d5c"
+}

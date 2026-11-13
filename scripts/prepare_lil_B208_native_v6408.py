@@ -1,0 +1,30 @@
+"""Strengthen weak-boundary planning and prepare all24 current-native plane checks."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B208_native_tools_v6408')
+if __name__=='__main__':
+    assert not ROOT.exists();rows=[]
+    rows.append(derive('dk4tool/dialogue/lil_B208_layout_v1.py','dk4tool/dialogue/lil_B208_layout_v2.py',{
+        'BASE_WEAK=frozenset':'STRONG_ENDINGS = STRONG_ENDINGS | frozenset({\'then\'})\n\nBASE_WEAK=frozenset',
+        "('great','naval'),('naval','battle')":"('naval','battle')",
+        "('see','it')})":"('see','it'),('used','it')})"}))
+    guard='''    for label,bad in [('width',replace(prog,window_width_px=228)),('rows',replace(prog,max_lines=5)),('glyph-width',replace(prog,default_ascii_width=5)),('row-spacing',replace(prog,line_height_px=12)),('guard',replace(prog,guard_linebreaks=False)),('pair-phase',replace(prog,pair_phase_safe_breaks=False)),('balancing',replace(prog,balanced_wrapping=False)),('macro-length',replace(prog,macro_ascii_lengths={**prog.macro_ascii_lengths,'FI':4})),('widened-selector-set',replace(prog,leading_speaker_bytes=prog.leading_speaker_bytes|{254})),('unscoped-base',get_dialogue_profile('lil-opening-editorial-native-v1'))]:
+        reject('formatter-'+label,lambda bad=bad:encode_relocatable_dialogue(bytes.fromhex(plain['source_hex']),plain['english'],bad))
+    thought=next(r for r in doc['records'] if r['source_record_index']==86);notice=next(r for r in doc['records'] if r['source_record_index']==90)
+    assert thought['kind']=='progressive' and thought['english'].split('}',1)[1].startswith('(') and thought['english'].endswith(')')
+    assert notice['kind']=='system-FE' and notice['source_selector']==254 and notice['english']=='{SPEAKER:FE}Cristina: Charm +1!'
+    assert len(negatives)==28'''
+    rows.append(derive('scripts/verify_lil_B205_fonts_v6195.py','scripts/verify_lil_B208_fonts_v6409.py',{
+        'B205':'B208','fonts_v6195':'fonts_v6409','lil_B205_profile_v2':'lil_B208_profile_v1','current_build_native_context_v6097':'current_build_native_context_v6261b','lil_current_font_oracles_v6122':'shady_man_font_oracles_v6263',
+        'current_V6160_native_v6168':'current_V6380_native_v6389','editorial_manuscript_v4.json':'editorial_manuscript_v3.json',
+        'from types import FunctionType':'from types import FunctionType\nfrom dataclasses import replace\nfrom dk4tool.dialogue.profiles import get_dialogue_profile',
+        'len(cases)==len(qa_reports)==17':'len(cases)==len(qa_reports)==24','macro_calls==136':'macro_calls==192',"sum(c['kind']=='system-FE' for c in cases)==7":"sum(c['kind']=='system-FE' for c in cases)==1",
+        'blocks[205]':'blocks[208]','blocks[204]':'blocks[207]','for selector in [2,15,254]':'for selector in [7,170,254]',"format(15 if selector==2 else 2,'02X')":"format(170 if selector==7 else 7,'02X')","r['source_selector']==15":"r['source_selector']==170",
+        'all17_progressive_FE_native_planes_and136_alignment_cases':'all24_progressive_FE_native_planes_and192_alignment_cases',
+        'current_original_macro_alignment_calls=136':'current_original_macro_alignment_calls=192','progressive_alignment_calls=80':'progressive_alignment_calls=184','FE_null_actor_alignment_calls=56':'FE_null_actor_alignment_calls=8','complete_progressive_planes=10':'complete_progressive_planes=23','complete_FE_logical_and_physical_planes=7':'complete_FE_logical_and_physical_planes=1',
+        'assert len(negatives)==18':guard,
+        'All17 current-font native planes,136 alignment cases and18 source-consumer negatives pass':'All24 current-font native planes,192 alignment cases and28 source-consumer/formatter negatives pass',
+        'Complete B205 current-font progressive/FE planes and136 native alignment cases.':'Complete B208 current-font progressive/thought/FE planes and192 native alignment cases.',
+    }))
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_native_tools.json',dict(tools=rows,premature_Then_boundary_guard_strengthened=True,used_it_phrase_kept_together=True,overstrict_great_naval_phrase_group_removed_while_naval_battle_kept=True,no_prose_font_metric_viewport_or_native_guard_changes=True,no_source_specific_ordinary_boundary_waiver=True,all23_progressive_one_FE_and_parenthesized_thought_bound=True,full_goal_complete=False));print('B208 stronger planner and24-plane/192-alignment verifier prepared;all words/metrics preserved.')

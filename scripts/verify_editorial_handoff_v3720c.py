@@ -1,0 +1,8 @@
+"""Verify complete prefixes and normalize the source-owned macro-template notation."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    p=Path('scripts/verify_editorial_handoff_v3720.py');t=p.read_text(encoding='utf-8');changes={"b[r['block']][ref['header_offset']:ref['offset']]==bytes.fromhex(r['source_complete_preamble_hex'])":"b[r['block']][ref['header_offset']:ref['offset']+1]==bytes.fromhex(r['source_complete_preamble_hex'])","body==comparison[r['id']]['current_effective_paragraph']":"body==comparison[r['id']]['current_effective_paragraph'].replace('FI','{MACRO:FI}').replace('FA','{MACRO:FA}').replace('FO','{MACRO:FO}')"}
+    for a,b in changes.items():assert t.count(a)==1;t=t.replace(a,b)
+    exec(compile(t,str(p)+'::complete-prefix-and-source-macro-notation','exec'),dict(__name__='__main__',__file__=__file__));root=Path('work/analysis/editorial_handoff_verification_v3720');save(root/'preserved_verifier_failures_and_corrections.json',dict(previous_producers={str(x):sha(x.read_bytes()) for x in [p,Path('scripts/verify_editorial_handoff_v3720b.py')]},failures=['The five-byte header was compared to the six-byte complete header-plus-selector preamble.','The raw FI logical template was compared to the equivalent explicit {MACRO:FI} author notation in two justified retentions.'],corrections=['Include the executable actor selector in clean/current preamble comparisons.','Normalize the source-owned FI/FA/FO macro notation in the effective predecessor before calculating retention,without runtime name substitution.'],no_manuscript_ledger_ROM_orcredit_mutation=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

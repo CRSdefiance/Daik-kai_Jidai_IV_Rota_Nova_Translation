@@ -1,0 +1,7 @@
+# All Routes Armor Item Cards candidate
+
+Use the local ROM `out/armor_item_cards_registered_20261111_v1/Translation_DS_All_Routes_Armor_Item_Cards_20261111_candidate.nds` with its build manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `3986aaacf8a4fa3ba86cc5d95dd65ac4d5adff644f20ea274777fa41d47dd48f`. Patch SHA-256 is `9fe70ea118665de3db546dafc9de5c00b23a8f7a646b7445b6e4043c0b12fe3e`.
+
+The 25 main armor catalogue descriptions are registered. The ledger now credits 26,608 reviews. Twenty prose revisions restore details including the Kanem warriors and Minerva's place among the Twelve. Five wordings were retained with individual reasons. Charles Martel Armor now uses an ordinary capital F and keeps the royal comparison without assigning a title to Charles Martel.
+
+Both item views passed all 100 native render cases. All 218 description getters passed, and the original Items menu showed the complete three-row Charles Martel Armor description and returned to Lisbon after an isolated inventory transfer. The other 24 cards in this batch were checked offline. All 89 release checks, 34 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/armor_items_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

@@ -83,6 +83,26 @@ def test_v2_requires_per_record_localization_evidence():
     validate_natural_dialogue_batch(value)
 
 
+def test_v2_allows_only_source_verified_leading_linebreaks() -> None:
+    value = batch("{LB}A source-indented line.{PAD}", manual_break_reason="Source begins with a guarded line break")
+    value["translation_policy"] = "natural-dialogue-v2"
+    record = value["records"][0]
+    record["source_meaning"] = "A faithful literal gloss."
+    record["localization_note"] = "The source begins with a renderer-significant guarded line break."
+    record["review"] = {
+        "source": True,
+        "context": True,
+        "localization": True,
+        "naturalness": True,
+        "formatting": True,
+    }
+    with pytest.raises(ValueError, match="leading/consecutive"):
+        validate_natural_dialogue_batch(value)
+
+    record["qa_waivers"] = ["source-leading-linebreak"]
+    validate_natural_dialogue_batch(value)
+
+
 def test_natural_dialogue_requires_padding_marker():
     with pytest.raises(ValueError, match="must end with"):
         validate_natural_dialogue_batch(batch("A natural sentence."))

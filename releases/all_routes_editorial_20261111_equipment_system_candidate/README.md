@@ -1,0 +1,7 @@
+# All Routes Equipment and System candidate
+
+Use the local ROM `out/equipment_system_registered_20261111_v1/Translation_DS_All_Routes_Equipment_System_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `b20603fcb9c5819cd6907a7a09c15908e9b6256537ad53beed5f5602a4003263` byte for byte. Patch SHA-256 is `956d4b639c3ee6793af55a07b88af5ed42f4caaf7aee37d90501f882f1b1a61e`.
+
+The 14 system and equipment notices are registered. The ledger now credits 26,333 reviews. The batch includes eight prose revisions and six justified retentions. The equipment prompt uses “Who should equip it?” and the warning and breakage notice use the catalog name Demon Figurehead. Removal results keep the original two substitutions and wrap after the game expands them.
+
+A controller and stylus replay used an existing ordinary save to buy, equip, and remove the Travels of Marco Polo in Lisbon. The chooser, both full notices, dismissal and return passed. All 21 stored modal variants, 79 release checks, 30 targeted tests, cold startup and 24 protected name getters passed. The ending, quit and forced-figurehead decisions passed offline body checks. [Gameplay verification](verification/equipment_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

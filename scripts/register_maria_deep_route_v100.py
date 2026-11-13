@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v99"]["batches"]);b.append("translations/maria_deep_route_v100.json");p["profiles"]["maria-deep-route-v100"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V99 with all 22 records in SC3 block 137: Julio Erneco's recruitment and age rivalry with Xien."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v100: {len(b)} batches")

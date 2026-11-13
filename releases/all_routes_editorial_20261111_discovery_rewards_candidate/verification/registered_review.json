@@ -1,0 +1,1171 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_288",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 288,
+      "source_reference": {
+        "block": 4,
+        "offset": 2164,
+        "copy_end": 2192,
+        "bytes": 25,
+        "record_index": 27,
+        "table_offset": 1317712,
+        "start_in_record": 1
+      },
+      "source_hex": "90a897cd926c82aa25730a8fe382aa82e882dc82b582bd8149",
+      "clean_Japanese": "勢力値が%s\n上がりました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1935,
+        "copy_end": 1961,
+        "bytes": 25,
+        "record_index": 47,
+        "table_offset": 1317712,
+        "start_in_record": 0
+      },
+      "current_hex": "506f776572202b2573210a2020202020202020202020202020",
+      "current_English": "Power +%s!\n              ",
+      "native_callers": [
+        {
+          "call": 33789892,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33789876,
+          "exact_hex": "f083bdd8e4c901eb0010a0e1120ea0e3bb6b00eb04d08de2f083bde8",
+          "instructions": [
+            "020397B4 pople {r4, r5, r6, r7, r8, sb, pc}",
+            "020397B8 bl #0x20abf50",
+            "020397BC mov r1, r0",
+            "020397C0 mov r0, #0x120",
+            "020397C4 bl #0x20546b8",
+            "020397C8 add sp, sp, #4",
+            "020397CC pop {r4, r5, r6, r7, r8, sb, pc}"
+          ]
+        },
+        {
+          "call": 33858388,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33858372,
+          "exact_hex": "f080bdd8008701eb0010a0e1120ea0e3d72800eb0cd08de2f080bde8",
+          "instructions": [
+            "0204A344 pople {r4, r5, r6, r7, pc}",
+            "0204A348 bl #0x20abf50",
+            "0204A34C mov r1, r0",
+            "0204A350 mov r0, #0x120",
+            "0204A354 bl #0x20546b8",
+            "0204A358 add sp, sp, #0xc",
+            "0204A35C pop {r4, r5, r6, r7, pc}"
+          ]
+        },
+        {
+          "call": 33951976,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33951960,
+          "exact_hex": "0800a0e19b2b01eb0010a0e1120ea0e372cdffeb0500a0e10410a0e1",
+          "instructions": [
+            "020610D8 mov r0, r8",
+            "020610DC bl #0x20abf50",
+            "020610E0 mov r1, r0",
+            "020610E4 mov r0, #0x120",
+            "020610E8 bl #0x20546b8",
+            "020610EC mov r0, r5",
+            "020610F0 mov r1, r4"
+          ]
+        },
+        {
+          "call": 34324820,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34324804,
+          "exact_hex": "0400a0e180bfffeb0010a0e1120ea0e35761feeb093c00eb04219fe5",
+          "instructions": [
+            "020BC144 mov r0, r4",
+            "020BC148 bl #0x20abf50",
+            "020BC14C mov r1, r0",
+            "020BC150 mov r0, #0x120",
+            "020BC154 bl #0x20546b8",
+            "020BC158 bl #0x20cb184",
+            "020BC15C ldr r2, [pc, #0x104]"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Power increased by %s.",
+      "speaker": "System",
+      "source_meaning": "Power, the displayed faction statistic, increased by the supplied amount.",
+      "context": "Four original notices pass the already formatted increase after a power-changing event.",
+      "localization_note": "Express the amount as the change in Power. The full-width digits are produced by the game.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 1935,
+        "copy_end": 1959,
+        "bytes": 22,
+        "record_index": 47,
+        "table_offset": 1317712,
+        "start_in_record": 0,
+        "exact_stored_hex": "506f77657220696e637265617365642062792025732e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_292",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 292,
+      "source_reference": {
+        "block": 4,
+        "offset": 2360,
+        "copy_end": 2428,
+        "bytes": 67,
+        "record_index": 30,
+        "table_offset": 1317720,
+        "start_in_record": 65
+      },
+      "source_hex": "82b182cc94ad8ca982cd0a257382cc8a5882cc0a97ac8d7382c995718ab482c8906c815882cc8ad482c50a986291e882c982c882c182c482a282e982e682a482c582b7",
+      "clean_Japanese": "この発見は\n%sの街の\n流行に敏感な人々の間で\n話題になっているようです",
+      "current_reference": {
+        "block": 4,
+        "offset": 2162,
+        "copy_end": 2231,
+        "bytes": 68,
+        "record_index": 51,
+        "table_offset": 1317720,
+        "start_in_record": 0
+      },
+      "current_hex": "5468697320646973636f76657279207365656d7320746f20686176652070656f706c652077686f20666f6c6c6f77207472656e647320696e2025732074616c6b696e672e",
+      "current_English": "This discovery seems to have people who follow trends in %s talking.",
+      "native_callers": [
+        {
+          "call": 33951812,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33951796,
+          "exact_hex": "081091e531ff2fe10010a0e1490fa0e39bcdffeb77df8de2f08fbde8",
+          "instructions": [
+            "02061034 ldr r1, [r1, #8]",
+            "02061038 blx r1",
+            "0206103C mov r1, r0",
+            "02061040 mov r0, #0x124",
+            "02061044 bl #0x20546b8",
+            "02061048 add sp, sp, #0x1dc",
+            "0206104C pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "It seems people in %s who follow trends are talking about this discovery.",
+      "speaker": "System",
+      "source_meaning": "The discovery appears to be a topic of conversation among people who follow trends in the named city.",
+      "context": "The original discovery-report routine reads the name of the city that is discussing the discovery.",
+      "localization_note": "Match the parallel local-news notice and preserve the qualified report, the city and its trend-following audience.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2160,
+        "copy_end": 2235,
+        "bytes": 73,
+        "record_index": 52,
+        "table_offset": 1317720,
+        "start_in_record": 0,
+        "exact_stored_hex": "4974207365656d732070656f706c6520696e2025732077686f20666f6c6c6f77207472656e6473206172652074616c6b696e672061626f7574207468697320646973636f766572792e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_297",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 297,
+      "source_reference": {
+        "block": 4,
+        "offset": 2600,
+        "copy_end": 2616,
+        "bytes": 16,
+        "record_index": 32,
+        "table_offset": 1317730,
+        "start_in_record": 126
+      },
+      "source_hex": "257382f094ad8ca982b582dc82b582bd",
+      "clean_Japanese": "%sを発見しました",
+      "current_reference": {
+        "block": 4,
+        "offset": 2477,
+        "copy_end": 2492,
+        "bytes": 14,
+        "record_index": 56,
+        "table_offset": 1317730,
+        "start_in_record": 0
+      },
+      "current_hex": "446973636f76657265642025732e",
+      "current_English": "Discovered %s.",
+      "native_callers": [
+        {
+          "call": 34047892,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34047876,
+          "exact_hex": "081091e531ff2fe10010a0e1a4009fe5c76fffeb08109de50c209de5",
+          "instructions": [
+            "02078784 ldr r1, [r1, #8]",
+            "02078788 blx r1",
+            "0207878C mov r1, r0",
+            "02078790 ldr r0, [pc, #0xa4]",
+            "02078794 bl #0x20546b8",
+            "02078798 ldr r1, [sp, #8]",
+            "0207879C ldr r2, [sp, #0xc]"
+          ]
+        },
+        {
+          "call": 34049512,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34049496,
+          "exact_hex": "081091e531ff2fe10010a0e19c009fe5326effeb10109de50800a0e1",
+          "instructions": [
+            "02078DD8 ldr r1, [r1, #8]",
+            "02078DDC blx r1",
+            "02078DE0 mov r1, r0",
+            "02078DE4 ldr r0, [pc, #0x9c]",
+            "02078DE8 bl #0x20546b8",
+            "02078DEC ldr r1, [sp, #0x10]",
+            "02078DF0 mov r0, r8"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Discovered %s.",
+      "speaker": "System",
+      "source_meaning": "The game reports the discovery of the named place.",
+      "context": "Two original approach routines pass the settlement name from the selected model before proceeding to docking.",
+      "localization_note": "The short current system notice fits discovery and leaves docking to the following prompt.",
+      "native_substitution_count": 1,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2481,
+        "copy_end": 2496,
+        "bytes": 14,
+        "record_index": 58,
+        "table_offset": 1317730,
+        "start_in_record": 0,
+        "exact_stored_hex": "446973636f76657265642025732e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_298",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 298,
+      "source_reference": {
+        "block": 4,
+        "offset": 2616,
+        "copy_end": 2640,
+        "bytes": 24,
+        "record_index": 32,
+        "table_offset": 1317732,
+        "start_in_record": 142
+      },
+      "source_hex": "8ea993ae88da93ae82f092868e7e82b582dc82b782a98148",
+      "clean_Japanese": "自動移動を中止しますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 2492,
+        "copy_end": 2517,
+        "bytes": 24,
+        "record_index": 57,
+        "table_offset": 1317732,
+        "start_in_record": 0
+      },
+      "current_hex": "53746f70206175746f6d61746963206d6f76656d656e743f",
+      "current_English": "Stop automatic movement?",
+      "native_callers": [
+        {
+          "call": 34059012,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34058996,
+          "exact_hex": "ff3802eb04d08de23080bde828009fe5d864ffeb000050e304d08d02",
+          "instructions": [
+            "0207B2F4 bl #0x21096f8",
+            "0207B2F8 add sp, sp, #4",
+            "0207B2FC pop {r4, r5, pc}",
+            "0207B300 ldr r0, [pc, #0x28]",
+            "0207B304 bl #0x205466c",
+            "0207B308 cmp r0, #0",
+            "0207B30C addeq sp, sp, #4"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Stop Auto Move?",
+      "speaker": "System",
+      "source_meaning": "The game asks whether to stop automatic travel.",
+      "context": "Pressing the stop control during an active route opens this original yes/no confirmation. No leaves the route running. Yes requests manual sailing.",
+      "localization_note": "Use the established Auto Move label and match the on-screen Stop Auto Move command.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2496,
+        "copy_end": 2513,
+        "bytes": 15,
+        "record_index": 59,
+        "table_offset": 1317732,
+        "start_in_record": 0,
+        "exact_stored_hex": "53746f70204175746f204d6f76653f",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_299",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 299,
+      "source_reference": {
+        "block": 4,
+        "offset": 2640,
+        "copy_end": 2664,
+        "bytes": 22,
+        "record_index": 32,
+        "table_offset": 1317734,
+        "start_in_record": 166
+      },
+      "source_hex": "82b182b182c982cd947a927582c582ab82dc82b982f1",
+      "clean_Japanese": "ここには配置できません",
+      "current_reference": {
+        "block": 4,
+        "offset": 2517,
+        "copy_end": 2542,
+        "bytes": 24,
+        "record_index": 58,
+        "table_offset": 1317734,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752063616e277420706c61636520697420686572652e",
+      "current_English": "You can't place it here.",
+      "native_callers": [
+        {
+          "call": 33633956,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33633940,
+          "exact_hex": "0700a0e1510201eb0f0000ea70009fe5030401eb0c0000eabdde02eb",
+          "instructions": [
+            "02013694 mov r0, r7",
+            "02013698 bl #0x2053fe4",
+            "0201369C b #0x20136e0",
+            "020136A0 ldr r0, [pc, #0x70]",
+            "020136A4 bl #0x20546b8",
+            "020136A8 b #0x20136e0",
+            "020136AC bl #0x20cb1a8"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "You can't assign crew here.",
+      "speaker": "System",
+      "source_meaning": "A crew assignment cannot be made in this location.",
+      "context": "The Deck handler rejects a room that fails the original room predicate before it checks the selected actor’s qualifications.",
+      "localization_note": "Name the action as a crew assignment. Keep the location-based reason distinct from the skill and language restrictions.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2513,
+        "copy_end": 2542,
+        "bytes": 27,
+        "record_index": 61,
+        "table_offset": 1317734,
+        "start_in_record": 0,
+        "exact_stored_hex": "596f752063616e27742061737369676e206372657720686572652e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_301",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 301,
+      "source_reference": {
+        "block": 4,
+        "offset": 2700,
+        "copy_end": 2732,
+        "bytes": 29,
+        "record_index": 34,
+        "table_offset": 1317738,
+        "start_in_record": 1
+      },
+      "source_hex": "9d5c95df82b582bd914482a982e70a8be0257382f093be82dc82b582bd",
+      "clean_Japanese": "拿捕した船から\n金%sを得ました",
+      "current_reference": {
+        "block": 4,
+        "offset": 2577,
+        "copy_end": 2607,
+        "bytes": 29,
+        "record_index": 60,
+        "table_offset": 1317738,
+        "start_in_record": 0
+      },
+      "current_hex": "205365697a656420257320636f696e730a202061626f6172642e202020",
+      "current_English": " Seized %s coins\n  aboard.   ",
+      "native_callers": [
+        {
+          "call": 34022072,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34022056,
+          "exact_hex": "0400a0e127e700eb0010a0e1a0009fe5fe88ffeb0500a0e1001064e2",
+          "instructions": [
+            "020722A8 mov r0, r4",
+            "020722AC bl #0x20abf50",
+            "020722B0 mov r1, r0",
+            "020722B4 ldr r0, [pc, #0xa0]",
+            "020722B8 bl #0x20546b8",
+            "020722BC mov r0, r5",
+            "020722C0 rsb r1, r4, #0"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "You recovered %s gold from captured ships.",
+      "speaker": "System",
+      "source_meaning": "The game reports the amount of money obtained from captured vessels.",
+      "context": "The original victory branch combines capture proceeds and passes the native formatted amount before crediting the player.",
+      "localization_note": "Name the source of the gold. Captured ships describes the category of proceeds without supplying an exact ship count.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2577,
+        "copy_end": 2621,
+        "bytes": 42,
+        "record_index": 64,
+        "table_offset": 1317738,
+        "start_in_record": 0,
+        "exact_stored_hex": "596f75207265636f766572656420257320676f6c642066726f6d2063617074757265642073686970732e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_302",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 302,
+      "source_reference": {
+        "block": 4,
+        "offset": 2732,
+        "copy_end": 2784,
+        "bytes": 49,
+        "record_index": 35,
+        "table_offset": 1317740,
+        "start_in_record": 2
+      },
+      "source_hex": "90cf82f182c582a282c882a28cf088d5956982cd946a8afc82b382ea82dc82b70a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "積んでいない交易品は破棄されます\nよろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 2607,
+        "copy_end": 2657,
+        "bytes": 49,
+        "record_index": 61,
+        "table_offset": 1317740,
+        "start_in_record": 0
+      },
+      "current_hex": "556e6c6f6164656420676f6f647320617265206c6f73742e0a2020436f6e74696e75653f20202020202020202020202020",
+      "current_English": "Unloaded goods are lost.\n  Continue?             ",
+      "native_callers": [
+        {
+          "call": 34092780,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34092764,
+          "exact_hex": "430fa0e3e143ffeb1080bde818009fe5de43ffeb1080bde810009fe5",
+          "instructions": [
+            "020836DC mov r0, #0x10c",
+            "020836E0 bl #0x205466c",
+            "020836E4 pop {r4, pc}",
+            "020836E8 ldr r0, [pc, #0x18]",
+            "020836EC bl #0x205466c",
+            "020836F0 pop {r4, pc}",
+            "020836F4 ldr r0, [pc, #0x10]"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Any trade goods you don't load will be discarded. Continue?",
+      "speaker": "System",
+      "source_meaning": "Trade goods that have not been loaded will be discarded. The player is asked whether to proceed.",
+      "context": "The original cargo state 3 opens this yes/no branch. States 0 and 1 select the separate cargo-still-aboard prompt 268.",
+      "localization_note": "State the consequence before asking for confirmation. Keep the distinction from cargo remaining aboard.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2621,
+        "copy_end": 2683,
+        "bytes": 60,
+        "record_index": 66,
+        "table_offset": 1317740,
+        "start_in_record": 0,
+        "exact_stored_hex": "416e7920747261646520676f6f647320796f7520646f6e2774206c6f61640a2077696c6c206265206469736361726465642e20436f6e74696e75653f",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_303",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 303,
+      "source_reference": {
+        "block": 4,
+        "offset": 2784,
+        "copy_end": 2828,
+        "bytes": 41,
+        "record_index": 36,
+        "table_offset": 1317742,
+        "start_in_record": 2
+      },
+      "source_hex": "9d5c95df82b582bd914482a982e70a904897bf2573924d0a90852573924d0a82f093be82dc82b582bd",
+      "clean_Japanese": "拿捕した船から\n食料%s樽\n水%s樽\nを得ました",
+      "current_reference": {
+        "block": 4,
+        "offset": 2657,
+        "copy_end": 2699,
+        "bytes": 41,
+        "record_index": 62,
+        "table_offset": 1317742,
+        "start_in_record": 0
+      },
+      "current_hex": "5365697a656420736869703a0a2020257320666f6f642c2025732077617465722e2020202020202020",
+      "current_English": "Seized ship:\n  %s food, %s water.        ",
+      "native_callers": [
+        {
+          "call": 34021820,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34021804,
+          "exact_hex": "67e700eb0510a0e10020a0e190019fe53d89ffebf86301eb0050a0e1",
+          "instructions": [
+            "020721AC bl #0x20abf50",
+            "020721B0 mov r1, r5",
+            "020721B4 mov r2, r0",
+            "020721B8 ldr r0, [pc, #0x190]",
+            "020721BC bl #0x20546b8",
+            "020721C0 bl #0x20cb1a8",
+            "020721C4 mov r5, r0"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Recovered from captured ships: %s barrels of food and %s barrels of water.",
+      "speaker": "System",
+      "source_meaning": "The captured ships yielded the supplied number of barrels of food and barrels of water.",
+      "context": "The original victory path computes two quantities separately and passes food first and water second.",
+      "localization_note": "Keep the original food-then-water amounts and the barrel unit on each resource. The summary leads into the two distinct quantities.",
+      "native_substitution_count": 2,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2683,
+        "copy_end": 2761,
+        "bytes": 76,
+        "record_index": 68,
+        "table_offset": 1317742,
+        "start_in_record": 0,
+        "exact_stored_hex": "5265636f76657265642066726f6d2063617074757265642073686970733a0a2025732062617272656c73206f6620666f6f640a20616e642025732062617272656c73206f662077617465722e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_305",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 305,
+      "source_reference": {
+        "block": 4,
+        "offset": 2872,
+        "copy_end": 2912,
+        "bytes": 37,
+        "record_index": 38,
+        "table_offset": 1317746,
+        "start_in_record": 0
+      },
+      "source_hex": "8d9189c682a982e782cc95f18f9e8be082c682b582c40a8be0257382f093be82dc82b582bd",
+      "clean_Japanese": "国家からの報償金として\n金%sを得ました",
+      "current_reference": {
+        "block": 4,
+        "offset": 2743,
+        "copy_end": 2781,
+        "bytes": 37,
+        "record_index": 64,
+        "table_offset": 1317746,
+        "start_in_record": 0
+      },
+      "current_hex": "2020546865206e6174696f6e20617761726465640a2020257320636f696e732e2020202020",
+      "current_English": "  The nation awarded\n  %s coins.     ",
+      "native_callers": [
+        {
+          "call": 34022168,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34022152,
+          "exact_hex": "0500a0e10fe700eb0010a0e148009fe5e688ffeb8f6301eb0040a0e1",
+          "instructions": [
+            "02072308 mov r0, r5",
+            "0207230C bl #0x20abf50",
+            "02072310 mov r1, r0",
+            "02072314 ldr r0, [pc, #0x48]",
+            "02072318 bl #0x20546b8",
+            "0207231C bl #0x20cb160",
+            "02072320 mov r4, r0"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "The nation awarded you %s gold.",
+      "speaker": "System",
+      "source_meaning": "The player received the named monetary amount as a national reward.",
+      "context": "The original victory accounting selects this separate reward after computing the amount. It is distinct from the money recovered from ships.",
+      "localization_note": "Keep the national award in a direct sentence and preserve the project’s gold terminology.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2805,
+        "copy_end": 2837,
+        "bytes": 31,
+        "record_index": 71,
+        "table_offset": 1317746,
+        "start_in_record": 0,
+        "exact_stored_hex": "546865206e6174696f6e206177617264656420796f7520257320676f6c642e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_311",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 311,
+      "source_reference": {
+        "block": 4,
+        "offset": 3040,
+        "copy_end": 3060,
+        "bytes": 17,
+        "record_index": 42,
+        "table_offset": 1317758,
+        "start_in_record": 0
+      },
+      "source_hex": "8be089dd257382f00a93be82dc82b582bd",
+      "clean_Japanese": "金貨%sを\n得ました",
+      "current_reference": {
+        "block": 4,
+        "offset": 2923,
+        "copy_end": 2941,
+        "bytes": 17,
+        "record_index": 70,
+        "table_offset": 1317758,
+        "start_in_record": 0
+      },
+      "current_hex": "257320676f6c642e0a2020202020202020",
+      "current_English": "%s gold.\n        ",
+      "native_callers": [
+        {
+          "call": 34050564,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34050548,
+          "exact_hex": "0500a0e154cb00eb0010a0e118009fe52b6dffeb00008de2fb0c00eb",
+          "instructions": [
+            "020791F4 mov r0, r5",
+            "020791F8 bl #0x20abf50",
+            "020791FC mov r1, r0",
+            "02079200 ldr r0, [pc, #0x18]",
+            "02079204 bl #0x20546b8",
+            "02079208 add r0, sp, #0",
+            "0207920C bl #0x207c600"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "You received %s gold.",
+      "speaker": "System",
+      "source_meaning": "The player obtained the supplied amount of gold coins.",
+      "context": "The native event credits the player with the computed amount before reading this message.",
+      "localization_note": "Complete the status sentence and keep the amount and gold unit. The source does not name the provenance of the award.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2979,
+        "copy_end": 3001,
+        "bytes": 21,
+        "record_index": 77,
+        "table_offset": 1317758,
+        "start_in_record": 0,
+        "exact_stored_hex": "596f7520726563656976656420257320676f6c642e",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_313",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 313,
+      "source_reference": {
+        "block": 4,
+        "offset": 3084,
+        "copy_end": 3100,
+        "bytes": 14,
+        "record_index": 44,
+        "table_offset": 1317762,
+        "start_in_record": 2
+      },
+      "source_hex": "8373836083628141837383608342",
+      "clean_Japanese": "ピチッ、ピチィ",
+      "current_reference": {
+        "block": 4,
+        "offset": 2959,
+        "copy_end": 2974,
+        "bytes": 14,
+        "record_index": 72,
+        "table_offset": 1317762,
+        "start_in_record": 0
+      },
+      "current_hex": "53706c6173682120202020202020",
+      "current_English": "Splash!       ",
+      "native_callers": [
+        {
+          "call": 34020280,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34020264,
+          "exact_hex": "50119fe50600a0e10b89ffeb48019fe5be8affeb44019fe50488ffeb",
+          "instructions": [
+            "02071BA8 ldr r1, [pc, #0x150]",
+            "02071BAC mov r0, r6",
+            "02071BB0 bl #0x2053fe4",
+            "02071BB4 ldr r0, [pc, #0x148]",
+            "02071BB8 bl #0x20546b8",
+            "02071BBC ldr r0, [pc, #0x144]",
+            "02071BC0 bl #0x2053bd8"
+          ]
+        },
+        {
+          "call": 34020296,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34020280,
+          "exact_hex": "be8affeb44019fe50488ffeb38019fe5ba8affeb0600a0e134119fe5",
+          "instructions": [
+            "02071BB8 bl #0x20546b8",
+            "02071BBC ldr r0, [pc, #0x144]",
+            "02071BC0 bl #0x2053bd8",
+            "02071BC4 ldr r0, [pc, #0x138]",
+            "02071BC8 bl #0x20546b8",
+            "02071BCC mov r0, r6",
+            "02071BD0 ldr r1, [pc, #0x134]"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "Splish, splash!",
+      "speaker": "System",
+      "source_meaning": "A small creature makes two quick splashing or flopping sounds.",
+      "context": "The shark scene plays this impersonal sound twice after the crew comments on the encounter and before they ask what to do with the creature.",
+      "localization_note": "Use a light repeated sound appropriate for the small shark. Keep this as an impersonal effect.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 3019,
+        "copy_end": 3036,
+        "bytes": 15,
+        "record_index": 79,
+        "table_offset": 1317762,
+        "start_in_record": 0,
+        "exact_stored_hex": "53706c6973682c2073706c61736821",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_314",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 314,
+      "source_reference": {
+        "block": 4,
+        "offset": 3100,
+        "copy_end": 3128,
+        "bytes": 28,
+        "record_index": 45,
+        "table_offset": 1317764,
+        "start_in_record": 1
+      },
+      "source_hex": "8354838182cc92748b9b82f08ee882c993fc82ea82dc82b582bd8149",
+      "clean_Japanese": "サメの稚魚を手に入れました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 2974,
+        "copy_end": 3002,
+        "bytes": 27,
+        "record_index": 73,
+        "table_offset": 1317764,
+        "start_in_record": 0
+      },
+      "current_hex": "596f75206f627461696e6564206120796f756e6720736861726b21",
+      "current_English": "You obtained a young shark!",
+      "native_callers": [
+        {
+          "call": 34020476,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34020460,
+          "exact_hex": "c8109fe50600a0e1da88ffebc0009fe58d8affebbc009fe53110a0e3",
+          "instructions": [
+            "02071C6C ldr r1, [pc, #0xc8]",
+            "02071C70 mov r0, r6",
+            "02071C74 bl #0x2053fe4",
+            "02071C78 ldr r0, [pc, #0xc0]",
+            "02071C7C bl #0x20546b8",
+            "02071C80 ldr r0, [pc, #0xbc]",
+            "02071C84 mov r1, #0x31"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "You got a baby shark!",
+      "speaker": "System",
+      "source_meaning": "The player obtained the young shark.",
+      "context": "The scene explores what to do with the shark, including raising it. The original keep branch adds item 4 immediately after this notice.",
+      "localization_note": "Use the established Baby Shark item term. The player already encountered the shark, so the line reports acquisition.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 3036,
+        "copy_end": 3058,
+        "bytes": 21,
+        "record_index": 81,
+        "table_offset": 1317764,
+        "start_in_record": 0,
+        "exact_stored_hex": "596f7520676f742061206261627920736861726b21",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_340",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 340,
+      "source_reference": {
+        "block": 4,
+        "offset": 3932,
+        "copy_end": 3952,
+        "bytes": 20,
+        "record_index": 59,
+        "table_offset": 1317816,
+        "start_in_record": 0
+      },
+      "source_hex": "257382f08ee882c993fc82ea82dc82b582bd8149",
+      "clean_Japanese": "%sを手に入れました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3744,
+        "copy_end": 3765,
+        "bytes": 20,
+        "record_index": 108,
+        "table_offset": 1317816,
+        "start_in_record": 0
+      },
+      "current_hex": "2573206163717569726564212020202020202020",
+      "current_English": "%s acquired!        ",
+      "native_callers": [
+        {
+          "call": 33733312,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33733296,
+          "exact_hex": "081091e531ff2fe10010a0e1550fa0e3fca200eb0c0000ea0c008de2",
+          "instructions": [
+            "0202BAB0 ldr r1, [r1, #8]",
+            "0202BAB4 blx r1",
+            "0202BAB8 mov r1, r0",
+            "0202BABC mov r0, #0x154",
+            "0202BAC0 bl #0x20546b8",
+            "0202BAC4 b #0x202bafc",
+            "0202BAC8 add r0, sp, #0xc"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "You got %s!",
+      "speaker": "System",
+      "source_meaning": "The player acquired the named item.",
+      "context": "The original item-acquisition branch passes the name returned by the item model after recording the transfer.",
+      "localization_note": "Use a short, natural acquisition notice that also reads well with uncommon item names.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 3800,
+        "copy_end": 3813,
+        "bytes": 11,
+        "record_index": 116,
+        "table_offset": 1317816,
+        "start_in_record": 0,
+        "exact_stored_hex": "596f7520676f7420257321",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_341",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 341,
+      "source_reference": {
+        "block": 4,
+        "offset": 3952,
+        "copy_end": 3976,
+        "bytes": 23,
+        "record_index": 59,
+        "table_offset": 1317818,
+        "start_in_record": 20
+      },
+      "source_hex": "257382aa0a92878ad482c982c882e882dc82b582bd8149",
+      "clean_Japanese": "%sが\n仲間になりました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3765,
+        "copy_end": 3789,
+        "bytes": 23,
+        "record_index": 109,
+        "table_offset": 1317818,
+        "start_in_record": 0
+      },
+      "current_hex": "20202573206a6f696e6564212020202020202020202020",
+      "current_English": "  %s joined!           ",
+      "native_callers": [
+        {
+          "call": 33733672,
+          "target": 33903244,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33733656,
+          "exact_hex": "0010a0e10500a0e14b4901eba4019fe597a500eb0040a0e19c019fe5",
+          "instructions": [
+            "0202BC18 mov r1, r0",
+            "0202BC1C mov r0, r5",
+            "0202BC20 bl #0x207e154",
+            "0202BC24 ldr r0, [pc, #0x1a4]",
+            "0202BC28 bl #0x205528c",
+            "0202BC2C mov r4, r0",
+            "0202BC30 ldr r0, [pc, #0x19c]"
+          ]
+        }
+      ],
+      "new_credit": 1,
+      "english": "%s joined!",
+      "speaker": "System",
+      "source_meaning": "The named person joined the group.",
+      "context": "The original recruitment branch loads the message, then passes the composed character name to the separate raw-template notice wrapper.",
+      "localization_note": "Keep the direct acknowledgement. It already names the recruit without inventing a position or restating the preceding exchange.",
+      "native_substitution_count": 1,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 3813,
+        "copy_end": 3837,
+        "bytes": 23,
+        "record_index": 118,
+        "table_offset": 1317818,
+        "start_in_record": 0,
+        "exact_stored_hex": "20202573206a6f696e6564212020202020202020202020",
+        "ROM_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d"
+      },
+      "layout_revised_without_prose_revision": false,
+      "gameplay_observed": false
+    }
+  ],
+  "actual_verification_scope": {
+    "observed_notice_IDs": [
+      297,
+      298
+    ],
+    "stored_records": 14,
+    "modal_variants": 31,
+    "directly_viewed_modal_pages": 31,
+    "original_auto_move_stop_yes_to_manual": true,
+    "original_discovery_docking_resupply_and_menu_return": true,
+    "fixture_scope": "Ordinary Riga battery save with original controller and stylus inputs. Inuvik used a prior battery save and a verified eight-byte ship-position fixture before the original discovery.",
+    "startup_scope": "Fresh emulator boot with the previously qualified system unlock fixture and 24 read-only protected name getters.",
+    "offline_only_notice_IDs": [
+      288,
+      292,
+      299,
+      301,
+      302,
+      303,
+      305,
+      311,
+      313,
+      314,
+      340,
+      341
+    ],
+    "retained_raw_name_substitution_verified_offline": 341,
+    "unbound_common_IDs": [
+      287,
+      296,
+      300,
+      304
+    ],
+    "hardware": false
+  },
+  "full_goal_complete": false
+}

@@ -1,0 +1,7 @@
+# All Routes Battle Commands and Outcomes candidate
+
+Use [Translation_DS_All_Routes_Battle_Commands_and_Outcomes_20261111_candidate.nds](../../out/battle_commands_and_outcomes_registered_20261111_v1/Translation_DS_All_Routes_Battle_Commands_and_Outcomes_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `fa89a8e6c6d14be17b2c0b7c100a4cfd08d2fa3932ed4296228525bff4483a45`. Patch SHA-256 `30230934cd69fddf3f65aeca82863035fec53233c94287bee745924c56ef0ec6`.
+
+All 29 battle commands and outcomes are registered. The ledger now credits 27,338 reviews. The batch includes 18 revisions and 11 justified retentions across ram strikes, town attack confirmations, flagship defeats and special-target victories. The tested town names and questions stay together. The special victory call renders Monster Fish, Giant Squid, Shark, White Whale and Ghost Ship in English, including inherited Japanese or abbreviated strings from loaded models.
+
+Two focused Sao Tome replays displayed “Attack Sao Tome?” and exercised the original Yes and No transitions. A location and crew fixture set up the prompt. Ram and defeat reports received offline native tests. All 65 pages, cold boot, 24 protected name getters, 34 targeted tests and 105 release checks passed. [Gameplay](verification/battle_commands_and_outcomes_gameplay_verification.json) · [Exact records](verification/registered_review.json)

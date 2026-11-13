@@ -1,0 +1,975 @@
+{
+  "format": "dk4-contextual-speaker-name-review-v1",
+  "records": [
+    {
+      "actor_ID": 2,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain Lil Argot: the clean リル/アーゴット fields and both original getters support it, and the body identifies her by that name and company. The source explicitly uses admiral/head of the company; no additional rank, relationship or biography is added.",
+      "clean_current_static_fields": {
+        "actor_ID": 2,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182656,
+                "table_field_hex": "70b91502",
+                "pointer": 34978160,
+                "offset": 1423728,
+                "hex": "838a838b",
+                "text": "リル",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182660,
+                "table_field_hex": "98cc1502",
+                "pointer": 34983064,
+                "offset": 1428632,
+                "hex": "8341815b835383628367",
+                "text": "アーゴット",
+                "byte_length": 10,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182664,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182656,
+                "table_field_hex": "70b91502",
+                "pointer": 34978160,
+                "offset": 1423728,
+                "hex": "4c696c",
+                "text": "Lil",
+                "byte_length": 3,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182660,
+                "table_field_hex": "98cc1502",
+                "pointer": 34983064,
+                "offset": 1428632,
+                "hex": "4172676f74",
+                "text": "Argot",
+                "byte_length": 5,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182664,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 2,
+          "actor_object": 36520836,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Lil Argot",
+          "text_hex": "4c696c204172676f74",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 108
+            },
+            {
+              "PC": 34401728,
+              "address": 36325115,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325115,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 65
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 103
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 111
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 116
+            },
+            {
+              "PC": 34401680,
+              "address": 36325121,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 2,
+          "actor_object": 36520836,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Lil Argot",
+          "text_hex": "4c696c204172676f74",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 108
+            },
+            {
+              "PC": 34401728,
+              "address": 36325115,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325115,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 65
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 103
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 111
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 116
+            },
+            {
+              "PC": 34401680,
+              "address": 36325121,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0005"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0019"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0027"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0031"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0037"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0041"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0049"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0056"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": true,
+      "new_credit": 0
+    },
+    {
+      "actor_ID": 3,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain approved Maria and surname Li in the nameplate, with existing full getter Maria Huamei Li. Keep runtime FI/FO in the dialogue; no fixed substitution or new rank is authored into her source name/company introduction.",
+      "clean_current_static_fields": {
+        "actor_ID": 3,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182688,
+                "table_field_hex": "30c01502",
+                "pointer": 34979888,
+                "offset": 1425456,
+                "hex": "837d838a8341",
+                "text": "マリア",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182692,
+                "table_field_hex": "b8ba1502",
+                "pointer": 34978488,
+                "offset": 1424056,
+                "hex": "838a815b",
+                "text": "リー",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182696,
+                "table_field_hex": "f4c11502",
+                "pointer": 34980340,
+                "offset": 1425908,
+                "hex": "837a834183818343",
+                "text": "ホアメイ",
+                "byte_length": 8,
+                "status": "printable-static-string"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182688,
+                "table_field_hex": "30c01502",
+                "pointer": 34979888,
+                "offset": 1425456,
+                "hex": "4d61726961",
+                "text": "Maria",
+                "byte_length": 5,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182692,
+                "table_field_hex": "b8ba1502",
+                "pointer": 34978488,
+                "offset": 1424056,
+                "hex": "4c69",
+                "text": "Li",
+                "byte_length": 2,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182696,
+                "table_field_hex": "f4c11502",
+                "pointer": 34980340,
+                "offset": 1425908,
+                "hex": "4875616d6569",
+                "text": "Huamei",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 3,
+          "actor_object": 36527396,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Maria Li",
+          "text_hex": "4d61726961204c69",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 77
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325116,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401728,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325118,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 3,
+          "actor_object": 36527396,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Maria Huamei Li",
+          "text_hex": "4d61726961204875616d6569204c69",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 77
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325116,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401728,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325118,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 72
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 117
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325121,
+              "size": 1,
+              "value": 109
+            },
+            {
+              "PC": 34401660,
+              "address": 36325122,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401660,
+              "address": 36325123,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325124,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325124,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325125,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325125,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401660,
+              "address": 36325126,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325127,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0012"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0016"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0023"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0034"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0045"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0052"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0060"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": true,
+      "new_credit": 0
+    },
+    {
+      "actor_ID": 10,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain Xien Yan from the clean シエン/ヤン fields and both original getters. The source selector0A is Xien, not Camille09; the recognition line therefore gives no reason to invent Camille changing his earlier reluctance to meet Lil.",
+      "clean_current_static_fields": {
+        "actor_ID": 10,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182912,
+                "table_field_hex": "88be1502",
+                "pointer": 34979464,
+                "offset": 1425032,
+                "hex": "835683478393",
+                "text": "シエン",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182916,
+                "table_field_hex": "38bb1502",
+                "pointer": 34978616,
+                "offset": 1424184,
+                "hex": "83848393",
+                "text": "ヤン",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182920,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182912,
+                "table_field_hex": "88be1502",
+                "pointer": 34979464,
+                "offset": 1425032,
+                "hex": "5869656e",
+                "text": "Xien",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182916,
+                "table_field_hex": "38bb1502",
+                "pointer": 34978616,
+                "offset": 1424184,
+                "hex": "59616e",
+                "text": "Yan",
+                "byte_length": 3,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182920,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 10,
+          "actor_object": 36521092,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Xien Yan",
+          "text_hex": "5869656e2059616e",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 88
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401728,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 89
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 10,
+          "actor_object": 36521092,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Xien Yan",
+          "text_hex": "5869656e2059616e",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 88
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401728,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 89
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0009"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": true,
+      "new_credit": 0
+    }
+  ],
+  "native_name_macro_proof": "work\\analysis\\maria_confrontation_names_v7788\\three_static_speakers_six_getters_clean_fields_source_macros.json",
+  "native_name_macro_proof_sha256": "90a5a5457cc35b1191e023600300fbdf1bec4ff3cc59bc0c86a5b7ccfab6c744",
+  "three_scoped_retentions_not_full207_name_orother_consumer_approval": true,
+  "all207_name_role_alias_review_active": true,
+  "all_shared151_159_andother_prior_name_leads_preserved": true,
+  "new_credit": 0,
+  "full_goal_complete": false
+}

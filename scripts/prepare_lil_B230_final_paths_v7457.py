@@ -1,0 +1,8 @@
+"""Define exact B230 proof references without giving approval or credit."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B230_final_paths_tools_v7457')
+if __name__=='__main__':
+    assert not ROOT.exists();changes={'B229':'B230','reference_v7401':'reference_v7449','native_pages_v7394':'native_pages_v7442b','policy_validation_v7398':'policy_validation_v7446','five_row_reasons':'seven_row_reasons','English_actual_v7407':'English_actual_v7455','later_v7408':'later_v7456','later_pairs_v7408b':'later_pairs_v7456b','name_planes_v7386':'name_planes_v7433','English_view_v7409':'English_view_v7457','relocated_controls_v7404':'relocated_controls_v7452','loader_v7402':'loader_v7450','reference_census_v7403':'reference_census_v7451','entry_v7383':'entry_v7430','name_item_v7385/two_progressive_names_exact_giant_tortoise_item':'name_item_v7432/two_progressive_names_exact_phoenix_bascinet_item','native_approval_v7410':'native_approval_v7458','reference_approval_v7411':'reference_approval_v7459','source_actual_v7390':'source_actual_v7438','def proof_paths():':"PLACE=Path('work/analysis/lil_B230_place_v7434/source_Igirisu_Britain_not_constituent_England_anduntranslated_table_lead.json')\n\ndef proof_paths():",'return dict(native_font_proof=':'return dict(source_place_binding=str(PLACE),native_font_proof='}
+    row=derive('scripts/lil_B229_final_paths_v7409.py','scripts/lil_B230_final_paths_v7457.py',changes);ROOT.mkdir(parents=True);save(ROOT/'source_locked_final_paths.json',dict(tool=row,paths_not_approval=True,item52_static_storage_andBritain_proof_not_B229_staged_item53=True,new_credit=0,full_goal_complete=False))

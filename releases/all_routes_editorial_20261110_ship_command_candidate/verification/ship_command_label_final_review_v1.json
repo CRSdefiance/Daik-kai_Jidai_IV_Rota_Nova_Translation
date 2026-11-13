@@ -1,0 +1,86 @@
+{
+  "format": "dk4-reviewed-ship-command-label-v1",
+  "encoder": "dialogue-relocatable-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "file_path": "/__arm9__.bin",
+      "id": "DK4_ARM9_SHIP_ABANDON_COMMAND",
+      "english": "Abandon Ship",
+      "decision": "revision",
+      "speaker": "Assign Sailors menu",
+      "context": "The original forced-assignment menu offers Assign and a command acting on the selected ship.",
+      "source_meaning": "Abandon the ship.",
+      "localization_note": "Abandon Ship states the full action in the original command style beside Assign.",
+      "source_hex": "914482f08ecc82c482e900",
+      "current_hex": "914482f08ecc82c482e900",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "offset": 1265236,
+        "pointer_field": 1134772
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "offset": 1265236,
+        "pointer_field": 1134772,
+        "ROM_sha256": "7c2553642e40b6eb56560d95a489b8015b7b1d7d42ea8efb479be1f2817e9642"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "offset": 1645388,
+        "pointer_field": 1134772,
+        "runtime_address": 33542160,
+        "exact_stored_hex": "4162616e646f6e205368697000",
+        "ROM_sha256": "383f02b89501a23c48246e01b754957b9f7178f8e377700ad6c763f824dda4a5"
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "ROM_sha256": "383f02b89501a23c48246e01b754957b9f7178f8e377700ad6c763f824dda4a5",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "review_actual": "work\\ship_command_label_release_v1\\ship_menu_actual_verification.json",
+  "review_actual_sha256": "40c53f83a17ff870ccee51705f8b41362166b5079cca89e75eaf910a8e948699",
+  "actual_verification_scope": {
+    "actual_emulator": true,
+    "conditional_activation": "initialized isolated one-byte crew fixture",
+    "normal_and_highlight_caption_masks": 6,
+    "original_back_then_no_and_ship_preservation_observed": true,
+    "earned_crew_loss": false,
+    "confirmed_abandonment": false,
+    "hardware": false,
+    "guide_photos": false
+  },
+  "original_data_transform": {
+    "source_ARM9_sha256": "dae19a97e1496d4a698c0b06161006dec7f4fe0123192a3129da795e6682d797",
+    "target_ARM9_sha256": "f9afa693ba4f7abd8ebf59c46585a7522aed52a9cfd07534965bb867b72fdfb0",
+    "pointer_field": 1134772,
+    "original_pointer": 34819668,
+    "target_pointer": 33542160,
+    "source_terminated_hex": "914482f08ecc82c482e900",
+    "target_terminated_hex": "4162616e646f6e205368697000",
+    "appended_readonly_allocation_hex": "4162616e646f6e205368697000000000",
+    "preserved_market_literal_address": 33542144,
+    "preserved_market_pointer_fields": [
+      802552,
+      802932
+    ],
+    "unchanged_native_code_andother_existing_data": true,
+    "whole_serialized_ARM9_inverse_exact": true,
+    "release_or_review_credit": false
+  },
+  "full_goal_complete": false
+}

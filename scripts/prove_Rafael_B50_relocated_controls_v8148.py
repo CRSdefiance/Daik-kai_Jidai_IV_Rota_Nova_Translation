@@ -1,0 +1,70 @@
+"""Bind all28 stored B50 speeches,nine opaque controls,relocated item-picture request and25normal ends."""
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.papal_trade_route_native_context_v7626 import RouteCurrentContext
+from scripts import prove_lil_shrines_temples_controls_v3168c as inherited
+from scripts.prove_lil_B196_6003_ends_v5597 import end_case
+from scripts.prove_lil_B145_picture_controls_v3587 import picture
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/Rafael_B50_relocated_controls_v8148')
+MAP=Path('work/analysis/Rafael_B50_relocation_v8146/one_block28_speeches_zero_relative_cases_exact_full_inverse.json')
+CURRENT=Path('work/analysis/Rafael_B50_current_v8136/all28_complete_source_current_refs_before_new_English_manuscript.json')
+EFFECTIVE=Path('work/analysis/Rafael_B50_effective_v8137/all28_effective_English_templates56_original_dispatches_no_FE.json')
+SOURCE=Path('work/analysis/Rafael_B50_source_controls_v8132/source_EV0_entry37_commands28_speeches_no_relative_predicate25_seeded_ends.json')
+STORED=Path('work/analysis/Rafael_B50_stored_v8147/all28_stored_bodies_full_native_alignment_and28_exact_viewed_pages.json')
+NAMES=Path('work/analysis/Rafael_B50_names_current_v8136/three_static_speakers_six_reused_getters_three_reused_voices_exact_V8122_binding.json')
+PICTURE=Path('work/analysis/Rafael_B50_pigment_v8134/original4821_descriptor181_clean_current_Red_Dye_andbounded_consumer_path.json')
+INPUT=Path('work/analysis/current_V8122_Rafael_native_v8125/current_native_input.json')
+if __name__=='__main__':
+    assert not ROOT.exists();mapping,current,effective,source,stored,names,picture_source=map(read,[MAP,CURRENT,EFFECTIVE,SOURCE,STORED,NAMES,PICTURE])
+    assert stored['relocation_sha256']==sha(MAP.read_bytes()) and effective['source_packet_sha256']==sha(CURRENT.read_bytes())
+    image=NdsImage.open(current['current_ROM']);assert sha(Path(current['current_ROM']).read_bytes())==mapping['candidate_sha256']==names['candidate_sha256']
+    g=mapping['groups'][0];block=IlnkContainer.parse(Path(mapping['target_archive']).read_bytes()).blocks[50]
+    assert sha(block)==g['target_block_sha256']==stored['research_block_sha256'] and len(block)==g['target_bytes']==1376
+    assert g['target_logical_end']==1374 and g['target_tail_bytes']==2 and block[1374:]==bytes(2)
+    voices={r['source_selector']:r['original_voice_class'] for r in names['native_static_selector_andvoice_resolution']['rows']}
+    ns={**inherited.__dict__,'SOURCE':CURRENT,'route':0,'route_mask':1,'CATALOG_LOOKUP':{}}
+    for name,text in effective['source_owned_dispatch_adapters'].items():exec(compile(text,__file__+'::'+name,'exec'),ns)
+    exec(compile(effective['source_owned_measured_macro_body_adapter'],__file__+'::measured-defaults','exec'),ns)
+    ns['CATALOG_LOOKUP'],catalogue=ns['bind_current_catalog'](image)
+    ROOT.mkdir(parents=True);ctx=RouteCurrentContext(INPUT,'unused-no-historical-ROM',ROOT/'current_context');dispatches=[];controls=[]
+    for ref in g['text_records']:
+        raw=bytes.fromhex(ref['target_hex']);at=ref['new_offset'];assert block[at:at+len(raw)+1]==raw+b'\0' and raw[0] in [0,2,9]
+        result=ctx.execute(ns['dispatch'],raw[0],raw[1:]);ctx.machines.pop()
+        expected=next(r for r in stored['records'] if r['id']==ref['id'])['expanded_stored_hex']
+        boundary=next(r for r in result['boundaries'] if r['kind']=='unexecuted-progressive-body')
+        assert boundary['text_hex']==expected and result['resolved_actor_ID']==raw[0] and result['source_voice_class']==voices[raw[0]]
+        assert not result['FE_original_null_actor_calls']
+        dispatches.append(dict(id=ref['id'],final_offset=at,final_stored_hex=raw.hex(),**result))
+    for a,b,m in zip(current['groups'][0]['all_source_commands'],g['all_target_commands'],g['command_map'],strict=True):
+        assert a['word']==b['word']==m['word']
+        if a['word']==0x4000:continue
+        assert a['word'] not in [0x100,0x200,0x300,0x400,0x8000,0x8100] and a['whole_command_hex']==b['whole_command_hex']
+        controls.append(dict(source_offset=a['offset'],target_offset=b['offset'],word=a['word'],source_command_hex=a['whole_command_hex']))
+    assert len(dispatches)==28 and len(controls)==9 and sum(c['word']==0xA000 for c in controls)==1
+    assert not g['relative_fixups'] and not g['relocated_skip_cases'] and not ctx.machines
+    pc=next(c for c in g['all_target_commands'] if c['word']==0x4821)
+    pic=ctx.execute(picture,block,pc);ctx.machines.pop();assert pic['original_picture_boundary_calls']==picture_source['native_picture_case']['original_picture_boundary_calls']
+    assert pic['source_command_hex']=='2148b5a8' and pic['native_extent']==4
+    terminal=g['all_target_commands'][-1];assert terminal['word']==0 and terminal['offset']==1370 and terminal['offset']+4==1374
+    adapter=source['source_owned_seeded_end_adapter'];env=dict(end_case.__globals__);exec(compile(adapter,__file__+'::relocated-normal-end','exec'),env)
+    arm=image.read_file('/__arm9__.bin');ends=[env['end_case'](arm,block,1370,p,s) for p in [0,1,2,3,0xFFFFFFFF] for s in [0,1,2,3,0xFFFFFFFF]]
+    assert len(ends)==25 and all(r['native_result'][0]==0 and r['native_result'][1]==r['initial_value_word'] for r in ends) and not ctx.machines
+    save(ROOT/'28_stored_dispatches_nine_controls_zero_relatives_relocated4821_25_seeded_ends.json',dict(
+        candidate=current['current_ROM'],candidate_sha256=current['current_ROM_sha256'],relocation=str(MAP),relocation_sha256=sha(MAP.read_bytes()),stored_proof=str(STORED),stored_proof_sha256=sha(STORED.read_bytes()),
+        final_dispatches=dispatches,original_nontext_control_maps=controls,relocated_relative_cases=[],relocated_predicates_andqueries=[],normal_seeded_ends=ends,
+        relocated_picture_case=pic,source_picture_proof=str(PICTURE),source_picture_proof_sha256=sha(PICTURE.read_bytes()),
+        all28_final_actors_voices_complete_stored_bodies_exact_no_FE_objects=True,
+        zero_relative_predicate_query_sites_not_fabricated_execution_coverage=True,
+        all_nine_nonrelative_controls_oneA000_4821_4720_4681_andcomplete_end_bytes_exact=True,
+        source_relocated4821_descriptor_layout_calls_andall_4MiB_ABI_guards_equal=True,
+        full_scene_picture_resource_A000_effect_bodies_not_explained_orclaimed_executed=True,
+        registered_current_catalogue_binding=catalogue,R40_R61_FA_R108_FI_final_effective_bytes_exact=True,
+        no_typed_menu_printf_orstate_result_seed_forcing_added=True,
+        actual_B50_all28speeches_nameplates_item_picture_4720_4681_andnormal_return_still_pending=True,
+        fullreference_loaders_callers_frozen_policy_atomic_andregistered_release_pending=True,
+        native_context_plan=str(ctx.proof_path),native_context_plan_sha256=sha(ctx.proof_path.read_bytes()),
+        evidence={str(p):sha(p.read_bytes()) for p in [MAP,CURRENT,EFFECTIVE,SOURCE,STORED,NAMES,PICTURE,INPUT,Path(__file__)]},new_credit=0,new_emulator_runs=0,full_goal_complete=False))
+    print('B50:28stored actor/voice/body dispatches,nine exact controls,relocated4821request and25seeded normalends pass.Zero branches/predicates/queries;full actual scene/reference/release pending.')

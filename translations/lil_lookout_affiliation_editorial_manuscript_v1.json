@@ -1,0 +1,128 @@
+{
+  "format": "dk4-natural-dialogue-reviewed-batch-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "dialogue_profile": "lil-opening-editorial-native-v1",
+  "file_path": "/data/SC2.DK4",
+  "block": 23,
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": false,
+  "source_context": "work\\analysis\\lil_lessons_contextual_v1977\\all64_clean_current_full_exchange_and_native_commands.json",
+  "source_context_sha256": "c29613d42786579019f24d9101cf6a9e8b2ca48f714a7284866a82a103e11071",
+  "current_ROM": "out\\all_routes_combined_v1971_candidate.nds",
+  "current_ROM_sha256": "c4c998e446b7ac410d2294563fc4e5d5181cef6938c25254b1bd3679492efa20",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "required_runtime_ARM9_sha256": "500b7d6cea559d7252ae4e67f94540e67739428823a17cf26842b6827712a41e",
+  "approved_names": [
+    "Rafael",
+    "Hodram",
+    "Joakim",
+    "Maria",
+    "Camille"
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B23_R0142",
+      "file_path": "/data/SC2.DK4",
+      "block": 23,
+      "source_reference": {
+        "offset": 1845,
+        "bytes": 87,
+        "header_offset": 1840
+      },
+      "current_reference": {
+        "file_path": "/data/SC2.DK4",
+        "block": 23,
+        "offset": 2095,
+        "bytes": 99,
+        "header_offset": 2090,
+        "record_index": 141
+      },
+      "source_hex": "098ca992a382e882cd82cb81418a4382cc8fe382c50a91bc82cc914482cc8f8a91ae82e28a5882cc976c8e7182c882f182a982f00a836083468362834e82b582c495f18d9082b782e982cc82aa8e648e9682c882f182be",
+      "current_text_hex": "0941204c6f6f6b6f757420636865636b7320776869636820666c65657473206f746865720a2073686970732062656c6f6e6720746f20616e64207265706f727473206f6e200a20636974696573207768696c6520776520617265206174207365612e20",
+      "clean_Japanese": "見張りはね、海の上で\n他の船の所属や街の様子なんかを\nチェックして報告するのが仕事なんだ",
+      "current_stored_English": "A Lookout checks which fleets other\n ships belong to and reports on \n cities while we are at sea. ",
+      "source_record_index": 142,
+      "record_index": 141,
+      "source_presentation_prefix_hex": "09",
+      "source_complete_preamble_hex": "0040ffff0009",
+      "source_Japanese": "見張りはね、海の上で\n他の船の所属や街の様子なんかを\nチェックして報告するのが仕事なんだ",
+      "speaker": "Camille",
+      "source_meaning": "A Lookout checks and reports other ships affiliations and the state of cities while at sea.",
+      "english": "{SPEAKER:09}A Lookout checks who other ships belong to and reports on cities while we're at sea.",
+      "context": "Complete sailing andcrew lessons andboth responses ofboth choices reread inclean Japanese. Lil's reluctant learning andsearch forshortcuts,Camille's patient insistence,Fernando's confident lookout offer andteasing,andall nineanonymous FE controls retain distinct voices. Preserve heading,wind/sail controls,Half Open automation,Full Open practice,staff roles,stat/range effects,coordinates andX/Deck View instructions. No newrank,relationship ormechanic. One Lookout affiliation over-specification needsrevision;63other entries retain wording withindividual reasons. Full native,typed source reference,final parity,focused revised glyphs andnormal Brugesreturn pass;registered integration pending. The other63 entries retain source-reviewed wording andexact inherited display evidence.",
+      "editorial_decision": "revise",
+      "localization_note": "Revise fleets towho other ships belong to. 所属 identifies affiliation/ownership without restricting ittoa fleet. The lookout's at-sea reporting oncities remains;we're reads conversationally without adding a mechanic.",
+      "fresh_retained_wording_justification": null,
+      "historical_review": "translations\\lil_lessons_final_review_v1.json",
+      "historical_review_sha256": "8fe19ed8a2378140a56f0bbd87b5aa95200509fc134c604bde26602f123dc54a",
+      "historical_actual_samples": [
+        {
+          "proof": "work\\analysis\\lil_crew_scene_v1763_final\\complete_B23_scene_and_fixture_audit.json",
+          "holds": [
+            {
+              "frame": 39440,
+              "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\lil_crew_final_text_v1764_RESEARCH_ONLY\\frame_039440_navigation.png",
+              "capture_sha256": "f07c329470bdccb09d9003776f85ce9a37c92bcaf530417282fe58cf34f8929f",
+              "RAM_sha256": "a0db643894ae96c5e8f520db807788e72211b86c4d4467e084867664577bde92",
+              "whole_native_independent_actual_ink_equal": true
+            },
+            {
+              "frame": 39470,
+              "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\lil_crew_final_text_v1764_RESEARCH_ONLY\\frame_039470_navigation.png",
+              "capture_sha256": "dfe481d3b26320fb0ebbe0cba18ada7645d736ee1d87af21055c024f7c7fed17",
+              "RAM_sha256": "fd8be16d35a18b5f01645684ac67e7975a2c16d0792bc0db96c2c59f3a2afaf9",
+              "whole_native_independent_actual_ink_equal": true
+            }
+          ],
+          "same_target_block_and_runtime_verified": true
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "0941204c6f6f6b6f757420636865636b732077686f206f74686572207368697073200a2062656c6f6e6720746f20616e64207265706f727473206f6e206369746965730a207768696c65207765277265206174207365612e",
+      "native_display_consumer": "original_progressive_54020",
+      "native_font_proof": "work\\analysis\\lil_Lookout_affiliation_fonts_v1978\\one_changed_native_macros_and_complete_font_plane.json",
+      "actual_proof": "work\\analysis\\lil_Lookout_actual_v1983\\focused_Lookout_neighbors_original_B23_results_and_return.json",
+      "actual_holds": [
+        {
+          "frame": 39440,
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\lil_Lookout_revised_run_v1982_RESEARCH_ONLY\\frame_039440_navigation.png",
+          "capture_sha256": "b55107a7dbae3956757251f35f7b233782728a3d08cf4e07371c3cb5ffb85ac0",
+          "RAM_sha256": "fdfab56b5d6c2abdaa1f8ed098d13bb20223df4fd7af12e56f43f32412a98d41",
+          "complete_native_independent_actual_ink_equal": true
+        },
+        {
+          "frame": 39470,
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\lil_Lookout_revised_run_v1982_RESEARCH_ONLY\\frame_039470_navigation.png",
+          "capture_sha256": "a345e2c6acbe215a3e45ed1a845f5342ac8c69267b62f0ddf8d0157582dc7fde",
+          "RAM_sha256": "cff47ceb6a6d35c6a00e3ab7e80affa6a9c58dd394c9b581a97f2e0218d063c7",
+          "complete_native_independent_actual_ink_equal": true
+        }
+      ],
+      "complete_current_source_reference_map": "translations\\lil_lookout_affiliation_relocation_map_v1.json"
+    }
+  ],
+  "full64_contextual_review_manuscript": "translations\\lil_lessons_editorial_manuscript_v6.json",
+  "unchanged_four_choices_review": "translations\\lil_lesson_choices_editorial_draft_v3.json",
+  "full60_native_inheritance": "work\\analysis\\lil_lessons_native_checkpoint_v1979b\\all60_source_bound_native_font_inheritance.json",
+  "native_font_proof": "work\\analysis\\lil_Lookout_affiliation_fonts_v1978\\one_changed_native_macros_and_complete_font_plane.json",
+  "approved_reference_map": "translations\\lil_lookout_affiliation_relocation_map_v1.json",
+  "approved_reference_map_sha256": "125e0458fcb40fdbe3c1528777a5db07c36fe525f73b0d0609cdcf1810b281c4",
+  "actual_visual_review": "work\\analysis\\lil_Lookout_actual_v1983\\focused_Lookout_neighbors_original_B23_results_and_return.json",
+  "actual_visual_approval": "work\\analysis\\lil_Lookout_approval_v1984\\representative_actual_visual_approval.json",
+  "status": "one-source-native-reference-revised-approved;registered-integration-pending",
+  "full_goal_complete": false
+}

@@ -1,0 +1,9 @@
+# All Routes Trade and Sailing promotion candidate
+
+Cold-boot the [local candidate ROM](../../out/promotion_ready_20261111_trade_and_sailing/Translation_DS_All_Routes_Trade_and_Sailing_20261111_candidate.nds) with its [build manifest](../../out/promotion_ready_20261111_trade_and_sailing/Translation_DS_All_Routes_Trade_and_Sailing_20261111_candidate.manifest.json). The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 `4096009207a9628b9754bc13649b3172cd71da83a0790f303c47f9caaea5dacf`. Patch SHA-256 `a1330cb704fc184f72e356cf9d8465b55ede65c122206e9330a0b3489540b280`.
+
+This build adds 247 reviews since Item Advice, including the last 70 item-advice replies, 124 Price Info descriptions and 53 sailing reactions. It includes Rafael’s tutorials, the Market Goods Info fix and the ASCII right-bound correction. V4701 remains main pending cold-boot acceptance. [Reconstruction](verification/promotion_reconstruction.json) · [Remaining work](verification/editorial_remaining_scope.json)
+
+Fifty-three sailing reactions are registered. The ledger now credits 27,146 reviews. The batch includes 35 revisions and 18 justified retentions for returning wind, the white whale, a glint on the water, reef armor, the ram breaking drift ice and treasure. The seven source table bindings preserve the original speaker selection.
+
+All 53 pages passed native checks and visual review. A focused Hodram emulator replay supplied the two conditions through the original setter and confirmed the wind line, both whale remarks from the same lookout and the return to sailing. Reef, ram and treasure variants received offline checks. The cold boot, 24 protected name getters, 34 targeted tests and 100 release checks passed. [Gameplay](verification/sailing_reactions_gameplay_verification.json) · [Exact records](verification/registered_review.json)

@@ -1,0 +1,9 @@
+"""Preserve all words and protect the observed Come on phrase across automatic wraps."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+if __name__=='__main__':
+    a=Path('dk4tool/dialogue/lil_B142_B145_layout_v1.py');b=Path('dk4tool/dialogue/lil_B142_B145_layout_v2.py');assert not b.exists();t=a.read_text(encoding='utf-8');old='def _word(value):';assert old in t;t=t.replace(old,"PROTECTED_BOUNDARIES = PROTECTED_BOUNDARIES | frozenset({('come','on')})\n\ndef _word(value):");compile(t,str(b),'exec');b.write_text(t,encoding='utf-8')
+    a=Path('scripts/plan_lil_B142_B145_layout_v3585.py');b=Path('scripts/plan_lil_B142_B145_layout_v3588.py');assert not b.exists();t=a.read_text(encoding='utf-8');pairs=[('lil_B142_B145_layout_v3585','lil_B142_B145_layout_v3588'),('lil_B142_B145_layout_v1','lil_B142_B145_layout_v2'),("OUTPUT=Path('translations/lil_B142_B145_editorial_manuscript_v2.json')","OUTPUT=Path('translations/lil_B142_B145_editorial_manuscript_v3.json')")]
+    for x,y in pairs:assert x in t;t=t.replace(x,y)
+    compile(t,str(b),'exec');b.write_text(t,encoding='utf-8');root=Path('work/analysis/lil_B142_B145_visual_refinement_v3588');assert not root.exists();root.mkdir(parents=True);save(root/'observed_wrap_finding_and_scoped_successors.json',dict(viewed_sheets='work/analysis/lil_B142_B145_fonts_v3586b/current_native_sheet1.png through current_native_sheet5.png',finding='B145R23 split Come / on across rows;keep the spoken phrase together automatically.',all38_prose_and_decisions_preserved=True,no_authored_line_break_or_space=True,formatter='dk4tool/dialogue/lil_B142_B145_layout_v2.py',formatter_sha256=sha(Path('dk4tool/dialogue/lil_B142_B145_layout_v2.py').read_bytes()),layout_successor=str(b),layout_successor_sha256=sha(b.read_bytes()),producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

@@ -1,0 +1,46 @@
+"""Preserve corrected native routing, source-owned repack and pending release work."""
+from pathlib import Path
+from scripts.verify_village_wrap_v608 import read,save
+from dk4tool.patch.grand_race_menu_release import sha
+ROOT=Path('work/analysis/town_services_checkpoint_v2094')
+PROOFS=[
+'work/analysis/town_services_modal_geometry_v2076c/83_84_mode_zero_and_shared_native_bitmap_geometry.json',
+'work/analysis/town_services_runtime_v2080/runtime_plan.json',
+'work/analysis/town_services_status_v2081/current_and_corrected_relocated_status_native_equivalence.json',
+'work/analysis/town_services_selector_v2082/all_eight_parent_native_selector_and_ABI.json',
+'work/analysis/town_services_research_routes_v2083/research_runtime_all84_original_BL_routes.json',
+'work/analysis/town_services_routed_planes_v2084/all122_original_route_native_planes.json',
+'work/analysis/town_services_modal_scope_v2086/all3668_original_BL_modal_scope_and_ABI.json',
+'work/analysis/town_services_references_v2087/all_units_01_02_absolute_branch_ADR_and_Thumb_references.json',
+'work/analysis/town_services_receipt_names_v2089/all36_original_caller_native_printf_and_modal_names.json',
+'work/analysis/town_services_visual_v2090/name_native_planes_and_style_sheet.json',
+'work/analysis/town_services_style_v2091/individual_ten_style_retention_decisions.json',
+'work/analysis/town_services_payload_v2092b/native_payload_plan.json',
+'work/analysis/town_services_copies_v2093/all_native_copies_and_prefix_cache_sequence.json']
+SUMMARY='Primary town-services84 remains42 revisions and42 justified retentions, with English unchanged in notes-only manuscriptv4. Native modal construction proves228x48 text paper for83/84. Corrected research runtimeV2080 preserves the original fixed status-string base explicitly after relocating24bytes of offsets;V2077 failed output and is superseded,never integrated. Current/corrected status280 cases pass;128834 native selector cases cover all8parents,alignment,highwords,numeric edges andspecial dispatch. All148 physical actor/modal BL cases match the intended balanced output. All122 distinct paragraph ink/shadow planes freshly match independent pixels,ordered complete glyphs,bounds andone-panel consumption. All3666 unselected modal IDs retain exact output;133 wrong-parent and5 fullword controls pass. Fresh7-unit absolute01/02,ARM branch/ADR andThumb census has2 unchanged external references andno external alias into relocated packed data. The real clean-exact83caller,original numeric conversion,printf andmodal BL preserve36 name/amount cases,including18byte F/I names andCP932aliases. Thirty-three supported-font name planes pass. Three constructed alias cases use8790 for a symbol absent from the unchanged native font;byte preservation passes,but no glyph/pixel coverage isclaimed for that unsupported stress character. Earlier2085 fixture retained PAD markup andis superseded by2089;failed2088 is superseded by explicit2090 coverage. All10 soft-wrap findings have individual source/context/visual retention reasons andnarrow documented style waivers;no hardfont gate waived,no English rewritten for width. Guarded2092b payload repacks onlyCOMMON0 from3988to4299bytes with77 actual text changes among84 source-reviewed records. All3668 copy receipts preserve every unselected native span andall40 otherblocks;opaque1484prefix andcarrier1931 exact. Original source includes end-fenced copies without storedNUL;2092 failed that generic assumption andis preserved. Native2093 executes7336 cold/warm complete copies plus180cache sequences,fullspan+NUL,8192input/output andABIguards. These are offline native tests with explicit host file-I/O contracts,not actual income-event or revised-ROM gameplay. Registered candidate remainsV2047,489manifestbatches114acceptedlayers,exactclean-inputpatch unchanged. Registration,revised representative town playback,release reconstruction andcompletion credit remainpending. Full editorial objective,every remaining storyline/shared town/shop/random/playerprose,separategraphics/all18plaques andlater older-record technical re-audit remainopen. Preserve all ROMs andearlier translations;V1492 promoted,canonicalunchanged.'
+if __name__=='__main__':
+ assert not ROOT.exists();ROOT.mkdir(parents=True)
+ ledger_path=Path('translations/editorial_review_current_v1.json');handoff=Path('docs/editorial_handoff_current.md');ledger=read(ledger_path);fresh=ledger['contextual_story_natural_dialogue_pass_v1871'];doc_path=Path('translations/primary_town_services_contextual_editorial_manuscript_v4.json');doc=read(doc_path)
+ assert(fresh['fresh_pass_records_explicitly_reread'],fresh['fresh_pass_records_integrated'],fresh['fresh_pass_records_pending_native_actual_release'])==(740,656,84)
+ assert(ledger['records_editorially_completed'],ledger['records_revised_and_integrated'],ledger['retained_wordings_editorially_completed'],ledger['records_with_source_and_prose_pass'])==(2059,1456,603,2259)
+ assert len(doc['records'])==84 and all(not r['review']['formatting']for r in doc['records'])
+ p=[read(v)for v in PROOFS];assert p[2]['total_cases']==280 and p[3]['total_cases']==128834 and len(p[4]['cases'])==148 and not p[4]['errors']and p[5]['native_count']==122
+ assert p[8]['count']==36 and p[9]['native_name_plane_count']==33 and len(p[9]['unsupported_stress_cases'])==3 and len(p[10]['decisions'])==10 and p[12]['complete_native_copies']==7336 and len(p[12]['sequenced_cache_cases'])==180
+ assert sha(Path(ledger['current_integrated_candidate']['path']).read_bytes())==ledger['current_integrated_candidate']['sha256']==doc['current_ROM_sha256']
+ for v in(ledger_path,handoff,Path('docs/translation_progress.md'),Path('docs/editorial_review_goal.md'),Path('docs/todo.md'),Path('docs/known_issues.md')):(ROOT/(v.name+'.before')).write_bytes(v.read_bytes())
+ evidence={v:sha(Path(v).read_bytes())for v in [str(doc_path),*PROOFS]}
+ ledger['primary_town_services_v2094']=dict(summary=SUMMARY,manuscript=str(doc_path),evidence=evidence,goal_turn_classification='progress',formatting_native_research_passed=True,registered_integration_complete=False,completion_credit_added=0,full_goal_complete=False)
+ ledger['primary_town_services_v2075']['superseded_research_checkpoint']='V2094'
+ family=next(v for v in fresh['pending_contextual_families']if v['id']=='Primary-town-services84');family.update(manuscript=str(doc_path),runtime_research=PROOFS[1],routed_native_plane_proof=PROOFS[5],modal_parameter_cases_pending=0,style_findings_pending=0,guarded_payload=PROOFS[11],native_copy_proof=PROOFS[12],formatting_reference_actual_release_pending=True)
+ ledger['latest_checkpoint']='V2094 '+SUMMARY;save(ledger_path,ledger)
+ section='## Primary town-services84 corrected native/runtime and repack checkpoint - V2094\n\n'+SUMMARY+'\n\n'
+ section+='- Current manuscript: `'+str(doc_path)+'`;all84 final formatting/release gates remainfalse until registered verification. No prose orsource coverage credit added.\n'
+ section+='- Research runtime2080 SHA25667eacb87ccb4bfb3cfbfa13a16fad31c3b404593743fbaf19e3ed5500dd56703. Repacked payload2092b ARM9b7b4b2e77438a8ac340a436474d2b9d5abf6684410293630b660ea25c33b365c,COMMON1cdd9e1cc6d0d8a249e45c066e97c0887f86c6d92d91860a9343b83270634763. No playableROM produced.\n'
+ section+='- Evidence hashes: `'+str(ROOT/'checkpoint_receipt.json')+'`. Reuse passedV2076c/V2080-2093 checks. Do not repeat previous Maria/Hodram/Rafael/Stockholm gameplay.\n'
+ section+='- Next: bind runtime-font proofs to metadata-only repacked ARM9,register a late optional natural-dialogue-v2 layer afterV2047,build throughbuild_integrated_release.py,verify full inherited stack/exact clean-inputpatch,startup andrepresentative revised town transitions. Reuse existing ordinary38500frame town schedule/system-unlock donor,clearly isolated andnotearned. Keep unsupported arbitrary8790symbol outside pixel-coverage claims. Native-name eligibility for that symbol isnot established. Fullobjectiveactive.\n\n'
+ raw=handoff.read_text(encoding='utf-8');assert raw.startswith('# Current editorial handoff - V2075');raw=raw.replace('# Current editorial handoff - V2075','# Current editorial handoff - V2094',1);marker='## Primary town-services84 native routing and plane research - V2075';assert marker in raw;handoff.write_text(raw.replace(marker,section+marker,1),encoding='utf-8',newline='\n')
+ for n in('translation_progress.md','editorial_review_goal.md','todo.md','known_issues.md'):
+  path=Path('docs')/n;path.write_text(path.read_text(encoding='utf-8')+'\n\n## V2094 Primary town-services corrected native/runtime and repack\n\n'+SUMMARY+'\n',encoding='utf-8',newline='\n')
+ Path('docs/primary_town_services_v2094_checkpoint.md').write_text('# Primary town services V2094\n\n'+section,encoding='utf-8',newline='\n')
+ save(ROOT/'checkpoint_receipt.json',dict(summary=SUMMARY,evidence=evidence,ledger_sha256=sha(ledger_path.read_bytes()),handoff_sha256=sha(handoff.read_bytes()),source_prose=2259,historical_complete=2059,fresh_reread=740,fresh_integrated=656,fresh_pending=84,completion_credit_added=0,registered_candidate_unchanged=True,all_jobs_terminal=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ print(dict(checkpoint='V2094',native_checks_and_repack_pass=True,registered_ROM_unchanged=True,fresh_pending=84))

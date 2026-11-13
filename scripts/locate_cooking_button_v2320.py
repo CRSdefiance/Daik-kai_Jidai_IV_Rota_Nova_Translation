@@ -1,0 +1,14 @@
+"""Read-only current31-button geometry locates Cook21 andexplains the missed touch."""
+from pathlib import Path
+import struct
+from scripts.verify_personal_gameplay_v841 import actual_view,rtti,get_machine
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.rom.nds import NdsImage
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/cooking_button_geometry_v2320')
+if __name__=='__main__':
+ assert not ROOT.exists();ROOT.mkdir(parents=True);reportpath=Path('E:/Rota Nova translations/Generated/work/emulation_v193/cooking_current_v2319_V2284/capture_report.json');report=read(reportpath);snapshot=next(r for r in report['read_only_capture_RAM_snapshots']if r['frame']==4600);raw=Path(snapshot['path']).read_bytes();assert sha(raw)==snapshot['sha256'];view,parent,resource,header=actual_view(raw);arm=NdsImage.open('out/all_routes_combined_v2284_candidate.nds').read_file('/__arm9__.bin');cpu,get=get_machine(arm,raw);controller=get(0xCB1A8)+0x2090;model=get(0x82E04,controller);buttons=[]
+ for slot in range(31):
+  address=parent+0x470+slot*0xD4;vt=struct.unpack_from('<I',raw,address-0x02000000)[0];assert rtti(raw,vt)=='16CDeckCabinButton';index,role=struct.unpack_from('<2I',raw,address-0x02000000+0x6C);rect=list(struct.unpack_from('<4i',raw,address-0x02000000+0x20));assert index==slot and role==get(0x132C0,model,slot);buttons.append(dict(slot=slot,native_role_type=role,object=address,vtable=vt,rectangle=rect))
+ cook=buttons[21];assert cook['native_role_type']==15 and cook['rectangle']==[130,134,170,174];old=[b for b in buttons if b['rectangle'][0]<=224<b['rectangle'][2]and b['rectangle'][1]<=150<b['rectangle'][3]];assert len(old)==1 and old[0]['slot']==29 and old[0]['native_role_type']==24;point=[150,154];assert cook['rectangle'][0]<=point[0]<cook['rectangle'][2]and cook['rectangle'][1]<=point[1]<cook['rectangle'][3]
+ save(ROOT/'source_bound_Galley_touch.json',dict(candidate='out/all_routes_combined_v2284_candidate.nds',candidate_sha256=report['ROM_sha256'],ARM9_sha256=sha(arm),source_report=str(reportpath),source_report_sha256=sha(reportpath.read_bytes()),source_snapshot=snapshot,parent=parent,all31_native_buttons=buttons,button_field_binding='Original1CA98 reads CDeckCabinButton+6C slot;captured+70 role matches original132C0 for all31 slots;captured+20 rectangle matches known successful Survey7 andLumber13 touches.',Cook21=cook,corrected_touch=point,prior_touch=[224,150],prior_touch_hit=old[0],original_UI_ignored_nonpersonnel_slot_and_kept_Gerhard_Survey=True,prior_attempt_no_Cook_coverage_credit=True,no_live_RAM_or_ROM_change=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(Cook_slot=21,native_role=15,rectangle=cook['rectangle'],corrected_touch=point,prior_slot=29,new_fixture=False))

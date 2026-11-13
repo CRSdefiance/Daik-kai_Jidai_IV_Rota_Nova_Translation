@@ -1,0 +1,7 @@
+# Sound Setup music titles registered
+
+All 38 Sound Setup music titles are registered. The ledger now credits 27,696 reviews. COMMON 3251–3288 supplies the original Sound Setup BGM selector. All 38 individual contextual decisions are in the [review ledger](../releases/all_routes_editorial_20261111_sound_bgm_titles_candidate/verification/registered_review.json). The [registered ROM and patch](../releases/all_routes_editorial_20261111_sound_bgm_titles_candidate/README.md) preserve all 114 accepted layers, including the Market and ASCII right-bound corrections.
+
+Northern and Southern European Town use parallel wording for the source locations. Rafael and Lil & Camille match the approved spellings used elsewhere. The original selection order, five-pixel tracking, and centered title panel are preserved. The original Sound Setup navigation displayed the four revised tracks and the full “Southeast Asian Village” title. That replay establishes the last letter’s presence where the synthetic narrow surface stopped one character early. Both return screens and all pixels outside the changed title region matched. Hardware and audio output remain unassessed.
+
+280 native shared keys remain to review or classify. Continue with the Online copy, scene labels, and other legacy or shared keys. Other player-facing UI, speaker labels, earlier wraps and glyphs, and representative town and random-scene testing remain in scope. Deferred artwork and the older-record technical re-audit remain separate.

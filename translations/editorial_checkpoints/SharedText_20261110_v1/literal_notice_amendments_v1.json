@@ -1,0 +1,162 @@
+{
+  "original": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\literal_notice_context_and_runtime.json",
+  "original_sha256": "e55b89fb04efa2f2651f207b9c808eb332b2b265dec04500368b5aeb7f88f1db",
+  "amended_records": [
+    {
+      "message_ID": 93,
+      "before": "The city of %s is firing on %s's fleet.",
+      "after": "The city of %s is firing on a fleet from %s.",
+      "rationale": "Use a fleet from to preserve the affiliation without repeating fleet when it appears in the company's name.",
+      "source_reference": {
+        "block": 0,
+        "offset": 3280,
+        "copy_end": 3316,
+        "bytes": 34,
+        "record_index": 70,
+        "table_offset": 1317322,
+        "start_in_record": 60
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3749,
+        "copy_end": 3797,
+        "bytes": 46,
+        "record_index": 89,
+        "table_offset": 1317322,
+        "start_in_record": 96
+      },
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082f00a96438c8282b582c482a282dc82b7",
+      "current_hex": "5468652063697479206f6620257320686173206f70656e65642066697265206f6e202573277320666c6565742e20",
+      "verified_fresh_native_expansion_cases": [
+        {
+          "message_ID": 93,
+          "arguments": [
+            "Lisbon",
+            "Castor Co."
+          ],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [
+            40239872,
+            40239936
+          ],
+          "expanded_hex": "5468652063697479206f66204c6973626f6e20697320666972696e67206f6e206120666c6565742066726f6d20436173746f7220436f2e2e",
+          "native_wrapper_output_hex": "5468652063697479206f66204c6973626f6e20697320666972696e67206f6e206120666c6565742066726f6d20436173746f7220436f2e2e",
+          "native_wrapper_lines": [
+            "The city of Lisbon is firing on a fleet from Castor Co.."
+          ],
+          "native_width_units": [
+            56
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [
+            1
+          ],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "scratch_template_test_before_widget_creation": true,
+          "original_storage_unmodified": true
+        },
+        {
+          "message_ID": 93,
+          "arguments": [
+            "Santo Domingo",
+            "Bergstrom Fleet"
+          ],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [
+            40239872,
+            40239936
+          ],
+          "expanded_hex": "5468652063697479206f662053616e746f20446f6d696e676f20697320666972696e67206f6e206120666c6565742066726f6d20426572677374726f6d20466c6565742e",
+          "native_wrapper_output_hex": "5468652063697479206f662053616e746f20446f6d696e676f20697320666972696e67206f6e206120666c6565742066726f6d20426572677374726f6d20466c6565742e",
+          "native_wrapper_lines": [
+            "The city of Santo Domingo is firing on a fleet from Bergstrom Fleet."
+          ],
+          "native_width_units": [
+            68
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [
+            1
+          ],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "scratch_template_test_before_widget_creation": true,
+          "original_storage_unmodified": true
+        }
+      ],
+      "current_prose_review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 130,
+      "before": "Choose a city where you have a contract. The fleet will dock there.",
+      "after": "To dock the fleet, choose a city where you have a contract.",
+      "rationale": "Put the docking action first and attach the contract to the city. The wording avoids a second sentence that repeats the selected city.",
+      "source_reference": {
+        "block": 1,
+        "offset": 1424,
+        "copy_end": 1472,
+        "bytes": 47,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1365,
+        "copy_end": 1414,
+        "bytes": 48,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd91e082f08af18d6082b382b982dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "current_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920756e64657220636f6e74726163742e",
+      "verified_fresh_native_expansion_cases": [
+        {
+          "message_ID": 130,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "546f20646f636b2074686520666c6565742c2063686f6f73652061206369747920776865726520796f752068617665206120636f6e74726163742e",
+          "native_wrapper_output_hex": "546f20646f636b2074686520666c6565742c2063686f6f7365206120636974790a2020776865726520796f752068617665206120636f6e74726163742e",
+          "native_wrapper_lines": [
+            "To dock the fleet, choose a city",
+            "  where you have a contract."
+          ],
+          "native_width_units": [
+            32,
+            28
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "scratch_template_test_before_widget_creation": true,
+          "original_storage_unmodified": true
+        }
+      ],
+      "current_prose_review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "fresh_native_expansion_cases": 3,
+  "all_untouched_prose_remains_exact": true,
+  "no_new_credit": true,
+  "target_allocation_and_registered_release_pending": true,
+  "full_goal_complete": false
+}

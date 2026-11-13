@@ -1,0 +1,742 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "4558b145919f4eaa3bd0369cef587dd89f91f880bbc3f2fe5f782ee554793bc0",
+  "context_evidence": "work\\analysis\\shipyard_continuation_v761\\native_context.json",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_267",
+      "message_id": 267,
+      "source_hex": "82b182ea88c88fe382cd914482f08f8895aa82c582ab82dc82b982f18149",
+      "japanese": "これ以上は船を処分できません！",
+      "canonical_source_hex": "4e6f206d6f72652073686970732063616e20626520736372617070656421",
+      "current_text_hex": "4e6f206d6f72652073686970732063616e20626520736372617070656421",
+      "current_English": "No more ships can be scrapped!",
+      "source_reference": {
+        "block": 4,
+        "record": 14,
+        "offset": 1424
+      },
+      "current_reference": {
+        "block": 4,
+        "record": 17,
+        "offset": 1150
+      },
+      "english": "You can't sell any more ships!{PAD}",
+      "source_meaning": "No more ships can be disposed of. The sole original ARM caller is the Sell path when its eligible ship list is empty.",
+      "localization_note": "Sell is bound by the observed original caller; scrap described the wrong operation. No last-ship rule is invented: the original list can include docked ships and excludes the admiral's ship.",
+      "speaker": "System, original Sell refusal",
+      "context": "Original Sell branch when the native sellable-list builder returns zero; separate system-modal consumer.",
+      "native_binding": {
+        "id": 267,
+        "load": 33957232,
+        "call": 33957236,
+        "consumer": 33900216,
+        "original_parent": 33900264
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_805",
+      "message_id": 805,
+      "source_hex": "92f193c282aa8acd92b782f096b182df82c882ad82c40a82c782a482b782e982f182be82a28148",
+      "japanese": "提督が艦長を務めなくて\nどうするんだい？",
+      "canonical_source_hex": "57696c6c20796f75207365727665206173206361707461696e2c0a2041646d6972616c3f202020",
+      "current_text_hex": "57696c6c20796f75207365727665206173206361707461696e2c0a202041646d6972616c3f2020",
+      "current_English": "Will you serve as captain,\n  Admiral?  ",
+      "source_reference": {
+        "block": 10,
+        "record": 28,
+        "offset": 2004
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 36,
+        "offset": 2390
+      },
+      "english": "You're the admiral! You have to captain a ship!{PAD}",
+      "source_meaning": "Rhetorical objection: what is the admiral doing if they are not serving as a captain?",
+      "localization_note": "Restore the rhetorical objection and actual requirement. The old question asking whether the admiral will captain reverses the scene's purpose.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 805,
+        "load": 33925684,
+        "call": 33925688,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_806",
+      "message_id": 806,
+      "source_hex": "975d82c182bd904897bf82cd8ecc82c482e982b182c682c982c882e982ba0a82a282a282a982a28148",
+      "japanese": "余った食料は捨てることになるぜ\nいいかい？",
+      "canonical_source_hex": "457874726120666f6f642077696c6c206265206469736361726465642e0a2050726f636565643f2020",
+      "current_text_hex": "457874726120666f6f642077696c6c206265206469736361726465642e0a202050726f636565643f20",
+      "current_English": "Extra food will be discarded.\n  Proceed? ",
+      "source_reference": {
+        "block": 10,
+        "record": 29,
+        "offset": 2044
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 37,
+        "offset": 2430
+      },
+      "english": "Any excess food will be thrown away. Is that okay?{PAD}",
+      "source_meaning": "Excess food will have to be discarded; asks for confirmation.",
+      "localization_note": "Restore explicit future disposal and a conversational confirmation. No manual line breaks.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 806,
+        "load": 33949704,
+        "call": 33949712,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_807",
+      "message_id": 807,
+      "source_hex": "82a882dc82a682c982cd0a89b482aa82c282a282c482c482e282f182cb82a682c60a835f838182c882f182be82c182c48149",
+      "japanese": "おまえには\n俺がついててやんねえと\nダメなんだって！",
+      "canonical_source_hex": "596f75207265616c6c792063616e2774206d616e6167650a2020776974686f7574206d652062657369646520796f75212020",
+      "current_text_hex": "596f75207265616c6c792063616e2774206d616e6167650a2020776974686f7574206d652062657369646520796f75212020",
+      "current_English": "You really can't manage\n  without me beside you!  ",
+      "source_reference": {
+        "block": 10,
+        "record": 30,
+        "offset": 2088
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 38,
+        "offset": 2472
+      },
+      "english": "You really can't manage without me beside you!{PAD}",
+      "source_meaning": "Insists the player cannot manage without the speaker beside them.",
+      "localization_note": "Retain the existing natural insistence, with fresh generated formatting rather than old breaks/padding.",
+      "speaker": "Claudio",
+      "context": "Original companion reassignment veto; original actor selector and portrait object proven for every208 actors under both route-flag cases.808 receives the current admiral short name.",
+      "native_binding": {
+        "id": 807,
+        "load": 33926888,
+        "call": 33926904,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_808",
+      "message_id": 808,
+      "source_hex": "257382aa9053947a82be82c881630a88ea8f8f82c982a282c482e082a282a282e682cb8148",
+      "japanese": "%sが心配だな…\n一緒にいてもいいよね？",
+      "canonical_source_hex": "204920776f7272792061626f75742025732e2e2e0a20204d6179204920737461793f202020",
+      "current_text_hex": "204920776f7272792061626f75742025732e2e2e0a20204d6179204920737461793f202020",
+      "current_English": " I worry about %s...\n  May I stay?   ",
+      "source_reference": {
+        "block": 10,
+        "record": 31,
+        "offset": 2140
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 39,
+        "offset": 2523
+      },
+      "english": "I'm worried about you, %s... Can I stay with you?{PAD}",
+      "source_meaning": "The speaker is worried about the named admiral and asks to remain together.",
+      "localization_note": "The original virtual name getter supplies the current admiral's short name. Direct you makes the address natural; do not use an unverified third-person gender. Runtime name preservation still requires a scoped literal adapter.",
+      "speaker": "Camille",
+      "context": "Original companion reassignment veto; original actor selector and portrait object proven for every208 actors under both route-flag cases.808 receives the current admiral short name.",
+      "native_binding": {
+        "id": 808,
+        "load": 33927084,
+        "call": 33927088,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_809",
+      "message_id": 809,
+      "source_hex": "82a282a60a82ed82bd82ad82b582cd82a082ad82dc82c592f193c282cc95e28db282f00a82b382b982c482a282bd82be82ab82dc82b7",
+      "japanese": "いえ\nわたくしはあくまで提督の補佐を\nさせていただきます",
+      "canonical_source_hex": "4e6f2e20492077696c6c2072656d61696e0a20207468652041646d6972616c277320616964652e202020202020202020202020202020",
+      "current_text_hex": "4e6f2e20492077696c6c2072656d61696e0a20207468652041646d6972616c277320616964652e",
+      "current_English": "No. I will remain\n  the Admiral's aide.",
+      "source_reference": {
+        "block": 10,
+        "record": 32,
+        "offset": 2180
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 40,
+        "offset": 2561
+      },
+      "english": "No. I will remain the Admiral's aide.{PAD}",
+      "source_meaning": "Politely declines and insists on continuing to assist the admiral.",
+      "localization_note": "Retain the established formal register. Its lower informality suits Gerhard's polite source; do not force a contraction or add a family relationship.",
+      "speaker": "Gerhard",
+      "context": "Original companion reassignment veto; original actor selector and portrait object proven for every208 actors under both route-flag cases.808 receives the current admiral short name.",
+      "native_binding": {
+        "id": 809,
+        "load": 33926940,
+        "call": 33926956,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_810",
+      "message_id": 810,
+      "source_hex": "8163816397a382ea814182e982cc814182a282e281638163",
+      "japanese": "……離れ、るの、いや……",
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569",
+      "current_English": "That good is selling qui",
+      "source_reference": {
+        "block": 10,
+        "record": 33,
+        "offset": 2236
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 41,
+        "offset": 2601
+      },
+      "english": "I... don't want... to leave...{PAD}",
+      "source_meaning": "Halting, reluctant objection to being separated or leaving.",
+      "localization_note": "Remove the unrelated trade fragment. Three natural hesitations convey Sera's broken, reluctant speech without splitting English words or authoring line breaks.",
+      "speaker": "Sera",
+      "context": "Original companion reassignment veto; original actor selector and portrait object proven for every208 actors under both route-flag cases.808 receives the current admiral short name.",
+      "native_binding": {
+        "id": 810,
+        "load": 33926992,
+        "call": 33927008,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_811",
+      "message_id": 811,
+      "source_hex": "82ed82b582cd82a882dc82a682cc8ce38ca9906c82b682e10a82b182cc914482f097a382ea82e982ed82af82c982cd82a282a982f182cc82a4",
+      "japanese": "わしはおまえの後見人じゃ\nこの船を離れるわけにはいかんのう",
+      "canonical_source_hex": "636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a202020202020202020202020202020202020202020",
+      "current_text_hex": "636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a202020202020202020202020202020202020202020",
+      "current_English": "ckly. We can offer a service price.\n                     ",
+      "source_reference": {
+        "block": 10,
+        "record": 33,
+        "offset": 2260
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 42,
+        "offset": 2626
+      },
+      "english": "I'm your guardian. I can't leave this ship.{PAD}",
+      "source_meaning": "As the player's guardian, the speaker cannot leave this ship.",
+      "localization_note": "Remove the remaining trade fragment. Guardian is explicit source content for Xien, not an invented father/grandfather relationship.",
+      "speaker": "Xien",
+      "context": "Original companion reassignment veto; original actor selector and portrait object proven for every208 actors under both route-flag cases.808 receives the current admiral short name.",
+      "native_binding": {
+        "id": 811,
+        "load": 33927124,
+        "call": 33927140,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_812",
+      "message_id": 812,
+      "source_hex": "975d82c182bd908582cd8ecc82c482e982b182c682c982c882e982aa0a82a282a282a982a28148",
+      "japanese": "余った水は捨てることになるが\nいいかい？",
+      "canonical_source_hex": "4578747261207761746572206973206469736361726465642e0a2050726f636565643f20202020",
+      "current_text_hex": "4578747261207761746572206973206469736361726465642e0a202050726f636565643f202020",
+      "current_English": "Extra water is discarded.\n  Proceed?   ",
+      "source_reference": {
+        "block": 10,
+        "record": 34,
+        "offset": 2320
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 43,
+        "offset": 2684
+      },
+      "english": "Any excess water will be dumped. Is that okay?{PAD}",
+      "source_meaning": "Excess water will have to be discarded; asks for confirmation.",
+      "localization_note": "Dumped is natural nautical language for discarding water. Keep confirmation distinct from the food message.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 812,
+        "load": 33949748,
+        "call": 33949752,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_813",
+      "message_id": 813,
+      "source_hex": "908582aa8fad82c882a282e682a482be82c8814295e28b8b82b782e982a982a28148",
+      "japanese": "水が少ないようだな。補給するかい？",
+      "canonical_source_hex": "5761746572206973206c6f772e205265737570706c793f2020202020202020202020",
+      "current_text_hex": "5761746572206973206c6f772e205265737570706c793f2020202020202020202020",
+      "current_English": "Water is low. Resupply?           ",
+      "source_reference": {
+        "block": 10,
+        "record": 35,
+        "offset": 2360
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 44,
+        "offset": 2724
+      },
+      "english": "You're running low on water. Need to stock up?{PAD}",
+      "source_meaning": "Water seems low; asks whether to resupply.",
+      "localization_note": "Restore the observation and personal question instead of a telegraphic menu fragment.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 813,
+        "load": 33949672,
+        "call": 33949680,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_814",
+      "message_id": 814,
+      "source_hex": "9085957682bd82bf82aa94e682ea82c482e982e682a482be82ba0a8f6889ae82c58b7882f182be82d982a482aa0a82a282a282f182b682e182c882a282a98148",
+      "japanese": "水夫たちが疲れてるようだぜ\n宿屋で休んだほうが\nいいんじゃないか？",
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a200a200a",
+      "current_text_hex": "596f7572207361696c6f7273206c6f6f6b2074697265642e20526573742061742074686520696e6e3f2020202020202020202020202020202020202020202020",
+      "current_English": "Your sailors look tired. Rest at the inn?                       ",
+      "source_reference": {
+        "block": 10,
+        "record": 36,
+        "offset": 2396
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 45,
+        "offset": 2759
+      },
+      "english": "Your sailors look tired. Why not let them rest at the inn?{PAD}",
+      "source_meaning": "The sailors look tired; suggests resting at the inn.",
+      "localization_note": "Use a natural suggestion and preserve the inn, the sailors and apparent fatigue; do not turn it into a mandatory rest command.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 814,
+        "load": 33950660,
+        "call": 33950668,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_815",
+      "message_id": 815,
+      "source_hex": "82a082f182bd814190cf82dd89d782cd89bd82e082c882a282be82eb",
+      "japanese": "あんた、積み荷は何もないだろ",
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "596f752068617665206e6f20636172676f2e20202020202020202020",
+      "current_English": "You have no cargo.          ",
+      "source_reference": {
+        "block": 10,
+        "record": 36,
+        "offset": 2460
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 46,
+        "offset": 2824
+      },
+      "english": "You have no cargo.{PAD}",
+      "source_meaning": "The player has no cargo.",
+      "localization_note": "Retain the complete natural statement; the familiar source address needs no extra English vocative.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 815,
+        "load": 33948652,
+        "call": 33948656,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_816",
+      "message_id": 816,
+      "source_hex": "8f5c95aa82c995e28b8b82b782e982c982cd8be082aa91ab82e882cb82a682c80a91ab82e882e995aa82be82af95e28b8b82b782e982a982a28148",
+      "japanese": "十分に補給するには金が足りねえな\n足りる分だけ補給するかい？",
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4e6f7420656e6f75676820636f696e7320746f2066756c6c79207265737570706c792e20427579207768617420796f752063616e3f202020202020",
+      "current_English": "Not enough coins to fully resupply. Buy what you can?      ",
+      "source_reference": {
+        "block": 10,
+        "record": 36,
+        "offset": 2488
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 47,
+        "offset": 2853
+      },
+      "english": "You don't have enough for a full resupply. Want to buy what you can?{PAD}",
+      "source_meaning": "Not enough money for a full resupply; asks whether to buy only what is affordable.",
+      "localization_note": "Restore the full-resupply shortfall and offer to buy an affordable quantity without inventing a precise fraction or guaranteeing full replenishment.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 816,
+        "load": 33949832,
+        "call": 33949836,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_817",
+      "message_id": 817,
+      "source_hex": "908582c6904897bf82f095e28b8b82b782e98a848d8782f00a95cf82a682e982a982a28148",
+      "japanese": "水と食料を補給する割合を\n変えるかい？",
+      "canonical_source_hex": "20204368616e67652077617465722d666f6f640a2020737570706c7920726174696f3f2020",
+      "current_text_hex": "4368616e676520737570706c7920726174696f3f",
+      "current_English": "Change supply ratio?",
+      "source_reference": {
+        "block": 10,
+        "record": 37,
+        "offset": 2548
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 48,
+        "offset": 2913
+      },
+      "english": "Do you want to change the ratio of water to food?{PAD}",
+      "source_meaning": "Asks whether to change the water/food resupply proportions.",
+      "localization_note": "Name both water and food; the old supply ratio omitted what the proportions refer to.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 817,
+        "load": 33948900,
+        "call": 33948904,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_818",
+      "message_id": 818,
+      "source_hex": "82a88b71976c81429396935882cd96be984e89ef8c7682f0904d8ff082c60a82b382b982c482a282bd82be82a282c482a882e882dc82b782cc82c58163",
+      "japanese": "お客様。当店は明朗会計を信条と\nさせていただいておりますので…",
+      "canonical_source_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a20",
+      "current_text_hex": "5468617420676f6f642069732073656c6c696e6720717569636b6c792e2057652063616e206f66666572206120736572766963652070726963652e0a20",
+      "current_English": "That good is selling quickly. We can offer a service price.\n ",
+      "source_reference": {
+        "block": 10,
+        "record": 38,
+        "offset": 2588
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 49,
+        "offset": 2934
+      },
+      "english": "I'm sorry, but we're quite clear about our prices...{PAD}",
+      "source_meaning": "Polite incomplete refusal, invoking the establishment's policy of clear and honest billing.",
+      "localization_note": "Remove the trade placeholder. Clear about our prices conveys meiro kaikei in idiomatic service language. Preserve the polite trailing refusal without inventing posted signs, cheap prices, customer gender or a charity line.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 818,
+        "load": 33916064,
+        "call": 33916072,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_819",
+      "message_id": 819,
+      "source_hex": "835e835f82c58f6f82b78ef082cd82cb82a682c8",
+      "japanese": "タダで出す酒はねえな",
+      "canonical_source_hex": "4472696e6b73206172656e277420667265652e20",
+      "current_text_hex": "4472696e6b73206172656e277420667265652e20",
+      "current_English": "Drinks aren't free. ",
+      "source_reference": {
+        "block": 10,
+        "record": 39,
+        "offset": 2652
+      },
+      "current_reference": {
+        "block": 10,
+        "record": 50,
+        "offset": 2996
+      },
+      "english": "Drinks aren't free.{PAD}",
+      "source_meaning": "There is no free liquor to serve.",
+      "localization_note": "Retain the concise natural refusal; the source roughness does not require extra profanity.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original Port captain/resupply/rest/cargo service or Tavern payment-refusal branch, bound to the exact source ID load and consumer. Preceding/following messages are archived independently, not joined by table adjacency.",
+      "native_binding": {
+        "id": 819,
+        "load": 33916172,
+        "call": 33916180,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "retain-wording",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1245",
+      "message_id": 1245,
+      "source_hex": "8be089dd257396870a954b977682be82aa814191ab82e882c882a282e682a482be82c8",
+      "japanese": "金貨%s枚\n必要だが、足りないようだな",
+      "canonical_source_hex": "4e65656420257320636f696e732e20596f752772652073686f72742e20202020202020",
+      "current_text_hex": "4e65656420257320636f696e732e20596f752772652073686f72742e",
+      "current_English": "Need %s coins. You're short.",
+      "source_reference": {
+        "block": 15,
+        "record": 37,
+        "offset": 1736
+      },
+      "current_reference": {
+        "block": 15,
+        "record": 71,
+        "offset": 2049
+      },
+      "english": "You'll need %s gold, but you don't have enough.{PAD}",
+      "source_meaning": "The required gold-coin amount exceeds available money.",
+      "localization_note": "Restore the complete funds shortfall. Gold is a natural mass currency noun, faithful to the gold coins, and works with the original unchanged numeric argument for both1 and plural amounts.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original generic script charge or Yard insufficient-funds price.1245 is a refusal;1246 Yes/No confirmation can debit the quoted value only on acceptance.",
+      "native_binding": {
+        "id": 1245,
+        "load": 33960196,
+        "call": 33960204,
+        "consumer": 33898468,
+        "original_parent": 33898516
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1246",
+      "message_id": 1246,
+      "source_hex": "8be089dd257396870a82a982a982e982aa814182a282a282a982a28148",
+      "japanese": "金貨%s枚\nかかるが、いいかい？",
+      "canonical_source_hex": "436f73743a20257320636f696e732e2050726f636565643f2020202020",
+      "current_text_hex": "436f73743a20257320636f696e732e2050726f636565643f",
+      "current_English": "Cost: %s coins. Proceed?",
+      "source_reference": {
+        "block": 15,
+        "record": 38,
+        "offset": 1772
+      },
+      "current_reference": {
+        "block": 15,
+        "record": 72,
+        "offset": 2078
+      },
+      "english": "It'll cost %s gold. Is that okay?{PAD}",
+      "source_meaning": "States the gold-coin price and asks for confirmation.",
+      "localization_note": "Restore a complete natural price confirmation. Gold keeps singular/plural grammar correct without changing the original numeric callers or silently adding source arguments.",
+      "speaker": "Original contextual service NPC",
+      "context": "Original generic script charge or Yard insufficient-funds price.1245 is a refusal;1246 Yes/No confirmation can debit the quoted value only on acceptance.",
+      "native_binding": {
+        "id": 1246,
+        "load": 33652476,
+        "call": 33652484,
+        "consumer": 33898396,
+        "original_parent": 33898444
+      },
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed-native-layout-and-integration-pending"
+    }
+  ],
+  "status": "source-prose-research-not-integrated-not-completed"
+}

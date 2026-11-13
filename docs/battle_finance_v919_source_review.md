@@ -1,0 +1,3 @@
+# V919: battle Finance source review
+
+V919 source/prose-reviews12 battle Finance20 comments1669-1680:11 revisions and1 retention. All75 original battle-helper/main/ordinary controls pass. Drafts restore the financial report,available time,this months profits,simultaneous haggling/fighting,personal wishes,the Purser's Office,and the crew receiving Marias orders. Naval battle is distinguished from all sailing. Native layout,registered integration and actual scenes remain pending. V916 stays current;954 complete,969 source/prose reviewed. Older750-752,mood1833,special actors1885-1888,raw abandon-caption0x134E54,remaining shared/routes/player prose/raw inventory,separate graphics/all18 plaques,Samwell header and later older-record re-audit remain open;full goal active.

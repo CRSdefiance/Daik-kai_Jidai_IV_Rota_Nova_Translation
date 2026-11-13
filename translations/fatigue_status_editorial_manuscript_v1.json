@@ -1,0 +1,139 @@
+{
+  "format": "dk4-native-common-editorial-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "fatigue-status-one-source-amount-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": true,
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1578_candidate.nds",
+  "current_ROM_sha256": "d29f08026385628b47fcc0aa996402501975f986dbe2426ba348be723b37e79b",
+  "current_COMMON_sha256": "f5f4b14dcac8ca0f52fc0ce80885ba0873412db00a27ca7d2b63c5ddc11c4158",
+  "current_ARM9_sha256": "b5dd5958fc6ae6ef11c11aad08a07fe6f0d45fdcae8660ac0a7a0bedc12f356d",
+  "source_context": "work\\analysis\\fatigue_status_source_v1587\\source_amounts_and_original_expedition_context.json",
+  "source_context_sha256": "3171eeda4fa8b23a8f77c9ae487dd23b0fd39a473bcf46c208305b1632876bfb",
+  "records": [
+    {
+      "message_id": 308,
+      "source_reference": {
+        "message_id": 308,
+        "block": 4,
+        "table_offset": 1317752,
+        "block_offset": 2956,
+        "copy_end": 2980,
+        "record_index": 39,
+        "start": 46,
+        "end": 69
+      },
+      "source_hex": "94e6984a937882aa0a25738fe382aa82e882dc82b582bd",
+      "source_Japanese": "疲労度が\n%s上がりました",
+      "current_reference": {
+        "message_id": 308,
+        "block": 4,
+        "table_offset": 1317752,
+        "block_offset": 2820,
+        "copy_end": 2844,
+        "record_index": 58,
+        "start": 0,
+        "end": 23
+      },
+      "current_text_hex": "696e2c20616e642076616c75652e2025730a2020202020",
+      "current_English": "in, and value. %s\n     ",
+      "id": "COMMON_MESSAGE_308",
+      "source_family": "fatigue-change-system2",
+      "speaker": "Speakerless original546B8 system status",
+      "context": "These are speakerless original546B8 system statuses after land search/expedition actions. Signed helper79728 exits for zero;otherwise34540 adds the signed input to current fleet fatigue at+3D and clamps the stored total to0..100. Positive input uses308;negative input uses309 with its positive magnitude. The message formats the requested change,not the new total and not a measured post-clamp difference. All original main/overlay ARM BL references to79728 are four constant call sites: oasis success-5,mirage failure+5,hot spring-15,and friendly-native event-10. A separate original foraging/search-failure branch79F90 adds+3 and directly invokes308 at79FB8. The original ABF50 formatter produces CP932 full-width decimal digits;one real source %s must be preserved. Known actual amounts are3,5,10,15. Values0..100 are CPU-only numeric layout stress,not additional real event values. No points/percent unit,currency,health outcome or actor relationship is supplied by these source messages. Original expedition dispatcher79BEC is called at7B18C after normal Search result2 and selects environmental callbacks through02119164 using original terrain/region/RNG. Hot-spring and mirage outcomes must not be forced to claim actual gameplay. Existing registered modal/literal-F/I hooks remain intact as verified in1572b;no new formatting or cursor code is proposed.",
+      "consumer": "original-signed-fatigue-action-ABF50-full-width-amount-546B8-modal",
+      "english": "Fatigue increased by %s.",
+      "source_meaning": "Fatigue increased by the supplied amount.",
+      "localization_note": "Replace an unrelated split trade-good-description fragment with a complete,natural system message. Preserve exactly one original amount placeholder;do not turn the change into a total or invent percent,points,currency or health effects.",
+      "editorial_decision": "revise",
+      "canonical_source_hex": "696e2c20616e642076616c75652e2025730a2020202020",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "original_actual_amount_values": [
+        3,
+        5
+      ],
+      "source_amount_format": "ABF50-positive-full-width-CP932-decimal",
+      "compiled_hex": "4661746967756520696e637265617365642062792025732e",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-actual-events-pending"
+    },
+    {
+      "message_id": 309,
+      "source_reference": {
+        "message_id": 309,
+        "block": 4,
+        "table_offset": 1317754,
+        "block_offset": 2980,
+        "copy_end": 3004,
+        "record_index": 40,
+        "start": 0,
+        "end": 23
+      },
+      "source_hex": "94e6984a937882aa0a257389f1959c82b582dc82b582bd",
+      "source_Japanese": "疲労度が\n%s回復しました",
+      "current_reference": {
+        "message_id": 309,
+        "block": 4,
+        "table_offset": 1317754,
+        "block_offset": 2844,
+        "copy_end": 2868,
+        "record_index": 59,
+        "start": 0,
+        "end": 23
+      },
+      "current_text_hex": "66617469677565202d25732e0a20202020202020202020",
+      "current_English": "fatigue -%s.\n          ",
+      "id": "COMMON_MESSAGE_309",
+      "source_family": "fatigue-change-system2",
+      "speaker": "Speakerless original546B8 system status",
+      "context": "These are speakerless original546B8 system statuses after land search/expedition actions. Signed helper79728 exits for zero;otherwise34540 adds the signed input to current fleet fatigue at+3D and clamps the stored total to0..100. Positive input uses308;negative input uses309 with its positive magnitude. The message formats the requested change,not the new total and not a measured post-clamp difference. All original main/overlay ARM BL references to79728 are four constant call sites: oasis success-5,mirage failure+5,hot spring-15,and friendly-native event-10. A separate original foraging/search-failure branch79F90 adds+3 and directly invokes308 at79FB8. The original ABF50 formatter produces CP932 full-width decimal digits;one real source %s must be preserved. Known actual amounts are3,5,10,15. Values0..100 are CPU-only numeric layout stress,not additional real event values. No points/percent unit,currency,health outcome or actor relationship is supplied by these source messages. Original expedition dispatcher79BEC is called at7B18C after normal Search result2 and selects environmental callbacks through02119164 using original terrain/region/RNG. Hot-spring and mirage outcomes must not be forced to claim actual gameplay. Existing registered modal/literal-F/I hooks remain intact as verified in1572b;no new formatting or cursor code is proposed.",
+      "consumer": "original-signed-fatigue-action-ABF50-full-width-amount-546B8-modal",
+      "english": "Fatigue decreased by %s.",
+      "source_meaning": "Fatigue recovered by the supplied amount;the original setter reduces the fatigue level.",
+      "localization_note": "Express Japanese fatigue recovery naturally as decreased fatigue. Replace the telegraphic minus notation with an ordinary sentence,retain the positive magnitude placeholder and add no recovery beyond the source action.",
+      "editorial_decision": "revise",
+      "canonical_source_hex": "66617469677565202d25732e0a20202020202020202020",
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "original_actual_amount_values": [
+        5,
+        10,
+        15
+      ],
+      "source_amount_format": "ABF50-positive-full-width-CP932-decimal",
+      "compiled_hex": "46617469677565206465637265617365642062792025732e",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-actual-events-pending"
+    }
+  ],
+  "revised": 2,
+  "retained": 0,
+  "no_authored_line_breaks_or_alignment": true,
+  "producer_sha256": "f36dcdbf8c00aa04b05d02a1c242af04fc0b6595cb21001b268a978c3d5fe7eb",
+  "full_goal_complete": false
+}

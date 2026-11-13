@@ -1,0 +1,93 @@
+{
+  "format": "dk4-character-name-localization-policy-v1",
+  "decision_date": "2026-10-06",
+  "final_confirmation_date": "2026-10-07",
+  "final_confirmation": "User reaffirmed Camille and requested documented reasons for every settled naming choice. The glossary records these rationales; historical project spellings do not reopen the decisions.",
+  "target_locale": "en-US",
+  "policy": "Use original Latin names when appropriate. Prefer a faithful, more sensible English localization when one exists; original Latin artwork is evidence rather than an absolute spelling requirement.",
+  "criteria": [
+    "Preserve character identity and the Japanese source name or sound.",
+    "Consider natural English readability and unintended word meanings.",
+    "Use national naming conventions as supporting context without inventing unrelated identities or claiming fictional names are authentic national names.",
+    "Decide individually and keep text, nameplates, biographies and graphics consistent.",
+    "Preserve source locks, allocations, macro expansion lengths and complete leading/trailing glyphs during implementation."
+  ],
+  "confirmed_decisions": [
+    {
+      "japanese": "ホドラム",
+      "original_Latin_first_name": "Hoodlum",
+      "localized_first_name": "Hodram",
+      "basis": "User explicitly chose to retain the faithful phonetic adaptation; Hoodlum carries an unintended English thug/criminal meaning.",
+      "real_Swedish_given_name_claimed": false,
+      "existing_first_name_ASCII_bytes": 6,
+      "supersedes_Hodram_to_Hoodlum_proposal": true,
+      "dialogue_currently_agrees": true,
+      "opening_artwork_consistency_pending": false,
+      "localized_full_name": "Hodram Joakim Bergstrom",
+      "localization_rationale": "Retain the faithful Hodram adaptation to avoid the unwanted English thug/criminal meaning of original Hoodlum. No conventional Swedish first-name authenticity is claimed.",
+      "opening_artwork_integrated_profile": "all-routes-unified-v204",
+      "opening_artwork_proof": "work/analysis/hodram_opening_v204/saved_proof.json"
+    },
+    {
+      "japanese": "ラファエル",
+      "original_Latin_first_name": "Rafael",
+      "localized_first_name": "Rafael",
+      "basis": "User explicitly confirmed Rafael on 2026-10-06.",
+      "previous_project_spelling": "Raphael",
+      "implementation_pending": true,
+      "localized_full_name": "Rafael Castor",
+      "localization_rationale": "Preserve the explicit original Latin Rafael spelling, which is a valid Portuguese name form and fits the established character background. Castor retains the original surname."
+    },
+    {
+      "japanese": "ヨアキム",
+      "original_Latin_middle_name": "Joakim",
+      "localized_middle_name": "Joakim",
+      "basis": "User explicitly confirmed Joakim on 2026-10-06.",
+      "previous_project_spelling": "Joachim",
+      "implementation_pending": true,
+      "localization_rationale": "Use Joakim from the original Latin artwork, supported by Swedish naming; replace the earlier Joachim spelling. Bergstrom retains the original game spelling."
+    },
+    {
+      "japanese": "マリア・ホアメイ・リー",
+      "Chinese_source_spelling": "瑪莉亞・華梅・李",
+      "localized_full_name": "Maria Huamei Li",
+      "localized_short_name": "Maria Li",
+      "basis": "User explicitly locked in the source-reviewed Maria Huamei Li spelling on 2026-10-06.",
+      "source_review": "docs/maria_name_source_review_2026_10_06.md",
+      "implementation_pending": true,
+      "surname_macro_length_and_parity_review_required": true,
+      "untranslated_middle_name_field_review_required": true,
+      "localization_rationale": "Preserve source Maria and the source name order. Use consistent Mandarin romanization Huamei Li from official Chinese 華梅/李. Huamei is one given name. Resolve mixed Hoamei/Hoa-mei/Huamei and Lee/Li spellings without inventing background or claiming an official English edition spelling."
+    },
+    {
+      "japanese": "カミル",
+      "original_Latin_first_name": "Camille",
+      "localized_first_name": "Camille",
+      "localized_full_name": "Camille Overijssel",
+      "previous_project_spelling": "Kamil",
+      "basis": "User explicitly locked in Camille on 2026-10-06. The original Latin artwork supplies a valid name used by men; phonetic reconstruction alone does not justify replacing it, and no concrete unwanted English meaning/readability problem was established.",
+      "localization_rationale": "Preserve the usable original Latin Camille spelling and source surname Overijssel. Kamil was a defensible phonetic adaptation of カミル, but the explicit source spelling is stronger evidence. National naming conventions provide context without requiring a stereotypically Dutch replacement. The earlier Kamil recommendation is superseded by the user's confirmed Camille choice.",
+      "source_artwork": "/FLS/M28.fls texture 71",
+      "implementation_pending": true,
+      "fixed_allocation_and_complete_glyph_review_required": true
+    }
+  ],
+  "other_name_proposals": {},
+  "historical_research": {
+    "V196_original_Latin_cards": "Valid source evidence; its absolute naming priority and Hoodlum preference are superseded.",
+    "V197_three_name_migration": "Unregistered research only. The Hoodlum substitution and dependent SC1 macro changes are superseded; its 42-error count describes that historical proposal.",
+    "Kamil_preference": "Earlier recommendation reconsidered: phonetic closeness was given too much weight relative to an explicit usable Latin spelling. Camille is now user-confirmed."
+  },
+  "playable_ROM_modified_by_this_decision": true,
+  "latest_candidate": "out/all_routes_combined_v204_candidate.nds",
+  "retained_names": [
+    {
+      "localized_full_name": "Lil Argot",
+      "basis": "Established spelling agrees with original Latin artwork and current translation; no reviewed issue warrants replacement. Preserve Argot as a proper surname.",
+      "source_artwork": "/FLS/M28.fls texture 71"
+    }
+  ],
+  "reviewed_name_decisions_settled": true,
+  "decision_rationale_document": "docs/glossary.md",
+  "playable_ROM_modification_scope": "V204 integrates Hodram opening artwork only; the other confirmed field/text changes remain pending."
+}

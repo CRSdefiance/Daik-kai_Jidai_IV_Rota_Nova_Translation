@@ -1,0 +1,73 @@
+"""Prepare the exact-inverse checkpoint successor for qualified actual/format work."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    root=Path('work/analysis/Hodram_B31_B53_checkpoint_tools_v8746');assert not root.exists()
+    source=Path('scripts/checkpoint_Hodram_B31_B53_v8730.py').read_text('utf-8')
+    a=source.index('PROOFS={');z=source.index('\ndef inverse(',a)
+    defs='''from scripts.review_Hodram_B31_B53_actual_v8744 import PROOFS as ACTUAL_PROOFS
+PROOFS={**ACTUAL_PROOFS,
+ 'actual_review':'work/analysis/Hodram_B31_B53_actual_review_v8744/qualified_actual_review.json',
+ 'formatting':'work/analysis/Hodram_B31_B53_format_v8745b/formatting_approval.json',
+ 'manuscript':'translations/hodram_B31_B53_editorial_manuscript_v4.json',
+ 'names':'translations/hodram_B31_B53_speaker_name_review_v3.json',
+ 'registered_release':'work/analysis/Hodram_B52_release_v8705/registered_release_verification.json',
+ 'registered_startup':'work/analysis/Hodram_B52_registered_startup_view_v8708/own_registered_startup6_RGBpairs_actor_equal_unchanged_names_direct_view.json',
+}
+SUMMARY="""Current verified experimental cumulative ROM remains V8704. Counts remain7,234 completed/7,237 credited source-prose anddrafts/4,489 integrated revisions/2,745 justified retentions;SC0 368/SC1 154/SC2 4,915/SC3 197/COMMON1,600 completed and1,603 source-prose;route subtotal5,634 isnot the full-goal denominator. B52 remains credited exactly once. Full all-four-storyline/earlier translated dialogue/shared town-shop/random/Help/remaining prose/all207 names-roles-aliases-customnames/retrospective premature-break objective remainsactive. Preserve every ROM,translation,draft,executed producer,proof andfailure. Five new research ROMs are pinned(one complete two-block reference,four initialized source/English fixtures);none is a registered candidate,new parent,promotion orseparate requested package. Registry/currentrelease/mainV4701/canonicalbaseline remainunchanged;no pruning,commitorpush. Roughly20,000remainingcandidates remains onlya planningestimate. Graphics/all18plaques andlater older-record technical re-audit stayseparate.
+
+B31/B53's three revisions remain unintegrated/uncredited. Latest translations/hodram_B31_B53_editorial_manuscript_v4.json andnamesv3 passallfive individual gates andstandard natural-dialogue-v2 validation withdialogue-relocatable-v1. Keep You just won't quit,will you?Fine.I'll take you on myself. andthe longer before you cross a man you really ought to fear.clause;sourcefirst-person agency isrestored without inventing the unnamedman's identity. Keep Looks like you've finally ended up wanted by the Ottoman Empire.You'd better watch yourself.;the unsupported bounty isremoved andようだ/とうとう/されちまった arepreserved. Actual editable prose retains proper spaces. All approved words,source/current/compiled/stored/final references,native pages andindividual reasons remain exact. Three full216px automatic pages use2/4/3rows,zero QAissues,warnings orwaivers,no authored ordinary breaks,padding,shortening,narrowed viewport,font/metrics/guard change.
+
+Clean-first source/gloss8714,controls8718,source names8719,source dispatch/pages8720 anddirectview8721 preceded currentEnglish8722. Reuse allcompleted source/prose/logical/compiled/stored work8723-8729 without unchanged replay. Eighteen commands,three complete six-byte preambles,four relative sites20cases,one unforced8000query,eight opaque structural pairs,50seeded normalends andfour EV1getters bind. Source52->31->53 prerequisites donot prove continuousconversation,original location,earnedchronology,either B52choiceeffect orunnamedmanidentity. Preserve6311/6000/633F/623F/A000 structurally withoutinvented effectsemantics. B31's two speeches arealternate variants;neither flags norpredicates wereforced.
+
+Source namecomposition8732 executes anexplicit clean-only ordinary actor34fixture withactualoriginalcode,getters,fieldreads,ABI/ring/unowned4MiB guards. Originalprogressive isバルバロッサ・ハイレディン;originalfull isバルバロッサ・ファーズル・ハイレディン. The middle fieldisnot unused. Scoped8735retention preserves Barbarossa Hayreddin andBarbarossa Fazul Hayreddin in the game's establishedorder;do notdelete the middlefield,reorderfromhistory,add rank/kinship orreplace namesfromlore. Currentfullgetter retains exact Ｆazul bytes8265617a756c,withno nameasset change. Sourcefull has19CP932glyphs:the literal216pxstyle11testwraps finalンto[0,16]. Original8733stopped onits erroneousone-row assumption;8733b checksall19codes/positions underunchangedgeometry. Both source/current literal sheets wereviewed. Actual complete progressiveheaders for34/113areverified;actual fullcatalogueUI,wider113contexts/all207/customnames remainopen.
+
+Independent18-command-atom reconstruction8734 equals the sparse two-block/archive result andseparately computesallfouroffsets. B31196->228stored bytes/B53136->156;every323unownedblock/allotherfiles/components,both clean/currentblock inverses,complete parentarchive andwholeNDS inversepass. Reference8736 isexact independentlyreconstructed target. Native loaders8737 pass325complete loads/cachehits,650initialparentmodes,326actions. References8738 bindall18commands/allthreefinalreferences/bothoriginalEV1blockentries/complete unchanged decodedsection-overlay caller census;reuseonlythrough exactnames,bases,lengths andpayload hashes. Four whole-block fixtures8739retain eightoriginalHodram openinginitializers34bytes,thenconstant-shift every selected source/target command by34. No speech,relative,query,opaquecontrol ornormalend isomitted. Bothlanguagesusecurrent Englishnames/UI/code/font;these arenot natural optional-event visits.
+
+Four terminal/reaped coldboots8740total24,004frames. Audits8742/B31 andqualified8742b/B53 verify76complete body-name holds/fourpageoccurrences/twoobserveduniqueutterances:long B31R0018 andB53R0007 inbothlanguages. Sourcequery returns[2,1] unforced,selectinglong B31. ShortR0013remainsoffline-only withcomplete pages/branches/preamble/consumer proofs;do notforceitscondition orclaim anactualvisit. B31returns[0,1]at4016inbothlanguages;B53returns[0,0]at4013inboth. Complete nameplates/portraits/first-internal-finalglyphs,sourcepayloads,selectedflow,bounds,pagination andcallback/coreintegritypass. The four actualdialogue/transition sheetsweredirectlyviewed.
+
+Preserve a corrected audit mistake:original8742wrongly equatednormalend's persistentresultsecondword withthe interpreter's r3carried mode. B53shows priorparserresult[3,0] andr3mode1 before[0,0]end. Own50seededendcases preserveinitialresultwordindependentlyofr3;unchanged50callerfragments preserveallsixresultwords. Qualified8742brestores thatchannelcheck without changingROM,captures orpixelguards. CompletedB31audit remainsvalid becauseboth independentlyrecorded channels happen tobe1;itscapturenowneednotbereplayed. Keep stoppedB53audit,incorrectpreparer andqualifiedreader,alongwiththe laterolder-recordtechnicalre-audit. This isanaudit correction,notanemulator/ROMfix.
+
+Comparison8743/qualifiedreview8744 retainallmeasured differences:two B31decodedlengthchanges(0300span68->78,longspeech98->120) andone B53speech86->104;no commandduration,UIrequest,boundaryRNG orfollowingcommanddifferences. Eachpairhasallfivenativecomponents/wholeactors/captain1/rawcalendar/finalseed3325064553matching;all34laterRGBpairsperblock(68total)match. Six followingoriginalcachecommandsperlanguage match. These arebounded observations through6001frames,not every-framecausality,broadfuturesimulation,original eligibility/location/earnedprogress,fullcatalogueUI,customnames,fullroute orhardwareproof. Earlier B52/B51/B50/B49/Gerhard/Rafael/Hodram/Lil timing,RNG,RGB,calendar,following-command andfixture limits remainintact.
+
+Formattingwriter8745 completed immutable manuscriptv4/namesv3 thenstopped whilebuilding itsreceipt bycalling read_bytes ona stringpath. Qualifiedreader8745b revalidates both complete outputs,standardv2,allwords/bytes/references/gates,andwritesonlythe missingreceipt withPath-normalized evidence. The stoppedwriter/emptyoriginalreceiptroot andallpartial-complete artifacts remain;no nativeprobe,actualcapture orapproval isreplayed. Latest approval work/analysis/Hodram_B31_B53_format_v8745b/formatting_approval.json.
+
+Continue fromverifiedV8747/currentV8704. Required next work isfrozen source-qualified compiler/native policy andmeaningful changed-input checks,independent productionevidence readers,one whole-NDSatomiccommit,shared registered cumulativebuild/exactclean-inputpatch/ownstartup,thenexactlythreeonce-onlycompletion decisions. Reuseallcompleted source/native/independent/loader/reference/actual/name/formatproofs. Do notrepeat B52integration/startup orunchanged B31/B53captures. Retain thefullunfinishedscope andallpreviousartifacts;no promotion orseparatepackage."""
+NEXT='Continue B31/B53 from qualifiedactual8744/format8745b withimmutable manuscriptv4/namesv3 in strict ownV8704 captain1 context. Freeze source-qualified compiler/native policy,validate meaningful changedinputs andindependent productionreaders,thenwholeNDSatomic/sharedregisteredintegration/exactcleanpatch/ownstartup andthree once-onlycredits. ActualshortB31 andfullcatalogueUI remainunvisited;allfullscope leads stayactive.'
+'''
+    ga=source.index('    assert data[\'source_controls\'][\'complete_source_commands\']');gz=source.index('    return prior,data',ga)
+    gates='''    assert data['source_controls']['complete_source_commands']==18 and data['source_controls']['normal_seeded_end_cases']==50
+    assert data['formatting']['all3_five_gates_true'] and data['formatting']['standard_natural_dialogue_v2_validation_pass']
+    assert data['formatting']['manuscript_sha256']==sha(Path(PROOFS['manuscript']).read_bytes()) and data['formatting']['names_sha256']==sha(Path(PROOFS['names']).read_bytes())
+    assert all(all(r['review'].values()) for r in data['manuscript']['records']) and not data['plan']['failures'] and all(not r['base_QA']['issues'] for r in data['plan']['records'])
+    assert (data['actual_review']['total_runs'],data['actual_review']['total_frames'],data['actual_review']['total_holds'])==(4,24004,76)
+    assert data['actual_review']['offline_only_text_IDs']==['DK4_MES_B31_R0013'] and data['actual_review']['all_four_sheets_directly_viewed']
+    assert data['independent']['whole_target_blocks_andarchive_byte_equal_to_sparse_rebuild'] and data['references']['external_references_complete']
+    assert data['loaders']['fresh_native_whole_loads_andcache_hits']==325 and data['loaders']['fresh_initial_parent_modes']==650
+    assert data['relocation']['other323_blocks_byte_exact'] and data['relocation']['whole_inmemory_NDS_inverse_andall_other_files_components_exact']
+    assert data['stored']['complete3stored_first_internal_final_glyphs_independent_planes_bounds_consumption_andpagination_pass']
+    assert data['registered_startup']['viewed'] and data['registered_startup']['whole_actors_equal']
+'''
+    receipt=derive('scripts/checkpoint_Hodram_B31_B53_v8730.py','scripts/checkpoint_Hodram_B31_B53_v8746.py',{
+        source[a:z]:defs,source[ga:gz]:gates,
+        'Hodram_B31_B53_checkpoint_v8730':'Hodram_B31_B53_checkpoint_v8746','editorial_handoff_verification_v8731':'editorial_handoff_verification_v8747',
+        'editorial_handoff_verification_v8716':'editorial_handoff_verification_v8731',
+        'Hodram_SC1B31_B53_contextual_native_stored_pending_names_actual_andrelease_v8730':'Hodram_SC1B31_B53_allfive_gates_actual_reviewed_pending_policy_atomic_andrelease_v8746',
+        'unfinished_editorial_scope_v8730':'unfinished_editorial_scope_v8746',
+        "status='three-contextual-revisions-native-stored-reviewed-fullname-actual-independent-policy-registered-pending'":"status='three-contextual-revisions-allfivegates-native-stored-independent-names-andactual-reviewed-frozen-policy-atomic-registered-pending'",
+        "all_four_prose_gates_true=True,all_formatting_gates_false=True,full_name_open_finding=deepcopy(data['source_view']['full_name_open_finding'])":"all_four_prose_gates_true=True,all_formatting_gates_false=False,all_five_individual_gates_true=True,full_name_resolution=deepcopy(data['names']['full_name_resolution'])",
+        'actual_B31_B53_emulator_runs=0,actual_B31_B53_frames=0':'actual_B31_B53_emulator_runs=4,actual_B31_B53_frames=24004,actual_body_andname_holds=76,actual_unique_text_IDs=[\'DK4_MES_B31_R0018\',\'DK4_MES_B53_R0007\'],offline_only_text_IDs=[\'DK4_MES_B31_R0013\'],registered_integration_andcredit_pending=True',
+        'latest_next_focus_v8730':'latest_next_focus_v8746',
+        'preceding_status_only_goal_turn_revalidated_andfollowed_by_concrete_editorial_andnative_progress=True':'prior_goal_turn_was_concrete_editorial_andnative_progress=True,current_turn_independent_names_actual_andformat_progress=True',
+        'V8730':'V8746','V8731':'V8747',
+        'source/native/stored review, names and actual/release pending':'allfivegates, names andrepresentative actual verified;policy/atomic/release pending',
+        "protected=[Path(prior[k]) for k in ['candidate','patch','manifest']]+[Path('translations/release_stack.json'),Path('work/clean.nds'),Path('out/raphael_natural_v2_accepted_base.nds')]":"protected=[Path(prior[k]) for k in ['candidate','patch','manifest']]+[Path('translations/release_stack.json'),Path('work/clean.nds'),Path('out/raphael_natural_v2_accepted_base.nds'),Path('translations/rom_retention_pins.json'),Path(data['reference']['research_ROM'])]+[Path(f['research_ROM']) for f in data['fixtures']['fixtures']]",
+        'new_credit=0,new_emulator_runs=0,new_actual_frames=0,new_research_ROMs=0':'new_credit=0,new_emulator_runs=4,new_actual_frames=24004,new_research_ROMs=5',
+        'Hodram_B31_B53_contextual_native_stored_checkpoint=deepcopy(new[KEY])':'Hodram_B31_B53_actual_names_allfivegates_checkpoint=deepcopy(new[KEY])',
+        'three contextual revisions/native/stored complete;names/independent/actual/policy/registered pending':'three contextual revisions/allfivegates/independent/names/actual complete;frozenpolicy/atomic/registered pending',
+    })
+    root.mkdir(parents=True);save(root/'derivation.json',dict(tool=receipt,all_native_high_integer_constants_andmultiplicity_preserved=True,
+        exact_oldledger_inverse_alloldscope_values_anddocument_bytes_counters_candidate_registry_andallprotectedROM_guards_preserved=True,
+        three_unintegrated_allfivegate_revisions_fourcapturedruns24004frames76holds_andfive_pinnedresearchROMs_explicit=True,
+        full_goal_andall_prior_limits_artifacts_graphics_andlater_olderrecord_reaudit_preserved=True,new_credit=0,full_goal_complete=False))

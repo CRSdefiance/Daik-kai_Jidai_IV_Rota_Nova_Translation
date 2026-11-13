@@ -1,0 +1,4 @@
+"""Finish the independent B160 audit in a successor directory with explicit producer bindings."""
+from pathlib import Path
+if __name__=='__main__':
+    draft=Path('scripts/verify_editorial_handoff_v3886d.py');source=draft.read_text(encoding='utf-8');prefix,tail=source.rsplit(';exec(compile(t',1);assert tail;ns=dict(__name__='__main__',__file__=__file__);exec(compile(prefix,'preserved-audit-transform-without-execution','exec'),ns);t=ns['t'];assert t.count('editorial_handoff_verification_v3886')==1;t=t.replace('editorial_handoff_verification_v3886','editorial_handoff_verification_v3886e');needle='producer_sha256=sha(PRODUCER.read_bytes())';t=t.replace(needle,needle+',preserved_binding_audit_draft='+repr(str(draft))+',preserved_binding_audit_draft_sha256=sha(Path('+repr(str(draft))+').read_bytes())');exec(compile(t,__file__,'exec'),dict(__name__='__main__',__file__=__file__,PRODUCER=Path(__file__),DRAFT=Path('scripts/verify_editorial_handoff_v3844.py')))
