@@ -1,0 +1,18 @@
+"""Create exact-patch and fresh cumulative cold-boot successors without overwrites."""
+import re
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    root=Path('work/analysis/lil_B142_B145_release_tools_v3608');assert not root.exists();pairs=[]
+    def make(a,b,changes):
+        a,b=Path(a),Path(b);assert not b.exists();t=a.read_text(encoding='utf-8')
+        for x in changes:assert x in t,x
+        pattern='|'.join(re.escape(x) for x in sorted(changes,key=len,reverse=True));t=re.sub(pattern,lambda m:changes[m.group(0)],t);compile(t,str(b),'exec');b.write_text(t,encoding='utf-8');pairs.append(dict(previous=str(a),previous_sha256=sha(a.read_bytes()),successor=str(b),successor_sha256=sha(b.read_bytes())))
+    old="builder=Path('scripts/build_integrated_release.py').read_bytes();added=(REG/'builder_added_optional_stage.bin').read_bytes()\n    assert builder.count(added)==1 and builder.replace(added,b'',1)==(REG/'builder_before.py').read_bytes()"
+    new="builder=Path('scripts/build_integrated_release.py').read_bytes();start=builder.index(b\"    lil_polder_armor_map = profile_config.get('lil_B142_B145_editorial')\");finish=builder.index(b'    # Lexically valid',start);added=builder[start:finish]\n    assert sha(added)==read(REG/'builder_hook_AST_review.json')['stage_sha256'] and builder.count(added)==1 and builder.replace(added,b'',1)==(REG/'build_integrated_release.py.before').read_bytes()"
+    make('scripts/verify_lil_B141_release_v3562.py','scripts/verify_lil_B142_B145_release_v3608.py',{'lil_B141_editorial_v1':'lil_B142_B145_editorial_v1','lil_B141_release_v3562':'lil_B142_B145_release_v3608','all_routes_combined_v3561':'all_routes_combined_v3607','all_routes_combined_v3526':'all_routes_combined_v3561','lil_B141_registration_v3560':'lil_B142_B145_registration_v3606','all-routes-unified-v3561':'all-routes-unified-v3607','all-routes-unified-v3526':'all-routes-unified-v3561','lil_B141_editorial':'lil_B142_B145_editorial',"len(manifest['batches'])==527":"len(manifest['batches'])==528",'all527_manifest':'all528_manifest','exact_to_V3526':'exact_to_V3561','manifest_batches=527':'manifest_batches=528',"REG/'registry_before_raw.json'":"REG/'release_stack.before.json'",old:new})
+    make('scripts/run_lil_B141_startup_v3563.py','scripts/run_lil_B142_B145_startup_v3609.py',{'lil_B141_runs_v3563':'lil_B142_B145_runs_v3609','version=3561':'version=3607','lil_B141_v3563_':'lil_B142_B145_v3609_','not_a_selected_B141_activation':'not_a_selected_B142_B145_activation','no selected B141 activation':'no selected B142-B145 activation'})
+    make('scripts/verify_lil_B141_startup_v3564.py','scripts/verify_lil_B142_B145_startup_v3610.py',{'lil_B141_startup_v3564':'lil_B142_B145_startup_v3610','lil_B141_runs_v3563':'lil_B142_B145_runs_v3609','all_routes_combined_v3561':'all_routes_combined_v3607','all_routes_combined_v3526':'all_routes_combined_v3561','maria_B109_runs_v3528':'lil_B141_runs_v3563','equal_V3526':'equal_V3561','matchV3526':'matchV3561','V3526':'V3561','Current3561':'Current3607','actual_selected_B141_IDs':'actual_selected_B142_B145_IDs'})
+    make('scripts/record_lil_B141_startup_view_v3564.py','scripts/record_lil_B142_B145_startup_view_v3610.py',{'lil_B141_startup_v3564':'lil_B142_B145_startup_v3610','equal_V3526':'equal_V3561','source_B141_not_selected':'source_B142_B145_not_selected'})
+    root.mkdir(parents=True);save(root/'provenance.json',dict(tools=pairs,all_predecessor_ROMS_translations_and_producers_preserved=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

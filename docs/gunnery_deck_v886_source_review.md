@@ -1,0 +1,3 @@
+# V886: gunnery and deck cleaning source review
+
+V886 source/prose-reviews24 Gunnery8/DeckCleaning2 comments1547-1570:15 proposed revisions and9 retentions. All50 original selections cover eight NPC voices and four genuine captains per duty. Drafts restore polite test-firing deferral,nervous anticipation,the empty-stomach joke,personal preparation,deck-cleaning offers,our ship pronoun,occasional outdoor cleaning,ship value and mentor nostalgia. Native layout,registered integration and actual scenes remain pending. V882 remains current;832 complete,859 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;separate graphics/all18 plaques and later older-record re-audit stay open;full goal active.

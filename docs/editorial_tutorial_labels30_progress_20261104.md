@@ -1,0 +1,13 @@
+# Deck tutorial terminology checkpoint
+
+Continue the full Rafael/tutorial-priority checkpoint in [the preserved release and Help batch handoff](editorial_town_integrated_help37_build_sea22_fleet66_20261104.md). Its Town23 verification/credit, live37 build, qualified22 and qualified66 amendment remain current. No new credits or promotion;11359 integrated completions.
+
+The latest30-article comparison is now `work/analysis/Shared_HELP_T103_T132_clean_20261104/whole_article_comparisons_v2.json`:12 revisions/18 exact-body retentions,27 individual four-prose-gate passes. This supersedes the provisional7/23 decisions. All30 source/current references and individual findings are retained. All display gates remain open.
+
+`native_roles_rooms_andskills_v1.json` in the same directory binds16 native roles from the verified Town ROM's own RAM plus35 exact stored source/current room, skill and command labels. Role selector bytes are clean/current/own-RAM exact; source/current pointers and complete label bytes, including retained native trailing phase spaces, are recorded. This is offline source/current label evidence, not individual room/skill UI visits.
+
+Concrete corrections: clean生命力 is current Health, not older Help Vigor; clean説得力 is Social, not Speech; clean謀略術 is Tactics, not Guile. Targeted records116/117/118/121/126 are corrected while preserving each threshold and effect. Workroom hub110 uses recognizable native room names including Lounge, Sickbay, Nursery and Tactics Room. Full Office/Cabin/Room descriptions remain where they naturally explain abbreviated native labels; no global shortening or name replacement. Title-only changes are recorded separately from18 exact-body retentions.
+
+Only103/104/106 localization gates remain open. Bind the current native shared-menu X, map zoom-out Y and Deck auto-assignment access before approving those instructions. The older Choose Auto may be a correct description of a DS menu action; do not label it an error without that consumer evidence. After resolving the controls, format all30 logical articles, review all fresh native pages/contact sheets and use focused navigation/representative behavior checks.
+
+The registered37 build73767/PID104848 was last confirmed running at23:44 November4. Continue polling that job; do not restart it or change its registry until terminal. Verify it once complete, then integrate the qualified Command amendment with the reviewed22 before granting any37 completion credit. See the previous checkpoint for exact paths, hashes, prepared verifiers and scope. All previous ROMs, translations, coverage and evidence are preserved. No guide photos. The rest of the full editorial objective, separate graphics work and later older-record technical re-audit remain active.

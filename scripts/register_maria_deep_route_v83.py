@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v82"]["batches"]);b.append("translations/maria_deep_route_v83.json");p["profiles"]["maria-deep-route-v83"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V82 across all 48 SC3 records in blocks 91-93: guild timing, the bean riddle, and the sacred-pot maze trap, preserving one raw event control."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v83: {len(b)} batches")

@@ -1,0 +1,76 @@
+"""Draft Yifa’s first challenge and follow-up from their complete clean Japanese exchanges."""
+from scripts.seal_clean_independent_drafts_v1 import seal
+
+
+CONTEXT = {
+    181: "Claudio senses someone watching. Yifa surprises the sailors and tries to talk her way aboard. She fled her teacher, wants to travel and train, and improvises a test of her claimed arts. Claudio feels tricked. Rafael is impressed she got so close.",
+    182: "Yifa catches up with the group and renews her request. Julio teases Claudio and takes Yifa’s resolve seriously. Rafael remembers wanting others to see him as capable, then asks Yifa to come and learns her name.",
+}
+DATA = {
+    181: {
+        5: ("Claudio addresses FI and says he has felt watched for some time.", "Hey, FI. You get the feeling somebody's been watching us?"),
+        9: ("Rafael is surprised and unsure.", "Huh? You think so?"),
+        14: ("Claudio has a bad feeling and wants to get back to the ship early.", "I've got a bad feeling about this... Let's get back to the ship early today."),
+        19: ("Yifa hears the word ship and asks if the group are sailors.", "Wait! Did you just say ship? You guys wouldn't happen to be sailors, would you?"),
+        23: ("Claudio jumps and reacts to Yifa’s sudden appearance.", "Whoa! Where'd you come from?!"),
+        27: ("Rafael is startled, stammers that they sail, and asks why she wants to know.", "W-whoa! Y-yeah, we sail. What about it?"),
+        32: ("Yifa feels lucky and urgently asks them to take her aboard because she’s in a bind.", "Lucky me! Hey, take me with you! I'm in a real bind here."),
+        35: ("Rafael says the request is sudden and trails off.", "...You can't just spring that on us."),
+        40: ("Yifa ran away from her teacher and says it will go badly if she’s found. She urges them to leave.", "I ran away from my teacher. I'll be in big trouble if they find me. So come on! Let's go!"),
+        43: ("Claudio protests that she is taking liberties and that it has nothing to do with them.", "Hey! You can't just decide that for us. What's it got to do with us?"),
+        46: ("Rafael apologizes and says they can’t take someone aboard on a whim.", "...I'm sorry. We can't take you aboard just for fun."),
+        50: ("Yifa objects to being thought a child and treated dismissively.", "Just for fun?! Oh, you guys! You think you can brush me off because I'm a kid!"),
+        54: ("Yifa insists she’s serious about becoming a sailor.", "I mean it! I'm serious about becoming a sailor!"),
+        58: ("Rafael asks why she wants to go to sea.", "Then why do you want to go to sea?"),
+        63: ("Yifa thinks, then says she wants to see the world.", "Well, I want to see the world!"),
+        67: ("She wants to train in other lands, become much stronger and prove her teacher wrong.", "I'll visit all kinds of countries while I train, get a whole lot stronger, and show my teacher what I can do!"),
+        71: ("Claudio asks what kind of training will make her stronger.", "Stronger? What are you training in?"),
+        74: ("Yifa proudly names her Taoist arts.", "Heh. The Taoist arts!"),
+        78: ("Claudio repeats the unfamiliar phrase in disbelief.", "The Taoist arts?!"),
+        82: ("Rafael acknowledges Yifa’s determination and reminds her that their voyage is serious too.", "Look, I can tell you're serious. But I told you, we're serious about this voyage, too."),
+        87: ("Rafael says life at sea is harder than she thinks and she can’t leave partway through.", "Life aboard isn't as easy as you think. If you get tired of it, you can't just get off halfway there."),
+        92: ("Yifa says her training has made her fit and she can handle all kinds of shipboard work.", "I'll be fine! My training's toughened me up. I can do any job on a ship!"),
+        96: ("Rafael starts to object again.", "But..."),
+        101: ("Yifa realizes they doubt her and proposes they take her aboard if she beats Claudio.", "Aha. You don't believe me. Then take me with you if I beat this guy. Deal?"),
+        105: ("Claudio is surprised she wants to fight him and thinks it will be too hard for her.", "Huh? You wanna fight me? Don't you think that's a bit much?"),
+        108: ("Yifa tells Claudio to get ready and announces her attack.", "Here I come! Get ready!"),
+        111: ("Claudio reluctantly agrees and tells her not to blame him if she is hurt.", "All right, if you insist... Don't blame me if you get hurt."),
+        114: ("Yifa gives a drawn-out shout as she starts her move.", "...Hyaaa!"),
+        118: ("Claudio is momentarily confused.", "?"),
+        122: ("Rafael privately wonders whether she did anything.", "(Did she do something?)"),
+        127: ("Yifa spots an opening and calls it out.", "Got you!"),
+        132: ("Claudio cries out and asks what she just did.", "Whoa! ...What was that?"),
+        136: ("Yifa asks if they saw and names her paralysis technique.", "See that? That's my paralysis technique!"),
+        139: ("Rafael stammers in amazement.", "...Th-that's amazing!"),
+        144: ("Claudio protests that it wasn’t an art and that Yifa only caught him off guard.", "Hold on! That wasn't a technique or anything. You just caught me off guard!"),
+        147: ("Rafael admires Yifa for getting that far inside Clau’s guard.", "Even so, you got that close to Clau. That's pretty impressive."),
+        152: ("Claudio asks why Rafael is impressed and dismisses the whole thing as silly.", "What are you so impressed for? This is ridiculous. Let's go!"),
+        155: ("Yifa calls after them and asks if they still won’t take her along.", "Hey! Aren't you taking me with you?"),
+        158: ("Rafael hesitates in response.", "Oh... Well..."),
+        163: ("Claudio pulls FI away, impatient to leave.", "Come on, FI! Let's get out of here!"),
+        166: ("Rafael says he understands, asks Claudio not to pull his arm and remarks on his temper.", "All right, all right. Quit pulling my arm. Honestly, you've got such a temper..."),
+    },
+    182: {
+        5: ("Claudio complains about the earlier trouble and says his bad feeling came true.", "What a mess that was. I knew I had a bad feeling for a reason."),
+        9: ("Yifa giggles and announces that she followed them.", "Hee hee. I followed you!"),
+        13: ("Claudio is startled and demands an explanation.", "Wha... H-how'd you get here?!"),
+        17: ("Yifa boasts that following unnoticed is also one of her arts.", "Ahem! That's the Taoist arts, too!"),
+        21: ("Rafael is impressed he never noticed her.", "Amazing! I didn't notice you at all!"),
+        25: ("Claudio says it’s unsurprising she went unnoticed in such a crowd.", "Look how crowded it is! Of course we didn't notice her!"),
+        28: ("Yifa laughs and says Claudio is making excuses for losing.", "Hee hee. Still making excuses for losing earlier?"),
+        32: ("Claudio tells her to shut up.", "Shut up!"),
+        44: ("Julio laughs and says Claudio is angry because a young girl got the better of him.", "You're sore because a young girl got the better of you. Ho ho ho."),
+        47: ("Claudio angrily addresses the older man without implying kinship.", "What'd you say, old man?!"),
+        54: ("Yifa asks whether they have thought about her request.", "Hey, did you think about what I asked?"),
+        58: ("Rafael asks if she really intends to go to sea.", "...Do you really mean to go to sea?"),
+        63: ("Yifa readily confirms it.", "Of course I do!"),
+        75: ("Julio recognizes that her resolve is firm.", "Sounds like her mind's made up."),
+        82: ("Rafael remembers wanting others to see him as capable in his own right.", "...I remember wanting people to see me as grown up and capable, too."),
+        87: ("Rafael agrees to take her and asks for her name.", "All right. Come with us! Um... What's your name?"),
+        91: ("Yifa gives only her given name, with enthusiasm.", "I'm Yifa!"),
+    },
+}
+
+
+if __name__ == '__main__':
+    seal('work/analysis/Rafael_B181_B200_clean_20261105', 'B181_B182_clean_drafts_v1.json', DATA, CONTEXT, {}, __file__, 58)

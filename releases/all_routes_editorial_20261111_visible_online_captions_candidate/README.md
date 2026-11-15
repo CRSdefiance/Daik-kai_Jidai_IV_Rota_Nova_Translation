@@ -1,0 +1,5 @@
+# All Routes Online Captions candidate
+
+Use [Translation_DS_All_Routes_Online_Captions_20261111_candidate.nds](../../out/visible_online_captions_registered_20261111_v1/Translation_DS_All_Routes_Online_Captions_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the candidate byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `edd692e899fc0fc3174560230d7388d52ad891099a2ff1f52812480e8735dd68`. Patch SHA-256 `76a575d7cb7d3cc4b0b5b123b6f2345da3798b490fc7a8bf8bb998b3717c16e7`.
+
+All 13 Online captions received contextual review. Four revisions and nine retentions passed the original native painter and gameplay navigation. Four frames changed only within the caption ink. Cold boot, 24 protected getters, 34 targeted tests and 114 release checks passed. [Review](verification/registered_caption_review.json) · [Gameplay](verification/online_caption_gameplay_verification.json)

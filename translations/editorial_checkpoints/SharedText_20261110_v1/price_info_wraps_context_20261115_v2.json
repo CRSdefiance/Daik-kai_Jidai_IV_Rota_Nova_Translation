@@ -1,0 +1,692 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "previous_sha256": "761bd2f87fa777977d2a71733ef89fbdeb1429b77416173646ab28ac16457f0e",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_139",
+      "message_id": 139,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Corn",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Corn ranks with wheat and rice among the world's three major grains. It was grown in the New World before the Common Era. Corn is also used to make bourbon.",
+      "previous_English": "Corn ranks with wheat and rice\namong the world's three major \ngrains. It was grown in the New \nWorld before the Common Era.\nCorn is also used to make bourbon.",
+      "Japanese": "小麦、米（稲）と並ぶ世界の３大穀物の\n１つ。新大陸では紀元前から栽培されて\nいた。バーボンウィスキーの原料でもあ\nる。",
+      "source_meaning": "One of the world’s three major grains with wheat and rice, cultivated in the New World before the Common Era and also used for bourbon.",
+      "localization_note": "Retain the three complete sentences. Keep the geography and period phrases intact and end page one after the cultivation history.",
+      "source_reference": {
+        "block": 1,
+        "offset": 1956,
+        "copy_end": 2072,
+        "bytes": 115,
+        "record_index": 25,
+        "table_offset": 1317414,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 2000,
+        "copy_end": 2160,
+        "bytes": 158,
+        "record_index": 29,
+        "table_offset": 1317414,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8fac949e814195c4816988ee816a82c695c082d490a28a4582cc825291e58d9295a882cc0a825082c28142905691e597a482c582cd8b498cb3914f82a982e78dcd947c82b382ea82c40a82a282bd8142836f815b837b8393834583428358834c815b82cc8cb497bf82c582e082a00a82e98142",
+      "exact_current_hex": "436f726e2072616e6b73207769746820776865617420616e6420726963650a616d6f6e672074686520776f726c642773207468726565206d616a6f72200a677261696e732e204974207761732067726f776e20696e20746865204e6577200a576f726c64206265666f72652074686520436f6d6d6f6e204572612e0a436f726e20697320616c736f207573656420746f206d616b6520626f7572626f6e2e",
+      "staged_hex": "436f726e2072616e6b73207769746820776865617420616e64207269636520616d6f6e670a74686520776f726c642773207468726565206d616a6f7220677261696e732e200a4974207761732067726f776e20696e20746865204e657720576f726c64200a6265666f72652074686520436f6d6d6f6e204572612e0a436f726e20697320616c736f207573656420746f206d616b6520626f7572626f6e2e",
+      "decision": "wrap revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 2000,
+        "copy_end": 2160,
+        "bytes": 158,
+        "record_index": 29,
+        "table_offset": 1317414,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Corn ranks with wheat and rice among",
+            "the world's three major grains.",
+            "It was grown in the New World",
+            "before the Common Era."
+          ],
+          "consumed_bytes": 124,
+          "remaining_bytes": 34,
+          "pixel_sha256": "07225f8c9158505bc05de87723e8e11881f9d647d689713ad2010f069331b6a7",
+          "glyphs": 99
+        },
+        {
+          "visible_text": [
+            "Corn is also used to make bourbon."
+          ],
+          "consumed_bytes": 34,
+          "remaining_bytes": 0,
+          "pixel_sha256": "6aaadb195a3f1f798a9e7d3d989deb58101b7ebc27b5973250cc0edf594802fa",
+          "glyphs": 28
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_145",
+      "message_id": 145,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Cheese",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Lactic acid bacteria ferment milk, such as cow's or goat's, into cheese. Milk type, bacteria, and aging time affect the flavor.",
+      "previous_English": "Cheese is made by \nfermenting milk, such \nas cow or goat milk,\nwith lactic acid bacteria.\nFlavor varies with the milk,\nbacteria, and aging time.",
+      "Japanese": "牛乳や山羊の乳などに乳酸菌を加えて発\n酵させたもの。乳の種類、植え付ける菌\nの種類、熟成期間の違いによって風味が\n異なる。",
+      "source_meaning": "Milk such as cows’ or goats’ milk is fermented with lactic acid bacteria. The milk, bacteria, and duration of aging affect flavor.",
+      "localization_note": "Put the process in active voice and retain both examples, the culture and the three factors that affect taste.",
+      "source_reference": {
+        "block": 1,
+        "offset": 2456,
+        "copy_end": 2576,
+        "bytes": 119,
+        "record_index": 30,
+        "table_offset": 1317426,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 2622,
+        "copy_end": 2768,
+        "bytes": 144,
+        "record_index": 39,
+        "table_offset": 1317426,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8b8d93fb82e28e52977282cc93fb82c882c782c993fb8e5f8bdb82f089c182a682c494ad0a8d7982b382b982bd82e082cc814293fb82cc8eed97de8141904182a6957482af82e98bdb0a82cc8eed97de81418f6e90ac8afa8ad482cc88e182a282c982e682c182c4959796a182aa0a88d982c882e98142",
+      "exact_current_hex": "436865657365206973206d616465206279200a6665726d656e74696e67206d696c6b2c2073756368200a617320636f77206f7220676f6174206d696c6b2c0a77697468206c616374696320616369642062616374657269612e0a466c61766f7220766172696573207769746820746865206d696c6b2c0a62616374657269612c20616e64206167696e672074696d652e",
+      "staged_hex": "4c61637469632061636964206261637465726961206665726d656e74206d696c6b2c0a7375636820617320636f772773206f7220676f617427732c20696e746f200a6368656573652e204d696c6b20747970652c2062616374657269612c20616e640a6167696e672074696d65206166666563742074686520666c61766f722e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 2622,
+        "copy_end": 2768,
+        "bytes": 128,
+        "record_index": 39,
+        "table_offset": 1317426,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Lactic acid bacteria ferment milk,",
+            "such as cow's or goat's, into",
+            "cheese. Milk type, bacteria, and",
+            "aging time affect the flavor."
+          ],
+          "consumed_bytes": 128,
+          "remaining_bytes": 0,
+          "pixel_sha256": "a5b9104cb1ab466a1e73067e5ec330918698ad619ba274b2e83e3a3bfb5b92aa",
+          "glyphs": 107
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_147",
+      "message_id": 147,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Bananas",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "A large Asian perennial in the banana family. Its fruit is a tropical staple. Bananas eaten raw are sweeter than cooking varieties.",
+      "previous_English": "The fruit of a large\nperennial plant native\nto Asia and a staple\nin the tropics. \nVarieties eaten raw are sweeter and \ndiffer from those used for cooking.",
+      "Japanese": "バショウ科の大形の多年草。果実を食べ\nる。アジア原産。熱帯では主食となる。\n生で食べるものは糖分が多く、料理用品\n種とは異なる。",
+      "source_meaning": "The edible fruit of a large perennial in the banana family, native to Asia and a staple in the tropics. Raw varieties contain more sugar than cooking varieties.",
+      "localization_note": "Restore the plant family and distinguish the sweet raw fruit from cooking varieties.",
+      "source_reference": {
+        "block": 1,
+        "offset": 2652,
+        "copy_end": 2780,
+        "bytes": 125,
+        "record_index": 32,
+        "table_offset": 1317430,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 2886,
+        "copy_end": 3042,
+        "bytes": 154,
+        "record_index": 43,
+        "table_offset": 1317430,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "836f83568387834589c882cc91e58c6082cc91bd944e9190814289ca8ec082f0904882d70a82e981428341835783418cb48e598142944d91d182c582cd8ee5904882c682c882e981420a90b682c5904882d782e982e082cc82cd939c95aa82aa91bd82ad814197bf979d977095690a8eed82c682cd88d982c882e98142",
+      "exact_current_hex": "546865206672756974206f662061206c617267650a706572656e6e69616c20706c616e74206e61746976650a746f204173696120616e64206120737461706c650a696e207468652074726f706963732e200a56617269657469657320656174656e2072617720617265207377656574657220616e64200a6469666665722066726f6d2074686f7365207573656420666f7220636f6f6b696e672e",
+      "staged_hex": "41206c6172676520417369616e20706572656e6e69616c200a696e207468652062616e616e612066616d696c792e204974732066727569742069730a612074726f706963616c20737461706c652e2042616e616e617320656174656e207261770a6172652073776565746572207468616e20636f6f6b696e67207661726965746965732e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 2886,
+        "copy_end": 3042,
+        "bytes": 132,
+        "record_index": 59,
+        "table_offset": 1317430,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "A large Asian perennial",
+            "in the banana family. Its fruit is",
+            "a tropical staple. Bananas eaten raw",
+            "are sweeter than cooking varieties."
+          ],
+          "consumed_bytes": 132,
+          "remaining_bytes": 0,
+          "pixel_sha256": "b22ec2045c9d0d1f28aecb7bab68a9b4985ff2b7f519a65227c8251f71c29dbe",
+          "glyphs": 110
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_157",
+      "message_id": 157,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Shark Fin",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Dried fins from large sharks. Tail fins are prized over dorsal and pectoral fins. Soak until soft, then simmer or add to soup.",
+      "previous_English": "Dried fins from large sharks. \nOf the tail, dorsal, and\npectoral fins, the tail \nfin is the most prized. \nThe fins are soaked until soft, then\nsimmered or used in soup.",
+      "Japanese": "大型のサメのヒレを乾燥させたもの。尾\n背・胸のうち、尾ヒレのものが上級。柔\nらかくもどして、煮込んだり、スープに\n使う。",
+      "source_meaning": "Fins from large sharks are dried. Tail fins are preferred to dorsal and pectoral fins. The fins are soaked until soft and simmered or used in soup.",
+      "localization_note": "State the comparison plainly, then give the preparation as one instruction.",
+      "source_reference": {
+        "block": 1,
+        "offset": 3436,
+        "copy_end": 3556,
+        "bytes": 117,
+        "record_index": 39,
+        "table_offset": 1317450,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 3826,
+        "copy_end": 3996,
+        "bytes": 168,
+        "record_index": 59,
+        "table_offset": 1317450,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "91e58c5e82cc8354838182cc8371838c82f08aa3918782b382b982bd82e082cc814294f60a947781458bb982cc82a482bf814194f68371838c82cc82e082cc82aa8fe38b8981428f5f0a82e782a982ad82e082c782b582c481418ecf8d9e82f182be82e881418358815b837682c90a8e6782a48142",
+      "exact_current_hex": "44726965642066696e732066726f6d206c6172676520736861726b732e200a4f6620746865207461696c2c20646f7273616c2c20616e640a706563746f72616c2066696e732c20746865207461696c200a66696e20697320746865206d6f7374207072697a65642e200a5468652066696e732061726520736f616b656420756e74696c20736f66742c207468656e0a73696d6d65726564206f72207573656420696e20736f75702e",
+      "staged_hex": "44726965642066696e732066726f6d206c6172676520736861726b732e200a5461696c2066696e7320617265207072697a6564206f76657220646f7273616c20616e640a706563746f72616c2066696e732e20536f616b20756e74696c20736f66742c207468656e0a73696d6d6572206f722061646420746f20736f75702e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 3826,
+        "copy_end": 3996,
+        "bytes": 127,
+        "record_index": 97,
+        "table_offset": 1317450,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Dried fins from large sharks.",
+            "Tail fins are prized over dorsal and",
+            "pectoral fins. Soak until soft, then",
+            "simmer or add to soup."
+          ],
+          "consumed_bytes": 127,
+          "remaining_bytes": 0,
+          "pixel_sha256": "a48cb3c0563859335990e68e329f85cd5f92bc373d999a562b48aff859e39d2c",
+          "glyphs": 104
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_159",
+      "message_id": 159,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Cloves",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Dried clove buds from the myrtle family. A fragrant spice for meat, ranked in the top three with pepper and cinnamon.",
+      "previous_English": "Cloves are the dried\nflower buds of the\nclove tree, a member\nof the myrtle family. \nA fragrant spice for meat, ranked \nwith pepper and cinnamon.",
+      "Japanese": "フトモモ科チョウジのつぼみを乾燥させ\nたもの。コショウ・シナモンと並ぶ３大\n香辛料の１つ。別名クローブ。香りがよ\nく肉料理などに用いる。",
+      "source_meaning": "The dried buds of the myrtle-family clove tree, counted among the three major spices with pepper and cinnamon. Fragrant and used in meat dishes.",
+      "localization_note": "Retain the plant part and family, aroma, culinary use and all three spices. The heading already says Cloves.",
+      "source_reference": {
+        "block": 1,
+        "offset": 3616,
+        "copy_end": 3752,
+        "bytes": 133,
+        "record_index": 41,
+        "table_offset": 1317454,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 4076,
+        "copy_end": 4222,
+        "bytes": 144,
+        "record_index": 62,
+        "table_offset": 1317454,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "837483678382838289c8836083878345835782cc82c282da82dd82f08aa3918782b382b90a82bd82e082cc814283528356838783458145835683698382839382c695c082d4825291e50a8d81906897bf82cc825082c2814295ca96bc834e838d815b837581428d8182e882aa82e60a82ad93f797bf979d82c882c782c9977082a282e98142",
+      "exact_current_hex": "436c6f76657320617265207468652064726965640a666c6f7765722062756473206f66207468650a636c6f766520747265652c2061206d656d6265720a6f6620746865206d7972746c652066616d696c792e200a41206672616772616e7420737069636520666f72206d6561742c2072616e6b6564200a776974682070657070657220616e642063696e6e616d6f6e2e",
+      "staged_hex": "447269656420636c6f766520627564732066726f6d20746865200a6d7972746c652066616d696c792e2041206672616772616e74207370696365200a666f72206d6561742c2072616e6b656420696e2074686520746f70207468726565200a776974682070657070657220616e642063696e6e616d6f6e2e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 4076,
+        "copy_end": 4222,
+        "bytes": 120,
+        "record_index": 141,
+        "table_offset": 1317454,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Dried clove buds from the",
+            "myrtle family. A fragrant spice",
+            "for meat, ranked in the top three",
+            "with pepper and cinnamon."
+          ],
+          "consumed_bytes": 120,
+          "remaining_bytes": 0,
+          "pixel_sha256": "0201ae974799223da45d885c5c754962304665a5b74e2ae6b04ffa89db10d6c5",
+          "glyphs": 97
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_182",
+      "message_id": 182,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Wool",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Yarn and wool cloth come from sheep or goat fleece. Wool is warm, absorbent, and springy. Europeans have long worn it in winter.",
+      "previous_English": "Sheep or goat fleece is \nspun into yarn or woven \ninto cloth. It is warm, \nabsorbent, and springy. \nWool has long kept Europeans warm \nin winter.",
+      "Japanese": "羊や山羊から刈り取った毛。毛糸や毛織\n物の原料。吸湿性・保温性・弾力性に優\nれ、ヨーロッパでは古くから防寒用衣料\nなどに用いられた。",
+      "source_meaning": "Sheep and goat fleece provide yarn and woven wool. It retains heat and absorbs moisture and is elastic. It has long been used for warm clothing in Europe.",
+      "localization_note": "Keep the two fibers, both textile uses, three properties and the historical use as clothing.",
+      "source_reference": {
+        "block": 2,
+        "offset": 1868,
+        "copy_end": 2000,
+        "bytes": 129,
+        "record_index": 15,
+        "table_offset": 1317500,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 2,
+        "offset": 1821,
+        "copy_end": 1967,
+        "bytes": 145,
+        "record_index": 31,
+        "table_offset": 1317500,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "977282e28e52977282a982e78aa082e88ee682c182bd96d1814296d18e8582e296d190440a95a882cc8cb497bf81428b7a8ebc90ab814595db89b790ab8145926597cd90ab82c997440a82ea81418388815b838d8362837082c582cd8cc382ad82a982e796688aa6977088df97bf0a82c882c782c9977082a282e782ea82bd8142",
+      "exact_current_hex": "5368656570206f7220676f617420666c65656365206973200a7370756e20696e746f207961726e206f7220776f76656e200a696e746f20636c6f74682e204974206973207761726d2c200a6162736f7262656e742c20616e6420737072696e67792e200a576f6f6c20686173206c6f6e67206b657074204575726f7065616e73207761726d200a696e2077696e7465722e",
+      "staged_hex": "5961726e20616e6420776f6f6c20636c6f746820636f6d652066726f6d207368656570200a6f7220676f617420666c656563652e20576f6f6c206973207761726d2c200a6162736f7262656e742c20616e6420737072696e67792e204575726f7065616e73200a68617665206c6f6e6720776f726e20697420696e2077696e7465722e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 2,
+        "offset": 1821,
+        "copy_end": 1967,
+        "bytes": 131,
+        "record_index": 31,
+        "table_offset": 1317500,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Yarn and wool cloth come from sheep",
+            "or goat fleece. Wool is warm,",
+            "absorbent, and springy. Europeans",
+            "have long worn it in winter."
+          ],
+          "consumed_bytes": 131,
+          "remaining_bytes": 0,
+          "pixel_sha256": "19eb9711efcd80cf77b03dec41bfbbcb4f8717565b891ea427465c5bc359c8a8",
+          "glyphs": 106
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_190",
+      "message_id": 190,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Carpets",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Wool rugs warm and decorate rooms and keep out damp. Persian carpets are the finest handwoven rugs, prized for their art and craft.",
+      "previous_English": "Wool floor coverings\nvalued for warmth,\nprotection from damp, \nand decorative appeal.\nPersian carpets are prized as the \nfinest in art and handweaving.",
+      "Japanese": "敷物に使われる毛織物。保温、防湿、装\n飾性に富む。ペルシア絨毯は芸術的にも\n技術的にも優れ、手織絨毯の最高峰とさ\nれる。",
+      "source_meaning": "Wool carpets are valued for warmth, protection against damp and decoration. Persian carpets are considered the finest handwoven carpets for their art and technique.",
+      "localization_note": "Use direct catalog prose for the three uses, then keep craftsmanship and artistic merit in the Persian comparison.",
+      "source_reference": {
+        "block": 2,
+        "offset": 2668,
+        "copy_end": 2788,
+        "bytes": 117,
+        "record_index": 21,
+        "table_offset": 1317516,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 2,
+        "offset": 2663,
+        "copy_end": 2815,
+        "bytes": 151,
+        "record_index": 42,
+        "table_offset": 1317516,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "957e95a882c98e6782ed82ea82e996d1904495a8814295db89b7814196688ebc814191950a8ffc90ab82c9957882de81428379838b83568341e34f9f7e82cd8c7c8f70934982c982e00a8b5a8f70934982c982e0974482ea81418ee89044e34f9f7e82cc8dc58d8295f482c682b30a82ea82e98142",
+      "exact_current_hex": "576f6f6c20666c6f6f7220636f766572696e67730a76616c75656420666f72207761726d74682c0a70726f74656374696f6e2066726f6d2064616d702c200a616e64206465636f7261746976652061707065616c2e0a5065727369616e206361727065747320617265207072697a656420617320746865200a66696e65737420696e2061727420616e642068616e6477656176696e672e",
+      "staged_hex": "576f6f6c2072756773207761726d20616e64206465636f7261746520726f6f6d73200a616e64206b656570206f75742064616d702e205065727369616e20636172706574730a617265207468652066696e6573742068616e64776f76656e20727567732c0a7072697a656420666f722074686569722061727420616e642063726166742e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 2,
+        "offset": 2663,
+        "copy_end": 2815,
+        "bytes": 132,
+        "record_index": 56,
+        "table_offset": 1317516,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Wool rugs warm and decorate rooms",
+            "and keep out damp. Persian carpets",
+            "are the finest handwoven rugs,",
+            "prized for their art and craft."
+          ],
+          "consumed_bytes": 132,
+          "remaining_bytes": 0,
+          "pixel_sha256": "dc0bce671dec3790593c8203ccd79875edb41238b3d3d85798137e9f1c8e3127",
+          "glyphs": 109
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_199",
+      "message_id": 199,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Jade",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Jadeite can be opaque or translucent. The finest pieces have a deep green color and let light through. In China, jade ornaments also serve as protective charms.",
+      "previous_English": "Jadeite can be opaque or\ntranslucent. The finest \npieces have a deep green\ncolor and let light through.\nIn China, jade ornaments also serve \nas protective charms.",
+      "Japanese": "不透明または半透明の石。別名を硬玉暗\n緑色。価値が高いものほど濃緑色で半透\n明。中国では魔除けのお守りを兼ねた装\n飾品とされる。",
+      "source_meaning": "Jadeite can be opaque or translucent. Dark green, translucent pieces are most valuable. In China, jade ornaments also serve to ward off evil.",
+      "localization_note": "Keep the color and translucence criteria together on page one. The intact second sentence about China belongs on the continuation page.",
+      "source_reference": {
+        "block": 2,
+        "offset": 3644,
+        "copy_end": 3772,
+        "bytes": 125,
+        "record_index": 30,
+        "table_offset": 1317534,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 2,
+        "offset": 3692,
+        "copy_end": 3856,
+        "bytes": 162,
+        "record_index": 55,
+        "table_offset": 1317534,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "957393a796be82dc82bd82cd94bc93a796be82cc90ce814295ca96bc82f08d648bca88c30a97ce9046814289bf926c82aa8d8282a282e082cc82d982c7945a97ce904682c594bc93a70a96be814292868d9182c582cd96828f9c82af82cc82a88ee782e882f08c9382cb82bd91950a8ffc956982c682b382ea82e98142",
+      "exact_current_hex": "4a6164656974652063616e206265206f7061717565206f720a7472616e736c7563656e742e205468652066696e657374200a70696563657320686176652061206465657020677265656e0a636f6c6f7220616e64206c6574206c69676874207468726f7567682e0a496e204368696e612c206a616465206f726e616d656e747320616c736f207365727665200a61732070726f7465637469766520636861726d732e",
+      "staged_hex": "4a6164656974652063616e206265206f7061717565206f720a7472616e736c7563656e742e205468652066696e657374200a70696563657320686176652061206465657020677265656e0a636f6c6f7220616e64206c6574206c69676874207468726f7567682e0a496e204368696e612c206a616465206f726e616d656e747320616c736f207365727665200a61732070726f7465637469766520636861726d732e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 2,
+        "offset": 3692,
+        "copy_end": 3856,
+        "bytes": 162,
+        "record_index": 88,
+        "table_offset": 1317534,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Jadeite can be opaque or",
+            "translucent. The finest",
+            "pieces have a deep green",
+            "color and let light through."
+          ],
+          "consumed_bytes": 104,
+          "remaining_bytes": 58,
+          "pixel_sha256": "dfceb7a20fee17a4271cc8c5fbc4440afc85b1568831e464e2481319346117de",
+          "glyphs": 85
+        },
+        {
+          "visible_text": [
+            "In China, jade ornaments also serve",
+            "as protective charms."
+          ],
+          "consumed_bytes": 58,
+          "remaining_bytes": 0,
+          "pixel_sha256": "cf16bc588bca063f5dc1f4f235323f22bff8bfbc1dc848976331f6c0caf557a5",
+          "glyphs": 49
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_213",
+      "message_id": 213,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Ginseng",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Dried Korean ginseng root from East Asia. It contains steroids and B vitamins. Used to nourish and strengthen the body and heart.",
+      "previous_English": "Dried Korean ginseng\nroot from East Asia.\nIt contains steroid \ncompounds and B vitamins. \nIt was used to nourish and\nstrengthen the body and heart.",
+      "Japanese": "朝鮮人参の木の根を乾燥させたもの。東\nアジア原産。ステロイド、ビタミンＢな\nどを含み、滋養・強壮・強心剤として用\nいられる。",
+      "source_meaning": "Dried East Asian Korean ginseng root contains steroids and B vitamins. It has been used to nourish and fortify the body and strengthen the heart.",
+      "localization_note": "Preserve the three functions and present them as historical use. Retain the named compounds and origin.",
+      "source_reference": {
+        "block": 3,
+        "offset": 1244,
+        "copy_end": 1368,
+        "bytes": 121,
+        "record_index": 9,
+        "table_offset": 1317562,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 1193,
+        "copy_end": 1341,
+        "bytes": 147,
+        "record_index": 16,
+        "table_offset": 1317562,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "92a9914e906c8e5182cc96d882cc8daa82f08aa3918782b382b982bd82e082cc8142938c0a8341835783418cb48e59814283588365838d8343836881418372835e837e8393826182c80a82c782f08adc82dd81418ea0977b81458bad917381458bad90538ddc82c682b582c497700a82a282e782ea82e98142",
+      "exact_current_hex": "4472696564204b6f7265616e2067696e73656e670a726f6f742066726f6d204561737420417369612e0a497420636f6e7461696e7320737465726f6964200a636f6d706f756e647320616e64204220766974616d696e732e200a497420776173207573656420746f206e6f757269736820616e640a737472656e677468656e2074686520626f647920616e642068656172742e",
+      "staged_hex": "4472696564204b6f7265616e2067696e73656e6720726f6f74200a66726f6d204561737420417369612e20497420636f6e7461696e7320737465726f6964730a616e64204220766974616d696e732e205573656420746f206e6f757269736820616e64200a737472656e677468656e2074686520626f647920616e642068656172742e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 1193,
+        "copy_end": 1341,
+        "bytes": 131,
+        "record_index": 16,
+        "table_offset": 1317562,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Dried Korean ginseng root",
+            "from East Asia. It contains steroids",
+            "and B vitamins. Used to nourish and",
+            "strengthen the body and heart."
+          ],
+          "consumed_bytes": 131,
+          "remaining_bytes": 0,
+          "pixel_sha256": "a2250c0e3961b2b0adc63ed5a53cba8cb406691c0d28c3807f2ed4cae054c3e0",
+          "glyphs": 108
+        }
+      ]
+    }
+  ]
+}

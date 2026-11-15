@@ -1,0 +1,10 @@
+"""Keep prose intact; plan B227 with the original viewport and literal-I safety."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B227_layout_tools_v7298')
+if __name__=='__main__':
+    assert not ROOT.exists();src=Path('scripts/plan_lil_B226_layout_v7251.py').read_text('utf8');old=next(s for s in src.splitlines() if s.startswith('PAIRS='))
+    pairs="PAIRS={('to','face'),('real','courage'),('with','a'),('fear','of'),('of','the'),('the','blade'),('makes','you'),('as','you'),('you','step'),('step','in'),('can','get'),('get','hurt'),('hurt','even'),('even','worse'),(\"that's\",'why'),('you','need'),('need','to'),('face','things'),('without','fear'),('by','the'),('the','way'),('i','heard'),('martial','arts'),('arts','uniform'),('so','tough'),('when','they'),('they','hit'),('hit','it'),('know','anything'),('anything','about'),('about','it'),('of','cloth'),('not','armor'),('if','i'),('i','had'),('something','that'),('that','useful'),('i','could'),('could','fight'),('without','holding'),('holding','back'),('my','teacher'),('would','scold'),('scold','me'),('relying','on'),('on','gear'),('train','yourself'),('yourself','first'),(\"that's\",'what'),('what',\"they'd\"),(\"they'd\",'say'),('all','right'),('back','to'),('to','practice')}"
+    r=derive('scripts/plan_lil_B226_layout_v7251.py','scripts/plan_lil_B227_layout_v7298.py',{'B226':'B227','layout_v7251':'layout_v7298','[2,23]':'[2,25]',old:pairs,'twenty_whole_paragraph_plans_no_macros_no_prose_changes':'nine_whole_paragraph_plans_no_macros_no_prose_changes','all20_formatting_gates_remain_false':'all9_formatting_gates_remain_false'})
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_unchanged_prose_planner.json',dict(tool=r,all9_prose_paragraphs_unchanged=True,original216x64_four_rows_guard_pair_phase_andbare_I_rules_unchanged=True,second_original_native_page_only_after_four_row_solution_fails=True,no_inherited_R23_orR41_override_or_preapproved_weak_waiver=True,no_font_viewport_global_QA_or_authored_break_change=True,new_credit=0,full_goal_complete=False))

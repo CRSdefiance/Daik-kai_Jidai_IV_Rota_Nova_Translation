@@ -1,0 +1,3 @@
+# V971: remaining physical-state source contexts
+
+Twenty-six comments1807-1832 map through original helpers1250C/12584/12494 and main12104. Source condition4 selects critical-sounding1820-1832,and5 selects illness1807-1819;literal tables and executed code establish this order. All150 direct/main ordinary/battle selections and100 prior-status0-3 controls pass over four genuine protagonists and21 NPCs. Only declared CPU condition byte6 and mode fields change. No prose/font/new actual scene or completion credit.1092 complete,1095 source/prose reviewed;full goal and separate graphics audit remain open.

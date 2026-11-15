@@ -1,0 +1,5 @@
+# Promotion-ready testing copy — November 10, 2026
+
+Use `out/promotion_ready_20261110_maria315_v1/Translation_DS_Maria315_promotion_candidate.nds` and its adjacent manifest. ROM SHA256: `8973112a89682baff3355adcc27cc0becca596b088232dd962f5fb934e2365e8`. Fresh clean-input reconstruction is byte-identical to the registered cumulative Maria315 release: 725 entries, 114 accepted layers and 60 release checks. Fresh repository QA: 27 passing tests. Existing startup, name-getter and representative gameplay evidence applies to these exact bytes; this handoff claims no new gameplay. Includes completed Maria dialogue, earlier Rafael/tutorial work, the Market correction, wrap/glyph fixes and all preserved layers.
+
+Main awaits explicit acceptance after cold-boot testing. Unfinished Lil382 clean-first drafts/current bindings are saved separately and excluded from this ROM. See [the current handoff](../../docs/editorial_promotion_Maria315_Lil382_checkpoint_20261110.md) for exact provenance, remaining work and known draft corrections. The full editorial goal remains active.

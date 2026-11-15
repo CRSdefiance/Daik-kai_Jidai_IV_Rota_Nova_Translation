@@ -1,0 +1,78 @@
+{
+  "format": "dk4-ascii-glyph-right-bounds-v1",
+  "module_sha256": "09bb137ebda3e66949710c0deac5765810c61bfa523eb9e08784a11c01574f09",
+  "source_ARM9_sha256": "12ebaf3f3ce558e731c4c972ae90696392a351426cf147fbf3bd830dd1d82d1b",
+  "target_ARM9_sha256": "be6c9ff56915146a8ddb49a365dd48ec2851cf2d813660aa5f110d0653285d21",
+  "proof": {
+    "source_ARM9_sha256": "12ebaf3f3ce558e731c4c972ae90696392a351426cf147fbf3bd830dd1d82d1b",
+    "target_ARM9_sha256": "be6c9ff56915146a8ddb49a365dd48ec2851cf2d813660aa5f110d0653285d21",
+    "patches": [
+      {
+        "offset": 1641816,
+        "before_hex": "1eff2fe1",
+        "after_hex": "370000ea"
+      },
+      {
+        "offset": 1641852,
+        "before_hex": "18c09de50c0051e11eff2fe1",
+        "after_hex": "18c0dde50c0051e11eff2fe1"
+      },
+      {
+        "offset": 1641868,
+        "before_hex": "18c09de50c005ae11eff2fe1",
+        "after_hex": "18c0dde50c005ae11eff2fe1"
+      },
+      {
+        "offset": 1641884,
+        "before_hex": "000000000000000000000000",
+        "after_hex": "19c0dde50c0055e11eff2fe1"
+      },
+      {
+        "offset": 1641900,
+        "before_hex": "000000000000000000000000",
+        "after_hex": "19c0dde50c0056e11eff2fe1"
+      },
+      {
+        "offset": 857912,
+        "before_hex": "060055e3",
+        "after_hex": "c8aafceb"
+      },
+      {
+        "offset": 858100,
+        "before_hex": "060056e3",
+        "after_hex": "9daafceb"
+      },
+      {
+        "offset": 1642044,
+        "before_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "after_hex": "00c096e510005ce304c096e50cc1a01105c04ce000005ce3030000da06005ce306c0a0c319c0cde51eff2fe104f01fe514180d02"
+      }
+    ],
+    "helper_address": 33538816,
+    "helper_bytes": 52,
+    "retired_Square_scratch_tail": [
+      33538816,
+      33538912
+    ],
+    "original_Y_plus_one_font_layout_and_text_preserved": true,
+    "no_section_pool_heap_or_stack_growth": true,
+    "changed_records": [
+      "ASCII_GLYPH_RIGHT_EDGE_BOUND",
+      "ASCII_COLUMN_COUNT_STACK_BYTE",
+      "ASCII_BOUNDED_DIRECT_AND_PALETTED_COLUMNS"
+    ]
+  },
+  "builder_predecessor_sha256": "0741456d1c68baf4669817c30ca9c24954e18dbecf2f7885c5e58c393f217205",
+  "builder_dependencies": {
+    "dk4tool/patch/ascii_right_bounds_builder_guard.py": "37225bec7091419604b1d9eec51a9e3a56fbe30da9aba95326202298f1cf92c1",
+    "scripts/build_integrated_release_with_runtime_bounds.py": "006499487bcc7e560cdc0dcb19f88ae0eefcde9d3ad0f409a6de17a038c31cd7",
+    "dk4tool\\patch\\reviewed_scene_batch_v2.py": "863a950645dfd7f27327316ee3a8d8eef32dffe63d8084b15fc7e99712ecc746",
+    "dk4tool\\patch\\reviewed_scene_batch_v3.py": "aa422b35af6da16941376651a927c61baff9058e876bc568b027428629b00670",
+    "dk4tool\\patch\\reviewed_scene_batch_v4.py": "0879ca6fd280a4d5b21f94c21bd23ea79d913db411d605e076e42cb3cb63411b",
+    "dk4tool\\patch\\reviewed_scene_batch_v5.py": "7c33160ff24fd48f30d025ea73c64d35a28160de0d6b47d2458fc530cb990afe",
+    "dk4tool\\patch\\reviewed_scene_batch_v6.py": "dffcb07c66f2f7387858b9a68765852be48dc5cc5bce255a9fc2a0f9fa094c05"
+  },
+  "parent_ROM_sha256": "ea6031891977e669628ef6e64a57f968e55ef8babae6123b0430edac49b9c2c0",
+  "parent_manifest": "work\\analysis\\Hodram_B131_B150_release_20261102\\expected_canonical_manifest_contract.json",
+  "target_ROM_sha256": "544eacbe5de5e453e5a5245420d8d0eea2de4e98dfae6a4232af1b4e065fd519"
+}

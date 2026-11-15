@@ -1,0 +1,189 @@
+{
+  "format": "dk4-movement-notices-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "source_arm9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "MOVEMENT_LABEL_0782CC",
+      "field": 492236,
+      "source_pointer": 34705704,
+      "source_hex": "908582c6904897bf",
+      "japanese": "水と食料",
+      "english": "water and food",
+      "source_meaning": "Water and food, a shared supply-name parameter.",
+      "speaker": "Sailing interface or automatic-travel notice",
+      "context": "Actual native movement shortage caller 02078260/02078278, sailing bitmap constructor 020687B0 and failure modal 020995C8.",
+      "localization_note": "Retain complete action/supply meaning. Sailing-mode labels use the existing native five-pixel ASCII tracking in their exact 60-pixel cells; no prose shortened to a byte slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "target_pointer": 37258720
+    },
+    {
+      "id": "MOVEMENT_LABEL_0782D0",
+      "field": 492240,
+      "source_pointer": 34705692,
+      "source_hex": "8ea993ae88da93ae",
+      "japanese": "自動移動",
+      "english": "automatic travel",
+      "source_meaning": "Automatic movement, the interrupted action parameter.",
+      "speaker": "Sailing interface or automatic-travel notice",
+      "context": "Actual native movement shortage caller 02078260/02078278, sailing bitmap constructor 020687B0 and failure modal 020995C8.",
+      "localization_note": "Retain complete action/supply meaning. Sailing-mode labels use the existing native five-pixel ASCII tracking in their exact 60-pixel cells; no prose shortened to a byte slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "target_pointer": 37258736
+    },
+    {
+      "id": "MOVEMENT_LABEL_068A20",
+      "field": 428576,
+      "source_pointer": 34886124,
+      "source_hex": "8ea993ae88da93ae9286",
+      "japanese": "自動移動中",
+      "english": "Auto Sail",
+      "source_meaning": "Automatic movement is in progress, shown as a sailing-mode status.",
+      "speaker": "Sailing interface or automatic-travel notice",
+      "context": "Actual native movement shortage caller 02078260/02078278, sailing bitmap constructor 020687B0 and failure modal 020995C8.",
+      "localization_note": "Retain complete action/supply meaning. Sailing-mode labels use the existing native five-pixel ASCII tracking in their exact 60-pixel cells; no prose shortened to a byte slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "target_pointer": 37258756
+    },
+    {
+      "id": "MOVEMENT_LABEL_068A24",
+      "field": 428580,
+      "source_pointer": 34886136,
+      "source_hex": "8d8291ac88da93ae9286",
+      "japanese": "高速移動中",
+      "english": "Fast Sail",
+      "source_meaning": "High-speed movement is in progress, shown as a sailing-mode status.",
+      "speaker": "Sailing interface or automatic-travel notice",
+      "context": "Actual native movement shortage caller 02078260/02078278, sailing bitmap constructor 020687B0 and failure modal 020995C8.",
+      "localization_note": "Retain complete action/supply meaning. Sailing-mode labels use the existing native five-pixel ASCII tracking in their exact 60-pixel cells; no prose shortened to a byte slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "target_pointer": 37258768
+    },
+    {
+      "id": "MOVEMENT_LABEL_099638",
+      "field": 628280,
+      "source_pointer": 34922232,
+      "source_hex": "8ea993ae88da93ae82c582ab82dc82b982f1",
+      "japanese": "自動移動できません",
+      "english": "Automatic travel is unavailable.",
+      "source_meaning": "Automatic movement is not possible.",
+      "speaker": "Sailing interface or automatic-travel notice",
+      "context": "Actual native movement shortage caller 02078260/02078278, sailing bitmap constructor 020687B0 and failure modal 020995C8.",
+      "localization_note": "Retain complete action/supply meaning. Sailing-mode labels use the existing native five-pixel ASCII tracking in their exact 60-pixel cells; no prose shortened to a byte slot.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "target_pointer": 37258780
+    },
+    {
+      "id": "MOVEMENT_SHORTAGE_610",
+      "message_id": 610,
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd0a257382f00a92868e7e82b582dc82b7",
+      "japanese": "%sが\n底を突きました\n%sを\n中止します",
+      "english": "We've run out of %s. We're stopping %s.",
+      "source_meaning": "The supply has run out; the current movement action will stop.",
+      "speaker": "Selected crew member",
+      "context": "Actual actor-variant table 02118580 and varargs wrapper 02053D44, selected by the automatic-travel interruption caller.",
+      "localization_note": "Retain supply depletion and stopping the current action. Two original substitutions are preserved. Runtime wrapping occurs after complete substitution; prose is one paragraph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MOVEMENT_SHORTAGE_611",
+      "message_id": 611,
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82a981630a257382f00a92868e7e82b582dc82b7",
+      "japanese": "%sが\n底を突いたか…\n%sを\n中止します",
+      "english": "No %s left... Stopping %s.",
+      "source_meaning": "The speaker notes that the supply has run out and stops the current action.",
+      "speaker": "Selected crew member",
+      "context": "Actual actor-variant table 02118580 and varargs wrapper 02053D44, selected by the automatic-travel interruption caller.",
+      "localization_note": "Retain supply depletion and stopping the current action. Two original substitutions are preserved. Runtime wrapping occurs after complete substitution; prose is one paragraph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MOVEMENT_SHORTAGE_612",
+      "message_id": 612,
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82cc82a40a257382f00a92868e7e82b782e982bc",
+      "japanese": "%sが\n底を突いたのう\n%sを\n中止するぞ",
+      "english": "We're out of %s. We'll stop %s.",
+      "source_meaning": "An older speaker states that the supply has run out and they will stop the current action.",
+      "speaker": "Selected crew member",
+      "context": "Actual actor-variant table 02118580 and varargs wrapper 02053D44, selected by the automatic-travel interruption caller.",
+      "localization_note": "Retain supply depletion and stopping the current action. Two original substitutions are preserved. Runtime wrapping occurs after complete substitution; prose is one paragraph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "MOVEMENT_SHORTAGE_613",
+      "message_id": 613,
+      "source_hex": "257382aa0a82c882ad82c882c182bf82e182c182bd82cb0a257382f00a82e282df82e982e6",
+      "japanese": "%sが\nなくなっちゃったね\n%sを\nやめるよ",
+      "english": "We're out of %s. I'll stop %s.",
+      "source_meaning": "The speaker informally notes the depleted supply and personally stops the current action.",
+      "speaker": "Selected crew member",
+      "context": "Actual actor-variant table 02118580 and varargs wrapper 02053D44, selected by the automatic-travel interruption caller.",
+      "localization_note": "Retain supply depletion and stopping the current action. Two original substitutions are preserved. Runtime wrapping occurs after complete substitution; prose is one paragraph.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "status": "reviewed-prose-and-native-formatting-experimental-physical-gameplay-pending"
+}

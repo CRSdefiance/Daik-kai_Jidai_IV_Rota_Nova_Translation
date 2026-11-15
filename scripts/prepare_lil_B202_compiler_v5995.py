@@ -1,0 +1,67 @@
+"""Derive a B202 atomic compiler with its own source and measured-scene guards."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.seal_lil_B202_references_v5994 import FLAGS
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B202_compiler_tools_v5995')
+GATES='''    doc,mapping,seal=[load(conf[k]) for k in ['manuscript','reference_map','reference_approval']]
+    validate_natural_dialogue_batch(doc)
+    require(doc['translation_policy']=='natural-dialogue-v2' and doc['target_locale']=='en-US' and doc['encoder']=='dialogue-relocatable-v1' and not doc['formatting_review_pending'] and all(all(r['review'].values()) for r in doc['records']),'five-gate manuscript required')
+    require(doc['reference_map']==conf['reference_map'] and doc['reference_map_sha256']==sha(Path(conf['reference_map']).read_bytes()),'approved map differs')
+    require(seal['all19_source_native_reference_and_representative_rules_approved'] and seal['source_prose_English_and_compiled_targets_unchanged'] and seal['all_measured_timing_RNG_state_and_prompt_differences_preserved'] and seal['manuscript']==conf['manuscript'] and seal['manuscript_sha256']==sha(Path(conf['manuscript']).read_bytes()) and seal['reference_map_sha256']==sha(Path(conf['reference_map']).read_bytes()),'sealed references differ')
+    require(mapping['format']=='dk4-lil-B202-source-relocation-map-v1' and mapping['external_references_complete'] and mapping['entry_point_offset']==8 and mapping['preserve_record_parity'] and mapping['required_runtime_ARM9_sha256']==sha(arm) and mapping['source_SC2_sha256']==sha(source) and mapping['target_SC2_sha256']==conf['target_SC2_sha256'],'complete source-bound map required')
+    require(conf['required_map_flags']==FLAGS,'complete map flag list required')
+    for flag in FLAGS:require(mapping.get(flag) is True,'map approval required:'+flag)
+    keys=['native_font_proof','final_padding_proof','relocated_control_proof','representative_proof','termination_decode_proof','source_nameplate_consumer_proof','native_formatter_module','scoped_profile_module','postscene_native_state_proof','actual_proof','actor_terminology_reconciliation','contextual_reconciliation','actor_voice_contract']
+    for k in keys:require(doc[k+'_sha256']==sha(Path(doc[k]).read_bytes()),'proof hash differs:'+k)
+    require(Path(doc['native_formatter_module'])==Path('dk4tool/dialogue/lil_B202_layout_v2.py') and Path(doc['scoped_profile_module'])==Path('dk4tool/dialogue/lil_B202_profile.py'),'exact formatter/profile required')
+    native,stored,controls,sample,ends,names=[load(doc[k]) for k in keys[:6]]
+    state=load(doc['postscene_native_state_proof']);actual=load(doc['actual_proof']);approval=load(conf['native_approval']);fields=load(doc['actor_terminology_reconciliation']);terms=load(doc['contextual_reconciliation']);voices=load(doc['actor_voice_contract'])
+    require(len(native['cases'])==19 and native['current_original_macro_alignment_calls']==152 and native['complete_progressive_planes']==19 and native['complete_FE_logical_and_physical_planes']==0 and len(native['negative_controls'])==21 and all(r['rejected'] for r in native['negative_controls']),'complete native consumers required')
+    require(approval['all19_five_gates_approved'] and len(approval['formatter_negatives'])==14 and len(approval['three_individual_rowcount_reasons'])==3,'formatter/rowcount approvals required')
+    require(len(stored['final_target_parity_cases'])==19 and stored['current_final_stored_macro_alignment_cases']==76 and stored['new_parity_macro_alignment_cases']==44 and stored['exact_byte_identical_reused_macro_alignment_cases']==32 and stored['all19_final_targets_complete_native_planes_equal_reviewed_planes'],'final stored proof required')
+    require(len(controls['relocated_dispatch_cases'])==19 and len(controls['all7_source_current_target_control_leaves'])==7 and len(controls['picture_and_short47xx_pairs'])==2 and controls['all19_progressive_and_zero_FE_objects_preserved'] and controls['no_FI_FA_FO_inherited'],'complete relocated controls required')
+    require(ends['all2_declared_end_decodes_return_type0_extent4_without_post_payload_read'] and [(r['version'],r['end_offset']) for r in ends['cases']]==[('current',582),('research',574)],'complete guarded end required')
+    require(names['progressive_nameplate_values']=={'2':'Lil Argot','18':'Charles Rochefort','147':'Guildmaster','157':'Sailor'} and names['full_catalogue_values']=={'2':'Lil Argot','18':'Charles Jean Rochefort','147':'Guildmaster','157':'Retainer'},'distinct original names/aliases required')
+    require(len(names['native_eight_consumer_cases']['rows'])==8 and fields['original_progressive_alias']['source']=='水夫' and fields['original_progressive_alias']['current']=='Sailor' and fields['original_progressive_alias']['selected_actor']==157 and fields['no_name_asset_or_runtime_change'] and fields['no_global_207_name_closure_or_new_name_completion_credit'],'source-defined alias scope required')
+    require({r['actor_ID']:r['original_voice_class'] for r in voices['fresh4_actor_names']['rows']}=={2:3,18:0,147:0,157:4},'all four source voices required')
+    require(terms['source_item14']['Japanese']=='ガラスの製法辞典' and terms['source_item14']['current_English']=='Glassmaking Guide' and terms['all19_source_speeches_observed'] and terms['following_B43_source_item_terminology_lead']['current_wording_needs_contextual_terminology_revisit'],'spoken title and following unresolved lead required')
+    require(not actual['failures'] and not actual['paired_region_differences'] and actual['actual_unique_speech_panels']==actual['complete_matching_observations']==19 and actual['complete_matching_holds']==74 and actual['offline_only_source_indices']==[],'all19 actual panels/74 native holds required')
+    require(len(actual['actual_panels'])==19 and [p['id'] for p in actual['actual_panels']]==mapping['actual_sampled_display_IDs'] and sum(len(p['holds']) for p in actual['actual_panels'])==74,'individual actual panels required')
+    for panel,row in zip(actual['actual_panels'],doc['records'],strict=True):
+        require(panel['id']==row['id'] and panel['prefix']==row['source_selector'] and panel['holds'] and panel['native_plane_sha256']==row['native_font_case']['whole_native_plane_sha256'],'actual panel identity/native plane differs')
+        for hold in panel['holds']:require(hold['complete_ink_gray_masks_equal_native_plane'] and hold['upper_portrait_name_and_item_regions_equal_source'] and sha(Path(hold['capture']).read_bytes())==hold['capture_sha256'] and sha(Path(hold['clean_capture']).read_bytes())==hold['clean_capture_sha256'],'complete source-paired actual capture required')
+    require([len(v['command_pairs']) for v in actual['versions']]==[35,35] and [v['fixture_exit_frame'] for v in actual['versions']]==[7657,7655] and actual['versions'][0]['input_schedule_sha256']==actual['versions'][1]['input_schedule_sha256'],'complete actual paths/input/return required')
+    shape=lambda v:[(r['source_offset'],r['word'],r['native_result']) for r in v['command_pairs']]
+    require(shape(actual['versions'][0])==shape(actual['versions'][1]),'original command paths/results differ')
+    expected_ids=[(r['id'],r['source_record_index'],r['source_selector']) for r in doc['records']];expected_offsets=[None]*9+[r['old_offset'] for r in mapping['blocks'][0]['command_map']]
+    for version in actual['versions']:
+        require([(r['id'],r['source_record_index'],r['prefix']) for r in version['selected_intervals']]==expected_ids and [r['source_offset'] for r in version['command_pairs']]==expected_offsets,'complete actual source identities differ')
+        report=load(version['capture_report']);require(report['cold_boot'] and not report['savestate_loaded'] and not report['callback_errors'] and report['frames']==13001,'actual cold-boot scope differs')
+        for photo in report['frames_captured']:require(sha(Path(photo['path']).read_bytes())==photo['PNG_sha256'],'sampled capture changed')
+    timed=[dict(source=a,English=b) for a,b in zip(actual['versions'][0]['command_pairs'],actual['versions'][1]['command_pairs'],strict=True) if (a['start'],a['returned'])!=(b['start'],b['returned'])]
+    require(actual['actual_timing_differences']==timed and len(timed)==22 and len(actual['later_whole_RGB_differences'])==21,'measured differences must remain explicit')
+    require(state['actual_proof_sha256']==sample['actual_proof_sha256']==sha(Path(doc['actual_proof']).read_bytes()) and state['command_start_return_differences']==timed and state['later_whole_RGB_differences']==actual['later_whole_RGB_differences'],'measured proof bindings differ')
+    require([(r['source_offset'],r['delta'],r['word']) for r in state['actual_command_duration_changes']]==[(106,-1,0x4000),(228,4,0x4000),(326,-5,0x4000)] and len(state['within_scene_RNG_differences'])==5,'source-specific speech timing/RNG witnesses required')
+    require(state['native_final_component_equality']==dict(state=True,models=True,persistent_objects=True,tasks=True,calendar=True) and state['whole_actor_and_captain_equal'] and not state['final_PRNG_equal'] and state['no_causal_explanation_full_RAM_future_RNG_or_broad_simulation_equivalence_claim'],'honest measured state scope required')
+    require(all(r['difference_bbox']==[224,360,240,376] and r['nontext_region_difference_bbox'] is None for r in actual['later_whole_RGB_differences']) and sample['all_later_differences_bounded_to_advance_prompt'],'unmodified later prompt differences required')
+    require(sample['no_open_translation_specific_display_control_or_return_finding'] and sample['representative_shared_rules_approved'] and not sample['visual_review_pending'] and sample['no_causal_explanation_full_RAM_future_RNG_or_broad_simulation_equivalence_claim'] and sample['no_natural_event202_activation_original_location_earned_inventory_full_effects_full_route_or_hardware_claim'],'complete representative scope required')
+    require(len(sample['viewed_sheets'])==6 and all(r['viewed'] and r['viewed_after_image_return'] and r['original_detail'] and sha(Path(r['path']).read_bytes())==r['sha256'] for r in sample['viewed_sheets']),'viewed actual and paired full screens required')
+    require(not any(p.get('full_goal_complete') for p in [doc,mapping,seal,native,stored,controls,sample,state,approval]),'full editorial objective remains incomplete')
+'''
+if __name__=='__main__':
+    assert not ROOT.exists();path=Path('dk4tool/patch/lil_B200_editorial_v1.py');source=path.read_text(encoding='utf-8');a=source.index("    doc,mapping,seal=");b=source.index("    rows=doc['records'];ids=",a);x=source.index('FLAGS=');y=source.index('\ndef load',x)
+    changes={source[a:b]:GATES,source[x:y]:'FLAGS='+repr(FLAGS)+'\n',
+      'B200':'B202','lil_B200_layout_v2':'lil_B202_layout_v2','lil_B200_profile':'lil_B202_profile','SELECTORS={19,172,254}':'SELECTORS={2,18,147,157}',
+      "Counter(r['kind'] for r in rows)=={'progressive':17,'system-FE':2}":"Counter(r['kind'] for r in rows)=={'progressive':19}",
+      "Counter(r['editorial_decision'] for r in rows)=={'revise':13,'retain-wording':6}":"Counter(r['editorial_decision'] for r in rows)=={'revise':6,'retain-wording':13}",
+      '==200':'==202','[200]':'[202]','block=200':'block=202',
+      'spec[\'source_bytes\']==len(block)==932 and spec[\'source_logical_end\']==930 and spec[\'research_bytes\']==828 and spec[\'research_logical_end\']==828':"spec['source_bytes']==len(block)==588 and spec['source_logical_end']==586 and spec['research_bytes']==580 and spec['research_logical_end']==578",
+      'end==930 and len(block)==932':'end==586 and len(block)==588','mapped(end)==828':'mapped(end)==578','len(target)==828 and len(logical)==828':'len(target)==580 and len(logical)==578',
+      'len(commands)==31':'len(commands)==26','[(926,824)]':'[(582,574)]',
+      "exact=[(8,'2d63'),(94,'0143'),(96,'00460b80'),(100,'8143'),(618,'304865a8'),(718,'3547'),(864,'0360'),(866,'2e63'),(906,'00a0ffff01021360'),(914,'00a0ffff01006530'),(922,'4046081d'),(926,'00000000')]":"exact=[(162,'2a63'),(182,'2a63'),(322,'35480ea8'),(564,'00a0ffff01000e30'),(572,'2147'),(574,'00a0ffff1d000100'),(582,'00000000')]",
+      '[0x632D,0x4301,0x4600,0x4381,0x4830,0x4735,0x6003,0x632E,0xA000,0xA000,0x4640,0]':'[0x632A,0x632A,0x4835,0xA000,0x4721,0xA000,0]',
+      'source_commands=31':'source_commands=26','12 exact leaves required':'7 exact leaves required',
+      'all19_progressive_two_FE_no_macros_inn_picture47xx6003_two_A000_and_single_end_preserved':'all19_progressive_zero_FE_no_macros_two632A_picture47xx_two_A000_and_single_end_preserved',
+      'actual_two_complete_B22_fixtures19_panels73_holds172_equal_regions19_timings6_prompt10_sky_differences_unequal_PRNG_not_natural_activation':'actual_two_complete_B22_fixtures19_panels74_holds22_timings21_prompt_differences_unequal_PRNG_not_natural_activation'}
+    result=derive(str(path),'dk4tool/patch/lil_B202_editorial_v1.py',changes);ROOT.mkdir(parents=True);save(ROOT/'compiler_derivation.json',dict(tool=result,all19_source_objects_seven_leaves_and_exact588_inverse_guarded=True,complete_actual_native_scope_and_measured_differences_bound=True,no_ROM_registry_ledger_orcredit_change=True,full_goal_complete=False));print('B202 atomic compiler prepared;one guarded archive mutation after complete source/native/reference/actual checks.')

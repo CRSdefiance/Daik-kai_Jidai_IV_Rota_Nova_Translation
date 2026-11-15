@@ -1,0 +1,221 @@
+{
+  "candidate_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7",
+  "observed_record_IDs": [
+    97,
+    493
+  ],
+  "floating_notice": {
+    "frame": 10627,
+    "actual_gameplay": true,
+    "hardware": false,
+    "capture": {
+      "frame": 10627,
+      "path": "out\\sailing_alerts_20261111_v2\\levelup\\capture\\frame_010627_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "4dfaa93d0dc6c46aa83a68f8a2e9c8ed7527030fc6ce1c06e30b0960665c88c4",
+      "framebuffer_sha256": "1f68035b7919de4946a8eed4b4f8b82b13bae01a40970ed0ab74fc55c7039ce1"
+    },
+    "observed": [
+      {
+        "message_ID": 97,
+        "actor_name": "Gerhard",
+        "observed_English": "Gerhard leveled up!",
+        "original_widget_RAM_address": 36303940,
+        "exact_display_hex": "47657268617264206c6576656c656420757021",
+        "complete_glyphs": 17,
+        "exact_foreground_and_margins": true,
+        "crop": [
+          75,
+          256,
+          207,
+          274
+        ],
+        "native_font_origin": [
+          85,
+          260
+        ]
+      },
+      {
+        "message_ID": 97,
+        "actor_name": "Manuel",
+        "observed_English": "Manuel leveled up!",
+        "original_widget_RAM_address": 36303992,
+        "exact_display_hex": "4d616e75656c206c6576656c656420757021",
+        "complete_glyphs": 16,
+        "exact_foreground_and_margins": true,
+        "crop": [
+          72,
+          274,
+          205,
+          289
+        ],
+        "native_font_origin": [
+          83,
+          276
+        ]
+      }
+    ],
+    "original_five_bubbles_pages_byte_exact": true,
+    "selector_word_restored_before_sailing": true,
+    "source_and_English_cell_width_equal_for_unchanged_name": true,
+    "fixture_scope": "The earlier bubbles event uses one temporary selector instruction. Original gameplay computes both level-ups."
+  },
+  "becalmed": {
+    "candidate_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7",
+    "actual_gameplay": true,
+    "hardware": false,
+    "observed": [
+      {
+        "frame": 9627,
+        "message_ID": 493,
+        "complete_glyphs": 44,
+        "exact_foreground_and_margins": true,
+        "display_lines": [
+          "Admiral, the wind's died.",
+          "There's nothing we can do."
+        ],
+        "capture": {
+          "frame": 9627,
+          "path": "out\\sailing_alerts_20261111_v2\\becalmed\\capture\\frame_009627_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "a449487cb4b4b433e93864785450fd15229403d8881fd2277efdd58bd4276ce7",
+          "framebuffer_sha256": "1fc62b0d87aebb43b95c184ea95186c82f36e7ae948a516169e58daea4235e39"
+        },
+        "exact_display_hex": "2041646d6972616c2c207468652077696e64277320646965642e0a202054686572652773206e6f7468696e672077652063616e20646f2e",
+        "RAM": {
+          "frame": 9627,
+          "path": "out\\sailing_alerts_20261111_v2\\becalmed\\capture\\frame_009627_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "e7368230028baffa804b23629a54022b7e7faeccad7eac01ea248272a10e41a9",
+          "read_only_export": true
+        }
+      }
+    ],
+    "ordinary_A_dismisses_warning": true,
+    "following_capture": {
+      "frame": 9827,
+      "path": "out\\sailing_alerts_20261111_v2\\becalmed\\capture\\frame_009827_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "5fd85fec206d029cb9613375998b1d1be306207a9e2707c4a305eff20232a504",
+      "framebuffer_sha256": "6943bf7b82113585ea0bc8cc6bcc713f45eac3c20ef47bd479f77f308e66406c"
+    },
+    "selector_restored": true,
+    "fixture": [
+      {
+        "mode": "choose-becalmed",
+        "original_dispatcher": 33758912,
+        "scoped_input": 18,
+        "instruction": 33754896,
+        "before": "0400a0e1",
+        "after": "1200a0e3",
+        "changes": [
+          {
+            "address": 33754896,
+            "before": 4,
+            "after": 18
+          },
+          {
+            "address": 33754899,
+            "before": 225,
+            "after": 227
+          }
+        ],
+        "only_original_event_argument_forced": true,
+        "natural_random_selection_verified": false,
+        "frame": 8327
+      },
+      {
+        "mode": "restore-becalmed",
+        "original_dispatcher": 33758912,
+        "scoped_input": 18,
+        "instruction": 33754896,
+        "before": "1200a0e3",
+        "after": "0400a0e1",
+        "changes": [
+          {
+            "address": 33754896,
+            "before": 18,
+            "after": 4
+          },
+          {
+            "address": 33754899,
+            "before": 227,
+            "after": 225
+          }
+        ],
+        "only_original_event_argument_forced": true,
+        "natural_random_selection_verified": false,
+        "frame": 9627
+      }
+    ],
+    "natural_event_selection": false,
+    "evidence": {
+      "out\\sailing_alerts_20261111_v2\\becalmed\\terminal.json": "7e2a2138a363b468964fe945e94ff3bbcd57411e8f572416812fe2579b90df78",
+      "out\\sailing_alerts_20261111_v2\\stored_sailing_alert_balanced_verification.json": "cfdc68da9b9e9dc99928c2cfe79d99625cc17ca6f75efc9a3ccd3a534bdb06a3",
+      "translations\\editorial_checkpoints\\SharedText_20261110_v1\\sailing_alert_contextual_review.json": "cb40144e8727c9c4cd553ce8a07cc9bf16970637cfb723a6f20834c60eb2f621",
+      "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\verify_sailing_alert_replays_v2.py": "1998173cd17040cb7769f6791f9d4956dcaab04a5e2cb393c6964147dc30feee"
+    }
+  },
+  "ordinary_reefs_sample": {
+    "candidate_sha256": "40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7",
+    "observed": [],
+    "actual_gameplay": true,
+    "ordinary_controller_schedule": true,
+    "hardware": false,
+    "sampled_frames": [
+      {
+        "frame": 4000,
+        "last_original_portrait_buffer_hex": "416e642e2e2e207765277265206865726521"
+      },
+      {
+        "frame": 16000,
+        "last_original_portrait_buffer_hex": "4f6821205468617427732072656173737572696e672e2057656c6c2c20676976650a20697420796f757220626573742120"
+      },
+      {
+        "frame": 28000,
+        "last_original_portrait_buffer_hex": "2082502f82500a2020536b793a2053756e6e790a20204465706172746564204c6973626f6e2e"
+      },
+      {
+        "frame": 28400,
+        "last_original_portrait_buffer_hex": "2082502f82500a2020536b793a2053756e6e790a20204465706172746564204c6973626f6e2e"
+      },
+      {
+        "frame": 28800,
+        "last_original_portrait_buffer_hex": "2082502f82500a2020536b793a2053756e6e790a20204465706172746564204c6973626f6e2e"
+      },
+      {
+        "frame": 29200,
+        "last_original_portrait_buffer_hex": "2082502f82500a2020536b793a2053756e6e790a20204465706172746564204c6973626f6e2e"
+      },
+      {
+        "frame": 30000,
+        "last_original_portrait_buffer_hex": "2082502f82500a2020536b793a2053756e6e790a20204465706172746564204c6973626f6e2e"
+      }
+    ],
+    "target_reef_warning_observed": false,
+    "evidence": {
+      "out\\sailing_alerts_20261111_v2\\reefs\\terminal.json": "bbfd2f30e367b6ea91bd90cf4c62da9897af1daef13eecba31d8192094c86e08",
+      "out\\sailing_alerts_20261111_v2\\stored_sailing_alert_balanced_verification.json": "cfdc68da9b9e9dc99928c2cfe79d99625cc17ca6f75efc9a3ccd3a534bdb06a3",
+      "translations\\editorial_checkpoints\\SharedText_20261110_v1\\sailing_alert_contextual_review.json": "cb40144e8727c9c4cd553ce8a07cc9bf16970637cfb723a6f20834c60eb2f621",
+      "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\verify_sailing_alert_replays_v2.py": "1998173cd17040cb7769f6791f9d4956dcaab04a5e2cb393c6964147dc30feee"
+    }
+  },
+  "hardware": false,
+  "source_proofs": {
+    "out\\sailing_alerts_20261111_v2\\levelup\\floating_levelup_live_verification.json": "9c5a0c6cd2d6110a7b2d17826a967c49e1f7ce5dda4f0b0052e2bc9c48b49f4d",
+    "out\\sailing_alerts_20261111_v2\\becalmed\\becalmed_live_verification.json": "e1cd8c174ba1f38b2dd1a4ebc21f824865990aa5f462ddb44e77342d8810d6ce",
+    "out\\sailing_alerts_20261111_v2\\reefs\\ordinary_reefs_live_verification.json": "f58af44062a807e47ea092208a96e7284094f5f071b9acd6fe386bc6b88c6820"
+  }
+}

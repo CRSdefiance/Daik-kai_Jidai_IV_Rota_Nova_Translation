@@ -1,0 +1,7 @@
+# All Routes mutiny candidate
+
+Use `out/mutiny_registered_20261111_v1/Translation_DS_All_Routes_Mutiny_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs candidate SHA-256 `f275fb369b1ec564fde76ba18d8b89e9cd4ed3186588ce8faffab4930245eb01` byte for byte. Patch SHA-256 is `10946ed390cf34cfd3459e850322c4e46ff9596c6db9598d0e3a2a405e2c756c`.
+
+The unrest and mutiny exchange is registered across 65 dialogue records and three choices. The ledger now credits 26,179 reviews. This batch has 54 revisions and 14 justified retentions. It restores 26 lines that displayed unrelated text and localizes Quell Mutiny, Appease Crew and Do Nothing. All 65 dialogue pages, six caption planes, 73 cumulative release checks, and 30 targeted tests passed. Main V4701 awaits acceptance.
+
+The focused emulator voyage displayed five complete dialogue panels, all three choices and the selection highlight. The original appeal branch showed the cook's agreement and the crew's acceptance, then returned to sailing. One temporary instruction selected the encounter. The candidate passed its own 31,000-frame startup and 24 protected name getters. [Gameplay verification](verification/mutiny_live_verification.json) · [Registered review](verification/registered_review.json)

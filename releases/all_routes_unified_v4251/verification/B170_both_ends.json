@@ -1,0 +1,123 @@
+{
+  "candidate": "out\\all_routes_combined_v4251_candidate.nds",
+  "candidate_sha256": "ff9917225f4e8812ac890973c454a352b5416bee27a7263a5b3258efe9b91b12",
+  "research_ROM": "out\\lil_B170_reference_v4284_RESEARCH_ONLY.nds",
+  "research_ROM_sha256": "6e861308863c5e655aea9927364b2ad3e3bd6200e5cbe52c5bb7d789f4069abe",
+  "source_plan": "work\\analysis\\lil_B170_relocation_v4281\\nested_source_relocation_research.json",
+  "source_plan_sha256": "e4f5ebb95549bccd57fd64d08a82b70a77bd53eecb409593a54510a141772994",
+  "cases": [
+    {
+      "version": "current",
+      "block": 170,
+      "declared_end_index": 0,
+      "end_offset": 1852,
+      "logical_end": 1860,
+      "at_logical_tail": false,
+      "end_hex": "00000000",
+      "native_result": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_extent": 4,
+      "post_logical_payload_guard_byte": 165,
+      "post_logical_payload_reads": [],
+      "all4MiB_owner_input_ABI_result_and_length_guards_exact": true
+    },
+    {
+      "version": "current",
+      "block": 170,
+      "declared_end_index": 1,
+      "end_offset": 1856,
+      "logical_end": 1860,
+      "at_logical_tail": true,
+      "end_hex": "00000000",
+      "native_result": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_extent": 4,
+      "post_logical_payload_guard_byte": 165,
+      "post_logical_payload_reads": [],
+      "all4MiB_owner_input_ABI_result_and_length_guards_exact": true
+    },
+    {
+      "version": "research",
+      "block": 170,
+      "declared_end_index": 0,
+      "end_offset": 1742,
+      "logical_end": 1750,
+      "at_logical_tail": false,
+      "end_hex": "00000000",
+      "native_result": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_extent": 4,
+      "post_logical_payload_guard_byte": 165,
+      "post_logical_payload_reads": [],
+      "all4MiB_owner_input_ABI_result_and_length_guards_exact": true
+    },
+    {
+      "version": "research",
+      "block": 170,
+      "declared_end_index": 1,
+      "end_offset": 1746,
+      "logical_end": 1750,
+      "at_logical_tail": true,
+      "end_hex": "00000000",
+      "native_result": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_extent": 4,
+      "post_logical_payload_guard_byte": 165,
+      "post_logical_payload_reads": [],
+      "all4MiB_owner_input_ABI_result_and_length_guards_exact": true
+    }
+  ],
+  "branch_destination_bounds": [
+    {
+      "block": 170,
+      "all_relative_destinations_are_in_block_commands_not_logical_end": true,
+      "declared_end_word_maps": [
+        {
+          "source_offset": 1852,
+          "target_offset": 1742,
+          "extent": 4,
+          "source_four_zero_bytes_exact": true
+        },
+        {
+          "source_offset": 1856,
+          "target_offset": 1746,
+          "extent": 4,
+          "source_four_zero_bytes_exact": true
+        }
+      ]
+    }
+  ],
+  "all4_declared_end_decodes_return_type0_extent4_without_post_payload_read": true,
+  "B170_first_end_precedes_second_end_and_declared_logical_end": true,
+  "no_end_decode_zero_tail_dependency": true,
+  "no_relative_destination_at_or_beyond_logical_end": true,
+  "second_B170_declared_word_decoder_probe_not_actual_reachability_claim": true,
+  "full_VM_or_outer_event_parent_tail_not_executed_by_this_probe": true,
+  "no_ROM_registry_ledger_orcompletion_change": true,
+  "producer_sha256": "4203d7ee3d11f0abb89e142cd5d97c58da2367f8b6f8aa09693e2409fded3408",
+  "full_goal_complete": false
+}

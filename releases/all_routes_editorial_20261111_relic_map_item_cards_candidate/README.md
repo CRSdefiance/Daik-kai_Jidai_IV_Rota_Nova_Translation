@@ -1,0 +1,7 @@
+# All Routes Relic and Map Item Cards candidate
+
+Use the local ROM `out/relic_map_item_cards_registered_20261111_v1/Translation_DS_All_Routes_Relic_Map_Item_Cards_20261111_candidate.nds` with its build manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `9ade7f597fb6ce1d5418c0079adb0b3c0464b44edc24d47e8cf536db336118e7`. Patch SHA-256 is `becde363daabe1a2e40916b5d0a5e1e72376588ee3482e2289963d322d8045d6`.
+
+The 40 proof, map and map-material descriptions are registered. The ledger now credits 26,721 reviews. Twenty-eight revisions restore omitted source details such as the Rigveda's influence on Indian thought, the role of Delhi on the Mughal map and the engraved patterns on both stone-tablet halves. Twelve wordings were retained with individual reasons. Both views passed 160 native render cases and 80 visual previews. All 218 description getters passed.
+
+The original Items menu showed four complete cards, one for each item kind, then returned to Lisbon. The items came from an isolated inventory transfer. The other 36 cards were checked offline. All 92 release checks, 34 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/relic_map_items_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

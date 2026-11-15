@@ -1,0 +1,63 @@
+{
+  "config": "translations\\lil361_editorial_release_v1.json",
+  "config_sha256": "67048d9eb83f9f303e2e5e80a11abe871618060e2ad49eaf89710364c8933f8e",
+  "cases": [
+    {
+      "case": "wrong-predecessor",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: complete ordered predecessor",
+      "input_sha256": "1501e358272aacadb658c0fb37dff0c54eeeef89c087856d5737c9156571c5ba"
+    },
+    {
+      "case": "missing-record",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: complete unique membership",
+      "input_sha256": "c5e6c143eb3c4d0af3b489246918b6b6a127083a6e9a5947bdd0d89404949007"
+    },
+    {
+      "case": "wrong-speech-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "b64991926335f47b4259ec093f7d8f4149eba794b3cb5b242d56744f8720c9b2"
+    },
+    {
+      "case": "wrong-caption-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "d02485750e188084093cea8bc3670c993c0b83e67c6e2b5b77305e49a17b47a0"
+    },
+    {
+      "case": "wrong-style-count",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed speech, voice and menu membership",
+      "input_sha256": "b908cf8ffabbb1f300c1842215537d4a4f83525f9d7831e8c69a175d27a7c4c2"
+    },
+    {
+      "case": "unowned-block",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: changed versus control-only blocks",
+      "input_sha256": "ebadc89d77025b46f28d5c9abac870bfc931a0f1ae65b88ec788df5792f5101b"
+    },
+    {
+      "case": "missing-scoped-name",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: exact mixed source/native scope",
+      "input_sha256": "c95e5b281ac4036c549fc85f2f91d11f61b932b09923db8bfc5d426a38d283c6"
+    },
+    {
+      "case": "wrong-captain",
+      "rejected": true,
+      "guard": "Rafael B51-B60 release: Lil route without new continuation controls",
+      "input_sha256": "084548f4760f9b61de7c7874ec7f6d59f5bcac56d09268f55f3e84ff5528dc23"
+    }
+  ],
+  "all8_production_scope_mutations_rejected": true,
+  "complete_parent_andbaseline_callers_unchanged": true,
+  "original_menu_anddisplay_rejections_bound_to_exact_proofs": true,
+  "new_credit": 0,
+  "evidence": {
+    "translations\\lil361_editorial_release_v1.json": "67048d9eb83f9f303e2e5e80a11abe871618060e2ad49eaf89710364c8933f8e",
+    "work\\Lil361_B283_B298_clean_20261110\\registered_preparation_v1\\qualification.json": "035e9c072ef8c87e7576d32f14eefea3230c99783ee8772e1803f677fce6f471",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\qualify_lil361_registered_v1.py": "c77a7965809b46b9729cba27340ed202673c754e869e6d839264fcd737f423bc"
+  }
+}

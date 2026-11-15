@@ -1,0 +1,4 @@
+"""Preserve the derived audit; add an explicit clean preamble check and accurate console label."""
+from pathlib import Path
+if __name__=='__main__':
+    p=Path('scripts/verify_editorial_handoff_v3783.py');t=p.read_text(encoding='utf-8');old="assert jp[n][at:at+len(v)]==v and jp[n][at+len(v)]==0;ref=";assert t.count(old)==1;t=t.replace(old,"assert jp[n][at:at+len(v)]==v and jp[n][at+len(v)]==0 and jp[n][at-5:at+1].hex()==r['source_complete_preamble_hex'];ref=");old='V3738/531batches/exactpatch;76new references andhonest76-panel fixture coverage.';assert t.count(old)==1;t=t.replace(old,'V3778/532 batches/exact patch;75 new references and disclosed75-panel/seven-actor/two-FE fixture coverage.');exec(compile(t,str(p)+'::complete-clean-preamble-and-console-correction','exec'),dict(__name__='__main__',__file__=__file__))

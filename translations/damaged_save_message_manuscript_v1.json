@@ -1,0 +1,34 @@
+{
+  "format": "dk4-arm9-prompt-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DAMAGED_SAVE_MESSAGE_SUFFIX",
+      "offset": 1239884,
+      "capacity": 52,
+      "source_hex": "94D482CC835A815B83758366815B835E82CD89F382EA82C482A282DC82B70A93C782DD8D9E82DF82DC82B982F182C582B582BD00",
+      "japanese": "番のセーブデータは壊れています\n読み込めませんでした",
+      "english": ": This save is corrupted and could not be loaded.{PAD}",
+      "speaker": "Load error dialog",
+      "context": "EE67C checksum mismatch branch converts incoming unsigned-byte slot plus one to full-width digits, copies that number, then concatenates this suffix into the 60-byte frame before modal 5473C.",
+      "source_meaning": "The save data in the numbered slot is corrupted; it could not be loaded.",
+      "localization_note": "A colon after the native slot number introduces a complete natural-English error sentence. Preserves corruption and failed loading without abbreviating. Native suffix copy, numeric conversion and concatenation are verified for every incoming byte; modal layout remains pending. Generated guarded word-boundary layout preserves the complete paragraph; all six final native panels are visually reviewed. Physical gameplay remains pending.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

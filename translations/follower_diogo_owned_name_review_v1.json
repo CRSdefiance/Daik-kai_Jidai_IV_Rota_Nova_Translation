@@ -1,0 +1,156 @@
+{
+  "format": "dk4-scoped-owned-name-fields-review-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "actor178_column0_localized_name_field",
+      "english": "Follower",
+      "speaker": "Follower",
+      "context": "Source-bound names in the complete B111-B130 exchanges;preserve separate progressive/full consumers.",
+      "source_meaning": "信徒",
+      "localization_note": "Retain Follower for source信徒 in the complete sect exchange; normalize only its mismatched full-width F. Do not add a rank, plural group identity or pejorative.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "owned_field": {
+        "actor": 178,
+        "column": 0,
+        "table_field_offset": 1188288,
+        "pointer": 37257088,
+        "physical_offset": 1519340,
+        "source_hex": "82656f6c6c6f776572",
+        "target_hex": "466f6c6c6f77657200",
+        "owned_bytes": 9,
+        "current_text": "Ｆollower",
+        "target_text": "Follower",
+        "source_clean_component": {
+          "column": 0,
+          "source_ARM9_field_offset": 1188288,
+          "pointer_hex": "c0ba1502",
+          "pointer": 34978496,
+          "offset": 1424064,
+          "hex": "904d936b",
+          "text": "信徒",
+          "byte_length": 4,
+          "status": "printable-static-string"
+        },
+        "kind": "latin-width-normalization",
+        "reason": "Retain Follower for source信徒 in the complete sect exchange; normalize only its mismatched full-width F. Do not add a rank, plural group identity or pejorative.",
+        "owners": [
+          {
+            "actor": 178,
+            "column": 0,
+            "pointer": 37257088,
+            "field_offset": 1188288
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1188288,
+            "pointer": 37257088
+          }
+        ],
+        "following16_hex": "000000416d65726963616e0000000042",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "native": "work\\analysis\\Hodram_B111_B130_name_native_20261101\\native_name_fields_verification_reviewed.json",
+      "actual": "work\\analysis\\Hodram_B111_B130_actual_pixels_20261102\\focused_actual_pixels.json",
+      "full_catalogue_UI_unvisited": true,
+      "decision": "glyph-only-revision"
+    },
+    {
+      "id": "actor43_column8_localized_name_field",
+      "english": "Diogo de Escante",
+      "speaker": "Diogo Escante",
+      "context": "Source-bound names in the complete B111-B130 exchanges;preserve separate progressive/full consumers.",
+      "source_meaning": "ディオゴ・エスカンテ / ディオゴ・デ・エスカンテ",
+      "localization_note": "Render the explicit source componentデ as de in Diogo de Escante. Preserve progressive Diogo Escante and the source full name; infer no noble rank, nationality or additional biography. Shared owners remain a blocking ownership review until individually bound.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "owned_field": {
+        "actor": 43,
+        "column": 8,
+        "table_field_offset": 1183976,
+        "pointer": 34977684,
+        "physical_offset": 1423252,
+        "source_hex": "8366",
+        "target_hex": "6465",
+        "owned_bytes": 2,
+        "current_text": "デ",
+        "target_text": "de",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183976,
+          "pointer_hex": "94b71502",
+          "pointer": 34977684,
+          "offset": 1423252,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        },
+        "kind": "source-name-component-romanization",
+        "reason": "Render the explicit source componentデ as de in Diogo de Escante. Preserve progressive Diogo Escante and the source full name; infer no noble rank, nationality or additional biography. Shared owners remain a blocking ownership review until individually bound.",
+        "owners": [
+          {
+            "actor": 43,
+            "column": 8,
+            "pointer": 34977684,
+            "field_offset": 1183976
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183976,
+            "pointer": 34977684
+          }
+        ],
+        "following16_hex": "0000836600000200000092868d910000",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "native": "work\\analysis\\Hodram_B111_B130_name_native_20261101\\native_name_fields_verification_reviewed.json",
+      "actual": null,
+      "full_catalogue_UI_unvisited": true,
+      "decision": "name-component-localization"
+    }
+  ],
+  "owned_field_proposal": "work\\analysis\\Hodram_B111_B130_name_fields_20261101\\owned_fields_proposal.json",
+  "owned_field_proposal_sha256": "073fda03051850e2625beed444fe7eb29953c828a725062be601eb0e1ef73aa3",
+  "native_andrepresentative_gameplay_checked_registered_deployment_pending": true,
+  "additional_fields": 2,
+  "no_new_dialogue_credit": true,
+  "new_credit": 0,
+  "full_207_review_still_open": true
+}

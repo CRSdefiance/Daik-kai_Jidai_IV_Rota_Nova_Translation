@@ -1,0 +1,12 @@
+"""Bind independent aggregate and per-record actual holds without changing target bytes or native proofs."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B211_hold_guard_tools_v6581c')
+if __name__=='__main__':
+    assert not ROOT.exists();proofs=[]
+    proofs.append(derive('dk4tool/patch/lil_B211_editorial_v1.py','dk4tool/patch/lil_B211_editorial_v2.py',{
+        "    for key,count in [('actual_panels',12)":"    require([sum(len(r[k]) for r in a['actual_panels']) for k in ['complete_body_holds','complete_name_holds','complete_FE_absence_holds']]==[47,35,12],'independent actual hold aggregates')\n    for key,count in [('actual_panels',12)",
+        "        patches.append(dict(start=a,end=a+len(old),old=old,value=value));changes.append(":"        require([len(panel[k]) for k in ['complete_body_holds','complete_name_holds','complete_FE_absence_holds']]==[row['actual_complete_body_holds'],row['actual_complete_name_holds'],row['actual_complete_FE_absence_holds']],'individual declared holds:'+ident);require(all(h['complete_native_name_and_blank_guards_equal'] for h in panel['complete_name_holds']) and all(h['source_correct_absence_equal'] for h in panel['complete_FE_absence_holds']),'individual name/FE absence witnesses:'+ident)\n        patches.append(dict(start=a,end=a+len(old),old=old,value=value));changes.append("}))
+    proofs.append(derive('scripts/validate_lil_B211_atomic_v6581.py','scripts/validate_lil_B211_atomic_v6581c.py',{'lil_B211_editorial_v1':'lil_B211_editorial_v2','lil_B211_atomic_v6581':'lil_B211_atomic_v6581c',"deps.update(mapping['evidence'])":"deps.update(mapping['evidence']);deps.update(['scripts/prepare_lil_B211_hold_guard_successor_v6581c.py','scripts/probe_lil_B211_hold_aggregate_v6581b.py','work/analysis/lil_B211_hold_aggregate_probe_v6581b/semantic_hold_count_gap_in_memory_only.json'])"}))
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_hold_guard_successor.json',dict(proofs=proofs,observed_v1_semantic_gap='work/analysis/lil_B211_hold_aggregate_probe_v6581b/semantic_hold_count_gap_in_memory_only.json',all_prose_compiled_target_bytes_native_addresses_and_earlier_evidence_unchanged=True,only_pre_mutation_evidence_consistency_guards_added=True,original_compiler_positive_proof_and_probe_preserved=True,full_goal_complete=False))

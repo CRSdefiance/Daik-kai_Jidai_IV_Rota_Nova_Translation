@@ -6,8 +6,10 @@ from pathlib import Path
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
 
+from historical_fixture_support import historical_rom
 
-CANDIDATE = Path("out/all_routes_unified_v5_candidate.nds")
+
+CANDIDATE = historical_rom("all_routes_unified_v5_candidate")
 
 
 def _record(file_path: str, block: int, record: int) -> bytes:

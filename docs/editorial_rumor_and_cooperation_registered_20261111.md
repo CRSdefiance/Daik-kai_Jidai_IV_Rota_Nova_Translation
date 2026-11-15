@@ -1,0 +1,7 @@
+# Rumor and cooperation exchanges registered
+
+The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews. The eight original tables distinguish reactions to reports, false-document responses, and each counter-rumor voice. The ten direct records preserve the original patron, town representative and trader consumers. The trader’s two-argument offer keeps fee before faction. [Release and patch](../releases/all_routes_editorial_20261111_rumor_and_cooperation_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_rumor_and_cooperation_candidate/verification/registered_review.json)
+
+The two focused emulator runs observed 2802, 2803 and 2805, including the real 9,752-gold string and both returns to the inn. They initialized original deferred-letter slots and used the original handlers. The quote run also initialized one experience word. The other 41 records, including the separate rival-share quote and the counter-rumor variants, were checked offline. Hardware and natural letter activation remain unvisited.
+
+Continue the earlier submission responses around 2757–2769 and their surrounding branches. The [source review](../translations/editorial_checkpoints/SharedText_20261110_v1/rumor_and_cooperation_context_v1.json) preserves those neighbors and the already credited notices without duplicating credit. Keep the open item-card prose, Options and Market callers, artwork and older-record technical re-audit in scope as recorded.

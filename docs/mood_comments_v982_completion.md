@@ -1,0 +1,20 @@
+# V982: mood and panic editorial completion
+
+V982 completes39 independent mood0/4/5 comments1833-1871 in registered V981:25 revisions and14 retentions. All225 original selections,75 physical-priority controls,72 defined normal-mood controls,78 complete font cases (76 exact originals plus2 fresh self-talk cases),7336 full copies and178 cache sequences pass. Twelve active-widget bitmap/RGB holds verify complete I1835/1845,19cell quoted self-talk and aligned35cell reply1853,pure silent1855,personal self-calming1868 and six comic symbols1871. Six normal returns and26 offline corruption controls pass. Disclosed room assignments follow observed combat0/1;only one mood byte7 changes after Deck opens,with physical health0 and identities preserved. Seven startup/New Game captures and title match V975. Exact clean-input patch preserves471 batches,114 layers,3629 unselected strings,all graphics/routes/native code,single8KiB cache,216x36 crop,opaque spans and123040 staged bytes.1157 entries complete (864 revised/293 retained),1160 source/prose reviewed. Older750-752,remaining activity/special comments1872-1888,raw abandon-caption0x134E54,remaining shared/routes/player prose/raw inventory,separate graphics/all18 plaques,Samwell header and later older-record re-audit remain open;canonical not promoted;full goal active.
+
+## Source and English
+
+Twenty-five revisions and fourteen justified retentions cover39 independent alternatives. Mood0 is positive,4 dejected,5 panicked;physical health0 is required. Original health1 preempts mood. Full separate1843/1844 and1855/1856 restore words previously split across unrelated choices.1855 is source silence only;1871 remains nonverbal comic symbols without invented profanity.1868/1870 are personal self-calming. ASCII I1845/1846/1858 replaces obsolete full-width guards. Source/gloss/context,natural American English and five v2 editorial gates are recorded for every entry.
+
+## Formatting and actual evidence
+
+All39 whole-font previews pass. Two fresh original-consumer font executions refine1853 to a19cell quote and35cell complete reply;76 byte-identical cases retain their hash-checked original evidence. All lines start at x0 without authored padding or manual breaks. Dedicated native QA has zero blocking errors and unwaived warnings;the general story audit rejects this distinct COMMON format and is not claimed as passing. Retained1854/1865 have opaque punctuation after their NULs;their entire copy spans remain exact. No repacker assertion was relaxed.
+
+Six separate V981 fresh cold boots:mood0 Camille9 ID1835 and Sera24 ASCII-I1845;mood4 Carlo19 quoted self-talk1853 (19cell quote,35cell aligned reply) and genuine captain1 pure silence1855;mood5 genuine captain1 personal self-calming1868 and Sera24 six comic symbols1871. Two complete native bitmap/actual RGB holds and normal return per case. Disclosed room assignment follows observed original combat0/1;one mood byte7 is inserted after Deck opens with physical health0 and all other RAM exact. Two coordinate approaches remain. No savestate,actor/captain identity or battle-mode/outcome/text/code injection,earned mood/recruitment/refit,full-route or hardware claim. Other33 entries have complete source/native font evidence,not individual actual visits.
+
+## Registered release
+
+Profile all-routes-unified-v981 rebuilds471 batches and114 accepted layers from canonical out/raphael_natural_v2_accepted_base.nds,SHA2563cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe. Only /COMMON/MESFILE.DK4 and ARM9 selection metadata differ from V975. Every other ROM file,route,graphic,HELP,ARM7,overlay,native code/cache/section/BSS/arena and123040 staged bytes is exact. The xdelta reconstructs all bytes from clean Japanese SHA256f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d. Canonical promotion awaits explicit user acceptance.
+
+ROM SHA256 fa5656c1d0a234d5626c2eb917d9f29a1d4a48cfdaeba5900cff3a71c3def01b
+Patch SHA256 77aedd3e01bf8c1ffd7e626fa8a27bb24185bb00c285db78633b16ecec08b6d1

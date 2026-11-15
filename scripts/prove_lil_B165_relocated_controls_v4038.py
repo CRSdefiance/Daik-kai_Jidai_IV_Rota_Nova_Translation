@@ -1,0 +1,24 @@
+"""Bind24 relocated progressive consumers,five original queries and12 source-exact leaves."""
+from pathlib import Path
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.current_common_native_context_v2677 import CurrentContext
+from scripts import prove_lil_shrines_temples_controls_v3168c as dispatch_base
+from scripts.prove_lil_B139_B140_conditionals_v3461c import probe
+from scripts.prepare_lil_B165_research_v4034 import ROM,PARENT,PLAN
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B165_relocated_controls_v4038')
+DOC=Path('translations/lil_B165_editorial_manuscript_v6.json')
+if __name__=='__main__':
+    assert not ROOT.exists();doc,plan=map(read,[DOC,PLAN]);packet=read(doc['source_context']);dp=read(doc['control_contract']);cp=read(doc['source_effect_and_predicate_contract']);oldbank,newbank=[IlnkContainer.parse(NdsImage.open(p).read_file('/data/SC2.DK4')).blocks for p in [PARENT,ROM]];assert sha(PARENT.read_bytes())==doc['current_ROM_sha256']==plan['candidate_sha256'];namespace={**dispatch_base.__dict__,'SOURCE':Path(doc['source_context']),'CATALOG_LOOKUP':{}}
+    for name,text in dp['source_owned_adapters'].items():exec(compile(text,__file__+'::'+name,'exec'),namespace)
+    namespace['CATALOG_LOOKUP'],binding=namespace['bind_current_catalog'](NdsImage.open(ROM));ROOT.mkdir(parents=True);ctx=CurrentContext(dp['native_input'],packet['historical_snapshot_ROM'],ROOT/'current_context');rows={r['id']:r for r in doc['records']};dispatches=[];leaves=[];predicates=[];assert len(plan['blocks'])==1;b=plan['blocks'][0];old,new=oldbank[165],newbank[165];assert sha(new)==b['research_block_sha256'] and sha(old)==b['source_block_sha256']
+    for r in b['text_records']:
+        value=bytes.fromhex(r['target_hex']);assert new[r['new_offset']:r['new_offset']+len(value)]==value;result=ctx.execute(namespace['dispatch'],value[0],value[1:]);ctx.machines.pop();assert result['resolved_actor_ID']==rows[r['id']]['source_selector'] and result['registered_catalog_match'] is None and result['boundaries'][1]['text_hex']==value[1:].replace(b'FI',b'Lil').replace(b'FA',b'Argot').replace(b'FO',b'Argot Co.').hex();dispatches.append(dict(id=r['id'],block=165,new_offset=r['new_offset'],stored_target_hex=value.hex(),**result))
+    for c in b['command_map']:
+        if c['word'] in [0x4000,0x100,0x200,0x300,0x400]:continue
+        previous=old[c['old_offset']:c['old_offset']+c['old_extent']];value=new[c['new_offset']:c['new_offset']+c['new_extent']];assert previous==value;leaves.append(dict(block=165,word=c['word'],old_offset=c['old_offset'],new_offset=c['new_offset'],source_current_target_hex=value.hex()))
+        if c['word']==0x8000:
+            command=dict(offset=c['new_offset'],word=c['word'],native_extent=c['new_extent'],whole_command_hex=value.hex());result=ctx.execute(probe,new,command);ctx.machines.pop();before=next(p for p in cp['source_predicate_cases'] if p['offset']==c['old_offset']);assert result['native_result']==before['native_result'] and result['original_event_completion_calls']==before['original_event_completion_calls'];predicates.append(dict(block=165,current_source_case=before,relocated_case=result))
+    assert len(dispatches)==24 and len(leaves)==12 and len(predicates)==5 and not ctx.machines;assert sum(c['word']==0xA000 for c in leaves)==1 and sum(c['word']==0x6329 for c in leaves)==1 and sum(c['word']==0 for c in leaves)==1;paths=[DOC,PLAN,Path(doc['control_contract']),Path(doc['source_effect_and_predicate_contract']),Path(__file__)];save(ROOT/'all24_dispatches_five_Camille_predicate_pairs_and12_source_exact_leaves.json',dict(candidate=str(PARENT),candidate_sha256=sha(PARENT.read_bytes()),research_ROM=str(ROM),research_ROM_sha256=sha(ROM.read_bytes()),manuscript=str(DOC),manuscript_sha256=sha(DOC.read_bytes()),source_relocation_plan=str(PLAN),source_relocation_plan_sha256=sha(PLAN.read_bytes()),relocated_dispatch_cases=dispatches,relocated_predicate_pairs=predicates,all12_source_current_target_nonrelative_nonspeech_leaves=leaves,all24_progressive_consumers_three_static_actors_FI3_exact=True,all_five_unforced_Camille_results_match_source_without_roster_fixture=True,all10_resource_boundary_cases_reused_by_exact_word_runtime_and_dispatch=True,resource_presentation_and_A000_bodies_not_fully_executed_by_this_probe=True,registered_catalog_binding=binding,native_context_plan=str(ctx.proof_path),native_context_plan_sha256=sha(ctx.proof_path.read_bytes()),evidence={str(p):sha(p.read_bytes()) for p in paths},actual_selected_B165_IDs=[],new_emulator_runs=0,no_ROM_registry_ledger_orcompletion_change=True,full_goal_complete=False));print('24 relocated speakers/FI3,five unforced source-matched Camille queries and12 exact leaves pass;actual display remains separate.')

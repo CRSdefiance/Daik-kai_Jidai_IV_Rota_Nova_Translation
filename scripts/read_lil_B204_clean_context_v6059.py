@@ -1,0 +1,53 @@
+"""Read the complete clean castle/shachihoko/letter exchange before older English."""
+from copy import deepcopy
+from collections import Counter
+from pathlib import Path
+import struct
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B204_clean_context_v6059')
+SOURCE=Path('work/analysis/lil_B204_clean_inventory_v6058/all_clean_B204_speeches_before_predecessor_comparison.json')
+GLOSSES={
+5:('I am bored,so perhaps I will go somewhere.','0B proposes going out because of boredom. Preserve the casual restless voice and prospective outing;do not invent a mission,orders or an already completed visit.'),
+9:('Ma\'am,is there anywhere interesting around here? I would like a walk to relieve my boredom.','0B addresses91 as おばさん and asks about local attractions. This familiar address does not establish an aunt or other kinship. Keep the question,local area and boredom motive without inventing age beyond the actual label or a relationship.'),
+13:('Let me see...if you go east,there is our lord\'s castle.','91 offers a suggestion and gives the explicit east direction. お殿様 is a lord in this statement,not proof of a king,emperor,named historical ruler or a specific castle. The actual source name/role fields remain unbound.'),
+16:('An o-shiro...? Ah,a castle! That sounds good;perhaps I will go see a castle in this country.','0B moves from お城 to the loanword キャッスル,showing a moment of recognition across languages. Final localization must convey that recognition naturally rather than repeat castle as if it were two different English words. Preserve the cheerful decision to visit and the this-country reference without inventing a language lesson or a named castle.'),
+19:('Jam! Where have you been?!','02 is exasperated and calls0B ジャム. Preserve the return after the outing and her demand to know where he has been. Bind the approved first/full name before final prose;do not infer a family or romantic relationship.'),
+22:('Sorry,sorry. This thing is heavy,you see.','0B casually apologizes and offers the weight of the carried object as an excuse. Do not name it before Lil asks,claim an injury or invent the time/distance spent carrying it.'),
+25:('What is that? Where did you find it?','02 asks both identity and origin. Keep both questions;this is not her approval of ownership or an accusation already resolved.'),
+29:('Can\'t you tell by looking? It is a figurehead! Genuine,made in Japan!','0B confidently identifies the object as a figurehead and boasts emphatically that it is made in Japan. Preserve the showy メイド・イン・ジャパーン performance and explicit Japan reference. His confident account must remain a character claim rather than an objective explanation that erases the later cultural misunderstanding.'),
+33:('The people in this country seem not to know how to use figureheads,so I went and taught them. Then they gave me this as thanks.','0B claims he taught the locals to use figureheads and received the object as a thank-you gift. Preserve that claim and its self-satisfaction. The later cutaway and letter expose the contradiction;do not quietly rewrite this as an honest purchase or state the claimed gift as independently confirmed fact.'),
+36:('Well,as long as you did not steal it... We are leaving soon,so hurry and get ready.','02 conditionally accepts the explanation while explicitly raising theft. Preserve her qualification and impending departure order,not certainty that the object was legitimately given or an invented plan to return it.'),
+40:('Yes,all right. Give me a moment.','0B agrees to get ready and asks her to wait briefly. Keep the casual compliance without inventing a departure already completed or a destination.'),
+45:('M-my lord! My lo-o-ord! Something terrible has happened!','7C urgently calls to a lord,with a stammer and drawn-out second call. Preserve the panic and deferential register;do not invent a specific guard rank,royal title or named ruler before binding actual source actors.'),
+48:('What is it?! You are making a racket first thing in the morning.','82 replies in an archaic authoritative voice and complains about the early-morning noise. Preserve the morning fact and irritation,without inventing that the lord was asleep or using a king/emperor title.'),
+52:('Th-the shachihoko is gone,and th-this letter in foreign writing...!','7C reports the missing シャチホコ and a letter in 南蛮文字. Keep the culturally specific object pending clean item/current widget binding and preserve the period foreign-writing context. Do not invent an exact alphabet,language,nationality of the retainer or physical contents he has already translated.'),
+55:('W-what? The shachihoko has disappeared?! That is a disaster! Find that thief,no matter what it takes!','82 is shocked and orders a determined search for the thief. Theft is explicit in 盗人 here;do not inherit an earlier scene policy that forbade assuming theft where it was unstated. Keep the order prospective and do not invent an arrest,death threat,punishment or successful pursuit.'),
+58:('As you command!','7C gives a strongly deferential acknowledgment. It is not an independent report that the thief has been found. Bind the actual actor and role without inventing a military rank or a family relationship.'),
+62:('To the dear Japanese lord,','FE begins a letter with 親愛なる日本の領主殿へ. Preserve the salutation and explicit Japanese addressee without inventing a name,emperor,kingship or a ruler of all Japan. This is a letter consumer,not82 or7C speaking aloud.'),
+66:('Those statues are called figureheads. They are for decorating ships,not castles. I suppose the information must have reached you only halfway.','The letter writer confidently corrects the recipient about how to use the statues. The comedy depends on this self-serving or mistaken interpretation of the Japanese object. Preserve the ship/castle contrast and tentative supposition about incomplete transmission;do not turn it into objective narrator truth or add a cultural explanation the writer does not give.'),
+69:('Oh,no thanks are necessary. Instead,I will take one of your spares. One figurehead per ship. You should remember that.','The letter writer dismisses thanks and announces taking one so-called spare in exchange for the advice. Preserve this presumptuous unilateral taking,the one-per-ship rule he asserts and the patronizing reminder. Do not add permission,payment,a legitimate gift,an exact number of statues at the castle or a successful escape.'),
+72:('Well,take care. [Signature:ジャム・ジャック・ルドワイヤン]','FE closes the letter casually and includes the full source signature. Preserve the sign-off and all three source name components,then bind approved English spelling through actual name consumers before target prose. The Japanese signature indentation is evidence of letter staging,not authorization for authored alignment spaces or early English breaks.')}
+if __name__=='__main__':
+    assert not ROOT.exists();d=read(SOURCE);b=bytes.fromhex(d['clean_block_hex']);end=8+struct.unpack_from('<H',b,4)[0]
+    assert d['read_no_predecessor_English'] and len(d['records'])==20 and len(d['commands'])==26 and len(b)==end==1312 and b[end:]==b''
+    assert set(GLOSSES)=={r['source_record_index'] for r in d['records']} and Counter(r['source_selector'] for r in d['records'])=={11:7,145:1,2:3,124:3,130:2,254:4}
+    assert d['typed_choice_or_actor_style_commands']==[]
+    macros={m:sum(bytes.fromhex(r['source_hex'])[1:].count(m.encode()) for r in d['records']) for m in ['FI','FA','FO']};assert macros=={'FI':0,'FA':0,'FO':0}
+    leaves=[(c['offset'],c['whole_command_hex']) for c in d['commands'] if c['word']!=0x4000]
+    assert leaves==[(256,'0143'),(258,'8143'),(342,'354874a8'),(694,'3547'),(696,'00a0ffff01007430'),(1308,'00000000')]
+    rows=[]
+    for r in d['records']:
+        row=deepcopy(r);row.update(zip(['fresh_source_gloss','whole_exchange_note'],GLOSSES[r['source_record_index']]));rows.append(row)
+    ROOT.mkdir(parents=True)
+    save(ROOT/'all20_clean_castle_figurehead_claim_missing_shachihoko_and_letter_glosses.json',dict(source=str(SOURCE),source_sha256=sha(SOURCE.read_bytes()),file_path='/data/SC2.DK4',block=204,records=rows,source_stored_bytes=1312,source_logical_end=1312,source_tailzeros=0,source_commands=26,source_selector_counts={'11':7,'145':1,'2':3,'124':3,'130':2,'254':4},source_macros=macros,
+        whole_exchange_progression='0B is bored and asks91 for a place to walk.91 suggests a castle to the east;0B recognizes the Japanese castle term through a loanword and goes to look.02 later demands to know where0B has been.0B apologizes over a heavy object,identifies it as a made-in-Japan figurehead and claims it was given as thanks for teaching locals its use.02 accepts only if it was not stolen and tells him to prepare to leave. A cutaway has7C urgently report a missing shachihoko and foreign-script letter to82.82 complains about morning noise,then calls the disappearance a disaster and orders the thief found;7C acknowledges. Four FE letter objects address the Japanese lord,confidently prescribe ship rather than castle use,announce taking one so-called spare instead of thanks,prescribe one per ship,and close with the full0B signature. The conflicting gift claim,missing object,thief accusation and unilateral taking are the comic payoff.',
+        source_has_two_scene_situations_and_four_FE_letter_objects=True,source_ordinary_speeches=16,source_FE_letter_objects=4,
+        source_signature='ジャム・ジャック・ルドワイヤン',signature_approved_English_spelling_pending=True,
+        source_cultural_object='シャチホコ',source_foreign_writing_term='南蛮文字',source_made_in_Japan_phrase='メイド・イン・ジャパーン',
+        no_aunt_relationship_king_emperor_named_castle_specific_language_rank_or_confirmed_legitimate_gift_invented=True,
+        explicit_thief_accusation_and_claimed_gift_contradiction_must_be_preserved=True,
+        six_exact_nonspeech_leaves_preserved_not_full_transition_picture_acquisition_or_return_semantics=True,complete_end_word_offset=1308,
+        actual_source_entry_scenes_names_roles_voices_item_identity_letter_consumers_and_effects_pending=True,
+        no_source_prose_editorial_gates_or_completion_credit_yet=True,prior_English_speech_unread=True,new_ROMs=0,new_emulator_runs=0,new_review_credit=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+    print('B20420 clean-first glosses:outing/castle recognition,claimed figurehead gift,explicit thief accusation and four-part foreign-script letter. Names/item/letter display unbound;no older English or credit.')

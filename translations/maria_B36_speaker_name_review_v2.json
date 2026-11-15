@@ -1,0 +1,3370 @@
+{
+  "format": "dk4-contextual-speaker-name-review-v1",
+  "records": [
+    {
+      "actor_ID": 2,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain Lil Argot: the clean リル/アーゴット fields and both original getters support it, and the body identifies her by that name and company. The source explicitly uses admiral/head of the company; no additional rank, relationship or biography is added.",
+      "clean_current_static_fields": {
+        "actor_ID": 2,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182656,
+                "table_field_hex": "70b91502",
+                "pointer": 34978160,
+                "offset": 1423728,
+                "hex": "838a838b",
+                "text": "リル",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182660,
+                "table_field_hex": "98cc1502",
+                "pointer": 34983064,
+                "offset": 1428632,
+                "hex": "8341815b835383628367",
+                "text": "アーゴット",
+                "byte_length": 10,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182664,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182656,
+                "table_field_hex": "70b91502",
+                "pointer": 34978160,
+                "offset": 1423728,
+                "hex": "4c696c",
+                "text": "Lil",
+                "byte_length": 3,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182660,
+                "table_field_hex": "98cc1502",
+                "pointer": 34983064,
+                "offset": 1428632,
+                "hex": "4172676f74",
+                "text": "Argot",
+                "byte_length": 5,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182664,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 2,
+          "actor_object": 36520836,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Lil Argot",
+          "text_hex": "4c696c204172676f74",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 108
+            },
+            {
+              "PC": 34401728,
+              "address": 36325115,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325115,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 65
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 103
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 111
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 116
+            },
+            {
+              "PC": 34401680,
+              "address": 36325121,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 2,
+          "actor_object": 36520836,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Lil Argot",
+          "text_hex": "4c696c204172676f74",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 108
+            },
+            {
+              "PC": 34401728,
+              "address": 36325115,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325115,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 65
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 103
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 111
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 116
+            },
+            {
+              "PC": 34401680,
+              "address": 36325121,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0005"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0019"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0027"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0031"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0037"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0041"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0049"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0056"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": false,
+      "new_credit": 0,
+      "actual_source_English_complete_header_observations": [
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4280,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004280_cold_boot.png",
+            "sha256": "67b39c81999712407c6b76bf4708fcd1789f351c1e0d35abacaca7c53ed6a994",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4340,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004340_cold_boot.png",
+            "sha256": "67b39c81999712407c6b76bf4708fcd1789f351c1e0d35abacaca7c53ed6a994",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4400,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004400_cold_boot.png",
+            "sha256": "67b39c81999712407c6b76bf4708fcd1789f351c1e0d35abacaca7c53ed6a994",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4460,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004460_cold_boot.png",
+            "sha256": "bdc68a947e44d5f35f7f2815998b570bc0f3cb203a70f3b8ef7920d2e4bb835d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4520,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004520_cold_boot.png",
+            "sha256": "bdc68a947e44d5f35f7f2815998b570bc0f3cb203a70f3b8ef7920d2e4bb835d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4580,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004580_cold_boot.png",
+            "sha256": "bdc68a947e44d5f35f7f2815998b570bc0f3cb203a70f3b8ef7920d2e4bb835d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5360,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005360_cold_boot.png",
+            "sha256": "9bed0aad771d6665bc528e9688686ec99695dd7d1f3fba8298288f35bc9eaf84",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5420,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005420_cold_boot.png",
+            "sha256": "9bed0aad771d6665bc528e9688686ec99695dd7d1f3fba8298288f35bc9eaf84",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5480,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005480_cold_boot.png",
+            "sha256": "9a04d06e28942026fd8cbfeb8439f8a94d36a7b76128d160f248483c0b8cd979",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5540,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005540_cold_boot.png",
+            "sha256": "9a04d06e28942026fd8cbfeb8439f8a94d36a7b76128d160f248483c0b8cd979",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5840,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005840_cold_boot.png",
+            "sha256": "c3f9e2324959bb24395e83aa125eefaf55ded51af2acb0249e48fcbfbc9cd22c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5900,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005900_cold_boot.png",
+            "sha256": "c3f9e2324959bb24395e83aa125eefaf55ded51af2acb0249e48fcbfbc9cd22c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5960,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005960_cold_boot.png",
+            "sha256": "c3f9e2324959bb24395e83aa125eefaf55ded51af2acb0249e48fcbfbc9cd22c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 6020,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006020_cold_boot.png",
+            "sha256": "2286ff91253be1fd2182058b332a09035e77ffb00cf7f07d86aede17ced701ca",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6080,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006080_cold_boot.png",
+            "sha256": "9a21d120da4bc624872782b3854e0e5394cb7757f47e334c0d938917b83f8bf8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6140,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006140_cold_boot.png",
+            "sha256": "9a21d120da4bc624872782b3854e0e5394cb7757f47e334c0d938917b83f8bf8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6200,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006200_cold_boot.png",
+            "sha256": "9a21d120da4bc624872782b3854e0e5394cb7757f47e334c0d938917b83f8bf8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6260,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006260_cold_boot.png",
+            "sha256": "7de63b7a1c49a69d7d75a9b6dc1805a785bafc6ef024347644d31f4e7fa242c4",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6560,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006560_cold_boot.png",
+            "sha256": "791ed2c90b628eff781db9921553eef90c697ffa800fee6a16ccf8e7537eca5c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6620,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006620_cold_boot.png",
+            "sha256": "791ed2c90b628eff781db9921553eef90c697ffa800fee6a16ccf8e7537eca5c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6680,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006680_cold_boot.png",
+            "sha256": "791ed2c90b628eff781db9921553eef90c697ffa800fee6a16ccf8e7537eca5c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6740,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006740_cold_boot.png",
+            "sha256": "24719b2df37d543d92f31a910f2adfd15e2e3b885e64b65d94fa789fa5777c3b",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6800,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006800_cold_boot.png",
+            "sha256": "afd6c0efa5804d0add15aee2c557ca94e33ed14a30b032b621b02f2ff57f6d47",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6860,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006860_cold_boot.png",
+            "sha256": "afd6c0efa5804d0add15aee2c557ca94e33ed14a30b032b621b02f2ff57f6d47",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6920,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006920_cold_boot.png",
+            "sha256": "52b51363e1267663a0ed2b1d940aa7624d68ced4b2765157d566d8a790dbb73a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6980,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006980_cold_boot.png",
+            "sha256": "52b51363e1267663a0ed2b1d940aa7624d68ced4b2765157d566d8a790dbb73a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7280,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007280_cold_boot.png",
+            "sha256": "5486dd5a3d18ce99927c6b8a9015c08999d07bd80d09d4a165478e222d76cbd3",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7340,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007340_cold_boot.png",
+            "sha256": "5486dd5a3d18ce99927c6b8a9015c08999d07bd80d09d4a165478e222d76cbd3",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7400,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007400_cold_boot.png",
+            "sha256": "5486dd5a3d18ce99927c6b8a9015c08999d07bd80d09d4a165478e222d76cbd3",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7460,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007460_cold_boot.png",
+            "sha256": "dedeb33a6b6f8f43e561b9275ccd08471e684d1ce7bd0b36ddcc25ff12af9a1c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7760,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007760_cold_boot.png",
+            "sha256": "c244874962128d2eb84f98b7fc39c6bbecc3ddb0f7658387c47cfa68a30091e7",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7820,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007820_cold_boot.png",
+            "sha256": "c244874962128d2eb84f98b7fc39c6bbecc3ddb0f7658387c47cfa68a30091e7",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7880,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007880_cold_boot.png",
+            "sha256": "afef9a16241023fc6cc933dba447e860c87bd9ee7c2b2d0333027b8a77a31633",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7940,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007940_cold_boot.png",
+            "sha256": "afef9a16241023fc6cc933dba447e860c87bd9ee7c2b2d0333027b8a77a31633",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4280,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004280_cold_boot.png",
+            "sha256": "7ab557b70ea9c1de3b0b88a1c07e42d74b4fc49efcf542ea11a60d336e66ac8f",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4340,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004340_cold_boot.png",
+            "sha256": "7ab557b70ea9c1de3b0b88a1c07e42d74b4fc49efcf542ea11a60d336e66ac8f",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4400,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004400_cold_boot.png",
+            "sha256": "7ab557b70ea9c1de3b0b88a1c07e42d74b4fc49efcf542ea11a60d336e66ac8f",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4460,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004460_cold_boot.png",
+            "sha256": "4df135cc461b9866ed685aeae9a05af7de15ae9139294e844b51d4cc001f914d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4520,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004520_cold_boot.png",
+            "sha256": "4df135cc461b9866ed685aeae9a05af7de15ae9139294e844b51d4cc001f914d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0005",
+          "page": 1,
+          "hold": {
+            "frame": 4580,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004580_cold_boot.png",
+            "sha256": "4df135cc461b9866ed685aeae9a05af7de15ae9139294e844b51d4cc001f914d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5360,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005360_cold_boot.png",
+            "sha256": "1e282d5f2c39186e520f568c5cc899b164eeec463e066f4bbd2cbe6ecb59f61e",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5420,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005420_cold_boot.png",
+            "sha256": "1e282d5f2c39186e520f568c5cc899b164eeec463e066f4bbd2cbe6ecb59f61e",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5480,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005480_cold_boot.png",
+            "sha256": "1e282d5f2c39186e520f568c5cc899b164eeec463e066f4bbd2cbe6ecb59f61e",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0019",
+          "page": 1,
+          "hold": {
+            "frame": 5540,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005540_cold_boot.png",
+            "sha256": "8c100aabd1bcfc3af864fc87b014d34bbf159cfd9f98066fee497fe5d3bd4402",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5840,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005840_cold_boot.png",
+            "sha256": "aaceb23dc81c5599955dd2fc15cfef391a845f6233b5b26b924bd405362fcbef",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5900,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005900_cold_boot.png",
+            "sha256": "aaceb23dc81c5599955dd2fc15cfef391a845f6233b5b26b924bd405362fcbef",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 5960,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005960_cold_boot.png",
+            "sha256": "aaceb23dc81c5599955dd2fc15cfef391a845f6233b5b26b924bd405362fcbef",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0027",
+          "page": 1,
+          "hold": {
+            "frame": 6020,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006020_cold_boot.png",
+            "sha256": "6fad84160b7f95c54cdc578050a33573c574a6cc45e816591ac0b3c65aaf6056",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6080,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006080_cold_boot.png",
+            "sha256": "377fd0914ebfd9c6c73485f419468c95e3fcb06fb15562e874c34286e1eb3d57",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6140,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006140_cold_boot.png",
+            "sha256": "377fd0914ebfd9c6c73485f419468c95e3fcb06fb15562e874c34286e1eb3d57",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6200,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006200_cold_boot.png",
+            "sha256": "377fd0914ebfd9c6c73485f419468c95e3fcb06fb15562e874c34286e1eb3d57",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0031",
+          "page": 1,
+          "hold": {
+            "frame": 6260,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006260_cold_boot.png",
+            "sha256": "9a83706be66dc37eeab302455570365d1241e68388f93a41c7f4e34a38d4573c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6560,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006560_cold_boot.png",
+            "sha256": "16477ec27b5a2ac84c83cb0f1493af5680ca3a513b316a532dbdad75dd91d23c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6620,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006620_cold_boot.png",
+            "sha256": "16477ec27b5a2ac84c83cb0f1493af5680ca3a513b316a532dbdad75dd91d23c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6680,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006680_cold_boot.png",
+            "sha256": "16477ec27b5a2ac84c83cb0f1493af5680ca3a513b316a532dbdad75dd91d23c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0037",
+          "page": 1,
+          "hold": {
+            "frame": 6740,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006740_cold_boot.png",
+            "sha256": "35710a5b395e12e21b523f9b4507645ed2aeee50cbe23a98d764542592d7fe01",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6800,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006800_cold_boot.png",
+            "sha256": "2a79a458b26dfbaad20f903032563a3b53be03eeb843767532f2d06fef55d9a0",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6860,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006860_cold_boot.png",
+            "sha256": "2a79a458b26dfbaad20f903032563a3b53be03eeb843767532f2d06fef55d9a0",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6920,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006920_cold_boot.png",
+            "sha256": "2a79a458b26dfbaad20f903032563a3b53be03eeb843767532f2d06fef55d9a0",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0041",
+          "page": 1,
+          "hold": {
+            "frame": 6980,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006980_cold_boot.png",
+            "sha256": "4fc94359a81d0500e6a577b399f5fdc957eab4c204dc6347753c832e4a20dc76",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7280,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007280_cold_boot.png",
+            "sha256": "b1f1290d1c2965f0f8ecb6e8532c27137ae761802983497a3fd930b688fa5c3a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7340,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007340_cold_boot.png",
+            "sha256": "b1f1290d1c2965f0f8ecb6e8532c27137ae761802983497a3fd930b688fa5c3a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7400,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007400_cold_boot.png",
+            "sha256": "b1f1290d1c2965f0f8ecb6e8532c27137ae761802983497a3fd930b688fa5c3a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0049",
+          "page": 1,
+          "hold": {
+            "frame": 7460,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007460_cold_boot.png",
+            "sha256": "6eb4783ffb1dd6b2f1cf844f24060baea99e31612267577802aff038fe88c54a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7760,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007760_cold_boot.png",
+            "sha256": "cc627d2970d95db0eabb2699e4f06bbf3a2e37a35db126b2e5110868478fd3c6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7820,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007820_cold_boot.png",
+            "sha256": "cc627d2970d95db0eabb2699e4f06bbf3a2e37a35db126b2e5110868478fd3c6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7880,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007880_cold_boot.png",
+            "sha256": "cc627d2970d95db0eabb2699e4f06bbf3a2e37a35db126b2e5110868478fd3c6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0056",
+          "page": 1,
+          "hold": {
+            "frame": 7940,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007940_cold_boot.png",
+            "sha256": "49d7675fa8c9a36111ef0410d4bf50e12421ba5dc63ba552c7eaf6c9a8db7bfc",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Lil Argot"
+          }
+        }
+      ],
+      "actual_initialized_fixture_header_seen": true,
+      "full_catalogue_UI_unvisited": true
+    },
+    {
+      "actor_ID": 3,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain approved Maria and surname Li in the nameplate, with existing full getter Maria Huamei Li. Keep runtime FI/FO in the dialogue; no fixed substitution or new rank is authored into her source name/company introduction.",
+      "clean_current_static_fields": {
+        "actor_ID": 3,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182688,
+                "table_field_hex": "30c01502",
+                "pointer": 34979888,
+                "offset": 1425456,
+                "hex": "837d838a8341",
+                "text": "マリア",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182692,
+                "table_field_hex": "b8ba1502",
+                "pointer": 34978488,
+                "offset": 1424056,
+                "hex": "838a815b",
+                "text": "リー",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182696,
+                "table_field_hex": "f4c11502",
+                "pointer": 34980340,
+                "offset": 1425908,
+                "hex": "837a834183818343",
+                "text": "ホアメイ",
+                "byte_length": 8,
+                "status": "printable-static-string"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182688,
+                "table_field_hex": "30c01502",
+                "pointer": 34979888,
+                "offset": 1425456,
+                "hex": "4d61726961",
+                "text": "Maria",
+                "byte_length": 5,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182692,
+                "table_field_hex": "b8ba1502",
+                "pointer": 34978488,
+                "offset": 1424056,
+                "hex": "4c69",
+                "text": "Li",
+                "byte_length": 2,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182696,
+                "table_field_hex": "f4c11502",
+                "pointer": 34980340,
+                "offset": 1425908,
+                "hex": "4875616d6569",
+                "text": "Huamei",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 3,
+          "actor_object": 36527396,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Maria Li",
+          "text_hex": "4d61726961204c69",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 77
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325116,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401728,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325118,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 3,
+          "actor_object": 36527396,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Maria Huamei Li",
+          "text_hex": "4d61726961204875616d6569204c69",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 77
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 114
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325116,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401728,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325118,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 72
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 117
+            },
+            {
+              "PC": 34401660,
+              "address": 36325120,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325121,
+              "size": 1,
+              "value": 109
+            },
+            {
+              "PC": 34401660,
+              "address": 36325122,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401660,
+              "address": 36325123,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325124,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325124,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325125,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325125,
+              "size": 1,
+              "value": 76
+            },
+            {
+              "PC": 34401660,
+              "address": 36325126,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401680,
+              "address": 36325127,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0012"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0016"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0023"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0034"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0045"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0052"
+        },
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0060"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": false,
+      "new_credit": 0,
+      "actual_source_English_complete_header_observations": [
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 4880,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004880_cold_boot.png",
+            "sha256": "7aaaeb47306f75967feab038251cc7ed71fbe9459e6c2b2264aa8969a166e504",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 4940,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004940_cold_boot.png",
+            "sha256": "7aaaeb47306f75967feab038251cc7ed71fbe9459e6c2b2264aa8969a166e504",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 5000,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005000_cold_boot.png",
+            "sha256": "7aaaeb47306f75967feab038251cc7ed71fbe9459e6c2b2264aa8969a166e504",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 5060,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005060_cold_boot.png",
+            "sha256": "2a953393afefceff35cbfe8f6580437811d64520623a43411d8235489c787b84",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5120,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005120_cold_boot.png",
+            "sha256": "527c53efd4df10dfb4b02ffc04064b125158ab79154ed48fdd1b5bf726984010",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5180,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005180_cold_boot.png",
+            "sha256": "527c53efd4df10dfb4b02ffc04064b125158ab79154ed48fdd1b5bf726984010",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5240,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005240_cold_boot.png",
+            "sha256": "527c53efd4df10dfb4b02ffc04064b125158ab79154ed48fdd1b5bf726984010",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5300,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005300_cold_boot.png",
+            "sha256": "8510887a6c133f3d306fa443b1204291bb751ccca8e1ec72b7082ceb5a7ce0b4",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5600,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005600_cold_boot.png",
+            "sha256": "fbe464da0bbbff9afa80b2cc4036683ea9610da5638902de068405180f9b76ac",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5660,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005660_cold_boot.png",
+            "sha256": "fbe464da0bbbff9afa80b2cc4036683ea9610da5638902de068405180f9b76ac",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5720,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005720_cold_boot.png",
+            "sha256": "fbe464da0bbbff9afa80b2cc4036683ea9610da5638902de068405180f9b76ac",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5780,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_005780_cold_boot.png",
+            "sha256": "dc25133455b2ffb82662997568d8c9cc096a0bc5d04c9ed0168340ac0e12a329",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6320,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006320_cold_boot.png",
+            "sha256": "1df4ff3094b3cdad91c12651d5165d1827767be6b70fc60ad6375d146fafaea8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6380,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006380_cold_boot.png",
+            "sha256": "1df4ff3094b3cdad91c12651d5165d1827767be6b70fc60ad6375d146fafaea8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6440,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006440_cold_boot.png",
+            "sha256": "1df4ff3094b3cdad91c12651d5165d1827767be6b70fc60ad6375d146fafaea8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6500,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_006500_cold_boot.png",
+            "sha256": "fc50a0c9c6a1e118550e2be4168934c7844092ecbd7fd9da20517e76ea3f8dfe",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7040,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007040_cold_boot.png",
+            "sha256": "e96db88724ec0f5211179a3eb9dadad28a2092a4e33cf7427dba0e6a73f4ac93",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7100,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007100_cold_boot.png",
+            "sha256": "e96db88724ec0f5211179a3eb9dadad28a2092a4e33cf7427dba0e6a73f4ac93",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7160,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007160_cold_boot.png",
+            "sha256": "e96db88724ec0f5211179a3eb9dadad28a2092a4e33cf7427dba0e6a73f4ac93",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7220,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007220_cold_boot.png",
+            "sha256": "70a385d6dade30dbe45b601a08ceb3ecafee7ad54002d436c6938420e28052f3",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7520,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007520_cold_boot.png",
+            "sha256": "cd21cbf2bcc7e1084bf1ee7619990f12f07097a91bf2ff266cc62eab6505f01b",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7580,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007580_cold_boot.png",
+            "sha256": "cd21cbf2bcc7e1084bf1ee7619990f12f07097a91bf2ff266cc62eab6505f01b",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7640,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007640_cold_boot.png",
+            "sha256": "cd21cbf2bcc7e1084bf1ee7619990f12f07097a91bf2ff266cc62eab6505f01b",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7700,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_007700_cold_boot.png",
+            "sha256": "0bc0ed84e8501e4d316309e2215bc89846efe74ea274bbfba26b79384f71fa26",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8000,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_008000_cold_boot.png",
+            "sha256": "7440eb15a426e91ea54d0a889d9d82328db12b3b1f21655a765f6036832f72be",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8060,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_008060_cold_boot.png",
+            "sha256": "7440eb15a426e91ea54d0a889d9d82328db12b3b1f21655a765f6036832f72be",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8120,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_008120_cold_boot.png",
+            "sha256": "7440eb15a426e91ea54d0a889d9d82328db12b3b1f21655a765f6036832f72be",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8180,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_008180_cold_boot.png",
+            "sha256": "d627968827bdee7f8fcb5de03c75649e3223871e0598f898220918d1e36d312a",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 4880,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004880_cold_boot.png",
+            "sha256": "dbb8a0ace576581badb4642bd641d60ec132dfbc237548062988a63437aa3c44",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 4940,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004940_cold_boot.png",
+            "sha256": "dbb8a0ace576581badb4642bd641d60ec132dfbc237548062988a63437aa3c44",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 5000,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005000_cold_boot.png",
+            "sha256": "dbb8a0ace576581badb4642bd641d60ec132dfbc237548062988a63437aa3c44",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0012",
+          "page": 1,
+          "hold": {
+            "frame": 5060,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005060_cold_boot.png",
+            "sha256": "21cbe4203d965d9d9243ec25a41f576b120db7e34931c9b45d5d108c76d4f721",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5120,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005120_cold_boot.png",
+            "sha256": "3f41f55a3b1193899659b7fdc27d4f82bb336f68bf04595eb1f07c0d5fc957b6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5180,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005180_cold_boot.png",
+            "sha256": "3f41f55a3b1193899659b7fdc27d4f82bb336f68bf04595eb1f07c0d5fc957b6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5240,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005240_cold_boot.png",
+            "sha256": "3f41f55a3b1193899659b7fdc27d4f82bb336f68bf04595eb1f07c0d5fc957b6",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0016",
+          "page": 1,
+          "hold": {
+            "frame": 5300,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005300_cold_boot.png",
+            "sha256": "7fbd8da6372a2dfa5455f798e0761ceefb1ae140f521791071873e6fd50b351b",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5600,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005600_cold_boot.png",
+            "sha256": "4a8cf63450ce57399971b50393e702ebd3946c73b36e246df1c20630d76b1c97",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5660,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005660_cold_boot.png",
+            "sha256": "4a8cf63450ce57399971b50393e702ebd3946c73b36e246df1c20630d76b1c97",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5720,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005720_cold_boot.png",
+            "sha256": "9511f96c03771ea1367cf04e845bf3e94bdd1739edc2cec415dfd6aef3a3038d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0023",
+          "page": 1,
+          "hold": {
+            "frame": 5780,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_005780_cold_boot.png",
+            "sha256": "9511f96c03771ea1367cf04e845bf3e94bdd1739edc2cec415dfd6aef3a3038d",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6320,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006320_cold_boot.png",
+            "sha256": "6ff027ff7c3e185738a2b9076aa41db65f742f6999f099b9faef0a69538f9c9c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6380,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006380_cold_boot.png",
+            "sha256": "6ff027ff7c3e185738a2b9076aa41db65f742f6999f099b9faef0a69538f9c9c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6440,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006440_cold_boot.png",
+            "sha256": "6ff027ff7c3e185738a2b9076aa41db65f742f6999f099b9faef0a69538f9c9c",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0034",
+          "page": 1,
+          "hold": {
+            "frame": 6500,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_006500_cold_boot.png",
+            "sha256": "94e173ec437aee2fba88e289aac2583728fb2c08263d65dd1ceca887cf39403e",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7040,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007040_cold_boot.png",
+            "sha256": "14c3fd4121be7f7b837c765ad16ff8bbed921fdedf4c84caafa1044694c47bad",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7100,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007100_cold_boot.png",
+            "sha256": "14c3fd4121be7f7b837c765ad16ff8bbed921fdedf4c84caafa1044694c47bad",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7160,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007160_cold_boot.png",
+            "sha256": "afd80ac194d89b052fea0ade37f2e9f366917105b63a42a5e83f42baed798ba8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0045",
+          "page": 1,
+          "hold": {
+            "frame": 7220,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007220_cold_boot.png",
+            "sha256": "afd80ac194d89b052fea0ade37f2e9f366917105b63a42a5e83f42baed798ba8",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7520,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007520_cold_boot.png",
+            "sha256": "fdcfa22af9c8efe5aec4e08a3a52fb397668c396f4abfee6d75e9b2de2fa3bbf",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7580,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007580_cold_boot.png",
+            "sha256": "fdcfa22af9c8efe5aec4e08a3a52fb397668c396f4abfee6d75e9b2de2fa3bbf",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7640,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007640_cold_boot.png",
+            "sha256": "fdcfa22af9c8efe5aec4e08a3a52fb397668c396f4abfee6d75e9b2de2fa3bbf",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0052",
+          "page": 1,
+          "hold": {
+            "frame": 7700,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_007700_cold_boot.png",
+            "sha256": "743123e5b010fe8f9f24e298976de527bc56258710f1ffb61f8fc477e22162de",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8000,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_008000_cold_boot.png",
+            "sha256": "3558269f8cfef426c6c64ea57dd902e2855eda210a6c0b8e4b25562737eee615",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8060,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_008060_cold_boot.png",
+            "sha256": "3558269f8cfef426c6c64ea57dd902e2855eda210a6c0b8e4b25562737eee615",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8120,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_008120_cold_boot.png",
+            "sha256": "3558269f8cfef426c6c64ea57dd902e2855eda210a6c0b8e4b25562737eee615",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0060",
+          "page": 1,
+          "hold": {
+            "frame": 8180,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_008180_cold_boot.png",
+            "sha256": "4d4f2b7bddc2a4e42c697370cc6a39f3b55203645dd3616d31e41d87bd8bfc00",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Maria Li"
+          }
+        }
+      ],
+      "actual_initialized_fixture_header_seen": true,
+      "full_catalogue_UI_unvisited": true
+    },
+    {
+      "actor_ID": 10,
+      "decision": "retention-in-this-exchange",
+      "reason": "Retain Xien Yan from the clean シエン/ヤン fields and both original getters. The source selector0A is Xien, not Camille09; the recognition line therefore gives no reason to invent Camille changing his earlier reluctance to meet Lil.",
+      "clean_current_static_fields": {
+        "actor_ID": 10,
+        "versions": [
+          {
+            "version": "clean-Japanese",
+            "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182912,
+                "table_field_hex": "88be1502",
+                "pointer": 34979464,
+                "offset": 1425032,
+                "hex": "835683478393",
+                "text": "シエン",
+                "byte_length": 6,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182916,
+                "table_field_hex": "38bb1502",
+                "pointer": 34978616,
+                "offset": 1424184,
+                "hex": "83848393",
+                "text": "ヤン",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182920,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          },
+          {
+            "version": "current-English-names-only",
+            "ARM9_sha256": "2b6aaaa499d634be9afc255d1c39b64ef0f578283c9768c525b31e34499abd0a",
+            "fields": [
+              {
+                "kind": "given-name-or-role",
+                "table_field": 1182912,
+                "table_field_hex": "88be1502",
+                "pointer": 34979464,
+                "offset": 1425032,
+                "hex": "5869656e",
+                "text": "Xien",
+                "byte_length": 4,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "surname",
+                "table_field": 1182916,
+                "table_field_hex": "38bb1502",
+                "pointer": 34978616,
+                "offset": 1424184,
+                "hex": "59616e",
+                "text": "Yan",
+                "byte_length": 3,
+                "status": "printable-static-string"
+              },
+              {
+                "kind": "middle-name",
+                "table_field": 1182920,
+                "table_field_hex": "00000000",
+                "pointer": 0,
+                "status": "outside-arm9-static-text"
+              }
+            ]
+          }
+        ]
+      },
+      "original_getters": [
+        {
+          "actor_ID": 10,
+          "actor_object": 36521092,
+          "consumer": "progressive-nameplate",
+          "getter": 34073992,
+          "pointer": 36325112,
+          "text": "Xien Yan",
+          "text_hex": "5869656e2059616e",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 88
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401728,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 89
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        },
+        {
+          "actor_ID": 10,
+          "actor_object": 36521092,
+          "consumer": "full-catalogue",
+          "getter": 34074068,
+          "pointer": 36325112,
+          "text": "Xien Yan",
+          "text_hex": "5869656e2059616e",
+          "ownership_mode": "original-owned-name-scratch-ring",
+          "original_scratch_rings": [
+            {
+              "owner": 36324588,
+              "counter_address": 36324596,
+              "source_index": 4,
+              "output_slot": 36325112
+            }
+          ],
+          "original_getter_writes": [
+            {
+              "PC": 34258956,
+              "address": 36324596,
+              "size": 4,
+              "value": 5
+            },
+            {
+              "PC": 34401708,
+              "address": 36325112,
+              "size": 1,
+              "value": 88
+            },
+            {
+              "PC": 34401708,
+              "address": 36325113,
+              "size": 1,
+              "value": 105
+            },
+            {
+              "PC": 34401708,
+              "address": 36325114,
+              "size": 1,
+              "value": 101
+            },
+            {
+              "PC": 34401708,
+              "address": 36325115,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401728,
+              "address": 36325116,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325116,
+              "size": 1,
+              "value": 32
+            },
+            {
+              "PC": 34401680,
+              "address": 36325117,
+              "size": 1,
+              "value": 0
+            },
+            {
+              "PC": 34401660,
+              "address": 36325117,
+              "size": 1,
+              "value": 89
+            },
+            {
+              "PC": 34401660,
+              "address": 36325118,
+              "size": 1,
+              "value": 97
+            },
+            {
+              "PC": 34401660,
+              "address": 36325119,
+              "size": 1,
+              "value": 110
+            },
+            {
+              "PC": 34401680,
+              "address": 36325120,
+              "size": 1,
+              "value": 0
+            }
+          ],
+          "all_actor_models_and_unowned4MiB_exact": true,
+          "source_owned_scratch_restoration_or_readonly_path_recovers_all4MiB": true
+        }
+      ],
+      "source_speech_keys": [
+        {
+          "file_path": "/data/SC3.DK4",
+          "id": "DK4_MES_B36_R0009"
+        }
+      ],
+      "name_asset_changed": false,
+      "actual_scene_headers_andfull_catalogue_UI_pending": false,
+      "new_credit": 0,
+      "actual_source_English_complete_header_observations": [
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4640,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004640_cold_boot.png",
+            "sha256": "a5167e984e28054bafafa776ee5fe5727d7592c558097c840f796e7b898d5161",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4700,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004700_cold_boot.png",
+            "sha256": "a5167e984e28054bafafa776ee5fe5727d7592c558097c840f796e7b898d5161",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4760,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004760_cold_boot.png",
+            "sha256": "a5167e984e28054bafafa776ee5fe5727d7592c558097c840f796e7b898d5161",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "clean_Japanese",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4820,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_clean_Japanese_v7809\\frame_004820_cold_boot.png",
+            "sha256": "9ee2a4a602a00da3ed717475d78055e087adbdbe033e21061075f2a6e85cf2cf",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4640,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004640_cold_boot.png",
+            "sha256": "43292386140921be3bedb4a8ee5eb7d22b1b76666d6eb72d1ebcda9decd64001",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4700,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004700_cold_boot.png",
+            "sha256": "43292386140921be3bedb4a8ee5eb7d22b1b76666d6eb72d1ebcda9decd64001",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4760,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004760_cold_boot.png",
+            "sha256": "43292386140921be3bedb4a8ee5eb7d22b1b76666d6eb72d1ebcda9decd64001",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        },
+        {
+          "block": 36,
+          "version": "English",
+          "id": "DK4_MES_B36_R0009",
+          "page": 1,
+          "hold": {
+            "frame": 4820,
+            "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\Maria_confrontation_B36_route3_English_v7809\\frame_004820_cold_boot.png",
+            "sha256": "b0bb6bfb11cdcd6d1ad3e621f60d4a01471b0963bd488389795f7d1599982910",
+            "native_page": 1,
+            "complete_black_body_mask_equal": true,
+            "ASCII_gray_equal": true,
+            "CP932_gray_equal": true,
+            "gray_required": true,
+            "complete_name_mask_equal": true,
+            "actual_name": "Xien Yan"
+          }
+        }
+      ],
+      "actual_initialized_fixture_header_seen": true,
+      "full_catalogue_UI_unvisited": true
+    }
+  ],
+  "native_name_macro_proof": "work\\analysis\\maria_confrontation_names_v7788\\three_static_speakers_six_getters_clean_fields_source_macros.json",
+  "native_name_macro_proof_sha256": "90a5a5457cc35b1191e023600300fbdf1bec4ff3cc59bc0c86a5b7ccfab6c744",
+  "three_scoped_retentions_not_full207_name_orother_consumer_approval": true,
+  "all207_name_role_alias_review_active": true,
+  "all_shared151_159_andother_prior_name_leads_preserved": true,
+  "new_credit": 0,
+  "full_goal_complete": false,
+  "previous_name_review": "translations\\maria_B36_speaker_name_review_v1.json",
+  "previous_name_review_sha256": "8c10252011a18fb11180b0706b76d13b1fdbaac45bf0a7dbe9aa56bbb1cbd4cc",
+  "actual_source_English_proof": "work\\analysis\\maria_confrontation_actual_v7811\\two_scene_captures_actual_pages_headers_branches_returns.json",
+  "actual_source_English_proof_sha256": "1999b9f2f52e645e463b4602fa75724fbdd8e39f4e4feac462149bca7bc28a83",
+  "all_three_selected_progressive_headers_actually_observed": true,
+  "full_catalogue_UI_unvisited": true,
+  "no_name_asset_edit_orfull207_shared_role_semantic_approval": true
+}

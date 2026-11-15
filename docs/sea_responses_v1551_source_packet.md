@@ -1,0 +1,5 @@
+# V1551 separate sea fear/awe packet
+
+Eight alternatives2209-2216 belong to table021186E0 and original6F66C/6F674/53D44/logical role7,parent53DB8/SP27C. All207 original actor choices and a CPU-only current role7 selection/loader/printf/macro/formatter probe pass. The snapshot is from the audited declaration run; it does not show this special-target event. Original branch ownership/target type,complete context/prose/native layout/registered integration and original gameplay remain pending.
+
+2209 incorrectly adds war to a Japanese expression of panic and fear about returning alive. Other lines express sea-related awe,surprise,monster imagery and doubt about winning. Do not merge these into the now-complete NPC war responses or invent a specific creature species. No new source/prose or completion credit. Counts1338 complete,1482 source/prose,144 reviewed-incomplete COMMON;full editorial/graphics goals active. Packet: `work\analysis\sea_responses_source_v1551\original_fear_awe_source_packet.json`.

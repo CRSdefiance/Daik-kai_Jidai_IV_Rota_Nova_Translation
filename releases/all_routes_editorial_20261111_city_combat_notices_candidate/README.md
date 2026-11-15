@@ -1,0 +1,9 @@
+# All Routes Combat and Fleet promotion candidate
+
+Cold-boot the [local candidate ROM](../../out/promotion_ready_20261111_combat_and_fleet/Translation_DS_All_Routes_Combat_and_Fleet_20261111_candidate.nds) with its [build manifest](../../out/promotion_ready_20261111_combat_and_fleet/Translation_DS_All_Routes_Combat_and_Fleet_20261111_candidate.manifest.json). The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 `3e89da6d0469ae7a9438db840640494ec16c21d57146f26f972e500d8e245c6f`. Patch SHA-256 `773558abc6216dc2901887b71433ebc8e8406e5cad21773cf552aa52e4e41339`.
+
+This build adds 115 reviews since Trade and Sailing, including 33 crew item-action replies, 47 fleet reports, and 35 city and combat notices. It includes Rafael’s tutorials, the Market Goods Info fix and the ASCII right-bound correction. V4701 remains main pending cold-boot acceptance. [Reconstruction](verification/promotion_reconstruction.json) · [Remaining work](verification/editorial_remaining_scope.json)
+
+All 35 city and combat notices are registered. The ledger now credits 27,261 reviews. The batch includes 21 revisions and 14 justified retentions. It covers city attacks and surrender, ship losses and captures, and the gold value of spoils. City and ship names stay together in the tested layouts. The spoils amount uses the same scoped digit rendering as the monthly fleet reports.
+
+The original Attack Town order and sailing controls produced the Hamburg report. The live replay observed COMMON 2614 and an original return to sailing. Other variants received offline native checks. All 80 portrait pages received visual review. Cold startup, 24 protected name getters, 34 targeted tests and 103 release checks passed. [Gameplay](verification/city_combat_notices_gameplay_verification.json) · [Exact records](verification/registered_review.json)

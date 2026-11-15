@@ -1,0 +1,33 @@
+"""Reuse exact Carlo inputs; freshly verify Trader and the separate regional literal."""
+from copy import deepcopy
+from pathlib import Path
+from PIL import Image,ImageDraw
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.square_shopkeeper_exact_native_context_v7020 import CurrentContext
+from scripts.generic_name_macro_owned_v5886b import expand
+from scripts.square_shopkeeper_name_style_v7020 import native_name_raster,style_source_proof
+from scripts.square_shopkeeper_font_oracles_v7020 import expected_pixels
+from scripts.prove_lil_B208_name_planes_v6405 import codes,original_name_events
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B234_name_planes_v7579');INPUT=Path('work/analysis/current_V7563_native_v7568/current_native_input.json');CURRENT=Path('work/analysis/lil_B234_consumers_v7575/eighteen_effective_bodies36_dispatches_two_actors_four_name_consumers.json');ITEM=Path('work/analysis/lil_B234_name_item_v7578/personal_Carlo_shared_Trader_regional_storage_alias_leads_anditem106_scope.json');PRIOR=Path('work/analysis/lil_B231_name_planes_v7482/two_actors_four_getters_six_literal_planes24_alignments.json')
+if __name__=='__main__':
+    assert not ROOT.exists();new,old,item=map(read,[CURRENT,PRIOR,ITEM]);previous=read(old['consumer_proof']);assert sha(Path(old['candidate']).read_bytes())==old['candidate_sha256'] and sha(Path(new['candidate']).read_bytes())==new['candidate_sha256'] and sha(Path(old['consumer_proof']).read_bytes())==old['consumer_proof_sha256'];before,current=[NdsImage.open(p) for p in [old['candidate'],new['candidate']]]
+    for p in ['/__arm9__.bin','/COMMON/MESFILE.DK4','/GRP/KANJI.FNT']:assert before.read_file(p)==current.read_file(p)
+    assert next(r for r in previous['source_name_fields'] if r['actor_ID']==19)==next(r for r in new['source_name_fields'] if r['actor_ID']==19)
+    forms=lambda d:{(r['actor_ID'],r['consumer']):(r['text'],r['text_hex']) for r in d['native_four_distinct_name_consumers']['rows'] if r['actor_ID']==19};assert forms(previous)==forms(new) and len(forms(new))==2
+    assert item['consumer_proof_sha256']==sha(CURRENT.read_bytes()) and item['actor104_regional_secondary_storage_contract']['current_literal']=='European'
+    ROOT.mkdir(parents=True);ctx=CurrentContext(INPUT,'unused-no-historical-ROM',ROOT/'current_context');rows=[];reused=fresh=0
+    for text,actor in [('Carlo Sinat',19),('Trader',104),('Carlo',19),('Sinat',19),('European',104)]:
+        raw=text.encode('ascii')
+        if actor==19:
+            row=deepcopy(next(r for r in old['name_planes'] if r['text']==text));assert row['actor_for_literal_pipeline']==19 and len(row['native_alignment']['cases'])==4 and all(c['output_hex']==raw.hex() for c in row['native_alignment']['cases']) and sha(Path(row['native_plane']).read_bytes())==row['native_plane_sha256'];row.update(proof_mode='exact-Carlo-native-font-input-reused',previous_name_font_proof=str(PRIOR),previous_name_font_proof_sha256=sha(PRIOR.read_bytes()));reused+=4
+        else:
+            alignment=ctx.execute(expand,raw,actor);ctx.machines.pop();assert len(alignment['cases'])==4 and all(v['output_hex']==raw.hex() for v in alignment['cases']);pixels,events,font=native_name_raster(ctx.arm,raw);assert pixels==expected_pixels(ctx.arm,font,events);emitted,flushes=original_name_events(events,raw);assert emitted==codes(raw) and all(e['y']==0 and 0<=e['x'] and e['x']+6<=216 for e in events);width=max(e['x']+6 for e in events if e['code']!=32);flush=max(e['x']+6 for e in events);assert width==len(raw)*6 and width<=flush<=216 and flush-width in [0,6]
+            plane=ROOT/(text+'_style11.bin');plane.write_bytes(pixels);picture=Image.new('RGB',(216,64));picture.putdata([(65,53,42) if b else (250,245,223) for b in pixels]);preview=plane.with_suffix('.png');picture.save(preview)
+            row=dict(text=text,actor_for_literal_pipeline=actor,native_alignment=alignment,native_plane=str(plane),native_plane_sha256=sha(pixels),events=events,zero_ink_flushes=flushes,width=width,original_pair_flush_width=flush,complete_sequence_single_row_and_bounds=True,preview=str(preview),preview_sha256=sha(preview.read_bytes()),actual_header_or_full_catalogue_UI_not_observed=True,proof_mode='fresh-actor104-literal-native-font-input');fresh+=4
+        row.update(regional_literal_only_not_actual_name_or_nationality_approval=text=='European',actual_B234_header_or_catalogue_UI_unvisited=True);rows.append(row)
+    assert fresh==8 and reused==12 and len(rows)==5 and not ctx.machines;sheet=Image.new('RGB',(864,410),'#263238');draw=ImageDraw.Draw(sheet)
+    for i,r in enumerate(rows):
+        assert sha(Path(r['preview']).read_bytes())==r['preview_sha256'];draw.text((4,i*82+2),r['text']+(' regional literal; excluded from returned names' if r['text']=='European' else ' complete native style11'),fill='white');sheet.paste(Image.open(r['preview']).crop((0,0,216,16)).resize((864,64),Image.Resampling.NEAREST),(0,i*82+18))
+    path=ROOT/'five_complete_name_and_literal_component_planes.png';sheet.save(path);save(ROOT/'two_actors_four_getters_five_literal_planes20_alignments.json',dict(candidate=new['candidate'],candidate_sha256=new['candidate_sha256'],consumer_proof=str(CURRENT),consumer_proof_sha256=sha(CURRENT.read_bytes()),source_fields=new['source_name_fields'],distinct_native_getter_values=new['native_four_distinct_name_consumers']['rows'],name_planes=rows,name_literal_alignment_count=20,complete_name_component_plane_count=5,fresh_native_name_font_alignment_cases=fresh,exact_reused_native_name_font_alignment_cases=reused,previous_complete_name_font_proof=str(PRIOR),previous_complete_name_font_proof_sha256=sha(PRIOR.read_bytes()),source_style11_proof=style_source_proof(ctx.arm),source_personal_Carlo_andshared_Trader_role_match_both_original_getters=True,regional_European_literal_render_is_technical_only_not_returned_name_or_nationality=True,actor104_role_andFilippo_alias_review_pending=True,all_first_internal_final_name_glyphs_and_zero_ink_flushes_complete=True,actual_headers_and_full_catalogue_UI_unvisited=True,no_name_asset_or_duplicate_credit=True,full207_name_role_alias_review_open=True,review_sheet=dict(path=str(path),sha256=sha(path.read_bytes())),visual_review_pending=True,native_context_plan=str(ctx.proof_path),native_context_plan_sha256=sha(ctx.proof_path.read_bytes()),new_emulator_runs=0,new_review_credit=0,evidence={str(p):sha(p.read_bytes()) for p in [INPUT,CURRENT,ITEM,PRIOR,Path(__file__)]},full_goal_complete=False));print('B234 names:five planes/20 alignments,8 fresh actor104 literal cases and12 exact Carlo reuse. European remains separate metadata;actual headers androle/alias review pending;zero credit.')

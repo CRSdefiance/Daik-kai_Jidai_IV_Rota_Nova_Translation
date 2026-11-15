@@ -1,0 +1,315 @@
+{
+  "format": "dk4-scoped-owned-name-fields-review-v3",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "actor36_column8_localized_name_field",
+      "english": "Geronimo de Espinosa",
+      "speaker": "Geronimo Espinosa",
+      "context": "Exact clean full-name consumer and complete shared-owner group; actor49 is an ownership extension, not a newly observed scene participant.",
+      "source_meaning": "ジェロニモ・デ・エスピノサ",
+      "localization_note": "Keep the established progressive name and render the explicit full-name デ as de. The full name is Geronimo de Espinosa; the particle adds no noble title or biography.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "physical_field_group_actor": 36,
+      "owned_field": {
+        "actor": 36,
+        "column": 8,
+        "table_field_offset": 1183752,
+        "pointer": 34977632,
+        "physical_offset": 1423200,
+        "source_hex": "8366",
+        "target_hex": "6465",
+        "owned_bytes": 2,
+        "current_text": "デ",
+        "target_text": "de",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183752,
+          "pointer_hex": "90b71502",
+          "pointer": 34977680,
+          "offset": 1423248,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        },
+        "kind": "source-name-component-romanization",
+        "reason": "Render the explicit clean component デ as de in Geronimo de Espinosa. Retain progressive Geronimo Espinosa; infer no new title, rank or biography.",
+        "owners": [
+          {
+            "actor": 36,
+            "column": 8,
+            "pointer": 34977632,
+            "field_offset": 1183752
+          },
+          {
+            "actor": 49,
+            "column": 8,
+            "pointer": 34977632,
+            "field_offset": 1184168
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183752,
+            "pointer": 34977632
+          },
+          {
+            "offset": 1184168,
+            "pointer": 34977632
+          }
+        ],
+        "following16_hex": "000083660000646100003f3f3f008e5c",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        },
+        "reviewed_aliases": [
+          {
+            "actor": 49,
+            "column": 8,
+            "table_field_offset": 1184168,
+            "source_clean_component": {
+              "column": 8,
+              "source_ARM9_field_offset": 1184168,
+              "pointer_hex": "60b71502",
+              "pointer": 34977632,
+              "offset": 1423200,
+              "hex": "8366",
+              "text": "デ",
+              "byte_length": 2,
+              "status": "printable-static-string"
+            },
+            "reason": "Alonso’s clean full-name consumer composes アロンソ・デ・ローサ. Romanize only the explicit shared デ as de; preserve progressive Alonso Rosa and avoid new ranks or biography.",
+            "review": {
+              "source": true,
+              "context": true,
+              "localization": true,
+              "naturalness": true,
+              "formatting": false
+            }
+          }
+        ]
+      },
+      "reviewed_owner": {
+        "actor": 36,
+        "column": 8,
+        "pointer": 34977632,
+        "field_offset": 1183752
+      },
+      "native": "work\\analysis\\Hodram_B131_B150_name_native_20261102\\native_name_fields_verification_reviewed.json",
+      "full_catalogue_UI_unvisited": true,
+      "decision": "name-component-localization"
+    },
+    {
+      "id": "actor49_column8_localized_name_field",
+      "english": "Alonso de Rosa",
+      "speaker": "Alonso Rosa",
+      "context": "Exact clean full-name consumer and complete shared-owner group; actor49 is an ownership extension, not a newly observed scene participant.",
+      "source_meaning": "アロンソ・デ・ローサ",
+      "localization_note": "The shared component also belongs to clean アロンソ・デ・ローサ. Retain progressive Alonso Rosa and localize only the explicit full-name デ as de; this ownership extension is not evidence that Alonso appears in B131–B150.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "physical_field_group_actor": 36,
+      "owned_field": {
+        "actor": 36,
+        "column": 8,
+        "table_field_offset": 1183752,
+        "pointer": 34977632,
+        "physical_offset": 1423200,
+        "source_hex": "8366",
+        "target_hex": "6465",
+        "owned_bytes": 2,
+        "current_text": "デ",
+        "target_text": "de",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183752,
+          "pointer_hex": "90b71502",
+          "pointer": 34977680,
+          "offset": 1423248,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        },
+        "kind": "source-name-component-romanization",
+        "reason": "Render the explicit clean component デ as de in Geronimo de Espinosa. Retain progressive Geronimo Espinosa; infer no new title, rank or biography.",
+        "owners": [
+          {
+            "actor": 36,
+            "column": 8,
+            "pointer": 34977632,
+            "field_offset": 1183752
+          },
+          {
+            "actor": 49,
+            "column": 8,
+            "pointer": 34977632,
+            "field_offset": 1184168
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183752,
+            "pointer": 34977632
+          },
+          {
+            "offset": 1184168,
+            "pointer": 34977632
+          }
+        ],
+        "following16_hex": "000083660000646100003f3f3f008e5c",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        },
+        "reviewed_aliases": [
+          {
+            "actor": 49,
+            "column": 8,
+            "table_field_offset": 1184168,
+            "source_clean_component": {
+              "column": 8,
+              "source_ARM9_field_offset": 1184168,
+              "pointer_hex": "60b71502",
+              "pointer": 34977632,
+              "offset": 1423200,
+              "hex": "8366",
+              "text": "デ",
+              "byte_length": 2,
+              "status": "printable-static-string"
+            },
+            "reason": "Alonso’s clean full-name consumer composes アロンソ・デ・ローサ. Romanize only the explicit shared デ as de; preserve progressive Alonso Rosa and avoid new ranks or biography.",
+            "review": {
+              "source": true,
+              "context": true,
+              "localization": true,
+              "naturalness": true,
+              "formatting": false
+            }
+          }
+        ]
+      },
+      "reviewed_owner": {
+        "actor": 49,
+        "column": 8,
+        "pointer": 34977632,
+        "field_offset": 1184168
+      },
+      "native": "work\\analysis\\Hodram_B131_B150_name_native_20261102\\native_name_fields_verification_reviewed.json",
+      "full_catalogue_UI_unvisited": true,
+      "decision": "name-component-localization"
+    },
+    {
+      "id": "actor42_column8_localized_name_field",
+      "english": "Vasquez de Maldonado",
+      "speaker": "Vasquez Maldonado",
+      "context": "Exact clean full-name consumer and complete shared-owner group; actor49 is an ownership extension, not a newly observed scene participant.",
+      "source_meaning": "バスケス・デ・マルドナード",
+      "localization_note": "Keep the established progressive name and render the explicit full-name デ as de. Retain Vasquez de Maldonado without adding a new title or family fact.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "physical_field_group_actor": 42,
+      "owned_field": {
+        "actor": 42,
+        "column": 8,
+        "table_field_offset": 1183944,
+        "pointer": 34977636,
+        "physical_offset": 1423204,
+        "source_hex": "8366",
+        "target_hex": "6465",
+        "owned_bytes": 2,
+        "current_text": "デ",
+        "target_text": "de",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183944,
+          "pointer_hex": "64b71502",
+          "pointer": 34977636,
+          "offset": 1423204,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        },
+        "kind": "source-name-component-romanization",
+        "reason": "Render the explicit clean component デ as de in Vasquez de Maldonado. Retain progressive Vasquez Maldonado; infer no new title, rank or biography.",
+        "owners": [
+          {
+            "actor": 42,
+            "column": 8,
+            "pointer": 34977636,
+            "field_offset": 1183944
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183944,
+            "pointer": 34977636
+          }
+        ],
+        "following16_hex": "0000646100003f3f3f008e5c00000000",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "reviewed_owner": {
+        "actor": 42,
+        "column": 8,
+        "pointer": 34977636,
+        "field_offset": 1183944
+      },
+      "native": "work\\analysis\\Hodram_B131_B150_name_native_20261102\\native_name_fields_verification_reviewed.json",
+      "full_catalogue_UI_unvisited": true,
+      "decision": "name-component-localization"
+    }
+  ],
+  "owned_field_proposal": "work\\analysis\\Hodram_B131_B150_name_fields_20261102\\owned_fields_proposal_v2.json",
+  "owned_field_proposal_sha256": "a11cd1b8b6f4e95dc517418b718318e4b70be566c00fd4844b4122d4c619d0b6",
+  "physical_fields": 2,
+  "individually_reviewed_owners": 3,
+  "owned_span_bytes": 4,
+  "no_new_dialogue_credit": true,
+  "native_andrepresentative_gameplay_checked_registered_deployment_pending": true,
+  "full_207_review_still_open": true,
+  "new_credit": 0
+}

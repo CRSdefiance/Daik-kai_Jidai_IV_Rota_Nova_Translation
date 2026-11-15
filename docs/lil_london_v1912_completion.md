@@ -1,0 +1,11 @@
+# V1912 London editorial integration
+
+V1912 London111 complete: 1691 historical editorial completions (1277 revised, 414 retained), 1807 source/prose reviewed. The fresh V1871 contextual pass has 162 explicitly reread and integrated records; other prior reviews require reconciliation. London SC2 B26: all 111 speeches received a clean-Japanese, full-exchange contextual review; 81 revisions and 30 justified retentions. The recognition, monster rumor, Clifford reveal, clothing joke, dinner, wary alliance proposal and Amsterdam dye direction preserve facts, humor and character voices. All 111 native/independent font planes, 888 macro/alignment cases, 262 commands, 92 typed spans, 460 relocated native cases, exact inverse restoration, 336 loads and 672 parent modes per ROM pass. The revised original path covers 105 speeches and 210 full matching actual/native holds, all 228 original command results, four art pauses, the timed outfit pan and normal London return at frame 86310. Five Gerhard speeches and one Retainer97 fallback were not individually activated; their source-bound shared presenters and complete native checks pass. FE anonymous dialogue uses its separate 228x48 mode1 paper consumer. Three disclosed fixtures own 16 coordinate bytes each. Full 4 MiB footprints, inputs, captures and read-only observer restoration pass. Registered V1909 equals the complete tested research ROM. Only SC2 B26 grows 864 bytes from V1875; all 335 other blocks, other files/components, ARM9, COMMON, fonts, graphics and 123040 staged bytes remain exact. All 480 manifest batches, 114 accepted layers, prior profiles, 13 invalid-release controls, exact clean-input patch and eight fresh fixture-free startup frames pass. This is targeted headless gameplay, not a full route or hardware test. The full fresh editorial goal remains active, including 116 incomplete COMMON entries and broader story/shared/random/player prose. Graphics, all18 plaques and the later older-record technical re-audit remain separate and unfinished. V1492 stays promoted.
+
+Candidate: out/all_routes_combined_v1909_candidate.nds
+
+SHA256: fdc6757a13af0a04c4f2355ade3c66163a6382a0a7081efa03a457b1198dd1d1
+
+Patch SHA256: ad759467b5eaf7b522a5914d306d09fa22ab3bd88915c9b5b32729a9d7a80d8c
+
+Final review: translations/lil_london_final_review_v1.json

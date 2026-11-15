@@ -1,0 +1,20 @@
+"""Fresh resized-archive loads; reuse the exact-byte current V7118 whole-archive proof."""
+import inspect
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts import trace_event_script_sources_v727 as loader
+from scripts import verify_script_handoff_v732 as parent
+from scripts.source_locked_derivation_v5118 import checked_text
+from scripts.create_lil_B224_reference_v7150 import ROM,PARENT
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B224_loader_v7151');PRIOR=Path('work/analysis/lil_B223_loader_v7103/whole_SC2_and_B223_initial_entry_proof.json')
+if __name__=='__main__':
+    assert not ROOT.exists();receipt=read('work/analysis/lil_B224_reference_v7150/research_image_receipt.json');prior=read(PRIOR);assert sha(ROM.read_bytes())==receipt['research_ROM_sha256'] and sha(PARENT.read_bytes())==receipt['parent_sha256'];old=deepcopy(next(v for v in prior['versions'] if v['ROM_sha256']==receipt['parent_sha256']));assert prior['all336_whole_blocks_and672_modes_each_pass'] and old['whole_SC2_loads_and_cache_hits']==336 and old['original_parent_modes']==672
+    for k in ['load','parent']:assert sha(Path(old[k+'_proof']).read_bytes())==old[k+'_sha256']
+    old.update(label='current',proof_mode='exact-byte-identical-current-V7118-proof-reused',reused_prior=str(PRIOR),reused_prior_sha256=sha(PRIOR.read_bytes()));image=NdsImage.open(ROM);assert len(IlnkContainer.parse(image.read_file('/data/SC2.DK4')).blocks)==336;a=checked_text(inspect.getsource(loader.run),{'for route in range(4):':'for route in (2,):','assert all_actions == 1312 and loaded == 1307':'assert loaded == 336 and all_actions == len(words)'});b=checked_text(inspect.getsource(parent.run),{'for route in range(4):':'for route in (2,):','assert len(cases) == 2614':'assert len(cases) == 672'});env=dict(loader.__dict__);exec(compile(a,__file__+'::whole-resized-SC2-loader','exec'),env);load=env['run'];env=dict(parent.__dict__);exec(compile(b,__file__+'::original-two-parent-modes','exec'),env);handoff=env['run'];clean=NdsImage.open('work/clean.nds').read_file('/__arm9__.bin');arm=image.read_file('/__arm9__.bin')
+    for start,end in [(0x23E94,0x23F84),(0x23F4C,0x24134),(0x24134,0x24230),(0x2A510,0x2A530)]:assert arm[start:end]==clean[start:end]
+    ROOT.mkdir(parents=True);loaded=load(image,'research');lp=ROOT/'research_native_loads.json';save(lp,loaded);modes=handoff(image,'research',loaded);mp=ROOT/'research_native_parent_modes.json';save(mp,modes);new=dict(label='research',ROM_sha256=sha(ROM.read_bytes()),load_proof=str(lp),load_sha256=sha(lp.read_bytes()),parent_proof=str(mp),parent_sha256=sha(mp.read_bytes()),whole_SC2_loads_and_cache_hits=336,original_parent_modes=672,proof_mode='fresh-resized-research-archive')
+    save(ROOT/'whole_SC2_and_B224_initial_entry_proof.json',dict(versions=[old,new],fresh_current_whole_SC2_loads=0,exact_reused_current_whole_SC2_loads=336,fresh_research_whole_SC2_loads=336,fresh_current_parent_modes=0,exact_reused_current_parent_modes=672,fresh_research_parent_modes=672,all336_whole_blocks_and672_modes_each_pass=True,B2241040_bytes_fit_original_0x2400_cache=True,original_EV2_actions_select_by_block_index_without_interior_byte_offset=True,original_parent_both_modes_start_at_loaded_payload_plus8=True,all_payload_cache_metadata_and_tail_guards_exact=True,SDK_IO_bridges_only_no_loader_or_cache_success_stub=True,scoped_loader_source=a,scoped_parent_source=b,actual_revised_paths_external_reference_approval_and_registered_release_pending=True,new_emulator_runs=0,new_review_credit=0,evidence={str(p):sha(p.read_bytes()) for p in [PRIOR,Path('work/analysis/lil_B224_reference_v7150/research_image_receipt.json'),Path(__file__)]},full_goal_complete=False));print('Resized B224 research archive passes336 fresh loads/cache hits and672 parent modes; exact-byte V7118 controls reused without replay.')

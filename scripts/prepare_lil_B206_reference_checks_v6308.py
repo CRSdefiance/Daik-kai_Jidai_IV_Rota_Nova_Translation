@@ -1,0 +1,11 @@
+"""Source-locked current/reference whole-loader,census and guarded-end checks for42 commands/eight spans."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B206_reference_check_tools_v6308')
+if __name__=='__main__':
+    assert not ROOT.exists();shared={'B205':'B206','scripts.prepare_lil_B205_references_v6200':'scripts.create_lil_B206_reference_v6307'};tools=[]
+    tools.append(derive('scripts/verify_lil_B205_loader_v6205.py','scripts/verify_lil_B206_loader_v6308.py',{**shared,'V6160':'V6270','lil_B205_loader_v6205':'lil_B206_loader_v6308','lil_B205_research_v6203':'lil_B206_research_v6307'}))
+    tools.append(derive('scripts/verify_lil_B205_references_v6206.py','scripts/verify_lil_B206_references_v6309.py',{**shared,'lil_B205_reference_census_v6206':'lil_B206_reference_census_v6309','lil_B205_loader_v6205':'lil_B206_loader_v6308','[205]':'[206]','==25':'==42',"r['typed_relative_span_count']for r in result)==0":"r['typed_relative_span_count']for r in result)==8","r['target_native_skip_cases']for r in result)==0":"r['target_native_skip_cases']for r in result)==40",'all25_commands_no_relative_sites':'all42_commands_eight_relative_sites','all25_clean_current_target_commands_and_no_relative_sites':'all42_clean_current_target_commands_and_eight_relative_sites','native_commands_each=25,relative_sites=0,target_native_skip_cases=0':'native_commands_each=42,relative_sites=8,target_native_skip_cases=40','25-command/no-relative-site':'42-command/eight-relative-site'}))
+    tools.append(derive('scripts/prove_lil_B205_ends_v6207.py','scripts/prove_lil_B206_ends_v6310.py',{**shared,'lil_B205_ends_v6207':'lil_B206_ends_v6310','n==205':'n==206','two_declared_tail_end_decodes_no_relative_sites':'two_declared_tail_end_decodes_eight_relative_sites'}))
+    ROOT.mkdir(parents=True);save(ROOT/'whole_loader42_command_census_and_guarded_end_tools.json',dict(tools=tools,source_commands=42,source_relative_sites=8,target_skip_cases=40,no_old_no_menu_no_branch_or_FE_shape_inherited=True,new_ROMs=0,new_emulator_runs=0,new_review_credit=0,full_goal_complete=False));print('Source-locked whole-SC2 loader/cache,census42/eight-span and guarded complete-end tools prepared.')

@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v98"]["batches"]);b.append("translations/maria_deep_route_v99.json");p["profiles"]["maria-deep-route-v99"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V98 with 40 translations and one preserved control in SC3 blocks 134 and 136: an absence hook and Dias's gambling recruitment."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v99: {len(b)} batches")

@@ -1,0 +1,42 @@
+{
+  "format":"dk4-ui-text-smoke-checks-v1",
+  "runs":["menu_cycle_v2","reload_cycles"],
+  "checks":[
+    {"run":"menu_cycle_v2","frame":3500,"text":"Route Map","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":3800,"text":"Deck View","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":4100,"text":"Crew Setup","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":4400,"text":"Vestaros","region":[0,40,256,120]},
+    {"run":"menu_cycle_v2","frame":5300,"text":"Does this look all right?","region":[10,292,246,351],"color":[0,8,0]},
+    {"run":"menu_cycle_v2","frame":5300,"text":"No","region":[0,355,256,384]},
+    {"run":"menu_cycle_v2","frame":5300,"text":"Yes","region":[0,355,256,384]},
+    {"run":"menu_cycle_v2","frame":6500,"text":"Route Map","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":6800,"text":"Info","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":7100,"text":"Items","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":7400,"text":"Blue Oak Shield","advance":5,"region":[35,18,210,45]},
+    {"run":"menu_cycle_v2","frame":7700,"text":"Rocco's Sailing Guide","advance":5,"region":[35,18,230,45]},
+    {"run":"menu_cycle_v2","frame":9800,"text":"Vestaros","region":[0,40,256,120]},
+    {"run":"menu_cycle_v2","frame":10100,"text":"Lookout","advance":5,"region":[35,18,210,45]},
+    {"run":"menu_cycle_v2","frame":11600,"text":"Functions","advance":5,"region":[0,225,256,337]},
+    {"run":"menu_cycle_v2","frame":11900,"text":"Save","region":[80,240,170,337],"color":[0,8,0]},
+    {"run":"menu_cycle_v2","frame":12500,"text":"Overwrite existing data?","region":[10,292,246,351],"color":[0,8,0]},
+    {"run":"menu_cycle_v2","frame":12500,"text":"Continue?","region":[10,292,246,351],"color":[0,8,0]},
+    {"run":"menu_cycle_v2","frame":22400,"text":"Iron Ore","advance":5,"region":[125,116,256,162]},
+    {"run":"menu_cycle_v2","frame":23300,"text":"Olive Oil","advance":5,"region":[125,116,256,162]},
+    {"run":"menu_cycle_v2","frame":24200,"text":"Saffron","advance":5,"region":[125,116,256,162]},
+    {"run":"menu_cycle_v2","frame":28700,"text":"No","region":[0,355,256,384]},
+    {"run":"menu_cycle_v2","frame":29600,"text":"No","region":[0,355,256,384]},
+    {"run":"reload_cycles","frame":3200,"text":"Port","region":[0,224,256,352],"color":[0,8,0]},
+    {"run":"reload_cycles","frame":5000,"text":"Guild","region":[0,224,256,352],"color":[0,8,0]},
+    {"run":"reload_cycles","frame":6500,"text":"Market","region":[0,224,256,352],"color":[0,8,0]},
+    {"run":"reload_cycles","frame":8600,"text":"Vestaros","region":[0,40,256,120]},
+    {"run":"reload_cycles","frame":10400,"text":"Blue Oak Shield","advance":5,"region":[35,18,210,45]},
+    {"run":"reload_cycles","frame":11000,"text":"Market","region":[0,224,256,352],"color":[0,8,0]}
+  ],
+  "comparisons":[
+    {"name":"crew mode returns original stats after zero-crew preview","run":"menu_cycle_v2","frame":4400,"other_run":"menu_cycle_v2","other_frame":5000,"region":[0,16,256,192],"expect":"equal"},
+    {"name":"trading preview expands Income from zero to four digits","run":"menu_cycle_v2","frame":22400,"other_run":"menu_cycle_v2","other_frame":24500,"region":[0,20,127,115],"expect":"different"},
+    {"name":"cancel and reopen removes stale trading values","run":"menu_cycle_v2","frame":22400,"other_run":"menu_cycle_v2","other_frame":25100,"region":[0,20,127,115],"expect":"equal"},
+    {"name":"cold-loaded inventory title and description remain exact","run":"menu_cycle_v2","frame":7400,"other_run":"reload_cycles","other_frame":10400,"region":[0,16,256,192],"expect":"equal"},
+    {"name":"cold-loaded ship and crew fields remain exact","run":"menu_cycle_v2","frame":4400,"other_run":"reload_cycles","other_frame":8600,"region":[0,60,256,192],"expect":"equal"}
+  ]
+}

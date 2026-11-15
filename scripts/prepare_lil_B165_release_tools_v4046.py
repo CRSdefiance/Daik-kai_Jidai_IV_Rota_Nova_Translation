@@ -1,0 +1,14 @@
+"""Derive the registered B165 build, exact clean patch and fresh startup checks."""
+from pathlib import Path
+from scripts.prepare_lil_B156_layout_v3705 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B165_release_tools_v4046')
+if __name__=='__main__':
+    assert not ROOT.exists();pairs=[]
+    pairs.append(derive('scripts/build_lil_B164_v4002.py','scripts/build_lil_B165_v4046.py',{'lil_B164_build_v4002':'lil_B165_build_v4046','all_routes_combined_v4002':'all_routes_combined_v4046','lil_B164_registration_v4001':'lil_B165_registration_v4045','all-routes-unified-v4002':'all-routes-unified-v4046'}))
+    pairs.append(derive('scripts/verify_lil_B164_release_v4003.py','scripts/verify_lil_B165_release_v4047.py',{'lil_B164_editorial_v2':'lil_B165_editorial_v1','lil_B164_release_v4003':'lil_B165_release_v4047','all_routes_combined_v4002':'all_routes_combined_v4046','all_routes_combined_v3954':'all_routes_combined_v4002','lil_B164_registration_v4001':'lil_B165_registration_v4045','all-routes-unified-v4002':'all-routes-unified-v4046','all-routes-unified-v3954':'all-routes-unified-v4002','lil_B164_editorial':'lil_B165_editorial',"[normal(conf['manuscript']),normal(conf['choices'])]":"[normal(conf['manuscript'])]","len(manifest['batches'])==538":"len(manifest['batches'])==539",'all538_manifest':'all539_manifest','exact_to_V3954':'exact_to_V4002','manifest_batches=538':'manifest_batches=539','lil_cesare_advice = profile_config':'lil_julio_argument = profile_config'}))
+    pairs.append(derive('scripts/run_lil_B164_startup_v4004.py','scripts/run_lil_B165_startup_v4048.py',{'lil_B164_runs_v4004':'lil_B165_runs_v4048','version=4002':'version=4046','lil_B164_v4004_':'lil_B165_v4048_','not_a_selected_B164_activation':'not_a_selected_B165_activation','no selected B164 activation':'no selected B165 activation'}))
+    pairs.append(derive('scripts/verify_lil_B164_startup_v4005.py','scripts/verify_lil_B165_startup_v4049.py',{'lil_B164_startup_v4005':'lil_B165_startup_v4049','lil_B164_runs_v4004':'lil_B165_runs_v4048','all_routes_combined_v4002':'all_routes_combined_v4046','all_routes_combined_v3954':'all_routes_combined_v4002','lil_B161_B163_runs_v3956':'lil_B164_runs_v4004','V3954':'V4002','Current4002':'Current4046','actual_selected_B164_IDs':'actual_selected_B165_IDs'}))
+    pairs.append(derive('scripts/record_lil_B164_startup_view_v4005.py','scripts/record_lil_B165_startup_view_v4049.py',{'lil_B164_startup_v4005':'lil_B165_startup_v4049','equal_V3954':'equal_V4002','source_B164_not_selected':'source_B165_not_selected'}))
+    ROOT.mkdir(parents=True);save(ROOT/'provenance.json',dict(tools=pairs,expected_manuscript_batches=539,accepted_layers=114,all_previous_ROMs_translations_and_producers_preserved=True,full_goal_complete=False))
+    print('B165 build, exact clean patch and startup successors created; 539 batches/114 layers expected.')

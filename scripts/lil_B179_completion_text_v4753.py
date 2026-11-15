@@ -1,0 +1,85 @@
+"""B179 integrated completion with full editorial scope retained."""
+from scripts.lil_B179_reference_checkpoint_text_v4745 import NEXT as PREVIOUS_NEXT
+
+NEXT=(
+    'Begin B180 with the complete clean-Japanese exchange and fresh contextual glosses '
+    'before predecessor English. Bind native speakers,voices,terms,event context and '
+    'controls;review the complete conversation under natural-dialogue-v2. Retain working '
+    'English with individual reasons. B180 has11 physical speeches/zero typed-choice '
+    'leads,not a project denominator. '+
+    PREVIOUS_NEXT[PREVIOUS_NEXT.index('Investigate separate untranslated'):].replace(
+        'B179-B180 has25 physical speeches','B180 has11 physical speeches'))
+ACTUAL_SCOPE=(
+    'Two targeted automated headless9001-frame Japanese/English cold boots in disclosed '
+    'B22 content fixtures retain16 B179 commands plus nine original initialization '
+    'commands/four A000s. Both select25 commands,show all14 panels (13 progressive/one '
+    'impersonal FE),execute source A000/end and resume the parent at6216/6215. Source '
+    'event179 is not naturally selected;initialized Amsterdam does not prove earlier '
+    'scene location or earned wine fashion. All three actual sheets and20 paired full '
+    'screens were viewed. Complete text planes and115 upper/name/portrait regions agree. '
+    'Eight command-timing differences (seven speeches/one end) remain. Four following '
+    'whole-RGB differences6970/7150/7930/8110 were viewed and retained unmasked:original '
+    'A-button-indicator animation within x224–240/y360–376;all other pixels in those '
+    'frames agree. Sampled postscene RGB6250–9001 otherwise agrees,including final9001. '
+    'Five native components,whole1A04 actor/captain2 and PRNG403514907 agree. No full-RAM, '
+    'future-world equality or new PRNG causal trace. Following B120 offset352 remains '
+    'in progress from8376/8375 at capture end and adds no editorial credit. No earned '
+    'state,full-route or hardware claim. Fresh registered New Game/town cold boots add '
+    '31 whole-frame comparisons/five actor controls/six viewed screens with the inherited '
+    'town battery. All jobs are terminal/reaped;every ROM and earlier translation remains '
+    'preserved.')
+
+
+def make_summary(release):
+    return (
+        'V4753 completes14 whole-exchange B179 reviews in registered experimental V4749: '
+        'eight revisions/six individually justified retentions. All clean Japanese '
+        'speeches and fresh glosses preceded predecessor comparison. Translate six '
+        'still-Japanese Sailor speeches,restore the Patron decision to try wine and '
+        'correct San Jorge to approved Sao Jorge. The predecessor defect technical '
+        'cause remains unproven. Preserve the unspecified-drink challenge,defensive '
+        'retort,concession,wine enthusiasm,repeated taste questions,personal hyperbole, '
+        'one-glass trial order,service,three gulps,delighted verdict,another-serving '
+        'request and joining order. The impersonal Sao Jorge wine notice remains '
+        'prospective. Add no drink type,brand,price,rank,relationship,drunkenness,medical '
+        'claim,completed commercial sale,active boom or earlier location. Every retention '
+        'has its own reason and exact source,predecessor,runtime,logical,compiled,stored '
+        'and integrated references. Progressive Barkeep92/Patron96/Sailor152 and separate '
+        'catalog Retainer152 stay distinct. Approved Sao Jorge/Wine pointers,spans and '
+        'metadata remain bound;no new city/commodity-widget or broad SourceItems/'
+        'LocalProduct completion is claimed. Separate untranslated city alias15E5D4/'
+        'pointer122504 stays open for consumer/ownership/display investigation.\n\n'
+        'All14 native planes (13 progressive216x64/one FE228x48logical/228x64physical), '
+        '112 logical/compiled alignments,56 stored cases (20 fresh/36 reused) and51 '
+        'formatter/source-consumer/invented-macro negatives pass. Both native sheets '
+        'were viewed. Four narrow row-count notes waive no glyph,bounds,pagination, '
+        'weak-ending,macro,control or blank-page issue. No phrase exception,shortening, '
+        'authored break,padding,shared metric or guard change. Six read-only name paths '
+        'preserve all4MiB without scratch/getter writes. Relocation512 to496 preserves '
+        '16 commands,14 preambles,two leaves,A0008 raw00a0ffff01221da1 and end508 mapped492. '
+        'Independent inverse restores every predecessor logical byte. Fresh336-load/'
+        '672-mode checks,whole-ROM-exact parent reuse,three entry censuses,two guarded '
+        'end decodes,14 relocated dispatches and paired A000 structural walks pass. No '
+        'C200,predicate,relative site,resource,presentation,2000 pause,typed object or '
+        'FI/FA/FO exists. Packed operands remain uninterpreted;the A000 structural '
+        'callee bridge is distinct from actual execution. Event179/action180 has no '
+        'explicit dependency prefix without proving earned activation.\n\n'+ACTUAL_SCOPE+'\n\n'
+        'All101 atomic negatives reject before image mutation;78 release/dialogue '
+        'regressions pass. The sole registered builder applies555 manuscript batches/'
+        '114 accepted layers after the entire V4701 stack. Only SC2 B179 changes from '
+        'V4701;335 other blocks and every other file/component,ARM9,COMMON,fonts,graphics '
+        'and123040 staged bytes remain exact. The complete ROM equals reviewed research '
+        'V4734. Its clean-input patch reconstructs byte for byte. Candidate: '+
+        release['candidate']+';SHA-256 '+release['candidate_sha256']+
+        '. Patch SHA-256 '+release['patch_sha256']+'.\n\n'
+        'Coverage becomes5912 completed contextual rereads with zero pending credited '
+        'route drafts;source/prose stays5915,including4059 SC2/64 SC3. Historical '
+        'completed decisions become3748 revised/2164 retained;route reviewed/completed '
+        '4313/4313. Source/prose credit was recorded atV4727;completion adds14 once. Main '
+        'V4701/pushed4d63fd3/tag promoted-v4701,immutable inputs,accepted-layer status, '
+        'all earlier completions/packages/ROMs/translations/drafts/executed producers/'
+        'proofs/failures and full ledger history are preserved. V4749 stays experimental. '
+        'One-space CRLF ledger encoding remains in use. Preserve stopped preparers and '
+        'audit successors;their original proofs and failures remain historical. Graphics/'
+        'all18 plaques and the later older-record technical re-audit/queued0D gap remain '
+        'separate and open. Full goal active.\n\n'+NEXT)

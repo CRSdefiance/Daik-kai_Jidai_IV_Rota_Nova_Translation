@@ -1,0 +1,11 @@
+# Rafael B221–B240 research verification
+
+Rafael B221–B240 passed all five review gates for 270 records, with 221 revisions and 49 retentions. All 279 pages, seven captions, and 26 name or role bindings passed offline review. Two initialized emulator fixtures showed 94 pages, 16 distinct speaker headers, and all three menus. Registered integration is pending. Integrated coverage remains 14,797.
+
+The Solomon exchange now uses normal-width I glyphs while retaining the Rafael and Castor substitutions. The missing Guan Yu response is in English. Three indented letter signatures and the three-row swan call retain their source staging. The pass also kept question tags and titles together where the native width allowed. Exact references and per-record decisions are in the [five-gate manuscript](../translations/rafael_B221_B240_final_review_v1.json).
+
+The research ROM changes only 19 reviewed blocks of SC0. B231 remains byte-identical. The four voice commands preserve all 32 getter slots and aliases across 29 physical alternatives. Native checks covered 263 pre-macro catalogue reads, 34 relocated branch sites with 170 cases, and 343 archive loads. Every stored body page matches its inspected preview, including 127 pages rerendered with storage padding. [Research completion evidence](../work/analysis/Rafael_B221_B240_current2952_20261106/research_final_v1/research_completion.json).
+
+The initialized fixtures showed 86 speech variants, the four default voice choices, and all seven captions at the default menu cursor. A returned to the next fixture line in each menu. The other 177 speech variants passed offline checks. Original conditional activation, alternate controller paths, and hardware remain unobserved. [Focused emulator evidence](../work/analysis/Rafael_B221_B240_current2952_20261106/research_final_v1/actual_review.json).
+
+Next register the mixed speech, voice, and menu append over Rafael2952 and verify the exact clean-input patch and candidate startup. Preserve the registered ASCII right-bound repair and the B146 percent-relocation proof. Rafael2549 remains the packaged weekend build. [Rafael2952 release evidence](../work/analysis/Rafael2952_extended_release_verified_v1_20261106/registered_release_verification.json).

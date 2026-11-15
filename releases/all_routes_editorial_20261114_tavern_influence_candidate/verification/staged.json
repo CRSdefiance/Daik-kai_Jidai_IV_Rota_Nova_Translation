@@ -1,0 +1,75 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "candidate_sha256": "cb371076394d6887c482161f2c71d814b87d3b6b60de39e02bba161aae1bb4de",
+  "previous_sha256": "6eb939a41b7c31000726225dffa5b687bf4532f8699f218063ad51f6a4cbdf6b",
+  "target_COMMON_sha256": "4fe2e5a2b889545bf3c0dfc5a53197c55a82899323bcb27037fcdd83008dd17d",
+  "target_ARM9_sha256": "6410f9fb48c0422bb9ad2ec7ec264a3e8509b6193db99b8b40d345179320e932",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_821",
+      "message_id": 821,
+      "speaker": "Barkeep",
+      "english": "%s from %s is a %s with real pull here.{PAD}",
+      "source_meaning": "The named person from the named town wields influence in this area in their profession.",
+      "context": "The barkeep gives local gossip after the player orders a drink. This casual influence report is an alternative to the formal reputation line, a nearby-town tip or no news. The order of arguments is person, town, role.",
+      "localization_note": "Use the barkeep's conversational 'real pull' to express his appraisal of the person's local influence. The port association and native role keep their source slots.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 2724,
+        "copy_end": 2772,
+        "bytes": 47,
+        "record_index": 40,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3222,
+        "copy_end": 3266,
+        "bytes": 43,
+        "record_index": 53,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "Japanese": "この辺じゃ\n%sっていう\n%sの%sが\n幅を利かせてるぜ",
+      "current_English": " %s of %s is an influential %s around here.",
+      "argument_order": [
+        "person_full_name",
+        "town_name",
+        "localized_force_profession"
+      ],
+      "exact_clean_hex": "82b182cc95d382b682e10a257382c182c482a282a40a257382cc257382aa0a959d82f0979882a982b982c482e982ba",
+      "exact_current_hex": "202573206f6620257320697320616e20696e666c75656e7469616c2025732061726f756e6420686572652e",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3222,
+        "copy_end": 3266,
+        "bytes": 40,
+        "record_index": 53,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "staged_hex": "2025732066726f6d20257320697320612025732077697468207265616c2070756c6c20686572652e"
+    }
+  ],
+  "native_control": 32,
+  "byte_allocation": {
+    "block": 10,
+    "start": 3222,
+    "end": 3266,
+    "before": "202573206f6620257320697320616e20696e666c75656e7469616c2025732061726f756e6420686572652e00",
+    "after": "2025732066726f6d20257320697320612025732077697468207265616c2070756c6c20686572652e00000000"
+  },
+  "preserved_entries": 3667,
+  "preserved_blocks": 40,
+  "whole_parent_inverse": true
+}

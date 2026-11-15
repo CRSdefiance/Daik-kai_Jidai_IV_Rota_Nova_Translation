@@ -1,0 +1,57 @@
+"""Bind the distinct real No path and its unchanged nonzero residual result word."""
+from pathlib import Path
+from types import FunctionType
+from PIL import Image,ImageDraw,ImageChops
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.Al_Ferid_font_oracles_v6520 import expected_pixels
+from scripts.Al_Ferid_name_style_v6520 import native_name_raster
+from scripts.verify_name_catalog_glyphs_v278 import raster as original_raster
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B212_No_actual_v6633');DOC=Path('translations/lil_B212_editorial_manuscript_v3.json');STORED=Path('work/analysis/lil_B212_stored_v6623/all9_final_stored_targets36_alignments_and9_complete_pages.json');JP=Path('work/analysis/lil_B212_name_source_planes_v6620/full_Guildmaster_name_four_alignments_six_Japanese_source_masks.json')
+if __name__=='__main__':
+    assert not ROOT.exists();doc,stored,jp=map(read,[DOC,STORED,JP]);consumer=read(doc['current_consumer_proof']);original_bodies={r['id']:r for r in consumer['all18_source_current_dispatches'] if r['version']=='clean-Japanese'};versions=[];nameplane=None;new_Japanese_body=None
+    for language in ['source','English']:
+        run=Path('work/analysis/lil_B212_No_'+language+'_run_v6632');plan,terminal=read(run/'run_plan.json'),read(run/'terminal.json');cap=Path(plan['capture_folder']);rp,tp=cap/'capture_report.json',cap/'observer/commands.json';report,trace=read(rp),read(tp);assert terminal['terminal'] and terminal['observer_host_slots_restored'] and not trace['errors'] and not trace['mismatches'] and trace['all_host_slots_restored_and_core_file_exact'] and report['frames']==6001 and report['cold_boot'] and not report['savestate_loaded'] and not report['callback_errors'] and not report.get('battery_save_preloaded');schedule=read(plan['original_inputs']);assert report['scripted_input_schedule']==schedule and sha(Path(plan['original_inputs']).read_bytes())==plan['inputs_sha256'] and [r for r in schedule if r['buttons']==['DOWN']]==[dict(start=3250,duration=5,buttons=['DOWN'])]
+        fp=Path('work/analysis/lil_B212_'+('source_fixture_v6611/complete_B212_source_B22_fixture.json' if language=='source' else 'English_fixture_v6627/complete_B212_English_B22_fixture.json'));f=read(fp)['fixtures'][0];assert report['ROM_sha256']==f['research_ROM_sha256']==sha(Path(f['research_ROM']).read_bytes());image=NdsImage.open(f['research_ROM']);arm=image.read_file('/__arm9__.bin');namepixels,events,font=native_name_raster(arm,b'Guildmaster');assert sha(namepixels)==jp['full_name_plane']['native_plane_sha256'];nameink={(i%216,i//216) for i,v in enumerate(namepixels) if v};namewidth=max(e['x']+6 for e in events);mapping={r['fixture_offset']:r for r in f['selected_original_objects']};textrefs={r['fixture_command_offset']:r for r in f['original_text_records']};photos={p['frame']:(p,Image.open(p['path']).convert('RGB')) for p in report['frames_captured']}
+        for p,im in photos.values():assert sha(Path(p['path']).read_bytes())==p['PNG_sha256']
+        pairs=[];panels=[];following=[];pending=[]
+        for p in trace['unreturned_at_capture_end']:
+            e=trace['rows'][p['entry_row']];assert e['source']['block']!=22;pending.append(dict(block=e['source']['block'],offset=e['source']['instruction_offset'],word=e['source']['first_word'],start=e['frame'],following_command_unfinished_at6001=True))
+        for r in trace['rows']:
+            assert r['CPU_WRAM_DTCM_ITCM_and_configuration_unchanged_by_callback'] and r['source']['whole_resident_payload_exact_ROM']
+            if r['kind']!='after_command':continue
+            e=trace['rows'][r['entry_row']];s=e['source']
+            if s['block']!=22:following.append(dict(block=s['block'],offset=s['instruction_offset'],word=s['first_word'],frame=r['frame'],native_result=r['result_words']));continue
+            at=s['instruction_offset'];c=mapping.get(at);pair=dict(source_offset=None if c is None else c['source_offset'],word=s['first_word'],fixture_offset=at,start=e['frame'],returned=r['frame'],decoded_length=r['decoded_length'],native_result=r['result_words'],before_RNG=e['original_RNG_seed'],after_RNG=r['original_RNG_seed'],UI_after=r['native_UI_request_words']);pairs.append(pair)
+            if at not in textrefs:continue
+            ref=textrefs[at];index=ref['source_record_index'];assert index in [5,22]
+            if language=='English':
+                record=next(q for q in stored['records'] if q['id']==ref['id']);page=record['complete_pages']['pages'][0];plane=Path(page['native_plane']).read_bytes();assert sha(plane)==page['native_plane_sha256'];proof_mode='exact-stored-English-native-plane'
+            elif index==5:
+                old=next(q for q in jp['source_body_masks'] if q['id']==ref['id']);plane=expected_pixels(arm,image.read_file('/GRP/KANJI.FNT'),old['native_events']);assert sha(plane)==old['native_plane_sha256'];proof_mode='exact-existing-Japanese-native-model-reused'
+            else:
+                body=bytes.fromhex(next(b['text_hex'] for b in original_bodies[ref['id']]['boundaries'] if b['kind']=='unexecuted-progressive-body'))
+                class FontROM:
+                    @staticmethod
+                    def open(path):assert str(path)=='work/clean.nds';return image
+                raster=FunctionType(original_raster.__code__,{**original_raster.__globals__,'NdsImage':FontROM},argdefs=original_raster.__defaults__);raster.__kwdefaults__=original_raster.__kwdefaults__;plane,bevents,bfont=raster(arm,body);assert plane==expected_pixels(arm,bfont,bevents);new_Japanese_body=dict(id=ref['id'],body_hex=body.hex(),native_plane_sha256=sha(plane),native_events=bevents);proof_mode='fresh-Japanese-recommendation-native-plane'
+            expected={(i%216,i//216) for i,v in enumerate(plane) if v==1};gray={(i%216,i//216) for i,v in enumerate(plane) if v==15};complete=[];partial=[];names=[]
+            for frame,(photo,im) in photos.items():
+                if not e['frame']+20<frame<r['frame']-4:continue
+                crop=im.crop((16,296,232,360));black={(i%216,i//216) for i,v in enumerate(crop.getdata()) if v==(0,8,0)};shadow={(i%216,i//216) for i,v in enumerate(crop.getdata()) if v==(98,97,98)};header={(x-4,y) for y in range(13) for x in range(namewidth+8) if im.getpixel((12+x,276+y))==(98,97,98)};assert header==nameink;names.append(dict(frame=frame,capture=photo['path'],sha256=photo['PNG_sha256'],complete_name_and_blank_guards_equal=True))
+                if black==expected and (language=='source' or shadow==gray):complete.append(dict(frame=frame,capture=photo['path'],sha256=photo['PNG_sha256'],complete_independent_native_black_mask_equal=True,gray_mask_also_compared=language=='English'))
+                else:partial.append(dict(frame=frame,black_missing=len(expected-black),black_extra=len(black-expected),gray_missing=len(gray-shadow),gray_extra=len(shadow-gray)))
+            assert complete and names;panels.append(dict(id=ref['id'],source_record_index=index,interval=pair,native_proof_mode=proof_mode,complete_body_holds=complete,complete_name_holds=names,incomplete_holds=partial,selected_complete_capture=complete[-1]))
+        assert len(pairs)==15 and [p['source_offset'] for p in pairs if p['source_offset'] is not None]==[8,64,94,98,106,152] and pairs[10]['native_result']==[2,1] and pairs[-1]['native_result']==[0,1] and [p['source_record_index'] for p in panels]==[5,22] and not any(p['source_offset'] is not None and p['word']==0xA000 for p in pairs);post=min(frame for frame in photos if frame>pairs[-1]['returned']+60);versions.append(dict(language=language,fixture=str(fp),fixture_sha256=sha(fp.read_bytes()),ROM=f['research_ROM'],ROM_sha256=f['research_ROM_sha256'],capture_report=str(rp),capture_report_sha256=sha(rp.read_bytes()),observer_report=str(tp),observer_report_sha256=sha(tp.read_bytes()),input_schedule=plan['original_inputs'],input_sha256=plan['inputs_sha256'],command_pairs=pairs,actual_panels=panels,exit_frame=pairs[-1]['returned'],native_terminal_result=[0,1],normal_port_sample=photos[post][0],following_commands=following,following_pending_at6001=pending,final_snapshot=report['read_only_RAM_snapshot']))
+    assert versions[0]['input_sha256']==versions[1]['input_sha256'];differences={k:[] for k in ['results','UI','RNG','timing']}
+    for a,b in zip(versions[0]['command_pairs'],versions[1]['command_pairs'],strict=True):
+        assert a['source_offset']==b['source_offset'] and a['word']==b['word']
+        for fields,key in [(['native_result'],'results'),(['UI_after'],'UI'),(['before_RNG','after_RNG'],'RNG'),(['start','returned'],'timing')]:
+            av,bv=[a[k] for k in fields],[b[k] for k in fields]
+            if av!=bv:differences[key].append(dict(source_offset=a['source_offset'],source=av,English=bv))
+    assert not differences['results'];ROOT.mkdir(parents=True);sheet=Image.new('RGB',(1040,832),'#263238');draw=ImageDraw.Draw(sheet)
+    for column,v in enumerate(versions):
+        for row,item in enumerate([next(p for p in v['actual_panels'] if p['source_record_index']==22)['selected_complete_capture'],dict(capture=v['normal_port_sample']['path'],frame=v['normal_port_sample']['frame'])]):
+            x,y=column*520,row*416;draw.text((x+4,y+3),v['language']+' '+('R22' if row==0 else 'return')+' frame'+str(item['frame']),fill='white');im=Image.open(item['capture']).convert('RGB');sheet.paste(im.crop((0,192,256,384)).resize((512,384),Image.Resampling.NEAREST) if row==0 else im.resize((512,768),Image.Resampling.NEAREST).crop((0,0,512,384)),(x+4,y+24))
+    sp=ROOT/'source_English_No_recommendation_and_returns.png';sheet.save(sp);save(ROOT/'two_real_No_paths_recommendation_masks_and_state0_residual1_return.json',dict(versions=versions,new_Japanese_recommendation_native_mask=new_Japanese_body,all_source_English_first_menu_returns_index1=True,all_selected15_commands_match_original_No_model=True,ordinary_00000000_terminator_actual_result_state0_residual1_preserved=True,residual_second_word_not_zeroed_or_misrepresented_as_new_payload=True,source_exit_frame=versions[0]['exit_frame'],English_exit_frame=versions[1]['exit_frame'],new_unique_actual_source_and_English_speech_R22=True,source_English_recommendations_complete_independent_native_masks=True,source_black_masks_English_black_gray_masks_scoped=True,source_effect656_870_and_second_menu_not_executed_on_No=True,command_differences=differences,following_B120_command_pending_at6001_not_full_following_scene_completion=True,review_sheet=dict(path=str(sp),sha256=sha(sp.read_bytes())),visual_review_pending=True,new_cold_boot_runs=2,total_frames=12002,all_jobs_terminal_and_reaped=True,no_new_ROM_or_forced_result_state_roster_RNG_battery_RAM_savestate=True,natural_event212_original_location_earned_progress_full_effects_routes_hardware_unclaimed=True,no_future_or_broad_simulation_equivalence_claim=True,new_review_credit=0,evidence={str(p):sha(p.read_bytes()) for p in [DOC,STORED,JP,Path(__file__)]},producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(source_exit=versions[0]['exit_frame'],English_exit=versions[1]['exit_frame'],terminal=[0,1],source_body_holds=sum(len(p['complete_body_holds']) for p in versions[0]['actual_panels']),English_body_holds=sum(len(p['complete_body_holds']) for p in versions[1]['actual_panels']),differences={k:len(v) for k,v in differences.items()},credit=0))

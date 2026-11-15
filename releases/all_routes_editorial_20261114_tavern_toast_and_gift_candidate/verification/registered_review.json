@@ -1,0 +1,3803 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_827",
+      "message_id": 827,
+      "speaker": "Tavern attendant (Faticia in the observed exchange)",
+      "english": "Ah, %s? Here's to meeting you!",
+      "source_meaning": "The barmaid confirms the captain's name and raises a toast to getting acquainted.",
+      "context": "The toast follows the paid follow-up drink. The barmaid answers the introduction by repeating the name with a questioning inflection.",
+      "localization_note": "Keep the name check and the warm invitation to toast the meeting. The Japanese establishes a new acquaintance.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 2936,
+        "copy_end": 2988,
+        "bytes": 49,
+        "record_index": 43,
+        "table_offset": 1318790,
+        "start_in_record": 24
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3440,
+        "copy_end": 3489,
+        "bytes": 48,
+        "record_index": 62,
+        "table_offset": 1318790,
+        "start_in_record": 0
+      },
+      "Japanese": "ふーん、%sさんね？\nじゃ、お近づきのしるしに乾杯！",
+      "current_English": "Hmm... %s, right? Here's to our new friendship!",
+      "exact_clean_hex": "82d3815b82f18141257382b382f182cb81480a82b682e1814182a88bdf82c382ab82cc82b582e982b582c98aa394748149",
+      "exact_current_hex": "20486d6d2e2e2e2025732c2072696768743f2048657265277320746f206f7572206e657720667269656e647368697021",
+      "argument_order": [
+        "admiral_short_name"
+      ],
+      "staged_hex": "2041682c2025733f2048657265277320746f206d656574696e6720796f7521",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3440,
+        "copy_end": 3489,
+        "bytes": 31,
+        "record_index": 62,
+        "table_offset": 1318790,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 3440,
+        "copy_end": 3489,
+        "bytes": 31,
+        "record_index": 62,
+        "table_offset": 1318790,
+        "start_in_record": 0,
+        "exact_stored_hex": "2041682c2025733f2048657265277320746f206d656574696e6720796f7521",
+        "candidate_sha256": "0bee041181d6b748840d4f8ee7bf1ffa7346da0bd6ce9c31404c592ba3c89900"
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_831",
+      "message_id": 831,
+      "speaker": "Hodram",
+      "english": "It's called %s.",
+      "source_meaning": "Hodram echoes the barmaid's question and identifies the object directly by its name.",
+      "context": "The barmaid notices a present. Hodram names it directly. She admires it, and he asks whether she likes it before her request.",
+      "localization_note": "Hodram answers plainly and briefly. The previous repeat question works in the more conversational variants. Hodram answers immediately here. 'It's called' is grammatical for both named treasures and ordinary item labels.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 3132,
+        "copy_end": 3156,
+        "bytes": 23,
+        "record_index": 46,
+        "table_offset": 1318798,
+        "start_in_record": 33
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3608,
+        "copy_end": 3631,
+        "bytes": 22,
+        "record_index": 66,
+        "table_offset": 1318798,
+        "start_in_record": 0
+      },
+      "Japanese": "これか？\nこれは『%s』だ",
+      "current_English": "This? It's called %s.",
+      "exact_clean_hex": "82b182ea82a981480a82b182ea82cd81772573817882be",
+      "exact_current_hex": "20546869733f20497427732063616c6c65642025732e",
+      "argument_order": [
+        "item_name"
+      ],
+      "staged_hex": "20497427732063616c6c65642025732e",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3608,
+        "copy_end": 3631,
+        "bytes": 16,
+        "record_index": 83,
+        "table_offset": 1318798,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 3608,
+        "copy_end": 3631,
+        "bytes": 16,
+        "record_index": 83,
+        "table_offset": 1318798,
+        "start_in_record": 0,
+        "exact_stored_hex": "20497427732063616c6c65642025732e",
+        "candidate_sha256": "0bee041181d6b748840d4f8ee7bf1ffa7346da0bd6ce9c31404c592ba3c89900"
+      }
+    }
+  ],
+  "observed_gameplay": {
+    "toast": {
+      "frame": {
+        "frame": 6951,
+        "path": "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_006951_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c7da85c08ee8d4053b96ddb0fdf59f9c6b3cbb3e5bc4d970346be586e67b7992",
+        "framebuffer_sha256": "72fad9ace8e4cff0b32f1795c7ec5da8d6bf3c90f7fa1c51aa900f6598af7e28"
+      },
+      "lines": [
+        "Ah, Hodram? Here's to meeting you!"
+      ],
+      "ink": [
+        367
+      ]
+    },
+    "refusal": {
+      "frame": {
+        "frame": 6551,
+        "path": "work\\tavern_toast_and_gift_20261114_v2\\declined\\frame_006551_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "27674e4c2ece2e26deccf75ef9a23389d156c2aba6ff1acf38821989163874eb",
+        "framebuffer_sha256": "a6df59bc0ab1039c041164cb61032ee3829690c57ff18b4199167dda2bfdc3c1"
+      },
+      "lines": [
+        "Oh, I thought you could handle",
+        "another drink."
+      ],
+      "ink": [
+        326,
+        149
+      ]
+    },
+    "ordinary_town_return": {
+      "frame": 7351,
+      "path": "work\\tavern_toast_and_gift_20261114_v2\\declined\\frame_007351_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "6ade51980bae18234117aeaa29973ac8c1b63033a53a1793177798778e95a83f",
+      "framebuffer_sha256": "4f0ece9def599eb6e9336845d904f928f840d36bd867c4a482544fcc2a4bfe9c"
+    },
+    "original_toast_selector_calls": [
+      {
+        "frame": 6819,
+        "PC": 33903244,
+        "message_ID": 827,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 6819,
+        "PC": 33895668,
+        "message_ID": 827,
+        "caller_LR": 33898488
+      }
+    ],
+    "exact_same_frame_controls": [
+      3751,
+      4151,
+      4551,
+      4951,
+      5351,
+      5751,
+      6151,
+      6551,
+      7351,
+      7751,
+      8151,
+      8551,
+      8951
+    ],
+    "evidence": {
+      "work\\tavern_influence_20261114_v1\\istanbul\\capture_report.json": "b285324c23aec251bbea5dd724e3dca5bc960bdefb7f6cce4cdf506c26db2f1d",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\capture_report.json": "f94b11e0ee29f43c2001e4e46a00a0d7bce183dfae0545cf6097eff2278d0658",
+      "work\\tavern_toast_and_gift_20261114_v2\\declined\\capture_report.json": "e0816166cf3c7cb59839227701fbc288748a2f9ab7758cd0cf833b71e493bc02",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\requests.json": "363bc4ed6002bf54c3a71ae7bc3a9161d756b668c6eec8026fd2fcacd75287c9",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_003751_cold_boot.png": "599a89ba0bb4105bfdcfeb2be46c0852f02ab76b23a8eff4513dacd31edb49f5",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_003751_cold_boot.png": "599a89ba0bb4105bfdcfeb2be46c0852f02ab76b23a8eff4513dacd31edb49f5",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004151_cold_boot.png": "e7712373881739fb0af752e580b214f71e515aef0b89e3095aec525526bbd700",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_004151_cold_boot.png": "e7712373881739fb0af752e580b214f71e515aef0b89e3095aec525526bbd700",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004551_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_004551_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004951_cold_boot.png": "63ed2de3dba69ec89ce291b13487723e269ab5a56b42e38b263aa301114070e9",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_004951_cold_boot.png": "63ed2de3dba69ec89ce291b13487723e269ab5a56b42e38b263aa301114070e9",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_005351_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_005351_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_005751_cold_boot.png": "fb9c3372a6af11cbd058b6552d332c29652844187e2c2fa09dcff5bbe8aa9405",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_005751_cold_boot.png": "fb9c3372a6af11cbd058b6552d332c29652844187e2c2fa09dcff5bbe8aa9405",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006151_cold_boot.png": "4ad56b23037f1f6b6ab1eb5894942c7064d388f7e66b4e1689bfa8d3344fb633",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_006151_cold_boot.png": "4ad56b23037f1f6b6ab1eb5894942c7064d388f7e66b4e1689bfa8d3344fb633",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006551_cold_boot.png": "189d763124015f17676e9d865a9442617984faf0f8be230be744eb40904f85b5",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_006551_cold_boot.png": "189d763124015f17676e9d865a9442617984faf0f8be230be744eb40904f85b5",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006951_cold_boot.png": "20b80a86d933625d0161ccef175a4f0fb8e1fff35ca210a7add951f756161498",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_006951_cold_boot.png": "c7da85c08ee8d4053b96ddb0fdf59f9c6b3cbb3e5bc4d970346be586e67b7992",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_007351_cold_boot.png": "c133a23eb139f7587ecaf68e72e2152d2dd0e83fc8b209e76b7ce52205bf5d8c",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_007351_cold_boot.png": "c133a23eb139f7587ecaf68e72e2152d2dd0e83fc8b209e76b7ce52205bf5d8c",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_007751_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_007751_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008151_cold_boot.png": "050dc45cb43005120ec876cae119ab077816c92a10afa118cc320f5c25b3a407",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_008151_cold_boot.png": "050dc45cb43005120ec876cae119ab077816c92a10afa118cc320f5c25b3a407",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008551_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_008551_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008951_cold_boot.png": "16de466ce2a97e17ddd81245dac59be02a773cc72cc819a6643d9218f48a7d86",
+      "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_008951_cold_boot.png": "16de466ce2a97e17ddd81245dac59be02a773cc72cc819a6643d9218f48a7d86",
+      "work\\tavern_toast_and_gift_20261114_v2\\declined\\frame_006151_cold_boot.png": "4ad56b23037f1f6b6ab1eb5894942c7064d388f7e66b4e1689bfa8d3344fb633",
+      "work\\tavern_toast_and_gift_20261114_v2\\declined\\frame_006551_cold_boot.png": "27674e4c2ece2e26deccf75ef9a23389d156c2aba6ff1acf38821989163874eb",
+      "work\\tavern_toast_and_gift_20261114_v2\\declined\\frame_007351_cold_boot.png": "6ade51980bae18234117aeaa29973ac8c1b63033a53a1793177798778e95a83f"
+    },
+    "unmodified_gameplay_inputs": true,
+    "hardware": false,
+    "live_gift_scenes": false
+  },
+  "native_layout": {
+    "cases": [
+      {
+        "id": 827,
+        "values_hex": [
+          "52616661656c"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "2041682c2052616661656c3f2048657265277320746f206d656574696e6720796f7521",
+        "lines": [
+          "Ah, Rafael? Here's to meeting you!"
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 0
+      },
+      {
+        "id": 827,
+        "values_hex": [
+          "486f6472616d"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "2041682c20486f6472616d3f2048657265277320746f206d656574696e6720796f7521",
+        "lines": [
+          "Ah, Hodram? Here's to meeting you!"
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 1
+      },
+      {
+        "id": 827,
+        "values_hex": [
+          "4c696c"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "2041682c204c696c3f2048657265277320746f206d656574696e6720796f7521",
+        "lines": [
+          "Ah, Lil? Here's to meeting you!"
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 2
+      },
+      {
+        "id": 827,
+        "values_hex": [
+          "4d61726961"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "2041682c204d617269613f2048657265277320746f206d656574696e6720796f7521",
+        "lines": [
+          "Ah, Maria? Here's to meeting you!"
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 3
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50756d706b696e205365656473"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050756d706b696e2053656564732e",
+        "lines": [
+          "It's called Pumpkin Seeds."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 0
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "546f6d61746f20536565646c696e67"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420546f6d61746f20536565646c696e672e",
+        "lines": [
+          "It's called Tomato Seedling."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 1
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "42616e616e612054726565"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642042616e616e6120547265652e",
+        "lines": [
+          "It's called Banana Tree."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 2
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "42656568697665"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426565686976652e",
+        "lines": [
+          "It's called Beehive."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 3
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4261627920536861726b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204261627920536861726b2e",
+        "lines": [
+          "It's called Baby Shark."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 4
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50657070657220506c616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050657070657220506c616e742e",
+        "lines": [
+          "It's called Pepper Plant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 5
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c6f766520506c616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c6f766520506c616e742e",
+        "lines": [
+          "It's called Clove Plant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 6
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "43696e6e616d6f6e2054726565"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642043696e6e616d6f6e20547265652e",
+        "lines": [
+          "It's called Cinnamon Tree."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 7
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50696d656e746f20506c616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050696d656e746f20506c616e742e",
+        "lines": [
+          "It's called Pimento Plant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 8
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436f666665652054726565"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436f6666656520547265652e",
+        "lines": [
+          "It's called Coffee Tree."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 9
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "54656120506c616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642054656120506c616e742e",
+        "lines": [
+          "It's called Tea Plant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 10
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436163616f205365656473"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436163616f2053656564732e",
+        "lines": [
+          "It's called Cacao Seeds."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 11
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "546f626163636f20506c616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420546f626163636f20506c616e742e",
+        "lines": [
+          "It's called Tobacco Plant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 12
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416c6368656d7920426f6f6b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416c6368656d7920426f6f6b2e",
+        "lines": [
+          "It's called Alchemy Book."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 13
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476c6173736d616b696e67204775696465"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476c6173736d616b696e672047756964652e",
+        "lines": [
+          "It's called Glassmaking Guide."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 14
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53696c6b776f726d73"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053696c6b776f726d732e",
+        "lines": [
+          "It's called Silkworms."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 15
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c6f6f6d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c6f6f6d2e",
+        "lines": [
+          "It's called Loom."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 16
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "506561726c204f7973746572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420506561726c204f79737465722e",
+        "lines": [
+          "It's called Pearl Oyster."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 17
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "48657262616c6973742773204269626c65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642048657262616c6973742773204269626c652e",
+        "lines": [
+          "It's called Herbalist's Bible."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 18
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d616e676f737465656e205365656473"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d616e676f737465656e2053656564732e",
+        "lines": [
+          "It's called Mangosteen Seeds."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 19
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f6c64656e20436174"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f6c64656e204361742e",
+        "lines": [
+          "It's called Golden Cat."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 20
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c696d652044726f7073"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c696d652044726f70732e",
+        "lines": [
+          "It's called Lime Drops."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 21
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4865726d65732720507261796572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204865726d657327205072617965722e",
+        "lines": [
+          "It's called Hermes' Prayer."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 22
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4875612054756f277320546f6e6963"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204875612054756f277320546f6e69632e",
+        "lines": [
+          "It's called Hua Tuo's Tonic."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 23
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426c61636b20526170696572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426c61636b205261706965722e",
+        "lines": [
+          "It's called Black Rapier."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 24
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c616f636f6f6e2053776f7264"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c616f636f6f6e2053776f72642e",
+        "lines": [
+          "It's called Laocoon Sword."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 25
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c6f68656e6772696e205361626572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c6f68656e6772696e2053616265722e",
+        "lines": [
+          "It's called Lohengrin Saber."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 26
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4372657363656e742053686f74656c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204372657363656e742053686f74656c2e",
+        "lines": [
+          "It's called Crescent Shotel."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 27
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4865726f2773205363696d69746172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204865726f2773205363696d697461722e",
+        "lines": [
+          "It's called Hero's Scimitar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 28
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f6c64656e204375746c617373"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f6c64656e204375746c6173732e",
+        "lines": [
+          "It's called Golden Cutlass."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 29
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "56616c69616e742042656320646520436f7262696e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642056616c69616e742042656320646520436f7262696e2e",
+        "lines": [
+          "It's called Valiant Bec de Corbin."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 30
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "417a7572652054616c776172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420417a7572652054616c7761722e",
+        "lines": [
+          "It's called Azure Talwar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 31
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5377656570696e67204b61747a62616c676572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205377656570696e67204b61747a62616c6765722e",
+        "lines": [
+          "It's called Sweeping Katzbalger."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 32
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c6f79616c2046616c6368696f6e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c6f79616c2046616c6368696f6e2e",
+        "lines": [
+          "It's called Loyal Falchion."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 33
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "46616c6c656e20416e67656c204b61746172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642046616c6c656e20416e67656c204b617461722e",
+        "lines": [
+          "It's called Fallen Angel Katar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 34
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "576869746520466c616d6265726765"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420576869746520466c616d62657267652e",
+        "lines": [
+          "It's called White Flamberge."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 35
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426c6f6f64737461696e6564205368616d73686972"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426c6f6f64737461696e6564205368616d736869722e",
+        "lines": [
+          "It's called Bloodstained Shamshir."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 36
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4a75646173272044656d6f6e626c616465"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204a75646173272044656d6f6e626c6164652e",
+        "lines": [
+          "It's called Judas' Demonblade."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 37
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5a68616f2059756e2773205370656172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205a68616f2059756e27732053706561722e",
+        "lines": [
+          "It's called Zhao Yun's Spear."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 38
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f726372697374206f662041746f6e656d656e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f726372697374206f662041746f6e656d656e742e",
+        "lines": [
+          "It's called Orcrist of Atonement."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 39
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5265642d486169726564205069726174652053776f7264"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205265642d4861697265640a20205069726174652053776f72642e",
+        "lines": [
+          "It's called Red-Haired",
+          "Pirate Sword."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 40
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d696e6f7461757220417865"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d696e6f74617572204178652e",
+        "lines": [
+          "It's called Minotaur Axe."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 41
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4e616d616861676520436c6561766572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204e616d616861676520436c65617665722e",
+        "lines": [
+          "It's called Namahage Cleaver."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 42
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "546c616c6f63204b6e696665"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420546c616c6f63204b6e6966652e",
+        "lines": [
+          "It's called Tlaloc Knife."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 43
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "56657061722048616c62657264"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642056657061722048616c626572642e",
+        "lines": [
+          "It's called Vepar Halberd."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 44
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b75626c6169277320477265617473776f7264"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b75626c6169277320477265617473776f72642e",
+        "lines": [
+          "It's called Kublai's Greatsword."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 45
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "486f6c79205370656172206f662041726573"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420486f6c79205370656172206f6620417265732e",
+        "lines": [
+          "It's called Holy Spear of Ares."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 46
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "457863616c69627572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420457863616c696275722e",
+        "lines": [
+          "It's called Excalibur."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 47
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d7572616d617361"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d7572616d6173612e",
+        "lines": [
+          "It's called Muramasa."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 48
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426c7565204f616b20536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426c7565204f616b20536869656c642e",
+        "lines": [
+          "It's called Blue Oak Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 49
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "41726d6164696c6c6f2048696465"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642041726d6164696c6c6f20486964652e",
+        "lines": [
+          "It's called Armadillo Hide."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 50
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53696c7665722053616c6c6574"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053696c7665722053616c6c65742e",
+        "lines": [
+          "It's called Silver Sallet."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 51
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50686f656e69782042617363696e6574"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050686f656e69782042617363696e65742e",
+        "lines": [
+          "It's called Phoenix Bascinet."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 52
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420546f72746f69736520536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e7420546f72746f69736520536869656c642e",
+        "lines": [
+          "It's called Giant Tortoise Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 53
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "537069726974204472657373"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205370697269742044726573732e",
+        "lines": [
+          "It's called Spirit Dress."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 54
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426c616465627265616b6572204769"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426c616465627265616b65722047692e",
+        "lines": [
+          "It's called Bladebreaker Gi."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 55
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436f6f6c696e672041726d6f72"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436f6f6c696e672041726d6f722e",
+        "lines": [
+          "It's called Cooling Armor."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 56
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b616e656d2057617272696f7220536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b616e656d2057617272696f7220536869656c642e",
+        "lines": [
+          "It's called Kanem Warrior Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 57
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5a65616c6f742043756972617373"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205a65616c6f7420437569726173732e",
+        "lines": [
+          "It's called Zealot Cuirass."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 58
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4372696d736f6e2052696e676d61696c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204372696d736f6e2052696e676d61696c2e",
+        "lines": [
+          "It's called Crimson Ringmail."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 59
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "54696d7572277320436861696e6d61696c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642054696d7572277320436861696e6d61696c2e",
+        "lines": [
+          "It's called Timur's Chainmail."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 60
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "506561636f636b204d61696c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420506561636f636b204d61696c2e",
+        "lines": [
+          "It's called Peacock Mail."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 61
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "54756c612057617272696f722048656c6d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642054756c612057617272696f722048656c6d2e",
+        "lines": [
+          "It's called Tula Warrior Helm."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 62
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4e696e6a612047617262"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204e696e6a6120476172622e",
+        "lines": [
+          "It's called Ninja Garb."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 63
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416d6265722042726967616e64696e65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416d6265722042726967616e64696e652e",
+        "lines": [
+          "It's called Amber Brigandine."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 64
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4a616775617220476f6427732056657374"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204a616775617220476f64277320566573742e",
+        "lines": [
+          "It's called Jaguar God's Vest."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 65
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "42616e6469742773204d61696c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642042616e6469742773204d61696c2e",
+        "lines": [
+          "It's called Bandit's Mail."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 66
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "456d707265737320476f776e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420456d707265737320476f776e2e",
+        "lines": [
+          "It's called Empress Gown."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 67
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4e6f72697473756e6527732041726d6f72"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204e6f72697473756e6527732041726d6f722e",
+        "lines": [
+          "It's called Noritsune's Armor."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 68
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "417474696c612053756974"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420417474696c6120537569742e",
+        "lines": [
+          "It's called Attila Suit."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 69
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d656475736120536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d656475736120536869656c642e",
+        "lines": [
+          "It's called Medusa Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 70
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53616c6164696e27732053696c7665722041726d6f72"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053616c6164696e27732053696c7665722041726d6f722e",
+        "lines": [
+          "It's called Saladin's Silver Armor."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 71
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436861726c6573204d617274656c2041726d6f72"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436861726c6573204d617274656c2041726d6f722e",
+        "lines": [
+          "It's called Charles Martel Armor."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 72
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d696e6572766120536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d696e6572766120536869656c642e",
+        "lines": [
+          "It's called Minerva Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 73
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d61676963204c65617468657220476c6f766573"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d61676963204c65617468657220476c6f7665732e",
+        "lines": [
+          "It's called Magic Leather Gloves."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 74
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "546972656c65737320486177736572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420546972656c657373204861777365722e",
+        "lines": [
+          "It's called Tireless Hawser."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 75
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d696c6b7920576179204368617274"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d696c6b79205761792043686172742e",
+        "lines": [
+          "It's called Milky Way Chart."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 76
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "537461726c6967687420476c6f6265"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420537461726c6967687420476c6f62652e",
+        "lines": [
+          "It's called Starlight Globe."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 77
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "486f72616365277320506f656d73"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420486f72616365277320506f656d732e",
+        "lines": [
+          "It's called Horace's Poems."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 78
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4172616269616e204e6967687473"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204172616269616e204e69676874732e",
+        "lines": [
+          "It's called Arabian Nights."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 79
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "576f726c642050756e20426f6f6b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420576f726c642050756e20426f6f6b2e",
+        "lines": [
+          "It's called World Pun Book."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 80
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f6c64656e204469766964657273"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f6c64656e2044697669646572732e",
+        "lines": [
+          "It's called Golden Dividers."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 81
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "506f636b6574205761746368"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420506f636b65742057617463682e",
+        "lines": [
+          "It's called Pocket Watch."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 82
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "526f63636f2773205361696c696e67204775696465"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420526f63636f2773205361696c696e672047756964652e",
+        "lines": [
+          "It's called Rocco's Sailing Guide."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 83
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "48656176656e6c7920577269737462616e64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642048656176656e6c7920577269737462616e642e",
+        "lines": [
+          "It's called Heavenly Wristband."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 84
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47756964696e67205374616666"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047756964696e672053746166662e",
+        "lines": [
+          "It's called Guiding Staff."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 85
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "57617272696f72204f636172696e61"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642057617272696f72204f636172696e612e",
+        "lines": [
+          "It's called Warrior Ocarina."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 86
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426f61737466756c204265616b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426f61737466756c204265616b2e",
+        "lines": [
+          "It's called Boastful Beak."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 87
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "54726176656c73206f66204d6172636f20506f6c6f"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642054726176656c73206f66204d6172636f20506f6c6f2e",
+        "lines": [
+          "It's called Travels of Marco Polo."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 88
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "576172204472756d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420576172204472756d2e",
+        "lines": [
+          "It's called War Drum."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 89
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "506f736569646f6e277320526f6172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420506f736569646f6e277320526f61722e",
+        "lines": [
+          "It's called Poseidon's Roar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 90
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47616c6c69632057617273"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047616c6c696320576172732e",
+        "lines": [
+          "It's called Gallic Wars."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 91
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416c6578616e64657227732043616d706169676e73"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416c6578616e64657227732043616d706169676e732e",
+        "lines": [
+          "It's called Alexander's Campaigns."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 92
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d697261636c652042756c6c657420436861726d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d697261636c652042756c6c657420436861726d2e",
+        "lines": [
+          "It's called Miracle Bullet Charm."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 93
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47756e706f77646572204d616e75616c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047756e706f77646572204d616e75616c2e",
+        "lines": [
+          "It's called Gunpowder Manual."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 94
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "44656d6f6e2d5069657263696e67204172726f77"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642044656d6f6e2d5069657263696e67204172726f772e",
+        "lines": [
+          "It's called Demon-Piercing Arrow."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 95
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c696f6e2d46616e6720536177"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c696f6e2d46616e67205361772e",
+        "lines": [
+          "It's called Lion-Fang Saw."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 96
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50686964696173272043686973656c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050686964696173272043686973656c2e",
+        "lines": [
+          "It's called Phidias' Chisel."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 97
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53656c662d5368617270656e696e6720506c616e65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053656c662d5368617270656e696e6720506c616e652e",
+        "lines": [
+          "It's called Self-Sharpening Plane."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 98
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4865726f7068696c757327204d65646963696e65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204865726f7068696c757327204d65646963696e652e",
+        "lines": [
+          "It's called Herophilus' Medicine."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 99
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "44612056696e636920416e61746f6d79"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642044612056696e636920416e61746f6d792e",
+        "lines": [
+          "It's called Da Vinci Anatomy."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 100
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "43616e6f6e206f66204d65646963696e65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642043616e6f6e206f66204d65646963696e652e",
+        "lines": [
+          "It's called Canon of Medicine."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 101
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "486573746961277320506f74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420486573746961277320506f742e",
+        "lines": [
+          "It's called Hestia's Pot."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 102
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50696e6b204170726f6e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050696e6b204170726f6e2e",
+        "lines": [
+          "It's called Pink Apron."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 103
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4761757a65204d61736b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204761757a65204d61736b2e",
+        "lines": [
+          "It's called Gauze Mask."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 104
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5374796c69736820426f6f7473"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205374796c69736820426f6f74732e",
+        "lines": [
+          "It's called Stylish Boots."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 105
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "477265676f727927732043726f776e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420477265676f727927732043726f776e2e",
+        "lines": [
+          "It's called Gregory's Crown."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 106
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "496c6c7573747261746564204269626c65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420496c6c7573747261746564204269626c652e",
+        "lines": [
+          "It's called Illustrated Bible."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 107
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416e6369656e742043726f7373"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416e6369656e742043726f73732e",
+        "lines": [
+          "It's called Ancient Cross."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 108
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "417274206f6620576172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420417274206f66205761722e",
+        "lines": [
+          "It's called Art of War."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 109
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "477570746120537069726974204265617374"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204775707461205370697269742042656173742e",
+        "lines": [
+          "It's called Gupta Spirit Beast."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 110
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "48616e6e6962616c27732043616d706169676e73"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642048616e6e6962616c27732043616d706169676e732e",
+        "lines": [
+          "It's called Hannibal's Campaigns."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 111
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b696e6f6b756e69796120416261637573"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b696e6f6b756e697961204162616375732e",
+        "lines": [
+          "It's called Kinokuniya Abacus."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 112
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "56657a617327205363616c6573"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642056657a617327205363616c65732e",
+        "lines": [
+          "It's called Vezas' Scales."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 113
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4561676c652046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204561676c6520466967757265686561642e",
+        "lines": [
+          "It's called Eagle Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 114
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5069676c65742046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205069676c657420466967757265686561642e",
+        "lines": [
+          "It's called Piglet Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 115
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "536861636869686f6b6f"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420536861636869686f6b6f2e",
+        "lines": [
+          "It's called Shachihoko."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 116
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5768697465205768616c652046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205768697465205768616c6520466967757265686561642e",
+        "lines": [
+          "It's called White Whale Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 117
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "447261676f6e2046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420447261676f6e20466967757265686561642e",
+        "lines": [
+          "It's called Dragon Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 118
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "446f6c7068696e2046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420446f6c7068696e20466967757265686561642e",
+        "lines": [
+          "It's called Dolphin Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 119
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d616964656e2046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d616964656e20466967757265686561642e",
+        "lines": [
+          "It's called Maiden Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 120
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "44656d6f6e2046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642044656d6f6e20466967757265686561642e",
+        "lines": [
+          "It's called Demon Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 121
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b696e672046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b696e6720466967757265686561642e",
+        "lines": [
+          "It's called King Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 122
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d61646f6e6e612046696775726568656164"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d61646f6e6e6120466967757265686561642e",
+        "lines": [
+          "It's called Madonna Figurehead."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 123
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436f6d70617373"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436f6d706173732e",
+        "lines": [
+          "It's called Compass."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 124
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53657874616e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053657874616e742e",
+        "lines": [
+          "It's called Sextant."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 125
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "41726973746172636875732054656c6573636f7065"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642041726973746172636875732054656c6573636f70652e",
+        "lines": [
+          "It's called Aristarchus Telescope."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 126
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "46726f7a656e20526f7365"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642046726f7a656e20526f73652e",
+        "lines": [
+          "It's called Frozen Rose."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 127
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5261696e626f77204d6172626c6573"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205261696e626f77204d6172626c65732e",
+        "lines": [
+          "It's called Rainbow Marbles."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 128
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f6c642044757374"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f6c6420447573742e",
+        "lines": [
+          "It's called Gold Dust."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 129
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4272656164204d696c6c73746f6e65"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204272656164204d696c6c73746f6e652e",
+        "lines": [
+          "It's called Bread Millstone."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 130
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4875697a6f6e6720417274"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204875697a6f6e67204172742e",
+        "lines": [
+          "It's called Huizong Art."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 131
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "43656c65737469616c2054757262616e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642043656c65737469616c2054757262616e2e",
+        "lines": [
+          "It's called Celestial Turban."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 132
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53617070686f277320506f656d73"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053617070686f277320506f656d732e",
+        "lines": [
+          "It's called Sappho's Poems."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 133
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c616d656e74696e67204a6172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c616d656e74696e67204a61722e",
+        "lines": [
+          "It's called Lamenting Jar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 134
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "56656e7573206465204d696c6f"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642056656e7573206465204d696c6f2e",
+        "lines": [
+          "It's called Venus de Milo."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 135
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "537461696e65642d476c61737320466c6f776572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420537461696e65642d476c61737320466c6f7765722e",
+        "lines": [
+          "It's called Stained-Glass Flower."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 136
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53696c6c6120476f6c642043726f776e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053696c6c6120476f6c642043726f776e2e",
+        "lines": [
+          "It's called Silla Gold Crown."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 137
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436572616d69632045617272696e6773"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436572616d69632045617272696e67732e",
+        "lines": [
+          "It's called Ceramic Earrings."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 138
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4a616465204a6577656c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204a616465204a6577656c2e",
+        "lines": [
+          "It's called Jade Jewel."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 139
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5368616b756e74616c61"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205368616b756e74616c612e",
+        "lines": [
+          "It's called Shakuntala."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 140
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53686f736f696e2050697463686572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053686f736f696e20506974636865722e",
+        "lines": [
+          "It's called Shosoin Pitcher."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 141
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "426c61636b20476c61737320426f776c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420426c61636b20476c61737320426f776c2e",
+        "lines": [
+          "It's called Black Glass Bowl."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 142
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "456d62726f69646572656420436172706574"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420456d62726f696465726564204361727065742e",
+        "lines": [
+          "It's called Embroidered Carpet."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 143
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "536e6f772d53696c6b20526f6265"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420536e6f772d53696c6b20526f62652e",
+        "lines": [
+          "It's called Snow-Silk Robe."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 144
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f7279656f20496e63656e7365204275726e6572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f7279656f20496e63656e7365204275726e65722e",
+        "lines": [
+          "It's called Goryeo Incense Burner."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 145
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53757072656d65204c6f757065"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053757072656d65204c6f7570652e",
+        "lines": [
+          "It's called Supreme Loupe."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 146
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5261696e626f7720506172726f74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205261696e626f7720506172726f742e",
+        "lines": [
+          "It's called Rainbow Parrot."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 147
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "556c6c72277320426f77"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420556c6c72277320426f772e",
+        "lines": [
+          "It's called Ullr's Bow."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 148
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "43616d6279736573272043726f776e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642043616d6279736573272043726f776e2e",
+        "lines": [
+          "It's called Cambyses' Crown."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 149
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416b73756d20476f6c64205365616c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416b73756d20476f6c64205365616c2e",
+        "lines": [
+          "It's called Aksum Gold Seal."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 150
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "52696776656461"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420526967766564612e",
+        "lines": [
+          "It's called Rigveda."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 151
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b65646972692054616c69736d616e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b65646972692054616c69736d616e2e",
+        "lines": [
+          "It's called Kediri Talisman."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 152
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "51696e2050616c616365204c616d70"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642051696e2050616c616365204c616d702e",
+        "lines": [
+          "It's called Qin Palace Lamp."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 153
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4372797374616c20536b756c6c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204372797374616c20536b756c6c2e",
+        "lines": [
+          "It's called Crystal Skull."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 154
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5468616c6573205061706572204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205468616c6573205061706572204d61702e",
+        "lines": [
+          "It's called Thales Paper Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 155
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c656f62756c757320436c6f7468204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c656f62756c757320436c6f7468204d61702e",
+        "lines": [
+          "It's called Cleobulus Cloth Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 156
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "50657269616e6465722053746f6e65204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642050657269616e6465722053746f6e65204d61702e",
+        "lines": [
+          "It's called Periander Stone Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 157
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "536f6c6f6e204c656166204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420536f6c6f6e204c656166204d61702e",
+        "lines": [
+          "It's called Solon Leaf Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 158
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4269617320436f696e204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204269617320436f696e204d61702e",
+        "lines": [
+          "It's called Bias Coin Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 159
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436869726f6e2042616d626f6f204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436869726f6e2042616d626f6f204d61702e",
+        "lines": [
+          "It's called Chiron Bamboo Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 160
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "506974746163757320426c616465204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420506974746163757320426c616465204d61702e",
+        "lines": [
+          "It's called Pittacus Blade Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 161
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53746f6e6520436972636c65204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053746f6e6520436972636c65204d61702e",
+        "lines": [
+          "It's called Stone Circle Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 162
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4172656e61204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204172656e61204d61702e",
+        "lines": [
+          "It's called Arena Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 163
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436176652056696c6c616765204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436176652056696c6c616765204d61702e",
+        "lines": [
+          "It's called Cave Village Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 164
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "536168617261204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420536168617261204d61702e",
+        "lines": [
+          "It's called Sahara Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 165
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "526f79616c204d6f73717565204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420526f79616c204d6f73717565204d61702e",
+        "lines": [
+          "It's called Royal Mosque Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 166
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4d756768616c20456d70697265204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204d756768616c20456d70697265204d61702e",
+        "lines": [
+          "It's called Mughal Empire Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 167
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416e6369656e742054656d706c65204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416e6369656e742054656d706c65204d61702e",
+        "lines": [
+          "It's called Ancient Temple Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 168
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4265696a696e67204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204265696a696e67204d61702e",
+        "lines": [
+          "It's called Beijing Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 169
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "526f79616c20546f6d62204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420526f79616c20546f6d62204d61702e",
+        "lines": [
+          "It's called Royal Tomb Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 170
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "476f6c64656e2054656d706c65204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420476f6c64656e2054656d706c65204d61702e",
+        "lines": [
+          "It's called Golden Temple Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 171
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416e6369656e742043697479204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416e6369656e742043697479204d61702e",
+        "lines": [
+          "It's called Ancient City Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 172
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "417a74656320506963746f7269616c204d6170"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420417a74656320506963746f7269616c204d61702e",
+        "lines": [
+          "It's called Aztec Pictorial Map."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 173
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c642050617263686d656e74"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c642050617263686d656e742e",
+        "lines": [
+          "It's called Old Parchment."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 174
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5061747465726e656420436c6f7468"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205061747465726e656420436c6f74682e",
+        "lines": [
+          "It's called Patterned Cloth."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 175
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "55707065722053746f6e65205461626c6574"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642055707065722053746f6e65205461626c65742e",
+        "lines": [
+          "It's called Upper Stone Tablet."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 176
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "45766572677265656e204c6f747573204c656166"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642045766572677265656e204c6f747573204c6561662e",
+        "lines": [
+          "It's called Evergreen Lotus Leaf."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 177
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "416e6369656e74204b696e67646f6d20436f696e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420416e6369656e74204b696e67646f6d20436f696e2e",
+        "lines": [
+          "It's called Ancient Kingdom Coin."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 178
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "54616e672042616d626f6f204372616674"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642054616e672042616d626f6f2043726166742e",
+        "lines": [
+          "It's called Tang Bamboo Craft."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 179
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436572656d6f6e69616c204b6e696665"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436572656d6f6e69616c204b6e6966652e",
+        "lines": [
+          "It's called Ceremonial Knife."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 180
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "52656420447965"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420526564204479652e",
+        "lines": [
+          "It's called Red Dye."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 181
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4272617373204c616d70"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204272617373204c616d702e",
+        "lines": [
+          "It's called Brass Lamp."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 182
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c6f7765722053746f6e65205461626c6574"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c6f7765722053746f6e65205461626c65742e",
+        "lines": [
+          "It's called Lower Stone Tablet."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 183
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b757368616e20506c6174746572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b757368616e20506c61747465722e",
+        "lines": [
+          "It's called Kushan Platter."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 184
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4c6f74696f6e204a6172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204c6f74696f6e204a61722e",
+        "lines": [
+          "It's called Lotion Jar."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 185
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "42616d626f6f20417373656d626c7920506c616e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642042616d626f6f20417373656d626c7920506c616e2e",
+        "lines": [
+          "It's called Bamboo Assembly Plan."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 186
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "53756e2d437265737420536865617468"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642053756e2d4372657374205368656174682e",
+        "lines": [
+          "It's called Sun-Crest Sheath."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 187
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "466c616d652047656d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420466c616d652047656d2e",
+        "lines": [
+          "It's called Flame Gem."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 188
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c6420446167676572"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c64204461676765722e",
+        "lines": [
+          "It's called Old Dagger."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 189
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4565726965204d61736b"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204565726965204d61736b2e",
+        "lines": [
+          "It's called Eerie Mask."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 190
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c65617220526f73652051756172747a"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c65617220526f73652051756172747a2e",
+        "lines": [
+          "It's called Clear Rose Quartz."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 191
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47656d2d456174696e672047656d"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047656d2d456174696e672047656d2e",
+        "lines": [
+          "It's called Gem-Eating Gem."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 192
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "556e746f756368656420426c616465"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420556e746f756368656420426c6164652e",
+        "lines": [
+          "It's called Untouched Blade."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 193
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "57697463682049646f6c"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642057697463682049646f6c2e",
+        "lines": [
+          "It's called Witch Idol."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 194
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "5477697374656420486f726e"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564205477697374656420486f726e2e",
+        "lines": [
+          "It's called Twisted Horn."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 195
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4b696e67277320536869656c64"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204b696e67277320536869656c642e",
+        "lines": [
+          "It's called King's Shield."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 196
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420526564205370656172"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e74205265642053706561722e",
+        "lines": [
+          "It's called Giant Red Spear."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 197
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c6420446167676572204d61702031"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c6420446167676572204d617020312e",
+        "lines": [
+          "It's called Old Dagger Map 1."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 198
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c6420446167676572204d61702032"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c6420446167676572204d617020322e",
+        "lines": [
+          "It's called Old Dagger Map 2."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 199
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c6420446167676572204d61702033"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c6420446167676572204d617020332e",
+        "lines": [
+          "It's called Old Dagger Map 3."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 200
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4f6c6420446167676572204d61702034"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204f6c6420446167676572204d617020342e",
+        "lines": [
+          "It's called Old Dagger Map 4."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 201
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c65617220526f73652051756172747a204d61702031"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c65617220526f73650a202051756172747a204d617020312e",
+        "lines": [
+          "It's called Clear Rose",
+          "Quartz Map 1."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 202
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c65617220526f73652051756172747a204d61702032"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c65617220526f73650a202051756172747a204d617020322e",
+        "lines": [
+          "It's called Clear Rose",
+          "Quartz Map 2."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 203
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c65617220526f73652051756172747a204d61702033"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c65617220526f73650a202051756172747a204d617020332e",
+        "lines": [
+          "It's called Clear Rose",
+          "Quartz Map 3."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 204
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "436c65617220526f73652051756172747a204d61702034"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420436c65617220526f73650a202051756172747a204d617020342e",
+        "lines": [
+          "It's called Clear Rose",
+          "Quartz Map 4."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 205
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "466c616d652047656d204d61702031"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420466c616d652047656d204d617020312e",
+        "lines": [
+          "It's called Flame Gem Map 1."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 206
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "466c616d652047656d204d61702032"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420466c616d652047656d204d617020322e",
+        "lines": [
+          "It's called Flame Gem Map 2."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 207
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "466c616d652047656d204d61702033"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420466c616d652047656d204d617020332e",
+        "lines": [
+          "It's called Flame Gem Map 3."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 208
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "466c616d652047656d204d61702034"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c656420466c616d652047656d204d617020342e",
+        "lines": [
+          "It's called Flame Gem Map 4."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 209
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47656d2d456174696e672047656d204d61702031"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047656d2d456174696e672047656d204d617020312e",
+        "lines": [
+          "It's called Gem-Eating Gem Map 1."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 210
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47656d2d456174696e672047656d204d61702032"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047656d2d456174696e672047656d204d617020322e",
+        "lines": [
+          "It's called Gem-Eating Gem Map 2."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 211
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47656d2d456174696e672047656d204d61702033"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047656d2d456174696e672047656d204d617020332e",
+        "lines": [
+          "It's called Gem-Eating Gem Map 3."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 212
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "47656d2d456174696e672047656d204d61702034"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c65642047656d2d456174696e672047656d204d617020342e",
+        "lines": [
+          "It's called Gem-Eating Gem Map 4."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 213
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420526564205370656172204d61702031"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e7420526564205370656172204d617020312e",
+        "lines": [
+          "It's called Giant Red Spear Map 1."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 214
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420526564205370656172204d61702032"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e7420526564205370656172204d617020322e",
+        "lines": [
+          "It's called Giant Red Spear Map 2."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 215
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420526564205370656172204d61702033"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e7420526564205370656172204d617020332e",
+        "lines": [
+          "It's called Giant Red Spear Map 3."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 216
+      },
+      {
+        "id": 831,
+        "values_hex": [
+          "4769616e7420526564205370656172204d61702034"
+        ],
+        "parent": 33897492,
+        "table_or_player_ID": 34694880,
+        "formatted_hex": "20497427732063616c6c6564204769616e7420526564205370656172204d617020342e",
+        "lines": [
+          "It's called Giant Red Spear Map 4."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "native_value_index": 217
+      }
+    ],
+    "current_item_getters": 218,
+    "item_name_changes_from_historical_context": [
+      [
+        116,
+        "4f7263612046696775726568656164",
+        "536861636869686f6b6f"
+      ]
+    ],
+    "original_eight_gift_selectors": [
+      {
+        "table": 34694880,
+        "route": 0,
+        "selected_id": 830
+      },
+      {
+        "table": 34694880,
+        "route": 1,
+        "selected_id": 831
+      },
+      {
+        "table": 34694880,
+        "route": 2,
+        "selected_id": 832
+      },
+      {
+        "table": 34694880,
+        "route": 3,
+        "selected_id": 833
+      },
+      {
+        "table": 34694672,
+        "route": 0,
+        "selected_id": 835
+      },
+      {
+        "table": 34694672,
+        "route": 1,
+        "selected_id": 836
+      },
+      {
+        "table": 34694672,
+        "route": 2,
+        "selected_id": 837
+      },
+      {
+        "table": 34694672,
+        "route": 3,
+        "selected_id": 838
+      }
+    ],
+    "native_fonts": [
+      {
+        "id": 827,
+        "index": 0,
+        "lines": [
+          "Ah, Rafael? Here's to meeting you!"
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 827,
+        "index": 1,
+        "lines": [
+          "Ah, Hodram? Here's to meeting you!"
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 827,
+        "index": 2,
+        "lines": [
+          "Ah, Lil? Here's to meeting you!"
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 827,
+        "index": 3,
+        "lines": [
+          "Ah, Maria? Here's to meeting you!"
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 831,
+        "index": 71,
+        "lines": [
+          "It's called Saladin's Silver Armor."
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 831,
+        "index": 30,
+        "lines": [
+          "It's called Valiant Bec de Corbin."
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 831,
+        "index": 40,
+        "lines": [
+          "It's called Red-Haired",
+          "Pirate Sword."
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      },
+      {
+        "id": 831,
+        "index": 16,
+        "lines": [
+          "It's called Loom."
+        ],
+        "complete_ink_and_blank_mask_exact": true,
+        "glyphs_in_order": true
+      }
+    ],
+    "current_snapshot": "work\\tavern_toast_and_gift_20261114_v2\\paid\\frame_006951_arm9_ram.bin",
+    "snapshot_sha256": "7189ace01e6280508804048c12cbb9f5b8fc0251420ceed13f14ac4c636232d9",
+    "geometry": {
+      "native_raster_sha256": "ad8ec57af672a40f3060be111dcf9d5218ac27163f9734a658c6cedbefcdc072",
+      "independent_font_sha256": "9b2df890c2ca84918ae5dac4244d51106a94fc7bc1e5dc888cf902f1ecc3d489",
+      "ink_glyph_height": 12,
+      "native_row_step": 16,
+      "paper": [
+        228,
+        48
+      ],
+      "screenshot_calibration": "work/analysis/town_services_pixel_anchor_v2101e/original49_exact_native_ink_anchor.json"
+    },
+    "sheet": "work\\tavern_toast_and_gift_20261114_v2\\native_pages.png",
+    "sheet_sha256": "ee7369ec8225b6257d43324215571ef9f85b0d25e1da7341dfc025d1e110b998"
+  },
+  "candidate_sha256": "0bee041181d6b748840d4f8ee7bf1ffa7346da0bd6ce9c31404c592ba3c89900",
+  "full_goal_complete": false,
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "direct_visual_review_complete": true,
+  "complete_exchange_review": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\tavern_drinks_rumors_gifts_20261114_v1.json",
+  "complete_exchange_review_sha256": "d0502182eb178f5c71c8854d4cca018a9e4ffb4bdcf73c1f2dca4173f0afa6d5"
+}

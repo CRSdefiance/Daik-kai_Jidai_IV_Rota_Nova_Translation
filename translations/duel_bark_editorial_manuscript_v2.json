@@ -1,0 +1,978 @@
+{
+  "format": "dk4-native-common-editorial-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "duel-timed-reaction-postmacro24x3-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": false,
+  "status": "native-approved;experimental-integration-and-gameplay-pending",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1189_candidate.nds",
+  "current_ROM_sha256": "a7b7799052a83703dc5a2bf84e946e43b31d5e1f795f9f3371417412f60c7df4",
+  "current_COMMON_sha256": "7f2d52592e5a88cca3fbf72f3a3474e822da5574fa8df564168d4699c1c375ba",
+  "current_ARM9_sha256": "f7b408583816b4f71db0e85f04e0409d5464ce1c8ca1e343643a17350b8e04ce",
+  "native_context_proof": "work\\analysis\\duel_bark_context_v1199\\source_context_packet.json",
+  "native_context_proof_sha256": "045d12ef054bd34d516a51b87c8454f943de75ccb212028d191dd14e1adbfb11",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1957",
+      "message_id": 1957,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class0",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        0
+      ],
+      "source_reference": {
+        "message_id": 1957,
+        "block": 21,
+        "table_offset": 1321050,
+        "block_offset": 1352,
+        "copy_end": 1364,
+        "record_index": 23,
+        "start": 1,
+        "end": 13
+      },
+      "source_hex": "82ce82c182bf82e882be8149",
+      "source_Japanese": "ばっちりだ！",
+      "canonical_source_hex": "82ce82c182bf82e882be8149",
+      "current_reference": {
+        "message_id": 1957,
+        "block": 21,
+        "table_offset": 1321050,
+        "block_offset": 2449,
+        "copy_end": 2458,
+        "record_index": 196,
+        "start": 0,
+        "end": 8
+      },
+      "current_text_hex": "5065726665637421",
+      "current_English": "Perfect!",
+      "source_meaning": "An upbeat exclamation that the action went exactly right.",
+      "english": "Perfect!",
+      "localization_note": "Retain the concise, idiomatic positive reaction. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "5065726665637421",
+      "formatted_lines": [
+        "Perfect!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1958",
+      "message_id": 1958,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class1",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "source_reference": {
+        "message_id": 1958,
+        "block": 21,
+        "table_offset": 1321052,
+        "block_offset": 1364,
+        "copy_end": 1376,
+        "record_index": 23,
+        "start": 13,
+        "end": 25
+      },
+      "source_hex": "81638ca990d882c182bd8149",
+      "source_Japanese": "…見切った！",
+      "canonical_source_hex": "81638ca990d882c182bd8149",
+      "current_reference": {
+        "message_id": 1958,
+        "block": 21,
+        "table_offset": 1321052,
+        "block_offset": 2458,
+        "copy_end": 2483,
+        "record_index": 197,
+        "start": 0,
+        "end": 24
+      },
+      "current_text_hex": "2e2e2e8268277665207265616420796f7572206d6f766521",
+      "current_English": "...Ｉ've read your move!",
+      "source_meaning": "A restrained, confident reaction: the speaker has read through or anticipated the move.",
+      "english": "...I saw that coming!",
+      "localization_note": "Use the natural combat idiom saw that coming for 見切った. Keep the source hesitation, normalize the old fullwidth I, and do not add a supernatural ability. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "2e2e2e4920736177207468617420636f6d696e6721",
+      "formatted_lines": [
+        "...I saw that coming!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1959",
+      "message_id": 1959,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class2",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "source_reference": {
+        "message_id": 1959,
+        "block": 21,
+        "table_offset": 1321054,
+        "block_offset": 1376,
+        "copy_end": 1404,
+        "record_index": 23,
+        "start": 25,
+        "end": 50
+      },
+      "source_hex": "82bb82f182c88d558c820a92ca977082b582c882a282e68149",
+      "source_Japanese": "そんな攻撃\n通用しないよ！",
+      "canonical_source_hex": "82bb82f182c88d558c820a92ca977082b582c882a282e68149",
+      "current_reference": {
+        "message_id": 1959,
+        "block": 21,
+        "table_offset": 1321054,
+        "block_offset": 2483,
+        "copy_end": 2513,
+        "record_index": 198,
+        "start": 0,
+        "end": 29
+      },
+      "current_text_hex": "546861742061747461636b20776f6e277420776f726b206f6e206d6521",
+      "current_English": "That attack won't work on me!",
+      "source_meaning": "Dismisses the effectiveness of an attack against the speaker.",
+      "english": "That attack won't work on me!",
+      "localization_note": "Retain the natural, confident second-person combat taunt. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "546861742061747461636b20776f6e277420776f726b206f6e206d6521",
+      "formatted_lines": [
+        "That attack",
+        "won't work on me!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1960",
+      "message_id": 1960,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class3",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "source_reference": {
+        "message_id": 1960,
+        "block": 21,
+        "table_offset": 1321056,
+        "block_offset": 1404,
+        "copy_end": 1428,
+        "record_index": 24,
+        "start": 2,
+        "end": 25
+      },
+      "source_hex": "8ac382a282ed81490a82c782b18ca982c482e982cc8148",
+      "source_Japanese": "甘いわ！\nどこ見てるの？",
+      "canonical_source_hex": "6f20736c6f77212045796573206f6e206d652120202020",
+      "current_reference": {
+        "message_id": 1960,
+        "block": 21,
+        "table_offset": 1321056,
+        "block_offset": 2513,
+        "copy_end": 2535,
+        "record_index": 199,
+        "start": 0,
+        "end": 21
+      },
+      "current_text_hex": "546f6f20736c6f77212045796573206f6e206d6521",
+      "current_English": "Too slow! Eyes on me!",
+      "source_meaning": "A feminine, dismissive taunt: the opponent is naive/easy to read and is looking the wrong way.",
+      "english": "Too easy! Where are you looking?",
+      "localization_note": "甘い is dismissive of the effort rather than specifically its speed. Preserve the pointed question as a natural taunt. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "546f6f2065617379212057686572652061726520796f75206c6f6f6b696e673f",
+      "formatted_lines": [
+        "Too easy!",
+        "Where are you looking?"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1961",
+      "message_id": 1961,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class4",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "source_reference": {
+        "message_id": 1961,
+        "block": 21,
+        "table_offset": 1321058,
+        "block_offset": 1428,
+        "copy_end": 1460,
+        "record_index": 25,
+        "start": 0,
+        "end": 29
+      },
+      "source_hex": "82a882e782a882e781490a82e282e98b4382a082f182cc82a982a28148",
+      "source_Japanese": "おらおら！\nやる気あんのかい？",
+      "canonical_source_hex": "436f6d65206f6e212041726520796f7520747279696e673f2020202020",
+      "current_reference": {
+        "message_id": 1961,
+        "block": 21,
+        "table_offset": 1321058,
+        "block_offset": 2535,
+        "copy_end": 2560,
+        "record_index": 200,
+        "start": 0,
+        "end": 24
+      },
+      "current_text_hex": "436f6d65206f6e212041726520796f7520747279696e673f",
+      "current_English": "Come on! Are you trying?",
+      "source_meaning": "A rough, goading challenge asking whether the opponent has any will to fight.",
+      "english": "Come on! Are you even trying?",
+      "localization_note": "Even makes the English question a taunt rather than a sincere inquiry; retain the rough direct voice without added insults. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "436f6d65206f6e212041726520796f75206576656e20747279696e673f",
+      "formatted_lines": [
+        "Come on!",
+        "Are you even trying?"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1962",
+      "message_id": 1962,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class5",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "source_reference": {
+        "message_id": 1962,
+        "block": 21,
+        "table_offset": 1321060,
+        "block_offset": 1460,
+        "copy_end": 1480,
+        "record_index": 26,
+        "start": 2,
+        "end": 22
+      },
+      "source_hex": "82bb82e7814188ea8c82954b928682b682e18149",
+      "source_Japanese": "そら、一撃必中じゃ！",
+      "canonical_source_hex": "82bb82e7814188ea8c82954b928682b682e18149",
+      "current_reference": {
+        "message_id": 1962,
+        "block": 21,
+        "table_offset": 1321060,
+        "block_offset": 2560,
+        "copy_end": 2596,
+        "record_index": 201,
+        "start": 0,
+        "end": 35
+      },
+      "current_text_hex": "546865726521204f6e6520737472696b652c207269676874206f6e2074617267657421",
+      "current_English": "There! One strike, right on target!",
+      "source_meaning": "A confident old-fashioned exclamation boasting of a strike that surely hits its mark.",
+      "english": "Take that! Right on target!",
+      "localization_note": "Use a natural shout and an accuracy boast. Do not introduce an elder/family address or ornate archaic grammar to mimic じゃ. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "54616b65207468617421205269676874206f6e2074617267657421",
+      "formatted_lines": [
+        "Take that!",
+        "Right on target!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1963",
+      "message_id": 1963,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class6",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "source_reference": {
+        "message_id": 1963,
+        "block": 21,
+        "table_offset": 1321062,
+        "block_offset": 1480,
+        "copy_end": 1500,
+        "record_index": 26,
+        "start": 22,
+        "end": 42
+      },
+      "source_hex": "82ed816082a2814182a082bd82c182bd81608149",
+      "source_Japanese": "わ～い、あたった～！",
+      "canonical_source_hex": "82ed816082a2814182a082bd82c182bd81608149",
+      "current_reference": {
+        "message_id": 1963,
+        "block": 21,
+        "table_offset": 1321062,
+        "block_offset": 2596,
+        "copy_end": 2613,
+        "record_index": 202,
+        "start": 0,
+        "end": 16
+      },
+      "current_text_hex": "596179212082682068697420796f7521",
+      "current_English": "Yay! Ｉ hit you!",
+      "source_meaning": "Childlike delight at landing a hit.",
+      "english": "Yay! I hit you!",
+      "localization_note": "Retain the cheerful simple wording; normalize the inherited fullwidth I as compiler-independent English text. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "5961792120492068697420796f7521",
+      "formatted_lines": [
+        "Yay! I hit you!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1964",
+      "message_id": 1964,
+      "source_family": "positive_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class7",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698592,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "source_reference": {
+        "message_id": 1964,
+        "block": 21,
+        "table_offset": 1321064,
+        "block_offset": 1500,
+        "copy_end": 1520,
+        "record_index": 26,
+        "start": 42,
+        "end": 60
+      },
+      "source_hex": "82e682b5814182b182b182c582b782c88149",
+      "source_Japanese": "よし、ここですな！",
+      "canonical_source_hex": "82e682b5814182b182b182c582b782c88149",
+      "current_reference": {
+        "message_id": 1964,
+        "block": 21,
+        "table_offset": 1321064,
+        "block_offset": 2613,
+        "copy_end": 2631,
+        "record_index": 203,
+        "start": 0,
+        "end": 17
+      },
+      "current_text_hex": "476f6f6421205269676874206865726521",
+      "current_English": "Good! Right here!",
+      "source_meaning": "A measured positive reaction identifying the right point or moment.",
+      "english": "Good! Right here!",
+      "localization_note": "Retain the concise, grammatical spoken fragment; do not invent a named weakness or special technique. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "476f6f6421205269676874206865726521",
+      "formatted_lines": [
+        "Good! Right here!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1965",
+      "message_id": 1965,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class0",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        0
+      ],
+      "source_reference": {
+        "message_id": 1965,
+        "block": 21,
+        "table_offset": 1321066,
+        "block_offset": 1520,
+        "copy_end": 1540,
+        "record_index": 27,
+        "start": 1,
+        "end": 18
+      },
+      "source_hex": "82a482ed82c10a8eb8947382b582bd8163",
+      "source_Japanese": "うわっ\n失敗した…",
+      "canonical_source_hex": "686f6121204d69737365642e2e2e202020",
+      "current_reference": {
+        "message_id": 1965,
+        "block": 21,
+        "table_offset": 1321066,
+        "block_offset": 2631,
+        "copy_end": 2647,
+        "record_index": 204,
+        "start": 0,
+        "end": 15
+      },
+      "current_text_hex": "57686f6121204d69737365642e2e2e",
+      "current_English": "Whoa! Missed...",
+      "source_meaning": "A startled exclamation followed by acknowledgment of a failed action.",
+      "english": "Whoa! I messed that up...",
+      "localization_note": "失敗 is a failed attempt, not necessarily a literal missed blow. Express the self-directed admission naturally. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "57686f61212049206d657373656420746861742075702e2e2e",
+      "formatted_lines": [
+        "Whoa!",
+        "I messed that up..."
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1966",
+      "message_id": 1966,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class1",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "source_reference": {
+        "message_id": 1966,
+        "block": 21,
+        "table_offset": 1321068,
+        "block_offset": 1540,
+        "copy_end": 1560,
+        "record_index": 28,
+        "start": 2,
+        "end": 21
+      },
+      "source_hex": "82ad82c181630a96fb926682b582bd82a98149",
+      "source_Japanese": "くっ…\n油断したか！",
+      "canonical_source_hex": "6d6e2e2e2e20536c6970706564212020202020",
+      "current_reference": {
+        "message_id": 1966,
+        "block": 21,
+        "table_offset": 1321068,
+        "block_offset": 2647,
+        "copy_end": 2664,
+        "record_index": 205,
+        "start": 0,
+        "end": 16
+      },
+      "current_text_hex": "44616d6e2e2e2e20536c697070656421",
+      "current_English": "Damn... Slipped!",
+      "source_meaning": "A frustrated reaction admitting carelessness or a lapse in vigilance.",
+      "english": "Ugh... I let my guard down!",
+      "localization_note": "Correct the old Slipped mistranslation of 油断. Use the established English combat idiom without inventing a physical stumble. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "5567682e2e2e2049206c6574206d7920677561726420646f776e21",
+      "formatted_lines": [
+        "Ugh...",
+        "I let my guard down!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1967",
+      "message_id": 1967,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class2",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "source_reference": {
+        "message_id": 1967,
+        "block": 21,
+        "table_offset": 1321070,
+        "block_offset": 1560,
+        "copy_end": 1588,
+        "record_index": 29,
+        "start": 0,
+        "end": 27
+      },
+      "source_hex": "8a4f82b582bd81490a92b28e7182c98fe682e882b782ac82bd8163",
+      "source_Japanese": "外した！\n調子に乗りすぎた…",
+      "canonical_source_hex": "4d69737365642120476f7420746f6f20636f636b792e2e2e202020",
+      "current_reference": {
+        "message_id": 1967,
+        "block": 21,
+        "table_offset": 1321070,
+        "block_offset": 2664,
+        "copy_end": 2689,
+        "record_index": 206,
+        "start": 0,
+        "end": 24
+      },
+      "current_text_hex": "4d69737365642120476f7420746f6f20636f636b792e2e2e",
+      "current_English": "Missed! Got too cocky...",
+      "source_meaning": "Acknowledges missing and becoming overconfident or carried away.",
+      "english": "Missed! Got too cocky...",
+      "localization_note": "Retain the natural clipped combat reaction and self-reproach. These deliberate spoken fragments preserve the source voice. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "4d69737365642120476f7420746f6f20636f636b792e2e2e",
+      "formatted_lines": [
+        "Missed! Got too cocky..."
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1968",
+      "message_id": 1968,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class3",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "source_reference": {
+        "message_id": 1968,
+        "block": 21,
+        "table_offset": 1321072,
+        "block_offset": 1588,
+        "copy_end": 1616,
+        "record_index": 30,
+        "start": 0,
+        "end": 25
+      },
+      "source_hex": "82f182e0815b81490a834383898343838982b782e9815b8149",
+      "source_Japanese": "んもー！\nイライラするー！",
+      "canonical_source_hex": "5567682120536f20616e6e6f79696e67212020202020202020",
+      "current_reference": {
+        "message_id": 1968,
+        "block": 21,
+        "table_offset": 1321072,
+        "block_offset": 2689,
+        "copy_end": 2707,
+        "record_index": 207,
+        "start": 0,
+        "end": 17
+      },
+      "current_text_hex": "5567682120536f20616e6e6f79696e6721",
+      "current_English": "Ugh! So annoying!",
+      "source_meaning": "An irritated, drawn-out complaint expressing frustration.",
+      "english": "Ugh! This is so frustrating!",
+      "localization_note": "Complete the English complaint naturally without inventing an accusation about the opponent. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "55676821205468697320697320736f206672757374726174696e6721",
+      "formatted_lines": [
+        "Ugh!",
+        "This is so frustrating!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1969",
+      "message_id": 1969,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class4",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "source_reference": {
+        "message_id": 1969,
+        "block": 21,
+        "table_offset": 1321074,
+        "block_offset": 1616,
+        "copy_end": 1636,
+        "record_index": 31,
+        "start": 2,
+        "end": 22
+      },
+      "source_hex": "82bf82c181418fad82b58fc582c182bd82ba8149",
+      "source_Japanese": "ちっ、少し焦ったぜ！",
+      "canonical_source_hex": "82bf82c181418fad82b58fc582c182bd82ba8149",
+      "current_reference": {
+        "message_id": 1969,
+        "block": 21,
+        "table_offset": 1321074,
+        "block_offset": 2707,
+        "copy_end": 2737,
+        "record_index": 208,
+        "start": 0,
+        "end": 29
+      },
+      "current_text_hex": "546368212082682072757368656420746861742061206c6974746c6521",
+      "current_English": "Tch! Ｉ rushed that a little!",
+      "source_meaning": "A rough, annoyed reaction admitting a little haste or impatience.",
+      "english": "Damn! I rushed that a bit!",
+      "localization_note": "Use a mild gruff exclamation and preserve the source hedge 少し with a bit. Normalize the old fullwidth I. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "44616d6e21204920727573686564207468617420612062697421",
+      "formatted_lines": [
+        "Damn!",
+        "I rushed that a bit!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1970",
+      "message_id": 1970,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class5",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "source_reference": {
+        "message_id": 1970,
+        "block": 21,
+        "table_offset": 1321076,
+        "block_offset": 1636,
+        "copy_end": 1668,
+        "record_index": 31,
+        "start": 22,
+        "end": 53
+      },
+      "source_hex": "82a482c18163814182c882f182cc0a82dc82be82b182ea82a982e782b682e1",
+      "source_Japanese": "うっ…、なんの\nまだこれからじゃ",
+      "canonical_source_hex": "82a482c18163814182c882f182cc0a82dc82be82b182ea82a982e782b682e1",
+      "current_reference": {
+        "message_id": 1970,
+        "block": 21,
+        "table_offset": 1321076,
+        "block_offset": 2737,
+        "copy_end": 2791,
+        "record_index": 209,
+        "start": 0,
+        "end": 53
+      },
+      "current_text_hex": "5567682e2e2e204e6f206d61747465722e2054686973206669676874206973206a7573742067657474696e67207374617274656421",
+      "current_English": "Ugh... No matter. This fight is just getting started!",
+      "source_meaning": "A pained but defiant older voice insists that the encounter is only beginning or that more is still to come.",
+      "english": "Ugh... No matter. This fight is just getting started!",
+      "localization_note": "Retain the natural, deliberately formal No matter and the idiomatic defiant continuation; do not add a promise of victory. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "5567682e2e2e204e6f206d61747465722e2054686973206669676874206973206a7573742067657474696e67207374617274656421",
+      "formatted_lines": [
+        "Ugh... No matter.",
+        "This fight is just",
+        "getting started!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1971",
+      "message_id": 1971,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class6",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "source_reference": {
+        "message_id": 1971,
+        "block": 21,
+        "table_offset": 1321078,
+        "block_offset": 1668,
+        "copy_end": 1696,
+        "record_index": 32,
+        "start": 0,
+        "end": 27
+      },
+      "source_hex": "82a482ed82a081490a82e682af82e782ea82bf82e182c182bd815b",
+      "source_Japanese": "うわあ！\nよけられちゃったー",
+      "canonical_source_hex": "57686f6121205468657920646f6467656420697421202020202020",
+      "current_reference": {
+        "message_id": 1971,
+        "block": 21,
+        "table_offset": 1321078,
+        "block_offset": 2791,
+        "copy_end": 2813,
+        "record_index": 210,
+        "start": 0,
+        "end": 21
+      },
+      "current_text_hex": "57686f6121205468657920646f6467656420697421",
+      "current_English": "Whoa! They dodged it!",
+      "source_meaning": "A surprised, disappointed young voice reacts to the opponent evading the action.",
+      "english": "Whoa! You dodged it!",
+      "localization_note": "Address the present dueling opponent directly in natural English; preserve the surprise and evasion rather than adding a new participant. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "57686f612120596f7520646f6467656420697421",
+      "formatted_lines": [
+        "Whoa! You dodged it!"
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    },
+    {
+      "id": "COMMON_MESSAGE_1972",
+      "message_id": 1972,
+      "source_family": "negative_action_reaction",
+      "consumer": "original-duel-D458-side0-timed-action-feedback",
+      "speaker": "Original duel side0 speaker, voice class7",
+      "context": "Independent voice alternative in a timed duel action. Original1042C selects the positive/negative feedback table and calls D458 with native side0/duration60. Alternatives are not sequential conversation. The source actor is the nested duel controller side0; input timing, combat result and identity are not changed by translation.",
+      "source_table": 34698688,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "source_reference": {
+        "message_id": 1972,
+        "block": 21,
+        "table_offset": 1321080,
+        "block_offset": 1696,
+        "copy_end": 1728,
+        "record_index": 33,
+        "start": 0,
+        "end": 29
+      },
+      "source_hex": "82ae82cd81630a90ed82a282cd8bea8ee882c882cc82c582b782e68163",
+      "source_Japanese": "ぐは…\n戦いは苦手なのですよ…",
+      "canonical_source_hex": "5567682e2e2e204e6f20676f6f6420617420636f6d6261742e2e2e2020",
+      "current_reference": {
+        "message_id": 1972,
+        "block": 21,
+        "table_offset": 1321080,
+        "block_offset": 2813,
+        "copy_end": 2841,
+        "record_index": 211,
+        "start": 0,
+        "end": 27
+      },
+      "current_text_hex": "5567682e2e2e204e6f20676f6f6420617420636f6d6261742e2e2e",
+      "current_English": "Ugh... No good at combat...",
+      "source_meaning": "A pained, self-effacing speaker admits being poor at fighting.",
+      "english": "Ugh... I'm not much of a fighter...",
+      "localization_note": "Replace the awkward No good at combat fragment with a natural complete admission while retaining both source hesitations and the lack of confidence. Independent alternatives were read aloud as positive/negative timed-action reactions, not as consecutive dialogue. Prose has no authored line breaks, padding or alignment; post-macro24x3 formatting and original gameplay remain required.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": "none",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "native-source-prose-and-format-approved;original-gameplay-pending",
+      "compiled_hex": "5567682e2e2e2049276d206e6f74206d756368206f66206120666967687465722e2e2e",
+      "formatted_lines": [
+        "Ugh... I'm not much",
+        "of a fighter..."
+      ],
+      "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+      "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484"
+    }
+  ],
+  "full_goal_complete": false,
+  "supersedes_manuscript": "translations\\duel_bark_editorial_manuscript_v1.json",
+  "supersedes_manuscript_sha256": "cfa672a24ce3f5068d178446201188eabea532c481dcc3f19d54dfe31e0faae9",
+  "native_font_proof": "work\\analysis\\duel_bark_native_v1202\\native_font_scope_verification.json",
+  "native_font_proof_sha256": "7a90ff4b878f9e0108a43b9ce6ba5c0b9486a98bb74358b3b0b7f132d19f2484",
+  "native_copy_proof": "work\\analysis\\duel_bark_copies_v1203\\changed_block_copy_verification.json",
+  "native_copy_proof_sha256": "14531acfa87b5714eba0bc3fb339bd8a2161cf1883ba79a82b87404ecda5e714",
+  "escape_regression_proof": "work\\analysis\\duel_bark_escape_regression_v1203\\original_direct_pipeline.json",
+  "escape_regression_proof_sha256": "d643b4014ef2c5a4f376f6640a28bfd4e3bfd416f435263fead1488b3369749f",
+  "visual_review": "work\\analysis\\duel_bark_native_review_v1204\\visual_review.json",
+  "visual_review_sha256": "da43d3d706ef8ed6b755b8fd781d7e0b27d00636bf3f62da24fae7b550add739",
+  "target_COMMON_sha256": "bf95c202ec1715e6f0e61f529e6d22e0e13b3559a451be3c3e5dae3a63827b0c",
+  "target_ARM9_sha256": "13478d94d189bf0fa89b4af2e29147ca8fc7a0567651fb1238e75265071d479d"
+}

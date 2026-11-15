@@ -1,0 +1,12 @@
+"""Current registered22 paragraph templates;source-bound substitutions preserved."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.battle_declaration_layout_v996 import compiled
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/battle_declaration_preflight_v2493')
+if __name__=='__main__':
+ assert not ROOT.exists();packetpath=Path('work/analysis/battle_declaration_context_source_v2492/all22_clean_current_context_catalog.json');p=read(packetpath);ledger=read('translations/editorial_review_current_v1.json');rompath=Path(ledger['current_integrated_candidate']['path']);m=read(rompath.with_suffix('.manifest.json'));stage=m['relocations']['/COMMON/MESFILE.DK4']['battle_declaration_editorial'];configpath=Path(stage['release_config']);config=read(configpath);docpath=Path(config['manuscript']);old={r['message_id']:r for r in read(docpath)['records']};ids=list(range(1889,1911));assert sha(rompath.read_bytes())==p['current_ROM_sha256']==m['candidate_sha256']and sha(configpath.read_bytes())==stage['release_config_sha256']and sha(docpath.read_bytes())==config['manuscript_sha256'];assert sorted(old)==p['selected_IDs']==stage['proof']['reviewed_native_IDs']==ids
+ for row in p['records']:
+  n=row['message_ID'];assert row['source_hex']==old[n]['source_hex']and bytes.fromhex(row['current_hex'])==compiled(old[n]);assert bytes.fromhex(row['source_hex']).count(b'%s')==old[n]['native_argument_count']==int(1897<=n<=1903);assert b'\n'not in compiled(old[n])
+ f=ledger['contextual_story_natural_dialogue_pass_v1871'];assert f['fresh_pass_records_integrated']==1913 and not{('/COMMON/MESFILE.DK4',f'COMMON_MESSAGE_{n}')for n in ids}&{(r['file_path'],r['id'])for r in f['record_keys']};ROOT.mkdir(parents=True)
+ save(ROOT/'next22_preflight.json',dict(packet=str(packetpath),packet_sha256=sha(packetpath.read_bytes()),registered_manuscript=str(docpath),registered_manuscript_sha256=sha(docpath.read_bytes()),registered_config=str(configpath),registered_config_sha256=sha(configpath.read_bytes()),reviewed_native_IDs=ids,historical_changed_records=stage['proof']['changed_records'],all22_complete_clean_current_compiled_payloads_match=True,all7_original_percent_s_arguments_preserved=True,no_prewrapped_literal_I_LF_collision=True,fresh_credit=0,current_context_prose_and_display_review_pending=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(next_records=22,new_credit=0,registered_manuscript=str(docpath)))

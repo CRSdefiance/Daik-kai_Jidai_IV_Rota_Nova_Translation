@@ -1,0 +1,807 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_334",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 334,
+      "source_reference": {
+        "block": 4,
+        "offset": 3784,
+        "copy_end": 3824,
+        "bytes": 40,
+        "record_index": 56,
+        "table_offset": 1317804,
+        "start_in_record": 89
+      },
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082c90a8d558c8282f08ef382af82c482a282dc82b78149",
+      "clean_Japanese": "%sの街が\n%sの艦隊に\n攻撃を受けています！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3684,
+        "copy_end": 3718,
+        "bytes": 33,
+        "record_index": 109,
+        "table_offset": 1317804,
+        "start_in_record": 0
+      },
+      "current_hex": "257320697320756e6465722061747461636b206279202573277320666c65657421",
+      "current_English": "%s is under attack by %s's fleet!",
+      "native_callers": [
+        {
+          "call": 33850268,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33850252,
+          "exact_hex": "31ff2fe10020a0e190069fe50510a0e1c53000eb100000ea04009de5",
+          "instructions": [
+            "0204838C blx r1",
+            "02048390 mov r2, r0",
+            "02048394 ldr r0, [pc, #0x690]",
+            "02048398 mov r1, r5",
+            "0204839C bl #0x20546b8",
+            "020483A0 b #0x20483e8",
+            "020483A4 ldr r0, [sp, #4]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "%s is under attack by %s's fleet!",
+      "speaker": "System",
+      "source_meaning": "The named town is under attack by a fleet belonging to the second named faction.",
+      "context": "The Sea View branch checks the town and excludes the special attacker index 21 before reading the town and attacking faction labels in that order.",
+      "localization_note": "Retain the urgent wording. The town comes first and the fleet belongs to the faction named by the second substitution. Verify wrapping with long labels.",
+      "native_substitution_count": 2,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_335",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 335,
+      "source_reference": {
+        "block": 4,
+        "offset": 3824,
+        "copy_end": 3844,
+        "bytes": 20,
+        "record_index": 56,
+        "table_offset": 1317806,
+        "start_in_record": 129
+      },
+      "source_hex": "25738141838c8378838b83418362837681498149",
+      "clean_Japanese": "%s、レベルアップ！！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3718,
+        "copy_end": 3734,
+        "bytes": 15,
+        "record_index": 110,
+        "table_offset": 1317806,
+        "start_in_record": 0
+      },
+      "current_hex": "2573206c6576656c65642075702121",
+      "current_English": "%s leveled up!!",
+      "native_callers": [
+        {
+          "call": 34071456,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34071440,
+          "exact_hex": "201091e531ff2fe10010a0e10c029fe5c458ffeb270000ea",
+          "instructions": [
+            "0207E390 ldr r1, [r1, #0x20]",
+            "0207E394 blx r1",
+            "0207E398 mov r1, r0",
+            "0207E39C ldr r0, [pc, #0x20c]",
+            "0207E3A0 bl #0x20546b8",
+            "0207E3A4 b #0x207e448"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "%s leveled up!",
+      "speaker": "System",
+      "source_meaning": "The named crew member gained a level.",
+      "context": "This modal result follows the original level calculation, calls the same given-name getter as the distinct floating level-up notice, and plays the original effect before display.",
+      "localization_note": "Use the same wording and single exclamation point as the registered floating notice. Keep the modal and floating displays distinct.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_337",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 337,
+      "source_reference": {
+        "block": 4,
+        "offset": 3868,
+        "copy_end": 3884,
+        "bytes": 16,
+        "record_index": 57,
+        "table_offset": 1317810,
+        "start_in_record": 2
+      },
+      "source_hex": "257382cd89f08e5582b582dc82b582bd",
+      "clean_Japanese": "%sは解散しました",
+      "current_reference": {
+        "block": 4,
+        "offset": 3754,
+        "copy_end": 3771,
+        "bytes": 16,
+        "record_index": 112,
+        "table_offset": 1317810,
+        "start_in_record": 0
+      },
+      "current_hex": "257320646973736f6c7665642e202020",
+      "current_English": "%s dissolved.   ",
+      "native_callers": [
+        {
+          "call": 33793012,
+          "target": 33903244,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33792996,
+          "exact_hex": "00b0a0e1100b00eb00a0a0e110029fe5a46b00eb0040a0e108029fe5",
+          "instructions": [
+            "0203A3E4 mov fp, r0",
+            "0203A3E8 bl #0x203d030",
+            "0203A3EC mov sl, r0",
+            "0203A3F0 ldr r0, [pc, #0x210]",
+            "0203A3F4 bl #0x205528c",
+            "0203A3F8 mov r4, r0",
+            "0203A3FC ldr r0, [pc, #0x208]"
+          ],
+          "raw_notice_wrapper": 33900348,
+          "raw_notice_call_PC": 33793064
+        }
+      ],
+      "new_credit": 0,
+      "english": "%s has disbanded.",
+      "speaker": "System",
+      "source_meaning": "The named company or faction has dissolved.",
+      "context": "The dissolution handler displays the faction name through the original raw-template notice before branching on whether the faction is the player’s.",
+      "localization_note": "Use the same disband verb as the fleet interface. The completed result applies to an entire faction here, with its own name supplied by the game.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_342",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 342,
+      "source_reference": {
+        "block": 4,
+        "offset": 3976,
+        "copy_end": 4008,
+        "bytes": 32,
+        "record_index": 60,
+        "table_offset": 1317820,
+        "start_in_record": 0
+      },
+      "source_hex": "92b7944e82c9936e82e80a257382f097a682a282c482ab82bd0a257382cd8163",
+      "clean_Japanese": "長年に渡り\n%sを率いてきた\n%sは…",
+      "current_reference": {
+        "block": 4,
+        "offset": 3837,
+        "copy_end": 3890,
+        "bytes": 52,
+        "record_index": 119,
+        "table_offset": 1317820,
+        "start_in_record": 0
+      },
+      "current_hex": "4166746572206d616e7920796561727320696e20636f6d6d616e64206f662025732c20697473206c65616465722c2025732e2e2e",
+      "current_English": "After many years in command of %s, its leader, %s...",
+      "native_callers": [
+        {
+          "call": 33808988,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33808972,
+          "exact_hex": "0e0201eb0610a0e10020a0e1d4009fe5155900ebd0009fe5135900eb",
+          "instructions": [
+            "0203E24C bl #0x207ea8c",
+            "0203E250 mov r1, r6",
+            "0203E254 mov r2, r0",
+            "0203E258 ldr r0, [pc, #0xd4]",
+            "0203E25C bl #0x20546b8",
+            "0203E260 ldr r0, [pc, #0xd0]",
+            "0203E264 bl #0x20546b8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "After leading %s for many years, %s...",
+      "speaker": "Narrator",
+      "source_meaning": "The named person led the named faction for many years. Their fate is given on the next panel.",
+      "context": "The first panel of the original epilogue passes the player’s faction name and then the composed character name. The following panel completes the sentence.",
+      "localization_note": "Use an active verb and remove the redundant title. Keep the source pause because the game waits on this separate opening panel before revealing the fate.",
+      "native_substitution_count": 2,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_343",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 343,
+      "source_reference": {
+        "block": 4,
+        "offset": 4008,
+        "copy_end": 4056,
+        "bytes": 45,
+        "record_index": 60,
+        "table_offset": 1317822,
+        "start_in_record": 32
+      },
+      "source_hex": "93568ef582f082dc82c182c682a482b50a82bb82cc9467979082c9969e82bf82bd90b68a5582f095c282b682bd",
+      "clean_Japanese": "天寿をまっとうし\nその波乱に満ちた生涯を閉じた",
+      "current_reference": {
+        "block": 4,
+        "offset": 3890,
+        "copy_end": 3934,
+        "bytes": 43,
+        "record_index": 120,
+        "table_offset": 1317822,
+        "start_in_record": 0
+      },
+      "current_hex": "706173736564206177617920616674657220612066756c6c20616e64206576656e7466756c206c6966652e",
+      "current_English": "passed away after a full and eventful life.",
+      "native_callers": [
+        {
+          "call": 33808996,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33808980,
+          "exact_hex": "0020a0e1d4009fe5155900ebd0009fe5135900eb560fa0e3115900eb",
+          "instructions": [
+            "0203E254 mov r2, r0",
+            "0203E258 ldr r0, [pc, #0xd4]",
+            "0203E25C bl #0x20546b8",
+            "0203E260 ldr r0, [pc, #0xd0]",
+            "0203E264 bl #0x20546b8",
+            "0203E268 mov r0, #0x158",
+            "0203E26C bl #0x20546b8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "passed away after a full and eventful life.",
+      "speaker": "Narrator",
+      "source_meaning": "The leader died at the end of their natural lifespan after a life full of upheaval.",
+      "context": "The second epilogue panel completes the opening sentence about the named leader. It is immediately followed by the historical overview.",
+      "localization_note": "Retain the dignified wording and lowercase opening. “Full” carries the sense of a natural lifespan and “eventful” suits this retrospective without naming new events.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_344",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 344,
+      "source_reference": {
+        "block": 5,
+        "offset": 0,
+        "copy_end": 68,
+        "bytes": 66,
+        "record_index": 0,
+        "table_offset": 1317824,
+        "start_in_record": 0
+      },
+      "source_hex": "928690a282a982e78bdf90a282c982a982af82c40a90a28a4582c991bd91e582c882e995cf8a7682f082e082bd82e782b582bd0a91e58d718a438e9e91e382cd8163",
+      "clean_Japanese": "中世から近世にかけて\n世界に多大なる変革をもたらした\n大航海時代は…",
+      "current_reference": {
+        "block": 4,
+        "offset": 3934,
+        "copy_end": 4041,
+        "bytes": 106,
+        "record_index": 121,
+        "table_offset": 1317824,
+        "start_in_record": 0
+      },
+      "current_hex": "54686520416765206f6620446973636f766572792062726f7567687420696d6d656e7365206368616e676520746f2074686520776f726c642066726f6d20746865204d6964646c65204167657320696e746f20746865206561726c79206d6f6465726e206572612e2e2e",
+      "current_English": "The Age of Discovery brought immense change to the world from the Middle Ages into the early modern era...",
+      "native_callers": [
+        {
+          "call": 33809004,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33808988,
+          "exact_hex": "155900ebd0009fe5135900eb560fa0e3115900ebc4009fe50f5900eb",
+          "instructions": [
+            "0203E25C bl #0x20546b8",
+            "0203E260 ldr r0, [pc, #0xd0]",
+            "0203E264 bl #0x20546b8",
+            "0203E268 mov r0, #0x158",
+            "0203E26C bl #0x20546b8",
+            "0203E270 ldr r0, [pc, #0xc4]",
+            "0203E274 bl #0x20546b8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "From the Middle Ages into the early modern era, the Age of Discovery transformed the world.",
+      "speaker": "Narrator",
+      "source_meaning": "From the Middle Ages into the early modern era, the Age of Discovery brought great change to the world.",
+      "context": "The third epilogue panel moves from the individual’s life to the historical period before the final panel turns to the legends it left behind.",
+      "localization_note": "Give the historical panel its own complete sentence. The original pause remains in the game’s panel transition, and the next sentence still refers back to the Age of Discovery.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_345",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 345,
+      "source_reference": {
+        "block": 5,
+        "offset": 68,
+        "copy_end": 136,
+        "bytes": 68,
+        "record_index": 1,
+        "table_offset": 1317826,
+        "start_in_record": 1
+      },
+      "source_hex": "9094815882cc936090e082f08e6382b582c282c20a8e9f82cc905682b582ab90a291e382d682c60a8cea82e88c7082aa82ea82c482a282ad82cc82c582a082e9815c815c",
+      "clean_Japanese": "数々の伝説を残しつつ\n次の新しき世代へと\n語り継がれていくのである――",
+      "current_reference": {
+        "block": 4,
+        "offset": 4041,
+        "copy_end": 4111,
+        "bytes": 69,
+        "record_index": 122,
+        "table_offset": 1317826,
+        "start_in_record": 0
+      },
+      "current_hex": "82687473206d616e79206c6567656e64732077696c6c206c697665206f6e2c2070617373656420646f776e20746f2065616368206e65772067656e65726174696f6e2e2e2e",
+      "current_English": "Ｉts many legends will live on, passed down to each new generation...",
+      "native_callers": [
+        {
+          "call": 33809012,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33808996,
+          "exact_hex": "135900eb560fa0e3115900ebc4009fe50f5900eb6b0a00eb540095e5",
+          "instructions": [
+            "0203E264 bl #0x20546b8",
+            "0203E268 mov r0, #0x158",
+            "0203E26C bl #0x20546b8",
+            "0203E270 ldr r0, [pc, #0xc4]",
+            "0203E274 bl #0x20546b8",
+            "0203E278 bl #0x2040c2c",
+            "0203E27C ldr r0, [r5, #0x54]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "english": "Its many legends will live on, passed down to each new generation.",
+      "speaker": "Narrator",
+      "source_meaning": "The period left many legends that will be told and passed down to a new generation.",
+      "context": "This is the final narrator panel after the historical overview. The original ending routine continues only after the panel is dismissed.",
+      "localization_note": "Keep the closing image of legends handed down to new generations. Use ordinary ASCII I and a period to close the narration.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "credited_context": [
+    {
+      "id": "COMMON_MESSAGE_97",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 97,
+      "source_reference": {
+        "block": 0,
+        "offset": 3444,
+        "copy_end": 3460,
+        "bytes": 14,
+        "record_index": 73,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "source_hex": "25738141826b82968274826f8149",
+      "clean_Japanese": "%s、ＬｖＵＰ！",
+      "current_reference": {
+        "block": 0,
+        "offset": 3901,
+        "copy_end": 3917,
+        "bytes": 14,
+        "record_index": 102,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "current_hex": "2573206c6576656c656420757021",
+      "current_English": "%s leveled up!",
+      "native_callers": [],
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_316",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 316,
+      "source_reference": {
+        "block": 4,
+        "offset": 3156,
+        "copy_end": 3192,
+        "bytes": 36,
+        "record_index": 45,
+        "table_offset": 1317768,
+        "start_in_record": 57
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f0835a815b837582b582dc82b782a98148",
+      "clean_Japanese": "エンディングデータをセーブしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3111,
+        "copy_end": 3133,
+        "bytes": 21,
+        "record_index": 84,
+        "table_offset": 1317768,
+        "start_in_record": 0
+      },
+      "current_hex": "536176652074686520656e64696e6720646174613f",
+      "current_English": "Save the ending data?",
+      "native_callers": [],
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_338",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 338,
+      "source_reference": {
+        "block": 4,
+        "offset": 3884,
+        "copy_end": 3904,
+        "bytes": 18,
+        "record_index": 57,
+        "table_offset": 1317812,
+        "start_in_record": 18
+      },
+      "source_hex": "257382aa92be967682b582dc82b582bd8149",
+      "clean_Japanese": "%sが沈没しました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3771,
+        "copy_end": 3780,
+        "bytes": 8,
+        "record_index": 113,
+        "table_offset": 1317812,
+        "start_in_record": 0
+      },
+      "current_hex": "25732073616e6b21",
+      "current_English": "%s sank!",
+      "native_callers": [],
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_339",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 339,
+      "source_reference": {
+        "block": 4,
+        "offset": 3904,
+        "copy_end": 3932,
+        "bytes": 27,
+        "record_index": 58,
+        "table_offset": 1317814,
+        "start_in_record": 1
+      },
+      "source_hex": "257382cc9085957682aa0a8250906c82e082a282dc82b982f18149",
+      "clean_Japanese": "%sの水夫が\n１人もいません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3780,
+        "copy_end": 3800,
+        "bytes": 18,
+        "record_index": 114,
+        "table_offset": 1317814,
+        "start_in_record": 0
+      },
+      "current_hex": "257320686173206e6f207361696c6f727321",
+      "current_English": "%s has no sailors!",
+      "native_callers": [],
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_340",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 340,
+      "source_reference": {
+        "block": 4,
+        "offset": 3932,
+        "copy_end": 3952,
+        "bytes": 20,
+        "record_index": 59,
+        "table_offset": 1317816,
+        "start_in_record": 0
+      },
+      "source_hex": "257382f08ee882c993fc82ea82dc82b582bd8149",
+      "clean_Japanese": "%sを手に入れました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3800,
+        "copy_end": 3813,
+        "bytes": 11,
+        "record_index": 116,
+        "table_offset": 1317816,
+        "start_in_record": 0
+      },
+      "current_hex": "596f7520676f7420257321",
+      "current_English": "You got %s!",
+      "native_callers": [],
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_341",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 341,
+      "source_reference": {
+        "block": 4,
+        "offset": 3952,
+        "copy_end": 3976,
+        "bytes": 23,
+        "record_index": 59,
+        "table_offset": 1317818,
+        "start_in_record": 20
+      },
+      "source_hex": "257382aa0a92878ad482c982c882e882dc82b582bd8149",
+      "clean_Japanese": "%sが\n仲間になりました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3813,
+        "copy_end": 3837,
+        "bytes": 23,
+        "record_index": 118,
+        "table_offset": 1317818,
+        "start_in_record": 0
+      },
+      "current_hex": "20202573206a6f696e6564212020202020202020202020",
+      "current_English": "  %s joined!           ",
+      "native_callers": [],
+      "new_credit": 0
+    }
+  ],
+  "unbound": [
+    {
+      "id": "COMMON_MESSAGE_330",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 330,
+      "source_reference": {
+        "block": 4,
+        "offset": 3624,
+        "copy_end": 3660,
+        "bytes": 34,
+        "record_index": 54,
+        "table_offset": 1317796,
+        "start_in_record": 2
+      },
+      "source_hex": "8cbb8ddd0a82618266826c82cd257382c582b70a257382c982b582dc82b782a98148",
+      "clean_Japanese": "現在\nＢＧＭは%sです\n%sにしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3526,
+        "copy_end": 3561,
+        "bytes": 34,
+        "record_index": 105,
+        "table_offset": 1317796,
+        "start_in_record": 0
+      },
+      "current_hex": "42474d3a2025732e0a20204368616e676520746f2025733f0a202020202020202020",
+      "current_English": "BGM: %s.\n  Change to %s?\n         ",
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "Two string substitutions describe the current and proposed BGM settings. The exact DS consumer remains unbound."
+    },
+    {
+      "id": "COMMON_MESSAGE_331",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 331,
+      "source_reference": {
+        "block": 4,
+        "offset": 3660,
+        "copy_end": 3696,
+        "bytes": 34,
+        "record_index": 55,
+        "table_offset": 1317798,
+        "start_in_record": 1
+      },
+      "source_hex": "8cbb8ddd0a8cf889ca89b982cd257382c582b70a257382c982b582dc82b782a98148",
+      "clean_Japanese": "現在\n効果音は%sです\n%sにしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3561,
+        "copy_end": 3596,
+        "bytes": 34,
+        "record_index": 106,
+        "table_offset": 1317798,
+        "start_in_record": 0
+      },
+      "current_hex": "536f756e643a2025732e0a20204368616e676520746f2025733f0a20202020202020",
+      "current_English": "Sound: %s.\n  Change to %s?\n       ",
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "Two string substitutions describe the current and proposed sound-effects settings. The exact DS consumer remains unbound."
+    },
+    {
+      "id": "COMMON_MESSAGE_332",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 332,
+      "source_reference": {
+        "block": 4,
+        "offset": 3696,
+        "copy_end": 3732,
+        "bytes": 36,
+        "record_index": 56,
+        "table_offset": 1317800,
+        "start_in_record": 1
+      },
+      "source_hex": "8cbb8ddd0a905593ae8b40945c82cd257382c582b70a257382c982b582dc82b782a98148",
+      "clean_Japanese": "現在\n振動機能は%sです\n%sにしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3596,
+        "copy_end": 3630,
+        "bytes": 33,
+        "record_index": 107,
+        "table_offset": 1317800,
+        "start_in_record": 0
+      },
+      "current_hex": "566962726174696f6e2069732025732e204368616e676520697420746f2025733f",
+      "current_English": "Vibration is %s. Change it to %s?",
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "Two string substitutions describe current and proposed vibration settings. A DS caller for this entry remains unbound."
+    },
+    {
+      "id": "COMMON_MESSAGE_333",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 333,
+      "source_reference": {
+        "block": 4,
+        "offset": 3732,
+        "copy_end": 3784,
+        "bytes": 52,
+        "record_index": 56,
+        "table_offset": 1317802,
+        "start_in_record": 37
+      },
+      "source_hex": "8cbb8ddd8141834e83438362834e834b8343836882cd0a8ea993ae955c8ea6257382c582b70a257382c982b582dc82b782a98148",
+      "clean_Japanese": "現在、クイックガイドは\n自動表示%sです\n%sにしますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 3630,
+        "copy_end": 3684,
+        "bytes": 53,
+        "record_index": 108,
+        "table_offset": 1317802,
+        "start_in_record": 0
+      },
+      "current_hex": "517569636b204775696465206175746f6d6174696320646973706c61792069732025732e204368616e676520697420746f2025733f",
+      "current_English": "Quick Guide automatic display is %s. Change it to %s?",
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "Two string substitutions describe current and proposed automatic display of the Quick Guide. The separate DS Sailing Help literal is not a caller for this entry."
+    },
+    {
+      "id": "COMMON_MESSAGE_336",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 336,
+      "source_reference": {
+        "block": 4,
+        "offset": 3844,
+        "copy_end": 3868,
+        "bytes": 21,
+        "record_index": 56,
+        "table_offset": 1317808,
+        "start_in_record": 149
+      },
+      "source_hex": "257382aa0a25738fe382aa82e882dc82b582bd8149",
+      "clean_Japanese": "%sが\n%s上がりました！",
+      "current_reference": {
+        "block": 4,
+        "offset": 3734,
+        "copy_end": 3754,
+        "bytes": 19,
+        "record_index": 111,
+        "table_offset": 1317808,
+        "start_in_record": 0
+      },
+      "current_hex": "257320696e6372656173656420627920257321",
+      "current_English": "%s increased by %s!",
+      "native_callers": [],
+      "new_credit": 0,
+      "context": "This two-argument generic statistic increase remains unbound. The neighboring modal and floating level notices use distinct original callers and only a name."
+    }
+  ],
+  "epilogue_original_state": 3,
+  "epilogue_original_substate": 1,
+  "epilogue_sequence": [
+    342,
+    343,
+    344,
+    345
+  ],
+  "separate_ending_movie_and_save_state": 4,
+  "clean_current_spans": [
+    {
+      "runtime_address": 33850172,
+      "exact_hex": "0400a0e1d0b101eb000050e3260000da10009de5150050e31200000a800b02eb0050a0e10400a0e1001090e5081091e531ff2fe1043085e210109de54c20a0e30050a0e1913220e0001090e5081091e531ff2fe10020a0e190069fe50510a0e1c53000eb100000ea"
+    },
+    {
+      "runtime_address": 34071396,
+      "exact_hex": "000054e33600000a000055e30c00000a0110a0e32c029fe50130a0e10220a0e3db2c02eb0600a0e1001090e5201091e531ff2fe10010a0e10c029fe5c458ffeb270000ea"
+    },
+    {
+      "runtime_address": 33792988,
+      "exact_hex": "f04f2de904d04de200b0a0e1100b00eb00a0a0e110029fe5a46b00eb0040a0e108029fe53810a0e30220a0e30130a0e3b93c03eb0b00a0e1001090e5081091e531ff2fe10010a0e10400a0e1c36800eb0b00a0e1e40a00eb000050e30600000acc019fe50320a0e30010a0e3542080e55c1080e504d08de2"
+    },
+    {
+      "runtime_address": 33808876,
+      "exact_hex": "540095e5030050e30300000a040050e32400000a0cd08de2f080bde85c0095e5010050e31800001ada3302eb0040a0e1cf3302eb0060a0e16bedffeb042086e24c10a0e3912020e0001090e5081091e531ff2fe10060a0e1e4009fe5000084e00e0201eb0610a0e10020a0e1d4009fe5155900ebd0009fe5135900eb560fa0e3115900ebc4009fe50f5900eb6b0a00eb540095e50cd08de2050050e30000a01354008515f080bde8"
+    }
+  ],
+  "registered_predecessor": "out\\discovery_rewards_registered_20261111_v1\\Translation_DS_All_Routes_Discovery_Rewards_20261111_candidate.nds",
+  "registered_predecessor_sha256": "e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d",
+  "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "new_completion_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "releases\\all_routes_editorial_20261111_discovery_rewards_candidate\\verification\\registered_release_verification.json": "12fe15c3cb60c0d6fddd110bce3af33cb0ffc6d7f9426004c471cc1ec8c6b102",
+    "work\\analysis\\native_common_arm_calls_wrappers_clean.json": "b93f7a8a15ebaf2126d60521a1e61c75867687ecca72384a121eacbbca756bab",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\review_faction_and_epilogue_v1.py": "5c14d0be5af2b0161a1973da8e62f38fbf0c2891f56780705ebf59bf29b088e0"
+  }
+}

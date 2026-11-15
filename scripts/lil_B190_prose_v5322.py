@@ -1,0 +1,32 @@
+"""Contextual remedy-rumor decisions preserving hearsay,doubt and personal intent."""
+REVISIONS={
+    32:("It's about the owner of this house.",
+        'Keep the topic-setting 話だよ and the residence owner/head in お屋敷の旦那. The man at the mansion leaves the ownership relationship unclear. House is natural contextual English without inventing a lord,husband,employer,personal name or kinship;no actual prior scene location is inferred from the later Havana notice.'),
+    36:('You mean the illness with no known cause?',
+        'Restore 原因不明 explicitly. Strange illness merely marks oddness and loses the unknown cause. The brief recognition question stays conversational and does not invent a named diagnosis,symptom,physician or supernatural explanation.'),
+    48:('Did you hear what happened next?',
+        'Render その後のことは as a check on the companion’s knowledge of the later development. And after that? sounds like asking the listener to continue narrating. This question naturally follows Everyone knows that and prepares the Sailor’s new gossip.'),
+    52:('What happened next?',
+        'Echo the newly localized question so the reply naturally invites the revelation. After? is an awkward standalone English fragment here. The adaptation preserves the source’s questioning echo and information gap without adding an event or an answer.'),
+    56:('They say store-bought medicine cured it in one go.',
+        'Restore なんだってさ hearsay and keep both 市販 commercial availability and 一発で治した one-go cure. Store-bought is ordinary American wording for a medicine sold to the public;it does not invent a named modern drugstore,brand,recipe,dose or physician. It refers to the unexplained illness. The striking cure is source-explicit character gossip,not a narrator-confirmed result or reader recommendation.'),
+    59:('Store-bought medicine cured an illness with no known cause?',
+        'Preserve both surprising source details in the listener’s question:publicly sold medicine and an illness of unknown cause. A common drug cured that illness? weakens the specific contrast. This remains a skeptical/surprised question,not confirmation of efficacy.'),
+    67:('Yeah... but is that true?',
+        'Keep the hesitation and explicit だが、本当か turn into doubt. Yeah... Really? can read as further amazement alone. The clearer natural question preserves skepticism without adding hostility or medical expertise.'),
+    71:('Seems so. And they say it works on every illness.',
+        'Separate 本当らしい apparent truth from the added 万病に効く reputation. Seems so answers the truth question tentatively;they say retains reported reputation. Works on every illness preserves the source-explicit panacea claim without upgrading 効く into guaranteed narrator-certified cures. No mechanism,brand,ingredient or real-world recommendation is added.'),
+    74:("Wow! I'd like some medicine like that myself.",
+        'Restore the listener’s own hypothetical desire in そんな薬なら、俺も欲しい. We ought to get some changes a personal wish into a joint recommendation and anticipates the Sailor’s next proposal. Wow keeps the excited すげえ reaction;medicine like that preserves the reported/hypothetical referent without establishing a purchase,use or recovery.'),
+    85:('Medicine may catch on in Havana.',
+        'Use the independently bound source category13 薬/Medicine rather than turning the goods into A cure. May catch on naturally preserves 流行しそう as prospective popularity,without claiming an earned boom,verified cure,price rise,shortage,profit or the earlier residence location. Compact UI Med and full Medicine remain unchanged.'),
+}
+RETAIN_NOTES={
+    24:'Retain Hey,heard this? with its existing normal spacing. It is a natural clipped Sailor gossip opener for おい、知ってるか. The next What? and topic-setting reply make the intended information exchange clear without formalizing the rough casual voice.',
+    28:'Retain What? It is a natural brief request for the subject of the gossip following Hey,heard this? The complete exchange disambiguates it from a new fact or a hearing problem;no expansion is needed merely to make an isolated line self-contained.',
+    40:'Retain Yeah. It naturally confirms the recognized topic and carries そうそう in casual American speech. Literal repetition is not required for this ordinary affirmative response.',
+    44:'Retain Everyone knows that. It is fluent colloquial hyperbole for 誰だって知ってる and explains why the Sailor asks about a later development next. The claim belongs to the Port Worker;it does not prove universal NPC knowledge or a game flag.',
+    63:'Retain Yes. Amazing,right? with its existing normal spacing. The affirmative and tag question naturally carry そうだよ、すごい話だろ and prompt a reaction before the listener’s explicit doubt. This speaker’s confidence does not verify the rumor.',
+    77:"Retain Let's go buy it. It is a natural casual proposal for 買いに行ってみるか after the companion expresses a wish. Let's marks a proposed action;it does not establish a completed purchase,availability,price,destination or use. It clearly refers to the unnamed medicine.",
+    81:"Retain Let's go. As the answer to Let's go buy it,it naturally expresses agreement and readiness in よし、行こうぜ. The repetition is a brief shared decision in the full exchange,not an invented journey,purchase outcome or recovery.",
+}

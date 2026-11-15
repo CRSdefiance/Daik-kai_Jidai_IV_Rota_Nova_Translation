@@ -1,0 +1,17 @@
+"""Create the disclosed one-block reference probe from the full registered V3819 parent."""
+from pathlib import Path
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B159_research_v3848')
+PARENT=Path('out/all_routes_combined_v3819_candidate.nds')
+ROM=Path('out/lil_B159_reference_v3848_RESEARCH_ONLY.nds')
+PLAN=Path('work/analysis/lil_B159_relocation_v3846/nested_source_relocation_research.json')
+STORED=Path('work/analysis/lil_B159_stored_v3847/all41_final_stored_targets164_macro_cases_and_complete_planes.json')
+if __name__=='__main__':
+    assert not ROOT.exists() and not ROM.exists();prior=read('work/analysis/editorial_handoff_verification_v3844/verified_handoff.json');plan,stored=map(read,[PLAN,STORED]);assert sha(PARENT.read_bytes())==prior['candidate_sha256']==plan['candidate_sha256']==stored['candidate_sha256'];assert sha(PLAN.read_bytes())==stored['relocation_plan_sha256'] and plan['manuscript_sha256']==stored['manuscript_sha256'];assert stored['all41_final_targets_complete_native_planes_equal_reviewed_planes'] and stored['current_final_stored_macro_alignment_cases']==164
+    parent=NdsImage.open(PARENT);image=NdsImage.open(PARENT);data=Path(plan['target_SC2']).read_bytes();assert sha(data)==plan['target_SC2_sha256'] and sha(parent.read_file('/data/SC2.DK4'))==plan['source_SC2_sha256'];image.replace_file('/data/SC2.DK4',data);image.save(ROM);result=NdsImage.open(ROM);assert [p for _,p,v in parent.iter_files() if result.read_file(p)!=v]==['/data/SC2.DK4']
+    for path,value in parent.iter_components():assert result.read_file(path)==value,path
+    before,after=[IlnkContainer.parse(im.read_file('/data/SC2.DK4')).blocks for im in [parent,result]];assert len(before)==len(after)==336 and [i for i,(a,b) in enumerate(zip(before,after,strict=True)) if a!=b]==[159];ROOT.mkdir(parents=True)
+    save(ROOT/'research_image_receipt.json',dict(parent=str(PARENT),parent_sha256=sha(PARENT.read_bytes()),research_ROM=str(ROM),research_ROM_sha256=sha(ROM.read_bytes()),ARM9_sha256=sha(result.read_file('/__arm9__.bin')),SC2_sha256=sha(data),COMMON_sha256=sha(result.read_file('/COMMON/MESFILE.DK4')),only_changed_file='/data/SC2.DK4',only_changed_blocks=[159],block_growth_bytes={str(n):len(after[n])-len(before[n]) for n in [159]},all335_other_SC2_blocks_every_other_file_and_native_component_exact=True,source_relocation_plan=str(PLAN),source_relocation_plan_sha256=sha(PLAN.read_bytes()),stored_target_proof=str(STORED),stored_target_proof_sha256=sha(STORED.read_bytes()),all41_final_targets_complete_native_planes_equal_reviewed_planes=True,current_final_stored_macro_alignment_cases=164,registered_candidate=False,not_for_user_handoff_or_new_parent=True,whole_loader_references_relocated_controls_representative_and_release_pending=True,actual_selected_B159_IDs=[],new_emulator_runs=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));(ROOT/'RESEARCH_ONLY.txt').write_text('Full registered V3819-derived one-block reference probe. Not a playable release or new construction parent. Preserve this ROM. Registered integration must rebuild the complete canonical cumulative stack.\n',encoding='utf-8');print('Research-only image created:one selected block;335otherSC2/allotherfiles/components exact. No release or completion claim.')

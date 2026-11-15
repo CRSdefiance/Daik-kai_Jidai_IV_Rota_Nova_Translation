@@ -1,0 +1,11 @@
+"""Keep all source meanings;use give up for akiramete without shortening the appeal."""
+from copy import deepcopy
+from pathlib import Path
+from scripts.prepare_lil_B156_layout_v3705 import derive
+from scripts.verify_village_wrap_v608 import read,save
+from dk4tool.patch.grand_race_menu_release import sha
+ROOT=Path('work/analysis/lil_B165_resigned_appeal_v4025')
+INPUT=Path('translations/lil_B165_editorial_manuscript_v2.json')
+OUTPUT=Path('translations/lil_B165_editorial_manuscript_v4.json')
+if __name__=='__main__':
+    assert not ROOT.exists() and not OUTPUT.exists();doc=deepcopy(read(INPUT));row=next(r for r in doc['records'] if r['source_record_index']==125);old=row['english'];assert old.count('give in')==1;new=old.replace('give in','give up');assert len(old)==len(new);row['english']=new;row['localization_note']+=' Give up directly renders akiramete as giving up resistance in this exchange;it does not mean abandoning the voyage. This is a natural same-length wording refinement,not a shortened source or a waived layout issue.';doc.update(previous_manuscript=str(INPUT),previous_manuscript_sha256=sha(INPUT.read_bytes()),same_length_resigned_appeal_refinement_producer=__file__,same_length_resigned_appeal_refinement_producer_sha256=sha(Path(__file__).read_bytes()));save(OUTPUT,doc);tool=derive('scripts/plan_lil_B165_layout_v4024.py','scripts/plan_lil_B165_layout_v4026.py',{'lil_B165_layout_v4024':'lil_B165_layout_v4026','lil_B165_editorial_manuscript_v2':'lil_B165_editorial_manuscript_v4','lil_B165_editorial_manuscript_v3':'lil_B165_editorial_manuscript_v5'});ROOT.mkdir(parents=True);save(ROOT/'same_length_faithful_resigned_appeal_and_preserved_failed_plan.json',dict(input=str(INPUT),input_sha256=sha(INPUT.read_bytes()),output=str(OUTPUT),output_sha256=sha(OUTPUT.read_bytes()),record_ID=row['id'],previous_English=old,refined_English=new,same_character_length=True,same_source_meaning_and_editorial_decision=True,failed_plan='work/analysis/lil_B165_layout_v4024/all24_paragraph_layout_QA.json',tool=tool,no_new_grammar_exception_global_guard_change_authored_break_or_waiver=True,no_ROM_registry_ledger_credit_change=True,full_goal_complete=False));print('Same-length give-up refinement recorded;private FI aside,source meaning andall decisions unchanged;failed plan preserved.')

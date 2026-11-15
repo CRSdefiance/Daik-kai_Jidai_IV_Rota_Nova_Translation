@@ -1,0 +1,7 @@
+# Armor item cards registered
+
+The 25 main armor catalogue descriptions are registered. The ledger now credits 26,608 reviews. COMMON 2864–2888 agrees with the private descriptions in both Items displays. The review restored source details and fixed the full-width F on Charles Martel Armor. Five wordings were kept with individual reasons. [Registered review](../releases/all_routes_editorial_20261111_armor_item_cards_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_armor_item_cards_candidate/README.md)
+
+The copied allocation stays at 123,264 bytes. Five descriptions fit in a 520-byte extension of the existing resident catalogue. All 218 getters pass, and the other 193 item projections match the predecessor byte for byte. Both item displays passed native and visual checks. A focused emulator replay showed the full Charles Martel Armor card after a one-item inventory transfer and then returned to Lisbon. Cold boot and all 24 protected name getters passed.
+
+Continue with the crew-role equipment beginning at COMMON 2889. The three later armor records at COMMON 3005 and 3010–3011 remain in scope. Confirm item categories against the clean metadata and use the registered item storage and formatter. Options, Market, other player-facing prose and the remaining earlier-name and role-label review stay in scope. Graphics artwork and the older-record technical re-audit remain separate.

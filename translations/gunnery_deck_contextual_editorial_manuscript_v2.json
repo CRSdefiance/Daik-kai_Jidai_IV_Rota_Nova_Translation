@@ -1,0 +1,2633 @@
+{
+  "format": "dk4-natural-dialogue-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "deck-gunnery-cleaning-visible-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v2284_candidate.nds",
+  "current_ROM_sha256": "7c6d025ef0d12c6dd7cc58095802a27bb49dafc830f33851e73e734b4f8bdfe1",
+  "current_ARM9_sha256": "dff9c14e929e3ba5b82b6bd35f1cef89903e05ab530033f02f8ac11580fdbfcc",
+  "current_COMMON_sha256": "96966b524ba51c51376c2eb379eac5c8000722e52e7092e914d6999a5725690d",
+  "source_context_packet": "work\\analysis\\gunnery_deck_context_source_v2368\\all24_clean_current_context_catalog.json",
+  "source_context_packet_sha256": "6978f1b8753fea82acba74211778ba859446ab4f5746125fade8809abc4bb15e",
+  "native_context_proof": "work\\analysis\\gunnery_deck_context_v2371\\native_context.json",
+  "native_context_proof_sha256": "82bd7d324b0197c55218e5739b87d4c0bef837d8e982a23824f2f733dbecbddd",
+  "captain1_metadata_evidence": "work/analysis/cooking_context_v2316/captain1_speaker_metadata.json",
+  "captain1_metadata_evidence_sha256": "838f55ddbd48c1a9478b778bc1c50030ad5bea3370a275e78feb60b6896f4ed8",
+  "prior_manuscript": "translations\\gunnery_deck_editorial_manuscript_v2.json",
+  "prior_manuscript_sha256": "d45146d537f7e3e7f0599e7b59e0e6695be6b32f7e321e0d64ebf72e93e0b003",
+  "revised_IDs": [],
+  "retained_count": 24,
+  "speaker_metadata_corrections": [
+    1556,
+    1568
+  ],
+  "formatting_review_pending": false,
+  "current_native_and_actual_family_reconciliation_pending": false,
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1547",
+      "message_id": 1547,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 0,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class0",
+      "prior_speaker_metadata": "Native NPC voice class0",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "91fc8da10a8e8e82b58c8282bf82f082b582c482a282dc82b7",
+      "source_Japanese": "只今\n試し撃ちをしています",
+      "source_reference": {
+        "block": 17,
+        "offset": 3964,
+        "copy_end": 3992,
+        "bytes": 25,
+        "record_index": 128,
+        "table_offset": 1320230,
+        "start_in_record": 0
+      },
+      "current_hex": "49276d20746573742d666972696e67207468652063616e6e6f6e73206e6f772e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5178,
+        "copy_end": 5211,
+        "bytes": 32,
+        "record_index": 138,
+        "table_offset": 1320230,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I'm test-firing the cannons now.",
+      "english": "I'm test-firing the cannons now.",
+      "source_meaning": "The speaker reports that they are currently test-firing.",
+      "localization_note": "I'm test-firing the cannons now is a natural complete status report. Cannons is supplied by the Gunnery role, not an invented weapon or actual ammunition expenditure.",
+      "fresh_retained_wording_justification": "I'm test-firing the cannons now is a natural complete status report. Cannons is supplied by the Gunnery role, not an invented weapon or actual ammunition expenditure.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49276d20746573742d666972696e67207468652063616e6e6f6e73206e6f772e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5178,
+        "copy_end": 5211,
+        "bytes": 32
+      },
+      "current_V2284_actual_holds": [
+        {
+          "message_id": 1547,
+          "actor_ID": 18,
+          "assigned_room_slot": 9,
+          "source_role_type": 8,
+          "original_parent_activity_state": 0,
+          "actual_view": 35184428,
+          "actual_parent": 35175832,
+          "identity_from_unique_native_RTTI_geometry_not_text": true,
+          "actual_body_widget_class": "18CDeckCabinInfoView",
+          "actual_parent_class": "18CDeckPersonnelView",
+          "native_image_header_first_word_with_flags_preserved": 4,
+          "native_original12104_numeric_selection": [
+            1547
+          ],
+          "numeric_probe_does_not_supply_or_render_text": true,
+          "complete_English": "I'm test-firing the cannons now.",
+          "visible_lines": [
+            "I'm test-firing the cannons now."
+          ],
+          "full252x36_bitmap_body_matches_independent_complete_words": true,
+          "whole216x36_actual_RGB_ink_and_blank_plane_matches": true,
+          "uniform_x16_line_starts_complete_leading_and_trailing_letters": true,
+          "native_parent_projection": [
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                104
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                104
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                112
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                8
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                112
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                8
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                172
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                172
+              ]
+            },
+            {
+              "image": 36149396,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                64
+              ],
+              "size": [
+                56,
+                64
+              ],
+              "destination": [
+                16,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                104,
+                2
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                12
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                80,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                40
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                36
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                52
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                48
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                64
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                60
+              ],
+              "size": [
+                216,
+                36
+              ],
+              "destination": [
+                16,
+                112
+              ]
+            }
+          ],
+          "all_other_parent_draw_commands_palettes_and_frame_preserved": true,
+          "ink_pixels_original_crop_would_drop": 77,
+          "no_text_selector_or_code_override_in_actual_run": true,
+          "frame": 4400,
+          "current_V2284_original_Charles_assignment_before_preview": true
+        }
+      ],
+      "new_current_visit": true,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1548",
+      "message_id": 1548,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 1,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class1",
+      "prior_speaker_metadata": "Native NPC voice class1",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8e8e8ecb928682c582b782cc82c50a82a8986282c882e78ce382d982c78163",
+      "source_Japanese": "試射中ですので\nお話なら後ほど…",
+      "source_reference": {
+        "block": 17,
+        "offset": 3992,
+        "copy_end": 4024,
+        "bytes": 31,
+        "record_index": 129,
+        "table_offset": 1320232,
+        "start_in_record": 2
+      },
+      "current_hex": "49276d20746573742d666972696e67207269676874206e6f772e0a436f756c642077652074616c6b206c617465723f",
+      "current_reference": {
+        "block": 18,
+        "offset": 5211,
+        "copy_end": 5259,
+        "bytes": 47,
+        "record_index": 139,
+        "table_offset": 1320232,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I'm test-firing right now.\nCould we talk later?",
+      "english": "I'm test-firing right now. Could we talk later?",
+      "source_meaning": "The speaker asks to talk later because test-firing is in progress.",
+      "localization_note": "I'm test-firing right now. Could we talk later? preserves the reason and polite deferral as two natural thoughts. It does not become a brusque command or invent a conversation topic.",
+      "fresh_retained_wording_justification": "I'm test-firing right now. Could we talk later? preserves the reason and polite deferral as two natural thoughts. It does not become a brusque command or invent a conversation topic.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49276d20746573742d666972696e67207269676874206e6f772e0a436f756c642077652074616c6b206c617465723f",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5211,
+        "copy_end": 5259,
+        "bytes": 47
+      },
+      "current_V2284_actual_holds": [
+        {
+          "message_id": 1548,
+          "actor_ID": 16,
+          "assigned_room_slot": 9,
+          "source_role_type": 8,
+          "original_parent_activity_state": 0,
+          "actual_view": 35184428,
+          "actual_parent": 35175832,
+          "identity_from_unique_native_RTTI_geometry_not_text": true,
+          "actual_body_widget_class": "18CDeckCabinInfoView",
+          "actual_parent_class": "18CDeckPersonnelView",
+          "native_image_header_first_word_with_flags_preserved": 4,
+          "native_original12104_numeric_selection": [
+            1548
+          ],
+          "numeric_probe_does_not_supply_or_render_text": true,
+          "complete_English": "I'm test-firing right now. Could we talk later?",
+          "visible_lines": [
+            "I'm test-firing right now.",
+            "Could we talk later?"
+          ],
+          "full252x36_bitmap_body_matches_independent_complete_words": true,
+          "whole216x36_actual_RGB_ink_and_blank_plane_matches": true,
+          "uniform_x16_line_starts_complete_leading_and_trailing_letters": true,
+          "native_parent_projection": [
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                104
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                104
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                112
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                8
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                112
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                8
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                172
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                172
+              ]
+            },
+            {
+              "image": 36149396,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                56,
+                64
+              ],
+              "destination": [
+                16,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                104,
+                2
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                12
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                80,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                40
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                36
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                52
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                48
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                64
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                60
+              ],
+              "size": [
+                216,
+                36
+              ],
+              "destination": [
+                16,
+                112
+              ]
+            }
+          ],
+          "all_other_parent_draw_commands_palettes_and_frame_preserved": true,
+          "ink_pixels_original_crop_would_drop": 17,
+          "no_text_selector_or_code_override_in_actual_run": true,
+          "frame": 4600,
+          "current_V2284_ordinary_assignment_no_new_fixture": true
+        },
+        {
+          "message_id": 1548,
+          "actor_ID": 16,
+          "assigned_room_slot": 9,
+          "source_role_type": 8,
+          "original_parent_activity_state": 0,
+          "actual_view": 35184428,
+          "actual_parent": 35175832,
+          "identity_from_unique_native_RTTI_geometry_not_text": true,
+          "actual_body_widget_class": "18CDeckCabinInfoView",
+          "actual_parent_class": "18CDeckPersonnelView",
+          "native_image_header_first_word_with_flags_preserved": 4,
+          "native_original12104_numeric_selection": [
+            1548
+          ],
+          "numeric_probe_does_not_supply_or_render_text": true,
+          "complete_English": "I'm test-firing right now. Could we talk later?",
+          "visible_lines": [
+            "I'm test-firing right now.",
+            "Could we talk later?"
+          ],
+          "full252x36_bitmap_body_matches_independent_complete_words": true,
+          "whole216x36_actual_RGB_ink_and_blank_plane_matches": true,
+          "uniform_x16_line_starts_complete_leading_and_trailing_letters": true,
+          "native_parent_projection": [
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                104
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                104
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                0
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                32,
+                112
+              ],
+              "size": [
+                8,
+                8
+              ],
+              "destination": [
+                248,
+                8
+              ]
+            },
+            {
+              "image": 36782080,
+              "layer": 1,
+              "flags": 39,
+              "source_origin": [
+                0,
+                112
+              ],
+              "size": [
+                16,
+                8
+              ],
+              "destination": [
+                0,
+                8
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                0
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                100
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                24,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                236,
+                172
+              ]
+            },
+            {
+              "image": 37140624,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                16,
+                16
+              ],
+              "destination": [
+                4,
+                172
+              ]
+            },
+            {
+              "image": 36149396,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                56,
+                64
+              ],
+              "destination": [
+                16,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                0
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                104,
+                2
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                12
+              ],
+              "size": [
+                48,
+                12
+              ],
+              "destination": [
+                80,
+                24
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                24
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                40
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                36
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                52
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                48
+              ],
+              "size": [
+                168,
+                12
+              ],
+              "destination": [
+                80,
+                64
+              ]
+            },
+            {
+              "image": 35196784,
+              "layer": 1,
+              "flags": 0,
+              "source_origin": [
+                0,
+                60
+              ],
+              "size": [
+                216,
+                36
+              ],
+              "destination": [
+                16,
+                112
+              ]
+            }
+          ],
+          "all_other_parent_draw_commands_palettes_and_frame_preserved": true,
+          "ink_pixels_original_crop_would_drop": 17,
+          "no_text_selector_or_code_override_in_actual_run": true,
+          "frame": 4800,
+          "current_V2284_ordinary_assignment_no_new_fixture": true
+        }
+      ],
+      "new_current_visit": true,
+      "historical_V888_current_bound_holds": [
+        {
+          "message_ID": 1548,
+          "actor_ID": 16,
+          "role_ID": 8,
+          "case": "GerhardGunnery",
+          "frame": 4200,
+          "lines": [
+            "I'm test-firing right now.",
+            "Could we talk later?"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1548
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_GerhardGunnery\\capture_report.json",
+            "sha256": "e76927674b441ba6e368910f17d413cbbdc573bd8b2c704f1e1a741df612d8ba"
+          },
+          "source_RAM_sha256": "28b21eb77661939843d16fc2bfd65873d8cd809e23399214f75b9a23a069cfc4",
+          "source_native_role_type": 8,
+          "historical_room_occupant_fixture_disclosed": true
+        },
+        {
+          "message_ID": 1548,
+          "actor_ID": 16,
+          "role_ID": 8,
+          "case": "GerhardGunnery",
+          "frame": 4400,
+          "lines": [
+            "I'm test-firing right now.",
+            "Could we talk later?"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1548
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_GerhardGunnery\\capture_report.json",
+            "sha256": "e76927674b441ba6e368910f17d413cbbdc573bd8b2c704f1e1a741df612d8ba"
+          },
+          "source_RAM_sha256": "b2e6b2a6d6a9034a87cb556b4458c301cccb6f9702bfcd28a5660f2e49e68bd4",
+          "source_native_role_type": 8,
+          "historical_room_occupant_fixture_disclosed": true
+        }
+      ],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1549",
+      "message_id": 1549,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 2,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class2",
+      "prior_speaker_metadata": "Native NPC voice class2",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8a4390ed82c994f582a682c40a97fb8f4b82b582c482e982cc82b3",
+      "source_Japanese": "海戦に備えて\n練習してるのさ",
+      "source_reference": {
+        "block": 17,
+        "offset": 4024,
+        "copy_end": 4052,
+        "bytes": 27,
+        "record_index": 130,
+        "table_offset": 1320234,
+        "start_in_record": 0
+      },
+      "current_hex": "49276d2070726163746963696e6720666f72206e6176616c20626174746c65732e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5259,
+        "copy_end": 5293,
+        "bytes": 33,
+        "record_index": 140,
+        "table_offset": 1320234,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I'm practicing for naval battles.",
+      "english": "I'm practicing for naval battles.",
+      "source_meaning": "The speaker is practicing in preparation for naval combat.",
+      "localization_note": "I'm practicing for naval battles preserves the ongoing preparation and maritime combat context. It does not imply a battle has begun, a training result or a new opponent.",
+      "fresh_retained_wording_justification": "I'm practicing for naval battles preserves the ongoing preparation and maritime combat context. It does not imply a battle has begun, a training result or a new opponent.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49276d2070726163746963696e6720666f72206e6176616c20626174746c65732e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5259,
+        "copy_end": 5293,
+        "bytes": 33
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1550",
+      "message_id": 1550,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 3,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class3",
+      "prior_speaker_metadata": "Native NPC voice class3",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8c8282c282c682ab82c182c40a836e8389836e838982b582c882a28148",
+      "source_Japanese": "撃つときって\nハラハラしない？",
+      "source_reference": {
+        "block": 17,
+        "offset": 4052,
+        "copy_end": 4084,
+        "bytes": 29,
+        "record_index": 131,
+        "table_offset": 1320236,
+        "start_in_record": 0
+      },
+      "current_hex": "446f6e277420796f7520676574206e6572766f7573200a666972696e6720612063616e6e6f6e3f",
+      "current_reference": {
+        "block": 18,
+        "offset": 5293,
+        "copy_end": 5333,
+        "bytes": 39,
+        "record_index": 141,
+        "table_offset": 1320236,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Don't you get nervous \nfiring a cannon?",
+      "english": "Don't you get nervous firing a cannon?",
+      "source_meaning": "The speaker asks whether firing brings nervous anticipation.",
+      "localization_note": "Don't you get nervous firing a cannon? is idiomatic for ハラハラ in this Gunnery context. It preserves the question without escalating nervousness into terror or inventing a dangerous accident.",
+      "fresh_retained_wording_justification": "Don't you get nervous firing a cannon? is idiomatic for ハラハラ in this Gunnery context. It preserves the question without escalating nervousness into terror or inventing a dangerous accident.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "446f6e277420796f7520676574206e6572766f7573200a666972696e6720612063616e6e6f6e3f",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5293,
+        "copy_end": 5333,
+        "bytes": 39
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1551",
+      "message_id": 1551,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 4,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class4",
+      "prior_speaker_metadata": "Native NPC voice class4",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82e682c182b582e1814182e082a488ea94ad0a82a282c182c482dd82e682a48149",
+      "source_Japanese": "よっしゃ、もう一発\nいってみよう！",
+      "source_reference": {
+        "block": 18,
+        "offset": 0,
+        "copy_end": 36,
+        "bytes": 33,
+        "record_index": 0,
+        "table_offset": 1320238,
+        "start_in_record": 0
+      },
+      "current_hex": "416c6c2072696768742c206f6e65206d6f72652073686f7421",
+      "current_reference": {
+        "block": 18,
+        "offset": 5333,
+        "copy_end": 5359,
+        "bytes": 25,
+        "record_index": 142,
+        "table_offset": 1320238,
+        "start_in_record": 0
+      },
+      "current_stored_English": "All right, one more shot!",
+      "english": "All right, one more shot!",
+      "source_meaning": "The speaker enthusiastically decides to try another shot.",
+      "localization_note": "All right, one more shot! preserves the energetic lead-in and one-more-shot intent. It does not add a hit, target, ammunition count or completed volley.",
+      "fresh_retained_wording_justification": "All right, one more shot! preserves the energetic lead-in and one-more-shot intent. It does not add a hit, target, ammunition count or completed volley.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "416c6c2072696768742c206f6e65206d6f72652073686f7421",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5333,
+        "copy_end": 5359,
+        "bytes": 25
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1552",
+      "message_id": 1552,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 5,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class5",
+      "prior_speaker_metadata": "Native NPC voice class5",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8c698b4382e682ad0a836f8393836f83938c8282c282bc82a2",
+      "source_Japanese": "景気よく\nバンバン撃つぞい",
+      "source_reference": {
+        "block": 18,
+        "offset": 36,
+        "copy_end": 64,
+        "bytes": 25,
+        "record_index": 1,
+        "table_offset": 1320240,
+        "start_in_record": 2
+      },
+      "current_hex": "4c657427732066697265206177617921",
+      "current_reference": {
+        "block": 18,
+        "offset": 5359,
+        "copy_end": 5376,
+        "bytes": 16,
+        "record_index": 143,
+        "table_offset": 1320240,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Let's fire away!",
+      "english": "Let's fire away!",
+      "source_meaning": "The older voice cheerfully proposes hearty firing.",
+      "localization_note": "Let's fire away! naturally conveys the lively enthusiasm of 景気よくバンバン. Literal repeated bang sounds are unnecessary here, and no measured rate of fire or result is invented.",
+      "fresh_retained_wording_justification": "Let's fire away! naturally conveys the lively enthusiasm of 景気よくバンバン. Literal repeated bang sounds are unnecessary here, and no measured rate of fire or result is invented.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "4c657427732066697265206177617921",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5359,
+        "copy_end": 5376,
+        "bytes": 16
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1553",
+      "message_id": 1553,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 6,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class6",
+      "prior_speaker_metadata": "Native NPC voice class6",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "91e582ab82c889b982aa0a82b782ab82c195a082c98bbf82ad8160",
+      "source_Japanese": "大きな音が\nすきっ腹に響く～",
+      "source_reference": {
+        "block": 18,
+        "offset": 64,
+        "copy_end": 92,
+        "bytes": 27,
+        "record_index": 2,
+        "table_offset": 1320242,
+        "start_in_record": 2
+      },
+      "current_hex": "5468617420626f6f6d20726174746c6573206d7920656d7074792073746f6d61636821",
+      "current_reference": {
+        "block": 18,
+        "offset": 5376,
+        "copy_end": 5412,
+        "bytes": 35,
+        "record_index": 144,
+        "table_offset": 1320242,
+        "start_in_record": 0
+      },
+      "current_stored_English": "That boom rattles my empty stomach!",
+      "english": "That boom rattles my empty stomach!",
+      "source_meaning": "The speaker says a loud boom resonates in their empty stomach.",
+      "localization_note": "That boom rattles my empty stomach! keeps the sound, physical reaction and hunger joke. It adds no injury, digestive condition, missed meal or game damage.",
+      "fresh_retained_wording_justification": "That boom rattles my empty stomach! keeps the sound, physical reaction and hunger joke. It adds no injury, digestive condition, missed meal or game damage.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "5468617420626f6f6d20726174746c6573206d7920656d7074792073746f6d61636821",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5376,
+        "copy_end": 5412,
+        "bytes": 35
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [
+        {
+          "message_ID": 1553,
+          "actor_ID": 14,
+          "role_ID": 8,
+          "case": "EmilioGunnery",
+          "frame": 4200,
+          "lines": [
+            "That boom rattles my empty stomach!"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1553
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_EmilioGunnery\\capture_report.json",
+            "sha256": "46c27cdc0649ab8bb83d5eb2543b8ed199aa9438fc27d73f5300656d5ec154b3"
+          },
+          "source_RAM_sha256": "091324b19792a240fd68e622a2f31dedef577c0e75e2ee51ee801ec2bb605c6a",
+          "source_native_role_type": 8,
+          "historical_room_occupant_fixture_disclosed": true
+        },
+        {
+          "message_ID": 1553,
+          "actor_ID": 14,
+          "role_ID": 8,
+          "case": "EmilioGunnery",
+          "frame": 4400,
+          "lines": [
+            "That boom rattles my empty stomach!"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1553
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_EmilioGunnery\\capture_report.json",
+            "sha256": "46c27cdc0649ab8bb83d5eb2543b8ed199aa9438fc27d73f5300656d5ec154b3"
+          },
+          "source_RAM_sha256": "073e3aa6379e20860ec3df3afcb2197f61e56dd1ef2241aa298755a8e86ed3f5",
+          "source_native_role_type": 8,
+          "historical_room_occupant_fixture_disclosed": true
+        }
+      ],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1554",
+      "message_id": 1554,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": 7,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class7",
+      "prior_speaker_metadata": "Native NPC voice class7",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "91e5964382cd96bd928690b8937882aa0a96e291e882c582b782c8",
+      "source_Japanese": "大砲は命中精度が\n問題ですな",
+      "source_reference": {
+        "block": 18,
+        "offset": 92,
+        "copy_end": 120,
+        "bytes": 27,
+        "record_index": 3,
+        "table_offset": 1320244,
+        "start_in_record": 0
+      },
+      "current_hex": "43616e6e6f6e206163637572616379206d6174746572732e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5412,
+        "copy_end": 5437,
+        "bytes": 24,
+        "record_index": 145,
+        "table_offset": 1320244,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Cannon accuracy matters.",
+      "english": "Cannon accuracy matters.",
+      "source_meaning": "The measured speaker emphasizes the importance of cannon accuracy.",
+      "localization_note": "Cannon accuracy matters is concise, natural technical flavor speech. It does not invent an accuracy value, failure, target or required skill threshold.",
+      "fresh_retained_wording_justification": "Cannon accuracy matters is concise, natural technical flavor speech. It does not invent an accuracy value, failure, target or required skill threshold.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "43616e6e6f6e206163637572616379206d6174746572732e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5412,
+        "copy_end": 5437,
+        "bytes": 24
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1555",
+      "message_id": 1555,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": null,
+      "protagonist_ID": 0,
+      "speaker": "Rafael",
+      "prior_speaker_metadata": "Rafael",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82a282c282c582e090ed82a682e982e682a40a97fb8f4b82b582c482e982f182be82e6",
+      "source_Japanese": "いつでも戦えるよう\n練習してるんだよ",
+      "source_reference": {
+        "block": 18,
+        "offset": 120,
+        "copy_end": 156,
+        "bytes": 35,
+        "record_index": 4,
+        "table_offset": 1320246,
+        "start_in_record": 0
+      },
+      "current_hex": "49276d2070726163746963696e6720736f2049276c6c0a616c7761797320626520726561647920746f20666967687421",
+      "current_reference": {
+        "block": 18,
+        "offset": 5437,
+        "copy_end": 5486,
+        "bytes": 48,
+        "record_index": 146,
+        "table_offset": 1320246,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I'm practicing so I'll\nalways be ready to fight!",
+      "english": "I'm practicing so I'll always be ready to fight!",
+      "source_meaning": "Rafael practices to be able to fight whenever needed.",
+      "localization_note": "I'm practicing so I'll always be ready to fight! preserves ongoing practice and the purpose of readiness. It adds no completed training, awarded statistic or active battle.",
+      "fresh_retained_wording_justification": "I'm practicing so I'll always be ready to fight! preserves ongoing practice and the purpose of readiness. It adds no completed training, awarded statistic or active battle.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49276d2070726163746963696e6720736f2049276c6c0a616c7761797320626520726561647920746f20666967687421",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5437,
+        "copy_end": 5486,
+        "bytes": 48
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1556",
+      "message_id": 1556,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": null,
+      "protagonist_ID": 1,
+      "speaker": "Hodram (native captain1)",
+      "prior_speaker_metadata": "Joakim (native captain1)",
+      "speaker_metadata_corrected": true,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "96da955782c9939682c482e982cc82cd0a93ef82b582a282e082cc82be8163",
+      "source_Japanese": "目標に当てるのは\n難しいものだ…",
+      "source_reference": {
+        "block": 18,
+        "offset": 156,
+        "copy_end": 188,
+        "bytes": 31,
+        "record_index": 5,
+        "table_offset": 1320248,
+        "start_in_record": 0
+      },
+      "current_hex": "48697474696e67207468652074617267657420697320686172642e2e2e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5486,
+        "copy_end": 5516,
+        "bytes": 29,
+        "record_index": 147,
+        "table_offset": 1320248,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Hitting the target is hard...",
+      "english": "Hitting the target is hard...",
+      "source_meaning": "Hodram reflects that hitting a target is difficult.",
+      "localization_note": "Hitting the target is hard... retains the reflective difficulty and pause. It does not invent a particular target, missed shot or skill deficit. Actor1 metadata follows the native given name Hodram, preserving Joakim within the approved full name.",
+      "fresh_retained_wording_justification": "Hitting the target is hard... retains the reflective difficulty and pause. It does not invent a particular target, missed shot or skill deficit. Actor1 metadata follows the native given name Hodram, preserving Joakim within the approved full name.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "48697474696e67207468652074617267657420697320686172642e2e2e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5486,
+        "copy_end": 5516,
+        "bytes": 29
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1557",
+      "message_id": 1557,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": null,
+      "protagonist_ID": 2,
+      "speaker": "Lil",
+      "prior_speaker_metadata": "Lil",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82a282c295b782a282c482e00a82b182cc89b982c182c4834383848160",
+      "source_Japanese": "いつ聞いても\nこの音ってイヤ～",
+      "source_reference": {
+        "block": 18,
+        "offset": 188,
+        "copy_end": 220,
+        "bytes": 29,
+        "record_index": 6,
+        "table_offset": 1320250,
+        "start_in_record": 0
+      },
+      "current_hex": "5468617420736f756e6420697320616c7761797320617766756c21",
+      "current_reference": {
+        "block": 18,
+        "offset": 5516,
+        "copy_end": 5544,
+        "bytes": 27,
+        "record_index": 148,
+        "table_offset": 1320250,
+        "start_in_record": 0
+      },
+      "current_stored_English": "That sound is always awful!",
+      "english": "That sound is always awful!",
+      "source_meaning": "Lil dislikes the sound every time she hears it.",
+      "localization_note": "That sound is always awful! preserves the recurring dislike and emphatic tone. It adds no injury, deafness or refusal to perform the role.",
+      "fresh_retained_wording_justification": "That sound is always awful! preserves the recurring dislike and emphatic tone. It adds no injury, deafness or refusal to perform the role.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "5468617420736f756e6420697320616c7761797320617766756c21",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5516,
+        "copy_end": 5544,
+        "bytes": 27
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1558",
+      "message_id": 1558,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 8,
+      "voice_class": null,
+      "protagonist_ID": 3,
+      "speaker": "Maria",
+      "prior_speaker_metadata": "Maria",
+      "speaker_metadata_corrected": false,
+      "context": "Independent Gunnery8 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "96438f7082cd82e082c182c60a95d78bad82aa954b977682cb",
+      "source_Japanese": "砲術はもっと\n勉強が必要ね",
+      "source_reference": {
+        "block": 18,
+        "offset": 220,
+        "copy_end": 248,
+        "bytes": 25,
+        "record_index": 7,
+        "table_offset": 1320252,
+        "start_in_record": 2
+      },
+      "current_hex": "49206e65656420746f206c6561726e206d6f72652061626f75742067756e6e6572792e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5544,
+        "copy_end": 5580,
+        "bytes": 35,
+        "record_index": 149,
+        "table_offset": 1320252,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I need to learn more about gunnery.",
+      "english": "I need to learn more about gunnery.",
+      "source_meaning": "Maria says more learning about gunnery is necessary.",
+      "localization_note": "I need to learn more about gunnery preserves her personal self-assessment in natural English. It does not invent a teacher, course, credential or earned improvement.",
+      "fresh_retained_wording_justification": "I need to learn more about gunnery preserves her personal self-assessment in natural English. It does not invent a teacher, course, credential or earned improvement.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49206e65656420746f206c6561726e206d6f72652061626f75742067756e6e6572792e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5544,
+        "copy_end": 5580,
+        "bytes": 35
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1559",
+      "message_id": 1559,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 0,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class0",
+      "prior_speaker_metadata": "Native NPC voice class0",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82c782a482c582b7814182ab82ea82a282c90a82c882e882dc82b582bd82e682cb8148",
+      "source_Japanese": "どうです、きれいに\nなりましたよね？",
+      "source_reference": {
+        "block": 18,
+        "offset": 248,
+        "copy_end": 284,
+        "bytes": 35,
+        "record_index": 8,
+        "table_offset": 1320254,
+        "start_in_record": 2
+      },
+      "current_hex": "486f7720646f6573206974206c6f6f6b3f200a4e69636520616e6420636c65616e206e6f772c2069736e27742069743f",
+      "current_reference": {
+        "block": 18,
+        "offset": 5580,
+        "copy_end": 5629,
+        "bytes": 48,
+        "record_index": 150,
+        "table_offset": 1320254,
+        "start_in_record": 0
+      },
+      "current_stored_English": "How does it look? \nNice and clean now, isn't it?",
+      "english": "How does it look? Nice and clean now, isn't it?",
+      "source_meaning": "The polite speaker asks whether the result now looks clean.",
+      "localization_note": "How does it look? Nice and clean now, isn't it? keeps both the appeal for approval and confirmation. It is the character's observation, not a claim that this comment changes a cleanliness statistic.",
+      "fresh_retained_wording_justification": "How does it look? Nice and clean now, isn't it? keeps both the appeal for approval and confirmation. It is the character's observation, not a claim that this comment changes a cleanliness statistic.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "486f7720646f6573206974206c6f6f6b3f200a4e69636520616e6420636c65616e206e6f772c2069736e27742069743f",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5580,
+        "copy_end": 5629,
+        "bytes": 48
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1560",
+      "message_id": 1560,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 1,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class1",
+      "prior_speaker_metadata": "Native NPC voice class1",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "914482cd89e482aa89c682e093af91520a968182a282c482e282e782cb82ce",
+      "source_Japanese": "船は我が家も同然\n磨いてやらねば",
+      "source_reference": {
+        "block": 18,
+        "offset": 284,
+        "copy_end": 316,
+        "bytes": 31,
+        "record_index": 9,
+        "table_offset": 1320256,
+        "start_in_record": 0
+      },
+      "current_hex": "546869732073686970206973206f757220686f6d652e0a5765206e65656420746f206b65657020697420706f6c69736865642e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5629,
+        "copy_end": 5681,
+        "bytes": 51,
+        "record_index": 151,
+        "table_offset": 1320256,
+        "start_in_record": 0
+      },
+      "current_stored_English": "This ship is our home.\nWe need to keep it polished.",
+      "english": "This ship is our home. We need to keep it polished.",
+      "source_meaning": "The speaker compares the ship to home and says it must be polished.",
+      "localization_note": "This ship is our home. We need to keep it polished retains the home metaphor and obligation in natural shipboard speech. It does not invent a family relationship, legal ownership or a cleaning item.",
+      "fresh_retained_wording_justification": "This ship is our home. We need to keep it polished retains the home metaphor and obligation in natural shipboard speech. It does not invent a family relationship, legal ownership or a cleaning item.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "546869732073686970206973206f757220686f6d652e0a5765206e65656420746f206b65657020697420706f6c69736865642e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5629,
+        "copy_end": 5681,
+        "bytes": 51
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1561",
+      "message_id": 1561,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 2,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class2",
+      "prior_speaker_metadata": "Native NPC voice class2",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "494382e782cc914482be82a982e70a82ab82ea82a282c982b582c882ad82bf82e1",
+      "source_Japanese": "ICらの船だから\nきれいにしなくちゃ",
+      "source_reference": {
+        "block": 18,
+        "offset": 316,
+        "copy_end": 352,
+        "bytes": 33,
+        "record_index": 10,
+        "table_offset": 1320258,
+        "start_in_record": 0
+      },
+      "current_hex": "49742773206f757220736869702c0a736f207765206861766520746f206b65657020697420636c65616e21",
+      "current_reference": {
+        "block": 18,
+        "offset": 5681,
+        "copy_end": 5725,
+        "bytes": 43,
+        "record_index": 152,
+        "table_offset": 1320258,
+        "start_in_record": 0
+      },
+      "current_stored_English": "It's our ship,\nso we have to keep it clean!",
+      "english": "It's our ship, so we have to keep it clean!",
+      "source_meaning": "The speaker says that because it is their group's ship, it must be kept clean.",
+      "localization_note": "It's our ship, so we have to keep it clean! preserves possession, causal reasoning and obligation. Native current/clean-parser controls establish IC as first person and ら as plural, giving our rather than a character name. No name/faction argument is discarded, and current literal-prefix handling preserves capital I.",
+      "fresh_retained_wording_justification": "It's our ship, so we have to keep it clean! preserves possession, causal reasoning and obligation. Native current/clean-parser controls establish IC as first person and ら as plural, giving our rather than a character name. No name/faction argument is discarded, and current literal-prefix handling preserves capital I.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49742773206f757220736869702c0a736f207765206861766520746f206b65657020697420636c65616e21",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5681,
+        "copy_end": 5725,
+        "bytes": 43
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [
+        {
+          "message_ID": 1561,
+          "actor_ID": 9,
+          "role_ID": 2,
+          "case": "CamilleDeck",
+          "frame": 4200,
+          "lines": [
+            "It's our ship,",
+            "so we have to keep it clean!"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1561
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_CamilleDeck\\capture_report.json",
+            "sha256": "9cef70c1930da6f513d980a45100f31af72f1f73238a2b6542571d1e8f37b737"
+          },
+          "source_RAM_sha256": "a4bd8088141fce115bb62165dcb87ce762bd9f76dc1c8f039354699a5d7bbb04",
+          "source_native_role_type": 2,
+          "historical_room_occupant_fixture_disclosed": true
+        },
+        {
+          "message_ID": 1561,
+          "actor_ID": 9,
+          "role_ID": 2,
+          "case": "CamilleDeck",
+          "frame": 4400,
+          "lines": [
+            "It's our ship,",
+            "so we have to keep it clean!"
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1561
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_CamilleDeck\\capture_report.json",
+            "sha256": "9cef70c1930da6f513d980a45100f31af72f1f73238a2b6542571d1e8f37b737"
+          },
+          "source_RAM_sha256": "a68182e8fb01344c07703794889c1b16aa623d2255875993de435699de705260",
+          "source_native_role_type": 2,
+          "historical_room_occupant_fixture_disclosed": true
+        }
+      ],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1562",
+      "message_id": 1562,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 3,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class3",
+      "prior_speaker_metadata": "Native NPC voice class3",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "917c8f9c82b582c482e00a82b782ae82c9899882ea82e982cc8160",
+      "source_Japanese": "掃除しても\nすぐに汚れるの～",
+      "source_reference": {
+        "block": 18,
+        "offset": 352,
+        "copy_end": 380,
+        "bytes": 27,
+        "record_index": 11,
+        "table_offset": 1320260,
+        "start_in_record": 2
+      },
+      "current_hex": "4974206765747320646972747920616761696e200a617320736f6f6e206173204920636c65616e20697421",
+      "current_reference": {
+        "block": 18,
+        "offset": 5725,
+        "copy_end": 5769,
+        "bytes": 43,
+        "record_index": 153,
+        "table_offset": 1320260,
+        "start_in_record": 0
+      },
+      "current_stored_English": "It gets dirty again \nas soon as I clean it!",
+      "english": "It gets dirty again as soon as I clean it!",
+      "source_meaning": "The speaker complains that the ship becomes dirty again immediately after cleaning.",
+      "localization_note": "It gets dirty again as soon as I clean it! keeps the repeated contrast between effort and renewed dirt in natural exasperated speech. It adds no culprit, particular mess or actual condition change.",
+      "fresh_retained_wording_justification": "It gets dirty again as soon as I clean it! keeps the repeated contrast between effort and renewed dirt in natural exasperated speech. It adds no culprit, particular mess or actual condition change.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "4974206765747320646972747920616761696e200a617320736f6f6e206173204920636c65616e20697421",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5725,
+        "copy_end": 5769,
+        "bytes": 43
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1563",
+      "message_id": 1563,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 4,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class4",
+      "prior_speaker_metadata": "Native NPC voice class4",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8d6294c2917c8f9c82a90a89b482c9944382b982eb8149",
+      "source_Japanese": "甲板掃除か\n俺に任せろ！",
+      "source_reference": {
+        "block": 18,
+        "offset": 380,
+        "copy_end": 404,
+        "bytes": 23,
+        "record_index": 12,
+        "table_offset": 1320262,
+        "start_in_record": 0
+      },
+      "current_hex": "4465636b20636c65616e696e673f204c6561766520697420746f206d6521",
+      "current_reference": {
+        "block": 18,
+        "offset": 5769,
+        "copy_end": 5800,
+        "bytes": 30,
+        "record_index": 154,
+        "table_offset": 1320262,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Deck cleaning? Leave it to me!",
+      "english": "Deck cleaning? Leave it to me!",
+      "source_meaning": "The rougher speaker confidently offers to handle deck cleaning.",
+      "localization_note": "Deck cleaning? Leave it to me! retains the task and assertive offer. It does not reduce the thought to a role label or invent a new assignment or rank.",
+      "fresh_retained_wording_justification": "Deck cleaning? Leave it to me! retains the task and assertive offer. It does not reduce the thought to a role label or invent a new assignment or rank.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "4465636b20636c65616e696e673f204c6561766520697420746f206d6521",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5769,
+        "copy_end": 5800,
+        "bytes": 30
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1564",
+      "message_id": 1564,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 5,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class5",
+      "prior_speaker_metadata": "Native NPC voice class5",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82bd82dc82c982cd8bf382cc89ba82c50a917c8f9c82e082a682a682cc82a7",
+      "source_Japanese": "たまには空の下で\n掃除もええのぉ",
+      "source_reference": {
+        "block": 18,
+        "offset": 404,
+        "copy_end": 436,
+        "bytes": 31,
+        "record_index": 13,
+        "table_offset": 1320264,
+        "start_in_record": 0
+      },
+      "current_hex": "49742773206e69636520746f20646f20736f6d6520636c65616e696e67200a6f757473696465206e6f7720616e64207468656e2e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5800,
+        "copy_end": 5853,
+        "bytes": 52,
+        "record_index": 155,
+        "table_offset": 1320264,
+        "start_in_record": 0
+      },
+      "current_stored_English": "It's nice to do some cleaning \noutside now and then.",
+      "english": "It's nice to do some cleaning outside now and then.",
+      "source_meaning": "The older voice enjoys doing some cleaning outdoors occasionally.",
+      "localization_note": "It's nice to do some cleaning outside now and then preserves both the open-air setting and occasional timing. It adds no shore location, weather or scheduled routine.",
+      "fresh_retained_wording_justification": "It's nice to do some cleaning outside now and then preserves both the open-air setting and occasional timing. It adds no shore location, weather or scheduled routine.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49742773206e69636520746f20646f20736f6d6520636c65616e696e67200a6f757473696465206e6f7720616e64207468656e2e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5800,
+        "copy_end": 5853,
+        "bytes": 52
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1565",
+      "message_id": 1565,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 6,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class6",
+      "prior_speaker_metadata": "Native NPC voice class6",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "835383568353835682c182c681630a82ab82ea82a282c982c882c182bd82e68149",
+      "source_Japanese": "ゴシゴシっと…\nきれいになったよ！",
+      "source_reference": {
+        "block": 18,
+        "offset": 436,
+        "copy_end": 472,
+        "bytes": 33,
+        "record_index": 14,
+        "table_offset": 1320266,
+        "start_in_record": 0
+      },
+      "current_hex": "53637275622c2073637275622e2e2e20416c6c20636c65616e21",
+      "current_reference": {
+        "block": 18,
+        "offset": 5853,
+        "copy_end": 5880,
+        "bytes": 26,
+        "record_index": 156,
+        "table_offset": 1320266,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Scrub, scrub... All clean!",
+      "english": "Scrub, scrub... All clean!",
+      "source_meaning": "The speaker scrubs and cheerfully says it is clean.",
+      "localization_note": "Scrub, scrub... All clean! preserves the action cue and pleased completion in simple natural speech. It does not caricature the voice or add an item award or mechanical cleanliness result.",
+      "fresh_retained_wording_justification": "Scrub, scrub... All clean! preserves the action cue and pleased completion in simple natural speech. It does not caricature the voice or add an item award or mechanical cleanliness result.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "53637275622c2073637275622e2e2e20416c6c20636c65616e21",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5853,
+        "copy_end": 5880,
+        "bytes": 26
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1566",
+      "message_id": 1566,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": 7,
+      "protagonist_ID": null,
+      "speaker": "Native NPC voice class7",
+      "prior_speaker_metadata": "Native NPC voice class7",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "91e58e9682c8914482c582b782a982e70a8b438d8782a282aa93fc82e882dc82b7",
+      "source_Japanese": "大事な船ですから\n気合いが入ります",
+      "source_reference": {
+        "block": 18,
+        "offset": 472,
+        "copy_end": 508,
+        "bytes": 33,
+        "record_index": 15,
+        "table_offset": 1320268,
+        "start_in_record": 2
+      },
+      "current_hex": "546869732073686970206d65616e732061206c6f7420746f2075732c0a736f20492067697665206974206d7920616c6c2e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5880,
+        "copy_end": 5930,
+        "bytes": 49,
+        "record_index": 157,
+        "table_offset": 1320268,
+        "start_in_record": 0
+      },
+      "current_stored_English": "This ship means a lot to us,\nso I give it my all.",
+      "english": "This ship means a lot to us, so I give it my all.",
+      "source_meaning": "The speaker feels motivated because the ship is important to the group.",
+      "localization_note": "This ship means a lot to us, so I give it my all keeps its personal value and the speaker's effort. It does not turn importance into luxury, fine construction, ownership or a quality rating.",
+      "fresh_retained_wording_justification": "This ship means a lot to us, so I give it my all keeps its personal value and the speaker's effort. It does not turn importance into luxury, fine construction, ownership or a quality rating.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "546869732073686970206d65616e732061206c6f7420746f2075732c0a736f20492067697665206974206d7920616c6c2e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5880,
+        "copy_end": 5930,
+        "bytes": 49
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1567",
+      "message_id": 1567,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": null,
+      "protagonist_ID": 0,
+      "speaker": "Rafael",
+      "prior_speaker_metadata": "Rafael",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82b882a282d482f10a82ab82ea82a282c982c882c182bd82c8",
+      "source_Japanese": "ずいぶん\nきれいになったな",
+      "source_reference": {
+        "block": 18,
+        "offset": 508,
+        "copy_end": 536,
+        "bytes": 25,
+        "record_index": 16,
+        "table_offset": 1320270,
+        "start_in_record": 2
+      },
+      "current_hex": "4e6f7720746861742773206d75636820636c65616e65722e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5930,
+        "copy_end": 5955,
+        "bytes": 24,
+        "record_index": 158,
+        "table_offset": 1320270,
+        "start_in_record": 0
+      },
+      "current_stored_English": "Now that's much cleaner.",
+      "english": "Now that's much cleaner.",
+      "source_meaning": "Rafael observes that it has become much cleaner.",
+      "localization_note": "Now that's much cleaner retains his pleased observation and the degree of change. It does not invent who cleaned it or claim a gameplay effect.",
+      "fresh_retained_wording_justification": "Now that's much cleaner retains his pleased observation and the degree of change. It does not invent who cleaned it or claim a gameplay effect.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "4e6f7720746861742773206d75636820636c65616e65722e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5930,
+        "copy_end": 5955,
+        "bytes": 24
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1568",
+      "message_id": 1568,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": null,
+      "protagonist_ID": 1,
+      "speaker": "Hodram (native captain1)",
+      "prior_speaker_metadata": "Joakim (native captain1)",
+      "speaker_metadata_corrected": true,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "8e7482cc89ba82c582cc8f438d738e9e91e382aa0a89f982a982b582a282c88163",
+      "source_Japanese": "師の下での修行時代が\n懐かしいな…",
+      "source_reference": {
+        "block": 18,
+        "offset": 536,
+        "copy_end": 572,
+        "bytes": 33,
+        "record_index": 17,
+        "table_offset": 1320272,
+        "start_in_record": 2
+      },
+      "current_hex": "49206d6973732074686520646179732049207370656e74200a747261696e696e6720756e646572206d79206d656e746f722e2e2e",
+      "current_reference": {
+        "block": 18,
+        "offset": 5955,
+        "copy_end": 6008,
+        "bytes": 52,
+        "record_index": 159,
+        "table_offset": 1320272,
+        "start_in_record": 0
+      },
+      "current_stored_English": "I miss the days I spent \ntraining under my mentor...",
+      "english": "I miss the days I spent training under my mentor...",
+      "source_meaning": "Hodram feels nostalgic for the period of training under his mentor.",
+      "localization_note": "I miss the days I spent training under my mentor preserves both nostalgia and the explicit 師の下での修行 relationship. Mentor conveys guidance without inventing kinship, an official rank, a school, a naval posting or the person's name. Actor1 metadata is normalized to Hodram.",
+      "fresh_retained_wording_justification": "I miss the days I spent training under my mentor preserves both nostalgia and the explicit 師の下での修行 relationship. Mentor conveys guidance without inventing kinship, an official rank, a school, a naval posting or the person's name. Actor1 metadata is normalized to Hodram.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "49206d6973732074686520646179732049207370656e74200a747261696e696e6720756e646572206d79206d656e746f722e2e2e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 5955,
+        "copy_end": 6008,
+        "bytes": 52
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [
+        {
+          "message_ID": 1568,
+          "actor_ID": 1,
+          "role_ID": 2,
+          "case": "JoakimDeck",
+          "frame": 4200,
+          "lines": [
+            "I miss the days I spent",
+            "training under my mentor..."
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1568
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_JoakimDeck\\capture_report.json",
+            "sha256": "ec7f99e4f73965d42120c89b1cf3ad378de587fbd9d8f596f4a4f62aa1aba8a3"
+          },
+          "source_RAM_sha256": "3b04b110232b977f53ce0d415d796f352b61dec600308e5b138a0a0f450309ff",
+          "source_native_role_type": 2,
+          "historical_room_occupant_fixture_disclosed": true
+        },
+        {
+          "message_ID": 1568,
+          "actor_ID": 1,
+          "role_ID": 2,
+          "case": "JoakimDeck",
+          "frame": 4400,
+          "lines": [
+            "I miss the days I spent",
+            "training under my mentor..."
+          ],
+          "current_complete_stored_payload_equals_historical_V888": true,
+          "current_independent_full252x36_bitmap_equal": true,
+          "current216x36_RGB_foreground_and_blank_ink_equal": true,
+          "complete_words_first_final_letters_and_bounds": true,
+          "original_numeric_selector_evidence": [
+            1568
+          ],
+          "selector_evidence_is_historical_not_new_current_reexecution": true,
+          "source_report": {
+            "report": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\gunnery_deck_v889_888_JoakimDeck\\capture_report.json",
+            "sha256": "ec7f99e4f73965d42120c89b1cf3ad378de587fbd9d8f596f4a4f62aa1aba8a3"
+          },
+          "source_RAM_sha256": "f95bbd04abf44307f93d6372e105c24ceab4cc2a48048ccecf0bf0b1a0efe695",
+          "source_native_role_type": 2,
+          "historical_room_occupant_fixture_disclosed": true
+        }
+      ],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1569",
+      "message_id": 1569,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": null,
+      "protagonist_ID": 2,
+      "speaker": "Lil",
+      "prior_speaker_metadata": "Lil",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "82b182cc904882d78e6382b581630a8347837e838a834982cb8149",
+      "source_Japanese": "この食べ残し…\nエミリオね！",
+      "source_reference": {
+        "block": 18,
+        "offset": 572,
+        "copy_end": 600,
+        "bytes": 27,
+        "record_index": 18,
+        "table_offset": 1320274,
+        "start_in_record": 2
+      },
+      "current_hex": "5468657365206c6566746f766572732e2e2e20456d696c696f21",
+      "current_reference": {
+        "block": 18,
+        "offset": 6008,
+        "copy_end": 6035,
+        "bytes": 26,
+        "record_index": 160,
+        "table_offset": 1320274,
+        "start_in_record": 0
+      },
+      "current_stored_English": "These leftovers... Emilio!",
+      "english": "These leftovers... Emilio!",
+      "source_meaning": "Lil recognizes leftovers and identifies Emilio as the culprit.",
+      "localization_note": "These leftovers... Emilio! preserves the short recognition and accusation in her voice. Emilio is explicitly エミリオ and verified in native names. The line adds no food type, new relationship or explanation of the joke.",
+      "fresh_retained_wording_justification": "These leftovers... Emilio! preserves the short recognition and accusation in her voice. Emilio is explicitly エミリオ and verified in native names. The line adds no food type, new relationship or explanation of the joke.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "5468657365206c6566746f766572732e2e2e20456d696c696f21",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 6008,
+        "copy_end": 6035,
+        "bytes": 26
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    },
+    {
+      "id": "COMMON_MESSAGE_1570",
+      "message_id": 1570,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "role_ID": 2,
+      "voice_class": null,
+      "protagonist_ID": 3,
+      "speaker": "Maria",
+      "prior_speaker_metadata": "Maria",
+      "speaker_metadata_corrected": false,
+      "context": "Independent DeckCleaning2 activity comment. Original1278C uses eight NPC voice classes;128B4 uses the actual protagonist. Sera24 uses her ordinary voice for both roles. Storage neighbors are alternative speakers,not chronological replies. Gunnery concerns test-firing andpractice;DeckCleaning concerns cleaning,shipboard care andpersonal reactions. No comment causes ammunition expenditure,damage,rank,health,cleanliness,stats,battle or route outcomes.",
+      "source_hex": "90b48c8982c982b782e982c60a8b438e9d82bf82aa82a282a282ed82cb",
+      "source_Japanese": "清潔にすると\n気持ちがいいわね",
+      "source_reference": {
+        "block": 18,
+        "offset": 600,
+        "copy_end": 632,
+        "bytes": 29,
+        "record_index": 19,
+        "table_offset": 1320276,
+        "start_in_record": 0
+      },
+      "current_hex": "4120636c65616e2073686970206665656c7320776f6e64657266756c2e",
+      "current_reference": {
+        "block": 18,
+        "offset": 6035,
+        "copy_end": 6065,
+        "bytes": 29,
+        "record_index": 161,
+        "table_offset": 1320276,
+        "start_in_record": 0
+      },
+      "current_stored_English": "A clean ship feels wonderful.",
+      "english": "A clean ship feels wonderful.",
+      "source_meaning": "Maria says that keeping things clean feels pleasant.",
+      "localization_note": "A clean ship feels wonderful supplies ship from the DeckCleaning context and keeps her positive reaction naturally. It does not invent a health benefit, morale award or particular completed cleaning action.",
+      "fresh_retained_wording_justification": "A clean ship feels wonderful supplies ship from the DeckCleaning context and keeps her positive reaction naturally. It does not invent a health benefit, morale award or particular completed cleaning action.",
+      "editorial_decision": "retain-wording",
+      "native_argument_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "complete-fresh-source-native-display-actual-family-and-registered-retention-reconciliation",
+      "original_historical_family": "Shared-Gunnery8-DeckCleaning2-comments1547-1570",
+      "integrated_hex": "4120636c65616e2073686970206665656c7320776f6e64657266756c2e",
+      "integrated_reference": {
+        "block": 18,
+        "offset": 6035,
+        "copy_end": 6065,
+        "bytes": 29
+      },
+      "current_V2284_actual_holds": [],
+      "new_current_visit": false,
+      "historical_V888_current_bound_holds": [],
+      "all24_native_proof": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+      "consumer": "252x96 canvas,bodyy60;216x36 parent crop atscreen16,112;gunnery-v887 generated36-column3row pair-safe paragraph"
+    }
+  ],
+  "full_goal_complete": false,
+  "native_pronoun_proof": "work/analysis/gunnery_pronoun_v2372/source_pronoun_and_terms.json",
+  "native_pronoun_proof_sha256": "1eda1e0a0b3d3db8442fba21dc48bc4cbf3f575ca3039b4180601cba7f010b26",
+  "status": "complete-fresh-contextual-retentions-reconciled-registered-V2284",
+  "final_review": "translations\\gunnery_deck_contextual_final_review_v1.json",
+  "registered_stage_binding": {
+    "stage": "gunnery_deck_editorial",
+    "release_config": "translations\\gunnery_deck_editorial_release_v1.json",
+    "release_config_sha256": "dafd7d131492c254f794a5f59c93ba52e406fc8b4984ecaed762afdc53701d33",
+    "registered_manuscript": "translations\\gunnery_deck_editorial_manuscript_v2.json",
+    "registered_manuscript_sha256": "d45146d537f7e3e7f0599e7b59e0e6695be6b32f7e321e0d64ebf72e93e0b003",
+    "reviewed_native_IDs": [
+      1547,
+      1548,
+      1549,
+      1550,
+      1551,
+      1552,
+      1553,
+      1554,
+      1555,
+      1556,
+      1557,
+      1558,
+      1559,
+      1560,
+      1561,
+      1562,
+      1563,
+      1564,
+      1565,
+      1566,
+      1567,
+      1568,
+      1569,
+      1570
+    ],
+    "historical_changed_records": [
+      "COMMON_MESSAGE_1547",
+      "COMMON_MESSAGE_1548",
+      "COMMON_MESSAGE_1549",
+      "COMMON_MESSAGE_1550",
+      "COMMON_MESSAGE_1553",
+      "COMMON_MESSAGE_1555",
+      "COMMON_MESSAGE_1558",
+      "COMMON_MESSAGE_1559",
+      "COMMON_MESSAGE_1560",
+      "COMMON_MESSAGE_1561",
+      "COMMON_MESSAGE_1562",
+      "COMMON_MESSAGE_1563",
+      "COMMON_MESSAGE_1564",
+      "COMMON_MESSAGE_1566",
+      "COMMON_MESSAGE_1568"
+    ],
+    "new_revisions": 0
+  },
+  "current_native_fonts": "work\\analysis\\gunnery_deck_fonts_v2374\\all24_current_native_fonts.json",
+  "current_actual": "work\\analysis\\gunnery_current_verification_v2376b\\ordinary_current_Gunnery_actual.json",
+  "historical_current_binding": "work\\analysis\\gunnery_deck_history_v2377\\historical8_current_binding.json"
+}

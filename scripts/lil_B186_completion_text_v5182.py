@@ -1,0 +1,46 @@
+"""Current completion facts and the next clean-first focus;full objective stays active."""
+from scripts.checkpoint_lil_B186_v5173 import WIDER
+
+NEXT=(
+    'Continue Lil SC2B187 from full clean-only inventory5186 and16 fresh glosses5187 before predecessor English. '
+    'Read the bad recent cough,concern,reassurance qualified by discomfort,observation of other coughing people,speculative illness question,heard-of remedy,forgotten name,almond ingredient,surprised echo and memory explanation,effectiveness question,reported exceptional effectiveness and strong sales,parallel search intentions and coughing gratitude as one exchange. '
+    'Bind selectors0x9B(155) and0x57(87) names/voices and approved Almonds/Malacca terms before choosing roles,rank,relationships or English wording. '
+    'Preserve both source-explicit effectiveness and sales as character hearsay;do not erase them or upgrade them to narrator-confirmed medical efficacy,an outbreak,guaranteed cure,prices,scarcity or profit. '
+    'The remedy is unnamed and reportedly uses almonds;no recipe,dose or preparation is supplied. Looking for it is an intention,not a completed purchase,use or recovery. Continuing cough remains. '
+    'The separate null-actor FE stays prospective and does not prove the earlier scene location or earned fashion. '
+    'Preserve all19 linear commands,16 speeches,leading A0008 raw00a0ffff014e2fa1,C200672,end674 and680 stored/678 logical bytes with2 trailing zeros. '
+    'This block has no source predicates or relative sites;do not inherit B186 one700 predicate,six branches,three alternatives or its exact R13 wrap reviews. '
+    'B186 is integrated once in V5177;do not repeat sealed source/native/reference/actual/release/startup gates without a concrete risk. '
+    'Preserve its exact two R13 ordinary boundaries,all24 commands,10 timing/4 later original indicator differences and unequal final PRNG. '
+    'Preserve every stopped diagnostic,wrong-runner log,corrected successor and the native-number derivation guard;the original actor getter stays0xCB184. '
+    'Main V4701 remains promoted;all prior ROMs and translations remain preserved. No promotion or pruning. '+WIDER)
+
+DETAILS=(
+    'V5182 completes12 Lil SC2B186 whole-exchange reviews once in registered cumulative V5177:7 revisions/5 individually justified retentions. '
+    'Restore the Owner’s stretched repeated sweet emphasis,the Cook’s hesitation,the Owner’s circular self-authority,an idiomatic job retort,two perfunctory yeah-yeah replies and the final stylized laugh. '
+    'Retain the natural missing-sweetness realization,Sweetness?,practical sweeter question,confident sweet-things prediction and tentative Sweets/Alexandria notice with individual reasons. '
+    'Food/flavor preparation stays distinct from trading advice. Clean Owner174/Cook175 fields,four native names and original voice0 support customers without invented kinship,rank,nobility,dish,ingredient,recipe or quantity. '
+    'Sweets is broad source sweet things,not a single commodity or all UI Treats4 goods. Both Alexandria identities bind,but current pointer1223E4/storage15E4D0 still contains Japanese;the separate1230B4 alias is English. Preserve the untranslated alias as an unresolved caller/display lead. '
+    'All12 clean glosses preceded old dialogue exposure;the incidental earlier closing-FE terminology exposure is disclosed in the review record.\n\n'
+    'Visual review caught premature four-row R13 wrapping. Exact source/prose-bound layoutv4 reviews two ordinary complete-word soft wraps after be and this,using three flowing rows with every word unchanged. '
+    'Both exact reasons are recorded on R13;six mutation controls prevent transfer. Eleven other compiled targets/native planes stay exact,shared weak/protected lists stay unchanged,and no manual break,font,width,guard,phase or pagination change is made. '
+    'The first one-boundary attempt produced no change because a proposed35-character interior row exceeded unchanged guard/phase reserves;retain its corrected diagnosis and all producers. '
+    'All12 native panels on2 sheets,96 initial alignments,48 stored cases (36 fresh/12 exact-byte reuse),18 consumer/28 formatter negatives and complete leading/internal/trailing glyph,bounds and one-page checks pass. '
+    'The atomic compiler also guards complete source/current headers,lengths,record identities,both command maps,source context and the exact boundary reasons. Eighty-four meaningful negatives reject before any image mutation. '
+    'All110 release/dialogue pytest regressions and18 cumulative release checks pass. The initial unittest invocation used the wrong runner and failed before exercising the pytest suite;its log remains preserved and is not counted as a passing check.\n\n'
+    'All24 source commands,12 complete preambles,one raw700 predicate,six relative sites,three alternative opaque A000s,C200 and the four-byte end remain. '
+    'Source652 stored/650 logical becomes584 stored/582 logical,with2 alignment zeros on both sides. Predicate540 maps478;effects560/572/584 map498/510/522;C200644 maps576;end646 maps578. '
+    'The exact inverse plus original tailzeros restores every predecessor byte;335 other SC2 blocks stay exact. Thirty native skip cases and5 mapped paths agree. '
+    'Target predicate478 is halfword aligned. Twelve clean/current/relocated cases bind original scratch02279600=700 at0202A5D8 and RNG02168EB8 at020D984C;all other4MiB and ABI remain exact. No emulator seed or outcome is forced. '
+    'Fresh336 target loads/672 parent modes,exact whole-ROM V5122 parent reuse,three entry censuses,guarded ends and12 relocated dispatches pass. A separate receipt clarifies frozen census console-only10/50 literals:actual asserted data is6 relative sites/30 skip cases.\n\n'
+    'Two disclosed Japanese/English B22 content cold boots9001 frames each retain all24 source+9 original initializer commands and execute27 conditional commands per version. All12 panels,selected source effect560,C200,end and normal return are observed. '
+    'All47 complete native holds and115 paired upper/portrait/name samples match. Both actual sheets and20 full paired screens were viewed after image return,including the three-row R13 and portrait-clearing FE. '
+    'Unforced rolls297/592 both return0/select560;returns5735/5737. Ten timings differ (4 speech/6 control/end). Four later original A-indicator differences remain unmasked:6490/6670 lower shadow and7450/7630 full indicator. '
+    'Final9001 RGB,five measured native state groups and whole1A04 actor/captain2 agree;PRNG1803218166/2467799992 differs. Keep all differences without retiming,masking,causal PRNG,future-world or full-RAM equivalence claims. '
+    'No natural event186 eligibility,earned fashion,earlier conversation location,full-route or hardware claim. Later dialogue adds no credit. '
+    'Fresh V5177 New Game4001 and inherited-battery town17401 cold boots match exact-font V5122 across31 whole frames/five actor checks;source and disposable saves remain unchanged. The six-frame startup sheet was viewed after its image call returned. '
+    'Four content/current boots total39404 frames and all jobs are terminal/reaped.\n\n'
+    'V5177 retains the complete V5122 stack:570 manifest batches/114 accepted layers. Only SC2B186 changes;all other files,stories,messages,fonts,graphics,ARM9/ARM7,components and123040-byte staged pool stay exact. '
+    'The cumulative ROM equals the reviewed one-block reference and exact clean-input patch reconstruction. Immutable inputs,promoted main V4701,every previous ROM/translation/draft/executed producer/proof/failure and every historical ledger value remain preserved. No promotion or pruning.\n\n'
+    'Coverage becomes6027 completed contextual rereads,6030 source/prose,3818 integrated revisions/2209 retentions,SC24142/SC396 and routes4428/4428,with zero pending credited route drafts. '
+    'These12 were uncredited and are counted once. B187 has16 fresh clean-only glosses and zero credit. All remaining storylines,shared town/shop dialogue,random scenes,Help,player prose and earlier wrapping remain in scope;graphics and the later older-record technical re-audit stay separate. Full goal active.\n\n')

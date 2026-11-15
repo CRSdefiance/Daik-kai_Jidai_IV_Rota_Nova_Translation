@@ -1,0 +1,180 @@
+"""Seal six complete clean item/crew exchanges,including miracle choice alternatives."""
+from copy import deepcopy
+from pathlib import Path
+from scripts.meaning_maria_B59_B61_clean_v1 import ROOT,key
+from scripts.audit_story_glyph_consistency import load,save
+from scripts.finish_rafael_B261_B280_native_pages_v1 import digest
+
+CONTEXT={
+62:'Maria and Xien find the Silla gold crown before Julian. He flirts,claims a promise to Meihua andasks for the crown to avoid losing face. Maria gives it to him. His parting remark reveals he already knew she led FO. Their final appraisal is amused respect for his boldness,not confirmation of romance or a specific future rank. Meihua/美華 is distinct from Maria Huamei/華梅. Reconcile the crown andspoken name against exact item/name consumers before approval.',
+64:'An abrasive former sailor asks whether Maria believes in miracles. In the belief branch he initially insults her,then reveals bitterness about unbelieving captains andgives her a bullet pendant because she believes. He has asked100 captains/groups andcan no longer sail for an unspecified physical reason. The FE Luck increases belong to this result. The disbelief branch has Fernando dismiss the encounter andFE Spirit increases. Preserve each branch andthe exact +1 messages;do not claim both outcomes occur together or invent the man\'s injury.',
+65:'Emilio repeatedly praises tomatoes while chewing;Maria answers with increasingly distracted restraint. A merchant rewards their enthusiasm with a young tomato plant. He sells/stocks the tomatoes;the dialogue does not say he grows them. Maria politely accepts andwarns Emilio against an upset stomach. No extra trade forecast,growing lesson or profit mechanic is stated.',
+66:'Animal-like FE cries accompany the theft of Emilio\'s banana. He pursues an unnamed fast creature that throws stones andseeds. Maria notices unfamiliar seeds that might be a lucky find,buthe still wants his banana. She defuses the outburst by offering to buy a local specialty meal. Do not name a seed species,assert a guaranteed value orintroduce a named animal speaker absent from the speech.',
+68:'The location reminds Gerhard of losing a beloved old Katzbalger while fighting pirates. Its excellent handling mattered more than its appearance. He suspects a fisherman found andsold it cheaply;Maria offers a hopeful alternative that someone discerning might treasure it. These are uncertain inferences,not verified events. No family heirloom or specific war history is given.',
+70:'Angelo asks about nukenin andthen admits he does not know what ninja are. Yukihisa explains Japanese covert clans,the death rule for exposed ninja andthe exceptional skill of a fugitive who escapes clan pursuit. Angelo\'s actual lead is an extremely light,strong black garment said to be armor. Maria\'s comment on Yukihisa\'s unfamiliarity leads to his unnecessary apology,Angelo\'s teasing andan honor-sensitive argument she stops. They agree to search Japan if time permits. Keep cultural terms,Angelo\'s Italian exclamation andYukihisa\'s formal voice without adding witness killings,banishment,supernatural powers or an actual duel.',
+}
+MEANINGS={
+62:{
+10:'Xien admires the newly found Gold Crown of Silla andidentifies it by name.',
+14:'Maria calls it beautiful.',
+18:'Xien says it makes their effort worthwhile.',
+21:'Maria wonders whether the man they discussed has still not arrived.',
+24:'Xien reasons that if he left the tavern before them,it would be no surprise if he had already found it. Preserve this inference.',
+28:'Maria notices someone approaching.',
+34:'Julian arrives panting after finally making it here andrecognizes the crown he has searched so hard for.',
+37:'Maria says he is late andintroduces herself as FI;retain the live name token.',
+40:'Julian repeats FI andcompliments the name.',
+43:'Julian asks how Maria knew he would come andwhy she was searching for the crown.',
+47:'Maria admits hearing him talk about the crown in Hangzhou.',
+50:'Julian accuses her of overhearing his conversation with Meihua andfollowing him,then suggests she has fallen for him. This is his teasing claim,not a romance fact.',
+53:'Xien angrily rebukes him for addressing the admiral that way.',
+57:'Maria objects,apologizes for eavesdropping,butdenies deliberately following him orhaving romantic feelings for him.',
+60:'Julian says that is a pity because women of her type appeal to him. His familiar older-woman address is not sisterhood.',
+64:'Xien demands he stop andstarts explaining who Maria is.',
+68:'Maria tells Xien to leave him be;he is the sort who flirts with any woman he sees.',
+71:'Julian asks Maria not to glare so fiercely,because it spoils her beauty;keep the flirtatious impertinence as his voice.',
+74:'Julian returns to the matter andasks whether she wants the crown. Familiar older-woman address does not establish kinship.',
+77:'Maria admits she is not entirely uninterested.',
+81:'Julian argues that if her attachment is only that strong,she should be willing to give it to him.',
+85:'Xien calls him shameless andtells FI not to feel sorry for such a man;preserve the live token.',
+89:'Julian pleads that he promised Meihua he would find andbring back the crown. Preserve the specific promise,not a bet or engagement.',
+93:'Julian says his reputation/face would be ruined andhe cannot return empty-handed,asking whether Maria understands.',
+96:'Maria agrees to give him the crown andtells him to return to Meihua promptly.',
+99:'Julian thanks FI andsays they will meet again in Hangzhou.',
+102:'Julian adds that he will tell Meihua the admiral of FO is as beautiful as rumored. Preserve FO andthe reported reputation.',
+109:'Xien realizes Julian already knew Maria was the leader of FO.',
+113:'Maria says he got the better of them andmight be more impressive/formidable than expected. Preserve possibility,not a guaranteed great career.',
+116:'Xien says such a bold,fearless nature suits an adventurer.',
+},
+64:{
+4:'An unnamed man calls out to the captain over there.',
+8:'Maria asks whether he means her.',
+12:'The man confirms andasks if she believes in miracles.',
+'SC3_B64_CHOICE_104_0':'Maria answers that she believes in miracles.',
+'SC3_B64_CHOICE_104_1':'Maria answers that she does not believe in miracles.',
+26:'In the belief branch,the man says believers are rare these days andsuggests she seems unreliable for a captain. Keep the initially abrasive irony before his later explanation.',
+30:'Fernando angrily demands what the man thinks he is saying to their admiral.',
+33:'The man challenges whether Fernando thinks he is wrong.',
+37:'Fernando gives another angry insult/interjection.',
+41:'The man shouts that there are people who disbelieve in miracles andget shipwrecked,andbelieving is much better than that. Preserve his bitter comparison,not a universal game guarantee that belief prevents wrecks.',
+45:'Fernando is bewildered.',
+49:'The man apologizes for shouting andsays he did not mean to disparage their captain.',
+53:'Fernando says he cannot make sense of this man.',
+57:'The man explains he wanted a captain who believes in miracles to have this object.',
+60:'He has been calling out whenever a ship arrives,andthey are the100th person/group he has approached. Preserve100 without inventing elapsed days or100 ships wrecked.',
+64:'Fernando asks what the object is.',
+68:'The man identifies a bullet pendant said to call forth miracles. Keep the reported belief,not confirmed magic.',
+71:'Maria asks whether such a precious thing is really all right for her to accept.',
+74:'The man wants someone like her to have it. It was his protective charm,buthis body/condition no longer lets him sail. Do not invent an injury,disease,rank orbattle.',
+77:'Maria understands andgratefully accepts.',
+82:'The FE result says FI\'s Luck/運勢 rises by exactly1;preserve the live token andverify the registered stat label.',
+85:'The FE result says Fernando\'s Luck/運勢 rises by exactly1.',
+92:'In the disbelief branch,Fernando says dealing with strange people will bring bad luck andurges them to leave. It is his remark,not an observed Luck reduction.',
+95:'Maria hesitantly agrees.',
+101:'The FE alternative result says FI\'s Spirit/精神 rises by exactly1;preserve FI andverify the stat label.',
+104:'The FE alternative result says Fernando\'s Spirit/精神 rises by exactly1.',
+},
+65:{
+4:'Emilio says tomatoes taste good while audibly chewing.',
+7:'Maria agrees simply.',
+11:'Emilio says he initially mistook them for apples,still chewing.',
+14:'Maria repeats her simple agreement.',
+18:'Emilio praises their sweetness anddelicious taste,chewing again.',
+21:'Maria gives a slightly distracted/hesitant agreement.',
+25:'The merchant laughs that the group clearly likes tomatoes very much.',
+28:'Since they like them so much,he offers them something.',
+31:'Emilio asks what it is.',
+35:'The merchant identifies a young tomato plant/seedling,not loose tomato seeds or a full grown tree.',
+39:'Maria asks whether it is all right to accept.',
+43:'The merchant says of course,because they have praised the tomatoes his shop handles/sells so warmly. Do not infer that he grows them.',
+47:'Maria gratefully accepts the gift.',
+51:'Emilio says they have done well/gotten a good deal,addressing the admiral while still chewing. No guaranteed trading profit is stated.',
+55:'Maria warns him not to eat so much that he upsets his stomach.',
+},
+66:{
+4:'An animal-like ooking/chattering cry is printed as an FE sound,with no named speaker.',
+8:'Emilio cries out in surprise andasks what it is.',
+12:'The same animal-like FE cry repeats.',
+16:'Emilio angrily tells the creature to go away.',
+20:'The same FE cry repeats a third time.',
+24:'Emilio shouts for something to be returned;the stolen banana is identified shortly afterward.',
+28:'Maria asks what happened.',
+32:'Emilio says something stole the banana he had been eating.',
+36:'Maria asks whom he means by something.',
+40:'Emilio points out the culprit,finds it gone,andshouts after it to stop.',
+43:'Maria asks whether he caught it.',
+47:'Emilio says it is very quick andthrows things at him,such as stones andseeds.',
+51:'Maria inspects the seeds,has never seen this kind before,andthinks they might be a lucky/valuable find. Preserve uncertainty anddo not identify a plant species from this line.',
+55:'Emilio dismisses the seeds in favor of demanding his banana back.',
+59:'Emilio repeats his demand for the banana twice.',
+63:'After a pause,Maria suggests going to eat a local specialty as a distraction.',
+66:'Emilio asks whether she is treating/paying.',
+70:'Maria confirms she will treat him.',
+76:'Emilio cheers up excitedly.',
+},
+68:{
+4:'Gerhard startles in recognition of the place andtrails off.',
+7:'Maria asks what is wrong with Gerhard.',
+11:'Gerhard says he was just remembering the past.',
+14:'Maria asks about the past.',
+18:'Gerhard once lost the sword he carried while fighting enemy pirates near here. No particular campaign,ship orfamily origin is named.',
+21:'Maria asks whether it was a sword.',
+25:'Gerhard calls it only an old Katzbalger,yetits handling was far better than its appearance suggested,andhe had cherished it for many years.',
+28:'Maria sympathizes andasks if it was never found.',
+31:'Gerhard says he could find it nowhere andsupposes local fishermen picked it up andsold it for a pittance. Keep this as his inference.',
+34:'Maria wonders if instead someone with a discerning eye found it andis taking good care of it. This is a hopeful possibility,not certainty.',
+37:'Gerhard says one rarely finds such a fine sword,andhe would feel a little better if someone who understands its worth is using it.',
+},
+70:{
+4:'Angelo asks the admiral what nukenin means.',
+8:'Maria repeats the unfamiliar word as a question.',
+12:'Yukihisa explains it means someone who used to be a ninja.',
+16:'Angelo reacts to ninja,thenasks what a ninja is. Preserve the delayed admission of ignorance as the joke.',
+19:'Yukihisa describes clans in Japan skilled at covert operations. Do not add modern spy agencies orsupernatural abilities.',
+22:'Angelo paraphrases them as Japanese spies andasks if Yukihisa has met one.',
+26:'Yukihisa says never:the ninja code prescribes death for the ninja whose true identity is seen/exposed. The passive 見られた refers to the exposed person,not every witness who sees a ninja.',
+30:'Angelo exclaims Mamma mia in his established Italian voice.',
+34:'Yukihisa says leaving the ninja life is itself a mortal risk;a nukenin who has escaped clan pursuit must possess extraordinary ninja skill. No banishment,treason judgment orspecific crime is stated.',
+37:'Yukihisa asks what this nukenin has to do with the matter.',
+41:'Angelo clarifies that what he actually heard about was the clothing.',
+45:'The clothing is jet-black andcalled the Rogue Ninja\'s Black Garb/抜け忍の黒装束;he has heard it is armor rather than ordinary clothes. Reconcile the precise item name before approval.',
+49:'Yukihisa asks in surprise whether it is armor.',
+53:'Angelo does not know the details,butit is said to be extremely light andstrong. Keep this as hearsay.',
+56:'Yukihisa says this is the first he has heard of such an item.',
+59:'Maria remarks that even Yukihisa,who is Japanese,has not heard of it. Preserve the teasing observation without a broader cultural judgment.',
+63:'Yukihisa apologizes/expresses embarrassment at not knowing.',
+67:'Angelo says there is no need for Yukihisa to apologize.',
+70:'Yukihisa starts a hesitant objection.',
+74:'Angelo says he was the one who brought it up anyway,andteases Yukihisa for being funny/entertaining.',
+77:'Yukihisa takes funny as a possible insult andwarns he will show no mercy if Angelo is insulting him. Preserve the conditional offense,not an already-declared duel.',
+81:'Angelo provocatively asks what he means by not showing mercy.',
+85:'Maria orders them to stop,saying their childish quarrel is embarrassing/unseemly.',
+89:'Yukihisa formally apologizes in shame.',
+93:'Angelo apologizes casually andadmits fault.',
+96:'Yukihisa returns to the subject:if this black-garb armor exists,it must be in Japan. Preserve the conditional existence.',
+99:'Maria agrees that is likely.',
+103:'Angelo agrees andsuggests searching for it if they have free time. Do not turn the suggestion into a required quest orknown location.',
+},
+}
+
+def main():
+    out=ROOT/'B62_B70_clean_meanings_v1.json';assert not out.exists()
+    path=ROOT/'clean_source_packet.json';packet=load(path);rows=[]
+    for group in packet['groups']:
+        if group['block'] not in MEANINGS:continue
+        meanings=MEANINGS[group['block']];assert len(meanings)==len(group['records']) and set(meanings)=={key(r) for r in group['records']}
+        block=bytes.fromhex(group['clean_block_hex'])
+        for source in group['records']:
+            row=deepcopy(source);raw=bytes.fromhex(row['source_hex']);at=row['source_reference']['offset']
+            assert block[at:at+len(raw)]==raw and not row['covered']
+            row.update(source_meaning=meanings[key(row)],whole_exchange_context=CONTEXT[row['block']],
+                source_meaning_reviewed_from_complete_clean_exchange=True,current_English_not_consulted=True,
+                independent_draft_pending=True,contextual_comparison_pending=True,new_credit=0)
+            if row['kind']=='ordinary-speech':row.update(source_selector=raw[0],source_complete_preamble_hex=block[at-5:at+1].hex())
+            rows.append(row)
+    assert len(rows)==129
+    save(out,dict(records=rows,source_objects=129,complete_exchanges=6,source_meanings_sealed_before_independent_drafts=True,
+        no_current_story_English_read=True,all_five_gates_pending=True,new_credit=0,
+        evidence={str(p):digest(p) for p in [path,Path(__file__)]}))
+    print('Sealed129 clean meanings acrosssix complete item/crew exchanges;no current comparison orgates credited.')
+if __name__=='__main__':main()

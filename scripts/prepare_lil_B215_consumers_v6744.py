@@ -1,0 +1,11 @@
+"""Derive source-bound consumer and event proofs; preflight every replacement first."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import checked_text,derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B215_consumer_tools_v6744')
+if __name__=='__main__':
+    assert not ROOT.exists()
+    common={'B213':'B215','source_v6651':'source_v6743','eighteen_clean_current_full_prophecy_exchange_source_references':'fifteen_clean_current_Solomon_exchange_two_FA_source_references','current_V6641_native_v6650':'current_V6733_native_v6742'}
+    jobs=[('scripts/prove_lil_B213_consumers_v6652.py','scripts/prove_lil_B215_consumers_v6744.py',{**common,'consumers_v6652':'consumers_v6744','all18_clean_glosses_precede_old_English':'all15_clean_glosses_precede_old_English','[2,9,170]':'[2,23,120]','dict(FI=1,FA=0,FO=0)':'dict(FI=0,FA=2,FO=0)',"'all_ten_original_consumers_and_owned_or_readonly_memory_paths_exact':'all_six_original_consumers_and_owned_or_readonly_memory_paths_exact'":"'all_ten_original_consumers_and_owned_or_readonly_memory_paths_exact':'all_six_original_consumers_and_owned_or_readonly_memory_paths_exact','actor = root+4+32*ident':'actor = root+0x19E4 if ident==2 else root+4+32*ident'",'len(cases)==36 and len(effective)==18':'len(cases)==30 and len(effective)==15','eighteen_effective_bodies36_dispatches_three_actors_six_name_consumers':'fifteen_effective_bodies30_dispatches_three_actors_six_name_consumers','all36_source_current_dispatches':'all30_source_current_dispatches','all18_current_templates_equal_raw_storage_without_catalogue_override':'all15_current_templates_equal_raw_storage_without_catalogue_override','one_original_FI_expands_to_current_Lil':'two_original_FA_expand_to_current_Argot','bodies=18,dispatches=36':'bodies=15,dispatches=30'}),('scripts/prove_lil_B213_entry_v6656.py','scripts/prove_lil_B215_entry_v6745.py',{**common,'entry_v6656':'entry_v6745','in [213]':'in [215]'})]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    proofs=[derive(a,b,c) for a,b,c in jobs];ROOT.mkdir(parents=True);save(ROOT/'source_locked_consumers_and_entry.json',dict(derivations=proofs,no_ROM_or_review_credit=True,full_goal_complete=False))

@@ -1,0 +1,35 @@
+"""Read only clean-Japanese name fields for all Hodram B137/B45/B46 actors before current-English exposure."""
+import struct
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.audit_native_given_name_table import string
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/Hodram_B137_B45_B46_clean_names_v8182')
+SOURCE=Path('work/analysis/Hodram_B46_clean_context_v8179/complete_clean_SC1_B46_EV1_andcoverage_before_current_English.json')
+if __name__=='__main__':
+    assert not ROOT.exists()
+    source=read(SOURCE);invitation=Path('work/analysis/Hodram_next_clean_v8178/complete_clean_SC1_B45_EV1_andcoverage_before_current_English.json');other=read(invitation);assert source['source_ROM_sha256']==other['source_ROM_sha256'];prerequisite=Path('work/analysis/Hodram_B137_clean_context_v8180/complete_clean_SC1_B137_EV1_andcoverage_before_current_English.json');extra=read(prerequisite);assert extra['source_ROM_sha256']==source['source_ROM_sha256'];g=dict(records=extra['groups'][0]['records']+other['groups'][0]['records']+source['groups'][0]['records']);image=NdsImage.open(source['source_ROM']);arm=image.read_file('/__arm9__.bin')
+    assert sha(Path(source['source_ROM']).read_bytes())==source['source_ROM_sha256']
+    table=struct.unpack_from('<I',arm,0xCDAC0)[0]-0x02000000;assert table==0x120B80
+    chosen=sorted({r['source_selector'] for r in g['records'] if r['source_selector']!=254})
+    assert chosen==[1,2,9,16,18,113]
+    rows=[]
+    for ident in chosen:
+        fields=[]
+        for col,kind in [(0,'given'),(4,'surname'),(8,'middle')]:
+            at=table+32*ident+col
+            fields.append(dict(kind=kind,table_field=at,table_field_hex=arm[at:at+4].hex(),
+                **string(arm,struct.unpack_from('<I',arm,at)[0])))
+        rows.append(dict(source_actor_ID=ident,source_selector=f'{ident:02X}',fields=fields,
+            source_speech_IDs=[r['id'] for r in g['records'] if r['source_selector']==ident],
+            current_name_fields_getters_voices_full_consumers_andlocalization_not_yet_reviewed=True))
+    ROOT.mkdir(parents=True)
+    save(ROOT/'six_clean_static_identity_fields_before_current_English.json',dict(
+        source_packet=str(SOURCE),source_packet_sha256=sha(SOURCE.read_bytes()),source_invitation_packet=str(invitation),source_invitation_packet_sha256=sha(invitation.read_bytes()),source_prerequisite_packet=str(prerequisite),source_prerequisite_packet_sha256=sha(prerequisite.read_bytes()),
+        clean_ARM9_sha256=sha(arm),table_field_source='Original ARM9 pointer0xCDAC0 and32-byte actor rows,as in prior immutable source-bound identity probes.',
+        records=rows,FE_speech_IDs=[r['id'] for r in g['records'] if r['source_selector']==254],
+        source_only_no_current_English_names_orbody_exposed=True,
+        proper_names_roles_titles_hidden_identity_andcharacterization_to_review_in_full_exchange=True,
+        new_credit=0,new_emulator_runs=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+    for r in rows:print(r['source_actor_ID'],[v.get('text') for v in r['fields']])

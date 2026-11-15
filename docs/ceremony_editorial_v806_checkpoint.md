@@ -1,0 +1,17 @@
+# V806: ceremony52 source,context and English review
+
+V806 source/context/prose-reviews52 ceremony-related entries:45 spoken/reaction records plus shared refusal64 and six result notices289/290/291/293/294/295. 30 proposed revisions/22 retained wordings. Original32 hero selections/32 wrapper ABI cases,270 NPC role/name mappings,21 site names,81 source branches and270 parent date/site bindings pass. 1205/1206 and1223/1224 are protagonist alternatives,not sentence halves;1213 is a response to a help order.290 unrelated trade-good placeholder is replaced in the draft. Original festival formula is modulo28,not30. Notice292 is an unrelated discovery message and is excluded. 550 complete/605 source-prose/55 pending;no new ROM or completion credit. V803 remains current;actual ceremony/native production verification and wider goal remain unfinished.
+
+## Proven original context
+
+The45 original entries1200-1244 are supplemented by shared refusal64 and six notices actually called by these scenes. 292 describes a trade discovery in a town and is not a ceremony result. The original53BD8 wrapper selects one of four protagonist messages,with first-valid fallback; 1205 is for Rafael/Hodram/Maria and1206 for Lil.1223/1224 are likewise alternatives. The full wrapper binds the current admiral actor and original53C14 caller contract. These are complete utterances,not halves to join.
+
+Original61B44 derives the ceremony date as ((TownID+1) mod28)+1 and dispatches types9/10/11 to619A0/618E4/61570. The modulo30 assumption was rejected by native Town27 boundary evidence and the original92492493/divisor28 constants. Type9 alternates chanting and preparation work. Type10 offers prayer/song. Type11 asks the guard for site entry,then changes to the role9 officiant for one of five rites. Clean NPC descriptors identify role9祭主,role10神父 and role11衛兵;270 original town/role mappings preserve actual names. 1219 receives a historic-site name from CB16C records,not a religion. Istanbul uses Cappadocia(index8). All21 supplied names are mapped;not every Town/type combination is claimed visitable.
+
+Result notices use546B8 and its distinct modal consumer. Most take the current admiral given-name from the original virtual+0x20 getter;289 has no argument. 290 wrongly contains generic trade-good instructions in the current ROM. The new draft restores the spiritual-experience narrative. 1232 and1242 use ordinary speech despite their rhetorical questions;the English introduces no new yes/no choice.
+
+## Evidence and limits
+
+`work/analysis/ceremony_context_v806/native_context.json` pins all52 clean/current records,code spans,32 selector cases,32 complete-wrapper ABI cases,270 NPC mappings,21 names,81 branch traces and270 parent bindings. Original choice/provider logic executes;UI/IO,action-animation,crew-effect and time calls are explicit interception boundaries. These are source-context tests,not emulator gameplay or verified stat outcomes. `translations/ceremony_editorial_manuscript_v1.json` has source/context/localization/naturalness approval;every formatting gate remains false. Ordinary paragraphs,protagonist reactions and modal result notices require their own original-consumer checks. Other64 consumers must retain their presentation contract.
+
+No playable ROM changed. Preserve frozen V803 and its exact patch until the new source-owned formatting,COMMON copies,registered release and actual ceremony checks pass. The whole editorial goal and separate graphics/18-plaque audit remain open.

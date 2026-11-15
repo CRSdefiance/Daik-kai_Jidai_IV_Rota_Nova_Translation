@@ -1,0 +1,29 @@
+"""Separate24 speech/four approved menu objects for exact native relocation;retain the full28-object manuscript."""
+from copy import deepcopy
+from pathlib import Path
+from collections import Counter
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B206_relocation_tools_v6300')
+if __name__=='__main__':
+    assert not ROOT.exists();v=read('work/analysis/editorial_handoff_verification_v6290/verified_handoff.json');assert sha(Path('translations/editorial_review_current_v1.json').read_bytes())==v['ledger_sha256'] and sha(Path(v['candidate']).read_bytes())==v['candidate_sha256']
+    ap=Path('work/analysis/lil_B206_native_approval_v6299/all28_source_prose_current_native_approval.json');approval=read(ap);assert approval['all28_five_gates_approved']
+    oldd=Path('translations/lil_B206_editorial_manuscript_v6.json');oldm=Path('translations/lil_B206_choice_manuscript_v2.json');newd=Path('translations/lil_B206_editorial_manuscript_v7.json');newm=Path('translations/lil_B206_choice_manuscript_v3.json');assert not newd.exists() and not newm.exists();old,menu=map(read,[oldd,oldm]);doc,m=deepcopy(old),deepcopy(menu)
+    summary=Path('work/analysis/lil_B206_choices_v6286/all2_typed_menus_native_proof.json');mp=read(summary);assert len(mp['menus'])==2;proofs={r['command_offset']:r for r in mp['menus']}
+    for row in m['records']:
+        ref=proofs[row['command_offset']];proof=read(ref['proof']);assert proof['six_original_VM_selection_and_cancel_cases_pass'] and proof['twelve_complete_native_style_label_planes_pass'];row.update(typed_target_object_hex=proof['typed_target_object_hex'],typed_choice_proof=ref['proof'],typed_choice_proof_sha256=sha(Path(ref['proof']).read_bytes()))
+    m.update(typed_choice_proof=str(summary),typed_choice_proof_sha256=sha(summary.read_bytes()),previous_manuscript=str(oldm),previous_manuscript_sha256=sha(oldm.read_bytes()),encoder='typed-menu-relocatable-v1',metadata_only_typed_target_objects_attached_no_words_or_native_gates_changed=True);save(newm,m)
+    doc['records']=[r for r in doc['records'] if r['kind']=='progressive'];assert len(doc['records'])==24 and len(m['records'])==4 and Counter(r['editorial_decision'] for r in doc['records'])=={'revise':14,'retain-wording':10}
+    doc.update(revised=14,retained=10,full_exchange_editorial_objects=28,full_exchange_revised=16,full_exchange_retained=12,full_28_object_native_approved_manuscript=str(oldd),full_28_object_native_approved_manuscript_sha256=sha(oldd.read_bytes()),typed_choice_manuscript=str(newm),typed_choice_manuscript_sha256=sha(newm.read_bytes()),previous_manuscript=str(oldd),previous_manuscript_sha256=sha(oldd.read_bytes()),native_approval=str(ap),native_approval_sha256=sha(ap.read_bytes()),metadata_only_companion_split_no_object_words_refs_or_gates_lost=True)
+    branch=Path('work/analysis/lil_B206_branches_v6238/original_relative_skip_operand_proof.json');assert branch.exists();doc.update(branch_proof=str(branch),branch_proof_sha256=sha(branch.read_bytes()));save(newd,doc)
+    all_old={r['id']:r for r in old['records']};combined=doc['records']+m['records'];assert len(combined)==len({r['id'] for r in combined})==28
+    for r in combined:assert all(r[k]==all_old[r['id']][k] for k in ['english','source_hex','current_hex','source_reference','current_reference','editorial_decision','review','localization_note'])
+    tools=[derive('scripts/research_lil_B201_relocation_v5931.py','scripts/research_lil_B206_relocation_v6301.py',{
+      'B201':'B206','lil_B201_relocation_v5931':'lil_B206_relocation_v6301','editorial_manuscript_v6.json':'editorial_manuscript_v7.json','combined_v5891':'combined_v6270',
+      'number==201':'number==206',"end_maps[0]['source_offset']==1448":"end_maps[0]['source_offset']==1518",'source[old_end:]==bytes(0)':'source[old_end:]==bytes(2)','inverse_plus_original_zero_tailzeros':'inverse_plus_original_two_tailzeros',
+      "choice_commands']) for r in results)==1":"choice_commands']) for r in results)==2","relative_skip_fixups']) for r in results)==4":"relative_skip_fixups']) for r in results)==8","target_native_skip_cases']) for r in results)==20":"target_native_skip_cases']) for r in results)==40","command_map']) for r in results)==44":"command_map']) for r in results)==42",'in [201]':'in [206]',
+      'one_original2100_object_two_source_ordered_buy_refusal_labels':'two_original2100_objects_four_source_ordered_pitch_price_labels','all24speech_one_menu_and4_relative_operands':'all24speech_two_menus_and8_relative_operands','all20_relocated':'all40_relocated','source_FE_system_objects=3':'source_FE_system_objects=0',
+      '44commands/24speech/one2100/fourspans/20targetskipcases,one shared end,all1452 predecessor bytes inverse and335otherblocks exact.':'42commands/24speech/two2100/eightspans/40targetskipcases,one shared end,all1524 predecessor bytes inverse and335otherblocks exact.',
+    })]
+    ROOT.mkdir(parents=True);save(ROOT/'metadata_only24_speech4_menu_split_and_exact_relocation_tools.json',dict(manuscript=str(newd),manuscript_sha256=sha(newd.read_bytes()),choice_manuscript=str(newm),choice_manuscript_sha256=sha(newm.read_bytes()),complete28_object_approval=str(ap),complete28_source_current_English_decisions_and_all_five_gates_exact=True,speech_revised=14,speech_retained=10,choice_revised=2,choice_retained=2,source_commands=42,source_relative_sites=8,source_stored1524_logical1522_tail2_end1518=True,tools=tools,previous_goal_turn_classification='progress',no_ROM_registry_ledger_or_completion_credit_change=True,full_goal_complete=False));print('B206 metadata-only24+4 companion split and exact42-command/eight-span reversible relocation tool prepared. All28 reviewed words/refs/gates retained.')

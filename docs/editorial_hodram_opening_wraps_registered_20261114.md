@@ -1,0 +1,9 @@
+# Hodram’s early confrontations and recruitment exchanges
+
+The [registered review](../releases/all_routes_editorial_20261114_hodram_opening_wraps_candidate/verification/registered_review.json) resolves 38 flagged lines across 26 blocks. It revises 36 speeches, reflows Lil’s question without changing her words, and keeps Fernando’s objection intact. Aziza’s account of her father’s sword and Julian Vermeer’s retort use the wording from their parallel Rafael scenes. Hodram’s exchange with Maria fits on one page. The introduction to Emilio keeps Hodram’s first and last name together after the native substitutions.
+
+The B17 speaker at R0146 and R0160 takes a price for releasing Aziza. His original nameplate is ダンディー. “Dandy” preserves the nickname in this exchange and agrees with the catalog label. [Actor 185 inventory](../translations/editorial_checkpoints/SharedText_20261110_v1/actor_name_inventory_current_v1.json)
+
+All 77 before-and-after pages were visually checked. The 304 native processor alignments and 37 changed speech boundaries passed. Scoped replay in Hodram’s initialized opening matched three revised pages and four neighboring pages and verified the return to the original departure choice after one fewer page. The original optional scene triggers and hardware remain unvisited. The other changed pages received offline checks. Separate cumulative cold boot and 56 targeted tests passed.
+
+The [cumulative ROM and byte-exact patch](../releases/all_routes_editorial_20261114_hodram_opening_wraps_candidate/README.md) preserve previous work, including the Market and Sailor Info fixes and the ASCII right bound. The [wrap scan](../translations/editorial_checkpoints/SharedText_20261110_v1/current_progressive_wrap_triage_v15.json) has 501 open leads, including 126 from Hodram. The 279 shared records, remaining UI and name coverage, and representative town and random-scene coverage remain open. The ledger holds 27,697 credited reviews.

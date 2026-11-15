@@ -1,0 +1,13 @@
+"""Derive the sole registered cumulative build, exact clean patch and fresh startup controls."""
+from pathlib import Path
+from scripts.prepare_lil_B156_layout_v3705 import derive
+from scripts.verify_village_wrap_v608 import save
+from dk4tool.patch.grand_race_menu_release import sha
+if __name__=='__main__':
+    root=Path('work/analysis/lil_B158_release_tools_v3819');assert not root.exists();pairs=[]
+    pairs.append(derive('scripts/build_lil_B157_v3778.py','scripts/build_lil_B158_v3819.py',{'lil_B157_build_v3778':'lil_B158_build_v3819','all_routes_combined_v3778':'all_routes_combined_v3819','lil_B157_registration_v3777':'lil_B158_registration_v3818','all-routes-unified-v3778':'all-routes-unified-v3819'}))
+    pairs.append(derive('scripts/verify_lil_B157_release_v3779.py','scripts/verify_lil_B158_release_v3820.py',{'lil_B157_editorial_v1':'lil_B158_editorial_v1','lil_B157_release_v3779':'lil_B158_release_v3820','all_routes_combined_v3778':'all_routes_combined_v3819','all_routes_combined_v3738':'all_routes_combined_v3778','lil_B157_registration_v3777':'lil_B158_registration_v3818','all-routes-unified-v3778':'all-routes-unified-v3819','all-routes-unified-v3738':'all-routes-unified-v3778','lil_B157_editorial':'lil_B158_editorial',"len(manifest['batches'])==532":"len(manifest['batches'])==533",'all532_manifest':'all533_manifest','exact_to_V3738':'exact_to_V3778','manifest_batches=532':'manifest_batches=533','lil_carlo = profile_config':'lil_dance = profile_config'}))
+    pairs.append(derive('scripts/run_lil_B157_startup_v3780.py','scripts/run_lil_B158_startup_v3821.py',{'lil_B157_runs_v3780':'lil_B158_runs_v3821','version=3778':'version=3819','lil_B157_v3780_':'lil_B158_v3821_','not_a_selected_B157_activation':'not_a_selected_B158_activation','no selected B157 activation':'no selected B158 activation'}))
+    pairs.append(derive('scripts/verify_lil_B157_startup_v3781.py','scripts/verify_lil_B158_startup_v3822.py',{'lil_B157_startup_v3781':'lil_B158_startup_v3822','lil_B157_runs_v3780':'lil_B158_runs_v3821','all_routes_combined_v3778':'all_routes_combined_v3819','all_routes_combined_v3738':'all_routes_combined_v3778','lil_B156_runs_v3740':'lil_B157_runs_v3780','V3738':'V3778','Current3778':'Current3819','actual_selected_B157_IDs':'actual_selected_B158_IDs'}))
+    pairs.append(derive('scripts/record_lil_B157_startup_view_v3781.py','scripts/record_lil_B158_startup_view_v3822.py',{'lil_B157_startup_v3781':'lil_B158_startup_v3822','equal_V3738':'equal_V3778','source_B157_not_selected':'source_B158_not_selected'}))
+    root.mkdir(parents=True);save(root/'provenance.json',dict(tools=pairs,all_previous_ROMs_translations_and_producers_preserved=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

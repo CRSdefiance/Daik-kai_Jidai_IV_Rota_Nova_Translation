@@ -1,0 +1,28 @@
+"""Bind viewed source pages,full signature,current names and explicit conditional coverage."""
+from pathlib import Path
+from copy import deepcopy
+from PIL import Image
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B223_source_view_v7089');DOC=Path('translations/lil_B223_speaker_name_review_v1.json')
+FONT=Path('work/analysis/lil_B223_source_pages_v7087/all17_clean_objects_complete_native_CP932_pages_and_R40_two_page_sequence.json')
+ACTUAL=Path('work/analysis/lil_B223_source_actual_v7088c/eight_speeches_one_style_ten_complete_pages27_commands_and_source_return.json')
+NAMES=Path('work/analysis/lil_B223_name_planes_v7084/four_actors_eight_getters_eleven_name_planes44_alignments.json')
+BINDING=Path('work/analysis/lil_B223_names_v7083/four_names_eight_getters_full_Ian_signature_and_direct_given_name_binding.json')
+if __name__=='__main__':
+    assert not ROOT.exists() and not DOC.exists();font,actual,names,binding=map(read,[FONT,ACTUAL,NAMES,BINDING]);assert font['complete_objects']==17 and font['complete_native_pages']==18 and actual['actual_complete_source_pages']==10 and actual['actual_complete_source_body_holds']==len(actual['actual_complete_name_holds'])==33 and actual['source_R40_two_pages_advanced_by_original_A_input']
+    images=[*font['review_sheets'],*actual['review_sheets'],actual['transition_sheet'],names['review_sheet']];assert len(images)==7
+    for spec in images:assert sha(Path(spec['path']).read_bytes())==spec['sha256']
+    panes=[]
+    for index,panel in enumerate(actual['actual_page_observations']):
+        spec=actual['review_sheets'][index//6];photo=panel['selected_capture'];full=Image.open(photo['path']).convert('RGB');tile=full.crop((0,192,256,384)).resize((512,384),Image.Resampling.NEAREST);sheet=Image.open(spec['path']).convert('RGB');cell=index%6;x,y=cell%3*520+4,cell//3*416+24;assert sheet.crop((x,y,x+512,y+384)).tobytes()==tile.tobytes();panes.append(dict(id=panel['id'],page=panel['page'],frame=photo['frame'],source_capture=photo['path'],whole_lower_screen_overview_crop_pixel_equal=True))
+    ROOT.mkdir(parents=True);proof=ROOT/'all18_source_native_pages_ten_actual_pages_signature_and_eleven_name_planes_viewed.json'
+    save(proof,dict(source_font_proof=str(FONT),source_font_proof_sha256=sha(FONT.read_bytes()),actual_source_proof=str(ACTUAL),actual_source_proof_sha256=sha(ACTUAL.read_bytes()),name_proof=str(NAMES),name_proof_sha256=sha(NAMES.read_bytes()),viewed_images=images,all_seven_sheets_individually_returned_and_viewed=True,all_ten_actual_page_panes_equal_original_crops=panes,source_R40_complete_first_four_rows_then_final_death_sentence_visible=True,source_R40_original_A4280_page_advance_bracket4270_4330=True,complete_source_Ian_signature_visible=True,Lil_Ian_and_Sailor_current_headers_complete=True,Cesare_conditional_header_and_two_speeches_unvisited=True,six_other_automatic_notice_bodies_unvisited=True,all17_stored_objects_not_claimed_actual=True,full_catalogue_UI_unvisited=True,normal_B22_return5253_and_Amsterdam5350_viewed=True,later_SC0_B44_dialogue_still_open_at16001_viewed_not_contextual_approval=True,no_missing_source_leading_internal_final_characters_or_unintended_blank_page_observed=True,no_new_EMU_replay_or_duplicate_source_credit=True,new_credit=0,full_goal_complete=False))
+    records=[]
+    for row in binding['source_name_fields']:
+        if row['actor_ID']==151:continue
+        ident=row['actor_ID'];actual_name=ident in [2,21]
+        records.append(dict(id=f'ACTOR_{ident:03d}_B223_CONTEXTUAL_NAME_RETENTION',actor_ID=ident,english=row['progressive'],editorial_decision='retain-wording',source_fields=deepcopy(row['fields']),current_native_progressive=row['progressive'],current_native_catalogue=row['catalogue'],source_voice_class=row['voice'],source_meaning='Original source primary/family pair;third field is null.',context=binding['source_context'],localization_note=row['editorial_reason'],fresh_retained_wording_justification=row['editorial_reason'],review=dict(source=True,context=True,localization=True,naturalness=True,formatting=True),formatting_reason='Original progressive/full getters,source/current fields,complete style11 name/component planes,44 input alignments,first/internal/final glyphs,blank odd-run flush and original bounds pass. '+('Complete current header is observed in the initialized Japanese letter fixture.' if actual_name else 'Cesare\'s conditional header is unvisited. Its complete66px glyph sequence and original style11 caller are independently bound offline;no natural conditional visit or catalogue UI is claimed.'),actual_source_header_observed=actual_name,actual_English_headers_to_recheck=True,full_catalogue_UI_unvisited=True,new_name_or_dialogue_credit=0))
+    assert len(records)==3
+    save(DOC,dict(format='dk4-contextual-speaker-name-review-v1',translation_policy='natural-dialogue-v2',target_locale='en-US',records=records,source_name_binding=str(BINDING),source_name_binding_sha256=sha(BINDING.read_bytes()),native_name_proof=str(NAMES),native_name_proof_sha256=sha(NAMES.read_bytes()),actual_source_proof=str(ACTUAL),actual_source_proof_sha256=sha(ACTUAL.read_bytes()),source_visual_review=str(proof),source_visual_review_sha256=sha(proof.read_bytes()),three_contextual_name_retentions_no_asset_or_duplicate_credit=True,source_given_Ian_and_full_signature_Ian_Dukov_to_restore_in_prose=True,actor151_Sailor_Retainer_and_full207_review_remain_open=True,full_catalogue_UI_unvisited=True,full_goal_complete=False))
+    print('18 source native pages/10 actual pages/11 name planes viewed. Lil/Ian headers observed;Cesare conditional unvisited. Three contextual name retentions,no asset or credit.')

@@ -1,0 +1,20 @@
+# V942: battle Survey/Lookout editorial completion
+
+V942 completes24 battle Survey3/Lookout1 comments1709-1732 in registered V938:20 revisions and4 retentions. All150 original battle/main/ordinary controls,all24 native fonts,7336 full copies and178 cache sequences pass. Eight active-widget bitmap/RGB holds verify three-row captain1718,full36cell1713,boarding-action sniping1722 and initial I1728. Four normal returns preserve scoped state through first Back;original battle time resumes on exit. Both Survey assignments wait for observed original combat0/1. Seven ordinary startup/New Game frames and title match V928. Exact clean-input patch preserves471 batches,114 layers,3644 unselected strings,all graphics/routes,native code,single8KiB cache,216x36 crop and123040 staged bytes. 1018 entries complete (761 revised/257 retained),1021 source/prose reviewed. Older750-752,mood1833,special actors1885-1888,raw abandon-caption0x134E54,remaining shared/routes/player prose and raw-source inventory remain. Separate graphics/all18 plaques,Samwell header and later older-record re-audit stay open;canonical not promoted;full goal active.
+
+## Source and English
+
+Twenty revisions and four justified retentions cover24 independent alternatives. They restore exposed deck surveying,calm position finding,personal duties,unglamorous but demanding work,measurement also mattering alongside fighting,subject-neutral Maria observation,attempted boarding-action sniping,conditional reversal,incoming shots,reliance on the helmsman,possible reinforcements and personal orders. No automatic capture,reinforcement arrival,damage or helm maneuver is invented. Exact clean/canonical/current references and all five natural-dialogue-v2 gates are retained.
+
+## Formatting and gameplay
+
+All24 native font planes match independent complete words at x0 inside216x36. A preserved first formatting pass exposed awkward phrase boundaries;the explicit successor retains complete during-a-battle and taking-these-measurements phrases and improves the emergency-duty clauses. No prose shortening,manual breaks or alignment padding. The actual standard story-audit format rejection is recorded;the dedicated native audit has zero errors/unwaived warnings. Four wrong-format,eight initial/final-glyph and two continuation-glyph controls reject offline. Strict active-widget RTTI,geometry,bitmap,actual RGB and blank-paper checks exclude stale text.
+
+Four separate V938 fresh cold boots verify genuine captain1 Survey3 also-matters1718 across three full rows,Claudio5 Survey3 full36cell1713,Yukihisa12 Lookout1 boarding-action sniping1722 and Carlo19 Lookout1 full initial I1728. Each has two complete active-widget252x36 native/216x36 RGB holds and normal returns. Two declared coordinate approaches and two/three room/occupant bytes are isolated fixtures. Both Survey assignments follow actual observed original combat0/1;their original travel assignments are preserved until then. No savestate,actor/captain replacement,battle-mode,outcome,health,money or text injection. Other20 entries,including the four retained wordings and subject-neutral Maria1720,have full source/native-font proof rather than individual actual visits. No earned recruitment,refit,travel,complete-route or hardware claim.
+
+## Registered candidate
+
+Experimental profile all-routes-unified-v938 rebuilds471 batches and114 accepted layers from canonical out/raphael_natural_v2_accepted_base.nds,SHA2563cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe. Only COMMON/MESFILE.DK4 and ARM9 selection metadata differ from V928. All other prose,graphics/routes/HELP/ARM7/overlays,native code,sections/BSS,cache arenas and123040 staged bytes are preserved. Exact xdelta reconstructs V938 from clean Japanese SHA256f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d. Explicit human cold-boot acceptance remains required before canonical promotion. Test Survey/Lookout battle comments and normal returns. The full goal remains active.
+
+ROM SHA256 cd4b15ae3eafa6340843f1c72f4db8b683359ca541866d65d547162f2e974b30
+Patch SHA256 84e89482afddc5b14e8fdaefe7969544426c8e29b3b8ecfe084b4e636997e8d4

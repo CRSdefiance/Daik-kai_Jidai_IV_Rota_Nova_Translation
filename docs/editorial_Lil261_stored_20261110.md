@@ -1,0 +1,9 @@
+# Lil B323–B335 display and storage checkpoint
+
+Lil B323–B335 passed offline visual review of all 258 dialogue pages, six captions and 12 name strings. All 13 exchanges passed stored reconstruction, native catalogue lookups and the original SC2 loaders. The final plan improves 30 layouts. Focused gameplay and cumulative registration remain. The ledger credits 25,637 reviews.
+
+All 198 revisions, 63 justified retentions and nine scoped name decisions remain bound to the clean source and Lil254. The 255 bodies pass four native alignments each. The final 30 layout changes keep phrases such as “catch on” and “survey party” together, and place the three page turns at complete thoughts. The two rejected trials in the monk exchange would have left a weak line ending or split “passed away.” The approved plan uses the readable original rows for those two lines. All 13 system alerts pass. [Dialogue](../translations/lil_B323_B335_contextual_review_v1.json) · [Names](../translations/lil_B323_B335_scoped_names_v1.json)
+
+Stored verification passes 258 pages, with 83 fresh parity-sensitive checks and 175 exact reuses. It also passes 255 complete-buffer catalogue lookups, 455 relative branch cases, 336 original SC2 loads and 672 parent handoffs. The rebuilt image changes only the 13 reviewed SC2 blocks and reverses to the exact registered parent. [Lossless evidence](../translations/editorial_checkpoints/Lil261_stored_20261110_v1/archive_manifest.json)
+
+The focused Lil B22 fixture covers 58 dialogue bodies and 61 pages, all 13 system alerts and all three menus. Use the emulator results to verify the selected displays, nameplates, page turns and returns. These checks still need actual observation before the fifth gates and registered release. Lil254 remains the testing candidate. No new review credit was added.

@@ -1,0 +1,100 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "file_path": "/data/SC2.DK4",
+  "block": 74,
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness"
+  ],
+  "formatting_review_pending": true,
+  "source_context": "work\\analysis\\lil_Hamburg_source_v1949\\all79_source_native_context_and_two_choices.json",
+  "source_context_sha256": "70976fb6d81fa57fb1ee34ee31531bd75375cfa6bb2802f160583bea4f462d7b",
+  "current_ROM": "out\\all_routes_combined_v1945_candidate.nds",
+  "current_ROM_sha256": "c2432768da7e12c6fce7af9e4d887af932de2532a2d3a16eddbbe407067f6caf",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "approved_names": [
+    "Rafael",
+    "Hodram",
+    "Joakim",
+    "Maria",
+    "Camille",
+    "Gerhard Ardelknatts"
+  ],
+  "full_goal_complete": false,
+  "format": "dk4-editorial-typed-choice-manuscript-v1",
+  "encoder": "dialogue-relocatable-v1",
+  "status": "two-source-context-choice-labels-retained;native-and-release-pending",
+  "records": [
+    {
+      "id": "DK4_CHOICE_B74_C3504_O0",
+      "file_path": "/data/SC2.DK4",
+      "block": 74,
+      "command_offset": 3504,
+      "option_index": 0,
+      "source_reference": {
+        "offset": 3510,
+        "bytes": 20,
+        "hex": "82bb82a482cb814182a88ae882a282b582e682a4",
+        "text": "そうね、お願いしよう"
+      },
+      "current_reference": {
+        "offset": 3510,
+        "bytes": 20,
+        "hex": "5965732c20706c656173652e2020202020202020",
+        "text": "Yes, please.        "
+      },
+      "source_hex": "82bb82a482cb814182a88ae882a282b582e682a4",
+      "current_text_hex": "5965732c20706c656173652e2020202020202020",
+      "english": "Yes, please.",
+      "speaker": "Lil Argot",
+      "editorial_decision": "retain-wording",
+      "source_meaning": "Lil agrees to ask for the battle lesson.",
+      "localization_note": "Retain the existing natural short menu reply. Remove authored trailing storage spaces only;both labels preserve the source option order andthe choice tohear orskip the battle lesson.",
+      "context": "CompleteB74 recruitment andbattle-tutorial exchange reviewed. Original actualdefault0 Yes,please reaches the full lesson;No need has source-only branch coverage until typed native checks.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_CHOICE_B74_C3504_O1",
+      "file_path": "/data/SC2.DK4",
+      "block": 74,
+      "command_offset": 3504,
+      "option_index": 1,
+      "source_reference": {
+        "offset": 3532,
+        "bytes": 18,
+        "hex": "95b782a982c882ad82c482e091e58fe49576",
+        "text": "聞かなくても大丈夫"
+      },
+      "current_reference": {
+        "offset": 3532,
+        "bytes": 18,
+        "hex": "4e6f206e6565642e20202020202020202020",
+        "text": "No need.          "
+      },
+      "source_hex": "95b782a982c882ad82c482e091e58fe49576",
+      "current_text_hex": "4e6f206e6565642e20202020202020202020",
+      "english": "No need.",
+      "speaker": "Lil Argot",
+      "editorial_decision": "retain-wording",
+      "source_meaning": "Lil declines the optional explanation because they can manage without it.",
+      "localization_note": "Retain the existing natural short menu reply. Remove authored trailing storage spaces only;both labels preserve the source option order andthe choice tohear orskip the battle lesson.",
+      "context": "CompleteB74 recruitment andbattle-tutorial exchange reviewed. Original actualdefault0 Yes,please reaches the full lesson;No need has source-only branch coverage until typed native checks.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ]
+}

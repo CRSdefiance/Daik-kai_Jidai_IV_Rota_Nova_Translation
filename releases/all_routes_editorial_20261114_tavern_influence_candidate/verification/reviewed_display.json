@@ -1,0 +1,506 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_821",
+      "message_id": 821,
+      "speaker": "Barkeep",
+      "english": "%s from %s is a %s with real pull here.",
+      "source_meaning": "The named person from the named town wields influence in this area in their profession.",
+      "context": "The barkeep gives local gossip after the player orders a drink. This casual influence report is an alternative to the formal reputation line, a nearby-town tip or no news. The order of arguments is person, town, role.",
+      "localization_note": "Use the barkeep's conversational 'real pull' to express his appraisal of the person's local influence. The port association and native role keep their source slots.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 2724,
+        "copy_end": 2772,
+        "bytes": 47,
+        "record_index": 40,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3222,
+        "copy_end": 3266,
+        "bytes": 43,
+        "record_index": 53,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "Japanese": "この辺じゃ\n%sっていう\n%sの%sが\n幅を利かせてるぜ",
+      "current_English": " %s of %s is an influential %s around here.",
+      "argument_order": [
+        "person_full_name",
+        "town_name",
+        "localized_force_profession"
+      ],
+      "exact_clean_hex": "82b182cc95d382b682e10a257382c182c482a282a40a257382cc257382aa0a959d82f0979882a982b982c482e982ba",
+      "exact_current_hex": "202573206f6620257320697320616e20696e666c75656e7469616c2025732061726f756e6420686572652e",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3222,
+        "copy_end": 3266,
+        "bytes": 40,
+        "record_index": 53,
+        "table_offset": 1318778,
+        "start_in_record": 0
+      },
+      "staged_hex": "2025732066726f6d20257320697320612025732077697468207265616c2070756c6c20686572652e"
+    }
+  ],
+  "native_layout": {
+    "cases": [
+      {
+        "id": 821,
+        "values_hex": [
+          "48617972656464696e",
+          "416c6578616e64726961",
+          "706972617465"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "2048617972656464696e2066726f6d20416c6578616e647269612069730a202061207069726174652077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Hayreddin from Alexandria is",
+          "a pirate with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "abe2a5fe289fb0311da7f640d1dba26da64359ddd45fe06f938b78f3d0950537"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "476f61",
+          "636f6e717565726f72"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d20476f61206973206120636f6e717565726f720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Goa is a conqueror",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "7df702749efd1bc4e956905cf3bf57f19126b437e176ce0f9789d1fda6826f90"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "476f61",
+          "706972617465"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d20476f612069732061207069726174650a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Goa is a pirate",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "d0b3cdf0723baec1d0d6570f29e1a227a57a07a2542fc097d84e636bcee5ef81"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "476f61",
+          "736f6c64696572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d20476f61206973206120736f6c646965720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Goa is a soldier",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "39ab8fe01cce21a493c70b214b82cd587ed7c69cf4bb398e5f4a6726cbc6fc36"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "476f61",
+          "747261646572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d20476f612069732061207472616465720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Goa is a trader",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "27ce038ff076b41b848b1d759b66ae20356c8e6534c9fd593150015c3a374933"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "53616e746f20446f6d696e676f",
+          "636f6e717565726f72"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d2053616e746f20446f6d696e676f2069730a20206120636f6e717565726f722077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Santo Domingo is",
+          "a conqueror with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "82f8d05473dd8f548113db58e8ae8b212fe16931a1868629c578c3a7f6d4b3a7"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "53616e746f20446f6d696e676f",
+          "706972617465"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d2053616e746f20446f6d696e676f2069730a202061207069726174652077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Santo Domingo is",
+          "a pirate with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "260d3261a795ac524df14f21c232ccd6a12eed3a0036f4f0e8b905a68a68d307"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "53616e746f20446f6d696e676f",
+          "736f6c64696572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d2053616e746f20446f6d696e676f2069730a20206120736f6c646965722077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Santo Domingo is",
+          "a soldier with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "b800194197e19d691539e07b155821844d961bd39fb79b41c08293558225635e"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "416c627571756572717565",
+          "53616e746f20446f6d696e676f",
+          "747261646572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "20416c6275717565727175652066726f6d2053616e746f20446f6d696e676f2069730a202061207472616465722077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Albuquerque from Santo Domingo is",
+          "a trader with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "55da4db21f10527a4c1b49b9c5ea9bad9f7d178f20b79345ed88fb0d41dee8a4"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "417661",
+          "636f6e717565726f72"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d20417661206973206120636f6e717565726f720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Li from Ava is a conqueror",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "3a8259f583504705ff792be1446a3ae630470f685e95913e1f7219ccea042311"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "417661",
+          "706972617465"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d204176612069732061207069726174652077697468207265616c0a202070756c6c20686572652e",
+        "lines": [
+          "Li from Ava is a pirate with real",
+          "pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "1b760542fd32bf4b1b8f005a14c2d7169d118bc3f283280e8b801c6570db5ac1"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "417661",
+          "736f6c64696572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d20417661206973206120736f6c646965722077697468207265616c0a202070756c6c20686572652e",
+        "lines": [
+          "Li from Ava is a soldier with real",
+          "pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "103bc032d2ae81872213d49b120032732f4d342fca1580e47927db7e249ac700"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "417661",
+          "747261646572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d204176612069732061207472616465722077697468207265616c0a202070756c6c20686572652e",
+        "lines": [
+          "Li from Ava is a trader with real",
+          "pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "8b9a90e78cbafef456f2a214e187b27acc8e92808a638d5848ad7e73e4e266f4"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "53616e746f20446f6d696e676f",
+          "636f6e717565726f72"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d2053616e746f20446f6d696e676f2069730a20206120636f6e717565726f722077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Li from Santo Domingo is",
+          "a conqueror with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "3d5ec5e495b337fd370d718f3efa372fe2ac2ad73a90b1b45ddf32ce05996617"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "53616e746f20446f6d696e676f",
+          "706972617465"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d2053616e746f20446f6d696e676f2069732061207069726174650a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Li from Santo Domingo is a pirate",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "37d1da1753af855af724dbbdc3860594e5cb0b88ddcad6b1134c2c00bf8bf94f"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "53616e746f20446f6d696e676f",
+          "736f6c64696572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d2053616e746f20446f6d696e676f206973206120736f6c646965720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Li from Santo Domingo is a soldier",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "5a2f63510219eca74c635da400f90e23f58421e489b9f8a34408b63b5effa328"
+      },
+      {
+        "id": 821,
+        "values_hex": [
+          "4c69",
+          "53616e746f20446f6d696e676f",
+          "747261646572"
+        ],
+        "parent": 33898516,
+        "table_or_player_ID": 0,
+        "formatted_hex": "204c692066726f6d2053616e746f20446f6d696e676f2069732061207472616465720a202077697468207265616c2070756c6c20686572652e",
+        "lines": [
+          "Li from Santo Domingo is a trader",
+          "with real pull here."
+        ],
+        "findings": [],
+        "whole_printf_wrap_bytes_guards_and_callee_saved_ABI_exact": true,
+        "complete_three_row_native_mask": true,
+        "plane_sha256": "02404d51cd67924f0f839af45d2d443d1f55e166b14464cde6e1a6904ca8f085"
+      }
+    ],
+    "all_source_domain_role_values": [
+      "conqueror",
+      "pirate",
+      "soldier",
+      "trader"
+    ],
+    "maximum_provider_expansion_bytes": 66,
+    "prior_provider_combination_count": 7200,
+    "distinct_tested_cases": 17,
+    "source_matrix_sha256": "6a7ce90dd0d8a03d1f7f404c81faa4bfc401e639215f72c7ea0859a5fe36b2f3",
+    "snapshot_sha256": "5056c232abe9d11b7cff59d897dcec40977c5a215f2e1ddfab32b7898d7e7ccb",
+    "geometry": {
+      "native_raster_sha256": "ad8ec57af672a40f3060be111dcf9d5218ac27163f9734a658c6cedbefcdc072",
+      "independent_font_sha256": "9b2df890c2ca84918ae5dac4244d51106a94fc7bc1e5dc888cf902f1ecc3d489",
+      "ink_glyph_height": 12,
+      "native_row_step": 16,
+      "paper": [
+        228,
+        48
+      ],
+      "screenshot_calibration": "work/analysis/town_services_pixel_anchor_v2101e/original49_exact_native_ink_anchor.json"
+    },
+    "sheet": "work\\tavern_influence_20261114_v1\\revised_native_pages.png",
+    "sheet_sha256": "81e3e04dffb124a62d48ecb4b992d1318b7b532ecfb9026e7936fa407d0678d5"
+  },
+  "observed_gameplay": {
+    "revised": {
+      "frame": 4951,
+      "lines": [
+        "Hayreddin from Alexandria is",
+        "a pirate with real pull here."
+      ],
+      "masks": [
+        315,
+        273
+      ],
+      "image": {
+        "frame": 4951,
+        "path": "work\\tavern_influence_20261114_v1\\istanbul\\frame_004951_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "63ed2de3dba69ec89ce291b13487723e269ab5a56b42e38b263aa301114070e9",
+        "framebuffer_sha256": "3810899113cc3067a58347b19247349e7cc95c5a75a9da5240ed3759a9dc4949"
+      }
+    },
+    "unmodified_holds": [
+      3751,
+      4151,
+      4551,
+      5351,
+      5751,
+      6151,
+      6551,
+      6951,
+      7351,
+      7751,
+      8151,
+      8551,
+      8951
+    ],
+    "source_request": [
+      {
+        "frame": 4823,
+        "PC": 33903244,
+        "message_ID": 821,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 4823,
+        "PC": 33895668,
+        "message_ID": 821,
+        "caller_LR": 33898488
+      }
+    ],
+    "evidence": {
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\capture_report.json": "474c14ffcc5c37dbd4d808d07b1329ca46fb5ae654e879124597a8278adced15",
+      "work\\tavern_influence_20261114_v1\\istanbul\\capture_report.json": "b285324c23aec251bbea5dd724e3dca5bc960bdefb7f6cce4cdf506c26db2f1d",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\requests.json": "363bc4ed6002bf54c3a71ae7bc3a9161d756b668c6eec8026fd2fcacd75287c9",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_003751_cold_boot.png": "599a89ba0bb4105bfdcfeb2be46c0852f02ab76b23a8eff4513dacd31edb49f5",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_003751_cold_boot.png": "599a89ba0bb4105bfdcfeb2be46c0852f02ab76b23a8eff4513dacd31edb49f5",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_004151_cold_boot.png": "e7712373881739fb0af752e580b214f71e515aef0b89e3095aec525526bbd700",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004151_cold_boot.png": "e7712373881739fb0af752e580b214f71e515aef0b89e3095aec525526bbd700",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_004551_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004551_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_004951_cold_boot.png": "e8216a54d4d02853a2d78e6ba8d51175ce0463b646d72b2efdfe3929efa9b480",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_004951_cold_boot.png": "63ed2de3dba69ec89ce291b13487723e269ab5a56b42e38b263aa301114070e9",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_005351_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_005351_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_005751_cold_boot.png": "fb9c3372a6af11cbd058b6552d332c29652844187e2c2fa09dcff5bbe8aa9405",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_005751_cold_boot.png": "fb9c3372a6af11cbd058b6552d332c29652844187e2c2fa09dcff5bbe8aa9405",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_006151_cold_boot.png": "4ad56b23037f1f6b6ab1eb5894942c7064d388f7e66b4e1689bfa8d3344fb633",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006151_cold_boot.png": "4ad56b23037f1f6b6ab1eb5894942c7064d388f7e66b4e1689bfa8d3344fb633",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_006551_cold_boot.png": "189d763124015f17676e9d865a9442617984faf0f8be230be744eb40904f85b5",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006551_cold_boot.png": "189d763124015f17676e9d865a9442617984faf0f8be230be744eb40904f85b5",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_006951_cold_boot.png": "20b80a86d933625d0161ccef175a4f0fb8e1fff35ca210a7add951f756161498",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_006951_cold_boot.png": "20b80a86d933625d0161ccef175a4f0fb8e1fff35ca210a7add951f756161498",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_007351_cold_boot.png": "c133a23eb139f7587ecaf68e72e2152d2dd0e83fc8b209e76b7ce52205bf5d8c",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_007351_cold_boot.png": "c133a23eb139f7587ecaf68e72e2152d2dd0e83fc8b209e76b7ce52205bf5d8c",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_007751_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_007751_cold_boot.png": "688e1341153940bae5c04d3fc0d22176646dc8611d187e806d14e3206d82c738",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_008151_cold_boot.png": "050dc45cb43005120ec876cae119ab077816c92a10afa118cc320f5c25b3a407",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008151_cold_boot.png": "050dc45cb43005120ec876cae119ab077816c92a10afa118cc320f5c25b3a407",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_008551_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008551_cold_boot.png": "e1eee7a689434ead2e79e8d5d14a23c093b6d7f112dd2fdbd9b7608be5eb6ebf",
+      "work\\current_town_coverage_20261114_v3\\istanbul\\capture\\frame_008951_cold_boot.png": "16de466ce2a97e17ddd81245dac59be02a773cc72cc819a6643d9218f48a7d86",
+      "work\\tavern_influence_20261114_v1\\istanbul\\frame_008951_cold_boot.png": "16de466ce2a97e17ddd81245dac59be02a773cc72cc819a6643d9218f48a7d86"
+    }
+  },
+  "candidate_sha256": "cb371076394d6887c482161f2c71d814b87d3b6b60de39e02bba161aae1bb4de",
+  "full_goal_complete": false
+}

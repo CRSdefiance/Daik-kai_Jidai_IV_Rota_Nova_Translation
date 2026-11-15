@@ -1,0 +1,49 @@
+"""Clean/current support13;distinct faction and compact-commander providers."""
+import struct
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.rom.nds import NdsImage
+from dk4tool.script.common_message_table import common_message_entries
+from scripts.reinforcement_sniping_layout_v1024 import compiled
+from scripts.verify_personal_gameplay_v841 import get_machine
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/support_context_v2644');BASE=0x02000000
+if __name__=='__main__':
+ assert not ROOT.exists();ledger=read('translations/editorial_review_current_v1.json');c=ledger['current_integrated_candidate'];rom=NdsImage.open(c['path']);clean=NdsImage.open('work/clean.nds');arm=rom.read_file('/__arm9__.bin');common=rom.read_file('/COMMON/MESFILE.DK4');source=clean.read_file('/__arm9__.bin');en=current_entries(common,arm);jp=common_message_entries(clean.read_file('/COMMON/MESFILE.DK4'),source);assert sha(Path(c['path']).read_bytes())==c['sha256'];manifest=read(Path(c['path']).with_suffix('.manifest.json'));owners={}
+ for label,stage_name,ids in[('reinforcement','reinforcement_faction_prose',list(range(1911,1917))),('covering','reinforcement_sniping_editorial',list(range(1917,1924)))]:
+  stage=manifest['relocations']['/COMMON/MESFILE.DK4'][stage_name];cp=Path(stage['release_config']);cfg=read(cp);mp=Path(cfg['manuscript']);rows={r['message_id']:r for r in read(mp)['records']};assert sha(cp.read_bytes())==stage['release_config_sha256']and sha(mp.read_bytes())==cfg['dependencies'][str(mp)];native=stage['proof'].get('reviewed_native_IDs')or[r['message_ID']for r in stage['proof']['changed_records']];assert set(ids)<=set(native)
+  for n in ids:assert rows[n]['source_hex']==jp[n].text.hex()and compiled(rows[n])==en[n].text
+  owners[label]=dict(stage=stage_name,selected_IDs=ids,registered_config=str(cp),registered_config_sha256=sha(cp.read_bytes()),registered_manuscript=str(mp),registered_manuscript_sha256=sha(mp.read_bytes()),registered_stage_native_IDs=native,compiler='scripts.reinforcement_sniping_layout_v1024.compiled')
+ fresh={(r['file_path'],r['id'])for r in ledger['contextual_story_natural_dialogue_pass_v1871']['record_keys']};assert not any(('/COMMON/MESFILE.DK4',f'COMMON_MESSAGE_{n}')in fresh for n in range(1911,1924));hp=Path('work/analysis/covering_fire_actual_v1819/actual_covering_fire_verification.json');h=read(hp);hold=h['complete_actual_holds'][0];sp=Path(hold['RAM']);raw=sp.read_bytes();assert sha(raw)==hold['RAM_sha256'];cpu,get=get_machine(arm,raw);actors,fleets,captain=get(0xCB184),get(0xCB1A8),get(0x7F244);duty=fleets+0x2090;assert get(0x82478,duty,1)==18 and get(0x82428,duty,1)==0
+ oldpath=Path('work/analysis/reinforcement_sniping_v1022b/source_context_packet.json');old=read(oldpath);source_spans=[]
+ for row in old['original_source_fragments']:
+  a,b=row['address']-BASE,row['end']-BASE;assert arm[a:b]==source[a:b]==raw[a:b];source_spans.append(dict(start=BASE+a,end_exclusive=BASE+b,sha256=sha(arm[a:b])))
+ tables=[];choices=[]
+ for table,values in[(0x021173E0,[1911,-1,1912,-1,1913,1914,1915,1916]),(0x021173C0,[1917,1918,1919,-1,1920,1921,1922,1923])]:
+  assert list(struct.unpack_from('<8i',arm,table-BASE))==values;selected=[]
+  for identity in range(207):
+   actor=actors+0x19E4 if identity==captain else actors+4+identity*32;assert get(0x7EE08,actor)==identity;voice=get(0x7E988,actor);n=get(0x53F4C,actor,table);assert n==(values[voice]if values[voice]>=0 else values[0]);r=dict(actor_ID=identity,actor_object=actor,source_voice=voice,message_ID=n,table=table,original_minus1_fallback=values[voice]<0);selected.append(r);choices.append(r)
+  tables.append(dict(table=table,members=values,all207_original_actor_choices=selected))
+ def name(actor):
+  vt=struct.unpack('<I',cpu.mem_read(actor,4))[0];method=struct.unpack('<I',cpu.mem_read(vt+0x20,4))[0];ptr=get(method-BASE,actor);return bytes(cpu.mem_read(ptr,128)).split(b'\0')[0],method
+ compact=[]
+ for identity in range(207):
+  actor=actors+0x19E4 if identity==captain else actors+4+identity*32;value,method=name(actor);compact.append(dict(actor_ID=identity,actor_object=actor,name_hex=value.hex(),label=value.decode('cp932'),original_compact_method=method))
+ companies=[]
+ for identity in range(20):
+  obj=get(0xCB160)+4+identity*76;vt=struct.unpack('<I',cpu.mem_read(obj,4))[0];method=struct.unpack('<I',cpu.mem_read(vt+8,4))[0];ptr=get(method-BASE,obj);value=bytes(cpu.mem_read(ptr,128)).split(b'\0')[0];companies.append(dict(company_ID=identity,name_hex=value.hex(),label=value.decode('cp932'),original_complete_faction_method=method))
+ assert[(r['company_ID'],r['name_hex'])for r in companies]==[(r['company_ID'],r['name_hex'])for r in old['all20_native_complete_company_labels']]
+ fleet_names=[]
+ for identity in range(63):
+  obj=fleets+4+132*identity;commander=get(0x3697C,obj)
+  if commander:
+   value,method=name(commander);fleet_names.append(dict(fleet_ID=identity,commander_object=commander,name_hex=value.hex(),label=value.decode('cp932'),original_compact_method=method))
+ assert[(r['fleet_ID'],r['name_hex'])for r in fleet_names]==[(r['fleet_ID'],r['name_hex'])for r in old['all_nonnull63_fleet_commander_labels']]
+ supplement=read('work/analysis/reinforcement_sniping_v1023/compact_name_and_source_meaning_supplement.json');changes=[dict(actor_ID=r['actor_ID'],old_hex=s['name_hex'],current_hex=r['name_hex'])for r,s in zip(compact,supplement['all208_native_compact_actor_labels'][:207],strict=True)if r['name_hex']!=s['name_hex']];assert changes==[dict(actor_ID=194,old_hex='Ｆaticia'.encode('cp932').hex(),current_hex=b'Faticia'.hex())]
+ ROOT.mkdir(parents=True);context=ROOT/'source_context_packet.json';save(context,dict(current_ROM=c['path'],current_ROM_sha256=c['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),actual_snapshot=str(sp),actual_snapshot_sha256=sha(raw),snapshot_historical_V1807_not_current_gameplay=True,registered_prose_owner_bindings=list(owners.values()),voice_tables=tables,all414_original_actor_table_selections=choices,current_clean_historical_source_spans=source_spans,all20_current_complete_faction_labels=companies,all207_current_compact_actor_labels=compact,all57_current_nonnull_fleet_commander_labels=fleet_names,prior_regular28_compact_names_still_current_exact=all(compact[i]['name_hex']==supplement['all208_native_compact_actor_labels'][i]['name_hex']for i in range(28)),older_complete_catalog_delta_already_resolved_elsewhere=changes,original_source_context=str(oldpath),original_source_context_sha256=sha(oldpath.read_bytes()),historical_covering_proof=str(hp),historical_covering_proof_sha256=sha(hp.read_bytes()),compiler_owns_single_leading_presentation_guard=True,scope='Original role1 support announcement follows first sighting. Reinforcement1911-1916 takes complete supporting-faction label from its virtual name getter;covering1917-1923 takes nearby supporting fleet commanders compact label from virtual+20,not a full character name or faction. Same First Mate fallback Charles18 can speak with station unassigned. Reinforcement table voices1/3 fall back1911;covering voice3 falls back1917. Original source admission,support scan,pact/relations,loaded groups and outcome remain unchanged. Historical current-wording V1807 reinforcement1911 identifies allied fleet24/company7 Valdes;covering1917 identifies other player fleet57/commander23 Manuel. Dismissals enter original battle setup with[0,1,8];covering6310 shows the original duel,not ordinary sailing or a battle victory. Six faction alternatives and seven commander alternatives are separate voice turns,not13sequential replies. Preserve appears/seems/hearsay,too,relief and Admiral only where addressed. The207-label catalog confirms only an already-resolved Faticia spelling delta outside the57fleet/28regular matrix;the two CP932 names Ｆernan/Ｆernando remain exact source bytes. Synthetic length/parity names and regular officers as captains are CPU formatting stress,not earned appointments.',full_goal_complete=False))
+ def ref(r):return dict(block=r.block,offset=r.block_offset,copy_end=r.copy_end,bytes=len(r.text),record_index=r.record_index,table_offset=r.table_offset,start_in_record=r.start)
+ def record(n):return dict(message_ID=n,file_path='/COMMON/MESFILE.DK4',source_reference=ref(jp[n]),current_reference=ref(en[n]),source_hex=jp[n].text.hex(),current_hex=en[n].text.hex(),clean_Japanese=jp[n].text.decode('cp932'),current_stored_English=en[n].text.decode('cp932'))
+ for label,ids in[('reinforcement',list(range(1911,1917))),('covering',list(range(1917,1924)))]:
+  pp=ROOT/f'all{len(ids)}_{label}_clean_current_context_catalog.json';opposite=[n for n in range(1911,1924)if n not in ids];save(pp,dict(source_ROM='work/clean.nds',source_ROM_sha256=sha(Path('work/clean.nds').read_bytes()),current_ROM=c['path'],current_ROM_sha256=c['sha256'],current_ARM9_sha256=sha(arm),current_COMMON_sha256=sha(common),selected_IDs=ids,records=[record(n)for n in ids],neighbors=[record(n)for n in[614,622,*opposite,1924]],registered_prose_owner_bindings=[owners[label]],source_context=str(context),source_context_sha256=sha(context.read_bytes()),source_prose_or_fresh_pass_credit_added=0,catalog_order_not_assumed_dialogue_chronology=True,full_goal_complete=False))
+ save(ROOT/'next13_preflight.json',dict(all13_clean_current_registered_compilers_match=True,all414_original_voice_selections_and_distinct_faction_compact_providers_verified=True,all20_factions57fleet_names28regular_names_current_exact=True,remaining_catalog_Faticia_already_resolved=True,fresh_credit=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print('Support13 source/current/owners exact;414voice choices;20factions,57fleets and28regular labels current-exact;zero fresh credit.')

@@ -365,6 +365,16 @@ CITY_SCREEN_ENTRIES = (
     Arm9ProfileEntry("DK4_DIRECTION_C_WEST", 0x14C280, "西", "W", "Alternate coordinate direction", slot_size=4),
     Arm9ProfileEntry("DK4_DIRECTION_C_SOUTH", 0x14C284, "南", "S", "Alternate coordinate direction", slot_size=4),
     Arm9ProfileEntry("DK4_DIRECTION_C_NORTH", 0x14C288, "北", "N", "Alternate coordinate direction", slot_size=4),
+    # Naval encounter dialogue substitutes values from this separate eight-way
+    # compass table.  It is not shared with the four coordinate-direction tables.
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_N", 0x145128, "北", "N", "Naval encounter direction", slot_size=4),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_NE", 0x14512C, "北東", "NE", "Naval encounter direction", slot_size=8),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_E", 0x145134, "東", "E", "Naval encounter direction", slot_size=4),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_SE", 0x145138, "南東", "SE", "Naval encounter direction", slot_size=8),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_S", 0x145140, "南", "S", "Naval encounter direction", slot_size=4),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_SW", 0x145144, "南西", "SW", "Naval encounter direction", slot_size=8),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_W", 0x14514C, "西", "W", "Naval encounter direction", slot_size=4),
+    Arm9ProfileEntry("DK4_ENCOUNTER_DIRECTION_NW", 0x145150, "北西", "NW", "Naval encounter direction", slot_size=8),
     Arm9ProfileEntry(
         "DK4_MAP_COORDINATE_FORMAT",
         0x140490,

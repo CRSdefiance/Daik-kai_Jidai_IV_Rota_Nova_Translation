@@ -1,0 +1,7 @@
+# Source Item cards and coin response registered
+
+The coin response and 20 Source Item descriptions are registered. The ledger now credits 26,554 reviews. COMMON 2814 uses the original fixed Fernando Dias portrait. COMMON 2815–2834 now agrees with the active private projections used in both item screens. All 218 getters were checked. The other 198 projected descriptions remain byte-identical. The registered release retains the original cache-copy size and runtime allocation. [Release and patch](../releases/all_routes_editorial_20261111_source_item_cards_and_coin_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_source_item_cards_and_coin_candidate/verification/registered_review.json)
+
+The first staged build reached a startup regression after growing the copied payload to 125,088 bytes. The registered build keeps 123,264 bytes and uses the selected original paragraph span plus space in the unreferenced 198-entry predecessor table. Both builds and the isolated coin fixtures are retained. The final 41 preview pages match the viewed original renders byte for byte, and the cold boot matches the registered predecessor at all six holds.
+
+Continue from the utility items and weapon descriptions beginning at COMMON 2835. Reuse the current item formatter and native fixtures. The active item table, retired storage spans and earlier entry references must be rebound before additional description edits. Keep Options and Market callers, graphics artwork and the older-record technical re-audit in scope.

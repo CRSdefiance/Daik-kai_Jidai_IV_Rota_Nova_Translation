@@ -1,0 +1,447 @@
+{
+  "format": "dk4-refit-help-release-v1",
+  "source_arm9_sha256": "d97e8b15daa6f8d559f29ff1fbd0a9ba204991b3925bf4e08ec0321e81fa576c",
+  "target_arm9_sha256": "64d743c3dd39fd9f5dae6180375993bd51dcb32b4a2f5d0194221ff3e911a06f",
+  "manuscript": "translations\\refit_help_manuscript_v1.json",
+  "manuscript_sha256": "b8011ef10e14ecf021f40af0ad2cdeb5e0b815965646da43a38ccec28ed9eeb9",
+  "compiler_sha256": "d5375c4bb15f076951ce937b83a8a323279d603d690e0a231008ee1a3be0e3ae",
+  "proof": {
+    "source_arm9_sha256": "d97e8b15daa6f8d559f29ff1fbd0a9ba204991b3925bf4e08ec0321e81fa576c",
+    "target_arm9_sha256": "64d743c3dd39fd9f5dae6180375993bd51dcb32b4a2f5d0194221ff3e911a06f",
+    "dedicated_original_Refit_help_selector": 33646696,
+    "only_help_provider_call_replaced": 33647036,
+    "unchanged_original_message_provider": 33903244,
+    "helper_entry": 37380816,
+    "helper_bytes": 88,
+    "helper_assembly": "push {r1-r3,ip}\nmrs ip,cpsr\npush {ip,lr}\nsub r1,r0,#1248\ncmp r1,#7\nbls selected\nsub r1,r0,#0x4f0\nsub r1,r1,#4\ncmp r1,#21\nbhi fallback\nadd r1,r1,#8\nselected:\nldr r2,table\nldr r0,[r2,r1,lsl #2]\npop {ip,lr}\nmsr cpsr_f,ip\npop {r1-r3,ip}\nbx lr\nfallback:\npop {ip,lr}\nmsr cpsr_f,ip\npop {r1-r3,ip}\nb 0x0205528c\ntable:\n.word 37380696\n",
+    "table": 37380696,
+    "records": [
+      {
+        "message_id": 1248,
+        "English": "A carpenter can repair damaged ships.",
+        "lines": [
+          "A carpenter can repair",
+          "damaged ships."
+        ],
+        "pointer": 37378688,
+        "compiled_hex": "412063617270656e7465722063616e207265706169720a64616d616765642073686970732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1249,
+        "English": "A ship's doctor can treat illnesses affecting officers and sailors.",
+        "lines": [
+          "A ship's doctor can treat",
+          "illnesses affecting",
+          "officers and sailors."
+        ],
+        "pointer": 37378726,
+        "compiled_hex": "412073686970277320646f63746f722063616e207472656174200a696c6c6e657373657320616666656374696e67200a6f6666696365727320616e64207361696c6f72732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1250,
+        "English": "A chief cook saves water and food and helps sailors tire less quickly.",
+        "lines": [
+          "A chief cook saves water",
+          "and food and helps sailors",
+          "tire less quickly."
+        ],
+        "pointer": 37378796,
+        "compiled_hex": "4120636869656620636f6f6b2073617665732077617465720a616e6420666f6f6420616e642068656c7073207361696c6f72730a74697265206c65737320717569636b6c792e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1251,
+        "English": "Officers in this room recover their morale and help sailors tire less quickly.",
+        "lines": [
+          "Officers in this room",
+          "recover their morale and",
+          "help sailors tire less",
+          "quickly."
+        ],
+        "pointer": 37378867,
+        "compiled_hex": "4f6666696365727320696e207468697320726f6f6d200a7265636f766572207468656972206d6f72616c6520616e640a68656c70207361696c6f72732074697265206c6573730a717569636b6c792e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1252,
+        "English": "An animal keeper helps your food supplies last longer.",
+        "lines": [
+          "An animal keeper helps your",
+          "food supplies last longer."
+        ],
+        "pointer": 37378947,
+        "compiled_hex": "416e20616e696d616c206b65657065722068656c707320796f7572200a666f6f6420737570706c696573206c617374206c6f6e6765722e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1253,
+        "English": "A missionary eases sailors' discontent and lets you distribute trade goods in the square.",
+        "lines": [
+          "A missionary eases sailors'",
+          "discontent and lets you",
+          "distribute trade goods in",
+          "the square."
+        ],
+        "pointer": 37379003,
+        "compiled_hex": "41206d697373696f6e617279206561736573207361696c6f727327200a646973636f6e74656e7420616e64206c65747320796f75200a6469737472696275746520747261646520676f6f647320696e200a746865207371756172652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1254,
+        "English": "A strategist lets you plan schemes at the tavern.",
+        "lines": [
+          "A strategist lets you plan",
+          "schemes at the tavern."
+        ],
+        "pointer": 37379096,
+        "compiled_hex": "412073747261746567697374206c65747320796f7520706c616e0a736368656d6573206174207468652074617665726e2e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1255,
+        "English": "A purser lets you bargain and corner markets.",
+        "lines": [
+          "A purser lets you bargain",
+          "and corner markets."
+        ],
+        "pointer": 37379146,
+        "compiled_hex": "4120707572736572206c65747320796f75206261726761696e200a616e6420636f726e6572206d61726b6574732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1268,
+        "English": "A split sail improves square sail performance, increasing speed with the wind.",
+        "lines": [
+          "A split sail improves",
+          "square sail performance,",
+          "increasing speed with the",
+          "wind."
+        ],
+        "pointer": 37379193,
+        "compiled_hex": "412073706c6974207361696c20696d70726f766573200a737175617265207361696c20706572666f726d616e63652c0a696e6372656173696e67207370656564207769746820746865200a77696e642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1269,
+        "English": "A jigger spanker improves fore-and-aft performance, increasing speed against the wind.",
+        "lines": [
+          "A jigger spanker improves",
+          "fore-and-aft performance,",
+          "increasing speed against",
+          "the wind."
+        ],
+        "pointer": 37379274,
+        "compiled_hex": "41206a6967676572207370616e6b657220696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1270,
+        "English": "Extra armor increases durability but slightly reduces speed.",
+        "lines": [
+          "Extra armor increases",
+          "durability but slightly",
+          "reduces speed."
+        ],
+        "pointer": 37379363,
+        "compiled_hex": "45787472612061726d6f7220696e63726561736573200a6475726162696c6974792062757420736c696768746c79200a726564756365732073706565642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1271,
+        "English": "Extra Armor 2 further increases durability but slightly reduces speed.",
+        "lines": [
+          "Extra Armor 2 further",
+          "increases durability but",
+          "slightly reduces speed."
+        ],
+        "pointer": 37379426,
+        "compiled_hex": "45787472612041726d6f7220322066757274686572200a696e63726561736573206475726162696c697479206275740a736c696768746c7920726564756365732073706565642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1272,
+        "English": "A bow gun can fire ahead of the ship, but its shots have low power.",
+        "lines": [
+          "A bow gun can fire ahead of",
+          "the ship, but its shots",
+          "have low power."
+        ],
+        "pointer": 37379498,
+        "compiled_hex": "4120626f772067756e2063616e2066697265206168656164206f66200a74686520736869702c20627574206974732073686f7473200a68617665206c6f7720706f7765722e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1273,
+        "English": "A stern gun can fire behind the ship, but its shots have low accuracy.",
+        "lines": [
+          "A stern gun can fire behind",
+          "the ship, but its shots",
+          "have low accuracy."
+        ],
+        "pointer": 37379568,
+        "compiled_hex": "4120737465726e2067756e2063616e206669726520626568696e64200a74686520736869702c20627574206974732073686f7473200a68617665206c6f772061636375726163792e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1274,
+        "English": "A ram lets you attack by ramming the side of an enemy ship.",
+        "lines": [
+          "A ram lets you attack by",
+          "ramming the side of an",
+          "enemy ship."
+        ],
+        "pointer": 37379641,
+        "compiled_hex": "412072616d206c65747320796f752061747461636b2062790a72616d6d696e67207468652073696465206f6620616e0a656e656d7920736869702e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1275,
+        "English": "A marine captain increases boarding attack power. You can install up to four quarters.",
+        "lines": [
+          "A marine captain increases",
+          "boarding attack power. You",
+          "can install up to four",
+          "quarters."
+        ],
+        "pointer": 37379701,
+        "compiled_hex": "41206d6172696e65206361707461696e20696e637265617365730a626f617264696e672061747461636b20706f7765722e20596f750a63616e20696e7374616c6c20757020746f20666f75720a71756172746572732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1276,
+        "English": "A gunner increases firing speed. You can install up to four quarters.",
+        "lines": [
+          "A gunner increases firing",
+          "speed. You can install up",
+          "to four quarters."
+        ],
+        "pointer": 37379788,
+        "compiled_hex": "412067756e6e657220696e6372656173657320666972696e67200a73706565642e20596f752063616e20696e7374616c6c207570200a746f20666f75722071756172746572732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1277,
+        "English": "This room stores water and food.",
+        "lines": [
+          "This room stores water and",
+          "food."
+        ],
+        "pointer": 37379860,
+        "compiled_hex": "5468697320726f6f6d2073746f72657320776174657220616e640a666f6f642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1278,
+        "English": "Cargo holds carry trade goods. You can install up to five holds.",
+        "lines": [
+          "Cargo holds carry trade",
+          "goods. You can install up",
+          "to five holds."
+        ],
+        "pointer": 37379893,
+        "compiled_hex": "436172676f20686f6c6473206361727279207472616465200a676f6f64732e20596f752063616e20696e7374616c6c207570200a746f206669766520686f6c64732e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1279,
+        "English": "You can add a cargo hold here, but it slightly reduces speed.",
+        "lines": [
+          "You can add a cargo hold",
+          "here, but it slightly",
+          "reduces speed."
+        ],
+        "pointer": 37379960,
+        "compiled_hex": "596f752063616e20616464206120636172676f20686f6c640a686572652c2062757420697420736c696768746c79200a726564756365732073706565642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1280,
+        "English": "You can add a ram or bow gun here. Medium and larger ships can also add a split sail.",
+        "lines": [
+          "You can add a ram or bow",
+          "gun here. Medium and larger",
+          "ships can also add a split",
+          "sail."
+        ],
+        "pointer": 37380023,
+        "compiled_hex": "596f752063616e2061646420612072616d206f7220626f770a67756e20686572652e204d656469756d20616e64206c6172676572200a73686970732063616e20616c736f2061646420612073706c69740a7361696c2e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1281,
+        "English": "You can fit extra armor here.",
+        "lines": [
+          "You can fit extra armor",
+          "here."
+        ],
+        "pointer": 37380110,
+        "compiled_hex": "596f752063616e206669742065787472612061726d6f72200a686572652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1282,
+        "English": "You can add a stern gun here. Large ships can also add a jigger spanker.",
+        "lines": [
+          "You can add a stern gun",
+          "here. Large ships can also",
+          "add a jigger spanker."
+        ],
+        "pointer": 37380141,
+        "compiled_hex": "596f752063616e20616464206120737465726e2067756e200a686572652e204c617267652073686970732063616e20616c736f0a6164642061206a6967676572207370616e6b65722e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1283,
+        "English": "You can mount a figurehead you own here.",
+        "lines": [
+          "You can mount a figurehead",
+          "you own here."
+        ],
+        "pointer": 37380215,
+        "compiled_hex": "596f752063616e206d6f756e74206120666967757265686561640a796f75206f776e20686572652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1284,
+        "English": "You can change the ship's cannon type here.",
+        "lines": [
+          "You can change the ship's",
+          "cannon type here."
+        ],
+        "pointer": 37380256,
+        "compiled_hex": "596f752063616e206368616e67652074686520736869702773200a63616e6e6f6e207479706520686572652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1285,
+        "English": "Lateen sails work well against the wind. You cannot put a square sail behind one.",
+        "lines": [
+          "Lateen sails work well",
+          "against the wind. You",
+          "cannot put a square sail",
+          "behind one."
+        ],
+        "pointer": 37380301,
+        "compiled_hex": "4c617465656e207361696c7320776f726b2077656c6c0a616761696e7374207468652077696e642e20596f75200a63616e6e6f7420707574206120737175617265207361696c0a626568696e64206f6e652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1286,
+        "English": "A topsail improves square sail performance, increasing speed with the wind.",
+        "lines": [
+          "A topsail improves square",
+          "sail performance,",
+          "increasing speed with the",
+          "wind."
+        ],
+        "pointer": 37380384,
+        "compiled_hex": "4120746f707361696c20696d70726f76657320737175617265200a7361696c20706572666f726d616e63652c200a696e6372656173696e67207370656564207769746820746865200a77696e642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1287,
+        "English": "Square sails work well with the wind. You cannot put a lateen sail ahead of one.",
+        "lines": [
+          "Square sails work well with",
+          "the wind. You cannot put a",
+          "lateen sail ahead of one."
+        ],
+        "pointer": 37380463,
+        "compiled_hex": "537175617265207361696c7320776f726b2077656c6c2077697468200a7468652077696e642e20596f752063616e6e6f742070757420610a6c617465656e207361696c206168656164206f66206f6e652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1288,
+        "English": "A staysail improves fore-and-aft performance, increasing speed against the wind.",
+        "lines": [
+          "A staysail improves",
+          "fore-and-aft performance,",
+          "increasing speed against",
+          "the wind."
+        ],
+        "pointer": 37380545,
+        "compiled_hex": "4120737461797361696c20696d70726f766573200a666f72652d616e642d61667420706572666f726d616e63652c200a696e6372656173696e6720737065656420616761696e73740a7468652077696e642e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      },
+      {
+        "message_id": 1289,
+        "English": "This sail improves both fore-and-aft and square sail performance.",
+        "lines": [
+          "This sail improves both",
+          "fore-and-aft and square",
+          "sail performance."
+        ],
+        "pointer": 37380628,
+        "compiled_hex": "54686973207361696c20696d70726f76657320626f7468200a666f72652d616e642d61667420616e6420737175617265200a7361696c20706572666f726d616e63652e00",
+        "profile": "refit-help-168x84-pending-flush-v1"
+      }
+    ],
+    "cache": {
+      "entry": 37509920,
+      "copy_entry": 37509984,
+      "payload_bytes": 125280,
+      "pool_span": [
+        37255712,
+        37380992
+      ],
+      "line_bytes": 32,
+      "operations": {
+        "37509940": "drain",
+        "37509944": "invalidate_instruction",
+        "37509948": "clean_flush_data",
+        "37509964": "drain_final"
+      },
+      "SDK_opcode_fields": [
+        33557044,
+        33557048,
+        33557052
+      ]
+    },
+    "preserved_inherited_pool_bytes": 122976,
+    "all_other_main_bytes_ITCM_font_code_COMMON_tables_and_components_preserved": true,
+    "unselected_IDs_tail_to_original_provider_with_original_arguments_flags_and_stack": true,
+    "no_authored_line_breaks_or_shortened_source_meaning": true,
+    "changed_records": [
+      "REFIT_HELP_1248",
+      "REFIT_HELP_1249",
+      "REFIT_HELP_1250",
+      "REFIT_HELP_1251",
+      "REFIT_HELP_1252",
+      "REFIT_HELP_1253",
+      "REFIT_HELP_1254",
+      "REFIT_HELP_1255",
+      "REFIT_HELP_1268",
+      "REFIT_HELP_1269",
+      "REFIT_HELP_1270",
+      "REFIT_HELP_1271",
+      "REFIT_HELP_1272",
+      "REFIT_HELP_1273",
+      "REFIT_HELP_1274",
+      "REFIT_HELP_1275",
+      "REFIT_HELP_1276",
+      "REFIT_HELP_1277",
+      "REFIT_HELP_1278",
+      "REFIT_HELP_1279",
+      "REFIT_HELP_1280",
+      "REFIT_HELP_1281",
+      "REFIT_HELP_1282",
+      "REFIT_HELP_1283",
+      "REFIT_HELP_1284",
+      "REFIT_HELP_1285",
+      "REFIT_HELP_1286",
+      "REFIT_HELP_1287",
+      "REFIT_HELP_1288",
+      "REFIT_HELP_1289"
+    ],
+    "experimental": true,
+    "full_goal_complete": false
+  },
+  "native_dependencies": {
+    "work/analysis/refit_help_v706/native_font_proof.json": "b284f4d7555f1d1135811ba39a7fc8998f7b32c9b9908dbc49910031acb56513",
+    "work/analysis/refit_help_v706/selector_proof.json": "e40956d4e26af1b61aa3e565be84e822118cd81384fe74ccfb2707d8b09dfc60"
+  },
+  "native_font_proof": "work/analysis/refit_help_v706/native_font_proof.json",
+  "selector_proof": "work/analysis/refit_help_v706/selector_proof.json"
+}

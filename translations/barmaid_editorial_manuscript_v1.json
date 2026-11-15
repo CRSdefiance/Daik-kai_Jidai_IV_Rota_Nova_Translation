@@ -1,0 +1,2053 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_pins": [
+    {
+      "path": "work\\clean.nds",
+      "ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+      "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+      "COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc"
+    },
+    {
+      "path": "out\\raphael_natural_v2_accepted_base.nds",
+      "ROM_sha256": "3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe",
+      "ARM9_sha256": "9a79c25d4a7cf03678a8b5444c3f685a9f675be879109817adb01643141768f5",
+      "COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c"
+    },
+    {
+      "path": "out\\all_routes_combined_v778_candidate.nds",
+      "ROM_sha256": "775f3c94f6c55ec5f0d4daa60753adeace38fa189008339958e052edbf3eb469",
+      "ARM9_sha256": "d7f302ed2b142f675006ecf3b94ff14b2921dc6d43706cf4e867dfec882baa49",
+      "COMMON_sha256": "8c937a2606c547b03d677486fa763cacfc83c86d24a43dd37ceec4493d0cf1ac"
+    }
+  ],
+  "native_context_proof": "work\\analysis\\barmaid_editorial_v779\\native_context.json",
+  "status": "source-prose-reviewed-NOT-playable",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_989",
+      "message_id": 989,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "257382c5815b82b7814282a896bc914f82cd81630a257382b382f1814881408a6f82a682bd82ed0a8abd8c7d82b782e982a982e7814182a282c282c582e08af182c182c482cb",
+      "japanese": "%sでーす。お名前は…\n%sさん？　覚えたわ\n歓迎するから、いつでも寄ってね",
+      "source_reference": {
+        "message_id": 989,
+        "block": 12,
+        "table_offset": 1319114,
+        "block_offset": 1428,
+        "copy_end": 1500,
+        "record_index": 27,
+        "start": 1,
+        "end": 71,
+        "text": null
+      },
+      "canonical_source_hex": "4d79206e616d652069732025732e0a20596f75206172652025733f204e6f7465642e0a20436f6d65206261636b20616e7974696d652120202020202020202020202020202020",
+      "current_text_hex": "8268276d2025732e20596f752772652025733f208268276c6c2072656d656d62657220796f7572206e616d652e20436f6d6520627920616e7974696d652e20596f7527726520616c776179732077656c636f6d6521",
+      "current_English": "Ｉ'm %s. You're %s? Ｉ'll remember your name. Come by anytime. You're always welcome!",
+      "current_reference": {
+        "message_id": 989,
+        "block": 12,
+        "table_offset": 1319114,
+        "block_offset": 2961,
+        "copy_end": 3047,
+        "record_index": 56,
+        "start": 0,
+        "end": 85,
+        "text": null
+      },
+      "english": "I'm %s. Your name is... %s? Got it! Stop by anytime. You're always welcome!{PAD}",
+      "source_meaning": "Introduces herself,asks/recognizes the captain's name and remembers it;invites return anytime and promises a welcome.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5964C first-introduction branch,selected by town and actual barmaid object.989 names barmaid THEN captain;990 names captain THEN barmaid. Other towns use the already reviewed827.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Keep native first-name identities/order;do not replace with a full name,surname,title or faction. The editable first-name field has a separately verified16-byte limit.",
+      "source_voice_table": null,
+      "source_native_arguments": [
+        "barmaid",
+        "captain_first_name"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "native_catalog_selections": [
+        {
+          "kind": "first-introduction",
+          "town_ID": 5,
+          "id": 989,
+          "speaker_object": 36526788,
+          "arguments_hex": [
+            "4d61726772657465",
+            "486f6472616d"
+          ]
+        },
+        {
+          "kind": "first-introduction",
+          "town_ID": 13,
+          "id": 989,
+          "speaker_object": 36526884,
+          "arguments_hex": [
+            "446f6e6e61",
+            "486f6472616d"
+          ]
+        },
+        {
+          "kind": "first-introduction",
+          "town_ID": 25,
+          "id": 989,
+          "speaker_object": 36527012,
+          "arguments_hex": [
+            "4e656c6c79",
+            "486f6472616d"
+          ]
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_990",
+      "message_id": 990,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "257382b382f181480a82a282a296bc914f82cb0a8e8482cd2573814282e682eb82b582ad82cb",
+      "japanese": "%sさん？\nいい名前ね\n私は%s。よろしくね",
+      "source_reference": {
+        "message_id": 990,
+        "block": 12,
+        "table_offset": 1319116,
+        "block_offset": 1500,
+        "copy_end": 1540,
+        "record_index": 28,
+        "start": 1,
+        "end": 39,
+        "text": null
+      },
+      "canonical_source_hex": "25733f0a20576861742061206e696365206e616d652e0a204d79206e616d652069732025732e",
+      "current_text_hex": "25733f20576861742061206e696365206e616d6521208268276d2025732e208268742773206120706c65617375726520746f206d65657420796f752e",
+      "current_English": "%s? What a nice name! Ｉ'm %s. Ｉt's a pleasure to meet you.",
+      "current_reference": {
+        "message_id": 990,
+        "block": 12,
+        "table_offset": 1319116,
+        "block_offset": 3047,
+        "copy_end": 3108,
+        "record_index": 57,
+        "start": 0,
+        "end": 60,
+        "text": null
+      },
+      "english": "%s? What a nice name! I'm %s. Nice to meet you!{PAD}",
+      "source_meaning": "Repeats and compliments the captain's name,then introduces herself and offers a friendly greeting.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5964C first-introduction branch,selected by town and actual barmaid object.989 names barmaid THEN captain;990 names captain THEN barmaid. Other towns use the already reviewed827.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Keep native first-name identities/order;do not replace with a full name,surname,title or faction. The editable first-name field has a separately verified16-byte limit.",
+      "source_voice_table": null,
+      "source_native_arguments": [
+        "captain_first_name",
+        "barmaid"
+      ],
+      "English_argument_source_indices": [
+        0,
+        1
+      ],
+      "native_catalog_selections": [
+        {
+          "kind": "first-introduction",
+          "town_ID": 34,
+          "id": 990,
+          "speaker_object": 36527044,
+          "arguments_hex": [
+            "486f6472616d",
+            "4861747261"
+          ]
+        },
+        {
+          "kind": "first-introduction",
+          "town_ID": 38,
+          "id": 990,
+          "speaker_object": 36527076,
+          "arguments_hex": [
+            "486f6472616d",
+            "5361666961"
+          ]
+        },
+        {
+          "kind": "first-introduction",
+          "town_ID": 47,
+          "id": 990,
+          "speaker_object": 36527140,
+          "arguments_hex": [
+            "486f6472616d",
+            "4c75636961"
+          ]
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_991",
+      "message_id": 991,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82a082c882bd814182a88be08e9d82bf82c882cc81480a82a482e782e282dc82b582a282ed82cb0a82a0816082a081428e8482e082a282a2906c8ca982c282af82c40a918182ad8d4b82b982c982c882e882bd82a282ed",
+      "japanese": "あなた、お金持ちなの？\nうらやましいわね\nあ～あ。私もいい人見つけて\n早く幸せになりたいわ",
+      "source_reference": {
+        "message_id": 991,
+        "block": 12,
+        "table_offset": 1319118,
+        "block_offset": 1540,
+        "copy_end": 1628,
+        "record_index": 29,
+        "start": 1,
+        "end": 88,
+        "text": null
+      },
+      "canonical_source_hex": "41726520796f75207765616c7468793f0a20486f7720656e766961626c652e0a20536f6d656461792c206120676f6f64206d617463680a2077696c6c206272696e67206d652068617070696e6573732e20202020202020",
+      "current_text_hex": "41726520796f7520726963683f208268276d206a65616c6f757321208268207769736820826820636f756c642066696e6420736f6d656f6e65206e69636520616e6420626520686170707920736f6f6e2e",
+      "current_English": "Are you rich? Ｉ'm jealous! Ｉ wish Ｉ could find someone nice and be happy soon.",
+      "current_reference": {
+        "message_id": 991,
+        "block": 12,
+        "table_offset": 1319118,
+        "block_offset": 3108,
+        "copy_end": 3190,
+        "record_index": 58,
+        "start": 0,
+        "end": 81,
+        "text": null
+      },
+      "english": "Are you rich? I'm jealous! I hope I find someone nice soon. I want to be happy, too.{PAD}",
+      "source_meaning": "Asks whether the listener is rich,is envious,and wants to find a nice romantic partner and be happy soon herself.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. State the wish for a nice partner and happiness soon without inventing marriage or an established relationship.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 5,
+          "id": 991,
+          "speaker_object": 36526788,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 22,
+          "id": 991,
+          "speaker_object": 36526980,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 57,
+          "id": 991,
+          "speaker_object": 36527236,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_992",
+      "message_id": 992,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8e8482cc89cc814195b782a282c482a282c182c482cb0a83748340836882c182c482a282a489cc82c882cc82e60a838983898389816081f4",
+      "japanese": "私の歌、聞いていってね\nファドっていう歌なのよ\nラララ～♪",
+      "source_reference": {
+        "message_id": 992,
+        "block": 12,
+        "table_offset": 1319120,
+        "block_offset": 1628,
+        "copy_end": 1684,
+        "record_index": 30,
+        "start": 0,
+        "end": 56,
+        "text": null
+      },
+      "canonical_source_hex": "537072656164206261642072756d6f72732061626f757420257320696e2025733f0a200a200a200a20202020202020202020202020202020",
+      "current_text_hex": "4c697374656e20746f206d7920736f6e672e2082687427732063616c6c6564206661646f2e204c61206c61206c612e2e2e",
+      "current_English": "Listen to my song. Ｉt's called fado. La la la...",
+      "current_reference": {
+        "message_id": 992,
+        "block": 12,
+        "table_offset": 1319120,
+        "block_offset": 3190,
+        "copy_end": 3240,
+        "record_index": 59,
+        "start": 0,
+        "end": 49,
+        "text": null
+      },
+      "english": "Stay and listen to me sing. This is fado. La la la...{PAD}",
+      "source_meaning": "Invites listening to her singing,names fado and vocalizes a melody.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Retain fado without treating it as an invented proper song title;ASCII vocalization conveys the source melody.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 11,
+          "id": 992,
+          "speaker_object": 36526852,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_993",
+      "message_id": 993,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8e8482c182c48d9b82ea82c182db82a282cc82e682cb82a60a82bb82ea82c582a282c282e00a8eb8947382b582bf82e182a482f182be82af82c7",
+      "japanese": "私って惚れっぽいのよねえ\nそれでいつも\n失敗しちゃうんだけど",
+      "source_reference": {
+        "message_id": 993,
+        "block": 12,
+        "table_offset": 1319122,
+        "block_offset": 1684,
+        "copy_end": 1744,
+        "record_index": 30,
+        "start": 56,
+        "end": 114,
+        "text": null
+      },
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "82682066616c6c20696e206c6f766520736f20656173696c792c20616e6420697420616c7761797320676f65732077726f6e672e",
+      "current_English": "Ｉ fall in love so easily, and it always goes wrong.",
+      "current_reference": {
+        "message_id": 993,
+        "block": 12,
+        "table_offset": 1319122,
+        "block_offset": 3240,
+        "copy_end": 3293,
+        "record_index": 60,
+        "start": 0,
+        "end": 52,
+        "text": null
+      },
+      "english": "I fall in love so easily, and it always goes wrong.{PAD}",
+      "source_meaning": "Falls in love easily and always ends up failing or disappointed as a result.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 15,
+          "id": 993,
+          "speaker_object": 36526916,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 47,
+          "id": 993,
+          "speaker_object": 36527140,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_994",
+      "message_id": 994,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82b282df82f182c882b382a20a8da193fa82cd918182ad8b4182e782c882ab82e10a968582e292ed82bd82bf82aa89c682c591d282c182c482a282e982cc",
+      "japanese": "ごめんなさい\n今日は早く帰らなきゃ\n妹や弟たちが家で待っているの",
+      "source_reference": {
+        "message_id": 994,
+        "block": 12,
+        "table_offset": 1319124,
+        "block_offset": 1744,
+        "copy_end": 1808,
+        "record_index": 31,
+        "start": 1,
+        "end": 63,
+        "text": null
+      },
+      "canonical_source_hex": "536f7272792c0a20686f6d652063616c6c73206561726c7920746f6461792e0a204d79207369626c696e6773206172652077616974696e672e2020202020",
+      "current_text_hex": "536f7272792c208268206d757374206865616420686f6d65206561726c7920746f6461792e204d7920796f756e676572207369626c696e6773206172652077616974696e6720666f72206d652e",
+      "current_English": "Sorry, Ｉ must head home early today. My younger siblings are waiting for me.",
+      "current_reference": {
+        "message_id": 994,
+        "block": 12,
+        "table_offset": 1319124,
+        "block_offset": 3293,
+        "copy_end": 3371,
+        "record_index": 61,
+        "start": 0,
+        "end": 77,
+        "text": null
+      },
+      "english": "Sorry, I have to head home early today. My younger siblings are waiting for me.{PAD}",
+      "source_meaning": "Apologizes for needing to go home early today;younger brothers/sisters are waiting there.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 38,
+          "id": 994,
+          "speaker_object": 36527076,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_995",
+      "message_id": 995,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "908c82c182cf82e782c182c4905182bf82e182a4906c82c182c40a8da282c182bf82e182a4",
+      "japanese": "酔っぱらって寝ちゃう人って\n困っちゃう",
+      "source_reference": {
+        "message_id": 995,
+        "block": 12,
+        "table_offset": 1319126,
+        "block_offset": 1808,
+        "copy_end": 1848,
+        "record_index": 32,
+        "start": 1,
+        "end": 38,
+        "text": null
+      },
+      "canonical_source_hex": "536c656570696e67206472756e6b730a206172652074726f75626c652e2020202020202020",
+      "current_text_hex": "826874277320737563682061206e756973616e6365207768656e2070656f706c6520676574206472756e6b20616e642066616c6c2061736c6565702e",
+      "current_English": "Ｉt's such a nuisance when people get drunk and fall asleep.",
+      "current_reference": {
+        "message_id": 995,
+        "block": 12,
+        "table_offset": 1319126,
+        "block_offset": 3371,
+        "copy_end": 3432,
+        "record_index": 62,
+        "start": 0,
+        "end": 60,
+        "text": null
+      },
+      "english": "It's such a nuisance when people get drunk and fall asleep.{PAD}",
+      "source_meaning": "Finds people who get drunk and fall asleep troublesome.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 0,
+          "id": 995,
+          "speaker_object": 36526756,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 54,
+          "id": 995,
+          "speaker_object": 36527204,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_996",
+      "message_id": 996,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82dd82f182c896bd8c9c82af82c58a4382c98f6f82c481630a88cc82a282ed82e682cb0a8e8482e0814182e082c182c682aa82f182ce82e782c882ab82e10a97bc906582c98a7982f082b382b982c482a082b082bd82a282b5",
+      "japanese": "みんな命懸けで海に出て…\n偉いわよね\n私も、もっとがんばらなきゃ\n両親に楽をさせてあげたいし",
+      "source_reference": {
+        "message_id": 996,
+        "block": 12,
+        "table_offset": 1319128,
+        "block_offset": 1848,
+        "copy_end": 1940,
+        "record_index": 33,
+        "start": 2,
+        "end": 91,
+        "text": null
+      },
+      "canonical_source_hex": "5361696c6f7273207269736b207468656972206c697665732e2e2e0a20486f772061646d697261626c652e0a204d7920706172656e747320646573657276650a20616e20656173696572206c69666520746f6f2e2020202020",
+      "current_text_hex": "5361696c6f7273207269736b207468656972206c697665732e2082682061646d697265207468656d21208268206d75737420776f726b2068617264657220746f6f2c20736f206d7920706172656e74732063616e206861766520616e20656173696572206c6966652e",
+      "current_English": "Sailors risk their lives. Ｉ admire them! Ｉ must work harder too, so my parents can have an easier life.",
+      "current_reference": {
+        "message_id": 996,
+        "block": 12,
+        "table_offset": 1319128,
+        "block_offset": 3432,
+        "copy_end": 3538,
+        "record_index": 63,
+        "start": 0,
+        "end": 105,
+        "text": null
+      },
+      "english": "Sailors risk their lives. I admire them! I must work harder too, so my parents can have an easier life.{PAD}",
+      "source_meaning": "Admires those who risk their lives at sea;must work harder herself and wants her parents to have an easier life.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record. Original branch tests city58,which has no entry in the current21-barmaid catalog. Only a disclosed supplied city58/actor59 CPU case reaches it;normal reachability still needs closure.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Retain wording. No ordinary activation or fully mapped reachable context is claimed;context approval stays false pending source closure.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": false,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_997",
+      "message_id": 997,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8e8482cc8dce81480a82d382d382d3814282a282ad82c282c98ca982a682e98148",
+      "japanese": "私の歳？\nふふふ。いくつに見える？",
+      "source_reference": {
+        "message_id": 997,
+        "block": 12,
+        "table_offset": 1319130,
+        "block_offset": 1940,
+        "copy_end": 1976,
+        "record_index": 34,
+        "start": 2,
+        "end": 35,
+        "text": null
+      },
+      "canonical_source_hex": "4d79206167653f0a20486f77206f6c6420646f20796f75207468696e6b3f202020",
+      "current_text_hex": "4d79206167653f20486568652e2e2e20486f77206f6c6420646f208268206c6f6f6b3f",
+      "current_English": "My age? Hehe... How old do Ｉ look?",
+      "current_reference": {
+        "message_id": 997,
+        "block": 12,
+        "table_offset": 1319130,
+        "block_offset": 3538,
+        "copy_end": 3574,
+        "record_index": 64,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "english": "My age? Hehe... How old do I look?{PAD}",
+      "source_meaning": "Coy laugh and invitation to guess her age.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 7,
+          "id": 997,
+          "speaker_object": 36526724,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 29,
+          "id": 997,
+          "speaker_object": 36527300,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_998",
+      "message_id": 998,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82e482c182ad82e882b582c482a282c182c482cb",
+      "japanese": "ゆっくりしていってね",
+      "source_reference": {
+        "message_id": 998,
+        "block": 12,
+        "table_offset": 1319132,
+        "block_offset": 1976,
+        "copy_end": 1996,
+        "record_index": 35,
+        "start": 2,
+        "end": 22,
+        "text": null
+      },
+      "canonical_source_hex": "537072656164206261642072756d6f7273206162",
+      "current_text_hex": "54616b6520796f75722074696d6520616e642072656c61782e",
+      "current_English": "Take your time and relax.",
+      "current_reference": {
+        "message_id": 998,
+        "block": 12,
+        "table_offset": 1319132,
+        "block_offset": 3574,
+        "copy_end": 3600,
+        "record_index": 65,
+        "start": 0,
+        "end": 25,
+        "text": null
+      },
+      "english": "Take your time and relax.{PAD}",
+      "source_meaning": "Invites the listener to stay and relax.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original59358 one-in-three selected ordinary-chat branch of the special-gift/request path. The port selects one independent paragraph,not a sequence after the neighboring stored record.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 2,
+          "id": 998,
+          "speaker_object": 36526820,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 13,
+          "id": 998,
+          "speaker_object": 36526884,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 19,
+          "id": 998,
+          "speaker_object": 36526948,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 25,
+          "id": 998,
+          "speaker_object": 36527012,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 34,
+          "id": 998,
+          "speaker_object": 36527044,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 42,
+          "id": 998,
+          "speaker_object": 36527108,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 50,
+          "id": 998,
+          "speaker_object": 36527172,
+          "arguments_hex": []
+        },
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 59,
+          "id": 998,
+          "speaker_object": 36527268,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 59,
+          "id": 998,
+          "speaker_object": 36527268,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 61,
+          "id": 998,
+          "speaker_object": 36527364,
+          "arguments_hex": []
+        },
+        {
+          "kind": "original-selected-ordinary-chat-branch",
+          "town_ID": 65,
+          "id": 998,
+          "speaker_object": 36527332,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_999",
+      "message_id": 999,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82ab82e1815b81490a82be82a982e7257382b382f10a91e58d4482ab8149",
+      "japanese": "きゃー！\nだから%sさん\n大好き！",
+      "source_reference": {
+        "message_id": 999,
+        "block": 12,
+        "table_offset": 1319134,
+        "block_offset": 1996,
+        "copy_end": 2028,
+        "record_index": 35,
+        "start": 22,
+        "end": 52,
+        "text": null
+      },
+      "canonical_source_hex": "6f757420257320696e2025733f0a200a2020202020202020202020202020",
+      "current_text_hex": "4168212054686174277320776879208268206c6f766520796f752c20257321",
+      "current_English": "Ah! That's why Ｉ love you, %s!",
+      "current_reference": {
+        "message_id": 999,
+        "block": 12,
+        "table_offset": 1319134,
+        "block_offset": 3600,
+        "copy_end": 3632,
+        "record_index": 66,
+        "start": 0,
+        "end": 31,
+        "text": null
+      },
+      "english": "Ah! That's why I love you, %s!{PAD}",
+      "source_meaning": "Delighted squeal and affectionate statement that this is why she loves the named captain.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5950C city-specific response after accepting the requested special gift.999 alone supplies the original mutable captain first name. The following item-state updates are unchanged.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Keep native first-name identities/order;do not replace with a full name,surname,title or faction. The editable first-name field has a separately verified16-byte limit.",
+      "source_voice_table": null,
+      "source_native_arguments": [
+        "captain_first_name"
+      ],
+      "English_argument_source_indices": [
+        0
+      ],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 11,
+          "id": 999,
+          "speaker_object": 36526852,
+          "arguments_hex": [
+            "486f6472616d"
+          ]
+        },
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 13,
+          "id": 999,
+          "speaker_object": 36526884,
+          "arguments_hex": [
+            "486f6472616d"
+          ]
+        },
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 57,
+          "id": 999,
+          "speaker_object": 36527236,
+          "arguments_hex": [
+            "486f6472616d"
+          ]
+        },
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 61,
+          "id": 999,
+          "speaker_object": 36527364,
+          "arguments_hex": [
+            "486f6472616d"
+          ]
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1000",
+      "message_id": 1000,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82b182f182c88d8282a295a882f08e8482c982ad82ea82e982cc814981480a82dc82a0814182a082e882aa82c682a48149",
+      "japanese": "こんな高い物を私にくれるの！？\nまあ、ありがとう！",
+      "source_reference": {
+        "message_id": 1000,
+        "block": 12,
+        "table_offset": 1319136,
+        "block_offset": 2028,
+        "copy_end": 2080,
+        "record_index": 36,
+        "start": 1,
+        "end": 50,
+        "text": null
+      },
+      "canonical_source_hex": "5375636820616e20657870656e7369766520676966743f0a205468616e6b20796f75212020202020202020202020202020",
+      "current_text_hex": "596f7527726520676976696e67206d6520736f6d657468696e67207468697320657870656e736976653f204f682c207468616e6b20796f7521",
+      "current_English": "You're giving me something this expensive? Oh, thank you!",
+      "current_reference": {
+        "message_id": 1000,
+        "block": 12,
+        "table_offset": 1319136,
+        "block_offset": 3632,
+        "copy_end": 3690,
+        "record_index": 67,
+        "start": 0,
+        "end": 57,
+        "text": null
+      },
+      "english": "You're giving me something this expensive? Oh, thank you!{PAD}",
+      "source_meaning": "Surprised and grateful to receive something so expensive.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5950C city-specific response after accepting the requested special gift.999 alone supplies the original mutable captain first name. The following item-state updates are unchanged.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 34,
+          "id": 1000,
+          "speaker_object": 36527044,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1001",
+      "message_id": 1001,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82a082e7814182a082e882aa82c60a81638380838a82b582c882ad82c482a282a282cc82c9",
+      "japanese": "あら、ありがと\n…ムリしなくていいのに",
+      "source_reference": {
+        "message_id": 1001,
+        "block": 12,
+        "table_offset": 1319138,
+        "block_offset": 2080,
+        "copy_end": 2120,
+        "record_index": 37,
+        "start": 2,
+        "end": 39,
+        "text": null
+      },
+      "canonical_source_hex": "5468616e6b20796f752e0a204e6f206e65656420746f206f766572646f2069742e20202020",
+      "current_text_hex": "4f682c207468616e6b20796f752e2e2e20596f752073686f756c646e27742074726f75626c6520796f757273656c662e",
+      "current_English": "Oh, thank you... You shouldn't trouble yourself.",
+      "current_reference": {
+        "message_id": 1001,
+        "block": 12,
+        "table_offset": 1319138,
+        "block_offset": 3690,
+        "copy_end": 3739,
+        "record_index": 68,
+        "start": 0,
+        "end": 48,
+        "text": null
+      },
+      "english": "Oh, thank you... You didn't have to.{PAD}",
+      "source_meaning": "Thanks the giver while saying they need not have gone to such trouble or overextended themself.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5950C city-specific response after accepting the requested special gift.999 alone supplies the original mutable captain first name. The following item-state updates are unchanged.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. You didn't have to is idiomatic grateful modesty,not a refusal or a claim about a new cost.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 15,
+          "id": 1001,
+          "speaker_object": 36526916,
+          "arguments_hex": []
+        },
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 50,
+          "id": 1001,
+          "speaker_object": 36527172,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1002",
+      "message_id": 1002,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82dc82a081418e8482aa83948342815b8369835882be82c182c40a8cbe82a282bd82a282cc81480a82a482d382d3814188ab82a28b4382cd82b582c882a282ed82cb",
+      "japanese": "まあ、私がヴィーナスだって\n言いたいの？\nうふふ、悪い気はしないわね",
+      "source_reference": {
+        "message_id": 1002,
+        "block": 12,
+        "table_offset": 1319140,
+        "block_offset": 2120,
+        "copy_end": 2188,
+        "record_index": 38,
+        "start": 2,
+        "end": 68,
+        "text": null
+      },
+      "canonical_source_hex": "43616c6c696e67206d652056656e75733f0a20486565206865652e2e2e0a205468617420736f756e647320726174686572206e6963652e2020202020202020202020",
+      "current_text_hex": "41726520796f752063616c6c696e67206d652056656e75733f20486568652e2e2e208268206c696b652074686520736f756e64206f6620746861742e",
+      "current_English": "Are you calling me Venus? Hehe... Ｉ like the sound of that.",
+      "current_reference": {
+        "message_id": 1002,
+        "block": 12,
+        "table_offset": 1319140,
+        "block_offset": 3739,
+        "copy_end": 3800,
+        "record_index": 69,
+        "start": 0,
+        "end": 60,
+        "text": null
+      },
+      "english": "Are you calling me Venus? Hehe... I like the sound of that.{PAD}",
+      "source_meaning": "Asks whether the gift compares her to Venus;laughs and admits being pleased by the implication.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original5950C city-specific response after accepting the requested special gift.999 alone supplies the original mutable captain first name. The following item-state updates are unchanged.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-special-gift-response",
+          "town_ID": 22,
+          "id": 1002,
+          "speaker_object": 36526980,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1003",
+      "message_id": 1003,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82b381418370815b836282c688f982f182c5919b82ac82dc82b582e58149",
+      "japanese": "さ、パーッと飲んで騒ぎましょ！",
+      "source_reference": {
+        "message_id": 1003,
+        "block": 12,
+        "table_offset": 1319142,
+        "block_offset": 2188,
+        "copy_end": 2220,
+        "record_index": 39,
+        "start": 1,
+        "end": 31,
+        "text": null
+      },
+      "canonical_source_hex": "436f6d652c206472696e6b20616e642063656c6562726174652120202020",
+      "current_text_hex": "4c65742773206472696e6b20616e64206861766520736f6d652066756e21",
+      "current_English": "Let's drink and have some fun!",
+      "current_reference": {
+        "message_id": 1003,
+        "block": 12,
+        "table_offset": 1319142,
+        "block_offset": 3800,
+        "copy_end": 3831,
+        "record_index": 70,
+        "start": 0,
+        "end": 30,
+        "text": null
+      },
+      "english": "Let's drink and have some fun!{PAD}",
+      "source_meaning": "Enthusiastically invites drinking and making merry together.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 0,
+          "id": 1003,
+          "speaker_object": 36526756,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1004",
+      "message_id": 1004,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8b7893fa82cd82a282c282e0814182a892eb82f08e5595e082b782e982cc0a89d482e296d882f08ca982c482a282e982c60a905382aa82ab82ea82a282c982c882c182c482a282ad82cc82aa0a95aa82a982e982cc82e6",
+      "japanese": "休日はいつも、お庭を散歩するの\n花や木を見ていると\n心がきれいになっていくのが\n分かるのよ",
+      "source_reference": {
+        "message_id": 1004,
+        "block": 12,
+        "table_offset": 1319144,
+        "block_offset": 2220,
+        "copy_end": 2308,
+        "record_index": 40,
+        "start": 1,
+        "end": 88,
+        "text": null
+      },
+      "canonical_source_hex": "4f6e20686f6c69646179732c0a20612067617264656e2077616c6b0a20616d6f6e6720666c6f7765727320616e642074726565730a20636c65616e736573207468652068656172742e2020202020202020202020202020",
+      "current_text_hex": "826820616c776179732077616c6b20696e207468652067617264656e206f6e20686f6c69646179732e2054686520666c6f7765727320616e6420747265657320636c65616e7365206d792068656172742e",
+      "current_English": "Ｉ always walk in the garden on holidays. The flowers and trees cleanse my heart.",
+      "current_reference": {
+        "message_id": 1004,
+        "block": 12,
+        "table_offset": 1319144,
+        "block_offset": 3831,
+        "copy_end": 3913,
+        "record_index": 71,
+        "start": 0,
+        "end": 81,
+        "text": null
+      },
+      "english": "On my days off, I always take a stroll in the garden. Seeing the flowers and trees refreshes my spirit.{PAD}",
+      "source_meaning": "Always walks in the garden on days off;looking at flowers and trees makes her feel her spirit is refreshed/purified.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. 休日 means her days off,not necessarily public holidays. Refreshes my spirit conveys the nature/heart-cleansing image in natural English.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 7,
+          "id": 1004,
+          "speaker_object": 36526724,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1005",
+      "message_id": 1005,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8370834382f08fc482a282bd82cc82e60a904882d782c482a282c182c482cb",
+      "japanese": "パイを焼いたのよ\n食べていってね",
+      "source_reference": {
+        "message_id": 1005,
+        "block": 12,
+        "table_offset": 1319146,
+        "block_offset": 2308,
+        "copy_end": 2340,
+        "record_index": 41,
+        "start": 0,
+        "end": 31,
+        "text": null
+      },
+      "canonical_source_hex": "5069652069732072656164792e0a204861766520736f6d652e202020202020",
+      "current_text_hex": "82682062616b65642061207069652e205374617920616e64206861766520736f6d6521",
+      "current_English": "Ｉ baked a pie. Stay and have some!",
+      "current_reference": {
+        "message_id": 1005,
+        "block": 12,
+        "table_offset": 1319146,
+        "block_offset": 3913,
+        "copy_end": 3949,
+        "record_index": 72,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "english": "I baked a pie. Stay and have some!{PAD}",
+      "source_meaning": "Has baked a pie and invites the listener to eat some before leaving.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 2,
+          "id": 1005,
+          "speaker_object": 36526820,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1006",
+      "message_id": 1006,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8e848141835a835282a2906c82c182c491e58c9982a282e60a82a082c882bd82cd82bb82f182c882b182c682c882a282ed82e682cb8148",
+      "japanese": "私、セコい人って大嫌いよ\nあなたはそんなことないわよね？",
+      "source_reference": {
+        "message_id": 1006,
+        "block": 12,
+        "table_offset": 1319148,
+        "block_offset": 2340,
+        "copy_end": 2396,
+        "record_index": 42,
+        "start": 0,
+        "end": 55,
+        "text": null
+      },
+      "canonical_source_hex": "43686561702070656f706c652061726520617766756c2e0a20596f7520617265206e6f74206c696b6520746861742c2072696768743f20",
+      "current_text_hex": "82682063616e2774207374616e64207374696e67792070656f706c652e20596f75277265206e6f74206c696b6520746861742c2061726520796f753f",
+      "current_English": "Ｉ can't stand stingy people. You're not like that, are you?",
+      "current_reference": {
+        "message_id": 1006,
+        "block": 12,
+        "table_offset": 1319148,
+        "block_offset": 3949,
+        "copy_end": 4010,
+        "record_index": 73,
+        "start": 0,
+        "end": 60,
+        "text": null
+      },
+      "english": "I can't stand stingy people. You're not like that, are you?{PAD}",
+      "source_meaning": "Strongly dislikes stingy people and playfully asks whether the listener is different.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 5,
+          "id": 1006,
+          "speaker_object": 36526788,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1007",
+      "message_id": 1007,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "838b8160838b838b816081f40a82b182cc8bc881418a4382c98f6f82bd97f6906c82cc8b4182e882f091d282c20a8f9782cc89cc82c882cc814291448fe682e882c997f682f082b782e982c60a82c682c182c482e082c282e782a282ed8163",
+      "japanese": "ル～ルル～♪\nこの曲、海に出た恋人の帰りを待つ\n女の歌なの。船乗りに恋をすると\nとってもつらいわ…",
+      "source_reference": {
+        "message_id": 1007,
+        "block": 12,
+        "table_offset": 1319150,
+        "block_offset": 2396,
+        "copy_end": 2492,
+        "record_index": 43,
+        "start": 0,
+        "end": 95,
+        "text": null
+      },
+      "canonical_source_hex": "4c61206c61206c612e2e2e0a204120776f6d616e20776169747320666f72206865720a206c6f76657220746f2072657475726e2066726f6d207365612e0a204c6f76696e672061207361696c6f7220697320686172642e2e2e202020202020",
+      "current_text_hex": "4c61206c61206c612e2e2e2054686520776f6d616e20696e207468697320736f6e672061776169747320686572206c6f76657227732072657475726e2066726f6d207365612e204c6f76696e672061207361696c6f7220697320736f20686172642e2e2e",
+      "current_English": "La la la... The woman in this song awaits her lover's return from sea. Loving a sailor is so hard...",
+      "current_reference": {
+        "message_id": 1007,
+        "block": 13,
+        "table_offset": 1319150,
+        "block_offset": 0,
+        "copy_end": 101,
+        "record_index": 0,
+        "start": 0,
+        "end": 100,
+        "text": null
+      },
+      "english": "La la la... This song's about a woman waiting for her lover to return from sea. Being in love with a sailor is so hard...{PAD}",
+      "source_meaning": "Vocalizes a tune;explains it is about a woman waiting for her seafaring lover's return and reflects how hard loving a sailor is.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Preserve the woman waiting for her lover at sea;do not add death,abandonment or a named singer/song.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 11,
+          "id": 1007,
+          "speaker_object": 36526852,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1008",
+      "message_id": 1008,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82cb82a682cb82a60a88d98d9182cc9862814195b782a982b982c4",
+      "japanese": "ねえねえ\n異国の話、聞かせて",
+      "source_reference": {
+        "message_id": 1008,
+        "block": 12,
+        "table_offset": 1319152,
+        "block_offset": 2492,
+        "copy_end": 2520,
+        "record_index": 44,
+        "start": 0,
+        "end": 27,
+        "text": null
+      },
+      "canonical_source_hex": "54656c6c206d650a206f662064697374616e74206c616e64732e20",
+      "current_text_hex": "4865792c2074656c6c206d652061626f757420666f726569676e206c616e647321",
+      "current_English": "Hey, tell me about foreign lands!",
+      "current_reference": {
+        "message_id": 1008,
+        "block": 13,
+        "table_offset": 1319152,
+        "block_offset": 101,
+        "copy_end": 135,
+        "record_index": 1,
+        "start": 0,
+        "end": 33,
+        "text": null
+      },
+      "english": "Hey, tell me about foreign lands!{PAD}",
+      "source_meaning": "Eagerly asks for stories about foreign lands.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 13,
+          "id": 1008,
+          "speaker_object": 36526884,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1009",
+      "message_id": 1009,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8e84814182b182cc8a5882aa8d4482ab0a82be82c182c4814182a282c282e082c982ac82e282a982c582b582e581480a88c382a28a5882cd81418b4382aa96c593fc82c182bf82e182a482cc82e6",
+      "japanese": "私、この街が好き\nだって、いつもにぎやかでしょ？\n暗い街は、気が滅入っちゃうのよ",
+      "source_reference": {
+        "message_id": 1009,
+        "block": 12,
+        "table_offset": 1319154,
+        "block_offset": 2520,
+        "copy_end": 2600,
+        "record_index": 45,
+        "start": 0,
+        "end": 78,
+        "text": null
+      },
+      "canonical_source_hex": "54686973206369747920697320776f6e64657266756c2e0a20416c7761797320736f206c6976656c79210a20476c6f6f6d79206369746965732064657072657373206d652e202020202020202020",
+      "current_text_hex": "8268206c6f7665207468697320746f776e2e20826874277320616c77617973206c6976656c792120476c6f6f6d7920746f776e7320676574206d6520646f776e2e",
+      "current_English": "Ｉ love this town. Ｉt's always lively! Gloomy towns get me down.",
+      "current_reference": {
+        "message_id": 1009,
+        "block": 13,
+        "table_offset": 1319154,
+        "block_offset": 135,
+        "copy_end": 201,
+        "record_index": 2,
+        "start": 0,
+        "end": 65,
+        "text": null
+      },
+      "english": "I love this town. It's always lively! Gloomy towns get me down.{PAD}",
+      "source_meaning": "Likes this town because it is lively;gloomy towns depress her.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 15,
+          "id": 1009,
+          "speaker_object": 36526916,
+          "arguments_hex": []
+        },
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 38,
+          "id": 1009,
+          "speaker_object": 36527076,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1010",
+      "message_id": 1010,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "88e290d582cc92b28db882c882f182c48a7982b582bb82a482cb0a8cc391e3906c82cc95b689bb82e295e982e782b582f00a82a982a282dc8ca982e982c882f182c40a82bf82e582c182c6838d837d839383608362834e82e682cb",
+      "japanese": "遺跡の調査なんて楽しそうね\n古代人の文化や暮らしを\nかいま見るなんて\nちょっとロマンチックよね",
+      "source_reference": {
+        "message_id": 1010,
+        "block": 12,
+        "table_offset": 1319156,
+        "block_offset": 2600,
+        "copy_end": 2692,
+        "record_index": 46,
+        "start": 1,
+        "end": 92,
+        "text": null
+      },
+      "canonical_source_hex": "416e6369656e74207275696e7320736f756e642066756e2e0a20536565696e6720686f772070656f706c650a206f6e6365206c697665640a206665656c7320726f6d616e7469632e20202020202020202020202020202020202020",
+      "current_text_hex": "4578706c6f72696e67207275696e7320736f756e6473206c696b652066756e2e20536565696e6720616e6369656e742063756c7475726520616e64206576657279646179206c696665207365656d732072617468657220726f6d616e7469632e",
+      "current_English": "Exploring ruins sounds like fun. Seeing ancient culture and everyday life seems rather romantic.",
+      "current_reference": {
+        "message_id": 1010,
+        "block": 13,
+        "table_offset": 1319156,
+        "block_offset": 201,
+        "copy_end": 298,
+        "record_index": 3,
+        "start": 0,
+        "end": 96,
+        "text": null
+      },
+      "english": "Exploring ruins sounds like fun. There's something romantic about glimpsing ancient cultures and the way people lived.{PAD}",
+      "source_meaning": "Exploring ruins sounds enjoyable;glimpsing ancient people's culture and daily life seems romantic.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 19,
+          "id": 1010,
+          "speaker_object": 36526948,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1011",
+      "message_id": 1011,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "97ac8d7382c982a482c682a2906c82c182c482a282e982cc82e682cb0a82bb82a482a282a4906c82c682cd0a88ea8f8f82c995e082ad82cc82e08343838482be82ed",
+      "japanese": "流行にうとい人っているのよね\nそういう人とは\n一緒に歩くのもイヤだわ",
+      "source_reference": {
+        "message_id": 1011,
+        "block": 12,
+        "table_offset": 1319158,
+        "block_offset": 2692,
+        "copy_end": 2760,
+        "record_index": 47,
+        "start": 0,
+        "end": 66,
+        "text": null
+      },
+      "canonical_source_hex": "536f6d652069676e6f72652066617368696f6e2e0a2057616c6b696e6720626573696465207468656d0a20776f756c6420626520656d62617272617373696e672e20",
+      "current_text_hex": "536f6d652070656f706c65206b6e6f77206e6f7468696e67206f662066617368696f6e2e2082682764206861746520746f2077616c6b20626573696465207468656d2e",
+      "current_English": "Some people know nothing of fashion. Ｉ'd hate to walk beside them.",
+      "current_reference": {
+        "message_id": 1011,
+        "block": 13,
+        "table_offset": 1319158,
+        "block_offset": 298,
+        "copy_end": 366,
+        "record_index": 4,
+        "start": 0,
+        "end": 67,
+        "text": null
+      },
+      "english": "Some people just don't keep up with fashion. I wouldn't want to walk down the street with someone like that.{PAD}",
+      "source_meaning": "Dislikes walking together with people who do not keep up with fashion.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 22,
+          "id": 1011,
+          "speaker_object": 36526980,
+          "arguments_hex": []
+        },
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 57,
+          "id": 1011,
+          "speaker_object": 36527236,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1012",
+      "message_id": 1012,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82a082c882bd82c182c4837a8393836782c983588365834c0a8bad82ad82c182c4974482b582ad82c182c48163",
+      "japanese": "あなたってホントにステキ\n強くって優しくって…",
+      "source_reference": {
+        "message_id": 1012,
+        "block": 12,
+        "table_offset": 1319160,
+        "block_offset": 2760,
+        "copy_end": 2808,
+        "record_index": 48,
+        "start": 1,
+        "end": 46,
+        "text": null
+      },
+      "canonical_source_hex": "596f752061726520776f6e64657266756c3a0a207374726f6e6720616e64206b696e642e2e2e20202020202020",
+      "current_text_hex": "596f7527726520776f6e64657266756c2e2e2e205374726f6e672c206b696e642e2e2e",
+      "current_English": "You're wonderful... Strong, kind...",
+      "current_reference": {
+        "message_id": 1012,
+        "block": 13,
+        "table_offset": 1319160,
+        "block_offset": 366,
+        "copy_end": 402,
+        "record_index": 5,
+        "start": 0,
+        "end": 35,
+        "text": null
+      },
+      "english": "You're wonderful... Strong, kind...{PAD}",
+      "source_meaning": "Warmly compliments the listener as wonderful,strong and kind,leaving the thought unfinished.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 25,
+          "id": 1012,
+          "speaker_object": 36527012,
+          "arguments_hex": []
+        },
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 47,
+          "id": 1012,
+          "speaker_object": 36527140,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1013",
+      "message_id": 1013,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82a082c882bd8141945982dd82b282c682aa82a082e982c882e70a8e8482aa90e882c182c482a082b082dc82b582e582a482a981480a82a082e781488140945982f182c582c882a282c582b782c182c48148",
+      "japanese": "あなた、悩みごとがあるなら\n私が占ってあげましょうか？\nあら？　悩んでないですって？",
+      "source_reference": {
+        "message_id": 1013,
+        "block": 12,
+        "table_offset": 1319162,
+        "block_offset": 2808,
+        "copy_end": 2892,
+        "record_index": 49,
+        "start": 2,
+        "end": 84,
+        "text": null
+      },
+      "canonical_source_hex": "536f6d657468696e672074726f75626c657320796f753f0a205368616c6c207468652063617264732072657665616c2069743f0a204f682c206e6f7468696e672069732077726f6e673f2020202020202020",
+      "current_text_hex": "82686620736f6d657468696e6727732074726f75626c696e6720796f752c207368616c6c2082682074656c6c20796f757220666f7274756e653f204f682c20796f752068617665206e6f20776f72726965733f",
+      "current_English": "Ｉf something's troubling you, shall Ｉ tell your fortune? Oh, you have no worries?",
+      "current_reference": {
+        "message_id": 1013,
+        "block": 13,
+        "table_offset": 1319162,
+        "block_offset": 402,
+        "copy_end": 486,
+        "record_index": 6,
+        "start": 0,
+        "end": 83,
+        "text": null
+      },
+      "english": "If something's troubling you, would you like me to tell your fortune? Oh? You don't have any worries?{PAD}",
+      "source_meaning": "Offers fortune-telling if the listener has troubles,then reacts to being told there are no worries.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 29,
+          "id": 1013,
+          "speaker_object": 36527300,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1014",
+      "message_id": 1014,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "94e682ea82c482e982c582b582e581480a82bf82e582c182c682ad82e782a282c882e70a82ed82aa82dc82dc82ab82a282c482a0814582b0814582e9",
+      "japanese": "疲れてるでしょ？\nちょっとくらいなら\nわがままきいてあ・げ・る",
+      "source_reference": {
+        "message_id": 1014,
+        "block": 12,
+        "table_offset": 1319164,
+        "block_offset": 2892,
+        "copy_end": 2952,
+        "record_index": 50,
+        "start": 1,
+        "end": 61,
+        "text": null
+      },
+      "canonical_source_hex": "537072656164206261642072756d6f72732061626f757420257320696e2025733f0a200a200a200a200a202020202020202020202020202020202020",
+      "current_text_hex": "54697265642c206172656e277420796f753f208268276c6c20696e64756c676520796f7572207768696d732e2e2e206a7573742061206c6974746c652e",
+      "current_English": "Tired, aren't you? Ｉ'll indulge your whims... just a little.",
+      "current_reference": {
+        "message_id": 1014,
+        "block": 13,
+        "table_offset": 1319164,
+        "block_offset": 486,
+        "copy_end": 548,
+        "record_index": 7,
+        "start": 0,
+        "end": 61,
+        "text": null
+      },
+      "english": "Tired, aren't you? I'll spoil you... just a little.{PAD}",
+      "source_meaning": "Teasingly notes tiredness and offers to indulge the listener a little.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Spoil you... just a little preserves the teasing offer without making it more sexually explicit or specifying an act.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 34,
+          "id": 1014,
+          "speaker_object": 36527044,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1015",
+      "message_id": 1015,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82be82a282bd82a28141926a82aa8a4382c98f6f82c481418f9782aa89c682f08ee782e90a82c882f182c48d6c82a682cd8cc382ad82b382a282cc82e60a82b182ea82a982e782cc8e9e91e381418f9790ab82be82c182c48ed089ef82c90a90698f6f82b582c482e082a282a282c68e7682ed82c882a28148",
+      "japanese": "だいたい、男が海に出て、女が家を守る\nなんて考えは古くさいのよ\nこれからの時代、女性だって社会に\n進出してもいいと思わない？",
+      "source_reference": {
+        "message_id": 1015,
+        "block": 12,
+        "table_offset": 1319166,
+        "block_offset": 2952,
+        "copy_end": 3076,
+        "record_index": 50,
+        "start": 61,
+        "end": 182,
+        "text": null
+      },
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "4d656e207361696c207768696c6520776f6d656e207374617920686f6d653f20546861742773206f757464617465642120446f6e277420796f75207468696e6b20776f6d656e2073686f756c6420656e746572207075626c6963206c69666520746f6f2c206e6f7720746861742074696d657320617265206368616e67696e673f",
+      "current_English": "Men sail while women stay home? That's outdated! Don't you think women should enter public life too, now that times are changing?",
+      "current_reference": {
+        "message_id": 1015,
+        "block": 13,
+        "table_offset": 1319166,
+        "block_offset": 548,
+        "copy_end": 678,
+        "record_index": 8,
+        "start": 0,
+        "end": 129,
+        "text": null
+      },
+      "english": "Men go to sea and women stay home? That's outdated! Don't you think it's time women took a more active role in society, too?{PAD}",
+      "source_meaning": "Calls the idea of men sailing and women staying home outdated;asks whether women should also take a more active role in society in the coming age.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Preserve the criticism of gender roles and support for women's wider social participation;do not reduce it to a generic compliment.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 42,
+          "id": 1015,
+          "speaker_object": 36527108,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1016",
+      "message_id": 1016,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "88d98d9182cc906c82c182c48bea8ee882be82c182bd82af82c70a82a082c882bd82cd93c195ca",
+      "japanese": "異国の人って苦手だったけど\nあなたは特別",
+      "source_reference": {
+        "message_id": 1016,
+        "block": 12,
+        "table_offset": 1319168,
+        "block_offset": 3076,
+        "copy_end": 3116,
+        "record_index": 51,
+        "start": 2,
+        "end": 41,
+        "text": null
+      },
+      "canonical_source_hex": "537072656164206261642072756d6f72732061626f757420257320696e2025733f0a2020202020",
+      "current_text_hex": "82656f726569676e657273207573656420746f206d616b65206d6520756e656173792c2062757420796f75277265207370656369616c2e",
+      "current_English": "Ｆoreigners used to make me uneasy, but you're special.",
+      "current_reference": {
+        "message_id": 1016,
+        "block": 13,
+        "table_offset": 1319168,
+        "block_offset": 678,
+        "copy_end": 734,
+        "record_index": 9,
+        "start": 0,
+        "end": 55,
+        "text": null
+      },
+      "english": "Foreigners used to make me uneasy, but you're special.{PAD}",
+      "source_meaning": "Was uncomfortable with foreigners,but regards this listener as an exception.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 50,
+          "id": 1016,
+          "speaker_object": 36527172,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1017",
+      "message_id": 1017,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82e282c182cf82e8814191448fe682e882c182c49166934782be82ed0a82cb82a681418343838b834a82f08ca982bd82b182c682a082e981480a834e8357838982cd8148",
+      "japanese": "やっぱり、船乗りって素敵だわ\nねえ、イルカを見たことある？\nクジラは？",
+      "source_reference": {
+        "message_id": 1017,
+        "block": 12,
+        "table_offset": 1319170,
+        "block_offset": 3116,
+        "copy_end": 3184,
+        "record_index": 52,
+        "start": 0,
+        "end": 68,
+        "text": null
+      },
+      "canonical_source_hex": "537072656164206261642072756d6f72732061626f757420257320696e2025733f0a200a200a200a200a200a200a20202020202020202020202020202020202020202020",
+      "current_text_hex": "5361696c6f72732061726520736f20776f6e64657266756c21204861766520796f75207365656e20646f6c7068696e733f20576861742061626f7574207768616c65733f",
+      "current_English": "Sailors are so wonderful! Have you seen dolphins? What about whales?",
+      "current_reference": {
+        "message_id": 1017,
+        "block": 13,
+        "table_offset": 1319170,
+        "block_offset": 734,
+        "copy_end": 803,
+        "record_index": 10,
+        "start": 0,
+        "end": 68,
+        "text": null
+      },
+      "english": "Sailors are so wonderful! Have you seen dolphins? What about whales?{PAD}",
+      "source_meaning": "Admires sailors and eagerly asks whether the listener has seen dolphins and whales.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 54,
+          "id": 1017,
+          "speaker_object": 36527204,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1018",
+      "message_id": 1018,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "82cb82a681418a4391af82cc9862814195b782a982b982c482e60a82c782f182c8914482c98fe682c182c482a282e982cc81480a82e282c182cf82e881418bad82a28148",
+      "japanese": "ねえ、海賊の話、聞かせてよ\nどんな船に乗っているの？\nやっぱり、強い？",
+      "source_reference": {
+        "message_id": 1018,
+        "block": 12,
+        "table_offset": 1319172,
+        "block_offset": 3184,
+        "copy_end": 3252,
+        "record_index": 52,
+        "start": 68,
+        "end": 136,
+        "text": null
+      },
+      "canonical_source_hex": "2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "54656c6c206d652061626f7574207069726174657321205768617420736869707320646f2074686579207361696c3f204172652074686579207265616c6c79207374726f6e673f",
+      "current_English": "Tell me about pirates! What ships do they sail? Are they really strong?",
+      "current_reference": {
+        "message_id": 1018,
+        "block": 13,
+        "table_offset": 1319172,
+        "block_offset": 803,
+        "copy_end": 875,
+        "record_index": 11,
+        "start": 0,
+        "end": 71,
+        "text": null
+      },
+      "english": "Tell me about pirates! What ships do they sail? Are they really strong?{PAD}",
+      "source_meaning": "Eagerly asks about pirates,the ships they sail and their strength.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 65,
+          "id": 1018,
+          "speaker_object": 36527332,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "retain",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_1019",
+      "message_id": 1019,
+      "interaction_group": "Tavern-barmaid-conversations",
+      "source_hex": "8dc58bdf814196d194e796da939682c482c993ae95a882bd82bf82aa0a8eeb82e782ea82c482a282e982cc0a82dd82f182c8814182c782a482b582c482bb82f182c882d082c782a282b182c60a82b782e982cc82a982b582e78148",
+      "japanese": "最近、毛皮目当てに動物たちが\n狩られているの\nみんな、どうしてそんなひどいこと\nするのかしら？",
+      "source_reference": {
+        "message_id": 1019,
+        "block": 12,
+        "table_offset": 1319174,
+        "block_offset": 3252,
+        "copy_end": 3344,
+        "record_index": 52,
+        "start": 136,
+        "end": 227,
+        "text": null
+      },
+      "canonical_source_hex": "20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_text_hex": "416e696d616c7320617265206265696e672068756e74656420666f7220746865697220667572206c6174656c792e2057687920646f2070656f706c6520646f207375636820637275656c207468696e67733f",
+      "current_English": "Animals are being hunted for their fur lately. Why do people do such cruel things?",
+      "current_reference": {
+        "message_id": 1019,
+        "block": 13,
+        "table_offset": 1319174,
+        "block_offset": 875,
+        "copy_end": 958,
+        "record_index": 12,
+        "start": 0,
+        "end": 82,
+        "text": null
+      },
+      "english": "Lately, people have been hunting animals for their fur. Why would anyone do something so cruel?{PAD}",
+      "source_meaning": "Laments recent hunting of animals for their fur and wonders why people act so cruelly.",
+      "speaker": "Original selected town barmaid;see native city/actor/name catalog",
+      "context": "Original58F4C town-specific casual-chat branch,called by original591D0 on its random selection. The normal fallback is998;these are independent city/personality variants.",
+      "localization_note": "Preserve the source facts,personal voice and conversational tone;retain existing natural wording where appropriate. One logical paragraph,without inherited alignment or line breaks. Preserve the concern about hunting for fur as this character's opinion,not a narrator's new policy or game mechanic.",
+      "source_voice_table": null,
+      "source_native_arguments": [],
+      "English_argument_source_indices": [],
+      "native_catalog_selections": [
+        {
+          "kind": "city-specific-casual-chat",
+          "town_ID": 61,
+          "id": 1019,
+          "speaker_object": 36527364,
+          "arguments_hex": []
+        }
+      ],
+      "decision": "revise",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-prose-reviewed-context996-and-production-formatting-integration-gameplay-pending"
+    }
+  ],
+  "producer_sha256": "07be5547ee821d445a2cfaa80ac903fd205d5edf081935f0a682a6058affcccc"
+}

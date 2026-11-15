@@ -1,0 +1,95 @@
+{
+  "format": "dk4-screenshot-repair-manuscript-v1",
+  "encoder": "dialogue-fixed-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DK4_MES_B177_R0140",
+      "kind": "story",
+      "block": 177,
+      "record": 140,
+      "source_hex": "8e5182c182bd82c8829f0a8f9f8ee882c98c8882df82bf82e182a482f182be82e082f10a82a082cc906c0a92878ad482c982c882e982c182c482b182c682c882cc82a982c88148",
+      "japanese": "参ったなぁ\n勝手に決めちゃうんだもん\nあの人\n仲間になるってことなのかな？",
+      "current_hex": "8e4f6820646561722e200a204865206465636964656420616c6c20616c6f6e652e0a204469642074686174206d616e206a757374206a6f696e2075733f20202020202020202020",
+      "preceding_hex": "0040ffff0000",
+      "english": "Oh dear. He's decided for himself. Does that mean he's joining us?{PAD}",
+      "speaker": "Rafael Castor (inherited actor zero)",
+      "context": "Alexandria: Cesare reunites with Janus. Rafael wonders whether Cesare is joining; Cesare then offers advice on ship selection. The original Listen/Do not listen branch follows R144.",
+      "source_meaning": "Dismayed that he decided unilaterally; wonders whether that means he is joining the crew.",
+      "localization_note": "Fresh clean-source localization. One logical paragraph with compiler wrapping. 8E51 is the Japanese glyph 参; actor zero is stored before this body, and must remain there.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B177_R0144",
+      "kind": "story",
+      "block": 177,
+      "record": 144,
+      "source_hex": "0d82a0814182bb82a482be814292f193c293610a914482cc914982d195fb82c982c282a282c481418e8482cc88d38ca982f00a95b782a282c482a282bd82be82ab82bd82a282cc82a082e882dc82b782aa8163",
+      "japanese": "あ、そうだ。提督殿\n船の選び方について、私の意見を\n聞いていただきたいのありますが…",
+      "current_hex": "0d41682c2041646d6972616c2e200a204d61792074686973206d616e206f66666572206164766963650a206f6e2063686f6f73696e672073686970733f20202020202020202020202020202020202020202020",
+      "preceding_hex": "610040ffff00",
+      "english": "{SPEAKER:0D}Ah, Admiral. Would you like some advice on choosing a ship?{PAD}",
+      "speaker": "Cesare Tohni (actor 0D)",
+      "context": "Alexandria: Cesare reunites with Janus. Rafael wonders whether Cesare is joining; Cesare then offers advice on ship selection. The original Listen/Do not listen branch follows R144.",
+      "source_meaning": "Ah, Admiral; asks permission to offer his opinion on selecting ships.",
+      "localization_note": "Fresh clean-source localization. One logical paragraph with compiler wrapping. Retain the exact source 0D actor. The offer, not Rafael's rhetorical question, owns the following Yes/No choice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_3667",
+      "kind": "literal",
+      "source_hex": "82c682f182c582e082c882ad91e582ab82c8918482e782b582a20a8ed788ab82c882e082cc82f091de82af82e997cd82aa82a082e982c182c4986282be",
+      "japanese": "とんでもなく大きな槍らしい\n邪悪なものを退ける力があるって話だ",
+      "english": "I hear it's an enormous spear capable of driving evil away.{PAD}",
+      "speaker": "Guild informant (user screenshot); original rumor family",
+      "context": "Artifact rumor about an exceptionally large spear and its reputed power to repel evil.",
+      "source_meaning": "It is said to be an enormous spear with the power to ward off evil.",
+      "localization_note": "Wording retained after clean-source review. Replace only obsolete full-width I; keep the actual native expander before wrapping. Native literal-command guard must stay intact.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "FATICIA_PERSISTENT_NAME",
+      "kind": "literal",
+      "source_hex": "837483408365834283568341",
+      "japanese": "ファティシア",
+      "english": "Faticia{PAD}",
+      "speaker": "Faticia nameplate",
+      "context": "Original entity name referenced by ARM9 field 0x1223C0, migrated into persistent native name storage.",
+      "source_meaning": "Faticia, the established localized character name.",
+      "localization_note": "Retain spelling. Replace obsolete full-width F with ASCII in the existing nine-byte owned string. Keep pointers, source slots and trailing allocation intact. Native expansion tested independently.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

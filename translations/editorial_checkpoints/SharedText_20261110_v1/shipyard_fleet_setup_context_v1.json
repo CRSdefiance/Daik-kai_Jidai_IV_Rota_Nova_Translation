@@ -1,0 +1,1694 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "message_ID": 261,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_261",
+      "source_reference": {
+        "block": 4,
+        "offset": 1220,
+        "copy_end": 1292,
+        "bytes": 71,
+        "record_index": 10,
+        "table_offset": 1317658,
+        "start_in_record": 1
+      },
+      "source_hex": "82b182cc836a8385815b835882cd0a257382cc8a5882cc97ac8d7382c90a95718ab482c8906c815882cc8ad482c5986291e882c90a82c882c182c482a282e982e682a482c582b7",
+      "clean_Japanese": "このニュースは\n%sの街の流行に\n敏感な人々の間で話題に\nなっているようです",
+      "current_reference": {
+        "block": 4,
+        "offset": 947,
+        "copy_end": 1019,
+        "bytes": 71,
+        "record_index": 11,
+        "table_offset": 1317658,
+        "start_in_record": 0
+      },
+      "current_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669657720697473207573652c206f726967696e2c20616e642076616c75652e2025730a200a200a2020202020",
+      "current_English": "Trade-good description. Review its use, origin, and value. %s\n \n \n     ",
+      "native_callers": [
+        {
+          "call": 34320116,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34320100,
+          "exact_hex": "081091e531ff2fe10010a0e108009fe5ef65feebe5df8de2f08fbde8",
+          "instructions": [
+            "020BAEE4 ldr r1, [r1, #8]",
+            "020BAEE8 blx r1",
+            "020BAEEC mov r1, r0",
+            "020BAEF0 ldr r0, [pc, #8]",
+            "020BAEF4 bl #0x20546b8",
+            "020BAEF8 add sp, sp, #0x394",
+            "020BAEFC pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "This news seems to be making the rounds among people in %s who follow the latest trends.",
+      "source_meaning": "This news seems to be a topic of conversation among people who follow trends in the named city.",
+      "context": "The original report first marks the local news, then supplies the city name from the selected city's getter.",
+      "localization_note": "Replace the unrelated placeholder with a report of what people are talking about. Keep the qualified claim and the interest group.",
+      "native_substitution_count": 1,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 262,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_262",
+      "source_reference": {
+        "block": 4,
+        "offset": 1292,
+        "copy_end": 1320,
+        "bytes": 28,
+        "record_index": 11,
+        "table_offset": 1317660,
+        "start_in_record": 0
+      },
+      "source_hex": "8f8a8e9d82b582c482a282e9914482aa91bd82b782ac82dc82b78149",
+      "clean_Japanese": "所持している船が多すぎます！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1019,
+        "copy_end": 1048,
+        "bytes": 28,
+        "record_index": 12,
+        "table_offset": 1317660,
+        "start_in_record": 0
+      },
+      "current_hex": "546f6f206d616e79207368697073210a20204e6f2073686970732063",
+      "current_English": "Too many ships!\n  No ships c",
+      "native_callers": [
+        {
+          "call": 33960028,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33960012,
+          "exact_hex": "0c008de5000050e30300001aac019fe595c5ffeba1df8de2f08fbde8",
+          "instructions": [
+            "0206304C str r0, [sp, #0xc]",
+            "02063050 cmp r0, #0",
+            "02063054 bne #0x2063068",
+            "02063058 ldr r0, [pc, #0x1ac]",
+            "0206305C bl #0x20546b8",
+            "02063060 add sp, sp, #0x284",
+            "02063064 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        },
+        {
+          "call": 33960740,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33960724,
+          "exact_hex": "10008de5000050e30300001a0c029fe5e3c4ffeba7df8de2f08fbde8",
+          "instructions": [
+            "02063314 str r0, [sp, #0x10]",
+            "02063318 cmp r0, #0",
+            "0206331C bne #0x2063330",
+            "02063320 ldr r0, [pc, #0x20c]",
+            "02063324 bl #0x20546b8",
+            "02063328 add sp, sp, #0x29c",
+            "0206332C pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You have too many ships!",
+      "source_meaning": "The player already owns too many ships.",
+      "context": "Both ordinary and copy-build entry checks stop the purchase when the ship ownership table has no room.",
+      "localization_note": "Restore a complete warning confined to the ownership limit. Leave shipyard availability to 263.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 263,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_263",
+      "source_reference": {
+        "block": 4,
+        "offset": 1320,
+        "copy_end": 1352,
+        "bytes": 30,
+        "record_index": 11,
+        "table_offset": 1317662,
+        "start_in_record": 28
+      },
+      "source_hex": "82b182cc8a5882c591a282ea82e9914482cd82a082e882dc82b982f18149",
+      "clean_Japanese": "この街で造れる船はありません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1048,
+        "copy_end": 1079,
+        "bytes": 30,
+        "record_index": 13,
+        "table_offset": 1317662,
+        "start_in_record": 0
+      },
+      "current_hex": "616e206265206275696c7420686572652120202020202020202020202020",
+      "current_English": "an be built here!             ",
+      "native_callers": [
+        {
+          "call": 33960784,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33960768,
+          "exact_hex": "14008de5000050e30300001ae4019fe5d8c4ffeba7df8de2f08fbde8",
+          "instructions": [
+            "02063340 str r0, [sp, #0x14]",
+            "02063344 cmp r0, #0",
+            "02063348 bne #0x206335c",
+            "0206334C ldr r0, [pc, #0x1e4]",
+            "02063350 bl #0x20546b8",
+            "02063354 add sp, sp, #0x29c",
+            "02063358 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "No ships can be built here!",
+      "source_meaning": "No ships are available to build in this city.",
+      "context": "The yard has passed the ownership check but the original town-specific build list is empty.",
+      "localization_note": "Restore the complete local availability warning from the Japanese. Keep it independent of funds and ownership.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 264,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_264",
+      "source_reference": {
+        "block": 4,
+        "offset": 1352,
+        "copy_end": 1372,
+        "bytes": 20,
+        "record_index": 12,
+        "table_offset": 1317664,
+        "start_in_record": 1
+      },
+      "source_hex": "8f8a8e9d8be082aa91ab82e882dc82b982f18149",
+      "clean_Japanese": "所持金が足りません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1079,
+        "copy_end": 1100,
+        "bytes": 20,
+        "record_index": 14,
+        "table_offset": 1317664,
+        "start_in_record": 0
+      },
+      "current_hex": "4e6f7420656e6f756768206d6f6e657921202020",
+      "current_English": "Not enough money!   ",
+      "native_callers": [
+        {
+          "call": 33961240,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33961224,
+          "exact_hex": "0f0000eba7df8de2f08fbde80b00a0e166c4ffeb18009fe5540090e5",
+          "instructions": [
+            "02063508 bl #0x206354c",
+            "0206350C add sp, sp, #0x29c",
+            "02063510 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "02063514 mov r0, fp",
+            "02063518 bl #0x20546b8",
+            "0206351C ldr r0, [pc, #0x18]",
+            "02063520 ldr r0, [r0, #0x54]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Not enough money!",
+      "source_meaning": "The player does not have enough money.",
+      "context": "The Buy branch compares the current funds against the offered price and returns to selection after showing this warning.",
+      "localization_note": "The short current warning suits the failure and preserves the emphatic source. Keep its simple distinction from the other yard refusals.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 265,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_265",
+      "source_reference": {
+        "block": 4,
+        "offset": 1372,
+        "copy_end": 1396,
+        "bytes": 22,
+        "record_index": 12,
+        "table_offset": 1317666,
+        "start_in_record": 21
+      },
+      "source_hex": "82b182cc914482f08d7793fc82b582dc82b782a98148",
+      "clean_Japanese": "この船を購入しますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1100,
+        "copy_end": 1123,
+        "bytes": 22,
+        "record_index": 15,
+        "table_offset": 1317666,
+        "start_in_record": 0
+      },
+      "current_hex": "427579207468697320736869703f2020202020202020",
+      "current_English": "Buy this ship?        ",
+      "native_callers": [
+        {
+          "call": 33961164,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33961148,
+          "exact_hex": "0166ffeb080050e11200003a78009fe566c4ffeb000050e31000000a",
+          "instructions": [
+            "020634BC bl #0x203ccc8",
+            "020634C0 cmp r0, r8",
+            "020634C4 blo #0x2063514",
+            "020634C8 ldr r0, [pc, #0x78]",
+            "020634CC bl #0x205466c",
+            "020634D0 cmp r0, #0",
+            "020634D4 beq #0x206351c"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Buy this ship?",
+      "source_meaning": "The game asks whether to purchase the selected ship.",
+      "context": "The original confirmation follows ship selection and the affordability check. Yes proceeds to purchase, and No leaves the purchase unmade.",
+      "localization_note": "The current question is natural and clearly identifies the selected ship.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 266,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_266",
+      "source_reference": {
+        "block": 4,
+        "offset": 1396,
+        "copy_end": 1424,
+        "bytes": 26,
+        "record_index": 13,
+        "table_offset": 1317668,
+        "start_in_record": 1
+      },
+      "source_hex": "914482c996bc914f82f0957482af82c482ad82be82b382a28149",
+      "clean_Japanese": "船に名前を付けてください！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1123,
+        "copy_end": 1150,
+        "bytes": 26,
+        "record_index": 16,
+        "table_offset": 1317668,
+        "start_in_record": 0
+      },
+      "current_hex": "4769766520796f757220736869702061206e616d652120202020",
+      "current_English": "Give your ship a name!    ",
+      "native_callers": [
+        {
+          "call": 33961532,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33961516,
+          "exact_hex": "0a00a0e1b00401eb040000eaa8009fe51dc4ffeb540094e5010050e3",
+          "instructions": [
+            "0206362C mov r0, sl",
+            "02063630 bl #0x20a48f8",
+            "02063634 b #0x206364c",
+            "02063638 ldr r0, [pc, #0xa8]",
+            "0206363C bl #0x20546b8",
+            "02063640 ldr r0, [r4, #0x54]",
+            "02063644 cmp r0, #1"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Give your ship a name!",
+      "source_meaning": "The player is asked to name the ship.",
+      "context": "The original purchase path opens the ship name entry and can repeat this prompt during its naming loop.",
+      "localization_note": "The current friendly imperative fits the naming screen. Keep it distinct from the purchase and acceptance prompts.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 268,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_268",
+      "source_reference": {
+        "block": 4,
+        "offset": 1456,
+        "copy_end": 1496,
+        "bytes": 39,
+        "record_index": 15,
+        "table_offset": 1317672,
+        "start_in_record": 1
+      },
+      "source_hex": "90cf82dd89d782aa8e6382c182c482a282dc82b782aa0a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "積み荷が残っていますが\nよろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1181,
+        "copy_end": 1221,
+        "bytes": 39,
+        "record_index": 18,
+        "table_offset": 1317672,
+        "start_in_record": 0
+      },
+      "current_hex": "436172676f2072656d61696e732061626f6172642e0a2020436f6e74696e75653f202020202020",
+      "current_English": "Cargo remains aboard.\n  Continue?      ",
+      "native_callers": [
+        {
+          "call": 34092768,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34092752,
+          "exact_hex": "030050e30300000a080000ea430fa0e3e143ffeb1080bde818009fe5",
+          "instructions": [
+            "020836D0 cmp r0, #3",
+            "020836D4 beq #0x20836e8",
+            "020836D8 b #0x2083700",
+            "020836DC mov r0, #0x10c",
+            "020836E0 bl #0x205466c",
+            "020836E4 pop {r4, pc}",
+            "020836E8 ldr r0, [pc, #0x18]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "There's still cargo aboard. Continue?",
+      "source_meaning": "Cargo is still on board. The game asks whether to proceed.",
+      "context": "The cargo check selects this generic confirmation for the residual-cargo states 0 and 1. State 3 has the separate discard warning 302.",
+      "localization_note": "Use ordinary spoken English and keep the fact that cargo is still aboard. The other branch gives the more specific consequence.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 269,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_269",
+      "source_reference": {
+        "block": 4,
+        "offset": 1496,
+        "copy_end": 1528,
+        "bytes": 32,
+        "record_index": 16,
+        "table_offset": 1317674,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd92b782f095cf8d5882b782e9914482f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "艦長を変更する船を選んでください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1221,
+        "copy_end": 1271,
+        "bytes": 49,
+        "record_index": 19,
+        "table_offset": 1317674,
+        "start_in_record": 0
+      },
+      "current_hex": "43686f6f73652074686520736869702077686f7365206361707461696e20796f752077616e7420746f206368616e67652e",
+      "current_English": "Choose the ship whose captain you want to change.",
+      "native_callers": [
+        {
+          "call": 33925456,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33925440,
+          "exact_hex": "0590a0e311bea0e33b0000ea0c019fe558e7ffeb0900a0e10810a0e1",
+          "instructions": [
+            "0205A940 mov sb, #5",
+            "0205A944 mov fp, #0x110",
+            "0205A948 b #0x205aa3c",
+            "0205A94C ldr r0, [pc, #0x10c]",
+            "0205A950 bl #0x20546b8",
+            "0205A954 mov r0, sb",
+            "0205A958 mov r1, r8"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose the ship whose captain you want to change.",
+      "source_meaning": "Select the ship whose captain will be changed.",
+      "context": "The original ship chooser opens before candidate selection. A flagship selection can first produce the room warning and confirmation.",
+      "localization_note": "Keep this clear instruction. Generate wraps for the full sentence at the native modal width.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 270,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_270",
+      "source_reference": {
+        "block": 4,
+        "offset": 1528,
+        "copy_end": 1548,
+        "bytes": 20,
+        "record_index": 16,
+        "table_offset": 1317676,
+        "start_in_record": 32
+      },
+      "source_hex": "8acd92b782f0947a89ba82c9944382b982dc82b7",
+      "clean_Japanese": "艦長を配下に任せます",
+      "current_reference": {
+        "block": 4,
+        "offset": 1271,
+        "copy_end": 1304,
+        "bytes": 32,
+        "record_index": 20,
+        "table_offset": 1317676,
+        "start_in_record": 0
+      },
+      "current_hex": "41737369676e2061207375626f7264696e617465206173206361707461696e2e",
+      "current_English": "Assign a subordinate as captain.",
+      "native_callers": [
+        {
+          "call": 33926268,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33926252,
+          "exact_hex": "d4c19fe50cd08de0f08fbde8dc019fe58de6ffebc0c19fe5d000a0e3",
+          "instructions": [
+            "0205AC6C ldr ip, [pc, #0x1d4]",
+            "0205AC70 add sp, sp, ip",
+            "0205AC74 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0205AC78 ldr r0, [pc, #0x1dc]",
+            "0205AC7C bl #0x20546b8",
+            "0205AC80 ldr ip, [pc, #0x1c0]",
+            "0205AC84 mov r0, #0xd0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "A sailor will take command.",
+      "source_meaning": "The captaincy will be entrusted to someone subordinate.",
+      "context": "The original fallback detects that the current captain uses a generic sailor ID and shows a result instead of asking to relieve a named officer.",
+      "localization_note": "State the result in plain language. The original fallback and the companion prompt support sailor without inventing a named officer.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 271,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_271",
+      "source_reference": {
+        "block": 4,
+        "offset": 1548,
+        "copy_end": 1580,
+        "bytes": 32,
+        "record_index": 16,
+        "table_offset": 1317678,
+        "start_in_record": 52
+      },
+      "source_hex": "8acd92b782c982b782e98d718a438e6d82f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "艦長にする航海士を選んでください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1304,
+        "copy_end": 1337,
+        "bytes": 32,
+        "record_index": 21,
+        "table_offset": 1317678,
+        "start_in_record": 0
+      },
+      "current_hex": "43686f6f736520612063726577206d656d626572206173206361707461696e2e",
+      "current_English": "Choose a crew member as captain.",
+      "native_callers": [
+        {
+          "call": 33926168,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33926152,
+          "exact_hex": "f08fbd180060a0e30c50a0e338029fe5a6e6ffeb00608de50a00a0e1",
+          "instructions": [
+            "0205AC08 popne {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "0205AC0C mov r6, #0",
+            "0205AC10 mov r5, #0xc",
+            "0205AC14 ldr r0, [pc, #0x238]",
+            "0205AC18 bl #0x20546b8",
+            "0205AC1C str r6, [sp]",
+            "0205AC20 mov r0, sl"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose a crew member to serve as captain.",
+      "source_meaning": "Choose a navigator to appoint as captain.",
+      "context": "The original candidate list opens after ship selection and any flagship warning.",
+      "localization_note": "Keep the established crew wording for the selectable officers. Describe what the chosen person will do rather than assigning a rank before selection.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 272,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_272",
+      "source_reference": {
+        "block": 4,
+        "offset": 1580,
+        "copy_end": 1636,
+        "bytes": 55,
+        "record_index": 16,
+        "table_offset": 1317680,
+        "start_in_record": 84
+      },
+      "source_hex": "8af88acd82f095cf8d5882b782e982c6814191448eba925393968ed282aa0a89f0944382b382ea82e982b182c682aa82a082e882dc82b7",
+      "clean_Japanese": "旗艦を変更すると、船室担当者が\n解任されることがあります",
+      "current_reference": {
+        "block": 4,
+        "offset": 1337,
+        "copy_end": 1400,
+        "bytes": 62,
+        "record_index": 22,
+        "table_offset": 1317680,
+        "start_in_record": 0
+      },
+      "current_hex": "4368616e67696e6720796f757220666c616773686970206d61792063616e63656c207468652063726577277320726f6f6d2061737369676e6d656e74732e",
+      "current_English": "Changing your flagship may cancel the crew's room assignments.",
+      "native_callers": [
+        {
+          "call": 33926796,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33926780,
+          "exact_hex": "f09000eb000054e10800001a110ea0e309e6ffeb68019fe5f4e5ffeb",
+          "instructions": [
+            "0205AE7C bl #0x207f244",
+            "0205AE80 cmp r4, r0",
+            "0205AE84 bne #0x205aeac",
+            "0205AE88 mov r0, #0x110",
+            "0205AE8C bl #0x20546b8",
+            "0205AE90 ldr r0, [pc, #0x168]",
+            "0205AE94 bl #0x205466c"
+          ]
+        },
+        {
+          "call": 34231508,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34231492,
+          "exact_hex": "5c1591e5000051e10700000a110ea0e377bcfeeb4c019fe562bcfeeb",
+          "instructions": [
+            "020A54C4 ldr r1, [r1, #0x55c]",
+            "020A54C8 cmp r1, r0",
+            "020A54CC beq #0x20a54f0",
+            "020A54D0 mov r0, #0x110",
+            "020A54D4 bl #0x20546b8",
+            "020A54D8 ldr r0, [pc, #0x14c]",
+            "020A54DC bl #0x205466c"
+          ]
+        },
+        {
+          "call": 34234768,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34234752,
+          "exact_hex": "d41591e5000051e10700000a110ea0e348b9feeb94019fe533b9feeb",
+          "instructions": [
+            "020A6180 ldr r1, [r1, #0x5d4]",
+            "020A6184 cmp r1, r0",
+            "020A6188 beq #0x20a61ac",
+            "020A618C mov r0, #0x110",
+            "020A6190 bl #0x20546b8",
+            "020A6194 ldr r0, [pc, #0x194]",
+            "020A6198 bl #0x205466c"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Changing the flagship may remove crew from their room assignments.",
+      "source_meaning": "Changing the flagship can cause crew members assigned to ship rooms to lose their assignments.",
+      "context": "The original flagship checks present the warning immediately before the generic yes/no question 273.",
+      "localization_note": "Keep the possibility and the affected room assignments. The warning concerns assignments aboard ship.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 273,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_273",
+      "source_reference": {
+        "block": 4,
+        "offset": 1636,
+        "copy_end": 1652,
+        "bytes": 16,
+        "record_index": 17,
+        "table_offset": 1317682,
+        "start_in_record": 0
+      },
+      "source_hex": "82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "よろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1400,
+        "copy_end": 1417,
+        "bytes": 16,
+        "record_index": 23,
+        "table_offset": 1317682,
+        "start_in_record": 0
+      },
+      "current_hex": "20204469736d69737320746865206361",
+      "current_English": "  Dismiss the ca",
+      "native_callers": [
+        {
+          "call": 33925556,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33925540,
+          "exact_hex": "0600001a0b00a0e141e7ffebac009fe52ce7ffeb000050e31e00000a",
+          "instructions": [
+            "0205A9A4 bne #0x205a9c4",
+            "0205A9A8 mov r0, fp",
+            "0205A9AC bl #0x20546b8",
+            "0205A9B0 ldr r0, [pc, #0xac]",
+            "0205A9B4 bl #0x205466c",
+            "0205A9B8 cmp r0, #0",
+            "0205A9BC beq #0x205aa3c"
+          ]
+        },
+        {
+          "call": 33926804,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33926788,
+          "exact_hex": "0800001a110ea0e309e6ffeb68019fe5f4e5ffeb000050e35400001a",
+          "instructions": [
+            "0205AE84 bne #0x205aeac",
+            "0205AE88 mov r0, #0x110",
+            "0205AE8C bl #0x20546b8",
+            "0205AE90 ldr r0, [pc, #0x168]",
+            "0205AE94 bl #0x205466c",
+            "0205AE98 cmp r0, #0",
+            "0205AE9C bne #0x205aff4"
+          ]
+        },
+        {
+          "call": 34231516,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34231500,
+          "exact_hex": "0700000a110ea0e377bcfeeb4c019fe562bcfeeb000050e304d08d02",
+          "instructions": [
+            "020A54CC beq #0x20a54f0",
+            "020A54D0 mov r0, #0x110",
+            "020A54D4 bl #0x20546b8",
+            "020A54D8 ldr r0, [pc, #0x14c]",
+            "020A54DC bl #0x205466c",
+            "020A54E0 cmp r0, #0",
+            "020A54E4 addeq sp, sp, #4"
+          ]
+        },
+        {
+          "call": 34234776,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34234760,
+          "exact_hex": "0700000a110ea0e348b9feeb94019fe533b9feeb000050e30cd08d02",
+          "instructions": [
+            "020A6188 beq #0x20a61ac",
+            "020A618C mov r0, #0x110",
+            "020A6190 bl #0x20546b8",
+            "020A6194 ldr r0, [pc, #0x194]",
+            "020A6198 bl #0x205466c",
+            "020A619C cmp r0, #0",
+            "020A61A0 addeq sp, sp, #0xc"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Continue?",
+      "source_meaning": "The game asks the player to confirm proceeding.",
+      "context": "Four original callers use this separate yes/no question after the flagship warning 272.",
+      "localization_note": "Restore the short standalone confirmation. The current stored prefix belongs to the different captain-removal question 274.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 274,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_274",
+      "source_reference": {
+        "block": 4,
+        "offset": 1652,
+        "copy_end": 1692,
+        "bytes": 39,
+        "record_index": 17,
+        "table_offset": 1317684,
+        "start_in_record": 16
+      },
+      "source_hex": "8acd92b782f089f0944382b582c40a947a89ba82cc9085957682c9944382b982dc82b782a98148",
+      "clean_Japanese": "艦長を解任して\n配下の水夫に任せますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1417,
+        "copy_end": 1457,
+        "bytes": 39,
+        "record_index": 24,
+        "table_offset": 1317684,
+        "start_in_record": 0
+      },
+      "current_hex": "707461696e20616e64206c656176650a2020746865206372657720696e206368617267653f2020",
+      "current_English": "ptain and leave\n  the crew in charge?  ",
+      "native_callers": [
+        {
+          "call": 33926240,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33926224,
+          "exact_hex": "010000ba9f0050e3060000daf4019fe581e6ffeb000050e30400001a",
+          "instructions": [
+            "0205AC50 blt #0x205ac5c",
+            "0205AC54 cmp r0, #0x9f",
+            "0205AC58 ble #0x205ac78",
+            "0205AC5C ldr r0, [pc, #0x1f4]",
+            "0205AC60 bl #0x205466c",
+            "0205AC64 cmp r0, #0",
+            "0205AC68 bne #0x205ac80"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Relieve the captain and let a sailor take command?",
+      "source_meaning": "Relieve the captain and put a subordinate sailor in charge?",
+      "context": "This is the original confirmation when the player has left the crew chooser with a named captain still on the ship.",
+      "localization_note": "Restore the full choice and distinguish a sailor taking command from the earlier warning about room assignments.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 275,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_275",
+      "source_reference": {
+        "block": 4,
+        "offset": 1692,
+        "copy_end": 1744,
+        "bytes": 51,
+        "record_index": 18,
+        "table_offset": 1317686,
+        "start_in_record": 0
+      },
+      "source_hex": "926e95fb8acd91e082f08dec90ac82b782e982c982cd0a8be089dd8250824f824f824f824f824f9687954b977682c582b78149",
+      "clean_Japanese": "地方艦隊を作成するには\n金貨１０００００枚必要です！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1457,
+        "copy_end": 1509,
+        "bytes": 51,
+        "record_index": 25,
+        "table_offset": 1317686,
+        "start_in_record": 0
+      },
+      "current_hex": "526567696f6e616c20666c65657420636f7374730a20203130302c30303020676f6c6421202020202020202020202020202020",
+      "current_English": "Regional fleet costs\n  100,000 gold!               ",
+      "native_callers": [
+        {
+          "call": 33924592,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924576,
+          "exact_hex": "ec129fe5010050e10300002ae4029fe530e8ffebdbdf8de2f08fbde8",
+          "instructions": [
+            "0205A5E0 ldr r1, [pc, #0x2ec]",
+            "0205A5E4 cmp r0, r1",
+            "0205A5E8 bhs #0x205a5fc",
+            "0205A5EC ldr r0, [pc, #0x2e4]",
+            "0205A5F0 bl #0x20546b8",
+            "0205A5F4 add sp, sp, #0x36c",
+            "0205A5F8 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You need 100,000 gold to form a regional fleet.",
+      "source_meaning": "Creating a regional fleet requires 100,000 gold coins.",
+      "context": "The formation routine checks current funds against the original 100000 literal before it opens admiral selection.",
+      "localization_note": "Use a direct explanation with the exact cost and the established regional fleet term.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 276,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_276",
+      "source_reference": {
+        "block": 4,
+        "offset": 1744,
+        "copy_end": 1772,
+        "bytes": 26,
+        "record_index": 19,
+        "table_offset": 1317688,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd91e082aa82b782c582c9825682c282a082e882dc82b78149",
+      "clean_Japanese": "艦隊がすでに７つあります！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1509,
+        "copy_end": 1536,
+        "bytes": 26,
+        "record_index": 26,
+        "table_offset": 1317688,
+        "start_in_record": 0
+      },
+      "current_hex": "536576656e20666c6565747320616c7265616479212020202020",
+      "current_English": "Seven fleets already!     ",
+      "native_callers": [
+        {
+          "call": 33924628,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924612,
+          "exact_hex": "0090a0e1400059e30300001a450fa0e327e8ffebdbdf8de2f08fbde8",
+          "instructions": [
+            "0205A604 mov sb, r0",
+            "0205A608 cmp sb, #0x40",
+            "0205A60C bne #0x205a620",
+            "0205A610 mov r0, #0x114",
+            "0205A614 bl #0x20546b8",
+            "0205A618 add sp, sp, #0x36c",
+            "0205A61C pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "You already have seven fleets!",
+      "source_meaning": "There are already seven fleets.",
+      "context": "The original empty fleet-slot lookup returns its sentinel and ends formation before the player can select an admiral.",
+      "localization_note": "Say who has the fleets in a complete sentence. The warning preserves the source count.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 277,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_277",
+      "source_reference": {
+        "block": 4,
+        "offset": 1772,
+        "copy_end": 1812,
+        "bytes": 39,
+        "record_index": 20,
+        "table_offset": 1317690,
+        "start_in_record": 1
+      },
+      "source_hex": "905682b582a28acd91e082c9916782dd8d9e82de914482f00a914982f182c582ad82be82b382a2",
+      "clean_Japanese": "新しい艦隊に組み込む船を\n選んでください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1536,
+        "copy_end": 1576,
+        "bytes": 39,
+        "record_index": 27,
+        "table_offset": 1317690,
+        "start_in_record": 0
+      },
+      "current_hex": "43686f6f73652073686970732e0a20202020202020202020202020202020202020202020202020",
+      "current_English": "Choose ships.\n                         ",
+      "native_callers": [
+        {
+          "call": 33924852,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924836,
+          "exact_hex": "000050e37100000a6c0000eaf4019fe5efe7ffeb050057e30700a0e1",
+          "instructions": [
+            "0205A6E4 cmp r0, #0",
+            "0205A6E8 beq #0x205a8b4",
+            "0205A6EC b #0x205a8a4",
+            "0205A6F0 ldr r0, [pc, #0x1f4]",
+            "0205A6F4 bl #0x20546b8",
+            "0205A6F8 cmp r7, #5",
+            "0205A6FC mov r0, r7"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose which ships to add to the new fleet.",
+      "source_meaning": "Select the ships to include in the new fleet.",
+      "context": "The original flow asks for ships after the admiral is accepted. It populates the new fleet from the available ships.",
+      "localization_note": "Restore the purpose of selection so the player knows why the list opened.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 278,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_278",
+      "source_reference": {
+        "block": 4,
+        "offset": 1812,
+        "copy_end": 1844,
+        "bytes": 30,
+        "record_index": 21,
+        "table_offset": 1317692,
+        "start_in_record": 0
+      },
+      "source_hex": "90568acd91e082cc92f193c282f08c8882df82c482ad82be82b382a28149",
+      "clean_Japanese": "新艦隊の提督を決めてください！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1576,
+        "copy_end": 1607,
+        "bytes": 30,
+        "record_index": 28,
+        "table_offset": 1317692,
+        "start_in_record": 0
+      },
+      "current_hex": "43686f6f7365206120666c6565742061646d6972616c2120202020202020",
+      "current_English": "Choose a fleet admiral!       ",
+      "native_callers": [
+        {
+          "call": 33924696,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924680,
+          "exact_hex": "0070a0e310008de50cb0a0e384029fe516e8ffeb00708de50c109de5",
+          "instructions": [
+            "0205A648 mov r7, #0",
+            "0205A64C str r0, [sp, #0x10]",
+            "0205A650 mov fp, #0xc",
+            "0205A654 ldr r0, [pc, #0x284]",
+            "0205A658 bl #0x20546b8",
+            "0205A65C str r7, [sp]",
+            "0205A660 ldr r1, [sp, #0xc]"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose an admiral for the new fleet.",
+      "source_meaning": "Choose the admiral of the new fleet.",
+      "context": "The original admiral list opens before the name confirmation and ship selection.",
+      "localization_note": "Identify the new fleet explicitly and preserve the rank the source uses.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 279,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_279",
+      "source_reference": {
+        "block": 4,
+        "offset": 1844,
+        "copy_end": 1880,
+        "bytes": 34,
+        "record_index": 22,
+        "table_offset": 1317694,
+        "start_in_record": 1
+      },
+      "source_hex": "25730a25730a82f092f193c282c682b582c482e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "%s\n%s\nを提督としてよろしいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1607,
+        "copy_end": 1642,
+        "bytes": 34,
+        "record_index": 29,
+        "table_offset": 1317694,
+        "start_in_record": 0
+      },
+      "current_hex": "204d616b65202573206f662025730a20207468652041646d6972616c3f2020202020",
+      "current_English": " Make %s of %s\n  the Admiral?     ",
+      "native_callers": [
+        {
+          "call": 33924832,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924816,
+          "exact_hex": "31ff2fe10020a0e108029fe50610a0e1e1e7ffeb000050e37100000a",
+          "instructions": [
+            "0205A6D0 blx r1",
+            "0205A6D4 mov r2, r0",
+            "0205A6D8 ldr r0, [pc, #0x208]",
+            "0205A6DC mov r1, r6",
+            "0205A6E0 bl #0x205466c",
+            "0205A6E4 cmp r0, #0",
+            "0205A6E8 beq #0x205a8b4"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Make %s %s the new fleet's admiral?",
+      "source_meaning": "Make the person identified by these two name parts the admiral?",
+      "context": "The original Yes/No call receives the selected crew member's given name and surname in that order.",
+      "localization_note": "Put the two name parts together as a name and identify the job. Remove the invented association implied by 'of'.",
+      "native_substitution_count": 2,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 280,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_280",
+      "source_reference": {
+        "block": 4,
+        "offset": 1880,
+        "copy_end": 1908,
+        "bytes": 28,
+        "record_index": 23,
+        "table_offset": 1317696,
+        "start_in_record": 1
+      },
+      "source_hex": "95d290ac82b782e98acd91e082f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "編成する艦隊を選んでください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1642,
+        "copy_end": 1671,
+        "bytes": 28,
+        "record_index": 30,
+        "table_offset": 1317696,
+        "start_in_record": 0
+      },
+      "current_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669",
+      "current_English": "Trade-good description. Revi",
+      "native_callers": [
+        {
+          "call": 33924328,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924312,
+          "exact_hex": "460fa0e30100000a010055e334009f0572e8ffeb30209fe500008de2",
+          "instructions": [
+            "0205A4D8 mov r0, #0x118",
+            "0205A4DC beq #0x205a4e8",
+            "0205A4E0 cmp r5, #1",
+            "0205A4E4 ldreq r0, [pc, #0x34]",
+            "0205A4E8 bl #0x20546b8",
+            "0205A4EC ldr r2, [pc, #0x30]",
+            "0205A4F0 add r0, sp, #0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose a fleet to reorganize.",
+      "source_meaning": "Choose which fleet to organize.",
+      "context": "The original fleet-list helper selects this when its mode is 0. The reorganize path can then ask whether to change orders.",
+      "localization_note": "Use a clear instruction suited to an existing fleet. Replace the unrelated storage fragment.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 281,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_281",
+      "source_reference": {
+        "block": 4,
+        "offset": 1908,
+        "copy_end": 1936,
+        "bytes": 28,
+        "record_index": 23,
+        "table_offset": 1317698,
+        "start_in_record": 29
+      },
+      "source_hex": "89f08e5582b782e98acd91e082f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "解散する艦隊を選んでください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1671,
+        "copy_end": 1700,
+        "bytes": 28,
+        "record_index": 31,
+        "table_offset": 1317698,
+        "start_in_record": 0
+      },
+      "current_hex": "657720697473207573652c206f726967696e2c20616e642076616c75",
+      "current_English": "ew its use, origin, and valu",
+      "native_callers": [
+        {
+          "call": 33924328,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924312,
+          "exact_hex": "460fa0e30100000a010055e334009f0572e8ffeb30209fe500008de2",
+          "instructions": [
+            "0205A4D8 mov r0, #0x118",
+            "0205A4DC beq #0x205a4e8",
+            "0205A4E0 cmp r5, #1",
+            "0205A4E4 ldreq r0, [pc, #0x34]",
+            "0205A4E8 bl #0x20546b8",
+            "0205A4EC ldr r2, [pc, #0x30]",
+            "0205A4F0 add r0, sp, #0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose a fleet to disband.",
+      "source_meaning": "Choose the fleet to disband.",
+      "context": "The same list helper selects this when its mode is 1. The original flow later asks for confirmation in 285.",
+      "localization_note": "Use the same disband wording as the confirmation. The current storage contains an unrelated fragment.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 282,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_282",
+      "source_reference": {
+        "block": 4,
+        "offset": 1936,
+        "copy_end": 1976,
+        "bytes": 39,
+        "record_index": 23,
+        "table_offset": 1317700,
+        "start_in_record": 57
+      },
+      "source_hex": "96bd97df814596da955782c682b782e98a5882f00a954b82b88c8882df82c482ad82be82b382a2",
+      "clean_Japanese": "命令・目標とする街を\n必ず決めてください",
+      "current_reference": {
+        "block": 4,
+        "offset": 1700,
+        "copy_end": 1740,
+        "bytes": 39,
+        "record_index": 32,
+        "table_offset": 1317700,
+        "start_in_record": 0
+      },
+      "current_hex": "652e0a202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_English": "e.\n                                    ",
+      "native_callers": [
+        {
+          "call": 33925204,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33925188,
+          "exact_hex": "3e00d4e50b0050e30400001a0600a0e197e7ffeb540095e5010050e3",
+          "instructions": [
+            "0205A844 ldrb r0, [r4, #0x3e]",
+            "0205A848 cmp r0, #0xb",
+            "0205A84C bne #0x205a864",
+            "0205A850 mov r0, r6",
+            "0205A854 bl #0x20546b8",
+            "0205A858 ldr r0, [r5, #0x54]",
+            "0205A85C cmp r0, #1"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Choose orders and a target city for the fleet.",
+      "source_meaning": "The fleet must be given orders and a city to target.",
+      "context": "The formation handler repeats its order-and-city menu while the original status remains the unset sentinel.",
+      "localization_note": "Make the missing requirements actionable. Target city covers the distinct patrol, attack, base and port-call routes.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 283,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_283",
+      "source_reference": {
+        "block": 4,
+        "offset": 1976,
+        "copy_end": 2012,
+        "bytes": 34,
+        "record_index": 24,
+        "table_offset": 1317702,
+        "start_in_record": 0
+      },
+      "source_hex": "95d290ac82b582bd8acd91e082cc96bd97df82f095cf8d5882b582dc82b782a98148",
+      "clean_Japanese": "編成した艦隊の命令を変更しますか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1740,
+        "copy_end": 1775,
+        "bytes": 34,
+        "record_index": 33,
+        "table_offset": 1317702,
+        "start_in_record": 0
+      },
+      "current_hex": "4368616e6765207468697320666c6565742773206f72646572733f20202020202020",
+      "current_English": "Change this fleet's orders?       ",
+      "native_callers": [
+        {
+          "call": 33924228,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33924212,
+          "exact_hex": "f6ffffba0400a0e1886fffeb28009fe578e8ffeb000050e314d08d02",
+          "instructions": [
+            "0205A474 blt #0x205a454",
+            "0205A478 mov r0, r4",
+            "0205A47C bl #0x20362a4",
+            "0205A480 ldr r0, [pc, #0x28]",
+            "0205A484 bl #0x205466c",
+            "0205A488 cmp r0, #0",
+            "0205A48C addeq sp, sp, #0x14"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Change this fleet's orders?",
+      "source_meaning": "The game asks whether to change the newly organized fleet's orders.",
+      "context": "The native reorganize flow asks this after setting up the selected fleet's ships. Yes opens orders; No skips that menu.",
+      "localization_note": "The current question is concise and identifies the selected fleet.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 285,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_285",
+      "source_reference": {
+        "block": 4,
+        "offset": 2084,
+        "copy_end": 2116,
+        "bytes": 32,
+        "record_index": 26,
+        "table_offset": 1317706,
+        "start_in_record": 2
+      },
+      "source_hex": "82b182cc8acd91e082f089f08e5582b582c482e082a282a282c582b782a98148",
+      "clean_Japanese": "この艦隊を解散してもいいですか？",
+      "current_reference": {
+        "block": 4,
+        "offset": 1845,
+        "copy_end": 1865,
+        "bytes": 19,
+        "record_index": 35,
+        "table_offset": 1317706,
+        "start_in_record": 0
+      },
+      "current_hex": "44697362616e64207468697320666c6565743f",
+      "current_English": "Disband this fleet?",
+      "native_callers": [
+        {
+          "call": 33923876,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33923860,
+          "exact_hex": "6b8affeb0600a0e1de95ffeb58009fe5d0e8ffeb000050e3f081bd08",
+          "instructions": [
+            "0205A314 bl #0x203ccc8",
+            "0205A318 mov r0, r6",
+            "0205A31C bl #0x203fa9c",
+            "0205A320 ldr r0, [pc, #0x58]",
+            "0205A324 bl #0x205466c",
+            "0205A328 cmp r0, #0",
+            "0205A32C popeq {r4, r5, r6, r7, r8, pc}"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "Disband this fleet?",
+      "source_meaning": "The game asks whether to disband the selected fleet.",
+      "context": "The original confirmation follows fleet selection. No returns without disbanding; Yes shows the separate dock result.",
+      "localization_note": "The current question is natural. Keep the effect on individual ships in the follow-up.",
+      "native_substitution_count": 0,
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "message_ID": 286,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_286",
+      "source_reference": {
+        "block": 4,
+        "offset": 2116,
+        "copy_end": 2144,
+        "bytes": 28,
+        "record_index": 26,
+        "table_offset": 1317708,
+        "start_in_record": 34
+      },
+      "source_hex": "8a65914482cd83688362834e82c9976182af82c482a882ab82dc82b7",
+      "clean_Japanese": "各船はドックに預けておきます",
+      "current_reference": {
+        "block": 4,
+        "offset": 1865,
+        "copy_end": 1896,
+        "bytes": 30,
+        "record_index": 36,
+        "table_offset": 1317708,
+        "start_in_record": 0
+      },
+      "current_hex": "5765276c6c206c656176652065616368207368697020696e20646f636b2e",
+      "current_English": "We'll leave each ship in dock.",
+      "native_callers": [
+        {
+          "call": 33923892,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 33923876,
+          "exact_hex": "d0e8ffeb000050e3f081bd084c009fe5dfe8ffeba97001eb0010a0e1",
+          "instructions": [
+            "0205A324 bl #0x205466c",
+            "0205A328 cmp r0, #0",
+            "0205A32C popeq {r4, r5, r6, r7, r8, pc}",
+            "0205A330 ldr r0, [pc, #0x4c]",
+            "0205A334 bl #0x20546b8",
+            "0205A338 bl #0x20b65e4",
+            "0205A33C mov r1, r0"
+          ]
+        }
+      ],
+      "new_credit": 0,
+      "speaker": "System",
+      "english": "We'll put all the ships in the dock.",
+      "source_meaning": "Each ship will be left in dock.",
+      "context": "The original follow-up plays only after the player confirms disbandment and immediately precedes the dock transfer.",
+      "localization_note": "Make the destination clear and account for every ship. Use the established dock term.",
+      "native_substitution_count": 0,
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "already_credited_context": [
+    {
+      "message_ID": 267,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_267",
+      "source_reference": {
+        "block": 4,
+        "offset": 1424,
+        "copy_end": 1456,
+        "bytes": 30,
+        "record_index": 14,
+        "table_offset": 1317670,
+        "start_in_record": 1
+      },
+      "source_hex": "82b182ea88c88fe382cd914482f08f8895aa82c582ab82dc82b982f18149",
+      "clean_Japanese": "これ以上は船を処分できません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1150,
+        "copy_end": 1181,
+        "bytes": 30,
+        "record_index": 17,
+        "table_offset": 1317670,
+        "start_in_record": 0
+      },
+      "current_hex": "596f752063616e27742073656c6c20616e79206d6f726520736869707321",
+      "current_English": "You can't sell any more ships!",
+      "native_callers": [],
+      "new_credit": 0
+    }
+  ],
+  "pending_consumer": [
+    {
+      "message_ID": 284,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "id": "COMMON_MESSAGE_284",
+      "source_reference": {
+        "block": 4,
+        "offset": 2012,
+        "copy_end": 2084,
+        "bytes": 69,
+        "record_index": 25,
+        "table_offset": 1317704,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8acd91e082cd90d48e9a82c582b781428acd91e082cc8ed88be082f00a95d48dcf82c582ab82e982d982c782cc8f8a8e9d8be082aa82a082e882dc82b982f18149",
+      "clean_Japanese": "その艦隊は赤字です。艦隊の借金を\n返済できるほどの所持金がありません！",
+      "current_reference": {
+        "block": 4,
+        "offset": 1775,
+        "copy_end": 1845,
+        "bytes": 69,
+        "record_index": 34,
+        "table_offset": 1317704,
+        "start_in_record": 0
+      },
+      "current_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669657720697473207573652c206f726967696e2c20616e642076616c75652e0a20202020202020202020",
+      "current_English": "Trade-good description. Review its use, origin, and value.\n          ",
+      "native_callers": [],
+      "new_credit": 0,
+      "english": "This fleet is in the red, and you don't have enough money to cover its debt.",
+      "source_meaning": "The fleet is running a deficit and the player does not have enough money to pay off its debt.",
+      "context": "The current storage is unrelated. The DS disband routine's adjacent call to 0203FA9C returns immediately; no source-qualified caller for 284 has been established."
+    }
+  ],
+  "clean_current_supporting_spans": [
+    {
+      "runtime_address": 33960880,
+      "exact_hex": "a7df8d12f08fbd180000a0e342bfa0e30150a0e318008de5"
+    },
+    {
+      "runtime_address": 33961232,
+      "exact_hex": "f08fbde80b00a0e166c4ffeb18009fe5540090e5010050e3"
+    },
+    {
+      "runtime_address": 33924284,
+      "exact_hex": "0150a0e100108de2170000eb0040a0e1000054e30f0000da000055e3460fa0e30100000a010055e334009f0572e8ffeb30209fe500008de20410a0e1ba0101eb0010e0e3010050e100108d121cd08d12000191173080bd184000a0e31cd08de23080bde819010000"
+    },
+    {
+      "runtime_address": 33925160,
+      "exact_hex": "c4609fe50070a0e30900a0e10710a0e10720a0e10730a0e1d0c000eb3e00d4e50b0050e30400001a0600a0e197e7ffeb540095e5010050e3f2ffff0a"
+    },
+    {
+      "runtime_address": 33925364,
+      "exact_hex": "1a010000"
+    },
+    {
+      "runtime_address": 33924740,
+      "exact_hex": "f80100eb000050e38800000abbc201eb0060a0e1e99200eb000058e13c029f0500a086000400861288a280100a00a0e1001090e5201091e531ff2fe10060a0e10a00a0e1001090e5241091e531ff2fe10020a0e108029fe50610a0e1e1e7ffeb000050e3"
+    },
+    {
+      "runtime_address": 33924560,
+      "exact_hex": "042084e24c10a0e3912020e0b989ffebec129fe5010050e10300002ae4029fe530e8ffebdbdf8de2f08fbde8e9c201ebcf4fffeb0090a0e1400059e30300001a450fa0e327e8ffebdbdf8de2f08fbde8"
+    },
+    {
+      "runtime_address": 33925332,
+      "exact_hex": "a086010013010000"
+    },
+    {
+      "runtime_address": 33815196,
+      "exact_hex": "1eff2fe1"
+    }
+  ],
+  "registered_predecessor": "out\\equipment_system_registered_20261111_v1\\Translation_DS_All_Routes_Equipment_System_20261111_candidate.nds",
+  "registered_predecessor_sha256": "b20603fcb9c5819cd6907a7a09c15908e9b6256537ad53beed5f5602a4003263",
+  "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "source_and_context_ready": true,
+  "new_completion_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "releases\\all_routes_editorial_20261111_equipment_system_candidate\\verification\\registered_release_verification.json": "7c208b597040ea4abf528418d76ab4896e9c3a18928ad4d6d26ece0845a6b384",
+    "work\\analysis\\native_common_arm_calls_wrappers_clean.json": "b93f7a8a15ebaf2126d60521a1e61c75867687ecca72384a121eacbbca756bab",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\review_shipyard_fleet_setup_v1.py": "917038a67f708320adaf8eb9d23df5196ed4af08f9b164ea0651f6ea70003da8"
+  }
+}

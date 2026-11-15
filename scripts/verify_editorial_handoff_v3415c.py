@@ -1,0 +1,30 @@
+"""Independently verify repaired hook provenance andunchanged48-review coverage."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/editorial_handoff_verification_v3415c');CHECKPOINT=Path('work/analysis/lil_B137_hook_repair_checkpoint_v3415b')
+if __name__=='__main__':
+    assert not ROOT.exists();rp=CHECKPOINT/'checkpoint_receipt.json';receipt=read(rp)
+    for kind in ['evidence','updated_files']:
+        for p,digest in receipt[kind].items():assert sha(Path(p).read_bytes())==digest,(kind,p)
+    lp=Path('translations/editorial_review_current_v1.json');ledger=read(lp);before=read(CHECKPOINT/'editorial_review_current_v1.json.before');prior=read(receipt['prior_verified_handoff']);assert sha((CHECKPOINT/'editorial_review_current_v1.json.before').read_bytes())==prior['ledger_sha256'] and sha(Path(prior['handoff_receipt']).read_bytes())==prior['handoff_receipt_sha256']
+    for p,digest in read(prior['handoff_receipt'])['updated_files'].items():
+        saved=CHECKPOINT/(Path(p).name+'.before');assert sha((saved if saved.exists() else Path(p)).read_bytes())==digest
+    changed={'lil_B137_registered_hook_repair_v3415','unfinished_editorial_scope_v3415','coverage_units','lil_B137_hook_repair_checkpoint_v3415','latest_checkpoint'}
+    assert all(ledger[k]==v for k,v in before.items() if k not in changed) and set(ledger)-set(before)==changed-{'coverage_units','latest_checkpoint'}
+    lead=ledger['lil_B137_registered_hook_repair_v3415'];reg=read(lead['registration']);registry=read('translations/release_stack.json');regroot=Path(lead['registration']).parent;oldroot=Path('work/analysis/lil_B137_registration_v3408b')
+    assert sha(Path('translations/release_stack.json').read_bytes())==reg['release_stack_sha256'] and sha(Path('scripts/build_integrated_release.py').read_bytes())==reg['builder_sha256'] and len(registry['accepted_layers'])==114 and registry['latest_promoted_build']['profile']=='all-routes-unified-v1492'
+    restored=deepcopy(registry);profile=restored['profiles'].pop('all-routes-unified-v3416');assert restored==read(regroot/'registry_before_raw.json') and profile['lil_B137_editorial_v2']==reg['config'] and 'lil_B137_editorial' not in profile
+    old=read(oldroot/'registration_receipt.json');assert registry['profiles']['all-routes-unified-v3409']==read(regroot/'registry_before_raw.json')['profiles']['all-routes-unified-v3409'] and sha((regroot/'registry_before_raw.json').read_bytes())==old['release_stack_sha256']
+    builder=Path('scripts/build_integrated_release.py').read_bytes();stage=(regroot/'builder_added_optional_stage.bin').read_bytes();oldstage=(oldroot/'builder_added_optional_stage.bin').read_bytes();assert builder.count(stage)==builder.count(oldstage)==1 and builder.replace(stage,b'',1)==(regroot/'builder_before.py').read_bytes() and b"profile_config.get('lil_B137_editorial_v2')" in stage and b'from dk4tool.patch.lil_B137_editorial_v2 import' in stage and b'from dk4tool.patch.lil_B137_editorial_v1 import' in oldstage
+    failed=read(lead['failed_build']);assert failed['terminal'] and failed['returncode']==1 and not failed['candidate_exists'] and not Path(failed['candidate']).exists() and sha(Path(failed['log']).read_bytes())==failed['log_sha256']
+    conf=read(reg['config']);assert sha(Path(reg['compiler']).read_bytes())==reg['compiler_sha256']==conf['dependencies'][reg['compiler']] and conf==read(oldroot/'positive_config.json') and sha(Path(reg['config']).read_bytes())==old['config_sha256']
+    assert read(regroot/'positive_reconstruction.json')==read(oldroot/'positive_reconstruction.json') and len(read(regroot/'negative_cases.json')['cases'])==28 and (regroot/'negative_cases.json').read_bytes()==Path(reg['reused_negative_proof']).read_bytes()
+    c=ledger['current_integrated_candidate'];release=read('work/analysis/lil_B135_B136_release_v3373/registered_release_verification.json');manifest=read(c['manifest']);assert sha(Path(c['path']).read_bytes())==c['sha256']==release['candidate_sha256'] and sha(Path(c['patch']).read_bytes())==c['patch_sha256']==release['patch_sha256'] and Path(release['exact_patch_reconstruction']).read_bytes()==Path(c['path']).read_bytes() and manifest['release_stack_sha256']==sha((oldroot/'registry_before_raw.json').read_bytes())
+    fresh=ledger['contextual_story_natural_dialogue_pass_v1871'];assert (fresh['fresh_pass_records_explicitly_reread'],fresh['fresh_pass_records_integrated'],fresh['fresh_pass_records_pending_native_actual_release'])==(4880,4832,48) and ledger['records_with_source_and_prose_pass']==4883 and ledger['goal_status']=='active' and not ledger['full_goal_complete']
+    inventory=read(ledger['unfinished_editorial_scope_v3415']['path']);oldinv=read(before['unfinished_editorial_scope_v3399']['path'])
+    for k,v in oldinv.items():
+        if k!='next_focus':assert inventory[k]==v,k
+    ROOT.mkdir(parents=True);save(ROOT/'verified_handoff.json',dict(checkpoint='V3415',ledger=str(lp),ledger_sha256=sha(lp.read_bytes()),handoff_receipt=str(rp),handoff_receipt_sha256=sha(rp.read_bytes()),fresh_records=4880,fresh_integrated=4832,fresh_pending=48,source_prose=4883,completed_records=4832,historical_revised=3185,historical_retained=1647,new_source_prose_reviews=0,new_completed_records=0,next_profile='all-routes-unified-v3416',validated_v2_hook_and_failed_v1_profile_both_preserved=True,positive_reconstruction_and28_exact_hash_reused_negatives_verified=True,prior48_editorial_native_reference_approvals_and_fullscope_unchanged=True,prior_release_ledger_and_document_hash_chains_verified=True,candidate=c['path'],candidate_sha256=c['sha256'],all_jobs_terminal=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+    print('IndependentV3415audit passes:separate validatedv2 hook,failedV3409 preservation,positive48-target reconstruction/28hash-bound negatives. Coverage4880/4832/48unchanged;buildV3416pending.')

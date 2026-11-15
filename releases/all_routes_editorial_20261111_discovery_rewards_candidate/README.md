@@ -1,0 +1,7 @@
+# All Routes Discovery and Rewards candidate
+
+Use the local ROM `out/discovery_rewards_registered_20261111_v1/Translation_DS_All_Routes_Discovery_Rewards_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `e410edbd2526b4ab9329224e891bc864f0ac9c048d759895cb576268d6e44b9d` byte for byte. Patch SHA-256 is `9524c169f5b4ec2b9a5e43094f650201ad8816e0921293d07bcaf488ca1db2e2`.
+
+The 14 discovery and reward notices are registered. The ledger now credits 26,371 reviews. Twelve revisions and two justified retentions cover discoveries, the Auto Move confirmation, captured gold and supplies, and acquisitions. The food and water notice preserves both native amounts and the barrel unit for each. The original discovery and crew-recruitment wording earned retention.
+
+The original Riga replay verified the complete “Stop Auto Move?” prompt and return to manual sailing. At Inuvik, the ship-position fixture led into the original discovery, docking, resupply, and village menu return. All 31 stored display variants were visually reviewed. The remaining notices passed offline checks, including the original composed-name substitution. All 81 release checks, 30 targeted tests, cold startup, and 24 protected name getters passed. [Gameplay proof](verification/discovery_rewards_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

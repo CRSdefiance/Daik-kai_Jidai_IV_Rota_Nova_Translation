@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v108"]["batches"]);b.append("translations/maria_deep_route_v109.json");p["profiles"]["maria-deep-route-v109"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V108 with 60 records across four optional item and equipment leads in SC3 blocks 175, 180, 189, and 199."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v109: {len(b)} batches")

@@ -1,0 +1,13 @@
+"""Prepare individual formatting gates; actual captures and viewing remain required."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive,checked_text
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B230_final_approval_tools_v7457')
+if __name__=='__main__':
+    assert not ROOT.exists();src=Path('scripts/record_lil_B229_English_view_v7409.py').read_text('utf8');view={'B229':'B230','final_paths_v7409':'final_paths_v7457','event229':'event230','88/151 late RGB':'all measured late RGB differences'}
+    src2=Path('scripts/approve_lil_B229_native_v7410.py').read_text('utf8');oldreason=src2[src2.index("formatting_reason='Seventeen"):src2.index('\n    assert Counter')]
+    reason="formatting_reason='Seventeen complete original216x64/four-row pages pass136 logical/compiled and68 stored alignments,including6 zero-ink parity tails. All17 actual English pages,67 body67 progressive headers,28 original/initializer commands andnormal return pass andwere viewed. Seven informational row reasons preserve all base QA;zero errors,warnings orwaivers. Complete glyphs,guards,bounds,pair phase andprogressive names pass. Exact item52 Phoenix Bascinet,iron flame-forging report,name uncertainty,Britain clue andpersonal determined vow remain bound. Full Samwell catalogue middle stays unapproved. All measured late differences andinitialized-scene limits remain explicit;atomic registered release,exact patch andcurrent startup arepending.')"
+    approve={oldreason:reason,'B229':'B230','final_paths_v7409':'final_paths_v7457',"len(q['row_count_reasons'])==5":"len(q['row_count_reasons'])==7","s['zero_ink_parity_tail_count']==8":"s['zero_ink_parity_tail_count']==6","{'revise':6,'retain-wording':11}":"{'revise':9,'retain-wording':8}",'revision_count=6,retention_count=11':'revision_count=9,retention_count=8','zero_ink_parity_tails=8':'zero_ink_parity_tails=6','five_row_reasons':'seven_row_reasons','6 revisions/11 retentions':'9 revisions/8 retentions'}
+    jobs=[('scripts/record_lil_B229_English_view_v7409.py','scripts/record_lil_B230_English_view_v7457.py',view),('scripts/approve_lil_B229_native_v7410.py','scripts/approve_lil_B230_native_v7458.py',approve)]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    rows=[derive(*j) for j in jobs];ROOT.mkdir(parents=True);save(ROOT/'source_locked_view_andapproval_tools.json',dict(tools=rows,all17_actual_complete_English_pages67_body67_header_holds_andfive_final_sheets_required=True,viewing_not_implied_by_tool_preparation=True,nine_revisions_eight_retentions_seven_row_reasons_six_zero_ink_tails_required=True,no_registered_release_orcredit_approval=True,new_credit=0,full_goal_complete=False))

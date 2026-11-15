@@ -1,0 +1,37 @@
+"""Record whole-exchange source/current findings without prematurely approving new prose."""
+from copy import deepcopy
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/papal_trade_SC0_SC1_findings_v7621')
+CURRENT=Path('work/analysis/papal_trade_SC0_SC1_current_v7620/two_complete_current_exchanges36_source_current_refs_before_new_prose.json')
+FINDINGS={
+5:'The original three CP932 ellipses convey distracted silence andremain a plausible retention. Preserve all glyphs andthe meaningful pause;native body/header/actual palette scope still needs exact counterpart binding.',
+9:'Why so vacant sounds unnatural as familiar concern. Restore orretain the explicit フィリポ address after alias/name-consumer binding. SC0 erases it as friend;SC1 stores a full-width initial F. This is a source-bound spoken alias,not authority to rename a shared Trader label.',
+12:'The warm Huh? Carlo recognition andreturn question remain a plausible retention in the complete banter. Review the merchant voice andsurprise incontext rather than changing a working line solely for consistency with B234.',
+16:'Preserve the incidental business stop,familiar teasing andcustomer warning. SC0 again erases Filippo;SC1 stores the full-width initial. The vacant-look phrasing needs a natural spoken review. No illness,stupidity,family relationship ornew transaction is supported.',
+19:'The sharp-tongue observation works as familiar teasing,but means you have recovered makes the inference more certain than どうやら/みたい. Preserve the friendly turn andrestore tentative recovery without inventing a cause.',
+23:'This man is an unnatural raw first-person self-reference for this source exchange. Restore the return to active life andexplicitly being aboard the companions ship;merely sails with these people can mean a convoy. Do not infer the technical origin of This man until the actual processor is bound.',
+26:'The great-grandfather relationship is explicit andcorrectly present. Preserve it as the merchant relative,with the apology anddistraction,butreview This man self-reference andthe clipped account as a complete natural sentence. No kinship with Carlo follows from the role label.',
+29:'What story? is a plausible natural short invitation to explain in this complete exchange. Retention needs its own final contextual reason,not automatic inheritance from an earlier technical gate.',
+33:'Papal States andalmost to Venice preserve useful territorial context,butdirect rule 直轄 is lost. Restore that fact without claiming Venice itself was ruled by the pope,changing history,adding a date orassuming the current scene location.',
+37:'This man has heard is an unnatural raw first-person recollection. Preserve the hearing/reporting layers andtrade prosperity at peak papal power,without converting the historical account into a present market mechanic.',
+40:'The existing sentence preserves competition over both kinds andquantities of donations. Review Princes against the broader 諸侯 incontext before retaining it orchoosing lords;do not assign a princely rank to an individual NPC orreplace donations with taxes/bribes.',
+43:'Our ancestors can imply shared ancestry with Carlo. From one lord to another adds a specific transfer route that the source right-to-left commercial idiom doesnot state. Preserve the merchant ancestors,large profits,goods passing along andtrailing contrast without that invented routing.',
+47:'Papal authority faded andcommerce fell away remain a plausible natural cooperative completion. Confirm that fell away conveys decline rather than complete disappearance,andretain if it works in the full exchange.',
+51:'The rueful return to earning a living remains,butthe explicit great-grandfather generation andenvy have been flattened to Those ancestors had it easy. Restore the family comparison naturally without adding poverty,laziness orcurrent guaranteed profit.',
+54:'The earlier personal I have heard qualification is lost. Relics may overstate a general object linked to the pope as a sacred relic;review that implication against the complete source. Preserve occasional reported finds andformer papal territory without a confirmed site orauthenticity claim.',
+57:'The current possession statement loses the reported-use qualification andthe opening hearsay agreement. Restore prospective blessings andthe rueful divine-favor wish in natural first person;This man is a raw wording issue,not an established character mannerism orproved parser cause.',
+60:'Divine aid is a plausible concise reflective response in the papal/religious context. Review its connection to the final preceding wish before retaining orrewording;preserve the religious sense andreflective turn without adding a prayer orconversion.',
+64:'The courteous Admiral address andmay be no joke can work,butthe source explicitly conditions the discovery on finding the favored object. Restore that condition;do not invent possession,a formal title,particular pope,guaranteed reward orprecise site.',
+}
+if __name__=='__main__':
+    assert not ROOT.exists();d=read(CURRENT);assert d['all36_clean_Japanese_gloss_bindings_precede_first_other_route_current_English_comparison'] and len(d['records'])==36
+    rows=[]
+    for r in d['records']:
+        row=deepcopy(r);index=r['source_record_index'];assert index in FINDINGS and row['source_gloss'] and row['source_Japanese']
+        row.update(raw_source_current_editorial_finding=FINDINGS[index],finding_scope='complete-clean-exchange-andexact-current-storage;effective runtime/voice/getter/entry/display not yet approved',candidate_retention_requires_individual_final_decision=index in [5,12,29,47,60],formal_editorial_decision=None,new_English_prose_not_yet_authored=True,review=dict(source=True,context=False,localization=False,naturalness=False,formatting=False),source_prose_or_completion_credit_added=0)
+        rows.append(row)
+    ROOT.mkdir(parents=True);output=ROOT/'all36_whole_exchange_raw_findings_andcandidate_retentions_native_consumers_pending.json'
+    save(output,dict(current_source_packet=str(CURRENT),current_source_packet_sha256=sha(CURRENT.read_bytes()),current_ROM=d['current_ROM'],current_ROM_sha256=d['current_ROM_sha256'],records=rows,whole_source_exchanges_reviewed=2,file_qualified_source_current_references=36,source_gloss_reuse_exact_whole_Japanese_blocks_not_English_derived=True,current_first_person_This_man_phrasing_andfull_width_F_are_raw_findings_not_proved_runtime_causes=True,Rafael_Filippo_address_erased_Maria_full_width_initial_is_source_bound_alias_lead_not_shared_role_relabel=True,reported_qualifications_direct_rule_family_comparison_andconditional_discovery_need_review=True,working_lines_candidate_retention_only_not_final_approval=True,route_specific_effective_body_name_voice_EV_entry_native_actual_andrelease_gates_pending=True,no_new_English_manuscript_or_approved_revision_retention_count=True,no_other_route_actual_gameplay_claim=True,no_duplicate_B234_credit=True,new_source_prose_reviews=0,new_completed_records=0,new_credit=0,producer_sha256=sha(Path(__file__).read_bytes()),full_editorial_goal_active=True,full_goal_complete=False))
+    print('36 raw source/current findings saved;first-person,alias,width,reported-claim andcondition leads scoped. Working lines marked only as retention candidates;new prose/native/route-entry approval pending;zero credit.')

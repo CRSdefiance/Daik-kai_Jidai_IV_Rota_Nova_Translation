@@ -1,0 +1,7 @@
+# All Routes Figurehead, Navigation and Gift Cards candidate
+
+Use the local ROM `out/figurehead_navigation_gift_cards_registered_20261111_v1/Translation_DS_All_Routes_Figurehead_Navigation_Gift_Cards_20261111_candidate.nds` with its build manifest. The [clean-input patch](translation.xdelta) reconstructs it byte for byte from Japanese ROM SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `494f780083bc09160a9b892fa7104ffdc771fdcdac36d783edf1a5b0492c4e33`. Patch SHA-256 is `330ea55be13426b1dace1d660ee1e58abbaedb2c719d2f5febb6cc75fc1d2dde`.
+
+The figurehead, navigation and gift batch is registered. The ledger now credits 26,681 reviews. The 33 new reviews comprise nine figureheads, three navigation instruments and 21 gifts. Twenty-one descriptions were revised and 12 wordings were retained with individual reasons. The full-width capital I on Shakuntala was corrected. Shachihoko's existing review, pointer and descriptions were preserved.
+
+Both item views passed 132 native render cases, 66 visual previews and all 218 description getters. The original Items replay showed Eagle Figurehead, Sextant and Frozen Rose, then returned to Lisbon. The save already held the Sextant, and an isolated inventory transfer supplied the other two. The other 30 cards were checked offline. All 91 release checks, 34 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/figurehead_navigation_gift_gameplay_verification.json) · [Exact record review](verification/registered_review.json)

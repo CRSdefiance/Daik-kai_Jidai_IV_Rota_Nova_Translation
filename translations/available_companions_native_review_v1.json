@@ -1,0 +1,371 @@
+{
+  "status": "reviewed-native-companion-layout-gameplay-pending",
+  "source_arm9_sha256": "5939d4730b0a30ae68f9dc4c98b9170a807b3f54d1af4670607148005b6d9ab8",
+  "research_arm9_sha256": "33dc6e6ac7ababb513a773647edd6f93cb5c08b19fad2500e7695f95d8629d75",
+  "allocation": {
+    "source_span": [
+      1280012,
+      1280148
+    ],
+    "used_aligned_bytes": 108,
+    "owned_bytes": 136,
+    "moves": [
+      {
+        "old_offset": 1280012,
+        "new_offset": 1280012,
+        "field_offset": 261452,
+        "source_capacity": 56,
+        "original_allocation_hex": "5361696c696e672048656c702069732025732e204368616e676520746f2025733f0000000000000000000000000000000000000000000000",
+        "complete_text": "Sailing Help is %s. Change to %s?"
+      },
+      {
+        "old_offset": 1280068,
+        "new_offset": 1280048,
+        "field_offset": 261584,
+        "source_capacity": 52,
+        "original_allocation_hex": "5265706f727473206172652025732e204368616e676520746f2025733f0000000000000000000000000000000000000000000000",
+        "complete_text": "Reports are %s. Change to %s?"
+      },
+      {
+        "old_offset": 1280120,
+        "new_offset": 1280080,
+        "field_offset": 264396,
+        "source_capacity": 8,
+        "original_allocation_hex": "81692573816a0000",
+        "complete_text": "（%s）"
+      },
+      {
+        "old_offset": 1280128,
+        "new_offset": 1280088,
+        "field_offset": 265200,
+        "source_capacity": 20,
+        "original_allocation_hex": "92878ad482aa82a282dc82b982f1814900000000",
+        "complete_text": "No companions are available!"
+      }
+    ],
+    "references": [
+      [
+        "arm9",
+        261452,
+        1280012
+      ],
+      [
+        "arm9",
+        261584,
+        1280068
+      ],
+      [
+        "arm9",
+        264396,
+        1280120
+      ],
+      [
+        "arm9",
+        265200,
+        1280128
+      ]
+    ],
+    "all_other_arm9_bytes_preserved": true
+  },
+  "native_empty_branch": {
+    "complete_text": "No companions are available!",
+    "native_zero_count_branch_formatter_and_macros_verified": true,
+    "native_empty_return_zero_and_stack_preserved": true,
+    "positive_count_bypasses_error": true,
+    "limits": "Filtered list count supplied as a fixture; actual enumeration/backend and modal widgets/dismissal remain unexecuted."
+  },
+  "inherited_options_cases": [
+    {
+      "kind": "sailing",
+      "flags": 0,
+      "complete_prepared_text": "Sailing Help is Off. Change to On?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 1,
+      "complete_prepared_text": "Sailing Help is Off. Change to On?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 2,
+      "complete_prepared_text": "Sailing Help is On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 3,
+      "complete_prepared_text": "Sailing Help is On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 255,
+      "complete_prepared_text": "Sailing Help is On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "reports",
+      "flags": 0,
+      "complete_prepared_text": "Reports are Off. Change to On?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "reports",
+      "flags": 1,
+      "complete_prepared_text": "Reports are On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "reports",
+      "flags": 2,
+      "complete_prepared_text": "Reports are Off. Change to On?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "reports",
+      "flags": 3,
+      "complete_prepared_text": "Reports are On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    },
+    {
+      "kind": "reports",
+      "flags": 255,
+      "complete_prepared_text": "Reports are On. Change to Off?",
+      "current_and_proposed_state_order_preserved": true,
+      "preference_unchanged": true
+    }
+  ],
+  "native_options_response_cases": [
+    {
+      "kind": "sailing",
+      "flags": 0,
+      "accepted": false,
+      "result_flags": 0,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 0,
+      "accepted": true,
+      "result_flags": 2,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 1,
+      "accepted": false,
+      "result_flags": 1,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 1,
+      "accepted": true,
+      "result_flags": 3,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 2,
+      "accepted": false,
+      "result_flags": 2,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 2,
+      "accepted": true,
+      "result_flags": 0,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 3,
+      "accepted": false,
+      "result_flags": 3,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 3,
+      "accepted": true,
+      "result_flags": 1,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 255,
+      "accepted": false,
+      "result_flags": 255,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "sailing",
+      "flags": 255,
+      "accepted": true,
+      "result_flags": 253,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 0,
+      "accepted": false,
+      "result_flags": 0,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 0,
+      "accepted": true,
+      "result_flags": 1,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 1,
+      "accepted": false,
+      "result_flags": 1,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 1,
+      "accepted": true,
+      "result_flags": 0,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 2,
+      "accepted": false,
+      "result_flags": 2,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 2,
+      "accepted": true,
+      "result_flags": 3,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 3,
+      "accepted": false,
+      "result_flags": 3,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 3,
+      "accepted": true,
+      "result_flags": 2,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 255,
+      "accepted": false,
+      "result_flags": 255,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    },
+    {
+      "kind": "reports",
+      "flags": 255,
+      "accepted": true,
+      "result_flags": 254,
+      "unrelated_bits_and_cancel_behavior_preserved": true
+    }
+  ],
+  "native_parenthesized_format_cases": [
+    {
+      "name": "",
+      "complete_prepared_text": "（）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    },
+    {
+      "name": "A",
+      "complete_prepared_text": "（A）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    },
+    {
+      "name": "Even",
+      "complete_prepared_text": "（Even）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    },
+    {
+      "name": "Fleet",
+      "complete_prepared_text": "（Fleet）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    },
+    {
+      "name": "海",
+      "complete_prepared_text": "（海）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    },
+    {
+      "name": "Indigo海",
+      "complete_prepared_text": "（Indigo海）",
+      "actual_neighboring_literal_varargs_and_formatter_preserved": true
+    }
+  ],
+  "pixel_cases": [
+    {
+      "mode": 4,
+      "pixels_sha256": "1bc0f412f0f6a79584dbd287e87a40863979d0ebb46cd6aaf6cc798389ec49d4",
+      "single_row_complete_glyphs_and_independent_pixels": true
+    },
+    {
+      "mode": 16,
+      "pixels_sha256": "8c928c3af568fe658efce0edfdc37caa87b436171b869aa6ff260c0ceaaa49a5",
+      "single_row_complete_glyphs_and_independent_pixels": true
+    }
+  ],
+  "consumer_locks": [
+    {
+      "start": 264836,
+      "end": 265204,
+      "sha256": "763e2721b891c21e75a971439fa60aa0f89d72640813d57fe77c019d54ed5851"
+    },
+    {
+      "start": 264328,
+      "end": 264400,
+      "sha256": "990d39f257d7b621ad4cc6090f34defd62d4b5409648b55fb9a38fc4b24a03c2"
+    },
+    {
+      "start": 261328,
+      "end": 261452,
+      "sha256": "69fd8daae57f3f00acc76f370e0d72ba70062aa15a35a36257f6934c5a0dab79"
+    },
+    {
+      "start": 261460,
+      "end": 261584,
+      "sha256": "4d76a454d4234958b5aa681c595257806f70c4da0150a7316728a289e2657550"
+    }
+  ],
+  "candidate_changed": false,
+  "runtime_verified": false,
+  "limits": [
+    "Native preparation and raster are separate executions.",
+    "Filtered list count supplied as a fixture; actual enumeration/backend and modal widgets/dismissal remain unexecuted.",
+    "Full Options/parenthesized-format physical presentation and gameplay remain pending."
+  ],
+  "native_ink_visual_review": {
+    "panels_reviewed": 1,
+    "single_row_full_sentence_exclamation_and_leading_final_glyphs": true,
+    "native_sheet_sha256": "2ce688c7fb953265982d468bcb9223438830220dce115fa6661f4e7c8e20e18c",
+    "physical_presentation_review": false
+  },
+  "canonical_acceptance": false
+}

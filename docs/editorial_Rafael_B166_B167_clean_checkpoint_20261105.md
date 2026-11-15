@@ -1,0 +1,7 @@
+# Rafael B166 and B167 clean-first checkpoint
+
+All [136 B166 drafts](../work/analysis/Rafael_B161_B180_clean_20261105/B166_clean_drafts_v1.json) cover the royal audience, Claudio and Eirene’s private conversation, the crew’s reactions and the closing expedition and letter. Charlotte’s deliberately halting Portuguese, its phonetic aid and the separate translated reading are distinct source records. The Eirene name heading, alternating staged dialogue and letter need scoped FE layout checks after current comparison.
+
+The [50 B167 drafts](../work/analysis/Rafael_B161_B180_clean_20261105/B167_clean_drafts_v1.json) cover Al’s dismissal and recruitment, including Claudio and Julio’s alternative advice. Qualify Al’s full name against the established name fields before final review. These drafts grant no approval or editorial credit. The 305 B168–B176 records remain at clean inventory, and all 491 B166–B176 current comparisons remain open.
+
+B161–B165 has [67 complete research reviews](editorial_Rafael_B161_B165_research_ready_20261105.md). The registered append passed ten semantic and ordering rejections and ten resume rejections. An initial v6 build reached the manifest writer and failed on the 265-character Windows path. The versioned retry uses a shorter work directory and preserves the first attempt and original guards. The release, exact patch and own startup must pass before credit. The designated main and weekend ZIP are preserved.

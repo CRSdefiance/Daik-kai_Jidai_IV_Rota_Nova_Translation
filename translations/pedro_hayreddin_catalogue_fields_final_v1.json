@@ -1,0 +1,229 @@
+{
+  "format": "dk4-scoped-owned-name-field-review-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ACTOR31_FULL_CATALOGUE_MIDDLE_FIELD",
+      "actor_ID": 31,
+      "english": "Pedro de Valdes",
+      "speaker": "Pedro de Valdes",
+      "source_meaning": "ペドロ・デ・バルデス",
+      "context": "Complete proper name in the full-name catalogue,read with the established progressive identity andthe complete Rafael pirate/Spanish exchanges. The field isnot an independent title orrole.",
+      "localization_note": "Render the clean Spanish name particle デ as lowercase de in the complete Pedro de Valdes name. Retain Pedro andValdes andthe unchanged Pedro Valdes progressive form. This corrects the embedded Japanese component without adding a rank,relationship orbiography.",
+      "decision": "revision",
+      "finding": "Japanese particle left in Latin name.",
+      "retained_elements_reason": "Keep the established given/epithet andsurname components andthe progressive nameplate exactly.",
+      "source_reference": {
+        "native_binding": "work\\analysis\\Rafael_B36_B41_new_name_bindings_20261104\\names.json",
+        "native_binding_sha256": "b97ce6676a1cc5b324e8ef528a019d8b41286237452c564602a8e1063cc1b356",
+        "actor_ID": 31,
+        "consumer": "full-catalogue",
+        "text_hex": "83798368838d814583668145836f838b83668358",
+        "middle_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183592,
+          "pointer_hex": "78b71502",
+          "pointer": 34977656,
+          "offset": 1423224,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        }
+      },
+      "current_reference": {
+        "native_binding": "work\\analysis\\Rafael_B36_B41_name_fields_native_20261104\\native_name_fields_verification.json",
+        "native_binding_sha256": "660da1a608832c4ba37e6bf1e0945254bb22e537c8b04550dea58522eb07b936",
+        "actor_ID": 31,
+        "consumer": "full-catalogue",
+        "text": "Pedro デ Valdes",
+        "field_offset": 1183592,
+        "physical_offset": 1423224,
+        "component_hex": "8366"
+      },
+      "reviewed_owned_field": {
+        "actor": 31,
+        "column": 8,
+        "table_field_offset": 1183592,
+        "pointer": 34977656,
+        "physical_offset": 1423224,
+        "source_hex": "8366",
+        "target_hex": "6465",
+        "owned_bytes": 2,
+        "current_text": "デ",
+        "target_text": "de",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183592,
+          "pointer_hex": "78b71502",
+          "pointer": 34977656,
+          "offset": 1423224,
+          "hex": "8366",
+          "text": "デ",
+          "byte_length": 2,
+          "status": "printable-static-string"
+        },
+        "kind": "source-name-component-romanization",
+        "reason": "Render the explicit source middle component デ as Spanish de while preserving Pedro andValdes. The full catalogue consumer includes it;the source progressive consumer omits it. No rank orrelationship is added.",
+        "owners": [
+          {
+            "actor": 31,
+            "column": 8,
+            "pointer": 34977656,
+            "field_offset": 1183592
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183592,
+            "pointer": 34977656
+          }
+        ],
+        "following16_hex": "00000000000096830000836600004865",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "progressive_nameplate_unchanged": true,
+      "full_catalogue_UI_unvisited": true,
+      "formatting_scope": "Complete original getters andtwelve native planes/styles1/11 withindependent glyph/bounds proofs. Exact current dependencies permit reuse;no catalogue UI activation claimed."
+    },
+    {
+      "id": "ACTOR34_FULL_CATALOGUE_MIDDLE_FIELD",
+      "actor_ID": 34,
+      "english": "Barbarossa Fazul Hayreddin",
+      "speaker": "Barbarossa Fazul Hayreddin",
+      "source_meaning": "バルバロッサ・ファーズル・ハイレディン",
+      "context": "Complete proper name in the full-name catalogue,read with the established progressive identity andthe complete Rafael pirate/Spanish exchanges. The field isnot an independent title orrole.",
+      "localization_note": "Normalize the unintended full-width Latin F in the existing Fazul component to ordinary ASCII F. Retain the complete source identity Barbarossa Fazul Hayreddin andits unchanged Barbarossa Hayreddin progressive form;no new title or historical detail is introduced.",
+      "decision": "revision",
+      "finding": "Full-width Latin letter in otherwise ASCII full-name component.",
+      "retained_elements_reason": "Keep the established given/epithet andsurname components andthe progressive nameplate exactly.",
+      "source_reference": {
+        "native_binding": "work\\analysis\\Rafael_B36_B41_new_name_bindings_20261104\\names.json",
+        "native_binding_sha256": "b97ce6676a1cc5b324e8ef528a019d8b41286237452c564602a8e1063cc1b356",
+        "actor_ID": 34,
+        "consumer": "full-catalogue",
+        "text_hex": "836f838b836f838d83628354814583748340815b8359838b8145836e8343838c836683428393",
+        "middle_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183688,
+          "pointer_hex": "e4ce1502",
+          "pointer": 34983652,
+          "offset": 1429220,
+          "hex": "83748340815b8359838b",
+          "text": "ファーズル",
+          "byte_length": 10,
+          "status": "printable-static-string"
+        }
+      },
+      "current_reference": {
+        "native_binding": "work\\analysis\\Rafael_B36_B41_name_fields_native_20261104\\native_name_fields_verification.json",
+        "native_binding_sha256": "660da1a608832c4ba37e6bf1e0945254bb22e537c8b04550dea58522eb07b936",
+        "actor_ID": 34,
+        "consumer": "full-catalogue",
+        "text": "Barbarossa Ｆazul Hayreddin",
+        "field_offset": 1183688,
+        "physical_offset": 1518796,
+        "component_hex": "8265617a756c"
+      },
+      "reviewed_owned_field": {
+        "actor": 34,
+        "column": 8,
+        "table_field_offset": 1183688,
+        "pointer": 37256544,
+        "physical_offset": 1518796,
+        "source_hex": "8265617a756c",
+        "target_hex": "46617a756c00",
+        "owned_bytes": 6,
+        "current_text": "Ｆazul",
+        "target_text": "Fazul",
+        "source_clean_component": {
+          "column": 8,
+          "source_ARM9_field_offset": 1183688,
+          "pointer_hex": "e4ce1502",
+          "pointer": 34983652,
+          "offset": 1429220,
+          "hex": "83748340815b8359838b",
+          "text": "ファーズル",
+          "byte_length": 10,
+          "status": "printable-static-string"
+        },
+        "kind": "latin-width-normalization",
+        "reason": "Preserve the established Fazul middle-name spelling from source ファーズル andnormalize only its full-width initial F. Barbarossa andHayreddin andall source component ordering remain. No new biography orrank.",
+        "owners": [
+          {
+            "actor": 34,
+            "column": 8,
+            "pointer": 37256544,
+            "field_offset": 1183688
+          }
+        ],
+        "aligned_ARM9_references": [
+          {
+            "offset": 1183688,
+            "pointer": 37256544
+          }
+        ],
+        "following16_hex": "0000826565726e616e0082656f6e6700",
+        "original_terminator_not_reallocated_orchanged": true,
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "progressive_nameplate_unchanged": true,
+      "full_catalogue_UI_unvisited": true,
+      "formatting_scope": "Complete original getters andtwelve native planes/styles1/11 withindependent glyph/bounds proofs. Exact current dependencies permit reuse;no catalogue UI activation claimed."
+    }
+  ],
+  "proposed_revisions": 2,
+  "new_dialogue_completion_credit": 0,
+  "all_five_individual_review_gates_pass_in_scoped_context": true,
+  "all_other205_actors_andall_progressive_names_unchanged": true,
+  "full_catalogue_UI_unvisited": true,
+  "global207_name_review_still_open": true,
+  "registered_deployment_pending": true,
+  "new_credit": 0,
+  "guide_photos": false,
+  "evidence": {
+    "work\\analysis\\Rafael_B36_B41_name_field_proposals_20261104\\owned_fields_proposal.json": "2f4df7d6840f2ace4d88e8961f70b0ffa2db89ea03e8744dea787f4a8afdc6b8",
+    "work\\analysis\\Rafael_B36_B41_name_fields_native_20261104\\native_name_fields_verification.json": "660da1a608832c4ba37e6bf1e0945254bb22e537c8b04550dea58522eb07b936",
+    "work\\analysis\\Rafael_B36_B41_formatting_20261104\\speech_display_approved_v3\\catalogue_name_proposal_visual_approval.json": "8a147180f5410fcaefdd58a29c1d73fe4869820b158f80fa891e176c0287adb6",
+    "work\\analysis\\Rafael_B36_B41_new_name_bindings_20261104\\names.json": "b97ce6676a1cc5b324e8ef528a019d8b41286237452c564602a8e1063cc1b356",
+    "work\\analysis\\Rafael_B36_B41_release_verified_20261104\\registered_release_verification.json": "0e43af31110c017d7d69f28fe42285d469b61ada815321558067a6a89de63e9b",
+    "work\\analysis\\Rafael_B36_B41_release_verified_20261104\\own_registered_startup_verification.json": "344ca3f46208f87e82739e0847d7b05ae63ee0a703be9858d65b349ed89ef3cb",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\finalize_pedro_hayreddin_catalogue_fields.py": "48613678442481df44a16a0dd90f9c72f85b4dfdab28c291f2cd51386be8c15a"
+  }
+}

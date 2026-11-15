@@ -1,0 +1,7 @@
+# Promotion-ready testing copy — November 10, 2026
+
+Use `out/promotion_ready_20261110_maria349_v1/Translation_DS_Maria349_promotion_candidate.nds` and its adjacent manifest. This is a fresh clean-input reconstruction of the registered Maria349 release, byte-identical to the previously qualified candidate; it adds no unapproved text. ROM SHA256: `fd825d4d7b0ae27192da6ad193117d5759685416e41e9a0802ec5f45484fd6f0`.
+
+The existing `translation.xdelta` reconstructs this same ROM from the clean Japanese input identified in README.md. All 724 manifest entries, 114 accepted layers and 59 release checks are preserved, including Rafael/tutorial work, the Market Trade-screen correction and ASCII right bounds. Fresh repository verification passes 27 tests. Existing startup, protected-name and representative gameplay proofs apply to these exact bytes; this packaging step claims no new gameplay. Main remains V4701 until explicit acceptance after cold-boot testing.
+
+The separate Maria315 B286–B302 batch is saved in Git with 162 proposed revisions, 153 justified retentions and 14 scoped name reviews. First four prose gates pass. Native checks pass 309 bodies/309 pages/1,236 alignments, 17 complete style objects, six captions and 18 name strings. Direct visual review, storage/gameplay checks, fifth gates and registered integration remain pending. These edits are not included in this ROM and add no completion credit. Resume from the current editorial handoff; preserve the full goal and all historical evidence.
