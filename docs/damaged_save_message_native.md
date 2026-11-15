@@ -1,5 +1,7 @@
 # Damaged-save message: native layout reviewed and integrated in V145
 
+The November 15 cumulative candidate now has emulator evidence from the original Continue checksum failure, complete two-line display and dismissal. [Current replay and scope](editorial_damaged_save_20261115.md)
+
 The final generated layout is two complete word-boundary rows, with native
 two-space continuation protection. Full prose and slot numbering are unchanged.
 All 256 preparations now execute the actual modal formatter/macros; all twelve

@@ -1,0 +1,254 @@
+{
+  "candidate_sha256": "3f44ecb999ef4ee97f1ad81261a6c9fadad7d45c17858377c5d43cf24ef2b0b7",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_111",
+      "message_ID": 111,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 1,
+        "offset": 432,
+        "copy_end": 480,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 105
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 376,
+        "copy_end": 407,
+        "bytes": 29,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 82
+      },
+      "clean_Japanese": "ゲームデータが\nありません。\nロードできません。",
+      "current_English": "There's no game data to load.",
+      "clean_hex": "8351815b83808366815b835e82aa0a82a082e882dc82b982f181420a838d815b836882c582ab82dc82b982f18142",
+      "current_hex": "54686572652773206e6f2067616d65206461746120746f206c6f61642e",
+      "localization_note": "The standalone sentence states that game data is absent and the game cannot load it.",
+      "scope": "Original code fetches the string and passes its pointer to an immediate no-op return."
+    },
+    {
+      "id": "COMMON_MESSAGE_112",
+      "message_ID": 112,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 431,
+        "bytes": 22,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "clean_Japanese": "システムデータがありません。\n",
+      "current_English": "System data not found.",
+      "clean_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "current_hex": "53797374656d2064617461206e6f7420666f756e642e",
+      "localization_note": "The distinct system-data notice names system data and describes its absence.",
+      "scope": "Original code fetches the string and passes its pointer to an immediate no-op return."
+    }
+  ],
+  "native_fixture": {
+    "candidate": "out\\price_info_wraps_registered_20261115_v1\\Translation_DS_All_Routes_Price_Info_Wraps_20261115_candidate.nds",
+    "candidate_sha256": "3f44ecb999ef4ee97f1ad81261a6c9fadad7d45c17858377c5d43cf24ef2b0b7",
+    "ARM9_sha256": "f6971ba332018302670bf6ff1160bd313e896eba6af362d71589156b2669b355",
+    "COMMON_sha256": "eb4c388c749c6dac9c5da7a5475327e698dc120f51c81821fd5541f18cf8ea76",
+    "release_proof": "releases\\all_routes_editorial_20261115_price_info_wraps_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "85a10e923953ced53bc77d2e1e42144ef585e4624ae24a431335b0bf794a060e",
+    "startup_proof": "releases\\all_routes_editorial_20261115_price_info_wraps_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "cc36218daebb75078bd41d4501b6fdfa9c63ed74f8545b2cc7334257611e6ef1",
+    "snapshot": {
+      "path": "work\\price_info_wraps_20261115_v2\\own_startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "ab32ee9da0711aecde1ac529578c2a0c1973d9c717f841ad4f37b4619b00863a",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "controlled_offline_cases": [
+    {
+      "offline_supplied_branch_inputs": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "loaded_ids": [
+        111
+      ],
+      "immediate_no_write_returns": [
+        {
+          "message_ID": 111,
+          "pointer": 36243212,
+          "return_address": 34529184
+        }
+      ],
+      "branch_end": 34528508,
+      "exact_warm_block_input": 1,
+      "warm_block_sha256": "0c22ee5bc027aaa1bc3fdb97c72c7d649f010fcb25d02be38de23a29f0c21a0b"
+    },
+    {
+      "offline_supplied_branch_inputs": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "loaded_ids": [
+        112,
+        111
+      ],
+      "immediate_no_write_returns": [
+        {
+          "message_ID": 112,
+          "pointer": 36243212,
+          "return_address": 34529160
+        },
+        {
+          "message_ID": 111,
+          "pointer": 36243212,
+          "return_address": 34529184
+        }
+      ],
+      "branch_end": 34528508,
+      "exact_warm_block_input": 1,
+      "warm_block_sha256": "0c22ee5bc027aaa1bc3fdb97c72c7d649f010fcb25d02be38de23a29f0c21a0b"
+    },
+    {
+      "offline_supplied_branch_inputs": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "loaded_ids": [
+        112
+      ],
+      "immediate_no_write_returns": [
+        {
+          "message_ID": 112,
+          "pointer": 36243212,
+          "return_address": 34529160
+        }
+      ],
+      "branch_end": 34529236,
+      "exact_warm_block_input": 1,
+      "warm_block_sha256": "0c22ee5bc027aaa1bc3fdb97c72c7d649f010fcb25d02be38de23a29f0c21a0b"
+    },
+    {
+      "offline_supplied_branch_inputs": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "loaded_ids": [],
+      "immediate_no_write_returns": [],
+      "branch_end": 34529236,
+      "exact_warm_block_input": 1,
+      "warm_block_sha256": "0c22ee5bc027aaa1bc3fdb97c72c7d649f010fcb25d02be38de23a29f0c21a0b"
+    }
+  ],
+  "verified_code_spans": [
+    {
+      "start": 34528456,
+      "end": 34528508,
+      "sha256": "8686dd47c7c15722a3b31ec7467a42f71a9d69d2bfc3d452ce039e98ce078821"
+    },
+    {
+      "start": 34529108,
+      "end": 34529236,
+      "sha256": "6b50c1255c851263ccf986f47049449ec28c9b4971f7cc42f207fd9bb393e1e5"
+    },
+    {
+      "start": 34528824,
+      "end": 34528844,
+      "sha256": "7391d322510677a24281dbf2edc1837f83484980f2b636281fb748b2766d4c0c"
+    },
+    {
+      "start": 34529400,
+      "end": 34529416,
+      "sha256": "83700bce0d9a731ca9a1a981f4cb8ecd99f96e2074fac29f5265403bf83bae49"
+    },
+    {
+      "start": 34530932,
+      "end": 34530936,
+      "sha256": "f5fc4cd3f88d43d095334b0d48a5a8aa5479408a7da3d28f0af82643ac251ca5"
+    }
+  ],
+  "sink": {
+    "address": 34533480,
+    "instruction": "bx lr",
+    "original_no_op": true
+  },
+  "ordinary_gameplay": {
+    "scope": "Ordinary Continue with an existing copied Lisbon save. Down and A still selected the populated Rafael slot.",
+    "displayed_confirmation": [
+      {
+        "frame": 3000,
+        "complete_glyph_mask_pixels": 164
+      },
+      {
+        "frame": 3400,
+        "complete_glyph_mask_pixels": 164
+      }
+    ],
+    "original_lookups": [
+      {
+        "frame": 4811,
+        "PC": 33903244,
+        "message_ID": 63,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 4811,
+        "PC": 33895668,
+        "message_ID": 63,
+        "caller_LR": 33898488
+      }
+    ],
+    "Lisbon_after_confirm_frame": 3800,
+    "Lisbon_Inn_frame": 5000,
+    "inn_complete_glyph_pixels": 185
+  },
+  "visible_confirmation": {
+    "clean_file_offset": 1482540,
+    "clean_Japanese": "ロードしてよろしいですか？",
+    "current_English": "Load this data?",
+    "original_call": 34529404
+  },
+  "other_consumers": "open",
+  "hardware": false,
+  "new_editorial_credit": 0,
+  "evidence": {
+    "releases\\all_routes_editorial_20261115_price_info_wraps_candidate\\verification\\registered_release_verification.json": "85a10e923953ced53bc77d2e1e42144ef585e4624ae24a431335b0bf794a060e",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_continue_legacy_calls_20261115.py": "02ecd6225c89d5644ca0ac5ea909c222963ddbe4468b1124748f57b6e5cfd1ea",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_continue_empty_slot_20261115.py": "5dd9c374d1134fd23f38dd3698a24cddb2e92e69dfab00b41a8cccd66b767355",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\capture_report.json": "ca68b768be4b04c46d9a17ada9268c92662577f5070011611412fdfa0ff70fcf",
+    "work\\continue_empty_slot_20261115_v1\\continue\\requests.json": "13895151b1fc413b74838e6259ef4eea6685905c4c6155160192f2ac536bc2b8",
+    "work\\continue_empty_slot_20261115_v1\\continue\\terminal.json": "6699d1205bea6f8fe74756cefcc49f453fea50e644e450252cf5c84ecd3061af",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_002200_cold_boot.png": "8ba9d0f36372630eb49411d60200780a6bde483dc04fcba0082cecd91be96f44",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_002600_cold_boot.png": "99e98ff8dbe98910e77d66eecc882b757ebe98bd7ecbed70e9310fe54d13d0fd",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_003000_cold_boot.png": "8a3df644ca10229d0416a7d52d002d9e1f2a4ab3efb8c2d0a3f1069bc1016853",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_003400_cold_boot.png": "8a3df644ca10229d0416a7d52d002d9e1f2a4ab3efb8c2d0a3f1069bc1016853",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_003800_cold_boot.png": "c92fb0a185976a3bb2070e5e42306172587a809b8bf469fae8627e36cf02e39e",
+    "work\\continue_empty_slot_20261115_v1\\continue\\capture\\frame_005000_cold_boot.png": "10b78aa313d47ca9699e2be3c55f2e8e534204618e49a995b9df862c66017344"
+  }
+}

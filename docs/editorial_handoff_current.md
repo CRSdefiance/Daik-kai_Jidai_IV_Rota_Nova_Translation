@@ -1,3 +1,195 @@
+# Current editorial checkpoint - 2026-11-15
+
+The cumulative All Routes Crew Review candidate is ready for testing. Fernando’s Deck assignment passes in Normal and Excited on the exact ROM. The photographed title overlap still needs hardware confirmation. [Candidate and remaining scope](editorial_promotion_candidate_20261115_crew_review.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Nelly’s Alexandria and Verisa’s Sao Jorge town labels are registered. [Checkpoint](editorial_barmaid_town_labels_registered_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The 21 hostess town fields are reviewed, with two source-bound Japanese labels prepared for display verification. [Checkpoint](editorial_barmaid_town_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The 31 Online and tie-in COMMON drafts have current source comparisons, and all 19 visible guide and About Extras pages are verified. [Checkpoint](editorial_online_promotional_current_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+All 21 Square regional rumors are reviewed, with ten revisions registered. [Checkpoint](editorial_square_rumors_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Twenty-four Square shopkeeper replies and regional briefings are reviewed, with nine revisions registered. [Checkpoint](editorial_square_country_briefings_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Twenty-two Square giveaway and shop replies are reviewed, with nine changes registered. [Checkpoint](editorial_square_samples_wraps_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Fernando’s Sailor Info replay now covers Normal and Excited from the mast assignment. The original skill ratings and Deck comments reflect the changed mood, and both runs show clear stat labels and titles. [Checkpoint](editorial_sailor_stat_labels_20261114.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The traveling promoter, specialty request, and Market warnings are reviewed, with four changes registered. [Checkpoint](editorial_town_market_wraps_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The damaged-save warning has exact checksum and complete glyph evidence from a current Continue replay. The tested branch uses its independent ARM9 text. [Checkpoint](editorial_damaged_save_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The 214 stored scene labels have exact current references and refreshed English drafts. Artwork is linked for 168 entries. The Gallery plays separately stored captions, and display of the COMMON copies remains unverified. [Checkpoint](editorial_scene_labels_current_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Thirty-five expedition reports are reviewed. Nineteen received prose or wrap corrections. [Checkpoint](editorial_expedition_report_wraps_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Continue confirmation is verified on the current candidate. COMMON 111 has a source-bound load path that discards the fetched string. [Checkpoint](editorial_continue_legacy_calls_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Nine two-page Price Info descriptions are reviewed. Seven now fit on one page. [Checkpoint](editorial_price_info_wraps_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Six Shipyard Refit help revisions are registered, with 25 justified retentions. [Checkpoint](editorial_refit_help_wraps_20261115.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The Food, Liquor, and Jewelry shops in Amsterdam Square are verified on the current candidate. Four shared lines were retained. [Checkpoint](editorial_amsterdam_square_current_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The ship-name and Promised Words confirmation is reviewed and registered. [Checkpoint](editorial_name_or_words_confirmation_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The Tavern introduction and gift exchange are reviewed, with the toast and Hodram’s reply registered. [Checkpoint](editorial_tavern_toast_and_gift_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The Istanbul barkeep’s influence rumor is registered, with current coverage in three towns. [Checkpoint](editorial_tavern_influence_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+About Extras and the Promised Words instructions are registered. [Checkpoint](editorial_about_extras_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Grand Race rules review and the stopping-page revision are registered. [Checkpoint](editorial_grand_race_stopping_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The two Gallery empty-collection notices are reviewed in the current ROM. The ledger credits 27,699 reviews and 277 mapped shared keys remain. [Checkpoint](editorial_gallery_options_legacy_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The Alexandria cooking exchange is registered across all four routes. [Checkpoint](editorial_alexandria_cooking_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Seventeen town and story nameplates received a contextual review against 20 complete speech exchanges. All 17 were retained. The exact current native getters and all 12 distinct glyph renders passed. Alexandria SC3 B159 R0019 has a follow-up prose finding. [Checkpoint](editorial_special_town_story_nameplates_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Maria’s final flagged story wraps are registered. [Checkpoint](editorial_maria_final_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Maria’s shop, bargaining, and letter scenes are registered. [Checkpoint](editorial_maria_late_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Maria’s discipline, recruitment, and trade scenes are registered. [Checkpoint](editorial_maria_midroute_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Maria’s early dialogue and wrap review is registered. [Checkpoint](editorial_maria_opening_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Lil’s final flagged wrap review is registered. [Checkpoint](editorial_lil_final_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Lil’s shop, crew, and sailing exchanges are registered. [Checkpoint](editorial_lil_late_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Lil’s family, confrontation, and adventure exchanges are registered. [Checkpoint](editorial_lil_midroute_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Lil’s early dialogue and wrap review is registered. [Checkpoint](editorial_lil_opening_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Hodram’s remaining flagged wrap decisions are registered. [Checkpoint](editorial_hodram_final_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Hodram’s artifact, diplomacy, and crew wrap review is registered. [Checkpoint](editorial_hodram_rumor_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Hodram’s early confrontation and recruitment wrap review is registered. [Checkpoint](editorial_hodram_opening_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s remaining flagged wrap decisions are registered. [Checkpoint](editorial_rafael_final_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s quest and village wrap review is registered. [Checkpoint](editorial_rafael_quest_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s confrontation and artifact wrap review is registered. [Checkpoint](editorial_rafael_history_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s port and artifact wrap review is registered. [Checkpoint](editorial_rafael_port_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s seamanship and crew wrap review is registered. [Checkpoint](editorial_rafael_seamanship_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s homecoming and recruitment wrap review is registered. [Checkpoint](editorial_rafael_homecoming_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s diplomacy and artifact wrap review is registered. [Checkpoint](editorial_rafael_alliance_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s voyage and tutorial wrap review is registered. [Checkpoint](editorial_rafael_voyage_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s recruitment, training and crew wrap review is registered. [Checkpoint](editorial_rafael_crew_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael’s five name-substitution lines are registered. [Checkpoint](editorial_rafael_name_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+Rafael and Charlotte’s early wrap review is registered. [Checkpoint](editorial_rafael_charlotte_wraps_registered_20261114.md)
+
+# Current editorial checkpoint - 2026-11-14
+
+The reported Sailor Info stat overlap is corrected in the [registered candidate](editorial_sailor_stat_labels_20261114.md). The candidate preserves the previous cumulative review and passed all ten original skill-selection states. The [Lisbon and Istanbul checkpoint](editorial_lisbon_trade_istanbul_shop_20261114.md) traces three Trade paths and verifies four ordinary square-shop replies. COMMON 750–752 remain open for other callers. Continue shared consumer review, wrap triage and representative random-scene checks from the Sailor Info ROM. The accepted November 13 Wrap Review is main.
+
+# Current editorial checkpoint - 2026-11-11
+
+Rafael’s early wrap review is registered. [Checkpoint](editorial_rafael_early_wraps_registered_20261111.md)
+
 # All Routes Wrap Review promotion candidate - 2026-11-11
 
 The [candidate and remaining-work audit](editorial_promotion_candidate_20261111_wrap_review.md) are ready for cold-boot testing. The exact clean-input patch reconstructs the cumulative ROM with all 27 recent dialogue display corrections and the existing Market and ASCII right-bound fixes. V4701 remains main pending acceptance.

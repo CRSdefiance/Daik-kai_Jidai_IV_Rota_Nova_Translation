@@ -1,0 +1,707 @@
+{
+  "candidate_sha256": "0a26355fd7566509e2e7185261fd6385f62d74686ac231991f4159b5022e6fdf",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "actual_gameplay": "Two Lil New Game replays, with Food, Liquor and Jewelry Shop visits.",
+  "panels": 11,
+  "shopkeeper_nameplates": 9,
+  "retained": [
+    {
+      "id": "COMMON_MESSAGE_136",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 1,
+        "offset": 1684,
+        "copy_end": 1732,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 1664,
+        "copy_end": 1726,
+        "bytes": 61,
+        "record_index": 26,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "clean_Japanese": "小売店の看板を選ぶと\n流行などの情報を聞けます",
+      "current_English": "Choose a shop sign to ask about\n trends and other local news.",
+      "clean_hex": "8fac9484935882cc8ac594c282f0914982d482c60a97ac8d7382c882c782cc8fee95f182f095b782af82dc82b7",
+      "current_hex": "43686f6f736520612073686f70207369676e20746f2061736b2061626f75740a207472656e647320616e64206f74686572206c6f63616c206e6577732e",
+      "context": "On entering the Square, the game explains what selecting a retailer’s sign does.",
+      "decision": "retain",
+      "rationale": "The instruction names the exact action and preserves the request for trends and other information.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "existing_credit": true,
+      "ordinary_gameplay": [
+        {
+          "replay": "square",
+          "frame": 9701,
+          "native_request": {
+            "frame": 9563,
+            "PC": 33903244,
+            "message_ID": 136,
+            "caller_LR": 33900236
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_009701_cold_boot.png",
+          "lines": [
+            {
+              "text": "Choose a shop sign to ask about",
+              "origin": [
+                16,
+                297
+              ],
+              "complete_glyph_pixels": 321
+            },
+            {
+              "text": "trends and other local news.",
+              "origin": [
+                16,
+                313
+              ],
+              "complete_glyph_pixels": 282
+            }
+          ]
+        },
+        {
+          "replay": "food",
+          "frame": 9701,
+          "native_request": {
+            "frame": 9563,
+            "PC": 33903244,
+            "message_ID": 136,
+            "caller_LR": 33900236
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_009701_cold_boot.png",
+          "lines": [
+            {
+              "text": "Choose a shop sign to ask about",
+              "origin": [
+                16,
+                297
+              ],
+              "complete_glyph_pixels": 321
+            },
+            {
+              "text": "trends and other local news.",
+              "origin": [
+                16,
+                313
+              ],
+              "complete_glyph_pixels": 282
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_657",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 8,
+        "offset": 304,
+        "copy_end": 368,
+        "bytes": 64,
+        "record_index": 8,
+        "table_offset": 1318450,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 5213,
+        "copy_end": 5286,
+        "bytes": 72,
+        "record_index": 156,
+        "table_offset": 1318450,
+        "start_in_record": 0
+      },
+      "clean_Japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "current_English": "  You're a sailor, aren't you? For\n  bulk trade, try the trade house.   ",
+      "clean_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6",
+      "current_hex": "2020596f752772652061207361696c6f722c206172656e277420796f753f20466f720a202062756c6b2074726164652c207472792074686520747261646520686f7573652e202020",
+      "context": "The shopkeeper recognizes a sailor and points them to the trade house for larger transactions.",
+      "decision": "retain",
+      "rationale": "The question tag sounds conversational and stays together on the first line. The second line keeps the bulk-trade referral clear.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "existing_credit": true,
+      "ordinary_gameplay": [
+        {
+          "replay": "square",
+          "frame": 12501,
+          "native_request": {
+            "frame": 12361,
+            "PC": 33903244,
+            "message_ID": 657,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_012501_cold_boot.png",
+          "lines": [
+            {
+              "text": "You're a sailor, aren't you? For",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 284
+            },
+            {
+              "text": "bulk trade, try the trade house.",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 322
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "square",
+          "frame": 14501,
+          "native_request": {
+            "frame": 14361,
+            "PC": 33903244,
+            "message_ID": 657,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_014501_cold_boot.png",
+          "lines": [
+            {
+              "text": "You're a sailor, aren't you? For",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 284
+            },
+            {
+              "text": "bulk trade, try the trade house.",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 322
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "food",
+          "frame": 12501,
+          "native_request": {
+            "frame": 12361,
+            "PC": 33903244,
+            "message_ID": 657,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_012501_cold_boot.png",
+          "lines": [
+            {
+              "text": "You're a sailor, aren't you? For",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 284
+            },
+            {
+              "text": "bulk trade, try the trade house.",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 322
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_658",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 8,
+        "offset": 368,
+        "copy_end": 428,
+        "bytes": 59,
+        "record_index": 8,
+        "table_offset": 1318452,
+        "start_in_record": 65
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 0,
+        "copy_end": 75,
+        "bytes": 74,
+        "record_index": 0,
+        "table_offset": 1318452,
+        "start_in_record": 0
+      },
+      "clean_Japanese": "景気？　まあ、ぼちぼちですね\n何か、うまい話はないもんかねえ",
+      "current_English": "  Business? Oh, it's been all right.\n  I'm hoping a good deal comes along.",
+      "clean_hex": "8c698b438148814082dc82a0814182da82bf82da82bf82c582b782cb0a89bd82a9814182a482dc82a2986282cd82c882a282e082f182a982cb82a6",
+      "current_hex": "2020427573696e6573733f204f682c2069742773206265656e20616c6c2072696768742e0a202049276d20686f70696e67206120676f6f64206465616c20636f6d657320616c6f6e672e",
+      "context": "Asked how business is going, the shopkeeper gives a modest answer and hopes for a better opportunity.",
+      "decision": "retain",
+      "rationale": "The quick echo and understated answer preserve the exchange’s casual rhythm and cautious optimism.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "existing_credit": true,
+      "ordinary_gameplay": [
+        {
+          "replay": "square",
+          "frame": 10901,
+          "native_request": {
+            "frame": 10759,
+            "PC": 33903244,
+            "message_ID": 658,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_010901_cold_boot.png",
+          "lines": [
+            {
+              "text": "Business? Oh, it's been all right.",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 330
+            },
+            {
+              "text": "I'm hoping a good deal comes along.",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 363
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "food",
+          "frame": 10901,
+          "native_request": {
+            "frame": 10759,
+            "PC": 33903244,
+            "message_ID": 658,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_010901_cold_boot.png",
+          "lines": [
+            {
+              "text": "Business? Oh, it's been all right.",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 330
+            },
+            {
+              "text": "I'm hoping a good deal comes along.",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 363
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_689",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_reference": {
+        "block": 8,
+        "offset": 2292,
+        "copy_end": 2360,
+        "bytes": 66,
+        "record_index": 36,
+        "table_offset": 1318514,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1958,
+        "copy_end": 2036,
+        "bytes": 77,
+        "record_index": 31,
+        "table_offset": 1318514,
+        "start_in_record": 0
+      },
+      "clean_Japanese": "オランダは長い独立戦争の末\nスペインから独立して間もない\n国なんです",
+      "current_English": " The Netherlands only recently won independence from Spain, after a long war.",
+      "clean_hex": "834983898393835f82cd92b782a293c697a790ed918882cc96960a835883798343839382a982e793c697a782b582c48ad482e082c882a20a8d9182c882f182c582b7",
+      "current_hex": "20546865204e65746865726c616e6473206f6e6c7920726563656e746c7920776f6e20696e646570656e64656e63652066726f6d20537061696e2c2061667465722061206c6f6e67207761722e",
+      "context": "The shopkeeper explains the Netherlands’ recent independence from Spain after a long war.",
+      "decision": "retain",
+      "rationale": "The matter-of-fact explanation retains both countries, the war’s length and the recency of independence.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "existing_credit": true,
+      "ordinary_gameplay": [
+        {
+          "replay": "square",
+          "frame": 11701,
+          "native_request": {
+            "frame": 11559,
+            "PC": 33903244,
+            "message_ID": 689,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_011701_cold_boot.png",
+          "lines": [
+            {
+              "text": "The Netherlands only recently won",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 365
+            },
+            {
+              "text": "independence from Spain, after a",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 347
+            },
+            {
+              "text": "long war.",
+              "origin": [
+                22,
+                329
+              ],
+              "complete_glyph_pixels": 88
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "square",
+          "frame": 13301,
+          "native_request": {
+            "frame": 13160,
+            "PC": 33903244,
+            "message_ID": 689,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_013301_cold_boot.png",
+          "lines": [
+            {
+              "text": "The Netherlands only recently won",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 365
+            },
+            {
+              "text": "independence from Spain, after a",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 347
+            },
+            {
+              "text": "long war.",
+              "origin": [
+                22,
+                329
+              ],
+              "complete_glyph_pixels": 88
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "square",
+          "frame": 15301,
+          "native_request": {
+            "frame": 15160,
+            "PC": 33903244,
+            "message_ID": 689,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_015301_cold_boot.png",
+          "lines": [
+            {
+              "text": "The Netherlands only recently won",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 365
+            },
+            {
+              "text": "independence from Spain, after a",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 347
+            },
+            {
+              "text": "long war.",
+              "origin": [
+                22,
+                329
+              ],
+              "complete_glyph_pixels": 88
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        },
+        {
+          "replay": "food",
+          "frame": 11701,
+          "native_request": {
+            "frame": 11560,
+            "PC": 33903244,
+            "message_ID": 689,
+            "caller_LR": 33898488
+          },
+          "capture": "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_011701_cold_boot.png",
+          "lines": [
+            {
+              "text": "The Netherlands only recently won",
+              "origin": [
+                22,
+                297
+              ],
+              "complete_glyph_pixels": 365
+            },
+            {
+              "text": "independence from Spain, after a",
+              "origin": [
+                22,
+                313
+              ],
+              "complete_glyph_pixels": 347
+            },
+            {
+              "text": "long war.",
+              "origin": [
+                22,
+                329
+              ],
+              "complete_glyph_pixels": 88
+            }
+          ],
+          "nameplate": {
+            "label": "Shopkeeper",
+            "complete_glyph_pixels": 135,
+            "bounds": [
+              16,
+              277,
+              76,
+              288
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "names": [
+    {
+      "actor": 82,
+      "clean_ARM9_field": 1185216,
+      "clean_ARM9_text_offset": 1429640,
+      "clean_label": "広場の店主",
+      "current_label": "Shopkeeper",
+      "current_runtime_actor": 36523396,
+      "getter_returns": {
+        "0x207eb0c": 34984072,
+        "0x207ed88": 34984072
+      },
+      "rationale": "The Square location supplies the context while the title identifies the retailer.",
+      "scope": "offline initialized name getters"
+    },
+    {
+      "actor": 83,
+      "clean_ARM9_field": 1185248,
+      "clean_ARM9_text_offset": 1429652,
+      "clean_label": "広場の店主",
+      "current_label": "Shopkeeper",
+      "current_runtime_actor": 36523428,
+      "getter_returns": {
+        "0x207eb0c": 34984072,
+        "0x207ed88": 34984072
+      },
+      "rationale": "The Square location supplies the context while the title identifies the retailer.",
+      "scope": "offline initialized name getters"
+    },
+    {
+      "actor": 91,
+      "clean_ARM9_field": 1185504,
+      "clean_ARM9_text_offset": 1429808,
+      "clean_label": "広場の店主",
+      "current_label": "Shopkeeper",
+      "current_runtime_actor": 36523684,
+      "getter_returns": {
+        "0x207eb0c": 37256580,
+        "0x207ed88": 37256580
+      },
+      "rationale": "The Square location supplies the context while the title identifies the retailer.",
+      "scope": "offline initialized name getters"
+    },
+    {
+      "actor": 164,
+      "clean_ARM9_field": 1187840,
+      "clean_ARM9_text_offset": 1429424,
+      "clean_label": "カップル男",
+      "current_label": "Man",
+      "current_runtime_actor": 36526020,
+      "getter_returns": {
+        "0x207eb0c": 37256812,
+        "0x207ed88": 37256812
+      },
+      "rationale": "His relationship comes through in the exchange. The nameplate can use a natural generic label.",
+      "scope": "offline initialized name getters"
+    },
+    {
+      "actor": 165,
+      "clean_ARM9_field": 1187872,
+      "clean_ARM9_text_offset": 1430660,
+      "clean_label": "カップル女",
+      "current_label": "Woman",
+      "current_runtime_actor": 36526052,
+      "getter_returns": {
+        "0x207eb0c": 37256828,
+        "0x207ed88": 37256828
+      },
+      "rationale": "The tea request reads as a familiar exchange. The role label carries no unsupported age or marital title.",
+      "scope": "offline initialized name getters"
+    }
+  ],
+  "hardware": false,
+  "unvisited": [
+    "tea exchange"
+  ],
+  "new_editorial_credit": 0,
+  "evidence": {
+    "releases\\all_routes_editorial_20261114_name_or_words_confirmation_candidate\\verification\\registered_release_verification.json": "d789a467a09fa28828114ce826afef2f94303de7cb28dedbbb8072d42a622d6f",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_amsterdam_square_current_20261114.py": "376cb708c26b8a7e40c39a7a768b7b3a4649a85f11f32f71c235a25e0bce4cfb",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_amsterdam_square_current_20261114.py": "dd5b7cf7f5091ea54812d335f59730de5c11d97d6bee9a1bb71227973817b451",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\capture_report.json": "cd1dcd3d9e892e3a1093f2c32bfe2be5826294ea2c5061f7e777a8473b719ed0",
+    "work\\current_amsterdam_square_20261114_v1\\square\\requests.json": "d767fb76d1c601887b8cbe4a492bb36f5dd4c825e9dad9394a86888fc157cc96",
+    "work\\current_amsterdam_square_20261114_v1\\square\\terminal.json": "089fa4fed390188e2f18abfea869c270090df84512191145827f007dbeb8392b",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_009701_cold_boot.png": "001e71f5e8fe06b393c182ec1dc71a60519d689ecee22a22b20cb3a9331346d2",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_010901_cold_boot.png": "39783d543ae95e3f523a2bf0bf439c542ed5f461d42da66044f99c68de35be47",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_011701_cold_boot.png": "555700ccec7314b2fd737044c250a883a57bc16a9c1334f0aff2e040615434b2",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_012501_cold_boot.png": "b17bc3d8dfbb8baf1742c291946c4d374957b205cf9bd42cb48ed26b6ecf0f7e",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_013301_cold_boot.png": "686af2b0ecd05472613b81ce86c3de1d2898c31527a82d341b16bb12d926c8ea",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_014501_cold_boot.png": "b17bc3d8dfbb8baf1742c291946c4d374957b205cf9bd42cb48ed26b6ecf0f7e",
+    "work\\current_amsterdam_square_20261114_v1\\square\\capture\\frame_015301_cold_boot.png": "686af2b0ecd05472613b81ce86c3de1d2898c31527a82d341b16bb12d926c8ea",
+    "work\\current_amsterdam_square_20261114_v1\\food\\capture\\capture_report.json": "a471bb901b4da8fa36935537c12a528b2e48eaa03e35502dd20befde7a4b7b0f",
+    "work\\current_amsterdam_square_20261114_v1\\food\\requests.json": "5b3a6552d1beeb7f00f498249ff7401f963e0018e6c2c12d195f1e07f85a5401",
+    "work\\current_amsterdam_square_20261114_v1\\food\\terminal.json": "3d183c699147c795603a016391bb7fbb15f838a24291a06dc6e083d8e71ba024",
+    "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_009701_cold_boot.png": "001e71f5e8fe06b393c182ec1dc71a60519d689ecee22a22b20cb3a9331346d2",
+    "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_010901_cold_boot.png": "0153b79e0868903b93190ea8871c23bea0f7765308c24356a7630f91ce6bb24f",
+    "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_011701_cold_boot.png": "f4294bf19f06b96af7ec1ed1ded8c57b81fecb00bd0b11c3cfb21339247aabbb",
+    "work\\current_amsterdam_square_20261114_v1\\food\\capture\\frame_012501_cold_boot.png": "7a87849109a491db95119adc6b8de9b959b8ae28458388eb73ea237bdae0d3c1",
+    "releases\\all_routes_editorial_20261114_name_or_words_confirmation_candidate\\verification\\own_startup_verification.json": "8deae5e8a3f5d70a33390f1686a9d395515fd26b565600e57e84727deca86ae7",
+    "work\\name_or_words_confirmation_20261114_v3\\own_startup\\capture\\final_arm9_ram.bin": "91f62c9b404e5a4ad8679e4ea563d7d4112b0745812e72da1aa9d4488b39054a"
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_296",
+      "message_id": 296,
+      "english": "Is %s all right?",
+      "speaker": "System confirmation",
+      "source_meaning": "The game asks whether the exact entry the player submitted is acceptable.",
+      "context": "The same Yes/No prompt confirms the string entered in the Ship Name or Promised Words keyboard. Yes accepts the entered text. No returns to entry.",
+      "localization_note": "Retain the complete generic wording because it suits both the ship name and the password. Use the regular ASCII capital I and preserve the single verbatim text argument.",
+      "decision": "glyph revision with prose retained",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "Japanese": "%sでよろしいですか？",
+      "current_English": "Ｉs %s all right?",
+      "source_reference": {
+        "block": 4,
+        "offset": 2580,
+        "copy_end": 2600,
+        "bytes": 20,
+        "record_index": 32,
+        "table_offset": 1317728,
+        "start_in_record": 106
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 2601,
+        "copy_end": 2619,
+        "bytes": 17,
+        "record_index": 61,
+        "table_offset": 1317728,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 4,
+        "offset": 2601,
+        "copy_end": 2619,
+        "bytes": 16,
+        "record_index": 61,
+        "table_offset": 1317728,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "257382c582e682eb82b582a282c582b782a98148",
+      "exact_current_hex": "82687320257320616c6c2072696768743f",
+      "staged_hex": "497320257320616c6c2072696768743f",
+      "argument_order": [
+        "exact_entered_ship_name_or_promised_words"
+      ],
+      "original_callers": [
+        {
+          "context": "Name a purchased ship",
+          "original_message_assignment": 33961440,
+          "original_call": 33961500,
+          "span_sha256": "a5ea0009b4dee7a0da0a78a544491ac00f73d9b307e77959ec87dae2bf78b1ef",
+          "old_local_resolver_missed_preserved_r5": true
+        },
+        {
+          "context": "Enter Promised Words",
+          "original_message_assignment": 34269584,
+          "original_call": 34269696,
+          "span_sha256": "a0a3a0bf1329000f3cff115cdb47cd87d028fa866492161410f60f3063268d5d",
+          "old_local_resolver_missed_preserved_r5": true
+        },
+        {
+          "context": "Rename an existing ship",
+          "original_message_assignment": 34269840,
+          "original_call": 34270020,
+          "span_sha256": "2b0d2d3791b6c6ba74a2dc290de980ae990455c05cb36d7bfc4f663684fc9c65",
+          "old_local_resolver_missed_preserved_r5": true
+        }
+      ],
+      "file_path": "/COMMON/MESFILE.DK4",
+      "new_credit": 1,
+      "registered_reference": {
+        "block": 4,
+        "offset": 2601,
+        "copy_end": 2619,
+        "bytes": 16,
+        "record_index": 61,
+        "table_offset": 1317728,
+        "start_in_record": 0,
+        "exact_stored_hex": "497320257320616c6c2072696768743f",
+        "candidate_sha256": "0a26355fd7566509e2e7185261fd6385f62d74686ac231991f4159b5022e6fdf"
+      }
+    }
+  ],
+  "candidate_sha256": "0a26355fd7566509e2e7185261fd6385f62d74686ac231991f4159b5022e6fdf",
+  "observed_gameplay": {
+    "buy": {
+      "confirmations": [
+        {
+          "frame": 9550,
+          "display": "Is Latina all right?",
+          "complete_ink": 191,
+          "changed_bounds": [
+            18,
+            297,
+            140,
+            308
+          ],
+          "path": "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_009550_cold_boot.png"
+        }
+      ],
+      "byte_exact_other_holds": [
+        8600,
+        8750,
+        9150,
+        9950,
+        10350
+      ],
+      "native_original_caller_observed": [
+        {
+          "frame": 9405,
+          "PC": 33900140,
+          "message_ID": 296,
+          "caller_LR": 33961504
+        }
+      ],
+      "snapshot": {
+        "frame": 9550,
+        "path": "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_009550_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "c8bb3cfda2f02ebd8edb362ac5e1b8095cf1cea6b095c3a1249e20208f28e062",
+        "read_only_export": true
+      },
+      "ordinary_inputs": true
+    },
+    "rename": {
+      "confirmations": [
+        {
+          "frame": 13850,
+          "display": "Is Vestaros all right?",
+          "complete_ink": 214,
+          "changed_bounds": [
+            18,
+            297,
+            152,
+            308
+          ],
+          "path": "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_013850_cold_boot.png"
+        },
+        {
+          "frame": 14650,
+          "display": "Is Vestaros all right?",
+          "complete_ink": 214,
+          "changed_bounds": [
+            18,
+            297,
+            152,
+            308
+          ],
+          "path": "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_014650_cold_boot.png"
+        }
+      ],
+      "byte_exact_other_holds": [
+        13700,
+        14250,
+        15050,
+        15450
+      ],
+      "native_original_caller_observed": [
+        {
+          "frame": 13703,
+          "PC": 33900140,
+          "message_ID": 296,
+          "caller_LR": 34270024
+        },
+        {
+          "frame": 14503,
+          "PC": 33900140,
+          "message_ID": 296,
+          "caller_LR": 34270024
+        }
+      ],
+      "snapshot": {
+        "frame": 13850,
+        "path": "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_013850_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "f4aa3209d6a685115121fd8db47bc8f2daf5987c60c41a6bc446dde706e79544",
+        "read_only_export": true
+      },
+      "ordinary_inputs": true
+    }
+  },
+  "native_layout": {
+    "cases": [
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "4c6174696e61",
+        "display_hex": "4973204c6174696e6120616c6c2072696768743f",
+        "expanded_visible_text": "Is Latina all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "5665737461726f73",
+        "display_hex": "4973205665737461726f7320616c6c2072696768743f",
+        "expanded_visible_text": "Is Vestaros all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "46494f4e41",
+        "display_hex": "49732046494f4e4120616c6c2072696768743f",
+        "expanded_visible_text": "Is FIONA all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "46414c434f4e",
+        "display_hex": "49732046414c434f4e20616c6c2072696768743f",
+        "expanded_visible_text": "Is FALCON all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "464f5254554e45",
+        "display_hex": "497320464f5254554e4520616c6c2072696768743f",
+        "expanded_visible_text": "Is FORTUNE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "46555259",
+        "display_hex": "4973204655525920616c6c2072696768743f",
+        "expanded_visible_text": "Is FURY all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "494341525553",
+        "display_hex": "49732049434152555320616c6c2072696768743f",
+        "expanded_visible_text": "Is ICARUS all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "494e4352454449424c45",
+        "display_hex": "497320494e4352454449424c4520616c6c2072696768743f",
+        "expanded_visible_text": "Is INCREDIBLE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "426c7565204f616b",
+        "display_hex": "497320426c7565204f616b20616c6c2072696768743f",
+        "expanded_visible_text": "Is Blue Oak all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "4142434445464748494a4b4c4d4e4f505152",
+        "display_hex": "4973204142434445464748494a4b4c4d4e4f50515220616c6c2072696768743f",
+        "expanded_visible_text": "Is ABCDEFGHIJKLMNOPQR all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "8341834a8354835e8369836e837d83848389",
+        "display_hex": "4973208341834a8354835e8369836e837d8384838920616c6c2072696768743f",
+        "expanded_visible_text": "Is アカサタナハマヤラ all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "484d532091448965",
+        "display_hex": "497320484d53209144896520616c6c2072696768743f",
+        "expanded_visible_text": "Is HMS 船影 all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Name a purchased ship",
+        "value_hex": "313030252047616c65",
+        "display_hex": "497320313030252047616c6520616c6c2072696768743f",
+        "expanded_visible_text": "Is 100% Gale all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "4c6174696e61",
+        "display_hex": "4973204c6174696e6120616c6c2072696768743f",
+        "expanded_visible_text": "Is Latina all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "5665737461726f73",
+        "display_hex": "4973205665737461726f7320616c6c2072696768743f",
+        "expanded_visible_text": "Is Vestaros all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "46494f4e41",
+        "display_hex": "49732046494f4e4120616c6c2072696768743f",
+        "expanded_visible_text": "Is FIONA all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "46414c434f4e",
+        "display_hex": "49732046414c434f4e20616c6c2072696768743f",
+        "expanded_visible_text": "Is FALCON all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "464f5254554e45",
+        "display_hex": "497320464f5254554e4520616c6c2072696768743f",
+        "expanded_visible_text": "Is FORTUNE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "46555259",
+        "display_hex": "4973204655525920616c6c2072696768743f",
+        "expanded_visible_text": "Is FURY all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "494341525553",
+        "display_hex": "49732049434152555320616c6c2072696768743f",
+        "expanded_visible_text": "Is ICARUS all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "494e4352454449424c45",
+        "display_hex": "497320494e4352454449424c4520616c6c2072696768743f",
+        "expanded_visible_text": "Is INCREDIBLE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "426c7565204f616b",
+        "display_hex": "497320426c7565204f616b20616c6c2072696768743f",
+        "expanded_visible_text": "Is Blue Oak all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "4142434445464748494a4b4c4d4e4f505152",
+        "display_hex": "4973204142434445464748494a4b4c4d4e4f50515220616c6c2072696768743f",
+        "expanded_visible_text": "Is ABCDEFGHIJKLMNOPQR all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "8341834a8354835e8369836e837d83848389",
+        "display_hex": "4973208341834a8354835e8369836e837d8384838920616c6c2072696768743f",
+        "expanded_visible_text": "Is アカサタナハマヤラ all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "484d532091448965",
+        "display_hex": "497320484d53209144896520616c6c2072696768743f",
+        "expanded_visible_text": "Is HMS 船影 all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Enter Promised Words",
+        "value_hex": "313030252047616c65",
+        "display_hex": "497320313030252047616c6520616c6c2072696768743f",
+        "expanded_visible_text": "Is 100% Gale all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "4c6174696e61",
+        "display_hex": "4973204c6174696e6120616c6c2072696768743f",
+        "expanded_visible_text": "Is Latina all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "5665737461726f73",
+        "display_hex": "4973205665737461726f7320616c6c2072696768743f",
+        "expanded_visible_text": "Is Vestaros all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "46494f4e41",
+        "display_hex": "49732046494f4e4120616c6c2072696768743f",
+        "expanded_visible_text": "Is FIONA all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "46414c434f4e",
+        "display_hex": "49732046414c434f4e20616c6c2072696768743f",
+        "expanded_visible_text": "Is FALCON all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "464f5254554e45",
+        "display_hex": "497320464f5254554e4520616c6c2072696768743f",
+        "expanded_visible_text": "Is FORTUNE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "46555259",
+        "display_hex": "4973204655525920616c6c2072696768743f",
+        "expanded_visible_text": "Is FURY all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "494341525553",
+        "display_hex": "49732049434152555320616c6c2072696768743f",
+        "expanded_visible_text": "Is ICARUS all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "494e4352454449424c45",
+        "display_hex": "497320494e4352454449424c4520616c6c2072696768743f",
+        "expanded_visible_text": "Is INCREDIBLE all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "426c7565204f616b",
+        "display_hex": "497320426c7565204f616b20616c6c2072696768743f",
+        "expanded_visible_text": "Is Blue Oak all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "4142434445464748494a4b4c4d4e4f505152",
+        "display_hex": "4973204142434445464748494a4b4c4d4e4f50515220616c6c2072696768743f",
+        "expanded_visible_text": "Is ABCDEFGHIJKLMNOPQR all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "8341834a8354835e8369836e837d83848389",
+        "display_hex": "4973208341834a8354835e8369836e837d8384838920616c6c2072696768743f",
+        "expanded_visible_text": "Is アカサタナハマヤラ all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "484d532091448965",
+        "display_hex": "497320484d53209144896520616c6c2072696768743f",
+        "expanded_visible_text": "Is HMS 船影 all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      },
+      {
+        "context": "Rename an existing ship",
+        "value_hex": "313030252047616c65",
+        "display_hex": "497320313030252047616c6520616c6c2072696768743f",
+        "expanded_visible_text": "Is 100% Gale all right?",
+        "exact_complete_mask": true,
+        "ordinary_latin_and_wide_input_bytes_unmodified": true,
+        "actual_gameplay": false
+      }
+    ],
+    "sheets": [
+      {
+        "path": "work\\name_or_words_confirmation_20261114_v3\\native_confirmation_readable_1.png",
+        "sha256": "23aeed13ce2186f33ac9c8fce4ae0c74b835ece8225d91ab5b43452f836db9ed"
+      },
+      {
+        "path": "work\\name_or_words_confirmation_20261114_v3\\native_confirmation_readable_2.png",
+        "sha256": "a67afcfc1df6a3ae959d011e1a8c08fd2887a8dd1ffd0de06a501a395e4df309"
+      }
+    ]
+  },
+  "evidence": {
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_008600_cold_boot.png": "e1f23f8744c148af3a629cf68479faece88498b3f6b50599958a8bf6f13fa7b9",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_008600_cold_boot.png": "e1f23f8744c148af3a629cf68479faece88498b3f6b50599958a8bf6f13fa7b9",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_008750_cold_boot.png": "d14d1293cca31898d05c451e4f18c35ad8ebe2328c52974da86296bc04045cdf",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_008750_cold_boot.png": "d14d1293cca31898d05c451e4f18c35ad8ebe2328c52974da86296bc04045cdf",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_009150_cold_boot.png": "8d9bb7d62fdd20932812804de1f53ddc788faec1dc6edf0caf0a8548919a9d73",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_009150_cold_boot.png": "8d9bb7d62fdd20932812804de1f53ddc788faec1dc6edf0caf0a8548919a9d73",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_009550_cold_boot.png": "77b286c96cf065682cb7c5d20049c439265aeec24598864aca71bcdf25cac1e6",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_009550_cold_boot.png": "ceaaae926efa78b1ac365d7e65d4db94f4924ebc5a3be17932f6d16353843336",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_009950_cold_boot.png": "7356e6094b4c8c37edf8a36f00d7eadd925c9d256356181a43467bbc2f8ee767",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_009950_cold_boot.png": "7356e6094b4c8c37edf8a36f00d7eadd925c9d256356181a43467bbc2f8ee767",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_010350_cold_boot.png": "8f1b161588c3fb94b17ac81fd646bdf30f54b3ba6cdd9296c25ca96f0b21eb14",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\frame_010350_cold_boot.png": "8f1b161588c3fb94b17ac81fd646bdf30f54b3ba6cdd9296c25ca96f0b21eb14",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\capture_report.json": "629ea559872fb1ac063a90d528cf3171c7ced9e3879b5d4338790dcf12980e31",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\capture\\capture_report.json": "cd781e3ba1f1cc50fb970d2b0bc4e0883e85bc48fc076fe09fcf7793634fc564",
+    "work\\ship_name_confirmation_20261114_v1\\buy\\requests.json": "ad79d5b0272cc22d2728b3ddb5cc3621d639fa07715bb4ff859e658f29dc5e1b",
+    "work\\name_or_words_confirmation_20261114_v3\\buy\\requests.json": "c1f1f03f34a9ba533766dace321577da0c70d5536fa0ad0cf348a7e71d750421",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_013700_cold_boot.png": "9e656e4c858f32a2efbae129b5849441fb4fa5b308552c4247371236e4ee1ca4",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_013700_cold_boot.png": "9e656e4c858f32a2efbae129b5849441fb4fa5b308552c4247371236e4ee1ca4",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_013850_cold_boot.png": "c0a0c06f21eefdbd5c7f4444ea7283d0643aefcf1e22de04c379e3e674612391",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_013850_cold_boot.png": "7beda26f56a00935cea1f376691bfdb7cd6f604387779b518cec3fd107d23fdb",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_014250_cold_boot.png": "b3a236f85437ad8dc22f958cfbd996339eb35d5d972d7c595d2acd2b323b38fc",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_014250_cold_boot.png": "b3a236f85437ad8dc22f958cfbd996339eb35d5d972d7c595d2acd2b323b38fc",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_014650_cold_boot.png": "c0a0c06f21eefdbd5c7f4444ea7283d0643aefcf1e22de04c379e3e674612391",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_014650_cold_boot.png": "7beda26f56a00935cea1f376691bfdb7cd6f604387779b518cec3fd107d23fdb",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_015050_cold_boot.png": "7f4cc7294e19bbf42415fdb35c5d6c13708b0fb325494357a06ac07140a4950a",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_015050_cold_boot.png": "7f4cc7294e19bbf42415fdb35c5d6c13708b0fb325494357a06ac07140a4950a",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\frame_015450_cold_boot.png": "1254126994ae0e22704fa80e6cbd1bfb5259fce852d30c56b5303c8f72abb9d2",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\frame_015450_cold_boot.png": "1254126994ae0e22704fa80e6cbd1bfb5259fce852d30c56b5303c8f72abb9d2",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\capture\\capture_report.json": "38ae08edfe089a03d466a2aa6713127cd07b8c10e7a7d1fe78f4f23a1d90e26d",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\capture\\capture_report.json": "2e1b962e52c180c30fb8397dd6120698cc0b78418e5b1055d6878a22e87c0dbd",
+    "work\\ship_name_confirmation_20261114_v1\\rename\\requests.json": "6b789d9dcc849b76794c24483ea9725224b3763a9c365450c834a5735a697771",
+    "work\\name_or_words_confirmation_20261114_v3\\rename\\requests.json": "18c8d605f9eac5834bcc6ac6851f47266ce82c7456a1c2eef54a949c76097ce7"
+  },
+  "hardware": false,
+  "earlier_macro_corruption": {
+    "input": "FIONA",
+    "earlier_display": "Ｉs HodramONA all right?",
+    "earlier_candidate_sha256": "0bee041181d6b748840d4f8ee7bf1ffa7346da0bd6ce9c31404c592ba3c89900",
+    "snapshot": {
+      "frame": 9550,
+      "path": "work\\ship_name_confirmation_20261114_v1\\buy\\capture\\frame_009550_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "2df7ef78b0b61fc414da14f6abd5462d534329c3f8f67ed6a297f25f00c8f559",
+      "read_only_export": true
+    },
+    "captured_representative_only": true
+  },
+  "selector_scope_comparisons": 11010,
+  "full_goal_complete": false,
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "direct_visual_review_complete": true
+}

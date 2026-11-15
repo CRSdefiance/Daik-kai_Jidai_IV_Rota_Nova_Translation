@@ -1,0 +1,7 @@
+# Market Price Info wraps
+
+The [registered review](../releases/all_routes_editorial_20261115_price_info_wraps_candidate/verification/registered_review.json) revisits all nine Price Info descriptions that used two pages. Seven now fit on one page. Clove retains its plant family, aroma, use in meat dishes, and comparison with pepper and cinnamon. Bananas regains the plant family. Corn keeps the same wording with a complete sentence at the page turn. Jade keeps its existing wording and pagination.
+
+The original native loader and renderer passed nine selections and eleven complete pages. All nine revised pages received visual review. In the [Lisbon replay](../releases/all_routes_editorial_20261115_price_info_wraps_candidate/verification/price_info_before_after.png), Cheese fit on one page and returned to the original list after one advance. The parent displayed two pages. Twelve other frames matched. The replay used the existing copied Lisbon save. Corn and the other revised descriptions received offline checks. Hardware testing remains open.
+
+The startup controls matched six frames and 24 protected getters. Thirty-four targeted tests passed. Two historical tests skipped because their ROM fixtures were unavailable. The [cumulative ROM and exact clean-input patch](../releases/all_routes_editorial_20261115_price_info_wraps_candidate/README.md) retain all 114 accepted layers and the ASCII right bound. All nine reviews had existing credit. The ledger stands at 27,700 credited reviews and 276 mapped shared records remaining.

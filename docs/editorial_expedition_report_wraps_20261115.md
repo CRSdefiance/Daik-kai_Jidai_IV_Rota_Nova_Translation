@@ -1,0 +1,7 @@
+# Expedition report wraps
+
+The [registered review](../releases/all_routes_editorial_20261115_expedition_report_wraps_candidate/verification/registered_review.json) covers all 35 oasis, mirage, bog, and preliminary-discovery reports. Seven received prose revisions, twelve were rewrapped without changing the wording, and sixteen were retained. The original speaker tables and provisional language are preserved. Two oasis reactions fit on one line, the bog warning keeps “I hear” together, and the preliminary reports keep “found something” together.
+
+All 35 native portrait cases passed. The [19 revised pages](../releases/all_routes_editorial_20261115_expedition_report_wraps_candidate/verification/portrait_sheet_01.png) received visual review. A representative emulator Search replay used the existing copied save and disclosed location and crew setup. It reproduced the related shore report, the loss of 11 sailors, and the original return to sailing. The 19 changed variants received offline checks. Hardware testing remains open.
+
+The cumulative startup matched six frames and 24 protected name getters. Forty current tests passed. A separate historical test module could not run because its V254 ROM fixture was unavailable. The [registered cumulative ROM and exact clean-input patch](../releases/all_routes_editorial_20261115_expedition_report_wraps_candidate/README.md) preserve all 114 accepted layers and the ASCII right bound. All 35 records already had credit. The ledger stands at 27,700 reviews with 276 mapped shared records remaining.

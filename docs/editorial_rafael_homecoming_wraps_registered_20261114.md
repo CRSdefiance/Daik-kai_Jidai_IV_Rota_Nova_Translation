@@ -1,0 +1,7 @@
+# Rafael’s homecoming and recruitment exchanges
+
+The [registered review](../releases/all_routes_editorial_20261114_rafael_homecoming_wraps_candidate/verification/registered_review.json) resolves 28 flagged lines across eight source blocks. Twenty-five revise the wording, two reflow their retained prose and one keeps its exact stored layout. The royal audiences distinguish petitioning the Pope from the report of his support. The appointment keeps the viceroy title and the extent of the Estado. The crew’s reactions to Charlotte’s Portuguese letter and the tavern and recruitment replies were reviewed with their surrounding turns.
+
+All 60 before-and-after pages were inspected. All 224 alignments and 27 changed command boundaries passed. Scoped emulator replay verified five revised pages and three following replies using original commands in Rafael’s initialized opening. Natural scene triggers and hardware remain unvisited. The remaining pages received offline checks. Separate cumulative cold boot and 56 targeted tests passed.
+
+The [cumulative ROM and byte-exact patch](../releases/all_routes_editorial_20261114_rafael_homecoming_wraps_candidate/README.md) preserve the Market and Sailor Info fixes and the ASCII right bound. The [wrap scan](../translations/editorial_checkpoints/SharedText_20261110_v1/current_progressive_wrap_triage_v9.json) has 688 open leads. The ledger holds 27,697 credited reviews. The 279 shared records, remaining UI and name coverage, and representative town and random-scene coverage remain open.

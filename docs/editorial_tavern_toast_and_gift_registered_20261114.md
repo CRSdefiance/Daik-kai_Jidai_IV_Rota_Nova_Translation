@@ -1,0 +1,7 @@
+# Tavern introductions and gifts
+
+Faticia now confirms the player's name and toasts their meeting. Hodram's gift reply gives the item's name directly. The other captains keep their original replies and follow-up questions. The [exchange ledger](../translations/editorial_checkpoints/SharedText_20261110_v1/tavern_drinks_rumors_gifts_20261114_v1.json) records the full clean Japanese comparison, two revisions and 32 justified retentions across prices, rumors, the drink offer and the gift sequence.
+
+The ordinary Istanbul replay displayed the revised toast. The separate No path displayed the existing teasing reply and returned to town. Thirteen surrounding frames on the paid path were pixel-identical. Offline, all four captain names and all 218 current item names passed the native substitution and wrap checks. Eight gift selectors and eight complete native glyph previews passed. The gift branch remains unvisited in this batch's gameplay. The cumulative startup matched six frames and 24 protected names, using the existing system-only unlock fixture. All 20 targeted tests passed.
+
+The [registered ROM and exact clean-input patch](../releases/all_routes_editorial_20261114_tavern_toast_and_gift_candidate/README.md) preserve all 114 accepted layers. The only changed archive is COMMON, with two records revised in place. The ledger credits 27,699 reviews and 277 mapped shared keys remain to review or classify. Hardware verification remains open.

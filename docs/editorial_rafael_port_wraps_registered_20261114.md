@@ -1,0 +1,7 @@
+# Rafael’s port and artifact exchanges
+
+The [registered review](../releases/all_routes_editorial_20261114_rafael_port_wraps_candidate/verification/registered_review.json) resolves 30 flagged lines across 20 story blocks. Twenty-seven receive prose revisions and three retain their wording with new breaks. The shop exchanges preserve the bargain and its 9,000-coin price. Yukihisa’s letter keeps the Muramasa report as hearsay, the guard’s address preserves the family-name substitution, and the guildmaster’s question keeps Romance of the Three Kingdoms on one line.
+
+All 62 before-and-after pages were visually checked. The 240 native processor alignments and 30 changed speech boundaries passed. Scoped emulator replay matched six revised pages and three following pages from the artifact letter, the guard and Ian’s exchange using original speech commands in Rafael’s initialized opening. The other changed pages received offline checks. Natural triggers and hardware remain unvisited. Separate cumulative cold boot and 56 targeted tests passed.
+
+The [cumulative ROM and byte-exact patch](../releases/all_routes_editorial_20261114_rafael_port_wraps_candidate/README.md) preserve the Market and Sailor Info fixes and the ASCII right bound. The [wrap scan](../translations/editorial_checkpoints/SharedText_20261110_v1/current_progressive_wrap_triage_v11.json) has 633 open leads. The ledger holds 27,697 credited reviews. The 279 shared records, remaining UI and name coverage, and representative town and random-scene coverage remain open.
