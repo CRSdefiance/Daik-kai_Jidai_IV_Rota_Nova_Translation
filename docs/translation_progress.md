@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Market letter-of-introduction dialogue on two complete rows. [Checkpoint](editorial_market_introduction_wrap_registered_20261123.md)
+
+The Market trader's offer and thanks now each fit on a complete row. The review revisits 11 records and retains ten with individual reasons. Paired emulator fixtures verified the revised offer, the small-town instructions, the farewell and the return. Earned activation and handheld testing remain open for this branch. [Exact source and display review](../releases/all_routes_editorial_20261123_market_introduction_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 61b2a5e82a2ab97b2418d4c85ad0bed24595a37653f415c7a7375d5fc1bbdfdb. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 checked redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_market_introduction_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/market_intro_wrap_20261123/checkpoint_cleanup.json)
+
+All four story archives and the 276 pending shared records match the predecessor. The Port Fleet captain warning and Gerhard's aide refusal are the next phrase-break leads. [Shared inventory](../releases/all_routes_editorial_20261123_market_introduction_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 The 43-address list is reconciled with later coverage. The registered ROM matches all 827 references in the historical bounded census. Fresh checks preserved the existing supported IDs in 73 changed argument windows and confirmed that the number-format fixes still select Power 288 and Recruit Crew 904. The 276 stored entries remain open for display paths beyond the verified scope. [Current caller inventory](editorial_bounded_shared_calls_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

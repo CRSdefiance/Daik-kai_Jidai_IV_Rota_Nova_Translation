@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Market letter-of-introduction dialogue on two complete rows. [Checkpoint](editorial_market_introduction_wrap_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Reports label and verified the title Options controls. [Checkpoint](editorial_title_reports_label_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
