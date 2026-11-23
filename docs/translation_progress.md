@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **249 of 276 shared entries** within verified paths. The eleven new dispositions cover character setup, Options, the checksum warning, and Angelo and Samwell's recruitment art. **27 entries remain open**. The ordinary replays, controlled checksum fixture, and offline story checks are recorded separately. [Current evidence](editorial_legacy_setup_and_recruitment_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+The registered Online guide restores ship types, the number of sails, and the Leaning Tower of Pisa. The five revised holds passed complete text and outline checks. The comparison also verified the previous guide panel, the title return, and six startup holds. The 17 focused regressions passed. [Exact source and display review](../releases/all_routes_editorial_20261123_online_card_copy_candidate/verification/registered_review.json)
+
+Drive contains a single .nds and its readback matches SHA-256 d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb. The clean-input patch reconstructs the same ROM byte for byte. Cleanup reclaimed 60,824,450 duplicate bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_online_card_copy_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/online_card_copy_20261123/checkpoint_cleanup.json)
+
+238 shared entries have scoped dispositions. Continue with the 38 outside those scopes and preserve the direct-caller references for all 276. [Display inventory](../translations/editorial_checkpoints/shared_display_20261123/promotional_display_paths_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Online ship and world card wording corrections. [Checkpoint](editorial_online_card_copy_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Reconciled the 27 distinct promotional records with the verified Online and About Extras routes. **238 of 276 shared entries** now have a scoped disposition. All 23 Online screenshots and the complete pixels of 13 text cards passed. Eleven card texts were retained with individual reasons. Two source-fidelity revisions await release testing. [Promotional checkpoint](editorial_promotional_display_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **211 of 276 shared entries** by verified display path. Four offline cases confirmed that the original missing-save branch discards COMMON 111. The separate DS ending prompt and all four earlier glyph checks account for the verified ending path associated with the stored COMMON 119 prompt. **65 entries remain**. No new prose or review credit was added. [Save-path source and runtime evidence](../translations/editorial_checkpoints/shared_display_20261123/legacy_save_dispositions_20261123.json)
 
 # Current editorial checkpoint - 2026-11-23

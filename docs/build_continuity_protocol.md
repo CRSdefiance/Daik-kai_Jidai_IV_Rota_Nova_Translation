@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Online ship and world card wording corrections. [Checkpoint](editorial_online_card_copy_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the spacing correction in all four ending credit lines. [Checkpoint](editorial_ending_credit_spacing_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

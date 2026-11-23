@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified **11 more shared display paths**. Ordinary New Game and Options matched the previous screens, the independent checksum warning passed complete glyph checks, and original story commands tie Angelo and Samwell to their recruitment artwork across all four routes. **27 of the 276 shared entries** still need a scoped disposition. Continue with the 16 other legacy prompts, nine title variants, and the Hans and Arcadius and Maria and Clifford labels. The Online Card Copy build remains the registered testing ROM. [Current evidence](editorial_legacy_setup_and_recruitment_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+The registered Online guide restores ship types, the number of sails, and the Leaning Tower of Pisa. The five revised holds passed complete text and outline checks. The comparison also verified the previous guide panel, the title return, and six startup holds. The 17 focused regressions passed. [Exact source and display review](../releases/all_routes_editorial_20261123_online_card_copy_candidate/verification/registered_review.json)
+
+Drive contains a single .nds and its readback matches SHA-256 d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb. The clean-input patch reconstructs the same ROM byte for byte. Cleanup reclaimed 60,824,450 duplicate bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_online_card_copy_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/online_card_copy_20261123/checkpoint_cleanup.json)
+
+238 shared entries have scoped dispositions. Continue with the 38 outside those scopes and preserve the direct-caller references for all 276. [Display inventory](../translations/editorial_checkpoints/shared_display_20261123/promotional_display_paths_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Online ship and world card wording corrections. [Checkpoint](editorial_online_card_copy_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified the title-page scope for all 27 distinct promotional records. Two controller replays confirmed 23 rotating images, the complete text of the 13 Online cards, and zero COMMON lookups. **38 shared entries** remain outside the checked scopes. The archived promotional text keeps its exact references for any later direct caller evidence. Two visible card corrections are in preparation to restore the number of sails and the Leaning Tower of Pisa. [Source and gameplay checkpoint](editorial_promotional_display_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified two legacy save paths. The native missing-save branch fetches COMMON 111 and discards it. The DS ending uses the separate prompt at COMMON 316, with complete glyphs confirmed in all four focused ending replays. The archived memory-card prompt at COMMON 119 keeps its exact source and installed references. **65 of the 276 stored entries** still need distinct dispositions. Continue with the remaining 25 legacy dialogue records, 27 promotional texts, nine title labels, and four scene labels. [Save-path ledger](../translations/editorial_checkpoints/shared_display_20261123/legacy_save_dispositions_20261123.json)
 
 # Current editorial checkpoint - 2026-11-23
