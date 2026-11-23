@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Matched the current release to verified paths for fleet debt, discovery, Attack Town, and Quit. **22 of 276 shared entries** still need scoped dispositions. Continue with 11 legacy records, nine title variants, and two scene labels. The Online Card Copy candidate remains the registered testing ROM. [Current evidence](editorial_legacy_fleet_and_quit_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified **11 more shared display paths**. Ordinary New Game and Options matched the previous screens, the independent checksum warning passed complete glyph checks, and original story commands tie Angelo and Samwell to their recruitment artwork across all four routes. **27 of the 276 shared entries** still need a scoped disposition. Continue with the 16 other legacy prompts, nine title variants, and the Hans and Arcadius and Maria and Clifford labels. The Online Card Copy build remains the registered testing ROM. [Current evidence](editorial_legacy_setup_and_recruitment_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

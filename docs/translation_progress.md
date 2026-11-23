@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **254 of 276 shared entries** within verified paths. The five additions cover fleet debt, port discovery, Attack Town, and Quit. Exact current dependencies support reuse of earlier ordinary gameplay, focused fixtures, and offline cases. **22 entries remain open**. [Current evidence](editorial_legacy_fleet_and_quit_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **249 of 276 shared entries** within verified paths. The eleven new dispositions cover character setup, Options, the checksum warning, and Angelo and Samwell's recruitment art. **27 entries remain open**. The ordinary replays, controlled checksum fixture, and offline story checks are recorded separately. [Current evidence](editorial_legacy_setup_and_recruitment_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
