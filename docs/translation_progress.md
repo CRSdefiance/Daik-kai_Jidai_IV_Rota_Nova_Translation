@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **211 of 276 shared entries** by verified display path. Four offline cases confirmed that the original missing-save branch discards COMMON 111. The separate DS ending prompt and all four earlier glyph checks account for the verified ending path associated with the stored COMMON 119 prompt. **65 entries remain**. No new prose or review credit was added. [Save-path source and runtime evidence](../translations/editorial_checkpoints/shared_display_20261123/legacy_save_dispositions_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **209 of 276 shared entries** by verified display path. The 33 new title and movie dispositions used current emulator playback, exact historical comparisons and an offline native branch check. **67 remain open**. [Opening and movie checkpoint](editorial_opening_and_movie_label_dispositions_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

@@ -1,0 +1,375 @@
+{
+  "candidate_sha256": "8de034c6ba32bcff3e1301aa76eb3c760ad090a5e7764128cc6919a400ed1cf8",
+  "source_storage_inventory": 276,
+  "label_dispositions": [
+    {
+      "message_ID": 111,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 432,
+        "copy_end": 480,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 105
+      },
+      "installed_reference": {
+        "block": 1,
+        "offset": 376,
+        "copy_end": 407,
+        "bytes": 29,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 82
+      },
+      "clean_Japanese": "ゲームデータが\nありません。\nロードできません。",
+      "clean_hex": "8351815b83808366815b835e82aa0a82a082e882dc82b982f181420a838d815b836882c582ab82dc82b982f18142",
+      "installed_English": "There's no game data to load.",
+      "installed_hex": "54686572652773206e6f2067616d65206461746120746f206c6f61642e",
+      "historical_manuscript_review": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "There's no game data to load.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "other_direct_COMMON_consumers_unverified": true,
+      "disposition": "The native missing-save branch fetches the text and immediately discards it.",
+      "retention_reason": "The existing sentence preserves that game data is absent and unavailable to load.",
+      "verified_offline_branches": [
+        {
+          "offline_supplied_branch_inputs": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "loaded_ids": [
+            111
+          ],
+          "immediate_no_write_returns": [
+            {
+              "message_ID": 111,
+              "pointer": 36243212,
+              "return_address": 34529184
+            }
+          ],
+          "branch_end": 34528508,
+          "exact_warm_block_input": 1,
+          "warm_block_sha256": "92f774b2a2819be379e6a7494db49f1dd04ad7b4ca0dcbf1af3ea90e7f550315"
+        },
+        {
+          "offline_supplied_branch_inputs": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "loaded_ids": [
+            112,
+            111
+          ],
+          "immediate_no_write_returns": [
+            {
+              "message_ID": 112,
+              "pointer": 36243212,
+              "return_address": 34529160
+            },
+            {
+              "message_ID": 111,
+              "pointer": 36243212,
+              "return_address": 34529184
+            }
+          ],
+          "branch_end": 34528508,
+          "exact_warm_block_input": 1,
+          "warm_block_sha256": "92f774b2a2819be379e6a7494db49f1dd04ad7b4ca0dcbf1af3ea90e7f550315"
+        },
+        {
+          "offline_supplied_branch_inputs": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loaded_ids": [
+            112
+          ],
+          "immediate_no_write_returns": [
+            {
+              "message_ID": 112,
+              "pointer": 36243212,
+              "return_address": 34529160
+            }
+          ],
+          "branch_end": 34529236,
+          "exact_warm_block_input": 1,
+          "warm_block_sha256": "92f774b2a2819be379e6a7494db49f1dd04ad7b4ca0dcbf1af3ea90e7f550315"
+        },
+        {
+          "offline_supplied_branch_inputs": [
+            1,
+            1,
+            2,
+            0
+          ],
+          "loaded_ids": [],
+          "immediate_no_write_returns": [],
+          "branch_end": 34529236,
+          "exact_warm_block_input": 1,
+          "warm_block_sha256": "92f774b2a2819be379e6a7494db49f1dd04ad7b4ca0dcbf1af3ea90e7f550315"
+        }
+      ],
+      "native_runtime": {
+        "candidate": ".codex-release-work\\ending_credit_spacing_20261123\\registered\\Translation_DS_Ending_Credit_Spacing_20261123_candidate.nds",
+        "candidate_sha256": "8de034c6ba32bcff3e1301aa76eb3c760ad090a5e7764128cc6919a400ed1cf8",
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "COMMON_sha256": "18780411a5b48c04c9262c72cd67c69f29af7e0babf201433b56d3d100b85160",
+        "release_proof": "releases\\all_routes_editorial_20261123_ending_credit_spacing_candidate\\verification\\registered_release_verification.json",
+        "release_proof_sha256": "b5f3a7058e021f319fd1518aae733010c36b3e7404178a7384431e79de06b876",
+        "startup_proof": "releases\\all_routes_editorial_20261123_ending_credit_spacing_candidate\\verification\\own_startup_verification.json",
+        "startup_proof_sha256": "0e563c2aed00ad493d8c6020e302363e50515bcd45b84b7b33de006a0bac6c00",
+        "snapshot": {
+          "path": ".codex-release-work\\ending_credit_spacing_20261123\\startup\\capture\\final_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "69062728b1025fb115671ca7ea14a2332638169a528ca2474ab0d3640f04afa8",
+          "read_only_export": true
+        },
+        "captain": 3,
+        "current_own_snapshot_not_historical_overlay": true,
+        "complete_staged_payload_exact": true,
+        "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+        "native_offline_checks_not_new_gameplay": true
+      }
+    },
+    {
+      "message_ID": 119,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 920,
+        "copy_end": 976,
+        "bytes": 53,
+        "record_index": 9,
+        "table_offset": 1317374,
+        "start_in_record": 1
+      },
+      "installed_reference": {
+        "block": 1,
+        "offset": 804,
+        "copy_end": 860,
+        "bytes": 53,
+        "record_index": 10,
+        "table_offset": 1317374,
+        "start_in_record": 0
+      },
+      "clean_Japanese": "エンディングデータをメモリーカードに\nセーブしますか？",
+      "clean_hex": "83478393836683428393834f8366815b835e82f083818382838a815b834a815b836882c90a835a815b837582b582dc82b782a98148",
+      "installed_English": "Save ending?\n  To memory card?                       ",
+      "installed_hex": "5361766520656e64696e673f0a2020546f206d656d6f727920636172643f2020202020202020202020202020202020202020202020",
+      "historical_manuscript_review": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "Save the ending data to the memory card?",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "other_direct_COMMON_consumers_unverified": true,
+      "disposition": "The cartridge ending prompt is separately supplied by COMMON 316 on the verified DS path.",
+      "retained_displayed_prompt": {
+        "message_ID": 316,
+        "file_path": "/COMMON/MESFILE.DK4",
+        "source_reference": {
+          "block": 4,
+          "offset": 3156,
+          "copy_end": 3192,
+          "bytes": 36,
+          "record_index": 45,
+          "table_offset": 1317768,
+          "start_in_record": 57
+        },
+        "current_reference": {
+          "block": 4,
+          "offset": 3249,
+          "copy_end": 3271,
+          "bytes": 21,
+          "record_index": 89,
+          "table_offset": 1317768,
+          "start_in_record": 0
+        },
+        "source_hex": "83478393836683428393834f8366815b835e82f0835a815b837582b582dc82b782a98148",
+        "current_hex": "536176652074686520656e64696e6720646174613f",
+        "clean_Japanese": "エンディングデータをセーブしますか？",
+        "current_English": "Save the ending data?",
+        "decision": "retention",
+        "runtime_substitutions": [],
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        },
+        "context": "Immediately after the credits. No returns to title and Yes opens the save-slot picker.",
+        "localization_note": "Keep the direct question. Ending data identifies what the player is saving at this point."
+      },
+      "exact_clean_and_current_selector_sha256": "f0bacf671f94c1ac9b9af6b19b521a16bc7f0173308816ec5346dd9d92a94d8a",
+      "one_byte_state_fixture_ending_holds": {
+        "Rafael": {
+          "text": "Save the ending data?",
+          "bounds": [
+            16,
+            297,
+            142,
+            308
+          ],
+          "ink_pixels": 239,
+          "color": [
+            0,
+            8,
+            0
+          ],
+          "complete_ink_and_blank_cells_exact": true
+        },
+        "Hodram": {
+          "text": "Save the ending data?",
+          "bounds": [
+            16,
+            297,
+            142,
+            308
+          ],
+          "ink_pixels": 239,
+          "color": [
+            0,
+            8,
+            0
+          ],
+          "complete_ink_and_blank_cells_exact": true
+        },
+        "Lil": {
+          "text": "Save the ending data?",
+          "bounds": [
+            16,
+            297,
+            142,
+            308
+          ],
+          "ink_pixels": 239,
+          "color": [
+            0,
+            8,
+            0
+          ],
+          "complete_ink_and_blank_cells_exact": true
+        },
+        "Maria": {
+          "text": "Save the ending data?",
+          "bounds": [
+            16,
+            297,
+            142,
+            308
+          ],
+          "ink_pixels": 239,
+          "color": [
+            0,
+            8,
+            0
+          ],
+          "complete_ink_and_blank_cells_exact": true
+        }
+      }
+    }
+  ],
+  "remaining_needing_distinct_disposition": [
+    100,
+    101,
+    102,
+    103,
+    108,
+    109,
+    110,
+    113,
+    114,
+    115,
+    116,
+    117,
+    124,
+    284,
+    287,
+    300,
+    304,
+    318,
+    330,
+    331,
+    332,
+    333,
+    750,
+    751,
+    752,
+    3290,
+    3292,
+    3294,
+    3295,
+    3296,
+    3297,
+    3298,
+    3299,
+    3300,
+    3301,
+    3302,
+    3303,
+    3304,
+    3306,
+    3307,
+    3308,
+    3309,
+    3310,
+    3311,
+    3312,
+    3313,
+    3314,
+    3315,
+    3316,
+    3317,
+    3318,
+    3319,
+    3401,
+    3490,
+    3500,
+    3515,
+    3577,
+    3578,
+    3594,
+    3595,
+    3596,
+    3597,
+    3598,
+    3599,
+    3600
+  ],
+  "new_gameplay_runs": 0,
+  "new_dialogue_credit": 0,
+  "global_absence_claim": false,
+  "evidence": {
+    "translations\\editorial_checkpoints\\shared_display_20261123\\opening_label_dispositions_20261123.json": "da5d7eb23e2648abc544f69a522ed8e351fec7e6eaf089ed68ff483a387bd8b6",
+    "translations\\editorial_checkpoints\\shared_display_20261123\\current_shared_display_evidence_20261123.json": "bb6556719ed4a09641c36c6345e21d9edb15c72c1c079552c16f63f1adb760e7",
+    "releases\\all_routes_editorial_20261123_ending_credit_spacing_candidate\\verification\\registered_release_verification.json": "b5f3a7058e021f319fd1518aae733010c36b3e7404178a7384431e79de06b876",
+    "releases\\all_routes_editorial_20261123_ending_credit_spacing_candidate\\verification\\registered_review.json": "e34162aa1f5933b9008461a7bfbd9731fc536cd89d9a501de691e8fc81da3b08",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\continue_legacy_calls_20261115_v1.json": "5b27be030f92a5303adc899e0760ed589fdd5ed3cd6a4ce9fd75caf7aac96442",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ending_save_scope_20261120_v1.json": "3aa66b248aaabaee0df686d09e257f1921668bdc710c7a4b68f9f781ce2d6437",
+    "releases\\all_routes_editorial_20261123_ending_credit_spacing_candidate\\verification\\verified_playback.json": "27654478082b24e2262533ac2a1f3eba4237e797ceec20ef60a683e7c902595f"
+  }
+}

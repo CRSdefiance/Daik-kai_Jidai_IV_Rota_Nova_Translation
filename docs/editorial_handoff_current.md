@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified two legacy save paths. The native missing-save branch fetches COMMON 111 and discards it. The DS ending uses the separate prompt at COMMON 316, with complete glyphs confirmed in all four focused ending replays. The archived memory-card prompt at COMMON 119 keeps its exact source and installed references. **65 of the 276 stored entries** still need distinct dispositions. Continue with the remaining 25 legacy dialogue records, 27 promotional texts, nine title labels, and four scene labels. [Save-path ledger](../translations/editorial_checkpoints/shared_display_20261123/legacy_save_dispositions_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified **33 more shared display paths** for title and story movie labels. The current title replay matched 173 full reference frames, and none of the five cold boots requested a pending label. The original and installed SC2 B70 branches both load the tulip field as movie artwork. **67 of the 276 entries** still need distinct dispositions. Continue with legacy dialogue, the distinct promotional copy, and the unmatched title and scene variants. The ending-credit candidate remains the current testing release. [Opening and movie checkpoint](editorial_opening_and_movie_label_dispositions_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
