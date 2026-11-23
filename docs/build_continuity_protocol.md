@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the spacing correction in all four ending credit lines. [Checkpoint](editorial_ending_credit_spacing_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Faticia's one-line reply after the player declines another drink. [Checkpoint](editorial_tavern_drink_reply_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

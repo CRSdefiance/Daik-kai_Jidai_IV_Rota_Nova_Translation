@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-23
 
+Resolved **53 more shared entries for their verified paths**. Controller replays covered the four New Game biographies and 19 Online and About Extras screens, confirming eight stored aliases. Offline execution verified 45 story labels whose associated original commands load stills by filename. **100 entries** still need their own display dispositions. Keep all 276 storage references for future direct caller evidence. The ending-credit candidate remains the current testing release. [Source, gameplay, and native checks](editorial_chooser_online_and_still_dispositions_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+All 164 Gallery captions passed complete glyph and pointer checks through four controller-driven carousels. Each wrapped to its starting scene and the replay returned to the title. The trace recorded zero COMMON lookups. The **123 exact stored aliases** now have dispositions for their independently displayed Gallery text. The other **153** still need their own dispositions. Retain all 276 exact storage references for any newly discovered callers. [Gallery checkpoint](editorial_gallery_caption_dispositions_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the spacing correction in all four ending credit lines. [Checkpoint](editorial_ending_credit_spacing_registered_20261123.md)
+
+All four ending movies display **Special Thanks: BRIDGE Inc.** Four focused cold boots used the original ending selector and verified 80 whole credit frames across fade states, plus all four ending-save prompts. The original attribution and complete lettering passed visual and pixel checks. Earned completion and hardware remain unvisited in this batch. [Source and render evidence](../releases/all_routes_editorial_20261123_ending_credit_spacing_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 8de034c6ba32bcff3e1301aa76eb3c760ad090a5e7764128cc6919a400ed1cf8. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup recorded 8 verified duplicate storage paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_ending_credit_spacing_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/ending_credit_spacing_20261123/checkpoint_cleanup.json)
+
+The 276 stored shared text entries still need their display paths resolved. The source and installed bytes of all four story archives, COMMON and ARM9 remain exact to the predecessor.
+
+# Current editorial checkpoint - 2026-11-23
+
 An ordinary westbound voyage from Ceuta verified seven text holds for five source records on the registered Tavern build. The storm, food and water depletion, exhaustion, two level-up notices and the crew-loss warning passed their text and glyph checks. Zero sailors aboard Vestaros led to Game Over. Azores docking and resupply remain open for ordinary gameplay. The 276 pending shared display entries stay in scope. [Gameplay and source checkpoint](editorial_ordinary_azores_voyage_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
