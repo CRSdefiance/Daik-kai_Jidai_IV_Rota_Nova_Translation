@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Rafael's fleet and crew exchanges from Seville through the Ninja Garb rumor. [Checkpoint](editorial_rafael_fleet_and_crew_exchanges_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's Charlotte exchange and his first East Asia scenes with Maria. [Checkpoint](editorial_rafael_charlotte_and_maria_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Hodram's Aziza and Cristina exchanges and Lil's Clifford and Rafael exchanges. [Checkpoint](editorial_hodram_and_lil_followups_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22

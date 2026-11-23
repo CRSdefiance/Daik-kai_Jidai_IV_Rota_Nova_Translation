@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Rafael's fleet and crew exchanges from Seville through the Ninja Garb rumor. [Checkpoint](editorial_rafael_fleet_and_crew_exchanges_registered_20261122.md)
+
+Six complete exchanges add 224 decisions. Twelve passages changed to address the flagged wraps, and 212 have individual retention reasons. Fifteen revised display cases passed exact glyph checks across default and maximum name widths. All four original system panels and nine supporting role labels passed their native checks. Focused gameplay verified 25 holds and the return to port. Natural story activation and handheld verification remain open for this batch. [Exact review](../releases/all_routes_editorial_20261122_rafael_fleet_and_crew_exchanges_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 819416670623f2eacc69ae9c1af66e9ac909c5e0b0258b4f05b2f6079a535128. Startup and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. Cleanup removed 19 redundant files and reclaimed 554,379,185 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261122_rafael_fleet_and_crew_exchanges_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_fleet_and_crew_exchanges_20261122/checkpoint_cleanup.json)
+
+The current scan has 215 wrap leads awaiting a decision. The next Hodram packet covers 282 texts in 18 complete early and midroute exchanges, including 24 flagged wraps and four original choice labels. Continue Rafael's remaining story leads, the other storylines, ordinary town and random scenes, names, and remaining player-facing prose. Preserve the 276 shared display leads, 27,700 historical credits, deferred artwork, and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_fleet_and_crew_exchanges_20261122/current_wrap_queue.json) · [Next Hodram packet](../translations/editorial_checkpoints/hodram_early_and_midroute_wraps_20261122/paired_source.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's Charlotte exchange and his first East Asia scenes with Maria. [Checkpoint](editorial_rafael_charlotte_and_maria_registered_20261122.md)
+
+Four complete exchanges add 134 decisions. Twelve passages changed and 122 have individual reasons for retention. All 12 revised pages passed exact glyph and wrap checks. Focused emulator gameplay verified 17 speech holds, including two default-name substitutions and the return to port. Natural scene activation and handheld display remain unvisited for this batch. [Exact review](../releases/all_routes_editorial_20261122_rafael_charlotte_and_maria_candidate/verification/registered_review.json)
+
+Ordinary saved gameplay verified twelve shop and tavern panels across Ceuta and Lisbon. The sailor's question tag stays on the first line at both ports. [Town dialogue evidence](../releases/all_routes_editorial_20261122_rafael_charlotte_and_maria_candidate/verification/verified_visits.json)
+
+The sole .nds on Drive matches SHA-256 e6cd4bc3d3fea034110099174446458e6bee05dd755f64124bb45230f4a1c662. Startup and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. Cleanup removed 19 redundant files and reclaimed 553,915,290 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261122_rafael_charlotte_and_maria_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_charlotte_and_maria_20261122/checkpoint_cleanup.json)
+
+The current scan has 227 wrap leads awaiting a decision. The next Rafael packet covers six full exchanges in B74, B81, B83, B87, B90 and B97, with 224 texts, twelve wrap leads and four system panels. Continue the other storylines, ordinary town and random scenes, names and remaining player-facing prose. Preserve the 276 shared display leads, 27,700 historical credits, deferred artwork, and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_charlotte_and_maria_20261122/current_wrap_queue.json) · [Next Rafael packet](../translations/editorial_checkpoints/rafael_fleet_and_crew_exchanges_20261122/paired_source.json)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Hodram's Aziza and Cristina exchanges and Lil's Clifford and Rafael exchanges. [Checkpoint](editorial_hodram_and_lil_followups_registered_20261122.md)
 
 Four complete exchanges add 288 speech and notice decisions and two choice decisions. Eighteen passages changed and 270 texts and both captions have individual retention reasons. All 18 revised pages passed complete glyph and layout checks. Focused emulator gameplay verified 30 holds, four original notices, both choice responses, and the host exits. The natural story triggers and handheld display remain unvisited. [Exact review](../releases/all_routes_editorial_20261122_hodram_and_lil_followups_candidate/verification/registered_review.json)
