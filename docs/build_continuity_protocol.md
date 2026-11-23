@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the four observed wrap fixes for Cesare, Zhuge Liang, Vivian and Gerhard. [Checkpoint](editorial_observed_wrap_followups_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's town rumors, bargaining scenes, and late story wrap follow-ups. [Checkpoint](editorial_hodram_late_story_wraps_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's late midroute wraps, including Cesare's ship lesson and the Silla Gold Crown exchanges. [Checkpoint](editorial_hodram_late_midroute_wraps_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Rafael's remaining flagged wrap follow-ups. [Checkpoint](editorial_rafael_remaining_wraps_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

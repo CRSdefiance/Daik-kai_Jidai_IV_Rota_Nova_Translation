@@ -1,5 +1,35 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the four observed wrap fixes for Cesare, Zhuge Liang, Vivian and Gerhard. [Checkpoint](editorial_observed_wrap_followups_registered_20261123.md)
+
+Four wrap revisions across Rafael and Hodram reconcile 84 texts in four complete exchanges. The review carries forward 73 individual speech decisions, seven original choice captions and ten names or roles. Five stored native pages passed. Nine focused emulator holds cover the two pages of Cesare's revised trade routes explanation, the return to the following panel, the one-page Zhuge Liang reply, and both Rafael passages. Ordinary activation and handheld testing remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_observed_wrap_followups_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 fde06de0b3ddea0a5cec57be15a421fea01474973772bf2cb4f5567929292eca. Cold boot, 17 focused tests and byte-exact clean-input patch reconstruction passed. Cleanup reclaimed 122,227,959 bytes of exact duplicates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_observed_wrap_followups_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/observed_wrap_followups_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 46 open leads. The four gameplay or visual issues listed in the preceding checkpoint are resolved in this candidate. Keep the full contextual review across four routes, practical ordinary town and random scene coverage, the 276 shared display leads and 27,700 historical credits in scope. Graphics artwork and the older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/observed_wrap_followups_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's town rumors, bargaining scenes, and late story wrap follow-ups. [Checkpoint](editorial_hodram_late_story_wraps_registered_20261123.md)
+
+The clean-Japanese review reconciled 288 texts in 17 complete Hodram exchanges. It produced 22 wording revisions, 237 speech or panel retentions, 22 retained choice captions and seven retained personality variants. Native checks verified 22 revised pages, 17 speakerless commands and 25 names or roles. Focused emulator runs verified 31 holds, all three commander-choice outcomes and the retained two-page Zhuge Liang response. Other conditional choices, natural event activation and handheld testing remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_hodram_late_story_wraps_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 8a5953dac89f6b66a431bfed28c55ea37952c1eb406e8e9194995bbe129504ad. Cold boot, 17 focused tests and byte-exact clean-input patch reconstruction passed. Cleanup reclaimed 122,227,959 bytes of exact duplicates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_late_story_wraps_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_late_story_wraps_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 46 open leads. Carry forward the four observed wrap issues in Cesare's B167 R0122 trade-route explanation, Hodram's B216 R0078 Zhuge Liang response, and Rafael's B228 R0031 “On Avalon” and B234 R0035 “in the final sea battle.” Keep four routes, practical ordinary town and random scene coverage, the 276 shared display leads and 27,700 historical credits in scope. Graphics artwork and the older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/hodram_late_story_wraps_20261123/current_wrap_queue.json) · [Observed wrap follow-up drafts](../translations/editorial_checkpoints/observed_wrap_followups_20261123/working_review.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's late midroute wraps, including Cesare's ship lesson and the Silla Gold Crown exchanges. [Checkpoint](editorial_hodram_late_midroute_wraps_registered_20261123.md)
+
+The clean-Japanese pass covered 496 records in 15 Hodram exchanges. It produced 24 wording revisions, one wrap-only revision, 469 justified speech or panel retentions, and two retained choice captions. Native checks verified 25 revised pages, 50 speakerless commands and 24 names or roles. Focused emulator runs verified 39 holds, both choices in Cesare's ship lesson and the two-page buying explanation. Ordinary activation and handheld testing remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_hodram_late_midroute_wraps_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 7e96575862d8836204452e3438aff28ba3f019088b63c36b007b9641579274c2. Cold boot, 17 focused tests and byte-exact clean-input patch reconstruction passed. Cleanup reclaimed 122,228,077 bytes of exact duplicates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_late_midroute_wraps_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_late_midroute_wraps_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 68 open leads. Cesare's B167 R0122 wrap is a separate gameplay finding. The first page has four lines with spare width, including successive breaks after “deals” and “towns.” Retain the rule about early trade routes, the one-percent share and the one-to-five-unit limit while reflowing it. Carry forward Rafael's B228 R0031 “On Avalon” and B234 R0035 “in the final sea battle” visual leads. Keep the contextual review, ordinary town and random gameplay, 276 shared display leads and 27,700 historical credits in scope. Artwork and the older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/hodram_late_midroute_wraps_20261123/current_wrap_queue.json) · [Cesare's two-page capture](../releases/all_routes_editorial_20261123_hodram_late_midroute_wraps_candidate/verification/hodram_late_midroute_menus_1.png)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Rafael's remaining flagged wrap follow-ups. [Checkpoint](editorial_rafael_remaining_wraps_registered_20261123.md)
 
 The clean-Japanese pass reconciles 335 records across seventeen complete Rafael exchanges. The ledger carries forward 316 exact decisions and records eighteen wording changes and one wrap-only fix. All nineteen revised pages, four retained speakerless commands and 24 nameplates passed native checks. A focused emulator replay verified twenty holds, including the book and curse exchange. The ordinary triggers and handheld display remain open. [Exact review](../releases/all_routes_editorial_20261123_rafael_remaining_wraps_candidate/verification/registered_review.json)
