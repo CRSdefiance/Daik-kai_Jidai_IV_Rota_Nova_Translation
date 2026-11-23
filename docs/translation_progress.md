@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Ordinary Lisbon World Map, Forces Chart, and Market navigation on the registered ROM showed complete English labels. The new trace confirms use of the initialized Event and World objects while the three Japanese class-name getters stayed inactive. Offline native checks verify both getters' underlying return values. [Coverage and exact storage references](editorial_event_and_world_names_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Rebound the four-route story credit, 416 priority decisions, COMMON and Help evidence to the registered Hodram Elegy ROM. Traced the older Japanese Search and Declare War hints to forced queue types 10 and 11. Every verified stock producer supplies types 0–8, and the three visible English sailing panels match the earlier gameplay evidence. Continue with the remaining indirect class-name and archived COMMON caller leads and practical town and random outcomes. [Current release and exact hint ownership](editorial_queued_sailing_hints_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
