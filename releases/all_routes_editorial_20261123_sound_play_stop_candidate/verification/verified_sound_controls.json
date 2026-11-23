@@ -1,0 +1,436 @@
+{
+  "candidate_sha256": "f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502",
+  "predecessor_sha256": "4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ARM9_SOUND_SETUP_STOP",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Sound Setup A-button prompt",
+      "context": "The same footer prompt follows the selected BGM or SFX controls and exposes the next action.",
+      "source_Japanese": "停止",
+      "english": "Stop",
+      "source_meaning": "Stop the playing music.",
+      "localization_note": "Stop names the action on A when the selected music is playing and pairs with the existing Play label.",
+      "decision": "revision",
+      "native_call": 34635712,
+      "source_reference": {
+        "offset": 1507968,
+        "bytes": "92e28e7e00000000",
+        "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+      },
+      "current_reference": {
+        "offset": 1507968,
+        "bytes": "92e28e7e00000000",
+        "candidate_sha256": "4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b"
+      },
+      "installed_reference": {
+        "offset": 1507968,
+        "bytes": "53746f7000000000",
+        "candidate_sha256": "f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502",
+        "exclusive_end": 1507976,
+        "ARM9_sha256": "df3d245725fc412f2e0e90d6d7787c63f9f4cbb538374544f376f08f61938e65"
+      },
+      "substitutions": [],
+      "pages_in_field": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "ARM9_SOUND_SETUP_PLAY",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Sound Setup A-button prompt",
+      "context": "The same footer prompt follows the selected BGM or SFX controls and exposes the next action.",
+      "source_Japanese": "再生",
+      "english": "Play",
+      "source_meaning": "Play the selected music or effect.",
+      "localization_note": "Play is the established short action for starting a track or previewing the selected sound effect.",
+      "decision": "retention",
+      "native_call": 34635744,
+      "source_reference": {
+        "offset": 1507976,
+        "bytes": "8dc490b600000000",
+        "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+      },
+      "current_reference": {
+        "offset": 1507976,
+        "bytes": "506c617900000000",
+        "candidate_sha256": "4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b"
+      },
+      "installed_reference": {
+        "offset": 1507976,
+        "bytes": "506c617900000000",
+        "candidate_sha256": "f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502",
+        "exclusive_end": 1507984,
+        "ARM9_sha256": "df3d245725fc412f2e0e90d6d7787c63f9f4cbb538374544f376f08f61938e65"
+      },
+      "substitutions": [],
+      "pages_in_field": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "all_full_frame_differences": {
+    "2650": null,
+    "3200": null,
+    "3310": null,
+    "3500": [
+      229,
+      370,
+      253,
+      382
+    ],
+    "3900": [
+      231,
+      370,
+      247,
+      371
+    ],
+    "4150": [
+      231,
+      370,
+      247,
+      371
+    ],
+    "4510": [
+      229,
+      370,
+      253,
+      382
+    ],
+    "4650": [
+      229,
+      370,
+      253,
+      382
+    ],
+    "4850": [
+      231,
+      370,
+      247,
+      371
+    ],
+    "5100": [
+      231,
+      370,
+      247,
+      371
+    ],
+    "5490": [
+      219,
+      370,
+      235,
+      371
+    ],
+    "5800": [
+      219,
+      370,
+      235,
+      371
+    ]
+  },
+  "exact_play_and_stop_glyphs": {
+    "3200": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "3310": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "3500": {
+      "text": "Stop",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 54,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "3900": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "4150": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "4510": {
+      "text": "Stop",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 54,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "4650": {
+      "text": "Stop",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 54,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "4850": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "5100": {
+      "text": "Play",
+      "bounds": [
+        229,
+        371,
+        253,
+        382
+      ],
+      "ink_pixels": 50,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    }
+  },
+  "native_state_trace": [
+    {
+      "frame": 2811,
+      "PC": 34635744,
+      "pointer": 35062408,
+      "text_hex": "506c6179",
+      "playing": 0
+    },
+    {
+      "frame": 3314,
+      "PC": 34635712,
+      "pointer": 35062400,
+      "text_hex": "53746f70",
+      "playing": 1
+    },
+    {
+      "frame": 3862,
+      "PC": 34635744,
+      "pointer": 35062408,
+      "text_hex": "506c6179",
+      "playing": 0
+    },
+    {
+      "frame": 4465,
+      "PC": 34635712,
+      "pointer": 35062400,
+      "text_hex": "53746f70",
+      "playing": 1
+    },
+    {
+      "frame": 4706,
+      "PC": 34635744,
+      "pointer": 35062408,
+      "text_hex": "506c6179",
+      "playing": 1
+    }
+  ],
+  "retired_Japanese_glyph_residue": {
+    "3900": [
+      [
+        231,
+        370
+      ],
+      [
+        236,
+        370
+      ],
+      [
+        246,
+        370
+      ]
+    ],
+    "4150": [
+      [
+        231,
+        370
+      ],
+      [
+        236,
+        370
+      ],
+      [
+        246,
+        370
+      ]
+    ],
+    "4850": [
+      [
+        231,
+        370
+      ],
+      [
+        236,
+        370
+      ],
+      [
+        246,
+        370
+      ]
+    ],
+    "5100": [
+      [
+        231,
+        370
+      ],
+      [
+        236,
+        370
+      ],
+      [
+        246,
+        370
+      ]
+    ],
+    "5490": [
+      [
+        219,
+        370
+      ],
+      [
+        224,
+        370
+      ],
+      [
+        234,
+        370
+      ]
+    ],
+    "5800": [
+      [
+        219,
+        370
+      ],
+      [
+        224,
+        370
+      ],
+      [
+        234,
+        370
+      ]
+    ]
+  },
+  "ordinary_controller_replay": true,
+  "audio_output_assessed": false,
+  "hardware": false,
+  "sheet": {
+    "path": ".codex-release-work/sound_play_stop_20261123/staged_rom/sound_controls.png",
+    "sha256": "d57fa346bb49df56c655fd194201d67a03ec0b78fc3ab96416a251e9d734cdeb"
+  },
+  "evidence": {
+    ".codex-release-work\\sound_play_stop_20261123\\current\\capture\\capture_report.json": "a52a9bf8b5d5f9f39d6b46db0b52108180f2668827fd690066b38a62cb4f5025",
+    ".codex-release-work\\sound_play_stop_20261123\\current\\requests.json": "5c91545a60482d3c5e36dc1c78372da0b240de973421c5e7e5d19e24cb48c09b",
+    ".codex-release-work\\sound_play_stop_20261123\\current\\source_contract.json": "5d1905f4d76fa8919b775c2394df658fa2c33bb9d2f732bd602d61c045124843",
+    ".codex-release-work\\sound_play_stop_20261123\\staged\\capture\\capture_report.json": "b19c112079a93d2b9690b6cf9d5fa9a354dbb6d5100eb4016d11e3038e37debf",
+    ".codex-release-work\\sound_play_stop_20261123\\staged\\requests.json": "7b97a5a138bc0df994377e0a70533f8177356f4faca234345183d8a575d6892c",
+    ".codex-release-work\\sound_play_stop_20261123\\staged\\source_contract.json": "136167630a0f97f401bb1f810619169e04bef89d1774b1c0b0a43f90e55c9f26",
+    ".codex-release-work\\sound_play_stop_20261123\\staged_rom\\stored_proof.json": "20f30ac852ae7907611b5cfeb237f3c0853460f4919965dedb52fa791ab55f36"
+  }
+}

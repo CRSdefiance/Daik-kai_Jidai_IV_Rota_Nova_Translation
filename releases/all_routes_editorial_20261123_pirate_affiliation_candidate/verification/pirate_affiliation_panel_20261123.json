@@ -1,0 +1,407 @@
+{
+  "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ARM9_ALTERNATE_BATTLE_PIRATE_AFFILIATION",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Opponent affiliation nameplate",
+      "source_Japanese": "海賊",
+      "english": "Pirate",
+      "context": "The alternate battle draws the opponent affiliation beside the player's named fleet. The same branch accepts the original faction-name getter for other affiliations.",
+      "source_meaning": "The affiliation field identifies the opponent as a pirate.",
+      "localization_note": "The singular role reads naturally under the opponent and stays distinct from a fleet name. It preserves the source role without assigning a new faction or rank.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "offset": 1246708,
+        "bytes": "8a4391af00000000",
+        "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+      },
+      "current_reference": {
+        "offset": 1246708,
+        "bytes": "8a4391af00000000",
+        "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb"
+      },
+      "proposed_reference": {
+        "offset": 1246708,
+        "bytes": "5069726174650000",
+        "exclusive_end": 1246716
+      },
+      "original_painter_call": 33602628,
+      "substitutions": [],
+      "pages_in_field": 1
+    }
+  ],
+  "native_comparison": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/pirate_affiliation_native_20261123.json",
+    "sha256": "f1d3e2f4be878d57950dc0ad2068f8eccc233410ccf2e3e6071da583bb04e820"
+  },
+  "fixtures": [
+    {
+      "path": ".codex-release-work/shared_display_20261123/alternate_battle_panel_v2/installed/fixture.json",
+      "sha256": "35e8c59c2ac8e40a9e5139e384393bd513bff7742267ccd35bbcd07c63635009"
+    },
+    {
+      "path": ".codex-release-work/shared_display_20261123/alternate_battle_panel_v2/english/fixture.json",
+      "sha256": "8d36ce706d3bd44cac2d3c821f9e5b85003891335b2292e2d088f0f173729db6"
+    }
+  ],
+  "emulator_comparisons": [
+    {
+      "frame": 4800,
+      "only_pixel_changes_within": null,
+      "installed": {
+        "frame": 4800,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_004800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0cab830f818003c6d0d9ef0326f1c3cecebff996db0ed8256b65e35a8569e112",
+        "framebuffer_sha256": "52e7852b949c703dbc0ff525656f3ece59b02738ac6ec7b45d00c3d1cb6928bc"
+      },
+      "english": {
+        "frame": 4800,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_004800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0cab830f818003c6d0d9ef0326f1c3cecebff996db0ed8256b65e35a8569e112",
+        "framebuffer_sha256": "52e7852b949c703dbc0ff525656f3ece59b02738ac6ec7b45d00c3d1cb6928bc"
+      }
+    },
+    {
+      "frame": 4801,
+      "only_pixel_changes_within": null,
+      "installed": {
+        "frame": 4801,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_004801_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0cab830f818003c6d0d9ef0326f1c3cecebff996db0ed8256b65e35a8569e112",
+        "framebuffer_sha256": "52e7852b949c703dbc0ff525656f3ece59b02738ac6ec7b45d00c3d1cb6928bc"
+      },
+      "english": {
+        "frame": 4801,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_004801_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0cab830f818003c6d0d9ef0326f1c3cecebff996db0ed8256b65e35a8569e112",
+        "framebuffer_sha256": "52e7852b949c703dbc0ff525656f3ece59b02738ac6ec7b45d00c3d1cb6928bc"
+      }
+    },
+    {
+      "frame": 4900,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 4900,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_004900_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "dba57f060ea07a07069b76cc7923f425303773814d9d149e9402adb7108488d4",
+        "framebuffer_sha256": "e6c4501df16b2241ac4913db8d4d60509d3201a636455ef38b4e93465152724a"
+      },
+      "english": {
+        "frame": 4900,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_004900_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "10e9b7e15a847a535e6659dfdc5cfabcdf510e71e9196ae7ef05f14a9e9d8b7b",
+        "framebuffer_sha256": "8199f8fca89177707e0429f90e6f58f6562800e8c3cc558882dacc77ecb26c70"
+      }
+    },
+    {
+      "frame": 5000,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5000,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "dba57f060ea07a07069b76cc7923f425303773814d9d149e9402adb7108488d4",
+        "framebuffer_sha256": "e6c4501df16b2241ac4913db8d4d60509d3201a636455ef38b4e93465152724a"
+      },
+      "english": {
+        "frame": 5000,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "10e9b7e15a847a535e6659dfdc5cfabcdf510e71e9196ae7ef05f14a9e9d8b7b",
+        "framebuffer_sha256": "8199f8fca89177707e0429f90e6f58f6562800e8c3cc558882dacc77ecb26c70"
+      }
+    },
+    {
+      "frame": 5150,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5150,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005150_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "dba57f060ea07a07069b76cc7923f425303773814d9d149e9402adb7108488d4",
+        "framebuffer_sha256": "e6c4501df16b2241ac4913db8d4d60509d3201a636455ef38b4e93465152724a"
+      },
+      "english": {
+        "frame": 5150,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005150_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "10e9b7e15a847a535e6659dfdc5cfabcdf510e71e9196ae7ef05f14a9e9d8b7b",
+        "framebuffer_sha256": "8199f8fca89177707e0429f90e6f58f6562800e8c3cc558882dacc77ecb26c70"
+      }
+    },
+    {
+      "frame": 5300,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5300,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005300_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "fedb7199e8afac7741398b741617f864009eb9cd6b77a43daeb244beb5fe1a3b",
+        "framebuffer_sha256": "4ae8682be26730c85dc0d46d0e4e32820d0393128e8f2252b38112b1cc6e60fb"
+      },
+      "english": {
+        "frame": 5300,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005300_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "8f684764b7429bb778254fd0d09adc65a00d8f80fab3c9c95aaa974c106f5b4c",
+        "framebuffer_sha256": "2c74e6d9b2f00cbd9e75d8f51e171c9ebbcf729c0c3041c039f6597277f78b01"
+      }
+    },
+    {
+      "frame": 5450,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5450,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005450_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ed3aa69bbe3f40a015b491a501f0d1c709e7c8f2bcac702a9d637007bb0a29b6",
+        "framebuffer_sha256": "10f60ca00ec8aa27a9942bc30e8cf24b8bbdd07a9b0d97365e61f1120367a4e3"
+      },
+      "english": {
+        "frame": 5450,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005450_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "9a4ec95912afd7a5cdb6c164a0167866ab96c194a406d4d19294c715261e34bf",
+        "framebuffer_sha256": "6a134d5ff48fc6ddf6523290f028b6666ee3bfd35ace424337d57fb2fdcefdbe"
+      }
+    },
+    {
+      "frame": 5600,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5600,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f31b873316d9aacb41e981c69bc4a2c674699bbcdd968c4159749fe3decd21a8",
+        "framebuffer_sha256": "0e7587199489837a161f66afbe61a556e123123b3f05ac3a36ff1e9fd898cff5"
+      },
+      "english": {
+        "frame": 5600,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c23ec7cd9fe9ebb0a930cce60625aa25fa42f66316dbd3db65f832420316f344",
+        "framebuffer_sha256": "017c31f987d08f397c96c5a311930406a33e1d5774f911284d31141bb5919022"
+      }
+    },
+    {
+      "frame": 5900,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 5900,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_005900_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "a3aa6ed02ab9be17bb9b2d97070c701dce1e7a7dfaccb1830462ff4c6b7617b9",
+        "framebuffer_sha256": "6c2609ace7be42282df5aa4ebe1ae4c4120495453aacfbd0560e297c8a180690"
+      },
+      "english": {
+        "frame": 5900,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_005900_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c99232b6965e78e232eb322fe3e11a007ef20b3f033133312c255c1d644c3dfc",
+        "framebuffer_sha256": "fcabaeea406a91ff2442aab6866fb5c6ef20e249b8e1ba06b74971b90239c38f"
+      }
+    },
+    {
+      "frame": 6200,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 6200,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_006200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "4fd54006e95e39efbb34b759e18554ae07456c415f37fa1353ee1c4e99e83c88",
+        "framebuffer_sha256": "e870c0e2f3b090b882d49669e1c34870c49a2e741bc7e4399cc535b821065d40"
+      },
+      "english": {
+        "frame": 6200,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_006200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1327cb0d32cc87a06a72c2167f0d53ebbb029401cb182f0ae3d935ca2a3ef6fc",
+        "framebuffer_sha256": "3287bfee67ee1b44ae8bc3477c9eec0e2e758877d9859f652c9095f2d1431ff2"
+      }
+    },
+    {
+      "frame": 6700,
+      "only_pixel_changes_within": [
+        6,
+        214,
+        40,
+        226
+      ],
+      "installed": {
+        "frame": 6700,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\installed\\capture\\frame_006700_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f31b873316d9aacb41e981c69bc4a2c674699bbcdd968c4159749fe3decd21a8",
+        "framebuffer_sha256": "0e7587199489837a161f66afbe61a556e123123b3f05ac3a36ff1e9fd898cff5"
+      },
+      "english": {
+        "frame": 6700,
+        "path": ".codex-release-work\\shared_display_20261123\\alternate_battle_panel_v2\\english\\capture\\frame_006700_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c23ec7cd9fe9ebb0a930cce60625aa25fa42f66316dbd3db65f832420316f344",
+        "framebuffer_sha256": "017c31f987d08f397c96c5a311930406a33e1d5774f911284d31141bb5919022"
+      }
+    }
+  ],
+  "complete_English_pixels_per_hold": 70,
+  "sheet": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/pirate_affiliation_panel_20261123.png",
+    "sha256": "6ef9af15ba34b3f5ace9db8bd376ef7aebf814195ad69c65326e9d2e9c7f3f72"
+  },
+  "ordinary_gameplay": false,
+  "tested_full_nameplate": true,
+  "observed_battle_exit": false,
+  "registered_ROM_changed": false
+}

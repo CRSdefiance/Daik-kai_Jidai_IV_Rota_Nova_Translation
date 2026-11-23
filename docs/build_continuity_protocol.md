@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Sound Setup Stop label and verified the original Play and Stop controls. [Checkpoint](editorial_sound_play_stop_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Pirate affiliation label in the alternate battle panel. [Checkpoint](editorial_pirate_affiliation_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Online ship and world card wording corrections. [Checkpoint](editorial_online_card_copy_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

@@ -1,0 +1,141 @@
+{
+  "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb",
+  "cold_boot_ordinary_controller_replay": true,
+  "copied_save": {
+    "sha256": "2bec91a13ba69361c5c79ff52dcc3c8a3d5cf2ccbe2fc4b614bac8d12ab4cee1",
+    "original": "work\\analysis\\regional_fleet_v615\\formed_Manuel_regional_copy.dsv"
+  },
+  "matching_full_frames": [
+    1,
+    60,
+    180,
+    7000,
+    9800,
+    10200,
+    15400,
+    15800,
+    20200,
+    20600,
+    24600,
+    26600,
+    28600,
+    30600,
+    32200,
+    34600,
+    35400,
+    35800,
+    36200,
+    36600
+  ],
+  "regional_order_selector_calls": [
+    {
+      "frame": 9813,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    },
+    {
+      "frame": 15413,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    },
+    {
+      "frame": 20209,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    },
+    {
+      "frame": 26209,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    },
+    {
+      "frame": 27410,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    },
+    {
+      "frame": 28611,
+      "PC": 34123356,
+      "owner": "regional_order_selection",
+      "LR": 34123008,
+      "pointer": null,
+      "value_hex": ""
+    }
+  ],
+  "legacy_owner": "CControlableFleetView",
+  "legacy_vtable_span": [
+    1271844,
+    1271904
+  ],
+  "legacy_text_records": [
+    {
+      "source_Japanese": "目標街：%s",
+      "source_meaning": "Target city followed by the current mission's destination name.",
+      "ARM9_offset": 1274104,
+      "clean_and_current_hex": "96da95578a588146257300",
+      "literal_offset": 226940,
+      "call_offset": 226920,
+      "callee_address": 34427392,
+      "ordinary_gameplay_confirmed": false,
+      "no_target_city_value": 115,
+      "original_owner_entry": 33781096,
+      "status": "The legacy fleet panel calls this formatter for a valid destination. DS visibility open.",
+      "current_replay_calls": 0,
+      "confirmed_in_other_DS_paths": false
+    },
+    {
+      "source_Japanese": "収入額%8lu支出額%8lu投資額%8lu",
+      "source_meaning": "Income, expenses and investment, three unsigned values.",
+      "ARM9_offset": 1274136,
+      "clean_and_current_hex": "8efb93fc8a7a25386c758e788f6f8a7a25386c75938a8e918a7a25386c7500",
+      "literal_offset": 232960,
+      "call_offset": 232872,
+      "callee_address": 34427392,
+      "ordinary_gameplay_confirmed": false,
+      "original_owner_entry": 33787176,
+      "status": "Legacy format is called after the finance getter succeeds. Earlier World Map replay used a separate English panel.",
+      "current_replay_calls": 0,
+      "confirmed_in_other_DS_paths": false
+    }
+  ],
+  "sheet": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/legacy_fleet_text_current_20261123.png",
+    "sha256": "958646194f79ec6ec58c454b049121fc334a68c60c7886b99a77935ee1369c83"
+  },
+  "evidence": [
+    {
+      "path": ".codex-release-work/shared_display_20261123/legacy_fleet_text/regional/capture/capture_report.json",
+      "sha256": "1c7ddd090a4cc5c4b12865abf51bd12a9a30cd5d0e619fcc5ac3e5d9712548f6"
+    },
+    {
+      "path": ".codex-release-work/shared_display_20261123/legacy_fleet_text/regional/requests.json",
+      "sha256": "2847ce13c52a22ea32c9983d6dac92163ddfa5307b24880d337fb91fc3bc2e9d"
+    },
+    {
+      "path": ".codex-release-work/shared_display_20261123/legacy_fleet_text/regional/source_contract.json",
+      "sha256": "d1d32ca2a56bfa89e5ab4a7ee14ad96b4bc74775aea7e1c428f798f4cf5e44c1"
+    },
+    {
+      "path": ".codex-release-work/shared_display_20261123/regional_orders/regional/capture/capture_report.json",
+      "sha256": "1c4072aa968f2e2cbb25969820dc1f0403ab6e9eb642b4ab53f39bfb08ec2c4a"
+    }
+  ],
+  "ordinary_scope": "The reproduced regional controls and six selection dispatches. Other original callers remain open.",
+  "registered_ROM_changed": false,
+  "new_editorial_credit": 0
+}

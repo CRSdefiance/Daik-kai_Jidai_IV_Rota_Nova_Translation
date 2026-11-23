@@ -1,5 +1,35 @@
 # Current editorial checkpoint - 2026-11-23
 
+Sound Setup now displays **Stop** while music is playing. The ordinary title replay verified both actions, track selection, the SFX preview control, and the return to Options and title. The fix also removes three stray Japanese glyph pixels that persisted after leaving Stop. All 17 focused tests, 435 registered checks, the candidate startup and the exact clean-input reconstruction passed. [Registered review](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/verification/registered_review.json)
+
+Drive contains one .nds and its readback matches SHA-256 `f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/translation.xdelta)
+
+The registration recovered from the verified E: snapshots and reclaimed 125,722,976 physical bytes by compressing two generated files. The current frozen registry and ledger paths are recorded in the sealed package. [Snapshot locations](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/verification/generated_snapshot_storage.json) · [Cleanup receipt](../translations/editorial_checkpoints/sound_play_stop_20261123/checkpoint_cleanup.json)
+
+The 12 zodiac labels have scoped stat-table evidence. All 168 clean and current native cases routed the eleven legacy memory-card tokens to the original immediate-return routine. The two legacy fleet formatters remain unobserved in ordinary play. The current build still routes all 16 Sailor Info roles through the English table. Continue checking the original event, missionary and world labels for visible callers. [Crew role selector](editorial_crew_role_storage_20261123.md) [Zodiac table](editorial_zodiac_stat_storage_20261123.md) · [Memory-card status text](editorial_legacy_card_status_text_20261123.md) · [Legacy fleet trace](editorial_pirate_and_legacy_fleet_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Sound Setup Stop label and verified the original Play and Stop controls. [Checkpoint](editorial_sound_play_stop_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+The registered cumulative candidate displays **Pirate** on the alternate-battle nameplate. All nine visible nameplate holds passed. The staged ROM matched all eleven focused fixture frames using its stored label. Six startup holds, 24 protected name getter checks, all 17 focused tests and exact clean-input reconstruction passed. Ordinary activation and exit for this alternate battle remain unvisited. [Registered review](../releases/all_routes_editorial_20261123_pirate_affiliation_candidate/verification/registered_review.json)
+
+Drive contains one .nds and the readback matches SHA-256 `4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_pirate_affiliation_candidate/translation.xdelta)
+
+Both legacy regional text formatters remain unobserved in ordinary play. Continue the remaining player-facing text inventory and keep the scoped evidence for their other callers. Cleanup reclaimed 61,886,796 bytes. [Cleanup receipt](../translations/editorial_checkpoints/pirate_affiliation_20261123/checkpoint_cleanup.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Pirate affiliation label in the alternate battle panel. [Checkpoint](editorial_pirate_affiliation_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Nine paired DeSmuME holds verify **Pirate** in the complete alternate-battle nameplate. A separate ordinary regional replay matched 20 earlier frames and reached six order selections through the English regional UI. Both legacy fleet formatters had zero calls in that replay. Pirate is a tested revision pending registration. [Pirate and regional fleet evidence](editorial_pirate_and_legacy_fleet_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Rechecked the latest registered ROM against all 416 Rafael B49/B84 and Hodram B61–B70 decisions, the four route censuses, 202 Help topics, 276 shared display dispositions and the ASCII right-bound repair. The original Pirate affiliation branch still draws Japanese. The English proposal passed complete native glyph and bounds checks offline. The whole-panel replay and two older fleet display paths remain open. [Current acceptance audit](editorial_acceptance_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
