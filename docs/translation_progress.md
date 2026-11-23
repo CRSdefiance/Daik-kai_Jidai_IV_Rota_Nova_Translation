@@ -1,5 +1,35 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Faticia's one-line reply after the player declines another drink. [Checkpoint](editorial_tavern_drink_reply_registered_20261123.md)
+
+Faticia's teasing answer now fits on one row. Ordinary Istanbul replays verified the refusal, ten retained Tavern lines, the matching drink prompt and the return to town. The same visits covered accepting the drink, the toast and the Ragusa rumor. An ordinary Syracuse replay verified the sailing estimate and departure notice. That replay ended at sea with the village still unvisited. [Exact source and display review](../releases/all_routes_editorial_20261123_tavern_drink_reply_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 9a991a687d2ccc8fe6c31032cff2b3eb6ad18d79dfaf8b609d2bb94db2a35a46. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 checked redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_tavern_drink_reply_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/tavern_drink_reply_20261123/checkpoint_cleanup.json)
+
+All four story archives and the 276 pending shared bodies match the predecessor. The fleet-debt and exhibition warning drafts still await a verified display owner. Other town and random variants and handheld testing remain open. [Shared inventory](../releases/all_routes_editorial_20261123_tavern_drink_reply_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered clearer dialogue for the Captain's Cabin warning and Square confirmation. [Checkpoint](editorial_cabin_square_wrap_registered_20261123.md)
+
+The Surveyor gives the room and the Auto Move order in two complete sentences. The Square's free-goods confirmation fits on one row. The source and native layout checks cover all 40 warning and giveaway texts, with 38 individually justified retentions. Paired emulator fixtures verified both revisions and both original returns. Ordinary activation and handheld testing remain open. [Exact source and display review](../releases/all_routes_editorial_20261123_cabin_square_wrap_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 053bd3f0760933fc88c3102a3816e07e9b070c062e19773a0ca239d8a8814752. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 checked redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_cabin_square_wrap_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/cabin_square_wrap_20261123/checkpoint_cleanup.json)
+
+All four story archives and the 276 pending shared records match the predecessor. Continue the unresolved shared display inventory and representative ordinary town and random scenes. [Shared inventory](../releases/all_routes_editorial_20261123_cabin_square_wrap_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the reflowed Port Fleet captain warning and Gerhard's reply. [Checkpoint](editorial_port_fleet_wrap_registered_20261123.md)
+
+The Port Fleet captain warning keeps its command together. Gerhard's formal refusal now addresses the admiral directly and fits on one row. The 13-entry review retains eleven other lines with individual reasons. A copied Syracuse save with supplied funds and ability verified Gerhard's refusal and three picker states. The warning passed native formatting and glyph checks offline. Ordinary activation and handheld testing remain open for this batch. [Exact source and display review](../releases/all_routes_editorial_20261123_port_fleet_wrap_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 d67348611c147b18777836b3aca2bda30f92ffc46486049554fa1d90efb136ea. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 checked redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_port_fleet_wrap_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/port_fleet_wrap_20261123/checkpoint_cleanup.json)
+
+All four story archives and the 276 pending shared records match the predecessor. The Captain's Cabin order and Square free-goods confirmation are the next wrap leads. Continue representative ordinary scenes and resolve the remaining shared display paths. [Shared inventory](../releases/all_routes_editorial_20261123_port_fleet_wrap_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Market letter-of-introduction dialogue on two complete rows. [Checkpoint](editorial_market_introduction_wrap_registered_20261123.md)
 
 The Market trader's offer and thanks now each fit on a complete row. The review revisits 11 records and retains ten with individual reasons. Paired emulator fixtures verified the revised offer, the small-town instructions, the farewell and the return. Earned activation and handheld testing remain open for this branch. [Exact source and display review](../releases/all_routes_editorial_20261123_market_introduction_candidate/verification/registered_review.json)

@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Faticia's one-line reply after the player declines another drink. [Checkpoint](editorial_tavern_drink_reply_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered clearer dialogue for the Captain's Cabin warning and Square confirmation. [Checkpoint](editorial_cabin_square_wrap_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the reflowed Port Fleet captain warning and Gerhard's reply. [Checkpoint](editorial_port_fleet_wrap_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Market letter-of-introduction dialogue on two complete rows. [Checkpoint](editorial_market_introduction_wrap_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
