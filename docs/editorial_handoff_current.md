@@ -8,6 +8,8 @@ The sole .nds on Drive matches SHA-256 61fb572596c02381b902c9f90855e05a343dab52b
 
 The current scan has 153 open wrap leads. The focused footage also showed the existing break after “I tell” in the priest's B110 R0047 warning. Keep that wording in context when reflowing the speaker's warning. Continue the remaining story and shared-text review, including the 276 shared display leads and practical town and random-scene coverage. Keep the 27,700 historical credits, separate artwork work and older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/hodram_midroute_followups_20261123/current_wrap_queue.json)
 
+Ordinary gameplay verified ten shop panels in Amsterdam and Nagasaki. The Istanbul run reached Angelo's full recruitment and found five phrase breaks. Review and layout evidence for the 44-record SC1 B158 exchange is ready for the next cumulative batch. [Town and recruitment checkpoint](editorial_ordinary_town_and_angelo_20261123.md)
+
 # Current editorial checkpoint - 2026-11-23
 
 Registered 14 Rafael midroute exchanges, including Julio's sailing lesson and the Colosseum riddle. [Checkpoint](editorial_rafael_midroute_exchanges_registered_20261122.md)
