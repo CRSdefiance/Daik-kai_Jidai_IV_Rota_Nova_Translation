@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered the six remaining Hodram exchanges in the historical reconciliation. [Checkpoint](editorial_hodram_sera_nagarpur_and_kuhn_registered_20261122.md)
+
+Six complete exchanges add 108 source decisions, eight prose revisions and 100 individually justified retentions. All 96 earlier Hodram B61–B70 differences now have a registered decision across three batches. Nine revised layouts passed exact glyph checks. A focused emulator replay verified 12 panels, their nameplates and the host's return. Natural activation and handheld display remain unvisited for this batch. [Exact review](../releases/all_routes_editorial_20261122_hodram_sera_nagarpur_and_kuhn_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 c27152933d1ce779d32531991e125601cafad2de8655f3f4d9b8b84c7ec795ef. Its patch reconstructs the exact ROM from the clean input. Startup and 17 focused regressions passed. Cleanup removed 33 redundant files and reclaimed 552,491,661 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_hodram_sera_nagarpur_and_kuhn_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_sera_nagarpur_and_kuhn_20261122/checkpoint_cleanup.json)
+
+The current scan has 259 wrap leads awaiting a source-based decision. Continue with Rafael's remaining early tutorial and Proof of Conquest dialogue, including the B47 and B48 wrap leads. Maria's B116 crew conversation has 26 source-bound decisions and two byte-verified pairs of system panels. Its eight prose proposals await native formatting and integration. Keep the shared town, random dialogue, speaker names and other player-facing prose in scope alongside the 276 shared display leads and 27,700 historical credits. [Current wrap queue](../translations/editorial_checkpoints/hodram_sera_nagarpur_and_kuhn_20261122/current_wrap_queue.json) · [Maria's crew conversation](../translations/editorial_checkpoints/maria_admiral_story_20261122/contextual_draft.json)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
 
 The batch records 103 source comparisons with 16 prose revisions and 87 individual retentions. Forty-four of the earlier Hodram differences are now reconciled. Exact checks covered 17 revised layout variants, including the default and maximum display width for Camille's thanks. Focused cold boots verified 19 panels and nameplates and the return to port. Original scene triggers and handheld display remain unvisited in this batch. [Exact coverage ledger](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/verification/registered_review.json)
@@ -7,10 +17,6 @@ The batch records 103 source comparisons with 16 prose revisions and 87 individu
 The sole .nds on Drive matches SHA-256 08dcab43cade7d5e1861b6e541c6bbf728dc6167c3132e071f1ef044c0eefb1b. Its patch reconstructs the exact ROM from the clean input. Startup and 17 focused regressions passed. Cleanup removed 45 redundant files and reclaimed 613,077,829 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_farewells_and_maria_20261122/checkpoint_cleanup.json)
 
 The scan has 262 wrap leads awaiting a current decision. The remaining 46 differences in B61–B70 belong to six scenes. A 108-line contextual manuscript covers all six, with integration still pending. Keep subsequent route, tutorial, shared-dialogue and identity work in scope, with the 276 display leads and 27,700 historical credits preserved. [Next manuscript](../scripts/hodram_sera_nagarpur_and_kuhn_20261122.md) · [Current wrap queue](../translations/editorial_checkpoints/hodram_farewells_and_maria_20261122/current_wrap_queue.json)
-
-# Current editorial checkpoint - 2026-11-22
-
-Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22
 

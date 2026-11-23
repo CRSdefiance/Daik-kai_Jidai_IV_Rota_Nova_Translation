@@ -15,7 +15,7 @@ parent = SimpleNamespace(
     ROM=current.ROM, MANIFEST=current.MANIFEST, RELEASE=current.RELEASE, STARTUP_CAPTURE=current.STARTUP_CAPTURE,
     guard_spec=current.scope["guard_spec"], bind_registered_story_percent_guard=current.scope["bind_registered_story_percent_guard"],
 )
-BATCH = Path("work/analysis/hodram_sera_nagarpur_and_kuhn_20261122")
+BATCH = Path("work/analysis/hodram_sera_nagarpur_and_kuhn_20261122/final")
 REVIEW, PREFLIGHT = BATCH / "contextual_review.json", BATCH / "native_preflight.json"
 MANUSCRIPT = Path(__file__).with_name("hodram_sera_nagarpur_and_kuhn_20261122.md")
 ROOT = BATCH / "staged"

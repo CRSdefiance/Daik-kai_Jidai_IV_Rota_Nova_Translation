@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered the six remaining Hodram historical comparisons. [Checkpoint](editorial_hodram_sera_nagarpur_and_kuhn_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22
