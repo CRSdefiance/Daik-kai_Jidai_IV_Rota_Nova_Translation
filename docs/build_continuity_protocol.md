@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Rafael's exchanges from Lil's farewell through the scabbard. [Checkpoint](editorial_rafael_six_followup_exchanges_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's Proof briefing and Lisbon financing and preparation exchange. [Checkpoint](editorial_rafael_proof_and_financing_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's Mediterranean advice and Athens meeting, and Maria's crew story. [Checkpoint](editorial_rafael_athens_and_maria_crew_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered the six remaining Hodram historical comparisons. [Checkpoint](editorial_hodram_sera_nagarpur_and_kuhn_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22
