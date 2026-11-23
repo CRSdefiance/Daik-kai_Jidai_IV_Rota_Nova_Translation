@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Rafael’s North Sea meeting with Lil and reconciled Hodram’s encounter with Camille. [Checkpoint](editorial_north_sea_and_hodram_reconciliation_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael's palace lesson, Eirene's disclosure, Pereira's challenge and Hodram's London rescue scene. [Checkpoint](editorial_palace_eirene_pereira_london_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22

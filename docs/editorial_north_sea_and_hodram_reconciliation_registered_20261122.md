@@ -1,0 +1,5 @@
+# Rafael’s North Sea meeting and Hodram’s encounter with Camille
+
+The complete clean-Japanese review covers 74 spoken lines. Nine have revised prose and 65 have specific retention reasons. Lil’s pact proposal keeps the distinction between her territorial claim and what she asks Rafael to do. Camille says that he and Lil are traveling separately for the time being. The earlier registered Hodram review supplies a source-bound comparison for six differing payloads in this exchange. [Coverage ledger](../releases/all_routes_editorial_20261122_north_sea_and_hodram_reconciliation_candidate/verification/registered_review.json)
+
+All nine changed pages passed native and exact-font checks. Focused cold-boot replays verified 13 story panels and their nameplates, including Hodram’s normal-width question mark, the Port Worker’s warning and Lil’s one-line question. Startup and 17 focused repository tests passed. The original scene triggers, conditional variants outside the samples and handheld display remain unvisited for this batch. [Testing ROM and exact clean-input patch](../releases/all_routes_editorial_20261122_north_sea_and_hodram_reconciliation_candidate/README.md)
