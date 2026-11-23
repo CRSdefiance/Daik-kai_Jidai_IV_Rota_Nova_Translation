@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Completed a focused Monster Fish declaration comparison on the two most recent registered builds. Verified and retained Gerhard's published battle order. The instructions overlap Sea View after the encounter is queued, and combat remains unvisited. The sea-inspection ROM remains the testing candidate. All 17 focused repository tests passed. [Battle checkpoint](editorial_special_target_battle_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
 
 The batch revisits all eight voice alternatives and the information notice. It resolves four awkward wraps while preserving each speaker's reaction. Two focused emulator replays verified Charles's revision. The other seven voice choices passed offline native checks. The exact clean-input patch and sole Drive build passed verification. Historical source credit remains at 27,700. [Release and verification](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/registered_release_verification.json)

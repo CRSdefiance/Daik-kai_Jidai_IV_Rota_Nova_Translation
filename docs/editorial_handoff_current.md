@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified Gerhard's full battle order and speaker nameplate in two focused Monster Fish declaration runs. Both reached the pending encounter with the Declare War instructions over Sea View. The registered predecessor reproduced five exact frames. The clean replay diverged into the Speyer story prelude. Actual combat and victory remain open, with 25 offline victory name-and-voice checks already on record. Continue ordinary town and conditional display sampling and seek a matched special-target replay. [Battle checkpoint](editorial_special_target_battle_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
 
 Five focused encounters verified the complete class labels and the return to Info Mode. The Monster Fish and White Whale replays verified Charles's revised one-line question, portrait, and nameplate. Eight original voice selections passed offline checks. The review records four revisions and five justified retentions, including the information notice. Additional indirect name callers, naturally spawned encounters, and a played special-target victory remain open. [Source and native evidence](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/registered_review.json) · [Five encounter replays](../translations/editorial_checkpoints/shared_display_20261123/sea_inspections_current_20261123.json)

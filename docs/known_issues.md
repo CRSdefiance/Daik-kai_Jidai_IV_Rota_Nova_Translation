@@ -1,3 +1,7 @@
+# Monster Fish declaration stalls in the focused setup - 2026-11-23
+
+After selecting the initialized Monster Fish in Declare War Mode and advancing Gerhard's battle order, the help text overlaps Sea View and combat fails to start within the checked replay. Both the latest registered candidate and its predecessor reproduce the same captured stage. Natural activation and the cause remain unverified. [Battle checkpoint](editorial_special_target_battle_20261123.md)
+
 # Azores discovery and Promised Words address - 2026-11-23
 
 The registered Azores candidate displays **Discovered the Azores.**, **Shall we stop at the Azores?** and the source-accurate address **Admiral** in Manuel's request. Both ordinary Promised Words outcomes passed. The first experimental ROM reproduced the known late-pool growth startup stall. The registered ROM keeps the active pool size, startup copy and arena bounds and passed the six reference startup frames. [Registered fix and evidence](editorial_azores_wording_registered_20261123.md)
