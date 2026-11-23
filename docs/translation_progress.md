@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered two regional rumors reflowed after ordinary Valencia and Syracuse visits. [Checkpoint](editorial_regional_rumor_wrap_followups_registered_20261123.md)
+
+Ordinary visits to Tunis, Valencia and Syracuse verified 19 dialogue holds across nine COMMON records. The Seoul visit naturally triggered Yifa's recruitment and verified Yukihisa's “Taoist arts?” panel. The repeated Delicacy Shop rows in Tunis also appear in the clean Japanese build. The Valencia and Syracuse rumor revisions passed fresh ordinary gameplay, including the Shopkeeper nameplates and return to the Square. The other 19 regional rumors retain their wording with individual reasons. [Ordinary visit evidence](../translations/editorial_checkpoints/shared_display_20261123/regional_towns_current_20261123.json) · [Installed review](../releases/all_routes_editorial_20261123_regional_rumor_wrap_followups_candidate/verification/registered_review.json)
+
+The only .nds on Drive matches SHA-256 ddd09f716b933d5f138ab5e39d366a3f28ca51b8203606df8d08cb09b877cb25. Startup, all 17 focused tests and byte-exact clean-input reconstruction passed. Cleanup reclaimed 122,225,594 bytes of verified intermediates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_regional_rumor_wrap_followups_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/regional_rumor_wrap_followups_20261123/checkpoint_cleanup.json)
+
+The current four-route census binds 24,092 credited clean-source positions through 51 registered updates. This release preserves all four verified story archives, so the zero-open storyline wrap scan still applies. The 276 pending shared bodies also match exactly. Continue display ownership, representative ordinary town and random gameplay, and final inventory reconciliation. The first shared follow-ups remain the 27 legacy entries and eight scene labels without an association. Graphics artwork and the older-record technical re-audit remain separate. [Route audit](../translations/editorial_checkpoints/shared_display_20261123/current_route_coverage_20261123.json) · [Shared priority list](../translations/editorial_checkpoints/shared_display_20261123/binding_after_hodram_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Hodram's final queued wrap fixes, including the Proofs, bounty and expedition scenes. [Checkpoint](editorial_hodram_b261_b310_wrap_fixes_registered_20261123.md)
 
 Fourteen complete Hodram exchanges in B261–B310 reconcile 305 exact texts. There are 14 wording revisions, four wrap-only fixes, 165 justified dialogue or panel retentions, seven original choice captions and 115 retained personality variants. Native checks cover 19 revised display cases and the focused emulator run verifies 20 holds. Ordinary event triggers, conditional outcomes and handheld checks remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_hodram_b261_b310_wrap_fixes_candidate/verification/registered_review.json)

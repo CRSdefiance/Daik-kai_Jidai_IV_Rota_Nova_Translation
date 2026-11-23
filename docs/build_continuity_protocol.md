@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered two regional rumors reflowed after ordinary Valencia and Syracuse visits. [Checkpoint](editorial_regional_rumor_wrap_followups_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Hodram's final queued wrap fixes, including the Proofs, bounty and expedition scenes. [Checkpoint](editorial_hodram_b261_b310_wrap_fixes_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
