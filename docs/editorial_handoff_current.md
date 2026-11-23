@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered English destination and finance captions in the assigned Fleet Info panel. [Checkpoint](editorial_assigned_fleet_info_registered_20261123.md)
+
+The cumulative ROM passed 441 registered checks, 17 focused tests, six startup comparisons and exact clean-input patch reconstruction. The Drive copy passed full SHA-256 readback. Track the remaining conditional display and encounter ownership in the checkpoint.
+
+# Current editorial checkpoint - 2026-11-23
+
 Ordinary Fleet Info reached the original fleet-detail builder and verified five complete title and name masks. The isolated tests traced the legacy destination caption to the original Missionary getter when supplied destination 114. The normal regional picker returns slots 0–89 or the no-target value 115. The visible destination and finance fields remain open for an assigned regional fleet. [Fleet Info and exact caller evidence](editorial_fleet_destination_paths_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

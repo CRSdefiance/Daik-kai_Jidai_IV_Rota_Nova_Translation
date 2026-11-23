@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered English destination and finance captions in the assigned Fleet Info panel. [Checkpoint](editorial_assigned_fleet_info_registered_20261123.md)
+
+The cumulative ROM passed 441 registered checks, 17 focused tests, six startup comparisons and exact clean-input patch reconstruction. The Drive copy passed full SHA-256 readback. Track the remaining conditional display and encounter ownership in the checkpoint.
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified the ordinary Fleet Info path and the full Hodram name in both panes. Traced the legacy destination argument for all 116 supported values in both ROMs and bounded the normal regional selector. No new testing ROM or editorial credit. [Fleet Info evidence](editorial_fleet_destination_paths_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
