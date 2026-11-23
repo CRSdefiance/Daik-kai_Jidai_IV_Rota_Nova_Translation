@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered 18 early and midroute Hodram exchanges, including Janus's offer and the sailor's miracle question. [Checkpoint](editorial_hodram_early_and_midroute_wraps_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael's fleet and crew exchanges from Seville through the Ninja Garb rumor. [Checkpoint](editorial_rafael_fleet_and_crew_exchanges_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22

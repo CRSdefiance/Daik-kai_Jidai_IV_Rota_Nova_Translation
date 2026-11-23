@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered 18 early and midroute Hodram exchanges, including Janus's offer and the sailor's miracle question. [Checkpoint](editorial_hodram_early_and_midroute_wraps_registered_20261122.md)
+
+Eighteen complete exchanges add 282 decisions. Twenty-four passages changed to address all flagged wraps, and 258 texts have individual retention reasons, including four choice labels. All 24 revised pages and 20 retained system panels passed native checks, with two extra maximum-name cases. Focused gameplay verified 36 holds, both original outcomes in each menu and the return to port. Natural story activation and handheld verification remain open for this batch. [Exact review](../releases/all_routes_editorial_20261122_hodram_early_and_midroute_wraps_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 95164241a99c946cd093e1a69368bec84754efe1b5badbeb82eba324b9df6a65. Startup and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. Cleanup removed 79 redundant files and reclaimed 617,840,193 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_early_and_midroute_wraps_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_early_and_midroute_wraps_20261122/checkpoint_cleanup.json)
+
+The current scan has 191 wrap leads awaiting a decision. Continue the remaining Hodram and Rafael scenes, the other storylines, ordinary town and random scenes, names, and remaining player-facing prose. Preserve the 276 shared display leads, 27,700 historical credits, deferred artwork, and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/hodram_early_and_midroute_wraps_20261122/current_wrap_queue.json) · [Next Rafael packet, 280 texts and 21 wrap leads](../translations/editorial_checkpoints/rafael_midroute_exchanges_20261122/paired_source.json) · [Working review of the first six exchanges](../translations/editorial_checkpoints/rafael_midroute_exchanges_20261122/working_review.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael's fleet and crew exchanges from Seville through the Ninja Garb rumor. [Checkpoint](editorial_rafael_fleet_and_crew_exchanges_registered_20261122.md)
 
 Six complete exchanges add 224 decisions. Twelve passages changed to address the flagged wraps, and 212 have individual retention reasons. Fifteen revised display cases passed exact glyph checks across default and maximum name widths. All four original system panels and nine supporting role labels passed their native checks. Focused gameplay verified 25 holds and the return to port. Natural story activation and handheld verification remain open for this batch. [Exact review](../releases/all_routes_editorial_20261122_rafael_fleet_and_crew_exchanges_candidate/verification/registered_review.json)

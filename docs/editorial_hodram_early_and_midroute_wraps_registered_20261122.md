@@ -1,0 +1,5 @@
+# Hodram's early and midroute exchanges
+
+The clean-Japanese review covers 282 texts in 18 complete exchanges. Twenty-four revisions address flagged wraps, 254 spoken or system texts have individual retention reasons, and four original choice labels retain their wording and slots. The dialogue keeps Janus's 1,000-gold request, the sailor's contrasting outcomes, and Gerhard's account of the lost Katzbalger. [Exact review](../releases/all_routes_editorial_20261122_hodram_early_and_midroute_wraps_candidate/verification/registered_review.json)
+
+All 24 revised pages and 20 retained system panels passed native layout checks. Two extra maximum-name cases verify the Luck and Spirit notices. Focused emulator gameplay verified 36 displayed holds, both choices in each original menu, and the return to port. Ordinary activation of the story scenes and handheld display remain unverified. [Testing candidate and patch](../releases/all_routes_editorial_20261122_hodram_early_and_midroute_wraps_candidate/README.md)
