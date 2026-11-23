@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Five panels passed in a focused Disband replay with 37 gold against a 500-gold charge. The current Quit selector and dialogue catalogue passed their native checks. Maria's introduction uses Janus Pasar and preserves both original name tokens. The fleet-debt and exhibition drafts still await a verified display caller. [Legacy warnings and name spellings checkpoint](editorial_legacy_warnings_and_name_aliases_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Eleven ordinary voyage panels passed source, glyph and nameplate checks, including the Crete discovery, both supply warnings and Manuel’s cold reaction. The replays used the registered Tavern build. The encoding audit accounts for all 3,392 credited COMMON records in ASCII. Four priority labels have separate movie associations, and direct display ownership remains open for the 276 stored entries. [Scene and voyage checkpoint](editorial_scene_and_voyage_scope_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Tavern’s nearby-town hint after ordinary Tunis and Syracuse replays. [Checkpoint](editorial_tavern_nearby_town_wrap_registered_20261123.md)
 
 The barkeep’s nearby-town question now keeps the town and question mark together on the second row. The native check exercises all 90 stock towns. Two ordinary Tunis holds verified the revision. Eight other holds and four drink-menu transitions passed in Tunis and Syracuse. The review records eight individually justified retentions. [Exact review](../releases/all_routes_editorial_20261123_tavern_nearby_town_wrap_candidate/verification/registered_review.json)
