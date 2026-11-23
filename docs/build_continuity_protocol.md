@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered clearer first-stanza wording and consistent refrain wrapping in Manuel's elegy. [Checkpoint](editorial_hodram_elegy_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered English destination and finance captions in the assigned Fleet Info panel. [Checkpoint](editorial_assigned_fleet_info_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

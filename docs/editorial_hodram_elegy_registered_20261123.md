@@ -1,0 +1,9 @@
+# Hodram's victory scene and Manuel's elegy
+
+The first stanza restores the Japanese image of the repeated waves bringing a distant mother's heartbeat to mind. The final stanza keeps the refrain on its own line and keeps “Both” with its verb. The middle stanza retains Manuel's attribution and the uncertainty about other languages.
+
+The paired cold-boot replay showed both revised pages with complete nameplates, all 12 retained story pages, the original Monster Fish victory notice and the return to Sea View. The encounter used three starting hull points and a one-bit activation fixture after combat brought the fish to zero. The native offline checks and 17 focused tests passed. Six startup frames, 24 name getters and all eight ASCII right-bound spans match. The clean-input patch reconstructs the whole ROM exactly. [Registered editorial review](../releases/all_routes_editorial_20261123_hodram_elegy_candidate/verification/registered_review.json) · [Paired gameplay](../releases/all_routes_editorial_20261123_hodram_elegy_candidate/verification/elegy_paired_gameplay.png) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_elegy_candidate/translation.xdelta)
+
+The ledger keeps 27,700 historical credits. Natural encounter spawning and physical hardware remain unobserved.
+
+Drive now has the registered candidate as the sole .nds in Rota Nova Translation. The streamed download matched the full candidate SHA-256. Checkpoint cleanup retained the original saves, compacted 35 verified snapshots and replaced the byte-identical reconstruction with a hard link. [Latest Build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/hodram_elegy_drive_20261123.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/hodram_elegy_cleanup_20261123.json)

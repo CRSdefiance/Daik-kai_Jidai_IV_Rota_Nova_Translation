@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-23
 
+Rebound the four-route story credit, 416 priority decisions, COMMON and Help evidence to the registered Hodram Elegy ROM. Traced the older Japanese Search and Declare War hints to forced queue types 10 and 11. Every verified stock producer supplies types 0–8, and the three visible English sailing panels match the earlier gameplay evidence. Continue with the remaining indirect class-name and archived COMMON caller leads and practical town and random outcomes. [Current release and exact hint ownership](editorial_queued_sailing_hints_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered clearer first-stanza wording and consistent refrain wrapping in Manuel's elegy. [Checkpoint](editorial_hodram_elegy_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified Gerhard's **Monster Fish down!**, all 14 pages of Hodram's post-battle scene and the return to Sea View. The focused replay shortened the encounter and restored the stock active bit after ordinary combat brought the fish to zero hull. Two early breaks in Manuel's elegy have passing native previews. Carry these source-bound proposals through stored verification, focused gameplay and registered release checks. [Gameplay, exact references, proposals and cleanup](editorial_monster_fish_outcome_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Checked the scheduled Fleet Info path for the legacy Missionary label. The ordinary agreement menu offers town slots 0–89. The wider authored effect that could supply slot 114 is absent from 2,617 shipped retail and alternate story sections per ROM. Supplied-input native checks still reach slot 114, so keep the other writers and indirect display paths open. Four existing ordinary Fleet Info snapshots confirm Stockholm's destination slot. [Exact source, installed and offline evidence](editorial_fleet_destination_writers_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
