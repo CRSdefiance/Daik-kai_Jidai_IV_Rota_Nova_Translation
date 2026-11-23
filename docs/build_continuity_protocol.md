@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Hodram's Aziza and Cristina exchanges and Lil's Clifford and Rafael exchanges. [Checkpoint](editorial_hodram_and_lil_followups_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael's exchanges from Lil's farewell through the scabbard. [Checkpoint](editorial_rafael_six_followup_exchanges_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22

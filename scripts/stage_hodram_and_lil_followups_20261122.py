@@ -16,7 +16,7 @@ active = paired.active
 parent = SimpleNamespace(ROM=active.ROM, MANIFEST=active.MANIFEST, RELEASE=active.RELEASE,
     STARTUP_CAPTURE=active.STARTUP_CAPTURE, guard_spec=active.scope["guard_spec"],
     bind_registered_story_percent_guard=active.scope["bind_registered_story_percent_guard"])
-BATCH = Path("work/analysis/hodram_and_lil_followups_20261122")
+BATCH = Path("work/analysis/hodram_and_lil_followups_20261122/release")
 ROOT = BATCH / "staged"
 REVIEW, PREFLIGHT = BATCH / "contextual_review.json", BATCH / "native_preflight.json"
 ROM = ROOT / "Hodram_And_Lil_Followups_STAGED.nds"

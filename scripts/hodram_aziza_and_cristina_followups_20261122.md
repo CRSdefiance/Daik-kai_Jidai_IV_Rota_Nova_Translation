@@ -114,7 +114,7 @@ Mivor presses an engagement arranged by their families, and Cristina makes her o
 111|Mivor tries to interrupt.|||The small hesitation gives Cristina an opening to cut him off.
 115|Cristina silences Mivor and asks her grandfather about the ship.|||The sharp interruption precedes her eager change of subject.
 119|Julio remembers and invites her to come with him.|||His response fits the digression and leaves Hodram the offer.
-123|Hodram heard she's skilled with a sword and apologizes for the sudden invitation to his ship.|Julio tells me you're good with a sword. I know it's sudden, but would you come aboard my ship?|good with a sword.;I know it's sudden,;aboard my ship?|Keep Julio as the source and make Hodram's request direct and courteous.
+123|Hodram heard she's skilled with a sword and apologizes for the sudden invitation to his ship.|Julio says you handle a sword well. Forgive me for asking so suddenly. Would you come aboard my ship?|Julio says you handle a sword well.;Forgive me for asking so suddenly.;Would you come aboard my ship?|Keep Julio as the source and make Hodram's request direct and courteous. Keep his opening statement on one line.
 126|Cristina asks who the group are.|||She asks Grandpa for context without presuming names.
 129|Julio privately notes how much there is to explain, then introduces Admiral FI FA.|||The aside, rank and two substitutions stay in sequence.
 132|Cristina is surprised how young the admiral is.|||The two reactions retain her frankness.

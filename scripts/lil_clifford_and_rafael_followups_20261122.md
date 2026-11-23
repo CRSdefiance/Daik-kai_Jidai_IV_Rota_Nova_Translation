@@ -71,7 +71,7 @@ Lil's crew see Clifford's flag, then repeat exaggerated stories to a man who tur
 435|Clifford starts to bring up the business he invited them to discuss.|||The trailing start leaves Lil room to interrupt.
 439|Lil asks him to wait because the dress is too tight.|||The short interruption returns to her discomfort in the formal clothes.
 442|Camille reacts in exasperation and names FI.|||The quick familiar complaint and substitution remain.
-445|Clifford laughs, tells her she needn't keep up the effort, and lets her change in back.|Ha ha! You don't have to suffer through dinner. Go change in the back.|suffer through dinner.;change in the back.|Make his permission easygoing while retaining where she can change.
+445|Clifford laughs, tells her she needn't keep up the effort, and lets her change in back.|Ha ha! No need to be uncomfortable. Go change in the back.|No need to be uncomfortable.;Go change in the back.|Keep Clifford's easygoing answer to the tight dress, his invitation to change, and the two complete spoken beats.
 450|Lil prefers her usual clothes and apologizes for the delay.|||Her relief and courtesy are distinct in the same speech.
 454|Clifford starts the real business discussion.|||The concise idiom brings them back to the reason he invited them.
 461|Clifford says Pedro Valdes has taken command of Spain's navy and is one of its strongest commanders.|||The appointment, formal role, name, and warning stay explicit.
@@ -124,7 +124,7 @@ Rafael meets Lil in Lisbon and offers to exchange the party's market shares. Cla
 17|Lil gives him the floor.|||The short response leaves the introduction to him.
 21|Rafael checks that she is FI of FO.|||Both original slots and the confirming question identify who he approached.
 26|Lil is pleased to be recognized and asks who he is.|||The boast and frank question keep her tone.
-29|Rafael identifies himself as Rafael Castor of the Castor Company.|Rafael Castor. I'm with the Castor Company.|Rafael Castor.;the Castor Company.|Give Rafael a natural introduction and keep both source names intact.
+29|Rafael identifies himself as Rafael Castor of the Castor Company.|Rafael Castor of the Castor Company.|Rafael Castor of the Castor Company.|Keep both source names and let Rafael answer Lil's direct question with one complete introduction.
 35|Lil is surprised he belongs to the Castor Company.|||The exact company name makes his identity the source of her surprise.
 38|Rafael is puzzled.|||His question mark invites Lil to explain her reaction.
 43|Lil says she can't believe he's only a child.|||Her blunt reaction gives Claudio an immediate reason to object.

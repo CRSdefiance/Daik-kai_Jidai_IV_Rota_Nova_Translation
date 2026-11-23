@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Hodram's Aziza and Cristina exchanges and Lil's Clifford and Rafael exchanges. [Checkpoint](editorial_hodram_and_lil_followups_registered_20261122.md)
+
+Four complete exchanges add 288 speech and notice decisions and two choice decisions. Eighteen passages changed and 270 texts and both captions have individual retention reasons. All 18 revised pages passed complete glyph and layout checks. Focused emulator gameplay verified 30 holds, four original notices, both choice responses, and the host exits. The natural story triggers and handheld display remain unvisited. [Exact review](../releases/all_routes_editorial_20261122_hodram_and_lil_followups_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 f53ffcfe44680608f7cbdf45f474c63c8cfd09d2ca70474e4d0459b832cab2f1. Startup and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. Cleanup removed 63 redundant files and reclaimed 616,016,017 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_and_lil_followups_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_and_lil_followups_20261122/checkpoint_cleanup.json)
+
+The current scan has 235 wrap leads awaiting a decision. The next Rafael packet binds 134 texts and eight wrap leads across the Charlotte exchange and his first East Asia scenes with Maria. Continue the other storylines, ordinary town and random scenes, and remaining player-facing prose. Preserve the 276 shared display leads, name and identity review, 27,700 historical credits, deferred artwork, and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/hodram_and_lil_followups_20261122/current_wrap_queue.json) · [Rafael paired source](../translations/editorial_checkpoints/rafael_charlotte_and_maria_20261122/paired_source.json)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael's exchanges from Lil's farewell through the scabbard. [Checkpoint](editorial_rafael_six_followup_exchanges_registered_20261122.md)
 
 Six complete exchanges add 129 decisions, 16 wording revisions and 113 individual retentions. All 17 revised layouts passed exact font checks, including both supported surname cases. Focused controller gameplay verified 19 panels, including three original notices and the return to port. Natural scene triggers and handheld display remain unvisited on this build. [Exact review](../releases/all_routes_editorial_20261122_rafael_six_followup_exchanges_candidate/verification/registered_review.json)
