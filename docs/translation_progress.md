@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered clearer dialogue for the Square sample pitch and the Market recommendation. [Checkpoint](editorial_square_and_market_reward_wraps_registered_20261123.md)
+
+The Square pitch now fits on one row, and the Market recommendation puts the letter and the thank-you on separate complete rows. The source review reconciles 27 shared records and records 25 individually justified retentions. Native formatting and paired emulator fixtures verified both revised pages, five retained holds and three transition frames. Ordinary activation and handheld testing remain open for these branches. [Exact review](../releases/all_routes_editorial_20261123_square_market_reward_wraps_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 360bd086c7807558ef2674ebcd15fb680aef76c16b8f4cbafaff78d41e4cb02e. Cold startup, 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 verified redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_square_market_reward_wraps_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/square_and_market_reward_wraps_20261123/checkpoint_cleanup.json)
+
+The four story archives and all 276 pending shared bodies match the predecessor. Continue verifying the remaining display owners and representative shared encounters. The fleet-debt and exhibition-warning drafts still await a verified caller. [Shared inventory](../releases/all_routes_editorial_20261123_square_market_reward_wraps_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Five panels passed in a focused Disband replay with 37 gold against a 500-gold charge. The current Quit selector and dialogue catalogue passed their native checks. Maria's introduction uses Janus Pasar and preserves both original name tokens. The fleet-debt and exhibition drafts still await a verified display caller. [Legacy warnings and name spellings checkpoint](editorial_legacy_warnings_and_name_aliases_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
