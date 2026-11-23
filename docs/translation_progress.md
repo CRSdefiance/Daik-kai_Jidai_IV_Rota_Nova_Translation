@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+The Monster Fish replay now advances into active combat when the test setup uses the stock registration wrapper's position history. Verified both fleets taking damage and three complete battle notices, including the fire on Latina, its extinguishing report and Gerhard's warning that Latina is going under. The save-and-position fixture supplied the encounter. Natural spawn and a played victory remain open. [Current gameplay, three retentions and exact source references](editorial_monster_fish_transition_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered English destination and finance captions in the assigned Fleet Info panel. [Checkpoint](editorial_assigned_fleet_info_registered_20261123.md)
 
 The cumulative ROM passed 441 registered checks, 17 focused tests, six startup comparisons and exact clean-input patch reconstruction. The Drive copy passed full SHA-256 readback. Track the remaining conditional display and encounter ownership in the checkpoint.
