@@ -1,0 +1,463 @@
+{
+  "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb",
+  "reviewed_entries": [
+    {
+      "message_ID": 124,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 1148,
+        "copy_end": 1224,
+        "bytes": 76,
+        "record_index": 13,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 1,
+        "offset": 1004,
+        "copy_end": 1065,
+        "bytes": 61,
+        "record_index": 33,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "source_Japanese": "メモリーカードの初期化は\nセーブ時に行うことができます。\nゲームを始めますか？",
+      "installed_text": "You can format the memory card when you save. Start the game?",
+      "source_hex": "83818382838a815b834a815b836882cc8f898afa89bb82cd0a835a815b83758e9e82c98d7382a482b182c682aa82c582ab82dc82b781420a8351815b838082f08e6e82df82dc82b782a98148",
+      "installed_hex": "596f752063616e20666f726d617420746865206d656d6f72792063617264207768656e20796f7520736176652e205374617274207468652067616d653f",
+      "source_review": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "You can format the memory card when you save. Start the game?",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "other_direct_COMMON_display_unverified": true,
+      "verified_scoped_path": "Rafael can open a new game from blank battery state. The ordinary DS Save action creates a cartridge save through its existing slot confirmation and write status."
+    }
+  ],
+  "remaining_without_scoped_disposition": [
+    108,
+    109,
+    110,
+    113,
+    114,
+    115,
+    750,
+    751,
+    752,
+    3401,
+    3490,
+    3577,
+    3578
+  ],
+  "observed_ordinary_save": true,
+  "observed_earlier_ordinary_new_game_on_exact_dependencies": {
+    "source": "cold boot with controller input",
+    "completed_frames": 3250,
+    "held_frames": [
+      2550,
+      2908,
+      3000,
+      3141,
+      3220
+    ],
+    "COMMON_requests": [
+      {
+        "frame": 1800,
+        "PC": 33903244,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      },
+      {
+        "frame": 1800,
+        "PC": 33895668,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      }
+    ],
+    "pending_label_requests": 0,
+    "battery_save_source": null,
+    "evidence": {
+      ".codex-release-work\\shared_display_20261123\\opening_dispositions\\rafael\\capture\\capture_report.json": "4679672cd89bb3dbe009f441ab7b874d7f558c6d7d3eee332e96e8dcd9a06933",
+      ".codex-release-work\\shared_display_20261123\\opening_dispositions\\rafael\\requests.json": "13f968a3a3c1bdb4e5a74fc5994a30d0930426a0e93d34c0731939811c359776",
+      ".codex-release-work\\shared_display_20261123\\opening_dispositions\\rafael\\inputs.json": "31db1065ea3c9d4215ea2fc0b62d5dd5ea5b899d334e5be20d15391ca444b097",
+      ".codex-release-work\\shared_display_20261123\\opening_dispositions\\rafael\\source_contract.json": "0d8eb22773862c3eecb9bdeab831bb29b56c71538cc59627f1f68a857d6675e3",
+      "scripts\\observe_opening_label_dispositions_20261123.py": "7b680dc886c0ebcf106868d455c1a3524926dd1356528c8fa4f95339e3cdb1f3",
+      "work\\analysis\\movie_viewport_v303\\rafael_start_inputs.json": "31db1065ea3c9d4215ea2fc0b62d5dd5ea5b899d334e5be20d15391ca444b097",
+      ".codex-release-work\\shared_display_20261123\\opening_dispositions\\rafael\\terminal.json": "e4eb9cd63916d5e9dc63f4d4a00093e41493e7426c7aaf36d085bc99c4bc1906"
+    }
+  },
+  "current_save_write": {
+    "donor": "work\\emulation_v193\\gallery_menu_v307\\saves\\all_routes_combined_v307_candidate.dsv",
+    "donor_sha256": "58d7c0d4cc43a43579cc218ef2a391a4a71fec83e77803924189b6d023ca8af0",
+    "preserved_result": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\saves\\Translation_DS_Online_Card_Copy_20261123_candidate.dsv",
+    "result_sha256": "86c48e593147b3971f89c1c6712231608c878238ab619e94fb351ccde06b8ec5",
+    "selected_slot": 2,
+    "exact_slot_span": [
+      40960,
+      81920
+    ],
+    "written_slot_checksum": 535188,
+    "checksum_matches_native_signed_byte_sum": true,
+    "bytes_changed_in_selected_slot": 40789,
+    "system_metadata_changes": [
+      [
+        245764,
+        246,
+        247
+      ],
+      [
+        245827,
+        0,
+        1
+      ]
+    ]
+  },
+  "retained_active_prose": [
+    {
+      "id": "DK4_SAVE_SELECT_TITLE",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34535088,
+        "runtime_pointer": 35037436,
+        "offset": 1483004,
+        "bytes_with_terminator": 29
+      },
+      "current_reference": {
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "pointer_field": 34535088,
+        "runtime_pointer": 35037436,
+        "offset": 1483004,
+        "bytes_with_terminator": 20
+      },
+      "source_hex": "835a815b837582b782e989d38f8a82f0914982f182c589ba82b382a200",
+      "current_hex": "53656c6563742061207361766520736c6f742e00",
+      "clean_Japanese": "セーブする箇所を選んで下さい",
+      "english": "Select a save slot.",
+      "context": "Original save-slot picker reached from the Lisbon System menu.",
+      "localization_note": "A concise instruction applies equally to occupied and unused slots.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_UNUSED",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34536664,
+        "runtime_pointer": 35037524,
+        "offset": 1483092,
+        "bytes_with_terminator": 7
+      },
+      "current_reference": {
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "pointer_field": 34536664,
+        "runtime_pointer": 35037524,
+        "offset": 1483092,
+        "bytes_with_terminator": 7
+      },
+      "source_hex": "96a28e67977000",
+      "current_hex": "556e7573656400",
+      "clean_Japanese": "未使用",
+      "english": "Unused",
+      "context": "Original save-slot picker reached from the Lisbon System menu.",
+      "localization_note": "The single word clearly identifies a slot with no previous save.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_CREATE_CONFIRM",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "offset": 1482628,
+        "bytes_with_terminator": 42
+      },
+      "current_reference": {
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "offset": 1482628,
+        "bytes_with_terminator": 19
+      },
+      "source_hex": "90568b4b82c98366815b835e82f08dec90ac82b582dc82b70a82e682eb82b582a282c582b782a9814800",
+      "current_hex": "4372656174652061206e657720736176653f00",
+      "clean_Japanese": "新規にデータを作成します\nよろしいですか？",
+      "english": "Create a new save?",
+      "context": "The player selected an unused slot and can still cancel.",
+      "localization_note": "The original separate agreement question reads naturally as one direct question in English.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_PROGRESS_ACTION",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34534064,
+        "runtime_pointer": 35037384,
+        "offset": 1482952,
+        "bytes_with_terminator": 7
+      },
+      "current_reference": {
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "pointer_field": 34534064,
+        "runtime_pointer": 35037384,
+        "offset": 1482952,
+        "bytes_with_terminator": 5
+      },
+      "source_hex": "835a815b837500",
+      "current_hex": "5361766500",
+      "clean_Japanese": "セーブ",
+      "english": "Save",
+      "context": "Fills the original progress format while the game writes the new save.",
+      "localization_note": "The action noun reads naturally in the shared progress format.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_PROGRESS_FORMAT",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34534072,
+        "runtime_pointer": 35037400,
+        "offset": 1482968,
+        "bytes_with_terminator": 34
+      },
+      "current_reference": {
+        "ARM9_sha256": "563c74d775ea5538b2327ffd45dfb3525f7f2ffe0e59ce175357d6f22b5d932c",
+        "pointer_field": 34534072,
+        "runtime_pointer": 35037400,
+        "offset": 1482968,
+        "bytes_with_terminator": 34
+      },
+      "source_hex": "2573928682c582b70a93648cb982f090d882e782c882a282c582ad82be82b382a200",
+      "current_hex": "257320696e2070726f67726573732e0a20446f206e6f74207475726e206f66662e00",
+      "clean_Japanese": "%s中です\n電源を切らないでください",
+      "english": "%s in progress.\n Do not turn off.",
+      "context": "The warning stays visible while the device writes the save.",
+      "localization_note": "The break keeps the complete status on one line and the safety instruction on the next.",
+      "runtime_substitutions": [
+        "Save or Load"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "complete_glyph_holds": [
+    {
+      "frame": 6000,
+      "lines": [
+        "Create a new save?"
+      ],
+      "body_glyph_ink": 185,
+      "capture": {
+        "frame": 6000,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c2a7db828deeed1592cc13089290aedee3ee13bcedb65b30250e32e780449e42",
+        "framebuffer_sha256": "3e7cc5253bd967a8dd546b700fefa16256e7cb7dbe9951fbc9f3102d1a4ef2e6"
+      }
+    },
+    {
+      "frame": 6800,
+      "lines": [
+        "Create a new save?"
+      ],
+      "body_glyph_ink": 185,
+      "capture": {
+        "frame": 6800,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c2a7db828deeed1592cc13089290aedee3ee13bcedb65b30250e32e780449e42",
+        "framebuffer_sha256": "3e7cc5253bd967a8dd546b700fefa16256e7cb7dbe9951fbc9f3102d1a4ef2e6"
+      }
+    },
+    {
+      "frame": 6840,
+      "lines": [
+        "Save in progress.",
+        "Do not turn off."
+      ],
+      "glyph_ink_by_row": [
+        168,
+        152
+      ],
+      "capture": {
+        "frame": 6840,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006840_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "afa91f283ebfa87b2d1e89e11e2ad2f95d1790833994427f21001d076d5041f1",
+        "framebuffer_sha256": "f252eebf5a32b85ce5136d9c13d66d85d3fbee16044532eafa00dbeaf14c2d42"
+      }
+    }
+  ],
+  "gameplay_transitions": {
+    "captures": {
+      "4800": {
+        "frame": 4800,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_004800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1c4c4fda6fb080600abe1a8889cc6e80aaec9855ef46ab25d36256980cdeaffd",
+        "framebuffer_sha256": "36b39a6ec0ad1fa4e5150e29347a880b40bc588dd038f5b5c0ea9e82dc28a1ac"
+      },
+      "5600": {
+        "frame": 5600,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_005600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1a00d9d54c5958fe59e985c3741b1cf617b74c3c4dfc491b285e36993923421a",
+        "framebuffer_sha256": "709e0dc79a68b70f30fafe76673d2573af10c38173a02b48fca7a78e30d61b7c"
+      },
+      "6000": {
+        "frame": 6000,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c2a7db828deeed1592cc13089290aedee3ee13bcedb65b30250e32e780449e42",
+        "framebuffer_sha256": "3e7cc5253bd967a8dd546b700fefa16256e7cb7dbe9951fbc9f3102d1a4ef2e6"
+      },
+      "6400": {
+        "frame": 6400,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ff1a618098c3d311f0c83098488a29052d8fd2f1f14df85dfc1d44a23346aa8e",
+        "framebuffer_sha256": "45909e3d8277f236994ba4f3a06e6f0976860a8cef9ba38005330ef6452f111c"
+      },
+      "6800": {
+        "frame": 6800,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c2a7db828deeed1592cc13089290aedee3ee13bcedb65b30250e32e780449e42",
+        "framebuffer_sha256": "3e7cc5253bd967a8dd546b700fefa16256e7cb7dbe9951fbc9f3102d1a4ef2e6"
+      },
+      "6840": {
+        "frame": 6840,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_006840_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "afa91f283ebfa87b2d1e89e11e2ad2f95d1790833994427f21001d076d5041f1",
+        "framebuffer_sha256": "f252eebf5a32b85ce5136d9c13d66d85d3fbee16044532eafa00dbeaf14c2d42"
+      },
+      "7700": {
+        "frame": 7700,
+        "path": ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\frame_007700_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "eaf31ce65d6a0c4f15161b98629a9404b5e6eaff2256d2865225b7788bb69cd2",
+        "framebuffer_sha256": "9cbcc21159202c27e0f46a3fea4b620884fb12fb9ebe49c717c073f5337556af"
+      }
+    },
+    "cancel_return_changed_selection_row": [
+      0,
+      228,
+      256,
+      256
+    ],
+    "system_return_changed_save_highlight": [
+      101,
+      248,
+      155,
+      268
+    ]
+  },
+  "new_ROM": false,
+  "hardware": false,
+  "sheet": {
+    "path": "translations\\editorial_checkpoints\\shared_display_20261123\\lisbon_new_save_20261123.png",
+    "sha256": "a4a8a3e1a93a94ae02e5a80159042c7e37fa8a57e409764a15736d620d3421fc"
+  },
+  "evidence": {
+    "translations\\editorial_checkpoints\\shared_display_20261123\\title_variant_display_20261123.json": "bc75deebee169f0b93537011a3f82cd9dfdbf78bc6af5c797f2da23d19e227dd",
+    "translations\\editorial_checkpoints\\shared_display_20261123\\opening_label_dispositions_20261123.json": "da5d7eb23e2648abc544f69a522ed8e351fec7e6eaf089ed68ff483a387bd8b6",
+    "translations\\editorial_checkpoints\\shared_display_20261123\\current_shared_display_evidence_20261123.json": "bb6556719ed4a09641c36c6345e21d9edb15c72c1c079552c16f63f1adb760e7",
+    "releases\\all_routes_editorial_20261123_online_card_copy_candidate\\verification\\registered_release_verification.json": "7346396bbd3f14531e95a0cdcc93442fc606f990aa23a25281d6e106b7f1f78a",
+    "releases\\all_routes_editorial_20261123_online_card_copy_candidate\\verification\\registered_review.json": "596098df93658f2132791fc30ed7a1fa3a365a61f45ea1f5b774bb0389262592",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\ending_save_scope_20261120_v1.json": "3aa66b248aaabaee0df686d09e257f1921668bdc710c7a4b68f9f781ce2d6437",
+    ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\capture\\capture_report.json": "cc0dd45d93a43e4a7f8b1eb3c25b3a59ee03d9d7c6b0f675becb82f6fe74f92d",
+    ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\terminal.json": "bb92a53bd481dafbf06a9ce616c6d3663eb1844601bcc9f4216ee86774eb2791",
+    ".codex-release-work\\shared_display_20261123\\create_save_lisbon\\create\\requests.json": "63cf0333a7ccab511ca320c478b0b73fd95a4e35a96d6838bc80d2bba48e436a",
+    "scripts\\reconcile_lisbon_new_save_20261123.py": "178a3b9ea1166595c89368c49c89f3b7a180a0a68c4b1da687d28a383565d94a"
+  }
+}

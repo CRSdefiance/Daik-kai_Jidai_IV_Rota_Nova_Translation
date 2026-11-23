@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-23
 
+Reconciled **all 276 shared entries** within verified display paths. The current ROM keeps the 781 original still requests across all four routes. Maria's B46 loads Clifford's entrance portrait, and three Rafael scenes supply the checked Hans and Arcadius scope. The archived individual artwork assignments and other direct callers stay tracked. Continue the broader completion audit for player-facing resources, representative gameplay, and the registered release. [Current evidence](editorial_story_artwork_inventory_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Bound the slave-ship and landscape descriptions to the verified DS title display scope. The exact archived image assignments are still open. **2 of 276 shared entries** still need scoped dispositions. The original SC0 B145 and SC3 B30 commands and existing focused replays narrow the Hans and Arcadius and Maria and Clifford artwork leads. [Current evidence](editorial_final_shared_artwork_leads_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified the ordinary Back, No, and Yes Trade paths on the current registered ROM. The complete confirmation and farewell passed native glyph checks. **4 of 276 shared entries** still need scoped display dispositions. Continue with the two opening descriptions and the Hans and Arcadius and Maria and Clifford scene labels. [Current evidence](editorial_market_exit_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified the six legacy save-space prompts within the tested DS title and cartridge-write paths. The clean and current ROMs agree in 56 offline runs. **7 of 276 shared entries** still need scoped dispositions. Continue with the three Market records and the four opening and story artwork descriptions. [Current evidence](editorial_ds_save_space_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Rafael's ordinary Lisbon Save flow now has a verified unused-slot cancellation, confirmation, write, checksum, and System return. The prior no-donor New Game evidence applies on exact dependencies. **13 of 276 shared entries** still need scoped dispositions. Continue with nine legacy records and the two opening descriptions and two story scene labels. [Current evidence](editorial_lisbon_new_save_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified the title logo and transition families in a fresh 7,400-frame cold boot of the registered candidate. All 22 requested holds match the earlier full-frame proof, with zero COMMON requests. **14 of 276 shared entries** still need scoped dispositions. Continue with ten legacy records, the slave-ship and peaceful-landscape opening descriptions, and the Hans and Arcadius and Maria and Clifford scene labels. [Current evidence](editorial_title_variant_display_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified the original DS cartridge header checks and their read, write, and system-data notice paths in 80 clean and current offline runs. **21 of 276 shared entries** still need scoped dispositions. Continue with ten legacy records, nine title variants, and two scene labels. [Current evidence](editorial_cartridge_header_check_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

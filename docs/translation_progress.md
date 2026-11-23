@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **276 of 276 shared worklist entries** within verified paths. The final two findings cover Clifford's native entrance in Maria's route and the three Rafael scenes with both Hans and Arcadius. All 781 original still requests and the exact storage references for all 276 entries agree with the current registered build. [Current evidence](editorial_story_artwork_inventory_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Accounted for **274 of 276 shared entries** within verified paths. The two remaining opening descriptions have a verified title display scope. Native checks of the Hans and Arcadius and Maria and Clifford exchanges retain their draft names and narrow the image search. **2 story labels remain open**. [Current evidence](editorial_final_shared_artwork_leads_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Accounted for **272 of 276 shared entries** within verified paths. Three ordinary Lisbon replay paths confirm the Back, decline, and purchase outcomes and the complete dialogue. **4 artwork descriptions remain open**. [Current evidence](editorial_market_exit_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Accounted for **269 of 276 shared entries** within verified paths. The six legacy save-space records now have scoped findings for the original title and cartridge-write routines. All 56 offline clean and current runs agree. **7 entries remain open**. [Current evidence](editorial_ds_save_space_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Accounted for **263 of 276 shared entries** within verified paths. The Lisbon replay confirms the new-slot prompt, cancellation, native save-progress status, original save checksum, and the return to System. **13 entries remain open**. [Current evidence](editorial_lisbon_new_save_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Accounted for **262 of 276 shared entries** within verified paths. The seven additions cover the title logo and transition families. The current cold boot matches 22 requested visual holds and makes zero COMMON requests. **14 entries remain open**. [Current evidence](editorial_title_variant_display_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **255 of 276 shared entries** within verified paths. The original DS header scanner and its three callers passed 80 offline runs across both ROMs. **21 entries remain open**. [Current evidence](editorial_cartridge_header_check_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
