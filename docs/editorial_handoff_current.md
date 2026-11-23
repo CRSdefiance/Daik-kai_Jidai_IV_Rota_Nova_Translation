@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Checked the scheduled Fleet Info path for the legacy Missionary label. The ordinary agreement menu offers town slots 0–89. The wider authored effect that could supply slot 114 is absent from 2,617 shipped retail and alternate story sections per ROM. Supplied-input native checks still reach slot 114, so keep the other writers and indirect display paths open. Four existing ordinary Fleet Info snapshots confirm Stockholm's destination slot. [Exact source, installed and offline evidence](editorial_fleet_destination_writers_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 The Monster Fish replay now advances into active combat when the test setup uses the stock registration wrapper's position history. Verified both fleets taking damage and three complete battle notices, including the fire on Latina, its extinguishing report and Gerhard's warning that Latina is going under. The save-and-position fixture supplied the encounter. Natural spawn and a played victory remain open. [Current gameplay, three retentions and exact source references](editorial_monster_fish_transition_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
