@@ -1,0 +1,5 @@
+# Cartridge title localization
+
+The clean DS banner stores the Japanese title and publisher in all six language slots. The English title now reads **Uncharted Waters IV**, **Rota Nova**, and **KOEI**. The French, German, Italian, and Spanish slots also carry the English title for this release. The Japanese slot keeps its original text. The three rows preserve the title, subtitle, and publisher as distinct fields on display. [Exact source and installed references](../releases/all_routes_editorial_20261123_cartridge_title_candidate/verification/registered_review.json)
+
+All six host-rendered previews were inspected. Both banner CRCs, the complete parent inverse, six ordinary game startup frames, 24 protected name getters, and 17 tests passed. The entire ROM outside the banner matches the Azores build. The preview uses host fonts. The actual firmware screen remains unverified. [Preview](../releases/all_routes_editorial_20261123_cartridge_title_candidate/verification/cartridge_title_preview.png) · [Clean-input patch](../releases/all_routes_editorial_20261123_cartridge_title_candidate/translation.xdelta)

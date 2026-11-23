@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the English cartridge title and preserved the original Japanese locale field. [Checkpoint](editorial_cartridge_title_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the corrected Azores discovery, docking voices and chief's request. [Checkpoint](editorial_azores_wording_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

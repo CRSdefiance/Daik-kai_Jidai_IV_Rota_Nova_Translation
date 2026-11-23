@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
+
+Five focused encounters verified the complete class labels and the return to Info Mode. The Monster Fish and White Whale replays verified Charles's revised one-line question, portrait, and nameplate. Eight original voice selections passed offline checks. The review records four revisions and five justified retentions, including the information notice. Additional indirect name callers, naturally spawned encounters, and a played special-target victory remain open. [Source and native evidence](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/registered_review.json) · [Five encounter replays](../translations/editorial_checkpoints/shared_display_20261123/sea_inspections_current_20261123.json)
+
+The registered candidate passed 439 release checks, all 17 focused tests, six startup frames, and 24 protected name getters. The clean-input patch reconstructs the entire ROM. Drive has one .nds and its streamed readback matches SHA-256 `cf812084d181475098ade754a9b7847e1763fbb04c33379dc3d53b61cae98ba8`. The ledger retains 27,700 credited editorial reviews. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/sea_inspection_prose_20261123/checkpoint_cleanup.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the English cartridge title and preserved the original Japanese locale field. [Checkpoint](editorial_cartridge_title_registered_20261123.md)
+
+The registered banner displays **Uncharted Waters IV**, **Rota Nova**, and **KOEI** in the English slot and four fallback slots. All six offline previews, six in-game cold-start frames, 24 protected name getters, 17 focused tests, and 438 registered checks passed. The clean-input patch reconstructs the complete ROM. Drive has one .nds and the streamed readback matches SHA-256 `c86b41ca62de74ba61193bc945f9b0b244da1fd07dbdf4720f21538f14d91861`. Launcher and physical firmware display remain unobserved. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Verification](../releases/all_routes_editorial_20261123_cartridge_title_candidate/verification/registered_release_verification.json) · [Cleanup](../translations/editorial_checkpoints/cartridge_title_20261123/checkpoint_cleanup.json)
+
+The Azores story and runtime evidence carries forward on identical bytes outside the cartridge banner. Continue the conditional name and display inventory with the fixed sea-target model names and their callers beyond the verified tooltip and battle report. The ledger retains 27,700 credited editorial reviews. [Prior sea-target evidence](editorial_special_target_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the corrected Azores discovery, docking voices and chief's request. [Checkpoint](editorial_azores_wording_registered_20261123.md)
 
 The registered candidate passed 437 release checks and 17 focused tests. Both ordinary Hodram replays verified the revised display and the two Promised Words outcomes. The clean-input patch reconstructs the 60,562,184-byte ROM exactly. Drive has one .nds and its streamed readback matches SHA-256 `1a3857b28eb5d25523231e5e8c6764c451441a8a8f7e5164890b44d8c85cd2e7`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Verification](../releases/all_routes_editorial_20261123_azores_wording_candidate/verification/registered_release_verification.json)

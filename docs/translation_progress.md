@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
+
+The batch revisits all eight voice alternatives and the information notice. It resolves four awkward wraps while preserving each speaker's reaction. Two focused emulator replays verified Charles's revision. The other seven voice choices passed offline native checks. The exact clean-input patch and sole Drive build passed verification. Historical source credit remains at 27,700. [Release and verification](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/registered_release_verification.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the English cartridge title and preserved the original Japanese locale field. [Checkpoint](editorial_cartridge_title_registered_20261123.md)
+
+The launcher localization changes five banner fields and records one justified Japanese retention. The game data matches the registered Azores ROM exactly. Six startup frames, exact clean-input patch reconstruction, and Drive readback passed. The credited editorial total stays at 27,700. [Review and verification](../releases/all_routes_editorial_20261123_cartridge_title_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the corrected Azores discovery, docking voices and chief's request. [Checkpoint](editorial_azores_wording_registered_20261123.md)
 
 The batch revisits eight records. It improves two docking questions, restores Manuel's address **Admiral**, and documents five retained templates. The article is supplied at the discovery and docking call sites. Both ordinary Promised Words outcomes passed, along with 168 offline layout cases. Source review credit remains 27,700. [Coverage and evidence](../releases/all_routes_editorial_20261123_azores_wording_candidate/verification/registered_review.json)
