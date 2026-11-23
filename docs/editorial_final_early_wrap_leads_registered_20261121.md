@@ -1,0 +1,7 @@
+# Early wraps in dialogue and Refit help
+
+Reviewed 37 related entries. Five received prose and wrap revisions, and 32 were retained. The Surveyor’s warning and Samwell’s proposal fit on one row. The longer mutiny response and both Refit help panels keep their phrases intact. [Exact source and registered decisions](../releases/all_routes_editorial_20261121_final_early_wrap_leads_candidate/verification/registered_review.json)
+
+All changed pages passed native pixel and visual checks. A focused emulator replay initialized the original shark exchange, then verified Samwell’s proposal and Al’s response, the Raise It choice, the Baby Shark reward and the return to sailing. The setup restored the actor roster and code in the disposable emulator state. The other four revisions received offline checks. Hardware was outside this pass. [Native and emulator evidence](../releases/all_routes_editorial_20261121_final_early_wrap_leads_candidate/verification)
+
+The clean-input patch reconstructs the ROM byte for byte. Only COMMON changes. All 114 accepted layers, the earlier ASCII changes and the runtime locations and bytes of 276 pending shared records carry forward. Six startup holds, 24 protected getters and 17 focused tests passed. COMMON 117 remains in the display-owner worklist until its runtime path is established. [Candidate and patch](../releases/all_routes_editorial_20261121_final_early_wrap_leads_candidate/README.md)

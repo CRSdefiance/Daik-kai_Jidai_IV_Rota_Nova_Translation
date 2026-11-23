@@ -1,0 +1,229 @@
+{
+  "candidate": "work\\save_dialogue_followup_20261119_v2\\Save_Dialogue_RESEARCH_ONLY.nds",
+  "candidate_sha256": "22bd4eab2e6b4a00f00d19f90cc5663bd7e32482e7e2c88cf47e02a5de7af4a2",
+  "parent_sha256": "98cecdbc7603dbb9678d975092950c22258533f3e4a16c284022317d7f7c22a9",
+  "target_ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b",
+  "target_COMMON_sha256": "6cc21f69f799c2e2a8f9b83f061bc9695bc43a2b5da36a114c0e3f42594a1957",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DK4_SAVE_OVERWRITE_CONFIRM",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Selected save slot is occupied.",
+      "source_meaning": "The existing data will be lost. The player must approve replacing it.",
+      "localization_note": "A direct overwrite question conveys that the current save will be replaced and fits as one complete line.",
+      "decision": "revision",
+      "source_Japanese": "以前のデータは消えてしまいます\nよろしいですか？",
+      "source_reference": {
+        "offset": 1482580,
+        "allocation": 48,
+        "pointer_field": 34532392,
+        "runtime_pointer": 35037012,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482580,
+        "allocation": 36,
+        "pointer_field": 34532392,
+        "runtime_pointer": 35037012,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "88c8914f82cc8366815b835e82cd8fc182a682c482b582dc82a282dc82b70a82e682eb82b582a282c582b782a9814800",
+      "current_hex": "4f7665727772697465206578697374696e6720646174613f0a20436f6e74696e75653f00",
+      "staged_hex": "4f7665727772697465207468697320736176653f00000000000000000000000000000000",
+      "previous_English": "Overwrite existing data?\n Continue?",
+      "previous_native_lines": [
+        "Overwrite existing data?",
+        "Continue?"
+      ],
+      "english": "Overwrite this save?",
+      "display_hex": "4f7665727772697465207468697320736176653f",
+      "visible_lines": [
+        "Overwrite this save?"
+      ],
+      "native_ink_sha256": "b70b35657fa2138437025919cef4bc4d837f91238951c2667a0e8c6ec2bbcb37",
+      "original_selector": 34531860,
+      "supplied_selector_mode": 1,
+      "native_modal_mode": 1,
+      "glyphs": 18,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_SAVE_CREATE_CONFIRM",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Selected save slot is empty.",
+      "source_meaning": "The game will create new save data if the player confirms.",
+      "localization_note": "Say what will happen in the confirmation itself. The question fits as one complete line.",
+      "decision": "revision",
+      "source_Japanese": "新規にデータを作成します\nよろしいですか？",
+      "source_reference": {
+        "offset": 1482628,
+        "allocation": 44,
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482628,
+        "allocation": 33,
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "90568b4b82c98366815b835e82f08dec90ac82b582dc82b70a82e682eb82b582a282c582b782a98148000000",
+      "current_hex": "437265617465206e6577207361766520646174613f0a20436f6e74696e75653f00",
+      "staged_hex": "4372656174652061206e657720736176653f000000000000000000000000000000",
+      "previous_English": "Create new save data?\n Continue?",
+      "previous_native_lines": [
+        "Create new save data?",
+        "Continue?"
+      ],
+      "english": "Create a new save?",
+      "display_hex": "4372656174652061206e657720736176653f",
+      "visible_lines": [
+        "Create a new save?"
+      ],
+      "native_ink_sha256": "8efeb936100af8e88c4cdda5dc002616834997c5802c5a59295f02d3c7e5c9d9",
+      "original_selector": 34531860,
+      "supplied_selector_mode": 2,
+      "native_modal_mode": 1,
+      "glyphs": 15,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_LOAD_READ_ERROR",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Native cartridge read error.",
+      "source_meaning": "The read failed. The player should power off the system and then reinsert the game card.",
+      "localization_note": "Keep the read failure distinct. Keep the two recovery instructions together and in the original order.",
+      "decision": "revision",
+      "source_Japanese": "データを読めませんでした。\n電源を切って、カードを差し込み直してください。",
+      "source_reference": {
+        "offset": 1482704,
+        "allocation": 76,
+        "pointer_field": 34533204,
+        "runtime_pointer": 35037136,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482704,
+        "allocation": 61,
+        "pointer_field": 34533204,
+        "runtime_pointer": 35037136,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "8366815b835e82f093c782df82dc82b982f182c582b582bd81420a93648cb982f090d882c182c48141834a815b836882f08db782b58d9e82dd92bc82b582c482ad82be82b382a28142000000",
+      "current_hex": "4461746120636f756c64206e6f7420626520726561642e0a205265737461727420616e64207265696e73657274207468652067616d6520636172642e00",
+      "staged_hex": "436f756c646e277420726561642074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e0000",
+      "previous_English": "Data could not be read.\n Restart and reinsert the game card.",
+      "previous_native_lines": [
+        "Data could not be read.",
+        "Restart and reinsert the game card."
+      ],
+      "english": "Couldn't read the data. Power off. Reinsert the game card.",
+      "display_hex": "436f756c646e277420726561642074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e",
+      "visible_lines": [
+        "Couldn't read the data.",
+        "Power off. Reinsert the game card."
+      ],
+      "native_ink_sha256": "7f5dd3a26937e0b2b2f7589799d1ee169ecd9d0287c139113433f3f2bea97ac6",
+      "original_selector": 34533156,
+      "supplied_selector_mode": 0,
+      "native_modal_mode": 0,
+      "glyphs": 49,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_SAVE_WRITE_ERROR",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Native cartridge write error.",
+      "source_meaning": "The write failed. The player should power off the system and then reinsert the game card.",
+      "localization_note": "Keep the write failure distinct. Keep the two recovery instructions together and in the original order.",
+      "decision": "revision",
+      "source_Japanese": "データを書けませんでした。\n電源を切って、カードを差し込み直してください。",
+      "source_reference": {
+        "offset": 1482780,
+        "allocation": 76,
+        "pointer_field": 34533200,
+        "runtime_pointer": 35037212,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482780,
+        "allocation": 64,
+        "pointer_field": 34533200,
+        "runtime_pointer": 35037212,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "8366815b835e82f08f9182af82dc82b982f182c582b582bd81420a93648cb982f090d882c182c48141834a815b836882f08db782b58d9e82dd92bc82b582c482ad82be82b382a28142000000",
+      "current_hex": "4461746120636f756c64206e6f74206265207772697474656e2e0a205265737461727420616e64207265696e73657274207468652067616d6520636172642e00",
+      "staged_hex": "436f756c646e27742077726974652074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e00000000",
+      "previous_English": "Data could not be written.\n Restart and reinsert the game card.",
+      "previous_native_lines": [
+        "Data could not be written.",
+        "Restart and reinsert the game card."
+      ],
+      "english": "Couldn't write the data. Power off. Reinsert the game card.",
+      "display_hex": "436f756c646e27742077726974652074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e",
+      "visible_lines": [
+        "Couldn't write the data.",
+        "Power off. Reinsert the game card."
+      ],
+      "native_ink_sha256": "e2dec4d9900254b53146693c03dec0e85a90554bb6125f3504a63ef35460d7ee",
+      "original_selector": 34533156,
+      "supplied_selector_mode": 1,
+      "native_modal_mode": 0,
+      "glyphs": 50,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "entire_parent_inverse": true,
+  "original_source_manifest_sha256": "253e37c30e425ef463a11c577e8bf6c62feb5a2533c8bb7f8f4e0ad6df03d4a4",
+  "native_sheet_sha256": "b2a759d3bc95ead33073c620911f1cb236a4bc0ba2c797a2fa2b9859b9008f93"
+}

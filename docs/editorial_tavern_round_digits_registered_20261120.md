@@ -1,0 +1,7 @@
+# Tavern round price and patron exchange
+
+**Treat Everyone** now shows the price in regular-width digits. Four confirmation lines keep the amount and “gold” together and let each question read as a complete thought. Seven other lines retain their established English, including the four observed follow-up lines. The original price calculation divides the town’s growth by 25, discards the remainder and adds 100 gold. [Exact source references and decisions](../releases/all_routes_editorial_20261120_tavern_round_digits_candidate/verification/registered_review.json)
+
+Paired ordinary Amsterdam runs verified the complete 268-gold confirmation, cancellation at 34,980 gold, and acceptance at 34,712 gold. The round announcement, the patron’s thanks and the tip about Clifford’s fleet heading to Bristol matched in both runs. Offline checks covered the original voice selector, 256 number-buffer cases and 56 complete rendered panels. [Emulator comparison](../releases/all_routes_editorial_20261120_tavern_round_digits_candidate/verification/gameplay_comparison.png)
+
+Six startup frames, 24 protected getters and 30 focused tests passed. Two optional historical tests skipped. The clean-input patch rebuilds the cumulative ROM byte for byte. Other voice variants received offline coverage, and hardware was outside this pass. The ledger retains 27,700 credited records and 276 stored shared keys open for display-owner review. [Candidate and patch](../releases/all_routes_editorial_20261120_tavern_round_digits_candidate/README.md)

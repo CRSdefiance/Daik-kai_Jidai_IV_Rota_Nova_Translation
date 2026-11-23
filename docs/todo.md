@@ -1,3 +1,15 @@
+# Rafael's Deck lesson checkpoint - 2026-11-19
+
+The cumulative candidate includes three revised Deck tutorial lines and ordinary gameplay coverage of all 12 panels. Continue the full [editorial review](editorial_handoff_current.md), including open player-facing prose and shared display ownership. [Candidate and exact review](editorial_rafael_deck_after_trade_20261119.md)
+
+# Town Shortage checkpoint - 2026-11-19
+
+The full Shortage value is now registered for Town Summary and Market Trade. The ordinary replay verified the Trade exit and return to Julio's navigation tutorial. Continue the full [editorial review](editorial_handoff_current.md), including the remaining shared display ownership. [Candidate and evidence](editorial_town_shortage_20261119.md)
+
+# Town Summary checkpoint - 2026-11-19
+
+The full Status heading is registered in the cumulative [Town Summary candidate](editorial_town_summary_20261119.md). Continue the editorial pass from [the current handoff](editorial_handoff_current.md), including the 276 open shared entries.
+
 # Current editorial checkpoint - 2026-11-10
 
 The four native story censuses cover all 24,092 dialogue, choice and personality positions. The next shared-text packet has 57 clean-source drafts, 54 current comparisons and one raw ship command. Thirty comparisons are retention candidates, 16 propose revisions and eight identify source mismatches. Consumer, display and release approval remain. Lil261 stays the registered candidate with 25,898 credited reviews.

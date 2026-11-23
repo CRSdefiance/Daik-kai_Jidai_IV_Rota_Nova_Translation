@@ -1,0 +1,7 @@
+# Hodram's farewell, retirement and new recruits
+
+Revisited 331 records from the clean Japanese, including the audiences, Sera's farewell, Hodram's retirement and the recruitment of Al, Angelo, Ian and Carlo. The pass revises 112 turns and records 219 individual retentions. It keeps Ian's composure through the tavern confrontation and Carlo's change of tone from bargaining to concern. Sera's farewell keeps its original staggered text placement. The 27 reviewed speaker names and roles retain their established forms. [Exact sources and individual decisions](../releases/all_routes_editorial_20261122_hodram_B151_B160_candidate/verification/registered_review.json)
+
+The native checks cover 568 commands, 25 speakerless panels and 112 revised pages. The prose and wrap edits save 2 page turns. The focused emulator replay verifies 65 pages, including the staged farewell, the approved names and substitutions, a retained two-page exchange and Carlo's direct transition to the following turn. Natural triggers, other conditional paths and hardware remain unvisited. [Native and gameplay evidence](../releases/all_routes_editorial_20261122_hodram_B151_B160_candidate/verification)
+
+The registered build preserves 114 accepted layers and the ASCII right-bound correction. The clean-input patch rebuilt the ROM exactly. The startup comparison and 17 regression tests passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B151_B160_candidate/README.md)

@@ -1,0 +1,2914 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "SQUARE_SHOP_CAPTION_0",
+      "category": 0,
+      "Japanese": "食料品屋",
+      "english": "Food Shop",
+      "previous": "Food Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Basic foods and staples, including grain, fish and cheese.",
+      "localization_note": "Basic foods and staples, including grain, fish and cheese.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160260,
+        "string_offset": 1417444,
+        "category_hex": "904897bf956900",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 0,
+        "output_hex": "466f6f642053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010100000000000000000000000000000100000000000000010100000100000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000001000000000000010000010001000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000010000000000000100000100010000000000000000000000000000000000000000000000000000000000000000000100000000000101000000010100000001010100000000000000010000000101010000000101000001010100000000000000000000000000000000000000000001010100000100000100010000010001000001000000000000000001000001000001000100000100010000010000000000000000000000000000000000000000010000000001000001000100000100010000010000000000000000000100010000010001000001000100000100000000000000000000000000000000000000000100000000010000010001000001000100000100000000000001000001000100000100010000010001000001000000000000000000000000000000000000000001000000000100000100010000010001000001000000000000010000010001000001000100000100010101000000000000000000000000000000000000000000010000000000010100000001010000000101010000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000",
+        "ink_pixels": 113,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 43
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 0,
+          "source_name_field_offset": 1437464,
+          "source_name_offset": 1423672,
+          "source_name_hex": "8fac949e00",
+          "clean_Japanese": "小麦",
+          "registered_name_pointer": 34978902,
+          "current_English": "Wheat",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 1,
+          "source_name_field_offset": 1437476,
+          "source_name_offset": 1423220,
+          "source_name_hex": "95c400",
+          "clean_Japanese": "米",
+          "registered_name_pointer": 34980299,
+          "current_English": "Rice",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 2,
+          "source_name_field_offset": 1437488,
+          "source_name_offset": 1432692,
+          "source_name_hex": "836783458382838d8352835600",
+          "clean_Japanese": "トウモロコシ",
+          "registered_name_pointer": 34984919,
+          "current_English": "Corn",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 3,
+          "source_name_field_offset": 1437500,
+          "source_name_offset": 1430564,
+          "source_name_hex": "83578383834b8343838200",
+          "clean_Japanese": "ジャガイモ",
+          "registered_name_pointer": 34980112,
+          "current_English": "Potatoes",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 4,
+          "source_name_field_offset": 1437512,
+          "source_name_offset": 1423488,
+          "source_name_hex": "91e593a400",
+          "clean_Japanese": "大豆",
+          "registered_name_pointer": 34979776,
+          "current_English": "Soybean",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 5,
+          "source_name_field_offset": 1437524,
+          "source_name_offset": 1424200,
+          "source_name_hex": "8b9b93f700",
+          "clean_Japanese": "魚肉",
+          "registered_name_pointer": 34979696,
+          "current_English": "Fish",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 6,
+          "source_name_field_offset": 1437536,
+          "source_name_offset": 1423552,
+          "source_name_hex": "8b8d93f700",
+          "clean_Japanese": "牛肉",
+          "registered_name_pointer": 34986271,
+          "current_English": "Beef",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 7,
+          "source_name_field_offset": 1437548,
+          "source_name_offset": 1426856,
+          "source_name_hex": "834a837b8360838300",
+          "clean_Japanese": "カボチャ",
+          "registered_name_pointer": 34979424,
+          "current_English": "Pumpkin",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 8,
+          "source_name_field_offset": 1437560,
+          "source_name_offset": 1425272,
+          "source_name_hex": "8360815b835900",
+          "clean_Japanese": "チーズ",
+          "registered_name_pointer": 34979560,
+          "current_English": "Cheese",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 9,
+          "source_name_field_offset": 1437572,
+          "source_name_offset": 1425264,
+          "source_name_hex": "8367837d836700",
+          "clean_Japanese": "トマト",
+          "registered_name_pointer": 34984912,
+          "current_English": "Tomato",
+          "source_category_byte": 0
+        },
+        {
+          "product_ID": 10,
+          "source_name_field_offset": 1437584,
+          "source_name_offset": 1424600,
+          "source_name_hex": "836f8369836900",
+          "clean_Japanese": "バナナ",
+          "registered_name_pointer": 34979373,
+          "current_English": "Bananas",
+          "source_category_byte": 0
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160260,
+        "previous_pointer": 34971912,
+        "deployed_pointer": 34971912,
+        "format_offset": 1328700,
+        "previous_hex": "466f6f6400",
+        "deployed_hex": "466f6f6400",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 0,
+        "output_hex": "466f6f642053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_1",
+      "category": 1,
+      "Japanese": "調味料屋",
+      "english": "Seasonings",
+      "previous": "Cond. Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Sugar, honey, salt and cooking oils. The compact abbreviation keeps this separate from Spices; Seasonings Shop exceeds the current caption width.",
+      "localization_note": "Seasonings names the broad family of ingredients, including salt, sugar, honey and cooking oils. The original Square menu supplies the retail context. The separate Spices Shop keeps pepper and similar goods distinct.",
+      "decision": "revision",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160264,
+        "string_offset": 1417452,
+        "category_hex": "92b296a197bf00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 1,
+        "output_hex": "536561736f6e696e6773",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": true
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000101000000010100000001010000000101000001010100000000010000010101000000010101000001010000000000000000000000000000000000000100000100000100000000010001000001000100000100010000010000000100000100000100010000010001000001000000000000000000000000000000000000010001010101000001010100000100000001000001000100000100000001000001000001000100000100000100000000000000000000000000000000000100000100010000000001000001000000010000010000010001000001000000010000010000010001000001000000010000000000000000000000000000000001000001000100000100010000010001000001000100000100010000010000000100000100000100000101010001000001000000000000000000000000000000000101000000010100000001010100000101000000010100000100000100000001000001000001000000000100000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000",
+        "ink_pixels": 124,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 48
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 11,
+          "source_name_field_offset": 1437596,
+          "source_name_offset": 1424208,
+          "source_name_hex": "8dbb939c00",
+          "clean_Japanese": "砂糖",
+          "registered_name_pointer": 34978183,
+          "current_English": "Sugar",
+          "source_category_byte": 1
+        },
+        {
+          "product_ID": 12,
+          "source_name_field_offset": 1437608,
+          "source_name_offset": 1427828,
+          "source_name_hex": "836e8360837e836300",
+          "clean_Japanese": "ハチミツ",
+          "registered_name_pointer": 34986667,
+          "current_English": "Honey",
+          "source_category_byte": 1
+        },
+        {
+          "product_ID": 13,
+          "source_name_field_offset": 1437620,
+          "source_name_offset": 1423244,
+          "source_name_hex": "899600",
+          "clean_Japanese": "塩",
+          "registered_name_pointer": 34977875,
+          "current_English": "Salt",
+          "source_category_byte": 1
+        },
+        {
+          "product_ID": 14,
+          "source_name_field_offset": 1437632,
+          "source_name_offset": 1430924,
+          "source_name_hex": "8349838a815b837596fb00",
+          "clean_Japanese": "オリーブ油",
+          "registered_name_pointer": 34982668,
+          "current_English": "Olive Oil",
+          "source_category_byte": 1
+        },
+        {
+          "product_ID": 15,
+          "source_name_field_offset": 1437644,
+          "source_name_offset": 1425328,
+          "source_name_hex": "8384835696fb00",
+          "clean_Japanese": "ヤシ油",
+          "registered_name_pointer": 34982356,
+          "current_English": "Coconut Oil",
+          "source_category_byte": 1
+        },
+        {
+          "product_ID": 123,
+          "source_name_field_offset": 1438940,
+          "source_name_offset": 1432628,
+          "source_name_hex": "837d836b834a836e836a815b00",
+          "clean_Japanese": "マヌカハニー",
+          "registered_name_pointer": 34986660,
+          "current_English": "Manuka Honey",
+          "source_category_byte": 1
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160264,
+        "previous_pointer": 34971884,
+        "deployed_pointer": 34971884,
+        "format_offset": 1328700,
+        "previous_hex": "436f6e642e00",
+        "deployed_hex": "436f6e642e00",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 1,
+        "output_hex": "536561736f6e696e6773",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": true,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": true
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_2",
+      "category": 2,
+      "Japanese": "珍味屋",
+      "english": "Delicacy Shop",
+      "previous": "Delicacy Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Special foods such as caviar, shark fins and nuts. Delicacy fits at full width and distinguishes them from staples.",
+      "localization_note": "Special foods such as caviar, shark fins and nuts. Delicacy fits at full width and distinguishes them from staples.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160268,
+        "string_offset": 1417396,
+        "category_hex": "92bf96a100",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 2,
+        "output_hex": "44656c69636163792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010000000000000000000100000000010000000000000000000000000000000000000000000000000000000001010000010000000000000000000000000001000001000000000000000001000000000100000000000000000000000000000000000000000000000000000001000001000100000000000000000000000000010000010000000000000000010000000000000000000000000000000000000000000000000000000000000000010000010001000000000000000000000000000100000100000101000000000100000000010000000101000000010100000001010000010000010000000000000001000000010101000000010100000101010001000001000100000100000001000000000100000100000100000000010001000001000100000100000000000000000100000100000100010000010001000001010000010001010101000000010000000001000001000000000001010100010000000001000001000000000000000000010001000001000100000100010000010100000100010000000000000100000000010000010000000001000001000100000000000100010000000000000100000100010000010001000001000100000101000001000100000100000001000000000100000100000100010000010001000001000000010000000000000001000001000100000100010000010001010100010101000000010100000000010000000001000000010100000001010100000101000000000100000000000000000101000001000001000001010000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000001000000",
+        "ink_pixels": 153,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 63
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 16,
+          "source_name_field_offset": 1437656,
+          "source_name_offset": 1426256,
+          "source_name_hex": "838983438360815b00",
+          "clean_Japanese": "ライチー",
+          "registered_name_pointer": 34979200,
+          "current_English": "Lychees",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 17,
+          "source_name_field_offset": 1437668,
+          "source_name_offset": 1425572,
+          "source_name_hex": "836e8356836f837e00",
+          "clean_Japanese": "ハシバミ",
+          "registered_name_pointer": 34984960,
+          "current_English": "Hazelnuts",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 18,
+          "source_name_field_offset": 1437680,
+          "source_name_offset": 1427924,
+          "source_name_hex": "8354838b835e836900",
+          "clean_Japanese": "サルタナ",
+          "registered_name_pointer": 34979032,
+          "current_English": "Sultana",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 19,
+          "source_name_field_offset": 1437692,
+          "source_name_offset": 1427600,
+          "source_name_hex": "834c83838372834100",
+          "clean_Japanese": "キャビア",
+          "registered_name_pointer": 34981041,
+          "current_English": "Caviar",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 20,
+          "source_name_field_offset": 1437704,
+          "source_name_offset": 1427348,
+          "source_name_hex": "8374834a8371838c00",
+          "clean_Japanese": "フカヒレ",
+          "registered_name_pointer": 34980736,
+          "current_English": "Shark Fins",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 101,
+          "source_name_field_offset": 1438676,
+          "source_name_offset": 1432356,
+          "source_name_hex": "837d83458343836f8369836900",
+          "clean_Japanese": "マウイバナナ",
+          "registered_name_pointer": 34979368,
+          "current_English": "Maui Bananas",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 105,
+          "source_name_field_offset": 1438724,
+          "source_name_offset": 1427276,
+          "source_name_hex": "8354815b8382839300",
+          "clean_Japanese": "サーモン",
+          "registered_name_pointer": 34979759,
+          "current_English": "Salmon",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 106,
+          "source_name_field_offset": 1438736,
+          "source_name_offset": 1424272,
+          "source_name_hex": "8c7e93f700",
+          "clean_Japanese": "鯨肉",
+          "registered_name_pointer": 34984996,
+          "current_English": "Whale Meat",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 112,
+          "source_name_field_offset": 1438808,
+          "source_name_offset": 1431124,
+          "source_name_hex": "8cce82cc834c83838372834100",
+          "clean_Japanese": "湖のキャビア",
+          "registered_name_pointer": 34981036,
+          "current_English": "Lake Caviar",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 117,
+          "source_name_field_offset": 1438868,
+          "source_name_offset": 1431828,
+          "source_name_hex": "8d6392e982cc8367837d836700",
+          "clean_Japanese": "皇帝のトマト",
+          "registered_name_pointer": 34979992,
+          "current_English": "Emperor's Tomatoes",
+          "source_category_byte": 2
+        },
+        {
+          "product_ID": 118,
+          "source_name_field_offset": 1438880,
+          "source_name_offset": 1425680,
+          "source_name_hex": "8df882cce08e90bb00",
+          "clean_Japanese": "鮭の燻製",
+          "registered_name_pointer": 34979752,
+          "current_English": "Smoked Salmon",
+          "source_category_byte": 2
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160268,
+        "previous_pointer": 33538912,
+        "deployed_pointer": 33538912,
+        "format_offset": 1328700,
+        "previous_hex": "44656c696361637900",
+        "deployed_hex": "44656c696361637900",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 2,
+        "output_hex": "44656c69636163792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_3",
+      "category": 3,
+      "Japanese": "香辛料屋",
+      "english": "Spices Shop",
+      "previous": "Spices Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Pepper, cloves, saffron and other spices. The familiar category name distinguishes them from the separate cooking seasonings.",
+      "localization_note": "Pepper, cloves, saffron and other spices. The familiar category name distinguishes them from the separate cooking seasonings.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160272,
+        "string_offset": 1417492,
+        "category_hex": "8d81906897bf00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 3,
+        "output_hex": "5370696365732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000100000000000000000000000000000000000000000000000101000001000000000000000000000000000000000000000000000001000001000000000000000001000000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000000000000000000000000000001000001000100000000000000000000000000000000000000000000000001000000010101000000000100000001010000000101000000010100000000000000000100000001010100000001010000010101000000000000000000000000000100000100000100000001000001000001000100000100010000010000000000000000010000010000010001000001000100000100000000000000000000000000010001000001000000010000010000000001010101000001000000000000000000000001000100000100010000010001000001000000000000000000000100000100010000010000000100000100000000010000000000000100000000000000010000010001000001000100000100010000010000000000000000000001000001000101010000000001000001000001000100000100010000010000000000000100000100010000010001000001000101010000000000000000000000000101000001000000000000010000000101000000010100000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 129,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 21,
+          "source_name_field_offset": 1437716,
+          "source_name_offset": 1427252,
+          "source_name_hex": "835283568387834500",
+          "clean_Japanese": "コショウ",
+          "registered_name_pointer": 34982176,
+          "current_English": "Pepper",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 22,
+          "source_name_field_offset": 1437728,
+          "source_name_offset": 1425728,
+          "source_name_hex": "836083878345835700",
+          "clean_Japanese": "チョウジ",
+          "registered_name_pointer": 34978896,
+          "current_English": "Clove",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 23,
+          "source_name_field_offset": 1437740,
+          "source_name_offset": 1425752,
+          "source_name_hex": "836983638381834f00",
+          "clean_Japanese": "ナツメグ",
+          "registered_name_pointer": 34978968,
+          "current_English": "Nutmeg",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 24,
+          "source_name_field_offset": 1437752,
+          "source_name_offset": 1426268,
+          "source_name_hex": "835683698382839300",
+          "clean_Japanese": "シナモン",
+          "registered_name_pointer": 34980268,
+          "current_English": "Cinnamon",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 25,
+          "source_name_field_offset": 1437764,
+          "source_name_offset": 1425812,
+          "source_name_hex": "837383818393836700",
+          "clean_Japanese": "ピメント",
+          "registered_name_pointer": 34979728,
+          "current_English": "Pimento",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 26,
+          "source_name_field_offset": 1437776,
+          "source_name_offset": 1428680,
+          "source_name_hex": "835e837d838a8393836800",
+          "clean_Japanese": "タマリンド",
+          "registered_name_pointer": 34984096,
+          "current_English": "Tamarind",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 27,
+          "source_name_field_offset": 1437788,
+          "source_name_offset": 1425836,
+          "source_name_hex": "835483748389839300",
+          "clean_Japanese": "サフラン",
+          "registered_name_pointer": 34978512,
+          "current_English": "Saffron",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 28,
+          "source_name_field_offset": 1437800,
+          "source_name_offset": 1425320,
+          "source_name_hex": "836f836a838900",
+          "clean_Japanese": "バニラ",
+          "registered_name_pointer": 34979512,
+          "current_English": "Vanilla",
+          "source_category_byte": 3
+        },
+        {
+          "product_ID": 29,
+          "source_name_field_offset": 1437812,
+          "source_name_offset": 1428596,
+          "source_name_hex": "83678345834b8389835600",
+          "clean_Japanese": "トウガラシ",
+          "registered_name_pointer": 34984780,
+          "current_English": "Chili",
+          "source_category_byte": 3
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160272,
+        "previous_pointer": 34971870,
+        "deployed_pointer": 34971870,
+        "format_offset": 1328700,
+        "previous_hex": "53706963657300",
+        "deployed_hex": "53706963657300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 3,
+        "output_hex": "5370696365732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_4",
+      "category": 4,
+      "Japanese": "嗜好品屋",
+      "english": "Treats Shop",
+      "previous": "Treats Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Specialty indulgences such as coffee, tea, cocoa and tobacco. The category covers goods bought for enjoyment.",
+      "localization_note": "Specialty indulgences such as coffee, tea, cocoa and tobacco. The category covers goods bought for enjoyment.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160276,
+        "string_offset": 1417460,
+        "category_hex": "9a6e8d44956900",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 4,
+        "output_hex": "5472656174732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010101000000000000000000000000000000000001000000000000000000000000000101000001000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000100000100010000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000001000001000100000000000000000000000000000000000000000000000000010000000100010000010100000001010000000101010000010100000000000000000100000001010100000001010000010101000000000000000000000000000100000001010000010000010000000001000000010000010000010000000000000000010000010000010001000001000100000100000000000000000000000001000000010000000101010100000101010000000100000001000000000000000000000001000100000100010000010001000001000000000000000000000000010000000100000001000000000100000100000001000000000100000000000000010000010001000001000100000100010000010000000000000000000000000100000001000000010000010001000001000000010000010000010000000000000100000100010000010001000001000101010000000000000000000000000001000000010000000001010000000101010000000101000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 127,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 30,
+          "source_name_field_offset": 1437824,
+          "source_name_offset": 1425860,
+          "source_name_hex": "8352815b8371815b00",
+          "clean_Japanese": "コーヒー",
+          "registered_name_pointer": 34985356,
+          "current_English": "Coffee",
+          "source_category_byte": 4
+        },
+        {
+          "product_ID": 31,
+          "source_name_field_offset": 1437836,
+          "source_name_offset": 1423196,
+          "source_name_hex": "928300",
+          "clean_Japanese": "茶",
+          "registered_name_pointer": 34981296,
+          "current_English": "Tea",
+          "source_category_byte": 4
+        },
+        {
+          "product_ID": 32,
+          "source_name_field_offset": 1437848,
+          "source_name_offset": 1424448,
+          "source_name_hex": "834a834a834900",
+          "clean_Japanese": "カカオ",
+          "registered_name_pointer": 34978342,
+          "current_English": "Cocoa",
+          "source_category_byte": 4
+        },
+        {
+          "product_ID": 33,
+          "source_name_field_offset": 1437860,
+          "source_name_offset": 1424464,
+          "source_name_hex": "835e836f835200",
+          "clean_Japanese": "タバコ",
+          "registered_name_pointer": 34979440,
+          "current_English": "Tobacco",
+          "source_category_byte": 4
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160276,
+        "previous_pointer": 34971877,
+        "deployed_pointer": 34971877,
+        "format_offset": 1328700,
+        "previous_hex": "54726561747300",
+        "deployed_hex": "54726561747300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 4,
+        "output_hex": "5472656174732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": true
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_5",
+      "category": 5,
+      "Japanese": "酒類屋",
+      "english": "Liquor Shop",
+      "previous": "Liquor Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Alcoholic goods including wine, spirits and sake. Liquor Shop is a familiar umbrella name for an alcohol retailer.",
+      "localization_note": "Alcoholic goods including wine, spirits and sake. Liquor Shop is a familiar umbrella name for an alcohol retailer.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160280,
+        "string_offset": 1417412,
+        "category_hex": "8ef097de00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 5,
+        "output_hex": "4c6971756f722053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000001000000000000000000000000000000000000000000000000000000000101000001000000000000000000000000000000000000000000000001000000000000010000000000000000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000001000001000100000000000000000000000000000000000000000000000100000000000001000000010101000100000100000101000000010001000000000000000100000001010100000001010000010101000000000000000000000001000000000000010000010000010001000001000100000100000101000000000000000000010000010000010001000001000100000100000000000000000000010000000000000100000100000100010000010001000001000001000000000000000000000001000100000100010000010001000001000000000000000000000100000000000001000001000001000100000100010000010000010000000000000000010000010001000001000100000100010000010000000000000000000001000000000000010000000101010001000001000100000100000100000000000000000100000100010000010001000001000101010000000000000000000000010101010000000100000000000100000101010000010100000001000000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 126,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 34,
+          "source_name_field_offset": 1437872,
+          "source_name_offset": 1424520,
+          "source_name_hex": "838f8343839300",
+          "clean_Japanese": "ワイン",
+          "registered_name_pointer": 34982039,
+          "current_English": "Wine",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 35,
+          "source_name_field_offset": 1437884,
+          "source_name_offset": 1428824,
+          "source_name_hex": "8375838983938366815b00",
+          "clean_Japanese": "ブランデー",
+          "registered_name_pointer": 34980184,
+          "current_English": "Brandy",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 36,
+          "source_name_field_offset": 1437896,
+          "source_name_offset": 1424536,
+          "source_name_hex": "838983808ef000",
+          "clean_Japanese": "ラム酒",
+          "registered_name_pointer": 34978908,
+          "current_English": "Rum",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 37,
+          "source_name_field_offset": 1437908,
+          "source_name_offset": 1423432,
+          "source_name_hex": "90b48ef000",
+          "clean_Japanese": "清酒",
+          "registered_name_pointer": 34980191,
+          "current_English": "Sake",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 110,
+          "source_name_field_offset": 1438784,
+          "source_name_offset": 1424320,
+          "source_name_hex": "964996a88ef000",
+          "clean_Japanese": "蜂蜜酒",
+          "registered_name_pointer": 34977864,
+          "current_English": "Mead",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 113,
+          "source_name_field_offset": 1438820,
+          "source_name_offset": 1428344,
+          "source_name_hex": "91e982cc938782cc8ef000",
+          "clean_Japanese": "鷹の島の酒",
+          "registered_name_pointer": 34982032,
+          "current_English": "Azores Wine",
+          "source_category_byte": 5
+        },
+        {
+          "product_ID": 114,
+          "source_name_field_offset": 1438832,
+          "source_name_offset": 1431412,
+          "source_name_hex": "90b982c882e9959293b88ef000",
+          "clean_Japanese": "聖なる葡萄酒",
+          "registered_name_pointer": 34983256,
+          "current_English": "Holy Wine",
+          "source_category_byte": 5
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160280,
+        "previous_pointer": 34971849,
+        "deployed_pointer": 34971849,
+        "format_offset": 1328700,
+        "previous_hex": "4c6971756f7200",
+        "deployed_hex": "4c6971756f7200",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 5,
+        "output_hex": "4c6971756f722053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_6",
+      "category": 6,
+      "Japanese": "貴金属屋",
+      "english": "Metals Shop",
+      "previous": "Metals Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Gold, silver and platinum. The compact term is distinct from Ore Shop, and Precious Metals Shop exceeds the caption width.",
+      "localization_note": "Gold, silver and platinum. The compact term is distinct from Ore Shop, and Precious Metals Shop exceeds the caption width.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160284,
+        "string_offset": 1417476,
+        "category_hex": "8b4d8be091ae00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 6,
+        "output_hex": "4d6574616c732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000100000000000000000001000000000000000000000000000101000001000000000000000000000000000000000000000000000001000000010000000000000001000000000000000000010000000000000000000000000100000100010000000000000000000000000000000000000000000000010100010100000000000000010000000000000000000100000000000000000000000001000001000100000000000000000000000000000000000000000000000101000101000101000000010101000001010000000001000000010100000000000000000100000001010100000001010000010101000000000000000000000001010001010100000100000001000000000001000000010000010000010000000000000000010000010000010001000001000100000100000000000000000000010100010101010101000000010000000101010000000100000001000000000000000000000001000100000100010000010001000001000000000000000000000100010001010000000000000100000100000100000001000000000100000000000000010000010001000001000100000100010000010000000000000000000001000100010100000100000001000001000001000000010000010000010000000000000100000100010000010001000001000101010000000000000000000000010001000100010100000000010100000101010000000100000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 144,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 38,
+          "source_name_field_offset": 1437920,
+          "source_name_offset": 1423228,
+          "source_name_hex": "8be000",
+          "clean_Japanese": "金",
+          "registered_name_pointer": 34980011,
+          "current_English": "Gold",
+          "source_category_byte": 6
+        },
+        {
+          "product_ID": 39,
+          "source_name_field_offset": 1437932,
+          "source_name_offset": 1423240,
+          "source_name_hex": "8be200",
+          "clean_Japanese": "銀",
+          "registered_name_pointer": 34978952,
+          "current_English": "Silver",
+          "source_category_byte": 6
+        },
+        {
+          "product_ID": 40,
+          "source_name_field_offset": 1437944,
+          "source_name_offset": 1423456,
+          "source_name_hex": "94928be000",
+          "clean_Japanese": "白金",
+          "registered_name_pointer": 34981372,
+          "current_English": "Platinum",
+          "source_category_byte": 6
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160284,
+        "previous_pointer": 34971801,
+        "deployed_pointer": 34971801,
+        "format_offset": 1328700,
+        "previous_hex": "4d6574616c7300",
+        "deployed_hex": "4d6574616c7300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 6,
+        "output_hex": "4d6574616c732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_7",
+      "category": 7,
+      "Japanese": "工芸品屋",
+      "english": "Crafts Shop",
+      "previous": "Crafts Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Manufactured wares including glass, china, lacquerware and inlaid ware. Crafts signals the worked products.",
+      "localization_note": "Manufactured wares including glass, china, lacquerware and inlaid ware. Crafts signals the worked products.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160288,
+        "string_offset": 1417484,
+        "category_hex": "8d488c7c956900",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 7,
+        "output_hex": "4372616674732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000010100000001000000000000000000000000000101000001000000000000000000000000000000000000000000000001000001000000000000000000000000000100000000010000000000000000000000000100000100010000000000000000000000000000000000000000000000010000010000000000000000000000000001000000000100000000000000000000000001000001000100000000000000000000000000000000000000000000000100000000000100010000010100000001010100000101010000010100000000000000000100000001010100000001010000010101000000000000000000000001000000000001010000000000010000000100000000010000010000010000000000000000010000010000010001000001000100000100000000000000000000010000000000010000000001010100000001000000000100000001000000000000000000000001000100000100010000010001000001000000000000000000000100000100000100000001000001000000010000000001000000000100000000000000010000010001000001000100000100010000010000000000000000000001000001000001000000010000010000000100000000010000010000010000000000000100000100010000010001000001000101010000000000000000000000000101000000010000000001010100000001000000000101000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 128,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 41,
+          "source_name_field_offset": 1437956,
+          "source_name_offset": 1424568,
+          "source_name_hex": "834b8389835800",
+          "clean_Japanese": "ガラス",
+          "registered_name_pointer": 34979472,
+          "current_English": "Glass",
+          "source_category_byte": 7
+        },
+        {
+          "product_ID": 42,
+          "source_name_field_offset": 1437968,
+          "source_name_offset": 1424992,
+          "source_name_hex": "93a98ea58aed00",
+          "clean_Japanese": "陶磁器",
+          "registered_name_pointer": 34980706,
+          "current_English": "China",
+          "source_category_byte": 7
+        },
+        {
+          "product_ID": 43,
+          "source_name_field_offset": 1437980,
+          "source_name_offset": 1423712,
+          "source_name_hex": "8ebd8aed00",
+          "clean_Japanese": "漆器",
+          "registered_name_pointer": 34982776,
+          "current_English": "Lacquerware",
+          "source_category_byte": 7
+        },
+        {
+          "product_ID": 44,
+          "source_name_field_offset": 1437992,
+          "source_name_offset": 1426604,
+          "source_name_hex": "8fdb8ae18dd78d4800",
+          "clean_Japanese": "象眼細工",
+          "registered_name_pointer": 34980796,
+          "current_English": "Inlaid Ware",
+          "source_category_byte": 7
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160288,
+        "previous_pointer": 34971828,
+        "deployed_pointer": 34971828,
+        "format_offset": 1328700,
+        "previous_hex": "43726166747300",
+        "deployed_hex": "43726166747300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 7,
+        "output_hex": "4372616674732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": true
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_8",
+      "category": 8,
+      "Japanese": "繊維屋",
+      "english": "Textile Shop",
+      "previous": "Fiber Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Fiber and woven goods such as wool, silk and their cloth. The existing compact label identifies the broad trade family; Textile Shop remains a clearer wording lead.",
+      "localization_note": "Textile Shop is an idiomatic label for the trade in raw textile fiber and finished cloth. The original category includes both, so the caption keeps the broader textile trade in view.",
+      "decision": "revision",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160292,
+        "string_offset": 1417428,
+        "category_hex": "914088db00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 8,
+        "output_hex": "54657874696c652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": true
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010101000000000000000000000000010000000001000000000100000000000000000000000000010100000100000000000000000000000000000000000000000100000000000000000000000000000100000000010000000001000000000000000000000000010000010001000000000000000000000000000000000000000001000000000000000000000000000001000000000000000000010000000000000000000000000100000100010000000000000000000000000000000000000000010000000101000001000001000001010100000001000000000100000001010000000000000000010000000101010000000101000001010100000000000000000100000100000100010000010000000100000000010000000001000001000001000000000000000001000001000001000100000100010000010000000000000001000001010101000001010000000001000000000100000000010000010101010000000000000000000100010000010001000001000100000100000000000000010000010000000000010100000000010000000001000000000100000100000000000000000001000001000100000100010000010001000001000000000000000100000100000100010000010000000100000000010000000001000001000001000000000000010000010001000001000100000100010101000000000000000001000000010100000100000100000001010000000100000000010000000101000000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000",
+        "ink_pixels": 138,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 58
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 45,
+          "source_name_field_offset": 1438004,
+          "source_name_offset": 1423776,
+          "source_name_hex": "977296d100",
+          "clean_Japanese": "羊毛",
+          "registered_name_pointer": 34982266,
+          "current_English": "Wool",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 46,
+          "source_name_field_offset": 1438016,
+          "source_name_offset": 1424192,
+          "source_name_hex": "96c889d400",
+          "clean_Japanese": "綿花",
+          "registered_name_pointer": 34980292,
+          "current_English": "Cotton",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 47,
+          "source_name_field_offset": 1438028,
+          "source_name_offset": 1423664,
+          "source_name_hex": "90b68e8500",
+          "clean_Japanese": "生糸",
+          "registered_name_pointer": 34982080,
+          "current_English": "Raw Silk",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 48,
+          "source_name_field_offset": 1438040,
+          "source_name_offset": 1423232,
+          "source_name_hex": "968300",
+          "clean_Japanese": "麻",
+          "registered_name_pointer": 34979706,
+          "current_English": "Hemp",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 49,
+          "source_name_field_offset": 1438052,
+          "source_name_offset": 1424656,
+          "source_name_hex": "96d1904495a800",
+          "clean_Japanese": "毛織物",
+          "registered_name_pointer": 34980695,
+          "current_English": "Wool Cloth",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 50,
+          "source_name_field_offset": 1438064,
+          "source_name_offset": 1425296,
+          "source_name_hex": "96c8904495a800",
+          "clean_Japanese": "綿織物",
+          "registered_name_pointer": 34985956,
+          "current_English": "Cotton Cloth",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 51,
+          "source_name_field_offset": 1438076,
+          "source_name_offset": 1424936,
+          "source_name_hex": "8ca6904495a800",
+          "clean_Japanese": "絹織物",
+          "registered_name_pointer": 34981684,
+          "current_English": "Silk Cloth",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 52,
+          "source_name_field_offset": 1438088,
+          "source_name_offset": 1425496,
+          "source_name_hex": "9683904495a800",
+          "clean_Japanese": "麻織物",
+          "registered_name_pointer": 34977672,
+          "current_English": "Hemp Cloth",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 104,
+          "source_name_field_offset": 1438712,
+          "source_name_offset": 1432612,
+          "source_name_hex": "8341838b8370834a96d1904400",
+          "clean_Japanese": "アルパカ毛織",
+          "registered_name_pointer": 34980688,
+          "current_English": "Alpaca Wool Cloth",
+          "source_category_byte": 8
+        },
+        {
+          "product_ID": 107,
+          "source_name_field_offset": 1438748,
+          "source_name_offset": 1425200,
+          "source_name_hex": "8d95977296d100",
+          "clean_Japanese": "黒羊毛",
+          "registered_name_pointer": 34982260,
+          "current_English": "Black Wool",
+          "source_category_byte": 8
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160292,
+        "previous_pointer": 34971890,
+        "deployed_pointer": 34971890,
+        "format_offset": 1328700,
+        "previous_hex": "466962657200",
+        "deployed_hex": "466962657200",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 8,
+        "output_hex": "54657874696c652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": true,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": true
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_9",
+      "category": 9,
+      "Japanese": "贅沢品屋",
+      "english": "Luxury Shop",
+      "previous": "Luxury Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Luxury wares such as carpets, art and fine furs. The qualifier is already idiomatic before Shop.",
+      "localization_note": "Luxury wares such as carpets, art and fine furs. The qualifier is already idiomatic before Shop.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160296,
+        "string_offset": 1417436,
+        "category_hex": "e6d291f2956900",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 9,
+        "output_hex": "4c75787572792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000101000001000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000001000001000100000000000000000000000000000000000000000000000100000000010000010001000001000100000100000100010001000001000000000000000100000001010100000001010000010101000000000000000000000001000000000100000100010000010001000001000001010000010000010000000000000000010000010000010001000001000100000100000000000000000000010000000001000001000001010000010000010000010000000100000100000000000000000001000100000100010000010001000001000000000000000000000100000000010000010000010100000100000100000100000000010001000000000000010000010001000001000100000100010000010000000000000000000001000000000100000100010000010001000001000001000000000001000000000000000100000100010000010001000001000101010000000000000000000000010101010000010101000100000100000101010000010000000000010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 128,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 53,
+          "source_name_field_offset": 1438100,
+          "source_name_offset": 1429664,
+          "source_name_hex": "82b682e382a482bd82f100",
+          "clean_Japanese": "じゅうたん",
+          "registered_name_pointer": 34979632,
+          "current_English": "Carpets",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 54,
+          "source_name_field_offset": 1438112,
+          "source_name_offset": 1425128,
+          "source_name_hex": "83548389835400",
+          "clean_Japanese": "サラサ",
+          "registered_name_pointer": 34979928,
+          "current_English": "Chintz",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 55,
+          "source_name_field_offset": 1438124,
+          "source_name_offset": 1426700,
+          "source_name_hex": "8d9c82c682a4956900",
+          "clean_Japanese": "骨とう品",
+          "registered_name_pointer": 34980244,
+          "current_English": "Antiques",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 56,
+          "source_name_field_offset": 1438136,
+          "source_name_offset": 1424080,
+          "source_name_hex": "96d194e700",
+          "clean_Japanese": "毛皮",
+          "registered_name_pointer": 34985564,
+          "current_English": "Furs",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 57,
+          "source_name_field_offset": 1438148,
+          "source_name_offset": 1423904,
+          "source_name_hex": "8a4789e600",
+          "clean_Japanese": "絵画",
+          "registered_name_pointer": 34977888,
+          "current_English": "Artwork",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 58,
+          "source_name_field_offset": 1438160,
+          "source_name_offset": 1423912,
+          "source_name_hex": "92a48d8f00",
+          "clean_Japanese": "彫刻",
+          "registered_name_pointer": 34978536,
+          "current_English": "Statues",
+          "source_category_byte": 10
+        },
+        {
+          "product_ID": 100,
+          "source_name_field_offset": 1438664,
+          "source_name_offset": 1432228,
+          "source_name_hex": "834a838a8375815b96d194e700",
+          "clean_Japanese": "カリブー毛皮",
+          "registered_name_pointer": 34985556,
+          "current_English": "Caribou Furs",
+          "source_category_byte": 10
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160296,
+        "previous_pointer": 34971856,
+        "deployed_pointer": 34971856,
+        "format_offset": 1328700,
+        "previous_hex": "4c757875727900",
+        "deployed_hex": "4c757875727900",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 9,
+        "output_hex": "4c75787572792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_10",
+      "category": 10,
+      "Japanese": "香料屋",
+      "english": "Scents Shop",
+      "previous": "Scents Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Aromatic products such as musk, frankincense and ambergris. Scents covers the trade ingredients without implying they are finished perfumes.",
+      "localization_note": "Aromatic products such as musk, frankincense and ambergris. Scents covers the trade ingredients without implying they are finished perfumes.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160300,
+        "string_offset": 1417388,
+        "category_hex": "8d8197bf00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 10,
+        "output_hex": "5363656e74732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000001000000000000000000000000000101000001000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000010000000000000000000000000100000100010000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000100000000000000000000000001000001000100000000000000000000000000000000000000000000000001000000000101000000010100000101010000000101010000010100000000000000000100000001010100000001010000010101000000000000000000000000000100000100000100010000010001000001000000010000010000010000000000000000010000010000010001000001000100000100000000000000000000000000010001000000000101010100010000010000000100000001000000000000000000000001000100000100010000010001000001000000000000000000000100000100010000000001000000000100000100000001000000000100000000000000010000010001000001000100000100010000010000000000000000000001000001000100000100010000010001000001000000010000010000010000000000000100000100010000010001000001000101010000000000000000000000000101000000010100000001010000010000010000000101000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000",
+        "ink_pixels": 131,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 53
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 59,
+          "source_name_field_offset": 1438172,
+          "source_name_offset": 1426844,
+          "source_name_hex": "835783838352834500",
+          "clean_Japanese": "ジャコウ",
+          "registered_name_pointer": 34986266,
+          "current_English": "Musk",
+          "source_category_byte": 11
+        },
+        {
+          "product_ID": 60,
+          "source_name_field_offset": 1438184,
+          "source_name_offset": 1423888,
+          "source_name_hex": "93fb8d8100",
+          "clean_Japanese": "乳香",
+          "registered_name_pointer": 34986580,
+          "current_English": "Frankincense",
+          "source_category_byte": 11
+        },
+        {
+          "product_ID": 61,
+          "source_name_field_offset": 1438196,
+          "source_name_offset": 1426940,
+          "source_name_hex": "97b382ba82f18d8100",
+          "clean_Japanese": "竜ぜん香",
+          "registered_name_pointer": 34986990,
+          "current_English": "Ambergris",
+          "source_category_byte": 11
+        },
+        {
+          "product_ID": 103,
+          "source_name_field_offset": 1438700,
+          "source_name_offset": 1432564,
+          "source_name_hex": "966b8a4382cc97b49fb58d8100",
+          "clean_Japanese": "北海の龍涎香",
+          "registered_name_pointer": 34986980,
+          "current_English": "North Sea Ambergris",
+          "source_category_byte": 11
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160300,
+        "previous_pointer": 34971863,
+        "deployed_pointer": 34971863,
+        "format_offset": 1328700,
+        "previous_hex": "5363656e747300",
+        "deployed_hex": "5363656e747300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 10,
+        "output_hex": "5363656e74732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_11",
+      "category": 11,
+      "Japanese": "装飾品屋",
+      "english": "Jewelry Shop",
+      "previous": "Jewelry Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Decorative materials such as jade, ivory and coral. Jewelry distinguishes ornamental wares from the separate stock gemstones.",
+      "localization_note": "Decorative materials such as jade, ivory and coral. Jewelry distinguishes ornamental wares from the separate stock gemstones.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160304,
+        "string_offset": 1417468,
+        "category_hex": "91958ffc956900",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 11,
+        "output_hex": "4a6577656c72792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000001000000000000000000000000000000000000010100000100000000000000000000000000000000000000000001000000000000000000000000000000000000010000000000000000000000000000000000010000010001000000000000000000000000000000000000000000010000000000000000000000000000000000000100000000000000000000000000000000000100000100010000000000000000000000000000000000000000000100000101000001000100010001010000000001000000010001000100000100000000000000010000000101010000000101000001010100000000000000000001000100000100010001000101000001000000010000000101000001000001000000000000000001000001000001000100000100010000010000000000000000010001010101000100010001010101010000000100000001000000010000010000000000000000000100010000010001000001000100000100000000000100000100010000000000010001000100000000000001000000010000000001000100000000000001000001000100000100010000010001000001000000000001000001000100000100000100010001000001000000010000000100000000000100000000000000010000010001000001000100000100010101000000000000000101000000010100000001000100000101000000000100000001000000000001000000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000010000000000000000",
+        "ink_pixels": 140,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 58
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 62,
+          "source_name_field_offset": 1438208,
+          "source_name_offset": 1424944,
+          "source_name_hex": "83718358834300",
+          "clean_Japanese": "ヒスイ",
+          "registered_name_pointer": 34982183,
+          "current_English": "Jade",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 63,
+          "source_name_field_offset": 1438220,
+          "source_name_offset": 1423744,
+          "source_name_hex": "8fdb89e500",
+          "clean_Japanese": "象牙",
+          "registered_name_pointer": 34984786,
+          "current_English": "Ivory",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 64,
+          "source_name_field_offset": 1438232,
+          "source_name_offset": 1425008,
+          "source_name_hex": "83548393835300",
+          "clean_Japanese": "サンゴ",
+          "registered_name_pointer": 34978848,
+          "current_English": "Coral",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 65,
+          "source_name_field_offset": 1438244,
+          "source_name_offset": 1427108,
+          "source_name_hex": "837883628352834500",
+          "clean_Japanese": "ベッコウ",
+          "registered_name_pointer": 34978992,
+          "current_English": "Tortoiseshell",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 66,
+          "source_name_field_offset": 1438256,
+          "source_name_offset": 1425080,
+          "source_name_hex": "8352836e834e00",
+          "clean_Japanese": "コハク",
+          "registered_name_pointer": 34978336,
+          "current_English": "Amber",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 67,
+          "source_name_field_offset": 1438268,
+          "source_name_offset": 1423784,
+          "source_name_hex": "90858fbb00",
+          "clean_Japanese": "水晶",
+          "registered_name_pointer": 34977984,
+          "current_English": "Crystal",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 68,
+          "source_name_field_offset": 1438280,
+          "source_name_offset": 1430348,
+          "source_name_hex": "836c837483898343836700",
+          "clean_Japanese": "ネフライト",
+          "registered_name_pointer": 34983028,
+          "current_English": "Nephrite",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 102,
+          "source_name_field_offset": 1438688,
+          "source_name_offset": 1432548,
+          "source_name_hex": "834a8369838a834190858fbb00",
+          "clean_Japanese": "カナリア水晶",
+          "registered_name_pointer": 34985812,
+          "current_English": "Canary Crystals",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 108,
+          "source_name_field_offset": 1438760,
+          "source_name_offset": 1432900,
+          "source_name_hex": "89ce82c6955882cc8d678bca00",
+          "clean_Japanese": "火と氷の紅玉",
+          "registered_name_pointer": 34981276,
+          "current_English": "Fire and Ice Rubies",
+          "source_category_byte": 12
+        },
+        {
+          "product_ID": 111,
+          "source_name_field_offset": 1438796,
+          "source_name_offset": 1425620,
+          "source_name_hex": "8d9592b1905e8eec00",
+          "clean_Japanese": "黒蝶真珠",
+          "registered_name_pointer": 34978208,
+          "current_English": "Black Pearls",
+          "source_category_byte": 12
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160304,
+        "previous_pointer": 37334816,
+        "deployed_pointer": 37334816,
+        "format_offset": 1328700,
+        "previous_hex": "4a6577656c727900",
+        "deployed_hex": "4a6577656c727900",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 11,
+        "output_hex": "4a6577656c72792053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_12",
+      "category": 12,
+      "Japanese": "宝石屋",
+      "english": "Gems Shop",
+      "previous": "Gems Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Pearls, diamonds and other precious stones. Gems clearly identifies the gem trade.",
+      "localization_note": "Pearls, diamonds and other precious stones. Gems clearly identifies the gem trade.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160308,
+        "string_offset": 1417404,
+        "category_hex": "95f390ce00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 12,
+        "output_hex": "47656d732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000010100000100000000000000000000000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000000000010000010001000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000000000000000000000000100000000000101000001010001000001010000000000000000010000000101010000000101000001010100000000000000000000000000000000000000000001000101000100000100010001000101000001000000000000000001000001000001000100000100010000010000000000000000000000000000000000000000010000010001010101000100010001000100000000000000000000000100010000010001000001000100000100000000000000000000000000000000000000000100000100010000000001000100010000010000000000000001000001000100000100010000010001000001000000000000000000000000000000000000000001000001000100000100010001000101000001000000000000010000010001000001000100000100010101000000000000000000000000000000000000000000000101010000010100000100010001000101000000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000",
+        "ink_pixels": 118,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 43
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 69,
+          "source_name_field_offset": 1438292,
+          "source_name_offset": 1423752,
+          "source_name_hex": "905e8eec00",
+          "clean_Japanese": "真珠",
+          "registered_name_pointer": 34978214,
+          "current_English": "Pearls",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 70,
+          "source_name_field_offset": 1438304,
+          "source_name_offset": 1432660,
+          "source_name_hex": "835f8343838483828393836800",
+          "clean_Japanese": "ダイヤモンド",
+          "registered_name_pointer": 34978103,
+          "current_English": "Diamonds",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 71,
+          "source_name_field_offset": 1438316,
+          "source_name_offset": 1430480,
+          "source_name_hex": "8354837483408343834100",
+          "clean_Japanese": "サファイア",
+          "registered_name_pointer": 34980868,
+          "current_English": "Sapphires",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 72,
+          "source_name_field_offset": 1438328,
+          "source_name_offset": 1430528,
+          "source_name_hex": "834783818389838b836800",
+          "clean_Japanese": "エメラルド",
+          "registered_name_pointer": 34982560,
+          "current_English": "Emeralds",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 73,
+          "source_name_field_offset": 1438340,
+          "source_name_offset": 1424416,
+          "source_name_hex": "838b8372815b00",
+          "clean_Japanese": "ルビー",
+          "registered_name_pointer": 34981289,
+          "current_English": "Rubies",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 74,
+          "source_name_field_offset": 1438352,
+          "source_name_offset": 1433108,
+          "source_name_hex": "83898373835883898359838a00",
+          "clean_Japanese": "ラピスラズリ",
+          "registered_name_pointer": 34986036,
+          "current_English": "Lapis Lazuli",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 109,
+          "source_name_field_offset": 1438772,
+          "source_name_offset": 1432948,
+          "source_name_hex": "8dbb949982cc8be08d8490ce00",
+          "clean_Japanese": "砂漠の金剛石",
+          "registered_name_pointer": 34978096,
+          "current_English": "Desert Diamonds",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 116,
+          "source_name_field_offset": 1438856,
+          "source_name_offset": 1431604,
+          "source_name_hex": "8df7904682cc8be08d8490ce00",
+          "clean_Japanese": "桜色の金剛石",
+          "registered_name_pointer": 34985844,
+          "current_English": "Pink Diamonds",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 119,
+          "source_name_field_offset": 1438892,
+          "source_name_offset": 1426436,
+          "source_name_hex": "83498370815b838b00",
+          "clean_Japanese": "オパール",
+          "registered_name_pointer": 34985363,
+          "current_English": "Opal",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 121,
+          "source_name_field_offset": 1438916,
+          "source_name_offset": 1429904,
+          "source_name_hex": "9380937982cc95f390ce00",
+          "clean_Japanese": "凍土の宝石",
+          "registered_name_pointer": 34985296,
+          "current_English": "Tundra Gem",
+          "source_category_byte": 13
+        },
+        {
+          "product_ID": 122,
+          "source_name_field_offset": 1438928,
+          "source_name_offset": 1432388,
+          "source_name_hex": "898a82cc83498370815b838b00",
+          "clean_Japanese": "炎のオパール",
+          "registered_name_pointer": 34987000,
+          "current_English": "Fire Opals",
+          "source_category_byte": 13
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160308,
+        "previous_pointer": 34971917,
+        "deployed_pointer": 34971917,
+        "format_offset": 1328700,
+        "previous_hex": "47656d7300",
+        "deployed_hex": "47656d7300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 12,
+        "output_hex": "47656d732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_13",
+      "category": 13,
+      "Japanese": "薬屋",
+      "english": "Medicine Shop",
+      "previous": "Medicine Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Medicinal trade goods such as ginseng, quinine and cordyceps. Medicine spells out the category and fits in the original cell.",
+      "localization_note": "Medicinal trade goods such as ginseng, quinine and cordyceps. Medicine spells out the category and fits in the original cell.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160312,
+        "string_offset": 1417360,
+        "category_hex": "96f200",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 13,
+        "output_hex": "4d65646963696e652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000001000000010000000000000000000100000000000000000000000000000000000001010000010000000000000000000000000001000000010000000000000000010000000100000000000000000001000000000000000000000000000000000001000001000100000000000000000000000000010100010100000000000000000100000000000000000000000000000000000000000000000000000000000000010000010001000000000000000000000000000101000101000101000000010101000000010000000101000000000100000101010000000101000000000000000001000000010101000000010100000101010001010001010100000100010000010000000100000100000100000001000001000001000100000100000000000000000100000100000100010000010001000001010100010101010101000100000100000001000001000000000000010000010000010001010101000000000000000000010001000001000100000100010000010100010001010000000001000001000000010000010000000000000100000100000100010000000000000000000100000100010000010001000001000100000101000100010100000100010000010000000100000100000100000001000001000001000100000100000000000001000001000100000100010000010001010100010001000100010100000001010100000001000000010100000000010000010000010000010100000000000000000101000001000001000001010000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+        "ink_pixels": 169,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 63
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 75,
+          "source_name_field_offset": 1438364,
+          "source_name_offset": 1427648,
+          "source_name_hex": "8354834382cc8a7000",
+          "clean_Japanese": "サイの角",
+          "registered_name_pointer": 34981780,
+          "current_English": "Rhino Horn",
+          "source_category_byte": 14
+        },
+        {
+          "product_ID": 76,
+          "source_name_field_offset": 1438376,
+          "source_name_offset": 1427744,
+          "source_name_hex": "92a9914e906c8e5100",
+          "clean_Japanese": "朝鮮人参",
+          "registered_name_pointer": 34978880,
+          "current_English": "Ginseng",
+          "source_category_byte": 14
+        },
+        {
+          "product_ID": 77,
+          "source_name_field_offset": 1438388,
+          "source_name_offset": 1425632,
+          "source_name_hex": "834c836a815b836c00",
+          "clean_Japanese": "キニーネ",
+          "registered_name_pointer": 34979224,
+          "current_English": "Quinine",
+          "source_category_byte": 14
+        },
+        {
+          "product_ID": 78,
+          "source_name_field_offset": 1438400,
+          "source_name_offset": 1430864,
+          "source_name_hex": "8341815b83828393836800",
+          "clean_Japanese": "アーモンド",
+          "registered_name_pointer": 34978144,
+          "current_English": "Almond",
+          "source_category_byte": 14
+        },
+        {
+          "product_ID": 79,
+          "source_name_field_offset": 1438412,
+          "source_name_offset": 1425560,
+          "source_name_hex": "937e928e89c4919000",
+          "clean_Japanese": "冬虫夏草",
+          "registered_name_pointer": 34981000,
+          "current_English": "Cordyceps",
+          "source_category_byte": 14
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160312,
+        "previous_pointer": 34971922,
+        "deployed_pointer": 34991016,
+        "format_offset": 1328700,
+        "previous_hex": "4d656400",
+        "deployed_hex": "4d65646963696e6500",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 13,
+        "output_hex": "4d65646963696e652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_14",
+      "category": 14,
+      "Japanese": "染料屋",
+      "english": "Dyes Shop",
+      "previous": "Dyes Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Dye goods including indigo and cochineal. The category stays recognizable as a shop label.",
+      "localization_note": "Dye goods including indigo and cochineal. The category stays recognizable as a shop label.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160316,
+        "string_offset": 1417364,
+        "category_hex": "90f597bf00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 14,
+        "output_hex": "447965732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010000000000000000000000000000000000000000000000010100000100000000000000000000000000000000000000000000000000000000000000000001000001000000000000000000000000000000000000000000010000010001000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000000000000000000000000100000100010000010000010100000001010000000000000000010000000101010000000101000001010100000000000000000000000000000000000000000001000001000100000100010000010001000001000000000000000001000001000001000100000100010000010000000000000000000000000000000000000000010000010001000001000101010100000100000000000000000000000100010000010001000001000100000100000000000000000000000000000000000000000100000100000100010001000000000000010000000000000001000001000100000100010000010001000001000000000000000000000000000000000000000001000001000000010000010000010001000001000000000000010000010001000001000100000100010101000000000000000000000000000000000000000000010101000000000100000001010000000101000000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000",
+        "ink_pixels": 113,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 43
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 80,
+          "source_name_field_offset": 1438424,
+          "source_name_offset": 1425344,
+          "source_name_hex": "83458352839300",
+          "clean_Japanese": "ウコン",
+          "registered_name_pointer": 34984336,
+          "current_English": "Turmeric",
+          "source_category_byte": 15
+        },
+        {
+          "product_ID": 81,
+          "source_name_field_offset": 1438436,
+          "source_name_offset": 1428128,
+          "source_name_hex": "8343839383668342835300",
+          "clean_Japanese": "インディゴ",
+          "registered_name_pointer": 34978320,
+          "current_English": "Indigo",
+          "source_category_byte": 15
+        },
+        {
+          "product_ID": 82,
+          "source_name_field_offset": 1438448,
+          "source_name_offset": 1428236,
+          "source_name_hex": "83528360836a815b838b00",
+          "clean_Japanese": "コチニール",
+          "registered_name_pointer": 34980160,
+          "current_English": "Cochineal",
+          "source_category_byte": 15
+        },
+        {
+          "product_ID": 83,
+          "source_name_field_offset": 1438460,
+          "source_name_offset": 1425788,
+          "source_name_hex": "83728393838d834500",
+          "clean_Japanese": "ビンロウ",
+          "registered_name_pointer": 34977869,
+          "current_English": "Betel",
+          "source_category_byte": 15
+        },
+        {
+          "product_ID": 84,
+          "source_name_field_offset": 1438472,
+          "source_name_offset": 1426364,
+          "source_name_hex": "835f83438349834500",
+          "clean_Japanese": "ダイオウ",
+          "registered_name_pointer": 34978752,
+          "current_English": "Rhubarb",
+          "source_category_byte": 15
+        },
+        {
+          "product_ID": 85,
+          "source_name_field_offset": 1438484,
+          "source_name_offset": 1431380,
+          "source_name_hex": "837d8393835383588360839300",
+          "clean_Japanese": "マンゴスチン",
+          "registered_name_pointer": 34983112,
+          "current_English": "Mangosteen",
+          "source_category_byte": 15
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160316,
+        "previous_pointer": 34971907,
+        "deployed_pointer": 34971907,
+        "format_offset": 1328700,
+        "previous_hex": "4479657300",
+        "deployed_hex": "4479657300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 14,
+        "output_hex": "447965732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_15",
+      "category": 15,
+      "Japanese": "武器屋",
+      "english": "Arms Shop",
+      "previous": "Arms Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Arms and equipment including guns, cannon, blades and armor. Arms is concise and suits the period setting.",
+      "localization_note": "Arms and equipment including guns, cannon, blades and armor. Arms is concise and suits the period setting.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160320,
+        "string_offset": 1417372,
+        "category_hex": "95908aed00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 15,
+        "output_hex": "41726d732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000010100000100000000000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000010000010001000000000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000100000100010000000000000000000000000000000000000000000000000000000000000000000100000100000100010001010001000001010000000000000000010000000101010000000101000001010100000000000000000000000000000000000000000001000001000001010000010001000101000001000000000000000001000001000001000100000100010000010000000000000000000000000000000000000000010000010000010000000100010001000100000000000000000000000100010000010001000001000100000100000000000000000000000000000000000000000101010100000100000001000100010000010000000000000001000001000100000100010000010001000001000000000000000000000000000000000000000001000001000001000000010001000101000001000000000000010000010001000001000100000100010101000000000000000000000000000000000000000000010000010000010000000100010001000101000000000000000001010000010000010000010100000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000",
+        "ink_pixels": 114,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 43
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 86,
+          "source_name_field_offset": 1438496,
+          "source_name_offset": 1424104,
+          "source_name_hex": "9353964300",
+          "clean_Japanese": "鉄砲",
+          "registered_name_pointer": 34979701,
+          "current_English": "Guns",
+          "source_category_byte": 16
+        },
+        {
+          "product_ID": 87,
+          "source_name_field_offset": 1438508,
+          "source_name_offset": 1424128,
+          "source_name_hex": "91e5964300",
+          "clean_Japanese": "大砲",
+          "registered_name_pointer": 34977920,
+          "current_English": "Cannon",
+          "source_category_byte": 16
+        },
+        {
+          "product_ID": 88,
+          "source_name_field_offset": 1438520,
+          "source_name_offset": 1424224,
+          "source_name_hex": "93818c9500",
+          "clean_Japanese": "刀剣",
+          "registered_name_pointer": 34989696,
+          "current_English": "Blades",
+          "source_category_byte": 16
+        },
+        {
+          "product_ID": 89,
+          "source_name_field_offset": 1438532,
+          "source_name_offset": 1423440,
+          "source_name_hex": "8d62996800",
+          "clean_Japanese": "甲冑",
+          "registered_name_pointer": 34979160,
+          "current_English": "Armor",
+          "source_category_byte": 16
+        },
+        {
+          "product_ID": 115,
+          "source_name_field_offset": 1438844,
+          "source_name_offset": 1431524,
+          "source_name_hex": "8d9582ab955889cd82cc8c9500",
+          "clean_Japanese": "黒き氷河の剣",
+          "registered_name_pointer": 34980052,
+          "current_English": "Black Glacier Sword",
+          "source_category_byte": 16
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160320,
+        "previous_pointer": 34971902,
+        "deployed_pointer": 34971902,
+        "format_offset": 1328700,
+        "previous_hex": "41726d7300",
+        "deployed_hex": "41726d7300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 15,
+        "output_hex": "41726d732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_16",
+      "category": 16,
+      "Japanese": "鉱石屋",
+      "english": "Ore Shop",
+      "previous": "Ore Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Unprocessed mineral goods such as iron, copper and tin ore. Ore distinguishes the shop from Metals.",
+      "localization_note": "Unprocessed mineral goods such as iron, copper and tin ore. Ore distinguishes the shop from Metals.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160324,
+        "string_offset": 1417420,
+        "category_hex": "8d7a90ce00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 16,
+        "output_hex": "4f72652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010100000000000000000000000000000000000101000001000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000100010000000000000000000000000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000001000100000000000000000000000000000000000000000000000000000000000000000000000000000100000001000100010000010100000000000000000100000001010100000001010000010101000000000000000000000000000000000000000000000000000001000000010001010000010000010000000000000000010000010000010001000001000100000100000000000000000000000000000000000000000000000000010000000100010000000101010100000000000000000001000100000100010000010001000001000000000000000000000000000000000000000000000000000100000001000100000001000000000000000000010000010001000001000100000100010000010000000000000000000000000000000000000000000000000001000000010001000000010000010000000000000100000100010000010001000001000101010000000000000000000000000000000000000000000000000000000101010000010000000001010000000000000000010100000100000100000101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000",
+        "ink_pixels": 99,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 38
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 90,
+          "source_name_field_offset": 1438544,
+          "source_name_offset": 1424728,
+          "source_name_hex": "93538d7a90ce00",
+          "clean_Japanese": "鉄鉱石",
+          "registered_name_pointer": 34981132,
+          "current_English": "Iron Ore",
+          "source_category_byte": 17
+        },
+        {
+          "product_ID": 91,
+          "source_name_field_offset": 1438556,
+          "source_name_offset": 1424768,
+          "source_name_hex": "93ba8d7a90ce00",
+          "clean_Japanese": "銅鉱石",
+          "registered_name_pointer": 34981540,
+          "current_English": "Copper Ore",
+          "source_category_byte": 17
+        },
+        {
+          "product_ID": 92,
+          "source_name_field_offset": 1438568,
+          "source_name_offset": 1424560,
+          "source_name_hex": "8ee08d7a90ce00",
+          "clean_Japanese": "錫鉱石",
+          "registered_name_pointer": 34978560,
+          "current_English": "Tin Ore",
+          "source_category_byte": 17
+        },
+        {
+          "product_ID": 93,
+          "source_name_field_offset": 1438580,
+          "source_name_offset": 1426304,
+          "source_name_hex": "83568387834590ce00",
+          "clean_Japanese": "ショウ石",
+          "registered_name_pointer": 34980220,
+          "current_English": "Saltpeter",
+          "source_category_byte": 17
+        },
+        {
+          "product_ID": 94,
+          "source_name_field_offset": 1438592,
+          "source_name_offset": 1424624,
+          "source_name_hex": "83438349834500",
+          "clean_Japanese": "イオウ",
+          "registered_name_pointer": 34979056,
+          "current_English": "Sulfur",
+          "source_category_byte": 17
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160324,
+        "previous_pointer": 34971926,
+        "deployed_pointer": 34971926,
+        "format_offset": 1328700,
+        "previous_hex": "4f726500",
+        "deployed_hex": "4f726500",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 16,
+        "output_hex": "4f72652053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    },
+    {
+      "id": "SQUARE_SHOP_CAPTION_17",
+      "category": 17,
+      "Japanese": "雑貨屋",
+      "english": "Sundries Shop",
+      "previous": "Sundries Shop",
+      "speaker": "Square shop menu",
+      "context": "A selectable retail shop caption assembled from the stock product category and the original shop suffix.",
+      "source_meaning": "Miscellaneous supplies such as timber, leather and wax. Sundries identifies the miscellaneous category and avoids the generic Goods Shop.",
+      "localization_note": "Miscellaneous supplies such as timber, leather and wax. Sundries identifies the miscellaneous category and avoids the generic Goods Shop.",
+      "decision": "retention",
+      "source_reference": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160328,
+        "string_offset": 1417380,
+        "category_hex": "8e4789dd00",
+        "format_offset": 1328700,
+        "format_hex": "2573935800"
+      },
+      "current_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 17,
+        "output_hex": "53756e64726965732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false
+      },
+      "native_display": {
+        "single_line": true,
+        "width": 64,
+        "height": 12,
+        "native_plane_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000100000000000000000100000000000000000000000000000000000001010000010000000000000000000000000001000001000000000000000000000000000001000000000000000001000000000000000000000000000000000001000001000100000000000000000000000000010000010000000000000000000000000000010000000000000000000000000000000000000000000000000000010000010001000000000000000000000000000001000000010000010001010100000001010100000100010000000100000001010000000101000000000000000001000000010101000000010100000101010000000100000100000100010000010001000001000001010000000001000001000001000100000100000000000000000100000100000100010000010001000001000000010001000001000100000100010000010000010000000000010000010101010000010000000000000000000000010001000001000100000100010000010100000100010000010001000001000100000100000100000000000100000100000000000001000000000000000100000100010000010001000001000100000101000001000100000100010000010001000001000001000000000001000001000001000100000100000000000001000001000100000100010000010001010100000101000000010101000100000100000101010000010000000000010000000101000000010100000000000000000101000001000001000001010000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+        "ink_pixels": 155,
+        "complete_leading_trailing_characters": true,
+        "ink_rightmost_x": 63
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_and_current_category_stock": [
+        {
+          "product_ID": 95,
+          "source_name_field_offset": 1438604,
+          "source_name_offset": 1423928,
+          "source_name_hex": "96d88dde00",
+          "clean_Japanese": "木材",
+          "registered_name_pointer": 34978360,
+          "current_English": "Timber",
+          "source_category_byte": 18
+        },
+        {
+          "product_ID": 96,
+          "source_name_field_offset": 1438616,
+          "source_name_offset": 1424216,
+          "source_name_hex": "94e78a7600",
+          "clean_Japanese": "皮革",
+          "registered_name_pointer": 34979088,
+          "current_English": "Leather",
+          "source_category_byte": 18
+        },
+        {
+          "product_ID": 97,
+          "source_name_field_offset": 1438628,
+          "source_name_offset": 1426568,
+          "source_name_hex": "838f8362834e835800",
+          "clean_Japanese": "ワックス",
+          "registered_name_pointer": 34980072,
+          "current_English": "Wax",
+          "source_category_byte": 18
+        },
+        {
+          "product_ID": 98,
+          "source_name_field_offset": 1438640,
+          "source_name_offset": 1424792,
+          "source_name_hex": "8360834e838b00",
+          "clean_Japanese": "チクル",
+          "registered_name_pointer": 34978176,
+          "current_English": "Chicle",
+          "source_category_byte": 18
+        },
+        {
+          "product_ID": 99,
+          "source_name_field_offset": 1438652,
+          "source_name_offset": 1425040,
+          "source_name_hex": "834f8341836d00",
+          "clean_Japanese": "グアノ",
+          "registered_name_pointer": 34986260,
+          "current_English": "Guano",
+          "source_category_byte": 18
+        },
+        {
+          "product_ID": 120,
+          "source_name_field_offset": 1438904,
+          "source_name_offset": 1432148,
+          "source_name_hex": "8352835283698362836396fb00",
+          "clean_Japanese": "ココナッツ油",
+          "registered_name_pointer": 34982356,
+          "current_English": "Coconut Oil",
+          "source_category_byte": 18
+        }
+      ],
+      "previous_consumer": {
+        "file_path": "/__arm9__.bin",
+        "table_entry": 1160328,
+        "previous_pointer": 34971896,
+        "deployed_pointer": 34971819,
+        "format_offset": 1328700,
+        "previous_hex": "476f6f647300",
+        "deployed_hex": "53756e647269657300",
+        "consumer": 33947048,
+        "format_hex": "25732053686f7000"
+      },
+      "registered_reference": {
+        "file_path": "/__arm9__.bin",
+        "native_call": 33947048,
+        "formatter": 33947064,
+        "category": 17,
+        "output_hex": "53756e64726965732053686f70",
+        "linked_old_category_getter": 33538924,
+        "local_complete_caption_dispatch": false,
+        "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00"
+      },
+      "file_path": "/__arm9__.bin",
+      "emulator_caption_observed_in_lisbon": false
+    }
+  ],
+  "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "new_contextual_credit": 0,
+  "shared_storage_scope": {
+    "pending_records": 276,
+    "exact_payloads_and_locations": true,
+    "evidence_sha256": "153e37be4b02932f02edd037aac2fc52407848a7b30eae8800e664be72a0d4b9"
+  },
+  "direct_visual_review": {
+    "work\\square_label_wording_20261119\\staged_v1\\native_square_labels.png": "d1e376d2775a14565c14f83cf743effe577ce2ace9ffa87a31902c2c527c0ac4",
+    "work\\square_label_wording_20261119\\staged_v1\\lisbon_caption_comparison.png": "aba5e990ba2f4b8f68348e51e81e6bab4faef26fcdefc8700fa6ae6eefe74375"
+  },
+  "observed_gameplay": {
+    "candidate_sha256": "154064db7815a6f66a36ac49995908ac97ed37c6bf5efa22707a8e94117ccc00",
+    "prior_sha256": "70bd6a3b4ffb763eeb34fe95bb62365c0c9fd2333e9f5ecbebd5457af7b5155b",
+    "ordinary_lisbon_existing_save": true,
+    "native_full_caption_masks": [
+      {
+        "side": "Previous",
+        "frame": 4750,
+        "text": "Cond. Shop",
+        "box": [
+          120,
+          214,
+          184,
+          226
+        ],
+        "ink_pixels": 116
+      },
+      {
+        "side": "Previous",
+        "frame": 4750,
+        "text": "Treats Shop",
+        "box": [
+          120,
+          246,
+          184,
+          258
+        ],
+        "ink_pixels": 127
+      },
+      {
+        "side": "Previous",
+        "frame": 4750,
+        "text": "Fiber Shop",
+        "box": [
+          120,
+          278,
+          184,
+          290
+        ],
+        "ink_pixels": 118
+      },
+      {
+        "side": "Previous",
+        "frame": 4750,
+        "text": "Crafts Shop",
+        "box": [
+          120,
+          310,
+          184,
+          322
+        ],
+        "ink_pixels": 128
+      },
+      {
+        "side": "Revised",
+        "frame": 4750,
+        "text": "Seasonings",
+        "box": [
+          120,
+          214,
+          184,
+          226
+        ],
+        "ink_pixels": 124
+      },
+      {
+        "side": "Revised",
+        "frame": 4750,
+        "text": "Treats Shop",
+        "box": [
+          120,
+          246,
+          184,
+          258
+        ],
+        "ink_pixels": 127
+      },
+      {
+        "side": "Revised",
+        "frame": 4750,
+        "text": "Textile Shop",
+        "box": [
+          120,
+          278,
+          184,
+          290
+        ],
+        "ink_pixels": 138
+      },
+      {
+        "side": "Revised",
+        "frame": 4750,
+        "text": "Crafts Shop",
+        "box": [
+          120,
+          310,
+          184,
+          322
+        ],
+        "ink_pixels": 128
+      }
+    ],
+    "revised_pixel_frames": [
+      {
+        "frame": 4350,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 4750,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 5150,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          288
+        ]
+      },
+      {
+        "frame": 5550,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 5950,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          288
+        ]
+      },
+      {
+        "frame": 6350,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 6750,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          288
+        ]
+      },
+      {
+        "frame": 7150,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 7550,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          288
+        ]
+      },
+      {
+        "frame": 7950,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 8350,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          288
+        ]
+      },
+      {
+        "frame": 8750,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      },
+      {
+        "frame": 9150,
+        "differences_in_caption_regions_only": true,
+        "bounds": [
+          120,
+          215,
+          179,
+          290
+        ]
+      }
+    ],
+    "unchanged_frames": [
+      1,
+      60,
+      180,
+      3200,
+      3720,
+      3950,
+      9550,
+      9601
+    ],
+    "returned_to_lisbon_frame": 9550,
+    "all_dialogue_requests_exact": true,
+    "no_pending_shared_requests": true,
+    "hardware": false,
+    "sheets": [
+      {
+        "path": "work\\square_label_wording_20261119\\staged_v1\\lisbon_caption_comparison.png",
+        "sha256": "aba5e990ba2f4b8f68348e51e81e6bab4faef26fcdefc8700fa6ae6eefe74375"
+      }
+    ],
+    "evidence": {
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\capture_report.json": "8c9b9b0025048716799ee6ee21d86da1e261581bc96af211223748826b8a8466",
+      "work\\joined_actor_names_20261119\\lisbon\\requests.json": "8717975f1d408bdc4758f45a22ffd56d2af6d7af5a057da64241b84b7ec35265",
+      "work\\joined_actor_names_20261119\\lisbon\\terminal.json": "68b36a4a7793c5379dbb8c9e687c4e40a0b7613eb0794b724e3345f220fd9f23",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\capture_report.json": "7e555b44ae5aa01d16523e96b46d9baef3a39243ed985fab492b6cb61b9298cd",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\requests.json": "1e60420effb57444522e3174afad8836b97f431aa7bba2ce55e8fad9fa624da1",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\terminal.json": "52dd30150d91e44c57b51c3bb76fc5bf81ba0cbac7c8df1dbcb26321099052f3",
+      "work\\joined_actor_names_20261119\\lisbon_shopkeeper_gameplay.json": "461dfb8470cd3681d63f6e3516268433fb8f67eefc9cafce78861065dfb58e01",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_000001_cold_boot.png": "7134e1347e6e395737779e324a7071defa2b8ce25026dbce03e8eadae164592a",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_000001_cold_boot.png": "7134e1347e6e395737779e324a7071defa2b8ce25026dbce03e8eadae164592a",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_000060_cold_boot.png": "34ca811992d29ee1c8e3ee70632e652e9369ebf2cb0ec9af92db7ce817f77d5d",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_000060_cold_boot.png": "34ca811992d29ee1c8e3ee70632e652e9369ebf2cb0ec9af92db7ce817f77d5d",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_000180_cold_boot.png": "3c0e584a596d1244e8cc8b403ceff070bbe5aac7034591ed5c806a5fbcf7e3d3",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_000180_cold_boot.png": "3c0e584a596d1244e8cc8b403ceff070bbe5aac7034591ed5c806a5fbcf7e3d3",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_003200_cold_boot.png": "af37061742b1e0cc76da44e715fa9ec436198881f25eaad106ada13066203d81",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_003200_cold_boot.png": "af37061742b1e0cc76da44e715fa9ec436198881f25eaad106ada13066203d81",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_003720_cold_boot.png": "af37061742b1e0cc76da44e715fa9ec436198881f25eaad106ada13066203d81",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_003720_cold_boot.png": "af37061742b1e0cc76da44e715fa9ec436198881f25eaad106ada13066203d81",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_003950_cold_boot.png": "f55753a26b3af41d2bcfd711c3fb6a80f977a604b26810903b21e50d93f31363",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_003950_cold_boot.png": "f55753a26b3af41d2bcfd711c3fb6a80f977a604b26810903b21e50d93f31363",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_004350_cold_boot.png": "f6ff8252538ddad89501584977b900d771a1fb6336f7ab6ea05cbbe8d326f883",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_004350_cold_boot.png": "54d77c082ddc9fe4490b5f4ecbd1c261a2f0a2dd0a5367e51f6a434bd6e7fe5c",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_004750_cold_boot.png": "a9cbbe17481c56e66157fd6799814d8af68c475e8a64a56a9dafab433c53aa2f",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_004750_cold_boot.png": "620841222fcf54ba0a510637a68ef4276891350d73105dface7d538fe88416dc",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_005150_cold_boot.png": "8a4d70240ecf26332eccf28cc41be17a4e62eb7fea526b406b82c9a51c6243a3",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_005150_cold_boot.png": "fb9bdc1cc483115a07fe8fab257b3caf9c7bf8d5e750def2244d9565cc9b7669",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_005550_cold_boot.png": "3cf61fcfbb1c4760f0c1c7e479bb6828e9d5324938888bff527c4da703cfdaa5",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_005550_cold_boot.png": "c57fef290e93234f2b1bf928bc9cb654216080a4519de964782d5a07057fcaf9",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_005950_cold_boot.png": "389d66864f69bb08cc4a709f1ec6e5be66125aa9693d6797decc72e39b5e0a10",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_005950_cold_boot.png": "56566480e107fbda77c62e982079d51950724083d28d86f531610df3986c40cb",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_006350_cold_boot.png": "3cf61fcfbb1c4760f0c1c7e479bb6828e9d5324938888bff527c4da703cfdaa5",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_006350_cold_boot.png": "c57fef290e93234f2b1bf928bc9cb654216080a4519de964782d5a07057fcaf9",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_006750_cold_boot.png": "07552b7fc6c8e0020687b49859fb6fafcd3fe1bc8e803b62a8469dd0f1ecfab4",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_006750_cold_boot.png": "dab4d5b1e477355d3ba05879f8545155d7268847d98dc985b768e162e6d7a5b1",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_007150_cold_boot.png": "67a22b47617dbc2b41b5f610b5e6e56cb9ac0c147511b64f7698e414166ad8c5",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_007150_cold_boot.png": "e10b4e48afac41e11e55a34985bc07ecef8408aa5fa67a04014345ab6d517271",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_007550_cold_boot.png": "e08cb32c071903324846a6eb3fcc14e2ede2d38904bfd8b524ca67d2cce11878",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_007550_cold_boot.png": "530a5ec88226167b349ee4fb0fd410dbc3c2e22a0d9657c03481f2b82f9d2691",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_007950_cold_boot.png": "3cf61fcfbb1c4760f0c1c7e479bb6828e9d5324938888bff527c4da703cfdaa5",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_007950_cold_boot.png": "c57fef290e93234f2b1bf928bc9cb654216080a4519de964782d5a07057fcaf9",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_008350_cold_boot.png": "873f6fdcdb4cda3e0166a10d6b90a372aeee7fa4f40b27c353398c385149c258",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_008350_cold_boot.png": "988f99d333b2e2e6b7da2d3765bd3e2bcd9f7e9b385620ee82d8ef95e1ee4c01",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_008750_cold_boot.png": "3cf61fcfbb1c4760f0c1c7e479bb6828e9d5324938888bff527c4da703cfdaa5",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_008750_cold_boot.png": "c57fef290e93234f2b1bf928bc9cb654216080a4519de964782d5a07057fcaf9",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_009150_cold_boot.png": "f6ff8252538ddad89501584977b900d771a1fb6336f7ab6ea05cbbe8d326f883",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_009150_cold_boot.png": "54d77c082ddc9fe4490b5f4ecbd1c261a2f0a2dd0a5367e51f6a434bd6e7fe5c",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_009550_cold_boot.png": "c0ca41eb5bd4049bc08e94ff7a30c06463ccccea44c3fa546ff530dfcb5650da",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_009550_cold_boot.png": "c0ca41eb5bd4049bc08e94ff7a30c06463ccccea44c3fa546ff530dfcb5650da",
+      "work\\joined_actor_names_20261119\\lisbon\\capture\\frame_009601_final.png": "3d6352e1096458bc4dfa1b7146e67c8150d6a5a6c5eb2ba7fe424b469a3deac7",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon\\capture\\frame_009601_final.png": "3d6352e1096458bc4dfa1b7146e67c8150d6a5a6c5eb2ba7fe424b469a3deac7",
+      "work\\square_label_wording_20261119\\staged_v1\\lisbon_caption_comparison.png": "aba5e990ba2f4b8f68348e51e81e6bab4faef26fcdefc8700fa6ae6eefe74375"
+    }
+  },
+  "owned_square_caption_selector": {
+    "original_call": 33947048,
+    "caption_formatter": 33947064,
+    "sole_original_call_change": [
+      392616,
+      392620
+    ],
+    "private_caption_selector": [
+      33538464,
+      33538524
+    ],
+    "released_stack_painter_old_scratch": [
+      33538464,
+      33538560
+    ],
+    "original_square_painter_exact": true,
+    "all_absolute_aliases_and_aligned_arm_predecessor_branches_into_private_span": [],
+    "original_scratch_buffer": 36324588,
+    "staged_main_pool_and_section_extents_exact": true
+  },
+  "source_and_native_dependency_proofs": {
+    "releases\\all_routes_editorial_20261119_deck_comments_candidate\\verification\\registered_release_verification.json": "71f4ba7eb3dd89b07544bca045d3dbb4d302861026bd2dbe939248846716dc4f",
+    "releases\\all_routes_editorial_20261115_square_shop_captions_candidate\\verification\\registered_review.json": "517d6d9eccf3b9948566361eab3e5cf9459eac5a2d0cd4d17f7b52d29016c1bd",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\stage_square_label_wording_20261119.py": "dd25cf2217b97d85e22598eb2e7cb211086d9431c47a3d751cb0d2521eb7d3ea"
+  }
+}

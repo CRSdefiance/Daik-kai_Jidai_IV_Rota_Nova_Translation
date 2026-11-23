@@ -1,0 +1,192 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "candidate_sha256": "e7928d3f0410df691dac39d2b7ba32ab94ded77cef517186683c5a129aa31a23",
+  "records": [
+    {
+      "id": "CITY_COMPACT_SHORTAGE",
+      "file_path": "/__arm9__.bin",
+      "speaker": "City status field",
+      "clean_Japanese": "品不足",
+      "source_meaning": "Goods are in short supply. The narrow display groups the seven shortage types under this status.",
+      "context": "Town Summary and Market Trade display the current settlement condition next to the Status heading.",
+      "previous_English": "Shortage",
+      "english": "Shortage",
+      "decision": "revision",
+      "wording_changed": false,
+      "display_changed": true,
+      "localization_note": "The generic noun matches the original compact description and contrasts clearly with Normal. Restore the last two letters.",
+      "source_reference": {
+        "offset": 1403212,
+        "length": 6,
+        "pointer_field": 746528
+      },
+      "current_reference": {
+        "offset": 1401714,
+        "length": 8,
+        "pointer_fields": [
+          746528,
+          726812
+        ],
+        "Town_Summary_descriptor": 1156756,
+        "Trade_descriptor": 1158804
+      },
+      "staged_reference": {
+        "offset": 1401714,
+        "length": 8,
+        "pointer_fields": [
+          746528,
+          726812
+        ],
+        "Town_Summary_descriptor": 1156756,
+        "Trade_descriptor": 1158804
+      },
+      "source_hex": "9569957391ab",
+      "current_hex": "53686f7274616765",
+      "review": {
+        "localization": true,
+        "naturalness": true,
+        "formatting": true,
+        "source": true,
+        "context": true
+      }
+    }
+  ],
+  "parent_sha256": "54d9b77e799235b58bbcc1b37b208ff26e6247ab5964c515c2e73ca51a8c96f4",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "e71ad82a6a63519d738bf2221f309bdbf5d778701c8984b1210d628530571183",
+  "entire_parent_inverse": true,
+  "exact_entry_paths": [
+    [
+      "ARM9 section 0",
+      34317324,
+      34320952,
+      "arm_bl"
+    ],
+    [
+      "ARM9 section 0",
+      34321040,
+      34358912,
+      "arm_bl"
+    ],
+    [
+      "ARM9 section 0",
+      34321092,
+      34344932,
+      "arm_bl"
+    ]
+  ],
+  "atlas_bound": [
+    228,
+    72
+  ],
+  "atlas_rectangles": 16,
+  "native_status_domain": 256,
+  "native_statuses": [
+    {
+      "status": 0,
+      "source_Japanese": "戦争",
+      "full": "War",
+      "compact": "War",
+      "pixels": 18
+    },
+    {
+      "status": 1,
+      "source_Japanese": "疫病",
+      "full": "Plague",
+      "compact": "Plague",
+      "pixels": 36
+    },
+    {
+      "status": 2,
+      "source_Japanese": "飢饉",
+      "full": "Famine",
+      "compact": "Famine",
+      "pixels": 36
+    },
+    {
+      "status": 3,
+      "source_Japanese": "好景気",
+      "full": "Boom",
+      "compact": "Boom",
+      "pixels": 24
+    },
+    {
+      "status": 4,
+      "source_Japanese": "不景気",
+      "full": "Slump",
+      "compact": "Slump",
+      "pixels": 30
+    },
+    {
+      "status": 5,
+      "source_Japanese": "調味料不足",
+      "full": "Seasoning Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 6,
+      "source_Japanese": "香辛料不足",
+      "full": "Spice Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 7,
+      "source_Japanese": "嗜好品不足",
+      "full": "Luxury Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 8,
+      "source_Japanese": "酒類不足",
+      "full": "Alcohol Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 9,
+      "source_Japanese": "繊維不足",
+      "full": "Fiber Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 10,
+      "source_Japanese": "染料不足",
+      "full": "Dye Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 11,
+      "source_Japanese": "鉱石不足",
+      "full": "Ore Shortage",
+      "compact": "Shortage",
+      "pixels": 48
+    },
+    {
+      "status": 12,
+      "source_Japanese": "通常",
+      "full": "Normal",
+      "compact": "Normal",
+      "pixels": 36
+    }
+  ],
+  "original_trade_stack_bytes": 9640,
+  "added_trade_stack_bytes": 288,
+  "source_proofs": {
+    "releases\\all_routes_editorial_20261119_town_summary_candidate\\verification\\registered_release_verification.json": "918b0ad6c81fa568fd5d1e648705904959965c5b406ae2eee23f2b79e5c98c11",
+    "work\\clean.nds": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+  }
+}

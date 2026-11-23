@@ -1,0 +1,7 @@
+# Maria follow-up and Hangzhou briefing
+
+Reviewed 17 Maria lines whose installed text differed from prior proof. The pass revised six, rewrapped Lil's retort and individually justified ten retentions. Another 343 decisions carry forward on exact stored bytes. Two earlier name-driven wraps now have fuller opening rows. The Hangzhou Luxury Shop briefing keeps each of its four thoughts on its own line. [Exact source, current references and five review gates](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/verification/registered_review.json)
+
+Native review verified nine story pages, six alternate name layouts and the four-line briefing. Focused Maria playback verified 12 pages and two return holds. Ordinary Hangzhou navigation verified all four briefing rows, the Shopkeeper label, five neighboring holds and three menu returns. Original story triggers, alternate shared callers and hardware remain unvisited. [Display and emulator proof](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/verification)
+
+The byte-exact clean-input patch, startup and 17 focused regression tests passed. An optional broad test invocation was stopped after host native-test exceptions. All 114 accepted layers and the registered ASCII right-bound correction carry forward. [Testing candidate and patch](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/README.md)

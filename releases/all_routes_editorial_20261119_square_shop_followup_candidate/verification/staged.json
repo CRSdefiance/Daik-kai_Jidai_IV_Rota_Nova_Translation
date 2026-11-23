@@ -1,0 +1,1957 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "73a79d8129ba2ca679c26cfe2adc761219177b4b71d9b389f1381dc12a667843",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_656",
+      "message_ID": 656,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "The Square shopkeeper distinguishes their retail goods from bulk trading.",
+      "source_meaning": "The shop specializes in retail sales.",
+      "localization_note": "The direct answer keeps the distinction between individual sales here and the larger deals available elsewhere.",
+      "previous_English": "We only sell retail.",
+      "clean_Japanese": "うちは小売り専門ですよ",
+      "english": "We only sell retail.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 280,
+        "copy_end": 304,
+        "bytes": 22,
+        "record_index": 7,
+        "table_offset": 1318448,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 5190,
+        "copy_end": 5213,
+        "bytes": 22,
+        "record_index": 316,
+        "table_offset": 1318448,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482bf82cd8fac948482e890ea96e582c582b782e6",
+      "current_hex": "205765206f6e6c792073656c6c2072657461696c2e20",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "205765206f6e6c792073656c6c2072657461696c2e20",
+      "staged_reference": {
+        "block": 7,
+        "offset": 5190,
+        "copy_end": 5213,
+        "bytes": 22,
+        "record_index": 316,
+        "table_offset": 1318448,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "We only sell retail."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_657",
+      "message_ID": 657,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "The Square shopkeeper distinguishes their retail goods from bulk trading.",
+      "source_meaning": "The shopkeeper recognizes a sailor and directs them to the trade house for larger transactions.",
+      "localization_note": "Keep the friendly tag question on one line. The clean building label is the same 交易所 that the town menu calls Market.",
+      "previous_English": "You're a sailor, aren't you? Try the trade house for bulk trade.",
+      "clean_Japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "english": "You're a sailor, aren't you? Try the Market for bulk trade.",
+      "protected_phrases": [
+        "You're a sailor, aren't you?",
+        "Try the Market for bulk trade."
+      ],
+      "finding": "prose",
+      "decision": "revision",
+      "source_reference": {
+        "block": 8,
+        "offset": 304,
+        "copy_end": 368,
+        "bytes": 64,
+        "record_index": 8,
+        "table_offset": 1318450,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 5213,
+        "copy_end": 5286,
+        "bytes": 67,
+        "record_index": 317,
+        "table_offset": 1318450,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6",
+      "current_hex": "20596f752772652061207361696c6f722c206172656e277420796f753f0a20205472792074686520747261646520686f75736520666f722062756c6b2074726164652e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20596f752772652061207361696c6f722c206172656e277420796f753f0a202054727920746865204d61726b657420666f722062756c6b2074726164652e",
+      "staged_reference": {
+        "block": 7,
+        "offset": 5213,
+        "copy_end": 5276,
+        "bytes": 62,
+        "record_index": 317,
+        "table_offset": 1318450,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "You're a sailor, aren't you?",
+        "Try the Market for bulk trade."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": [
+        {
+          "glyph_count": 49,
+          "ink_sha256": "db43780ae818d81370fb5924e29a1aad4131d5aa88b5767782bc7aa12ba2a3b2",
+          "visible_lines": [
+            "You're a sailor, aren't you?",
+            "Try the Market for bulk trade."
+          ],
+          "display_hex": "20596f752772652061207361696c6f722c206172656e277420796f753f0a202054727920746865204d61726b657420666f722062756c6b2074726164652e"
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_658",
+      "message_ID": 658,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "Business has been passable, and the shopkeeper hopes for a good opportunity.",
+      "localization_note": "Keep the speaker’s quick echo of Business?, modest assessment and private hope for a better deal.",
+      "previous_English": "Business? Oh, it's been all right. I'm hoping a good deal comes along.",
+      "clean_Japanese": "景気？　まあ、ぼちぼちですね\n何か、うまい話はないもんかねえ",
+      "english": "Business? Oh, it's been all right. I'm hoping a good deal comes along.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 368,
+        "copy_end": 428,
+        "bytes": 59,
+        "record_index": 8,
+        "table_offset": 1318452,
+        "start_in_record": 65
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 0,
+        "copy_end": 75,
+        "bytes": 74,
+        "record_index": 0,
+        "table_offset": 1318452,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814082dc82a0814182da82bf82da82bf82c582b782cb0a89bd82a9814182a482dc82a2986282cd82c882a282e082f182a982cb82a6",
+      "current_hex": "2020427573696e6573733f204f682c2069742773206265656e20616c6c2072696768742e0a202049276d20686f70696e67206120676f6f64206465616c20636f6d657320616c6f6e672e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2020427573696e6573733f204f682c2069742773206265656e20616c6c2072696768742e0a202049276d20686f70696e67206120676f6f64206465616c20636f6d657320616c6f6e672e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 0,
+        "copy_end": 75,
+        "bytes": 74,
+        "record_index": 0,
+        "table_offset": 1318452,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? Oh, it's been all right.",
+        "I'm hoping a good deal comes along."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_682",
+      "message_ID": 682,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "The shopkeeper says business is the least of their concerns and hopes for peace soon.",
+      "localization_note": "The quick dismissal and modest hope sound natural in the more serious local condition.",
+      "previous_English": "Business? That's the least of my worries. I just hope peace returns soon.",
+      "clean_Japanese": "景気？　それどころじゃありませんよ\n早く平和になってほしいもんです",
+      "english": "Business? That's the least of my worries. I just hope peace returns soon.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 1788,
+        "copy_end": 1856,
+        "bytes": 65,
+        "record_index": 29,
+        "table_offset": 1318500,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1432,
+        "copy_end": 1512,
+        "bytes": 79,
+        "record_index": 61,
+        "table_offset": 1318500,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814082bb82ea82c782b182eb82b682e182a082e882dc82b982f182e60a918182ad95bd986182c982c882c182c482d982b582a282e082f182c582b7",
+      "current_hex": "2020427573696e6573733f2054686174277320746865206c656173740a20206f66206d7920776f72726965732e2049206a75737420686f70652070656163650a202072657475726e7320736f6f6e2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2020427573696e6573733f2054686174277320746865206c656173740a20206f66206d7920776f72726965732e2049206a75737420686f70652070656163650a202072657475726e7320736f6f6e2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1432,
+        "copy_end": 1512,
+        "bytes": 79,
+        "record_index": 61,
+        "table_offset": 1318500,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? That's the least",
+        "of my worries. I just hope peace",
+        "returns soon."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_683",
+      "message_ID": 683,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "People are collapsing from an epidemic. The shopkeeper rebukes the player for asking about business.",
+      "localization_note": "Preserve the alarm and the angry question. Keep the subject and verb together so the collapse reads without a pause.",
+      "previous_English": "Business? People are collapsing from the epidemic! Are you kidding me?",
+      "clean_Japanese": "景気？　疫病で人がバタバタ倒れてる\nっていうのに、ふざけてるんですか？",
+      "english": "Business? People are collapsing from the epidemic! Are you kidding me?",
+      "protected_phrases": [
+        "People are collapsing",
+        "from the epidemic!",
+        "Are you kidding me?"
+      ],
+      "finding": "wrap",
+      "decision": "revision",
+      "source_reference": {
+        "block": 8,
+        "offset": 1856,
+        "copy_end": 1928,
+        "bytes": 69,
+        "record_index": 30,
+        "table_offset": 1318502,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1512,
+        "copy_end": 1590,
+        "bytes": 75,
+        "record_index": 62,
+        "table_offset": 1318502,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b43814881408975956182c5906c82aa836f835e836f835e937c82ea82c482e90a82c182c482a282a482cc82c9814182d382b482af82c482e982f182c582b782a98148",
+      "current_hex": "20427573696e6573733f2050656f706c65206172650a2020636f6c6c617073696e672066726f6d207468652065706964656d6963210a202041726520796f75206b696464696e67206d653f",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20427573696e6573733f2050656f706c652061726520636f6c6c617073696e670a202066726f6d207468652065706964656d6963210a202041726520796f75206b696464696e67206d653f",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1512,
+        "copy_end": 1588,
+        "bytes": 75,
+        "record_index": 62,
+        "table_offset": 1318502,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? People are collapsing",
+        "from the epidemic!",
+        "Are you kidding me?"
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": [
+        {
+          "glyph_count": 60,
+          "ink_sha256": "325fb8affbb83282712d99b3cb75f1f8b2d83d890f7d2e460ab7097bd25bbf14",
+          "visible_lines": [
+            "Business? People are collapsing",
+            "from the epidemic!",
+            "Are you kidding me?"
+          ],
+          "display_hex": "20427573696e6573733f2050656f706c652061726520636f6c6c617073696e670a202066726f6d207468652065706964656d6963210a202041726520796f75206b696464696e67206d653f"
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_684",
+      "message_ID": 684,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "The shopkeeper puts food first because people need it to survive.",
+      "localization_note": "Both short thoughts are clear, including the immediate concern for survival.",
+      "previous_English": "Business? Food comes first. People have to eat to survive.",
+      "clean_Japanese": "景気？　それよりもまず食料ですよ\n人間食わなきゃ\n生きていけませんからね",
+      "english": "Business? Food comes first. People have to eat to survive.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 1928,
+        "copy_end": 2000,
+        "bytes": 70,
+        "record_index": 31,
+        "table_offset": 1318504,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1590,
+        "copy_end": 1653,
+        "bytes": 61,
+        "record_index": 65,
+        "table_offset": 1318504,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814082bb82ea82e682e882e082dc82b8904897bf82c582b782e60a906c8ad4904882ed82c882ab82e10a90b682ab82c482a282af82dc82b982f182a982e782cb",
+      "current_hex": "20427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c65206861766520746f2065617420746f20737572766976652e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20427573696e6573733f20466f6f6420636f6d65732066697273742e0a202050656f706c65206861766520746f2065617420746f20737572766976652e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1588,
+        "copy_end": 1651,
+        "bytes": 61,
+        "record_index": 63,
+        "table_offset": 1318504,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? Food comes first.",
+        "People have to eat to survive."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_685",
+      "message_ID": 685,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "The merchant points to the thriving town and says they cannot stop smiling.",
+      "localization_note": "Keep the invitation to look around and the short expression of good humor.",
+      "previous_English": "Business? Just look around! I can't stop smiling.",
+      "clean_Japanese": "景気？　いやあ、見ての通りですよ\n笑いが止まりませんねえ",
+      "english": "Business? Just look around! I can't stop smiling.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2000,
+        "copy_end": 2056,
+        "bytes": 55,
+        "record_index": 32,
+        "table_offset": 1318506,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1653,
+        "copy_end": 1709,
+        "bytes": 55,
+        "record_index": 67,
+        "table_offset": 1318506,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814082a282e282a081418ca982c482cc92ca82e882c582b782e60a8fce82a282aa8e7e82dc82e882dc82b982f182cb82a6",
+      "current_hex": "20427573696e6573733f204a757374206c6f6f6b2061726f756e64210a2020492063616e27742073746f7020736d696c696e672e202020",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20427573696e6573733f204a757374206c6f6f6b2061726f756e64210a2020492063616e27742073746f7020736d696c696e672e202020",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1651,
+        "copy_end": 1707,
+        "bytes": 55,
+        "record_index": 65,
+        "table_offset": 1318506,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? Just look around!",
+        "I can't stop smiling."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_686",
+      "message_ID": 686,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "The merchant would rather the player did not ask and says trade is impossible in these conditions.",
+      "localization_note": "The rhetorical question gives the complaint a spoken rhythm and leaves the cause to the situation.",
+      "previous_English": "Business? Don't ask. How's anyone supposed to do business like this?",
+      "clean_Japanese": "景気？　聞かないでくださいよ\nこれじゃ商売になりませんよ",
+      "english": "Business? Don't ask. How's anyone supposed to do business like this?",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2056,
+        "copy_end": 2112,
+        "bytes": 55,
+        "record_index": 33,
+        "table_offset": 1318508,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1709,
+        "copy_end": 1783,
+        "bytes": 73,
+        "record_index": 68,
+        "table_offset": 1318508,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814095b782a982c882a282c582ad82be82b382a282e60a82b182ea82b682e18fa4948482c982c882e882dc82b982f182e6",
+      "current_hex": "2020427573696e6573733f20446f6e27742061736b2e20486f77277320616e796f6e65200a2020737570706f73656420746f20646f20627573696e657373206c696b6520746869733f",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2020427573696e6573733f20446f6e27742061736b2e20486f77277320616e796f6e65200a2020737570706f73656420746f20646f20627573696e657373206c696b6520746869733f",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1707,
+        "copy_end": 1781,
+        "bytes": 73,
+        "record_index": 66,
+        "table_offset": 1318508,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? Don't ask. How's anyone",
+        "supposed to do business like this?"
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_687",
+      "message_ID": 687,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative reply to asking about business in town.",
+      "source_meaning": "The regularly scheduled ship sank, leaving the town in trouble.",
+      "localization_note": "Keep the regular run, the fact that it sank, and the separate sentence about the consequences for the town.",
+      "previous_English": "Business? The ship that makes the regular run sank. Everyone's in a bind.",
+      "clean_Japanese": "景気？　定期船が沈んでしまって\nみんな困ってますよ",
+      "english": "Business? The ship that makes the regular run sank. Everyone's in a bind.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2112,
+        "copy_end": 2164,
+        "bytes": 49,
+        "record_index": 34,
+        "table_offset": 1318510,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1783,
+        "copy_end": 1862,
+        "bytes": 78,
+        "record_index": 69,
+        "table_offset": 1318510,
+        "start_in_record": 0
+      },
+      "source_hex": "8c698b438148814092e88afa914482aa92be82f182c582b582dc82c182c40a82dd82f182c88da282c182c482dc82b782e6",
+      "current_hex": "20427573696e6573733f20546865207368697020746861740a20206d616b65732074686520726567756c61722072756e2073616e6b2e0a202045766572796f6e65277320696e20612062696e642e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20427573696e6573733f20546865207368697020746861740a20206d616b65732074686520726567756c61722072756e2073616e6b2e0a202045766572796f6e65277320696e20612062696e642e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1781,
+        "copy_end": 1860,
+        "bytes": 78,
+        "record_index": 67,
+        "table_offset": 1318510,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Business? The ship that",
+        "makes the regular run sank.",
+        "Everyone's in a bind."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_688",
+      "message_ID": 688,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Britain is a united kingdom of England, Scotland and Wales; the speaker predicts further development and cheers the Queen.",
+      "localization_note": "Britain names the union of all three places. Keep the prediction of prosperity and the speaker’s cheer for the Queen.",
+      "previous_English": "Britain is a union of England, Scotland and Wales. It'll keep prospering. Long live the Queen!",
+      "clean_Japanese": "イギリスはイングランド\nスコットランド、ウェールズの連合王国\nなんですよ。これからもどんどん発展\nしていくでしょう。女王様万歳！",
+      "english": "Britain is a union of England, Scotland and Wales. It'll keep prospering. Long live the Queen!",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2164,
+        "copy_end": 2292,
+        "bytes": 125,
+        "record_index": 35,
+        "table_offset": 1318512,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1862,
+        "copy_end": 1958,
+        "bytes": 95,
+        "record_index": 70,
+        "table_offset": 1318512,
+        "start_in_record": 0
+      },
+      "source_hex": "8343834d838a835882cd83438393834f8389839383680a8358835283628367838983938368814183458346815b838b835982cc98418d8789a48d910a82c882f182c582b782e6814282b182ea82a982e782e082c782f182c782f194ad93570a82b582c482a282ad82c582b582e582a481428f9789a4976c969c8dce8149",
+      "current_hex": "204272697461696e206973206120756e696f6e206f6620456e676c616e642c2053636f746c616e6420616e642057616c65732e204974276c6c206b6565702070726f73706572696e672e204c6f6e67206c6976652074686520517565656e21",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "204272697461696e206973206120756e696f6e206f6620456e676c616e642c2053636f746c616e6420616e642057616c65732e204974276c6c206b6565702070726f73706572696e672e204c6f6e67206c6976652074686520517565656e21",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1860,
+        "copy_end": 1956,
+        "bytes": 95,
+        "record_index": 68,
+        "table_offset": 1318512,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Britain is a union of England,",
+        "Scotland and Wales. It'll keep",
+        "prospering. Long live the Queen!"
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_689",
+      "message_ID": 689,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The Netherlands has only recently won independence from Spain following a long war of independence.",
+      "localization_note": "The Dutch makes the conversational subject shorter while preserving the recent independence, Spain and the long war. The sentence now has two complete phrase groups.",
+      "previous_English": "The Dutch just won independence from Spain after a long war.",
+      "clean_Japanese": "オランダは長い独立戦争の末\nスペインから独立して間もない\n国なんです",
+      "english": "The Dutch just won independence from Spain after a long war.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2292,
+        "copy_end": 2360,
+        "bytes": 66,
+        "record_index": 36,
+        "table_offset": 1318514,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 1958,
+        "copy_end": 2036,
+        "bytes": 61,
+        "record_index": 71,
+        "table_offset": 1318514,
+        "start_in_record": 0
+      },
+      "source_hex": "834983898393835f82cd92b782a293c697a790ed918882cc96960a835883798343839382a982e793c697a782b582c48ad482e082c882a20a8d9182c882f182c582b7",
+      "current_hex": "20546865204475746368206a75737420776f6e20696e646570656e64656e63652066726f6d20537061696e2061667465722061206c6f6e67207761722e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20546865204475746368206a75737420776f6e20696e646570656e64656e63652066726f6d20537061696e2061667465722061206c6f6e67207761722e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 1956,
+        "copy_end": 2034,
+        "bytes": 61,
+        "record_index": 69,
+        "table_offset": 1318514,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The Dutch just won independence",
+        "from Spain after a long war."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_690",
+      "message_ID": 690,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The Hanseatic League formerly controlled European trade but has faded markedly since discovery of the India sea route and the New World.",
+      "localization_note": "Keep the League’s former dominance and later decline. Separate finding the sea route from reaching the New World, which also reads together on screen.",
+      "previous_English": "The Hanseatic League ruled European trade. It faded after sailors found the sea route to India and reached the New World.",
+      "clean_Japanese": "ヨーロッパの交易を牛耳っていた\nハンザ同盟もインド航路や新大陸が\n発見されてからというもの\nめっきり影が薄くなっちゃってねえ…",
+      "english": "The Hanseatic League ruled European trade. It faded after sailors found the sea route to India and reached the New World.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2360,
+        "copy_end": 2484,
+        "bytes": 123,
+        "record_index": 37,
+        "table_offset": 1318516,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2036,
+        "copy_end": 2164,
+        "bytes": 122,
+        "record_index": 88,
+        "table_offset": 1318516,
+        "start_in_record": 0
+      },
+      "source_hex": "8388815b838d8362837082cc8cf088d582f08b8d8ea882c182c482a282bd0a836e8393835593af96bf82e08343839383688d71984882e2905691e597a482aa0a94ad8ca982b382ea82c482a982e782c682a282a482e082cc0a82df82c182ab82e8896582aa949682ad82c882c182bf82e182c182c482cb82a68163",
+      "current_hex": "205468652048616e736561746963204c65616775652072756c6564204575726f7065616e2074726164652e204974206661646564206166746572207361696c6f727320666f756e64207468652073656120726f75746520746f20496e64696120616e64207265616368656420746865204e657720576f726c642e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "205468652048616e736561746963204c65616775652072756c6564204575726f7065616e2074726164652e204974206661646564206166746572207361696c6f727320666f756e64207468652073656120726f75746520746f20496e64696120616e64207265616368656420746865204e657720576f726c642e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2034,
+        "copy_end": 2162,
+        "bytes": 122,
+        "record_index": 86,
+        "table_offset": 1318516,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The Hanseatic League ruled European",
+        "trade. It faded after sailors found",
+        "the sea route to India and reached",
+        "the New World."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_691",
+      "message_ID": 691,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Sweden has recently become independent from the Kalmar Union with Denmark and Norway.",
+      "localization_note": "Keep Sweden’s recent independence from the Kalmar Union. Denmark and Norway remain together at the end.",
+      "previous_English": "Sweden only recently gained independence from the Kalmar Union with Denmark and Norway.",
+      "clean_Japanese": "スウェーデンというのはつい最近\nデンマークやノルウェーとの\nカルマル同盟から独立したんですよ",
+      "english": "Sweden only recently gained independence from the Kalmar Union with Denmark and Norway.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2484,
+        "copy_end": 2576,
+        "bytes": 90,
+        "record_index": 38,
+        "table_offset": 1318518,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2164,
+        "copy_end": 2253,
+        "bytes": 88,
+        "record_index": 94,
+        "table_offset": 1318518,
+        "start_in_record": 0
+      },
+      "source_hex": "835883458346815b8366839382c682a282a482cc82cd82c282a28dc58bdf0a83668393837d815b834e82e2836d838b83458346815b82c682cc0a834a838b837d838b93af96bf82a982e793c697a782b582bd82f182c582b782e6",
+      "current_hex": "2053776564656e206f6e6c7920726563656e746c79206761696e656420696e646570656e64656e63652066726f6d20746865204b616c6d617220556e696f6e20776974682044656e6d61726b20616e64204e6f727761792e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2053776564656e206f6e6c7920726563656e746c79206761696e656420696e646570656e64656e63652066726f6d20746865204b616c6d617220556e696f6e20776974682044656e6d61726b20616e64204e6f727761792e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2162,
+        "copy_end": 2251,
+        "bytes": 88,
+        "record_index": 92,
+        "table_offset": 1318518,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Sweden only recently gained",
+        "independence from the Kalmar Union",
+        "with Denmark and Norway."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_692",
+      "message_ID": 692,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Until quite recently Portugal held almost all the seas of the world; the speaker sounds wistful.",
+      "localization_note": "Keep the shopkeeper’s questioning opening, the recent loss and the qualifier almost all.",
+      "previous_English": "Portugal? Until recently, it ruled almost all the world's seas.",
+      "clean_Japanese": "ポルトガルですか？\nついこの間までは\nほぼ全世界の海を手中に\nしてたんですけどねえ",
+      "english": "Portugal? Until recently, it ruled almost all the world's seas.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2576,
+        "copy_end": 2656,
+        "bytes": 79,
+        "record_index": 39,
+        "table_offset": 1318520,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2253,
+        "copy_end": 2318,
+        "bytes": 64,
+        "record_index": 95,
+        "table_offset": 1318520,
+        "start_in_record": 0
+      },
+      "source_hex": "837c838b8367834b838b82c582b782a981480a82c282a282b182cc8ad482dc82c582cd0a82d982da915390a28a4582cc8a4382f08ee8928682c90a82b582c482bd82f182c582b782af82c782cb82a6",
+      "current_hex": "20506f72747567616c3f20556e74696c20726563656e746c792c2069742072756c656420616c6d6f737420616c6c2074686520776f726c64277320736561732e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20506f72747567616c3f20556e74696c20726563656e746c792c2069742072756c656420616c6d6f737420616c6c2074686520776f726c64277320736561732e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2251,
+        "copy_end": 2316,
+        "bytes": 64,
+        "record_index": 93,
+        "table_offset": 1318520,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Portugal? Until recently, it ruled",
+        "almost all the world's seas."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_693",
+      "message_ID": 693,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Spain is prospering; people in other countries reportedly call it the empire on which the sun never sets.",
+      "localization_note": "The friendly question remains. I hear restores the qualification in the Japanese before the nickname attributed to people abroad.",
+      "previous_English": "Spain's thriving, isn't it? Abroad they call it 'the empire where the sun never sets.'",
+      "clean_Japanese": "スペインは繁栄しているでしょう？\n他国の人は、『太陽の沈まない帝国』\nなんて呼んでいるらしいですねえ",
+      "english": "Spain's thriving, isn't it? I hear people abroad call it 'the empire where the sun never sets.'",
+      "protected_phrases": [
+        "Spain's thriving, isn't it?",
+        "the sun never sets."
+      ],
+      "finding": "prose",
+      "decision": "revision",
+      "source_reference": {
+        "block": 8,
+        "offset": 2656,
+        "copy_end": 2756,
+        "bytes": 98,
+        "record_index": 40,
+        "table_offset": 1318522,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2318,
+        "copy_end": 2406,
+        "bytes": 87,
+        "record_index": 96,
+        "table_offset": 1318522,
+        "start_in_record": 0
+      },
+      "source_hex": "835883798343839382cd94c9896882b582c482a282e982c582b582e582a481480a91bc8d9182cc906c82cd8141817791be977a82cc92be82dc82c882a292e98d9181780a82c882f182c48cc482f182c582a282e982e782b582a282c582b782cb82a6",
+      "current_hex": "20537061696e2773207468726976696e672c2069736e27742069743f204162726f616420746865792063616c6c206974202774686520656d70697265207768657265207468652073756e206e6576657220736574732e27",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20537061696e2773207468726976696e672c2069736e27742069743f204920686561720a202070656f706c65206162726f61642063616c6c206974202774686520656d706972650a20207768657265207468652073756e206e6576657220736574732e27",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2316,
+        "copy_end": 2418,
+        "bytes": 100,
+        "record_index": 94,
+        "table_offset": 1318522,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Spain's thriving, isn't it? I hear",
+        "people abroad call it 'the empire",
+        "where the sun never sets.'"
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": [
+        {
+          "glyph_count": 79,
+          "ink_sha256": "9103b3424f8ffdf2b7d9525ddb3f797990922412c4b1624305cd39c327c234b2",
+          "visible_lines": [
+            "Spain's thriving, isn't it? I hear",
+            "people abroad call it 'the empire",
+            "where the sun never sets.'"
+          ],
+          "display_hex": "20537061696e2773207468726976696e672c2069736e27742069743f204920686561720a202070656f706c65206162726f61642063616c6c206974202774686520656d706972650a20207768657265207468652073756e206e6576657220736574732e27"
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_694",
+      "message_ID": 694,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Opening the India route stripped Italian city-states such as Genoa and Venice of their eastern-trade rights.",
+      "localization_note": "Restore the rights to trade with the East, along with both cities and the opening of the India route.",
+      "previous_English": "After the sea route to India opened, Genoa, Venice and other Italian city-states lost their eastern trading rights.",
+      "clean_Japanese": "ジェノヴァやヴェネツィアの\nイタリア都市国家はインド航路が\n開通してからというもの、すっかり\n東方貿易の権利を奪われちゃって…",
+      "english": "After the sea route to India opened, Genoa, Venice and other Italian city-states lost their eastern trading rights.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2756,
+        "copy_end": 2880,
+        "bytes": 123,
+        "record_index": 41,
+        "table_offset": 1318524,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2406,
+        "copy_end": 2525,
+        "bytes": 116,
+        "record_index": 97,
+        "table_offset": 1318524,
+        "start_in_record": 0
+      },
+      "source_hex": "83578346836d8394834082e283948346836c83638342834182cc0a8343835e838a834193738e738d9189c682cd8343839383688d71984882aa0a8a4a92ca82b582c482a982e782c682a282a482e082cc814182b782c182a982e80a938c95fb966688d582cc8ca0979882f0924482ed82ea82bf82e182c182c48163",
+      "current_hex": "204166746572207468652073656120726f75746520746f20496e646961206f70656e65642c2047656e6f612c2056656e69636520616e64206f74686572204974616c69616e20636974792d737461746573206c6f7374207468656972206561737465726e2074726164696e67207269676874732e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "204166746572207468652073656120726f75746520746f20496e646961206f70656e65642c2047656e6f612c2056656e69636520616e64206f74686572204974616c69616e20636974792d737461746573206c6f7374207468656972206561737465726e2074726164696e67207269676874732e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2418,
+        "copy_end": 2537,
+        "bytes": 116,
+        "record_index": 96,
+        "table_offset": 1318524,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "After the sea route to India",
+        "opened, Genoa, Venice and other",
+        "Italian city-states lost their",
+        "eastern trading rights."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_695",
+      "message_ID": 695,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The speaker claims that all the churches became mosques after Ottoman Turkish occupation of Greece.",
+      "localization_note": "Keep the speaker’s categorical claim, the occupation and the change from churches to mosques.",
+      "previous_English": "Since the Ottoman Turks occupied Greece, all the churches have been turned into mosques.",
+      "clean_Japanese": "ギリシャがオスマン＝トルコに\n占領されて以来、教会はみんな\nモスクになっちゃったんですよ",
+      "english": "Since the Ottoman Turks occupied Greece, all the churches have been turned into mosques.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 2880,
+        "copy_end": 2968,
+        "bytes": 86,
+        "record_index": 42,
+        "table_offset": 1318526,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2525,
+        "copy_end": 2615,
+        "bytes": 89,
+        "record_index": 100,
+        "table_offset": 1318526,
+        "start_in_record": 0
+      },
+      "source_hex": "834d838a8356838382aa83498358837d839381818367838b835282c90a90e897cc82b382ea82c488c8978881418bb389ef82cd82dd82f182c80a83828358834e82c982c882c182bf82e182c182bd82f182c582b782e6",
+      "current_hex": "2053696e636520746865204f74746f6d616e205475726b73206f63637570696564204772656563652c20616c6c207468652063687572636865732068617665206265656e207475726e656420696e746f206d6f73717565732e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2053696e636520746865204f74746f6d616e205475726b73206f63637570696564204772656563652c20616c6c207468652063687572636865732068617665206265656e207475726e656420696e746f206d6f73717565732e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2537,
+        "copy_end": 2627,
+        "bytes": 89,
+        "record_index": 99,
+        "table_offset": 1318526,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Since the Ottoman Turks occupied",
+        "Greece, all the churches have been",
+        "turned into mosques."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_696",
+      "message_ID": 696,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Istanbul used to be called Constantinople and was capital of the Eastern Roman and Byzantine empires, as the game phrases it.",
+      "localization_note": "Name the old city and its role as capital together. The second sentence gives the alternate name of the empire.",
+      "previous_English": "Istanbul was Constantinople, capital of the Byzantine Empire, or Eastern Rome.",
+      "clean_Japanese": "イスタンブールは\n昔はコンスタンチノープルといって\n東ローマ帝国やビザンチン帝国の\n首都だったんですよ",
+      "english": "Istanbul used to be Constantinople, capital of the Byzantine Empire. That's also called Eastern Rome.",
+      "protected_phrases": [
+        "Istanbul used to be Constantinople,",
+        "the Byzantine Empire.",
+        "Eastern Rome."
+      ],
+      "finding": "prose",
+      "decision": "revision",
+      "source_reference": {
+        "block": 8,
+        "offset": 2968,
+        "copy_end": 3068,
+        "bytes": 99,
+        "record_index": 43,
+        "table_offset": 1318528,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2615,
+        "copy_end": 2702,
+        "bytes": 79,
+        "record_index": 101,
+        "table_offset": 1318528,
+        "start_in_record": 0
+      },
+      "source_hex": "83438358835e83938375815b838b82cd0a90cc82cd835283938358835e83938360836d815b8376838b82c682a282c182c40a938c838d815b837d92e98d9182e28372835583938360839392e98d9182cc0a8ef1937382be82c182bd82f182c582b782e6",
+      "current_hex": "20497374616e62756c2077617320436f6e7374616e74696e6f706c652c206361706974616c206f66207468652042797a616e74696e6520456d706972652c206f72204561737465726e20526f6d652e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20497374616e62756c207573656420746f20626520436f6e7374616e74696e6f706c652c0a20206361706974616c206f66207468652042797a616e74696e6520456d706972652e0a202054686174277320616c736f2063616c6c6564204561737465726e20526f6d652e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2627,
+        "copy_end": 2734,
+        "bytes": 106,
+        "record_index": 100,
+        "table_offset": 1318528,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Istanbul used to be Constantinople,",
+        "capital of the Byzantine Empire.",
+        "That's also called Eastern Rome."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": [
+        {
+          "glyph_count": 87,
+          "ink_sha256": "db71d95b8a4ce8dee918626c1af2063d3b432d781a50f7875491a870c4d7c4c7",
+          "visible_lines": [
+            "Istanbul used to be Constantinople,",
+            "capital of the Byzantine Empire.",
+            "That's also called Eastern Rome."
+          ],
+          "display_hex": "20497374616e62756c207573656420746f20626520436f6e7374616e74696e6f706c652c0a20206361706974616c206f66207468652042797a616e74696e6520456d706972652e0a202054686174277320616c736f2063616c6c6564204561737465726e20526f6d652e"
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_697",
+      "message_ID": 697,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "North African cities are all Ottoman dependencies; even Mediterranean pirates apparently cannot defy the great ruler.",
+      "localization_note": "All preserves the shopkeeper’s claim about the cities, and seem retains the speaker’s uncertainty about the pirates.",
+      "previous_English": "North Africa's cities are all under Ottoman rule. Even the pirates of the Mediterranean seem to answer to the Sultan.",
+      "clean_Japanese": "北アフリカの各都市は、軒並み\nオスマン帝国の属領なんですよ\n地中海を荒らし回る海賊たちも\n大帝には頭が上がらないみたいで…",
+      "english": "North Africa's cities are all under Ottoman rule. Even the pirates of the Mediterranean seem to answer to the Sultan.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3068,
+        "copy_end": 3188,
+        "bytes": 119,
+        "record_index": 44,
+        "table_offset": 1318530,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2702,
+        "copy_end": 2821,
+        "bytes": 118,
+        "record_index": 109,
+        "table_offset": 1318530,
+        "start_in_record": 0
+      },
+      "source_hex": "966b83418374838a834a82cc8a6593738e7382cd81418cac95c082dd0a83498358837d839392e98d9182cc91ae97cc82c882f182c582b782e60a926e92868a4382f08d7282e782b589f182e98a4391af82bd82bf82e00a91e592e982c982cd93aa82aa8fe382aa82e782c882a282dd82bd82a282c58163",
+      "current_hex": "204e6f727468204166726963612773206369746965732061726520616c6c20756e646572204f74746f6d616e2072756c652e204576656e207468652070697261746573206f6620746865204d65646974657272616e65616e207365656d20746f20616e7377657220746f207468652053756c74616e2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "204e6f727468204166726963612773206369746965732061726520616c6c20756e646572204f74746f6d616e2072756c652e204576656e207468652070697261746573206f6620746865204d65646974657272616e65616e207365656d20746f20616e7377657220746f207468652053756c74616e2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2734,
+        "copy_end": 2853,
+        "bytes": 118,
+        "record_index": 101,
+        "table_offset": 1318530,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "North Africa's cities are all under",
+        "Ottoman rule. Even the pirates of",
+        "the Mediterranean seem to answer to",
+        "the Sultan."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_698",
+      "message_ID": 698,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Everyone seeks West African trade rights because the region produces ivory and gold.",
+      "localization_note": "The speaker explains the interest in trading rights by naming both ivory and gold. After all keeps the exchange conversational.",
+      "previous_English": "Everyone's after the trading rights in West Africa. The region produces ivory and gold, after all...",
+      "clean_Japanese": "西アフリカの交易権は、みんなが\n狙ってますよ。なんたって\n象牙や金を産出する地域ですからねえ…",
+      "english": "Everyone's after the trading rights in West Africa. The region produces ivory and gold, after all...",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3188,
+        "copy_end": 3280,
+        "bytes": 92,
+        "record_index": 45,
+        "table_offset": 1318532,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2821,
+        "copy_end": 2923,
+        "bytes": 101,
+        "record_index": 110,
+        "table_offset": 1318532,
+        "start_in_record": 0
+      },
+      "source_hex": "90bc83418374838a834a82cc8cf088d58ca082cd814182dd82f182c882aa0a915f82c182c482dc82b782e6814282c882f182bd82c182c40a8fdb89e582e28be082f08e598f6f82b782e9926e88e682c582b782a982e782cb82a68163",
+      "current_hex": "2045766572796f6e652773206166746572207468652074726164696e672072696768747320696e2057657374204166726963612e2054686520726567696f6e2070726f64756365732069766f727920616e6420676f6c642c20616674657220616c6c2e2e2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2045766572796f6e652773206166746572207468652074726164696e672072696768747320696e2057657374204166726963612e2054686520726567696f6e2070726f64756365732069766f727920616e6420676f6c642c20616674657220616c6c2e2e2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2853,
+        "copy_end": 2955,
+        "bytes": 101,
+        "record_index": 102,
+        "table_offset": 1318532,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Everyone's after the trading rights",
+        "in West Africa. The region produces",
+        "ivory and gold, after all..."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_699",
+      "message_ID": 699,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Muslim powers once controlled trade in the surrounding region.",
+      "localization_note": "Keep the broad attribution to Muslim powers and the scope of this region. The speaker supplies no particular dynasty.",
+      "previous_English": "Muslim powers once controlled trade in this region.",
+      "clean_Japanese": "昔は、このあたりの交易権は\nイスラムの勢力が握っていたんですよ",
+      "english": "Muslim powers once controlled trade in this region.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3280,
+        "copy_end": 3344,
+        "bytes": 61,
+        "record_index": 45,
+        "table_offset": 1318534,
+        "start_in_record": 92
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2923,
+        "copy_end": 2976,
+        "bytes": 52,
+        "record_index": 111,
+        "table_offset": 1318534,
+        "start_in_record": 0
+      },
+      "source_hex": "90cc82cd814182b182cc82a082bd82e882cc8cf088d58ca082cd0a834383588389838082cc90a897cd82aa88ac82c182c482a282bd82f182c582b782e6",
+      "current_hex": "204d75736c696d20706f77657273206f6e636520636f6e74726f6c6c656420747261646520696e207468697320726567696f6e2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "204d75736c696d20706f77657273206f6e636520636f6e74726f6c6c656420747261646520696e207468697320726567696f6e2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 2955,
+        "copy_end": 3008,
+        "bytes": 52,
+        "record_index": 103,
+        "table_offset": 1318534,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Muslim powers once controlled trade",
+        "in this region."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_700",
+      "message_ID": 700,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The speaker identifies the visitor as an unbeliever and refuses further conversation with an unbeliever.",
+      "localization_note": "Keep the contempt in infidel and the pause before the speaker ends the conversation.",
+      "previous_English": "You're an infidel, aren't you? ...I have nothing more to say to you.",
+      "clean_Japanese": "あなた、異教徒ですね？\n…異教徒とはこれ以上話をしたく\nありません",
+      "english": "You're an infidel, aren't you? ...I have nothing more to say to you.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3344,
+        "copy_end": 3408,
+        "bytes": 64,
+        "record_index": 46,
+        "table_offset": 1318536,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 2976,
+        "copy_end": 3046,
+        "bytes": 69,
+        "record_index": 112,
+        "table_offset": 1318536,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082c882bd814188d98bb3936b82c582b782cb81480a816388d98bb3936b82c682cd82b182ea88c88fe3986282f082b582bd82ad0a82a082e882dc82b982f1",
+      "current_hex": "20596f7527726520616e20696e666964656c2c206172656e277420796f753f202e2e2e492068617665206e6f7468696e67206d6f726520746f2073617920746f20796f752e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20596f7527726520616e20696e666964656c2c206172656e277420796f753f202e2e2e492068617665206e6f7468696e67206d6f726520746f2073617920746f20796f752e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3008,
+        "copy_end": 3078,
+        "bytes": 69,
+        "record_index": 104,
+        "table_offset": 1318536,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "You're an infidel, aren't you? ...I",
+        "have nothing more to say to you."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_701",
+      "message_ID": 701,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Do not blame others for your misfortune: it is all due to karma from a previous life.",
+      "localization_note": "Keep the speaker’s moral advice and the stated attribution to karma from a past life.",
+      "previous_English": "Don't blame others for your misfortune. It's all the result of karma from a past life.",
+      "clean_Japanese": "自分の不幸を他人のせいにしては\nいけませんよ\nすべては前世の業によるものなのです",
+      "english": "Don't blame others for your misfortune. It's all the result of karma from a past life.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3408,
+        "copy_end": 3488,
+        "bytes": 78,
+        "record_index": 46,
+        "table_offset": 1318538,
+        "start_in_record": 66
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3046,
+        "copy_end": 3134,
+        "bytes": 87,
+        "record_index": 113,
+        "table_offset": 1318538,
+        "start_in_record": 0
+      },
+      "source_hex": "8ea995aa82cc95738d4b82f091bc906c82cc82b982a282c982b582c482cd0a82a282af82dc82b982f182e60a82b782d782c482cd914f90a282cc8bc682c982e682e982e082cc82c882cc82c582b7",
+      "current_hex": "20446f6e277420626c616d65206f746865727320666f7220796f7572206d6973666f7274756e652e204974277320616c6c2074686520726573756c74206f66206b61726d612066726f6d20612070617374206c6966652e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20446f6e277420626c616d65206f746865727320666f7220796f7572206d6973666f7274756e652e204974277320616c6c2074686520726573756c74206f66206b61726d612066726f6d20612070617374206c6966652e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3078,
+        "copy_end": 3166,
+        "bytes": 87,
+        "record_index": 105,
+        "table_offset": 1318538,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Don't blame others for your",
+        "misfortune. It's all the result of",
+        "karma from a past life."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_702",
+      "message_ID": 702,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Surrounding kingdoms once submitted to the Ming Empire; its present prestige is only a shadow of its peak, indeed the speaker says none remains.",
+      "localization_note": "Put the earlier submission and present decline in separate sentences. Keep the speaker’s emphatic judgment and trailing delivery.",
+      "previous_English": "The kingdoms around here once bowed to the Ming Empire. Now there's nothing left of its former glory...",
+      "clean_Japanese": "このあたりの王国は、かつては\n明（ミン）帝国に服従していたんですよ\n今の明には、全盛期の頃の\n威光など、影も形もありませんけれど…",
+      "english": "The kingdoms around here once bowed to the Ming Empire. Now there's nothing left of its former glory...",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3488,
+        "copy_end": 3616,
+        "bytes": 127,
+        "record_index": 47,
+        "table_offset": 1318540,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3134,
+        "copy_end": 3242,
+        "bytes": 104,
+        "record_index": 114,
+        "table_offset": 1318540,
+        "start_in_record": 0
+      },
+      "source_hex": "82b182cc82a082bd82e882cc89a48d9182cd814182a982c282c482cd0a96be8169837e8393816a92e98d9182c9959e8f5d82b582c482a282bd82f182c582b782e60a8da182cc96be82c982cd8141915390b78afa82cc8da082cc0a88d08cf582c882c78141896582e08c6082e082a082e882dc82b982f182af82ea82c78163",
+      "current_hex": "20546865206b696e67646f6d732061726f756e642068657265206f6e636520626f77656420746f20746865204d696e6720456d706972652e204e6f772074686572652773206e6f7468696e67206c656674206f662069747320666f726d657220676c6f72792e2e2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20546865206b696e67646f6d732061726f756e642068657265206f6e636520626f77656420746f20746865204d696e6720456d706972652e204e6f772074686572652773206e6f7468696e67206c656674206f662069747320666f726d657220676c6f72792e2e2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3166,
+        "copy_end": 3274,
+        "bytes": 104,
+        "record_index": 106,
+        "table_offset": 1318540,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The kingdoms around here once bowed",
+        "to the Ming Empire. Now there's",
+        "nothing left of its former glory..."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_703",
+      "message_ID": 703,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Majapahit once held power in these seas but perished under pressure from Muslim powers.",
+      "localization_note": "Keep the kingdom, its former power in these waters and the stated pressure from Muslim powers.",
+      "previous_English": "The Majapahit kingdom once ruled these seas, but fell under pressure from Muslim powers.",
+      "clean_Japanese": "この海域では\nかつてマジャパヒト王国が権勢を誇って\nいたのですが…、イスラム勢力に\n圧されて滅んでしまいました",
+      "english": "The Majapahit kingdom once ruled these seas, but fell under pressure from Muslim powers.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3616,
+        "copy_end": 3724,
+        "bytes": 107,
+        "record_index": 48,
+        "table_offset": 1318542,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3242,
+        "copy_end": 3332,
+        "bytes": 89,
+        "record_index": 118,
+        "table_offset": 1318542,
+        "start_in_record": 0
+      },
+      "source_hex": "82b182cc8a4388e682c582cd0a82a982c282c4837d8357838383708371836789a48d9182aa8ca090a882f08cd682c182c40a82a282bd82cc82c582b782aa81638141834383588389838090a897cd82c90a88b382b382ea82c496c582f182c582b582dc82a282dc82b582bd",
+      "current_hex": "20546865204d616a617061686974206b696e67646f6d206f6e63652072756c656420746865736520736561732c206275742066656c6c20756e6465722070726573737572652066726f6d204d75736c696d20706f776572732e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20546865204d616a617061686974206b696e67646f6d206f6e63652072756c656420746865736520736561732c206275742066656c6c20756e6465722070726573737572652066726f6d204d75736c696d20706f776572732e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3274,
+        "copy_end": 3364,
+        "bytes": 89,
+        "record_index": 110,
+        "table_offset": 1318542,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The Majapahit kingdom once ruled",
+        "these seas, but fell under pressure",
+        "from Muslim powers."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_704",
+      "message_ID": 704,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The Ming dynasty formerly prospered; eunuchs now act arbitrarily, government grows more chaotic and the speaker calls it dreadful.",
+      "localization_note": "Do as they please restores the criticism of arbitrary rule. Keep the worsening disorder in government and the speaker’s dismay.",
+      "previous_English": "The Ming dynasty once thrived. Now eunuchs do as they please, and the government sinks deeper into chaos. It's dreadful.",
+      "clean_Japanese": "明王朝は、かつては繁栄を誇ったの\nですが、今は宦官が専横して\n国政は乱れるばかり\nもう、ひどいものですよ",
+      "english": "The Ming dynasty once thrived. Now eunuchs do as they please, and the government sinks deeper into chaos. It's dreadful.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3724,
+        "copy_end": 3828,
+        "bytes": 101,
+        "record_index": 49,
+        "table_offset": 1318544,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3332,
+        "copy_end": 3454,
+        "bytes": 121,
+        "record_index": 119,
+        "table_offset": 1318544,
+        "start_in_record": 0
+      },
+      "source_hex": "96be89a492a982cd814182a982c282c482cd94c9896882f08cd682c182bd82cc0a82c582b782aa81418da182cd9b818aaf82aa90ea89a182b582c40a8d9190ad82cd979082ea82e982ce82a982e80a82e082a4814182d082c782a282e082cc82c582b782e6",
+      "current_hex": "20546865204d696e672064796e61737479206f6e636520746872697665642e204e6f772065756e7563687320646f206173207468657920706c656173652c20616e642074686520676f7665726e6d656e742073696e6b732064656570657220696e746f206368616f732e204974277320647265616466756c2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20546865204d696e672064796e61737479206f6e636520746872697665642e204e6f772065756e7563687320646f206173207468657920706c656173652c20616e642074686520676f7665726e6d656e742073696e6b732064656570657220696e746f206368616f732e204974277320647265616466756c2e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3364,
+        "copy_end": 3486,
+        "bytes": 121,
+        "record_index": 111,
+        "table_offset": 1318544,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The Ming dynasty once thrived. Now",
+        "eunuchs do as they please, and the",
+        "government sinks deeper into chaos.",
+        "It's dreadful."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_705",
+      "message_ID": 705,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Korea became a unified state under founder Yi Seong-gye around200 years ago.",
+      "localization_note": "Tie the founding title to the unified kingdom and preserve Yi Seong-gye and the approximate two centuries.",
+      "previous_English": "Under its founder, Yi Seong-gye, Korea united about 200 years ago.",
+      "clean_Japanese": "朝鮮は、２００年ほど前に太祖である\n李成桂のもとで統一国家と\nなったんですよ",
+      "english": "About 200 years ago, Yi Seong-gye, the founding king, united Korea.",
+      "protected_phrases": [
+        "About 200 years ago,",
+        "Yi Seong-gye,",
+        "the founding king,"
+      ],
+      "finding": "prose",
+      "decision": "revision",
+      "source_reference": {
+        "block": 8,
+        "offset": 3828,
+        "copy_end": 3904,
+        "bytes": 74,
+        "record_index": 50,
+        "table_offset": 1318546,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3454,
+        "copy_end": 3543,
+        "bytes": 67,
+        "record_index": 120,
+        "table_offset": 1318546,
+        "start_in_record": 0
+      },
+      "source_hex": "92a9914e82cd81418251824f824f944e82d982c7914f82c991be916382c582a082e90a979b90ac8c6a82cc82e082c682c5939d88ea8d9189c682c60a82c882c182bd82f182c582b782e6",
+      "current_hex": "20556e6465722069747320666f756e6465722c2059692053656f6e672d6779652c204b6f72656120756e697465642061626f7574203230302079656172732061676f2e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2041626f7574203230302079656172732061676f2c2059692053656f6e672d6779652c0a202074686520666f756e64696e67206b696e672c20756e69746564204b6f7265612e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3486,
+        "copy_end": 3557,
+        "bytes": 70,
+        "record_index": 112,
+        "table_offset": 1318546,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "About 200 years ago, Yi Seong-gye,",
+        "the founding king, united Korea."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": [
+        {
+          "glyph_count": 57,
+          "ink_sha256": "28428790ac94a61b188025423903a44812533ae70b1af481874c183112d722fa",
+          "visible_lines": [
+            "About 200 years ago, Yi Seong-gye,",
+            "the founding king, united Korea."
+          ],
+          "display_hex": "2041626f7574203230302079656172732061676f2c2059692053656f6e672d6779652c0a202074686520666f756e64696e67206b696e672c20756e69746564204b6f7265612e"
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_706",
+      "message_ID": 706,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "The long warring-states age is finally approaching its end.",
+      "localization_note": "Keep the long warring era and the sense that a welcome end is finally approaching.",
+      "previous_English": "The long age of warring states is finally ending.",
+      "clean_Japanese": "長く続いた戦国の世も\nようやく終わりを告げようとしています",
+      "english": "The long age of warring states is finally ending.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3904,
+        "copy_end": 3964,
+        "bytes": 57,
+        "record_index": 51,
+        "table_offset": 1318548,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3543,
+        "copy_end": 3594,
+        "bytes": 50,
+        "record_index": 142,
+        "table_offset": 1318548,
+        "start_in_record": 0
+      },
+      "source_hex": "92b782ad91b182a282bd90ed8d9182cc90a282e00a82e682a482e282ad8f4982ed82e882f08d9082b082e682a482c682b582c482a282dc82b7",
+      "current_hex": "20546865206c6f6e6720616765206f662077617272696e67207374617465732069732066696e616c6c7920656e64696e672e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "20546865206c6f6e6720616765206f662077617272696e67207374617465732069732066696e616c6c7920656e64696e672e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3557,
+        "copy_end": 3608,
+        "bytes": 50,
+        "record_index": 113,
+        "table_offset": 1318548,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "The long age of warring states is",
+        "finally ending."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_707",
+      "message_ID": 707,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Ask if the listener knows the Caribbean is a haunt of pirates from European countries.",
+      "localization_note": "Keep the friendly opening question and the claim that European pirates come from many countries.",
+      "previous_English": "Did you know? The Caribbean is full of pirates from all over Europe.",
+      "clean_Japanese": "知ってますか？\nカリブ海は、ヨーロッパ各国の海賊の\n巣窟なんですよ",
+      "english": "Did you know? The Caribbean is full of pirates from all over Europe.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 8,
+        "offset": 3964,
+        "copy_end": 4028,
+        "bytes": 64,
+        "record_index": 52,
+        "table_offset": 1318550,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3594,
+        "copy_end": 3664,
+        "bytes": 69,
+        "record_index": 143,
+        "table_offset": 1318550,
+        "start_in_record": 0
+      },
+      "source_hex": "926d82c182c482dc82b782a981480a834a838a83758a4382cd81418388815b838d836283708a658d9182cc8a4391af82cc0a91838c4182c882f182c582b782e6",
+      "current_hex": "2044696420796f75206b6e6f773f205468652043617269626265616e2069732066756c6c206f6620706972617465732066726f6d20616c6c206f766572204575726f70652e",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2044696420796f75206b6e6f773f205468652043617269626265616e2069732066756c6c206f6620706972617465732066726f6d20616c6c206f766572204575726f70652e",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3608,
+        "copy_end": 3678,
+        "bytes": 69,
+        "record_index": 114,
+        "table_offset": 1318550,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Did you know? The Caribbean is full",
+        "of pirates from all over Europe."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    },
+    {
+      "id": "COMMON_MESSAGE_708",
+      "message_ID": 708,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Alternative country briefing in a Square shop.",
+      "source_meaning": "Since Spain's Admiral Cortes occupied the Aztec kingdom, many conquistadors have come to the New World.",
+      "localization_note": "Keep the game’s title for Cortes, the Aztec kingdom and the wave of conquistadors that followed.",
+      "previous_English": "Since Spain's Admiral Cortes conquered the Aztec kingdom, conquistadors have flocked to the New World.",
+      "clean_Japanese": "スペインのコルテス提督が\nアステカ王国を占領してからと\nいうもの、多くの征服者がこの新大陸に\nやってきたんですよ",
+      "english": "Since Spain's Admiral Cortes conquered the Aztec kingdom, conquistadors have flocked to the New World.",
+      "protected_phrases": [],
+      "finding": "retention",
+      "decision": "retention",
+      "source_reference": {
+        "block": 9,
+        "offset": 0,
+        "copy_end": 112,
+        "bytes": 109,
+        "record_index": 0,
+        "table_offset": 1318552,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 8,
+        "offset": 3664,
+        "copy_end": 3774,
+        "bytes": 109,
+        "record_index": 144,
+        "table_offset": 1318552,
+        "start_in_record": 0
+      },
+      "source_hex": "835883798343839382cc8352838b8365835892f193c282aa0a834183588365834a89a48d9182f090e897cc82b582c482a982e782c60a82a282a482e082cc814191bd82ad82cc90aa959e8ed282aa82b182cc905691e597a482c90a82e282c182c482ab82bd82f182c582b782e6",
+      "current_hex": "2053696e636520537061696e27732041646d6972616c20436f7274657320636f6e7175657265642074686520417a746563206b696e67646f6d2c20636f6e717569737461646f7273206861766520666c6f636b656420746f20746865204e657720576f726c642e202020202020",
+      "original_substitution_count": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "staged_hex": "2053696e636520537061696e27732041646d6972616c20436f7274657320636f6e7175657265642074686520417a746563206b696e67646f6d2c20636f6e717569737461646f7273206861766520666c6f636b656420746f20746865204e657720576f726c642e202020202020",
+      "staged_reference": {
+        "block": 8,
+        "offset": 3678,
+        "copy_end": 3788,
+        "bytes": 109,
+        "record_index": 115,
+        "table_offset": 1318552,
+        "start_in_record": 0
+      },
+      "visible_lines": [
+        "Since Spain's Admiral Cortes",
+        "conquered the Aztec kingdom,",
+        "conquistadors have flocked to the",
+        "New World."
+      ],
+      "formatter_parent": 33898516,
+      "native_displays": []
+    }
+  ],
+  "previous_sha256": "567bd753a45a48bfe1e86f95859738744d44113b17ced5a72da929990ef1c666",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "156c72c604d3c765fc93f039c86fbfb436830fe466cad8c2e83d8c7942736aa9",
+  "target_COMMON_sha256": "ddcaedc23394df95a36175ed9c9b5ac29a6b38a314bf284e04701bf64999dcc7",
+  "entire_parent_inverse": true,
+  "manuscript_sha256": "7df1275bcfaa9bcbba011c0093f93fb4d2b0e86d35aff4b55c10def7d6103d78",
+  "allocation": {
+    "touched_blocks": [
+      7,
+      8
+    ],
+    "source_block_lengths": {
+      "7": 5286,
+      "8": 4057
+    },
+    "target_block_lengths": {
+      "7": 5276,
+      "8": 4071
+    },
+    "changed_visible_templates": [
+      657,
+      683,
+      693,
+      696,
+      705
+    ],
+    "complete_COMMON_and_ARM9_table_inverse": true,
+    "all_unselected_native_copy_spans_exact": true,
+    "new_directory_sha256": "6a3e0cf442eaa38ed305e63b4833fa34de3f967e9e7b3c3e58badb4f4c6b8ad1",
+    "native_message_count": 3668,
+    "native_block_count": 41,
+    "all_41_blocks_fit_8KiB": true
+  },
+  "font": {
+    "native_raster_sha256": "ad8ec57af672a40f3060be111dcf9d5218ac27163f9734a658c6cedbefcdc072",
+    "independent_font_sha256": "9b2df890c2ca84918ae5dac4244d51106a94fc7bc1e5dc888cf902f1ecc3d489",
+    "ink_glyph_height": 12,
+    "native_row_step": 16,
+    "paper": [
+      228,
+      48
+    ],
+    "screenshot_calibration": "work/analysis/town_services_pixel_anchor_v2101e/original49_exact_native_ink_anchor.json"
+  },
+  "facility_caption": {
+    "clean": {
+      "field": 1157364,
+      "pointer": 34958068,
+      "nul_terminated_hex": "8cf088d58f8a00"
+    },
+    "registered": {
+      "field": 1157364,
+      "pointer": 34958068,
+      "nul_terminated_hex": "4d61726b657400"
+    }
+  },
+  "sheets": [
+    {
+      "path": "work\\square_shop_followup_20261119\\research_v1\\portrait_sheet_01.png",
+      "sha256": "449393f22b7bbe3343e52a178703702b9d8af8c58bdfcbc9e09c4c06ed43ac59",
+      "messages": [
+        "657 before",
+        "657 revised",
+        "683 before",
+        "683 revised",
+        "693 before",
+        "693 revised",
+        "696 before",
+        "696 revised",
+        "705 before",
+        "705 revised"
+      ]
+    }
+  ],
+  "evidence": {
+    "releases\\all_routes_editorial_20261115_square_country_briefings_candidate\\verification\\registered_review.json": "386e95e96990e5de6b54f98b20c01cabe1fabb57603bd3e21145831c37f54e4f",
+    "releases\\all_routes_editorial_20261115_square_samples_wraps_candidate\\verification\\registered_review.json": "6a8fe10c6741e8f4aa14aeb22bd6123affaeaa894d336eac1d1345c82099f74c",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\shared_display_owners_20261119_v1.json": "10ec4ae8f4936b4de5c618687b0fedec674a40e6351b481883bbb5064d05ebfa",
+    "releases\\all_routes_editorial_20261119_rafael_iberian_aftermath_candidate\\verification\\registered_release_verification.json": "ff3896c823030b5c4a7caf1a1068dc5bb6c610ba51eaa9cc57ff93b8dcf8776a"
+  }
+}

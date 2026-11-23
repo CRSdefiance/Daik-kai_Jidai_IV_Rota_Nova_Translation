@@ -1,0 +1,5 @@
+# Tavern and Proof of Conquest exchanges
+
+Reviewed 203 spoken turns and eight choice labels across Hodram's and Maria's stories. Fourteen turns have new wording, eighteen have wrap fixes and 171 retain their wording for individual reasons. The coin game's stakes and rules stay consistent. The Man and Woman labels describe the couple without assuming marriage or age. Julio and Yifa retain their distinct voices. [Source, installed decisions and retained choices](../releases/all_routes_editorial_20261122_tavern_and_proof_exchanges_candidate/verification/registered_review.json)
+
+All 32 changed panels passed the native renderer and visual review. The focused Hodram replay showed fifteen panels with their complete speaker labels. Mikhail's joke now fits on one page, and the replay advanced directly to Hodram's reply. Maria's changes were checked offline. The original story triggers and hardware remain unvisited for these changes. Startup and 17 regressions passed, and the clean-input patch reconstructs the ROM byte for byte. [Candidate and patch](../releases/all_routes_editorial_20261122_tavern_and_proof_exchanges_candidate/README.md)

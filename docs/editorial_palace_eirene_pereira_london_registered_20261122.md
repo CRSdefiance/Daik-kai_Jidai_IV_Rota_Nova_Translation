@@ -1,0 +1,7 @@
+# Palace lesson, Eirene, Pereira and the London rescue
+
+The clean-Japanese review covers 275 dialogue records and both labels of Silveira's lesson choice. It uses 25 wording revisions and 250 dialogue retentions. Silveira's two ways of opening hostilities, the scope of the instruction, the king's amount of gold and the investment restrictions keep their original details. Eirene keeps her established names and speaks for herself about the disguise. Cristina's gratitude and her response to Mivor remain distinct. [Coverage ledger](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/verification/registered_review.json)
+
+Focused Rafael and Hodram replays checked 23 panels and nameplates. They include the two name substitutions, the Eirene disclosure and Mivor's original comparison signs. Offline checks covered 27 native layout variants. Both lesson options and seven speakerless commands are byte-exact. Natural story activation, the lesson choice's live branches and hardware remain unvisited. [Testing ROM and exact clean-input patch](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/README.md)
+
+An ordinary saved-game visit to Tripoli verified the Barkeep's greeting, the five-coin drink price and the random lead about Algiers. The evidence links all three panels to their original COMMON requests. [Town observation](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/verification/verified_tavern.json)

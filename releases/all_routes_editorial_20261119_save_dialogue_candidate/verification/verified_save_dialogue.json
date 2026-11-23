@@ -1,0 +1,183 @@
+{
+  "candidate_sha256": "22bd4eab2e6b4a00f00d19f90cc5663bd7e32482e7e2c88cf47e02a5de7af4a2",
+  "observed": [
+    {
+      "id": "DK4_SAVE_OVERWRITE_CONFIRM",
+      "frame": 6600,
+      "capture": {
+        "frame": 6600,
+        "path": "work\\save_dialogue_followup_20261119_v2\\occupied_slot_v2\\capture\\frame_006600_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "a8ac1ffb22a3f7488485f96116d4b6e92c797b79223cdae78ed6fe1dc9677114",
+        "framebuffer_sha256": "6fde9a77290206d5f97ef78c8c6099b612f6adb70b39a975f2e1cf8e06d894dd"
+      },
+      "crop": [
+        16,
+        296,
+        244,
+        344
+      ],
+      "complete_native_glyph_mask": true,
+      "supplied_write_failure": false
+    },
+    {
+      "id": "DK4_SAVE_WRITE_ERROR",
+      "frame": 7000,
+      "capture": {
+        "frame": 7000,
+        "path": "work\\save_dialogue_followup_20261119_v2\\occupied_slot_v2\\capture\\frame_007000_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e9878b811382db552572e0138a4e66ec4bdde3102f55d18cfc4050e4f6bb7c43",
+        "framebuffer_sha256": "cf32503bc3809c9ea46c37a9f335548afe9f063d761e2e6c23cc070b5f215915"
+      },
+      "crop": [
+        16,
+        296,
+        244,
+        344
+      ],
+      "complete_native_glyph_mask": true,
+      "supplied_write_failure": true
+    }
+  ],
+  "actual_emulator": true,
+  "hardware": false,
+  "untouched_donor_verified": true,
+  "fixture": [
+    {
+      "mode": "write-return-zero",
+      "instruction": 34532140,
+      "original_write": 34431908,
+      "before": "1c9effeb",
+      "after": "0000a0e3",
+      "return_zero_only": true,
+      "changes": [
+        {
+          "address": 34532140,
+          "before": 28,
+          "after": 0
+        },
+        {
+          "address": 34532141,
+          "before": 158,
+          "after": 0
+        },
+        {
+          "address": 34532142,
+          "before": 255,
+          "after": 160
+        },
+        {
+          "address": 34532143,
+          "before": 235,
+          "after": 227
+        }
+      ],
+      "frame": 6600
+    },
+    {
+      "mode": "restore-write",
+      "instruction": 34532140,
+      "original_write": 34431908,
+      "before": "0000a0e3",
+      "after": "1c9effeb",
+      "return_zero_only": true,
+      "changes": [
+        {
+          "address": 34532140,
+          "before": 0,
+          "after": 28
+        },
+        {
+          "address": 34532141,
+          "before": 0,
+          "after": 158
+        },
+        {
+          "address": 34532142,
+          "before": 160,
+          "after": 255
+        },
+        {
+          "address": 34532143,
+          "before": 227,
+          "after": 235
+        }
+      ],
+      "frame": 7000
+    }
+  ],
+  "native_write_instruction_restored": true,
+  "original_failure_selector_direct_ARM_sites": [
+    {
+      "ARM9_call_PC": 34526964,
+      "mode_initializer": 0,
+      "exact_instructions_hex": "0000a0e30a0600eb"
+    },
+    {
+      "ARM9_call_PC": 34527020,
+      "mode_initializer": 0,
+      "exact_instructions_hex": "0000a0e3fc0500eb"
+    },
+    {
+      "ARM9_call_PC": 34527132,
+      "mode_initializer": "r5",
+      "exact_instructions_hex": "0500a0e1e00500eb"
+    },
+    {
+      "ARM9_call_PC": 34531136,
+      "mode_initializer": 0,
+      "exact_instructions_hex": "0000a0e3f70100eb"
+    },
+    {
+      "ARM9_call_PC": 34531420,
+      "mode_initializer": 0,
+      "exact_instructions_hex": "0000a0e3b00100eb"
+    },
+    {
+      "ARM9_call_PC": 34532176,
+      "mode_initializer": 1,
+      "exact_instructions_hex": "0100a0e3f30000eb"
+    },
+    {
+      "ARM9_call_PC": 34532368,
+      "mode_initializer": 1,
+      "exact_instructions_hex": "0100a0e3c30000eb"
+    },
+    {
+      "ARM9_call_PC": 34532568,
+      "mode_initializer": "r7",
+      "exact_instructions_hex": "0700a0e1910000eb"
+    },
+    {
+      "ARM9_call_PC": 34532676,
+      "mode_initializer": "r7",
+      "exact_instructions_hex": "0700a0e1760000eb"
+    },
+    {
+      "ARM9_call_PC": 34533088,
+      "mode_initializer": "r7",
+      "exact_instructions_hex": "0700a0e10f0000eb"
+    }
+  ],
+  "offline_only_revision_ids": [
+    "DK4_LOAD_READ_ERROR",
+    "DK4_SAVE_CREATE_CONFIRM"
+  ],
+  "evidence": {
+    "work\\save_dialogue_followup_20261119_v2\\staged.json": "a7c60452a7bb0c5e7dbfde31c6487fb3a4812c59320cafd1e19f6896952d94bf",
+    "work\\save_dialogue_followup_20261119_v2\\occupied_slot_v2\\terminal.json": "b00329339d394ba33ce386d1300e5d6ae1ca56a818b2670c2ffcab9dec7cf486",
+    "work\\save_dialogue_followup_20261119_v2\\occupied_slot_v2\\capture\\capture_report.json": "14729ac08555f95f8cf8afe1a4c6f2ef71cbfb34da4349e1b704ceb5bf864dab",
+    "work\\save_dialogue_followup_20261119_v2\\occupied_slot_v2\\commands.jsonl": "a36ccaf0fa1c42c31610b055612c4d847c88c3083ef5e1ff8b0d95eb2a5e6af1",
+    "work\\save_dialogue_followup_20261119_v2\\save_gameplay.png": "0d8db90f1cd99f64d198e51d8d1714d05ca3bb206a773d561ee86806946d7c4f",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\verify_save_dialogue_followup_20261119.py": "37badc78e56d69ab2b10d479e606edb5c830a7176f8c722e10a0b298fda1c451"
+  }
+}

@@ -1,0 +1,9 @@
+# Hamburg ceramics across all four routes
+
+The 17-turn conversation uses the same Japanese on Rafael, Hodram, Lil and Maria’s routes. The review restores consistent use of **ceramics**, keeps the collectors' courtesy and the traders’ change in tone when they approach them, and preserves the tentative forecast. All 68 records have exact source and final references. There are 53 prose revisions, one wrap-only change and 14 justified retentions. [Exact coverage ledger](../releases/all_routes_editorial_20261120_hamburg_ceramics_candidate/verification/registered_review.json)
+
+All 54 revised pages passed native checks and visual review. The paired emulator replay showed all 17 Lil panels, including 11 revisions, with matching screens at the scene boundaries. Six sampled holds differed in the blinking A indicator. The scene was initialized with the original Lil opening prelude. The normal Hamburg trigger and the other routes received offline coverage in this batch. [Emulator comparison](../releases/all_routes_editorial_20261120_hamburg_ceramics_candidate/verification/comparison.png)
+
+The ordinary Amsterdam Tavern replay verified both responses to the 268-gold round and the rumor about Clifford’s fleet heading to Bristol. The original price formatter still displays wide digits. The linked receipt identifies the source caller for the next display batch. [Amsterdam coverage](../translations/editorial_checkpoints/SharedText_20261110_v1/amsterdam_tavern_round_20261120_v1.json)
+
+Six startup holds, 24 protected getters and 30 focused tests passed. Two optional historical tests skipped. The clean-input patch rebuilds the candidate byte for byte. The dialogue ledger still credits 27,700 records and tracks 276 stored shared keys for display-owner review. [Candidate and patch](../releases/all_routes_editorial_20261120_hamburg_ceramics_candidate/README.md)

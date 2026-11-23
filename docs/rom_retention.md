@@ -16,6 +16,18 @@ exactly clean.nds are additional protected exceptions. The original work/clean.n
 is outside the cleanup scope. The original clean source and registry-designated
 baseline/rollback hashes are checked before and after cleanup.
 
+## Checkpoint cleanup
+
+At each completed checkpoint, clear failed or redundant files produced by that
+batch once its checks and reports are saved. Typical items are incomplete builds,
+test scratch files, and temporary reconstruction copies. Verify any retained copy
+by SHA-256 before removing a duplicate, and check that no active run, release
+record, or research pin needs the file. Record the removed files and their total
+size with the checkpoint. Keep registered builds and patches, protected ROMs,
+and the evidence needed for review or reproduction.
+
+## Historical ROM pruning
+
 Only .nds files in E:\Rota Nova translations\Generated and directly in
 E:\Rota Nova translations are eligible. Patches, manifests, translation sources,
 screenshots, emulator states, guides and all other research records stay in place.

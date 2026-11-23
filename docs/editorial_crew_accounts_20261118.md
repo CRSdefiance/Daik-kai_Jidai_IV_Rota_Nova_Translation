@@ -1,0 +1,9 @@
+# Crew accounts and rumors
+
+Reviewed the Alexandria chisel, Filippo's church trade story, Charles's fleet letter, Jam's Gupta statue letter and Cesare's arrow rumor in all four routes. The 94 prose revisions restore the attempted escape and the one angel and one demon of the arrow legend where needed. They also preserve Carlo's familiar teasing, Fernando's gambling boast and each captain's reaction to the accounts. The review records 3 wrap-only revisions and 147 justified retentions, including the letter signatures and Filippo's initial silence. [Exact review ledger](../releases/all_routes_editorial_20261118_crew_accounts_candidate/verification/registered_review.json)
+
+All 104 revised pages passed native checks and visual review. The first emulator replay exposed a stranded escape clause on its own page. The final initialized replay verified the repaired single-page escape, the distinct two-page pursuit, Charles's signature, Rafael's reaction and the return to the host town. The other exchanges received offline review. Natural event activation and hardware remain unverified for this batch. [Emulator replay](../releases/all_routes_editorial_20261118_crew_accounts_candidate/verification/crew_accounts_live_1.png)
+
+The clean-input patch reconstructs the registered candidate byte for byte. All 114 accepted layers and the ASCII right-bound correction carry forward. Startup, 24 protected name getters and 32 targeted tests passed. [Test ROM and patch](../releases/all_routes_editorial_20261118_crew_accounts_candidate/README.md)
+
+The Janus glove rumor and the Frozen Rose exchanges are the next 313 progressive and system records. Start with SC0 B250–253, SC1 B241–242, SC2 B238–241 and SC3 B211–214. Preserve Hodram's shorter ornament sequence, the branch-specific return of the rose and the guild reward. [Clean and current comparison](../work/janus_and_ornament_source_20261118/)

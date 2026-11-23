@@ -1,0 +1,7 @@
+# Square shop label wording
+
+Reviewed all 18 Square captions against the clean Japanese and the original categories of all 124 trade goods. **Seasonings** replaces **Cond. Shop** and covers sugar, honey, salt and cooking oils. The Square menu supplies the retail context. **Textile Shop** replaces **Fiber Shop** and covers raw textile fibers as well as cloth. The 16 other labels have individual retention reasons. [Exact review ledger](../releases/all_routes_editorial_20261119_square_label_wording_candidate_v2/verification/registered_review.json)
+
+All 18 captions passed the native 64×12 render check. Both revisions use the original caption buffer and font. The Lisbon replay verified the full labels on the exact candidate and returned to town. Every changed pixel in the sampled frames stayed within the two caption fields, and the original dialogue requests matched. Other categories and invalid selectors received offline checks. Hardware remains unvisited. [Native and gameplay evidence](../releases/all_routes_editorial_20261119_square_label_wording_candidate_v2/verification)
+
+The cumulative patch rebuilds the ROM byte for byte. Only the Square caption call and its small selector in retired scratch space change within ARM9. Every previous layer, the ASCII right-bound correction, the shared entries and all four story archives carry forward. Six startup holds, 24 protected name getters and 29 focused tests passed. Dialogue coverage remains 27,700. [Candidate and patch](../releases/all_routes_editorial_20261119_square_label_wording_candidate_v2/README.md)

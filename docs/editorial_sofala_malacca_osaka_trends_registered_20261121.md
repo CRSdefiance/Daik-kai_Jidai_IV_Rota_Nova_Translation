@@ -1,0 +1,11 @@
+# Sofala tea, Malacca almonds and Osaka glass
+
+Reviewed the 36 turns of all three exchanges on each route, with 44 wording revisions, four wrap-only changes and 96 individual retentions. The Sofala scene keeps the shared tea supply and the request for tomorrow. Malacca keeps the claimed effect of the almond remedy in the character's hearsay. Osaka keeps `giyaman` and its Japanese gloss, glass. Twelve native getter calls reconfirmed the six approved speaker labels. [Exact references and decisions](../releases/all_routes_editorial_20261121_sofala_malacca_osaka_trends_candidate/verification/registered_review.json)
+
+All 48 changed pages passed native and visual checks. Initialized replays of the original Lil commands verified all 36 panels, seven revisions and three scene exits. The Sofala tea request in the user's screenshot displayed the approved **Woman** label. The other routes received offline checks. Ordinary town activation and hardware remain unvisited for this batch. [Tea request frame](../releases/all_routes_editorial_20261121_sofala_malacca_osaka_trends_candidate/verification/frame_004030_cold_boot.png) · [Display and replay evidence](../releases/all_routes_editorial_20261121_sofala_malacca_osaka_trends_candidate/verification)
+
+The clean-input patch reconstructs the ROM exactly. Six startup holds, 24 protected getters and 17 focused tests passed. All 114 accepted layers and the ASCII right-bound correction carry forward. The ledger still credits 27,700 records, with 276 shared entries pending. [Candidate and patch](../releases/all_routes_editorial_20261121_sofala_malacca_osaka_trends_candidate/README.md)
+
+Uploaded the registered 60,555,016-byte ROM in place on November 21, 2026 at 04:24 UTC. Drive metadata confirmed the upload and destination, and the folder listing confirmed it was the only `.nds`. The local SHA-256 is `e0f858da96fc3028b414bed4279bc3b141568e81626a564086a4db20cfd1be35`. [Latest Build on Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk)
+
+The final replay fixtures, startup state and reconstructed ROM are in the existing E: output junction. The C: workspace had about 106 MiB free when the preliminary fixture write stopped. Use the E: output junction for large artifacts in the next town batch. The earlier staged ROMs and replay evidence are retained.

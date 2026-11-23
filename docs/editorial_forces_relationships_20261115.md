@@ -1,0 +1,11 @@
+# Forces chart relationship lines
+
+The original chart adds a relationship line below Ties when the selected faction is allied, at war or subordinate. All three lines mixed the English company name with Japanese text. They now read **Allied with %s**, **At war with %s** and **Subject to %s**. Each keeps its original name substitution, color, right alignment and fixed slot. [Exact review](../releases/all_routes_editorial_20261115_forces_relationships_candidate/verification/registered_review.json)
+
+The original controller replay selected the faction next to Castor Co. in the Lisbon chart. A two-byte relationship fixture let the same inputs exercise all three conditions on the old and new builds, then restored the neutral state. All three complete glyph masks match the independent native font. Everything outside the relationship line matches, and four full control frames match, including neutral and the return to the Market menu. The relationships were supplied for display testing. [Gameplay comparison](../releases/all_routes_editorial_20261115_forces_relationships_candidate/verification/forces_relationships.png)
+
+Twelve distinct native format-and-render checks preserve the complete inserted names, including FIONA, a name with a literal percent sign, and an 18-byte company name. Those checks used the original formatter and painter with a supplied bitmap. A separate boot matched six startup frames and 24 protected name getters. All 15 focused tests passed. [Name checks](../releases/all_routes_editorial_20261115_forces_relationships_candidate/verification/forces_relationship_name_matrix.png)
+
+The [registered ROM and exact clean-input patch](../releases/all_routes_editorial_20261115_forces_relationships_candidate/README.md) preserve 114 accepted layers and 159 passing checks. The ledger credits 27,700 reviews with 276 mapped shared records open. The independent ARM9 friendship drawer and hardware remain open.
+
+The separate company-information drawer receives the legacy friendship label in the Inn and Fleet Info replays. Replacing it and four related fields produces identical captured screens in those paths. [Visibility check](editorial_faction_information_visibility_20261115.md)

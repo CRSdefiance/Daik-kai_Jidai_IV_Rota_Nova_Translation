@@ -1,0 +1,9 @@
+# Seville bananas and Stockholm furs
+
+Reviewed all 18 turns of the two scenes in each storyline. The Seville exchange keeps the cook's change from courtesy to dry acknowledgment and the owner's confidence and laugh. The Stockholm exchange preserves the wish for a fur coat and the reported sales and price increases. Retained the native Owner, Cook, Man and Woman nameplates. The ledger has 23 wording revisions, three wrap-only changes and 46 individual retentions. [Record-level review](../releases/all_routes_editorial_20261121_seville_stockholm_trends_candidate/verification/registered_review.json)
+
+All 26 revised pages passed native and visual review. The paired Lil replays used the original scene commands after the original startup prelude. All 18 panels matched their expected holds, including four revised panels and both scene returns. Natural town triggers and hardware remain unvisited in this batch. [Display and replay evidence](../releases/all_routes_editorial_20261121_seville_stockholm_trends_candidate/verification)
+
+The patch reconstructs the ROM exactly. Six startup holds, 24 protected getters and 17 focused tests passed. All 114 accepted layers and the existing ASCII right-bound rule carry forward. The ledger remains at 27,700 credited records with 276 shared entries open. [Candidate and patch](../releases/all_routes_editorial_20261121_seville_stockholm_trends_candidate/README.md)
+
+Uploaded the registered 60,554,504-byte ROM in place on November 21, 2026 at 03:58 UTC. Drive confirmed the new modification time, destination and filename. A folder listing confirmed it was the only `.nds`. The local SHA-256 is `ebe35ff1e99e890a927e6a0054918840d99600cd2b850ed4effc6c0f7f8b721d`. [Latest Build on Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk)

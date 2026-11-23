@@ -1,3 +1,15 @@
+# Rafael's Deck lesson after Market Trade - 2026-11-19
+
+The original post-Trade path now verifies Julio's regular capital F, Rafael's substituted name and the complete speakerless Deck View instruction. The three revised panels and return to Lisbon passed paired emulator replays. The physical device remains unverified. [Replay evidence](editorial_rafael_deck_after_trade_20261119.md)
+
+# Compact Shortage status display - 2026-11-19
+
+Town Summary and Market Trade clipped Shortage to Shorta. The registered Town Shortage candidate verifies the full word in Town Summary and both Trade views. The replay used a stock condition initialized with one city-status byte. [Fix and evidence](editorial_town_shortage_20261119.md)
+
+# Town Summary Status heading - 2026-11-19
+
+The original English Town Summary abbreviated the condition heading to Stat. The registered candidate shows Status in full and passes paired Lisbon emulator replays. Hardware verification remains open. [Fix and evidence](editorial_town_summary_20261119.md)
+
 # Current editorial checkpoint - 2026-11-10
 
 The four native story censuses cover all 24,092 dialogue, choice and personality positions. The next shared-text packet has 57 clean-source drafts, 54 current comparisons and one raw ship command. Thirty comparisons are retention candidates, 16 propose revisions and eight identify source mismatches. Consumer, display and release approval remain. Lil261 stays the registered candidate with 25,898 credited reviews.

@@ -1,0 +1,5 @@
+# Rafael’s confrontations and Maria’s wrap repairs
+
+The contextual review covers Charlotte's celebration, Simon's challenge and Valdes's intervention, Cristina's recruitment, and Maria's warning to Lil. It records 25 wording revisions, seven wrap repairs and 175 justified retentions across 207 records. Three retentions reproduced the installed layout byte for byte. Five original alternate portrait payloads are exact. [Coverage ledger](../releases/all_routes_editorial_20261122_rafael_confrontations_and_maria_wraps_candidate/verification/registered_review.json)
+
+The two previously observed breaks in “tell you the truth” and “making things up” are repaired. Focused cold-boot replays checked 18 pages with their original speaker labels. The remaining changed pages passed offline native and visual checks. These replays selected original speech commands after game initialization. Their natural story triggers and handheld behavior were unvisited. Startup and 17 regressions passed. [Test ROM and exact clean-input patch](../releases/all_routes_editorial_20261122_rafael_confrontations_and_maria_wraps_candidate/README.md)

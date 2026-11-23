@@ -1,0 +1,9 @@
+# Boy and Foreign Girl story panels
+
+The [registered ledger](../releases/all_routes_editorial_20261115_embedded_story_roles_candidate/verification/registered_review.json) covers 12 embedded Boy panels across the four Cristina rescue scenes and 17 Foreign Girl panels in Hodram’s route. The labels in 15 Hodram panels now use the same colon as the 14 retained panels. Cristina’s reassurance and the boy’s panic still alternate in the same order. The girl stays unnamed while she responds with gestures and tries Hodram’s name. She says Sera before her nameplate appears.
+
+All 38 native previews were checked and viewed. This includes the three live name tokens at the same stored offsets, with their default, short and full 16-byte name samples. The two-line heading stays aligned with the body in the name exchange. Every revised panel fits its original byte allocation and one page. The surrounding commands and the actor catalog match the predecessor.
+
+Paired Hodram cold boots ran the original extracted panel and speech commands in an initialized opening. Eight revised panels, including all three available Hodram substitutions, matched their complete masks. Fifteen frames matched exactly, including the transition to Sera’s ordinary nameplate and dismissal. This demonstrates the native display on the excerpt. Natural activation of those events and hardware testing remain open. [Emulator comparison](../releases/all_routes_editorial_20261115_embedded_story_roles_candidate/verification/gameplay_comparison.png)
+
+The [cumulative candidate and clean-input patch](../releases/all_routes_editorial_20261115_embedded_story_roles_candidate/README.md) preserve the 114 accepted layers and ASCII right-bound correction. Six startup frames, 24 protected name getters, 32 targeted tests and the byte-exact round trip passed. The 29 panels already carried editorial credit.

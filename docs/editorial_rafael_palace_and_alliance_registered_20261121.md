@@ -1,0 +1,11 @@
+# Rafael's palace and alliance scenes
+
+The review covers 270 records across nine encounters. There are 160 wording revisions, five punctuation glyph corrections and 105 justified retentions. Albuquerque's orders preserve Espinosa's region, the role of the military investigation, the exact 50,000 gold grant and the limits on direct intervention. Silveira's lesson explains the two ways to start a war and when a victory lets the player take a contract and invest. It retains the special rule for a rival's home base. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261121_rafael_palace_and_alliance_candidate/verification/registered_review.json)
+
+The tablet exchanges keep the exact item names and make clear when a map appears. Eirene explains her alias and why she chose to disguise herself. In Uddin's two outcomes, the reply opens either the Nagalpur agreement with its later nonaggression pact or the competition for the Indian Ocean. All three typed menus kept their installed captions and result slots.
+
+Native checks covered 165 revised speech and notice pages, all six captions and both full-name substitutions. Six speeches now fit on one page. The focused emulator proof covers 43 pages and six menu highlights, including 14 pages replayed on the final candidate and 29 earlier samples with identical installed text and rendering dependencies. Thirteen nameplates and role labels were reviewed. The original four-archive format check passed with all seven source-bound speaker controls. Natural branch activation and hardware still await gameplay coverage. [Native and emulator evidence](../releases/all_routes_editorial_20261121_rafael_palace_and_alliance_candidate/verification)
+
+Six startup comparisons, 17 tests and the exact clean-input rebuild passed. [Testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_palace_and_alliance_candidate/README.md)
+
+The Drive folder contains one testing ROM. Its streamed SHA-256 matches the registered build. Cleanup removed 28 redundant files and reclaimed 404,644,177 bytes. [Drive verification](../out/rafael_palace_and_alliance_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_palace_and_alliance_registered_20261121/checkpoint_cleanup.json)

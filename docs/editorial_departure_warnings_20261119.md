@@ -1,0 +1,7 @@
+# Port departure warnings
+
+Reviewed the 23 clean Japanese records that cover the crew checks, repair and supply warnings, and the resupply offer. The five revisions improve the worker’s crew warning and the phrasing of four companion warnings. Eighteen individual retentions preserve the alternative voices, the distinction between no sailors and too few, and the resupply price substitution. [Exact review ledger](../releases/all_routes_editorial_20261119_departure_warnings_candidate/verification/registered_review.json)
+
+All five changed messages passed native glyph, wrapping and one-page checks within the 228×48 window. A Lisbon replay used one crew-count byte in a disposable test session to activate the original shortage check. Two complete holds show the two revised lines. The Port menu after dismissal matches the menu before the warning pixel for pixel. The other revisions received offline checks. Hardware remains unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261119_departure_warnings_candidate/verification)
+
+Only the five reviewed COMMON slots change. The clean-input patch rebuilds the ROM byte for byte. Six startup holds, 24 protected name getters and 49 focused tests passed, with two optional older ROM fixture tests skipped. The dialogue tally remains 27,700 and the 276 pending shared references retain their positions and contents. [Candidate and patch](../releases/all_routes_editorial_20261119_departure_warnings_candidate/README.md)

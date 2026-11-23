@@ -1,0 +1,1735 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_27",
+      "message_ID": 27,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port service attendant",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "水夫が１人もいない船があるぜ\n水夫を雇うか、編成を変えて出直しな",
+      "source_meaning": "A departure warning says one ship has no sailors at all and tells the player to hire sailors or reorganize before returning.",
+      "english": "One of your ships has no sailors. Hire some or reorganize your fleet, then come back.",
+      "previous_English": "One of your ships has no sailors. Hire some or reorganize your fleet, then come back.",
+      "localization_note": "The worker explicitly distinguishes no sailors from a shortage and leaves both remedies open.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 924,
+        "copy_end": 988,
+        "bytes": 63,
+        "record_index": 21,
+        "table_offset": 1317190,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1043,
+        "copy_end": 1129,
+        "bytes": 85,
+        "record_index": 51,
+        "table_offset": 1317190,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1043,
+        "copy_end": 1129,
+        "bytes": 85,
+        "record_index": 51,
+        "table_offset": 1317190,
+        "start_in_record": 0
+      },
+      "source_hex": "9085957682aa8250906c82e082a282c882a2914482aa82a082e982ba0a9085957682f08cd982a482a9814195d290ac82f095cf82a682c48f6f92bc82b582c8",
+      "current_hex": "4f6e65206f6620796f757220736869707320686173206e6f207361696c6f72732e204869726520736f6d65206f722072656f7267616e697a6520796f757220666c6565742c207468656e20636f6d65206261636b2e",
+      "staged_hex": "4f6e65206f6620796f757220736869707320686173206e6f207361696c6f72732e204869726520736f6d65206f722072656f7267616e697a6520796f757220666c6565742c207468656e20636f6d65206261636b2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1043,
+        "copy_end": 1129,
+        "bytes": 85,
+        "record_index": 51,
+        "table_offset": 1317190,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_28",
+      "message_ID": 28,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port service attendant",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "水夫が足りない船があるぜ\n出航前に編成を見直したほうがいいな",
+      "source_meaning": "A departure warning says one ship is short of sailors and recommends reviewing the fleet's formation before sailing.",
+      "english": "You need more sailors on one ship. Check fleet setup before you sail.",
+      "previous_English": "One of your ships is short of sailors. Better check your fleet's formation before sailing.",
+      "localization_note": "The worker gives the reason and the action in direct spoken English. The original recommends checking the formation before departure.",
+      "decision": "revision",
+      "source_reference": {
+        "block": 0,
+        "offset": 988,
+        "copy_end": 1048,
+        "bytes": 59,
+        "record_index": 22,
+        "table_offset": 1317192,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1129,
+        "copy_end": 1220,
+        "bytes": 90,
+        "record_index": 52,
+        "table_offset": 1317192,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1129,
+        "copy_end": 1220,
+        "bytes": 90,
+        "record_index": 52,
+        "table_offset": 1317192,
+        "start_in_record": 0
+      },
+      "source_hex": "9085957682aa91ab82e882c882a2914482aa82a082e982ba0a8f6f8d71914f82c995d290ac82f08ca992bc82b582bd82d982a482aa82a282a282c8",
+      "current_hex": "4f6e65206f6620796f75722073686970732069732073686f7274206f66207361696c6f72732e2042657474657220636865636b20796f757220666c656574277320666f726d6174696f6e206265666f7265207361696c696e672e",
+      "staged_hex": "596f75206e656564206d6f7265207361696c6f7273206f6e206f6e6520736869702e20436865636b20666c656574207365747570206265666f726520796f75207361696c2e202020202020202020202020202020202020202020",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "native_route": [
+        33898516,
+        28,
+        628
+      ],
+      "before_native": {
+        "lines": [
+          "One of your ships is short",
+          "of sailors. Better check your",
+          "fleet's formation before sailing."
+        ],
+        "formatter_output_hex": "204f6e65206f6620796f75722073686970732069732073686f72740a20206f66207361696c6f72732e2042657474657220636865636b20796f75720a2020666c656574277320666f726d6174696f6e206265666f7265207361696c696e672e",
+        "full_native_plane_sha256": "ede339aec656669f74c1402e63e9365c56f5d522cbd9c7a04f0e4d5268baca79",
+        "page_count": 1
+      },
+      "revised_native": {
+        "lines": [
+          "You need more sailors on one ship.",
+          "Check fleet setup before you sail."
+        ],
+        "formatter_output_hex": "20596f75206e656564206d6f7265207361696c6f7273206f6e206f6e6520736869702e0a2020436865636b20666c656574207365747570206265666f726520796f75207361696c2e",
+        "full_native_plane_sha256": "ad8495c55c9ef251759631de2834d458dda95d94978976639e890e0bc4fd24f0",
+        "page_count": 1
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1129,
+        "copy_end": 1220,
+        "bytes": 90,
+        "record_index": 52,
+        "table_offset": 1317192,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": true
+    },
+    {
+      "id": "COMMON_MESSAGE_29",
+      "message_ID": 29,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 29",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n出航前に修理すべき船があります",
+      "source_meaning": "A polite companion reports that some ships need repairs before setting sail.",
+      "english": "Admiral, we have ships that need repairs before we set sail.",
+      "previous_English": "Admiral, we have ships that need repairs before we set sail.",
+      "localization_note": "The formal warning gives the required repair and names the moment before departure.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1048,
+        "copy_end": 1084,
+        "bytes": 35,
+        "record_index": 23,
+        "table_offset": 1317194,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1220,
+        "copy_end": 1281,
+        "bytes": 60,
+        "record_index": 53,
+        "table_offset": 1317194,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1220,
+        "copy_end": 1281,
+        "bytes": 60,
+        "record_index": 53,
+        "table_offset": 1317194,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8f6f8d71914f82c98f43979d82b782d782ab914482aa82a082e882dc82b7",
+      "current_hex": "41646d6972616c2c20776520686176652073686970732074686174206e6565642072657061697273206265666f726520776520736574207361696c2e",
+      "staged_hex": "41646d6972616c2c20776520686176652073686970732074686174206e6565642072657061697273206265666f726520776520736574207361696c2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1220,
+        "copy_end": 1281,
+        "bytes": 60,
+        "record_index": 53,
+        "table_offset": 1317194,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_30",
+      "message_ID": 30,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 30",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n船の中には修理が必要なものが\nあるようですが",
+      "source_meaning": "A hesitant polite companion notes that some of the fleet's ships seem to need repairs.",
+      "english": "Admiral, it looks like some of our ships need repairs.",
+      "previous_English": "Admiral, it looks like some of our ships need repairs.",
+      "localization_note": "The hesitation suits the more tentative companion and preserves that some ships need work.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1084,
+        "copy_end": 1132,
+        "bytes": 48,
+        "record_index": 24,
+        "table_offset": 1317196,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1281,
+        "copy_end": 1336,
+        "bytes": 54,
+        "record_index": 54,
+        "table_offset": 1317196,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1281,
+        "copy_end": 1336,
+        "bytes": 54,
+        "record_index": 54,
+        "table_offset": 1317196,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a914482cc928682c982cd8f43979d82aa954b977682c882e082cc82aa0a82a082e982e682a482c582b782aa",
+      "current_hex": "41646d6972616c2c206974206c6f6f6b73206c696b6520736f6d65206f66206f7572207368697073206e65656420726570616972732e",
+      "staged_hex": "41646d6972616c2c206974206c6f6f6b73206c696b6520736f6d65206f66206f7572207368697073206e65656420726570616972732e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1281,
+        "copy_end": 1336,
+        "bytes": 54,
+        "record_index": 54,
+        "table_offset": 1317196,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_31",
+      "message_ID": 31,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 31",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "待ってよ\n出航の前に修理しなくちゃいけない船が\nあるんだ",
+      "source_meaning": "A casual companion asks the party to wait because some ships need repairs before sailing.",
+      "english": "Hold on! Some ships need repairs before we set sail.",
+      "previous_English": "Hold on! Some ships need repairs before we set sail.",
+      "localization_note": "Hold on catches the captain's attention. The companion states the repair problem in plain terms.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1132,
+        "copy_end": 1188,
+        "bytes": 54,
+        "record_index": 24,
+        "table_offset": 1317198,
+        "start_in_record": 48
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1336,
+        "copy_end": 1389,
+        "bytes": 52,
+        "record_index": 55,
+        "table_offset": 1317198,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1336,
+        "copy_end": 1389,
+        "bytes": 52,
+        "record_index": 55,
+        "table_offset": 1317198,
+        "start_in_record": 0
+      },
+      "source_hex": "91d282c182c482e60a8f6f8d7182cc914f82c98f43979d82b582c882ad82bf82e182a282af82c882a2914482aa0a82a082e982f182be",
+      "current_hex": "486f6c64206f6e2120536f6d65207368697073206e6565642072657061697273206265666f726520776520736574207361696c2e",
+      "staged_hex": "486f6c64206f6e2120536f6d65207368697073206e6565642072657061697273206265666f726520776520736574207361696c2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1336,
+        "copy_end": 1389,
+        "bytes": 52,
+        "record_index": 55,
+        "table_offset": 1317198,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_32",
+      "message_ID": 32,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 32",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n船を直してから出航しようぜ\nこのままじゃやばいぞ",
+      "source_meaning": "A brash companion urges repairs before sailing and warns that leaving the ships as they are is dangerous.",
+      "english": "Admiral, let's fix the ships first. It's risky to sail like this!",
+      "previous_English": "Admiral, let's repair the ships before we sail. It's too risky like this!",
+      "localization_note": "Keep the brash companion's urgency and the explicit danger of leaving before repairs.",
+      "decision": "revision",
+      "source_reference": {
+        "block": 0,
+        "offset": 1188,
+        "copy_end": 1240,
+        "bytes": 52,
+        "record_index": 25,
+        "table_offset": 1317200,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1389,
+        "copy_end": 1463,
+        "bytes": 73,
+        "record_index": 56,
+        "table_offset": 1317200,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1389,
+        "copy_end": 1463,
+        "bytes": 73,
+        "record_index": 56,
+        "table_offset": 1317200,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a914482f092bc82b582c482a982e78f6f8d7182b582e682a482ba0a82b182cc82dc82dc82b682e182e282ce82a282bc",
+      "current_hex": "41646d6972616c2c206c657427732072657061697220746865207368697073206265666f7265207765207361696c2e204974277320746f6f207269736b79206c696b65207468697321",
+      "staged_hex": "41646d6972616c2c206c6574277320666978207468652073686970732066697273742e2049742773207269736b7920746f207361696c206c696b652074686973212020202020202020",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "native_route": [
+        33897912,
+        34698400,
+        636
+      ],
+      "before_native": {
+        "lines": [
+          "Admiral, let's repair the ships",
+          "before we sail. It's too risky",
+          "like this!"
+        ],
+        "formatter_output_hex": "2041646d6972616c2c206c6574277320726570616972207468652073686970730a20206265666f7265207765207361696c2e204974277320746f6f207269736b790a20206c696b65207468697321",
+        "full_native_plane_sha256": "81fee3c136cc19fad52652a131f53849e583ad6ba28a89cc175ac5dfc40df644",
+        "page_count": 1
+      },
+      "revised_native": {
+        "lines": [
+          "Admiral, let's fix the ships first.",
+          "It's risky to sail like this!"
+        ],
+        "formatter_output_hex": "2041646d6972616c2c206c6574277320666978207468652073686970732066697273742e0a202049742773207269736b7920746f207361696c206c696b65207468697321",
+        "full_native_plane_sha256": "6f2dd98bb384231d4f54a2889b29d02077796c26903add419db59b1910fbb122",
+        "page_count": 1
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1389,
+        "copy_end": 1463,
+        "bytes": 73,
+        "record_index": 56,
+        "table_offset": 1317200,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_33",
+      "message_ID": 33,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 33",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n出航より船の修理が先じゃな",
+      "source_meaning": "An older companion says ship repairs must take priority over departure.",
+      "english": "Admiral, we'd best repair the ships first.",
+      "previous_English": "Admiral, repairs must come before we set sail.",
+      "localization_note": "The measured advice fits the older voice and keeps repairs ahead of departure.",
+      "decision": "revision",
+      "source_reference": {
+        "block": 0,
+        "offset": 1240,
+        "copy_end": 1272,
+        "bytes": 31,
+        "record_index": 25,
+        "table_offset": 1317202,
+        "start_in_record": 53
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1463,
+        "copy_end": 1510,
+        "bytes": 46,
+        "record_index": 57,
+        "table_offset": 1317202,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1463,
+        "copy_end": 1510,
+        "bytes": 46,
+        "record_index": 57,
+        "table_offset": 1317202,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8f6f8d7182e682e8914482cc8f43979d82aa90e682b682e182c8",
+      "current_hex": "41646d6972616c2c2072657061697273206d75737420636f6d65206265666f726520776520736574207361696c2e",
+      "staged_hex": "41646d6972616c2c2077652764206265737420726570616972207468652073686970732066697273742e20202020",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "native_route": [
+        33897912,
+        34698400,
+        636
+      ],
+      "before_native": {
+        "lines": [
+          "Admiral, repairs must come before",
+          "we set sail."
+        ],
+        "formatter_output_hex": "2041646d6972616c2c2072657061697273206d75737420636f6d65206265666f72650a2020776520736574207361696c2e",
+        "full_native_plane_sha256": "30fa8832f2ec3b863652141299cdc7d90629ce754bae2df25e44dcfc33df0c7a",
+        "page_count": 1
+      },
+      "revised_native": {
+        "lines": [
+          "Admiral, we'd best repair",
+          "the ships first."
+        ],
+        "formatter_output_hex": "2041646d6972616c2c20776527642062657374207265706169720a20207468652073686970732066697273742e",
+        "full_native_plane_sha256": "dd63b92659e1cbbb60aa936bbb679dbc8ccb47b4480ba3cc53753b9829516a69",
+        "page_count": 1
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1463,
+        "copy_end": 1510,
+        "bytes": 46,
+        "record_index": 57,
+        "table_offset": 1317202,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_34",
+      "message_ID": 34,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 34",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "ていとくー\nおぼれたくないよう\n先に船を直してこようよ",
+      "source_meaning": "A childish companion fears drowning and asks that the ships be repaired first.",
+      "english": "Admiral! I don't want to drown! Let's get the ships fixed first!",
+      "previous_English": "Admiral! I don't want to drown! Let's get the ships fixed first!",
+      "localization_note": "The fear of drowning preserves the young companion's exaggeration, followed by the practical suggestion.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1272,
+        "copy_end": 1324,
+        "bytes": 52,
+        "record_index": 26,
+        "table_offset": 1317204,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1510,
+        "copy_end": 1575,
+        "bytes": 64,
+        "record_index": 58,
+        "table_offset": 1317204,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1510,
+        "copy_end": 1575,
+        "bytes": 64,
+        "record_index": 58,
+        "table_offset": 1317204,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b0a82a882da82ea82bd82ad82c882a282e682a40a90e682c9914482f092bc82b582c482b182e682a482e6",
+      "current_hex": "41646d6972616c21204920646f6e27742077616e7420746f2064726f776e21204c65742773206765742074686520736869707320666978656420666972737421",
+      "staged_hex": "41646d6972616c21204920646f6e27742077616e7420746f2064726f776e21204c65742773206765742074686520736869707320666978656420666972737421",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1510,
+        "copy_end": 1575,
+        "bytes": 64,
+        "record_index": 58,
+        "table_offset": 1317204,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_35",
+      "message_ID": 35,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 35",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n出航より船の修理が先ですな",
+      "source_meaning": "A mature polite companion says repairs should precede departure.",
+      "english": "Admiral, we should repair the ships before departing.",
+      "previous_English": "Admiral, we should repair the ships before departing.",
+      "localization_note": "The polite suggestion preserves the order of repairs and sailing.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1324,
+        "copy_end": 1356,
+        "bytes": 31,
+        "record_index": 26,
+        "table_offset": 1317206,
+        "start_in_record": 52
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1575,
+        "copy_end": 1629,
+        "bytes": 53,
+        "record_index": 59,
+        "table_offset": 1317206,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1575,
+        "copy_end": 1629,
+        "bytes": 53,
+        "record_index": 59,
+        "table_offset": 1317206,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a8f6f8d7182e682e8914482cc8f43979d82aa90e682c582b782c8",
+      "current_hex": "41646d6972616c2c2077652073686f756c642072657061697220746865207368697073206265666f726520646570617274696e672e",
+      "staged_hex": "41646d6972616c2c2077652073686f756c642072657061697220746865207368697073206265666f726520646570617274696e672e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1575,
+        "copy_end": 1629,
+        "bytes": 53,
+        "record_index": 59,
+        "table_offset": 1317206,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_36",
+      "message_ID": 36,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 36",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこれではすぐに物資が底を\n突きそうですが…",
+      "source_meaning": "A polite hesitant companion warns that these supplies look likely to run out very soon.",
+      "english": "Admiral, it looks like we'll run out of supplies very soon...",
+      "previous_English": "Admiral, it looks like we'll run out of supplies very soon...",
+      "localization_note": "The deferential opening and trailing pause suit the warning, with the risk of running out explicit.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1356,
+        "copy_end": 1404,
+        "bytes": 46,
+        "record_index": 27,
+        "table_offset": 1317208,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1629,
+        "copy_end": 1691,
+        "bytes": 61,
+        "record_index": 60,
+        "table_offset": 1317208,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1629,
+        "copy_end": 1691,
+        "bytes": 61,
+        "record_index": 60,
+        "table_offset": 1317208,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182ea82c582cd82b782ae82c995a88e9182aa92ea82f00a93cb82ab82bb82a482c582b782aa8163",
+      "current_hex": "41646d6972616c2c206974206c6f6f6b73206c696b65207765276c6c2072756e206f7574206f6620737570706c696573207665727920736f6f6e2e2e2e",
+      "staged_hex": "41646d6972616c2c206974206c6f6f6b73206c696b65207765276c6c2072756e206f7574206f6620737570706c696573207665727920736f6f6e2e2e2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1629,
+        "copy_end": 1691,
+        "bytes": 61,
+        "record_index": 60,
+        "table_offset": 1317208,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_37",
+      "message_ID": 37,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 37",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこれじゃすぐに物資が底を\n突いちゃうよ…",
+      "source_meaning": "A casual companion warns that supplies will soon run out at the present rate.",
+      "english": "Admiral, at this rate we'll run out of supplies in no time...",
+      "previous_English": "Admiral, at this rate we'll run out of supplies in no time...",
+      "localization_note": "At this rate ties the worry to the supplies already aboard and keeps the urgency.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1404,
+        "copy_end": 1448,
+        "bytes": 44,
+        "record_index": 28,
+        "table_offset": 1317210,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1691,
+        "copy_end": 1753,
+        "bytes": 61,
+        "record_index": 61,
+        "table_offset": 1317210,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1691,
+        "copy_end": 1753,
+        "bytes": 61,
+        "record_index": 61,
+        "table_offset": 1317210,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182ea82b682e182b782ae82c995a88e9182aa92ea82f00a93cb82a282bf82e182a482e68163",
+      "current_hex": "41646d6972616c2c20617420746869732072617465207765276c6c2072756e206f7574206f6620737570706c69657320696e206e6f2074696d652e2e2e",
+      "staged_hex": "41646d6972616c2c20617420746869732072617465207765276c6c2072756e206f7574206f6620737570706c69657320696e206e6f2074696d652e2e2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1691,
+        "copy_end": 1753,
+        "bytes": 61,
+        "record_index": 61,
+        "table_offset": 1317210,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_38",
+      "message_ID": 38,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 38",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこれじゃすぐに物資がなくなるな…",
+      "source_meaning": "A direct companion observes that supplies will soon be exhausted.",
+      "english": "We'll soon run out of supplies, Admiral...",
+      "previous_English": "We'll soon run out of supplies, Admiral...",
+      "localization_note": "The companion gets the immediate problem out first, then addresses the captain.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1448,
+        "copy_end": 1488,
+        "bytes": 37,
+        "record_index": 28,
+        "table_offset": 1317212,
+        "start_in_record": 45
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1753,
+        "copy_end": 1796,
+        "bytes": 42,
+        "record_index": 62,
+        "table_offset": 1317212,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1753,
+        "copy_end": 1796,
+        "bytes": 42,
+        "record_index": 62,
+        "table_offset": 1317212,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182ea82b682e182b782ae82c995a88e9182aa82c882ad82c882e982c88163",
+      "current_hex": "5765276c6c20736f6f6e2072756e206f7574206f6620737570706c6965732c2041646d6972616c2e2e2e",
+      "staged_hex": "5765276c6c20736f6f6e2072756e206f7574206f6620737570706c6965732c2041646d6972616c2e2e2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1753,
+        "copy_end": 1796,
+        "bytes": 42,
+        "record_index": 62,
+        "table_offset": 1317212,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_39",
+      "message_ID": 39,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 39",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこれではすぐに物資の蓄えがなくなって\nしまうぞ",
+      "source_meaning": "A firm mature companion warns the admiral that the stored supplies will soon be exhausted.",
+      "english": "Admiral, these supplies will run out in no time.",
+      "previous_English": "Admiral, these supplies will run out in no time.",
+      "localization_note": "The firm wording makes the shortage feel urgent, with no extra claim about how the ships were provisioned.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1488,
+        "copy_end": 1540,
+        "bytes": 50,
+        "record_index": 29,
+        "table_offset": 1317214,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1796,
+        "copy_end": 1845,
+        "bytes": 48,
+        "record_index": 63,
+        "table_offset": 1317214,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1796,
+        "copy_end": 1845,
+        "bytes": 48,
+        "record_index": 63,
+        "table_offset": 1317214,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182ea82c582cd82b782ae82c995a88e9182cc927e82a682aa82c882ad82c882c182c40a82b582dc82a482bc",
+      "current_hex": "41646d6972616c2c20746865736520737570706c6965732077696c6c2072756e206f757420696e206e6f2074696d652e",
+      "staged_hex": "41646d6972616c2c20746865736520737570706c6965732077696c6c2072756e206f757420696e206e6f2074696d652e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1796,
+        "copy_end": 1845,
+        "bytes": 48,
+        "record_index": 63,
+        "table_offset": 1317214,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_40",
+      "message_ID": 40,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 40",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "ねえ、これじゃすぐにごはんが\n食べられなくなっちゃうよ？",
+      "source_meaning": "A casual food-focused companion worries that they will soon have nothing to eat with the current supplies.",
+      "english": "Hey, we'll be out of food soon at this rate, won't we?",
+      "previous_English": "Hey, won't we run out of food soon with so little aboard?",
+      "localization_note": "Keep the easygoing challenge and the concern about having nothing to eat with the current stores.",
+      "decision": "revision",
+      "source_reference": {
+        "block": 0,
+        "offset": 1540,
+        "copy_end": 1596,
+        "bytes": 55,
+        "record_index": 30,
+        "table_offset": 1317216,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1845,
+        "copy_end": 1903,
+        "bytes": 57,
+        "record_index": 64,
+        "table_offset": 1317216,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1845,
+        "copy_end": 1903,
+        "bytes": 57,
+        "record_index": 64,
+        "table_offset": 1317216,
+        "start_in_record": 0
+      },
+      "source_hex": "82cb82a6814182b182ea82b682e182b782ae82c982b282cd82f182aa0a904882d782e782ea82c882ad82c882c182bf82e182a482e68148",
+      "current_hex": "4865792c20776f6e27742077652072756e206f7574206f6620666f6f6420736f6f6e207769746820736f206c6974746c652061626f6172643f",
+      "staged_hex": "4865792c207765276c6c206265206f7574206f6620666f6f6420736f6f6e206174207468697320726174652c20776f6e27742077653f202020",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "native_route": [
+        33897912,
+        34703936,
+        636
+      ],
+      "before_native": {
+        "lines": [
+          "Hey, won't we run out of food soon",
+          "with so little aboard?"
+        ],
+        "formatter_output_hex": "204865792c20776f6e27742077652072756e206f7574206f6620666f6f6420736f6f6e0a20207769746820736f206c6974746c652061626f6172643f",
+        "full_native_plane_sha256": "5f198e8b2f9143b040500c5f9e2607b8bb3871901061e1a0681d815f687fc725",
+        "page_count": 1
+      },
+      "revised_native": {
+        "lines": [
+          "Hey, we'll be out of food soon",
+          "at this rate, won't we?"
+        ],
+        "formatter_output_hex": "204865792c207765276c6c206265206f7574206f6620666f6f6420736f6f6e0a20206174207468697320726174652c20776f6e27742077653f",
+        "full_native_plane_sha256": "90f8ad5df727602965149d76b533c126b2f931bed0166a15621b2f5142e4c8ed",
+        "page_count": 1
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1845,
+        "copy_end": 1903,
+        "bytes": 57,
+        "record_index": 64,
+        "table_offset": 1317216,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_41",
+      "message_ID": 41,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 41",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "いやはや…\nこれだけの物資では、すぐに底を\n突いてしまいますぞ",
+      "source_meaning": "A mature expressive companion says that with so few supplies they will be exhausted very soon.",
+      "english": "Goodness... With so few supplies, we'll run out in no time.",
+      "previous_English": "Goodness... With so few supplies, we'll run out in no time.",
+      "localization_note": "Goodness and the measured phrasing suit the companion's register. Both the low amount and near exhaustion remain.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1596,
+        "copy_end": 1656,
+        "bytes": 60,
+        "record_index": 31,
+        "table_offset": 1317218,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1903,
+        "copy_end": 1963,
+        "bytes": 59,
+        "record_index": 65,
+        "table_offset": 1317218,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1903,
+        "copy_end": 1963,
+        "bytes": 59,
+        "record_index": 65,
+        "table_offset": 1317218,
+        "start_in_record": 0
+      },
+      "source_hex": "82a282e282cd82e281630a82b182ea82be82af82cc95a88e9182c582cd814182b782ae82c992ea82f00a93cb82a282c482b582dc82a282dc82b782bc",
+      "current_hex": "476f6f646e6573732e2e2e205769746820736f2066657720737570706c6965732c207765276c6c2072756e206f757420696e206e6f2074696d652e",
+      "staged_hex": "476f6f646e6573732e2e2e205769746820736f2066657720737570706c6965732c207765276c6c2072756e206f757420696e206e6f2074696d652e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1903,
+        "copy_end": 1963,
+        "bytes": 59,
+        "record_index": 65,
+        "table_offset": 1317218,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_42",
+      "message_ID": 42,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 42",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこの物資ではやや心許ない気が\nしますが…",
+      "source_meaning": "A polite companion expresses mild unease about whether the current supplies are sufficient.",
+      "english": "Admiral, I'm not sure these supplies will be enough...",
+      "previous_English": "Admiral, I'm not sure these supplies will be enough...",
+      "localization_note": "The mild warning expresses uncertainty about whether supplies will be enough.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1656,
+        "copy_end": 1700,
+        "bytes": 44,
+        "record_index": 31,
+        "table_offset": 1317220,
+        "start_in_record": 60
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 1963,
+        "copy_end": 2018,
+        "bytes": 54,
+        "record_index": 66,
+        "table_offset": 1317220,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 1963,
+        "copy_end": 2018,
+        "bytes": 54,
+        "record_index": 66,
+        "table_offset": 1317220,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182cc95a88e9182c582cd82e282e290538b9682c882a28b4382aa0a82b582dc82b782aa8163",
+      "current_hex": "41646d6972616c2c2049276d206e6f74207375726520746865736520737570706c6965732077696c6c20626520656e6f7567682e2e2e",
+      "staged_hex": "41646d6972616c2c2049276d206e6f74207375726520746865736520737570706c6965732077696c6c20626520656e6f7567682e2e2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 1963,
+        "copy_end": 2018,
+        "bytes": 54,
+        "record_index": 66,
+        "table_offset": 1317220,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_43",
+      "message_ID": 43,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 43",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこの物資じゃちょっと足りないんじゃ\nないの？",
+      "source_meaning": "A casual companion asks whether the supplies are a little short.",
+      "english": "Admiral, aren't we just a bit short on supplies?",
+      "previous_English": "Admiral, aren't we just a bit short on supplies?",
+      "localization_note": "The question and just a bit preserve the informal concern of this voice.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1700,
+        "copy_end": 1748,
+        "bytes": 48,
+        "record_index": 31,
+        "table_offset": 1317222,
+        "start_in_record": 104
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2018,
+        "copy_end": 2067,
+        "bytes": 48,
+        "record_index": 67,
+        "table_offset": 1317222,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2018,
+        "copy_end": 2067,
+        "bytes": 48,
+        "record_index": 67,
+        "table_offset": 1317222,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182cc95a88e9182b682e182bf82e582c182c691ab82e882c882a282f182b682e10a82c882a282cc8148",
+      "current_hex": "41646d6972616c2c206172656e2774207765206a7573742061206269742073686f7274206f6e20737570706c6965733f",
+      "staged_hex": "41646d6972616c2c206172656e2774207765206a7573742061206269742073686f7274206f6e20737570706c6965733f",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2018,
+        "copy_end": 2067,
+        "bytes": 48,
+        "record_index": 67,
+        "table_offset": 1317222,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_44",
+      "message_ID": 44,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 44",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n物資がこれだけではちょっと心配\nですけど…",
+      "source_meaning": "A hesitant polite companion is a little worried about the small quantity of supplies.",
+      "english": "Admiral, I'm a little worried about having so few supplies...",
+      "previous_English": "Admiral, I'm a little worried about having so few supplies...",
+      "localization_note": "The personal worry and trailing pause distinguish this companion's gentler delivery.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1748,
+        "copy_end": 1796,
+        "bytes": 46,
+        "record_index": 31,
+        "table_offset": 1317224,
+        "start_in_record": 152
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2067,
+        "copy_end": 2129,
+        "bytes": 61,
+        "record_index": 68,
+        "table_offset": 1317224,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2067,
+        "copy_end": 2129,
+        "bytes": 61,
+        "record_index": 68,
+        "table_offset": 1317224,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a95a88e9182aa82b182ea82be82af82c582cd82bf82e582c182c69053947a0a82c582b782af82c78163",
+      "current_hex": "41646d6972616c2c2049276d2061206c6974746c6520776f72726965642061626f757420686176696e6720736f2066657720737570706c6965732e2e2e",
+      "staged_hex": "41646d6972616c2c2049276d2061206c6974746c6520776f72726965642061626f757420686176696e6720736f2066657720737570706c6965732e2e2e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2067,
+        "copy_end": 2129,
+        "bytes": 61,
+        "record_index": 68,
+        "table_offset": 1317224,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_45",
+      "message_ID": 45,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 45",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\nこれだけの物資じゃちょっと足りなく\nないか？",
+      "source_meaning": "Another casual companion asks whether the supplies are a little short.",
+      "english": "Admiral, aren't we a little short on supplies?",
+      "previous_English": "Admiral, aren't we a little short on supplies?",
+      "localization_note": "The companion asks a short direct question and keeps the original degree of shortage.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1796,
+        "copy_end": 1844,
+        "bytes": 48,
+        "record_index": 32,
+        "table_offset": 1317226,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2129,
+        "copy_end": 2176,
+        "bytes": 46,
+        "record_index": 69,
+        "table_offset": 1317226,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2129,
+        "copy_end": 2176,
+        "bytes": 46,
+        "record_index": 69,
+        "table_offset": 1317226,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a82b182ea82be82af82cc95a88e9182b682e182bf82e582c182c691ab82e882c882ad0a82c882a282a98148",
+      "current_hex": "41646d6972616c2c206172656e27742077652061206c6974746c652073686f7274206f6e20737570706c6965733f",
+      "staged_hex": "41646d6972616c2c206172656e27742077652061206c6974746c652073686f7274206f6e20737570706c6965733f",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2129,
+        "copy_end": 2176,
+        "bytes": 46,
+        "record_index": 69,
+        "table_offset": 1317226,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_46",
+      "message_ID": 46,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 46",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "提督\n物資が少なすぎぬか？",
+      "source_meaning": "An older direct companion asks whether they are taking too few supplies.",
+      "english": "Admiral, are our supplies too low?",
+      "previous_English": "Admiral, aren't we taking too few supplies?",
+      "localization_note": "The direct question fits the older companion and keeps the complete concern together.",
+      "decision": "revision",
+      "source_reference": {
+        "block": 0,
+        "offset": 1844,
+        "copy_end": 1872,
+        "bytes": 25,
+        "record_index": 32,
+        "table_offset": 1317228,
+        "start_in_record": 49
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2176,
+        "copy_end": 2220,
+        "bytes": 43,
+        "record_index": 70,
+        "table_offset": 1317228,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2176,
+        "copy_end": 2220,
+        "bytes": 43,
+        "record_index": 70,
+        "table_offset": 1317228,
+        "start_in_record": 0
+      },
+      "source_hex": "92f193c20a95a88e9182aa8fad82c882b782ac82ca82a98148",
+      "current_hex": "41646d6972616c2c206172656e27742077652074616b696e6720746f6f2066657720737570706c6965733f",
+      "staged_hex": "41646d6972616c2c20617265206f757220737570706c69657320746f6f206c6f773f202020202020202020",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "native_route": [
+        33897912,
+        34703904,
+        636
+      ],
+      "before_native": {
+        "lines": [
+          "Admiral, aren't we taking too few",
+          "supplies?"
+        ],
+        "formatter_output_hex": "2041646d6972616c2c206172656e27742077652074616b696e6720746f6f206665770a2020737570706c6965733f",
+        "full_native_plane_sha256": "f75b236a87908c83ed6b9b9438082d9fe618f2db724bf12ca12d41c55ccae403",
+        "page_count": 1
+      },
+      "revised_native": {
+        "lines": [
+          "Admiral, are our supplies too low?"
+        ],
+        "formatter_output_hex": "2041646d6972616c2c20617265206f757220737570706c69657320746f6f206c6f773f",
+        "full_native_plane_sha256": "cae9520edc678150cd1d41aa410340e8e0ce4ea3f46318b599def0c253e7fb9c",
+        "page_count": 1
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2176,
+        "copy_end": 2220,
+        "bytes": 43,
+        "record_index": 70,
+        "table_offset": 1317228,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_47",
+      "message_ID": 47,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 47",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "ていとくー\nおいらのごはん、大丈夫？　物資が\nちょっと少なくない？",
+      "source_meaning": "A childish companion asks whether there will be enough food for them and notes that supplies seem low.",
+      "english": "Admiral! Will I have enough to eat? Aren't we a little short on supplies?",
+      "previous_English": "Admiral! Will I have enough to eat? Aren't we a little short on supplies?",
+      "localization_note": "The first question is about the companion's own meals. The second brings the concern back to the fleet.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1872,
+        "copy_end": 1936,
+        "bytes": 64,
+        "record_index": 33,
+        "table_offset": 1317230,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2220,
+        "copy_end": 2294,
+        "bytes": 73,
+        "record_index": 71,
+        "table_offset": 1317230,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2220,
+        "copy_end": 2294,
+        "bytes": 73,
+        "record_index": 71,
+        "table_offset": 1317230,
+        "start_in_record": 0
+      },
+      "source_hex": "82c482a282c682ad815b0a82a882a282e782cc82b282cd82f1814191e58fe495768148814095a88e9182aa0a82bf82e582c182c68fad82c882ad82c882a28148",
+      "current_hex": "41646d6972616c212057696c6c2049206861766520656e6f75676820746f206561743f204172656e27742077652061206c6974746c652073686f7274206f6e20737570706c6965733f",
+      "staged_hex": "41646d6972616c212057696c6c2049206861766520656e6f75676820746f206561743f204172656e27742077652061206c6974746c652073686f7274206f6e20737570706c6965733f",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2220,
+        "copy_end": 2294,
+        "bytes": 73,
+        "record_index": 71,
+        "table_offset": 1317230,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_48",
+      "message_ID": 48,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Companion advisory source voice 48",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "うーむ\n物資の量が少ないようですな",
+      "source_meaning": "A mature polite companion reflects that the quantity of supplies seems low.",
+      "english": "Hmm... We seem to be short on supplies.",
+      "previous_English": "Hmm... We seem to be short on supplies.",
+      "localization_note": "The reflective opening and tentative wording fit the last alternative.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1936,
+        "copy_end": 1972,
+        "bytes": 33,
+        "record_index": 33,
+        "table_offset": 1317232,
+        "start_in_record": 66
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2294,
+        "copy_end": 2334,
+        "bytes": 39,
+        "record_index": 72,
+        "table_offset": 1317232,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2294,
+        "copy_end": 2334,
+        "bytes": 39,
+        "record_index": 72,
+        "table_offset": 1317232,
+        "start_in_record": 0
+      },
+      "source_hex": "82a4815b82de0a95a88e9182cc97ca82aa8fad82c882a282e682a482c582b782c8",
+      "current_hex": "486d6d2e2e2e205765207365656d20746f2062652073686f7274206f6e20737570706c6965732e",
+      "staged_hex": "486d6d2e2e2e205765207365656d20746f2062652073686f7274206f6e20737570706c6965732e",
+      "original_substitutions": 0,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2294,
+        "copy_end": 2334,
+        "bytes": 39,
+        "record_index": 72,
+        "table_offset": 1317232,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    },
+    {
+      "id": "COMMON_MESSAGE_49",
+      "message_ID": 49,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port service attendant",
+      "context": "Port departure checks. The Port Worker warns about crew levels, then different companion voices warn about repairs or supplies. The Port Worker offers resupply.",
+      "clean_Japanese": "金貨%s枚で\n補給するかい？",
+      "source_meaning": "The port attendant asks whether the player wants to resupply for the stated amount of gold currency.",
+      "english": "Want to resupply for %s gold?",
+      "previous_English": "Want to resupply for %s gold?",
+      "localization_note": "The worker's short price question follows the crew's warning and keeps the gold amount dynamic.",
+      "decision": "retention",
+      "source_reference": {
+        "block": 0,
+        "offset": 1972,
+        "copy_end": 2000,
+        "bytes": 25,
+        "record_index": 34,
+        "table_offset": 1317234,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2334,
+        "copy_end": 2364,
+        "bytes": 29,
+        "record_index": 73,
+        "table_offset": 1317234,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2334,
+        "copy_end": 2364,
+        "bytes": 29,
+        "record_index": 73,
+        "table_offset": 1317234,
+        "start_in_record": 0
+      },
+      "source_hex": "8be089dd2573968782c50a95e28b8b82b782e982a982a28148",
+      "current_hex": "57616e7420746f207265737570706c7920666f7220257320676f6c643f",
+      "staged_hex": "57616e7420746f207265737570706c7920666f7220257320676f6c643f",
+      "original_substitutions": 1,
+      "review": {
+        "context": true,
+        "naturalness": true,
+        "localization": true,
+        "formatting": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 0,
+        "offset": 2334,
+        "copy_end": 2364,
+        "bytes": 29,
+        "record_index": 73,
+        "table_offset": 1317234,
+        "start_in_record": 0,
+        "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63"
+      },
+      "emulator_shortage_replay_observed": false
+    }
+  ],
+  "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "new_contextual_credit": 0,
+  "shared_storage_scope": {
+    "pending_records": 276,
+    "exact_payloads_and_locations": true,
+    "evidence_sha256": "153e37be4b02932f02edd037aac2fc52407848a7b30eae8800e664be72a0d4b9"
+  },
+  "direct_visual_review": {
+    "work\\departure_warnings_20261119\\staged_v3\\departure_pages.png": "1bfc5e4ab844615a313c0476ec09356938dd50a8ed1aaeeb9b700fa200cd2d35",
+    "work\\departure_warnings_20261119\\staged_v3\\lisbon_departure_warning_and_return.png": "8a903e89811b437836cbafc2b20355470996920a5eb14ba22c1216c0498af4ea"
+  },
+  "observed_gameplay": {
+    "candidate_sha256": "eba5fd4247578f9719e4180eb5505404c5ceb60ae4273dc1da522e48c7d24a63",
+    "normal_return_frame": 5200,
+    "complete_revised_holds": [
+      {
+        "frame": 4100,
+        "lines": [
+          {
+            "text": "You need more sailors on one ship.",
+            "origin": [
+              22,
+              297
+            ],
+            "complete_glyph_pixels": 329
+          },
+          {
+            "text": "Check fleet setup before you sail.",
+            "origin": [
+              22,
+              313
+            ],
+            "complete_glyph_pixels": 344
+          }
+        ]
+      },
+      {
+        "frame": 4300,
+        "lines": [
+          {
+            "text": "You need more sailors on one ship.",
+            "origin": [
+              22,
+              297
+            ],
+            "complete_glyph_pixels": 329
+          },
+          {
+            "text": "Check fleet setup before you sail.",
+            "origin": [
+              22,
+              313
+            ],
+            "complete_glyph_pixels": 344
+          }
+        ]
+      }
+    ],
+    "fixture": {
+      "ship": 36544148,
+      "before_count": 39,
+      "after_count": 38,
+      "minimum_required": 39,
+      "changes": [
+        {
+          "address": 36544216,
+          "before": 39,
+          "after": 38
+        }
+      ],
+      "original_native_selector_unchanged": true,
+      "all_other_RAM_bytes_exact": true,
+      "before_RAM_sha256": "29f59f6a0fd84ae4bb96f79df7150269b2c915a16d8605776c654b3d5634de65",
+      "after_RAM_sha256": "c545fda41816f05f4acc3f708702dcf1966204f1153f3f75fe451dc48f864e36",
+      "frame": 3200
+    },
+    "ordinary_input_after_one_byte_crew_fixture": true,
+    "natural_activation": false,
+    "hardware": false,
+    "sheets": [
+      {
+        "path": "work\\departure_warnings_20261119\\staged_v3\\lisbon_departure_warning_and_return.png",
+        "sha256": "8a903e89811b437836cbafc2b20355470996920a5eb14ba22c1216c0498af4ea"
+      }
+    ],
+    "evidence": {
+      "work\\departure_warnings_20261119\\staged_v3\\lisbon_short_crew_v2\\capture_report.json": "0f632aad5f942f39e1ad1d381af7dcd6fe7828d27d03b30111976a50bd9a0d2b",
+      "work\\departure_warnings_20261119\\staged_v3\\lisbon_short_crew_v2\\navigation_command_journal.json": "533c57aec98cf78b5bcaede08e3e9625e640bd3633668d2b5e051cdba2e63f0e",
+      "work\\departure_warnings_20261119\\staged_v3\\lisbon_departure_warning_and_return.png": "8a903e89811b437836cbafc2b20355470996920a5eb14ba22c1216c0498af4ea"
+    },
+    "exact_port_menu_before_and_after": {
+      "3700": {
+        "frame": 3700,
+        "path": "work\\departure_warnings_20261119\\staged_v3\\lisbon_short_crew_v2\\frame_003700_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d9e5b1f1e1bf5cf8b1cb8938419d8228064c0a3aaac2f969ae3b79bb7ba343b8",
+        "framebuffer_sha256": "661d9bb86fdab0b48c3c8a88462b583317468f32ade858d4185b737abf140943"
+      },
+      "5200": {
+        "frame": 5200,
+        "path": "work\\departure_warnings_20261119\\staged_v3\\lisbon_short_crew_v2\\frame_005200_final.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d9e5b1f1e1bf5cf8b1cb8938419d8228064c0a3aaac2f969ae3b79bb7ba343b8",
+        "framebuffer_sha256": "661d9bb86fdab0b48c3c8a88462b583317468f32ade858d4185b737abf140943"
+      }
+    }
+  },
+  "source_and_native_dependency_proofs": {
+    "releases\\all_routes_editorial_20261119_square_label_wording_candidate_v2\\verification\\registered_release_verification.json": "060768ab6c95e30e8cff02c43a50546c401b7394e9447fbf092b1a08a7efc476",
+    "translations\\primary_town_services_contextual_final_review_v1.json": "4e6c93672c3e0c25d951a65e173b3da9aa427d340871713be8da6541e0b3757c",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\shared_display_owners_20261119_v1.json": "10ec4ae8f4936b4de5c618687b0fedec674a40e6351b481883bbb5064d05ebfa",
+    "work\\analysis\\town_services_callers_v2068\\nine_source_table_caller_parent_contracts.json": "e6192ff8672e2f175e3087db21e893c9f693b6b1401c33b62aa493bffaafb25d",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\stage_departure_warnings_20261119.py": "b70002b942053a1be7aefcc15b538179fa4986190ee3938d7383e9f81f82ae71"
+  }
+}

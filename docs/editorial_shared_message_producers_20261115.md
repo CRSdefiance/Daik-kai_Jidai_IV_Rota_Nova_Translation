@@ -1,0 +1,9 @@
+# Shared message producers and forwarding sites
+
+The original Market code from `020BA2C8` through `020BC270` now has a result for every site in the historical caller inventory. The last five stock sites select COMMON 767–770. The contract site selects 761 with the Palace or Governor's Office argument. The supplied stock and contract states exercised the original selectors offline. The stored restart and irritation replies at COMMON 750–752 still need a display caller. [Market and combat receipt](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_message_producers_20261115_v1.json)
+
+The two early combat dialogue helpers now have all 15 direct producers mapped. Nine supply known special-action IDs and six supply tables for the original eight voices. The clean and current tests agree on all 40 table-and-voice cases and all 15 direct message IDs. The same receipt reuses the exact commodity help, shared switch and Continue dependencies. Continue's previously verified path fetches COMMON 111 and returns its string to a no-op.
+
+Five crew selector sites have their original mood, voice and route cases bound. Thirteen other sites forward an incoming message ID or a table-selected ID. Both ROMs passed 48 forwarding checks with supplied arguments and a stop before the actual text fetch. The callers supplying those arguments remain relevant to the broader investigation. [Crew and forwarding receipt](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_crew_and_wrapper_routes_20261115_v1.json)
+
+Nineteen more sites are resolved or rebound from existing evidence. Of the 55 sites still open in the historical list, 42 may originate a message ID and 13 forward it. The ledger records 27,700 credited reviews and 276 stored keys awaiting a decision on other possible callers. The [Market Trade candidate and clean-input patch](../releases/all_routes_editorial_20261115_market_trade_dialogue_candidate/README.md) remain current.

@@ -1,0 +1,7 @@
+# Town Summary headings
+
+Town Summary now shows Status in full. The source describes the settlement's condition above values such as Normal and Boom. Type, Growth and Arms retain their wording and screen positions. The four text records use one original 20-byte string. The revised atlas layout keeps all 16 active regions within 228 by 72 pixels with no overlaps. [Exact references and editorial decisions](../releases/all_routes_editorial_20261119_town_summary_candidate/verification/registered_review.json)
+
+Paired ordinary Lisbon replays from an existing battery save verified complete glyphs for all four headings in five gameplay frames. Every sampled pixel outside the Status heading matched the predecessor. The shared Town Summary layout seen in the Amsterdam report uses this same original reader. The corrected replay visited Lisbon. [Gameplay comparison and checks](../releases/all_routes_editorial_20261119_town_summary_candidate/verification/town_summary_comparison.png)
+
+The candidate preserves the registered ASCII right bound, the earlier Trade fixes and all 276 open shared entries. The clean-input patch reconstructs it byte for byte. Five startup frames matched exactly. The sixth matched outside the corrected Status heading. All 24 protected getters and 49 focused tests passed. Two tests that require optional historical ROM fixtures skipped. [Candidate and patch](../releases/all_routes_editorial_20261119_town_summary_candidate/README.md)

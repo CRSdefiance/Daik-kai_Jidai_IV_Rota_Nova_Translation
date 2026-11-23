@@ -1,0 +1,1737 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_301",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 301,
+      "speaker": "System",
+      "source_reference": {
+        "block": 4,
+        "offset": 2700,
+        "copy_end": 2732,
+        "bytes": 29,
+        "record_index": 34,
+        "table_offset": 1317738,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 2715,
+        "copy_end": 2759,
+        "bytes": 42,
+        "record_index": 69,
+        "table_offset": 1317738,
+        "start_in_record": 0
+      },
+      "source_hex": "9d5c95df82b582bd914482a982e70a8be0257382f093be82dc82b582bd",
+      "current_hex": "596f75207265636f766572656420257320676f6c642066726f6d2063617074757265642073686970732e",
+      "clean_Japanese": "拿捕した船から\n金%sを得ました",
+      "english": "You recovered %s gold from captured ships.",
+      "decision": "wrap_only",
+      "text_display_fix": "ascii_decimal_digits",
+      "context": "The original victory branch combines capture proceeds and passes the native formatted amount before crediting the player.",
+      "source_meaning": "The game reports the amount of money obtained from captured vessels.",
+      "localization_note": "Keep the recovered gold distinct from the later national award. 'Captured ships' identifies the source without specifying a count. Keep “from captured ships” together on the second line.",
+      "original_substitution_count": 1,
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2715,
+        "copy_end": 2759,
+        "bytes": 42,
+        "record_index": 69,
+        "table_offset": 1317738,
+        "start_in_record": 0,
+        "candidate_sha256": "04d953314bf0deaff07f353275707d65a94af84cb0a263d6f2e9cb41f9a98208"
+      },
+      "layout_protected_phrase": "from captured ships."
+    },
+    {
+      "id": "COMMON_MESSAGE_305",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 305,
+      "speaker": "System",
+      "source_reference": {
+        "block": 4,
+        "offset": 2872,
+        "copy_end": 2912,
+        "bytes": 37,
+        "record_index": 38,
+        "table_offset": 1317746,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 2943,
+        "copy_end": 2975,
+        "bytes": 31,
+        "record_index": 76,
+        "table_offset": 1317746,
+        "start_in_record": 0
+      },
+      "source_hex": "8d9189c682a982e782cc95f18f9e8be082c682b582c40a8be0257382f093be82dc82b582bd",
+      "current_hex": "546865206e6174696f6e206177617264656420796f7520257320676f6c642e",
+      "clean_Japanese": "国家からの報償金として\n金%sを得ました",
+      "english": "The nation awarded you %s gold.",
+      "decision": "wrap_only",
+      "text_display_fix": "ascii_decimal_digits",
+      "context": "The original victory accounting selects this separate reward after computing the amount. It is distinct from the money recovered from ships.",
+      "source_meaning": "The player received the named monetary amount as a national reward.",
+      "localization_note": "Keep the nation as the source of this separate award and use the same gold term as the capture notice. Keep the amount with “gold” whenever the notice needs two lines.",
+      "original_substitution_count": 1,
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      },
+      "registered_reference": {
+        "block": 4,
+        "offset": 2943,
+        "copy_end": 2975,
+        "bytes": 31,
+        "record_index": 76,
+        "table_offset": 1317746,
+        "start_in_record": 0,
+        "candidate_sha256": "04d953314bf0deaff07f353275707d65a94af84cb0a263d6f2e9cb41f9a98208"
+      },
+      "layout_protected_phrase": "decimal amount + gold."
+    }
+  ],
+  "candidate_sha256": "1eb6f499b8c414c95b18d2d035efbd2db7f6ac0c1789e7452815c0ebfe570307",
+  "parent_sha256": "04d953314bf0deaff07f353275707d65a94af84cb0a263d6f2e9cb41f9a98208",
+  "target_ARM9_sha256": "1afb2c7059e3de50463b79b24d8e6c4be1117b78611d105487c101897efcb1fa",
+  "target_COMMON_sha256": "3071f27630989ab4ee365d2bd541b1920e53254280df0bb1b2e8a868d8ea077a",
+  "exact_parent_inverse": true,
+  "runtime": {
+    "hook": 33540332,
+    "previous_dispatch": 33545152,
+    "selector": 33536752,
+    "end": 33537264,
+    "original_notice_parent": 33900264,
+    "scoped_message_IDs": [
+      301,
+      305
+    ],
+    "complete_ARM9_inverse": true
+  },
+  "native_display_cases": [
+    {
+      "message_ID": 301,
+      "arguments": [
+        "1"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203120676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203120676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 1 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        20,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203120676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 1 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "32da2bfc74c64588a6cf326158db61b285d436c9d27e878d8c2506404e6bb0b8"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "9"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 9 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        20,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203920676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 9 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "f5e283e6b2f383d474c982b8338d3f54cd8714308792c9bc866ef08d829ce38d"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "10"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420313020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420313020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 10 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        21,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420313020676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 10 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "72c220469df6ef5292560a39462fe08f1865a75d45baf5ce016c9174e17dae29"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "99"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 99 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        21,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420393920676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 99 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "f0fd7c68455d9796497e9de51199a956c56cf086afbdca0b0b2f7af2034a7404"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "100"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642031303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642031303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 100 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        22,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642031303020676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 100 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "c803741bbddaa95d985e2fe1c2d702ce8c839403b4e04505f21a1b67ee45d5ab"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642039393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642039393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        22,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642039393920676f6c642066726f6d2063617074757265640a202073686970732e",
+      "lines": [
+        "You recovered 999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "7c6f18da91a933ce42a1d8234be8d64708c28781554279d386f03f888f01c0e4"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "1000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203130303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203130303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 1000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        23,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203130303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 1000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "11791d183174518dd2265130f2b3bee7a52deb8660d760eb834816223f4e8b47"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "9999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 9999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        23,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 9999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "f133af92ea0440775ac02c3462d9315bb1d6f04ad13345e1b046fe5efe1489be"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "10000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420313030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420313030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 10000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        24,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420313030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 10000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "af9596508f1b859991bb59b8d46c67d4c88c7d7a0a1e49b60358e344adac3be1"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "99999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420393939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420393939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 99999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        24,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420393939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 99999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "e744e67fbfaa080dffe7b913a87153dbf8faeff4fd988f94d0242e1aaac149bb"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "100000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642031303030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642031303030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 100000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        25,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642031303030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 100000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "848418a75716d0b4add7e7ac43ffb7753ee6f8853d38d97057bbf8fef0cea81c"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642039393939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642039393939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 999999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        25,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642039393939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 999999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "4b265898a2cb5ba4d3a2bbaf57852ec26851ef833af278cb3296408ec7827570"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "1000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203130303030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203130303030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 1000000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        26,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203130303030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 1000000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "25852a1a02359d9a82bffcd6d020b0b9a7f0e1bc549ff9875b14cacb6e3ad446"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "9999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203939393939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203939393939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 9999999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        26,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203939393939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 9999999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "701407d3c980ecb072945c40e9ba1127e551b0530001f54613f3422d2a117117"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "10000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420313030303030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420313030303030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 10000000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        27,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420313030303030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 10000000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "ad5aae30d443ef0dfe2cf10c006f39187eee73c12f9069240afa8a54152bf98c"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "99999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f766572656420393939393939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f766572656420393939393939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 99999999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        27,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f766572656420393939393939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 99999999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "b9c3620423e8742d0e430139da2b2ec5748a9de494cd23c6d0520b31e3b5b34f"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "100000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642031303030303030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642031303030303030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 100000000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        28,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642031303030303030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 100000000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "8420d7e8d9143a62f9aa82829807003879ad729454bfe3af2a382cd7582ab414"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "999999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642039393939393939393920676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642039393939393939393920676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 999999999 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        28,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642039393939393939393920676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 999999999 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "13e368c4e821ec403da6120fecd9595eb91e1b03db0d5fc579599ef94c782867"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "6055"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203630353520676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203630353520676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 6055 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        23,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203630353520676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 6055 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "62f0f7754db9ddd975563794f3a14bc288aa412620b060fa1ac8cde0fc081ac5"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "214748364"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f76657265642032313437343833363420676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f76657265642032313437343833363420676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 214748364 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        28,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f76657265642032313437343833363420676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 214748364 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "743918607ef33104e6f38fd2c08c8b95cc5726ed7256b965d312e45c1f429b81"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "1000000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203130303030303030303020676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203130303030303030303020676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 1000000000 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        29,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203130303030303030303020676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 1000000000 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "6b64540439ff1d0c9f043056ad3b2270f6451822b75ef90b75bffc5010e29aa8"
+    },
+    {
+      "message_ID": 301,
+      "arguments": [
+        "2147483647"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "596f75207265636f7665726564203231343734383336343720676f6c642066726f6d2063617074757265642073686970732e",
+      "native_wrapper_output_hex": "596f75207265636f7665726564203231343734383336343720676f6c640a202066726f6d2063617074757265642073686970732e",
+      "native_wrapper_lines": [
+        "You recovered 2147483647 gold",
+        "  from captured ships."
+      ],
+      "native_width_units": [
+        29,
+        22
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "596f75207265636f7665726564203231343734383336343720676f6c642066726f6d0a202063617074757265642073686970732e",
+      "lines": [
+        "You recovered 2147483647 gold",
+        "from captured ships."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "1e1eb080ab9335b55281de9c1c63c5d8b753b3d71228887f37fba56a754e14f2"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "1"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203120676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203120676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 1 gold."
+      ],
+      "native_width_units": [
+        30
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203120676f6c642e",
+      "lines": [
+        "The nation awarded you 1 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "9f74bfeb855925e1aa4185b5c5e82898f24d67ee482468eeb68222948009bd59"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "9"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 9 gold."
+      ],
+      "native_width_units": [
+        30
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203920676f6c642e",
+      "lines": [
+        "The nation awarded you 9 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "5f213ac223f8bba4fb8ade6da4114374c8c123b8d53b5561b930b6193e592a00"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "10"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520313020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f7520313020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 10 gold."
+      ],
+      "native_width_units": [
+        31
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520313020676f6c642e",
+      "lines": [
+        "The nation awarded you 10 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "f428ce815499cb88c4fa2ee2e877d2229b6235a77b33ccdf77c08105fe437216"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "99"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f7520393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 99 gold."
+      ],
+      "native_width_units": [
+        31
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520393920676f6c642e",
+      "lines": [
+        "The nation awarded you 99 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "928c068e26bb0bbb5f312a66d2b729c9ade678ef875e6daf056673301d08c19e"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "100"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752031303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f752031303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 100 gold."
+      ],
+      "native_width_units": [
+        32
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752031303020676f6c642e",
+      "lines": [
+        "The nation awarded you 100 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "e2ccd6a9ded430ef5457c8b209e799fea0381372f8b3ddcea63e7b7d5725a730"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752039393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f752039393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 999 gold."
+      ],
+      "native_width_units": [
+        32
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752039393920676f6c642e",
+      "lines": [
+        "The nation awarded you 999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "8178d263acc67715323d3516587a8159413b7379ee55e441ffdfba6416922cf6"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "1000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203130303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203130303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 1000 gold."
+      ],
+      "native_width_units": [
+        33
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203130303020676f6c642e",
+      "lines": [
+        "The nation awarded you 1000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "b41d929e1fe807e783aeb46f1a24f49a8cd949adf6ffd356749c54f12d56506a"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "9999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 9999 gold."
+      ],
+      "native_width_units": [
+        33
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203939393920676f6c642e",
+      "lines": [
+        "The nation awarded you 9999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "6c5368681481f599cb309f3dc0ac80be9ce3eb6e5e06184e0e8574cfefb18f7f"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "10000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520313030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f7520313030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 10000 gold."
+      ],
+      "native_width_units": [
+        34
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520313030303020676f6c642e",
+      "lines": [
+        "The nation awarded you 10000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "9deed6a9fb62f46a29baf69362f773a539c188448861fed82cb30d501b4faf88"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "99999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520393939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f7520393939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 99999 gold."
+      ],
+      "native_width_units": [
+        34
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520393939393920676f6c642e",
+      "lines": [
+        "The nation awarded you 99999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "58aa73467808e6e6e07fecd3bb76b4676f0116522636636d1a1827561b90b4d1"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "100000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752031303030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f752031303030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 100000 gold."
+      ],
+      "native_width_units": [
+        35
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752031303030303020676f6c642e",
+      "lines": [
+        "The nation awarded you 100000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "9b07b0c6711fc5e6c687ad18379e2f7d798e147d90c468143066474a7441f207"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752039393939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f752039393939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 999999 gold."
+      ],
+      "native_width_units": [
+        35
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752039393939393920676f6c642e",
+      "lines": [
+        "The nation awarded you 999999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "9d05f17594abdb10005c7a49cc095bb9624b8db411fc510e46f03249f0f218c3"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "1000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203130303030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203130303030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 1000000 gold."
+      ],
+      "native_width_units": [
+        36
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [
+        1
+      ],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203130303030303020676f6c642e",
+      "lines": [
+        "The nation awarded you 1000000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "2ce9ef8c1e25873ebf3c8daee97fdf71cec45d628de5d4ad80b6027bb53c2e38"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "9999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203939393939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203939393939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 9999999 gold."
+      ],
+      "native_width_units": [
+        36
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [
+        1
+      ],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203939393939393920676f6c642e",
+      "lines": [
+        "The nation awarded you 9999999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "8d951ab373d0380cc6f26cb57c4df1a140b9faa932cf96e3209ba4bb17438b08"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "10000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520313030303030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a2020313030303030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  10000000 gold."
+      ],
+      "native_width_units": [
+        22,
+        16
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752031303030303030300a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "10000000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "49c342372dc378e95ebf1136c9bab3d8db61f41d779b3ffcf52d3f290abbda74"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "99999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f7520393939393939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a2020393939393939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  99999999 gold."
+      ],
+      "native_width_units": [
+        22,
+        16
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f752039393939393939390a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "99999999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "b72851b1103a85a764803eb25b70e6d2dc0334395abc46444c8e14f9fb2edf24"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "100000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752031303030303030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a202031303030303030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  100000000 gold."
+      ],
+      "native_width_units": [
+        22,
+        17
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203130303030303030300a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "100000000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "8d5edc46e28addacc09524343f605a50f0a78bc702a16dd488059ecef5df50b0"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "999999999"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752039393939393939393920676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a202039393939393939393920676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  999999999 gold."
+      ],
+      "native_width_units": [
+        22,
+        17
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203939393939393939390a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "999999999 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "58bd5331f8740c3388c4028322cc04bed31181ac78932718c04c3a2460a7c948"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "6055"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203630353520676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f75203630353520676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you 6055 gold."
+      ],
+      "native_width_units": [
+        33
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203630353520676f6c642e",
+      "lines": [
+        "The nation awarded you 6055 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "5b970f8567ca678d4776952d56523f0f55555b6ec32302d4b65a5770f7555e31"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "214748364"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f752032313437343833363420676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a202032313437343833363420676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  214748364 gold."
+      ],
+      "native_width_units": [
+        22,
+        17
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f75203231343734383336340a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "214748364 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "710985907bc4d4255f1ada06cc01813b6fb377c53655d23da8c68edaa45149ad"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "1000000000"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203130303030303030303020676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a20203130303030303030303020676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  1000000000 gold."
+      ],
+      "native_width_units": [
+        22,
+        18
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520313030303030303030300a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "1000000000 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "66611351a95bfe74d87d3d5fc5c633701fea9ed27fcc423138351a0b10be2367"
+    },
+    {
+      "message_ID": 305,
+      "arguments": [
+        "2147483647"
+      ],
+      "source_wrapper": 33900216,
+      "original_template_pointer": 36243212,
+      "native_varargs_vector": 41877492,
+      "original_varargs_pointers": [
+        40239872
+      ],
+      "expanded_hex": "546865206e6174696f6e206177617264656420796f75203231343734383336343720676f6c642e",
+      "native_wrapper_output_hex": "546865206e6174696f6e206177617264656420796f750a20203231343734383336343720676f6c642e",
+      "native_wrapper_lines": [
+        "The nation awarded you",
+        "  2147483647 gold."
+      ],
+      "native_width_units": [
+        22,
+        18
+      ],
+      "lines_over_existing_35_unit_wrap_budget": [],
+      "over_three_rows": false,
+      "native_varargs_argument_sequence_and_complete_words_verified": true,
+      "stopped_before_widget_creation": true,
+      "actual_stored_template_pointer_used": true,
+      "before_hex": "546865206e6174696f6e206177617264656420796f7520323134373438333634370a2020676f6c642e",
+      "lines": [
+        "The nation awarded you",
+        "2147483647 gold."
+      ],
+      "pages": 1,
+      "complete_first_and_last_glyphs": true,
+      "ink_sha256": "24e58e53f95d2c4cb2584177bb3204999dcb14ef2d28cd9bd0eb56fc5f105e56"
+    }
+  ],
+  "unchanged_native_controls": [
+    {
+      "message_ID": 288,
+      "arguments": [
+        "105"
+      ],
+      "display_hex": "506f77657220696e63726561736564206279203130352e"
+    },
+    {
+      "message_ID": 292,
+      "arguments": [
+        "Santo Domingo"
+      ],
+      "display_hex": "4974207365656d732070656f706c6520696e2053616e746f20446f6d696e676f2077686f0a2020666f6c6c6f77207472656e6473206172652074616c6b696e672061626f75740a20207468697320646973636f766572792e"
+    },
+    {
+      "message_ID": 297,
+      "arguments": [
+        "Inuvik"
+      ],
+      "display_hex": "446973636f766572656420496e7576696b2e"
+    },
+    {
+      "message_ID": 303,
+      "arguments": [
+        "109",
+        "103"
+      ],
+      "display_hex": "5265636f76657265642066726f6d2063617074757265642073686970733a0a203130392062617272656c73206f6620666f6f640a20616e64203130332062617272656c73206f662077617465722e"
+    },
+    {
+      "message_ID": 311,
+      "arguments": [
+        "400"
+      ],
+      "display_hex": "596f752072656365697665642034303020676f6c642e"
+    },
+    {
+      "message_ID": 348,
+      "arguments": [
+        "25"
+      ],
+      "display_hex": "2052656c6174696f6e7320726f736520627920323520706f696e74732e"
+    },
+    {
+      "message_ID": 349,
+      "arguments": [
+        "Coutinho Co."
+      ],
+      "display_hex": "416e206f6666696369616c206c65747465722066726f6d20436f7574696e686f20436f2e0a202068617320617272697665642e"
+    }
+  ],
+  "font": {
+    "native_raster_sha256": "ad8ec57af672a40f3060be111dcf9d5218ac27163f9734a658c6cedbefcdc072",
+    "independent_font_sha256": "9b2df890c2ca84918ae5dac4244d51106a94fc7bc1e5dc888cf902f1ecc3d489",
+    "ink_glyph_height": 12,
+    "native_row_step": 16,
+    "paper": [
+      228,
+      48
+    ],
+    "screenshot_calibration": "work/analysis/town_services_pixel_anchor_v2101e/original49_exact_native_ink_anchor.json"
+  },
+  "sheets": [
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_01.png",
+      "sha256": "32bbec583e278799d0f2ec6b3a886e72abd4c04ee704c58e63a4e0ab941b166e",
+      "pages": 8
+    },
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_02.png",
+      "sha256": "189d4893c6b1c67496fef59cab5a9aa150047b835b6b3f0f0d41644cc51f46f4",
+      "pages": 8
+    },
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_03.png",
+      "sha256": "7285c42990e46cf8d8b37f3b03749be9204f1f3386695fc87cc3830407b5055a",
+      "pages": 8
+    },
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_04.png",
+      "sha256": "1f20e0fb715175188eaed005ec6c0ed25eecd633cbcefdf8425ddc09fe3c54f2",
+      "pages": 8
+    },
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_05.png",
+      "sha256": "38c20e5299999425ac959e9aa618761db867d9562f0de4aead65d68488ee02eb",
+      "pages": 8
+    },
+    {
+      "path": "work\\victory_reward_wrap_20261121\\stored_panels_06.png",
+      "sha256": "de4a82449135cb0b8fc9d620a1e297b315991ee0ba5fbc0c747aa3916a9c8504",
+      "pages": 4
+    }
+  ],
+  "emulator_and_visual_gate_pending": true,
+  "new_editorial_credit": 0,
+  "source_evidence": {
+    "releases\\all_routes_editorial_20261121_victory_reward_digits_candidate\\verification\\registered_release_verification.json": "0ac130c06afaffe8ebcbe6cfe0e1dbb0cffc55d5d0728c540ce7035c2fdc094c",
+    "releases\\all_routes_editorial_20261121_victory_reward_digits_candidate\\verification\\registered_review.json": "ed233de8906b941715114fea442898a37f884d514ba15ed4fe788fe38fcaa116"
+  }
+}

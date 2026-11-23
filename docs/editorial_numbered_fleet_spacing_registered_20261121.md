@@ -1,0 +1,7 @@
+# Numbered fleet names on the Route Map
+
+The Route Map now displays **Clifford Fleet 2** in the header and **Clifford Fleet 2 + more** on the clustered marker. The original formatter supplied the company and numbered fleet in the right order. A space was added inside its existing eight-byte field. Both substitutions, the native ordinal glyph and the cluster suffix remain exact. [Source and installed references](../releases/all_routes_editorial_20261121_numbered_fleet_spacing_candidate/verification/registered_review.json)
+
+Ordinary play reproduced both labels, and complete glyph masks matched each revised surface. The native getter checked 50 fleets from the original read-only snapshot. Thirty-eight numbered fleet names gained the separator, and the twelve controls kept their exact names. Six startup holds, 24 protected name getters and 17 focused tests passed. [Before and after](../releases/all_routes_editorial_20261121_numbered_fleet_spacing_candidate/verification/fleet_header_and_marker.png) · [Cumulative testing ROM and clean-input patch](../releases/all_routes_editorial_20261121_numbered_fleet_spacing_candidate/README.md)
+
+The next candidate carries this fix forward. Checkpoint cleanup reclaimed 462,260,138 bytes across 129 disposable files and retained the staged ROM, registered ROM, patch, and linked evidence. [Stockholm successor](editorial_stockholm_dialogue_registered_20261121.md) · [Cleanup receipt](../out/numbered_fleet_spacing_registered_20261121/checkpoint_cleanup.json)

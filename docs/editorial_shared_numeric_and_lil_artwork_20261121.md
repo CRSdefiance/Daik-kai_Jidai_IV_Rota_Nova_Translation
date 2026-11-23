@@ -1,0 +1,9 @@
+# Lil and Camille’s title artwork and two shared-text leads
+
+The clean label at COMMON 3456, 走るリルとカミル, describes the title painting of **Lil and Camille Running**. The clean and installed texture 48 in `M28.fls` agree exactly. All 49,152 upper-screen pixels at native color precision match the painting in the current cold boot. The later hold shows both complete names, **Lil Argot** and **Camille Overijssel**, and matches the earlier title review. Retain the English draft and the two approved names. [Title frame](../work/shared_numeric_and_lil_artwork_20261121/title/capture/frame_002683_cold_boot.png)
+
+The title replay made zero shared-table requests. This associates the stored description with artwork and narrows the unmatched priority list from 35 to 34. The stored label’s other possible display callers remain open. [Exact source and installed references](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_numeric_and_lil_artwork_20261121_v1.json)
+
+Paired offline execution identifies two apparent COMMON 284 references as village descriptor values. The original initializer scales both values by 16 and writes them into the Inuvik and Santa Barbara models. Three apparent COMMON 304 references write the value directly to the graphics register at `04000470`. The receipt records their exact addresses and four other unclassified data-word matches. Display ownership for the archived debt and allied-city text remains open.
+
+The testing build remains the registered World Map candidate, with all 276 stored references still tracked. Checkpoint cleanup removed four exploratory texture previews totaling 580,839 bytes. [Candidate and patch](editorial_map_cluster_suffix_registered_20261121.md) · [Local cleanup receipt](../work/shared_numeric_and_lil_artwork_20261121/checkpoint_cleanup.json)

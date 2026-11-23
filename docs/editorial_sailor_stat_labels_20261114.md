@@ -36,6 +36,30 @@ The [Square Samples Wraps candidate](../releases/all_routes_editorial_20261115_s
 
 The [All Routes Crew Review candidate](editorial_promotion_candidate_20261115_crew_review.md) repeats the two cold-boot replays on the exact test ROM. All 36 stat plaque checks, 120 skill rows, six held title masks, 34 title transition samples and both Deck return comments pass. The Normal run used ordinary inputs. The Excited run used the same inputs and set Fernando’s original mood byte just before opening Sailor Info. The title overlap from the photo remains unconfirmed on hardware. [Frame comparison](../releases/all_routes_editorial_20261115_barmaid_town_labels_candidate/verification/fernando_deck_replay.png)
 
+## Follow-up on the reported deck position
+
+The November 6 Rafael 2952 candidate named in the earlier Trade report still contains the original English plaque asset and none of the 29 corrected ARM9 words. The [November 15 London and Stockholm candidate](editorial_london_stockholm_dialogue_20261115.md) contains the corrected plaque asset and all 29 words. Its stat-label draw, selection and restore routines, stat tables and relevant glyph masks also match the replayed Crew Review candidate. This comparison was offline. The ROM used for the deck photo remains unconfirmed.
+
+The promoted November 13 Wrap Review ROM also contains the original plaque asset and none of the 29 repair words. An offline comparison on the exact registered [Special Target Labels candidate](editorial_special_target_labels_20261115.md) matched the Crew Review candidate across all 29 repair words, the corrected plaque asset, seven stat display code and data ranges, and the relevant stat and title glyph masks. The Crew Review replay remains the gameplay evidence for Fernando's Deck assignment. Hardware confirmation of the photographed title overlap is open.
+
+The [Seoul Recruitment candidate](editorial_seoul_recruitment_20261115.md) contains the corrected plaques and all 29 repair words. A fresh Lil New Game replay assigned Fernando to the mast and opened Sailor Info three times, including a close and reopen 30 frames apart. All 66 plaque comparisons, 11 held title masks and 120 transition frames passed. The selected stats drew once, unselected plaques cleared, and all six labels returned on reopening or selecting equipment. This was ordinary emulator gameplay with Fernando in a Normal mood. The title overlap in photo 2840.jpg did not reproduce, and the filename of the photographed ROM remains unconfirmed. [Replay receipt](../translations/editorial_checkpoints/SharedText_20261110_v1/fernando_deck_reopen_20261115_v1.json) · [Frame comparison](../work/fernando_deck_reopen_20261115_v1/fernando_deck_reopen.png)
+
+## Fleet Sighting Alerts candidate recheck
+
+The exact [Fleet Sighting Alerts candidate](editorial_fleet_sighting_alerts_20261115.md) passed two cold boots from Lil’s New Game through Fernando’s mast assignment. The Normal run used controller inputs. The Excited run set his original mood byte before opening Sailor Info. All 36 stat plaque masks, 120 skill rows, six held title masks and 34 sampled opening-title frames passed. Sailing, Command, Survey and Vigor each displayed the original pair of complete labels. Moving to equipment restored all six. The title overlap visible in photo 2840.jpg still needs hardware confirmation. [Replay receipt](../translations/editorial_checkpoints/SharedText_20261110_v1/fernando_deck_fleet_candidate_20261115_v1.json) · [Frame comparison](../work/fleet_sighting_fernando_deck_20261115_v1/fernando_normal_excited_comparison.png)
+
+An offline comparison verified all three ROM hashes. The Fleet Sighting Alerts and Crew Review candidates contain the corrected plaque asset and all 29 ARM9 words, with identical glyph masks for the affected labels and title. The promoted November 13 Wrap Review ROM contains the original plaques and zero repair words.
+
+The exact [Setup Confirmation candidate](editorial_setup_confirmation_prose_20261115.md) retains the corrected plaque asset and all 29 repair words. Seven stat drawing, selection, restoration and data ranges and all 29 distinct glyphs used in the stat names, title, role and Fernando’s name match the Crew Review ROM offline. The Crew Review replays supply the gameplay evidence. The photographed Sailor Info title overlap still needs hardware confirmation.
+
+## Market Trade Dialogue candidate
+
+The [Market Trade Dialogue candidate](../releases/all_routes_editorial_20261115_market_trade_dialogue_candidate/README.md) contains the same corrected plaques, all 29 repair words, the same seven display ranges and all 29 matching glyphs verified above against Crew Review. The currently promoted Wrap Review ROM retains the old plaques and original word values. Both ROM hashes were verified offline. For hardware follow-up on the title, use the exact Market Trade Dialogue ROM or the replayed Crew Review ROM and open Fernando’s Sailor Info from his mast assignment. Check the title both on entry and while selecting a skill. [Crew Review replay](../releases/all_routes_editorial_20261115_barmaid_town_labels_candidate/verification/fernando_deck_replay.png)
+
+## Trade and Armed Ship Labels candidate
+
+The [Trade and Armed Ship Labels candidate](editorial_trade_and_armed_ship_labels_20261115.md) matches the replayed Crew Review ROM for the corrected plaque asset, all 29 ARM9 repair words, seven stat-display ranges and 29 glyphs used in the stat names, title, role and Fernando’s name. This is an offline comparison of both exact registered ROMs. The promoted November 13 Wrap Review ROM has the original plaque asset and none of the 29 repair words. Use a fixed candidate for the photographed hardware path. The Sailor Info title overlap still needs confirmation on a known build.
+
 ## Release scope
 
 The ROM changes are confined to ARM9 and the six plaque interiors. The clean-input patch reconstructs the exact candidate. There is no additional dialogue credit. The registration checkpoint then had 279 shared keys and 808 unadjudicated wrap leads. The separate wider artwork audit remains open.

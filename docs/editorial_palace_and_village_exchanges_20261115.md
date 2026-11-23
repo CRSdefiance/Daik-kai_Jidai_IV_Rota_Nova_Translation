@@ -1,0 +1,9 @@
+# Palace and village exchanges
+
+The review covers 20 blocks and 441 previously credited speeches from the clean Japanese. It preserves each captain's palace departure and the grandfather's urgent plea, relief and gratitude. The lamp scene keeps the village's account in the villager's voice and gives the entrusted lamp its own beat. The dagger scene preserves the discoverers' right to the blade, the speaker's gratitude and the 24,000-gold notice. The three earlier-route copies of the bandit block remain byte-identical. [Exact record ledger](../releases/all_routes_editorial_20261115_palace_and_village_exchanges_candidate/verification/registered_review.json)
+
+The batch has 18 wording revisions, 6 wrap-only fixes and 417 justified retentions. All 32 revised display previews were visually reviewed. Xien's question preserves the native first-name substitution. Default and 1-, 2-, 15- and 16-character cases passed the parser, full glyph and bounds checks. The edited multi-page speeches advance at complete sentences.
+
+Initialized Maria replays displayed all 15 speech pages in the lamp and dagger exchanges, including the lamp's page turn, the original gold notice and the return. Other copies and the custom-name cases were checked offline. Natural scene activation and hardware remain unvisited. [Lamp replay](../releases/all_routes_editorial_20261115_palace_and_village_exchanges_candidate/verification/faith_live_2.png) · [Dagger gold notice](../releases/all_routes_editorial_20261115_palace_and_village_exchanges_candidate/verification/dagger_gold_notice.png)
+
+The [registered ROM and clean-input patch](../releases/all_routes_editorial_20261115_palace_and_village_exchanges_candidate/README.md) preserve all 114 accepted layers and the existing ASCII right bound, Market and Sailor Info fixes. The patch reconstructs the exact ROM. Six startup frames, 24 protected name getters and 32 targeted tests passed. Existing editorial credit stays at 27,700.

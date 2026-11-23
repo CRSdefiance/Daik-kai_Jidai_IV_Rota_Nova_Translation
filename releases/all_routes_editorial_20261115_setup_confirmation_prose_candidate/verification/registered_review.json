@@ -1,0 +1,831 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "62d6bac994c02d67d4ac45d72983a1cf64439734cddaf5fbf659a81273768a96",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_112",
+      "message_ID": 112,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "The absence notice can precede the generic load failure.",
+      "source_meaning": "System data is absent.",
+      "localization_note": "System data not found is concise and distinguishes an absent file from a corrupt one.",
+      "source_Japanese": "システムデータがありません。\n",
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "source_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 431,
+        "bytes": 22,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "current_hex": "53797374656d2064617461206e6f7420666f756e642e",
+      "previous": "System data not found.",
+      "english": "System data not found.",
+      "decision": "retention",
+      "native_callers": [
+        {
+          "call": 34531256,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531240,
+          "exact_hex": "2c009f153fa0c015030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb",
+          "instructions": [
+            "020EE7A8 ldrne r0, [pc, #0x2c]",
+            "020EE7AC strbne sl, [r0, #0x3f]",
+            "020EE7B0 b #0x20ee7c4",
+            "020EE7B4 mov r0, #0x70",
+            "020EE7B8 bl #0x20546b8",
+            "020EE7BC mov r0, #0x7b",
+            "020EE7C0 bl #0x20546b8"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 407,
+        "copy_end": 431,
+        "bytes": 22,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "deployed_hex": "53797374656d2064617461206e6f7420666f756e642e",
+      "display": {
+        "lines": [
+          "System data not found."
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 19,
+        "native_plane_sha256": "24650597d5ba71feda8b967667e54ec0551952f8ddfaec8aa2cc2fed7ead5c53",
+        "complete_native_format": {
+          "message_ID": 112,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "53797374656d2064617461206e6f7420666f756e642e",
+          "native_wrapper_output_hex": "53797374656d2064617461206e6f7420666f756e642e",
+          "native_wrapper_lines": [
+            "System data not found."
+          ],
+          "native_width_units": [
+            22
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_118",
+      "message_ID": 118,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "Reports damage detected before the default-data startup notice.",
+      "source_meaning": "The system data is corrupt.",
+      "localization_note": "The existing wording identifies system data and states its condition precisely.",
+      "source_Japanese": "システムデータが壊れています。",
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "source_reference": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 778,
+        "copy_end": 804,
+        "bytes": 25,
+        "record_index": 9,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "current_hex": "53797374656d206461746120697320636f727275707465642e",
+      "previous": "System data is corrupted.",
+      "english": "System data is corrupted.",
+      "decision": "retention",
+      "native_callers": [
+        {
+          "call": 34531784,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531768,
+          "exact_hex": "97df8de20100a0e3f08fbde87600a0e33a97fdeb7a00a0e33897fdeb",
+          "instructions": [
+            "020EE9B8 add sp, sp, #0x25c",
+            "020EE9BC mov r0, #1",
+            "020EE9C0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9C4 mov r0, #0x76",
+            "020EE9C8 bl #0x20546b8",
+            "020EE9CC mov r0, #0x7a",
+            "020EE9D0 bl #0x20546b8"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 778,
+        "copy_end": 804,
+        "bytes": 25,
+        "record_index": 9,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "deployed_hex": "53797374656d206461746120697320636f727275707465642e",
+      "display": {
+        "lines": [
+          "System data is corrupted."
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 22,
+        "native_plane_sha256": "1e7a24a6b0022b3c27c5500f38c55fb713b5d88ba032716a7cf13c82f9250752",
+        "complete_native_format": {
+          "message_ID": 118,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "53797374656d206461746120697320636f727275707465642e",
+          "native_wrapper_output_hex": "53797374656d206461746120697320636f727275707465642e",
+          "native_wrapper_lines": [
+            "System data is corrupted."
+          ],
+          "native_width_units": [
+            25
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_120",
+      "message_ID": 120,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "The player has reviewed the character settings and opened the confirmation.",
+      "source_meaning": "Asks whether all the selected details are acceptable.",
+      "localization_note": "Use a complete, conversational question and retain the reference to all the selected settings.",
+      "source_Japanese": "すべてよろしいですか？",
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "source_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 860,
+        "copy_end": 880,
+        "bytes": 19,
+        "record_index": 11,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "current_hex": "45766572797468696e6720636f72726563743f",
+      "previous": "Everything correct?",
+      "english": "Is everything OK?",
+      "decision": "revision",
+      "native_callers": [
+        {
+          "call": 34201588,
+          "target": 33900068,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34201572,
+          "exact_hex": "0220a0e37800a0e30110a0e31c2884e58ad9feeb000050e324608415",
+          "instructions": [
+            "0209DFE4 mov r2, #2",
+            "0209DFE8 mov r0, #0x78",
+            "0209DFEC mov r1, #1",
+            "0209DFF0 str r2, [r4, #0x81c]",
+            "0209DFF4 bl #0x2054624",
+            "0209DFF8 cmp r0, #0",
+            "0209DFFC strne r6, [r4, #0x24]"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 860,
+        "copy_end": 880,
+        "bytes": 17,
+        "record_index": 11,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "deployed_hex": "49732065766572797468696e67204f4b3f",
+      "display": {
+        "lines": [
+          "Is everything OK?"
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 15,
+        "native_plane_sha256": "cbd5e072b78260300162065063e3102e2ecceb33f774e7d94d20551b023d3cb7",
+        "complete_native_format": {
+          "message_ID": 120,
+          "arguments": [],
+          "source_wrapper": 33900068,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "49732065766572797468696e67204f4b3f",
+          "native_wrapper_output_hex": "49732065766572797468696e67204f4b3f",
+          "native_wrapper_lines": [
+            "Is everything OK?"
+          ],
+          "native_width_units": [
+            17
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_121",
+      "message_ID": 121,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "An independent start decision.",
+      "source_meaning": "Asks whether to start the game.",
+      "localization_note": "Start the game? states the pending action directly and reads naturally in a menu.",
+      "source_Japanese": "ゲームを始めますか？",
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "source_reference": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 880,
+        "copy_end": 896,
+        "bytes": 15,
+        "record_index": 12,
+        "table_offset": 1317378,
+        "start_in_record": 0
+      },
+      "current_hex": "5374617274207468652067616d653f",
+      "previous": "Start the game?",
+      "english": "Start the game?",
+      "decision": "retention",
+      "native_callers": [
+        {
+          "call": 34529612,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34529596,
+          "exact_hex": "0000a0e308008de5020000ea7900a0e34699fdeb08008de51c059fe5",
+          "instructions": [
+            "020EE13C mov r0, #0",
+            "020EE140 str r0, [sp, #8]",
+            "020EE144 b #0x20ee154",
+            "020EE148 mov r0, #0x79",
+            "020EE14C bl #0x205466c",
+            "020EE150 str r0, [sp, #8]",
+            "020EE154 ldr r0, [pc, #0x51c]"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 880,
+        "copy_end": 896,
+        "bytes": 15,
+        "record_index": 14,
+        "table_offset": 1317378,
+        "start_in_record": 0
+      },
+      "deployed_hex": "5374617274207468652067616d653f",
+      "display": {
+        "lines": [
+          "Start the game?"
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 13,
+        "native_plane_sha256": "8d88b472e2329b871bd754caace7d91a243871755b95e33b4d3c80a3522449e5",
+        "complete_native_format": {
+          "message_ID": 121,
+          "arguments": [],
+          "source_wrapper": 33900140,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "5374617274207468652067616d653f",
+          "native_wrapper_output_hex": "5374617274207468652067616d653f",
+          "native_wrapper_lines": [
+            "Start the game?"
+          ],
+          "native_width_units": [
+            15
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_122",
+      "message_ID": 122,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "The original recovery branch displays this after reporting system-data corruption.",
+      "source_meaning": "The load failed. The game will start with the system data initialized to its defaults.",
+      "localization_note": "Use the same direct failure wording as the short notice, then explain that the game will start with default data.",
+      "source_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "source_reference": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 896,
+        "copy_end": 976,
+        "bytes": 79,
+        "record_index": 13,
+        "table_offset": 1317380,
+        "start_in_record": 0
+      },
+      "current_hex": "436f756c646e2774206c6f6164207468652073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974680a2064656661756c742073797374656d20646174612e",
+      "previous": "Couldn't load the system data.\n  The game will start with\n default system data.",
+      "english": "Couldn't load system data. The game will start with defaults.",
+      "decision": "revision",
+      "native_callers": [
+        {
+          "call": 34531792,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531776,
+          "exact_hex": "f08fbde87600a0e33a97fdeb7a00a0e33897fdeb30009fe51461fdeb",
+          "instructions": [
+            "020EE9C0 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9C4 mov r0, #0x76",
+            "020EE9C8 bl #0x20546b8",
+            "020EE9CC mov r0, #0x7a",
+            "020EE9D0 bl #0x20546b8",
+            "020EE9D4 ldr r0, [pc, #0x30]",
+            "020EE9D8 bl #0x2046e30"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 896,
+        "copy_end": 976,
+        "bytes": 64,
+        "record_index": 15,
+        "table_offset": 1317380,
+        "start_in_record": 0
+      },
+      "deployed_hex": "20436f756c646e2774206c6f61642073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974682064656661756c74732e",
+      "display": {
+        "lines": [
+          "Couldn't load system data.",
+          "The game will start with defaults."
+        ],
+        "origins": [
+          6,
+          6
+        ],
+        "glyph_count": 52,
+        "native_plane_sha256": "1655e7799da077701dd9bb777481c2d86a01f2414b342ff38efa74f04ac848ad",
+        "complete_native_format": {
+          "message_ID": 122,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "20436f756c646e2774206c6f61642073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974682064656661756c74732e",
+          "native_wrapper_output_hex": "20436f756c646e2774206c6f61642073797374656d20646174612e0a20205468652067616d652077696c6c20737461727420776974682064656661756c74732e",
+          "native_wrapper_lines": [
+            " Couldn't load system data.",
+            "  The game will start with defaults."
+          ],
+          "native_width_units": [
+            27,
+            36
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [
+            2
+          ],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_123",
+      "message_ID": 123,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "The standalone failure notice applies to three original calls, including the missing-data path.",
+      "source_meaning": "Reports that the system data could not be loaded.",
+      "localization_note": "Use an idiomatic error sentence. Preserve the distinction from the separate notice that announces a default-data start.",
+      "source_Japanese": "システムデータのロードに失敗しました。\n",
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 27,
+        "record_index": 14,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_hex": "53797374656d2064617461206661696c656420746f206c6f61642e",
+      "previous": "System data failed to load.",
+      "english": "Couldn't load system data.",
+      "decision": "revision",
+      "native_callers": [
+        {
+          "call": 34529592,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34529576,
+          "exact_hex": "2c009de5000050e30400000a7b00a0e35e99fdeb0000a0e308008de5",
+          "instructions": [
+            "020EE128 ldr r0, [sp, #0x2c]",
+            "020EE12C cmp r0, #0",
+            "020EE130 beq #0x20ee148",
+            "020EE134 mov r0, #0x7b",
+            "020EE138 bl #0x20546b8",
+            "020EE13C mov r0, #0",
+            "020EE140 str r0, [sp, #8]"
+          ]
+        },
+        {
+          "call": 34531264,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531248,
+          "exact_hex": "030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb0500a0e174d08de2",
+          "instructions": [
+            "020EE7B0 b #0x20ee7c4",
+            "020EE7B4 mov r0, #0x70",
+            "020EE7B8 bl #0x20546b8",
+            "020EE7BC mov r0, #0x7b",
+            "020EE7C0 bl #0x20546b8",
+            "020EE7C4 mov r0, r5",
+            "020EE7C8 add sp, sp, #0x74"
+          ]
+        },
+        {
+          "call": 34531820,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531804,
+          "exact_hex": "97df8de20000a0e3f08fbde87b00a0e33197fdeb0000a0e397df8de2",
+          "instructions": [
+            "020EE9DC add sp, sp, #0x25c",
+            "020EE9E0 mov r0, #0",
+            "020EE9E4 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9E8 mov r0, #0x7b",
+            "020EE9EC bl #0x20546b8",
+            "020EE9F0 mov r0, #0",
+            "020EE9F4 add sp, sp, #0x25c"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 26,
+        "record_index": 31,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "deployed_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+      "display": {
+        "lines": [
+          "Couldn't load system data."
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 23,
+        "native_plane_sha256": "88d8943d35c03fd1822d3b91a5ad539f492b182f64e1ca1482f0de3dbcb8f5b0",
+        "complete_native_format": {
+          "message_ID": 123,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+          "native_wrapper_output_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+          "native_wrapper_lines": [
+            "Couldn't load system data."
+          ],
+          "native_width_units": [
+            26
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    }
+  ],
+  "gameplay": {
+    "candidate_sha256": "62d6bac994c02d67d4ac45d72983a1cf64439734cddaf5fbf659a81273768a96",
+    "previous_sha256": "e0a06f3c6f611de686c78e3bcac95727860416fd47729a8f92e0318246cf0905",
+    "ordinary_rafael_new_game": true,
+    "original_requests": [
+      {
+        "frame": 1800,
+        "PC": 33903244,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      },
+      {
+        "frame": 1800,
+        "PC": 33895668,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      },
+      {
+        "frame": 6003,
+        "PC": 33903244,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      },
+      {
+        "frame": 6003,
+        "PC": 33895668,
+        "message_ID": 120,
+        "caller_LR": 33900088
+      }
+    ],
+    "held_confirmation_frame": 6191,
+    "held_masks": [
+      {
+        "text": "Everything correct?",
+        "ink_pixels": 210,
+        "bounds": [
+          16,
+          333,
+          130,
+          344
+        ]
+      },
+      {
+        "text": "Is everything OK?",
+        "ink_pixels": 190,
+        "bounds": [
+          16,
+          333,
+          118,
+          344
+        ]
+      }
+    ],
+    "exact_control_frames": [
+      1800,
+      2200,
+      2591,
+      2991,
+      3391,
+      3791,
+      4191,
+      4591,
+      4991,
+      5391,
+      5791,
+      6591
+    ],
+    "ordinary_cancel_return_frame": 6591,
+    "offline_only_revisions": [
+      122,
+      123
+    ],
+    "hardware": false,
+    "sheet_sha256": "0a93f4d48aa2fbec9977c03315a0a88bcdb961dac4e13a2c9664509ea53f6d3f",
+    "evidence": {
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\capture_report.json": "065d798ea1e8463a542938e1037497d8bf883e3f204a82f85235c81bf5b134b1",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\requests.json": "a1f7b5b6ed88f648ad8940b577769b955edea7d7f4017f72e39a95808f95edb0",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\inputs.json": "446191f638df6f2c68578466617143156401b1b416211f7706ec30f525d6ec3a",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\source_contract.json": "01b5375628b8667af7df4f0c7a3a6c03fc21777740fd9d459e6abb7ff80012ad",
+      "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\replay_rafael_setup_labels_20261115.py": "dbee23eba09b3eba667dd26b03e0ee5a350363ea4f55eb3fc9368a9999097a5a",
+      "work\\analysis\\confirm_consumers_v582\\final_recorded_inputs.json": "01ab65186e5e896d0ce6fc3dfe9edbfab2d8dfbd0ce14da00e260403af80fca6",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\terminal.json": "cc50daaa5761682b5f974657aff6a6cb5cbd69d9eae2aeedc9c5d55b9194dd09",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_001800_cold_boot.png": "8c7ec0f3776d3aae86df8399a614c4e4b2c33ef1b58b1e8ce8cbebf7ae18e95c",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_002200_cold_boot.png": "8c7ec0f3776d3aae86df8399a614c4e4b2c33ef1b58b1e8ce8cbebf7ae18e95c",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_002591_cold_boot.png": "7c1e735bc35dcafe1cdd9573f4bbb1b7c1fade13ba5f3385e5ba6c563fe69626",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_002991_cold_boot.png": "ebc841a46658ef73ec49b5d14b69d39a862317e12e215b12ba4b080da71bbf08",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_003391_cold_boot.png": "d466174c2bd82418f92c5f34816e9cfa5ce6fbb4df4a47d30fb6b6714456b557",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_003791_cold_boot.png": "504480d78f8cedd2d183087641fa82686d52b131e0bc6f5dea6751d41882a1d0",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_004191_cold_boot.png": "16a61650c25999bae1581d97f7ce7584f9266bb5b16bc2a5bdaffb2dff0e8779",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_004591_cold_boot.png": "5666341c5e5b06c5ab8ab8f7af6fb00f5b3e6d2f240333a9f78f9c4ff74da734",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_004991_cold_boot.png": "c22f5c2b9be448856988b7c7083fefe11784ccf569aa5118d456e0e8b20343dc",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_005391_cold_boot.png": "324dd8c3eb6b4cac0b74870f5fe12cc5d23440a72a36dc536db0a3ae8dc70f05",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_005791_cold_boot.png": "2e993b746710850be118f49adf9ebf46cbb0fecc9cb430bc861f050d60c3ea81",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_006191_cold_boot.png": "9031f07dbce57691fcee354de93c3da114f8fd76387dc064b8bd9dccea927e29",
+      "work\\setup_confirmation_prose_20261115_v1\\before\\capture\\frame_006591_cold_boot.png": "2e993b746710850be118f49adf9ebf46cbb0fecc9cb430bc861f050d60c3ea81",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\capture_report.json": "f8690ebb3ca5e4b7ea6fb56edc85ad8cd253a3d6e21301adaf1150d13dce453f",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\requests.json": "0cd92806b6ed83ef32de20e53d333ee7292155eea55817780187ec3911386eb7",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\inputs.json": "446191f638df6f2c68578466617143156401b1b416211f7706ec30f525d6ec3a",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\source_contract.json": "01b5375628b8667af7df4f0c7a3a6c03fc21777740fd9d459e6abb7ff80012ad",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\terminal.json": "2907e36b1591d0e97e0f0cccac5ffc6457426e0d0b72f20d7ed9a10dcd0fe698",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_001800_cold_boot.png": "8c7ec0f3776d3aae86df8399a614c4e4b2c33ef1b58b1e8ce8cbebf7ae18e95c",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_002200_cold_boot.png": "8c7ec0f3776d3aae86df8399a614c4e4b2c33ef1b58b1e8ce8cbebf7ae18e95c",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_002591_cold_boot.png": "7c1e735bc35dcafe1cdd9573f4bbb1b7c1fade13ba5f3385e5ba6c563fe69626",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_002991_cold_boot.png": "ebc841a46658ef73ec49b5d14b69d39a862317e12e215b12ba4b080da71bbf08",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_003391_cold_boot.png": "d466174c2bd82418f92c5f34816e9cfa5ce6fbb4df4a47d30fb6b6714456b557",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_003791_cold_boot.png": "504480d78f8cedd2d183087641fa82686d52b131e0bc6f5dea6751d41882a1d0",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_004191_cold_boot.png": "16a61650c25999bae1581d97f7ce7584f9266bb5b16bc2a5bdaffb2dff0e8779",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_004591_cold_boot.png": "5666341c5e5b06c5ab8ab8f7af6fb00f5b3e6d2f240333a9f78f9c4ff74da734",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_004991_cold_boot.png": "c22f5c2b9be448856988b7c7083fefe11784ccf569aa5118d456e0e8b20343dc",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_005391_cold_boot.png": "324dd8c3eb6b4cac0b74870f5fe12cc5d23440a72a36dc536db0a3ae8dc70f05",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_005791_cold_boot.png": "2e993b746710850be118f49adf9ebf46cbb0fecc9cb430bc861f050d60c3ea81",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_006191_cold_boot.png": "a94b28066ccd0db65e21edaa8d8747d73e7ead9b7d775ab6dcdf37299ba5b9e1",
+      "work\\setup_confirmation_prose_20261115_v2\\after\\capture\\frame_006591_cold_boot.png": "2e993b746710850be118f49adf9ebf46cbb0fecc9cb430bc861f050d60c3ea81"
+    }
+  },
+  "native_sheet": {
+    "path": "work\\setup_confirmation_prose_20261115_v2\\setup_modal_previews.png",
+    "sha256": "2ad54d64acfdb742fa49d65c1021d0c8d19a70a19be18e2187842a2dbafbf350"
+  },
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  }
+}

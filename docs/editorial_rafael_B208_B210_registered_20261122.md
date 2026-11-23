@@ -1,0 +1,7 @@
+# Rafael's bargaining, book seller, and Namahage scenes
+
+The contextual pass covers 77 records in SC0 blocks 208–210. The six offers retain their exact amounts and use gold consistently. Carlo's initial advice links the first refusal to the price dropping by half and leaves room for at least two further cuts. Ian's scene preserves the purchase, refusal, delegation, and gift paths. The Namahage retains its repeated questions and original Japanese term. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_rafael_B208_B210_candidate/verification/registered_review.json)
+
+The Charm notice retains the original given-name substitution and fits on a single row with a 16-character name. Eight speakerless panels retain the original control. Offline checks cover 18 revised pages, ten nameplates, and all 15 labels across seven choice menus. The focused emulator excerpts verified 31 speech pages, five choice highlight states, named-to-speakerless transitions, and the return to port. Natural branch activation and hardware remain unvisited in this batch. [Native and gameplay evidence](../releases/all_routes_editorial_20261122_rafael_B208_B210_candidate/verification)
+
+The registered candidate preserves 114 accepted layers, the right-bound correction, and seven source-format controls. Six startup comparisons, 17 regression tests, and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_rafael_B208_B210_candidate/README.md)

@@ -1,0 +1,326 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "records": [
+    {
+      "message_ID": 2205,
+      "requests": [
+        {
+          "frame": 6037,
+          "caller_LR": 33898276
+        }
+      ],
+      "source_reference": {
+        "block": 23,
+        "offset": 1320,
+        "copy_end": 1392,
+        "bytes": 70,
+        "record_index": 28,
+        "table_offset": 1321546,
+        "start_in_record": 1
+      },
+      "source_hex": "82c882f182be82c681490a90e990ed957a8d9082b582c482ab82e282aa82c182bd82cc82a9814981480a82d682c1814189b482c98f9f82c482e982c68e7682c182bd82a98149",
+      "clean_Japanese": "なんだと！\n宣戦布告してきやがったのか！？\nへっ、俺に勝てると思ったか！",
+      "current_reference": {
+        "block": 23,
+        "offset": 2994,
+        "copy_end": 3073,
+        "bytes": 78,
+        "record_index": 112,
+        "table_offset": 1321546,
+        "start_in_record": 0
+      },
+      "current_hex": "576861743f212054686579277665206465636c6172656420776172206f6e206d653f212048612120446f2074686579207265616c6c79207468696e6b20746865792063616e2062656174206d653f",
+      "current_template": "What?! They've declared war on me?! Ha! Do they really think they can beat me?",
+      "observed_frame": {
+        "frame": 6120,
+        "path": "work\\fleet_attack_shared_20261121\\attack\\capture\\frame_006120_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "71b48e5910dcc69d562def766788557578e408ebfc75cd516d57d9bdb6d7be60",
+        "framebuffer_sha256": "cd994cb773ef295de8656c91486abcdd4da19c16f8f3d553eb000962a12942c6"
+      },
+      "speaker": "James Clifford",
+      "localization_note": "Disbelief, a scoff, then a personal boast carry the original response. Preserve the words and improve the break before 'they can beat me?'.",
+      "decision": "wrap_only",
+      "english": "What?! They've declared war on me?! Ha! Do they really think they can beat me?",
+      "previous_English": "What?! They've declared war on me?! Ha! Do they really think they can beat me?",
+      "id": "COMMON_MESSAGE_2205",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Complete independent target-company-leader response after ordinary declaration confirmation accepts hostilities. Original3CD2C selects the target leader;6F024/6F02C calls53F0C/table021184E0,parent53F40/stack+274. The eight rows are alternative personalities,not eight sequential replies. Actual company4 leaderJames Clifford28/voice4 selects2205. Original hostility setters and battle entry follow the speech;later duel/defeat/retreat/sailing are context only and add no prose credit. Read surprise or hesitation developing into acceptance,orders,boasts,threats,frightened pleading or deliberate resolve. Threats and confidence are character speech,not proof of victory,casualties or surrender. Personal I is ordinary ASCII,not a source speech macro;there are no printf arguments. Separate fear/sea table2209-2216 remains distinct. Preserve the1531 DMA/UI-constructor erratum;the original speech call is6F02C,not6F0A4/E2838.",
+      "source_meaning": "A rough,arrogant speaker angrily confirms the declaration,then scoffs at the idea anyone could beat him.",
+      "original_substitution_count": 0,
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      },
+      "staged_reference": {
+        "block": 23,
+        "offset": 2994,
+        "copy_end": 3079,
+        "bytes": 83,
+        "record_index": 112,
+        "table_offset": 1321546,
+        "start_in_record": 0
+      },
+      "staged_hex": "20576861743f212054686579277665206465636c6172656420776172206f6e206d653f210a202048612120446f2074686579207265616c6c79207468696e6b0a2020746865792063616e2062656174206d653f",
+      "registered_reference": {
+        "block": 23,
+        "offset": 2994,
+        "copy_end": 3079,
+        "bytes": 83,
+        "record_index": 112,
+        "table_offset": 1321546,
+        "start_in_record": 0,
+        "candidate_sha256": "e113a54bcbd090e223c261dbd4d6c17daf30128caa8532709c902c4b81418605"
+      }
+    }
+  ],
+  "candidate_sha256": "e113a54bcbd090e223c261dbd4d6c17daf30128caa8532709c902c4b81418605",
+  "parent_sha256": "3f538b7bbcb207924866368500794009904d7733bab7fc74f8e4f0cf3f1673f7",
+  "target_ARM9_sha256": "57d742178bb579edf726478481e9cdea349173045e929b44bf597ced91112a7c",
+  "target_COMMON_sha256": "3071f27630989ab4ee365d2bd541b1920e53254280df0bb1b2e8a868d8ea077a",
+  "all_parent_bytes_restored": true,
+  "allocation": {
+    "touched_blocks": [
+      23
+    ],
+    "source_block_lengths": {
+      "23": 4987
+    },
+    "target_block_lengths": {
+      "23": 4993
+    },
+    "changed_visible_templates": [
+      2205
+    ],
+    "complete_COMMON_and_ARM9_table_inverse": true,
+    "all_unselected_native_copy_spans_exact": true,
+    "new_directory_sha256": "e6089fb0d8f599493c434b97d4e72b4447cd03af1ca30f0f4bc1d0972f082753",
+    "native_message_count": 3668,
+    "native_block_count": 41,
+    "all_41_blocks_fit_8KiB": true
+  },
+  "runtime": {
+    "entry": 33536564,
+    "end": 33536752,
+    "prior": 33554152,
+    "hook": 33541948,
+    "parent": 33898304,
+    "stack_selector_offset": 628,
+    "table": 34702560,
+    "complete_ARM9_inverse": true
+  },
+  "native_views": [
+    {
+      "message_ID": 2201,
+      "original_actor": 4,
+      "before_hex": "2054686579277265206465636c6172696e67207761723f21205468656e207765276c6c0a20206861766520746f20616363657074207468656972206368616c6c656e676521",
+      "after_hex": "2054686579277265206465636c6172696e67207761723f21205468656e207765276c6c0a20206861766520746f20616363657074207468656972206368616c6c656e676521",
+      "lines": [
+        "They're declaring war?! Then we'll",
+        "have to accept their challenge!"
+      ],
+      "ink_sha256": "009986d98665065746384831c6ed0b7ebc7bd2f96ae4e0c841ad9b418f529abc",
+      "glyph_count": 57
+    },
+    {
+      "message_ID": 2202,
+      "original_actor": 12,
+      "before_hex": "20486d6d2e2e2e2054686579277665206465636c61726564207761722e2e2e20416c6c0a2020666c656574732c207072657061726520746f20696e7465726365707421",
+      "after_hex": "20486d6d2e2e2e2054686579277665206465636c61726564207761722e2e2e20416c6c0a2020666c656574732c207072657061726520746f20696e7465726365707421",
+      "lines": [
+        "Hmm... They've declared war... All",
+        "fleets, prepare to intercept!"
+      ],
+      "ink_sha256": "858c2ddce0ca535431d42ba7c20c223c328e0e2d1a20a1b98bd46f36ccd4198d",
+      "glyph_count": 56
+    },
+    {
+      "message_ID": 2203,
+      "original_actor": 0,
+      "before_hex": "2054686579277665206465636c61726564207761723f2120416c6c207269676874210a20205765277265206e6f7420676f696e6720746f206c6f736521",
+      "after_hex": "2054686579277665206465636c61726564207761723f2120416c6c207269676874210a20205765277265206e6f7420676f696e6720746f206c6f736521",
+      "lines": [
+        "They've declared war?! All right!",
+        "We're not going to lose!"
+      ],
+      "ink_sha256": "3e6baf2bf395f715e870ae501ac2a242bfa77358a070cecc0a72a321c89464e1",
+      "glyph_count": 49
+    },
+    {
+      "message_ID": 2204,
+      "original_actor": 2,
+      "before_hex": "2054686579277665206465636c61726564207761723f21205468656e207765276c6c0a202062656174207468656d206261636b21",
+      "after_hex": "2054686579277665206465636c61726564207761723f21205468656e207765276c6c0a202062656174207468656d206261636b21",
+      "lines": [
+        "They've declared war?! Then we'll",
+        "beat them back!"
+      ],
+      "ink_sha256": "7085de329610a19c5755b5de413dfb03687d47f3f842bff4a45e4a24a9014204",
+      "glyph_count": 42
+    },
+    {
+      "message_ID": 2205,
+      "original_actor": 28,
+      "before_hex": "20576861743f212054686579277665206465636c6172656420776172206f6e206d653f210a202048612120446f2074686579207265616c6c79207468696e6b20746865790a202063616e2062656174206d653f",
+      "after_hex": "20576861743f212054686579277665206465636c6172656420776172206f6e206d653f210a202048612120446f2074686579207265616c6c79207468696e6b0a2020746865792063616e2062656174206d653f",
+      "lines": [
+        "What?! They've declared war on me?!",
+        "Ha! Do they really think",
+        "they can beat me?"
+      ],
+      "ink_sha256": "858b200ed1e888aae2f3b2c4552cd7b84535cd99f057bdb56618f790c56b4af0",
+      "glyph_count": 64
+    },
+    {
+      "message_ID": 2206,
+      "original_actor": 6,
+      "before_hex": "20576861743f2120596f752064617265206465636c61726520776172206f6e206d653f210a2020596f7527766520676f7420612064656174682077697368212049276c6c2073656e640a2020796f7520746f2074686520626f74746f6d21",
+      "after_hex": "20576861743f2120596f752064617265206465636c61726520776172206f6e206d653f210a2020596f7527766520676f7420612064656174682077697368212049276c6c2073656e640a2020796f7520746f2074686520626f74746f6d21",
+      "lines": [
+        "What?! You dare declare war on me?!",
+        "You've got a death wish! I'll send",
+        "you to the bottom!"
+      ],
+      "ink_sha256": "5c66488d23ef0d8f8c74acc5d2e5965081b00ba81782baa5747b14231ad940b3",
+      "glyph_count": 72
+    },
+    {
+      "message_ID": 2207,
+      "original_actor": 14,
+      "before_hex": "20576861743f20576861743f2120506c656173652073746f702120446964204920646f0a2020736f6d657468696e672077726f6e673f",
+      "after_hex": "20576861743f20576861743f2120506c656173652073746f702120446964204920646f0a2020736f6d657468696e672077726f6e673f",
+      "lines": [
+        "What? What?! Please stop! Did I do",
+        "something wrong?"
+      ],
+      "ink_sha256": "df5094fda2452422adce98c83ce09eafc2e217aa9b73538c74cb44467aaee2c5",
+      "glyph_count": 43
+    },
+    {
+      "message_ID": 2208,
+      "original_actor": 19,
+      "before_hex": "20486d70682120596f75277665206465636c61726564207761723f212049276c6c0a202073656520746f206974207468617420796f752072656772657420746861740a20207265636b6c657373206465636973696f6e21",
+      "after_hex": "20486d70682120596f75277665206465636c61726564207761723f212049276c6c0a202073656520746f206974207468617420796f752072656772657420746861740a20207265636b6c657373206465636973696f6e21",
+      "lines": [
+        "Hmph! You've declared war?! I'll",
+        "see to it that you regret that",
+        "reckless decision!"
+      ],
+      "ink_sha256": "0a4c0bce327db0becdae3c1f77bcba375c481138082e188c7046d9505d1b3019",
+      "glyph_count": 69
+    }
+  ],
+  "font": {
+    "native_raster_sha256": "ad8ec57af672a40f3060be111dcf9d5218ac27163f9734a658c6cedbefcdc072",
+    "independent_font_sha256": "9b2df890c2ca84918ae5dac4244d51106a94fc7bc1e5dc888cf902f1ecc3d489",
+    "ink_glyph_height": 12,
+    "native_row_step": 16,
+    "paper": [
+      228,
+      48
+    ],
+    "screenshot_calibration": "work/analysis/town_services_pixel_anchor_v2101e/original49_exact_native_ink_anchor.json"
+  },
+  "new_editorial_credit": 0,
+  "sheets": [
+    {
+      "path": "work\\clifford_declaration_wrap_20261121\\portrait_sheet_01.png",
+      "sha256": "6117b055aa8cc191c8ddac05a1fd1323a5537e27e7054a7107eb9b9d4314f2f6",
+      "messages": [
+        "Clifford before",
+        "Clifford corrected"
+      ]
+    }
+  ],
+  "source_evidence": {
+    "releases\\all_routes_editorial_20261121_map_cluster_suffix_candidate\\verification\\registered_release_verification.json": "6c1c224789696c74267717fc592325fb371e480af8a51220dfbd6a7f3ba7026d",
+    "translations\\declaration_responses_contextual_final_review_v1.json": "7cfcdd9be5427c09e6631d16c191c18e3dc5d21b8c9e6f7e34f40029d2095416",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\fleet_attack_shared_20261121_v1.json": "1cd222ee60ae3ef34c33ff9096833036d8571ef8d748e0c10deed7c285569d61",
+    "work\\analysis\\declaration_responses_fonts_v2608\\native_font_proof.json": "50dc602325b882eb30d1b0c0d63cc63fa250fa0363c2666524463ac832794a44"
+  },
+  "status": "registered",
+  "direct_visual_review": {
+    "work\\clifford_declaration_wrap_20261121\\portrait_sheet_01.png": "6117b055aa8cc191c8ddac05a1fd1323a5537e27e7054a7107eb9b9d4314f2f6",
+    "work\\clifford_declaration_wrap_20261121\\playback\\attack\\capture\\frame_006120_cold_boot.png": "109e41d0cb9ff09ba2cb1bc9420aea86b883005679c01bc5284bfe78cb5660c1"
+  },
+  "original_dialogue_runtime": true,
+  "native_and_replay_evidence": "work\\clifford_declaration_wrap_20261121\\verified_gameplay.json",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "shared_storage_scope": {
+    "pending_records": 276,
+    "exact_payloads_and_locations": true,
+    "evidence_sha256": "153e37be4b02932f02edd037aac2fc52407848a7b30eae8800e664be72a0d4b9"
+  }
+}

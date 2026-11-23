@@ -1,0 +1,7 @@
+# Rafael’s North Sea encounters
+
+Reviewed 112 records in Lil’s confrontation and handover, Rafael’s encounter with Sera and Hodram, and the summons to Lisbon. The draft became 18 revisions and 94 justified retentions. Lil presses her case with sharper spoken phrasing, the New World stays together, and the messenger’s company-name question fits on one line. The existing silent encounter with Sera and Hodram works in context and carries forward in full. [Exact review ledger](../releases/all_routes_editorial_20261119_rafael_north_sea_candidate/verification/registered_review.json)
+
+All 18 revised pages passed native and visual checks. The revisions in these optional scenes received offline coverage. Earlier initialized emulator captures cover the unchanged confrontation transition and dye card controls. The current ROM received six startup checks and 24 protected name getter checks. Hardware remains unverified. [Display and startup evidence](../releases/all_routes_editorial_20261119_rafael_north_sea_candidate/verification)
+
+Only three blocks in Rafael’s story archive changed. The clean-input patch reconstructs the candidate byte for byte, and all 34 focused tests passed. The release retains 114 accepted layers and the ASCII right-bound correction. The ledger preserves 27,700 credited records and 276 shared keys with open display coverage. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_north_sea_candidate/README.md)

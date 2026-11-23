@@ -1,0 +1,298 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "2741e6602ed390d68d6ca7bd806704418da740c5f710b941b0c4b5e931e85691",
+  "parent": "e98651122e55d5c0f080ded44b3d10b612debb042bd4b04789c5189a6635d6dd",
+  "source_preflight": "work\\analysis\\ship_room_terms_20261122\\next_terminology_decisions.json",
+  "source_preflight_sha256": "fad2fe7fcb2ec84970443108ead417b232506f70902db4d07066e4ff80f281db",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1784",
+      "message_ID": 1784,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Cristina",
+      "clean_Japanese": "疲れちゃった…\n『娯楽室』に…",
+      "source_meaning": "The tired speaker says she is worn out and trails off about going to the lounge.",
+      "context": "Cristina's independent Deck response when the original selector finds physical fatigue.",
+      "localization_note": "Keep the tired speaker's trailing thought and use the same Lounge label as the ship menu.",
+      "english": "I'm worn out... I need a break in the Lounge...",
+      "previous_English": "I'm worn out... I need a break in the Recreation Room...",
+      "decision": "revision",
+      "change_class": "terminology",
+      "source_reference": {
+        "block": 19,
+        "offset": 3716,
+        "copy_end": 3748,
+        "bytes": 29,
+        "record_index": 109,
+        "table_offset": 1320704,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 20,
+        "offset": 1141,
+        "copy_end": 1198,
+        "bytes": 56,
+        "record_index": 28,
+        "table_offset": 1320704,
+        "start_in_record": 0
+      },
+      "source_hex": "94e682ea82bf82e182c182bd81630a81778ce28a798eba817882c98163",
+      "current_hex": "49276d20776f726e206f75742e2e2e2049206e656564206120627265616b0a696e207468652052656372656174696f6e20526f6f6d2e2e2e",
+      "installed_reference": {
+        "block": 20,
+        "offset": 1141,
+        "copy_end": 1198,
+        "bytes": 48,
+        "record_index": 28,
+        "table_offset": 1320704,
+        "start_in_record": 0
+      },
+      "installed_hex": "49276d20776f726e206f75742e2e2e200a49206e656564206120627265616b20696e20746865204c6f756e67652e2e2e",
+      "expected_lines": [
+        "I'm worn out...",
+        "I need a break in the Lounge..."
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "gameplay_frames": [],
+      "gameplay_scope": "Original ordinary and combat Deck consumers checked offline. Historical combat replay reached frame 15300 without entering combat on the current build.",
+      "registered_reference": {
+        "block": 20,
+        "offset": 1141,
+        "copy_end": 1198,
+        "bytes": 48,
+        "record_index": 28,
+        "table_offset": 1320704,
+        "start_in_record": 0,
+        "candidate_sha256": "2741e6602ed390d68d6ca7bd806704418da740c5f710b941b0c4b5e931e85691"
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2919",
+      "message_ID": 2919,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Item catalogue",
+      "clean_Japanese": "小さなマスク。飼育室の悪臭を防ぐために発明されたもの。ひとつひとつ丹念に手作業で作られている。",
+      "source_meaning": "A small mask designed to block foul smells from the animal-keeping room. Each mask is made carefully by hand.",
+      "context": "The mask's catalogue description appears in both item views. The room name is the same as the one on the crew assignment menu.",
+      "localization_note": "Match the Nursery label used on the ship while preserving the source description and both item views.",
+      "english": "A small mask invented to keep out smells from the Nursery. Each is carefully made by hand.",
+      "previous_English": "A small mask invented to keep out smells from the Livestock Room. Each is carefully made by hand.",
+      "decision": "revision",
+      "change_class": "terminology",
+      "source_reference": {
+        "block": 31,
+        "offset": 3908,
+        "copy_end": 4004,
+        "bytes": 94,
+        "record_index": 22,
+        "table_offset": 1322974,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 32,
+        "offset": 204,
+        "copy_end": 303,
+        "bytes": 97,
+        "record_index": 3,
+        "table_offset": 1322974,
+        "start_in_record": 0
+      },
+      "source_hex": "8fac82b382c8837d8358834e81428e9488e78eba82cc88ab8f4c82f0966882ae82bd82df82c994ad96be82b382ea82bd82e082cc814282d082c682c282d082c682c2924f944f82c98ee88dec8bc682c58dec82e782ea82c482a282e98142",
+      "current_hex": "4120736d616c6c206d61736b20696e76656e74656420746f206b656570206f757420736d656c6c732066726f6d20746865204c69766573746f636b20526f6f6d2e2045616368206973206361726566756c6c79206d6164652062792068616e642e",
+      "installed_reference": {
+        "block": 32,
+        "offset": 204,
+        "copy_end": 303,
+        "bytes": 90,
+        "record_index": 3,
+        "table_offset": 1322974,
+        "start_in_record": 0
+      },
+      "installed_hex": "4120736d616c6c206d61736b20696e76656e74656420746f206b656570206f757420736d656c6c732066726f6d20746865204e7572736572792e2045616368206973206361726566756c6c79206d6164652062792068616e642e",
+      "expected_lines": [
+        "A small mask invented to keep out smells from",
+        "the Nursery. Each is carefully made by hand."
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "gameplay_frames": [
+        10800
+      ],
+      "registered_reference": {
+        "block": 32,
+        "offset": 204,
+        "copy_end": 303,
+        "bytes": 90,
+        "record_index": 3,
+        "table_offset": 1322974,
+        "start_in_record": 0,
+        "candidate_sha256": "2741e6602ed390d68d6ca7bd806704418da740c5f710b941b0c4b5e931e85691"
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2920",
+      "message_ID": 2920,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Item catalogue",
+      "clean_Japanese": "ゴム製のおしゃれな長靴。飼育室ではどうしても足元が汚れるため貴重なゴムを大量に使って作られた。",
+      "source_meaning": "Stylish rubber boots made with a great deal of precious rubber because feet inevitably get dirty in the animal-keeping room.",
+      "context": "The boots' catalogue description appears in both item views. The Nursery explains why they are useful aboard ship.",
+      "localization_note": "Match the Nursery label used on the ship while preserving the source description and both item views.",
+      "english": "These stylish boots take a lot of precious rubber to make. They keep feet clean in the Nursery.",
+      "previous_English": "These stylish boots take a lot of precious rubber to make. They keep feet clean in the Livestock Room.",
+      "decision": "revision",
+      "change_class": "terminology",
+      "source_reference": {
+        "block": 32,
+        "offset": 0,
+        "copy_end": 96,
+        "bytes": 94,
+        "record_index": 0,
+        "table_offset": 1322976,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 32,
+        "offset": 303,
+        "copy_end": 406,
+        "bytes": 102,
+        "record_index": 5,
+        "table_offset": 1322976,
+        "start_in_record": 0
+      },
+      "source_hex": "8353838090bb82cc82a882b582e182ea82c892b78c4381428e9488e78eba82c582cd82c782a482b582c482e091ab8cb382aa899882ea82e982bd82df8b4d8f6482c88353838082f091e597ca82c98e6782c182c48dec82e782ea82bd8142",
+      "current_hex": "5468657365207374796c69736820626f6f74732074616b652061206c6f74206f662070726563696f75732072756262657220746f206d616b652e2054686579206b656570206665657420636c65616e20696e20746865204c69766573746f636b20526f6f6d2e",
+      "installed_reference": {
+        "block": 32,
+        "offset": 303,
+        "copy_end": 406,
+        "bytes": 95,
+        "record_index": 12,
+        "table_offset": 1322976,
+        "start_in_record": 0
+      },
+      "installed_hex": "5468657365207374796c69736820626f6f74732074616b652061206c6f74206f662070726563696f75732072756262657220746f206d616b652e2054686579206b656570206665657420636c65616e20696e20746865204e7572736572792e",
+      "expected_lines": [
+        "These stylish boots take a lot of precious",
+        "rubber to make. They keep feet clean",
+        "in the Nursery."
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "gameplay_frames": [
+        10400
+      ],
+      "registered_reference": {
+        "block": 32,
+        "offset": 303,
+        "copy_end": 406,
+        "bytes": 95,
+        "record_index": 12,
+        "table_offset": 1322976,
+        "start_in_record": 0,
+        "candidate_sha256": "2741e6602ed390d68d6ca7bd806704418da740c5f710b941b0c4b5e931e85691"
+      }
+    }
+  ],
+  "new_editorial_credit": 0,
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_SC0_qualification.json",
+      "sha256": "06880ee325fa874168ee50f47ce8d120dce1cf842a70a159d6200e8079b8c218"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_current_qualification.json",
+      "sha256": "ff499ecc08318e60c3270dce54cada1bf91785ba1e4c41ec12e340d151dc01a0"
+    }
+  },
+  "native_proof_paths": [
+    "work\\analysis\\ship_room_terms_20261122\\staged\\native_display\\item_proof.json",
+    "work\\analysis\\ship_room_terms_20261122\\staged\\native_display\\deck_proof.json"
+  ],
+  "direct_visual_review": {
+    "work\\analysis\\ship_room_terms_20261122\\staged\\item_gameplay\\observed_item_descriptions.png": "4bf49fc6a12b044cd1f6978111c6a10f3582882a28be092d041b065f1cf03ca3",
+    "work\\analysis\\ship_room_terms_20261122\\staged\\native_display\\item_room_names.png": "c17d719616b40b1bd3df1ee76a686f1b3fbb077658d5c695633bb3a2c91bcd76",
+    "work\\analysis\\ship_room_terms_20261122\\staged\\native_display\\deck_lounge_name.png": "3ab6d9e717b0b76a40fa8d0f4872fc4e24a26ddb54703fa530eb41e697d1e48f"
+  },
+  "observed_items": "work\\analysis\\ship_room_terms_20261122\\staged\\item_gameplay\\verified_gameplay.json",
+  "observed_deck": false,
+  "unchanged_pending_records": 276,
+  "historical_source_credit": {
+    "by_census_id": {},
+    "direct_keys": 3
+  },
+  "new_contextual_records": 0,
+  "full_editorial_goal_complete": false
+}

@@ -1,0 +1,7 @@
+# Story phrase wraps
+
+The nine flagged breaks were reviewed in their original exchanges across all four routes. The batch keeps Proof of Conquest, Indian Ocean, Shandong Peninsula, Southeast Asia and trade house together. Rafael's crown clue keeps the speaker's uncertainty and the item description. Maria still asks what serves as the map before Xien suggests the coin. Both versions of Maria's completed collection use the same line. The batch records 4 wording revisions, 5 wrap-only fixes and 326 retentions with source and current references. [Exact review ledger](../releases/all_routes_editorial_20261118_story_phrase_wraps_candidate/verification/registered_review.json)
+
+All nine revised pages passed native rendering and visual review. Initialized DeSmuME playback showed nine original dialogue commands from Rafael's two excerpts, including both revisions and the surrounding replies. B79 used the conditional reply in the excerpt. Other routes were checked offline. Natural scene activation and hardware remain unvisited. [Rafael replay](../releases/all_routes_editorial_20261118_story_phrase_wraps_candidate/verification/rafael_proof_live_1.png)
+
+The clean-input patch reconstructs the registered candidate byte for byte. The combined build carries all 114 accepted layers. The startup comparison, 24 protected name getters and 32 targeted tests passed. [Test ROM and patch](../releases/all_routes_editorial_20261118_story_phrase_wraps_candidate/README.md)

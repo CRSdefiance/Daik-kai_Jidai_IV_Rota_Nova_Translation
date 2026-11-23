@@ -1,0 +1,5 @@
+# Characters Gallery editorial review
+
+Reviewed the two fixed text fields and all 42 numbered cards from the clean Japanese. The gallery keeps the name component used by each original card. Forty-one names match the approved actor components, and Bianca matches her named voice in Maria's storyline. The heading, introduction and all 42 labels are exact retentions with source, current and approved-name references. [Coverage ledger](../translations/editorial_checkpoints/SharedText_20261110_v1/characters_gallery_editorial_20261121_v1.json)
+
+The current Historic Sites candidate displayed all 42 cards in DeSmuME using a copied save initialized for Gallery access. All 126 complete title, introduction and name masks passed. The portraits match the archived viewer captures. The carousel returned to Rafael, and Back returned to the Gallery menu. The scope covers the original viewer and controls with the prepared save. [Numbered names](../work/characters_gallery_editorial_20261121/complete_numbered_names.png) · [Menu return](../work/characters_gallery_editorial_20261121/capture/frame_011400_cold_boot.png)

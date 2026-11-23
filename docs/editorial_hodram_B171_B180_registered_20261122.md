@@ -1,0 +1,9 @@
+# Hodram's Proofs and the next harbor encounters
+
+Reviewed 288 records from clean Japanese and carried forward 27 sail-lesson decisions. The pass revises 119 turns and records 169 individual retentions, covering Mikhail's item instruction, the Proofs of Conquest, Yifa and Sanghyeon, the Silla Gold Crown, the pirate encounter and the Seville forecast. The pirate's opening keeps the original fleet substitution. The old layout could split a word and push the greeting onto a third row with a longer fleet name. The revised greeting fits on two rows at the maximum tested width. [Exact sources and decisions](../releases/all_routes_editorial_20261122_hodram_B171_B180_candidate/verification/registered_review.json)
+
+The immediate base was `Translation_DS_Hodram_B161_B170_20261122_candidate.nds` at SHA-256 `930b32aa106fe1904f645a147d99072cb3d031d42db3d375d137653c9de91480`. The new candidate changes only `/data/SC1.DK4` and has SHA-256 `ac16c91c64414c67fc34368085ac66ca196bd187c8f3c1ccdebf9596960a22b2`.
+
+Native checks cover 450 commands, 17 speakerless panels, two choice captions, 22 nameplates and 119 revised pages. Focused emulator playback verifies 64 dialogue pages and both choice highlights. It displays the default fleet name, Mikhail's item instruction and the transition between speakerless and portrait dialogue. The custom fleet widths are offline checks. Natural story triggers and hardware remain unvisited. [Offline and emulator evidence](../releases/all_routes_editorial_20261122_hodram_B171_B180_candidate/verification)
+
+The cumulative candidate preserves 114 accepted layers and the ASCII right-bound correction. Its startup comparison and 17 regression tests passed. The clean-input patch rebuilt the ROM exactly. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B171_B180_candidate/README.md)

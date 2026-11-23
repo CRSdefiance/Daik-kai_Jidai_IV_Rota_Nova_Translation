@@ -1,0 +1,7 @@
+# Aziza’s mutiny dialogue
+
+Angel now orders his crew to take out both Aziza and the man who comes to her aid in Rafael’s and Hodram’s routes. His accusation about their losing streak and empty earnings also reads more like spoken dialogue in Hodram’s route. Lil’s and Maria’s existing orders already identify both targets. The [registered review](../releases/all_routes_editorial_20261115_aziza_mutiny_dialogue_candidate/verification/registered_review.json) retains Angel, Snake and Dandy as distinct pirate nicknames across 12 source exchanges.
+
+All three revised lines fit on two rows and passed complete native glyph checks. Paired initialized Rafael and Hodram replays displayed the revised lines and complete Angel and Snake nameplates. The replays use selected original speech commands and ordinary button presses. Dandy has earlier Lil replay evidence and current getter checks. Natural activation, other branches, the name catalog layout and physical hardware remain open. [Before-and-after captures](../releases/all_routes_editorial_20261115_aziza_mutiny_dialogue_candidate/verification/gameplay_comparison.png)
+
+The [candidate and patch](../releases/all_routes_editorial_20261115_aziza_mutiny_dialogue_candidate/README.md) preserve all 114 accepted layers, including the ASCII right-bound correction. Six cumulative startup frames, 24 protected name getters and 38 targeted tests passed. The patch reconstructs the ROM byte for byte.

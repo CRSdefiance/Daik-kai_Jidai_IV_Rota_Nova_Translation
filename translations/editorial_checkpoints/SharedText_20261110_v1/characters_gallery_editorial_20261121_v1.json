@@ -1,0 +1,5094 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "records": [
+    {
+      "id": "CHARACTERS_GALLERY_DESCRIPTION",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "物語の主要な登場人物",
+      "english": "The story's main cast.",
+      "source_meaning": "The story's main cast is a natural summary of the original description.",
+      "context": "The title and introduction stay in place as the numbered character cards advance.",
+      "localization_note": "The story's main cast is a natural summary of the original description.",
+      "decision": "retention",
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1283348,
+        "pointer_field": null,
+        "exact_hex": "95a88cea82cc8ee5977682c8936f8fea906c95a800"
+      },
+      "current_reference": {
+        "offset": 1283348,
+        "pointer_field": null,
+        "exact_hex": "5468652073746f72792773206d61696e20636173742e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_TITLE",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "登場人物",
+      "english": "Characters",
+      "source_meaning": "Characters is the familiar menu heading for the cast.",
+      "context": "The title and introduction stay in place as the numbered character cards advance.",
+      "localization_note": "Characters is the familiar menu heading for the cast.",
+      "decision": "retention",
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280588,
+        "pointer_field": null,
+        "exact_hex": "936f8fea906c95a800"
+      },
+      "current_reference": {
+        "offset": 1280588,
+        "pointer_field": null,
+        "exact_hex": "4368617261637465727300"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_00",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "00 ラファエル",
+      "english": "00 Rafael",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 00 with the character's selected short name.",
+      "localization_note": "Retain Rafael. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 0,
+        "field": "primary",
+        "clean": {
+          "pointer": 34982464,
+          "source_ARM9_field_offset": 1182592,
+          "offset": 1428032,
+          "hex": "8389837483408347838b",
+          "text": "ラファエル"
+        },
+        "current": {
+          "pointer": 34982464,
+          "hex": "52616661656c",
+          "text": "Rafael"
+        },
+        "reason": "Retain Rafael. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 2800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281516,
+        "pointer_field": 1288088,
+        "exact_hex": "3030208389837483408347838b00"
+      },
+      "current_reference": {
+        "offset": 1281010,
+        "pointer_field": 1288088,
+        "exact_hex": "30302052616661656c00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_01",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "01 ホドラム",
+      "english": "01 Hodram",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 01 with the character's selected short name.",
+      "localization_note": "Retain Hodram. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 1,
+        "field": "primary",
+        "clean": {
+          "pointer": 34980148,
+          "source_ARM9_field_offset": 1182624,
+          "offset": 1425716,
+          "hex": "837a836883898380",
+          "text": "ホドラム"
+        },
+        "current": {
+          "pointer": 34980148,
+          "hex": "486f6472616d",
+          "text": "Hodram"
+        },
+        "reason": "Retain Hodram. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 3000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280876,
+        "pointer_field": 1288092,
+        "exact_hex": "303120837a83688389838000"
+      },
+      "current_reference": {
+        "offset": 1280928,
+        "pointer_field": 1288092,
+        "exact_hex": "303120486f6472616d00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_02",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "02 リル",
+      "english": "02 Lil",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 02 with the character's selected short name.",
+      "localization_note": "Retain Lil. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 2,
+        "field": "primary",
+        "clean": {
+          "pointer": 34978160,
+          "source_ARM9_field_offset": 1182656,
+          "offset": 1423728,
+          "hex": "838a838b",
+          "text": "リル"
+        },
+        "current": {
+          "pointer": 34978160,
+          "hex": "4c696c",
+          "text": "Lil"
+        },
+        "reason": "Retain Lil. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 3200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280420,
+        "pointer_field": 1288096,
+        "exact_hex": "303220838a838b00"
+      },
+      "current_reference": {
+        "offset": 1432173,
+        "pointer_field": 1288096,
+        "exact_hex": "3032204c696c00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_03",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "03 マリア",
+      "english": "03 Maria",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 03 with the character's selected short name.",
+      "localization_note": "Retain Maria. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 3,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979888,
+          "source_ARM9_field_offset": 1182688,
+          "offset": 1425456,
+          "hex": "837d838a8341",
+          "text": "マリア"
+        },
+        "current": {
+          "pointer": 34979888,
+          "hex": "4d61726961",
+          "text": "Maria"
+        },
+        "reason": "Retain Maria. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 3400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280660,
+        "pointer_field": 1288100,
+        "exact_hex": "303320837d838a834100"
+      },
+      "current_reference": {
+        "offset": 1432164,
+        "pointer_field": 1288100,
+        "exact_hex": "3033204d6172696100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_04",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "04 クラウディオ",
+      "english": "04 Claudio",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 04 with the character's selected short name.",
+      "localization_note": "Retain Claudio. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 5,
+        "field": "primary",
+        "clean": {
+          "pointer": 34985860,
+          "source_ARM9_field_offset": 1182752,
+          "offset": 1431428,
+          "hex": "834e83898345836683428349",
+          "text": "クラウディオ"
+        },
+        "current": {
+          "pointer": 34985860,
+          "hex": "436c617564696f",
+          "text": "Claudio"
+        },
+        "reason": "Retain Claudio. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 3600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281964,
+        "pointer_field": 1288104,
+        "exact_hex": "303420834e8389834583668342834900"
+      },
+      "current_reference": {
+        "offset": 1436921,
+        "pointer_field": 1288104,
+        "exact_hex": "303420436c617564696f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_05",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "05 ジェナス",
+      "english": "05 Janus",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 05 with the character's selected short name.",
+      "localization_note": "Retain Janus. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 4,
+        "field": "primary",
+        "clean": {
+          "pointer": 34981648,
+          "source_ARM9_field_offset": 1182720,
+          "offset": 1427216,
+          "hex": "8357834683698358",
+          "text": "ジェナス"
+        },
+        "current": {
+          "pointer": 34981648,
+          "hex": "4a616e7573",
+          "text": "Janus"
+        },
+        "reason": "Retain Janus. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 3800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280996,
+        "pointer_field": 1288108,
+        "exact_hex": "303520835783468369835800"
+      },
+      "current_reference": {
+        "offset": 1432244,
+        "pointer_field": 1288108,
+        "exact_hex": "3035204a616e757300"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_06",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "06 フリオ",
+      "english": "06 Julio",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 06 with the character's selected short name.",
+      "localization_note": "Retain Julio. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 6,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979624,
+          "source_ARM9_field_offset": 1182784,
+          "offset": 1425192,
+          "hex": "8374838a8349",
+          "text": "フリオ"
+        },
+        "current": {
+          "pointer": 34979624,
+          "hex": "4a756c696f",
+          "text": "Julio"
+        },
+        "reason": "Retain Julio. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 4000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280720,
+        "pointer_field": 1288112,
+        "exact_hex": "3036208374838a834900"
+      },
+      "current_reference": {
+        "offset": 1281473,
+        "pointer_field": 1288112,
+        "exact_hex": "3036204a756c696f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_07",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "07 アルカディウス",
+      "english": "07 Arcadius",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 07 with the character's selected short name.",
+      "localization_note": "Retain Arcadius. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 8,
+        "field": "primary",
+        "clean": {
+          "pointer": 34988036,
+          "source_ARM9_field_offset": 1182848,
+          "offset": 1433604,
+          "hex": "8341838b834a8366834283458358",
+          "text": "アルカディウス"
+        },
+        "current": {
+          "pointer": 34988036,
+          "hex": "4172636164697573",
+          "text": "Arcadius"
+        },
+        "reason": "Retain Arcadius. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 4200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1282524,
+        "pointer_field": 1288116,
+        "exact_hex": "3037208341838b834a836683428345835800"
+      },
+      "current_reference": {
+        "offset": 1426820,
+        "pointer_field": 1288116,
+        "exact_hex": "303720417263616469757300"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_08",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "08 ゲルハルト",
+      "english": "08 Gerhard",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 08 with the character's selected short name.",
+      "localization_note": "Retain Gerhard. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 16,
+        "field": "primary",
+        "clean": {
+          "pointer": 34983244,
+          "source_ARM9_field_offset": 1183104,
+          "offset": 1428812,
+          "hex": "8351838b836e838b8367",
+          "text": "ゲルハルト"
+        },
+        "current": {
+          "pointer": 34983244,
+          "hex": "47657268617264",
+          "text": "Gerhard"
+        },
+        "reason": "Retain Gerhard. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 4400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281388,
+        "pointer_field": 1288120,
+        "exact_hex": "3038208351838b836e838b836700"
+      },
+      "current_reference": {
+        "offset": 1434077,
+        "pointer_field": 1288120,
+        "exact_hex": "3038204765726861726400"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_09",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "09 シャルル",
+      "english": "09 Charles",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 09 with the character's selected short name.",
+      "localization_note": "Retain Charles. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 18,
+        "field": "primary",
+        "clean": {
+          "pointer": 34981444,
+          "source_ARM9_field_offset": 1183168,
+          "offset": 1427012,
+          "hex": "83568383838b838b",
+          "text": "シャルル"
+        },
+        "current": {
+          "pointer": 34981444,
+          "hex": "436861726c6573",
+          "text": "Charles"
+        },
+        "reason": "Retain Charles. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 4600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281008,
+        "pointer_field": 1288124,
+        "exact_hex": "30392083568383838b838b00"
+      },
+      "current_reference": {
+        "offset": 1434088,
+        "pointer_field": 1288124,
+        "exact_hex": "303920436861726c657300"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_10",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "10 マヌエル",
+      "english": "10 Manuel",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 10 with the character's selected short name.",
+      "localization_note": "Retain Manuel. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 23,
+        "field": "primary",
+        "clean": {
+          "pointer": 34980520,
+          "source_ARM9_field_offset": 1183328,
+          "offset": 1426088,
+          "hex": "837d836b8347838b",
+          "text": "マヌエル"
+        },
+        "current": {
+          "pointer": 34980520,
+          "hex": "4d616e75656c",
+          "text": "Manuel"
+        },
+        "reason": "Retain Manuel. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 4800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280972,
+        "pointer_field": 1288128,
+        "exact_hex": "313020837d836b8347838b00"
+      },
+      "current_reference": {
+        "offset": 1280938,
+        "pointer_field": 1288128,
+        "exact_hex": "3130204d616e75656c00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_11",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "11 セラ",
+      "english": "11 Sera",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 11 with the character's selected short name.",
+      "localization_note": "Retain Sera. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 24,
+        "field": "primary",
+        "clean": {
+          "pointer": 34978448,
+          "source_ARM9_field_offset": 1183360,
+          "offset": 1424016,
+          "hex": "835a8389",
+          "text": "セラ"
+        },
+        "current": {
+          "pointer": 34978448,
+          "hex": "53657261",
+          "text": "Sera"
+        },
+        "reason": "Retain Sera. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 5000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280460,
+        "pointer_field": 1288132,
+        "exact_hex": "313120835a838900"
+      },
+      "current_reference": {
+        "offset": 1280420,
+        "pointer_field": 1288132,
+        "exact_hex": "3131205365726100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_12",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "12 カミル",
+      "english": "12 Camille",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 12 with the character's selected short name.",
+      "localization_note": "Retain Camille. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 9,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979592,
+          "source_ARM9_field_offset": 1182880,
+          "offset": 1425160,
+          "hex": "834a837e838b",
+          "text": "カミル"
+        },
+        "current": {
+          "pointer": 34979592,
+          "hex": "43616d696c6c65",
+          "text": "Camille"
+        },
+        "reason": "Retain Camille. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 5200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280612,
+        "pointer_field": 1288136,
+        "exact_hex": "313220834a837e838b00"
+      },
+      "current_reference": {
+        "offset": 1434099,
+        "pointer_field": 1288136,
+        "exact_hex": "31322043616d696c6c6500"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_13",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "13 フェルナンド",
+      "english": "13 Fernando",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 13 with the character's selected short name.",
+      "localization_note": "Retain Fernando. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 20,
+        "field": "primary",
+        "clean": {
+          "pointer": 34986020,
+          "source_ARM9_field_offset": 1183232,
+          "offset": 1431588,
+          "hex": "83748346838b836983938368",
+          "text": "フェルナンド"
+        },
+        "current": {
+          "pointer": 37256532,
+          "hex": "4665726e616e646f",
+          "text": "Fernando"
+        },
+        "reason": "Retain Fernando. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 5400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281932,
+        "pointer_field": 1288140,
+        "exact_hex": "31332083748346838b83698393836800"
+      },
+      "current_reference": {
+        "offset": 1429892,
+        "pointer_field": 1288140,
+        "exact_hex": "3133204665726e616e646f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_14",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "14 エミリオ",
+      "english": "14 Emilio",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 14 with the character's selected short name.",
+      "localization_note": "Retain Emilio. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 14,
+        "field": "primary",
+        "clean": {
+          "pointer": 34982284,
+          "source_ARM9_field_offset": 1183040,
+          "offset": 1427852,
+          "hex": "8347837e838a8349",
+          "text": "エミリオ"
+        },
+        "current": {
+          "pointer": 34982284,
+          "hex": "456d696c696f",
+          "text": "Emilio"
+        },
+        "reason": "Retain Emilio. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 5600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280936,
+        "pointer_field": 1288144,
+        "exact_hex": "3134208347837e838a834900"
+      },
+      "current_reference": {
+        "offset": 1435412,
+        "pointer_field": 1288144,
+        "exact_hex": "313420456d696c696f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_15",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "15 クリスティナ",
+      "english": "15 Cristina",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 15 with the character's selected short name.",
+      "localization_note": "Retain Cristina. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 7,
+        "field": "primary",
+        "clean": {
+          "pointer": 34985876,
+          "source_ARM9_field_offset": 1182816,
+          "offset": 1431444,
+          "hex": "834e838a8358836583428369",
+          "text": "クリスティナ"
+        },
+        "current": {
+          "pointer": 34985876,
+          "hex": "4372697374696e61",
+          "text": "Cristina"
+        },
+        "reason": "Retain Cristina. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 5800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281948,
+        "pointer_field": 1288148,
+        "exact_hex": "313520834e838a835883658342836900"
+      },
+      "current_reference": {
+        "offset": 1436620,
+        "pointer_field": 1288148,
+        "exact_hex": "3135204372697374696e6100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_16",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "16 アンジェロ",
+      "english": "16 Angelo",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 16 with the character's selected short name.",
+      "localization_note": "Retain Angelo. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 15,
+        "field": "primary",
+        "clean": {
+          "pointer": 34983220,
+          "source_ARM9_field_offset": 1183072,
+          "offset": 1428788,
+          "hex": "8341839383578346838d",
+          "text": "アンジェロ"
+        },
+        "current": {
+          "pointer": 34983220,
+          "hex": "416e67656c6f",
+          "text": "Angelo"
+        },
+        "reason": "Retain Angelo. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 6000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281532,
+        "pointer_field": 1288152,
+        "exact_hex": "3136208341839383578346838d00"
+      },
+      "current_reference": {
+        "offset": 1435422,
+        "pointer_field": 1288152,
+        "exact_hex": "313620416e67656c6f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_17",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "17 チェザーレ",
+      "english": "17 Cesare",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 17 with the character's selected short name.",
+      "localization_note": "Retain Cesare. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 13,
+        "field": "primary",
+        "clean": {
+          "pointer": 34983196,
+          "source_ARM9_field_offset": 1183008,
+          "offset": 1428764,
+          "hex": "836083468355815b838c",
+          "text": "チェザーレ"
+        },
+        "current": {
+          "pointer": 34983196,
+          "hex": "436573617265",
+          "text": "Cesare"
+        },
+        "reason": "Retain Cesare. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 6200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281452,
+        "pointer_field": 1288156,
+        "exact_hex": "313720836083468355815b838c00"
+      },
+      "current_reference": {
+        "offset": 1435432,
+        "pointer_field": 1288156,
+        "exact_hex": "31372043657361726500"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_18",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "18 アル",
+      "english": "18 Al",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 18 with the character's selected short name.",
+      "localization_note": "Retain Al. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 17,
+        "field": "primary",
+        "clean": {
+          "pointer": 34978392,
+          "source_ARM9_field_offset": 1183136,
+          "offset": 1423960,
+          "hex": "8341838b",
+          "text": "アル"
+        },
+        "current": {
+          "pointer": 34978392,
+          "hex": "416c",
+          "text": "Al"
+        },
+        "reason": "Retain Al. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 6400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280452,
+        "pointer_field": 1288160,
+        "exact_hex": "3138208341838b00"
+      },
+      "current_reference": {
+        "offset": 1287762,
+        "pointer_field": 1288160,
+        "exact_hex": "313820416c00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_19",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "19 サムウェル",
+      "english": "19 Samwell",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 19 with the character's selected short name.",
+      "localization_note": "Retain Samwell. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 22,
+        "field": "primary",
+        "clean": {
+          "pointer": 34983292,
+          "source_ARM9_field_offset": 1183296,
+          "offset": 1428860,
+          "hex": "8354838083458346838b",
+          "text": "サムウェル"
+        },
+        "current": {
+          "pointer": 34983292,
+          "hex": "53616d77656c6c",
+          "text": "Samwell"
+        },
+        "reason": "Retain Samwell. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 6600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281420,
+        "pointer_field": 1288164,
+        "exact_hex": "3139208354838083458346838b00"
+      },
+      "current_reference": {
+        "offset": 1434110,
+        "pointer_field": 1288164,
+        "exact_hex": "31392053616d77656c6c00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_20",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "20 カルロ",
+      "english": "20 Carlo",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 20 with the character's selected short name.",
+      "localization_note": "Retain Carlo. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 19,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979208,
+          "source_ARM9_field_offset": 1183200,
+          "offset": 1424776,
+          "hex": "834a838b838d",
+          "text": "カルロ"
+        },
+        "current": {
+          "pointer": 34979208,
+          "hex": "4361726c6f",
+          "text": "Carlo"
+        },
+        "reason": "Retain Carlo. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 6800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280624,
+        "pointer_field": 1288168,
+        "exact_hex": "323020834a838b838d00"
+      },
+      "current_reference": {
+        "offset": 1281482,
+        "pointer_field": 1288168,
+        "exact_hex": "3230204361726c6f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_21",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "21 イファ",
+      "english": "21 Yifa",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 21 with the character's selected short name.",
+      "localization_note": "Retain Yifa. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 25,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979328,
+          "source_ARM9_field_offset": 1183392,
+          "offset": 1424896,
+          "hex": "834383748340",
+          "text": "イファ"
+        },
+        "current": {
+          "pointer": 34979328,
+          "hex": "59696661",
+          "text": "Yifa"
+        },
+        "reason": "Retain Yifa. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 7000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280696,
+        "pointer_field": 1288172,
+        "exact_hex": "32312083438374834000"
+      },
+      "current_reference": {
+        "offset": 1424856,
+        "pointer_field": 1288172,
+        "exact_hex": "3231205969666100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_22",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "22 ユリアン",
+      "english": "22 Julian",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 22 with the character's selected short name.",
+      "localization_note": "Retain Julian. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 26,
+        "field": "primary",
+        "clean": {
+          "pointer": 34980532,
+          "source_ARM9_field_offset": 1183424,
+          "offset": 1426100,
+          "hex": "8386838a83418393",
+          "text": "ユリアン"
+        },
+        "current": {
+          "pointer": 34980532,
+          "hex": "4a756c69616e",
+          "text": "Julian"
+        },
+        "reason": "Retain Julian. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 7200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280888,
+        "pointer_field": 1288176,
+        "exact_hex": "3232208386838a8341839300"
+      },
+      "current_reference": {
+        "offset": 1435442,
+        "pointer_field": 1288176,
+        "exact_hex": "3232204a756c69616e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_23",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "23 イアン",
+      "english": "23 Ian",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 23 with the character's selected short name.",
+      "localization_note": "Retain Ian. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 21,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979312,
+          "source_ARM9_field_offset": 1183264,
+          "offset": 1424880,
+          "hex": "834383418393",
+          "text": "イアン"
+        },
+        "current": {
+          "pointer": 34979312,
+          "hex": "49616e",
+          "text": "Ian"
+        },
+        "reason": "Retain Ian. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 7400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280648,
+        "pointer_field": 1288180,
+        "exact_hex": "32332083438341839300"
+      },
+      "current_reference": {
+        "offset": 1432253,
+        "pointer_field": 1288180,
+        "exact_hex": "32332049616e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_24",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "24 ユキヒサ",
+      "english": "24 Yukihisa",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 24 with the character's selected short name.",
+      "localization_note": "Retain Yukihisa. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 12,
+        "field": "primary",
+        "clean": {
+          "pointer": 34980436,
+          "source_ARM9_field_offset": 1182976,
+          "offset": 1426004,
+          "hex": "8386834c83718354",
+          "text": "ユキヒサ"
+        },
+        "current": {
+          "pointer": 34980436,
+          "hex": "59756b6968697361",
+          "text": "Yukihisa"
+        },
+        "reason": "Retain Yukihisa. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 7600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280900,
+        "pointer_field": 1288184,
+        "exact_hex": "3234208386834c8371835400"
+      },
+      "current_reference": {
+        "offset": 1436632,
+        "pointer_field": 1288184,
+        "exact_hex": "32342059756b696869736100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_25",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "25 ジャム",
+      "english": "25 Jam",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 25 with the character's selected short name.",
+      "localization_note": "Retain Jam. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 11,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979832,
+          "source_ARM9_field_offset": 1182944,
+          "offset": 1425400,
+          "hex": "835783838380",
+          "text": "ジャム"
+        },
+        "current": {
+          "pointer": 34979832,
+          "hex": "4a616d",
+          "text": "Jam"
+        },
+        "reason": "Retain Jam. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 7800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280708,
+        "pointer_field": 1288188,
+        "exact_hex": "32352083578383838000"
+      },
+      "current_reference": {
+        "offset": 1287755,
+        "pointer_field": 1288188,
+        "exact_hex": "3235204a616d00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_26",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "26 シエン",
+      "english": "26 Xien",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 26 with the character's selected short name.",
+      "localization_note": "Retain Xien. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 10,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979464,
+          "source_ARM9_field_offset": 1182912,
+          "offset": 1425032,
+          "hex": "835683478393",
+          "text": "シエン"
+        },
+        "current": {
+          "pointer": 34979464,
+          "hex": "5869656e",
+          "text": "Xien"
+        },
+        "reason": "Retain Xien. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 8000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280732,
+        "pointer_field": 1288192,
+        "exact_hex": "32362083568347839300"
+      },
+      "current_reference": {
+        "offset": 1424864,
+        "pointer_field": 1288192,
+        "exact_hex": "3236205869656e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_27",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "27 アズィーザ",
+      "english": "27 Aziza",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 27 with the character's selected short name.",
+      "localization_note": "Retain Aziza. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 27,
+        "field": "primary",
+        "clean": {
+          "pointer": 34983352,
+          "source_ARM9_field_offset": 1183456,
+          "offset": 1428920,
+          "hex": "834183598342815b8355",
+          "text": "アズィーザ"
+        },
+        "current": {
+          "pointer": 34983352,
+          "hex": "417a697a61",
+          "text": "Aziza"
+        },
+        "reason": "Retain Aziza. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 8200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281436,
+        "pointer_field": 1288196,
+        "exact_hex": "323720834183598342815b835500"
+      },
+      "current_reference": {
+        "offset": 1281491,
+        "pointer_field": 1288196,
+        "exact_hex": "323720417a697a6100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_28",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "28 クリフォード",
+      "english": "28 Clifford",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 28 with the character's selected short name.",
+      "localization_note": "Retain Clifford. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 28,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34986068,
+          "source_ARM9_field_offset": 1183492,
+          "offset": 1431636,
+          "hex": "834e838a83748348815b8368",
+          "text": "クリフォード"
+        },
+        "current": {
+          "pointer": 34986068,
+          "hex": "436c6966666f7264",
+          "text": "Clifford"
+        },
+        "reason": "Retain Clifford. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 8400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281980,
+        "pointer_field": 1288200,
+        "exact_hex": "323820834e838a83748348815b836800"
+      },
+      "current_reference": {
+        "offset": 1434065,
+        "pointer_field": 1288200,
+        "exact_hex": "323820436c6966666f726400"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_29",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "29 バルデス",
+      "english": "29 Valdes",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 29 with the character's selected short name.",
+      "localization_note": "Retain Valdes. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 31,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34980952,
+          "source_ARM9_field_offset": 1183588,
+          "offset": 1426520,
+          "hex": "836f838b83668358",
+          "text": "バルデス"
+        },
+        "current": {
+          "pointer": 34980952,
+          "hex": "56616c646573",
+          "text": "Valdes"
+        },
+        "reason": "Retain Valdes. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 8600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280984,
+        "pointer_field": 1288204,
+        "exact_hex": "323920836f838b8366835800"
+      },
+      "current_reference": {
+        "offset": 1435452,
+        "pointer_field": 1288204,
+        "exact_hex": "32392056616c64657300"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_30",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "30 ハイレディン",
+      "english": "30 Hayreddin",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 30 with the character's selected short name.",
+      "localization_note": "Retain Hayreddin. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 34,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34986164,
+          "source_ARM9_field_offset": 1183684,
+          "offset": 1431732,
+          "hex": "836e8343838c836683428393",
+          "text": "ハイレディン"
+        },
+        "current": {
+          "pointer": 34986164,
+          "hex": "48617972656464696e",
+          "text": "Hayreddin"
+        },
+        "reason": "Retain Hayreddin. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 8800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281996,
+        "pointer_field": 1288208,
+        "exact_hex": "333020836e8343838c83668342839300"
+      },
+      "current_reference": {
+        "offset": 1437067,
+        "pointer_field": 1288208,
+        "exact_hex": "33302048617972656464696e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_31",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "31 パシャ",
+      "english": "31 Pasha",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 31 with the character's selected short name.",
+      "localization_note": "Retain Pasha. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 33,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34979384,
+          "source_ARM9_field_offset": 1183652,
+          "offset": 1424952,
+          "hex": "837083568383",
+          "text": "パシャ"
+        },
+        "current": {
+          "pointer": 34979384,
+          "hex": "5061736861",
+          "text": "Pasha"
+        },
+        "reason": "Retain Pasha. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 9000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280672,
+        "pointer_field": 1288212,
+        "exact_hex": "33312083708356838300"
+      },
+      "current_reference": {
+        "offset": 1280735,
+        "pointer_field": 1288212,
+        "exact_hex": "333120506173686100"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_32",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "32 ウッディーン",
+      "english": "32 Uddin",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 32 with the character's selected short name.",
+      "localization_note": "Retain Uddin. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 37,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34986196,
+          "source_ARM9_field_offset": 1183780,
+          "offset": 1431764,
+          "hex": "8345836283668342815b8393",
+          "text": "ウッディーン"
+        },
+        "current": {
+          "pointer": 34986196,
+          "hex": "556464696e",
+          "text": "Uddin"
+        },
+        "reason": "Retain Uddin. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 9200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1282012,
+        "pointer_field": 1288216,
+        "exact_hex": "3332208345836283668342815b839300"
+      },
+      "current_reference": {
+        "offset": 1287720,
+        "pointer_field": 1288216,
+        "exact_hex": "333220556464696e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_33",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "33 クーン",
+      "english": "33 Kuhn",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 33 with the character's selected short name.",
+      "localization_note": "Retain Kuhn. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 40,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34979176,
+          "source_ARM9_field_offset": 1183876,
+          "offset": 1424744,
+          "hex": "834e815b8393",
+          "text": "クーン"
+        },
+        "current": {
+          "pointer": 34979176,
+          "hex": "4b75686e",
+          "text": "Kuhn"
+        },
+        "reason": "Retain Kuhn. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 9400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280636,
+        "pointer_field": 1288220,
+        "exact_hex": "333320834e815b839300"
+      },
+      "current_reference": {
+        "offset": 1287747,
+        "pointer_field": 1288220,
+        "exact_hex": "3333204b75686e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_34",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "34 エスカンテ",
+      "english": "34 Escante",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 34 with the character's selected short name.",
+      "localization_note": "Retain Escante. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 43,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34983580,
+          "source_ARM9_field_offset": 1183972,
+          "offset": 1429148,
+          "hex": "83478358834a83938365",
+          "text": "エスカンテ"
+        },
+        "current": {
+          "pointer": 34983580,
+          "hex": "457363616e7465",
+          "text": "Escante"
+        },
+        "reason": "Retain Escante. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 9600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281404,
+        "pointer_field": 1288224,
+        "exact_hex": "33342083478358834a8393836500"
+      },
+      "current_reference": {
+        "offset": 1434121,
+        "pointer_field": 1288224,
+        "exact_hex": "333420457363616e746500"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_35",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "35 ブランコ",
+      "english": "35 Blanco",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 35 with the character's selected short name.",
+      "localization_note": "Retain Blanco. The original card selects this family-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 60,
+        "field": "secondary",
+        "clean": {
+          "pointer": 34980856,
+          "source_ARM9_field_offset": 1184516,
+          "offset": 1426424,
+          "hex": "8375838983938352",
+          "text": "ブランコ"
+        },
+        "current": {
+          "pointer": 34980856,
+          "hex": "426c616e636f",
+          "text": "Blanco"
+        },
+        "reason": "Retain Blanco. The original card selects this family-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 9800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280924,
+        "pointer_field": 1288228,
+        "exact_hex": "333520837583898393835200"
+      },
+      "current_reference": {
+        "offset": 1435462,
+        "pointer_field": 1288228,
+        "exact_hex": "333520426c616e636f00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_36",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "36 シモン",
+      "english": "36 Simon",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 36 with the character's selected short name.",
+      "localization_note": "Retain Simon. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 48,
+        "field": "primary",
+        "clean": {
+          "pointer": 34979640,
+          "source_ARM9_field_offset": 1184128,
+          "offset": 1425208,
+          "hex": "835683828393",
+          "text": "シモン"
+        },
+        "current": {
+          "pointer": 34979640,
+          "hex": "53696d6f6e",
+          "text": "Simon"
+        },
+        "reason": "Retain Simon. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 10000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280684,
+        "pointer_field": 1288232,
+        "exact_hex": "33362083568382839300"
+      },
+      "current_reference": {
+        "offset": 1287729,
+        "pointer_field": 1288232,
+        "exact_hex": "33362053696d6f6e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_37",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "37 シャルロット",
+      "english": "37 Charlotte",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 37 with the character's selected short name.",
+      "localization_note": "Retain Charlotte. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 80,
+        "field": "primary",
+        "clean": {
+          "pointer": 34986516,
+          "source_ARM9_field_offset": 1185152,
+          "offset": 1432084,
+          "hex": "83568383838b838d83628367",
+          "text": "シャルロット"
+        },
+        "current": {
+          "pointer": 34986516,
+          "hex": "436861726c6f747465",
+          "text": "Charlotte"
+        },
+        "reason": "Retain Charlotte. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 10200,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1282028,
+        "pointer_field": 1288236,
+        "exact_hex": "33372083568383838b838d8362836700"
+      },
+      "current_reference": {
+        "offset": 1281535,
+        "pointer_field": 1288236,
+        "exact_hex": "333720436861726c6f74746500"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_38",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "38 ミヴォール",
+      "english": "38 Mivor",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 38 with the character's selected short name.",
+      "localization_note": "Retain Mivor. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 79,
+        "field": "primary",
+        "clean": {
+          "pointer": 34984048,
+          "source_ARM9_field_offset": 1185120,
+          "offset": 1429616,
+          "hex": "837e83948348815b838b",
+          "text": "ミヴォール"
+        },
+        "current": {
+          "pointer": 34984048,
+          "hex": "4d69766f72",
+          "text": "Mivor"
+        },
+        "reason": "Retain Mivor. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 10400,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281468,
+        "pointer_field": 1288240,
+        "exact_hex": "333820837e83948348815b838b00"
+      },
+      "current_reference": {
+        "offset": 1287738,
+        "pointer_field": 1288240,
+        "exact_hex": "3338204d69766f7200"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_39",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "39 サンヒョン",
+      "english": "39 Sanghyeon",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 39 with the character's selected short name.",
+      "localization_note": "Retain Sanghyeon. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 81,
+        "field": "primary",
+        "clean": {
+          "pointer": 34984060,
+          "source_ARM9_field_offset": 1185184,
+          "offset": 1429628,
+          "hex": "83548393837183878393",
+          "text": "サンヒョン"
+        },
+        "current": {
+          "pointer": 34984060,
+          "hex": "53616e676879656f6e",
+          "text": "Sanghyeon"
+        },
+        "reason": "Retain Sanghyeon. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 10600,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1281484,
+        "pointer_field": 1288244,
+        "exact_hex": "3339208354839383718387839300"
+      },
+      "current_reference": {
+        "offset": 1432215,
+        "pointer_field": 1288244,
+        "exact_hex": "33392053616e676879656f6e00"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_40",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "40 シルウド",
+      "english": "40 Sirwood",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 40 with the character's selected short name.",
+      "localization_note": "Retain Sirwood. The original card selects this given-name form, which matches the approved actor field.",
+      "approved_name_reference": {
+        "actor_ID": 78,
+        "field": "primary",
+        "clean": {
+          "pointer": 34981012,
+          "source_ARM9_field_offset": 1185088,
+          "offset": 1426580,
+          "hex": "8356838b83458368",
+          "text": "シルウド"
+        },
+        "current": {
+          "pointer": 34981012,
+          "hex": "536972776f6f64",
+          "text": "Sirwood"
+        },
+        "reason": "Retain Sirwood. The original card selects this given-name form, which matches the approved actor field."
+      },
+      "gameplay_frame": 10800,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280960,
+        "pointer_field": 1288248,
+        "exact_hex": "3430208356838b8345836800"
+      },
+      "current_reference": {
+        "offset": 1281388,
+        "pointer_field": 1288248,
+        "exact_hex": "343020536972776f6f6400"
+      }
+    },
+    {
+      "id": "CHARACTERS_GALLERY_NAME_41",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Characters Gallery",
+      "clean_Japanese": "41 ビアンカ",
+      "english": "41 Bianca",
+      "decision": "retention",
+      "context": "The numbered character card uses the short name chosen in the original portrait viewer.",
+      "source_meaning": "Gallery entry 41 with the character's selected short name.",
+      "localization_note": "Bianca matches the clean named voice in Angelo's dream and the approved story spelling.",
+      "approved_name_reference": {
+        "story_review": "translations\\maria310_integrated_final_review_v1.json",
+        "record": "DK4_MES_B55_R0133",
+        "file_path": "/data/SC3.DK4",
+        "source_reference": {
+          "block": 55,
+          "command_offset": 1580,
+          "offset": 1585,
+          "length": 53
+        },
+        "recorded_speaker": "Bianca, explicitly labeled dream voice",
+        "reason": "Bianca matches the clean named voice in Angelo's dream and the approved story spelling."
+      },
+      "gameplay_frame": 11000,
+      "review": {
+        "formatting": true,
+        "naturalness": true,
+        "context": true,
+        "localization": true,
+        "source": true
+      },
+      "source_reference": {
+        "offset": 1280912,
+        "pointer_field": 1288252,
+        "exact_hex": "343120837283418393834a00"
+      },
+      "current_reference": {
+        "offset": 1435472,
+        "pointer_field": 1288252,
+        "exact_hex": "3431204269616e636100"
+      }
+    }
+  ],
+  "registered_release": "releases\\all_routes_editorial_20261121_historic_sites_candidate\\verification\\registered_release_verification.json",
+  "candidate_sha256": "6cc48861a962e3fbe011850646eff6c5e07f4834cb8562521953a39caebdb6bc",
+  "emulator_cases": [
+    {
+      "frame": 2800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 116
+        }
+      ],
+      "before": {
+        "frame": 2800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_002800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "5d079e36d4ad94894bc1facdc798394b91e2fb8f550481158749725d7e25561c",
+        "framebuffer_sha256": "3aa43cb10e329c511e5e62f37e089ce5e5286fddecce95fae2598853b4170982"
+      },
+      "actual": {
+        "frame": 2800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_002800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "03a72d09e17dc10a4b1bab7af12b2d8b5a2a788e93d53f60e00b56e29ae85f2c",
+        "framebuffer_sha256": "39152c7b95191ef8cb66d0472f37ae362ed65611cc62a25defab7fba70810127"
+      }
+    },
+    {
+      "frame": 3000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 116
+        }
+      ],
+      "before": {
+        "frame": 3000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_003000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "3ca5700a03c01148b3e006fe304cd628691c19f21e91439c77d38930fe6ad43d",
+        "framebuffer_sha256": "7d4ba651448759d13079d96e819f1a43bb4de017c7113d2b1337b1038e37a483"
+      },
+      "actual": {
+        "frame": 3000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_003000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ce7ce7ca9d891ae0e4b9c73885fd68ae62b1020cff8115ea3fd881d7f3aa86d7",
+        "framebuffer_sha256": "8f814c4bf957dce90f71687260cc7d9cda7288152355cb78b7a3686da986f015"
+      }
+    },
+    {
+      "frame": 3200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            110,
+            263,
+            146,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 62
+        }
+      ],
+      "before": {
+        "frame": 3200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_003200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0e73301b770cb6239e92577f3d50df667ecdbf3fae9719e832f5bb76da335b45",
+        "framebuffer_sha256": "d921b88ee13930b9641c190c3dc4b025bf2cc987b3eafb15d53d6f1031be2940"
+      },
+      "actual": {
+        "frame": 3200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_003200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "8944a8499e5819bcab2ce24fe426bb74ce5853b04320506270caf2f3c150c983",
+        "framebuffer_sha256": "77822ef1aa6b169445e3e62b3e8c48722cc3b086ce111ed4824155f7649bdedf"
+      }
+    },
+    {
+      "frame": 3400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 105
+        }
+      ],
+      "before": {
+        "frame": 3400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_003400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1d4754bc38f3d4c0b900e1d71a9c061953327d98d8ba47115382940cdfb91141",
+        "framebuffer_sha256": "033c2bcaa5d5829269f97ea17dfd2c749eff5a8ee14c04334deab9e20390350f"
+      },
+      "actual": {
+        "frame": 3400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_003400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e55ef3045b88252ed3cba5678cc964b9e7c746a1ba49ffaf9703988518989513",
+        "framebuffer_sha256": "b384e36e701fe9412a73c1a8ba8db15565ee22fe44bf204589fedc3b2e1f6515"
+      }
+    },
+    {
+      "frame": 3600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 123
+        }
+      ],
+      "before": {
+        "frame": 3600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_003600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "7e988fb50c1af31654872ae4352875f8c1188dd72bcec68eaccb3844f64e0f19",
+        "framebuffer_sha256": "b652e9c232d5e510d1bdd890e789aafa6476fdc2d0dbd1fdf43636c2c0f5fa13"
+      },
+      "actual": {
+        "frame": 3600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_003600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "3d583406a0e8148a7a2743aef1c3b4945d7f35e8def4792d3e54050841acca73",
+        "framebuffer_sha256": "703b36aa11d4e574ed62ffd326b8c61c54194a5e19eae3a0c231441e4a0ea1d7"
+      }
+    },
+    {
+      "frame": 3800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 97
+        }
+      ],
+      "before": {
+        "frame": 3800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_003800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "b259573a7b72ee61f52a4cbc34fb2b949b0dc96adb3c7ce66210b8148938aa90",
+        "framebuffer_sha256": "e1850c6868a95288f960c205a0add3b957da456978be2a8339500899abedd9b1"
+      },
+      "actual": {
+        "frame": 3800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_003800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6d674bcdb655211bd94886017abbb441a6b0bf98f00a15361b2867fc7b316452",
+        "framebuffer_sha256": "a31766ba501056fbcbe73ea31bd7a9a5e2058deb89e8127c10ff11c434b22b27"
+      }
+    },
+    {
+      "frame": 4000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 91
+        }
+      ],
+      "before": {
+        "frame": 4000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_004000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "9621330e6cde82dd6d23b19c80b08d668ed8b835bb95f93f9bddb3b1fabf6320",
+        "framebuffer_sha256": "7e0d9b0314cca839bed80aafac25d1f5585c7e22f6cee666fdea165bc54d325f"
+      },
+      "actual": {
+        "frame": 4000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_004000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e39d86f9f6f0b78f618c0d85edb1d1fc31d31e75b1d5b70e2109ecb1a0dc48f2",
+        "framebuffer_sha256": "90d12a6f9a01bd5acf80fe896c7a28252b2f982f0df099e34c3417471f55742b"
+      }
+    },
+    {
+      "frame": 4200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            95,
+            263,
+            161,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 129
+        }
+      ],
+      "before": {
+        "frame": 4200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_004200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "727eaada8fce162f5146ef186f862d2447b0db4cad57f4aab22b089d4980b21f",
+        "framebuffer_sha256": "be8f0921de046325d57cf8b7718f040a1f8e21236eb3b2ddacf462add361b3d6"
+      },
+      "actual": {
+        "frame": 4200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_004200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1dda0389085dfce4e4883fb95631642f1e9fdaf908e314846eb074241770bdaa",
+        "framebuffer_sha256": "e6c5ed84a4985bad02b18ab05240f3c0b7deea6b9a806b4716950e1db823b29d"
+      }
+    },
+    {
+      "frame": 4400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 130
+        }
+      ],
+      "before": {
+        "frame": 4400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_004400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f54520df2f94a1fb894aa3ef27f762249e2f9bdb2a8ccb122cc4ec402bfaaecb",
+        "framebuffer_sha256": "eda6ef4097a0b7bddc6a8c014a14c4ea15b3c822d340817c5f467f218d91703d"
+      },
+      "actual": {
+        "frame": 4400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_004400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "545fb126c438414fe10ef08506040945cd99f155338f4e649997c4ddab919ae6",
+        "framebuffer_sha256": "a1126c778f322d24dbd2f53bd2c275183b6c7dcf6535e1a6c69a1d442fb057a0"
+      }
+    },
+    {
+      "frame": 4600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 121
+        }
+      ],
+      "before": {
+        "frame": 4600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_004600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "746949c7a050268897616f16a12628aee53a519d828c88bc1ef562108f02d3c8",
+        "framebuffer_sha256": "91442dc87f6a7d5f149cfb7058f0dce7e3b0130e11fda1a7ced66b3c5f2dc4be"
+      },
+      "actual": {
+        "frame": 4600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_004600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "df124e0188d477e4c723a90a136c7e341a80fefa8d7ec2a2f255330eef557262",
+        "framebuffer_sha256": "28be5daa5aefebd9ec9217d37d6404e0bff96ade70dc5db1320fce172252c4fd"
+      }
+    },
+    {
+      "frame": 4800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 118
+        }
+      ],
+      "before": {
+        "frame": 4800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_004800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "25f87d03d86fb6f4cb32be76fe169e95f14d54dca40abf14d1fe7b9a4db37efa",
+        "framebuffer_sha256": "0191c353c6060b0b3bf99e497973f3943e8dcea83b7dba9e4195f2140b0087b1"
+      },
+      "actual": {
+        "frame": 4800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_004800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1795d10b1f17850d9113eda53086bd07c1293da74c48a8460ab1c8b21e006da8",
+        "framebuffer_sha256": "a6fa7d9526346f7d03be7d4669997af668fa27cd488340b7669bae75cf7fbcfe"
+      }
+    },
+    {
+      "frame": 5000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            107,
+            263,
+            149,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 69
+        }
+      ],
+      "before": {
+        "frame": 5000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_005000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "32a14b338ac27c575d52364efb0af266f225a57770d3d45e043debbcc799f285",
+        "framebuffer_sha256": "77454fede3f7efcdc5ebc93dcbfa104951060c0daa608df888241ccbd6460a0d"
+      },
+      "actual": {
+        "frame": 5000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_005000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "de7cb8c46182f42dd5e0e4e113b770d4efad78ee454a8237072a2e82ace9ccf8",
+        "framebuffer_sha256": "5702d2377bf2f50bedb96aff485f035666c08caeb247afa75a9b8e702395f068"
+      }
+    },
+    {
+      "frame": 5200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 110
+        }
+      ],
+      "before": {
+        "frame": 5200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_005200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "875f8290f06b930bf914347a9f093971f38c82d3b578c8d1502dfdbd6a28eec7",
+        "framebuffer_sha256": "39963e15e2def8bd8697d63bb9b65047728e1ad523ee9f4e067455e49660f01c"
+      },
+      "actual": {
+        "frame": 5200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_005200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "591ed5cbe4482ee7e53e9d0307a4d1440dd9832fe38597f6dd5dd52f6d8ae959",
+        "framebuffer_sha256": "521dfbfafff4f11db6d7fa1f519fb9e2f620fd8c8c86ac803de6a9993342e1a6"
+      }
+    },
+    {
+      "frame": 5400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            95,
+            263,
+            161,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 129
+        }
+      ],
+      "before": {
+        "frame": 5400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_005400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "4ad6b0840ee4b5435e23deee77991141728ffcded593a68fb8adac69c5339c9e",
+        "framebuffer_sha256": "cdef9a5944843c3a6e95676de8eac6827279c44776d02eedf0267940fe11d141"
+      },
+      "actual": {
+        "frame": 5400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_005400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d90fee9ed455e7f4fa4bc8b7e390eb5b5b61971202d54a0d9a84820c7eb1bd5a",
+        "framebuffer_sha256": "0257439f90fa3740423042b9811b0b462013d285f5f40745fad3626897790144"
+      }
+    },
+    {
+      "frame": 5600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 100
+        }
+      ],
+      "before": {
+        "frame": 5600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_005600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "bfede2a0a0fb7d8f64ac95fc37c40a70b3ec11e09b6d80e397a9b71a471fb94c",
+        "framebuffer_sha256": "b2a7311e58e3ee85b8fe13a36b068b5d15d3532b570855f64c6b2d9dad811ea7"
+      },
+      "actual": {
+        "frame": 5600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_005600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "80fe9f390c5465e963ace29a5c5baa70de7baf23b51e5e3af040efe7b1c030b9",
+        "framebuffer_sha256": "61a98151671586f7cee853d238658e27493a5ebad8cb73b84e055dc8fca7603e"
+      }
+    },
+    {
+      "frame": 5800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            95,
+            263,
+            161,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 115
+        }
+      ],
+      "before": {
+        "frame": 5800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_005800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f1308a55e5b9787c066c2b5b81b2b699ac23cb2d724aa16bbb87a42e31b0bd20",
+        "framebuffer_sha256": "3256c7a4b1ee669e0b2ccb95d37fc646972fa6c43523d49245d2d3b5d97e6460"
+      },
+      "actual": {
+        "frame": 5800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_005800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "50899f177126180952755dc046032c27c81a6b759427ed14ea2f89e8a865f2a7",
+        "framebuffer_sha256": "a8e551880ff22d8390cfdbb5c4b242fef8de005f8f70779654cfb1ce2e6db0d5"
+      }
+    },
+    {
+      "frame": 6000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 113
+        }
+      ],
+      "before": {
+        "frame": 6000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_006000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ae7b4c0e6346eda006e77b399c731a5842e999fb6844fa51df33be015edbaa32",
+        "framebuffer_sha256": "cea1d7bf7626245fb0056f193af1b6327b32611b0f0a12fdcffc616ddb8eef17"
+      },
+      "actual": {
+        "frame": 6000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_006000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ba67c808cae42c558f0b69a711e952efeca9acd82663273addff961aa5c36f01",
+        "framebuffer_sha256": "bf686613d8735d65a50210a42eb6710041ce7b42808177c6be0f9c1b1cab1d5e"
+      }
+    },
+    {
+      "frame": 6200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 94
+        }
+      ],
+      "before": {
+        "frame": 6200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_006200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d19a47c4a1dc6a7180117f7bdf63c24ace53304a592df6d3865b0b0946cea919",
+        "framebuffer_sha256": "ecc007b30b31945911977a870d430fbdcabbad312b2dde7004115bd6b1cd69de"
+      },
+      "actual": {
+        "frame": 6200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_006200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "de8a24573e2a45fe23ed876b7c22e0637e57fe71c1006e09dd3e542d0dae8601",
+        "framebuffer_sha256": "32f7c251f4c891a013457ef28f33483eb4c13a62de81212bf293800b4eb69754"
+      }
+    },
+    {
+      "frame": 6400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            113,
+            263,
+            143,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 57
+        }
+      ],
+      "before": {
+        "frame": 6400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_006400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d5a191798bcb3831314b5d0baf460f6fa6f86eb9b0dee97b53d77c7113509ec8",
+        "framebuffer_sha256": "84251fbe822444a054b905009cbfcf9dc38d1e2860f1a9b4c22c4da426376b21"
+      },
+      "actual": {
+        "frame": 6400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_006400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "04e71c79b7667536b02e231b2ca5acd8fc03ff6d7387314582caabd786cbdb3d",
+        "framebuffer_sha256": "ca002c4ca5b4ee1cdca01bfb3a3b9e0221d51c19955a092e43544932e7cced31"
+      }
+    },
+    {
+      "frame": 6600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 121
+        }
+      ],
+      "before": {
+        "frame": 6600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_006600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "d9b9eca33ba0e3461df7e21bedb7d236a83ff78e0521184403cf2009f43e8106",
+        "framebuffer_sha256": "dc9b280b36fc1da4a0894536cdd9bdc26772f9cd454ee66ddee29f1dc0feb8fe"
+      },
+      "actual": {
+        "frame": 6600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_006600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "669f9610df0088861c79b08d5cc23abbf323c6ddc83727a5a6df7306fffc764b",
+        "framebuffer_sha256": "760e9c1fd21d67876e0188e4641ef2181abbef03b74dd2f3d035b1cc6b4c6701"
+      }
+    },
+    {
+      "frame": 6800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 90
+        }
+      ],
+      "before": {
+        "frame": 6800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_006800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "726fbce9f328e4781ba4822de32f46f01424b91bdd63e560d3cd354f643a517c",
+        "framebuffer_sha256": "e13f649745bb59614dc36c675c3520ea42a2f79196ffe1a7ea8844ab3b1c88b5"
+      },
+      "actual": {
+        "frame": 6800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_006800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e906a5592525dc041ff58890791c678f43326f0f14fc51328cccb1a4c24deaa2",
+        "framebuffer_sha256": "b34ef238ffd9d1dae4d883c25e3a0dc59cde8348864e76a35eb0631a5a944936"
+      }
+    },
+    {
+      "frame": 7000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            107,
+            263,
+            149,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 72
+        }
+      ],
+      "before": {
+        "frame": 7000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_007000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1e9fd88a71bb3727e3e33d50e86e4c9096b5bd8637b676a1bea74cc18cbda5c2",
+        "framebuffer_sha256": "55054089b9eea584fad5f3c8d8320be4990c40bf777f02071b0fa3a429105b76"
+      },
+      "actual": {
+        "frame": 7000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_007000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "9ccc2808c4fe2f0508a08d4fcefe849a9ed1ffebe553d31b1c5e3afd66eb0dab",
+        "framebuffer_sha256": "bd9a70dc1a7e5b78432dbe3fd5a9e28b3136d6d8024c0bbd018459ae64a11c7f"
+      }
+    },
+    {
+      "frame": 7200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 98
+        }
+      ],
+      "before": {
+        "frame": 7200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_007200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "cde541f63043b6d73b53733fa3040d3f5e60766c81db52a59fa2fe29d9ff4992",
+        "framebuffer_sha256": "7b67567ca374e18fd8ae00ecdde18e0c5e215a0c5793136159c37b16f1b320c9"
+      },
+      "actual": {
+        "frame": 7200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_007200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "94f848cc7bd18d6b271b05b9f645a23292a8da3310fc43a77833bdae0020626e",
+        "framebuffer_sha256": "5108509adfa5dc40cfd1819105b817ea825f096983789c888ea9a9f21bcc5f18"
+      }
+    },
+    {
+      "frame": 7400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            110,
+            263,
+            146,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 66
+        }
+      ],
+      "before": {
+        "frame": 7400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_007400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "3be53488bd5ca5cdd9e8843c73328373b869d46c2ac5eb3a8cbedf40e6db6cf6",
+        "framebuffer_sha256": "6d290ac193074f716d6237d6438d6e159451e1dc4d059432bf9d69a5c045c7cb"
+      },
+      "actual": {
+        "frame": 7400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_007400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "a3f8a1588e8f21d58f93e651922b59c6a4613130dfa19742fce3999ed41d13fc",
+        "framebuffer_sha256": "58cd6149a5affd221ca4261ec5a3ba380c84bd3e149792149cc7bcdbe96a5d1b"
+      }
+    },
+    {
+      "frame": 7600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            95,
+            263,
+            161,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 130
+        }
+      ],
+      "before": {
+        "frame": 7600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_007600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f36d654b1d963ebedb0730daccbf98c15d1c5ab84bcf0c895825842489f510a3",
+        "framebuffer_sha256": "1c9e73d253e7cb4c4db12ed7651fd62d50de980b88d7962f133ece6740a318fb"
+      },
+      "actual": {
+        "frame": 7600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_007600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1a02a01fd93381f8ac6bdd08fa6605a1298a2762d03be4514aa20d21df878f3a",
+        "framebuffer_sha256": "6fbb5195b0cb5c58f5bb1008af682d82f483e8616d2ebf165bbda107600558bb"
+      }
+    },
+    {
+      "frame": 7800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            110,
+            263,
+            146,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 76
+        }
+      ],
+      "before": {
+        "frame": 7800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_007800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1674bf6f69b4747623b1dddbccb6bc5b52f56bf786ddb95a58aa35afa5f38b5e",
+        "framebuffer_sha256": "dbee4067852a95b7ed9b0157be02b695bb4d2149d2a1335468aff69ebd8e87fd"
+      },
+      "actual": {
+        "frame": 7800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_007800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1416f14e7f1aff9bbf0e787727161c89f8975102dd4f9dfe9f5c2a43d9877d02",
+        "framebuffer_sha256": "69d7b9949323cf528eef002927c11dd7dbc724e7b438bd41020b72d78e1212c0"
+      }
+    },
+    {
+      "frame": 8000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            107,
+            263,
+            149,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 86
+        }
+      ],
+      "before": {
+        "frame": 8000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_008000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "4b9142f4f69ac481f96143590388498ff60a4c29ee9631347238817a29a42b33",
+        "framebuffer_sha256": "5347baa568872268d64abe442c4d355e1ce8cd46cdd5cfa83c7665aab69c61ce"
+      },
+      "actual": {
+        "frame": 8000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_008000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "5b4b0e8ca69643b614373716aa3fd7cef8a49c4892776c7b760d68da4e563f62",
+        "framebuffer_sha256": "e3a526dc01eac2c7af98c062bb70146efdd58cad7219d506caadd4db45bae2d4"
+      }
+    },
+    {
+      "frame": 8200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 92
+        }
+      ],
+      "before": {
+        "frame": 8200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_008200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "64d02b289ae95dde0bf629ec0a6486a61a1f0a1d742fceac0ac328518847b7b0",
+        "framebuffer_sha256": "9a9179232c232a28614d33cde0b2629a040aaede3b472b541dbeca94ed6dfa49"
+      },
+      "actual": {
+        "frame": 8200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_008200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "9e084471b43e817182c5e897fc22d5c4ad3471d8b3f2c843491f8d18abb3d548",
+        "framebuffer_sha256": "2e8b0b9161a123da51d2bad4b872dae654aaacec3596c6ecc755b2bbafcd6d54"
+      }
+    },
+    {
+      "frame": 8400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            95,
+            263,
+            161,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 126
+        }
+      ],
+      "before": {
+        "frame": 8400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_008400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "20723f084fcc9d2ccde8f4457eb00ca6dbed516962d3b68c2b1695322b818fee",
+        "framebuffer_sha256": "a3222b5cbf2712855b40f0f1749a5900e1f1507f37c886e26131f359baa738b3"
+      },
+      "actual": {
+        "frame": 8400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_008400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "466544ce846ef4e7a16372123d1fef926070141fb2efa7d7617703c6ff9d849b",
+        "framebuffer_sha256": "6cf48aef22c9d520581d4286430566131c3f2e6bb463d69bfc7e331b949e6ad2"
+      }
+    },
+    {
+      "frame": 8600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 112
+        }
+      ],
+      "before": {
+        "frame": 8600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_008600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "5862fd21794958679fc5abbdf1bf97e1bd9ab7f6096dd95482caa31f20773ff8",
+        "framebuffer_sha256": "fd78a9bd459bc10a87ad8014fa83db81043c8618ced54d70358f24ce6693f2a5"
+      },
+      "actual": {
+        "frame": 8600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_008600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "10d999e6cdb01ca0c31b106d5ce5762c6af905543f68841f0506f3bd9c953a3b",
+        "framebuffer_sha256": "315fcf54d6fc5c2a61b74d5186c86e51a7ca379ef3e9a945b003afc0a8a0643d"
+      }
+    },
+    {
+      "frame": 8800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            92,
+            263,
+            164,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 155
+        }
+      ],
+      "before": {
+        "frame": 8800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_008800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "2de62c247ca13c255d30a04005f97ffb0990dce7884cee7af9855cc535702af7",
+        "framebuffer_sha256": "d3b01dd289626ca935f467ed61513b62f38da3817cf95e1878b26fe87c7e0c28"
+      },
+      "actual": {
+        "frame": 8800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_008800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "20101875980d0c321c24978d361b8c7f2a6b65e7f0f5aedf0e9f306204928d6a",
+        "framebuffer_sha256": "c84860c2d423092ab0e19c5c4d770b56bfb488abebabe7e4649bf02cad68f22f"
+      }
+    },
+    {
+      "frame": 9000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 94
+        }
+      ],
+      "before": {
+        "frame": 9000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_009000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f14080cf8617fb828fb57ccb38d67f8a107ffb7ccd982a95ef547e288a64333e",
+        "framebuffer_sha256": "a7dcdd796854f93792d17b99bf2a2760d69c65f7ef76b4a9515f3df5f8d50f78"
+      },
+      "actual": {
+        "frame": 9000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_009000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "e836ae7151923863b200abed1611242d443ab7dffb05bd55cfe3173ea71e42ca",
+        "framebuffer_sha256": "6d20214a608bb951ea0baa5a4a3ba92440bfdc984e6f58de499b675b7d2bef54"
+      }
+    },
+    {
+      "frame": 9200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 104
+        }
+      ],
+      "before": {
+        "frame": 9200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_009200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "42b274bc54fcf7823adc999c3ef11e0a86eb8884a2b7766a03c10dfad56e91e4",
+        "framebuffer_sha256": "fbc2b9ffca141b94071af4521f25b5578d9fc6c6b2914ba6fcc65c66370fddd4"
+      },
+      "actual": {
+        "frame": 9200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_009200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "755744a4a715ada602666d5efb26d3eeadade30192066cc4f10e66c0cf16aeb0",
+        "framebuffer_sha256": "484f3b2a77c056d59c783b89746d9cf6d38cf1b9c97d0c178c742279b2f4300a"
+      }
+    },
+    {
+      "frame": 9400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            107,
+            263,
+            149,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 92
+        }
+      ],
+      "before": {
+        "frame": 9400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_009400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "89853000e029d9215d4953e6532e71ec345405bcc0d1eab12ea63214deaff347",
+        "framebuffer_sha256": "e55e8504074d6dcc981e76f1d7762e7dea9af67de22c8cfeda38d191def9bc17"
+      },
+      "actual": {
+        "frame": 9400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_009400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "32f1f5b0f655dee6a11bd23157fa0196f3f085263c24741a81f5ac8b2a43a2a5",
+        "framebuffer_sha256": "252ebd6563cb1793782819b54e892733ee96bac11ff15b0db5333f4a196eb527"
+      }
+    },
+    {
+      "frame": 9600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 122
+        }
+      ],
+      "before": {
+        "frame": 9600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_009600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "cea57cdbe15e74f38fe470bd3899d6fd52df945a7feef1ea41462878e52bd5eb",
+        "framebuffer_sha256": "c7160d97fd27a1f46598262102f923112332b380a32f9137188c0882043bcadc"
+      },
+      "actual": {
+        "frame": 9600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_009600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "11398fc3b14c4f69bf5cf38509cf9e137c8acb7623f5cdacc049cb2878f8e092",
+        "framebuffer_sha256": "d873148f24441bd5e590dea52cb713a92e59f53cd2fbad4a90db8909607857a2"
+      }
+    },
+    {
+      "frame": 9800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 112
+        }
+      ],
+      "before": {
+        "frame": 9800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_009800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f1c51c7a0c0f98442e07b9b1b38ae8bf07296de521d64a7d49cc4f7598e2e578",
+        "framebuffer_sha256": "f2cb187b76ca7cc9b5892df6007fb5c81c404224bbcb4d68eb59e084eb6ac971"
+      },
+      "actual": {
+        "frame": 9800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_009800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "553d0a6e824d876a2c5e5276bbd6d4ad76b2a13cb083001a511dbd85b50015f6",
+        "framebuffer_sha256": "6422443eec2dd6cb5119f000711d88e0b0f2094d45e744de73e12df5261ed6b4"
+      }
+    },
+    {
+      "frame": 10000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 101
+        }
+      ],
+      "before": {
+        "frame": 10000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_010000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "a4fba554c6fa5f81eddf8e8aa6417092ce086e3cfd78c65ec19af8cd0acfdd9e",
+        "framebuffer_sha256": "67afd8eadfb6ab709990e9ccd6877f9523969b1e35e53934688bb930d864c01f"
+      },
+      "actual": {
+        "frame": 10000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_010000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "2b1b9e31b9c05248009a11f18f9104c080ee0cbf05e1e0fc83e95b65bce83a1e",
+        "framebuffer_sha256": "a1dba672854ebd882f7c4aa1a2c2bb7c7155a3ca6a369fb83def564a85a46967"
+      }
+    },
+    {
+      "frame": 10200,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            92,
+            263,
+            164,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 138
+        }
+      ],
+      "before": {
+        "frame": 10200,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_010200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "a5e8305813fcbba321ec7b61d897909aa90bec04c8b47fe6da1c14c2884b1e1e",
+        "framebuffer_sha256": "f480d03b35f50dbb4cc69c4d51d80a79541defc5c7156e60add0c435b19da6ff"
+      },
+      "actual": {
+        "frame": 10200,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_010200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "ac8e7bd6632b011c8a1b64046a04c4b189b86f8be302d117756a54c9e7cf848e",
+        "framebuffer_sha256": "7f81989f5dad3769c689d796994261c965babec0cbaef9c7d004b1a9e7975e35"
+      }
+    },
+    {
+      "frame": 10400,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            104,
+            263,
+            152,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 103
+        }
+      ],
+      "before": {
+        "frame": 10400,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_010400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "50b950578849632f5d55940ec20d542d03d1fb019d340c612f045fe9d852e279",
+        "framebuffer_sha256": "302dea8b8622184c5110bf15a2646beac92b5387f4ed1bb3a898bb8c742cc47e"
+      },
+      "actual": {
+        "frame": 10400,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_010400_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "bf18fee047714a870cf6ba1fd087d47562170f0a13189cb1a5f88b27e031f23e",
+        "framebuffer_sha256": "a0244ddbe49f88e2111b51a500e4a3c137d057bbe8081477e33fce6473056385"
+      }
+    },
+    {
+      "frame": 10600,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            92,
+            263,
+            164,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 159
+        }
+      ],
+      "before": {
+        "frame": 10600,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_010600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "5892a3a7a2b509de187bdc368e63ff6355268c8e29014d52ecff85c83525bfad",
+        "framebuffer_sha256": "17510fca514bfb1f6e0ca20d1856db62fe8ee426ade4ab9e790e4dd824b4529d"
+      },
+      "actual": {
+        "frame": 10600,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_010600_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "b3ba4ea26848713eb226a7f0689a75b462aa41a9f4aaa9ceb89fa119bc98d606",
+        "framebuffer_sha256": "65b4006eee96f57b77c2c10ee72b814f931e11b46c93ea859b0808ce3f9ca2c6"
+      }
+    },
+    {
+      "frame": 10800,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            98,
+            263,
+            158,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 123
+        }
+      ],
+      "before": {
+        "frame": 10800,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_010800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "5660cbb8f07c571fcf1c276352fd0cc4e14518e43158fd932d2f591fd148a638",
+        "framebuffer_sha256": "f5be42c36b5f382ff837a3ff08ab4533b82d6c583d1d3c3b45fd8935b20d70aa"
+      },
+      "actual": {
+        "frame": 10800,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_010800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f4fd11c2249f63b255238d9d90292a505b49987e5ba90ec71c91faf952f5a6fc",
+        "framebuffer_sha256": "e47bd1931653d48e7fe1385f405d9a5826c68146c572aff660442854791e150c"
+      }
+    },
+    {
+      "frame": 11000,
+      "exact_portrait_pixels": 49152,
+      "checked_masks": [
+        {
+          "bounds": [
+            98,
+            195,
+            158,
+            206
+          ],
+          "native_plane": [
+            92,
+            194,
+            164,
+            207
+          ],
+          "complete_ink_pixels": 118
+        },
+        {
+          "bounds": [
+            16,
+            217,
+            148,
+            228
+          ],
+          "native_plane": [
+            16,
+            216,
+            152,
+            232
+          ],
+          "complete_ink_pixels": 208
+        },
+        {
+          "bounds": [
+            101,
+            263,
+            155,
+            274
+          ],
+          "native_plane": [
+            32,
+            262,
+            224,
+            276
+          ],
+          "complete_ink_pixels": 106
+        }
+      ],
+      "before": {
+        "frame": 11000,
+        "path": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\frame_011000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "0bfa5877db9167566c8285c19ed004f96bcc4c2897a6985a19c916daf624801e",
+        "framebuffer_sha256": "24cae97ef8f170af88ad066bbabf1789f5216f712bca5d26753ddf53904c93db"
+      },
+      "actual": {
+        "frame": 11000,
+        "path": "work\\characters_gallery_editorial_20261121\\capture\\frame_011000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "2f8b09d4521166ce209a98ed2eae4c1ae49d05d447a52e226d203cfc0c9cb9d1",
+        "framebuffer_sha256": "3aab43c8768d7a9d911eb9687c406f41df63df62162a765affe9159facef8446"
+      }
+    }
+  ],
+  "complete_masks": 126,
+  "original_controls": true,
+  "wrapped_to_first_card": true,
+  "returned_frames": [
+    11400,
+    11600
+  ],
+  "initialized_collection": true,
+  "natural_unlock": false,
+  "hardware": false,
+  "new_credit": 0,
+  "rom_changed": false,
+  "contact_sheet": {
+    "path": "work\\characters_gallery_editorial_20261121\\complete_numbered_names.png",
+    "sha256": "6ffc421e93c0bbc0838f9df98884a26dd266a5716e4b032fd90d686de8755cf9"
+  },
+  "evidence": {
+    "work\\characters_gallery_editorial_20261121\\capture\\capture_report.json": "e77b32795978cf257f47e0f1fa023342ba46e4c077202dc5b493c3eaa127a2b5",
+    "work\\characters_gallery_editorial_20261121\\fixture.json": "f85566ce5b8a10bd0c5f5c4cca9763e7e22b1a7367872bf85b66196d734a68af",
+    "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\site_descriptions_v534_characters\\capture_report.json": "e8c2ffa651a98be9595059d0cdd852bca41d8a234818f1c65c072ab5147640c2",
+    "releases\\all_routes_editorial_20261121_historic_sites_candidate\\verification\\registered_release_verification.json": "1cda82fe4027ba75b228ba020bea987ac718d877d4092634bdaba8cfc6fccdc9",
+    "work\\analysis\\characters_gallery_v525\\run_plan.json": "ad834f1a102f23a6eb2987323d19a96b0ecb2dd8510a2c8e4eec0e2a0fe11bb2",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\default_actor_names_current_20261120_v1.json": "476d9e90203b912c1b9568d85259109e84918247d81a561adb1a936b5cbc504b",
+    "translations\\maria310_integrated_final_review_v1.json": "e67b1d97f0bfbac267a1bd1d8f3f5f20812846c468d65bd6ba6e47f184c4cbfa",
+    "work\\characters_gallery_editorial_20261121\\capture\\final_arm9_ram.bin": "5f9ad8328581fa83c2585222638853f6e7845a164df3bcfe16e5bb51608da464"
+  }
+}

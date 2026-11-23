@@ -1732,9 +1732,10 @@ natural-dialogue-v2, display-safety or registered-release requirements.
 8. Prefer existing reusable audit/build tools over a new one-off producer for every
    intermediate step. Keep a compact current summary with links to historical
    evidence, rather than repeatedly copying the entire history into new reports.
-   Preserve all existing artifacts. Report records reviewed, dialogue revisions,
-   justified retentions, wrap findings/fixes and integration status separately;
-   passing checks are not additional bugs found.
+   Clear obsolete generated intermediates at each checkpoint using the
+   [retention workflow](rom_retention.md#checkpoint-cleanup). Report records
+   reviewed, dialogue revisions, justified retentions, wrap findings and
+   integration status separately.
 
 Hodram B61-B70 and the Julio glyph correction are integrated in the verified
 2026-11-01 registered cumulative candidate. Reuse their completed source, prose,

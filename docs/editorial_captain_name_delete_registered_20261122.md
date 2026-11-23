@@ -1,0 +1,7 @@
+# Captain name editor deletion
+
+A normal Hodram New Game accepted a sixteen-letter first name and rejected an extra key. One Delete press originally removed two letters. The registered correction removes one Latin character. The existing wide-character path still removes a complete kana. The paired actual replays confirmed the capacity, one-letter deletion, re-entry and all four accepted name fields. The isolated cursor matrix covered mixed character widths, interior deletion, and ordinary and village providers. [Editor replay and checks](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/verification)
+
+The same original opening exposed a separate name-display defect. Charles's source speech uses the surname once. The first expansion contains the accepted name, but the onscreen line also substitutes the FI, FA and FO sequences inside that name. This added an unwanted page. The exact record, screenshots and source and live names are preserved for the display correction. [Surname finding](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/verification/first_mate_surname_expansion_finding.json)
+
+Only the name-editor call and its source-scoped helper change. Startup and 17 tests passed. The clean-input patch reconstructs the candidate exactly. [Candidate and patch](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/README.md)

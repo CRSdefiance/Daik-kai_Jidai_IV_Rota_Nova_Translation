@@ -32,14 +32,14 @@ def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))
 
 
-def paragraph(font, image, lines):
-    expected = {(column * 6 + gx, 212 + row * 12 + gy)
+def paragraph(font, image, lines, *, ink_y=212):
+    expected = {(column * 6 + gx, ink_y + row * 12 + gy)
                 for row, line in enumerate(lines) for column, ch in enumerate(line)
                 for gy in range(11) for gx in range(6) if font.decode(ch).getpixel((gx, gy))}
     actual = {(x, y) for y in range(212, 356) for x in range(256)
               if image.getpixel((x, y)) == (230, 230, 230)}
     assert actual == expected, (len(actual), len(expected), list(actual ^ expected)[:5])
-    return {'lines': lines, 'origin': [0, 212], 'advance': 6, 'line_height': 12,
+    return {'lines': lines, 'origin': [0, ink_y], 'advance': 6, 'line_height': 12,
             'complete_ink_pixels': len(expected), 'all_first_last_letters_and_blank_cells_exact': True,
             'all_lines_same_left_margin_and_all_words_complete': True}
 

@@ -1,3 +1,1429 @@
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's palace lesson, Eirene's disclosure, Pereira's challenge and Hodram's London rescue scene. [Checkpoint](editorial_palace_eirene_pereira_london_registered_20261122.md)
+
+Four complete exchanges add 275 contextual decisions and two retained choice labels. The candidate installs 25 wording revisions and keeps 250 dialogue records for individual reasons. The focused emulator replays verify 23 story panels and their nameplates. All 27 changed-page variants matched exact game-font and contact-sheet pixels offline, including default and maximum-width substitutions. Cristina's harbor line now breaks after her complete sentence. The first word of Rafael's earlier pushy line was present in the saved preview pixels and in emulator playback. The lesson options and seven speakerless commands remain byte-exact. [Coverage and exact source/current references](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/verification/registered_review.json)
+
+An ordinary saved-game visit to Tripoli reached the original Tavern, verified the greeting, five-coin drink price and randomly selected Algiers lead, then returned to its menu. Natural activation of the four story excerpts, the live lesson choice branches, and handheld checks remain unvisited in this batch. [Tripoli observation](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/verification/verified_tavern.json)
+
+The sole .nds in the Drive folder matches SHA-256 fc9591738040ee978204aa68f3980b179ceb6e93626fdf0568d6eb56abcd0adb. The patch reconstructs it byte for byte. Startup and 17 focused regressions passed. Cleanup reclaimed 611,653,036 bytes from 48 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_palace_eirene_pereira_london_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/palace_and_london_20261122/checkpoint_cleanup.json)
+
+The current scan has 308 heuristic wrap leads, with 31 covered by source-based decisions. Continue Rafael's earlier Proof and tutorial exchanges and the next large Hodram clusters, then the remaining four-route retrospective and shared dialogue, speaker labels, conditional substitutions, and player-facing prose. Continue ordinary town and random coverage where reproducible. Preserve the 27,700 historical credits and the 276-entry shared display worklist, including the 27 legacy dialogue records and eight raw scene labels still awaiting proven consumers. Graphics artwork and the later older-record technical re-audit stay separate. [Current wrap queue](../translations/editorial_checkpoints/palace_and_london_20261122/current_wrap_queue.json)
+
+The next reconciliation verified all 224 Hodram B61–B70 historical payloads against the reconstructed November 1 ROM. There are 128 exact matches and 96 differences, 95 in logical wording or glyphs. The current ten blocks match Aziza byte for byte. Eight story packets pair 521 texts for the next contextual review, including 131 in Rafael's B84 training scene and 26 in Maria B116. Each of those two packets binds both original FE continuations. These preparations add no review credit. [Hodram reconciliation](../translations/editorial_checkpoints/palace_and_london_20261122/hodram_B61_B70_reconciliation.json) · [Rafael's training packet](../translations/editorial_checkpoints/palace_and_london_20261122/rafael_B84_training_pairs.json) · [Maria's packet](../translations/editorial_checkpoints/palace_and_london_20261122/maria_B116_paired_source.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered the complete Rafael and Aziza dialogue review and recorded new town gameplay. [Checkpoint](editorial_aziza_shamshir_registered_20261122.md)
+
+All 78 turns of Rafael and Aziza's exchange have exact source and installed references. The release includes 14 wording revisions and 64 justified retentions. Snake's company-name substitution now expands cleanly to Castor Co. The 11 focused story panels and 15 native layout variants passed. Natural story activation and hardware remain unvisited. [Coverage ledger](../releases/all_routes_editorial_20261122_aziza_shamshir_candidate/verification/registered_review.json)
+
+The 8 ordinary town panels come from preserved saves and original input at Copenhagen's Square and Tavern and Tripoli's Square. They include the four-line Hayreddin rumor and original nameplates. Tripoli's Tavern and unselected local variants remain unvisited. These observations add gameplay evidence for unchanged COMMON records. [Town observations](../work/analysis/aziza_shamshir_20261122/staged/ordinary_town/verified_visits.json)
+
+The sole .nds in the Drive folder matches SHA-256 770b6fce4dfc8c1ba80f0851901ecfc836c02541fcb653265a23f9bc1f747e2d. The patch reconstructs it byte for byte. Startup and 17 regressions passed. Cleanup reclaimed 553,552,212 bytes from 114 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_aziza_shamshir_candidate/translation.xdelta) · [Cleanup receipt](../out/aziza_shamshir_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed queue has 323 heuristic leads, including 29 with current source-based decisions. Continue with the remaining Rafael and Hodram clusters and shared town and random dialogue. Carry forward the 27,700 credited records and the full 276-entry shared worklist. [Current wrap queue](../work/analysis/aziza_shamshir_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's mosque exchange and Hodram's Elysion and Mikhail scenes. [Checkpoint](editorial_mosque_elysion_mikhail_registered_20261122.md)
+
+The review covers 180 dialogue and tutorial records across three complete scenes. It contains 24 wording revisions, three wrap fixes and 153 justified retentions. Focused cold-boot replays verified 19 pages and their speaker labels, including direct visual review of Cesare's original symbols. Both revised runtime name layouts passed at the default and maximum supported widths offline. The seven original speakerless records are byte-exact. Natural story activation and handheld behavior remain unvisited for this batch. [Exact source and installed references](../releases/all_routes_editorial_20261122_mosque_elysion_mikhail_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 e7fdb0cff2a2bfd0220c8bcec5f865db099b3c80f2a5c1043c80c8ef70826ab4. The patch reconstructs it byte for byte. Startup and 17 regressions passed. Cleanup reclaimed 610,677,796 bytes from 49 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_mosque_elysion_mikhail_candidate/translation.xdelta) · [Cleanup receipt](../out/mosque_elysion_mikhail_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed queue has 322 heuristic leads, including 28 with current source-based decisions. The new Maria line avoids a duplicate period when the company is Castor Co. The older Rafael and Aziza exchange has a confirmed offline instance of the same defect. Its 78-turn contextual manuscript is drafted. Installation and display checks are pending. [Exact older instance](../work/analysis/mosque_elysion_mikhail_20261122/corrected/company_period_followup.json) · [Aziza manuscript](../scripts/rafael_aziza_shamshir_pending_20261122.md) Continue with the remaining Rafael and Hodram clusters and the shared town and random pass. Prioritize representative natural town encounters and the 27 legacy dialogue records in the shared display worklist for source and display triage. Carry forward the 27,700 credited records and the full 276-entry worklist. [Current wrap queue](../work/analysis/mosque_elysion_mikhail_20261122/corrected/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael's trade-house discussion, Eirene exchange and Charles recruitment alongside Hodram's Ceramic Earrings offer. [Checkpoint](editorial_trade_house_charles_and_earrings_registered_20261122.md)
+
+This pass covered 119 dialogue turns and four choice labels. It installed 24 wording revisions and three wrap fixes, with 92 dialogue turns and four choice labels retained for specific reasons. Focused Rafael and Hodram replays verified 17 pages with their speaker labels. Every installed line passed native visual checks, including Clau's greeting with the longest supported name. Shipwright (actor 109, 造船所の親父) and Shady Man (actor 173, 怪しい人) retain their source-supported role labels. The two choice command objects passed exact offline checks. Their natural branches and handheld behavior remain unvisited. [Exact source and installed references](../releases/all_routes_editorial_20261122_trade_house_charles_and_earrings_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 5a00871c5c91df3ecbd8f65134a60ace2ff7388e979a5b05c1a08d54f024efcb. The patch reconstructs it byte for byte. Startup and 17 regressions passed. Cleanup reclaimed 549,371,895 bytes from 40 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_trade_house_charles_and_earrings_candidate/translation.xdelta) · [Cleanup receipt](../out/trade_house_charles_and_earrings_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed queue has 333 heuristic leads, including 24 with current source-based decisions. Continue with Rafael's B123 and Hodram's B168 and B172 exchanges, including representative town and random content in the wider pass. Carry forward the 27,700 credited records and 276 shared display leads. [Current wrap queue](../work/analysis/trade_house_charles_and_earrings_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 32 revisions spanning Charlotte's celebration, Valdes's intervention, Cristina's recruitment and Maria's warning. [Checkpoint](editorial_rafael_confrontations_and_maria_wraps_registered_20261122.md)
+
+The batch compared 207 records in four complete exchanges against the clean source. It contains 25 wording revisions, seven wrap corrections and 175 justified retentions. Focused Rafael and Maria cold-boot replays verified 18 pages and their nameplates, including both reported Maria phrase breaks. Both hosts returned to port. Native and visual checks covered every installed change. Natural story triggers and hardware remain unvisited for this batch. [Exact source and installed references](../releases/all_routes_editorial_20261122_rafael_confrontations_and_maria_wraps_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 a8dcf796e58bdc29bb1992580648f704f24342552a399a17bfc081018231bd07. The patch reconstructs it byte for byte. Startup and 17 regressions passed. Cleanup reclaimed 550,203,225 bytes from 53 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_rafael_confrontations_and_maria_wraps_candidate/translation.xdelta) · [Cleanup receipt](../out/rafael_confrontations_and_maria_wraps_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed queue has 353 heuristic leads, including 24 with current source-based decisions. Continue with the next Rafael and Hodram clusters and practical town and random scenes. Carry forward the 27,700 credited records and 276 shared display leads. Charlotte's FI-prefaced thanks in SC0 B69 R0143 preserves the dramatic beat and exact substitution. Its opening can be reassessed alongside other runtime-name variants. [Current wrap queue](../work/analysis/rafael_confrontations_and_maria_wraps_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 12 dialogue and wrap revisions across Camille's reveal, Fernando's lesson and Maria's story. [Checkpoint](editorial_camille_and_maria_reveals_registered_20261122.md)
+
+The review covers 191 spoken turns and an intact Osaka Glass forecast. Two lines have new wording, ten have improved wraps and 180 have justified retentions, including 14 decisions from the previous review. Focused Lil and Maria playback verified 22 panels and their speaker labels. All 12 changed panels passed offline native and visual checks. [Exact source and current references](../releases/all_routes_editorial_20261122_camille_and_maria_reveals_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 c04577c1b1dcbcc8e1239f3c518c152cd3c4d9ec47a1f142332d3132684f2487. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 550,428,335 bytes from 56 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_camille_and_maria_reveals_candidate/translation.xdelta) · [Cleanup receipt](../out/camille_and_maria_reveals_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed wrap queue has 367 heuristic leads, including 20 with current source-based decisions. Continue with the unreviewed clusters and practical town and random scenes. Carry forward 27,700 credited records and the separate 276-entry shared display worklist. [Current wrap queue](../work/analysis/camille_and_maria_reveals_20261122/current_wrap_queue.json)
+
+The two earlier Maria findings are closed. Lil’s reference to the people of Southeast Asia and Maria’s “for all you’re worth” both appeared as intact phrases. The same replay exposed two neighboring breaks in “tell you the truth” and “making things up.” [Exact observed references](../work/analysis/camille_and_maria_reveals_20261122/observed_phrase_breaks.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 17 revisions in Lil's ship lessons and Maria's story and town scenes. [Checkpoint](editorial_lil_lessons_and_maria_scenes_registered_20261122.md)
+
+The review covers 224 spoken turns, three speakerless panels and six choice labels. Eight lines have revised wording, nine have improved wraps and 210 main records have individual retentions. Focused Lil and Maria replays verified 25 panels, including the Basra Shopkeeper’s quip. Lil’s scene host returned to port, and Maria’s advanced to its original Xien Yan joining notice. All changes passed native and visual checks, including the longest allowed name in Camille’s line. The three choice objects and three original speakerless commands are byte-exact. [Exact source and current references](../releases/all_routes_editorial_20261122_lil_lessons_and_maria_scenes_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 5091fc069cb9b0dc248eff07684dd117d6a5af3a96f231c02dd2474b80250de4. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 550,200,601 bytes from 59 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_lil_lessons_and_maria_scenes_candidate/translation.xdelta) · [Cleanup receipt](../out/lil_lessons_and_maria_scenes_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed wrap queue has 372 heuristic leads, including 18 with current source-based decisions. Continue with the unreviewed clusters and practical town and random scenes. Carry forward 27,700 credited records and the separate 276-entry shared display worklist. [Current wrap queue](../work/analysis/lil_lessons_and_maria_scenes_20261122/current_wrap_queue.json)
+
+The focused Maria replay also revealed two neighboring wrap leads. Lil’s reference to the people of Southeast Asia and Maria’s “for all you’re worth” can be tested as whole phrases in the next batch. [Exact records and emulator holds](../work/analysis/lil_lessons_and_maria_scenes_20261122/observed_maria_wrap_followup.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 32 dialogue and wrap corrections in the tavern and Proof of Conquest exchanges. [Checkpoint](editorial_tavern_and_proof_exchanges_registered_20261122.md)
+
+The review covers 203 spoken turns and eight choice labels. Fourteen lines have revised wording, 18 have improved wraps and 171 have justified retentions. Seven changed and eight retained panels played with intact speaker labels in a focused Hodram replay. Mikhail’s joke went from two pages to one and advanced directly to Hodram’s reply. The other 25 changed turns, including Maria’s lines, have offline display evidence. [Exact source and current references](../releases/all_routes_editorial_20261122_tavern_and_proof_exchanges_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 56dc0377f75cfd0f0d12991e49ea8db2794b2019d72a335d0724fa7e6df1ff0a. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 547,795,568 bytes from 32 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_tavern_and_proof_exchanges_candidate/translation.xdelta) · [Cleanup receipt](../out/tavern_and_proof_exchanges_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed wrap queue has 381 heuristic leads, including 13 with current source-based decisions. Continue with the unreviewed clusters and practical town and random scenes. Carry forward 27,700 credited records and the separate 276-entry shared display worklist. [Current wrap queue](../work/analysis/tavern_and_proof_exchanges_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 28 revisions in Rafael's Pereira, Eirene and Charlotte scenes. [Checkpoint](editorial_rafael_diplomacy_and_friends_registered_20261122.md)
+
+The Pereira negotiations, Eirene conversation and Charlotte village scenes account for 268 retrospective decisions. Thirteen lines have new wording, 15 have wrap fixes and 240 have justified retentions. All 28 changed panels passed native visual checks, and five changed panels and five retained panels played with intact speaker labels in a focused Rafael replay. The other 23 changed panels have offline display evidence. [Exact source and current references](../releases/all_routes_editorial_20261122_rafael_diplomacy_and_friends_candidate/verification/registered_review.json)
+
+The sole .nds in the Drive folder matches SHA-256 bbea848f92043119a4b43e846fc56ca19efda888c465a61740326c43a5f27848. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 546,384,104 bytes from 15 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_rafael_diplomacy_and_friends_candidate/translation.xdelta) · [Cleanup receipt](../out/rafael_diplomacy_and_friends_registered_20261122/checkpoint_cleanup.json)
+
+The refreshed wrap queue has 394 heuristic leads, including 13 with current source-based decisions. Continue with the unreviewed clusters and practical town and random scenes. Carry forward 27,700 credited records and the separate 276-entry shared display worklist. [Current wrap queue](../work/analysis/rafael_diplomacy_and_friends_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 13 early story and tutorial revisions across all four routes. [Checkpoint](editorial_early_story_wraps_registered_20261122.md)
+
+The 11 exchanges contain 72 contextual decisions with 59 justified retentions, 11 wrap corrections and two wording revisions. Fifteen native pages passed, including both long-name variants, and six panels played in an initialized Maria scene. Nine revised prompts still have offline evidence only. The scan flagged 423 possible wrap leads across 19,721 ASCII bodies, including the resolved subset. [Exact source and current references](../releases/all_routes_editorial_20261122_early_story_wraps_candidate/verification/registered_review.json) · [Triage](../work/analysis/current_story_wraps_20261122/current_triage.json)
+
+The sole .nds in the Drive folder matches SHA-256 51be1787f754516ebc98b892162e0f852c39c536675c7259bc4bf09013c9051d. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 547,791,699 bytes from 42 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_early_story_wraps_candidate/translation.xdelta) · [Cleanup receipt](../out/early_story_wraps_registered_20261122/checkpoint_cleanup.json)
+
+Continue contextual triage on the remaining story leads, shared and conditional scenes, speaker names and player-facing prose. Carry forward the 27,700 credited records and 276 alternate display leads. Keep deferred artwork and the older-record technical re-audit in their established scopes.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered wording-preserving wrap corrections for two Square rumors. [Checkpoint](editorial_square_rumor_wraps_registered_20261122.md)
+
+COMMON 710 now keeps “Times certainly have changed!” on its own line. COMMON 713 keeps “in the Indian Ocean” together. Both retain their approved dialogue and original portrait. The native formatter comparison kept 51 neighboring controls exact. Two focused Square runs used ordinary menu inputs on a copied Istanbul save with the region and random seed set explicitly. Both full pages and menu returns were verified. The shop list also confirmed the complete Gem Shop caption from the preceding release. [Exact source, current and display evidence](../releases/all_routes_editorial_20261122_square_rumor_wraps_candidate/verification/registered_review.json)
+
+The sole Drive .nds matches registered SHA-256 d0d0aa99ca4a47fa0d82443d8eaf259af8f4ecd4245dd7cbbaa3d6f9d0770501. The clean-input patch rebuilds it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 563,712,376 bytes from 66 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_square_rumor_wraps_candidate/translation.xdelta) · [Cleanup receipt](../out/square_rumor_wraps_registered_20261122/checkpoint_cleanup.json)
+
+Continue with remaining shared, random and conditional scenes, speaker names and player-facing prose. Carry forward the existing 27,700 credited records and 276 alternate display leads. Graphics artwork and the older-record technical re-audit remain separate.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered five revised Square shop names and thirteen justified retentions. [Checkpoint](editorial_square_shop_names_registered_20261122.md)
+
+The complete 18-caption review matches the Japanese categories and the goods each shop sells. Spice Shop and Craft Shop were observed during ordinary Syracuse and Lisbon visits. Scent Shop, Gem Shop and Dye Shop passed the same native formatter and full glyph checks offline. The original commodity category terms passed 144 independent getter comparisons. [Exact source and installed decisions](../releases/all_routes_editorial_20261122_square_shop_names_candidate/verification/registered_review.json)
+
+The sole Drive .nds matches registered SHA-256 d6481c126f4d00c3c6d526cd0300d3119a3061b9e6c24cfd9c2173d62c842d3e. The clean-input patch rebuilds it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 485,099,314 bytes from 20 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_square_shop_names_candidate/translation.xdelta) · [Cleanup receipt](../out/square_shop_names_registered_20261122/checkpoint_cleanup.json)
+
+Carry forward 27,700 credited editorial records. The prior Square rumor pass leaves two known phrase breaks at COMMON 710 and 713. The current regional formatter reflows existing line feeds, so qualify a wording-preserving layout against that consumer before changing storage. Other shared and random scenes, names and remaining player-facing prose stay in scope, along with the 276 alternate display leads. Artwork and the older-record technical audit remain separate. [Exact rumor references](../releases/all_routes_editorial_20261122_square_rumor_followup_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered three revised regional Square rumors and eighteen justified retentions. [Checkpoint](editorial_square_rumor_followup_registered_20261122.md)
+
+The 21-record batch includes all original regional faction and person rumors. Ordinary Valencia and Syracuse visits verified the two revised European rumors, original Shopkeeper labels and return paths. The China rumor passed complete offline native and visual checks. The original prose for 710 and 713 remains justified, with two older line-break leads noted separately in their records. [Exact source and current ledger](../releases/all_routes_editorial_20261122_square_rumor_followup_candidate/verification/registered_review.json)
+
+The sole Drive .nds matches registered SHA-256 7ffb3972075793f23fcaaefec695d03fde4f51bf766abfd8dd3239071284e10e. The clean-input patch rebuilds it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 485,471,511 bytes from 37 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_square_rumor_followup_candidate/translation.xdelta) · [Cleanup receipt](../out/square_rumor_followup_registered_20261122/checkpoint_cleanup.json)
+
+Continue with practical shared and random conversations and remaining player-facing text. Carry forward 27,700 credited records, the 276 alternate display leads, original nameplate decisions and deferred artwork and older-record technical audit.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered three revisions and twelve justified retentions in the response to Hodram's opening speech. [Checkpoint](editorial_hodram_opening_reply_registered_20261122.md)
+
+The registered review has all 15 clean Japanese, prior English and installed references. Hodram's reply keeps his wording and the comparison now reads on one line. The brief “Anyway...” marks his turn to the reward policy. Two prose revisions clarify how the state pays naval rewards and restore the urgency of investigating the reported Hanseatic incursion. The three revised pages passed offline native checks and matched the full body masks during a normal Hodram New Game. The replay also shows the intact custom surname in Charles's lead-in. [Coverage ledger](../releases/all_routes_editorial_20261122_hodram_opening_reply_candidate/verification/registered_review.json) · [Ordinary replay](../releases/all_routes_editorial_20261122_hodram_opening_reply_candidate/verification/ordinary_exchange.png)
+
+The sole Drive .nds matches registered SHA-256 bfc11b03d56ede41d07af07ea86fd62e70132e920e591eca4967538493d78ee2. The clean-input patch reconstructs it byte for byte. Startup and 17 regression tests passed. Cleanup reclaimed 483,669,515 bytes from 14 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_hodram_opening_reply_candidate/translation.xdelta) · [Cleanup receipt](../out/hodram_opening_reply_registered_20261122/checkpoint_cleanup.json)
+
+Carry the 27,700 credited records forward and continue with practical shared and conditional scenes, speaker names and remaining player-facing text. Keep the 276 alternate display paths in scope and preserve the separate artwork and older-record technical audit work.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered the correction for custom names being expanded twice in story dialogue. [Checkpoint](editorial_story_literal_names_registered_20261122.md)
+
+Paired ordinary Hodram New Games reproduced and corrected Charles's surname line in SC1 B42 R0113. The fixed panel shows all four intended lines, then proceeds straight to Hodram's reply. The original Japanese reference, accepted names, five-gate retention and display evidence are bound in the registered review. A focused original SC1 B205 system notice performed the same check for the first name. The third preparation path was checked in the isolated CPU harness. [Exact witness and coverage](../releases/all_routes_editorial_20261122_story_literal_names_candidate/verification/registered_review.json)
+
+The sole .nds in the Rota Nova Translation Drive folder matches the registered SHA-256 f538eba0d0ff027bf60fc6a49790f88d3821d2c1f8d4184a6fe632cb494ffd34. The clean-input patch rebuilt the ROM byte for byte. Startup and 17 tests passed. The release carries all 114 accepted layers and the ASCII right-bound correction. Cleanup reclaimed 487,661,559 bytes from 24 redundant files. [Latest testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_story_literal_names_candidate/translation.xdelta) · [Cleanup receipt](../out/story_literal_names_registered_20261122/checkpoint_cleanup.json)
+
+The full exchange around Hodram's reply now has 15 source-bound decisions. Twelve lines read naturally in context. Three changes are drafted for the next batch. R0116 keeps the wording and moves the short comparison into a complete line, with the final pause marking Hodram's change of subject. R0120 clarifies the basis of the naval reward. R0135 restores the need to check the report promptly. Native and emulator checks on the three changes are pending. [Exact source, current text and draft decisions](../translations/editorial_checkpoints/SharedText_20261110_v1/hodram_opening_reply_wraps_20261122_v1.json)
+
+Start the next editorial checkpoint with the physical wrap of Hodram's reply in SC1 B42 R0116. The replay shows a short middle line between “Few duties” and “as giving a speech.” Check the entire exchange with the clean Japanese and preserve the original address and transition. Continue the shared and conditional scene coverage and player-facing prose from the current 27,700 credited records and 276 alternate display leads. Artwork and the older-record technical re-audit remain separate.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered the captain-name Delete correction and captured a separate surname-substitution defect in Hodram's opening. [Checkpoint](editorial_captain_name_delete_registered_20261122.md)
+
+An ordinary Hodram New Game reached the 16-letter first-name limit, rejected an extra key, reproduced the two-letter deletion and verified the one-character correction. The replay accepted all four customized fields. The isolated matrix checked 63 character-width and cursor cases, with the village and other keyboard providers matching stock behavior. [Editor comparison](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/verification/ordinary_editor_comparison.png)
+
+The ordinary opening exposed a separate defect in SC1 B42 R0113. Charles's original line passes a custom surname through FA. The first expansion is exact, but the visible panel substitutes the literal FI, FA and FO sequences inside that surname, adding an unwanted page. Hodram's own nameplate spells the same custom name correctly. Start the next display correction from the exact held body and original voice and transition. The source-bound progressive path first expands at ARM9 020242C8, presents the resulting buffer at 020242F0, and reaches the separate portrait preparation call at 02054160. Qualify the affected caller before changing any shared consumer. [Exact surname defect, original source and captured name fields](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/verification/first_mate_surname_expansion_finding.json)
+
+The sole Drive .nds matches registered SHA-256 2bff94d1c0e46825d99b6efed7072d07dd78c8c2873435853af0ef522d80bc9f. The clean-input patch rebuilt it exactly. Startup and 17 regressions passed, preserving all 114 accepted layers and the ASCII right-bound correction. Cleanup removed 269 files and reclaimed 1,031,194,882 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_captain_name_delete_candidate/translation.xdelta) · [Cleanup receipt](../out/captain_name_delete_registered_20261122/checkpoint_cleanup.json)
+
+The remaining shared town and random encounters, conditional name and role paths, other player-facing prose and 276 alternate display leads stay in scope. Deferred graphics and the older-record technical re-audit retain their separate work.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered the supply-alert wording and capitalization corrections and verified both warnings during ordinary sailing from Ceuta. [Checkpoint](editorial_ceuta_supply_alerts_registered_20261122.md)
+
+The supply pass revisited 13 records, restored one younger sailor's stammer and justified 12 template retentions. Twelve dialogue templates now receive lowercase water or food in their original substitution slots. The game still uses its title-case resource labels where they are called for. [Exact Japanese and current references](../releases/all_routes_editorial_20261122_ceuta_supply_alerts_candidate/verification/registered_review.json)
+
+The original Ceuta voyage inputs brought up Charles's two shortage alerts naturally. Paired replays checked both complete dialogue bodies, his nameplate and the return to sailing. The other voices and travel cancellation received offline native checks. The older sea-foam encounter did not appear on this replay. [Gameplay and native layouts](../releases/all_routes_editorial_20261122_ceuta_supply_alerts_candidate/verification)
+
+The sole .nds in the Rota Nova Translation Drive folder matches SHA-256 610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428. The clean-input patch rebuilt it exactly. Startup and 17 focused tests passed, with 114 accepted layers and the ASCII right-bound correction preserved. Cleanup removed 39 redundant files and reclaimed 483,980,591 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_ceuta_supply_alerts_candidate/translation.xdelta) · [Cleanup receipt](../out/ceuta_supply_alerts_registered_20261122/checkpoint_cleanup.json)
+
+Continue with the remaining practical town and random events, names and unsampled player-facing prose. Keep the 276 alternate display leads, artwork work and the later older-record technical audit in their documented scopes.
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered two natural-dialogue corrections in Lil's Istanbul tobacco scene and verified Hodram's original Square activation. [Checkpoint](editorial_istanbul_tobacco_registered_20261122.md)
+
+The Istanbul pass revisited 32 clean Japanese and installed English pairs. Two Lil replies now sound more conversational and keep the full expression of interest together. The other 30 turns retain their wording with individual reasons. [Exact decisions and coverage](../releases/all_routes_editorial_20261122_istanbul_tobacco_candidate/verification/registered_review.json)
+
+The original event triggered on August 12 after normal Inn stays, showing all eight Hodram panels and their return to the Square. Hodram's archive is byte-identical in the successor. The initialized Lil replay verified all eight panels with the revised lines. Natural activation on Lil's route and hardware remain unvisited. [Emulator and native evidence](../releases/all_routes_editorial_20261122_istanbul_tobacco_candidate/verification)
+
+The Drive folder's sole .nds matched the registered SHA-256 907e5f83487b2754eea23e005aa8f207919fa9618fdab2a25794a969ed8c5546. The clean-input patch reconstructed it exactly. Startup, 17 tests and the original speaker-control checks passed with all 114 accepted layers and the ASCII right-bound correction. Cleanup removed 288 files and reclaimed 814,469,455 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_istanbul_tobacco_candidate/translation.xdelta) · [Cleanup receipt](../out/istanbul_tobacco_registered_20261122/checkpoint_cleanup.json)
+
+Continue with remaining practical town and random events, conditional role and custom names, and the remaining player-facing prose. The 276 alternate display entries retain their earlier evidence. Deferred graphics and the later older-record technical audit remain separate.
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed the full Osaka glass scene on four routes and registered two corrected guildmaster replies. [Checkpoint](editorial_osaka_glass_registered_20261122.md)
+
+The sole .nds in the Rota Nova Translation Drive folder matches SHA-256 09ed7d02b5d809efe31bf8ed0f8cd7557106a473221fce81dfe1695dad148e40. The clean-input patch reconstructed it byte for byte. The candidate preserves all 114 accepted layers and the ASCII right-bound correction. Startup and 17 focused tests passed. Cleanup removed 185 redundant files and reclaimed 491,955,811 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_osaka_glass_candidate/translation.xdelta) | [Cleanup receipt](../out/osaka_glass_registered_20261122/checkpoint_cleanup.json)
+
+The source review covers 44 dialogue turns with two revisions and 42 individual retentions. Focused emulator replays displayed all 22 Hodram and Maria pages, including both speakerless forecasts, 20 complete nameplates, and the exit into the calling context. Rafael and Lil retained their earlier display evidence. The Nagasaki voyage has no ordinary Osaka activation. [Exact decisions and coverage](../releases/all_routes_editorial_20261122_osaka_glass_candidate/verification/registered_review.json) | [Display evidence](../releases/all_routes_editorial_20261122_osaka_glass_candidate/verification)
+
+Continue with other practical ordinary town and random scenes, using verified port saves where available, then follow the remaining player-facing prose and 276 alternate display leads. Keep earlier contextual credit, conditional and custom name review, unresolved artwork, and the later older-record technical re-audit in their documented scopes.
+
+# Current editorial checkpoint - 2026-11-22
+
+Corrected Kurushima's offer of surrender in Maria's encounter and verified all eight panels in ordinary play from Nagasaki. [Checkpoint](editorial_maria_kurushima_surrender_registered_20261122.md)
+
+The sole .nds in the Rota Nova Translation Drive folder matches SHA-256 b65ce928af7d3627aad32e1b1f29efd2910aa63bfd41ec446a3f1db0528f1c5a. The clean-input patch reconstructed it exactly. Startup and 17 focused tests passed, preserving 114 accepted layers and the ASCII right-bound correction. Cleanup removed 67 redundant files and reclaimed 604,267,526 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_maria_kurushima_surrender_candidate/translation.xdelta) | [Cleanup receipt](../out/maria_kurushima_surrender_registered_20261122/checkpoint_cleanup.json)
+
+The ordinary Nagasaki departure displayed Kurushima's incorrect offer and then verified the corrected subject in the successor. The eight complete pages and nameplates, the fleet alert and Sea View transition passed. The corrected speech keeps Maria's name and the full threat. All four offline name widths fit. [Exact contextual decisions](../releases/all_routes_editorial_20261122_maria_kurushima_surrender_candidate/verification/registered_review.json) | [Emulator comparison](../releases/all_routes_editorial_20261122_maria_kurushima_surrender_candidate/verification/encounter_comparison.png)
+
+The Osaka glass pass covers 44 turns across the four storylines with two proposed guildmaster replies and 42 justified retentions. It preserves two later Hodram edits. Both proposed pages pass native and visual checks. Their original Osaka blocks and rendering dependencies match the new registered ROM. The voyage stopped after the natural Kurushima encounter with Osaka still unvisited. Continue with a focused Osaka preview in the original scene and pursue ordinary activation where practical. The 276 alternate display entries, random scenes, conditional names, and other player-facing prose stay in scope. Graphics artwork and the later older-record technical re-audit remain separate. [Exact Osaka review](../work/analysis/osaka_town_gameplay_20261122/editorial/contextual_review.json) | [Stored and native preview](../work/analysis/osaka_town_gameplay_20261122/editorial/stored_and_native_preflight.json) | [Current binding and voyage scope](../work/analysis/osaka_town_gameplay_20261122/editorial/successor_binding.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered six refinements to Julio's Deck lesson and verified all twelve pages in the original post-Trade event. [Checkpoint](editorial_rafael_deck_tutorial_registered_20261122.md)
+
+The registered ROM is the sole .nds in the Rota Nova Translation Drive folder. Streamed readback matches SHA-256 6b3365eca7fb09d809fc12b35d43c69b2a0c88d4329fce83f2fa69f23d119909. Its clean-input patch rebuilds the exact ROM. Startup and 17 focused tests passed. The candidate carries all 114 accepted layers and the ASCII right-bound correction. Checkpoint cleanup removed 16 redundant files and reclaimed 481,012,261 bytes. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_rafael_deck_tutorial_candidate/translation.xdelta) | [Playback and release evidence](../releases/all_routes_editorial_20261122_rafael_deck_tutorial_candidate/verification) | [Cleanup receipt](../out/rafael_deck_tutorial_registered_20261122/checkpoint_cleanup.json)
+
+All twelve panels and eleven Julio nameplates displayed through the original post-Trade event with the established Lisbon save. The normal return to Lisbon matched four reference screens. Six contextual wording revisions and six retentions preserve all sixteen commands and the name substitution. The revised captain speech also passed offline checks at the maximum supported given-name width. [Exact decisions and individual scope](../releases/all_routes_editorial_20261122_rafael_deck_tutorial_candidate/verification/registered_review.json)
+
+Continue with remaining player-visible town and random-event samples and the associated contextual and wrap reviews. Carry forward the current character setup and 207 default name decisions. The 276 alternate display entries, conditional and custom names, and other player-facing text remain in scope. The older-record technical re-audit and graphics artwork stay separate. [Setup and name ledger](../translations/editorial_checkpoints/SharedText_20261110_v1/early_setup_current_20261122_v1.json) | [Shared leads](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_display_worklist_20261121_v3.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Verified current New Game and Sound Setup display and all 207 default speaker-name decisions. Reviewed Julio's full Deck lesson, with six revisions checked offline and six retentions. [Checkpoint](editorial_early_setup_current_20261122.md)
+
+The six SC0 B43 revisions are compiled and all ten offline pages passed direct visual review. Use the cumulative staged build to observe Rafael's given-name substitution and the separate X-menu instruction, then register the verified candidate. The earlier initialized tutorial replay can supply the navigation fixture. The 276 legacy display leads, broader town and random scenes, conditional and custom names, and other player-facing prose stay in scope. Graphics artwork and the later older-record technical re-audit remain separate. [Deck lesson exact source and current references](../work/analysis/rafael_deck_tutorial_followup_20261122/contextual_review_v2.json) | [Current setup and name ledger](../translations/editorial_checkpoints/SharedText_20261110_v1/early_setup_current_20261122_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Lounge in Cristina's fatigue dialogue and Nursery in the Gauze Mask and Stylish Boots descriptions. [Checkpoint](editorial_ship_room_names_registered_20261122.md)
+
+The sole .nds in the Drive folder matches registered SHA-256 2741e6602ed390d68d6ca7bd806704418da740c5f710b941b0c4b5e931e85691. The patch reconstructs it exactly from the clean ROM. Startup and 17 focused tests passed, and the candidate carries all 114 accepted layers and the ASCII right-bound correction. Checkpoint cleanup removed 110 redundant files and reclaimed 498,413,739 bytes. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_ship_room_names_candidate/translation.xdelta) | [Drive receipt](../out/ship_room_names_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/ship_room_names_registered_20261122/checkpoint_cleanup.json)
+
+Both new equipment descriptions were observed in the emulator's Items menu, including the return to town. Offline native checks cover the main and standalone item views in both bitmap modes and Cristina's full Deck line in ordinary and battle contexts. The historical Deck replay remained at sea at the combat checkpoint, so live observation of Cristina's line is still open. The three changes carry prior contextual credit. [Exact editorial decisions and display checks](../releases/all_routes_editorial_20261122_ship_room_names_candidate/verification) | [Deck replay diagnostic](../out/ship_room_names_registered_20261122/deck_replay_diagnostic.json)
+
+The next early-game pass can start with COMMON 100–103 for the three-skill prompt, confirmation, audio settings and birthday prompt. Bind each current consumer and its dependencies before changing stored wording. The 276 alternate display leads retain their exact stored references. Broader town and random scenes, speaker names and other player-facing text remain in scope. Graphics artwork and the older-record technical re-audit remain separate. [Shared display leads](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_display_worklist_20261121_v3.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Closed all 87 later Maria evidence bindings. Six improvements in Cesare, Fernando and Manuel's exchanges include a one-page trade example and a clearer Lumber Room instruction. [Checkpoint](editorial_maria_tutorial_followup_registered_20261122.md)
+
+The registered ROM is the sole .nds in the Drive folder. Readback matched SHA-256 e98651122e55d5c0f080ded44b3d10b612debb042bd4b04789c5189a6635d6dd. The clean-input patch rebuilt it exactly. All 114 accepted layers and the ASCII right-bound correction carry forward. Cleanup removed 42 redundant files and reclaimed 481,907,823 bytes. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Patch](../releases/all_routes_editorial_20261122_maria_tutorial_followup_candidate/translation.xdelta) | [Drive receipt](../out/maria_tutorial_followup_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/maria_tutorial_followup_registered_20261122/checkpoint_cleanup.json)
+
+Six new revisions and six justified retentions cover Cesare's ship-buying advice, Fernando's wager and Manuel's refit lesson. Native checks and focused emulator playback confirm Cesare's one percent and one-to-five-unit example fits on one page. Focused playback verified all 12 reviewed turns and the original host continuation. Original event triggers and hardware remain unvisited for this batch. Startup and 17 focused tests passed. [Exact current decisions](../releases/all_routes_editorial_20261122_maria_tutorial_followup_candidate/verification/registered_review.json) | [Display and gameplay checks](../releases/all_routes_editorial_20261122_maria_tutorial_followup_candidate/verification)
+
+All 87 Maria B71–302 follow-up leads match later cumulative reviews exactly. The comparison now accounts for all 3,839 source positions in that range and preserves the later approved dialogue, including the three complete exchanges from the November 21 releases. The four story censuses account for 24,092 credited source positions. Those counts track editorial coverage. Ordinary or focused play remains documented separately. [Later release matches](../work/analysis/maria_B71_B302_current_20261122/exact_later_release_decisions.json) | [Current story coverage](../work/analysis/maria_B71_B302_current_20261122/registered_route_coverage_check.json)
+
+Continue with the three shared room-name inconsistencies. The deck fatigue remark at COMMON 1784 still says Recreation Room while the room is labeled Lounge. The two crew equipment descriptions at COMMON 2919 and 2920 and their active item projections still say Livestock Room while the current menu reads Nursery. The proposals preserve the wording around the room names and pass preliminary width planning. Their two item views and fatigue display need fresh stored, native, visual and focused checks before registered integration. Keep the 276 other stored display leads, broad town and random scene coverage, speaker names and remaining player-facing text in scope. Graphics artwork and the older-record technical re-audit remain separate. [Exact term references and proposals](../work/analysis/ship_room_terms_20261122/next_terminology_decisions.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 18 later text variants across the Proofs of Conquest and Maria's companion exchanges. Six wording revisions, two wrap-only fixes and ten retentions pass. Another 595 decisions carry forward. [Checkpoint](editorial_maria_B51_B70_registered_20261122.md)
+
+The updated testing ROM is the sole .nds in the Drive folder. Downloaded bytes matched SHA-256 d060afab8058701a948769288c28350ab3c306b37937bac769fcae03d72fb2c7. The clean-input patch reconstructs the registered candidate exactly. All 114 accepted layers and the ASCII right-bound correction carry forward. Cleanup removed 42 redundant files and reclaimed 481,502,377 bytes. The two earlier draft ROMs remain pinned. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Drive receipt](../out/maria_B51_B70_registered_20261122/drive_latest_build_receipt.json) | [Clean-input patch](../releases/all_routes_editorial_20261122_maria_B51_B70_candidate/translation.xdelta) | [Cleanup receipt](../out/maria_B51_B70_registered_20261122/checkpoint_cleanup.json)
+
+The review records six wording revisions, two wrap-only fixes and ten justified retentions. Native and visual review covers all 18 panels. Focused Maria playback verified 12 speech pages and the original host continuation. The alternate identical relics panel was checked offline. Startup and 17 focused tests passed. All text and runtime dependencies for the prior Hangzhou town proof remain exact. [Exact decisions](../releases/all_routes_editorial_20261122_maria_B51_B70_candidate/verification/registered_review.json) | [Verification](../releases/all_routes_editorial_20261122_maria_B51_B70_candidate/verification)
+
+A single comparison now covers all 3,839 clean dialogue, choice and style positions in Maria B71–302. Exact stored evidence carries 3,752 earlier decisions forward, including the B109 earlier references and all proved continuations and choices in B87 and B116. Investigate 87 installed text differences in their full exchanges before staging fresh changes. B135, B136 and B138 account for 76 of them. The B116 nontext command difference is recorded for the separate technical audit. No new gameplay or coverage credit comes from the comparison. The wider shared dialogue, random scenes, speaker names, tutorials and other player-facing text remain in scope. [Bulk current-ROM comparison](../work/analysis/maria_B71_B302_current_20261122/exact_current_dialogue_reconciliation.json) | [B87 and B116 qualified pairing](../work/analysis/maria_B71_B302_current_20261122/qualified_structural_pairing.json) | [B109 exact references](../work/analysis/maria_B71_B302_current_20261122/special_group_binding_followup.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Closed 17 changed Maria records across nine story blocks and carried forward 343 exact earlier decisions. Two earlier name-driven wraps and the Hangzhou Luxury Shop briefing are included. [Checkpoint](editorial_maria_hangzhou_followup_registered_20261122.md)
+
+The testing ROM is the sole .nds in the Drive folder. Readback matched SHA-256 a97a455a8d74399dac4802ff7ee4960830310cd7dca0cd09f25c8a0170077c61. The clean-input patch reproduced all bytes. The build preserves all 114 accepted layers and the ASCII right-bound correction. Cleanup removed 59 redundant files and reclaimed 482,096,113 bytes. [Drive receipt](../out/maria_hangzhou_followup_registered_20261122/drive_latest_build_receipt.json) | [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Patch](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/translation.xdelta) | [Cleanup receipt](../out/maria_hangzhou_followup_registered_20261122/checkpoint_cleanup.json)
+
+Across the Maria follow-up and Hangzhou briefing, the review records nine wording revisions, one wording-preserving wrap and ten justified retentions. The initialized Maria replay verified 12 story panels. Ordinary Hangzhou play verified all four briefing rows, the Shopkeeper label, five matching neighboring holds and three returns. Native checks also covered six alternate-name layouts. Startup and all 17 focused tests passed. An optional repository-wide attempt was stopped after host native-test exceptions. Original story triggers and hardware remain unvisited. [Exact contextual decisions](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/verification/registered_review.json) | [Native and gameplay verification](../releases/all_routes_editorial_20261122_maria_hangzhou_followup_candidate/verification)
+
+B50 still contains the exact registered source-owned FE continuation. Its font file also matches the historical proof. Whole ARM9 and COMMON differ across the two builds, so reuse the B50 display proof only where its relevant dependencies match. The B51–70 source packet contains 613 already credited decisions. Carry 595 exact stored records forward and review the 18 changed bodies in context before selecting fresh display work. The 276 alternate stored COMMON paths, remaining tutorial and other player-facing text, and remaining route coverage stay open. Graphics artwork and the later older-record technical re-audit stay separate. [B50 continuation binding](../work/analysis/maria_B50_B70_current_20261122/B50_exact_block_and_prior_proof.json) | [Next exact pairs](../work/analysis/maria_B50_B70_current_20261122/B51_B70_source_current.json) | [595 carried proof bindings and 18 changed bodies](../work/analysis/maria_B50_B70_current_20261122/B51_B70_prior_decisions.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 112 Maria records across the ghost-ship, naval pursuit and alliance exchanges. The pass revises 36, justifies 76 retentions and repairs four earlier wraps. [Checkpoint](editorial_maria_B21_B32_registered_20261122.md)
+
+The updated testing ROM is the sole .nds in the Drive folder. Readback matched SHA-256 ac229313e61fcd7e2cfe4ca6ab3552d30598eda33f076b7c7102ff9152da76e1, and the clean-input patch reconstructs it byte for byte. All 114 accepted layers and the ASCII right-bound correction carry forward. Cleanup reclaimed 482,509,367 bytes from 69 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Patch](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/translation.xdelta) | [Drive receipt](../out/maria_B21_B32_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/maria_B21_B32_registered_20261122/checkpoint_cleanup.json)
+
+Native checks covered 40 changed pages, 12 alternate-name layouts, seven lookout bodies across eight slots and both B29 choice labels. Focused emulator playback verified 28 speech pages and both observed return holds. Original conditional triggers and hardware remain unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/verification) | [Review ledger](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/verification/registered_review.json)
+
+Two name-driven opening wraps at B29 R0119 and B31 R0042 have source-faithful proposals checked in the native renderer with default and 1-, 15- and 16-character names. The Hangzhou Luxury Shop Ming dynasty briefing at COMMON 704 has a native-checked proposal with a complete thought on each of the four rows. The game's earlier wording for all three remains installed. Carry the proposals into the next stored and visual checks, with focused playback for the affected consumers. The 276 wider alternate shared display leads remain open. [Maria wrap proposals](../work/analysis/maria_B21_B32_followup_20261122/name_width_followups.json) | [Hangzhou preflight](../work/analysis/hangzhou_early_actual_20261122/ming_phrase_followup/native_preflight.json) | [Earlier ordinary Hangzhou observations](../work/analysis/hangzhou_early_actual_20261122/observed_dialogue_and_roles.json)
+
+All 360 Maria B33–49 records have earlier completed contextual decisions. An exact current-ROM comparison binds 343 to the same reviewed bytes and identifies 17 later differences. Review those 17 changes in their complete exchanges and retain earlier proofs for the 343 matching records. [Source/current pairs](../work/analysis/maria_B33_B49_followup_20261122/paired_source_registered_candidate.json) | [Prior decision bindings and 17 follow-ups](../work/analysis/maria_B33_B49_followup_20261122/prior_contextual_decisions_reuse.json) B50 already has 16 registered source decisions and an FE continuation with two physical panels for one source line. Reuse that exact-source proof where its stored dependencies match. The full storyline, names, tutorials, town, random and remaining prose stay in scope. [Exact pair packet](../work/analysis/maria_B33_B49_followup_20261122/paired_source_registered_candidate.json) | [Prior B37–50 manuscript](editorial_Maria286_contextual_20261109.md) | [B50 continuation](editorial_Maria_B50_registered_20261109.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited Maria's first 101 dialogue records and repaired three earlier Hodram wraps. The pass revises 43 Maria records, justifies 58 retentions and carries 67 exact prior Hodram decisions. [Checkpoint](editorial_maria_opening_hodram_wraps_registered_20261122.md)
+
+The registered testing ROM is the sole .nds in the Drive folder. Readback verified SHA-256 5d7d6af110282279d64a618f8128d30e56a1ca9a2f9da7713182df48b0eb21c5, and the clean-input patch reproduced it byte for byte. All 114 accepted layers and the ASCII right-bound correction carry forward. The native and visual review checked 46 changed pages and nine alternate-name layouts. The two focused emulator excerpts verified 31 pages. Cleanup reclaimed 481,269,863 bytes from 60 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Patch](../releases/all_routes_editorial_20261122_maria_opening_hodram_wraps_candidate/translation.xdelta) | [Drive receipt](../out/maria_opening_hodram_wraps_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/maria_opening_hodram_wraps_registered_20261122/checkpoint_cleanup.json)
+
+The ordinary title run verified both Sailing Help confirmation directions, two accepted changes, cancel, and return to the title. This prompt comes from the independent ARM9 slot. Ordinary Hangzhou navigation verified six full holds at the Food, Spices and Luxury Shops and Tavern, including the complete sailor question tag and the Shopkeeper and Barkeep nameplates. The tested parent and the current release use the same relevant text and rendering assets. The 276 alternate stored display leads remain open. The Ming dynasty line keeps its wording and has a phrase-wrap follow-up. [Sailing Help observations](../work/analysis/shared_settings_20261122/sailing_help_state_transitions.json) | [Hangzhou panels and exact records](../work/analysis/hangzhou_early_actual_20261122/observed_dialogue_and_roles.json)
+
+The next Maria packet contains 112 exact pairs across B21–32. The B21–25 exchanges have 22 contextual decisions, including six wording proposals with preliminary wraps. Continue at B26 with 90 remaining comparisons. Include the four checked Maria phrase follow-ups in the next stored and visual review, with focused playback for the changed display behavior. The broader storyline, speaker names, shared town and random dialogue, tutorials, and remaining player-facing prose stay in scope. [Exact pairs](../work/analysis/maria_B21_B32_followup_20261122/paired_source_registered_candidate.json) | [B21–25 decisions](../work/analysis/maria_B21_B32_followup_20261122/B21_B25_contextual_v1.json) | [Four phrase-wrap follow-ups](../work/analysis/maria_opening_hodram_wraps_20261122/maria_phrase_followups_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 88 Maria records in Manuel's naval elegy and Aziza's mutiny, recruitment and retreat exchanges. The batch revises 43 and justifies 45 retentions. [Checkpoint](editorial_maria_B18_B20_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Its readback matched SHA-256 d9daf72c6a463443d3db195386e3061b99a2942f54972d0cf6bca92931ec01ad. The clean-input patch reproduces it byte for byte. Both checkpoints reclaimed 963,302,728 bytes across 161 redundant files. The earlier and current registered ROMs, patches, and necessary evidence are preserved. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_maria_B18_B20_candidate/translation.xdelta) | [Drive receipt](../out/maria_B18_B20_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/maria_B18_B20_registered_20261122/checkpoint_cleanup.json)
+
+Maria's 43 revised pages and three alternate fleet-name layouts passed native and visual review. The final focused replay covered five pages, including Aziza's restored gasp and the exchange about her father's sword. Exact command hashes link 23 additional earlier replay pages to the candidate. Full natural scene activation and hardware remain unvisited for this batch. [Registered review and validation](../releases/all_routes_editorial_20261122_maria_B18_B20_candidate/verification)
+
+Continue with representative player settings, tutorials, and reachable shared town and random dialogue. All 276 shared display leads have exact bindings to the current ROM, with the first 35 ready for investigation. Start with the settings and Quick Guide prompts, then follow positive evidence of an actual stored-text consumer. The three Hodram phrase breaks have checked proposals ready for integration. Continue the remaining storyline and shared editorial work with existing coverage credit. [Prioritized shared packet](../work/analysis/shared_open_display_at_maria_B20_20261122.json) | [Hodram wrap follow-ups](../work/analysis/hodram_B311_B324_followup_20261122/B312_B318_B324_wrap_followup_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 400 Hodram records through the final SC1 block. The batch revises 75 records and fixes the injury notice's long-name wrap while documenting 324 wording retentions. Four earlier opening wraps are repaired and 186 other decisions carry forward. [Checkpoint](editorial_hodram_B311_B324_registered_20261122.md)
+
+At the Hodram checkpoint, the testing candidate was the only .nds file in Drive and readback matched SHA-256 9cad0d8c8c177bcf4b5e5a1060ba43c2c3f14acd179d770a502b963d54f9da51. The clean-input patch rebuilds it byte for byte. Focused emulator playback verified 59 dialogue pages and 15 menu highlights. Offline checks verified 80 changed pages, three alternate-name pages and 13 nameplates. Cleanup reclaimed 478,987,444 bytes from 46 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B311_B324_candidate/translation.xdelta) | [Drive receipt](../out/hodram_B311_B324_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/hodram_B311_B324_registered_20261122/checkpoint_cleanup.json)
+
+Reconciliation verified all 24,092 credited clean-source positions for dialogue, style variants and choice captions across the four route archives. It verified the installed bytes and review gates of the latest 590 Hodram decisions and preserved all prior credit. The audit added no gameplay coverage. The broader speaker, shared, tutorial, town and random dialogue scope remains active, including 276 stored shared keys whose display paths are still open. [Route coverage audit](../work/analysis/route_coverage_at_hodram_B324_20261122.json) | [Shared text worklist](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_display_worklist_20261121_v3.json)
+
+Follow-up layouts for Silvia's map rumor and two short replies in B312, B318 and B324 passed a native render and visual review. The current release still has their earlier line breaks. [Exact references and proposed layouts](../work/analysis/hodram_B311_B324_followup_20261122/B312_B318_B324_wrap_followup_v1.json)
+
+Maria's B18–B20 source pass revisits the fleet victory and Manuel's poem, Aziza's mutiny and recruitment, and the distinct retreat outcomes. It records 43 wording revisions and 45 justified retentions across 11 name and role bindings. The first staged draft compiled with exact relative branch and whole-ROM inverse checks. The registered version above incorporates the two later visual-review refinements. [Exact pairs and individual decisions](../work/analysis/maria_B18_B20_followup_20261122/contextual_decisions_v1.json) | [Stored proof](../work/analysis/maria_B18_B20_followup_20261122/B18_B20_staged_v1/stored_proof.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 380 Hodram records across the hidden ruins, market requests, temple routes and expeditions. The batch revises 112 records and justifies 268 retentions. Three earlier lines gain fuller opening rows, and 56 other decisions carry forward. [Checkpoint](editorial_hodram_B292_B310_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 a26ce1e1aca83b765114b917895c2c2988940602a36992cf63ddee4da0a51789. The clean-input patch rebuilt it byte for byte. Initialized emulator excerpts verified 58 dialogue pages and 13 menu highlights, including the three earlier wrap fixes, the bog rescue and Sakura's offer to walk partway. Offline checks verified 115 changed pages, nine alternate-name-width pages and 15 nameplates. Checkpoint cleanup reclaimed 478,376,909 bytes from 42 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B292_B310_candidate/translation.xdelta) | [Drive receipt](../out/hodram_B292_B310_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/hodram_B292_B310_registered_20261122/checkpoint_cleanup.json)
+
+Four early opening wraps have proposals that pass preliminary checks. The sandstorm warning at B302 STYLE 1786 slot 4 appeared in a focused emulator excerpt. Charles's forest remark at B294 R0058, Hodram's Colosseum reply at B301 R0021 and the map question at B309 STYLE 24 slot 2 were observed offline. Include these four in the next stored and visual review with focused playback for the changed consumer behavior. [Exact preflight and evidence](../work/analysis/hodram_B311_B324_followup_20261122/B294_B301_B302_B309_wrap_followup_v1.json)
+
+Hodram B311 through B324 has 400 exact source and current pairs. The boulder pursuit has 80 draft decisions, with 15 wording revisions and 65 justified retentions. All 15 revisions pass preliminary wrapping. Continue at B312 with 320 fresh comparisons. [Exact pairs](../work/analysis/hodram_B311_B324_followup_20261122/paired_source_registered_candidate.json) | [Draft decisions](../work/analysis/hodram_B311_B324_followup_20261122/B311_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B311_B324_followup_20261122/B311_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 335 Hodram records in the guild assignments, the king's audience, and the forest and cave encounters. The batch revises the wording of 140 records, fixes three additional wraps and justifies 192 retentions. Two earlier figurehead lines now use fuller opening rows, and 34 other decisions carry forward. [Checkpoint](editorial_hodram_B261_B291_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 405f0304dc2008b572daeafedddf5cf8324d174a1dc386a19df9f0d0d3c303f5. The clean-input patch rebuilt it byte for byte. Initialized emulator excerpts verified 62 dialogue pages and nine menu highlights, including both figurehead fixes and Julian's one-page briefing. Offline checks verified 145 changed pages, 15 alternate-name-width pages and 25 nameplates. Checkpoint cleanup reclaimed 478,533,378 bytes from 35 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B261_B291_candidate/translation.xdelta) | [Drive receipt](../out/hodram_B261_B291_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/hodram_B261_B291_registered_20261122/checkpoint_cleanup.json)
+
+The offline review found three remaining premature opening wraps in the directions to Calicut's ruins at B277 R0066, the king's question at B283 R0039 and William's introduction at B286 R0019. All three proposals pass preliminary wrapping. Include them in the next stored, visual and focused playback checks. [Exact preflight and contact sheets](../work/analysis/hodram_B292_B310_followup_20261122/B277_B283_B286_wrap_followup_v1.json)
+
+Hodram B292 through B310 has 380 exact source and current pairs. The Malacca monster hunt and reward account for 18 draft decisions, with nine wording revisions and nine justified retentions. All nine revisions pass preliminary wrapping. Continue at B294 with 362 fresh comparisons. [Exact pairs](../work/analysis/hodram_B292_B310_followup_20261122/paired_source_registered_candidate.json) | [Draft decisions](../work/analysis/hodram_B292_B310_followup_20261122/B292_B293_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B292_B310_followup_20261122/B292_B293_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 224 Hodram records in the ruins, survey and guild scenes. The batch revises 82 turns, fixes one wrap and justifies 141 wording retentions. The ice-puzzle directions have a row each, and Charles's convoy paragraph now fits on one page. Fifteen other decisions from his letter carry forward. [Checkpoint](editorial_hodram_B241_B260_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 cbdf96bbadd75ea88323eea9ccb99b0caa9c1f601548fa3eee61c6c8c07325b5. The clean-input patch rebuilt it byte for byte. Initialized emulator excerpts verified 66 dialogue pages and nine menu highlights. Offline checks verified 84 changed pages, three alternate-name-width pages and 19 scoped nameplates. Checkpoint cleanup reclaimed 477,161,926 bytes from 34 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B241_B260_candidate/translation.xdelta) | [Drive receipt](../out/hodram_B241_B260_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/hodram_B241_B260_registered_20261122/checkpoint_cleanup.json)
+
+The offline visual check found sparse opening rows in the priest's figurehead dialogue at B243 R0029 and R0044. Both proposed revisions pass preliminary wrapping. Include them in the next stored, visual and focused playback checks. [Exact preflight and contact sheet](../work/analysis/hodram_B261_B291_followup_20261122/B243_figurehead_wrap_followup_v1.json)
+
+Hodram B261 through B291 has 335 exact source and current pairs. The Gabriel assignment and tavern exchange account for 17 draft decisions, with nine wording revisions and eight justified retentions. All nine revisions pass preliminary wrapping. Continue at B265 with 318 fresh comparisons. [Exact pairs](../work/analysis/hodram_B261_B291_followup_20261122/paired_source_registered_candidate.json) | [Draft decisions](../work/analysis/hodram_B261_B291_followup_20261122/B261_B264_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B261_B291_followup_20261122/B261_B264_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 274 Hodram records in the treasure rumors, town scenes and letters. The batch revises 120 turns, corrects three pause glyphs, fixes an additional wrap and justifies 150 wording retentions. Janus's signature has its own row, and the other 16 B218 decisions carry forward with exact references. [Checkpoint](editorial_hodram_B221_B240_registered_20261122.md)
+
+The registered testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 9d962c6b3349db0bf0721a01bc08c154bdc228a158ec6c391420614efcbb16c6. The clean-input patch rebuilt it byte for byte. Initialized emulator excerpts verified 65 dialogue pages and both Crusades menu highlights, including Janus's separate signature row and the three revised pauses. Offline checks verified 129 changed pages and all 20 scoped nameplates. Cleanup reclaimed 476,060,346 bytes from 20 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B221_B240_candidate/translation.xdelta) | [Cleanup receipt](../out/hodram_B221_B240_registered_20261122/checkpoint_cleanup.json)
+
+The emulator showed four short rows and a second page in Charles's convoy letter at B238 R0035. A one-page proposal passed preliminary wrapping with four full rows. Its wording preserves the convoy's attempted flight, the pirates' speed and the risk of losing the whole convoy. Include it in the next stored, visual and playback checks. [Exact follow-up and gameplay frames](../work/analysis/hodram_B241_B260_followup_20261122/B238_R0035_convoy_page_followup_v1.json)
+
+Hodram B241 through B260 has 224 exact source and current pairs. Janus's gloves, the Frozen Rose return and the church figurehead account for 75 draft decisions, with 30 wording revisions and 45 justified retentions. All 30 revisions passed preliminary wrapping. Continue at B244 with 149 fresh comparisons. [Exact pairs](../work/analysis/hodram_B241_B260_followup_20261122/paired_source_registered_candidate.json) | [Gloves and rose draft](../work/analysis/hodram_B241_B260_followup_20261122/B241_B242_contextual_v1.json) | [Church draft](../work/analysis/hodram_B241_B260_followup_20261122/B243_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B241_B260_followup_20261122/B241_B243_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 350 Hodram records across the book and treasure encounters, the parrot scene, and the letters. The pass revises 155 turns, fixes three additional wraps and justifies retaining 192 records. Jam's signature now has its own row, and the parrot repeats Angelo's phrasing. [Checkpoint](editorial_hodram_B201_B220_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 82e9231ce81ab6c7e1dfece6e978d77c538669f73b0feebf6ea83e2f86dbb6d2. The clean-input patch rebuilt it byte for byte. Initialized emulator excerpts verified 90 dialogue pages and 14 menu highlights. Offline checks verified all 22 personality alternatives, 30 speakerless panels and 28 nameplates. Cleanup reclaimed 537,407,894 bytes from 50 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B201_B220_candidate/translation.xdelta) | [Cleanup receipt](../out/hodram_B201_B220_registered_20261122/checkpoint_cleanup.json)
+
+The emulator showed Janus's signature sharing a row with his farewell at B218 R0068. A checked three-row layout keeps all the words and gives the signature its own line. Carry that wrap into the next batch for stored, visual and focused playback checks. [Exact follow-up and gameplay frame](../work/analysis/hodram_B221_B240_followup_20261122/B218_R0068_janus_signature_followup_v1.json)
+
+Hodram B221 through B240 has 274 exact source and current pairs. Ian's spear rumor and Julian's conversation with Lucia account for 30 draft decisions, including 15 wording revisions and 15 individual retentions. All revisions passed preliminary wrapping with the recorded phrase refinements. Continue at B224 with 244 fresh comparisons. [Exact pairs](../work/analysis/hodram_B221_B240_followup_20261122/paired_source_registered_candidate.json) | [Draft decisions](../work/analysis/hodram_B221_B240_followup_20261122/B221_B223_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B221_B240_followup_20261122/B221_B223_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 284 Hodram town and bargaining records from clean Japanese. The pass revises 68 records, improves four additional wraps and justifies retaining 212 records. Six forecasts now fit one line, and Carlo's private bargaining advice fits one page. [Checkpoint](editorial_hodram_B181_B200_registered_20261122.md)
+
+The cumulative testing candidate is the sole ROM in the Drive folder. Readback verified SHA-256 4e5b2814bf3698a09e305f626722787922a54caeb1d22c13d96253e2cdc5699d. The clean-input patch rebuilt it byte for byte. Focused emulator excerpts verified 65 dialogue pages and four menu highlights, including the Woman and Man captions during the tea exchange, the default name on the Charm notice, and Carlo's one-page advice. The alternate name widths and original menu branches were checked offline. Checkpoint cleanup reclaimed 475,440,034 bytes from 24 redundant files. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) | [Clean-input patch](../releases/all_routes_editorial_20261122_hodram_B181_B200_candidate/translation.xdelta) | [Drive receipt](../out/hodram_B181_B200_registered_20261122/drive_latest_build_receipt.json) | [Cleanup receipt](../out/hodram_B181_B200_registered_20261122/checkpoint_cleanup.json)
+
+Hodram B201 through B220 has 350 exact source and current pairs. The first 55 have draft decisions covering Ian's book, the namahage and the portrait discovery. These include 14 wording revisions and 41 justified retentions. All 14 revisions passed preliminary wrapping. Continue with B204 and 295 fresh comparisons in the packet before stored, visual and gameplay checks. [Exact pairs](../work/analysis/hodram_B201_B220_followup_20261122/paired_source_registered_candidate.json) | [Draft decisions](../work/analysis/hodram_B201_B220_followup_20261122/B201_B203_contextual_v1.json) | [Preliminary wrapping](../work/analysis/hodram_B201_B220_followup_20261122/B201_B203_wrap_preflight_v1.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 288 Hodram records and carried forward 27 exact sailing-lesson decisions. The pass revises 119 turns and records 169 justified retentions across the Proofs, Yifa, the Silla Gold Crown and the pirate encounter. A fleet-name wrap now keeps both sentences whole. [Checkpoint](editorial_hodram_B171_B180_registered_20261122.md)
+
+The registered ROM matches the sole Drive copy byte for byte. Focused playback verified 64 dialogue pages and two menu highlights. Cleanup reclaimed 535,397,988 bytes. The next packet has 32 fresh draft decisions and 252 fresh comparisons left. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Evidence and next checkpoint](editorial_handoff_current.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 270 Hodram records and carried forward 41 exact decisions from Cesare's ship lesson. The pass revises 103 turns, improves one wrap without changing the words, and records 166 fresh justified retentions across the ship and tavern encounters. [Checkpoint](editorial_hodram_B161_B170_registered_20261122.md)
+
+The registered ROM matches the sole Drive copy byte for byte. Focused playback verified 59 dialogue pages and eight menu highlights. Cleanup reclaimed 475,021,312 bytes. The next Hodram packet has 66 fresh draft decisions, 222 fresh comparisons left and 27 eligible prior decisions. [Latest Drive ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Evidence and next checkpoint](editorial_handoff_current.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 331 Hodram records through the farewell, retirement and four recruitment scenes. The pass revises 112 turns and records 219 justified retentions. Carlo's explanation and Julio's trade advice use the available width and each now fits on one page. [Checkpoint](editorial_hodram_B151_B160_registered_20261122.md)
+
+The Drive readback matches the registered candidate byte for byte. The focused emulator replay verified 65 pages. The clean-input patch reconstructs the candidate exactly. Cleanup reclaimed 534,385,986 bytes. The next Hodram packet has 101 additional draft decisions and 169 fresh comparisons pending, with 41 eligible prior decisions. [Latest Drive build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Evidence and next checkpoint](editorial_handoff_current.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 350 Hodram records across the crew lessons, Camille's apology, Sera's introduction, and the discoveries. The pass revises 110 lines, aligns one wrap and corrects three punctuation glyphs, with 236 justified retentions. [Checkpoint](editorial_hodram_B131_B150_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 323 Hodram records across Santiago Cathedral, the riddles and villages, the sailing lesson and the confrontation with Diogo. The pass revises 65 lines, corrects two punctuation glyphs and improves three wraps, with 253 justified retentions. [Checkpoint](editorial_hodram_B111_B130_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 209 Hodram records across the Miracle Bullet Charm, Emilio's food scenes, treasure rumors and the priest's Proof of Conquest. The pass revises 59 lines and one wrap, with 149 justified retentions and two exact earlier decisions carried forward. [Checkpoint](editorial_hodram_B91_B110_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 297 Hodram records across the Black Sea settlement, recruitment, rescue and crown scenes. The review revises 68 lines, corrects two glyphs and improves one wrap, with 226 justified retentions and nine exact decisions carried forward. [Checkpoint](editorial_hodram_B81_B89_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 140 Hodram records from the Hangzhou summons through Sera's return. The review revises 50 lines and one punctuation glyph, with 89 justified retentions and four exact decisions carried forward. [Checkpoint](editorial_hodram_B71_B80_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 125 Hodram records across six scenes. The review changes 47 lines and five punctuation glyphs, with 73 justified retentions and three exact carried decisions. [Checkpoint](editorial_hodram_B65_B70_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 95 Hodram records in four scenes through the sea-king legend. The review changes 38 lines and two punctuation glyphs, with 55 justified retentions. One exact earlier decision carries forward. [Checkpoint](editorial_hodram_B61_B64_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 79 Hodram records from Sera's first words through the Espinosa and Sao Jorge scenes. The review changes 39 lines and three question glyphs, with 37 justified retentions. Three exact earlier decisions carry forward. [Checkpoint](editorial_hodram_B54_B60_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 195 Hodram opening records, with 80 wording revisions, three wrap-only fixes, and 112 justified retentions. Six earlier decisions carry forward. [Checkpoint](editorial_hodram_B0_B23_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 118 early Hodram lines, with 54 wording revisions and 64 justified retentions. The exact B24–53 packet also carries 193 recent decisions. [Checkpoint](editorial_hodram_B24_B53_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 53 Rafael records in the Istanbul remedy and hidden-village exchanges. The review made 17 wording revisions and 36 justified retentions, and carried forward eight earlier decisions from the same scenes. [Checkpoint](editorial_rafael_B306_B309_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 21 Rafael records and carried forward 114 earlier decisions. The ruins review made four wrap-only fixes and two choice-caption revisions, with 15 justified retentions. [Checkpoint](editorial_rafael_B261_B280_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 222 Rafael records and carried forward 48 earlier decisions. The review made 60 wording revisions and two punctuation glyph corrections, with 160 justified retentions. [Checkpoint](editorial_rafael_B221_B240_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Revisited 192 Rafael records and carried forward 32 earlier decisions. The new review made 45 wording revisions, one glyph correction, and five wrap-only fixes, with 141 justified retentions. [Checkpoint](editorial_rafael_B211_B220_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Reviewed 77 Rafael records with 15 wording revisions, three glyph corrections, and 59 justified retentions. [Checkpoint](editorial_rafael_B208_B210_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 227 Rafael records with 39 wording revisions, three glyph corrections, two wrap-only fixes, and 183 justified retentions. [Checkpoint](editorial_rafael_B181_B187_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 183 Rafael records with 35 wording revisions, two glyph corrections, three wrap-only fixes, and 143 justified retentions. [Checkpoint](editorial_rafael_B177_B180_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 190 Rafael records with 56 wording revisions, six glyph corrections, four wrap-only fixes, and 124 justified retentions. [Checkpoint](editorial_rafael_B170_B176_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 368 Rafael records with 91 wording revisions, six punctuation glyph corrections, five wrap-only fixes, and 266 justified retentions. [Checkpoint](editorial_rafael_B161_B169_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 287 Rafael records across eleven encounters, including 152 wording revisions, 18 punctuation glyph corrections, two wrap-only fixes and 115 justified retentions. [Checkpoint](editorial_rafael_homeland_and_maps_registered_20261121.md)
+
+Native checks covered 172 revised pages and both choice captions. Focused emulator evidence covers 37 speech pages and both choice highlights. The clean-input patch reproduces the registered ROM byte for byte, and the Drive copy matches its SHA-256. [Candidate and patch](../releases/all_routes_editorial_20261121_rafael_homeland_and_maps_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 270 Rafael records across nine encounters, with 160 wording revisions, five punctuation glyph corrections and 105 justified retentions. [Checkpoint](editorial_rafael_palace_and_alliance_registered_20261121.md)
+
+Six speeches now fit on one page. Native and visual checks covered 165 revised pages, along with both full-name substitutions and all three choice menus. Focused emulator coverage includes 14 final speech samples and 29 earlier speech samples that still match byte for byte, plus six choice highlights. The registered patch rebuilt the exact clean-input candidate. [Candidate and patch](../releases/all_routes_editorial_20261121_rafael_palace_and_alliance_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 351 Rafael records across 18 encounters, with 146 wording revisions, one wrap-only fix and 204 justified retentions. [Checkpoint](editorial_rafael_rescue_and_lessons_registered_20261121.md)
+
+Native and visual checks covered 145 revised speech pages, plus speakerless panels and choice captions. The focused emulator proof ties 43 pages to the installed text and records four choice highlights. Another 40 unchanged speeches retain earlier ordinary Lisbon gameplay evidence. The exact clean-input patch and Drive copy both match the registered ROM. [Candidate and patch](../releases/all_routes_editorial_20261121_rafael_rescue_and_lessons_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 255 Rafael records across 18 encounters, with 143 wording revisions, four wrap-only fixes and 108 justified retentions. [Checkpoint](editorial_rafael_ruins_and_proof_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 261 Rafael records across 11 encounters, with 159 wording revisions, two wrap-only fixes and 100 justified retentions. [Checkpoint](editorial_rafael_followup_encounters_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 131 Gerhard recruitment and sea-battle tutorial records. The registered candidate has 74 wording revisions, three wrap-only fixes and 54 justified retentions. [Checkpoint](editorial_rafael_gerhard_tutorial_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 199 Rafael records through the bullfight and London rescue. The registered build has 105 wording revisions, five wrap-only fixes, 89 justified retentions and two fewer page turns. [Checkpoint](editorial_rafael_spain_london_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 142 Rafael records through the king's summons. The registered build has 82 wording revisions, nine wrap-only fixes, 51 justified retentions and one fewer page turn. [Checkpoint](editorial_rafael_east_asia_showdown_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 200 records across five Rafael exchanges. The registered build has 87 wording revisions, seven wrap-only fixes and 106 justified retentions. [Checkpoint](editorial_rafael_tradehouse_festival_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 197 records across four complete Rafael exchanges. The registered build has 96 wording revisions, 14 wrap-only fixes and 87 justified retentions. [Checkpoint](editorial_rafael_pereira_village_registered_20261121.md)
+
+Native and visual QA covers all 110 revised pages and 36 name-width cases. The initialized emulator excerpt verified 23 panels, including the 500,000 military-funds notice and the return to Lisbon. The other 93 revised panels received offline verification. [Candidate and clean-input patch](../releases/all_routes_editorial_20261121_rafael_pereira_village_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed all 103 records in Rafael's negotiations with Pereira. The registered build has 49 wording revisions, six wrap-only fixes, two revised choice captions and 46 justified retentions. [Checkpoint](editorial_rafael_spain_registered_20261121.md)
+
+Five speeches now fit on one page. Native verification covers 56 revised speech pages and all four captions. The focused emulator excerpt confirms both menus, the revised page turn, and the return to Lisbon. [Candidate and clean-input patch](../releases/all_routes_editorial_20261121_rafael_spain_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 146 records across nine complete Rafael exchanges. The candidate includes 34 wording revisions, four wrap-only revisions and 108 justified retentions. [Checkpoint](editorial_rafael_north_sea_africa_registered_20261121.md)
+
+All 38 revised pages passed native and visual checks. Two initialized excerpts verified 13 revised panels. The other 25 received offline verification. The exact clean-input patch and Drive readback passed. [Candidate and patch](../releases/all_routes_editorial_20261121_rafael_north_sea_africa_candidate/README.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Ordinary departure from Lisbon verified 44 previously reviewed panels in Rafael’s sailing lesson, including his substituted name, Janus’s question about Athens and the return to Sea View. One conditional line remains unvisited in gameplay. [Lisbon checkpoint](editorial_rafael_sailing_lisbon_gameplay_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered five revisions to Hodram's Baltic trade lesson and four justified retentions. Ordinary Hamburg gameplay verified all nine panels and the return to port. [Checkpoint](editorial_hodram_baltic_trade_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Ordinary Hodram gameplay verified 58 panels across the Hamburg ceramics exchange and the Speyer battle and Baltic trade tutorials. The port lesson has four pending wording revisions and five justified retentions. [Checkpoint](editorial_hamburg_voyage_gameplay_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Ordinary Rafael gameplay verified ten previously reviewed Seville Square panels, both role labels, the forecast, and the original event-completion flag. [Checkpoint](editorial_seville_square_gameplay_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 134 records across four refit and sailing lessons. The registered build has 85 revisions, 49 justified retentions and three fewer page turns. [Checkpoint](editorial_refit_sailing_parallel_routes_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 120 Fernando records across Hodram, Lil and Maria and fixed Rafael's farewell wrap. The registered build has 62 revisions and 59 justified retentions. [Checkpoint](editorial_fernando_parallel_routes_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed all 65 records in Fernando's coin game and recruitment. The registered build has 33 revisions and 32 justified retentions. Both flagged page breaks are gone. [Checkpoint](editorial_rafael_fernando_coin_game_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed all 62 records in Rafael's flagship refit and sailing lessons. The registered build has 34 revisions and 28 justified retentions. Seven revised speeches fit on one page. [Checkpoint](editorial_rafael_refit_sailing_lessons_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Revisited all 175 records in Rafael, Lil and Maria's Alexandria recruitment and ship lessons, with 110 revisions and 65 justified retentions. The registered checkpoint now includes all four routes. [Checkpoint](editorial_alexandria_ship_lessons_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Hodram's Alexandria warning and Cesare's ship-buying lesson have 22 revisions and 26 justified retentions. Ordinary gameplay verified the revised pages and both menu captions. [Checkpoint](editorial_hodram_alexandria_tutorial_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed the four Alexandria cooking exchanges and forecasts, with ten wording or layout revisions and 38 justified retentions. Hodram reached the Square and triggered the full scene during an ordinary voyage. [Checkpoint](editorial_alexandria_square_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed four Rafael exchanges, from the Mediterranean debrief to the encounters with Hans, Arcadius, Lil and Camille. The batch has 40 revisions and 155 justified retentions. [Checkpoint](editorial_rafael_mediterranean_dialogue_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Rafael's New Game replay verified Julio's loan and preparation choice. The first Market lesson has seven revisions for clearer wording and phrase continuity. [Checkpoint](editorial_rafael_first_market_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Rafael's opening and preparation lesson have 30 revised lines and 87 justified retentions. Seven revised panels and both harbor paintings were verified in ordinary gameplay. [Checkpoint](editorial_rafael_harbor_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Stockholm's fur exchange and recruiting lesson now include three revised lines. The December Square event and Tavern lesson passed ordinary gameplay. [Checkpoint](editorial_stockholm_dialogue_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+The Route Map now separates faction names and numbered fleet labels. Both live surfaces passed glyph and bounds checks. [Checkpoint](editorial_numbered_fleet_spacing_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Athens and London Square scenes have ten edits and 62 justified retentions across all four routes. Hodram's two full scenes passed ordinary gameplay. Stockholm's December 19 gate passed focused checks. [Checkpoint](editorial_athens_london_trends_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Two lines in Hodram's Lisbon fragrance scene now match Rafael's wording and keep both phrases together. Ordinary gameplay verified the full Lisbon and Seoul trend scenes. [Checkpoint](editorial_lisbon_fragrance_wraps_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Amsterdam’s bread scene activated during ordinary Lil gameplay on the registered testing ROM. All 13 panels matched the current native font, and the original completion flag and Square return were verified. The original event map binds all 80 reviewed town trend copies and records the two calendar rules. [Checkpoint](editorial_amsterdam_bread_gameplay_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+All six flagged story menus fit in the registered ROM. The new review retains 13 captions with exact source references and individual reasons. The original menu code returned every option and cancellation at both test alignments. All 26 caption planes passed native glyph, centering and bounds checks, and all six sheets were inspected. [Caption review](../translations/editorial_checkpoints/SharedText_20261110_v1/typed_story_menu_review_20261121_v1.json)
+
+In an initialized Rafael replay, both cursor positions of the widest menu showed both full captions. Down moved the highlight to the second choice and A closed the menu and showed Abraham Uddin's next portrait. The other five menus received offline checks on this candidate. The original event branches and hardware remain untested by this replay. [Emulator results](../work/typed_story_menu_display_20261121/rafael_B146_emulator/observed.json)
+
+Checkpoint cleanup removed 40 scratch captures totaling 2,568,926 bytes after verifying the three retained frames. [Cleanup receipt](../work/typed_story_menu_display_20261121/rafael_B146_emulator/checkpoint_cleanup.json)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed the 30 records in Hodram’s interrupted execution, registering one prose revision, two phrase wraps and 27 retentions. [Checkpoint](editorial_hodram_execution_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed both versions of the moonlit violin encounter. Registered five dialogue edits and 32 justified retentions. [Checkpoint](editorial_moonlit_violin_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+All five foraging voices keep each barrel count with its resource. Charles’s original gameplay report and sailing return verify the wrap. [Checkpoint](editorial_search_forage_wrap_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Shore Search uses regular digits for fatigue and foraging. Gameplay verified both fatigue notices and the water-before-food portrait. [Checkpoint](editorial_search_supply_and_fatigue_digits_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Power and shore Search gold now use regular digits at all established callers. The original Search replay awards 370 gold on both builds. [Checkpoint](editorial_power_and_gold_digits_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Captured-gold and national-award notices now keep their phrases together. The original victory replay verified the captured-gold wrap. [Checkpoint](editorial_victory_reward_wrap_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Battle rewards now use regular-width digits. Paired gameplay verified the captured gold, food, and water amounts. [Checkpoint](editorial_victory_reward_digits_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Kept Clifford’s wording and moved “they can beat me?” onto one line. Verified the portrait during the original declaration encounter. [Checkpoint](editorial_clifford_declaration_wrap_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Verified seven held battle and reward records and logged a wrap-only issue in James Clifford’s declaration response. The 18 traced records add gameplay evidence to existing editorial credit. [Checkpoint](editorial_fleet_attack_shared_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Matched COMMON 3456 to the title painting of Lil and Camille running. The current cold boot showed both complete names. Offline execution resolved five apparent COMMON 284 and 304 matches as village and graphics parameters. [Checkpoint](editorial_shared_numeric_and_lil_artwork_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Clustered World Map markers now say “+ more.” The town and fleet markers passed paired emulator checks. [Checkpoint](editorial_map_cluster_suffix_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed Gerhard’s visit and training in Rafael’s route and Ian’s story in Maria’s route. Registered three dialogue revisions and 71 justified retentions. [Checkpoint](editorial_company_companion_scenes_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Revised 12 company-name lines across four routes and removed four doubled-punctuation cases in Lil’s story. [Checkpoint](editorial_company_name_dialogue_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Localized the five stock encounter model names and verified their victory and inspection paths. [Checkpoint](editorial_stock_encounter_names_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Restored both full ship names in Maria’s starting fleet. [Checkpoint](editorial_maria_starter_ship_names_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered eight item-card wrap fixes with the original wording intact. [Checkpoint](editorial_item_gallery_wraps_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reconciled 218 item descriptions and verified 24 Gallery cards in the current emulator replay. Eight wrap refinements are recorded in the coverage ledger. [Checkpoint](editorial_items_gallery_20261121.md)
+
+The Gallery menu and empty-collection notice now match the Historic Sites heading. [Checkpoint](editorial_gallery_historic_sites_menu_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Retained all 44 Characters Gallery fields after source comparison and emulator verification. [Checkpoint](editorial_characters_gallery_20261121.md)
+
+Registered six Historic Sites prose corrections and seven wrap fixes after reviewing all 19 Gallery pages. [Checkpoint](editorial_historic_sites_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered the Hangzhou sake and Veracruz cheese exchanges across all four routes. [Checkpoint](editorial_hangzhou_veracruz_trends_registered_20261121.md)
+
+Confirmed 276 stored shared-text references on the current registered ROM. Rechecked 1,562 still commands and ran 432 native filename requests. This checkpoint adds offline evidence for 163 story-artwork associations. Alternate text paths remain open. [Coverage](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_display_worklist_20261121_v3.json)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered the Havana medicine, Calicut dye and Istanbul tobacco exchanges across all four routes. [Checkpoint](editorial_havana_calicut_istanbul_trends_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered the Sofala tea, Malacca almond and Osaka glass exchanges across all four routes. [Checkpoint](editorial_sofala_malacca_osaka_trends_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered the Sao Jorge wine and Basra artwork exchanges across all four routes. [Checkpoint](editorial_sao_jorge_basra_trends_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Registered the Seville banana and Stockholm fur exchanges across all four routes. [Checkpoint](editorial_seville_stockholm_trends_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Revised five confirmed early wraps in mutiny, Auto Move, Refit and the shark encounter. [Checkpoint](editorial_final_early_wrap_leads_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 49 item-advice replies, revised 18 pages, and verified two of the revised replies in Lisbon. [Checkpoint](editorial_item_advice_phrase_wraps_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+The Search sailor-loss notice now uses regular-width digits, with the original crew loss and sailing return verified. [Checkpoint](editorial_shore_loss_digits_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Reviewed 41 shore and whale reports, revised 11 pages, and verified the attack report and return to sailing. [Checkpoint](editorial_shore_phrase_wraps_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-21
+
+Revised ten Deck comments with premature line breaks and verified Gerhard’s sail-handling comment and town return. [Checkpoint](editorial_deck_phrase_wraps_registered_20261121.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Revised three Strange Bubbles warnings and verified the five-panel sighting and sailing return. [Checkpoint](editorial_bubble_portrait_wraps_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Reconciled all 207 default name decisions against the Genoa candidate and verified nine names in the dialogue and Deck renderers. [Checkpoint](editorial_default_actor_names_current_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered the four-route Genoa tomato scene and recorded its ordinary Square trigger and Julio’s Tavern recruitment. [Checkpoint](editorial_genoa_tomatoes_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Auto Move and at-sea Help now explain the route requirements, target controls, and mode shortcuts. [Checkpoint](editorial_sailing_help_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Verified all 781 main story still-image commands and matched them to the artwork associated with 163 stored scene labels. [Checkpoint](editorial_story_still_commands_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Tavern Help now uses Recruit Crew, Schemes and the live scheme names in all nine revised pages. [Checkpoint](editorial_tavern_help_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Recruit Crew now uses regular-width numbers for the quote, volunteers, and both follow-up questions. [Checkpoint](editorial_recruit_crew_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Palace Help matches all six menu commands and keeps the revised contract rules and headings on their original linked pages. [Checkpoint](editorial_palace_help_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Title-screen Continue and in-game Load now ask “Load this save?” in the registered candidate. [Checkpoint](editorial_load_confirmation_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Verified Rafael’s ending-save question, both answers, and a completed write to the unused second slot. [Checkpoint](editorial_ending_save_scope_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Verified the Syracuse Fleet Setup orders branches and narrowed the stored debt-warning lead. [Checkpoint](editorial_fleet_reorganization_scope_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered regular-width price digits for Treat Everyone in the Tavern. [Checkpoint](editorial_tavern_round_digits_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered the Hamburg ceramics exchange across all four story routes. [Checkpoint](editorial_hamburg_ceramics_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered regular-width slot numbers in the Continue checksum warning. [Checkpoint](editorial_damaged_save_digits_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+The current shared-text worklist binds 241 entries to existing display or artwork evidence and identifies 35 first-priority records. The initialized fleet shortfall passed both Disband choices and eight full glyph checks. [Checkpoint](editorial_shared_display_worklist_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered the natural Market trade confirmation and one-line bargaining reply. [Checkpoint](editorial_market_bargaining_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered London’s English Region heading and centered all 21 Market Info region headings. [Checkpoint](editorial_market_english_region_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered complete Market Info headings, the restored Status field, and regular-width punctuation in the route chart. [Checkpoint](editorial_market_report_status_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered the English Sirens label after verifying all 59 selectable Sound Setup effects and the return to title. [Checkpoint](editorial_sound_sirens_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered English no-home text and regular-width punctuation in the original Forces chart after the paired Lisbon replay. [Checkpoint](editorial_forces_chart_fields_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered regular-width minimum contract fees in both Palace branches after the payment and refusal replays. [Checkpoint](editorial_palace_contract_fee_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered the English ruin discovery banner and regular-width Power reward after the Cappadocia replay. [Checkpoint](editorial_ruin_discovery_display_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Registered seven wording revisions and one wrap fix across the mermaid sighting, ship leaks and Square business replies. [Checkpoint](editorial_swimmer_leak_square_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+The standard paid Port resupply quote uses regular-width digits and is registered after the Madeira purchase and departure replay. [Checkpoint](editorial_madeira_resupply_price_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Madeira’s 260-gold resupply quote now uses regular-width digits on the combined staged ROM. The purchase, departure, and native display checks pass. [Price correction and combined staging](editorial_madeira_resupply_numerals_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Thirty-four swimmer, leak and Square records have source-bound decisions. Eight changed pages pass native display and the two revised Square replies match complete emulator masks. The Madeira replay found full-width digits in the ordinary resupply quote. [Staged review and glyph lead](editorial_swimmer_leak_square_20261120.md)
+
+# Current editorial checkpoint - 2026-11-20
+
+Two Wanda lines are revised and registered. Both drink responses and two Tavern rumors were verified in ordinary Amsterdam gameplay. [Checkpoint](editorial_amsterdam_tavern_registered_20261120.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The captain-name glyph correction is registered after the New Game, Continue, Save and Gallery replays. [Checkpoint](editorial_captain_name_latin_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The staged captain-name patch passes New Game, Continue and Save-list replays, with readable Latin names and unchanged legacy save copies. The clean-input patch reconstructs the stage exactly. Release registration remains open. [Checkpoint](editorial_rafael_custom_name_20261119.md#staged-latin-glyph-correction)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Lisbon battery-save round trip reproduces the mixed-width name in both slot lists and the restored actor field. The separate slot summary is now in scope for the custom-name fix. Native checks cover all four name fields and their original storage sizes. [Checkpoint](editorial_rafael_custom_name_20261119.md#save-and-continue-follow-up)
+
+# Current editorial checkpoint - 2026-11-19
+
+Ordinary New Game reproduces uneven Latin glyph widths in Rafael’s edited name, both in Claudio’s opening question and Rafael’s speaker label. A captured-state check identifies the existing village-only input conversion. The source-bound replay is recorded and the rendering fix remains open. [Checkpoint](editorial_rafael_custom_name_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The six revised Deck View guidance rows and both Filter choices are verified in ordinary gameplay and registered. [Checkpoint](editorial_deck_view_guidance_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Three Guild artifact rumors are registered after native display checks and a focused King’s Shield replay. [Checkpoint](editorial_artifact_rumor_wraps_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Twisted Horn rumor’s complete final phrase is registered and verified in ordinary Lisbon Guild gameplay. [Checkpoint](editorial_twisted_horn_rumor_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s trade and town-defense lessons are registered after emulator checks of both trading responses and Janus’s advice. [Checkpoint](editorial_rafael_trade_and_arms_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The sailing estimate and departure date now use regular digits, verified during Rafael’s ordinary departure from Ceuta. [Checkpoint](editorial_departure_numerals_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s sailing-controls lesson and the conversation about Athens are registered after native review and an initialized emulator replay. [Checkpoint](editorial_rafael_sail_controls_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s ordinary Ceuta arrival verified both revised tutorials and the shared docking, Market, Square and Port dialogue. [Checkpoint](editorial_rafael_ceuta_contract_routes_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s first-voyage and Ceuta tutorial revisions passed native display checks and ordinary gameplay through the wind question. [Checkpoint](editorial_rafael_voyage_ceuta_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The cumulative Tavern Recruitment candidate registers five revisions and two retentions. The same ROM passed all 28 first-voyage panels and reached the Port menu and Ceuta lesson through ordinary play. B42 R59 remains a wrap follow-up. The ledger stays at 27,700 credited reviews with 276 shared entries open. [First-voyage replay](editorial_rafael_first_voyage_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Julio’s Tavern recruitment lesson has five revised lines, with all seven panels and the Flagship assignment verified in ordinary Lisbon gameplay. [Checkpoint](editorial_rafael_tavern_lesson_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Julio’s three revised Deck lines and all 12 panels pass the ordinary replay from Market Trade. [Checkpoint](editorial_rafael_deck_after_trade_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The full Shortage status appears in Town Summary and both Market Trade views. [Checkpoint](editorial_town_shortage_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Lisbon’s Quit and Options replays verify the full prompts and title return. The alternate Maria script’s value 750 is a scene-length field. [Checkpoint](editorial_retail_exit_scope_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Amsterdam Square verifies the full Status heading and three shared replies from New Game. The scene-label ledger ties five more stored titles to their separately localized Gallery artwork. [Checkpoint](editorial_scene_caption_artwork_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Town Summary shows the full Status heading, verified in five Lisbon gameplay frames. [Checkpoint](editorial_town_summary_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Goods Info uses six clearer category names, including Seasonings verified in both Trade views. [Checkpoint](editorial_trade_categories_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Trade, Ledger, Total and the complete Status now appear in both Market Trade views. [Checkpoint](editorial_trade_labels_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Regular dialogue numerals replace wide digits in five Inn records, with a complete raid reaction verified in Istanbul. [Checkpoint](editorial_inn_numerals_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Inn review covers 23 stays, reports and rumor records, with the revised price and duration question verified in Istanbul. [Checkpoint](editorial_inn_conversations_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Tavern hostess introductions, chat and gifts received 31 contextual reviews and four revised replies. [Checkpoint](editorial_hostess_conversations_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Five Port departure warnings have revised wording and wrapping, with the crew shortage warning verified in Lisbon. [Checkpoint](editorial_departure_warnings_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Seasonings and Textile Shop now appear in Lisbon Square, with both complete captions verified in gameplay. [Checkpoint](editorial_square_label_wording_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Lisbon’s five Square replies verify the Shopkeeper nameplate. The joined-name audit records the two Japanese descriptors and their separate readers. [Checkpoint](editorial_joined_actor_names_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Deck personal, Shipwright and Doctor review records four revisions and 45 retentions, including a replay of Gerhard’s revised line. [Checkpoint](editorial_deck_comments_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Lil’s alliance and Amsterdam exchanges now use Red Dye consistently with the inventory. [Checkpoint](editorial_lil_red_dye_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s two item exchanges and Lil’s stolen-item notices now use the inventory names. [Checkpoint](editorial_story_item_titles_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Hodram’s Silla Gold Crown exchange now uses the names shown on Mihwa’s nameplate and the item card. [Checkpoint](editorial_hodram_mihwa_crown_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s village trading post and the Market dialogue now use the terminology appropriate to each location. [Checkpoint](editorial_story_market_terms_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Five Help topics now use Market and Source Item consistently, with all five pages and linked navigation verified in the emulator. [Checkpoint](editorial_help_market_terms_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Square shopkeeper’s bulk-trade tip now names Market, with five revised pages and 25 justified retentions. [Checkpoint](editorial_square_shop_followup_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Sofala candidate’s shared glyph census isolates the full-width “I” to the stored exhibition warning. Exact copies of the 31 legacy entries were checked against both ROMs. The warning’s original display path remains open. [Checkpoint](editorial_legacy_warning_storage_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s Sofala confrontation and five adjacent exchanges are registered with 25 revisions and 92 justified retentions. [Checkpoint](editorial_rafael_iberian_aftermath_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s North Sea encounters and the summons to Lisbon have 18 revisions and 94 justified retentions in the registered candidate. [Checkpoint](editorial_rafael_north_sea_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s departure and debrief are registered, with the financing and command exchanges revised and the guided opening replayed from New Game. [Checkpoint](editorial_rafael_first_voyage_debrief_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Manuel’s verse now reads consistently across all four routes, with the crew reactions preserved. [Checkpoint](editorial_manuel_poem_cross_route_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael’s Ceuta trade contract lesson and four nearby story exchanges have 37 revisions and 92 justified retentions. [Checkpoint](editorial_rafael_contract_and_proof_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The item screens now use Source Item, matching Help and the Market dialogue. [Checkpoint](editorial_item_category_labels_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Tavern and Strategist follow-up is registered with 15 revisions, 91 retentions and verified London menu returns. [Checkpoint](editorial_tavern_strategist_followup_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Hodram’s early confrontations are registered, including the one-page tactics lesson and Pasha’s ambush. [Checkpoint](editorial_hodram_early_confrontations_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Athens and Camille exchanges and all four Armadillo Hide rumors have a registered candidate and a focused Athens replay. [Checkpoint](editorial_naturalist_aliases_and_shield_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The four-route phrase-wrap batch is registered with 19 revised pages, 176 retentions and a focused Ceuta tutorial replay. [Checkpoint](editorial_story_short_phrase_wraps_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The Market follow-up is registered with four revisions, 18 retentions and a verified recommendation, instructions and farewell. [Checkpoint](editorial_market_followup_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The battle-dialogue candidate is registered with four revisions, 25 retentions and a verified First Mate confirmation and cancel path. [Checkpoint](editorial_battle_dialogue_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The active candidate has a current display ownership ledger for all 276 stored shared keys. All Gallery selections and 168 story still filenames passed offline. The ledger remains at 27,700 credited reviews. [Checkpoint](editorial_shared_display_owners_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Shared weather and sea-hazard dialogue is registered with 12 revisions, 49 retentions and a verified whirlpool contact replay. [Checkpoint](editorial_sea_hazard_dialogue_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+The dolphin, Sirens, and mermaid encounters have 46 contextual decisions and three verified emulator replays. [Checkpoint](editorial_fleet_encounter_dialogue_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Copenhagen emulator replays verify both the partial-refill and supply-mix prompts and their return to the Port menu. [Checkpoint](editorial_port_resupply_options_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael's sailing-mode tutorial is registered with 12 revised pages and verified accept and decline paths. [Checkpoint](editorial_rafael_sailing_modes_registered_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael's sailing tutorial has 12 revised pages checked offline against the actual mode names. The focused replay and registration are pending. [Checkpoint](editorial_rafael_sailing_modes_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Rafael's first-voyage lesson has 21 revised turns and seven exact retentions, including a one-page supply warning. [Checkpoint](editorial_rafael_first_voyage_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Julio's complete Deck lesson has seven revised lines and five retentions, with the First Mate explanation on one page. [Checkpoint](editorial_rafael_deck_lesson_20261119.md)
+
+# Editorial checkpoint - 2026-11-19
+
+The current ROM retains all nine flagged phrase fixes, Rafael's Africa discovery and Julio's ASCII F. Scoped native Deck and loader checks add no gameplay or review credit. The ledger remains at 27,700 with 276 stored shared keys open. [Checkpoint](editorial_current_wrap_and_shared_scope_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Save and Load separate the sea area from At Sea, and the Load heading uses natural wording. [Checkpoint](editorial_save_location_labels_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Four save and cartridge dialog lines are revised. The overwrite confirmation and focused write-error path are verified. [Checkpoint](editorial_save_dialogue_followup_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Seven mutiny lines are revised, and the Quell Mutiny warning and return to the choice menu are verified. [Checkpoint](editorial_mutiny_dialogue_followup_20261119.md)
+
+# Current editorial checkpoint - 2026-11-19
+
+Lil, Hodram and Maria opening replays now join the title and Rafael display coverage. All five installed movie captions were reviewed and retained. [Checkpoint](editorial_opening_display_scope_20261119.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Six shared storm and sea-foam lines are revised, and the five-part sea-foam event has a fresh emulator replay. [Checkpoint](editorial_sea_event_dialogue_followup_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The three sailing guide panels are revised and both Madeira attack-text paths are documented. [Checkpoint](editorial_sailing_mode_prose_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+All 64 queued wrap leads from Lil and Maria and six nearby turns are reviewed. [Checkpoint](editorial_lil_maria_flagged_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Thirty more wrap leads and their exchanges are resolved across the four routes. [Checkpoint](editorial_all_routes_ongoing_phrase_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Twenty-one more wrap leads and their exchanges are resolved across the four routes. [Checkpoint](editorial_all_routes_next_review_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Twenty-three wrap leads and the Barbarossa Hayreddin name order are resolved across the four routes. [Checkpoint](editorial_all_routes_continuing_phrase_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Seventeen wrap leads and their dialogue exchanges are reviewed across the four routes. [Checkpoint](editorial_all_routes_dialogue_followup_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Thirteen wrap leads and their dialogue exchanges are reviewed across all four routes. [Checkpoint](editorial_all_routes_contextual_phrase_review_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Julio's trading lesson and seven other Rafael exchanges have passed the dialogue and wrap review. [Checkpoint](editorial_rafael_trade_lesson_and_scenes_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Eight Rafael wrap leads and their dialogue exchanges are reviewed, starting with Africa's Proof of Conquest. [Checkpoint](editorial_rafael_early_phrase_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The Papal States and Titis exchanges are reviewed across all four routes. [Checkpoint](editorial_papal_states_titis_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Regional Proof and map dialogue is reviewed, including Maria's handover after Espinosa. [Checkpoint](editorial_regional_proof_dialogue_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The trade and diplomacy follow-up, Brass Lamp discovery, royal audience, signed letter and four Arrow exchanges are reviewed. [Checkpoint](editorial_story_followup_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Thirty-one phrase-wrap leads are reviewed, including Rafael's sea-battle tutorial. [Checkpoint](editorial_story_phrase_continuity_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Seventeen question tags and phrase wraps are corrected across all four storylines. [Checkpoint](editorial_story_tag_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Lil's Genoa tomato quest and Maria's Sao Jorge supply exchanges are reviewed. [Checkpoint](editorial_late_trade_exchanges_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The warrior trials, village handovers, monk accounts and remaining fog branches are reviewed. [Checkpoint](editorial_warrior_village_handovers_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The cliff and cave routes, offshore ruins, missing monk rumor and Verisa's exchanges are reviewed. [Checkpoint](editorial_caves_offshore_monk_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The desert encounters, Goryeo Incense Burner and Maria's map exchanges are reviewed across all four routes. [Checkpoint](editorial_desert_censer_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The Sakura visits, forest expeditions and Macao inquiry are reviewed across all four routes. [Checkpoint](editorial_sakura_expeditions_macao_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Hodram's temple, Lil's supplies and Maria's shipyard exchanges are reviewed. [Checkpoint](editorial_temple_supply_shipyard_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Rafael's dancer and mosque rescue are reviewed. [Checkpoint](editorial_rafael_mosque_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The overland forest and desert passages are reviewed across all four routes. [Checkpoint](editorial_overland_passages_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The ruin clues and map guides are reviewed across all four routes. [Checkpoint](editorial_ruins_clues_and_guides_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The jungle crossings and cave escapes are reviewed across all four routes. [Checkpoint](editorial_jungle_caves_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Rafael's ruins investigation and the related London and Malacca guild assignments are reviewed. [Checkpoint](editorial_london_malacca_guild_assignments_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The forest expeditions and bear choices are reviewed across all four routes. [Checkpoint](editorial_forest_expeditions_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The bounty assignments and related handovers are reviewed across all routes. [Checkpoint](editorial_bounty_assignments_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The follow-up favors, bounties and ruin clues are reviewed across all routes. [Checkpoint](editorial_followup_favors_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The port favors and related guild searches are reviewed across all routes. [Checkpoint](editorial_port_favors_and_searches_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The survey parties and four guild searches are reviewed across all routes. [Checkpoint](editorial_guild_search_and_survey_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The ruin statue and floating-ice puzzle are reviewed across all routes. [Checkpoint](editorial_ruin_statue_and_ice_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The figurehead discovery and ruin clues are reviewed across all routes. [Checkpoint](editorial_figurehead_and_ruins_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The Janus glove rumor and Frozen Rose quest are reviewed across all routes. [Checkpoint](editorial_janus_and_frozen_rose_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+The Alexandria chisel, Filippo, fleet letter, Gupta statue and Cesare exchanges are reviewed across all routes. [Checkpoint](editorial_crew_accounts_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Four consecutive crew item rumors were reviewed in every route. [Checkpoint](editorial_crew_item_rumors_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Eighteen remaining story references now use Proof of Conquest. [Checkpoint](editorial_proof_of_conquest_terms_20261118.md)
+
+# Current editorial checkpoint - 2026-11-18
+
+Nine story phrase breaks are fixed across all four routes. [Checkpoint](editorial_story_phrase_wraps_20261118.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Palace and village scenes have 24 revisions and 417 justified retentions in 20 blocks. [Checkpoint](editorial_palace_and_village_exchanges_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The book sale, Kublai Khan prophecy and sextant exchange have 52 revisions across all four routes. [Checkpoint](editorial_town_quest_exchanges_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Six town trend exchanges have 55 revisions across all four routes, with 221 justified retentions. [Checkpoint](editorial_town_trend_exchanges_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The full outfitted ship catalogue has six readable design labels and 54 justified retentions. [Checkpoint](editorial_trade_and_armed_ship_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Ship of the Line, Suetsugu and the related specialized designs have ten label revisions. [Checkpoint](editorial_specialized_ship_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Bounded 773 incoming references, checked 12 further selectors and reconciled 13 clean/current differences in the nine forwarding routines. The ledger remains at 27,700 reviews with 276 stored keys awaiting display ownership. [Checkpoint](editorial_shared_upstream_reconciliation_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Recorded stock results for the last 17 direct COMMON selectors and checked all seven discovered callers into four forwarding entries. The reviewed-record count is 27,700, with 276 stored keys awaiting adjudication. [Checkpoint](editorial_shared_selector_ranges_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Verified the Sailor Info stat-label fix in the Market Trade Dialogue candidate against the replayed Crew Review build. Twenty-five more historical COMMON sites are resolved offline. [Deck evidence](editorial_sailor_stat_labels_20261114.md#market-trade-dialogue-candidate) · [Caller checkpoint](editorial_shared_fixed_arguments_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The original Market, combat and crew callers resolve 19 more historical sites with the inherited checks. Thirteen forwarding sites now have a separate classification. [Checkpoint](editorial_shared_message_producers_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Square, actor, item, Ancient Map, Sound Setup and Deck selectors resolve 27 more historical caller leads. [Checkpoint](editorial_shared_table_callers_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Online and About Extras title code confirms all 19 independent text owners. The older caller inventory now has 11 more resolved sites, and three numeric coincidences are excluded. [Checkpoint](editorial_online_title_routing_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Market stock advice and investment prompts use more natural wording and readable wraps. [Checkpoint](editorial_market_trade_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Market trader’s letter offers, instructions and closing replies have clearer wording and wraps. [Checkpoint](editorial_market_reward_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Two Market economy replies now use complete sentences with readable wraps. [Checkpoint](editorial_market_economy_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+New Game and system-data load failures use clearer wording. [Checkpoint](editorial_setup_confirmation_prose_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The stored shared-text audit resolved 19 numeric references and two indirect callers. The verified Online, About Extras and Gallery text still matches the current ROM. [Checkpoint](editorial_stored_shared_consumers_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Square menu now reads Medicine Shop and Sundries Shop in full. [Checkpoint](editorial_square_shop_captions_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Fernando’s stat labels passed a fresh Deck replay on the Fleet Sighting Alerts candidate in Normal and in the focused Excited test. The photographed title overlap still needs hardware confirmation. [Checkpoint](editorial_sailor_stat_labels_20261114.md#fleet-sighting-alerts-candidate-recheck)
+
+# Current editorial checkpoint - 2026-11-15
+
+Fleet lookouts now give spoken directions in all 15 sighting and attack alerts. [Checkpoint](editorial_fleet_sighting_alerts_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Maria’s encounter with Kurushima has four dialogue revisions and stable custom-name wrapping. [Checkpoint](editorial_kurushima_encounter_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Rat warnings and empty-search replies now keep their phrases together in the voyage dialogue. [Checkpoint](editorial_voyage_rats_and_search_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Boy and Foreign Girl panels now use consistent labels during Cristina’s rescue and Sera’s introduction. [Checkpoint](editorial_embedded_story_roles_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The patrons at Cristina’s dance now use consistent labels across all four routes. [Checkpoint](editorial_cristina_dance_patrons_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+All 207 default actor names and roles are reconciled. The later alias and custom-name coverage remains open. [Checkpoint](editorial_default_character_names_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The 21 tavern hostess names and Follower nameplate are retained, and all 125 default names and roles for actors 82–206 are reconciled. [Checkpoint](editorial_hostess_and_follower_names_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Five Square trend replies are revised, including both wraps observed in Tunis. [Checkpoint](editorial_square_trend_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Yifa’s full Seoul recruitment is reviewed and tested in ordinary gameplay. Regional town replays verify 19 additional holds. [Checkpoint](editorial_seoul_recruitment_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+All 31 earlier pending COMMON records have source-bound wording decisions. The apparent COMMON 318 literal selects a graphics parameter. [Checkpoint](editorial_legacy_dialogue_review_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Market price-check prompt and four bargaining replies are revised. [Checkpoint](editorial_market_conversation_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The Standard Shipyard list and details spell out Light Galleon, Small Galley and Large Galley. [Checkpoint](editorial_ship_class_names_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The sea-inspection tooltip now names the Ghost Ship in full. [Checkpoint](editorial_special_target_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Three dialogue revisions clarify the mutiny against Aziza in Rafael’s and Hodram’s routes. [Checkpoint](editorial_aziza_mutiny_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Five resupply and departure prompts were revised, with three individual retentions. [Checkpoint](editorial_port_supply_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Replayed the Tunis and Syracuse discoveries and checked four complete panels. Offline, all 332 stock names fit the original place and item notices on one line. The separate COMMON 287 notice still needs a verified caller. [Checkpoint](editorial_port_discovery_consumers_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Verified four Fleet Setup and Disband panels in gameplay and eight isolated wallet cases. The Japanese debt warning has a faithful two-line draft pending its original consumer. [Checkpoint](editorial_fleet_debt_disband_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+London’s Tavern and the Stockholm Palace have three dialogue revisions and 15 justified retentions. [Checkpoint](editorial_london_stockholm_dialogue_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+New Game now shows natural editor headings and clean month/day dates. [Checkpoint](editorial_rafael_setup_labels_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Verified the original Quit Game selector against clean and current ROMs. Prepared an ASCII draft for COMMON 318 with a complete two-line native preview. Consumer verification is still open for that stored warning. [Checkpoint](editorial_exhibition_quit_warning_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Checked 414 stock name getters, 164 Gallery captions and eight native Gallery description renders for older project spellings. The native old-save compatibility helper still displays Joakim for Hodram’s exact former default name. [Checkpoint](editorial_historical_name_spellings_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Julio uses the approved Cristina spelling in Lil’s recruitment exchange. [Checkpoint](editorial_cristina_recruitment_name_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Traced five legacy company-information fields on the registered ROM. Both original replay paths reached their drawers, and temporary English replacements had no visible effect in 27 complete frame comparisons. [Checkpoint](editorial_faction_information_visibility_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The two ritual officials are labeled Officiant, with Priest retained for the Christian role. [Checkpoint](editorial_ruler_and_ritual_nameplates_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Retained 29 regional town nameplates after reviewing 21 complete story exchanges, the native town selection and the rendered labels. These nameplate reviews preserve existing dialogue credit. [Checkpoint](editorial_town_role_nameplates_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Julio’s current tutorial passes 12 catalogue checks and a four-line font comparison. Eighteen source-bound records retain intentional punctuation or spacing. The exhibition warning in COMMON 318 still needs a display caller. [Checkpoint](editorial_story_glyph_consistency_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Allied, At War and Subordinate relationship lines are localized in the Forces chart. [Checkpoint](editorial_forces_relationships_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+Lisbon Market Info displays “Trends” when the local report has an active trend. [Checkpoint](editorial_market_info_trends_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The developed Port menu now reads “Back to Town” and returns to the original town screen. [Checkpoint](editorial_developed_port_menu_20261115.md)
+
+# Current editorial checkpoint - 2026-11-15
+
+The exact Crew Review ROM played the title and Rafael opening with zero lookups for COMMON 3570–3606. The review associates 31 labels with movie artwork and retains all stored strings pending broader ownership. [Checkpoint](editorial_opening_scene_labels_20261115.md)
+
 # Current editorial checkpoint - 2026-11-15
 
 The All Routes Crew Review candidate includes 38 registered batches beyond All Routes Wrap Review. The clean-input patch reconstructs the exact test ROM. The ledger credits 27,700 reviewed records and has 276 mapped COMMON keys to review or classify. [Release and coverage](editorial_promotion_candidate_20261115_crew_review.md)

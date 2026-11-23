@@ -1,0 +1,7 @@
+# Deck comment phrase wraps
+
+Revised ten earlier Deck comments against the clean Japanese and their original role, battle or health selectors. The new wraps keep the financial report together and give Hodram two complete clauses about winning with fewer casualties. Six comments now fit on one row. These are separate conditional remarks and carry no new dialogue credit. [Exact clean, prior and registered references](../releases/all_routes_editorial_20261121_deck_phrase_wraps_candidate/verification/registered_review.json)
+
+All ten pages were visually reviewed after native output checks. A Copenhagen replay displayed both lines of Gerhard’s revised sail-handling comment in two holds and returned to town. The replay used a disclosed room-assignment fixture on a disposable save. The other nine comments were checked offline. Hardware remains unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261121_deck_phrase_wraps_candidate/verification)
+
+The patch reconstructs the registered ROM exactly. Only COMMON and its ARM9 directory data change. All 114 accepted layers, the ASCII right-bound fix and the positions and payloads of 276 pending records carry forward. Six startup holds, 24 protected getters and 17 focused tests passed. Twenty-three leads from the early-break scan remain. [Candidate and patch](../releases/all_routes_editorial_20261121_deck_phrase_wraps_candidate/README.md)

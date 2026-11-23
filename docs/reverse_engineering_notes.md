@@ -94,13 +94,13 @@ has booted successfully.
   interior-offset array begins at ARM9 offset `0x143276`; the translated records
   and regenerated offsets are source-locked in `translations/sound_bgm_titles.json`
   and `translations/sound_selector_arm9.json`.
-- The Sound Setup SFX selector is a separate ARM9 table beginning at `0x16ED80`.
-  It contains 4 four-byte compact labels, 44 eight-byte slots, and 8 twelve-byte
-  slots, plus a standalone `ゲームオーバー` caption at `0x16EFB4`, for 57 titles.
-  The compact labels are `帆`, `嵐`, `雨`, and `雷`; their
-  three-character English forms are required to retain a null terminator.
-  `scripts/verify_sound_selector_build.py` independently checks every translated
-  slot and all 38 reconstructed BGM slices.
+- The Sound Setup SFX selector uses 59 ARM9 pointers beginning at `0x16F158`.
+  Its label strings start at `0x16ED80`. The four compact slots for `帆`,
+  `嵐`, `雨` and `雷` allow three English bytes plus a null terminator.
+  The earlier 57-slot storage verifier included Replay and omitted Cancel,
+  Message and Sirens. The original selector, effect IDs and all displayed
+  titles are covered by the
+  [registered selector check](editorial_sound_sirens_registered_20261120.md).
 - Every packed BGM pointer must be even. Odd pointers reproduce the observed
   leading/trailing-letter corruption (`rEndin`, `aBeyondHorizo`). Padding after
   the final title is rendered as part of its field and causes left-shifted text,

@@ -1,0 +1,7 @@
+# Load confirmation
+
+Title-screen Continue and in-game Load now ask **Load this save?** after the player selects an occupied slot. This matches **Select a save to load** above the list and keeps the original Japanese question and the original Yes/No control. The text remains one line in its existing terminated slot. [Exact source, wording decision and native proof](../releases/all_routes_editorial_20261120_load_confirmation_candidate/verification/registered_review.json)
+
+Paired ordinary emulator replays verified all four prompts and both answers in each menu. No returned to the list, and Yes loaded the same Lisbon screen. Only the changed letters differed across the confirmation frames. Nine control frames and the original cartridge-save donor matched byte for byte. Hardware was outside this pass. [Emulator comparison](../releases/all_routes_editorial_20261120_load_confirmation_candidate/verification/gameplay_comparison.png) · [Complete native pages](../releases/all_routes_editorial_20261120_load_confirmation_candidate/verification/native_load_confirmation.png)
+
+Six startup frames, 24 protected getters and 17 focused tests passed. The clean-input patch recreates the cumulative ROM byte for byte. The ledger remains at 27,700 credited records with 276 stored shared keys open for display-owner review. [Candidate and patch](../releases/all_routes_editorial_20261120_load_confirmation_candidate/README.md)

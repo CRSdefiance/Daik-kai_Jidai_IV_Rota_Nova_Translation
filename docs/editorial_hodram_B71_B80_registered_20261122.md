@@ -1,0 +1,7 @@
+# Hangzhou, the king's letter and Sera's return
+
+The complete source packet covers 144 records. Four earlier decisions carry forward. The review updates 50 lines and one reaction glyph and identifies 89 lines whose wording already works. Maria's bargain retains the term wako and the offer of trading rights. Gerhard and Charles read the same formal order and keep distinct voices outside the quotation. Hayreddin retains his pride and shame. Sera returns with her compatriots, speaks in short beats, and chooses to stay. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_hodram_B71_B80_candidate/verification/registered_review.json)
+
+Seven passages now fit on one page each. Two still need a continuation page, with complete sentences at each turn. The stored checks cover 337 commands. Native and visual review covers 53 revised pages, nine variant pages for custom names, four speakerless notices and 11 speaker labels. Focused emulator excerpts verified 48 pages, both remaining two-page transitions, the four notices and Sera and Sirwood's three symbol passages. Natural triggers and hardware remain unvisited for these scenes. [Display verification](../releases/all_routes_editorial_20261122_hodram_B71_B80_candidate/verification)
+
+The candidate preserves 114 accepted layers and the registered ASCII right boundary correction. Six startup comparisons, 17 regression tests and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B71_B80_candidate/README.md)

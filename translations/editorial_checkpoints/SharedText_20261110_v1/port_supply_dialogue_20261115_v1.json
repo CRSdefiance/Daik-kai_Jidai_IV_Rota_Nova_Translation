@@ -1,0 +1,504 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "previous_sha256": "be61fdbdab015ad5ceee55f9564a3c7fd6524585e608b9847a05ec9625961aa9",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "candidate_sha256": "54cbb2fb9425517669f8fe46ecbf10a16d41f5cdab661638c2f801fe34bab429",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_49",
+      "message_ID": 49,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "Departure check after a low-supplies report.",
+      "source_meaning": "The port worker offers to resupply the fleet for the substituted number of gold coins.",
+      "localization_note": "The direct price question follows the crew’s warning and uses gold naturally for any amount.",
+      "decision": "retention",
+      "english": "Want to resupply for %s gold?",
+      "Japanese": "金貨%s枚で\n補給するかい？",
+      "previous_English": "Want to resupply for %s gold?",
+      "source_reference": {
+        "block": 0,
+        "offset": 1972,
+        "copy_end": 2000,
+        "bytes": 25,
+        "record_index": 34,
+        "table_offset": 1317234,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2334,
+        "copy_end": 2364,
+        "bytes": 29,
+        "record_index": 49,
+        "table_offset": 1317234,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 0,
+        "offset": 2334,
+        "copy_end": 2364,
+        "bytes": 29,
+        "record_index": 49,
+        "table_offset": 1317234,
+        "start_in_record": 0
+      },
+      "source_hex": "8be089dd2573968782c50a95e28b8b82b782e982a982a28148",
+      "current_hex": "57616e7420746f207265737570706c7920666f7220257320676f6c643f",
+      "staged_hex": "57616e7420746f207265737570706c7920666f7220257320676f6c643f",
+      "preserved_substitutions": 1,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_806",
+      "message_ID": 806,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "Refilling water would leave too much food for the new mix. The worker asks before discarding it.",
+      "source_meaning": "The surplus food would be discarded, so the worker asks if that is all right.",
+      "localization_note": "Use the worker’s conversational voice and give the complete consequence before the yes/no question.",
+      "decision": "revision",
+      "english": "We'll throw out any extra food. Is that okay?",
+      "Japanese": "余った食料は捨てることになるぜ\nいいかい？",
+      "previous_English": "  Any excess food will be thrown\n  away. Is that okay?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2044,
+        "copy_end": 2088,
+        "bytes": 41,
+        "record_index": 29,
+        "table_offset": 1318748,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2509,
+        "copy_end": 2564,
+        "bytes": 54,
+        "record_index": 38,
+        "table_offset": 1318748,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2509,
+        "copy_end": 2564,
+        "bytes": 48,
+        "record_index": 38,
+        "table_offset": 1318748,
+        "start_in_record": 0
+      },
+      "source_hex": "975d82c182bd904897bf82cd8ecc82c482e982b182c682c982c882e982ba0a82a282a282a982a28148",
+      "current_hex": "2020416e792065786365737320666f6f642077696c6c206265207468726f776e0a2020617761792e2049732074686174206f6b61793f",
+      "staged_hex": "205765276c6c207468726f77206f757420616e7920657874726120666f6f642e0a202049732074686174206f6b61793f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "before_lines": [
+        "Any excess food will be thrown",
+        "away. Is that okay?"
+      ],
+      "visible_lines": [
+        "We'll throw out any extra food.",
+        "Is that okay?"
+      ],
+      "native_output_hex": "205765276c6c207468726f77206f757420616e7920657874726120666f6f642e0a202049732074686174206f6b61793f",
+      "native_plane_sha256": "efb3b36485d4c78e61ef4109862b3ca1b977549a0e83ad8418b024dccce01607",
+      "consumer": 33898444,
+      "caller_span": [
+        395272,
+        395284
+      ],
+      "original_caller_hex": "f0119fe50c009de5e1cdffeb"
+    },
+    {
+      "id": "COMMON_MESSAGE_812",
+      "message_ID": 812,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "Refilling food would leave too much water for the new mix.",
+      "source_meaning": "The surplus water would be disposed of. The worker asks permission to proceed.",
+      "localization_note": "Dumped suits the concrete action. Both the warning and the short confirmation already read in full.",
+      "decision": "retention",
+      "english": "Any excess water will be dumped. Is that okay?",
+      "Japanese": "余った水は捨てることになるが\nいいかい？",
+      "previous_English": "  Any excess water will be dumped.\n  Is that okay?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2320,
+        "copy_end": 2360,
+        "bytes": 39,
+        "record_index": 34,
+        "table_offset": 1318760,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2790,
+        "copy_end": 2841,
+        "bytes": 50,
+        "record_index": 44,
+        "table_offset": 1318760,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2790,
+        "copy_end": 2841,
+        "bytes": 50,
+        "record_index": 50,
+        "table_offset": 1318760,
+        "start_in_record": 0
+      },
+      "source_hex": "975d82c182bd908582cd8ecc82c482e982b182c682c982c882e982aa0a82a282a282a982a28148",
+      "current_hex": "2020416e79206578636573732077617465722077696c6c2062652064756d7065642e0a202049732074686174206f6b61793f",
+      "staged_hex": "2020416e79206578636573732077617465722077696c6c2062652064756d7065642e0a202049732074686174206f6b61793f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_813",
+      "message_ID": 813,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "The worker notices a shortage before the player sees the disposal prompt or the bill.",
+      "source_meaning": "Water looks low. The worker offers to replenish it.",
+      "localization_note": "Keep the worker’s brisk question and place it together on the next line.",
+      "decision": "wrap revision",
+      "english": "You're running low on water. Need to stock up?",
+      "Japanese": "水が少ないようだな。補給するかい？",
+      "previous_English": "  You're running low on water. Need \n  to stock up?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2360,
+        "copy_end": 2396,
+        "bytes": 34,
+        "record_index": 35,
+        "table_offset": 1318762,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2841,
+        "copy_end": 2893,
+        "bytes": 51,
+        "record_index": 45,
+        "table_offset": 1318762,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2841,
+        "copy_end": 2893,
+        "bytes": 49,
+        "record_index": 51,
+        "table_offset": 1318762,
+        "start_in_record": 0
+      },
+      "source_hex": "908582aa8fad82c882a282e682a482be82c8814295e28b8b82b782e982a982a28148",
+      "current_hex": "2020596f752772652072756e6e696e67206c6f77206f6e2077617465722e204e656564200a2020746f2073746f636b2075703f",
+      "staged_hex": "20596f752772652072756e6e696e67206c6f77206f6e2077617465722e0a20204e65656420746f2073746f636b2075703f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "before_lines": [
+        "You're running low on water. Need",
+        "to stock up?"
+      ],
+      "visible_lines": [
+        "You're running low on water.",
+        "Need to stock up?"
+      ],
+      "native_output_hex": "20596f752772652072756e6e696e67206c6f77206f6e2077617465722e0a20204e65656420746f2073746f636b2075703f",
+      "native_plane_sha256": "2a106958a3256fb82f3d09ce443427d441bcbd323d0a4e6474f026d62d649e8d",
+      "consumer": 33898444,
+      "caller_span": [
+        395240,
+        395252
+      ],
+      "original_caller_hex": "0c129fe50c009de5e9cdffeb"
+    },
+    {
+      "id": "COMMON_MESSAGE_814",
+      "message_ID": 814,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "The port worker sees fatigue while the player is preparing to depart.",
+      "source_meaning": "The sailors look tired. The worker recommends resting at the inn.",
+      "localization_note": "The soft suggestion respects the player’s choice. Keep “Why not” with the rest of the question.",
+      "decision": "wrap revision",
+      "english": "Your sailors look tired. Why not let them rest at the inn?",
+      "Japanese": "水夫たちが疲れてるようだぜ\n宿屋で休んだほうが\nいいんじゃないか？",
+      "previous_English": "  Your sailors look tired. Why not\n  let them rest at the inn?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2396,
+        "copy_end": 2460,
+        "bytes": 64,
+        "record_index": 36,
+        "table_offset": 1318764,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2893,
+        "copy_end": 2956,
+        "bytes": 62,
+        "record_index": 46,
+        "table_offset": 1318764,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2893,
+        "copy_end": 2956,
+        "bytes": 61,
+        "record_index": 54,
+        "table_offset": 1318764,
+        "start_in_record": 0
+      },
+      "source_hex": "9085957682bd82bf82aa94e682ea82c482e982e682a482be82ba0a8f6889ae82c58b7882f182be82d982a482aa0a82a282a282f182b682e182c882a282a98148",
+      "current_hex": "2020596f7572207361696c6f7273206c6f6f6b2074697265642e20576879206e6f740a20206c6574207468656d20726573742061742074686520696e6e3f",
+      "staged_hex": "20596f7572207361696c6f7273206c6f6f6b2074697265642e0a2020576879206e6f74206c6574207468656d20726573742061742074686520696e6e3f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "before_lines": [
+        "Your sailors look tired. Why not",
+        "let them rest at the inn?"
+      ],
+      "visible_lines": [
+        "Your sailors look tired.",
+        "Why not let them rest at the inn?"
+      ],
+      "native_output_hex": "20596f7572207361696c6f7273206c6f6f6b2074697265642e0a2020576879206e6f74206c6574207468656d20726573742061742074686520696e6e3f",
+      "native_plane_sha256": "8b99ff9bb45cb03bc3f85765c2538c929533ee95bcaf871f56052021ead9bb82",
+      "consumer": 33898516,
+      "caller_span": [
+        396228,
+        396240
+      ],
+      "original_caller_hex": "4c119fe504009de504cdffeb"
+    },
+    {
+      "id": "COMMON_MESSAGE_815",
+      "message_ID": 815,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "The player chooses a cargo action with no cargo aboard.",
+      "source_meaning": "The port worker points out that the player has no cargo.",
+      "localization_note": "The matter-of-fact reply fits the immediate refusal. No extra greeting is needed.",
+      "decision": "retention",
+      "english": "You have no cargo.",
+      "Japanese": "あんた、積み荷は何もないだろ",
+      "previous_English": "  You have no cargo.",
+      "source_reference": {
+        "block": 10,
+        "offset": 2460,
+        "copy_end": 2488,
+        "bytes": 28,
+        "record_index": 36,
+        "table_offset": 1318766,
+        "start_in_record": 65
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2956,
+        "copy_end": 2977,
+        "bytes": 20,
+        "record_index": 47,
+        "table_offset": 1318766,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2956,
+        "copy_end": 2977,
+        "bytes": 20,
+        "record_index": 56,
+        "table_offset": 1318766,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082f182bd814190cf82dd89d782cd89bd82e082c882a282be82eb",
+      "current_hex": "2020596f752068617665206e6f20636172676f2e",
+      "staged_hex": "2020596f752068617665206e6f20636172676f2e",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_816",
+      "message_ID": 816,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "The wallet cannot cover the full refill, but the worker offers a smaller purchase.",
+      "source_meaning": "The player lacks funds for a full resupply. The worker asks if they want only what they can afford.",
+      "localization_note": "Keep both the limit and the choice in the worker’s voice. Each lands as a complete sentence.",
+      "decision": "revision",
+      "english": "You can't afford a full resupply. Want to buy what you can?",
+      "Japanese": "十分に補給するには金が足りねえな\n足りる分だけ補給するかい？",
+      "previous_English": "  You don't have enough for a full\n  resupply. Want to buy what you can?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2488,
+        "copy_end": 2548,
+        "bytes": 59,
+        "record_index": 36,
+        "table_offset": 1318768,
+        "start_in_record": 93
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2977,
+        "copy_end": 3050,
+        "bytes": 72,
+        "record_index": 48,
+        "table_offset": 1318768,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 2977,
+        "copy_end": 3050,
+        "bytes": 62,
+        "record_index": 57,
+        "table_offset": 1318768,
+        "start_in_record": 0
+      },
+      "source_hex": "8f5c95aa82c995e28b8b82b782e982c982cd8be082aa91ab82e882cb82a682c80a91ab82e882e995aa82be82af95e28b8b82b782e982a982a28148",
+      "current_hex": "2020596f7520646f6e2774206861766520656e6f75676820666f7220612066756c6c0a20207265737570706c792e2057616e7420746f20627579207768617420796f752063616e3f",
+      "staged_hex": "20596f752063616e2774206166666f726420612066756c6c207265737570706c792e0a202057616e7420746f20627579207768617420796f752063616e3f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "before_lines": [
+        "You don't have enough for a full",
+        "resupply. Want to buy what you can?"
+      ],
+      "visible_lines": [
+        "You can't afford a full resupply.",
+        "Want to buy what you can?"
+      ],
+      "native_output_hex": "20596f752063616e2774206166666f726420612066756c6c207265737570706c792e0a202057616e7420746f20627579207768617420796f752063616e3f",
+      "native_plane_sha256": "4fcc53e9ed94eba787236803957a09aab99b33adbce295705be8e7f41e01eb70",
+      "consumer": 33898444,
+      "caller_span": [
+        395400,
+        395408
+      ],
+      "original_caller_hex": "331ea0e3c2cdffeb"
+    },
+    {
+      "id": "COMMON_MESSAGE_817",
+      "message_ID": 817,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "context": "The player opens the control that changes the proportions of the two supplies.",
+      "source_meaning": "The worker asks whether to change the water-to-food ratio.",
+      "localization_note": "Mix names the proportion in plain language and keeps water and food together.",
+      "decision": "revision",
+      "english": "Change the mix of water and food?",
+      "Japanese": "水と食料を補給する割合を\n変えるかい？",
+      "previous_English": "  Do you want to change the ratio \n  of water to food?",
+      "source_reference": {
+        "block": 10,
+        "offset": 2548,
+        "copy_end": 2588,
+        "bytes": 37,
+        "record_index": 37,
+        "table_offset": 1318770,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3050,
+        "copy_end": 3105,
+        "bytes": 54,
+        "record_index": 49,
+        "table_offset": 1318770,
+        "start_in_record": 0
+      },
+      "staged_reference": {
+        "block": 10,
+        "offset": 3050,
+        "copy_end": 3105,
+        "bytes": 33,
+        "record_index": 68,
+        "table_offset": 1318770,
+        "start_in_record": 0
+      },
+      "source_hex": "908582c6904897bf82f095e28b8b82b782e98a848d8782f00a95cf82a682e982a982a28148",
+      "current_hex": "2020446f20796f752077616e7420746f206368616e67652074686520726174696f200a20206f6620776174657220746f20666f6f643f",
+      "staged_hex": "4368616e676520746865206d6978206f6620776174657220616e6420666f6f643f",
+      "preserved_substitutions": 0,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "before_lines": [
+        "Do you want to change the ratio",
+        "of water to food?"
+      ],
+      "visible_lines": [
+        "Change the mix of water and food?"
+      ],
+      "native_output_hex": "4368616e676520746865206d6978206f6620776174657220616e6420666f6f643f",
+      "native_plane_sha256": "46ceb001cf4c68fea88d9b2f4bcdf99f1364b2a0532f902720fb08ebbde17d34",
+      "consumer": 33898444,
+      "caller_span": [
+        394468,
+        394476
+      ],
+      "original_caller_hex": "24109fe5abceffeb"
+    }
+  ]
+}

@@ -20,12 +20,19 @@ DESCRIPTION_TABLE = 0x139BF4
 IMAGE_TABLE = 0x115748
 
 
-def formatted(text, profile='static-site-gallery-pending-flush-v3'):
+def formatted(text, profile='static-site-gallery-pending-flush-v3', *, keep_together=()):
     assert text == text.strip() and '\n' not in text and '  ' not in text
     width = 42 if profile.endswith('v1') else 41
     assert profile in ('static-site-gallery-42-columns-v1', 'static-site-gallery-pair-phase-v2',
                        'static-site-gallery-pending-flush-v3')
-    lines = textwrap.wrap(text, width, break_long_words=False, break_on_hyphens=False)
+    wrapped_text = text
+    for phrase in keep_together:
+        assert text.count(phrase) == 1 and len(phrase) <= width
+        wrapped_text = wrapped_text.replace(phrase, phrase.replace(' ', '\u00a0'))
+    lines = [
+        line.replace('\u00a0', ' ')
+        for line in textwrap.wrap(wrapped_text, width, break_long_words=False, break_on_hyphens=False)
+    ]
     assert 1 <= len(lines) <= 11 and all(len(line) <= width for line in lines)
     assert ' '.join(lines) == text
     if profile.endswith('v1'):

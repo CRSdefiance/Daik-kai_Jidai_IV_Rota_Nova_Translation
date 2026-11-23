@@ -1,0 +1,7 @@
+# Tavern Help and its menu labels
+
+Tavern Help now uses **Recruit Crew**, **Schemes**, **Lure Fleet**, **Forge Papers**, **Bad Rumors**, and **Bribe** just as they appear in the game. **Treat Everyone** connects buying a round to recruiting, **Recruit Crew** links to **Assign Sailors**, and the **Tactics Room** links back to **Schemes**. The revisions preserve the town conditions, the 1,000-gold cost and the Forge Papers exception. Three related articles retain their wording. [Exact source and individual decisions](../releases/all_routes_editorial_20261120_tavern_help_candidate/verification/registered_review.json)
+
+All nine revised pages passed native glyph, wrapping and bounds checks and were opened in one ordinary emulator replay. Both the Assign Sailors history return and the Tactics Room backlink returned to the expected complete page. This pass covered Help navigation. Hardware and Tavern transactions were outside the replay. [Native and emulator evidence](../releases/all_routes_editorial_20261120_tavern_help_candidate/verification)
+
+Six startup holds, 24 protected name getters and 17 focused tests passed. The clean-input patch reconstructs the cumulative candidate byte for byte. The ledger retains 27,700 credited reviews and 276 stored shared keys open for display-owner review. [Candidate and patch](../releases/all_routes_editorial_20261120_tavern_help_candidate/README.md)

@@ -1,0 +1,758 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "ef1a7548a192f5a9b2bf291263e8e5b193c934e71a295594c4b6723da4457702",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "message_ID": 316,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 4,
+        "offset": 3156,
+        "copy_end": 3192,
+        "bytes": 36,
+        "record_index": 45,
+        "table_offset": 1317768,
+        "start_in_record": 57
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 3249,
+        "copy_end": 3271,
+        "bytes": 21,
+        "record_index": 89,
+        "table_offset": 1317768,
+        "start_in_record": 0
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f0835a815b837582b582dc82b782a98148",
+      "current_hex": "536176652074686520656e64696e6720646174613f",
+      "clean_Japanese": "エンディングデータをセーブしますか？",
+      "current_English": "Save the ending data?",
+      "decision": "retention",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "context": "Immediately after the credits. No returns to title and Yes opens the save-slot picker.",
+      "localization_note": "Keep the direct question. Ending data identifies what the player is saving at this point."
+    },
+    {
+      "id": "DK4_SAVE_SELECT_TITLE",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34535088,
+        "runtime_pointer": 35037436,
+        "offset": 1483004,
+        "bytes_with_terminator": 29
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34535088,
+        "runtime_pointer": 35037436,
+        "offset": 1483004,
+        "bytes_with_terminator": 20
+      },
+      "source_hex": "835a815b837582b782e989d38f8a82f0914982f182c589ba82b382a200",
+      "current_hex": "53656c6563742061207361766520736c6f742e00",
+      "clean_Japanese": "セーブする箇所を選んで下さい",
+      "english": "Select a save slot.",
+      "context": "Original save-slot picker opened after accepting the ending save.",
+      "localization_note": "A concise instruction applies equally to occupied and unused slots.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_DOCKED",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34535108,
+        "runtime_pointer": 35037516,
+        "offset": 1483084,
+        "bytes_with_terminator": 7
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34535108,
+        "runtime_pointer": 35037516,
+        "offset": 1483084,
+        "bytes_with_terminator": 8
+      },
+      "source_hex": "92e29491928600",
+      "current_hex": "20446f636b656400",
+      "clean_Japanese": "停泊中",
+      "english": " Docked",
+      "context": "Original save-slot picker opened after accepting the ending save.",
+      "localization_note": "The status and leading space keep the location and its state legible on the occupied row.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_UNUSED",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34536664,
+        "runtime_pointer": 35037524,
+        "offset": 1483092,
+        "bytes_with_terminator": 7
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34536664,
+        "runtime_pointer": 35037524,
+        "offset": 1483092,
+        "bytes_with_terminator": 7
+      },
+      "source_hex": "96a28e67977000",
+      "current_hex": "556e7573656400",
+      "clean_Japanese": "未使用",
+      "english": "Unused",
+      "context": "Original save-slot picker opened after accepting the ending save.",
+      "localization_note": "The single word clearly identifies a slot with no previous save.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_CREATE_CONFIRM",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "offset": 1482628,
+        "bytes_with_terminator": 42
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34532396,
+        "runtime_pointer": 35037060,
+        "offset": 1482628,
+        "bytes_with_terminator": 19
+      },
+      "source_hex": "90568b4b82c98366815b835e82f08dec90ac82b582dc82b70a82e682eb82b582a282c582b782a9814800",
+      "current_hex": "4372656174652061206e657720736176653f00",
+      "clean_Japanese": "新規にデータを作成します\nよろしいですか？",
+      "english": "Create a new save?",
+      "context": "The player selected an unused slot and can still cancel.",
+      "localization_note": "The original separate agreement question reads naturally as one direct question in English.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_PROGRESS_ACTION",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34534064,
+        "runtime_pointer": 35037384,
+        "offset": 1482952,
+        "bytes_with_terminator": 7
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34534064,
+        "runtime_pointer": 35037384,
+        "offset": 1482952,
+        "bytes_with_terminator": 5
+      },
+      "source_hex": "835a815b837500",
+      "current_hex": "5361766500",
+      "clean_Japanese": "セーブ",
+      "english": "Save",
+      "context": "Fills the original progress format while the game writes the new save.",
+      "localization_note": "The action noun reads naturally in the shared progress format.",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_SAVE_PROGRESS_FORMAT",
+      "file_path": "/__arm9__.bin",
+      "decision": "retention",
+      "source_reference": {
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731",
+        "pointer_field": 34534072,
+        "runtime_pointer": 35037400,
+        "offset": 1482968,
+        "bytes_with_terminator": 34
+      },
+      "current_reference": {
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a",
+        "pointer_field": 34534072,
+        "runtime_pointer": 35037400,
+        "offset": 1482968,
+        "bytes_with_terminator": 34
+      },
+      "source_hex": "2573928682c582b70a93648cb982f090d882e782c882a282c582ad82be82b382a200",
+      "current_hex": "257320696e2070726f67726573732e0a20446f206e6f74207475726e206f66662e00",
+      "clean_Japanese": "%s中です\n電源を切らないでください",
+      "english": "%s in progress.\n Do not turn off.",
+      "context": "The warning stays visible while the device writes the save.",
+      "localization_note": "The break keeps the complete status on one line and the safety instruction on the next.",
+      "runtime_substitutions": [
+        "Save or Load"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "legacy_memory_card": {
+    "message_ID": 119,
+    "file_path": "/COMMON/MESFILE.DK4",
+    "source_reference": {
+      "block": 1,
+      "offset": 920,
+      "copy_end": 976,
+      "bytes": 53,
+      "record_index": 9,
+      "table_offset": 1317374,
+      "start_in_record": 1
+    },
+    "current_reference": {
+      "block": 1,
+      "offset": 804,
+      "copy_end": 860,
+      "bytes": 53,
+      "record_index": 10,
+      "table_offset": 1317374,
+      "start_in_record": 0
+    },
+    "source_hex": "83478393836683428393834f8366815b835e82f083818382838a815b834a815b836882c90a835a815b837582b582dc82b782a98148",
+    "current_hex": "5361766520656e64696e673f0a2020546f206d656d6f727920636172643f2020202020202020202020202020202020202020202020",
+    "clean_Japanese": "エンディングデータをメモリーカードに\nセーブしますか？",
+    "current_English": "Save ending?\n  To memory card?                       ",
+    "decision": "draft revision",
+    "draft_english": "Save the ending data to the memory card?",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": false
+    },
+    "finding": "Both answers use the separate DS prompt at COMMON 316. An original caller elsewhere remains unverified."
+  },
+  "replay": {
+    "no": {
+      "observed_COMMON": [
+        {
+          "frame": 11258,
+          "PC": 33903244,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        },
+        {
+          "frame": 11258,
+          "PC": 33895668,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        }
+      ],
+      "observed_wrapper_entries": [
+        [
+          11258,
+          33900140,
+          33809148
+        ]
+      ],
+      "test_save": {
+        "source": "E:\\Rota Nova translations\\Saves\\rafael-twisted-horn-map2-v440.dsv",
+        "destination": "work\\ending_save_scope_20261120\\no\\capture\\saves\\clean_rebuilt.dsv",
+        "bytes": 262266,
+        "source_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+        "copied_byte_exact_before_cold_boot": true,
+        "savestate_loaded": false
+      },
+      "final_save_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+      "changed_save_bytes": 0,
+      "system_save_metadata_changes": [],
+      "evidence": {
+        "work\\ending_save_scope_20261120\\no\\capture\\capture_report.json": "4addce0bed1fb4141917c38f2382eb8fddcb835b3e80765a091ae05d0ae41039",
+        "work\\ending_save_scope_20261120\\no\\requests.json": "1995a6c820f3e5d96cb3e17a9c3f3a10dab3c03e07ea91b9984799452f5ead57",
+        "work\\ending_save_scope_20261120\\no\\source_contract.json": "a86488a925a1eed6571cff0d1f005d59596b4dce8fb43d24dcd8f133d3dedaf6",
+        "work\\ending_save_scope_20261120\\no\\capture\\navigation_command_journal.json": "fb263c55cb07d4cc759808fff08cee487a22d447a6d592863000df61807559d7",
+        "work\\ending_save_scope_20261120\\no\\commands.json": "2f7f9f40ef54137ce8d4393dd9abf003a7f24635c73f13943c32b496bc16d212"
+      }
+    },
+    "yes": {
+      "observed_COMMON": [
+        {
+          "frame": 11258,
+          "PC": 33903244,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        },
+        {
+          "frame": 11258,
+          "PC": 33895668,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        }
+      ],
+      "observed_wrapper_entries": [
+        [
+          11258,
+          33900140,
+          33809148
+        ],
+        [
+          12414,
+          33811588,
+          33809168
+        ]
+      ],
+      "test_save": {
+        "source": "E:\\Rota Nova translations\\Saves\\rafael-twisted-horn-map2-v440.dsv",
+        "destination": "work\\ending_save_scope_20261120\\yes\\capture\\saves\\clean_rebuilt.dsv",
+        "bytes": 262266,
+        "source_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+        "copied_byte_exact_before_cold_boot": true,
+        "savestate_loaded": false
+      },
+      "final_save_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+      "changed_save_bytes": 0,
+      "system_save_metadata_changes": [],
+      "evidence": {
+        "work\\ending_save_scope_20261120\\yes\\capture\\capture_report.json": "b066118e512bcf472b4c48036a6bd943c2b80de584423db6fffcf733366fda2a",
+        "work\\ending_save_scope_20261120\\yes\\requests.json": "f64c52b73e90fa877e3f81066d16e5e382f2ea1dc1f9d46777926d3b67cebb01",
+        "work\\ending_save_scope_20261120\\yes\\source_contract.json": "a86488a925a1eed6571cff0d1f005d59596b4dce8fb43d24dcd8f133d3dedaf6",
+        "work\\ending_save_scope_20261120\\yes\\capture\\navigation_command_journal.json": "7d4571239dc130efd7d19cf0fd14726185fc6beb3d80d8f122ca9ad997c4c347",
+        "work\\ending_save_scope_20261120\\yes\\commands.json": "ffafc2d1fa48e85657174d1d4db4e60708e408b61eca5b0e6904236d61dfbb9d"
+      }
+    },
+    "save": {
+      "observed_COMMON": [
+        {
+          "frame": 11258,
+          "PC": 33903244,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        },
+        {
+          "frame": 11258,
+          "PC": 33895668,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        }
+      ],
+      "observed_wrapper_entries": [
+        [
+          11258,
+          33900140,
+          33809148
+        ],
+        [
+          12414,
+          33811588,
+          33809168
+        ]
+      ],
+      "test_save": {
+        "source": "E:\\Rota Nova translations\\Saves\\rafael-twisted-horn-map2-v440.dsv",
+        "destination": "work\\ending_save_scope_20261120\\save\\capture\\saves\\clean_rebuilt.dsv",
+        "bytes": 262266,
+        "source_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+        "copied_byte_exact_before_cold_boot": true,
+        "savestate_loaded": false
+      },
+      "final_save_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+      "changed_save_bytes": 0,
+      "system_save_metadata_changes": [],
+      "evidence": {
+        "work\\ending_save_scope_20261120\\save\\capture\\capture_report.json": "233f6d2393beb208c4cdf1f7db91e0d0af9c06da8ab4f49ff9bdaab7a97b2bd2",
+        "work\\ending_save_scope_20261120\\save\\requests.json": "154e87df922de79fa5dba3cf571eff0ce148db2e12257608434f6e251ec5024e",
+        "work\\ending_save_scope_20261120\\save\\source_contract.json": "a86488a925a1eed6571cff0d1f005d59596b4dce8fb43d24dcd8f133d3dedaf6",
+        "work\\ending_save_scope_20261120\\save\\capture\\navigation_command_journal.json": "cece24c541e2db991719def70136fceb71be3aadc91bb666b9f54f9b54e5f209",
+        "work\\ending_save_scope_20261120\\save\\commands.json": "51f2c408d3a08674bbab02abdf6b5927aa5a9f66d65ee75b6a54120ddd6cc65c"
+      }
+    },
+    "confirm": {
+      "observed_COMMON": [
+        {
+          "frame": 11258,
+          "PC": 33903244,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        },
+        {
+          "frame": 11258,
+          "PC": 33895668,
+          "message_ID": 316,
+          "caller_LR": 33900160
+        }
+      ],
+      "observed_wrapper_entries": [
+        [
+          11258,
+          33900140,
+          33809148
+        ],
+        [
+          12414,
+          33811588,
+          33809168
+        ]
+      ],
+      "test_save": {
+        "source": "E:\\Rota Nova translations\\Saves\\rafael-twisted-horn-map2-v440.dsv",
+        "destination": "work\\ending_save_scope_20261120\\confirm\\capture\\saves\\clean_rebuilt.dsv",
+        "bytes": 262266,
+        "source_sha256": "6e8b3aa13a49b5c9204afa9bebe451deb535aa2e3bbd9ab35ca421258ee09923",
+        "copied_byte_exact_before_cold_boot": true,
+        "savestate_loaded": false
+      },
+      "final_save_sha256": "e29dee6ea585695e034fe5dbe495fce314546e2e75d247967a345dff2243c8bb",
+      "changed_save_bytes": 40792,
+      "system_save_metadata_changes": [
+        [
+          245764,
+          118,
+          120
+        ],
+        [
+          245820,
+          0,
+          1
+        ],
+        [
+          245827,
+          0,
+          1
+        ]
+      ],
+      "evidence": {
+        "work\\ending_save_scope_20261120\\confirm\\capture\\capture_report.json": "6f32594e0047f636762d127623ba056f01c66de96a8eb76a19507b3b62467bc5",
+        "work\\ending_save_scope_20261120\\confirm\\requests.json": "20bf8f3c5787ed3504943046b5abb4802667f1edd1dada53f7b09145d7b69fe6",
+        "work\\ending_save_scope_20261120\\confirm\\source_contract.json": "a86488a925a1eed6571cff0d1f005d59596b4dce8fb43d24dcd8f133d3dedaf6",
+        "work\\ending_save_scope_20261120\\confirm\\capture\\navigation_command_journal.json": "f47828934ee0445b0d5392d0b32f8592cde530a973b86157d66fc459798686d6",
+        "work\\ending_save_scope_20261120\\confirm\\commands.json": "ef1a058a3980b0cce2971ce703a1e23a6aedc9e54bea89e51f8e482266a5c71d"
+      }
+    }
+  },
+  "native_glyph_holds": [
+    {
+      "record": 316,
+      "capture": {
+        "frame": 12400,
+        "path": "work\\ending_save_scope_20261120\\no\\capture\\frame_012400_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6e20ce77ce00bf11c6fb56e0464706acc1c5f466302c36c6b86d49179ad3154c",
+        "framebuffer_sha256": "596afd316bf716767525d03783f72f6ee98d5a39bfb3a3cc9d15c808f01d5fac"
+      },
+      "bounds": [
+        16,
+        297,
+        142,
+        308
+      ],
+      "complete_ink": 239
+    },
+    {
+      "record": 316,
+      "capture": {
+        "frame": 12400,
+        "path": "work\\ending_save_scope_20261120\\yes\\capture\\frame_012400_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6e20ce77ce00bf11c6fb56e0464706acc1c5f466302c36c6b86d49179ad3154c",
+        "framebuffer_sha256": "596afd316bf716767525d03783f72f6ee98d5a39bfb3a3cc9d15c808f01d5fac"
+      },
+      "bounds": [
+        16,
+        297,
+        142,
+        308
+      ],
+      "complete_ink": 239
+    },
+    {
+      "record": 316,
+      "capture": {
+        "frame": 12400,
+        "path": "work\\ending_save_scope_20261120\\save\\capture\\frame_012400_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6e20ce77ce00bf11c6fb56e0464706acc1c5f466302c36c6b86d49179ad3154c",
+        "framebuffer_sha256": "596afd316bf716767525d03783f72f6ee98d5a39bfb3a3cc9d15c808f01d5fac"
+      },
+      "bounds": [
+        16,
+        297,
+        142,
+        308
+      ],
+      "complete_ink": 239
+    },
+    {
+      "record": 316,
+      "capture": {
+        "frame": 12400,
+        "path": "work\\ending_save_scope_20261120\\confirm\\capture\\frame_012400_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6e20ce77ce00bf11c6fb56e0464706acc1c5f466302c36c6b86d49179ad3154c",
+        "framebuffer_sha256": "596afd316bf716767525d03783f72f6ee98d5a39bfb3a3cc9d15c808f01d5fac"
+      },
+      "bounds": [
+        16,
+        297,
+        142,
+        308
+      ],
+      "complete_ink": 239
+    },
+    {
+      "record": "DK4_SAVE_SELECT_TITLE",
+      "capture": {
+        "frame": 13100,
+        "path": "work\\ending_save_scope_20261120\\yes\\capture\\frame_013100_final.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f3ada53e710aa185b80b801f258b04cc5ffba77a963970ef0eac66f8ab8bf7a4",
+        "framebuffer_sha256": "e9579ad0f8fead8eedaa4cf81c51bd2fde41fe6823defd01417d74b560b8f5ea"
+      },
+      "text": "Select a save slot.",
+      "rect": [
+        32,
+        0,
+        224,
+        15
+      ],
+      "origin": [
+        71,
+        3
+      ],
+      "complete_white_pixels": 177
+    },
+    {
+      "record": "DK4_SAVE_DOCKED",
+      "capture": {
+        "frame": 13100,
+        "path": "work\\ending_save_scope_20261120\\yes\\capture\\frame_013100_final.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f3ada53e710aa185b80b801f258b04cc5ffba77a963970ef0eac66f8ab8bf7a4",
+        "framebuffer_sha256": "e9579ad0f8fead8eedaa4cf81c51bd2fde41fe6823defd01417d74b560b8f5ea"
+      },
+      "text": "Lisbon Docked",
+      "rect": [
+        108,
+        208,
+        227,
+        227
+      ],
+      "origin": [
+        112,
+        215
+      ],
+      "complete_white_pixels": 159
+    },
+    {
+      "record": "DK4_SAVE_UNUSED",
+      "capture": {
+        "frame": 13100,
+        "path": "work\\ending_save_scope_20261120\\yes\\capture\\frame_013100_final.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "f3ada53e710aa185b80b801f258b04cc5ffba77a963970ef0eac66f8ab8bf7a4",
+        "framebuffer_sha256": "e9579ad0f8fead8eedaa4cf81c51bd2fde41fe6823defd01417d74b560b8f5ea"
+      },
+      "text": "Unused",
+      "rect": [
+        5,
+        228,
+        50,
+        249
+      ],
+      "origin": [
+        8,
+        231
+      ],
+      "complete_white_pixels": 84
+    },
+    {
+      "record": "DK4_SAVE_CREATE_CONFIRM",
+      "line": "Create a new save?",
+      "capture": {
+        "frame": 14100,
+        "path": "work\\ending_save_scope_20261120\\confirm\\capture\\frame_014100_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c2a7db828deeed1592cc13089290aedee3ee13bcedb65b30250e32e780449e42",
+        "framebuffer_sha256": "3e7cc5253bd967a8dd546b700fefa16256e7cb7dbe9951fbc9f3102d1a4ef2e6"
+      },
+      "bounds": [
+        16,
+        297,
+        124,
+        308
+      ],
+      "complete_ink": 185
+    },
+    {
+      "record": "DK4_SAVE_PROGRESS_FORMAT",
+      "line": "Save in progress.",
+      "capture": {
+        "frame": 14280,
+        "path": "work\\ending_save_scope_20261120\\confirm\\capture\\frame_014280_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "afa91f283ebfa87b2d1e89e11e2ad2f95d1790833994427f21001d076d5041f1",
+        "framebuffer_sha256": "f252eebf5a32b85ce5136d9c13d66d85d3fbee16044532eafa00dbeaf14c2d42"
+      },
+      "bounds": [
+        56,
+        277,
+        158,
+        288
+      ],
+      "complete_ink": 168
+    },
+    {
+      "record": "DK4_SAVE_PROGRESS_FORMAT",
+      "line": "Do not turn off.",
+      "capture": {
+        "frame": 14280,
+        "path": "work\\ending_save_scope_20261120\\confirm\\capture\\frame_014280_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "afa91f283ebfa87b2d1e89e11e2ad2f95d1790833994427f21001d076d5041f1",
+        "framebuffer_sha256": "f252eebf5a32b85ce5136d9c13d66d85d3fbee16044532eafa00dbeaf14c2d42"
+      },
+      "bounds": [
+        56,
+        289,
+        152,
+        300
+      ],
+      "complete_ink": 152
+    }
+  ],
+  "no_title_capture": {
+    "frame": 13100,
+    "path": "work\\ending_save_scope_20261120\\no\\capture\\frame_013100_final.png",
+    "dimensions": [
+      256,
+      384
+    ],
+    "pixel_format": 2,
+    "PNG_sha256": "756076e275d109b1e005a61ac20e6754396582bdd554cf53ffa5d101a24ad8bf",
+    "framebuffer_sha256": "8fb06cb412628d92889a5ade76dc6d29dd43b483c6c04bdd5c157bc13c2ea902"
+  },
+  "yes_title_capture": {
+    "frame": 15200,
+    "path": "work\\ending_save_scope_20261120\\confirm\\capture\\frame_015200_final.png",
+    "dimensions": [
+      256,
+      384
+    ],
+    "pixel_format": 2,
+    "PNG_sha256": "756076e275d109b1e005a61ac20e6754396582bdd554cf53ffa5d101a24ad8bf",
+    "framebuffer_sha256": "8fb06cb412628d92889a5ade76dc6d29dd43b483c6c04bdd5c157bc13c2ea902"
+  },
+  "exact_end_selector_call_span": [
+    33809140,
+    33809168
+  ],
+  "exact_orig_save_picker_pointer_checks": true,
+  "rendered_lines_are_single_page": true,
+  "hardware": false,
+  "naturally_earned_ending": false,
+  "no_ROM_change": true,
+  "new_editorial_credit": 0,
+  "full_goal_complete": false,
+  "evidence": {
+    "releases\\all_routes_editorial_20261120_tavern_round_digits_candidate\\verification\\registered_release_verification.json": "fc74612bb9b2a4a23cf4b49aad006afeaa2068d904976e09fe0411ae888537dd",
+    "work\\emulation_v193\\ending_transitions_v642_rafael\\capture_report.json": "c764f69aa6d50e4589f7cc403ab5272a2e37666f8c26922ded321475e04a20b0",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\shared_display_worklist_20261120_v1.json": "18dbf53cb437167e5896a0360cec5ce74565fc1283c3ab13560a26ad02c017fa",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+    "releases\\all_routes_editorial_20261119_save_dialogue_candidate\\verification\\registered_review.json": "e5bd91c71e535583de4364b8d0ef1992256e8fb5370c1f7df8e9623f7c123963",
+    "releases\\all_routes_editorial_20261119_save_location_labels_candidate\\verification\\registered_review.json": "35198bb61be1801ca325e7ba03251f0be2ee3ae81d2a5e596ef71abd366b74db",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_ending_save_20261120.py": "db4f3c211e030300fff0feeb5a95d561a1c6ac47f93bc2532c688a2ba1331c5e",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_ending_save_20261120.py": "f4729da947de3fbff46224836c3a4a8783b697f1d2e1e7b6025e5a3823d60b18"
+  }
+}

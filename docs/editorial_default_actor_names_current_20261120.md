@@ -1,0 +1,9 @@
+# Default actor names on the Genoa candidate
+
+All 207 default actor decisions from the completed November 15 review match the current Genoa candidate. The two original getters passed 414 checks against its own startup state. The receipt records the exact clean and installed fields and keeps each earlier editorial decision. Rafael, Hodram, Joakim, Maria, and Camille remain in their approved forms. [Current evidence](../translations/editorial_checkpoints/SharedText_20261110_v1/default_actor_names_current_20261120_v1.json) · [Earlier editorial review](editorial_default_character_names_20261115.md)
+
+The focused checks cover Paolo Centurione, Charles Gilban, Paulo Morais, Enzo Regioni, Salid Ajar, Ibn Niyadi, Jorge Albacete, Akaboo Damai, and Charlotte Miller. Their complete labels fit the dialogue nameplate and both original Deck panel widths. All 27 pixel masks match the independent font reference, including the first and last glyphs, and both sheets were visually reviewed. [Dialogue nameplates](../work/named_actor_catalogue_20261120/native/names_part1.png) · [Both Deck widths](../work/named_actor_catalogue_20261120/deck_name_planes.png)
+
+The Deck checks supplied the actor to the original draw calls offline. Selection eligibility, conditional aliases, and the Japanese regional descriptors returned by the separate joined-name getter for two shopkeepers remain open where player-facing ownership is unverified. The ordinary shop dialogue already shows plain **Shopkeeper**. [Joined-name scope](editorial_joined_actor_names_20261119.md)
+
+This checkpoint carries forward earlier editorial credit. It adds no new emulator observations and uses the registered Genoa candidate and its existing patch. [Candidate and patch](../releases/all_routes_editorial_20261120_genoa_tomatoes_candidate/README.md)

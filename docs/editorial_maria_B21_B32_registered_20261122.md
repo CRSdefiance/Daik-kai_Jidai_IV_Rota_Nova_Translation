@@ -1,0 +1,7 @@
+# Maria's ghost ship and alliance exchanges
+
+Revisited 112 Maria records in the ghost-ship, pursuit, Lil rescue, Clifford and Kuhn exchanges. The pass revises 36 and justifies 76 retentions. Maria and Lil's repeated use of “helpless” keeps their argument connected, and the changed fleet report avoids a duplicated “fleet” with expanded faction names. The four earlier phrase repairs keep the Proof of Conquest name, the praise and surname, Maria's thanks, and Hodram's warning together. Sixteen surrounding decisions carry forward. [Exact Japanese, previous English and review gates](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/verification/registered_review.json)
+
+The native renderer verified 40 changed pages and the alternate-name cases. Offline checks preserved the B29 choice and the seven B32 lookout bodies across all eight slots. Focused emulator playback verified 28 pages, including the four repairs and the original name substitutions. The original event triggers and hardware remain unvisited. [Native and emulator verification](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/verification)
+
+Startup and 17 regression checks passed. The candidate preserves all 114 accepted layers and the registered ASCII right-bound correction. Its clean-input patch rebuilds the whole ROM exactly. [Registered ROM and patch](../releases/all_routes_editorial_20261122_maria_B21_B32_candidate/README.md)

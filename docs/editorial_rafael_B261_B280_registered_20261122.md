@@ -1,0 +1,7 @@
+# Rafael's ruins puzzle and arrest assignments
+
+The review revisits 21 native style variants and choice captions and carries forward 114 exact earlier decisions. The two cave-in tables retain all eight voice slots and their original warnings. Four variants now keep their second warning together, and the figurehead's two replies directly answer its question. The stone menu still follows the original front, left, and right sequence. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_rafael_B261_B280_candidate/verification/registered_review.json)
+
+Native verification covers all four revised speech pages, 17 speakerless panels, 16 fixed nameplates, and five choice captions. Focused cold-boot excerpts verify 26 dialogue pages, five menu highlights, both cave-in displays and the figurehead's speakerless transitions. The menu VM and relocation checks verify the choice indices and branch controls offline. The focused excerpts exercise the displays. Natural encounter activation and hardware remain unvisited in this batch. [Native and gameplay evidence](../releases/all_routes_editorial_20261122_rafael_B261_B280_candidate/verification)
+
+The cumulative candidate preserves 114 accepted layers, the ASCII right-bound correction and seven source-format controls. Six startup comparisons, 17 regression tests and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_rafael_B261_B280_candidate/README.md)

@@ -1,0 +1,79 @@
+{
+  "candidate_sha256": "ce7f085c78906e0ceea967cdbdb7506be5578ef52a7127471f4947888666612d",
+  "parent_sha256": "ef1a7548a192f5a9b2bf291263e8e5b193c934e71a295594c4b6723da4457702",
+  "target_ARM9_sha256": "e7d177515e3a4916d2248c3cab1932ef41f761394fbe87604a90bfde714b8d08",
+  "target_COMMON_sha256": "6a7768cd8b187360776b124b3e73e78d45bde5c053a7743e795b73dbdd93d121",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "whole_parent_inverse": true,
+  "clean_input_patch_byte_exact": true,
+  "clean_input_patch_sha256": "9731064feab41ab7d80e998e78e1fac7387cba0a6d9bcaf353ac36a22a03af7c",
+  "changed_call": {
+    "offset": 1482540,
+    "pointer_field": 34530932,
+    "selector": 34529400,
+    "runtime_pointer": 35036972,
+    "allocation": 16
+  },
+  "records": [
+    {
+      "id": "DK4_LOAD_CONFIRM",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "decision": "revision",
+      "english": "Load this save?",
+      "previous_English": "Load this data?",
+      "source_Japanese": "ロードしてよろしいですか？",
+      "source_meaning": "Asks the player to confirm loading the selected saved game.",
+      "context": "The player has chosen an occupied slot in Continue or in-game Load. No returns to the list and Yes loads the selected game.",
+      "localization_note": "Save names what the player just selected and matches the instruction above the list. Keep it as one direct question.",
+      "source_reference": {
+        "offset": 1482540,
+        "pointer_field": 34530932,
+        "selector": 34529400,
+        "runtime_pointer": 35036972,
+        "allocation": 32,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482540,
+        "pointer_field": 34530932,
+        "selector": 34529400,
+        "runtime_pointer": 35036972,
+        "allocation": 16,
+        "ARM9_sha256": "6c3304df058beb93ebb0b69542097614e95c666d8b7f18c770086f4a577b138a"
+      },
+      "source_hex": "838d815b836882b582c482e682eb82b582a282c582b782a98148000000000000",
+      "current_hex": "4c6f6164207468697320646174613f00",
+      "staged_hex": "4c6f6164207468697320736176653f00",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_displays": [
+        {
+          "display_hex": "4c6f6164207468697320646174613f",
+          "lines": [
+            "Load this data?"
+          ],
+          "width": 90,
+          "native_ink_sha256": "cb47dbf8a78d60adb08282a891380a5535b12c4ea4f8ce849e5ec868a9dd333c",
+          "one_page": true
+        },
+        {
+          "display_hex": "4c6f6164207468697320736176653f",
+          "lines": [
+            "Load this save?"
+          ],
+          "width": 90,
+          "native_ink_sha256": "6a7d42b0abd6eb77fd6e72843004fc1fc5df279dd115bd284fb52bd6490a45a4",
+          "one_page": true
+        }
+      ]
+    }
+  ],
+  "native_sheet_sha256": "15d6062154098ab6a3812d3f043ff005e6eb4459d337cc01faa353443d249125"
+}

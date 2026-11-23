@@ -1,0 +1,7 @@
+# Sera's memories, Nagarpur and the sea-king legend
+
+The complete source packet covers 96 records. One exact earlier decision carries forward. The review changes 38 lines, corrects two full-width punctuation glyphs, and retains 55 lines for individual reasons. The revised English keeps Hodram's initial guesses separate from what Sera confirms. Nagarpur shows off his wealth, and Sera's account of the sea king keeps her hesitations. Hodram moves from laughing at the story to apologizing for hurting her. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_hodram_B61_B64_candidate/verification/registered_review.json)
+
+Stored verification covers all 151 commands in the four blocks. Native and visual checks cover 40 revised pages, the three name-width alternates, and the nine speaker labels. Focused emulator excerpts verified 30 speech pages, both punctuation changes, and the shifts in tone as Sera remembers the fires and takes Hodram's mockery personally. The original scene triggers and hardware remain unvisited for these scenes. [Display evidence](../releases/all_routes_editorial_20261122_hodram_B61_B64_candidate/verification)
+
+The cumulative candidate preserves all 114 accepted layers and the ASCII right boundary correction. Six startup comparisons, 17 regression tests, and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B61_B64_candidate/README.md)

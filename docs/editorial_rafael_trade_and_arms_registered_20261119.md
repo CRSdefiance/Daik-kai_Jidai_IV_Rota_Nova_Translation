@@ -1,0 +1,7 @@
+# Rafael’s trade and town-defense lessons
+
+Nine revisions clarify trade expansion through Madeira, the availability of market share and the effect of commercial investment. Janus uses the established Arms, Palace and Governor’s Office names. His investment advice retains the expectation that Portuguese construction techniques will help the fleet raise Arms more cheaply. Eleven records retain their exact wording. All nine revised pages and both substitutions passed native and visual review. [Per-record ledger](../releases/all_routes_editorial_20261119_rafael_trade_and_arms_candidate/verification/registered_review.json)
+
+Three initialized emulator runs exercised both trade choices and Janus’s four replies. The original interpreter returned both choice indices and completed all three paths. All 18 unique dialogue panels and both captions matched their full glyph masks. Natural scenario activation and hardware testing remain open. [Replay proof](../releases/all_routes_editorial_20261119_rafael_trade_and_arms_candidate/verification/live_display.json) · [Screen samples](../releases/all_routes_editorial_20261119_rafael_trade_and_arms_candidate/verification/lesson_display.png)
+
+Only B129 and B140 change. The clean-input patch rebuilds the candidate exactly. Six startup frames, 24 protected name getters and 49 focused tests passed. Two optional historical fixtures skipped. The ledger still credits 27,700 reviews with 276 shared keys open. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_trade_and_arms_candidate/README.md)

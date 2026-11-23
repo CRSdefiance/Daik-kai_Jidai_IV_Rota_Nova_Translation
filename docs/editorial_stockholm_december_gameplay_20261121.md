@@ -1,0 +1,7 @@
+# Stockholm in December
+
+The registered Athens and London candidate loaded Hodram's existing Riga save and used the original Auto Move route to Stockholm. The first arrival was February 12. Ten 30-night stays and one 10-night stay advanced the calendar to December 19. The Square opened the original fur event on that date. All eight dialogue and forecast panels, the Man and Woman nameplates, the original completion flag and the return to the Square passed. [Exact source, installed text and gameplay evidence](../translations/editorial_checkpoints/SharedText_20261110_v1/stockholm_december_gameplay_20261121_v1.json)
+
+The Tavern visit opened Hodram and Gerhard's recruiting lesson before the Inn stays. Both choice captions appeared, and the affirmative branch continued to the round of drinks advice and the boarding tutorial. The delegation branch received source and offline review. [Tavern and Square review](../translations/editorial_checkpoints/SharedText_20261110_v1/stockholm_dialogue_followup_20261121_v2.json)
+
+The contextual pass covers 39 records with 36 individual retentions. Hodram's fur scene adopts Rafael's reviewed opening, “It's freezing. The cold goes right through you.” Her wish keeps “I'm going to freeze at this rate!” together. The Tavern tutorial preserves both rules and keeps “boarding battles” and “cruising range” together. The three revised records passed stored-ROM, native formatting and changed-candidate gameplay checks. [Registered follow-up](editorial_stockholm_dialogue_registered_20261121.md)

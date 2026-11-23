@@ -1,0 +1,7 @@
+# New Game confirmation and system-data notices
+
+After the character details are entered, the game now asks **Is everything OK?** The two load-failure messages share **Couldn't load system data.** The recovery variant places **The game will start with defaults.** on its own line. **Start the game?**, **System data not found.**, and **System data is corrupted.** stay as written for their distinct branches. The [registered review](../releases/all_routes_editorial_20261115_setup_confirmation_prose_candidate/verification/registered_review.json) records all six clean sources, exact original callers and individual wording decisions.
+
+Paired cold boots used ordinary Rafael New Game controls. The revised confirmation passed complete glyph-mask verification, and the other 12 held frames match pixel for pixel, including cancellation back to the editor. Both revised load-failure notices passed stored native format, leading and trailing glyph, width, and complete-word checks offline. [Emulator comparison](../releases/all_routes_editorial_20261115_setup_confirmation_prose_candidate/verification/setup_confirmation_replay.png)
+
+The [cumulative ROM and clean-input patch](../releases/all_routes_editorial_20261115_setup_confirmation_prose_candidate/README.md) preserve 114 accepted layers and the ASCII right-bound correction. The exact reconstruction, six startup holds, 24 protected getters and 32 targeted tests passed. These were already credited records. The ledger remains at 27,700 reviewed records and 276 pending shared keys.

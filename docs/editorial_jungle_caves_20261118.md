@@ -1,0 +1,11 @@
+# Jungle crossings and cave escapes
+
+Reviewed 259 records across SC0 B301, SC1 B291, SC2 B288 and SC3 B259. The ledger records 78 revisions and 181 justified retentions. The crew warnings keep their different registers. The dialogue distinguishes a tiger that isn't following the party from a promise that it won't. Lil's jokes, the childlike objections, and the uncertain injury notices retain their original intent. [Exact review ledger](../releases/all_routes_editorial_20261118_jungle_caves_candidate/verification/registered_review.json)
+
+Every revised record fits on one page. Native checks covered 87 pages including name-width cases, 19 revised style objects and the original aliases. The final phrasing keeps the moss warning together and lets the post-fight pause read as panting. The original speaker controls, menu order, branch destinations and runtime substitutions carry forward. [Final layout pages](../releases/all_routes_editorial_20261118_jungle_caves_candidate/verification/before_after_1.png)
+
+Two initialized emulator runs on Maria's sequence checked both options. Attack showed the warning, the change to close combat, and the injury notice. Run showed the immediate retreat reply, followed by the same exit dialogue. The other routes and unvisited crew variants received offline checks. Natural activation and hardware remain unverified. [Attack replay](../releases/all_routes_editorial_20261118_jungle_caves_candidate/verification/live_attack_2.png) [Run replay](../releases/all_routes_editorial_20261118_jungle_caves_candidate/verification/live_run_2.png)
+
+The clean-input patch reconstructs the exact candidate. All 114 accepted layers and the ASCII right-bound correction carry forward. Six cold-boot holds, 24 protected name getters and 32 targeted tests passed. The 259 records already had coverage credit, so the total remains 27,700 with 276 shared keys still open. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261118_jungle_caves_candidate/README.md)
+
+The next packet pairs 350 records in 20 blocks covering the four captains' ruin clues, commissions and map guides. Its contextual review is pending. [Paired source packet](../work/ruins_clues_and_guides_source_20261118/paired_source.json)

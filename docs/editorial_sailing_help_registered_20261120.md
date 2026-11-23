@@ -1,0 +1,7 @@
+# Auto Move and at-sea Help
+
+Auto Move now describes the town and market-share requirements along the whole route. Info and Search explain the targeting and confirmation controls verified in Rafael's tutorial. Declare War keeps both shortcuts and explains what changes when you attack a town or another faction. Seven related articles retain their exact wording. [Clean Japanese, current references and individual decisions](../releases/all_routes_editorial_20261120_sailing_help_candidate/verification/registered_review.json)
+
+All four revised pages passed original parsing, glyph, wrap, bounds and link checks. A cold-boot emulator run opened all four through the original Help UI. Auto Move returned from Route Map through history, and both Search and Declare War linked back to Info. This replay covers Help navigation. The earlier sailing and tutorial evidence verifies the controls cited by the articles. [Emulator and native pages](../releases/all_routes_editorial_20261120_sailing_help_candidate/verification)
+
+Six startup holds, 24 protected name getters and 17 focused tests passed. The clean-input patch reconstructs the cumulative candidate exactly. It retains all 114 accepted layers and the ASCII right-bound correction. The ledger still records 27,700 credited reviews and 276 open stored shared entries. [Candidate and patch](../releases/all_routes_editorial_20261120_sailing_help_candidate/README.md)

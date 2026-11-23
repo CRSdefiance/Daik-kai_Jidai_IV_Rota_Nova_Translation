@@ -1,0 +1,7 @@
+# Market opening dialogue
+
+The Market trader now comments on an improving or worsening economy in two complete spoken sentences. The ordinary “Need help?” greeting stays. The wartime reply also stays because its two lines already preserve the trader’s wish for peace and frustration about business. The [registered review](../releases/all_routes_editorial_20261115_market_economy_dialogue_candidate/verification/registered_review.json) gives the exact Japanese and English references, the original branch conditions and the four individual decisions.
+
+Both revised replies passed the original formatter, font and allocation checks and were viewed at readable scale. The two emulated Lisbon visits used a copied battery save and ordinary inputs. They reached the default greeting and Price Info town picker. All 11 captured frames match. The improving and worsening branches were checked offline. [Market replay](../releases/all_routes_editorial_20261115_market_economy_dialogue_candidate/verification/market_opening.png) · [Native page previews](../releases/all_routes_editorial_20261115_market_economy_dialogue_candidate/verification/portrait_sheet_01.png)
+
+The [cumulative ROM and clean-input patch](../releases/all_routes_editorial_20261115_market_economy_dialogue_candidate/README.md) preserve all 114 accepted layers and the ASCII right-bound correction. Byte-exact reconstruction, six startup frames, 24 protected getters and 32 targeted tests passed. The ledger credits 27,700 reviewed records and has 276 mapped shared keys awaiting consumer adjudication.

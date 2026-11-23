@@ -1,0 +1,9 @@
+# Market Info trend heading
+
+Lisbon’s Market Info report displayed 流行品 when a local trend was active. The term identifies goods that are popular in that market. The heading now reads **Trends**, matching the established Square command. The original eight-byte ARM9 slot, pointer and display condition are preserved. [Exact review](../releases/all_routes_editorial_20261115_market_info_trends_candidate/verification/registered_review.json)
+
+Before and after cold boots used the same inputs and copied Lisbon save. The active-trend cases supplied one two-byte municipal trend record for Olive Oil. The revised heading matches all 74 English font pixels and clears the old mixed foreground and shadow. Everything outside the heading and the full ordinary report without a trend match exactly. Pressing B returns to the route chart. A separate cold boot matched six startup frames and 24 protected name getters. All 15 focused tests passed. [Comparison](../releases/all_routes_editorial_20261115_market_info_trends_candidate/verification/market_info_trends.png)
+
+The [registered ROM and exact clean-input patch](../releases/all_routes_editorial_20261115_market_info_trends_candidate/README.md) preserve all 114 accepted layers and 158 passing release checks. The ledger credits 27,700 reviews, with 276 mapped shared records open. The original acquisition of a trend and hardware remain untested.
+
+A separate cold boot on the registered ROM opened **Forces** from Lisbon’s route chart and switched from Castor Co. to an unidentified faction. The [Forces review](../translations/editorial_checkpoints/SharedText_20261110_v1/market_route_forces_20261115_v1.json) binds the five complete plaques to their clean and current artwork, with 9,600 exact native pixel comparisons across three holds. **Ties** labels the numeric standing in this screen. The separate ARM9 friendship and relationship strings still need consumer evidence.

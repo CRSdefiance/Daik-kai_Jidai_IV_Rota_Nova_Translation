@@ -1,0 +1,105 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "naturalness",
+    "formatting",
+    "localization",
+    "source",
+    "context"
+  ],
+  "records": [
+    {
+      "id": "SHIP_DESIGN_147",
+      "file_path": "/__arm9__.bin",
+      "model_ID": 147,
+      "speaker": "Ship name",
+      "clean_Japanese": "春申",
+      "previous_English": "Chun",
+      "english": "Chunshen",
+      "decision": "revision",
+      "source_meaning": "Named junk in Maria's starting fleet, Chunshen in Mandarin pinyin.",
+      "context": "Starting fleet slot 1. The hull class remains Junk.",
+      "localization_note": "Use both syllables of the Chinese proper name. Chun omitted the second character.",
+      "source_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423592,
+        "exact_hex": "8f74905c00"
+      },
+      "current_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423592,
+        "exact_hex": "4368756e00"
+      },
+      "staged_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423584,
+        "exact_hex": "4368756e7368656e00",
+        "allocation_bytes": 16
+      },
+      "reclaimed_reference": {
+        "source_pointer_field": 1187616,
+        "source_pointer": 34978016,
+        "current_pointer": 37256776,
+        "source_text": "配下",
+        "before_hex": "947a89ba000000004368756e00000000"
+      },
+      "review": {
+        "naturalness": true,
+        "formatting": false,
+        "localization": true,
+        "source": true,
+        "context": true
+      }
+    },
+    {
+      "id": "SHIP_DESIGN_148",
+      "file_path": "/__arm9__.bin",
+      "model_ID": 148,
+      "speaker": "Ship name",
+      "clean_Japanese": "華昌",
+      "previous_English": "Hua",
+      "english": "Huachang",
+      "decision": "revision",
+      "source_meaning": "Named junk in Maria's starting fleet, Huachang in Mandarin pinyin.",
+      "context": "Starting fleet slot 2. The hull class remains Junk.",
+      "localization_note": "Use both syllables of the Chinese proper name. Hua omitted the second character.",
+      "source_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "89d88fb900"
+      },
+      "current_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "48756100"
+      },
+      "staged_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "4875616368616e6700",
+        "allocation_bytes": 16
+      },
+      "reclaimed_reference": {
+        "source_pointer_field": 1188384,
+        "source_pointer": 34978280,
+        "current_pointer": 37257120,
+        "source_text": "怪物",
+        "before_hex": "487561000000000089f695a800000000"
+      },
+      "review": {
+        "naturalness": true,
+        "formatting": false,
+        "localization": true,
+        "source": true,
+        "context": true
+      }
+    }
+  ],
+  "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05",
+  "parent_sha256": "b414eab1a89d0943f3f4b00f2f31e9844226b0684efd51d3266604ff046d6727",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "e62063f3fd512ba7dae4400fd26928c201a402da29279fc9e6a330617477b1f4",
+  "status": "staged; original ship UI verification pending",
+  "new_contextual_credit": 0
+}

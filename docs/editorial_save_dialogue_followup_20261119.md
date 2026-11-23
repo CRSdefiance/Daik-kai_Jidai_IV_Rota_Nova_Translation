@@ -1,0 +1,11 @@
+# Save confirmations and game-card errors
+
+The occupied and empty save slots ask **Overwrite this save?** and **Create a new save?** The date and identity fields still belong to the original slot UI. The separate read and write warnings preserve the original failure types and now tell the player to power off before reinserting the game card. Four fixed ARM9 strings changed within their terminated allocations, preserving code that later builds placed in the old padding. Ten direct callers of the original error selector match the clean ROM. [Exact review and caller evidence](../releases/all_routes_editorial_20261119_save_dialogue_candidate/verification/registered_review.json)
+
+All four native pages passed complete glyph, continuation, allocation and width checks. The ordinary save controls on a copied Syracuse save displayed the new overwrite question. Supplying one failed native write return displayed the new write warning. The original instruction and source save were verified after the replay. The new-slot confirmation and read fault received offline native checks. Hardware remains unvisited. [Native pages](../releases/all_routes_editorial_20261119_save_dialogue_candidate/verification/save_native_pages.png) · [Emulator comparison](../releases/all_routes_editorial_20261119_save_dialogue_candidate/verification/save_gameplay.png)
+
+The replay also exposes a separate save-list spacing defect, **N. SeaAt Sea**, between a sea area name and its location status. The capture remains the reproduction for that UI issue.
+
+The clean-input patch rebuilds the ROM byte for byte. Six startup holds, 24 protected name getters and 25 focused tests passed. The candidate carries forward all 114 accepted layers and the ASCII right-bound correction. The ledger stands at 27,700 with 276 stored shared entries still open. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261119_save_dialogue_candidate/README.md)
+
+The story archives and all 276 pending COMMON entries were rebound to this exact release. The save and load at-sea suffix pointers and their source allocations are recorded for the spacing follow-up. [Shared text](../work/save_dialogue_followup_20261119_v2/shared_text_current_binding.json) · [At-sea spacing evidence](../work/save_dialogue_followup_20261119_v2/at_sea_spacing_lead.json)
