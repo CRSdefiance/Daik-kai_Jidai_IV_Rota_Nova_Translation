@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
+
+The batch records 103 source comparisons with 16 prose revisions and 87 individual retentions. Forty-four of the earlier Hodram differences are now reconciled. Exact checks covered 17 revised layout variants, including the default and maximum display width for Camille's thanks. Focused cold boots verified 19 panels and nameplates and the return to port. Original scene triggers and handheld display remain unvisited in this batch. [Exact coverage ledger](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 08dcab43cade7d5e1861b6e541c6bbf728dc6167c3132e071f1ef044c0eefb1b. Its patch reconstructs the exact ROM from the clean input. Startup and 17 focused regressions passed. Cleanup removed 45 redundant files and reclaimed 613,077,829 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_farewells_and_maria_20261122/checkpoint_cleanup.json)
+
+The scan has 262 wrap leads awaiting a current decision. The remaining 46 differences in B61–B70 belong to six scenes. A 108-line contextual manuscript covers all six, with integration still pending. Keep subsequent route, tutorial, shared-dialogue and identity work in scope, with the 276 display leads and 27,700 historical credits preserved. [Next manuscript](../scripts/hodram_sera_nagarpur_and_kuhn_20261122.md) · [Current wrap queue](../translations/editorial_checkpoints/hodram_farewells_and_maria_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael’s complete Gerhard recruitment and naval training review. [Checkpoint](editorial_rafael_B84_training_registered_20261122.md)
+
+This complete B84 pass covers 131 texts with eight revised speeches, a corrected choice and 122 individually justified retentions. Rafael can say that they do not have to defeat Vels. Controller input verified both Vels options and the training lesson-only option, including their original responses. Fifteen complete speech or notice panels, both two-page instructional notices, all nine revised native speech variants, and the exact choice pixels passed. Both menu objects and all 20 relative destinations preserve their structure. Natural activation and handheld display remain unvisited here. [Exact review and verification](../releases/all_routes_editorial_20261122_rafael_B84_training_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 bdccbe7609395336fcfec632f1c36aa293db53ef74870fc3c7619c629db26f6d. The patch rebuilds it byte for byte. Startup and 17 focused regressions passed. Cleanup removed 32 redundant files and reclaimed 551,347,599 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Patch](../releases/all_routes_editorial_20261122_rafael_B84_training_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_B84_training_20261122/checkpoint_cleanup.json)
+
+The scan has 267 wrap leads awaiting a current decision. Continue with the 90 outstanding Hodram B61–B70 differences in their original exchanges and other unfinished route and tutorial leads. All nine affected Hodram blocks still match their earlier comparison bytes. [Rebound Hodram evidence](../translations/editorial_checkpoints/rafael_B84_training_20261122/hodram_remaining_rebound.json) Keep names, shared dialogue ownership and representative ordinary town and random coverage active across all four routes. Preserve the 27,700 historical credits and 276 shared display leads. Graphics artwork and the later older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/rafael_B84_training_20261122/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael’s North Sea meeting with Lil and reconciled Hodram’s encounter with Camille. [Checkpoint](editorial_north_sea_and_hodram_reconciliation_registered_20261122.md)
 
 The clean-source comparison covers 74 spoken lines. Nine have revised prose and 65 have individual retention reasons. All nine new pages passed the exact game-font and native layout checks. Focused cold-boot replays verified 13 panels and nameplates, including both Port Worker lines and the original question mark. The lesson choice branches and natural story triggers were outside these replays. Earlier ordinary town evidence remains available. [Exact coverage ledger](../releases/all_routes_editorial_20261122_north_sea_and_hodram_reconciliation_candidate/verification/registered_review.json)

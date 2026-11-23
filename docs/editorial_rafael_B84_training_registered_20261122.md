@@ -1,0 +1,5 @@
+# Rafael’s Gerhard recruitment and naval training
+
+The clean-Japanese review covers 131 texts with eight revised speeches, a revised choice and 122 individual retentions. Rafael can explicitly say they do not need to defeat Vels. The typed two-choice menu and all original destinations survive relocation. The three training captions and both two-page naval instructions are byte-exact. [Registered review](../releases/all_routes_editorial_20261122_rafael_B84_training_candidate/verification/registered_review.json)
+
+All nine changed-speech layout variants passed exact font checks. Emulator fixtures verified 15 complete panels, including both original notice continuations, and used controller input to follow both Vels choices and the training lesson-only option into their original responses. Native checks also verified all 20 relative destinations and the original choice provider. Natural town activation and hardware were outside this batch. Startup and 17 focused regressions passed. [Testing candidate and patch](../releases/all_routes_editorial_20261122_rafael_B84_training_candidate/README.md)

@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-22
 
+Registered Hodram’s farewell, private meeting with Maria, and Camille’s return to Lil. [Checkpoint](editorial_hodram_farewells_and_maria_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered Rafael’s complete Gerhard recruitment and naval training review. [Checkpoint](editorial_rafael_B84_training_registered_20261122.md)
+
+# Current editorial checkpoint - 2026-11-22
+
 Registered Rafael’s North Sea meeting with Lil and reconciled Hodram’s encounter with Camille. [Checkpoint](editorial_north_sea_and_hodram_reconciliation_registered_20261122.md)
 
 # Current editorial checkpoint - 2026-11-22
