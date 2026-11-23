@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Rafael's Basra negotiations, Map Key discoveries, and encounters with Escante's and Maldonado's men. [Checkpoint](editorial_rafael_basra_and_map_keys_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's three recruitment scenes, the Proof warning, Cristina's dance and the sail lesson. [Checkpoint](editorial_hodram_recruitment_and_sails_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered 13 Hodram exchanges, including the resupply lesson, trade lesson, and Escante's proposal. [Checkpoint](editorial_hodram_midroute_followups_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-22

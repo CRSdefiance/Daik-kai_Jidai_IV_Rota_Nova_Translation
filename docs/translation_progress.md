@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Rafael's Basra negotiations, Map Key discoveries, and encounters with Escante's and Maldonado's men. [Checkpoint](editorial_rafael_basra_and_map_keys_registered_20261123.md)
+
+Ten exchanges add 213 contextual decisions. Fifteen revisions address fourteen queued wraps, Escante's incomplete homeland reference and the barkeep's company-name punctuation. The ledger records 192 dialogue and modal panel retentions, six choice captions and twelve names and roles. Native checks covered seventeen revised display cases and two market-share notices. Focused gameplay verified 28 holds and all six original menu outcomes. Ordinary story activation and handheld testing remain open for these scenes. The five original Uddin actor controls have byte-exact references at their new offsets. [Exact review](../releases/all_routes_editorial_20261123_rafael_basra_and_map_keys_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 8ddeb6fc5b1397cc4e610e523185251e0ea65d34ebf381ca55b155382da6256b. Cold boot, seventeen focused tests, and exact clean-input reconstruction passed. Cleanup removed 43 redundant files and reclaimed 617,666,157 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_rafael_basra_and_map_keys_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_basra_and_map_keys_20261123/checkpoint_cleanup.json)
+
+The scan has 131 open wrap leads. Continue the contextual review, ordinary town and random gameplay samples, and the 276 shared display leads. Preserve the 27,700 historical credits, separate artwork work and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_basra_and_map_keys_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Hodram's three recruitment scenes, the Proof warning, Cristina's dance and the sail lesson. [Checkpoint](editorial_hodram_recruitment_and_sails_registered_20261123.md)
+
+Six complete exchanges add 196 contextual decisions. Eighteen revisions address recruitment, the priest's warning and the sail lesson. The ledger records 176 speech and panel retentions, two choice captions and 19 verified names and roles. Native checks covered 19 changed display cases and four original crowd panels. Ordinary Istanbul gameplay verified nine Angelo panels and the return to port. Focused tests verified 18 holds and both sail-lesson choices. Julio's optional line has offline coverage. [Exact review](../releases/all_routes_editorial_20261123_hodram_recruitment_and_sails_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 51d88830bf0bbad7b1b3131ee2aaa6db193166a356fd4b4b67a57112b6af9ef7. The cold boot, 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 82 redundant files and reclaimed 559,858,318 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_recruitment_and_sails_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_recruitment_and_sails_20261123/checkpoint_cleanup.json)
+
+The current scan has 145 open wrap leads. Continue the remaining contextual review and town or random gameplay coverage, including the 276 shared display leads. Preserve the 27,700 historical credits, the separate artwork work and the later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/hodram_recruitment_and_sails_20261123/current_wrap_queue.json)
+
+Rafael's next ten exchanges now have exact clean and installed references for 213 records, including fourteen wrap leads and both branches of three original menus. [Rafael source packet](../translations/editorial_checkpoints/rafael_basra_and_map_keys_20261123/paired_source.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered 13 Hodram exchanges, including the resupply lesson, trade lesson, and Escante's proposal. [Checkpoint](editorial_hodram_midroute_followups_registered_20261123.md)
 
 Thirteen exchanges add 306 contextual decisions. Twenty-five revisions address 17 queued wraps and related issues, including the amber conversation and two tutorial panels. The ledger records 268 dialogue and modal retentions, eight choice captions and five style variants. Eighteen names and roles passed native getter checks. Focused gameplay verified 47 displays and eight original choice outcomes. The style variants were verified offline. Ordinary story activation and handheld testing remain open. [Exact review](../releases/all_routes_editorial_20261123_hodram_midroute_followups_candidate/verification/registered_review.json)
