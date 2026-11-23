@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Tavern’s nearby-town hint after ordinary Tunis and Syracuse replays. [Checkpoint](editorial_tavern_nearby_town_wrap_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered two regional rumors reflowed after ordinary Valencia and Syracuse visits. [Checkpoint](editorial_regional_rumor_wrap_followups_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

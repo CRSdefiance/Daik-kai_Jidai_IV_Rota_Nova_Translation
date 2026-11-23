@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the Tavern’s nearby-town hint after ordinary Tunis and Syracuse replays. [Checkpoint](editorial_tavern_nearby_town_wrap_registered_20261123.md)
+
+The barkeep’s nearby-town question now keeps the town and question mark together on the second row. The native check exercises all 90 stock towns. Two ordinary Tunis holds verified the revision. Eight other holds and four drink-menu transitions passed in Tunis and Syracuse. The review records eight individually justified retentions. [Exact review](../releases/all_routes_editorial_20261123_tavern_nearby_town_wrap_candidate/verification/registered_review.json)
+
+Four saved-game replays on the predecessor verified 17 ordinary shared panels and eight story panels from Maria’s encounter with Kurushima after Nagasaki. They also reached the rat warning and the empty shore search. Other random outcomes and conditional variants remain open. [Gameplay evidence](../translations/editorial_checkpoints/shared_display_20261123/ordinary_shared_encounters_20261123.json)
+
+The sole .nds on Drive matches SHA-256 e30c0ff02216508ce3b917a27bda89688837fd970d2a1040277f3ba0248a9601. Startup, 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 7 verified redundant paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_tavern_nearby_town_wrap_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/tavern_nearby_town_wrap_20261123/checkpoint_cleanup.json)
+
+The inventory audit binds 27,700 credited texts, including 24,092 story positions, 3,392 COMMON records, 202 Help topics and 14 ARM9 entries. It also rechecked 414 default-name getter cases and the current Julio, Trade Goods Info and Deck regression dependencies. This COMMON-only revision leaves those components and the 276 pending shared entries byte-identical. Continue the shared ownership work and representative gameplay, starting with the 35 unresolved legacy messages and scene labels. Graphics artwork and the older-record technical re-audit remain separate. [Inventory and dependency audit](../translations/editorial_checkpoints/shared_display_20261123/current_editorial_coverage_audit_20261123.json)
+
+The current ROM matches 416 registered decisions across Rafael B49, Rafael B84 and Hodram B61–B70. The ledger ties all 96 Hodram payload differences from the November 1 comparison to their later source-based decisions and installed bytes. This verification reuses the registered native and gameplay evidence and adds no new review credit. [Priority story reconciliation](../translations/editorial_checkpoints/tavern_nearby_town_wrap_20261123/priority_story_reviews.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered two regional rumors reflowed after ordinary Valencia and Syracuse visits. [Checkpoint](editorial_regional_rumor_wrap_followups_registered_20261123.md)
 
 Ordinary visits to Tunis, Valencia and Syracuse verified 19 dialogue holds across nine COMMON records. The Seoul visit naturally triggered Yifa's recruitment and verified Yukihisa's “Taoist arts?” panel. The repeated Delicacy Shop rows in Tunis also appear in the clean Japanese build. The Valencia and Syracuse rumor revisions passed fresh ordinary gameplay, including the Shopkeeper nameplates and return to the Square. The other 19 regional rumors retain their wording with individual reasons. [Ordinary visit evidence](../translations/editorial_checkpoints/shared_display_20261123/regional_towns_current_20261123.json) · [Installed review](../releases/all_routes_editorial_20261123_regional_rumor_wrap_followups_candidate/verification/registered_review.json)
