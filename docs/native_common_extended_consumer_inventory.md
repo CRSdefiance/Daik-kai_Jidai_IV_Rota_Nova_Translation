@@ -81,9 +81,15 @@ halfword matches are low halves of full function pointers: `0213FF38` contains
 They are not scene IDs 3416, 3460 or 3532. Literal `0205A16C` is the existing
 3316-byte stack-restoration size; its actual loads/add-to-sp/returns are pinned.
 A changed stack-restoration producer is rejected by the saved verifier.
-Other numeric leads remain unclassified, including geometry-like halfwords
-at `0214532C`. Literal-address matches alone do not prove dereferencing.
-Evidence: `work/analysis/remaining_common_numeric_references_clean.json`.
+The two literal references to `0x0214532C` are now traced in the clean ARM9
+and the registered Mediterranean candidate. Each routine reads four packed
+32-bit words and writes them to graphics I/O address `0x04000488`. The trace
+binds the table reads at `0x0206C488` and `0x020F4FA0` to the value
+`0x00D00E00` and its subsequent writes. The low halfword `0x0E00` happens
+to equal COMMON key 3584. That key's stored label, 書斎のエイレネ, still
+awaits evidence of a display path. Its draft spelling also needs to be
+reconciled with the established Eirene spelling when the display is identified.
+Other numeric leads remain open. [Exact offline traces](../translations/editorial_checkpoints/shared_display_20261123/graphics_table_3584.json)
 
 Both scripts pass Ruff; current-route research now has 172 selector-only cases
 and 128 connected indexed-caller cases. No ROM, English manuscript, formatting gate,

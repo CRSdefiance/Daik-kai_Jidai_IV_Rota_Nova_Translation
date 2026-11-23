@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Rafael's remaining flagged wrap follow-ups. [Checkpoint](editorial_rafael_remaining_wraps_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Rafael's Mediterranean follow-ups and Jam's wrap correction. [Checkpoint](editorial_rafael_mediterranean_followups_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Rafael's recruitment scenes and ship lessons. [Checkpoint](editorial_rafael_ship_lessons_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Rafael's Basra negotiations, Map Key discoveries, and encounters with Escante's and Maldonado's men. [Checkpoint](editorial_rafael_basra_and_map_keys_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

@@ -1,5 +1,39 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Rafael's remaining flagged wrap follow-ups. [Checkpoint](editorial_rafael_remaining_wraps_registered_20261123.md)
+
+The clean-Japanese pass reconciles 335 records across seventeen complete Rafael exchanges. The ledger carries forward 316 exact decisions and records eighteen wording changes and one wrap-only fix. All nineteen revised pages, four retained speakerless commands and 24 nameplates passed native checks. A focused emulator replay verified twenty holds, including the book and curse exchange. The ordinary triggers and handheld display remain open. [Exact review](../releases/all_routes_editorial_20261123_rafael_remaining_wraps_candidate/verification/registered_review.json)
+
+The only .nds on Drive matches SHA-256 c5817d3228feb573599aa974135cbf2cc908860a01264f8ae8c08eba0c80ba90. The cumulative release passed its cold boot, 17 focused tests and a byte-exact clean-input round trip. Cleanup reclaimed 182,791,249 bytes of exact duplicates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_rafael_remaining_wraps_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_remaining_wraps_20261123/checkpoint_cleanup.json)
+
+All 88 open scan leads are in Hodram's route. Two separate visual findings remain for Rafael. In B228 R0031, “On Avalon” still crosses a line boundary. In B234 R0035, the adjoining rows split “in the final sea battle.” Keep the full contextual review, ordinary town and random gameplay, the 276 shared display leads, and the 27,700 historical credits in scope. Artwork and the later older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/rafael_remaining_wraps_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Rafael's Mediterranean follow-ups and Jam's wrap correction. [Checkpoint](editorial_rafael_mediterranean_followups_registered_20261123.md)
+
+Eight complete Rafael exchanges reconcile 401 exact source/current texts. The ledger carries forward 387 approved decisions and records twelve wording changes and two wrap-only fixes. Thirteen scan leads and Jam's separate “True story” finding are addressed. Fifteen native pages pass, including Rafael's intact full name at default and maximum widths. The 31 retained speakerless commands and 29 names or roles have exact checks. Fresh initialized emulator replays verified 15 holds, including the transition into Eirene's reply. The ordinary triggers and handheld display remain open. [Exact review](../releases/all_routes_editorial_20261123_rafael_mediterranean_followups_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 781b53a4b96d18f24215e0b155eea26bcdfb517f7513f4eb8e6af2b11248f831. The cumulative release passed its cold boot, 17 focused tests and an exact clean-input round trip. Cleanup reclaimed 122,228,096 bytes of exact duplicates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_rafael_mediterranean_followups_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_mediterranean_followups_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 107 open wrap leads. Continue the full contextual review, ordinary town and random gameplay coverage, and the 276 shared display leads. Preserve the 27,700 historical credits, separate artwork work and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_mediterranean_followups_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Rafael's recruitment scenes and ship lessons. [Checkpoint](editorial_rafael_ship_lessons_registered_20261123.md)
+
+The registered review covers 217 texts across five Rafael exchanges. Sixteen wording changes and four wrap-only revisions address eleven queued records and nearby breaks. The ledger records 189 dialogue and notice retentions, eight unchanged captions and eleven localized names or roles. All 20 revised pages and the extra-armor notice passed native checks. Focused emulation verified 15 fresh holds and carried forward 17 exact prior holds, including both sailing choices. Natural story activation and handheld testing remain open. [Exact review](../releases/all_routes_editorial_20261123_rafael_ship_lessons_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 bb48d262e32cb2867c02a5a93ed6f223a00bb4565906b861875294351ea9c2f2. The cumulative release passed its cold boot, 17 focused tests and an exact clean-input patch round trip. Cleanup removed 5 verified duplicates and reclaimed 183,893,110 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_rafael_ship_lessons_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_ship_lessons_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 120 open wrap leads. Jam's B176 R0040 still divides “True story” across lines in the new layout. Carry that visual finding into the next wrap pass. Continue the full contextual review, ordinary town and random gameplay samples, and the 276 shared display leads. Preserve the 27,700 historical credits, separate artwork work and later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_ship_lessons_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Rafael’s ship lessons have 118 contextual decisions in staging, including 13 revised pages with complete native glyph checks and six unchanged choice captions. Focused emulator replays cover the revised dialogue, the extra-armor notice and both sailing lesson choices. The source packet also binds Jam and Fernando’s remaining exchanges. [Ship lessons checkpoint](editorial_rafael_ship_lessons_20261123.md)
+
+# Current registered editorial checkpoint - 2026-11-23
+
 Registered Rafael's Basra negotiations, Map Key discoveries, and encounters with Escante's and Maldonado's men. [Checkpoint](editorial_rafael_basra_and_map_keys_registered_20261123.md)
 
 Ten exchanges add 213 contextual decisions. Fifteen revisions address fourteen queued wraps, Escante's incomplete homeland reference and the barkeep's company-name punctuation. The ledger records 192 dialogue and modal panel retentions, six choice captions and twelve names and roles. Native checks covered seventeen revised display cases and two market-share notices. Focused gameplay verified 28 holds and all six original menu outcomes. Ordinary story activation and handheld testing remain open for these scenes. The five original Uddin actor controls have byte-exact references at their new offsets. [Exact review](../releases/all_routes_editorial_20261123_rafael_basra_and_map_keys_candidate/verification/registered_review.json)
