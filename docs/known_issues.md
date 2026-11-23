@@ -1,6 +1,6 @@
 # Azores discovery and Promised Words address - 2026-11-23
 
-Ordinary gameplay showed `Discovered Azores.` and `Shall we call at Azores?`. Both sentences need **the Azores**. Manuel's chief request also says **Captain** where the clean Japanese uses the same address as the lookout's **Admiral**. The proposed wording, exact stored fields and original name-substitution calls are bound to the current build for the next registered batch. [Source and observed display](editorial_lisbon_azores_20261123.md)
+The registered Azores candidate displays **Discovered the Azores.**, **Shall we stop at the Azores?** and the source-accurate address **Admiral** in Manuel's request. Both ordinary Promised Words outcomes passed. The first experimental ROM reproduced the known late-pool growth startup stall. The registered ROM keeps the active pool size, startup copy and arena bounds and passed the six reference startup frames. [Registered fix and evidence](editorial_azores_wording_registered_20261123.md)
 
 # Rafael's Deck lesson after Market Trade - 2026-11-19
 

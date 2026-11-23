@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the corrected Azores discovery, docking voices and chief's request. [Checkpoint](editorial_azores_wording_registered_20261123.md)
+
+The registered candidate passed 437 release checks and 17 focused tests. Both ordinary Hodram replays verified the revised display and the two Promised Words outcomes. The clean-input patch reconstructs the 60,562,184-byte ROM exactly. Drive has one .nds and its streamed readback matches SHA-256 `1a3857b28eb5d25523231e5e8c6764c451441a8a8f7e5164890b44d8c85cd2e7`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Verification](../releases/all_routes_editorial_20261123_azores_wording_candidate/verification/registered_release_verification.json)
+
+The six docking templates and discovery notice passed 168 native formatting cases. Ordinary play observed Manuel's variant. The other docking voices have offline coverage. Continue the remaining conditional text and indirect caller inventory under the completion tests. The ledger retains 27,700 source reviews. [Registration storage](../translations/editorial_checkpoints/azores_wording_20261123/registration_storage.json) · [Cleanup receipt](../translations/editorial_checkpoints/azores_wording_20261123/checkpoint_cleanup.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_supply_ratio_hint_registered_20261123.md)
 
 The registered emulator replay confirmed both adjustment directions and the return to the stock-up question. All 17 focused tests, 436 registered checks and exact clean-input reconstruction passed. Drive contains one .nds and the streamed readback matches SHA-256 `8ace4ebf6ca0c1768128aa51ae54d802d33b632c471f248e28d04fd54de43a47`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Verification](../releases/all_routes_editorial_20261123_supply_ratio_hint_candidate/verification/registered_release_verification.json)

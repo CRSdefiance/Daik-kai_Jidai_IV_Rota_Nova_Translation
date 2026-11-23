@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the corrected Azores discovery, docking voices and chief's request. [Checkpoint](editorial_azores_wording_registered_20261123.md)
+
+The batch revisits eight records. It improves two docking questions, restores Manuel's address **Admiral**, and documents five retained templates. The article is supplied at the discovery and docking call sites. Both ordinary Promised Words outcomes passed, along with 168 offline layout cases. Source review credit remains 27,700. [Coverage and evidence](../releases/all_routes_editorial_20261123_azores_wording_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_supply_ratio_hint_registered_20261123.md)
 
 Four paired emulator holds verified the full label, both adjustment directions and the neighboring Back and Select controls. The clean-input patch reconstructs the candidate exactly, and the Drive readback matches the registered ROM. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_supply_ratio_hint_candidate/translation.xdelta)
