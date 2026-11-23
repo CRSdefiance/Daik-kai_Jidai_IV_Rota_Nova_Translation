@@ -1,3 +1,11 @@
+# Current editorial checkpoint - 2026-11-23
+
+Registered 13 Hodram exchanges, including the resupply lesson, trade lesson, and Escante's proposal. [Checkpoint](editorial_hodram_midroute_followups_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-22
+
+Registered 14 Rafael midroute exchanges, including Julio's sailing lesson and the Colosseum riddle. [Checkpoint](editorial_rafael_midroute_exchanges_registered_20261122.md)
+
 # Current editorial checkpoint - 2026-11-22
 
 Registered 18 early and midroute Hodram exchanges, including Janus's offer and the sailor's miracle question. [Checkpoint](editorial_hodram_early_and_midroute_wraps_registered_20261122.md)

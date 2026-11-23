@@ -1,3 +1,25 @@
+# Current editorial checkpoint - 2026-11-23
+
+Registered 13 Hodram exchanges, including the resupply lesson, trade lesson, and Escante's proposal. [Checkpoint](editorial_hodram_midroute_followups_registered_20261123.md)
+
+Thirteen exchanges add 306 contextual decisions. Twenty-five revisions address 17 queued wraps and related issues, including the amber conversation and two tutorial panels. The ledger records 268 dialogue and modal retentions, eight choice captions and five style variants. Eighteen names and roles passed native getter checks. Focused gameplay verified 47 displays and eight original choice outcomes. The style variants were verified offline. Ordinary story activation and handheld testing remain open. [Exact review](../releases/all_routes_editorial_20261123_hodram_midroute_followups_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 61fb572596c02381b902c9f90855e05a343dab52b67c0290ce0df3316ac92463. Cold boot and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. The registered ROM and manifest are in workspace storage. Cleanup removed 82 redundant files and reclaimed 557,804,398 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_midroute_followups_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_midroute_followups_20261123/checkpoint_cleanup.json)
+
+The current scan has 153 open wrap leads. The focused footage also showed the existing break after “I tell” in the priest's B110 R0047 warning. Keep that wording in context when reflowing the speaker's warning. Continue the remaining story and shared-text review, including the 276 shared display leads and practical town and random-scene coverage. Keep the 27,700 historical credits, separate artwork work and older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/hodram_midroute_followups_20261123/current_wrap_queue.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered 14 Rafael midroute exchanges, including Julio's sailing lesson and the Colosseum riddle. [Checkpoint](editorial_rafael_midroute_exchanges_registered_20261122.md)
+
+Fourteen complete exchanges add 280 decisions. Thirty passages changed, and one Colosseum award panel was reflowed with its wording intact. The batch addresses 21 flagged wraps. The ledger records 244 prose and panel retentions, five choice labels, and 15 reviewed names and roles. Native checks passed for 32 progressive display cases and all 17 modal panels. Focused gameplay verified 50 displays and all five original menu outcomes. Ordinary activation of these story scenes and handheld verification remain open. [Exact review](../releases/all_routes_editorial_20261122_rafael_midroute_exchanges_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 ed7ed1a5960ed67a5336f961889f1a1e0208823ea591a118489241e0dce8eec6. Cold boot and 17 targeted tests passed, and the clean-input patch reconstructs the ROM byte for byte. Cleanup removed 47 redundant files and reclaimed 555,818,632 bytes. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261122_rafael_midroute_exchanges_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/rafael_midroute_exchanges_20261122/checkpoint_cleanup.json)
+
+The current scan has 170 wrap leads awaiting decisions. Continue the remaining Hodram and Rafael exchanges, the other storylines, ordinary town and random scenes, and shared labels and prose. Preserve the 276 shared display leads, 27,700 historical credits, the separate artwork work, and the later older-record technical re-audit. [Current wrap queue](../translations/editorial_checkpoints/rafael_midroute_exchanges_20261122/current_wrap_queue.json) · [Next Hodram packet, 306 texts and 17 wrap leads](../translations/editorial_checkpoints/hodram_midroute_followups_20261123/paired_source.json)
+
+The release output drive has about 81 MB free. Use workspace storage for the next registered ROM and manifest if the existing output location still lacks room. Keep earlier registered paths and unique ROMs available.
+
 # Current editorial checkpoint - 2026-11-22
 
 Registered 18 early and midroute Hodram exchanges, including Janus's offer and the sailor's miracle question. [Checkpoint](editorial_hodram_early_and_midroute_wraps_registered_20261122.md)
