@@ -24,7 +24,7 @@ The crew looks for an experienced navigator. Clau recognizes Gerhard Adernkatz's
 76|Clau thinks this is the place.|||His tentative reply preserves the uncertainty before they knock.
 80|Someone knocks twice at the door.|||Keep the original speakerless sound panel and its timing.
 85|Gerhard asks who is at his door.|||The hesitation suits the voice from inside before he knows the visitors.
-89|Rafael starts a polite introduction and names FO before Clau cuts him off.|Hello. I'm with FO, and...|I'm with FO,|Keep Rafael's false start and let the company slot expand without stranding the start of his introduction. Preserve the comma after the company name.
+89|Rafael starts a polite introduction and names FO before Clau cuts him off.|Good to meet you. I'm with FO, I...|Good to meet you.;I'm with FO, I...|Keep the greeting and Rafael's unfinished introduction distinct. Both default and maximum company widths fit with the original substitution.
 93|Clau names Admiral FI FA and introduces himself as navigator Claudio Manaus.|||The name slots and rank are intact. His interruption finishes Rafael's introduction and adds his own.
 97|Gerhard picks up on navigator and asks why they are here.|||The echo and question keep the visitors' purpose on their side of the conversation.
 100|Janus says they heard of Gerhard's skill and came to speak with him.|||His polite lead-in leaves Gerhard room to dismiss the praise.
@@ -96,7 +96,7 @@ The crew looks for an experienced navigator. Clau recognizes Gerhard Adernkatz's
 398|Gerhard says he will not go easy on them.|||The warning keeps his agreement implicit until Rafael reacts.
 402|Rafael begins an excited reply.|||The incomplete exclamation shows he has recognized the offer.
 407|Gerhard agrees but demands that they be ready for his training.|||His closing qualification keeps the gravity of the agreement.
-417|Gerhard offers special training before he goes back to sea.|I have something to teach you before I head back to sea. Are you up for some special training?|I have something to teach you;before I head back to sea.;Are you up for|Put the lesson and its timing together before the offer, with the three original answers following.
+417|Gerhard offers special training before he goes back to sea.|I have something to teach you before I head back to sea. Are you up for special training?|I have something to teach you;before I head back to sea.;Are you up for special training?|Keep the question whole before the three original answers.
 427|The first answer agrees to take the demanding training.|||The option makes the practical commitment clear and sets up Gerhard's warning.
 429|The second answer asks to hear the explanation alone.|||The caption keeps listening distinct from participating in the practical training.
 431|The third answer sticks to Rafael's own approach.|||The caption sets up Gerhard's acceptance of learning at sea independently.
