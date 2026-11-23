@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+An ordinary westbound voyage from Ceuta verified seven text holds for five source records on the registered Tavern build. The storm, food and water depletion, exhaustion, two level-up notices and the crew-loss warning passed their text and glyph checks. Zero sailors aboard Vestaros led to Game Over. Azores docking and resupply remain open for ordinary gameplay. The 276 pending shared display entries stay in scope. [Gameplay and source checkpoint](editorial_ordinary_azores_voyage_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Faticia's one-line reply after the player declines another drink. [Checkpoint](editorial_tavern_drink_reply_registered_20261123.md)
 
 Faticia's teasing answer now fits on one row. Ordinary Istanbul replays verified the refusal, ten retained Tavern lines, the matching drink prompt and the return to town. The same visits covered accepting the drink, the toast and the Ragusa rumor. An ordinary Syracuse replay verified the sailing estimate and departure notice. That replay ended at sea with the village still unvisited. [Exact source and display review](../releases/all_routes_editorial_20261123_tavern_drink_reply_candidate/verification/registered_review.json)
