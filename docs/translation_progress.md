@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Hodram's final queued wrap fixes, including the Proofs, bounty and expedition scenes. [Checkpoint](editorial_hodram_b261_b310_wrap_fixes_registered_20261123.md)
+
+Fourteen complete Hodram exchanges in B261–B310 reconcile 305 exact texts. There are 14 wording revisions, four wrap-only fixes, 165 justified dialogue or panel retentions, seven original choice captions and 115 retained personality variants. Native checks cover 19 revised display cases and the focused emulator run verifies 20 holds. Ordinary event triggers, conditional outcomes and handheld checks remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_hodram_b261_b310_wrap_fixes_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 3576226a6765295793b7bd7c4ad549dacfc8728a004068a14754991010c7d2c1. Startup, 17 focused tests and exact clean-input patch reconstruction passed. Cleanup reclaimed 122,225,585 bytes of build intermediates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_b261_b310_wrap_fixes_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_b261_b310_wrap_fixes_20261123/checkpoint_cleanup.json)
+
+The current storyline wrap scan has 0 unresolved heuristic leads. Continue shared display ownership and contextual decisions for the 276 pending records, practical ordinary town and random scene coverage, and final inventory reconciliation across all four routes. Preserve 27,700 historical review credits. Graphics artwork and the older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/hodram_b261_b310_wrap_fixes_20261123/current_wrap_queue.json) · [Shared display worklist](../translations/editorial_checkpoints/shared_display_20261123/paired_worklist.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Hodram's historical rumors, ruins dialogue and figurehead follow-ups. [Checkpoint](editorial_hodram_b221_b260_wrap_fixes_registered_20261123.md)
 
 Twenty-two complete exchanges in Hodram B221–B260 reconcile 358 exact texts. The ledger records 29 revisions, 281 justified dialogue or panel retentions, 11 retained choice captions and 37 retained personality variants. Thirty native display cases passed, including both widths of Hatra's greeting. Focused emulation verified 34 holds, including the original Leave it response, the speakerless notices and the return to port. Ordinary activation, remaining choices and handheld display are unvisited in this batch. [Exact review](../releases/all_routes_editorial_20261123_hodram_b221_b260_wrap_fixes_candidate/verification/registered_review.json)

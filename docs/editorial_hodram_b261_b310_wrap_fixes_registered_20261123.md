@@ -1,0 +1,5 @@
+# Hodram B261–B310 dialogue review
+
+Fourteen complete exchanges reconcile 305 previously localized texts. Fourteen wording revisions and four wrap-only fixes resolve 17 queued leads and a nearby awkward phrase. The ledger records 165 justified dialogue or panel retentions, seven original choice captions and 115 retained personality variants. [Exact review](../releases/all_routes_editorial_20261123_hodram_b261_b310_wrap_fixes_candidate/verification/registered_review.json)
+
+All 19 revised display cases passed native glyph and layout checks, including the guildmaster's greeting at two surname widths. Fifteen speakerless commands and 12 names or roles passed native verification. Twenty focused emulator holds cover each revision, a reward notice, a substituted injury notice and the return to port. Ordinary event triggers, conditional outcomes and handheld display remain unvisited in this batch. [Testing build and patch](../releases/all_routes_editorial_20261123_hodram_b261_b310_wrap_fixes_candidate/README.md)

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Hodram's final queued wrap fixes, including the Proofs, bounty and expedition scenes. [Checkpoint](editorial_hodram_b261_b310_wrap_fixes_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Hodram's historical rumors, ruins dialogue and figurehead follow-ups. [Checkpoint](editorial_hodram_b221_b260_wrap_fixes_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
