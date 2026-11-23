@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Rechecked the latest registered ROM against all 416 Rafael B49/B84 and Hodram B61–B70 decisions, the four route censuses, 202 Help topics, 276 shared display dispositions and the ASCII right-bound repair. A focused offline test confirmed the Japanese Pirate affiliation label and the complete English proposal. Continue with a whole-panel emulator check and the two older fleet display paths. [Current acceptance audit](editorial_acceptance_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Reconciled **all 276 shared entries** within verified display paths. The current ROM keeps the 781 original still requests across all four routes. Maria's B46 loads Clifford's entrance portrait, and three Rafael scenes supply the checked Hans and Arcadius scope. The archived individual artwork assignments and other direct callers stay tracked. Continue the broader completion audit for player-facing resources, representative gameplay, and the registered release. [Current evidence](editorial_story_artwork_inventory_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

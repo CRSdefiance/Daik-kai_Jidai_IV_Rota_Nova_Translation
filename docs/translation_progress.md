@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Rechecked the latest registered ROM against all 416 Rafael B49/B84 and Hodram B61–B70 decisions, the four route censuses, 202 Help topics, 276 shared display dispositions and the ASCII right-bound repair. The original Pirate affiliation branch still draws Japanese. The English proposal passed complete native glyph and bounds checks offline. The whole-panel replay and two older fleet display paths remain open. [Current acceptance audit](editorial_acceptance_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **276 of 276 shared worklist entries** within verified paths. The final two findings cover Clifford's native entrance in Maria's route and the three Rafael scenes with both Hans and Arcadius. All 781 original still requests and the exact storage references for all 276 entries agree with the current registered build. [Current evidence](editorial_story_artwork_inventory_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
