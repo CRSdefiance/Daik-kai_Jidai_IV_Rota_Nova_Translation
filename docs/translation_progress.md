@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **255 of 276 shared entries** within verified paths. The original DS header scanner and its three callers passed 80 offline runs across both ROMs. **21 entries remain open**. [Current evidence](editorial_cartridge_header_check_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Accounted for **254 of 276 shared entries** within verified paths. The five additions cover fleet debt, port discovery, Attack Town, and Quit. Exact current dependencies support reuse of earlier ordinary gameplay, focused fixtures, and offline cases. **22 entries remain open**. [Current evidence](editorial_legacy_fleet_and_quit_paths_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified the original DS cartridge header checks and their read, write, and system-data notice paths in 80 clean and current offline runs. **21 of 276 shared entries** still need scoped dispositions. Continue with ten legacy records, nine title variants, and two scene labels. [Current evidence](editorial_cartridge_header_check_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Matched the current release to verified paths for fleet debt, discovery, Attack Town, and Quit. **22 of 276 shared entries** still need scoped dispositions. Continue with 11 legacy records, nine title variants, and two scene labels. The Online Card Copy candidate remains the registered testing ROM. [Current evidence](editorial_legacy_fleet_and_quit_paths_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
