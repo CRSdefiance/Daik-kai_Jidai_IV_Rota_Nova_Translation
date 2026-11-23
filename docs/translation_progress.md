@@ -1,5 +1,15 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Hodram's historical rumors, ruins dialogue and figurehead follow-ups. [Checkpoint](editorial_hodram_b221_b260_wrap_fixes_registered_20261123.md)
+
+Twenty-two complete exchanges in Hodram B221–B260 reconcile 358 exact texts. The ledger records 29 revisions, 281 justified dialogue or panel retentions, 11 retained choice captions and 37 retained personality variants. Thirty native display cases passed, including both widths of Hatra's greeting. Focused emulation verified 34 holds, including the original Leave it response, the speakerless notices and the return to port. Ordinary activation, remaining choices and handheld display are unvisited in this batch. [Exact review](../releases/all_routes_editorial_20261123_hodram_b221_b260_wrap_fixes_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 3608c826b38a6766aede27ca63e779bb6e523b6917ce76e0d2a8aa86339be310. Startup, 17 focused tests and exact clean-input patch reconstruction passed. Cleanup reclaimed 122,226,678 bytes of build intermediates. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_hodram_b221_b260_wrap_fixes_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/hodram_b221_b260_wrap_fixes_20261123/checkpoint_cleanup.json)
+
+The refreshed scan has 17 open leads. The next Hodram packet covers B261–B310, with 305 exact texts in 14 complete exchanges. Its original packet references the registered predecessor. Rebind the unchanged blocks to the active candidate for the next batch. Keep the full four-route contextual review, ordinary town and random gameplay, 276 shared display leads and 27,700 historical credits in scope. Graphics artwork and the older-record technical re-audit remain separate. [Current wrap queue](../translations/editorial_checkpoints/hodram_b221_b260_wrap_fixes_20261123/current_wrap_queue.json) · [Paired source](../translations/editorial_checkpoints/hodram_remaining_wrap_leads_20261123/paired_source.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the four observed wrap fixes for Cesare, Zhuge Liang, Vivian and Gerhard. [Checkpoint](editorial_observed_wrap_followups_registered_20261123.md)
 
 Four wrap revisions across Rafael and Hodram reconcile 84 texts in four complete exchanges. The review carries forward 73 individual speech decisions, seven original choice captions and ten names or roles. Five stored native pages passed. Nine focused emulator holds cover the two pages of Cesare's revised trade routes explanation, the return to the following panel, the one-page Zhuge Liang reply, and both Rafael passages. Ordinary activation and handheld testing remain open for these scenes. [Exact review](../releases/all_routes_editorial_20261123_observed_wrap_followups_candidate/verification/registered_review.json)

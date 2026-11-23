@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Hodram's historical rumors, ruins dialogue and figurehead follow-ups. [Checkpoint](editorial_hodram_b221_b260_wrap_fixes_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the four observed wrap fixes for Cesare, Zhuge Liang, Vivian and Gerhard. [Checkpoint](editorial_observed_wrap_followups_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
