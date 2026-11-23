@@ -1,6 +1,6 @@
 # Switch English catalogs
 
-These are the English records from the verified v89 overlay. Scenario JSONL
+These are the English records from the v90 overlay. Scenario JSONL
 files `sc0` through `sc6` correspond to Raphael, Hodram, Lil, Maria, Saiki,
 Woodin, and Tial. Every line identifies a native scenario block and record,
 with a turn for dialogue, a slot for a choice, or style slots for voice variants.
