@@ -1,3 +1,7 @@
+# Azores discovery and Promised Words address - 2026-11-23
+
+Ordinary gameplay showed `Discovered Azores.` and `Shall we call at Azores?`. Both sentences need **the Azores**. Manuel's chief request also says **Captain** where the clean Japanese uses the same address as the lookout's **Admiral**. The proposed wording, exact stored fields and original name-substitution calls are bound to the current build for the next registered batch. [Source and observed display](editorial_lisbon_azores_20261123.md)
+
 # Rafael's Deck lesson after Market Trade - 2026-11-19
 
 The original post-Trade path now verifies Julio's regular capital F, Rafael's substituted name and the complete speakerless Deck View instruction. The three revised panels and return to Lisbon passed paired emulator replays. The physical device remains unverified. [Replay evidence](editorial_rafael_deck_after_trade_20261119.md)

@@ -4,6 +4,12 @@ Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_suppl
 
 Four paired emulator holds verified the full label, both adjustment directions and the neighboring Back and Select controls. The clean-input patch reconstructs the candidate exactly, and the Drive readback matches the registered ROM. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_supply_ratio_hint_candidate/translation.xdelta)
 
+Ordinary gameplay now reaches Azores discovery, docking, resupply and both Promised Words outcomes. The source and current display confirm two missing place-name articles and one wrong rank. Exact proposed edits are ready for the registered workflow. [Azores review](editorial_lisbon_azores_20261123.md)
+
+Ordinary regional and Lisbon replays verified the town-heading path and scoped three stored Japanese class labels. A separate offline scan bound three previously scoped literals to their exact native calls. [Gameplay and source evidence](editorial_native_class_names_20261123.md)
+
+All 1,307 production event entries bind to the four reviewed story archives on the registered ROM. The offline inventory includes exact file offsets and retains the 80 town-trend checks. [Event coverage](editorial_retail_event_coverage_current_20261123.md)
+
 # Current editorial checkpoint - 2026-11-23
 
 Sound Setup now displays **Stop** while music is playing. The ordinary title replay verified both actions, track selection, the SFX preview control, and the return to Options and title. The fix also removes three stray Japanese glyph pixels that persisted after leaving Stop. All 17 focused tests, 435 registered checks, the candidate startup and the exact clean-input reconstruction passed. [Registered review](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/verification/registered_review.json)
