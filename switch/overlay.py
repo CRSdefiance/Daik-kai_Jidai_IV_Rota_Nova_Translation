@@ -13,7 +13,7 @@ from tempfile import TemporaryDirectory
 from dk4tool.patch.xdelta import XdeltaError, apply_xdelta
 
 
-CURRENT_RELEASE = Path(__file__).resolve().parent / "releases" / "v90" / "manifest.json"
+CURRENT_RELEASE = Path(__file__).resolve().parent / "releases" / "v91" / "manifest.json"
 SHA256 = re.compile(r"[a-f0-9]{64}")
 
 

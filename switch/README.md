@@ -2,11 +2,11 @@
 
 The Switch project targets the Japanese release of **Uncharted Waters IV with
 Power-Up Kit HD Version**, update **1.0.2**, title ID `0100F0E0136BE000`.
-[The v90 manifest](releases/v90/manifest.json) describes the current English patch.
+[The v91 manifest](releases/v91/manifest.json) describes the current English patch.
 The overlay includes all seven campaigns, shared UI and trade text, and English
 graphics captions.
 
-## Build v90
+## Build v91
 
 From the repository root, use Python 3.11 or later and install the project with
 `python -m pip install -e .`. The Switch build reuses the repository's xdelta3
@@ -14,7 +14,7 @@ or pyxdelta support. Supply the `romfs` directory from your own extracted
 Japanese 1.0.2 game. The output must be a new directory.
 
 ```powershell
-python -m switch.overlay --romfs "D:/my-dump/romfs" --output "switch/generated/v90"
+python -m switch.overlay --romfs "D:/my-dump/romfs" --output "switch/generated/v91"
 ```
 
 Use the resulting `exefs` and `romfs` folders together as one mod. Keep older
@@ -32,7 +32,8 @@ testing. Eden stable 0.2.1 stretched coastline textures in both builds.
 choice labels, voice variants, shared messages, and native UI wording by record.
 The release deltas encode the tested native layout, commands, and graphics.
 Use the inspector and layout checker to review extracted archives.
-See the [v90 release notes](releases/v90/README.md) for the editorial scope and
-the [v89 release notes](releases/v89/README.md) for the packaging workflow.
+See the [v91 release notes](releases/v91/README.md) for the Palace fix,
+the [v90 release notes](releases/v90/README.md) for the campaign review,
+and the [v89 release notes](releases/v89/README.md) for the packaging workflow.
 The repository's [game-file policy](../LEGAL.md) applies to
 Switch development inputs and releases.
