@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-23
 
+Ordinary Fleet Info reached the original fleet-detail builder and verified five complete title and name masks. The isolated tests traced the legacy destination caption to the original Missionary getter when supplied destination 114. The normal regional picker returns slots 0–89 or the no-target value 115. The visible destination and finance fields remain open for an assigned regional fleet. [Fleet Info and exact caller evidence](editorial_fleet_destination_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Bound all 80 Town Trends selectors to the exact current scene blocks and their original town IDs. Riga has no authored event in this family. Fresh ordinary London and Athens replays verified 18 dialogue and forecast panels and both Square returns on the current ROM. Seoul's ordinary Tavern **No** branch verified Reika's complete line and the unchanged gold balance. Continue the remaining indirect display callers and conditional encounters. [Current coverage and exact references](editorial_town_trend_catalogue_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the reflowed Hideyoshi and Kurushima reply in Seoul. [Checkpoint](editorial_seoul_shop_rumor_registered_20261123.md)
+
+Ordinary Riga and Seoul visits verified 26 shop and Tavern holds across 15 shared messages. These include the sailor's two-line referral to the Market, Riga's two influence rumors and Reika's service and toast. The revised reply passed two ordinary Food Shop visits. The Seoul replay reached Yifa's recruitment and Square return. All 35 story commands match the registered versions, including Maria's later line about pulling her weight. [Ordinary play and exact source bindings](../translations/editorial_checkpoints/shared_display_20261123/riga_seoul_ordinary_20261123.json)
+
+The cumulative candidate passed 440 release checks, 17 focused tests, six startup comparisons and 24 protected name getters. The clean patch reconstructs the whole ROM. Drive contains one .nds with a streamed SHA-256 match to `f289439dfc523cd6e1e54d30bae06a843a9569084682e5e7496f2b5cce1a4529`. The ledger retains 27,700 editorial credits. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Drive receipt](../translations/editorial_checkpoints/seoul_shop_rumor_20261123/drive_latest_build_receipt.json) · [Cleanup](../translations/editorial_checkpoints/shared_display_20261123/riga_seoul_cleanup_20261123.json)
+
+Continue practical random scene sampling and reconcile the remaining indirect display callers. Riga Trends story content and Reika's declined round were outside this replay's verified coverage. The focused Monster Fish stall remains open. [Battle checkpoint](editorial_special_target_battle_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified Gerhard's full battle order and speaker nameplate in two focused Monster Fish declaration runs. Both reached the pending encounter with the Declare War instructions over Sea View. The registered predecessor reproduced five exact frames. The clean replay diverged into the Speyer story prelude. Actual combat and victory remain open, with 25 offline victory name-and-voice checks already on record. Continue ordinary town and conditional display sampling and seek a matched special-target replay. [Battle checkpoint](editorial_special_target_battle_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

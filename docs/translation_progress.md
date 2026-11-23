@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified the ordinary Fleet Info path and the full Hodram name in both panes. Traced the legacy destination argument for all 116 supported values in both ROMs and bounded the normal regional selector. No new testing ROM or editorial credit. [Fleet Info evidence](editorial_fleet_destination_paths_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Reconciled all 80 date-driven Trend events against their current registered script blocks. Ordinary London and Athens play now covers the installed dialogue, including both forecasts and returns. Reika's invitation and reply were retained after a new ordinary Seoul decline and payment-state check. The ledger retains 27,700 historical credits. [Town and Tavern evidence](editorial_town_trend_catalogue_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the reflowed Hideyoshi and Kurushima reply in Seoul. [Checkpoint](editorial_seoul_shop_rumor_registered_20261123.md)
+
+Reviewed 15 distinct shared messages across 26 ordinary Riga and Seoul holds. The reply about Hideyoshi and Kurushima is the one revision. Fourteen messages retain their wording with individual reasons. Two paired Seoul visits checked the revised wrap and full speaker label. The clean-input patch, 440 registered checks, 17 focused tests and sole Drive copy passed. [Ordinary play ledger](../translations/editorial_checkpoints/shared_display_20261123/riga_seoul_ordinary_20261123.json) · [Release proof](../releases/all_routes_editorial_20261123_seoul_shop_rumor_candidate/verification/registered_release_verification.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Completed a focused Monster Fish declaration comparison on the two most recent registered builds. Verified and retained Gerhard's published battle order. The instructions overlap Sea View after the encounter is queued, and combat remains unvisited. The sea-inspection ROM remains the testing candidate. All 17 focused repository tests passed. [Battle checkpoint](editorial_special_target_battle_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

@@ -1,0 +1,109 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_726",
+      "message_ID": 726,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shopkeeper",
+      "context": "Two ordinary Seoul Food Shop visits select this regional reply. The shopkeeper treats both opponents as equally unwelcome and says repeated visits will end the same way.",
+      "source_meaning": "Whether it is Hideyoshi or Kurushima, the shopkeeper vows to drive them away however often they come.",
+      "localization_note": "The two short questions and the dismissal keep the speaker's defiance. The complete vow retains the repeated threat on one line.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "decision": "revision",
+      "source_Japanese": "ヒデヨシだろうがクルシマだろうが\n何度来たって追い払ってやりますよ",
+      "source_reference": {
+        "block": 9,
+        "offset": 1768,
+        "copy_end": 1836,
+        "table_offset": 1318588,
+        "hex": "837183668388835682be82eb82a482aa834e838b8356837d82be82eb82a482aa0a89bd9378978882bd82c182c492c782a295a582c182c482e282e882dc82b782e6"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 1429,
+        "copy_end": 1520,
+        "table_offset": 1318588,
+        "hex": "2048696465796f736869206f72204b7572757368696d613f2049276c6c206472697665207468656d206f66662065766572792074696d65207468657920636f6d6521"
+      },
+      "staged_reference": {
+        "block": 9,
+        "offset": 1429,
+        "copy_end": 1520,
+        "table_offset": 1318588,
+        "hex": "2048696465796f7368693f204b7572757368696d613f2057686f2063617265733f2049276c6c206472697665207468656d206f66662065766572792074696d652120"
+      },
+      "english": "Hideyoshi? Kurushima? Who cares? I'll drive them off every time!",
+      "native_layouts": [
+        {
+          "lines": [
+            "Hideyoshi or Kurushima? I'll drive",
+            "them off every time they come!"
+          ],
+          "complete_plane_sha256": "bc21d2c9f9d3b4bfc2e759458ffe7c9b949ea632d1ad589fa83fc54e3ac328ff",
+          "formatted_hex": "2048696465796f736869206f72204b7572757368696d613f2049276c6c2064726976650a20207468656d206f66662065766572792074696d65207468657920636f6d6521"
+        },
+        {
+          "lines": [
+            "Hideyoshi? Kurushima? Who cares?",
+            "I'll drive them off every time!"
+          ],
+          "complete_plane_sha256": "322b1175e87aeb2651aefc6b4412cb35d227c77c916af7c738285ba22265bddd",
+          "formatted_hex": "2048696465796f7368693f204b7572757368696d613f2057686f2063617265733f0a202049276c6c206472697665207468656d206f66662065766572792074696d6521"
+        }
+      ]
+    }
+  ],
+  "predecessor": {
+    "path": "E:/Rota Nova translations/Generated/work/current_sea_target_inspections_20261123/stage/Translation_DS_Sea_Inspection_Prose_20261123_candidate.nds",
+    "sha256": "cf812084d181475098ade754a9b7847e1763fbb04c33379dc3d53b61cae98ba8"
+  },
+  "candidate": {
+    "path": "E:/Rota Nova translations/Generated/work/baltic_seoul_town_20261123/stage/Seoul_Square_Rumor_STAGED.nds",
+    "sha256": "f289439dfc523cd6e1e54d30bae06a843a9569084682e5e7496f2b5cce1a4529"
+  },
+  "clean": {
+    "path": "work/clean.nds",
+    "sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+  },
+  "changed_internal_files": [
+    "/COMMON/MESFILE.DK4"
+  ],
+  "changed_ids": [
+    726
+  ],
+  "slots": {
+    "726": {
+      "block": 9,
+      "start": 1429,
+      "end": 1520,
+      "before": "2048696465796f736869206f72204b7572757368696d613f2049276c6c206472697665207468656d206f66662065766572792074696d65207468657920636f6d652100000000000000000000000000000000000000000000000000",
+      "after": "2048696465796f7368693f204b7572757368696d613f2057686f2063617265733f2049276c6c206472697665207468656d206f66662065766572792074696d65212000000000000000000000000000000000000000000000000000",
+      "new_null_fields": 0
+    }
+  },
+  "target_COMMON_sha256": "a0958f49c97d119afecb419be9f69e6b6147cc4f9a294ab795a4c91568f528f4",
+  "target_ARM9_sha256": "b80e40f5725c63bb198c34575545f7557fa73fb022bed5b64fd1a91bb7c7ab98",
+  "exact_whole_parent_inverse": true,
+  "preview": {
+    "path": "E:/Rota Nova translations/Generated/work/baltic_seoul_town_20261123/stage/seoul_rumor_before_after.png",
+    "sha256": "47a42514327748cacb2eb2e29c103b7d84b2cb8099f57c04c20fbca69988c96d"
+  },
+  "actual_revised_ROM_replay_pending": true,
+  "registered": false
+}

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered the reflowed Hideyoshi and Kurushima reply in Seoul. [Checkpoint](editorial_seoul_shop_rumor_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered clearer reactions for four of the eight sea-inspection voices. [Checkpoint](editorial_sea_inspection_prose_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
