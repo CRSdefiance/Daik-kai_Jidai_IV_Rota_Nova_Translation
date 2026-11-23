@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_supply_ratio_hint_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered the Sound Setup Stop label and verified the original Play and Stop controls. [Checkpoint](editorial_sound_play_stop_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

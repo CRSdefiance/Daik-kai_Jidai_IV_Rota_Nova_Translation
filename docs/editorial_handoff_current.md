@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_supply_ratio_hint_registered_20261123.md)
+
+The registered emulator replay confirmed both adjustment directions and the return to the stock-up question. All 17 focused tests, 436 registered checks and exact clean-input reconstruction passed. Drive contains one .nds and the streamed readback matches SHA-256 `8ace4ebf6ca0c1768128aa51ae54d802d33b632c471f248e28d04fd54de43a47`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Verification](../releases/all_routes_editorial_20261123_supply_ratio_hint_candidate/verification/registered_release_verification.json)
+
+Continue with the original Event, Missionary and World label callers. Naturally earned shortages and handheld display still have no evidence for the ratio hint. The source-review credit stays at 27,700. [Cleanup receipt](../translations/editorial_checkpoints/supply_ratio_hint_20261123/checkpoint_cleanup.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Sound Setup now displays **Stop** while music is playing. The ordinary title replay verified both actions, track selection, the SFX preview control, and the return to Options and title. The fix also removes three stray Japanese glyph pixels that persisted after leaving Stop. All 17 focused tests, 435 registered checks, the candidate startup and the exact clean-input reconstruction passed. [Registered review](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/verification/registered_review.json)
 
 Drive contains one .nds and its readback matches SHA-256 `f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/translation.xdelta)

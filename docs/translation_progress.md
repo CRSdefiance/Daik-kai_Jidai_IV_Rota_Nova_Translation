@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Mix on the L/R Supply Ratio button hint. [Checkpoint](editorial_supply_ratio_hint_registered_20261123.md)
+
+Four paired emulator holds verified the full label, both adjustment directions and the neighboring Back and Select controls. The clean-input patch reconstructs the candidate exactly, and the Drive readback matches the registered ROM. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_supply_ratio_hint_candidate/translation.xdelta)
+
+# Current editorial checkpoint - 2026-11-23
+
 Sound Setup now displays **Stop** while music is playing. The ordinary title replay verified both actions, track selection, the SFX preview control, and the return to Options and title. The fix also removes three stray Japanese glyph pixels that persisted after leaving Stop. All 17 focused tests, 435 registered checks, the candidate startup and the exact clean-input reconstruction passed. [Registered review](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/verification/registered_review.json)
 
 Drive contains one .nds and its readback matches SHA-256 `f82a3ed6e2f1b236a3ec6e5b21199a02c9865ef83572d251723fdd94cd2a2502`. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_sound_play_stop_candidate/translation.xdelta)
