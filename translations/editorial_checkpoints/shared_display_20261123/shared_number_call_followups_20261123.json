@@ -1,0 +1,154 @@
+{
+  "candidate_sha256": "1f98a13c03188d098f177ac515a20635fc29f041d8a061328aad9de7da348dea",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "inherited_full_census_sha256": "8b81c920d97918f8fcc7f4bc51eac1cb0feb150b227fa62e50baec1d300cb5b3",
+  "scoped_number_message_records": [
+    {
+      "message_ID": 288,
+      "source_reference": {
+        "block": 4,
+        "offset": 2164,
+        "copy_end": 2192,
+        "bytes": 25,
+        "record_index": 27,
+        "table_offset": 1317712,
+        "start_in_record": 1
+      },
+      "installed_reference": {
+        "block": 4,
+        "offset": 2073,
+        "copy_end": 2097,
+        "bytes": 22,
+        "record_index": 51,
+        "table_offset": 1317712,
+        "start_in_record": 0
+      },
+      "source_hex": "90a897cd926c82aa25730a8fe382aa82e882dc82b582bd8149",
+      "installed_hex": "506f77657220696e637265617365642062792025732e",
+      "english": "Power increased by %s.",
+      "decision": "retention",
+      "prior_review": "releases\\all_routes_editorial_20261121_power_and_gold_digits_candidate\\verification\\registered_review.json",
+      "original_choice_and_argument_count_preserved": true,
+      "localization_note": "The game names the Power statistic and reports the amount gained. Preserve the same wording on every branch, including ruins discovery.",
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      }
+    },
+    {
+      "message_ID": 904,
+      "source_reference": {
+        "block": 11,
+        "offset": 2060,
+        "copy_end": 2080,
+        "bytes": 19,
+        "record_index": 38,
+        "table_offset": 1318944,
+        "start_in_record": 1
+      },
+      "installed_reference": {
+        "block": 11,
+        "offset": 2654,
+        "copy_end": 2685,
+        "bytes": 30,
+        "record_index": 121,
+        "table_offset": 1318944,
+        "start_in_record": 0
+      },
+      "source_hex": "2573906c82aa0a8f5782dc82e882dc82b582bd",
+      "installed_hex": "20576527766520676f742025732077696c6c696e6720746f206a6f696e2e",
+      "english": "We've got %s willing to join.",
+      "decision": "retention",
+      "prior_review": "releases\\all_routes_editorial_20261120_recruit_crew_candidate\\verification\\registered_review.json",
+      "original_choice_and_argument_count_preserved": true,
+      "localization_note": "“Willing to join” distinguishes the volunteers who turned up from the sailors finally assigned.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "changed_formatter_dependencies_reconciled": [
+    34324820,
+    33912304
+  ],
+  "current_local_requests": {
+    "power": [
+      {
+        "number_return_pointer": 38023168,
+        "example_positive_value": 1,
+        "message_ID": 288,
+        "argument_pointer": 38023168
+      },
+      {
+        "number_return_pointer": 38023424,
+        "example_positive_value": 105,
+        "message_ID": 288,
+        "argument_pointer": 38023424
+      },
+      {
+        "number_return_pointer": 38023680,
+        "example_positive_value": 2147483647,
+        "message_ID": 288,
+        "argument_pointer": 38023680
+      }
+    ],
+    "volunteers": {
+      "message_ID": 904,
+      "original_stack_slot": 40,
+      "number_return_pointer": 38023936,
+      "wrapper_call": 33912304
+    }
+  },
+  "number_helper_register_code_sha256": "9c105b6451dd20d09b387c631d10eb1521b191859c4ec5f3d5558c993b0b4c4b",
+  "remaining_changed_bounded_argument_findings": 0,
+  "normal_deck_guard_reuse": {
+    "code_spans": [
+      [
+        31444,
+        31548
+      ],
+      [
+        79036,
+        79056
+      ],
+      [
+        532388,
+        532460
+      ],
+      [
+        78528,
+        78540
+      ],
+      [
+        74032,
+        74324
+      ],
+      [
+        519976,
+        520040
+      ]
+    ],
+    "exact_clean_bytes": true,
+    "historical_model_slots_checked": 4774,
+    "scope": "Normal assignment and the original historical stock model snapshot."
+  },
+  "new_gameplay_runs": 0,
+  "new_editorial_credit": 0,
+  "pending_stored_entries": 276,
+  "evidence": {
+    "translations\\editorial_checkpoints\\shared_display_20261123\\bounded_calls_current_20261123.json": "8b81c920d97918f8fcc7f4bc51eac1cb0feb150b227fa62e50baec1d300cb5b3",
+    "releases\\all_routes_editorial_20261121_power_and_gold_digits_candidate\\verification\\staged.json": "534b398b6671188948f625a305ed923731e0e85946119410b8cc1328c3137ae8",
+    "releases\\all_routes_editorial_20261121_power_and_gold_digits_candidate\\verification\\registered_review.json": "b048d3801fe6296039cfc2c9b8d20b971923bf7a6980dcd00c87860088f758a3",
+    "releases\\all_routes_editorial_20261120_recruit_crew_candidate\\verification\\staged.json": "a8abe58ea2f8b1843ddd07fca8d8ace7fee81dccfaa7f7996cd97efbe4db2801",
+    "releases\\all_routes_editorial_20261120_recruit_crew_candidate\\verification\\registered_review.json": "5d0d5abeb5d06baecef260526809936d8987b0e864a6862405f980786801f12d",
+    "releases\\all_routes_editorial_20261119_inn_numerals_candidate_v2\\verification\\staged.json": "c2d70a5a9173283cf54212a5dec34c598b425547efd8ddbec47ae6c7beeb3501",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\deck_assignment_empty_dialogue_tables_20261119_v2.json": "22947af9c54e4b1d094bba7d4c59a552bf36839bbd215a30c652b74f4e63f37a"
+  }
+}

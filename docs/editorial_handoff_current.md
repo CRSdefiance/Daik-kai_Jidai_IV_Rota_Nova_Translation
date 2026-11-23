@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-23
 
+The 43-address list is reconciled with later coverage. The registered ROM matches all 827 references in the historical bounded census. Fresh checks preserved the existing supported IDs in 73 changed argument windows and confirmed that the number-format fixes still select Power 288 and Recruit Crew 904. The 276 stored entries remain open for display paths beyond the verified scope. [Current caller inventory](editorial_bounded_shared_calls_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Seven regional fleet panels passed full glyph checks, including the Attack Town picker, the existing-contract refusal and the Syracuse rejection. Thirteen offline branch cases verify what each contract and diplomacy state selects. The shared ledger retains all eight regional prompts with individual reasons. This checkpoint recorded the 43 addresses that the later caller inventory reconciled. [Regional fleet and shared display checkpoint](editorial_regional_attack_display_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered the Reports label and verified the title Options controls. [Checkpoint](editorial_title_reports_label_registered_20261123.md)
+
+The title Options menu now says Reports, matching the confirmation and in-game label. The complete label passed ten highlighted or plain holds. Six prompt holds verified both On/Off orders and the effect of cancellation. Twenty offline cases checked preference changes and preservation of unrelated bits. The replay also restored both volume meters and returned to the title. The review retains four labels or prompts with individual reasons. Audio output and handheld testing remain unverified. [Exact review and scope](../releases/all_routes_editorial_20261123_title_reports_label_candidate/verification/registered_review.json)
+
+The sole .nds on Drive matches SHA-256 1f98a13c03188d098f177ac515a20635fc29f041d8a061328aad9de7da348dea. Cold startup, all 17 focused tests and exact clean-input reconstruction passed. Cleanup removed 3 checked redundant build paths. [Latest testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Clean-input patch](../releases/all_routes_editorial_20261123_title_reports_label_candidate/translation.xdelta) · [Cleanup receipt](../translations/editorial_checkpoints/title_reports_label_20261123/checkpoint_cleanup.json)
+
+All 3,668 COMMON entries retain their bytes and locations. The five legacy Options keys were absent from the traced title flow and remain open for separate display paths. Continue with the 276 stored shared entries and practical ordinary town and random coverage. [Shared inventory](../releases/all_routes_editorial_20261123_title_reports_label_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered clearer dialogue for the Square sample pitch and the Market recommendation. [Checkpoint](editorial_square_and_market_reward_wraps_registered_20261123.md)
 
 The Square pitch now fits on one row, and the Market recommendation puts the letter and the thank-you on separate complete rows. The source review reconciles 27 shared records and records 25 individually justified retentions. Native formatting and paired emulator fixtures verified both revised pages, five retained holds and three transition frames. Ordinary activation and handheld testing remain open for these branches. [Exact review](../releases/all_routes_editorial_20261123_square_market_reward_wraps_candidate/verification/registered_review.json)
