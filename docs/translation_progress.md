@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Accounted for **209 of 276 shared entries** by verified display path. The 33 new title and movie dispositions used current emulator playback, exact historical comparisons and an offline native branch check. **67 remain open**. [Opening and movie checkpoint](editorial_opening_and_movie_label_dispositions_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Resolved **53 more shared entries for their verified paths**. Controller replays covered the four New Game biographies and 19 Online and About Extras screens, confirming eight stored aliases. Offline execution verified 45 story labels whose associated original commands load stills by filename. **100 entries** still need their own display dispositions. Keep all 276 storage references for future direct caller evidence. The ending-credit candidate remains the current testing release. [Source, gameplay, and native checks](editorial_chooser_online_and_still_dispositions_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

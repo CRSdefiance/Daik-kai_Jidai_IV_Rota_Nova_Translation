@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified **33 more shared display paths** for title and story movie labels. The current title replay matched 173 full reference frames, and none of the five cold boots requested a pending label. The original and installed SC2 B70 branches both load the tulip field as movie artwork. **67 of the 276 entries** still need distinct dispositions. Continue with legacy dialogue, the distinct promotional copy, and the unmatched title and scene variants. The ending-credit candidate remains the current testing release. [Opening and movie checkpoint](editorial_opening_and_movie_label_dispositions_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Resolved **53 more shared entries for their verified paths**. Controller replays covered the four New Game biographies and 19 Online and About Extras screens, confirming eight stored aliases. Offline execution verified 45 story labels whose associated original commands load stills by filename. **100 entries** still need their own display dispositions. Keep all 276 storage references for future direct caller evidence. The ending-credit candidate remains the current testing release. [Source, gameplay, and native checks](editorial_chooser_online_and_still_dispositions_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
