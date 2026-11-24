@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Buy a Round in the Tavern menu and its linked Help pages. [Checkpoint](editorial_tavern_buy_a_round_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

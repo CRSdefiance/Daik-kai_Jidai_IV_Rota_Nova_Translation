@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Bound the remaining 17 argument sets in the 827-site COMMON inventory on the Tavern candidate. All 827 exclude archived IDs 284, 318 and 750–752. The possible computed display owners outside this inventory, the remaining Fleet Info inputs, and practical town and random-scene coverage stay open. [Exact call sites and offline evidence](editorial_archived_message_arguments_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Copenhagen play verified the dock prompt, the 172-gold resupply and the return to town. The replay captured Hodram's write to Copenhagen and 21 other fleet writes. The offline audit traced the six aligned docking calls and checked 192 hidden-port neighbor cases in two initialized states. The five archived COMMON display owners and remaining saved or indirect Fleet Info inputs stay in scope. [Checkpoint](editorial_copenhagen_docking_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Buy a Round in the Tavern menu and its linked Help pages. [Checkpoint](editorial_tavern_buy_a_round_registered_20261124.md)
+
+Copenhagen verified the caption, original 236-gold purchase, gossip and return to town. The three revised Help pages and three history returns passed in ordinary play. The candidate passed startup and 456 release checks. The clean-input patch and sole Drive ROM match the candidate exactly. Continue practical town and random-scene coverage, the five archived COMMON paths and the unresolved Fleet Info inputs. [Current evidence](editorial_tavern_buy_a_round_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
 
 The new line passed in ordinary play and fits three native rows. Both choices, the observed Auto Move arrival and five shared notices have exact references. Startup and 455 release checks passed. The clean-input patch and the sole Drive ROM match the candidate byte for byte. Continue practical town and random scenes, the five archived COMMON paths and unresolved Fleet Info inputs. [Current evidence](editorial_stockholm_recruiting_registered_20261124.md)

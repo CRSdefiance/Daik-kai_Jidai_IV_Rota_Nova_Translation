@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Resolved the last 17 argument ranges in the 827-site shared-message inventory. Five archived IDs remain open outside the bounded paths. [Offline evidence](editorial_archived_message_arguments_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified both Copenhagen port prompts and the 172-gold transaction in ordinary play. Recorded 22 docking writes, traced the six aligned docking calls and checked 192 hidden-port neighbor cases offline. [Checkpoint](editorial_copenhagen_docking_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Buy a Round in the Tavern menu and its linked Help pages. [Checkpoint](editorial_tavern_buy_a_round_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
