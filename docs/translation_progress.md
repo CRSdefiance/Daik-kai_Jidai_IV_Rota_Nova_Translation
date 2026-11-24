@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Accounted for all 45 changes to Fleet Info inputs after the Copenhagen save loaded. The seven previously checked town-list writers keep their bounds across the full initialized graph. [Checkpoint](editorial_fleet_postload_writes_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified three retentions during the paid Yizhou price check and the successful Nagasaki investment. Checked 292 restored fleet and company fields in two ordinary reloads and all 256 byte values at the isolated native reader. [Checkpoint](editorial_market_commitments_and_saved_fleet_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified the ordinary Nagasaki cancellation branches and four justified retentions. Focused and offline checks covered Fleet Info's largest digit width, the two special neighbor inputs and the native COMMON reader's only additional mapped call. The existing editorial credit and registered build carry forward. [Checkpoint](editorial_nagasaki_decline_and_fleet_checks_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
 
 One phrasing and wrap revision, four justified retentions and three complete Goods Info panels passed. The paired replay and 457 release checks passed, and the sole Drive ROM matches the registered candidate by SHA-256.

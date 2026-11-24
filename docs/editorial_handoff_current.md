@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Reconstructed all 146 Fleet Info inputs at Copenhagen's first Sea View hold from 51 ordinary docking and destination writes. Nagasaki's first town hold still matches all 146 saved bytes. The seven offline selector bounds now cover initialized centers 0–115. Continue the five archived message owners, direct saved inputs and authored fallback, and practical town and random scenes. [Trace and selector evidence](editorial_fleet_postload_writes_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary play verified Yizhou's paid Price Info, the complete Wheat page, and Nagasaki's 1,350-gold investment. Two current save loads bound 292 fleet and headquarters fields to their exact saved offsets. The isolated reader preserves all 256 byte values. Continue the remaining saved-field producers and post-load paths, the five archived message owners, and practical unvisited town and random scenes. [Exact gameplay and save evidence](editorial_market_commitments_and_saved_fleet_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified four dialogue retentions across Nagasaki's ordinary contract, price-chooser and investment cancellations. A focused Fleet Info replay checked all digits and return transitions. Twenty isolated checks bounded the special neighbor inputs in two initialized states. The shared-message reader census now includes Thumb BL and ARM BLX and explains the duel helper's call into the retired cache space. Continue the remaining computed archive routes, saved docking and headquarters inputs, and unvisited town and random scenes on the registered Nagasaki ROM. [Exact gameplay, fixture and offline evidence](editorial_nagasaki_decline_and_fleet_checks_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
 
 The 1,125-gold transaction, 1% market share, three Goods Info selections and return to town passed in ordinary play. The revised hold and 23 exact companion frames passed on the cumulative build. The sole Drive ROM matches the byte-exact clean-input reconstruction. Continue the five archived message display owners, the remaining Fleet Info inputs and practical unvisited town and random scenes. [Current release and evidence](editorial_nagasaki_contract_wrap_registered_20261124.md)
