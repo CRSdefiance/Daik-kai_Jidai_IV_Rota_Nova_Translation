@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Cargo Setup warning with the correct Temporary Storage location. [Checkpoint](editorial_cargo_storage_warning_registered_20261124.md)
+
+Both changed Finish holds passed in ordinary Riga play, alongside 31 matching companion screens. The sole Drive ROM matches the registry. This candidate changes only COMMON 268, so the Palace candidate's ARM9 and route-dock proof remains applicable. Continue the five archived COMMON display owners, the unresolved ordinary source of the Missionary slot, and practical town and random scenes. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/cargo_storage_warning_drive_20261124.json) · [Historical fallback audit](editorial_historical_common_fallbacks_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Palace investment greeting with an intact trading-contract phrase and the King’s revised commendation. [Checkpoint](editorial_palace_investment_wording_registered_20261124.md)
 
 Paired Palace gameplay matched 48 companion screens and the sole Drive ROM matches the registry. The route-dock proof carries forward through the identical ARM9 and the exact resident route graph. Continue the five archived COMMON display owners, the unverified ordinary producer for Missionary, and practical town and random scenes.

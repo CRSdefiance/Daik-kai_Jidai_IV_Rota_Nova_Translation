@@ -1,0 +1,702 @@
+{
+  "candidate": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_cargo_storage\\Cargo_Storage_Warning_STAGED.nds",
+  "candidate_sha256": "cfa7a32f2512dda50e1e8bf2711128979b38a68edc948243247cbb316f28c833",
+  "predecessor_sha256": "c08f62f5426381a165bcbf9d7f5df27b491632a9d0389dafb00d15a8b0dfa8f4",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "59520709af539018f44e786f8d9be2a6a4eeffbcbe0bc5666a5516b340dd4dd7",
+  "target_COMMON_sha256": "647be23466c9592a28d8919b1991dcddca4c75c8918fe9f1b16e9a051754ad33",
+  "exact_parent_reserialize": true,
+  "allocations": {
+    "268": {
+      "block": 4,
+      "start": 1311,
+      "end": 1351,
+      "before": "54686572652773207374696c6c20636172676f2061626f6172642e0a20436f6e74696e75653f0000",
+      "after": "5468657265277320636172676f20696e2073746f726167652e2046696e6973683f20202020200000",
+      "new_null_fields": 0
+    }
+  },
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_268",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_id": 268,
+      "english": "There's cargo in storage. Finish?",
+      "speaker": "Cargo Setup confirmation",
+      "context": "Finish after unloading cargo into Temporary Storage.",
+      "source_meaning": "Some cargo remains. Is it all right to continue?",
+      "clean_Japanese": "積み荷が残っていますが\nよろしいですか？",
+      "native_callers": [
+        {
+          "call": 34092768,
+          "target": 33900140,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34092752,
+          "exact_hex": "030050e30300000a080000ea430fa0e3e143ffeb1080bde818009fe5",
+          "instructions": [
+            "020836D0 cmp r0, #3",
+            "020836D4 beq #0x20836e8",
+            "020836D8 b #0x2083700",
+            "020836DC mov r0, #0x10c",
+            "020836E0 bl #0x205466c",
+            "020836E4 pop {r4, pc}",
+            "020836E8 ldr r0, [pc, #0x18]"
+          ]
+        }
+      ],
+      "arguments": [],
+      "source_reference": {
+        "block": 4,
+        "offset": 1456,
+        "copy_end": 1496,
+        "bytes": 39,
+        "record_index": 15,
+        "table_offset": 1317672,
+        "start_in_record": 1,
+        "exact_hex": "90cf82dd89d782aa8e6382c182c482a282dc82b782aa0a82e682eb82b582a282c582b782a98148"
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 1311,
+        "copy_end": 1351,
+        "bytes": 38,
+        "record_index": 24,
+        "table_offset": 1317672,
+        "start_in_record": 0,
+        "exact_hex": "54686572652773207374696c6c20636172676f2061626f6172642e0a20436f6e74696e75653f"
+      },
+      "installed_reference": {
+        "block": 4,
+        "offset": 1311,
+        "copy_end": 1351,
+        "bytes": 38,
+        "record_index": 24,
+        "table_offset": 1317672,
+        "start_in_record": 0,
+        "exact_hex": "5468657265277320636172676f20696e2073746f726167652e2046696e6973683f2020202020"
+      },
+      "decision": "revision",
+      "localization_note": "Name the visible storage row and use Finish to match the command. Keep the source's confirmation question and the existing No and Yes choices.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "cases": [
+        {
+          "lines": [
+            "There's cargo in storage. Finish?"
+          ],
+          "origins": [
+            0
+          ],
+          "formatted_hex": "5468657265277320636172676f20696e2073746f726167652e2046696e6973683f2020202020",
+          "native_ink_sha256": "2853a6983011395bd223977b31dc811b7037af80361ace724651ed3620e823f8",
+          "native_glyph_count": 29,
+          "complete_glyphs_bounds_and_words": true,
+          "pages": 1
+        }
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_riga_cargo_storage/cargo_storage_native.png",
+      "sha256": "f9cef59fec76716b4ca1fe54cec4b2fe05f362391ce4f77a872a1478535ad823"
+    }
+  ],
+  "native_pages": 1,
+  "baseline": {
+    "ordinary_gameplay": true,
+    "donor": {
+      "path": "E:/Rota Nova translations/Saves/hodram-riga-v388.dsv",
+      "sha256": "c11024266a2f389bdbcad5d93b2e6aeda6ffc8e00ff358f82dccef2d7965eeaa"
+    },
+    "evidence": [
+      {
+        "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_riga_shipyard/capture/capture_report.json",
+        "sha256": "0b00de731fed7003c98ce1d4b362dc888cbc8fc0f6f3566a126b7d8183f6ce7f"
+      },
+      {
+        "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_riga_shipyard/trace/requests.json",
+        "sha256": "0b438e1426ce1153d3a31add9f780cc52ff02688c795a372557694c98c9c006b"
+      },
+      {
+        "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_riga_shipyard/capture/navigation_command_journal.json",
+        "sha256": "c831087fc68154c7e3d649851afc4d2f02bc8a668457a5f1284ad78f286bfc8f"
+      },
+      {
+        "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_riga_shipyard/terminal.json",
+        "sha256": "a32a893b67925dc977b213b570d23b536fc164d18091f75d97273ed4088f0e21"
+      }
+    ],
+    "retained": [
+      {
+        "id": "COMMON_MESSAGE_657",
+        "message_ID": 657,
+        "speaker": "Shopkeeper",
+        "context": "Riga Square retail shops",
+        "clean_Japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+        "english": "You're a sailor, aren't you?\n  Try the Market for bulk trade.",
+        "source_reference": {
+          "block": 8,
+          "offset": 304,
+          "copy_end": 368,
+          "bytes": 64,
+          "record_index": 8,
+          "table_offset": 1318450,
+          "start_in_record": 1,
+          "exact_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6"
+        },
+        "current_reference": {
+          "block": 7,
+          "offset": 5213,
+          "copy_end": 5276,
+          "bytes": 62,
+          "record_index": 353,
+          "table_offset": 1318450,
+          "start_in_record": 0,
+          "exact_hex": "20596f752772652061207361696c6f722c206172656e277420796f753f0a202054727920746865204d61726b657420666f722062756c6b2074726164652e"
+        },
+        "installed_reference": {
+          "block": 7,
+          "offset": 5213,
+          "copy_end": 5276,
+          "bytes": 62,
+          "record_index": 353,
+          "table_offset": 1318450,
+          "start_in_record": 0,
+          "exact_hex": "20596f752772652061207361696c6f722c206172656e277420796f753f0a202054727920746865204d61726b657420666f722062756c6b2074726164652e"
+        },
+        "observed": [
+          {
+            "capture": {
+              "frame": 5200,
+              "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_005200_navigation.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "b7fdfe796e9e86a3c0dba0d01643ddb0bec3d4d8da8be37692ba0b4ef3acaec6",
+              "framebuffer_sha256": "9b9b873d192a4f51c596c66799cb1aa145dc147d01af8c73f48e41d9595ec8f9"
+            },
+            "actual_lines": [
+              "You're a sailor, aren't you?",
+              "Try the Market for bulk trade."
+            ],
+            "requests": [
+              {
+                "frame": 4812,
+                "PC": 33903244,
+                "message_ID": 657,
+                "caller_LR": 33898488
+              },
+              {
+                "frame": 4812,
+                "PC": 33895668,
+                "message_ID": 657,
+                "caller_LR": 33898488
+              }
+            ],
+            "body_ink_pixels": 564,
+            "nameplate": [
+              135,
+              [
+                16,
+                277,
+                76,
+                288
+              ]
+            ]
+          }
+        ],
+        "decision": "retention",
+        "localization_note": "The question keeps the shopkeeper's casual recognition. The next sentence directs bulk traders to the Market.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "COMMON_MESSAGE_656",
+        "message_ID": 656,
+        "speaker": "Shopkeeper",
+        "context": "Riga Square retail shops",
+        "clean_Japanese": "うちは小売り専門ですよ",
+        "english": "We only sell retail.",
+        "source_reference": {
+          "block": 8,
+          "offset": 280,
+          "copy_end": 304,
+          "bytes": 22,
+          "record_index": 7,
+          "table_offset": 1318448,
+          "start_in_record": 1,
+          "exact_hex": "82a482bf82cd8fac948482e890ea96e582c582b782e6"
+        },
+        "current_reference": {
+          "block": 7,
+          "offset": 5190,
+          "copy_end": 5213,
+          "bytes": 22,
+          "record_index": 352,
+          "table_offset": 1318448,
+          "start_in_record": 0,
+          "exact_hex": "205765206f6e6c792073656c6c2072657461696c2e20"
+        },
+        "installed_reference": {
+          "block": 7,
+          "offset": 5190,
+          "copy_end": 5213,
+          "bytes": 22,
+          "record_index": 352,
+          "table_offset": 1318448,
+          "start_in_record": 0,
+          "exact_hex": "205765206f6e6c792073656c6c2072657461696c2e20"
+        },
+        "observed": [
+          {
+            "capture": {
+              "frame": 6400,
+              "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_006400_navigation.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "242a6e1d0fe082d8c6e843901d6262cec21acebcf585d8fe41c44d57974093c8",
+              "framebuffer_sha256": "774f2863b269b0613b2b664982453bce80634ac7dcc36bfd5b99e4a65d44354c"
+            },
+            "actual_lines": [
+              "We only sell retail."
+            ],
+            "requests": [
+              {
+                "frame": 6011,
+                "PC": 33903244,
+                "message_ID": 656,
+                "caller_LR": 33898488
+              },
+              {
+                "frame": 6011,
+                "PC": 33895668,
+                "message_ID": 656,
+                "caller_LR": 33898488
+              }
+            ],
+            "body_ink_pixels": 187,
+            "nameplate": [
+              135,
+              [
+                16,
+                277,
+                76,
+                288
+              ]
+            ]
+          }
+        ],
+        "decision": "retention",
+        "localization_note": "The brief answer explains the Square shop's retail-only policy in ordinary terms.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "COMMON_MESSAGE_691",
+        "message_ID": 691,
+        "speaker": "Shopkeeper",
+        "context": "Riga Square retail shops",
+        "clean_Japanese": "スウェーデンというのはつい最近\nデンマークやノルウェーとの\nカルマル同盟から独立したんですよ",
+        "english": "Sweden only recently gained independence from the Kalmar Union with Denmark and Norway.",
+        "source_reference": {
+          "block": 8,
+          "offset": 2484,
+          "copy_end": 2576,
+          "bytes": 90,
+          "record_index": 38,
+          "table_offset": 1318518,
+          "start_in_record": 0,
+          "exact_hex": "835883458346815b8366839382c682a282a482cc82cd82c282a28dc58bdf0a83668393837d815b834e82e2836d838b83458346815b82c682cc0a834a838b837d838b93af96bf82a982e793c697a782b582bd82f182c582b782e6"
+        },
+        "current_reference": {
+          "block": 8,
+          "offset": 2162,
+          "copy_end": 2251,
+          "bytes": 88,
+          "record_index": 119,
+          "table_offset": 1318518,
+          "start_in_record": 0,
+          "exact_hex": "2053776564656e206f6e6c7920726563656e746c79206761696e656420696e646570656e64656e63652066726f6d20746865204b616c6d617220556e696f6e20776974682044656e6d61726b20616e64204e6f727761792e"
+        },
+        "installed_reference": {
+          "block": 8,
+          "offset": 2162,
+          "copy_end": 2251,
+          "bytes": 88,
+          "record_index": 119,
+          "table_offset": 1318518,
+          "start_in_record": 0,
+          "exact_hex": "2053776564656e206f6e6c7920726563656e746c79206761696e656420696e646570656e64656e63652066726f6d20746865204b616c6d617220556e696f6e20776974682044656e6d61726b20616e64204e6f727761792e"
+        },
+        "observed": [
+          {
+            "capture": {
+              "frame": 7200,
+              "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_007200_navigation.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "8f67c235a1e4a0cd717b8924f6c912086ba030bdffbee986c796ee2b21023c1a",
+              "framebuffer_sha256": "0b0c018cf6b63801f46c4fde5687f7157c257ad9f9363c49725455fbdba0e3eb"
+            },
+            "actual_lines": [
+              "Sweden only recently gained",
+              "independence from the Kalmar Union",
+              "with Denmark and Norway."
+            ],
+            "requests": [
+              {
+                "frame": 6810,
+                "PC": 33903244,
+                "message_ID": 691,
+                "caller_LR": 33898488
+              },
+              {
+                "frame": 6810,
+                "PC": 33895668,
+                "message_ID": 691,
+                "caller_LR": 33898488
+              }
+            ],
+            "body_ink_pixels": 973,
+            "nameplate": [
+              135,
+              [
+                16,
+                277,
+                76,
+                288
+              ]
+            ]
+          },
+          {
+            "capture": {
+              "frame": 9600,
+              "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_009600_navigation.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "8f67c235a1e4a0cd717b8924f6c912086ba030bdffbee986c796ee2b21023c1a",
+              "framebuffer_sha256": "0b0c018cf6b63801f46c4fde5687f7157c257ad9f9363c49725455fbdba0e3eb"
+            },
+            "actual_lines": [
+              "Sweden only recently gained",
+              "independence from the Kalmar Union",
+              "with Denmark and Norway."
+            ],
+            "requests": [
+              {
+                "frame": 9211,
+                "PC": 33903244,
+                "message_ID": 691,
+                "caller_LR": 33898488
+              },
+              {
+                "frame": 9211,
+                "PC": 33895668,
+                "message_ID": 691,
+                "caller_LR": 33898488
+              }
+            ],
+            "body_ink_pixels": 973,
+            "nameplate": [
+              135,
+              [
+                16,
+                277,
+                76,
+                288
+              ]
+            ]
+          }
+        ],
+        "decision": "retention",
+        "localization_note": "The rumor preserves the recency of Sweden's independence and names the Union and both other countries.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "COMMON_MESSAGE_815",
+        "message_ID": 815,
+        "speaker": "Port Worker",
+        "context": "Riga Port Cargo Setup after confirming Finish",
+        "clean_Japanese": "あんた、積み荷は何もないだろ",
+        "english": "You have no cargo.",
+        "source_reference": {
+          "block": 10,
+          "offset": 2460,
+          "copy_end": 2488,
+          "bytes": 28,
+          "record_index": 36,
+          "table_offset": 1318766,
+          "start_in_record": 65,
+          "exact_hex": "82a082f182bd814190cf82dd89d782cd89bd82e082c882a282be82eb"
+        },
+        "current_reference": {
+          "block": 10,
+          "offset": 2912,
+          "copy_end": 2933,
+          "bytes": 20,
+          "record_index": 122,
+          "table_offset": 1318766,
+          "start_in_record": 0,
+          "exact_hex": "2020596f752068617665206e6f20636172676f2e"
+        },
+        "installed_reference": {
+          "block": 10,
+          "offset": 2912,
+          "copy_end": 2933,
+          "bytes": 20,
+          "record_index": 122,
+          "table_offset": 1318766,
+          "start_in_record": 0,
+          "exact_hex": "2020596f752068617665206e6f20636172676f2e"
+        },
+        "observed": [
+          {
+            "capture": {
+              "frame": 16000,
+              "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_016000_navigation.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "aa10eda99b334b668ec687feb7372c18398cfcf5a348e1aba4ee0ff3adf98d00",
+              "framebuffer_sha256": "0447a4b5af93d6afcdb2c929f51587d8a8ba5098a002b613e910384690f6d268"
+            },
+            "actual_lines": [
+              "You have no cargo."
+            ],
+            "requests": [
+              {
+                "frame": 15609,
+                "PC": 33903244,
+                "message_ID": 815,
+                "caller_LR": 33898488
+              },
+              {
+                "frame": 15609,
+                "PC": 33895668,
+                "message_ID": 815,
+                "caller_LR": 33898488
+              }
+            ],
+            "body_ink_pixels": 179,
+            "nameplate": [
+              127,
+              [
+                16,
+                277,
+                82,
+                288
+              ]
+            ]
+          }
+        ],
+        "decision": "retention",
+        "localization_note": "The worker tells the player plainly why Cargo Setup cannot reopen once the two lots have been left behind.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      }
+    ],
+    "warning": [
+      {
+        "capture": {
+          "frame": 13600,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_013600_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "bd0473a3327df0ca86591f8690a2f8f6141c62edfaf7ef304ef8dd7291e8dad0",
+          "framebuffer_sha256": "52bb67d122d5cd4dc7d16fa3e5b1c0107d5b6383ec3e67c6e90befdbf4db7979"
+        },
+        "actual_lines": [
+          "There's still cargo aboard.",
+          "Continue?"
+        ],
+        "requests": [
+          {
+            "frame": 13209,
+            "PC": 33903244,
+            "message_ID": 268,
+            "caller_LR": 33900160
+          },
+          {
+            "frame": 13209,
+            "PC": 33895668,
+            "message_ID": 268,
+            "caller_LR": 33900160
+          }
+        ],
+        "body_ink_pixels": 374,
+        "choices": [
+          {
+            "text": "No",
+            "bounds": [
+              134,
+              363,
+              146,
+              374
+            ],
+            "ink_pixels": 35,
+            "color": [
+              213,
+              214,
+              213
+            ],
+            "all_ink_and_blank_cells_exact": true
+          },
+          {
+            "text": "Yes",
+            "bounds": [
+              202,
+              363,
+              220,
+              374
+            ],
+            "ink_pixels": 37,
+            "color": [
+              213,
+              214,
+              213
+            ],
+            "all_ink_and_blank_cells_exact": true
+          }
+        ]
+      },
+      {
+        "capture": {
+          "frame": 14400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_riga_shipyard\\capture\\frame_014400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b30c7515a48c63bab563f76a970ea80a79258bc68875192ba2c24f22df7c56c8",
+          "framebuffer_sha256": "6c887b5b8b558a3f6624bec5ae58c61d4992cff1cc02c35b26e3f9bfc28b5d74"
+        },
+        "actual_lines": [
+          "There's still cargo aboard.",
+          "Continue?"
+        ],
+        "requests": [
+          {
+            "frame": 14011,
+            "PC": 33903244,
+            "message_ID": 268,
+            "caller_LR": 33900160
+          },
+          {
+            "frame": 14011,
+            "PC": 33895668,
+            "message_ID": 268,
+            "caller_LR": 33900160
+          }
+        ],
+        "body_ink_pixels": 374,
+        "choices": [
+          {
+            "text": "No",
+            "bounds": [
+              134,
+              363,
+              146,
+              374
+            ],
+            "ink_pixels": 35,
+            "color": [
+              213,
+              214,
+              213
+            ],
+            "all_ink_and_blank_cells_exact": true
+          },
+          {
+            "text": "Yes",
+            "bounds": [
+              202,
+              363,
+              220,
+              374
+            ],
+            "ink_pixels": 37,
+            "color": [
+              213,
+              214,
+              213
+            ],
+            "all_ink_and_blank_cells_exact": true
+          }
+        ]
+      }
+    ],
+    "storage": {
+      "before_unload": 12800,
+      "after_unload": 13200,
+      "after_No": 14000,
+      "Yes_returned_to_port": 14800,
+      "reopen_without_cargo": 16000,
+      "matching_unloaded_and_No_region": [
+        0,
+        279,
+        62,
+        309
+      ],
+      "temporary_storage_label_sha256": "f64db2e3236832b6f67a57dcc555d5fa75a80f1f369f9a91bbd34b46b2a7808e",
+      "identical_storage_mask_sha256": "7738f07b22da9dfa5065870adf0eded82d483eea6496e8a0c582bfc384f791f2"
+    }
+  },
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "visual_review_complete": false,
+  "paired_gameplay_complete": false,
+  "registered": false
+}

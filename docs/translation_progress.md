@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Cargo Setup warning with the correct Temporary Storage location. [Checkpoint](editorial_cargo_storage_warning_registered_20261124.md)
+
+One wording revision and four justified retentions. The one-page native modal, both ordinary in-game holds, exact clean-input reconstruction, startup and Drive readback passed. The historical fallback audit traced seven stored templates and left five archived display owners open. [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/cargo_storage_warning_cleanup_20261124.json) · [Historical audit](editorial_historical_common_fallbacks_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Palace investment greeting with an intact trading-contract phrase and the King’s revised commendation. [Checkpoint](editorial_palace_investment_wording_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
