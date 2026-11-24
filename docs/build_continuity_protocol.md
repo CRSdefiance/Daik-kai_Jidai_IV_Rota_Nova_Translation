@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered Missionary for the conditional Fleet Info destination. [Checkpoint](editorial_missionary_destination_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Marie's revised two-direction relic tip after ordinary London Tavern replays. [Checkpoint](editorial_london_relic_tip_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

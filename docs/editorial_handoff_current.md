@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-23
 
+Ordinary Lisbon play verified a 211-gold sale, both confirmation choices, Back, and the transition to Julio's Deck lesson. The Market sequence requests COMMON 14 and 9, with both lines retained. A current offline audit reconciled 42 earlier incoming references, whose finite results exclude the five archived messages. Continue practical town and random scenes and remaining computed display ownership. [Current sale and selector evidence](editorial_market_sale_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Missionary for the conditional Fleet Info destination. [Checkpoint](editorial_missionary_destination_registered_20261123.md)
+
+The focused emulator replay reproduced the Japanese caption and verified the complete English label after changing one destination byte in the prepared test fleet. The build passed 450 release checks and the sole Drive ROM matches. All 114 ordinary town substitutions and the no-target state passed offline. The unresolved writer paths still concern ordinary reachability and any separate consumers. Continue the five archived COMMON leads and practical town and random scene coverage. [Current verification](editorial_missionary_destination_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Marie's revised two-direction relic tip after ordinary London Tavern replays. [Checkpoint](editorial_london_relic_tip_registered_20261123.md)
+
+The London candidate passed 449 release checks, exact clean-input reconstruction and streamed Drive readback. The three observed Blue Oak Shield replies keep both direction phrases intact. Continue practical town and random encounters and the remaining Fleet Info and archived-message leads. The earlier wrap comparison and all accepted story, Help and shared-display evidence carry forward. [Latest build and verification](editorial_london_relic_tip_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Six ordinary London Tavern orders on the Genoa candidate verified 43 complete dialogue holds and eleven wording retentions. Marie's Blue Oak Shield directions expose a split in **far west** and need a source-based wording update. The first draft fits the observed reply in two native rows. The wider substitution review and integration remain open. Continue the same batch, the remaining indirect display leads, and practical town and random coverage. [Current London evidence](editorial_london_tavern_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 The Genoa acceptance audit verified all 416 priority decisions and all 48 recruitment speeches across the three existing ordinary replays. Offline Fleet Info checks traced nine calls that reuse the current destination and two that use the shipped fleet table. Continue the fifteen open writer calls, the archived COMMON callers, and practical town and random encounters on the registered Genoa candidate. [Current evidence](editorial_genoa_acceptance_and_fleet_sources_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

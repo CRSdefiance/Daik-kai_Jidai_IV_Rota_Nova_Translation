@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified an ordinary Lisbon sale, its decline and payment, the discard of a later purchase, and Julio's Deck lesson opening. Two Market lines and the lesson opening retain their wording. The current offline audit reconciled the dependencies of 42 earlier aligned shared references. [Current evidence](editorial_market_sale_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Missionary for the conditional Fleet Info destination. [Checkpoint](editorial_missionary_destination_registered_20261123.md)
+
+Three focused panel states verify **To: Missionary**, including Report and the return to Fleet Info. Ordinary assignment of that destination remains unverified. The build passed 450 checks, exact clean-input reconstruction and full Drive readback. The ledger retains 27,700 credits.
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Marie's revised two-direction relic tip after ordinary London Tavern replays. [Checkpoint](editorial_london_relic_tip_registered_20261123.md)
+
+Three revised tip panels and 48 exact control frames passed. All 7,848 offline substitution cases fit the original page, with 1,288 fewer breaks inside direction phrases. The rebuilt patch and sole Drive ROM match the registered candidate. The ledger retains 27,700 editorial credits.
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified 43 dialogue holds across six ordinary London Tavern orders, including Marie's two relic rumors and casual replies. Eleven texts retain their wording. The Blue Oak Shield directions need a wording and wrap correction. [Gameplay and draft preview](editorial_london_tavern_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Reconciled the three latest release deltas against all 416 priority decisions, the Help archive, shared text and ASCII right bounds. Offline checks scoped eleven more Fleet Info destination-writer calls. The ledger retains 27,700 editorial credits. [Acceptance and Fleet Info evidence](editorial_genoa_acceptance_and_fleet_sources_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
