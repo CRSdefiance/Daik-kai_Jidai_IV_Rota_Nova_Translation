@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Palace investment greeting with an intact trading-contract phrase and the King’s revised commendation. [Checkpoint](editorial_palace_investment_wording_registered_20261124.md)
+
+Paired Palace gameplay matched 48 companion screens and the sole Drive ROM matches the registry. The route-dock proof carries forward through the identical ARM9 and the exact resident route graph. Continue the five archived COMMON display owners, the unverified ordinary producer for Missionary, and practical town and random scenes.
+
+# Current editorial checkpoint - 2026-11-24
+
+The alternate route approach also excludes Missionary for the initialized 177-edge graph. All 354 directed endpoints resolved to ordinary towns, and all 1,064 supplied native cases passed. Continue the remaining producers and archived dialogue paths. [Route-dock proof](editorial_ordinary_route_dock_gate_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Riga Palace and Inn play verified five panels and both payments. COMMON 1160 has a source-bound, visually checked native proposal. Fix the separate COMMON 1151 “trading contract” break before paired Palace gameplay. The ordinary Copenhagen trace now starts at the nearby-port selector, which excludes slot 114. Continue investigating other Missionary producers, the five archived COMMON display owners, and practical town and random scenes. [Checkpoint](editorial_riga_palace_and_copenhagen_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
 
 The paired Riga replay verified the revised 49-berth question and both warnings, with 29 companion frames matching. The sole Drive ROM matches the registry. Continue practical town and random scenes, the five archived COMMON display owners, and the ordinary Missionary destination producer.

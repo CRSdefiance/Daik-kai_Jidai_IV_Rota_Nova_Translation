@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Palace investment greeting with an intact trading-contract phrase and the King’s revised commendation. [Checkpoint](editorial_palace_investment_wording_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

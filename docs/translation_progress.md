@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Palace investment greeting with an intact trading-contract phrase and the King’s revised commendation. [Checkpoint](editorial_palace_investment_wording_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+The alternate route approach also excludes Missionary for the initialized 177-edge graph. All 354 directed endpoints resolved to ordinary towns, and all 1,064 supplied native cases passed. Continue the remaining producers and archived dialogue paths. [Route-dock proof](editorial_ordinary_route_dock_gate_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reviewed five Riga Palace and Inn panels. Four wordings are retained and the King’s revised praise passed offline checks. The alternate Palace greeting still has a split phrase. An ordinary Copenhagen replay traced the full port selection and docking chain for slot 9. [Checkpoint](editorial_riga_palace_and_copenhagen_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
