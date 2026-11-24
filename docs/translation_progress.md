@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified the Market bargaining request, concession and return in a focused replay. The original game charged 405 gold after a 418-gold quote, and all three dialogue panels passed complete glyph checks. The registered Shortfall candidate and existing editorial credits carry forward. [Market concession evidence](editorial_market_purser_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 The Istanbul replay closes the naturally triggered Supply Ratio check. Normal sailing produced the supply shortage, and regular Port controls verified the full English prompts, both ratio exits and payment. This adds gameplay evidence to the registered Shortfall build and preserves the 27,700 editorial credits. [Exact states and review](editorial_ordinary_supply_mix_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

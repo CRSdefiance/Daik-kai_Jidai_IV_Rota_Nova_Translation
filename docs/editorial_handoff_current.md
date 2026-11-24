@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Verified the original Purser concession on the registered Shortfall candidate in a focused Lisbon replay. Julio’s two panels and the trader’s response retain their wording, and the native purchase settles at 405 gold after a 418-gold quote. This path selects COMMON 8, 15, 24 and 10. Keep the archived Market, fleet-debt and exhibition direct callers open and continue practical unvisited town and random scenes. [Exact Market evidence](editorial_market_purser_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Ordinary sailing from Istanbul used supplies and reached the Supply Ratio panel on return. Complete glyphs, both directions, cancellation, application and the 52-gold refill passed. The existing Shortfall candidate and credits carry forward. Continue with the remaining indirect display-call leads, including the archived fleet-debt, exhibition and Market messages, and practical unvisited town and random scenes. Keep the separate artwork and older-record technical follow-up. [Ordinary Supply Ratio evidence](editorial_ordinary_supply_mix_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
