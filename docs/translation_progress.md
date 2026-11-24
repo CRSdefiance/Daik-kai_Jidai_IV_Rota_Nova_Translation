@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Syracuse gameplay on the registered Maria ROM verified empty-deal Finish, the single-lot sale, and both purchase choices. Eight retained records passed complete body and nameplate checks across 13 holds. The two most recent release inverses also carry forward the 50 story wrap dispositions. Continue practical unvisited town and random scenes, archived COMMON display ownership and the ordinary Missionary input. [Syracuse review](editorial_syracuse_local_purchase_20261124.md) and [Maria acceptance audit](editorial_acceptance_after_maria_capture_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified both Quit Game outcomes on Maria's current testing ROM and retained the complete confirmation. All 771 logged COMMON requests across the 83 included captures match their prior bounded callers. The five archived IDs remain unobserved. [Runtime evidence and exact review](editorial_archived_common_observed_callers_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
