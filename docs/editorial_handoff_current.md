@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Valencia play verified defense investment cancellation and payment, one- and ten-night lodging, Manuel's buy-a-round estimate, and the Black Rapier rumor. The Market still required a contract after the 1,450-gold defense payment. Seventeen lines and the Governor title retain their wording across 20 dialogue holds. Continue practical shared encounters, the five archived COMMON display owners, and the open ordinary Missionary destination input. [Valencia gameplay checkpoint](editorial_valencia_government_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Athens play now verifies the revised Palace substitution at three holds with 15 companion frames matching. Hodram cancelled once, paid 1,213 gold for a contract, then sold two Iron Ore and bought Artwork. Trade reopened with 6,657 gold and Artwork aboard. Seven lines and the Local Lord title retain their wording. Continue practical town and random encounters, the five archived COMMON display owners and the ordinary Missionary destination. [Athens gameplay checkpoint](editorial_athens_palace_contract_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Ceuta Market refusal with the complete return instruction. [Checkpoint](editorial_ceuta_contract_refusal_registered_20261124.md)
+
+Ordinary Ceuta play verified 21 dialogue holds across five facilities. Sixteen texts retain their wording. Both facility substitutions passed native checks, and the revised Governor’s Office reply passed a paired ordinary replay with six matching companion screens. The sole Drive ROM matches the registered build. Continue the five archived COMMON display owners, the ordinary Missionary destination and practical town and random encounters. [Exact ordinary and offline evidence](editorial_ceuta_contract_refusal_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Current ordinary Copenhagen gameplay binds four active scene-request passes to slot 9. The newly checked replacement path has three aligned callers. Its type-1 caller copies an existing dock and the other two supply fleet requests. A separate 275-case offline test confirms the dispatcher preserves supplied values, including 114. Continue indirect Missionary sources, the five archived COMMON display owners, and practical town and random encounters. [Copenhagen request checkpoint](editorial_pending_dock_scene_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified Julio’s Lisbon extra-stock advice on the registered build with a bounded Finance 160 fixture and the ordinary Finance 115 replay as a control. The full nameplate and wording pass. A regular 577-gold Salt purchase stages identically, Back preserves 26,995 gold, and reopening repeats the advice. A purchase beyond the regular quota remains unvisited. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination. [Lisbon extra-stock advice](editorial_lisbon_extra_stock_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Lisbon play verified a 27,000-gold investment, the 1,144-gold Salt refusal at 400 gold, the complete red negative total, and exact restoration of both the pending and cleared Trade screens. Three Trader lines retain their wording. The extra-stock offer is a distinct unvisited Market path. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination. [Lisbon investment and refusal](editorial_lisbon_market_low_funds_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Valencia gameplay verified 20 dialogue holds. Seventeen lines and the Governor title retain their wording. The 1,450-gold defense investment, both lodging paths, the 218-gold tavern round, the treasure rumor, and the subsequent Market refusal passed. [Valencia gameplay and exact references](editorial_valencia_government_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified the Palace version of the registered Market refusal in ordinary Athens play. The contract cancellation, the 1,213-gold payment, both mixed-deal answers and the settled 6,657-gold balance passed. Seven lines retain their wording. [Athens Palace and Market](editorial_athens_palace_contract_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Ceuta Market refusal with the complete return instruction. [Checkpoint](editorial_ceuta_contract_refusal_registered_20261124.md)
+
+One wording and wrap revision, 16 justified retentions, 21 ordinary dialogue holds and six exact companion screens. Both facility substitutions fit on two rows. The 479 registered checks, 17 focused tests, independent startup, exact clean-input patch and sole Drive readback passed. [Ceuta release and gameplay](editorial_ceuta_contract_refusal_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Copenhagen gameplay on Claudio matched six prior frames. Four active scene requests kept port 9. The source comparison identifies three aligned replacement callers, and 275 offline cases verify the request dispatcher’s type and value handling. The first ordinary source of Fleet Info slot 114 is still open. [Copenhagen request evidence](editorial_pending_dock_scene_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+One justified retention for Julio’s Lisbon extra-stock advice after checking the complete two-line body, nameplate, dismissal and repeat entry. The focused Finance 160 fixture leaves a regular 577-gold Salt purchase unchanged from ordinary gameplay. Back preserves 26,995 gold. The proof covers the advice and normal-price transition. [Focused and ordinary comparison](editorial_lisbon_extra_stock_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Lisbon gameplay verified the Market’s low-funds Finish warning and signed total. After investing 27,000 gold, Rafael kept his 400-gold balance when the Trader refused a 1,144-gold Salt deal. Dismissal kept the pending deal, and Back cleared it. Three Trader records retain their wording with the complete native body and nameplate evidence. [Lisbon gameplay](editorial_lisbon_market_low_funds_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

@@ -1,0 +1,11 @@
+# Ceuta Market refusal and town dialogue
+
+The Trader now says **“Sorry. Once you sign a contract at the Governor’s Office, come back.”** Both the Governor’s Office and Palace substitutions fit on two lines. The full facility names and the instruction to return remain intact. Ordinary paired play verified the revised page and complete Trader nameplate, with all six surrounding screens matching. [Exact source and installed text](../releases/all_routes_editorial_20261124_ceuta_contract_refusal_candidate/verification/registered_review.json) · [Paired gameplay](../releases/all_routes_editorial_20261124_ceuta_contract_refusal_candidate/verification/ceuta_contract_refusal_paired_20261124.png)
+
+The ordinary Ceuta visit verified 21 held panels across the Market, Tavern, Inn, Governor’s Office and Square. Sixteen other texts retain their wording, including the Madeira tip, the Black Rapier rumor and the Shopkeeper’s account of Admiral Albuquerque’s ancestor. The recorded visit includes the 5-gold drink, the 183-gold round and the 1-gold overnight stay. The Guard refused a trade contract because the city’s two shares already total 100 percent. [Ordinary gameplay and individual decisions](../translations/editorial_checkpoints/shared_display_20261123/ceuta_town_current_20261124.json)
+
+The cumulative candidate passed independent startup, 479 registered checks, 17 focused tests and byte-for-byte reconstruction from the clean input. [Testing package](../releases/all_routes_editorial_20261124_ceuta_contract_refusal_candidate/README.md)
+
+The sole Drive ROM matches the registered candidate by streamed SHA-256. Cleanup removed three byte-identical replay saves and consolidated the exact patch reconstruction while retaining both verified ROM paths. [Latest Build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/ceuta_contract_refusal_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/ceuta_contract_refusal_cleanup_20261124.json)
+
+The later Athens replay verified the complete Palace substitution in three ordinary gameplay holds and followed Hodram through the contract and purchase. [Athens Palace and Market](editorial_athens_palace_contract_current_20261124.md)

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Ceuta Market refusal with the complete return instruction. [Checkpoint](editorial_ceuta_contract_refusal_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Claudio's opening reflow with his full phrase intact. [Checkpoint](editorial_claudio_opening_wrap_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
