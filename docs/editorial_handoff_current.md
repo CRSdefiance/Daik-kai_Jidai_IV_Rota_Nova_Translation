@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Traced Fleet Info's two headquarters-based destination writers to the stock company catalogue. All 20 normal startup headquarters match the clean source. The two no-headquarters fallbacks exclude slot 114 across all initialized docking slots in the focused tests. Continue the remaining runtime ownership questions, the five archived COMMON display leads, and practical unvisited town and random scenes on the registered Guild candidate. [Exact evidence and scope](editorial_fleet_headquarters_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
 
 Seoul verified both answers to the sale offer and the original payment and return. The three other revised replies passed offline native checks. The sole Drive ROM matches the exact registered candidate. Continue practical unvisited town or random scenes and the five archived COMMON display paths. Keep the remaining Fleet Info runtime producer dispositions and the final acceptance reconciliation in scope.

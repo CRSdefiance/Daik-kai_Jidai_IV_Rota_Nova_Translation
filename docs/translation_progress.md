@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Pushed the London and Seoul Guild fixes and both clean-input patches, checked all 30 declared package hashes, and passed 17 focused regressions. The next offline Fleet Info check verified the 20 company headquarters rows and 742 writer cases on the active Guild candidate. [Fleet Info findings](editorial_fleet_headquarters_20261124.md) · [GitHub checkpoint](https://github.com/CRSdefiance/Daik-kai_Jidai_IV_Rota_Nova_Translation/commit/c33aa414a2abe13419aa643961b2b6a3dbb63ec2)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
