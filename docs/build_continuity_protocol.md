@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered regular fee digits in the Market Info map quote. [Checkpoint](editorial_price_info_digits_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

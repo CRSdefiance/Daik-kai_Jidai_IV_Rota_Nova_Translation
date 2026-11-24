@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
+
+The paired Riga replay verified the revised 49-berth question and both warnings, with 29 companion frames matching. The sole Drive ROM matches the registry. Continue practical town and random scenes, the five archived COMMON display owners, and the ordinary Missionary destination producer.
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified 14 Riga Tavern and recruitment records across 17 ordinary gameplay holds. Continue the five repetitive spare-berth questions and both unassigned-sailor numeral callers from the verified replay. The five archived COMMON display owners and ordinary Missionary destination producer remain open. [Riga checkpoint](editorial_riga_tavern_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

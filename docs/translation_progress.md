@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered more natural recruitment questions and regular digits in the crew assignment warnings. [Checkpoint](editorial_riga_recruitment_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified Riga’s barkeep tip, both round choices, the patron rumor and repeat crew recruitment. Twelve distinct records retain their wording. Five related spare-berth questions and two unassigned-sailor numeral callers are queued for correction. [Riga checkpoint](editorial_riga_tavern_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
