@@ -1,0 +1,9 @@
+# Claudio's opening reflow
+
+Claudio's “at his side” now stays together in Rafael's opening. The original wording, portrait, speaker control, and captain-name substitution carry through. The default and one- and 16-letter variants pass the original renderer on one page. Ordinary paired New Game verified the complete revised body and Claudio's nameplate, with ten companion frames matching. [Exact review](../releases/all_routes_editorial_20261124_claudio_opening_wrap_candidate/verification/registered_review.json) · [Ordinary before and after](../releases/all_routes_editorial_20261124_claudio_opening_wrap_candidate/verification/claudio_opening_wrap_paired_20261124.png)
+
+New Game also traced 234 writes across the 63 actual fleet and 20 company objects. All 146 dock, destination and headquarters fields reconcile at eight snapshots. No write supplied slot 114. The three resident COMMON function-pointer words are already known, and no request used the five archived keys. The ordinary Missionary producer and those display owners remain open. [Exact seeds, writes, and source references](../translations/editorial_checkpoints/shared_display_20261123/rafael_new_game_fleet_and_wrap_20261124.json)
+
+The testing build passed 478 release checks, independent startup, 17 focused tests and byte-for-byte clean-input patch reconstruction. [Testing package](../releases/all_routes_editorial_20261124_claudio_opening_wrap_candidate/README.md)
+
+The Drive folder contains one Nintendo DS ROM. Its streamed SHA-256 matches the registered candidate and the local package passed all 17 file checksums. Cleanup recovered 94,607,192 bytes of separate storage across 21 byte-identical artifacts while preserving their paths. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/claudio_opening_wrap_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/claudio_opening_wrap_cleanup_20261124.json)

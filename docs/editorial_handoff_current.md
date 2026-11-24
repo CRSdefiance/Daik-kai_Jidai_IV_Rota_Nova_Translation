@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Native direct Help coverage now binds 329 view tables and all 20 distinct getters in that inventory. The 39 bounded topics are all original articles. The unlinked Military Investment duplicate has its independently verified display in continuation 204 and is outside the inventoried direct paths. Continue the five archived COMMON display owners, the ordinary Missionary destination and practical town and random encounters. [Help and Lisbon checkpoint](editorial_help_navigation_and_lisbon_salt_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reconciled all 202 original Help articles, 13 linked continuations and all 370 original links to the Claudio candidate. Two extra slots are the blank history sentinel and an unlinked Military Investment duplicate whose source instruction displays in the active continuation. Ordinary Lisbon play verified both Salt purchase choices, the 577-gold settlement, direct Trade Help, and the exact return. Continue the five archived COMMON display owners, other direct Help inputs, the ordinary Missionary destination and practical town and random encounters. [Help and Lisbon checkpoint](editorial_help_navigation_and_lisbon_salt_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Claudio's opening reflow with his full phrase intact. [Checkpoint](editorial_claudio_opening_wrap_registered_20261124.md)
+
+The revised phrase passed one- and 16-letter native name checks and a paired ordinary New Game. The registered clean-input patch and sole Drive ROM match byte for byte. The new-game trace verifies all 146 relevant fleet and company fields and confirms the fleet array holds 63 objects. Continue the five archived display owners, other Missionary destination inputs and practical town and random encounters. [Exact New Game evidence](../translations/editorial_checkpoints/shared_display_20261123/rafael_new_game_fleet_and_wrap_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Athens play verified Trade without a contract, cancelling and paying a 1,426-gold investment, and the unchanged contract requirement after payment. Four lines retain their wording across seven verified holds. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Athens Market evidence](editorial_athens_active_market_trends_20261124.md#market-trade-and-investment-without-a-contract)
 
 # Current editorial checkpoint - 2026-11-24

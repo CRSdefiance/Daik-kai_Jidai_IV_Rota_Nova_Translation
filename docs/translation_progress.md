@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Direct Help dispatched 39 original topic IDs across 86 isolated native cases for 20 getters. All 329 inventoried view tables match the clean ROM's dispatch and getter slots. The ordinary Lisbon replay agrees with the native Trade result. [Exact native receipts](../translations/editorial_checkpoints/shared_display_20261123/help_direct_entries_current_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
+Exact Help review coverage now includes all 215 index-reachable pages and the two unlinked stored slots. Ordinary Lisbon play verified Julio's alternate Salt confirmation, its two choices, six complete Trade Help holds and a pixel-identical return. Two dialogue records retain their wording. [Exact review and gameplay](editorial_help_navigation_and_lisbon_salt_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Claudio's opening reflow with his full phrase intact. [Checkpoint](editorial_claudio_opening_wrap_registered_20261124.md)
+
+One wrap-only revision and four justified retentions. Native testing passed the default and two alternative name widths. Ordinary paired New Game matched ten companion screens. All 478 registered checks, 17 focused tests, byte-exact reconstruction and the sole Drive readback passed. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/claudio_opening_wrap_drive_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Four retained Athens Market texts passed seven complete body and nameplate checks in ordinary gameplay. Cancellation kept all 7,776 gold. Paying 1,426 gold left 6,350 and Trade still required a contract. [Athens Market evidence](editorial_athens_active_market_trends_20261124.md#market-trade-and-investment-without-a-contract)
 
 # Current editorial checkpoint - 2026-11-24

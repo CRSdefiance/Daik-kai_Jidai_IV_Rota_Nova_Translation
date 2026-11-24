@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Claudio's opening reflow with his full phrase intact. [Checkpoint](editorial_claudio_opening_wrap_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered clearer Deck View instructions for navigator skill requirements. [Checkpoint](editorial_deck_skill_guidance_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
