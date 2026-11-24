@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two dialogue revisions and one wrap fix from the ordinary Genoa replay. [Checkpoint](editorial_genoa_dialogue_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

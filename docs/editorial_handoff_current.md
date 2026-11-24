@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
+
+The three ordinary recruitment paths now account for all 48 B170 speeches and four choice labels. The alternate replays verified both lower selections, four complete revised pages, both joins and both Tavern returns. The cumulative candidate passed 448 release checks and exact clean-input reconstruction. The sole Drive ROM matches by streamed SHA-256. Continue practical town and random sampling and concrete indirect display leads. Keep artwork and the later older-record technical re-audit separate.
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two dialogue revisions and one wrap fix from the ordinary Genoa replay. [Checkpoint](editorial_genoa_dialogue_registered_20261123.md)
+
+The cumulative Genoa build passed 447 release checks, 17 focused tests and exact clean-input reconstruction. Its sole Drive copy matches by streamed SHA-256. The installed change is three fixed text bodies in SC1 B170 and B181. The 59 retained texts and choice labels carry forward, as do the 276 shared-display bindings. Continue practical town and random gameplay and the concrete indirect display leads. Keep unresolved artwork and the later older-record technical re-audit separate.
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified 46 story panels, 23 shared dialogue holds and four choice labels in ordinary Genoa and Copenhagen. Genoa reached the tomato craze and recruited Julio. Copenhagen completed the Tavern round and sampled separate shop replies. Three Genoa proposals passed native preflight. Continue with stored checks and registered integration for SC1 B170 R0090/R0125 and B181 R0012, then continue practical town and random sampling and concrete indirect display leads. [Exact source and gameplay](editorial_genoa_copenhagen_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Rebound the bounded shared-message forwarding evidence to the registered Price Info ROM. Its 827 aligned reference candidates match the earlier inventory. All 77 static argument proofs affected by changed dependencies retained the same possible IDs, and 629 proofs reused exact dependencies. Continue practical town and random sampling and investigate concrete indirect display leads for the five archived messages. [Current ownership evidence](editorial_shared_forwarding_delta_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

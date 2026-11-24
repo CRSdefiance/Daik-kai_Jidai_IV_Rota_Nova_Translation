@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
+
+Genoa's two remaining choices now have ordinary gameplay evidence. Both produced Julio's join notice and Tavern return. Thirty-two control frames match the predecessor, and 48 source-based wording retentions carry forward. The verified clean-input patch reconstructs the sole Drive ROM byte for byte.
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two dialogue revisions and one wrap fix from the ordinary Genoa replay. [Checkpoint](editorial_genoa_dialogue_registered_20261123.md)
+
+All three revised pages passed an ordinary Genoa replay through both choice menus and Julio’s join notice. Sixteen comparison frames match the previous build pixel for pixel. The registered patch reconstructs the sole Drive ROM byte for byte. Fifty-nine wording retentions preserve their source-based reasons.
+
+# Current editorial checkpoint - 2026-11-23
+
+Ordinary Genoa and Copenhagen gameplay verified the tomato story, Julio’s two menus and recruitment, three types of shop replies, and Copenhagen’s 236-gold Tavern round. Two story wording revisions and one wrap-only revision passed offline preflight. [Town and recruitment checkpoint](editorial_genoa_copenhagen_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Rechecked 77 changed shared-message forwarding paths on the Price Info ROM. Their possible message IDs still match the earlier audit. The check reused 629 exact proofs and added offline display-ownership evidence for the five archived messages. [Forwarding checkpoint](editorial_shared_forwarding_delta_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
