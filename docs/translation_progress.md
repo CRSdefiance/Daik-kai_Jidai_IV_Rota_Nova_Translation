@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the London Guild's map pitch, buy quote, and empty sale reply. [Checkpoint](editorial_london_guild_display_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reconciled the eight registered releases since Kurushima against the active Yard ROM and corrected a stale Rafael B44 body reference. The offline Fleet Info inventory checked 18,250 values in 125 valid slot copies and found no destination, docking or headquarters entry for the Missionary slot. [Acceptance and save evidence](editorial_acceptance_after_yard_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Nagasaki gameplay verified the ten-night and one-night Inn branches, both charges and date changes, and two Square replies. Twelve complete dialogue holds and five menu captions passed native glyph checks. Eight dialogue records and all five captions retain their wording. [Review and gameplay evidence](editorial_nagasaki_town_services_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Both Yard fixes and their clean-input patches are on GitHub. The archived COMMON storage check verified 158 native requests, including each entry in the two affected blocks. The Fleet Info decoder confirmed 11 retail story commands. Both checks were offline. [Archived storage](editorial_archived_message_storage_20261124.md) · [Fleet Info commands](editorial_fleet_authored_fallback_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

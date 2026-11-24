@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
+
+Seoul verified both answers to the sale offer and the original payment and return. The three other revised replies passed offline native checks. The sole Drive ROM matches the exact registered candidate. Continue practical unvisited town or random scenes and the five archived COMMON display paths. Keep the remaining Fleet Info runtime producer dispositions and the final acceptance reconciliation in scope.
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the London Guild's map pitch, buy quote, and empty sale reply. [Checkpoint](editorial_london_guild_display_registered_20261124.md)
+
+The Guild archive and ARM9 changes passed ordinary replay and the registered release checks. The sole testing ROM on Drive matches the exact clean-input reconstruction. The replay covers both buy decisions. Continue with other supported Guild price outcomes, the five archived COMMON display paths, and practical town or random encounters outside the verified scenes.
+
+# Current editorial checkpoint - 2026-11-24
+
+All eight releases from Kurushima to Yard passed exact predecessor reconstruction. The current audit corrects one stale Rafael B44 body reference. Fleet Info's 24 existing backups supply 125 valid slot copies. None contains slot 114. Continue the unresolved gameplay callers and runtime input producers, along with practical sampling from a different port. [Current acceptance and backup audit](editorial_acceptance_after_yard_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Nagasaki play verified both lodging offers, both Yes and No outcomes, the return to town, and two Square replies after the stay. Eight dialogue records and five menu captions retain their wording. Continue practical town and random-scene play from another port or a different saved state, alongside the five archived COMMON callers and alternate Fleet Info inputs. [Nagasaki gameplay and exact review](editorial_nagasaki_town_services_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Both Yard fixes are on GitHub at `cdb6ff73`. The five archived COMMON messages each have one storage owner, and the native getter returned every entry in the two affected blocks. The Fleet Info decoder confirmed 11 retail story commands. Continue the unresolved gameplay callers, alternate Fleet Info saved inputs, and practical unvisited town and random scenes. [Archived storage checkpoint](editorial_archived_message_storage_20261124.md) · [Fleet Info commands](editorial_fleet_authored_fallback_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

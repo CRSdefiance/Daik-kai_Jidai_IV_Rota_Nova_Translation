@@ -1,0 +1,2911 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "ARM9_GUILD_TREASURE_PITCH",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Guildmaster",
+      "context": "The Guildmaster pitches an old map and describes the dagger. Hodram sees the item choices, declines the Loom, buys the map, then opens Sell Items.",
+      "source_meaning": "The player is in luck. The Guildmaster has an old map said to show where a legendary treasure lies.",
+      "localization_note": "Restore the Guildmaster's possession of the map and keep the claim as hearsay. The native literal profile packs the sentence into two complete rows.",
+      "english": "You're in luck! I've got an old map said to lead to legendary treasure.",
+      "clean_Japanese": "お、あんた運がいいね\n伝説の秘宝の在りかを示しているという\n古の地図がうちにおいてあるぜ",
+      "previous_English": "You're in luck!\n This old map may lead\n to legendary treasure.",
+      "source_reference": {
+        "offset": 1326368,
+        "exact_hex": "82a8814182a082f182bd895e82aa82a282a282cb0a936090e082cc94e995f382cc8ddd82e882a982f08ea682b582c482a282e982c682a282a40a8cc382cc926e907d82aa82a482bf82c982a882a282c482a082e982ba"
+      },
+      "current_reference": {
+        "offset": 1326368,
+        "exact_hex": "596f7527726520696e206c75636b210a2054686973206f6c64206d6170206d6179206c6561640a20746f206c6567656e646172792074726561737572652e"
+      },
+      "staged_reference": {
+        "offset": 1326368,
+        "exact_hex": "596f7527726520696e206c75636b21204927766520676f7420616e206f6c64206d61700a207361696420746f206c65616420746f206c6567656e646172792074726561737572652e"
+      },
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1073",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 1073,
+      "speaker": "Guildmaster",
+      "context": "The Guildmaster pitches an old map and describes the dagger. Hodram sees the item choices, declines the Loom, buys the map, then opens Sell Items.",
+      "source_meaning": "The Guildmaster gives the selected price and asks if the player will buy the item.",
+      "localization_note": "The price and buy question stay together across the proven item-price range. Use the existing ordinary digits and preserve the original argument.",
+      "english": "Want to buy it for %s coins?",
+      "clean_Japanese": "そいつは\n金貨%s枚だ\n買うかい？",
+      "previous_English": "That's %s coins. Want to buy it?",
+      "source_reference": {
+        "block": 13,
+        "offset": 2744,
+        "copy_end": 2776,
+        "bytes": 30,
+        "record_index": 29,
+        "table_offset": 1319282,
+        "start_in_record": 2,
+        "exact_stored_hex": "82bb82a282c282cd0a8be089dd2573968782be0a948382a482a982a28148"
+      },
+      "current_reference": {
+        "block": 14,
+        "offset": 1139,
+        "copy_end": 1173,
+        "bytes": 33,
+        "record_index": 13,
+        "table_offset": 1319282,
+        "start_in_record": 0,
+        "exact_stored_hex": "2054686174277320257320636f696e732e2057616e7420746f206275792069743f"
+      },
+      "staged_reference": {
+        "block": 14,
+        "offset": 1139,
+        "copy_end": 1173,
+        "bytes": 33,
+        "record_index": 13,
+        "table_offset": 1319282,
+        "start_in_record": 0,
+        "exact_stored_hex": "2057616e7420746f2062757920697420666f7220257320636f696e733f20202020"
+      },
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_1084",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 1084,
+      "speaker": "Guildmaster",
+      "context": "The Guildmaster pitches an old map and describes the dagger. Hodram sees the item choices, declines the Loom, buys the map, then opens Sell Items.",
+      "source_meaning": "The Guildmaster stops the player and says there is nothing eligible to sell.",
+      "localization_note": "Wait keeps the interruption. Nothing to sell refers to this Guild list, and the complete reply fits a line.",
+      "english": "Wait. You've got nothing to sell.",
+      "clean_Japanese": "おいおい\n売れるような品は持ってねえだろう",
+      "previous_English": "Hold on. You don't have anything to sell.",
+      "source_reference": {
+        "block": 13,
+        "offset": 3148,
+        "copy_end": 3192,
+        "bytes": 41,
+        "record_index": 38,
+        "table_offset": 1319304,
+        "start_in_record": 40,
+        "exact_stored_hex": "82a882a282a882a20a948482ea82e982e682a482c8956982cd8e9d82c182c482cb82a682be82eb82a4"
+      },
+      "current_reference": {
+        "block": 14,
+        "offset": 1667,
+        "copy_end": 1710,
+        "bytes": 42,
+        "record_index": 24,
+        "table_offset": 1319304,
+        "start_in_record": 0,
+        "exact_stored_hex": "20486f6c64206f6e2e20596f7520646f6e2774206861766520616e797468696e6720746f2073656c6c2e"
+      },
+      "staged_reference": {
+        "block": 14,
+        "offset": 1667,
+        "copy_end": 1710,
+        "bytes": 42,
+        "record_index": 24,
+        "table_offset": 1319304,
+        "start_in_record": 0,
+        "exact_stored_hex": "20576169742e20596f7527766520676f74206e6f7468696e6720746f2073656c6c2e2020202020202020"
+      },
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "candidate": {
+    "path": ".codex-release-work/london_guild_display_20261124/London_Guild_Display_STAGED.nds",
+    "sha256": "61cd642f8c82ae68d3cbf3d34259ad7653a514246c1962afbfdbe7b882ebfa0e"
+  },
+  "predecessor": {
+    "path": ".codex-release-work/yard_numerals_20261124/Yard_Numerals_STAGED.nds",
+    "sha256": "85bca3bcc105882e280013fe0b1f54c38f75c415ee3bb6fd5a83954af74ca7d4"
+  },
+  "clean_input": {
+    "path": "work/clean.nds",
+    "sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+  },
+  "target_ARM9_sha256": "7c25c75274a6a96845ecd88869b9fdad8637a1561b8aa0a0c42bb0e764996945",
+  "target_COMMON_sha256": "be6a0dcc1fab1ea1008d3942f261b4d6e5578765e749ee0ca02d90da7747922a",
+  "whole_parent_inverse": true,
+  "exact_ARM9_edits": [
+    {
+      "offset": 1326368,
+      "source_hex": "82a8814182a082f182bd895e82aa82a282a282cb0a936090e082cc94e995f382cc8ddd82e882a982f08ea682b582c482a282e982c682a282a40a8cc382cc926e907d82aa82a482bf82c982a882a282c482a082e982ba0000",
+      "previous_hex": "596f7527726520696e206c75636b210a2054686973206f6c64206d6170206d6179206c6561640a20746f206c6567656e646172792074726561737572652e000074686520496e6469616e204f6365616e0000000000000000",
+      "installed_hex": "596f7527726520696e206c75636b21204927766520676f7420616e206f6c64206d61700a207361696420746f206c65616420746f206c6567656e646172792074726561737572652e00000000000000000000000000000000"
+    },
+    {
+      "offset": 377504,
+      "address": 33931936,
+      "source_hex": "2a3f01eb",
+      "previous_hex": "2a3f01eb",
+      "installed_hex": "2380feeb"
+    }
+  ],
+  "allocations": {
+    "1073": {
+      "block": 14,
+      "start": 1139,
+      "end": 1173,
+      "before": "2054686174277320257320636f696e732e2057616e7420746f206275792069743f00",
+      "after": "2057616e7420746f2062757920697420666f7220257320636f696e733f2020202000",
+      "new_null_fields": 0
+    },
+    "1084": {
+      "block": 14,
+      "start": 1667,
+      "end": 1710,
+      "before": "20486f6c64206f6e2e20596f7520646f6e2774206861766520616e797468696e6720746f2073656c6c2e00",
+      "after": "20576169742e20596f7527766520676f74206e6f7468696e6720746f2073656c6c2e202020202020202000",
+      "new_null_fields": 0
+    }
+  },
+  "price_domain": [
+    90,
+    420000
+  ],
+  "quote_cases": {
+    "90": {
+      "id": 1073,
+      "values_hex": [
+        "3930"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393020636f696e733f",
+      "lines": [
+        "Want to buy it for 90 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "99": {
+      "id": 1073,
+      "values_hex": [
+        "3939"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393920636f696e733f",
+      "lines": [
+        "Want to buy it for 99 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "100": {
+      "id": 1073,
+      "values_hex": [
+        "313030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031303020636f696e733f",
+      "lines": [
+        "Want to buy it for 100 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "450": {
+      "id": 1073,
+      "values_hex": [
+        "343530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722034353020636f696e733f",
+      "lines": [
+        "Want to buy it for 450 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "500": {
+      "id": 1073,
+      "values_hex": [
+        "353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722035303020636f696e733f",
+      "lines": [
+        "Want to buy it for 500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "630": {
+      "id": 1073,
+      "values_hex": [
+        "363330"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722036333020636f696e733f",
+      "lines": [
+        "Want to buy it for 630 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "700": {
+      "id": 1073,
+      "values_hex": [
+        "373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722037303020636f696e733f",
+      "lines": [
+        "Want to buy it for 700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "900": {
+      "id": 1073,
+      "values_hex": [
+        "393030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722039303020636f696e733f",
+      "lines": [
+        "Want to buy it for 900 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "999": {
+      "id": 1073,
+      "values_hex": [
+        "393939"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722039393920636f696e733f",
+      "lines": [
+        "Want to buy it for 999 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1000": {
+      "id": 1073,
+      "values_hex": [
+        "31303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203130303020636f696e733f",
+      "lines": [
+        "Want to buy it for 1000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1080": {
+      "id": 1073,
+      "values_hex": [
+        "31303830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203130383020636f696e733f",
+      "lines": [
+        "Want to buy it for 1080 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1125": {
+      "id": 1073,
+      "values_hex": [
+        "31313235"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203131323520636f696e733f",
+      "lines": [
+        "Want to buy it for 1125 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1200": {
+      "id": 1073,
+      "values_hex": [
+        "31323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203132303020636f696e733f",
+      "lines": [
+        "Want to buy it for 1200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1250": {
+      "id": 1073,
+      "values_hex": [
+        "31323530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203132353020636f696e733f",
+      "lines": [
+        "Want to buy it for 1250 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1350": {
+      "id": 1073,
+      "values_hex": [
+        "31333530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203133353020636f696e733f",
+      "lines": [
+        "Want to buy it for 1350 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1500": {
+      "id": 1073,
+      "values_hex": [
+        "31353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203135303020636f696e733f",
+      "lines": [
+        "Want to buy it for 1500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1800": {
+      "id": 1073,
+      "values_hex": [
+        "31383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203138303020636f696e733f",
+      "lines": [
+        "Want to buy it for 1800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "1980": {
+      "id": 1073,
+      "values_hex": [
+        "31393830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203139383020636f696e733f",
+      "lines": [
+        "Want to buy it for 1980 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2000": {
+      "id": 1073,
+      "values_hex": [
+        "32303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 2000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2160": {
+      "id": 1073,
+      "values_hex": [
+        "32313630"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203231363020636f696e733f",
+      "lines": [
+        "Want to buy it for 2160 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2200": {
+      "id": 1073,
+      "values_hex": [
+        "32323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203232303020636f696e733f",
+      "lines": [
+        "Want to buy it for 2200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2250": {
+      "id": 1073,
+      "values_hex": [
+        "32323530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203232353020636f696e733f",
+      "lines": [
+        "Want to buy it for 2250 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2400": {
+      "id": 1073,
+      "values_hex": [
+        "32343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203234303020636f696e733f",
+      "lines": [
+        "Want to buy it for 2400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2500": {
+      "id": 1073,
+      "values_hex": [
+        "32353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203235303020636f696e733f",
+      "lines": [
+        "Want to buy it for 2500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "2700": {
+      "id": 1073,
+      "values_hex": [
+        "32373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203237303020636f696e733f",
+      "lines": [
+        "Want to buy it for 2700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "3000": {
+      "id": 1073,
+      "values_hex": [
+        "33303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203330303020636f696e733f",
+      "lines": [
+        "Want to buy it for 3000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "3150": {
+      "id": 1073,
+      "values_hex": [
+        "33313530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203331353020636f696e733f",
+      "lines": [
+        "Want to buy it for 3150 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "3500": {
+      "id": 1073,
+      "values_hex": [
+        "33353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203335303020636f696e733f",
+      "lines": [
+        "Want to buy it for 3500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "4500": {
+      "id": 1073,
+      "values_hex": [
+        "34353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203435303020636f696e733f",
+      "lines": [
+        "Want to buy it for 4500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "4950": {
+      "id": 1073,
+      "values_hex": [
+        "34393530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203439353020636f696e733f",
+      "lines": [
+        "Want to buy it for 4950 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "5000": {
+      "id": 1073,
+      "values_hex": [
+        "35303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 5000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "5500": {
+      "id": 1073,
+      "values_hex": [
+        "35353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203535303020636f696e733f",
+      "lines": [
+        "Want to buy it for 5500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "5850": {
+      "id": 1073,
+      "values_hex": [
+        "35383530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203538353020636f696e733f",
+      "lines": [
+        "Want to buy it for 5850 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6030": {
+      "id": 1073,
+      "values_hex": [
+        "36303330"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203630333020636f696e733f",
+      "lines": [
+        "Want to buy it for 6030 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6120": {
+      "id": 1073,
+      "values_hex": [
+        "36313230"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203631323020636f696e733f",
+      "lines": [
+        "Want to buy it for 6120 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6300": {
+      "id": 1073,
+      "values_hex": [
+        "36333030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203633303020636f696e733f",
+      "lines": [
+        "Want to buy it for 6300 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6480": {
+      "id": 1073,
+      "values_hex": [
+        "36343830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203634383020636f696e733f",
+      "lines": [
+        "Want to buy it for 6480 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6500": {
+      "id": 1073,
+      "values_hex": [
+        "36353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203635303020636f696e733f",
+      "lines": [
+        "Want to buy it for 6500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6700": {
+      "id": 1073,
+      "values_hex": [
+        "36373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203637303020636f696e733f",
+      "lines": [
+        "Want to buy it for 6700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6750": {
+      "id": 1073,
+      "values_hex": [
+        "36373530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203637353020636f696e733f",
+      "lines": [
+        "Want to buy it for 6750 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6800": {
+      "id": 1073,
+      "values_hex": [
+        "36383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203638303020636f696e733f",
+      "lines": [
+        "Want to buy it for 6800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "6930": {
+      "id": 1073,
+      "values_hex": [
+        "36393330"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203639333020636f696e733f",
+      "lines": [
+        "Want to buy it for 6930 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7000": {
+      "id": 1073,
+      "values_hex": [
+        "37303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 7000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7020": {
+      "id": 1073,
+      "values_hex": [
+        "37303230"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203730323020636f696e733f",
+      "lines": [
+        "Want to buy it for 7020 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7200": {
+      "id": 1073,
+      "values_hex": [
+        "37323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203732303020636f696e733f",
+      "lines": [
+        "Want to buy it for 7200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7500": {
+      "id": 1073,
+      "values_hex": [
+        "37353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203735303020636f696e733f",
+      "lines": [
+        "Want to buy it for 7500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7650": {
+      "id": 1073,
+      "values_hex": [
+        "37363530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203736353020636f696e733f",
+      "lines": [
+        "Want to buy it for 7650 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7700": {
+      "id": 1073,
+      "values_hex": [
+        "37373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203737303020636f696e733f",
+      "lines": [
+        "Want to buy it for 7700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7740": {
+      "id": 1073,
+      "values_hex": [
+        "37373430"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203737343020636f696e733f",
+      "lines": [
+        "Want to buy it for 7740 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "7800": {
+      "id": 1073,
+      "values_hex": [
+        "37383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203738303020636f696e733f",
+      "lines": [
+        "Want to buy it for 7800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "8000": {
+      "id": 1073,
+      "values_hex": [
+        "38303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 8000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "8100": {
+      "id": 1073,
+      "values_hex": [
+        "38313030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203831303020636f696e733f",
+      "lines": [
+        "Want to buy it for 8100 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "8500": {
+      "id": 1073,
+      "values_hex": [
+        "38353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203835303020636f696e733f",
+      "lines": [
+        "Want to buy it for 8500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "8550": {
+      "id": 1073,
+      "values_hex": [
+        "38353530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203835353020636f696e733f",
+      "lines": [
+        "Want to buy it for 8550 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "8600": {
+      "id": 1073,
+      "values_hex": [
+        "38363030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203836303020636f696e733f",
+      "lines": [
+        "Want to buy it for 8600 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "9000": {
+      "id": 1073,
+      "values_hex": [
+        "39303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203930303020636f696e733f",
+      "lines": [
+        "Want to buy it for 9000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "9500": {
+      "id": 1073,
+      "values_hex": [
+        "39353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203935303020636f696e733f",
+      "lines": [
+        "Want to buy it for 9500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "9900": {
+      "id": 1073,
+      "values_hex": [
+        "39393030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203939303020636f696e733f",
+      "lines": [
+        "Want to buy it for 9900 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "9999": {
+      "id": 1073,
+      "values_hex": [
+        "39393939"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f72203939393920636f696e733f",
+      "lines": [
+        "Want to buy it for 9999 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "10000": {
+      "id": 1073,
+      "values_hex": [
+        "3130303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 10000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "10800": {
+      "id": 1073,
+      "values_hex": [
+        "3130383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313038303020636f696e733f",
+      "lines": [
+        "Want to buy it for 10800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "11000": {
+      "id": 1073,
+      "values_hex": [
+        "3131303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313130303020636f696e733f",
+      "lines": [
+        "Want to buy it for 11000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "11250": {
+      "id": 1073,
+      "values_hex": [
+        "3131323530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313132353020636f696e733f",
+      "lines": [
+        "Want to buy it for 11250 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "11700": {
+      "id": 1073,
+      "values_hex": [
+        "3131373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313137303020636f696e733f",
+      "lines": [
+        "Want to buy it for 11700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "12000": {
+      "id": 1073,
+      "values_hex": [
+        "3132303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 12000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "12500": {
+      "id": 1073,
+      "values_hex": [
+        "3132353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313235303020636f696e733f",
+      "lines": [
+        "Want to buy it for 12500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "12780": {
+      "id": 1073,
+      "values_hex": [
+        "3132373830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313237383020636f696e733f",
+      "lines": [
+        "Want to buy it for 12780 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "13000": {
+      "id": 1073,
+      "values_hex": [
+        "3133303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313330303020636f696e733f",
+      "lines": [
+        "Want to buy it for 13000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "13500": {
+      "id": 1073,
+      "values_hex": [
+        "3133353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313335303020636f696e733f",
+      "lines": [
+        "Want to buy it for 13500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "14200": {
+      "id": 1073,
+      "values_hex": [
+        "3134323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313432303020636f696e733f",
+      "lines": [
+        "Want to buy it for 14200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "14400": {
+      "id": 1073,
+      "values_hex": [
+        "3134343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313434303020636f696e733f",
+      "lines": [
+        "Want to buy it for 14400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "15000": {
+      "id": 1073,
+      "values_hex": [
+        "3135303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 15000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "16000": {
+      "id": 1073,
+      "values_hex": [
+        "3136303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 16000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "16200": {
+      "id": 1073,
+      "values_hex": [
+        "3136323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313632303020636f696e733f",
+      "lines": [
+        "Want to buy it for 16200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "16560": {
+      "id": 1073,
+      "values_hex": [
+        "3136353630"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313635363020636f696e733f",
+      "lines": [
+        "Want to buy it for 16560 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "17550": {
+      "id": 1073,
+      "values_hex": [
+        "3137353530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313735353020636f696e733f",
+      "lines": [
+        "Want to buy it for 17550 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "18000": {
+      "id": 1073,
+      "values_hex": [
+        "3138303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 18000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "18400": {
+      "id": 1073,
+      "values_hex": [
+        "3138343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313834303020636f696e733f",
+      "lines": [
+        "Want to buy it for 18400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "19500": {
+      "id": 1073,
+      "values_hex": [
+        "3139353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220313935303020636f696e733f",
+      "lines": [
+        "Want to buy it for 19500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "20000": {
+      "id": 1073,
+      "values_hex": [
+        "3230303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 20000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "20160": {
+      "id": 1073,
+      "values_hex": [
+        "3230313630"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323031363020636f696e733f",
+      "lines": [
+        "Want to buy it for 20160 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "21600": {
+      "id": 1073,
+      "values_hex": [
+        "3231363030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323136303020636f696e733f",
+      "lines": [
+        "Want to buy it for 21600 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "22400": {
+      "id": 1073,
+      "values_hex": [
+        "3232343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323234303020636f696e733f",
+      "lines": [
+        "Want to buy it for 22400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "22500": {
+      "id": 1073,
+      "values_hex": [
+        "3232353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323235303020636f696e733f",
+      "lines": [
+        "Want to buy it for 22500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "24000": {
+      "id": 1073,
+      "values_hex": [
+        "3234303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323430303020636f696e733f",
+      "lines": [
+        "Want to buy it for 24000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "25000": {
+      "id": 1073,
+      "values_hex": [
+        "3235303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 25000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "25200": {
+      "id": 1073,
+      "values_hex": [
+        "3235323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323532303020636f696e733f",
+      "lines": [
+        "Want to buy it for 25200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "26280": {
+      "id": 1073,
+      "values_hex": [
+        "3236323830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323632383020636f696e733f",
+      "lines": [
+        "Want to buy it for 26280 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "27000": {
+      "id": 1073,
+      "values_hex": [
+        "3237303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 27000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "28000": {
+      "id": 1073,
+      "values_hex": [
+        "3238303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 28000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "28260": {
+      "id": 1073,
+      "values_hex": [
+        "3238323630"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323832363020636f696e733f",
+      "lines": [
+        "Want to buy it for 28260 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "28800": {
+      "id": 1073,
+      "values_hex": [
+        "3238383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323838303020636f696e733f",
+      "lines": [
+        "Want to buy it for 28800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "29200": {
+      "id": 1073,
+      "values_hex": [
+        "3239323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220323932303020636f696e733f",
+      "lines": [
+        "Want to buy it for 29200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "30000": {
+      "id": 1073,
+      "values_hex": [
+        "3330303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 30000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "31400": {
+      "id": 1073,
+      "values_hex": [
+        "3331343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333134303020636f696e733f",
+      "lines": [
+        "Want to buy it for 31400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "31500": {
+      "id": 1073,
+      "values_hex": [
+        "3331353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333135303020636f696e733f",
+      "lines": [
+        "Want to buy it for 31500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "31680": {
+      "id": 1073,
+      "values_hex": [
+        "3331363830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333136383020636f696e733f",
+      "lines": [
+        "Want to buy it for 31680 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "32000": {
+      "id": 1073,
+      "values_hex": [
+        "3332303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 32000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "32400": {
+      "id": 1073,
+      "values_hex": [
+        "3332343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333234303020636f696e733f",
+      "lines": [
+        "Want to buy it for 32400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "35000": {
+      "id": 1073,
+      "values_hex": [
+        "3335303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 35000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "35200": {
+      "id": 1073,
+      "values_hex": [
+        "3335323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333532303020636f696e733f",
+      "lines": [
+        "Want to buy it for 35200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "36000": {
+      "id": 1073,
+      "values_hex": [
+        "3336303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 36000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "36900": {
+      "id": 1073,
+      "values_hex": [
+        "3336393030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333639303020636f696e733f",
+      "lines": [
+        "Want to buy it for 36900 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "37800": {
+      "id": 1073,
+      "values_hex": [
+        "3337383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220333738303020636f696e733f",
+      "lines": [
+        "Want to buy it for 37800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "40500": {
+      "id": 1073,
+      "values_hex": [
+        "3430353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343035303020636f696e733f",
+      "lines": [
+        "Want to buy it for 40500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "41000": {
+      "id": 1073,
+      "values_hex": [
+        "3431303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343130303020636f696e733f",
+      "lines": [
+        "Want to buy it for 41000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "42000": {
+      "id": 1073,
+      "values_hex": [
+        "3432303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 42000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "42480": {
+      "id": 1073,
+      "values_hex": [
+        "3432343830"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343234383020636f696e733f",
+      "lines": [
+        "Want to buy it for 42480 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "43200": {
+      "id": 1073,
+      "values_hex": [
+        "3433323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343332303020636f696e733f",
+      "lines": [
+        "Want to buy it for 43200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "44100": {
+      "id": 1073,
+      "values_hex": [
+        "3434313030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343431303020636f696e733f",
+      "lines": [
+        "Want to buy it for 44100 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "45000": {
+      "id": 1073,
+      "values_hex": [
+        "3435303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 45000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "46800": {
+      "id": 1073,
+      "values_hex": [
+        "3436383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343638303020636f696e733f",
+      "lines": [
+        "Want to buy it for 46800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "47200": {
+      "id": 1073,
+      "values_hex": [
+        "3437323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343732303020636f696e733f",
+      "lines": [
+        "Want to buy it for 47200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "48000": {
+      "id": 1073,
+      "values_hex": [
+        "3438303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 48000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "49000": {
+      "id": 1073,
+      "values_hex": [
+        "3439303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343930303020636f696e733f",
+      "lines": [
+        "Want to buy it for 49000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "49500": {
+      "id": 1073,
+      "values_hex": [
+        "3439353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220343935303020636f696e733f",
+      "lines": [
+        "Want to buy it for 49500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "50000": {
+      "id": 1073,
+      "values_hex": [
+        "3530303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 50000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "50400": {
+      "id": 1073,
+      "values_hex": [
+        "3530343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353034303020636f696e733f",
+      "lines": [
+        "Want to buy it for 50400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "51300": {
+      "id": 1073,
+      "values_hex": [
+        "3531333030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353133303020636f696e733f",
+      "lines": [
+        "Want to buy it for 51300 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "52000": {
+      "id": 1073,
+      "values_hex": [
+        "3532303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 52000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "52200": {
+      "id": 1073,
+      "values_hex": [
+        "3532323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353232303020636f696e733f",
+      "lines": [
+        "Want to buy it for 52200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "54000": {
+      "id": 1073,
+      "values_hex": [
+        "3534303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353430303020636f696e733f",
+      "lines": [
+        "Want to buy it for 54000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "55000": {
+      "id": 1073,
+      "values_hex": [
+        "3535303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 55000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "55800": {
+      "id": 1073,
+      "values_hex": [
+        "3535383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353538303020636f696e733f",
+      "lines": [
+        "Want to buy it for 55800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "56000": {
+      "id": 1073,
+      "values_hex": [
+        "3536303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 56000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "56250": {
+      "id": 1073,
+      "values_hex": [
+        "3536323530"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353632353020636f696e733f",
+      "lines": [
+        "Want to buy it for 56250 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "56700": {
+      "id": 1073,
+      "values_hex": [
+        "3536373030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353637303020636f696e733f",
+      "lines": [
+        "Want to buy it for 56700 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "57000": {
+      "id": 1073,
+      "values_hex": [
+        "3537303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 57000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "57600": {
+      "id": 1073,
+      "values_hex": [
+        "3537363030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353736303020636f696e733f",
+      "lines": [
+        "Want to buy it for 57600 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "58000": {
+      "id": 1073,
+      "values_hex": [
+        "3538303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 58000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "58500": {
+      "id": 1073,
+      "values_hex": [
+        "3538353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353835303020636f696e733f",
+      "lines": [
+        "Want to buy it for 58500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "58981": {
+      "id": 1073,
+      "values_hex": [
+        "3538393831"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353839383120636f696e733f",
+      "lines": [
+        "Want to buy it for 58981 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "59400": {
+      "id": 1073,
+      "values_hex": [
+        "3539343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220353934303020636f696e733f",
+      "lines": [
+        "Want to buy it for 59400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "60000": {
+      "id": 1073,
+      "values_hex": [
+        "3630303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 60000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "60300": {
+      "id": 1073,
+      "values_hex": [
+        "3630333030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363033303020636f696e733f",
+      "lines": [
+        "Want to buy it for 60300 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "61200": {
+      "id": 1073,
+      "values_hex": [
+        "3631323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363132303020636f696e733f",
+      "lines": [
+        "Want to buy it for 61200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "62000": {
+      "id": 1073,
+      "values_hex": [
+        "3632303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 62000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "62500": {
+      "id": 1073,
+      "values_hex": [
+        "3632353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363235303020636f696e733f",
+      "lines": [
+        "Want to buy it for 62500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "63000": {
+      "id": 1073,
+      "values_hex": [
+        "3633303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363330303020636f696e733f",
+      "lines": [
+        "Want to buy it for 63000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "64000": {
+      "id": 1073,
+      "values_hex": [
+        "3634303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363430303020636f696e733f",
+      "lines": [
+        "Want to buy it for 64000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "65000": {
+      "id": 1073,
+      "values_hex": [
+        "3635303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 65000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "65535": {
+      "id": 1073,
+      "values_hex": [
+        "3635353335"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363535333520636f696e733f",
+      "lines": [
+        "Want to buy it for 65535 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "66000": {
+      "id": 1073,
+      "values_hex": [
+        "3636303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 66000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "67000": {
+      "id": 1073,
+      "values_hex": [
+        "3637303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 67000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "67500": {
+      "id": 1073,
+      "values_hex": [
+        "3637353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363735303020636f696e733f",
+      "lines": [
+        "Want to buy it for 67500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "68000": {
+      "id": 1073,
+      "values_hex": [
+        "3638303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220363830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 68000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "70000": {
+      "id": 1073,
+      "values_hex": [
+        "3730303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 70000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "72000": {
+      "id": 1073,
+      "values_hex": [
+        "3732303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 72000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "73800": {
+      "id": 1073,
+      "values_hex": [
+        "3733383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373338303020636f696e733f",
+      "lines": [
+        "Want to buy it for 73800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "75000": {
+      "id": 1073,
+      "values_hex": [
+        "3735303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 75000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "75600": {
+      "id": 1073,
+      "values_hex": [
+        "3735363030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373536303020636f696e733f",
+      "lines": [
+        "Want to buy it for 75600 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "78300": {
+      "id": 1073,
+      "values_hex": [
+        "3738333030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373833303020636f696e733f",
+      "lines": [
+        "Want to buy it for 78300 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "79200": {
+      "id": 1073,
+      "values_hex": [
+        "3739323030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220373932303020636f696e733f",
+      "lines": [
+        "Want to buy it for 79200 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "80000": {
+      "id": 1073,
+      "values_hex": [
+        "3830303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 80000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "81000": {
+      "id": 1073,
+      "values_hex": [
+        "3831303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383130303020636f696e733f",
+      "lines": [
+        "Want to buy it for 81000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "82000": {
+      "id": 1073,
+      "values_hex": [
+        "3832303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 82000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "84000": {
+      "id": 1073,
+      "values_hex": [
+        "3834303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383430303020636f696e733f",
+      "lines": [
+        "Want to buy it for 84000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "85500": {
+      "id": 1073,
+      "values_hex": [
+        "3835353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383535303020636f696e733f",
+      "lines": [
+        "Want to buy it for 85500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "86400": {
+      "id": 1073,
+      "values_hex": [
+        "3836343030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383634303020636f696e733f",
+      "lines": [
+        "Want to buy it for 86400 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "87000": {
+      "id": 1073,
+      "values_hex": [
+        "3837303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 87000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "87300": {
+      "id": 1073,
+      "values_hex": [
+        "3837333030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383733303020636f696e733f",
+      "lines": [
+        "Want to buy it for 87300 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "88000": {
+      "id": 1073,
+      "values_hex": [
+        "3838303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220383830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 88000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "90000": {
+      "id": 1073,
+      "values_hex": [
+        "3930303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 90000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "95000": {
+      "id": 1073,
+      "values_hex": [
+        "3935303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 95000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "96000": {
+      "id": 1073,
+      "values_hex": [
+        "3936303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 96000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "97000": {
+      "id": 1073,
+      "values_hex": [
+        "3937303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393730303020636f696e733f",
+      "lines": [
+        "Want to buy it for 97000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "99000": {
+      "id": 1073,
+      "values_hex": [
+        "3939303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393930303020636f696e733f",
+      "lines": [
+        "Want to buy it for 99000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "99999": {
+      "id": 1073,
+      "values_hex": [
+        "3939393939"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f7220393939393920636f696e733f",
+      "lines": [
+        "Want to buy it for 99999 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "100000": {
+      "id": 1073,
+      "values_hex": [
+        "313030303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031303030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 100000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "108000": {
+      "id": 1073,
+      "values_hex": [
+        "313038303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031303830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 108000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "110000": {
+      "id": 1073,
+      "values_hex": [
+        "313130303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031313030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 110000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "112500": {
+      "id": 1073,
+      "values_hex": [
+        "313132353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031313235303020636f696e733f",
+      "lines": [
+        "Want to buy it for 112500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "118800": {
+      "id": 1073,
+      "values_hex": [
+        "313138383030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031313838303020636f696e733f",
+      "lines": [
+        "Want to buy it for 118800 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "120000": {
+      "id": 1073,
+      "values_hex": [
+        "313230303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031323030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 120000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "125000": {
+      "id": 1073,
+      "values_hex": [
+        "313235303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031323530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 125000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "126000": {
+      "id": 1073,
+      "values_hex": [
+        "313236303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031323630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 126000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "132000": {
+      "id": 1073,
+      "values_hex": [
+        "313332303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031333230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 132000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "140000": {
+      "id": 1073,
+      "values_hex": [
+        "313430303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031343030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 140000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "153000": {
+      "id": 1073,
+      "values_hex": [
+        "313533303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031353330303020636f696e733f",
+      "lines": [
+        "Want to buy it for 153000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "162000": {
+      "id": 1073,
+      "values_hex": [
+        "313632303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031363230303020636f696e733f",
+      "lines": [
+        "Want to buy it for 162000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "170000": {
+      "id": 1073,
+      "values_hex": [
+        "313730303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031373030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 170000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "175500": {
+      "id": 1073,
+      "values_hex": [
+        "313735353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031373535303020636f696e733f",
+      "lines": [
+        "Want to buy it for 175500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "180000": {
+      "id": 1073,
+      "values_hex": [
+        "313830303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031383030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 180000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "195000": {
+      "id": 1073,
+      "values_hex": [
+        "313935303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031393530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 195000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "198000": {
+      "id": 1073,
+      "values_hex": [
+        "313938303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722031393830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 198000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "211500": {
+      "id": 1073,
+      "values_hex": [
+        "323131353030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032313135303020636f696e733f",
+      "lines": [
+        "Want to buy it for 211500 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "216000": {
+      "id": 1073,
+      "values_hex": [
+        "323136303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032313630303020636f696e733f",
+      "lines": [
+        "Want to buy it for 216000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "220000": {
+      "id": 1073,
+      "values_hex": [
+        "323230303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032323030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 220000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "225000": {
+      "id": 1073,
+      "values_hex": [
+        "323235303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032323530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 225000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "235000": {
+      "id": 1073,
+      "values_hex": [
+        "323335303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032333530303020636f696e733f",
+      "lines": [
+        "Want to buy it for 235000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "240000": {
+      "id": 1073,
+      "values_hex": [
+        "323430303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032343030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 240000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "243000": {
+      "id": 1073,
+      "values_hex": [
+        "323433303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032343330303020636f696e733f",
+      "lines": [
+        "Want to buy it for 243000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "250000": {
+      "id": 1073,
+      "values_hex": [
+        "323530303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032353030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 250000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "270000": {
+      "id": 1073,
+      "values_hex": [
+        "323730303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032373030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 270000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "288000": {
+      "id": 1073,
+      "values_hex": [
+        "323838303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722032383830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 288000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "300000": {
+      "id": 1073,
+      "values_hex": [
+        "333030303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722033303030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 300000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "320000": {
+      "id": 1073,
+      "values_hex": [
+        "333230303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722033323030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 320000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "360000": {
+      "id": 1073,
+      "values_hex": [
+        "333630303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722033363030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 360000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "378000": {
+      "id": 1073,
+      "values_hex": [
+        "333738303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722033373830303020636f696e733f",
+      "lines": [
+        "Want to buy it for 378000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "400000": {
+      "id": 1073,
+      "values_hex": [
+        "343030303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722034303030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 400000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "420000": {
+      "id": 1073,
+      "values_hex": [
+        "343230303030"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "2057616e7420746f2062757920697420666f722034323030303020636f696e733f",
+      "lines": [
+        "Want to buy it for 420000 coins?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    }
+  },
+  "quote_before": {
+    "3000": {
+      "id": 1073,
+      "values_hex": [
+        "8252824f824f824f"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "20546861742773208252824f824f824f20636f696e732e2057616e740a2020746f206275792069743f",
+      "lines": [
+        "That's ３０００ coins. Want",
+        "to buy it?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    },
+    "11000": {
+      "id": 1073,
+      "values_hex": [
+        "82508250824f824f824f"
+      ],
+      "parent": 33898444,
+      "formatted_hex": "205468617427732082508250824f824f824f20636f696e732e2057616e740a2020746f206275792069743f",
+      "lines": [
+        "That's １１０００ coins. Want",
+        "to buy it?"
+      ],
+      "findings": [],
+      "complete_bytes_and_guarded_printf_wrap_ABI": true
+    }
+  },
+  "price_source": {
+    "path": "work/analysis/guild_price_domain_v2245/original_item_prices_skill_clamp_and_English_unit_contract.json",
+    "sha256": "1ccc1313193603b1a8612ff2741183b16e8a5b2f99e9f4f42678569c74c1a8e3"
+  },
+  "pitch_before": {
+    "id": 4294967295,
+    "values_hex": [],
+    "parent": 33898568,
+    "formatted_hex": "596f7527726520696e206c75636b210a2054686973206f6c64206d6170206d6179206c6561640a20746f206c6567656e646172792074726561737572652e",
+    "lines": [
+      "You're in luck!",
+      "This old map may lead",
+      "to legendary treasure."
+    ],
+    "findings": [],
+    "complete_bytes_and_guarded_printf_wrap_ABI": true
+  },
+  "pitch_after": {
+    "id": 4294967295,
+    "values_hex": [],
+    "parent": 33898568,
+    "formatted_hex": "596f7527726520696e206c75636b21204927766520676f7420616e206f6c64206d61700a207361696420746f206c65616420746f206c6567656e646172792074726561737572652e",
+    "lines": [
+      "You're in luck! I've got an old map",
+      "said to lead to legendary treasure."
+    ],
+    "findings": [],
+    "complete_bytes_and_guarded_printf_wrap_ABI": true
+  },
+  "empty_sale_before": {
+    "id": 1084,
+    "values_hex": [],
+    "parent": 33898516,
+    "formatted_hex": "20486f6c64206f6e2e20596f7520646f6e277420686176650a2020616e797468696e6720746f2073656c6c2e",
+    "lines": [
+      "Hold on. You don't have",
+      "anything to sell."
+    ],
+    "findings": [],
+    "complete_bytes_and_guarded_printf_wrap_ABI": true
+  },
+  "empty_sale_after": {
+    "id": 1084,
+    "values_hex": [],
+    "parent": 33898516,
+    "formatted_hex": "20576169742e20596f7527766520676f74206e6f7468696e6720746f2073656c6c2e",
+    "lines": [
+      "Wait. You've got nothing to sell."
+    ],
+    "findings": [],
+    "complete_bytes_and_guarded_printf_wrap_ABI": true
+  },
+  "sheets": [
+    {
+      "path": "translations\\editorial_checkpoints\\shared_display_20261123\\london_guild_display_preflight_20261124\\portrait_sheet_01.png",
+      "sha256": "cbbbe47b1d48b9d15589a1321f1381064f9ecb2df4a6ae37d3fc29546acfa82e",
+      "messages": [
+        "Old map pitch",
+        "Nothing to sell",
+        "Buy quote 90",
+        "Buy quote 3000",
+        "Buy quote 11000",
+        "Buy quote 420000"
+      ]
+    }
+  ],
+  "paired_ordinary_gameplay_pending": true,
+  "registered": false,
+  "new_editorial_credit": 0
+}

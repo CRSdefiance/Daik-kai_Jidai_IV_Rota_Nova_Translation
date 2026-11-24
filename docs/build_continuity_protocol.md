@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the London Guild's map pitch, buy quote, and empty sale reply. [Checkpoint](editorial_london_guild_display_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Yard dialogue digits for prices, counts, discounts, durations, and refunds. [Checkpoint](editorial_yard_numerals_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
