@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+The Genoa acceptance audit verified all 416 priority decisions and all 48 recruitment speeches across the three existing ordinary replays. Offline Fleet Info checks traced nine calls that reuse the current destination and two that use the shipped fleet table. Continue the fifteen open writer calls, the archived COMMON callers, and practical town and random encounters on the registered Genoa candidate. [Current evidence](editorial_genoa_acceptance_and_fleet_sources_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
 
 The three ordinary recruitment paths now account for all 48 B170 speeches and four choice labels. The alternate replays verified both lower selections, four complete revised pages, both joins and both Tavern returns. The cumulative candidate passed 448 release checks and exact clean-input reconstruction. The sole Drive ROM matches by streamed SHA-256. Continue practical town and random sampling and concrete indirect display leads. Keep artwork and the later older-record technical re-audit separate.

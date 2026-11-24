@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Reconciled the three latest release deltas against all 416 priority decisions, the Help archive, shared text and ASCII right bounds. Offline checks scoped eleven more Fleet Info destination-writer calls. The ledger retains 27,700 editorial credits. [Acceptance and Fleet Info evidence](editorial_genoa_acceptance_and_fleet_sources_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered two wording edits and two wrap fixes in Julio's alternate Genoa choices. [Checkpoint](editorial_genoa_alternate_dialogue_registered_20261123.md)
 
 Genoa's two remaining choices now have ordinary gameplay evidence. Both produced Julio's join notice and Tavern return. Thirty-two control frames match the predecessor, and 48 source-based wording retentions carry forward. The verified clean-input patch reconstructs the sole Drive ROM byte for byte.
