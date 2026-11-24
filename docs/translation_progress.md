@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-23
 
+Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
+
+The batch records ten prose revisions, two wrap-only fixes and six justified retentions. Native validation covered every revised page, with ordinary Lisbon gameplay for Beef. The only Drive ROM matches the registered candidate exactly.
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified seven ordinary gameplay panels across a fleet attack and defeat, departure and docking, and a 30-night Tunis Inn stay. The panels retain their wording and the original bearing, faction, date and duration. The seven observations preserve the historical editorial credit. [Exact review](editorial_tripoli_tunis_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Classified 66 matches for the five archived COMMON IDs in the active story and event files. The offline evidence removes those matches from the caller search, including the relocated 750-byte branch in Hodram B311. [Archive evidence](editorial_archived_message_operands_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified the Market bargaining request, concession and return in a focused replay. The original game charged 405 gold after a 418-gold quote, and all three dialogue panels passed complete glyph checks. The registered Shortfall candidate and existing editorial credits carry forward. [Market concession evidence](editorial_market_purser_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

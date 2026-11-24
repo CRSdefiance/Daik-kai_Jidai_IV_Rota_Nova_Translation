@@ -1,0 +1,7 @@
+# Archived message numbers in story and event data
+
+The current Shortfall ROM has 66 byte matches for the five archived COMMON IDs across its production and alternate story and event archives. All 43 story matches have native command or header owners. They are scene and embedded-command lengths, branch lengths, personality text offsets, or byte overlaps in packed predicates. The 23 event matches belong to action indices, required event IDs, or faction predicates. The event files match the clean ROM byte for byte. [Exact bytes, locations and code dependencies](../translations/editorial_checkpoints/shared_display_20261123/archived_message_operands_20261123.json)
+
+Hodram's B311 has an installed command at byte 1202 that skips 750 bytes from the end of the command to byte 1956. The clean command at byte 1116 skips 792 bytes to byte 1912. Both destinations begin with the same still-image command and following control. This removes the installed 750 occurrence from the Market message leads. The native faction predicate checks also show how the event records use 318 as part of a packed word. Both supplied records reach the faction relation getter and return false on the registered startup state. These checks were offline.
+
+The exact Japanese, installed text and review notes for COMMON 284, 318 and 750–752 carry forward. Their executable display callers remain open outside these archive operands and the already tested ordinary or focused paths.

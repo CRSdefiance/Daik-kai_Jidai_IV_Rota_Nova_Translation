@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-23
 
+Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
+
+The Price Info candidate passed 446 release checks, exact clean-input reconstruction and Drive readback. The cumulative story and runtime evidence carries forward through the complete parent inverse. Continue the remaining text display ownership and practical town and random coverage, including the five archived message callers. The older-record technical re-audit and artwork stay separate.
+
+# Current editorial checkpoint - 2026-11-23
+
+Ordinary Tripoli replays on the registered Shortfall ROM reached a Hayreddin fleet attack and defeat in one run and a 30-night Tunis Inn stay in the other. Seven complete dialogue panels retain their wording. Scurvy and alternate battle voices remain unvisited on this replay. Continue the remaining display callers and practical town and random scenes. [Exact gameplay and source evidence](editorial_tripoli_tunis_current_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Resolved all 66 matches for the five archived COMMON IDs in the current story and event files. The installed Hodram B311 occurrence of 750 is a relocated branch length, and the checked event operands lead to indices, dependencies or faction predicates. Continue with identifiable executable display callers and representative unvisited town and random content. [Exact archive evidence](editorial_archived_message_operands_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified the original Purser concession on the registered Shortfall candidate in a focused Lisbon replay. Julio’s two panels and the trader’s response retain their wording, and the native purchase settles at 405 gold after a 418-gold quote. This path selects COMMON 8, 15, 24 and 10. Keep the archived Market, fleet-debt and exhibition direct callers open and continue practical unvisited town and random scenes. [Exact Market evidence](editorial_market_purser_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

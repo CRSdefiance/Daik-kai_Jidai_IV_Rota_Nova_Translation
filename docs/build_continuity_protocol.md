@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Fixed the two required-crew line breaks and verified Manuel's 12-sailor shortfall in a focused replay. [Checkpoint](editorial_recruitment_shortfall_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
