@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Tunis Shopkeeper's courteous Market advice. [Checkpoint](editorial_tunis_shop_advice_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

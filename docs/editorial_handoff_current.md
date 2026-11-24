@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
+
+Both ordinary Palace holds and 31 companion frames passed. The full patch reconstruction, startup, and sole Drive ROM match the registered candidate. Continue practical unvisited town and random exchanges, the five archived COMMON display owners, and the ordinary producer for the Missionary destination. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/tunis_palace_refusal_drive_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified the headquarters ownership inputs in ordinary Tunis and Nagasaki save loads and the 125-slot backup inventory. All 27 aligned Fleet Info destination writers now have documented input categories. The separate docking fallback can carry forward a stored 114, while both no-dock selectors choose ordinary ports. Continue practical unvisited town and random exchanges and the five archived COMMON display owners on the registered Tunis candidate. Ordinary production of the Missionary slot remains open. [Current save and native evidence](editorial_fleet_company_and_fallback_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

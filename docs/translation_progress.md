@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
+
+Reviewed eight COMMON records across the Market and Palace exchange. One prose revision restores the guard's blunt tone and fits on two lines. Seven justified retentions include two offline alternate replies. Ordinary play verified both revised holds and 31 matching companion frames. The cumulative candidate passed 464 release checks and matches the sole Drive ROM.
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified company affiliation from two ordinary saves, 26,000 stored affiliation bytes in the existing backup inventory, and the two no-dock fallback branches. All 27 aligned Fleet Info destination writers have documented input categories. The focused tests show that the fallback retains a supplied Missionary slot and picks an ordinary port when it receives no dock. [Fleet Info findings](editorial_fleet_company_and_fallback_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
