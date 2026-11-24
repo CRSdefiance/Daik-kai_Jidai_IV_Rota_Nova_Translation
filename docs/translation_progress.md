@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified Riga’s barkeep tip, both round choices, the patron rumor and repeat crew recruitment. Twelve distinct records retain their wording. Five related spare-berth questions and two unassigned-sailor numeral callers are queued for correction. [Riga checkpoint](editorial_riga_tavern_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered regular fee digits in the Market Info map quote. [Checkpoint](editorial_price_info_digits_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified cancellation of a mixed deal in ordinary Syracuse play and kept Charles’s existing confirmation. Checked the five archived messages against their current storage and the native reader’s bounded references. [Gameplay and scope](editorial_archived_common_lisbon_scope_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified the seven registered deltas through Lisbon, preserved 103 prior review decisions, and traced the Copenhagen dock prompt through four native steps in ordinary play. [Acceptance and coverage](editorial_acceptance_after_lisbon_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the complete crew roster value and the Galley phrase wrap. [Checkpoint](editorial_lisbon_roster_galley_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the three remaining article wraps in the Promised Words clues. [Checkpoint](editorial_village_article_wraps_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

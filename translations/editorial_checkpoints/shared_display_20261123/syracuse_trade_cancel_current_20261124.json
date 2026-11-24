@@ -1,0 +1,711 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_11",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 11,
+      "clean_Japanese": "これで、よろしいですか？",
+      "source_reference": {
+        "block": 0,
+        "offset": 412,
+        "copy_end": 436,
+        "bytes": 24,
+        "record_index": 10,
+        "table_offset": 1317158,
+        "start_in_record": 1,
+        "exact_hex": "82b182ea82c5814182e682eb82b582a282c582b782a98148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 524,
+        "copy_end": 548,
+        "bytes": 23,
+        "record_index": 11,
+        "table_offset": 1317158,
+        "start_in_record": 0,
+        "exact_hex": "57696c6c207468697320626520616c6c2072696768743f"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 524,
+        "copy_end": 548,
+        "bytes": 23,
+        "record_index": 11,
+        "table_offset": 1317158,
+        "start_in_record": 0,
+        "exact_hex": "57696c6c207468697320626520616c6c2072696768743f"
+      },
+      "english": "Will this be all right?",
+      "speaker": "Charles Rochefort",
+      "context": "Charles asks the player to approve the pending trade. No returns to that deal. Back then cancels the deal and returns to the Market menu.",
+      "source_meaning": "The crew member politely asks if the player approves.",
+      "localization_note": "The deferential question suits Charles and leaves both decisions open. The two choice captions fit and the question retains its complete first and last characters.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 18100,
+          "capture": {
+            "frame": 18100,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_mixed_trade\\mixed_cancel_with_purchase\\capture\\frame_018100_cold_boot.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "6b659576aa36dd6e2076d487cd0613daf07f3613b7ccb78f3122c845061d5106",
+            "framebuffer_sha256": "f23c40661eee6a6597751ec1ae62420d5dfe57b88121b6e37cb83e8cd1f167fd"
+          },
+          "native_lines": [
+            "Will this be all right?"
+          ],
+          "arguments": [],
+          "body_pixels": 226,
+          "nameplate": [
+            199,
+            [
+              16,
+              277,
+              118,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 17709,
+              "PC": 33903244,
+              "message_ID": 11,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 17709,
+              "PC": 33895668,
+              "message_ID": 11,
+              "caller_LR": 33897744
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "candidate_sha256": "9f879c8e1d2c48ba95d575c6e618adb5c5f4575df7139f1243811ad48667ac8a",
+  "ordinary_controls": true,
+  "prior_save": {
+    "path": "work/analysis/weapon_voyage_v476/syracuse_test_copy.dsv",
+    "sha256": "958d6e36f521e4f8b0940e0c60a4de08df8fcae71f9e6f6e3271156cf25beadb"
+  },
+  "evidence": [
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_mixed_trade/mixed_cancel_with_purchase/capture/capture_report.json",
+      "sha256": "bb3cf7cfee3231cf3c75b8180abc7f6efcae4c708e90298f8f631d433f00ddd7"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_mixed_trade/mixed_cancel_with_purchase/requests.json",
+      "sha256": "462c4a0663166f8661f674608eded2af350f95320167ab3c1093b6f58aab5c5b"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_mixed_trade/mixed_cancel_with_purchase/terminal.json",
+      "sha256": "b2b0469551db984d9b93e2dfa6a9ee0efbb72001f57ec4c64e4c24a6bb1fa482"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_mixed_trade/mixed_cancel_with_purchase/inputs.json",
+      "sha256": "537f51c0af2469b56ca8732556a7198d1db2bb37986a0befc971af709809b8e9"
+    }
+  ],
+  "new_gameplay_scene": "Syracuse deal cancellation and reopen",
+  "scene_scope": "Mixed purchase and sale",
+  "native_requests": [
+    {
+      "frame": 5710,
+      "PC": 33903244,
+      "message_ID": 1156,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 5710,
+      "PC": 33895668,
+      "message_ID": 1156,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6121,
+      "PC": 33903244,
+      "message_ID": 1157,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6121,
+      "PC": 33895668,
+      "message_ID": 1157,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6912,
+      "PC": 33903244,
+      "message_ID": 1158,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6912,
+      "PC": 33895668,
+      "message_ID": 1158,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 7710,
+      "PC": 33903244,
+      "message_ID": 1156,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 7710,
+      "PC": 33895668,
+      "message_ID": 1156,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8121,
+      "PC": 33903244,
+      "message_ID": 1157,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8121,
+      "PC": 33895668,
+      "message_ID": 1157,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8973,
+      "PC": 33903244,
+      "message_ID": 1159,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8973,
+      "PC": 33895668,
+      "message_ID": 1159,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 10510,
+      "PC": 33903244,
+      "message_ID": 8,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 10510,
+      "PC": 33895668,
+      "message_ID": 8,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 12513,
+      "PC": 33903244,
+      "message_ID": 746,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 12513,
+      "PC": 33895668,
+      "message_ID": 746,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 14513,
+      "PC": 33903244,
+      "message_ID": 11,
+      "caller_LR": 33897744
+    },
+    {
+      "frame": 14513,
+      "PC": 33895668,
+      "message_ID": 11,
+      "caller_LR": 33897744
+    },
+    {
+      "frame": 14921,
+      "PC": 33903244,
+      "message_ID": 9,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 14921,
+      "PC": 33895668,
+      "message_ID": 9,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 17709,
+      "PC": 33903244,
+      "message_ID": 11,
+      "caller_LR": 33897744
+    },
+    {
+      "frame": 17709,
+      "PC": 33895668,
+      "message_ID": 11,
+      "caller_LR": 33897744
+    }
+  ],
+  "archived_IDs_absent_from_these_requests": [
+    284,
+    318,
+    750,
+    751,
+    752
+  ],
+  "net_pending": 40024,
+  "pending_spent": 442,
+  "ledger_checks": {
+    "16900": [
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1764",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 59,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "40466",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 92,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "17700": [
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1764",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 59,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "442",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 51,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "40024",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 87,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18100": [
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1764",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 59,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "442",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 51,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "40024",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 87,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18500": [
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1764",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 59,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "442",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 51,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "40024",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 87,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "19300": [
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "38702",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 79,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ]
+  },
+  "complete_choice_labels": [
+    {
+      "text": "No",
+      "bounds": [
+        134,
+        363,
+        146,
+        374
+      ],
+      "ink_pixels": 35,
+      "color": [
+        213,
+        214,
+        213
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    {
+      "text": "Yes",
+      "bounds": [
+        202,
+        363,
+        220,
+        374
+      ],
+      "ink_pixels": 37,
+      "color": [
+        213,
+        214,
+        213
+      ],
+      "all_ink_and_blank_cells_exact": true
+    }
+  ],
+  "market_wallet": {
+    "text": "38702",
+    "bounds": [
+      100,
+      351,
+      130,
+      362
+    ],
+    "ink_pixels": 79,
+    "color": [
+      230,
+      230,
+      230
+    ],
+    "all_ink_and_blank_cells_exact": true
+  },
+  "iron_ore_goods_info_after_reopen": {
+    "text": "Iron Ore\n  Ore 70%",
+    "origin": [
+      144,
+      127
+    ],
+    "box": [
+      144,
+      126,
+      256,
+      162
+    ],
+    "exact_ink_pixels": 175,
+    "first_internal_final_letters_and_blank_cells_exact": true
+  },
+  "wheat_goods_info": {
+    "17700": {
+      "text": "Wheat\n  Food 97%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 184,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    },
+    "18500": {
+      "text": "Wheat\n  Food 97%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 184,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    }
+  },
+  "contact_sheet": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/syracuse_trade_cancel_current_20261124.png",
+    "sha256": "6da01ad98132795eaa9578a3176bc31cdefb5a065274bf396f2df59ff02538e3"
+  },
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

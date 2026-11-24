@@ -1,5 +1,29 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified 14 Riga Tavern and recruitment records across 17 ordinary gameplay holds. Continue the five repetitive spare-berth questions and both unassigned-sailor numeral callers from the verified replay. The five archived COMMON display owners and ordinary Missionary destination producer remain open. [Riga checkpoint](editorial_riga_tavern_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered regular fee digits in the Market Info map quote. [Checkpoint](editorial_price_info_digits_registered_20261124.md)
+
+Ordinary Syracuse play confirmed the investment cancellation, the 36,898-gold payment, the insufficient-funds response and the free local map quote. Six lines retain their wording. The quote correction passed 32 native cases and matched 24 surrounding gameplay frames. The sole Drive ROM matches the registered build. Continue practical unvisited town and random scenes, the five archived COMMON display owners and the ordinary Missionary destination producer.
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified Syracuse’s mixed sale and purchase through No, Back, and reopening Trade. The game used Charles’s complete confirmation and cleared the deal at the original 38,702 gold. Rebound the five archived records to their current storage and checked the remaining short Thumb overlap leads around the COMMON reader. Continue other practical town and random scenes, the five archived owners outside the checked paths, and the ordinary Missionary producer. [Mixed Trade and archived-reader evidence](editorial_archived_common_lisbon_scope_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reconciled seven exact release transitions and 103 existing review decisions through Lisbon. Ordinary Copenhagen play followed slot 9 from the dock prompt through the pending and accepted states to the fleet’s dock byte. Across 511 offline inputs, the original force-dock script gate passed only slots 0–113. Continue the five archived COMMON display owners and the producer of a Missionary destination in ordinary play. The concrete port inputs are the UI state at `0x022793C4` and the saved fleet destination at offset `0x3F`. Follow their first producers as needed, alongside practical unvisited town and random scenes. [Acceptance and gameplay evidence](editorial_acceptance_after_lisbon_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the complete crew roster value and the Galley phrase wrap. [Checkpoint](editorial_lisbon_roster_galley_registered_20261124.md)
+
+The ordinary Lisbon replay verified **Finance 115**, both visits to the revised Galley help, and 69 unchanged surrounding frames through the Market settlement. The sole Drive ROM matches the registered candidate. The village releases and original Lisbon evidence are on GitHub at commit `95193cf8`. Continue the five archived COMMON display owners and the ordinary Missionary destination input. For the latter, the clean and installed code share seven aligned calls into the two newly traced dock writers. Follow the stored destination at `0x0203592C`, the producer of the pending state at `0x020908CC`, and the two callers of the force-dock entry at `0x0202EC2C`. The write at `0x020909F8` swaps the pending field with the old active field. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/lisbon_roster_galley_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/lisbon_roster_galley_cleanup_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the three remaining article wraps in the Promised Words clues. [Checkpoint](editorial_village_article_wraps_registered_20261124.md)
 
 The three article wraps passed native checks, a paired Avacha replay matched 29 surrounding frames, and the sole Drive ROM matches the registry. Ordinary Lisbon play verified all four Square shops, the two-day Purser refit, Julio's crew assignment, and the 405-gold bargaining settlement. Continue with the roster stat crop at ARM9 offset `0x14F4E0` and Galley help COMMON 1250. The five archived message owners and the ordinary Missionary destination remain open. [Lisbon gameplay, source bindings, and defect evidence](editorial_lisbon_ordinary_purser_20261124.md)

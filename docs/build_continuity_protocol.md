@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered regular fee digits in the Market Info map quote. [Checkpoint](editorial_price_info_digits_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the complete crew roster value and the Galley phrase wrap. [Checkpoint](editorial_lisbon_roster_galley_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the three remaining article wraps in the Promised Words clues. [Checkpoint](editorial_village_article_wraps_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
