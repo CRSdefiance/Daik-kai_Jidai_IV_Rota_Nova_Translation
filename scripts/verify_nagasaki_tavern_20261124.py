@@ -46,7 +46,7 @@ HOLDS = (
     (15720, 14, "Sailor", (), ("All set, then?",),
      "The short confirmation fits the sailor's voice and gives the player a clear handoff after assignment."),
 )
-PROPOSED = "We've got room for %s more. Want me to keep looking?"
+PROPOSED = "There's room aboard for %s more. Should I keep looking?"
 
 
 def main():

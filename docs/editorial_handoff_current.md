@@ -1,6 +1,12 @@
 # Current editorial checkpoint - 2026-11-24
 
-Verified Nagasaki's two Tavern tips, buying a round, recruiting 57 sailors, even assignment, and return to town. Retained 14 distinct records and proposed a more natural spare-capacity prompt for COMMON 1045. Continue with the count-width preflight, paired recruiting replay, five archived message owners, and practical unvisited scenes. [Tavern and recruitment evidence](editorial_nagasaki_tavern_20261124.md)
+Registered the Nagasaki Tavern spare-berth prompt with the count and question on separate lines. [Checkpoint](editorial_nagasaki_tavern_recruitment_registered_20261124.md)
+
+The paired replay matched 32 companion frames, and the clean-input patch and sole Drive ROM match the registered candidate. Continue the five archived COMMON display owners, direct saved Fleet Info inputs and the authored docking fallback, and practical unvisited town and random scenes.
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified Nagasaki's two Tavern tips, buying a round, recruiting 57 sailors, even assignment, and return to town. Retained 14 distinct records. The revised COMMON 1045 keeps its count and complete question on separate lines in all 13 native cases. Continue with the paired recruiting replay, five archived message owners, and practical unvisited scenes. [Tavern and recruitment evidence](editorial_nagasaki_tavern_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
 

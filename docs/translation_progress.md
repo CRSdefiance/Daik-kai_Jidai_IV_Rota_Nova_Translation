@@ -1,6 +1,10 @@
 # Current editorial checkpoint - 2026-11-24
 
-Verified the ordinary Nagasaki Tavern exchange through crew recruitment and the return to town. Retained 14 distinct records and flagged one repetitive recruiting prompt for revision. [Checkpoint](editorial_nagasaki_tavern_20261124.md)
+Registered the Nagasaki Tavern spare-berth prompt with the count and question on separate lines. [Checkpoint](editorial_nagasaki_tavern_recruitment_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified the ordinary Nagasaki Tavern exchange through crew recruitment and the return to town. Retained 14 distinct records. The revised recruiting prompt passed 13 native count-width checks and awaits its paired gameplay replay. [Checkpoint](editorial_nagasaki_tavern_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
 

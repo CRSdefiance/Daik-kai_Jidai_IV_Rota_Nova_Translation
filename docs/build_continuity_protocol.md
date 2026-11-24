@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Nagasaki Tavern spare-berth prompt with the count and question on separate lines. [Checkpoint](editorial_nagasaki_tavern_recruitment_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
