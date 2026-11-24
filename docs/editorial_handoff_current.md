@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the one-line village sighting and verified the Narvik Promised Words exchange. [Checkpoint](editorial_narvik_lookout_registered_20261124.md)
+
+Ordinary play verified Copenhagen resupply, departure and declining to stop again. The focused Narvik replay used a source-checked ship position and ordinary controls for discovery, village services, and entering the accepted answer. The paired replay matched 48 surrounding frames. Continue practical random and town encounters, the five archived COMMON display owners, and the ordinary Missionary input. Review period placement in the shared Promised Words quotation template across its stock clues.
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Port Worker's more natural warning to Hodram at Tripoli. [Checkpoint](editorial_tripoli_hodram_warning_registered_20261124.md)
 
 The ordinary Syracuse crossing discovered Tripoli, reached all five turns of Hodram's warning, and verified the resupply and the refused Auto Move to Lisbon. The revised line passed paired gameplay with 23 matching companion frames. Three level-up notices also passed. The sole Drive ROM matches the registry. Continue practical village and random scenes, the five archived display owners and the ordinary Missionary input.

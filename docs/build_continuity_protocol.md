@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the one-line village sighting and verified the Narvik Promised Words exchange. [Checkpoint](editorial_narvik_lookout_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Port Worker's more natural warning to Hodram at Tripoli. [Checkpoint](editorial_tripoli_hodram_warning_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
