@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Tunis Shopkeeper's courteous Market advice. [Checkpoint](editorial_tunis_shop_advice_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Guild sale, bargaining, and insufficient-funds quotes. [Checkpoint](editorial_guild_trade_numerals_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

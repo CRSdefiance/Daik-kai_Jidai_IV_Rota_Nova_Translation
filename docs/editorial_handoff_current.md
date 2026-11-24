@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified the headquarters ownership inputs in ordinary Tunis and Nagasaki save loads and the 125-slot backup inventory. All 27 aligned Fleet Info destination writers now have documented input categories. The separate docking fallback can carry forward a stored 114, while both no-dock selectors choose ordinary ports. Continue practical unvisited town and random exchanges and the five archived COMMON display owners on the registered Tunis candidate. Ordinary production of the Missionary slot remains open. [Current save and native evidence](editorial_fleet_company_and_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reconciled the Tunis release and its two Guild predecessors. The three exact predecessor inverses, 416 priority decisions, 3,668 COMMON storage dispositions and 50 story wrap dispositions pass. The changed Yard formatter still supplies COMMON 1245 at the native wrapper boundary. The five archived display owners, unobserved Fleet Info producers, and practical town and random replay coverage remain open. [Current acceptance audit](editorial_acceptance_after_tunis_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Tunis Shopkeeper's courteous Market advice. [Checkpoint](editorial_tunis_shop_advice_registered_20261124.md)
+
+Ordinary play visited all three Tunis Delicacy Shops and verified four revised replies, the alternate forecast and the return to town. All 124 goods substitutions passed native rendering and visual review. Candidate startup, 463 release checks, and exact clean-input reconstruction passed. Drive holds the sole hash-verified Tunis candidate. Continue practical unvisited town and random exchanges, the five archived COMMON display owners, the remaining Fleet Info producers, and final coverage reconciliation. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/tunis_shop_advice_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/tunis_shop_advice_cleanup_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Traced Fleet Info's two headquarters-based destination writers to the stock company catalogue. All 20 normal startup headquarters match the clean source. The two no-headquarters fallbacks exclude slot 114 across all initialized docking slots in the focused tests. Continue the remaining runtime ownership questions, the five archived COMMON display leads, and practical unvisited town and random scenes on the registered Guild candidate. [Exact evidence and scope](editorial_fleet_headquarters_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

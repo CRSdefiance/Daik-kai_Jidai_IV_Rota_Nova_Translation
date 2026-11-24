@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified company affiliation from two ordinary saves, 26,000 stored affiliation bytes in the existing backup inventory, and the two no-dock fallback branches. All 27 aligned Fleet Info destination writers have documented input categories. The focused tests show that the fallback retains a supplied Missionary slot and picks an ordinary port when it receives no dock. [Fleet Info findings](editorial_fleet_company_and_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified the exact release chain from Yard through Tunis, with 27,700 distinct credits, all 3,668 COMMON entries accounted for in the coverage inventory, and all 50 current progressive story wrap flags reconciled. The changed Yard price path still supplies its original COMMON message. [Current acceptance audit](editorial_acceptance_after_tunis_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Tunis Shopkeeper's courteous Market advice. [Checkpoint](editorial_tunis_shop_advice_registered_20261124.md)
+
+One prose revision and three justified retentions across four existing reviews. The 124 goods cases preserved each complete name on one page. Ordinary Tunis play verified four revised holds and 11 pixel-identical context or transition holds. The forecast body and nameplate also match, with a separately logged selection blink. The sole Drive copy matches the registered clean-input reconstruction. [Current evidence](editorial_tunis_shop_advice_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Pushed the London and Seoul Guild fixes and both clean-input patches, checked all 30 declared package hashes, and passed 17 focused regressions. The next offline Fleet Info check verified the 20 company headquarters rows and 742 writer cases on the active Guild candidate. [Fleet Info findings](editorial_fleet_headquarters_20261124.md) · [GitHub checkpoint](https://github.com/CRSdefiance/Daik-kai_Jidai_IV_Rota_Nova_Translation/commit/c33aa414a2abe13419aa643961b2b6a3dbb63ec2)
 
 # Current editorial checkpoint - 2026-11-24
