@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Maria's captured-ship notice with the complete ship name on one line. [Checkpoint](editorial_maria_captured_ship_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

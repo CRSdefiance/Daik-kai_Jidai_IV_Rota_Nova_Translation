@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified both Quit Game outcomes on Maria's current testing ROM and retained the complete confirmation. All 771 logged COMMON requests across the 83 included captures match their prior bounded callers. The five archived IDs remain unobserved. [Runtime evidence and exact review](editorial_archived_common_observed_callers_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reconciled the original numeric and byte-range file opens on Maria's captured-ship candidate. Clean and installed ROMs share the same 34 file-open references. The offline checks bind the cartridge tables, overlay payload and startup sound object to their original resources. The five archived messages still need direct display evidence. [Exact resource paths](editorial_archived_common_filesystem_paths_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Maria's captured-ship notice with the complete ship name on one line. [Checkpoint](editorial_maria_captured_ship_registered_20261124.md)
+
+One shared prose revision keeps War Ironclad together while retaining the original ship-name argument. Six other shared decisions retain their wording, and all eight Kurushima story pages match their approved display. The candidate passed 465 release checks and matches the sole Drive ROM.
+
+# Current editorial checkpoint - 2026-11-24
+
+Retained seven Syracuse Palace and Market records after ordinary play. The contract cost 1,458 gold and granted a 1% share. Charles's No path kept both staged Iron Ore lots, and Yes sold them for 3,578 gold. Both Goods Info modes passed complete glyph checks. [Syracuse gameplay and decisions](editorial_syracuse_contract_and_trade_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
 
 Reviewed eight COMMON records across the Market and Palace exchange. One prose revision restores the guard's blunt tone and fits on two lines. Seven justified retentions include two offline alternate replies. Ordinary play verified both revised holds and 31 matching companion frames. The cumulative candidate passed 464 release checks and matches the sole Drive ROM.

@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-24
 
+Reconciled 771 native requests across 83 emulator captures to 18 bounded callers. Maria's fresh registered-ROM replay verified COMMON 319 and both Quit Game outcomes. Continue the five archived display owners through unvisited or computed paths, the ordinary Missionary input and practical town and random scenes. [Runtime and current Quit evidence](editorial_archived_common_observed_callers_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Bound the six file-ID opens and three direct byte-range sites on the registered Maria captured-ship candidate. Cartridge metadata and overlay reads are disjoint from the COMMON payload, and the captured startup audio object reopens the stock sound archive. Continue the five archived display owners through computed message arguments and other indirect paths, alongside practical unvisited scenes and the Missionary destination input. [File-open and native startup evidence](editorial_archived_common_filesystem_paths_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered Maria's captured-ship notice with the complete ship name on one line. [Checkpoint](editorial_maria_captured_ship_registered_20261124.md)
+
+Ordinary controls reached the captured War Ironclad after the Kurushima duel. The corrected notice, 43 matching frames, 29 native name cases, startup and exact clean-input reconstruction passed. Drive holds the sole hash-verified candidate. Continue practical unvisited scenes, the five archived COMMON display owners, and the ordinary Missionary destination input. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/maria_captured_ship_drive_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Syracuse play verified both Palace contract outcomes, Charles Rochefort's two sale outcomes and the complete Cargo and Local Goods Info displays. Seven records retain their wording across ten verified holds. Continue from the registered Palace candidate with practical unvisited town and random exchanges, the five remaining archived COMMON display owners and the ordinary Missionary destination input. [Syracuse gameplay and exact records](editorial_syracuse_contract_and_trade_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Tunis Palace guard's two-line refusal to grant a trade contract. [Checkpoint](editorial_tunis_palace_refusal_registered_20261124.md)
 
 Both ordinary Palace holds and 31 companion frames passed. The full patch reconstruction, startup, and sole Drive ROM match the registered candidate. Continue practical unvisited town and random exchanges, the five archived COMMON display owners, and the ordinary producer for the Missionary destination. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/tunis_palace_refusal_drive_20261124.json)
