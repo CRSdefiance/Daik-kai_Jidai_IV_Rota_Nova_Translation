@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Rechecked 77 changed shared-message forwarding paths on the Price Info ROM. Their possible message IDs still match the earlier audit. The check reused 629 exact proofs and added offline display-ownership evidence for the five archived messages. [Forwarding checkpoint](editorial_shared_forwarding_delta_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
 
 The batch records ten prose revisions, two wrap-only fixes and six justified retentions. Native validation covered every revised page, with ordinary Lisbon gameplay for Beef. The only Drive ROM matches the registered candidate exactly.

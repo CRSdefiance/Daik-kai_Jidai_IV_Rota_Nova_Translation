@@ -1,0 +1,5 @@
+# Shared message forwarding on the Price Info candidate
+
+The registered Price Info ROM has the same 827 aligned branch and pointer candidates as the earlier Market Trade audit across the 13 mapped forwarding routines. Of 706 bounded argument proofs, 629 have identical instruction windows, PC-relative literals and applicable voice tables. The other 77 were rechecked with the current ARM9 and produced the same IDs. None of those results selected COMMON 284, 318, or 750–752. [Exact current arguments and dependencies](../translations/editorial_checkpoints/shared_display_20261123/shared_forwarding_delta_20261123.json)
+
+All five records still match their exact clean and installed references. Their source reviews and drafts carry forward. This was an offline check. The prior native selector tests and other computed or indirect paths remain outside this comparison. Continue with practical town and random sampling and concrete display leads. [Earlier source and archive review](editorial_archived_message_operands_20261123.md)

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Rebound the bounded shared-message forwarding evidence to the registered Price Info ROM. Its 827 aligned reference candidates match the earlier inventory. All 77 static argument proofs affected by changed dependencies retained the same possible IDs, and 629 proofs reused exact dependencies. Continue practical town and random sampling and investigate concrete indirect display leads for the five archived messages. [Current ownership evidence](editorial_shared_forwarding_delta_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Corrected Price Info wording and wraps for twelve trade goods. [Checkpoint](editorial_price_info_descriptions_registered_20261123.md)
 
 The Price Info candidate passed 446 release checks, exact clean-input reconstruction and Drive readback. The cumulative story and runtime evidence carries forward through the complete parent inverse. Continue the remaining text display ownership and practical town and random coverage, including the five archived message callers. The older-record technical re-audit and artwork stay separate.
