@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Both Yard fixes and their clean-input patches are on GitHub. The archived COMMON storage check verified 158 native requests, including each entry in the two affected blocks. The Fleet Info decoder confirmed 11 retail story commands. Both checks were offline. [Archived storage](editorial_archived_message_storage_20261124.md) · [Fleet Info commands](editorial_fleet_authored_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Yard dialogue digits for prices, counts, discounts, durations, and refunds. [Checkpoint](editorial_yard_numerals_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

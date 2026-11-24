@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Both Yard fixes are on GitHub at `cdb6ff73`. The five archived COMMON messages each have one storage owner, and the native getter returned every entry in the two affected blocks. The Fleet Info decoder confirmed 11 retail story commands. Continue the unresolved gameplay callers, alternate Fleet Info saved inputs, and practical unvisited town and random scenes. [Archived storage checkpoint](editorial_archived_message_storage_20261124.md) · [Fleet Info commands](editorial_fleet_authored_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered consistent Yard dialogue digits for prices, counts, discounts, durations, and refunds. [Checkpoint](editorial_yard_numerals_registered_20261124.md)
 
 The ordinary Nagasaki replay verified the mast and sale panels and 53 surrounding frames. Exact patch reconstruction and the sole Drive ROM match the candidate. Continue the five archived COMMON display owners, Fleet Info saved inputs and authored command reachability, and practical unvisited town and random scenes.
