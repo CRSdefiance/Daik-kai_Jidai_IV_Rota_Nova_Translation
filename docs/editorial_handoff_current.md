@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified Nagasaki's two Tavern tips, buying a round, recruiting 57 sailors, even assignment, and return to town. Retained 14 distinct records and proposed a more natural spare-capacity prompt for COMMON 1045. Continue with the count-width preflight, paired recruiting replay, five archived message owners, and practical unvisited scenes. [Tavern and recruitment evidence](editorial_nagasaki_tavern_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Reconstructed all 146 Fleet Info inputs at Copenhagen's first Sea View hold from 51 ordinary docking and destination writes. Nagasaki's first town hold still matches all 146 saved bytes. The seven offline selector bounds now cover initialized centers 0–115. Continue the five archived message owners, direct saved inputs and authored fallback, and practical town and random scenes. [Trace and selector evidence](editorial_fleet_postload_writes_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

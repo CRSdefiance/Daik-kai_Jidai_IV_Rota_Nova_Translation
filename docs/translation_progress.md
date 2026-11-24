@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified the ordinary Nagasaki Tavern exchange through crew recruitment and the return to town. Retained 14 distinct records and flagged one repetitive recruiting prompt for revision. [Checkpoint](editorial_nagasaki_tavern_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Accounted for all 45 changes to Fleet Info inputs after the Copenhagen save loaded. The seven previously checked town-list writers keep their bounds across the full initialized graph. [Checkpoint](editorial_fleet_postload_writes_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
