@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified the Alexandria Auto Move refusal and bounded the original port-object route-arrival input. [Checkpoint](editorial_athens_auto_move_and_port_origins_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

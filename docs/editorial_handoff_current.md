@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
+
+The new line passed in ordinary play and fits three native rows. Both choices, the observed Auto Move arrival and five shared notices have exact references. Startup and 455 release checks passed. The clean-input patch and the sole Drive ROM match the candidate byte for byte. Continue practical town and random scenes, the five archived COMMON paths and unresolved Fleet Info inputs. [Current evidence](editorial_stockholm_recruiting_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 An ordinary Auto Move replay verified the Alexandria route refusal and exit back to Athens. An offline check traced the port-object writers through route arrival and docking state. All 354 initialized route endpoints returned ports 0–89. The identified headquarters reassignment paths also exclude slot 114. Continue the remaining stored docking and headquarters inputs, the five archived COMMON message paths and practical gameplay coverage on the Athens build. [Auto Move and port origins](editorial_athens_auto_move_and_port_origins_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

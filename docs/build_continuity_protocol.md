@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered Gerhard's recruiting advice after both ordinary Stockholm Tavern choices. [Checkpoint](editorial_stockholm_recruiting_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Tavern's item rumor after ordinary Athens and Valencia gameplay. [Checkpoint](editorial_athens_item_rumor_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-23
