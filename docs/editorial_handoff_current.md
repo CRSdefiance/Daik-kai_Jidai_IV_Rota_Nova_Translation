@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Athens play verified Trade without a contract, cancelling and paying a 1,426-gold investment, and the unchanged contract requirement after payment. Four lines retain their wording across seven verified holds. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Athens Market evidence](editorial_athens_active_market_trends_20261124.md#market-trade-and-investment-without-a-contract)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified current decisions for all 521 original prepared story texts and all 277 original open wrap leads. Five predecessor inverses and the release and renderer checks passed. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Acceptance checkpoint](editorial_acceptance_after_deck_skill_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Four retained Athens Market texts passed seven complete body and nameplate checks in ordinary gameplay. Cancellation kept all 7,776 gold. Paying 1,426 gold left 6,350 and Trade still required a contract. [Athens Market evidence](editorial_athens_active_market_trends_20261124.md#market-trade-and-investment-without-a-contract)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified current decisions for all 521 original prepared story texts and all 277 original open wrap leads. Five predecessor inverses and the release and renderer checks passed. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Acceptance checkpoint](editorial_acceptance_after_deck_skill_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
