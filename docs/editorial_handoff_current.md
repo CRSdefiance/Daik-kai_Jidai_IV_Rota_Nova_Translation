@@ -1,3 +1,37 @@
+# Current editorial checkpoint - 2026-11-24
+
+An ordinary Auto Move replay verified the Alexandria route refusal and exit back to Athens. An offline check traced the port-object writers through route arrival and docking state. All 354 initialized route endpoints returned ports 0–89. The identified headquarters reassignment paths also exclude slot 114. Continue the remaining stored docking and headquarters inputs, the five archived COMMON message paths and practical gameplay coverage on the Athens build. [Auto Move and port origins](editorial_athens_auto_move_and_port_origins_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+The ordinary Ceuta voyage confirmed five portrait panels, three floating level-up notices and both sampled returns to Sea View. All 827 references in the earlier COMMON census now have current dispositions. The five archived message IDs remain open outside that census. Continue the unresolved computed paths, conditional Fleet Info inputs and practical town and random coverage on the registered Athens build. [Voyage and reference coverage](editorial_ceuta_storm_and_shared_references_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Tavern's item rumor after ordinary Athens and Valencia gameplay. [Checkpoint](editorial_athens_item_rumor_registered_20261124.md)
+
+The two ordinary town runs verify 24 complete panels. Myrine's revised rumor kept all 218 item names intact in native tests and passed the Athens replay through the return to town. Drive holds the one hash-verified candidate. The Fleet Info audit excludes Missionary from four additional dispatch calls and traces the remaining writer inputs to headquarters, a port pointer, or a docking fallback. Continue the open upstream ranges, the five archived COMMON message paths and practical random scene sampling. [Fleet Info inputs](editorial_fleet_destination_inputs_20261124.md) · [Current acceptance, Drive and cleanup evidence](../translations/editorial_checkpoints/shared_display_20261123/editorial_acceptance_after_athens_rumor_20261124.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Julio's revised reply when Rafael chooses to prepare alone in Lisbon. [Checkpoint](editorial_rafael_prepare_alone_registered_20261123.md)
+
+The registered Rafael candidate passed 453 release checks, a byte-exact clean-input rebuild, and a New Game replay of **Prepare alone** through the return to Lisbon. The B44 change adds no heuristic wrap flags or archived-key matches. The requested Drive folder contains one `.nds`, and its streamed SHA-256 matches the candidate. The cleanup receipt accounts for three exact duplicates, focused test scratch, and lossless manifest compression. Continue practical town and random encounters, the five archived COMMON keys, and the open Fleet Info call paths. [Current acceptance evidence](../translations/editorial_checkpoints/shared_display_20261123/editorial_acceptance_after_rafael_preparation_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Reconciled the four release deltas since Genoa with the current Kurushima candidate. The 416 priority decisions, 414 default-name getter cases, 276 scoped COMMON dispositions and 50 documented story-wrap flags pass. The five archived COMMON keys remain open outside the verified forwarding paths. Continue representative town and random scenes, the concrete indirect display leads and final coverage reconciliation. [Current acceptance evidence](editorial_acceptance_after_kurushima_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two wording edits and one wrap fix in Maria's confrontation with Kurushima. [Checkpoint](editorial_kurushima_confrontation_wraps_registered_20261123.md)
+
+The revised three pages passed in ordinary gameplay, and the six offline pages include the original name substitution at four widths. The cumulative patch rebuilds the sole Drive ROM exactly. The longer predecessor voyage verified Hua's takeover and abandonment, the crew reassignment prompt, scurvy, and the terminal Chun warning. Ezo remained unvisited. Continue practical town and random sampling alongside the remaining destination and archived COMMON display leads. [Longer ordinary voyage](editorial_maria_post_nagasaki_voyage_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Bound the ordinary Fleet Info order picker to ports 0–89, checked seven town-list writers within their main-port input range, and matched the explicit authored fleet-order destinations against the clean Japanese archives. The authored docking-byte fallback, hidden-port inputs to neighbor searches and six other direct writer sites remain open. Continue practical town and random gameplay and investigate remaining display callers when their inputs can be traced. [Exact offline evidence](editorial_fleet_destination_lists_20261123.md)
+
 # Current editorial checkpoint - 2026-11-23
 
 Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)

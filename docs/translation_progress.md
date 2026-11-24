@@ -1,3 +1,33 @@
+# Current editorial checkpoint - 2026-11-24
+
+Verified the Alexandria Auto Move refusal and bounded the original port-object route-arrival input. [Checkpoint](editorial_athens_auto_move_and_port_origins_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified ordinary storm and hunger dialogue at sea and reconciled the current shared-message caller census. [Checkpoint](editorial_ceuta_storm_and_shared_references_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Tavern's item rumor after ordinary Athens and Valencia gameplay. [Checkpoint](editorial_athens_item_rumor_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Julio's revised reply when Rafael chooses to prepare alone in Lisbon. [Checkpoint](editorial_rafael_prepare_alone_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+The current coverage audit binds all four release deltas since Genoa, all 27,700 historical review credits, and 50 story-wrap flags with exact decisions. All 414 default-name getters passed. The archived-message audit carries forward 706 bounded arguments, 42 previously mapped references, and 66 classified story and event operands. [Current acceptance evidence](editorial_acceptance_after_kurushima_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two wording edits and one wrap fix in Maria's confrontation with Kurushima. [Checkpoint](editorial_kurushima_confrontation_wraps_registered_20261123.md)
+
+Thirteen shared panels from the longer ordinary voyage retain their wording, with distinct name substitutions for Hua and Chun. The three revised story holds, twelve exact control frames, six native pages, 17 focused tests and 452 release checks passed. The clean-input patch and Drive readback match the complete candidate. The ledger retains 27,700 historical credits. [Ordinary voyage findings](editorial_maria_post_nagasaki_voyage_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Verified 259 regional picker cases, 1,063 original town-list cases and 768 authored fleet-order dispatch cases on the registered Nagasaki candidate. The explicit story destinations match the clean source and exclude the Missionary slot. The conditional input limits and six remaining writer sites are recorded. The existing release and editorial credit carry forward. [Fleet Info findings](editorial_fleet_destination_lists_20261123.md)
+
 # Current editorial checkpoint - 2026-11-23
 
 Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)

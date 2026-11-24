@@ -1,3 +1,15 @@
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Tavern's item rumor after ordinary Athens and Valencia gameplay. [Checkpoint](editorial_athens_item_rumor_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered Julio's revised reply when Rafael chooses to prepare alone in Lisbon. [Checkpoint](editorial_rafael_prepare_alone_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Registered two wording edits and one wrap fix in Maria's confrontation with Kurushima. [Checkpoint](editorial_kurushima_confrontation_wraps_registered_20261123.md)
+
 # Current editorial checkpoint - 2026-11-23
 
 Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)

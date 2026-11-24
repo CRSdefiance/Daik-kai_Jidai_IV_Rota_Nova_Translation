@@ -1,0 +1,4822 @@
+{
+  "candidate_sha256": "35837cd00edd951651933539c3f5c0d3aa17553be8987d4b68b321f29a2fb656",
+  "release": {
+    "path": "releases/all_routes_editorial_20261123_nagasaki_dream_candidate/verification/registered_release_verification.json",
+    "sha256": "491fa848589ae0d3dbff831d375f338270bc27c4a3d3dc0246f09624153b34bd"
+  },
+  "parent_ARM9_matches": true,
+  "startup": {
+    "path": ".codex-release-work/nagasaki_dream_20261123/startup/capture/capture_report.json",
+    "sha256": "1755c683fe8c16c2f3447f1b7f63ca4e309d378e680bb66dbb415bf4a376c0ef"
+  },
+  "read_only_snapshot": {
+    "path": ".codex-release-work\\nagasaki_dream_20261123\\startup\\capture\\final_arm9_ram.bin",
+    "bytes": 4194304,
+    "sha256": "ee8c597d2259b2012a8594d0896f6f3c180f05789878b71c0bd71c6e17ab5134",
+    "read_only_export": true
+  },
+  "mode": "offline native execution and static dispatch binding",
+  "prior_census": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_destination_copies_20261123.json",
+    "sha256": "39d0ce6f19e5dfeabd727cc5b1e377b80433e803cf10e38b6e4a59f7aa96362b"
+  },
+  "aligned_helper_calls": {
+    "34123356": [
+      [
+        "arm9_section_0",
+        34123004
+      ]
+    ],
+    "34119948": [
+      [
+        "arm9_section_0",
+        34119316
+      ],
+      [
+        "arm9_section_0",
+        34119328
+      ]
+    ]
+  },
+  "independently_verified_picker": {
+    "writer": 34123776,
+    "consumer_entry": 34123356,
+    "picker": {
+      "tail_address": 34127236,
+      "tested_widget_result_values": 259,
+      "valid_widget_commands": [
+        29,
+        118
+      ],
+      "ordinary_returned_destination_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "cancel_or_other_result": 115,
+      "boundaries": {
+        "-1": 115,
+        "28": 115,
+        "29": 0,
+        "118": 89,
+        "119": 115,
+        "143": 115,
+        "255": 115
+      }
+    },
+    "cancelled_selection_skips_writer": true
+  },
+  "conditional_list_writer_sites": [
+    {
+      "call": 33747068,
+      "producer_start": 33747012,
+      "producer_end": 33747072,
+      "findings": "Three town-search loops plus nearby faction ports.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        113
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33748984,
+      "producer_start": 33748916,
+      "producer_end": 33748988,
+      "findings": "Nearby ports with a faction predicate.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33772876,
+      "producer_start": 33772648,
+      "producer_end": 33772888,
+      "findings": "Nearby ports and an optional region filter.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33773072,
+      "producer_start": 33772976,
+      "producer_end": 33773076,
+      "findings": "Nearby ports with a faction predicate and any-region fallback.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33773540,
+      "producer_start": 33773344,
+      "producer_end": 33773544,
+      "findings": "Two filtered nearby lists and two nearby fallbacks.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33773988,
+      "producer_start": 33773932,
+      "producer_end": 33774000,
+      "findings": "Nearby ports around the fleet's stored docking slot.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    },
+    {
+      "call": 33774104,
+      "producer_start": 33774048,
+      "producer_end": 33774116,
+      "findings": "Nearby ports around the fleet's stored docking slot.",
+      "scoped_neighbor_center_range": [
+        0,
+        89
+      ],
+      "possible_port_slots": [
+        0,
+        89
+      ],
+      "conditional_scope": "Neighbor lookups use a main port center; separate global searches can include hidden ports."
+    }
+  ],
+  "native_cases": {
+    "raw_neighbor_rows": 90,
+    "active_neighbor_rows": 90,
+    "faction_filtered_neighbor_rows": 540,
+    "finite_port_searches": 342,
+    "main_port_list_without_a_center": 1
+  },
+  "story_fleet_orders": {
+    "writer": 33731640,
+    "clean_archive_scan": [
+      {
+        "path": "/data/SC0.DK4",
+        "sha256": "61dc09cd5ac29002b7c497bc17dfeb7cc92d2a5dcbcba7b80791a8fb580b9f7f",
+        "blocks": 343,
+        "commands": [
+          {
+            "block": 7,
+            "block_offset": 452,
+            "exact_hex": "00a0ffff0000df82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 10,
+            "block_offset": 544,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 11,
+            "block_offset": 226,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 216,
+            "exact_hex": "00a0ffff00001f82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 22,
+            "block_offset": 594,
+            "exact_hex": "00a0ffff0d041e82",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 674,
+            "exact_hex": "00a0ffff11042082",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 786,
+            "exact_hex": "00a0ffff1b042282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4070,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4078,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4086,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 3670,
+            "exact_hex": "00a0ffff19032282",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 1232,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 44,
+            "block_offset": 6490,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 54,
+            "block_offset": 568,
+            "exact_hex": "00a0ffff22032382",
+            "usual_marker": true,
+            "explicit_slot": 34,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 800,
+            "exact_hex": "00a0ffff11094882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 820,
+            "exact_hex": "00a0ffff11034882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 74,
+            "block_offset": 516,
+            "exact_hex": "00a0ffff0d043082",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 89,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 130,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 132,
+            "block_offset": 10,
+            "exact_hex": "00a0ffff00003082",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 132,
+            "block_offset": 570,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 146,
+            "block_offset": 718,
+            "exact_hex": "00a0ffff26032582",
+            "usual_marker": true,
+            "explicit_slot": 38,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 300,
+            "exact_hex": "00a0ffff23073e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 210,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 283,
+            "block_offset": 236,
+            "exact_hex": "00a0ffff53074582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 286,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 289,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 325,
+            "block_offset": 435,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 330,
+            "block_offset": 198,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC1.DK4",
+        "sha256": "33981b27375cca1b9293752662d0dedb820dd310526c9dbe0612a397f38313ab",
+        "blocks": 325,
+        "commands": [
+          {
+            "block": 12,
+            "block_offset": 258,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 13,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3760,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3768,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3776,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 56,
+            "exact_hex": "00a0ffff4008b082",
+            "usual_marker": true,
+            "explicit_slot": 64,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 216,
+            "exact_hex": "00a0ffff4208b082",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 30,
+            "block_offset": 1448,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 36,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff3a042982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 544,
+            "exact_hex": "00a0ffff23083e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 264,
+            "exact_hex": "00a0ffff3a043982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1322,
+            "exact_hex": "00a0ffff19053582",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1334,
+            "exact_hex": "00a0ffff19053482",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 42,
+            "block_offset": 2322,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 45,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 354,
+            "exact_hex": "00a0ffff15094682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 374,
+            "exact_hex": "00a0ffff16034682",
+            "usual_marker": true,
+            "explicit_slot": 22,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 48,
+            "block_offset": 180,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 51,
+            "block_offset": 318,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 52,
+            "block_offset": 200,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 55,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff41032b82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 70,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff53084582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 90,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 266,
+            "block_offset": 210,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 270,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 278,
+            "exact_hex": "00a0ffff4e074282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 276,
+            "block_offset": 366,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 279,
+            "block_offset": 324,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 282,
+            "block_offset": 450,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 286,
+            "block_offset": 1294,
+            "exact_hex": "00a0ffff3f08b082",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 309,
+            "block_offset": 435,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 314,
+            "block_offset": 228,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC2.DK4",
+        "sha256": "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326",
+        "blocks": 336,
+        "commands": [
+          {
+            "block": 10,
+            "block_offset": 426,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4020,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4028,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4036,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 20,
+            "block_offset": 992,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 2988,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 31,
+            "block_offset": 784,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 32,
+            "block_offset": 368,
+            "exact_hex": "00a0ffff0000d982",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 47,
+            "block_offset": 442,
+            "exact_hex": "00a0ffff3f094782",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 47,
+            "block_offset": 462,
+            "exact_hex": "00a0ffff00034782",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 58,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff3d041c82",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 80,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 141,
+            "block_offset": 16,
+            "exact_hex": "00a0ffff4e084282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 267,
+            "block_offset": 318,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 270,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 392,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 276,
+            "block_offset": 316,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 279,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 312,
+            "block_offset": 435,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 317,
+            "block_offset": 228,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC3.DK4",
+        "sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+        "blocks": 303,
+        "commands": [
+          {
+            "block": 19,
+            "block_offset": 3706,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3714,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3722,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2444,
+            "exact_hex": "00a0ffff41083f82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2468,
+            "exact_hex": "00a0ffff00033e82",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2484,
+            "exact_hex": "00a0ffff14084682",
+            "usual_marker": true,
+            "explicit_slot": 20,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2500,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2516,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 63,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 237,
+            "block_offset": 318,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 240,
+            "block_offset": 380,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 243,
+            "block_offset": 316,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 246,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 249,
+            "block_offset": 324,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 281,
+            "block_offset": 435,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 286,
+            "block_offset": 228,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC0.DK4",
+        "sha256": "37a2bd427dea99aac7a3204a341014f0e6ce3a5d2f0738a223d025aae7f8554c",
+        "blocks": 344,
+        "commands": [
+          {
+            "block": 7,
+            "block_offset": 468,
+            "exact_hex": "00a0ffff0000df82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 10,
+            "block_offset": 552,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 11,
+            "block_offset": 232,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff00001f82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 328,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 22,
+            "block_offset": 598,
+            "exact_hex": "00a0ffff0d041e82",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 678,
+            "exact_hex": "00a0ffff11042082",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 790,
+            "exact_hex": "00a0ffff1b042282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4204,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4212,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4220,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 3790,
+            "exact_hex": "00a0ffff19032282",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 1278,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 44,
+            "block_offset": 6870,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 54,
+            "block_offset": 584,
+            "exact_hex": "00a0ffff22032382",
+            "usual_marker": true,
+            "explicit_slot": 34,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 832,
+            "exact_hex": "00a0ffff11094882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 852,
+            "exact_hex": "00a0ffff11034882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 74,
+            "block_offset": 534,
+            "exact_hex": "00a0ffff0d043082",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 89,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 130,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 132,
+            "block_offset": 10,
+            "exact_hex": "00a0ffff00003082",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 132,
+            "block_offset": 578,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 147,
+            "block_offset": 758,
+            "exact_hex": "00a0ffff26032582",
+            "usual_marker": true,
+            "explicit_slot": 38,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 312,
+            "exact_hex": "00a0ffff23073e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 278,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 281,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 284,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff53074582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 287,
+            "block_offset": 226,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 290,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 326,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 331,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC1.DK4",
+        "sha256": "6fbd570749265aeb31ac01b41f1b17bada0e7925b24fdc5bbb14ab38003f6162",
+        "blocks": 326,
+        "commands": [
+          {
+            "block": 12,
+            "block_offset": 260,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 13,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3900,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3908,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3916,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 56,
+            "exact_hex": "00a0ffff4008b082",
+            "usual_marker": true,
+            "explicit_slot": 64,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 220,
+            "exact_hex": "00a0ffff4208b082",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 30,
+            "block_offset": 1466,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 36,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff3a042982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 558,
+            "exact_hex": "00a0ffff23083e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 268,
+            "exact_hex": "00a0ffff3a043982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1330,
+            "exact_hex": "00a0ffff19053582",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1342,
+            "exact_hex": "00a0ffff19053482",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 42,
+            "block_offset": 2396,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 45,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 358,
+            "exact_hex": "00a0ffff15094682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 378,
+            "exact_hex": "00a0ffff16034682",
+            "usual_marker": true,
+            "explicit_slot": 22,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 48,
+            "block_offset": 184,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 51,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 52,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 55,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff41032b82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 70,
+            "block_offset": 210,
+            "exact_hex": "00a0ffff53084582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 90,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 267,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 271,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 290,
+            "exact_hex": "00a0ffff4e074282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 384,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 338,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 283,
+            "block_offset": 472,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 287,
+            "block_offset": 1328,
+            "exact_hex": "00a0ffff3f08b082",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 310,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 315,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC2.DK4",
+        "sha256": "541e03c961c06db910e52a51362878ce119dab8437eeac425da2fed77a0447af",
+        "blocks": 337,
+        "commands": [
+          {
+            "block": 10,
+            "block_offset": 436,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4156,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4164,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4172,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 20,
+            "block_offset": 1008,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 3164,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 31,
+            "block_offset": 798,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 32,
+            "block_offset": 374,
+            "exact_hex": "00a0ffff0000d982",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 47,
+            "block_offset": 462,
+            "exact_hex": "00a0ffff3f094782",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 47,
+            "block_offset": 482,
+            "exact_hex": "00a0ffff00034782",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 58,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff3d041c82",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 80,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 142,
+            "block_offset": 16,
+            "exact_hex": "00a0ffff4e084282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 268,
+            "block_offset": 330,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 271,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 412,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 313,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 318,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC3.DK4",
+        "sha256": "6a92b955814e93d3fa0e36daf19973bbb49e4da553b194eb183d3d8817a000d3",
+        "blocks": 303,
+        "commands": [
+          {
+            "block": 19,
+            "block_offset": 3844,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3852,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3860,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2578,
+            "exact_hex": "00a0ffff41083f82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2602,
+            "exact_hex": "00a0ffff00033e82",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2618,
+            "exact_hex": "00a0ffff14084682",
+            "usual_marker": true,
+            "explicit_slot": 20,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2634,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2650,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 63,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 237,
+            "block_offset": 330,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 240,
+            "block_offset": 400,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 243,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 246,
+            "block_offset": 226,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 249,
+            "block_offset": 338,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 281,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 286,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      }
+    ],
+    "installed_archive_scan": [
+      {
+        "path": "/data/SC0.DK4",
+        "sha256": "0a4103312fb7d63a20c01d26fa02410b2290adb23089213e64ea69250e94c4c6",
+        "blocks": 343,
+        "commands": [
+          {
+            "block": 7,
+            "block_offset": 458,
+            "exact_hex": "00a0ffff0000df82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 10,
+            "block_offset": 606,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 11,
+            "block_offset": 230,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 244,
+            "exact_hex": "00a0ffff00001f82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 356,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 22,
+            "block_offset": 564,
+            "exact_hex": "00a0ffff0d041e82",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 644,
+            "exact_hex": "00a0ffff11042082",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 756,
+            "exact_hex": "00a0ffff1b042282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 3916,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 3924,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 3932,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 3640,
+            "exact_hex": "00a0ffff19032282",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 1164,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 44,
+            "block_offset": 6536,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 54,
+            "block_offset": 506,
+            "exact_hex": "00a0ffff22032382",
+            "usual_marker": true,
+            "explicit_slot": 34,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 820,
+            "exact_hex": "00a0ffff11094882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 840,
+            "exact_hex": "00a0ffff11034882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 74,
+            "block_offset": 472,
+            "exact_hex": "00a0ffff0d043082",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 89,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 130,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 132,
+            "block_offset": 10,
+            "exact_hex": "00a0ffff00003082",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 132,
+            "block_offset": 610,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 146,
+            "block_offset": 884,
+            "exact_hex": "00a0ffff26032582",
+            "usual_marker": true,
+            "explicit_slot": 38,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 310,
+            "exact_hex": "00a0ffff23073e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 256,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 283,
+            "block_offset": 280,
+            "exact_hex": "00a0ffff53074582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 286,
+            "block_offset": 258,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 289,
+            "block_offset": 264,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 330,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC1.DK4",
+        "sha256": "2ebf837da4a366b27917500719a5dc5aafa5bdb14178937990deaa2e69250984",
+        "blocks": 325,
+        "commands": [
+          {
+            "block": 12,
+            "block_offset": 268,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 13,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3848,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3856,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3864,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 56,
+            "exact_hex": "00a0ffff4008b082",
+            "usual_marker": true,
+            "explicit_slot": 64,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff4208b082",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 30,
+            "block_offset": 1420,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 36,
+            "block_offset": 110,
+            "exact_hex": "00a0ffff3a042982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 568,
+            "exact_hex": "00a0ffff23083e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 316,
+            "exact_hex": "00a0ffff3a043982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1240,
+            "exact_hex": "00a0ffff19053582",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1252,
+            "exact_hex": "00a0ffff19053482",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 42,
+            "block_offset": 2402,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 45,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 364,
+            "exact_hex": "00a0ffff15094682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 384,
+            "exact_hex": "00a0ffff16034682",
+            "usual_marker": true,
+            "explicit_slot": 22,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 48,
+            "block_offset": 158,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 51,
+            "block_offset": 314,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 52,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 55,
+            "block_offset": 98,
+            "exact_hex": "00a0ffff41032b82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 70,
+            "block_offset": 182,
+            "exact_hex": "00a0ffff53084582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 90,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 266,
+            "block_offset": 216,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 270,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 292,
+            "exact_hex": "00a0ffff4e074282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 276,
+            "block_offset": 398,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 279,
+            "block_offset": 390,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 282,
+            "block_offset": 466,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 286,
+            "block_offset": 1404,
+            "exact_hex": "00a0ffff3f08b082",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 314,
+            "block_offset": 258,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC2.DK4",
+        "sha256": "d25eee888e1bc45dd99df41b2401ff6f63728c2e7fa6586eea2f08e1209514c4",
+        "blocks": 336,
+        "commands": [
+          {
+            "block": 10,
+            "block_offset": 506,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4156,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4164,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4172,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 20,
+            "block_offset": 1106,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 3280,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 31,
+            "block_offset": 834,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 32,
+            "block_offset": 400,
+            "exact_hex": "00a0ffff0000d982",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 47,
+            "block_offset": 528,
+            "exact_hex": "00a0ffff3f094782",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 47,
+            "block_offset": 548,
+            "exact_hex": "00a0ffff00034782",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 58,
+            "block_offset": 200,
+            "exact_hex": "00a0ffff3d041c82",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 80,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 141,
+            "block_offset": 16,
+            "exact_hex": "00a0ffff4e084282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 267,
+            "block_offset": 392,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 270,
+            "block_offset": 224,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 273,
+            "block_offset": 420,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 276,
+            "block_offset": 290,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 279,
+            "block_offset": 250,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 317,
+            "block_offset": 254,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/data/SC3.DK4",
+        "sha256": "e9a6c577087c12a6fe5f3d0e45f4f4cc94610597535c1a6b146361a984084ac7",
+        "blocks": 303,
+        "commands": [
+          {
+            "block": 19,
+            "block_offset": 4076,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 4084,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 4092,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2508,
+            "exact_hex": "00a0ffff41083f82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2532,
+            "exact_hex": "00a0ffff00033e82",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2548,
+            "exact_hex": "00a0ffff14084682",
+            "usual_marker": true,
+            "explicit_slot": 20,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2564,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2580,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 63,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 237,
+            "block_offset": 408,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 240,
+            "block_offset": 436,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 243,
+            "block_offset": 306,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 246,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 249,
+            "block_offset": 386,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 286,
+            "block_offset": 258,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC0.DK4",
+        "sha256": "37a2bd427dea99aac7a3204a341014f0e6ce3a5d2f0738a223d025aae7f8554c",
+        "blocks": 344,
+        "commands": [
+          {
+            "block": 7,
+            "block_offset": 468,
+            "exact_hex": "00a0ffff0000df82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 10,
+            "block_offset": 552,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 11,
+            "block_offset": 232,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff00001f82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 21,
+            "block_offset": 328,
+            "exact_hex": "00a0ffff00001e82",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 22,
+            "block_offset": 598,
+            "exact_hex": "00a0ffff0d041e82",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 678,
+            "exact_hex": "00a0ffff11042082",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 790,
+            "exact_hex": "00a0ffff1b042282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4204,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4212,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 4220,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 3790,
+            "exact_hex": "00a0ffff19032282",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 1278,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 44,
+            "block_offset": 6870,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 54,
+            "block_offset": 584,
+            "exact_hex": "00a0ffff22032382",
+            "usual_marker": true,
+            "explicit_slot": 34,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 832,
+            "exact_hex": "00a0ffff11094882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 72,
+            "block_offset": 852,
+            "exact_hex": "00a0ffff11034882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 74,
+            "block_offset": 534,
+            "exact_hex": "00a0ffff0d043082",
+            "usual_marker": true,
+            "explicit_slot": 13,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 89,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 130,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 132,
+            "block_offset": 10,
+            "exact_hex": "00a0ffff00003082",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 132,
+            "block_offset": 578,
+            "exact_hex": "00a0ffff00003182",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 147,
+            "block_offset": 758,
+            "exact_hex": "00a0ffff26032582",
+            "usual_marker": true,
+            "explicit_slot": 38,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 312,
+            "exact_hex": "00a0ffff23073e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 278,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 281,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 284,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff53074582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 287,
+            "block_offset": 226,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 290,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 326,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 331,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC1.DK4",
+        "sha256": "6fbd570749265aeb31ac01b41f1b17bada0e7925b24fdc5bbb14ab38003f6162",
+        "blocks": 326,
+        "commands": [
+          {
+            "block": 12,
+            "block_offset": 260,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 13,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3900,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3908,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 17,
+            "block_offset": 3916,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 56,
+            "exact_hex": "00a0ffff4008b082",
+            "usual_marker": true,
+            "explicit_slot": 64,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 26,
+            "block_offset": 220,
+            "exact_hex": "00a0ffff4208b082",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 30,
+            "block_offset": 1466,
+            "exact_hex": "00a0ffff1b032282",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 36,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff3a042982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 37,
+            "block_offset": 558,
+            "exact_hex": "00a0ffff23083e82",
+            "usual_marker": true,
+            "explicit_slot": 35,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 39,
+            "block_offset": 268,
+            "exact_hex": "00a0ffff3a043982",
+            "usual_marker": true,
+            "explicit_slot": 58,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1330,
+            "exact_hex": "00a0ffff19053582",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 40,
+            "block_offset": 1342,
+            "exact_hex": "00a0ffff19053482",
+            "usual_marker": true,
+            "explicit_slot": 25,
+            "order": 5,
+            "source": "explicit operand"
+          },
+          {
+            "block": 42,
+            "block_offset": 2396,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 45,
+            "block_offset": 8,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 358,
+            "exact_hex": "00a0ffff15094682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 46,
+            "block_offset": 378,
+            "exact_hex": "00a0ffff16034682",
+            "usual_marker": true,
+            "explicit_slot": 22,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 48,
+            "block_offset": 184,
+            "exact_hex": "00a0ffff02030282",
+            "usual_marker": true,
+            "explicit_slot": 2,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 51,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 52,
+            "block_offset": 204,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 55,
+            "block_offset": 92,
+            "exact_hex": "00a0ffff41032b82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 70,
+            "block_offset": 210,
+            "exact_hex": "00a0ffff53084582",
+            "usual_marker": true,
+            "explicit_slot": 83,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 90,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 267,
+            "block_offset": 214,
+            "exact_hex": "00a0ffff11073f82",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 271,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 290,
+            "exact_hex": "00a0ffff4e074282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 384,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 338,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 283,
+            "block_offset": 472,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 287,
+            "block_offset": 1328,
+            "exact_hex": "00a0ffff3f08b082",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 310,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 315,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC2.DK4",
+        "sha256": "541e03c961c06db910e52a51362878ce119dab8437eeac425da2fed77a0447af",
+        "blocks": 337,
+        "commands": [
+          {
+            "block": 10,
+            "block_offset": 436,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4156,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4164,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 12,
+            "block_offset": 4172,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 20,
+            "block_offset": 1008,
+            "exact_hex": "00a0ffff1b03d982",
+            "usual_marker": true,
+            "explicit_slot": 27,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 22,
+            "block_offset": 3164,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 31,
+            "block_offset": 798,
+            "exact_hex": "00a0ffff00002282",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 32,
+            "block_offset": 374,
+            "exact_hex": "00a0ffff0000d982",
+            "usual_marker": true,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 47,
+            "block_offset": 462,
+            "exact_hex": "00a0ffff3f094782",
+            "usual_marker": true,
+            "explicit_slot": 63,
+            "order": 9,
+            "source": "explicit operand"
+          },
+          {
+            "block": 47,
+            "block_offset": 482,
+            "exact_hex": "00a0ffff00034782",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 58,
+            "block_offset": 218,
+            "exact_hex": "00a0ffff3d041c82",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 4,
+            "source": "explicit operand"
+          },
+          {
+            "block": 80,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 142,
+            "block_offset": 16,
+            "exact_hex": "00a0ffff4e084282",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 268,
+            "block_offset": 330,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 271,
+            "block_offset": 246,
+            "exact_hex": "00a0ffff38074182",
+            "usual_marker": true,
+            "explicit_slot": 56,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 274,
+            "block_offset": 412,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 277,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 280,
+            "block_offset": 248,
+            "exact_hex": "00a0ffff15084682",
+            "usual_marker": true,
+            "explicit_slot": 21,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 313,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 318,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      },
+      {
+        "path": "/testdata/SC3.DK4",
+        "sha256": "6a92b955814e93d3fa0e36daf19973bbb49e4da553b194eb183d3d8817a000d3",
+        "blocks": 303,
+        "commands": [
+          {
+            "block": 19,
+            "block_offset": 3844,
+            "exact_hex": "00a0ffff2d08b782",
+            "usual_marker": true,
+            "explicit_slot": 45,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3852,
+            "exact_hex": "00a0ffff5208b882",
+            "usual_marker": true,
+            "explicit_slot": 82,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 19,
+            "block_offset": 3860,
+            "exact_hex": "00a0ffff4e08b982",
+            "usual_marker": true,
+            "explicit_slot": 78,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2578,
+            "exact_hex": "00a0ffff41083f82",
+            "usual_marker": true,
+            "explicit_slot": 65,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2602,
+            "exact_hex": "00a0ffff00033e82",
+            "usual_marker": true,
+            "explicit_slot": 0,
+            "order": 3,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2618,
+            "exact_hex": "00a0ffff14084682",
+            "usual_marker": true,
+            "explicit_slot": 20,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2634,
+            "exact_hex": "00a0ffff29084982",
+            "usual_marker": true,
+            "explicit_slot": 41,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 33,
+            "block_offset": 2650,
+            "exact_hex": "00a0ffff2c081b82",
+            "usual_marker": true,
+            "explicit_slot": 44,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 63,
+            "block_offset": 72,
+            "exact_hex": "00a0ffff28081b82",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 237,
+            "block_offset": 330,
+            "exact_hex": "00a0ffff51074082",
+            "usual_marker": true,
+            "explicit_slot": 81,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 240,
+            "block_offset": 400,
+            "exact_hex": "00a0ffff28074482",
+            "usual_marker": true,
+            "explicit_slot": 40,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 243,
+            "block_offset": 326,
+            "exact_hex": "00a0ffff42074382",
+            "usual_marker": true,
+            "explicit_slot": 66,
+            "order": 7,
+            "source": "explicit operand"
+          },
+          {
+            "block": 246,
+            "block_offset": 226,
+            "exact_hex": "00a0ffff3d084782",
+            "usual_marker": true,
+            "explicit_slot": 61,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 249,
+            "block_offset": 338,
+            "exact_hex": "00a0ffff11084882",
+            "usual_marker": true,
+            "explicit_slot": 17,
+            "order": 8,
+            "source": "explicit operand"
+          },
+          {
+            "block": 281,
+            "block_offset": 471,
+            "exact_hex": "00a000ba0000d082",
+            "usual_marker": false,
+            "explicit_slot": null,
+            "order": 0,
+            "source": "protagonist fleet docking byte"
+          },
+          {
+            "block": 286,
+            "block_offset": 238,
+            "exact_hex": "00a0ffff1d08b082",
+            "usual_marker": true,
+            "explicit_slot": 29,
+            "order": 8,
+            "source": "explicit operand"
+          }
+        ]
+      }
+    ],
+    "explicit_operand_native_cases": 768,
+    "missionary_slot_absent_from_explicit_operands": true,
+    "fallback_dependency_open": "Protagonist fleet docking byte at +0x3C when the order operand is zero."
+  },
+  "initialized_port_graph": {
+    "edges_address": 36244836,
+    "neighbor_address": 36244028,
+    "edge_count": 177,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        12,
+        27
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        14,
+        27
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        17
+      ],
+      [
+        15,
+        27
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        17,
+        23
+      ],
+      [
+        17,
+        26
+      ],
+      [
+        17,
+        28
+      ],
+      [
+        18,
+        23
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        19,
+        22
+      ],
+      [
+        19,
+        23
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        20,
+        22
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        20,
+        26
+      ],
+      [
+        21,
+        24
+      ],
+      [
+        21,
+        25
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        26,
+        28
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        29,
+        72
+      ],
+      [
+        29,
+        33
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        33,
+        35
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        34,
+        36
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        37,
+        39
+      ],
+      [
+        38,
+        41
+      ],
+      [
+        39,
+        40
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        40,
+        43
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        42,
+        44
+      ],
+      [
+        42,
+        78
+      ],
+      [
+        44,
+        45
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        47,
+        51
+      ],
+      [
+        48,
+        49
+      ],
+      [
+        48,
+        50
+      ],
+      [
+        49,
+        52
+      ],
+      [
+        49,
+        56
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        50,
+        81
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        54,
+        57
+      ],
+      [
+        54,
+        60
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        55,
+        60
+      ],
+      [
+        57,
+        58
+      ],
+      [
+        57,
+        59
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        58,
+        60
+      ],
+      [
+        61,
+        64
+      ],
+      [
+        61,
+        65
+      ],
+      [
+        61,
+        66
+      ],
+      [
+        62,
+        63
+      ],
+      [
+        62,
+        64
+      ],
+      [
+        62,
+        68
+      ],
+      [
+        63,
+        68
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        68,
+        71
+      ],
+      [
+        42,
+        76
+      ],
+      [
+        64,
+        66
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        16,
+        28
+      ],
+      [
+        64,
+        68
+      ],
+      [
+        30,
+        63
+      ],
+      [
+        59,
+        60
+      ],
+      [
+        32,
+        69
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        48,
+        51
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        32,
+        71
+      ],
+      [
+        32,
+        72
+      ],
+      [
+        29,
+        73
+      ],
+      [
+        33,
+        73
+      ],
+      [
+        34,
+        74
+      ],
+      [
+        36,
+        74
+      ],
+      [
+        37,
+        74
+      ],
+      [
+        36,
+        75
+      ],
+      [
+        37,
+        75
+      ],
+      [
+        74,
+        75
+      ],
+      [
+        37,
+        76
+      ],
+      [
+        39,
+        76
+      ],
+      [
+        40,
+        76
+      ],
+      [
+        40,
+        77
+      ],
+      [
+        43,
+        77
+      ],
+      [
+        44,
+        78
+      ],
+      [
+        44,
+        80
+      ],
+      [
+        45,
+        79
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        78,
+        80
+      ],
+      [
+        79,
+        80
+      ],
+      [
+        45,
+        80
+      ],
+      [
+        46,
+        80
+      ],
+      [
+        47,
+        80
+      ],
+      [
+        47,
+        81
+      ],
+      [
+        51,
+        81
+      ],
+      [
+        48,
+        81
+      ],
+      [
+        49,
+        81
+      ],
+      [
+        56,
+        81
+      ],
+      [
+        50,
+        82
+      ],
+      [
+        50,
+        83
+      ],
+      [
+        50,
+        84
+      ],
+      [
+        51,
+        82
+      ],
+      [
+        51,
+        84
+      ],
+      [
+        53,
+        83
+      ],
+      [
+        53,
+        84
+      ],
+      [
+        47,
+        82
+      ],
+      [
+        82,
+        83
+      ],
+      [
+        82,
+        84
+      ],
+      [
+        83,
+        84
+      ],
+      [
+        54,
+        85
+      ],
+      [
+        57,
+        85
+      ],
+      [
+        58,
+        85
+      ],
+      [
+        60,
+        85
+      ],
+      [
+        54,
+        58
+      ],
+      [
+        49,
+        55
+      ],
+      [
+        69,
+        71
+      ],
+      [
+        61,
+        70
+      ],
+      [
+        64,
+        70
+      ],
+      [
+        66,
+        70
+      ],
+      [
+        62,
+        67
+      ],
+      [
+        63,
+        67
+      ],
+      [
+        64,
+        67
+      ],
+      [
+        67,
+        68
+      ],
+      [
+        67,
+        70
+      ],
+      [
+        1,
+        61
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        12,
+        30
+      ],
+      [
+        22,
+        25
+      ],
+      [
+        57,
+        60
+      ],
+      [
+        15,
+        28
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        87,
+        22
+      ],
+      [
+        86,
+        61
+      ],
+      [
+        88,
+        2
+      ],
+      [
+        89,
+        55
+      ],
+      [
+        89,
+        56
+      ],
+      [
+        86,
+        66
+      ],
+      [
+        88,
+        5
+      ]
+    ],
+    "edge_bytes_sha256": "9f8b49ddbd6c1dacf324ce2b2aae718131e09bc2d3d8da540f3b45bb14faa615",
+    "exact_neighbor_rows_hex": "010203057373040004033d737304000305085873050002040105080601030b73737303000208035873050708097373730306090a73737303050609020373050607080a73730407097373737302040c0d1e7373040b0d0e1b1e73050b0c0e1f7373040c0d101b73730410111b1c7373040e0f1c737373030f13171a1c14061773737373730111141617191a06131516191a1106141819737373031314195773730411121373737303151973737373021415181a1613061114191c1373050c0e0f1c737304111a1b100f7305482149737373031f0b3f0c7373043f0d1e207373041f4547487373041d23497373730323244a737373032122737373730222254a4b73730424274a4b4c73052973737373730125284c7373730327292b4c4d7305262873737373022b2c4e4c737304282a4d737373032a2d4e507373042c2e4f507373042d2f50737373032e3033505152062f31323351730530343851377305303351525354062f323051525406313573737373023453547373730337393c553a730536383c3159730531375159737304363a3b553c7305393b3c55367305393a3c7373730336373a3b553906404142460156063f4044437373041f3e441e4373053d3e42444643063d4273737373023d4140465673053e3f40444673053e3f4740437305204773737373023d404243737304442045737373031d2073737373021d2173737373022224254b73730424254a737373032a252728737304282b73737373022a2c4f507373042d4e50737373032c4e4f2d2e2f06322f333031380632332f53547305323552547373043233355253730536393a3c7373043d427373737302167373737373010205737373730237387373737302",
+    "counts": {
+      "4": 24,
+      "5": 20,
+      "6": 13,
+      "3": 17,
+      "2": 13,
+      "1": 3
+    }
+  },
+  "matched_clean_installed_and_resident_ranges": [
+    {
+      "address": 33748160,
+      "end": 33748888,
+      "exact_hex": "f04f2de9ccc29fe50cd04de000a0a0e10190a0e108208de5901700eb0080a0e1150058e3acc29f057300a0030cd08d00f08fbd080a00a0e11f1d00eb000050e30c008de58cc29f057300a0030cd08d00f08fbd08176f02eb041080e26c00a0e3991027e00c009de50410a0e3e53901ebb40050e3330000ba0060a0e30650a0e1020056e3260000aa0800a0e310008de50700a0e10510a0e1e30e02eb0040d0e57d0054e31b00000a0a00a0e1e81c00eb000050e30d00000afe6e02eb00b0a0e10700a0e16f0d02eb00408de518108de204008de50b00a0e1061181e00920a0e10830a0e14d0c02eb006086e0090000eaf06e02eb10109de500408de504108de518108de2061181e00920a0e10830a0e1420c02eb006086e0015085e2020055e3daffffba000056e3060000da0600a0e1f78800eb18108de298c19fe5000191e70cd08de0f08fbde80c009de50410a0e3ac3901ebc80050e3340000ba0040a0e30460a0e1050054e3300000aa0100a0e308b0a0e314008de514209de50700a0e10610a0e1f61002eb0050a0e17d0055e31800000a0a00a0e1ad1c00eb000050e30c00000ac36e02eb0040a0e10700a0e1340d02eb00508de504008de50400a0e11e1e8de20920a0e10830a0e1e50b02eb0040a0e1070000eab66e02eb00508de51e1e8de20920a0e10830a0e104b08de5dc0b02eb0040a0e1000054e3080000da08109de50400a0e1005081e5c08800eb1e1e8de2bcc09fe5000191e70cd08de0f08fbde8016086e2050056e3d1ffffbaa06e02eb0040a0e10700a0e1110d02eb00008de5ea1f8de20400a0e10920a0e10830a0e1700802eb000050e3120000ca946e02eb0040a0e10700a0e1050d02eb00008de5ea1f8de20400a0e10920a0e10830a0e11a0c02eb000050e3060000ca886e02eb0840a0e3ea1f8de20920a0e10830a0e100408de5110c02eb000050e320c09fd57300a0d30cd08dd0f08fbdd8938800ebea1f8de2000191e704c09fe50cd08de0f08fbde8",
+      "sha256": "22d0a5ffb902a899a083b6df111e1b2cc392c5fdcdb6f88d0f118bc8e5031fb6"
+    },
+    {
+      "address": 34281248,
+      "end": 34281312,
+      "exact_hex": "10402de972df4de20040a0e1916600eb00108de20420a0e15e0400eb000050e372df8dd27300a0d31080bdd8a080feeb00108de2000191e772df8de21080bde8",
+      "sha256": "551be78def52e2944fceee96ae427939873a83df7a9680dca2b5cd31cc4fa66f"
+    },
+    {
+      "address": 34281572,
+      "end": 34281944,
+      "exact_hex": "f04f2de91cd04de20390a0e101a0a0e140309de500108de20040a0e1330000eb0080a0e10070a0e30760a0e1000058e30d0000da045084e200b08de26c40a0e306219be70910a0e1925420e0160d00eb000050e306019b17016086e207018a1701708712080056e1f4ffffba0700a0e11cd08de2f08fbde8f04f2de91cd04de20390a0e101a0a0e140309de500108de20040a0e1150000eb0080a0e10070a0e30760a0e1000058e30d0000da045084e200b08de26c40a0e306219be70910a0e1925420e05e0c00eb000050e306019bc7016086e207018ac7017087c2080056e1f4ffffba0700a0e11cd08de2f08fbde8f04f2de91cd04de20040a0e1045084e26c00a0e3925020e001a0a0e100108de20390a0e1520400eb0080a0e10070a0e30760a0e1000058e30e0000da00b08de26c40a0e306119be7080059e3915420e00200000a660400eb000059e10200001a06019be707018ae7017087e2016086e2080056e1f2ffffba0700a0e11cd08de2f08fbde8",
+      "sha256": "c9ec19efa3c7bca938829b4f8b3981f187dc556aaa885551889ef304b1c15ee1"
+    },
+    {
+      "address": 34285096,
+      "end": 34285648,
+      "exact_hex": "f04f2de904d04de201a0a0e10080a0e328109de502b0a0e100308de50870a0e1720058e328108de52c909de51e0000aa045080e26c40a0e3975426e00b0057e11600000a0600a0e1001090e5101091e531ff2fe1000050e31000000a080059e30300000a0600a0e12c0100eb000059e10a00001a00109de50600a0e1ff0800eb000050e3050000da28109de50600a0e1c80200eb000050e308718ac7018088c2017087e2720057e3e2ffffba0800a0e104d08de2f08fbde8f04f2de904d04de201b0a0e10080a0e328109de500208de503a0a0e10870a0e15a0058e328108de52c909de5250000aa045080e26c40a0e3975426e000009de5000057e11c00000a0600a0e1001090e5101091e531ff2fe1000050e31600000a080059e30300000a0600a0e1fd0000eb000059e11000001a0600a0e10a10a0e1d00800eb000050e30b0000da28109de50600a0e1c30400eb0010a0e1060051e30500000a0600a0e10a20a0e1b60300eb000050e308718bc7018088c2017087e25a0057e3dbffffba0800a0e104d08de2f08fbde8f04f2de904d04de20080a0e301a0a0e102b0a0e100308de50870a0e15a0058e328909de5190000aa045080e26c40a0e30b0057e11200000a975426e00600a0e1001090e5101091e531ff2fe1000050e30b00000a080059e30300000a0600a0e1cb0000eb000059e10500001a00109de50600a0e19e0800eb000050e308718ac7018088c2017087e25a0057e3e7ffffba0800a0e104d08de2f08fbde8",
+      "sha256": "2035b49d5a795444956435197b50c4edeaaac285678cb2760c80a25eba81059e"
+    },
+    {
+      "address": 34285752,
+      "end": 34285944,
+      "exact_hex": "0f002de900402de904d04de214209fe510308de20e0000eb04d08de20040bde810d08de21eff2fe1e4280b0210402de9004091e5080054e30100a0031080bd08920000eb000054e10100a0030000a0131080bde8f0472de90060a0e30190a0e10280a0e10370a0e10650a0e15a0056e3100000aa044080e26ca0a0e3954a20e0001090e5101091e531ff2fe1000050e30500000a954a20e00710a0e138ff2fe1000050e30651891701608612015085e25a0055e3f0ffffba0600a0e1f087bde8",
+      "sha256": "bc49bb7ee6e58299cb0a3094c1a41133deb8be0cf33a8be06cd87d96cd80baf4"
+    },
+    {
+      "address": 34286280,
+      "end": 34286408,
+      "exact_hex": "f0472de918d04de20190a0e1c90a00eb0010a0e160009fe500208de2b35cffeb0080a0e10070a0e30760a0e1000058e30e0000da00408de26ca0a0e3065194e79a6100eb040080e2950a20e0001090e5101091e531ff2fe1000050e307518917016086e201708712080056e1f2ffffba0700a0e118d08de2f087bde83c0a2902",
+      "sha256": "73980ba48d51d7bdbfb25c4fbaf8d68ac75af3667b681c108deb69fd1e5b09a5"
+    },
+    {
+      "address": 34119096,
+      "end": 34119364,
+      "exact_hex": "083080e20700a0e3913023e00600d3e50010a0e3000050e3050000da0100d3e7010182e70600d3e5011081e2000051e1f9ffffba0600d3e51eff2fe1f0432de904d04de20050a0e1040095e5000050e304d08d12f083bd180070a0e3b10057e3060000aa9c609fe51c40a0e3976420e0250100eb017087e2b10057e3faffffba0070a0e35a0057e3060000aa086085e20740a0e3976420e0c80000eb017087e25a0057e3faffffba0040a0e3b10054e3100000aa087085e20760a0e30400a0e1100200eb042090e5181090e5ff84c2e3987620e0ff94c1e30910a0e19c0000eb997620e00810a0e1990000eb014084e2b10054e3f0ffffba0100a0e3040085e504d08de2f083bde8640d2902",
+      "sha256": "739d4975a55184b230b9bbca92bad3165e8169401b7ba535c47b5ce1585679ea"
+    },
+    {
+      "address": 34119948,
+      "end": 34120088,
+      "exact_hex": "30402de904d04de20050a0e10140a0e1070000eb000050e30600d5050040c5070600d505010080020600c50504d08de23080bde80620d0e50030a0e3000052e3070000da0320d0e7020051e10100a0031eff2f010620d0e5013083e2020053e1f7ffffba0000a0e31eff2fe10020a0e30620c0e57310a0e30210c0e7012082e2060052e3fbffffba1eff2fe1",
+      "sha256": "c1e7ac0c1734e40226ae111ce414bbe2571e3de26506ddee8bea1c73612c8fdd"
+    },
+    {
+      "address": 34121408,
+      "end": 34121448,
+      "exact_hex": "000050e3040000bab10050e310209fb51c10a0b3912020b01eff2fb10000a0e31eff2fe1640d2902",
+      "sha256": "633b282f782952eaead39b871d9d5c656214bc57109cf4866a0231d337314696"
+    },
+    {
+      "address": 34297344,
+      "end": 34297392,
+      "exact_hex": "10402de90040a0e1da5600eb040080e2000044e010309fe5a01fa0e19320c0e0c002a0e1000081e01080bde8f712da4b",
+      "sha256": "57b53d176620edc5074e8ddc31534ea0967a3f5f6c0260bd289a323d278af805"
+    },
+    {
+      "address": 34386296,
+      "end": 34386308,
+      "exact_hex": "00009fe51eff2fe1945d2d02",
+      "sha256": "511ece561deefad6b0c44e3f2cb047437fbad52334532998fde6abde1b98dfe2"
+    },
+    {
+      "address": 33888724,
+      "end": 33888796,
+      "exact_hex": "10402de940109fe50040a0e1000091e5000050e30400000a30009fe58b1f02eb24009fe50010a0e3001080e5000054e30000a0d31080bdd8881f02eb0410a0e13ac5feeb0100a0e1",
+      "sha256": "5b1536407afef59dcd603d89df0136da44a4962f35973519602b0eac9a14ff8d"
+    },
+    {
+      "address": 34122748,
+      "end": 34123056,
+      "exact_hex": "00008de2780100eb04c09fe50cd08de03080bde80c6d0000f04f2de91cd04de200a0a0e10400a0e308008de50500a0e30c008de50000a0e310008de50100a0e308419fe504108de50290a0e10380a0e10050e0e314008de504009de510209de5000050e308109d15e4009fe50510a00100108de50c109de50230a0e1b31cffeb000050e31cd08db2f08fbdb8040050e31cd08da2f08fbda8b8109fe510b09de5007191e70700a0e1d90000eb000058e30300000a000098e5140010e5000088e0a7f800eb0900a0e10510a0e1230400eb0060a0e1000058e30300000a000098e5140010e5000088e0bdf800eb730056e30e00000a0a00a0e10710a0e10620a0e1560000eb000050e30500000a0710a0e10620a0e10a00a0e10f0000eb14b09de5020000ea540094e5010050e3dcffff0a00005be3",
+      "sha256": "1f25ab5ec657971a64517a1e1086a33802522dc2026cae382763485ed57393bf"
+    },
+    {
+      "address": 34123356,
+      "end": 34123792,
+      "exact_hex": "f04f2de90cd04de20060a0e10140a0e100208de5ba0001eb57bafeeb0070a0e1c90001eb8410a0e396010be00050a0e1b90001eb041085e2043080e20b0081e000109de56c20a0e3913226e01ca9feeb0010a0e10600a0e1fba600eb000050e30150a0c30600a0e10050a0d3eea600eb000050e30100a0c304008dc50000a0d304008dd5050054e304f18f903f0000ea3e0000ea030000ea3c0000ea010000ea000000ea060000ea000055e33700001a8000a0e3e825ffeb0cd08de20000a0e3f08fbde8000055e30400000a8400a0e3e125ffeb0cd08de20000a0e3f08fbde800a0a0e308a08de50a90a0e103005ae3140000aa0150a0e30600a0e10910a0e11fa400eb000050e30b00000a0080d0e505a0a0e17a0001eb041080e24c00a0e3981020e00710a0e1e9c6feeb020050e30100a01308008d150200001a019089e2030059e3ebffffba04009de5000050e30200001a08009de5000050e30400000a8500a0e3bc25ffeb0cd08de20000a0e3f08fbde800005ae30400001a8600a0e3b525ffeb0cd08de20000a0e3f08fbde86d0001eb040080e200209de50410a0e10b0080e087aafeeb0100a0e30cd08de2f08fbde8",
+      "sha256": "ff63046b69913cde3211c720224589e7b3eab48903f2a902b79b95f60012991e"
+    },
+    {
+      "address": 34127196,
+      "end": 34127296,
+      "exact_hex": "30402de904d04de20050a0e1044095e50100a0e3040085e5000095e5100010e5000085e039f400eb001095e50120a0e3101011e51d0050e3011085e0202081e5044085e5030000ba770050e304d08db21d0040b23080bdb87300a0e304d08de23080bde8",
+      "sha256": "67c8de623587b54d23d83b2390c93fd810773a9c815b3fea11a95c3f33aeb4da"
+    },
+    {
+      "address": 33774116,
+      "end": 33774128,
+      "exact_hex": "3e10c0e53f20c0e51eff2fe1",
+      "sha256": "021aed3d843a59b1dd4a326de275392c12b557b0e36186f57844edfde402e0ed"
+    },
+    {
+      "address": 33734284,
+      "end": 33734480,
+      "exact_hex": "00402de904d04de2041090e5001091e5211ea0e10f1001e20c0051e301f18f90330000ea0b0000ea0d0000ea0f0000ea110000ea130000ea150000ea170000ea190000ea1b0000ea1d0000ea1f0000ea210000ea230000ead5ffffeb04d08de20080bde8bdffffeb04d08de20080bde805ffffeb04d08de20080bde8c8feffeb04d08de20080bde89efeffeb04d08de20080bde887feffeb04d08de20080bde8aafdffeb04d08de20080bde860fdffeb04d08de20080bde8fdfcffeb04d08de20080bde8",
+      "sha256": "c308a58f535b07e4b580f2b6920a4b220cce4cedd6c09b025e2366f9796ef24c"
+    },
+    {
+      "address": 33731392,
+      "end": 33731652,
+      "exact_hex": "70402de90060a0e1040096e5000090e52008a0e1ff0000e233fdffeb0040b0e15400004a3f0054e3520000aa8d7f02eb041096e5043080e28400a0e3002091e5943025e0221ca0e10f1001e2030051e301f18f90470000ea020000ea060000ea0d0000ea260000ea0500a0e10010a0e34b2100eb0100a0e37080bde8ff1002e2800011e2ff00e013001081110500a0e15a2400eb0100a0e37080bde82204a0e1ff2002e2ff4010e21000001a6d7f02eb0060a0e1640c00eb042086e28410a0e3912020e09a2400eb0020a0e1730052e30600001a637f02eb0060a0e15a0c00eb042086e28410a0e3902121e03c20d1e50500a0e10410a0e1792900eb0100a0e37080bde8",
+      "sha256": "4d461009d6b4749643ee14bc0523ee69ee995e0c381a40373a95c656b7111b45"
+    },
+    {
+      "address": 33769076,
+      "end": 33769096,
+      "exact_hex": "5010d0e5081011e27300a0133c00d0051eff2fe1",
+      "sha256": "f7faed0fdf0a3581ef139f1d2845f6226ff642e0e2242c1e797e9aa97a43465f"
+    },
+    {
+      "address": 33747012,
+      "end": 33747072,
+      "exact_hex": "7d30a0e32c308de50030a0e308009de50c109de52c208de21c308de5160100eb0040a0e1730054e30701000a08009de50420a0e13e10d0e5681a00eb",
+      "sha256": "f4dc1ae1e62ce32bb43248ebc949397ce7ad89bad21aa9c556ccf265ed2927fc"
+    },
+    {
+      "address": 33748916,
+      "end": 33748988,
+      "exact_hex": "0600a0e1d81600eb0810a0e30030a0e100108de50400a0e10520a0e104108de2220802eb000050e3080000da7b8800eb0020a0e104108de2022191e70600a0e10210a0e3891800eb",
+      "sha256": "2d093109378c4faf162df08f2b4aa88159ce49d09739831983ad227fef2899ee"
+    },
+    {
+      "address": 33772648,
+      "end": 33772888,
+      "exact_hex": "f04f2de91cd04de200b0a0e13e00dbe50140a0e108a0a0e3070040e2010050e30500008a395702eb041080e26c00a0e3941020e0a9f501eb00a0a0e1335702eb04108de20420a0e10830a0e326f101eb0090a0e1000059e31cd08dd2f08fbdd8417100eb04508de2000195e708005ae300008de51700000a0080a0e30870a0e1000059e30c0000da6c40a0e3076195e71e5702eb040080e2960420e08ff501eb00005ae107019507017087e20801850701808802090057e1f3ffffba000058e3040000da0800a0e1277100eb04108de2000191e700008de53e10dbe500209de50b00a0e1340100eb1cd08de2f08fbde8",
+      "sha256": "bfb9524ab5d7c4e9092ba406a915d9cfe6b9ac8d86a13ecdd7f728f1ff5aed30"
+    },
+    {
+      "address": 33772976,
+      "end": 33773076,
+      "exact_hex": "f05602eb0050a0e10400a0e157ffffeb0030a0e10800a0e300008de504108de20500a0e10620a0e1bff001eb000050e3040000cae35602eb04108de20620a0e10830a0e3d6f001ebf57000eb0020a0e104108de2022191e70400a0e10610a0e3030100eb",
+      "sha256": "762d6238c5a2a72b193cac20ab34e33c0681e4900dc29df878918563f61799e5"
+    },
+    {
+      "address": 33773344,
+      "end": 33773544,
+      "exact_hex": "945602eb041080e26c00a0e3941020e004f501eb0070a0e18e5602eb0060a0e10500a0e1f5feffeb0030a0e10600a0e10c108de20420a0e100708de55ef001eb000050e30a0000ca825602eb0060a0e10500a0e1e9feffeb0030a0e10800a0e300008de50c108de20600a0e10420a0e151f001eb000050e3040000ca755602eb0c108de20420a0e10730a0e168f001eb000050e3040000ca6e5602eb0c108de20420a0e10830a0e361f001eb807000eb0020a0e10c108de2022191e70500a0e10610a0e38e0000eb",
+      "sha256": "7df841dfa7567e96de8e094c87b59d044dee5359f73a388830ef24d80c0d3a76"
+    },
+    {
+      "address": 33773932,
+      "end": 33774000,
+      "exact_hex": "015602eb3c20d4e500108de20830a0e3f4ef01eb000050e318d08dd21080bdd8107000eb0020a0e100108de2022191e70400a0e10610a0e31e0000eb18d08de21080bde8",
+      "sha256": "e3e38a03ca354c74b4138d569a7d3dfd3b0c2a95104d5ae6a6d5ae26ab16de81"
+    },
+    {
+      "address": 33774048,
+      "end": 33774116,
+      "exact_hex": "e45502eb3c20d4e500108de20830a0e3d7ef01eb000050e318d08dd21080bdd8f36f00eb0020a0e100108de2022191e70400a0e10310a0e3010000eb18d08de21080bde8",
+      "sha256": "6f46f540cd9fa5d42d5c6b142f3c1bec62aad7e971a570e4f6887fbb83bf394f"
+    }
+  ],
+  "other_open_direct_writers": [
+    33766936,
+    33772964,
+    33773136,
+    33773920,
+    33774036,
+    33800600
+  ],
+  "unproven_neighbor_center_inputs_outside_main_ports": [
+    33747068,
+    33748984,
+    33772876,
+    33773072,
+    33773540,
+    33773988,
+    33774104
+  ],
+  "ordinary_missionary_reachability_open": true,
+  "editorial_credit_added": 0
+}
