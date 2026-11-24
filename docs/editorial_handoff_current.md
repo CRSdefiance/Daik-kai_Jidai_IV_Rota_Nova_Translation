@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)
+
+The cleaver award and return to the Inn and town matched the earlier build exactly. Three revised pages passed in gameplay. Angelo's two conditional panels remain unvisited, and the revised one passed native checks offline. The candidate passed 451 release checks and matches the sole Drive ROM. Continue ordinary town and random sampling and the remaining Fleet Info writer paths and archived COMMON display leads.
+
+# Current editorial checkpoint - 2026-11-23
+
 Ordinary Lisbon play verified a 211-gold sale, both confirmation choices, Back, and the transition to Julio's Deck lesson. The Market sequence requests COMMON 14 and 9, with both lines retained. A current offline audit reconciled 42 earlier incoming references, whose finite results exclude the five archived messages. Continue practical town and random scenes and remaining computed display ownership. [Current sale and selector evidence](editorial_market_sale_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

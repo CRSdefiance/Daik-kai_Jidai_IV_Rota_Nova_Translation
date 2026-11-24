@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
 Registered Missionary for the conditional Fleet Info destination. [Checkpoint](editorial_missionary_destination_registered_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

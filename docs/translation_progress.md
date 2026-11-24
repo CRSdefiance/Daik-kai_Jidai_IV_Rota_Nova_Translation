@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-23
 
+Registered four revisions to the Nagasaki Inn dream after an ordinary replay. [Checkpoint](editorial_nagasaki_dream_registered_20261123.md)
+
+The clean-source review retains thirteen story lines and the cleaver award. The three revised pages reached by ordinary play match their native previews, and the revised conditional page passed offline. All 29 control frames match the preceding candidate. Exact clean-input reconstruction, startup, 17 focused tests and Drive readback passed. The ledger retains 27,700 historical credits.
+
+# Current editorial checkpoint - 2026-11-23
+
 Verified an ordinary Lisbon sale, its decline and payment, the discard of a later purchase, and Julio's Deck lesson opening. Two Market lines and the lesson opening retain their wording. The current offline audit reconciled the dependencies of 42 earlier aligned shared references. [Current evidence](editorial_market_sale_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
