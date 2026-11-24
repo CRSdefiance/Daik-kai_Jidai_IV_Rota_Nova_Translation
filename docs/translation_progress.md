@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-23
 
+The Istanbul replay closes the naturally triggered Supply Ratio check. Normal sailing produced the supply shortage, and regular Port controls verified the full English prompts, both ratio exits and payment. This adds gameplay evidence to the registered Shortfall build and preserves the 27,700 editorial credits. [Exact states and review](editorial_ordinary_supply_mix_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Fixed the two required-crew line breaks and verified Manuel's 12-sailor shortfall in a focused replay. [Checkpoint](editorial_recruitment_shortfall_registered_20261123.md)
+
+Two revisions and five justified retentions complete this shortfall wrap review. The paired replays used a one-byte starting crew fixture and verified the original No choice and Assign Sailors transition. The 27,700 historical editorial credits carry forward, and the only Drive `.nds` matches the registered ROM. [Exact source and result](editorial_recruitment_shortfall_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Reflowed all seven Recruit Crew spare-capacity replies and verified Manuel and Charles in ordinary play. [Checkpoint](editorial_recruitment_capacity_registered_20261123.md)
+
+Seven revisions and five justified retentions passed the review. Both ordinary replays confirmed the transition to Assign Sailors, and the Istanbul replay continued to the Tavern entrance. Two required-crew wrap findings carry forward. The single Drive ROM matches the registered candidate, and historical credit remains 27,700. [Gameplay and release checks](editorial_recruitment_capacity_registered_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Corrected the developed Azores port's docking question and verified its Market and Tavern in ordinary play. [Checkpoint](editorial_azores_return_registered_20261123.md)
+
+The current registered ROM adds one runtime wording fix and six verified retentions, with 27,700 existing editorial credits. The Tavern's follow-up is an open wrap finding. Both initial Recruit Crew choices were observed, and the successful branch showed the original count of 18 volunteers. The Drive copy passed full readback. [Source and gameplay ledger](../translations/editorial_checkpoints/shared_display_20261123/azores_return_current_20261123.json) · [Clean-input patch](../releases/all_routes_editorial_20261123_azores_return_candidate/translation.xdelta)
+
+# Current editorial checkpoint - 2026-11-23
+
 Ordinary Lisbon World Map, Forces Chart, and Market navigation on the registered ROM showed complete English labels. The new trace confirms use of the initialized Event and World objects while the three Japanese class-name getters stayed inactive. Offline native checks verify both getters' underlying return values. [Coverage and exact storage references](editorial_event_and_world_names_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23

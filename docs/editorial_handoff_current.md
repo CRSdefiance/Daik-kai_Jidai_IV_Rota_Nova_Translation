@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-23
 
+Ordinary sailing from Istanbul used supplies and reached the Supply Ratio panel on return. Complete glyphs, both directions, cancellation, application and the 52-gold refill passed. The existing Shortfall candidate and credits carry forward. Continue with the remaining indirect display-call leads, including the archived fleet-debt, exhibition and Market messages, and practical unvisited town and random scenes. Keep the separate artwork and older-record technical follow-up. [Ordinary Supply Ratio evidence](editorial_ordinary_supply_mix_20261123.md)
+
+# Current editorial checkpoint - 2026-11-23
+
+Fixed the two required-crew line breaks and verified Manuel's 12-sailor shortfall in a focused replay. [Checkpoint](editorial_recruitment_shortfall_registered_20261123.md)
+
+The active candidate passed 445 release checks, exact clean-input reconstruction and full Drive readback. The acceptance delta accounts for the Azores redocking runtime change and the nine recruitment edits while preserving the earlier four-route, Help and shared display evidence. Continue practical town and random coverage and investigate identifiable indirect display callers. A naturally earned Supply Ratio prompt and direct callers for the archived fleet-debt, exhibition and Market messages remain open. Preserve the separate artwork and older-record technical follow-up. [Current acceptance ledger](../translations/editorial_checkpoints/shared_display_20261123/editorial_acceptance_after_recruitment_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Reflowed all seven Recruit Crew spare-capacity replies and verified Manuel and Charles in ordinary play. [Checkpoint](editorial_recruitment_capacity_registered_20261123.md)
+
+The current candidate passed 444 release checks, the clean-input patch round-trip, and the Drive readback. The new release changes only seven COMMON records, with all 276 shared display findings bound to the same stored locations and bytes. The 27,700 credited editorial reviews carry forward. Two nearby required-crew prompts remain open for formatting. COMMON 1039 splits **round up** and COMMON 1041 strands **recruiting?**. The exact source, installed text and native outputs are in the registered ledger. Preliminary offline tests preserved the verbs together and kept the original slot sizes with “Still %s short on crew. Shall I round up more?” and “We're %s short on crew. Shall I recruit more?” Confirm each draft in the complete shortfall exchange, then verify the stored text and a representative transition. Continue the other conditional town and random scenes and the indirect display leads. [Recruitment source and exact current evidence](../releases/all_routes_editorial_20261123_recruitment_capacity_candidate/verification/registered_review.json)
+
+# Current editorial checkpoint - 2026-11-23
+
+Corrected the developed Azores port's docking question and verified its Market and Tavern in ordinary play. [Checkpoint](editorial_azores_return_registered_20261123.md)
+
+The registered candidate reconstructed exactly from the clean input and passed its own startup, native, and repository checks. The sole Drive ROM matches by streamed SHA-256. Four story archives and COMMON match the previous candidate, and the eight right-bound spans and 27,700 editorial credits carry forward. The ordinary Tavern replay exposed a short third line in COMMON 1048. Review the seven recruitment voice alternatives together, keeping the exact remaining-capacity substitution and the Continue choice. Manuel's source says the ship still has room for that many and asks whether to recruit more. A candidate paragraph is “We have room for %s more aboard. Shall I keep recruiting?” Verify it with the original consumer before accepting. Other conditional town and random content and indirect display ownership remain open. [Exact 1048 source, current text and gameplay](../translations/editorial_checkpoints/shared_display_20261123/azores_return_current_20261123.json)
+
+# Current editorial checkpoint - 2026-11-23
+
 The current ROM reached ordinary Lisbon World Map and Forces Chart panels with complete English labels. The Event and World objects entered their ordinary load paths and their Japanese class-name getters stayed inactive during the replay. The five watched archived COMMON keys also stayed inactive at the observed request sites. Continue with unexplored conditional town and random outcomes and any other identifiable indirect display paths. [Exact gameplay and offline ownership evidence](editorial_event_and_world_names_current_20261123.md)
 
 # Current editorial checkpoint - 2026-11-23
