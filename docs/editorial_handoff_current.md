@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Reconciled 49 ordinary COMMON requests from Athens and Valencia with the existing caller ranges. All four Market refusal requests selected the revised COMMON 761. The clean ROM has one occurrence of each of the five archived source phrases, and the Ceuta candidate preserves all five exact stored spans. Their display owners remain open outside the checked paths. [Archived dialogue evidence](editorial_historical_common_fallbacks_20261124.md#carry-forward-to-ceuta)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Valencia play verified defense investment cancellation and payment, one- and ten-night lodging, Manuel's buy-a-round estimate, and the Black Rapier rumor. The Market still required a contract after the 1,450-gold defense payment. Seventeen lines and the Governor title retain their wording across 20 dialogue holds. Continue practical shared encounters, the five archived COMMON display owners, and the open ordinary Missionary destination input. [Valencia gameplay checkpoint](editorial_valencia_government_current_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
