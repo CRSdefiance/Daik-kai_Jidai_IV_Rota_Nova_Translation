@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the three remaining article wraps in the Promised Words clues. [Checkpoint](editorial_village_article_wraps_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered punctuation and phrase wrapping across the 24 Promised Words clues. [Checkpoint](editorial_village_clue_punctuation_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the one-line village sighting and verified the Narvik Promised Words exchange. [Checkpoint](editorial_narvik_lookout_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

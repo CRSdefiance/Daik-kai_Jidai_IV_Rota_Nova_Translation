@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the three remaining article wraps in the Promised Words clues. [Checkpoint](editorial_village_article_wraps_registered_20261124.md)
+
+The three article wraps passed native checks, a paired Avacha replay matched 29 surrounding frames, and the sole Drive ROM matches the registry. Ordinary Lisbon play verified all four Square shops, the two-day Purser refit, Julio's crew assignment, and the 405-gold bargaining settlement. Continue with the roster stat crop at ARM9 offset `0x14F4E0` and Galley help COMMON 1250. The five archived message owners and the ordinary Missionary destination remain open. [Lisbon gameplay, source bindings, and defect evidence](editorial_lisbon_ordinary_purser_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered punctuation and phrase wrapping across the 24 Promised Words clues. [Checkpoint](editorial_village_clue_punctuation_registered_20261124.md)
+
+Reviewed 54 village entries from the clean Japanese. The 24 clue pages passed the native formatter, including 18 adjusted phrase breaks. The Narvik position-only replay verified the new punctuation and 48 matching surrounding frames. Drive contains the sole registered ROM. Follow up the remaining article breaks in Sugarloaf Mountain, Champlain and Avacha together with the next shared-text batch. Continue practical town and random encounters, the five archived COMMON display owners, and the ordinary Missionary input.
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the one-line village sighting and verified the Narvik Promised Words exchange. [Checkpoint](editorial_narvik_lookout_registered_20261124.md)
 
 Ordinary play verified Copenhagen resupply, departure and declining to stop again. The focused Narvik replay used a source-checked ship position and ordinary controls for discovery, village services, and entering the accepted answer. The paired replay matched 48 surrounding frames. Continue practical random and town encounters, the five archived COMMON display owners, and the ordinary Missionary input. Review period placement in the shared Promised Words quotation template across its stock clues.
