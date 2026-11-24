@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Lisbon gameplay verified the Market’s low-funds Finish warning and signed total. After investing 27,000 gold, Rafael kept his 400-gold balance when the Trader refused a 1,144-gold Salt deal. Dismissal kept the pending deal, and Back cleared it. Three Trader records retain their wording with the complete native body and nameplate evidence. [Lisbon gameplay](editorial_lisbon_market_low_funds_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Direct Help dispatched 39 original topic IDs across 86 isolated native cases for 20 getters. All 329 inventoried view tables match the clean ROM's dispatch and getter slots. The ordinary Lisbon replay agrees with the native Trade result. [Exact native receipts](../translations/editorial_checkpoints/shared_display_20261123/help_direct_entries_current_20261124.json)
 
 # Current editorial checkpoint - 2026-11-24

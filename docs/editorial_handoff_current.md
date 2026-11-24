@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Lisbon play verified a 27,000-gold investment, the 1,144-gold Salt refusal at 400 gold, the complete red negative total, and exact restoration of both the pending and cleared Trade screens. Three Trader lines retain their wording. The extra-stock offer is a distinct unvisited Market path. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination. [Lisbon investment and refusal](editorial_lisbon_market_low_funds_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Native direct Help coverage now binds 329 view tables and all 20 distinct getters in that inventory. The 39 bounded topics are all original articles. The unlinked Military Investment duplicate has its independently verified display in continuation 204 and is outside the inventoried direct paths. Continue the five archived COMMON display owners, the ordinary Missionary destination and practical town and random encounters. [Help and Lisbon checkpoint](editorial_help_navigation_and_lisbon_salt_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
