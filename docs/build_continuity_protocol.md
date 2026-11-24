@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered clearer Deck View instructions for navigator skill requirements. [Checkpoint](editorial_deck_skill_guidance_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Cargo Setup warning with the correct Temporary Storage location. [Checkpoint](editorial_cargo_storage_warning_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

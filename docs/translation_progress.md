@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified current decisions for all 521 original prepared story texts and all 277 original open wrap leads. Five predecessor inverses and the release and renderer checks passed. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Acceptance checkpoint](editorial_acceptance_after_deck_skill_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Verified earned municipal trends in Athens Market Info and retained five player-facing texts after native glyph and transition checks. Rebound the five archived drafts and visually checked both controlled warning previews. COMMON 751 needs four extra bytes if its draft is installed. [Gameplay and archived draft records](editorial_athens_active_market_trends_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Riga restore and sailing verified both trend-state fields and 140 distinct fleet writer inputs. The calibrated offline archive scan found no new COMMON reader entry on the Deck View candidate. The Missionary destination and five archived display owners retain their open scope. [Exact source and gameplay evidence](editorial_riga_port_trend_object_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered clearer Deck View instructions for navigator skill requirements. [Checkpoint](editorial_deck_skill_guidance_registered_20261124.md)
+
+One tutorial wording revision and 14 justified retentions. Verified the exact three-row paragraph, five ordinary gameplay holds, 33 identical companion frames, independent startup, exact clean-input reconstruction, and the sole Drive ROM. The nine Riga COMMON records verified in gameplay include Gerhard's complete level-up toast. [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/deck_skill_guidance_cleanup_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Cargo Setup warning with the correct Temporary Storage location. [Checkpoint](editorial_cargo_storage_warning_registered_20261124.md)
 
 One wording revision and four justified retentions. The one-page native modal, both ordinary in-game holds, exact clean-input reconstruction, startup and Drive readback passed. The historical fallback audit traced seven stored templates and left five archived display owners open. [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/cargo_storage_warning_cleanup_20261124.json) · [Historical audit](editorial_historical_common_fallbacks_20261124.md)

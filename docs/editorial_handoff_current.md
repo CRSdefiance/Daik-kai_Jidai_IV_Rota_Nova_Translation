@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified current decisions for all 521 original prepared story texts and all 277 original open wrap leads. Five predecessor inverses and the release and renderer checks passed. Continue the five archived display owners, the ordinary Fleet Info destination source and practical town and random encounters. [Acceptance checkpoint](editorial_acceptance_after_deck_skill_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Athens Market Info now covers naturally active Trends, the zero-fee quote, and the full Fire and Ice Rubies name and description. Five player-facing texts retain their wording. Five archived drafts are source-bound on this build, with controlled modal checks for both warnings. Their display ownership and the ordinary Missionary destination input remain open. [Athens and archived review](editorial_athens_active_market_trends_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+The ordinary Riga trace identified the Missionary object's separate town and trade-good state during restore and sailing. No sampled fleet writer produced 114. The Deck View candidate rebinds all 827 COMMON sites, and the immediate address scan yielded no added reader reference. Continue the unresolved five archived display owners, the ordinary Fleet Info destination input and practical town and random scenes. [Riga and COMMON evidence](editorial_riga_port_trend_object_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered clearer Deck View instructions for navigator skill requirements. [Checkpoint](editorial_deck_skill_guidance_registered_20261124.md)
+
+Ordinary Riga play verified the mixed Trade settlement, both Goods Info modes, the crew and fatigue warnings, and the departure through Gerhard's level-up. Five paired holds show the revised Deck help and 33 companion frames match. The sole Drive ROM matches the registry. The release changes one fixed ARM9 text allocation and leaves the COMMON archive identical to Cargo Setup. Continue the five archived COMMON display owners, the unresolved ordinary source of the Missionary destination and practical town and random scenes. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/deck_skill_guidance_drive_20261124.json) · [Riga gameplay](../translations/editorial_checkpoints/shared_display_20261123/riga_trade_and_departure_20261124.json)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Cargo Setup warning with the correct Temporary Storage location. [Checkpoint](editorial_cargo_storage_warning_registered_20261124.md)
 
 Both changed Finish holds passed in ordinary Riga play, alongside 31 matching companion screens. The sole Drive ROM matches the registry. This candidate changes only COMMON 268, so the Palace candidate's ARM9 and route-dock proof remains applicable. Continue the five archived COMMON display owners, the unresolved ordinary source of the Missionary slot, and practical town and random scenes. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/cargo_storage_warning_drive_20261124.json) · [Historical fallback audit](editorial_historical_common_fallbacks_20261124.md)
