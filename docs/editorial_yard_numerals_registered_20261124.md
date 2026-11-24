@@ -1,0 +1,11 @@
+# Consistent Yard numerals
+
+The Shipwright's mast count, durability, and 7,500-gold offer now use the regular dialogue digits. The ordinary Nagasaki replay verified both corrected panels, their controls, and the return to town. All 53 comparison frames match pixel for pixel. [Actual before and after](../releases/all_routes_editorial_20261124_yard_numerals_candidate/verification/yard_numerals_paired.png)
+
+The Yard reuses the registered Inn digit helper on 16 verified numeric call sites. Counts, currencies, singular and plural units, duration values, and template bytes retain their meaning and structure. The 13 wording retentions have exact source and installed references. Offline proof covers 1,058 number executions and 204 bounded layouts. The 15 native pages include both amounts seen in gameplay. [Exact source, formatting, and tests](../releases/all_routes_editorial_20261124_yard_numerals_candidate/verification/registered_review.json) · [Native previews](../releases/all_routes_editorial_20261124_yard_numerals_candidate/verification/portrait_sheet_01.png)
+
+Eight additional offline layouts on the registered build preserved complete synthetic Japanese and mixed-script ship names in the two special-order prompts. The names remained on one line even with an upper-bound price. [Custom-name layouts](../translations/editorial_checkpoints/shared_display_20261123/yard_custom_name_arguments_20261124.json)
+
+The cumulative candidate passed startup, 460 release checks, and 17 focused tests. Applying the patch to the clean ROM reconstructs the candidate byte for byte. The discount, refund, preparation, and paid repair outcomes have offline coverage in this batch. [Testing build and patch](../releases/all_routes_editorial_20261124_yard_numerals_candidate/README.md)
+
+The Drive folder contains one `.nds`, and streamed readback matches the registered candidate by SHA-256. Cleanup removed the reconstructed ROM duplicate and two disposable saves, reclaiming 61,086,716 bytes. The original saves and registered candidate retain their verified hashes. [Drive evidence](../translations/editorial_checkpoints/shared_display_20261123/yard_numerals_drive_20261124.json) · [Cleanup evidence](../translations/editorial_checkpoints/shared_display_20261123/yard_numerals_cleanup_20261124.json)

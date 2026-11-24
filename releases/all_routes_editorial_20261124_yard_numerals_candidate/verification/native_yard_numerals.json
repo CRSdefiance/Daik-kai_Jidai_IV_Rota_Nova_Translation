@@ -1,0 +1,6263 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1245",
+      "message_ID": 1245,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The amount is stated before refusing a special build or equipment work for lack of funds.",
+      "source_meaning": "The amount is stated before refusing a special build or equipment work for lack of funds.",
+      "english": "You'll need %s gold, but you don't have enough.",
+      "clean_Japanese": "金貨%s枚\n必要だが、足りないようだな",
+      "source_reference": {
+        "block": 15,
+        "offset": 1736,
+        "copy_end": 1772,
+        "bytes": 35,
+        "record_index": 37,
+        "table_offset": 1319626,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 1324,
+        "copy_end": 1373,
+        "bytes": 48,
+        "record_index": 44,
+        "table_offset": 1319626,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 16,
+        "offset": 1324,
+        "copy_end": 1373,
+        "bytes": 48,
+        "record_index": 44,
+        "table_offset": 1319626,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 1245,
+        "values_hex": [
+          "32313437343833363437"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "20596f75276c6c206e656564203231343734383336343720676f6c642c206275740a2020796f7520646f6e2774206861766520656e6f7567682e",
+        "lines": [
+          "You'll need 2147483647 gold, but",
+          "you don't have enough."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "0b56f000e961bd43ec2394c7a4f863db1fd6ae5c2e33a6517a10bd9a4137a973"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_1246",
+      "message_ID": 1246,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright quotes the equipment cost in gold before the player confirms.",
+      "source_meaning": "The Shipwright quotes the equipment cost in gold before the player confirms.",
+      "english": "It'll cost %s gold. Is that okay?",
+      "clean_Japanese": "金貨%s枚\nかかるが、いいかい？",
+      "source_reference": {
+        "block": 15,
+        "offset": 1772,
+        "copy_end": 1804,
+        "bytes": 29,
+        "record_index": 38,
+        "table_offset": 1319628,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 1373,
+        "copy_end": 1408,
+        "bytes": 34,
+        "record_index": 45,
+        "table_offset": 1319628,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 16,
+        "offset": 1373,
+        "copy_end": 1408,
+        "bytes": 34,
+        "record_index": 45,
+        "table_offset": 1319628,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 1246,
+        "values_hex": [
+          "32313437343833363437"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "204974276c6c20636f7374203231343734383336343720676f6c642e2049730a202074686174206f6b61793f",
+        "lines": [
+          "It'll cost 2147483647 gold. Is",
+          "that okay?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "8bf4ed7ac8b5d16915e0a745f266043e581567f545734b933f390c730d38cee5"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "ARM9_REFIT_REFUND",
+      "message_ID": "ARM9_REFIT_REFUND",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Shipwright",
+      "context": "Removing equipment returns the exact displayed amount in coins.",
+      "source_meaning": "Removing equipment returns the exact displayed amount in coins.",
+      "english": "Refund %s coins.",
+      "clean_Japanese": "金貨%s枚、返金するぜ",
+      "source_reference": {
+        "offset": 1257768,
+        "exact_hex": "8be089dd25739687814195d48be082b782e982ba"
+      },
+      "current_reference": {
+        "offset": 1257812,
+        "exact_hex": "526566756e6420257320636f696e732e"
+      },
+      "registered_reference": {
+        "offset": 1257812,
+        "exact_hex": "526566756e6420257320636f696e732e"
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 4294967295,
+        "values_hex": [
+          "32313437343833363437"
+        ],
+        "parent": 33898568,
+        "formatted_hex": "526566756e64203231343734383336343720636f696e732e",
+        "lines": [
+          "Refund 2147483647 coins."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "9a332c3c7c84e169825466054d0e285ba1831b87ed9cbaef5bbd0ae0f6e0ca82"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_802",
+      "message_ID": 802,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright offers full repairs at the quoted price and asks whether to proceed.",
+      "source_meaning": "The Shipwright offers full repairs at the quoted price and asks whether to proceed.",
+      "english": "I can repair it completely for %s. Should I go ahead?",
+      "clean_Japanese": "金貨%s枚で\n完全に修理できるぜ\n修理するかい？",
+      "source_reference": {
+        "block": 10,
+        "offset": 1836,
+        "copy_end": 1880,
+        "bytes": 44,
+        "record_index": 26,
+        "table_offset": 1318740,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2233,
+        "copy_end": 2288,
+        "bytes": 54,
+        "record_index": 100,
+        "table_offset": 1318740,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2233,
+        "copy_end": 2288,
+        "bytes": 54,
+        "record_index": 100,
+        "table_offset": 1318740,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 802,
+        "values_hex": [
+          "3231343734383336343720676f6c6420636f696e73"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "20492063616e2072657061697220697420636f6d706c6574656c790a2020666f72203231343734383336343720676f6c6420636f696e732e2053686f756c6420490a2020676f2061686561643f",
+        "lines": [
+          "I can repair it completely",
+          "for 2147483647 gold coins. Should I",
+          "go ahead?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "be8f5ef9a5a28cb62539c0f5aa990c24e0f733cc83dcbadf9ce2085c75f42b68"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_799",
+      "message_ID": 799,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright explains that funds do not cover the quoted repair price.",
+      "source_meaning": "The Shipwright explains that funds do not cover the quoted repair price.",
+      "english": "Repairs will cost %s, but you don't have enough.",
+      "clean_Japanese": "修理には\n金貨%s枚かかるが\n…足りないみたいだな",
+      "source_reference": {
+        "block": 10,
+        "offset": 1716,
+        "copy_end": 1764,
+        "bytes": 46,
+        "record_index": 24,
+        "table_offset": 1318734,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2082,
+        "copy_end": 2132,
+        "bytes": 49,
+        "record_index": 97,
+        "table_offset": 1318734,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2082,
+        "copy_end": 2132,
+        "bytes": 49,
+        "record_index": 97,
+        "table_offset": 1318734,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 799,
+        "values_hex": [
+          "3231343734383336343720676f6c6420636f696e73"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "20526570616972732077696c6c20636f7374203231343734383336343720676f6c640a2020636f696e732c2062757420796f7520646f6e2774206861766520656e6f7567682e",
+        "lines": [
+          "Repairs will cost 2147483647 gold",
+          "coins, but you don't have enough."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "96d05f39cf2f5116d625ab54090dfa3a41ce5877d6695eb83d43996c4cf273da"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_800",
+      "message_ID": 800,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright quotes the price for repairs and waits for confirmation.",
+      "source_meaning": "The Shipwright quotes the price for repairs and waits for confirmation.",
+      "english": "Repairs will cost %s. Is that okay?",
+      "clean_Japanese": "修理には\n金貨%s枚かかるぜ\nいいかい？",
+      "source_reference": {
+        "block": 10,
+        "offset": 1764,
+        "copy_end": 1800,
+        "bytes": 36,
+        "record_index": 25,
+        "table_offset": 1318736,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2132,
+        "copy_end": 2169,
+        "bytes": 36,
+        "record_index": 98,
+        "table_offset": 1318736,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2132,
+        "copy_end": 2169,
+        "bytes": 36,
+        "record_index": 98,
+        "table_offset": 1318736,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 800,
+        "values_hex": [
+          "3231343734383336343720676f6c6420636f696e73"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "20526570616972732077696c6c20636f7374203231343734383336343720676f6c640a2020636f696e732e2049732074686174206f6b61793f",
+        "lines": [
+          "Repairs will cost 2147483647 gold",
+          "coins. Is that okay?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "aec075e77bfcb43a39b8b847e3672e4a4821c58620d862526d277f0e4ef1143e"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_789",
+      "message_ID": 789,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright makes an offer for the selected ship and waits for a decision.",
+      "source_meaning": "The Shipwright makes an offer for the selected ship and waits for a decision.",
+      "english": "How about %s?",
+      "clean_Japanese": "金貨%s枚\nってとこだな。いいかい？",
+      "source_reference": {
+        "block": 10,
+        "offset": 1416,
+        "copy_end": 1452,
+        "bytes": 33,
+        "record_index": 19,
+        "table_offset": 1318714,
+        "start_in_record": 21
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 1673,
+        "copy_end": 1688,
+        "bytes": 14,
+        "record_index": 87,
+        "table_offset": 1318714,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 1673,
+        "copy_end": 1688,
+        "bytes": 14,
+        "record_index": 87,
+        "table_offset": 1318714,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 8,
+      "longest_checked": {
+        "id": 789,
+        "values_hex": [
+          "3231343734383336343720676f6c6420636f696e73"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "20486f772061626f7574203231343734383336343720676f6c6420636f696e733f",
+        "lines": [
+          "How about 2147483647 gold coins?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "4ccdf1b9188a4572147562d426d542e4e10a4751ab08e8abbf4b9dd178a0aec3"
+      },
+      "ordinary_amount_fixtures": [
+        {
+          "id": 789,
+          "values_hex": [
+            "3735303020676f6c6420636f696e73"
+          ],
+          "parent": 33898444,
+          "formatted_hex": "20486f772061626f7574203735303020676f6c6420636f696e733f",
+          "lines": [
+            "How about 7500 gold coins?"
+          ],
+          "findings": [],
+          "complete_bytes_and_guarded_printf_wrap_ABI": true,
+          "complete_native_plane_sha256": "feb13c5c28049f46390f4630e1923502d018de20d74a1939c256bd6d12951dcf"
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_804",
+      "message_ID": 804,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The requested design needs no remodeling. The Shipwright asks the player to confirm the purchase price.",
+      "source_meaning": "The requested design needs no remodeling. The Shipwright asks the player to confirm the purchase price.",
+      "english": "No remodeling is needed to match %s. That's %s. Buy it?",
+      "clean_Japanese": "%sと同じなら\n改造の必要はねえな\n金貨%s枚だが\n買うかい？",
+      "source_reference": {
+        "block": 10,
+        "offset": 1948,
+        "copy_end": 2004,
+        "bytes": 55,
+        "record_index": 27,
+        "table_offset": 1318744,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2356,
+        "copy_end": 2413,
+        "bytes": 56,
+        "record_index": 102,
+        "table_offset": 1318744,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2356,
+        "copy_end": 2413,
+        "bytes": 56,
+        "record_index": 102,
+        "table_offset": 1318744,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 30,
+      "longest_checked": {
+        "id": 804,
+        "values_hex": [
+          "4120422043204420452046204720482049204a204b204c",
+          "3231343734383336343720676f6c6420636f696e73"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "204e6f2072656d6f64656c696e67206973206e656564656420746f206d6174636820410a2020422043204420452046204720482049204a204b204c2e205468617427730a20203231343734383336343720676f6c6420636f696e732e204275792069743f",
+        "lines": [
+          "No remodeling is needed to match A",
+          "B C D E F G H I J K L. That's",
+          "2147483647 gold coins. Buy it?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "9bb20413903649b21acacd354aa0c64c82cceac219dd01c62f4a2ef1467b07ca"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_786",
+      "message_ID": 786,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright reports the selected ship's mast count and hull durability before purchase confirmation.",
+      "source_meaning": "The Shipwright reports the selected ship's mast count and hull durability before purchase confirmation.",
+      "english": "Masts: %s. Durability: %s.",
+      "clean_Japanese": "その船は%s本マストで\n耐久力は%sだ",
+      "source_reference": {
+        "block": 10,
+        "offset": 1332,
+        "copy_end": 1368,
+        "bytes": 33,
+        "record_index": 17,
+        "table_offset": 1318708,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 1584,
+        "copy_end": 1612,
+        "bytes": 27,
+        "record_index": 84,
+        "table_offset": 1318708,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 1584,
+        "copy_end": 1612,
+        "bytes": 27,
+        "record_index": 84,
+        "table_offset": 1318708,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 15,
+      "longest_checked": {
+        "id": 786,
+        "values_hex": [
+          "30",
+          "3635353335"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "204d617374733a20302e204475726162696c6974793a2036353533352e",
+        "lines": [
+          "Masts: 0. Durability: 65535."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "fc80dd7d2cf2e5ef10a469c18f63905c958ce6746d87a84b50b7f70c1e0c398c"
+      },
+      "ordinary_amount_fixtures": [
+        {
+          "id": 786,
+          "values_hex": [
+            "31",
+            "3330"
+          ],
+          "parent": 33898516,
+          "formatted_hex": "204d617374733a20312e204475726162696c6974793a2033302e",
+          "lines": [
+            "Masts: 1. Durability: 30."
+          ],
+          "findings": [],
+          "complete_bytes_and_guarded_printf_wrap_ABI": true,
+          "complete_native_plane_sha256": "e821198a07bbf4c188c99ce9dc6325c464da0c58147cb725b4389b0b359e44b8"
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_798",
+      "message_ID": 798,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "A crew member offers to help. The Shipwright quotes the resulting repair discount as a percentage.",
+      "source_meaning": "A crew member offers to help. The Shipwright quotes the resulting repair discount as a percentage.",
+      "english": "If they're helping, I'll knock %s percent off the repair bill.",
+      "clean_Japanese": "その人が手伝ってくれるなら\n修理代金を%s％\nまけてやろう",
+      "source_reference": {
+        "block": 10,
+        "offset": 1660,
+        "copy_end": 1716,
+        "bytes": 54,
+        "record_index": 23,
+        "table_offset": 1318732,
+        "start_in_record": 49
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2018,
+        "copy_end": 2082,
+        "bytes": 63,
+        "record_index": 96,
+        "table_offset": 1318732,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2018,
+        "copy_end": 2082,
+        "bytes": 63,
+        "record_index": 96,
+        "table_offset": 1318732,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 4,
+      "longest_checked": {
+        "id": 798,
+        "values_hex": [
+          "3330"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "20496620746865792772652068656c70696e672c2049276c6c206b6e6f636b2033300a202070657263656e74206f666620746865207265706169722062696c6c2e",
+        "lines": [
+          "If they're helping, I'll knock 30",
+          "percent off the repair bill."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "5c41866c2b61ff712c25d664ef260cf757301605952b7358e984857a894a78ea"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_1263",
+      "message_ID": 1263,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "The Shipwright states the helper's discount and starts calculating the refit cost.",
+      "source_meaning": "The Shipwright states the helper's discount and starts calculating the refit cost.",
+      "english": "With their help, I'll knock %s%% off the refit cost. Let's see...",
+      "clean_Japanese": "その人が手伝ってくれるなら\n改造代金を%s％\nまけてやろう。そうすると…",
+      "source_reference": {
+        "block": 15,
+        "offset": 2472,
+        "copy_end": 2540,
+        "bytes": 68,
+        "record_index": 48,
+        "table_offset": 1319662,
+        "start_in_record": 49
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 2236,
+        "copy_end": 2303,
+        "bytes": 66,
+        "record_index": 68,
+        "table_offset": 1319662,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 16,
+        "offset": 2236,
+        "copy_end": 2303,
+        "bytes": 66,
+        "record_index": 68,
+        "table_offset": 1319662,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 4,
+      "longest_checked": {
+        "id": 1263,
+        "values_hex": [
+          "3330"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "20576974682074686569722068656c702c2049276c6c206b6e6f636b20333025206f66660a202074686520726566697420636f73742e204c65742773207365652e2e2e",
+        "lines": [
+          "With their help, I'll knock 30% off",
+          "the refit cost. Let's see..."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "35bec5491ab87da6c2be7d4b994d717258a07d1f491bf622986b22b3026d7e91"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_1267",
+      "message_ID": 1267,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "After confirmation, the Shipwright gives the time needed to finish the refit.",
+      "source_meaning": "After confirmation, the Shipwright gives the time needed to finish the refit.",
+      "english": "The refit will take %s.",
+      "clean_Japanese": "改造が終わるまで\n%s日待ってくんな",
+      "source_reference": {
+        "block": 15,
+        "offset": 2624,
+        "copy_end": 2660,
+        "bytes": 33,
+        "record_index": 49,
+        "table_offset": 1319670,
+        "start_in_record": 25
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 2406,
+        "copy_end": 2431,
+        "bytes": 24,
+        "record_index": 72,
+        "table_offset": 1319670,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 16,
+        "offset": 2406,
+        "copy_end": 2431,
+        "bytes": 24,
+        "record_index": 72,
+        "table_offset": 1319670,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 5,
+      "longest_checked": {
+        "id": 1267,
+        "values_hex": [
+          "3235352064617973"
+        ],
+        "parent": 33898516,
+        "formatted_hex": "205468652072656669742077696c6c2074616b652032353520646179732e",
+        "lines": [
+          "The refit will take 255 days."
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "d3a851a533d24bdc8010d0377346c3f09341505d14fdbd72a8ecb867ab3c486f"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    },
+    {
+      "id": "COMMON_MESSAGE_803",
+      "message_ID": 803,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Shipwright",
+      "context": "Duplicating a ship's design takes the quoted price and the stated number of days.",
+      "source_meaning": "Duplicating a ship's design takes the quoted price and the stated number of days.",
+      "english": "A ship just like %s? It'll cost %s and take %s to prepare. Buy it?",
+      "clean_Japanese": "%sと同じ仕様か\nそれなら金貨%s枚だな\n準備に%s日かかるが\n買うかい？",
+      "source_reference": {
+        "block": 10,
+        "offset": 1880,
+        "copy_end": 1948,
+        "bytes": 65,
+        "record_index": 26,
+        "table_offset": 1318742,
+        "start_in_record": 46
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2288,
+        "copy_end": 2356,
+        "bytes": 67,
+        "record_index": 101,
+        "table_offset": 1318742,
+        "start_in_record": 0
+      },
+      "registered_reference": {
+        "block": 10,
+        "offset": 2288,
+        "copy_end": 2356,
+        "bytes": 67,
+        "record_index": 101,
+        "table_offset": 1318742,
+        "start_in_record": 0
+      },
+      "decision": "retention",
+      "localization_note": "Keep the existing wording and all numeric values, units, argument order, and interaction prompts. The digits use the same narrower glyphs as the adjacent English.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "native_argument_cases": 90,
+      "longest_checked": {
+        "id": 803,
+        "values_hex": [
+          "4142434445464748494a4b4c4d4e4f5051525354555657",
+          "3231343734383336343720676f6c6420636f696e73",
+          "31362064617973"
+        ],
+        "parent": 33898444,
+        "formatted_hex": "20412073686970206a757374206c696b650a20204142434445464748494a4b4c4d4e4f50515253545556573f204974276c6c20636f73740a20203231343734383336343720676f6c6420636f696e7320616e642074616b652031360a20206461797320746f20707265706172652e204275792069743f",
+        "lines": [
+          "A ship just like",
+          "ABCDEFGHIJKLMNOPQRSTUVW? It'll cost",
+          "2147483647 gold coins and take 16",
+          "days to prepare. Buy it?"
+        ],
+        "findings": [],
+        "complete_bytes_and_guarded_printf_wrap_ABI": true,
+        "complete_native_plane_sha256": "d760fd6ce247fc07dc10bb9403b89ede0a4cb45cfbfc23b075e3b70dd2ee48ad"
+      },
+      "ordinary_amount_fixtures": [],
+      "review_flags": []
+    }
+  ],
+  "candidate_sha256": "85bca3bcc105882e280013fe0b1f54c38f75c415ee3bb6fd5a83954af74ca7d4",
+  "predecessor_sha256": "680103a96d06a36dd7bf26f69f53e35e86b3d8cbf470ac6c8882d11a4e7779cc",
+  "patch_input": {
+    "path": ".codex-release-work/yard_numerals_20261124/stored_proof.json",
+    "sha256": "55c2974a35f7a553139c2a2798d228a3a4fbb40b791661ac0f00257335dfb73a"
+  },
+  "number_callers": [
+    {
+      "call": 33651480,
+      "message_ID": 1263,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33651596,
+      "message_ID": 1267,
+      "ring_slots": 32,
+      "cases": 256,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f2064617973",
+          "compact_hex": "302064617973"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020646179",
+          "compact_hex": "3120646179"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "82512064617973",
+          "compact_hex": "322064617973"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "82522064617973",
+          "compact_hex": "332064617973"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "82532064617973",
+          "compact_hex": "342064617973"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "82542064617973",
+          "compact_hex": "352064617973"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "82552064617973",
+          "compact_hex": "362064617973"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "82562064617973",
+          "compact_hex": "372064617973"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "82572064617973",
+          "compact_hex": "382064617973"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "82582064617973",
+          "compact_hex": "392064617973"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f2064617973",
+          "compact_hex": "31302064617973"
+        },
+        {
+          "value": 11,
+          "ring_slot": 11,
+          "original_hex": "825082502064617973",
+          "compact_hex": "31312064617973"
+        },
+        {
+          "value": 12,
+          "ring_slot": 12,
+          "original_hex": "825082512064617973",
+          "compact_hex": "31322064617973"
+        },
+        {
+          "value": 13,
+          "ring_slot": 13,
+          "original_hex": "825082522064617973",
+          "compact_hex": "31332064617973"
+        },
+        {
+          "value": 14,
+          "ring_slot": 14,
+          "original_hex": "825082532064617973",
+          "compact_hex": "31342064617973"
+        },
+        {
+          "value": 15,
+          "ring_slot": 15,
+          "original_hex": "825082542064617973",
+          "compact_hex": "31352064617973"
+        },
+        {
+          "value": 16,
+          "ring_slot": 16,
+          "original_hex": "825082552064617973",
+          "compact_hex": "31362064617973"
+        },
+        {
+          "value": 17,
+          "ring_slot": 17,
+          "original_hex": "825082562064617973",
+          "compact_hex": "31372064617973"
+        },
+        {
+          "value": 18,
+          "ring_slot": 18,
+          "original_hex": "825082572064617973",
+          "compact_hex": "31382064617973"
+        },
+        {
+          "value": 19,
+          "ring_slot": 19,
+          "original_hex": "825082582064617973",
+          "compact_hex": "31392064617973"
+        },
+        {
+          "value": 20,
+          "ring_slot": 20,
+          "original_hex": "8251824f2064617973",
+          "compact_hex": "32302064617973"
+        },
+        {
+          "value": 21,
+          "ring_slot": 21,
+          "original_hex": "825182502064617973",
+          "compact_hex": "32312064617973"
+        },
+        {
+          "value": 22,
+          "ring_slot": 22,
+          "original_hex": "825182512064617973",
+          "compact_hex": "32322064617973"
+        },
+        {
+          "value": 23,
+          "ring_slot": 23,
+          "original_hex": "825182522064617973",
+          "compact_hex": "32332064617973"
+        },
+        {
+          "value": 24,
+          "ring_slot": 24,
+          "original_hex": "825182532064617973",
+          "compact_hex": "32342064617973"
+        },
+        {
+          "value": 25,
+          "ring_slot": 25,
+          "original_hex": "825182542064617973",
+          "compact_hex": "32352064617973"
+        },
+        {
+          "value": 26,
+          "ring_slot": 26,
+          "original_hex": "825182552064617973",
+          "compact_hex": "32362064617973"
+        },
+        {
+          "value": 27,
+          "ring_slot": 27,
+          "original_hex": "825182562064617973",
+          "compact_hex": "32372064617973"
+        },
+        {
+          "value": 28,
+          "ring_slot": 28,
+          "original_hex": "825182572064617973",
+          "compact_hex": "32382064617973"
+        },
+        {
+          "value": 29,
+          "ring_slot": 29,
+          "original_hex": "825182582064617973",
+          "compact_hex": "32392064617973"
+        },
+        {
+          "value": 30,
+          "ring_slot": 30,
+          "original_hex": "8252824f2064617973",
+          "compact_hex": "33302064617973"
+        },
+        {
+          "value": 31,
+          "ring_slot": 31,
+          "original_hex": "825282502064617973",
+          "compact_hex": "33312064617973"
+        },
+        {
+          "value": 32,
+          "ring_slot": 0,
+          "original_hex": "825282512064617973",
+          "compact_hex": "33322064617973"
+        },
+        {
+          "value": 33,
+          "ring_slot": 1,
+          "original_hex": "825282522064617973",
+          "compact_hex": "33332064617973"
+        },
+        {
+          "value": 34,
+          "ring_slot": 2,
+          "original_hex": "825282532064617973",
+          "compact_hex": "33342064617973"
+        },
+        {
+          "value": 35,
+          "ring_slot": 3,
+          "original_hex": "825282542064617973",
+          "compact_hex": "33352064617973"
+        },
+        {
+          "value": 36,
+          "ring_slot": 4,
+          "original_hex": "825282552064617973",
+          "compact_hex": "33362064617973"
+        },
+        {
+          "value": 37,
+          "ring_slot": 5,
+          "original_hex": "825282562064617973",
+          "compact_hex": "33372064617973"
+        },
+        {
+          "value": 38,
+          "ring_slot": 6,
+          "original_hex": "825282572064617973",
+          "compact_hex": "33382064617973"
+        },
+        {
+          "value": 39,
+          "ring_slot": 7,
+          "original_hex": "825282582064617973",
+          "compact_hex": "33392064617973"
+        },
+        {
+          "value": 40,
+          "ring_slot": 8,
+          "original_hex": "8253824f2064617973",
+          "compact_hex": "34302064617973"
+        },
+        {
+          "value": 41,
+          "ring_slot": 9,
+          "original_hex": "825382502064617973",
+          "compact_hex": "34312064617973"
+        },
+        {
+          "value": 42,
+          "ring_slot": 10,
+          "original_hex": "825382512064617973",
+          "compact_hex": "34322064617973"
+        },
+        {
+          "value": 43,
+          "ring_slot": 11,
+          "original_hex": "825382522064617973",
+          "compact_hex": "34332064617973"
+        },
+        {
+          "value": 44,
+          "ring_slot": 12,
+          "original_hex": "825382532064617973",
+          "compact_hex": "34342064617973"
+        },
+        {
+          "value": 45,
+          "ring_slot": 13,
+          "original_hex": "825382542064617973",
+          "compact_hex": "34352064617973"
+        },
+        {
+          "value": 46,
+          "ring_slot": 14,
+          "original_hex": "825382552064617973",
+          "compact_hex": "34362064617973"
+        },
+        {
+          "value": 47,
+          "ring_slot": 15,
+          "original_hex": "825382562064617973",
+          "compact_hex": "34372064617973"
+        },
+        {
+          "value": 48,
+          "ring_slot": 16,
+          "original_hex": "825382572064617973",
+          "compact_hex": "34382064617973"
+        },
+        {
+          "value": 49,
+          "ring_slot": 17,
+          "original_hex": "825382582064617973",
+          "compact_hex": "34392064617973"
+        },
+        {
+          "value": 50,
+          "ring_slot": 18,
+          "original_hex": "8254824f2064617973",
+          "compact_hex": "35302064617973"
+        },
+        {
+          "value": 51,
+          "ring_slot": 19,
+          "original_hex": "825482502064617973",
+          "compact_hex": "35312064617973"
+        },
+        {
+          "value": 52,
+          "ring_slot": 20,
+          "original_hex": "825482512064617973",
+          "compact_hex": "35322064617973"
+        },
+        {
+          "value": 53,
+          "ring_slot": 21,
+          "original_hex": "825482522064617973",
+          "compact_hex": "35332064617973"
+        },
+        {
+          "value": 54,
+          "ring_slot": 22,
+          "original_hex": "825482532064617973",
+          "compact_hex": "35342064617973"
+        },
+        {
+          "value": 55,
+          "ring_slot": 23,
+          "original_hex": "825482542064617973",
+          "compact_hex": "35352064617973"
+        },
+        {
+          "value": 56,
+          "ring_slot": 24,
+          "original_hex": "825482552064617973",
+          "compact_hex": "35362064617973"
+        },
+        {
+          "value": 57,
+          "ring_slot": 25,
+          "original_hex": "825482562064617973",
+          "compact_hex": "35372064617973"
+        },
+        {
+          "value": 58,
+          "ring_slot": 26,
+          "original_hex": "825482572064617973",
+          "compact_hex": "35382064617973"
+        },
+        {
+          "value": 59,
+          "ring_slot": 27,
+          "original_hex": "825482582064617973",
+          "compact_hex": "35392064617973"
+        },
+        {
+          "value": 60,
+          "ring_slot": 28,
+          "original_hex": "8255824f2064617973",
+          "compact_hex": "36302064617973"
+        },
+        {
+          "value": 61,
+          "ring_slot": 29,
+          "original_hex": "825582502064617973",
+          "compact_hex": "36312064617973"
+        },
+        {
+          "value": 62,
+          "ring_slot": 30,
+          "original_hex": "825582512064617973",
+          "compact_hex": "36322064617973"
+        },
+        {
+          "value": 63,
+          "ring_slot": 31,
+          "original_hex": "825582522064617973",
+          "compact_hex": "36332064617973"
+        },
+        {
+          "value": 64,
+          "ring_slot": 0,
+          "original_hex": "825582532064617973",
+          "compact_hex": "36342064617973"
+        },
+        {
+          "value": 65,
+          "ring_slot": 1,
+          "original_hex": "825582542064617973",
+          "compact_hex": "36352064617973"
+        },
+        {
+          "value": 66,
+          "ring_slot": 2,
+          "original_hex": "825582552064617973",
+          "compact_hex": "36362064617973"
+        },
+        {
+          "value": 67,
+          "ring_slot": 3,
+          "original_hex": "825582562064617973",
+          "compact_hex": "36372064617973"
+        },
+        {
+          "value": 68,
+          "ring_slot": 4,
+          "original_hex": "825582572064617973",
+          "compact_hex": "36382064617973"
+        },
+        {
+          "value": 69,
+          "ring_slot": 5,
+          "original_hex": "825582582064617973",
+          "compact_hex": "36392064617973"
+        },
+        {
+          "value": 70,
+          "ring_slot": 6,
+          "original_hex": "8256824f2064617973",
+          "compact_hex": "37302064617973"
+        },
+        {
+          "value": 71,
+          "ring_slot": 7,
+          "original_hex": "825682502064617973",
+          "compact_hex": "37312064617973"
+        },
+        {
+          "value": 72,
+          "ring_slot": 8,
+          "original_hex": "825682512064617973",
+          "compact_hex": "37322064617973"
+        },
+        {
+          "value": 73,
+          "ring_slot": 9,
+          "original_hex": "825682522064617973",
+          "compact_hex": "37332064617973"
+        },
+        {
+          "value": 74,
+          "ring_slot": 10,
+          "original_hex": "825682532064617973",
+          "compact_hex": "37342064617973"
+        },
+        {
+          "value": 75,
+          "ring_slot": 11,
+          "original_hex": "825682542064617973",
+          "compact_hex": "37352064617973"
+        },
+        {
+          "value": 76,
+          "ring_slot": 12,
+          "original_hex": "825682552064617973",
+          "compact_hex": "37362064617973"
+        },
+        {
+          "value": 77,
+          "ring_slot": 13,
+          "original_hex": "825682562064617973",
+          "compact_hex": "37372064617973"
+        },
+        {
+          "value": 78,
+          "ring_slot": 14,
+          "original_hex": "825682572064617973",
+          "compact_hex": "37382064617973"
+        },
+        {
+          "value": 79,
+          "ring_slot": 15,
+          "original_hex": "825682582064617973",
+          "compact_hex": "37392064617973"
+        },
+        {
+          "value": 80,
+          "ring_slot": 16,
+          "original_hex": "8257824f2064617973",
+          "compact_hex": "38302064617973"
+        },
+        {
+          "value": 81,
+          "ring_slot": 17,
+          "original_hex": "825782502064617973",
+          "compact_hex": "38312064617973"
+        },
+        {
+          "value": 82,
+          "ring_slot": 18,
+          "original_hex": "825782512064617973",
+          "compact_hex": "38322064617973"
+        },
+        {
+          "value": 83,
+          "ring_slot": 19,
+          "original_hex": "825782522064617973",
+          "compact_hex": "38332064617973"
+        },
+        {
+          "value": 84,
+          "ring_slot": 20,
+          "original_hex": "825782532064617973",
+          "compact_hex": "38342064617973"
+        },
+        {
+          "value": 85,
+          "ring_slot": 21,
+          "original_hex": "825782542064617973",
+          "compact_hex": "38352064617973"
+        },
+        {
+          "value": 86,
+          "ring_slot": 22,
+          "original_hex": "825782552064617973",
+          "compact_hex": "38362064617973"
+        },
+        {
+          "value": 87,
+          "ring_slot": 23,
+          "original_hex": "825782562064617973",
+          "compact_hex": "38372064617973"
+        },
+        {
+          "value": 88,
+          "ring_slot": 24,
+          "original_hex": "825782572064617973",
+          "compact_hex": "38382064617973"
+        },
+        {
+          "value": 89,
+          "ring_slot": 25,
+          "original_hex": "825782582064617973",
+          "compact_hex": "38392064617973"
+        },
+        {
+          "value": 90,
+          "ring_slot": 26,
+          "original_hex": "8258824f2064617973",
+          "compact_hex": "39302064617973"
+        },
+        {
+          "value": 91,
+          "ring_slot": 27,
+          "original_hex": "825882502064617973",
+          "compact_hex": "39312064617973"
+        },
+        {
+          "value": 92,
+          "ring_slot": 28,
+          "original_hex": "825882512064617973",
+          "compact_hex": "39322064617973"
+        },
+        {
+          "value": 93,
+          "ring_slot": 29,
+          "original_hex": "825882522064617973",
+          "compact_hex": "39332064617973"
+        },
+        {
+          "value": 94,
+          "ring_slot": 30,
+          "original_hex": "825882532064617973",
+          "compact_hex": "39342064617973"
+        },
+        {
+          "value": 95,
+          "ring_slot": 31,
+          "original_hex": "825882542064617973",
+          "compact_hex": "39352064617973"
+        },
+        {
+          "value": 96,
+          "ring_slot": 0,
+          "original_hex": "825882552064617973",
+          "compact_hex": "39362064617973"
+        },
+        {
+          "value": 97,
+          "ring_slot": 1,
+          "original_hex": "825882562064617973",
+          "compact_hex": "39372064617973"
+        },
+        {
+          "value": 98,
+          "ring_slot": 2,
+          "original_hex": "825882572064617973",
+          "compact_hex": "39382064617973"
+        },
+        {
+          "value": 99,
+          "ring_slot": 3,
+          "original_hex": "825882582064617973",
+          "compact_hex": "39392064617973"
+        },
+        {
+          "value": 100,
+          "ring_slot": 4,
+          "original_hex": "8250824f824f2064617973",
+          "compact_hex": "3130302064617973"
+        },
+        {
+          "value": 101,
+          "ring_slot": 5,
+          "original_hex": "8250824f82502064617973",
+          "compact_hex": "3130312064617973"
+        },
+        {
+          "value": 102,
+          "ring_slot": 6,
+          "original_hex": "8250824f82512064617973",
+          "compact_hex": "3130322064617973"
+        },
+        {
+          "value": 103,
+          "ring_slot": 7,
+          "original_hex": "8250824f82522064617973",
+          "compact_hex": "3130332064617973"
+        },
+        {
+          "value": 104,
+          "ring_slot": 8,
+          "original_hex": "8250824f82532064617973",
+          "compact_hex": "3130342064617973"
+        },
+        {
+          "value": 105,
+          "ring_slot": 9,
+          "original_hex": "8250824f82542064617973",
+          "compact_hex": "3130352064617973"
+        },
+        {
+          "value": 106,
+          "ring_slot": 10,
+          "original_hex": "8250824f82552064617973",
+          "compact_hex": "3130362064617973"
+        },
+        {
+          "value": 107,
+          "ring_slot": 11,
+          "original_hex": "8250824f82562064617973",
+          "compact_hex": "3130372064617973"
+        },
+        {
+          "value": 108,
+          "ring_slot": 12,
+          "original_hex": "8250824f82572064617973",
+          "compact_hex": "3130382064617973"
+        },
+        {
+          "value": 109,
+          "ring_slot": 13,
+          "original_hex": "8250824f82582064617973",
+          "compact_hex": "3130392064617973"
+        },
+        {
+          "value": 110,
+          "ring_slot": 14,
+          "original_hex": "82508250824f2064617973",
+          "compact_hex": "3131302064617973"
+        },
+        {
+          "value": 111,
+          "ring_slot": 15,
+          "original_hex": "8250825082502064617973",
+          "compact_hex": "3131312064617973"
+        },
+        {
+          "value": 112,
+          "ring_slot": 16,
+          "original_hex": "8250825082512064617973",
+          "compact_hex": "3131322064617973"
+        },
+        {
+          "value": 113,
+          "ring_slot": 17,
+          "original_hex": "8250825082522064617973",
+          "compact_hex": "3131332064617973"
+        },
+        {
+          "value": 114,
+          "ring_slot": 18,
+          "original_hex": "8250825082532064617973",
+          "compact_hex": "3131342064617973"
+        },
+        {
+          "value": 115,
+          "ring_slot": 19,
+          "original_hex": "8250825082542064617973",
+          "compact_hex": "3131352064617973"
+        },
+        {
+          "value": 116,
+          "ring_slot": 20,
+          "original_hex": "8250825082552064617973",
+          "compact_hex": "3131362064617973"
+        },
+        {
+          "value": 117,
+          "ring_slot": 21,
+          "original_hex": "8250825082562064617973",
+          "compact_hex": "3131372064617973"
+        },
+        {
+          "value": 118,
+          "ring_slot": 22,
+          "original_hex": "8250825082572064617973",
+          "compact_hex": "3131382064617973"
+        },
+        {
+          "value": 119,
+          "ring_slot": 23,
+          "original_hex": "8250825082582064617973",
+          "compact_hex": "3131392064617973"
+        },
+        {
+          "value": 120,
+          "ring_slot": 24,
+          "original_hex": "82508251824f2064617973",
+          "compact_hex": "3132302064617973"
+        },
+        {
+          "value": 121,
+          "ring_slot": 25,
+          "original_hex": "8250825182502064617973",
+          "compact_hex": "3132312064617973"
+        },
+        {
+          "value": 122,
+          "ring_slot": 26,
+          "original_hex": "8250825182512064617973",
+          "compact_hex": "3132322064617973"
+        },
+        {
+          "value": 123,
+          "ring_slot": 27,
+          "original_hex": "8250825182522064617973",
+          "compact_hex": "3132332064617973"
+        },
+        {
+          "value": 124,
+          "ring_slot": 28,
+          "original_hex": "8250825182532064617973",
+          "compact_hex": "3132342064617973"
+        },
+        {
+          "value": 125,
+          "ring_slot": 29,
+          "original_hex": "8250825182542064617973",
+          "compact_hex": "3132352064617973"
+        },
+        {
+          "value": 126,
+          "ring_slot": 30,
+          "original_hex": "8250825182552064617973",
+          "compact_hex": "3132362064617973"
+        },
+        {
+          "value": 127,
+          "ring_slot": 31,
+          "original_hex": "8250825182562064617973",
+          "compact_hex": "3132372064617973"
+        },
+        {
+          "value": 128,
+          "ring_slot": 0,
+          "original_hex": "8250825182572064617973",
+          "compact_hex": "3132382064617973"
+        },
+        {
+          "value": 129,
+          "ring_slot": 1,
+          "original_hex": "8250825182582064617973",
+          "compact_hex": "3132392064617973"
+        },
+        {
+          "value": 130,
+          "ring_slot": 2,
+          "original_hex": "82508252824f2064617973",
+          "compact_hex": "3133302064617973"
+        },
+        {
+          "value": 131,
+          "ring_slot": 3,
+          "original_hex": "8250825282502064617973",
+          "compact_hex": "3133312064617973"
+        },
+        {
+          "value": 132,
+          "ring_slot": 4,
+          "original_hex": "8250825282512064617973",
+          "compact_hex": "3133322064617973"
+        },
+        {
+          "value": 133,
+          "ring_slot": 5,
+          "original_hex": "8250825282522064617973",
+          "compact_hex": "3133332064617973"
+        },
+        {
+          "value": 134,
+          "ring_slot": 6,
+          "original_hex": "8250825282532064617973",
+          "compact_hex": "3133342064617973"
+        },
+        {
+          "value": 135,
+          "ring_slot": 7,
+          "original_hex": "8250825282542064617973",
+          "compact_hex": "3133352064617973"
+        },
+        {
+          "value": 136,
+          "ring_slot": 8,
+          "original_hex": "8250825282552064617973",
+          "compact_hex": "3133362064617973"
+        },
+        {
+          "value": 137,
+          "ring_slot": 9,
+          "original_hex": "8250825282562064617973",
+          "compact_hex": "3133372064617973"
+        },
+        {
+          "value": 138,
+          "ring_slot": 10,
+          "original_hex": "8250825282572064617973",
+          "compact_hex": "3133382064617973"
+        },
+        {
+          "value": 139,
+          "ring_slot": 11,
+          "original_hex": "8250825282582064617973",
+          "compact_hex": "3133392064617973"
+        },
+        {
+          "value": 140,
+          "ring_slot": 12,
+          "original_hex": "82508253824f2064617973",
+          "compact_hex": "3134302064617973"
+        },
+        {
+          "value": 141,
+          "ring_slot": 13,
+          "original_hex": "8250825382502064617973",
+          "compact_hex": "3134312064617973"
+        },
+        {
+          "value": 142,
+          "ring_slot": 14,
+          "original_hex": "8250825382512064617973",
+          "compact_hex": "3134322064617973"
+        },
+        {
+          "value": 143,
+          "ring_slot": 15,
+          "original_hex": "8250825382522064617973",
+          "compact_hex": "3134332064617973"
+        },
+        {
+          "value": 144,
+          "ring_slot": 16,
+          "original_hex": "8250825382532064617973",
+          "compact_hex": "3134342064617973"
+        },
+        {
+          "value": 145,
+          "ring_slot": 17,
+          "original_hex": "8250825382542064617973",
+          "compact_hex": "3134352064617973"
+        },
+        {
+          "value": 146,
+          "ring_slot": 18,
+          "original_hex": "8250825382552064617973",
+          "compact_hex": "3134362064617973"
+        },
+        {
+          "value": 147,
+          "ring_slot": 19,
+          "original_hex": "8250825382562064617973",
+          "compact_hex": "3134372064617973"
+        },
+        {
+          "value": 148,
+          "ring_slot": 20,
+          "original_hex": "8250825382572064617973",
+          "compact_hex": "3134382064617973"
+        },
+        {
+          "value": 149,
+          "ring_slot": 21,
+          "original_hex": "8250825382582064617973",
+          "compact_hex": "3134392064617973"
+        },
+        {
+          "value": 150,
+          "ring_slot": 22,
+          "original_hex": "82508254824f2064617973",
+          "compact_hex": "3135302064617973"
+        },
+        {
+          "value": 151,
+          "ring_slot": 23,
+          "original_hex": "8250825482502064617973",
+          "compact_hex": "3135312064617973"
+        },
+        {
+          "value": 152,
+          "ring_slot": 24,
+          "original_hex": "8250825482512064617973",
+          "compact_hex": "3135322064617973"
+        },
+        {
+          "value": 153,
+          "ring_slot": 25,
+          "original_hex": "8250825482522064617973",
+          "compact_hex": "3135332064617973"
+        },
+        {
+          "value": 154,
+          "ring_slot": 26,
+          "original_hex": "8250825482532064617973",
+          "compact_hex": "3135342064617973"
+        },
+        {
+          "value": 155,
+          "ring_slot": 27,
+          "original_hex": "8250825482542064617973",
+          "compact_hex": "3135352064617973"
+        },
+        {
+          "value": 156,
+          "ring_slot": 28,
+          "original_hex": "8250825482552064617973",
+          "compact_hex": "3135362064617973"
+        },
+        {
+          "value": 157,
+          "ring_slot": 29,
+          "original_hex": "8250825482562064617973",
+          "compact_hex": "3135372064617973"
+        },
+        {
+          "value": 158,
+          "ring_slot": 30,
+          "original_hex": "8250825482572064617973",
+          "compact_hex": "3135382064617973"
+        },
+        {
+          "value": 159,
+          "ring_slot": 31,
+          "original_hex": "8250825482582064617973",
+          "compact_hex": "3135392064617973"
+        },
+        {
+          "value": 160,
+          "ring_slot": 0,
+          "original_hex": "82508255824f2064617973",
+          "compact_hex": "3136302064617973"
+        },
+        {
+          "value": 161,
+          "ring_slot": 1,
+          "original_hex": "8250825582502064617973",
+          "compact_hex": "3136312064617973"
+        },
+        {
+          "value": 162,
+          "ring_slot": 2,
+          "original_hex": "8250825582512064617973",
+          "compact_hex": "3136322064617973"
+        },
+        {
+          "value": 163,
+          "ring_slot": 3,
+          "original_hex": "8250825582522064617973",
+          "compact_hex": "3136332064617973"
+        },
+        {
+          "value": 164,
+          "ring_slot": 4,
+          "original_hex": "8250825582532064617973",
+          "compact_hex": "3136342064617973"
+        },
+        {
+          "value": 165,
+          "ring_slot": 5,
+          "original_hex": "8250825582542064617973",
+          "compact_hex": "3136352064617973"
+        },
+        {
+          "value": 166,
+          "ring_slot": 6,
+          "original_hex": "8250825582552064617973",
+          "compact_hex": "3136362064617973"
+        },
+        {
+          "value": 167,
+          "ring_slot": 7,
+          "original_hex": "8250825582562064617973",
+          "compact_hex": "3136372064617973"
+        },
+        {
+          "value": 168,
+          "ring_slot": 8,
+          "original_hex": "8250825582572064617973",
+          "compact_hex": "3136382064617973"
+        },
+        {
+          "value": 169,
+          "ring_slot": 9,
+          "original_hex": "8250825582582064617973",
+          "compact_hex": "3136392064617973"
+        },
+        {
+          "value": 170,
+          "ring_slot": 10,
+          "original_hex": "82508256824f2064617973",
+          "compact_hex": "3137302064617973"
+        },
+        {
+          "value": 171,
+          "ring_slot": 11,
+          "original_hex": "8250825682502064617973",
+          "compact_hex": "3137312064617973"
+        },
+        {
+          "value": 172,
+          "ring_slot": 12,
+          "original_hex": "8250825682512064617973",
+          "compact_hex": "3137322064617973"
+        },
+        {
+          "value": 173,
+          "ring_slot": 13,
+          "original_hex": "8250825682522064617973",
+          "compact_hex": "3137332064617973"
+        },
+        {
+          "value": 174,
+          "ring_slot": 14,
+          "original_hex": "8250825682532064617973",
+          "compact_hex": "3137342064617973"
+        },
+        {
+          "value": 175,
+          "ring_slot": 15,
+          "original_hex": "8250825682542064617973",
+          "compact_hex": "3137352064617973"
+        },
+        {
+          "value": 176,
+          "ring_slot": 16,
+          "original_hex": "8250825682552064617973",
+          "compact_hex": "3137362064617973"
+        },
+        {
+          "value": 177,
+          "ring_slot": 17,
+          "original_hex": "8250825682562064617973",
+          "compact_hex": "3137372064617973"
+        },
+        {
+          "value": 178,
+          "ring_slot": 18,
+          "original_hex": "8250825682572064617973",
+          "compact_hex": "3137382064617973"
+        },
+        {
+          "value": 179,
+          "ring_slot": 19,
+          "original_hex": "8250825682582064617973",
+          "compact_hex": "3137392064617973"
+        },
+        {
+          "value": 180,
+          "ring_slot": 20,
+          "original_hex": "82508257824f2064617973",
+          "compact_hex": "3138302064617973"
+        },
+        {
+          "value": 181,
+          "ring_slot": 21,
+          "original_hex": "8250825782502064617973",
+          "compact_hex": "3138312064617973"
+        },
+        {
+          "value": 182,
+          "ring_slot": 22,
+          "original_hex": "8250825782512064617973",
+          "compact_hex": "3138322064617973"
+        },
+        {
+          "value": 183,
+          "ring_slot": 23,
+          "original_hex": "8250825782522064617973",
+          "compact_hex": "3138332064617973"
+        },
+        {
+          "value": 184,
+          "ring_slot": 24,
+          "original_hex": "8250825782532064617973",
+          "compact_hex": "3138342064617973"
+        },
+        {
+          "value": 185,
+          "ring_slot": 25,
+          "original_hex": "8250825782542064617973",
+          "compact_hex": "3138352064617973"
+        },
+        {
+          "value": 186,
+          "ring_slot": 26,
+          "original_hex": "8250825782552064617973",
+          "compact_hex": "3138362064617973"
+        },
+        {
+          "value": 187,
+          "ring_slot": 27,
+          "original_hex": "8250825782562064617973",
+          "compact_hex": "3138372064617973"
+        },
+        {
+          "value": 188,
+          "ring_slot": 28,
+          "original_hex": "8250825782572064617973",
+          "compact_hex": "3138382064617973"
+        },
+        {
+          "value": 189,
+          "ring_slot": 29,
+          "original_hex": "8250825782582064617973",
+          "compact_hex": "3138392064617973"
+        },
+        {
+          "value": 190,
+          "ring_slot": 30,
+          "original_hex": "82508258824f2064617973",
+          "compact_hex": "3139302064617973"
+        },
+        {
+          "value": 191,
+          "ring_slot": 31,
+          "original_hex": "8250825882502064617973",
+          "compact_hex": "3139312064617973"
+        },
+        {
+          "value": 192,
+          "ring_slot": 0,
+          "original_hex": "8250825882512064617973",
+          "compact_hex": "3139322064617973"
+        },
+        {
+          "value": 193,
+          "ring_slot": 1,
+          "original_hex": "8250825882522064617973",
+          "compact_hex": "3139332064617973"
+        },
+        {
+          "value": 194,
+          "ring_slot": 2,
+          "original_hex": "8250825882532064617973",
+          "compact_hex": "3139342064617973"
+        },
+        {
+          "value": 195,
+          "ring_slot": 3,
+          "original_hex": "8250825882542064617973",
+          "compact_hex": "3139352064617973"
+        },
+        {
+          "value": 196,
+          "ring_slot": 4,
+          "original_hex": "8250825882552064617973",
+          "compact_hex": "3139362064617973"
+        },
+        {
+          "value": 197,
+          "ring_slot": 5,
+          "original_hex": "8250825882562064617973",
+          "compact_hex": "3139372064617973"
+        },
+        {
+          "value": 198,
+          "ring_slot": 6,
+          "original_hex": "8250825882572064617973",
+          "compact_hex": "3139382064617973"
+        },
+        {
+          "value": 199,
+          "ring_slot": 7,
+          "original_hex": "8250825882582064617973",
+          "compact_hex": "3139392064617973"
+        },
+        {
+          "value": 200,
+          "ring_slot": 8,
+          "original_hex": "8251824f824f2064617973",
+          "compact_hex": "3230302064617973"
+        },
+        {
+          "value": 201,
+          "ring_slot": 9,
+          "original_hex": "8251824f82502064617973",
+          "compact_hex": "3230312064617973"
+        },
+        {
+          "value": 202,
+          "ring_slot": 10,
+          "original_hex": "8251824f82512064617973",
+          "compact_hex": "3230322064617973"
+        },
+        {
+          "value": 203,
+          "ring_slot": 11,
+          "original_hex": "8251824f82522064617973",
+          "compact_hex": "3230332064617973"
+        },
+        {
+          "value": 204,
+          "ring_slot": 12,
+          "original_hex": "8251824f82532064617973",
+          "compact_hex": "3230342064617973"
+        },
+        {
+          "value": 205,
+          "ring_slot": 13,
+          "original_hex": "8251824f82542064617973",
+          "compact_hex": "3230352064617973"
+        },
+        {
+          "value": 206,
+          "ring_slot": 14,
+          "original_hex": "8251824f82552064617973",
+          "compact_hex": "3230362064617973"
+        },
+        {
+          "value": 207,
+          "ring_slot": 15,
+          "original_hex": "8251824f82562064617973",
+          "compact_hex": "3230372064617973"
+        },
+        {
+          "value": 208,
+          "ring_slot": 16,
+          "original_hex": "8251824f82572064617973",
+          "compact_hex": "3230382064617973"
+        },
+        {
+          "value": 209,
+          "ring_slot": 17,
+          "original_hex": "8251824f82582064617973",
+          "compact_hex": "3230392064617973"
+        },
+        {
+          "value": 210,
+          "ring_slot": 18,
+          "original_hex": "82518250824f2064617973",
+          "compact_hex": "3231302064617973"
+        },
+        {
+          "value": 211,
+          "ring_slot": 19,
+          "original_hex": "8251825082502064617973",
+          "compact_hex": "3231312064617973"
+        },
+        {
+          "value": 212,
+          "ring_slot": 20,
+          "original_hex": "8251825082512064617973",
+          "compact_hex": "3231322064617973"
+        },
+        {
+          "value": 213,
+          "ring_slot": 21,
+          "original_hex": "8251825082522064617973",
+          "compact_hex": "3231332064617973"
+        },
+        {
+          "value": 214,
+          "ring_slot": 22,
+          "original_hex": "8251825082532064617973",
+          "compact_hex": "3231342064617973"
+        },
+        {
+          "value": 215,
+          "ring_slot": 23,
+          "original_hex": "8251825082542064617973",
+          "compact_hex": "3231352064617973"
+        },
+        {
+          "value": 216,
+          "ring_slot": 24,
+          "original_hex": "8251825082552064617973",
+          "compact_hex": "3231362064617973"
+        },
+        {
+          "value": 217,
+          "ring_slot": 25,
+          "original_hex": "8251825082562064617973",
+          "compact_hex": "3231372064617973"
+        },
+        {
+          "value": 218,
+          "ring_slot": 26,
+          "original_hex": "8251825082572064617973",
+          "compact_hex": "3231382064617973"
+        },
+        {
+          "value": 219,
+          "ring_slot": 27,
+          "original_hex": "8251825082582064617973",
+          "compact_hex": "3231392064617973"
+        },
+        {
+          "value": 220,
+          "ring_slot": 28,
+          "original_hex": "82518251824f2064617973",
+          "compact_hex": "3232302064617973"
+        },
+        {
+          "value": 221,
+          "ring_slot": 29,
+          "original_hex": "8251825182502064617973",
+          "compact_hex": "3232312064617973"
+        },
+        {
+          "value": 222,
+          "ring_slot": 30,
+          "original_hex": "8251825182512064617973",
+          "compact_hex": "3232322064617973"
+        },
+        {
+          "value": 223,
+          "ring_slot": 31,
+          "original_hex": "8251825182522064617973",
+          "compact_hex": "3232332064617973"
+        },
+        {
+          "value": 224,
+          "ring_slot": 0,
+          "original_hex": "8251825182532064617973",
+          "compact_hex": "3232342064617973"
+        },
+        {
+          "value": 225,
+          "ring_slot": 1,
+          "original_hex": "8251825182542064617973",
+          "compact_hex": "3232352064617973"
+        },
+        {
+          "value": 226,
+          "ring_slot": 2,
+          "original_hex": "8251825182552064617973",
+          "compact_hex": "3232362064617973"
+        },
+        {
+          "value": 227,
+          "ring_slot": 3,
+          "original_hex": "8251825182562064617973",
+          "compact_hex": "3232372064617973"
+        },
+        {
+          "value": 228,
+          "ring_slot": 4,
+          "original_hex": "8251825182572064617973",
+          "compact_hex": "3232382064617973"
+        },
+        {
+          "value": 229,
+          "ring_slot": 5,
+          "original_hex": "8251825182582064617973",
+          "compact_hex": "3232392064617973"
+        },
+        {
+          "value": 230,
+          "ring_slot": 6,
+          "original_hex": "82518252824f2064617973",
+          "compact_hex": "3233302064617973"
+        },
+        {
+          "value": 231,
+          "ring_slot": 7,
+          "original_hex": "8251825282502064617973",
+          "compact_hex": "3233312064617973"
+        },
+        {
+          "value": 232,
+          "ring_slot": 8,
+          "original_hex": "8251825282512064617973",
+          "compact_hex": "3233322064617973"
+        },
+        {
+          "value": 233,
+          "ring_slot": 9,
+          "original_hex": "8251825282522064617973",
+          "compact_hex": "3233332064617973"
+        },
+        {
+          "value": 234,
+          "ring_slot": 10,
+          "original_hex": "8251825282532064617973",
+          "compact_hex": "3233342064617973"
+        },
+        {
+          "value": 235,
+          "ring_slot": 11,
+          "original_hex": "8251825282542064617973",
+          "compact_hex": "3233352064617973"
+        },
+        {
+          "value": 236,
+          "ring_slot": 12,
+          "original_hex": "8251825282552064617973",
+          "compact_hex": "3233362064617973"
+        },
+        {
+          "value": 237,
+          "ring_slot": 13,
+          "original_hex": "8251825282562064617973",
+          "compact_hex": "3233372064617973"
+        },
+        {
+          "value": 238,
+          "ring_slot": 14,
+          "original_hex": "8251825282572064617973",
+          "compact_hex": "3233382064617973"
+        },
+        {
+          "value": 239,
+          "ring_slot": 15,
+          "original_hex": "8251825282582064617973",
+          "compact_hex": "3233392064617973"
+        },
+        {
+          "value": 240,
+          "ring_slot": 16,
+          "original_hex": "82518253824f2064617973",
+          "compact_hex": "3234302064617973"
+        },
+        {
+          "value": 241,
+          "ring_slot": 17,
+          "original_hex": "8251825382502064617973",
+          "compact_hex": "3234312064617973"
+        },
+        {
+          "value": 242,
+          "ring_slot": 18,
+          "original_hex": "8251825382512064617973",
+          "compact_hex": "3234322064617973"
+        },
+        {
+          "value": 243,
+          "ring_slot": 19,
+          "original_hex": "8251825382522064617973",
+          "compact_hex": "3234332064617973"
+        },
+        {
+          "value": 244,
+          "ring_slot": 20,
+          "original_hex": "8251825382532064617973",
+          "compact_hex": "3234342064617973"
+        },
+        {
+          "value": 245,
+          "ring_slot": 21,
+          "original_hex": "8251825382542064617973",
+          "compact_hex": "3234352064617973"
+        },
+        {
+          "value": 246,
+          "ring_slot": 22,
+          "original_hex": "8251825382552064617973",
+          "compact_hex": "3234362064617973"
+        },
+        {
+          "value": 247,
+          "ring_slot": 23,
+          "original_hex": "8251825382562064617973",
+          "compact_hex": "3234372064617973"
+        },
+        {
+          "value": 248,
+          "ring_slot": 24,
+          "original_hex": "8251825382572064617973",
+          "compact_hex": "3234382064617973"
+        },
+        {
+          "value": 249,
+          "ring_slot": 25,
+          "original_hex": "8251825382582064617973",
+          "compact_hex": "3234392064617973"
+        },
+        {
+          "value": 250,
+          "ring_slot": 26,
+          "original_hex": "82518254824f2064617973",
+          "compact_hex": "3235302064617973"
+        },
+        {
+          "value": 251,
+          "ring_slot": 27,
+          "original_hex": "8251825482502064617973",
+          "compact_hex": "3235312064617973"
+        },
+        {
+          "value": 252,
+          "ring_slot": 28,
+          "original_hex": "8251825482512064617973",
+          "compact_hex": "3235322064617973"
+        },
+        {
+          "value": 253,
+          "ring_slot": 29,
+          "original_hex": "8251825482522064617973",
+          "compact_hex": "3235332064617973"
+        },
+        {
+          "value": 254,
+          "ring_slot": 30,
+          "original_hex": "8251825482532064617973",
+          "compact_hex": "3235342064617973"
+        },
+        {
+          "value": 255,
+          "ring_slot": 31,
+          "original_hex": "8251825482542064617973",
+          "compact_hex": "3235352064617973"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33652436,
+      "message_ID": 1245,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33652468,
+      "message_ID": 1246,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33652560,
+      "message_ID": "ARM9_REFIT_REFUND",
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33956024,
+      "message_ID": 802,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33956692,
+      "message_ID": 799,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33956724,
+      "message_ID": 800,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33957072,
+      "message_ID": 798,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33957448,
+      "message_ID": 789,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33960188,
+      "message_ID": 1245,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33960256,
+      "message_ID": 804,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33960308,
+      "message_ID": 803,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f20676f6c6420636f696e73",
+          "compact_hex": "3020676f6c6420636f696e73"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020676f6c6420636f696e",
+          "compact_hex": "3120676f6c6420636f696e"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "825120676f6c6420636f696e73",
+          "compact_hex": "3220676f6c6420636f696e73"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "825220676f6c6420636f696e73",
+          "compact_hex": "3320676f6c6420636f696e73"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "825320676f6c6420636f696e73",
+          "compact_hex": "3420676f6c6420636f696e73"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "825420676f6c6420636f696e73",
+          "compact_hex": "3520676f6c6420636f696e73"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "825520676f6c6420636f696e73",
+          "compact_hex": "3620676f6c6420636f696e73"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "825620676f6c6420636f696e73",
+          "compact_hex": "3720676f6c6420636f696e73"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "825720676f6c6420636f696e73",
+          "compact_hex": "3820676f6c6420636f696e73"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "825820676f6c6420636f696e73",
+          "compact_hex": "3920676f6c6420636f696e73"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f20676f6c6420636f696e73",
+          "compact_hex": "313020676f6c6420636f696e73"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f20676f6c6420636f696e73",
+          "compact_hex": "333020676f6c6420636f696e73"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f20676f6c6420636f696e73",
+          "compact_hex": "353020676f6c6420636f696e73"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "8258825820676f6c6420636f696e73",
+          "compact_hex": "393920676f6c6420636f696e73"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f20676f6c6420636f696e73",
+          "compact_hex": "31303020676f6c6420636f696e73"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "82508251825220676f6c6420636f696e73",
+          "compact_hex": "31323320676f6c6420636f696e73"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "82518254825420676f6c6420636f696e73",
+          "compact_hex": "32353520676f6c6420636f696e73"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "82588258825820676f6c6420636f696e73",
+          "compact_hex": "39393920676f6c6420636f696e73"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303020676f6c6420636f696e73"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f20676f6c6420636f696e73",
+          "compact_hex": "3138383020676f6c6420636f696e73"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f20676f6c6420636f696e73",
+          "compact_hex": "3735303020676f6c6420636f696e73"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "353030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "8255825482548252825420676f6c6420636f696e73",
+          "compact_hex": "363535333520676f6c6420636f696e73"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f20676f6c6420636f696e73",
+          "compact_hex": "3130303030303020676f6c6420636f696e73"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "825182508253825682538257825282558253825620676f6c6420636f696e73",
+          "compact_hex": "3231343734383336343720676f6c6420636f696e73"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33960320,
+      "message_ID": 803,
+      "ring_slots": 32,
+      "cases": 256,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f2064617973",
+          "compact_hex": "302064617973"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "825020646179",
+          "compact_hex": "3120646179"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "82512064617973",
+          "compact_hex": "322064617973"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "82522064617973",
+          "compact_hex": "332064617973"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "82532064617973",
+          "compact_hex": "342064617973"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "82542064617973",
+          "compact_hex": "352064617973"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "82552064617973",
+          "compact_hex": "362064617973"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "82562064617973",
+          "compact_hex": "372064617973"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "82572064617973",
+          "compact_hex": "382064617973"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "82582064617973",
+          "compact_hex": "392064617973"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f2064617973",
+          "compact_hex": "31302064617973"
+        },
+        {
+          "value": 11,
+          "ring_slot": 11,
+          "original_hex": "825082502064617973",
+          "compact_hex": "31312064617973"
+        },
+        {
+          "value": 12,
+          "ring_slot": 12,
+          "original_hex": "825082512064617973",
+          "compact_hex": "31322064617973"
+        },
+        {
+          "value": 13,
+          "ring_slot": 13,
+          "original_hex": "825082522064617973",
+          "compact_hex": "31332064617973"
+        },
+        {
+          "value": 14,
+          "ring_slot": 14,
+          "original_hex": "825082532064617973",
+          "compact_hex": "31342064617973"
+        },
+        {
+          "value": 15,
+          "ring_slot": 15,
+          "original_hex": "825082542064617973",
+          "compact_hex": "31352064617973"
+        },
+        {
+          "value": 16,
+          "ring_slot": 16,
+          "original_hex": "825082552064617973",
+          "compact_hex": "31362064617973"
+        },
+        {
+          "value": 17,
+          "ring_slot": 17,
+          "original_hex": "825082562064617973",
+          "compact_hex": "31372064617973"
+        },
+        {
+          "value": 18,
+          "ring_slot": 18,
+          "original_hex": "825082572064617973",
+          "compact_hex": "31382064617973"
+        },
+        {
+          "value": 19,
+          "ring_slot": 19,
+          "original_hex": "825082582064617973",
+          "compact_hex": "31392064617973"
+        },
+        {
+          "value": 20,
+          "ring_slot": 20,
+          "original_hex": "8251824f2064617973",
+          "compact_hex": "32302064617973"
+        },
+        {
+          "value": 21,
+          "ring_slot": 21,
+          "original_hex": "825182502064617973",
+          "compact_hex": "32312064617973"
+        },
+        {
+          "value": 22,
+          "ring_slot": 22,
+          "original_hex": "825182512064617973",
+          "compact_hex": "32322064617973"
+        },
+        {
+          "value": 23,
+          "ring_slot": 23,
+          "original_hex": "825182522064617973",
+          "compact_hex": "32332064617973"
+        },
+        {
+          "value": 24,
+          "ring_slot": 24,
+          "original_hex": "825182532064617973",
+          "compact_hex": "32342064617973"
+        },
+        {
+          "value": 25,
+          "ring_slot": 25,
+          "original_hex": "825182542064617973",
+          "compact_hex": "32352064617973"
+        },
+        {
+          "value": 26,
+          "ring_slot": 26,
+          "original_hex": "825182552064617973",
+          "compact_hex": "32362064617973"
+        },
+        {
+          "value": 27,
+          "ring_slot": 27,
+          "original_hex": "825182562064617973",
+          "compact_hex": "32372064617973"
+        },
+        {
+          "value": 28,
+          "ring_slot": 28,
+          "original_hex": "825182572064617973",
+          "compact_hex": "32382064617973"
+        },
+        {
+          "value": 29,
+          "ring_slot": 29,
+          "original_hex": "825182582064617973",
+          "compact_hex": "32392064617973"
+        },
+        {
+          "value": 30,
+          "ring_slot": 30,
+          "original_hex": "8252824f2064617973",
+          "compact_hex": "33302064617973"
+        },
+        {
+          "value": 31,
+          "ring_slot": 31,
+          "original_hex": "825282502064617973",
+          "compact_hex": "33312064617973"
+        },
+        {
+          "value": 32,
+          "ring_slot": 0,
+          "original_hex": "825282512064617973",
+          "compact_hex": "33322064617973"
+        },
+        {
+          "value": 33,
+          "ring_slot": 1,
+          "original_hex": "825282522064617973",
+          "compact_hex": "33332064617973"
+        },
+        {
+          "value": 34,
+          "ring_slot": 2,
+          "original_hex": "825282532064617973",
+          "compact_hex": "33342064617973"
+        },
+        {
+          "value": 35,
+          "ring_slot": 3,
+          "original_hex": "825282542064617973",
+          "compact_hex": "33352064617973"
+        },
+        {
+          "value": 36,
+          "ring_slot": 4,
+          "original_hex": "825282552064617973",
+          "compact_hex": "33362064617973"
+        },
+        {
+          "value": 37,
+          "ring_slot": 5,
+          "original_hex": "825282562064617973",
+          "compact_hex": "33372064617973"
+        },
+        {
+          "value": 38,
+          "ring_slot": 6,
+          "original_hex": "825282572064617973",
+          "compact_hex": "33382064617973"
+        },
+        {
+          "value": 39,
+          "ring_slot": 7,
+          "original_hex": "825282582064617973",
+          "compact_hex": "33392064617973"
+        },
+        {
+          "value": 40,
+          "ring_slot": 8,
+          "original_hex": "8253824f2064617973",
+          "compact_hex": "34302064617973"
+        },
+        {
+          "value": 41,
+          "ring_slot": 9,
+          "original_hex": "825382502064617973",
+          "compact_hex": "34312064617973"
+        },
+        {
+          "value": 42,
+          "ring_slot": 10,
+          "original_hex": "825382512064617973",
+          "compact_hex": "34322064617973"
+        },
+        {
+          "value": 43,
+          "ring_slot": 11,
+          "original_hex": "825382522064617973",
+          "compact_hex": "34332064617973"
+        },
+        {
+          "value": 44,
+          "ring_slot": 12,
+          "original_hex": "825382532064617973",
+          "compact_hex": "34342064617973"
+        },
+        {
+          "value": 45,
+          "ring_slot": 13,
+          "original_hex": "825382542064617973",
+          "compact_hex": "34352064617973"
+        },
+        {
+          "value": 46,
+          "ring_slot": 14,
+          "original_hex": "825382552064617973",
+          "compact_hex": "34362064617973"
+        },
+        {
+          "value": 47,
+          "ring_slot": 15,
+          "original_hex": "825382562064617973",
+          "compact_hex": "34372064617973"
+        },
+        {
+          "value": 48,
+          "ring_slot": 16,
+          "original_hex": "825382572064617973",
+          "compact_hex": "34382064617973"
+        },
+        {
+          "value": 49,
+          "ring_slot": 17,
+          "original_hex": "825382582064617973",
+          "compact_hex": "34392064617973"
+        },
+        {
+          "value": 50,
+          "ring_slot": 18,
+          "original_hex": "8254824f2064617973",
+          "compact_hex": "35302064617973"
+        },
+        {
+          "value": 51,
+          "ring_slot": 19,
+          "original_hex": "825482502064617973",
+          "compact_hex": "35312064617973"
+        },
+        {
+          "value": 52,
+          "ring_slot": 20,
+          "original_hex": "825482512064617973",
+          "compact_hex": "35322064617973"
+        },
+        {
+          "value": 53,
+          "ring_slot": 21,
+          "original_hex": "825482522064617973",
+          "compact_hex": "35332064617973"
+        },
+        {
+          "value": 54,
+          "ring_slot": 22,
+          "original_hex": "825482532064617973",
+          "compact_hex": "35342064617973"
+        },
+        {
+          "value": 55,
+          "ring_slot": 23,
+          "original_hex": "825482542064617973",
+          "compact_hex": "35352064617973"
+        },
+        {
+          "value": 56,
+          "ring_slot": 24,
+          "original_hex": "825482552064617973",
+          "compact_hex": "35362064617973"
+        },
+        {
+          "value": 57,
+          "ring_slot": 25,
+          "original_hex": "825482562064617973",
+          "compact_hex": "35372064617973"
+        },
+        {
+          "value": 58,
+          "ring_slot": 26,
+          "original_hex": "825482572064617973",
+          "compact_hex": "35382064617973"
+        },
+        {
+          "value": 59,
+          "ring_slot": 27,
+          "original_hex": "825482582064617973",
+          "compact_hex": "35392064617973"
+        },
+        {
+          "value": 60,
+          "ring_slot": 28,
+          "original_hex": "8255824f2064617973",
+          "compact_hex": "36302064617973"
+        },
+        {
+          "value": 61,
+          "ring_slot": 29,
+          "original_hex": "825582502064617973",
+          "compact_hex": "36312064617973"
+        },
+        {
+          "value": 62,
+          "ring_slot": 30,
+          "original_hex": "825582512064617973",
+          "compact_hex": "36322064617973"
+        },
+        {
+          "value": 63,
+          "ring_slot": 31,
+          "original_hex": "825582522064617973",
+          "compact_hex": "36332064617973"
+        },
+        {
+          "value": 64,
+          "ring_slot": 0,
+          "original_hex": "825582532064617973",
+          "compact_hex": "36342064617973"
+        },
+        {
+          "value": 65,
+          "ring_slot": 1,
+          "original_hex": "825582542064617973",
+          "compact_hex": "36352064617973"
+        },
+        {
+          "value": 66,
+          "ring_slot": 2,
+          "original_hex": "825582552064617973",
+          "compact_hex": "36362064617973"
+        },
+        {
+          "value": 67,
+          "ring_slot": 3,
+          "original_hex": "825582562064617973",
+          "compact_hex": "36372064617973"
+        },
+        {
+          "value": 68,
+          "ring_slot": 4,
+          "original_hex": "825582572064617973",
+          "compact_hex": "36382064617973"
+        },
+        {
+          "value": 69,
+          "ring_slot": 5,
+          "original_hex": "825582582064617973",
+          "compact_hex": "36392064617973"
+        },
+        {
+          "value": 70,
+          "ring_slot": 6,
+          "original_hex": "8256824f2064617973",
+          "compact_hex": "37302064617973"
+        },
+        {
+          "value": 71,
+          "ring_slot": 7,
+          "original_hex": "825682502064617973",
+          "compact_hex": "37312064617973"
+        },
+        {
+          "value": 72,
+          "ring_slot": 8,
+          "original_hex": "825682512064617973",
+          "compact_hex": "37322064617973"
+        },
+        {
+          "value": 73,
+          "ring_slot": 9,
+          "original_hex": "825682522064617973",
+          "compact_hex": "37332064617973"
+        },
+        {
+          "value": 74,
+          "ring_slot": 10,
+          "original_hex": "825682532064617973",
+          "compact_hex": "37342064617973"
+        },
+        {
+          "value": 75,
+          "ring_slot": 11,
+          "original_hex": "825682542064617973",
+          "compact_hex": "37352064617973"
+        },
+        {
+          "value": 76,
+          "ring_slot": 12,
+          "original_hex": "825682552064617973",
+          "compact_hex": "37362064617973"
+        },
+        {
+          "value": 77,
+          "ring_slot": 13,
+          "original_hex": "825682562064617973",
+          "compact_hex": "37372064617973"
+        },
+        {
+          "value": 78,
+          "ring_slot": 14,
+          "original_hex": "825682572064617973",
+          "compact_hex": "37382064617973"
+        },
+        {
+          "value": 79,
+          "ring_slot": 15,
+          "original_hex": "825682582064617973",
+          "compact_hex": "37392064617973"
+        },
+        {
+          "value": 80,
+          "ring_slot": 16,
+          "original_hex": "8257824f2064617973",
+          "compact_hex": "38302064617973"
+        },
+        {
+          "value": 81,
+          "ring_slot": 17,
+          "original_hex": "825782502064617973",
+          "compact_hex": "38312064617973"
+        },
+        {
+          "value": 82,
+          "ring_slot": 18,
+          "original_hex": "825782512064617973",
+          "compact_hex": "38322064617973"
+        },
+        {
+          "value": 83,
+          "ring_slot": 19,
+          "original_hex": "825782522064617973",
+          "compact_hex": "38332064617973"
+        },
+        {
+          "value": 84,
+          "ring_slot": 20,
+          "original_hex": "825782532064617973",
+          "compact_hex": "38342064617973"
+        },
+        {
+          "value": 85,
+          "ring_slot": 21,
+          "original_hex": "825782542064617973",
+          "compact_hex": "38352064617973"
+        },
+        {
+          "value": 86,
+          "ring_slot": 22,
+          "original_hex": "825782552064617973",
+          "compact_hex": "38362064617973"
+        },
+        {
+          "value": 87,
+          "ring_slot": 23,
+          "original_hex": "825782562064617973",
+          "compact_hex": "38372064617973"
+        },
+        {
+          "value": 88,
+          "ring_slot": 24,
+          "original_hex": "825782572064617973",
+          "compact_hex": "38382064617973"
+        },
+        {
+          "value": 89,
+          "ring_slot": 25,
+          "original_hex": "825782582064617973",
+          "compact_hex": "38392064617973"
+        },
+        {
+          "value": 90,
+          "ring_slot": 26,
+          "original_hex": "8258824f2064617973",
+          "compact_hex": "39302064617973"
+        },
+        {
+          "value": 91,
+          "ring_slot": 27,
+          "original_hex": "825882502064617973",
+          "compact_hex": "39312064617973"
+        },
+        {
+          "value": 92,
+          "ring_slot": 28,
+          "original_hex": "825882512064617973",
+          "compact_hex": "39322064617973"
+        },
+        {
+          "value": 93,
+          "ring_slot": 29,
+          "original_hex": "825882522064617973",
+          "compact_hex": "39332064617973"
+        },
+        {
+          "value": 94,
+          "ring_slot": 30,
+          "original_hex": "825882532064617973",
+          "compact_hex": "39342064617973"
+        },
+        {
+          "value": 95,
+          "ring_slot": 31,
+          "original_hex": "825882542064617973",
+          "compact_hex": "39352064617973"
+        },
+        {
+          "value": 96,
+          "ring_slot": 0,
+          "original_hex": "825882552064617973",
+          "compact_hex": "39362064617973"
+        },
+        {
+          "value": 97,
+          "ring_slot": 1,
+          "original_hex": "825882562064617973",
+          "compact_hex": "39372064617973"
+        },
+        {
+          "value": 98,
+          "ring_slot": 2,
+          "original_hex": "825882572064617973",
+          "compact_hex": "39382064617973"
+        },
+        {
+          "value": 99,
+          "ring_slot": 3,
+          "original_hex": "825882582064617973",
+          "compact_hex": "39392064617973"
+        },
+        {
+          "value": 100,
+          "ring_slot": 4,
+          "original_hex": "8250824f824f2064617973",
+          "compact_hex": "3130302064617973"
+        },
+        {
+          "value": 101,
+          "ring_slot": 5,
+          "original_hex": "8250824f82502064617973",
+          "compact_hex": "3130312064617973"
+        },
+        {
+          "value": 102,
+          "ring_slot": 6,
+          "original_hex": "8250824f82512064617973",
+          "compact_hex": "3130322064617973"
+        },
+        {
+          "value": 103,
+          "ring_slot": 7,
+          "original_hex": "8250824f82522064617973",
+          "compact_hex": "3130332064617973"
+        },
+        {
+          "value": 104,
+          "ring_slot": 8,
+          "original_hex": "8250824f82532064617973",
+          "compact_hex": "3130342064617973"
+        },
+        {
+          "value": 105,
+          "ring_slot": 9,
+          "original_hex": "8250824f82542064617973",
+          "compact_hex": "3130352064617973"
+        },
+        {
+          "value": 106,
+          "ring_slot": 10,
+          "original_hex": "8250824f82552064617973",
+          "compact_hex": "3130362064617973"
+        },
+        {
+          "value": 107,
+          "ring_slot": 11,
+          "original_hex": "8250824f82562064617973",
+          "compact_hex": "3130372064617973"
+        },
+        {
+          "value": 108,
+          "ring_slot": 12,
+          "original_hex": "8250824f82572064617973",
+          "compact_hex": "3130382064617973"
+        },
+        {
+          "value": 109,
+          "ring_slot": 13,
+          "original_hex": "8250824f82582064617973",
+          "compact_hex": "3130392064617973"
+        },
+        {
+          "value": 110,
+          "ring_slot": 14,
+          "original_hex": "82508250824f2064617973",
+          "compact_hex": "3131302064617973"
+        },
+        {
+          "value": 111,
+          "ring_slot": 15,
+          "original_hex": "8250825082502064617973",
+          "compact_hex": "3131312064617973"
+        },
+        {
+          "value": 112,
+          "ring_slot": 16,
+          "original_hex": "8250825082512064617973",
+          "compact_hex": "3131322064617973"
+        },
+        {
+          "value": 113,
+          "ring_slot": 17,
+          "original_hex": "8250825082522064617973",
+          "compact_hex": "3131332064617973"
+        },
+        {
+          "value": 114,
+          "ring_slot": 18,
+          "original_hex": "8250825082532064617973",
+          "compact_hex": "3131342064617973"
+        },
+        {
+          "value": 115,
+          "ring_slot": 19,
+          "original_hex": "8250825082542064617973",
+          "compact_hex": "3131352064617973"
+        },
+        {
+          "value": 116,
+          "ring_slot": 20,
+          "original_hex": "8250825082552064617973",
+          "compact_hex": "3131362064617973"
+        },
+        {
+          "value": 117,
+          "ring_slot": 21,
+          "original_hex": "8250825082562064617973",
+          "compact_hex": "3131372064617973"
+        },
+        {
+          "value": 118,
+          "ring_slot": 22,
+          "original_hex": "8250825082572064617973",
+          "compact_hex": "3131382064617973"
+        },
+        {
+          "value": 119,
+          "ring_slot": 23,
+          "original_hex": "8250825082582064617973",
+          "compact_hex": "3131392064617973"
+        },
+        {
+          "value": 120,
+          "ring_slot": 24,
+          "original_hex": "82508251824f2064617973",
+          "compact_hex": "3132302064617973"
+        },
+        {
+          "value": 121,
+          "ring_slot": 25,
+          "original_hex": "8250825182502064617973",
+          "compact_hex": "3132312064617973"
+        },
+        {
+          "value": 122,
+          "ring_slot": 26,
+          "original_hex": "8250825182512064617973",
+          "compact_hex": "3132322064617973"
+        },
+        {
+          "value": 123,
+          "ring_slot": 27,
+          "original_hex": "8250825182522064617973",
+          "compact_hex": "3132332064617973"
+        },
+        {
+          "value": 124,
+          "ring_slot": 28,
+          "original_hex": "8250825182532064617973",
+          "compact_hex": "3132342064617973"
+        },
+        {
+          "value": 125,
+          "ring_slot": 29,
+          "original_hex": "8250825182542064617973",
+          "compact_hex": "3132352064617973"
+        },
+        {
+          "value": 126,
+          "ring_slot": 30,
+          "original_hex": "8250825182552064617973",
+          "compact_hex": "3132362064617973"
+        },
+        {
+          "value": 127,
+          "ring_slot": 31,
+          "original_hex": "8250825182562064617973",
+          "compact_hex": "3132372064617973"
+        },
+        {
+          "value": 128,
+          "ring_slot": 0,
+          "original_hex": "8250825182572064617973",
+          "compact_hex": "3132382064617973"
+        },
+        {
+          "value": 129,
+          "ring_slot": 1,
+          "original_hex": "8250825182582064617973",
+          "compact_hex": "3132392064617973"
+        },
+        {
+          "value": 130,
+          "ring_slot": 2,
+          "original_hex": "82508252824f2064617973",
+          "compact_hex": "3133302064617973"
+        },
+        {
+          "value": 131,
+          "ring_slot": 3,
+          "original_hex": "8250825282502064617973",
+          "compact_hex": "3133312064617973"
+        },
+        {
+          "value": 132,
+          "ring_slot": 4,
+          "original_hex": "8250825282512064617973",
+          "compact_hex": "3133322064617973"
+        },
+        {
+          "value": 133,
+          "ring_slot": 5,
+          "original_hex": "8250825282522064617973",
+          "compact_hex": "3133332064617973"
+        },
+        {
+          "value": 134,
+          "ring_slot": 6,
+          "original_hex": "8250825282532064617973",
+          "compact_hex": "3133342064617973"
+        },
+        {
+          "value": 135,
+          "ring_slot": 7,
+          "original_hex": "8250825282542064617973",
+          "compact_hex": "3133352064617973"
+        },
+        {
+          "value": 136,
+          "ring_slot": 8,
+          "original_hex": "8250825282552064617973",
+          "compact_hex": "3133362064617973"
+        },
+        {
+          "value": 137,
+          "ring_slot": 9,
+          "original_hex": "8250825282562064617973",
+          "compact_hex": "3133372064617973"
+        },
+        {
+          "value": 138,
+          "ring_slot": 10,
+          "original_hex": "8250825282572064617973",
+          "compact_hex": "3133382064617973"
+        },
+        {
+          "value": 139,
+          "ring_slot": 11,
+          "original_hex": "8250825282582064617973",
+          "compact_hex": "3133392064617973"
+        },
+        {
+          "value": 140,
+          "ring_slot": 12,
+          "original_hex": "82508253824f2064617973",
+          "compact_hex": "3134302064617973"
+        },
+        {
+          "value": 141,
+          "ring_slot": 13,
+          "original_hex": "8250825382502064617973",
+          "compact_hex": "3134312064617973"
+        },
+        {
+          "value": 142,
+          "ring_slot": 14,
+          "original_hex": "8250825382512064617973",
+          "compact_hex": "3134322064617973"
+        },
+        {
+          "value": 143,
+          "ring_slot": 15,
+          "original_hex": "8250825382522064617973",
+          "compact_hex": "3134332064617973"
+        },
+        {
+          "value": 144,
+          "ring_slot": 16,
+          "original_hex": "8250825382532064617973",
+          "compact_hex": "3134342064617973"
+        },
+        {
+          "value": 145,
+          "ring_slot": 17,
+          "original_hex": "8250825382542064617973",
+          "compact_hex": "3134352064617973"
+        },
+        {
+          "value": 146,
+          "ring_slot": 18,
+          "original_hex": "8250825382552064617973",
+          "compact_hex": "3134362064617973"
+        },
+        {
+          "value": 147,
+          "ring_slot": 19,
+          "original_hex": "8250825382562064617973",
+          "compact_hex": "3134372064617973"
+        },
+        {
+          "value": 148,
+          "ring_slot": 20,
+          "original_hex": "8250825382572064617973",
+          "compact_hex": "3134382064617973"
+        },
+        {
+          "value": 149,
+          "ring_slot": 21,
+          "original_hex": "8250825382582064617973",
+          "compact_hex": "3134392064617973"
+        },
+        {
+          "value": 150,
+          "ring_slot": 22,
+          "original_hex": "82508254824f2064617973",
+          "compact_hex": "3135302064617973"
+        },
+        {
+          "value": 151,
+          "ring_slot": 23,
+          "original_hex": "8250825482502064617973",
+          "compact_hex": "3135312064617973"
+        },
+        {
+          "value": 152,
+          "ring_slot": 24,
+          "original_hex": "8250825482512064617973",
+          "compact_hex": "3135322064617973"
+        },
+        {
+          "value": 153,
+          "ring_slot": 25,
+          "original_hex": "8250825482522064617973",
+          "compact_hex": "3135332064617973"
+        },
+        {
+          "value": 154,
+          "ring_slot": 26,
+          "original_hex": "8250825482532064617973",
+          "compact_hex": "3135342064617973"
+        },
+        {
+          "value": 155,
+          "ring_slot": 27,
+          "original_hex": "8250825482542064617973",
+          "compact_hex": "3135352064617973"
+        },
+        {
+          "value": 156,
+          "ring_slot": 28,
+          "original_hex": "8250825482552064617973",
+          "compact_hex": "3135362064617973"
+        },
+        {
+          "value": 157,
+          "ring_slot": 29,
+          "original_hex": "8250825482562064617973",
+          "compact_hex": "3135372064617973"
+        },
+        {
+          "value": 158,
+          "ring_slot": 30,
+          "original_hex": "8250825482572064617973",
+          "compact_hex": "3135382064617973"
+        },
+        {
+          "value": 159,
+          "ring_slot": 31,
+          "original_hex": "8250825482582064617973",
+          "compact_hex": "3135392064617973"
+        },
+        {
+          "value": 160,
+          "ring_slot": 0,
+          "original_hex": "82508255824f2064617973",
+          "compact_hex": "3136302064617973"
+        },
+        {
+          "value": 161,
+          "ring_slot": 1,
+          "original_hex": "8250825582502064617973",
+          "compact_hex": "3136312064617973"
+        },
+        {
+          "value": 162,
+          "ring_slot": 2,
+          "original_hex": "8250825582512064617973",
+          "compact_hex": "3136322064617973"
+        },
+        {
+          "value": 163,
+          "ring_slot": 3,
+          "original_hex": "8250825582522064617973",
+          "compact_hex": "3136332064617973"
+        },
+        {
+          "value": 164,
+          "ring_slot": 4,
+          "original_hex": "8250825582532064617973",
+          "compact_hex": "3136342064617973"
+        },
+        {
+          "value": 165,
+          "ring_slot": 5,
+          "original_hex": "8250825582542064617973",
+          "compact_hex": "3136352064617973"
+        },
+        {
+          "value": 166,
+          "ring_slot": 6,
+          "original_hex": "8250825582552064617973",
+          "compact_hex": "3136362064617973"
+        },
+        {
+          "value": 167,
+          "ring_slot": 7,
+          "original_hex": "8250825582562064617973",
+          "compact_hex": "3136372064617973"
+        },
+        {
+          "value": 168,
+          "ring_slot": 8,
+          "original_hex": "8250825582572064617973",
+          "compact_hex": "3136382064617973"
+        },
+        {
+          "value": 169,
+          "ring_slot": 9,
+          "original_hex": "8250825582582064617973",
+          "compact_hex": "3136392064617973"
+        },
+        {
+          "value": 170,
+          "ring_slot": 10,
+          "original_hex": "82508256824f2064617973",
+          "compact_hex": "3137302064617973"
+        },
+        {
+          "value": 171,
+          "ring_slot": 11,
+          "original_hex": "8250825682502064617973",
+          "compact_hex": "3137312064617973"
+        },
+        {
+          "value": 172,
+          "ring_slot": 12,
+          "original_hex": "8250825682512064617973",
+          "compact_hex": "3137322064617973"
+        },
+        {
+          "value": 173,
+          "ring_slot": 13,
+          "original_hex": "8250825682522064617973",
+          "compact_hex": "3137332064617973"
+        },
+        {
+          "value": 174,
+          "ring_slot": 14,
+          "original_hex": "8250825682532064617973",
+          "compact_hex": "3137342064617973"
+        },
+        {
+          "value": 175,
+          "ring_slot": 15,
+          "original_hex": "8250825682542064617973",
+          "compact_hex": "3137352064617973"
+        },
+        {
+          "value": 176,
+          "ring_slot": 16,
+          "original_hex": "8250825682552064617973",
+          "compact_hex": "3137362064617973"
+        },
+        {
+          "value": 177,
+          "ring_slot": 17,
+          "original_hex": "8250825682562064617973",
+          "compact_hex": "3137372064617973"
+        },
+        {
+          "value": 178,
+          "ring_slot": 18,
+          "original_hex": "8250825682572064617973",
+          "compact_hex": "3137382064617973"
+        },
+        {
+          "value": 179,
+          "ring_slot": 19,
+          "original_hex": "8250825682582064617973",
+          "compact_hex": "3137392064617973"
+        },
+        {
+          "value": 180,
+          "ring_slot": 20,
+          "original_hex": "82508257824f2064617973",
+          "compact_hex": "3138302064617973"
+        },
+        {
+          "value": 181,
+          "ring_slot": 21,
+          "original_hex": "8250825782502064617973",
+          "compact_hex": "3138312064617973"
+        },
+        {
+          "value": 182,
+          "ring_slot": 22,
+          "original_hex": "8250825782512064617973",
+          "compact_hex": "3138322064617973"
+        },
+        {
+          "value": 183,
+          "ring_slot": 23,
+          "original_hex": "8250825782522064617973",
+          "compact_hex": "3138332064617973"
+        },
+        {
+          "value": 184,
+          "ring_slot": 24,
+          "original_hex": "8250825782532064617973",
+          "compact_hex": "3138342064617973"
+        },
+        {
+          "value": 185,
+          "ring_slot": 25,
+          "original_hex": "8250825782542064617973",
+          "compact_hex": "3138352064617973"
+        },
+        {
+          "value": 186,
+          "ring_slot": 26,
+          "original_hex": "8250825782552064617973",
+          "compact_hex": "3138362064617973"
+        },
+        {
+          "value": 187,
+          "ring_slot": 27,
+          "original_hex": "8250825782562064617973",
+          "compact_hex": "3138372064617973"
+        },
+        {
+          "value": 188,
+          "ring_slot": 28,
+          "original_hex": "8250825782572064617973",
+          "compact_hex": "3138382064617973"
+        },
+        {
+          "value": 189,
+          "ring_slot": 29,
+          "original_hex": "8250825782582064617973",
+          "compact_hex": "3138392064617973"
+        },
+        {
+          "value": 190,
+          "ring_slot": 30,
+          "original_hex": "82508258824f2064617973",
+          "compact_hex": "3139302064617973"
+        },
+        {
+          "value": 191,
+          "ring_slot": 31,
+          "original_hex": "8250825882502064617973",
+          "compact_hex": "3139312064617973"
+        },
+        {
+          "value": 192,
+          "ring_slot": 0,
+          "original_hex": "8250825882512064617973",
+          "compact_hex": "3139322064617973"
+        },
+        {
+          "value": 193,
+          "ring_slot": 1,
+          "original_hex": "8250825882522064617973",
+          "compact_hex": "3139332064617973"
+        },
+        {
+          "value": 194,
+          "ring_slot": 2,
+          "original_hex": "8250825882532064617973",
+          "compact_hex": "3139342064617973"
+        },
+        {
+          "value": 195,
+          "ring_slot": 3,
+          "original_hex": "8250825882542064617973",
+          "compact_hex": "3139352064617973"
+        },
+        {
+          "value": 196,
+          "ring_slot": 4,
+          "original_hex": "8250825882552064617973",
+          "compact_hex": "3139362064617973"
+        },
+        {
+          "value": 197,
+          "ring_slot": 5,
+          "original_hex": "8250825882562064617973",
+          "compact_hex": "3139372064617973"
+        },
+        {
+          "value": 198,
+          "ring_slot": 6,
+          "original_hex": "8250825882572064617973",
+          "compact_hex": "3139382064617973"
+        },
+        {
+          "value": 199,
+          "ring_slot": 7,
+          "original_hex": "8250825882582064617973",
+          "compact_hex": "3139392064617973"
+        },
+        {
+          "value": 200,
+          "ring_slot": 8,
+          "original_hex": "8251824f824f2064617973",
+          "compact_hex": "3230302064617973"
+        },
+        {
+          "value": 201,
+          "ring_slot": 9,
+          "original_hex": "8251824f82502064617973",
+          "compact_hex": "3230312064617973"
+        },
+        {
+          "value": 202,
+          "ring_slot": 10,
+          "original_hex": "8251824f82512064617973",
+          "compact_hex": "3230322064617973"
+        },
+        {
+          "value": 203,
+          "ring_slot": 11,
+          "original_hex": "8251824f82522064617973",
+          "compact_hex": "3230332064617973"
+        },
+        {
+          "value": 204,
+          "ring_slot": 12,
+          "original_hex": "8251824f82532064617973",
+          "compact_hex": "3230342064617973"
+        },
+        {
+          "value": 205,
+          "ring_slot": 13,
+          "original_hex": "8251824f82542064617973",
+          "compact_hex": "3230352064617973"
+        },
+        {
+          "value": 206,
+          "ring_slot": 14,
+          "original_hex": "8251824f82552064617973",
+          "compact_hex": "3230362064617973"
+        },
+        {
+          "value": 207,
+          "ring_slot": 15,
+          "original_hex": "8251824f82562064617973",
+          "compact_hex": "3230372064617973"
+        },
+        {
+          "value": 208,
+          "ring_slot": 16,
+          "original_hex": "8251824f82572064617973",
+          "compact_hex": "3230382064617973"
+        },
+        {
+          "value": 209,
+          "ring_slot": 17,
+          "original_hex": "8251824f82582064617973",
+          "compact_hex": "3230392064617973"
+        },
+        {
+          "value": 210,
+          "ring_slot": 18,
+          "original_hex": "82518250824f2064617973",
+          "compact_hex": "3231302064617973"
+        },
+        {
+          "value": 211,
+          "ring_slot": 19,
+          "original_hex": "8251825082502064617973",
+          "compact_hex": "3231312064617973"
+        },
+        {
+          "value": 212,
+          "ring_slot": 20,
+          "original_hex": "8251825082512064617973",
+          "compact_hex": "3231322064617973"
+        },
+        {
+          "value": 213,
+          "ring_slot": 21,
+          "original_hex": "8251825082522064617973",
+          "compact_hex": "3231332064617973"
+        },
+        {
+          "value": 214,
+          "ring_slot": 22,
+          "original_hex": "8251825082532064617973",
+          "compact_hex": "3231342064617973"
+        },
+        {
+          "value": 215,
+          "ring_slot": 23,
+          "original_hex": "8251825082542064617973",
+          "compact_hex": "3231352064617973"
+        },
+        {
+          "value": 216,
+          "ring_slot": 24,
+          "original_hex": "8251825082552064617973",
+          "compact_hex": "3231362064617973"
+        },
+        {
+          "value": 217,
+          "ring_slot": 25,
+          "original_hex": "8251825082562064617973",
+          "compact_hex": "3231372064617973"
+        },
+        {
+          "value": 218,
+          "ring_slot": 26,
+          "original_hex": "8251825082572064617973",
+          "compact_hex": "3231382064617973"
+        },
+        {
+          "value": 219,
+          "ring_slot": 27,
+          "original_hex": "8251825082582064617973",
+          "compact_hex": "3231392064617973"
+        },
+        {
+          "value": 220,
+          "ring_slot": 28,
+          "original_hex": "82518251824f2064617973",
+          "compact_hex": "3232302064617973"
+        },
+        {
+          "value": 221,
+          "ring_slot": 29,
+          "original_hex": "8251825182502064617973",
+          "compact_hex": "3232312064617973"
+        },
+        {
+          "value": 222,
+          "ring_slot": 30,
+          "original_hex": "8251825182512064617973",
+          "compact_hex": "3232322064617973"
+        },
+        {
+          "value": 223,
+          "ring_slot": 31,
+          "original_hex": "8251825182522064617973",
+          "compact_hex": "3232332064617973"
+        },
+        {
+          "value": 224,
+          "ring_slot": 0,
+          "original_hex": "8251825182532064617973",
+          "compact_hex": "3232342064617973"
+        },
+        {
+          "value": 225,
+          "ring_slot": 1,
+          "original_hex": "8251825182542064617973",
+          "compact_hex": "3232352064617973"
+        },
+        {
+          "value": 226,
+          "ring_slot": 2,
+          "original_hex": "8251825182552064617973",
+          "compact_hex": "3232362064617973"
+        },
+        {
+          "value": 227,
+          "ring_slot": 3,
+          "original_hex": "8251825182562064617973",
+          "compact_hex": "3232372064617973"
+        },
+        {
+          "value": 228,
+          "ring_slot": 4,
+          "original_hex": "8251825182572064617973",
+          "compact_hex": "3232382064617973"
+        },
+        {
+          "value": 229,
+          "ring_slot": 5,
+          "original_hex": "8251825182582064617973",
+          "compact_hex": "3232392064617973"
+        },
+        {
+          "value": 230,
+          "ring_slot": 6,
+          "original_hex": "82518252824f2064617973",
+          "compact_hex": "3233302064617973"
+        },
+        {
+          "value": 231,
+          "ring_slot": 7,
+          "original_hex": "8251825282502064617973",
+          "compact_hex": "3233312064617973"
+        },
+        {
+          "value": 232,
+          "ring_slot": 8,
+          "original_hex": "8251825282512064617973",
+          "compact_hex": "3233322064617973"
+        },
+        {
+          "value": 233,
+          "ring_slot": 9,
+          "original_hex": "8251825282522064617973",
+          "compact_hex": "3233332064617973"
+        },
+        {
+          "value": 234,
+          "ring_slot": 10,
+          "original_hex": "8251825282532064617973",
+          "compact_hex": "3233342064617973"
+        },
+        {
+          "value": 235,
+          "ring_slot": 11,
+          "original_hex": "8251825282542064617973",
+          "compact_hex": "3233352064617973"
+        },
+        {
+          "value": 236,
+          "ring_slot": 12,
+          "original_hex": "8251825282552064617973",
+          "compact_hex": "3233362064617973"
+        },
+        {
+          "value": 237,
+          "ring_slot": 13,
+          "original_hex": "8251825282562064617973",
+          "compact_hex": "3233372064617973"
+        },
+        {
+          "value": 238,
+          "ring_slot": 14,
+          "original_hex": "8251825282572064617973",
+          "compact_hex": "3233382064617973"
+        },
+        {
+          "value": 239,
+          "ring_slot": 15,
+          "original_hex": "8251825282582064617973",
+          "compact_hex": "3233392064617973"
+        },
+        {
+          "value": 240,
+          "ring_slot": 16,
+          "original_hex": "82518253824f2064617973",
+          "compact_hex": "3234302064617973"
+        },
+        {
+          "value": 241,
+          "ring_slot": 17,
+          "original_hex": "8251825382502064617973",
+          "compact_hex": "3234312064617973"
+        },
+        {
+          "value": 242,
+          "ring_slot": 18,
+          "original_hex": "8251825382512064617973",
+          "compact_hex": "3234322064617973"
+        },
+        {
+          "value": 243,
+          "ring_slot": 19,
+          "original_hex": "8251825382522064617973",
+          "compact_hex": "3234332064617973"
+        },
+        {
+          "value": 244,
+          "ring_slot": 20,
+          "original_hex": "8251825382532064617973",
+          "compact_hex": "3234342064617973"
+        },
+        {
+          "value": 245,
+          "ring_slot": 21,
+          "original_hex": "8251825382542064617973",
+          "compact_hex": "3234352064617973"
+        },
+        {
+          "value": 246,
+          "ring_slot": 22,
+          "original_hex": "8251825382552064617973",
+          "compact_hex": "3234362064617973"
+        },
+        {
+          "value": 247,
+          "ring_slot": 23,
+          "original_hex": "8251825382562064617973",
+          "compact_hex": "3234372064617973"
+        },
+        {
+          "value": 248,
+          "ring_slot": 24,
+          "original_hex": "8251825382572064617973",
+          "compact_hex": "3234382064617973"
+        },
+        {
+          "value": 249,
+          "ring_slot": 25,
+          "original_hex": "8251825382582064617973",
+          "compact_hex": "3234392064617973"
+        },
+        {
+          "value": 250,
+          "ring_slot": 26,
+          "original_hex": "82518254824f2064617973",
+          "compact_hex": "3235302064617973"
+        },
+        {
+          "value": 251,
+          "ring_slot": 27,
+          "original_hex": "8251825482502064617973",
+          "compact_hex": "3235312064617973"
+        },
+        {
+          "value": 252,
+          "ring_slot": 28,
+          "original_hex": "8251825482512064617973",
+          "compact_hex": "3235322064617973"
+        },
+        {
+          "value": 253,
+          "ring_slot": 29,
+          "original_hex": "8251825482522064617973",
+          "compact_hex": "3235332064617973"
+        },
+        {
+          "value": 254,
+          "ring_slot": 30,
+          "original_hex": "8251825482532064617973",
+          "compact_hex": "3235342064617973"
+        },
+        {
+          "value": 255,
+          "ring_slot": 31,
+          "original_hex": "8251825482542064617973",
+          "compact_hex": "3235352064617973"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33961084,
+      "message_ID": 786,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    },
+    {
+      "call": 33961100,
+      "message_ID": 786,
+      "ring_slots": 32,
+      "cases": 39,
+      "transitions": [
+        {
+          "value": 0,
+          "ring_slot": 0,
+          "original_hex": "824f",
+          "compact_hex": "30"
+        },
+        {
+          "value": 1,
+          "ring_slot": 1,
+          "original_hex": "8250",
+          "compact_hex": "31"
+        },
+        {
+          "value": 2,
+          "ring_slot": 2,
+          "original_hex": "8251",
+          "compact_hex": "32"
+        },
+        {
+          "value": 3,
+          "ring_slot": 3,
+          "original_hex": "8252",
+          "compact_hex": "33"
+        },
+        {
+          "value": 4,
+          "ring_slot": 4,
+          "original_hex": "8253",
+          "compact_hex": "34"
+        },
+        {
+          "value": 5,
+          "ring_slot": 5,
+          "original_hex": "8254",
+          "compact_hex": "35"
+        },
+        {
+          "value": 6,
+          "ring_slot": 6,
+          "original_hex": "8255",
+          "compact_hex": "36"
+        },
+        {
+          "value": 7,
+          "ring_slot": 7,
+          "original_hex": "8256",
+          "compact_hex": "37"
+        },
+        {
+          "value": 8,
+          "ring_slot": 8,
+          "original_hex": "8257",
+          "compact_hex": "38"
+        },
+        {
+          "value": 9,
+          "ring_slot": 9,
+          "original_hex": "8258",
+          "compact_hex": "39"
+        },
+        {
+          "value": 10,
+          "ring_slot": 10,
+          "original_hex": "8250824f",
+          "compact_hex": "3130"
+        },
+        {
+          "value": 30,
+          "ring_slot": 11,
+          "original_hex": "8252824f",
+          "compact_hex": "3330"
+        },
+        {
+          "value": 50,
+          "ring_slot": 12,
+          "original_hex": "8254824f",
+          "compact_hex": "3530"
+        },
+        {
+          "value": 99,
+          "ring_slot": 13,
+          "original_hex": "82588258",
+          "compact_hex": "3939"
+        },
+        {
+          "value": 100,
+          "ring_slot": 14,
+          "original_hex": "8250824f824f",
+          "compact_hex": "313030"
+        },
+        {
+          "value": 123,
+          "ring_slot": 15,
+          "original_hex": "825082518252",
+          "compact_hex": "313233"
+        },
+        {
+          "value": 255,
+          "ring_slot": 16,
+          "original_hex": "825182548254",
+          "compact_hex": "323535"
+        },
+        {
+          "value": 999,
+          "ring_slot": 17,
+          "original_hex": "825882588258",
+          "compact_hex": "393939"
+        },
+        {
+          "value": 1000,
+          "ring_slot": 18,
+          "original_hex": "8250824f824f824f",
+          "compact_hex": "31303030"
+        },
+        {
+          "value": 1880,
+          "ring_slot": 19,
+          "original_hex": "825082578257824f",
+          "compact_hex": "31383830"
+        },
+        {
+          "value": 7500,
+          "ring_slot": 20,
+          "original_hex": "82568254824f824f",
+          "compact_hex": "37353030"
+        },
+        {
+          "value": 50000,
+          "ring_slot": 21,
+          "original_hex": "8254824f824f824f824f",
+          "compact_hex": "3530303030"
+        },
+        {
+          "value": 65535,
+          "ring_slot": 22,
+          "original_hex": "82558254825482528254",
+          "compact_hex": "3635353335"
+        },
+        {
+          "value": 1000000,
+          "ring_slot": 23,
+          "original_hex": "8250824f824f824f824f824f824f",
+          "compact_hex": "31303030303030"
+        },
+        {
+          "value": 2147483647,
+          "ring_slot": 24,
+          "original_hex": "8251825082538256825382578252825582538256",
+          "compact_hex": "32313437343833363437"
+        }
+      ],
+      "protected_buffer_outside_original_payload_unchanged": true,
+      "return_pointer_and_callee_saved_registers_match": true
+    }
+  ],
+  "unique_number_cases": 1058,
+  "layout_cases": 204,
+  "sheets": [
+    {
+      "path": ".codex-release-work\\yard_numerals_20261124\\portrait_sheet_01.png",
+      "sha256": "7782f888e48f143329c49c089794669e7b0b9688966fad0df2868b03f39897ce",
+      "messages": [
+        "1245 / 2147483647",
+        "1246 / 2147483647",
+        "ARM9_REFIT_REFUND / 2147483647",
+        "802 / 2147483647 gold coins",
+        "799 / 2147483647 gold coins",
+        "800 / 2147483647 gold coins",
+        "789 / 2147483647 gold coins",
+        "789 / 7500 gold coins",
+        "804 / A B C D E F G H I J K L 2147483647 gold coins",
+        "786 / 0 65535",
+        "786 / 1 30",
+        "798 / 30",
+        "1263 / 30",
+        "1267 / 255 days",
+        "803 / ABCDEFGHIJKLMNOPQRSTUVW 2147483647 gold coins 16 days"
+      ]
+    }
+  ],
+  "ordinary_gameplay": false,
+  "native_input": {
+    "candidate": ".codex-release-work\\nagasaki_yard_reflow_20261124\\Nagasaki_Yard_Reflow_STAGED.nds",
+    "candidate_sha256": "680103a96d06a36dd7bf26f69f53e35e86b3d8cbf470ac6c8882d11a4e7779cc",
+    "ARM9_sha256": "9e1cdb0100ec5207fab7fd00766099f204673ca69e465c94c3638da76f0ba940",
+    "COMMON_sha256": "b2a06498b07bb020576290c156f1a6bd2253cfab3adc66c5748b5bc64458a1c9",
+    "release_proof": "releases\\all_routes_editorial_20261124_nagasaki_yard_reflow_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "f5d25e596099cefa46ecf187edcd69f0fa8bc58c0ee68b318efd111a6dca4782",
+    "startup_proof": "releases\\all_routes_editorial_20261124_nagasaki_yard_reflow_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "275c0a384b6232e39f202db9fabf6d803504e2ec028b5f94b74276fda2928f7a",
+    "snapshot": {
+      "path": ".codex-release-work\\nagasaki_yard_reflow_20261124\\startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "fb7c1496437a10543d17736c1b2635b297a51e009a3fceaf48db893a74ad82fe",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "sources": [
+    {
+      "path": "releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/verification/registered_release_verification.json",
+      "sha256": "f5d25e596099cefa46ecf187edcd69f0fa8bc58c0ee68b318efd111a6dca4782"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_shipyard_20261124.json",
+      "sha256": "26097e18ca5d8b24fc4ee7cdad8437b89985ac9790ffe3c4a683aa13fc06a83c"
+    }
+  ]
+}

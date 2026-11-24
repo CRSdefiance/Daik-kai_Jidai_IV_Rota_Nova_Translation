@@ -1,0 +1,87 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1285",
+      "message_id": 1285,
+      "english": "Lateen sails excel upwind. Never mount a square sail behind one.",
+      "speaker": "Refit equipment help",
+      "context": "The player compares the adjacent sails in Refit equipment.",
+      "source_meaning": "Lateen sails perform well upwind. A square sail cannot be fitted behind a lateen sail.",
+      "localization_note": "Keep the upwind advantage and the restriction on a square sail behind. Rephrase to keep the start of the instruction together.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "editorial_decision": "revision",
+      "source_reference": {
+        "block": 15,
+        "offset": 3636,
+        "copy_end": 3708,
+        "bytes": 70,
+        "record_index": 63,
+        "table_offset": 1319706,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 3536,
+        "copy_end": 3619,
+        "bytes": 82,
+        "record_index": 173,
+        "table_offset": 1319706,
+        "start_in_record": 0
+      },
+      "payload_hex": "4c617465656e207361696c7320657863656c20757077696e642e0a4e65766572206d6f756e74206120737175617265207361696c200a626568696e64206f6e652e2020202020202020202020202020202020"
+    },
+    {
+      "id": "COMMON_MESSAGE_1287",
+      "message_id": 1287,
+      "english": "With a following wind, square sails work well. Never mount a lateen sail ahead of one.",
+      "speaker": "Refit equipment help",
+      "context": "The player compares the adjacent sails in Refit equipment.",
+      "source_meaning": "Square sails perform well in a following wind. A lateen sail cannot be fitted ahead of a square sail.",
+      "localization_note": "Keep the following-wind advantage and the restriction on a lateen sail ahead. Rephrase to keep the start of the instruction together.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "editorial_decision": "revision",
+      "source_reference": {
+        "block": 15,
+        "offset": 3772,
+        "copy_end": 3840,
+        "bytes": 68,
+        "record_index": 64,
+        "table_offset": 1319710,
+        "start_in_record": 65
+      },
+      "current_reference": {
+        "block": 16,
+        "offset": 3706,
+        "copy_end": 3797,
+        "bytes": 90,
+        "record_index": 186,
+        "table_offset": 1319710,
+        "start_in_record": 0
+      },
+      "payload_hex": "57697468206120666f6c6c6f77696e672077696e642c0a737175617265207361696c7320776f726b2077656c6c2e200a4e65766572206d6f756e742061206c617465656e207361696c200a6168656164206f66206f6e652e2020"
+    }
+  ],
+  "current_candidate_sha256": "01f34280371c451cc98378d343766da2095758e55f49f72e60febc9e2656982f"
+}

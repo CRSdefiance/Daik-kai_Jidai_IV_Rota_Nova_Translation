@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered consistent Yard dialogue digits for prices, counts, discounts, durations, and refunds. [Checkpoint](editorial_yard_numerals_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered both Refit sail descriptions and the one-line Ship Name prompt after the Nagasaki Yard replay. [Checkpoint](editorial_nagasaki_yard_reflow_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Reviewed the ordinary Nagasaki Yard exchange and retained ten records. Three revisions passed native layout and storage preflight. The Fleet Info fallback preserves all 256 original dock values with either flag state. [Yard](editorial_nagasaki_yard_20261124.md) · [Fleet order](editorial_fleet_authored_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Nagasaki Tavern spare-berth prompt with the count and question on separate lines. [Checkpoint](editorial_nagasaki_tavern_recruitment_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

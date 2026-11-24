@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered consistent Yard dialogue digits for prices, counts, discounts, durations, and refunds. [Checkpoint](editorial_yard_numerals_registered_20261124.md)
+
+The ordinary Nagasaki replay verified the mast and sale panels and 53 surrounding frames. Exact patch reconstruction and the sole Drive ROM match the candidate. Continue the five archived COMMON display owners, Fleet Info saved inputs and authored command reachability, and practical unvisited town and random scenes.
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered both Refit sail descriptions and the one-line Ship Name prompt after the Nagasaki Yard replay. [Checkpoint](editorial_nagasaki_yard_reflow_registered_20261124.md)
+
+The three revisions, ten retentions, and the sole Drive copy are verified. Continue the five archived COMMON display owners, Fleet Info saved inputs and authored command reachability, the Yard's numeric substitution widths, and practical unvisited town or random scenes. [Authored lookup evidence](editorial_fleet_authored_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Nagasaki gameplay verified the Yard offers, Repair response, Refit, the rename keyboard, Dock, and the return to town. Ten records retain their wording. Two sail tips and the rename prompt passed fresh native checks and need the paired replay. The authored fleet-order lookup passed all 512 byte and flag cases. [Yard](editorial_nagasaki_yard_20261124.md) · [Fleet order](editorial_fleet_authored_fallback_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Nagasaki Tavern spare-berth prompt with the count and question on separate lines. [Checkpoint](editorial_nagasaki_tavern_recruitment_registered_20261124.md)
 
 The paired replay matched 32 companion frames, and the clean-input patch and sole Drive ROM match the registered candidate. Continue the five archived COMMON display owners, direct saved Fleet Info inputs and the authored docking fallback, and practical unvisited town and random scenes.
