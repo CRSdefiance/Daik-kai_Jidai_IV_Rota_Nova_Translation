@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
+
+One phrasing and wrap revision, four justified retentions and three complete Goods Info panels passed. The paired replay and 457 release checks passed, and the sole Drive ROM matches the registered candidate by SHA-256.
+
+# Current editorial checkpoint - 2026-11-24
+
 Resolved the last 17 argument ranges in the 827-site shared-message inventory. Five archived IDs remain open outside the bounded paths. [Offline evidence](editorial_archived_message_arguments_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

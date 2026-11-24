@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Buy a Round in the Tavern menu and its linked Help pages. [Checkpoint](editorial_tavern_buy_a_round_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

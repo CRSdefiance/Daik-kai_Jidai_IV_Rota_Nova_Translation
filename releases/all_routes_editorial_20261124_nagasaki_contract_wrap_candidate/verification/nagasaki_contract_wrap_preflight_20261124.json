@@ -1,0 +1,180 @@
+{
+  "candidate_sha256": "ce1997f2b08166f386f7f99808f1e07322a22cfb2781a35e8e842c061fa70413",
+  "key": 1157,
+  "manuscript": {
+    "translation_policy": "natural-dialogue-v2",
+    "target_locale": "en-US",
+    "records": [
+      {
+        "id": "COMMON_MESSAGE_1157",
+        "message_id": 1157,
+        "file_path": "/COMMON/MESFILE.DK4",
+        "speaker": "Daimyo",
+        "context": "The Daimyo has quoted the minimum fee. This panel explains how the offer affects market share before amount entry.",
+        "source_meaning": "The ruler will grant a share according to the contract fee paid and asks how much the player offers.",
+        "localization_note": "The preceding panel already names the contract fee. A direct first sentence leaves the ruler's complete question together.",
+        "native_binding": {
+          "kind": "progressive-Palace-Inn-or-Strategist",
+          "parent": 33898516,
+          "table_or_ID": 0
+        },
+        "English_argument_source_indices": [],
+        "english": "Your fee sets your market share. How much will you offer?",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      }
+    ],
+    "encoder": "dialogue-relocatable-v1",
+    "review_gates": [
+      "source",
+      "context",
+      "localization",
+      "naturalness",
+      "formatting"
+    ]
+  },
+  "original_dialogue": {
+    "message_ID": 1157,
+    "decision": "wrap finding",
+    "speaker": "Daimyo",
+    "clean_Japanese": "そちが支払った契約料に応じて\n占有を認めよう。いくら払うかね？",
+    "clean_reference": {
+      "block": 14,
+      "offset": 2732,
+      "copy_end": 2796,
+      "bytes": 61,
+      "record_index": 40,
+      "table_offset": 1319450,
+      "start_in_record": 2
+    },
+    "current_English": " Your market share will depend on the contract fee you pay. How much will you offer?",
+    "installed_reference": {
+      "block": 15,
+      "offset": 1882,
+      "copy_end": 1967,
+      "bytes": 84,
+      "record_index": 33,
+      "table_offset": 1319450,
+      "start_in_record": 0
+    },
+    "substitution_values": [],
+    "observed_lines": [
+      "Your market share will depend on",
+      "the contract fee you pay. How much",
+      "will you offer?"
+    ],
+    "localization_note": "The relationship between the fee and share is correct. The short question splits across rows.",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": false
+    },
+    "complete_body_pixels": 835,
+    "nameplate": [
+      83,
+      [
+        16,
+        277,
+        52,
+        288
+      ]
+    ],
+    "capture": {
+      "frame": 8120,
+      "path": ".codex-release-work\\shared_display_20261123\\nagasaki_market_20261124\\capture\\frame_008120_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "0124f50a6db1e807a7135e10064a2fde2e8f0fa863f308ddfd8ccdc8e1482d02",
+      "framebuffer_sha256": "65f57a228e15cb72f4540679004dc613c2e9a18e06e5bdfb11112a73a824df62"
+    },
+    "requests": [
+      {
+        "frame": 7742,
+        "PC": 33903244,
+        "message_ID": 1157,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 7742,
+        "PC": 33895668,
+        "message_ID": 1157,
+        "caller_LR": 33898488
+      }
+    ]
+  },
+  "proposed_storage_hex": "20596f757220666565207365747320796f7572206d61726b65742073686172652e20486f77206d7563682077696c6c20796f75206f666665723f2020202020202020202020202020202020202020202020202020",
+  "fixed_slot": {
+    "block": 15,
+    "start": 1882,
+    "end": 1967,
+    "before": "20596f7572206d61726b65742073686172652077696c6c20646570656e64206f6e2074686520636f6e74726163742066656520796f75207061792e20486f77206d7563682077696c6c20796f75206f666665723f00",
+    "after": "20596f757220666565207365747320796f7572206d61726b65742073686172652e20486f77206d7563682077696c6c20796f75206f666665723f202020202020202020202020202020202020202020202020202000",
+    "new_null_fields": 0
+  },
+  "native_cases": [
+    {
+      "label": "Current",
+      "native_plane_sha256": "18f6f18344a8fc8127f442ba131b99bd37d7921e30ca4ff9f30f6727f6f46085",
+      "layout": {
+        "id": 1157,
+        "source_values_hex": [],
+        "English_values_hex": [],
+        "formatted_hex": "20596f7572206d61726b65742073686172652077696c6c20646570656e64206f6e0a202074686520636f6e74726163742066656520796f75207061792e20486f77206d7563680a202077696c6c20796f75206f666665723f",
+        "lines": [
+          "Your market share will depend on",
+          "the contract fee you pay. How much",
+          "will you offer?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "native_plane_sha256": "3e9f424b2105906c8911077a815577688033497300aaa2b056a08b8f00c169f7",
+      "layout": {
+        "id": 1157,
+        "source_values_hex": [],
+        "English_values_hex": [],
+        "formatted_hex": "20596f757220666565207365747320796f7572206d61726b65742073686172652e0a2020486f77206d7563682077696c6c20796f75206f666665723f",
+        "lines": [
+          "Your fee sets your market share.",
+          "How much will you offer?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "path": ".codex-release-work\\shared_display_20261123\\nagasaki_market_20261124\\contract_preflight\\portrait_sheet_01.png",
+      "sha256": "7407d8303bf004d8f7d982ac9677d6f79e5a27d5b13294de0bd9d834cf5c34fc",
+      "messages": [
+        "Current",
+        "Proposed"
+      ]
+    }
+  ],
+  "existing_binding": {
+    "path": "translations/palace_inn_contextual_editorial_manuscript_v1.json",
+    "sha256": "6d44b8ab9835b6b79f7d7844f37c9ccef63c3b4048c2e43cdcf89404cafaee1e"
+  },
+  "original_gameplay": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_market_current_20261124.json",
+    "sha256": "a3df6bfc0e1d798987450a9265e7cd251a464c3424b84642efca4798b0d15a93"
+  },
+  "revised_gameplay_verified": false,
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

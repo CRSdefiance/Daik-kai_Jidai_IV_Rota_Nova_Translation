@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Daimyo's two-line contract offer after ordinary Nagasaki gameplay. [Checkpoint](editorial_nagasaki_contract_wrap_registered_20261124.md)
+
+The 1,125-gold transaction, 1% market share, three Goods Info selections and return to town passed in ordinary play. The revised hold and 23 exact companion frames passed on the cumulative build. The sole Drive ROM matches the byte-exact clean-input reconstruction. Continue the five archived message display owners, the remaining Fleet Info inputs and practical unvisited town and random scenes. [Current release and evidence](editorial_nagasaki_contract_wrap_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Bound the remaining 17 argument sets in the 827-site COMMON inventory on the Tavern candidate. All 827 exclude archived IDs 284, 318 and 750–752. The possible computed display owners outside this inventory, the remaining Fleet Info inputs, and practical town and random-scene coverage stay open. [Exact call sites and offline evidence](editorial_archived_message_arguments_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
