@@ -1,5 +1,23 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Port Worker's more natural warning to Hodram at Tripoli. [Checkpoint](editorial_tripoli_hodram_warning_registered_20261124.md)
+
+The ordinary Syracuse crossing discovered Tripoli, reached all five turns of Hodram's warning, and verified the resupply and the refused Auto Move to Lisbon. The revised line passed paired gameplay with 23 matching companion frames. Three level-up notices also passed. The sole Drive ROM matches the registry. Continue practical village and random scenes, the five archived display owners and the ordinary Missionary input.
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the alternate Tavern sighting rumor with complete item and region names. [Checkpoint](editorial_tavern_sighting_rumor_registered_20261124.md)
+
+All 121 native item and region pairs display intact, with the skeptical follow-up retained. The installed loader checks and sole Drive ROM match the registered build. Prior Istanbul gameplay still covers the same dialogue renderer. Continue practical town, village and random scenes, the five archived display owners and the ordinary Missionary input.
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Istanbul Tavern rumor reflow and restored the Indian Ocean substitution. [Checkpoint](editorial_istanbul_tavern_rumor_registered_20261124.md)
+
+Ordinary Istanbul and London replays verified both revised lines and 27 matching companion frames. All 242 patron rumor layouts preserve the complete item and region names. The separate sighting rumor shares the repaired Indian Ocean phrase and still needs a long-title wrap pass. The sole Drive ROM matches the registered build. Continue practical town and random scenes, the five archived display owners and the Missionary input.
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Syracuse gameplay on the registered Maria ROM verified empty-deal Finish, the single-lot sale, and both purchase choices. Eight retained records passed complete body and nameplate checks across 13 holds. The two most recent release inverses also carry forward the 50 story wrap dispositions. Continue practical unvisited town and random scenes, archived COMMON display ownership and the ordinary Missionary input. [Syracuse review](editorial_syracuse_local_purchase_20261124.md) and [Maria acceptance audit](editorial_acceptance_after_maria_capture_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

@@ -1,0 +1,11 @@
+# Istanbul Tavern rumor and Indian Ocean substitution
+
+After Hodram buys a round, the patron thanks him and offers a tip about the rare treasure. The revised rumor keeps every item and region name together across all 242 native cases. **They say** preserves the hearsay. Eleven surrounding Tavern records retain their wording. [Exact records and review gates](../releases/all_routes_editorial_20261124_istanbul_tavern_rumor_candidate/verification/registered_review.json)
+
+The region provider returned **reasure.** instead of **the Indian Ocean** because its pointer landed in the Guild map pitch. The Guildmaster now says **I have an old map**. The two-line offer and all seven region phrases fit in their existing allocations. Both rumor consumers passed offline checks. Ordinary paired gameplay verified the Black Rapier rumor and the London Guild's map pitch, with all other sampled holds matching. Indian Ocean variants were verified offline. [Paired gameplay](../releases/all_routes_editorial_20261124_istanbul_tavern_rumor_candidate/verification/paired_istanbul_tavern_1_20261123.png)
+
+The candidate passed 466 release checks, its own cold boot, 17 focused regression tests and byte-exact reconstruction from the clean input. [Testing build and patch](../releases/all_routes_editorial_20261124_istanbul_tavern_rumor_candidate/README.md)
+
+Drive contains one ROM under the established Latest Build filename. The streamed SHA-256 matches the registered candidate. Cleanup preserved the candidate, both donor saves and all replay evidence while removing the exact reconstruction and six matching save copies. [Testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/istanbul_tavern_rumor_drive_20261124.json) [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/istanbul_tavern_rumor_cleanup_20261124.json)
+
+The alternate sighting rumor, COMMON 863, now receives the complete Indian Ocean phrase. Its offline preview still splits some long titles, including Red-Haired Pirate Sword. That alternate prose and other Tavern draws remain open for the wider editorial pass. [Native layout and original Istanbul replay](../translations/editorial_checkpoints/shared_display_20261123/istanbul_tavern_rumor_preflight_20261124.json)

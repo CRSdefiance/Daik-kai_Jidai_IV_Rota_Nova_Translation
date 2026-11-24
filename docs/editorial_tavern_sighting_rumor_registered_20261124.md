@@ -1,0 +1,9 @@
+# Alternate Tavern sighting rumor
+
+The patron now asks **Heard the rumor about a rare item?** On the next line, **They say** introduces the reported sighting. All 121 stock item and region combinations keep both names intact. The previous version split 89 item names. The patron's optional follow-up retains its skepticism about the drunk's word and its respect for the listener. [Clean Japanese, exact installed bytes and review](../releases/all_routes_editorial_20261124_tavern_sighting_rumor_candidate/verification/registered_review.json)
+
+The original caller fragments resolved the item, region and Patron on all 121 cases. The staged archive passed the native loader and renderer checks for Black Rapier, Red-Haired Pirate Sword, Saladin's Silver Armor and the follow-up. The earlier ordinary Istanbul Tavern replay carries forward on the unchanged renderer and COMMON 870. Natural activation of COMMON 863 and 868 remains unobserved. [Native previews](../releases/all_routes_editorial_20261124_tavern_sighting_rumor_candidate/verification/portrait_sheet_01.png) [Representative Istanbul gameplay](editorial_istanbul_tavern_rumor_registered_20261124.md)
+
+The candidate passed 467 release checks, its own startup, 17 focused regressions and byte-exact reconstruction from the clean ROM. [Testing build and patch](../releases/all_routes_editorial_20261124_tavern_sighting_rumor_candidate/README.md)
+
+The registered candidate is the sole ROM in the testing folder. The streamed Drive hash matches the release. Cleanup removed the exact patch reconstruction and one byte-identical startup save. [Testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/tavern_sighting_rumor_drive_20261124.json) [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/tavern_sighting_rumor_cleanup_20261124.json)

@@ -1,5 +1,17 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Port Worker's more natural warning to Hodram at Tripoli. [Checkpoint](editorial_tripoli_hodram_warning_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the alternate Tavern sighting rumor with complete item and region names. [Checkpoint](editorial_tavern_sighting_rumor_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Istanbul Tavern rumor reflow and restored the Indian Ocean substitution. [Checkpoint](editorial_istanbul_tavern_rumor_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered Maria's captured-ship notice with the complete ship name on one line. [Checkpoint](editorial_maria_captured_ship_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
