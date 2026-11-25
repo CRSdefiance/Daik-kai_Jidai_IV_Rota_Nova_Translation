@@ -1,0 +1,4 @@
+"""Preserve the observer draft;read the PE64 image base with stdlib struct."""
+from pathlib import Path
+if __name__=='__main__':
+    draft=Path('scripts/run_lil_B166_menu_owner_trace_v4086.py');t=draft.read_text(encoding='utf-8');assert t.count('import pefile\n')==1;t=t.replace('import pefile\n','');old="pe=pefile.PE(str(CORE),fast_load=True);file_at=";new="pebytes=CORE.read_bytes();nt=struct.unpack_from('<I',pebytes,0x3C)[0];assert pebytes[nt:nt+4]==b'PE\\0\\0' and struct.unpack_from('<H',pebytes,nt+24)[0]==0x20B;image_base=struct.unpack_from('<Q',pebytes,nt+48)[0];file_at=";assert t.count(old)==1;t=t.replace(old,new).replace('pe.OPTIONAL_HEADER.ImageBase','image_base');assert t.count("save(ROOT/'plan.json',dict(")==1;t=t.replace("save(ROOT/'plan.json',dict(","save(ROOT/'plan.json',dict(frozen_draft=str(DRAFT),frozen_draft_sha256=sha(DRAFT.read_bytes()),");exec(compile(t,__file__,'exec'),dict(__name__='__main__',__file__=__file__,DRAFT=draft))

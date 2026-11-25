@@ -1,0 +1,11 @@
+# Rafael’s trade contract and Proof dialogue
+
+The [registered Ceuta follow-up](editorial_rafael_ceuta_contract_routes_20261119.md) verifies the original trading lesson on a natural arrival and improves the 20 percent notice and the later sea-route instructions.
+
+The five complete exchanges contain 129 decisions, including 37 revisions and 92 justified retentions. Julio explains the Ceuta trading fee and the Palace or Governor’s Office in three complete lines. Four speeches now fit on one page each, including Manuel’s first stanza, Hans’s advice on earning trust, the local’s description of Charles’s factory and the account of the clan’s flight northeast. [Exact review ledger](../releases/all_routes_editorial_20261119_rafael_contract_and_proof_candidate/verification/registered_review.json)
+
+All 37 revised pages passed native and direct visual checks. The initialized emulator replay exercised all 12 turns of the contract lesson, verified four revised pages and reached the original market return. The retained notice displayed Castor Co. through the original substitution, with 20 percent and the original blank nameplate. The fixture ran the original Ceuta lesson after Rafael’s New Game prelude in Lisbon. The other exchanges received offline checks. [Replay and display evidence](../releases/all_routes_editorial_20261119_rafael_contract_and_proof_candidate/verification)
+
+The clean source also places Manuel’s three stanzas in Hodram block 16, Lil block 11 and Maria block 18. The follow-up pairs all 60 records across the four complete exchanges against this registered ROM. The verse and route-specific reactions still need their contextual decisions. [Paired source and current records](../work/manuel_poem_cross_route_20261119/paired_source.json)
+
+Only the Rafael story archive changed. The clean-input patch reconstructs the candidate byte for byte. Six startup holds, 24 protected name getters and 34 focused tests passed. All 114 accepted layers and the ASCII right-bound correction carry forward. The ledger still credits 27,700 records and keeps 276 shared entries open for other consumers. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_contract_and_proof_candidate/README.md)

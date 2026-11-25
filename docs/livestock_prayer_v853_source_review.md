@@ -1,0 +1,3 @@
+# V853: livestock and prayer source review
+
+V853 source/prose-reviews24 Livestock17/Chapel18 comments1423-1446:17 proposed revisions and7 retentions. Fifty original role-helper selections cover all eight NPC voices and four actual captains for each duty. Drafts restore cleaning-linked attachment,the explicit Father/Son/Holy Spirit invocation,the Bible,the act of confession,Portugal's speedy recovery and Joakim's question about building the strongest fleet. Formatting,integration and actual scenes remain pending. V850 remains current;708 complete and735 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;graphics/all18 plaques and later older-record re-audit remain open;full goal active.

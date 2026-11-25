@@ -1,0 +1,9 @@
+# Sailing alerts registered
+
+The sailing alerts and floating level-up notice are registered across 28 records. The ledger now credits 26,111 reviews. This cumulative candidate preserves the prior sea-event review, 114 accepted layers, the Market fix and the ASCII right-bound correction. [Release package](../releases/all_routes_editorial_20261111_sailing_alerts_candidate/README.md) · [Exact registered record references](../releases/all_routes_editorial_20261111_sailing_alerts_candidate/verification/registered_review.json)
+
+The clean Japanese distinguishes the epidemic, a dead calm and sharks. Twelve current records displayed unrelated prose or fragments. The revisions restore those events and distinguish the crew's voices. Four retentions keep natural wording. Ten protected wraps keep complete phrases such as “Watch out!” together. The floating notice keeps the original actor name argument and uses “leveled up!”.
+
+All 28 exact stored lookups, 45 complete portrait pages, 828 crew voice choices, 1,512 selector cases, 207 floating name expansions, 30 targeted tests, the 31,000-frame startup, and 24 protected name getters passed. The emulator displayed two complete floating notices and the revised becalmed warning. The condition selectors were temporary and the usual A dismissal and level calculations ran in game. The separate ordinary voyage missed Reefs. [Representative replay details](../releases/all_routes_editorial_20261111_sailing_alerts_candidate/verification/sailing_alert_gameplay_verification.json)
+
+Continue with the clean unrest and mutiny exchange at messages 508–572, including the native `IC` substitution, then the separate leaks and fire families. The unmapped Market replies, remaining town dialogue and other player-facing text stay in scope. Graphics artwork and the older-record technical re-audit stay separate.

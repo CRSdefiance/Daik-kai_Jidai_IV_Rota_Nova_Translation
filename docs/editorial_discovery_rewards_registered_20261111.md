@@ -1,0 +1,7 @@
+# Discovery and reward notices registered
+
+The 14 discovery and reward notices are registered. The ledger now credits 26,371 reviews. The original discovery and recruitment wording earned retention. The revised notices distinguish recovered gold, a national reward, and generic receipts. Both supply quantities survive in the original order, and the shark sound and acquisition messages were reviewed in the context of the complete exchange. [Release and patch](../releases/all_routes_editorial_20261111_discovery_rewards_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_discovery_rewards_candidate/verification/registered_review.json)
+
+The Riga Auto Move replay confirmed the complete question and manual sailing state. Inuvik discovery and the subsequent docking and resupply were observed in the original emulator flow with an eight-byte ship-position fixture. All 31 stored variants passed automated and visual checks. The recruitment notice passed offline with original composed names. Hardware testing and the other reward triggers remain unobserved.
+
+The [source review](../translations/editorial_checkpoints/SharedText_20261110_v1/discovery_rewards_context_v1.json) preserves the unbound records 287, 296, 300 and 304 and the surrounding shark exchange. Continue the remaining shared notices from the clean source, including 334–335, 337, and 342–345. Keep 284, 318, the legacy setup and Options records, and Market replies 750–752 open. Keep deferred artwork and the older-record technical re-audit separate.

@@ -1,0 +1,9 @@
+# Rafael's portrait, castle, parrot, and item encounters
+
+The contextual pass revisits 192 records and carries forward 32 exact earlier decisions from B214 and B219. The portrait sequence preserves Rafael's attempt to hand over the book and Claudio's distraction. Carlo carries the stranger to the inn and politely accepts the gift after being pressed. The rope negotiation preserves its exact offers and the distinct stat rewards. Rafael offers to pay for the medicinal book after Hans admits wanting to read it. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_rafael_B211_B220_candidate/verification/registered_review.json)
+
+Jam's claims about his figurehead remain distinct from the castle's account. The four letter panels preserve his full indented signature. Every parrot echo keeps Angelo's exact words and the original speakerless control. The earring seller's pitch remains his own sales claim, and Cristina's follow-up keeps the rumor about the lost sword qualified.
+
+Native verification covers 51 revised pages, three 16-character substitutions, 19 speakerless panels, 19 nameplates, and six menu captions. Focused cold-boot excerpts verify 44 dialogue pages, six choice highlights, the earring dialogue's page progression, four consecutive letter panels and the parrot's nameplate transitions. Natural encounter activation and hardware remain unvisited in this batch. [Native and gameplay evidence](../releases/all_routes_editorial_20261122_rafael_B211_B220_candidate/verification)
+
+The cumulative candidate preserves 114 accepted layers, the ASCII right-bound correction and seven source-format controls. Six startup comparisons, 17 regression tests and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_rafael_B211_B220_candidate/README.md)

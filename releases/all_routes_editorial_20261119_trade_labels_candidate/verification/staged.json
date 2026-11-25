@@ -1,0 +1,1110 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "candidate_sha256": "9f4a3d5fb6231cd07dcab8f93843b52e249444214e0f350208ead5b4a3498d27",
+  "records": [
+    {
+      "id": "TRADE_LABEL_159FA4",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "Total income from the proposed transactions.",
+      "clean_Japanese": "総収入",
+      "previous_English": "Income",
+      "english": "Income",
+      "localization_note": "Keep the plain heading for proceeds from the pending sale.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417124,
+        "length": 8,
+        "draw": 34345856,
+        "pointer_field": 34349052,
+        "layout_offset": 1415812
+      },
+      "current_reference": {
+        "string_offset": 1417124,
+        "length": 8,
+        "draw": 34345856,
+        "pointer_field": 34349052,
+        "layout_offset": 1415812
+      },
+      "source_hex": "918d8efb93fc0000",
+      "current_hex": "496e636f6d650000",
+      "staged_hex": "496e636f6d650000",
+      "original_geometry": [
+        16,
+        54,
+        96,
+        0,
+        36,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        54,
+        96,
+        0,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9609,
+        "caller_LR": 34345860,
+        "context": 35189068,
+        "pointer": 34971556,
+        "text": "Income",
+        "text_hex": "496e636f6d65",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          96,
+          0
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          96,
+          0,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          54
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FAC",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "Total spending from the proposed transactions.",
+      "clean_Japanese": "総支出",
+      "previous_English": "Spent",
+      "english": "Spent",
+      "localization_note": "Keep the direct label for outgoing money. It remains distinct from the proceeds and running total.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417132,
+        "length": 8,
+        "draw": 34345892,
+        "pointer_field": 34349056,
+        "layout_offset": 1415840
+      },
+      "current_reference": {
+        "string_offset": 1417132,
+        "length": 8,
+        "draw": 34345892,
+        "pointer_field": 34349056,
+        "layout_offset": 1415840
+      },
+      "source_hex": "918d8e788f6f0000",
+      "current_hex": "5370656e74000000",
+      "staged_hex": "5370656e74000000",
+      "original_geometry": [
+        16,
+        70,
+        136,
+        0,
+        36,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        70,
+        136,
+        0,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9609,
+        "caller_LR": 34345896,
+        "context": 35189068,
+        "pointer": 34971564,
+        "text": "Spent",
+        "text_hex": "5370656e74",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          136,
+          0
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          136,
+          0,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          120
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FB4",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The resulting total after income and spending.",
+      "clean_Japanese": "合計",
+      "previous_English": "Sum",
+      "english": "Total",
+      "localization_note": "Total is the natural label for the projected balance below the income and spending rows.",
+      "decision": "revision",
+      "wording_changed": true,
+      "display_changed": true,
+      "source_reference": {
+        "string_offset": 1417140,
+        "length": 8,
+        "draw": 34345928,
+        "pointer_field": 34349060,
+        "layout_offset": 1415868
+      },
+      "current_reference": {
+        "string_offset": 1417140,
+        "length": 8,
+        "draw": 34345928,
+        "pointer_field": 34349060,
+        "layout_offset": 1415868
+      },
+      "source_hex": "8d878c7600000000",
+      "current_hex": "53756d0000000000",
+      "staged_hex": "546f74616c000000",
+      "original_geometry": [
+        16,
+        86,
+        176,
+        0,
+        24,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        86,
+        204,
+        72,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34345932,
+        "context": 35189068,
+        "pointer": 34971572,
+        "text": "Sum",
+        "text_hex": "53756d",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          176,
+          0
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          176,
+          0,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          160
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FBC",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "Trading, the same action named by the Market menu.",
+      "clean_Japanese": "交易",
+      "previous_English": "Deal",
+      "english": "Trade",
+      "localization_note": "Use the same name as the Market command that opens this screen.",
+      "decision": "revision",
+      "wording_changed": true,
+      "display_changed": true,
+      "source_reference": {
+        "string_offset": 1417148,
+        "length": 8,
+        "draw": 34347140,
+        "pointer_field": 34349112,
+        "layout_offset": 1416792
+      },
+      "current_reference": {
+        "string_offset": 1417148,
+        "length": 8,
+        "draw": 34347140,
+        "pointer_field": 34349112,
+        "layout_offset": 1416792
+      },
+      "source_hex": "8cf088d500000000",
+      "current_hex": "4465616c00000000",
+      "staged_hex": "5472616465000000",
+      "original_geometry": [
+        116,
+        2,
+        0,
+        72,
+        24,
+        12
+      ],
+      "staged_geometry": [
+        113,
+        2,
+        0,
+        72,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347144,
+        "context": 35189068,
+        "pointer": 34971580,
+        "text": "Deal",
+        "text_hex": "4465616c",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          0,
+          72
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          188
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FC4",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The account of incoming and outgoing funds.",
+      "clean_Japanese": "収支",
+      "previous_English": "Net",
+      "english": "Ledger",
+      "localization_note": "The panel lists current funds, income, spending and the total. Ledger describes the whole account panel.",
+      "decision": "revision",
+      "wording_changed": true,
+      "display_changed": true,
+      "source_reference": {
+        "string_offset": 1417156,
+        "length": 8,
+        "draw": 34347176,
+        "pointer_field": 34349116,
+        "layout_offset": 1416820
+      },
+      "current_reference": {
+        "string_offset": 1417156,
+        "length": 8,
+        "draw": 34347176,
+        "pointer_field": 34349116,
+        "layout_offset": 1416820
+      },
+      "source_hex": "8efb8e7800000000",
+      "current_hex": "4e65740000000000",
+      "staged_hex": "4c65646765720000",
+      "original_geometry": [
+        54,
+        18,
+        24,
+        72,
+        24,
+        12
+      ],
+      "staged_geometry": [
+        46,
+        18,
+        180,
+        60,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347180,
+        "context": 35189068,
+        "pointer": 34971588,
+        "text": "Net",
+        "text_hex": "4e6574",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          24,
+          72
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          24,
+          72,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          12
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FCC",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The name of the selected ship.",
+      "clean_Japanese": "選択船名",
+      "previous_English": "Ship",
+      "english": "Ship",
+      "localization_note": "The selected ship name appears immediately beneath the heading, so Ship supplies enough context.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417164,
+        "length": 12,
+        "draw": 34347212,
+        "pointer_field": 34349120,
+        "layout_offset": 1416848
+      },
+      "current_reference": {
+        "string_offset": 1417164,
+        "length": 12,
+        "draw": 34347212,
+        "pointer_field": 34349120,
+        "layout_offset": 1416848
+      },
+      "source_hex": "914991f0914496bc00000000",
+      "current_hex": "536869700000000000000000",
+      "staged_hex": "536869700000000000000000",
+      "original_geometry": [
+        170,
+        18,
+        48,
+        72,
+        48,
+        12
+      ],
+      "staged_geometry": [
+        170,
+        18,
+        48,
+        72,
+        48,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347216,
+        "context": 35189068,
+        "pointer": 34971596,
+        "text": "Ship",
+        "text_hex": "53686970",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          48,
+          72
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          48,
+          72,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          36
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FD8",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The city where the transaction takes place.",
+      "clean_Japanese": "交易都市",
+      "previous_English": "City",
+      "english": "City",
+      "localization_note": "Keep the concise heading above the city where the trade is taking place.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417176,
+        "length": 12,
+        "draw": 34347248,
+        "pointer_field": 34349124,
+        "layout_offset": 1416876
+      },
+      "current_reference": {
+        "string_offset": 1417176,
+        "length": 12,
+        "draw": 34347248,
+        "pointer_field": 34349124,
+        "layout_offset": 1416876
+      },
+      "source_hex": "8cf088d593738e7300000000",
+      "current_hex": "436974790000000000000000",
+      "staged_hex": "436974790000000000000000",
+      "original_geometry": [
+        42,
+        106,
+        96,
+        72,
+        48,
+        12
+      ],
+      "staged_geometry": [
+        42,
+        106,
+        96,
+        72,
+        48,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347252,
+        "context": 35189068,
+        "pointer": 34971608,
+        "text": "City",
+        "text_hex": "43697479",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          96,
+          72
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          96,
+          72,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          60
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FE4",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "Details for the selected trade good.",
+      "clean_Japanese": "交易品詳細",
+      "previous_English": "Goods Info",
+      "english": "Goods Info",
+      "localization_note": "The panel gives the selected commodity's name, market percentage and arrival calendar.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417188,
+        "length": 12,
+        "draw": 34347284,
+        "pointer_field": 34349128,
+        "layout_offset": 1416904
+      },
+      "current_reference": {
+        "string_offset": 1417188,
+        "length": 12,
+        "draw": 34347284,
+        "pointer_field": 34349128,
+        "layout_offset": 1416904
+      },
+      "source_hex": "8cf088d595698fda8dd70000",
+      "current_hex": "476f6f647320496e666f0000",
+      "staged_hex": "476f6f647320496e666f0000",
+      "original_geometry": [
+        164,
+        106,
+        144,
+        72,
+        60,
+        12
+      ],
+      "staged_geometry": [
+        164,
+        106,
+        144,
+        72,
+        60,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347288,
+        "context": 35189068,
+        "pointer": 34971620,
+        "text": "Goods Info",
+        "text_hex": "476f6f647320496e666f",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          144,
+          72
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          144,
+          72,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          108
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FF0",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The city's size classification.",
+      "clean_Japanese": "規模",
+      "previous_English": "Size",
+      "english": "Size",
+      "localization_note": "The label describes the city's size classification directly.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417200,
+        "length": 8,
+        "draw": 34347968,
+        "pointer_field": 34349160,
+        "layout_offset": 1416708
+      },
+      "current_reference": {
+        "string_offset": 1417200,
+        "length": 8,
+        "draw": 34347968,
+        "pointer_field": 34349160,
+        "layout_offset": 1416708
+      },
+      "source_hex": "8b4b96cd00000000",
+      "current_hex": "53697a6500000000",
+      "staged_hex": "53697a6500000000",
+      "original_geometry": [
+        16,
+        150,
+        96,
+        60,
+        24,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        150,
+        96,
+        60,
+        24,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34347972,
+        "context": 35189068,
+        "pointer": 34971632,
+        "text": "Size",
+        "text_hex": "53697a65",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          96,
+          60
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          96,
+          60,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          54
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_159FF8",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The city's current condition.",
+      "clean_Japanese": "状態",
+      "previous_English": "Status",
+      "english": "Status",
+      "localization_note": "The current wording describes the city condition. The original four-cell atlas slot crops it, so the full word needs six cells.",
+      "decision": "revision",
+      "wording_changed": false,
+      "display_changed": true,
+      "source_reference": {
+        "string_offset": 1417208,
+        "length": 8,
+        "draw": 34348004,
+        "pointer_field": 34349164,
+        "layout_offset": 1416736
+      },
+      "current_reference": {
+        "string_offset": 1417208,
+        "length": 8,
+        "draw": 34348004,
+        "pointer_field": 34349164,
+        "layout_offset": 1416736
+      },
+      "source_hex": "8ff391d400000000",
+      "current_hex": "5374617475730000",
+      "staged_hex": "5374617475730000",
+      "original_geometry": [
+        16,
+        166,
+        120,
+        60,
+        24,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        166,
+        216,
+        60,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34348008,
+        "context": 35189068,
+        "pointer": 34971640,
+        "text": "Status",
+        "text_hex": "537461747573",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          120,
+          60
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          120,
+          60,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          108
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_15A000",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The months when the good comes into stock.",
+      "clean_Japanese": "入荷月",
+      "previous_English": "Arr.",
+      "english": "Arr.",
+      "localization_note": "The established compact caption works next to the numbered arrival calendar.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417216,
+        "length": 8,
+        "draw": 34349212,
+        "pointer_field": 34349200,
+        "layout_offset": 1416764
+      },
+      "current_reference": {
+        "string_offset": 1417216,
+        "length": 8,
+        "draw": 34349212,
+        "pointer_field": 34349200,
+        "layout_offset": 1416764
+      },
+      "source_hex": "93fc89d78c8e0000",
+      "current_hex": "4172722e00000000",
+      "staged_hex": "4172722e00000000",
+      "original_geometry": [
+        140,
+        168,
+        144,
+        60,
+        36,
+        12
+      ],
+      "staged_geometry": [
+        140,
+        168,
+        144,
+        60,
+        36,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9610,
+        "caller_LR": 34349216,
+        "context": 35189068,
+        "pointer": 34971648,
+        "text": "Arr.",
+        "text_hex": "4172722e",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          144,
+          60
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          144,
+          60,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          144
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    },
+    {
+      "id": "TRADE_LABEL_15A008",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Trade panel",
+      "context": "Trade shows the selected ship and city, proposed monetary movements, and the conditions for the selected goods.",
+      "source_meaning": "The funds the player has before the proposed transactions.",
+      "clean_Japanese": "所持金",
+      "previous_English": "Funds",
+      "english": "Funds",
+      "localization_note": "Keep the established label for the available base funds above the proposed transaction rows.",
+      "decision": "retention",
+      "wording_changed": false,
+      "display_changed": false,
+      "source_reference": {
+        "string_offset": 1417224,
+        "length": 8,
+        "draw": 34349736,
+        "pointer_field": 34349832,
+        "layout_offset": 1416680
+      },
+      "current_reference": {
+        "string_offset": 1417224,
+        "length": 8,
+        "draw": 34349736,
+        "pointer_field": 34349832,
+        "layout_offset": 1416680
+      },
+      "source_hex": "8f8a8e9d8be00000",
+      "current_hex": "46756e6473000000",
+      "staged_hex": "46756e6473000000",
+      "original_geometry": [
+        16,
+        38,
+        200,
+        0,
+        48,
+        12
+      ],
+      "staged_geometry": [
+        16,
+        38,
+        200,
+        0,
+        48,
+        12
+      ],
+      "observed_original_draw": {
+        "frame": 9611,
+        "caller_LR": 34349740,
+        "context": 35189068,
+        "pointer": 34971656,
+        "text": "Funds",
+        "text_hex": "46756e6473",
+        "clip_rect": [
+          0,
+          0,
+          256,
+          96
+        ],
+        "cursor": [
+          200,
+          0
+        ],
+        "view_words": [
+          34997220,
+          0,
+          0,
+          256,
+          96,
+          0,
+          0,
+          0,
+          0,
+          200,
+          0,
+          35190880,
+          1,
+          36502892,
+          34090536,
+          156
+        ]
+      },
+      "review": {
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true,
+        "naturalness": true
+      }
+    }
+  ],
+  "parent_sha256": "8928a9b7690966e9579a6234b97d6bac56627436b42df036cded45e86a35df82",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "27cf44179db3e872a82b9cbf224f3d630816dedb72aa573d8f60a8755f72f256",
+  "entire_parent_inverse": true,
+  "atlas_bound": [
+    256,
+    96
+  ],
+  "atlas_rectangles": 46,
+  "source_proofs": {
+    "releases\\all_routes_editorial_20261119_inn_numerals_candidate_v2\\verification\\registered_release_verification.json": "d7f7d70876769aabe4d8a02c72cf694102a5056423f6224bf05617ea04f01b33",
+    "work\\trade_labels_20261119\\baseline_trace\\requests.json": "695ed2d5772ddf90aa56a1f0cb894503c639d24df3a00e58789e54efef908d1d",
+    "work\\trade_labels_20261119\\baseline_trace\\capture\\capture_report.json": "26af4727e10fd6baa3df294302151f9d051d6896d8942a5ebc81b506a303ff94",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\stage_trade_labels_20261119.py": "4b9f0bb69647c92964204f8976d87a282699917290a896f8180e5aaca46a0703"
+  }
+}

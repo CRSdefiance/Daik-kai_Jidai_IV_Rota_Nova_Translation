@@ -1,0 +1,7 @@
+# The patrons at Cristina’s dance
+
+The four routes now use **Patron 1**, **Patron 2**, and **Patrons** for the same two onlookers. Nine embedded labels and cheers were revised. The 63 retentions include each captain’s distinct reaction, Cristina’s explanation, and Claudio’s apology in Rafael’s route. All 72 lines have exact Japanese and current references. [Review ledger](../releases/all_routes_editorial_20261115_cristina_dance_patrons_candidate/verification/registered_review.json)
+
+All 12 patron panels passed native glyph, bounds and one-panel checks and were visually reviewed. The paired initialized Rafael replays copied the original excerpt and its scene controls into the established opening fixture. All three revised holds matched their full text masks, and nine other frames matched, including dismissal, Rafael and Claudio’s regular nameplates, and the applause. The other routes were checked offline. Natural event activation and hardware remain open. [Before and after](../releases/all_routes_editorial_20261115_cristina_dance_patrons_candidate/verification/gameplay_comparison.png)
+
+The [cumulative candidate and clean-input patch](../releases/all_routes_editorial_20261115_cristina_dance_patrons_candidate/README.md) preserve the 114 accepted layers, the unchanged actor table and the ASCII right-bound correction. Six startup frames, 24 protected name getters, 32 targeted tests and byte-exact reconstruction passed. All 72 lines already carried editorial credit.

@@ -1,0 +1,11 @@
+# Rafael's flagship refit and sailing lessons
+
+Reviewed all 62 records in two complete exchanges. The batch has 32 wording revisions, two wrap-only revisions and 28 justified retentions. Manuel still speaks of the ship as a living thing. His refit advice uses the existing room and job names and preserves their effects. The shipwright's wind-angle question now fits on one page and leads straight into Manuel's answer. Six other revised speeches also fit on one page. [Exact source, predecessor and current references](../releases/all_routes_editorial_20261121_rafael_refit_sailing_lessons_candidate/verification/registered_review.json)
+
+All 34 revised pages, three additional name-length cases and four retained choice captions passed native checks and visual review. A focused initialized emulator excerpt matched 19 revised pages, both choice menus and the two unchanged panels that follow the wind-angle question. Original menu cancellation and alternate choices passed offline. Natural story activation and hardware remain unverified. [Native and play evidence](../releases/all_routes_editorial_20261121_rafael_refit_sailing_lessons_candidate/verification)
+
+Six startup holds, 24 protected name getters, 17 focused tests and exact clean-input reconstruction passed. All editorial credit carries forward. [Cumulative testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_refit_sailing_lessons_candidate/README.md)
+
+The Drive readback hash matches the registered candidate, which is the folder's only `.nds`. Checkpoint cleanup removed 77 disposable replay and non-ROM staging files and freed 402,055,272 bytes. [Drive testing build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) · [Drive receipt](../out/rafael_refit_sailing_lessons_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_refit_sailing_lessons_registered_20261121/checkpoint_cleanup.json)
+
+Fernando's coin game and recruitment are next. All 65 records in SC0 block 178 are paired to this candidate. Check the last-coin rule, Janus's example of leaving five coins, and the turn from Fernando's observation of the couple to Rafael's offer. R0147 and R0257 have current page breaks inside those thoughts. [Exact clean and current pairs](../work/rafael_fernando_coin_game_20261121/paired_source.json)

@@ -1,0 +1,101 @@
+"""Seal37 complete clean-source meanings/drafts before fresh current-body extraction."""
+from pathlib import Path
+from scripts.audit_story_glyph_consistency import load,save
+from dk4tool.patch.grand_race_menu_release import sha
+
+SOURCE=Path('work/analysis/Shared_HELP_early_topics_clean_20261104/clean_HELP_source_packet_v2.json')
+OUT=Path('work/analysis/Shared_HELP_T44_T80_clean_20261104')
+TEXT={
+44:('Build/refit/store unused ships andcreate/disband regional fleets;cost/time depend onjob;carpenter mayreducecost;all five command links.',
+"Build and refit ships, store ships you are not using, and create or disband regional fleets. Each job takes time and gold, depending on the work. A [[113|Carpenter]] may reduce the cost. See [[45|Buy Ship]], [[48|Sell Ship]], [[49|Repair]], [[50|Refit]] and [[62|Dock]]."),
+45:('Available shiptypes differbyregion;afterbuying choose name;standard/custom branches.',
+"Buy a ship. The types available vary by region. After buying a ship, choose its name. See [[46|Standard Hull]] and [[47|Custom Order]]."),
+46:('Buy astandard-specification ship;no invented discounts orconstruction speed.',
+"Buy a ship with its standard equipment."),
+47:('Order same modifications asowned modified ship;onlytown selling same shiptype;not aclone ofcargo/crew.',
+"Order a ship with the same modifications as one of your refitted ships. You can do this only in a town that sells that type of ship."),
+48:('Sell ownedship;sailors move tootherfleet ships;transfer priorcargo viaPortCargoHandling79;no unsupportedflagship prohibition.',
+"Sell a ship you own. Its sailors move to other ships in your fleet. Transfer the trade goods it carried to other ships using [[79|Cargo Handling]] at the port."),
+49:('Repair lostDurability costs gold andseveral days;carpenter makesrepair cheaper,definite conditional.',
+"Repair a ship that has lost Durability. Repairs cost gold and take several days. A [[113|Carpenter]] lets you repair ships more cheaply."),
+50:('Refit tostrengthen ship;equipment andrename branches.',
+"Refit your ship to improve its performance. See [[51|Change Equipment]] and [[61|Rename Ship]]."),
+51:('At eachposition circle cycles equipment;triangle executes all displayed choices;physicalDS controls mustbebound,not assumedA/X.',
+"Change or add equipment. Move the cursor to the position you want to change. Press the selection button to cycle through the equipment choices for that position. Once every position shows the equipment you want, press the execution button to carry out the refit. See [[52|Sails]], [[53|Figurehead]], [[54|Additional Equipment]], [[58|Cannon Type]], [[59|Compartments]] and [[60|Crew Stations]]."),
+52:('Allowed sails depend onship;square/topsail improve following-wind speed;lateen/staysail improveheadwind speed;no global all-weather bonus.',
+"Change the sails on your masts. Each ship has limits on the sails it can carry. Square sails improve speed with a following wind; lateen sails improve speed in a headwind. Adding topsails improves speed with a following wind, while adding staysails improves speed in a headwind."),
+53:('Install ownedFigurehead-category item;mayprotect againstdisasters,etc;not blanket immunity.',
+"Fit a figurehead to the bow. Figureheads can protect the ship from disasters and other hazards. You can do this only if you have an item in the Figurehead category."),
+54:('Add/change armor,bow/stern equipment;all3links.',
+"Add or change armor, bow equipment and stern equipment. See [[55|Extra Armor]], [[56|Bow Equipment]] and [[57|Stern Equipment]]."),
+55:('Protectiveboards againstcannonfire;maxDurability up,speed slightlydown;no material invented.',
+"Extra armor protects the ship from cannon fire. It increases maximum Durability but slightly reduces speed."),
+56:('Oneofspritsail,bowguns,ram;following-wind speed/forwardfire/bow collision respectively. Spritsail followsalreadyreviewed nautical localization,not literalSplitSail.',
+"Fit a spritsail, bow guns or a ram. A spritsail improves speed with a following wind. Bow guns let you fire ahead of the ship. A ram lets you attack an enemy ship by striking it with your bow."),
+57:('Jigger spanker orstern guns;headwind speed/rearwardfire respectively;exact approved component names tobind.',
+"Fit a jigger spanker or stern guns. The jigger spanker improves speed in a headwind. Stern guns let you fire behind the ship."),
+58:('Select cannon shownathelm position;townGrowth allowsuptosix cannon types. Keepsource Growth evenif otherhelp discussesArms;do not silently reconcile the two.',
+"Select the cannons shown at the helm position to change their type. Higher town Growth can increase the available selection to as many as six cannon types."),
+59:('HoldusesMarines,batteries,rowers,supplies,cargo;rowingroomcannotchange/add;some positionsrestrictuses;addingholdslowsslightly;fourMarine/Battery limit,fivecargo,unlimitedsupply-type cap. Combined-versus-per-type four-limit needsexistingnative evidence.',
+"Change the use of a [[127|compartment]]. The choices are Marine Barracks, Gun Battery, Rowers' Quarters, Supply Hold and Cargo Hold. You cannot change or add Rowers' Quarters. Some compartments cannot be used for every purpose. Adding compartments slightly reduces speed. Marine Barracks and Gun Batteries are limited to four; Cargo Holds to five. There is no limit on Supply Holds."),
+60:('Crewstationtypeschange;captain/firstmate/helm/survey/lookout/masts/deck cannotconvert;onlyprivatecabins/masts/decks allowduplicates.',
+"Change your [[110|crew stations]]. You cannot convert the Captain's Cabin, First Mate's Office, Helm, Surveying Station, Lookout, Masts or Deck to another type of station. Except for Private Cabins, Masts and Deck, each type can appear only once on a ship."),
+61:('Rename ship,no additionalfee/time invented.',
+"Change your ship's name."),
+62:('Dockwithdraw/store/create/disbandregionalfleets;all sixlinks.',
+"Move ships into or out of the dock, and create or disband regional fleets. See [[63|Exchange Ships]], [[64|Appoint Captain]], [[65|Change Formation]], [[66|Create Regional Fleet]], [[71|Reorganize Regional Fleet]] and [[72|Disband Regional Fleet]]."),
+63:('Store/withdrawships;keep sailors,cargo,suppliesaboard;onwithdrawal canchangeformation andassignsailors.',
+"Store ships in the dock or take them out. You can leave their sailors, cargo and supplies aboard while they are stored. When taking ships out, you can also [[65|change their formation]] and [[139|assign sailors]]."),
+64:('Captains eachship;companions alsoon nonflagships;cancel meansordinarysailor captain;playerassignment changesflagship;captaincompanions levelupmoreeasily.',
+"Appoint a captain for each ship. You can put companions in command of ships other than the flagship, too. Select a companion to make them captain. Cancel the assignment to let an ordinary sailor command that ship. [!] Assign your character as a ship's captain to make it the flagship. [!] Companions serving as captains gain levels more easily."),
+65:('Flagship alwaysfirst;selectionordersecondthirdetc;confirmonlyafterallshipsordered.',
+"Change the order of your ships. The flagship always comes first. The order in which you select the others determines the second ship, third ship and so on. Confirm after choosing the order of every ship."),
+66:('Regionalfleetdelegatedcompanion Leadership>=150;policychangeviaInfo;100000operatingfundseach,uptosixregionalfleets;ifallshipssinkcommanderreturnsmain;notguaranteedfundrefundinthiscase.',
+"Create a regional fleet commanded by a companion with Leadership of at least 150. Choose a policy to delegate its activities; you can change that policy through Info. Each new fleet needs 100,000 gold coins in operating funds. You can create up to six regional fleets. If every ship in one sinks, its commander returns to your main fleet. See [[67|Delegate Region]], [[68|Patrol]], [[69|Call at Port]] and [[70|Attack Town]]."),
+67:('Fullydelegate region;commanderchooses trade/investment/etc;monthlyincome/expenditure report.',
+"Delegate activities throughout the sea region to the fleet. Its commander decides when to trade, invest and carry out other activities. You receive a report of its income and expenses each month."),
+68:('Stationatsea nearcontractedtown,prepareforotherfactionattacks;not generic free-roaming patrol.',
+"Station the fleet at sea near a town you have a [[36|contract]] with, ready for attacks by other factions."),
+69:('Callat a contractedtown.',
+"Send the fleet into a town you have a [[36|contract]] with."),
+70:('AttacktownwithNOowncontract,reduceothershare;no promisedcapture/newcontract.',
+"Attack a town you do not have a [[36|contract]] with to reduce other factions' [[150|Market Share]] there."),
+71:('Reorganize regionalfleetonlywhendockedinsame townasplayer.',
+"Change a regional fleet's formation. You can do this only while it is docked in the same town as your fleet."),
+72:('Disbandonlysamedockedtown;commanderandremainingoperatingfundsreturn.',
+"Disband a regional fleet. You can do this only while it is docked in the same town as your fleet. Its commander returns to your main fleet, along with any operating funds it has left."),
+73:('Portwater/food/sail;whenbelowmaxofficialasks;Yesfillsavailablecapacityequally,Noallowsratiocustomization,not simpleskip;all3links.',
+"Replenish water and food, then set sail. [!] If your water and food are not full, the port official asks whether you want to replenish them. Choose Yes to fill the available capacity with equal amounts of water and food. Choose No to adjust their proportions yourself. See [[74|Set Sail]], [[78|Dock]] and [[79|Cargo Handling]]."),
+74:('Set sail;manual/auto/deckbranches.',
+"Set out to sea. See [[75|Manual Sailing]], [[76|Auto Move]] and [[77|Deck]]."),
+75:('Manualcontrolwhile sailing.',
+"Sail while controlling the ship yourself."),
+76:('Automovetotarget requiresCaptain/Surveyor;connectedRouteMapline ANDownsharebothends/allintermediate;routesred. Do notreduce tovisitedtownsonly.',
+"Travel automatically to a town you choose. You need a [[120|Captain]] and a [[123|Surveyor]]. Auto Move works only between towns connected by a route. This means the departure point and destination are joined by a line on the [[104|Route Map]], and your faction has [[150|Market Share]] in both towns and every town along the way. These routes appear in red on the map."),
+77:('SameasSharedCommandsDeck105;retaincrosslink.',
+"This is the same as [[105|Deck]] under Shared Commands."),
+78:('SameasshipyardDock62;retaincrosslink.',
+"This is the same as the [[62|Shipyard Dock]]."),
+79:('Rearrangecargo;anythingleftoffshipsdiscarded;not justheldinstorage.',
+"Transfer cargo between ships. Any cargo left off the ships is discarded."),
+80:('Cityonly/storymayopenruinsorchurchpaths;discoveryraisesregionalPower;participationmayavailable,raisesXP;valuableitemspossibleinruinsnotguaranteed.',
+"As the story progresses, paths to ruins or churches near a town may open. Discovering ruins or churches increases your [[184|Power]]. You may also be able to take part in ceremonies or festivals, which grant experience. [!] Valuable items may lie in the ruins. Be sure to visit."),
+}
+
+if __name__=='__main__':
+    assert not OUT.exists() and set(TEXT)==set(range(44,81));source=load(SOURCE);rows=[]
+    for r in source['records']:
+        t=r['topic_id']
+        if t not in TEXT:continue
+        meaning,english=TEXT[t];assert english.isascii() and '\n' not in english
+        rows.append(dict(id=r['id'],topic_id=t,source_reference=r['source_reference'],source_hex=r['source_hex'],source_sha256=r['source_sha256'],
+            source_Japanese_with_link_IDs=r['source_Japanese_with_link_IDs'],original_link_IDs=r['original_link_IDs'],
+            clean_meaning=meaning,full_article_English_draft=english,first_draft_not_final_gate_orretention=True,
+            current_full_body_not_extracted_for_this_fresh_comparison_yet=True))
+    OUT.mkdir();save(OUT/'clean_meanings_andfull_drafts_v1.json',dict(records=rows,records_count=37,source_packet=str(SOURCE),source_packet_sha256=sha(SOURCE.read_bytes()),
+        translation_policy='natural-dialogue-v2',target_locale='en-US',fresh_drafts_precede_current_full_body_packet=True,
+        prior_UI_heading_exposure_topic_IDs=[44,73,80],prior_spritsail_andother_refit_room_term_research_known=True,
+        no_blanket_claim_of_no_prior_English_exposure=True,all_current_comparisons_localization_terms_controls_display_andintegration_pending=True,
+        concrete_bindings_needed=['51 circle/select andtriangle/execute physicalDS controls','59 four Marine/Battery compartments per-type versuscombined','accepted compartment/station/component names','76 Captain/Surveyor native role names','regional fleet policy labels'],
+        new_credit=0,full_goal_complete=False,producer_sha256=sha(Path(__file__).read_bytes())))
+    print('37 complete clean-source meanings/full drafts sealed beforefresh current-body extraction;control/type-cap/term bindings remain. No new credit.')

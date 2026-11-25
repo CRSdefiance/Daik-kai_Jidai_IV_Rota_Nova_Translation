@@ -2,10 +2,12 @@ from pathlib import Path
 
 from dk4tool.formats.ilnk import IlnkContainer
 from dk4tool.rom.nds import NdsImage
+
+from historical_fixture_support import historical_rom
 from scripts.audit_release_translation_integrity import build_report
 
 
-CANDIDATE = Path("out/all_routes_unified_v5_candidate.nds")
+CANDIDATE = historical_rom("all_routes_unified_v5_candidate")
 CLEAN = Path("work/clean.nds")
 
 

@@ -1,0 +1,3 @@
+# V912: next battle Chapel and Planning source contexts
+
+Next24 entries1645-1668 map to original Chapel18 and Planning19 duties. All150 direct battle helper,main battle selector and ordinary-context controls pass for21 NPCs and four genuine captains. NPCs use the genuine Julio battle state;captain1 uses the genuine V910 Galley battle state. Other heroes retain their genuine models with declared CPU mode controls. Exact clean Japanese,current V910 and canonical references and immediate storage neighbors are saved. These are independently selected voice alternatives,not consecutive speech. No prose,font,actual new-room or completion credit.930 complete,933 source/prose reviewed;full editorial goal and separate graphics audit remain open.

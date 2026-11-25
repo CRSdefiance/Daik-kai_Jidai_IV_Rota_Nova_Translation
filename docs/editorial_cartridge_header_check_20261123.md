@@ -1,0 +1,7 @@
+# Original DS game-card header check
+
+The clean Japanese ROM and the current Online Card Copy candidate agree in **80 offline runs** across the three direct callers of the DS header scanner. Each tested caller and mode completed the seven fixed-address header reads with no progress prompt. Supplying a failure at each position selected the game-card read or write warning according to the caller's mode, or **Couldn't load system data.** through COMMON 123. The tests stop at the original notice receivers and use supplied cartridge read results. [Exact source, byte ranges and branch results](../translations/editorial_checkpoints/shared_display_20261123/cartridge_header_check_20261123.json)
+
+The retained native notices distinguish failed reads, failed writes, and system-data failures. The first two tell the player to power off before reinserting the game card. Their native text and clean and installed allocations match the prior review. The older **Checking the memory card** instruction at COMMON 116 keeps its exact references and draft for any later direct caller evidence. [Save warning review](editorial_save_dialogue_followup_20261119.md) · [System-data review](editorial_setup_confirmation_prose_20261115.md)
+
+**255 of 276 shared entries** now have scoped dispositions. **21 remain**, including ten legacy records, nine title variants and two scene labels. This checkpoint produced evidence only. It used no new ROM, gameplay captures or hardware tests.

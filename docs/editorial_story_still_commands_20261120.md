@@ -1,0 +1,9 @@
+# Story artwork and stored scene labels
+
+The clean Japanese and registered Tavern Help ROMs have the same 781 still-image commands across Rafael, Hodram, Lil, and Maria. Another 781 match in the alternate script archives. The original interpreter confirmed every candidate instruction boundary, including bodies nested inside conditional blocks. Each command keeps its original opcode and image operand, including the 631 main-archive commands whose offsets moved during localization. [Exact commands and assets](../translations/editorial_checkpoints/SharedText_20261110_v1/story_still_commands_20261120_v1.json)
+
+The original scene code requested the same 216 artwork files in both versions. Both modes reached the file-read boundary without calling the shared text getter or copier. These commands establish the story context for 163 stored COMMON labels, including 41 with no Gallery caption. The artwork hashes all match. For example, image 045 is linked from both the “Hodram and Maria” and “Maria and Hodram” records. The ledger retains the original order of the names in each title.
+
+Six labels have an identified image and a separate Gallery caption, with no matching still-image command in the eight script archives. Eight other scene labels still lack a specific display association. The record-level receipt keeps the Japanese, English draft or retention, and exact clean and installed references for all 214 labels. The 276 pending shared records were also checked against the current ROM.
+
+This checkpoint adds offline display evidence. Scene eligibility, alternate archive selection, and the rest of each scene were outside the test. The 27,700 credited reviews and 276 open shared entries remain recorded, with no new ROM or Drive upload for this checkpoint. [Registered testing candidate](../releases/all_routes_editorial_20261120_tavern_help_candidate/README.md)

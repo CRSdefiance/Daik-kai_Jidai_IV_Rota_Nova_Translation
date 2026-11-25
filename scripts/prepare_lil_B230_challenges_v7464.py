@@ -1,0 +1,18 @@
+"""Challenge B230's exact static item, country evidence, prerequisites and display scope."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B230_challenge_tools_v7464')
+if __name__=='__main__':
+    assert not ROOT.exists();src=Path('scripts/challenge_lil_B229_atomic_v7416.py').read_text('utf8');callbacklines=[s for s in src.splitlines() if 'callback=' in s or "root('callback-hash-changed'" in s or "add('B228-pitch-echo-corrupted'" in s or "add('B228-personal-reassurance-corrupted'" in s];assert len(callbacklines)==4
+    country="""    root('country-proof-hash-changed',doc,'source_place_binding_sha256','0'*64)
+    for key in ['source_Igirisu_distinct_from_Ingurando_in_same_original_record','Britain_supported_as_existing_reviewed_term_not_new_historical_claim','B230_R43_statement_is_character_clue_not_confirmed_city_orfind','initial_northern_Europe_report_not_source_proven_Scandinavian_origin','no_name_item_country_asset_orcredit_change','no_new_COMMON688_editorial_oractual_gameplay_approval']:root('country-scope-'+key,place,key,False)
+    root('country-original-COMMON688-changed',place,'COMMON688_source_hex','00')
+    root('country-current-COMMON688-changed',place,'COMMON688_current_hex','00')
+    root('country-England-substituted',place,'COMMON688_reviewed_English','England is a union of England, Scotland and Wales.')
+    add('country-literal-storage-changed',place,lambda v:v['untranslated_country_literal'].update(source_storage_offset=0))
+    add('country-literal-pointer-field-changed',place,lambda v:v['untranslated_country_literal'].update(all_original_ARM9_literal_pointer_fields=[0]))
+    add('country-UI-approval-invented',place,lambda v:v['untranslated_country_literal'].update(native_consumer_orplayer_facing_UI_not_established=False))
+    add('country-unapproved-lead-erased',place,lambda v:v['untranslated_country_literal'].update(unapproved_broader_player_facing_country_label_review_lead=False))"""
+    changes={callbacklines[0]:"    entry=Path(d['source_entry_proof']);place=Path(d['source_place_binding']);namefont=Path(d['native_name_proof'])",callbacklines[1]:country,callbacklines[2]:'',callbacklines[3]:'','B229':'B230','atomic_v7416':'atomic_v7464','atomic_v7415':'atomic_v7463','event229':'event230','source229':'source230','original_normal_end916_four_bytes_andtarget_no_tail_preserved':'original_normal_end974_four_bytes_andtarget_two_byte_tail_preserved','target_offset=918':'target_offset=976','source_named_shield_not_runtime_FI_substitution':'source_named_helmet_not_runtime_FI_substitution','current_Giant_Tortoise_Shield_asset_andreported_iron_hard_shell_source_meaning_bound':'current_Phoenix_Bascinet_asset_andreported_iron_flame_forging_anduncertain_name_bound','item53-wrong-storage-class':'item52-wrong-storage-class','item53-wrong-relative-offset':'item52-wrong-static-offset','item53-current-pointer-retargeted':'item52-current-pointer-retargeted',"update(current_storage_kind='static-current-ARM9')":"update(current_storage_kind='verified-current-staged-payload')"}
+    row=derive('scripts/challenge_lil_B229_atomic_v7416.py','scripts/challenge_lil_B230_atomic_v7464.py',changes);ROOT.mkdir(parents=True);save(ROOT/'source_locked_B230_semantic_challenges.json',dict(tool=row,all_cases_must_change_data_andreject_before_archive_write=True,all_cases_fresh_no_prior_B229_case_reuse=True,dependency_digests_bypassed_andapproved_records_mirrored_for_deep_checks=True,static_item52_Britain_source_current_andunapproved_country_lead_explicitly_challenged=True,no_malformed_orirrelevant_B228_callback_mutations=True,new_credit=0,full_goal_complete=False))

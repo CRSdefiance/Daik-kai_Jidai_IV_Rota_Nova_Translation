@@ -1,0 +1,15 @@
+"""Current source-bound helper voices, discounts and registered duration arguments."""
+from pathlib import Path
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/refit_context_v2274');OLD=Path('scripts/context_refit_dialogue_v832.py')
+if __name__=='__main__':
+    assert not ROOT.exists();snapshot=read('work/analysis/item_context_v2235/native_context.json')['pre_fixture_snapshot'];assert sha(Path(snapshot['path']).read_bytes())==snapshot['sha256'];source=OLD.read_text()
+    start="    report = read(LIVE / 'capture_report.json')";end="    assert snapshot['read_only_export'] and sha(raw) == snapshot['sha256']";a,b=source.index(start),source.index(end)+len(end)
+    source=source[:a]+"    snapshot = "+repr(snapshot)+"\n    raw = Path(snapshot['path']).read_bytes()\n    assert snapshot['read_only_export'] and sha(raw) == snapshot['sha256']"+source[b:]
+    changes={'work/analysis/refit_dialogue_v832':'work/analysis/refit_context_v2274','out/all_routes_combined_v831_candidate.nds':'out/all_routes_combined_v2171_candidate.nds','from dk4tool.patch.refit_help_editorial import current_entries':'from dk4tool.patch.town_trade_port_contextual_reference_v1 import current_entries','3d6f3d28deedb42f9d5c333fd5a70b0722438f04e76a089b84672c2299c84d95':'4df01b870562dc04d623fb5c0011d38100bc4062371d32ad2be12f352292260a',"((0x17A7C, 0x17BA0),":"((0x17A7C, 0x17B8C), (0x17B90, 0x17BA0),","expected_days = str(days).translate(str.maketrans('0123456789', '０１２３４５６７８９'))":"expected_days = str(days).translate(str.maketrans('0123456789', '０１２３４５６７８９')) + (' day' if days==1 else ' days')","'argument_is_number_without_day_unit': True":"'argument_includes_current_singular_or_plural_day_unit': True"}
+    for old,new in changes.items():assert source.count(old)==1,old;source=source.replace(old,new)
+    exec(compile(source,__file__,'exec'),{'__name__':'__main__','__file__':__file__})
+    arm=NdsImage.open('out/all_routes_combined_v2171_candidate.nds').read_file('/__arm9__.bin');prior=NdsImage.open('out/all_routes_combined_v834_candidate.nds').read_file('/__arm9__.bin');assert arm[0x17B8C:0x17B90]==prior[0x17B8C:0x17B90]
+    save(ROOT/'current_replay_provenance.json',dict(original=str(OLD),original_sha256=sha(OLD.read_bytes()),effective_source_sha256=sha(source.encode()),current_genuine_preinteraction_snapshot=snapshot,registered_V834_day_call_02017B8C_hex=arm[0x17B8C:0x17B90].hex(),all_other_claimed_source_spans_clean_exact=True,current256_duration_inputs_include_1day_and_plural_days=True,percent_and_duration_inputs_are_CPU_fragment_controls_not_actual_offers=True,existing_actual_1266_reference_is_historical_V831_not_current_visit=True,source_IC_pronoun_and_original_current_guard_bound_in='work/analysis/item_context_v2235/native_context.json',same_current_ARM9_as_guard_proof=True,no_ROM_runtime_or_emulator_fixture_change=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

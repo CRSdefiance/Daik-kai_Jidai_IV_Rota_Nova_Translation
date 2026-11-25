@@ -1,0 +1,5 @@
+# Hodram’s farewells and first meeting with Maria
+
+Three complete exchanges cover 103 spoken texts and 44 comparisons to the earlier registered wording. The review records 16 revisions and 87 justified retentions. It restores the reunion and Hodram's ambition to build a navy, clarifies Maria's case against Kuhn and Pereira, and retains the warmth and hesitations in Camille's return. The stylized speech in the farewell keeps its original glyphs and sequence. [Registered review](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/verification/registered_review.json)
+
+Seventeen native layout variants passed exact font checks, including Camille's thanks at default and maximum name widths. Focused cold-boot replays verified 19 complete dialogue panels, their speaker labels, and return to the host scene. Ordinary story triggers and handheld display remain unvisited for this batch. Startup and 17 focused tests passed. [Testing candidate and patch](../releases/all_routes_editorial_20261122_hodram_farewells_and_maria_candidate/README.md)

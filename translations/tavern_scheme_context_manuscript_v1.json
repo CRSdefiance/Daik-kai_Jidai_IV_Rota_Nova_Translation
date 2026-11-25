@@ -1,0 +1,56 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "status": "reviewed-native-previews",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_918",
+      "message_id": 918,
+      "source_hex": "257382b682e182c881480a82c582cd8141918a8ee882cc90a897cd82cd82c782ea82c982b782e982a982cb8148",
+      "japanese": "%sじゃな？\nでは、相手の勢力はどれにするかね？",
+      "previous_japanese": "%sだな？\n相手の勢力はどこだい？",
+      "next_japanese": "%sだね？\nじゃあ、どの勢力を相手にする？",
+      "english": "%s, then? Which faction should we target?{PAD}",
+      "source_meaning": "Confirms the chosen scheme, then asks which opposing faction to target. This does not ask about a price.",
+      "speaker": "Older Strategist voice",
+      "context": "Original Tavern scheme-type confirmation preceding the opposing-faction menu; the single %s argument is the source scheme name, not a coin amount.",
+      "localization_note": "Restore the original meaning and voice without invented costs. Keep the single scheme-name argument. Author one natural paragraph; the existing native portrait wrapper handles full English substitutions and word breaks. All eight original-renderer previews for the two voices and four complete scheme names have been reviewed; native glyph order and unbroken words pass.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_920",
+      "message_id": 920,
+      "source_hex": "82d382de8141257382c582b782c881480a82bb82ea82c582cd8141918a8ee882cc90a897cd82cd0a82c782ea82c982b582dc82b782a982c88148",
+      "japanese": "ふむ、%sですな？\nそれでは、相手の勢力は\nどれにしますかな？",
+      "previous_japanese": "%sだね？\nじゃあ、どの勢力を相手にする？",
+      "next_japanese": "どの街に向かわせますか？",
+      "english": "Hmm, %s? Which faction shall we target?{PAD}",
+      "source_meaning": "Confirms the chosen scheme, then asks which opposing faction to target. This does not ask about a price.",
+      "speaker": "Formal older Strategist voice",
+      "context": "Original Tavern scheme-type confirmation preceding the opposing-faction menu; the single %s argument is the source scheme name, not a coin amount.",
+      "localization_note": "Restore the original meaning and voice without invented costs. Keep the single scheme-name argument. Author one natural paragraph; the existing native portrait wrapper handles full English substitutions and word breaks. All eight original-renderer previews for the two voices and four complete scheme names have been reviewed; native glyph order and unbroken words pass.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

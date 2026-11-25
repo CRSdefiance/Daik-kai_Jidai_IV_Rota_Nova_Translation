@@ -1,0 +1,9 @@
+# Earlier name spellings in the current ROM
+
+The registered Cristina Recruitment Name candidate has no stored `Raphael`, `Kamil` or `Joachim` in its 1,307 story blocks, 3,668 mapped COMMON records or Help archive. All 414 stock actor name getter calls and the 164 active Gallery captions also use current spellings. The four Gallery route descriptions keep their existing wording, which reflects the corresponding clean Japanese label. The original Gallery selector drew all four with complete glyphs, including the last character, in both native bitmap formats. [Exact references and review](../translations/editorial_checkpoints/SharedText_20261110_v1/historical_name_spellings_20261115_v1.json)
+
+The ARM9 scan found 98 old-spelling positions referenced by 195 whole-record or body lookup keys. The installed lookup table uses them for matching. Its replacement text uses the approved spellings, and none of these old keys matches an installed record on its permitted route. Another 14 former Gallery strings have no direct or interior literal references in the scanned ARM9 sections and overlay. The active Gallery fields point to the current captions and descriptions. The old lookup and Gallery bytes are retained.
+
+The remaining `Joachim` is the comparison value for old saves with exactly **Hodram Joachim Bergstrom** as the default name. Six isolated calls verified that the original helper shows **Joakim** for that saved default and preserves user-entered names, including Joachim when either surrounding name differs. The helper leaves the saved name record intact.
+
+The checks used installed data and isolated native routines. No fresh Gallery visit or hardware test was performed. The ROM and review count stay at the Cristina checkpoint, with 27,700 credited records and 276 mapped shared keys open. [Current candidate](editorial_cristina_recruitment_name_20261115.md)

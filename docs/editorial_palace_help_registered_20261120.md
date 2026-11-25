@@ -1,0 +1,7 @@
+# Palace Help and its menu labels
+
+Six Palace Help articles now use the menu's action names, including **Introduction**, **Recommendation** and **Reclaim**. The two letter articles explain when you can sign a contract and how many percentage points you gain. **Military Investment** fits on one heading line and keeps its cost, effects and Rafael's rate. The loan article restores the governor as a possible recipient. Three surrounding articles retain their wording. [Exact Japanese, references and individual decisions](../releases/all_routes_editorial_20261120_palace_help_candidate/verification/registered_review.json)
+
+All nine revised pages passed original parser, glyph, word-wrap, bounds and pagination checks. An ordinary emulator run reached all nine through the original widgets. The Military Investment backlink and Help history returned to the expected full pages. The test covers the Help screens. Hardware and new transaction tests were outside this pass. [Emulator and native pages](../releases/all_routes_editorial_20261120_palace_help_candidate/verification)
+
+Six startup holds, 24 protected name getters and 17 focused tests passed. The clean-input patch reconstructs the cumulative candidate exactly. The ledger retains 27,700 credited reviews and 276 stored shared records to classify. [Candidate and patch](../releases/all_routes_editorial_20261120_palace_help_candidate/README.md)

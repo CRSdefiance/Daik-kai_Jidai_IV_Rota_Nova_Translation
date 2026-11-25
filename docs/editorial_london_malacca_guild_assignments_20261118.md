@@ -1,0 +1,11 @@
+# London and Malacca guild assignments
+
+Reviewed 151 records in 19 blocks over the four routes. Rafael's ruins riddle now repeats the same clue throughout his deductions. Hodram's guildmaster sounds wary and familiar while reporting the sea creature. Lil's delivery keeps both the 200 barrels and the two-hold measure. Maria's loan preserves the two handovers, the month-long wait and the 20,000 gold reward. The ledger records 40 revisions and 111 justified retentions. [Exact review ledger](../releases/all_routes_editorial_20261118_london_malacca_guild_assignments_candidate/verification/registered_review.json)
+
+All 40 revised records use one page each, including two speakerless notices. Native checks covered 61 pages with name-width examples. The final visual adjustments removed short overflow pages from the guildmaster's account and the latitude clue. The original speaker controls, aliases, branch destinations and runtime substitutions remain intact. [Final layout pages](../releases/all_routes_editorial_20261118_london_malacca_guild_assignments_candidate/verification/before_after_1.png)
+
+The initialized Rafael replay matched 16 original dialogue pages, including Castor in the summons, Rafael in the latitude clue, and the change from the quoted riddle to the crew's deduction. The other routes and unvisited alternatives received offline checks. Natural activation and hardware remain unverified. [Rafael replay](../releases/all_routes_editorial_20261118_london_malacca_guild_assignments_candidate/verification/live_1.png)
+
+The clean-input patch reconstructs the exact candidate. All 114 accepted layers and the ASCII right-bound correction carry forward. Six cold-boot holds, 24 protected name getters and 32 targeted tests passed. The 151 records already had credit, so the total remains 27,700 with 276 shared keys still open. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261118_london_malacca_guild_assignments_candidate/README.md)
+
+The next packet pairs 259 records in the jungle and cave sequences at SC0 B301, SC1 B291, SC2 B288 and SC3 B259. The contextual review for those four sequences is pending. [Paired source packet](../work/jungle_caves_source_20261118/paired_source.json)

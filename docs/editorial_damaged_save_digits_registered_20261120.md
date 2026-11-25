@@ -1,0 +1,7 @@
+# Continue checksum warning
+
+The slot number now uses the regular English font in **“1: This save is corrupted and could not be loaded.”** The established wording conveys both the corruption and the failed load in plain English. The original checksum branch still selects the warning, and the original two-line layout remains intact. [Exact source and current decisions](../releases/all_routes_editorial_20261120_damaged_save_digits_candidate/verification/registered_review.json)
+
+Paired cold-boot emulator runs used the same copy of a battery save with a single checksum-breaking bit flipped. The complete warning and the return to the save selection and title matched the expected screens. Offline tests executed 256 representable input bytes through native message preparation and independently verified all glyphs and bounds in 13 representative native renders. Hardware was outside this pass. [Emulator comparison](../releases/all_routes_editorial_20261120_damaged_save_digits_candidate/verification/continue_comparison.png) · [Native pages](../releases/all_routes_editorial_20261120_damaged_save_digits_candidate/verification/native_digits.png)
+
+Six startup frames, 24 protected getters and 30 focused tests passed. Two optional historical tests skipped. The clean-input patch recreates the cumulative candidate byte for byte. The separate stored COMMON 117 entry remains in the 276-key display-owner worklist. Dialogue credit remains 27,700. [Candidate and patch](../releases/all_routes_editorial_20261120_damaged_save_digits_candidate/README.md)

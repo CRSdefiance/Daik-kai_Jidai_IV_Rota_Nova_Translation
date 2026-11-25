@@ -1,0 +1,7 @@
+# Captain-name glyph correction registered
+
+Rafael’s edited name and the older saved name both use regular-width Latin letters in the tested editor, dialogue, nameplate and Save and Continue menus. The original field sizes, kana, story controls and wording remain intact. The two games loaded from copied saves without changing those copies. [Ordinary replay](../releases/all_routes_editorial_20261119_captain_name_latin_candidate_v2/verification/ordinary_glyph_verification.json) · [Before and after](../releases/all_routes_editorial_20261119_captain_name_latin_candidate_v2/verification/name_glyph_comparison.png)
+
+The four hook sites and the new SDK autoload preserve the original late-copy payload and arena reservations. Six startup holds, 24 protected name getters and seven paired Gallery frames matched. Live ITCM confirmed both the overlay and the adjacent autoload remained exact during Gallery navigation. Forty-nine focused repository tests passed, with two optional historical fixtures skipped. [Startup and Gallery checks](../releases/all_routes_editorial_20261119_captain_name_latin_candidate_v2/verification/own_startup_verification.json)
+
+The clean-input patch reconstructs the candidate byte for byte. The ledger still credits 27,700 reviews, with 276 shared keys open. Hardware testing and promotion acceptance remain open. [Candidate and patch](../releases/all_routes_editorial_20261119_captain_name_latin_candidate_v2/README.md)

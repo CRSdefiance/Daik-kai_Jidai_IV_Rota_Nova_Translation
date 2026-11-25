@@ -1,0 +1,11 @@
+# Rafael's North Sea, Africa and Indian Ocean exchanges
+
+Reviewed 146 records in nine complete exchanges, with 34 wording revisions, four wrap-only revisions and 108 justified retentions. Rafael wonders whether Sera is a princess. Fernan's appointment gift lands as a joke at Rafael's expense, and the crew members keep their distinct responses. Arcadius's visit to Emilio follows Claudio's change of heart. Uddin leaves the location clue and identification of the Rigveda appropriately tentative. [Exact source and registered decisions](../releases/all_routes_editorial_20261121_rafael_north_sea_africa_candidate/verification/registered_review.json)
+
+Native checks verified all 38 revised pages and six name-width cases. Visual review led to four final refinements. Two initialized emulator excerpts verified 13 revised panels, Fernan's full nameplate, Rafael's surname substitution, the item card, the return to the departure notice after B55 and Julio's follow-up after B58. The other 25 revised panels received offline checks. Natural triggers and hardware remain unverified. [Native and emulator evidence](../releases/all_routes_editorial_20261121_rafael_north_sea_africa_candidate/verification)
+
+Six startup holds, 24 protected name getters, 17 focused tests and exact clean-input reconstruction passed. These 146 records already carried editorial credit. [Testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_north_sea_africa_candidate/README.md)
+
+Block 60's 103 records, including both choice menus, are paired to this candidate. The stored block and the exact record bytes match the previous pairing. The contextual review of that full sequence is next. [Spain sequence](../work/analysis/rafael_north_sea_africa_followup_20261121/spain_B60/paired_source.json)
+
+The Drive download matches this candidate's SHA-256. It is the folder's only `.nds`. Checkpoint cleanup removed 118 redundant files totaling 404,339,957 bytes. [Latest Build on Google Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) · [Drive verification](../out/rafael_north_sea_africa_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_north_sea_africa_registered_20261121/checkpoint_cleanup.json)

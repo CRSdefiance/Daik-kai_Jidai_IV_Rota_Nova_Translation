@@ -1,0 +1,11 @@
+# Ruin clues and map guides
+
+Reviewed 350 records in 20 blocks across the four routes. The ledger records 79 revisions and 271 retentions. Rafael's guide keeps the map requirement clear. Lil's Angkor conversations retain the inscription's exact clue. Hodram's search keeps the testimony and the quest conditions distinct. Maria's two rewards specify gold, and the dead-end menu now says Push through or Look around. [Exact review ledger](../releases/all_routes_editorial_20261118_ruins_clues_and_guides_candidate/verification/registered_review.json)
+
+Native checks covered 69 revised progressive pages, eight speakerless notices, both captions and nine additional name-width examples. The final layouts keep the Angkor speech's closing phrase together and avoid an extra blank row on the Malacca notice. Original branch destinations, style aliases and runtime substitutions carry forward. [Final layout pages](../releases/all_routes_editorial_20261118_ruins_clues_and_guides_candidate/verification/before_after_2.png)
+
+Two initialized emulator runs showed Maria's dead-end menu. Push through led to the notice about missing sailors. Look around uncovered the path. Both led to the same arrival line. The final ROM preserves the replayed commands and runtime assets byte for byte. The earlier map gate, the other routes and unvisited variants received offline checks. Natural activation and hardware remain unverified. [Push through](../releases/all_routes_editorial_20261118_ruins_clues_and_guides_candidate/verification/live_push_2.png) [Look around](../releases/all_routes_editorial_20261118_ruins_clues_and_guides_candidate/verification/live_look_1.png)
+
+The clean-input patch reconstructs the exact candidate. All 114 accepted layers and the ASCII right-bound correction carry forward. Six cold-boot holds, 24 protected name getters and 32 targeted tests passed. The 350 records already had credit, so the total remains 27,700 with 276 shared keys still open. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261118_ruins_clues_and_guides_candidate/README.md)
+
+The next packet pairs 519 records in 16 forest, guide, desert and court-rumor blocks across the four routes. Its contextual review is pending. [Paired source packet](../work/overland_passages_source_20261118/paired_source.json)

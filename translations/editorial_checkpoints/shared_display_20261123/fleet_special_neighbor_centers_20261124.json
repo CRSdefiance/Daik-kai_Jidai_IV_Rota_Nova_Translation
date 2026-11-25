@@ -1,0 +1,432 @@
+{
+  "candidate_sha256": "6aee570bea54d980215ec0fea31db1f425edf64ef1486d0c63472303da555585",
+  "checked_code_spans": [
+    {
+      "start": 34119096,
+      "end": 34119156,
+      "sha256": "585d8c4423c1c4947588a5cacfe7f6b699c77d81ba3270eb046de93e7f3dcfa6"
+    },
+    {
+      "start": 34281572,
+      "end": 34281944,
+      "sha256": "c9ec19efa3c7bca938829b4f8b3981f187dc556aaa885551889ef304b1c15ee1"
+    },
+    {
+      "start": 34286280,
+      "end": 34286408,
+      "sha256": "73980ba48d51d7bdbfb25c4fbaf8d68ac75af3667b681c108deb69fd1e5b09a5"
+    },
+    {
+      "start": 33795572,
+      "end": 33795712,
+      "sha256": "5baa8b3dc81c967ca6a7fd35d23d664c369baf793d379965694e7f43b7bc92f3"
+    },
+    {
+      "start": 33773884,
+      "end": 33774128,
+      "sha256": "86fce6256e8ebe08f1f5a3b0d9657d99d32bec6f305af26c2d06ddde6b2c7e52"
+    },
+    {
+      "start": 34297344,
+      "end": 34297392,
+      "sha256": "57b53d176620edc5074e8ddc31534ea0967a3f5f6c0260bd289a323d278af805"
+    }
+  ],
+  "relevant_operations": {
+    "34119100": "mov r0, #7",
+    "34119108": "ldrb r0, [r3, #6]",
+    "34119128": "str r0, [r2, r1, lsl #2]",
+    "34286372": "strne r5, [sb, r7, lsl #2]",
+    "34281880": "ldr r1, [fp, r6, lsl #2]",
+    "34281908": "ldr r0, [fp, r6, lsl #2]",
+    "34281912": "str r0, [sl, r7, lsl #2]",
+    "34281660": "add r6, r6, #1",
+    "34281664": "strne r0, [sl, r7, lsl #2]",
+    "34281776": "ldrgt r0, [fp, r6, lsl #2]",
+    "34281784": "strgt r0, [sl, r7, lsl #2]",
+    "33795604": "cmp r0, #0",
+    "33795608": "ble #0x203ae38",
+    "33795616": "ldr r3, [r8, r0, lsl #2]",
+    "33795680": "cmp r0, #0",
+    "33795684": "ble #0x203ae80",
+    "33795692": "ldr r3, [r8, r0, lsl #2]",
+    "33773936": "ldrb r2, [r4, #0x3c]",
+    "33773952": "cmp r0, #0",
+    "33773976": "ldr r2, [r1, r2, lsl #2]",
+    "33774052": "ldrb r2, [r4, #0x3c]",
+    "33774068": "cmp r0, #0",
+    "33774092": "ldr r2, [r1, r2, lsl #2]"
+  },
+  "states": [
+    {
+      "state": "Registered Nagasaki startup",
+      "input_snapshot": {
+        "path": ".codex-release-work\\nagasaki_contract_wrap_20261124\\startup\\capture\\final_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "36148d54f57ff2564ddd59b03889c9dc4772c4753089fe02cc702b5fa23f4c67",
+        "read_only_export": true
+      },
+      "port_graph_sha256": "9f8b49ddbd6c1dacf324ce2b2aae718131e09bc2d3d8da540f3b45bb14faa615",
+      "tests": [
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34119096,
+          "input_arguments": [
+            36244028,
+            114,
+            37683200
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            8
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            0
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281572,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            1
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281692,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            1
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34119096,
+          "input_arguments": [
+            36244028,
+            115,
+            37683200
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            8
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            0
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281572,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            1
+          ],
+          "output_ports": [
+            0,
+            0,
+            0
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281692,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            1
+          ],
+          "output_ports": [
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        }
+      ]
+    },
+    {
+      "state": "Earlier ordinary Copenhagen docking",
+      "input_snapshot": {
+        "frame": 4400,
+        "path": ".codex-release-work\\shared_display_20261123\\copenhagen_docking_20261124\\landing\\capture\\frame_004400_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "f28057a81417cfc27f783da0eaa586607a7248cb59bd59ea1705630077d2412b",
+        "read_only_export": true
+      },
+      "port_graph_sha256": "9f8b49ddbd6c1dacf324ce2b2aae718131e09bc2d3d8da540f3b45bb14faa615",
+      "tests": [
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34119096,
+          "input_arguments": [
+            36244028,
+            114,
+            37683200
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            8
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            0
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281572,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            1
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 114,
+          "address": 36244834,
+          "bytes_read": "00009e05000000",
+          "function": 34281692,
+          "input_arguments": [
+            36527508,
+            37683200,
+            114,
+            1
+          ],
+          "output_ports": [],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34119096,
+          "input_arguments": [
+            36244028,
+            115,
+            37683200
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            8
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281812,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            0
+          ],
+          "output_ports": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281572,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            1
+          ],
+          "output_ports": [
+            0,
+            0,
+            0
+          ],
+          "complete_output_suffix_untouched": true
+        },
+        {
+          "center": 115,
+          "address": 36244841,
+          "bytes_read": "00000003000004",
+          "function": 34281692,
+          "input_arguments": [
+            36527508,
+            37683200,
+            115,
+            1
+          ],
+          "output_ports": [
+            3
+          ],
+          "complete_output_suffix_untouched": true
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "releases/all_routes_editorial_20261124_nagasaki_contract_wrap_candidate/verification/registered_release_verification.json",
+      "sha256": "971e81f22f65d6d3e5b2d024a19bd3afbf3524914946c19232f4786af59b921d"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_docking_inputs_20261124.json",
+      "sha256": "b7806fca1ee05f2223559bfb6db315a82e336ac6dd76420e98bc1cd0144dd31b"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_port_origins_20261124.json",
+      "sha256": "87116ab2e28491ba66e173af117d29c75d1cbb7002b963cdc9b6af66923cd587"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/copenhagen_docking_current_20261124.json",
+      "sha256": "209412a4c939924b68139cdb1d768236ba571abfd0ef87fb8ba2336fd1023585"
+    },
+    {
+      "path": ".codex-release-work/nagasaki_contract_wrap_20261124/startup/capture/capture_report.json",
+      "sha256": "10ae0464b1d987c08d9ff022c03203ecc93a597a558fe13cc6d966b9bad66f25"
+    }
+  ],
+  "scope": "Native isolated lookups and exact resident code evidence. The original filters only retain values supplied by the neighbor reader. The special center produces no candidate. The no-target center reads the adjacent edge data and yields only ports 0 or 3 in these initialized states.",
+  "unresolved": "Initial/reloaded raw docking and headquarters byte producers and ordinary arrival into these conditional branches remain open.",
+  "actual_gameplay_added": false,
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

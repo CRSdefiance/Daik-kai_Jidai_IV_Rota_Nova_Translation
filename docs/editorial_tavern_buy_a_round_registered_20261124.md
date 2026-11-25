@@ -1,0 +1,9 @@
+# Buy a Round in the Tavern
+
+**Buy a Round** matches the Japanese command for paying for drinks for the room. The Tavern index and article use the same wording. Recruit Crew Help keeps “Buy a round first” together. The other three menu actions and three related Help articles retain their wording. [Exact source, previous and installed records](../releases/all_routes_editorial_20261124_tavern_buy_a_round_candidate/verification/registered_review.json)
+
+Ordinary Copenhagen play showed the complete caption and highlight, the original 236-gold quote and deduction, the announcement, the gossip and return to town. Nine surrounding holds match the earlier replay pixel for pixel. All three revised Help pages passed native bounds and glyph checks. The replay opened Help with Select from town, reached Assign Sailors through the original links and verified three history returns. [Tavern replay](../releases/all_routes_editorial_20261124_tavern_buy_a_round_candidate/verification/tavern_round_paired_1_20261123.png) · [Help replay](../releases/all_routes_editorial_20261124_tavern_buy_a_round_candidate/verification/readable_actual_sheet_1.png)
+
+The cumulative build passed startup, 456 release checks and 17 focused tests. The patch reconstructs the candidate byte for byte from the clean ROM. [Testing build and patch](../releases/all_routes_editorial_20261124_tavern_buy_a_round_candidate/README.md)
+
+The sole `.nds` in the Drive folder returned the registered SHA-256 when streamed back. Cleanup removed the byte-identical reconstruction and eight duplicate test saves, totaling 62,660,312 bytes. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/tavern_buy_a_round_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/tavern_buy_a_round_cleanup_20261124.json)

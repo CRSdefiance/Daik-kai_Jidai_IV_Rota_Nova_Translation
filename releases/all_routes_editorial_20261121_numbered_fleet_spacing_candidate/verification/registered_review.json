@@ -1,0 +1,444 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "context",
+    "formatting",
+    "localization",
+    "naturalness",
+    "source"
+  ],
+  "records": [
+    {
+      "id": "FLEET_NAME_135250",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Numbered fleet label",
+      "context": "The Route Map shows a fleet in the header and shows its name beside its marker. Numbered fleets identify their faction plus their ordinal.",
+      "source_meaning": "Join the owning faction name and the original numbered fleet label in that order.",
+      "previous_English": "%s%s",
+      "english": "%s %s{PAD}",
+      "localization_note": "Insert a single word space between the two independent names. Keep the order, internal spaces, ordinal and native full-width digits.",
+      "source_reference": {
+        "offset": 1266256,
+        "command_offset": 224080,
+        "exact_hex": "2573257300000000"
+      },
+      "current_reference": {
+        "offset": 1266256,
+        "command_offset": 224080,
+        "exact_hex": "2573257300000000"
+      },
+      "staged_reference": {
+        "offset": 1266256,
+        "command_offset": 224080,
+        "exact_hex": "2573202573000000"
+      },
+      "review": {
+        "context": true,
+        "formatting": true,
+        "localization": true,
+        "naturalness": true,
+        "source": true
+      },
+      "decision": "revision",
+      "registered_reference": {
+        "offset": 1266256,
+        "command_offset": 224080,
+        "exact_hex": "2573202573000000",
+        "candidate_sha256": "9a31ae5c02727c5741f7b9fa6e19feb46f7c65e1b305625a05300a205c7552af"
+      }
+    }
+  ],
+  "predecessor_sha256": "30ccbfb57d02dbcfbd2953773c6108e1f59fe3b1952018ce41b2cdffd666fb3b",
+  "candidate_sha256": "9a31ae5c02727c5741f7b9fa6e19feb46f7c65e1b305625a05300a205c7552af",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "548b0477041e73da15e8e892742fad3226f66871a6afeaccac4b356b47813372",
+  "complete_parent_inverse": true,
+  "affected_snapshot_labels": 38,
+  "existing_getter_results": [
+    {
+      "index": 0,
+      "before": "Castor Co.Fleet １",
+      "after": "Castor Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 1,
+      "before": "Hodram Fleet",
+      "after": "Hodram Fleet",
+      "changed": false
+    },
+    {
+      "index": 2,
+      "before": "Argot Co.Fleet １",
+      "after": "Argot Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 3,
+      "before": "Li ClanFleet １",
+      "after": "Li Clan Fleet １",
+      "changed": true
+    },
+    {
+      "index": 4,
+      "before": "CliffordFleet １",
+      "after": "Clifford Fleet １",
+      "changed": true
+    },
+    {
+      "index": 5,
+      "before": "Speyer Co.Fleet １",
+      "after": "Speyer Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 6,
+      "before": "AlbuquerqueFleet １",
+      "after": "Albuquerque Fleet １",
+      "changed": true
+    },
+    {
+      "index": 7,
+      "before": "ValdesFleet １",
+      "after": "Valdes Fleet １",
+      "changed": true
+    },
+    {
+      "index": 8,
+      "before": "Centurione Co.Fleet １",
+      "after": "Centurione Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 9,
+      "before": "PashaFleet １",
+      "after": "Pasha Fleet １",
+      "changed": true
+    },
+    {
+      "index": 10,
+      "before": "Hayreddin ClanFleet １",
+      "after": "Hayreddin Clan Fleet １",
+      "changed": true
+    },
+    {
+      "index": 11,
+      "before": "Silveira Co.Fleet １",
+      "after": "Silveira Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 12,
+      "before": "Espinosa Co.Fleet １",
+      "after": "Espinosa Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 13,
+      "before": "Uddin Co.Fleet １",
+      "after": "Uddin Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 14,
+      "before": "Nagarpur Co.Fleet １",
+      "after": "Nagarpur Co. Fleet １",
+      "changed": true
+    },
+    {
+      "index": 15,
+      "before": "PereiraFleet １",
+      "after": "Pereira Fleet １",
+      "changed": true
+    },
+    {
+      "index": 16,
+      "before": "KuhnFleet １",
+      "after": "Kuhn Fleet １",
+      "changed": true
+    },
+    {
+      "index": 17,
+      "before": "KurushimaFleet １",
+      "after": "Kurushima Fleet １",
+      "changed": true
+    },
+    {
+      "index": 18,
+      "before": "MaldonadoFleet １",
+      "after": "Maldonado Fleet １",
+      "changed": true
+    },
+    {
+      "index": 19,
+      "before": "EscanteFleet １",
+      "after": "Escante Fleet １",
+      "changed": true
+    },
+    {
+      "index": 20,
+      "before": "CliffordFleet ２",
+      "after": "Clifford Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 21,
+      "before": "CliffordFleet ３",
+      "after": "Clifford Fleet ３",
+      "changed": true
+    },
+    {
+      "index": 22,
+      "before": "AlbuquerqueFleet ２",
+      "after": "Albuquerque Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 23,
+      "before": "Espinosa Co.Fleet ２",
+      "after": "Espinosa Co. Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 24,
+      "before": "ValdesFleet ２",
+      "after": "Valdes Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 25,
+      "before": "ValdesFleet ３",
+      "after": "Valdes Fleet ３",
+      "changed": true
+    },
+    {
+      "index": 26,
+      "before": "PereiraFleet ２",
+      "after": "Pereira Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 27,
+      "before": "Hayreddin ClanFleet ２",
+      "after": "Hayreddin Clan Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 28,
+      "before": "PashaFleet ２",
+      "after": "Pasha Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 29,
+      "before": "PashaFleet ３",
+      "after": "Pasha Fleet ３",
+      "changed": true
+    },
+    {
+      "index": 30,
+      "before": "Uddin Co.Fleet ２",
+      "after": "Uddin Co. Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 31,
+      "before": "KuhnFleet ２",
+      "after": "Kuhn Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 32,
+      "before": "KuhnFleet ３",
+      "after": "Kuhn Fleet ３",
+      "changed": true
+    },
+    {
+      "index": 33,
+      "before": "KurushimaFleet ２",
+      "after": "Kurushima Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 34,
+      "before": "EscanteFleet ２",
+      "after": "Escante Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 35,
+      "before": "ValdesFleet ４",
+      "after": "Valdes Fleet ４",
+      "changed": true
+    },
+    {
+      "index": 36,
+      "before": "EscanteFleet ３",
+      "after": "Escante Fleet ３",
+      "changed": true
+    },
+    {
+      "index": 37,
+      "before": "MaldonadoFleet ２",
+      "after": "Maldonado Fleet ２",
+      "changed": true
+    },
+    {
+      "index": 38,
+      "before": "CliffordFleet ４",
+      "after": "Clifford Fleet ４",
+      "changed": true
+    },
+    {
+      "index": 39,
+      "before": "Pirate Monster",
+      "after": "Pirate Monster",
+      "changed": false
+    },
+    {
+      "index": 40,
+      "before": "Pirate Jacks",
+      "after": "Pirate Jacks",
+      "changed": false
+    },
+    {
+      "index": 41,
+      "before": "Pirate Julian",
+      "after": "Pirate Julian",
+      "changed": false
+    },
+    {
+      "index": 42,
+      "before": "Pirate Yuris",
+      "after": "Pirate Yuris",
+      "changed": false
+    },
+    {
+      "index": 43,
+      "before": "Pirate Plett",
+      "after": "Pirate Plett",
+      "changed": false
+    },
+    {
+      "index": 44,
+      "before": "Pirate Jean",
+      "after": "Pirate Jean",
+      "changed": false
+    },
+    {
+      "index": 45,
+      "before": "Pirate Gabriel",
+      "after": "Pirate Gabriel",
+      "changed": false
+    },
+    {
+      "index": 46,
+      "before": "Pirate Jacob",
+      "after": "Pirate Jacob",
+      "changed": false
+    },
+    {
+      "index": 47,
+      "before": "Pirate Peralonso",
+      "after": "Pirate Peralonso",
+      "changed": false
+    },
+    {
+      "index": 48,
+      "before": "Pirate Zaganos",
+      "after": "Pirate Zaganos",
+      "changed": false
+    },
+    {
+      "index": 49,
+      "before": "Pirate William",
+      "after": "Pirate William",
+      "changed": false
+    }
+  ],
+  "proof_uses_ordinary_read_only_replay_snapshot": true,
+  "original_screenshot": {
+    "frame": 5960,
+    "path": "out\\stockholm_december_gameplay_20261121\\capture\\frame_005960_navigation.png",
+    "dimensions": [
+      256,
+      384
+    ],
+    "pixel_format": 2,
+    "PNG_sha256": "1965edb7453837f24e2c16388c030320a1a77c002a65aed50e8bbed29bcf533d",
+    "framebuffer_sha256": "cf728b3b5b39acdadd67e767a8d52f7310ce2154b31c7faf9a9f08f534446331"
+  },
+  "evidence": {
+    "out\\stockholm_december_gameplay_20261121\\capture\\capture_report.json": "6cf755b165b55ed6f9a22c0e59ef8605d317f7474b028a83701b5ce6e7504e79",
+    "out\\stockholm_december_gameplay_20261121\\capture\\final_arm9_ram.bin": "27096e0b3f8665bb42de85aff14d31c85c166f9351e9b130d7d464e6f14d5cd5"
+  },
+  "status": "registered",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "direct_visual_review": {
+    "out\\numbered_fleet_spacing_20261121\\actual_map\\fleet_header_and_marker.png": "fc80c8fb540faa11f9405a573be5aae25d307f646217fe4fcf42128d0c5a2096"
+  },
+  "native_and_replay_evidence": "out\\numbered_fleet_spacing_20261121\\actual_map\\verified_map.json",
+  "shared_storage_scope": {
+    "pending_records": 276,
+    "exact_payloads_and_locations": true,
+    "evidence_sha256": "153e37be4b02932f02edd037aac2fc52407848a7b30eae8800e664be72a0d4b9"
+  }
+}

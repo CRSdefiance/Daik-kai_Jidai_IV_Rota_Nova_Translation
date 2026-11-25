@@ -1,0 +1,7 @@
+# All Routes Sailing Hazards and Dolphins candidate
+
+Use [Translation_DS_All_Routes_Sailing_Hazards_and_Dolphins_20261111_candidate.nds](../../out/sailing_hazards_and_dolphins_registered_20261111_v1/Translation_DS_All_Routes_Sailing_Hazards_and_Dolphins_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `0f65ec350f0ce5e179e1d769effc130bdf5376ab9320c631cd329d7c31a6fd0a`. Patch SHA-256 `9a930a6dd4baf86fb6568ea78af74ebc3364349f7c76883dfea2f7befc710094`.
+
+All 59 dolphin and sailing hazard records are registered. The ledger now credits 27,524 reviews. The 37 revisions and 22 justified retentions preserve the four captains’ distinct replies, standardize “ship’s log,” restore the sailors’ reactions to the Sirens’ voices and retain the danger or humor of each hazard report.
+
+The focused emulator replay observed the request, Hodram’s reply, the farewell and the next sailing report after supplying one fleet condition. Other captains and hazard variants received offline checks. All 59 pages received native and visual review. Cold boot, 24 protected name getters, 34 targeted tests and 108 release checks passed. [Gameplay](verification/sailing_hazards_and_dolphins_gameplay_verification.json) · [Exact records](verification/registered_review.json)

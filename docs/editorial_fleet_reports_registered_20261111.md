@@ -1,0 +1,7 @@
+# Fleet reports registered
+
+All 47 fleet reports are registered. The ledger now credits 27,226 reviews. COMMON 2533–2579 covers nine original tables and caller sites. All 47 templates passed the original loader checks. The 89 native portrait cases check both name fields, company labels, zero, one and the largest signed gold amount. The two finance tables use a bounded copy of the expanded text to display narrow digits. Fifteen scoped controls confirmed fallback for other text and selectors. [Exact records](../releases/all_routes_editorial_20261111_fleet_reports_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_fleet_reports_candidate/README.md)
+
+The original month-end prompt, loss report and return to sailing ran without a new fixture. The second replay changed one company funds field to reach the shortfall branch. It verified the 591-gold carryover, warning and return. Fleet encounter and outcome dialogue received offline native and visual checks.
+
+750 shared native keys remain to review or classify. Continue from COMMON 2580 with city surrender and bombardment, then the combat notices. Bind city and ship name substitutions to their actual callers and reuse the relevant native proofs. Legacy New Game 104–107 and Market 750–752 still need consumer classification. Other UI prose, earlier wraps and glyphs, names and roles, and practical town and random-scene coverage remain in scope. Deferred artwork and the later older-record technical re-audit remain separate.

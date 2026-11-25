@@ -1,0 +1,7 @@
+# Rafael’s sailing controls and the Athens conversation
+
+The 45 decisions cover Julio’s explanations of full sail, half sail, anchoring, trimming and the promise to Hayreddin. Twenty-five revisions preserve the original A/B and L/R controls and keep related instructions together. Twenty rows retain their exact wording for individual reasons. All 25 revised pages passed native bounds and glyph checks. All 41 previews, including maximum-width first names, were reviewed visually. [Per-record ledger](../releases/all_routes_editorial_20261119_rafael_sail_controls_candidate/verification/registered_review.json)
+
+The initial emulator replay used the original New Game prelude and the exact lesson commands in an isolated test entry. It verified 43 complete dialogue panels and ran the original end command. A later ordinary departure from Lisbon verified 44 panels and the return to Sea View. One conditional line remains unvisited in gameplay. Hardware display remains unverified. [Initial replay](../releases/all_routes_editorial_20261119_rafael_sail_controls_candidate/verification/live_display.json) · [Ordinary departure](editorial_rafael_sailing_lisbon_gameplay_20261121.md)
+
+The clean-input patch reconstructs the candidate byte for byte. Six startup frames, 24 protected name getters and 49 focused tests passed. Two optional historical fixtures skipped. The ledger remains at 27,700 credited reviews and 276 open shared entries. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_sail_controls_candidate/README.md)

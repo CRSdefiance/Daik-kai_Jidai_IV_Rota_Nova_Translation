@@ -1,0 +1,5 @@
+# Crew role labels in the registered Sound Setup candidate
+
+The original Sailor Info caller at `0x0207D8D4` still uses the shared role selector at `0x02086314`. The selector reads its table pointer at `0x02086334`. The clean pointer is `0x021197A0` and the registered pointer is `0x023889C8`. The registered startup snapshot contains all 16 approved English roles, including First Mate, Sail Handler and Missionary. [Exact source, current and initialized string references](../translations/editorial_checkpoints/shared_display_20261123/crew_role_storage_current_20261123.json)
+
+Offline execution selected every role in both images and confirmed the original zero return for five invalid indices in each. The old Japanese table still exists in storage. The loaded components contain zero aligned references to its pointer fields. The earlier Stockholm Sailor Info replay and the two native color-mode checks cover the original visible selector. Other indirect consumers and deck-assignment stat highlighting remain outside the scope of this check. [Prior localization and render evidence](crew_roles_v326.md)

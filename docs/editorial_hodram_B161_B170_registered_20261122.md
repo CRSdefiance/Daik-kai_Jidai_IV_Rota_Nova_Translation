@@ -1,0 +1,7 @@
+# Hodram's ship and tavern encounters
+
+Reviewed 270 records from the clean Japanese and carried forward 41 exact decisions from Cesare's ship lesson. The new pass revises 103 turns, improves one wrap without changing the words, and records 166 individual retentions. The scenes include Cristina's dance, Samwell's pitch, Jam's return with the ship, the reunion with the Elysion, Fernando's wager, and both paths where Julio joins. The 16 reviewed nameplates keep their established forms, including the fixed Rafael selector and Fernando's normal-width F. [Exact sources and decisions](../releases/all_routes_editorial_20261122_hodram_B161_B170_candidate/verification/registered_review.json)
+
+Native checks cover 550 commands, seven speakerless panels, eight choice captions and 104 revised pages. The focused emulator replay matches 59 speech pages and eight highlights across four menus. It also verifies the original mixed glyphs in Cesare's stunned reaction, the Rafael and Gerhard turns, two pages of Cesare's lesson, and the transition after Gerhard interrupts Julio. The original world triggers, ensuing branch behavior and hardware remain unvisited. [Offline and emulator evidence](../releases/all_routes_editorial_20261122_hodram_B161_B170_candidate/verification)
+
+The registered build preserves 114 accepted layers and the ASCII right-bound correction. The clean-input patch rebuilt the candidate exactly. Its startup comparison and 17 regression tests passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B161_B170_candidate/README.md)

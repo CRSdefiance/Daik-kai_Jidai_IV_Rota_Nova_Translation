@@ -1,0 +1,7 @@
+# Rafael's Tavern recruitment lesson
+
+All seven Julio turns were reviewed against clean Japanese. Five revisions explain getting underway, treating the room, finding enough sailors, assigning them and the cost of hiring beyond what the fleet needs. The exact Recruit Crew wording and Julio's final invitation are retained with individual reasons. [Source and current references](../releases/all_routes_editorial_20261119_rafael_tavern_lesson_candidate_v2/verification/registered_review.json)
+
+Two cold boots from the preserved Lisbon save triggered the original Tavern lesson. All seven panels and Julio nameplates matched the native renderer in both builds. The revised replay chose Recruit Crew, applied Flagship in Assign Sailors, accepted the unassigned crew prompt and returned to the Tavern menu. [First three revisions](../releases/all_routes_editorial_20261119_rafael_tavern_lesson_candidate_v2/verification/recruitment_comparison_1.png) · [Last two revisions](../releases/all_routes_editorial_20261119_rafael_tavern_lesson_candidate_v2/verification/recruitment_comparison_2.png)
+
+Only Rafael's Tavern lesson changes. The patch reconstructs the candidate from the clean ROM byte for byte. Six startup holds, 24 protected name getters and 49 focused tests passed. Two historical fixtures skipped. The 276 pending shared records carry forward. Hardware testing remains open. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_tavern_lesson_candidate_v2/README.md)

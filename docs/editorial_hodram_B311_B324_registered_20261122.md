@@ -1,0 +1,7 @@
+# Hodram's final SC1 exchanges
+
+Reviewed 400 records from clean Japanese. The batch revises 75, records 324 wordings that stay as written, and repairs the injury notice's long-name wrap. The old panel split "spend" at 15 and 16 name cells. Both sentences now keep complete words at all supported widths. Four earlier lines gain fuller opening rows. Another 186 decisions carry forward with exact references. [Exact source and current records](../releases/all_routes_editorial_20261122_hodram_B311_B324_candidate/verification/registered_review.json)
+
+Native checks cover 711 commands, 21 speakerless panels, 366 crew alternatives in 58 objects, 22 menu captions, 13 names and 80 changed pages. Initialized emulator excerpts cover 59 dialogue pages and 15 menu highlights. They verify the Rafael and Lil nameplates, the injury notice at the default name width and three earlier wrap fixes. Long alternate names, other personality slots, and the earlier map-question wrap were checked offline. Optional natural triggers and hardware remain unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261122_hodram_B311_B324_candidate/verification)
+
+The cumulative candidate preserves 114 accepted layers and the ASCII right-bound correction. Startup and 17 regression tests passed. The clean-input patch reconstructed the candidate byte for byte. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B311_B324_candidate/README.md)

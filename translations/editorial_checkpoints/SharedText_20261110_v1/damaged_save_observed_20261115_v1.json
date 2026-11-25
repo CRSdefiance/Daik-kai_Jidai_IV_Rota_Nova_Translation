@@ -1,0 +1,118 @@
+{
+  "candidate_sha256": "6ea8e2391e0034356491c0eef18df38f7f29fa94aad4c23fda4ae4cce77f6e39",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "visible_owner": {
+    "id": "DAMAGED_SAVE_MESSAGE_SUFFIX",
+    "file_path": "/__arm9__.bin",
+    "source_offset": 1239884,
+    "current_offset": 1239884,
+    "native_pointer_field": 976848,
+    "allocation": 52,
+    "source_Japanese": "番のセーブデータは壊れています\n読み込めませんでした",
+    "source_hex": "94d482cc835a815b83758366815b835e82cd89f382ea82c482a282dc82b70a93c782dd8d9e82df82dc82b982f182c582b582bd",
+    "source_meaning": "The save data in the numbered slot is corrupted and could not be loaded.",
+    "english": ": This save is corrupted and could not be loaded.",
+    "current_hex": "3a2054686973207361766520697320636f727275707465640a2020616e6420636f756c64206e6f74206265206c6f616465642e",
+    "decision": "retention",
+    "speaker": "System notice",
+    "context": "After a confirmed Continue selection fails the original slot checksum.",
+    "localization_note": "The original slot number and two full clauses give the cause and result. The wrap follows corrupted and leaves the second clause whole.",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": true
+    }
+  },
+  "legacy_record": {
+    "id": "COMMON_MESSAGE_117",
+    "message_ID": 117,
+    "file_path": "/COMMON/MESFILE.DK4",
+    "source_reference": {
+      "block": 1,
+      "offset": 856,
+      "copy_end": 888,
+      "bytes": 29,
+      "record_index": 7,
+      "table_offset": 1317370,
+      "start_in_record": 2
+    },
+    "current_reference": {
+      "block": 1,
+      "offset": 746,
+      "copy_end": 778,
+      "bytes": 29,
+      "record_index": 8,
+      "table_offset": 1317370,
+      "start_in_record": 2
+    },
+    "source_hex": "8351815b83808366815b835e82aa0a89f382ea82c482a282dc82b78142",
+    "current_hex": "47616d6520646174610a2020636f72727570742e202020202020202020",
+    "source_Japanese": "ゲームデータが\n壊れています。",
+    "current_English": "Game data\n  corrupt.         ",
+    "english": "The game data is corrupted.",
+    "speaker": "System notice",
+    "context": "The legacy notice names game data and reports corruption.",
+    "source_meaning": "The game data is corrupted.",
+    "decision": "draft revision",
+    "localization_note": "Use a complete sentence. The legacy source gives no slot number or separate failed-load statement.",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": false
+    },
+    "display_in_checksum_error": false,
+    "other_consumers_pending": true
+  },
+  "native_branch": {
+    "frame": 3640,
+    "PC": 34531164,
+    "slot": 0,
+    "calculated": 535187,
+    "stored": 535186
+  },
+  "native_modal": {
+    "frame": 3640,
+    "PC": 34531200,
+    "body_hex": "82503a2054686973207361766520697320636f727275707465640a2020616e6420636f756c64206e6f74206265206c6f616465642e",
+    "pointer": 35175696
+  },
+  "actual_COMMON_calls": [],
+  "full_glyph_masks": [
+    {
+      "frame": 3700,
+      "independent_ink_pixels": 489
+    },
+    {
+      "frame": 3800,
+      "independent_ink_pixels": 489
+    }
+  ],
+  "original_slot_list_return_frames": [
+    4200,
+    4400
+  ],
+  "title_return_frame": 4700,
+  "actual_emulator_coverage": "Original UI, load and dismissal with a disposable one-bit checksum fixture.",
+  "evidence": {
+    "releases\\all_routes_editorial_20261115_expedition_report_wraps_candidate\\verification\\registered_release_verification.json": "9c48a05f9620873f573307520a61b89924e44199aeb2a6e7af867d2dd2b9279f",
+    "work\\damaged_save_20261115_v2\\checksum_fixture.json": "8aa5e5ca5dc248efb628eef3f2658206a0eb8d22a2a371b4b8dc84a3c0448d1f",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\terminal.json": "6e0c14a5b9f913079526b75222429a868abdfd339d5facc5d340d09104f97d56",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\requests.json": "df6072b3eceea8c55a2a56f37a704a92ec6e8a95671008003bdfe2604220c23b",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\capture_report.json": "99536c6b82e3acd8b49522b3a071bcd1487a38a2370156cba190ad4b8317a850",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_002600_cold_boot.png": "99e98ff8dbe98910e77d66eecc882b757ebe98bd7ecbed70e9310fe54d13d0fd",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_003700_cold_boot.png": "8c66225f5415e97c5d964eaccfe693f373edfd1768349858cc0c6aa33a6e6ac5",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_003800_cold_boot.png": "8dd195edf857cd2e8ce4f7c88fde37e25a0fa3232bbe4bcd185a209556ef3671",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_004200_cold_boot.png": "8ba9d0f36372630eb49411d60200780a6bde483dc04fcba0082cecd91be96f44",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_004400_cold_boot.png": "8ba9d0f36372630eb49411d60200780a6bde483dc04fcba0082cecd91be96f44",
+    "work\\damaged_save_20261115_v2\\corrupt_slot\\capture\\frame_004700_cold_boot.png": "756076e275d109b1e005a61ac20e6754396582bdd554cf53ffa5d101a24ad8bf"
+  },
+  "hardware": false,
+  "changed_release_bytes": false,
+  "new_dialogue_credit": 0
+}

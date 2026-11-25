@@ -1,0 +1,51 @@
+"""Current code/text/bitmap binding of8 historical battle holds,4 returns and9 negatives."""
+from pathlib import Path
+from types import FunctionType
+import struct
+from PIL import Image,ImageDraw
+from dk4tool.patch.battle_finance_editorial import current_entries as historical_entries
+from dk4tool.patch.refit_contextual_spritsail_v1 import current_entries
+from dk4tool.patch.grand_race_menu_release import sha
+from dk4tool.rom.nds import NdsImage
+from scripts.battle_finance_flags_v923 import actual_view,format_instruction
+from scripts.verify_battle_finance_gameplay_v923 import SPECS
+from scripts.verify_village_wrap_v608 import read as plan_read
+PLAN=plan_read('work/analysis/battle_finance_v923/actual_sample_frame_plan.json')['cases']
+CASES={label:(n,actor,role,PLAN[label]['baseline'],tuple(PLAN[label]['holds']),PLAN[label]['first_back'],PLAN[label]['end'])for label,(n,actor,role,owned)in SPECS.items()}
+from scripts.verify_personal_gameplay_v841 import hold as original_hold,get_machine,model_state
+from scripts.battle_finance_layout_v920 import compiled,layout
+from scripts.finish_refit_display_v712 import load
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/battle_finance_history_v2418');OLD=Path('work/analysis/battle_finance_v923/actual_gameplay_verification.json');BASE=0x02000000
+
+def rejected(action):
+ try:action()
+ except AssertionError:return True
+ raise AssertionError('Negative control was accepted')
+
+def snap(report,frame):
+ row=next(r for r in report.get('read_only_capture_RAM_snapshots',[])+report.get('read_only_pause_RAM_snapshots',[])if r['frame']==frame);raw=Path(row['path']).read_bytes();assert row['read_only_export']and sha(raw)==row['sha256'];return raw,row
+
+if __name__=='__main__':
+ assert not ROOT.exists();history=read(OLD);oldpath=Path(history['candidate']);assert sha(oldpath.read_bytes())==history['candidate_sha256'];oldrom=NdsImage.open(oldpath);rompath=Path('out/all_routes_combined_v2284_candidate.nds');rom=NdsImage.open(rompath);arm=rom.read_file('/__arm9__.bin');oldarm=oldrom.read_file('/__arm9__.bin');clean=NdsImage.open('work/clean.nds').read_file('/__arm9__.bin');entries=current_entries(rom.read_file('/COMMON/MESFILE.DK4'),arm);oldentries=historical_entries(oldrom.read_file('/COMMON/MESFILE.DK4'),oldarm);rows={r['message_id']:r for r in read('translations/battle_finance_contextual_editorial_manuscript_v1.json')['records']};assert all(entries[n].text==oldentries[n].text==compiled(r)for n,r in rows.items());assert rom.read_file('/GRP/KANJI.FNT')==oldrom.read_file('/GRP/KANJI.FNT');spans=((0x11000,0x20000),(0x3F0F8,0x3F100),(0x53914,0x53AC4),(0x7F244,0x7F268),(0x81F54,0x82E0C));assert all(arm[a:b]==oldarm[a:b]for a,b in spans);assert format_instruction(arm)==format_instruction(oldarm)==format_instruction(clean)==bytes.fromhex('0000d6e5')
+ hold=FunctionType(original_hold.__code__,{**original_hold.__globals__,'actual_view':actual_view,'layout':layout},'current_code_on_historical_repair_medical_RAM');holds=[];returns=[];controls=[];scopes=[];panels=[];return_panels=[]
+ for label,(number,actor,role,baseline,frames,first_back,end)in CASES.items():
+  receipt=next(r for r in history['terminal_capture_receipts']if Path(r['report']).parent.name.endswith('_'+label));rp=Path(receipt['report']);assert sha(rp.read_bytes())==receipt['sha256'];report,shots,verified=load(rp.parent,history['candidate_sha256'],end);assert report['cold_boot']and not report['savestate_loaded']and not report['callback_errors'];donor=report['battery_save_preloaded'];assert sha(Path(donor['source']).read_bytes())==donor['source_sha256'];fixture=report['synthetic_battle_finance_Cabin_assignment_fixtures'];coordinates=report['synthetic_battle_recovery_proximity_fixtures'];assert len(fixture)==1;fixture=fixture[0];assert fixture['actor_ID']==actor and fixture['role_type']==role and len(fixture['changes'])==(3 if SPECS[label][3]else 2)and fixture['all_other4MiB_RAM_including_battle_mode_actor_captain_health_money_calendar_RNG_text_code_exact'];assert fixture['actor_owned_in_source_save']==(SPECS[label][3])
+  for f in coordinates:assert f['action']=='approach'and len(f['owned_bytes'])==8 and f['actual_battle_mode_not_assigned_by_fixture']and f['source_helpers_unchanged']and f['no_enemy_stats_war_outcome_reward_inventory_or_resource_flags_changed']and all(c['address']in f['owned_bytes']for c in f['changes'])
+  initial,_=snap(report,4800);u,g=get_machine(arm,initial);mode=g(0x3F0F8);assert list(struct.unpack('<2I',u.mem_read(mode+8,8)))==[0,0];before,brec=snap(report,baseline);before_state=model_state(arm,before);captain_bytes=None;row={**rows[number],'actor_ID':actor}
+  for frame in frames:
+   raw,rrec=snap(report,frame);u,g=get_machine(arm,raw);mode=g(0x3F0F8);assert list(struct.unpack('<2I',u.mem_read(mode+8,8)))==[0,1]and g(0x7F244)==1;case=hold(rom,raw,shots[frame],row,12);assert case['source_role_type']==role and case['native_image_header_first_word_with_flags_preserved']==0x0E04 and model_state(arm,raw)==before_state;captain=g(0xCB184)+struct.unpack_from('<I',arm,0x1229C)[0];current=raw[captain-BASE:captain-BASE+32]
+   if captain_bytes is None:captain_bytes=current
+   assert current==captain_bytes;case.update(case=label,frame=frame,historical_V922_capture_current_code_text_and_pixels_bound=True,source_RAM=rrec,source_report=verified,original_battle_mode_not_injected_by_fixture=True,not_new_current_gameplay=True);holds.append(case);panel=Image.new('RGB',(256,412),'#263238');ImageDraw.Draw(panel).text((4,4),f'Historical V922 {label} {frame}',fill='white');panel.paste(shots[frame],(0,28));panels.append(panel)
+  back,_=snap(report,first_back);after,arec=snap(report,end);assert model_state(arm,back)==before_state and rejected(lambda:actual_view(after));after_state=model_state(arm,after);assert after_state['funds']==before_state['funds']and after_state['all31_original_occupant_bytes']==before_state['all31_original_occupant_bytes']and after_state['calendar_tick']>before_state['calendar_tick'];returns.append(dict(case=label,first_back=first_back,return_frame=end,UI_open_and_first_back_scoped_state_equal=True,actual_captain32_bytes_equal_between_holds=True,assignments_and_funds_unchanged_on_return=True,original_battle_time_resumes=True,world_ship_and_RNG_not_claimed_frozen_after_combat_resumes=True,return_RAM=arec));panel=Image.new('RGB',(256,412),'#263238');ImageDraw.Draw(panel).text((4,4),f'Historical V922 {label} return',fill='white');panel.paste(shots[end],(0,28));return_panels.append(panel)
+  raw,_=snap(report,frames[0]);view,parent,res,h=actual_view(raw);bad=bytearray(raw);struct.pack_into('<I',bad,res-BASE,(h[0]&0xFFFFFF00)|5);assert rejected(lambda:actual_view(bytes(bad)));controls.append(dict(case=label,negative='wrong-format-low-byte',rejected=True,offline_clone_only=True));lines=layout(row['english']);cells=[(0,0,'deleted-initial-glyph'),(len(lines)-1,len(lines[-1])-1,'deleted-final-punctuation')]+([(1,0,'deleted-report-second-row-w'),(2,0,'deleted-report-third-row-w')]if label=='YukihisaFinance'else[])
+  for line,column,name in cells:
+   bad=bytearray(raw);start=((res+h[4])&0xFFFFFFFF)-BASE
+   for y in range(60+line*12,71+line*12):bad[start+y*126+column*3:start+y*126+column*3+3]=b'\0'*3
+   assert rejected(lambda:hold(rom,bytes(bad),shots[frames[0]],row,12));controls.append(dict(case=label,negative=name,rejected=True,offline_clone_only=True))
+  scopes.append(dict(case=label,report=str(rp),report_sha256=sha(rp.read_bytes()),source_battery=donor['source'],source_battery_sha256=donor['source_sha256'],historical_room_type_occupant_fixture=fixture,historical_source_terrain_checked_coordinate_approaches=coordinates,no_battle_mode_health_actor_captain_code_text_enemy_outcome_or_reward_fixture=True,not_earned_assignment_refit_recruitment_travel_or_current_gameplay=True))
+ assert len(holds)==6 and {h['message_id']for h in holds}=={1670,1675,1678}and len(returns)==3 and len(controls)==11;ROOT.mkdir(parents=True);sheet=Image.new('RGB',(768,824),'#263238')
+ for i,panel in enumerate(panels):sheet.paste(panel,(i//2*256,i%2*412))
+ p=ROOT/'historical_battle_finance6_sheet.png';sheet.save(p);back=Image.new('RGB',(768,412),'#263238')
+ for i,panel in enumerate(return_panels):back.paste(panel,(i*256,0))
+ b=ROOT/'historical_three_battle_returns.png';back.save(b);save(ROOT/'historical_battle_current_binding.json',dict(candidate=str(rompath),candidate_sha256=sha(rompath.read_bytes()),ARM9_sha256=sha(arm),COMMON_sha256=sha(rom.read_file('/COMMON/MESFILE.DK4')),historical_proof=str(OLD),historical_proof_sha256=sha(OLD.read_bytes()),all12_complete_payloads_exact_to_historical_V922=True,executed_selector_Deck_macro_and_role_code_spans_byte_exact=[dict(start=a,end=z,sha256=sha(arm[a:z]))for a,z in spans],native_format_LDRB_instruction_clean_old_current_exact='0000d6e5',observed0E04_flags_preserved_low_byte4_not_rewritten=True,historical_holds=holds,historical_IDs=[1670,1675,1678],all6_current_native_numeric_selector_parent_bitmap_RGB_and_complete_word_checks_on_historical_RAM_pass=True,scoped_historical_battle_returns_freshly_rechecked=returns,eleven_negative_controls_current_reexecution_on_offline_clones=controls,historical_reports_and_fixture_scopes=scopes,no_new_current_battle_emulator_runs_or_family_visits=True,no_earned_campaign_refit_recruitment_or_battle_outcome_claim=True,all12_current_native_fonts_separate='work/analysis/battle_finance_fonts_v2417/all12_current_native_fonts.json',review_sheets=[dict(path=str(p),sha256=sha(p.read_bytes())),dict(path=str(b),sha256=sha(b.read_bytes()))],visual_review_pending=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print(dict(historical_battle_holds=6,current_rechecked_returns=3,negative_controls=11,flags_preserved=['0E04'],new_current_emulator_runs=0,visual_pending=True))

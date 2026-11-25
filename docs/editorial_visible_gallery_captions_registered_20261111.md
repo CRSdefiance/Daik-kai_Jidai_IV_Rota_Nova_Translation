@@ -1,0 +1,5 @@
+# Visible Gallery captions registered
+
+All 164 original event captions received a contextual reread. Thirteen changed and 151 were retained with reasons. Every complete native mask fits within the arrow-safe window. Seven revised titles, original photos, arrows and menu returns passed focused emulator navigation. The borrowed unlock save provides access to the Gallery.
+
+The [registered candidate and patch](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/README.md) preserve all previous layers. The [stat result review](../releases/all_routes_editorial_20261111_visible_gallery_captions_candidate/verification/registered_levelup_stat_review.json) credits COMMON 336 once as a justified retention. The original game supplies the stat first and the gain second. The current native renderer verified one, two and six rows. The maximum case uses a four-row page followed by two rows. Earlier ordinary and maximum-growth gameplay evidence is linked in the review. The dialogue ledger now credits 27,697 reviews, with 279 native shared keys left to review or classify.

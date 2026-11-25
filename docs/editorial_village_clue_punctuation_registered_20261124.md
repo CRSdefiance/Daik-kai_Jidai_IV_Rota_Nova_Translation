@@ -1,0 +1,11 @@
+# Promised Words clues across all 24 villages
+
+The clue now closes with American quotation punctuation. Eighteen layouts also keep related words together, including **stone statues** and **covered with sandstone**. All 24 stock answers and five surrounding messages retain their wording. [Exact Japanese, current text and registered review](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/verification/registered_review.json)
+
+The original consumer selected, formatted and rendered every revised clue. All 24 fit on one page and retain their complete opening and closing glyphs. At Narvik, the paired position-only replay reached the clue after the typed Svartisen answer. Its full text and Charles Rochefort's nameplate passed, and 48 surrounding frames matched. [Native previews](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/verification/portrait_sheet_01.png) [Paired replay](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/verification/paired_village_clue_replay_1_20261123.png)
+
+The candidate passed 470 release checks, its own startup, all 17 focused tests and byte-exact reconstruction from the clean input. [Testing package](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/README.md)
+
+The sole ROM in Drive matched the registered SHA-256. Cleanup removed the verified reconstruction duplicate and two disposable copies of the test saves. [Download the testing ROM](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/village_clue_punctuation_drive_20261124.json) [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/village_clue_punctuation_cleanup_20261124.json)
+
+Three previews still end a line with the article **the** before the noun phrase. Review Sugarloaf Mountain, Champlain and Avacha with the next shared-text batch. [Clues 2 and 6](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/verification/portrait_sheet_01.png) [Clue 22](../releases/all_routes_editorial_20261124_village_clue_punctuation_candidate/verification/portrait_sheet_02.png)

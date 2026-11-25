@@ -1,0 +1,7 @@
+# The Guildmaster’s Twisted Horn rumor
+
+The ordinary Lisbon return supplied twelve contextual decisions. Eleven retain their exact wording. The Twisted Horn rumor formerly left “illness.” alone. It still treats the horn’s shape, possible dragon origin and medicinal claim as reports, and the final row now reads “medicine that cures any illness.” The original portrait consumer wraps the stored paragraph. [Per-record ledger](../releases/all_routes_editorial_20261119_twisted_horn_rumor_candidate/verification/registered_review.json)
+
+The recorded ordinary Guild replay verified the full expanded and wrapped buffers and every visible glyph of the revised rumor. Eight other held frames match the earlier replay, including the purchase question, item list and equipped Sextant. Hardware testing remains open. [Before and after](../releases/all_routes_editorial_20261119_twisted_horn_rumor_candidate/verification/lesson_display.png) · [Replay proof](../releases/all_routes_editorial_20261119_twisted_horn_rumor_candidate/verification/ordinary_lisbon_verification.json)
+
+Only COMMON 3665 and its allocation table change. The clean-input patch rebuilds the candidate byte for byte. Six startup holds, 24 protected name getters and 49 focused tests passed. Two optional historical fixtures skipped. The ledger still credits 27,700 reviews, with 276 shared keys open. [Candidate and patch](../releases/all_routes_editorial_20261119_twisted_horn_rumor_candidate/README.md)

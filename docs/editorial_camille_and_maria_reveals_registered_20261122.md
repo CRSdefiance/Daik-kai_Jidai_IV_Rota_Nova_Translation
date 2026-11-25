@@ -1,0 +1,5 @@
+# Camille's reveal and Maria's story follow-up
+
+The review covers 191 spoken turns and the Osaka Glass forecast. Two turns have revised wording, ten keep their wording with better wraps, and 180 have justified retentions. The new lines distinguish Fernando's luck from watching closely and make it explicit that Aziza learned by imitating her father's crew. Camille remains the name his companions know, and Marinus Kuhn remains the name he reveals. [Exact source, installed text and decisions](../releases/all_routes_editorial_20261122_camille_and_maria_reveals_candidate/verification/registered_review.json)
+
+Two paired emulator holds verify the repairs to “the people of Southeast Asia” and “for all you're worth.” The two focused route replays sampled 22 dialogue panels and original speaker labels. The remaining changed panels passed native and visual checks offline. The original story eligibility and hardware remain unvisited for these changes. Startup and 17 regressions passed, and the patch rebuilds the ROM byte for byte. [Testing build and patch](../releases/all_routes_editorial_20261122_camille_and_maria_reveals_candidate/README.md)

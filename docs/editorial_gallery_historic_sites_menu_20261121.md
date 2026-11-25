@@ -1,0 +1,7 @@
+# Historic Sites Gallery menu and notice
+
+**Historic Sites** replaces **Ruins** in the Gallery menu and matches the existing screen heading. The clean Japanese uses the same term in both places, and the collection includes churches. The empty collection now reads **No historic sites discovered yet.** The menu uses the existing heading string, and the notice keeps the original copy length and trailing blank. [Exact references and decisions](../releases/all_routes_editorial_20261121_gallery_historic_sites_menu_candidate/verification/registered_review.json)
+
+Paired cold boots used the same ordinary save and verified both complete notices, dismissal and the title return. Prepared saves verified all four menu labels together and checked entry to Historic Sites, the viewer and the return. The 17 focused tests, six startup holds and 24 protected name getters passed. Hardware remains unvisited. [Gallery comparison](../releases/all_routes_editorial_20261121_gallery_historic_sites_menu_candidate/verification/gallery_menu_comparison.png) · [Testing ROM and exact patch](../releases/all_routes_editorial_20261121_gallery_historic_sites_menu_candidate/README.md)
+
+Updated the Drive copy in place on November 21, 2026 at 05:42 UTC. The authenticated download matched the registered SHA-256 `a28d02290c730143f7d4e8d6861bca50df83e3fadaca7d8cf982ea321952dd43`. The folder contains one `.nds`. [Latest Build on Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk)

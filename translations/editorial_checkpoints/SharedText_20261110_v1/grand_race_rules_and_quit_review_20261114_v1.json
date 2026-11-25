@@ -1,0 +1,1174 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "a7d20aea4afa99a83b888356e6a52def82f13c685d2eb6e1948bced4185909da",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "DK4_GRAND_RACE_HELP_137F74",
+      "title": "Time Limit",
+      "speaker": "Grand Race help system",
+      "source_meaning": "A time limit applies. Anyone not finishing within it is disqualified and gets no prize. If nobody finishes before the limit, the race is a no-game.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "The rule distinguishes each late player's disqualification and loss of prize money from the race being void if everyone is late.",
+      "english": "A race has a time limit. Players who fail to reach the finish before time runs out are disqualified and receive no prize money. If no one finishes in time, the race is void.",
+      "current_English": "A race has a time limit. Players who fail to reach the finish before time runs out are disqualified and receive no prize money. If no one finishes in time, the race is void.",
+      "Japanese": "レースには制限時間があります。制限時間以\n内にゴールできないプレイヤーは失格となり\nます。\n失格となったプレイヤーには賞金は与えられ\nません。\n制限時間以内に誰もゴールできなかった場合\nは、ノーゲームとなります。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1277812,
+        "exact_hex": "838c815b835882c982cd90a78cc08e9e8ad482aa82a082e882dc82b7814290a78cc08e9e8ad488c80a93e082c98353815b838b82c582ab82c882a28376838c83438384815b82cd8eb88a6982c682c882e80a82dc82b781420a8eb88a6982c682c882c182bd8376838c83438384815b82c982cd8fdc8be082cd975e82a682e782ea0a82dc82b982f181420a90a78cc08e9e8ad488c893e082c9924e82e08353815b838b82c582ab82c882a982c182bd8fea8d870a82cd8141836d815b8351815b838082c682c882e882dc82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135276,
+        "title_pointer": 34830760,
+        "body_pointer": 34832279,
+        "exact_hex": "4120726163652068617320612074696d65206c696d69742e20506c61796572732077686f200a206661696c20746f207265616368207468652066696e697368206265666f72652074696d65200a2072756e73206f757420617265206469737175616c696669656420616e642072656365697665206e6f200a207072697a65206d6f6e65792e204966206e6f206f6e652066696e697368657320696e2074696d652c200a20746865207261636520697320766f69642e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 8400,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_008400_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b6dd6bc8529aace25f6d14763c92129343b183b99e91410bd9dde423d042cf55",
+          "framebuffer_sha256": "99b12b080668748cec4cfad32797e598d5ace17b73cfe3a29a75452d5f266974"
+        },
+        "title_ink_pixels": 110,
+        "title_bounds": [
+          4,
+          193,
+          64,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "A race has a time limit. Players who",
+            "bounds": [
+              4,
+              217,
+              220,
+              228
+            ],
+            "pixels": 347
+          },
+          {
+            "text": "fail to reach the finish before time",
+            "bounds": [
+              4,
+              233,
+              220,
+              244
+            ],
+            "pixels": 360
+          },
+          {
+            "text": "runs out are disqualified and receive no",
+            "bounds": [
+              4,
+              249,
+              244,
+              260
+            ],
+            "pixels": 403
+          },
+          {
+            "text": "prize money. If no one finishes in time,",
+            "bounds": [
+              4,
+              265,
+              244,
+              276
+            ],
+            "pixels": 375
+          },
+          {
+            "text": "the race is void.",
+            "bounds": [
+              4,
+              281,
+              106,
+              292
+            ],
+            "pixels": 153
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137EAC",
+      "title": "Your Ship",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Use the flagship from your own fleet. Choose save data recording the desired flagship. Only the flagship basic performance affects racing; equipment, recruited sailing personnel and item effects do not apply.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "The save selection determines the flagship. Keep the clear distinction between its basic performance and the equipment, crew and items that have no effect.",
+      "english": "You race with your fleet's flagship. Select the save data containing the flagship you want to use. Only the flagship's basic performance affects the race. Equipment, crew members and items have no effect.",
+      "current_English": "You race with your fleet's flagship. Select the save data containing the flagship you want to use. Only the flagship's basic performance affects the race. Equipment, crew members and items have no effect.",
+      "Japanese": "レースでは、自分の艦隊の旗艦を使います。\n使いたい旗艦が記録されたセーブデータを選\nんでください。\nただし、レースに影響するのは、旗艦の基本\n性能のみです。装備や航海士、アイテムの効\n果は反映されません。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1277612,
+        "exact_hex": "838c815b835882c582cd81418ea995aa82cc8acd91e082cc8af88acd82f08e6782a282dc82b781420a8e6782a282bd82a28af88acd82aa8b4c985e82b382ea82bd835a815b83758366815b835e82f091490a82f182c582ad82be82b382a281420a82bd82be82b58141838c815b835882c989658bbf82b782e982cc82cd81418af88acd82cc8aee967b0a90ab945c82cc82dd82c582b78142919594f582e28d718a438e6d8141834183438365838082cc8cf80a89ca82cd94bd896682b382ea82dc82b982f1814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135284,
+        "title_pointer": 34830784,
+        "body_pointer": 34832066,
+        "exact_hex": "596f752072616365207769746820796f757220666c656574277320666c6167736869702e200a2053656c656374207468652073617665206461746120636f6e7461696e696e670a2074686520666c61677368697020796f752077616e7420746f207573652e204f6e6c79200a2074686520666c616773686970277320626173696320706572666f726d616e63652061666665637473200a2074686520726163652e2045717569706d656e742c2063726577206d656d6265727320616e640a206974656d732068617665206e6f206566666563742e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 4800,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_004800_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "4bab446f8188c38b2af12ed229e58fc8ea8ff57d06e7acf4245f0aa83d413909",
+          "framebuffer_sha256": "d09c5833f2a4dd6990b8f21e4585de55daf52490e67d9ef502a2c2f3b85730b1"
+        },
+        "title_ink_pixels": 101,
+        "title_bounds": [
+          4,
+          193,
+          58,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "You race with your fleet's flagship.",
+            "bounds": [
+              4,
+              217,
+              220,
+              228
+            ],
+            "pixels": 353
+          },
+          {
+            "text": "Select the save data containing",
+            "bounds": [
+              4,
+              233,
+              190,
+              244
+            ],
+            "pixels": 335
+          },
+          {
+            "text": "the flagship you want to use. Only",
+            "bounds": [
+              4,
+              249,
+              208,
+              260
+            ],
+            "pixels": 346
+          },
+          {
+            "text": "the flagship's basic performance affects",
+            "bounds": [
+              4,
+              265,
+              244,
+              276
+            ],
+            "pixels": 430
+          },
+          {
+            "text": "the race. Equipment, crew members and",
+            "bounds": [
+              4,
+              281,
+              226,
+              292
+            ],
+            "pixels": 400
+          },
+          {
+            "text": "items have no effect.",
+            "bounds": [
+              4,
+              297,
+              130,
+              308
+            ],
+            "pixels": 213
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137C90",
+      "title": "Supplies",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Food is consumed during racing. The number beside the barrel at upper left of the lower screen gives food quantity. At zero food, ship speed drops. Replenish food at supply points.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "Keep the barrel icon and its location, the slowing at zero food, and how to resupply.",
+      "english": "Food is consumed during a race. The number beside the barrel icon at the upper left of the lower screen shows how much food remains. When food reaches zero, your ship slows down. Replenish food at supply points.",
+      "current_English": "Food is consumed during a race. The number beside the barrel icon at the upper left of the lower screen shows how much food remains. When food reaches zero, your ship slows down. Replenish food at supply points.",
+      "Japanese": "レース中は食料を消費します。\n下画面左上の樽マークの隣に表示される数字\nが、食料の量です。\n食料が０になると、船の速度が低下します。\n補給地点で食料を補給してください。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1277072,
+        "exact_hex": "838c815b8358928682cd904897bf82f08fc194ef82b582dc82b781420a89ba89e696ca8db68fe382cc924d837d815b834e82cc97d782c9955c8ea682b382ea82e990948e9a0a82aa8141904897bf82cc97ca82c582b781420a904897bf82aa824f82c982c882e982c68141914482cc91ac937882aa92e189ba82b582dc82b781420a95e28b8b926e935f82c5904897bf82f095e28b8b82b582c482ad82be82b382a2814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135292,
+        "title_pointer": 34830952,
+        "body_pointer": 34831523,
+        "exact_hex": "466f6f6420697320636f6e73756d656420647572696e67206120726163652e0a20546865206e756d62657220626573696465207468652062617272656c2069636f6e0a20617420746865207570706572206c656674206f6620746865206c6f7765722073637265656e0a2073686f777320686f77206d75636820666f6f642072656d61696e732e205768656e20666f6f64200a2072656163686573207a65726f2c20796f7572207368697020736c6f777320646f776e2e0a205265706c656e69736820666f6f6420617420737570706c7920706f696e74732e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 7400,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_007400_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "21d737c4c813860afedd632fcb6d398a8df631aaf9d387efe6b7d6af0dbb524c",
+          "framebuffer_sha256": "784c0e06603c44ee9ddd0b7ddc8c816b59e25fc0b87bfeefdd32347ea954b190"
+        },
+        "title_ink_pixels": 98,
+        "title_bounds": [
+          4,
+          193,
+          52,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "Food is consumed during a race.",
+            "bounds": [
+              4,
+              217,
+              190,
+              228
+            ],
+            "pixels": 313
+          },
+          {
+            "text": "The number beside the barrel icon",
+            "bounds": [
+              4,
+              233,
+              202,
+              244
+            ],
+            "pixels": 354
+          },
+          {
+            "text": "at the upper left of the lower screen",
+            "bounds": [
+              4,
+              249,
+              226,
+              260
+            ],
+            "pixels": 365
+          },
+          {
+            "text": "shows how much food remains. When food",
+            "bounds": [
+              4,
+              265,
+              232,
+              276
+            ],
+            "pixels": 418
+          },
+          {
+            "text": "reaches zero, your ship slows down.",
+            "bounds": [
+              4,
+              281,
+              214,
+              292
+            ],
+            "pixels": 340
+          },
+          {
+            "text": "Replenish food at supply points.",
+            "bounds": [
+              4,
+              297,
+              196,
+              308
+            ],
+            "pixels": 340
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_138168",
+      "title": "Map",
+      "speaker": "Grand Race help system",
+      "source_meaning": "The race map shows positions of ships, finish, checkpoints and supply points. Player ships are red, blue, yellow, green in join order. Finish has G, checkpoints red circles, supply points light blue circles. Passed checkpoints vanish from your map.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "Keep the meaning of each symbol, the color order and the fact that passed checkpoints vanish from the player's map.",
+      "english": "During a race, the map shows ships, the finish, checkpoints and supply points. Ships are colored red, blue, yellow and green in player join order. The finish is marked G, checkpoints are red circles, and supply points are light blue circles. Checkpoints you've passed disappear from your map.",
+      "current_English": "During a race, the map shows ships, the finish, checkpoints and supply points. Ships are colored red, blue, yellow and green in player join order. The finish is marked G, checkpoints are red circles, and supply points are light blue circles. Checkpoints you've passed disappear from your map.",
+      "Japanese": "レース中は航路図で、船やゴール、チェック\nポイント、補給地点の位置を確認できます。\nプレイヤーは参加順番により赤、青、黄、緑、\nの船で表示されます。また、ゴールにはＧの\nマーク、チェックポイントには赤い丸印、補\n給地点には水色の丸印が表示されます。\n自分が通過したチェックポイントは、航路図\nから消えます。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1278312,
+        "exact_hex": "838c815b8358928682cd8d719848907d82c58141914482e28353815b838b8141836083468362834e0a837c834383938367814195e28b8b926e935f82cc88ca927582f08a6d944682c582ab82dc82b781420a8376838c83438384815b82cd8e5189c18f8794d482c982e682e890d4814190c2814189a9814197ce81410a82cc914482c5955c8ea682b382ea82dc82b7814282dc82bd81418353815b838b82c982cd826682cc0a837d815b834e8141836083468362834e837c83438393836782c982cd90d482a28adb88f3814195e20a8b8b926e935f82c982cd9085904682cc8adb88f382aa955c8ea682b382ea82dc82b781420a8ea995aa82aa92ca89df82b582bd836083468362834e837c83438393836782cd81418d719848907d0a82a982e78fc182a682dc82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135300,
+        "title_pointer": 34830708,
+        "body_pointer": 34832738,
+        "exact_hex": "447572696e67206120726163652c20746865206d61702073686f77732073686970732c0a207468652066696e6973682c20636865636b706f696e747320616e6420737570706c79200a20706f696e74732e2053686970732061726520636f6c6f726564207265642c20626c75652c200a2079656c6c6f7720616e6420677265656e20696e20706c61796572206a6f696e206f726465722e200a205468652066696e697368206973206d61726b656420472c20636865636b706f696e7473206172650a2072656420636972636c65732c20616e6420737570706c7920706f696e747320617265206c69676874200a20626c756520636972636c65732e20436865636b706f696e747320796f75277665207061737365640a206469736170706561722066726f6d20796f7572206d61702e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 7000,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_007000_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "78481b419ee1b20138edd9cfee9cd87ef3fa5956e68c7e3bfd565e4b8dc8bad9",
+          "framebuffer_sha256": "613e33e255a8f6044c26eea2bedf6cc837d7422ccf9e2ab80991a5c483f20dcb"
+        },
+        "title_ink_pixels": 57,
+        "title_bounds": [
+          4,
+          193,
+          22,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "During a race, the map shows ships,",
+            "bounds": [
+              4,
+              217,
+              214,
+              228
+            ],
+            "pixels": 353
+          },
+          {
+            "text": "the finish, checkpoints and supply",
+            "bounds": [
+              4,
+              233,
+              208,
+              244
+            ],
+            "pixels": 363
+          },
+          {
+            "text": "points. Ships are colored red, blue,",
+            "bounds": [
+              4,
+              249,
+              220,
+              260
+            ],
+            "pixels": 348
+          },
+          {
+            "text": "yellow and green in player join order.",
+            "bounds": [
+              4,
+              265,
+              232,
+              276
+            ],
+            "pixels": 371
+          },
+          {
+            "text": "The finish is marked G, checkpoints are",
+            "bounds": [
+              4,
+              281,
+              238,
+              292
+            ],
+            "pixels": 402
+          },
+          {
+            "text": "red circles, and supply points are light",
+            "bounds": [
+              4,
+              297,
+              244,
+              308
+            ],
+            "pixels": 393
+          },
+          {
+            "text": "blue circles. Checkpoints you've passed",
+            "bounds": [
+              4,
+              313,
+              238,
+              324
+            ],
+            "pixels": 404
+          },
+          {
+            "text": "disappear from your map.",
+            "bounds": [
+              4,
+              329,
+              148,
+              340
+            ],
+            "pixels": 254
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137DF0",
+      "title": "About the Race",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Grand Race is competitive racing through Nintendo DS wireless communications, for up to four players. One player hosts the race; the others join that hosted race.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "Retain the four-player limit, DS wireless connection, and distinction between host and joining players.",
+      "english": "Grand Race is a competitive race using DS Wireless Communications. Up to four people can play. One player hosts the race, and the others join it.",
+      "current_English": "Grand Race is a competitive race using DS Wireless Communications. Up to four people can play. One player hosts the race, and the others join it.",
+      "Japanese": "大航海レースは、ＤＳワイヤレス通信機能を\n使った対戦レースです。\n最大４人で遊ぶことができます。\n１人が親となってレースを開催し、他のプレ\nイヤーが、そのレースに参加するかたちで対\n戦します。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1277424,
+        "exact_hex": "91e58d718a43838c815b835882cd814182638272838f83438384838c835892ca904d8b40945c82f00a8e6782c182bd91ce90ed838c815b835882c582b781420a8dc591e58253906c82c5975682d482b182c682aa82c582ab82dc82b781420a8250906c82aa906582c682c882c182c4838c815b835882f08a4a8dc382b5814191bc82cc8376838c0a83438384815b82aa814182bb82cc838c815b835882c98e5189c182b782e982a982bd82bf82c591ce0a90ed82b582dc82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135308,
+        "title_pointer": 34831032,
+        "body_pointer": 34831915,
+        "exact_hex": "4772616e642052616365206973206120636f6d70657469746976652072616365207573696e67200a20445320576972656c65737320436f6d6d756e69636174696f6e732e20557020746f20666f7572200a2070656f706c652063616e20706c61792e204f6e6520706c6179657220686f7374730a2074686520726163652c20616e6420746865206f7468657273206a6f696e2069742e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 3400,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_003400_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "bcca838f69b92890ec3d76dda626b3983e3f8cc4065ff8381ae1e2c490852e84",
+          "framebuffer_sha256": "ca00a611809ce6fd7fee3936b09914ee9f8fbdc123545ae95f7f8d4601ffcb13"
+        },
+        "title_ink_pixels": 171,
+        "title_bounds": [
+          4,
+          193,
+          88,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "Grand Race is a competitive race using",
+            "bounds": [
+              4,
+              217,
+              232,
+              228
+            ],
+            "pixels": 395
+          },
+          {
+            "text": "DS Wireless Communications. Up to four",
+            "bounds": [
+              4,
+              233,
+              232,
+              244
+            ],
+            "pixels": 407
+          },
+          {
+            "text": "people can play. One player hosts",
+            "bounds": [
+              4,
+              249,
+              202,
+              260
+            ],
+            "pixels": 339
+          },
+          {
+            "text": "the race, and the others join it.",
+            "bounds": [
+              4,
+              265,
+              202,
+              276
+            ],
+            "pixels": 309
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137BF4",
+      "title": "Race Area",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Four sea regions serve as race stages. The host chooses the sea region. Leaving the racing region is impossible. Its boundaries appear as red lines.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "The existing text identifies four areas, the host's choice and the limit shown by the red border.",
+      "english": "There are four sea regions to race in. The host chooses the region. You cannot leave the race area; its boundaries are marked by red lines.",
+      "current_English": "There are four sea regions to race in. The host chooses the region. You cannot leave the race area; its boundaries are marked by red lines.",
+      "Japanese": "ステージとなる海域は４種類あります。レー\nス海域は親が選択します。\nレース海域の外に出ることはできません。レ\nース海域の境界は、赤いラインで表示されま\nす。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1276916,
+        "exact_hex": "83588365815b835782c682c882e98a4388e682cd82538eed97de82a082e882dc82b78142838c815b0a83588a4388e682cd906582aa914991f082b582dc82b781420a838c815b83588a4388e682cc8a4f82c98f6f82e982b182c682cd82c582ab82dc82b982f18142838c0a815b83588a4388e682cc8bab8a4582cd814190d482a283898343839382c5955c8ea682b382ea82dc0a82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135316,
+        "title_pointer": 34830820,
+        "body_pointer": 34831378,
+        "exact_hex": "54686572652061726520666f75722073656120726567696f6e7320746f2072616365200a20696e2e2054686520686f73742063686f6f7365732074686520726567696f6e2e200a20596f752063616e6e6f74206c6561766520746865207261636520617265613b206974730a20626f756e64617269657320617265206d61726b656420627920726564206c696e65732e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 5200,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_005200_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "8aa72d8754a53073873d6d46f02ce3499f5bd73c6ee5a54fc21e98dd6560b74a",
+          "framebuffer_sha256": "8ded8fd3ed6d20c40fc93f9b488a3fa876aa4d4d74046e2f8913db941ecedbf9"
+        },
+        "title_ink_pixels": 110,
+        "title_bounds": [
+          4,
+          193,
+          58,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "There are four sea regions to race",
+            "bounds": [
+              4,
+              217,
+              208,
+              228
+            ],
+            "pixels": 327
+          },
+          {
+            "text": "in. The host chooses the region.",
+            "bounds": [
+              4,
+              233,
+              196,
+              244
+            ],
+            "pixels": 310
+          },
+          {
+            "text": "You cannot leave the race area; its",
+            "bounds": [
+              4,
+              249,
+              214,
+              260
+            ],
+            "pixels": 339
+          },
+          {
+            "text": "boundaries are marked by red lines.",
+            "bounds": [
+              4,
+              265,
+              214,
+              276
+            ],
+            "pixels": 363
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_138044",
+      "title": "Basic Rules",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Control by touch screen, not directional pad. Pass seven checkpoints and finish first to win. Any checkpoint order is permitted, but all must be passed before finishing. Race lasts until everybody finishes.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "The existing text explains the Touch Screen restriction, all seven checkpoints in any order, the first finisher and continued play for the others.",
+      "english": "Control the race with the Touch Screen; the D-pad cannot be used. Pass all seven checkpoints and reach the finish first to win. You can pass the checkpoints in any order, but you cannot finish until you've passed them all. The race continues until everyone finishes.",
+      "current_English": "Control the race with the Touch Screen; the D-pad cannot be used. Pass all seven checkpoints and reach the finish first to win. You can pass the checkpoints in any order, but you cannot finish until you've passed them all. The race continues until everyone finishes.",
+      "Japanese": "レースはタッチスクリーンで操作します。十\n字ボタンでは操作できません。\n７つのチェックポイントを通過して、最初に\nゴールインしたプレイヤーが勝利です。\nチェックポイントの順番は決まっていません\nが、すべてのチェックポイントを通過しない\nと、ゴールできません。\n全員がゴールするまでレースは続きます。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1278020,
+        "exact_hex": "838c815b835882cd835e836283608358834e838a815b839382c591808dec82b582dc82b781428f5c0a8e9a837b835e839382c582cd91808dec82c582ab82dc82b982f181420a825682c282cc836083468362834e837c83438393836782f092ca89df82b582c481418dc58f8982c90a8353815b838b8343839382b582bd8376838c83438384815b82aa8f9f979882c582b781420a836083468362834e837c83438393836782cc8f8794d482cd8c8882dc82c182c482a282dc82b982f10a82aa814182b782d782c482cc836083468362834e837c83438393836782f092ca89df82b582c882a20a82c681418353815b838b82c582ab82dc82b982f181420a915388f582aa8353815b838b82b782e982dc82c5838c815b835882cd91b182ab82dc82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135324,
+        "title_pointer": 34830808,
+        "body_pointer": 34832461,
+        "exact_hex": "436f6e74726f6c20746865207261636520776974682074686520546f7563682053637265656e3b0a2074686520442d7061642063616e6e6f7420626520757365642e205061737320616c6c20736576656e200a20636865636b706f696e747320616e64207265616368207468652066696e697368206669727374200a20746f2077696e2e20596f752063616e20706173732074686520636865636b706f696e7473200a20696e20616e79206f726465722c2062757420796f752063616e6e6f742066696e6973680a20756e74696c20796f7527766520706173736564207468656d20616c6c2e205468652072616365200a20636f6e74696e75657320756e74696c2065766572796f6e652066696e69736865732e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 4400,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_004400_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "44764927ac45bf0a328f623d020f029144f84151642b0e717bace8cf8fc47680",
+          "framebuffer_sha256": "76a7ee4521432e04eed0a285525f82edceaedb35e0369f14567ad1742e737009"
+        },
+        "title_ink_pixels": 127,
+        "title_bounds": [
+          4,
+          193,
+          70,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "Control the race with the Touch Screen;",
+            "bounds": [
+              4,
+              217,
+              238,
+              228
+            ],
+            "pixels": 399
+          },
+          {
+            "text": "the D-pad cannot be used. Pass all seven",
+            "bounds": [
+              4,
+              233,
+              244,
+              244
+            ],
+            "pixels": 409
+          },
+          {
+            "text": "checkpoints and reach the finish first",
+            "bounds": [
+              4,
+              249,
+              232,
+              260
+            ],
+            "pixels": 395
+          },
+          {
+            "text": "to win. You can pass the checkpoints",
+            "bounds": [
+              4,
+              265,
+              220,
+              276
+            ],
+            "pixels": 359
+          },
+          {
+            "text": "in any order, but you cannot finish",
+            "bounds": [
+              4,
+              281,
+              214,
+              292
+            ],
+            "pixels": 340
+          },
+          {
+            "text": "until you've passed them all. The race",
+            "bounds": [
+              4,
+              297,
+              232,
+              308
+            ],
+            "pixels": 376
+          },
+          {
+            "text": "continues until everyone finishes.",
+            "bounds": [
+              4,
+              313,
+              208,
+              324
+            ],
+            "pixels": 346
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137B90",
+      "title": "Prizes",
+      "speaker": "Grand Race help system",
+      "source_meaning": "Participants receive prize money according to their placing. The prize is reflected in the money held in their save data.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "Keep the two separate facts: finishing position determines prize money, and the prize goes into the player's saved funds.",
+      "english": "Participants receive prize money according to their finishing position. The prize is added to the money in their save data.",
+      "current_English": "Participants receive prize money according to their finishing position. The prize is added to the money in their save data.",
+      "Japanese": "レースの参加者には、順位に応じて賞金が与\nえられます。\n賞金は、セーブデータの所持金に反映されま\nす。",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "ARM9_offset": 1276816,
+        "exact_hex": "838c815b835882cc8e5189c18ed282c982cd81418f8788ca82c9899e82b682c48fdc8be082aa975e0a82a682e782ea82dc82b781420a8fdc8be082cd8141835a815b83758366815b835e82cc8f8a8e9d8be082c994bd896682b382ea82dc0a82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135340,
+        "title_pointer": 34830920,
+        "body_pointer": 34831248,
+        "exact_hex": "5061727469636970616e74732072656365697665207072697a65206d6f6e6579200a206163636f7264696e6720746f2074686569722066696e697368696e6720706f736974696f6e2e200a20546865207072697a6520697320616464656420746f20746865206d6f6e657920696e207468656972200a207361766520646174612e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 5600,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_005600_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "e4a0b16c0311df8278f64051094f8df797dcf9322d9971a894f919bc4ac5fb8b",
+          "framebuffer_sha256": "213cdbf5b49f0e36ea7eb28204cb27a3edf6b9ddd69fa640ed0940ab0d9b51d4"
+        },
+        "title_ink_pixels": 67,
+        "title_bounds": [
+          4,
+          193,
+          40,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "Participants receive prize money",
+            "bounds": [
+              4,
+              217,
+              196,
+              228
+            ],
+            "pixels": 339
+          },
+          {
+            "text": "according to their finishing position.",
+            "bounds": [
+              4,
+              233,
+              232,
+              244
+            ],
+            "pixels": 385
+          },
+          {
+            "text": "The prize is added to the money in their",
+            "bounds": [
+              4,
+              249,
+              244,
+              260
+            ],
+            "pixels": 404
+          },
+          {
+            "text": "save data.",
+            "bounds": [
+              4,
+              265,
+              64,
+              276
+            ],
+            "pixels": 104
+          }
+        ]
+      }
+    },
+    {
+      "id": "DK4_GRAND_RACE_HELP_137D38",
+      "title": "Stopping a Race",
+      "speaker": "Grand Race help system",
+      "source_meaning": "One player cannot alone leave an ongoing race. To interrupt, turn off the Nintendo DS. If any one player powers off, the race is interrupted for everyone.",
+      "context": "The player opens this page from Grand Race, reads it alongside the related rules and can return to the menu.",
+      "localization_note": "Use 'drop out on your own' to make the individual withdrawal rule clear. Preserve the original instruction to turn off the DS and the result for every player.",
+      "english": "You can't drop out on your own mid-race. To stop playing, turn off your DS. If any player turns off their DS, the race ends for everyone.",
+      "current_English": "A player cannot leave a race alone while it is underway. To stop playing, turn off your Nintendo DS. If one player turns off their system, the race stops for everyone.",
+      "Japanese": "対戦の途中で１人だけレースを抜けることは\nできません。\n中断したい場合は、ＤＳ本体の電源をＯＦＦ\nにしてください。\n１人のプレイヤーが電源をＯＦＦにすると、\n全員のレースが中断されます。",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "source_reference": {
+        "ARM9_offset": 1277240,
+        "exact_hex": "91ce90ed82cc9372928682c58250906c82be82af838c815b835882f094b282af82e982b182c682cd0a82c582ab82dc82b982f181420a9286926682b582bd82a28fea8d8782cd814182638272967b91cc82cc93648cb982f0826e826582650a82c982b582c482ad82be82b382a281420a8250906c82cc8376838c83438384815b82aa93648cb982f0826e8265826582c982b782e982c681410a915388f582cc838c815b835882aa9286926682b382ea82dc82b7814200"
+      },
+      "current_reference": {
+        "descriptor_offset": 1135356,
+        "title_pointer": 34830984,
+        "body_pointer": 34831741,
+        "exact_hex": "4120706c617965722063616e6e6f74206c656176652061207261636520616c6f6e65207768696c65200a20697420697320756e6465727761792e20546f2073746f7020706c6179696e672c207475726e0a206f666620796f7572204e696e74656e646f2044532e204966206f6e6520706c617965720a207475726e73206f66662074686569722073797374656d2c2074686520726163652073746f7073200a20666f722065766572796f6e652e00"
+      },
+      "existing_live_page": {
+        "frame": {
+          "frame": 8800,
+          "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_008800_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "34d45bea0daef8de990f699bf31a3a8aa979e0f081db2380222fc2eb46961612",
+          "framebuffer_sha256": "54b80932823bafc88c2b332bdfd827e922b5c2e0f2e13c59dbe981efba4513b0"
+        },
+        "title_ink_pixels": 176,
+        "title_bounds": [
+          4,
+          193,
+          94,
+          204
+        ],
+        "line_pitch": 16,
+        "complete_body_ink_and_spacing": true,
+        "lines": [
+          {
+            "text": "A player cannot leave a race alone while",
+            "bounds": [
+              4,
+              217,
+              244,
+              228
+            ],
+            "pixels": 401
+          },
+          {
+            "text": "it is underway. To stop playing, turn",
+            "bounds": [
+              4,
+              233,
+              226,
+              244
+            ],
+            "pixels": 354
+          },
+          {
+            "text": "off your Nintendo DS. If one player",
+            "bounds": [
+              4,
+              249,
+              214,
+              260
+            ],
+            "pixels": 357
+          },
+          {
+            "text": "turns off their system, the race stops",
+            "bounds": [
+              4,
+              265,
+              232,
+              276
+            ],
+            "pixels": 372
+          },
+          {
+            "text": "for everyone.",
+            "bounds": [
+              4,
+              281,
+              82,
+              292
+            ],
+            "pixels": 129
+          }
+        ]
+      },
+      "proposed_lines": [
+        "You can't drop out on your own mid-race.",
+        "To stop playing, turn off your DS. If",
+        "any player turns off their DS, the race",
+        "ends for everyone."
+      ],
+      "proposed_hex": "596f752063616e27742064726f70206f7574206f6e20796f7572206f776e206d69642d726163652e200a20546f2073746f7020706c6179696e672c207475726e206f666620796f75722044532e2049660a20616e7920706c61796572207475726e73206f66662074686569722044532c2074686520726163650a20656e647320666f722065766572796f6e652e00",
+      "existing_body_slot_bytes": 174,
+      "proposed_body_bytes": 142,
+      "offline_automatic_layout_preview": "work\\race_and_quit_common_20261114_v1\\stopping_a_race_draft.png",
+      "preview_sha256": "f76a2db0888b6e57244031bdc199369a7539fc5b7f4cb1030a99e96154cf2ea5"
+    }
+  ],
+  "actual_quit": {
+    "common_ID": 319,
+    "source_reference": {
+      "block": 4,
+      "offset": 3312,
+      "copy_end": 3348,
+      "bytes": 35,
+      "record_index": 46,
+      "table_offset": 1317774,
+      "start_in_record": 2
+    },
+    "current_reference": {
+      "block": 4,
+      "offset": 3389,
+      "copy_end": 3405,
+      "bytes": 14,
+      "record_index": 92,
+      "table_offset": 1317774,
+      "start_in_record": 0
+    },
+    "complete_glyph_ink": 167,
+    "confirmation": {
+      "frame": 5800,
+      "path": "work\\race_and_quit_common_20261114_v1\\quit\\capture\\frame_005800_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "1f751bcd76d6b4278bab30d1ad2393dcd7b9d74aabae9e23a0b8461abb77617f",
+      "framebuffer_sha256": "0f498681eaf2d2504f3fec7f31a6d5a832c5446f11a940704b66b33619b20fff"
+    },
+    "cancelled": {
+      "frame": 6200,
+      "path": "work\\race_and_quit_common_20261114_v1\\quit\\capture\\frame_006200_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "8eb7fffc744680e3a1cabfb6ffefeaad60a97f0ad2e984022c65f5eb07243693",
+      "framebuffer_sha256": "50095016b32ef0f203faef8ec57024839bbd68ba094cd325ec0e349328ead92d"
+    },
+    "trace": [
+      {
+        "frame": 5611,
+        "PC": 33903244,
+        "message_ID": 319,
+        "caller_LR": 33900160
+      },
+      {
+        "frame": 5611,
+        "PC": 33895668,
+        "message_ID": 319,
+        "caller_LR": 33900160
+      }
+    ],
+    "source_caller": 33815560
+  },
+  "actual_race_scope": {
+    "actual_saved_game": true,
+    "original_ordinary_donor_save": true,
+    "help_pages": 9,
+    "load_question": {
+      "frame": 11000,
+      "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_011000_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "b40583430383d5c5e9a931f300550e6d750ee068dc34ae2e18c497e00303d43d",
+      "framebuffer_sha256": "a9a2bfc4a8aded46a09d627fd9f14a5f5114e26fa77a3a3c682ac3dceffa2e87"
+    },
+    "host_wait": {
+      "frame": 11800,
+      "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_011800_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "a65e0eacc99b32c5b91440bec23b7656920f08a06f4e5c19c5cf6c079b4332ad",
+      "framebuffer_sha256": "98f73bc8dd3b859da54bc0b175daa59ce1082c0dae535313122165c075dbec37"
+    },
+    "title_return": {
+      "frame": 12190,
+      "path": "work\\race_and_quit_common_20261114_v1\\race\\capture\\frame_012190_cold_boot.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "61085055b391d3cd4045b02d51c6b0a32214803b0113f234ec561994c9e44f3b",
+      "framebuffer_sha256": "0e5e2f2557362d80a3960c57687caa1e68b8df0cb15522ae31b1c65821d613f9"
+    },
+    "race_started": false,
+    "hardware": false,
+    "COMMON_requests": []
+  },
+  "legacy318": {
+    "Japanese": "このデータはフェアデータです\nゲームを中断すると\nデータは失われますが\nよろしいですか？",
+    "English": "This is exhibition data. Ｉf you quit the game, the data will be lost. Proceed?",
+    "source_reference": {
+      "block": 4,
+      "offset": 3224,
+      "copy_end": 3312,
+      "bytes": 85,
+      "record_index": 45,
+      "table_offset": 1317772,
+      "start_in_record": 125
+    },
+    "current_reference": {
+      "block": 4,
+      "offset": 3309,
+      "copy_end": 3389,
+      "bytes": 79,
+      "record_index": 91,
+      "table_offset": 1317772,
+      "start_in_record": 0
+    },
+    "clean_hex": "82b182cc8366815b835e82cd8374834683418366815b835e82c582b70a8351815b838082f09286926682b782e982c60a8366815b835e82cd8eb882ed82ea82dc82b782aa0a82e682eb82b582a282c582b782a98148",
+    "current_hex": "546869732069732065786869626974696f6e20646174612e2082686620796f752071756974207468652067616d652c2074686520646174612077696c6c206265206c6f73742e2050726f636565643f",
+    "rejected_numeric_lead": {
+      "message_id_lookalike": 318,
+      "source_word_offset": 1005476,
+      "caller": 34559660,
+      "callee": 33985236,
+      "graphics_table": 34888092,
+      "graphics_entry": 34889364,
+      "native_port": 67110024,
+      "value": 100667392,
+      "original_CPU_fragment_runs": [
+        {
+          "version": "clean",
+          "observed_isolated_writes": [
+            [
+              67110024,
+              4,
+              100667392
+            ]
+          ]
+        },
+        {
+          "version": "registered",
+          "observed_isolated_writes": [
+            [
+              67110024,
+              4,
+              100667392
+            ]
+          ]
+        }
+      ],
+      "narrower_finding": "This numeric reference selects a graphics register value. It supplies no COMMON string."
+    },
+    "other_possible_callers_pending": true
+  },
+  "evidence": {
+    "quit": {
+      "work\\race_and_quit_common_20261114_v1\\quit\\capture\\capture_report.json": "5144cbd77e7302dcd615ad6e571e61facb81a8b82ee6289b8c3aa5007a408996",
+      "work\\race_and_quit_common_20261114_v1\\quit\\requests.json": "10e6f7ce0243dadad7e8962c1c6d18f0ae1bc773f554828ac78217871a1f3386",
+      "work\\race_and_quit_common_20261114_v1\\quit\\inputs.json": "54ad48e1c9ceff9df30c935f6c97053dbe04055e5b8622ee4ea1a16bc38d7ab9",
+      "work\\race_and_quit_common_20261114_v1\\quit\\source_contract.json": "3e53d0940123c0ac16472f2a6e9667cd8574ad03d9076d9a7538c0a57815c359",
+      "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_race_quit_common_20261114.py": "00ca589315d22e2ed8137aaaafd859f59a818b39a577a75051d36098a685c028",
+      "work\\emulation_v193\\gallery_menu_v307\\capture_report.json": "c08311e0818695435b0ad585b7f7c07e6474a3df09e689259ef33680e66c1ab5"
+    },
+    "race": {
+      "work\\race_and_quit_common_20261114_v1\\race\\capture\\capture_report.json": "c0fc96ee9741620c6a53edf2536315d4ee042fdfb9ea8c6c25fbd144fba9e8e6",
+      "work\\race_and_quit_common_20261114_v1\\race\\requests.json": "162fb8c749f00c013548d37dd95a829a33b546e42c4a02a2f7293286596804c6",
+      "work\\race_and_quit_common_20261114_v1\\race\\inputs.json": "b435796f9e173161682942fa24adae3ffb684984baf4f7c405ca917e166f0202",
+      "work\\race_and_quit_common_20261114_v1\\race\\source_contract.json": "3e53d0940123c0ac16472f2a6e9667cd8574ad03d9076d9a7538c0a57815c359",
+      "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_race_quit_common_20261114.py": "00ca589315d22e2ed8137aaaafd859f59a818b39a577a75051d36098a685c028",
+      "work\\analysis\\miniature_consumers_v576\\final_recorded_inputs.json": "b435796f9e173161682942fa24adae3ffb684984baf4f7c405ca917e166f0202"
+    },
+    "work\\race_and_quit_common_20261114_v1\\quit\\review_sheet.png": "e7b70504bcbb28434d48cc46453663891769fa601efdb7c2da798b6e19e590ce",
+    "work\\race_and_quit_common_20261114_v1\\race\\review_sheet.png": "6cb5b3b0e5aef4a11538474cf64f5f21b59c16cc924154d8385f46473dd6ca32"
+  },
+  "new_dialogue_credit": 0,
+  "full_goal_complete": false
+}

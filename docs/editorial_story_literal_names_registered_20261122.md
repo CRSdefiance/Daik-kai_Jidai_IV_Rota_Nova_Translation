@@ -1,0 +1,5 @@
+# Custom names in story dialogue
+
+An ordinary Hodram New Game reproduced the surname corruption in Charles's opening dialogue, SC1 B42 R0113. The previous display treated letter pairs inside the surname as substitutions and added a page. Matching controls on the candidate display the full surname once, finish the original speech on a single page, and advance to Hodram's reply. The Japanese address, English text, formatting controls and accepted names stay intact. [Exact record and comparison](../releases/all_routes_editorial_20261122_story_literal_names_candidate/verification/registered_review.json)
+
+The correction is scoped to the three story call frames that already expanded the dialogue. An original system notification was exercised through a focused fixture. Native checks covered all three story modes and unrelated direct callers. The fixture supplies the original command to the running game without meeting its normal event conditions. Startup and 17 tests passed. [Candidate and patch](../releases/all_routes_editorial_20261122_story_literal_names_candidate/README.md)

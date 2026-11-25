@@ -1,0 +1,11 @@
+"""Fresh V2284 ordinary Charles Cabin selection; inherited Copenhagen test save."""
+import sys
+from pathlib import Path
+from scripts import headless_desmume_v193 as harness
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/personal_current_run_v2301');ROM=Path('out/all_routes_combined_v2284_candidate.nds');CAP=Path('E:/Rota Nova translations/Generated/work/emulation_v193/personal_current_v2301_V2284');PRIOR=Path('E:/Rota Nova translations/Generated/work/emulation_v193/personal_cabin_v840_838_Charles_after/capture_report.json')
+if __name__=='__main__':
+ assert not ROOT.exists()and not CAP.exists();ROOT.mkdir(parents=True);prior=read(PRIOR);donor=Path(prior['battery_save_preloaded']['source']);assert sha(donor.read_bytes())==prior['battery_save_preloaded']['source_sha256']=='febc859c5af2df6fa8023c349bb7f31b5fc15ea769fb2eea527b3a3f80521731';digest=sha(ROM.read_bytes());assert read(ROM.with_suffix('.manifest.json'))['candidate_sha256']==digest;inputs=ROOT/'ordinary_inputs.json';save(inputs,prior['scripted_input_schedule']);frames=sorted({r['frame']for r in prior['frames_captured']})
+ save(ROOT/'run_plan.json',dict(candidate=str(ROM),candidate_sha256=digest,frames=5401,captures=frames,inputs=str(inputs),inputs_sha256=sha(inputs.read_bytes()),prior_report=str(PRIOR),prior_report_sha256=sha(PRIOR.read_bytes()),source_battery=str(donor),source_battery_sha256=sha(donor.read_bytes()),source_battery_inherited_five_ship_context_not_earned_progress=True,no_new_RAM_code_location_health_timing_text_or_role_fixture=True,no_savestate=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))
+ sys.argv=['headless_desmume_v193.py','--rom',str(ROM),'--out',str(CAP),'--frames','5401','--inputs-json',str(inputs),'--battery-save',str(donor),'--touchscreen','--capture-every','999999','--capture-at',*map(str,frames),'--dump-capture-ram','--dump-ram'];harness.main();assert sha(donor.read_bytes())=='febc859c5af2df6fa8023c349bb7f31b5fc15ea769fb2eea527b3a3f80521731';save(ROOT/'terminal.json',dict(terminal=True,frames=read(CAP/'capture_report.json')['frames'],no_new_fixture=True,source_battery_unchanged=True,full_goal_complete=False))

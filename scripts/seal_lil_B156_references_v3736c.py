@@ -1,0 +1,6 @@
+"""Preserve the rejected seal andcorrect the overlapping derivation's stored-case count."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import save
+if __name__=='__main__':
+    p=Path('scripts/seal_lil_B156_references_v3736b.py');t=p.read_text(encoding='utf-8');needle="    exec(compile(t,str(p)+";assert t.count(needle)==1;t=t.replace(needle,"    assert t.count(\"stored['current_final_stored_macro_alignment_cases']==200\")==1;t=t.replace(\"stored['current_final_stored_macro_alignment_cases']==200\",\"stored['current_final_stored_macro_alignment_cases']==304\")\n"+needle);exec(compile(t,str(p)+'::source76-stored304-assertion-correction','exec'),dict(__name__='__main__',__file__=__file__));root=Path('work/analysis/lil_B156_reference_approval_v3736');save(root/'preserved_failed_seal_stored_count_correction.json',dict(previous=str(p),previous_sha256=sha(p.read_bytes()),failure='An overlapping string replacement left the old200 assertion beside the new76 target count. It rejected the complete304 stored-case proof before writing seal outputs.',correction='Require304=76x4 final stored alignment cases. No proof or manuscript content is altered.',producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

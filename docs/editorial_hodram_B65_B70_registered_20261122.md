@@ -1,0 +1,7 @@
+# Sera's farewell and the Batavia exchanges
+
+The source packet covers all 128 records. Three earlier decisions carry forward. The fresh pass preserves 73 lines for specific reasons, revises 47 lines, and corrects five reaction glyphs. Sera's brief, halting farewell follows the unexpected reunion. Maria and Hodram keep distinct approaches to Kuhn and Pereira. Camille's urgency gives way to relief, Lil's apology, and their decision to sail together again. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261122_hodram_B65_B70_candidate/verification/registered_review.json)
+
+Five long speeches now fit on one page each. All 52 revised pages and 15 name-width variants received native and visual checks, alongside 11 exact speaker labels. The 241 stored commands preserve source control flow. Focused emulator excerpts verified 46 pages, including the six unchanged symbol streams and the keypress after Hodram's long speech. Natural event activation and hardware remain unvisited for these scenes. [Display evidence](../releases/all_routes_editorial_20261122_hodram_B65_B70_candidate/verification)
+
+The cumulative candidate preserves all 114 accepted layers and the registered ASCII right boundary correction. Six startup comparisons, 17 regression tests and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B65_B70_candidate/README.md)

@@ -1,0 +1,5 @@
+# Azores discovery and docking wording
+
+Two ordinary controller replays from the Lisbon save verify **Discovered the Azores.**, **Shall we stop at the Azores?** and Manuel's address **Admiral**. The original choices and both Promised Words outcomes remain visible. Offline checks cover all 24 villages, seven templates and the register and flag behavior at both name call sites. Five template retentions explain the source and voice. [Source and visual evidence](../releases/all_routes_editorial_20261123_azores_wording_candidate/verification/registered_review.json)
+
+The first test build reproduced the known startup stall after extending the late-copy pool. The registered build reuses exactly 64 bytes from an earlier startup routine that has no external literal or branch references in the current image. The original pool size, arena bounds and active startup routine stay exact. Six cold-start frames, 24 protected getters, all 17 focused tests and the complete clean-input byte comparison passed. [Testing build and patch](../releases/all_routes_editorial_20261123_azores_wording_candidate/README.md)

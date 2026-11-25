@@ -1,0 +1,18 @@
+"""Derive B226 registered integration without altering earlier producers."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B226_release_tools_v7276')
+if __name__=='__main__':
+    assert not ROOT.exists()
+    source=Path('scripts/register_lil_B225_v7229.py').read_text(encoding='utf-8')
+    old=source[source.index("profile.update(status="):source.index("\n    updated=deepcopy(registry)")]
+    new="profile.update(status='experimental',lil_B226_editorial=owned.CONFIG,description='Complete V7230 plus20 clean-Japanese B226 whole-exchange decisions:12 revisions and8 justified retentions. Preserve Lil andManuel familiarity without invented kinship,the Attila/empire lesson andeffort qualification,andthe explicitly uncertain northwest armor rumor. Two contextual personal-name retentions add no assets orduplicate credit;full207 names remain open.22 commands/20 preambles,selectors2/23,voices3/7,zero macros,A000 andfour-byte normal end remain.1196stored/1194logical/tail2 inverts fully;1176target/no tail.20 complete original native pages,160logical/compiled80stored24name alignments,14 zero-ink tails,eight row reasons,zero warning waivers and74 policy rejects. All20 actual English pages/79body79headers pass.',note='204 actual-changing production corruptions reject before mutation. All31 observed commands/results/UI and20 matched portrait/scene pairs pass. Preserve8 command comparison rows,three duration changes,66 of139 later sampled RGB differences,models/persistent/calendar differences,captains2/2,seeds1176264513/2548610151,andfollowing B120ends12453/12456. Initialized B22 isnot natural event226 activation,original location,earned progress,full effects,full routes orhardware. No whole-RAM/every-frame/future-sequence/broad-simulation orcomplete causal claim. Full editorial/earlier-wrap/name objective active. Allprior artifacts andmainV4701 preserved;exact patch/current startup pending;no automatic promotion.')"
+    receipts=[derive('scripts/register_lil_B225_v7229.py','scripts/register_lil_B226_v7276.py',{
+        old:new,'B225':'B226','B224':'B225','V7168':'V7230','V7230':'V7277','v7168':'v7230','v7230':'v7277','v7229':'v7276','v7228':'v7275','v7212':'v7237',
+        "r['positive_records']==13":"r['positive_records']==20",'len(cases)==182':'len(cases)==204','all13_actual14_pages55_body55_headers_bound':'all20_actual20_pages79_body79_headers_bound','original630B_A00025_ends_and_explicit_comparison_limits_bound':'original_A00025_ends_and_explicit_comparison_limits_bound',"['batches'])==617":"['batches'])==618",'negative_count=182':'negative_count=204','expected_manifest_batches=618':'expected_manifest_batches=619','618 expected batches':'619 expected batches'})]
+    receipts.append(derive('scripts/build_lil_B225_v7230.py','scripts/build_lil_B226_v7277.py',{'B225':'B226','v7230':'v7277','v7229':'v7276'}))
+    receipts.append(derive('scripts/run_lil_B225_regressions_v7230.py','scripts/run_lil_B226_regressions_v7277.py',{'B225':'B226','v7230':'v7277'}))
+    receipts.append(derive('scripts/verify_lil_B225_release_v7231.py','scripts/verify_lil_B226_release_v7278.py',{'B225':'B226','B224':'B225','v7231':'v7278','v7230':'v7277','v7168':'v7230','v7229':'v7276','V7168':'V7230','v7215':'v7259',"['batches'])==618":"['batches'])==619",'manifest_batches=618':'manifest_batches=619','all618_manifest_batches':'all619_manifest_batches'}))
+    receipts.append(derive('scripts/pin_lil_B225_v7232.py','scripts/pin_lil_B226_v7279.py',{'B225':'B226','V7230':'V7277','v7232':'v7279','v7231':'v7278'}))
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_registration_build_release_tools.json',dict(derivations=receipts))

@@ -1,0 +1,7 @@
+# All Routes sailing-alert candidate
+
+Use `out/sailing_alerts_registered_20261111_v2/Translation_DS_All_Routes_Sailing_Alerts_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs candidate SHA-256 `40005fca0bc5f5f9a197ffa09dcc07fc2cd54340737e633a3695eea5011735a7` byte for byte. Patch SHA-256 is `b9f5606b96587982d3ffa506f1cdd793fa500b017fb818dc4ba8ebd52fa54d3e`.
+
+The batch covers 28 records, with 24 revisions and four justified retentions. It restores 12 warnings that displayed unrelated text, translates the floating level-up notice, and improves 10 wraps. All 45 portrait pages, 207 floating name expansions, 72 cumulative release checks and 30 targeted tests passed. The build retains the Market Trade-screen fix and the ASCII right-bound correction. Main V4701 awaits acceptance.
+
+One focused replay displayed Gerhard's and Manuel's level-up notices after normal level gains. Another displayed the revised becalmed warning and returned to sailing after A. Each used a temporary condition selector. The separate ordinary voyage missed the Reefs warning. The candidate passed its own 31,000-frame startup and 24 protected name getters. [Gameplay and coverage evidence](verification/sailing_alert_gameplay_verification.json) · [Registered review](verification/registered_review.json)

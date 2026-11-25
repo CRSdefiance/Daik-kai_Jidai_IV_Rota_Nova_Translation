@@ -1,0 +1,234 @@
+{
+  "prior_receipt": {
+    "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_SC0_qualification.json",
+    "sha256": "06880ee325fa874168ee50f47ce8d120dce1cf842a70a159d6200e8079b8c218"
+  },
+  "additional_routes": [
+    {
+      "file_path": "/data/SC3.DK4",
+      "clean_archive_sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+      "block_count": 303,
+      "relocated_source25_records": [
+        {
+          "id": "DK4_MES_B38_R0044",
+          "block": 38,
+          "source_offset": 661,
+          "target_offset": 687,
+          "source_index": 44,
+          "target_index": 43,
+          "source_hex": "2582cd82c182cd82c182cd814282bb82a482b182c882ad82c482cd0a8c4e82c682cd82a282a28370815b83678369815b82c982c882ea82bb82a482be82e60a82bb82ea82c582cd",
+          "target_hex": "2548612068612068612120546861742773206d6f7265206c696b652069742e200a2049207468696e6b207765276c6c206d616b6520676f6f6420706172746e6572732e0a20556e74696c206e6578742074696d652e",
+          "complete_preamble_hex": "0040ffff0025",
+          "clean_block_sha256": "59f57a5b0b387558bf44f2b0e7ee6e62c20e1c8635e222c3c37ba3e9825e911b",
+          "target_block_sha256": "ae14c61774ce01507c378df33d209fe21b29755ee5238e3d9f815c6d2ff98e7e"
+        },
+        {
+          "id": "DK4_MES_B38_R0052",
+          "block": 38,
+          "source_offset": 759,
+          "target_offset": 799,
+          "source_index": 52,
+          "target_index": 51,
+          "source_hex": "258e6495fb82c882a2814282c882e782ce82b182bf82e782e083418389837582cc0a8cd682e882c982a982af82c489e482e782cc92eb90e682f00a8ee782e894b282ad82be82af82be",
+          "target_hex": "2543616e27742062652068656c7065642c207468656e2e204f757220686f6e6f72200a206173204172616273206973206174207374616b652e205765276c6c20646566656e64200a206f7572206f776e207761746572732e20",
+          "complete_preamble_hex": "0040ffff0025",
+          "clean_block_sha256": "59f57a5b0b387558bf44f2b0e7ee6e62c20e1c8635e222c3c37ba3e9825e911b",
+          "target_block_sha256": "ae14c61774ce01507c378df33d209fe21b29755ee5238e3d9f815c6d2ff98e7e"
+        }
+      ]
+    }
+  ],
+  "original_legacy_findings": [
+    {
+      "block": 38,
+      "record": 43,
+      "id": "DK4_MES_B38_R0043",
+      "source_percent_commands": [],
+      "current_percent_commands": [],
+      "invalid_offsets": [
+        0
+      ],
+      "source_leading25_preserved": false
+    },
+    {
+      "block": 38,
+      "record": 51,
+      "id": "DK4_MES_B38_R0051",
+      "source_percent_commands": [],
+      "current_percent_commands": [],
+      "invalid_offsets": [
+        0
+      ],
+      "source_leading25_preserved": false
+    }
+  ],
+  "positive": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_SC0_qualification.json",
+      "sha256": "06880ee325fa874168ee50f47ce8d120dce1cf842a70a159d6200e8079b8c218"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7
+  },
+  "negative_cases": [
+    {
+      "case": "wrong-clean-selector-offset",
+      "rejected": true,
+      "failure": "AssertionError"
+    },
+    {
+      "case": "wrong-stored-preamble",
+      "rejected": true,
+      "failure": "AssertionError"
+    },
+    {
+      "case": "wrong-target-index",
+      "rejected": true,
+      "failure": "AssertionError"
+    },
+    {
+      "case": "injected-printf",
+      "rejected": true,
+      "failure": "ValueError"
+    }
+  ],
+  "original_failure_andall_rejections_verified": true,
+  "new_credit": 0,
+  "evidence": {
+    "work\\Maria_B37_B50_clean_20261109\\stored270_reconstruction_v1\\reconstruction.json": "ef47ec587e8ce7a3d381ec14d0e11638c799348e51eb30c0e67a72b988b2f118",
+    "translations\\maria_B37_B49_final_review_v1.json": "f2e7d3e92970bc6b1d3692fdd20c68715a8fd9337e8654effaca29d70820aae2",
+    "work\\market_goods_info_terminator_release_v1\\registered_release_verification.json": "58ceaee85318bf6399ca8faa630c00f93adde3fc1f82cbb112c8779a2a134e38",
+    "work\\market_goods_info_terminator_release_v1\\all_routes_market_goods_info_fix_candidate.manifest.json": "b4b3cbcb0a71dd4494cb5f633e207fef01d638105bfab1d36a20886e5868fd08",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\qualify_maria270_source25_v3.py": "d464e2b102cd8bba3b11a57d18f672504939ea50e6933ea33d86a66ac9094786",
+    "dk4tool\\script\\format_safety.py": "39b4e2e7cc5c6980af7f7b92ce1c64645f57912fddb56a25a7bff620b1a1e1ec",
+    "dk4tool\\script\\format_safety_relocated_v1.py": "40a23e8134f29689c3ba862b8681e813ec8e3f9f26968061e35b09fe87c398d2",
+    "dk4tool\\script\\format_safety_relocated_v2.py": "bc74cbbc59ef8de42f5a69fb5c6e691cc2c9dfaa65e0df057e0b08ee2f807c1d",
+    "work\\Maria_B37_B50_clean_20261109\\registered_source25_v1\\qualification.json": "8377c2eaaf5ec1d70f6558e1f865d3581bc8b5df8a6403144c9986440193da3d",
+    "releases\\all_routes_editorial_20261114_maria_final_wraps_candidate\\verification\\registered_release_verification.json": "aa8f1aca41f775c141590be66b1018c8a2192deb1c1a91fcc3b7d7e9fd14a5d5",
+    "work\\alexandria_cook_exchange_20261114_v1\\whole_image_loader\\whole_image_loader_receipt.json": "df607c6be447f2a7762e8a579519908f8331c3d8dc3613bf280dec7fb8a9b3d3",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\verify_alexandria_cooking_guards_20261114.py": "980208334fbdf147ee68df98bbf5d88e3899f895fbf40ec5de623cf208fa81eb",
+    "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_SC0_qualification.json": "06880ee325fa874168ee50f47ce8d120dce1cf842a70a159d6200e8079b8c218",
+    "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+  },
+  "parent_positive": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7
+  },
+  "source25_predecessor_receipt": {
+    "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+    "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+  },
+  "rebound_archive_hashes": [
+    {
+      "id": "DK4_MES_B38_R0044",
+      "block": 38,
+      "old_hash": "7c627df67c45de1d259770ce196312ffe9034b3d3dfc81b2601f3ac7435877b0",
+      "new_hash": "ae14c61774ce01507c378df33d209fe21b29755ee5238e3d9f815c6d2ff98e7e"
+    },
+    {
+      "id": "DK4_MES_B38_R0052",
+      "block": 38,
+      "old_hash": "7c627df67c45de1d259770ce196312ffe9034b3d3dfc81b2601f3ac7435877b0",
+      "new_hash": "ae14c61774ce01507c378df33d209fe21b29755ee5238e3d9f815c6d2ff98e7e"
+    }
+  ],
+  "all_existing_exact_source_offsets_target_offsets_controls_and_bytes_verified": true,
+  "refreshed_rejections": [
+    "source_offset",
+    "target_index"
+  ]
+}

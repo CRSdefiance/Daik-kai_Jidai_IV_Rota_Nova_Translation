@@ -1,0 +1,7 @@
+# Myrine's Tavern rumor and regional shops
+
+Ordinary Athens and Valencia play verified 24 complete dialogue holds across 15 shared messages. Fourteen lines retain their wording, including the barkeep's reports about three prominent figures, the tag question in the Delicacy Shop, and the Invincible Armada rumor. Myrine now introduces the Lamenting Jar by name before asking whether Hodram has heard of it. The original item substitution, vague whereabouts and admiration stay intact. [Context and exact references](../releases/all_routes_editorial_20261124_athens_item_rumor_candidate/verification/registered_review.json)
+
+All 218 catalog names passed the original formatter. The old wording split 66 item names across rows. The new wording keeps every item name intact. The complete revised page and Myrine's nameplate matched ordinary gameplay. Sixteen earlier or later holds, including the return to Athens, match the predecessor pixel for pixel. [Paired replay](../releases/all_routes_editorial_20261124_athens_item_rumor_candidate/verification/athens_item_rumor_paired_1_20261123.png) · [Native sample pages](../releases/all_routes_editorial_20261124_athens_item_rumor_candidate/verification/portrait_sheet_01.png)
+
+The cumulative build passed 454 release checks, candidate startup, 17 focused tests, and byte-exact clean-input reconstruction. [Testing build and patch](../releases/all_routes_editorial_20261124_athens_item_rumor_candidate/README.md)

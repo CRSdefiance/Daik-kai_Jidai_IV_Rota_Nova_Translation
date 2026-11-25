@@ -1,0 +1,838 @@
+{
+  "candidate_sha256": "6ca649de5b8dd673c752954f93638767c095b688fae977c1bb68af56dd18044a",
+  "diagnostic_ROM_sha256": "0babfb15e89c32e8275f76831d109b201ec2925c91981609fcf4ff336faebe03",
+  "records": [
+    {
+      "ARM9_literal": 252180,
+      "ARM9_offset": 1276180,
+      "capacity_bytes": 12,
+      "clean_Japanese": "所持金　",
+      "current_bytes_hex": "8f8a8e9d8be0814000000000",
+      "proposed_bytes_hex": "46756e647320000000000000",
+      "proposed_English": "Funds ",
+      "native_caller_addresses": [
+        33805944
+      ],
+      "localization_note": "The faction’s available funds. Funds is the label the related DS panel uses.",
+      "registered_review_credit": 0,
+      "formatting_gate": false,
+      "observed_render_paths": [
+        "Inn Strategist report",
+        "Fleet Info"
+      ],
+      "disposition": "The observed callers pass the field to the renderer, with no visible effect in the controlled frame comparison."
+    },
+    {
+      "ARM9_literal": 252192,
+      "ARM9_offset": 1276200,
+      "capacity_bytes": 28,
+      "clean_Japanese": "勢力値（%s）　%6d（%4d）",
+      "current_bytes_hex": "90a897cd926c81692573816a81402536648169253464816a00000000",
+      "proposed_bytes_hex": "50777220257320256428256429000000000000000000000000000000",
+      "proposed_English": "Pwr %s %d(%d)",
+      "native_caller_addresses": [
+        33806092
+      ],
+      "localization_note": "The region, the faction’s global power and its power in the selected region. Keep both values in order and distinguish the regional one in parentheses.",
+      "registered_review_credit": 0,
+      "formatting_gate": false,
+      "observed_render_paths": [
+        "Inn Strategist report"
+      ],
+      "disposition": "The observed callers pass the field to the renderer, with no visible effect in the controlled frame comparison."
+    },
+    {
+      "ARM9_literal": 252196,
+      "ARM9_offset": 1276228,
+      "capacity_bytes": 12,
+      "clean_Japanese": "勢力値　%6d",
+      "current_bytes_hex": "90a897cd926c814025366400",
+      "proposed_bytes_hex": "506f77657220253664000000",
+      "proposed_English": "Power %6d",
+      "native_caller_addresses": [
+        33806120
+      ],
+      "localization_note": "The faction’s global power. The separate unfiltered view has one number.",
+      "registered_review_credit": 0,
+      "formatting_gate": false,
+      "observed_render_paths": [
+        "Fleet Info"
+      ],
+      "disposition": "The observed callers pass the field to the renderer, with no visible effect in the controlled frame comparison."
+    },
+    {
+      "ARM9_literal": 252204,
+      "ARM9_offset": 1276240,
+      "capacity_bytes": 12,
+      "clean_Japanese": "本拠地　",
+      "current_bytes_hex": "967b8b92926e814000000000",
+      "proposed_bytes_hex": "486f6d652000000000000000",
+      "proposed_English": "Home ",
+      "native_caller_addresses": [
+        33806160
+      ],
+      "localization_note": "The faction’s home base. Home is the existing compact DS label beside the town name.",
+      "registered_review_credit": 0,
+      "formatting_gate": false,
+      "observed_render_paths": [
+        "Inn Strategist report",
+        "Fleet Info"
+      ],
+      "disposition": "The observed callers pass the field to the renderer, with no visible effect in the controlled frame comparison."
+    },
+    {
+      "ARM9_literal": 252212,
+      "ARM9_offset": 1276252,
+      "capacity_bytes": 8,
+      "clean_Japanese": "友好度",
+      "current_bytes_hex": "97468d4493780000",
+      "proposed_bytes_hex": "5469657320000000",
+      "proposed_English": "Ties ",
+      "native_caller_addresses": [
+        33806260
+      ],
+      "localization_note": "The faction’s standing with the player’s company. Ties matches the related relationship chart.",
+      "registered_review_credit": 0,
+      "formatting_gate": false,
+      "observed_render_paths": [
+        "Inn Strategist report",
+        "Fleet Info"
+      ],
+      "disposition": "The observed callers pass the field to the renderer, with no visible effect in the controlled frame comparison."
+    }
+  ],
+  "gameplay": [
+    {
+      "path": "Inn Strategist report",
+      "checked_two_screen_frames": [
+        1,
+        60,
+        180,
+        3200,
+        3600,
+        4000,
+        4400,
+        4800,
+        5200,
+        5600,
+        5740,
+        5940,
+        6000,
+        6400,
+        6800
+      ],
+      "suppressed_label_calls": [
+        {
+          "PC": 33805944,
+          "before": {
+            "frame": 5623,
+            "PC": 33805944,
+            "LR": 34427120,
+            "arguments": [
+              35187560,
+              34830612,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "所持金　",
+            "complete_text_hex": "8f8a8e9d8be08140",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000010161902010000000000000000000000000000000000000000000000"
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33805944,
+            "LR": 34427120,
+            "arguments": [
+              35187560,
+              34830612,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "Funds ",
+            "complete_text_hex": "46756e647320",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000010161902010000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "PC": 33806092,
+          "before": {
+            "frame": 5623,
+            "PC": 33806092,
+            "LR": 33806072,
+            "arguments": [
+              35187632,
+              34830632,
+              34916275,
+              747
+            ],
+            "stack": 35187456,
+            "text": "勢力値（%s）　%6d（%4d）",
+            "complete_text_hex": "90a897cd926c81692573816a81402536648169253464816a",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000040161902010000000000001000000000000000000000000000000000",
+            "fifth_argument": 747
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33806092,
+            "LR": 33806072,
+            "arguments": [
+              35187632,
+              34830632,
+              34916275,
+              747
+            ],
+            "stack": 35187456,
+            "text": "Pwr %s %d(%d)",
+            "complete_text_hex": "50777220257320256428256429",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000040161902010000000000001000000000000000000000000000000000",
+            "fifth_argument": 747
+          }
+        },
+        {
+          "PC": 33806160,
+          "before": {
+            "frame": 5623,
+            "PC": 33806160,
+            "LR": 34427120,
+            "arguments": [
+              35187704,
+              34830672,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "本拠地　",
+            "complete_text_hex": "967b8b92926e8140",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000070161902010000000000000000000000000000000000000000000000"
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33806160,
+            "LR": 34427120,
+            "arguments": [
+              35187704,
+              34830672,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "Home ",
+            "complete_text_hex": "486f6d6520",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000000000000000000070161902010000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "PC": 33806260,
+          "before": {
+            "frame": 5623,
+            "PC": 33806260,
+            "LR": 34427120,
+            "arguments": [
+              35187776,
+              34830684,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "友好度",
+            "complete_text_hex": "97468d449378",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000a016190201000000585600020000000000000000d0ec180200000000"
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33806260,
+            "LR": 34427120,
+            "arguments": [
+              35187776,
+              34830684,
+              144,
+              12
+            ],
+            "stack": 35187456,
+            "text": "Ties ",
+            "complete_text_hex": "5469657320",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000a016190201000000585600020000000000000000d0ec180200000000"
+          }
+        }
+      ],
+      "common_requests": [
+        {
+          "PC": 33903244,
+          "frame": 3613,
+          "message_ID": 63
+        },
+        {
+          "PC": 33895668,
+          "frame": 3613,
+          "message_ID": 63
+        },
+        {
+          "PC": 33903244,
+          "frame": 4411,
+          "message_ID": 1177
+        },
+        {
+          "PC": 33895668,
+          "frame": 4411,
+          "message_ID": 1177
+        },
+        {
+          "PC": 33903244,
+          "frame": 4821,
+          "message_ID": 1178
+        },
+        {
+          "PC": 33895668,
+          "frame": 4821,
+          "message_ID": 1178
+        },
+        {
+          "PC": 33903244,
+          "frame": 5267,
+          "message_ID": 1187
+        },
+        {
+          "PC": 33895668,
+          "frame": 5267,
+          "message_ID": 1187
+        }
+      ],
+      "unchanged_calls": [
+        {
+          "before": {
+            "frame": 5622,
+            "PC": 33934424,
+            "LR": 33804348,
+            "arguments": [
+              6,
+              401,
+              1,
+              1808407283
+            ],
+            "stack": 35198840
+          },
+          "after": {
+            "frame": 5622,
+            "PC": 33934424,
+            "LR": 33804348,
+            "arguments": [
+              6,
+              401,
+              1,
+              1808407283
+            ],
+            "stack": 35198840
+          }
+        },
+        {
+          "before": {
+            "frame": 5623,
+            "PC": 33805992,
+            "LR": 33805980,
+            "arguments": [
+              35187560,
+              34830628,
+              400324,
+              0
+            ],
+            "stack": 35187456,
+            "text": "%8d",
+            "complete_text_hex": "253864",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000300000000000000010161902010000000000000000000000000000000000000000000000"
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33805992,
+            "LR": 33805980,
+            "arguments": [
+              35187560,
+              34830628,
+              400324,
+              0
+            ],
+            "stack": 35187456,
+            "text": "%8d",
+            "complete_text_hex": "253864",
+            "context_hex": "e40316020000000000000000900000000c00000000000000000000000000000000000000240000000000000010161902010000000000000000000000180000000000000000000000"
+          }
+        },
+        {
+          "before": {
+            "frame": 5623,
+            "PC": 33806332,
+            "LR": 33804348,
+            "arguments": [
+              35187776,
+              34830696,
+              50,
+              1808407283
+            ],
+            "stack": 35187456,
+            "text": "%4d",
+            "complete_text_hex": "253464",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000002400000000000000a016190201000000585600020000000000000000d0ec180200000000"
+          },
+          "after": {
+            "frame": 5623,
+            "PC": 33806332,
+            "LR": 33804348,
+            "arguments": [
+              35187776,
+              34830696,
+              50,
+              1808407283
+            ],
+            "stack": 35187456,
+            "text": "%4d",
+            "complete_text_hex": "253464",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000001e00000000000000a0161902010000005856000200000000180000000000000000000000"
+          }
+        }
+      ],
+      "active_control_frame": {
+        "frame": 6000,
+        "path": "work\\faction_information_20261115_v1\\current_trace\\capture\\frame_006000_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "c7e578b7f544499a6dbac593ae997339496c2c6b2d2ab83705b51c0a6c8d2330",
+        "framebuffer_sha256": "54ef24c4a60b16215f5384b4b1a2af86591e8fb9df7933e0a87d3060bb1d0a1c"
+      },
+      "visible_leader_mask": {
+        "text": "Leader (Soldier)",
+        "bounds": [
+          80,
+          25,
+          176,
+          36
+        ],
+        "ink_pixels": 180,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_title_mask": {
+        "text": "Albuquerque",
+        "bounds": [
+          95,
+          3,
+          161,
+          14
+        ],
+        "ink_pixels": 149,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_person_mask": {
+        "text": "Dinis de Albuquerque",
+        "bounds": [
+          80,
+          41,
+          200,
+          52
+        ],
+        "ink_pixels": 238,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_level_mask": {
+        "text": "Level   36",
+        "bounds": [
+          80,
+          85,
+          140,
+          96
+        ],
+        "ink_pixels": 94,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "fixture_changes": [
+        {
+          "address": 36544196,
+          "before": 24,
+          "after": 19
+        },
+        {
+          "address": 36511255,
+          "before": 16,
+          "after": 208
+        },
+        {
+          "address": 36511252,
+          "before": 208,
+          "after": 16
+        }
+      ]
+    },
+    {
+      "path": "Fleet Info",
+      "checked_two_screen_frames": [
+        1,
+        60,
+        180,
+        15600,
+        16000,
+        16400,
+        16800,
+        17000,
+        17100,
+        17200,
+        17400,
+        17401
+      ],
+      "suppressed_label_calls": [
+        {
+          "PC": 33805944,
+          "before": {
+            "frame": 16811,
+            "PC": 33805944,
+            "LR": 34427120,
+            "arguments": [
+              35169056,
+              34830612,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "所持金　",
+            "complete_text_hex": "8f8a8e9d8be08140",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000cccd1802010000000300000000000000000000000000000000000000"
+          },
+          "after": {
+            "frame": 16811,
+            "PC": 33805944,
+            "LR": 34427120,
+            "arguments": [
+              35169056,
+              34830612,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "Funds ",
+            "complete_text_hex": "46756e647320",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000cccd1802010000000300000000000000000000000000000000000000"
+          }
+        },
+        {
+          "PC": 33806120,
+          "before": {
+            "frame": 16811,
+            "PC": 33806120,
+            "LR": 33803296,
+            "arguments": [
+              35169128,
+              34830660,
+              164,
+              12
+            ],
+            "stack": 35168952,
+            "text": "勢力値　%6d",
+            "complete_text_hex": "90a897cd926c8140253664",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000fccd180201000000c000000068011602000000000000000000000000"
+          },
+          "after": {
+            "frame": 16811,
+            "PC": 33806120,
+            "LR": 33803296,
+            "arguments": [
+              35169128,
+              34830660,
+              164,
+              12
+            ],
+            "stack": 35168952,
+            "text": "Power %6d",
+            "complete_text_hex": "506f77657220253664",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000000000000000000000fccd180201000000c000000068011602000000000000000000000000"
+          }
+        },
+        {
+          "PC": 33806160,
+          "before": {
+            "frame": 16811,
+            "PC": 33806160,
+            "LR": 34427120,
+            "arguments": [
+              35169200,
+              34830672,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "本拠地　",
+            "complete_text_hex": "967b8b92926e8140",
+            "context_hex": "e40316020000000000000000900000000c0000000000000000000000000000000000000000000000000000002cce180201000000f400160200000000000000000100000000000000"
+          },
+          "after": {
+            "frame": 16811,
+            "PC": 33806160,
+            "LR": 34427120,
+            "arguments": [
+              35169200,
+              34830672,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "Home ",
+            "complete_text_hex": "486f6d6520",
+            "context_hex": "e40316020000000000000000900000000c0000000000000000000000000000000000000000000000000000002cce180201000000f400160200000000000000000100000000000000"
+          }
+        },
+        {
+          "PC": 33806260,
+          "before": {
+            "frame": 16811,
+            "PC": 33806260,
+            "LR": 34427120,
+            "arguments": [
+              35169272,
+              34830684,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "友好度",
+            "complete_text_hex": "97468d449378",
+            "context_hex": "e40316020000000000000000900000000c0000000000000000000000000000000000000000000000000000005cce1802010000005856000200000000a00500008ca4180200000000"
+          },
+          "after": {
+            "frame": 16811,
+            "PC": 33806260,
+            "LR": 34427120,
+            "arguments": [
+              35169272,
+              34830684,
+              144,
+              12
+            ],
+            "stack": 35168952,
+            "text": "Ties ",
+            "complete_text_hex": "5469657320",
+            "context_hex": "e40316020000000000000000900000000c0000000000000000000000000000000000000000000000000000005cce1802010000005856000200000000a00500008ca4180200000000"
+          }
+        }
+      ],
+      "common_requests": [
+        {
+          "PC": 33903244,
+          "frame": 5855,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 5855,
+          "message_ID": 97
+        },
+        {
+          "PC": 33903244,
+          "frame": 5855,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 5855,
+          "message_ID": 97
+        },
+        {
+          "PC": 33903244,
+          "frame": 6851,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 6851,
+          "message_ID": 97
+        },
+        {
+          "PC": 33903244,
+          "frame": 6851,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 6851,
+          "message_ID": 97
+        },
+        {
+          "PC": 33903244,
+          "frame": 7306,
+          "message_ID": 2397
+        },
+        {
+          "PC": 33895668,
+          "frame": 7306,
+          "message_ID": 2397
+        },
+        {
+          "PC": 33903244,
+          "frame": 9430,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 9430,
+          "message_ID": 97
+        },
+        {
+          "PC": 33903244,
+          "frame": 9759,
+          "message_ID": 97
+        },
+        {
+          "PC": 33895668,
+          "frame": 9759,
+          "message_ID": 97
+        }
+      ],
+      "unchanged_calls": [
+        {
+          "before": {
+            "frame": 16811,
+            "PC": 33805992,
+            "LR": 33805980,
+            "arguments": [
+              35169056,
+              34830628,
+              44700,
+              0
+            ],
+            "stack": 35168952,
+            "text": "%8d",
+            "complete_text_hex": "253864",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000003000000000000000cccd1802010000000300000000000000000000000000000000000000"
+          },
+          "after": {
+            "frame": 16811,
+            "PC": 33805992,
+            "LR": 33805980,
+            "arguments": [
+              35169056,
+              34830628,
+              44700,
+              0
+            ],
+            "stack": 35168952,
+            "text": "%8d",
+            "complete_text_hex": "253864",
+            "context_hex": "e40316020000000000000000900000000c000000000000000000000000000000000000002400000000000000cccd1802010000000300000000000000180000000000000000000000"
+          }
+        }
+      ],
+      "active_control_frame": {
+        "frame": 17200,
+        "path": "work\\faction_information_20261115_v1\\fleet_trace\\capture\\frame_017200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "900254148503b802b985297b4cbb2fdb195897bf66d151b784cc57335340ea3a",
+        "framebuffer_sha256": "5dd74ceffe5050fdbf3758a4126b78cd063ed8ded54f0a006be0211f229f220e"
+      },
+      "visible_leader_mask": {
+        "text": "Leader (Soldier)",
+        "bounds": [
+          80,
+          25,
+          176,
+          36
+        ],
+        "ink_pixels": 180,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_title_mask": {
+        "text": "Bergstrom Fleet",
+        "bounds": [
+          83,
+          3,
+          173,
+          14
+        ],
+        "ink_pixels": 180,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_person_mask": {
+        "text": "Hodram Joakim Bergstrom",
+        "bounds": [
+          80,
+          41,
+          218,
+          52
+        ],
+        "ink_pixels": 285,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_level_mask": {
+        "text": "Level   18",
+        "bounds": [
+          80,
+          85,
+          140,
+          96
+        ],
+        "ink_pixels": 87,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "fixture_changes": []
+    }
+  ],
+  "evidence": {
+    "releases\\all_routes_editorial_20261115_ritual_officiant_labels_candidate\\verification\\registered_release_verification.json": "ab4fe0eb6a9a47a582c8ec5b7a8e3e620077a47bdb6ff49e2e0c7fb72536dc66",
+    "work\\faction_information_20261115_v1\\probe_plan.json": "5aeb0179a2885055568f511d1ee47574d66e923cbeefd2990a781c363ec7e71c",
+    "work\\faction_information_20261115_v1\\current_trace\\capture\\capture_report.json": "82e9fda468f1b3e1ccff55fb1c0be300897550d46db1808a51b3e487e8f42e84",
+    "work\\faction_information_20261115_v1\\current_trace\\observer\\requests.json": "960456b55c4f62926bf273d94dc641148fab7d9742a54901875cf85d197a43a4",
+    "work\\faction_information_20261115_v1\\probe_trace\\capture\\capture_report.json": "052180d1e32753bdd3ddd2684311d2b21ab19a88496fdf4e09281534545632a1",
+    "work\\faction_information_20261115_v1\\probe_trace\\observer\\requests.json": "e0563e523c0deb851dbd51fa076ad8a906ea6ae7b3570c6cc9daad4c9e14df13",
+    "work\\faction_information_20261115_v1\\fleet_trace\\capture\\capture_report.json": "ff8179eb63f1b2f9e051bfd8d65d522944b09b352cbe07c91813e2204953bac5",
+    "work\\faction_information_20261115_v1\\fleet_trace\\observer\\requests.json": "b1a0f2d20f2afca7deb833fd48a732ef6d4b1d18b4a99b2b4fbd11211633e867",
+    "work\\faction_information_20261115_v1\\fleet_probe_trace\\capture\\capture_report.json": "6989ee727df5b2c65a3e57933cfac795b1d216bf3fe6588ef36946421d743aea",
+    "work\\faction_information_20261115_v1\\fleet_probe_trace\\observer\\requests.json": "b09398b9ca589595a60f5b23079ffe172cd3ea51d870c65811333c75a2b4bb81"
+  },
+  "complete_frames_match": true,
+  "release_build_changes": 0,
+  "current_credited_dialogue": 27700,
+  "pending_mapped_COMMON": 276,
+  "scope": "Original Inn Strategist and Fleet Info replay only. Other conditional displays and hardware remain open."
+}

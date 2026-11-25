@@ -1,0 +1,34 @@
+{
+  "format": "dk4-ilnk-translation-batch-v1",
+  "file_path": "/data/SC0.DK4",
+  "source_file_sha256": "a774ff674b086a27be2344188de71e1c7a64e5d2ee5cf366f9d6b8bada48e85e",
+  "encoder": "dialogue-fixed-v1",
+  "dialogue_profile": "raphael-story-percent-live",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "scope": "Clean-source literal percentages rewritten as natural words; original allocations and controls retained.",
+  "records": [
+    {
+      "id": "DK4_MES_B177_R0180",
+      "english": "{SPEAKER:0D}There's no need for new ships as we add ports to our routes. A 1 percent share lets us buy one to five units of each good.{PAD}",
+      "speaker": "Manuel Almeida",
+      "context": "Rafael route trade tutorial: the exact same original Japanese paragraph as Maria B135 R0325. Advice precedes buying ships once market share supports larger purchases.",
+      "source_meaning": "While adding contracted ports and expanding routes there is no need to buy ships; a one-percent contract limits purchases of each trade good to one through five units.",
+      "localization_note": "Adding ports to our routes conveys contract-driven expansion. Keeps the temporary advice, one-percent share and one-to-five-unit limit. Percent avoids a native string conversion from percent-space-s.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ]
+}

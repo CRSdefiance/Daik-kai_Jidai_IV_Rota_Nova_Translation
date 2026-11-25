@@ -1,0 +1,1324 @@
+{
+  "registered_release": {
+    "path": "releases/all_routes_editorial_20261123_seoul_shop_rumor_candidate/verification/registered_release_verification.json",
+    "sha256": "080e258374043fea420a6b984109dcb8e6425c875be55dd84f01f415f2a3f5da"
+  },
+  "original_ROM_sha256": "f289439dfc523cd6e1e54d30bae06a843a9569084682e5e7496f2b5cce1a4529",
+  "player_path": "Assign Manuel Fleet to patrol Stockholm. Open Info, Fleet Info, Manuel Fleet, then Report.",
+  "cold_boot_and_ordinary_controller_input_after_prepared_save": true,
+  "existing_fleet_from_prepared_save": {
+    "path": "work/analysis/regional_fleet_v615/formed_Manuel_regional_copy.dsv",
+    "sha256": "2bec91a13ba69361c5c79ff52dcc3c8a3d5cf2ccbe2fc4b614bac8d12ab4cee1"
+  },
+  "hardware": false,
+  "reproduced_on_registered_ROM": true,
+  "records": [
+    {
+      "source": {
+        "component": "/__arm9__.bin",
+        "offset": 1274104,
+        "exact_hex": "96da95578a588146257300",
+        "Japanese": "目標街：%s"
+      },
+      "current": {
+        "component": "/__arm9__.bin",
+        "offset": 1274104,
+        "exact_hex": "96da95578a588146257300",
+        "frame": {
+          "frame": 12000,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\assigned_fleet_detail_20261123\\capture\\frame_012000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "88416a5680830744614847295901710885fb326f900b3141d8493ee06753e2dd",
+          "framebuffer_sha256": "48cc61202aeb0009ed85bc409d35fdb80884bac3aef1879ca877dcc97a0fb036"
+        }
+      },
+      "runtime": {
+        "frame": 11810,
+        "PC": 33781352,
+        "owner": "target_city_format",
+        "LR": 34297504,
+        "pointer": 34828536,
+        "value_hex": "96da95578a5881462573"
+      },
+      "proposed_English": "To: %s",
+      "localization_note": "A compact destination field for the selected fleet's current target port. Keep the game-supplied town name.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "source": {
+        "component": "/__arm9__.bin",
+        "offset": 1274136,
+        "exact_hex": "8efb93fc8a7a25386c758e788f6f8a7a25386c75938a8e918a7a25386c7500",
+        "Japanese": "収入額%8lu支出額%8lu投資額%8lu"
+      },
+      "current": {
+        "component": "/__arm9__.bin",
+        "offset": 1274136,
+        "exact_hex": "8efb93fc8a7a25386c758e788f6f8a7a25386c75938a8e918a7a25386c7500",
+        "frame": {
+          "frame": 12400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\assigned_fleet_detail_20261123\\capture\\frame_012400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "768d8f5e77aa176aa4dbf5a302f27d0441737cf434e9a091bfec8e2f39812b56",
+          "framebuffer_sha256": "375d8d382af32d6a14d6b13111f709ec502293f4664eb44aa2071b0e600db1ed"
+        }
+      },
+      "runtime": {
+        "frame": 12210,
+        "PC": 33787304,
+        "owner": "finance_format",
+        "LR": 34427120,
+        "pointer": 34828568,
+        "value_hex": "8efb93fc8a7a25386c758e788f6f8a7a25386c75938a8e918a7a25386c75"
+      },
+      "proposed_English": "Income / Expenses / Invested",
+      "localization_note": "Match the terminology used on the modern regional panel. Keep all three unsigned amounts in the original order.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "baseline_evidence": [
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/capture/capture_report.json",
+      "sha256": "776b8f124be1df4808d53b38e02b6fcf2124d13434db19fa5ec369b06e0a74ca"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/terminal.json",
+      "sha256": "55a7ced7fa4a2de6440eb05f80b211766440b80eeaed7159ab555b31836770ee"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/trace/requests.json",
+      "sha256": "095f12c97f79b2e74a42dcf141648ed7c82ae4aeaef2d0e6c71bd5c0d988f0c3"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/trace/source_contract.json",
+      "sha256": "4994cd6edf98841fdaf8d47c2d9b923a307192454f0f0e8b510c90b11b1643a2"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/capture/navigation_command_journal.json",
+      "sha256": "b6fee5a5229926410f1dc1f746c7ac42827c50456ca5cb9cc113e8965e627ed6"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/controller.jsonl",
+      "sha256": "400d787cfd27db10e48f88970806c493dfef63c275e230f3d117f54de26e7b53"
+    }
+  ],
+  "prior_focus": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_destination_name_caller_20261123.json",
+    "sha256": "5fcfc97ed5f9e86fa0515ab489d5a3599b4cae90ddef66f8bd00c349728b36a3"
+  },
+  "trials": {
+    "fixed_slots": {
+      "name": "Compact fixed-slot trial",
+      "observation": "Destination is complete. Unequal label widths shift the third label across two report rows.",
+      "rom": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/fixed_slots/Assigned_Fleet_Info_STAGED.nds",
+        "sha256": "3d7040cd569009e0309bab063ef3705f6c475ef3f82c094df87c11b13ed9f93b"
+      },
+      "stage": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/fixed_slots/stage.json",
+        "sha256": "7818b7240228610cde928486aad3193c2453e1a6b348d4a9ade0ede860bbe4fc"
+      },
+      "evidence": [
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/capture/capture_report.json",
+          "sha256": "c49341e623cbf7869f7a05dc75715df271ef38f0077097b9376456b04667230f"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/terminal.json",
+          "sha256": "8db4d2006a490e64195f5c1c33431cea3bf091e57bbb4dcde26fe041e5816d3f"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/trace/requests.json",
+          "sha256": "5b2a3a66d39ead53d8cbceb39f62fab6982caecc44c0a852d2a7862e55e4f18b"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/trace/source_contract.json",
+          "sha256": "8a679d568e96ebbe7e5b240817640328355147db9eac26fca3df03d58077724b"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/capture/navigation_command_journal.json",
+          "sha256": "a75315ffd5d3c75a8ac1fcca0cfe2c312b2568f3a26160800c1dbfd44392df80"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_fixed_slots_replay/controller.jsonl",
+          "sha256": "0da3b58c8e6cb829ffa73b32c07b8f80928bfcbeae8cbbb7ed4976e64efda491"
+        }
+      ],
+      "captures": [
+        {
+          "frame": 12000,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_fixed_slots_replay\\capture\\frame_012000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "8c8ef006fa164c2919732ee4d3c4c566b7da13efcb3cf213f2ef0063ed7b955e",
+          "framebuffer_sha256": "746134c7b4734d1568189b6c6d5ac0c0813083354fc83f2b1e6fe279d501f1d7"
+        },
+        {
+          "frame": 12400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_fixed_slots_replay\\capture\\frame_012400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "90d9ed4dac7ac32fe4cc2549ea07859d2dc7f1b32ed556748e9d7e4d0ac3993a",
+          "framebuffer_sha256": "5b2b428e0220701d561276881010a3ee527a56f96da5d607ba2f4676f016ef31"
+        }
+      ],
+      "seven_prechange_frames_match": true,
+      "report_closes_to_exact_fleet_detail": true,
+      "fleet_detail_closes_to_exact_list": true
+    },
+    "aligned_report": {
+      "name": "Wide horizontal trial",
+      "observation": "Destination, Income and Expenses are complete. The third row begins Invested but source X wraps into earlier text.",
+      "rom": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/aligned_report/Assigned_Fleet_Info_Aligned_STAGED.nds",
+        "sha256": "e2d539893b7c226e91eff7f9b2ee28432892616e36749b426d9c1cbea960fdf9"
+      },
+      "stage": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/aligned_report/stage.json",
+        "sha256": "595614fef6251a7c72516d7c08d3e3d1a82e5b3dc35b2e7b77654ecad114aae4"
+      },
+      "evidence": [
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/capture/capture_report.json",
+          "sha256": "a80f37c8222d2913c500bd6796c10876fb36d912405cd311a06fadea60d37484"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/terminal.json",
+          "sha256": "13d21754e568de5cd151489e2bb45284dda844a9734fa3423eaad6efdeddcc22"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/trace/requests.json",
+          "sha256": "ece6ca6f5ed278916139f8e5080d1438c306fab5d51ddeeb7631f3a675fec154"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/trace/source_contract.json",
+          "sha256": "d233a877e107658d6806325b962ea0efbab49474b2062fcf878fb1291a16e600"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/capture/navigation_command_journal.json",
+          "sha256": "9cac27a9a5e2ad1034c1d75e5b2db283558d9f4b139df5ebf9520583271e1c44"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_aligned_report_replay/controller.jsonl",
+          "sha256": "0da3b58c8e6cb829ffa73b32c07b8f80928bfcbeae8cbbb7ed4976e64efda491"
+        }
+      ],
+      "captures": [
+        {
+          "frame": 12000,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_aligned_report_replay\\capture\\frame_012000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "8c8ef006fa164c2919732ee4d3c4c566b7da13efcb3cf213f2ef0063ed7b955e",
+          "framebuffer_sha256": "746134c7b4734d1568189b6c6d5ac0c0813083354fc83f2b1e6fe279d501f1d7"
+        },
+        {
+          "frame": 12400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_aligned_report_replay\\capture\\frame_012400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "10427e20a109ae60da84ba015f9aa913903757825f59997c3979fef1da9af9d7",
+          "framebuffer_sha256": "e47cabbd75ac5d5a79288754eaabbefa90580ab82a27a9cee81c970af9814f1d"
+        }
+      ],
+      "seven_prechange_frames_match": true,
+      "report_closes_to_exact_fleet_detail": true,
+      "fleet_detail_closes_to_exact_list": true
+    },
+    "stacked_report": {
+      "name": "Native rows trial",
+      "observation": "Destination and first row are complete. The Expenses E and lower part of Invested are missing.",
+      "rom": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/stacked_report/Assigned_Fleet_Info_STAGED.nds",
+        "sha256": "2f0236cd3baf83954c9c14214777cde2407c009b8c7cc73eaddaef455b75e41d"
+      },
+      "stage": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/stacked_report/stage.json",
+        "sha256": "295abe11f8e7aa569d479d976d54dcf4d1496028a318da359298f576411f5742"
+      },
+      "evidence": [
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/capture/capture_report.json",
+          "sha256": "d2d75e178fe339591a7db5fc991b05d23c12f55bb177410f4c7f923aad42a6d0"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/terminal.json",
+          "sha256": "f983a25d680d455dac29589ac5034c0bcf2041a6069d79c47d9ea57b34726e5a"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/trace/requests.json",
+          "sha256": "6270741861a3ed8b81d2a1e12ba40f1f8756922a8bc38a189e3ae1f00bd0ca16"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/trace/source_contract.json",
+          "sha256": "2fb19276dd97ae24dc0d9b78d14555e9c621e564085f0380e292f59656c4771c"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/capture/navigation_command_journal.json",
+          "sha256": "bd59e01c3dc595d144dc7b2cbb1b4b8a33206790947e3d418a338076c631194a"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_stacked_report_replay/controller.jsonl",
+          "sha256": "0da3b58c8e6cb829ffa73b32c07b8f80928bfcbeae8cbbb7ed4976e64efda491"
+        }
+      ],
+      "captures": [
+        {
+          "frame": 12000,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_stacked_report_replay\\capture\\frame_012000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "8c8ef006fa164c2919732ee4d3c4c566b7da13efcb3cf213f2ef0063ed7b955e",
+          "framebuffer_sha256": "746134c7b4734d1568189b6c6d5ac0c0813083354fc83f2b1e6fe279d501f1d7"
+        },
+        {
+          "frame": 12400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_stacked_report_replay\\capture\\frame_012400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "ff76bc43ca69efab08ebe1abe2ce2afea36abffa73efc88953825811ca5c291e",
+          "framebuffer_sha256": "ebb04d1741a5505d256af0631ef3230a4b1f0339b438e4871dfd25ce67bf2b8f"
+        }
+      ],
+      "seven_prechange_frames_match": true,
+      "report_closes_to_exact_fleet_detail": true,
+      "fleet_detail_closes_to_exact_list": true
+    },
+    "packed_report": {
+      "name": "Two source rows trial",
+      "observation": "All labels, numeric columns and return transitions pass.",
+      "rom": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/packed_report/Assigned_Fleet_Info_STAGED.nds",
+        "sha256": "b006d8af69f1141bcb0755b23654bd20c5daae05aaf0d3c4bf0b264ab524d574"
+      },
+      "stage": {
+        "path": "E:/Rota Nova translations/Generated/work/assigned_fleet_detail_20261123/packed_report/stage.json",
+        "sha256": "e6b3d5e58fe67ab93284bc739088093433e990c6a3dbfcf1175619886e7f18d5"
+      },
+      "evidence": [
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/capture/capture_report.json",
+          "sha256": "735eb09cdcbbca96c307049ffd20306ad4c3c710000b96a62f7918bbdf0db33c"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/terminal.json",
+          "sha256": "bd27a03a9ee918fd0bf864885c32ed2cfc517655b88af837169f005c495a9544"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/trace/requests.json",
+          "sha256": "d875294827f632b46c93e2824bdc5829f4d42bb3ccfae84577194bf3169819c6"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/trace/source_contract.json",
+          "sha256": "b77c4d9209969d39454193c42031de181affaaf43efe3dc529821cd3f589eeb9"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/capture/navigation_command_journal.json",
+          "sha256": "ae3f2a17c39ddaf4bfd3d7fcc145eba4b4169eeba01e716cd9308218a84cbf1a"
+        },
+        {
+          "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/controller.jsonl",
+          "sha256": "0da3b58c8e6cb829ffa73b32c07b8f80928bfcbeae8cbbb7ed4976e64efda491"
+        }
+      ],
+      "captures": [
+        {
+          "frame": 12000,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_packed_report_replay\\capture\\frame_012000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "8c8ef006fa164c2919732ee4d3c4c566b7da13efcb3cf213f2ef0063ed7b955e",
+          "framebuffer_sha256": "746134c7b4734d1568189b6c6d5ac0c0813083354fc83f2b1e6fe279d501f1d7"
+        },
+        {
+          "frame": 12400,
+          "path": "E:\\Rota Nova translations\\Generated\\work\\fleet_info_packed_report_replay\\capture\\frame_012400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "ddac14f4fecd6c4e353c54c2dcb8c1067bf886b75df33aa361d9406d544d0767",
+          "framebuffer_sha256": "05414e8b28876693fef615090173f1a6f21e850aaf35205d2bec5caadb54228a"
+        }
+      ],
+      "seven_prechange_frames_match": true,
+      "report_closes_to_exact_fleet_detail": true,
+      "fleet_detail_closes_to_exact_list": true,
+      "formatted": {
+        "destination": {
+          "text": "To: Stockholm",
+          "bounds": [
+            80,
+            247,
+            158,
+            258
+          ],
+          "ink_pixels": 148,
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "all_ink_and_blank_cells_exact": true
+        },
+        "retained_level": {
+          "text": "Level   30",
+          "bounds": [
+            80,
+            85,
+            140,
+            96
+          ],
+          "ink_pixels": 93,
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "all_ink_and_blank_cells_exact": true
+        },
+        "report_rows": [
+          {
+            "label": "Income",
+            "label_ink": 75,
+            "label_bounds": [
+              86,
+              269,
+              122,
+              280
+            ],
+            "displayed_amount": 0,
+            "amount_ink": 18,
+            "amount_bounds": [
+              194,
+              269,
+              200,
+              280
+            ]
+          },
+          {
+            "label": "Expenses",
+            "label_ink": 103,
+            "label_bounds": [
+              86,
+              283,
+              134,
+              294
+            ],
+            "displayed_amount": 0,
+            "amount_ink": 18,
+            "amount_bounds": [
+              194,
+              283,
+              200,
+              294
+            ]
+          },
+          {
+            "label": "Invested",
+            "label_ink": 99,
+            "label_bounds": [
+              86,
+              297,
+              134,
+              308
+            ],
+            "displayed_amount": 0,
+            "amount_ink": 18,
+            "amount_bounds": [
+              194,
+              297,
+              200,
+              308
+            ]
+          }
+        ],
+        "report_box_diff": [
+          74,
+          258,
+          212,
+          384
+        ],
+        "offline": {
+          "finance_cases": [
+            {
+              "amounts": [
+                0,
+                4294967295,
+                0
+              ],
+              "rendered_output": "Income            0Expenses 4294967295\nInvested          0",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                7,
+                4294967288,
+                0
+              ],
+              "rendered_output": "Income            7Expenses 4294967288\nInvested          0",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                67,
+                4294967228,
+                0
+              ],
+              "rendered_output": "Income           67Expenses 4294967228\nInvested          0",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                765,
+                4294966530,
+                7
+              ],
+              "rendered_output": "Income          765Expenses 4294966530\nInvested          7",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                7654,
+                4294959641,
+                76
+              ],
+              "rendered_output": "Income         7654Expenses 4294959641\nInvested         76",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                76543,
+                4294890752,
+                765
+              ],
+              "rendered_output": "Income        76543Expenses 4294890752\nInvested        765",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                765432,
+                4294201863,
+                7654
+              ],
+              "rendered_output": "Income       765432Expenses 4294201863\nInvested       7654",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                7654321,
+                4287312974,
+                76543
+              ],
+              "rendered_output": "Income      7654321Expenses 4287312974\nInvested      76543",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                76543210,
+                4218424085,
+                765432
+              ],
+              "rendered_output": "Income     76543210Expenses 4218424085\nInvested     765432",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                765432109,
+                3529535186,
+                7654321
+              ],
+              "rendered_output": "Income    765432109Expenses 3529535186\nInvested    7654321",
+              "bounds": [
+                228,
+                24
+              ]
+            },
+            {
+              "amounts": [
+                4294967295,
+                0,
+                42949672
+              ],
+              "rendered_output": "Income   4294967295Expenses          0\nInvested   42949672",
+              "bounds": [
+                228,
+                24
+              ]
+            }
+          ],
+          "destination_names": [
+            {
+              "destination": 0,
+              "output_hex": "546f3a204c6f6e646f6e",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 1,
+              "output_hex": "546f3a2042726973746f6c",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 2,
+              "output_hex": "546f3a20416d7374657264616d",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 3,
+              "output_hex": "546f3a20427275676573",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 4,
+              "output_hex": "546f3a204e616e746573",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 5,
+              "output_hex": "546f3a2048616d62757267",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 6,
+              "output_hex": "546f3a204c756265636b",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 7,
+              "output_hex": "546f3a2053746f636b686f6c6d",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 8,
+              "output_hex": "546f3a204f736c6f",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 9,
+              "output_hex": "546f3a20436f70656e686167656e",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 10,
+              "output_hex": "546f3a2052696761",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 11,
+              "output_hex": "546f3a204c6973626f6e",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 12,
+              "output_hex": "546f3a204365757461",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 13,
+              "output_hex": "546f3a20536576696c6c65",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 14,
+              "output_hex": "546f3a2056616c656e636961",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 15,
+              "output_hex": "546f3a2047656e6f61",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 16,
+              "output_hex": "546f3a204d61727365696c6c65",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 17,
+              "output_hex": "546f3a205379726163757365",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 18,
+              "output_hex": "546f3a2056656e696365",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 19,
+              "output_hex": "546f3a20417468656e73",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 20,
+              "output_hex": "546f3a204372657465",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 21,
+              "output_hex": "546f3a20437970727573",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 22,
+              "output_hex": "546f3a20497374616e62756c",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 23,
+              "output_hex": "546f3a20526167757361",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 24,
+              "output_hex": "546f3a20426569727574",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 25,
+              "output_hex": "546f3a20416c6578616e64726961",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 26,
+              "output_hex": "546f3a20547269706f6c69",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 27,
+              "output_hex": "546f3a20416c6769657273",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 28,
+              "output_hex": "546f3a2054756e6973",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 29,
+              "output_hex": "546f3a2053616f204a6f726765",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 30,
+              "output_hex": "546f3a204d616465697261",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 31,
+              "output_hex": "546f3a204c61732050616c6d6173",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 32,
+              "output_hex": "546f3a205665726465",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 33,
+              "output_hex": "546f3a204c75616e6461",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 34,
+              "output_hex": "546f3a20536f66616c61",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 35,
+              "output_hex": "546f3a204361706520546f776e",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 36,
+              "output_hex": "546f3a204d6f7a616d6269717565",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 37,
+              "output_hex": "546f3a204d6f67616469736875",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 38,
+              "output_hex": "546f3a204261737261",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 39,
+              "output_hex": "546f3a204164656e",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 40,
+              "output_hex": "546f3a204d7573636174",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 41,
+              "output_hex": "546f3a20486f726d757a",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 42,
+              "output_hex": "546f3a2043616c69637574",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 43,
+              "output_hex": "546f3a20476f61",
+              "width_px": 42,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 44,
+              "output_hex": "546f3a204365796c6f6e",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 45,
+              "output_hex": "546f3a2043616c6375747461",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 46,
+              "output_hex": "546f3a20417661",
+              "width_px": 42,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 47,
+              "output_hex": "546f3a204d616c61636361",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 48,
+              "output_hex": "546f3a204272756e6569",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 49,
+              "output_hex": "546f3a204d616e696c61",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 50,
+              "output_hex": "546f3a2042617461766961",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 51,
+              "output_hex": "546f3a2050616c656d62616e67",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 52,
+              "output_hex": "546f3a205465726e617465",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 53,
+              "output_hex": "546f3a20416d626f796e61",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 54,
+              "output_hex": "546f3a2048616e677a686f75",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 55,
+              "output_hex": "546f3a205175616e7a686f75",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 56,
+              "output_hex": "546f3a204d6163616f",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 57,
+              "output_hex": "546f3a2053656f756c",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 58,
+              "output_hex": "546f3a204e61676173616b69",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 59,
+              "output_hex": "546f3a204f73616b61",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 60,
+              "output_hex": "546f3a204e616861",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 61,
+              "output_hex": "546f3a20486176616e61",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 62,
+              "output_hex": "546f3a2053616e746f20446f6d696e676f",
+              "width_px": 102,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 63,
+              "output_hex": "546f3a2053616e204a75616e",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 64,
+              "output_hex": "546f3a204a616d61696361",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 65,
+              "output_hex": "546f3a20566572616372757a",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 66,
+              "output_hex": "546f3a204d6572696461",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 67,
+              "output_hex": "546f3a20506f72746f62656c6f",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 68,
+              "output_hex": "546f3a204d617261636169626f",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 69,
+              "output_hex": "546f3a205065726e616d6275636f",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 70,
+              "output_hex": "546f3a205472756a696c6c6f",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 71,
+              "output_hex": "546f3a20436179656e6e65",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 72,
+              "output_hex": "546f3a20536965727261204c656f6e65",
+              "width_px": 96,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 73,
+              "output_hex": "546f3a2053616f20546f6d65",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 74,
+              "output_hex": "546f3a204d616461676173636172",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 75,
+              "output_hex": "546f3a204d6f6d62617361",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 76,
+              "output_hex": "546f3a20536f636f747261",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 77,
+              "output_hex": "546f3a20446975",
+              "width_px": 42,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 78,
+              "output_hex": "546f3a204d6164726173",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 79,
+              "output_hex": "546f3a204d6173756c69706174616d",
+              "width_px": 90,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 80,
+              "output_hex": "546f3a20416368696e",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 81,
+              "output_hex": "546f3a2047696164696e",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 82,
+              "output_hex": "546f3a2042616e6a61726d6173696e",
+              "width_px": 90,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 83,
+              "output_hex": "546f3a204d616b6173736172",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 84,
+              "output_hex": "546f3a205375726162617961",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 85,
+              "output_hex": "546f3a2059697a686f75",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 86,
+              "output_hex": "546f3a2050656e7361636f6c61",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 87,
+              "output_hex": "546f3a2041626b68617a",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 88,
+              "output_hex": "546f3a204c656c7973746164",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 89,
+              "output_hex": "546f3a2054616d737569",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 90,
+              "output_hex": "546f3a20496e7576696b",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 91,
+              "output_hex": "546f3a20486177616969",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 92,
+              "output_hex": "546f3a2052696f206465204a616e6569726f",
+              "width_px": 108,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 93,
+              "output_hex": "546f3a20436875726368696c6c",
+              "width_px": 78,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 94,
+              "output_hex": "546f3a2056616c7061726169736f",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 95,
+              "output_hex": "546f3a204e6f6d65",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 96,
+              "output_hex": "546f3a204361706520436f64",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 97,
+              "output_hex": "546f3a204d6f6e7465766964656f",
+              "width_px": 84,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 98,
+              "output_hex": "546f3a2048656b6c61",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 99,
+              "output_hex": "546f3a204b617269626962",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 100,
+              "output_hex": "546f3a20466f72656c",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 101,
+              "output_hex": "546f3a20546168697469",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 102,
+              "output_hex": "546f3a2044696b736f6e",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 103,
+              "output_hex": "546f3a20417a6f726573",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 104,
+              "output_hex": "546f3a2053616e74612042617262617261",
+              "width_px": 102,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 105,
+              "output_hex": "546f3a204e617276696b",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 106,
+              "output_hex": "546f3a204c657665717565",
+              "width_px": 66,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 107,
+              "output_hex": "546f3a2043616c6c616f",
+              "width_px": 60,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 108,
+              "output_hex": "546f3a20457a6f",
+              "width_px": 42,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 109,
+              "output_hex": "546f3a205065727468",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 110,
+              "output_hex": "546f3a204775616d",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 111,
+              "output_hex": "546f3a2054696b7369",
+              "width_px": 54,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 112,
+              "output_hex": "546f3a204b6f7266",
+              "width_px": 48,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 113,
+              "output_hex": "546f3a2057616e67616e7569",
+              "width_px": 72,
+              "conditional_legacy_label": false
+            },
+            {
+              "destination": 114,
+              "output_hex": "546f3a20936093b98e74",
+              "width_px": 60,
+              "conditional_legacy_label": true
+            }
+          ],
+          "native_formatter": 34400408,
+          "observation": "Offline native substitution and allocation checks. Live pixels are verified separately."
+        }
+      }
+    }
+  },
+  "screenshot": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/assigned_fleet_detail_20261123.png",
+    "sha256": "18f1e76fd40d0cb29ab83c5ee3c205742e799124ff125b57b711edc846c1ced5"
+  },
+  "registered_ROM_changed": false,
+  "new_editorial_credit": 0,
+  "full_goal_complete": false
+}

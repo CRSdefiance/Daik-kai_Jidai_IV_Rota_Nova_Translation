@@ -1,0 +1,2176 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_601",
+      "message_ID": 601,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "A formal warning that the named supply has run out.",
+      "localization_note": "Keep the direct, urgent warning about the last of the supply. The sentence reads naturally with the common noun in lowercase.",
+      "clean_Japanese": "%sが\n底を突きました！",
+      "english": "No %s left!",
+      "previous_English": "No %s left!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "4e6f202573206c65667421",
+      "installed_hex": "4e6f202573206c65667421",
+      "source_reference": {
+        "block": 7,
+        "offset": 2384,
+        "copy_end": 2408,
+        "bytes": 21,
+        "record_index": 44,
+        "table_offset": 1318338,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2517,
+        "copy_end": 2529,
+        "bytes": 11,
+        "record_index": 113,
+        "table_offset": 1318338,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2517,
+        "copy_end": 2529,
+        "bytes": 11,
+        "record_index": 113,
+        "table_offset": 1318338,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2517,
+        "copy_end": 2529,
+        "bytes": 11,
+        "record_index": 113,
+        "table_offset": 1318338,
+        "start_in_record": 0,
+        "exact_stored_hex": "4e6f202573206c65667421",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 601,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "204e6f207761746572206c65667421",
+          "lines": [
+            "No water left!"
+          ],
+          "native_glyphs": 12,
+          "native_plane_sha256": "18a441d31a76b9547d16c5993252b0c94809d1cc7fbe6aeba1cf58dc450a96cf",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520900,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 4,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 601,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "204e6f20666f6f64206c65667421",
+          "lines": [
+            "No food left!"
+          ],
+          "native_glyphs": 11,
+          "native_plane_sha256": "e5c08238379758613471e7d0912012e33bd5d5baf56566675005381caf135c12",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520900,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 4,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": [
+        {
+          "frame": 9076,
+          "message_ID": 601,
+          "before": {
+            "capture": {
+              "frame": 9076,
+              "path": "work\\analysis\\ceuta_sea_encounters_20261122\\capture\\frame_009076_cold_boot.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "457498c52e907d8032e1351debe2c7aabbdacc2ee7f1c03429761253ec2c9509",
+              "framebuffer_sha256": "730b42f0ec3ce34fed719e1c2f11d0f754b3a52c260ac1667b4853930830c63a"
+            },
+            "text": "No Water left!",
+            "glyph_count": 12,
+            "exact_native_ink": true
+          },
+          "after": {
+            "capture": {
+              "frame": 9076,
+              "path": "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\ordinary_replay\\capture\\frame_009076_cold_boot.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "d7cadc4d6253d502f67bb231cd972844ae3561aec9ca082c952970608d245bd6",
+              "framebuffer_sha256": "9e1852f0643d49649ed943707e3881ee2ea9f4385482bfba15b0662f1a471ebc"
+            },
+            "text": "No water left!",
+            "glyph_count": 12,
+            "exact_native_ink": true
+          },
+          "diff_rectangle": [
+            40,
+            297,
+            45,
+            303
+          ]
+        },
+        {
+          "frame": 9276,
+          "message_ID": 601,
+          "before": {
+            "capture": {
+              "frame": 9276,
+              "path": "work\\analysis\\ceuta_sea_encounters_20261122\\capture\\frame_009276_cold_boot.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "8636a7ae86cfb7ece27050d6c02bb31ea4e1935c23bddfcc42bce6c37ad0a626",
+              "framebuffer_sha256": "8fd9402595754e422d4b981250824c1413afae23ddfba863c1309d9ffe35b80c"
+            },
+            "text": "No Food left!",
+            "glyph_count": 11,
+            "exact_native_ink": true
+          },
+          "after": {
+            "capture": {
+              "frame": 9276,
+              "path": "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\ordinary_replay\\capture\\frame_009276_cold_boot.png",
+              "dimensions": [
+                256,
+                384
+              ],
+              "pixel_format": 2,
+              "PNG_sha256": "391d1ee46a8e7501b3d05cc43995e24fe58771ed7b64caa5d410c55362b47ad7",
+              "framebuffer_sha256": "439d565e7c03ba6bdb19b6f71affcf51a39fff093bf9b4a759b0b800f5f70fba"
+            },
+            "text": "No food left!",
+            "glyph_count": 11,
+            "exact_native_ink": true
+          },
+          "diff_rectangle": [
+            40,
+            297,
+            44,
+            306
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_602",
+      "message_ID": 602,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "The speaker reports there is none of the named supply left.",
+      "localization_note": "The measured full sentence reports that the named supply is gone and suits this voice.",
+      "clean_Japanese": "%sの\n残りがなくなりました！",
+      "english": "There's no %s left!",
+      "previous_English": "There's no %s left!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882e882dc82b582bd8149",
+      "current_hex": "54686572652773206e6f202573206c65667421",
+      "installed_hex": "54686572652773206e6f202573206c65667421",
+      "source_reference": {
+        "block": 7,
+        "offset": 2408,
+        "copy_end": 2436,
+        "bytes": 27,
+        "record_index": 45,
+        "table_offset": 1318340,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2529,
+        "copy_end": 2549,
+        "bytes": 19,
+        "record_index": 114,
+        "table_offset": 1318340,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2529,
+        "copy_end": 2549,
+        "bytes": 19,
+        "record_index": 114,
+        "table_offset": 1318340,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2529,
+        "copy_end": 2549,
+        "bytes": 19,
+        "record_index": 114,
+        "table_offset": 1318340,
+        "start_in_record": 0,
+        "exact_stored_hex": "54686572652773206e6f202573206c65667421",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 602,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "2054686572652773206e6f207761746572206c65667421",
+          "lines": [
+            "There's no water left!"
+          ],
+          "native_glyphs": 19,
+          "native_plane_sha256": "24552649ee0cb292b34e74d2d78e7cb0b570d6f3ae12b9eca3c19b6446b30b25",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520804,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 1,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 602,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "2054686572652773206e6f20666f6f64206c65667421",
+          "lines": [
+            "There's no food left!"
+          ],
+          "native_glyphs": 18,
+          "native_plane_sha256": "24bf35c3ebde6a72b1182aa20cc6c440f0e3ee7ecd9bf4ea66537c3e0ae14c2c",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520804,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 1,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_603",
+      "message_ID": 603,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "An informal speaker says there is none of the named supply left.",
+      "localization_note": "The familiar first-person report is clear, and the contraction suits a hurried announcement.",
+      "clean_Japanese": "%sの\n残りがなくなったよ！",
+      "english": "We've run out of %s!",
+      "previous_English": "We've run out of %s!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382cc0a8e6382e882aa82c882ad82c882c182bd82e68149",
+      "current_hex": "57652776652072756e206f7574206f6620257321",
+      "installed_hex": "57652776652072756e206f7574206f6620257321",
+      "source_reference": {
+        "block": 7,
+        "offset": 2436,
+        "copy_end": 2464,
+        "bytes": 25,
+        "record_index": 46,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2549,
+        "copy_end": 2571,
+        "bytes": 20,
+        "record_index": 115,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2549,
+        "copy_end": 2571,
+        "bytes": 20,
+        "record_index": 115,
+        "table_offset": 1318342,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2549,
+        "copy_end": 2571,
+        "bytes": 20,
+        "record_index": 115,
+        "table_offset": 1318342,
+        "start_in_record": 0,
+        "exact_stored_hex": "57652776652072756e206f7574206f6620257321",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 603,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620776174657221",
+          "lines": [
+            "We've run out of water!"
+          ],
+          "native_glyphs": 19,
+          "native_plane_sha256": "67372e3d8ade67979840e0718f9d5bfcf01c4684cc0a98bc088cb91cab89eefd",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520772,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 0,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 603,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620666f6f6421",
+          "lines": [
+            "We've run out of food!"
+          ],
+          "native_glyphs": 18,
+          "native_plane_sha256": "5c5feb6d8aea1495a9e39a729f25dea548e95e5c77d63f2144e22a04b7073065",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520772,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 0,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_604",
+      "message_ID": 604,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "The speaker says they have no more of the named supply.",
+      "localization_note": "The direct statement emphasizes that nothing remains in this speaker's matter-of-fact voice.",
+      "clean_Japanese": "もう%sの\n残りがないわ！",
+      "english": "We don't have any %s left!",
+      "previous_English": "We don't have any %s left!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "82e082a4257382cc0a8e6382e882aa82c882a282ed8149",
+      "current_hex": "576520646f6e2774206861766520616e79202573206c65667421",
+      "installed_hex": "576520646f6e2774206861766520616e79202573206c65667421",
+      "source_reference": {
+        "block": 7,
+        "offset": 2464,
+        "copy_end": 2488,
+        "bytes": 23,
+        "record_index": 47,
+        "table_offset": 1318344,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2571,
+        "copy_end": 2599,
+        "bytes": 26,
+        "record_index": 117,
+        "table_offset": 1318344,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2571,
+        "copy_end": 2599,
+        "bytes": 26,
+        "record_index": 117,
+        "table_offset": 1318344,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2571,
+        "copy_end": 2599,
+        "bytes": 26,
+        "record_index": 117,
+        "table_offset": 1318344,
+        "start_in_record": 0,
+        "exact_stored_hex": "576520646f6e2774206861766520616e79202573206c65667421",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 604,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "20576520646f6e2774206861766520616e79207761746572206c65667421",
+          "lines": [
+            "We don't have any water left!"
+          ],
+          "native_glyphs": 24,
+          "native_plane_sha256": "7e50ad38092c69256991c35924f7d17a91443394107a774cc8de0f4fa1a30a59",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520836,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 2,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 604,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "20576520646f6e2774206861766520616e7920666f6f64206c65667421",
+          "lines": [
+            "We don't have any food left!"
+          ],
+          "native_glyphs": 23,
+          "native_plane_sha256": "d99a193a3dd9ae886006bb16d1b6d4c4151f85d19c147c7dde80ed5ea4968a53",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520836,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 2,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_605",
+      "message_ID": 605,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "A direct warning that the named supply has run out.",
+      "localization_note": "Keep the clipped, urgent warning. It sounds right in the middle of sailing.",
+      "clean_Japanese": "%sが\n底を突きました！",
+      "english": "We're out of %s!",
+      "previous_English": "We're out of %s!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd8149",
+      "current_hex": "5765277265206f7574206f6620257321",
+      "installed_hex": "5765277265206f7574206f6620257321",
+      "source_reference": {
+        "block": 7,
+        "offset": 2488,
+        "copy_end": 2512,
+        "bytes": 21,
+        "record_index": 48,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2599,
+        "copy_end": 2617,
+        "bytes": 16,
+        "record_index": 119,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2599,
+        "copy_end": 2617,
+        "bytes": 16,
+        "record_index": 119,
+        "table_offset": 1318346,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2599,
+        "copy_end": 2617,
+        "bytes": 16,
+        "record_index": 119,
+        "table_offset": 1318346,
+        "start_in_record": 0,
+        "exact_stored_hex": "5765277265206f7574206f6620257321",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 605,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620776174657221",
+          "lines": [
+            "We're out of water!"
+          ],
+          "native_glyphs": 16,
+          "native_plane_sha256": "0e6944af6efbabb295238b082893f806cf92886a71e25638dd7a8ca03706a49b",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520932,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 5,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 605,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620666f6f6421",
+          "lines": [
+            "We're out of food!"
+          ],
+          "native_glyphs": 15,
+          "native_plane_sha256": "34eaf9246400e75805d0f3bc8691a7b936fc3629bf8f4361970ce8cef337e31e",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520932,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 5,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_606",
+      "message_ID": 606,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "The older voice announces with dismay that the named supply is exhausted.",
+      "localization_note": "The older speaker's dismay comes through in 'gone and run out,' without adding a consequence.",
+      "clean_Japanese": "%sが\n底を突いてしもうたぞ！",
+      "english": "We've gone and run out of %s!",
+      "previous_English": "We've gone and run out of %s!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82a282c482b582e082a482bd82bc8149",
+      "current_hex": "576527766520676f6e6520616e642072756e206f7574206f6620257321",
+      "installed_hex": "576527766520676f6e6520616e642072756e206f7574206f6620257321",
+      "source_reference": {
+        "block": 7,
+        "offset": 2512,
+        "copy_end": 2540,
+        "bytes": 27,
+        "record_index": 49,
+        "table_offset": 1318348,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2617,
+        "copy_end": 2647,
+        "bytes": 29,
+        "record_index": 121,
+        "table_offset": 1318348,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2617,
+        "copy_end": 2647,
+        "bytes": 29,
+        "record_index": 121,
+        "table_offset": 1318348,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2617,
+        "copy_end": 2647,
+        "bytes": 29,
+        "record_index": 121,
+        "table_offset": 1318348,
+        "start_in_record": 0,
+        "exact_stored_hex": "576527766520676f6e6520616e642072756e206f7574206f6620257321",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 606,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "20576527766520676f6e6520616e642072756e206f7574206f6620776174657221",
+          "lines": [
+            "We've gone and run out of water!"
+          ],
+          "native_glyphs": 26,
+          "native_plane_sha256": "b132cbfb6c02181b7ca8b3a8285f6606f64a4834a4ce2129b5e571505175b415",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520964,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 6,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 606,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "20576527766520676f6e6520616e642072756e206f7574206f6620666f6f6421",
+          "lines": [
+            "We've gone and run out of food!"
+          ],
+          "native_glyphs": 25,
+          "native_plane_sha256": "9bf47ff1fafabcddef88e65014c3a187c6cf95bae7f9a071f8c72fec00eac5df",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520964,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 6,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_607",
+      "message_ID": 607,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "A frightened speaker stammers and says they have completely run out of the named supply.",
+      "localization_note": "Restore the startled stammer in the original exclamation, then let the younger sailor state the emergency directly.",
+      "clean_Japanese": "た、大変だよ！\n%sが\nなくなっちゃったぁ！！",
+      "english": "O-oh no! We're out of %s!",
+      "previous_English": "Oh no! We're all out of %s!",
+      "decision": "revision",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "82bd814191e595cf82be82e681490a257382aa0a82c882ad82c882c182bf82e182c182bd829f81498149",
+      "current_hex": "4f68206e6f2120576527726520616c6c206f7574206f6620257321",
+      "installed_hex": "4f2d6f68206e6f21205765277265206f7574206f6620257321",
+      "source_reference": {
+        "block": 7,
+        "offset": 2540,
+        "copy_end": 2584,
+        "bytes": 42,
+        "record_index": 50,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2647,
+        "copy_end": 2676,
+        "bytes": 27,
+        "record_index": 122,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2647,
+        "copy_end": 2676,
+        "bytes": 25,
+        "record_index": 122,
+        "table_offset": 1318350,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2647,
+        "copy_end": 2676,
+        "bytes": 25,
+        "record_index": 122,
+        "table_offset": 1318350,
+        "start_in_record": 0,
+        "exact_stored_hex": "4f2d6f68206e6f21205765277265206f7574206f6620257321",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 607,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "204f2d6f68206e6f21205765277265206f7574206f6620776174657221",
+          "lines": [
+            "O-oh no! We're out of water!"
+          ],
+          "native_glyphs": 23,
+          "native_plane_sha256": "6444419c6deeacebc7411733d32b624cc754a76c478dca1a012b8c710e9ad6e2",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521220,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 14,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 607,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "204f2d6f68206e6f21205765277265206f7574206f6620666f6f6421",
+          "lines": [
+            "O-oh no! We're out of food!"
+          ],
+          "native_glyphs": 22,
+          "native_plane_sha256": "e5242f5cd9ecbe3d4d196bfcd10df93220c29a8348f3a2618f98c196472572b2",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521220,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 14,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_608",
+      "message_ID": 608,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "The First Mate voice reports that one of the two supplies has run out. The game checks the two supplies in original order.",
+      "source_meaning": "A polite but emphatic speaker says they've run out of the named supply.",
+      "localization_note": "The emphatic first-person report states the shortage without inventing a remedy.",
+      "clean_Japanese": "%sが\n底を突きましたぞ！",
+      "english": "We've run out of %s!",
+      "previous_English": "We've run out of %s!",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd82bc8149",
+      "current_hex": "57652776652072756e206f7574206f6620257321",
+      "installed_hex": "57652776652072756e206f7574206f6620257321",
+      "source_reference": {
+        "block": 7,
+        "offset": 2584,
+        "copy_end": 2608,
+        "bytes": 23,
+        "record_index": 51,
+        "table_offset": 1318352,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2676,
+        "copy_end": 2698,
+        "bytes": 20,
+        "record_index": 124,
+        "table_offset": 1318352,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2676,
+        "copy_end": 2698,
+        "bytes": 20,
+        "record_index": 126,
+        "table_offset": 1318352,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "Water or Food"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2676,
+        "copy_end": 2698,
+        "bytes": 20,
+        "record_index": 126,
+        "table_offset": 1318352,
+        "start_in_record": 0,
+        "exact_stored_hex": "57652776652072756e206f7574206f6620257321",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 608,
+          "arguments": [
+            "water"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620776174657221",
+          "lines": [
+            "We've run out of water!"
+          ],
+          "native_glyphs": 19,
+          "native_plane_sha256": "67372e3d8ade67979840e0718f9d5bfcf01c4684cc0a98bc088cb91cab89eefd",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521380,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 19,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 608,
+          "arguments": [
+            "food"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620666f6f6421",
+          "lines": [
+            "We've run out of food!"
+          ],
+          "native_glyphs": 18,
+          "native_plane_sha256": "5c5feb6d8aea1495a9e39a729f25dea548e95e5c77d63f2144e22a04b7073065",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521380,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702752,
+            "supplied_offline_actor_ID": 19,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_609",
+      "message_ID": 609,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Sailor selected by the original fleet",
+      "context": "A hungry sailor speaks about dizziness and feeling unable to go on. The source does not describe a collapse.",
+      "source_meaning": "The sailor moans, feels dizzy and hungry, and fears they can't go on.",
+      "localization_note": "Keep the groan, dizzy spell, hunger, and trailing fear. The distressed speech progresses in four audible beats.",
+      "clean_Japanese": "うう…目が回る…\n腹が減った…\nもう…ダメだ…",
+      "english": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "previous_English": "Ugh... My head's spinning... I'm so hungry... I can't go on...",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": false,
+      "source_hex": "82a482a4816396da82aa89f182e981630a95a082aa8cb882c182bd81630a82e082a48163835f838182be8163",
+      "current_hex": "205567682e2e2e204d7920686561642773207370696e6e696e672e2e2e0a202049276d20736f2068756e6772792e2e2e20492063616e277420676f206f6e2e2e2e",
+      "installed_hex": "205567682e2e2e204d7920686561642773207370696e6e696e672e2e2e0a202049276d20736f2068756e6772792e2e2e20492063616e277420676f206f6e2e2e2e",
+      "source_reference": {
+        "block": 7,
+        "offset": 2608,
+        "copy_end": 2652,
+        "bytes": 44,
+        "record_index": 52,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2698,
+        "copy_end": 2765,
+        "bytes": 65,
+        "record_index": 126,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2698,
+        "copy_end": 2765,
+        "bytes": 65,
+        "record_index": 128,
+        "table_offset": 1318354,
+        "start_in_record": 0
+      },
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "retained_display_evidence": "releases\\all_routes_editorial_20261111_ship_emergency_candidate\\verification\\registered_review.json",
+      "registered_reference": {
+        "block": 7,
+        "offset": 2698,
+        "copy_end": 2765,
+        "bytes": 65,
+        "record_index": 128,
+        "table_offset": 1318354,
+        "start_in_record": 0,
+        "exact_stored_hex": "205567682e2e2e204d7920686561642773207370696e6e696e672e2e2e0a202049276d20736f2068756e6772792e2e2e20492063616e277420676f206f6e2e2e2e",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_610",
+      "message_ID": 610,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "source_meaning": "The formal speaker reports exhausting the named supply and says the named activity is being canceled.",
+      "localization_note": "The formal report puts the cause before the decision to stop automatic travel.",
+      "clean_Japanese": "%sが\n底を突きました\n%sを\n中止します",
+      "english": "We've run out of %s. We're stopping %s.",
+      "previous_English": "We've run out of %s. We're stopping %s.",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82ab82dc82b582bd0a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "2057652776652072756e206f7574206f662025732e0a202057652772652073746f7070696e672025732e",
+      "installed_hex": "2057652776652072756e206f7574206f662025732e0a202057652772652073746f7070696e672025732e",
+      "source_reference": {
+        "block": 7,
+        "offset": 2652,
+        "copy_end": 2688,
+        "bytes": 35,
+        "record_index": 52,
+        "table_offset": 1318356,
+        "start_in_record": 44
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2765,
+        "copy_end": 2809,
+        "bytes": 42,
+        "record_index": 128,
+        "table_offset": 1318356,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2765,
+        "copy_end": 2809,
+        "bytes": 42,
+        "record_index": 130,
+        "table_offset": 1318356,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2765,
+        "copy_end": 2809,
+        "bytes": 42,
+        "record_index": 130,
+        "table_offset": 1318356,
+        "start_in_record": 0,
+        "exact_stored_hex": "2057652776652072756e206f7574206f662025732e0a202057652772652073746f7070696e672025732e",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 610,
+          "arguments": [
+            "water",
+            "automatic travel"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f662077617465722e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We've run out of water.",
+            "We're stopping automatic travel."
+          ],
+          "native_glyphs": 48,
+          "native_plane_sha256": "aace14294e996bf524baa90fff0b1dedaa1a81f756d17c662cd7b84b23bda526",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520772,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 0,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 610,
+          "arguments": [
+            "food",
+            "automatic travel"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620666f6f642e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We've run out of food.",
+            "We're stopping automatic travel."
+          ],
+          "native_glyphs": 47,
+          "native_plane_sha256": "12090a65481454d0a3881438b63f52ff7c853177618f40ebba6e6bf87fd73b7d",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520772,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 0,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 610,
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "prepared_hex": "2057652776652072756e206f7574206f6620776174657220616e6420666f6f642e0a202057652772652073746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We've run out of water and food.",
+            "We're stopping automatic travel."
+          ],
+          "native_glyphs": 55,
+          "native_plane_sha256": "5f45cadffabe67854c88ea486176464f4fc5d327a47051bbfaddbecc12d655fa",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520772,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 0,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_611",
+      "message_ID": 611,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "source_meaning": "After acknowledging the named shortage with a pause, the speaker says they are canceling the named activity.",
+      "localization_note": "The pause separates a realization about the shortage from the terse confirmation that travel is stopping.",
+      "clean_Japanese": "%sが\n底を突いたか…\n%sを\n中止します",
+      "english": "So we're out of %s... Stopping %s.",
+      "previous_English": "So we're out of %s... Stopping %s.",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82a981630a257382f00a92868e7e82b582dc82b7",
+      "current_hex": "20536f207765277265206f7574206f662025732e2e2e0a202053746f7070696e672025732e",
+      "installed_hex": "20536f207765277265206f7574206f662025732e2e2e0a202053746f7070696e672025732e",
+      "source_reference": {
+        "block": 7,
+        "offset": 2688,
+        "copy_end": 2724,
+        "bytes": 35,
+        "record_index": 53,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2809,
+        "copy_end": 2848,
+        "bytes": 37,
+        "record_index": 130,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2809,
+        "copy_end": 2848,
+        "bytes": 37,
+        "record_index": 132,
+        "table_offset": 1318358,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2809,
+        "copy_end": 2848,
+        "bytes": 37,
+        "record_index": 132,
+        "table_offset": 1318358,
+        "start_in_record": 0,
+        "exact_stored_hex": "20536f207765277265206f7574206f662025732e2e2e0a202053746f7070696e672025732e",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 611,
+          "arguments": [
+            "water",
+            "automatic travel"
+          ],
+          "prepared_hex": "20536f207765277265206f7574206f662077617465722e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "So we're out of water...",
+            "Stopping automatic travel."
+          ],
+          "native_glyphs": 44,
+          "native_plane_sha256": "63fd0994ac464a37ba93b62a5e66047d9012c2036cc4bc532525fe52cd036491",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520932,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 5,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 611,
+          "arguments": [
+            "food",
+            "automatic travel"
+          ],
+          "prepared_hex": "20536f207765277265206f7574206f6620666f6f642e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "So we're out of food...",
+            "Stopping automatic travel."
+          ],
+          "native_glyphs": 43,
+          "native_plane_sha256": "c03d9e11f907c629c95cab276c06a39f5529c4523c8a1bb321090a8dc7fcaf87",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520932,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 5,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 611,
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "prepared_hex": "20536f207765277265206f7574206f6620776174657220616e6420666f6f642e2e2e0a202053746f7070696e67206175746f6d617469632074726176656c2e",
+          "lines": [
+            "So we're out of water and food...",
+            "Stopping automatic travel."
+          ],
+          "native_glyphs": 51,
+          "native_plane_sha256": "3683e30ce160397b9f875c8ec9bee847b648ee6bfc2f15b954c6cf07019b7124",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520932,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 5,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_612",
+      "message_ID": 612,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "source_meaning": "The older speaker notes the named supply has run out and announces they will stop the named activity.",
+      "localization_note": "The older speaker states the cause and then tells the crew they will stop. The two sentences keep those actions clear.",
+      "clean_Japanese": "%sが\n底を突いたのう\n%sを\n中止するぞ",
+      "english": "We're out of %s. We'll stop %s.",
+      "previous_English": "We're out of %s. We'll stop %s.",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a92ea82f093cb82a282bd82cc82a40a257382f00a92868e7e82b782e982bc",
+      "current_hex": "205765277265206f7574206f662025732e0a20205765276c6c2073746f702025732e",
+      "installed_hex": "205765277265206f7574206f662025732e0a20205765276c6c2073746f702025732e",
+      "source_reference": {
+        "block": 7,
+        "offset": 2724,
+        "copy_end": 2760,
+        "bytes": 35,
+        "record_index": 54,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2848,
+        "copy_end": 2884,
+        "bytes": 34,
+        "record_index": 132,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2848,
+        "copy_end": 2884,
+        "bytes": 34,
+        "record_index": 134,
+        "table_offset": 1318360,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2848,
+        "copy_end": 2884,
+        "bytes": 34,
+        "record_index": 134,
+        "table_offset": 1318360,
+        "start_in_record": 0,
+        "exact_stored_hex": "205765277265206f7574206f662025732e0a20205765276c6c2073746f702025732e",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 612,
+          "arguments": [
+            "water",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f662077617465722e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of water.",
+            "We'll stop automatic travel."
+          ],
+          "native_glyphs": 41,
+          "native_plane_sha256": "41413d297e560307cc7b429235e4d2e9589587a11b57b5be738a2d898cc8102f",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520964,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 6,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 612,
+          "arguments": [
+            "food",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620666f6f642e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of food.",
+            "We'll stop automatic travel."
+          ],
+          "native_glyphs": 40,
+          "native_plane_sha256": "722d4417cde040cd02282de6686de4b89067257448076e98edd6604710ca5729",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520964,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 6,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 612,
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620776174657220616e6420666f6f642e0a20205765276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of water and food.",
+            "We'll stop automatic travel."
+          ],
+          "native_glyphs": 48,
+          "native_plane_sha256": "527d68f0a8f1ac4829b93f6b728a5d8bc9a2231430c3bcbe8eb169041646c574",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36520964,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 6,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    },
+    {
+      "id": "COMMON_MESSAGE_613",
+      "message_ID": 613,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "First Mate",
+      "context": "Automatic travel stops when supplies run out. The first argument identifies the depleted supplies and the second names the canceled activity.",
+      "source_meaning": "The youthful speaker acknowledges that none of the named supply is left and says they will stop the named activity.",
+      "localization_note": "Keep the young speaker's realization in the tag and the decision to stop in the first person.",
+      "clean_Japanese": "%sが\nなくなっちゃったね\n%sを\nやめるよ",
+      "english": "We're out of %s, huh? I'll stop %s.",
+      "previous_English": "We're out of %s, huh? I'll stop %s.",
+      "decision": "retention",
+      "single_supply_display_argument_lowercase": true,
+      "source_hex": "257382aa0a82c882ad82c882c182bf82e182c182bd82cb0a257382f00a82e282df82e982e6",
+      "current_hex": "205765277265206f7574206f662025732c206875683f0a202049276c6c2073746f702025732e",
+      "installed_hex": "205765277265206f7574206f662025732c206875683f0a202049276c6c2073746f702025732e",
+      "source_reference": {
+        "block": 7,
+        "offset": 2760,
+        "copy_end": 2800,
+        "bytes": 37,
+        "record_index": 55,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 2884,
+        "copy_end": 2923,
+        "bytes": 38,
+        "record_index": 134,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "installed_reference": {
+        "block": 7,
+        "offset": 2884,
+        "copy_end": 2923,
+        "bytes": 38,
+        "record_index": 136,
+        "table_offset": 1318362,
+        "start_in_record": 0
+      },
+      "original_substitutions": [
+        "one or both depleted supplies",
+        "automatic travel"
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 7,
+        "offset": 2884,
+        "copy_end": 2923,
+        "bytes": 38,
+        "record_index": 136,
+        "table_offset": 1318362,
+        "start_in_record": 0,
+        "exact_stored_hex": "205765277265206f7574206f662025732c206875683f0a202049276c6c2073746f702025732e",
+        "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428"
+      },
+      "formatting_cases": [
+        {
+          "message_ID": 613,
+          "arguments": [
+            "water",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f662077617465722c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of water, huh?",
+            "I'll stop automatic travel."
+          ],
+          "native_glyphs": 44,
+          "native_plane_sha256": "4742f8f55be8edccc0636d1ed3e9b8621445e8f78fbddfe6ae14bd47ae89c03e",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521220,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 14,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 613,
+          "arguments": [
+            "food",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620666f6f642c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of food, huh?",
+            "I'll stop automatic travel."
+          ],
+          "native_glyphs": 43,
+          "native_plane_sha256": "4a161911c3aa5f7a3156ee85aafb4340abba08899434e7dc819606cf3d92493a",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521220,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 14,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        },
+        {
+          "message_ID": 613,
+          "arguments": [
+            "water and food",
+            "automatic travel"
+          ],
+          "prepared_hex": "205765277265206f7574206f6620776174657220616e6420666f6f642c206875683f0a202049276c6c2073746f70206175746f6d617469632074726176656c2e",
+          "lines": [
+            "We're out of water and food, huh?",
+            "I'll stop automatic travel."
+          ],
+          "native_glyphs": 51,
+          "native_plane_sha256": "185886847fb871153772ba2c86791dfdeaca1a0904076e513d1d9a0d465cbb2a",
+          "exact_first_and_last": true,
+          "full_raster_and_bounds": true,
+          "source_derived_voice_table": {
+            "output": 36234664,
+            "speaker_pointer": 36521220,
+            "parent": 33897912,
+            "original_entry": 33897796,
+            "original_table": 34702720,
+            "supplied_offline_actor_ID": 14,
+            "original_file_reads": [
+              [
+                4,
+                36235012,
+                4
+              ],
+              [
+                8,
+                36243724,
+                168
+              ],
+              [
+                31503,
+                36235020,
+                5276
+              ]
+            ]
+          }
+        }
+      ],
+      "ordinary_gameplay_holds": []
+    }
+  ],
+  "previous_registered_review": "releases\\all_routes_editorial_20261111_ship_emergency_candidate\\verification\\registered_review.json",
+  "previous_registered_review_sha256": "0a858097fae2545370a921a430770bcda51e199e5a110e90ebc03e0d09b3591e",
+  "new_contextual_records": 0,
+  "full_goal_complete": false,
+  "candidate_sha256": "610e0bfa43266dbc753088f51625fbd15bc69e65c85c15376fc8ce04bf590428",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_SC0_qualification.json",
+      "sha256": "06880ee325fa874168ee50f47ce8d120dce1cf842a70a159d6200e8079b8c218"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "work\\analysis\\rafael_B141_B160_followup_20261121\\palace_and_alliance_staged_v2\\source25_current_qualification.json",
+      "sha256": "ff499ecc08318e60c3270dce54cada1bf91785ba1e4c41ec12e340d151dc01a0"
+    }
+  },
+  "direct_visual_review": {
+    "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\portrait_sheet_01.png": "b0e3a2022af396b4bed8e55ead897c5d9615e56674dbb2a54f0a6c78b00cf251",
+    "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\portrait_sheet_02.png": "fdca9a4c946ea22f3d12bbc3051615bb7c52a2f952c0a9fbb4ae598924deb8de",
+    "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\ordinary_replay\\supply_alert_comparison.png": "26097fa23571656ac470ef2e06f69a273706a04aca1767e7f9abe0104fc9cde0"
+  },
+  "ordinary_sailing_playback": "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\ordinary_replay\\verified_gameplay.json",
+  "native_supply_cases": "work\\analysis\\ceuta_sea_encounters_20261122\\staged\\native_pages.json",
+  "unchanged_pending_records": 276,
+  "historical_source_credit": {
+    "by_census_id": {},
+    "direct_keys": 13
+  },
+  "full_editorial_goal_complete": false
+}

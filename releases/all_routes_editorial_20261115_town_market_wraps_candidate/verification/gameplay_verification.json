@@ -1,0 +1,194 @@
+{
+  "candidate_sha256": "9bd21cd75b7c4edf8357b506f6f45dccf6d06ac9fcebca32959e587cd0099f3e",
+  "complete_holds": [
+    {
+      "case": "promoter",
+      "frame": 4600,
+      "message_ID": 739,
+      "visible_lines": [
+        "Hey, sailor! Could you take me",
+        "to the square in another town?",
+        "Any town will do..."
+      ],
+      "full_ink_pixels": 779
+    },
+    {
+      "case": "promoter",
+      "frame": 4800,
+      "message_ID": 739,
+      "visible_lines": [
+        "Hey, sailor! Could you take me",
+        "to the square in another town?",
+        "Any town will do..."
+      ],
+      "full_ink_pixels": 779
+    },
+    {
+      "case": "promoter",
+      "frame": 5000,
+      "message_ID": 740,
+      "visible_lines": [
+        "Really? I owe you one! Let's bring",
+        "new trends to towns all over the",
+        "world!"
+      ],
+      "full_ink_pixels": 715
+    },
+    {
+      "case": "specialty",
+      "frame": 4200,
+      "message_ID": 742,
+      "visible_lines": [
+        "Hey! Could I have your Baby Shark?",
+        "I think we could make Caviar a",
+        "local specialty here."
+      ],
+      "full_ink_pixels": 874
+    },
+    {
+      "case": "specialty",
+      "frame": 4600,
+      "message_ID": 742,
+      "visible_lines": [
+        "Hey! Could I have your Baby Shark?",
+        "I think we could make Caviar a",
+        "local specialty here."
+      ],
+      "full_ink_pixels": 874
+    },
+    {
+      "case": "specialty",
+      "frame": 5000,
+      "message_ID": 743,
+      "visible_lines": [
+        "Really? You're so kind!",
+        "You're the best!"
+      ],
+      "full_ink_pixels": 395
+    },
+    {
+      "case": "specialty",
+      "frame": 5200,
+      "message_ID": 743,
+      "visible_lines": [
+        "Really? You're so kind!",
+        "You're the best!"
+      ],
+      "full_ink_pixels": 395
+    },
+    {
+      "case": "market",
+      "frame": 5400,
+      "message_ID": 748,
+      "visible_lines": [
+        "Huh? Sorry, that won't be enough.",
+        "Come back when you've earned more."
+      ],
+      "full_ink_pixels": 706
+    },
+    {
+      "case": "market",
+      "frame": 5600,
+      "message_ID": 748,
+      "visible_lines": [
+        "Huh? Sorry, that won't be enough.",
+        "Come back when you've earned more."
+      ],
+      "full_ink_pixels": 706
+    }
+  ],
+  "transitions": {
+    "promoter": {
+      "frame": 5400,
+      "screen_observation": "Returned to the Square menu after accepting the ride.",
+      "original_state_before": {
+        "travel_flag": 0,
+        "tracked_city": 74,
+        "player_address": 36520768,
+        "state_address": 36527508
+      },
+      "original_state_after": {
+        "travel_flag": 4,
+        "tracked_city": 22,
+        "player_address": 36520768,
+        "state_address": 36527508
+      },
+      "setup_changed_RAM_bytes": 4
+    },
+    "specialty": {
+      "frame": 5800,
+      "screen_observation": "Continued to the town news after agreeing to hand over Baby Shark.",
+      "original_state_before": 4,
+      "original_state_after": 0,
+      "setup_changed_RAM_bytes": 1
+    },
+    "market": {
+      "frame": 6200,
+      "screen_observation": "Returned to Trade, Invest, and Market Info after dismissing the warning.",
+      "original_state_before": {
+        "cash": 0,
+        "share": 0,
+        "investment_accumulator": 5368,
+        "growth": 5369,
+        "minimum_investment": 2684
+      },
+      "original_state_after": {
+        "cash": 0,
+        "share": 0,
+        "investment_accumulator": 5368,
+        "growth": 5369,
+        "minimum_investment": 2684
+      },
+      "setup_changed_RAM_bytes": 2
+    }
+  },
+  "observed_changed_keys": [
+    739,
+    743,
+    748
+  ],
+  "offline_only_changed_keys": [
+    749
+  ],
+  "actual_emulator": true,
+  "earned_event_eligibility": false,
+  "hardware": false,
+  "visually_reviewed_sheet": "work\\town_market_wraps_20261115_v1\\gameplay_lower_screens.png",
+  "sheet_sha256": "7c6ef39b78dcd20f91d9b68e12f8c3abd961c664dc8eb7c24d21226adac8d87f",
+  "evidence": {
+    "work\\town_market_wraps_20261115_v1\\staged.json": "87d32c60195ad175453b853e6257999054201b3e8df3184690584522046360b4",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\town_market_wraps_context_20261115_v1.json": "12dfbc59a4519543f5c50453ad074efa256e29541822ddcce4aabd70d100631c",
+    "work\\town_market_wraps_20261115_v1\\gameplay_lower_screens.png": "7c6ef39b78dcd20f91d9b68e12f8c3abd961c664dc8eb7c24d21226adac8d87f",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_town_market_wraps_20261115.py": "3dc3b3b3f175c59170f27569978dd24e0c12ce6f79ae035bcc03818335f0de01",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_003200_arm9_ram.bin": "479f4a448aec7a0801a24b9f96218a152cb6f272289d09ae8d019a46be0a312c",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_006501_arm9_ram.bin": "f21dfce1d5da09e791a79645e7bf0769af6e9e0ea14f1fcb1684bbcfc42fc9ee",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_004600_cold_boot.png": "11a7398766d73baf59d452f43e2e43360a49447ed53692372286125acab4c2fa",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_004800_cold_boot.png": "11a7398766d73baf59d452f43e2e43360a49447ed53692372286125acab4c2fa",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_005000_cold_boot.png": "52cde52fd28d949ae32aed8c2f54189c9d8f0f23197101f020ab9a678cacc67c",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\frame_005400_cold_boot.png": "efbbb98af5c864d8a4e9a13d2bc95bb6fa24b0784006c52e81d845a726704192",
+    "work\\emulation_v193\\town_v750_accept_new\\capture_report.json": "57f49c5ac78a063c93580d4ae80db0faf3e14a9ecb88cddbbb3abdcfad17728f",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\capture_report.json": "a98abc6fbabea04552bde6f70d98f07a3843cd55d16e8e40f165f6b776c8f4e3",
+    "work\\town_market_wraps_20261115_v1\\promoter\\terminal.json": "e307772c3aa522b8467f9771ce5556ff5080d39c86e77ad50335651b2309bf35",
+    "work\\town_market_wraps_20261115_v1\\promoter\\capture\\navigation_command_journal.json": "8fc2b52b96a1a9c115f52597880b36024afc9eded6d512c3ca20c7d56a23109b",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_003200_arm9_ram.bin": "479f4a448aec7a0801a24b9f96218a152cb6f272289d09ae8d019a46be0a312c",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_006501_arm9_ram.bin": "62eae14ca67e52f39a6a0f228f2d7da9ee85c90abb65c187a51dbe07f74befbc",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_004200_cold_boot.png": "d58c85651a88155797a341d2a18b0ecbbdd22efe8a8b0de54f0b49d95edf567c",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_004600_cold_boot.png": "d58c85651a88155797a341d2a18b0ecbbdd22efe8a8b0de54f0b49d95edf567c",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_005000_cold_boot.png": "3a7ca013204674ff3c52537455836bb83b1f1ca68c70b7fde618dc3242b65c3c",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_005200_cold_boot.png": "2ebe5cd2f27b4df315f068f5cca476e1ee328eec9cbe2bd23be50e09ffab07d9",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\frame_005800_cold_boot.png": "b1c35172de14a1770bf60af87431917e3617cc20ff00e2bd033e1ac6f43cc28b",
+    "work\\emulation_v193\\specialty_v752_accept_752_final\\capture_report.json": "6409a7d4eb1c997b14559ffe84f8938c758783f505f5cf06b7562d4e4f080c91",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\capture_report.json": "5eadc554be939b92361e40e8e3c5378a808d43b58d2d6a08d573f35992ff0922",
+    "work\\town_market_wraps_20261115_v1\\specialty\\terminal.json": "dadceda884ffdde4cfe32faba43c9e80d93200643e5b8aa72d24bc379c47806d",
+    "work\\town_market_wraps_20261115_v1\\specialty\\capture\\navigation_command_journal.json": "d8b34051c94262b87b482fc42ec637322db3a498309ef5d716adffff0e8ae8fb",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\frame_003200_arm9_ram.bin": "479f4a448aec7a0801a24b9f96218a152cb6f272289d09ae8d019a46be0a312c",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\frame_007501_arm9_ram.bin": "897a20f8e73a68ce50abf5f65a507ea7a1f2619fb8df1a2c08e9252bd03420b3",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\frame_005400_cold_boot.png": "49c06dc03d1a02513551de1f2698e7aea92dfeb83e982feb0549a64c597000c0",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\frame_005600_cold_boot.png": "e7ef4822187ea0557f3775b4509e86606dda519be8eb03a31eae70d90a0610d4",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\frame_006200_cold_boot.png": "fbf433a763d9f8d0e20ff79434f229df8eacc30632992ae83eb74939d167a688",
+    "work\\emulation_v193\\market_v753_low_funds_probe\\capture_report.json": "e42489f6be968dd8dfe83e3e7368ee069254accdcc346f9ac7744fadf05da01f",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\capture_report.json": "586688405ce07658af8da6be3a10cee4ad343856c0eada5c2dfcb2cc83309f1a",
+    "work\\town_market_wraps_20261115_v1\\market\\terminal.json": "e154c3456ed62362064e45bb971588f01e6121199b3436d14a5f1ef232323015",
+    "work\\town_market_wraps_20261115_v1\\market\\capture\\navigation_command_journal.json": "83191f881d14247c23787ffa39538bb9b4d356406147c778063b6a5b4628bd10"
+  }
+}

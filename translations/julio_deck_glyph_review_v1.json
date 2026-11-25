@@ -1,0 +1,96 @@
+{
+  "format": "dk4-editorial-glyph-review-v1",
+  "not_a_release_batch": true,
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "id": "DK4_MES_B43_R0017",
+  "file_path": "/data/SC0.DK4",
+  "speaker": "Julio",
+  "source_reference": {
+    "id": "DK4_MES_B43_R0017",
+    "file_path": "/data/SC0.DK4",
+    "container_path": "/data/SC0.DK4#block=43",
+    "source_offset": 30055,
+    "source_length": 88,
+    "source_hex": "0682DC82B881418ACD92B782CD464982B682E10A8ACD92B782AA82A282C882A282C6914482CD82A482B282A982F10A8F9F8EE882C982C782B182A982D68D7382AD82ED82AF82C982CD82A282A982F10A82A982E782CC82A4"
+  },
+  "current_storage_reference": {
+    "id": "DK4_MES_B43_R0017",
+    "file_path": "/data/SC0.DK4",
+    "container_path": "/data/SC0.DK4#block=43",
+    "source_offset": 30055,
+    "source_length": 88,
+    "source_hex": "064649206973206361707461696E2E204120736869702063616E6E6F740A207361696C206F7220726F616D20616C6F6E6520776974686F7574206F6E65212020202020202020202020202020202020202020202020202020"
+  },
+  "current_ROM": "out\\all_routes_combined_lisbon_guild_fixed_20261101.nds",
+  "current_ROM_sha256": "7470d392590fed3ee70d7301f42d9acdbf500e771e2191c522cec575f3c1cd94",
+  "current_effective_hex": "068265697273742c20796f7527726520746865206361707461696e2c0a2046492e204120736869702063616e2774207361696c20776974686f75740a2061206361707461696e2e208268742063616e27742063686f6f73652077686572650a20746f20676f206f6e20697473206f776e2e",
+  "current_effective_pointer": 37340620,
+  "english": "{SPEAKER:06}First, you're the captain, {MACRO:FI}. A ship can't sail without a captain. It can't choose where to go on its own.",
+  "source_meaning": "Rafael is captain. The ship cannot move without a captain or choose its destination on its own.",
+  "context": "Julio explains crew duties in the complete Deck personnel tutorial, from the captain through the lookout and Deck-screen instruction.",
+  "localization_note": "Retain the established explanatory English. Replace unintended wide F/I glyphs with normal native ASCII through the validated literal-prefix policy; preserve speaker06 and FI. No new relationship, rank, rule or fit-driven shortening.",
+  "decision": "retain prose; revise glyph encoding and regenerate automatic wrapping",
+  "review": {
+    "source": true,
+    "context": true,
+    "localization": true,
+    "naturalness": true,
+    "formatting": false
+  },
+  "proposed_profile": {
+    "name": "julio-deck-glyph-review-20261101",
+    "window_width_px": 216,
+    "max_lines": 4,
+    "default_ascii_width": 6,
+    "default_multibyte_width": 12,
+    "line_height_px": 16,
+    "guard_linebreaks": true,
+    "pair_phase_safe_breaks": true,
+    "balanced_wrapping": true,
+    "glyph_widths": {},
+    "macro_widths": {
+      "FI": 36,
+      "FA": 36,
+      "FO": 60,
+      "I": 12
+    },
+    "macro_ascii_lengths": {
+      "FI": 6,
+      "FA": 6,
+      "FO": 10
+    },
+    "leading_speaker_bytes": [
+      6,
+      24,
+      75,
+      113
+    ],
+    "metrics_source": "cold-boot 2026-08-10: bare 0A exposes the following glyph before the line transition; 0A 20 protects it; default Raphael route macro widths are 7/6/10 fixed-width ASCII cells",
+    "literal_prefix_policy": "native-guard-v255"
+  },
+  "proposed_formatted_markup": "{SPEAKER:06}First, you're the captain,{LB}{MACRO:FI}. A ship can't sail without{LB}a captain. It can't choose where{LB}to go on its own.",
+  "proposed_hex": "0646697273742c20796f7527726520746865206361707461696e2c200a2046492e204120736869702063616e2774207361696c20776974686f75740a2061206361707461696e2e2049742063616e27742063686f6f7365207768657265200a20746f20676f206f6e20697473206f776e2e",
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "line-break-count",
+      "message": "source has 1 line breaks; target has 3"
+    }
+  ],
+  "line_break_count_reason": "Four native rows retain the established paragraph; clean Japanese has four rows. No authored break or extra page.",
+  "evidence": "work\\analysis\\julio_glyph_review_20261101_v3\\report.json",
+  "evidence_sha256": "794ffd536c096c6aaccb5e220c19405d834654e9b1e6b2cea73261b5bfba1b39",
+  "direct_view": {
+    "sheet": "work\\analysis\\julio_glyph_review_20261101_v3\\comparison.png",
+    "sha256": "5feb5e3c38b159ea6417d4270b1c418f8ddab4d52e5fde5666f815c718b6c4e3",
+    "complete_current_andproposed_pages_viewed": true
+  },
+  "regression_tests": {
+    "command": "python -m pytest tests/test_lil_editorial_literal_guard.py tests/test_ascii_guard_policy.py -q",
+    "passed": 23
+  },
+  "status": "offline native glyph proposal verified; actual substitution/gameplay and registered integration pending",
+  "new_editorial_credit": 0,
+  "ROM_modified": false
+}

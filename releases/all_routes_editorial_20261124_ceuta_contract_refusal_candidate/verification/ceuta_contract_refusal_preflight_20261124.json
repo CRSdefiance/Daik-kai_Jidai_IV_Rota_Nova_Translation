@@ -1,0 +1,159 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "parent_candidate_sha256": "670dfb6cfbf24f4013cda6e25b3796489134038966b2271e7f9f09bf24b945de",
+  "proposed_COMMON_sha256": "4316e59204102e09666e38900994f206817408c2d0e1ec3792f2a9e7e316de99",
+  "one_owned_allocation": {
+    "block": 9,
+    "start": 3560,
+    "end": 3618,
+    "before": "20536f7272792e20506c65617365207369676e206120636f6e7472616374206174207468652025732c207468656e20636f6d65206261636b2e00",
+    "after": "20536f7272792e204f6e636520796f75207369676e206120636f6e7472616374206174207468652025732c20636f6d65206261636b2e00000000",
+    "new_null_fields": 3
+  },
+  "native_facility_arg_cases": [
+    {
+      "supplied_facility_bit6": 0,
+      "argument_hex": "476f7665726e6f722773204f6666696365",
+      "pointer": 34959460,
+      "native_call": [
+        761,
+        34959460
+      ]
+    },
+    {
+      "supplied_facility_bit6": 64,
+      "argument_hex": "50616c616365",
+      "pointer": 34881042,
+      "native_call": [
+        761,
+        34881042
+      ]
+    }
+  ],
+  "both_substitutions": [
+    {
+      "version": "Current",
+      "facility": "Palace",
+      "lines": [
+        "Sorry. Please sign a contract",
+        "at the Palace, then come back."
+      ],
+      "formatted_hex": "20536f7272792e20506c65617365207369676e206120636f6e74726163740a20206174207468652050616c6163652c207468656e20636f6d65206261636b2e",
+      "complete_glyph_mask_sha256": "9ed8db6bd8d92ae0d74b326a1b534cc0d3c8e697be6dfea25b71ac6ef42ab0d2",
+      "pages": 1
+    },
+    {
+      "version": "Current",
+      "facility": "Governor's Office",
+      "lines": [
+        "Sorry. Please sign a contract",
+        "at the Governor's Office, then",
+        "come back."
+      ],
+      "formatted_hex": "20536f7272792e20506c65617365207369676e206120636f6e74726163740a202061742074686520476f7665726e6f722773204f66666963652c207468656e0a2020636f6d65206261636b2e",
+      "complete_glyph_mask_sha256": "0d42337fecb004b6cf4447f8f4e1314bab07d96212dc57bf21bf0d54453e3990",
+      "pages": 1
+    },
+    {
+      "version": "Proposed",
+      "facility": "Palace",
+      "lines": [
+        "Sorry. Once you sign a contract",
+        "at the Palace, come back."
+      ],
+      "formatted_hex": "20536f7272792e204f6e636520796f75207369676e206120636f6e74726163740a20206174207468652050616c6163652c20636f6d65206261636b2e",
+      "complete_glyph_mask_sha256": "1bc44f1d2def22314b8a90eca2fc4bbad003e38e731eaa78aad1e2e26fd7a431",
+      "pages": 1
+    },
+    {
+      "version": "Proposed",
+      "facility": "Governor's Office",
+      "lines": [
+        "Sorry. Once you sign a contract at",
+        "the Governor's Office, come back."
+      ],
+      "formatted_hex": "20536f7272792e204f6e636520796f75207369676e206120636f6e74726163742061740a202074686520476f7665726e6f722773204f66666963652c20636f6d65206261636b2e",
+      "complete_glyph_mask_sha256": "3595e84d3d5cca590ddf57b5fe4e9088dd40b85531d6652463802392f9b1fe99",
+      "pages": 1
+    }
+  ],
+  "native_preview": {
+    "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_ceuta_contract_refusal_preflight\\portrait_sheet_01.png",
+    "sha256": "f5007aa9fd7c79b3cea660692e4b77ab2713ae26049e8d1a9d024c58e034f6e2",
+    "messages": [
+      "Current - Palace",
+      "Current - Governor's Office",
+      "Proposed - Palace",
+      "Proposed - Governor's Office"
+    ]
+  },
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_761",
+      "message_ID": 761,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Trader",
+      "context": "When Hodram selects Trade without a contract, the trader apologizes and says where to sign before returning.",
+      "source_meaning": "Sorry, please come back after making a contract at the named facility.",
+      "clean_Japanese": "悪いね、%sで\n契約してから出直しとくれ",
+      "english": "Sorry. Once you sign a contract at the %s, come back.",
+      "current_english": "Sorry. Please sign a contract at the %s, then come back.",
+      "localization_note": "The apology starts the refusal. The condition keeps the contract and where to sign it. Both facility names and the invitation to return fit on the final line.",
+      "decision": "revision_proposed",
+      "source_reference": {
+        "block": 9,
+        "offset": 3608,
+        "copy_end": 3648,
+        "bytes": 37,
+        "record_index": 40,
+        "table_offset": 1318658,
+        "start_in_record": 65,
+        "exact_hex": "88ab82a282cb8141257382c50a8c5f96f182b582c482a982e78f6f92bc82b582c682ad82ea"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 3560,
+        "copy_end": 3618,
+        "bytes": 57,
+        "record_index": 393,
+        "table_offset": 1318658,
+        "start_in_record": 0,
+        "exact_hex": "20536f7272792e20506c65617365207369676e206120636f6e7472616374206174207468652025732c207468656e20636f6d65206261636b2e"
+      },
+      "proposed_reference": {
+        "block": 9,
+        "offset": 3560,
+        "copy_end": 3618,
+        "bytes": 54,
+        "record_index": 393,
+        "table_offset": 1318658,
+        "start_in_record": 0,
+        "exact_hex": "20536f7272792e204f6e636520796f75207369676e206120636f6e7472616374206174207468652025732c20636f6d65206261636b2e"
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "offline_only": true,
+  "paired_gameplay_pending": true,
+  "registered": false,
+  "new_editorial_credit": 0,
+  "prior_review": {
+    "path": "releases/all_routes_editorial_20261115_market_trade_dialogue_candidate/verification/registered_review.json",
+    "sha256": "6e64cd42325888ebd9623c9416b1664ff8d97c65f0a1fe54df84b108348a6f54"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "candidate_sha256": "0bee041181d6b748840d4f8ee7bf1ffa7346da0bd6ce9c31404c592ba3c89900",
+  "previous_sha256": "cb371076394d6887c482161f2c71d814b87d3b6b60de39e02bba161aae1bb4de",
+  "target_COMMON_sha256": "82167f3ad49b0205e574fe0bd47c23b2a7b97799eaa683024b4104fcab4f63fd",
+  "target_ARM9_sha256": "6410f9fb48c0422bb9ad2ec7ec264a3e8509b6193db99b8b40d345179320e932",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_827",
+      "message_id": 827,
+      "speaker": "Faticia",
+      "english": "Ah, %s? Here's to meeting you!",
+      "source_meaning": "The barmaid confirms the captain's name and raises a toast to getting acquainted.",
+      "context": "The toast follows the paid follow-up drink. The barmaid answers the introduction by repeating the name with a questioning inflection.",
+      "localization_note": "Keep the name check and the warm invitation to toast the meeting. The Japanese establishes a new acquaintance.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 2936,
+        "copy_end": 2988,
+        "bytes": 49,
+        "record_index": 43,
+        "table_offset": 1318790,
+        "start_in_record": 24
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3440,
+        "copy_end": 3489,
+        "bytes": 48,
+        "record_index": 62,
+        "table_offset": 1318790,
+        "start_in_record": 0
+      },
+      "Japanese": "ふーん、%sさんね？\nじゃ、お近づきのしるしに乾杯！",
+      "current_English": "Hmm... %s, right? Here's to our new friendship!",
+      "exact_clean_hex": "82d3815b82f18141257382b382f182cb81480a82b682e1814182a88bdf82c382ab82cc82b582e982b582c98aa394748149",
+      "exact_current_hex": "20486d6d2e2e2e2025732c2072696768743f2048657265277320746f206f7572206e657720667269656e647368697021",
+      "argument_order": [
+        "admiral_short_name"
+      ],
+      "staged_hex": "2041682c2025733f2048657265277320746f206d656574696e6720796f7521",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3440,
+        "copy_end": 3489,
+        "bytes": 31,
+        "record_index": 62,
+        "table_offset": 1318790,
+        "start_in_record": 0
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_831",
+      "message_id": 831,
+      "speaker": "Hodram",
+      "english": "It's called %s.",
+      "source_meaning": "Hodram echoes the barmaid's question and identifies the object directly by its name.",
+      "context": "The barmaid notices a present. Hodram names it directly. She admires it, and he asks whether she likes it before her request.",
+      "localization_note": "Hodram answers plainly and briefly. The previous repeat question works in the more conversational variants. Hodram answers immediately here. 'It's called' is grammatical for both named treasures and ordinary item labels.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "source_reference": {
+        "block": 10,
+        "offset": 3132,
+        "copy_end": 3156,
+        "bytes": 23,
+        "record_index": 46,
+        "table_offset": 1318798,
+        "start_in_record": 33
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 3608,
+        "copy_end": 3631,
+        "bytes": 22,
+        "record_index": 66,
+        "table_offset": 1318798,
+        "start_in_record": 0
+      },
+      "Japanese": "これか？\nこれは『%s』だ",
+      "current_English": "This? It's called %s.",
+      "exact_clean_hex": "82b182ea82a981480a82b182ea82cd81772573817882be",
+      "exact_current_hex": "20546869733f20497427732063616c6c65642025732e",
+      "argument_order": [
+        "item_name"
+      ],
+      "staged_hex": "20497427732063616c6c65642025732e",
+      "staged_reference": {
+        "block": 10,
+        "offset": 3608,
+        "copy_end": 3631,
+        "bytes": 16,
+        "record_index": 83,
+        "table_offset": 1318798,
+        "start_in_record": 0
+      }
+    }
+  ],
+  "byte_allocation": [
+    {
+      "block": 10,
+      "start": 3440,
+      "end": 3489,
+      "before": "20486d6d2e2e2e2025732c2072696768743f2048657265277320746f206f7572206e657720667269656e64736869702100",
+      "after": "2041682c2025733f2048657265277320746f206d656574696e6720796f7521000000000000000000000000000000000000",
+      "extra_terminators": 17
+    },
+    {
+      "block": 10,
+      "start": 3608,
+      "end": 3631,
+      "before": "20546869733f20497427732063616c6c65642025732e00",
+      "after": "20497427732063616c6c65642025732e00000000000000",
+      "extra_terminators": 6
+    }
+  ],
+  "preserved_entries": 3666,
+  "preserved_blocks": 40,
+  "whole_parent_inverse": true
+}

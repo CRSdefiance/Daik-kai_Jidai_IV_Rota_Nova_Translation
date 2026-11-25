@@ -1,0 +1,19 @@
+"""Repaint changed wrapping and reuse every byte-identical native input."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+if __name__=='__main__':
+    oldpath=Path('work/analysis/lil_B156_fonts_v3707/current_macro_QA_and_progressive_font_proof.json');old=read(oldpath);before=read(old['manuscript']);after=read('translations/lil_B156_editorial_manuscript_v3.json');previous={r['id']:r for r in before['records']};oldcases={r['id']:r for r in old['cases']};reuse={};changed=[]
+    for r in after['records']:
+        p=previous[r['id']];assert all(r[k]==p[k] for k in ['english','source_hex','current_hex','source_complete_preamble_hex','editorial_decision','review']);c=oldcases[r['id']];assert sha(Path(c['preview']).read_bytes())==c['preview_sha256']
+        if r['compiled_hex']==p['compiled_hex']:assert c['encoded_hex']==r['compiled_hex'];reuse[r['id']]=c
+        else:changed.append(r['id'])
+    assert changed==['DK4_MES_B156_R0157','DK4_MES_B156_R0288'],changed
+    source=Path('scripts/verify_lil_B156_fonts_v3707.py');t=source.read_text(encoding='utf-8');needle="        if row['kind']=='system-FE':continue";replacement="        if row['id'] in REUSE:\n            c=REUSE[row['id']];cases.append(c);pictures.append((row['id'],'selector'+row['source_presentation_prefix_hex'],Image.open(c['preview']).convert('RGB')));continue\n        if row['kind']=='system-FE':continue"
+    pairs=[('lil_B156_fonts_v3707','lil_B156_fonts_v3710'),('lil_B156_editorial_manuscript_v2','lil_B156_editorial_manuscript_v3'),('lil_B156_layout_v1','lil_B156_layout_v2'),(needle,replacement),('            pipelines.append(dict(kind=kind,**ctx.execute(expand,value,prefix)));macro_calls+=4;ctx.machines.pop()',"            if kind=='logical':\n                p=next(p for p in OLDCASES[row['id']]['current_native_macro_pipelines'] if p['kind']=='logical');pipelines.append(p);continue\n            pipelines.append(dict(kind=kind,**ctx.execute(expand,value,prefix)));macro_calls+=4;ctx.machines.pop()"),('macro_calls==608','macro_calls==8'),('current_original_macro_alignment_calls=608','current_original_macro_alignment_calls=608,new_current_original_macro_alignment_calls=8,exact_reused_macro_alignment_calls=600,new_repainted_planes=2,exact_reused_planes=74,previous_native_proof=str(OLDPATH),previous_native_proof_sha256=sha(OLDPATH.read_bytes())'),('76 complete progressive planes,608 macro cases,76 QA plans and29 source-consumer negatives pass;ten sheets need visual review.','76 planes/608 bound cases pass:2 fresh planes/8 new macro calls;74 planes/600 exact cases reused. Changed sheets need review.')]
+    for a,b in pairs:assert a in t,a;t=t.replace(a,b)
+    exec(compile(t,str(source)+'::two-changed-wrapping-inputs','exec'),dict(__name__='__main__',__file__=__file__,REUSE=reuse,OLDCASES=oldcases,OLDPATH=oldpath));root=Path('work/analysis/lil_B156_fonts_v3710');new=read(root/'current_macro_QA_and_progressive_font_proof.json');same=[];different=[]
+    for i,(a,b) in enumerate(zip(old['review_sheets'],new['review_sheets'],strict=True),start=1):
+        (same if a['sha256']==b['sha256'] else different).append(i)
+    assert same==[1,2,3,4,6,7,8,10] and different==[5,9]
+    save(root/'selective_native_recheck_and_viewed_sheet_reuse.json',dict(previous_native_proof=str(oldpath),previous_native_proof_sha256=sha(oldpath.read_bytes()),changed_records=changed,logical_source_prose_changed_records=[],reused_records=sorted(reuse),unchanged_sheets_equal_viewed_predecessors=same,changed_sheets_requiring_review=different,new_macro_cases=8,exact_reused_macro_cases=600,new_native_planes=2,exact_reused_native_planes=74,no_ROM_registry_ledger_orcredit_change=True,new_actual_gameplay_runs=0,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False))

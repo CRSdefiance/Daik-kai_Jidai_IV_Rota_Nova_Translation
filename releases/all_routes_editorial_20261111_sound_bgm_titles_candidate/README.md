@@ -1,0 +1,5 @@
+# All Routes Sound Setup candidate
+
+Use [Translation_DS_All_Routes_Sound_Setup_20261111_candidate.nds](../../out/sound_bgm_titles_registered_20261111_v1/Translation_DS_All_Routes_Sound_Setup_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `655fc685ff9183fe62e7f2b0ea4666a60a1582f4312d7881250e5ca4b1ee3666`. Patch SHA-256 `152f4125d1315ee06793d2d2eb51be2ec922043c2c7f89dba583cc09643bb5bc`.
+
+All 38 Sound Setup music titles are registered. The ledger now credits 27,696 reviews. The four revisions include the approved Rafael and Camille spellings. The 34 retentions and four revisions all have complete native title and selector checks. An ordinary emulator replay observed all four revisions, the longest retained title and both original returns. It did not assess audio output. Cold startup, 24 protected name getters, 34 targeted tests and 112 release checks passed. [Gameplay](verification/sound_setup_gameplay_verification.json) · [Exact records](verification/registered_review.json)

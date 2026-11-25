@@ -1,0 +1,7 @@
+# Rafael’s seamanship and crew exchanges
+
+The [registered review](../releases/all_routes_editorial_20261114_rafael_seamanship_wraps_candidate/verification/registered_review.json) resolves 25 flagged lines across 11 story blocks. The new wording preserves the market-share threshold for buying a ship, the Lumber Room and shipyard repair distinction, and the square-sail and lateen context. Rafael’s gambling explanation keeps the arithmetic and turn order. The Silla Gold Crown and Sanghyeon retain their established names.
+
+All 60 before-and-after pages were visually checked. All 200 native processor alignments and 25 changed speech boundaries passed. The focused emulator replay verified six revised tutorial pages and four following pages using original commands in Rafael’s initialized opening. The rest of the changed pages received offline checks. Natural scene triggers and hardware remain unvisited. Separate cumulative cold boot and 56 targeted tests passed.
+
+The [cumulative ROM and byte-exact patch](../releases/all_routes_editorial_20261114_rafael_seamanship_wraps_candidate/README.md) preserve the Market and Sailor Info fixes and the ASCII right bound. The [wrap scan](../translations/editorial_checkpoints/SharedText_20261110_v1/current_progressive_wrap_triage_v10.json) has 663 open leads. The ledger holds 27,697 credited reviews. The 279 shared records, remaining UI and name coverage, and representative town and random-scene coverage remain open.

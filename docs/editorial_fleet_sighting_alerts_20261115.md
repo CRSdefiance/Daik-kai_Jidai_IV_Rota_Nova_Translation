@@ -1,0 +1,9 @@
+# Fleet sighting and incoming-attack alerts
+
+The [registered review](../releases/all_routes_editorial_20261115_fleet_sighting_alerts_candidate/verification/registered_review.json) updates all eight preparation alerts and all seven incoming-attack alerts from the clean Japanese. The lookout can say “to the east” or “nearby” where the earlier message used “in the E” or “in the vicinity.” The reports preserve the bearing and fleet substitutions, and distinguish preparations from an attack already underway.
+
+Three original call sites reuse the previously registered pirate bearing mapper. The shared code stays in its original allocation, the pirate entry keeps its two-table guard, and the compass provider still returns the original abbreviations. Seventy-three native route tests cover the original call contexts, nine directions and fallback pointers. All 2,700 combinations of message, direction and stock faction fit within three rows with complete bearing phrases and faction names. All 45 native preview pages were checked and viewed.
+
+An ordinary emulator replay from the Nagasaki save verified the complete east-bearing report, its Kurushima substitution and the Sailor nameplate. Twelve complete frames match the prior candidate, including Maria’s eight-line encounter. The other fourteen alerts, including close-range and incoming-attack variants, were checked offline. Hardware remains unvisited. [Emulator comparison](../releases/all_routes_editorial_20261115_fleet_sighting_alerts_candidate/verification/fleet_sighting_comparison.png)
+
+The [registered ROM and exact clean-input patch](../releases/all_routes_editorial_20261115_fleet_sighting_alerts_candidate/README.md) preserve 114 accepted layers and the ASCII right-bound correction. Six startup frames, 24 protected name getters and 32 targeted tests passed. The 15 reports already had editorial credit.

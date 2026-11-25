@@ -1,0 +1,596 @@
+{
+  "format": "dk4-structured-help-editorial-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "not_a_release_batch": true,
+  "formatting_owned_by_compiler": true,
+  "source_clean_HELP_sha256": "003a67c669e4751393e5d55a472029d48cb92be641575804e1c43ead8e8adb1e",
+  "source_canonical_HELP_sha256": "56cab0504f30c4b4e866897bbf3a749054288a3f298c4a9b4d5fd9a5a7511a1d",
+  "records": [
+    {
+      "id": "HELP_TOPIC_143",
+      "topic_id": 143,
+      "speaker": "Game help",
+      "heading": "Data Guide",
+      "english": "This guide explains the game's data. See [[144|City Info]], [[153|Sea Info]], [[158|Sailor Info]], [[181|Faction Info]], [[191|Trade Goods]] and [[195|Ship Info]].",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Six data-topic links;181 is faction data, not an individual fleet data page.",
+      "localization_note": "Correct Fleet Info to Faction Info for destination181; individual Fleet Info137 remains distinct.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "8366815b835e89f090e00a8a658eed82cc8366815b835e82cc89f090e082c582b781420a81a87b8a588366815b835e3a907d814081a87b976d8fe38366815b835e3a997d814081a87b906c95a88366815b835e3a9e7d0a81a87b90a897cd8366815b835e3ab57d814081a87b8cf088d595698366815b835e3abf7d814081a87b91448366815b835e3ac37d0a0a000000",
+      "canonical_source_hex": "446174612047756964650a2041737369676e206e6176696761746f72732077697468207374726f6e67206163636f756e74696e6720616e64206e65676f74696174696f6e20736b696c6c7320666f722074726164652e0a200a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020000000",
+      "current_source_hex": "446174612047756964650a54686973206775696465206578706c61696e73207468652067616d65277320646174612e205365650a7b4369747920496e666f2c3a907d7b2053656120496e666f2c3a997d7b205361696c6f7220496e666f2c3a9e7d0a7b466c65657420496e666f2c3ab57d7b20547261646520476f6f64733abf7d20616e647b205368697020496e666f2e3ac37d0a00",
+      "source_Japanese_with_link_IDs": "データ解説\n各種のデータの解説です。\n→[[144|街データ]]　→[[153|洋上データ]]　→[[158|人物データ]]\n→[[181|勢力データ]]　→[[191|交易品データ]]　→[[195|船データ]]\n\n",
+      "original_links": [
+        {
+          "start": 38,
+          "end": 50,
+          "label": "街データ",
+          "topic_id": 144,
+          "label_hex": "8a588366815b835e"
+        },
+        {
+          "start": 54,
+          "end": 68,
+          "label": "洋上データ",
+          "topic_id": 153,
+          "label_hex": "976d8fe38366815b835e"
+        },
+        {
+          "start": 72,
+          "end": 86,
+          "label": "人物データ",
+          "topic_id": 158,
+          "label_hex": "906c95a88366815b835e"
+        },
+        {
+          "start": 89,
+          "end": 103,
+          "label": "勢力データ",
+          "topic_id": 181,
+          "label_hex": "90a897cd8366815b835e"
+        },
+        {
+          "start": 107,
+          "end": 123,
+          "label": "交易品データ",
+          "topic_id": 191,
+          "label_hex": "8cf088d595698366815b835e"
+        },
+        {
+          "start": 127,
+          "end": 139,
+          "label": "船データ",
+          "topic_id": 195,
+          "label_hex": "91448366815b835e"
+        }
+      ],
+      "original_link_IDs": [
+        144,
+        153,
+        158,
+        181,
+        191,
+        195
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 142,
+          "source": "古の地図（共通コマンド→情報）\n大いなる財宝の在り処を示すと、伝えられている「古の地図」です。\n地図は破れ、複数の断片に分かれています。\n【！】各街の「[[26|ギルド]]」を回って、地図の断片を集めましょう。\n\n\n\n"
+        },
+        {
+          "topic_id": 144,
+          "source": "街データ\n街のデータです。\n航路図で、訪れたことのある街を選ぶと表示されます。\n→[[145|都市／港]]　→[[146|文化圏]]　→[[147|状態]]　→[[148|発展度]]\n→[[149|武装度]]　→[[150|シェア]]　→[[152|特産品]]\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_181",
+      "topic_id": 181,
+      "speaker": "Game help",
+      "heading": "Faction Info",
+      "english": "Select a faction on the Route Map to view its information. See [[184|Influence]], [[182|Home Port]], [[190|Friendship]] and [[185|Relations]].",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Faction information is selected on the route map; links to power, headquarters, friendship and relations.",
+      "localization_note": "Keep faction information distinct from the separate fleet/ship composition screens.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "90a897cd8366815b835e0a90a897cd82cc8366815b835e82c582b781420a8d719848907d82c590a897cd82f0914982d482c6955c8ea682b382ea82dc82b781420a81a87b90a897cd926c3ab87d814081a87b967b8b92926e3ab67d814081a87b97468d4493783abe7d814081a87b8ad68c573ab97d0a0a00",
+      "canonical_source_hex": "5468697320546f7069630a2054686520726f757465206d61702073686f7773207468652063757272656e74207365612c2066616374696f6e732c206369746965732c20666c656574732c20616e642074726176656c20726f757465732e0a200a200a200a2020202020202020202020202020202020202000",
+      "current_source_hex": "5468697320546f7069630a2054686520726f757465206d61702073686f7773207468652063757272656e74207365612c2066616374696f6e732c206369746965732c20666c656574732c20616e642074726176656c20726f757465732e0a200a200a200a2020202020202020202020202020202020202000",
+      "source_Japanese_with_link_IDs": "勢力データ\n勢力のデータです。\n航路図で勢力を選ぶと表示されます。\n→[[184|勢力値]]　→[[182|本拠地]]　→[[190|友好度]]　→[[185|関係]]\n\n",
+      "original_links": [
+        {
+          "start": 67,
+          "end": 77,
+          "label": "勢力値",
+          "topic_id": 184,
+          "label_hex": "90a897cd926c"
+        },
+        {
+          "start": 81,
+          "end": 91,
+          "label": "本拠地",
+          "topic_id": 182,
+          "label_hex": "967b8b92926e"
+        },
+        {
+          "start": 95,
+          "end": 105,
+          "label": "友好度",
+          "topic_id": 190,
+          "label_hex": "97468d449378"
+        },
+        {
+          "start": 109,
+          "end": 117,
+          "label": "関係",
+          "topic_id": 185,
+          "label_hex": "8ad68c57"
+        }
+      ],
+      "original_link_IDs": [
+        184,
+        182,
+        190,
+        185
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 180,
+          "source": "装備品アイテム／武器／防具（人物データ）\n装備している装備品アイテム／武器／防具です。\n装備していないときに選ぶと、装備できます。装備中に選ぶと、装備をはずせます。\n\n"
+        },
+        {
+          "topic_id": 182,
+          "source": "本拠地（勢力データ）\n勢力の本拠地がある場所です。本拠地の街の[[150|シェア]]が０になると、他の街に移ります。\n→[[183|本拠地ポイント]]\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_182",
+      "topic_id": 182,
+      "speaker": "Game help",
+      "heading": "Home Port",
+      "english": "This is the faction's home port. If its [[150|market share]] there falls to zero, its home port moves to another city. See [[183|Home Port Points]].",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Headquarters location;zero city share causes relocation to another city. Link to headquarters points.",
+      "localization_note": "Keep the exact zero-share trigger, rather than saying any loss of share moves the home port.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "967b8b92926e816990a897cd8366815b835e816a0a90a897cd82cc967b8b92926e82aa82a082e98fea8f8a82c582b78142967b8b92926e82cc8a5882cc7b8356834683413a967d82aa824f82c982c882e982c6814191bc82cc8a5882c988da82e882dc82b781420a81a87b967b8b92926e837c8343839383673ab77d0a0a0000",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a20202020202020202020202020202020202020202020200000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a20202020202020202020202020202020202020202020200000",
+      "source_Japanese_with_link_IDs": "本拠地（勢力データ）\n勢力の本拠地がある場所です。本拠地の街の[[150|シェア]]が０になると、他の街に移ります。\n→[[183|本拠地ポイント]]\n\n",
+      "original_links": [
+        {
+          "start": 61,
+          "end": 71,
+          "label": "シェア",
+          "topic_id": 150,
+          "label_hex": "835683468341"
+        },
+        {
+          "start": 106,
+          "end": 124,
+          "label": "本拠地ポイント",
+          "topic_id": 183,
+          "label_hex": "967b8b92926e837c834383938367"
+        }
+      ],
+      "original_link_IDs": [
+        150,
+        183
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 181,
+          "source": "勢力データ\n勢力のデータです。\n航路図で勢力を選ぶと表示されます。\n→[[184|勢力値]]　→[[182|本拠地]]　→[[190|友好度]]　→[[185|関係]]\n\n"
+        },
+        {
+          "topic_id": 183,
+          "source": "本拠地ポイント（勢力データ→本拠地）\n本拠地の街では、その勢力のシェアにボーナスがつきます。これが「本拠地ポイント」です。旗の数で表示されます。旗１本が１ポイントです。\n勢力の艦隊数が本拠地ポイント分のシェアになります。本拠地ポイント分のシェアは、戦闘・策謀によってしか他勢力に奪われません。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_183",
+      "topic_id": 183,
+      "speaker": "Game help",
+      "heading": "Home Port Points",
+      "english": "A faction receives bonus market share in its home port, called Home Port Points. Each flag shown represents one point. The bonus share equals the number of fleets the faction has. Other factions can take this portion of its share only through battles or schemes.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Headquarters bonus share is shown as flags,one point per flag;fleet count determines bonus share. Only combat/schemes can steal that portion.",
+      "localization_note": "Retain the exact fleet-count rule and only-through restriction; do not substitute generic investment advice.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "967b8b92926e837c834383938367816990a897cd8366815b835e81a8967b8b92926e816a0a967b8b92926e82cc8a5882c582cd814182bb82cc90a897cd82cc83568346834182c9837b815b8369835882aa82c282ab82dc82b7814282b182ea82aa8175967b8b92926e837c834383938367817682c582b781428af882cc909482c5955c8ea682b382ea82dc82b781428af88250967b82aa8250837c83438393836782c582b781420a90a897cd82cc8acd91e0909482aa967b8b92926e837c83438393836795aa82cc83568346834182c982c882e882dc82b78142967b8b92926e837c83438393836795aa82cc83568346834182cd814190ed93ac81458df4966482c982e682c182c482b582a991bc90a897cd82c9924482ed82ea82dc82b982f181420a0a00000000",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000000000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000000000",
+      "source_Japanese_with_link_IDs": "本拠地ポイント（勢力データ→本拠地）\n本拠地の街では、その勢力のシェアにボーナスがつきます。これが「本拠地ポイント」です。旗の数で表示されます。旗１本が１ポイントです。\n勢力の艦隊数が本拠地ポイント分のシェアになります。本拠地ポイント分のシェアは、戦闘・策謀によってしか他勢力に奪われません。\n\n",
+      "original_links": [],
+      "original_link_IDs": [],
+      "clean_neighbors": [
+        {
+          "topic_id": 182,
+          "source": "本拠地（勢力データ）\n勢力の本拠地がある場所です。本拠地の街の[[150|シェア]]が０になると、他の街に移ります。\n→[[183|本拠地ポイント]]\n\n"
+        },
+        {
+          "topic_id": 184,
+          "source": "勢力値（勢力データ）\n表示された海域での勢力値です。\n勢力値とは、勢力の大きさを示します。街の[[150|シェア]]が増えたり、他勢力との戦闘に勝つと上がります。遺跡などを発見しても上がります。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_184",
+      "topic_id": 184,
+      "speaker": "Game help",
+      "heading": "Influence",
+      "english": "Influence measures a faction's strength in the sea region shown. It increases with greater city [[150|market share]], victories over other factions and discoveries such as ruins.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Regional faction power/size rises with city share, victories and discoveries including ruins.",
+      "localization_note": "Influence matches the reviewed shared lore. Keep the displayed-region scope and all three increase methods.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "90a897cd926c816990a897cd8366815b835e816a0a955c8ea682b382ea82bd8a4388e682c582cc90a897cd926c82c582b781420a90a897cd926c82c682cd814190a897cd82cc91e582ab82b382f08ea682b582dc82b781428a5882cc7b8356834683413a967d82aa919d82a682bd82e8814191bc90a897cd82c682cc90ed93ac82c98f9f82c282c68fe382aa82e882dc82b7814288e290d582c882c782f094ad8ca982b582c482e08fe382aa82e882dc82b781420a0a0000",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200000",
+      "source_Japanese_with_link_IDs": "勢力値（勢力データ）\n表示された海域での勢力値です。\n勢力値とは、勢力の大きさを示します。街の[[150|シェア]]が増えたり、他勢力との戦闘に勝つと上がります。遺跡などを発見しても上がります。\n\n",
+      "original_links": [
+        {
+          "start": 92,
+          "end": 102,
+          "label": "シェア",
+          "topic_id": 150,
+          "label_hex": "835683468341"
+        }
+      ],
+      "original_link_IDs": [
+        150
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 183,
+          "source": "本拠地ポイント（勢力データ→本拠地）\n本拠地の街では、その勢力のシェアにボーナスがつきます。これが「本拠地ポイント」です。旗の数で表示されます。旗１本が１ポイントです。\n勢力の艦隊数が本拠地ポイント分のシェアになります。本拠地ポイント分のシェアは、戦闘・策謀によってしか他勢力に奪われません。\n\n"
+        },
+        {
+          "topic_id": 185,
+          "source": "関係（勢力データ）\n主人公勢力との関係です。３段階あります。酒場の「[[16|策謀の立案]]」、ギルドの「[[27|交渉文書の発送]]」で関係は変わります。\n→[[188|通常]]　→[[186|同盟中]]　→[[187|交戦中]]　→[[189|傘下]]\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_185",
+      "topic_id": 185,
+      "speaker": "Game help",
+      "heading": "Relations",
+      "english": "Relations describes how a faction relates to yours. It can change through [[16|schemes]] at the tavern or [[27|diplomatic documents]] sent from the guild. The three basic relationships are [[188|Neutral]], [[186|Allied]] and [[187|At War]]. See also [[189|Subordinate]].",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Three relation levels;schemes and guild documents change them. Original links list neutral,alliance,war and additional subordination.",
+      "localization_note": "Preserve the stated three levels and all four links by treating subordination as the separately referenced affiliation, without omitting it.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "8ad68c57816990a897cd8366815b835e816a0a8ee5906c8cf690a897cd82c682cc8ad68c5782c582b78142825292698a4b82a082e882dc82b781428ef08fea82cc81757b8df4966482cc97a788c43a107d81768141834d838b836882cc81757b8cf08fc295b68f9182cc94ad91973a1b7d817682c58ad68c5782cd95cf82ed82e882dc82b781420a81a87b92ca8fed3abc7d814081a87b93af96bf92863aba7d814081a87b8cf090ed92863abb7d814081a87b8e5089ba3abd7d0a0a00000000",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000000000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000000000",
+      "source_Japanese_with_link_IDs": "関係（勢力データ）\n主人公勢力との関係です。３段階あります。酒場の「[[16|策謀の立案]]」、ギルドの「[[27|交渉文書の発送]]」で関係は変わります。\n→[[188|通常]]　→[[186|同盟中]]　→[[187|交戦中]]　→[[189|傘下]]\n\n",
+      "original_links": [
+        {
+          "start": 67,
+          "end": 81,
+          "label": "策謀の立案",
+          "topic_id": 16,
+          "label_hex": "8df4966482cc97a788c4"
+        },
+        {
+          "start": 95,
+          "end": 113,
+          "label": "交渉文書の発送",
+          "topic_id": 27,
+          "label_hex": "8cf08fc295b68f9182cc94ad9197"
+        },
+        {
+          "start": 138,
+          "end": 146,
+          "label": "通常",
+          "topic_id": 188,
+          "label_hex": "92ca8fed"
+        },
+        {
+          "start": 150,
+          "end": 160,
+          "label": "同盟中",
+          "topic_id": 186,
+          "label_hex": "93af96bf9286"
+        },
+        {
+          "start": 164,
+          "end": 174,
+          "label": "交戦中",
+          "topic_id": 187,
+          "label_hex": "8cf090ed9286"
+        },
+        {
+          "start": 178,
+          "end": 186,
+          "label": "傘下",
+          "topic_id": 189,
+          "label_hex": "8e5089ba"
+        }
+      ],
+      "original_link_IDs": [
+        16,
+        27,
+        188,
+        186,
+        187,
+        189
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 184,
+          "source": "勢力値（勢力データ）\n表示された海域での勢力値です。\n勢力値とは、勢力の大きさを示します。街の[[150|シェア]]が増えたり、他勢力との戦闘に勝つと上がります。遺跡などを発見しても上がります。\n\n"
+        },
+        {
+          "topic_id": 186,
+          "source": "同盟中（勢力データ→関係）\n同盟を結んでいます。\n同盟中の勢力の艦隊には、攻撃をしかけられません。\n戦闘中、付近に同盟勢力の艦隊がいると、加勢してもらえることがあります。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_186",
+      "topic_id": 186,
+      "speaker": "Game help",
+      "heading": "Allied",
+      "english": "You have an alliance with this faction. You cannot attack its fleets. During battle, nearby allied fleets may come to your aid.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Alliance prevents attacks on allied fleets;nearby allied fleets may assist during battle.",
+      "localization_note": "Preserve may;an alliance does not guarantee help in every battle.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "93af96bf9286816990a897cd8366815b835e81a88ad68c57816a0a93af96bf82f08c8b82f182c582a282dc82b781420a93af96bf928682cc90a897cd82cc8acd91e082c982cd81418d558c8282f082b582a982af82e782ea82dc82b982f181420a90ed93ac9286814195748bdf82c993af96bf90a897cd82cc8acd91e082aa82a282e982c6814189c190a882b582c482e082e782a682e982b182c682aa82a082e882dc82b781420a0a000000",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020000000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020000000",
+      "source_Japanese_with_link_IDs": "同盟中（勢力データ→関係）\n同盟を結んでいます。\n同盟中の勢力の艦隊には、攻撃をしかけられません。\n戦闘中、付近に同盟勢力の艦隊がいると、加勢してもらえることがあります。\n\n",
+      "original_links": [],
+      "original_link_IDs": [],
+      "clean_neighbors": [
+        {
+          "topic_id": 185,
+          "source": "関係（勢力データ）\n主人公勢力との関係です。３段階あります。酒場の「[[16|策謀の立案]]」、ギルドの「[[27|交渉文書の発送]]」で関係は変わります。\n→[[188|通常]]　→[[186|同盟中]]　→[[187|交戦中]]　→[[189|傘下]]\n\n"
+        },
+        {
+          "topic_id": 187,
+          "source": "交戦中（勢力データ→関係）\n戦闘状態です。\n洋上で、交戦中の勢力の艦隊と接近すると、自動的に戦闘に入ります。また、交戦中の勢力が[[151|独占契約]]している街からは攻撃されます。\n交戦中の勢力からは、投資（[[23|商業投資]]・[[37|軍事投資]]）や戦闘でシェアを奪えます。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_187",
+      "topic_id": 187,
+      "speaker": "Game help",
+      "heading": "At War",
+      "english": "You are at war with this faction. Approaching one of its fleets at sea starts a battle automatically. Cities where it holds an [[151|exclusive contract]] will also attack you. You can take its market share through [[23|commercial investment]], [[37|military investment]] or battles.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "War causes automatic fleet engagements and attacks from enemy monopoly cities. Shares can be taken through commercial/military investment or combat.",
+      "localization_note": "Keep automatic engagement and enemy-controlled city attacks; retain both investment types and combat.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "8cf090ed9286816990a897cd8366815b835e81a88ad68c57816a0a90ed93ac8ff391d482c582b781420a976d8fe382c581418cf090ed928682cc90a897cd82cc8acd91e082c690da8bdf82b782e982c681418ea993ae934982c990ed93ac82c993fc82e882dc82b7814282dc82bd81418cf090ed928682cc90a897cd82aa7b93c690e88c5f96f13a977d82b582c482a282e98a5882a982e782cd8d558c8282b382ea82dc82b781420a8cf090ed928682cc90a897cd82a982e782cd8141938a8e9181697b8fa48bc6938a8e913a177d81457b8c528e96938a8e913a257d816a82e290ed93ac82c583568346834182f0924482a682dc82b781420a0a00",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000",
+      "source_Japanese_with_link_IDs": "交戦中（勢力データ→関係）\n戦闘状態です。\n洋上で、交戦中の勢力の艦隊と接近すると、自動的に戦闘に入ります。また、交戦中の勢力が[[151|独占契約]]している街からは攻撃されます。\n交戦中の勢力からは、投資（[[23|商業投資]]・[[37|軍事投資]]）や戦闘でシェアを奪えます。\n\n",
+      "original_links": [
+        {
+          "start": 126,
+          "end": 138,
+          "label": "独占契約",
+          "topic_id": 151,
+          "label_hex": "93c690e88c5f96f1"
+        },
+        {
+          "start": 195,
+          "end": 207,
+          "label": "商業投資",
+          "topic_id": 23,
+          "label_hex": "8fa48bc6938a8e91"
+        },
+        {
+          "start": 209,
+          "end": 221,
+          "label": "軍事投資",
+          "topic_id": 37,
+          "label_hex": "8c528e96938a8e91"
+        }
+      ],
+      "original_link_IDs": [
+        151,
+        23,
+        37
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 186,
+          "source": "同盟中（勢力データ→関係）\n同盟を結んでいます。\n同盟中の勢力の艦隊には、攻撃をしかけられません。\n戦闘中、付近に同盟勢力の艦隊がいると、加勢してもらえることがあります。\n\n"
+        },
+        {
+          "topic_id": 188,
+          "source": "通常（勢力データ→関係）\n普通の状態です。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_188",
+      "topic_id": 188,
+      "speaker": "Game help",
+      "heading": "Neutral",
+      "english": "You have ordinary relations with this faction.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Normal relationship state.",
+      "localization_note": "Neutral is a diplomatic state, distinct from Normal city conditions.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "92ca8fed816990a897cd8366815b835e81a88ad68c57816a0a958192ca82cc8ff391d482c582b781420a0a00",
+      "canonical_source_hex": "7365652062656c6f770a200a200a202020202020202020202020202020202020202020202020202020202000",
+      "current_source_hex": "7365652062656c6f770a200a200a202020202020202020202020202020202020202020202020202020202000",
+      "source_Japanese_with_link_IDs": "通常（勢力データ→関係）\n普通の状態です。\n\n",
+      "original_links": [],
+      "original_link_IDs": [],
+      "clean_neighbors": [
+        {
+          "topic_id": 187,
+          "source": "交戦中（勢力データ→関係）\n戦闘状態です。\n洋上で、交戦中の勢力の艦隊と接近すると、自動的に戦闘に入ります。また、交戦中の勢力が[[151|独占契約]]している街からは攻撃されます。\n交戦中の勢力からは、投資（[[23|商業投資]]・[[37|軍事投資]]）や戦闘でシェアを奪えます。\n\n"
+        },
+        {
+          "topic_id": 189,
+          "source": "傘下（勢力データ→関係）\n傘下にした勢力です。主人公艦隊には刃向かいません。\n【！】ギルドの「[[27|交渉文書の発送]]」の「[[33|威圧]]」が成功すると、他勢力を傘下にできます。\n「[[33|威圧]]」には「[[4|覇者の証]]」が必要です。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_189",
+      "topic_id": 189,
+      "speaker": "Game help",
+      "heading": "Subordinate",
+      "english": "A subordinate faction will not oppose your fleet. Send [[27|diplomatic documents]] from the guild and successfully use [[33|Threaten]] to bring a faction under your control. [[33|Threaten]] requires [[4|a Proof of Conquest]].",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Subordinated factions do not oppose player fleet. Successful intimidation through guild diplomacy subordinates a faction;requires ruler proof.",
+      "localization_note": "Preserve the success condition, repeated Threaten references and established Proof of Conquest term.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "8e5089ba816990a897cd8366815b835e81a88ad68c57816a0a8e5089ba82c982b582bd90a897cd82c582b781428ee5906c8cf68acd91e082c982cd906e8cfc82a982a282dc82b982f181420a81798149817a834d838b836882cc81757b8cf08fc295b68f9182cc94ad91973a1b7d817682cc81757b88d088b33a217d817682aa90ac8cf782b782e982c6814191bc90a897cd82f08e5089ba82c982c582ab82dc82b781420a81757b88d088b33a217d817682c982cd81757b94658ed282cc8fd83a047d817682aa954b977682c582b781420a0a00",
+      "canonical_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000",
+      "current_source_hex": "5468697320546f7069630a20546869732073656374696f6e206578706c61696e73207468697320746f7069632e2055736520746865206c697374656420636f6d6d616e647320616e6420726576696577207468652072656c6174656420646174612e0a200a200a200a2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202000",
+      "source_Japanese_with_link_IDs": "傘下（勢力データ→関係）\n傘下にした勢力です。主人公艦隊には刃向かいません。\n【！】ギルドの「[[27|交渉文書の発送]]」の「[[33|威圧]]」が成功すると、他勢力を傘下にできます。\n「[[33|威圧]]」には「[[4|覇者の証]]」が必要です。\n\n",
+      "original_links": [
+        {
+          "start": 92,
+          "end": 110,
+          "label": "交渉文書の発送",
+          "topic_id": 27,
+          "label_hex": "8cf08fc295b68f9182cc94ad9197"
+        },
+        {
+          "start": 116,
+          "end": 124,
+          "label": "威圧",
+          "topic_id": 33,
+          "label_hex": "88d088b3"
+        },
+        {
+          "start": 167,
+          "end": 175,
+          "label": "威圧",
+          "topic_id": 33,
+          "label_hex": "88d088b3"
+        },
+        {
+          "start": 183,
+          "end": 195,
+          "label": "覇者の証",
+          "topic_id": 4,
+          "label_hex": "94658ed282cc8fd8"
+        }
+      ],
+      "original_link_IDs": [
+        27,
+        33,
+        33,
+        4
+      ],
+      "clean_neighbors": [
+        {
+          "topic_id": 188,
+          "source": "通常（勢力データ→関係）\n普通の状態です。\n\n"
+        },
+        {
+          "topic_id": 190,
+          "source": "友好度（勢力データ）\n主人公との関係のよさを表します。高いほど、関係が良好です。\n\n"
+        }
+      ]
+    },
+    {
+      "id": "HELP_TOPIC_190",
+      "topic_id": 190,
+      "speaker": "Game help",
+      "heading": "Friendship",
+      "english": "This measures how friendly a faction is toward you. A higher value means better relations.",
+      "context": "Original market/shared-command/city-data help and its linked neighbors.",
+      "source_meaning": "Higher friendship value indicates better relationship with protagonist.",
+      "localization_note": "Keep the direction of the numeric scale without inventing a threshold or guaranteed alliance.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "clean_source_hex": "97468d449378816990a897cd8366815b835e816a0a8ee5906c8cf682c682cc8ad68c5782cc82e682b382f0955c82b582dc82b781428d8282a282d982c781418ad68c5782aa97c78d4482c582b781420a0a000000",
+      "canonical_source_hex": "7365652062656c6f770a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020000000",
+      "current_source_hex": "7365652062656c6f770a200a200a20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020000000",
+      "source_Japanese_with_link_IDs": "友好度（勢力データ）\n主人公との関係のよさを表します。高いほど、関係が良好です。\n\n",
+      "original_links": [],
+      "original_link_IDs": [],
+      "clean_neighbors": [
+        {
+          "topic_id": 189,
+          "source": "傘下（勢力データ→関係）\n傘下にした勢力です。主人公艦隊には刃向かいません。\n【！】ギルドの「[[27|交渉文書の発送]]」の「[[33|威圧]]」が成功すると、他勢力を傘下にできます。\n「[[33|威圧]]」には「[[4|覇者の証]]」が必要です。\n\n"
+        },
+        {
+          "topic_id": 191,
+          "source": "交易品データ\n交易品のデータです。\n交易品は、交易所で売買できる品です。街で売っている交易品を特産品といい、街ごとに異なります。\n売買価格は街によって異なります。また、相場によっても価格は上下します。\n基準の価格は、文化圏によって異なります。\n→[[192|種類]]　→[[193|等級]]\n\n"
+        }
+      ]
+    }
+  ]
+}

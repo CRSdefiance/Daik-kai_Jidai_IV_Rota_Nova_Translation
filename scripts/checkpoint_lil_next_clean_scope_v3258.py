@@ -1,0 +1,48 @@
+"""Keep the next clean inventory uncredited and preserve audited V3251 completion."""
+from copy import deepcopy
+from pathlib import Path
+from shutil import copy2
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+
+ROOT=Path('work/analysis/lil_next_clean_scope_checkpoint_v3258')
+PRIOR=Path('work/analysis/editorial_handoff_verification_v3256/verified_handoff.json')
+SOURCE=Path('work/analysis/lil_after_B119_clean_scope_v3257c/complete_clean_next_exchange_inventory.json')
+SUMMARY='''V3258 preserves independently audited V3255 completion and registered experimental V3251: 4575 contextual rereads/integrated/completed, 3087 historically revised and 1488 retained; source/prose4578 including2748 SC2, with all2976 reviewed route objects integrated. V3251 retains517 manifest batches/114 accepted layers, exact whole-ROM clean-input patch reconstruction, 31 fresh opening/town framebuffer matches toV3204 and a viewed current six-frame sheet. V1492 remains promoted.
+
+The next clean-only structural inventory covers SC2 B122-B140: 533 physical speech objects in19 blocks, with123 already completed objects excluded from new review and410 physical speech objects not yet covered. This is a source lead, not a final unique player-facing target count. Native entry/reachability and any cross-route copies still require classification. Five2100 andtwo2000 commands also require exact typed-text inventory and consumer binding; do not infer target counts from decoded speech alone. Next focus is complete B122-B127 exchanges:155 as-yet-unreviewed physical speeches (145 ordinary/10FE), two2100 objects andtwo2000 commands, with312 physical commands. Whole clean exchange reading, typed labels, current mapping, actors/roles/macros, source eligibility, old-English comparison, fresh gloss/prose or justified retention, native display, relocation, representative and registered-release gates remain pending. B120/B121 and all earlier completed families remain completed.
+
+The initial next-scope extraction exposed18 B133 source selector00 speeches. They contain real Japanese after the mandatory zero-valued actor selector; they are not empty paragraphs. The source parser's complete native extents match extraction that searches for the C-string terminator after the selector byte, including every leading control. All533 physical speech extents match this rule. The failed3257 producer and nonexhaustive3257b packet remain preserved;3257c supersedes their apparent-empty interpretation. Current actor00/presentation, route/company and entry semantics remain unbound. This is a new-source classification lead, not the deferred older-record technical re-audit, and it asserts no existing runtime defect. Source0D's older validation-gap lead remains deferred separately.
+
+No new prose, reread or completion credit is added by this inventory; no new emulator run, selected next scene, nameplate, earned reward/progress, full-route or hardware claim. Canonical SC3 B97's32 Maria speeches remain queued; the SC2 B115 unowned1886-byte copy remains exact and uncredited. COMMON750-752 callers, every wider untouched storyline/shared shop-town/random/help/player prose, SourceItems/LocalProduct, five named-target leads and raw B141/SC3B109 classification remain open. Keep graphics/all18 plaques separate and retain the later older-record technical re-audit. Preserve every ROM, earlier translation, draft, executed producer/proof/failure and clean/canonical input. Full goal active; all jobs terminal.'''
+
+if __name__=='__main__':
+    assert not ROOT.exists();lp=Path('translations/editorial_review_current_v1.json');ledger=read(lp);before=deepcopy(ledger)
+    assert sha(lp.read_bytes())==read(PRIOR)['ledger_sha256'];source=read(SOURCE)
+    assert len(source['blocks'])==19 and source['unclassified']==[] and [b['block'] for b in source['blocks']]==list(range(122,141))
+    rows=[r for b in source['blocks'] for r in b['records']];new=[r for r in rows if not r['already_contextually_completed']]
+    assert len(rows)==533 and len(new)==410 and sum(r['source_selector']==0 for r in rows)==18
+    nextblocks=[b for b in source['blocks'] if b['block'] in range(122,128)];nextrows=[r for b in nextblocks for r in b['records']]
+    assert len(nextblocks)==6 and len(nextrows)==155 and all(not r['already_contextually_completed'] for r in nextrows)
+    assert sum(len(b['commands']) for b in nextblocks)==312 and sum(r['source_selector']==254 for r in nextrows)==10
+    docs=[Path('docs')/n for n in ['editorial_handoff_current.md','translation_progress.md','editorial_review_goal.md','todo.md','known_issues.md']]
+    assert docs[0].read_text(encoding='utf-8').startswith('# Current editorial handoff - V3255');ROOT.mkdir(parents=True)
+    for p in [lp,*docs]:copy2(p,ROOT/(p.name+'.before'))
+    lead=dict(status='clean-only-physical-inventory;whole-exchange-current-binding-prose-native-release-pending',source_packet=str(SOURCE),source_packet_sha256=sha(SOURCE.read_bytes()),blocks=list(range(122,141)),physical_speech_objects=533,already_completed_physical_speech_objects=123,not_previously_completed_physical_speech_objects=410,unique_player_facing_target_count_not_yet_classified=True,whole_typed2100_objects=5,whole_typed2000_commands=2,next_blocks=list(range(122,128)),next_physical_speeches=155,next_ordinary_speeches=145,next_FE_speeches=10,next_whole2100_objects=2,next_whole2000_commands=2,next_physical_commands=312,next_source_current_references=[{k:r[k] for k in ['id','file_path','block','source_reference','source_hex','source_complete_preamble_hex','source_selector']} for r in nextrows],source00_B133_full_control_and_route_binding_pending=True,all533_complete_native_even_extents_match_source_prefix_plus_body=True,source_prose_or_completion_credit_added=0,new_emulator_runs=0,full_goal_complete=False)
+    ledger['lil_after_B119_next_clean_source_lead_v3258']=lead
+    inventory=deepcopy(read(ledger['unfinished_editorial_scope_v3255']['path']))
+    inventory['next_clean_only_uncredited_exchange_inventory_v3258']=lead
+    inventory['next_focus']='Read complete clean B122-B127 exchanges and typed objects before older English; bind source/current entry, actors, controls and macros, then review natural prose or justified retentions and complete native/reference/representative/registered-release gates. Exclude all123 already-completed objects in the broader B122-B140 source inventory. Keep B133 source00 and canonicalMaria32 pending, plus every wider unfinished editorial family.'
+    inv=ROOT/'unfinished_editorial_scope_inventory.json';save(inv,inventory)
+    ledger['unfinished_editorial_scope_v3258']=dict(path=str(inv),sha256=sha(inv.read_bytes()),incomplete_COMMON=3,incomplete_route_source_prose=0,next_uncredited_physical_source_speeches=410,next_focus_physical_speeches=155,canonical_Maria32_pending_uncredited=True,full_goal_complete=False)
+    for u in ledger['coverage_units']:
+        if u['id']=='all-route-scenes':u['next']=inventory['next_focus']
+    evidence={str(p):sha(p.read_bytes()) for p in [PRIOR,SOURCE,inv,Path('scripts/inventory_lil_after_B119_v3257c.py'),Path('scripts/prepare_lil_zero_selector_inventory_v3257c.py'),Path('work/analysis/lil_after_B119_clean_scope_v3257/zero_selector_extraction_correction.json'),Path(__file__)]}
+    ledger['lil_next_clean_scope_checkpoint_v3258']=dict(summary=SUMMARY,evidence=evidence,source_prose_or_completion_credit_added=0,goal_turn_classification='progress',full_goal_complete=False);ledger['latest_checkpoint']=SUMMARY
+    for k in ['completed_editorial_families','records_editorially_completed','records_revised_and_integrated','retained_wordings_editorially_completed','completed_editorial_record_counts_by_file','current_integrated_candidate','reviewed_but_incomplete_COMMON_IDs','reviewed_but_incomplete_route_record_IDs','unresolved_graphics_work','older_record_reaudit_after_full_editorial_goal','records_with_source_and_prose_pass','records_with_source_prose_drafts','source_prose_reviewed_counts_by_file','native_source_universe_inventory_v2701c','contextual_story_natural_dialogue_pass_v1871','lil_B111_B119_scope_reconciliation_v3237','active_source_prose_drafts']:assert ledger[k]==before[k],k
+    assert ledger['goal_status']=='active' and not ledger['full_goal_complete'];save(lp,ledger)
+    section='## V3258: Next clean B122-B140 inventory; no new review credit\n\n'+SUMMARY+'\n\nSource: '+SOURCE.as_posix()+'. Unfinished scope: '+inv.as_posix()+'. Registered V3251 details remain in V3255 below.\n\n'
+    for i,p in enumerate(docs):
+        first,rest=p.read_text(encoding='utf-8').split('\n',1);p.write_text(('# Current editorial handoff - V3258' if i==0 else first)+'\n\n'+section+rest,encoding='utf-8',newline='\n')
+    c=ledger['current_integrated_candidate'];save(ROOT/'checkpoint_receipt.json',dict(checkpoint='V3258',summary=SUMMARY,evidence=evidence,updated_files={str(p):sha(p.read_bytes()) for p in [lp,*docs]},prior_verified_handoff=str(PRIOR),new_completed_records=0,new_source_prose_reviews=0,fresh_reread=4575,fresh_integrated=4575,fresh_pending=0,source_prose=4578,completed=4575,historical_revised=3087,historical_retained=1488,incomplete_COMMON=3,incomplete_route=0,next_physical_speech_objects_not_previously_completed=410,next_focus_physical_speech_objects=155,candidate=c['path'],candidate_sha256=c['sha256'],patch=c['patch'],patch_sha256=c['patch_sha256'],actual_selected_next_IDs=[],new_emulator_runs=0,goal_turn_classification='progress',all_jobs_terminal=True,full_goal_complete=False))
+    print('V3258:auditedV3251/4575completed preserved;next410physicalsource speeches inventoried,155next-focus speeches;zero additionalreviewcredit. Fullgoalactive.')

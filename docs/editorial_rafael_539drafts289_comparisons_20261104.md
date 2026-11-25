@@ -1,0 +1,37 @@
+# Rafael: 539 drafts and 289 comparisons — 2026-11-04
+
+Rafael early story and all tutorial work remain first. All storylines, earlier translations, shared shop/town dialogue, random scenes, names/roles and remaining player-facing prose stay in scope. Preserve all translations, justified retentions, coverage, ROMs and evidence. No main promotion, pruning or guide-photo collection. Graphics artwork and the later older-record technical re-audit remain separate.
+
+## Verified release retained
+
+Current experimental cumulative ROM: `out\all_routes_combined_rafael_b51_b60_Fernan_20261104_candidate.nds`. SHA256: `eb62870b8f3a756ae06ce976e79ff8e797d6d2b0a1553c4887f008db535d8c64`. Its 669 entries, 114 accepted layers, eight final stages, 26 release checks, clean-input patch and own Rafael startup are already verified. Reuse `work\analysis\Rafael_B51_B60_release_verified_20261104\registered_release_verification.json` and `docs/editorial_rafael249_registered_and539_next_20261104.md`; do not repeat them. No build or emulator job is live.
+
+10774 integrated completions remain (6356 revisions/4418 retentions). Historical source/prose/draft totals retain their existing difference of three. No completion credit is added for this new batch. The canonical main remains `out\raphael_natural_v2_accepted_base.nds`, SHA256 `3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`. No main promotion is authorized by automated validation.
+
+## Editorial progress
+
+All 539 source meanings and complete original scene/event context are preserved under `work\analysis\Rafael_B61_B80_clean_20261104`. B68 is control-only, not omitted prose. All 539 independent logical-English drafts are assembled in `work\analysis\Rafael_B61_B80_clean_20261104\B61_B80_all539_individually_source_first_drafts_v1.json`. Each constituent was sealed before its own current-English extraction. The first 197 were already compared before this final assembly; this is not a claim that all 539 were still unexposed at assembly time.
+
+New draft constituents: `B65_B67_92_logical_English_drafts_v2.json`, `B69_B70_108_logical_English_drafts_v1.json`, `B71_B75_116_logical_English_drafts_v2.json`, `B76_B80_26_logical_English_drafts_v1.json`. All earlier versions/producers are frozen. The personal-gratitude and unspecified-enemy refinements preserve source referents before current-story comparison. All paragraphs preserve source macros and have no authored wrapping or padding.
+
+`work\analysis\Rafael_B61_B80_clean_20261104\B61_B67_289_contextual_comparisons_latest_v1.json` binds 289 individual comparisons to the latest exact current references: 123 proposed revisions/166 justified retentions. First four gates pass; every fifth gate remains false. Individual original comparison receipts and their hashes are retained. The village120 contributes 49 revisions/71 retentions; the next92 contributes 34 revisions/58 retentions; the earlier77 retains its 40/37 decisions.
+
+Concrete corrections include the disconnected offer/offense/self-reflection echo, a source unloading action changed to loading, invented collective eleven-year-old departure, a false claim that nobody had ever helped Charlotte, first-person/collective errors, missing emotional context and stilted fragments. Working short responses, supportive lines, greetings, teasing and substantial migration narrative remain with individual reasons. Preserve Romani identity, reported prejudice, approximate dates, source-defined ages, private Eirene/public Arcadius, threatened versus completed annexation, and speculative rather than declared relationships.
+
+Twelve unintended full-width I letters in nine speeches are corrected in proposed prose. Two copied full-width punctuation marks are normalized in their specific wordless/name-call records. Source-bound silent ellipses and deliberate unfinished thoughts remain. These counts are glyph/wording findings, not extra dialogue credit. No wrapping fix is claimed before fresh page formatting.
+
+## Latest-parent dependency reuse and current text
+
+`work\analysis\Rafael_B61_B80_latest_runtime_20261104\dependency_qualification.json` verifies that all 20 SC0 blocks61–80, COMMON/HELP/font/EV0, complete actor objects and all 66 fields belonging to 22 scoped speakers are exact across 4b10fd67 and eb62870b. Only SC0 blocks51–60 and actor35 given-name data changed; actor35 is outside this batch. Undoing the exclusive field recovers the entire parent ARM9. Native code, tables, pointers and allocations match. Both own snapshots are independently identified; old RAM is not relabelled as new gameplay.
+
+`work\analysis\Rafael_B61_B80_latest_runtime_20261104\all539_current_effective_qualified_v1.json` assembles all 539 current stored/effective references. The original197 native lookups are qualified exact reuses. The remaining342 lookups ran successfully on the latest ROM own Rafael snapshot after their drafts were sealed; extraction session53525 terminated exit0. Source commands/preambles and catalogue selection are bound. Macro expansion is not executed by this extraction and needs its normal later formatting proof. All250 B69–B80 current speeches are extracted but have not yet been read/compared. B68 has no speech.
+
+The 22 individual name/role retentions in `translations/rafael_B61_B80_scoped_names_andterms_v1.json` remain, with their exact qualified prior getter proofs. New name-page visual checks and representative headers are pending. Global207/full-catalogue review remains open; actor40 full-middle フォン/current Ｆong spelling/width remains a separate in-scope text-name issue.
+
+## Terminology and next action
+
+`work\analysis\Rafael_B61_B80_clean_20261104\trade_house_andBamboo_Assembly_Plan_binding_v1.json` binds trade house to exact current COMMON657 and Bamboo Assembly Plan to clean/current item186 with unchanged nonname metadata. The old657 directory guard correctly rejected a later repacked directory; its code/config remain unchanged. The existing parser then used independently verified complete current ARM9/COMMON locks and the exact current directory, recovering the registered657 text unchanged. This is a read-only binding, not a new renderer investigation or display approval.
+
+Use **Bamboo Assembly Plan** in B70R214, generic **plan** in B70R218/B72R71, during their pending comparisons. Keep the original Diagram drafts as provenance. No item-name change is needed. The source-defined Estado objective is drafted as overseas trading network, not a city/country/new royal rank. Reconsider only against the complete clean source and existing current wording.
+
+Next: compare the remaining250 as complete exchanges from the saved source/drafts/current files. Preserve the five Charlotte FE speeches in B69 as her portrait-free/CG dialogue, not system notices. Its exact visual gesture remains unconfirmed; add no invented kiss. Preserve the actual direct loss to Valdes in B77 and alternative reward/event paths. Then format all539 with the validated consumer widths and registered right-bound correction; review every new native page, scoped names and boundaries; check stored controls/branches/loaders and focused CG/pagination/transitions. Use representative gameplay and disclose unvisited lines. Integrate the substantial completed batch through all eight registered stages with an exact clean-input patch once necessary checks pass. No new pages, gameplay or ROM changes are claimed by this checkpoint.

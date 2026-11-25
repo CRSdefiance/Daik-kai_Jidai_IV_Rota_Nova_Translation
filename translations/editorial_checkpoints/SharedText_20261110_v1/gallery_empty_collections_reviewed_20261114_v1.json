@@ -1,0 +1,190 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_98",
+      "message_ID": 98,
+      "speaker": "Game notice",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "english": "You haven't acquired any items.",
+      "decision": "retention",
+      "source_meaning": "There are no previously obtained items in the collection.",
+      "localization_note": "The notice follows an Items selection. The second-person wording describes what the player has obtained and doesn’t imply the game contains no items.",
+      "context": "The title Gallery player opens Items with no collection entries, dismisses the notice with A, and returns to the Gallery.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_Japanese": "入手済みのアイテムがありません。",
+      "source_reference": {
+        "block": 0,
+        "offset": 3460,
+        "copy_end": 3492,
+        "bytes": 32,
+        "record_index": 74,
+        "table_offset": 1317332,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3917,
+        "copy_end": 3949,
+        "bytes": 32,
+        "record_index": 104,
+        "table_offset": 1317332,
+        "start_in_record": 0
+      },
+      "source_hex": "93fc8ee88dcf82dd82cc834183438365838082aa82a082e882dc82b982f18142",
+      "current_hex": "596f7520686176656e277420616371756972656420616e79206974656d732e20",
+      "registered_reference": {
+        "block": 0,
+        "offset": 3917,
+        "copy_end": 3949,
+        "bytes": 32,
+        "record_index": 104,
+        "table_offset": 1317332,
+        "start_in_record": 0,
+        "candidate_sha256": "a7d20aea4afa99a83b888356e6a52def82f13c685d2eb6e1948bced4185909da",
+        "exact_stored_hex": "596f7520686176656e277420616371756972656420616e79206974656d732e20"
+      },
+      "original_native_requests": [
+        {
+          "frame": 4114,
+          "PC": 33903244,
+          "message_ID": 98,
+          "caller_LR": 33900236
+        },
+        {
+          "frame": 4114,
+          "PC": 33895668,
+          "message_ID": 98,
+          "caller_LR": 33900236
+        }
+      ],
+      "actual_gameplay": {
+        "frame": 4300,
+        "path": "work\\gallery_empty_common_20261114_v1\\gallery_empty\\capture\\frame_004300_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "7421711cd6ca70121e944a54dee6977aafe44ebf23905af7007b37b7599108e3",
+        "framebuffer_sha256": "2400e9bb328e36b26bb00af8b00536bcab4b3a26d889fd84477f1fcd5f2f15c1"
+      },
+      "complete_glyph_mask_pixels": 319,
+      "new_credit": 1
+    },
+    {
+      "id": "COMMON_MESSAGE_99",
+      "message_ID": 99,
+      "speaker": "Game notice",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "english": "You haven't discovered any ruins.",
+      "decision": "retention",
+      "source_meaning": "The collection contains no previously discovered historical sites.",
+      "localization_note": "The notice answers the Ruins selection using the same term as the menu. It leaves the absence specific to this save and mirrors the Items notice.",
+      "context": "The title Gallery player opens Ruins with no collection entries, dismisses the notice with A, and returns to the Gallery.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_Japanese": "発見済みの遺跡がありません。",
+      "source_reference": {
+        "block": 0,
+        "offset": 3492,
+        "copy_end": 3520,
+        "bytes": 28,
+        "record_index": 74,
+        "table_offset": 1317334,
+        "start_in_record": 33
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3949,
+        "copy_end": 3983,
+        "bytes": 34,
+        "record_index": 104,
+        "table_offset": 1317334,
+        "start_in_record": 32
+      },
+      "source_hex": "94ad8ca98dcf82dd82cc88e290d582aa82a082e882dc82b982f18142",
+      "current_hex": "596f7520686176656e277420646973636f766572656420616e79207275696e732e20",
+      "registered_reference": {
+        "block": 0,
+        "offset": 3949,
+        "copy_end": 3983,
+        "bytes": 34,
+        "record_index": 104,
+        "table_offset": 1317334,
+        "start_in_record": 32,
+        "candidate_sha256": "a7d20aea4afa99a83b888356e6a52def82f13c685d2eb6e1948bced4185909da",
+        "exact_stored_hex": "596f7520686176656e277420646973636f766572656420616e79207275696e732e20"
+      },
+      "original_native_requests": [
+        {
+          "frame": 5309,
+          "PC": 33903244,
+          "message_ID": 99,
+          "caller_LR": 33900236
+        },
+        {
+          "frame": 5309,
+          "PC": 33895668,
+          "message_ID": 99,
+          "caller_LR": 33900236
+        }
+      ],
+      "actual_gameplay": {
+        "frame": 5500,
+        "path": "work\\gallery_empty_common_20261114_v1\\gallery_empty\\capture\\frame_005500_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "793d61e71eb4674231e6ded051bf397fb656e2c9f36de5ae74f2c450a973a9da",
+        "framebuffer_sha256": "986999938efe11be126841fd0c8a5efb5748aa571e46dc7883d44ae6247e5c98"
+      },
+      "complete_glyph_mask_pixels": 333,
+      "new_credit": 1
+    }
+  ],
+  "candidate_sha256": "a7d20aea4afa99a83b888356e6a52def82f13c685d2eb6e1948bced4185909da",
+  "exact_existing_release": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\registered_release_verification.json",
+  "actual_verification_scope": {
+    "actual_emulator": true,
+    "hardware": false,
+    "completely_observed_notice_IDs": [
+      98,
+      99
+    ],
+    "ordinary_save_copy": true,
+    "synthetic_unlock": false,
+    "full_mask_check": true
+  },
+  "evidence": {
+    "work\\gallery_empty_common_20261114_v1\\gallery_empty\\capture\\capture_report.json": "84414d2bfd6c3a72a33aaefb096b92566e3e05c0d842bc068ae840ab99712377",
+    "work\\gallery_empty_common_20261114_v1\\gallery_empty\\requests.json": "984d40eca28e43cf24c1b634345a0bd8cfb206f60224d96fe2b4a60b9df73057",
+    "work\\gallery_empty_common_20261114_v1\\gallery_empty\\inputs.json": "5affac4c1f2ccf3e41a2604c0c648ac0e8fa67edf4f9f6690a435f72b25cfbb2",
+    "work\\gallery_empty_common_20261114_v1\\gallery_empty\\source_contract.json": "3e53d0940123c0ac16472f2a6e9667cd8574ad03d9076d9a7538c0a57815c359",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\observe_gallery_empty_common_20261114.py": "7af5702856466cb26ba58d95d847c8c6f6bb80ef2f8a08aaba93412bc60da41a",
+    "work\\emulation_v193\\gallery_menu_v307\\capture_report.json": "c08311e0818695435b0ad585b7f7c07e6474a3df09e689259ef33680e66c1ab5"
+  },
+  "rom_change_needed": false
+}

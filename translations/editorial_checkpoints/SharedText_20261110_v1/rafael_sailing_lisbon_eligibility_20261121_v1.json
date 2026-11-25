@@ -1,0 +1,185 @@
+{
+  "candidate_sha256": "9ca6b89c0558187bc97df0b8ff221a31b0e6f5dcfeccdc9c22b8dfe7ac92c556",
+  "original_entry_binding": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\rafael_sailing_lisbon_entry_20261121_v1.json",
+  "original_entry_binding_sha256": "a2e315ff7757591720aa7b87c5b18d43df6263635deddaa3ad49fd6d94f7a7e7",
+  "original_event_records": {
+    "48": {
+      "event_ID": 48,
+      "category": 5,
+      "category_local_index": 6,
+      "body_offset": 996,
+      "source_record_bytes": 20,
+      "source_hex": "00003100051300c2000001000000000017000000",
+      "source_word0": 3211264,
+      "source_word1": 3254784773,
+      "action_index": 49,
+      "native_action_word": 8240,
+      "script_block": 48,
+      "must_be_completed": [],
+      "must_not_be_completed": [],
+      "payload_after_dependency_prefix_hex": "000001000000000017000000",
+      "additional_native_conditions_andouter_scheduler_unexecuted": true
+    },
+    "128": {
+      "event_ID": 128,
+      "category": 6,
+      "category_local_index": 1,
+      "body_offset": 2816,
+      "source_record_bytes": 28,
+      "source_hex": "00008100070b00c301018b0030000000000001000000000017000000",
+      "source_word0": 8454144,
+      "source_word1": 3271559943,
+      "action_index": 129,
+      "native_action_word": 8320,
+      "script_block": 128,
+      "must_be_completed": [
+        139
+      ],
+      "must_not_be_completed": [
+        48
+      ],
+      "payload_after_dependency_prefix_hex": "000001000000000017000000",
+      "additional_native_conditions_andouter_scheduler_unexecuted": true
+    },
+    "139": {
+      "event_ID": 139,
+      "category": 7,
+      "category_local_index": 2,
+      "body_offset": 3040,
+      "source_record_bytes": 8,
+      "source_hex": "00008c00020c03c0",
+      "source_word0": 9175040,
+      "source_word1": 3221425154,
+      "action_index": 140,
+      "native_action_word": 8331,
+      "script_block": 139,
+      "must_be_completed": [],
+      "must_not_be_completed": [],
+      "payload_after_dependency_prefix_hex": "",
+      "additional_native_conditions_andouter_scheduler_unexecuted": true
+    }
+  },
+  "historical_snapshot": {
+    "frame": 57940,
+    "path": "work\\rafael_lisbon_return_20261119\\capture\\frame_057940_arm9_ram.bin",
+    "bytes": 4194304,
+    "sha256": "5a2c117297a3e3cd2fb61b17a63d40ab650c91c0d0f2b4cb84b16699e3b5c97e",
+    "read_only_export": true
+  },
+  "historical_state": {
+    "town": 11,
+    "fleet_location_state": 11,
+    "ship_point": null,
+    "Lisbon_point": [
+      2434048,
+      736256
+    ],
+    "original_event_context": [
+      5,
+      11,
+      0
+    ],
+    "event_completion": {
+      "48": 0,
+      "128": 0,
+      "139": 1
+    }
+  },
+  "original_runtime_spans": [
+    {
+      "offset": 139480,
+      "end_exclusive": 143052,
+      "sha256": "af34da665e2139ddc5fa17c17e252c1c06db7f50b389273034fc88500fc85bc4"
+    },
+    {
+      "offset": 145472,
+      "end_exclusive": 145624,
+      "sha256": "48df2408782dbe73e1587c75e70a4aa2ff6d0974b2e80b952758ae020a90a4dd"
+    },
+    {
+      "offset": 138924,
+      "end_exclusive": 139480,
+      "sha256": "9efcab59ebcf294ab47d20ae85902335cf8a620188fec3c68ac3aea185824b65"
+    }
+  ],
+  "independent_offline_cases": [
+    {
+      "offline_context": [
+        5,
+        11,
+        0
+      ],
+      "counterfactual_event_flag": null,
+      "source_flag_values": {
+        "48": 0,
+        "128": 0,
+        "139": 1
+      },
+      "original_eligibility_result": 1,
+      "original_predicate_left_ram_exact": true
+    },
+    {
+      "offline_context": [
+        6,
+        11,
+        0
+      ],
+      "counterfactual_event_flag": null,
+      "source_flag_values": {
+        "48": 0,
+        "128": 0,
+        "139": 1
+      },
+      "original_eligibility_result": 1,
+      "original_predicate_left_ram_exact": true
+    },
+    {
+      "offline_context": [
+        6,
+        12,
+        0
+      ],
+      "counterfactual_event_flag": null,
+      "source_flag_values": {
+        "48": 0,
+        "128": 0,
+        "139": 1
+      },
+      "original_eligibility_result": 0,
+      "original_predicate_left_ram_exact": true
+    },
+    {
+      "offline_context": [
+        6,
+        11,
+        0
+      ],
+      "counterfactual_event_flag": 139,
+      "source_flag_values": {
+        "48": 0,
+        "128": 0,
+        "139": 0
+      },
+      "original_eligibility_result": 0,
+      "original_predicate_left_ram_exact": true
+    },
+    {
+      "offline_context": [
+        6,
+        11,
+        0
+      ],
+      "counterfactual_event_flag": 48,
+      "source_flag_values": {
+        "48": 1,
+        "128": 0,
+        "139": 1
+      },
+      "original_eligibility_result": 0,
+      "original_predicate_left_ram_exact": true
+    }
+  ],
+  "original_outer_category_selection_required": true,
+  "actual_gameplay": false,
+  "new_editorial_credit": 0
+}

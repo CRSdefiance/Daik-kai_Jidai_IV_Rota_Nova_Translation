@@ -1,0 +1,5 @@
+# Rafael in Athens and Maria's crew story
+
+The clean-source pass covers 132 records across three exchanges. It revises the wording of 18 lines, improves one layout and records 113 individual retentions. Julio's Mediterranean advice and first mention of the Proof of Conquest read as complete thoughts. Hans's introduction distinguishes passage from his shipboard role. The crew's account of Maria preserves the distinction between the rewards for victory and the sentence for desertion. [Coverage ledger](../releases/all_routes_editorial_20261122_rafael_athens_and_maria_crew_candidate/verification/registered_review.json)
+
+The candidate passed exact checks for 21 revised layout variants and all ten original modal pages. Focused controller replays verified 29 panels and their visible speaker labels. Rafael's fixture returns to port and Maria's continues into the original recruitment notice. Both original two-page stories advance by controller input. Natural story triggers and handheld display remain unvisited for this batch. [Testing candidate and patch](../releases/all_routes_editorial_20261122_rafael_athens_and_maria_crew_candidate/README.md)

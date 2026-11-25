@@ -1,0 +1,9 @@
+# Inn conversations
+
+Reviewed 23 records covering stays, market news, crew reports and rumors. The four revisions give the nightly price and the duration question separate lines, and make the innkeeper's price crash and fleet reports sound more conversational. Nineteen retentions preserve the different crew voices and the sequence of each exchange. [Exact review ledger](../releases/all_routes_editorial_20261119_inn_conversations_candidate/verification/registered_review.json)
+
+The original formatter passed 1,169 layout and substitution cases. Nine representative changed pages passed native glyph and visual checks, including the four-row company-name cases. In Istanbul, ordinary inputs verified five full dialogue holds, including the revised quote, the three-night confirmation and the return to town. The three changed rumor turns received offline checks. [Native and gameplay evidence](../releases/all_routes_editorial_20261119_inn_conversations_candidate/verification)
+
+The original number formatter supplies full-width numerals to the stay confirmation and dated rumors. The current native check identifies all three Inn call sites, reproduces all three stay counts and locates 120 calendar cases with wide digits. The shared number formatter also has other callers. The three Inn sites remain the scope of a future display correction. [Exact numeral lead](../translations/editorial_checkpoints/SharedText_20261110_v1/inn_number_width_20261119_v1.json)
+
+Only four reviewed COMMON slots change. The clean-input patch rebuilds the ROM byte for byte. Six startup holds, 24 protected name getters and 49 focused tests passed, with two optional older ROM fixture tests skipped. The dialogue ledger still credits 27,700 records, with all 276 open shared references preserved. [Candidate and patch](../releases/all_routes_editorial_20261119_inn_conversations_candidate/README.md)

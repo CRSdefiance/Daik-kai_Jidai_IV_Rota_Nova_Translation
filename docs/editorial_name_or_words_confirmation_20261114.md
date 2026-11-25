@@ -1,0 +1,9 @@
+# Ship-name and Promised Words confirmation
+
+COMMON 296 confirms the text entered when buying or renaming a ship and when submitting Promised Words. The original code retains message 296 in r5 while the keyboard is open. The earlier local constant inventory missed these three paths. The clean Japanese asks whether the supplied text is acceptable. “Is %s all right?” still fits all three contexts, with a regular ASCII capital I.
+
+The previous formatter expanded name-like tokens inside the player's text. A controlled run of the earlier release turned FIONA into HodramONA. The correction routes this one confirmation to an existing literal output path. It reuses an existing selector span without expanding ITCM. All 11,010 selector comparisons preserve the prior messages and fallback behavior. The [registered review](../releases/all_routes_editorial_20261114_name_or_words_confirmation_candidate/verification/registered_review.json) records the exact source, previous text, deployed bytes, owner references and complete glyph checks.
+
+Ordinary emulator gameplay verified a completed purchase in Syracuse and a Copenhagen rename confirmation with both No and Yes. Three complete panels passed and nine surrounding frames matched byte for byte. Thirteen inputs per original caller passed 39 offline layout and glyph checks, including an 18-byte name, mixed script, and literal percent signs. Promised Words received offline checks in this batch. The cumulative startup matched six frames and 24 protected getters using the existing system-only unlock fixture. All 20 targeted tests passed.
+
+The [registered ROM and exact clean-input patch](../releases/all_routes_editorial_20261114_name_or_words_confirmation_candidate/README.md) preserve all 114 accepted layers and the ASCII right-bound correction. The ledger credits 27,700 reviews, with 276 mapped shared records still to review or classify. Hardware verification remains open.

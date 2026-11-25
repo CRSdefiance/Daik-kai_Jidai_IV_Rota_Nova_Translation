@@ -1,0 +1,1554 @@
+{
+  "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb",
+  "reviewed_entries": [
+    {
+      "message_ID": 116,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 1,
+        "offset": 756,
+        "copy_end": 856,
+        "bytes": 97,
+        "record_index": 6,
+        "table_offset": 1317368,
+        "start_in_record": 74
+      },
+      "installed_reference": {
+        "block": 1,
+        "offset": 657,
+        "copy_end": 746,
+        "bytes": 86,
+        "record_index": 7,
+        "table_offset": 1317368,
+        "start_in_record": 56
+      },
+      "source_Japanese": "メモリーカードを\nチェックしています。\nメモリーカードや\nコントローラを\n抜き差ししないで\nください。",
+      "installed_text": "Checking the memory card. Please don't insert or remove the memory card or controller.",
+      "source_hex": "83818382838a815b834a815b836882f00a836083468362834e82b582c482a282dc82b781420a83818382838a815b834a815b836882e20a835283938367838d815b838982f00a94b282ab8db782b582b582c882a282c50a82ad82be82b382a28142",
+      "installed_hex": "436865636b696e6720746865206d656d6f727920636172642e20506c6561736520646f6e277420696e73657274206f722072656d6f766520746865206d656d6f72792063617264206f7220636f6e74726f6c6c65722e",
+      "source_review": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "Checking the memory card. Please don't insert or remove the memory card or controller.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      },
+      "other_direct_COMMON_display_unverified": true,
+      "verified_scoped_path": "The DS header scanner reads fixed addresses on the game card. Failed scans select the game-card read or write warning by caller mode, or COMMON 123 for system data. The successfully supplied header reads proceed without a memory-card progress warning."
+    }
+  ],
+  "remaining_without_scoped_disposition": [
+    108,
+    109,
+    110,
+    113,
+    114,
+    115,
+    124,
+    750,
+    751,
+    752,
+    3401,
+    3490,
+    3577,
+    3578,
+    3594,
+    3595,
+    3596,
+    3597,
+    3598,
+    3599,
+    3600
+  ],
+  "original_ARM9_spans": {
+    "020EEF58-020EEFB0": "b8a5947efa5480e8f951a6c55e37b326cdb715316436d7fb9025284c948acb2c",
+    "020ED708-020ED73C": "ef7a54ddb51644f2ecfd820fb663ecf2724178ecb06d3d55c3cc60dbd829adfa",
+    "020EE7E0-020EE80C": "d2b3ac99a8b3bbd7fb572b961a14794aefd0cd5005aac06f5a6ed792ef8786fe",
+    "020EE848-020EE864": "dd4da22f6552172d23febd8a0c8e60db1fe736e218192cf8eb50dd2d4d45ebb9",
+    "020EE9E8-020EE9FC": "7266415319d90efc79b00c8a79fc051cad2dc747917021da0b3c54c04ec8c8b6",
+    "020EECA0-020EECDC": "d9dd8aa1d120c787df4dd6d008339a42e5b99e67ffeaae0345ca5f456e5f301a",
+    "020EEF24-020EEF58": "66025b595fb7eb05470a415a6d6cf0c7672d96a9414327e71a4f85f856ee5204"
+  },
+  "original_ARM9_direct_callers": [
+    34526996,
+    34531328,
+    34532552
+  ],
+  "cases": [
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": null,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 34527036,
+      "selected_notice": null,
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 0,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 1,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 2,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 3,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 4,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 5,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "game_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 6,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": null,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 34531340,
+      "selected_notice": null,
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 0,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 1,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 2,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 3,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 4,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 5,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 0,
+      "supplied_failed_header": 6,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": null,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 34531340,
+      "selected_notice": null,
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 0,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 1,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 2,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 3,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 4,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 5,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "system_data_read",
+      "supplied_mode": 1,
+      "supplied_failed_header": 6,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900216,
+      "selected_notice": {
+        "COMMON_argument": 123
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": null,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 34532572,
+      "selected_notice": null,
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 0,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 1,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 2,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 3,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 4,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 5,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 0,
+      "supplied_failed_header": 6,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533204,
+        "ARM9_text_pointer": 35037136
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": null,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 34532572,
+      "selected_notice": null,
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 0,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 1,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 2,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 3,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 4,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 5,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    },
+    {
+      "parent": "save_or_load_slot_check",
+      "supplied_mode": 1,
+      "supplied_failed_header": 6,
+      "original_fixed_header_reads": [
+        {
+          "backup_offset": 0,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 40960,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 81920,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 122880,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 163840,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 204800,
+          "bytes": 4
+        },
+        {
+          "backup_offset": 245760,
+          "bytes": 4
+        }
+      ],
+      "boundary": 33900348,
+      "selected_notice": {
+        "ARM9_pointer_field": 34533200,
+        "ARM9_text_pointer": 35037212
+      },
+      "stopped_at_notice_receiver": true
+    }
+  ],
+  "offline_runs": 80,
+  "supplied_cartridge_reads": true,
+  "retained_notice_reviews": [
+    {
+      "id": "DK4_LOAD_READ_ERROR",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Native cartridge read error.",
+      "source_meaning": "The read failed. The player should power off the system and then reinsert the game card.",
+      "localization_note": "Keep the read failure distinct. Keep the two recovery instructions together and in the original order.",
+      "decision": "revision",
+      "source_Japanese": "データを読めませんでした。\n電源を切って、カードを差し込み直してください。",
+      "source_reference": {
+        "offset": 1482704,
+        "allocation": 76,
+        "pointer_field": 34533204,
+        "runtime_pointer": 35037136,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482704,
+        "allocation": 61,
+        "pointer_field": 34533204,
+        "runtime_pointer": 35037136,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "8366815b835e82f093c782df82dc82b982f182c582b582bd81420a93648cb982f090d882c182c48141834a815b836882f08db782b58d9e82dd92bc82b582c482ad82be82b382a28142000000",
+      "current_hex": "4461746120636f756c64206e6f7420626520726561642e0a205265737461727420616e64207265696e73657274207468652067616d6520636172642e00",
+      "staged_hex": "436f756c646e277420726561642074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e0000",
+      "previous_English": "Data could not be read.\n Restart and reinsert the game card.",
+      "previous_native_lines": [
+        "Data could not be read.",
+        "Restart and reinsert the game card."
+      ],
+      "english": "Couldn't read the data. Power off. Reinsert the game card.",
+      "display_hex": "436f756c646e277420726561642074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e",
+      "visible_lines": [
+        "Couldn't read the data.",
+        "Power off. Reinsert the game card."
+      ],
+      "native_ink_sha256": "7f5dd3a26937e0b2b2f7589799d1ee169ecd9d0287c139113433f3f2bea97ac6",
+      "original_selector": 34533156,
+      "supplied_selector_mode": 0,
+      "native_modal_mode": 0,
+      "glyphs": 49,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "offset": 1482704,
+        "allocation": 61,
+        "pointer_field": 34533204,
+        "runtime_pointer": 35037136,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b",
+        "candidate_sha256": "22bd4eab2e6b4a00f00d19f90cc5663bd7e32482e7e2c88cf47e02a5de7af4a2",
+        "exact_stored_hex": "436f756c646e277420726561642074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e0000"
+      }
+    },
+    {
+      "id": "DK4_SAVE_WRITE_ERROR",
+      "file_path": "/__arm9__.bin",
+      "speaker": "System",
+      "context": "Native cartridge write error.",
+      "source_meaning": "The write failed. The player should power off the system and then reinsert the game card.",
+      "localization_note": "Keep the write failure distinct. Keep the two recovery instructions together and in the original order.",
+      "decision": "revision",
+      "source_Japanese": "データを書けませんでした。\n電源を切って、カードを差し込み直してください。",
+      "source_reference": {
+        "offset": 1482780,
+        "allocation": 76,
+        "pointer_field": 34533200,
+        "runtime_pointer": 35037212,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1482780,
+        "allocation": 64,
+        "pointer_field": 34533200,
+        "runtime_pointer": 35037212,
+        "ARM9_sha256": "c7a6f6f944eaa137870d044aeeaabfde692d4b7a062b9de369f8c7b22b6551a3"
+      },
+      "source_hex": "8366815b835e82f08f9182af82dc82b982f182c582b582bd81420a93648cb982f090d882c182c48141834a815b836882f08db782b58d9e82dd92bc82b582c482ad82be82b382a28142000000",
+      "current_hex": "4461746120636f756c64206e6f74206265207772697474656e2e0a205265737461727420616e64207265696e73657274207468652067616d6520636172642e00",
+      "staged_hex": "436f756c646e27742077726974652074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e00000000",
+      "previous_English": "Data could not be written.\n Restart and reinsert the game card.",
+      "previous_native_lines": [
+        "Data could not be written.",
+        "Restart and reinsert the game card."
+      ],
+      "english": "Couldn't write the data. Power off. Reinsert the game card.",
+      "display_hex": "436f756c646e27742077726974652074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e",
+      "visible_lines": [
+        "Couldn't write the data.",
+        "Power off. Reinsert the game card."
+      ],
+      "native_ink_sha256": "e2dec4d9900254b53146693c03dec0e85a90554bb6125f3504a63ef35460d7ee",
+      "original_selector": 34533156,
+      "supplied_selector_mode": 1,
+      "native_modal_mode": 0,
+      "glyphs": 50,
+      "native_pages": 1,
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "offset": 1482780,
+        "allocation": 64,
+        "pointer_field": 34533200,
+        "runtime_pointer": 35037212,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b",
+        "candidate_sha256": "22bd4eab2e6b4a00f00d19f90cc5663bd7e32482e7e2c88cf47e02a5de7af4a2",
+        "exact_stored_hex": "436f756c646e27742077726974652074686520646174612e0a20506f776572206f66662e205265696e73657274207468652067616d6520636172642e00000000"
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_123",
+      "message_ID": 123,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "context": "The standalone failure notice applies to three original calls, including the missing-data path.",
+      "source_meaning": "Reports that the system data could not be loaded.",
+      "localization_note": "Use an idiomatic error sentence. Preserve the distinction from the separate notice that announces a default-data start.",
+      "source_Japanese": "システムデータのロードに失敗しました。\n",
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 27,
+        "record_index": 14,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "current_hex": "53797374656d2064617461206661696c656420746f206c6f61642e",
+      "previous": "System data failed to load.",
+      "english": "Couldn't load system data.",
+      "decision": "revision",
+      "native_callers": [
+        {
+          "call": 34529592,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34529576,
+          "exact_hex": "2c009de5000050e30400000a7b00a0e35e99fdeb0000a0e308008de5",
+          "instructions": [
+            "020EE128 ldr r0, [sp, #0x2c]",
+            "020EE12C cmp r0, #0",
+            "020EE130 beq #0x20ee148",
+            "020EE134 mov r0, #0x7b",
+            "020EE138 bl #0x20546b8",
+            "020EE13C mov r0, #0",
+            "020EE140 str r0, [sp, #8]"
+          ]
+        },
+        {
+          "call": 34531264,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531248,
+          "exact_hex": "030000ea7000a0e3be97fdeb7b00a0e3bc97fdeb0500a0e174d08de2",
+          "instructions": [
+            "020EE7B0 b #0x20ee7c4",
+            "020EE7B4 mov r0, #0x70",
+            "020EE7B8 bl #0x20546b8",
+            "020EE7BC mov r0, #0x7b",
+            "020EE7C0 bl #0x20546b8",
+            "020EE7C4 mov r0, r5",
+            "020EE7C8 add sp, sp, #0x74"
+          ]
+        },
+        {
+          "call": 34531820,
+          "target": 33900216,
+          "argument_register": "r0",
+          "source_current_equal": true,
+          "code_start": 34531804,
+          "exact_hex": "97df8de20000a0e3f08fbde87b00a0e33197fdeb0000a0e397df8de2",
+          "instructions": [
+            "020EE9DC add sp, sp, #0x25c",
+            "020EE9E0 mov r0, #0",
+            "020EE9E4 pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}",
+            "020EE9E8 mov r0, #0x7b",
+            "020EE9EC bl #0x20546b8",
+            "020EE9F0 mov r0, #0",
+            "020EE9F4 add sp, sp, #0x25c"
+          ]
+        }
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "registered_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1004,
+        "bytes": 26,
+        "record_index": 31,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "deployed_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+      "display": {
+        "lines": [
+          "Couldn't load system data."
+        ],
+        "origins": [
+          0
+        ],
+        "glyph_count": 23,
+        "native_plane_sha256": "88d8943d35c03fd1822d3b91a5ad539f492b182f64e1ca1482f0de3dbcb8f5b0",
+        "complete_native_format": {
+          "message_ID": 123,
+          "arguments": [],
+          "source_wrapper": 33900216,
+          "original_template_pointer": 36243212,
+          "native_varargs_vector": 41877492,
+          "original_varargs_pointers": [],
+          "expanded_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+          "native_wrapper_output_hex": "436f756c646e2774206c6f61642073797374656d20646174612e",
+          "native_wrapper_lines": [
+            "Couldn't load system data."
+          ],
+          "native_width_units": [
+            26
+          ],
+          "lines_over_existing_35_unit_wrap_budget": [],
+          "over_three_rows": false,
+          "native_varargs_argument_sequence_and_complete_words_verified": true,
+          "stopped_before_widget_creation": true,
+          "actual_stored_template_pointer_used": true
+        }
+      }
+    }
+  ],
+  "ordinary_gameplay_runs": 0,
+  "new_ROM": false,
+  "hardware": false,
+  "evidence": {
+    "translations\\editorial_checkpoints\\shared_display_20261123\\legacy_fleet_and_quit_paths_20261123.json": "ecc5192669ea4f21ec3aaaf5968d2a5ca543a194cafe6f2585bbbaa65734b54d",
+    "translations\\editorial_checkpoints\\shared_display_20261123\\current_shared_display_evidence_20261123.json": "bb6556719ed4a09641c36c6345e21d9edb15c72c1c079552c16f63f1adb760e7",
+    "releases\\all_routes_editorial_20261119_save_dialogue_candidate\\verification\\registered_review.json": "e5bd91c71e535583de4364b8d0ef1992256e8fb5370c1f7df8e9623f7c123963",
+    "releases\\all_routes_editorial_20261115_setup_confirmation_prose_candidate\\verification\\registered_review.json": "26922616805effa3efb266b850cadc7213c707ae94b38e32088fe423fba0420f",
+    "releases\\all_routes_editorial_20261123_online_card_copy_candidate\\verification\\registered_release_verification.json": "7346396bbd3f14531e95a0cdcc93442fc606f990aa23a25281d6e106b7f1f78a",
+    "releases\\all_routes_editorial_20261123_online_card_copy_candidate\\verification\\registered_review.json": "596098df93658f2132791fc30ed7a1fa3a365a61f45ea1f5b774bb0389262592",
+    "scripts\\reconcile_cartridge_header_check_20261123.py": "17b7586b8a572a96c3ad7048c5807d32d6163949bfb82786c0ee4826a9074d85"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "candidate_sha256": "d75cfc5cf2f735b4e7987cbde8775b7db01f7991458bf93184951b0bfb0c2f86",
+  "complete_holds": [
+    {
+      "case": "samples",
+      "frame": 4800,
+      "message_ID": 665,
+      "visible_lines": [
+        "You'd like us to hand out the goods",
+        "as free samples, then?"
+      ],
+      "full_ink_pixels": 581
+    },
+    {
+      "case": "samples",
+      "frame": 5200,
+      "message_ID": 665,
+      "visible_lines": [
+        "You'd like us to hand out the goods",
+        "as free samples, then?"
+      ],
+      "full_ink_pixels": 581
+    },
+    {
+      "case": "samples",
+      "frame": 6800,
+      "message_ID": 673,
+      "visible_lines": [
+        "Help yourselves to a free sample!"
+      ],
+      "full_ink_pixels": 337
+    },
+    {
+      "case": "samples",
+      "frame": 7200,
+      "message_ID": 674,
+      "visible_lines": [
+        "Free? Then I'll try it!"
+      ],
+      "full_ink_pixels": 202
+    },
+    {
+      "case": "epidemic",
+      "frame": 5600,
+      "message_ID": 657,
+      "visible_lines": [
+        "You're a sailor, aren't you? For",
+        "bulk trade, try the trade house."
+      ],
+      "full_ink_pixels": 606
+    },
+    {
+      "case": "epidemic",
+      "frame": 5900,
+      "message_ID": 683,
+      "visible_lines": [
+        "Business? People are",
+        "collapsing from the epidemic!",
+        "Are you kidding me?"
+      ],
+      "full_ink_pixels": 748
+    }
+  ],
+  "transitions": [
+    {
+      "case": "samples",
+      "frame": 8000,
+      "observation": "Returned to the shop list after the customer tried the sample."
+    },
+    {
+      "case": "epidemic",
+      "frame": 6050,
+      "observation": "Returned to the shop list."
+    },
+    {
+      "case": "epidemic",
+      "frame": 6150,
+      "observation": "Selected the Trends prompt."
+    },
+    {
+      "case": "epidemic",
+      "frame": 6250,
+      "observation": "Returned to town at the Square."
+    },
+    {
+      "case": "epidemic",
+      "frame": 6400,
+      "observation": "Moved the town cursor to Port."
+    }
+  ],
+  "original_outcomes": {
+    "samples": {
+      "cargo_before_fixture_after_fixture_after_giveaway": [
+        2,
+        2,
+        0
+      ],
+      "setup_changed_RAM_bytes": 3
+    },
+    "epidemic": {
+      "original_shop_selection": 683,
+      "setup_changed_RAM_bytes": 2
+    }
+  },
+  "observed_changed_keys": [
+    665,
+    673,
+    683
+  ],
+  "offline_only_changed_keys": [
+    659,
+    661,
+    667,
+    672,
+    684,
+    687
+  ],
+  "actual_emulator": true,
+  "earned_Chapel_assignment_or_epidemic": false,
+  "hardware": false,
+  "visually_reviewed_sheet": "work\\square_samples_wraps_20261115_v1\\gameplay_lower_screens.png",
+  "sheet_sha256": "eb7b6da30b5aa3ff76222c9eb34f25fe43636cf5aacc5b8fe7b8d503928fed26",
+  "evidence": {
+    "work\\square_samples_wraps_20261115_v1\\staged.json": "3d95ea4c7a08c8854e6bd1bd88e40b527c35345af677f1ac2ebb8c61803cb22d",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\square_samples_wraps_context_20261115_v1.json": "e5b9ea041a932ffad7135e338171e27dcd01557e6a891e04d26620e57d6e3c76",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\istanbul_shop_observed_consumers_20261114_v1.json": "455d06d5da9bc673ccbd2c46f42d0ae00ad708f9e16c0eb95ad8c44a20f55fd7",
+    "work\\square_samples_wraps_20261115_v1\\gameplay_lower_screens.png": "eb7b6da30b5aa3ff76222c9eb34f25fe43636cf5aacc5b8fe7b8d503928fed26",
+    "C:\\Projects\\Personal Projects\\g-p-6a676ab5787c819181af4a29d5cebfbc\\dk4-translation-tool\\scripts\\checkpoint_square_samples_wraps_20261115.py": "6b28d425a397d76c3a33265b232333a9cfd69ff7b1605a81490f63fe16fd5e83",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_003200_arm9_ram.bin": "d47e14a8aaab6117506032ccef7d1ad97285ae474872d8097e947f39417bfb64",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_008001_arm9_ram.bin": "721648af52295a755534cc59eaaace597656504263bafbb4805043efd6ee9620",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_004800_cold_boot.png": "16e1e7f70e74d404fbed57518c8e13be9a109f10f77a559cc1cf1f146fc2f9de",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_005200_cold_boot.png": "16e1e7f70e74d404fbed57518c8e13be9a109f10f77a559cc1cf1f146fc2f9de",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_006800_cold_boot.png": "14fa0e7a9e614514b0f692ad723ddfddcd205c211d408d6565943fea4f6ff46e",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_007200_cold_boot.png": "eeded30a3c7ed0babf8dc1edab253b697c77f528a3bc724c7190e8df58e21600",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\frame_008000_cold_boot.png": "efd7d3768302120285e68d90d807297a719f7bdfc75f7ace85926b9294c9761c",
+    "work\\emulation_v193\\giveaway_v746_new\\capture_report.json": "698af950d032553890f6d1104ebe3a7eee24eadf252a4be72858b10893c7e96a",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\capture_report.json": "59ebd498343fccdd480adbfb258e9a55660727d6a55aa79bd46eb876f410284b",
+    "work\\square_samples_wraps_20261115_v1\\samples\\terminal.json": "665c3d8ffd1cea2402e2e86c675fc6310a8c2fbe0ad9b149fdcc317c6d1580eb",
+    "work\\square_samples_wraps_20261115_v1\\samples\\capture\\navigation_command_journal.json": "5891dd6ce971d43132c1ee01a6c947029b7fbad6475ae778f56fd99ea998da28",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_003200_arm9_ram.bin": "d47e14a8aaab6117506032ccef7d1ad97285ae474872d8097e947f39417bfb64",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_006500_arm9_ram.bin": "4340faa8f5462a1a010d93b0023814351d520cd39875b4e34eb53c3563ca1cf2",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_005600_cold_boot.png": "a28971b2ec1a527a56933259d183be9744027421f6d60169a20b54dc5d1b2b9a",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_005900_cold_boot.png": "e209babfc430c768e8d132f36bb587de198de1eac1f3e12460e2700d6c488835",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_006050_cold_boot.png": "afb5375e71f1e2e9b15b457008df9afb454beb8f5d0e2109196d72d2473b864c",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_006150_cold_boot.png": "09534f29efe3d6c82b62dc1fbdc428622a6cd410c53cbc5e70872b2124f32e5d",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_006250_cold_boot.png": "90603dd75afdc8d7bfe5417aecdb1aa214c9eb72cc8e9ab7b11d51a868cd857e",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\frame_006400_cold_boot.png": "e326044a952050105fa9474efb903d2a529f774eb543bd2bfc18256318dd8d23",
+    "work\\emulation_v193\\shop_business_v745_new\\capture_report.json": "2cbbe76dc93416ffaacb99568f96ad5562a4df3ffd394b747a509e280e876108",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\capture_report.json": "a42d054acf247325a17363185a49bb1e438e663730f2e988c95e0ca42eee3ece",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\terminal.json": "6a2103a72f6dbca060be04f56adf4b3a402471c3cb6380ad971658295de9c4e5",
+    "work\\square_samples_wraps_20261115_v1\\epidemic\\capture\\navigation_command_journal.json": "c3a9be6ac5ef81c851577b5ca1e82552ef0a86af3223d0d03e85041460f1e780"
+  }
+}

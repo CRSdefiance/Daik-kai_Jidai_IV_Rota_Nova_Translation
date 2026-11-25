@@ -2,12 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from historical_fixture_support import historical_rom
+
 from scripts.audit_raphael_route_completion import audit
 
 
 def test_raphael_v93_completion_audit_proves_route_scope() -> None:
     report = audit(
-        Path("out/raphael_deep_route_v93_candidate.nds"),
+        historical_rom("raphael_deep_route_v93_candidate"),
         Path("out/raphael_natural_v2_accepted_base.nds"),
         Path("out/raphael_deep_route_v93_manifest.json"),
         Path("out/qa_raphael_v93_release.json"),

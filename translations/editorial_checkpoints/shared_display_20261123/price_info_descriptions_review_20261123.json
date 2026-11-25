@@ -1,0 +1,1305 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "previous_sha256": "4139b758090301d912b3d326ae4d7174d8fc951e0c4790015c185fd32b576331",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_143",
+      "message_id": 143,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Beef",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Beef can be boiled or grilled. Some cultures don't eat beef at all.",
+      "previous_English": "Beef can be boiled or grilled.\nIn some cultures, people avoid it \naltogether.",
+      "Japanese": "牛の肉。煮たり焼いたりして食べる。文\n化によっては一切食さない人々もいる。",
+      "source_meaning": "Beef is boiled or grilled. Some cultures abstain from it.",
+      "localization_note": "Keep both preparations and the cultural distinction. Give the second sentence its own line.",
+      "source_reference": {
+        "block": 1,
+        "offset": 2300,
+        "copy_end": 2376,
+        "bytes": 73,
+        "record_index": 28,
+        "table_offset": 1317422,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 2444,
+        "copy_end": 2522,
+        "bytes": 77,
+        "record_index": 55,
+        "table_offset": 1317422,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8b8d82cc93f781428ecf82bd82e88fc482a282bd82e882b582c4904882d782e9814295b60a89bb82c982e682c182c482cd88ea90d8904882b382c882a2906c815882e082a282e98142",
+      "exact_current_hex": "426565662063616e20626520626f696c6564206f72206772696c6c65642e0a496e20736f6d652063756c74757265732c2070656f706c652061766f6964206974200a616c746f6765746865722e",
+      "staged_hex": "426565662063616e20626520626f696c6564206f72206772696c6c65642e0a536f6d652063756c747572657320646f6e277420656174206265656620617420616c6c2e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 2444,
+        "copy_end": 2522,
+        "bytes": 67,
+        "record_index": 55,
+        "table_offset": 1317422,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Beef can be boiled or grilled.",
+            "Some cultures don't eat beef at all."
+          ],
+          "consumed_bytes": 67,
+          "remaining_bytes": 0,
+          "pixel_sha256": "e6154dbcea0526b5e6fc6dd2ce0d4966c5f178c2bfe0da41540bed47a7539e0e",
+          "glyphs": 55
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_146",
+      "message_id": 146,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Tomato",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "A New World vegetable in the nightshade family, also called red nightshade. Tomatoes can be eaten raw or simmered.",
+      "previous_English": "A New World vegetable \nin the nightshade family, also\ncalled red nightshade. Tomatoes can \nbe eaten raw or simmered.",
+      "Japanese": "野菜の一種。ナス科の植物。別名アカナ\nス。新大陸原産。生または煮て食べる。",
+      "source_meaning": "A New World nightshade, with an alternate name, eaten raw or cooked.",
+      "localization_note": "The existing entry gives the region, family, alternate name and both preparations in straightforward prose.",
+      "source_reference": {
+        "block": 1,
+        "offset": 2576,
+        "copy_end": 2652,
+        "bytes": 73,
+        "record_index": 31,
+        "table_offset": 1317428,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 1,
+        "offset": 2768,
+        "copy_end": 2886,
+        "bytes": 116,
+        "record_index": 75,
+        "table_offset": 1317428,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "96ec8dd882cc88ea8eed81428369835889c882cc904195a8814295ca96bc8341834a83690a83588142905691e597a48cb48e59814290b682dc82bd82cd8ecf82c4904882d782e98142",
+      "exact_current_hex": "41204e657720576f726c6420766567657461626c65200a696e20746865206e6967687473686164652066616d696c792c20616c736f0a63616c6c656420726564206e6967687473686164652e20546f6d61746f65732063616e200a626520656174656e20726177206f722073696d6d657265642e",
+      "staged_hex": "41204e657720576f726c6420766567657461626c65200a696e20746865206e6967687473686164652066616d696c792c20616c736f0a63616c6c656420726564206e6967687473686164652e20546f6d61746f65732063616e200a626520656174656e20726177206f722073696d6d657265642e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 1,
+        "offset": 2768,
+        "copy_end": 2886,
+        "bytes": 116,
+        "record_index": 85,
+        "table_offset": 1317428,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "A New World vegetable",
+            "in the nightshade family, also",
+            "called red nightshade. Tomatoes can",
+            "be eaten raw or simmered."
+          ],
+          "consumed_bytes": 116,
+          "remaining_bytes": 0,
+          "pixel_sha256": "4d56de835b641b647616f27f4f664561bbf5860ca2a0eecae10e802409b3160f",
+          "glyphs": 96
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_166",
+      "message_id": 166,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Chili",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Dried chilies from the New World, also known as red pepper. Very hot.",
+      "previous_English": "Dried New World chili peppers,\nalso called red pepper. Their heat\nis intense.",
+      "Japanese": "トウガラシの果実を乾燥させたもの。新\n大陸原産。別名レッドペッパー。刺激の\n強い辛味がある。",
+      "source_meaning": "Dried New World chilies, also called red pepper, with a strong bite.",
+      "localization_note": "Keep origin and alternate name. The short heat note suits a commodity entry and stays with the preceding thought.",
+      "source_reference": {
+        "block": 2,
+        "offset": 216,
+        "copy_end": 308,
+        "bytes": 90,
+        "record_index": 1,
+        "table_offset": 1317468,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 2,
+        "offset": 207,
+        "copy_end": 286,
+        "bytes": 77,
+        "record_index": 4,
+        "table_offset": 1317468,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "83678345834b8389835682cc89ca8ec082f08aa3918782b382b982bd82e082cc814290560a91e597a48cb48e59814295ca96bc838c83628368837983628370815b81428e688c8382cc0a8bad82a2906896a182aa82a082e98142",
+      "exact_current_hex": "4472696564204e657720576f726c64206368696c6920706570706572732c0a616c736f2063616c6c656420726564207065707065722e20546865697220686561740a697320696e74656e73652e",
+      "staged_hex": "4472696564206368696c6965732066726f6d20746865204e657720576f726c642c200a616c736f206b6e6f776e20617320726564207065707065722e205665727920686f742e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 2,
+        "offset": 207,
+        "copy_end": 286,
+        "bytes": 70,
+        "record_index": 4,
+        "table_offset": 1317468,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Dried chilies from the New World,",
+            "also known as red pepper. Very hot."
+          ],
+          "consumed_bytes": 70,
+          "remaining_bytes": 0,
+          "pixel_sha256": "bdffeef681f6739de5c39c12c323433ba40fcccf74ec230963357043c5b82677",
+          "glyphs": 57
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_203",
+      "message_id": 203,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Amber",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Resin fossilized underground. Yellowish, clear to translucent. Used in brooches and other jewelry.",
+      "previous_English": "Resin fossilized underground. \nYellowish, clear or translucent,\nit is used for brooches and other \nornaments.",
+      "Japanese": "古代の樹脂が地中で化石化したもの。黄\n色を帯び、透明または半透明ブローチな\nどの装飾品として用いられる。",
+      "source_meaning": "Ancient resin fossilized underground, yellowish and clear or translucent, used for brooches and other ornaments.",
+      "localization_note": "Keep the formation, appearance and use in complete rows, with brooches as the original example.",
+      "source_reference": {
+        "block": 3,
+        "offset": 124,
+        "copy_end": 228,
+        "bytes": 102,
+        "record_index": 1,
+        "table_offset": 1317542,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 0,
+        "copy_end": 111,
+        "bytes": 109,
+        "record_index": 0,
+        "table_offset": 1317542,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8cc391e382cc8ef78e8982aa926e928682c589bb90ce89bb82b582bd82e082cc814289a90a904682f091d182d1814193a796be82dc82bd82cd94bc93a796be8375838d815b836082c80a82c782cc91958ffc956982c682b582c4977082a282e782ea82e98142",
+      "exact_current_hex": "526573696e20666f7373696c697a656420756e64657267726f756e642e200a59656c6c6f776973682c20636c656172206f72207472616e736c7563656e742c0a6974206973207573656420666f722062726f6f6368657320616e64206f74686572200a6f726e616d656e74732e",
+      "staged_hex": "526573696e20666f7373696c697a656420756e64657267726f756e642e200a59656c6c6f776973682c20636c65617220746f207472616e736c7563656e742e0a5573656420696e2062726f6f6368657320616e64206f74686572206a6577656c72792e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 0,
+        "copy_end": 111,
+        "bytes": 99,
+        "record_index": 0,
+        "table_offset": 1317542,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Resin fossilized underground.",
+            "Yellowish, clear to translucent.",
+            "Used in brooches and other jewelry."
+          ],
+          "consumed_bytes": 99,
+          "remaining_bytes": 0,
+          "pixel_sha256": "e39dd59b8bd1573a2c5ce6a6044df6d835d15cbe8e2123add7545ae72991a919",
+          "glyphs": 86
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_208",
+      "message_id": 208,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Sapphires",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Clear blue gems long held sacred. Christian clergy wore them in rings. Only diamonds are harder or rarer.",
+      "previous_English": "Clear blue gems held sacred and worn\nin rings by Christian clergy. Only\ndiamonds rank higher in hardness\nand rarity.",
+      "Japanese": "透明な青澄色の宝石。別名を青玉。青宝\n玉。昔から神聖な石とされ、キリスト教\n聖職者の指輪に使われた。ダイヤモンド\nに次ぐ硬度と希少性を持つ。",
+      "source_meaning": "Clear blue gems long regarded as sacred, worn in clergy rings, second to diamonds in hardness and rarity.",
+      "localization_note": "Keep the historical practice separate from the game’s comparison of both properties.",
+      "source_reference": {
+        "block": 3,
+        "offset": 696,
+        "copy_end": 836,
+        "bytes": 137,
+        "record_index": 5,
+        "table_offset": 1317552,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 627,
+        "copy_end": 745,
+        "bytes": 116,
+        "record_index": 9,
+        "table_offset": 1317552,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "93a796be82c890c2909f904682cc95f390ce814295ca96bc82f090c28bca814290c295f30a8bca814290cc82a982e7905f90b982c890ce82c682b382ea8141834c838a835883678bb30a90b990458ed282cc8e7797d682c98e6782ed82ea82bd8142835f834383848382839383680a82c98e9f82ae8d64937882c68af38fad90ab82f08e9d82c28142",
+      "exact_current_hex": "436c65617220626c75652067656d732068656c642073616372656420616e6420776f726e0a696e2072696e67732062792043687269737469616e20636c657267792e204f6e6c790a6469616d6f6e64732072616e6b2068696768657220696e20686172646e6573730a616e64207261726974792e",
+      "staged_hex": "436c65617220626c75652067656d73206c6f6e672068656c64207361637265642e200a43687269737469616e20636c6572677920776f7265207468656d20696e2072696e67732e0a4f6e6c79206469616d6f6e64732061726520686172646572206f722072617265722e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 627,
+        "copy_end": 745,
+        "bytes": 106,
+        "record_index": 19,
+        "table_offset": 1317552,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Clear blue gems long held sacred.",
+            "Christian clergy wore them in rings.",
+            "Only diamonds are harder or rarer."
+          ],
+          "consumed_bytes": 106,
+          "remaining_bytes": 0,
+          "pixel_sha256": "800ca763168a8431fe8b40a374a298ab60eb7fd3a5a4a27e6dd42185bba9efbc",
+          "glyphs": 88
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_216",
+      "message_id": 216,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Cordyceps",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Parasitic fungus on insects. A prized tonic.",
+      "previous_English": "Fungus grown on insects, prized \nas a tonic.",
+      "Japanese": "昆虫などに寄生するキノコ。強壮剤とし\nて珍重される。",
+      "source_meaning": "A fungus that parasitizes insects and is prized as a tonic.",
+      "localization_note": "Name the parasitic relationship explicitly. The preceding English could suggest people grow it deliberately on insects.",
+      "source_reference": {
+        "block": 3,
+        "offset": 1524,
+        "copy_end": 1576,
+        "bytes": 51,
+        "record_index": 12,
+        "table_offset": 1317568,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 1516,
+        "copy_end": 1562,
+        "bytes": 44,
+        "record_index": 36,
+        "table_offset": 1317568,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8da9928e82c882c782c98af190b682b782e9834c836d835281428bad91738ddc82c682b50a82c492bf8f6482b382ea82e98142",
+      "exact_current_hex": "46756e6775732067726f776e206f6e20696e73656374732c207072697a6564200a6173206120746f6e69632e",
+      "staged_hex": "5061726173697469632066756e677573206f6e20696e73656374732e0a41207072697a656420746f6e69632e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 1516,
+        "copy_end": 1562,
+        "bytes": 44,
+        "record_index": 56,
+        "table_offset": 1317568,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Parasitic fungus on insects.",
+            "A prized tonic."
+          ],
+          "consumed_bytes": 44,
+          "remaining_bytes": 0,
+          "pixel_sha256": "6f991ecba720244033cb9c422ca1ca48b0b7e17f1fdeb333ef7ecc355230d0d7",
+          "glyphs": 38
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_225",
+      "message_id": 225,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Blades",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Blades and swords. They sell well during wars.",
+      "previous_English": "Blades and swords. They sell well \nduring wars.",
+      "Japanese": "刀と剣のこと。戦争時にはよく売れる。",
+      "source_meaning": "Blades and swords that sell well during wars.",
+      "localization_note": "Keep the established description and give the wartime demand statement its own complete row.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2040,
+        "copy_end": 2076,
+        "bytes": 36,
+        "record_index": 21,
+        "table_offset": 1317586,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 2117,
+        "copy_end": 2166,
+        "bytes": 47,
+        "record_index": 53,
+        "table_offset": 1317586,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "938182c68c9582cc82b182c6814290ed91888e9e82c982cd82e682ad948482ea82e98142",
+      "exact_current_hex": "426c6164657320616e642073776f7264732e20546865792073656c6c2077656c6c200a647572696e6720776172732e",
+      "staged_hex": "426c6164657320616e642073776f7264732e0a546865792073656c6c2077656c6c20647572696e6720776172732e",
+      "decision": "wrap revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 2117,
+        "copy_end": 2166,
+        "bytes": 46,
+        "record_index": 73,
+        "table_offset": 1317586,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Blades and swords.",
+            "They sell well during wars."
+          ],
+          "consumed_bytes": 46,
+          "remaining_bytes": 0,
+          "pixel_sha256": "1fefda11a5d3d4f6dab5b709976db48ddeb22ae3bee10dc3442863bcec5a2de4",
+          "glyphs": 39
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_226",
+      "message_id": 226,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Armor",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Armor and helmets. They sell well during wars.",
+      "previous_English": "Armor and helmets. They sell well \nduring wars.",
+      "Japanese": "鎧と兜のこと。戦争時にはよく売れる。",
+      "source_meaning": "Armor and helmets that sell well during wars.",
+      "localization_note": "Keep the two products and give the wartime demand statement its own complete row.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2076,
+        "copy_end": 2112,
+        "bytes": 36,
+        "record_index": 21,
+        "table_offset": 1317588,
+        "start_in_record": 36
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 2166,
+        "copy_end": 2215,
+        "bytes": 47,
+        "record_index": 55,
+        "table_offset": 1317588,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8a5a82c68a9582cc82b182c6814290ed91888e9e82c982cd82e682ad948482ea82e98142",
+      "exact_current_hex": "41726d6f7220616e642068656c6d6574732e20546865792073656c6c2077656c6c200a647572696e6720776172732e",
+      "staged_hex": "41726d6f7220616e642068656c6d6574732e0a546865792073656c6c2077656c6c20647572696e6720776172732e",
+      "decision": "wrap revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 2166,
+        "copy_end": 2215,
+        "bytes": 46,
+        "record_index": 76,
+        "table_offset": 1317588,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Armor and helmets.",
+            "They sell well during wars."
+          ],
+          "consumed_bytes": 46,
+          "remaining_bytes": 0,
+          "pixel_sha256": "b5d4efbe2db4b42e8ba0d58ce4542e0167ccfab6a30d8251b4c80a412b462f48",
+          "glyphs": 39
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_227",
+      "message_id": 227,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Iron Ore",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Ore containing iron. Used to make steel, stainless steel, and more.",
+      "previous_English": "Rock containing iron, processed into\nsteel, stainless steel and other\nmaterials.",
+      "Japanese": "鉄の原料を含む石。ステンレス、鋼（は\nがね）などに加工される。",
+      "source_meaning": "Iron-bearing rock processed into steel, stainless steel and other materials.",
+      "localization_note": "Keep the raw and processed goods distinct, and retain both named examples as part of a broader list.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2112,
+        "copy_end": 2176,
+        "bytes": 61,
+        "record_index": 21,
+        "table_offset": 1317590,
+        "start_in_record": 72
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 2215,
+        "copy_end": 2296,
+        "bytes": 80,
+        "record_index": 57,
+        "table_offset": 1317590,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "935382cc8cb497bf82f08adc82de90ce8142835883658393838c835881418d7c816982cd0a82aa82cb816a82c882c782c989c18d4882b382ea82e98142",
+      "exact_current_hex": "526f636b20636f6e7461696e696e672069726f6e2c2070726f63657373656420696e746f0a737465656c2c20737461696e6c65737320737465656c20616e64206f746865720a6d6174657269616c732e",
+      "staged_hex": "4f726520636f6e7461696e696e672069726f6e2e205573656420746f206d616b65200a737465656c2c20737461696e6c65737320737465656c2c20616e64206d6f72652e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 2215,
+        "copy_end": 2296,
+        "bytes": 68,
+        "record_index": 79,
+        "table_offset": 1317590,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Ore containing iron. Used to make",
+            "steel, stainless steel, and more."
+          ],
+          "consumed_bytes": 68,
+          "remaining_bytes": 0,
+          "pixel_sha256": "eb113b6f16d3145df81ee3a2c86e8e76f315c637ff4902a7b150a3d6639b7884",
+          "glyphs": 57
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_233",
+      "message_id": 233,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Leather",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Tanned hide with the hair removed. Strong, absorbent and breathable. Used for handbags, belts, and shoes.",
+      "previous_English": "Hide tanned with the hair removed \nmakes strong, absorbent, breathable \nleather. Used for bags, belts,\nand shoes.",
+      "Japanese": "皮革で作った製品。皮の毛を除いてなめ\nした革は強度・吸湿性・通気性に優れて\nいる。ハンドバッグ、ベルト靴などに用\nいられる。",
+      "source_meaning": "Hair is removed and the hide is tanned. It is strong, absorbent and breathable, and used for handbags, belts and shoes.",
+      "localization_note": "Keep preparation, the three material qualities and the three source examples in separate rows.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2640,
+        "copy_end": 2764,
+        "bytes": 121,
+        "record_index": 26,
+        "table_offset": 1317602,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 2802,
+        "copy_end": 2916,
+        "bytes": 113,
+        "record_index": 66,
+        "table_offset": 1317602,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "94e78a7682c58dec82c182bd90bb9569814294e782cc96d182f08f9c82a282c482c882df0a82b582bd8a7682cd8bad937881458b7a8ebc90ab814592ca8b4390ab82c9974482ea82c40a82a282e98142836e83938368836f8362834f81418378838b83678c4382c882c782c997700a82a282e782ea82e98142",
+      "exact_current_hex": "486964652074616e6e656420776974682074686520686169722072656d6f766564200a6d616b6573207374726f6e672c206162736f7262656e742c2062726561746861626c65200a6c6561746865722e205573656420666f7220626167732c2062656c74732c0a616e642073686f65732e",
+      "staged_hex": "54616e6e6564206869646520776974682074686520686169722072656d6f7665642e0a5374726f6e672c206162736f7262656e7420616e642062726561746861626c652e200a5573656420666f722068616e64626167732c2062656c74732c20616e642073686f65732e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 2802,
+        "copy_end": 2916,
+        "bytes": 106,
+        "record_index": 100,
+        "table_offset": 1317602,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Tanned hide with the hair removed.",
+            "Strong, absorbent and breathable.",
+            "Used for handbags, belts, and shoes."
+          ],
+          "consumed_bytes": 106,
+          "remaining_bytes": 0,
+          "pixel_sha256": "ea4d74354d49f25a3691f4a297cdfdfe24a080769ed7d0f47abb9aec6e168620",
+          "glyphs": 90
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_234",
+      "message_id": 234,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Wax",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Pale yellow beeswax from honeycombs. Used for candles and other goods.",
+      "previous_English": "Pale yellow beeswax from honeycombs,\nused to make candles and other\nproducts.",
+      "Japanese": "ミツバチの巣を構成しているろう。別名\nみつろう。淡黄色で、ろうそくなどに用\nいられる。",
+      "source_meaning": "Pale yellow beeswax from honeycombs, used for candles and similar products.",
+      "localization_note": "State the bee source and color together. Keep the entire example sentence together.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2764,
+        "copy_end": 2848,
+        "bytes": 84,
+        "record_index": 27,
+        "table_offset": 1317604,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 2916,
+        "copy_end": 2994,
+        "bytes": 77,
+        "record_index": 67,
+        "table_offset": 1317604,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "837e8363836f836082cc918382f08d5c90ac82b582c482a282e982eb82a4814295ca96bc0a82dd82c282eb82a48142925789a9904682c5814182eb82a482bb82ad82c882c782c997700a82a282e782ea82e98142",
+      "exact_current_hex": "50616c652079656c6c6f7720626565737761782066726f6d20686f6e6579636f6d62732c0a7573656420746f206d616b652063616e646c657320616e64206f746865720a70726f64756374732e",
+      "staged_hex": "50616c652079656c6c6f7720626565737761782066726f6d20686f6e6579636f6d62732e0a5573656420666f722063616e646c657320616e64206f7468657220676f6f64732e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 2916,
+        "copy_end": 2994,
+        "bytes": 70,
+        "record_index": 108,
+        "table_offset": 1317604,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Pale yellow beeswax from honeycombs.",
+            "Used for candles and other goods."
+          ],
+          "consumed_bytes": 70,
+          "remaining_bytes": 0,
+          "pixel_sha256": "d444b762b6cf9ee2ea45dae57cdc6ffeb758429ce7845a92bbd81d1f45404076",
+          "glyphs": 60
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_236",
+      "message_id": 236,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Guano",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "On tropical shores and islands, seabird droppings pile up. Used as a fertilizer with nitrogen and phosphate.",
+      "previous_English": "Fertilizer from seabird droppings \nthat build up on tropical shores and\nislands. It contains nitrogen and \nphosphate.",
+      "Japanese": "肥料の一種。熱帯の海岸や島に野生する\n海鳥の糞尿が堆積したもの。窒素・リン\n酸などを含む。別名は鳥糞石（ちょうふ\nんせき）。",
+      "source_meaning": "Seabird droppings accumulate on tropical shores and islands and contain nitrogen and phosphate. They serve as fertilizer.",
+      "localization_note": "Keep the location together and retain both nutrients and the original use.",
+      "source_reference": {
+        "block": 3,
+        "offset": 2892,
+        "copy_end": 3016,
+        "bytes": 121,
+        "record_index": 28,
+        "table_offset": 1317608,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 3051,
+        "copy_end": 3169,
+        "bytes": 117,
+        "record_index": 69,
+        "table_offset": 1317608,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "94ec97bf82cc88ea8eed8142944d91d182cc8a438add82e2938782c996ec90b682b782e90a8a4392b982cc95b3944182aa91cd90cf82b582bd82e082cc8142928291668145838a83930a8e5f82c882c782f08adc82de814295ca96bc82cd92b995b390ce816982bf82e582a482d30a82f182b982ab816a8142",
+      "exact_current_hex": "46657274696c697a65722066726f6d20736561626972642064726f7070696e6773200a74686174206275696c64207570206f6e2074726f706963616c2073686f72657320616e640a69736c616e64732e20497420636f6e7461696e73206e6974726f67656e20616e64200a70686f7370686174652e",
+      "staged_hex": "4f6e2074726f706963616c2073686f72657320616e642069736c616e64732c200a736561626972642064726f7070696e67732070696c652075702e0a5573656420617320612066657274696c697a65720a77697468206e6974726f67656e20616e642070686f7370686174652e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 3051,
+        "copy_end": 3169,
+        "bytes": 109,
+        "record_index": 117,
+        "table_offset": 1317608,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "On tropical shores and islands,",
+            "seabird droppings pile up.",
+            "Used as a fertilizer",
+            "with nitrogen and phosphate."
+          ],
+          "consumed_bytes": 109,
+          "remaining_bytes": 0,
+          "pixel_sha256": "070e43226ef63e41bbd643476c75783f76b39fdcba436d9a7937ce63d72bdca6",
+          "glyphs": 92
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_242",
+      "message_id": 242,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Salmon",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "King salmon are the largest and longest-lived salmon. Spawning takes place year-round, so their runs upriver last a long time.",
+      "previous_English": "King salmon are the largest and \nlongest-lived salmon. Spawning takes\nplace year-round, so their runs \nupriver last a long time.",
+      "Japanese": "キングサーモン。鮭の仲間では、最も大\nきく、最も長生きする。年間を通して産\n卵するため、川を遡る期間も長期にわた\nる。",
+      "source_meaning": "King salmon are the largest and longest-lived, spawning throughout the year and spending a long period returning upriver.",
+      "localization_note": "Keep the species and the in-game explanation intact across four full rows.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3580,
+        "copy_end": 3696,
+        "bytes": 115,
+        "record_index": 33,
+        "table_offset": 1317620,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 3790,
+        "copy_end": 3920,
+        "bytes": 128,
+        "record_index": 77,
+        "table_offset": 1317620,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "834c8393834f8354815b8382839381428df882cc92878ad482c582cd81418dc582e091e50a82ab82ad81418dc582e092b790b682ab82b782e98142944e8ad482f092ca82b582c48e590a979182b782e982bd82df814190ec82f0916b82e98afa8ad482e092b78afa82c982ed82bd0a82e98142",
+      "exact_current_hex": "4b696e672073616c6d6f6e2061726520746865206c61726765737420616e64200a6c6f6e676573742d6c697665642073616c6d6f6e2e20537061776e696e672074616b65730a706c61636520796561722d726f756e642c20736f2074686569722072756e73200a75707269766572206c6173742061206c6f6e672074696d652e",
+      "staged_hex": "4b696e672073616c6d6f6e2061726520746865206c61726765737420616e64200a6c6f6e676573742d6c697665642073616c6d6f6e2e20537061776e696e672074616b65730a706c61636520796561722d726f756e642c20736f2074686569722072756e73200a75707269766572206c6173742061206c6f6e672074696d652e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 3790,
+        "copy_end": 3920,
+        "bytes": 128,
+        "record_index": 133,
+        "table_offset": 1317620,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "King salmon are the largest and",
+            "longest-lived salmon. Spawning takes",
+            "place year-round, so their runs",
+            "upriver last a long time."
+          ],
+          "consumed_bytes": 128,
+          "remaining_bytes": 0,
+          "pixel_sha256": "f7b509832cfea3f5affe1abd982d968c3f3ab4d46bfba3d4e793e0da17a673d9",
+          "glyphs": 107
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_243",
+      "message_id": 243,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Whale Meat",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Whale meat resembles horse meat in appearance. It has long been valued as food in Japan.",
+      "previous_English": "Whale meat resembles horse meat \nin appearance. It has long been \nvalued as food in Japan.",
+      "Japanese": "見かけは馬肉に似ている。日本では古く\nから貴重な食料として扱われてきた。",
+      "source_meaning": "Whale meat looks like horse meat and has long been prized in Japan.",
+      "localization_note": "The straightforward comparison and historical use keep the original cultural context.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3696,
+        "copy_end": 3768,
+        "bytes": 71,
+        "record_index": 34,
+        "table_offset": 1317622,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 3920,
+        "copy_end": 4012,
+        "bytes": 90,
+        "record_index": 79,
+        "table_offset": 1317622,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8ca982a982af82cd946e93f782c98e9782c482a282e9814293fa967b82c582cd8cc382ad0a82a982e78b4d8f6482c8904897bf82c682b582c488b582ed82ea82c482ab82bd8142",
+      "exact_current_hex": "5768616c65206d65617420726573656d626c657320686f727365206d656174200a696e20617070656172616e63652e20497420686173206c6f6e67206265656e200a76616c75656420617320666f6f6420696e204a6170616e2e",
+      "staged_hex": "5768616c65206d65617420726573656d626c657320686f727365206d656174200a696e20617070656172616e63652e20497420686173206c6f6e67206265656e200a76616c75656420617320666f6f6420696e204a6170616e2e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 3920,
+        "copy_end": 4012,
+        "bytes": 90,
+        "record_index": 135,
+        "table_offset": 1317622,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Whale meat resembles horse meat",
+            "in appearance. It has long been",
+            "valued as food in Japan."
+          ],
+          "consumed_bytes": 90,
+          "remaining_bytes": 0,
+          "pixel_sha256": "a10f5c47e3b4c625870ab03a1fa92ef3a04dc5be5ec7047f804582a0aa7ce1cb",
+          "glyphs": 73
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_244",
+      "message_id": 244,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Black Wool",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Wool sheared from black sheep.",
+      "previous_English": "Wool sheared from black sheep.",
+      "Japanese": "黒羊から刈り取った羊毛。",
+      "source_meaning": "Wool sheared from black sheep.",
+      "localization_note": "The single sentence defines the good without adding a quality or processing claim.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3768,
+        "copy_end": 3792,
+        "bytes": 24,
+        "record_index": 35,
+        "table_offset": 1317624,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 4012,
+        "copy_end": 4043,
+        "bytes": 30,
+        "record_index": 81,
+        "table_offset": 1317624,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "8d95977282a982e78aa082e88ee682c182bd977296d18142",
+      "exact_current_hex": "576f6f6c20736865617265642066726f6d20626c61636b2073686565702e",
+      "staged_hex": "576f6f6c20736865617265642066726f6d20626c61636b2073686565702e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 4012,
+        "copy_end": 4043,
+        "bytes": 30,
+        "record_index": 137,
+        "table_offset": 1317624,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Wool sheared from black sheep."
+          ],
+          "consumed_bytes": 30,
+          "remaining_bytes": 0,
+          "pixel_sha256": "b5906638e4d364fecd107fe7e262a47db39785e49d5f421b57b25c171f53bd68",
+          "glyphs": 26
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_245",
+      "message_id": 245,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Fire and Ice Rubies",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Rubies from Iceland. Ruby is the red variety of corundum.",
+      "previous_English": "Rubies mined in Iceland. The red\nvariety of the mineral corundum is\ncalled ruby.",
+      "Japanese": "アイスランドで産出されるルビー。コラ\nンダム（鋼玉）の中で、赤色を帯びてい\nるものが、ルビーと呼ばれる。",
+      "source_meaning": "Rubies from Iceland in the game. Ruby is the red form of corundum.",
+      "localization_note": "Keep the game's stated origin and the mineral distinction in two complete sentences.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3792,
+        "copy_end": 3896,
+        "bytes": 102,
+        "record_index": 35,
+        "table_offset": 1317626,
+        "start_in_record": 24
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 4043,
+        "copy_end": 4124,
+        "bytes": 80,
+        "record_index": 82,
+        "table_offset": 1317626,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "83418343835883898393836882c58e598f6f82b382ea82e9838b8372815b8142835283890a8393835f838081698d7c8bca816a82cc928682c5814190d4904682f091d182d182c482a20a82e982e082cc82aa8141838b8372815b82c68cc482ce82ea82e98142",
+      "exact_current_hex": "527562696573206d696e656420696e204963656c616e642e20546865207265640a76617269657479206f6620746865206d696e6572616c20636f72756e64756d2069730a63616c6c656420727562792e",
+      "staged_hex": "5275626965732066726f6d204963656c616e642e0a5275627920697320746865207265642076617269657479206f6620636f72756e64756d2e",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 4043,
+        "copy_end": 4124,
+        "bytes": 57,
+        "record_index": 138,
+        "table_offset": 1317626,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Rubies from Iceland.",
+            "Ruby is the red variety of corundum."
+          ],
+          "consumed_bytes": 57,
+          "remaining_bytes": 0,
+          "pixel_sha256": "618a034b2c2337554bf868e04a02b7544d09051bf9049483649b6aee61d5d5cf",
+          "glyphs": 48
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_246",
+      "message_id": 246,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Desert Diamonds",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "Diamonds mined in the northern Kalahari Desert at what is described as the world's largest diamond mine.",
+      "previous_English": "Diamonds mined in the northern\nKalahari Desert at what is described\nas the world's largest diamond mine.",
+      "Japanese": "カラハリ砂漠北部の、世界最大のダイア\nモンド鉱山で採掘される宝石。",
+      "source_meaning": "Diamonds attributed to the world's largest mine in the northern Kalahari.",
+      "localization_note": "The wording preserves the in-game claim as a description, with both the region and superlative intact.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3896,
+        "copy_end": 3964,
+        "bytes": 65,
+        "record_index": 36,
+        "table_offset": 1317628,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 4124,
+        "copy_end": 4230,
+        "bytes": 104,
+        "record_index": 83,
+        "table_offset": 1317628,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "834a8389836e838a8dbb9499966b959482cc814190a28a458dc591e582cc835f834383410a8382839383688d7a8e5282c58dcc8c4082b382ea82e995f390ce8142",
+      "exact_current_hex": "4469616d6f6e6473206d696e656420696e20746865206e6f72746865726e0a4b616c6168617269204465736572742061742077686174206973206465736372696265640a61732074686520776f726c642773206c617267657374206469616d6f6e64206d696e652e",
+      "staged_hex": "4469616d6f6e6473206d696e656420696e20746865206e6f72746865726e0a4b616c6168617269204465736572742061742077686174206973206465736372696265640a61732074686520776f726c642773206c617267657374206469616d6f6e64206d696e652e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 4124,
+        "copy_end": 4230,
+        "bytes": 104,
+        "record_index": 162,
+        "table_offset": 1317628,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "Diamonds mined in the northern",
+            "Kalahari Desert at what is described",
+            "as the world's largest diamond mine."
+          ],
+          "consumed_bytes": 104,
+          "remaining_bytes": 0,
+          "pixel_sha256": "b8052ff319847e3ba95581a4e251a93fbfd34e739869133c7b58cdad125aeb4c",
+          "glyphs": 88
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_247",
+      "message_id": 247,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "commodity": "Mead",
+      "speaker": "Price Info",
+      "context": "The player opens the selected commodity’s description in Market Price Info.",
+      "english": "A fermented honey drink enjoyed by Celts and Vikings. It was valued for nourishment and warmth.",
+      "previous_English": "A fermented honey drink enjoyed by\nCelts and Vikings. It was valued\nfor nourishment and warmth.",
+      "Japanese": "蜂蜜を醗酵させた酒。ケルトやヴァイキ\nングの人々も好んだ。冷えた身体を暖め\nてくれる栄養たっぷりの食品でもある。",
+      "source_meaning": "Fermented honey enjoyed by Celts and Vikings for nourishment and warmth.",
+      "localization_note": "The existing wording presents both cultures and both reasons without suggesting that only those peoples drank it.",
+      "source_reference": {
+        "block": 3,
+        "offset": 3964,
+        "copy_end": 4076,
+        "bytes": 110,
+        "record_index": 37,
+        "table_offset": 1317630,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 3,
+        "offset": 4230,
+        "copy_end": 4327,
+        "bytes": 95,
+        "record_index": 85,
+        "table_offset": 1317630,
+        "start_in_record": 0
+      },
+      "exact_clean_hex": "964996a882f094ae8d7982b382b982bd8ef081428350838b836782e2839483408343834c0a8393834f82cc906c815882e08d4482f182be814297e282a682bd906791cc82f0926782df0a82c482ad82ea82e98968977b82bd82c182d582e882cc9048956982c582e082a082e98142",
+      "exact_current_hex": "41206665726d656e74656420686f6e6579206472696e6b20656e6a6f7965642062790a43656c747320616e642056696b696e67732e204974207761732076616c7565640a666f72206e6f75726973686d656e7420616e64207761726d74682e",
+      "staged_hex": "41206665726d656e74656420686f6e6579206472696e6b20656e6a6f7965642062790a43656c747320616e642056696b696e67732e204974207761732076616c7565640a666f72206e6f75726973686d656e7420616e64207761726d74682e",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "existing_credit": true,
+      "staged_reference": {
+        "block": 3,
+        "offset": 4230,
+        "copy_end": 4327,
+        "bytes": 95,
+        "record_index": 164,
+        "table_offset": 1317630,
+        "start_in_record": 0
+      },
+      "native_owner": {
+        "native_modal_template_pointer": 36243212,
+        "original_source_selector": 34333980,
+        "mode": 0,
+        "original_loader_and_formatter_exact": true,
+        "substitutions": []
+      },
+      "pages": [
+        {
+          "visible_text": [
+            "A fermented honey drink enjoyed by",
+            "Celts and Vikings. It was valued",
+            "for nourishment and warmth."
+          ],
+          "consumed_bytes": 95,
+          "remaining_bytes": 0,
+          "pixel_sha256": "d3305fd28c8f0c1db435b59cb18da5e562cebb2475d6545d6ff480b78f5bdb37",
+          "glyphs": 80
+        }
+      ]
+    }
+  ]
+}

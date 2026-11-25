@@ -1,0 +1,7 @@
+# Damaged-save warning in Continue
+
+The November 15 Expedition Report Wraps candidate displays **“1: This save is corrupted and could not be loaded.”** when Rafael’s first save slot fails its checksum. The [review](../translations/editorial_checkpoints/SharedText_20261110_v1/damaged_save_observed_20261115_v1.json) binds the exact clean and current ARM9 text. The wording preserves the numbered slot, the corruption, and the failed load. The second row keeps “and could not be loaded” together. Two full glyph masks matched, including the original full-width slot number and the final period.
+
+The DeSmuME replay cold-booted from an isolated copy of an existing Lisbon save. The only change to the test copy was one bit in the stored checksum. The original game calculated the same checksum as for the untouched save, rejected the changed value, and built the two-line warning at `020EE780`. A dismissed the warning and returned to the same slot list. B returned to the title menu. The original save was verified byte for byte after the test. Hardware remains untested.
+
+Both COMMON accessors recorded zero requests during this cold boot and load-error path. The separate COMMON 117 notice reports only that the game data is corrupted. The ledger records a wording draft for it and keeps other possible consumers open. No ROM text changed, and the ledger still credits 27,700 reviews with 276 mapped keys to review or classify.

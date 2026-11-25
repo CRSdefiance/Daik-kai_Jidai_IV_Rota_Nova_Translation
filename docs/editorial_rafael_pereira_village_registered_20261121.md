@@ -1,0 +1,11 @@
+# Rafael's farewell, scabbard, inn and village exchanges
+
+The review covers 197 records. There are 96 wording revisions, 14 wrap-only fixes and 87 justified retentions. Pereira keeps his bluff humor, and the donation notice keeps the exact 500,000 amount. The scabbard remains a possible clue. In the inn, Rafael's private use of Eirene and the displayed Arcadius name reflect the original exchange. Charlotte's account preserves her Romani identity, the false promises made to her family and the prejudice directed at her community. [Exact source and registered decisions](../releases/all_routes_editorial_20261121_rafael_pereira_village_candidate/verification/registered_review.json)
+
+All 110 revised speech pages passed native glyph and bounds checks and direct visual review. An initialized emulator excerpt verified 23 panels across the four exchanges, including the retained donation notice and a return to Lisbon. Seventeen revised panels were observed in that excerpt. The natural scenes and hardware remain unverified. [Native and emulator evidence](../releases/all_routes_editorial_20261121_rafael_pereira_village_candidate/verification)
+
+Six startup holds, 24 protected name getters, 17 focused tests and exact clean-input reconstruction passed. These 197 records already carried editorial credit. [Testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_pereira_village_candidate/README.md)
+
+The downloaded Drive file matches the registered ROM and is the folder's sole `.nds`. Cleanup removed 12 redundant files totaling 400,723,437 bytes. [Latest Build on Google Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) · [Drive verification](../out/rafael_pereira_village_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_pereira_village_registered_20261121/checkpoint_cleanup.json)
+
+The next 200 records are paired to the registered ROM. SC0 blocks 65–67, 69 and 70 cover the Trade House proposal, village gifts, the festival and Rafael's first encounter with Maria. The festival's FE dialogue has its earlier source and native evidence available for reuse where the dependencies match. [Source and current pairs](../work/analysis/rafael_tradehouse_festival_20261121/paired_source.json)

@@ -1,0 +1,3 @@
+# Rafael early wrap review candidate
+
+The [local ROM](../../out/rafael_early_wraps_registered_20261111_v1/Translation_DS_All_Routes_Rafael_Early_Wraps_20261111_candidate.nds) carries the early Rafael review and the full previous cumulative build. The [clean-input patch](translation.xdelta) reconstructs SHA-256 `9280244c6a6219c61fd6451a0e3f9d15d39df5f3fdd03f9d683af2a67ee27e99` byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Original command extents, speaker controls and source branches are preserved. Emulator pagination, cold boot and 56 targeted tests passed.

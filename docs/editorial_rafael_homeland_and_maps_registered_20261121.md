@@ -1,0 +1,13 @@
+# Rafael's homeland and map scenes
+
+The contextual pass covers 287 records across eleven encounters. The batch has 152 wording revisions, 18 punctuation glyph corrections, two wrap-only fixes and 115 justified retentions. The dispatch reports the Spanish king's accession to the Portuguese crown and the armed forces' apparent alignment. Pereira gives his obligations as governor, what he can offer against Kuhn and why he cannot fight Spain. Rafael treats the Proof of Conquest as his interpretation of Pereira's advice. [Exact Japanese and registered decisions](../releases/all_routes_editorial_20261121_rafael_homeland_and_maps_candidate/verification/registered_review.json)
+
+The barkeep's choice preserves both results. The overheard exchanges keep separate the two officials' breakable cooperation, ambitions and suspicions. The map scenes preserve the regions, item names and the action that reveals each map. Charlotte's three panels start and end one quotation, and the private exchange preserves Eirene's name.
+
+Native checks cover 172 revised pages and both choice captions. Fourteen speaker labels have contextual decisions and exact name getter evidence. Focused emulator evidence covers 37 speech pages and two choice highlights. Eight pages were run from the final candidate. Twenty-nine earlier pages match the final installed text and renderer, including the three-part message. The excerpts also tested the return to port. Natural branch activation and hardware remain open. [Native and emulator evidence](../releases/all_routes_editorial_20261121_rafael_homeland_and_maps_candidate/verification)
+
+The seven exact format controls, six startup comparisons, 17 tests and exact clean-input reconstruction passed. [Testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_homeland_and_maps_candidate/README.md)
+
+The registration resumed from the verified ROM and patch after C: ran out of space. The rebuilt archives match their recorded source digests. Thirteen generated files in an old scratch directory were moved to E: with their original paths and content hashes preserved. [Registration recovery](../out/rafael_homeland_and_maps_registered_20261121/storage_recovery_receipt.json) · [Scratch directory relocation](../work/analysis/checkpoint_storage_recovery_20261121/relocation_receipt.json)
+
+The uploaded ROM is the only `.nds` in its Drive folder and matches the registered build byte for byte. Cleanup removed 20 redundant files and reclaimed 404,503,334 bytes. [Drive verification](../out/rafael_homeland_and_maps_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_homeland_and_maps_registered_20261121/checkpoint_cleanup.json)

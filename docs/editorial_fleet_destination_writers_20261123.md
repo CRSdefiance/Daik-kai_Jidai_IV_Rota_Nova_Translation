@@ -1,0 +1,9 @@
+# Scheduled Fleet Info destinations
+
+The registered Fleet Info panel uses `To: %s` at `0x021370F8` with the original destination substitution. Ordinary controller input after a prepared save showed **To: Stockholm**. Four existing snapshots from that replay include Stockholm's slot 7. The three existing Monster Fish snapshots and four Fleet Info snapshots had no slot 114 in either the docking or destination bytes. [Assigned Fleet Info gameplay](editorial_assigned_fleet_info_registered_20261123.md)
+
+The original scheduled-agreement handler can pass slot 114 to the fleet destination writer, which leads the formatter to the class label `伝道師` (Missionary). An isolated native test confirmed that the slot is active and reaches the write call when deliberately supplied. The scheduled-agreement menu builds its candidate list from town slots 0–89 and skips scheduling on cancellation. Its `0x02056D6C` call therefore has no ordinary selection for slot 114.
+
+The authored agreement effect has a wider operand. The original `0x0202AF30` call accepts the low seven bits of an `A000` command carrying a packed `B6` effect. All 256 supplied low bytes and all 115 supplied destination pointers passed the offline checks. A byte-level scan found no such effect in the 1,307 retail story sections or the 1,310 alternate story sections of either ROM. The scan also allowed nonstandard marker bytes so the negative result did not depend on the usual `FFFF` marker. [Exact clean and registered archive references, native addresses and snapshot checks](../translations/editorial_checkpoints/shared_display_20261123/fleet_destination_writers_20261123.json)
+
+The writer census identifies 27 aligned calls, including the scheduled handler. Keep the other destination writers and indirect display paths open in the final inventory. The latest testing ROM and editorial credit are unchanged. This checkpoint reuses the registered gameplay evidence and adds offline coverage.

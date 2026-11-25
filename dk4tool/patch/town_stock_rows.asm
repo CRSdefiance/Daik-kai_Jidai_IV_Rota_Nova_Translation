@@ -1,0 +1,100 @@
+push {r4-r11,lr}
+sub sp,sp,#4
+ldr r2,[r0,#48]
+ldr r3,table_address
+cmp r2,r3
+bne fallback
+mov r4,r0
+mov r5,r1
+bl 0x0215bb60
+mov r11,r0
+sub sp,sp,#960
+add r6,sp,#800
+add r7,sp,#848
+add r9,sp,#920
+ldr r8,cache_address
+add r0,sp,#12
+mov r1,#4
+str r1,[r0]
+mov r1,#24
+str r1,[r0,#4]
+mov r1,#16
+str r1,[r0,#8]
+ldr r1,palette_address
+sub r1,r1,r0
+str r1,[r0,#12]
+mov r1,#20
+str r1,[r0,#16]
+mov r0,r6
+bl 0x020d40b0
+mov r2,#0
+mov r3,#0
+add r1,sp,#12
+mov r0,r6
+bl 0x020d3e44
+mov r0,#96
+str r0,[r6,#40]
+str r0,[r9,#20]
+mov r0,#16
+str r0,[r6,#44]
+mov r0,#12
+str r0,[r9,#24]
+mov r0,r7
+mov r1,r6
+mov r2,#1
+bl 0x020d5160
+mvn r0,#0
+str r0,[r7,#28]
+str r0,[r9]
+mov r0,#152
+str r0,[r9,#4]
+mov r0,#0
+str r0,[r9,#12]
+str r0,[r9,#16]
+mov r10,#0
+loop:
+ldr r0,[r8,#20]
+cmp r10,r0
+bge finish
+add r0,sp,#32
+mov r1,#192
+mov r2,#0
+clear:
+str r2,[r0],#4
+subs r1,r1,#1
+bne clear
+str r2,[r7,#36]
+str r2,[r7,#40]
+mov r0,r7
+ldr r1,[r8,r10,lsl #2]
+bl 0x020d5404
+mov r0,r10,lsl #4
+add r0,r0,#88
+str r0,[r9,#8]
+ldr r0,[r4,#100]
+str r0,[sp]
+add r0,r4,#108
+str r0,[sp,#4]
+add r0,r4,#60
+str r0,[sp,#8]
+mov r0,r5
+mov r1,r6
+mov r2,r9
+mov r3,#1
+ldr ip,[r5]
+ldr ip,[ip,#12]
+blx ip
+add r10,r10,#1
+b loop
+finish:
+add sp,sp,#960
+mov r0,r11
+add sp,sp,#4
+pop {r4-r11,pc}
+fallback:
+add sp,sp,#4
+pop {r4-r11,lr}
+b 0x0215bb60
+table_address: .word 0x0211a65c
+palette_address: .word 0x02125a20
+cache_address: .word 0x0215dc24

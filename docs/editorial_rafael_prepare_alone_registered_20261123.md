@@ -1,0 +1,7 @@
+# Rafael's Lisbon preparation choice
+
+Julio now tells Rafael, “That's the spirit! Do your best!” after **Prepare alone**. The clean Japanese conveys approval of Rafael's initiative and encouragement. The revised line fits in one row. Nine neighboring speeches retain their wording, including Julio's guidance on the alternate path. [Exact Japanese, previous and installed records](../releases/all_routes_editorial_20261123_rafael_prepare_alone_candidate/verification/registered_review.json)
+
+An ordinary New Game replay verified the complete revised dialogue and Julio's nameplate. Eleven sampled frames match the predecessor pixel for pixel, including both menu captions, the lower highlight, and the return to Lisbon. The **Ask him** lesson uses earlier ordinary gameplay evidence. The exact replay comparison and native preview are included in the package. [Paired gameplay](../releases/all_routes_editorial_20261123_rafael_prepare_alone_candidate/verification/paired_rafael_prepare_alone_1_20261123.png) · [Native preview](../releases/all_routes_editorial_20261123_rafael_prepare_alone_candidate/verification/rafael_prepare_alone_native_1_20261123.png)
+
+The cumulative build passed 453 release checks, its own startup and 17 focused tests. The clean-input patch reconstructs the candidate byte for byte. [Testing build and patch](../releases/all_routes_editorial_20261123_rafael_prepare_alone_candidate/README.md)

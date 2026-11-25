@@ -1,0 +1,7 @@
+# Rafael's first voyage and Ceuta tutorials
+
+The full first-voyage and Ceuta exchanges received 47 source-bound decisions. Eleven prose revisions and one wrap-only revision keep the Port invitation and Julio’s Mediterranean and North Sea advice together, clarify the steering controls, and retain both choice captions and 33 other records exactly. [Source and current references](../releases/all_routes_editorial_20261119_rafael_voyage_ceuta_candidate/verification/registered_review.json)
+
+Ordinary gameplay from the preserved Lisbon save exercised all 28 first-voyage panels and 16 Ceuta panels, selected Rafael's wind question and returned from the tutorial. All 12 revised pages passed a fresh native check and direct visual review. Both choice captions appeared. The confident branch response was retained and checked offline. The comparison ROM has identical voyage and Ceuta script blocks and differs from the immediate parent in the earlier Tavern lesson. [Replay evidence](../releases/all_routes_editorial_20261119_rafael_voyage_ceuta_candidate/verification/native_and_ordinary_gameplay.json)
+
+The clean-input patch reconstructs the candidate exactly. Six startup holds, 24 protected name getters and 49 focused tests passed. Two optional historical fixtures skipped. The ledger remains at 27,700 credited reviews and 276 shared entries open. Hardware testing remains open. [Candidate and patch](../releases/all_routes_editorial_20261119_rafael_voyage_ceuta_candidate/README.md)

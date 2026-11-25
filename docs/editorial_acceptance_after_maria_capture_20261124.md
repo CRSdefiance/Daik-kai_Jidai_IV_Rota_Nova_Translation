@@ -1,0 +1,5 @@
+# Editorial acceptance on the Maria captured-ship candidate
+
+The Tunis Palace refusal and Maria's captured-ship notice each reconstruct their registered predecessor byte for byte when the single owned COMMON record is restored. Only COMMON 1148 and 2086 changed. All 15 review decisions in the two releases have five passing gates. The source, previous English, and installed bytes match the registered record references. [Exact release deltas](../translations/editorial_checkpoints/shared_display_20261123/editorial_acceptance_after_maria_capture_20261124.json)
+
+The unchanged route archives carry forward all 50 progressive wrap dispositions. The unchanged ARM9 and other non-COMMON data preserve the native display dependencies from the Tunis audit. The candidate's 17 package file hashes, 465 release checks, 114 accepted layers and recorded Drive readback match the registered build. [Tunis audit](editorial_acceptance_after_tunis_20261124.md) and [Maria release](editorial_maria_captured_ship_registered_20261124.md)

@@ -1,0 +1,3 @@
+# Historical story wraps candidate
+
+The [local ROM](../../out/historical_story_wraps_registered_20261111_v1/Translation_DS_All_Routes_Story_Wraps_20261111_candidate.nds) contains twelve scoped corrections across all four routes. The [clean-input patch](translation.xdelta) reconstructs SHA-256 `7a916571bbb3d5308d8d6ac6d37bef65a1fe42d8e5823dc4a9a80ca7683c465a` byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. All original native boundaries and control bytes are preserved. Ordinary Lil New Game and an initialized Carlo scene verified four revised pages. A separate cold boot and 56 targeted tests passed.

@@ -1,0 +1,51 @@
+"""Keep the full editorial objective and fresh clean-only B195 lead after integration."""
+from scripts.lil_B194_checkpoint_text_v5527 import WIDER
+
+NEXT=(
+    'Continue Lil SC2B195 from clean-only inventory5539 and20 whole-exchange glosses5540 before exposing predecessor English. '
+    'Bind selectors77/67/5C(decimal119/103/92),complete preambles,original names/voices and source関係 before localization. '
+    'Read the whole smell/sniff/question,cheese-rich house specialty,skepticism/confident retort,one shared order,prompt serving,coaxing idiom,two separate chewing beats,enthusiastic taste praise,satisfied response,tell-everyone intention and strong dish-popularity prediction. '
+    '親父 is familiar address,not proof of fatherhood or kinship. Do not invent a dish name,pizza,recipe,cuisine,origin,price,health effect,new rank,employment or personal name. '
+    'だまされたと思って invites a trial;do not invent actual deception,fraud or danger. Keep taste claims and popularity certainty as character speech;spreading the word remains future intention. '
+    'Bind approvedチーズ andヴェラクルス names. The separate FE remains prospective,without earlier scene location,earned fashion,shortage,price increase or profit. '
+    'Source B195 has23 linear commands/20 complete speech objects,19 progressive/one FE,selectors119/103/92/254,no FI/FA/FO,predicate,relative,pause or typed choice. '
+    'Source712 stored/710 logical bytes has2 tailzeros. Preserve A0008 raw00a0ffff010841a1,C200704 and one end706. Packed A000 semantics remain unbound. '
+    'These20 source-only objects have no editorial completion credit;names,voices,terms,comparison,prose,native layout,relocation,references,representative actual coverage and release remain pending. '
+    'B194 is integrated once in registered V5531. Do not repeat5487-5535 source/native/stored/reference/four content/two current startup/93 compiler negatives/110 pytest/18 release gates without a concrete risk. '
+    'Retain four revisions/seven individual retentions,one source FI/Admiral title,Julio6 voice5,Port Worker117 voice0,progressive Sailor156/full Retainer voice4,mixed name ownership,source rice hearsay,causal invitation,fabled-drink belief,personal purchase intention and tentative Sake/Hangzhou notice. '
+    'Both actual availability paths were unforced;the all11-line path uses a disclosed original B165 recruitment initializer,not earned recruitment/natural event eligibility. '
+    'Default returns5017/5017 and conditional5737/5737;79 complete holds,230 nontext pairs,24 paired full screens,zero measured timing differences and per-setup sampled postscene/final RGB,five native state groups,whole actor/captain2 and final PRNG3723009301 agree within scope. '
+    'Default Lil3 FI is actually shown;all custom-name lengths remain unproved. Conditional UI fields3/4 stay opaque recorded values;C200/end carry1. Resource42 command execution is not audible-output proof. '
+    'Fresh V5531 New Game4001 and inherited-battery town17401 cold boots match V5478 across31 whole frames/five actor controls;donor source/disposable hashes stay exact. '
+    'No PRNG causality,future-world/full-RAM,natural event activation,earned fashion,earlier scene location,full-route or hardware claim. Later dialogue adds no credit. '
+    'Keep Sake37,Chili29 and China42 older UI fidelity reviews open;no new compact-widget completion is claimed. Main V4701 remains promoted;all earlier ROMs,translations,manuscripts,failed/stopped producers,proofs and history remain preserved. No promotion or pruning. '
+    +WIDER
+)
+
+DETAILS=(
+    'V5536 completes11 Lil SC2B194 clean-Japanese whole-exchange reviews once in registered cumulative V5531:4 revisions/7 individually justified retentions. '
+    'The casual sake exchange retains recent drinking experiences,taste approval,rice hearsay,surprise,conversation-caused desire,an immediate invitation,acceptance and prompt departure. '
+    'Julio’s conditional interjection restores the stammer,excited fabled-drink inference,source-explicit Admiral FI address,complete question and restless personal purchase intention. The separate Sake/Hangzhou notice stays prospective. '
+    'Preserve Julio Erneco6 voice5,Port Worker117 voice0 and progressive Sailor156/full Retainer voice4,including two owned Julio scratch-name paths/four readonly roles. '
+    'No kinship,new rank,employment,shared prior drinking,brand,venue,amount,price,recipe,origin,health effect,intoxication,reward or completed purchase is invented. Sake37 older compact-UI fidelity remains open. '
+    '\n\nAll11 current-native panels,two reviewed sheets,88 initial alignments,44 final stored cases(20 fresh/24 exact reuse),24 consumer and28 formatter negatives pass. '
+    'The invitation uses two substantial rows;Julio’s address/question and urgent purchase intention use three readable rows each. No premature short-row finding requires an exception. '
+    'No authored break,prose shortening,font,width,metric,guard,pair-phase or ordinary-boundary exception change. Source540 stored/logical without tailzeros becomes516 stored/514 logical with2 target tailzeros. '
+    'All21 commands,11 full preambles,one FI,four relative sites,original A000,actor6 predicate,resource42,two C200 sites and end remain. '
+    'Exact inverse restores every predecessor byte;335 other SC2 blocks and every other file/component stay exact to V5478. '
+    'The relocated predicate’s changed alignment uses the original owned scratch write and exact restoration. Twenty target skips,fresh336 loads/672 modes,exact whole-parent proof reuse,three entry censuses,guarded ends,11 dispatches,10 target resource-boundary cases,10 C200 and5 end prior-result cases pass. '
+    'All93 meaningful malformed-input cases reject before the atomic compiler’s sole mutation;110 pytest regressions and18 release checks pass. '
+    '\n\nFour disclosed content cold boots9001 frames each exercise both original availability outcomes. The default pair stores30 commands/selects24 with nine speeches and returns5017/5017. '
+    'The second pair stores31/selects30 after nine original B22 initializers plus an independently bound original B165 actor6 recruitment command. '
+    'The full original initializer runs normally;B194’s unforced predicate then returns1,all11 speeches/resource42/both C200 execute,and returns5737/5737. This setup is not earned recruitment or natural B165/B194 eligibility. '
+    'All20 panel observations(11 unique),79 complete native holds,four consumer sheets and24 paired full screens were viewed. Julio Erneco’s complete name/initialJ and portrait match source;default Lil3 FI is displayed;the FE clears name and portrait. All custom-name lengths are not established. '
+    'Each pair has115 matching nontext samples,zero measured timing differences,matching sampled postscene/final RGB,five measured native groups,whole1A04 actor/captain2 and final PRNG3723009301/3723009301. '
+    'Opaque conditional UI fields3/4 remain measured data;both C200 results carry1 and end returns[0,1]. Original resource-command execution does not prove audible output. '
+    'No forced predicate/RNG,masking,retiming,causal PRNG,future-world/full-RAM,earlier location,earned fashion,full-route or hardware claim;later dialogue adds no credit. '
+    '\n\nFresh current V5531 New Game4001 and inherited-battery town17401 cold boots match V5478 across31 whole frames/five actor checks. Both donor source/disposable saves stay exact;the six-frame startup sheet was viewed. '
+    'Six content/current boots total57406 frames;only the two current boots/21402 frames were new in this integration turn. All jobs are terminal/reaped. '
+    'The exactly reconstructable clean-input patch and registered578-batch/114-accepted-layer stack preserve all previous translations,graphics,ROMs,proofs,failed producers and history. Main V4701 remains promoted. '
+    'Coverage becomes6135 completed contextual rereads,6138 source/prose,3871 integrated revisions/2264 retentions,SC24250/SC396 and routes4536/4536,zero pending credited route drafts. '
+    'Twenty B195 clean-only source glosses are uncredited and precede predecessor English. All four storylines,earlier translations,shared town/shop/random exchanges,Help and remaining prose stay open,including retrospective early-wrap correction. '
+    'Graphics/all18 plaques and the later older-record technical re-audit remain separate/open. Full goal active. '
+)

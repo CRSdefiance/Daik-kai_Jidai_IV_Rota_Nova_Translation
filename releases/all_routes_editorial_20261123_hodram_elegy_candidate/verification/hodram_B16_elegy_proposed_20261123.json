@@ -1,0 +1,281 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "records": [
+    {
+      "id": "DK4_MES_B16_R0032",
+      "speaker": "Manuel Almeida",
+      "context": "The crew wins the battle. Manuel mourns those lost and recites a three-panel poem before reflecting on what the sea takes in.",
+      "source_meaning": "The first panel compares the recurring waves to the remembered heartbeat of a distant mother. Keep the poem's opening quotation.",
+      "localization_note": "The recurring waves have a familiar rhythm that seems to awaken the memory of a distant mother's heartbeat. Restore the act of remembering and keep the description of the waves together.",
+      "previous_English": "\"The sea is like a mother. The waves lap with a familiar rhythm, like the heartbeat of a mother far away.",
+      "english": "\"The sea is like a mother. The waves lap in a familiar rhythm, calling to mind the heartbeat of a mother far away.",
+      "protected_phrases": [
+        "The waves lap in a familiar rhythm,",
+        "calling to mind",
+        "a mother far away."
+      ],
+      "change_class": "prose_and_wrap",
+      "decision": "revision",
+      "exact_source": {
+        "command_offset": 290,
+        "offset": 295,
+        "archive_sha256": "33981b27375cca1b9293752662d0dedb820dd310526c9dbe0612a397f38313ab",
+        "block_sha256": "2e7c7f20c65b6905fbab7bf4197832c31ad7928bad19f32f434ae5835c9163bc",
+        "exact_body_hex": "817581678a43816882c6816795ea816882cd8e9782c482a282e90a81408c4a82e895d482b782b382b4946782cd814082c782b182a989f982a982b582ad0a81408da182cd899382a295ea82cc905389b982f00a81408cc482d18a6f82dc82b782a982cc82e682a4",
+        "exact_stored_hex": "17817581678a43816882c6816795ea816882cd8e9782c482a282e90a81408c4a82e895d482b782b382b4946782cd814082c782b182a989f982a982b582ad0a81408da182cd899382a295ea82cc905389b982f00a81408cc482d18a6f82dc82b782a982cc82e682a4"
+      },
+      "exact_current": {
+        "file_path": "/data/SC1.DK4",
+        "block": 16,
+        "archive_sha256": "971c54851e4f64a30d7cf5ba80335c4c30721681e99506daab335895fb35d78b",
+        "block_sha256": "f48350360a28332a788aa79bdd30079887d7ce270ff3a95e60fd1d954d3ac5d4",
+        "candidate_sha256": "b006d8af69f1141bcb0755b23654bd20c5daae05aaf0d3c4bf0b264ab524d574",
+        "command_offset": 326,
+        "offset": 331,
+        "exact_stored_hex": "172254686520736561206973206c696b652061206d6f746865722e200a20546865207761766573206c61700a207769746820612066616d696c6961722072687974686d2c206c696b65200a2074686520686561727462656174206f662061206d6f746865722066617220617761792e20",
+        "exact_command_hex": "0040ffff00172254686520736561206973206c696b652061206d6f746865722e200a20546865207761766573206c61700a207769746820612066616d696c6961722072687974686d2c206c696b65200a2074686520686561727462656174206f662061206d6f746865722066617220617761792e2000"
+      },
+      "source_Japanese": "「“海”と“母”は似ている\n　繰り返すさざ波は　どこか懐かしく\n　今は遠い母の心音を\n　呼び覚ますかのよう",
+      "candidate_body_hex": "172254686520736561206973206c696b652061206d6f746865722e200a20546865207761766573206c617020696e20612066616d696c6961722072687974686d2c0a2063616c6c696e6720746f206d696e6420746865206865617274626561740a206f662061206d6f746865722066617220617761792e",
+      "stored_control": "17",
+      "native_layout": {
+        "id": "DK4_MES_B16_R0032",
+        "source_kind": "progressive",
+        "source_hex": "02817581678a43816882c6816795ea816882cd8e9782c482a282e90a81408c4a82e895d482b782b382b4946782cd814082c782b182a989f982a982b582ad0a81408da182cd899382a295ea82cc905389b982f00a81408cc482d18a6f82dc82b782a982cc82e682a4",
+        "English": "{SPEAKER:02}\"The sea is like a mother. The waves lap in a familiar rhythm, calling to mind the heartbeat of a mother far away.",
+        "formatted_markup": "{SPEAKER:02}\"The sea is like a mother.{LB}The waves lap in a familiar rhythm,{LB}calling to mind the heartbeat{LB}of a mother far away.",
+        "lines": [
+          "\"The sea is like a mother.",
+          "The waves lap in a familiar rhythm,",
+          "calling to mind the heartbeat",
+          "of a mother far away."
+        ],
+        "line_lengths": [
+          26,
+          35,
+          29,
+          21
+        ],
+        "encoded_hex": "172254686520736561206973206c696b652061206d6f746865722e200a20546865207761766573206c617020696e20612066616d696c6961722072687974686d2c0a2063616c6c696e6720746f206d696e6420746865206865617274626561740a206f662061206d6f746865722066617220617761792e",
+        "diagnostics": [],
+        "planning_cost": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          250
+        ],
+        "max_total_rows": 4,
+        "native_rows_per_page": 4,
+        "expected_native_pages": 1,
+        "all_words_punctuation_and_zero_macros_unchanged": true,
+        "automatic_boundaries": [
+          {
+            "last": "mother",
+            "first": "the",
+            "pair": [
+              "mother",
+              "the"
+            ]
+          },
+          {
+            "last": "rhythm",
+            "first": "calling",
+            "pair": [
+              "rhythm",
+              "calling"
+            ]
+          },
+          {
+            "last": "heartbeat",
+            "first": "of",
+            "pair": [
+              "heartbeat",
+              "of"
+            ]
+          }
+        ],
+        "logical_English": "\"The sea is like a mother. The waves lap in a familiar rhythm, calling to mind the heartbeat of a mother far away.",
+        "source_selector": 23,
+        "planning_record": {
+          "source_hex": "17817581678a43816882c6816795ea816882cd8e9782c482a282e90a81408c4a82e895d482b782b382b4946782cd814082c782b182a989f982a982b582ad0a81408da182cd899382a295ea82cc905389b982f00a81408cc482d18a6f82dc82b782a982cc82e682a4"
+        },
+        "maximum_expanded_FI_FA_length": 16,
+        "maximum_expanded_FO_length": 20
+      },
+      "native_page_sha256": "96c580452c5f01dd9312d5b255696e8eaa6d78499c5ef6898b3eb60058e8438a",
+      "before_lines": [
+        "\"The sea is like a mother.",
+        "The waves lap",
+        "with a familiar rhythm, like",
+        "the heartbeat of a mother far away."
+      ],
+      "preview_passed": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "DK4_MES_B16_R0039",
+      "speaker": "Manuel Almeida",
+      "context": "The crew wins the battle. Manuel mourns those lost and recites a three-panel poem before reflecting on what the sea takes in.",
+      "source_meaning": "The final stanza repeats the refrain and places both in the enduring bond of a lifetime. Close the quotation here.",
+      "localization_note": "Keep the lifetime bond and closing quotation. Let the repeated refrain finish on its own row as it does in the preceding two stanzas, then keep Both with its verb.",
+      "previous_English": "The sea is like a mother. Both hold us in a bond that lasts as long as we live.\"",
+      "english": "The sea is like a mother. Both hold us in a bond that lasts as long as we live.\"",
+      "protected_phrases": [
+        "Both hold us",
+        "as long as we live."
+      ],
+      "change_class": "wrap_only",
+      "decision": "revision",
+      "exact_source": {
+        "command_offset": 492,
+        "offset": 497,
+        "archive_sha256": "33981b27375cca1b9293752662d0dedb820dd310526c9dbe0612a397f38313ab",
+        "block_sha256": "2e7c7f20c65b6905fbab7bf4197832c31ad7928bad19f32f434ae5835c9163bc",
+        "exact_body_hex": "814081678a43816882c6816795ea816882cd8e9782c482a282e90a814090b682ab82c482a282e98cc082e80a81408c8882b582c48fc182a682e982b182c682cc82c882a20a814082c282c882aa82e882cc928682c9814082c782bf82e782e082a082e98176",
+        "exact_stored_hex": "17814081678a43816882c6816795ea816882cd8e9782c482a282e90a814090b682ab82c482a282e98cc082e80a81408c8882b582c48fc182a682e982b182c682cc82c882a20a814082c282c882aa82e882cc928682c9814082c782bf82e782e082a082e98176"
+      },
+      "exact_current": {
+        "file_path": "/data/SC1.DK4",
+        "block": 16,
+        "archive_sha256": "971c54851e4f64a30d7cf5ba80335c4c30721681e99506daab335895fb35d78b",
+        "block_sha256": "f48350360a28332a788aa79bdd30079887d7ce270ff3a95e60fd1d954d3ac5d4",
+        "candidate_sha256": "b006d8af69f1141bcb0755b23654bd20c5daae05aaf0d3c4bf0b264ab524d574",
+        "command_offset": 564,
+        "offset": 569,
+        "exact_stored_hex": "1754686520736561206973206c696b652061206d6f746865722e20426f7468200a20686f6c6420757320696e206120626f6e642074686174206c61737473200a206173206c6f6e67206173207765206c6976652e2220",
+        "exact_command_hex": "0040ffff001754686520736561206973206c696b652061206d6f746865722e20426f7468200a20686f6c6420757320696e206120626f6e642074686174206c61737473200a206173206c6f6e67206173207765206c6976652e222000"
+      },
+      "source_Japanese": "　“海”と“母”は似ている\n　生きている限り\n　決して消えることのない\n　つながりの中に　どちらもある」",
+      "candidate_body_hex": "1754686520736561206973206c696b652061206d6f746865722e0a20426f746820686f6c6420757320696e206120626f6e642074686174206c617374730a206173206c6f6e67206173207765206c6976652e22",
+      "stored_control": "17",
+      "native_layout": {
+        "id": "DK4_MES_B16_R0039",
+        "source_kind": "progressive",
+        "source_hex": "02814081678a43816882c6816795ea816882cd8e9782c482a282e90a814090b682ab82c482a282e98cc082e80a81408c8882b582c48fc182a682e982b182c682cc82c882a20a814082c282c882aa82e882cc928682c9814082c782bf82e782e082a082e98176",
+        "English": "{SPEAKER:02}The sea is like a mother. Both hold us in a bond that lasts as long as we live.\"",
+        "formatted_markup": "{SPEAKER:02}The sea is like a mother.{LB}Both hold us in a bond that lasts{LB}as long as we live.\"",
+        "lines": [
+          "The sea is like a mother.",
+          "Both hold us in a bond that lasts",
+          "as long as we live.\""
+        ],
+        "line_lengths": [
+          25,
+          33,
+          20
+        ],
+        "encoded_hex": "1754686520736561206973206c696b652061206d6f746865722e0a20426f746820686f6c6420757320696e206120626f6e642074686174206c617374730a206173206c6f6e67206173207765206c6976652e22",
+        "diagnostics": [
+          {
+            "code": "line-break-count",
+            "message": "source has 3 line breaks; target has 2",
+            "severity": "warning"
+          }
+        ],
+        "planning_cost": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          251
+        ],
+        "max_total_rows": 4,
+        "native_rows_per_page": 4,
+        "expected_native_pages": 1,
+        "all_words_punctuation_and_zero_macros_unchanged": true,
+        "automatic_boundaries": [
+          {
+            "last": "mother",
+            "first": "both",
+            "pair": [
+              "mother",
+              "both"
+            ]
+          },
+          {
+            "last": "lasts",
+            "first": "as",
+            "pair": [
+              "lasts",
+              "as"
+            ]
+          }
+        ],
+        "logical_English": "The sea is like a mother. Both hold us in a bond that lasts as long as we live.\"",
+        "source_selector": 23,
+        "planning_record": {
+          "source_hex": "17814081678a43816882c6816795ea816882cd8e9782c482a282e90a814090b682ab82c482a282e98cc082e80a81408c8882b582c48fc182a682e982b182c682cc82c882a20a814082c282c882aa82e882cc928682c9814082c782bf82e782e082a082e98176"
+        },
+        "maximum_expanded_FI_FA_length": 16,
+        "maximum_expanded_FO_length": 20
+      },
+      "native_page_sha256": "6126b27e971d5cc7055526173cafaaef744638309c29d526ba5dc3a12dabf2b8",
+      "before_lines": [
+        "The sea is like a mother. Both",
+        "hold us in a bond that lasts",
+        "as long as we live.\""
+      ],
+      "preview_passed": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "registered_release": {
+    "path": "releases/all_routes_editorial_20261123_assigned_fleet_info_candidate/verification/registered_release_verification.json",
+    "sha256": "b62f18432d00da001855e12e596c912bc009b0ca3c120103ab58284c29866c76"
+  },
+  "gameplay": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/monster_fish_outcome_current_20261123.json",
+    "sha256": "765dbd342fc45a34b2148193936679c8fb8923ea76a6697ca420d2747087696b"
+  },
+  "prior_story_review": {
+    "path": "releases/all_routes_editorial_20261122_hodram_B0_B23_candidate/verification/registered_review.json",
+    "sha256": "173a9d498a4f4926f33a55125d63c9d0444643c689eec6cad69cec78b92bba3e"
+  },
+  "preview": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/hodram_B16_elegy_proposed_20261123.png",
+    "sha256": "e96ebf5a6a481bf6c354c445c7639cbe9aa828329bce8de10ba3a9f298113e24"
+  },
+  "retained_stanza_two": {
+    "file_path": "/data/SC1.DK4",
+    "block": 16,
+    "archive_sha256": "971c54851e4f64a30d7cf5ba80335c4c30721681e99506daab335895fb35d78b",
+    "block_sha256": "f48350360a28332a788aa79bdd30079887d7ce270ff3a95e60fd1d954d3ac5d4",
+    "candidate_sha256": "b006d8af69f1141bcb0755b23654bd20c5daae05aaf0d3c4bf0b264ab524d574",
+    "command_offset": 444,
+    "offset": 449,
+    "exact_stored_hex": "1754686520736561206973206c696b652061206d6f746865722e0a20496e20736f6d65206c616e64732c2074686579207361790a2074686520776f72647320666f722073656120616e64206d6f74686572200a2063616e206c6f6f6b20616e6420736f756e64207468652073616d652e20",
+    "exact_command_hex": "0040ffff001754686520736561206973206c696b652061206d6f746865722e0a20496e20736f6d65206c616e64732c2074686579207361790a2074686520776f72647320666f722073656120616e64206d6f74686572200a2063616e206c6f6f6b20616e6420736f756e64207468652073616d652e200000"
+  },
+  "retained_stanza_two_reason": "The short attribution is a natural pause before the reported likeness of the two words. The existing refrain and final clause stay intact.",
+  "stayed_within_native_216_pixel_width": true,
+  "offline_preview": true,
+  "formatting_gate_scope": "offline proposed pages",
+  "storage_round_trip_gameplay_and_release_pending": true,
+  "new_editorial_credit": 0
+}

@@ -1,0 +1,11 @@
+# Sailing mode guide prose
+
+Revisited the Japanese for all three on-screen sailing instructions. Info leads with how to select a town or ship. Search keeps the three-point fatigue penalty for an unsuccessful search and gives desertion and animal attacks their own sentence. Declare War identifies the target and consequence, preserves the goodwill penalty and keeps the original fleet-specific alliance wording. All three retain the existing heading, font dimensions and sprite allocations. [Exact review ledger](../releases/all_routes_editorial_20261118_sailing_mode_prose_candidate/verification/registered_review.json)
+
+The initialized Madeira replay shows the revised Info and Search panels and Declare War both before and after target selection. All four complete glyph masks and their black backgrounds match, and the lower screen and traced requests match the predecessor. This used the established position fixture and ordinary controller inputs. No hardware coverage is claimed. [Emulator sheet](../releases/all_routes_editorial_20261118_sailing_mode_prose_candidate/verification/sailing_mode_panels.png)
+
+The neutral comparison requested COMMON 2122 for “Shall we attack Madeira?” The allied-occupant comparison changed one relationship byte beyond the position fixture. The original selector filtered the town and showed “There are no targets to attack.” It made no request for COMMON 300 or 304. Both stored records remain open for any other display path, and the 276-key total stays open. [Attack routing evidence](../releases/all_routes_editorial_20261118_sailing_mode_prose_candidate/verification/verified_display_ownership.json)
+
+The clean-input patch rebuilds the candidate byte for byte. All 114 accepted layers and the ASCII right-bound correction carry forward. Six startup holds, 24 protected name getters and 32 focused tests passed. The ledger holds at 27,700. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261118_sailing_mode_prose_candidate/README.md)
+
+The closed wrap queue carries forward on the same four story archives. The 276 shared-text drafts are bound to the current registered ROM. [Shared text bindings](../work/sailing_mode_prose_20261118/research_v1/shared_text_current_binding.json)

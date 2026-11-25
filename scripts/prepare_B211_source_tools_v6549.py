@@ -1,0 +1,12 @@
+"""Bind the new build's own snapshot and prepare the next source/current reference packet."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B211_source_tools_v6549')
+if __name__=='__main__':
+    assert not ROOT.exists();proofs=[]
+    proofs.append(derive('scripts/bind_current_V6488_native_v6497.py','scripts/bind_current_V6541_native_v6549.py',{
+        'current_build_native_context_v6261b':'Al_Ferid_exact_native_context_v6520','current_V6488_native_v6497':'current_V6541_native_v6549','verification_v6494':'verification_v6548','lil_B209_release_v6489':'B210_Ferid_release_v6542','lil_B209_runs_v6491':'B210_Ferid_runs_v6543','current_V6439_native_v6449':'current_V6488_native_v6497','V6488':'V6541','strict6261b':'strict6520','B210':'B211'}))
+    proofs.append(derive('scripts/map_lil_B210_source_v6498.py','scripts/map_lil_B211_source_v6550.py',{
+        'lil_B210_source_v6498':'lil_B211_source_v6550','verification_v6494':'verification_v6548','lil_B210_clean_context_v6496/ten_clean_speeches_full_exchange_gloss_before_old_English.json':'lil_B211_clean_context_v6546/twelve_clean_speeches_full_swan_exchange_gloss_before_old_English.json','current_V6488_native_v6497':'current_V6541_native_v6549','blocks[210]':'blocks[211]','block=210':'block=211','DK4_MES_B210':'DK4_MES_B211','B210':'B211','6472':'6482','len(old)==12 and len(spoken)==10':'len(old)==14 and len(spoken)==12','all10':'all12','[2,17]':'[2,7,254]','{17:6,2:4}':'{7:7,2:2,254:3}','==688':'==640','physical_speeches=10':'physical_speeches=12','total_editorial_objects=10':'total_editorial_objects=12','ordinary_source_speeches=10':'ordinary_source_speeches=9','system_FE_panels=0':'system_FE_panels=3','source_static_actor_selectors=[2,17]':'source_static_actor_selectors=[2,7]','source_native_commands=12':'source_native_commands=14','ten_clean_current_complete_exchange_source_references':'twelve_clean_current_complete_exchange_source_references','objects=10,commands=12':'objects=12,commands=14','kind=\'progressive\',source_kind=\'progressive\'':"kind='system-fe' if value[0]==254 else 'progressive',source_kind='system-fe' if value[0]==254 else 'progressive'"}))
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_tools.json',dict(proofs=proofs,no_native_address_change=True,full_goal_complete=False));print('V6541 own-snapshot and B211 clean/current packet tools prepared without changing native constants.')

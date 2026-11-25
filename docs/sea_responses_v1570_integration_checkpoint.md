@@ -1,0 +1,19 @@
+# V1570 sea inspection integration checkpoint
+
+V1570 verifies registered V1563 sea inspection8 integration:5 revised3 retained,without completion credit. Full471 batches114 accepted layers and exact clean-input patch pass. Only COMMON23/native metadata/existing188-byte selector change versus V1542;3663 other or retained copies,40 blocks,172-byte gate,123040 staged bytes,all earlier routes/graphics/fonts/helpers preserved. All8 ordinary startup/title/NewGame frames match V1105 and are viewed;shop676/677 preserved. Original creature registration plus target location and existing Charles18 move from station9 to empty lookout3 form one48-owned-byte prebattle fixture. One original RNG initialization is executed naturally,not forced;own five ships,actor objects and all unowned4MiB bytes are exact. Charles18/voice0/role7/2209 has4 full native/independent/reference/actual RGB holds;17 other whole screens exact to V1542. Normal response close,following306 close and return to Info Mode/Inspect6300 are verified. Old306/307 are unrelated split trade-good text;307 is observed in the no-lookout pilot and306 follows the creature reaction. Correct both before closing this family;308 is an additional fatigue-context lead. The original role7 getter can select a fallback actor and does not prove the station is occupied;original8205C/705F8 identify the actual empty lookout. Failed activation hypotheses and wrapper/auditor assumptions are retained with explicit successors. V1568s sailing-interface label is corrected by1568b:6300 is Info Mode over the sea. 1338 complete(1000 revised338 retained),1490 source/prose reviewed,152 reviewed-incomplete COMMON(8 sea inspection32 reactions24 loss/surrender16 sinking34 aftermath38 older),plus broader shared/routes/raw prose. V1563 experimental,V1492 promoted,V1542 completed-native reference;canonical/V997 unchanged. Separate graphics/all18 plaques and later older-record re-audit remain open;goal active.
+
+## Experimental combined build
+
+- Candidate: `E:/Rota Nova translations/Generated/out/all_routes_combined_v1563_candidate.nds`; SHA-256 `ba126ed72ce7ee1288cc689286cc7c2d98bb2c727f91d5e074568a8953a385a1`.
+- Canonical construction base: `out\raphael_natural_v2_accepted_base.nds`; SHA-256 `3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+- Profile: `all-routes-unified-v1563`;471 batches114 accepted layers. V1492 stays promoted.
+- Changed files versus V1542: `/COMMON/MESFILE.DK4` and `/__arm9__.bin`;COMMON23/native metadata/existing selector only.
+- Exact patch: `out\all_routes_combined_v1563_candidate.xdelta`; SHA-256 `44cd142087a99229281b0a41394a84629eca97480a636e4443842cef78907aa1`;clean input `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`.
+- Checks: native1557/fonts1558/copies1559/escape1560/visual1561/release1564b/startup1565b/actual1568b/shop1569.
+
+## Next work
+
+Source/context-review and correct306/307 through a separate registered natural-dialogue-v2 stage. Recheck their complete literal glyphs and actual no-lookout/creature-followup paths,normal close and return to Inspect. The actual creature response and source-loaded model are proven;do not repeat inactive-fleet or missing-renderer hypotheses. Character identities,health,combat outcomes and message selectors were not forced. Source306 means information cannot be viewed;307 means no lookout is assigned.308 requires a separate fatigue consumer review. Keep the8 sea entries pending until their scene is corrected.
+
+
+V1552j pilot label erratum: after closing No lookout at6850,the actual screen is Info Mode/Inspect over the sea,with the unidentified target still selected. The old return_to_sea key proves normal modal close only;it does not prove the Sea View interface. This correction changes no ROM,inputs,captures,source text or completion counts. The same distinction for the revised6300 run is already corrected in V1568b.

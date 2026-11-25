@@ -1,0 +1,134 @@
+{
+  "format": "dk4-shop657-full-width-reflow-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-fixed-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_font_and_square_fixed_20261027.nds",
+  "current_ROM_sha256": "89860905d61e348ae053d40836159bc86bff5d85d3206ce3a0961a6d60142077",
+  "records": [
+    {
+      "message_ID": 657,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 8,
+        "offset": 304,
+        "copy_end": 368,
+        "bytes": 64,
+        "record_index": 8,
+        "table_offset": 1318450,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "message_ID": 657,
+        "block": 7,
+        "offset": 4399,
+        "copy_end": 4472,
+        "bytes": 72,
+        "record_index": 108,
+        "table_offset": 1318450,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082c882bd814191448fe682e882c582b582e582a481480a91e58cfb82cc8fa4948482c882e70a8cf088d58f8a82c98d7382ad82c682a282a282c582b782e6",
+      "current_hex": "2020596f752772652061207361696c6f722c206172656e2774200a2020796f753f20466f722062756c6b2074726164652c207472790a202074686520747261646520686f7573652e",
+      "clean_Japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "current_stored_English": "  You're a sailor, aren't \n  you? For bulk trade, try\n  the trade house.",
+      "historical_review": {
+        "family": "Square-retail-and-business-responses",
+        "manuscript": "translations/shop_business_editorial_manuscript_v1.json",
+        "context": "Original Square merchant portrait family and native town-state selector; gameplay sampling covers 657/658 and return.",
+        "historical_not_automatically_fresh": true
+      },
+      "reviewed_but_incomplete": false,
+      "id": "COMMON_MESSAGE_657",
+      "message_id": 657,
+      "japanese": "あなた、船乗りでしょう？\n大口の商売なら\n交易所に行くといいですよ",
+      "english": "You're a sailor, aren't you? For bulk trade, try the trade house.{PAD}",
+      "speaker": "Square shopkeeper",
+      "context": "Original Square merchant retail/business portrait family; retail657 direct source branch and normal658/event682-687 original native selectors are mapped. Controlled selector calls supply only getter results; ordinary live tests pending.",
+      "source_meaning": "A polite question recognizing a sailor, followed by a recommendation to use the trade house for bulk business.",
+      "localization_note": "Retain the natural tag question and trade-house recommendation. Generate full-width ordinary soft wrapping without splitting the tag question. The complete-word For boundary is a scoped reviewed soft-wrap decision; no global weak-ending policy changes.",
+      "editorial_decision": "retain-wording-reflow",
+      "previous_manuscript": "translations\\shop_business_editorial_manuscript_v1.json",
+      "previous_manuscript_sha256": "951be3d5e866e1c260a0877463c1710166bb16c026153a704e195d1b49924d55",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "integrated-formatting-revisit-wording-retained-no-new-editorial-credit",
+      "fresh_retained_wording_justification": "The conversational tag question and practical trade-house recommendation faithfully convey the Japanese. The defect is the generated placement of breaks.",
+      "formatting_gate_scope": "Complete six native planes viewed: existing657 parent, original and current fonts, exact first/internal/final glyphs, blanks, guards, padding and bounds. Three generated trailing spaces stay inside35 final cells. No consumer hook or geometry change.",
+      "original_historical_family": "Square-retail-and-business-responses",
+      "integrated_hex": "2020596f752772652061207361696c6f722c206172656e277420796f753f20466f720a202062756c6b2074726164652c207472792074686520747261646520686f7573652e202020",
+      "integrated_reference": {
+        "message_ID": 657,
+        "block": 7,
+        "offset": 4399,
+        "copy_end": 4472,
+        "bytes": 72,
+        "record_index": 108,
+        "table_offset": 1318450,
+        "start_in_record": 0
+      },
+      "integrated_stored_English": "  You're a sailor, aren't \n  you? For bulk trade, try\n  the trade house.",
+      "actual_gameplay_coverage": [
+        {
+          "mode": "ordinary-fixture-free-genuine-save-V2097",
+          "ROM_sha256": "488b1a8e62b4354586feb196acdd057facc6ff6ef0ce2d54386010c898d76f45",
+          "font_frame": 5510,
+          "hold_frame": 5600,
+          "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\square_context_live_v2122_V2097\\frame_005600_cold_boot.png",
+          "capture_sha256": "9bbaf7e68cda3e7b20f6dcebb713ad10eec2fda0ea1759181bc3bf74ec596ee3"
+        }
+      ],
+      "actual_gameplay_visited": true,
+      "native_display_evidence": {
+        "production_control": "work\\analysis\\production_compact_capacity_v2138\\all307_production_native_font_cases.json",
+        "formatting": "work/analysis/square_formatting_v2140/offline_formatting_approval.json",
+        "all_typed_arguments": "work/analysis/square_context_arguments_v2133/all_runtime_native_argument_layouts.json",
+        "all_native_copies": "work/analysis/square_context_copies_v2126/all_native_copies_and_prefix_cache_sequence.json"
+      },
+      "proposed_compiled_hex": "2020596f752772652061207361696c6f722c206172656e277420796f753f20466f720a202062756c6b2074726164652c207472792074686520747261646520686f7573652e202020",
+      "native_soft_wrap_reason": "The host formatter generates a complete-word soft wrap after For, just as the separately eligible native paragraph wrapper for comparison689 ends its second row with a. Message657 is not in that dynamic wrapper scope; its generated bytes retain its existing consumer. These are ordinary soft wraps within one sentence, not authored dramatic pauses or new lexical fragments. Two complete rows preserve the tag question and use the full existing native capacity. The historical generated-break compiler and its weak-ending rules remain unchanged.",
+      "actual_evidence": {
+        "message_ID": 657,
+        "font_frame": 7910,
+        "hold_frame": 8000,
+        "text_hex": "2020596f752772652061207361696c6f722c206172656e277420796f753f20466f720a202062756c6b2074726164652c207472792074686520747261646520686f7573652e202020",
+        "lines": [
+          "You're a sailor, aren't you? For",
+          "bulk trade, try the trade house."
+        ],
+        "capture": "E:\\Rota Nova translations\\Generated\\work\\emulation_v193\\shop657_full_width_v4768b\\frame_008000_cold_boot.png",
+        "capture_sha256": "a1175c3736d7fd7a77efeb972e0c0d4267c031224ef736fd44d67f992e36e1af",
+        "all_ink_and_blank_paper_pixels_equal_independent_full_plane": true,
+        "complete_first_internal_last_characters_and_native_bounds": true
+      }
+    }
+  ],
+  "added_editorial_credit": 0,
+  "formatting_reopened_from": "translations/square_contextual_final_review_v1.json",
+  "actual_new_gameplay_pending": false,
+  "full_goal_complete": false,
+  "candidate": "out\\all_routes_combined_v4766_candidate.nds",
+  "candidate_sha256": "c3a9a133f7d149995a5d0feae824da32bc6741603f023ba7cda1cefb79ff4503",
+  "patch": "out\\all_routes_combined_v4766_candidate.xdelta",
+  "patch_sha256": "eb5b29424464d83d1cc206cb32ee6bd6d9a4e90aca21e8b78469b2953aed7af0",
+  "actual_proof": "work\\analysis\\shop657_actual_verification_v4770\\ordinary_actual_and_startup_verification.json",
+  "native_proof": "work\\analysis\\early_shop_breaks_v4763e\\source_current_findings_and_native_proposal.json",
+  "release_proof": "work\\analysis\\shop657_release_v4767\\registered_release_verification.json",
+  "actual_review_sheet_viewed": true,
+  "actual_changed_fullscreen_viewed": true,
+  "all6_native_preview_tiles_viewed": true,
+  "source_wording_unchanged": true
+}

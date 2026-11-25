@@ -1,0 +1,7 @@
+# All Routes Pirate and Retreat Reports candidate
+
+Use [Translation_DS_All_Routes_Pirate_and_Retreat_Reports_20261111_candidate.nds](../../out/pirate_and_retreat_reports_registered_20261111_v1/Translation_DS_All_Routes_Pirate_and_Retreat_Reports_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `f9cd8ee6085e68ad03595ad5da0aec43d000ccccb8d8a657e74f51ac6be903cd`. Patch SHA-256 `cc6616b630477677141174d46bf03f62004120585f369102344389df7d12e998`.
+
+All 48 pirate and retreat reports are registered. The ledger now credits 27,309 reviews. The batch includes 30 revisions and 18 justified retentions. The two pirate alert tables keep the original bearing and given-name fields in order. The scoped caller renders all nine bearings as ordinary English without changing other uses of the compass abbreviations.
+
+The original Hamburg sequence displayed the retreat and the revised port order, then returned to sailing. The pirate sighting and attack alerts passed focused offline native tests. All 71 portrait pages, cold boot, 24 protected name getters, 34 targeted tests and 104 release checks passed. [Gameplay](verification/pirate_and_retreat_reports_gameplay_verification.json) · [Exact records](verification/registered_review.json)

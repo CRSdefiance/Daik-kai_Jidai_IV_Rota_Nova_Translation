@@ -1,0 +1,3 @@
+# V918: next battle Finance source contexts
+
+Next12 entries1669-1680 map to original Finance20 duties. All75 direct battle-helper,main battle-selector and ordinary-context controls pass for21 NPCs and four genuine captains. NPCs use the genuine Julio battle snapshot;captain1 uses the genuine V916 delayed-Chapel battle capture. Other heroes retain their genuine models with declared CPU mode controls. Exact clean Japanese,current V916 and canonical references and immediate storage neighbors are saved. Independent voice alternatives are not consecutive speech. No prose,font,actual new Finance room or completion credit.954 complete,957 source/prose reviewed;full editorial goal and separate graphics audit remain open.

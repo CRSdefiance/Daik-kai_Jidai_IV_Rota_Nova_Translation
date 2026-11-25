@@ -1,0 +1,9 @@
+# Nagasaki Yard dialogue and sail help
+
+The Yard asks “Which ship do you want to rename?” on one line. The square and lateen tips preserve their wind advantages and opposing mounting restrictions. Ten neighboring records retain their wording. [Source, stored text, and review gates](../releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/verification/registered_review.json)
+
+Ordinary play verified four changed holds and 47 pixel-identical comparison frames. Four further frames differ only in the blinking menu highlight backgrounds. Every glyph in those frames is pixel-identical. The replay covers purchase and sale cancellation, the no-damage repair response, the native rename keyboard, equipment and Dock cancellation, and return to Nagasaki with unchanged funds. [Paired gameplay](../releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/verification/nagasaki_yard_paired.png) · [Sail previews](../releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/verification/native_review_sheet_1.png) · [Rename preview](../releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/verification/portrait_sheet_01.png)
+
+The cumulative candidate passed startup, 459 release checks, and 17 focused tests. The clean-input patch reconstructs the complete candidate. Completed transactions, damaged ships, and extra Dock branches remain unvisited in this replay. [Testing build and patch](../releases/all_routes_editorial_20261124_nagasaki_yard_reflow_candidate/README.md)
+
+The sole `.nds` in Google Drive matches the registered build by streamed SHA-256. The original saves and registered build were verified after removing 61,086,716 bytes of duplicate copies. [Drive readback](../translations/editorial_checkpoints/shared_display_20261123/nagasaki_yard_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/nagasaki_yard_registered_cleanup_20261124.json)

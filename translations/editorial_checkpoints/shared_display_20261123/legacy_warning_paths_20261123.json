@@ -1,0 +1,721 @@
+{
+  "candidate_sha256": "e30c0ff02216508ce3b917a27bda89688837fd970d2a1040277f3ba0248a9601",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "disband_shortfall": {
+    "held_panels": [
+      {
+        "message_ID": 280,
+        "source_reference": {
+          "block": 4,
+          "offset": 1880,
+          "copy_end": 1908,
+          "bytes": 28,
+          "record_index": 23,
+          "table_offset": 1317696,
+          "start_in_record": 1
+        },
+        "installed_reference": {
+          "block": 4,
+          "offset": 1784,
+          "copy_end": 1815,
+          "bytes": 29,
+          "record_index": 42,
+          "table_offset": 1317696,
+          "start_in_record": 0
+        },
+        "source_hex": "95d290ac82b782e98acd91e082f0914982f182c582ad82be82b382a2",
+        "installed_hex": "43686f6f7365206120666c65657420746f2072656f7267616e697a652e",
+        "clean_Japanese": "編成する艦隊を選んでください",
+        "installed_English": "Choose a fleet to reorganize.",
+        "frame": 9400,
+        "body_ink": 292,
+        "screenshot": {
+          "frame": 9400,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_009400_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "6a78aee076989bfdeb3bc3d59c3a62d0c7d128a0118e0cb23a217f4c184f4de1",
+          "framebuffer_sha256": "2e581fb2446bf9b9efa0c937f494f1d38712a374d663a91d6ea1034c6c5c1ded"
+        },
+        "decision": "retention",
+        "localization_note": "Reorganize marks the separate picker before the shipyard worker moves to the disband option.",
+        "context": "The original fleet-list helper selects this when its mode is 0. The reorganize path can then ask whether to change orders.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "message_ID": 281,
+        "source_reference": {
+          "block": 4,
+          "offset": 1908,
+          "copy_end": 1936,
+          "bytes": 28,
+          "record_index": 23,
+          "table_offset": 1317698,
+          "start_in_record": 29
+        },
+        "installed_reference": {
+          "block": 4,
+          "offset": 1815,
+          "copy_end": 1842,
+          "bytes": 26,
+          "record_index": 44,
+          "table_offset": 1317698,
+          "start_in_record": 0
+        },
+        "source_hex": "89f08e5582b782e98acd91e082f0914982f182c582ad82be82b382a2",
+        "installed_hex": "43686f6f7365206120666c65657420746f2064697362616e642e",
+        "clean_Japanese": "解散する艦隊を選んでください",
+        "installed_English": "Choose a fleet to disband.",
+        "frame": 10360,
+        "body_ink": 270,
+        "screenshot": {
+          "frame": 10360,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_010360_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b2829815797f4d1946adc816a36f115013b9191b6fe03b333d6aff642ea29d09",
+          "framebuffer_sha256": "1dbfc1998c4142d2fe6dffa6fd5014ccdfd2569c3d4a671322da03c0e6975f43"
+        },
+        "decision": "retention",
+        "localization_note": "Use disband in both the picker and the following confirmation. The stock picker keeps its brief instruction.",
+        "context": "The same list helper selects this when its mode is 1. The original flow later asks for confirmation in 285.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "message_ID": 285,
+        "source_reference": {
+          "block": 4,
+          "offset": 2084,
+          "copy_end": 2116,
+          "bytes": 32,
+          "record_index": 26,
+          "table_offset": 1317706,
+          "start_in_record": 2
+        },
+        "installed_reference": {
+          "block": 4,
+          "offset": 1995,
+          "copy_end": 2015,
+          "bytes": 19,
+          "record_index": 48,
+          "table_offset": 1317706,
+          "start_in_record": 0
+        },
+        "source_hex": "82b182cc8acd91e082f089f08e5582b582c482e082a282a282c582b782a98148",
+        "installed_hex": "44697362616e64207468697320666c6565743f",
+        "clean_Japanese": "この艦隊を解散してもいいですか？",
+        "installed_English": "Disband this fleet?",
+        "frame": 10840,
+        "body_ink": 212,
+        "screenshot": {
+          "frame": 10840,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_010840_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b14297912391851de6fd4cf1c8b819d8fde784443d7e8fcbd43087f625ad9b26",
+          "framebuffer_sha256": "02d4660ce54fddbf7fbca0a7e32e1109ce888cf7129f1fbf1f0bafb775815fe6"
+        },
+        "decision": "retention",
+        "localization_note": "The direct confirmation suits both Yes and No and stays the same when the fixture supplies a shortfall.",
+        "context": "The original confirmation follows fleet selection. No returns without disbanding; Yes shows the separate dock result.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "message_ID": 285,
+        "source_reference": {
+          "block": 4,
+          "offset": 2084,
+          "copy_end": 2116,
+          "bytes": 32,
+          "record_index": 26,
+          "table_offset": 1317706,
+          "start_in_record": 2
+        },
+        "installed_reference": {
+          "block": 4,
+          "offset": 1995,
+          "copy_end": 2015,
+          "bytes": 19,
+          "record_index": 48,
+          "table_offset": 1317706,
+          "start_in_record": 0
+        },
+        "source_hex": "82b182cc8acd91e082f089f08e5582b582c482e082a282a282c582b782a98148",
+        "installed_hex": "44697362616e64207468697320666c6565743f",
+        "clean_Japanese": "この艦隊を解散してもいいですか？",
+        "installed_English": "Disband this fleet?",
+        "frame": 11560,
+        "body_ink": 212,
+        "screenshot": {
+          "frame": 11560,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011560_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b14297912391851de6fd4cf1c8b819d8fde784443d7e8fcbd43087f625ad9b26",
+          "framebuffer_sha256": "02d4660ce54fddbf7fbca0a7e32e1109ce888cf7129f1fbf1f0bafb775815fe6"
+        },
+        "decision": "retention",
+        "localization_note": "The direct confirmation suits both Yes and No and stays the same when the fixture supplies a shortfall.",
+        "context": "The original confirmation follows fleet selection. No returns without disbanding; Yes shows the separate dock result.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "message_ID": 286,
+        "source_reference": {
+          "block": 4,
+          "offset": 2116,
+          "copy_end": 2144,
+          "bytes": 28,
+          "record_index": 26,
+          "table_offset": 1317708,
+          "start_in_record": 34
+        },
+        "installed_reference": {
+          "block": 4,
+          "offset": 2015,
+          "copy_end": 2052,
+          "bytes": 36,
+          "record_index": 49,
+          "table_offset": 1317708,
+          "start_in_record": 0
+        },
+        "source_hex": "8a65914482cd83688362834e82c9976182af82c482a882ab82dc82b7",
+        "installed_hex": "5765276c6c2070757420616c6c2074686520736869707320696e2074686520646f636b2e",
+        "clean_Japanese": "各船はドックに預けておきます",
+        "installed_English": "We'll put all the ships in the dock.",
+        "frame": 11680,
+        "body_ink": 346,
+        "screenshot": {
+          "frame": 11680,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011680_cold_boot.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "bc518a57dac95a813b56994e02113c0f890788f5f109391acde6a05b13e96348",
+          "framebuffer_sha256": "4b3be0447c8033236e46186c0587ff74cba3d7d3e6003938802a6bbe4a83871f"
+        },
+        "decision": "retention",
+        "localization_note": "The reply tells the player what will happen to every ship only after Yes. Keep the dock as the destination.",
+        "context": "The original follow-up plays only after the player confirms disbandment and immediately precedes the dock transfer.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      }
+    ],
+    "selected_messages": [
+      {
+        "frame": 9011,
+        "PC": 33903244,
+        "message_ID": 280,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 9011,
+        "PC": 33895668,
+        "message_ID": 280,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 10130,
+        "PC": 33903244,
+        "message_ID": 281,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 10130,
+        "PC": 33895668,
+        "message_ID": 281,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 10612,
+        "PC": 33903244,
+        "message_ID": 285,
+        "caller_LR": 33900160
+      },
+      {
+        "frame": 10612,
+        "PC": 33895668,
+        "message_ID": 285,
+        "caller_LR": 33900160
+      },
+      {
+        "frame": 11211,
+        "PC": 33903244,
+        "message_ID": 281,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 11211,
+        "PC": 33895668,
+        "message_ID": 281,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 11449,
+        "PC": 33903244,
+        "message_ID": 285,
+        "caller_LR": 33900160
+      },
+      {
+        "frame": 11449,
+        "PC": 33895668,
+        "message_ID": 285,
+        "caller_LR": 33900160
+      },
+      {
+        "frame": 11579,
+        "PC": 33903244,
+        "message_ID": 286,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 11579,
+        "PC": 33895668,
+        "message_ID": 286,
+        "caller_LR": 33900236
+      }
+    ],
+    "states": {
+      "9400": {
+        "gold": 897400,
+        "regional_expenses": 0,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 9400,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_009400_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "95b5eac68ea4a45ed19423121421b3a95a6fbe4bab1a601e7e12ffbbac32c231",
+          "read_only_export": true
+        }
+      },
+      "10360": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 10360,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_010360_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "ff064a078f8366af717fc12ce04bdd53c02bf23b43fe0f680a49c0e4c46d0b21",
+          "read_only_export": true
+        }
+      },
+      "10840": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 10840,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_010840_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "b2ad0ce958d9558e34219ca7874726dac04d6f21f0f3c7160301900c358a6794",
+          "read_only_export": true
+        }
+      },
+      "11080": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 11080,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011080_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "30069341c74dc9680f8e3aa7673b1e33492464f7067bde4fca01a93022d6afb7",
+          "read_only_export": true
+        }
+      },
+      "11440": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 11440,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011440_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "9e3ae7fbaa55d6d83a3675701598da8be312b084b0c77946ea9a4ecf9d22842a",
+          "read_only_export": true
+        }
+      },
+      "11560": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 11560,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011560_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "82c95813d958a3f88348751bb019ec782cc9c38ab78da7b49bc23acee145236d",
+          "read_only_export": true
+        }
+      },
+      "11680": {
+        "gold": 37,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f130217000000844e130204150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000002000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 11680,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011680_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "a227df9785715bacdf5df351208f604b13a63e6e04e961a48b7207590f91c81e",
+          "read_only_export": true
+        }
+      },
+      "11800": {
+        "gold": 0,
+        "regional_expenses": 100500,
+        "income": 0,
+        "invested": 0,
+        "fleet_record_hex": "e04e1302144f1302d0000000844e13029b150000844e13029b150000844e13029b150000844e13029b150000844e13029b150000c8540000f8160000110001077d05000000000000000000000100000003000000e0b31402b200000073730000acb314020000000000000000000000000000000000000000000000000000000000000000",
+        "snapshot": {
+          "frame": 11800,
+          "path": ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\frame_011800_arm9_ram.bin",
+          "bytes": 4194304,
+          "sha256": "cac1121d6b8f8150995408b9cb25ac05e1e71fab01f615cf5408ba490bc62538",
+          "read_only_export": true
+        }
+      }
+    },
+    "supplied_finance": {
+      "frame": 9800,
+      "owner": {
+        "fleet": 36510420,
+        "fleet_id": 57,
+        "finance": 36511280,
+        "wallet": 36540172,
+        "company": 2
+      },
+      "only_supplied_words": [
+        "company cash",
+        "regional expenses"
+      ],
+      "initial_gold": 897400,
+      "supplied_gold": 37,
+      "supplied_expenses": 100500,
+      "fleet_fixture_prerequisites": true,
+      "original_save_persisted": false,
+      "controlled_RAM_before_sha256": "e6eae8c22a28eb414705fa058f911d5e3b8c28c845c8704e10362f4d519b204b",
+      "controlled_RAM_after_sha256": "c171b844f09740442aff1e3e051a7031552a64481fc27a771a2c4eb06763d9e7",
+      "changes": [
+        {
+          "offset": 2985740,
+          "before": "78b10d00",
+          "after": "25000000"
+        },
+        {
+          "offset": 2956860,
+          "before": "00000000",
+          "after": "94880100"
+        }
+      ]
+    },
+    "original_inputs": true,
+    "earned_finance": false,
+    "focused_emulator_test": true,
+    "sheets": [
+      {
+        "path": "translations\\editorial_checkpoints\\shared_display_20261123\\legacy_warning_paths_20261123_1.png",
+        "sha256": "0ed16a07090c1e6a16be5eca9f2b3c652766d8123d79ae48e72a7a2e662d4b8b"
+      },
+      {
+        "path": "translations\\editorial_checkpoints\\shared_display_20261123\\legacy_warning_paths_20261123_2.png",
+        "sha256": "2c91687602e4c582da21a1e94b20a484cb5fd7757f3721067f0dfdfc908f619b"
+      }
+    ],
+    "verified_return_with_wallet_at_zero": true,
+    "requested_284": false,
+    "evidence": {
+      ".codex-release-work\\disband_shortfall_20261123\\fleet\\terminal.json": "13e73e7b991fe52f6c599c88a8808b4f83285bbb79ba9649dc0e01d62ee045ae",
+      ".codex-release-work\\disband_shortfall_20261123\\fleet\\capture\\capture_report.json": "8cf0e39bef7e96cba3a0c182e718f2bf6ba0a7592b834ea90965d79a60266c58",
+      ".codex-release-work\\disband_shortfall_20261123\\fleet\\requests.json": "784050ff01dd1efa0297f29ca92b27379e3caa7792fbce96682a435788fb236a",
+      "releases\\all_routes_editorial_20261111_shipyard_fleet_setup_candidate\\verification\\registered_review.json": "5e2c45b5963fd4140a601f7cfa8dd460b90d9b13b0934d03908458ce618c47ef"
+    }
+  },
+  "quit_path": {
+    "native_selector_cases": [
+      {
+        "flag": 0,
+        "stop": 41811968,
+        "COMMON_argument": null
+      },
+      {
+        "flag": 1,
+        "stop": 33900140,
+        "COMMON_argument": 319
+      },
+      {
+        "flag": 2,
+        "stop": 41811968,
+        "COMMON_argument": null
+      },
+      {
+        "flag": 2147483647,
+        "stop": 41811968,
+        "COMMON_argument": null
+      },
+      {
+        "flag": 2147483648,
+        "stop": 41811968,
+        "COMMON_argument": null
+      },
+      {
+        "flag": 4294967295,
+        "stop": 41811968,
+        "COMMON_argument": null
+      }
+    ],
+    "direct_callers": {
+      "direct_ARM_callers": [
+        [
+          "arm9_section_0",
+          33815488
+        ]
+      ],
+      "literal_entry_pointer_references": []
+    },
+    "native_template": {
+      "original_modal_entry": 33900404,
+      "native_lookup": [
+        319
+      ],
+      "text_pointer": 36243212,
+      "complete_template_hex": "51756974207468652067616d653f00"
+    },
+    "prior_ordinary_quit_and_cancel": {
+      "common_ID": 319,
+      "source_reference": {
+        "block": 4,
+        "offset": 3312,
+        "copy_end": 3348,
+        "bytes": 35,
+        "record_index": 46,
+        "table_offset": 1317774,
+        "start_in_record": 2
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 3389,
+        "copy_end": 3405,
+        "bytes": 14,
+        "record_index": 92,
+        "table_offset": 1317774,
+        "start_in_record": 0
+      },
+      "complete_glyph_ink": 167,
+      "confirmation": {
+        "frame": 5800,
+        "path": "work\\race_and_quit_common_20261114_v1\\quit\\capture\\frame_005800_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "1f751bcd76d6b4278bab30d1ad2393dcd7b9d74aabae9e23a0b8461abb77617f",
+        "framebuffer_sha256": "0f498681eaf2d2504f3fec7f31a6d5a832c5446f11a940704b66b33619b20fff"
+      },
+      "cancelled": {
+        "frame": 6200,
+        "path": "work\\race_and_quit_common_20261114_v1\\quit\\capture\\frame_006200_cold_boot.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "8eb7fffc744680e3a1cabfb6ffefeaad60a97f0ad2e984022c65f5eb07243693",
+        "framebuffer_sha256": "50095016b32ef0f203faef8ec57024839bbd68ba094cd325ec0e349328ead92d"
+      },
+      "trace": [
+        {
+          "frame": 5611,
+          "PC": 33903244,
+          "message_ID": 319,
+          "caller_LR": 33900160
+        },
+        {
+          "frame": 5611,
+          "PC": 33895668,
+          "message_ID": 319,
+          "caller_LR": 33900160
+        }
+      ],
+      "source_caller": 33815560
+    },
+    "current_new_quit_gameplay": false,
+    "retained": {
+      "message_ID": 319,
+      "source_reference": {
+        "block": 4,
+        "offset": 3312,
+        "copy_end": 3348,
+        "bytes": 35,
+        "record_index": 46,
+        "table_offset": 1317774,
+        "start_in_record": 2
+      },
+      "installed_reference": {
+        "block": 4,
+        "offset": 3389,
+        "copy_end": 3405,
+        "bytes": 14,
+        "record_index": 93,
+        "table_offset": 1317774,
+        "start_in_record": 0
+      },
+      "source_hex": "8351815b838082f09286926682b582dc82b70a82e682eb82b582a282c582b782a98148",
+      "installed_hex": "51756974207468652067616d653f",
+      "clean_Japanese": "ゲームを中断します\nよろしいですか？",
+      "installed_English": "Quit the game?",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "localization_note": "The active-session prompt stays brief and lets the player confirm or cancel."
+    },
+    "warning_draft": "You will lose this exhibition data if you quit. Quit anyway?",
+    "evidence": {
+      "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\exhibition_quit_warning_20261115_v2.json",
+      "sha256": "aab7ef65171fd1f4cb8605e2c1d0324879d1d3da737d2fe2a0cc9ce60a540fd3"
+    }
+  },
+  "stored_warning_leads": [
+    {
+      "message_ID": 284,
+      "source_reference": {
+        "block": 4,
+        "offset": 2012,
+        "copy_end": 2084,
+        "bytes": 69,
+        "record_index": 25,
+        "table_offset": 1317704,
+        "start_in_record": 1
+      },
+      "installed_reference": {
+        "block": 4,
+        "offset": 1925,
+        "copy_end": 1995,
+        "bytes": 69,
+        "record_index": 47,
+        "table_offset": 1317704,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8acd91e082cd90d48e9a82c582b781428acd91e082cc8ed88be082f00a95d48dcf82c582ab82e982d982c782cc8f8a8e9d8be082aa82a082e882dc82b982f18149",
+      "installed_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669657720697473207573652c206f726967696e2c20616e642076616c75652e0a20202020202020202020",
+      "clean_Japanese": "その艦隊は赤字です。艦隊の借金を\n返済できるほどの所持金がありません！",
+      "installed_English": "Trade-good description. Review its use, origin, and value.\n          ",
+      "display_caller_open": true,
+      "draft": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "This fleet is operating at a loss. You can't afford to pay its debt.",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      }
+    },
+    {
+      "message_ID": 318,
+      "source_reference": {
+        "block": 4,
+        "offset": 3224,
+        "copy_end": 3312,
+        "bytes": 85,
+        "record_index": 45,
+        "table_offset": 1317772,
+        "start_in_record": 125
+      },
+      "installed_reference": {
+        "block": 4,
+        "offset": 3309,
+        "copy_end": 3389,
+        "bytes": 79,
+        "record_index": 92,
+        "table_offset": 1317772,
+        "start_in_record": 0
+      },
+      "source_hex": "82b182cc8366815b835e82cd8374834683418366815b835e82c582b70a8351815b838082f09286926682b782e982c60a8366815b835e82cd8eb882ed82ea82dc82b782aa0a82e682eb82b582a282c582b782a98148",
+      "installed_hex": "546869732069732065786869626974696f6e20646174612e2082686620796f752071756974207468652067616d652c2074686520646174612077696c6c206265206c6f73742e2050726f636565643f",
+      "clean_Japanese": "このデータはフェアデータです\nゲームを中断すると\nデータは失われますが\nよろしいですか？",
+      "installed_English": "This is exhibition data. Ｉf you quit the game, the data will be lost. Proceed?",
+      "display_caller_open": true,
+      "draft": {
+        "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+        "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+        "english": "You will lose this exhibition data if you quit. Quit anyway?",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": false
+        }
+      }
+    }
+  ],
+  "shared_records_open": 276,
+  "new_editorial_credit": 0,
+  "hardware": false
+}

@@ -1,0 +1,68 @@
+"""B177 completion narrative and the full continuing editorial objective."""
+from scripts.lil_B177_reference_checkpoint_text_v4641 import NEXT as EARLIER_NEXT
+
+NEXT=('Begin B178 with its complete clean-Japanese exchange and fresh glosses before predecessor '
+      'English. Bind source speakers,voices,terms,event context and native controls;review the '
+      'whole exchange under natural-dialogue-v2. '+EARLIER_NEXT[EARLIER_NEXT.index('Continue B178-B180'):])
+ACTUAL_SCOPE=(
+    'Two disclosed targeted automated headless9001-frame Japanese/English B22 content cold boots '
+    'retain all13 B177 commands plus nine original initialization commands/four A000s. Both '
+    'select all22 commands,show ten complete panels (nine progressive/one impersonal FE),execute '
+    'source A000,C200 and single end,and return to initialized Amsterdam at5255/5257. Both actual '
+    'sheets and twelve paired full screens were viewed. Complete text planes and115 sampled '
+    'upper/portrait/name regions agree. Eleven exact command-timing differences (nine speeches/ '
+    'two controls or end) and14 following full-RGB differences remain disclosed unmasked. The '
+    'latter occupy original A-button indicator animation x224–240/y360–376;all other pixels '
+    'in those frames agree. Town whole RGB5290–5950 and final9001 agree. Five native components, '
+    'whole1A04 actor/captain2 agree;PRNG seeds463267532/403514907 differ. No new PRNG causal trace, '
+    'full-RAM or future-world equality. Following B120 offset606 remains in progress from8375/ '
+    '8373 at capture end and adds no editorial credit. Source event177 is not naturally '
+    'selected;no earned fashion state,earlier scene location,full-route or hardware claim. '
+    'Fresh registered New Game/town cold boots add31 whole-frame comparisons/five actor controls '
+    'with the inherited town battery. All jobs are terminal/reaped;every ROM is preserved.')
+
+
+def make_summary(release):
+    return (
+        'V4659 completes ten whole-exchange B177 reviews in registered experimental V4655:five '
+        'revisions/five individually justified retentions. Clean Japanese/fresh glosses preceded '
+        'predecessor comparison;incidental later name-search exposure is documented. Preserve '
+        'Owner enthusiasm,Cook color-based skepticism,red stirring passion,the consuming youthful '
+        'love recollection,the dry polite reply,immediate cooking/selling instruction,commercial '
+        'exhortation,casual repeated acknowledgment,encouragement and elaborate laugh. Remove '
+        'unsupported madam;add no lover,present relationship,rank,kinship,food taboo,quantity, '
+        'price,profit,completed sale,active boom or earlier location. The impersonal Genoa '
+        'forecast remains prospective. Native-bound Owner/Cook,four read-only name paths and '
+        'both approved inline Genoa spans/source pointers remain bound. Every retained line '
+        'has its own reason and exact source,predecessor,logical,compiled,stored and integrated '
+        'references.\n\n'
+        'All ten complete native planes (nine progressive216x64/one FE228x48logical/228x64physical), '
+        '80 logical/compiled alignments and40 stored cases pass (24 fresh/16 exact reused). '
+        'Both final native sheets were viewed. All49 formatter/source-consumer/invented-macro '
+        'negatives pass. Five narrow row-count notes waive no glyph,bounds,pagination,weak-ending, '
+        'macro,control or blank-page issue. Two preserved wrap refinements tighten four phrase '
+        'boundaries without changing prose,geometry,shared metrics or guards;R12 remains four '
+        'complete rows. Relocation488 to472 stored/logical486 to470 preserves all13 commands, '
+        'ten preambles,three leaves,A0008 raw00a0ffff01090fa1,C200480 mapped464 and single '
+        'end482 mapped466. Independent inverse restores every predecessor logical byte. Fresh '
+        '336-load/672-mode tests,exact-parent reuse,three entry censuses,two guarded end decodes, '
+        'ten relocated dispatches and A000-structural/C200 pairs pass. FI/FA/FO counts arezero; '
+        'no predicates,relative sites,resources,presentations,2000 pauses or typed menus. A000 '
+        'packed operands remain uninterpreted;its structural callee bridge is distinct from '
+        'actual scene execution. Event177/action178 has no explicit dependency prefix without '
+        'proving earned activation.\n\n'+ACTUAL_SCOPE+'\n\n'
+        'All95 atomic negatives reject before mutation;78 release/dialogue regressions pass. '
+        'The sole registered builder applies all553 manuscript batches/114 accepted layers '
+        'after the full V4595 stack. Only SC2 B177 changes from V4595;all335 other blocks and '
+        'every other file/component,ARM9,COMMON,fonts,graphics and123040 staged bytes remain '
+        'exact. The entire ROM equals reviewed research V4630. The clean-input patch reconstructs '
+        'the candidate byte for byte. Candidate: '+release['candidate']+';SHA-256 '+
+        release['candidate_sha256']+'. Patch SHA-256 '+release['patch_sha256']+'.\n\n'
+        'Coverage becomes5885 integrated/completed contextual rereads with zero pending credited '
+        'route drafts;source/prose stays5888,including4032 SC2 and64 SC3. Historical completed '
+        'decisions become3738 revised/2147 retained;route reviewed/completed4286/4286. Source/prose '
+        'credit was already recorded atV4623;completion adds ten once. Promoted main V4595, '
+        'immutable construction inputs,accepted-layer status,all earlier completions/packages/ '
+        'ROMs/translations/drafts/executed producers/proofs/failures and full ledger history '
+        'remain preserved. V4655 remains experimental. Complete one-space CRLF ledger encoding '
+        'stays in use. Preserve the failed registration preparer and corrected successor.\n\n'+NEXT)

@@ -1,0 +1,9 @@
+# Sea approaches, fleet encounters and village visits registered
+
+The 67 sea approach, battle and village records are registered. The ledger now credits 26,311 reviews. The build preserves all 114 accepted layers, the Market correction, and the ASCII right-bound fix. [Release package](../releases/all_routes_editorial_20261111_sea_approach_village_candidate/README.md) · [Exact registered review](../releases/all_routes_editorial_20261111_sea_approach_village_candidate/verification/registered_review.json)
+
+Records 1290–1356 cover nine original voice tables and ten callers. Battle assistance names the fleet's faction. The separate attack warning names the hostile port. The revision restores full spoken questions, replaces stray full-width I with the ordinary ASCII glyph, and keeps the exact count and gold value. The revised counts work at one, and the repair reports cover one or several ships. The original decimal getter continues to use its native numeral glyphs.
+
+All 1,024 layouts passed complete substitution and bounds checks. Sixteen revised pages and 74 exact matching earlier views cover the final display sample. All actual faction names and help questions stay intact on individual lines. The longer synthetic faction label still allows an ordinary word break. The Inuvik replay used a location fixture and observed discovery, docking, resupply, and return to the original menu with Resupply consumed. Both battle callers passed 32 focused accept and decline checks. Battle-choice gameplay, port attacks, the remaining village outcomes, and hardware remain unvisited.
+
+Continue with the individual crew reactions beginning at 1357. Keep the unmapped 750–752 replies, remaining town and random scenes, and other player-facing text in scope. Deferred artwork and the older-record technical re-audit stay separate.

@@ -1,0 +1,606 @@
+{
+  "candidate_sha256": "01f34280371c451cc98378d343766da2095758e55f49f72e60febc9e2656982f",
+  "fallback_copies_original_docking_byte": true,
+  "source_and_installed_spans": [
+    {
+      "start": 33731548,
+      "end": 33731644,
+      "exact_hex": "2204a0e1ff2002e2ff4010e21000001a6d7f02eb0060a0e1640c00eb042086e28410a0e3912020e09a2400eb0020a0e1730052e30600001a637f02eb0060a0e15a0c00eb042086e28410a0e3902121e03c20d1e50500a0e10410a0e1792900eb",
+      "sha256": "069e629d89c4c5c62a8f63713f58b804020051abcf9bc61082695bfa65d022d0"
+    },
+    {
+      "start": 33769076,
+      "end": 33769096,
+      "exact_hex": "5010d0e5081011e27300a0133c00d0051eff2fe1",
+      "sha256": "f7faed0fdf0a3581ef139f1d2845f6226ff642e0e2242c1e797e9aa97a43465f"
+    },
+    {
+      "start": 34386344,
+      "end": 34386356,
+      "exact_hex": "00009fe51eff2fe16cfd2c02",
+      "sha256": "af79bc024efa13cd860c47f143f44ec39653706c6dcde68723b53a4e57bed9b8"
+    },
+    {
+      "start": 33744268,
+      "end": 33744284,
+      "exact_hex": "04009fe5480090e51eff2fe168962702",
+      "sha256": "a7d6d6eb08545f81fefa93d9b1d903fa44a5950263bfaf4f88fcd67b822f2c03"
+    },
+    {
+      "start": 33774116,
+      "end": 33774128,
+      "exact_hex": "3e10c0e53f20c0e51eff2fe1",
+      "sha256": "021aed3d843a59b1dd4a326de275392c12b557b0e36186f57844edfde402e0ed"
+    },
+    {
+      "start": 33734352,
+      "end": 33734472,
+      "exact_hex": "1b0000ea1d0000ea1f0000ea210000ea230000ead5ffffeb04d08de20080bde8bdffffeb04d08de20080bde805ffffeb04d08de20080bde8c8feffeb04d08de20080bde89efeffeb04d08de20080bde887feffeb04d08de20080bde8aafdffeb04d08de20080bde860fdffeb04d08de20080bde8fdfcffeb",
+      "sha256": "0ff94e269fe1918a3634228c0e03c3325b5556e2598e9504a2b4a69ab601df6a"
+    }
+  ],
+  "original_selector_fixture_cases": [
+    {
+      "docking_flag": 0,
+      "byte_values": 256,
+      "total_raw_reads": 1
+    },
+    {
+      "docking_flag": 8,
+      "byte_values": 256,
+      "total_raw_reads": 256
+    }
+  ],
+  "real_saved_inputs": [
+    {
+      "case": "copenhagen",
+      "active_index": 1,
+      "docking_flag": 8,
+      "observed_docking": 7,
+      "exact_saved_field": {
+        "field": "docking",
+        "index": 1,
+        "live_address": 36503088,
+        "serialized_offset": 225,
+        "saved": 7,
+        "prior_live": 7
+      },
+      "gameplay_snapshot": {
+        "frame": 4000,
+        "path": ".codex-release-work\\shared_display_20261123\\fleet_battery_reads_20261124\\copenhagen\\capture\\frame_004000_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "dab70a2a91df73faf6e769ea16020eb8ca3929be9f10ecfcaf34dd737fd92595",
+        "read_only_export": true
+      },
+      "offline_fallback_result": 7
+    },
+    {
+      "case": "nagasaki",
+      "active_index": 3,
+      "docking_flag": 0,
+      "observed_docking": 58,
+      "exact_saved_field": {
+        "field": "docking",
+        "index": 3,
+        "live_address": 36503352,
+        "serialized_offset": 365,
+        "saved": 58,
+        "prior_live": 54
+      },
+      "gameplay_snapshot": {
+        "frame": 3720,
+        "path": ".codex-release-work\\shared_display_20261123\\fleet_battery_reads_20261124\\nagasaki\\capture\\frame_003720_arm9_ram.bin",
+        "bytes": 4194304,
+        "sha256": "993b031084bd9364dd81ddf5bebd5ec4cfeda7bd513376d641e94b7c3ff2577e",
+        "read_only_export": true
+      },
+      "offline_fallback_result": 58
+    }
+  ],
+  "usual_marker_candidates": [
+    {
+      "path": "/data/SC0.DK4",
+      "clean_archive_sha256": "61dc09cd5ac29002b7c497bc17dfeb7cc92d2a5dcbcba7b80791a8fb580b9f7f",
+      "installed_archive_sha256": "ba10dc2573f60e16f23d1fa566cd42859f6dc005b3013b8083d2c68ad5652ec6",
+      "clean_marker_candidates": [
+        {
+          "block": 7,
+          "block_offset": 452,
+          "exact_hex": "00a0ffff0000df82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 10,
+          "block_offset": 544,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 11,
+          "block_offset": 226,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 216,
+          "exact_hex": "00a0ffff00001f82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 326,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 10,
+          "exact_hex": "00a0ffff00003082",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 570,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 7,
+          "block_offset": 458,
+          "exact_hex": "00a0ffff0000df82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 10,
+          "block_offset": 606,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 11,
+          "block_offset": 230,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 244,
+          "exact_hex": "00a0ffff00001f82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 356,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 10,
+          "exact_hex": "00a0ffff00003082",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 610,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/data/SC1.DK4",
+      "clean_archive_sha256": "33981b27375cca1b9293752662d0dedb820dd310526c9dbe0612a397f38313ab",
+      "installed_archive_sha256": "d0d7f79a3e8be97019a61082ed336df481cf9c16059070addb24103e802d3a77",
+      "clean_marker_candidates": [
+        {
+          "block": 51,
+          "block_offset": 318,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 52,
+          "block_offset": 200,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 51,
+          "block_offset": 314,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 52,
+          "block_offset": 204,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/data/SC2.DK4",
+      "clean_archive_sha256": "c270e84025d6942da2dbe86ff6a0241a0874611bce0d08f80923c5fb6e75d326",
+      "installed_archive_sha256": "d25eee888e1bc45dd99df41b2401ff6f63728c2e7fa6586eea2f08e1209514c4",
+      "clean_marker_candidates": [
+        {
+          "block": 31,
+          "block_offset": 784,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 32,
+          "block_offset": 368,
+          "exact_hex": "00a0ffff0000d982",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 31,
+          "block_offset": 834,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 32,
+          "block_offset": 400,
+          "exact_hex": "00a0ffff0000d982",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/data/SC3.DK4",
+      "clean_archive_sha256": "001e21897ddb727ae261c82763ebef8515784ecfa571619c7614d87f3320aab2",
+      "installed_archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+      "clean_marker_candidates": [],
+      "installed_marker_candidates": []
+    },
+    {
+      "path": "/testdata/SC0.DK4",
+      "clean_archive_sha256": "37a2bd427dea99aac7a3204a341014f0e6ce3a5d2f0738a223d025aae7f8554c",
+      "installed_archive_sha256": "37a2bd427dea99aac7a3204a341014f0e6ce3a5d2f0738a223d025aae7f8554c",
+      "clean_marker_candidates": [
+        {
+          "block": 7,
+          "block_offset": 468,
+          "exact_hex": "00a0ffff0000df82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 10,
+          "block_offset": 552,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 11,
+          "block_offset": 232,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 214,
+          "exact_hex": "00a0ffff00001f82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 328,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 10,
+          "exact_hex": "00a0ffff00003082",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 578,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 7,
+          "block_offset": 468,
+          "exact_hex": "00a0ffff0000df82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 10,
+          "block_offset": 552,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 11,
+          "block_offset": 232,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 214,
+          "exact_hex": "00a0ffff00001f82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 21,
+          "block_offset": 328,
+          "exact_hex": "00a0ffff00001e82",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 10,
+          "exact_hex": "00a0ffff00003082",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 132,
+          "block_offset": 578,
+          "exact_hex": "00a0ffff00003182",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/testdata/SC1.DK4",
+      "clean_archive_sha256": "6fbd570749265aeb31ac01b41f1b17bada0e7925b24fdc5bbb14ab38003f6162",
+      "installed_archive_sha256": "6fbd570749265aeb31ac01b41f1b17bada0e7925b24fdc5bbb14ab38003f6162",
+      "clean_marker_candidates": [
+        {
+          "block": 51,
+          "block_offset": 326,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 52,
+          "block_offset": 204,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 51,
+          "block_offset": 326,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 52,
+          "block_offset": 204,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/testdata/SC2.DK4",
+      "clean_archive_sha256": "541e03c961c06db910e52a51362878ce119dab8437eeac425da2fed77a0447af",
+      "installed_archive_sha256": "541e03c961c06db910e52a51362878ce119dab8437eeac425da2fed77a0447af",
+      "clean_marker_candidates": [
+        {
+          "block": 31,
+          "block_offset": 798,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 32,
+          "block_offset": 374,
+          "exact_hex": "00a0ffff0000d982",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ],
+      "installed_marker_candidates": [
+        {
+          "block": 31,
+          "block_offset": 798,
+          "exact_hex": "00a0ffff00002282",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        },
+        {
+          "block": 32,
+          "block_offset": 374,
+          "exact_hex": "00a0ffff0000d982",
+          "usual_marker": true,
+          "explicit_slot": null,
+          "order": 0,
+          "source": "protagonist fleet docking byte"
+        }
+      ]
+    },
+    {
+      "path": "/testdata/SC3.DK4",
+      "clean_archive_sha256": "6a92b955814e93d3fa0e36daf19973bbb49e4da553b194eb183d3d8817a000d3",
+      "installed_archive_sha256": "6a92b955814e93d3fa0e36daf19973bbb49e4da553b194eb183d3d8817a000d3",
+      "clean_marker_candidates": [],
+      "installed_marker_candidates": []
+    }
+  ],
+  "fixture_boundaries": "The isolated selector and writer run with numeric fixtures in copied RAM. The two docking values come from ordinary save loads. The corresponding story commands were not activated in that gameplay.",
+  "remaining": "A saved or runtime producer could still supply 114. Exact marker scans locate candidates without asserting reachability or command boundaries. Direct headquarters and alternate saved inputs stay open.",
+  "native_input": {
+    "candidate": ".codex-release-work\\nagasaki_tavern_recruitment_20261124\\Nagasaki_Tavern_Recruitment_STAGED.nds",
+    "candidate_sha256": "01f34280371c451cc98378d343766da2095758e55f49f72e60febc9e2656982f",
+    "ARM9_sha256": "9e1cdb0100ec5207fab7fd00766099f204673ca69e465c94c3638da76f0ba940",
+    "COMMON_sha256": "1cd04ca5e22ea6f1742505941cb22a3e93975a2a6f2f76842f9630369d51134b",
+    "release_proof": "releases\\all_routes_editorial_20261124_nagasaki_tavern_recruitment_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "60d6957a75ce48f0980afa61d45089c86065be7b321845d2fa9bebf4709c8321",
+    "startup_proof": "releases\\all_routes_editorial_20261124_nagasaki_tavern_recruitment_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "615511bfe4ca520f422fd070dad49342108a0e56d831f7d016ef2802ce13b5a0",
+    "snapshot": {
+      "path": ".codex-release-work\\nagasaki_tavern_recruitment_20261124\\startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "941496b02f08c5f5746587fb95472939d64dfdbb6838448cddc5b467ed33c6ed",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "proof_sources": [
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_destination_lists_20261123.json",
+      "sha256": "def9c3b81bd0b31cbf1f7f5c650636a6a20a6d505f96b03e6201aac91f3c1d1c"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_battery_fields_20261124.json",
+      "sha256": "577b726c6e937600916ecd54347290cc15d40cde232f495a18835b0d849c4e1f"
+    },
+    {
+      "path": "releases/all_routes_editorial_20261124_nagasaki_tavern_recruitment_candidate/verification/registered_release_verification.json",
+      "sha256": "60d6957a75ce48f0980afa61d45089c86065be7b321845d2fa9bebf4709c8321"
+    }
+  ],
+  "new_gameplay": false,
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

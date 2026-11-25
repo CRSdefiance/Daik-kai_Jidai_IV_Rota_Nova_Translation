@@ -1,0 +1,9 @@
+# Fleet targeting and victory dialogue
+
+The current registered candidate reached Search Mode, an unidentified-faction declaration, a duel with James Clifford, a flagship capture, and the victory and reward notices. The emulator used the original controls after cold booting with a copied Copenhagen save. Only 40 bytes for the player fleet’s position changed before the encounter. The underlying fleet, combat, and reward logic ran normally. The final gold notice stayed open at the end of the replay. [Gameplay trace and exact text references](../translations/editorial_checkpoints/SharedText_20261110_v1/fleet_attack_shared_20261121_v1.json)
+
+Keep Clifford’s wording in COMMON 2205. It carries the surprise, scoff, and personal boast of the Japanese. This replay showed the old formatter splitting “they can beat me?” across the final two rows. A follow-up candidate verifies the intact phrase in the original portrait. The other seven held dialogue and reward records have individual retention notes. [Original break](../work/fleet_attack_shared_20261121/attack/capture/frame_006120_cold_boot.png) · [Registered correction](editorial_clifford_declaration_wrap_registered_20261121.md)
+
+The 22 paired shared-text requests covered 18 distinct records. Neither the stored “Choose an opponent to attack” nor “Allied city. Cannot attack.” appeared. This records the unidentified-fleet path. The allied-city refusal still needs a distinct trigger. All 276 open records retained their exact text and storage references in the current World Map candidate. [Display worklist](../translations/editorial_checkpoints/SharedText_20261110_v1/shared_display_worklist_20261121_v3.json)
+
+Checkpoint cleanup removed the byte-identical 262,266-byte emulator save copy. The replay source, captures, and registered ROMs remain available. [Cleanup receipt](../work/fleet_attack_shared_20261121/attack/checkpoint_cleanup.json)

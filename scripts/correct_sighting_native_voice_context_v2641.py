@@ -1,0 +1,18 @@
+"""Correct two CPU sample identities;reuse unchanged2700 matrix and other13 proofs."""
+from pathlib import Path
+from copy import deepcopy
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.current_common_native_context_v2620b import CurrentContext
+from scripts.verify_sighting_fonts_v2637 import speech
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/sighting_fonts_v2641');OLD=Path('work/analysis/sighting_fonts_v2637b/current2700_native_wrap_and_font_reconciliation.json');DOC=Path('translations/sighting_contextual_editorial_manuscript_v1.json')
+if __name__=='__main__':
+ ctx=CurrentContext(DOC,'out/all_routes_combined_v1775_candidate.nds',ROOT);prior=read(OLD);proof=deepcopy(prior);context=read(read(DOC)['native_context_proof']);corrected=[]
+ for n in[614,622]:
+  row=next(r for r in proof['all15_original_role1_speech_pipelines']if r['message_ID']==n);sample=next(r for r in proof['all15_complete_native_cases']if r['message_ID']==n);table=0x02118560 if n==614 else 0x02118540;actor=next(c for t in context['voice_tables']if t['table']==table for c in t['all207_original_actor_choices']if c['actor_ID']==18);assert actor['message_ID']==n and actor['source_voice']==0;assert not row['CPU_only_voice_fixture'].get('no_roster_fixture',False)
+  native=ctx.execute(speech,1,table,[bytes.fromhex(sample['bearing_hex']),bytes.fromhex(sample['faction_hex'])]);assert native['loaded_template_hex']==ctx.entries[n].text.hex()and native['formatted_hex']==sample['formatted_hex']==row['native_pipeline']['formatted_hex'];row.update(native_pipeline=native,original_actor_choice=actor,CPU_only_voice_fixture=dict(no_roster_fixture=True,actual_logical_actor=18),corrected_from_previous_alternative_actor=next(r['original_actor_choice']['actor_ID']for r in prior['all15_original_role1_speech_pipelines']if r['message_ID']==n));corrected.append(n)
+ assert sum(r['CPU_only_voice_fixture'].get('no_roster_fixture',False)for r in proof['all15_original_role1_speech_pipelines'])==2
+ for a,b in zip(proof['all15_original_role1_speech_pipelines'],prior['all15_original_role1_speech_pipelines'],strict=True):
+  if a['message_ID']not in corrected:assert a==b
+ for key in['cases','all15_complete_native_cases','fresh_current_native_full_font_samples','all30_native_cold_warm_copies','review_sheets','invalid_compiler_inputs_rejected']:assert proof[key]==prior[key]
+ proof.update(pipeline_plan=str(ctx.proof_path),pipeline_plan_sha256=sha(ctx.proof_path.read_bytes()),inherited_other13_pipeline_plan=prior['pipeline_plan'],inherited_other13_pipeline_plan_sha256=prior['pipeline_plan_sha256'],supersedes_native_speech_fixture_scope=str(OLD),supersedes_native_speech_fixture_scope_sha256=sha(OLD.read_bytes()),corrected_unchanged_Charles18_pipeline_IDs=corrected,unchanged_2700_matrix_15font_planes_30copies_and_other13_pipelines_hash_bound=True,scope='Corrected current CPU sample identity:614/622 now execute original role1 on unchanged Charles18 RAM,with no duty fixture. Remaining13 alternative-voice pipelines and all2700 printf/wrap/independent-plane cases,15complete native fonts and30copies inherit the exact frozen current V2284 proof by hash without needless rerun. No text,model,ROM,provider,font,wrap,actual capture or coverage count changes. Two actual logical-speaker samples plus13 one-byte CPU alternatives are now directly evidenced.',producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False);save(ROOT/'native_font_proof.json',proof);print('614/622 now execute unchanged Charles18;13other pipelines and2700matrix/font/copy evidence preserved exactly;zero coverage or ROM change.')

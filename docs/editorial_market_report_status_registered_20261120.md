@@ -1,0 +1,7 @@
+# Market Info headings and route chart punctuation
+
+Market Info now shows full **Type**, **Status**, **Growth** and **Arms** headings. The panel reads the correct glyphs from the shared atlas and displays the Status value beside its heading. The native slot fits the full eight letters of **Shortage**. The route chart uses regular parentheses, question marks and percent signs while keeping every original argument. [Exact decisions](../releases/all_routes_editorial_20261120_market_report_status_candidate/verification/registered_review.json)
+
+The paired Lisbon replay checked four display states. It also checked both World Map selection modes and the return to Market. The hidden-information example supplied one original information bit, then restored it before the ordinary known-town report. Offline tests cover 114 town headings, 101 percentage values, five unknown fields and 14 status cases. [Before and after](../releases/all_routes_editorial_20261120_market_report_status_candidate/verification/town_chart_report.png) · [Replay and atlas checks](../releases/all_routes_editorial_20261120_market_report_status_candidate/verification/verification.json)
+
+The clean-input patch rebuilds the complete candidate byte for byte. Six startup frames, 24 protected getters and 30 focused tests passed. Two tests with optional historical inputs skipped. [Registered candidate and patch](../releases/all_routes_editorial_20261120_market_report_status_candidate/README.md)

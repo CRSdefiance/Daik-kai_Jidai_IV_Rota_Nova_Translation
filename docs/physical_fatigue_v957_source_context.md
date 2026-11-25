@@ -1,0 +1,3 @@
+# V957: next physical fatigue source contexts
+
+Thirteen condition1 comments1781-1793 mapped through original helpers1250C/12584/12494 and main12104. All75 direct/main battle/ordinary selections and25 healthy-helper no-message controls pass over21 NPCs and four genuine protagonist states. The original getter reads actor byte6;only that condition byte and declared CPU mode fields change in research. Job-role and mood getters are not called. Sera24 retains special1793. Prior genuine V928 Manuel RAM reproduces1788 without any new field changes;this is not a new V954 gameplay claim. IC1783 still needs source-specific expansion review. No prose,font or completion credit.1066 complete,1069 source/prose reviewed;full goal and separate graphics audit remain open.

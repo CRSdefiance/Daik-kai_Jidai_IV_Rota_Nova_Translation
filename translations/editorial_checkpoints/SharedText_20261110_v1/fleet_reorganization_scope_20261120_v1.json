@@ -1,0 +1,508 @@
+{
+  "candidate_sha256": "ef1a7548a192f5a9b2bf291263e8e5b193c934e71a295594c4b6723da4457702",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "exact_original_scope": {
+    "exact_dependencies": [
+      {
+        "start": 33923708,
+        "end": 33924392,
+        "sha256": "46a16066e1144373d701e408187350b7a2a386163492883e7f13ce56f4f32de3"
+      },
+      {
+        "start": 33815196,
+        "end": 33815200,
+        "sha256": "379bec29dccd0a93c94826144d7ef6e42fab64ef195a3b8313a16926f66f388f"
+      },
+      {
+        "start": 33803392,
+        "end": 33803472,
+        "sha256": "f3bfda3e5197f30efd9ae484803b8b14e38cc806fc4729698b6cf80cac7140bc"
+      }
+    ],
+    "sole_direct_clean_and_current_calls": [
+      [
+        "ARM9 section 0",
+        33923868,
+        "arm_bl"
+      ],
+      [
+        "ARM9 section 0",
+        33923868,
+        "arm_bl"
+      ]
+    ],
+    "original_debt_stub": 33815196,
+    "original_immediate_return": true
+  },
+  "isolated_reorganization_choices_with_shortfall": [
+    {
+      "picker_result": 64,
+      "apply_ships": false,
+      "edit_orders": false,
+      "calls": [
+        [
+          "reorganize_picker",
+          64
+        ]
+      ],
+      "source_fixture_wallet": 897400,
+      "supplied_gold": 37,
+      "supplied_fleet_expenses": 100500,
+      "wallet_and_finance_unchanged": true
+    },
+    {
+      "picker_result": 57,
+      "apply_ships": false,
+      "edit_orders": false,
+      "calls": [
+        [
+          "reorganize_picker",
+          57
+        ],
+        [
+          "ship_editor_return",
+          false
+        ]
+      ],
+      "source_fixture_wallet": 897400,
+      "supplied_gold": 37,
+      "supplied_fleet_expenses": 100500,
+      "wallet_and_finance_unchanged": true
+    },
+    {
+      "picker_result": 57,
+      "apply_ships": true,
+      "edit_orders": false,
+      "calls": [
+        [
+          "reorganize_picker",
+          57
+        ],
+        [
+          "ship_editor_return",
+          true
+        ],
+        [
+          "orders_question",
+          283
+        ]
+      ],
+      "source_fixture_wallet": 897400,
+      "supplied_gold": 37,
+      "supplied_fleet_expenses": 100500,
+      "wallet_and_finance_unchanged": true
+    },
+    {
+      "picker_result": 57,
+      "apply_ships": true,
+      "edit_orders": true,
+      "calls": [
+        [
+          "reorganize_picker",
+          57
+        ],
+        [
+          "ship_editor_return",
+          true
+        ],
+        [
+          "orders_question",
+          283
+        ],
+        [
+          "open_orders",
+          57
+        ]
+      ],
+      "source_fixture_wallet": 897400,
+      "supplied_gold": 37,
+      "supplied_fleet_expenses": 100500,
+      "wallet_and_finance_unchanged": true
+    }
+  ],
+  "actual_reorganization_states": [
+    {
+      "frame": 9640,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    },
+    {
+      "frame": 10840,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    },
+    {
+      "frame": 13540,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    },
+    {
+      "frame": 16240,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    },
+    {
+      "frame": 16540,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    },
+    {
+      "frame": 16840,
+      "company_gold": 897400,
+      "occupied_slots": 1,
+      "fleet_active": true
+    }
+  ],
+  "retained_records": [
+    {
+      "id": "COMMON_MESSAGE_280",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 4,
+        "offset": 1880,
+        "copy_end": 1908,
+        "bytes": 28,
+        "record_index": 23,
+        "table_offset": 1317696,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 1784,
+        "copy_end": 1815,
+        "bytes": 29,
+        "record_index": 42,
+        "table_offset": 1317696,
+        "start_in_record": 0
+      },
+      "source_hex": "95d290ac82b782e98acd91e082f0914982f182c582ad82be82b382a2",
+      "current_hex": "43686f6f7365206120666c65657420746f2072656f7267616e697a652e",
+      "source_Japanese": "編成する艦隊を選んでください",
+      "speaker": "System",
+      "english": "Choose a fleet to reorganize.",
+      "source_meaning": "Choose which fleet to reorganize.",
+      "localization_note": "The short instruction identifies the operation and prepares the player to select an existing fleet.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_283",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "source_reference": {
+        "block": 4,
+        "offset": 1976,
+        "copy_end": 2012,
+        "bytes": 34,
+        "record_index": 24,
+        "table_offset": 1317702,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 1890,
+        "copy_end": 1925,
+        "bytes": 34,
+        "record_index": 46,
+        "table_offset": 1317702,
+        "start_in_record": 0
+      },
+      "source_hex": "95d290ac82b582bd8acd91e082cc96bd97df82f095cf8d5882b582dc82b782a98148",
+      "current_hex": "4368616e6765207468697320666c6565742773206f72646572733f20202020202020",
+      "source_Japanese": "編成した艦隊の命令を変更しますか？",
+      "speaker": "System",
+      "english": "Change this fleet's orders?",
+      "source_meaning": "The players are asked whether to change the reorganized fleet's orders.",
+      "localization_note": "The direct question follows the fleet edit and prepares both responses without implying that any orders already changed.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "FLEET_SHIP_EDITOR_CONFIRMATION",
+      "file_path": "/__arm9__.bin",
+      "source_reference": {
+        "offset": 1387440,
+        "pointer_field": 675876
+      },
+      "current_reference": {
+        "offset": 1387440,
+        "pointer_field": 675876
+      },
+      "source_Japanese": "これでよろしいですか？",
+      "source_hex": "82b182ea82c582e682eb82b582a282c582b782a98148",
+      "current_hex": "49732074686973206f6b61793f",
+      "speaker": "System",
+      "english": "Is this okay?",
+      "source_meaning": "Does the player approve the current ship arrangement?",
+      "localization_note": "The ships and Yes/No choices are still visible. The short confirmation fits the question in the clean Japanese.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "actual_ready_holds": [
+    {
+      "frame": 11440,
+      "message_ID": 280,
+      "text": "Choose a fleet to reorganize.",
+      "complete_glyphs": 292,
+      "image": {
+        "frame": 11440,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_011440_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6a78aee076989bfdeb3bc3d59c3a62d0c7d128a0118e0cb23a217f4c184f4de1",
+        "framebuffer_sha256": "2e581fb2446bf9b9efa0c937f494f1d38712a374d663a91d6ea1034c6c5c1ded"
+      }
+    },
+    {
+      "frame": 14140,
+      "message_ID": 280,
+      "text": "Choose a fleet to reorganize.",
+      "complete_glyphs": 292,
+      "image": {
+        "frame": 14140,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_014140_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "6a78aee076989bfdeb3bc3d59c3a62d0c7d128a0118e0cb23a217f4c184f4de1",
+        "framebuffer_sha256": "2e581fb2446bf9b9efa0c937f494f1d38712a374d663a91d6ea1034c6c5c1ded"
+      }
+    },
+    {
+      "frame": 13240,
+      "message_ID": 283,
+      "text": "Change this fleet's orders?",
+      "complete_glyphs": 283,
+      "image": {
+        "frame": 13240,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_013240_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "294e9151dcdf2edbbb675fdeb5e56844340f3f2b499788e1a1b8a0af2ff67b35",
+        "framebuffer_sha256": "29e19bf4922a2cbe06cdf9e3207ff967448dae04e8c38ccd3c4525035c21bce7"
+      }
+    },
+    {
+      "frame": 15940,
+      "message_ID": 283,
+      "text": "Change this fleet's orders?",
+      "complete_glyphs": 283,
+      "image": {
+        "frame": 15940,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_015940_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "294e9151dcdf2edbbb675fdeb5e56844340f3f2b499788e1a1b8a0af2ff67b35",
+        "framebuffer_sha256": "29e19bf4922a2cbe06cdf9e3207ff967448dae04e8c38ccd3c4525035c21bce7"
+      }
+    },
+    {
+      "frame": 12940,
+      "message_ID": null,
+      "text": "Is this okay?",
+      "complete_glyphs": 126,
+      "image": {
+        "frame": 12940,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_012940_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "cbaffb9752a06897d06f23a139aa9c2577ef6448828b313a7faed3fc69d0f6b7",
+        "framebuffer_sha256": "5a30d3f0a08c1907bdff7f4befdaff467e40a0383274ee5627920ca6149bcc83"
+      }
+    },
+    {
+      "frame": 15640,
+      "message_ID": null,
+      "text": "Is this okay?",
+      "complete_glyphs": 126,
+      "image": {
+        "frame": 15640,
+        "path": "work\\fleet_reorganization_20261120\\capture\\frame_015640_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "cbaffb9752a06897d06f23a139aa9c2577ef6448828b313a7faed3fc69d0f6b7",
+        "framebuffer_sha256": "5a30d3f0a08c1907bdff7f4befdaff467e40a0383274ee5627920ca6149bcc83"
+      }
+    }
+  ],
+  "game_transitions": {
+    "ordinary_decline_to_Fleet_Setup": 13540,
+    "ordinary_accept_to_orders": 16240,
+    "back_to_Fleet_Setup": 16540,
+    "back_to_Shipyard": 16840
+  },
+  "actual_requests": [
+    {
+      "frame": 9011,
+      "PC": 33903244,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 9011,
+      "PC": 33895668,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 11150,
+      "PC": 33903244,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 11150,
+      "PC": 33895668,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 12959,
+      "PC": 33903244,
+      "message_ID": 283,
+      "caller_LR": 33900160
+    },
+    {
+      "frame": 12959,
+      "PC": 33895668,
+      "message_ID": 283,
+      "caller_LR": 33900160
+    },
+    {
+      "frame": 13852,
+      "PC": 33903244,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 13852,
+      "PC": 33895668,
+      "message_ID": 280,
+      "caller_LR": 33900236
+    },
+    {
+      "frame": 15660,
+      "PC": 33903244,
+      "message_ID": 283,
+      "caller_LR": 33900160
+    },
+    {
+      "frame": 15660,
+      "PC": 33895668,
+      "message_ID": 283,
+      "caller_LR": 33900160
+    }
+  ],
+  "storage_lead_284": {
+    "message_ID": 284,
+    "kind": "legacy",
+    "file_path": "/COMMON/MESFILE.DK4",
+    "source_reference": {
+      "block": 4,
+      "offset": 2012,
+      "copy_end": 2084,
+      "bytes": 69,
+      "record_index": 25,
+      "table_offset": 1317704,
+      "start_in_record": 1
+    },
+    "current_reference": {
+      "block": 4,
+      "offset": 1925,
+      "copy_end": 1995,
+      "bytes": 69,
+      "record_index": 47,
+      "table_offset": 1317704,
+      "start_in_record": 0
+    },
+    "source_hex": "82bb82cc8acd91e082cd90d48e9a82c582b781428acd91e082cc8ed88be082f00a95d48dcf82c582ab82e982d982c782cc8f8a8e9d8be082aa82a082e882dc82b982f18149",
+    "current_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669657720697473207573652c206f726967696e2c20616e642076616c75652e0a20202020202020202020",
+    "current_allocation_bytes": 70,
+    "draft": {
+      "path": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\legacy_dialogue_review_20261115_v1.json",
+      "sha256": "eb78e2c085ae3f6ebc3089dd7745da56487cca4a2ec718f0d65b2ea9e5c739f2",
+      "english": "This fleet is operating at a loss. You can't afford to pay its debt.",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    "independent_gallery_draw_sources": [],
+    "other_COMMON_display_paths": "unverified",
+    "established_display_scope": "Legacy dialogue with remaining display questions"
+  },
+  "other_possible_callers_open": true,
+  "installed_ROM_bytes_changed": false,
+  "evidence": {
+    "work\\fleet_reorganization_20261120\\capture\\capture_report.json": "72d019aa3d261d3acfbdb6daa51fbed3b2daae663122db34a7a536d58dc40b39",
+    "work\\fleet_reorganization_20261120\\observer\\requests.json": "925a768b2c7ef40d5cd04ba7ab1114ac4477ab05837b57ad893316648529989a",
+    "work\\fleet_debt_disband_20261115_v1\\fleet\\capture\\capture_report.json": "f5e19b2081ad3c96602b5aeadb3363d47bd7f8317eb482169e03202fe61cc4dd",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\fleet_debt_disband_20261115_v2.json": "34fb4e870a71f6bbbc2823ea2e9ae279ebb68eee87ef81fc7c6dd41961b23e6d",
+    "translations\\editorial_checkpoints\\SharedText_20261110_v1\\fleet_disband_shortfall_20261120_v1.json": "df3670060c3776052b94fe843480df19820e2ff25eba42026ee40036493ce1e5",
+    "work\\fleet_reorganization_20261120\\capture\\navigation_command_journal.json": "52516def242d4f4c7e14a626d31ed177672b60bd7e740c8b8c9ff0b879cff18a",
+    "work\\fleet_reorganization_20261120\\observer\\source_contract.json": "868b0e85a7eb3b50fe46a90d1ce610c6e4fa029b25aa3388185c162c3873c515",
+    "work\\fleet_reorganization_20261120\\capture\\frame_009640_arm9_ram.bin": "09abcc2e9751faecad5942490eea4714b04d9237a45d8d1590369f1cc4d0c577",
+    "work\\fleet_reorganization_20261120\\capture\\frame_010840_arm9_ram.bin": "f2768dd9a282d3461181736b350e0face2264409d2c8ae23ece9cef390abce22",
+    "work\\fleet_reorganization_20261120\\capture\\frame_013540_arm9_ram.bin": "d189a77b21cfdc8d3c73a7a29a4bd4ee002bc37aed3b81ae565041dc3a767134",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016240_arm9_ram.bin": "59eaa0a7c5213aa00e3dd6b0cc26267fcb871de878add232d97b6f555a7ebdb6",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016540_arm9_ram.bin": "e8415b8becc971dac2e68930a856e6d8fb622423b5756b494a4b356935f7a27f",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016840_arm9_ram.bin": "264dee31b07ff60af82bb030c3a80fe479b3c463653e665a5d99745c09c1e4c3",
+    "work\\fleet_reorganization_20261120\\capture\\frame_011440_navigation.png": "6a78aee076989bfdeb3bc3d59c3a62d0c7d128a0118e0cb23a217f4c184f4de1",
+    "work\\fleet_reorganization_20261120\\capture\\frame_014140_navigation.png": "6a78aee076989bfdeb3bc3d59c3a62d0c7d128a0118e0cb23a217f4c184f4de1",
+    "work\\fleet_reorganization_20261120\\capture\\frame_013240_navigation.png": "294e9151dcdf2edbbb675fdeb5e56844340f3f2b499788e1a1b8a0af2ff67b35",
+    "work\\fleet_reorganization_20261120\\capture\\frame_015940_navigation.png": "294e9151dcdf2edbbb675fdeb5e56844340f3f2b499788e1a1b8a0af2ff67b35",
+    "work\\fleet_reorganization_20261120\\capture\\frame_012940_navigation.png": "cbaffb9752a06897d06f23a139aa9c2577ef6448828b313a7faed3fc69d0f6b7",
+    "work\\fleet_reorganization_20261120\\capture\\frame_015640_navigation.png": "cbaffb9752a06897d06f23a139aa9c2577ef6448828b313a7faed3fc69d0f6b7",
+    "work\\fleet_reorganization_20261120\\capture\\frame_013540_navigation.png": "19b22c6d37cd4bd9fb05807915315e3222a99c8dddae3b8fe4fea276d5edf32e",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016240_navigation.png": "92b04583fc9a4f40ac74abb57c9d42de8c2f50f0615f048b3d89871e9edc59fe",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016540_navigation.png": "19b22c6d37cd4bd9fb05807915315e3222a99c8dddae3b8fe4fea276d5edf32e",
+    "work\\fleet_reorganization_20261120\\capture\\frame_016840_final.png": "79638c308527d72f662ac058127404034cb4d2570f39ae199c3c7f5e7ba86d5e"
+  },
+  "new_editorial_credit": 0,
+  "new_gameplay_runs": 1,
+  "hardware": false,
+  "full_goal_complete": false
+}

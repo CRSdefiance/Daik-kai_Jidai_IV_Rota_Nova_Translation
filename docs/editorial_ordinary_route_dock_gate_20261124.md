@@ -1,0 +1,7 @@
+# Route travel and the Missionary slot
+
+The ordinary nearby-port selection excludes slot 114. The other approach path takes its request value from the active fleet’s route object. The installed route-ready method at ARM9 0x020896EC compares the stored route target with the current route edge’s endpoint. The request at 0x02078174 can use that target only when the comparison passes. The original, installed, and resident instructions match. The stock vtable was found on 63 initialized fleet rows. One row had a null route pointer. [Earlier ordinary Copenhagen trace](editorial_riga_palace_and_copenhagen_20261124.md) · [Exact code and runtime object evidence](../translations/editorial_checkpoints/shared_display_20261123/alternate_route_dock_gate_20261124.json)
+
+All 354 directed endpoints in the live 177-edge graph are ordinary town slots 0–89. Offline native calls checked the matching target, a supplied Missionary value of 114, and a wrong travel phase for each endpoint. Two additional calls checked the no-route sentinel. All 1,064 checks matched, including rejection of slot 114 on every valid directed endpoint. [Native results](../translations/editorial_checkpoints/shared_display_20261123/alternate_route_dock_gate_20261124.json)
+
+The existing focused test verifies the **To: Missionary** display. The ordinary source investigation now excludes both checked approach paths. Other producers or copies of an existing slot 114 remain open. [Missionary display fixture](editorial_missionary_destination_registered_20261123.md)

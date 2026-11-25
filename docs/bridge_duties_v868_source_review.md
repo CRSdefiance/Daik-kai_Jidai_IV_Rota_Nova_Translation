@@ -1,0 +1,3 @@
+# V868: bridge duties source review
+
+V868 source/prose-reviews28 captain/first-mate/helm comments1471-1498:24 proposed revisions and4 retentions. All54 original role selections,50 current/clean IC pronoun expansions,and native First Mate/Xien terms pass. Drafts restore strongest-fleet resolve,support behind the scenes,the captain/first-mate jokes,full hard-starboard acceptance,safe-sailing effort,enemy-fire evasion and wheel-skill demonstration. Native font/layout,registered integration and actual scenes remain pending. V863 remains current;756 complete,787 source/prose reviewed. Older750-752 and all unreviewed shared/routes/player prose/raw coverage remain;separate graphics/all18 plaques and later older-record re-audit stay open;full goal active.

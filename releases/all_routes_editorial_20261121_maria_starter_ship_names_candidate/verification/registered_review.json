@@ -1,0 +1,445 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "review_gates": [
+    "naturalness",
+    "formatting",
+    "localization",
+    "source",
+    "context"
+  ],
+  "records": [
+    {
+      "id": "SHIP_DESIGN_147",
+      "file_path": "/__arm9__.bin",
+      "model_ID": 147,
+      "speaker": "Ship name",
+      "clean_Japanese": "春申",
+      "previous_English": "Chun",
+      "english": "Chunshen",
+      "decision": "revision",
+      "source_meaning": "Named junk in Maria's starting fleet, Chunshen in Mandarin pinyin.",
+      "context": "Starting fleet slot 1. The hull class remains Junk.",
+      "localization_note": "Use both syllables of the Chinese proper name. Chun omitted the second character.",
+      "source_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423592,
+        "exact_hex": "8f74905c00"
+      },
+      "current_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423592,
+        "exact_hex": "4368756e00"
+      },
+      "staged_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423584,
+        "exact_hex": "4368756e7368656e00",
+        "allocation_bytes": 16
+      },
+      "reclaimed_reference": {
+        "source_pointer_field": 1187616,
+        "source_pointer": 34978016,
+        "current_pointer": 37256776,
+        "source_text": "配下",
+        "before_hex": "947a89ba000000004368756e00000000"
+      },
+      "review": {
+        "naturalness": true,
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true
+      },
+      "registered_reference": {
+        "pointer_field": 1171676,
+        "offset": 1423584,
+        "exact_hex": "4368756e7368656e00",
+        "allocation_bytes": 16,
+        "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05"
+      }
+    },
+    {
+      "id": "SHIP_DESIGN_148",
+      "file_path": "/__arm9__.bin",
+      "model_ID": 148,
+      "speaker": "Ship name",
+      "clean_Japanese": "華昌",
+      "previous_English": "Hua",
+      "english": "Huachang",
+      "decision": "revision",
+      "source_meaning": "Named junk in Maria's starting fleet, Huachang in Mandarin pinyin.",
+      "context": "Starting fleet slot 2. The hull class remains Junk.",
+      "localization_note": "Use both syllables of the Chinese proper name. Hua omitted the second character.",
+      "source_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "89d88fb900"
+      },
+      "current_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "48756100"
+      },
+      "staged_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "4875616368616e6700",
+        "allocation_bytes": 16
+      },
+      "reclaimed_reference": {
+        "source_pointer_field": 1188384,
+        "source_pointer": 34978280,
+        "current_pointer": 37257120,
+        "source_text": "怪物",
+        "before_hex": "487561000000000089f695a800000000"
+      },
+      "review": {
+        "naturalness": true,
+        "formatting": true,
+        "context": true,
+        "source": true,
+        "localization": true
+      },
+      "registered_reference": {
+        "pointer_field": 1171720,
+        "offset": 1423840,
+        "exact_hex": "4875616368616e6700",
+        "allocation_bytes": 16,
+        "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05"
+      }
+    }
+  ],
+  "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05",
+  "parent_sha256": "b414eab1a89d0943f3f4b00f2f31e9844226b0684efd51d3266604ff046d6727",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "e62063f3fd512ba7dae4400fd26928c201a402da29279fc9e6a330617477b1f4",
+  "status": "registered",
+  "new_contextual_credit": 0,
+  "encoder": "dialogue-relocatable-v1",
+  "checked_story_format_guard": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "work\\analysis\\Rafael557_story_percent_relocation_v1_20261105\\qualification.json",
+      "sha256": "64a6d76f245b64cdf1fbcd6c5c562c26fe79092a2eb9ec2d224099630a30db13"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "releases\\all_routes_editorial_20261114_alexandria_cooking_candidate\\verification\\source25_current_qualification.json",
+      "sha256": "0bf45fe9a36ce20fbb3c62ed768449fa6b98c80adcc32db573498fc597cebe7a"
+    }
+  },
+  "observed_gameplay": {
+    "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05",
+    "parent_sha256": "b414eab1a89d0943f3f4b00f2f31e9844226b0684efd51d3266604ff046d6727",
+    "checked_model_IDs": [
+      147,
+      148
+    ],
+    "ordinary_controls": true,
+    "prepared_system_unlock": true,
+    "hardware": false,
+    "sell_name_masks": [
+      {
+        "text": "Hua",
+        "bounds": [
+          12,
+          7,
+          30,
+          18
+        ],
+        "ink_pixels": 46,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Hua",
+        "bounds": [
+          32,
+          193,
+          50,
+          204
+        ],
+        "ink_pixels": 46,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Huachang",
+        "bounds": [
+          12,
+          7,
+          60,
+          18
+        ],
+        "ink_pixels": 115,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Huachang",
+        "bounds": [
+          32,
+          193,
+          80,
+          204
+        ],
+        "ink_pixels": 115,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "sell_surroundings_and_return_exact": true,
+    "unchanged_hull": {
+      "text": "Junk",
+      "bounds": [
+        204,
+        7,
+        228,
+        18
+      ],
+      "ink_pixels": 53,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "remodel_selected_and_list_masks": {
+      "selected": "Chunshen",
+      "complete_name": {
+        "text": "Chunshen",
+        "bounds": [
+          12,
+          7,
+          60,
+          18
+        ],
+        "ink_pixels": 109,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "hull": {
+        "text": "Junk",
+        "bounds": [
+          204,
+          7,
+          228,
+          18
+        ],
+        "ink_pixels": 53,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "visible_list": [
+        {
+          "text": "Chunshen",
+          "bounds": [
+            32,
+            193,
+            80,
+            204
+          ],
+          "ink_pixels": 109,
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "Huachang",
+          "bounds": [
+            32,
+            229,
+            80,
+            240
+          ],
+          "ink_pixels": 115,
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "all_ink_and_blank_cells_exact": true
+        }
+      ]
+    },
+    "evidence": {
+      "work\\shipyard_fleet_ui_20261121\\maria\\current_shipyard\\capture_report.json": "3bbd283f89c5b3b61db43205cd1c8aa3703aeebd4740616d3c5f2f454838d74b",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_shipyard\\capture_report.json": "cd815f455fabcb5bf3c93d407c521d2de4570e5b6b944a235165668b3abc11b8",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_remodel\\capture_report.json": "322d60ca6f16320a8b8701de5e66bd92d22f0479b843ae3b598fdd71b2a5e5aa",
+      "work\\shipyard_fleet_ui_20261121\\maria\\current_shipyard\\frame_032800_cold_boot.png": "20660c4610415be71c0919af3a4ec484ea0efba92fb464c5bed3c468317dd642",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_shipyard\\frame_032800_cold_boot.png": "7e379c80aa88ce4ea3aaf1db6b1e83c5d47c8d28ae84b8585916aa4088f6866f",
+      "work\\shipyard_fleet_ui_20261121\\maria\\current_shipyard\\frame_033400_cold_boot.png": "8f644c4986a9debb9b2e8516dd4149c3002ed7637b5791ef99562277ccedfae9",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_shipyard\\frame_033400_cold_boot.png": "8f644c4986a9debb9b2e8516dd4149c3002ed7637b5791ef99562277ccedfae9",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_remodel\\frame_034000_cold_boot.png": "836f695e3fe66e3a7f722baae8947ab9517990a2943d8125a79acaff69c76bfc",
+      "work\\shipyard_fleet_ui_20261121\\maria\\staged_remodel\\frame_034300_final.png": "b5c9f94ccdd234f021ae97ecd65788bf6281442b20d287ec1af84aba64f4c972"
+    },
+    "sheets": {
+      "work\\shipyard_fleet_ui_20261121\\maria\\maria_starter_names_shipyard.png": "f6c52ac64188027b655e69cfc1d1b4c149d06c487c09e9f4ad7d4157cd2ed1d9"
+    }
+  },
+  "original_model_getters": {
+    "candidate_sha256": "a5ba5e7ecfbb1956f623affece6a03a39d03647d92de91415e7c633eb8445f05",
+    "parent_sha256": "b414eab1a89d0943f3f4b00f2f31e9844226b0684efd51d3266604ff046d6727",
+    "catalogue_classes": 39,
+    "initialized_models": 155,
+    "changed_model_name_fields": [
+      0,
+      4,
+      147,
+      148
+    ],
+    "previous_fleet": [
+      {
+        "slot": 0,
+        "stock_model_ID": 147,
+        "stock_address": 36564728,
+        "active_model_address": 36544148,
+        "text": "Chun",
+        "class_ID": 28,
+        "original_slot_hex": "844e130200150000"
+      },
+      {
+        "slot": 1,
+        "stock_model_ID": 148,
+        "stock_address": 36564868,
+        "active_model_address": 36544708,
+        "text": "Hua",
+        "class_ID": 28,
+        "original_slot_hex": "844e130204150000"
+      }
+    ],
+    "staged_fleet": [
+      {
+        "slot": 0,
+        "stock_model_ID": 147,
+        "stock_address": 36564728,
+        "active_model_address": 36544148,
+        "text": "Chunshen",
+        "class_ID": 28,
+        "original_slot_hex": "844e130200150000"
+      },
+      {
+        "slot": 1,
+        "stock_model_ID": 148,
+        "stock_address": 36564868,
+        "active_model_address": 36544708,
+        "text": "Huachang",
+        "class_ID": 28,
+        "original_slot_hex": "844e130204150000"
+      }
+    ],
+    "previews": [
+      {
+        "id": "SHIP_DESIGN_147",
+        "font_width": 48,
+        "first_and_last_glyph_complete": true,
+        "native_text_storage_bytes": 9,
+        "single_row_offline_preview": true
+      },
+      {
+        "id": "SHIP_DESIGN_148",
+        "font_width": 48,
+        "first_and_last_glyph_complete": true,
+        "native_text_storage_bytes": 9,
+        "single_row_offline_preview": true
+      }
+    ],
+    "evidence": {
+      "work\\shipyard_fleet_ui_20261121\\maria\\current_opening\\capture_report.json": "3b57df004f55dded1b0d13532a49fb3f127b2dd25f0607ea142be25d39805fac",
+      "work\\shipyard_fleet_ui_20261121\\maria\\current_opening\\final_arm9_ram.bin": "b2f50729b22a4509b3323c00f875c71ce5b6f9b42d008d1f2f1edc79dfc7aa82",
+      "work\\shipyard_fleet_ui_20261121\\maria\\startup\\capture\\capture_report.json": "44f6239d2609ef35b37b12d9d78ae951557e78300441bf179e827bff27c39358",
+      "work\\shipyard_fleet_ui_20261121\\maria\\startup\\capture\\final_arm9_ram.bin": "c4b7e372fba10bcfe6131a67c193b84cdc4df256c4879f457116edaa72b3abeb"
+    },
+    "sheets": {
+      "work\\shipyard_fleet_ui_20261121\\maria\\maria_starter_names_native.png": "83bbd6e89af8da44b2699c22049f5040020d7af0e159cfaebb2094e37e71fffc"
+    },
+    "ordinary_opening": true,
+    "prepared_system_unlock": true,
+    "natural_unlock": false,
+    "hardware": false
+  },
+  "direct_visual_review": {
+    "work\\shipyard_fleet_ui_20261121\\maria\\maria_starter_names_shipyard.png": "f6c52ac64188027b655e69cfc1d1b4c149d06c487c09e9f4ad7d4157cd2ed1d9",
+    "work\\shipyard_fleet_ui_20261121\\maria\\maria_starter_names_native.png": "83bbd6e89af8da44b2699c22049f5040020d7af0e159cfaebb2094e37e71fffc"
+  },
+  "unchanged_pending_records": 276,
+  "shared_storage_scope": {
+    "pending_records": 276,
+    "exact_payloads_and_locations": true,
+    "evidence_sha256": "153e37be4b02932f02edd037aac2fc52407848a7b30eae8800e664be72a0d4b9"
+  }
+}

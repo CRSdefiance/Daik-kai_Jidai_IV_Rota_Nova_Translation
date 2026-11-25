@@ -1,0 +1,9 @@
+# Port favors and guild searches
+
+Reviewed 135 turns in 24 complete story blocks across all four routes. The ledger records 31 wording revisions, 1 wrap-only revisions and 103 justified retentions. Rafael's guild wants Julian brought in. Lil's guild wants his whereabouts. The revised exchanges also keep Gabriel's unpaid tab as a running joke and preserve Lil and Maria's different responses to Peralonso. Seven records in Hodram B266 and Maria B233 retain separate clean and current command indices. [Exact review ledger](../releases/all_routes_editorial_20261118_port_favors_and_searches_candidate/verification/registered_review.json)
+
+All 33 revised pages passed native layout checks and visual review. An initialized DeSmuME test confirmed that Rafael's description of Julian keeps the allegation about Spain on the first page and the report about courier work on the second. Another run covered Maria's original tavern meeting and resumed the host scene. Other scenes were checked offline. Natural activation and hardware remain unverified. Six cold-boot holds, 24 protected names and 32 targeted tests passed. [Tavern replay](../releases/all_routes_editorial_20261118_port_favors_and_searches_candidate/verification/live_1.png) [Rafael pagination](../releases/all_routes_editorial_20261118_port_favors_and_searches_candidate/verification/rafael_pagination_live_1.png)
+
+The clean-input patch reconstructs the candidate byte for byte and preserves all 114 accepted layers. Main retains its accepted build. The credited total stays at 27,700 with 276 pending shared keys. [Candidate and patch](../releases/all_routes_editorial_20261118_port_favors_and_searches_candidate/README.md)
+
+The next 132 clean and current story turns are staged under work/followup_favors_source_20261118. They cover SC0 B279–285, SC1 B267–273, SC2 B265–271 and SC3 B239–245.

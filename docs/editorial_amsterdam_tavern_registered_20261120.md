@@ -1,0 +1,7 @@
+# Amsterdam Tavern conversation review
+
+Wanda’s offer is a question that matches the Yes and No choices. The toast keeps her quick name check and the friendly intent of getting acquainted. The revised invitation and toast fit on one line for Lil. Longer tested names carry “Glad we met.” intact onto a second line. Nine existing records have individual reasons for retaining their wording. [Source and current references](../releases/all_routes_editorial_20261120_amsterdam_tavern_candidate/verification/registered_review.json)
+
+The ordinary Lil replay exercised both drink responses, two local rumors and the returns to the Tavern menu. The registered predecessor also showed the whole Jewelry Shop referral with “aren’t you?” together. Offline native checks covered 35 pages, including ASCII and mixed-width name substitutions. Unvisited Tavern options and hardware remain open. [Native pages](../releases/all_routes_editorial_20261120_amsterdam_tavern_candidate/verification/native_pages.png) · [Before and after](../releases/all_routes_editorial_20261120_amsterdam_tavern_candidate/verification/tavern_comparison.png)
+
+Six startup holds and 24 protected name getters passed. Thirty focused tests passed and two optional historical cases skipped. The patch rebuilds the candidate exactly from clean input. The existing review count is still 27,700 with 276 mapped shared entries open. [Registered candidate](../releases/all_routes_editorial_20261120_amsterdam_tavern_candidate/README.md)

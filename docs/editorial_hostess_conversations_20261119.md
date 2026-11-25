@@ -1,0 +1,7 @@
+# Tavern hostess conversations
+
+The 31 source-bound reviews cover introductions, ordinary conversation, special gifts and city-specific replies. Four revised turns preserve Julia’s fado, the younger siblings waiting at home, the calming garden routine and the challenge to keeping women at home. Twenty-seven retentions preserve the individual voices and the three formatter signatures. [Exact review ledger](../releases/all_routes_editorial_20261119_hostess_conversations_candidate/verification/registered_review.json)
+
+All 273 name and layout cases were checked through the original formatter. The four revised pages passed native glyph, wrapping, bounds and visual checks. An ordinary Lisbon Tavern replay from an existing save verified Julia’s nameplate, her greeting with Hodram’s name, three full displays of the revised fado reply, and the return to town. The other three revised replies received offline checks. Hardware remains unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261119_hostess_conversations_candidate/verification)
+
+Only four reviewed COMMON slots change. The clean-input patch rebuilds the ROM byte for byte. Six startup holds, 24 protected name getters and 49 focused tests passed, with two optional older ROM fixture tests skipped. The dialogue tally remains 27,700 and the 276 open shared entries retain their positions and contents. [Candidate and patch](../releases/all_routes_editorial_20261119_hostess_conversations_candidate/README.md)

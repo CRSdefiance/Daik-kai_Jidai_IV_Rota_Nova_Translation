@@ -1,0 +1,1822 @@
+{
+  "candidate_sha256": "4a6659a7953d3932a6d14d4c547144c87a1bea8999f9a7d423cc2f0f51a2e21a",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "authoritative_release": {
+    "path": "releases/all_routes_editorial_20261124_lisbon_purser_refit_candidate/verification/registered_release_verification.json",
+    "sha256": "3a06724f6ac7acc1addd8584f113dae71aeecb77b3f60dac40e3fe54fe69d124"
+  },
+  "earlier_system_review": {
+    "path": "translations/editorial_checkpoints/SharedText_20261110_v1/retail_exit_scope_20261119_v1.json",
+    "sha256": "8158a52a682d54b1ea3a3f2cd12a60d5104335e902e3af9675913e469377e843"
+  },
+  "earlier_archived_inventory": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/ceuta_archived_dialogue_current_20261124.json",
+    "sha256": "976a73eae56d96e7de98ab28d8ea96bab9ee9206d4d24fb2720e1d7593b35e73"
+  },
+  "installed_and_resident_spans": {
+    "System popup and Quit helper": {
+      "start": 33815200,
+      "end": 33815616,
+      "bytes": "f04f2de964d04de24c619fe514508de20540a0e30f00b6e80f00a5e8014054e2fbffff1a8bfdffeb080090e5000050e30400001a87fdffeb0c0090e5010050e30000a00318008d050500a0e30c419fe50c519fe50190a0e30070a0e302a0a0e38cb0a0e30480a0e304008de508008de20b10a0e1602702eb04109de514008de20720a0e10730a0e100808de5064900eb0060a0e108008de24f2702eb040056e306f18f90230000ea030000ea110000ea1a0000ea1d0000ea1e0000ea0500a0e10710a0e110708de5e13e02eb0400a0e110108de242fcffeb000050e30200000a10009de5000050e3547084150500a0e1ab3f02eb100000ea0500a0e10710a0e1d33e02eb0400a0e155fcffeb000050e30500a0e154a08415a13f02eb060000ea100000eb000050e354708415020000ea1a0000eb000000ea0790a0e1000059e364d08d02f08fbd08540094e5010050e3c5ffff0a64d08de2f08fbde81855110268962702a417310200402de904d04de220109fe50100a0e3541091e5010051e304d08d120080bd180c009fe58e5200eb04d08de20080bde8689627023f010000",
+      "sha256": "afc13a25714ef05f2d4ea99765cf57a90f96d6d14200da258a0e92aa169a135a"
+    },
+    "Session getter and literal": {
+      "start": 33812728,
+      "end": 33812740,
+      "bytes": "00009fe51eff2fe168962702",
+      "sha256": "0f9cbdcfcd384d59844f70b6707e4900f4d8633987e376453c5901ee5bca5881"
+    },
+    "Two scene constructors": {
+      "start": 34145484,
+      "end": 34145600,
+      "bytes": "1cc09fe50130a0e300c080e5043080e5081080e50c2080e50010a0e31c1080e51eff2fe1f0c4140218309fe50020a0e3003080e5042080e5082080e50c1080e51c2080e51eff2fe1f0c4140230402de904d04de2c8209fe50040a0e1002084e50020a0e3042084e50100a0e3080084e50c1084e5",
+      "sha256": "84882a207a8c9560e98fac9e54b0beb95eb9a5cb4e30d7c50f660e7b2ea14d18"
+    },
+    "Scene dispatch and phase reset": {
+      "start": 34146008,
+      "end": 34146096,
+      "bytes": "10402de90040a0e1082094e5000052e30200000a010052e30200000a020000ea1d0000eb000000ea0a0000eb4a00a0e30010a0e3280801eb0000a0e310109fe5440084e5541091e5010051e30100a0031080bde868962702",
+      "sha256": "59befde6522bad229e87c3877abade0172efa619f86679bd852be9845b4b0193"
+    },
+    "Native Yes/No entry": {
+      "start": 33900140,
+      "end": 33900172,
+      "bytes": "0f002de900402de904d04de208009de5020300eb08208de20010a0e10300c2e3",
+      "sha256": "3596767641950de8b92bc0e8f0deba212ce4708932cb6aae5d4bf42b3245799f"
+    }
+  },
+  "system_branch_instructions": {
+    "33815240": [
+      "ldr",
+      "r0, [r0, #8]"
+    ],
+    "33815244": [
+      "cmp",
+      "r0, #0"
+    ],
+    "33815256": [
+      "ldr",
+      "r0, [r0, #0xc]"
+    ],
+    "33815260": [
+      "cmp",
+      "r0, #1"
+    ],
+    "33815268": [
+      "streq",
+      "r0, [sp, #0x18]"
+    ],
+    "33815488": [
+      "bl",
+      "#0x203fc08"
+    ],
+    "33815576": [
+      "ldr",
+      "r1, [r1, #0x54]"
+    ],
+    "33815580": [
+      "cmp",
+      "r1, #1"
+    ],
+    "33815592": [
+      "ldr",
+      "r0, [pc, #0xc]"
+    ],
+    "33815596": [
+      "bl",
+      "#0x205466c"
+    ],
+    "34145496": [
+      "str",
+      "r3, [r0, #4]"
+    ],
+    "34145500": [
+      "str",
+      "r1, [r0, #8]"
+    ],
+    "34145584": [
+      "str",
+      "r2, [r4, #4]"
+    ],
+    "34145592": [
+      "str",
+      "r0, [r4, #8]"
+    ],
+    "34146016": [
+      "ldr",
+      "r2, [r4, #8]"
+    ],
+    "34146020": [
+      "cmp",
+      "r2, #0"
+    ],
+    "34146028": [
+      "cmp",
+      "r2, #1"
+    ]
+  },
+  "observed_startup_words": [
+    1,
+    54
+  ],
+  "tested_header_partitions": {
+    "scene_type": "zero or nonzero",
+    "scene_argument": "one or other",
+    "quit_phase": "one or other",
+    "accept": "false or true"
+  },
+  "clean_and_installed_identical_matrix": [
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 0,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 0,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 1,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 0,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 1,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 0,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 1,
+      "select_again_after_decline": true
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 1,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [
+        319
+      ],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 3,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 4,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 5,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2147483647,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 2147483648,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": false,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    },
+    {
+      "scene_type": 4294967295,
+      "scene_argument": 4294967295,
+      "phase": 4294967295,
+      "accepted": true,
+      "first_menu_save_flag": 1,
+      "offered_COMMON": [],
+      "resulting_phase": 0,
+      "select_again_after_decline": false
+    }
+  ],
+  "live_startup_template": {
+    "original_modal_entry": 33900404,
+    "native_lookup": [
+      319
+    ],
+    "text_pointer": 36243212,
+    "complete_template_hex": "51756974207468652067616d653f00"
+  },
+  "exact_source_and_current": {
+    "318": {
+      "source_hex": "82b182cc8366815b835e82cd8374834683418366815b835e82c582b70a8351815b838082f09286926682b782e982c60a8366815b835e82cd8eb882ed82ea82dc82b782aa0a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "このデータはフェアデータです\nゲームを中断すると\nデータは失われますが\nよろしいですか？",
+      "current_hex": "546869732069732065786869626974696f6e20646174612e2082686620796f752071756974207468652067616d652c2074686520646174612077696c6c206265206c6f73742e2050726f636565643f",
+      "english": "This is exhibition data. Ｉf you quit the game, the data will be lost. Proceed?"
+    },
+    "319": {
+      "source_hex": "8351815b838082f09286926682b582dc82b70a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "ゲームを中断します\nよろしいですか？",
+      "current_hex": "51756974207468652067616d653f",
+      "english": "Quit the game?"
+    }
+  },
+  "disposition": {
+    "COMMON_318": "Excluded from the in-game System Quit dispatcher in all tested branch classes.",
+    "other_display_paths_open": true,
+    "archived_storage_exact_on_latest": [
+      284,
+      318,
+      750,
+      751,
+      752
+    ]
+  },
+  "ordinary_gameplay": false,
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

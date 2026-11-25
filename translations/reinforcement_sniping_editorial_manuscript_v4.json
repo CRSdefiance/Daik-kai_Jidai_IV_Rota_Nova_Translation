@@ -1,0 +1,1151 @@
+{
+  "format": "dk4-natural-dialogue-source-manuscript-v2",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "consumer_layout_profile": "reinforcement-sniping-native-post-expansion-35x4-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": false,
+  "status": "six-faction-successors-source-prose-native-and-visual-reviewed-not-integrated",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1775_candidate.nds",
+  "current_ROM_sha256": "6bc6b6bb01f9ea0e763ee1d6c4c3f2bcb1c7c8cca3be3dd54bd43903045cb55a",
+  "current_COMMON_sha256": "d0d4b5bacdba74bc2b12ace086c27f2fad352a2c88b7eac150a086b728b2f4c2",
+  "current_ARM9_sha256": "500b7d6cea559d7252ae4e67f94540e67739428823a17cf26842b6827712a41e",
+  "native_context_proof": "work\\analysis\\reinforcement_sniping_v1022b\\source_context_packet.json",
+  "native_context_proof_sha256": "f73c574befccd238024a151fd2871f52773ced9be117f242138cbd949a6b2688",
+  "source_context_supplement": "work\\analysis\\reinforcement_sniping_v1023\\compact_name_and_source_meaning_supplement.json",
+  "source_context_supplement_sha256": "b7639fb476b12f7fead264a3cf994e8139638050a965100989221fc322274f9b",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1911",
+      "message_id": 1911,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 0,1,3",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        0,
+        1,
+        3
+      ],
+      "representative_actor_IDs": [
+        4,
+        16,
+        7
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！\n%sの艦隊が\n我々に加勢してくれるようです！",
+      "source_hex": "92f193c281490a257382cc8acd91e082aa0a89e4815882c989c190a882b582c482ad82ea82e982e682a482c582b78149",
+      "source_reference": {
+        "message_id": 1911,
+        "block": 20,
+        "table_offset": 1320958,
+        "block_offset": 3616,
+        "copy_end": 3664,
+        "record_index": 95,
+        "start": 60,
+        "end": 108
+      },
+      "canonical_source_hex": "92f193c281490a257382cc8acd91e082aa0a89e4815882c989c190a882b582c482ad82ea82e982e682a482c582b78149",
+      "current_reference": {
+        "message_id": 1911,
+        "block": 20,
+        "table_offset": 1320958,
+        "block_offset": 5879,
+        "copy_end": 5933,
+        "record_index": 155,
+        "start": 0,
+        "end": 53
+      },
+      "current_text_hex": "2041646d6972616c21204974206c6f6f6b73206c696b65206120666c6565742066726f6d2025732077696c6c2068656c7020757321",
+      "current_English": " Admiral! It looks like a fleet from %s will help us!",
+      "source_meaning": "The speaker politely tells the admiral that a fleet belonging to the named faction apparently will assist our side.",
+      "english": "Admiral! It looks like ships from %s will help us!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c21204974206c6f6f6b73206c696b652073686970732066726f6d2025732077696c6c2068656c7020757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_1912",
+      "message_id": 1912,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 2",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！\n%sの艦隊が\n手を貸してくれるよ！",
+      "source_hex": "92f193c281490a257382cc8acd91e082aa0a8ee882f091dd82b582c482ad82ea82e982e68149",
+      "source_reference": {
+        "message_id": 1912,
+        "block": 20,
+        "table_offset": 1320960,
+        "block_offset": 3664,
+        "copy_end": 3704,
+        "record_index": 95,
+        "start": 108,
+        "end": 146
+      },
+      "canonical_source_hex": "92f193c281490a257382cc8acd91e082aa0a8ee882f091dd82b582c482ad82ea82e982e68149",
+      "current_reference": {
+        "message_id": 1912,
+        "block": 20,
+        "table_offset": 1320960,
+        "block_offset": 5933,
+        "copy_end": 5981,
+        "record_index": 156,
+        "start": 0,
+        "end": 47
+      },
+      "current_text_hex": "2041646d6972616c21204120666c6565742066726f6d20257320697320636f6d696e6720746f2068656c7020757321",
+      "current_English": " Admiral! A fleet from %s is coming to help us!",
+      "source_meaning": "The speaker tells the admiral in a casual,upbeat voice that the named faction fleet will give us a hand.",
+      "english": "Admiral! Ships from %s are coming to help us!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c212053686970732066726f6d2025732061726520636f6d696e6720746f2068656c7020757321"
+    },
+    {
+      "id": "COMMON_MESSAGE_1913",
+      "message_id": 1913,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 4",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！\n%sの艦隊が\n加勢してくれるようだ！",
+      "source_hex": "92f193c281490a257382cc8acd91e082aa0a89c190a882b582c482ad82ea82e982e682a482be8149",
+      "source_reference": {
+        "message_id": 1913,
+        "block": 20,
+        "table_offset": 1320962,
+        "block_offset": 3704,
+        "copy_end": 3744,
+        "record_index": 96,
+        "start": 1,
+        "end": 41
+      },
+      "canonical_source_hex": "92f193c281490a257382cc8acd91e082aa0a89c190a882b582c482ad82ea82e982e682a482be8149",
+      "current_reference": {
+        "message_id": 1913,
+        "block": 20,
+        "table_offset": 1320962,
+        "block_offset": 5981,
+        "copy_end": 6039,
+        "record_index": 157,
+        "start": 0,
+        "end": 57
+      },
+      "current_text_hex": "2041646d6972616c21204c6f6f6b73206c696b65206120666c6565742066726f6d202573206973206a6f696e696e67206f7572207369646521",
+      "current_English": " Admiral! Looks like a fleet from %s is joining our side!",
+      "source_meaning": "The speaker reports to the admiral that the named faction fleet appears to be joining our side,with a firm informal tone.",
+      "english": "Admiral! Looks like ships from %s are joining our side!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c21204c6f6f6b73206c696b652073686970732066726f6d20257320617265206a6f696e696e67206f7572207369646521"
+    },
+    {
+      "id": "COMMON_MESSAGE_1914",
+      "message_id": 1914,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 5",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！\n%sの艦隊が\n協力してくれるようだのう！",
+      "source_hex": "92f193c281490a257382cc8acd91e082aa0a8ba697cd82b582c482ad82ea82e982e682a482be82cc82a48149",
+      "source_reference": {
+        "message_id": 1914,
+        "block": 20,
+        "table_offset": 1320964,
+        "block_offset": 3744,
+        "copy_end": 3788,
+        "record_index": 96,
+        "start": 41,
+        "end": 85
+      },
+      "canonical_source_hex": "92f193c281490a257382cc8acd91e082aa0a8ba697cd82b582c482ad82ea82e982e682a482be82cc82a48149",
+      "current_reference": {
+        "message_id": 1914,
+        "block": 20,
+        "table_offset": 1320964,
+        "block_offset": 6039,
+        "copy_end": 6095,
+        "record_index": 158,
+        "start": 0,
+        "end": 55
+      },
+      "current_text_hex": "2041646d6972616c21204974207365656d73206120666c6565742066726f6d2025732077696c6c206c656e6420757320612068616e6421",
+      "current_English": " Admiral! It seems a fleet from %s will lend us a hand!",
+      "source_meaning": "An older speaker tells the admiral that the named faction fleet apparently will cooperate with us.",
+      "english": "Admiral! It seems ships from %s will lend us a hand!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c21204974207365656d732073686970732066726f6d2025732077696c6c206c656e6420757320612068616e6421"
+    },
+    {
+      "id": "COMMON_MESSAGE_1915",
+      "message_id": 1915,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 6",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "%sの艦隊も\n一緒に戦ってくれるんだって！",
+      "source_hex": "257382cc8acd91e082e00a88ea8f8f82c990ed82c182c482ad82ea82e982f182be82c182c48149",
+      "source_reference": {
+        "message_id": 1915,
+        "block": 20,
+        "table_offset": 1320966,
+        "block_offset": 3788,
+        "copy_end": 3828,
+        "record_index": 96,
+        "start": 85,
+        "end": 124
+      },
+      "canonical_source_hex": "257382cc8acd91e082e00a88ea8f8f82c990ed82c182c482ad82ea82e982f182be82c182c48149",
+      "current_reference": {
+        "message_id": 1915,
+        "block": 20,
+        "table_offset": 1320966,
+        "block_offset": 6095,
+        "copy_end": 6148,
+        "record_index": 159,
+        "start": 0,
+        "end": 52
+      },
+      "current_text_hex": "20492068656172206120666c6565742066726f6d2025732077696c6c20666967687420616c6f6e677369646520757320746f6f21",
+      "current_English": " I hear a fleet from %s will fight alongside us too!",
+      "source_meaning": "The youthful speaker says they hear that the named faction fleet will also fight alongside us.",
+      "english": "I hear ships from %s will fight alongside us too!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204920686561722073686970732066726f6d2025732077696c6c20666967687420616c6f6e677369646520757320746f6f21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1916",
+      "message_id": 1916,
+      "source_family": "reinforcement",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 7",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "context": "Original775EC/778D4 announcement follows the separately selected614-621 fleet-sighting/battle-preparation notice. The helper picks an existing supporting faction fleet and supplies the supporting faction objects virtual-name label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！\n%sの艦隊が\n我々に加勢してくれるようですぞ！",
+      "source_hex": "92f193c281490a257382cc8acd91e082aa0a89e4815882c989c190a882b582c482ad82ea82e982e682a482c582b782bc8149",
+      "source_reference": {
+        "message_id": 1916,
+        "block": 20,
+        "table_offset": 1320968,
+        "block_offset": 3828,
+        "copy_end": 3880,
+        "record_index": 97,
+        "start": 0,
+        "end": 50
+      },
+      "canonical_source_hex": "41646d6972616c21202573277320666c6565742077696c6c206a6f696e207573212020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1916,
+        "block": 20,
+        "table_offset": 1320968,
+        "block_offset": 6148,
+        "copy_end": 6205,
+        "record_index": 160,
+        "start": 0,
+        "end": 56
+      },
+      "current_text_hex": "2041646d6972616c21204974207365656d73206120666c6565742066726f6d20257320697320636f6d696e6720746f206f75722061696421",
+      "current_English": " Admiral! It seems a fleet from %s is coming to our aid!",
+      "source_meaning": "A politely emphatic older speaker reports to the admiral that the named faction fleet appears to be helping our side.",
+      "english": "Admiral! It seems ships from %s are coming to our aid!",
+      "localization_note": "The native faction substitution includes complete labels such as Bergstrom Fleet and Argot Co. Render the source fleet as ships from the named faction so English does not repeat a fleet from a Fleet. The original assistance,uncertainty or reported-speech tone and naval participants are preserved;no faction label is shortened. This is a collective reference to the original supporting fleet,not a change to its size or role.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "complete-faction-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c21204974207365656d732073686970732066726f6d2025732061726520636f6d696e6720746f206f75722061696421"
+    },
+    {
+      "id": "COMMON_MESSAGE_1917",
+      "message_id": 1917,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 0,3",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        0,
+        3
+      ],
+      "representative_actor_IDs": [
+        4,
+        7
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいる\n%sの艦隊が\n援護射撃してくれるようです！",
+      "source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082aa0a89878cec8ecb8c8282b582c482ad82ea82e982e682a482c582b78149",
+      "source_reference": {
+        "message_id": 1917,
+        "block": 20,
+        "table_offset": 1320970,
+        "block_offset": 3880,
+        "copy_end": 3932,
+        "record_index": 98,
+        "start": 1,
+        "end": 51
+      },
+      "canonical_source_hex": "6865206e656172627920257320666c6565742077696c6c20636f766572207573212020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1917,
+        "block": 20,
+        "table_offset": 1320970,
+        "block_offset": 6205,
+        "copy_end": 6266,
+        "record_index": 161,
+        "start": 0,
+        "end": 60
+      },
+      "current_text_hex": "204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521",
+      "current_English": " It looks like %s's nearby fleet will provide covering fire!",
+      "source_meaning": "The speaker says a nearby fleet under the named commander apparently will give us covering fire.",
+      "english": "It looks like %s's nearby fleet will provide covering fire!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521"
+    },
+    {
+      "id": "COMMON_MESSAGE_1918",
+      "message_id": 1918,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 1",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        1
+      ],
+      "representative_actor_IDs": [
+        16
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督！　近くの\n%sの艦隊が\n援護射撃してくれる模様です！",
+      "source_hex": "92f193c2814981408bdf82ad82cc0a257382cc8acd91e082aa0a89878cec8ecb8c8282b582c482ad82ea82e996cd976c82c582b78149",
+      "source_reference": {
+        "message_id": 1918,
+        "block": 20,
+        "table_offset": 1320972,
+        "block_offset": 3932,
+        "copy_end": 3988,
+        "record_index": 99,
+        "start": 1,
+        "end": 55
+      },
+      "canonical_source_hex": "646d6972616c2120546865206e656172627920257320666c6565742077696c6c0a20636f766572207573212020202020202020202020",
+      "current_reference": {
+        "message_id": 1918,
+        "block": 20,
+        "table_offset": 1320972,
+        "block_offset": 6266,
+        "copy_end": 6336,
+        "record_index": 162,
+        "start": 0,
+        "end": 69
+      },
+      "current_text_hex": "2041646d6972616c21204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521",
+      "current_English": " Admiral! It looks like %s's nearby fleet will provide covering fire!",
+      "source_meaning": "The speaker formally reports to the admiral that a nearby fleet under the named commander appears to be providing covering fire.",
+      "english": "Admiral! It looks like %s's nearby fleet will provide covering fire!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c21204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521"
+    },
+    {
+      "id": "COMMON_MESSAGE_1919",
+      "message_id": 1919,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 2",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいた\n%sの艦隊が\n手を貸してくれるよ！",
+      "source_hex": "8bdf82ad82c982a282bd0a257382cc8acd91e082aa0a8ee882f091dd82b582c482ad82ea82e982e68149",
+      "source_reference": {
+        "message_id": 1919,
+        "block": 20,
+        "table_offset": 1320974,
+        "block_offset": 3988,
+        "copy_end": 4032,
+        "record_index": 100,
+        "start": 1,
+        "end": 43
+      },
+      "canonical_source_hex": "6865206e656172627920257320666c6565742077696c6c2068656c702075732120202020202020202020",
+      "current_reference": {
+        "message_id": 1919,
+        "block": 20,
+        "table_offset": 1320974,
+        "block_offset": 6336,
+        "copy_end": 6376,
+        "record_index": 163,
+        "start": 0,
+        "end": 39
+      },
+      "current_text_hex": "2025732773206e656172627920666c6565742077696c6c206c656e6420757320612068616e6421",
+      "current_English": " %s's nearby fleet will lend us a hand!",
+      "source_meaning": "The upbeat speaker says the nearby fleet under the named commander will give us a hand.",
+      "english": "%s's nearby fleet will lend us a hand!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2025732773206e656172627920666c6565742077696c6c206c656e6420757320612068616e6421"
+    },
+    {
+      "id": "COMMON_MESSAGE_1920",
+      "message_id": 1920,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 4",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいる\n%sの艦隊が\n援護射撃してくれるらしい！\n助かった！",
+      "source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082aa0a89878cec8ecb8c8282b582c482ad82ea82e982e782b582a281490a8f9582a982c182bd8149",
+      "source_reference": {
+        "message_id": 1920,
+        "block": 20,
+        "table_offset": 1320976,
+        "block_offset": 4032,
+        "copy_end": 4092,
+        "record_index": 101,
+        "start": 1,
+        "end": 60
+      },
+      "canonical_source_hex": "6865206e656172627920257320666c6565742077696c6c20636f7665722075732e200a205768617420612072656c69656621202020202020202020",
+      "current_reference": {
+        "message_id": 1920,
+        "block": 20,
+        "table_offset": 1320976,
+        "block_offset": 6376,
+        "copy_end": 6445,
+        "record_index": 164,
+        "start": 0,
+        "end": 68
+      },
+      "current_text_hex": "204920686561722025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521205768617420612072656c69656621",
+      "current_English": " I hear %s's nearby fleet will provide covering fire! What a relief!",
+      "source_meaning": "The speaker hears that a nearby fleet under the named commander will provide covering fire,and expresses relief.",
+      "english": "I hear %s's nearby fleet will provide covering fire! What a relief!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it.",
+      "editorial_decision": "revise",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204920686561722025732773206e656172627920666c6565742077696c6c2070726f7669646520636f766572696e67206669726521205768617420612072656c69656621"
+    },
+    {
+      "id": "COMMON_MESSAGE_1921",
+      "message_id": 1921,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 5",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいる\n%sの艦隊も\n手を貸してくれるようじゃ！",
+      "source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082e00a8ee882f091dd82b582c482ad82ea82e982e682a482b682e18149",
+      "source_reference": {
+        "message_id": 1921,
+        "block": 21,
+        "table_offset": 1320978,
+        "block_offset": 0,
+        "copy_end": 48,
+        "record_index": 0,
+        "start": 0,
+        "end": 48
+      },
+      "canonical_source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082e00a8ee882f091dd82b582c482ad82ea82e982e682a482b682e18149",
+      "current_reference": {
+        "message_id": 1921,
+        "block": 20,
+        "table_offset": 1320978,
+        "block_offset": 6445,
+        "copy_end": 6496,
+        "record_index": 165,
+        "start": 0,
+        "end": 50
+      },
+      "current_text_hex": "204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2068656c7020757320746f6f21",
+      "current_English": " It looks like %s's nearby fleet will help us too!",
+      "source_meaning": "An older speaker says the named commanders nearby fleet also appears to be helping us.",
+      "english": "It looks like %s's nearby fleet will help us too!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it. The current normalized English wording already preserves those facts and reads naturally;retain the wording while removing only legacy encoding/layout debt through the mapped compiler.",
+      "editorial_decision": "retain",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204974206c6f6f6b73206c696b652025732773206e656172627920666c6565742077696c6c2068656c7020757320746f6f21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1922",
+      "message_id": 1922,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 6",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいる\n%sの艦隊が\n手伝ってくれるって！",
+      "source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082aa0a8ee8936082c182c482ad82ea82e982c182c48149",
+      "source_reference": {
+        "message_id": 1922,
+        "block": 21,
+        "table_offset": 1320980,
+        "block_offset": 48,
+        "copy_end": 92,
+        "record_index": 0,
+        "start": 48,
+        "end": 90
+      },
+      "canonical_source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082aa0a8ee8936082c182c482ad82ea82e982c182c48149",
+      "current_reference": {
+        "message_id": 1922,
+        "block": 20,
+        "table_offset": 1320980,
+        "block_offset": 6496,
+        "copy_end": 6543,
+        "record_index": 166,
+        "start": 0,
+        "end": 46
+      },
+      "current_text_hex": "204920686561722025732773206e656172627920666c6565742077696c6c206c656e6420757320612068616e6421",
+      "current_English": " I hear %s's nearby fleet will lend us a hand!",
+      "source_meaning": "The youthful speaker says they hear that the named commanders nearby fleet will help us.",
+      "english": "I hear %s's nearby fleet will lend us a hand!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it. The current normalized English wording already preserves those facts and reads naturally;retain the wording while removing only legacy encoding/layout debt through the mapped compiler.",
+      "editorial_decision": "retain",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204920686561722025732773206e656172627920666c6565742077696c6c206c656e6420757320612068616e6421"
+    },
+    {
+      "id": "COMMON_MESSAGE_1923",
+      "message_id": 1923,
+      "source_family": "covering_fire",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player First Mate or original native fallback; voice classes 7",
+      "source_speaker_role": 1,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "context": "Original70E4C announces nearby support after the original70BF8 scan finds another valid player-faction fleet and original2CE90 admits it. Fleet3697C returns its commander object;virtual20 supplies the compact commander label. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "近くにいる\n%sの艦隊も\n加勢してくれるようですぞ！",
+      "source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082e00a89c190a882b582c482ad82ea82e982e682a482c582b782bc8149",
+      "source_reference": {
+        "message_id": 1923,
+        "block": 21,
+        "table_offset": 1320982,
+        "block_offset": 92,
+        "copy_end": 140,
+        "record_index": 1,
+        "start": 1,
+        "end": 49
+      },
+      "canonical_source_hex": "8bdf82ad82c982a282e90a257382cc8acd91e082e00a89c190a882b582c482ad82ea82e982e682a482c582b782bc8149",
+      "current_reference": {
+        "message_id": 1923,
+        "block": 20,
+        "table_offset": 1320982,
+        "block_offset": 6543,
+        "copy_end": 6595,
+        "record_index": 167,
+        "start": 0,
+        "end": 51
+      },
+      "current_text_hex": "204974207365656d732025732773206e656172627920666c6565742077696c6c206a6f696e206f7572207369646520746f6f21",
+      "current_English": " It seems %s's nearby fleet will join our side too!",
+      "source_meaning": "A politely emphatic older speaker says the named commanders nearby fleet also seems to be joining our side.",
+      "english": "It seems %s's nearby fleet will join our side too!",
+      "localization_note": "Preserve the compact commander label supplied by the original native getter. Use its possessive for natural English. Keep nearby and any report/hearsay/relief/also cue. Where the source says covering fire,retain that explicit action;other assistance variants do not gain it. The current normalized English wording already preserves those facts and reads naturally;retain the wording while removing only legacy encoding/layout debt through the mapped compiler.",
+      "editorial_decision": "retain",
+      "native_argument_count": 1,
+      "native_argument_kind": "compact-commander-label",
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204974207365656d732025732773206e656172627920666c6565742077696c6c206a6f696e206f7572207369646520746f6f21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1924",
+      "message_id": 1924,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 0,1",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        0,
+        1
+      ],
+      "representative_actor_IDs": [
+        4,
+        16
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督、敵の提督を狙撃しました！\n我らの勝利です！",
+      "source_hex": "92f193c28141934782cc92f193c282f0915f8c8282b582dc82b582bd81490a89e482e782cc8f9f979882c582b78149",
+      "source_reference": {
+        "message_id": 1924,
+        "block": 21,
+        "table_offset": 1320984,
+        "block_offset": 140,
+        "copy_end": 188,
+        "record_index": 1,
+        "start": 49,
+        "end": 96
+      },
+      "canonical_source_hex": "92f193c28141934782cc92f193c282f0915f8c8282b582dc82b582bd81490a89e482e782cc8f9f979882c582b78149",
+      "current_reference": {
+        "message_id": 1924,
+        "block": 20,
+        "table_offset": 1320984,
+        "block_offset": 6595,
+        "copy_end": 6652,
+        "record_index": 168,
+        "start": 0,
+        "end": 56
+      },
+      "current_text_hex": "2041646d6972616c2c2077652776652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321",
+      "current_English": " Admiral, we've shot the enemy admiral! Victory is ours!",
+      "source_meaning": "The Lookout politely tells the admiral that the enemy admiral has been successfully shot,and declares our victory.",
+      "english": "Admiral, we've shot the enemy admiral! Victory is ours!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward. The current normalized English wording already preserves those facts and reads naturally;retain the wording while removing only legacy encoding/layout debt through the mapped compiler.",
+      "editorial_decision": "retain",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c2c2077652776652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321"
+    },
+    {
+      "id": "COMMON_MESSAGE_1925",
+      "message_id": 1925,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 2",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        2
+      ],
+      "representative_actor_IDs": [
+        9
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "やった！　敵の提督を狙撃したよ！\n勝ったんだよ！",
+      "source_hex": "82e282c182bd81498140934782cc92f193c282f0915f8c8282b582bd82e681490a8f9f82c182bd82f182be82e68149",
+      "source_reference": {
+        "message_id": 1925,
+        "block": 21,
+        "table_offset": 1320986,
+        "block_offset": 188,
+        "copy_end": 236,
+        "record_index": 2,
+        "start": 0,
+        "end": 47
+      },
+      "canonical_source_hex": "5965732120456e656d792061646d6972616c206869742120576520776f6e2120202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1925,
+        "block": 20,
+        "table_offset": 1320986,
+        "block_offset": 6652,
+        "copy_end": 6693,
+        "record_index": 169,
+        "start": 0,
+        "end": 40
+      },
+      "current_text_hex": "20596573212057652073686f742074686520656e656d792061646d6972616c2120576520776f6e21",
+      "current_English": " Yes! We shot the enemy admiral! We won!",
+      "source_meaning": "The excited Lookout celebrates successfully shooting the enemy admiral and emphatically says we have won.",
+      "english": "Yes! We shot the enemy admiral! We won!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20596573212057652073686f742074686520656e656d792061646d6972616c2120576520776f6e21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1926",
+      "message_id": 1926,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 3",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        3
+      ],
+      "representative_actor_IDs": [
+        7
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "敵の提督の狙撃に成功したわ！\n私たちの勝利よ！",
+      "source_hex": "934782cc92f193c282cc915f8c8282c990ac8cf782b582bd82ed81490a8e8482bd82bf82cc8f9f979882e68149",
+      "source_reference": {
+        "message_id": 1926,
+        "block": 21,
+        "table_offset": 1320988,
+        "block_offset": 236,
+        "copy_end": 284,
+        "record_index": 3,
+        "start": 0,
+        "end": 45
+      },
+      "canonical_source_hex": "456e656d792061646d6972616c206869742120566963746f7279206973206f7572732120202020202020202020",
+      "current_reference": {
+        "message_id": 1926,
+        "block": 20,
+        "table_offset": 1320988,
+        "block_offset": 6693,
+        "copy_end": 6738,
+        "record_index": 170,
+        "start": 0,
+        "end": 44
+      },
+      "current_text_hex": "2057652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321",
+      "current_English": " We shot the enemy admiral! Victory is ours!",
+      "source_meaning": "A confident feminine-voiced Lookout reports a successful shot at the enemy admiral and declares our victory.",
+      "english": "We shot the enemy admiral! Victory is ours!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2057652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321"
+    },
+    {
+      "id": "COMMON_MESSAGE_1927",
+      "message_id": 1927,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 4",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        4
+      ],
+      "representative_actor_IDs": [
+        5
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "敵提督の狙撃成功！\n勝ったぜ！",
+      "source_hex": "934792f193c282cc915f8c8290ac8cf781490a8f9f82c182bd82ba8149",
+      "source_reference": {
+        "message_id": 1927,
+        "block": 21,
+        "table_offset": 1320990,
+        "block_offset": 284,
+        "copy_end": 316,
+        "record_index": 4,
+        "start": 2,
+        "end": 31
+      },
+      "canonical_source_hex": "656d792061646d6972616c206869742120576520776f6e212020202020",
+      "current_reference": {
+        "message_id": 1927,
+        "block": 20,
+        "table_offset": 1320990,
+        "block_offset": 6738,
+        "copy_end": 6782,
+        "record_index": 171,
+        "start": 0,
+        "end": 43
+      },
+      "current_text_hex": "20412064697265637420686974206f6e2074686520656e656d792061646d6972616c2120576520776f6e21",
+      "current_English": " A direct hit on the enemy admiral! We won!",
+      "source_meaning": "A rough,terse Lookout announces a successful hit on the enemy admiral and says we have won.",
+      "english": "A direct hit on the enemy admiral! We won!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "20412064697265637420686974206f6e2074686520656e656d792061646d6972616c2120576520776f6e21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1928",
+      "message_id": 1928,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 5",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        5
+      ],
+      "representative_actor_IDs": [
+        6
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "提督、敵の提督への狙撃が成功じゃ！\nわしらの勝利じゃ！",
+      "source_hex": "92f193c28141934782cc92f193c282d682cc915f8c8282aa90ac8cf782b682e181490a82ed82b582e782cc8f9f979882b682e18149",
+      "source_reference": {
+        "message_id": 1928,
+        "block": 21,
+        "table_offset": 1320992,
+        "block_offset": 316,
+        "copy_end": 372,
+        "record_index": 5,
+        "start": 2,
+        "end": 55
+      },
+      "canonical_source_hex": "6d6972616c2c20656e656d792061646d6972616c206869742120576520776f6e212020202020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1928,
+        "block": 20,
+        "table_offset": 1320992,
+        "block_offset": 6782,
+        "copy_end": 6826,
+        "record_index": 172,
+        "start": 0,
+        "end": 43
+      },
+      "current_text_hex": "2041646d6972616c2c2077652073686f742074686569722061646d6972616c2120576527766520776f6e21",
+      "current_English": " Admiral, we shot their admiral! We've won!",
+      "source_meaning": "An older Lookout addresses the admiral,reports a successful shot at the enemy admiral,and declares our victory.",
+      "english": "Admiral, we shot their admiral! We've won!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2041646d6972616c2c2077652073686f742074686569722061646d6972616c2120576527766520776f6e21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1929",
+      "message_id": 1929,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 6",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        6
+      ],
+      "representative_actor_IDs": [
+        14
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "敵のていとくに弾が当たったよ！\nやった～！　おいらたち勝ったよ！",
+      "source_hex": "934782cc82c482a282c682ad82c9926582aa939682bd82c182bd82e681490a82e282c182bd81608149814082a882a282e782bd82bf8f9f82c182bd82e68149",
+      "source_reference": {
+        "message_id": 1929,
+        "block": 21,
+        "table_offset": 1320994,
+        "block_offset": 372,
+        "copy_end": 436,
+        "record_index": 6,
+        "start": 2,
+        "end": 65
+      },
+      "canonical_source_hex": "656d792061646d6972616c206869742120576520776f6e21202020202020202020202020202020202020202020202020202020202020202020202020202020",
+      "current_reference": {
+        "message_id": 1929,
+        "block": 20,
+        "table_offset": 1320994,
+        "block_offset": 6826,
+        "copy_end": 6875,
+        "record_index": 173,
+        "start": 0,
+        "end": 48
+      },
+      "current_text_hex": "204f75722073686f74206869742074686520656e656d792061646d6972616c2120486f6f7261792120576520776f6e21",
+      "current_English": " Our shot hit the enemy admiral! Hooray! We won!",
+      "source_meaning": "The childlike Lookout says a bullet hit the enemy admiral,cheers,and celebrates our victory.",
+      "english": "Our shot hit the enemy admiral! Hooray! We won!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "204f75722073686f74206869742074686520656e656d792061646d6972616c2120486f6f7261792120576520776f6e21"
+    },
+    {
+      "id": "COMMON_MESSAGE_1930",
+      "message_id": 1930,
+      "source_family": "admiral_shot",
+      "consumer": "native-speech-announcement",
+      "speaker": "Player Lookout or original native fallback; voice classes 7",
+      "source_speaker_role": 7,
+      "source_voice_classes_including_native_fallback": [
+        7
+      ],
+      "representative_actor_IDs": [
+        19
+      ],
+      "context": "Original73BA0 announces a successful Lookout shot at the enemy flagship. The original branch uses role7 stat6 above150 and its own RNG2000 comparison,before original capture/battle-resolution calls. No outcome is assigned by this review. Voice-table entries are independent alternatives,not sequential dialogue. Preserve the real current captain and actor identities. Actual scene activation and outcome verification remain pending.",
+      "source_Japanese": "敵の提督を狙撃しましたぞ！\n私たちの勝利ですな！",
+      "source_hex": "934782cc92f193c282f0915f8c8282b582dc82b582bd82bc81490a8e8482bd82bf82cc8f9f979882c582b782c88149",
+      "source_reference": {
+        "message_id": 1930,
+        "block": 21,
+        "table_offset": 1320996,
+        "block_offset": 436,
+        "copy_end": 484,
+        "record_index": 7,
+        "start": 0,
+        "end": 47
+      },
+      "canonical_source_hex": "456e656d792061646d6972616c206869742120566963746f7279206973206f75727321202020202020202020202020",
+      "current_reference": {
+        "message_id": 1930,
+        "block": 20,
+        "table_offset": 1320996,
+        "block_offset": 6875,
+        "copy_end": 6923,
+        "record_index": 174,
+        "start": 0,
+        "end": 47
+      },
+      "current_text_hex": "2057652776652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321",
+      "current_English": " We've shot the enemy admiral! Victory is ours!",
+      "source_meaning": "A politely emphatic older Lookout reports shooting the enemy admiral and declares our victory.",
+      "english": "We've shot the enemy admiral! Victory is ours!",
+      "localization_note": "Use complete natural sentences matching the Lookouts successful-shot and victory announcement. A hit or shot does not assert that the enemy admiral died. Preserve the speakers excitement,formality and address without adding an event or reward.",
+      "editorial_decision": "revise",
+      "native_argument_count": 0,
+      "native_argument_kind": null,
+      "source_native_macros": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "compiled_hex": "2057652776652073686f742074686520656e656d792061646d6972616c2120566963746f7279206973206f75727321"
+    }
+  ],
+  "native_runtime_proof": "work\\analysis\\reinforcement_sniping_v1029\\native_runtime_verification.json",
+  "native_runtime_proof_sha256": "0c11507222592cb8b53c232ec77787d17874569071f4784dc13e5d1585d5a88a",
+  "predecessor_manuscript": "translations\\reinforcement_sniping_editorial_manuscript_v2.json",
+  "predecessor_manuscript_sha256": "cb7a642cb57a77f2fed3d66325c4ee14e76d6eac867dfa30c9b880865346e1ff",
+  "registered_integration_pending": true,
+  "source_and_prose_coverage_added": 0,
+  "completed_entries_added": 0,
+  "successor_native_format_proof": "work\\analysis\\reinforcement_faction_prose_v1802\\six_paragraphs120_complete_native_cases.json",
+  "successor_native_format_proof_sha256": "70783f8b60f7d7cf3018f74b332aff8cc0d42d05937f4b93a8ae1340f993d688",
+  "successor_visual_review_proof": "work\\analysis\\reinforcement_review_v1803\\visual_and_source_review.json",
+  "successor_visual_review_proof_sha256": "c6bd3b0cc44ead3029e48bd8814547dcdd1cd91bd584dd334009e4bdca2f25fe",
+  "unchanged14_current_format_proof": "work\\analysis\\current_reinforcement_matrix_v1801d\\current694_native_wrap_and_font_reconciliation.json",
+  "unchanged14_current_format_proof_sha256": "e5deac156073f6a06bc3915b6bfbe218ea7709dc6ad447bf900fe027622092a1",
+  "predecessor_draft": "translations\\reinforcement_sniping_editorial_manuscript_v3.json",
+  "predecessor_draft_sha256": "f0fe5fa53e14d3cc8e56b40c6cf59c5ba8e9390535d72d29ccb3c9f64332c21b"
+}

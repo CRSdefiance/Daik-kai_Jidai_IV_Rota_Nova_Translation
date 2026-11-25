@@ -1,0 +1,11 @@
+# Rafael's negotiations with Pereira
+
+The full 103-record exchange has 49 wording revisions, six wrap-only fixes, two revised choice captions and 46 justified retentions. Pereira tests Rafael's commitment before discussing the two strategies for Kuhn. Rafael preserves the reason for leaving Pereira in Southeast Asia in each branch, and the political warning still concerns the royal family's claim to the throne. Five speeches now fit on one page. Pereira's two-page warning about Valdes keeps the Proof of Conquest title together and turns the page after a complete question. [Exact source and registered decisions](../releases/all_routes_editorial_20261121_rafael_spain_candidate/verification/registered_review.json)
+
+All 56 revised speech pages, six surname-width cases and four captions passed native checks and direct visual review. An initialized emulator excerpt showed both menus and their cursor movement, eight revised speech pages, the complete Valdes page turn, Rafael's reply, and the return to Lisbon. The native menu checks preserved both choice indices and cancellation. The original narrative branches and hardware remain unverified. [Native and emulator evidence](../releases/all_routes_editorial_20261121_rafael_spain_candidate/verification)
+
+Six startup holds, 24 protected name getters, 17 focused tests and exact clean-input reconstruction passed. These 103 records already carried editorial credit. [Testing ROM and patch](../releases/all_routes_editorial_20261121_rafael_spain_candidate/README.md)
+
+The Drive download matches the registered ROM. It is the folder's sole `.nds`. Cleanup removed 32 redundant files and reclaimed 401,728,717 bytes. [Latest Build on Google Drive](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view) · [Drive verification](../out/rafael_spain_registered_20261121/drive_latest_build_receipt.json) · [Cleanup receipt](../out/rafael_spain_registered_20261121/checkpoint_cleanup.json)
+
+The next four Rafael exchanges are paired to this ROM. SC0 blocks 61–64 cover the aftermath of Kuhn's defeat, the scabbard, the inn argument and the village encounter. They total 197 records from the clean Japanese and the current build. [Source and current pairs](../work/analysis/rafael_pereira_village_followup_20261121/paired_source.json)

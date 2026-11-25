@@ -1,0 +1,246 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_336",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "current_ROM_sha256": "edd692e899fc0fc3174560230d7388d52ad891099a2ff1f52812480e8735dd68",
+      "source_reference": {
+        "block": 4,
+        "offset": 3844,
+        "copy_end": 3868,
+        "bytes": 21,
+        "record_index": 56,
+        "table_offset": 1317808,
+        "start_in_record": 149
+      },
+      "current_reference": {
+        "block": 4,
+        "offset": 3870,
+        "copy_end": 3890,
+        "bytes": 19,
+        "record_index": 116,
+        "table_offset": 1317808,
+        "start_in_record": 0
+      },
+      "source_Japanese": "%sが\n%s上がりました！",
+      "current_English": "%s increased by %s!",
+      "english": "%s increased by %s!",
+      "decision": "retention",
+      "source_meaning": "The named stat increased by the supplied amount.",
+      "localization_note": "The current notice states the stat first and the exact increase second. Its exclamation matches the original announcement.",
+      "context": "One row of the stat increases shown after a character’s level-up. The game joins rows and paginates up to six.",
+      "speaker": "Stat increase notice",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "original_caller": 34071820,
+      "original_stat_name_getter": 34074328,
+      "original_amount_formatter": 34258768,
+      "original_modal": 33900348,
+      "original_substitution_count": 2,
+      "native_cases": [
+        {
+          "amounts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "arguments": [
+            {
+              "stat": "Stamina",
+              "amount": "１"
+            }
+          ],
+          "original_joined_hex": "5374616d696e6120696e63726561736564206279208250210a",
+          "formatted_hex": "205374616d696e6120696e6372656173656420627920825021",
+          "native_pages": [
+            {
+              "rows": [
+                "Stamina increased by １!"
+              ],
+              "consumed_bytes": 25,
+              "native_plane_sha256": "e2770d109b9741e9709859dbcb8591b6facaa9c2b47e26ddde429dca3410bbad"
+            }
+          ],
+          "native_loader_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              17692,
+              36235020,
+              4217
+            ]
+          ]
+        },
+        {
+          "amounts": [
+            0,
+            2,
+            0,
+            3,
+            0,
+            0
+          ],
+          "arguments": [
+            {
+              "stat": "Agility",
+              "amount": "２"
+            },
+            {
+              "stat": "Wits",
+              "amount": "３"
+            }
+          ],
+          "original_joined_hex": "4167696c69747920696e63726561736564206279208251210a5769747320696e63726561736564206279208252210a",
+          "formatted_hex": "204167696c69747920696e63726561736564206279208251210a20205769747320696e6372656173656420627920825221",
+          "native_pages": [
+            {
+              "rows": [
+                "Agility increased by ２!",
+                "Wits increased by ３!"
+              ],
+              "consumed_bytes": 49,
+              "native_plane_sha256": "6554ee052e8b15d0f1c5e599acc20fdd407c1d99f3c68ba1b7d328d6430f65f3"
+            }
+          ],
+          "native_loader_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              17692,
+              36235020,
+              4217
+            ]
+          ]
+        },
+        {
+          "amounts": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "arguments": [
+            {
+              "stat": "Stamina",
+              "amount": "３"
+            },
+            {
+              "stat": "Agility",
+              "amount": "３"
+            },
+            {
+              "stat": "Charm",
+              "amount": "３"
+            },
+            {
+              "stat": "Wits",
+              "amount": "３"
+            },
+            {
+              "stat": "Spirit",
+              "amount": "３"
+            },
+            {
+              "stat": "Luck",
+              "amount": "３"
+            }
+          ],
+          "original_joined_hex": "5374616d696e6120696e63726561736564206279208252210a4167696c69747920696e63726561736564206279208252210a436861726d20696e63726561736564206279208252210a5769747320696e63726561736564206279208252210a53706972697420696e63726561736564206279208252210a4c75636b20696e63726561736564206279208252210a",
+          "formatted_hex": "205374616d696e6120696e63726561736564206279208252210a20204167696c69747920696e63726561736564206279208252210a2020436861726d20696e63726561736564206279208252210a20205769747320696e63726561736564206279208252210a202053706972697420696e63726561736564206279208252210a20204c75636b20696e6372656173656420627920825221",
+          "native_pages": [
+            {
+              "rows": [
+                "Stamina increased by ３!",
+                "Agility increased by ３!",
+                "Charm increased by ３!",
+                "Wits increased by ３!"
+              ],
+              "consumed_bytes": 102,
+              "native_plane_sha256": "4a555366e32f745ca6196460c39ccb042135564ef1834096a5571bfa284f9c81"
+            },
+            {
+              "rows": [
+                "Spirit increased by ３!",
+                "Luck increased by ３!"
+              ],
+              "consumed_bytes": 49,
+              "native_plane_sha256": "979997e1eadee721b4661cdc520e1f33c15ab1e373e92148e33fb64fd2f3950a"
+            }
+          ],
+          "native_loader_reads": [
+            [
+              4,
+              36235012,
+              4
+            ],
+            [
+              8,
+              36243724,
+              168
+            ],
+            [
+              17692,
+              36235020,
+              4217
+            ]
+          ]
+        }
+      ],
+      "earlier_ordinary_and_maximum_gameplay": {
+        "ordinary_gameplay_proof": "work\\analysis\\levelup_format_v819\\temple_gameplay_verification.json",
+        "maximum_gameplay_proof": "work\\analysis\\levelup_format_v819\\six_stat_actual_pagination.json"
+      },
+      "new_gameplay": false,
+      "offline_native_current": true,
+      "registration_pending": false,
+      "full_goal_complete": false,
+      "new_editorial_credit": 1,
+      "registered_reference": {
+        "block": 4,
+        "offset": 3870,
+        "copy_end": 3890,
+        "bytes": 19,
+        "record_index": 116,
+        "table_offset": 1317808,
+        "start_in_record": 0,
+        "candidate_sha256": "d7d83a8bf0a7f843368462297f6cd8b2e5ee667a5664d90f8155d0d842c72c78"
+      }
+    }
+  ]
+}

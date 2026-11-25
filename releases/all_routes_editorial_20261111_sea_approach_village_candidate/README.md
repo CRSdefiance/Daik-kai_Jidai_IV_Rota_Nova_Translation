@@ -1,0 +1,7 @@
+# All Routes Sea and Village candidate
+
+Use `out/sea_approach_village_registered_20261111_v1/Translation_DS_All_Routes_Sea_And_Village_20261111_candidate.nds` beside its build manifest. The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `bcca1db3203b16df7479537a514bbc460c6e32be85857e92a5093a9d05866a21` byte for byte. Patch SHA-256 is `8a405b14d72e825d5b13ad69768e15f0110cea39bbf72f82922e389ee84aae4f`.
+
+The 67 sea approach, battle and village records are registered. The ledger now credits 26,311 reviews. The batch includes 56 revisions and 11 justified retentions. It preserves the faction names, hostile port names, original decimal arguments and choice outcomes. The revised text works when one villager comes forward, uses ordinary ASCII letters, and keeps the complete help questions together with native faction labels.
+
+The focused Inuvik emulator replay matched the native sighting and resupply lettering through docking and the original return to the village menu. It used one temporary ship-coordinate placement. The battle choices, port attacks and remaining village outcomes passed offline. All 67 stored records, 1,024 layouts, 76 release checks, 30 repository tests, the candidate's own startup, and 24 protected name getters passed. Main promotion awaits acceptance. [Gameplay proof](verification/village_gameplay_verification.json) · [Registered review](verification/registered_review.json)

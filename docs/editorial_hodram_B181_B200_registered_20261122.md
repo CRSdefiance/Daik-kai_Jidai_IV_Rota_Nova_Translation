@@ -1,0 +1,7 @@
+# Hodram's town conversations and bargaining
+
+Reviewed 284 records from clean Japanese, with 68 wording revisions, four other wrap fixes and 212 justified retentions. The bread discussion now asks whether baking it yourself makes it taste better. The established Woman and Man captions fit the tea exchange. Six market forecasts follow the same wording and fit one line. The private bargaining advice takes one page. All six prices and choice pairs keep their original terms. [Exact source and current records](../releases/all_routes_editorial_20261122_hodram_B181_B200_candidate/verification/registered_review.json)
+
+Native checks cover 498 commands, 21 speakerless panels, 12 choice captions, 37 nameplates, 72 changed pages and three additional name widths. The Charm notice fits a 16-cell name in the native renderer. Focused emulator playback verifies 65 dialogue holds, including the default name on the Charm notice, and both highlights in the first and last offer menus. The emulator excerpts use initialized town scenes. Natural event triggering, original purchase outcomes and hardware remain unvisited. [Offline and emulator evidence](../releases/all_routes_editorial_20261122_hodram_B181_B200_candidate/verification)
+
+The cumulative candidate preserves 114 accepted layers and the ASCII right-bound correction. Startup and 17 regression tests passed. The clean-input patch reconstructed the ROM byte for byte. [Testing ROM and patch](../releases/all_routes_editorial_20261122_hodram_B181_B200_candidate/README.md)

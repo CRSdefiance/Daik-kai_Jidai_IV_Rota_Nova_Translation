@@ -1,0 +1,7 @@
+# Oasis and whale reports registered
+
+All 71 oasis, discovery, shark and white-whale reports are registered. The ledger now credits 27,465 reviews. COMMON 2288–2358 covers ten native tables. The [review ledger](../releases/all_routes_editorial_20261111_oasis_and_whale_reports_candidate/verification/registered_review.json) records exact Japanese and prior English, context, individual decisions and all five gates. Fourteen linked whale records keep their previous credit. The [registered ROM and patch](../releases/all_routes_editorial_20261111_oasis_and_whale_reports_candidate/README.md) preserve the previous accepted layers and runtime fixes.
+
+The original Proof report caller now requests the registered full dialogue region name while retaining the matching item-name getter. The compact selector reuses the registered break guard and leaves previous selector behavior in place. Offline checks exercised all seven original region and artifact pairs and both ends of the figurehead width range. The emulator replay observed COMMON 2351 and 2352 with a disclosed condition setup, plus the original item presentation and sympathy follow-up before the return to sailing.
+
+511 native shared keys remain to review or classify. Continue with the connected reports at COMMON 2366–2424. Legacy New Game 104–107, Market 750–752, other player-facing prose, earlier wraps and glyphs, names and roles, and practical town and random-scene coverage remain in scope. Deferred artwork and the later older-record technical re-audit remain separate.

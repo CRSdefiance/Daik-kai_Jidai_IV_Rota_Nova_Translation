@@ -1,0 +1,5 @@
+# Trade house, Charles and Ceramic Earrings review
+
+Three Rafael exchanges and Hodram's Ceramic Earrings offer account for 119 dialogue records and four choice labels. The release has 24 wording revisions, three wrap fixes, 92 justified dialogue retentions and four exact choice-label retentions. The trader's sales pitch keeps the dancer's legend, the 9,000-coin asking price and the separate refusal branches. [Coverage ledger](../releases/all_routes_editorial_20261122_trade_house_charles_and_earrings_candidate/verification/registered_review.json)
+
+Focused cold-boot replays verified 17 dialogue pages and original nameplates. Clau's new greeting was checked with the default Rafael in the emulator and the maximum supported name width offline. Both choice objects retained their complete original command bytes. Natural story triggers, choice selection and handheld behavior remain unvisited in this batch. Startup and 17 regressions passed. [Testing ROM and exact clean-input patch](../releases/all_routes_editorial_20261122_trade_house_charles_and_earrings_candidate/README.md)

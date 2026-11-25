@@ -1,0 +1,4 @@
+"""Accept the source-observed preserved last-choice word at normal type0 return;keep failed audit."""
+from pathlib import Path
+if __name__=='__main__':
+    draft=Path('scripts/audit_lil_B164_actual_v3996.py');text=draft.read_text(encoding='utf-8');needle="selected[-1]['result_words']==[0,0]";assert text.count(needle)==1;text=text.replace(needle,"selected[-1]['result_words']==[0,option]");text=text.replace("producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False","source_and_English_type0_return_preserve_original_last_choice_second_word=True,preserved_failed_audit=str(DRAFT),preserved_failed_audit_sha256=sha(DRAFT.read_bytes()),producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False");exec(compile(text,__file__,'exec'),dict(__name__='__main__',__file__=__file__,DRAFT=draft))

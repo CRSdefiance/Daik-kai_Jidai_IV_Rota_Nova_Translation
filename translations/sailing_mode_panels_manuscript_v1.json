@@ -1,0 +1,78 @@
+{
+  "format": "dk4-generated-graphics-source-manuscript-v1",
+  "target_locale": "en-US",
+  "status": "source-context-English-and-native-format-reviewed; cold-boot-English-display-pending",
+  "candidate_source": "out/all_routes_combined_v211_candidate.nds",
+  "candidate_source_sha256": "d6cd1ecc3702d75a9f0c9e6e89a84501dbde8eb5fcaa9c6af82154716a8d5ae1",
+  "runtime_renderer": "01FFB4BC",
+  "runtime_contract": "Original renderer consumes CP932 pairs, not plain ASCII. Original fullwidth-space placement is layout evidence only. Do not overwrite with ASCII or truncate complete prose to fit the old allocation.",
+  "records": [
+    {
+      "id": "DK4_SAILING_INFO_MODE_PANEL_V1",
+      "source_address": "02147778",
+      "pointer_site": "0206F424",
+      "source_allocation_bytes_including_NUL": 141,
+      "source_japanese": "情報モード。画面上の街や船の情報を見ることができます。対象を選んでください。",
+      "heading": "Info Mode",
+      "english": "View information about the cities and ships on screen. Select a target.",
+      "context": "Pressing Y from normal Sea View opens the information mode panel; the ship/city target is selected on the lower screen.",
+      "source_meaning": "Inspect information about on-screen cities and ships, then select the object to inspect.",
+      "native_capture_frame": 17400,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true,
+        "native_English_display": false
+      },
+      "localization_note": "Preserve every instruction in natural English. Automatic wrapping uses forty six-pixel cells per native sprite row."
+    },
+    {
+      "id": "DK4_SAILING_SEARCH_MODE_PANEL_V1",
+      "source_address": "02147540",
+      "pointer_site": "0206F418",
+      "source_allocation_bytes_including_NUL": 305,
+      "source_japanese": "探索モード。Ａボタンで探索を実行します。探索の結果、水・食糧・アイテムなどが見つかることがあります。見つからなかったときは、水夫の疲労度が３上がります。探索途中で水夫が脱走したり、獣に襲われたりすることもあります。",
+      "heading": "Search Mode",
+      "english": "Press A to search. You may find water, food, items, or other supplies. If you find nothing, sailor fatigue rises by 3. Sailors may desert or be attacked by wild animals while searching.",
+      "context": "A second Y press from normal sailing selects Search Mode; the lower screen highlights the player's ship and offers A Search.",
+      "source_meaning": "A executes a search. Water, food or items may be found. Failure adds exactly 3 sailor fatigue; desertion or animal attacks can occur during searching.",
+      "localization_note": "Do not imply that desertion/animal attacks happen only after an unsuccessful search, or drop the exact fatigue increase.",
+      "native_capture_frame": 17900,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true,
+        "native_English_display": false
+      }
+    },
+    {
+      "id": "DK4_SAILING_DECLARE_WAR_MODE_PANEL_V1",
+      "source_address": "02147674",
+      "pointer_site": "0206F420",
+      "source_allocation_bytes_including_NUL": 257,
+      "source_japanese": "宣戦モード。画面上の艦隊・街に戦闘をしかけます。攻撃対象を選ぶと、戦闘開始です。宣戦すると、自動的に相手勢力との関係が交戦中になり、友好度が大きく下がります。同盟中の勢力の艦隊には宣戦できません。",
+      "heading": "Declare War Mode",
+      "english": "Select a fleet or city on screen to begin a battle. Declaring war puts you at war with that faction and greatly lowers goodwill. You cannot declare war on an allied faction's fleets.",
+      "context": "A third Y press selects Declare War Mode. Targets are fleets/cities on the lower screen; the tested empty target area displays the original no-target message separately.",
+      "source_meaning": "Selecting a fleet/city starts combat and changes faction relations to at war with a large goodwill penalty. Allied fleets cannot be targeted.",
+      "localization_note": "Preserve the source's fleet-specific alliance restriction; do not broaden it into an unsupported rule about every allied city.",
+      "native_capture_frame": 18400,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true,
+        "native_English_display": false
+      }
+    }
+  ],
+  "not_a_registered_release_layer": true,
+  "ROM_modified": false,
+  "full_goal_complete": false,
+  "translation_policy": "natural-dialogue-v2"
+}

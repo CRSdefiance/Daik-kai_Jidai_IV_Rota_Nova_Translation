@@ -1,0 +1,2222 @@
+{
+  "source_ROM": "work\\clean.nds",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "drafts": "translations\\editorial_checkpoints\\SharedText_20261110_v1\\source_first_drafts.tsv",
+  "drafts_sha256": "b364a3b0dcab4296712037b1009544df98f6fe737e9d7d89fad2bb06d1892726",
+  "group_record_ids": [
+    [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+    ],
+    [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107
+    ],
+    [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124
+    ],
+    [
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    [
+      750,
+      751,
+      752
+    ]
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_85",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 85,
+      "source_reference": {
+        "block": 0,
+        "offset": 3052,
+        "copy_end": 3076,
+        "bytes": 22,
+        "record_index": 64,
+        "table_offset": 1317306,
+        "start_in_record": 1
+      },
+      "source_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7",
+      "clean_Japanese": "約%s日の航海が可能です",
+      "independent_English": "We can sail for about %s days.",
+      "finding": "An estimate of sailing days. Keep the approximation and the number substitution.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_86",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 86,
+      "source_reference": {
+        "block": 0,
+        "offset": 3076,
+        "copy_end": 3108,
+        "bytes": 30,
+        "record_index": 65,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "source_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd",
+      "clean_Japanese": "%s月　%s日\n%s\n%sを出港しました",
+      "independent_English": "%s/%s\n%s\nDeparted %s.",
+      "finding": "The source presents a date, a standalone status substitution, and the port of departure. Preserve their sequence and separate display roles. Confirm the consumer and date formatting.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_87",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 87,
+      "source_reference": {
+        "block": 0,
+        "offset": 3108,
+        "copy_end": 3124,
+        "bytes": 14,
+        "record_index": 66,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "source_hex": "257382aa91ab82e882dc82b982f1",
+      "clean_Japanese": "%sが足りません",
+      "independent_English": "Not enough %s.",
+      "finding": "A shortage notice. The object is supplied by the caller.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_88",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 88,
+      "source_reference": {
+        "block": 0,
+        "offset": 3124,
+        "copy_end": 3148,
+        "bytes": 22,
+        "record_index": 67,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "source_hex": "93478acd91e082cd89f396c582b582dc82b582bd8149",
+      "clean_Japanese": "敵艦隊は壊滅しました！",
+      "independent_English": "The enemy fleet has been wiped out!",
+      "finding": "An outcome for the fleet as a whole.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_89",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 89,
+      "source_reference": {
+        "block": 0,
+        "offset": 3148,
+        "copy_end": 3168,
+        "bytes": 20,
+        "record_index": 68,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "source_hex": "934782cd93a682b08f6f82b582dc82b582bd8149",
+      "clean_Japanese": "敵は逃げ出しました！",
+      "independent_English": "The enemy has fled!",
+      "finding": "Keep the separate retreat outcome.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_90",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 90,
+      "source_reference": {
+        "block": 0,
+        "offset": 3168,
+        "copy_end": 3196,
+        "bytes": 25,
+        "record_index": 68,
+        "table_offset": 1317316,
+        "start_in_record": 21
+      },
+      "source_hex": "257382cc8a5882cd0a8c82946a82b382ea82dc82b582bd8163",
+      "clean_Japanese": "%sの街は\n撃破されました…",
+      "independent_English": "The city of %s has been defeated...",
+      "finding": "The city is overcome. The ellipsis and subdued tone distinguish this from a victory announcement.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_91",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 91,
+      "source_reference": {
+        "block": 0,
+        "offset": 3196,
+        "copy_end": 3220,
+        "bytes": 23,
+        "record_index": 69,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "source_hex": "257382cc8a5882cd0a8d7e959a82b582dc82b582bd8163",
+      "clean_Japanese": "%sの街は\n降伏しました…",
+      "independent_English": "The city of %s has surrendered...",
+      "finding": "Surrender is distinct from defeat. Keep the subdued tone.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_92",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 92,
+      "source_reference": {
+        "block": 0,
+        "offset": 3220,
+        "copy_end": 3280,
+        "bytes": 60,
+        "record_index": 70,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "source_hex": "8e5089ba82cc8acd91e082e682e80a8efb8e7895f18d9082aa93cd82a282c482a882e882dc82b70a82a895b782ab82c982c882e882dc82b782a98148",
+      "clean_Japanese": "傘下の艦隊より\n収支報告が届いております\nお聞きになりますか？",
+      "independent_English": "One of our fleets has sent a financial report. Would you like to hear it?",
+      "finding": "A polite offer to hear a subordinate fleet's income and expenditure report. No result is reported yet.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_93",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 93,
+      "source_reference": {
+        "block": 0,
+        "offset": 3280,
+        "copy_end": 3316,
+        "bytes": 34,
+        "record_index": 70,
+        "table_offset": 1317322,
+        "start_in_record": 60
+      },
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082f00a96438c8282b582c482a282dc82b7",
+      "clean_Japanese": "%sの街が\n%sの艦隊を\n砲撃しています",
+      "independent_English": "The city of %s is firing on %s's fleet.",
+      "finding": "The city is the attacker and the named fleet is the target. Preserve argument order.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_94",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 94,
+      "source_reference": {
+        "block": 0,
+        "offset": 3316,
+        "copy_end": 3356,
+        "bytes": 38,
+        "record_index": 71,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "source_hex": "257382cc8a5882aa0a8a4391af257382cc8f508c8282f00a8ef382af82c482a282dc82b78149",
+      "clean_Japanese": "%sの街が\n海賊%sの襲撃を\n受けています！",
+      "independent_English": "%s is under attack by the pirate %s!",
+      "finding": "The town is the target, and the named pirate is the attacker. The final English must keep the native argument order unless positional substitution is proved.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_95",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 95,
+      "source_reference": {
+        "block": 0,
+        "offset": 3356,
+        "copy_end": 3408,
+        "bytes": 52,
+        "record_index": 72,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "source_hex": "257382c5257382aa0a257382f091e597ca82c9948482e882b382ce82ab0a83568346834182f08a6791e582b582dc82b582bd8149",
+      "clean_Japanese": "%sで%sが\n%sを大量に売りさばき\nシェアを拡大しました！",
+      "independent_English": "In %s, %s sold a large shipment of %s and increased their market share!",
+      "finding": "The three values are the port, seller and commodity in that order. The sales increased market share.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_96",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 96,
+      "source_reference": {
+        "block": 0,
+        "offset": 3408,
+        "copy_end": 3444,
+        "bytes": 35,
+        "record_index": 72,
+        "table_offset": 1317328,
+        "start_in_record": 53
+      },
+      "source_hex": "257382cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd8149",
+      "clean_Japanese": "%sのシェアが\n下がってしまいました！",
+      "independent_English": "Our market share in %s has fallen!",
+      "finding": "The share fell. Check that the caller supplies a place and whose share is implied.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_98",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 98,
+      "source_reference": {
+        "block": 0,
+        "offset": 3460,
+        "copy_end": 3492,
+        "bytes": 32,
+        "record_index": 74,
+        "table_offset": 1317332,
+        "start_in_record": 1
+      },
+      "source_hex": "93fc8ee88dcf82dd82cc834183438365838082aa82a082e882dc82b982f18142",
+      "clean_Japanese": "入手済みのアイテムがありません。",
+      "independent_English": "You haven't acquired any items yet.",
+      "finding": "An empty acquired-item list. This need not describe carried inventory.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_99",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 99,
+      "source_reference": {
+        "block": 0,
+        "offset": 3492,
+        "copy_end": 3520,
+        "bytes": 28,
+        "record_index": 74,
+        "table_offset": 1317334,
+        "start_in_record": 33
+      },
+      "source_hex": "94ad8ca98dcf82dd82cc88e290d582aa82a082e882dc82b982f18142",
+      "clean_Japanese": "発見済みの遺跡がありません。",
+      "independent_English": "You haven't discovered any ruins yet.",
+      "finding": "An empty discovery list.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_100",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 100,
+      "source_reference": {
+        "block": 0,
+        "offset": 3520,
+        "copy_end": 3556,
+        "bytes": 34,
+        "record_index": 74,
+        "table_offset": 1317336,
+        "start_in_record": 61
+      },
+      "source_hex": "93be88d382c88b5a945c82f0825282c2914991f082b582c482ad82be82b382a28142",
+      "clean_Japanese": "得意な技能を３つ選択してください。",
+      "independent_English": "Choose three skills to specialize in.",
+      "finding": "Select exactly three strengths.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_101",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 101,
+      "source_reference": {
+        "block": 0,
+        "offset": 3556,
+        "copy_end": 3588,
+        "bytes": 29,
+        "record_index": 75,
+        "table_offset": 1317338,
+        "start_in_record": 1
+      },
+      "source_hex": "2573814125738141257382c50a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "%s、%s、%sで\nよろしいですか？",
+      "independent_English": "Are you happy with %s, %s, and %s?",
+      "finding": "Confirmation of the three chosen skills in order.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_102",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 102,
+      "source_reference": {
+        "block": 0,
+        "offset": 3588,
+        "copy_end": 3628,
+        "bytes": 37,
+        "record_index": 76,
+        "table_offset": 1317340,
+        "start_in_record": 2
+      },
+      "source_hex": "82618266826c82c68cf889ca89b982cc89b997ca0a82f090dd92e882c582ab82dc82b78142",
+      "clean_Japanese": "ＢＧＭと効果音の音量\nを設定できます。",
+      "independent_English": "Adjust the volume of the music and sound effects.",
+      "finding": "An options description covering both audio channels.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_103",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 103,
+      "source_reference": {
+        "block": 0,
+        "offset": 3628,
+        "copy_end": 3656,
+        "bytes": 26,
+        "record_index": 77,
+        "table_offset": 1317342,
+        "start_in_record": 2
+      },
+      "source_hex": "926190b693fa82f093fc97cd82b582c482ad82be82b382a28142",
+      "clean_Japanese": "誕生日を入力してください。",
+      "independent_English": "Enter your birthday.",
+      "finding": "A short setup prompt. The field owner depends on the screen.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_104",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 104,
+      "source_reference": {
+        "block": 0,
+        "offset": 3656,
+        "copy_end": 3772,
+        "bytes": 113,
+        "record_index": 78,
+        "table_offset": 1317344,
+        "start_in_record": 1
+      },
+      "source_hex": "91448fe682e882c99499915282c693b282ea82e90a837c838b8367834b838b82cc8fad944e81420a9746906c82c982bb82bb82cc82a982b382ea82c40a8a4382c98f6f82e982b182c682c982c882e981420a8f8982df82c48376838c834382b782e995fb82c90a82a882b782b782df8142",
+      "clean_Japanese": "船乗りに漠然と憧れる\nポルトガルの少年。\n友人にそそのかされて\n海に出ることになる。\n初めてプレイする方に\nおすすめ。",
+      "independent_English": "A Portuguese boy who dreams of life at sea. A friend talks him into setting sail. Recommended for first-time players.",
+      "finding": "His wish is initially vague, and a friend encourages him. The recommendation addresses the player.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_105",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 105,
+      "source_reference": {
+        "block": 0,
+        "offset": 3772,
+        "copy_end": 3888,
+        "bytes": 115,
+        "record_index": 79,
+        "table_offset": 1317346,
+        "start_in_record": 2
+      },
+      "source_hex": "8dc493c697a782f089ca82bd82b582bd0a835883458346815b8366839382cc92f193c281420a8a438c5282c682cd96bc82ce82a982e882cc0a8e8497a98acd91e082f097a682a282e981420a8ea98d9182cc8acd91e082f090a28a458dc58bad0a82c982b782d782ad8a8893ae82b782e98142",
+      "clean_Japanese": "再独立を果たした\nスウェーデンの提督。\n海軍とは名ばかりの\n私掠艦隊を率いる。\n自国の艦隊を世界最強\nにすべく活動する。",
+      "independent_English": "An admiral from newly independent Sweden. He leads a privateer fleet that's a navy in name only. He aims to make Sweden's fleet the strongest in the world.",
+      "finding": "Sweden has regained its independence. Preserve the distinction between a navy in name and a privateer fleet in practice.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_106",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 106,
+      "source_reference": {
+        "block": 0,
+        "offset": 3888,
+        "copy_end": 3988,
+        "bytes": 99,
+        "record_index": 80,
+        "table_offset": 1317348,
+        "start_in_record": 0
+      },
+      "source_hex": "8fa48db082bd82ad82dc82b582a20a834983898393835f82cc8fad8f9781420a976382c882b682dd82cc918a965f834a837e838b0a82c682c682e082c981410a88ea8af8976782b082e682a482c60a90a28a4582cc8a4382c994f282d18f6f82b78142",
+      "clean_Japanese": "商魂たくましい\nオランダの少女。\n幼なじみの相棒カミル\nとともに、\n一旗揚げようと\n世界の海に飛び出す。",
+      "independent_English": "A Dutch girl with a head for business. She sets sail to make her mark with her childhood friend and partner, Camille.",
+      "finding": "Camille is her childhood friend and partner. The goal is to make a name for herself, with no invented romance or rank.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_107",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 107,
+      "source_reference": {
+        "block": 1,
+        "offset": 0,
+        "copy_end": 116,
+        "bytes": 113,
+        "record_index": 0,
+        "table_offset": 1317350,
+        "start_in_record": 0
+      },
+      "source_hex": "98609b8482c98bea82b582df82e782ea82e90a906c815882f08ee782e982bd82df82c90a8d91964082c582a082e98dbd8d9190ad8df482f00a82a082a682c496b38e8b82b581410a8e8490dd8acd91e082f097a682a282c490ed82a40a96be816982dd82f1816a82cc8f9792f193c28142",
+      "clean_Japanese": "倭寇に苦しめられる\n人々を守るために\n国法である鎖国政策を\nあえて無視し、\n私設艦隊を率いて戦う\n明（みん）の女提督。",
+      "independent_English": "A Ming admiral who defies her country's isolation policy and leads a private fleet to protect people from wokou pirates.",
+      "finding": "Preserve the Ming setting, the policy's force of law, her deliberate decision, the private fleet and the people she defends.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_108",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 108,
+      "source_reference": {
+        "block": 1,
+        "offset": 116,
+        "copy_end": 220,
+        "bytes": 104,
+        "record_index": 1,
+        "table_offset": 1317352,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームデータをセーブする空きブロックが\n４つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "independent_English": "Saving game data requires four free blocks. You won't be able to save as things stand. Start the game anyway?",
+      "finding": "Legacy storage wording in the clean source. Four blocks apply to game data. Check platform reachability before changing a DS screen.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_109",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 109,
+      "source_reference": {
+        "block": 1,
+        "offset": 220,
+        "copy_end": 328,
+        "bytes": 106,
+        "record_index": 1,
+        "table_offset": 1317354,
+        "start_in_record": 106
+      },
+      "source_hex": "83568358836583808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825082c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "システムデータをセーブする空きブロックが\n１つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "independent_English": "Saving system data requires one free block. You won't be able to save as things stand. Start the game anyway?",
+      "finding": "One block applies to system data. Same decision, distinct data.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_110",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 110,
+      "source_reference": {
+        "block": 1,
+        "offset": 328,
+        "copy_end": 432,
+        "bytes": 104,
+        "record_index": 2,
+        "table_offset": 1317356,
+        "start_in_record": 1
+      },
+      "source_hex": "8366815b835e82f0835a815b837582b782e982c982cd825482c282cc8bf382ab8375838d8362834e82aa0a954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "データをセーブするには５つの空きブロックが\n必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "independent_English": "Saving your data requires five free blocks. You won't be able to save as things stand. Start the game anyway?",
+      "finding": "Five blocks apply to the combined data condition. Do not collapse these three source branches.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_111",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 111,
+      "source_reference": {
+        "block": 1,
+        "offset": 432,
+        "copy_end": 480,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 105
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a82a082e882dc82b982f181420a838d815b836882c582ab82dc82b982f18142",
+      "clean_Japanese": "ゲームデータが\nありません。\nロードできません。",
+      "independent_English": "There's no game data to load.",
+      "finding": "Absent game data prevents loading.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_112",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 112,
+      "source_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "clean_Japanese": "システムデータがありません。\n",
+      "independent_English": "No system data found.",
+      "finding": "System data absence is distinct from missing game data. Source has a trailing line separator to classify.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_113",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 113,
+      "source_reference": {
+        "block": 1,
+        "offset": 512,
+        "copy_end": 596,
+        "bytes": 82,
+        "record_index": 4,
+        "table_offset": 1317362,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a8351815b83808366815b835e82f0835a815b83750a82b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nゲームデータをセーブ\nする空きブロックが\n４つ必要です。",
+      "independent_English": "Not enough free space. Saving game data requires four free blocks.",
+      "finding": "Four-block save failure without a start prompt.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_114",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 114,
+      "source_reference": {
+        "block": 1,
+        "offset": 596,
+        "copy_end": 684,
+        "bytes": 85,
+        "record_index": 5,
+        "table_offset": 1317364,
+        "start_in_record": 1
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a83568358836583808366815b835e82f00a835a815b837582b782e90a8bf382ab8375838d8362834e82aa0a825082c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nシステムデータを\nセーブする\n空きブロックが\n１つ必要です。",
+      "independent_English": "Not enough free space. Saving system data requires one free block.",
+      "finding": "One-block save failure without a start prompt.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_115",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 115,
+      "source_reference": {
+        "block": 1,
+        "offset": 684,
+        "copy_end": 756,
+        "bytes": 72,
+        "record_index": 6,
+        "table_offset": 1317366,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a835a815b837582b782e982c982cd0a8bf382ab8375838d8362834e82aa0a825482c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nセーブするには\n空きブロックが\n５つ必要です。",
+      "independent_English": "Not enough free space. Saving requires five free blocks.",
+      "finding": "Five-block save failure without a start prompt.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_116",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 116,
+      "source_reference": {
+        "block": 1,
+        "offset": 756,
+        "copy_end": 856,
+        "bytes": 97,
+        "record_index": 6,
+        "table_offset": 1317368,
+        "start_in_record": 74
+      },
+      "source_hex": "83818382838a815b834a815b836882f00a836083468362834e82b582c482a282dc82b781420a83818382838a815b834a815b836882e20a835283938367838d815b838982f00a94b282ab8db782b582b582c882a282c50a82ad82be82b382a28142",
+      "clean_Japanese": "メモリーカードを\nチェックしています。\nメモリーカードや\nコントローラを\n抜き差ししないで\nください。",
+      "independent_English": "Checking the memory card. Please don't plug in or remove the memory card or controller.",
+      "finding": "The clean string explicitly names the memory card and controller. Their presence is a platform-specific source clue.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_117",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 117,
+      "source_reference": {
+        "block": 1,
+        "offset": 856,
+        "copy_end": 888,
+        "bytes": 29,
+        "record_index": 7,
+        "table_offset": 1317370,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "ゲームデータが\n壊れています。",
+      "independent_English": "The game data is corrupted.",
+      "finding": "Corruption is distinct from absent data or general load failure.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_118",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 118,
+      "source_reference": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "システムデータが壊れています。",
+      "independent_English": "The system data is corrupted.",
+      "finding": "System data is the affected data.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_119",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 119,
+      "source_reference": {
+        "block": 1,
+        "offset": 920,
+        "copy_end": 976,
+        "bytes": 53,
+        "record_index": 9,
+        "table_offset": 1317374,
+        "start_in_record": 1
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f083818382838a815b834a815b836882c90a835a815b837582b582dc82b782a98148",
+      "clean_Japanese": "エンディングデータをメモリーカードに\nセーブしますか？",
+      "independent_English": "Save the ending data to the memory card?",
+      "finding": "The data concerns the ending. Preserve the specific destination until the consumer is classified.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_120",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 120,
+      "source_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "すべてよろしいですか？",
+      "independent_English": "Is everything correct?",
+      "finding": "A confirmation of the full selection. No specific object named.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_121",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 121,
+      "source_reference": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームを始めますか？",
+      "independent_English": "Start the game?",
+      "finding": "A simple start confirmation.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_122",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 122,
+      "source_reference": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "clean_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "independent_English": "Couldn't load the system data. The game will start with the default system data.",
+      "finding": "Failed load followed by starting with initialized system data. Confirm whether the data extends beyond settings.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_123",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 123,
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "clean_Japanese": "システムデータのロードに失敗しました。\n",
+      "independent_English": "Couldn't load the system data.",
+      "finding": "Failure only. Source has a trailing separator to classify.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_124",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 124,
+      "source_reference": {
+        "block": 1,
+        "offset": 1148,
+        "copy_end": 1224,
+        "bytes": 76,
+        "record_index": 13,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "source_hex": "83818382838a815b834a815b836882cc8f898afa89bb82cd0a835a815b83758e9e82c98d7382a482b182c682aa82c582ab82dc82b781420a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "メモリーカードの初期化は\nセーブ時に行うことができます。\nゲームを始めますか？",
+      "independent_English": "The memory card can be initialized when you save. Start the game?",
+      "finding": "Initialization can be deferred to saving. This is a choice, with no claim that data has already been erased.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_125",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 125,
+      "source_reference": {
+        "block": 1,
+        "offset": 1224,
+        "copy_end": 1272,
+        "bytes": 48,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 76
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382cc8c698b4382aa0a89f1959c82b582dc82b582bd",
+      "clean_Japanese": "巨額の商業投資のおかげで\n%sの景気が\n回復しました",
+      "independent_English": "A major commercial investment has helped %s's economy recover.",
+      "finding": "Recovery follows a large investment. The second notice reports prosperity.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_126",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 126,
+      "source_reference": {
+        "block": 1,
+        "offset": 1272,
+        "copy_end": 1324,
+        "bytes": 50,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 124
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382aa8d448c698b4382c90a82ed82a282c482a282dc82b7",
+      "clean_Japanese": "巨額の商業投資のおかげで\n%sが好景気に\nわいています",
+      "independent_English": "A major commercial investment has brought a boom to %s.",
+      "finding": "A boom is stronger than recovery. Preserve the same cause.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_127",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 127,
+      "source_reference": {
+        "block": 1,
+        "offset": 1324,
+        "copy_end": 1352,
+        "bytes": 28,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "source_hex": "8b92935f82c682b782e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "拠点とする街を選んでください",
+      "independent_English": "Choose a port to use as your base.",
+      "finding": "The player is selecting a base, not issuing a docking command.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_128",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 128,
+      "source_reference": {
+        "block": 1,
+        "offset": 1352,
+        "copy_end": 1380,
+        "bytes": 26,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 29
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f182b582c482a282dc82b982f1",
+      "clean_Japanese": "その街とは契約していません",
+      "independent_English": "You don't have a contract with that port.",
+      "finding": "A selection refusal due to missing contract.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_129",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 129,
+      "source_reference": {
+        "block": 1,
+        "offset": 1380,
+        "copy_end": 1424,
+        "bytes": 43,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "source_hex": "8fa389fa82f08d7382a282dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "哨戒を行います\n契約のある街を選んでください",
+      "independent_English": "We'll go on patrol. Choose a port where you have a contract.",
+      "finding": "The fleet will patrol. The contract is with the port, not a contract to patrol.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_130",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 130,
+      "source_reference": {
+        "block": 1,
+        "offset": 1424,
+        "copy_end": 1472,
+        "bytes": 47,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd91e082f08af18d6082b382b982dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "艦隊を寄港させます\n契約のある街を選んでください",
+      "independent_English": "We'll send the fleet into port. Choose one where you have a contract.",
+      "finding": "The fleet will call at the selected contracted port. Break the wording into a short command and a constraint if needed for clarity.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_131",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 131,
+      "source_reference": {
+        "block": 1,
+        "offset": 1472,
+        "copy_end": 1504,
+        "bytes": 30,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "source_hex": "8a588d558c8282f08d7382a48a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "街攻撃を行う街を選んでください",
+      "independent_English": "Choose a port to attack.",
+      "finding": "The target is the port itself.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_132",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 132,
+      "source_reference": {
+        "block": 1,
+        "offset": 1504,
+        "copy_end": 1528,
+        "bytes": 22,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f18dcf82dd82c582b7",
+      "clean_Japanese": "その街とは契約済みです",
+      "independent_English": "You already have a contract with that port.",
+      "finding": "A contract already exists, as distinct from the missing-contract refusal.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_133",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 133,
+      "source_reference": {
+        "block": 1,
+        "offset": 1528,
+        "copy_end": 1572,
+        "bytes": 43,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd88c88a4f82c60a8c5f96f182b582c482a282dc82b7",
+      "clean_Japanese": "その街は、交戦中の勢力以外と\n契約しています",
+      "independent_English": "That port has a contract with a faction you're not at war with.",
+      "finding": "The contracted faction is outside the set of enemies. Confirm which selection rule and actor the caller implies.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_134",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 134,
+      "source_reference": {
+        "block": 1,
+        "offset": 1572,
+        "copy_end": 1616,
+        "bytes": 41,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd82c60a8c5f96f182b582c482a282dc82b982f1",
+      "clean_Japanese": "その街は、交戦中の勢力と\n契約していません",
+      "independent_English": "That port has no contract with any faction you're at war with.",
+      "finding": "The port lacks a contract with a faction at war with the player. Keep the distinct negative condition.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_135",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 135,
+      "source_reference": {
+        "block": 1,
+        "offset": 1616,
+        "copy_end": 1684,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "source_hex": "8a5882cc906c815882cc937b82e882cd918a939682c882e082cc82c582b70a82c682c482e08f6f93fc82e882c582ab82e98ff38bb582c582cd82a082e882dc82b982f1",
+      "clean_Japanese": "街の人々の怒りは相当なものです\nとても出入りできる状況ではありません",
+      "independent_English": "The people here are furious. There's no way in or out right now.",
+      "finding": "Town anger makes entering or leaving infeasible. No claim about formal closure or permanent lockout.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_136",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 136,
+      "source_reference": {
+        "block": 1,
+        "offset": 1684,
+        "copy_end": 1732,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "source_hex": "8fac9484935882cc8ac594c282f0914982d482c60a97ac8d7382c882c782cc8fee95f182f095b782af82dc82b7",
+      "clean_Japanese": "小売店の看板を選ぶと\n流行などの情報を聞けます",
+      "independent_English": "Select a shop sign to hear about trends and other local news.",
+      "finding": "A retail-square tutorial. Selecting signs lets the player ask about trends and related information.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_750",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 750,
+      "source_reference": {
+        "block": 9,
+        "offset": 3076,
+        "copy_end": 3100,
+        "bytes": 22,
+        "record_index": 33,
+        "table_offset": 1318636,
+        "start_in_record": 2
+      },
+      "source_hex": "967b939682c982e282e892bc82b782cc82a982a28148",
+      "clean_Japanese": "本当にやり直すのかい？",
+      "independent_English": "Are you sure you want to start over?",
+      "finding": "The speaker asks for confirmation about doing something over. The caller must establish whether to say start over, try again or redo a specific step.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_751",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 751,
+      "source_reference": {
+        "block": 9,
+        "offset": 3100,
+        "copy_end": 3112,
+        "bytes": 10,
+        "record_index": 34,
+        "table_offset": 1318638,
+        "start_in_record": 1
+      },
+      "source_hex": "96ca937c82be82cb82a6",
+      "clean_Japanese": "面倒だねえ",
+      "independent_English": "What a bother.",
+      "finding": "A drawn-out, mildly put-upon reaction. The source does not explicitly name the task.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    },
+    {
+      "id": "COMMON_MESSAGE_752",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 752,
+      "source_reference": {
+        "block": 9,
+        "offset": 3112,
+        "copy_end": 3148,
+        "bytes": 36,
+        "record_index": 35,
+        "table_offset": 1318640,
+        "start_in_record": 1
+      },
+      "source_hex": "965a82b582a282f182be82a982e781418fe7926b82cd8aa895d982b582c482ad82f182c8",
+      "clean_Japanese": "忙しいんだから、冗談は勘弁してくんな",
+      "independent_English": "I'm busy. Spare me the jokes, will you?",
+      "finding": "A busy speaker brusquely asks to be spared the jokes. Keep the register. The preceding decision branch remains unverified.",
+      "consumer_and_display_pending": true,
+      "new_credit": 0
+    }
+  ],
+  "clean_context": [
+    {
+      "message_ID": 80,
+      "source_reference": {
+        "block": 0,
+        "offset": 2808,
+        "copy_end": 2840,
+        "bytes": 29,
+        "record_index": 61,
+        "table_offset": 1317296,
+        "start_in_record": 2
+      },
+      "source_hex": "8da18c8e82cc8fe3945b8be082cd0a8be089dd2573968782c582b782ba",
+      "clean_Japanese": "今月の上納金は\n金貨%s枚ですぜ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 81,
+      "source_reference": {
+        "block": 0,
+        "offset": 2840,
+        "copy_end": 2892,
+        "bytes": 52,
+        "record_index": 62,
+        "table_offset": 1317298,
+        "start_in_record": 2
+      },
+      "source_hex": "8da18c8e82cc8fe3945b8be082cd0a8be089dd2573968782c582b782ed82a20a82b382b3814182a8945b82df82ad82be82b382ea",
+      "clean_Japanese": "今月の上納金は\n金貨%s枚ですわい\nささ、お納めくだされ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 82,
+      "source_reference": {
+        "block": 0,
+        "offset": 2892,
+        "copy_end": 2936,
+        "bytes": 44,
+        "record_index": 62,
+        "table_offset": 1317300,
+        "start_in_record": 54
+      },
+      "source_hex": "8da18c8e82cc8fe3945b8be082cd0a8be089dd2573968782c582b70a82c782a482bc814182a8945b82df82f0",
+      "clean_Japanese": "今月の上納金は\n金貨%s枚です\nどうぞ、お納めを",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 83,
+      "source_reference": {
+        "block": 0,
+        "offset": 2936,
+        "copy_end": 2996,
+        "bytes": 57,
+        "record_index": 62,
+        "table_offset": 1317302,
+        "start_in_record": 98
+      },
+      "source_hex": "257382aa0a93c690e88c5f96f182b582c482a282e98a5882a982e70a8be089dd2573968782cc0a8fe3945b8be082aa82a082e882dc82b582bd",
+      "clean_Japanese": "%sが\n独占契約している街から\n金貨%s枚の\n上納金がありました",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 84,
+      "source_reference": {
+        "block": 0,
+        "offset": 2996,
+        "copy_end": 3052,
+        "bytes": 54,
+        "record_index": 63,
+        "table_offset": 1317304,
+        "start_in_record": 2
+      },
+      "source_hex": "834183438365838082cc91dd82b58f6f82b597bf82c682b582c40a8be089dd2573968782cc0a8efb93fc82aa82a082e882dc82b582bd",
+      "clean_Japanese": "アイテムの貸し出し料として\n金貨%s枚の\n収入がありました",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 85,
+      "source_reference": {
+        "block": 0,
+        "offset": 3052,
+        "copy_end": 3076,
+        "bytes": 22,
+        "record_index": 64,
+        "table_offset": 1317306,
+        "start_in_record": 1
+      },
+      "source_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7",
+      "clean_Japanese": "約%s日の航海が可能です",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 86,
+      "source_reference": {
+        "block": 0,
+        "offset": 3076,
+        "copy_end": 3108,
+        "bytes": 30,
+        "record_index": 65,
+        "table_offset": 1317308,
+        "start_in_record": 1
+      },
+      "source_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd",
+      "clean_Japanese": "%s月　%s日\n%s\n%sを出港しました",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 87,
+      "source_reference": {
+        "block": 0,
+        "offset": 3108,
+        "copy_end": 3124,
+        "bytes": 14,
+        "record_index": 66,
+        "table_offset": 1317310,
+        "start_in_record": 1
+      },
+      "source_hex": "257382aa91ab82e882dc82b982f1",
+      "clean_Japanese": "%sが足りません",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 88,
+      "source_reference": {
+        "block": 0,
+        "offset": 3124,
+        "copy_end": 3148,
+        "bytes": 22,
+        "record_index": 67,
+        "table_offset": 1317312,
+        "start_in_record": 1
+      },
+      "source_hex": "93478acd91e082cd89f396c582b582dc82b582bd8149",
+      "clean_Japanese": "敵艦隊は壊滅しました！",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 89,
+      "source_reference": {
+        "block": 0,
+        "offset": 3148,
+        "copy_end": 3168,
+        "bytes": 20,
+        "record_index": 68,
+        "table_offset": 1317314,
+        "start_in_record": 1
+      },
+      "source_hex": "934782cd93a682b08f6f82b582dc82b582bd8149",
+      "clean_Japanese": "敵は逃げ出しました！",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 90,
+      "source_reference": {
+        "block": 0,
+        "offset": 3168,
+        "copy_end": 3196,
+        "bytes": 25,
+        "record_index": 68,
+        "table_offset": 1317316,
+        "start_in_record": 21
+      },
+      "source_hex": "257382cc8a5882cd0a8c82946a82b382ea82dc82b582bd8163",
+      "clean_Japanese": "%sの街は\n撃破されました…",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 91,
+      "source_reference": {
+        "block": 0,
+        "offset": 3196,
+        "copy_end": 3220,
+        "bytes": 23,
+        "record_index": 69,
+        "table_offset": 1317318,
+        "start_in_record": 2
+      },
+      "source_hex": "257382cc8a5882cd0a8d7e959a82b582dc82b582bd8163",
+      "clean_Japanese": "%sの街は\n降伏しました…",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 92,
+      "source_reference": {
+        "block": 0,
+        "offset": 3220,
+        "copy_end": 3280,
+        "bytes": 60,
+        "record_index": 70,
+        "table_offset": 1317320,
+        "start_in_record": 0
+      },
+      "source_hex": "8e5089ba82cc8acd91e082e682e80a8efb8e7895f18d9082aa93cd82a282c482a882e882dc82b70a82a895b782ab82c982c882e882dc82b782a98148",
+      "clean_Japanese": "傘下の艦隊より\n収支報告が届いております\nお聞きになりますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 93,
+      "source_reference": {
+        "block": 0,
+        "offset": 3280,
+        "copy_end": 3316,
+        "bytes": 34,
+        "record_index": 70,
+        "table_offset": 1317322,
+        "start_in_record": 60
+      },
+      "source_hex": "257382cc8a5882aa0a257382cc8acd91e082f00a96438c8282b582c482a282dc82b7",
+      "clean_Japanese": "%sの街が\n%sの艦隊を\n砲撃しています",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 94,
+      "source_reference": {
+        "block": 0,
+        "offset": 3316,
+        "copy_end": 3356,
+        "bytes": 38,
+        "record_index": 71,
+        "table_offset": 1317324,
+        "start_in_record": 1
+      },
+      "source_hex": "257382cc8a5882aa0a8a4391af257382cc8f508c8282f00a8ef382af82c482a282dc82b78149",
+      "clean_Japanese": "%sの街が\n海賊%sの襲撃を\n受けています！",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 95,
+      "source_reference": {
+        "block": 0,
+        "offset": 3356,
+        "copy_end": 3408,
+        "bytes": 52,
+        "record_index": 72,
+        "table_offset": 1317326,
+        "start_in_record": 1
+      },
+      "source_hex": "257382c5257382aa0a257382f091e597ca82c9948482e882b382ce82ab0a83568346834182f08a6791e582b582dc82b582bd8149",
+      "clean_Japanese": "%sで%sが\n%sを大量に売りさばき\nシェアを拡大しました！",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 96,
+      "source_reference": {
+        "block": 0,
+        "offset": 3408,
+        "copy_end": 3444,
+        "bytes": 35,
+        "record_index": 72,
+        "table_offset": 1317328,
+        "start_in_record": 53
+      },
+      "source_hex": "257382cc83568346834182aa0a89ba82aa82c182c482b582dc82a282dc82b582bd8149",
+      "clean_Japanese": "%sのシェアが\n下がってしまいました！",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 97,
+      "source_reference": {
+        "block": 0,
+        "offset": 3444,
+        "copy_end": 3460,
+        "bytes": 14,
+        "record_index": 73,
+        "table_offset": 1317330,
+        "start_in_record": 0
+      },
+      "source_hex": "25738141826b82968274826f8149",
+      "clean_Japanese": "%s、ＬｖＵＰ！",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 98,
+      "source_reference": {
+        "block": 0,
+        "offset": 3460,
+        "copy_end": 3492,
+        "bytes": 32,
+        "record_index": 74,
+        "table_offset": 1317332,
+        "start_in_record": 1
+      },
+      "source_hex": "93fc8ee88dcf82dd82cc834183438365838082aa82a082e882dc82b982f18142",
+      "clean_Japanese": "入手済みのアイテムがありません。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 99,
+      "source_reference": {
+        "block": 0,
+        "offset": 3492,
+        "copy_end": 3520,
+        "bytes": 28,
+        "record_index": 74,
+        "table_offset": 1317334,
+        "start_in_record": 33
+      },
+      "source_hex": "94ad8ca98dcf82dd82cc88e290d582aa82a082e882dc82b982f18142",
+      "clean_Japanese": "発見済みの遺跡がありません。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 100,
+      "source_reference": {
+        "block": 0,
+        "offset": 3520,
+        "copy_end": 3556,
+        "bytes": 34,
+        "record_index": 74,
+        "table_offset": 1317336,
+        "start_in_record": 61
+      },
+      "source_hex": "93be88d382c88b5a945c82f0825282c2914991f082b582c482ad82be82b382a28142",
+      "clean_Japanese": "得意な技能を３つ選択してください。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 101,
+      "source_reference": {
+        "block": 0,
+        "offset": 3556,
+        "copy_end": 3588,
+        "bytes": 29,
+        "record_index": 75,
+        "table_offset": 1317338,
+        "start_in_record": 1
+      },
+      "source_hex": "2573814125738141257382c50a82e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "%s、%s、%sで\nよろしいですか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 102,
+      "source_reference": {
+        "block": 0,
+        "offset": 3588,
+        "copy_end": 3628,
+        "bytes": 37,
+        "record_index": 76,
+        "table_offset": 1317340,
+        "start_in_record": 2
+      },
+      "source_hex": "82618266826c82c68cf889ca89b982cc89b997ca0a82f090dd92e882c582ab82dc82b78142",
+      "clean_Japanese": "ＢＧＭと効果音の音量\nを設定できます。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 103,
+      "source_reference": {
+        "block": 0,
+        "offset": 3628,
+        "copy_end": 3656,
+        "bytes": 26,
+        "record_index": 77,
+        "table_offset": 1317342,
+        "start_in_record": 2
+      },
+      "source_hex": "926190b693fa82f093fc97cd82b582c482ad82be82b382a28142",
+      "clean_Japanese": "誕生日を入力してください。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 104,
+      "source_reference": {
+        "block": 0,
+        "offset": 3656,
+        "copy_end": 3772,
+        "bytes": 113,
+        "record_index": 78,
+        "table_offset": 1317344,
+        "start_in_record": 1
+      },
+      "source_hex": "91448fe682e882c99499915282c693b282ea82e90a837c838b8367834b838b82cc8fad944e81420a9746906c82c982bb82bb82cc82a982b382ea82c40a8a4382c98f6f82e982b182c682c982c882e981420a8f8982df82c48376838c834382b782e995fb82c90a82a882b782b782df8142",
+      "clean_Japanese": "船乗りに漠然と憧れる\nポルトガルの少年。\n友人にそそのかされて\n海に出ることになる。\n初めてプレイする方に\nおすすめ。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 105,
+      "source_reference": {
+        "block": 0,
+        "offset": 3772,
+        "copy_end": 3888,
+        "bytes": 115,
+        "record_index": 79,
+        "table_offset": 1317346,
+        "start_in_record": 2
+      },
+      "source_hex": "8dc493c697a782f089ca82bd82b582bd0a835883458346815b8366839382cc92f193c281420a8a438c5282c682cd96bc82ce82a982e882cc0a8e8497a98acd91e082f097a682a282e981420a8ea98d9182cc8acd91e082f090a28a458dc58bad0a82c982b782d782ad8a8893ae82b782e98142",
+      "clean_Japanese": "再独立を果たした\nスウェーデンの提督。\n海軍とは名ばかりの\n私掠艦隊を率いる。\n自国の艦隊を世界最強\nにすべく活動する。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 106,
+      "source_reference": {
+        "block": 0,
+        "offset": 3888,
+        "copy_end": 3988,
+        "bytes": 99,
+        "record_index": 80,
+        "table_offset": 1317348,
+        "start_in_record": 0
+      },
+      "source_hex": "8fa48db082bd82ad82dc82b582a20a834983898393835f82cc8fad8f9781420a976382c882b682dd82cc918a965f834a837e838b0a82c682c682e082c981410a88ea8af8976782b082e682a482c60a90a28a4582cc8a4382c994f282d18f6f82b78142",
+      "clean_Japanese": "商魂たくましい\nオランダの少女。\n幼なじみの相棒カミル\nとともに、\n一旗揚げようと\n世界の海に飛び出す。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 107,
+      "source_reference": {
+        "block": 1,
+        "offset": 0,
+        "copy_end": 116,
+        "bytes": 113,
+        "record_index": 0,
+        "table_offset": 1317350,
+        "start_in_record": 0
+      },
+      "source_hex": "98609b8482c98bea82b582df82e782ea82e90a906c815882f08ee782e982bd82df82c90a8d91964082c582a082e98dbd8d9190ad8df482f00a82a082a682c496b38e8b82b581410a8e8490dd8acd91e082f097a682a282c490ed82a40a96be816982dd82f1816a82cc8f9792f193c28142",
+      "clean_Japanese": "倭寇に苦しめられる\n人々を守るために\n国法である鎖国政策を\nあえて無視し、\n私設艦隊を率いて戦う\n明（みん）の女提督。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 108,
+      "source_reference": {
+        "block": 1,
+        "offset": 116,
+        "copy_end": 220,
+        "bytes": 104,
+        "record_index": 1,
+        "table_offset": 1317352,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームデータをセーブする空きブロックが\n４つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 109,
+      "source_reference": {
+        "block": 1,
+        "offset": 220,
+        "copy_end": 328,
+        "bytes": 106,
+        "record_index": 1,
+        "table_offset": 1317354,
+        "start_in_record": 106
+      },
+      "source_hex": "83568358836583808366815b835e82f0835a815b837582b782e98bf382ab8375838d8362834e82aa0a825082c2954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "システムデータをセーブする空きブロックが\n１つ必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 110,
+      "source_reference": {
+        "block": 1,
+        "offset": 328,
+        "copy_end": 432,
+        "bytes": 104,
+        "record_index": 2,
+        "table_offset": 1317356,
+        "start_in_record": 1
+      },
+      "source_hex": "8366815b835e82f0835a815b837582b782e982c982cd825482c282cc8bf382ab8375838d8362834e82aa0a954b977682c582b7814282b182cc82dc82dc82c582cd835a815b837582c582ab82dc82b982f182aa0a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "データをセーブするには５つの空きブロックが\n必要です。このままではセーブできませんが\nゲームを始めますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 111,
+      "source_reference": {
+        "block": 1,
+        "offset": 432,
+        "copy_end": 480,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1317358,
+        "start_in_record": 105
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a82a082e882dc82b982f181420a838d815b836882c582ab82dc82b982f18142",
+      "clean_Japanese": "ゲームデータが\nありません。\nロードできません。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 112,
+      "source_reference": {
+        "block": 1,
+        "offset": 480,
+        "copy_end": 512,
+        "bytes": 29,
+        "record_index": 3,
+        "table_offset": 1317360,
+        "start_in_record": 1
+      },
+      "source_hex": "83568358836583808366815b835e82aa82a082e882dc82b982f181420a",
+      "clean_Japanese": "システムデータがありません。\n",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 113,
+      "source_reference": {
+        "block": 1,
+        "offset": 512,
+        "copy_end": 596,
+        "bytes": 82,
+        "record_index": 4,
+        "table_offset": 1317362,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a8351815b83808366815b835e82f0835a815b83750a82b782e98bf382ab8375838d8362834e82aa0a825382c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nゲームデータをセーブ\nする空きブロックが\n４つ必要です。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 114,
+      "source_reference": {
+        "block": 1,
+        "offset": 596,
+        "copy_end": 684,
+        "bytes": 85,
+        "record_index": 5,
+        "table_offset": 1317364,
+        "start_in_record": 1
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a83568358836583808366815b835e82f00a835a815b837582b782e90a8bf382ab8375838d8362834e82aa0a825082c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nシステムデータを\nセーブする\n空きブロックが\n１つ必要です。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 115,
+      "source_reference": {
+        "block": 1,
+        "offset": 684,
+        "copy_end": 756,
+        "bytes": 72,
+        "record_index": 6,
+        "table_offset": 1317366,
+        "start_in_record": 2
+      },
+      "source_hex": "8bf382ab8375838d8362834e82aa0a91ab82e882dc82b982f181420a835a815b837582b782e982c982cd0a8bf382ab8375838d8362834e82aa0a825482c2954b977682c582b78142",
+      "clean_Japanese": "空きブロックが\n足りません。\nセーブするには\n空きブロックが\n５つ必要です。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 116,
+      "source_reference": {
+        "block": 1,
+        "offset": 756,
+        "copy_end": 856,
+        "bytes": 97,
+        "record_index": 6,
+        "table_offset": 1317368,
+        "start_in_record": 74
+      },
+      "source_hex": "83818382838a815b834a815b836882f00a836083468362834e82b582c482a282dc82b781420a83818382838a815b834a815b836882e20a835283938367838d815b838982f00a94b282ab8db782b582b582c882a282c50a82ad82be82b382a28142",
+      "clean_Japanese": "メモリーカードを\nチェックしています。\nメモリーカードや\nコントローラを\n抜き差ししないで\nください。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 117,
+      "source_reference": {
+        "block": 1,
+        "offset": 856,
+        "copy_end": 888,
+        "bytes": 29,
+        "record_index": 7,
+        "table_offset": 1317370,
+        "start_in_record": 2
+      },
+      "source_hex": "8351815b83808366815b835e82aa0a89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "ゲームデータが\n壊れています。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 118,
+      "source_reference": {
+        "block": 1,
+        "offset": 888,
+        "copy_end": 920,
+        "bytes": 30,
+        "record_index": 8,
+        "table_offset": 1317372,
+        "start_in_record": 2
+      },
+      "source_hex": "83568358836583808366815b835e82aa89f382ea82c482a282dc82b78142",
+      "clean_Japanese": "システムデータが壊れています。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 119,
+      "source_reference": {
+        "block": 1,
+        "offset": 920,
+        "copy_end": 976,
+        "bytes": 53,
+        "record_index": 9,
+        "table_offset": 1317374,
+        "start_in_record": 1
+      },
+      "source_hex": "83478393836683428393834f8366815b835e82f083818382838a815b834a815b836882c90a835a815b837582b582dc82b782a98148",
+      "clean_Japanese": "エンディングデータをメモリーカードに\nセーブしますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 120,
+      "source_reference": {
+        "block": 1,
+        "offset": 976,
+        "copy_end": 1000,
+        "bytes": 22,
+        "record_index": 10,
+        "table_offset": 1317376,
+        "start_in_record": 2
+      },
+      "source_hex": "82b782d782c482e682eb82b582a282c582b782a98148",
+      "clean_Japanese": "すべてよろしいですか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 121,
+      "source_reference": {
+        "block": 1,
+        "offset": 1000,
+        "copy_end": 1020,
+        "bytes": 20,
+        "record_index": 11,
+        "table_offset": 1317378,
+        "start_in_record": 1
+      },
+      "source_hex": "8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "ゲームを始めますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 122,
+      "source_reference": {
+        "block": 1,
+        "offset": 1020,
+        "copy_end": 1108,
+        "bytes": 87,
+        "record_index": 11,
+        "table_offset": 1317380,
+        "start_in_record": 21
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a83568358836583808366815b835e82f08f898afa8ff391d482c982b582c48351815b838082f08e6e82df82dc82b78142",
+      "clean_Japanese": "システムデータのロードに失敗しました。\nシステムデータを初期状態にしてゲームを始めます。",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 123,
+      "source_reference": {
+        "block": 1,
+        "offset": 1108,
+        "copy_end": 1148,
+        "bytes": 39,
+        "record_index": 12,
+        "table_offset": 1317382,
+        "start_in_record": 0
+      },
+      "source_hex": "83568358836583808366815b835e82cc838d815b836882c98eb8947382b582dc82b582bd81420a",
+      "clean_Japanese": "システムデータのロードに失敗しました。\n",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 124,
+      "source_reference": {
+        "block": 1,
+        "offset": 1148,
+        "copy_end": 1224,
+        "bytes": 76,
+        "record_index": 13,
+        "table_offset": 1317384,
+        "start_in_record": 0
+      },
+      "source_hex": "83818382838a815b834a815b836882cc8f898afa89bb82cd0a835a815b83758e9e82c98d7382a482b182c682aa82c582ab82dc82b781420a8351815b838082f08e6e82df82dc82b782a98148",
+      "clean_Japanese": "メモリーカードの初期化は\nセーブ時に行うことができます。\nゲームを始めますか？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 125,
+      "source_reference": {
+        "block": 1,
+        "offset": 1224,
+        "copy_end": 1272,
+        "bytes": 48,
+        "record_index": 13,
+        "table_offset": 1317386,
+        "start_in_record": 76
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382cc8c698b4382aa0a89f1959c82b582dc82b582bd",
+      "clean_Japanese": "巨額の商業投資のおかげで\n%sの景気が\n回復しました",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 126,
+      "source_reference": {
+        "block": 1,
+        "offset": 1272,
+        "copy_end": 1324,
+        "bytes": 50,
+        "record_index": 13,
+        "table_offset": 1317388,
+        "start_in_record": 124
+      },
+      "source_hex": "8b908a7a82cc8fa48bc6938a8e9182cc82a882a982b082c50a257382aa8d448c698b4382c90a82ed82a282c482a282dc82b7",
+      "clean_Japanese": "巨額の商業投資のおかげで\n%sが好景気に\nわいています",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 127,
+      "source_reference": {
+        "block": 1,
+        "offset": 1324,
+        "copy_end": 1352,
+        "bytes": 28,
+        "record_index": 14,
+        "table_offset": 1317390,
+        "start_in_record": 1
+      },
+      "source_hex": "8b92935f82c682b782e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "拠点とする街を選んでください",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 128,
+      "source_reference": {
+        "block": 1,
+        "offset": 1352,
+        "copy_end": 1380,
+        "bytes": 26,
+        "record_index": 14,
+        "table_offset": 1317392,
+        "start_in_record": 29
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f182b582c482a282dc82b982f1",
+      "clean_Japanese": "その街とは契約していません",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 129,
+      "source_reference": {
+        "block": 1,
+        "offset": 1380,
+        "copy_end": 1424,
+        "bytes": 43,
+        "record_index": 15,
+        "table_offset": 1317394,
+        "start_in_record": 1
+      },
+      "source_hex": "8fa389fa82f08d7382a282dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "哨戒を行います\n契約のある街を選んでください",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 130,
+      "source_reference": {
+        "block": 1,
+        "offset": 1424,
+        "copy_end": 1472,
+        "bytes": 47,
+        "record_index": 16,
+        "table_offset": 1317396,
+        "start_in_record": 0
+      },
+      "source_hex": "8acd91e082f08af18d6082b382b982dc82b70a8c5f96f182cc82a082e98a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "艦隊を寄港させます\n契約のある街を選んでください",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 131,
+      "source_reference": {
+        "block": 1,
+        "offset": 1472,
+        "copy_end": 1504,
+        "bytes": 30,
+        "record_index": 17,
+        "table_offset": 1317398,
+        "start_in_record": 0
+      },
+      "source_hex": "8a588d558c8282f08d7382a48a5882f0914982f182c582ad82be82b382a2",
+      "clean_Japanese": "街攻撃を行う街を選んでください",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 132,
+      "source_reference": {
+        "block": 1,
+        "offset": 1504,
+        "copy_end": 1528,
+        "bytes": 22,
+        "record_index": 18,
+        "table_offset": 1317400,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882c682cd8c5f96f18dcf82dd82c582b7",
+      "clean_Japanese": "その街とは契約済みです",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 133,
+      "source_reference": {
+        "block": 1,
+        "offset": 1528,
+        "copy_end": 1572,
+        "bytes": 43,
+        "record_index": 19,
+        "table_offset": 1317402,
+        "start_in_record": 1
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd88c88a4f82c60a8c5f96f182b582c482a282dc82b7",
+      "clean_Japanese": "その街は、交戦中の勢力以外と\n契約しています",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 134,
+      "source_reference": {
+        "block": 1,
+        "offset": 1572,
+        "copy_end": 1616,
+        "bytes": 41,
+        "record_index": 20,
+        "table_offset": 1317404,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882cd81418cf090ed928682cc90a897cd82c60a8c5f96f182b582c482a282dc82b982f1",
+      "clean_Japanese": "その街は、交戦中の勢力と\n契約していません",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 135,
+      "source_reference": {
+        "block": 1,
+        "offset": 1616,
+        "copy_end": 1684,
+        "bytes": 67,
+        "record_index": 21,
+        "table_offset": 1317406,
+        "start_in_record": 2
+      },
+      "source_hex": "8a5882cc906c815882cc937b82e882cd918a939682c882e082cc82c582b70a82c682c482e08f6f93fc82e882c582ab82e98ff38bb582c582cd82a082e882dc82b982f1",
+      "clean_Japanese": "街の人々の怒りは相当なものです\nとても出入りできる状況ではありません",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 136,
+      "source_reference": {
+        "block": 1,
+        "offset": 1684,
+        "copy_end": 1732,
+        "bytes": 45,
+        "record_index": 22,
+        "table_offset": 1317408,
+        "start_in_record": 0
+      },
+      "source_hex": "8fac9484935882cc8ac594c282f0914982d482c60a97ac8d7382c882c782cc8fee95f182f095b782af82dc82b7",
+      "clean_Japanese": "小売店の看板を選ぶと\n流行などの情報を聞けます",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 137,
+      "source_reference": {
+        "block": 1,
+        "offset": 1732,
+        "copy_end": 1840,
+        "bytes": 106,
+        "record_index": 23,
+        "table_offset": 1317410,
+        "start_in_record": 2
+      },
+      "source_hex": "95c4816988ee816a8141836783458382838d8352835682c695c082d490a28a4582cc82520a91e58d9295a882cc825082c28142926e92868a438cb48e5981428ec082f090bb95b282b50a82c483708393814182df82f197de82c882c782cc8cb497bf82c682b782e98142",
+      "clean_Japanese": "米（稲）、トウモロコシと並ぶ世界の３\n大穀物の１つ。地中海原産。実を製粉し\nてパン、めん類などの原料とする。",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 744,
+      "source_reference": {
+        "block": 9,
+        "offset": 2828,
+        "copy_end": 2860,
+        "bytes": 29,
+        "record_index": 28,
+        "table_offset": 1318624,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82a482a982a20a82a082f182bd81418350836082c882f182be82cb",
+      "clean_Japanese": "そうかい\nあんた、ケチなんだね",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 745,
+      "source_reference": {
+        "block": 9,
+        "offset": 2860,
+        "copy_end": 2884,
+        "bytes": 24,
+        "record_index": 29,
+        "table_offset": 1318626,
+        "start_in_record": 2
+      },
+      "source_hex": "82dc82be91bc82c9977082aa82a082e982cc82a982a28148",
+      "clean_Japanese": "まだ他に用があるのかい？",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 746,
+      "source_reference": {
+        "block": 9,
+        "offset": 2884,
+        "copy_end": 2900,
+        "bytes": 14,
+        "record_index": 29,
+        "table_offset": 1318628,
+        "start_in_record": 26
+      },
+      "source_hex": "816397e282e282a982b582a982a2",
+      "clean_Japanese": "…冷やかしかい",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 747,
+      "source_reference": {
+        "block": 9,
+        "offset": 2900,
+        "copy_end": 2940,
+        "bytes": 39,
+        "record_index": 30,
+        "table_offset": 1318630,
+        "start_in_record": 1
+      },
+      "source_hex": "82a082e882aa82bd82a282cb0a974c8cf882c98e6782ed82b982c482e082e782a282dc82b782e6",
+      "clean_Japanese": "ありがたいね\n有効に使わせてもらいますよ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 748,
+      "source_reference": {
+        "block": 9,
+        "offset": 2940,
+        "copy_end": 3028,
+        "bytes": 85,
+        "record_index": 31,
+        "table_offset": 1318632,
+        "start_in_record": 0
+      },
+      "source_hex": "82a482f182c1814981480a905c82b596f382c882a282aa814182bb82cc8be08a7a82b682e10a82c782a482c982e082c882e782f182e60a82e082c182c689d282a282be82e7814182dc82bd978882c482ad82ea82e6",
+      "clean_Japanese": "うんっ！？\n申し訳ないが、その金額じゃ\nどうにもならんよ\nもっと稼いだら、また来てくれよ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 749,
+      "source_reference": {
+        "block": 9,
+        "offset": 3028,
+        "copy_end": 3076,
+        "bytes": 45,
+        "record_index": 32,
+        "table_offset": 1318634,
+        "start_in_record": 2
+      },
+      "source_hex": "90cf89d791718cc982aa969e947482be82e681490a948382a482e082cc82f08cb882e782b582c482ad82ea82e6",
+      "clean_Japanese": "積荷倉庫が満杯だよ！\n買うものを減らしてくれよ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 750,
+      "source_reference": {
+        "block": 9,
+        "offset": 3076,
+        "copy_end": 3100,
+        "bytes": 22,
+        "record_index": 33,
+        "table_offset": 1318636,
+        "start_in_record": 2
+      },
+      "source_hex": "967b939682c982e282e892bc82b782cc82a982a28148",
+      "clean_Japanese": "本当にやり直すのかい？",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 751,
+      "source_reference": {
+        "block": 9,
+        "offset": 3100,
+        "copy_end": 3112,
+        "bytes": 10,
+        "record_index": 34,
+        "table_offset": 1318638,
+        "start_in_record": 1
+      },
+      "source_hex": "96ca937c82be82cb82a6",
+      "clean_Japanese": "面倒だねえ",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 752,
+      "source_reference": {
+        "block": 9,
+        "offset": 3112,
+        "copy_end": 3148,
+        "bytes": 36,
+        "record_index": 35,
+        "table_offset": 1318640,
+        "start_in_record": 1
+      },
+      "source_hex": "965a82b582a282f182be82a982e781418fe7926b82cd8aa895d982b582c482ad82f182c8",
+      "clean_Japanese": "忙しいんだから、冗談は勘弁してくんな",
+      "draft_in_scope": true
+    },
+    {
+      "message_ID": 753,
+      "source_reference": {
+        "block": 9,
+        "offset": 3148,
+        "copy_end": 3180,
+        "bytes": 30,
+        "record_index": 35,
+        "table_offset": 1318642,
+        "start_in_record": 37
+      },
+      "source_hex": "82a082f182bd814182bb82ea82b682e18be082aa91ab82e882c882a282e6",
+      "clean_Japanese": "あんた、それじゃ金が足りないよ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 754,
+      "source_reference": {
+        "block": 9,
+        "offset": 3180,
+        "copy_end": 3244,
+        "bytes": 64,
+        "record_index": 36,
+        "table_offset": 1318644,
+        "start_in_record": 1
+      },
+      "source_hex": "8da189f18141947b82cc8be08a7a82f08f6f82b982ce0a91bd82df82c9948482c182c482e082e782a682e98fa4956982aa0a82a082e882bb82a482c582b782e6",
+      "clean_Japanese": "今回、倍の金額を出せば\n多めに売ってもらえる商品が\nありそうですよ",
+      "draft_in_scope": false
+    },
+    {
+      "message_ID": 755,
+      "source_reference": {
+        "block": 9,
+        "offset": 3244,
+        "copy_end": 3308,
+        "bytes": 62,
+        "record_index": 36,
+        "table_offset": 1318646,
+        "start_in_record": 65
+      },
+      "source_hex": "8da189f18141947b82cc8be08a7a82f08f6f82b982ce0a91bd82df82c9948482c182c482ad82ea82e98fa4956982aa0a82a082e982dd82bd82a282be82cb",
+      "clean_Japanese": "今回、倍の金額を出せば\n多めに売ってくれる商品が\nあるみたいだね",
+      "draft_in_scope": false
+    }
+  ],
+  "raw_command": {
+    "file_path": "/__arm9__.bin",
+    "offset": 1265236,
+    "byte_length": 10,
+    "terminated_hex": "914482f08ecc82c482e900",
+    "clean_Japanese": "船を捨てる",
+    "independent_English": "Abandon Ship",
+    "finding": "An action on the ship selected in the fleet menu. The clean verb means to abandon or discard it. Check the current menu pointer and confirmation before deciding storage or fitting.",
+    "source_neighbor_window_offset": 1265224,
+    "source_neighbor_window_hex": "38434c6f6361746f72000000914482f08ecc82c482e90000acfd12028c4e1302a8091302",
+    "consumer_and_display_pending": true,
+    "new_credit": 0
+  },
+  "initial_drafts_precede_registered_English_comparison": true,
+  "source_prose_or_completion_credit_added": 0,
+  "full_goal_complete": false
+}

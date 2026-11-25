@@ -1,0 +1,1746 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "4a6659a7953d3932a6d14d4c547144c87a1bea8999f9a7d423cc2f0f51a2e21a",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "ordinary_gameplay": true,
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1045",
+      "message_ID": 1045,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "There's room aboard for %s more. Should I keep looking?",
+      "speaker": "Sailor",
+      "clean_Japanese": "まだ船室は%s人分\n余ってるな\nもっと集めるか？",
+      "source_meaning": "The sailor gives the number of open berths and asks whether to keep looking.",
+      "localization_note": "The complete question is separate from the headcount. Its wording fits both observed values.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 13,
+        "offset": 508,
+        "copy_end": 552,
+        "bytes": 44,
+        "record_index": 7,
+        "table_offset": 1319226,
+        "start_in_record": 1,
+        "exact_hex": "82dc82be91448eba82cd2573906c95aa0a975d82c182c482e982c80a82e082c182c68f5782df82e982a98148"
+      },
+      "current_reference": {
+        "block": 13,
+        "offset": 2648,
+        "copy_end": 2722,
+        "bytes": 73,
+        "record_index": 232,
+        "table_offset": 1319226,
+        "start_in_record": 0,
+        "exact_hex": "205468657265277320726f6f6d2061626f61726420666f72202573206d6f72652e2053686f756c642049206b656570206c6f6f6b696e673f2020202020202020202020202020202020"
+      },
+      "installed_reference": {
+        "block": 13,
+        "offset": 2648,
+        "copy_end": 2722,
+        "bytes": 73,
+        "record_index": 232,
+        "table_offset": 1319226,
+        "start_in_record": 0,
+        "exact_hex": "205468657265277320726f6f6d2061626f61726420666f72202573206d6f72652e2053686f756c642049206b656570206c6f6f6b696e673f2020202020202020202020202020202020"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 12920,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_012920_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "ab80a33220058eedb62bcdcfa488ded6336ae3795bd7838f7a00f949240777f8",
+            "framebuffer_sha256": "abe2da8dc61ac44ce9bb715460f05ce970094ae4877c7a65d3fb346238fb1c90"
+          },
+          "arguments": [
+            "29"
+          ],
+          "lines": [
+            "There's room aboard for 29 more.",
+            "Should I keep looking?"
+          ],
+          "native_requests": [
+            {
+              "frame": 12592,
+              "PC": 33903244,
+              "message_ID": 1045,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 12592,
+              "PC": 33895668,
+              "message_ID": 1045,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 567,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        },
+        {
+          "capture": {
+            "frame": 18520,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_018520_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "1c1a90b87dfe8b0a5dd92d652639c824ab86e655c987a0fbd7d90a9acd53a42b",
+            "framebuffer_sha256": "baac2e6b4ab487f273601efd9101c2792baecb252dcf4ed295836c73e45be564"
+          },
+          "arguments": [
+            "33"
+          ],
+          "lines": [
+            "There's room aboard for 33 more.",
+            "Should I keep looking?"
+          ],
+          "native_requests": [
+            {
+              "frame": 18196,
+              "PC": 33903244,
+              "message_ID": 1045,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 18196,
+              "PC": 33895668,
+              "message_ID": 1045,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 565,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_904",
+      "message_ID": 904,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "We've got %s willing to join.",
+      "speaker": "Sailor",
+      "clean_Japanese": "%s人が\n集まりました",
+      "source_meaning": "The sailor reports how many people have volunteered in this round.",
+      "localization_note": "The present-tense report sounds like the sailor and accurately reports this round's turnout.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 11,
+        "offset": 2060,
+        "copy_end": 2080,
+        "bytes": 19,
+        "record_index": 38,
+        "table_offset": 1318944,
+        "start_in_record": 1,
+        "exact_hex": "2573906c82aa0a8f5782dc82e882dc82b582bd"
+      },
+      "current_reference": {
+        "block": 11,
+        "offset": 2654,
+        "copy_end": 2685,
+        "bytes": 30,
+        "record_index": 121,
+        "table_offset": 1318944,
+        "start_in_record": 0,
+        "exact_hex": "20576527766520676f742025732077696c6c696e6720746f206a6f696e2e"
+      },
+      "installed_reference": {
+        "block": 11,
+        "offset": 2654,
+        "copy_end": 2685,
+        "bytes": 30,
+        "record_index": 121,
+        "table_offset": 1318944,
+        "start_in_record": 0,
+        "exact_hex": "20576527766520676f742025732077696c6c696e6720746f206a6f696e2e"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 13320,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_013320_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "0b58a8544f8422bc9f6f8c5455728f0eae04ac44443b2751eeb050a4e5e2b23e",
+            "framebuffer_sha256": "47569c88fb8bf61e84c100e96fd11f2c8ba67c631bd8bc1dd292101abd4b4b64"
+          },
+          "arguments": [
+            "63"
+          ],
+          "lines": [
+            "We've got 63 willing to join."
+          ],
+          "native_requests": [
+            {
+              "frame": 12944,
+              "PC": 33903244,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            },
+            {
+              "frame": 12944,
+              "PC": 33895668,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            }
+          ],
+          "exact_body_pixels": 289,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        },
+        {
+          "capture": {
+            "frame": 18120,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_018120_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "915b75af0a58aa13d566f218e1d4e04506750c2bfcda9cff1b9134ac39f398c6",
+            "framebuffer_sha256": "709aeafe0fa4fc215b0d4c8f04eb0d0d8a2a9adae49f5a06ae099066be8d32c3"
+          },
+          "arguments": [
+            "53"
+          ],
+          "lines": [
+            "We've got 53 willing to join."
+          ],
+          "native_requests": [
+            {
+              "frame": 17742,
+              "PC": 33903244,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            },
+            {
+              "frame": 17742,
+              "PC": 33895668,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            }
+          ],
+          "exact_body_pixels": 288,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        },
+        {
+          "capture": {
+            "frame": 18920,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_018920_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "6770952e9ab4100ae1c766f2b70f3a312413e6b1d356e2389cc455a6b7498f13",
+            "framebuffer_sha256": "f82f13783e6134538b7c95190b4ed69ed7b3818193fee4284f9e4592c1c290ec"
+          },
+          "arguments": [
+            "53"
+          ],
+          "lines": [
+            "We've got 53 willing to join."
+          ],
+          "native_requests": [
+            {
+              "frame": 18543,
+              "PC": 33903244,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            },
+            {
+              "frame": 18543,
+              "PC": 33895668,
+              "message_ID": 904,
+              "caller_LR": 33898020
+            }
+          ],
+          "exact_body_pixels": 288,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_71",
+      "message_ID": 71,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "Is leaving %s of our sailors unassigned all right?",
+      "speaker": "Sailor",
+      "clean_Japanese": "%s人の水夫が\n未編成ですがよろしいですか？",
+      "source_meaning": "The sailor names the unassigned crew count and asks whether Maria accepts it.",
+      "localization_note": "The count and the sailors it describes stay together. The second line states what Maria is deciding.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 0,
+        "offset": 2452,
+        "copy_end": 2496,
+        "bytes": 41,
+        "record_index": 53,
+        "table_offset": 1317278,
+        "start_in_record": 21,
+        "exact_hex": "2573906c82cc9085957682aa0a96a295d290ac82c582b782aa82e682eb82b582a282c582b782a98148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 2781,
+        "copy_end": 2836,
+        "bytes": 54,
+        "record_index": 104,
+        "table_offset": 1317278,
+        "start_in_record": 20,
+        "exact_hex": "204973206c656176696e67202573206f66206f7572207361696c6f727320756e61737369676e656420616c6c2072696768743f202020"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 2781,
+        "copy_end": 2836,
+        "bytes": 54,
+        "record_index": 104,
+        "table_offset": 1317278,
+        "start_in_record": 20,
+        "exact_hex": "204973206c656176696e67202573206f66206f7572207361696c6f727320756e61737369676e656420616c6c2072696768743f202020"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 14120,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_014120_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "fd6fc2ba1c26500552e0d0fbd2507e61871516a6351226e8bf0ba106b2484b79",
+            "framebuffer_sha256": "28276660131d2d94f04afeab1115a8c3f526db8b9f5f8318138c52fb5afb48a7"
+          },
+          "arguments": [
+            "120"
+          ],
+          "lines": [
+            "Is leaving 120 of our sailors",
+            "unassigned all right?"
+          ],
+          "native_requests": [
+            {
+              "frame": 13722,
+              "PC": 33903244,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 13722,
+              "PC": 33895668,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 502,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        },
+        {
+          "capture": {
+            "frame": 21320,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_021320_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "5a21e0abc1e3d6aca30a84aca358dc578442a61df903a4daef2a07e816e5257a",
+            "framebuffer_sha256": "e1906de49207ff9e5b1a3011565ab966b406c932cba0eb1b5daac370ff2794ec"
+          },
+          "arguments": [
+            "20"
+          ],
+          "lines": [
+            "Is leaving 20 of our sailors",
+            "unassigned all right?"
+          ],
+          "native_requests": [
+            {
+              "frame": 20923,
+              "PC": 33903244,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 20923,
+              "PC": 33895668,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 492,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        },
+        {
+          "capture": {
+            "frame": 22120,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_022120_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "5a21e0abc1e3d6aca30a84aca358dc578442a61df903a4daef2a07e816e5257a",
+            "framebuffer_sha256": "e1906de49207ff9e5b1a3011565ab966b406c932cba0eb1b5daac370ff2794ec"
+          },
+          "arguments": [
+            "20"
+          ],
+          "lines": [
+            "Is leaving 20 of our sailors",
+            "unassigned all right?"
+          ],
+          "native_requests": [
+            {
+              "frame": 21724,
+              "PC": 33903244,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 21724,
+              "PC": 33895668,
+              "message_ID": 71,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 492,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_893",
+      "message_ID": 893,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "I'll get us sailors for %s gold.",
+      "speaker": "Sailor",
+      "clean_Japanese": "金貨%sをかけて\n水夫を集めますぜ",
+      "source_meaning": "The sailor offers to recruit for the stated amount.",
+      "localization_note": "The volunteer's casual wording fits the tavern and names the price before Maria decides.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 11,
+        "offset": 1684,
+        "copy_end": 1716,
+        "bytes": 31,
+        "record_index": 29,
+        "table_offset": 1318922,
+        "start_in_record": 0,
+        "exact_hex": "8be089dd257382f082a982af82c40a9085957682f08f5782df82dc82b782ba"
+      },
+      "current_reference": {
+        "block": 11,
+        "offset": 2220,
+        "copy_end": 2260,
+        "bytes": 33,
+        "record_index": 99,
+        "table_offset": 1318922,
+        "start_in_record": 0,
+        "exact_hex": "2049276c6c20676574207573207361696c6f727320666f7220257320676f6c642e"
+      },
+      "installed_reference": {
+        "block": 11,
+        "offset": 2220,
+        "copy_end": 2260,
+        "bytes": 33,
+        "record_index": 99,
+        "table_offset": 1318922,
+        "start_in_record": 0,
+        "exact_hex": "2049276c6c20676574207573207361696c6f727320666f7220257320676f6c642e"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 16920,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_016920_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "c3c6d952f63229cad36a330e806f61421a2fda4686fd0367598d244b16f2367d",
+            "framebuffer_sha256": "10903f972c433608193145e4b8c893f936f75e30f5938a0de1fae8e4a8adc9d8"
+          },
+          "arguments": [
+            "1040"
+          ],
+          "lines": [
+            "I'll get us sailors for 1040 gold."
+          ],
+          "native_requests": [
+            {
+              "frame": 16530,
+              "PC": 33903244,
+              "message_ID": 893,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 16530,
+              "PC": 33895668,
+              "message_ID": 893,
+              "caller_LR": 33897744
+            }
+          ],
+          "exact_body_pixels": 318,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_900",
+      "message_ID": 900,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "Anyone here want to sail with the Admiral?",
+      "speaker": "Sailor",
+      "clean_Japanese": "誰か、提督の船に乗りたいヤツは\nいねえか！",
+      "source_meaning": "The sailor calls for volunteers to sail with the fleet's admiral.",
+      "localization_note": "The open call sounds natural in a busy tavern. Admiral follows the source's form of address.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 11,
+        "offset": 1908,
+        "copy_end": 1952,
+        "bytes": 41,
+        "record_index": 35,
+        "table_offset": 1318936,
+        "start_in_record": 0,
+        "exact_hex": "924e82a9814192f193c282cc914482c98fe682e882bd82a28384836382cd0a82a282cb82a682a98149"
+      },
+      "current_reference": {
+        "block": 11,
+        "offset": 2499,
+        "copy_end": 2543,
+        "bytes": 43,
+        "record_index": 117,
+        "table_offset": 1318936,
+        "start_in_record": 0,
+        "exact_hex": "20416e796f6e6520686572652077616e7420746f207361696c2077697468207468652041646d6972616c3f"
+      },
+      "installed_reference": {
+        "block": 11,
+        "offset": 2499,
+        "copy_end": 2543,
+        "bytes": 43,
+        "record_index": 117,
+        "table_offset": 1318936,
+        "start_in_record": 0,
+        "exact_hex": "20416e796f6e6520686572652077616e7420746f207361696c2077697468207468652041646d6972616c3f"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 17320,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_017320_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "308f6333a4fcaccb7bacafdf0f3029cfc5840fa24f31096eff4c87122bd3d403",
+            "framebuffer_sha256": "88351c50d0c411b18d65511e5851078ab2bfd7a06ba7bc78906b6d473e844aca"
+          },
+          "arguments": [],
+          "lines": [
+            "Anyone here want to sail",
+            "with the Admiral?"
+          ],
+          "native_requests": [
+            {
+              "frame": 16942,
+              "PC": 33903244,
+              "message_ID": 900,
+              "caller_LR": 33897892
+            },
+            {
+              "frame": 16942,
+              "PC": 33895668,
+              "message_ID": 900,
+              "caller_LR": 33897892
+            }
+          ],
+          "exact_body_pixels": 444,
+          "exact_nameplate": [
+            65,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_907",
+      "message_ID": 907,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "context": "Maria accepts the Tavern's offer to keep looking and checks the resulting crew assignment.",
+      "english": "Aye!",
+      "speaker": "Patron",
+      "clean_Japanese": "おおう！",
+      "source_meaning": "A patron calls out in agreement.",
+      "localization_note": "The one-word answer makes sense as a public response to the call for volunteers.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "block": 11,
+        "offset": 2160,
+        "copy_end": 2168,
+        "bytes": 8,
+        "record_index": 39,
+        "table_offset": 1318950,
+        "start_in_record": 80,
+        "exact_hex": "82a882a882a48149"
+      },
+      "current_reference": {
+        "block": 11,
+        "offset": 2774,
+        "copy_end": 2780,
+        "bytes": 5,
+        "record_index": 124,
+        "table_offset": 1318950,
+        "start_in_record": 0,
+        "exact_hex": "2041796521"
+      },
+      "installed_reference": {
+        "block": 11,
+        "offset": 2774,
+        "copy_end": 2780,
+        "bytes": 5,
+        "record_index": 124,
+        "table_offset": 1318950,
+        "start_in_record": 0,
+        "exact_hex": "2041796521"
+      },
+      "holds": [
+        {
+          "capture": {
+            "frame": 17720,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_017720_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "72840de1cb7d59a2c687423ce10d18f0559def595c90a53a3f5c516dfaadf633",
+            "framebuffer_sha256": "8d6e487f0d8554e29c9e5bb8088fd3059c4d7df3c8dd68d4b2c56d7cbd0733dd"
+          },
+          "arguments": [],
+          "lines": [
+            "Aye!"
+          ],
+          "native_requests": [
+            {
+              "frame": 17342,
+              "PC": 33903244,
+              "message_ID": 907,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 17342,
+              "PC": 33895668,
+              "message_ID": 907,
+              "caller_LR": 33898488
+            }
+          ],
+          "exact_body_pixels": 52,
+          "exact_nameplate": [
+            74,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "ARM9_even_notice": {
+    "ARM9_pointer_offset": 123516,
+    "ARM9_text_offset": 1261384,
+    "source_reference": {
+      "clean_Japanese": "平均的に水夫を割り当てました",
+      "bytes": "95bd8bcf934982c99085957682f08a8482e8939682c482dc82b582bd"
+    },
+    "installed_reference": {
+      "english": "Sailors assigned evenly.",
+      "bytes": "5361696c6f72732061737369676e6564206576656e6c792e"
+    },
+    "decision": "retention",
+    "rationale": "The message confirms the chosen policy and the fleet table shows the resulting distribution.",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": true
+    },
+    "capture": {
+      "frame": 20520,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_020520_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "5ce153e6a35c469f50c59582f2840f711035f62f9a8ce71eb97d3ad482673ad0",
+      "framebuffer_sha256": "2782b4740f8a59dbf2cc60f79373437eb1d7bbe56d4accc833fb1abc25ffa23d"
+    },
+    "body_pixels": 249,
+    "nameplate": [
+      65,
+      [
+        16,
+        277,
+        52,
+        288
+      ]
+    ]
+  },
+  "changes": {
+    "first_batches": [
+      57,
+      63
+    ],
+    "second_batches": [
+      53,
+      53
+    ],
+    "observed_fee_per_round": 1040,
+    "wallet_balances": {
+      "14920": {
+        "text": "36195",
+        "bounds": [
+          100,
+          351,
+          130,
+          362
+        ],
+        "ink_pixels": 82,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "22520": {
+        "text": "34115",
+        "bounds": [
+          100,
+          351,
+          130,
+          362
+        ],
+        "ink_pixels": 72,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "22920": {
+        "text": "34115",
+        "bounds": [
+          100,
+          351,
+          130,
+          362
+        ],
+        "ink_pixels": 72,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      "25320": {
+        "text": "34115",
+        "bounds": [
+          100,
+          351,
+          130,
+          362
+        ],
+        "ink_pixels": 72,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    },
+    "distributions": {
+      "13720": [
+        {
+          "text": "114",
+          "bounds": [
+            94,
+            24,
+            112,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 38,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "120",
+          "bounds": [
+            220,
+            24,
+            238,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 43,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "57",
+          "bounds": [
+            184,
+            212,
+            196,
+            223
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 30,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "57",
+          "bounds": [
+            184,
+            244,
+            196,
+            255
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 30,
+          "all_ink_and_blank_cells_exact": true
+        }
+      ],
+      "19320": [
+        {
+          "text": "114",
+          "bounds": [
+            94,
+            24,
+            112,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 38,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "106",
+          "bounds": [
+            220,
+            24,
+            238,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 47,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "57",
+          "bounds": [
+            184,
+            212,
+            196,
+            223
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 30,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "57",
+          "bounds": [
+            184,
+            244,
+            196,
+            255
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 30,
+          "all_ink_and_blank_cells_exact": true
+        }
+      ],
+      "20920": [
+        {
+          "text": "200",
+          "bounds": [
+            94,
+            24,
+            112,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 51,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "20",
+          "bounds": [
+            220,
+            24,
+            232,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 33,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            212,
+            196,
+            223
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            244,
+            196,
+            255
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        }
+      ],
+      "21720": [
+        {
+          "text": "200",
+          "bounds": [
+            94,
+            24,
+            112,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 51,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "20",
+          "bounds": [
+            220,
+            24,
+            232,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 33,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            212,
+            196,
+            223
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            244,
+            196,
+            255
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        }
+      ],
+      "24520": [
+        {
+          "text": "200",
+          "bounds": [
+            94,
+            24,
+            112,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 51,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "0",
+          "bounds": [
+            220,
+            24,
+            226,
+            35
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 18,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            212,
+            196,
+            223
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        },
+        {
+          "text": "100",
+          "bounds": [
+            178,
+            244,
+            196,
+            255
+          ],
+          "color": [
+            230,
+            230,
+            230
+          ],
+          "ink_pixels": 46,
+          "all_ink_and_blank_cells_exact": true
+        }
+      ]
+    },
+    "choice_masks": [
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "first_exit_confirmation": {
+      "frame": 14120,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_014120_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "fd6fc2ba1c26500552e0d0fbd2507e61871516a6351226e8bf0ba106b2484b79",
+      "framebuffer_sha256": "28276660131d2d94f04afeab1115a8c3f526db8b9f5f8318138c52fb5afb48a7"
+    },
+    "no_restored_exact_assignment": true,
+    "yes_returned_to_tavern": {
+      "frame": 22520,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_022520_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "ace6df4ff75dc33667b29a7e265e1ffe1e192ec25c859737d5b58e7ac97ea604",
+      "framebuffer_sha256": "1a0aa32002baf608d9e890e4c1ee4232ffad0b06732bf704cae209b7b2220bc7"
+    },
+    "reopened_crew_setup": {
+      "frame": 24520,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_024520_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "fe32dedfd9d7a22d16354fca115e0ae265911d830b168cff1208a7abc581165b",
+      "framebuffer_sha256": "8fe6f82566e9b7923e6836e39630429b6baac76eed593b0da3d2e784327a75da"
+    },
+    "returned_to_town": {
+      "frame": 25320,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_nagasaki_second_recruitment\\capture\\frame_025320_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "0a08469ff9993353de99e0f3a1cde625f6cc769b8febb07c8213f9aed272c841",
+      "framebuffer_sha256": "4b3e7019e064c1c06f0dea84a8d4a629cca0902dbce7ac2416e29d59526f8713"
+    }
+  },
+  "earlier_paired_replay": {
+    "path": "releases/all_routes_editorial_20261124_nagasaki_tavern_recruitment_candidate/verification/paired_gameplay.json",
+    "sha256": "348aee1008c3af72a59a8da202809343df20f7a79a2b007550bf3bb1ed1ee2af"
+  },
+  "earlier_decline_review": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_tavern_20261124.json",
+    "sha256": "25bbed49d328b6feb6b804d2fa3e44cd98ba75eaa0b02bc889c0e6c21add0a10"
+  },
+  "controller_commands": [
+    {
+      "until": 13320,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 13720,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 14120,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 14520,
+      "duration": 8,
+      "buttons": [
+        "DOWN"
+      ]
+    },
+    {
+      "until": 14920,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 15320,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 15720,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 16120,
+      "duration": 8,
+      "buttons": [
+        "DOWN"
+      ]
+    },
+    {
+      "until": 16520,
+      "duration": 8,
+      "buttons": [
+        "DOWN"
+      ]
+    },
+    {
+      "until": 16920,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 17320,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 17720,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 18120,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 18520,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 18920,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 19320,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 19720,
+      "duration": 8,
+      "buttons": [
+        "Y"
+      ]
+    },
+    {
+      "until": 20120,
+      "duration": 8,
+      "buttons": [
+        "DOWN"
+      ]
+    },
+    {
+      "until": 20520,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 20920,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 21320,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 21720,
+      "duration": 8,
+      "buttons": [
+        "B"
+      ]
+    },
+    {
+      "until": 22120,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 22520,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 22920,
+      "duration": 8,
+      "buttons": [
+        "B"
+      ]
+    },
+    {
+      "until": 23320,
+      "duration": 8,
+      "buttons": [
+        "Y"
+      ]
+    },
+    {
+      "until": 23720,
+      "duration": 8,
+      "buttons": [
+        "X"
+      ]
+    },
+    {
+      "until": 24120,
+      "duration": 8,
+      "touch": [
+        127,
+        122
+      ]
+    },
+    {
+      "until": 24520,
+      "duration": 8,
+      "buttons": [
+        "A"
+      ]
+    },
+    {
+      "until": 24920,
+      "duration": 8,
+      "buttons": [
+        "B"
+      ]
+    },
+    {
+      "until": 25320,
+      "duration": 8,
+      "buttons": [
+        "B"
+      ]
+    },
+    {
+      "stop": true
+    }
+  ],
+  "evidence": {
+    "donor": {
+      "path": "E:/Rota Nova translations/Saves/maria-nagasaki-namahage-v514.dsv",
+      "sha256": "fbae21aa2c5a695bde0eddfc10a3bbeb80d01478bd6a9ed743d824595dc3096e"
+    },
+    "capture": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_nagasaki_second_recruitment/capture/capture_report.json",
+      "sha256": "9817abfd2a0b16acdd9b694ba201ad91126adf3ffb2e2ce1e14211e8c97e1897"
+    },
+    "trace": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_nagasaki_second_recruitment/trace/requests.json",
+      "sha256": "072171840f5078c10c5ec28e83cb8ffaf1d7266c1a4f21494be4224aaaeebb2c"
+    },
+    "terminal": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_nagasaki_second_recruitment/terminal.json",
+      "sha256": "b789aff0cf853a1a94f4829a0fbb16a79dcc77f78e5c41eaf66ae3992fa2ecf1"
+    },
+    "journal": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_nagasaki_second_recruitment/capture/navigation_command_journal.json",
+      "sha256": "4d8d6362648a5c82ea45f9f2a74cded9f723d4d8621ca8f115f3760b2c4f1357"
+    }
+  },
+  "observed_COMMON_ids": [
+    51,
+    53,
+    71,
+    823,
+    855,
+    867,
+    870,
+    872,
+    874,
+    893,
+    900,
+    904,
+    907,
+    1045
+  ],
+  "archived_ids_seen": [],
+  "unvisited": [
+    "Other recruit amounts, policy orders, and voice variants",
+    "Physical hardware"
+  ],
+  "ROM_changed": false,
+  "new_editorial_credit": 0,
+  "contact_sheets": [
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_second_recruitment_current_1_20261124.png",
+      "sha256": "84bdabf0fe6fb0f0d5a88fd6e34eb4770ca60ac4848bb64175196be3ae91121d"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_second_recruitment_current_2_20261124.png",
+      "sha256": "caee953d1186863e06871e9ffc40f489f21dd810dd295b94cb90e1f6f2300925"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_second_recruitment_current_3_20261124.png",
+      "sha256": "8f1a37e97910851110935fe4b8792026d1e531fc232f2837c3326a4646649fca"
+    }
+  ]
+}

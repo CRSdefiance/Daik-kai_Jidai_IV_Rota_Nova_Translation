@@ -1,0 +1,7 @@
+# Maria's opening and Hodram phrase repairs
+
+Reviewed 101 Maria records across the opening Proof of Conquest discussion, the naval confrontations, and Lil and Hodram's exchanges. The pass revises 43 and justifies 58 retentions. Kurushima now offers to surrender as the Japanese says. The changes preserve the difference between Maria's offer of reassurance and her firmer order to keep watch. The batch repairs three earlier Hodram phrase breaks and carries 67 exact decisions from their surrounding conversations. [Exact source, prior English and registered records](../releases/all_routes_editorial_20261122_maria_opening_hodram_wraps_candidate/verification/registered_review.json)
+
+The native renderer checked 46 changed pages plus alternate-name layouts. Focused emulator excerpts verified 31 pages across the two routes. The ordinary Options run also verified both Sailing Help directions through the independently stored prompt. Original story triggers, alternate COMMON callers and hardware remain unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261122_maria_opening_hodram_wraps_candidate/verification)
+
+Startup and 17 regression checks passed. All 114 accepted layers and the ASCII right-bound correction are carried forward. The clean-input patch reconstructs the candidate byte for byte. [Testing ROM and patch](../releases/all_routes_editorial_20261122_maria_opening_hodram_wraps_candidate/README.md)

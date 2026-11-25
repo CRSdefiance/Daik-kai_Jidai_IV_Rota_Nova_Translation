@@ -1,0 +1,195 @@
+{
+  "candidate_sha256": "6aee570bea54d980215ec0fea31db1f425edf64ef1486d0c63472303da555585",
+  "fixture": {
+    "synthetic_regional_financial_display_fixture": true,
+    "fleet_index": 57,
+    "actual_fleet": 36510420,
+    "original_own_main_finance_getters": [
+      1,
+      0,
+      36511280
+    ],
+    "actual_finance_record": 36511280,
+    "original_source_field_offsets": {
+      "income": 16,
+      "expenses": 12,
+      "invested": 20
+    },
+    "before_values": {
+      "income": 0,
+      "expenses": 0,
+      "invested": 0
+    },
+    "display_values": {
+      "income": 1234567890,
+      "expenses": 4294967295,
+      "invested": 987654321
+    },
+    "source_native_format": "%8lu",
+    "unsigned_32_bit_maximum_expense_case": true,
+    "changes": [
+      {
+        "address": 36511292,
+        "before": 0,
+        "after": 255
+      },
+      {
+        "address": 36511293,
+        "before": 0,
+        "after": 255
+      },
+      {
+        "address": 36511294,
+        "before": 0,
+        "after": 255
+      },
+      {
+        "address": 36511295,
+        "before": 0,
+        "after": 255
+      },
+      {
+        "address": 36511296,
+        "before": 0,
+        "after": 210
+      },
+      {
+        "address": 36511297,
+        "before": 0,
+        "after": 2
+      },
+      {
+        "address": 36511298,
+        "before": 0,
+        "after": 150
+      },
+      {
+        "address": 36511299,
+        "before": 0,
+        "after": 73
+      },
+      {
+        "address": 36511300,
+        "before": 0,
+        "after": 177
+      },
+      {
+        "address": 36511301,
+        "before": 0,
+        "after": 104
+      },
+      {
+        "address": 36511302,
+        "before": 0,
+        "after": 222
+      },
+      {
+        "address": 36511303,
+        "before": 0,
+        "after": 58
+      }
+    ],
+    "only_three_declared_finance_words_changed": true,
+    "company_money_fleet_operating_funds_ships_orders_code_other_fields_and_source_saves_preserved": true,
+    "before_RAM_sha256": "d8dbf72af96c0baa08c264dd086ff859c918c9f54d67c86b0cdb90126c086941",
+    "after_RAM_sha256": "be54a8ca38710ce39defd1502e3407cf3847ceb6d2df630f9f3d2b68a137df4e",
+    "ARM9_sha256": "9e1cdb0100ec5207fab7fd00766099f204673ca69e465c94c3638da76f0ba940",
+    "actual_monthly_income_expense_investment_or_earned_progression_verified": false,
+    "frame": 12200
+  },
+  "verified_destination": {
+    "text": "To: Stockholm",
+    "bounds": [
+      80,
+      247,
+      158,
+      258
+    ],
+    "ink_pixels": 148,
+    "color": [
+      230,
+      230,
+      230
+    ],
+    "all_ink_and_blank_cells_exact": true
+  },
+  "unchanged_comparison_frames": [
+    11800,
+    12000,
+    12200,
+    12600,
+    12800
+  ],
+  "glyph_masks": [
+    {
+      "label": "Income",
+      "amount": 1234567890,
+      "label_ink": 75,
+      "amount_ink": 163,
+      "label_box": [
+        86,
+        269,
+        122,
+        280
+      ],
+      "right_aligned_amount_box": [
+        140,
+        269,
+        200,
+        280
+      ]
+    },
+    {
+      "label": "Expenses",
+      "amount": 4294967295,
+      "label_ink": 103,
+      "amount_ink": 172,
+      "label_box": [
+        86,
+        283,
+        134,
+        294
+      ],
+      "right_aligned_amount_box": [
+        140,
+        283,
+        200,
+        294
+      ]
+    },
+    {
+      "label": "Invested",
+      "amount": 987654321,
+      "label_ink": 99,
+      "amount_ink": 145,
+      "label_box": [
+        86,
+        297,
+        134,
+        308
+      ],
+      "right_aligned_amount_box": [
+        140,
+        297,
+        200,
+        308
+      ]
+    }
+  ],
+  "latest_report": {
+    "path": ".codex-release-work/shared_display_20261123/fleet_finance_widths_20261124/capture/capture_report.json",
+    "sha256": "ebc4eab4990222dbe3b932f2785df0b8fe08d5f3a0b56acf375bc73408acbc55"
+  },
+  "earlier_zero_amount_report": {
+    "path": "E:/Rota Nova translations/Generated/work/fleet_info_packed_report_replay/capture/capture_report.json",
+    "sha256": "735eb09cdcbbca96c307049ffd20306ad4c3c710000b96a62f7918bbdf0db33c"
+  },
+  "visual": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/fleet_finance_widths_20261124.png",
+    "sha256": "e573eff46c00509d39691723fc240ec73c57c3de7eb2aaa6e11394dcb8f1ac4e"
+  },
+  "evidence_kind": "focused emulator fixture",
+  "fixture_scope": "The Report uses the original verified Manuel Fleet assignment and controller schedule. Only three finance words were supplied. The nine- and ten-digit cases verify the actual legacy report's layout. Earned income, expenses and investment remain unobserved here.",
+  "new_editorial_credit": 0,
+  "ROM_changed": false
+}

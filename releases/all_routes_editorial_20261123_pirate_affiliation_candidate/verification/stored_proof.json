@@ -1,0 +1,117 @@
+{
+  "candidate_sha256": "4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b",
+  "predecessor_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb",
+  "clean_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "target_ARM9_sha256": "eb25ae4ce1448d685ef272231c9df3648cb0cfb498616af22986d6b5d3c66f6b",
+  "changed_files": [
+    "/__arm9__.bin"
+  ],
+  "target_COMMON_sha256": "18780411a5b48c04c9262c72cd67c69f29af7e0babf201433b56d3d100b85160",
+  "exact_parent_inverse": true,
+  "source25": {
+    "all_four_final_story_archives_checked": true,
+    "source_bound_new_command_counts": {
+      "/data/SC0.DK4": 0,
+      "/data/SC1.DK4": 0,
+      "/data/SC2.DK4": 0,
+      "/data/SC3.DK4": 0
+    },
+    "leading_source25_state_exception_is_byte_zero_only": true,
+    "exact_source_bound_relocated_leading25_count": 5,
+    "relocated_source25_records": [
+      {
+        "block": 146,
+        "target_index": 48
+      },
+      {
+        "block": 146,
+        "target_index": 56
+      },
+      {
+        "block": 146,
+        "target_index": 64
+      },
+      {
+        "block": 146,
+        "target_index": 71
+      },
+      {
+        "block": 146,
+        "target_index": 88
+      }
+    ],
+    "original_four_archive_printf_checks_and_nonleading_rejections_preserved": true,
+    "checked_detector_source_sha256": "2db0eb319d2b0d7d4fd2f66f478917f5f233c322045f52bc71c409f21f9b9701",
+    "exact_prior_relocation_receipt": {
+      "path": "translations\\editorial_checkpoints\\rafael_basra_and_map_keys_20261123\\source25_basra_SC0_qualification.json",
+      "sha256": "ac75e8f9c3f33897194d7973462c43b2968baf7ca969a632f5c962dbb0c256f5"
+    },
+    "additional_exact_source_bound_relocated_leading25_count": 2,
+    "additional_relocated_source25_records": [
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 43
+      },
+      {
+        "file_path": "/data/SC3.DK4",
+        "block": 38,
+        "target_index": 51
+      }
+    ],
+    "total_exact_source_bound_relocated_leading25_count": 7,
+    "exact_relocation_receipt": {
+      "path": "translations\\editorial_checkpoints\\rafael_basra_and_map_keys_20261123\\source25_basra_qualification.json",
+      "sha256": "956e48244003d02e7e512a32148666f9b77febc78d59a19ce53cdb0ed832e016"
+    }
+  },
+  "records": [
+    {
+      "id": "ARM9_ALTERNATE_BATTLE_PIRATE_AFFILIATION",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Opponent affiliation nameplate",
+      "source_Japanese": "海賊",
+      "english": "Pirate",
+      "context": "The alternate battle draws the opponent affiliation beside the player's named fleet. The same branch accepts the original faction-name getter for other affiliations.",
+      "source_meaning": "The affiliation field identifies the opponent as a pirate.",
+      "localization_note": "The singular role reads naturally under the opponent and stays distinct from a fleet name. It preserves the source role without assigning a new faction or rank.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "source_reference": {
+        "offset": 1246708,
+        "bytes": "8a4391af00000000",
+        "clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d"
+      },
+      "current_reference": {
+        "offset": 1246708,
+        "bytes": "8a4391af00000000",
+        "candidate_sha256": "d93fa9d5cc066071cbb04ed4fedc64cd83fa32a80442c9284fcdb247ba4323cb"
+      },
+      "proposed_reference": {
+        "offset": 1246708,
+        "bytes": "5069726174650000",
+        "exclusive_end": 1246716
+      },
+      "original_painter_call": 33602628,
+      "substitutions": [],
+      "pages_in_field": 1,
+      "installed_reference": {
+        "offset": 1246708,
+        "bytes": "5069726174650000",
+        "exclusive_end": 1246716,
+        "candidate_sha256": "4174663377b90be9cbf50a796f401932cf81cced165e6cb5ca776724cfad572b",
+        "ARM9_sha256": "eb25ae4ce1448d685ef272231c9df3648cb0cfb498616af22986d6b5d3c66f6b"
+      }
+    }
+  ],
+  "evidence": {
+    "translations\\editorial_checkpoints\\shared_display_20261123\\pirate_affiliation_panel_20261123.json": "9cccc1911b6043db3b9ab62c35cd62a6b2e553d55ded5f68acc9464f7c21307b"
+  },
+  "staged_only": true
+}

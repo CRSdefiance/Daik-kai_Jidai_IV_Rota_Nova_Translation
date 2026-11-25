@@ -1,0 +1,54 @@
+{
+  "format": "dk4-common-entry-manuscript-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-fixed-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "file_path": "/COMMON/MESFILE.DK4",
+  "source_clean_COMMON_sha256": "4ba2b09e6c4032d6466ab1ec77f6ce2eea2edf58ae50a6b2f0dcb91037e269bc",
+  "source_canonical_COMMON_sha256": "75d48f50da7b3a4185276048a3779dee3e1dfb503dee5f228f88c9023dbc629c",
+  "source_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM_sha256": "ff324c1791d74fd1e7cbf315b4b5ffad719a6c9d3119c44bed30183c9a8195cc",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_730",
+      "message_id": 730,
+      "source_hex": "82b182ea82a982e782cd814182ab82c182c60a257382cc0a82c782ea82a982aa97ac8d7382e882dc82b782e6",
+      "japanese": "これからは、きっと\n%sの\nどれかが流行りますよ",
+      "canonical_source_hex": "4865726520697320736f6d65206c6f63616c20696e666f726d6174696f6e2e2025730a200a200a2020202020",
+      "current_text_hex": "4f6e65206f662074686520676f6f647320696e2025732077696c6c20737572656c79206265636f6d6520706f70756c617220736f6f6e2e",
+      "current_English": "One of the goods in %s will surely become popular soon.",
+      "english": "Something in the %s market is sure to catch on soon.{PAD}",
+      "speaker": "Square shopkeeper, original contextual town actor",
+      "context": "Original5FB54 future-trend branch with value below25 and its random choice0 selects730. Original5FC40 reads the selected product category byte, calls C5BA0 and supplies its result to direct portrait730. The exact returnPC205FC48 now selects full names; all five other direct callers and Square caption callers retain compact strings.",
+      "source_meaning": "One unspecified individual good within the supplied category is certain to become popular in the future; the prediction does not apply to all goods in that category.",
+      "localization_note": "Something in the category market is natural merchant advice for an unspecified future hit. Retain certainty and the near-future sense without inventing a product identity. Expand abbreviated category arguments Seasonings, Delicacy, Precious Metals, Jewelry, Medicine and Sundries. Other already complete English category words remain unchanged. The actual menu words and all source substitutions remain exact.",
+      "decision": "revise",
+      "source_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2056
+      },
+      "current_reference": {
+        "block": 9,
+        "record": 17,
+        "offset": 2107
+      },
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "status": "source-context-native-reviewed-gameplay-pending"
+    }
+  ],
+  "status": "experimental-native-reviewed-gameplay-pending"
+}

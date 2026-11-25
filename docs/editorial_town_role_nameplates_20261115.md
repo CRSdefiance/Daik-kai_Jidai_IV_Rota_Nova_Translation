@@ -1,0 +1,9 @@
+# Town speaker roles
+
+The current Forces Relationships candidate keeps **Patron**, **Shipwright**, **Guard**, **Innkeeper**, and **Guildmaster** across 29 regional actors. The [individual review](../translations/editorial_checkpoints/SharedText_20261110_v1/town_role_nameplates_review_20261115_v1.json) records clean and current names, role selection, contextual reasons and five gates for each actor. Earlier decisions for **Shopkeeper**, **Man**, **Woman**, **Stranger** and **Shady Man** are in the [existing speaker-label review](editorial_localization_and_layout_standard.md).
+
+Twenty-one complete Japanese exchanges and their installed English provide the context for these decisions across all four routes. Twenty-one actors appear directly in the reviewed exchanges. For the other eight regional variants, the same original Japanese role and the town selector identify the speaker. The review distinguishes an informant who uses a patron’s nameplate, a guard played as part of a ruse, and the innkeeper whose relationship to Mao is established in her dialogue.
+
+Using the current build’s recorded startup state, the original selectors passed all 450 town and role combinations. Both name getters returned the expected English for the 29 actors. All five progressive labels passed complete native glyph and bounds checks, and the rendered labels were visually inspected. The earlier ordinary Istanbul Inn replay observed actor 142; the new selector and display checks are offline. The catalog’s screen layout remains open. [Native nameplate sheet](../work/town_role_labels_20261115_v1/native/names_part1.png) · [Earlier Istanbul replay](inn_editorial_v801_checkpoint.md)
+
+The 29 nameplate decisions retain existing text, with zero new dialogue records credited. Other roles, proper names, aliases and custom names remain in the wider review.

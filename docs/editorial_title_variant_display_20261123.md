@@ -1,0 +1,9 @@
+# Title logo and transition display
+
+An unattended cold boot on the registered Online Card Copy candidate completed the opening and credit sequences. All 22 requested two-screen holds match the earlier pixel reference, and the original COMMON getter and copier recorded zero requests through frame 7,400. [Source and gameplay ledger](../translations/editorial_checkpoints/shared_display_20261123/title_variant_display_20261123.json) · [Reviewed display samples](../translations/editorial_checkpoints/shared_display_20261123/title_variant_display_20261123.png)
+
+The title and subtitle appear on two independent texture layers in `/FLS/M28.fls`. The same movie composes the opening fade into Rafael's scene and the closing dissolve from the night sea through dawn to the final portrait. The white frame between dawn and the final portrait is part of that transition. All three publisher and production cards use the separate `/FLS/logo.fls` movie. The evidence records the actual draws and exact archive references for each family.
+
+The four archived Transition labels retain their original 1A, 1B, 2A, and 2B identifiers. The three Title labels keep their original numbering, including the unnumbered first label. Their archived Japanese and draft English remain tied to their own offsets. The seven dispositions cover the verified DS display families. Exact assignments from the seven stored labels to individual layers and other direct COMMON callers remain unverified.
+
+**262 of 276 shared entries** now have scoped dispositions. **14 remain**, including ten legacy records, two opening descriptions, and two story scene labels. The registered candidate supplied the replay. Hardware remains unvisited for this checkpoint. [Duplicate save cleanup](../translations/editorial_checkpoints/shared_display_20261123/title_variant_display_cleanup_20261123.json)

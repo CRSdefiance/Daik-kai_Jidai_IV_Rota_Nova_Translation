@@ -1,0 +1,7 @@
+# Market Trade labels
+
+The Trade window now says Trade, Ledger and Total. The game already held the complete word Status, but its label region showed only the first four letters. The enlarged regions fit the existing Trade text atlas, and all 46 regions remain inside its bounds with no overlaps. The other eight captions keep their wording and geometry, with source glosses and individual reasons in the review. [Exact source, current and registered records](../releases/all_routes_editorial_20261119_trade_labels_candidate/verification/registered_review.json)
+
+Paired ordinary Lisbon replays verified the complete 12-caption masks in both Local and Cargo. Every sampled pixel outside the four changed label regions matches the predecessor. The Goods Info fix still shows the complete Olive Oil entry with an empty suffix area, and the amount changes during the drag match the original. Hardware remains unvisited. [Native and gameplay evidence](../releases/all_routes_editorial_20261119_trade_labels_candidate/verification)
+
+Only three caption strings and four draw rectangles change in ARM9. The clean-input patch reconstructs the ROM byte for byte. Six startup holds, 24 protected getters and 49 focused tests passed, with two optional older-ROM fixture tests skipped. All 276 open shared entries and their mapped references carry forward. [Candidate and patch](../releases/all_routes_editorial_20261119_trade_labels_candidate/README.md)

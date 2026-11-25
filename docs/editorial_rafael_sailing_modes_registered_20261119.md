@@ -1,0 +1,7 @@
+# Rafael's sailing-mode tutorial registered
+
+The tutorial now calls the modes **Info**, **Declare War**, and **Search** so the instructions match the on-screen headings. The 26-record review records 12 revisions and 14 exact retentions, including both choice labels. The original buttons, cycle order and targets carry forward. [Exact review](../releases/all_routes_editorial_20261119_rafael_sailing_modes_candidate/verification/registered_review.json)
+
+Two initialized Rafael emulator runs exercised both choices with ordinary controller input. **Please do.** displayed all 12 revised pages with complete glyphs and the intended speaker or speakerless layout. **No, thanks.** skipped the instructional panels and took the original caution path. Both returned to port. All 37 original commands were observed across the two runs. Natural scene activation and hardware remain unverified. [Accept replay](../releases/all_routes_editorial_20261119_rafael_sailing_modes_candidate/verification/accept_playback_1.png) · [Decline replay](../releases/all_routes_editorial_20261119_rafael_sailing_modes_candidate/verification/decline_playback_1.png)
+
+Only Rafael's sailing-mode tutorial block changes. The byte-exact clean-input patch, six startup holds, 24 protected getters and 34 focused tests passed. All 114 accepted layers and the ASCII right-bound correction carry forward. The ledger stands at 27,700 with 276 stored shared entries open. Main awaits acceptance. [Test ROM and patch](../releases/all_routes_editorial_20261119_rafael_sailing_modes_candidate/README.md)

@@ -1,0 +1,7 @@
+# Crew item-action replies registered
+
+All 33 crew item-action replies are registered. The ledger now credits 27,179 reviews. COMMON 2500–2532 covers eight original tables and 18 caller sites. The three shared portrait wrappers passed 46 native display cases and 33 original stored lookups. The longer remedy name originally overflowed in one variant and broke across rows in two variants. Both approved item names now remain intact through the direct and queued paths. [Exact records](../releases/all_routes_editorial_20261111_crew_item_actions_candidate/verification/registered_review.json) · [Release and patch](../releases/all_routes_editorial_20261111_crew_item_actions_candidate/README.md)
+
+The emulator observed the no-need reply, the unavailable-specialist reply and the successful use of Hua Tuo’s Tonic through the original Items menu. The test used a copied save and supplied the item, condition and one crew reassignment for the success branch. The other replies have offline coverage.
+
+797 shared native keys remain to review or classify. Start with COMMON 2533–2579, the fleet engagement, outcome and financial reports. Check the exact name and amount substitutions and the earlier battle-aftermath evidence before deciding which tests carry forward. Legacy New Game 104–107 and Market 750–752 still need consumer classification. Retrospective names, roles, wrapping and glyphs, other player-facing UI and representative town and random-scene coverage remain in scope. Deferred artwork and the later older-record technical re-audit remain separate.

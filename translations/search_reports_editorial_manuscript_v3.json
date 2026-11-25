@@ -1,0 +1,629 @@
+{
+  "format": "dk4-native-common-editorial-v1",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "file_path": "/COMMON/MESFILE.DK4",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "formatting_review_pending": true,
+  "source_clean_ROM_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "current_ROM": "out\\all_routes_combined_v1637_candidate.nds",
+  "current_ROM_sha256": "0d81ee2668d2ff535432e2a50a5df44b9c1a4b0f683fca407f5753348038e7b2",
+  "current_COMMON_sha256": "f159d3e6ab03d7bf61262e674d009e5661fc6dc1ffba2f357f4af437704a0147",
+  "current_ARM9_sha256": "48c3b6b4cc3818d97bbeaea4154368434e409acd58567c99987433b0fa0baff8",
+  "source_context": "work\\analysis\\search_reports_source_v1653\\clean_source_and_original_consumers.json",
+  "source_context_sha256": "a65b29ef4ad0315c2d4a0f5885b3ddb020e80e3d66784a41652bb1e379fce982",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_312",
+      "message_id": 312,
+      "source_Japanese": "水夫が%s人\n減りました",
+      "source_hex": "9085957682aa2573906c0a8cb882e882dc82b582bd",
+      "source_reference": {
+        "message_id": 312,
+        "block": 4,
+        "table_offset": 1317760,
+        "block_offset": 3060,
+        "copy_end": 3084,
+        "record_index": 43,
+        "start": 2,
+        "end": 23
+      },
+      "current_English": "%s sailors lost.\n    ",
+      "current_text_hex": "2573207361696c6f7273206c6f73742e0a20202020",
+      "current_reference": {
+        "message_id": 312,
+        "block": 4,
+        "table_offset": 1317760,
+        "block_offset": 2923,
+        "copy_end": 2945,
+        "record_index": 62,
+        "start": 0,
+        "end": 21
+      },
+      "canonical_source_hex": "2573207361696c6f7273206c6f73742e0a20202020",
+      "english": "Sailors lost: %s.",
+      "source_meaning": "The number of sailors decreased by the supplied amount.",
+      "localization_note": "Use idiomatic concise game-status wording. Lost does not specify death or its cause. Preserve the single original numeric substitution;remove the old line break and four trailing alignment spaces. Visual numeric review exposed the singular mismatch Lost1 sailors. A count-neutral status label is natural for both one and multiple losses and preserves the single original numeric value without inventing death or a cause.",
+      "speaker": "Original speakerless system modal",
+      "context": "Original generic sailor-reduction modal;Search helper796A4 supplies a positive clamped loss via ABF50 and546B8. Other callers remain to audit.",
+      "source_role": null,
+      "source_table": null,
+      "native_argument_count": 1,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2217",
+      "message_id": 2217,
+      "source_Japanese": "探検隊が戻ってきました\nあたりには何もないようです！",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82dc82b582bd0a82a082bd82e882c982cd89bd82e082c882a282e682a482c582b78149",
+      "source_reference": {
+        "message_id": 2217,
+        "block": 23,
+        "table_offset": 1321570,
+        "block_offset": 1864,
+        "copy_end": 1916,
+        "record_index": 39,
+        "start": 2,
+        "end": 53
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "message_id": 2217,
+        "block": 23,
+        "table_offset": 1321570,
+        "block_offset": 3573,
+        "copy_end": 3610,
+        "record_index": 117,
+        "start": 0,
+        "end": 36
+      },
+      "canonical_source_hex": "652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e2020202020202020202020202020202020",
+      "english": "The expedition is back! It looks like there's nothing around here.",
+      "source_meaning": "The expedition has returned;there appears to be nothing nearby.",
+      "localization_note": "Restore the omitted return and tentative finding. A brisk complete report suits the exclamation;do not turn an apparent absence into a categorical worldwide claim.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Original unsuccessful Search:role1/table2116EC0 via79F98,then original fatigue+3/status308. Preserve returned-expedition and tentative/hearsay distinctions.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2218",
+      "message_id": 2218,
+      "source_Japanese": "探検隊が戻ってきたよ\nめぼしい物はないみたいだね",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82e60a82df82da82b582a295a882cd82c882a282dd82bd82a282be82cb",
+      "source_reference": {
+        "message_id": 2218,
+        "block": 23,
+        "table_offset": 1321572,
+        "block_offset": 1916,
+        "copy_end": 1964,
+        "record_index": 40,
+        "start": 0,
+        "end": 47
+      },
+      "current_English": "The expedition is back. Nothing\n  worthwhile.  ",
+      "current_text_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a2020776f7274687768696c652e2020",
+      "current_reference": {
+        "message_id": 2218,
+        "block": 23,
+        "table_offset": 1321572,
+        "block_offset": 3610,
+        "copy_end": 3658,
+        "record_index": 118,
+        "start": 0,
+        "end": 47
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a20776f7274687768696c652e202020",
+      "english": "The expedition's back. Looks like they found nothing worthwhile.",
+      "source_meaning": "The expedition is back;it seems there was nothing noteworthy.",
+      "localization_note": "Keep the casual voice and the distinction between nothing worthwhile and literally nothing. The conversational omitted subject is natural American dialogue. Native research1663c stranded worthwhile on a third line. This equally faithful casual sentence retains the return,tentative report and nothing worthwhile while avoiding that orphan;no authored line break or fact was added.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Original unsuccessful Search:role1/table2116EC0 via79F98,then original fatigue+3/status308. Preserve returned-expedition and tentative/hearsay distinctions.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2219",
+      "message_id": 2219,
+      "source_Japanese": "探検隊が戻ってきたが\nあたりには何もないようじゃな",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82aa0a82a082bd82e882c982cd89bd82e082c882a282e682a482b682e182c8",
+      "source_reference": {
+        "message_id": 2219,
+        "block": 23,
+        "table_offset": 1321574,
+        "block_offset": 1964,
+        "copy_end": 2016,
+        "record_index": 41,
+        "start": 0,
+        "end": 49
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "message_id": 2219,
+        "block": 23,
+        "table_offset": 1321574,
+        "block_offset": 3658,
+        "copy_end": 3695,
+        "record_index": 119,
+        "start": 0,
+        "end": 36
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e20202020202020202020202020",
+      "english": "The expedition's back, but there doesn't seem to be anything nearby.",
+      "source_meaning": "The expedition returned,but there seems to be nothing nearby.",
+      "localization_note": "Preserve the return,but contrast and tentative observation. Convey the older speaker naturally without invented dialect or archaic English.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Original unsuccessful Search:role1/table2116EC0 via79F98,then original fatigue+3/status308. Preserve returned-expedition and tentative/hearsay distinctions.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2220",
+      "message_id": 2220,
+      "source_Japanese": "探検隊が戻ってきたよ\nこの辺には何もないんだって",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82bd82e60a82b182cc95d382c982cd89bd82e082c882a282f182be82c182c4",
+      "source_reference": {
+        "message_id": 2220,
+        "block": 23,
+        "table_offset": 1321576,
+        "block_offset": 2016,
+        "copy_end": 2064,
+        "record_index": 42,
+        "start": 2,
+        "end": 49
+      },
+      "current_English": "The expedition is back. Nothing\n  around here. ",
+      "current_text_hex": "5468652065787065646974696f6e206973206261636b2e204e6f7468696e670a202061726f756e6420686572652e20",
+      "current_reference": {
+        "message_id": 2220,
+        "block": 23,
+        "table_offset": 1321576,
+        "block_offset": 3695,
+        "copy_end": 3743,
+        "record_index": 120,
+        "start": 0,
+        "end": 47
+      },
+      "canonical_source_hex": "652065787065646974696f6e206973206261636b2e204e6f7468696e670a2061726f756e6420686572652e20202020",
+      "english": "The expedition's back. They say there's nothing around here.",
+      "source_meaning": "The expedition has returned;they say there is nothing in this area.",
+      "localization_note": "Preserve the explicit hearsay and conversational voice. Keep the report limited to this area.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Original unsuccessful Search:role1/table2116EC0 via79F98,then original fatigue+3/status308. Preserve returned-expedition and tentative/hearsay distinctions.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2221",
+      "message_id": 2221,
+      "source_Japanese": "探検隊が戻ってきました\nこの辺には何もないようですな",
+      "source_hex": "92548c9f91e082aa96df82c182c482ab82dc82b582bd0a82b182cc95d382c982cd89bd82e082c882a282e682a482c582b782c8",
+      "source_reference": {
+        "message_id": 2221,
+        "block": 23,
+        "table_offset": 1321578,
+        "block_offset": 2064,
+        "copy_end": 2116,
+        "record_index": 43,
+        "start": 0,
+        "end": 51
+      },
+      "current_English": "The expedition found nothing nearby.",
+      "current_text_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e",
+      "current_reference": {
+        "message_id": 2221,
+        "block": 23,
+        "table_offset": 1321578,
+        "block_offset": 3743,
+        "copy_end": 3780,
+        "record_index": 121,
+        "start": 0,
+        "end": 36
+      },
+      "canonical_source_hex": "5468652065787065646974696f6e20666f756e64206e6f7468696e67206e65617262792e202020202020202020202020202020",
+      "english": "The expedition has returned. There doesn't seem to be anything around here.",
+      "source_meaning": "The expedition has returned;there seems to be nothing around here.",
+      "localization_note": "Keep a measured report and tentative judgment. Restore the missing return without inventing a rank,address or discovery.",
+      "speaker": "Original role1 speaker with original voice-table selection",
+      "context": "Original unsuccessful Search:role1/table2116EC0 via79F98,then original fatigue+3/status308. Preserve returned-expedition and tentative/hearsay distinctions.",
+      "source_role": 1,
+      "source_table": 34696896,
+      "native_argument_count": 0,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending"
+    },
+    {
+      "id": "COMMON_MESSAGE_2229",
+      "message_id": 2229,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見しました",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca982b582dc82b582bd",
+      "source_reference": {
+        "message_id": 2229,
+        "block": 23,
+        "table_offset": 1321594,
+        "block_offset": 2452,
+        "copy_end": 2496,
+        "record_index": 51,
+        "start": 1,
+        "end": 42
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "message_id": 2229,
+        "block": 23,
+        "table_offset": 1321594,
+        "block_offset": 4032,
+        "copy_end": 4067,
+        "record_index": 129,
+        "start": 0,
+        "end": 34
+      },
+      "canonical_source_hex": "617465722025732062617272656c733b20666f6f642025732062617272656c732e2020202020202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food.",
+      "source_meaning": "The expedition discovered the supplied barrel counts of water and food,in that order.",
+      "localization_note": "Restore the expedition as subject and found as the action;use natural English coordination. Preserve two original%s values,water first,food second,and barrels for both. Original79F18/79F2C multiplies both quantities by5,so nonzero source counts are at least5;the plural barrels never receives a singular count in the original event.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Original successful forage Search:role7/table2116E80 via79F5C,r2=ABF50(water r5),r3=ABF50(food r6),then34C98 adds the same counts to the existing fleet. Values and units must retain their order.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2230",
+      "message_id": 2230,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽を\n見つけたよ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d82f00a8ca982c282af82bd82e6",
+      "source_reference": {
+        "message_id": 2230,
+        "block": 23,
+        "table_offset": 1321596,
+        "block_offset": 2496,
+        "copy_end": 2540,
+        "record_index": 52,
+        "start": 2,
+        "end": 43
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "message_id": 2230,
+        "block": 23,
+        "table_offset": 1321596,
+        "block_offset": 4067,
+        "copy_end": 4102,
+        "record_index": 130,
+        "start": 0,
+        "end": 34
+      },
+      "canonical_source_hex": "7465722025732062617272656c733b20666f6f642025732062617272656c732e202020202020202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition found the supplied barrel counts of water and food;casual report.",
+      "localization_note": "Use an upbeat informal report without inventing extra supplies. Preserve water then food,two%s substitutions and both barrel units. Original79F18/79F2C multiplies both quantities by5,so nonzero source counts are at least5;the plural barrels never receives a singular count in the original event.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Original successful forage Search:role7/table2116E80 via79F5C,r2=ABF50(water r5),r3=ABF50(food r6),then34C98 adds the same counts to the existing fleet. Values and units must retain their order.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2231",
+      "message_id": 2231,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見！",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca98149",
+      "source_reference": {
+        "message_id": 2231,
+        "block": 23,
+        "table_offset": 1321598,
+        "block_offset": 2540,
+        "copy_end": 2576,
+        "record_index": 53,
+        "start": 2,
+        "end": 37
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "message_id": 2231,
+        "block": 23,
+        "table_offset": 1321598,
+        "block_offset": 4102,
+        "copy_end": 4137,
+        "record_index": 131,
+        "start": 0,
+        "end": 34
+      },
+      "canonical_source_hex": "7465722025732062617272656c733b20666f6f642025732062617272656c732e202020",
+      "english": "The expedition found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition discovered the supplied barrel counts of water and food;exclamatory announcement.",
+      "localization_note": "Keep the discovery and energetic tone. Use a complete idiomatic report;preserve the two quantities,order and barrel units. Original79F18/79F2C multiplies both quantities by5,so nonzero source counts are at least5;the plural barrels never receives a singular count in the original event.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Original successful forage Search:role7/table2116E80 via79F5C,r2=ABF50(water r5),r3=ABF50(food r6),then34C98 adds the same counts to the existing fleet. Values and units must retain their order.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2232",
+      "message_id": 2232,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽\n発見したぞ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d0a94ad8ca982b582bd82bc",
+      "source_reference": {
+        "message_id": 2232,
+        "block": 23,
+        "table_offset": 1321600,
+        "block_offset": 2576,
+        "copy_end": 2616,
+        "record_index": 54,
+        "start": 0,
+        "end": 39
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "message_id": 2232,
+        "block": 23,
+        "table_offset": 1321600,
+        "block_offset": 4137,
+        "copy_end": 4172,
+        "record_index": 132,
+        "start": 0,
+        "end": 34
+      },
+      "canonical_source_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e2020202020",
+      "english": "The expedition's found %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition discovered the supplied barrel counts of water and food;assertive informal report.",
+      "localization_note": "Use a natural contraction and confident exclamation rather than a literal Japanese final particle. Preserve quantities,order and units. Original79F18/79F2C multiplies both quantities by5,so nonzero source counts are at least5;the plural barrels never receives a singular count in the original event.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Original successful forage Search:role7/table2116E80 via79F5C,r2=ABF50(water r5),r3=ABF50(food r6),then34C98 adds the same counts to the existing fleet. Values and units must retain their order.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2233",
+      "message_id": 2233,
+      "source_Japanese": "探検隊が\n水を%s樽\n食料を%s樽を\n見つけたよ",
+      "source_hex": "92548c9f91e082aa0a908582f02573924d0a904897bf82f02573924d82f00a8ca982c282af82bd82e6",
+      "source_reference": {
+        "message_id": 2233,
+        "block": 23,
+        "table_offset": 1321602,
+        "block_offset": 2616,
+        "copy_end": 2660,
+        "record_index": 55,
+        "start": 0,
+        "end": 41
+      },
+      "current_English": "Water %s barrels; food %s barrels.",
+      "current_text_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e",
+      "current_reference": {
+        "message_id": 2233,
+        "block": 23,
+        "table_offset": 1321602,
+        "block_offset": 4172,
+        "copy_end": 4207,
+        "record_index": 133,
+        "start": 0,
+        "end": 34
+      },
+      "canonical_source_hex": "57617465722025732062617272656c733b20666f6f642025732062617272656c732e20202020202020",
+      "english": "The expedition found us %s barrels of water and %s barrels of food!",
+      "source_meaning": "The expedition found the supplied barrel counts of water and food;casual report.",
+      "localization_note": "Use a conversational report. Us refers to the reporting fleet receiving the supplies in the original caller,not a new recipient. Preserve both%s values in water-food order and both barrel units. Original79F18/79F2C multiplies both quantities by5,so nonzero source counts are at least5;the plural barrels never receives a singular count in the original event.",
+      "speaker": "Original role7 speaker with original voice-table selection",
+      "context": "Original successful forage Search:role7/table2116E80 via79F5C,r2=ABF50(water r5),r3=ABF50(food r6),then34C98 adds the same counts to the existing fleet. Values and units must retain their order.",
+      "source_role": 7,
+      "source_table": 34696832,
+      "native_argument_count": 2,
+      "source_native_macros": [],
+      "editorial_decision": "revise",
+      "authored_as_one_unwrapped_paragraph": true,
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      },
+      "status": "source-context-prose-reviewed;native-font-release-and-revised-gameplay-pending",
+      "source_quantity_contract": {
+        "argument_order": [
+          "water",
+          "food"
+        ],
+        "original_formatter": "ABF50-positive-full-width-CP932-decimal",
+        "conservative_maxima": [
+          4650,
+          3875
+        ],
+        "original_max_digits_each": 4,
+        "nonzero_quantities_are_multiples_of_five": true
+      }
+    }
+  ],
+  "revised": 11,
+  "retained": 0,
+  "no_authored_line_breaks_or_alignment": true,
+  "no_runtime_argument_added_removed_or_reordered": true,
+  "producer_sha256": "603e1edf5df3b87587fa9fd5c7bce5689941a433e5f703fcdaa979941586317a",
+  "full_goal_complete": false,
+  "revised_from_manuscript": "translations\\search_reports_editorial_manuscript_v2.json",
+  "revised_from_sha256": "8f2d1434670064fa23f2201a99b95bdbb3995987cdd5f9e8bad1b808f53b1358",
+  "source_quantity_bounds": "work\\analysis\\search_reports_revision_v1665\\original_forage_quantity_bounds.json",
+  "source_quantity_bounds_sha256": "cf51bf349de2b2c240a8f9c1c9c80459bb2f2a4934b87fb894cbbb2fcdd47053",
+  "consumer_layout_profile": "Search-role1-role7-postmacro-and-original-loss-modal-v1",
+  "status": "source-prose-revised-after-numeric-grammar-review;native-recheck-pending"
+}

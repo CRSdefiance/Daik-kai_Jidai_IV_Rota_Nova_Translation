@@ -1,0 +1,14 @@
+"""Record all viewed native pages/name sheets while retaining actual-page and release gates."""
+from pathlib import Path
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.verify_village_wrap_v608 import read,save
+FONT=Path('work/analysis/lil_B209_research_fonts_v6463/all20_bodies22_complete_native_pages_and160_alignments_RESEARCH.json')
+NAMES=Path('work/analysis/lil_B209_name_planes_v6464/four_name_planes112_alignments_actual_headers_and_two_source_style4_masks.json')
+ROOT=Path('work/analysis/lil_B209_native_view_v6465')
+if __name__=='__main__':
+    assert not ROOT.exists();f,n=read(FONT),read(NAMES);sheets=f['review_sheets']+[n['review_sheet']];assert len(sheets)==5
+    for s in sheets:assert sha(Path(s['path']).read_bytes())==s['sha256']
+    assert len(f['records'])==20 and f['complete_native_pages']==22 and f['logical_compiled_input_alignment_cases']==160 and n['native_name_literal_alignment_cases']==112
+    assert sum(len(p['actual_matching_header_holds']) for p in n['planes'])==17 and not any(p['actual_header_mask_differences'] for p in n['planes'])
+    ROOT.mkdir(parents=True);save(ROOT/'all22_native_pages_four_names_and_source_masks_viewed_actual_paging_pending.json',dict(native_font_proof=str(FONT),native_font_proof_sha256=sha(FONT.read_bytes()),native_name_proof=str(NAMES),native_name_proof_sha256=sha(NAMES.read_bytes()),viewed_sheets=sheets,visual_review_pending=False,all20_complete_current_English_bodies_and22_native_pages_viewed=True,all_four_complete_style11_name_planes_and_three_actual_source_nameplates_viewed=True,all17_actual_source_name_holds_and_four_source_style4_body_holds_match=True,Jam_name_native_only_unvisited_actual_branch=True,first_letter_page_boundary_after_complete_bane_of_Tokugawa_core_assertion=True,next_page_ruler_of_Japan_appositive_intact=True,second_letter_page_boundary_after_complete_East_Asia_report=True,signature_gets_distinct_automatic_footer_row_without_copied_indent_or_blank_row=True,come_in_particle_and_from_sender_adjunct_coherent=True,first_letter_ordinary_the_legendary_said_to_and_are_afoot_boundaries_contextually_readable=True,exact_source_prose_and_real_page_controls_still_required_before_any_waiver_approval=True,first26_character_row_does_not_widen_or_narrow_native_viewport=True,both_long_letters_two_pages_not_shortened_to_old_allocations=True,current_actual_button_continuation_no_clipped_or_blank_pages_and_transition_pending=True,all20_manuscript_formatting_gates_remain_false_until_profile_native_actual_reference_checks=True,no_name_asset_change_or_global207_name_approval=True,new_review_credit=0,new_emulator_runs=0,evidence={str(p):sha(p.read_bytes()) for p in [FONT,NAMES,Path(__file__)]},full_goal_complete=False))
+    print('Five sheets viewed:22 complete body pages,four names,17 source headers/two style4 bodies. Current actual pagination and all release gates remain pending.')

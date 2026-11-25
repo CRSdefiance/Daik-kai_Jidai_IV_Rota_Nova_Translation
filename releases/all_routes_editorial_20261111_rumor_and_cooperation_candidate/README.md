@@ -1,0 +1,11 @@
+# All Routes Rumor and Cooperation candidate
+
+Cold-boot `out/promotion_ready_20261111_rumor_and_cooperation/Translation_DS_All_Routes_Rumor_and_Cooperation_20261111_candidate.nds` with its adjacent build manifest. The testing copy matches the registered ROM byte for byte. [Reconstruction verification](verification/promotion_reconstruction.json)
+
+The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d` and reconstructs SHA-256 `ea84dced03a59fa60fba2ac9d9b1fed7626e18778e8f96c5193c3180ff9f7913` byte for byte. Patch SHA-256 is `2433bf458dffa631ce5993309d3da0e7b1be7ee37d8a420620225ef19971611b`.
+
+The 44 rumor and cooperation records are registered. The ledger now credits 26,453 reviews. Twenty-four revisions and 20 justified retentions cover the false reports and forged documents, the trader’s conditional offer and refusals, and all eight counter-rumor voices. The native portrait formatter preserves town, faction and gold arguments, and wraps complete words.
+
+Two focused Istanbul emulator runs verified the original broker notices, a trader refusal, and a 9,752-gold quote with its insufficient-funds reply. Both runs returned to the inn with cash and shares intact. The deferred letters were initialized, and the fee run also initialized one experience word. All 59 stored display variants were visually reviewed. All 84 release checks, 30 targeted tests, cold startup and 24 protected name getters passed. [Gameplay proof](verification/rumor_and_cooperation_gameplay_verification_v2.json) · [Exact record review](verification/registered_review.json)
+
+This cumulative build adds 96 reviews since Shipyard and Fleet Setup across discovery and rewards, faction and epilogue notices, the shark encounter, and rumor and cooperation exchanges. It includes Rafael's tutorials, the Market Trade-screen correction, and the ASCII right-bound fix. All 749 registered entries and 114 accepted layers are present. The 84 registered release checks and 30 fresh targeted tests passed. Gameplay evidence comes from the registered builds. V4701 is the promoted main build pending hardware acceptance. [Fresh test results](verification/promotion_repository_pytest.xml)

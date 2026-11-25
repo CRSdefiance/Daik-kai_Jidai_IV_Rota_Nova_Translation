@@ -1,0 +1,7 @@
+# Archived dialogue and native file-open paths
+
+The clean Japanese ROM and the registered Maria captured-ship candidate have the same 34 direct calls to the three file-open entry points. The filename entry has 25 calls. Of the six numeric calls, one forwards a filename lookup, three use the stock overlay table, and two open or reopen the sound archive. COMMON is file 337. The stock overlay uses file 0 and the registered startup sound object uses file 2. [Exact call sites, ROM headers and archive spans](../translations/editorial_checkpoints/shared_display_20261123/archived_common_filesystem_paths_20261124.json)
+
+The three byte-range sites read the cartridge file allocation table, filename table or overlay table. Those ranges are disjoint from the COMMON payload in both ROMs. The startup capture contains byte-exact copies of its two file tables. Isolated native checks passed for three startup mode inputs, the overlay table bounds, the overlay file-ID adapter and the audio reopen arguments from the captured startup object. The mode-2 bootstrap supplies empty cartridge file tables. [Earlier evidence for the COMMON reader](editorial_archived_message_storage_20261124.md)
+
+This narrows the search for COMMON 284, 318 and 750–752 to computed message arguments and other indirect paths. Their display owners remain unverified. The earlier Quit Game and Trade replays provide the observed gameplay evidence. [Quit Game](editorial_retail_exit_scope_20261119.md) · [Trade exits](editorial_market_exit_current_20261123.md)

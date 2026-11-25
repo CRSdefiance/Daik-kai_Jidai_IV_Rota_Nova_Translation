@@ -1,0 +1,92 @@
+"""Draft Carlo’s full trade-house, illness and recruitment exchange from clean Japanese."""
+from scripts.seal_clean_independent_drafts_v1 import seal
+
+
+CONTEXT = {170: (
+    "Carlo bargains with Adil at a trade house, notices he is sick, and asks Rafael’s group to come back the next day. "
+    "Adil’s household thanks Carlo, and the trader returns sooner than advised. Rafael sees both Carlo’s skill and care. "
+    "A question about Carlo’s family brings out his grief and regret before Julio proposes they become his new family. "
+    "Use a warm turn after the loss, preserving the offered kinship explicitly. Do not infer how to diagnose or treat the illness."
+)}
+
+DATA = {170: {
+    5: ("Carlo asks for the same amount of cinnamon he usually buys.", "The usual amount of cinnamon, please."),
+    9: ("Rafael wonders privately whether another customer got there first.", "(Someone beat us here?)"),
+    14: ("The trader quotes the total price.", "Sure thing. Here's what that'll cost you."),
+    18: ("Carlo observes the price has gone up.", "Well now, the price went up."),
+    22: ("The trader denies the increase and says that is the usual price.", "It hasn't gone up. That's what it always costs, isn't it?"),
+    25: ("Carlo laughs, addresses Adil and says he knows what the trader pays to obtain the goods.", "Ha ha, come on, Adil. You think I don't know what you paid for it?"),
+    28: ("The trader objects at Carlo's familiarity with his buying price.", "Now, hold on."),
+    32: ("Carlo argues that this year's output and local demand should allow a better price.", "With this year's harvest and what people are buying around here, I think you could do a little better."),
+    36: ("Carlo suggests buying elsewhere. There is no rule that he must buy from one shop.", "I can always try another shop. No law says I have to buy from the same place every time."),
+    40: ("Adil falters, gives in and admits he is no match for Carlo at bargaining.", "Ugh... All right, all right. I can't win with you."),
+    44: ("Carlo notices a change in Adil and asks whether he has a fever.", "Hm? ...Adil, have you got a fever?"),
+    47: ("Adil suspects Carlo is still finding fault with the way he runs his business.", "What now, Carlo? Something else wrong with how I run my shop?"),
+    50: ("Carlo is serious and tells him he has a fever and should go to bed early.", "It's nothing to do with the shop. You've got a fever. Go to bed early tonight."),
+    53: ("Adil starts to brush him off, then realizes he feels chilly.", "Oh, come on... Huh. I really am starting to feel a chill."),
+    56: ("Carlo says he will come back tomorrow and asks Adil to close up today.", "See? I'll do my buying tomorrow. Close up for today."),
+    59: ("Adil agrees and apologizes to the other customer, asking them to come back tomorrow.", "Hmm... I'll do as you say. Sorry, you there. Could you come back tomorrow, too?"),
+    65: ("Carlo apologizes and confirms the travelers were there to trade.", "Sorry about that. You came here to trade, too, didn't you?"),
+    68: ("Rafael asks Carlo how he noticed the shopkeeper was ill.", "How did you know the shopkeeper was sick?"),
+    72: ("Carlo says Adil looked unwell.", "He looked pale, that's all."),
+    84: ("Fernando says Carlo seems almost as observant as he is.", "Well, well. You're almost as sharp-eyed as I am."),
+    90: ("Rafael privately questions Fernando's self-assessment.", "...(Is he, now?)"),
+    95: ("Carlo says most people would miss it. He pays particular attention to how others are feeling.", "Most people wouldn't notice. I keep a close eye on how people are feeling."),
+    99: ("Rafael considers the explanation.", "Huh..."),
+    104: ("Carlo offers to go with Rafael the next morning and make up for the delay.", "Would you come to the trade house with me tomorrow morning? I think I can make up for today."),
+    107: ("Rafael thanks him and agrees to go.", "Thank you. I'll be there."),
+    112: ("The woman greets Carlo and thanks him for yesterday.", "Oh, Carlo! Thank you for yesterday!"),
+    116: ("Carlo asks about Adil.", "How's Adil?"),
+    120: ("She says Adil is resting at home today to be on the safe side.", "He's in bed at home today. Just to be on the safe side."),
+    123: ("Carlo hopes Adil recovers soon.", "I see. I hope he gets well soon."),
+    127: ("She says Adil never listens to her and trails off about what might have happened the day before.", "That man never listens to a word I say. If you hadn't spoken up yesterday..."),
+    131: ("She catches herself talking too much and says she wants to thank Carlo for saving Adil's life.", "There I go, talking your ear off. You saved his life. I wanted to do something to thank you."),
+    135: ("Carlo appreciates it but says the travelers deserve thanks for waiting overnight to trade.", "That's kind of you. But if you're thanking anyone, thank these travelers. They put off their trading overnight."),
+    139: ("She apologizes for delaying the group and offers a small gift.", "Oh dear, we held you up. I'm sorry about that. It's nothing much, but... would you take this?"),
+    145: ("Carlo thanks the woman, then asks the travelers to go ahead with their shopping since they are in a hurry.", "Thank you, ma'am. You travelers are in a hurry, aren't you? Go ahead and do your trading first."),
+    149: ("Adil arrives, greets Carlo and apologizes for the previous day.", "Hey, Carlo! Sorry about yesterday!"),
+    152: ("The woman exclaims when Adil shows up.", "You!"),
+    156: ("Carlo is surprised and tells Adil he should be in bed.", "Adil! You're supposed to be in bed!"),
+    159: ("Adil boasts he is full of energy and refuses to lie in bed on a fine trading day.", "Hmph. Look at me. I'm fit as ever. How can I lie around in bed on a day this good for business?"),
+    163: ("The woman says Adil is impossible.", "Honestly, you're impossible!"),
+    167: ("Carlo laughs, is relieved to see him energetic, and warns him not to overdo it today.", "Ha ha. Glad to see you've got your strength back. Just don't overdo it today."),
+    171: ("Carlo will come by again, maybe tomorrow. He asks Adil to see to the travelers' trade.", "I'll stop by again, maybe tomorrow. For now, take care of these travelers, will you?"),
+    174: ("Carlo tells the travelers to value family and health, then takes his leave.", "Take care of your families and your health, travelers. Farewell."),
+    177: ("Rafael is silent as Carlo is about to leave.", "..."),
+    183: ("Rafael hesitantly gets Carlo's attention.", "Um..."),
+    188: ("Carlo pauses to hear Rafael.", "Hm?"),
+    192: ("Rafael asks Carlo to sail aboard his ship.", "...Would you come aboard my ship?"),
+    197: ("Carlo is surprised by the sudden request.", "Where did that come from?"),
+    201: ("Rafael admires Carlo's skill at trade and his character.", "I'm impressed by the way you trade and by the kind of man you are."),
+    206: ("Claudio agrees that Carlo haggled skillfully yesterday.", "He sure knew how to talk that price down yesterday."),
+    209: ("Carlo says he has been a merchant for many years.", "Well, I've been a merchant a long time."),
+    213: ("Rafael is surprised and asks whether Carlo knows market prices well.", "A merchant! Then you know your way around market prices?"),
+    217: ("Claudio recognizes Carlo as a professional.", "I knew you were a pro."),
+    221: ("Julio expresses his admiration.", "Impressive indeed."),
+    225: ("Carlo does not respond to the praise.", "..."),
+    229: ("Claudio asks whether Carlo dislikes the idea of sailing or has family who would object.", "What do you say? Don't fancy going to sea? Would your family be against it?"),
+    232: ("Carlo says he has no family. They died a year ago.", "My family... I don't have one anymore. They died a year ago."),
+    235: ("Rafael falls silent at the disclosure.", "..."),
+    241: ("Carlo recalls his daughter catching a disease that was going around. He was absorbed in work and did not look after her properly.", "My daughter was the first to catch the sickness that was going around. I was so wrapped up in work back then... I didn't take proper care of her."),
+    244: ("Carlo says they acted too late. His wife caught it too, and he lost them both.", "By the time we did anything, it was too late. My wife caught it, too... I lost them both."),
+    248: ("Rafael addresses Carlo softly after hearing about the deaths.", "Carlo..."),
+    253: ("Carlo says the work he had put ahead of his family proved empty. Since then, others' health has mattered more to him than work.", "...After all I'd given up for my work, it felt empty. These days, I worry more about how people are doing than about business."),
+    256: ("Rafael realizes that is why Carlo cared about the trader.", "Oh... That's why you went out of your way for the shopkeeper..."),
+    261: ("Rafael asks if Carlo will return to his hometown.", "...Aren't you going back home?"),
+    266: ("Carlo names Venice. There are too many happy memories there for him to live there alone.", "To Venice? I have too many happy memories there. I couldn't live there alone."),
+    270: ("Rafael is silent as he takes this in.", "..."),
+    275: ("Rafael renews the invitation and says he needs Carlo.", "Carlo... Please come with us. I need you aboard."),
+    280: ("Carlo considers the invitation.", "Hmm..."),
+    284: ("Rafael tells Clau he thinks he can learn a lot from Carlo.", "Clau, I think I could learn a lot from him."),
+    289: ("Claudio tentatively agrees.", "...I think you might be right."),
+    293: ("Carlo remains silent while he considers the group's words.", "..."),
+    297: ("Julio addresses Rafael as captain and suggests the group become Carlo's new family.", "Captain, what if all of us became his new family?"),
+    301: ("Rafael likes the idea and asks how Carlo feels about it.", "Yes, that's it! Carlo... What do you think?"),
+    305: ("Carlo thanks them all, moved that they would say as much.", "...Thank you, all of you. I didn't expect you to go that far for me."),
+    308: ("Claudio says it is settled and playfully looks forward to Carlo's professional trading skills.", "Then it's settled. Oh, and we're counting on those trading skills of yours, too."),
+    312: ("Carlo introduces himself in full and offers a cordial greeting.", "My name is Carlo Sinat. Glad to be sailing with you."),
+}}
+
+
+if __name__ == '__main__':
+    seal('work/analysis/Rafael_B161_B180_clean_20261105', 'B170_clean_drafts_v1.json', DATA, CONTEXT, {}, __file__, 75)

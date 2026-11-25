@@ -81,7 +81,16 @@ def validate_natural_dialogue_batch(batch: dict[str, object]) -> None:
                     f"{row_id}: v2 requires per-record source, context, localization, "
                     "naturalness, and formatting review"
                 )
-            if english.startswith((" ", "{LB}")) or "{LB}{LB}" in english:
+            waivers = set(record.get("qa_waivers", []))
+            leading_break_is_verified = (
+                english.startswith("{LB}")
+                and "source-leading-linebreak" in waivers
+            )
+            if (
+                english.startswith(" ")
+                or (english.startswith("{LB}") and not leading_break_is_verified)
+                or "{LB}{LB}" in english
+            ):
                 raise ValueError(
                     f"{row_id}: v2 forbids leading/consecutive layout breaks"
                 )

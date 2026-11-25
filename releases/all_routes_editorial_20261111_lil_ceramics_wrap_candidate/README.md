@@ -1,0 +1,3 @@
+# Hamburg ceramics candidate
+
+The [local ROM](../../out/lil_ceramics_wrap_registered_20261111_v1/Translation_DS_All_Routes_Lil_Ceramics_20261111_candidate.nds) includes five retrospective dialogue changes in Lil’s Hamburg ceramics exchange. The [clean-input patch](translation.xdelta) reconstructs SHA-256 `cb117fb702c345fee40bb0481b9132a62c98f6b4ba629e978bb6054000dae982` byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. The 20 original commands and the unchanged forecast panel are preserved. Paired emulator fixtures matched the five complete revised masks and 12 unchanged panels. Cold boot, 24 protected name getters and 56 targeted tests passed.

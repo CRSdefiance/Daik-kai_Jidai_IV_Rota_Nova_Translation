@@ -1,0 +1,5 @@
+# Sea-inspection reactions
+
+Five focused encounter replays verified all five tooltip classes on the cartridge-title ROM. They also showed Charles's reaction splitting “make it home alive.” The new build gives Charles a direct question on one row and revises the next three voice alternatives from the clean Japanese. Four other reactions and the unavailable information notice retain their wording. [Source decisions and evidence](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/registered_review.json)
+
+The Monster Fish and White Whale runs verify Charles's new line, his portrait and nameplate, and the original return to Info Mode. Seven voice alternatives have offline original-pipeline checks. Natural spawns and a played special-target victory remain unobserved in this pass. The clean-input patch, six startup comparisons, 24 protected getters and 17 tests passed. [Focused emulator comparison](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/verification/focused_replay.png) · [Clean-input patch](../releases/all_routes_editorial_20261123_sea_inspection_prose_candidate/translation.xdelta)

@@ -1,0 +1,1178 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_8",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 8,
+      "clean_Japanese": "何か用かい？",
+      "source_reference": {
+        "block": 0,
+        "offset": 320,
+        "copy_end": 332,
+        "bytes": 12,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 2,
+        "exact_hex": "89bd82a9977082a982a28148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 460,
+        "copy_end": 471,
+        "bytes": 10,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 0,
+        "exact_hex": "4e6565642068656c703f"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 460,
+        "copy_end": 471,
+        "bytes": 10,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 0,
+        "exact_hex": "4e6565642068656c703f"
+      },
+      "english": "Need help?",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "The trader asks what the visitor needs.",
+      "localization_note": "A brief welcome gives the player the floor before the newly available Trade option.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 5700,
+          "capture": {
+            "frame": 5700,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_005700_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "b7edc002189fbac81e11a55c462e2239b20973f92106e23e9d85c1f87dfdb4f4",
+            "framebuffer_sha256": "63015d3cb4815e8519250a986f7a44147a51a7de79d66d37a04c764e7a2b4fc2"
+          },
+          "native_lines": [
+            "Need help?"
+          ],
+          "arguments": [],
+          "body_pixels": 128,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 5310,
+              "PC": 33903244,
+              "message_ID": 8,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 5310,
+              "PC": 33895668,
+              "message_ID": 8,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_762",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 762,
+      "clean_Japanese": "シェアがないと交易もできないのに\n投資してくれるんですか…\n奇特な人だねえ\nで、いくら投資してくださるんで？",
+      "source_reference": {
+        "block": 9,
+        "offset": 3648,
+        "copy_end": 3756,
+        "bytes": 105,
+        "record_index": 41,
+        "table_offset": 1318660,
+        "start_in_record": 2,
+        "exact_hex": "83568346834182aa82c882a282c68cf088d582e082c582ab82c882a282cc82c90a938a8e9182b582c482ad82ea82e982f182c582b782a981630a8aef93c182c8906c82be82cb82a60a82c5814182a282ad82e7938a8e9182b582c482ad82be82b382e982f182c58148"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 3618,
+        "copy_end": 3747,
+        "bytes": 114,
+        "record_index": 394,
+        "table_offset": 1318660,
+        "start_in_record": 0,
+        "exact_hex": "20596f75206e656564206d61726b657420736861726520746f2074726164652e0a2020596f75207374696c6c2077616e7420746f20696e766573743f0a20205468617427732067656e65726f7573206f6620796f752e0a2020486f77206d7563682077696c6c20796f752070757420696e3f"
+      },
+      "installed_reference": {
+        "block": 9,
+        "offset": 3618,
+        "copy_end": 3747,
+        "bytes": 114,
+        "record_index": 394,
+        "table_offset": 1318660,
+        "start_in_record": 0,
+        "exact_hex": "20596f75206e656564206d61726b657420736861726520746f2074726164652e0a2020596f75207374696c6c2077616e7420746f20696e766573743f0a20205468617427732067656e65726f7573206f6620796f752e0a2020486f77206d7563682077696c6c20796f752070757420696e3f"
+      },
+      "english": "You need market share to trade.\n  You still want to invest?\n  That's generous of you.\n  How much will you put in?",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "Without market share the player cannot trade. The trader expresses surprise and appreciation before asking for the investment amount.",
+      "localization_note": "The prohibition, surprise, praise, and question each have a complete line. The same reply fits each visit because the player still has no share.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 6900,
+          "capture": {
+            "frame": 6900,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_006900_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "67226b142f533b9c8d1c927ad28680aca6574d9fe715785c26e50a734cd5a98f",
+            "framebuffer_sha256": "2f836e248d9e5d5ff49a9cd6f1e5bf1dec1d0bf787ce64b4a730af5e85bec781"
+          },
+          "native_lines": [
+            "You need market share to trade.",
+            "You still want to invest?",
+            "That's generous of you.",
+            "How much will you put in?"
+          ],
+          "arguments": [],
+          "body_pixels": 1044,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 6512,
+              "PC": 33903244,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 6512,
+              "PC": 33895668,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            }
+          ]
+        },
+        {
+          "frame": 9300,
+          "capture": {
+            "frame": 9300,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_009300_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "67226b142f533b9c8d1c927ad28680aca6574d9fe715785c26e50a734cd5a98f",
+            "framebuffer_sha256": "2f836e248d9e5d5ff49a9cd6f1e5bf1dec1d0bf787ce64b4a730af5e85bec781"
+          },
+          "native_lines": [
+            "You need market share to trade.",
+            "You still want to invest?",
+            "That's generous of you.",
+            "How much will you put in?"
+          ],
+          "arguments": [],
+          "body_pixels": 1044,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 8909,
+              "PC": 33903244,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 8909,
+              "PC": 33895668,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            }
+          ]
+        },
+        {
+          "frame": 11700,
+          "capture": {
+            "frame": 11700,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_011700_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "67226b142f533b9c8d1c927ad28680aca6574d9fe715785c26e50a734cd5a98f",
+            "framebuffer_sha256": "2f836e248d9e5d5ff49a9cd6f1e5bf1dec1d0bf787ce64b4a730af5e85bec781"
+          },
+          "native_lines": [
+            "You need market share to trade.",
+            "You still want to invest?",
+            "That's generous of you.",
+            "How much will you put in?"
+          ],
+          "arguments": [],
+          "body_pixels": 1044,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 11310,
+              "PC": 33903244,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 11310,
+              "PC": 33895668,
+              "message_ID": 762,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_746",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 746,
+      "clean_Japanese": "…冷やかしかい",
+      "source_reference": {
+        "block": 9,
+        "offset": 2884,
+        "copy_end": 2900,
+        "bytes": 14,
+        "record_index": 29,
+        "table_offset": 1318628,
+        "start_in_record": 26,
+        "exact_hex": "816397e282e282a982b582a982a2"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 2628,
+        "copy_end": 2649,
+        "bytes": 20,
+        "record_index": 202,
+        "table_offset": 1318628,
+        "start_in_record": 0,
+        "exact_hex": "20204a7573742062726f7773696e673f20202020"
+      },
+      "installed_reference": {
+        "block": 9,
+        "offset": 2628,
+        "copy_end": 2649,
+        "bytes": 20,
+        "record_index": 202,
+        "table_offset": 1318628,
+        "start_in_record": 0,
+        "exact_hex": "20204a7573742062726f7773696e673f20202020"
+      },
+      "english": "Just browsing?",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "The trader asks if the player was only looking after the offer is withdrawn.",
+      "localization_note": "The brief, mildly disappointed question suits a merchant who waited for a decision.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 8100,
+          "capture": {
+            "frame": 8100,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_008100_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "77120bc0400edd47bd4a242c3689f77a830b3513dccb6d97a362ae00be3332e8",
+            "framebuffer_sha256": "9d8920a3880af77449498c231a05ed3627c06c22f0416f401eb61a37e72d69a7"
+          },
+          "native_lines": [
+            "Just browsing?"
+          ],
+          "arguments": [],
+          "body_pixels": 156,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 7710,
+              "PC": 33903244,
+              "message_ID": 746,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 7710,
+              "PC": 33895668,
+              "message_ID": 746,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_747",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 747,
+      "clean_Japanese": "ありがたいね\n有効に使わせてもらいますよ",
+      "source_reference": {
+        "block": 9,
+        "offset": 2900,
+        "copy_end": 2940,
+        "bytes": 39,
+        "record_index": 30,
+        "table_offset": 1318630,
+        "start_in_record": 1,
+        "exact_hex": "82a082e882aa82bd82a282cb0a974c8cf882c98e6782ed82b982c482e082e782a282dc82b782e6"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 2649,
+        "copy_end": 2685,
+        "bytes": 35,
+        "record_index": 203,
+        "table_offset": 1318630,
+        "start_in_record": 0,
+        "exact_hex": "20205468616e6b732e205765276c6c2070757420697420746f20676f6f64207573652e"
+      },
+      "installed_reference": {
+        "block": 9,
+        "offset": 2649,
+        "copy_end": 2685,
+        "bytes": 35,
+        "record_index": 203,
+        "table_offset": 1318630,
+        "start_in_record": 0,
+        "exact_hex": "20205468616e6b732e205765276c6c2070757420697420746f20676f6f64207573652e"
+      },
+      "english": "Thanks. We'll put it to good use.",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "The trader expresses gratitude and promises to put the investment to good use.",
+      "localization_note": "The warmth follows naturally once the player commits the money, and the promise stays intact.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 10500,
+          "capture": {
+            "frame": 10500,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_010500_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "2a03b661ee70c7ef3819db4bd8769be3b497ef17b8b6619a082f542f82dd155f",
+            "framebuffer_sha256": "a191dd796ebaddce76edbd384d70ce24473e4898945ee5b2c66220f4ac91f363"
+          },
+          "native_lines": [
+            "Thanks. We'll put it to good use."
+          ],
+          "arguments": [],
+          "body_pixels": 318,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 10172,
+              "PC": 33903244,
+              "message_ID": 747,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 10172,
+              "PC": 33895668,
+              "message_ID": 747,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_748",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 748,
+      "clean_Japanese": "うんっ！？\n申し訳ないが、その金額じゃ\nどうにもならんよ\nもっと稼いだら、また来てくれよ",
+      "source_reference": {
+        "block": 9,
+        "offset": 2940,
+        "copy_end": 3028,
+        "bytes": 85,
+        "record_index": 31,
+        "table_offset": 1318632,
+        "start_in_record": 0,
+        "exact_hex": "82a482f182c1814981480a905c82b596f382c882a282aa814182bb82cc8be08a7a82b682e10a82c782a482c982e082c882e782f182e60a82e082c182c689d282a282be82e7814182dc82bd978882c482ad82ea82e6"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 2685,
+        "copy_end": 2775,
+        "bytes": 71,
+        "record_index": 204,
+        "table_offset": 1318632,
+        "start_in_record": 0,
+        "exact_hex": "204875683f20536f7272792c207468617420776f6e277420626520656e6f7567682e0a2020436f6d65206261636b207768656e20796f75277665206561726e6564206d6f72652e"
+      },
+      "installed_reference": {
+        "block": 9,
+        "offset": 2685,
+        "copy_end": 2775,
+        "bytes": 71,
+        "record_index": 204,
+        "table_offset": 1318632,
+        "start_in_record": 0,
+        "exact_hex": "204875683f20536f7272792c207468617420776f6e277420626520656e6f7567682e0a2020436f6d65206261636b207768656e20796f75277665206561726e6564206d6f72652e"
+      },
+      "english": "Huh? Sorry, that won't be enough.\n  Come back when you've earned more.",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "The trader is surprised, apologizes that the amount is insufficient, and asks the player to return with more gold.",
+      "localization_note": "The surprised reaction softens into an apology. The invitation to return has a complete line and matches the original condition.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 12100,
+          "capture": {
+            "frame": 12100,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_012100_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "1187918fb308fef397262c7a3d9d845d5ca30b192f054424b96967ec19f8e9b5",
+            "framebuffer_sha256": "f88d1e1fa043137185457e76115d834066b06b3d580a0fe942aff53899f1f3ce"
+          },
+          "native_lines": [
+            "Huh? Sorry, that won't be enough.",
+            "Come back when you've earned more."
+          ],
+          "arguments": [],
+          "body_pixels": 706,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 11721,
+              "PC": 33903244,
+              "message_ID": 748,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 11721,
+              "PC": 33895668,
+              "message_ID": 748,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_18",
+      "file_path": "/COMMON/MESFILE.DK4",
+      "message_ID": 18,
+      "clean_Japanese": "相場閲覧料は、見る度に払ってもらうよ\nどの街の相場を見るのかね？",
+      "source_reference": {
+        "block": 0,
+        "offset": 552,
+        "copy_end": 616,
+        "bytes": 63,
+        "record_index": 12,
+        "table_offset": 1317172,
+        "start_in_record": 1,
+        "exact_hex": "918a8fea897b979797bf82cd81418ca982e9937882c995a582c182c482e082e782a482e60a82c782cc8a5882cc918a8fea82f08ca982e982cc82a982cb8148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 640,
+        "copy_end": 725,
+        "bytes": 71,
+        "record_index": 19,
+        "table_offset": 1317172,
+        "start_in_record": 0,
+        "exact_hex": "205468657265277320612066656520666f72206561636820707269636520636865636b2e0a2020576869636820746f776e2064696420796f75206861766520696e206d696e643f"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 640,
+        "copy_end": 725,
+        "bytes": 71,
+        "record_index": 19,
+        "table_offset": 1317172,
+        "start_in_record": 0,
+        "exact_hex": "205468657265277320612066656520666f72206561636820707269636520636865636b2e0a2020576869636820746f776e2064696420796f75206861766520696e206d696e643f"
+      },
+      "english": "There's a fee for each price check.\n  Which town did you have in mind?",
+      "speaker": "Trader",
+      "context": "The Trader greets Maria before three visits to Invest. She cancels a large offer, pays it on the next visit, and then has too little gold to invest again. She opens and leaves Price Info afterward.",
+      "source_meaning": "The trader says each price check has a viewing fee and asks which town the player wants to look up.",
+      "localization_note": "The two complete sentences introduce the fee before asking the player for a town. The map then quotes the actual amount.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "holds": [
+        {
+          "frame": 13300,
+          "capture": {
+            "frame": 13300,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_013300_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "03d4f9426ec96a2513e1346fde645c3f8decf295aa5eaa3e2d1e2f90a0b52291",
+            "framebuffer_sha256": "aef6c958212fba94fdf79454b1d67eff9b3b5c312ac25d1a5715b2c9db105f19"
+          },
+          "native_lines": [
+            "There's a fee for each price check.",
+            "Which town did you have in mind?"
+          ],
+          "arguments": [],
+          "body_pixels": 675,
+          "nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ],
+          "requests": [
+            {
+              "frame": 12910,
+              "PC": 33903244,
+              "message_ID": 18,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 12910,
+              "PC": 33895668,
+              "message_ID": 18,
+              "caller_LR": 33898488
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "candidate_sha256": "9f879c8e1d2c48ba95d575c6e618adb5c5f4575df7139f1243811ad48667ac8a",
+  "release": {
+    "path": "releases/all_routes_editorial_20261124_lisbon_roster_galley_candidate/verification/registered_release_verification.json",
+    "sha256": "f1cf4f36ea381b865da6eadcc950332ee03c6b3b9c7b530e632a93c4181a25ec"
+  },
+  "controller": {
+    "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_investment/controller.jsonl",
+    "sha256": "b6ce8afce88a7ce3d96cd19c22e750d75afdf6a9391f474aff2cff7802d8c779"
+  },
+  "ordinary_gameplay": true,
+  "original_battery_save": {
+    "path": "work/analysis/weapon_voyage_v476/syracuse_test_copy.dsv",
+    "sha256": "958d6e36f521e4f8b0940e0c60a4de08df8fcae71f9e6f6e3271156cf25beadb"
+  },
+  "native_requests": [
+    {
+      "frame": 5310,
+      "PC": 33903244,
+      "message_ID": 8,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 5310,
+      "PC": 33895668,
+      "message_ID": 8,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6512,
+      "PC": 33903244,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 6512,
+      "PC": 33895668,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 7710,
+      "PC": 33903244,
+      "message_ID": 746,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 7710,
+      "PC": 33895668,
+      "message_ID": 746,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8909,
+      "PC": 33903244,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 8909,
+      "PC": 33895668,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 10172,
+      "PC": 33903244,
+      "message_ID": 747,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 10172,
+      "PC": 33895668,
+      "message_ID": 747,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 11310,
+      "PC": 33903244,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 11310,
+      "PC": 33895668,
+      "message_ID": 762,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 11721,
+      "PC": 33903244,
+      "message_ID": 748,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 11721,
+      "PC": 33895668,
+      "message_ID": 748,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 12910,
+      "PC": 33903244,
+      "message_ID": 18,
+      "caller_LR": 33898488
+    },
+    {
+      "frame": 12910,
+      "PC": 33895668,
+      "message_ID": 18,
+      "caller_LR": 33898488
+    }
+  ],
+  "wallet_masks": {
+    "6100": {
+      "text": "38371",
+      "bounds": [
+        100,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 72,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "8500": {
+      "text": "38371",
+      "bounds": [
+        100,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 72,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "10900": {
+      "text": "1473",
+      "bounds": [
+        106,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 56,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "12500": {
+      "text": "1473",
+      "bounds": [
+        106,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 56,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "14100": {
+      "text": "1473",
+      "bounds": [
+        106,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 56,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    },
+    "14500": {
+      "text": "1473",
+      "bounds": [
+        106,
+        351,
+        130,
+        362
+      ],
+      "ink_pixels": 56,
+      "color": [
+        230,
+        230,
+        230
+      ],
+      "all_ink_and_blank_cells_exact": true
+    }
+  },
+  "investment_amount_and_projected_funds": {
+    "7300": [
+      {
+        "text": "1942",
+        "bounds": [
+          156,
+          333,
+          180,
+          344
+        ],
+        "ink_pixels": 62,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "36429",
+        "bounds": [
+          150,
+          349,
+          180,
+          360
+        ],
+        "ink_pixels": 87,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "7700": [
+      {
+        "text": "36898",
+        "bounds": [
+          150,
+          333,
+          180,
+          344
+        ],
+        "ink_pixels": 90,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1473",
+        "bounds": [
+          156,
+          349,
+          180,
+          360
+        ],
+        "ink_pixels": 56,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "10100": [
+      {
+        "text": "36898",
+        "bounds": [
+          150,
+          333,
+          180,
+          344
+        ],
+        "ink_pixels": 90,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "1473",
+        "bounds": [
+          156,
+          349,
+          180,
+          360
+        ],
+        "ink_pixels": 56,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ]
+  },
+  "low_funds": {
+    "message_ID": 748,
+    "capture": {
+      "frame": 12100,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261124_syracuse_investment\\capture\\frame_012100_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "1187918fb308fef397262c7a3d9d845d5ca30b192f054424b96967ec19f8e9b5",
+      "framebuffer_sha256": "f88d1e1fa043137185457e76115d834066b06b3d580a0fe942aff53899f1f3ce"
+    },
+    "original_ARM9_range": [
+      34326792,
+      34326924
+    ]
+  },
+  "amount_paid": 36898,
+  "local_quote": {
+    "text": "Syracuse: ０ coins",
+    "origin": [
+      97,
+      254
+    ],
+    "native_glyph_events": [
+      {
+        "kind": "ascii",
+        "code": 83,
+        "x": 97,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 121,
+        "x": 103,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 114,
+        "x": 109,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 97,
+        "x": 115,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 99,
+        "x": 121,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 117,
+        "x": 127,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 115,
+        "x": 133,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 101,
+        "x": 139,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 58,
+        "x": 145,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 32,
+        "x": 151,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "cp932",
+        "code": 33359,
+        "x": 157,
+        "y": 61,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 32,
+        "x": 169,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 99,
+        "x": 175,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 111,
+        "x": 181,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 105,
+        "x": 187,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 110,
+        "x": 193,
+        "y": 62,
+        "style": 1
+      },
+      {
+        "kind": "ascii",
+        "code": 115,
+        "x": 199,
+        "y": 62,
+        "style": 1
+      }
+    ],
+    "complete_ink_pixels": 173,
+    "exact_source_font_plane": true,
+    "cp932_full_width_amount": true
+  },
+  "return_to_Syracuse": {
+    "text": "Syracuse",
+    "bounds": [
+      64,
+      19,
+      112,
+      30
+    ],
+    "ink_pixels": 94,
+    "color": [
+      230,
+      230,
+      230
+    ],
+    "all_ink_and_blank_cells_exact": true
+  },
+  "contact_sheet": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/syracuse_investment_current_20261124.png",
+    "sha256": "bf4faec1abf6bb4c7b9b3267509ef96e05eb46bd2c17e408d51b0e352e7bfd55"
+  },
+  "evidence": [
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_investment/capture/capture_report.json",
+      "sha256": "cef6432c74b06d61cf4d2abe899049cc4f6730f4a0d2dabd48cf8847f9d3f249"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_investment/trace/requests.json",
+      "sha256": "095894373c91360f9de201579a1e7e97ae0b6ed9a32cfe1b51215459ec9e0585"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_investment/capture/navigation_command_journal.json",
+      "sha256": "577ba8159ad6a2f19569c71e6f9731a2df4d74a99740fa8e6bb41686d976e056"
+    },
+    {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261124_syracuse_investment/terminal.json",
+      "sha256": "8dee68ba7ba508e678a8a2e919234050f413f837923ea0f825025eed25015bd2"
+    }
+  ],
+  "absent_archived_ids": [
+    284,
+    318,
+    750,
+    751,
+    752
+  ],
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

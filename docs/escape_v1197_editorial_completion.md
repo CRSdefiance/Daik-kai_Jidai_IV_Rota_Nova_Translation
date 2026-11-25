@@ -1,0 +1,13 @@
+# V1197: direct escape editorial completion
+
+V1197 completes13 escape notices:10 revised and3 retained. Counts1229 complete (914 revised,315 retained),1267 source/prose reviewed;38 reviewed COMMON entries remain incomplete in addition to the broader unreviewed shared/routes/raw-source inventory. V1189 corrects the actual direct caller02053F40/+274 after V1166 split Everyone.122324 dispatch/ABI,3668 modal,140 status, 1417 full fonts and13 original source pipelines pass. Two actual1973 font/RGB holds,31 pre-duel fixture audits and ordinary A defeat/GameOver/title transitions pass. Eight ordinary startup captures and the photographed676/677 shop formatting pass. All471 batches114 accepted layers, all COMMON/prose/routes/graphics/fonts and the123040-byte staged payload are preserved; the clean-input patch reconstructs exactly. V1189 remains experimental; canonical and prior whole-batch scene-verified V997 remain unchanged. All18 plaques and the separate graphics audit remain open. The full editorial goal remains active.
+
+All13 escape alternatives have clean Japanese/source-context/natural-English review, unchanged source substitutions,1417 corrected direct-frame argument/full-native-font cases,416 unchanged voice selections and13 original53F0C loader/printf/macro/wrap pipelines. Original gameplay selects1973 in a natural duel defeat after disclosed low-positive starting HP and a native shield transfer to inventory. Two full native-font/RGB holds prove complete words and uniform margins. All31 fixtures precede the duel and pass complete4MiB delta/RNG/identity audits. Normal A input dismisses the notice, advances abandon-ship/loss messages, reaches Game Over and returns to the ordinary title menu. Other12 IDs have family sample evidence, not individual actual activations. This is targeted headless testing, not earned progress, a route playthrough or hardware proof.
+
+Combined ROM: `E:/Rota Nova translations/Generated/out/all_routes_combined_v1189_candidate.nds`
+
+ROM SHA256: `a7b7799052a83703dc5a2bf84e946e43b31d5e1f795f9f3371417412f60c7df4`
+
+Patch SHA256: `0cd1c106606d443d1d01b3a914a4f4f3fb84017ce93fe5a3f6bab39f171364e6`
+
+This supersedes the escape-format approval in V1174; its static20 completion remains valid. The original failure and rejected status-constant experiment remain documented in V1187. No section, cache, arena, BSS, ITCM or source-owned allocation is enlarged. The next source inventory contains30 unreviewed combat barks/special moves; source and consumer context must be completed before prose approval. Older COMMON750-752, the successful-shot sample and remaining sighting/Armed Latina checks remain pending.

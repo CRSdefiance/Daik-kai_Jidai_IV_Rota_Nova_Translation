@@ -1,0 +1,26 @@
+"""Prepare the next registered cumulative stack,exact clean patch and bounded startup checks."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import derive
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/lil_B205_release_tools_v6217')
+if __name__=='__main__':
+    assert not ROOT.exists();r=read('work/analysis/lil_B205_atomic_v6216/atomic_validation_receipt.json');assert r['positive_records']==17 and r['negative_count']==78 and r['all_negatives_reject_before_mutation']
+    old=Path('scripts/register_lil_B204_v6151.py').read_text(encoding='utf-8');a=old.index('        description=');b=old.index('    updated=',a)
+    description="""        description='Complete V6160 plus17 clean-Japanese whole-exchange B205 parrot-mimicry/catch/echoed-victory reviews:eight revisions and nine justified retentions. All25 commands,17 preambles,eight leaves,ten progressive/seven actorless FE sound/echo objects,no macros/choices/relative sites,end616-to574 and target alignment tail2 are preserved. All17 actual English panels/63 complete native holds preserve five exact echoes,two sound captions,source-supported Lil Argot/Angelo Puccini names and the closing joke. The same-code Japanese/English initialized fixtures match across34 command timings,interval RNG,queried final groups/actor/PRNG,the7150 acquisition notice and98 postscene whole-RGB samples. These bounded observations do not prove broad simulation,natural activation,original location,earned progress or full effects. All207 names and all other editorial,graphics and older-record audit queues remain open.',
+        note='Complete source/native/reference/actual review and78 pre-mutation semantic negatives pass. Registered cumulative build,clean-input patch and current startup pending. Main V4701 preserved.')
+"""
+    tools=[derive('scripts/register_lil_B204_v6151.py','scripts/register_lil_B205_v6217.py',{
+        old[a:b]:description,'B204':'B205','lil_B204_editorial_v2':'lil_B205_editorial_v1','registration_v6151':'registration_v6217','all-routes-unified-v6160':'all-routes-unified-v6220','all-routes-unified-v6110':'all-routes-unified-v6160','atomic_v6150b':'atomic_v6216','combined_v6110':'combined_v6160','verification_v6134':'verification_v6198','V6160':'V6220','V6110':'V6160',"receipt['positive_records']==20":"receipt['positive_records']==17","len(parent_manifest['batches'])==592":"len(parent_manifest['batches'])==593",'build_integrated_release_v6151.tmp':'build_integrated_release_v6217.tmp','expected_manifest_batches=593':'expected_manifest_batches=594','593 expected batches':'594 expected batches',
+    })]
+    tools.append(derive('scripts/build_lil_B204_v6160.py','scripts/build_lil_B205_v6220.py',{'B204':'B205','build_v6160':'build_v6220','combined_v6160':'combined_v6220','registration_v6151':'registration_v6217','all-routes-unified-v6160':'all-routes-unified-v6220'}))
+    tools.append(derive('scripts/verify_lil_B204_release_v6161.py','scripts/verify_lil_B205_release_v6221.py',{
+        'B204':'B205','lil_B204_editorial_v2':'lil_B205_editorial_v1','release_v6161':'release_v6221','combined_v6160':'combined_v6220','combined_v6110':'combined_v6160','registration_v6151':'registration_v6217','build_v6160':'build_v6220','all-routes-unified-v6160':'all-routes-unified-v6220','all-routes-unified-v6110':'all-routes-unified-v6160',"len(manifest['batches'])==593":"len(manifest['batches'])==594",'all593_manifest_batches':'all594_manifest_batches','reference_v6138':'reference_v6203','V6110':'V6160','manifest_batches=593':'manifest_batches=594',
+    }))
+    tools.append(derive('scripts/run_lil_B204_regressions_v6160.py','scripts/run_lil_B205_regressions_v6220.py',{'B204':'B205','regressions_v6160':'regressions_v6220'}))
+    tools.append(derive('scripts/run_lil_B204_startup_v6162.py','scripts/run_lil_B205_startup_v6222.py',{'B204':'B205','runs_v6162':'runs_v6222','_v6162_':'_v6222_','version=6160':'version=6220'}))
+    tools.append(derive('scripts/verify_lil_B204_startup_v6163.py','scripts/verify_lil_B205_startup_v6223.py',{
+        'B204':'B205','startup_v6163':'startup_v6223','runs_v6162':'runs_v6222','combined_v6160':'combined_v6220','combined_v6110':'combined_v6160','V6110':'V6160','Current6160':'Current6220',
+        "oldtp=Path('work/analysis')/({'newgame':'shachihoko_runs_v6095','town':'shachihoko_runs_v6096'}[case])/(case+'_terminal.json')":"oldtp=Path('work/analysis/lil_B204_runs_v6162')/(case+'_terminal.json')",
+    }))
+    tools.append(derive('scripts/record_lil_B204_startup_view_v6163.py','scripts/record_lil_B205_startup_view_v6223.py',{'B204':'B205','startup_v6163':'startup_v6223','V6110':'V6160'}))
+    ROOT.mkdir(parents=True);save(ROOT/'source_locked_release_build_patch_regression_and_startup_tools.json',dict(tools=tools,profile='all-routes-unified-v6220',parent_profile='all-routes-unified-v6160',expected_manifest_batches=594,accepted_layers=114,all78_negative_controls_pass=True,startup_parent_is_actual_V6160_opening_and_town_runs6162=True,no_ROM_or_registry_change_yet=True,full_goal_complete=False));print('B205 registered release tools prepared:594 cumulative batches/114 accepted,exact clean patch,110 regressions and V6160-bound startup checks. Main V4701 preserved.')

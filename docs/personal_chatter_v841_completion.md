@@ -1,0 +1,26 @@
+# V841: Deck personal-comment editorial completion in V838
+
+V841 completes25 Deck personal comments1361-1385 in registered V838:18 revisions and7 justified retentions. All25 native full-font/crop cases,144 phase cases,25 ordinary Cabin helper aliases and7336 original warm/cold copies pass. Ten actual complete bitmap/RGB holds cover five revised IDs:Janus1365,Claudio1366,Julio1367,Emilio1375 andCharles1379. Janus/Claudio/Charles use normal assignments to real Cabin12;Julio uses only two declared elapsed counters;Emilio uses one declared Cabin-occupant byte,with faction21 and every other RAM byte preserved. The15-character Mmm,delicious first row retains the full Sneaking continuation at x16. All three normal town-return checks preserve scoped funds,calendar,31 roles,owned companion records and actual ship models. Registered V838 and exact clean-input patch retain471 batches,114 accepted layers,3643 other COMMON strings,all graphics/scripts/HELP/ARM7/overlays and fixed123040 staged bytes;seven ordinary startup frames pass. Native RTTI/widget labels and animated image-header flag assumptions are corrected from original code without changing earlier bytes or captures. 671 entries complete (485 revised/186 retained),674 source/prose reviewed;three older750-752 drafts and all remaining unreviewed shared/route/player prose/raw-source work remain. Samwell middle-name glyph,older record re-audit and separate graphics/all18 plaques stay open;canonical not promoted;full goal active.
+
+## Actual verification scope
+
+Ten actual complete bitmap/RGB holds across five revised IDs. Janus/Claudio ordinary real Cabin assignments;Julio original timed activity with only two cooldown counters;Charles genuine owned companion and normal Cabin assignment,even first-row multiline. Emilio uses one declared synthetic Cabin occupant byte,faction21 preserved,with the required15-character odd first row and complete Sneaking continuation. Normal cancel/town return preserves scoped funds,calendar,31 roles,owned companion records and five-ship models. Other20 comments have full source/native-font proof,not individual actual visits. No earned travel,fleet,acquisition,full-playthrough or hardware claim.
+
+Both original source branches were mapped:normal healthy/normal-mood Cabin role12 or role16 uses1361+actor,as does the transient leisure path. The25 ordinary helper probes are controlled numeric-selector tests,not25 actual scene visits. Actual selections,room occupants,complete252x36 native body planes,independent words,and216x36 visible ink/blank pixels are checked for every sampled hold. The original parent projection preserves all other drawing commands,frame and palette;old144x24 crops lose verified text on the longer samples.
+
+Back cancels proposed assignments;Finish confirms them. The first unsuccessful activity attempts backed out and therefore left sailors unassigned. The later assignments and normal cancel/return behavior are verified from the actual31-byte occupant bank. The earlier V838 long sailing attempt ran out of food and was excluded. The V840 assumption that Charles had an odd first line failed:his line has28 characters. Its failed verifier is preserved;V841 adds the real15-character Emilio case instead of changing the English or weakening the odd-row gate. The actual animated bitmap header is1404h;original01FF9344 reads the format with LDRB. Exact native flag bits are preserved. Exact RTTI identifies the body as CDeckCabinInfoView and its parent as CDeckPersonnelView;earlier adjacent-name labels are corrected in a separate erratum.
+
+## Release and progress
+
+- Candidate: `E:/Rota Nova translations/Generated/out/all_routes_combined_v838_candidate.nds`
+- SHA-256: `54294f87608fc15581cf888880e9e78f763b324ffe4800eff54499a166a99ff8`
+- Profile: `all-routes-unified-v838`;experimental,canonical not promoted.
+- Canonical base: `out/raphael_natural_v2_accepted_base.nds`;SHA-256 `3cb827e4c52ab2086fb5a626835d72192085a958581279d3c79b0200bbf405fe`.
+- Exact clean-input patch: `all_routes_combined_v838_candidate.xdelta`;SHA-256 `680b2ce2dff695fef27d2b187b9882dd972d50f8851e734bdb20f2c8e66910ee`.
+- Clean input SHA-256: `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`.
+- Final per-record review: `translations\personal_chatter_editorial_final_review_v1.json`.
+- Release closure: `work\analysis\personal_chatter_v841\registered_release_completion.json`.
+
+Only COMMON and ARM9 native selection metadata/two crop-size words differ from V834. No executable code,section,BSS,cache,arena,staged payload,route or graphics change is added. Fresh late-stage replay,all-other-component comparison,dependency hashes,ROM/patch/reconstruction hashes and inherited manifest checks pass. The original pending V838 verification remains immutable;the V841 closure adds actual evidence. Human cold-boot acceptance is still required before canonical promotion.
+
+Every generated ROM,patch,proof and capture is on E:. Five native guide-candidate screenshots retain exact source hashes and fixture provenance. The wider editorial goal,three older context drafts,raw-source revisit,Samwell name-header lead and separate graphics audit remain unfinished.

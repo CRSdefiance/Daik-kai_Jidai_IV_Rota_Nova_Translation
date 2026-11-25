@@ -1,0 +1,7 @@
+# All Routes Trade Good Descriptions candidate
+
+Use [Translation_DS_All_Routes_Trade_Good_Descriptions_20261111_candidate.nds](../../out/trade_good_descriptions_registered_20261111_v1/Translation_DS_All_Routes_Trade_Good_Descriptions_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) rebuilds it byte for byte from clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `4b38964648dcfa73b42524f766befa3fbecc16951f61d5cbd77d1885810d36da`. Patch SHA-256 `d43ef43c6d6e13416d21908e25592bbf13cdb1f8a121ae7488c938f12dc4ceec`.
+
+All 124 Price Info trade-good descriptions are registered. The ledger now credits 27,093 reviews. Ninety-seven revisions and 27 justified retentions include replacements for generic placeholders and unrelated save prompts. Only the COMMON archive and its native ARM9 pointer and size table changed. The original modal, ASCII right bounds and Market Goods Info fixes carry forward.
+
+All 133 pages passed native and visual review. The ordinary Lisbon replay used a copied save and the original Price Info controls. It verified 4 pages, original advancement and return to the selected commodity. The cold boot, 24 protected name getters, 34 targeted repository tests and all 99 release checks passed. [Gameplay](verification/trade_good_price_info_gameplay_verification.json) · [Exact records](verification/registered_review.json)

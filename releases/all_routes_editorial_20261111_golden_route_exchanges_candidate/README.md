@@ -1,0 +1,7 @@
+# All Routes Golden Route Exchanges candidate
+
+Use [Translation_DS_All_Routes_Golden_Route_Exchanges_20261111_candidate.nds](../../out/golden_route_exchanges_registered_20261111_v1/Translation_DS_All_Routes_Golden_Route_Exchanges_20261111_candidate.nds) with its build manifest. The [clean-input patch](translation.xdelta) reconstructs the ROM byte for byte from Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Candidate SHA-256 `1665c81177661f477e76d0aded50da217ce3bdfa8040feaddbcb997d7987f58e`. Patch SHA-256 `35da59dbb04e4845703797a1c7a20c990bae124ca77eae0e932abd4bef63c12a`.
+
+All 73 Golden Route records are registered. The ledger now credits 27,597 reviews. Forty-eight revisions and 25 justified retentions cover discovery, reporting and payment. The reviews preserve the four captains’ and officers’ voices, the purchase-town and good argument order, and the two-year reward terms.
+
+The focused Lisbon emulator replay exercised the original sale, Guild report and reward explanation after supplying one temporary purchase-cost word. Other variants and the monthly payout received offline checks. All 117 pages, cold boot, 24 protected name getters, 34 targeted tests and 109 release checks passed. [Gameplay](verification/golden_route_gameplay_verification.json) · [Payout](verification/original_monthly_payout.json) · [Exact records](verification/registered_review.json)

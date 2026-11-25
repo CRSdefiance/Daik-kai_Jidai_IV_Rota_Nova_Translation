@@ -1,0 +1,9 @@
+# Yifa’s recruitment in Seoul
+
+All 35 lines were reviewed as an exchange, from Yukihisa catching Yifa following the party to Maria taking her aboard as an equal. Eleven lines were revised for voice or clarity, four keep their wording with better wraps, and twenty were retained with individual reasons. The company substitution stays in Yifa’s request. Maria and Yukihisa recognize her skill while leaving her claim about the binding spell open. [Exact source and current references](../releases/all_routes_editorial_20261115_seoul_recruitment_candidate/verification/registered_review.json)
+
+Paired ordinary cold boots used the same Seoul save and inputs. The original Square entrance activated the entire event. All 35 complete dialogue masks and nameplates passed, including the company substitution. Five controls matched, including the pause during the demonstration, **Yifa Sol joined!**, and the return to the Square. The original Square calls and later shop exchanges agree. [Emulator comparison](../releases/all_routes_editorial_20261115_seoul_recruitment_candidate/verification/gameplay_comparison.png)
+
+The separate Tunis, Valencia and Syracuse runs verified 19 complete holds across nine shared records. The Tunis stock recommendation splits “be sure,” and the trend forecast splits “a while.” Both are recorded for a subsequent wrap pass. [Regional dialogue ledger](../translations/editorial_checkpoints/SharedText_20261110_v1/regional_town_dialogue_20261115_v1.json)
+
+The [registered ROM and patch](../releases/all_routes_editorial_20261115_seoul_recruitment_candidate/README.md) preserve the 114 accepted layers and original script controls. Six startup frames, 24 protected name getters, 32 targeted tests, and byte-exact clean-input reconstruction passed. The 35 story records already had editorial credit. The ledger stands at 27,700 credited reviews and 276 mapped shared keys still open. Hardware was outside the replay scope.

@@ -1,0 +1,7 @@
+# Shore and whale report phrase wraps
+
+Reviewed 41 reports in seven native dialogue groups. Nine received prose revisions, two were rewrapped with their wording intact, and 30 retain their wording and layout. The changes cover a friendly invitation, the shore attack, the outbreak after an animal attack, the bottomless bog and the glint where the white whale dived. [Exact clean, prior and registered references](../releases/all_routes_editorial_20261121_shore_phrase_wraps_candidate/verification/registered_review.json)
+
+All 41 reports passed native portrait checks, and every revised page was visually reviewed. A DeSmuME replay used the copied Search save and recorded shoreline setup. It temporarily selected the revised attack wording, then restored the original selector before the sailor-loss notice and verified the return to sailing. The remaining variants received offline checks. Hardware remains unvisited. [Native and emulator evidence](../releases/all_routes_editorial_20261121_shore_phrase_wraps_candidate/verification)
+
+The clean-input patch reconstructs the candidate byte for byte. Only COMMON changes. All 114 accepted layers, the ASCII right-bound fix and the locations and payloads of the 276 pending mapped shared records carry forward. Six startup holds, 24 protected getters and 17 focused tests passed. Sixteen leads remain in the separate early-wrap scan. [Registered candidate and patch](../releases/all_routes_editorial_20261121_shore_phrase_wraps_candidate/README.md)

@@ -1,0 +1,743 @@
+{
+  "candidate": "work\\save_location_labels_20261119\\Save_Location_Labels_RESEARCH_ONLY.nds",
+  "candidate_sha256": "5ce7dbe39c319df6e8f776fe3014607c59cc3b656c965f68b34a151d50bf7841",
+  "parent_sha256": "22bd4eab2e6b4a00f00d19f90cc5663bd7e32482e7e2c88cf47e02a5de7af4a2",
+  "target_ARM9_sha256": "2ed1d89c4f4271b3561cd6e052617f7b360f73919cef2c902fede41921562894",
+  "target_COMMON_sha256": "6cc21f69f799c2e2a8f9b83f061bc9695bc43a2b5da36a114c0e3f42594a1957",
+  "clean_input_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "DK4_SAVE_AT_SEA",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Assembled after the sea area on an occupied Save row.",
+      "source_Japanese": "洋上",
+      "source_meaning": "At Sea",
+      "localization_note": "Keep the accurate At Sea label and add the separator at the same boundary used by Docked.",
+      "decision": "spacing",
+      "english": "At Sea",
+      "source_reference": {
+        "offset": 1483076,
+        "allocation": 8,
+        "pointer_field": 34535104,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483076,
+        "allocation": 8,
+        "pointer_field": 34535104,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "976d8fe300000000",
+      "current_hex": "4174205365610000",
+      "staged_hex": "2041742053656100",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_LOAD_AT_SEA",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Assembled after the sea area on an occupied Load row.",
+      "source_Japanese": "洋上",
+      "source_meaning": "At Sea",
+      "localization_note": "Keep the accurate At Sea label and use the same separator as the Save list.",
+      "decision": "spacing",
+      "english": "At Sea",
+      "source_reference": {
+        "offset": 1483112,
+        "allocation": 8,
+        "pointer_field": 34537276,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483112,
+        "allocation": 8,
+        "pointer_field": 34537276,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "976d8fe300000000",
+      "current_hex": "4174205365610000",
+      "staged_hex": "2041742053656100",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_SAVE_DOCKED",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Assembled after the port on an occupied Save row.",
+      "source_Japanese": "停泊中",
+      "source_meaning": "Docked",
+      "localization_note": "Docked states the ship's status directly. The existing leading separator keeps it clear of the port name.",
+      "decision": "retention",
+      "english": "Docked",
+      "source_reference": {
+        "offset": 1483084,
+        "allocation": 8,
+        "pointer_field": 34535108,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483084,
+        "allocation": 8,
+        "pointer_field": 34535108,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "92e2949192860000",
+      "current_hex": "20446f636b656400",
+      "staged_hex": "20446f636b656400",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_LOAD_DOCKED",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Assembled after the port on an occupied Load row.",
+      "source_Japanese": "停泊中",
+      "source_meaning": "Docked",
+      "localization_note": "Docked matches the Save list and already has the correct boundary after the port name.",
+      "decision": "retention",
+      "english": "Docked",
+      "source_reference": {
+        "offset": 1483120,
+        "allocation": 8,
+        "pointer_field": 34537280,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483120,
+        "allocation": 8,
+        "pointer_field": 34537280,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "92e2949192860000",
+      "current_hex": "20446f636b656400",
+      "staged_hex": "20446f636b656400",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_SAVE_SELECT_TITLE",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Displayed over the Save slot list before the player chooses a destination.",
+      "source_Japanese": "セーブする箇所を選んで下さい",
+      "source_meaning": "Choose the slot or saved game for this operation.",
+      "localization_note": "Keep the concise instruction. The user selects a slot, which can be empty or occupied.",
+      "decision": "retention",
+      "english": "Select a save slot.",
+      "source_reference": {
+        "offset": 1483004,
+        "allocation": 32,
+        "pointer_field": 34535088,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483004,
+        "allocation": 20,
+        "pointer_field": 34535088,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "835a815b837582b782e989d38f8a82f0914982f182c589ba82b382a200000000",
+      "current_hex": "53656c6563742061207361766520736c6f742e00",
+      "staged_hex": "53656c6563742061207361766520736c6f742e00",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "DK4_LOAD_SELECT_TITLE",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "Displayed over the Load slot list before the player chooses saved progress.",
+      "source_Japanese": "ロードするデータを選んで下さい",
+      "source_meaning": "Choose the slot or saved game for this operation.",
+      "localization_note": "Name the saved game directly in natural English and keep the original instruction to select one.",
+      "decision": "revision",
+      "english": "Select a save to load.",
+      "source_reference": {
+        "offset": 1483036,
+        "allocation": 32,
+        "pointer_field": 34535092,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1483036,
+        "allocation": 23,
+        "pointer_field": 34535092,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "838d815b836882b782e98366815b835e82f0914982f182c589ba82b382a20000",
+      "current_hex": "53656c656374206461746120746f206c6f61642e000000",
+      "staged_hex": "53656c6563742061207361766520746f206c6f61642e00",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    },
+    {
+      "id": "ARM9_SE_ASIA_REGION_NAME",
+      "file_path": "/__arm9__.bin",
+      "speaker": "Save and Load interface",
+      "context": "The Southeast Asia region label returned by the region lookup used by both slot lists.",
+      "source_Japanese": "東南アジア",
+      "source_meaning": "SE Asia",
+      "localization_note": "Keep the established abbreviation. Give the status suffix responsibility for the separator, as with the six other stock regions.",
+      "decision": "spacing",
+      "english": "SE Asia",
+      "source_reference": {
+        "offset": 1361888,
+        "allocation": 11,
+        "pointer_field": 34708440,
+        "ARM9_sha256": "0d1541022ef95afe02ad7a1a381a1fc3e5e74442a5f0408f436d68a5d306d731"
+      },
+      "current_reference": {
+        "offset": 1361862,
+        "allocation": 9,
+        "pointer_field": 34708440,
+        "ARM9_sha256": "2cc1e17dd836fa6fa00d01033037810680b9fdf6480d256ea88e1d4ae1ce530b"
+      },
+      "source_hex": "938c93ec83418357834100",
+      "current_hex": "534520417369612000",
+      "staged_hex": "534520417369610000",
+      "runtime_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": false
+      }
+    }
+  ],
+  "entire_parent_inverse": true,
+  "slots_changed": {
+    "1483076": 8,
+    "1483112": 8,
+    "1483036": 23,
+    "1361862": 9
+  },
+  "stock_and_fallback_painter_arguments": [
+    {
+      "consumer": "Save",
+      "region": 0,
+      "previous_arguments": [
+        [
+          34916252,
+          "N. Sea"
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916252,
+          "N. Sea"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "N. Sea At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 1,
+      "previous_arguments": [
+        [
+          34916275,
+          "Med."
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916275,
+          "Med."
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "Med. At Sea",
+      "maximum_width_px": 66,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 2,
+      "previous_arguments": [
+        [
+          34984653,
+          "Africa"
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34984653,
+          "Africa"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "Africa At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 3,
+      "previous_arguments": [
+        [
+          34916280,
+          "Indian"
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916280,
+          "Indian"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "Indian At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 4,
+      "previous_arguments": [
+        [
+          34916294,
+          "SE Asia "
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916294,
+          "SE Asia"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "SE Asia At Sea",
+      "maximum_width_px": 84,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 5,
+      "previous_arguments": [
+        [
+          34916287,
+          "E Asia"
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916287,
+          "E Asia"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "E Asia At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 6,
+      "previous_arguments": [
+        [
+          34916266,
+          "Americas"
+        ],
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916266,
+          "Americas"
+        ],
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": "Americas At Sea",
+      "maximum_width_px": 90,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 7,
+      "previous_arguments": [
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": " At Sea",
+      "maximum_width_px": 42,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Save",
+      "region": 65535,
+      "previous_arguments": [
+        [
+          35037508,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          35037508,
+          " At Sea"
+        ]
+      ],
+      "combined": " At Sea",
+      "maximum_width_px": 42,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 0,
+      "previous_arguments": [
+        [
+          34916252,
+          "N. Sea"
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916252,
+          "N. Sea"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "N. Sea At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 1,
+      "previous_arguments": [
+        [
+          34916275,
+          "Med."
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916275,
+          "Med."
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "Med. At Sea",
+      "maximum_width_px": 66,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 2,
+      "previous_arguments": [
+        [
+          34984653,
+          "Africa"
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34984653,
+          "Africa"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "Africa At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 3,
+      "previous_arguments": [
+        [
+          34916280,
+          "Indian"
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916280,
+          "Indian"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "Indian At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 4,
+      "previous_arguments": [
+        [
+          34916294,
+          "SE Asia "
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916294,
+          "SE Asia"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "SE Asia At Sea",
+      "maximum_width_px": 84,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 5,
+      "previous_arguments": [
+        [
+          34916287,
+          "E Asia"
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916287,
+          "E Asia"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "E Asia At Sea",
+      "maximum_width_px": 78,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 6,
+      "previous_arguments": [
+        [
+          34916266,
+          "Americas"
+        ],
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          34916266,
+          "Americas"
+        ],
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": "Americas At Sea",
+      "maximum_width_px": 90,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 7,
+      "previous_arguments": [
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": " At Sea",
+      "maximum_width_px": 42,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    },
+    {
+      "consumer": "Load",
+      "region": 65535,
+      "previous_arguments": [
+        [
+          35037544,
+          "At Sea"
+        ]
+      ],
+      "staged_arguments": [
+        [
+          35037544,
+          " At Sea"
+        ]
+      ],
+      "combined": " At Sea",
+      "maximum_width_px": 42,
+      "original_region_and_suffix_selectors_executed": true,
+      "painter_arguments_observed_offline": true
+    }
+  ],
+  "lead": {
+    "path": "work\\save_dialogue_followup_20261119_v2\\at_sea_spacing_lead.json",
+    "sha256": "e82c7249feca7b878565b4770eab9d3ba1f82634ecb0bb7aad69daff5b1a4684"
+  }
+}

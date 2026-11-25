@@ -1,0 +1,11 @@
+# All Routes Sera assignment candidate
+
+Cold-boot `out/promotion_ready_20261111_sera_assignment/Translation_DS_All_Routes_Sera_Assignment_20261111_candidate.nds` with its adjacent build manifest. This copy was freshly reconstructed and matches the registered ROM byte for byte. [Reconstruction verification](verification/promotion_reconstruction.json)
+
+The [clean-input patch](translation.xdelta) applies to clean Japanese SHA-256 `f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d`. Expected ROM SHA-256 is `5d870e2003846d1e815aa13ea07dcca44912ef56344c35f85453877dae0adaa3`. Patch SHA-256 is `74600b6ec8531c523e48450bf8bc3e525091cb1acf6ab28d0daf16adb20e140e`.
+
+Sera’s four room-assignment reactions are registered. The ledger now credits 26,315 reviews. Three revisions keep Sera’s plain voice, restore the ordinary ASCII I, and preserve her different reactions to the Galley, Cabin, and language barrier. The existing “Can’t do that... Sorry.” is retained. The original game code handles the wraps and room decisions.
+
+All four stored records, native pages and assignment outcomes passed. Two focused Deck replays verified the Galley acceptance and the language refusal through A dismissal. Each staged the selected actor, room type and language bit in its own emulator session. The Cabin and other refusal passed offline. The candidate passed 77 release checks, 30 repository tests, its own startup, and 24 protected name getters. Main promotion awaits acceptance. [Gameplay proof](verification/sera_assignment_gameplay_verification.json) · [Registered review](verification/registered_review.json)
+
+This cumulative candidate adds 95 reviews since Ship Emergency across Auto Move warnings, sea and village dialogue, and Sera's Deck responses. It includes Rafael's tutorials, the Market Trade-screen correction, and the ASCII right-bound fix. All 114 accepted layers, 742 registered entries, 77 release checks, and 30 fresh targeted repository tests passed verification. Gameplay evidence comes from the registered builds. Hardware acceptance is pending, and V4701 remains the promoted main build. The new drafts for the four New Game biographies remain under review. [Fresh test results](verification/promotion_repository_pytest.xml)

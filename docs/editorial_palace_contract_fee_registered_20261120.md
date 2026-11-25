@@ -1,0 +1,7 @@
+# Palace contract fee digits registered
+
+Both Palace contract quotes use regular-width digits. Four source-bound wording retentions preserve the ruler’s distinct responses, the quoted minimum and the relationship between the offered fee and market share. Both quote paths use the original calculation and payment logic. All 164 native format cases cover 82 distinct fee amounts calculated by the game across 114 towns. [Registered review](../releases/all_routes_editorial_20261120_palace_contract_fee_candidate/verification/registered_review.json) · [Native pages](../releases/all_routes_editorial_20261120_palace_contract_fee_candidate/verification/portrait_sheet_01.png)
+
+The ordinary Istanbul replay accepted the same 2,842-gold payment. The paired refusal replay initialized the wallet to one gold through the original money method and confirmed that the refusal leaves it there. Both versions returned to identical screens, and the display diffs stay inside the quote’s final text row. [Paired game captures](../releases/all_routes_editorial_20261120_palace_contract_fee_candidate/verification/contract_gameplay.png)
+
+Six startup holds, 24 protected name getters and 30 focused tests passed. Two optional historical fixtures skipped. The patch rebuilds the cumulative candidate byte for byte. [Candidate and patch](../releases/all_routes_editorial_20261120_palace_contract_fee_candidate/README.md)

@@ -1,0 +1,7 @@
+# Proof of Conquest terminology
+
+The current release had 18 uses of Proof of Supremacy in 12 Hodram and Lil story blocks. The clean Japanese and the surrounding exchanges refer to the same quest item that Help calls Proof of Conquest. Each instance now uses that term. The retained wording preserves singular or plural, regional context, character voice and the distinction between a map and a Proof. The East Asia bamboo exchange was also reread from the clean Japanese and bound to its existing coverage keys. [Exact review ledger](../releases/all_routes_editorial_20261118_proof_of_conquest_terms_candidate/verification/registered_review.json)
+
+All 18 revisions passed native rendering and visual review. The automatic wraps keep the full Proof title together and preserve Kushan Platter as a phrase. Initialized DeSmuME replay displayed both original Mediterranean dialogue branches, the New World clue, the lotus leaf exchange and the East Asia discovery. The remaining revisions were checked offline. Natural activation and hardware remain unvisited. [Dialogue playback](../releases/all_routes_editorial_20261118_proof_of_conquest_terms_candidate/verification/proof_terms_live_1.png)
+
+The clean-input patch reconstructs the registered candidate byte for byte. The combined build carries all 114 accepted layers. The startup comparison, 24 protected name getters and 32 targeted tests passed. [Test ROM and patch](../releases/all_routes_editorial_20261118_proof_of_conquest_terms_candidate/README.md)

@@ -1,0 +1,9 @@
+# Faction aftermath portraits registered
+
+The 21 faction aftermath portraits are registered. The ledger now credits 26,533 reviews. The new work covers COMMON 2690–2710 across all three original voice tables. The same disbanding sequence can include the faction leader’s reaction and a second commander’s vow. The separate displaced-fleet response keeps the speaker’s concern about what comes next. The earlier faction-wide disband notice retains its wording and credit. [Release and patch](../releases/all_routes_editorial_20261111_faction_aftermath_portraits_candidate/README.md) · [Registered review](../releases/all_routes_editorial_20261111_faction_aftermath_portraits_candidate/verification/registered_review.json)
+
+The focused emulator replay displayed the original disband notice, 2691 and 2703, then returned to sailing. The fixture called the original handler for the existing Hayreddin Clan from an isolated sailing session. The game processed both fleets, cleared both commanders’ affiliations and applied the faction outcome. The temporary instruction changes were restored. The other 19 portraits were checked offline.
+
+Continue with the coin-game response at COMMON 2814 and the item-card descriptions beginning at 2815, including Baby Shark at 2819. Preserve the separate Options and Market callers, graphics artwork and older-record technical re-audit.
+
+The coin-game empty-selection branch at `0x02063CA4` still passes COMMON 2814 to the original fixed-speaker portrait wrapper. For item descriptions, both original callers add 2815 to the item index. The current ROM routes lookups at `0x0204D834` and `0x0204E50C` through the same registered item-description override and routes both paints through the item paragraph helper. Use the [previous Shachihoko consumer binding](../scripts/bind_shachihoko_description_consumers_v6092b.py) to rebind the current active pointer table and both stored representations before editing.

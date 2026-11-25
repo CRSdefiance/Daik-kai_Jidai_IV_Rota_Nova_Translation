@@ -1,0 +1,579 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_1045",
+      "message_id": 1045,
+      "speaker": "Sailor",
+      "english": "There's room aboard for %s more. Should I keep looking?",
+      "context": "After 57 sailors volunteer, the sailor reports the free berths and asks whether to recruit again.",
+      "source_meaning": "There is still space aboard for the specified number of people. Shall we recruit more?",
+      "localization_note": "Keep the spoken offer and the exact remaining capacity while dropping the repeated word.",
+      "English_argument_source_indices": [
+        0
+      ],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "candidate_sha256": "6aee570bea54d980215ec0fea31db1f425edf64ef1486d0c63472303da555585",
+  "source": {
+    "block": 13,
+    "offset": 508,
+    "copy_end": 552,
+    "bytes": 44,
+    "record_index": 7,
+    "table_offset": 1319226,
+    "start_in_record": 1
+  },
+  "installed": {
+    "block": 13,
+    "offset": 2648,
+    "copy_end": 2722,
+    "bytes": 73,
+    "record_index": 232,
+    "table_offset": 1319226,
+    "start_in_record": 0
+  },
+  "proposed_stored_hex": "205468657265277320726f6f6d2061626f61726420666f72202573206d6f72652e2053686f756c642049206b656570206c6f6f6b696e673f2020202020202020202020202020202020",
+  "allocation": {
+    "block": 13,
+    "start": 2648,
+    "end": 2722,
+    "before": "20546865726527732073706163652061626f61726420666f72202573206d6f72652e2057616e74206d6520746f20726f756e64207570206d6f72653f2020202020202020202020202000",
+    "after": "205468657265277320726f6f6d2061626f61726420666f72202573206d6f72652e2053686f756c642049206b656570206c6f6f6b696e673f202020202020202020202020202020202000",
+    "new_null_fields": 0
+  },
+  "native_cases": [
+    {
+      "count": 1,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "31"
+        ],
+        "English_values_hex": [
+          "31"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722031206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 1 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "31"
+        ],
+        "English_values_hex": [
+          "31"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f722031206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 1 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "9e2ddb6962464c73be108b0cd56100e1e89d7ac02d93ca74aa51ece8309f8dbf"
+    },
+    {
+      "count": 9,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "39"
+        ],
+        "English_values_hex": [
+          "39"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722039206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 9 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "39"
+        ],
+        "English_values_hex": [
+          "39"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f722039206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 9 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "bbabf7ce9d4ecfe5b6d9d00163c8ea5175a173c0852dbe46a0b6262ad723ce7a"
+    },
+    {
+      "count": 10,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3130"
+        ],
+        "English_values_hex": [
+          "3130"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f72203130206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 10 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3130"
+        ],
+        "English_values_hex": [
+          "3130"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203130206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 10 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "87da784d5106ade82d2891799f3dad4cb4bd9a101e2f56548803aff7c4c7bb14"
+    },
+    {
+      "count": 29,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3239"
+        ],
+        "English_values_hex": [
+          "3239"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f72203239206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 29 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3239"
+        ],
+        "English_values_hex": [
+          "3239"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203239206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 29 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "b631ba134aa59bdf576bfb10b9a0f9afb45bd41a134fe3c865fecfd75f7158cf"
+    },
+    {
+      "count": 67,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3637"
+        ],
+        "English_values_hex": [
+          "3637"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f72203637206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 67 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3637"
+        ],
+        "English_values_hex": [
+          "3637"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203637206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 67 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "c2b766591f93a91b79d04ae96e728656d66172ca41169ddd9c43002a7578fffa"
+    },
+    {
+      "count": 99,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3939"
+        ],
+        "English_values_hex": [
+          "3939"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f72203939206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 99 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3939"
+        ],
+        "English_values_hex": [
+          "3939"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203939206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 99 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "120f6af5036fc66feabd5d48a9f6737367861a359035aa02963b30971f6b16f1"
+    },
+    {
+      "count": 100,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "313030"
+        ],
+        "English_values_hex": [
+          "313030"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f7220313030206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 100 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "313030"
+        ],
+        "English_values_hex": [
+          "313030"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f7220313030206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 100 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "7e88da6099f53bd836ed4bb2582207597cb5f27d97196039e7704859b230ef57"
+    },
+    {
+      "count": 324,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "333234"
+        ],
+        "English_values_hex": [
+          "333234"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f7220333234206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 324 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "333234"
+        ],
+        "English_values_hex": [
+          "333234"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f7220333234206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 324 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "32b86ec9795898ec8121c5ad63f45165fd9b5568c589ed891260997e26039e6c"
+    },
+    {
+      "count": 999,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "393939"
+        ],
+        "English_values_hex": [
+          "393939"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f7220393939206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 999 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "393939"
+        ],
+        "English_values_hex": [
+          "393939"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f7220393939206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 999 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "22df9143edce629662c3a291b628b14624a6dc5623b063ab22d46f5363c46743"
+    },
+    {
+      "count": 1000,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "31303030"
+        ],
+        "English_values_hex": [
+          "31303030"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722031303030206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 1000 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "31303030"
+        ],
+        "English_values_hex": [
+          "31303030"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f722031303030206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 1000 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "7f415992be2703781dd0a909d4fa2387a5efc0c3c5bdcbc7a8ba245de351733d"
+    },
+    {
+      "count": 9999,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "39393939"
+        ],
+        "English_values_hex": [
+          "39393939"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722039393939206d6f72652e0a202057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 9999 more.",
+          "Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "39393939"
+        ],
+        "English_values_hex": [
+          "39393939"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f722039393939206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 9999 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "68c1ba4655b15a7e8d0bca5dda5781480a0a1826f4484222dabae22275ace991"
+    },
+    {
+      "count": 10000,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3130303030"
+        ],
+        "English_values_hex": [
+          "3130303030"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722031303030300a20206d6f72652e2057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 10000",
+          "more. Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3130303030"
+        ],
+        "English_values_hex": [
+          "3130303030"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203130303030206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 10000 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "79dd1b0d2ba0d0f04e03133fbb137aec97e47d28bea97506dd46c057cfd30737"
+    },
+    {
+      "count": 65535,
+      "before": {
+        "id": 1045,
+        "source_values_hex": [
+          "3635353335"
+        ],
+        "English_values_hex": [
+          "3635353335"
+        ],
+        "formatted_hex": "20546865726527732073706163652061626f61726420666f722036353533350a20206d6f72652e2057616e74206d6520746f20726f756e64207570206d6f72653f",
+        "lines": [
+          "There's space aboard for 65535",
+          "more. Want me to round up more?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "after": {
+        "id": 1045,
+        "source_values_hex": [
+          "3635353335"
+        ],
+        "English_values_hex": [
+          "3635353335"
+        ],
+        "formatted_hex": "205468657265277320726f6f6d2061626f61726420666f72203635353335206d6f72652e0a202053686f756c642049206b656570206c6f6f6b696e673f",
+        "lines": [
+          "There's room aboard for 65535 more.",
+          "Should I keep looking?"
+        ],
+        "findings": [],
+        "exact_printf_and_complete_words_and_guards_and_callee_saved_ABI": true
+      },
+      "native_plane_sha256": "184f37c838d8144a5f75976708bd0bfa06d84612b5ac44ddf6804bf38ab0f714"
+    }
+  ],
+  "sheets": [
+    {
+      "path": "translations\\editorial_checkpoints\\shared_display_20261123\\nagasaki_tavern_recruitment_preflight_20261124\\portrait_sheet_01.png",
+      "sha256": "629f28610a431a89d4e0d3ae66a54a769ab32c48153649a7ad45cded3523c647",
+      "messages": [
+        "1045 / 1 berths",
+        "1045 / 9 berths",
+        "1045 / 10 berths",
+        "1045 / 29 berths",
+        "1045 / 67 berths",
+        "1045 / 99 berths",
+        "1045 / 100 berths",
+        "1045 / 324 berths",
+        "1045 / 999 berths",
+        "1045 / 1000 berths",
+        "1045 / 9999 berths",
+        "1045 / 10000 berths",
+        "1045 / 65535 berths"
+      ]
+    }
+  ],
+  "current_ROM_native_offline_fixture": true,
+  "source_review": {
+    "path": "translations/editorial_checkpoints/shared_display_20261123/nagasaki_tavern_20261124.json",
+    "sha256": "25bbed49d328b6feb6b804d2fa3e44cd98ba75eaa0b02bc889c0e6c21add0a10"
+  },
+  "native_input": {
+    "candidate": ".codex-release-work\\nagasaki_contract_wrap_20261124\\Nagasaki_Contract_Wrap_STAGED.nds",
+    "candidate_sha256": "6aee570bea54d980215ec0fea31db1f425edf64ef1486d0c63472303da555585",
+    "ARM9_sha256": "9e1cdb0100ec5207fab7fd00766099f204673ca69e465c94c3638da76f0ba940",
+    "COMMON_sha256": "d6d74c44f42d1ed4af09d9d1ed7a9996774b661d14ac8eabb1de242dbb3abbfc",
+    "release_proof": "releases\\all_routes_editorial_20261124_nagasaki_contract_wrap_candidate\\verification\\registered_release_verification.json",
+    "release_proof_sha256": "971e81f22f65d6d3e5b2d024a19bd3afbf3524914946c19232f4786af59b921d",
+    "startup_proof": "releases\\all_routes_editorial_20261124_nagasaki_contract_wrap_candidate\\verification\\own_startup_verification.json",
+    "startup_proof_sha256": "cb7975af6245514297232d928eb56f718ba8ae77de1efcf40756b4854b3d5ea9",
+    "snapshot": {
+      "path": ".codex-release-work\\nagasaki_contract_wrap_20261124\\startup\\capture\\final_arm9_ram.bin",
+      "bytes": 4194304,
+      "sha256": "36148d54f57ff2564ddd59b03889c9dc4772c4753089fe02cc702b5fa23f4c67",
+      "read_only_export": true
+    },
+    "captain": 3,
+    "current_own_snapshot_not_historical_overlay": true,
+    "complete_staged_payload_exact": true,
+    "original_COMMON_cache_reset_andhost_IO_boundaries_disclosed": true,
+    "native_offline_checks_not_new_gameplay": true
+  },
+  "ROM_changed": false
+}

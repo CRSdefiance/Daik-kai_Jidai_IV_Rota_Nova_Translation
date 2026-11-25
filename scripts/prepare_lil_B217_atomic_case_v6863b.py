@@ -1,0 +1,9 @@
+"""Preserve the failed no-op case and require every negative to change its virtual input."""
+from pathlib import Path
+from scripts.source_locked_derivation_v5118 import checked_text,derive
+from scripts.verify_village_wrap_v608 import save
+ROOT=Path('work/analysis/lil_B217_atomic_tools_v6863b')
+if __name__=='__main__':
+    assert not ROOT.exists();jobs=[('scripts/challenge_lil_B217_atomic_v6863.py','scripts/challenge_lil_B217_atomic_v6863b.py',{'lil_B217_atomic_v6863':'lil_B217_atomic_v6863b',"source_preamble_hex='0040ffff0002'":"source_preamble_hex='0040ffff005c'","edit({'conf':c,'doc':d,'map':m}[kind]);old=":"edit({'conf':c,'doc':d,'map':m}[kind]);assert {'conf':c,'doc':d,'map':m}[kind]!={'conf':conf,'doc':doc,'map':mapping}[kind], 'No-op negative case:'+label;old="}),('scripts/register_lil_B217_v6864b.py','scripts/register_lil_B217_v6864c.py',{'lil_B217_atomic_v6863':'lil_B217_atomic_v6863b'})]
+    for a,b,c in jobs:assert not Path(b).exists();checked_text(Path(a).read_text('utf8'),c)
+    proofs=[derive(a,b,c) for a,b,c in jobs];ROOT.mkdir(parents=True);save(ROOT/'corrected_noop_case_and_registration_dependency.json',dict(derivations=proofs,failed_negative_producer='scripts/challenge_lil_B217_atomic_v6863.py',failed_case='changed-preamble',original_virtual_case_value='0040ffff0002',actual_Lil_source_preamble='0040ffff0002',failure='Corruption accepted:changed-preamble because the input was not changed',corrected_virtual_case_value='0040ffff005c',all_seventeen_cases_now_must_change_their_virtual_JSON_before_application=True,failed_registration_producer='scripts/register_lil_B217_v6864b.py',failed_registration_reason='Missing validation receipt after the negative test failed',release_stack_config_and_current_ROM_not_changed_by_failed_registration=True,all_ROMs_and_executed_producers_preserved=True,no_new_ROM_or_credit=True,full_goal_complete=False))

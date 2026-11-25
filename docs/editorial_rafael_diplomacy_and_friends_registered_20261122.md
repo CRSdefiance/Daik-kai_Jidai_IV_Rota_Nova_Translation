@@ -1,0 +1,5 @@
+# Rafael, Pereira, Eirene and Charlotte
+
+The three complete story objects have 268 source-paired decisions, with 13 dialogue revisions, 15 wrap fixes and 240 individual retentions. Pereira's threat assessment distinguishes securing their rear from asking him to stay and fight. Eirene's health is the reason Clau gives for watching out for her. Charlotte uses Romani to identify her community and describes the trader's low offer without implying a completed sale. [Exact Japanese and installed text](../releases/all_routes_editorial_20261122_rafael_diplomacy_and_friends_candidate/verification/registered_review.json)
+
+All 28 changed pages passed native formatting, complete glyph and visual checks. A focused Rafael replay sampled ten panels with their speaker labels in an initialized story scene. The original branch triggers and hardware remain unvisited for these changes. Ordinary startup and 17 regressions passed. The clean-input patch reconstructs the candidate byte for byte. [Candidate and patch](../releases/all_routes_editorial_20261122_rafael_diplomacy_and_friends_candidate/README.md)

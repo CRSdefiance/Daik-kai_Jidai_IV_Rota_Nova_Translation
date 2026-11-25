@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path("translations/release_stack.json");p=json.loads(P.read_text(encoding="utf-8"));b=list(p["profiles"]["maria-deep-route-v87"]["batches"]);b.append("translations/maria_deep_route_v88.json");p["profiles"]["maria-deep-route-v88"]={"status":"experimental","require_screen_entry_layout":True,"batches":b,"note":"Extends Maria V87 with all 36 records in SC3 block 102: Maria's confidence crisis with Xien, both choices, Staff of Guidance lead, renewed resolve, and Spirit result."};P.write_text(json.dumps(p,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"registered maria-deep-route-v88: {len(b)} batches")

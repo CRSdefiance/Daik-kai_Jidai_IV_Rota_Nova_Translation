@@ -1,0 +1,7 @@
+# Lisbon Market concession
+
+The original Market confirmation and successful bargaining sequence now has a focused replay on the registered Shortfall candidate. Two fixture bytes turn an empty room into a Purser’s Office and assign Julio Erneco, who is already aboard with Finance 115. The original controller inputs complete the Olive Oil purchase. The game’s own roll was 3 against a threshold of 27, and the wallet fell from 27,400 to 26,995 gold. The initial quote was 418 gold and the settlement charged 405. [Exact fixture, native branch and wallet records](../translations/editorial_checkpoints/shared_display_20261123/market_purser_current_20261123.json)
+
+**“Will this do?”** suits Julio’s more formal confirmation. **“Sorry to trouble you, but could you do a bit better?”** keeps his courtesy and the modest size of the request. **“All right. I’ll cut you a break.”** gives the trader’s concession its original tone. The two nameplates, all three dialogue panels and the Market menu return passed complete glyph checks. [Reviewed panels](../translations/editorial_checkpoints/shared_display_20261123/market_purser_current_20261123.png)
+
+The original requests were COMMON 8, 15, 24 and 10. The three archived Market lines at 750–752 retain the earlier exact source and installed bindings. Their direct display paths elsewhere remain open. Seven other bargaining voices retain offline coverage from the earlier review. Earned Purser assignment and handheld play remain unvisited. [Earlier Market review](editorial_market_bargaining_registered_20261120.md)

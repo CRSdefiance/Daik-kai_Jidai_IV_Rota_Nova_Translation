@@ -1,0 +1,9 @@
+# Story artwork inventory and shared display coverage
+
+All four DS story archives keep their original 781 still-image requests in order. I reran the native command checks for the 555 blocks that changed after the earlier inventory and reused exact blocks for the other 752. The original and installed still loaders selected the same filenames. The registry and archive checks apply to the current Online Card Copy build. [Native evidence](../translations/editorial_checkpoints/shared_display_20261123/story_artwork_inventory_20261123.json)
+
+Maria's original block 46 requests still 241 after Clifford's voice and before his first named line, then continues into his exchange with Maria. The installed script follows the same order and the portrait matches the clean ROM. This supplies an independent DS artwork path for **Maria and Clifford**. The other verified exchange, block 30, uses inline dialogue throughout. [Native artwork samples](../translations/editorial_checkpoints/shared_display_20261123/story_artwork_inventory_20261123.png)
+
+The source census finds both Hans and Arcadius speaking in three Rafael blocks. Blocks 48 and 150 use dialogue without a still request. Block 145 uses dialogue, two stills of Arcadius's reveal, and the inn background. Those paths account for the two characters' presentation in the verified scope. The archived wording remains **Hans and Arcadius**, preserving the name used in the Japanese label.
+
+All **276 shared worklist entries** now have a scoped display finding. The consolidated ledger verifies each one against the clean source and current installed references, with no duplicate credit. Exact individual artwork assignments for four archived labels and direct callers outside the tested paths remain open in the ledger. The broader editorial acceptance review remains active. [Consolidated shared ledger](../translations/editorial_checkpoints/shared_display_20261123/shared_editorial_coverage_20261123.json)

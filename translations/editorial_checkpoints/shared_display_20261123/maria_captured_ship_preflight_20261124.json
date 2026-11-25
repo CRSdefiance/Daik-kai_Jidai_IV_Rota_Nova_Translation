@@ -1,0 +1,2835 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "encoder": "dialogue-relocatable-v1",
+  "target_locale": "en-US",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_815",
+      "message_ID": 815,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Port Worker",
+      "Japanese": "あんた、積み荷は何もないだろ",
+      "english": "You have no cargo.",
+      "source_reference": {
+        "block": 10,
+        "offset": 2460,
+        "copy_end": 2488,
+        "bytes": 28,
+        "record_index": 36,
+        "table_offset": 1318766,
+        "start_in_record": 65,
+        "exact_hex": "82a082f182bd814190cf82dd89d782cd89bd82e082c882a282be82eb"
+      },
+      "current_reference": {
+        "block": 10,
+        "offset": 2912,
+        "copy_end": 2933,
+        "bytes": 20,
+        "record_index": 122,
+        "table_offset": 1318766,
+        "start_in_record": 0,
+        "exact_hex": "2020596f752068617665206e6f20636172676f2e"
+      },
+      "proposed_reference": {
+        "block": 10,
+        "offset": 2912,
+        "copy_end": 2933,
+        "bytes": 20,
+        "record_index": 122,
+        "table_offset": 1318766,
+        "start_in_record": 0
+      },
+      "source_hex": "82a082f182bd814190cf82dd89d782cd89bd82e082c882a282be82eb",
+      "current_hex": "2020596f752068617665206e6f20636172676f2e",
+      "proposed_hex": "2020596f752068617665206e6f20636172676f2e",
+      "source_meaning": "The port worker observes that the fleet has no freight.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "The operator selected Cargo Setup with empty holds. The direct reply explains why the editor does not open.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_85",
+      "message_ID": 85,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "Japanese": "約%s日の航海が可能です",
+      "english": "Sailing days left: about %s.",
+      "source_reference": {
+        "block": 0,
+        "offset": 3052,
+        "copy_end": 3076,
+        "bytes": 22,
+        "record_index": 64,
+        "table_offset": 1317306,
+        "start_in_record": 1,
+        "exact_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3480,
+        "copy_end": 3510,
+        "bytes": 28,
+        "record_index": 118,
+        "table_offset": 1317306,
+        "start_in_record": 0,
+        "exact_hex": "5361696c696e672064617973206c6566743a2061626f75742025732e"
+      },
+      "proposed_reference": {
+        "block": 0,
+        "offset": 3480,
+        "copy_end": 3510,
+        "bytes": 28,
+        "record_index": 118,
+        "table_offset": 1317306,
+        "start_in_record": 0
+      },
+      "source_hex": "96f1257393fa82cc8d718a4382aa89c2945c82c582b7",
+      "current_hex": "5361696c696e672064617973206c6566743a2061626f75742025732e",
+      "proposed_hex": "5361696c696e672064617973206c6566743a2061626f75742025732e",
+      "source_meaning": "The provisions permit about the displayed number of days at sea.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "About preserves the estimate before the departure-mode choice.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_641",
+      "message_ID": 641,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Sailor",
+      "Japanese": "その街とは\n航路がつながってねえな",
+      "english": "No route to that port.",
+      "source_reference": {
+        "block": 7,
+        "offset": 3796,
+        "copy_end": 3832,
+        "bytes": 33,
+        "record_index": 78,
+        "table_offset": 1318418,
+        "start_in_record": 2,
+        "exact_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482cb82a682c8"
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 4405,
+        "copy_end": 4429,
+        "bytes": 22,
+        "record_index": 312,
+        "table_offset": 1318418,
+        "start_in_record": 0,
+        "exact_hex": "4e6f20726f75746520746f207468617420706f72742e"
+      },
+      "proposed_reference": {
+        "block": 7,
+        "offset": 4405,
+        "copy_end": 4429,
+        "bytes": 22,
+        "record_index": 312,
+        "table_offset": 1318418,
+        "start_in_record": 0
+      },
+      "source_hex": "82bb82cc8a5882c682cd0a8d71984882aa82c282c882aa82c182c482cb82a682c8",
+      "current_hex": "4e6f20726f75746520746f207468617420706f72742e",
+      "proposed_hex": "4e6f20726f75746520746f207468617420706f72742e",
+      "source_meaning": "The sailor says their port has no connected sailing route to the destination.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "The terse line suits this sailor's voice and explains the map refusal for Osaka.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_86",
+      "message_ID": 86,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "System",
+      "Japanese": "%s月　%s日\n%s\n%sを出港しました",
+      "english": "%s/%s %s Departed %s.",
+      "source_reference": {
+        "block": 0,
+        "offset": 3076,
+        "copy_end": 3108,
+        "bytes": 30,
+        "record_index": 65,
+        "table_offset": 1317308,
+        "start_in_record": 1,
+        "exact_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 3510,
+        "copy_end": 3538,
+        "bytes": 26,
+        "record_index": 120,
+        "table_offset": 1317308,
+        "start_in_record": 0,
+        "exact_hex": "2025732f25730a202025730a202044657061727465642025732e"
+      },
+      "proposed_reference": {
+        "block": 0,
+        "offset": 3510,
+        "copy_end": 3538,
+        "bytes": 26,
+        "record_index": 120,
+        "table_offset": 1317308,
+        "start_in_record": 0
+      },
+      "source_hex": "25738c8e8140257393fa0a25730a257382f08f6f8d6082b582dc82b582bd",
+      "current_hex": "2025732f25730a202025730a202044657061727465642025732e",
+      "proposed_hex": "2025732f25730a202025730a202044657061727465642025732e",
+      "source_meaning": "The log lists the date, weather and port just departed.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "The three unchanged rows separate the original facts and preserve all four substitutions.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_618",
+      "message_ID": 618,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Sailor",
+      "Japanese": "%sに\n%sの\n艦隊がいやがる！\n戦闘態勢に入るぜ！",
+      "english": "We've got company %s! They're with %s! Get ready for a fight!",
+      "source_reference": {
+        "block": 7,
+        "offset": 2988,
+        "copy_end": 3036,
+        "bytes": 45,
+        "record_index": 60,
+        "table_offset": 1318372,
+        "start_in_record": 2,
+        "exact_hex": "257382c90a257382cc0a8acd91e082aa82a282e282aa82e981490a90ed93ac91d490a882c993fc82e982ba8149"
+      },
+      "current_reference": {
+        "block": 7,
+        "offset": 3229,
+        "copy_end": 3308,
+        "bytes": 62,
+        "record_index": 174,
+        "table_offset": 1318372,
+        "start_in_record": 0,
+        "exact_hex": "20576527766520676f7420636f6d70616e792025732120546865792772652077697468202573212047657420726561647920666f72206120666967687421"
+      },
+      "proposed_reference": {
+        "block": 7,
+        "offset": 3229,
+        "copy_end": 3308,
+        "bytes": 62,
+        "record_index": 174,
+        "table_offset": 1318372,
+        "start_in_record": 0
+      },
+      "source_hex": "257382c90a257382cc0a8acd91e082aa82a282e282aa82e981490a90ed93ac91d490a882c993fc82e982ba8149",
+      "current_hex": "20576527766520676f7420636f6d70616e792025732120546865792772652077697468202573212047657420726561647920666f72206120666967687421",
+      "proposed_hex": "20576527766520676f7420636f6d70616e792025732120546865792772652077697468202573212047657420726561647920666f72206120666967687421",
+      "source_meaning": "The lookout identifies the bearing and faction of a fleet and calls the crew to prepare for battle.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "The familiar idiom and urgent final command suit the sailor. The fleet name stays intact and the final phrase occupies one line.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2086",
+      "message_ID": 2086,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Sailor",
+      "Japanese": "敵艦%sを\n奪ったぜ！",
+      "english": "We took %s from the enemy!",
+      "source_reference": {
+        "block": 22,
+        "offset": 2088,
+        "copy_end": 2108,
+        "bytes": 19,
+        "record_index": 49,
+        "table_offset": 1321308,
+        "start_in_record": 2,
+        "exact_hex": "93478acd257382f00a924482c182bd82ba8149"
+      },
+      "current_reference": {
+        "block": 22,
+        "offset": 4863,
+        "copy_end": 4890,
+        "bytes": 26,
+        "record_index": 109,
+        "table_offset": 1321308,
+        "start_in_record": 0,
+        "exact_hex": "576520746f6f6b2074686520656e656d79207368697020257321"
+      },
+      "proposed_reference": {
+        "block": 22,
+        "offset": 4863,
+        "copy_end": 4890,
+        "bytes": 26,
+        "record_index": 109,
+        "table_offset": 1321308,
+        "start_in_record": 0
+      },
+      "source_hex": "93478acd257382f00a924482c182bd82ba8149",
+      "current_hex": "576520746f6f6b2074686520656e656d79207368697020257321",
+      "proposed_hex": "576520746f6f6b2025732066726f6d2074686520656e656d7921",
+      "source_meaning": "The sailor exclaims that their side took the named enemy ship.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "Keep the sailor's blunt took and the capture from the enemy. Move the ship name before the longer phrase so it can stay together.",
+      "decision": "revision",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2011",
+      "message_ID": 2011,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Sailor",
+      "Japanese": "敵旗艦の水夫を全員倒し\n拿捕しました！！",
+      "english": "We've defeated the enemy flagship's entire crew and captured the ship!",
+      "source_reference": {
+        "block": 21,
+        "offset": 3020,
+        "copy_end": 3060,
+        "bytes": 39,
+        "record_index": 66,
+        "table_offset": 1321158,
+        "start_in_record": 0,
+        "exact_hex": "93478af88acd82cc9085957682f0915388f5937c82b50a9d5c95df82b582dc82b582bd81498149"
+      },
+      "current_reference": {
+        "block": 22,
+        "offset": 1292,
+        "copy_end": 1364,
+        "bytes": 71,
+        "record_index": 34,
+        "table_offset": 1321158,
+        "start_in_record": 0,
+        "exact_hex": "2057652776652064656665617465642074686520656e656d7920666c616773686970277320656e74697265206372657720616e6420636170747572656420746865207368697021"
+      },
+      "proposed_reference": {
+        "block": 22,
+        "offset": 1292,
+        "copy_end": 1364,
+        "bytes": 71,
+        "record_index": 34,
+        "table_offset": 1321158,
+        "start_in_record": 0
+      },
+      "source_hex": "93478af88acd82cc9085957682f0915388f5937c82b50a9d5c95df82b582dc82b582bd81498149",
+      "current_hex": "2057652776652064656665617465642074686520656e656d7920666c616773686970277320656e74697265206372657720616e6420636170747572656420746865207368697021",
+      "proposed_hex": "2057652776652064656665617465642074686520656e656d7920666c616773686970277320656e74697265206372657720616e6420636170747572656420746865207368697021",
+      "source_meaning": "The sailor reports defeating the enemy flagship's entire crew and capturing the ship.",
+      "context": "Ordinary Nagasaki departure, the Kurushima encounter, and the named prize from the boarding duel.",
+      "localization_note": "The later notice states why the flagship was captured and keeps the crew and ship outcomes distinct.",
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      }
+    }
+  ],
+  "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+  "source_sha256": "f4f07c975cc293f5b2ba469747693d3dd37f2e6dfc408cf5910adf5e83d9177d",
+  "unchanged_ARM9_sha256": "68226a5040535892b84e9330017a631f30ed4f4d3cef00f53933b6079fcfb97b",
+  "proposed_COMMON_sha256": "d878d237d212da9bb6775e64a72dae4e15c5d2b6c541ad1f4fff23b0f0c847bb",
+  "allocation": {
+    "block": 22,
+    "start": 4863,
+    "end": 4890,
+    "before": "576520746f6f6b2074686520656e656d7920736869702025732100",
+    "after": "576520746f6f6b2025732066726f6d2074686520656e656d792100",
+    "new_null_fields": 0
+  },
+  "native_cases": [
+    {
+      "label": "Current",
+      "name": "War Ironclad",
+      "name_hex": "5761722049726f6e636c6164",
+      "layout": {
+        "lines": [
+          "We took the enemy ship War",
+          "Ironclad!"
+        ],
+        "formatted_hex": "20576520746f6f6b2074686520656e656d792073686970205761720a202049726f6e636c616421",
+        "complete_runtime_name_on_one_line": false
+      },
+      "font_sha256": "96756289ca47ebc7848e8e24022da521bc16e1ee1f9207d262fb9c1123be5938",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2074686520656e656d792073686970205761722049726f6e636c616421",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2074686520656e656d792073686970205761720a202049726f6e636c616421",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "F",
+      "name_hex": "46",
+      "layout": {
+        "lines": [
+          "We took F from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20462066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "2f8da7f4c58d5d05f4f7f0eb95764594b1165b0cdb5b0ae9db537f7e3ec404a6",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20462066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20462066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FA",
+      "name_hex": "4641",
+      "layout": {
+        "lines": [
+          "We took FA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "387ae5e98079542273cddc1598cc49e74295ff7f3396910df3826150ab59d8db",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAA",
+      "name_hex": "464141",
+      "layout": {
+        "lines": [
+          "We took FAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "ff5ca51dfe10cc9c04c55ac4f7bb62aaff7b1431024da384dc5bc0323784bf82",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAA",
+      "name_hex": "46414141",
+      "layout": {
+        "lines": [
+          "We took FAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20464141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "32a7f54beed96f404e89e6074663bad4cfa5f38155e1a2bdffd798bf4608f448",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20464141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20464141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAA",
+      "name_hex": "4641414141",
+      "layout": {
+        "lines": [
+          "We took FAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "3dd52bd2cff7c23e54bf88534a7ad41ced684bee0c446e7eed76628525332ddf",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAA",
+      "name_hex": "464141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "9f7bd1895260acc4b38141100c84a5123645973b4467f1988b305e302df56ed5",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAA",
+      "name_hex": "46414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20464141414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "71a5b0db0a43ca917cdf88b77a004e56bd2b861d36ffcbaea0c0d4c8119528dc",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20464141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20464141414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAA",
+      "name_hex": "4641414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414141414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "df57884e78c2b572b572cdc1a983c98b09d3617c821cb4b264e2bb7d5c36c3e4",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414141414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAA",
+      "name_hex": "464141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641414141414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "10af29f14df7050b567db36c1712915b55a6a85b203e970ad025a3e6a6ceea66",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641414141414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAA",
+      "name_hex": "46414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20464141414141414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "3f345b9ddfc5ff2352f2efc1c484656b84d34eca90b72b8a1d22cc5838b40049",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20464141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20464141414141414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAA",
+      "name_hex": "4641414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAA from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414141414141414141412066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "44d6ee671cab5f10cefedf3e6d86e3d60bcc2d177951077d7c25811c4212477e",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414141414141414141412066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAA",
+      "name_hex": "464141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "cfbb8d41f872426367aa19ea1cca24cde9944da348c9261a7f8dee25f9898f57",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAA",
+      "name_hex": "46414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20464141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "6e939eda93947f8b80b256c7041f348196fd5a9bcb212199b1ba7e8b4531ed85",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20464141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20464141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAAA",
+      "name_hex": "4641414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "5ba314ff7d7f63c3430f636f91d9b795ee01840798089c892e5db1f3844eaf3d",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAAAA",
+      "name_hex": "464141414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "13e046adc2fb7159617eb7700cf7c2eb4a46a5fbfaa4e1dcd18d7c8f184b8cf7",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641414141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAAAAA",
+      "name_hex": "46414141414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20464141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "8b1499d12f115b7f0ebbad7189460337f82bd25ea8aede2ed55046a9f79bfcba",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20464141414141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20464141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAAAAAA",
+      "name_hex": "4641414141414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "3fe7a76f45d93a55229a0ec00a6b61e38270901db47d7499ead9f590e98e6cdb",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414141414141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FAAAAAAAAAAAAAAAAA",
+      "name_hex": "464141414141414141414141414141414141",
+      "layout": {
+        "lines": [
+          "We took FAAAAAAAAAAAAAAAAA",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204641414141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "9d4eb21908093b6dbed6b53b14563b28164b55970721879cfdcd0924f49aaca1",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204641414141414141414141414141414141412066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204641414141414141414141414141414141410a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "War Ironclad",
+      "name_hex": "5761722049726f6e636c6164",
+      "layout": {
+        "lines": [
+          "We took War Ironclad",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b205761722049726f6e636c61640a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "17c03ea06e4d5249fd81a64eb0d6df84fca7e524faa95e908ca9a2ad194318e1",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b205761722049726f6e636c61642066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b205761722049726f6e636c61640a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "Hanse Cog",
+      "name_hex": "48616e736520436f67",
+      "layout": {
+        "lines": [
+          "We took Hanse Cog from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2048616e736520436f672066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "72398ce6a0dcba14fbd366ffff4a93914537d4b4bbd7dec28c070d3e56e18dd2",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2048616e736520436f672066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2048616e736520436f672066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "The Southern Cross",
+      "name_hex": "54686520536f75746865726e2043726f7373",
+      "layout": {
+        "lines": [
+          "We took The Southern Cross",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2054686520536f75746865726e2043726f73730a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "024ddba53de64039f5d19084aadbac2d749a1cdc873a91c582482ff558745215",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2054686520536f75746865726e2043726f73732066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2054686520536f75746865726e2043726f73730a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "This Ship Is Ours",
+      "name_hex": "546869732053686970204973204f757273",
+      "layout": {
+        "lines": [
+          "We took This Ship Is Ours",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b20546869732053686970204973204f7572730a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "35ebbd3353155f3d8bf4f776ad7798a94476e1fb91c61f0a921112c79d66d6d5",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b20546869732053686970204973204f7572732066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b20546869732053686970204973204f7572730a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FALCON",
+      "name_hex": "46414c434f4e",
+      "layout": {
+        "lines": [
+          "We took FALCON from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046414c434f4e2066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "f5b11b9a04b01ec7e284f54f9b8bef1975159d5b9e18d37abcbc19633a8af28b",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046414c434f4e2066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046414c434f4e2066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "ICARUS",
+      "name_hex": "494341525553",
+      "layout": {
+        "lines": [
+          "We took ICARUS from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204943415255532066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "142ca284293a865cacedfc081cb4229cb9a7e2ac9e2de91c15b33ec82c72577b",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204943415255532066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204943415255532066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "FIFOFOFU",
+      "name_hex": "4649464f464f4655",
+      "layout": {
+        "lines": [
+          "We took FIFOFOFU from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b204649464f464f46552066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "2bd810ec59a6e49f55840ef3ec8c5a72ecb835300f31b72b908d8306d394978a",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b204649464f464f46552066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b204649464f464f46552066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "Santa Maria",
+      "name_hex": "53616e7461204d61726961",
+      "layout": {
+        "lines": [
+          "We took Santa Maria from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2053616e7461204d617269612066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "cfffcc51e8521de197998600aced74bfa4c4b679facb221df087b763c2c33b38",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2053616e7461204d617269612066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2053616e7461204d617269612066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "F's Hope",
+      "name_hex": "46277320486f7065",
+      "layout": {
+        "lines": [
+          "We took F's Hope from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2046277320486f70652066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "3e777f1a6ba32ddec3ee2825f6fa05401b9ca52fbccf3ba002e40831b2252cdc",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2046277320486f70652066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2046277320486f70652066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "長崎丸長崎丸長崎丸",
+      "name_hex": "92b78de88adb92b78de88adb92b78de88adb",
+      "layout": {
+        "lines": [
+          "We took 長崎丸長崎丸長崎丸",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2092b78de88adb92b78de88adb92b78de88adb0a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "b91f86b5c4a405ac67ce55432cc9c151d9b3bfef0b002d9aa0ed11398f9accbc",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2092b78de88adb92b78de88adb92b78de88adb2066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2092b78de88adb92b78de88adb92b78de88adb0a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    },
+    {
+      "label": "Proposed",
+      "name": "ＦＡＬＣＯＮ",
+      "name_hex": "82658260826b8262826e826d",
+      "layout": {
+        "lines": [
+          "We took ＦＡＬＣＯＮ",
+          "from the enemy!"
+        ],
+        "formatted_hex": "20576520746f6f6b2082658260826b8262826e826d0a202066726f6d2074686520656e656d7921",
+        "complete_runtime_name_on_one_line": true
+      },
+      "font_sha256": "cf1032cd65d8c8f631ebb1b2407f54bc59acf7f12b744ada6939e08a62c3131d",
+      "native": {
+        "parent": 33898304,
+        "selector_offset": 628,
+        "selector": 34700032,
+        "input_hex": "576520746f6f6b2082658260826b8262826e826d2066726f6d2074686520656e656d7921",
+        "output": 36234664,
+        "formatted_hex": "20576520746f6f6b2082658260826b8262826e826d0a202066726f6d2074686520656e656d7921",
+        "original_entry": 33898252,
+        "file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            102273,
+            36235020,
+            5392
+          ]
+        ],
+        "original_native_selection_loader_printf_macro_and_scoped_formatter_execute": true,
+        "CPU_file_success_and_UI_constructor_boundaries_not_gameplay": true
+      }
+    }
+  ],
+  "proposed_sheets": [
+    {
+      "path": "translations\\editorial_checkpoints\\shared_display_20261123\\maria_captured_ship_preflight_20261124\\portrait_sheet_01.png",
+      "sha256": "b5715a5b3ef1745d6ea86c8af2a07702edf6a6609a0167ce3c42d1a493a28875",
+      "messages": [
+        "Current / 5761722049726f6e636c6164",
+        "Proposed / 46",
+        "Proposed / 4641",
+        "Proposed / 464141",
+        "Proposed / 46414141",
+        "Proposed / 4641414141",
+        "Proposed / 464141414141",
+        "Proposed / 46414141414141",
+        "Proposed / 4641414141414141",
+        "Proposed / 464141414141414141",
+        "Proposed / 46414141414141414141",
+        "Proposed / 4641414141414141414141",
+        "Proposed / 464141414141414141414141",
+        "Proposed / 46414141414141414141414141",
+        "Proposed / 4641414141414141414141414141",
+        "Proposed / 464141414141414141414141414141",
+        "Proposed / 46414141414141414141414141414141",
+        "Proposed / 4641414141414141414141414141414141",
+        "Proposed / 464141414141414141414141414141414141",
+        "Proposed / 5761722049726f6e636c6164"
+      ]
+    },
+    {
+      "path": "translations\\editorial_checkpoints\\shared_display_20261123\\maria_captured_ship_preflight_20261124\\portrait_sheet_02.png",
+      "sha256": "d5bb740ff5821efa72089d993014437cfbeba6c907802d2293bf79a71d4ee7c7",
+      "messages": [
+        "Proposed / 48616e736520436f67",
+        "Proposed / 54686520536f75746865726e2043726f7373",
+        "Proposed / 546869732053686970204973204f757273",
+        "Proposed / 46414c434f4e",
+        "Proposed / 494341525553",
+        "Proposed / 4649464f464f4655",
+        "Proposed / 53616e7461204d61726961",
+        "Proposed / 46277320486f7065",
+        "Proposed / 92b78de88adb92b78de88adb92b78de88adb",
+        "Proposed / 82658260826b8262826e826d"
+      ]
+    }
+  ],
+  "ordinary_gameplay": {
+    "holds": [
+      {
+        "frame": 7200,
+        "message_ID": 815,
+        "speaker": "Port Worker",
+        "arguments": [],
+        "lines": [
+          "You have no cargo."
+        ],
+        "capture": {
+          "frame": 7200,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_007200_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "f4c519cad02da6f43ae3c52d5918452fc37af2b677b24945fda41fa318bc0aca",
+          "framebuffer_sha256": "49596a679ac889993f298c6417367155127528482785cfa7854cceede76b6499"
+        },
+        "ink": 179,
+        "nameplate": [
+          127,
+          [
+            16,
+            277,
+            82,
+            288
+          ]
+        ],
+        "requests": [
+          {
+            "frame": 6810,
+            "PC": 33903244,
+            "message_ID": 815,
+            "caller_LR": 33898488
+          },
+          {
+            "frame": 6810,
+            "PC": 33895668,
+            "message_ID": 815,
+            "caller_LR": 33898488
+          }
+        ]
+      },
+      {
+        "frame": 8000,
+        "message_ID": 85,
+        "speaker": "System",
+        "arguments": [
+          "26"
+        ],
+        "lines": [
+          "Sailing days left: about 26."
+        ],
+        "capture": {
+          "frame": 8000,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_008000_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "96132fb3ff902ac1023b0ab13c1566fb617127d972c290e414aa5d9f326763e5",
+          "framebuffer_sha256": "d446e14ebc2c1f459ee7efe8ad52d2b91132935f98cebcc799f86bdde3dbea2d"
+        },
+        "ink": 287,
+        "nameplate": null,
+        "requests": [
+          {
+            "frame": 7612,
+            "PC": 33903244,
+            "message_ID": 85,
+            "caller_LR": 33900236
+          },
+          {
+            "frame": 7612,
+            "PC": 33895668,
+            "message_ID": 85,
+            "caller_LR": 33900236
+          }
+        ]
+      },
+      {
+        "frame": 10400,
+        "message_ID": 641,
+        "speaker": "Sailor",
+        "arguments": [],
+        "lines": [
+          "No route to that port."
+        ],
+        "capture": {
+          "frame": 10400,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_010400_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "0f8684e938c7191f108890aa0d81c4f6da03e1884bd3e7436b1d33c674115cf2",
+          "framebuffer_sha256": "b2e6163d959caa647471fa0002b3f13afe547b0c26236b6e8a1390541043a4c8"
+        },
+        "ink": 218,
+        "nameplate": [
+          65,
+          [
+            16,
+            277,
+            52,
+            288
+          ]
+        ],
+        "requests": [
+          {
+            "frame": 10010,
+            "PC": 33903244,
+            "message_ID": 641,
+            "caller_LR": 33897892
+          },
+          {
+            "frame": 10010,
+            "PC": 33895668,
+            "message_ID": 641,
+            "caller_LR": 33897892
+          }
+        ]
+      },
+      {
+        "frame": 13200,
+        "message_ID": 86,
+        "speaker": "System",
+        "arguments": [
+          "3",
+          "12",
+          "Sky: Sunny",
+          "Nagasaki"
+        ],
+        "lines": [
+          "3/12",
+          "Sky: Sunny",
+          "Departed Nagasaki."
+        ],
+        "capture": {
+          "frame": 13200,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_013200_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "bbc4bc155649e06566b0e001bec06b8379bd5cf4943e8a7b3852a5c51d6aea12",
+          "framebuffer_sha256": "b819553e0892ff84392baf7175eca75d52b52a1fc5db51ac96b41e9ea852707b"
+        },
+        "ink": 387,
+        "nameplate": null,
+        "requests": [
+          {
+            "frame": 12821,
+            "PC": 33903244,
+            "message_ID": 86,
+            "caller_LR": 33900236
+          },
+          {
+            "frame": 12821,
+            "PC": 33895668,
+            "message_ID": 86,
+            "caller_LR": 33900236
+          }
+        ]
+      },
+      {
+        "frame": 13600,
+        "message_ID": 618,
+        "speaker": "Sailor",
+        "arguments": [
+          "to the east",
+          "Kurushima"
+        ],
+        "lines": [
+          "We've got company to the east!",
+          "They're with Kurushima! Get ready",
+          "for a fight!"
+        ],
+        "capture": {
+          "frame": 13600,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_013600_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "e378c3cd0b8dadb3265022fa99027be106b8b84aae4df5d852fac9f5da8ad8ba",
+          "framebuffer_sha256": "f3c224dee9f9cfdc25a9aa4d553ecd55f5d76f85d4a7c681403a3aecf3b8a08f"
+        },
+        "ink": 797,
+        "nameplate": [
+          65,
+          [
+            16,
+            277,
+            52,
+            288
+          ]
+        ],
+        "requests": [
+          {
+            "frame": 13232,
+            "PC": 33903244,
+            "message_ID": 618,
+            "caller_LR": 33897892
+          },
+          {
+            "frame": 13232,
+            "PC": 33895668,
+            "message_ID": 618,
+            "caller_LR": 33897892
+          }
+        ]
+      },
+      {
+        "frame": 20300,
+        "message_ID": 2086,
+        "speaker": "Sailor",
+        "arguments": [
+          "War Ironclad"
+        ],
+        "lines": [
+          "We took the enemy ship War",
+          "Ironclad!"
+        ],
+        "capture": {
+          "frame": 20300,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_020300_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "bf4fdf90f000a3f75a10982779eebc2acdf917e4e5bb35b343c4cf17f5309990",
+          "framebuffer_sha256": "bef0193f1673625cba20095c13038c90f45d8350fbfb45aa9d10dd35294e906b"
+        },
+        "ink": 388,
+        "nameplate": [
+          65,
+          [
+            16,
+            277,
+            52,
+            288
+          ]
+        ],
+        "requests": [
+          {
+            "frame": 20266,
+            "PC": 33903244,
+            "message_ID": 2086,
+            "caller_LR": 33898276
+          },
+          {
+            "frame": 20266,
+            "PC": 33895668,
+            "message_ID": 2086,
+            "caller_LR": 33898276
+          }
+        ]
+      },
+      {
+        "frame": 20700,
+        "message_ID": 2011,
+        "speaker": "Sailor",
+        "arguments": [],
+        "lines": [
+          "We've defeated the enemy flagship's",
+          "entire crew and captured the ship!"
+        ],
+        "capture": {
+          "frame": 20700,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_020700_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "7489d9d20e0d53b5b508053efe0ced04438239ff1ab004cd070a5f4ef9083670",
+          "framebuffer_sha256": "f60f72005170f7807b43ca02989626740eca7471c89ae70ddcaa6e031c38b6e8"
+        },
+        "ink": 753,
+        "nameplate": [
+          65,
+          [
+            16,
+            277,
+            52,
+            288
+          ]
+        ],
+        "requests": [
+          {
+            "frame": 20314,
+            "PC": 33903244,
+            "message_ID": 2011,
+            "caller_LR": 33897892
+          },
+          {
+            "frame": 20314,
+            "PC": 33895668,
+            "message_ID": 2011,
+            "caller_LR": 33897892
+          }
+        ]
+      }
+    ],
+    "prior_story": [
+      {
+        "id": "DK4_MES_B3_R0005",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "FIのあねさんよ！\n今日こそは決着をつけさせてもらうぜ！",
+        "english": "Well, FI! Today we settle this for good!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 19,
+          "record_index": 5,
+          "raw_hex": "29464982cc82a082cb82b382f182e681490a8da193fa82b182bb82cd8c88928582f082c282af82b382b982c482e082e782a482ba8149",
+          "selector": 41,
+          "complete_preamble_hex": "0040ffff0029",
+          "native_extent": 60,
+          "ancestors": [],
+          "command_offset": 14,
+          "complete_command_hex": "0040ffff0029464982cc82a082cb82b382f182e681490a8da193fa82b182bb82cd8c88928582f082c282af82b382b982c482e082e782a482ba814900"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 14,
+          "complete_command_hex": "0040ffff002957656c6c2c20464921200a20546f64617920776520736574746c65207468697320666f7220676f6f64212020202020202020202020202000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Sojin Kurushima",
+        "nameplate": [
+          176,
+          [
+            16,
+            277,
+            106,
+            288
+          ]
+        ],
+        "native_plane_sha256": "5d2a2e5da9d9667501d49fc548bb24adea879cec13f8372594e967a3d31862aa",
+        "captured": {
+          "frame": 13900,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_013900_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "d288d1cf55339b6fa934e1e7a8382497a6d999cc6e0dc9e5808ff1bf7ba170a3",
+          "framebuffer_sha256": "0a5230d4728fb3dd4e618c5d3a8fad8677d48a7ae3a9c5bd5438a8b99cc5a8f5"
+        },
+        "rationale": "The taunt and declaration open the confrontation. Keep the original given-name token.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0015",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "クルシマ！\n愚かな所行はやめよ！",
+        "english": "Kurushima! Stop this madness!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 99,
+          "record_index": 15,
+          "raw_hex": "0c834e838b8356837d81490a8bf082a982c88f8a8d7382cd82e282df82e68149",
+          "selector": 12,
+          "complete_preamble_hex": "0040ffff000c",
+          "native_extent": 38,
+          "ancestors": [
+            90
+          ],
+          "command_offset": 94,
+          "complete_command_hex": "0040ffff000c834e838b8356837d81490a8bf082a982c88f8a8d7382cd82e282df82e6814900"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 96,
+          "complete_command_hex": "0040ffff000c4b7572757368696d61212053746f702074686973206d61646e6573732100",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Yukihisa Shiraki",
+        "nameplate": [
+          180,
+          [
+            16,
+            277,
+            112,
+            288
+          ]
+        ],
+        "native_plane_sha256": "166c62bfaa65ae96e3b95352320e21b031b2b10e930fa92642597b6322f8244b",
+        "captured": {
+          "frame": 14700,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_014700_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "fa90ad5d6829d43f69e49d872721ba28b7d6de8de097a8737e100e8faebcfe46",
+          "framebuffer_sha256": "63fb18d17769ad69e9167ff0c96b0941ea8b4c6830e750105378a150de0c38b7"
+        },
+        "rationale": "The blunt rebuke sounds right as Yukihisa interrupts his challenge.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0018",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "てめえ、侍のくせに\n異国人の肩ぁ持ちやがって！\n武士の風上にもおけねえ野郎だ！",
+        "english": "A samurai siding with foreigners? You're a disgrace!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 137,
+          "record_index": 18,
+          "raw_hex": "2982c482df82a681418e9882cc82ad82b982c90a88d98d91906c82cc8ca8829f8e9d82bf82e282aa82c182c481490a95908e6d82cc95978fe382c982e082a882af82cb82a696ec985982be8149",
+          "selector": 41,
+          "complete_preamble_hex": "0040ffff0029",
+          "native_extent": 84,
+          "ancestors": [
+            90
+          ],
+          "command_offset": 132,
+          "complete_command_hex": "0040ffff002982c482df82a681418e9882cc82ad82b982c90a88d98d91906c82cc8ca8829f8e9d82bf82e282aa82c182c481490a95908e6d82cc95978fe382c982e082a882af82cb82a696ec985982be81490000"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 132,
+          "complete_command_hex": "0040ffff0029412073616d7572616920736964696e67207769746820666f726569676e6572733f0a20596f75277265206120646973677261636521202020202020200000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Sojin Kurushima",
+        "nameplate": [
+          176,
+          [
+            16,
+            277,
+            106,
+            288
+          ]
+        ],
+        "native_plane_sha256": "994945b1f90efef9129059de7029cf457a30f639e3eeb2199271b68dc0917d1b",
+        "captured": {
+          "frame": 15100,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_015100_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "50f16f8f4a467037832c2f9b7a030fc02e7573e3d0ad2ed8f5d6a77790a1c718",
+          "framebuffer_sha256": "dc55f698464720776c2bfc3f0a5909ba4a763463650f07b5c8d804b6e64dca1e"
+        },
+        "rationale": "Keep the contemptuous question and accusation in Kurushima's voice.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0022",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "大陸の沿岸を荒らし、無抵抗の民から\n略奪するは\n誇り高き武士の為すことか！",
+        "english": "You raid the mainland coast and rob people who can't fight back. Is that the way of a proud samurai?",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 221,
+          "record_index": 22,
+          "raw_hex": "0c91e597a482cc89888add82f08d7282e782b5814196b392ef8d5282cc96af82a982e70a97aa924482b782e982cd0a8cd682e88d8282ab95908e6d82cc88d782b782b182c682a98149",
+          "selector": 12,
+          "complete_preamble_hex": "0040ffff000c",
+          "native_extent": 80,
+          "ancestors": [
+            90
+          ],
+          "command_offset": 216,
+          "complete_command_hex": "0040ffff000c91e597a482cc89888add82f08d7282e782b5814196b392ef8d5282cc96af82a982e70a97aa924482b782e982cd0a8cd682e88d8282ab95908e6d82cc88d782b782b182c682a981490000"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 200,
+          "complete_command_hex": "0040ffff000c596f75207261696420746865206d61696e6c616e6420636f61737420616e6420726f620a2070656f706c652077686f2063616e2774206669676874206261636b2e200a20497320746861742074686520776179206f6620612070726f75642073616d757261693f200000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Yukihisa Shiraki",
+        "nameplate": [
+          180,
+          [
+            16,
+            277,
+            112,
+            288
+          ]
+        ],
+        "native_plane_sha256": "834b3b540402ec9c04922633659a4ddecfe2e12818e8450b2458a98cfc786765",
+        "captured": {
+          "frame": 15500,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_015500_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "f07282f6e0a39d39574083be6b337d5efbdaa2943c38ade6d7fbe0ed3992d91f",
+          "framebuffer_sha256": "c9a2422532323496aa66ff6ccda746b31249121016564befaf7f59eeff305648"
+        },
+        "rationale": "Yukihisa answers the insult by invoking a samurai's code of conduct. The whole question stays together after the two direct charges.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0026",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "おーおー、お堅えことを\n俺の一番嫌いな性格だぜ",
+        "english": "Oh, listen to you. So stiff and proper. Just the sort I can't stand.",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 301,
+          "record_index": 26,
+          "raw_hex": "2982a8815b82a8815b814182a88c9882a682b182c682f00a89b482cc88ea94d48c9982a282c890ab8a6982be82ba",
+          "selector": 41,
+          "complete_preamble_hex": "0040ffff0029",
+          "native_extent": 52,
+          "ancestors": [
+            90
+          ],
+          "command_offset": 296,
+          "complete_command_hex": "0040ffff002982a8815b82a8815b814182a88c9882a682b182c682f00a89b482cc88ea94d48c9982a282c890ab8a6982be82ba00"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 312,
+          "complete_command_hex": "0040ffff00294f682c206c697374656e20746f20796f752e200a20536f20737469666620616e642070726f7065722e200a204a7573742074686520736f727420492063616e2774207374616e642e2000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Sojin Kurushima",
+        "nameplate": [
+          176,
+          [
+            16,
+            277,
+            106,
+            288
+          ]
+        ],
+        "native_plane_sha256": "09eb22edffba3f0341d9579d694d5a9af4d9330f0c316adc7c71c10a90ab62b8",
+        "captured": {
+          "frame": 15900,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_015900_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "682b59b07dd23054eadb058077cb932748665e53cf959b9c944abf417eae8593",
+          "framebuffer_sha256": "2c4a5d4dc866e65b534164e0f99eeaf477eb15add72ba333103707f25cb0ad61"
+        },
+        "rationale": "Keep the sneer, the mock appraisal and the personal dismissal. Each beat can sit on its own row without separating the last clause.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0032",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "へっへっへ、FIよ！\n俺の女になるなら、おとなしく降参\nしてもいいぞ！\nおめえの命だけは助けてやろう！",
+        "english": "Heh heh, FI! Be mine, and you can surrender quietly. I'll spare you and no one else!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 357,
+          "record_index": 32,
+          "raw_hex": "2982d682c182d682c182d68141464982e681490a89b482cc8f9782c982c882e982c882e7814182a882c682c882b582ad8d7e8e510a82b582c482e082a282a282bc81490a82a882df82a682cc96bd82be82af82cd8f9582af82c482e282eb82a48149",
+          "selector": 41,
+          "complete_preamble_hex": "0040ffff0029",
+          "native_extent": 104,
+          "ancestors": [],
+          "command_offset": 352,
+          "complete_command_hex": "0040ffff002982d682c182d682c182d68141464982e681490a89b482cc8f9782c982c882e982c882e7814182a882c682c882b582ad8d7e8e510a82b582c482e082a282a282bc81490a82a882df82a682cc96bd82be82af82cd8f9582af82c482e282eb82a4814900"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 396,
+          "complete_command_hex": "0040ffff0029486568206865682c20464921204265206d696e652c200a20616e6420796f752063616e2073757272656e6465722071756965746c792e200a2049276c6c20737061726520796f7520616e64206e6f206f6e6520656c7365212000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Sojin Kurushima",
+        "nameplate": [
+          176,
+          [
+            16,
+            277,
+            106,
+            288
+          ]
+        ],
+        "native_plane_sha256": "5ab6bfeec508b72ba818d5d4bb007fd4199c4a8f6ed0d2276de6ceed15ea0d39",
+        "captured": {
+          "frame": 16300,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_016300_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "b96dbf5c3c076c8e399729e6f548facfc134ecf57a46efc0c73499624242b296",
+          "framebuffer_sha256": "9ba8a71ba8cad7f3d85424579d2a9278525fce086bfceb28ba4bb9bcd4844219"
+        },
+        "rationale": "Kurushima makes his silence-and-surrender offer directly to Maria. She can surrender on his terms and he promises to spare her alone. Keep the given-name token.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0035",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "ソウジン・クルシマ…\nそれ以上無駄口を叩くようなら、その\n威気高な髭をむしり取ってあげるわ",
+        "english": "Sojin Kurushima... Mouth off again and I'll pluck out that high-and-mighty beard!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 461,
+          "record_index": 35,
+          "raw_hex": "03835c8345835783938145834e838b8356837d81630a82bb82ea88c88fe396b391ca8cfb82f0924082ad82e682a482c882e7814182bb82cc0a88d08b438d8282c8954582f082de82b582e88ee682c182c482a082b082e982ed",
+          "selector": 3,
+          "complete_preamble_hex": "0040ffff0003",
+          "native_extent": 96,
+          "ancestors": [],
+          "command_offset": 456,
+          "complete_command_hex": "0040ffff0003835c8345835783938145834e838b8356837d81630a82bb82ea88c88fe396b391ca8cfb82f0924082ad82e682a482c882e7814182bb82cc0a88d08b438d8282c8954582f082de82b582e88ee682c182c482a082b082e982ed0000"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 492,
+          "complete_command_hex": "0040ffff0003536f6a696e204b7572757368696d612e2e2e200a204d6f757468206f666620616761696e20616e642049276c6c20706c75636b206f7574200a207468617420686967682d616e642d6d69676874792062656172642120202020202020202020200000",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Maria Li",
+        "nameplate": [
+          91,
+          [
+            16,
+            277,
+            64,
+            288
+          ]
+        ],
+        "native_plane_sha256": "83b1d0acfff4c3fd30e573395bdf87d54751e709644d4c58835ba36af1223cbf",
+        "captured": {
+          "frame": 16700,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_016700_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "5cf0fecf495abed08fcd050ea0cb4cb2dc5fc3ed68807b38a407bac55d59df84",
+          "framebuffer_sha256": "c85972003947fa7d1efdf4c208523c767505be91cd88aa2dfd3e5aa89dfc6aa0"
+        },
+        "rationale": "The insulting threat ridicules his pretension and rejects his offer in Maria's voice.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      },
+      {
+        "id": "DK4_MES_B3_R0039",
+        "file": "/data/SC3.DK4",
+        "block": 3,
+        "clean_Japanese": "がっはっはっは！\n……ぶち殺ーす！！",
+        "english": "Ha ha ha! ...I'll kill you!",
+        "previous_review": {
+          "path": "releases/all_routes_editorial_20261123_kurushima_confrontation_wraps_candidate/verification/registered_review.json",
+          "sha256": "b5facff462bb6a40a9a1ecebfcb9c117ef2fe83b908bcdf2f8625c218a690e37"
+        },
+        "source_reference": {
+          "offset": 557,
+          "record_index": 39,
+          "raw_hex": "2982aa82c182cd82c182cd82c182cd81490a8163816382d482bf8e45815b82b781498149",
+          "selector": 41,
+          "complete_preamble_hex": "0040ffff0029",
+          "native_extent": 42,
+          "ancestors": [],
+          "command_offset": 552,
+          "complete_command_hex": "0040ffff002982aa82c182cd82c182cd82c182cd81490a8163816382d482bf8e45815b82b78149814900"
+        },
+        "current_reference": {
+          "file_path": "/data/SC3.DK4",
+          "block": 3,
+          "command_offset": 596,
+          "complete_command_hex": "0040ffff0029486120686120686121202e2e2e49276c6c206b696c6c20796f752100",
+          "candidate_sha256": "0783bb74e4aee725b510d1765005ca7723ef77ecc11ec45bc7b2a4a17a0a4b08",
+          "archive_sha256": "f7471032c299029273ed56a63a8874d36c5be306eaf95222073b3f9706cde011",
+          "block_sha256": "5e75f7ab7d92ee1ea60343a16e8fac1c4c0df3ad32d20b34fcd083b5771a0223"
+        },
+        "speaker": "Sojin Kurushima",
+        "nameplate": [
+          176,
+          [
+            16,
+            277,
+            106,
+            288
+          ]
+        ],
+        "native_plane_sha256": "b861db0d2d8005bc6b4dbb0d66beebd8723a63a49cd969e8a546e0fd080598a9",
+        "captured": {
+          "frame": 17100,
+          "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_017100_navigation.png",
+          "dimensions": [
+            256,
+            384
+          ],
+          "pixel_format": 2,
+          "PNG_sha256": "cd102d1458a1537e2bdfb345d90b7c9b4483eac9aed157ccada5813dc0828a21",
+          "framebuffer_sha256": "b6ce0b0a895f47d68ad438d84b963b4e0188971aab822cd91eafdd02ce786042"
+        },
+        "rationale": "The bitter turn from laughter to an explicit threat closes the exchange.",
+        "decision": "retention",
+        "review": {
+          "source": true,
+          "context": true,
+          "localization": true,
+          "naturalness": true,
+          "formatting": true
+        }
+      }
+    ],
+    "evidence": {
+      "donor": {
+        "path": "E:/Rota Nova translations/Saves/maria-nagasaki-namahage-v514.dsv",
+        "sha256": "fbae21aa2c5a695bde0eddfc10a3bbeb80d01478bd6a9ed743d824595dc3096e"
+      },
+      "capture": {
+        "path": ".codex-release-work/shared_display_20261123/nagasaki_voyage_20261124/capture/capture_report.json",
+        "sha256": "4117fd1f354841397b21053f10c1f0c959db429e495e883c433099eda19a4400"
+      },
+      "trace": {
+        "path": ".codex-release-work/shared_display_20261123/nagasaki_voyage_20261124/trace/requests.json",
+        "sha256": "d2251bba081633687112e924972e04047139f4117962a16b576c29c3dc101f99"
+      },
+      "terminal": {
+        "path": ".codex-release-work/shared_display_20261123/nagasaki_voyage_20261124/terminal.json",
+        "sha256": "fdeba659cfba30b9420dd4ef3da47597d2106ef827f2ccbb2c7f97d3258a3d83"
+      },
+      "journal": {
+        "path": ".codex-release-work/shared_display_20261123/nagasaki_voyage_20261124/capture/navigation_command_journal.json",
+        "sha256": "5cc55264cfa449ee8d56ab96e714da5e9a21807722e4b01c5729ec62222c01d4"
+      }
+    },
+    "requests": [
+      {
+        "frame": 6810,
+        "PC": 33903244,
+        "message_ID": 815,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 6810,
+        "PC": 33895668,
+        "message_ID": 815,
+        "caller_LR": 33898488
+      },
+      {
+        "frame": 7612,
+        "PC": 33903244,
+        "message_ID": 85,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 7612,
+        "PC": 33895668,
+        "message_ID": 85,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 10010,
+        "PC": 33903244,
+        "message_ID": 641,
+        "caller_LR": 33897892
+      },
+      {
+        "frame": 10010,
+        "PC": 33895668,
+        "message_ID": 641,
+        "caller_LR": 33897892
+      },
+      {
+        "frame": 12821,
+        "PC": 33903244,
+        "message_ID": 86,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 12821,
+        "PC": 33895668,
+        "message_ID": 86,
+        "caller_LR": 33900236
+      },
+      {
+        "frame": 13232,
+        "PC": 33903244,
+        "message_ID": 618,
+        "caller_LR": 33897892
+      },
+      {
+        "frame": 13232,
+        "PC": 33895668,
+        "message_ID": 618,
+        "caller_LR": 33897892
+      },
+      {
+        "frame": 18385,
+        "PC": 33903244,
+        "message_ID": 1934,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18385,
+        "PC": 33895668,
+        "message_ID": 1934,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18385,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 18385,
+        "PC": 33895668,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 18512,
+        "PC": 33903244,
+        "message_ID": 1939,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18512,
+        "PC": 33895668,
+        "message_ID": 1939,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18512,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 18512,
+        "PC": 33895668,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19102,
+        "PC": 33903244,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19102,
+        "PC": 33895668,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19102,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19102,
+        "PC": 33895668,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19902,
+        "PC": 33903244,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19902,
+        "PC": 33895668,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19902,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19902,
+        "PC": 33895668,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 20010,
+        "PC": 33903244,
+        "message_ID": 1948,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 20010,
+        "PC": 33895668,
+        "message_ID": 1948,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 20010,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 20010,
+        "PC": 33895668,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 20266,
+        "PC": 33903244,
+        "message_ID": 2086,
+        "caller_LR": 33898276
+      },
+      {
+        "frame": 20266,
+        "PC": 33895668,
+        "message_ID": 2086,
+        "caller_LR": 33898276
+      },
+      {
+        "frame": 20314,
+        "PC": 33903244,
+        "message_ID": 2011,
+        "caller_LR": 33897892
+      },
+      {
+        "frame": 20314,
+        "PC": 33895668,
+        "message_ID": 2011,
+        "caller_LR": 33897892
+      }
+    ],
+    "offline_actor": "0x22d43e4",
+    "called_duel_barks": [
+      {
+        "frame": 18385,
+        "PC": 33903244,
+        "message_ID": 1934,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18385,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 18512,
+        "PC": 33903244,
+        "message_ID": 1939,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 18512,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19102,
+        "PC": 33903244,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19102,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 19902,
+        "PC": 33903244,
+        "message_ID": 1960,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 19902,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      },
+      {
+        "frame": 20010,
+        "PC": 33903244,
+        "message_ID": 1948,
+        "caller_LR": 33608848
+      },
+      {
+        "frame": 20010,
+        "PC": 33903244,
+        "message_ID": 1931,
+        "caller_LR": 33610511
+      }
+    ],
+    "duel_frames": [
+      {
+        "frame": 19100,
+        "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_019100_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "cfa8327a8997ae6d984723514f03c0461ba28ac5f2c54469cb0a6d428bb0abb6",
+        "framebuffer_sha256": "32be1039e55e7954808a7a3081f77dcf74ecc4405e706ac7ed085a6f130077b5"
+      },
+      {
+        "frame": 19500,
+        "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_019500_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "219db9748f386de964ea6adacbb5f8499a523d00980184a18b2168f71692318b",
+        "framebuffer_sha256": "dca9de8fd0b52ab51c0ac5821408ae2540e89df8d7d44e6525ac0a963c82381e"
+      },
+      {
+        "frame": 19900,
+        "path": ".codex-release-work\\shared_display_20261123\\nagasaki_voyage_20261124\\capture\\frame_019900_navigation.png",
+        "dimensions": [
+          256,
+          384
+        ],
+        "pixel_format": 2,
+        "PNG_sha256": "bbcd66c8670eff9498b2812bbcba0cbd927e2e730a57d314c246886f9247d6b2",
+        "framebuffer_sha256": "a85cb18629dbbac0e2f82d5733ca6e46dd5db252ab516e9c9acf3420d8cfa158"
+      }
+    ],
+    "osaka_docking": false,
+    "donor_provenance": {
+      "path": "docs/nagasaki_shiraki_v518_checkpoint.md",
+      "sha256": "6026058ecfa1e82a8ec969863033822e9b0f25db7c15f4fb66359967e89a5621"
+    },
+    "sheets": [
+      {
+        "path": "translations/editorial_checkpoints/shared_display_20261123/maria_nagasaki_voyage_1_20261123.png",
+        "sha256": "b4551a569d3aef2ac67964ab65b656d363dfb6a92a43c55c7fb82c9a657c2ac0"
+      },
+      {
+        "path": "translations/editorial_checkpoints/shared_display_20261123/maria_kurushima_voyage_1_20261123.png",
+        "sha256": "9edaee90805a60232ced2b5c3ef810b0924e75a423b8bba72a9bb41c36d1c558"
+      }
+    ]
+  },
+  "current_ROM_changed": false,
+  "new_editorial_credit": 0
+}

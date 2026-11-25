@@ -1,0 +1,7 @@
+# Market trade confirmation and bargaining
+
+The crew member now asks **“All set, then?”** before a pending trade is finalized. The more insistent voice asks **“Come on, can’t you do a bit better?”**, which works for both purchases and sales. Both replies fit on single lines. Seventeen other lines retain their established wording, including the trader’s fee explanation and farewell. [Exact decisions](../releases/all_routes_editorial_20261120_market_bargaining_candidate/verification/registered_review.json)
+
+Paired ordinary Lisbon replays verified the full confirmation twice, the return to the same pending trade after No, and the farewell and menu return after Yes. The revised bargaining alternative passed the original native formatter and full glyph checks offline. [Lisbon replay](../releases/all_routes_editorial_20261120_market_bargaining_candidate/verification/lisbon_trade_comparison.png) · [Native pages](../releases/all_routes_editorial_20261120_market_bargaining_candidate/verification/portrait_sheet_01.png)
+
+The cumulative patch reconstructs the verified ROM byte for byte. Six startup frames, 24 protected getters and 30 focused tests passed. Two optional legacy tests skipped. The existing review count remains 27,700, with 276 stored shared keys open for display-owner adjudication. Hardware remains outside this pass. [Candidate and patch](../releases/all_routes_editorial_20261120_market_bargaining_candidate/README.md)

@@ -1,0 +1,3013 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_2814",
+      "message_ID": 2814,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "１枚はコインを\n選んでくれないと\nゲームが進められないぜ",
+      "current_English": "You have to choose at least one coin before we can continue the game.",
+      "source_hex": "8250968782cd83528343839382f00a914982f182c582ad82ea82c882a282c60a8351815b838082aa906982df82e782ea82c882a282ba",
+      "current_hex": "596f75206861766520746f2063686f6f7365206174206c65617374206f6e6520636f696e206265666f72652077652063616e20636f6e74696e7565207468652067616d652e",
+      "source_reference": {
+        "block": 29,
+        "offset": 3080,
+        "copy_end": 3136,
+        "bytes": 54,
+        "record_index": 52,
+        "table_offset": 1322764,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3426,
+        "copy_end": 3496,
+        "bytes": 69,
+        "record_index": 89,
+        "table_offset": 1322764,
+        "start_in_record": 0
+      },
+      "english": "Pick at least one coin or we can't keep playing.",
+      "source_meaning": "The opponent says the game cannot proceed unless the player chooses at least one coin.",
+      "localization_note": "Use a short, conversational correction that tells the player exactly how to continue.",
+      "context": "The opponent replies when the player attempts to confirm a turn with zero selected coins. The game waits for the player to select a coin.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Coin game opponent",
+      "original_consumer": 33898468,
+      "native_callers": [
+        {
+          "load_PC": 33963168,
+          "call_PC": 33963172,
+          "literal_address": 33963468,
+          "literal_value": 2814,
+          "consumer": 33898468,
+          "clean_and_current_hex": "24119fe5cec0ffeb"
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3426,
+        "copy_end": 3476,
+        "bytes": 48,
+        "record_index": 89,
+        "table_offset": 1322764,
+        "start_in_record": 0,
+        "exact_stored_hex": "5069636b206174206c65617374206f6e6520636f696e206f722077652063616e2774206b65657020706c6179696e672e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": true,
+      "new_credit": 1,
+      "registered_coin_portrait": {
+        "output": 36234664,
+        "speaker_pointer": 36521540,
+        "parent": 33898516,
+        "original_entry": 33898468,
+        "original_table": 2814,
+        "supplied_offline_actor_ID": 24,
+        "original_file_reads": [
+          [
+            4,
+            36235012,
+            4
+          ],
+          [
+            8,
+            36243724,
+            168
+          ],
+          [
+            132487,
+            36235020,
+            4008
+          ]
+        ],
+        "message_ID": 2814,
+        "arguments": [],
+        "lines": [
+          " Pick at least one coin or we can't",
+          "  keep playing."
+        ],
+        "exact_display_hex": "205069636b206174206c65617374206f6e6520636f696e206f722077652063616e27740a20206b65657020706c6179696e672e",
+        "native_ink_sha256": "3e1cbb1e787dcd1c8a91200641c524a531e235210fa53b13c88f6ea1b194f85d",
+        "native_glyphs": 39
+      }
+    },
+    {
+      "id": "COMMON_MESSAGE_2815",
+      "message_ID": 2815,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "新大陸で栽培されている植物。果実・種は食用。現地の人々の主食となっている。",
+      "current_English": "A New World crop. Locals eat its fruit and seeds as a staple food.        ",
+      "source_hex": "905691e597a482c58dcd947c82b382ea82c482a282e9904195a8814289ca8ec081458eed82cd9048977081428cbb926e82cc906c815882cc8ee5904882c682c882c182c482a282e98142",
+      "current_hex": "41204e657720576f726c642063726f702e204c6f63616c73206561742069747320667275697420616e64207365656473206173206120737461706c6520666f6f642e2020202020202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3136,
+        "copy_end": 3212,
+        "bytes": 74,
+        "record_index": 53,
+        "table_offset": 1322766,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3496,
+        "copy_end": 3571,
+        "bytes": 74,
+        "record_index": 90,
+        "table_offset": 1322766,
+        "start_in_record": 0
+      },
+      "english": "A New World crop. Locals eat its fruit and seeds as a staple food.",
+      "source_meaning": "A plant grown in the New World. Its fruit and seeds are edible and are a staple for the people there.",
+      "localization_note": "Retain the readable entry and both edible parts. The card title supplies the crop name.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "retention",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 0,
+      "name_field": 1171984,
+      "clean_name_pointer": 34987140,
+      "current_name_pointer": 34988916,
+      "clean_name_hex": "834a837b8360838382cc8eed",
+      "current_name_hex": "50756d706b696e205365656473",
+      "item_name": "Pumpkin Seeds",
+      "prior_private_pointer": 37259884,
+      "prior_private_rows": [
+        "A New World crop. Locals eat its fruit and",
+        "seeds as a staple food."
+      ],
+      "prior_private_hex": "41204e657720576f726c642063726f702e204c6f63616c73206561742069747320667275697420616e64007365656473206173206120737461706c6520666f6f642e0000",
+      "private_pointer_field": 37275332,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3476,
+        "copy_end": 3543,
+        "bytes": 66,
+        "record_index": 91,
+        "table_offset": 1322766,
+        "start_in_record": 0,
+        "exact_stored_hex": "41204e657720576f726c642063726f702e204c6f63616c73206561742069747320667275697420616e64207365656473206173206120737461706c6520666f6f642e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 0,
+        "message_ID": 2815,
+        "field": 37275332,
+        "old_pointer": 37259884,
+        "new_pointer": 37259884,
+        "compiled_rows": [
+          "A New World crop. Locals eat its fruit and",
+          "seeds as a staple food."
+        ],
+        "compiled_hex": "41204e657720576f726c642063726f702e204c6f63616c73206561742069747320667275697420616e64007365656473206173206120737461706c6520666f6f642e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A New World crop. Locals eat its fruit and",
+            "seeds as a staple food."
+          ],
+          "native_ink_sha256": "55b412850a599dd9348d01fc3bc4e0a205745c1c6900bf68c7c8b54ba020a99b",
+          "native_glyphs": 109
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A New World crop. Locals eat its fruit and",
+            "seeds as a staple food."
+          ],
+          "native_ink_sha256": "b6be8d27ffa563177aa09f063ed7837954c5a7db61cab9bfb3d4cd5eaf7b9288",
+          "native_glyphs": 109
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A New World crop. Locals eat its fruit and",
+            "seeds as a staple food."
+          ],
+          "native_ink_sha256": "680dc474592fa7b2ceb063827f523b29272481a2ebfca616e53961fe0b86ad69",
+          "native_glyphs": 93
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A New World crop. Locals eat its fruit and",
+            "seeds as a staple food."
+          ],
+          "native_ink_sha256": "f90dc3d09da3c367726bd80b61fb88938d4ab7d30de0d0e1261f27f6d66bf89a",
+          "native_glyphs": 93
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2816",
+      "message_ID": 2816,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "新大陸で栽培されている野菜。熟した実は、真っ赤な色になる。",
+      "current_English": "A New World vegetable whose ripe fruit turns vivid red.   ",
+      "source_hex": "905691e597a482c58dcd947c82b382ea82c482a282e996ec8dd881428f6e82b582bd8ec082cd8141905e82c190d482c8904682c982c882e98142",
+      "current_hex": "41204e657720576f726c6420766567657461626c652077686f73652072697065206672756974207475726e73207669766964207265642e202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3212,
+        "copy_end": 3272,
+        "bytes": 58,
+        "record_index": 54,
+        "table_offset": 1322768,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3571,
+        "copy_end": 3630,
+        "bytes": 58,
+        "record_index": 91,
+        "table_offset": 1322768,
+        "start_in_record": 0
+      },
+      "english": "A New World vegetable whose ripe fruit turns vivid red.",
+      "source_meaning": "A vegetable grown in the New World whose fruit turns bright red when ripe.",
+      "localization_note": "Retain the concise description, the place where it is grown and the color of the ripe fruit.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "retention",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 1,
+      "name_field": 1172008,
+      "clean_name_pointer": 34987156,
+      "current_name_pointer": 34990144,
+      "clean_name_hex": "8367837d836782cc956396d8",
+      "current_name_hex": "546f6d61746f20536565646c696e67",
+      "item_name": "Tomato Seedling",
+      "prior_private_pointer": 37259952,
+      "prior_private_rows": [
+        "A New World vegetable whose ripe fruit turns",
+        "vivid red."
+      ],
+      "prior_private_hex": "41204e657720576f726c6420766567657461626c652077686f73652072697065206672756974207475726e73007669766964207265642e0000",
+      "private_pointer_field": 37275336,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3543,
+        "copy_end": 3600,
+        "bytes": 55,
+        "record_index": 92,
+        "table_offset": 1322768,
+        "start_in_record": 0,
+        "exact_stored_hex": "41204e657720576f726c6420766567657461626c652077686f73652072697065206672756974207475726e73207669766964207265642e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 1,
+        "message_ID": 2816,
+        "field": 37275336,
+        "old_pointer": 37259952,
+        "new_pointer": 37259952,
+        "compiled_rows": [
+          "A New World vegetable whose ripe fruit turns",
+          "vivid red."
+        ],
+        "compiled_hex": "41204e657720576f726c6420766567657461626c652077686f73652072697065206672756974207475726e73007669766964207265642e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A New World vegetable whose ripe fruit turns",
+            "vivid red."
+          ],
+          "native_ink_sha256": "c2a2eb5275b717fb231598021f01f19ca884ef28c4ad548107a307277b6c945a",
+          "native_glyphs": 100
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A New World vegetable whose ripe fruit turns",
+            "vivid red."
+          ],
+          "native_ink_sha256": "42356223fb6b708f56e5422d65e0456db3304df0d5c691d9cdbb926e6d1181b3",
+          "native_glyphs": 100
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A New World vegetable whose ripe fruit turns",
+            "vivid red."
+          ],
+          "native_ink_sha256": "092f2cb17b1226054d89ad108be03cfa028c0b6387d6e8bd006dbcde9f5bae27",
+          "native_glyphs": 84
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A New World vegetable whose ripe fruit turns",
+            "vivid red."
+          ],
+          "native_ink_sha256": "4b6b8d73b30a339f183ee2f2029ad848fcc86ec12916dd90b9b02b3ea310dbe0",
+          "native_glyphs": 84
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2817",
+      "message_ID": 2817,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "東南アジアにある木。果実は熟すと黄色になり食用に適している。香りがよく、甘い。",
+      "current_English": "Southeast Asian tree: ripe fruit is yellow, sweet, fragrant and edible.       ",
+      "source_hex": "938c93ec83418357834182c982a082e996d8814289ca8ec082cd8f6e82b782c689a9904682c982c882e89048977082c9934b82b582c482a282e981428d8182e882aa82e682ad81418ac382a28142",
+      "current_hex": "536f7574686561737420417369616e20747265653a20726970652066727569742069732079656c6c6f772c2073776565742c206672616772616e7420616e6420656469626c652e20202020202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3272,
+        "copy_end": 3352,
+        "bytes": 78,
+        "record_index": 55,
+        "table_offset": 1322770,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3630,
+        "copy_end": 3709,
+        "bytes": 78,
+        "record_index": 92,
+        "table_offset": 1322770,
+        "start_in_record": 0
+      },
+      "english": "This tree grows in Southeast Asia. Its sweet, fragrant fruit turns yellow when ripe enough to eat.",
+      "source_meaning": "A tree found in Southeast Asia. Its fruit turns yellow when ripe and edible, and is fragrant and sweet.",
+      "localization_note": "Keep the place name, the fruit qualities and yellow color when ripe and edible.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 2,
+      "name_field": 1172032,
+      "clean_name_pointer": 34985332,
+      "current_name_pointer": 34987172,
+      "clean_name_hex": "836f8369836982cc96d8",
+      "current_name_hex": "42616e616e612054726565",
+      "item_name": "Banana Tree",
+      "prior_private_pointer": 37260009,
+      "prior_private_rows": [
+        "Southeast Asian tree: ripe fruit is yellow,",
+        "sweet, fragrant and edible."
+      ],
+      "prior_private_hex": "536f7574686561737420417369616e20747265653a20726970652066727569742069732079656c6c6f772c0073776565742c206672616772616e7420616e6420656469626c652e0000",
+      "private_pointer_field": 37275340,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3600,
+        "copy_end": 3699,
+        "bytes": 98,
+        "record_index": 94,
+        "table_offset": 1322770,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468697320747265652067726f777320696e20536f7574686561737420417369612e204974732073776565742c206672616772616e74206672756974207475726e732079656c6c6f77207768656e207269706520656e6f75676820746f206561742e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 2,
+        "message_ID": 2817,
+        "field": 37275340,
+        "old_pointer": 37260009,
+        "new_pointer": 37260009,
+        "compiled_rows": [
+          "This tree grows in Southeast Asia. Its",
+          "sweet, fragrant fruit turns yellow when ripe",
+          "enough to eat."
+        ],
+        "compiled_hex": "5468697320747265652067726f777320696e20536f7574686561737420417369612e204974730073776565742c206672616772616e74206672756974207475726e732079656c6c6f77207768656e207269706500656e6f75676820746f206561742e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "This tree grows in Southeast Asia. Its",
+            "sweet, fragrant fruit turns yellow when ripe",
+            "enough to eat."
+          ],
+          "native_ink_sha256": "4b3104301d41024f2263fdb4da17a63c49147f4b4ac4c5b4fd8b2f3da85dc6e3",
+          "native_glyphs": 138
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "This tree grows in Southeast Asia. Its",
+            "sweet, fragrant fruit turns yellow when ripe",
+            "enough to eat."
+          ],
+          "native_ink_sha256": "2929660417417330808346229ba2daf41e28f613965ea990c9877e9981cf7ef2",
+          "native_glyphs": 138
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "This tree grows in Southeast Asia. Its",
+            "sweet, fragrant fruit turns yellow when ripe",
+            "enough to eat."
+          ],
+          "native_ink_sha256": "d084d67816f72065dd835f0dca734c66a9a2ecdbd64b6be51fcf357517013553",
+          "native_glyphs": 122
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "This tree grows in Southeast Asia. Its",
+            "sweet, fragrant fruit turns yellow when ripe",
+            "enough to eat."
+          ],
+          "native_ink_sha256": "69636d79b624cf24b93a75ba93a66d834a2e9ed8779ba3b4095bcbb41dca65c5",
+          "native_glyphs": 122
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2818",
+      "message_ID": 2818,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "ミツバチが丹念に作り上げた巣。花から集めた蜜がいっぱいつまっており、栄養満点。",
+      "current_English": "Bees carefully build this hive, full of nutritious nectar from flowers.       ",
+      "source_hex": "837e8363836f836082aa924f944f82c98dec82e88fe382b082bd9183814289d482a982e78f5782df82bd96a882aa82a282c182cf82a282c282dc82c182c482a882e881418968977b969e935f8142",
+      "current_hex": "42656573206361726566756c6c79206275696c64207468697320686976652c2066756c6c206f66206e7574726974696f7573206e65637461722066726f6d20666c6f776572732e20202020202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3352,
+        "copy_end": 3432,
+        "bytes": 78,
+        "record_index": 56,
+        "table_offset": 1322772,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3709,
+        "copy_end": 3788,
+        "bytes": 78,
+        "record_index": 93,
+        "table_offset": 1322772,
+        "start_in_record": 0
+      },
+      "english": "Honeybees build this hive with care. It is packed with nourishing nectar they gather from flowers.",
+      "source_meaning": "A carefully built honeybee hive full of nutritious nectar collected from flowers.",
+      "localization_note": "Keep the construction and the origin of the nectar clear in two sentences.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 3,
+      "name_field": 1172056,
+      "clean_name_pointer": 34987172,
+      "current_name_pointer": 34980100,
+      "clean_name_hex": "837e8363836f836082cc9183",
+      "current_name_hex": "42656568697665",
+      "item_name": "Beehive",
+      "prior_private_pointer": 37260082,
+      "prior_private_rows": [
+        "Bees carefully build this hive, full of",
+        "nutritious nectar from flowers."
+      ],
+      "prior_private_hex": "42656573206361726566756c6c79206275696c64207468697320686976652c2066756c6c206f66006e7574726974696f7573206e65637461722066726f6d20666c6f776572732e0000",
+      "private_pointer_field": 37275344,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3699,
+        "copy_end": 3798,
+        "bytes": 98,
+        "record_index": 95,
+        "table_offset": 1322772,
+        "start_in_record": 0,
+        "exact_stored_hex": "486f6e657962656573206275696c6420746869732068697665207769746820636172652e204974206973207061636b65642077697468206e6f7572697368696e67206e65637461722074686579206761746865722066726f6d20666c6f776572732e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 3,
+        "message_ID": 2818,
+        "field": 37275344,
+        "old_pointer": 37260082,
+        "new_pointer": 37260109,
+        "compiled_rows": [
+          "Honeybees build this hive with care. It is",
+          "packed with nourishing nectar they gather",
+          "from flowers."
+        ],
+        "compiled_hex": "486f6e657962656573206275696c6420746869732068697665207769746820636172652e204974206973007061636b65642077697468206e6f7572697368696e67206e65637461722074686579206761746865720066726f6d20666c6f776572732e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "Honeybees build this hive with care. It is",
+            "packed with nourishing nectar they gather",
+            "from flowers."
+          ],
+          "native_ink_sha256": "9ec111a61ea1a0160726a1b426d5c2221d4ea3192e808fb34d854c3a8a5af27f",
+          "native_glyphs": 134
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "Honeybees build this hive with care. It is",
+            "packed with nourishing nectar they gather",
+            "from flowers."
+          ],
+          "native_ink_sha256": "dd55439545eb45ded644957201d111897218a78c9649bfb8570ef8e0810441cc",
+          "native_glyphs": 134
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "Honeybees build this hive with care. It is",
+            "packed with nourishing nectar they gather",
+            "from flowers."
+          ],
+          "native_ink_sha256": "f9596735d981588ccffe07336a7026420ec557bd4350754aa4bbb36384ea8e4a",
+          "native_glyphs": 118
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "Honeybees build this hive with care. It is",
+            "packed with nourishing nectar they gather",
+            "from flowers."
+          ],
+          "native_ink_sha256": "932074573d188ad692d482fc57063e09c938b8a41aa90de1b50e1912d7206b34",
+          "native_glyphs": 118
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2819",
+      "message_ID": 2819,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "人間を襲うこともあるどう猛な魚。そのヒレや卵は美味のため珍重されている。",
+      "current_English": "A fierce fish may attack people; its tasty fins and eggs are prized.    ",
+      "source_hex": "906c8ad482f08f5082a482b182c682e082a082e982c782a496d282c88b9b814282bb82cc8371838c82e2979182cd94fc96a182cc82bd82df92bf8f6482b382ea82c482a282e98142",
+      "current_hex": "41206669657263652066697368206d61792061747461636b2070656f706c653b206974732074617374792066696e7320616e64206567677320617265207072697a65642e20202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3432,
+        "copy_end": 3504,
+        "bytes": 72,
+        "record_index": 57,
+        "table_offset": 1322774,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3788,
+        "copy_end": 3861,
+        "bytes": 72,
+        "record_index": 94,
+        "table_offset": 1322774,
+        "start_in_record": 0
+      },
+      "english": "A fierce fish that sometimes attacks people. Its fins and eggs are prized for their flavor.",
+      "source_meaning": "A fierce fish that can attack people. Its fins and eggs are prized because they taste good.",
+      "localization_note": "Restore a complete first sentence and give the reason for prizing both fins and eggs.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 4,
+      "name_field": 1172080,
+      "clean_name_pointer": 34984312,
+      "current_name_pointer": 34982740,
+      "clean_name_hex": "8354838182cc92748b9b",
+      "current_name_hex": "4261627920536861726b",
+      "item_name": "Baby Shark",
+      "prior_private_pointer": 37260155,
+      "prior_private_rows": [
+        "A fierce fish may attack people; its tasty fins",
+        "and eggs are prized."
+      ],
+      "prior_private_hex": "41206669657263652066697368206d61792061747461636b2070656f706c653b206974732074617374792066696e7300616e64206567677320617265207072697a65642e0000",
+      "private_pointer_field": 37275348,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3798,
+        "copy_end": 3891,
+        "bytes": 91,
+        "record_index": 96,
+        "table_offset": 1322774,
+        "start_in_record": 0,
+        "exact_stored_hex": "41206669657263652066697368207468617420736f6d6574696d65732061747461636b732070656f706c652e204974732066696e7320616e64206567677320617265207072697a656420666f7220746865697220666c61766f722e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": true,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 4,
+        "message_ID": 2819,
+        "field": 37275348,
+        "old_pointer": 37260155,
+        "new_pointer": 37260209,
+        "compiled_rows": [
+          "A fierce fish that sometimes attacks people.",
+          "Its fins and eggs are prized for their flavor."
+        ],
+        "compiled_hex": "41206669657263652066697368207468617420736f6d6574696d65732061747461636b732070656f706c652e004974732066696e7320616e64206567677320617265207072697a656420666f7220746865697220666c61766f722e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A fierce fish that sometimes attacks people.",
+            "Its fins and eggs are prized for their flavor."
+          ],
+          "native_ink_sha256": "5e20b85a0e7e23387f7a08ad77b2b0bb30df7b74dc7568a131af6a93c274522a",
+          "native_glyphs": 131
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A fierce fish that sometimes attacks people.",
+            "Its fins and eggs are prized for their flavor."
+          ],
+          "native_ink_sha256": "51ab693fc047089621343c99077c98705f0d5a79090b7fa51eb01c006a65f756",
+          "native_glyphs": 131
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A fierce fish that sometimes attacks people.",
+            "Its fins and eggs are prized for their flavor."
+          ],
+          "native_ink_sha256": "b9368f36d6a296741bc1dcc342716dab6b90f584a6de82f11da9ac561d6ce4c2",
+          "native_glyphs": 115
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A fierce fish that sometimes attacks people.",
+            "Its fins and eggs are prized for their flavor."
+          ],
+          "native_ink_sha256": "bd31f246de01116dba8fc1d9e700c58824a30b649e00b9188b6813921483e455",
+          "native_glyphs": 115
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2820",
+      "message_ID": 2820,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "高さ５～９ｍに達する熱帯性植物から取れる実。インドで大量に生産される。スパイスの王様とも呼ばれる。",
+      "current_English": "King of spices: fruit of a tropical plant 5-9 meters tall, produced abundantly in Ｉndia.         ",
+      "source_hex": "8d8282b3825481608258828d82c9924282b782e9944d91d190ab904195a882a982e78ee682ea82e98ec0814283438393836882c591e597ca82c990b68e5982b382ea82e98142835883708343835882cc89a4976c82c682e08cc482ce82ea82e98142",
+      "current_hex": "4b696e67206f66207370696365733a206672756974206f6620612074726f706963616c20706c616e7420352d39206d65746572732074616c6c2c2070726f6475636564206162756e64616e746c7920696e2082686e6469612e202020202020202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3504,
+        "copy_end": 3604,
+        "bytes": 98,
+        "record_index": 57,
+        "table_offset": 1322776,
+        "start_in_record": 73
+      },
+      "current_reference": {
+        "block": 29,
+        "offset": 3861,
+        "copy_end": 3960,
+        "bytes": 98,
+        "record_index": 95,
+        "table_offset": 1322776,
+        "start_in_record": 0
+      },
+      "english": "Known as the king of spices, this fruit grows on tropical plants 5 to 9 meters tall. India produces it in abundance.",
+      "source_meaning": "The fruit of a tropical plant that reaches 5 to 9 meters, produced in large quantities in India and known as the king of spices.",
+      "localization_note": "Keep the metric height, country and nickname. Use the ordinary I in India in both stored versions.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [
+        {
+          "index": 82,
+          "character": "Ｉ",
+          "codepoint": "U+FF29"
+        }
+      ],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 5,
+      "name_field": 1172104,
+      "clean_name_pointer": 34986388,
+      "current_name_pointer": 34985636,
+      "clean_name_hex": "835283568387834582cc8ec0",
+      "current_name_hex": "50657070657220506c616e74",
+      "item_name": "Pepper Plant",
+      "prior_private_pointer": 37260225,
+      "prior_private_rows": [
+        "King of spices: fruit of a tropical plant 5-9",
+        "meters tall, produced abundantly in India."
+      ],
+      "prior_private_hex": "4b696e67206f66207370696365733a206672756974206f6620612074726f706963616c20706c616e7420352d39006d65746572732074616c6c2c2070726f6475636564206162756e64616e746c7920696e20496e6469612e0000",
+      "private_pointer_field": 37275352,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 29,
+        "offset": 3891,
+        "copy_end": 4008,
+        "bytes": 116,
+        "record_index": 98,
+        "table_offset": 1322776,
+        "start_in_record": 0,
+        "exact_stored_hex": "4b6e6f776e20617320746865206b696e67206f66207370696365732c20746869732066727569742067726f7773206f6e2074726f706963616c20706c616e7473203520746f2039206d65746572732074616c6c2e20496e6469612070726f647563657320697420696e206162756e64616e63652e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 5,
+        "message_ID": 2820,
+        "field": 37275352,
+        "old_pointer": 37260225,
+        "new_pointer": 37260302,
+        "compiled_rows": [
+          "Known as the king of spices, this fruit grows",
+          "on tropical plants 5 to 9 meters tall. India",
+          "produces it in abundance."
+        ],
+        "compiled_hex": "4b6e6f776e20617320746865206b696e67206f66207370696365732c20746869732066727569742067726f7773006f6e2074726f706963616c20706c616e7473203520746f2039206d65746572732074616c6c2e20496e6469610070726f647563657320697420696e206162756e64616e63652e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "Known as the king of spices, this fruit grows",
+            "on tropical plants 5 to 9 meters tall. India",
+            "produces it in abundance."
+          ],
+          "native_ink_sha256": "519e75dcd0730464b3e000a65a480b16db45b98d7b1ce66dcc52301f5617811e",
+          "native_glyphs": 157
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "Known as the king of spices, this fruit grows",
+            "on tropical plants 5 to 9 meters tall. India",
+            "produces it in abundance."
+          ],
+          "native_ink_sha256": "5383bbdf120891149fe2b7978e1c1d19691dfdaa6bdff66fa4204ea8e69aa3b2",
+          "native_glyphs": 157
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "Known as the king of spices, this fruit grows",
+            "on tropical plants 5 to 9 meters tall. India",
+            "produces it in abundance."
+          ],
+          "native_ink_sha256": "85a60bc9c90443140c034f1e4b57fd96212ee1045d18eb2c6c63d34d838f39d1",
+          "native_glyphs": 141
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "Known as the king of spices, this fruit grows",
+            "on tropical plants 5 to 9 meters tall. India",
+            "produces it in abundance."
+          ],
+          "native_ink_sha256": "d69bb8a00cffc50fd2107c78489485ef2d7e9b0b2c5dc7e9d9659dfa9a510bd7",
+          "native_glyphs": 141
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2821",
+      "message_ID": 2821,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "濃褐色の実。釘に似た形をしている。強く甘い香りと、舌がしびれるような刺激が特徴。東南アジアが原産。別名クローブ。",
+      "current_English": "Cloves from Southeast Asia: dark-brown, nail-shaped fruit. Strong, sweet aroma and tongue-numbing heat.         ",
+      "source_hex": "945a8a8c904682cc8ec08142934282c98e9782bd8c6082f082b582c482a282e981428bad82ad8ac382a28d8182e882c6814190e382aa82b582d182ea82e982e682a482c88e688c8382aa93c192a58142938c93ec83418357834182aa8cb48e59814295ca96bc834e838d815b83758142",
+      "current_hex": "436c6f7665732066726f6d20536f7574686561737420417369613a206461726b2d62726f776e2c206e61696c2d7368617065642066727569742e205374726f6e672c2073776565742061726f6d6120616e6420746f6e6775652d6e756d62696e6720686561742e202020202020202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3604,
+        "copy_end": 3716,
+        "bytes": 112,
+        "record_index": 58,
+        "table_offset": 1322778,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 0,
+        "copy_end": 113,
+        "bytes": 112,
+        "record_index": 0,
+        "table_offset": 1322778,
+        "start_in_record": 0
+      },
+      "english": "Native to Southeast Asia, cloves are dark brown and shaped like nails. Their strong, sweet scent comes with a tongue-numbing bite.",
+      "source_meaning": "The dark brown, nail-shaped fruit also called cloves is native to Southeast Asia. It has a strong, sweet smell and a tongue-numbing bite.",
+      "localization_note": "Use the source’s common name and keep both the sweet aroma and the physical sensation.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 6,
+      "name_field": 1172128,
+      "clean_name_pointer": 34987204,
+      "current_name_pointer": 34985748,
+      "clean_name_hex": "836083878345835782cc8ec0",
+      "current_name_hex": "436c6f766520506c616e74",
+      "item_name": "Clove Plant",
+      "prior_private_pointer": 37260315,
+      "prior_private_rows": [
+        "Cloves from Southeast Asia: dark-brown,",
+        "nail-shaped fruit. Strong, sweet aroma and",
+        "tongue-numbing heat."
+      ],
+      "prior_private_hex": "436c6f7665732066726f6d20536f7574686561737420417369613a206461726b2d62726f776e2c006e61696c2d7368617065642066727569742e205374726f6e672c2073776565742061726f6d6120616e6400746f6e6775652d6e756d62696e6720686561742e0000",
+      "private_pointer_field": 37275356,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 0,
+        "copy_end": 131,
+        "bytes": 130,
+        "record_index": 0,
+        "table_offset": 1322778,
+        "start_in_record": 0,
+        "exact_stored_hex": "4e617469766520746f20536f7574686561737420417369612c20636c6f76657320617265206461726b2062726f776e20616e6420736861706564206c696b65206e61696c732e205468656972207374726f6e672c207377656574207363656e7420636f6d65732077697468206120746f6e6775652d6e756d62696e6720626974652e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 6,
+        "message_ID": 2821,
+        "field": 37275356,
+        "old_pointer": 37260315,
+        "new_pointer": 37260420,
+        "compiled_rows": [
+          "Native to Southeast Asia, cloves are dark brown",
+          "and shaped like nails. Their strong, sweet",
+          "scent comes with a tongue-numbing bite."
+        ],
+        "compiled_hex": "4e617469766520746f20536f7574686561737420417369612c20636c6f76657320617265206461726b2062726f776e00616e6420736861706564206c696b65206e61696c732e205468656972207374726f6e672c207377656574007363656e7420636f6d65732077697468206120746f6e6775652d6e756d62696e6720626974652e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "Native to Southeast Asia, cloves are dark brown",
+            "and shaped like nails. Their strong, sweet",
+            "scent comes with a tongue-numbing bite."
+          ],
+          "native_ink_sha256": "8afdcd6cd37fad408b258eecd21a934fb70d5d3b975db0006841874cc03ad0a7",
+          "native_glyphs": 170
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "Native to Southeast Asia, cloves are dark brown",
+            "and shaped like nails. Their strong, sweet",
+            "scent comes with a tongue-numbing bite."
+          ],
+          "native_ink_sha256": "27cdc3e9050d00a61c9b60de7624f549282ec2f9981e7b42ba1479cb2a0bd98b",
+          "native_glyphs": 170
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "Native to Southeast Asia, cloves are dark brown",
+            "and shaped like nails. Their strong, sweet",
+            "scent comes with a tongue-numbing bite."
+          ],
+          "native_ink_sha256": "52b505c45fa77c38ddb1440b1eac5ad6e5796148a9beaba6f4872652092cc510",
+          "native_glyphs": 154
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "Native to Southeast Asia, cloves are dark brown",
+            "and shaped like nails. Their strong, sweet",
+            "scent comes with a tongue-numbing bite."
+          ],
+          "native_ink_sha256": "ee4dc322535d20df74e4aed10e64adc17f649cd8953968aac8e404fe931b1187",
+          "native_glyphs": 154
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2822",
+      "message_ID": 2822,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "インドから東南アジアに育つ木。乾燥させた樹皮は、独特の甘みを帯びた香りを放つ。香料として使われる。",
+      "current_English": "A tree from Ｉndia to Southeast Asia; its dried bark has a unique sweet aroma used for flavoring. ",
+      "source_hex": "83438393836882a982e7938c93ec83418357834182c988e782c296d881428aa3918782b382b982bd8ef794e782cd814193c693c182cc8ac382dd82f091d182d182bd8d8182e882f095fa82c281428d8197bf82c682b582c48e6782ed82ea82e98142",
+      "current_hex": "4120747265652066726f6d2082686e64696120746f20536f7574686561737420417369613b20697473206472696564206261726b20686173206120756e697175652073776565742061726f6d61207573656420666f7220666c61766f72696e672e20",
+      "source_reference": {
+        "block": 29,
+        "offset": 3716,
+        "copy_end": 3816,
+        "bytes": 98,
+        "record_index": 58,
+        "table_offset": 1322780,
+        "start_in_record": 113
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 113,
+        "copy_end": 212,
+        "bytes": 98,
+        "record_index": 1,
+        "table_offset": 1322780,
+        "start_in_record": 0
+      },
+      "english": "This tree grows from India to Southeast Asia. Its dried bark has a distinctive sweet scent and is used as a flavoring.",
+      "source_meaning": "The tree grows from India to Southeast Asia. Its dried bark has a distinctive sweet aroma and is used as an aromatic.",
+      "localization_note": "Separate the geographic range from the use of the dried bark. Preserve the established trade meaning and ordinary capital I.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [
+        {
+          "index": 12,
+          "character": "Ｉ",
+          "codepoint": "U+FF29"
+        }
+      ],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 7,
+      "name_field": 1172152,
+      "clean_name_pointer": 34987220,
+      "current_name_pointer": 34988932,
+      "clean_name_hex": "835683698382839382cc96d8",
+      "current_name_hex": "43696e6e616d6f6e2054726565",
+      "item_name": "Cinnamon Tree",
+      "prior_private_pointer": 37260420,
+      "prior_private_rows": [
+        "A tree from India to Southeast Asia; its dried",
+        "bark has a unique sweet aroma used for",
+        "flavoring."
+      ],
+      "prior_private_hex": "4120747265652066726f6d20496e64696120746f20536f7574686561737420417369613b20697473206472696564006261726b20686173206120756e697175652073776565742061726f6d61207573656420666f7200666c61766f72696e672e0000",
+      "private_pointer_field": 37275360,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 131,
+        "copy_end": 250,
+        "bytes": 118,
+        "record_index": 1,
+        "table_offset": 1322780,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468697320747265652067726f77732066726f6d20496e64696120746f20536f7574686561737420417369612e20497473206472696564206261726b2068617320612064697374696e6374697665207377656574207363656e7420616e642069732075736564206173206120666c61766f72696e672e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 7,
+        "message_ID": 2822,
+        "field": 37275360,
+        "old_pointer": 37260420,
+        "new_pointer": 37260552,
+        "compiled_rows": [
+          "This tree grows from India to Southeast Asia.",
+          "Its dried bark has a distinctive sweet scent",
+          "and is used as a flavoring."
+        ],
+        "compiled_hex": "5468697320747265652067726f77732066726f6d20496e64696120746f20536f7574686561737420417369612e00497473206472696564206261726b2068617320612064697374696e6374697665207377656574207363656e7400616e642069732075736564206173206120666c61766f72696e672e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "This tree grows from India to Southeast Asia.",
+            "Its dried bark has a distinctive sweet scent",
+            "and is used as a flavoring."
+          ],
+          "native_ink_sha256": "b58c920e9d0c1175134ea4c994d2c86f49cb9a6fc5b4fa478f12ed4b84fb7095",
+          "native_glyphs": 160
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "This tree grows from India to Southeast Asia.",
+            "Its dried bark has a distinctive sweet scent",
+            "and is used as a flavoring."
+          ],
+          "native_ink_sha256": "68c7335bf952603b9ff5bebe43018478aa8c2f8e5c5447d7f3dbda5195f19bfe",
+          "native_glyphs": 160
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "This tree grows from India to Southeast Asia.",
+            "Its dried bark has a distinctive sweet scent",
+            "and is used as a flavoring."
+          ],
+          "native_ink_sha256": "55717a93d1b24007fa15cde41745edc9a3a7ef0cb3bedc70c02fea747371a8a0",
+          "native_glyphs": 144
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "This tree grows from India to Southeast Asia.",
+            "Its dried bark has a distinctive sweet scent",
+            "and is used as a flavoring."
+          ],
+          "native_ink_sha256": "3c61884133bfbb4b88f13fc1a64c73cd96ea4581a9a7766e7ba70d18df277404",
+          "native_glyphs": 144
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2823",
+      "message_ID": 2823,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "唐辛子の一種。実は丸形または長丸形をしている。新大陸が原産で、かじると強い刺激がある。",
+      "current_English": "A New World chili with round or oblong fruit that has a powerful bite when chewed.    ",
+      "source_hex": "938290688e7182cc88ea8eed81428ec082cd8adb8c6082dc82bd82cd92b78adb8c6082f082b582c482a282e98142905691e597a482aa8cb48e5982c5814182a982b682e982c68bad82a28e688c8382aa82a082e98142",
+      "current_hex": "41204e657720576f726c64206368696c69207769746820726f756e64206f72206f626c6f6e67206672756974207468617420686173206120706f77657266756c2062697465207768656e206368657765642e20202020",
+      "source_reference": {
+        "block": 29,
+        "offset": 3816,
+        "copy_end": 3904,
+        "bytes": 86,
+        "record_index": 59,
+        "table_offset": 1322782,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 212,
+        "copy_end": 299,
+        "bytes": 86,
+        "record_index": 2,
+        "table_offset": 1322782,
+        "start_in_record": 0
+      },
+      "english": "A New World chili with round or oblong fruit that has a powerful bite when chewed.",
+      "source_meaning": "A kind of chili native to the New World. Its fruit is round or oblong and has a strong bite.",
+      "localization_note": "Retain the clear description and both possible fruit shapes.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "retention",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 8,
+      "name_field": 1172176,
+      "clean_name_pointer": 34987236,
+      "current_name_pointer": 34989076,
+      "clean_name_hex": "837383818393836782cc8ec0",
+      "current_name_hex": "50696d656e746f20506c616e74",
+      "item_name": "Pimento Plant",
+      "prior_private_pointer": 37260518,
+      "prior_private_rows": [
+        "A New World chili with round or oblong fruit",
+        "that has a powerful bite when chewed."
+      ],
+      "prior_private_hex": "41204e657720576f726c64206368696c69207769746820726f756e64206f72206f626c6f6e67206672756974007468617420686173206120706f77657266756c2062697465207768656e206368657765642e0000",
+      "private_pointer_field": 37275364,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 250,
+        "copy_end": 333,
+        "bytes": 82,
+        "record_index": 2,
+        "table_offset": 1322782,
+        "start_in_record": 0,
+        "exact_stored_hex": "41204e657720576f726c64206368696c69207769746820726f756e64206f72206f626c6f6e67206672756974207468617420686173206120706f77657266756c2062697465207768656e206368657765642e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 8,
+        "message_ID": 2823,
+        "field": 37275364,
+        "old_pointer": 37260518,
+        "new_pointer": 37260672,
+        "compiled_rows": [
+          "A New World chili with round or oblong fruit",
+          "that has a powerful bite when chewed."
+        ],
+        "compiled_hex": "41204e657720576f726c64206368696c69207769746820726f756e64206f72206f626c6f6e67206672756974007468617420686173206120706f77657266756c2062697465207768656e206368657765642e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A New World chili with round or oblong fruit",
+            "that has a powerful bite when chewed."
+          ],
+          "native_ink_sha256": "1769577e7922f75d8650cdf97a833c77993c889501cbc7775af0e95189aefeaf",
+          "native_glyphs": 125
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A New World chili with round or oblong fruit",
+            "that has a powerful bite when chewed."
+          ],
+          "native_ink_sha256": "d15bdd5abf8650ced43cb2541b78db04abe4fc44d49efdf0e5dc181521c2f9bf",
+          "native_glyphs": 125
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A New World chili with round or oblong fruit",
+            "that has a powerful bite when chewed."
+          ],
+          "native_ink_sha256": "cf928ce777ee3220b71a46905d54ca087d11441797308e4f58f13d4694f8c993",
+          "native_glyphs": 109
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A New World chili with round or oblong fruit",
+            "that has a powerful bite when chewed."
+          ],
+          "native_ink_sha256": "cab017b572582b66c2c4c1b39c6b9e763847b54902c0b7b8c2a9253bade1f54b",
+          "native_glyphs": 109
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2824",
+      "message_ID": 2824,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "東アフリカを原産とする木。花は純白でジャスミンの香りがする。乾燥させた実を煎って飲料に用いる。",
+      "current_English": "East African tree: pure-white flowers scented like jasmine. Dried fruit is roasted for drinks.",
+      "source_hex": "938c83418374838a834a82f08cb48e5982c682b782e996d8814289d482cd8f83949282c5835783838358837e839382cc8d8182e882aa82b782e981428aa3918782b382b982bd8ec082f090f782c182c488f997bf82c9977082a282e98142",
+      "current_hex": "45617374204166726963616e20747265653a20707572652d776869746520666c6f77657273207363656e746564206c696b65206a61736d696e652e20447269656420667275697420697320726f617374656420666f72206472696e6b732e",
+      "source_reference": {
+        "block": 29,
+        "offset": 3904,
+        "copy_end": 4000,
+        "bytes": 94,
+        "record_index": 60,
+        "table_offset": 1322784,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 299,
+        "copy_end": 394,
+        "bytes": 94,
+        "record_index": 3,
+        "table_offset": 1322784,
+        "start_in_record": 0
+      },
+      "english": "A tree from East Africa with pure white, jasmine-scented flowers. Its dried fruit is roasted to make a drink.",
+      "source_meaning": "A tree native to East Africa whose pure white flowers smell of jasmine. Its dried fruit is roasted to make a drink.",
+      "localization_note": "Replace catalogue fragments with readable sentences and preserve the plant part named in the game.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 9,
+      "name_field": 1172200,
+      "clean_name_pointer": 34987252,
+      "current_name_pointer": 34985716,
+      "clean_name_hex": "8352815b8371815b82cc96d8",
+      "current_name_hex": "436f666665652054726565",
+      "item_name": "Coffee Tree",
+      "prior_private_pointer": 37260602,
+      "prior_private_rows": [
+        "East African tree: pure-white flowers scented",
+        "like jasmine. Dried fruit is roasted for",
+        "drinks."
+      ],
+      "prior_private_hex": "45617374204166726963616e20747265653a20707572652d776869746520666c6f77657273207363656e746564006c696b65206a61736d696e652e20447269656420667275697420697320726f617374656420666f72006472696e6b732e0000",
+      "private_pointer_field": 37275368,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 333,
+        "copy_end": 444,
+        "bytes": 109,
+        "record_index": 3,
+        "table_offset": 1322784,
+        "start_in_record": 0,
+        "exact_stored_hex": "4120747265652066726f6d204561737420416672696361207769746820707572652077686974652c206a61736d696e652d7363656e74656420666c6f776572732e2049747320647269656420667275697420697320726f617374656420746f206d616b652061206472696e6b2e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 9,
+        "message_ID": 2824,
+        "field": 37275368,
+        "old_pointer": 37260602,
+        "new_pointer": 37260756,
+        "compiled_rows": [
+          "A tree from East Africa with pure white,",
+          "jasmine-scented flowers. Its dried fruit is",
+          "roasted to make a drink."
+        ],
+        "compiled_hex": "4120747265652066726f6d204561737420416672696361207769746820707572652077686974652c006a61736d696e652d7363656e74656420666c6f776572732e2049747320647269656420667275697420697300726f617374656420746f206d616b652061206472696e6b2e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A tree from East Africa with pure white,",
+            "jasmine-scented flowers. Its dried fruit is",
+            "roasted to make a drink."
+          ],
+          "native_ink_sha256": "d47b24a3ae149f6212692bfd8cba48c4895499b5093e452fd96268e4ebe4d095",
+          "native_glyphs": 149
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A tree from East Africa with pure white,",
+            "jasmine-scented flowers. Its dried fruit is",
+            "roasted to make a drink."
+          ],
+          "native_ink_sha256": "6c2b0061484c73e1b23fc184f9ae65b09cb4b11f50d012089b0fd8e8429680d0",
+          "native_glyphs": 149
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A tree from East Africa with pure white,",
+            "jasmine-scented flowers. Its dried fruit is",
+            "roasted to make a drink."
+          ],
+          "native_ink_sha256": "92da069f3c39daaaecdd1302f54386648bddeb5c68ca2845d710800fbad51cc7",
+          "native_glyphs": 133
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A tree from East Africa with pure white,",
+            "jasmine-scented flowers. Its dried fruit is",
+            "roasted to make a drink."
+          ],
+          "native_ink_sha256": "9c49b2fdacd1ff0ac4c2050bfdff8291b2d748ef7523f3782f9f95415ffd6c14",
+          "native_glyphs": 133
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2825",
+      "message_ID": 2825,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "中国南部原産の木。長楕円形の葉を発酵させて飲料に使用する。発酵度や使用部位によって風味が異なる。",
+      "current_English": "Southern Chinese tea tree with long oval leaves; flavor varies by fermentation and parts used.  ",
+      "source_hex": "92868d9193ec95948cb48e5982cc96d8814292b791c8897e8c6082cc977482f094ad8d7982b382b982c488f997bf82c98e67977082b782e9814294ad8d79937882e28e679770959488ca82c982e682c182c4959796a182aa88d982c882e98142",
+      "current_hex": "536f75746865726e204368696e6573652074656120747265652077697468206c6f6e67206f76616c206c65617665733b20666c61766f7220766172696573206279206665726d656e746174696f6e20616e6420706172747320757365642e2020",
+      "source_reference": {
+        "block": 30,
+        "offset": 0,
+        "copy_end": 96,
+        "bytes": 96,
+        "record_index": 0,
+        "table_offset": 1322786,
+        "start_in_record": 0
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 394,
+        "copy_end": 491,
+        "bytes": 96,
+        "record_index": 4,
+        "table_offset": 1322786,
+        "start_in_record": 0
+      },
+      "english": "A southern Chinese tree with long oval leaves fermented for tea. Flavor varies by plant part and degree of fermentation.",
+      "source_meaning": "A tree native to southern China. Its long oval leaves are fermented for a drink. Flavor varies with the parts used and the degree of fermentation.",
+      "localization_note": "Keep the origin, leaf shape, preparation and both causes of flavor differences in three rows.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 10,
+      "name_field": 1172224,
+      "clean_name_pointer": 34979240,
+      "current_name_pointer": 34982764,
+      "clean_name_hex": "928382cc96d8",
+      "current_name_hex": "54656120506c616e74",
+      "item_name": "Tea Plant",
+      "prior_private_pointer": 37260698,
+      "prior_private_rows": [
+        "Southern Chinese tea tree with long oval",
+        "leaves; flavor varies by fermentation and parts",
+        "used."
+      ],
+      "prior_private_hex": "536f75746865726e204368696e6573652074656120747265652077697468206c6f6e67206f76616c006c65617665733b20666c61766f7220766172696573206279206665726d656e746174696f6e20616e6420706172747300757365642e0000",
+      "private_pointer_field": 37275372,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 444,
+        "copy_end": 565,
+        "bytes": 120,
+        "record_index": 5,
+        "table_offset": 1322786,
+        "start_in_record": 0,
+        "exact_stored_hex": "4120736f75746865726e204368696e65736520747265652077697468206c6f6e67206f76616c206c6561766573206665726d656e74656420666f72207465612e20466c61766f722076617269657320627920706c616e74207061727420616e6420646567726565206f66206665726d656e746174696f6e2e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 10,
+        "message_ID": 2825,
+        "field": 37275372,
+        "old_pointer": 37260698,
+        "new_pointer": 37260867,
+        "compiled_rows": [
+          "A southern Chinese tree with long oval leaves",
+          "fermented for tea. Flavor varies by plant part",
+          "and degree of fermentation."
+        ],
+        "compiled_hex": "4120736f75746865726e204368696e65736520747265652077697468206c6f6e67206f76616c206c6561766573006665726d656e74656420666f72207465612e20466c61766f722076617269657320627920706c616e74207061727400616e6420646567726565206f66206665726d656e746174696f6e2e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A southern Chinese tree with long oval leaves",
+            "fermented for tea. Flavor varies by plant part",
+            "and degree of fermentation."
+          ],
+          "native_ink_sha256": "a1a36369bd34d6e84c434a81ffb4a579b1a3e4e5c2d5986fe2470092643adb68",
+          "native_glyphs": 158
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A southern Chinese tree with long oval leaves",
+            "fermented for tea. Flavor varies by plant part",
+            "and degree of fermentation."
+          ],
+          "native_ink_sha256": "7a6420532dd4652dd0f8b330ba7779ec4db29097007c1a7e75100bbbda8ab591",
+          "native_glyphs": 158
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A southern Chinese tree with long oval leaves",
+            "fermented for tea. Flavor varies by plant part",
+            "and degree of fermentation."
+          ],
+          "native_ink_sha256": "20b874229c094e4480cabf14c11bc1e77c358b78df9c393ec7ae4ddd0baabb50",
+          "native_glyphs": 142
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A southern Chinese tree with long oval leaves",
+            "fermented for tea. Flavor varies by plant part",
+            "and degree of fermentation."
+          ],
+          "native_ink_sha256": "a2f48ee327f75176648ac0c0714a717538a31a882ab11e7d8fd752ec179936c3",
+          "native_glyphs": 142
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2826",
+      "message_ID": 2826,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "新大陸を原産地とする高木。幹に直接生った大きな実から種を取り出し、発酵・乾燥させて食用にする。",
+      "current_English": "A tall New World tree bears big fruit on its trunk; seeds are fermented and dried for food.   ",
+      "source_hex": "905691e597a482f08cb48e59926e82c682b782e98d8296d881428ab282c992bc90da90b682c182bd91e582ab82c88ec082a982e78eed82f08ee682e88f6f82b5814194ad8d7981458aa3918782b382b982c49048977082c982b782e98142",
+      "current_hex": "412074616c6c204e657720576f726c64207472656520626561727320626967206672756974206f6e20697473207472756e6b3b20736565647320617265206665726d656e74656420616e6420647269656420666f7220666f6f642e202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 96,
+        "copy_end": 192,
+        "bytes": 94,
+        "record_index": 0,
+        "table_offset": 1322788,
+        "start_in_record": 96
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 491,
+        "copy_end": 586,
+        "bytes": 94,
+        "record_index": 5,
+        "table_offset": 1322788,
+        "start_in_record": 0
+      },
+      "english": "This tall New World tree bears large fruit right on its trunk. The seeds are removed, fermented, and dried for food.",
+      "source_meaning": "A tall tree native to the New World, with large fruit growing directly on its trunk. The seeds are removed, fermented and dried to eat.",
+      "localization_note": "Keep the unusual placement of the fruit and all three steps of seed preparation.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 11,
+      "name_field": 1172248,
+      "clean_name_pointer": 34985008,
+      "current_name_pointer": 34987204,
+      "clean_name_hex": "834a834a834982cc8eed",
+      "current_name_hex": "436163616f205365656473",
+      "item_name": "Cacao Seeds",
+      "prior_private_pointer": 37260794,
+      "prior_private_rows": [
+        "A tall New World tree bears big fruit on its",
+        "trunk; seeds are fermented and dried for food."
+      ],
+      "prior_private_hex": "412074616c6c204e657720576f726c64207472656520626561727320626967206672756974206f6e20697473007472756e6b3b20736565647320617265206665726d656e74656420616e6420647269656420666f7220666f6f642e0000",
+      "private_pointer_field": 37275376,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 565,
+        "copy_end": 682,
+        "bytes": 116,
+        "record_index": 6,
+        "table_offset": 1322788,
+        "start_in_record": 0,
+        "exact_stored_hex": "546869732074616c6c204e657720576f726c642074726565206265617273206c61726765206672756974207269676874206f6e20697473207472756e6b2e20546865207365656473206172652072656d6f7665642c206665726d656e7465642c20616e6420647269656420666f7220666f6f642e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 11,
+        "message_ID": 2826,
+        "field": 37275376,
+        "old_pointer": 37260794,
+        "new_pointer": 37260989,
+        "compiled_rows": [
+          "This tall New World tree bears large fruit",
+          "right on its trunk. The seeds are removed,",
+          "fermented, and dried for food."
+        ],
+        "compiled_hex": "546869732074616c6c204e657720576f726c642074726565206265617273206c61726765206672756974007269676874206f6e20697473207472756e6b2e20546865207365656473206172652072656d6f7665642c006665726d656e7465642c20616e6420647269656420666f7220666f6f642e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "This tall New World tree bears large fruit",
+            "right on its trunk. The seeds are removed,",
+            "fermented, and dried for food."
+          ],
+          "native_ink_sha256": "4cbba20e719a8e2759bf64bf605d0c905121a9e1b40c0ac21ccc6b55b4d2dc0d",
+          "native_glyphs": 156
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "This tall New World tree bears large fruit",
+            "right on its trunk. The seeds are removed,",
+            "fermented, and dried for food."
+          ],
+          "native_ink_sha256": "32b63de1557c3ea27f786a54ef8d927fd00c698434ddf80a0e395c5f483a102b",
+          "native_glyphs": 156
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "This tall New World tree bears large fruit",
+            "right on its trunk. The seeds are removed,",
+            "fermented, and dried for food."
+          ],
+          "native_ink_sha256": "d6ced7e216b031d6f3aa5287473f9b71f5ecaf1301ee0bc2b8663f34f49c9c83",
+          "native_glyphs": 140
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "This tall New World tree bears large fruit",
+            "right on its trunk. The seeds are removed,",
+            "fermented, and dried for food."
+          ],
+          "native_ink_sha256": "58f009e2bbfbc59c318b68df55cc217b6722e970deee5af1f740699ded131c41",
+          "native_glyphs": 140
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2827",
+      "message_ID": 2827,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "乾燥させた葉を細かく刻み、紙などに包んで燃やし、煙を吸い込んで楽しむ。原産は新大陸。",
+      "current_English": "New World leaves, dried, shredded and rolled in paper for smoking.                  ",
+      "source_hex": "8aa3918782b382b982bd977482f08dd782a982ad8d8f82dd81418e8682c882c782c995ef82f182c5945282e282b58141898c82f08b7a82a28d9e82f182c58a7982b582de81428cb48e5982cd905691e597a48142",
+      "current_hex": "4e657720576f726c64206c65617665732c2064726965642c20736872656464656420616e6420726f6c6c656420696e20706170657220666f7220736d6f6b696e672e202020202020202020202020202020202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 192,
+        "copy_end": 276,
+        "bytes": 84,
+        "record_index": 1,
+        "table_offset": 1322790,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 586,
+        "copy_end": 671,
+        "bytes": 84,
+        "record_index": 6,
+        "table_offset": 1322790,
+        "start_in_record": 0
+      },
+      "english": "A New World plant. The dried leaves are shredded and wrapped in paper or similar material for smoking.",
+      "source_meaning": "A plant native to the New World whose dried leaves are finely cut, wrapped in paper or the like, lit, and smoked.",
+      "localization_note": "Keep the plant’s origin and flexible wrapping material. “For smoking” supplies lighting and inhalation in ordinary English.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 12,
+      "name_field": 1172272,
+      "clean_name_pointer": 34987268,
+      "current_name_pointer": 34988948,
+      "clean_name_hex": "835e836f835282cc956396d8",
+      "current_name_hex": "546f626163636f20506c616e74",
+      "item_name": "Tobacco Plant",
+      "prior_private_pointer": 37260887,
+      "prior_private_rows": [
+        "New World leaves, dried, shredded and rolled in",
+        "paper for smoking."
+      ],
+      "prior_private_hex": "4e657720576f726c64206c65617665732c2064726965642c20736872656464656420616e6420726f6c6c656420696e00706170657220666f7220736d6f6b696e672e0000",
+      "private_pointer_field": 37275380,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 682,
+        "copy_end": 785,
+        "bytes": 102,
+        "record_index": 7,
+        "table_offset": 1322790,
+        "start_in_record": 0,
+        "exact_stored_hex": "41204e657720576f726c6420706c616e742e20546865206472696564206c65617665732061726520736872656464656420616e64207772617070656420696e207061706572206f722073696d696c6172206d6174657269616c20666f7220736d6f6b696e672e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 12,
+        "message_ID": 2827,
+        "field": 37275380,
+        "old_pointer": 37260887,
+        "new_pointer": 37261107,
+        "compiled_rows": [
+          "A New World plant. The dried leaves are",
+          "shredded and wrapped in paper or similar",
+          "material for smoking."
+        ],
+        "compiled_hex": "41204e657720576f726c6420706c616e742e20546865206472696564206c65617665732061726500736872656464656420616e64207772617070656420696e207061706572206f722073696d696c6172006d6174657269616c20666f7220736d6f6b696e672e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A New World plant. The dried leaves are",
+            "shredded and wrapped in paper or similar",
+            "material for smoking."
+          ],
+          "native_ink_sha256": "a090bef20c4c21e1191870a9e6a80778459d3979279594e903026de9a97ad8e5",
+          "native_glyphs": 144
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A New World plant. The dried leaves are",
+            "shredded and wrapped in paper or similar",
+            "material for smoking."
+          ],
+          "native_ink_sha256": "9adeb768629c957b10b5fab921d56ff2376b229f2291e62eb9c9d7932bfce8e6",
+          "native_glyphs": 144
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A New World plant. The dried leaves are",
+            "shredded and wrapped in paper or similar",
+            "material for smoking."
+          ],
+          "native_ink_sha256": "155df8e72a2bf02c3c863262bc7817383a1829636c83e8fc5f44ac9f48362be1",
+          "native_glyphs": 128
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A New World plant. The dried leaves are",
+            "shredded and wrapped in paper or similar",
+            "material for smoking."
+          ],
+          "native_ink_sha256": "c4face2f4822aae997cc31429060f8c960869c2c388559da9a2ed4e31bc46be9",
+          "native_glyphs": 128
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2828",
+      "message_ID": 2828,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "すべての物質の構造を調べようとした学問、錬金術の奥義を記した書物。ある物質を異なる物質に換える技術が書かれている。",
+      "current_English": "A book of alchemy's secrets: matter's structure and turning one substance into another.                           ",
+      "source_hex": "82b782d782c482cc95a88ebf82cc8d5c91a282f092b282d782e682a482c682b582bd8a7796e2814198428be08f7082cc899c8b6082f08b4c82b582bd8f9195a8814282a082e995a88ebf82f088d982c882e995a88ebf82c98ab782a682e98b5a8f7082aa8f9182a982ea82c482a282e98142",
+      "current_hex": "4120626f6f6b206f6620616c6368656d79277320736563726574733a206d617474657227732073747275637475726520616e64207475726e696e67206f6e65207375627374616e636520696e746f20616e6f746865722e202020202020202020202020202020202020202020202020202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 276,
+        "copy_end": 392,
+        "bytes": 114,
+        "record_index": 1,
+        "table_offset": 1322792,
+        "start_in_record": 85
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 671,
+        "copy_end": 786,
+        "bytes": 114,
+        "record_index": 7,
+        "table_offset": 1322792,
+        "start_in_record": 0
+      },
+      "english": "A book of secrets from alchemy, the study of what matter is made of. It explains how to turn one substance into another.",
+      "source_meaning": "A book containing the secrets of alchemy, which seeks to understand the structure of matter. It describes changing one substance into another.",
+      "localization_note": "Keep the two ideas in sequence. The first sentence explains alchemy and the second identifies the method the book describes.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 13,
+      "name_field": 1172296,
+      "clean_name_pointer": 34985020,
+      "current_name_pointer": 34985380,
+      "clean_name_hex": "98428be08f7082cc8f91",
+      "current_name_hex": "416c6368656d7920426f6f6b",
+      "item_name": "Alchemy Book",
+      "prior_private_pointer": 37260955,
+      "prior_private_rows": [
+        "A book of alchemy's secrets: matter's structure",
+        "and turning one substance into another."
+      ],
+      "prior_private_hex": "4120626f6f6b206f6620616c6368656d79277320736563726574733a206d617474657227732073747275637475726500616e64207475726e696e67206f6e65207375627374616e636520696e746f20616e6f746865722e0000",
+      "private_pointer_field": 37275384,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 785,
+        "copy_end": 906,
+        "bytes": 120,
+        "record_index": 8,
+        "table_offset": 1322792,
+        "start_in_record": 0,
+        "exact_stored_hex": "4120626f6f6b206f6620736563726574732066726f6d20616c6368656d792c20746865207374756479206f662077686174206d6174746572206973206d616465206f662e204974206578706c61696e7320686f7720746f207475726e206f6e65207375627374616e636520696e746f20616e6f746865722e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 13,
+        "message_ID": 2828,
+        "field": 37275384,
+        "old_pointer": 37260955,
+        "new_pointer": 37261211,
+        "compiled_rows": [
+          "A book of secrets from alchemy, the study",
+          "of what matter is made of. It explains how",
+          "to turn one substance into another."
+        ],
+        "compiled_hex": "4120626f6f6b206f6620736563726574732066726f6d20616c6368656d792c20746865207374756479006f662077686174206d6174746572206973206d616465206f662e204974206578706c61696e7320686f7700746f207475726e206f6e65207375627374616e636520696e746f20616e6f746865722e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A book of secrets from alchemy, the study",
+            "of what matter is made of. It explains how",
+            "to turn one substance into another."
+          ],
+          "native_ink_sha256": "20d7b8cfb9de082cf8503ffafa242ffa3dbbbd56977d29fa0758c6e331f683ad",
+          "native_glyphs": 161
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A book of secrets from alchemy, the study",
+            "of what matter is made of. It explains how",
+            "to turn one substance into another."
+          ],
+          "native_ink_sha256": "7c7572b92295bdae646a26c245e4822924fa7a490604e5e91bc804804a692bf9",
+          "native_glyphs": 161
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A book of secrets from alchemy, the study",
+            "of what matter is made of. It explains how",
+            "to turn one substance into another."
+          ],
+          "native_ink_sha256": "49b26f44559e812a882d291ee3ffd5fbceae46d0a2ca7c70434c35d8509e59f3",
+          "native_glyphs": 145
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A book of secrets from alchemy, the study",
+            "of what matter is made of. It explains how",
+            "to turn one substance into another."
+          ],
+          "native_ink_sha256": "7788d6dfc937b77a7a630d3da054717d722ebaccb474d8cd0cba2e29eb3c33f6",
+          "native_glyphs": 145
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2829",
+      "message_ID": 2829,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "ガラス細工の作り方を細かく丁寧に説明した書物。",
+      "current_English": "A detailed guide to making glassware.         ",
+      "source_hex": "834b838983588dd78d4882cc8dec82e895fb82f08dd782a982ad929a944a82c990e096be82b582bd8f9195a88142",
+      "current_hex": "412064657461696c656420677569646520746f206d616b696e6720676c617373776172652e202020202020202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 392,
+        "copy_end": 440,
+        "bytes": 46,
+        "record_index": 2,
+        "table_offset": 1322794,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 786,
+        "copy_end": 833,
+        "bytes": 46,
+        "record_index": 8,
+        "table_offset": 1322794,
+        "start_in_record": 0
+      },
+      "english": "A detailed guide to making glassware.",
+      "source_meaning": "A book that explains in careful detail how to make glasswork.",
+      "localization_note": "Retain the concise, accurate title description and the emphasis on detail.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "retention",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 14,
+      "name_field": 1172320,
+      "clean_name_pointer": 34990024,
+      "current_name_pointer": 34990804,
+      "clean_name_hex": "834b8389835882cc90bb96408eab9354",
+      "current_name_hex": "476c6173736d616b696e67204775696465",
+      "item_name": "Glassmaking Guide",
+      "prior_private_pointer": 37261044,
+      "prior_private_rows": [
+        "A detailed guide to making glassware."
+      ],
+      "prior_private_hex": "412064657461696c656420677569646520746f206d616b696e6720676c617373776172652e0000",
+      "private_pointer_field": 37275388,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 906,
+        "copy_end": 945,
+        "bytes": 37,
+        "record_index": 9,
+        "table_offset": 1322794,
+        "start_in_record": 0,
+        "exact_stored_hex": "412064657461696c656420677569646520746f206d616b696e6720676c617373776172652e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 14,
+        "message_ID": 2829,
+        "field": 37275388,
+        "old_pointer": 37261044,
+        "new_pointer": 37261333,
+        "compiled_rows": [
+          "A detailed guide to making glassware."
+        ],
+        "compiled_hex": "412064657461696c656420677569646520746f206d616b696e6720676c617373776172652e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A detailed guide to making glassware."
+          ],
+          "native_ink_sha256": "56d6af38b55d50a7df8abb0da97570845d2e081675fb3b38dbaebd510f0323c7",
+          "native_glyphs": 85
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A detailed guide to making glassware."
+          ],
+          "native_ink_sha256": "901f8ca5e062436817e098de392f3b5c217bc06e45f1ea698545bcafbf867c9a",
+          "native_glyphs": 85
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A detailed guide to making glassware."
+          ],
+          "native_ink_sha256": "a9b63c83332cba98c6b276e0f011b3e61dd3c55ae68aad035dac769557c9c758",
+          "native_glyphs": 69
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A detailed guide to making glassware."
+          ],
+          "native_ink_sha256": "b72bd48d215114bb005f3fe3fa71ac597632342220ffcf9839fdf9f831d3a280",
+          "native_glyphs": 69
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2830",
+      "message_ID": 2830,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "蛾の幼虫。成長すると体が透明になり、糸を吐きながら繭を作る。このときに吐く生糸が絹糸。衣料の原料として使われる。",
+      "current_English": "When moth larvae mature, their bodies turn clear and they spin cocoons. This raw silk becomes clothing thread.  ",
+      "source_hex": "89e982cc9763928e814290ac92b782b782e982c691cc82aa93a796be82c982c882e881418e8582f0936682ab82c882aa82e7969a82f08dec82e9814282b182cc82c682ab82c9936682ad90b68e8582aa8ca68e85814288df97bf82cc8cb497bf82c682b582c48e6782ed82ea82e98142",
+      "current_hex": "5768656e206d6f7468206c6172766165206d61747572652c20746865697220626f64696573207475726e20636c65617220616e642074686579207370696e20636f636f6f6e732e2054686973207261772073696c6b206265636f6d657320636c6f7468696e67207468726561642e2020",
+      "source_reference": {
+        "block": 30,
+        "offset": 440,
+        "copy_end": 552,
+        "bytes": 112,
+        "record_index": 3,
+        "table_offset": 1322796,
+        "start_in_record": 1
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 833,
+        "copy_end": 946,
+        "bytes": 112,
+        "record_index": 9,
+        "table_offset": 1322796,
+        "start_in_record": 0
+      },
+      "english": "As these moth larvae mature, their bodies turn clear and they spin cocoons. The silk they spin is used to make clothing.",
+      "source_meaning": "Moth larvae that turn transparent as they mature. They spin cocoons with silk that becomes material for clothing.",
+      "localization_note": "Describe the cocoon and silk together and preserve the use in clothing.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 15,
+      "name_field": 1172344,
+      "clean_name_pointer": 34977648,
+      "current_name_pointer": 34982848,
+      "clean_name_hex": "8e5c",
+      "current_name_hex": "53696c6b776f726d73",
+      "item_name": "Silkworms",
+      "prior_private_pointer": 37261083,
+      "prior_private_rows": [
+        "When moth larvae mature, their bodies turn",
+        "clear and they spin cocoons. This raw silk",
+        "becomes clothing thread."
+      ],
+      "prior_private_hex": "5768656e206d6f7468206c6172766165206d61747572652c20746865697220626f64696573207475726e00636c65617220616e642074686579207370696e20636f636f6f6e732e2054686973207261772073696c6b006265636f6d657320636c6f7468696e67207468726561642e0000",
+      "private_pointer_field": 37275392,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 945,
+        "copy_end": 1066,
+        "bytes": 120,
+        "record_index": 11,
+        "table_offset": 1322796,
+        "start_in_record": 0,
+        "exact_stored_hex": "4173207468657365206d6f7468206c6172766165206d61747572652c20746865697220626f64696573207475726e20636c65617220616e642074686579207370696e20636f636f6f6e732e205468652073696c6b2074686579207370696e206973207573656420746f206d616b6520636c6f7468696e672e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 15,
+        "message_ID": 2830,
+        "field": 37275392,
+        "old_pointer": 37261083,
+        "new_pointer": 37274284,
+        "compiled_rows": [
+          "As these moth larvae mature, their bodies turn",
+          "clear and they spin cocoons. The silk they spin",
+          "is used to make clothing."
+        ],
+        "compiled_hex": "4173207468657365206d6f7468206c6172766165206d61747572652c20746865697220626f64696573207475726e00636c65617220616e642074686579207370696e20636f636f6f6e732e205468652073696c6b2074686579207370696e006973207573656420746f206d616b6520636c6f7468696e672e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "As these moth larvae mature, their bodies turn",
+            "clear and they spin cocoons. The silk they spin",
+            "is used to make clothing."
+          ],
+          "native_ink_sha256": "c794844014f8c062fe4dc829e43f6dc1d6b1fd6c9399d6bbdd3f428b91122db4",
+          "native_glyphs": 158
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "As these moth larvae mature, their bodies turn",
+            "clear and they spin cocoons. The silk they spin",
+            "is used to make clothing."
+          ],
+          "native_ink_sha256": "b54b0571e7448cc5005ba0c29cd832c60ff32f2333884a6578cb36f755eb72c5",
+          "native_glyphs": 158
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "As these moth larvae mature, their bodies turn",
+            "clear and they spin cocoons. The silk they spin",
+            "is used to make clothing."
+          ],
+          "native_ink_sha256": "2c201568fc7832793f682b2da10ee425eb8a0d95d3fd519105656f966d597045",
+          "native_glyphs": 142
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "As these moth larvae mature, their bodies turn",
+            "clear and they spin cocoons. The silk they spin",
+            "is used to make clothing."
+          ],
+          "native_ink_sha256": "007f7d28ae060599d19eeca8092c25afd71d528487ef3416a4ef22e4573e1e9e",
+          "native_glyphs": 142
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2831",
+      "message_ID": 2831,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "繊維を縦と横に交差させて布を織る機械。手と足を使って動かす。",
+      "current_English": "Hands and feet power this loom, weaving crossed threads.    ",
+      "source_hex": "914088db82f08f6382c689a182c98cf08db782b382b982c4957a82f0904482e98b408a4281428ee882c691ab82f08e6782c182c493ae82a982b78142",
+      "current_hex": "48616e647320616e64206665657420706f7765722074686973206c6f6f6d2c2077656176696e672063726f7373656420746872656164732e20202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 552,
+        "copy_end": 612,
+        "bytes": 60,
+        "record_index": 3,
+        "table_offset": 1322798,
+        "start_in_record": 113
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 946,
+        "copy_end": 1007,
+        "bytes": 60,
+        "record_index": 10,
+        "table_offset": 1322798,
+        "start_in_record": 0
+      },
+      "english": "Worked by hand and foot, this loom weaves fabric by interlacing threads.",
+      "source_meaning": "A machine that interlaces threads lengthwise and crosswise to weave cloth. It is operated with the hands and feet.",
+      "localization_note": "Keep the physical operation together and describe the interlacing of threads in natural English.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 16,
+      "name_field": 1172368,
+      "clean_name_pointer": 34985032,
+      "current_name_pointer": 34979104,
+      "clean_name_hex": "82cd82bd904482e88b40",
+      "current_name_hex": "4c6f6f6d",
+      "item_name": "Loom",
+      "prior_private_pointer": 37261195,
+      "prior_private_rows": [
+        "Hands and feet power this loom, weaving crossed",
+        "threads."
+      ],
+      "prior_private_hex": "48616e647320616e64206665657420706f7765722074686973206c6f6f6d2c2077656176696e672063726f7373656400746872656164732e0000",
+      "private_pointer_field": 37275396,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 1066,
+        "copy_end": 1139,
+        "bytes": 72,
+        "record_index": 12,
+        "table_offset": 1322798,
+        "start_in_record": 0,
+        "exact_stored_hex": "576f726b65642062792068616e6420616e6420666f6f742c2074686973206c6f6f6d207765617665732066616272696320627920696e7465726c6163696e6720746872656164732e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 16,
+        "message_ID": 2831,
+        "field": 37275396,
+        "old_pointer": 37261195,
+        "new_pointer": 37274406,
+        "compiled_rows": [
+          "Worked by hand and foot, this loom weaves",
+          "fabric by interlacing threads."
+        ],
+        "compiled_hex": "576f726b65642062792068616e6420616e6420666f6f742c2074686973206c6f6f6d207765617665730066616272696320627920696e7465726c6163696e6720746872656164732e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "Worked by hand and foot, this loom weaves",
+            "fabric by interlacing threads."
+          ],
+          "native_ink_sha256": "3045f09f8454ca4e010be68d6c50d7d2c8dcac9bbf179f46b32e15e5fc946b34",
+          "native_glyphs": 106
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "Worked by hand and foot, this loom weaves",
+            "fabric by interlacing threads."
+          ],
+          "native_ink_sha256": "3faf994204db673575858dbe95bec40561b0ed95b0b21e3a0f73fb8617c5d441",
+          "native_glyphs": 106
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "Worked by hand and foot, this loom weaves",
+            "fabric by interlacing threads."
+          ],
+          "native_ink_sha256": "2683234861b7031dcb48f5106ef7190f1dd2b2c33c5ab64b0b51b97ba96fe83f",
+          "native_glyphs": 90
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "Worked by hand and foot, this loom weaves",
+            "fabric by interlacing threads."
+          ],
+          "native_ink_sha256": "773bcf872b275bb26ca3d2ac672cbb5814433e3e05c41fa66483ae424b8b7259",
+          "native_glyphs": 90
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2832",
+      "message_ID": 2832,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "日本の近海に生息する二枚貝。殻はほぼ方形で、表面は黒褐色を帯びている。真珠の母貝となる。",
+      "current_English": "Pearls grow in this Japanese coastal shellfish, whose shell is squarish and dark brown. ",
+      "source_hex": "93fa967b82cc8bdf8a4382c990b691a782b782e993f196878a4c81428a6b82cd82d982da95fb8c6082c58141955c96ca82cd8d958a8c904682f091d182d182c482a282e98142905e8eec82cc95ea8a4c82c682c882e98142",
+      "current_hex": "506561726c732067726f7720696e2074686973204a6170616e65736520636f617374616c207368656c6c666973682c2077686f7365207368656c6c20697320737175617269736820616e64206461726b2062726f776e2e20",
+      "source_reference": {
+        "block": 30,
+        "offset": 612,
+        "copy_end": 700,
+        "bytes": 88,
+        "record_index": 3,
+        "table_offset": 1322800,
+        "start_in_record": 173
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 1007,
+        "copy_end": 1096,
+        "bytes": 88,
+        "record_index": 11,
+        "table_offset": 1322800,
+        "start_in_record": 0
+      },
+      "english": "This bivalve lives off Japan and produces pearls. Its shell is almost square and blackish brown.",
+      "source_meaning": "A bivalve in Japanese coastal waters, with a nearly square blackish brown shell. It is the host in which pearls form.",
+      "localization_note": "Restore the kind of shellfish and keep the source’s approximate shell shape and color.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 17,
+      "name_field": 1172392,
+      "clean_name_pointer": 34985056,
+      "current_name_pointer": 34985508,
+      "clean_name_hex": "834183528384834b8343",
+      "current_name_hex": "506561726c204f7973746572",
+      "item_name": "Pearl Oyster",
+      "prior_private_pointer": 37261253,
+      "prior_private_rows": [
+        "Pearls grow in this Japanese coastal shellfish,",
+        "whose shell is squarish and dark brown."
+      ],
+      "prior_private_hex": "506561726c732067726f7720696e2074686973204a6170616e65736520636f617374616c207368656c6c666973682c0077686f7365207368656c6c20697320737175617269736820616e64206461726b2062726f776e2e0000",
+      "private_pointer_field": 37275400,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 1139,
+        "copy_end": 1236,
+        "bytes": 96,
+        "record_index": 13,
+        "table_offset": 1322800,
+        "start_in_record": 0,
+        "exact_stored_hex": "5468697320626976616c7665206c69766573206f6666204a6170616e20616e642070726f647563657320706561726c732e20497473207368656c6c20697320616c6d6f73742073717561726520616e6420626c61636b6973682062726f776e2e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 17,
+        "message_ID": 2832,
+        "field": 37275400,
+        "old_pointer": 37261253,
+        "new_pointer": 37274480,
+        "compiled_rows": [
+          "This bivalve lives off Japan and produces",
+          "pearls. Its shell is almost square and",
+          "blackish brown."
+        ],
+        "compiled_hex": "5468697320626976616c7665206c69766573206f6666204a6170616e20616e642070726f647563657300706561726c732e20497473207368656c6c20697320616c6d6f73742073717561726520616e6400626c61636b6973682062726f776e2e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "This bivalve lives off Japan and produces",
+            "pearls. Its shell is almost square and",
+            "blackish brown."
+          ],
+          "native_ink_sha256": "71631ea59d5d91b40168f003312a858399060e01a8eb67b747663ffa1fcdd3db",
+          "native_glyphs": 137
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "This bivalve lives off Japan and produces",
+            "pearls. Its shell is almost square and",
+            "blackish brown."
+          ],
+          "native_ink_sha256": "e5e9618e0ab18e8e71c6a3722557d6faf8fbe84027623f3d2f7a0ca7ca1fbec0",
+          "native_glyphs": 137
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "This bivalve lives off Japan and produces",
+            "pearls. Its shell is almost square and",
+            "blackish brown."
+          ],
+          "native_ink_sha256": "8720ea4bf00acd015a22748e8ed812eab1f66817f80dca6fade3bb771840e972",
+          "native_glyphs": 121
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "This bivalve lives off Japan and produces",
+            "pearls. Its shell is almost square and",
+            "blackish brown."
+          ],
+          "native_ink_sha256": "df6dd85195b62452302a78962e51fc073dd14c2cf04168557acf5316d6c2034f",
+          "native_glyphs": 121
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2833",
+      "message_ID": 2833,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "東洋に伝わる医学書。草や木の皮を使った製薬の方法が記されている。著者は不明。",
+      "current_English": "An anonymous Eastern medical book on medicines made from herbs and bark.    ",
+      "source_hex": "938c976d82c9936082ed82e988e38a778f918142919082e296d882cc94e782f08e6782c182bd90bb96f282cc95fb964082aa8b4c82b382ea82c482a282e9814292988ed282cd957396be8142",
+      "current_hex": "416e20616e6f6e796d6f7573204561737465726e206d65646963616c20626f6f6b206f6e206d65646963696e6573206d6164652066726f6d20686572627320616e64206261726b2e20202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 700,
+        "copy_end": 776,
+        "bytes": 76,
+        "record_index": 3,
+        "table_offset": 1322802,
+        "start_in_record": 261
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 1096,
+        "copy_end": 1173,
+        "bytes": 76,
+        "record_index": 12,
+        "table_offset": 1322802,
+        "start_in_record": 0
+      },
+      "english": "An Eastern medical text of unknown authorship. It describes how to make medicines from herbs and bark.",
+      "source_meaning": "An Eastern medical book of unknown authorship that describes making medicines from plants and tree bark.",
+      "localization_note": "Keep the unknown author explicit and use the tone of a catalogue entry.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 18,
+      "name_field": 1172416,
+      "clean_name_pointer": 34987284,
+      "current_name_pointer": 34990684,
+      "clean_name_hex": "8abf95fb88e382cc90b99354",
+      "current_name_hex": "48657262616c6973742773204269626c65",
+      "item_name": "Herbalist's Bible",
+      "prior_private_pointer": 37261342,
+      "prior_private_rows": [
+        "An anonymous Eastern medical book on medicines",
+        "made from herbs and bark."
+      ],
+      "prior_private_hex": "416e20616e6f6e796d6f7573204561737465726e206d65646963616c20626f6f6b206f6e206d65646963696e6573006d6164652066726f6d20686572627320616e64206261726b2e0000",
+      "private_pointer_field": 37275404,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 1236,
+        "copy_end": 1339,
+        "bytes": 102,
+        "record_index": 14,
+        "table_offset": 1322802,
+        "start_in_record": 0,
+        "exact_stored_hex": "416e204561737465726e206d65646963616c2074657874206f6620756e6b6e6f776e20617574686f72736869702e2049742064657363726962657320686f7720746f206d616b65206d65646963696e65732066726f6d20686572627320616e64206261726b2e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 18,
+        "message_ID": 2833,
+        "field": 37275404,
+        "old_pointer": 37261342,
+        "new_pointer": 37274578,
+        "compiled_rows": [
+          "An Eastern medical text of unknown authorship.",
+          "It describes how to make medicines from herbs",
+          "and bark."
+        ],
+        "compiled_hex": "416e204561737465726e206d65646963616c2074657874206f6620756e6b6e6f776e20617574686f72736869702e0049742064657363726962657320686f7720746f206d616b65206d65646963696e65732066726f6d20686572627300616e64206261726b2e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "An Eastern medical text of unknown authorship.",
+            "It describes how to make medicines from herbs",
+            "and bark."
+          ],
+          "native_ink_sha256": "6a2a3889d14bd645072087c3bf0d48bce88f5c69af2f59021804f7b68424c806",
+          "native_glyphs": 148
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "An Eastern medical text of unknown authorship.",
+            "It describes how to make medicines from herbs",
+            "and bark."
+          ],
+          "native_ink_sha256": "ed484f93ab2ff00310293c22066a67843a227005800b3bc1b42206fa8d9c0d44",
+          "native_glyphs": 148
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "An Eastern medical text of unknown authorship.",
+            "It describes how to make medicines from herbs",
+            "and bark."
+          ],
+          "native_ink_sha256": "62f1c2c39720624001e71d625c8469de4497b791dd49da0fc5a1cedcf529b67f",
+          "native_glyphs": 132
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "An Eastern medical text of unknown authorship.",
+            "It describes how to make medicines from herbs",
+            "and bark."
+          ],
+          "native_ink_sha256": "566baa4cd949f96b72a5b234c35d5f691074b1e582fdc8c145a21bbd37d81111",
+          "native_glyphs": 132
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_2834",
+      "message_ID": 2834,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "clean_Japanese": "東南アジア原産。実は暗紫色で球形。果肉は汁が多く美味。果物の女王ともいわれる。",
+      "current_English": "Southeast Asia's queen of fruits: round, dark-purple, juicy and delicious.    ",
+      "source_hex": "938c93ec8341835783418cb48e5981428ec082cd88c38e87904682c58b858c60814289ca93f782cd8f6082aa91bd82ad94fc96a1814289ca95a882cc8f9789a482c682e082a282ed82ea82e98142",
+      "current_hex": "536f757468656173742041736961277320717565656e206f66206672756974733a20726f756e642c206461726b2d707572706c652c206a7569637920616e642064656c6963696f75732e20202020",
+      "source_reference": {
+        "block": 30,
+        "offset": 776,
+        "copy_end": 856,
+        "bytes": 78,
+        "record_index": 3,
+        "table_offset": 1322804,
+        "start_in_record": 337
+      },
+      "current_reference": {
+        "block": 30,
+        "offset": 1173,
+        "copy_end": 1252,
+        "bytes": 78,
+        "record_index": 13,
+        "table_offset": 1322804,
+        "start_in_record": 0
+      },
+      "english": "A round, dark purple fruit from Southeast Asia with juicy, delicious flesh. It's known as the queen of fruits.",
+      "source_meaning": "A Southeast Asian fruit with a round, dark purple exterior and juicy, delicious flesh. It is also called the queen of fruits.",
+      "localization_note": "Retain the nickname and link the description of the flesh to the fruit.",
+      "context": "Source Item catalogue description under the item title. Both the standalone card and the item detail screen show the same description.",
+      "decision": "revision",
+      "current_wide_glyphs": [],
+      "original_substitutions": [],
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "speaker": "Item catalogue",
+      "item_ID": 19,
+      "name_field": 1172440,
+      "clean_name_pointer": 34990044,
+      "current_name_pointer": 34989504,
+      "clean_name_hex": "837d8393835383588360839382cc8eed",
+      "current_name_hex": "4d616e676f737465656e205365656473",
+      "item_name": "Mangosteen Seeds",
+      "prior_private_pointer": 37261416,
+      "prior_private_rows": [
+        "Southeast Asia's queen of fruits: round,",
+        "dark-purple, juicy and delicious."
+      ],
+      "prior_private_hex": "536f757468656173742041736961277320717565656e206f66206672756974733a20726f756e642c006461726b2d707572706c652c206a7569637920616e642064656c6963696f75732e0000",
+      "private_pointer_field": 37275408,
+      "native_callers": [
+        {
+          "lookup": 33871924,
+          "paint": 33871936,
+          "literal": 33872016,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        },
+        {
+          "lookup": 33875212,
+          "paint": 33875224,
+          "literal": 33875260,
+          "current_lookup": 37275076,
+          "current_paint": 37275124
+        }
+      ],
+      "registered_reference": {
+        "block": 30,
+        "offset": 1339,
+        "copy_end": 1450,
+        "bytes": 110,
+        "record_index": 15,
+        "table_offset": 1322804,
+        "start_in_record": 0,
+        "exact_stored_hex": "4120726f756e642c206461726b20707572706c652066727569742066726f6d20536f7574686561737420417369612077697468206a756963792c2064656c6963696f757320666c6573682e2049742773206b6e6f776e2061732074686520717565656e206f66206672756974732e",
+        "ROM_sha256": "d1bcefeb1519bccfdfcab9beeeda98031d4449092e958ce850d5f2d738897a16"
+      },
+      "gameplay_observed": false,
+      "new_credit": 1,
+      "registered_private_projection": {
+        "item_ID": 19,
+        "message_ID": 2834,
+        "field": 37275408,
+        "old_pointer": 37261416,
+        "new_pointer": 37274682,
+        "compiled_rows": [
+          "A round, dark purple fruit from Southeast Asia",
+          "with juicy, delicious flesh. It's known",
+          "as the queen of fruits."
+        ],
+        "compiled_hex": "4120726f756e642c206461726b20707572706c652066727569742066726f6d20536f7574686561737420417369610077697468206a756963792c2064656c6963696f757320666c6573682e2049742773206b6e6f776e0061732074686520717565656e206f66206672756974732e0000"
+      },
+      "registered_native_item_displays": [
+        {
+          "page": "main",
+          "mode": 4,
+          "lines": [
+            "A round, dark purple fruit from Southeast Asia",
+            "with juicy, delicious flesh. It's known",
+            "as the queen of fruits."
+          ],
+          "native_ink_sha256": "7bbd1b40883d9e02c80c342fcf4e80fb6d8d3de8055f98e31714e7e0bf8530ba",
+          "native_glyphs": 155
+        },
+        {
+          "page": "main",
+          "mode": 16,
+          "lines": [
+            "A round, dark purple fruit from Southeast Asia",
+            "with juicy, delicious flesh. It's known",
+            "as the queen of fruits."
+          ],
+          "native_ink_sha256": "5cb44f066dc92080aa9a3e7b35da96fd77a180af00ea49e4bfd0f088f713b4c0",
+          "native_glyphs": 155
+        },
+        {
+          "page": "standalone",
+          "mode": 4,
+          "lines": [
+            "A round, dark purple fruit from Southeast Asia",
+            "with juicy, delicious flesh. It's known",
+            "as the queen of fruits."
+          ],
+          "native_ink_sha256": "f0af31773a8ff13458b62ec5dfe1b67125ee35774457f19d9a5a64dbbea517ca",
+          "native_glyphs": 139
+        },
+        {
+          "page": "standalone",
+          "mode": 16,
+          "lines": [
+            "A round, dark purple fruit from Southeast Asia",
+            "with juicy, delicious flesh. It's known",
+            "as the queen of fruits."
+          ],
+          "native_ink_sha256": "f9cf462a04844ef7320e6073d8b5ca1903c2559e37564a0e4cd5eac315f81810",
+          "native_glyphs": 139
+        }
+      ]
+    }
+  ],
+  "actual_verification_scope": {
+    "observed_notice_IDs": [
+      2814,
+      2819
+    ],
+    "stored_records": 21,
+    "offline_item_display_modes": 80,
+    "offline_coin_portrait_modes": 1,
+    "directly_viewed_pages": 41,
+    "fixture_scope": "The original coin-game command was placed in a disposable opening. The original Baby Shark encounter was initialized in an isolated save. Normal controller inputs advanced both displays.",
+    "actual_coin_empty_selection_and_board_return": true,
+    "actual_standalone_baby_shark_card_and_sailing_return": true,
+    "all_twenty_main_item_details_checked_offline": true,
+    "natural_event_activation": false,
+    "offline_only_notice_IDs": [
+      2815,
+      2816,
+      2817,
+      2818,
+      2820,
+      2821,
+      2822,
+      2823,
+      2824,
+      2825,
+      2826,
+      2827,
+      2828,
+      2829,
+      2830,
+      2831,
+      2832,
+      2833,
+      2834
+    ],
+    "hardware": false
+  },
+  "full_goal_complete": false
+}

@@ -1,0 +1,34 @@
+"""Audit38 uncredited leads and preserve5031 completed reviews in experimental V3561."""
+from pathlib import Path
+from dk4tool.formats.ilnk import IlnkContainer
+from dk4tool.rom.nds import NdsImage
+from dk4tool.patch.grand_race_menu_release import sha
+from scripts.reconcile_contextual_mood_retentions_v2482 import historical_key
+from scripts.verify_village_wrap_v608 import read,save
+ROOT=Path('work/analysis/editorial_handoff_verification_v3570')
+CHECKPOINT=Path('work/analysis/next_lil_source_checkpoint_v3569')
+if __name__=='__main__':
+    assert not ROOT.exists();receiptpath=CHECKPOINT/'checkpoint_receipt.json';receipt=read(receiptpath)
+    for kind in ['evidence','updated_files']:
+        for p,d in receipt[kind].items():assert sha(Path(p).read_bytes())==d,(kind,p)
+    lp=Path('translations/editorial_review_current_v1.json');ledger=read(lp);before=read(CHECKPOINT/'editorial_review_current_v1.json.before');prior=read(receipt['prior_verified_handoff']);assert sha((CHECKPOINT/'editorial_review_current_v1.json.before').read_bytes())==prior['ledger_sha256']
+    priorreceipt=read(prior['handoff_receipt']);assert sha(Path(prior['handoff_receipt']).read_bytes())==prior['handoff_receipt_sha256']
+    for p,d in priorreceipt['updated_files'].items():assert sha((CHECKPOINT/(Path(p).name+'.before')).read_bytes())==d,p
+    for k in ['contextual_story_natural_dialogue_pass_v1871','completed_editorial_families','records_with_source_and_prose_pass','records_with_source_prose_drafts','records_editorially_completed','records_revised_and_integrated','retained_wordings_editorially_completed','source_prose_reviewed_counts_by_file','completed_editorial_record_counts_by_file','reviewed_but_incomplete_route_record_IDs','reviewed_but_incomplete_COMMON_IDs','current_integrated_candidate','unresolved_graphics_work','older_record_reaudit_after_full_editorial_goal','native_source_universe_inventory_v2701c','Proof_terminology_consistency_lead_v3286']:assert ledger[k]==before[k],k
+    fresh=ledger['contextual_story_natural_dialogue_pass_v1871'];assert (fresh['fresh_pass_records_explicitly_reread'],fresh['fresh_pass_records_integrated'],fresh['fresh_pass_records_pending_native_actual_release'])==(5031,5031,0) and ledger['records_with_source_and_prose_pass']==5034 and ledger['records_editorially_completed']==5031
+    known={historical_key(r):r for g in ledger['completed_editorial_families'] for r in g['records']};assert len(known)==5031;lead=ledger['next_lil_source_scope_reconciliation_v3569']['source_lead'];packetpath=Path(lead['source_packet']);assert sha(packetpath.read_bytes())==lead['source_packet_sha256'];packet=read(packetpath);rows=packet['records'];assert len(rows)==len({historical_key(r) for r in rows})==38 and not set(known)&{historical_key(r) for r in rows}
+    assert [g['block'] for g in packet['blocks']]==[142,143,144,145] and [g['physical_speeches'] for g in packet['blocks']]==[13,9,10,6] and sum(len(g['all_clean_native_commands']) for g in packet['blocks'])==91 and sum(g['relative_sites'] for g in packet['blocks'])==25 and sum(g['FE_panels'] for g in packet['blocks'])==1
+    assert sorted({r['source_selector'] for r in rows if r['source_selector']!=254})==[2,4,9,13,16,20,23,109,171] and packet['source_macro_counts']=={'FI':2,'FA':0,'FO':0} and packet['source_transcripts_extracted_not_yet_fully_read_or_gloss_approved']
+    current,clean=NdsImage.open(packet['current_ROM']),NdsImage.open('work/clean.nds');a,b=[IlnkContainer.parse(im.read_file('/data/SC2.DK4')).blocks for im in [clean,current]]
+    for g in packet['blocks']:
+        assert sha(a[g['block']])==g['clean_block_sha256'] and sha(b[g['block']])==g['current_block_sha256'];shape=lambda cs:[(c['offset'],c['word'],c['native_extent'],c['ancestor_0100_offsets']) for c in cs];assert shape(g['all_clean_native_commands'])==shape(g['all_current_native_commands'])
+    for r in rows:
+        for blocks,ref,k in [(a,r['source_reference'],'source_hex'),(b,r['current_reference'],'current_hex')]:
+            block=blocks[r['block']];at=ref['offset'];v=bytes.fromhex(r[k]);assert block[at:at+len(v)]==v and block[at+len(v)]==0 and block[ref['header_offset']:ref['header_offset']+6].hex()==r['source_complete_preamble_hex']
+    overlaps=packet['exact_reviewed_B146_B148_source_reconciliation'];assert len(overlaps)==130 and {r['block'] for r in overlaps}=={146,147,148}
+    for r in overlaps:assert historical_key(r) in known and known[historical_key(r)]['source_hex']==r['source_hex']
+    assert len(packet['B141_exact_source_copy_in_B142_still_unreviewed'])==1 and packet['B141_exact_source_copy_in_B142_still_unreviewed'][0]['block']==142
+    candidate=ledger['current_integrated_candidate'];assert candidate['path']==packet['current_ROM'] and candidate['sha256']==packet['current_ROM_sha256']==prior['candidate_sha256']==sha(Path(candidate['path']).read_bytes()) and sha(Path(candidate['patch']).read_bytes())==candidate['patch_sha256']==prior['patch_sha256']
+    manifest=read(candidate['manifest']);registry=read('translations/release_stack.json');assert manifest['profile']==candidate['profile']=='all-routes-unified-v3561' and len(manifest['batches'])==527 and all(manifest['checks'].values()) and manifest['release_stack_sha256']==sha(Path('translations/release_stack.json').read_bytes()) and len(registry['accepted_layers'])==114 and registry['latest_promoted_build']['profile']=='all-routes-unified-v1492'
+    assert Path('docs/editorial_handoff_current.md').read_text(encoding='utf-8').startswith('# Current editorial handoff - V3569') and ledger['goal_status']=='active' and not ledger['full_goal_complete'];scope=ledger['unfinished_editorial_scope_v3569'];assert scope['next_uncredited_physical_speeches']==38 and scope['excluded_already_reviewed_B146_B148']==130 and scope['canonical_Maria32_pending_uncredited'] and scope['Proof_terminology_consistency_open'] and sha(Path(scope['path']).read_bytes())==scope['sha256']
+    ROOT.mkdir(parents=True);save(ROOT/'verified_handoff.json',dict(checkpoint='V3569',ledger_sha256=sha(lp.read_bytes()),handoff_receipt=str(receiptpath),handoff_receipt_sha256=sha(receiptpath.read_bytes()),fresh_reread=5031,integrated=5031,pending=0,source_prose=5034,revised=3275,retained=1756,candidate=candidate['path'],candidate_sha256=candidate['sha256'],patch=candidate['patch'],patch_sha256=candidate['patch_sha256'],manifest_batches=527,accepted_layers=114,next_uncredited_source_leads=38,next_progressive=37,next_FE=1,excluded_exact_reviewed_source_keys=130,all_previous_completions_and_wider_scope_preserved=True,not_full_Lil_or_project_completion=True,full_goal_active=True,producer_sha256=sha(Path(__file__).read_bytes()),full_goal_complete=False));print('V3569 verified:5031 completed/V3561;38 uncredited leads/130 prior exact keys reconciled;whole wider goal active.')
