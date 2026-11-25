@@ -1,0 +1,7 @@
+# Lisbon Purser Refit help registration
+
+The Refit panel now reads **“A purser can bargain and buy out local stock.”** The revised phrase matches the Trade Help and the observed extra-stock purchase. It fits the original COMMON allocation. The revised hold passed native text and visual checks, and 20 companion screens matched the parent. [Paired capture](../releases/all_routes_editorial_20261124_lisbon_purser_refit_candidate/verification/lisbon_purser_refit_paired_20261124.png) · [Exact source and installed text](../releases/all_routes_editorial_20261124_lisbon_purser_refit_candidate/verification/registered_review.json)
+
+The cumulative candidate passed independent startup, 480 registered checks, 17 focused tests and byte-for-byte reconstruction from the clean input. [Testing package](../releases/all_routes_editorial_20261124_lisbon_purser_refit_candidate/README.md) · [Lisbon stock-quota checkpoint](editorial_lisbon_stock_quota_current_20261124.md)
+
+The Drive folder has one ROM. A complete streamed readback matched the registered SHA-256. Cleanup recovered 61,525,748 bytes and retained both verified ROM paths and the unique captures. [Latest Build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/lisbon_purser_refit_drive_20261124.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/lisbon_purser_refit_cleanup_20261124.json)

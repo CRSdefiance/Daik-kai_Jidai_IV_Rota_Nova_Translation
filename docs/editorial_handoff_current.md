@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Ordinary Sea View play near Copenhagen verified both Quit Game choices and the existing question's complete native display. In 162 offline cases per ROM, the clean and installed System dispatchers agreed, including the Save-disabled scene. Phase 1 always selected COMMON 319. COMMON 318 is excluded from this System path; other consumers, the four other archived lines, practical ordinary scenes and the ordinary Missionary destination remain open. [At-sea and scene-gate evidence](editorial_exhibition_quit_scene_gate_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Nagasaki play verified the Yes branch of the spare-berth question at 29 and 33 places, the 120- and 20-sailor warnings, and the exact return after declining. Even filled both ships to 100, and reopening Crew Setup confirmed zero unassigned after accepting the warning. Six COMMON records and the ARM9 Even notice retain their wording. Continue practical ordinary town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination producer. [Second recruitment and overflow](editorial_nagasaki_second_recruitment_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Lisbon Purser Refit help with clearer stock-buying wording. [Checkpoint](editorial_lisbon_purser_refit_registered_20261124.md)
+
+The focused Lisbon replay verified five ordinary-price lots of Guns, a sixth at double price, two confirmation choices, and Julio's bargaining discount. Twenty-five texts retain their wording and COMMON 1255 received the registered revision. The latest Drive ROM matches by SHA-256. Continue practical ordinary town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination producer. [Purchase and contextual evidence](editorial_lisbon_stock_quota_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Reconciled 49 ordinary COMMON requests from Athens and Valencia with the existing caller ranges. All four Market refusal requests selected the revised COMMON 761. The clean ROM has one occurrence of each of the five archived source phrases, and the Ceuta candidate preserves all five exact stored spans. Their display owners remain open outside the checked paths. [Archived dialogue evidence](editorial_historical_common_fallbacks_20261124.md#carry-forward-to-ceuta)
 
 # Current editorial checkpoint - 2026-11-24

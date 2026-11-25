@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Registered the Lisbon Purser Refit help with clearer stock-buying wording. [Checkpoint](editorial_lisbon_purser_refit_registered_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Registered the Ceuta Market refusal with the complete return instruction. [Checkpoint](editorial_ceuta_contract_refusal_registered_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

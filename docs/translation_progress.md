@@ -1,5 +1,19 @@
 # Current editorial checkpoint - 2026-11-24
 
+Verified both Quit Game outcomes in ordinary Sea View play. The question retains its wording. The separate clean and installed System checks covered 162 cases per ROM, including the Save-disabled scene, and resolved the possible exhibition-warning link to that menu. [Gameplay and native evidence](editorial_exhibition_quit_scene_gate_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Ordinary Nagasaki play covered both accepted repeat-recruitment attempts, the overflow warning and both assignment choices. Reopening Crew Setup showed 200 sailors aboard and zero unassigned. Six COMMON lines and the Even notice retain their wording, with existing credit preserved. [Exact recruitment and assignment evidence](editorial_nagasaki_second_recruitment_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
+Registered the Lisbon Purser Refit help with clearer stock-buying wording. [Checkpoint](editorial_lisbon_purser_refit_registered_20261124.md)
+
+One wording revision and 25 justified retentions. The focused replay confirmed the sixth Guns lot at twice the ordinary price, followed by a 275-gold concession and all six lots delivered. The revised Refit hold, 20 companion screens, the exact clean-input patch, independent startup and the sole Drive ROM passed. [Lisbon quota and Refit evidence](editorial_lisbon_stock_quota_current_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Valencia gameplay verified 20 dialogue holds. Seventeen lines and the Governor title retain their wording. The 1,450-gold defense investment, both lodging paths, the 218-gold tavern round, the treasure rumor, and the subsequent Market refusal passed. [Valencia gameplay and exact references](editorial_valencia_government_current_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
