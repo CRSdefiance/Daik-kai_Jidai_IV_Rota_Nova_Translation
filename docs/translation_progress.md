@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
+
+The registered candidate passed 484 checks and exact clean-input reconstruction. The Drive readback matches, and this formatting fix retains the existing 27,700 contextual review credits. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/levelup_numerals_drive_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

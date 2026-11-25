@@ -1,0 +1,5 @@
+# Level-up numeral registration
+
+Ordinary Lisbon play showed Julio's “Luck increased by 2!” with a regular dialogue digit and full punctuation. Twenty-four companion frames match the predecessor pixel for pixel. The wording and original stat and amount arguments are preserved. [Paired capture](../releases/all_routes_editorial_20261125_levelup_numerals_candidate/verification/levelup_numerals_paired_20261125.png) · [Exact source and installed review](../releases/all_routes_editorial_20261125_levelup_numerals_candidate/verification/registered_review.json)
+
+Six native cases cover nine pages, including four-plus-two pagination and supplied multi-digit stress values. Independent startup, 484 registered checks, 17 focused tests, and exact clean-input reconstruction passed. Continue the archived COMMON display owners, practical town and random coverage, and the ordinary Missionary destination trigger. [Testing package](../releases/all_routes_editorial_20261125_levelup_numerals_candidate/README.md)

@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

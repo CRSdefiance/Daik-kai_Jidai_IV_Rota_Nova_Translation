@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
+
+The folder's sole testing ROM matches the registered candidate. Continue with the five archived COMMON display owners, the ordinary Missionary destination trigger, and practical town and random-scene coverage. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/levelup_numerals_drive_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
 
 The clean-input reconstruction and sole Drive ROM match. Continue the observed full-width numeral in COMMON 336 from its verified call at `0x0207E524`, then carry forward the other archived and practical coverage leads.
