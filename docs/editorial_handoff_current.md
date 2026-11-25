@@ -1,3 +1,25 @@
+# Current editorial checkpoint - 2026-11-25
+
+Reviewed all six Lure Fleet destination questions. Four retain their wording and two proposed one-line revisions passed the original Schemes renderer. The 31-call constructor audit excludes slot 114 from the tested Lure Fleet producers. The ordinary Missionary source remains open. Continue the two pending revisions, archived COMMON owners and practical gameplay coverage from the registered Seoul ROM. [Fleet diversion checkpoint](editorial_fleet_diversion_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Reconciled the four releases through Seoul with exact predecessor inverses, all 521 prepared texts, the 277 original wrap leads, and the current COMMON inventory. The candidate, patch, startup, 481 release checks and sole Drive readback agree. The five archived COMMON display owners, ordinary Missionary trigger, and remaining practical scene coverage stay open. [Eight-test acceptance audit](editorial_acceptance_after_seoul_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Ordinary Azores play verified the Trade-only menu, the empty-deal reply, both answers to a mixed deal, the settled 43,156-gold balance and Azores Wine aboard after reopening. Four COMMON lines and the wine label retain their wording. The three archived Market lines remained idle in these paths. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination trigger. [Azores gameplay and source evidence](editorial_azores_trade_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Bound both original Market menu variants and the Deal Finish and Back routes with 65 offline cases per ROM. Earlier ordinary Azores and Syracuse returns support the relevant paths. The tested routes exclude the three archived Market lines. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination trigger. [Exact Market dispatch evidence](editorial_market_option_dispatch_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Registered Reika's reflow and verified both Seoul Tavern choices and the Pink Apron rumor. [Checkpoint](editorial_seoul_reika_registered_20261125.md)
+
+Ordinary Seoul play verified 14 dialogue holds and 11 individually justified retentions. The changed page and 22 matching companion frames passed, and the latest Drive ROM matches the registered clean-input patch. Continue practical town and random coverage, the five archived COMMON display owners, and the ordinary Missionary destination trigger.
+
 # Current editorial checkpoint - 2026-11-24
 
 Two ordinary Copenhagen and Nagasaki loads restored 48 inactive scheduled fleet events. All 3,000 events across the 125 audited backup slots were also inactive. The original serializer passed 512 isolated cases, including supplied slot 114. Continue practical town and random exchanges, the five archived COMMON display owners, and the ordinary Missionary destination trigger. [Scheduled-event evidence](editorial_saved_fleet_events_20261124.md)

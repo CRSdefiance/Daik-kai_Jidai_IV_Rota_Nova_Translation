@@ -1,0 +1,1374 @@
+{
+  "translation_policy": "natural-dialogue-v2",
+  "target_locale": "en-US",
+  "encoder": "dialogue-relocatable-v1",
+  "review_gates": [
+    "source",
+    "context",
+    "localization",
+    "naturalness",
+    "formatting"
+  ],
+  "candidate_sha256": "87efe22ae4f343ecc9c954b9b8df52916f02ecd0c56cccd4ac9ca52b5682d753",
+  "ordinary_gameplay": true,
+  "exact_previous_deal_frame": true,
+  "evidence": {
+    "donor": {
+      "path": "E:/Rota Nova translations/Saves/hodram-lisbon-rested-blue-oak-v468.dsv",
+      "sha256": "35fb50a9a2f8a90ba55c4f001b53e1f6a39ec293966ca4d7aa8baddefcc3a870"
+    },
+    "capture": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261125_azores_trade_checked/capture/capture_report.json",
+      "sha256": "4f3bd77a9e782dbb571092e16b022fee75773110e906787e63088ab110e31235"
+    },
+    "trace": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261125_azores_trade_checked/trace/requests.json",
+      "sha256": "a522c4a9fbac224ee8e3a79313127d42fd7ebee056bd8f585d44cca5beb60444"
+    },
+    "terminal": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261125_azores_trade_checked/terminal.json",
+      "sha256": "a23d38e88473dad1f493d1c9a2eb1ffa7fbf59fa748a4750ff8fedffb8ef7662"
+    },
+    "journal": {
+      "path": "E:/Rota Nova translations/Generated/work/editorial_20261125_azores_trade_checked/capture/navigation_command_journal.json",
+      "sha256": "e2ffb3e79a37efd915043fb3e4a495b2781f528d2f9a2d1ca8d9ff363e05e60f"
+    }
+  },
+  "source_gameplay_prefix": {
+    "path": ".codex-release-work/shared_display_20261123/azores_developed_return/capture/capture_report.json",
+    "sha256": "72905582bc1993239899880b076349ee152b96b6614acd9684c995b9969f1374"
+  },
+  "context": "Ordinary controls on a byte-exact Lisbon save sail to the Azores and complete a village trade.",
+  "records": [
+    {
+      "id": "COMMON_MESSAGE_746",
+      "message_ID": 746,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Trader",
+      "context": "Hodram uses the developed Azores Market. An empty deal precedes the wine purchase and Iron Ore sale.",
+      "clean_Japanese": "…冷やかしかい",
+      "english": "Just browsing?",
+      "source_meaning": "The trader asks if the visitor was only window-shopping.",
+      "localization_note": "The short question keeps the trader's mild disappointment when the player finishes an empty deal.",
+      "source_reference": {
+        "block": 9,
+        "offset": 2884,
+        "copy_end": 2900,
+        "bytes": 14,
+        "record_index": 29,
+        "table_offset": 1318628,
+        "start_in_record": 26,
+        "exact_hex": "816397e282e282a982b582a982a2"
+      },
+      "current_reference": {
+        "block": 9,
+        "offset": 2628,
+        "copy_end": 2649,
+        "bytes": 20,
+        "record_index": 202,
+        "table_offset": 1318628,
+        "start_in_record": 0,
+        "exact_hex": "20204a7573742062726f7773696e673f20202020"
+      },
+      "installed_reference": {
+        "block": 9,
+        "offset": 2628,
+        "copy_end": 2649,
+        "bytes": 20,
+        "record_index": 202,
+        "table_offset": 1318628,
+        "start_in_record": 0,
+        "exact_hex": "20204a7573742062726f7773696e673f20202020"
+      },
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "observations": [
+        {
+          "frame": {
+            "frame": 15590,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_015590_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "5f1963ed628c1f5089445c546b259772f12ec6a985e5a88c4534f2b572df6e02",
+            "framebuffer_sha256": "3799aa11b6e1dde1af6fa0f67dc628bd0bd1f9a8a9a95b0cc7126a8a0e273b4e"
+          },
+          "native_requests": [
+            {
+              "frame": 15332,
+              "PC": 33903244,
+              "message_ID": 746,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 15332,
+              "PC": 33895668,
+              "message_ID": 746,
+              "caller_LR": 33898488
+            }
+          ],
+          "complete_body": 156,
+          "complete_nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_8",
+      "message_ID": 8,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Trader",
+      "context": "Hodram uses the developed Azores Market. An empty deal precedes the wine purchase and Iron Ore sale.",
+      "clean_Japanese": "何か用かい？",
+      "english": "Need help?",
+      "source_meaning": "The trader asks if the visitor needs anything.",
+      "localization_note": "The brief greeting fits the return visit and lets Hodram choose the single service.",
+      "source_reference": {
+        "block": 0,
+        "offset": 320,
+        "copy_end": 332,
+        "bytes": 12,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 2,
+        "exact_hex": "89bd82a9977082a982a28148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 460,
+        "copy_end": 471,
+        "bytes": 10,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 0,
+        "exact_hex": "4e6565642068656c703f"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 460,
+        "copy_end": 471,
+        "bytes": 10,
+        "record_index": 8,
+        "table_offset": 1317152,
+        "start_in_record": 0,
+        "exact_hex": "4e6565642068656c703f"
+      },
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "observations": [
+        {
+          "frame": {
+            "frame": 16400,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_016400_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "45b9c379a58b01eb803c6345c78c3af93dbada007620e44042196c1505a3ddbf",
+            "framebuffer_sha256": "7485102dc5a4e089109672ed60bebc724d06301f13e78833759f6f7e9adb9c94"
+          },
+          "native_requests": [
+            {
+              "frame": 16141,
+              "PC": 33903244,
+              "message_ID": 8,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 16141,
+              "PC": 33895668,
+              "message_ID": 8,
+              "caller_LR": 33898488
+            }
+          ],
+          "complete_body": 128,
+          "complete_nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_17",
+      "message_ID": 17,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Manuel Almeida",
+      "context": "Hodram uses the developed Azores Market. An empty deal precedes the wine purchase and Iron Ore sale.",
+      "clean_Japanese": "これで、よろしいですかな？",
+      "english": "Does this look all right?",
+      "source_meaning": "Manuel politely asks the captain if the proposed deal is acceptable.",
+      "localization_note": "The unhurried question suits Manuel and invites approval of the purchase and sales together.",
+      "source_reference": {
+        "block": 0,
+        "offset": 524,
+        "copy_end": 552,
+        "bytes": 26,
+        "record_index": 11,
+        "table_offset": 1317170,
+        "start_in_record": 1,
+        "exact_hex": "82b182ea82c5814182e682eb82b582a282c582b782a982c88148"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 614,
+        "copy_end": 640,
+        "bytes": 25,
+        "record_index": 18,
+        "table_offset": 1317170,
+        "start_in_record": 0,
+        "exact_hex": "446f65732074686973206c6f6f6b20616c6c2072696768743f"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 614,
+        "copy_end": 640,
+        "bytes": 25,
+        "record_index": 18,
+        "table_offset": 1317170,
+        "start_in_record": 0,
+        "exact_hex": "446f65732074686973206c6f6f6b20616c6c2072696768743f"
+      },
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "observations": [
+        {
+          "frame": {
+            "frame": 18560,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_018560_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "4db7232d6d2aded5d7824765f357bf8cc346dc5c876c820bd198cc1c88759166",
+            "framebuffer_sha256": "debc94ef1673e0681948d4fcebfb852839323a08017fbfab028a3b63bf36cb97"
+          },
+          "native_requests": [
+            {
+              "frame": 18299,
+              "PC": 33903244,
+              "message_ID": 17,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 18299,
+              "PC": 33895668,
+              "message_ID": 17,
+              "caller_LR": 33897744
+            }
+          ],
+          "complete_body": 250,
+          "complete_nameplate": [
+            188,
+            [
+              16,
+              277,
+              100,
+              288
+            ]
+          ]
+        },
+        {
+          "frame": {
+            "frame": 19100,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_019100_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "4db7232d6d2aded5d7824765f357bf8cc346dc5c876c820bd198cc1c88759166",
+            "framebuffer_sha256": "debc94ef1673e0681948d4fcebfb852839323a08017fbfab028a3b63bf36cb97"
+          },
+          "native_requests": [
+            {
+              "frame": 18841,
+              "PC": 33903244,
+              "message_ID": 17,
+              "caller_LR": 33897744
+            },
+            {
+              "frame": 18841,
+              "PC": 33895668,
+              "message_ID": 17,
+              "caller_LR": 33897744
+            }
+          ],
+          "complete_body": 250,
+          "complete_nameplate": [
+            188,
+            [
+              16,
+              277,
+              100,
+              288
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMMON_MESSAGE_9",
+      "message_ID": 9,
+      "file_path": "/COMMON/MESFILE.DK4",
+      "speaker": "Trader",
+      "context": "Hodram uses the developed Azores Market. An empty deal precedes the wine purchase and Iron Ore sale.",
+      "clean_Japanese": "ありがとうございます\nこれからもごひいきに",
+      "english": "Thanks! Come again.",
+      "source_meaning": "The trader thanks the customer and asks for future business.",
+      "localization_note": "The familiar farewell sounds natural at settlement and matches the trader's brisk greeting.",
+      "source_reference": {
+        "block": 0,
+        "offset": 332,
+        "copy_end": 376,
+        "bytes": 41,
+        "record_index": 8,
+        "table_offset": 1317154,
+        "start_in_record": 14,
+        "exact_hex": "82a082e882aa82c682a482b282b482a282dc82b70a82b182ea82a982e782e082b282d082a282ab82c9"
+      },
+      "current_reference": {
+        "block": 0,
+        "offset": 471,
+        "copy_end": 491,
+        "bytes": 19,
+        "record_index": 9,
+        "table_offset": 1317154,
+        "start_in_record": 0,
+        "exact_hex": "5468616e6b732120436f6d6520616761696e2e"
+      },
+      "installed_reference": {
+        "block": 0,
+        "offset": 471,
+        "copy_end": 491,
+        "bytes": 19,
+        "record_index": 9,
+        "table_offset": 1317154,
+        "start_in_record": 0,
+        "exact_hex": "5468616e6b732120436f6d6520616761696e2e"
+      },
+      "decision": "retention",
+      "review": {
+        "source": true,
+        "context": true,
+        "localization": true,
+        "naturalness": true,
+        "formatting": true
+      },
+      "observations": [
+        {
+          "frame": {
+            "frame": 19370,
+            "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_019370_navigation.png",
+            "dimensions": [
+              256,
+              384
+            ],
+            "pixel_format": 2,
+            "PNG_sha256": "5dafaf354e7370b55bae99b5cf5d1464e3f8ff3782741a405f98ec6f14ca7068",
+            "framebuffer_sha256": "523ce9b0381c0e92d91fa3f6daed6d559064a3709bd5dd11a1113f8c2a8c311b"
+          },
+          "native_requests": [
+            {
+              "frame": 19123,
+              "PC": 33903244,
+              "message_ID": 9,
+              "caller_LR": 33898488
+            },
+            {
+              "frame": 19123,
+              "PC": 33895668,
+              "message_ID": 9,
+              "caller_LR": 33898488
+            }
+          ],
+          "complete_body": 210,
+          "complete_nameplate": [
+            72,
+            [
+              16,
+              277,
+              52,
+              288
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "azores_wine": {
+    "commodity_index": 113,
+    "source": {
+      "name": "鷹の島の酒",
+      "pointer_field": 34993252,
+      "address": 34982776,
+      "exact_hex": "91e982cc938782cc8ef000"
+    },
+    "current": {
+      "name": "Azores Wine",
+      "pointer_field": 34993252,
+      "address": 34982032,
+      "exact_hex": "417a6f7265732057696e6500"
+    },
+    "installed": {
+      "name": "Azores Wine",
+      "pointer_field": 34993252,
+      "address": 34982032,
+      "exact_hex": "417a6f7265732057696e6500"
+    },
+    "decision": "retention",
+    "context": "The village's own drink is selected as a purchase and then displayed in the ship's cargo.",
+    "localization_note": "The established name ties the drink to the town whose specialty it is and fits both Trade displays.",
+    "review": {
+      "source": true,
+      "context": true,
+      "localization": true,
+      "naturalness": true,
+      "formatting": true
+    }
+  },
+  "exact_goods_info": {
+    "15050": {
+      "text": "Azores Wine\n  Liquor 100%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 267,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    },
+    "18020": {
+      "text": "Azores Wine\n  Liquor 100%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 267,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    },
+    "18290": {
+      "text": "Azores Wine\n  Liquor 100%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 267,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    },
+    "18830": {
+      "text": "Azores Wine\n  Liquor 100%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 267,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    },
+    "19910": {
+      "text": "Azores Wine\n  Liquor 101%",
+      "origin": [
+        144,
+        127
+      ],
+      "box": [
+        144,
+        126,
+        256,
+        162
+      ],
+      "exact_ink_pixels": 259,
+      "first_internal_final_letters_and_blank_cells_exact": true
+    }
+  },
+  "choice_glyphs": {
+    "18560": [
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "19100": [
+      {
+        "text": "No",
+        "bounds": [
+          134,
+          363,
+          146,
+          374
+        ],
+        "ink_pixels": 35,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "Yes",
+        "bounds": [
+          202,
+          363,
+          220,
+          374
+        ],
+        "ink_pixels": 37,
+        "color": [
+          213,
+          214,
+          213
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ]
+  },
+  "prices": {
+    "iron_ore_sales": 4200,
+    "azores_wine_purchase": 377,
+    "wallet_before": 39333,
+    "wallet_after": 43156
+  },
+  "exact_ledger_masks": {
+    "15050": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "15320": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "16940": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18020": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "4200",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 69,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43533",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 84,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18290": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "4200",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 69,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "377",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 40,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18560": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "4200",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 69,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "377",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 40,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "18830": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "4200",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 69,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "377",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 40,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "19100": [
+      {
+        "text": "39333",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 83,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "4200",
+        "bounds": [
+          88,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 69,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "377",
+        "bounds": [
+          94,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 40,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ],
+    "19910": [
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          39,
+          112,
+          50
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          55,
+          112,
+          66
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "0",
+        "bounds": [
+          106,
+          71,
+          112,
+          82
+        ],
+        "ink_pixels": 18,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      },
+      {
+        "text": "43156",
+        "bounds": [
+          82,
+          87,
+          112,
+          98
+        ],
+        "ink_pixels": 81,
+        "color": [
+          230,
+          230,
+          230
+        ],
+        "all_ink_and_blank_cells_exact": true
+      }
+    ]
+  },
+  "exact_wallets": {
+    "15050": 39333,
+    "15860": 39333,
+    "18830": 39333,
+    "19640": 43156,
+    "20180": 43156,
+    "20450": 43156
+  },
+  "wine_icon_persists": true,
+  "return_to_town": {
+    "text": "Azores",
+    "bounds": [
+      70,
+      19,
+      106,
+      30
+    ],
+    "ink_pixels": 75,
+    "color": [
+      230,
+      230,
+      230
+    ],
+    "all_ink_and_blank_cells_exact": true
+  },
+  "contact_sheets": [
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/azores_trade_current_1_20261125.png",
+      "sha256": "df8e7127ac3870a3531598ef10c922462386760ae2f795af57c7b28ee3263c53"
+    },
+    {
+      "path": "translations/editorial_checkpoints/shared_display_20261123/azores_trade_current_2_20261125.png",
+      "sha256": "38fce2ccdca37f1d1bd5860cd51d75f9834972dfd0fb3f94ec1aa228f67c0f7d"
+    }
+  ],
+  "frames": {
+    "15050": {
+      "frame": 15050,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_015050_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "1b2d967979813252a97fe149ab83b6a4a0ced87e56143207e6abafd27bfdaecd",
+      "framebuffer_sha256": "e45fdf587207300f88a94e6784a4a9a43fd9383cc70bdb5e8a63c406638c6630"
+    },
+    "15590": {
+      "frame": 15590,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_015590_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "5f1963ed628c1f5089445c546b259772f12ec6a985e5a88c4534f2b572df6e02",
+      "framebuffer_sha256": "3799aa11b6e1dde1af6fa0f67dc628bd0bd1f9a8a9a95b0cc7126a8a0e273b4e"
+    },
+    "15860": {
+      "frame": 15860,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_015860_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "3572580a31ff4db2e50a058fddec7e61decc234612e3c4879171dbec0750d829",
+      "framebuffer_sha256": "24ac621dc3b2bda05f3caa0900b7b485051ea648c08b619f7d21af86fe33ce16"
+    },
+    "18020": {
+      "frame": 18020,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_018020_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "4efeb6ae56288e23a7e660d200e5f7f7bd02210958f9dd28f84678c3ead42bf9",
+      "framebuffer_sha256": "06f3046d45f51b5b39d7e0720228f0fe4a7503c0b9da0206ce5e8bf18769460f"
+    },
+    "18290": {
+      "frame": 18290,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_018290_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "671ba52efec9c4fe7b005c4d4c3c036dcabe7a39a39b693c8b5c5a99059febc6",
+      "framebuffer_sha256": "489032c652db381cb957613966ad78e3f8cf21e6c68bc1fc39ab42381918c689"
+    },
+    "18560": {
+      "frame": 18560,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_018560_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "4db7232d6d2aded5d7824765f357bf8cc346dc5c876c820bd198cc1c88759166",
+      "framebuffer_sha256": "debc94ef1673e0681948d4fcebfb852839323a08017fbfab028a3b63bf36cb97"
+    },
+    "18830": {
+      "frame": 18830,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_018830_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "671ba52efec9c4fe7b005c4d4c3c036dcabe7a39a39b693c8b5c5a99059febc6",
+      "framebuffer_sha256": "489032c652db381cb957613966ad78e3f8cf21e6c68bc1fc39ab42381918c689"
+    },
+    "19370": {
+      "frame": 19370,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_019370_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "5dafaf354e7370b55bae99b5cf5d1464e3f8ff3782741a405f98ec6f14ca7068",
+      "framebuffer_sha256": "523ce9b0381c0e92d91fa3f6daed6d559064a3709bd5dd11a1113f8c2a8c311b"
+    },
+    "19910": {
+      "frame": 19910,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_019910_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "426eac8d812c08d2c3ec32f5b0e62b613d67a07e07f8b2e16d65501f7a61b11e",
+      "framebuffer_sha256": "825b72636d3ea376c4b7a28d8fe993f679a685c27b298fdf59bbf18b32e3dbca"
+    },
+    "20450": {
+      "frame": 20450,
+      "path": "E:\\Rota Nova translations\\Generated\\work\\editorial_20261125_azores_trade_checked\\capture\\frame_020450_navigation.png",
+      "dimensions": [
+        256,
+        384
+      ],
+      "pixel_format": 2,
+      "PNG_sha256": "b3f4ca1f1ebaf9c604331182d0cde177df99b5270c42c96f6d4c09320b9fe73a",
+      "framebuffer_sha256": "3bc8b3c814f2128473c3e4e40eb6936695e5ca4aa2fcbbc1b97050008709298e"
+    }
+  },
+  "archived_messages_unobserved": [
+    284,
+    318,
+    750,
+    751,
+    752
+  ],
+  "unvisited": [
+    "Other villages and transaction variants",
+    "Other archived-message routes",
+    "Physical hardware"
+  ],
+  "ROM_changed": false,
+  "new_editorial_credit": 0
+}

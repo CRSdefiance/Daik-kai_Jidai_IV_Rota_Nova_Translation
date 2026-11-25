@@ -1,3 +1,25 @@
+# Current editorial checkpoint - 2026-11-25
+
+Lure Fleet has four justified retentions and two one-line revisions pending registration. The original Schemes renderer passed all eight previews. The separate constructor audit classified 31 sites and verified the 20-row picker. [Fleet diversion checkpoint](editorial_fleet_diversion_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Verified four exact successor inverses and bound the current Seoul package to the established story, wrapping, shared-text and display evidence. The audit preserves all 27,700 credits. [Current acceptance evidence](editorial_acceptance_after_seoul_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Five ordinary dialogue holds and four justified wording retentions cover the Azores Market's empty and mixed deals. The complete Azores Wine label, nine ledgers and final wallet passed. [Azores gameplay checkpoint](editorial_azores_trade_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Verified the town and village Market menus and Deal exit handling in 65 offline cases per ROM. Earlier ordinary Azores and Syracuse gameplay supplies the village menu and the mixed-deal Back transition. [Market dispatch checkpoint](editorial_market_option_dispatch_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Registered Reika's reflow and verified both Seoul Tavern choices and the Pink Apron rumor. [Checkpoint](editorial_seoul_reika_registered_20261125.md)
+
+One wording and wrap revision, 11 retentions, 14 ordinary dialogue holds, and 22 matching companion screens. Independent startup, 481 registered checks, 17 focused tests, exact clean-input reconstruction, and the sole Drive readback passed.
+
 # Current editorial checkpoint - 2026-11-24
 
 Two ordinary saved-game loads verified 48 scheduled event records. The offline backup census found all 3,000 records inactive, and all 512 isolated serialization cases passed. [Saved-event checkpoint](editorial_saved_fleet_events_20261124.md)

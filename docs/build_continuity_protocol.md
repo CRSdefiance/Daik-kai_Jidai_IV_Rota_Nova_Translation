@@ -1,3 +1,7 @@
+# Current editorial checkpoint - 2026-11-25
+
+Registered Reika's reflow and verified both Seoul Tavern choices and the Pink Apron rumor. [Checkpoint](editorial_seoul_reika_registered_20261125.md)
+
 # Current editorial checkpoint - 2026-11-24
 
 Registered the Lisbon Purser Refit help with clearer stock-buying wording. [Checkpoint](editorial_lisbon_purser_refit_registered_20261124.md)
