@@ -1,0 +1,7 @@
+# Amsterdam Guild crystal pitch
+
+The Guildmaster now describes the crimson crystal in three complete lines and keeps the star pattern as hearsay. The revised native page replayed in ordinary gameplay. All sixteen other sampled screens match pixel for pixel. Five Guild lines retain their wording, including the treasure map pitch. [Exact installed decisions and paired replay](../releases/all_routes_editorial_20261125_amsterdam_guild_crystal_candidate/verification/registered_review.json)
+
+Independent startup, 487 release checks, 17 focused tests and exact clean-input reconstruction passed. The five archived message owners, ordinary Missionary trigger, and further practical scene coverage remain open. [Testing package](../releases/all_routes_editorial_20261125_amsterdam_guild_crystal_candidate/README.md)
+
+The sole testing ROM on Drive matches the registered SHA-256. Offline verification also confirms that the five archived records still match their exact clean and installed references. Cleanup recovered 61,253,837 bytes from duplicate artifacts and disposable test files. [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_drive_20261125.json) · [Archived references](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_archived_refs_20261125.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_cleanup_20261125.json)

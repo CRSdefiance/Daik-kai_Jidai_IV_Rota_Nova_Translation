@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered the Amsterdam Guildmaster's clearer crimson-crystal pitch. [Checkpoint](editorial_amsterdam_guild_crystal_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

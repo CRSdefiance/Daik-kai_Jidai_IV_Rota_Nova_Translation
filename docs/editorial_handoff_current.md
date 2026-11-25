@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered the Amsterdam Guildmaster's clearer crimson-crystal pitch. [Checkpoint](editorial_amsterdam_guild_crystal_registered_20261125.md)
+
+The revised pitch and retained treasure-map pitch passed ordinary Amsterdam gameplay. The sole Drive ROM matches the registered candidate, and checkpoint cleanup preserved the unique builds and evidence. Continue practical town and random encounters, the five archived COMMON display owners, and the ordinary Missionary destination trigger. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_drive_20261125.json) · [Current archived references](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_archived_refs_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
 
 Both Amsterdam story scenes and both London gift choices have ordinary gameplay evidence. The reflowed candidate matches the sole Drive ROM. Continue the Guildmaster's COMMON 3661 crystal pitch from its passing native preview and the existing Guild inputs. Rebind the current COMMON archive and ARM9 before staging. The five archived COMMON owners and ordinary Missionary destination trigger remain open. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_drive_20261125.json) · [Crystal pitch preflight](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_preflight_20261125.json)

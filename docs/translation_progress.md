@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered the Amsterdam Guildmaster's clearer crimson-crystal pitch. [Checkpoint](editorial_amsterdam_guild_crystal_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
 
 All four revised story panels and 67 pixel-exact companion frames passed. Independent startup, 486 release checks, 17 focused tests and byte-exact clean reconstruction passed. The registered SHA-256 matches the sole Drive ROM, and 27,700 contextual credits carry forward. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_drive_20261125.json)
