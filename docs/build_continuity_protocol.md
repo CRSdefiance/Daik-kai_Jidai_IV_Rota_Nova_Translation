@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered Reika's reflow and verified both Seoul Tavern choices and the Pink Apron rumor. [Checkpoint](editorial_seoul_reika_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-24

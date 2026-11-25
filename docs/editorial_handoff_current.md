@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
+
+The registered build and sole Drive ROM match. Continue with the five archived COMMON display owners, practical town and random coverage, and the ordinary Missionary destination producer outside the checked Lure Fleet paths.
+
+# Current editorial checkpoint - 2026-11-25
+
 Reviewed all six Lure Fleet destination questions. Four retain their wording and two proposed one-line revisions passed the original Schemes renderer. The 31-call constructor audit excludes slot 114 from the tested Lure Fleet producers. The ordinary Missionary source remains open. Continue the two pending revisions, archived COMMON owners and practical gameplay coverage from the registered Seoul ROM. [Fleet diversion checkpoint](editorial_fleet_diversion_current_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

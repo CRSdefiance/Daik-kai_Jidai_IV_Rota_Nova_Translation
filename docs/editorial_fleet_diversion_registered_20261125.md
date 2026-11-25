@@ -1,0 +1,9 @@
+# Lure Fleet dialogue registration
+
+Two destination questions now fit on one line. Four other voices keep their wording. The exact clean Japanese, former and installed entries, and all five review gates are in the [registered review](../releases/all_routes_editorial_20261125_fleet_diversion_candidate/verification/registered_review.json).
+
+The paired emulator test used an isolated eligibility fixture and a single RAM table entry to select each revised line. The ROM retains the original voice table. Both panels match their preflight glyph planes, 14 other frames match, and each run reaches the London confirmation and cancels without payment. [Paired capture](../releases/all_routes_editorial_20261125_fleet_diversion_candidate/verification/fleet_diversion_questions_paired_20261125.png) · [Replay receipt](../releases/all_routes_editorial_20261125_fleet_diversion_candidate/verification/fleet_diversion_questions_paired_20261125.json)
+
+The cumulative candidate passed independent startup, 482 registered checks, 17 focused tests and exact clean-input reconstruction. The ordinary Missionary destination source, five archived COMMON display owners and unvisited practical scene variants remain open. [Testing package](../releases/all_routes_editorial_20261125_fleet_diversion_candidate/README.md) · [Earlier source audit](editorial_fleet_diversion_current_20261125.md)
+
+The sole Drive ROM matches the registered build by streamed SHA-256. All 17 listed package files match. The duplicate reconstruction was cleared, recovering 60,562,184 bytes while retaining the verified candidate and clean-input patch. [Latest Build](https://drive.google.com/file/d/1vM8IXRtSIMvFR4F-TR3oPLtcuhFobGwa/view?usp=drivesdk) · [Drive receipt](../translations/editorial_checkpoints/shared_display_20261123/fleet_diversion_drive_20261125.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/fleet_diversion_cleanup_20261125.json)

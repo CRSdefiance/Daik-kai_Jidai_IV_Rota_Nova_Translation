@@ -1,5 +1,11 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
+
+Two revisions, four justified retentions and 14 companion frames matching across the two focused emulator pairs. Independent startup, 482 release checks, 17 focused tests, the clean-input reconstruction and the sole Drive ROM passed. Existing coverage credit remains 27,700.
+
+# Current editorial checkpoint - 2026-11-25
+
 Lure Fleet has four justified retentions and two one-line revisions pending registration. The original Schemes renderer passed all eight previews. The separate constructor audit classified 31 sites and verified the 20-row picker. [Fleet diversion checkpoint](editorial_fleet_diversion_current_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25
