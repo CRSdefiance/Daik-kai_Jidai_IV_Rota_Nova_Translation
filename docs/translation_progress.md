@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Two ordinary saved-game loads verified 48 scheduled event records. The offline backup census found all 3,000 records inactive, and all 512 isolated serialization cases passed. [Saved-event checkpoint](editorial_saved_fleet_events_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Verified both Quit Game outcomes in ordinary Sea View play. The question retains its wording. The separate clean and installed System checks covered 162 cases per ROM, including the Save-disabled scene, and resolved the possible exhibition-warning link to that menu. [Gameplay and native evidence](editorial_exhibition_quit_scene_gate_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24

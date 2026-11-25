@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-24
 
+Two ordinary Copenhagen and Nagasaki loads restored 48 inactive scheduled fleet events. All 3,000 events across the 125 audited backup slots were also inactive. The original serializer passed 512 isolated cases, including supplied slot 114. Continue practical town and random exchanges, the five archived COMMON display owners, and the ordinary Missionary destination trigger. [Scheduled-event evidence](editorial_saved_fleet_events_20261124.md)
+
+# Current editorial checkpoint - 2026-11-24
+
 Ordinary Sea View play near Copenhagen verified both Quit Game choices and the existing question's complete native display. In 162 offline cases per ROM, the clean and installed System dispatchers agreed, including the Save-disabled scene. Phase 1 always selected COMMON 319. COMMON 318 is excluded from this System path; other consumers, the four other archived lines, practical ordinary scenes and the ordinary Missionary destination remain open. [At-sea and scene-gate evidence](editorial_exhibition_quit_scene_gate_20261124.md)
 
 # Current editorial checkpoint - 2026-11-24
