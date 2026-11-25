@@ -1,0 +1,7 @@
+# Hodram's Amsterdam story reflows
+
+The candidate revises Lil's challenge and complaint and Gerhard's Mediterranean recruiting lead. All four complete native panels replayed on the original ordinary voyage, and 67 companion frames match pixel for pixel. Forty-four other speeches retain their wording. The original command extents, speaker controls and archive layout carry forward. [Exact installed decisions and paired replay](../releases/all_routes_editorial_20261125_amsterdam_hodram_wraps_candidate/verification/registered_review.json)
+
+Independent startup, 486 release checks, 17 focused tests and exact clean-input reconstruction passed. The same ordinary voyage obtained Rainbow Marbles and verified both London gift choices on the predecessor. The Guildmaster's crimson-crystal wrap remains open with the five archived message owners and ordinary Missionary trigger. [Voyage and gift evidence](editorial_amsterdam_voyage_and_london_gift_20261125.md) · [Testing package](../releases/all_routes_editorial_20261125_amsterdam_hodram_wraps_candidate/README.md)
+
+The sole Drive ROM matches the registered candidate byte for byte. Five duplicate scratch files were verified and removed. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_drive_20261125.json) · [Cleanup receipt](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_cleanup_20261125.json)

@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
+
+Both Amsterdam story scenes and both London gift choices have ordinary gameplay evidence. The reflowed candidate matches the sole Drive ROM. Continue the Guildmaster's COMMON 3661 crystal pitch from its passing native preview and the existing Guild inputs. Rebind the current COMMON archive and ARM9 before staging. The five archived COMMON owners and ordinary Missionary destination trigger remain open. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_drive_20261125.json) · [Crystal pitch preflight](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_guild_crystal_preflight_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
+Completed the ordinary London–Amsterdam voyage, the 1,500-gold Rainbow Marbles purchase, and both of Marie's gift choices. The live transfer followed her thank-you. Both complete Amsterdam story exchanges passed current-renderer checks across 48 holds. Four story wraps and the Guildmaster's crimson-crystal wrap need revision. [Gameplay and source review](editorial_amsterdam_voyage_and_london_gift_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Registered the clearer Clifford rumor seen in London Square. [Checkpoint](editorial_london_square_rumor_registered_20261125.md)
+
+The sole Drive ROM matches the registered candidate. The ordinary London review retains fifteen texts and resolves one awkward wrap. Read-only state confirms Amsterdam holds Marie's Rainbow Marbles, so follow the regular acquisition route when practical. Continue the five archived COMMON owners and the ordinary Missionary destination trigger. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/london_square_rumor_drive_20261125.json) · [Gift availability](../translations/editorial_checkpoints/shared_display_20261123/london_gift_access_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
 
 The folder's sole testing ROM matches the registered candidate. Continue with the five archived COMMON display owners, the ordinary Missionary destination trigger, and practical town and random-scene coverage. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/levelup_numerals_drive_20261125.json)

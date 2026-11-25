@@ -1,5 +1,13 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Registered the clearer Clifford rumor seen in London Square. [Checkpoint](editorial_london_square_rumor_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

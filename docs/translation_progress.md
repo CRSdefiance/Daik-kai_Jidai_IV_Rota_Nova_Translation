@@ -1,5 +1,21 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered four reflows in Hodram's Amsterdam exchanges. [Checkpoint](editorial_amsterdam_hodram_wraps_registered_20261125.md)
+
+All four revised story panels and 67 pixel-exact companion frames passed. Independent startup, 486 release checks, 17 focused tests and byte-exact clean reconstruction passed. The registered SHA-256 matches the sole Drive ROM, and 27,700 contextual credits carry forward. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/amsterdam_hodram_wraps_drive_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
+Ordinary play acquired Rainbow Marbles in Amsterdam and returned to London for both of Marie's gift choices. The source review retains 44 Amsterdam story speeches and 18 shared messages, with five concrete wrap findings. [Voyage and gift evidence](editorial_amsterdam_voyage_and_london_gift_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Registered the clearer Clifford rumor seen in London Square. [Checkpoint](editorial_london_square_rumor_registered_20261125.md)
+
+Twenty ordinary dialogue holds support fifteen retentions and one reflow. Both revised holds and forty-two matching companion screens passed. Startup and all 485 registered checks passed. The sole Drive ROM matches the exact clean-input reconstruction, and the ledger retains 27,700 contextual credits. [Paired replay](../translations/editorial_checkpoints/shared_display_20261123/london_square_rumor_paired_20261125.json) · [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/london_square_rumor_drive_20261125.json)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered matching font and numeral width in the level-up notices. [Checkpoint](editorial_levelup_numerals_registered_20261125.md)
 
 The registered candidate passed 484 checks and exact clean-input reconstruction. The Drive readback matches, and this formatting fix retains the existing 27,700 contextual review credits. [Drive verification](../translations/editorial_checkpoints/shared_display_20261123/levelup_numerals_drive_20261125.json)
