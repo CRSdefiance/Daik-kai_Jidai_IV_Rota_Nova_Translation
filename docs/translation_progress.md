@@ -1,5 +1,25 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Two Guild phrase breaks were corrected in staging and passed paired ordinary play. Nine companion lines retain their wording. The separate full-width digit in Julio's Luck notice is recorded with its exact native producer. [Guild exchange and stat gain](editorial_lisbon_guild_bargaining_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Seven Guild texts retain their wording after the ordinary Lisbon shortfall checks. The two complete price replies, item descriptions, stock restoration, and all 12 current Rafael Deck pages passed. [Lisbon Deck and Guild checkpoint](editorial_lisbon_guild_shortfall_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Verified ten original month-end settlement cases per ROM, including an exact-balance loss, silent settlement, and the carryover warning. The 15 active table entries are separate from the archived debt warning. [Month-end debt scope](editorial_month_end_debt_scope_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Eight individual retentions across 13 ordinary Tunis Tavern dialogue holds. The Algiers and Black Rapier substitutions, both round choices, and the final 6,769-gold balance passed. [Tunis Tavern checkpoint](editorial_tunis_tavern_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
 
 Two revisions, four justified retentions and 14 companion frames matching across the two focused emulator pairs. Independent startup, 482 release checks, 17 focused tests, the clean-input reconstruction and the sole Drive ROM passed. Existing coverage credit remains 27,700.

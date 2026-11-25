@@ -13,3 +13,7 @@ An offline search for distinctive Japanese fragments from the five drafts found 
 The Lisbon Purser candidate preserves the exact records for all five archived lines. The separate System test excludes the exhibition warning from Quit Game even when the scene disables Save. Both ordinary at-sea Quit prompts selected COMMON 319. [Current storage and System dispatch evidence](editorial_exhibition_quit_scene_gate_20261124.md)
 
 On the Seoul Tavern candidate, the town and village menu selectors, Deal Finish and Back, and the bounded Back reset cases agree with the clean ROM. Earlier ordinary Azores and Syracuse observations confirm the village menu and mixed-deal return. The tested paths exclude COMMON 750–752. [Market dispatcher evidence](editorial_market_option_dispatch_20261125.md)
+
+The registered Lure Fleet candidate preserves all five recorded archived spans. The ordinary Tunis Tavern visit adds 14 paired native requests without reaching those entries. The five owners remain open. [Tunis Tavern evidence](editorial_tunis_tavern_current_20261125.md)
+
+The original month-end settlement uses COMMON 2575–2579 for an unpaid balance when reports are requested. Ten paired offline cases confirm the distinct tables and financial results, including a shortfall with no report. This excludes archived COMMON 284 from the tested settlement path and preserves the earlier ordinary and focused gameplay evidence. [Month-end debt scope](editorial_month_end_debt_scope_20261125.md)

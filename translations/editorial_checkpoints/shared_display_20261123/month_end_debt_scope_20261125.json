@@ -1,0 +1,683 @@
+{
+  "candidate_sha256": "6a36062baf73b81a7cb5d7a20a2b75214128714ff3f2eb451d04cfa9318d1764",
+  "release": {
+    "path": "releases/all_routes_editorial_20261125_fleet_diversion_candidate/verification/registered_release_verification.json",
+    "sha256": "6b0ebe14fa6b25299aa591c3619767f0dd1abc6f5b0e0e2ada4f578f2ccdea83"
+  },
+  "scope": "Native one-fleet settlement and aggregate notice branch. The original calculation, wallet update and rollover run. Captain selection, number formatting and display are supplied boundaries in this offline test.",
+  "original_and_installed_spans": [
+    {
+      "start": 33741972,
+      "end": 33742336,
+      "sha256": "d5018c8a41509970db578b6fd3fb50c005733a9fc40291044aa7cfddd4a74442"
+    },
+    {
+      "start": 33742560,
+      "end": 33742572,
+      "sha256": "2433d1c11a1a5c8f0348d2b7f2f0446576a83682981d7e10bd41f315a58fef1b"
+    },
+    {
+      "start": 33744896,
+      "end": 33744940,
+      "sha256": "0e747e7188ce45fbac30f25e2f3e1f9c30568b810947c7ba3bbb134fa5cc652d"
+    },
+    {
+      "start": 33803392,
+      "end": 33803472,
+      "sha256": "f3bfda3e5197f30efd9ae484803b8b14e38cc806fc4729698b6cf80cac7140bc"
+    },
+    {
+      "start": 33898316,
+      "end": 33898372,
+      "sha256": "bbc17a11b092dcf0377644dadfa1fcbd5db9929dc76cc4f9300f623b8aac5e50"
+    },
+    {
+      "start": 34701216,
+      "end": 34701248,
+      "sha256": "35b6fafa2f969732023d1c7d5e471576e31a416208ae1b55b149de959f9f3a23"
+    },
+    {
+      "start": 34701088,
+      "end": 34701120,
+      "sha256": "701b054392e7166450a5b28ed9bfddfb3ab9646efd1f2573f9a683e0a4951a16"
+    },
+    {
+      "start": 34701440,
+      "end": 34701472,
+      "sha256": "4c3ec8fcad69ec5ad75004770cb2022f76501a89644a49e2a4fd0d42ba4cb9a0"
+    }
+  ],
+  "clean_and_current_results_equal": true,
+  "tested_cases": [
+    {
+      "funds": 897400,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 896709,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701088
+        ]
+      ],
+      "formatted_amounts": [
+        691
+      ]
+    },
+    {
+      "funds": 100,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 0,
+      "carried": 591,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701088
+        ],
+        [
+          "carryover warning",
+          34701440
+        ]
+      ],
+      "formatted_amounts": [
+        691
+      ]
+    },
+    {
+      "funds": 691,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 0,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701088
+        ]
+      ],
+      "formatted_amounts": [
+        691
+      ]
+    },
+    {
+      "funds": 692,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 1,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701088
+        ]
+      ],
+      "formatted_amounts": [
+        691
+      ]
+    },
+    {
+      "funds": 0,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 0,
+      "carried": 691,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701088
+        ],
+        [
+          "carryover warning",
+          34701440
+        ]
+      ],
+      "formatted_amounts": [
+        691
+      ]
+    },
+    {
+      "funds": 100,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": false,
+      "fleet_captain_available": true,
+      "settlement_amount": -691,
+      "closing_funds": 0,
+      "carried": 591,
+      "observed_native_wrappers": [],
+      "formatted_amounts": []
+    },
+    {
+      "funds": 100,
+      "expenses": 691,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": false,
+      "settlement_amount": -691,
+      "closing_funds": 0,
+      "carried": 591,
+      "observed_native_wrappers": [
+        [
+          "carryover warning",
+          34701440
+        ]
+      ],
+      "formatted_amounts": []
+    },
+    {
+      "funds": 100,
+      "expenses": 0,
+      "income": 0,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": 0,
+      "closing_funds": 100,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701216
+        ]
+      ],
+      "formatted_amounts": [
+        0
+      ]
+    },
+    {
+      "funds": 100,
+      "expenses": 17,
+      "income": 120,
+      "invested": 4,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": 49,
+      "closing_funds": 149,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701216
+        ]
+      ],
+      "formatted_amounts": [
+        49
+      ]
+    },
+    {
+      "funds": 99999999,
+      "expenses": 0,
+      "income": 200,
+      "invested": 0,
+      "requested_reports": true,
+      "fleet_captain_available": true,
+      "settlement_amount": 100,
+      "closing_funds": 99999999,
+      "carried": 0,
+      "observed_native_wrappers": [
+        [
+          "fleet report",
+          34701216
+        ]
+      ],
+      "formatted_amounts": [
+        100
+      ]
+    }
+  ],
+  "observed_tables": {
+    "34701216": [
+      2571,
+      -1,
+      -1,
+      -1,
+      2572,
+      2573,
+      2574,
+      -1
+    ],
+    "34701088": [
+      2565,
+      -1,
+      2566,
+      2567,
+      2568,
+      2569,
+      2570,
+      -1
+    ],
+    "34701440": [
+      2575,
+      -1,
+      2576,
+      -1,
+      2577,
+      2578,
+      2579,
+      -1
+    ]
+  },
+  "message_ids_in_tables": [
+    2565,
+    2566,
+    2567,
+    2568,
+    2569,
+    2570,
+    2571,
+    2572,
+    2573,
+    2574,
+    2575,
+    2576,
+    2577,
+    2578,
+    2579
+  ],
+  "exact_records": [
+    {
+      "message_ID": 2565,
+      "source": {
+        "block": 27,
+        "offset": 1856,
+        "copy_end": 1908,
+        "bytes": 52,
+        "record_index": 30,
+        "table_offset": 1322266,
+        "start_in_record": 65,
+        "exact_hex": "905c82b596f382a082e882dc82b982f10a8be089dd2573968782cc0a91b98a5182f08f6f82b582c482b582dc82a282dc82b582bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2020,
+        "copy_end": 2055,
+        "bytes": 33,
+        "record_index": 76,
+        "table_offset": 1322266,
+        "start_in_record": 0,
+        "exact_hex": "4d792061706f6c6f676965732e205765206c6f737420257320696e20676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2566,
+      "source": {
+        "block": 27,
+        "offset": 1908,
+        "copy_end": 1956,
+        "bytes": 46,
+        "record_index": 30,
+        "table_offset": 1322268,
+        "start_in_record": 117,
+        "exact_hex": "82b282df82f182c882b382a20a8be089dd2573968782cc0a91b98a5182f08f6f82b582bf82e182a282dc82b582bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2055,
+        "copy_end": 2086,
+        "bytes": 30,
+        "record_index": 78,
+        "table_offset": 1322268,
+        "start_in_record": 0,
+        "exact_hex": "49276d20736f7272792e205765206c6f737420257320696e20676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2567,
+      "source": {
+        "block": 27,
+        "offset": 1956,
+        "copy_end": 2004,
+        "bytes": 46,
+        "record_index": 31,
+        "table_offset": 1322270,
+        "start_in_record": 1,
+        "exact_hex": "82b282df82f182c882b382a20a8be089dd2573968782cc0a91b98a5182f08f6f82b582bf82e182a282dc82b582bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2086,
+        "copy_end": 2110,
+        "bytes": 23,
+        "record_index": 79,
+        "table_offset": 1322270,
+        "start_in_record": 0,
+        "exact_hex": "536f7272792e205765206c6f737420257320676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2568,
+      "source": {
+        "block": 27,
+        "offset": 2004,
+        "copy_end": 2048,
+        "bytes": 44,
+        "record_index": 32,
+        "table_offset": 1322272,
+        "start_in_record": 1,
+        "exact_hex": "905c82b596f382c882a20a8be089dd2573968782cc0a91b98a5182f08f6f82b582bf82dc82a282dc82b582bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2110,
+        "copy_end": 2146,
+        "bytes": 34,
+        "record_index": 80,
+        "table_offset": 1322272,
+        "start_in_record": 0,
+        "exact_hex": "536f7272792061626f757420746861742e205765206c6f737420257320676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2569,
+      "source": {
+        "block": 27,
+        "offset": 2048,
+        "copy_end": 2096,
+        "bytes": 46,
+        "record_index": 32,
+        "table_offset": 1322274,
+        "start_in_record": 45,
+        "exact_hex": "82b782dc82f182cc82a40a8be089dd2573968782cc0a91b98a5182f08f6f82b582c482b582e082a482bd82ed82a2"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2146,
+        "copy_end": 2193,
+        "bytes": 45,
+        "record_index": 82,
+        "table_offset": 1322274,
+        "start_in_record": 0,
+        "exact_hex": "49276d20736f7272792061626f757420746865206c6f73732e20497420636f737420757320257320676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2570,
+      "source": {
+        "block": 27,
+        "offset": 2096,
+        "copy_end": 2136,
+        "bytes": 40,
+        "record_index": 33,
+        "table_offset": 1322276,
+        "start_in_record": 1,
+        "exact_hex": "82b282df82f182c882b382a20a8be089dd2573968782e00a835c839382b382b982bf82e182c182bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2193,
+        "copy_end": 2223,
+        "bytes": 28,
+        "record_index": 84,
+        "table_offset": 1322276,
+        "start_in_record": 0,
+        "exact_hex": "536f72727921204920636f737420796f7520257320676f6c642e2e2e"
+      }
+    },
+    {
+      "message_ID": 2571,
+      "source": {
+        "block": 27,
+        "offset": 2136,
+        "copy_end": 2176,
+        "bytes": 39,
+        "record_index": 33,
+        "table_offset": 1322278,
+        "start_in_record": 41,
+        "exact_hex": "8be089dd2573968782cc0a8efb897682f08fe382b082e982b182c682aa82c582ab82dc82b582bd"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2223,
+        "copy_end": 2243,
+        "bytes": 19,
+        "record_index": 86,
+        "table_offset": 1322278,
+        "start_in_record": 0,
+        "exact_hex": "5765206d61646520257320696e20676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2572,
+      "source": {
+        "block": 27,
+        "offset": 2176,
+        "copy_end": 2220,
+        "bytes": 41,
+        "record_index": 34,
+        "table_offset": 1322280,
+        "start_in_record": 0,
+        "exact_hex": "8be089dd2573968782cc0a8efb897682f08fe382b082e982b182c682aa82c582ab82dc82b582bd82ba"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2243,
+        "copy_end": 2262,
+        "bytes": 18,
+        "record_index": 87,
+        "table_offset": 1322280,
+        "start_in_record": 0,
+        "exact_hex": "5765206561726e656420257320676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2573,
+      "source": {
+        "block": 27,
+        "offset": 2220,
+        "copy_end": 2264,
+        "bytes": 43,
+        "record_index": 35,
+        "table_offset": 1322282,
+        "start_in_record": 2,
+        "exact_hex": "8be089dd2573968782cc0a8efb897682f08fe382b082e982b182c682aa82c582ab82dc82b582bd82bc82a2"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2262,
+        "copy_end": 2287,
+        "bytes": 23,
+        "record_index": 88,
+        "table_offset": 1322282,
+        "start_in_record": 0,
+        "exact_hex": "54686174206561726e656420757320257320676f6c642e"
+      }
+    },
+    {
+      "message_ID": 2574,
+      "source": {
+        "block": 27,
+        "offset": 2264,
+        "copy_end": 2296,
+        "bytes": 32,
+        "record_index": 36,
+        "table_offset": 1322284,
+        "start_in_record": 0,
+        "exact_hex": "8be089dd2573968782e00a96d782a982c182bd82e681490a82a682d682d68160"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2287,
+        "copy_end": 2310,
+        "bytes": 22,
+        "record_index": 90,
+        "table_offset": 1322284,
+        "start_in_record": 0,
+        "exact_hex": "5765206d61646520257320676f6c6421204865686521"
+      }
+    },
+    {
+      "message_ID": 2575,
+      "source": {
+        "block": 27,
+        "offset": 2296,
+        "copy_end": 2364,
+        "bytes": 68,
+        "record_index": 36,
+        "table_offset": 1322286,
+        "start_in_record": 32,
+        "exact_hex": "91b98eb882f090b88e5a82b782e982c982cd0a8f8a8e9d8be082aa91ab82e882c882a282cc82c50a97888c8e95aa82cc8e788f6f8a7a82c98c4a82e8897a82b582dc82b7"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2310,
+        "copy_end": 2396,
+        "bytes": 84,
+        "record_index": 91,
+        "table_offset": 1322286,
+        "start_in_record": 0,
+        "exact_hex": "2043617368206f6e2068616e6420776f6e277420636f76657220746865206c6f73732e0a20205468652062616c616e636520676f65730a2020696e746f206e657874206d6f6e7468277320657870656e7365732e"
+      }
+    },
+    {
+      "message_ID": 2576,
+      "source": {
+        "block": 27,
+        "offset": 2364,
+        "copy_end": 2432,
+        "bytes": 65,
+        "record_index": 36,
+        "table_offset": 1322288,
+        "start_in_record": 100,
+        "exact_hex": "91b98eb882f090b88e5a82b782e982c982cd82a88be082aa91ab82e882c882a282cc82c50a97888c8e82cc8e788f6f8a7a82c98c4a82e8897a82b582dc82b782e6"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2396,
+        "copy_end": 2497,
+        "bytes": 100,
+        "record_index": 93,
+        "table_offset": 1322288,
+        "start_in_record": 0,
+        "exact_hex": "20576520646f6e277420686176652074686520636173680a2020746f20636f76657220746865206c6f73732e0a20205765276c6c206361727279207468652072657374206f7665720a2020746f206e657874206d6f6e7468277320657870656e7365732e"
+      }
+    },
+    {
+      "message_ID": 2577,
+      "source": {
+        "block": 27,
+        "offset": 2432,
+        "copy_end": 2496,
+        "bytes": 63,
+        "record_index": 37,
+        "table_offset": 1322290,
+        "start_in_record": 2,
+        "exact_hex": "91b98eb882f090b88e5a82b782e982c982cd8be082aa91ab82e882cb82a682c80a97888c8e95aa82cc8e788f6f8a7a82c98c4a82e8897a82b582dc82b782ba"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2497,
+        "copy_end": 2577,
+        "bytes": 79,
+        "record_index": 94,
+        "table_offset": 1322290,
+        "start_in_record": 0,
+        "exact_hex": "2057652772652073686f7274206f6e20676f6c642e0a20205765276c6c2070757420746865207265737420646f776e0a2020617320616e20657870656e736520666f72206e657874206d6f6e74682e"
+      }
+    },
+    {
+      "message_ID": 2578,
+      "source": {
+        "block": 27,
+        "offset": 2496,
+        "copy_end": 2572,
+        "bytes": 74,
+        "record_index": 38,
+        "table_offset": 1322292,
+        "start_in_record": 0,
+        "exact_hex": "91b98eb882f090b88e5a82b782e982c982cd8f8a8e9d8be082aa91ab82e882f182cc82a40a97888c8e95aa82cc8e788f6f8a7a82c98c4a82e8897a82b782b182c682c90a82b782e982a9"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2577,
+        "copy_end": 2672,
+        "bytes": 94,
+        "record_index": 95,
+        "table_offset": 1322292,
+        "start_in_record": 0,
+        "exact_hex": "576520686176656e277420656e6f75676820746f20636f76657220746865206c6f73732e0a202042657374206361727279207468652062616c616e6365206f7665720a2020746f206e657874206d6f6e7468277320657870656e7365732e"
+      }
+    },
+    {
+      "message_ID": 2579,
+      "source": {
+        "block": 27,
+        "offset": 2572,
+        "copy_end": 2640,
+        "bytes": 67,
+        "record_index": 39,
+        "table_offset": 1322294,
+        "start_in_record": 1,
+        "exact_hex": "835c839382b582bd95aa82f095d082c382af82e982d982c782a88be082aa82c882a282e60a97888c8e95aa82cc8e7895a582a282c982c282af82c682ad82a982e782cb"
+      },
+      "installed": {
+        "block": 27,
+        "offset": 2672,
+        "copy_end": 2748,
+        "bytes": 74,
+        "record_index": 96,
+        "table_offset": 1322294,
+        "start_in_record": 0,
+        "exact_hex": "2057652063616e277420636f76657220746865206c6f73732e0a20205765276c6c206164642074686520726573740a2020746f206e657874206d6f6e7468277320657870656e7365732e"
+      }
+    }
+  ],
+  "earlier_gameplay": {
+    "path": "releases/all_routes_editorial_20261111_fleet_reports_candidate/verification/fleet_reports_gameplay_verification.json",
+    "sha256": "879229e63eff1e3c89f04018f285f6096fda770284aeb95d93013281ed7e6768"
+  },
+  "captured_templates_still_installed": [
+    2565,
+    2575
+  ],
+  "archived_common_284": {
+    "source": {
+      "block": 4,
+      "offset": 2012,
+      "copy_end": 2084,
+      "bytes": 69,
+      "record_index": 25,
+      "table_offset": 1317704,
+      "start_in_record": 1,
+      "exact_hex": "82bb82cc8acd91e082cd90d48e9a82c582b781428acd91e082cc8ed88be082f00a95d48dcf82c582ab82e982d982c782cc8f8a8e9d8be082aa82a082e882dc82b982f18149"
+    },
+    "installed": {
+      "block": 4,
+      "offset": 1925,
+      "copy_end": 1995,
+      "bytes": 69,
+      "record_index": 47,
+      "table_offset": 1317704,
+      "start_in_record": 0,
+      "exact_hex": "54726164652d676f6f64206465736372697074696f6e2e2052657669657720697473207573652c206f726967696e2c20616e642076616c75652e0a20202020202020202020"
+    },
+    "excluded_from_tested_month_end_branch": true,
+    "other_owners_open": true
+  },
+  "ROM_changed": false,
+  "new_gameplay": false,
+  "new_editorial_credit": 0
+}

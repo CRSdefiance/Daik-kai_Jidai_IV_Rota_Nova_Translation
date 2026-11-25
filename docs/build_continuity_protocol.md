@@ -1,5 +1,9 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
 
 # Current editorial checkpoint - 2026-11-25

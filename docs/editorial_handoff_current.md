@@ -1,5 +1,27 @@
 # Current editorial checkpoint - 2026-11-25
 
+Registered Julio's clearer purchase and sale bargaining lines. [Checkpoint](editorial_lisbon_guild_bargaining_registered_20261125.md)
+
+The clean-input reconstruction and sole Drive ROM match. Continue the observed full-width numeral in COMMON 336 from its verified call at `0x0207E524`, then carry forward the other archived and practical coverage leads.
+
+# Current editorial checkpoint - 2026-11-25
+
+Ordinary Lisbon play with Julio assigned as Purser verified a 9,800-coin purchase and 8,200-coin resale. The paired revisions resolve both observed phrase breaks and match 23 other screens. Julio's stat gain still displays a full-width numeral from the original formatter. Keep this text-glyph lead open with the archived display paths and the ordinary Missionary source. [Guild exchange and stat gain](editorial_lisbon_guild_bargaining_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Ordinary Lisbon play verified all 12 pages of Rafael's post-Trade Deck lesson, including Julio's capital F and Rafael's name. The Guild rejected items priced at 10,000 and 3,000 coins, preserved the stock list, and returned to town with 400 gold. Seven texts retain their wording. Continue the archived display owners, ordinary Missionary source and practical scene coverage. [Lisbon Deck and Guild checkpoint](editorial_lisbon_guild_shortfall_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+The original month-end fleet settlement selects its separate carryover table for unpaid losses. Ten paired offline cases passed, and the previously observed loss and shortfall templates match the registered Lure Fleet build. Archived COMMON 284 is excluded from this path. Continue with other archived display owners, the ordinary Missionary source, and practical town and random encounters. [Month-end debt scope](editorial_month_end_debt_scope_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
+Ordinary Tunis Tavern play verified 13 dialogue holds, the Algiers and Black Rapier tips, and both answers to Charles's round estimate. Eight texts retain their wording. All five archived drafts still match their recorded spans and their display owners remain open. Continue practical town and random coverage and the ordinary Missionary destination source on the registered Lure Fleet build. [Tunis Tavern checkpoint](editorial_tunis_tavern_current_20261125.md)
+
+# Current editorial checkpoint - 2026-11-25
+
 Registered two Lure Fleet questions that now read naturally on one line. [Checkpoint](editorial_fleet_diversion_registered_20261125.md)
 
 The registered build and sole Drive ROM match. Continue with the five archived COMMON display owners, practical town and random coverage, and the ordinary Missionary destination producer outside the checked Lure Fleet paths.
