@@ -1,3 +1,11 @@
+# Current editorial checkpoint - 2026-11-26
+
+Ordinary Tunis Market play verified the Palace referral, investment cancellation, and the 200-gold Syracuse price check. Five dialogue records and Italy Region retain their wording. The registered Amsterdam Guild candidate remains the latest Drive build. The five archived COMMON display owners, ordinary Missionary destination trigger, and further practical scene coverage remain open. [Market checkpoint](editorial_tunis_market_current_20261126.md)
+
+# Current editorial checkpoint - 2026-11-26
+
+Tunis Tavern recruitment verified both quote branches, 29 volunteers, the 56-berth follow-up, and the Flagship preview. Eight texts retain their wording. Continue practical town and random encounters, the five archived COMMON display owners, and the ordinary Missionary destination trigger on the registered Amsterdam Guild candidate. [Tunis checkpoint](editorial_tunis_recruitment_current_20261126.md)
+
 # Current editorial checkpoint - 2026-11-25
 
 Registered the Amsterdam Guildmaster's clearer crimson-crystal pitch. [Checkpoint](editorial_amsterdam_guild_crystal_registered_20261125.md)

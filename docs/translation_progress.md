@@ -1,3 +1,11 @@
+# Current editorial checkpoint - 2026-11-26
+
+Ordinary Tunis Market play verified the no-contract Trade gate, cancelled investment, and paid Syracuse Price Info. Five dialogue records and the Italy Region heading retain their wording. [Market checkpoint](editorial_tunis_market_current_20261126.md)
+
+# Current editorial checkpoint - 2026-11-26
+
+Ordinary Tunis recruiting and Flagship assignment sampled nine dialogue holds. Eight texts retain their wording, and the ledger records exact source, current and installed references and complete glyphs. [Tunis checkpoint](editorial_tunis_recruitment_current_20261126.md)
+
 # Current editorial checkpoint - 2026-11-25
 
 Registered the Amsterdam Guildmaster's clearer crimson-crystal pitch. [Checkpoint](editorial_amsterdam_guild_crystal_registered_20261125.md)
