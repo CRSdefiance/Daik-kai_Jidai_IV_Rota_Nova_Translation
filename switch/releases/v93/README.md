@@ -23,5 +23,6 @@ RomFS dump from your game and run this from the repository root.
 python -m switch.overlay --manifest switch/releases/v93/manifest.json --romfs "D:/my-dump/romfs" --output "switch/generated/v93"
 ```
 
-The ExeFS patch can be regenerated with `python -m switch.build_name_keyboard`,
-Keystone, the uncompressed Japanese 1.0.2 main NSO, and the v91 IPS.
+The ExeFS patch can be regenerated with `python -m switch.build_name_keyboard`
+from commit `aa2b4a5b`, using Keystone, the uncompressed Japanese 1.0.2
+main NSO, and the v91 IPS.

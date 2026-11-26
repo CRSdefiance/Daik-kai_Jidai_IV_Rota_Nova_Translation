@@ -132,17 +132,9 @@ def keyboard_edits(assemble):
         ldr w8, [x0, #0x124]
         cmp w8, #50
         b.ne #0x13f230
-        ret
-    """)
-    # The native popup treats B as close. Preserve the main editor's
-    # backspace control while Latin is active and use the kana key to close.
-    delete_or_close = helper("""
-        ldr w8, [x0, #0x124]
-        cmp w8, #50
-        b.ne #0x13f230
         ldr x0, [x0, #0x118]
-        mov x2, #2
-        b #0x13e620
+        mov w1, #2
+        b #0x13ed30
     """)
 
     # Match the name field's centered drawing path (106f0) at its native
@@ -156,24 +148,41 @@ def keyboard_edits(assemble):
         mov w5, wzr
         b #0xb5a0
     """)
-    # X normally reaches the parent editor only when it has focus. When
-    # Latin has focus, send the same accept event to the parent. The
-    # existing caller can accept an empty field such as a middle name.
-    confirm_latin_name = helper("""
+    # The Latin panel takes controller focus. Let the original editor
+    # handle X, L, R, and B through its existing buttons and validation.
+    latin_shortcuts = helper("""
         ldr w8, [x0, #0x124]
         cmp w8, #50
         b.ne normal_input
         adrp x8, #0x549000
         ldr x8, [x8, #0x6e0]
-        ldr w8, [x8, #0x70]
-        tbz w8, #2, normal_input
+        ldr w9, [x8, #0x70]
+        mov w10, #0x306
+        tst w9, w10
+        b.ne parent_input
+        ldr w9, [x8, #0x74]
+        cbz w9, normal_input
+    parent_input:
+        stp x0, x1, [sp]
         ldr x0, [x0, #0x118]
-        mov x2, xzr
-        bl #0x13e620
-        b #0x13fc60
+        bl #0x13ea30
+        tbnz w0, #0, #0x13fc60
+        ldp x0, x1, [sp]
     normal_input:
         ldr x8, [x0, #0x110]
         b #0x13f9ac
+    """)
+    # Keep the stock button glyphs on the editor while the Latin child has
+    # focus. Leave the original focus flag intact for the UI's dispatch.
+    show_editor_shortcuts = helper("""
+        b.ne #0x13ed50
+        ldr x8, [x20, #0x338]
+        cbz x8, unfocused
+        ldr w8, [x8, #0x124]
+        cmp w8, #50
+        b.eq #0x13ed50
+    unfocused:
+        b #0x13edb0
     """)
     if SELECTOR_START + sum(map(len, edits.values())) > SELECTOR_END:
         raise ValueError("Keyboard helpers exceed the original button selector")
@@ -266,12 +275,93 @@ def keyboard_edits(assemble):
     """)
     if len(edits[0x13C6C4 + TEXT_OFFSET]) > 0x13C79C - 0x13C6C4:
         raise ValueError("Name caret logic exceeds its original function")
+
+    # Stock editing assumes two bytes per letter. Localized preset names
+    # can contain both ASCII and CP932, so delete one encoded character.
+    write(0x13C960, """
+        stp x20, x19, [sp, #-0x20]!
+        stp x29, x30, [sp, #0x10]
+        add x29, sp, #0x10
+        mov x19, x0
+        ldr x20, [x19, #0xb0]
+        ldrb w8, [x20]
+        cbz w8, redraw
+        ldr w10, [x19, #0xbc]
+        mov w11, wzr
+        mov w12, wzr
+    scan:
+        mov w11, w12
+        add x0, x20, w12, uxtw
+        bl #0x13c9e0
+        cbz w0, redraw
+        add w12, w12, w0
+        cmp w12, w10
+        b.lo scan
+        mov w1, w11
+    shift:
+        ldrb w8, [x20, w12, uxtw]
+        strb w8, [x20, w11, uxtw]
+        add w12, w12, #1
+        add w11, w11, #1
+        cbnz w8, shift
+        mov x0, x19
+        bl #0x13c6b0
+    redraw:
+        mov x0, x19
+        ldp x29, x30, [sp, #0x10]
+        ldp x20, x19, [sp], #0x20
+        b #0x13c860
+    """)
+    write(0x13CA30, """
+        ldr x0, [x0, #0xb0]
+        add x0, x0, w8, uxtw
+        bl #0x13c9e0
+        add w1, w8, w0
+        ldr x0, [x19, #0x330]
+        b #0x13e724
+    """)
+    # Return the length of the character at x0 without changing the
+    # caller's index registers. A terminator advances zero bytes.
+    write(0x13C9E0, """
+        ldrb w9, [x0]
+        cbz w9, end
+        sub w13, w9, #0x81
+        cmp w13, #0x1e
+        b.ls lead
+        sub w13, w9, #0xe0
+        cmp w13, #0x1c
+        b.hi single
+    lead:
+        ldrb w9, [x0, #1]
+        cmp w9, #0
+        cset w0, ne
+        add w0, w0, #1
+        ret
+    single:
+        mov w0, #1
+        ret
+    end:
+        mov w0, wzr
+        ret
+    """)
+    if any(start + len(edits[start + TEXT_OFFSET]) > end for start, end in (
+        (0x13C960, 0x13C9E0), (0x13C9E0, 0x13CA30), (0x13CA30, 0x13CA60),
+    )):
+        raise ValueError("Name editing helpers exceed the original delete routine")
     write(0x13BD88, f"bl #{append_kana_key:#x}")
+    write(0x13E704, "sub w1, w8, #1")
+    write(0x13E720, "b #0x13ca30")
+    write(0x13ED4C, f"b #{show_editor_shortcuts:#x}")
+    # A refresh after typing only updates the glyphs. Keep the active
+    # grid key selected, including when the name goes from empty to set.
+    write(0x13EF20, """
+        cmp w1, #2
+        b.ne #0x16d040
+        ret
+    """)
     write(0x13EFBC, f"bl #{open_latin:#x}")
     write(0x13F8B4, f"bl #{draw_grid:#x}")
-    write(0x13F920, f"bl #{delete_or_close:#x}")
-    write(0x13F978, f"bl #{delete_or_close:#x}")
-    write(0x13F9A8, f"b #{confirm_latin_name:#x}")
+    write(0x13F9A8, f"b #{latin_shortcuts:#x}")
     write(0x13FD08, f"b #{select_key:#x}")
     write(0x13FD5C, f"bl #{keep_latin_open:#x}")
     return edits

@@ -26,6 +26,12 @@ Eden nightly `4089cfcffd` rendered Woodin's coastline and Basra city model
 correctly in the Japanese game and the English localization during earlier
 testing. Eden stable 0.2.1 stretched coastline textures in both builds.
 
+## v95 keyboard test build
+
+The name editor opens in English and switches between English and Japanese
+in the same frame. See the [v95 test notes](releases/v95/README.md) for the
+download, controls, and rebuild command.
+
 ## Translation and maintenance
 
 [The English catalogs](translations/README.md) identify scenario dialogue,
