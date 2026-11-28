@@ -1,12 +1,13 @@
 # DK4 Translation Tool
 
-A local, ROM-free Python toolchain for researching an English translation of
-**Daikoukai Jidai IV / Rota Nova** for Nintendo DS.
+English localization tools for **Daikoukai Jidai IV** on Nintendo DS and Switch.
+Supply your own game files. See the [game-file policy](LEGAL.md).
 
-The repository contains tooling and synthetic tests only. You must supply your own
-legally dumped ROM. The tool never downloads a ROM and never edits its input in place.
+- **Nintendo DS / Rota Nova** uses the DS workflow below.
+- **Nintendo Switch / Power-Up Kit HD** has its own
+  [build instructions and English patch](switch/README.md) for Japanese update 1.0.2.
 
-## Safe integrated builds
+## Safe integrated DS builds
 
 Playable test ROMs must be built from the accepted integration baseline with
 `scripts/build_integrated_release.py`. Direct builds from `clean.nds` and intermediate
