@@ -14,7 +14,7 @@ or pyxdelta support. Supply the `romfs` directory from your own extracted
 Japanese 1.0.2 game. The output must be a new directory.
 
 ```powershell
-python -m switch.overlay --manifest switch/releases/v96/manifest.json --romfs "D:/my-dump/romfs" --output "switch/generated/v96"
+python -m switch.overlay --romfs "D:/my-dump/romfs" --output "switch/generated/v96"
 ```
 
 Use the resulting `exefs` and `romfs` folders together as one mod. Keep older
